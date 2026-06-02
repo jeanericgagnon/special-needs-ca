@@ -236,6 +236,73 @@ input:focus, select:focus, textarea:focus {
   color: var(--primary-color);
 }
 
+/* Caregiver Tools Dropdown Styling */
+.nav-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-dropdown-trigger {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: none;
+  border: none;
+  color: var(--text-light);
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.nav-dropdown-trigger:hover {
+  color: var(--primary-color);
+  background: rgba(99, 102, 241, 0.05);
+}
+
+.nav-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(8px);
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  box-shadow: var(--glass-shadow);
+  min-width: 240px;
+  padding: 0.5rem;
+  z-index: 1000;
+  animation: slideDownFade 0.2s ease forwards;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu {
+  display: block;
+}
+
+.nav-dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  color: var(--text-main);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.15s ease;
+}
+
+.nav-dropdown-item:hover {
+  background: rgba(99, 102, 241, 0.08);
+  color: var(--primary-color);
+}
+
 .nav-btn-signup {
   background: var(--primary-color);
   color: white;
@@ -513,6 +580,22 @@ input[type="checkbox"] {
     opacity: 1 !important;
     visibility: visible !important;
     height: auto !important;
+  }
+}
+
+/* Responsive grid structures for dashboards */
+@media (min-width: 1024px) {
+  .grid-col-lg-4 {
+    grid-column: 1 / 5 !important;
+  }
+  .grid-col-lg-5 {
+    grid-column: 1 / 6 !important;
+  }
+  .grid-col-lg-6 {
+    grid-column: 6 / 13 !important;
+  }
+  .grid-col-lg-8 {
+    grid-column: 5 / 13 !important;
   }
 }
 

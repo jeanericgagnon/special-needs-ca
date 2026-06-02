@@ -3,7 +3,7 @@ import { cookies } from 'next/headers';
 import { verifyToken } from '@/lib/auth';
 import { logoutAction } from './auth-actions';
 import Link from 'next/link';
-import { HeartHandshake, User, LayoutDashboard, Search, LogOut, Key, Sparkles, Calculator } from 'lucide-react';
+import { HeartHandshake, User, LayoutDashboard, Search, LogOut, Key, Sparkles, Calculator, ChevronDown, Scale, ShieldCheck, Coins } from 'lucide-react';
 import ThemeToggle from '@/components/theme-toggle';
 import "./globals.css";
 
@@ -63,15 +63,36 @@ export default async function RootLayout({
                 <span>IEP Advocates</span>
               </Link>
               
-              <Link href="/iep-goals" className="nav-link">
-                <Sparkles size={16} />
-                <span>IEP Goals</span>
-              </Link>
-              
-              <Link href="/regional-center-funding" className="nav-link">
-                <Calculator size={16} />
-                <span>DDS Funding</span>
-              </Link>
+              {/* Caregiver Tools Dropdown */}
+              <div className="nav-dropdown">
+                <button className="nav-dropdown-trigger" type="button">
+                  <Sparkles size={16} />
+                  <span>Caregiver Tools</span>
+                  <ChevronDown size={14} />
+                </button>
+                <div className="nav-dropdown-menu">
+                  <Link href="/iep-goals" className="nav-dropdown-item">
+                    <Sparkles size={14} />
+                    <span>IEP Goals Library</span>
+                  </Link>
+                  <Link href="/regional-center-funding" className="nav-dropdown-item">
+                    <Calculator size={14} />
+                    <span>DDS Funding & Respite</span>
+                  </Link>
+                  <Link href="/appeals-center" className="nav-dropdown-item">
+                    <Scale size={14} />
+                    <span>Appeals & Letter Builder</span>
+                  </Link>
+                  <Link href="/ihss-behavior-log" className="nav-dropdown-item">
+                    <ShieldCheck size={14} />
+                    <span>IHSS 24-Hr Safety Log</span>
+                  </Link>
+                  <Link href="/financial-planning" className="nav-dropdown-item">
+                    <Coins size={14} />
+                    <span>CalABLE & SNT Planner</span>
+                  </Link>
+                </div>
+              </div>
               
               {session ? (
                 <>
