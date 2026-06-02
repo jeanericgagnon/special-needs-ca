@@ -214,3 +214,32 @@ export async function analyzeOnboarding(
     detectedConditions: detectedConditionNames
   };
 }
+
+export async function submitSuggestionAction(formData: {
+  suggestion_type: string;
+  target_id: string | null;
+  submitter_name: string;
+  submitter_email: string;
+  details: string;
+}): Promise<{ success: boolean; message: string }> {
+  // Import dynamically to avoid direct circular dependencies if any
+  const { submitCommunitySuggestion } = await import('@/lib/db');
+  
+  if (!formData.submitter_name.trim() || !formData.submitter_email.trim() || !formData.details.trim()) {
+    return { success: false, message: 'Please fill in all required fields.' };
+  }
+
+  const success = submitCommunitySuggestion({
+    suggestion_type: formData.suggestion_type,
+    target_id: formData.target_id,
+    submitter_name: formData.submitter_name,
+    submitter_email: formData.submitter_email,
+    details: formData.details
+  });
+
+  if (success) {
+    return { success: true, message: 'Thank you! Your suggestion has been recorded for community review.' };
+  } else {
+    return { success: false, message: 'Failed to record suggestion. Please try again later.' };
+  }
+}

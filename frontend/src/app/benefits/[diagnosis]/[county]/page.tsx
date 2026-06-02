@@ -4,6 +4,8 @@ import { CheckCircle2, MapPin, Activity, Phone, Globe, Landmark, ShieldCheck, Fi
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import CopyButton from '@/components/copy-button';
+import ContributionModal from '@/components/contribution-modal';
+import PrintButton from '@/components/print-button';
 
 
 type Props = {
@@ -154,9 +156,10 @@ export default async function SEOLandingPage({ params }: Props) {
         <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>
           {diagnosisFormatted} Benefits in {countyFormatted} County
         </h1>
-        <p style={{ fontSize: '1.15rem', maxWidth: '800px', margin: '0 auto', color: 'var(--text-light)', lineHeight: '1.6' }}>
+        <p style={{ fontSize: '1.15rem', maxWidth: '800px', margin: '0 auto 1.5rem', color: 'var(--text-light)', lineHeight: '1.6' }}>
           Navigating developmental care in {countyFormatted} County. If you have a child with {diagnosisFormatted}, your family may qualify for Medi-Cal waivers, safety supervision wages, and educational services.
         </p>
+        <PrintButton label="Print PDF Directory Guide" />
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', marginBottom: '4rem' }}>
@@ -196,7 +199,10 @@ export default async function SEOLandingPage({ params }: Props) {
                 </strong>
                 {countyData.schoolDistricts.map((district: any) => (
                   <div key={district.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', borderBottom: '1px solid rgba(0,0,0,0.05)', paddingBottom: '1rem' }}>
-                    <strong style={{ fontSize: '0.95rem' }}>{district.name}</strong>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '1rem' }}>
+                      <strong style={{ fontSize: '0.95rem' }}>{district.name}</strong>
+                      <ContributionModal suggestionType="district" targetId={district.id} targetName={district.name} buttonLabel="Suggest Update" />
+                    </div>
                     
                     {district.total_enrollment && (
                       <span style={{ fontSize: '0.78rem', color: 'var(--text-light)', display: 'block' }}>
@@ -316,9 +322,12 @@ export default async function SEOLandingPage({ params }: Props) {
                 }}
               >
                 <div>
-                  <strong style={{ display: 'block', fontSize: '1.05rem', color: 'var(--text-main)', marginBottom: '0.2rem' }}>
-                    {adv.name}
-                  </strong>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '1rem' }}>
+                    <strong style={{ display: 'block', fontSize: '1.05rem', color: 'var(--text-main)', marginBottom: '0.2rem' }}>
+                      {adv.name}
+                    </strong>
+                    <ContributionModal suggestionType="advocate" targetId={adv.id} targetName={adv.name} buttonLabel="Update" />
+                  </div>
                   <span style={{ fontSize: '0.8rem', color: 'var(--primary-color)', fontWeight: 600, display: 'block', marginBottom: '0.5rem' }}>
                     {adv.credentials}
                   </span>

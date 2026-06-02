@@ -49,6 +49,20 @@ function runMigrations() {
     );
   `);
 
+  // Create community_suggestions table
+  navigatorDb.exec(`
+    CREATE TABLE IF NOT EXISTS community_suggestions (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      suggestion_type TEXT NOT NULL,
+      target_id TEXT,
+      submitter_name TEXT NOT NULL,
+      submitter_email TEXT NOT NULL,
+      details TEXT NOT NULL,
+      status TEXT NOT NULL DEFAULT 'pending',
+      created_at TEXT NOT NULL
+    );
+  `);
+
   // Add school_districts columns if they do not exist
   const tableInfo = navigatorDb.prepare("PRAGMA table_info(school_districts)").all() as { name: string }[];
   const columnNames = tableInfo.map(col => col.name);
@@ -758,6 +772,42 @@ export function updateWaitlistStatus(
     return info.changes > 0;
   } catch (err) {
     console.error(`Failed to update waitlist for ${programId}:`, err);
+    return false;
+  }
+}
+
+export interface CommunitySuggestion {
+  id?: number;
+  suggestion_type: string;
+  target_id: string | null;
+  submitter_name: string;
+  submitter_email: string;
+  details: string;
+  status?: string;
+  created_at?: string;
+}
+
+export function submitCommunitySuggestion(suggestion: CommunitySuggestion): boolean {
+  if (process.env.VERCEL === '1') {
+    console.log(`⚠️ Database is read-only on Vercel. Simulating suggestion submit.`);
+    return true;
+  }
+  try {
+    const stmt = navigatorDb.prepare(`
+      INSERT INTO community_suggestions (suggestion_type, target_id, submitter_name, submitter_email, details, status, created_at)
+      VALUES (?, ?, ?, ?, ?, 'pending', ?)
+    `);
+    const info = stmt.run(
+      suggestion.suggestion_type,
+      suggestion.target_id,
+      suggestion.submitter_name,
+      suggestion.submitter_email,
+      suggestion.details,
+      new Date().toISOString()
+    );
+    return info.changes > 0;
+  } catch (err) {
+    console.error('Failed to submit community suggestion:', err);
     return false;
   }
 }

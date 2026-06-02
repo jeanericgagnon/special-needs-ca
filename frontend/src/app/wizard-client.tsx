@@ -13,6 +13,7 @@ import DiagnosisAutocomplete from './components/diagnosis-autocomplete';
 import WaitlistVisualizer from './components/waitlist-visualizer';
 import WaiverComparison from './components/waiver-comparison';
 import RespiteExplainer from './components/respite-explainer';
+import PrintButton from '@/components/print-button';
 
 interface WizardClientProps {
   counties: County[];
@@ -873,11 +874,14 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
                 </div>
               </div>
 
-              <div style={{ marginBottom: '2rem' }}>
-                <h2>Here is what we think your child qualifies for:</h2>
-                <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', marginTop: '0.2rem' }}>
-                  Based on active filters: {age} years old, {countyId.toUpperCase()} County, and diagnosed with {diagnosis}.
-                </p>
+              <div style={{ marginBottom: '2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
+                <div>
+                  <h2 style={{ margin: 0 }}>Here is what we think your child qualifies for:</h2>
+                  <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', marginTop: '0.2rem', margin: 0 }}>
+                    Based on active filters: {age} years old, {countyId.toUpperCase()} County, and diagnosed with {diagnosis}.
+                  </p>
+                </div>
+                <PrintButton label="Print Action Plan" />
               </div>
 
               {/* Interactive Waiver Comparison */}
