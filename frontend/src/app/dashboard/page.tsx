@@ -11,7 +11,9 @@ import {
   getSavedProgramStatuses,
   getChecklistItems,
   getReminders,
-  getCountyDetails 
+  getCountyDetails,
+  getChildIepData,
+  getChildRespiteData
 } from '@/lib/db';
 import DashboardClient from './dashboard-client';
 
@@ -58,6 +60,8 @@ export default async function DashboardPage({ searchParams }: PageProps) {
   let savedChecklist: any[] = [];
   let savedReminders: any[] = [];
   let countyDetails: any = null;
+  let savedIepData: any = { accommodations: [], goals: [] };
+  let savedRespiteData: any = null;
 
   if (currentChild) {
     const age = getAgeInYears(currentChild.dob);
@@ -83,6 +87,10 @@ export default async function DashboardPage({ searchParams }: PageProps) {
 
     // Routing resources
     countyDetails = getCountyDetails(currentChild.county_id);
+    
+    // IEP & Respite child specific configurations
+    savedIepData = getChildIepData(currentChild.id);
+    savedRespiteData = getChildRespiteData(currentChild.id);
   }
 
   return (
@@ -98,6 +106,8 @@ export default async function DashboardPage({ searchParams }: PageProps) {
       savedChecklist={savedChecklist}
       savedReminders={savedReminders}
       countyDetails={countyDetails}
+      savedIepData={savedIepData}
+      savedRespiteData={savedRespiteData}
     />
   );
 }

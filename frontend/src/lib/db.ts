@@ -229,6 +229,41 @@ function runMigrations() {
     console.log('⚡ Seeded Dynamic California Program Waitlists metadata.');
   }
 
+  // Create child_iep_accommodations table
+  navigatorDb.exec(`
+    CREATE TABLE IF NOT EXISTS child_iep_accommodations (
+      id TEXT PRIMARY KEY,
+      child_id TEXT NOT NULL,
+      accommodation_id TEXT NOT NULL,
+      FOREIGN KEY (child_id) REFERENCES child_profiles(id) ON DELETE CASCADE
+    );
+  `);
+
+  // Create child_iep_goals table
+  navigatorDb.exec(`
+    CREATE TABLE IF NOT EXISTS child_iep_goals (
+      id TEXT PRIMARY KEY,
+      child_id TEXT NOT NULL,
+      goal_template_id TEXT NOT NULL,
+      custom_text TEXT NOT NULL,
+      tokens_json TEXT,
+      FOREIGN KEY (child_id) REFERENCES child_profiles(id) ON DELETE CASCADE
+    );
+  `);
+
+  // Create child_respite_assessments table
+  navigatorDb.exec(`
+    CREATE TABLE IF NOT EXISTS child_respite_assessments (
+      child_id TEXT PRIMARY KEY,
+      safety_score INTEGER NOT NULL,
+      sleep_score INTEGER NOT NULL,
+      medical_score INTEGER NOT NULL,
+      behavior_score INTEGER NOT NULL,
+      updated_at TEXT NOT NULL,
+      FOREIGN KEY (child_id) REFERENCES child_profiles(id) ON DELETE CASCADE
+    );
+  `);
+
   console.log('⚡ SQLite Database migrations completed successfully!');
 }
 
@@ -808,6 +843,110 @@ export function submitCommunitySuggestion(suggestion: CommunitySuggestion): bool
     return info.changes > 0;
   } catch (err) {
     console.error('Failed to submit community suggestion:', err);
+    return false;
+  }
+}
+
+export interface ChildIepData {
+  accommodations: string[];
+  goals: {
+    id: string;
+    goal_template_id: string;
+    custom_text: string;
+    tokens_json: string;
+  }[];
+}
+
+export interface ChildRespiteData {
+  child_id: string;
+  safety_score: number;
+  sleep_score: number;
+  medical_score: number;
+  behavior_score: number;
+  updated_at: string;
+}
+
+export function getChildIepData(childId: string): ChildIepData {
+  try {
+    const accs = navigatorDb.prepare('SELECT accommodation_id FROM child_iep_accommodations WHERE child_id = ?').all(childId) as { accommodation_id: string }[];
+    const goals = navigatorDb.prepare('SELECT id, goal_template_id, custom_text, tokens_json FROM child_iep_goals WHERE child_id = ?').all(childId) as any[];
+    return {
+      accommodations: accs.map(a => a.accommodation_id),
+      goals: goals.map(g => ({
+        id: g.id,
+        goal_template_id: g.goal_template_id,
+        custom_text: g.custom_text,
+        tokens_json: g.tokens_json
+      }))
+    };
+  } catch (err) {
+    console.error('Failed to get child IEP data:', err);
+    return { accommodations: [], goals: [] };
+  }
+}
+
+export function saveChildIepData(childId: string, accommodations: string[], goals: { templateId: string; text: string; tokens: Record<string, string> }[]): boolean {
+  if (process.env.VERCEL === '1') {
+    console.log(`⚠️ Database is read-only on Vercel. Simulating save child IEP data.`);
+    return true;
+  }
+  try {
+    navigatorDb.transaction(() => {
+      // 1. Clear old accommodations & goals
+      navigatorDb.prepare('DELETE FROM child_iep_accommodations WHERE child_id = ?').run(childId);
+      navigatorDb.prepare('DELETE FROM child_iep_goals WHERE child_id = ?').run(childId);
+
+      // 2. Insert new accommodations
+      const insertAcc = navigatorDb.prepare('INSERT INTO child_iep_accommodations (id, child_id, accommodation_id) VALUES (?, ?, ?)');
+      accommodations.forEach(accId => {
+        const id = `iep-acc-${childId}-${accId}`;
+        insertAcc.run(id, childId, accId);
+      });
+
+      // 3. Insert new goals
+      const insertGoal = navigatorDb.prepare('INSERT INTO child_iep_goals (id, child_id, goal_template_id, custom_text, tokens_json) VALUES (?, ?, ?, ?, ?)');
+      goals.forEach(goal => {
+        const id = `iep-goal-${childId}-${goal.templateId}`;
+        insertGoal.run(id, childId, goal.templateId, goal.text, JSON.stringify(goal.tokens));
+      });
+    })();
+    return true;
+  } catch (err) {
+    console.error('Failed to save child IEP data:', err);
+    return false;
+  }
+}
+
+export function getChildRespiteData(childId: string): ChildRespiteData | null {
+  try {
+    const data = navigatorDb.prepare('SELECT * FROM child_respite_assessments WHERE child_id = ?').get(childId) as ChildRespiteData | undefined;
+    return data || null;
+  } catch (err) {
+    console.error('Failed to get child respite data:', err);
+    return null;
+  }
+}
+
+export function saveChildRespiteData(childId: string, scores: { safety: number; sleep: number; medical: number; behavior: number }): boolean {
+  if (process.env.VERCEL === '1') {
+    console.log(`⚠️ Database is read-only on Vercel. Simulating save child respite data.`);
+    return true;
+  }
+  try {
+    const stmt = navigatorDb.prepare(`
+      INSERT INTO child_respite_assessments (child_id, safety_score, sleep_score, medical_score, behavior_score, updated_at)
+      VALUES (?, ?, ?, ?, ?, ?)
+      ON CONFLICT(child_id) DO UPDATE SET
+        safety_score = excluded.safety_score,
+        sleep_score = excluded.sleep_score,
+        medical_score = excluded.medical_score,
+        behavior_score = excluded.behavior_score,
+        updated_at = excluded.updated_at
+    `);
+    stmt.run(childId, scores.safety, scores.sleep, scores.medical, scores.behavior, new Date().toISOString());
+    return true;
+  } catch (err) {
+    console.error('Failed to save child respite data:', err);
     return false;
   }
 }

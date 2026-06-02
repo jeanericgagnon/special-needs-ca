@@ -13,7 +13,9 @@ import {
   createReminder,
   toggleReminderCompleted,
   deleteReminder,
-  Reminder
+  Reminder,
+  saveChildIepData,
+  saveChildRespiteData
 } from '@/lib/db';
 
 // Helper to check authentication
@@ -164,5 +166,38 @@ export async function deleteReminderAction(reminderId: string) {
   } catch (err: any) {
     console.error('Delete reminder error:', err);
     return { error: err.message || 'Failed to delete reminder.' };
+  }
+}
+
+export async function saveChildIepAction(
+  childId: string, 
+  accommodations: string[], 
+  goals: { templateId: string; text: string; tokens: Record<string, string> }[]
+) {
+  try {
+    await getSessionUser();
+    const success = saveChildIepData(childId, accommodations, goals);
+    if (!success) throw new Error('DB write failed');
+    revalidatePath('/dashboard');
+    return { success: true };
+  } catch (err: any) {
+    console.error('Save child IEP action error:', err);
+    return { error: err.message || 'Failed to save child IEP plan.' };
+  }
+}
+
+export async function saveChildRespiteAction(
+  childId: string,
+  scores: { safety: number; sleep: number; medical: number; behavior: number }
+) {
+  try {
+    await getSessionUser();
+    const success = saveChildRespiteData(childId, scores);
+    if (!success) throw new Error('DB write failed');
+    revalidatePath('/dashboard');
+    return { success: true };
+  } catch (err: any) {
+    console.error('Save child respite action error:', err);
+    return { error: err.message || 'Failed to save child respite parameters.' };
   }
 }
