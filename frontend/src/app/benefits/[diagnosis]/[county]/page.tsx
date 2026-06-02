@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation';
 import CopyButton from '@/components/copy-button';
 import ContributionModal from '@/components/contribution-modal';
 import PrintButton from '@/components/print-button';
+import ShareButton from '@/components/share-button';
 
 
 type Props = {
@@ -159,7 +160,10 @@ export default async function SEOLandingPage({ params }: Props) {
         <p style={{ fontSize: '1.15rem', maxWidth: '800px', margin: '0 auto 1.5rem', color: 'var(--text-light)', lineHeight: '1.6' }}>
           Navigating developmental care in {countyFormatted} County. If you have a child with {diagnosisFormatted}, your family may qualify for Medi-Cal waivers, safety supervision wages, and educational services.
         </p>
-        <PrintButton label="Print PDF Directory Guide" />
+        <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center', alignItems: 'center' }}>
+          <ShareButton />
+          <PrintButton label="Print PDF Directory Guide" />
+        </div>
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', marginBottom: '4rem' }}>

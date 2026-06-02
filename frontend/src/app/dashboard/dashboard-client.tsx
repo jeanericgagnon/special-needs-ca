@@ -27,6 +27,7 @@ import {
   Copy, Check, Mail
 } from 'lucide-react';
 import PrintButton from '@/components/print-button';
+import ShareButton from '@/components/share-button';
 
 interface DashboardClientProps {
   counties: County[];
@@ -167,7 +168,10 @@ export default function DashboardClient({
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
             <h1 style={{ fontSize: '2rem', marginBottom: '0.25rem', marginRight: '0.5rem', background: 'none', WebkitTextFillColor: 'initial', WebkitBackgroundClip: 'initial' }}>Family Portal</h1>
-            <PrintButton label="Print PDF Summary" />
+            <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+              <ShareButton />
+              <PrintButton label="Print PDF Summary" />
+            </div>
           </div>
           <p style={{ color: 'var(--text-light)', fontSize: '0.95rem' }}>Coordinate care timelines and benefits tracking.</p>
         </div>

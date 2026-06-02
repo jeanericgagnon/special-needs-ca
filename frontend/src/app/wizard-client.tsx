@@ -14,6 +14,7 @@ import WaitlistVisualizer from './components/waitlist-visualizer';
 import WaiverComparison from './components/waiver-comparison';
 import RespiteExplainer from './components/respite-explainer';
 import PrintButton from '@/components/print-button';
+import ShareButton from '@/components/share-button';
 
 interface WizardClientProps {
   counties: County[];
@@ -881,7 +882,10 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
                     Based on active filters: {age} years old, {countyId.toUpperCase()} County, and diagnosed with {diagnosis}.
                   </p>
                 </div>
-                <PrintButton label="Print Action Plan" />
+                <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+                  <ShareButton />
+                  <PrintButton label="Print Action Plan" />
+                </div>
               </div>
 
               {/* Interactive Waiver Comparison */}
