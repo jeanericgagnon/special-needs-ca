@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { programs, counties, conditions, functionalNeeds, guides, resourceProviders } from '../data/seedData';
-import { Search, MapPin, Activity, ShieldCheck, Compass, HelpCircle, FileText, ArrowRight, Bookmark, AlertTriangle } from 'lucide-react';
+import { Search, MapPin, Activity, ShieldCheck, Compass, HelpCircle, FileText, ArrowRight, Bookmark, AlertTriangle, Sparkles } from 'lucide-react';
 
 export default function PublicDirectory({ setCurrentTab, setSelectedCountyId }) {
   const [activeCatalog, setActiveCatalog] = useState('programs'); // 'programs' | 'counties' | 'conditions' | 'needs' | 'guides'
