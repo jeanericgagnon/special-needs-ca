@@ -1,12 +1,13 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { analyzeOnboarding, AnalysisResult } from './actions';
 import type { County, ProgramWaitlist } from '@/lib/db';
 import { 
   Loader2, CheckCircle2, HeartHandshake, MapPin, Sparkles, 
   LayoutDashboard, Globe, AlertCircle, ArrowRight, ArrowLeft, 
-  Activity, Info, Sparkle, Milestone, HelpCircle, ShieldAlert
+  Activity, Info, Sparkle, Milestone, HelpCircle, ShieldAlert,
+  ChevronDown, ChevronUp, Clock, Coins, TrendingUp
 } from 'lucide-react';
 import Link from 'next/link';
 import DiagnosisAutocomplete from './components/diagnosis-autocomplete';
@@ -38,6 +39,101 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
   const [severeSafetyRisks, setSevereSafetyRisks] = useState<boolean | null>(null);
   const [schoolBasedTherapy, setSchoolBasedTherapy] = useState<boolean | null>(null);
   const [exceedsIncomeLimits, setExceedsIncomeLimits] = useState<boolean | null>(null);
+
+  // Financial breakdown toggle and waitlist bypass quiz states
+  const [showFinancialBreakdown, setShowFinancialBreakdown] = useState(false);
+  const [bypassAgeUnder21, setBypassAgeUnder21] = useState(false);
+  const [bypassFacilityStay, setBypassFacilityStay] = useState(false);
+  const [bypassWaiverTransfer, setBypassWaiverTransfer] = useState(false);
+
+  // Auto-fill age bypass based on wizard input
+  useEffect(() => {
+    if (analysis && age) {
+      const ageNum = parseInt(age);
+      if (!isNaN(ageNum) && ageNum < 21) {
+        setBypassAgeUnder21(true);
+      } else {
+        setBypassAgeUnder21(false);
+      }
+    }
+  }, [analysis, age]);
+
+  const getEstimatedFinancialValues = (coreMatches: any[]) => {
+    let total = 0;
+    const items = coreMatches.map(program => {
+      let value = 0;
+      let label = '';
+      let calcDesc = '';
+
+      switch (program.id) {
+        case 'ihss-for-children':
+          if (severeSafetyRisks === true || additionalText.toLowerCase().match(/(safety|wander|elope|supervision|danger|behavior)/)) {
+            value = 45360;
+            label = 'IHSS Protective Supervision';
+            calcDesc = 'Based on 210 hours/mo at CA average $18/hr for safety monitoring';
+          } else {
+            value = 12960;
+            label = 'IHSS Personal Care Hours';
+            calcDesc = 'Based on 60 hours/mo at CA average $18/hr for ADL support';
+          }
+          break;
+        case 'regional-centers':
+          if (severeSafetyRisks === true || additionalText.toLowerCase().match(/(safety|wander|elope|supervision|behavior|respite)/)) {
+            value = 24000;
+            label = 'Regional Center Respite & Behavior Services';
+            calcDesc = 'Estimated high-needs funding for respite care and behavioral support';
+          } else {
+            value = 12000;
+            label = 'Regional Center Standard Services';
+            calcDesc = 'Estimated standard respite, social rec, and case coordination support';
+          }
+          break;
+        case 'ssi-for-children':
+          value = 12168;
+          label = 'Supplemental Security Income (SSI)';
+          calcDesc = 'Based on maximum CA state/federal monthly benefit of $1,014';
+          break;
+        case 'california-childrens-services':
+          value = 18000;
+          label = 'CCS Medical Therapy Program';
+          calcDesc = 'PT/OT at MTU clinic equivalent valuation (2x/wk at $150/sess)';
+          break;
+        case 'iep-special-education':
+          value = 22000;
+          label = 'Special Education (IEP Services)';
+          calcDesc = 'School-based speech, specialized instruction, and paraprofessional support';
+          break;
+        case 'hearing-aid-coverage':
+          value = 3000;
+          label = 'Hearing Aid Coverage (HACCP)';
+          calcDesc = 'DHCS allowance for pediatric fittings and audiology devices';
+          break;
+        case 'early-start':
+          value = 8500;
+          label = 'Early Start Intervention';
+          calcDesc = 'State-funded early speech, OT, and infant development services';
+          break;
+        case 'medi-cal-for-kids-and-teens':
+          value = 7200;
+          label = 'Medi-Cal EPSDT Coverage';
+          calcDesc = 'Private health insurance premium equivalent for comprehensive coverage';
+          break;
+        case 'calable':
+          value = 1200;
+          label = 'CalABLE Tax-Advantaged Account';
+          calcDesc = 'Estimated annual tax savings and asset shield valuation';
+          break;
+        default:
+          value = 5000;
+          label = program.name;
+          calcDesc = 'Estimated annual program benefit valuation';
+      }
+      total += value;
+      return { id: program.id, label, value, calcDesc };
+    });
+
+    return { items, total };
+  };
 
   const ALL_SUGGESTIONS = [
     { label: 'Safety / Wandering issues', text: 'needs continuous safety supervision, has elopement/wandering behaviors' },
@@ -888,9 +984,267 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
                 </div>
               </div>
 
+              {/* Projected Financial Care Package Value Hero */}
+              {(() => {
+                const { items: financialItems, total: totalFinancialValue } = getEstimatedFinancialValues(analysis.coreMatches);
+                return (
+                  <div className="glass-panel" style={{ 
+                    background: 'linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(167, 139, 250, 0.08) 100%)',
+                    border: '1px solid rgba(99, 102, 241, 0.2)',
+                    padding: '2rem',
+                    borderRadius: '24px',
+                    marginBottom: '2.5rem',
+                    boxShadow: 'var(--glass-shadow)',
+                    position: 'relative',
+                    overflow: 'hidden'
+                  }}>
+                    <div style={{ position: 'absolute', top: '-20px', right: '-20px', width: '120px', height: '120px', background: 'radial-gradient(circle, rgba(99,102,241,0.15) 0%, transparent 70%)', pointerEvents: 'none' }} />
+                    
+                    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'flex-start', gap: '1.5rem' }}>
+                      <div style={{ width: '100%' }}>
+                        <span style={{ 
+                          display: 'inline-flex', 
+                          alignItems: 'center', 
+                          gap: '0.3rem', 
+                          fontSize: '0.75rem', 
+                          fontWeight: 700, 
+                          color: 'var(--primary-color)', 
+                          textTransform: 'uppercase', 
+                          letterSpacing: '0.05em', 
+                          marginBottom: '0.5rem',
+                          background: 'rgba(99,102,241,0.1)',
+                          padding: '0.25rem 0.6rem',
+                          borderRadius: '20px'
+                        }}>
+                          <Coins size={12} /> Projected Care Package Value
+                        </span>
+                        <h3 style={{ fontSize: '2.2rem', fontWeight: 800, color: 'var(--text-main)', margin: '0.2rem 0 0.5rem 0', display: 'flex', alignItems: 'baseline', gap: '0.3rem' }}>
+                          ${totalFinancialValue.toLocaleString()}
+                          <span style={{ fontSize: '1rem', fontWeight: 500, color: 'var(--text-light)' }}>/ year</span>
+                        </h3>
+                        <p style={{ fontSize: '0.9rem', color: 'var(--text-light)', lineHeight: '1.5', margin: 0 }}>
+                          Estimated value of matched state program slots, specialized therapies, diapers, and respite care. Bypassing parental income deeming rules unlocks these services at no cost.
+                        </p>
+                      </div>
+                      
+                      <div style={{ display: 'flex', gap: '0.8rem', width: '100%', justifyContent: 'space-between', borderTop: '1px solid rgba(0,0,0,0.06)', paddingTop: '1.25rem', marginTop: '0.25rem', alignItems: 'center' }}>
+                        <button 
+                          onClick={() => setShowFinancialBreakdown(!showFinancialBreakdown)}
+                          type="button"
+                          style={{
+                            background: 'none',
+                            border: 'none',
+                            color: 'var(--primary-color)',
+                            fontWeight: 600,
+                            fontSize: '0.9rem',
+                            cursor: 'pointer',
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '0.3rem',
+                            padding: 0
+                          }}
+                        >
+                          {showFinancialBreakdown ? (
+                            <>Hide Itemized Valuation Breakdown <ChevronUp size={16} /></>
+                          ) : (
+                            <>View Itemized Valuation Breakdown <ChevronDown size={16} /></>
+                          )}
+                        </button>
+                        <span style={{ fontSize: '0.85rem', color: 'var(--text-light)', fontWeight: 500, display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
+                          <TrendingUp size={14} /> {financialItems.length} Programs Matched
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Itemized Grid (toggled) */}
+                    {showFinancialBreakdown && (
+                      <div style={{ 
+                        marginTop: '1.5rem', 
+                        borderTop: '1px dashed rgba(0,0,0,0.08)', 
+                        paddingTop: '1.5rem',
+                        display: 'grid',
+                        gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+                        gap: '1rem',
+                        animation: 'slideDownFade 0.3s ease forwards'
+                      }}>
+                        {financialItems.map(item => (
+                          <div key={item.id} style={{ 
+                            background: 'var(--glass-bg)', 
+                            border: '1px solid var(--glass-border)', 
+                            borderRadius: '16px', 
+                            padding: '1.25rem',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'space-between',
+                            transition: 'all 0.2s ease',
+                            boxShadow: '0 2px 8px rgba(0,0,0,0.02)'
+                          }}>
+                            <div>
+                              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '0.5rem', marginBottom: '0.4rem' }}>
+                                <span style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--text-main)' }}>{item.label}</span>
+                                <span style={{ fontSize: '1rem', fontWeight: 800, color: 'var(--primary-color)', whiteSpace: 'nowrap' }}>
+                                  +${item.value.toLocaleString()}
+                                </span>
+                              </div>
+                              <p style={{ fontSize: '0.8rem', color: 'var(--text-light)', lineHeight: '1.4', margin: 0 }}>
+                                {item.calcDesc}
+                              </p>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                );
+              })()}
+
               {/* Interactive Waiver Comparison */}
               <div style={{ marginBottom: '2.5rem' }}>
                 <WaiverComparison />
+              </div>
+
+              {/* Interactive Reserve Capacity Waitlist Bypass Checker */}
+              <div className="glass-panel" style={{ 
+                border: '1px solid rgba(239, 68, 68, 0.15)',
+                background: 'rgba(255, 255, 255, 0.8)',
+                padding: '2rem',
+                borderRadius: '24px',
+                marginBottom: '2.5rem'
+              }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
+                  <Clock color="#ef4444" size={22} />
+                  <h3 style={{ fontSize: '1.2rem', fontWeight: 700, color: 'var(--text-main)', margin: 0 }}>
+                    Reserve Capacity Waitlist Bypass Checker
+                  </h3>
+                </div>
+                
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-light)', lineHeight: '1.5', marginBottom: '1.5rem' }}>
+                  The high-needs <strong>HCBA Waiver</strong> is capped and currently carries a 2-year waiting list. However, California reserves slots that completely bypass the waitlist under <strong>Reserve Capacity</strong> rules. Check the conditions below to see if your child qualifies:
+                </p>
+
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.9rem', marginBottom: '1.5rem' }}>
+                  <label style={{ 
+                    display: 'flex', 
+                    alignItems: 'flex-start', 
+                    gap: '0.75rem', 
+                    fontSize: '0.9rem', 
+                    fontWeight: 500, 
+                    cursor: 'pointer',
+                    padding: '0.75rem',
+                    borderRadius: '12px',
+                    background: 'rgba(0,0,0,0.01)',
+                    border: '1px solid rgba(0,0,0,0.02)',
+                    transition: 'all 0.2s'
+                  }}>
+                    <input 
+                      type="checkbox" 
+                      checked={bypassAgeUnder21}
+                      onChange={(e) => setBypassAgeUnder21(e.target.checked)}
+                      style={{ marginTop: '3px' }}
+                    />
+                    <div>
+                      <strong>Child is under 21 years old</strong>
+                      <span style={{ display: 'block', fontSize: '0.8rem', color: 'var(--text-light)', marginTop: '0.15rem' }}>
+                        Protected under federal EPSDT (Early and Periodic Screening, Diagnostic and Treatment) Medicaid rules.
+                      </span>
+                    </div>
+                  </label>
+
+                  <label style={{ 
+                    display: 'flex', 
+                    alignItems: 'flex-start', 
+                    gap: '0.75rem', 
+                    fontSize: '0.9rem', 
+                    fontWeight: 500, 
+                    cursor: 'pointer',
+                    padding: '0.75rem',
+                    borderRadius: '12px',
+                    background: 'rgba(0,0,0,0.01)',
+                    border: '1px solid rgba(0,0,0,0.02)',
+                    transition: 'all 0.2s'
+                  }}>
+                    <input 
+                      type="checkbox" 
+                      checked={bypassFacilityStay}
+                      onChange={(e) => setBypassFacilityStay(e.target.checked)}
+                      style={{ marginTop: '3px' }}
+                    />
+                    <div>
+                      <strong>Resided in a health or subacute facility for 60+ consecutive days</strong>
+                      <span style={{ display: 'block', fontSize: '0.8rem', color: 'var(--text-light)', marginTop: '0.15rem' }}>
+                        Applies to children currently in hospitals, pediatric subacute facilities, or skilled nursing facilities transitioning home.
+                      </span>
+                    </div>
+                  </label>
+
+                  <label style={{ 
+                    display: 'flex', 
+                    alignItems: 'flex-start', 
+                    gap: '0.75rem', 
+                    fontSize: '0.9rem', 
+                    fontWeight: 500, 
+                    cursor: 'pointer',
+                    padding: '0.75rem',
+                    borderRadius: '12px',
+                    background: 'rgba(0,0,0,0.01)',
+                    border: '1px solid rgba(0,0,0,0.02)',
+                    transition: 'all 0.2s'
+                  }}>
+                    <input 
+                      type="checkbox" 
+                      checked={bypassWaiverTransfer}
+                      onChange={(e) => setBypassWaiverTransfer(e.target.checked)}
+                      style={{ marginTop: '3px' }}
+                    />
+                    <div>
+                      <strong>Transferring from another active Medi-Cal waiver program</strong>
+                      <span style={{ display: 'block', fontSize: '0.8rem', color: 'var(--text-light)', marginTop: '0.15rem' }}>
+                        Transferring from Regional Center HCBS DD waiver, or other California home and community-based services.
+                      </span>
+                    </div>
+                  </label>
+                </div>
+
+                {/* Dynamic Warning or Success Alert */}
+                {(bypassAgeUnder21 || bypassFacilityStay || bypassWaiverTransfer) ? (
+                  <div style={{ 
+                    background: 'linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(52, 211, 153, 0.08) 100%)',
+                    border: '1px solid rgba(16, 185, 129, 0.3)',
+                    padding: '1.25rem',
+                    borderRadius: '16px',
+                    display: 'flex',
+                    gap: '0.75rem',
+                    alignItems: 'flex-start',
+                    animation: 'fadeIn 0.3s ease forwards'
+                  }}>
+                    <CheckCircle2 color="#10b981" size={24} style={{ flexShrink: 0, marginTop: '2px' }} />
+                    <div>
+                      <strong style={{ display: 'block', color: 'var(--text-main)', fontSize: '0.95rem', marginBottom: '0.25rem' }}>
+                        🎉 Potential Waitlist Bypass Confirmed!
+                      </strong>
+                      <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', lineHeight: '1.5', margin: 0 }}>
+                        Under California Department of Health Care Services (DHCS) regulations, your child matches one or more <strong>Reserve Capacity</strong> rules. When applying for the HCBA Waiver, instruct your local Waiver Agency that you qualify for a priority slot, allowing your child to completely skip the 2-year wait list.
+                      </p>
+                    </div>
+                  </div>
+                ) : (
+                  <div style={{ 
+                    background: 'rgba(0,0,0,0.02)',
+                    border: '1px dashed rgba(0,0,0,0.06)',
+                    padding: '1.25rem',
+                    borderRadius: '16px',
+                    display: 'flex',
+                    gap: '0.75rem',
+                    alignItems: 'flex-start'
+                  }}>
+                    <Info color="var(--text-light)" size={20} style={{ flexShrink: 0, marginTop: '2px' }} />
+                    <div>
+                      <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', lineHeight: '1.5', margin: 0 }}>
+                        If none of these apply, the standard waitlist is approximately 24 months. You should still submit an application to secure your spot on the waitlist while exploring Regional Center and IHSS services which have no enrollment caps.
+                      </p>
+                    </div>
+                  </div>
+                )}
               </div>
 
               {/* CORE PROGRAMS MATCHED (Detailed checks based on rules) */}
