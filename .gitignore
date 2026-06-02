@@ -25,6 +25,6 @@ dist-ssr
 
 # SQLite Databases
 *.db
-!ca_disability_crawler.db
-!ca_disability_navigator.db
+!frontend/ca_disability_crawler.db
+!frontend/ca_disability_navigator.db
 

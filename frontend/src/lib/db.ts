@@ -2,8 +2,8 @@ import Database from 'better-sqlite3';
 import path from 'path';
 
 // Define DB Paths relative to next.js execution (working directory is usually the root of frontend/)
-const crawlerDbPath = path.resolve(process.cwd(), '../ca_disability_crawler.db');
-const navigatorDbPath = path.resolve(process.cwd(), '../ca_disability_navigator.db');
+const crawlerDbPath = path.resolve(process.cwd(), 'ca_disability_crawler.db');
+const navigatorDbPath = path.resolve(process.cwd(), 'ca_disability_navigator.db');
 
 // Instantiate DB handles
 const crawlerDb = new Database(crawlerDbPath, { readonly: true });
