@@ -1,0 +1,9 @@
+{
+	"id": "06LuvNIe8IrgDcE",
+	"json": "{\"id\":\"06LuvNIe8IrgDcE\",\"url\":\"https://health.ucdavis.edu/patients-visitors/support-groups/burn-recovery\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/support-groups/burn-recovery\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/support-groups/burn-recovery\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:59.659Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/support-groups/burn-recovery",
+	"url": "https://health.ucdavis.edu/patients-visitors/support-groups/burn-recovery"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "SfdVlDynElrmOUu",
+	"json": "{\"id\":\"SfdVlDynElrmOUu\",\"url\":\"https://cdss.ca.gov/inforesources/CDSS-Programs/Foster-Care/Foster-Care/Foster-Family-Agencies\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/foster-care/foster-family-agencies\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/CDSS-Programs/Foster-Care/Foster-Care/Foster-Family-Agencies\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:58.303Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/CDSS-Programs/Foster-Care/Foster-Care/Foster-Family-Agencies",
+	"url": "https://cdss.ca.gov/inforesources/CDSS-Programs/Foster-Care/Foster-Care/Foster-Family-Agencies"
+}

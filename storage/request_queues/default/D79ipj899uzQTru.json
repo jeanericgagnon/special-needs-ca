@@ -1,0 +1,9 @@
+{
+	"id": "D79ipj899uzQTru",
+	"json": "{\"id\":\"D79ipj899uzQTru\",\"url\":\"http://cdss.ca.gov/inforesources/ebt\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/ebt\",\"uniqueKey\":\"http://cdss.ca.gov/inforesources/ebt\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:58:52.120Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://cdss.ca.gov/inforesources/ebt",
+	"url": "http://cdss.ca.gov/inforesources/ebt"
+}

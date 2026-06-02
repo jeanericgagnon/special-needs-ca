@@ -1,0 +1,9 @@
+{
+	"id": "t51vVxvfMcnZTvd",
+	"json": "{\"id\":\"t51vVxvfMcnZTvd\",\"url\":\"https://care.ucdavis.edu/preventioneducation\",\"loadedUrl\":\"https://care.ucdavis.edu/preventioneducation\",\"uniqueKey\":\"https://care.ucdavis.edu/preventioneducation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:01.965Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://care.ucdavis.edu/preventioneducation",
+	"url": "https://care.ucdavis.edu/preventioneducation"
+}

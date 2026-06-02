@@ -1,0 +1,9 @@
+{
+	"id": "sCTSZOAUM2AavXg",
+	"json": "{\"id\":\"sCTSZOAUM2AavXg\",\"url\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/publichealth4all/AB-144-recommendations.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/publichealth4all/AB-144-recommendations.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/publichealth4all/AB-144-recommendations.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:11:03.562Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/publichealth4all/AB-144-recommendations.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/publichealth4all/AB-144-recommendations.aspx"
+}

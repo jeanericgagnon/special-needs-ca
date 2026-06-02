@@ -1,0 +1,9 @@
+{
+	"id": "l3wleDk3AsJEsW4",
+	"json": "{\"id\":\"l3wleDk3AsJEsW4\",\"url\":\"https://rarediseases.org/rare-diseases/smith-magenis-syndrome/#complete-report\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/smith-magenis-syndrome/#complete-report\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/smith-magenis-syndrome\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:11:38.081Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/rare-diseases/smith-magenis-syndrome",
+	"url": "https://rarediseases.org/rare-diseases/smith-magenis-syndrome/#complete-report"
+}

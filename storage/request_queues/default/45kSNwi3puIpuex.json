@@ -1,0 +1,9 @@
+{
+	"id": "45kSNwi3puIpuex",
+	"json": "{\"id\":\"45kSNwi3puIpuex\",\"url\":\"https://www.gov.ca.gov/category/content-types/healthcare/\",\"loadedUrl\":\"https://www.gov.ca.gov/category/content-types/healthcare/\",\"uniqueKey\":\"https://www.gov.ca.gov/category/content-types/healthcare\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:18.447Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.gov.ca.gov/category/content-types/healthcare",
+	"url": "https://www.gov.ca.gov/category/content-types/healthcare/"
+}

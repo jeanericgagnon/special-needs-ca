@@ -1,0 +1,9 @@
+{
+	"id": "uy8vpXKFtI6IO8G",
+	"json": "{\"id\":\"uy8vpXKFtI6IO8G\",\"url\":\"https://cdss.ca.gov/Benefits-Services/Cash-Assistance\",\"loadedUrl\":\"https://cdss.ca.gov/benefits-services/cash-assistance\",\"uniqueKey\":\"https://cdss.ca.gov/Benefits-Services/Cash-Assistance\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:58:53.122Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/Benefits-Services/Cash-Assistance",
+	"url": "https://cdss.ca.gov/Benefits-Services/Cash-Assistance"
+}

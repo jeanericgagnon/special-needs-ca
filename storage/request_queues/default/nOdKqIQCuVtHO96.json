@@ -1,0 +1,9 @@
+{
+	"id": "nOdKqIQCuVtHO96",
+	"json": "{\"id\":\"nOdKqIQCuVtHO96\",\"url\":\"https://www.chp.ca.gov/link/ffceeacfe39a427a864f41de2d02f5b2.aspx\",\"loadedUrl\":\"https://www.chp.ca.gov/news-alerts/alerts/Blue-Alert/\",\"uniqueKey\":\"https://www.chp.ca.gov/link/ffceeacfe39a427a864f41de2d02f5b2.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:12.407Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chp.ca.gov/link/ffceeacfe39a427a864f41de2d02f5b2.aspx",
+	"url": "https://www.chp.ca.gov/link/ffceeacfe39a427a864f41de2d02f5b2.aspx"
+}

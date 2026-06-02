@@ -1,0 +1,9 @@
+{
+	"id": "A0ZPNyBsBoxrlbZ",
+	"json": "{\"id\":\"A0ZPNyBsBoxrlbZ\",\"url\":\"https://health.ucdavis.edu/internal-medicine/academic-programs/\",\"loadedUrl\":\"https://health.ucdavis.edu/internal-medicine/academic-programs/\",\"uniqueKey\":\"https://health.ucdavis.edu/internal-medicine/academic-programs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:34:25.620Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/internal-medicine/academic-programs",
+	"url": "https://health.ucdavis.edu/internal-medicine/academic-programs/"
+}

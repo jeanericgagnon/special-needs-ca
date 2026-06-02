@@ -1,0 +1,9 @@
+{
+	"id": "lOcRN6115WKAlrJ",
+	"json": "{\"id\":\"lOcRN6115WKAlrJ\",\"url\":\"https://biomonitoring.ca.gov/chemicals/fact-sheets\",\"loadedUrl\":\"https://biomonitoring.ca.gov/chemicals/fact-sheets\",\"uniqueKey\":\"https://biomonitoring.ca.gov/chemicals/fact-sheets\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:31:07.943Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://biomonitoring.ca.gov/chemicals/fact-sheets",
+	"url": "https://biomonitoring.ca.gov/chemicals/fact-sheets"
+}

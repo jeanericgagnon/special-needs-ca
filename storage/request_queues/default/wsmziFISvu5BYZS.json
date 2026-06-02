@@ -1,0 +1,9 @@
+{
+	"id": "wsmziFISvu5BYZS",
+	"json": "{\"id\":\"wsmziFISvu5BYZS\",\"url\":\"https://neuroengineering.ucdavis.edu/\",\"loadedUrl\":\"https://neuroengineering.ucdavis.edu/\",\"uniqueKey\":\"https://neuroengineering.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:06.260Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://neuroengineering.ucdavis.edu",
+	"url": "https://neuroengineering.ucdavis.edu/"
+}

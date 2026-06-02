@@ -1,0 +1,9 @@
+{
+	"id": "4J28xhjIqG5V2pd",
+	"json": "{\"id\":\"4J28xhjIqG5V2pd\",\"url\":\"http://www.vetmed.ucdavis.edu/vmth/#footer\",\"loadedUrl\":\"https://www.vetmed.ucdavis.edu/hospital\",\"uniqueKey\":\"http://www.vetmed.ucdavis.edu/vmth\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:47.596Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.vetmed.ucdavis.edu/vmth",
+	"url": "http://www.vetmed.ucdavis.edu/vmth/#footer"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "4615eYeSXtN5oYw",
+	"json": "{\"id\":\"4615eYeSXtN5oYw\",\"url\":\"https://health.ucdavis.edu/cancer/patients-visitors/supportgroups.html\",\"loadedUrl\":\"https://health.ucdavis.edu/cancer/support/supportgroups\",\"uniqueKey\":\"https://health.ucdavis.edu/cancer/patients-visitors/supportgroups.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:47.194Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/cancer/patients-visitors/supportgroups.html",
+	"url": "https://health.ucdavis.edu/cancer/patients-visitors/supportgroups.html"
+}

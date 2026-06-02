@@ -1,0 +1,9 @@
+{
+	"id": "F8rjxbfjkf32OPo",
+	"json": "{\"id\":\"F8rjxbfjkf32OPo\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/1318/brandee-waite-physical_medicine_and_rehabilitation-sports_medicine-sports_medicine_-_physical_medicine__rehabilitation-folsom-rocklin-sacramento?FreeText%3aLast+name=waite\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/1318/brandee-waite-physical_medicine_and_rehabilitation-sports_medicine-sports_medicine_-_physical_medicine__rehabilitation-folsom-rocklin-sacramento?FreeText%3aLast+name=waite\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/1318/brandee-waite-physical_medicine_and_rehabilitation-sports_medicine-sports_medicine_-_physical_medicine__rehabilitation-folsom-rocklin-sacramento?FreeText%3ALast+name=waite\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:15.289Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/1318/brandee-waite-physical_medicine_and_rehabilitation-sports_medicine-sports_medicine_-_physical_medicine__rehabilitation-folsom-rocklin-sacramento?FreeText%3ALast+name=waite",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/1318/brandee-waite-physical_medicine_and_rehabilitation-sports_medicine-sports_medicine_-_physical_medicine__rehabilitation-folsom-rocklin-sacramento?FreeText%3aLast+name=waite"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "sb46TZuOIpsnU27",
+	"json": "{\"id\":\"sb46TZuOIpsnU27\",\"url\":\"https://health.ucdavis.edu/welcome/news/topic/orthopaedic-care\",\"loadedUrl\":\"https://health.ucdavis.edu/welcome/news/topic/orthopaedic-care\",\"uniqueKey\":\"https://health.ucdavis.edu/welcome/news/topic/orthopaedic-care\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:53.805Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/welcome/news/topic/orthopaedic-care",
+	"url": "https://health.ucdavis.edu/welcome/news/topic/orthopaedic-care"
+}

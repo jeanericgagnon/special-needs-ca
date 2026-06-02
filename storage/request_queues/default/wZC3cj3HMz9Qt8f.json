@@ -1,0 +1,9 @@
+{
+	"id": "wZC3cj3HMz9Qt8f",
+	"json": "{\"id\":\"wZC3cj3HMz9Qt8f\",\"url\":\"https://hdapp.ucdavis.edu/student-education-requirements\",\"loadedUrl\":\"https://hdapp.ucdavis.edu/student-education-requirements\",\"uniqueKey\":\"https://hdapp.ucdavis.edu/student-education-requirements\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:01.657Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hdapp.ucdavis.edu/student-education-requirements",
+	"url": "https://hdapp.ucdavis.edu/student-education-requirements"
+}

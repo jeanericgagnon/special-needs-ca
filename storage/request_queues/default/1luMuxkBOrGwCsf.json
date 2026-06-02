@@ -1,0 +1,9 @@
+{
+	"id": "1luMuxkBOrGwCsf",
+	"json": "{\"id\":\"1luMuxkBOrGwCsf\",\"url\":\"https://neuroscience.ucdavis.edu/news/chen-lab-receives-2024-lab-safety-award\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/news/chen-lab-receives-2024-lab-safety-award\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/news/chen-lab-receives-2024-lab-safety-award\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:54.633Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://neuroscience.ucdavis.edu/news/chen-lab-receives-2024-lab-safety-award",
+	"url": "https://neuroscience.ucdavis.edu/news/chen-lab-receives-2024-lab-safety-award"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "yG7zkBqbPwvaHdF",
+	"json": "{\"id\":\"yG7zkBqbPwvaHdF\",\"url\":\"https://financeandbusiness.ucdavis.edu/bia/b-i/aggiedash\",\"loadedUrl\":\"https://financeandbusiness.ucdavis.edu/bia/institutional-analysis/data-partnerships\",\"uniqueKey\":\"https://financeandbusiness.ucdavis.edu/bia/b-i/aggiedash\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:53.423Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://financeandbusiness.ucdavis.edu/bia/b-i/aggiedash",
+	"url": "https://financeandbusiness.ucdavis.edu/bia/b-i/aggiedash"
+}

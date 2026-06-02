@@ -1,0 +1,9 @@
+{
+	"id": "8KSo9QVmbpgmVME",
+	"json": "{\"id\":\"8KSo9QVmbpgmVME\",\"url\":\"https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/Letter-of-Intent-DIS-Workforce-Development-Grant-ADAP-Rebate-Funds-FY-2025-2026-FY-2029-2030.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/Letter-of-Intent-DIS-Workforce-Development-Grant-ADAP-Rebate-Funds-FY-2025-2026-FY-2029-2030.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/Letter-of-Intent-DIS-Workforce-Development-Grant-ADAP-Rebate-Funds-FY-2025-2026-FY-2029-2030.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:48:49.670Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/Letter-of-Intent-DIS-Workforce-Development-Grant-ADAP-Rebate-Funds-FY-2025-2026-FY-2029-2030.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/Letter-of-Intent-DIS-Workforce-Development-Grant-ADAP-Rebate-Funds-FY-2025-2026-FY-2029-2030.aspx"
+}

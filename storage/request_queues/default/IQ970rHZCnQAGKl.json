@@ -1,0 +1,9 @@
+{
+	"id": "IQ970rHZCnQAGKl",
+	"json": "{\"id\":\"IQ970rHZCnQAGKl\",\"url\":\"http://www.csdr-cde.ca.gov/\",\"loadedUrl\":\"https://www.csdr-cde.ca.gov/\",\"uniqueKey\":\"http://www.csdr-cde.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:08.205Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.csdr-cde.ca.gov",
+	"url": "http://www.csdr-cde.ca.gov/"
+}

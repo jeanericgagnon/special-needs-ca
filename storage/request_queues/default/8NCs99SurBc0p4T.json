@@ -1,0 +1,9 @@
+{
+	"id": "8NCs99SurBc0p4T",
+	"json": "{\"id\":\"8NCs99SurBc0p4T\",\"url\":\"https://www.gov.ca.gov/2019/11/22/governor-newsom-announces-early-childhood-policy-council-and-a-team-to-develop-master-plan-for-early-learning-and-care/\",\"loadedUrl\":\"https://www.gov.ca.gov/2019/11/22/governor-newsom-announces-early-childhood-policy-council-and-a-team-to-develop-master-plan-for-early-learning-and-care/\",\"uniqueKey\":\"https://www.gov.ca.gov/2019/11/22/governor-newsom-announces-early-childhood-policy-council-and-a-team-to-develop-master-plan-for-early-learning-and-care\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:28:47.937Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.gov.ca.gov/2019/11/22/governor-newsom-announces-early-childhood-policy-council-and-a-team-to-develop-master-plan-for-early-learning-and-care",
+	"url": "https://www.gov.ca.gov/2019/11/22/governor-newsom-announces-early-childhood-policy-council-and-a-team-to-develop-master-plan-for-early-learning-and-care/"
+}

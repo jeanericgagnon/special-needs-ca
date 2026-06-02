@@ -1,0 +1,9 @@
+{
+	"id": "t52SNHNz1fQOnvM",
+	"json": "{\"id\":\"t52SNHNz1fQOnvM\",\"url\":\"https://www.chhs.ca.gov/blog/2017/10/13/cdph-taking-action-increase-hepatitis-vaccine-supplies/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2017/10/13/cdph-taking-action-increase-hepatitis-vaccine-supplies/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2017/10/13/cdph-taking-action-increase-hepatitis-vaccine-supplies\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:05.802Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chhs.ca.gov/blog/2017/10/13/cdph-taking-action-increase-hepatitis-vaccine-supplies",
+	"url": "https://www.chhs.ca.gov/blog/2017/10/13/cdph-taking-action-increase-hepatitis-vaccine-supplies/"
+}

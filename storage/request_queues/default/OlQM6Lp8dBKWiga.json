@@ -1,0 +1,9 @@
+{
+	"id": "OlQM6Lp8dBKWiga",
+	"json": "{\"id\":\"OlQM6Lp8dBKWiga\",\"url\":\"https://redwoodseed.ucdavis.edu/program-preparation\",\"loadedUrl\":\"https://redwoodseed.ucdavis.edu/program-preparation\",\"uniqueKey\":\"https://redwoodseed.ucdavis.edu/program-preparation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:46.223Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://redwoodseed.ucdavis.edu/program-preparation",
+	"url": "https://redwoodseed.ucdavis.edu/program-preparation"
+}

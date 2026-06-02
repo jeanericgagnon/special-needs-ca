@@ -1,0 +1,9 @@
+{
+	"id": "8ymwK4Gu6OmB7Hf",
+	"json": "{\"id\":\"8ymwK4Gu6OmB7Hf\",\"url\":\"https://give.ucdavis.edu/ANUT\",\"loadedUrl\":\"https://give.ucdavis.edu/ANUT\",\"uniqueKey\":\"https://give.ucdavis.edu/ANUT\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:56.146Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/ANUT",
+	"url": "https://give.ucdavis.edu/ANUT"
+}

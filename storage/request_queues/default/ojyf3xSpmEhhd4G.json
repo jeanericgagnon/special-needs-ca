@@ -1,0 +1,9 @@
+{
+	"id": "ojyf3xSpmEhhd4G",
+	"json": "{\"id\":\"ojyf3xSpmEhhd4G\",\"url\":\"https://www.placer.ca.gov/cdn-cgi/l/email-protection#430a0b101003332f222026316d20226d242c35\",\"loadedUrl\":\"https://www.placer.ca.gov/cdn-cgi/l/email-protection#430a0b101003332f222026316d20226d242c35\",\"uniqueKey\":\"https://www.placer.ca.gov/cdn-cgi/l/email-protection\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:28.386Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.placer.ca.gov/cdn-cgi/l/email-protection",
+	"url": "https://www.placer.ca.gov/cdn-cgi/l/email-protection#430a0b101003332f222026316d20226d242c35"
+}

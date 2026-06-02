@@ -1,0 +1,9 @@
+{
+	"id": "J92PBVx9iKVWIWC",
+	"json": "{\"id\":\"J92PBVx9iKVWIWC\",\"url\":\"https://calable.ca.gov/how-it-works/eligibility\",\"loadedUrl\":\"https://calable.ca.gov/how-it-works/eligibility\",\"uniqueKey\":\"https://calable.ca.gov/how-it-works/eligibility\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:12.505Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://calable.ca.gov/how-it-works/eligibility",
+	"url": "https://calable.ca.gov/how-it-works/eligibility"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "23s20JYsK4VgYPX",
+	"json": "{\"id\":\"23s20JYsK4VgYPX\",\"url\":\"https://rarediseases.org/rare-diseases/leber-congenital-amaurosis/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/leber-congenital-amaurosis/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/leber-congenital-amaurosis\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:11:03.543Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/rare-diseases/leber-congenital-amaurosis",
+	"url": "https://rarediseases.org/rare-diseases/leber-congenital-amaurosis/"
+}

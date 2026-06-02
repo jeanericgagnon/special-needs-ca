@@ -1,0 +1,9 @@
+{
+	"id": "lt2vH8RFN5pxvPZ",
+	"json": "{\"id\":\"lt2vH8RFN5pxvPZ\",\"url\":\"https://engineering.ucdavis.edu/undergraduates/academic-advising/pnp-policy-info\",\"loadedUrl\":\"https://engineering.ucdavis.edu/undergraduates/academic-advising/pnp-policy-info\",\"uniqueKey\":\"https://engineering.ucdavis.edu/undergraduates/academic-advising/pnp-policy-info\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:34.660Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://engineering.ucdavis.edu/undergraduates/academic-advising/pnp-policy-info",
+	"url": "https://engineering.ucdavis.edu/undergraduates/academic-advising/pnp-policy-info"
+}

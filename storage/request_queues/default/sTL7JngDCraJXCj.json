@@ -1,0 +1,9 @@
+{
+	"id": "sTL7JngDCraJXCj",
+	"json": "{\"id\":\"sTL7JngDCraJXCj\",\"url\":\"https://edd.ca.gov/en/jobs_and_training/step-5-apply/\",\"loadedUrl\":\"https://edd.ca.gov/en/jobs_and_training/step-5-apply/\",\"uniqueKey\":\"https://edd.ca.gov/en/jobs_and_training/step-5-apply\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:41.032Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://edd.ca.gov/en/jobs_and_training/step-5-apply",
+	"url": "https://edd.ca.gov/en/jobs_and_training/step-5-apply/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "K8dlFRxanByglhO",
+	"json": "{\"id\":\"K8dlFRxanByglhO\",\"url\":\"https://www.sos.ca.gov/business-programs/\",\"loadedUrl\":\"https://www.sos.ca.gov/business-programs/\",\"uniqueKey\":\"https://www.sos.ca.gov/business-programs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:16.960Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.sos.ca.gov/business-programs",
+	"url": "https://www.sos.ca.gov/business-programs/"
+}

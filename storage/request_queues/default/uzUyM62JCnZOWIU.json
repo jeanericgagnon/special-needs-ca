@@ -1,0 +1,9 @@
+{
+	"id": "uzUyM62JCnZOWIU",
+	"json": "{\"id\":\"uzUyM62JCnZOWIU\",\"url\":\"https://health.ucdavis.edu/mindinstitute/centers/intellectual-developmental-disabilities-research/cores/administrative.html\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/centers/intellectual-developmental-disabilities-research/cores/administrative\",\"uniqueKey\":\"https://health.ucdavis.edu/mindinstitute/centers/intellectual-developmental-disabilities-research/cores/administrative.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:06.083Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mindinstitute/centers/intellectual-developmental-disabilities-research/cores/administrative.html",
+	"url": "https://health.ucdavis.edu/mindinstitute/centers/intellectual-developmental-disabilities-research/cores/administrative.html"
+}

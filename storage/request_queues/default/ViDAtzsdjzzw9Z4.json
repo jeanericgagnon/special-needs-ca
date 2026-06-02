@@ -1,0 +1,9 @@
+{
+	"id": "ViDAtzsdjzzw9Z4",
+	"json": "{\"id\":\"ViDAtzsdjzzw9Z4\",\"url\":\"https://health.ucdavis.edu/ctsc/area/clinical-trials/clinical-research-guidebook\",\"loadedUrl\":\"https://health.ucdavis.edu/ctsc/area/clinical-trials/clinical-research-guidebook\",\"uniqueKey\":\"https://health.ucdavis.edu/ctsc/area/clinical-trials/clinical-research-guidebook\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:33.000Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/ctsc/area/clinical-trials/clinical-research-guidebook",
+	"url": "https://health.ucdavis.edu/ctsc/area/clinical-trials/clinical-research-guidebook"
+}

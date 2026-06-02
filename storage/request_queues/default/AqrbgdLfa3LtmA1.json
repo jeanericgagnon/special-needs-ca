@@ -1,0 +1,9 @@
+{
+	"id": "AqrbgdLfa3LtmA1",
+	"json": "{\"id\":\"AqrbgdLfa3LtmA1\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/22083/suma-shankar-genetics-genomic_medicine-ophthalmology-sacramento?FreeText%3aLast+name=shankar\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/22083/suma-shankar-genetics-genomic_medicine-ophthalmology-sacramento?FreeText%3aLast+name=shankar\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/22083/suma-shankar-genetics-genomic_medicine-ophthalmology-sacramento?FreeText%3ALast+name=shankar\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:10.339Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/22083/suma-shankar-genetics-genomic_medicine-ophthalmology-sacramento?FreeText%3ALast+name=shankar",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/22083/suma-shankar-genetics-genomic_medicine-ophthalmology-sacramento?FreeText%3aLast+name=shankar"
+}

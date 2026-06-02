@@ -1,0 +1,9 @@
+{
+	"id": "csZLJ37g8PbO0V7",
+	"json": "{\"id\":\"csZLJ37g8PbO0V7\",\"url\":\"https://health.ucdavis.edu/food-nutrition/about-us\",\"loadedUrl\":\"https://health.ucdavis.edu/food-nutrition/about-us\",\"uniqueKey\":\"https://health.ucdavis.edu/food-nutrition/about-us\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:54.828Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/food-nutrition/about-us",
+	"url": "https://health.ucdavis.edu/food-nutrition/about-us"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "XkAW2stIUxsB6gR",
+	"json": "{\"id\":\"XkAW2stIUxsB6gR\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/SIDS/Pages/default.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/SIDS/Pages/default.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/SIDS/Pages/default.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:01:34.744Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/SIDS/Pages/default.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/SIDS/Pages/default.aspx"
+}

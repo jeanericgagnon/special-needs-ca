@@ -1,0 +1,9 @@
+{
+	"id": "InKQ7GSbfZ2MTZF",
+	"json": "{\"id\":\"InKQ7GSbfZ2MTZF\",\"url\":\"https://rarediseases.org/rare-diseases/cerebral-folate-deficiency/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/cerebral-folate-deficiency/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/cerebral-folate-deficiency\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:09:17.904Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/rare-diseases/cerebral-folate-deficiency",
+	"url": "https://rarediseases.org/rare-diseases/cerebral-folate-deficiency/"
+}

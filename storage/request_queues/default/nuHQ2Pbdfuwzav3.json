@@ -1,0 +1,9 @@
+{
+	"id": "nuHQ2Pbdfuwzav3",
+	"json": "{\"id\":\"nuHQ2Pbdfuwzav3\",\"url\":\"https://data.chhs.ca.gov/dataset/licensed-driving-under-the-influence-provider-directory\",\"loadedUrl\":\"https://data.chhs.ca.gov/dataset/licensed-driving-under-the-influence-provider-directory\",\"uniqueKey\":\"https://data.chhs.ca.gov/dataset/licensed-driving-under-the-influence-provider-directory\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:48.293Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://data.chhs.ca.gov/dataset/licensed-driving-under-the-influence-provider-directory",
+	"url": "https://data.chhs.ca.gov/dataset/licensed-driving-under-the-influence-provider-directory"
+}

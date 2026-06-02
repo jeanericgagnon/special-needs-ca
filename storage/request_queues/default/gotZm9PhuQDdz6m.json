@@ -1,0 +1,9 @@
+{
+	"id": "gotZm9PhuQDdz6m",
+	"json": "{\"id\":\"gotZm9PhuQDdz6m\",\"url\":\"https://health.ucdavis.edu/children/patient-education/pediatric-diabetes/blood-sugar-testing\",\"loadedUrl\":\"https://health.ucdavis.edu/children/patient-education/pediatric-diabetes/blood-sugar-testing\",\"uniqueKey\":\"https://health.ucdavis.edu/children/patient-education/pediatric-diabetes/blood-sugar-testing\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:55.436Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/children/patient-education/pediatric-diabetes/blood-sugar-testing",
+	"url": "https://health.ucdavis.edu/children/patient-education/pediatric-diabetes/blood-sugar-testing"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "ll15sogHAepkfli",
+	"json": "{\"id\":\"ll15sogHAepkfli\",\"url\":\"https://www.grants.ca.gov/?s&applicant_type_search%5B%5D=individual\",\"loadedUrl\":\"https://www.grants.ca.gov/?s&applicant_type_search%5B%5D=individual\",\"uniqueKey\":\"https://www.grants.ca.gov?applicant_type_search%5B%5D=individual&s=\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:54.397Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.grants.ca.gov?applicant_type_search%5B%5D=individual&s=",
+	"url": "https://www.grants.ca.gov/?s&applicant_type_search%5B%5D=individual"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "ZE9vPZWQVFMjoh4",
+	"json": "{\"id\":\"ZE9vPZWQVFMjoh4\",\"url\":\"https://calable.ca.gov/privacy-policy\",\"loadedUrl\":\"https://calable.ca.gov/privacy-policy\",\"uniqueKey\":\"https://calable.ca.gov/privacy-policy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:15.734Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://calable.ca.gov/privacy-policy",
+	"url": "https://calable.ca.gov/privacy-policy"
+}

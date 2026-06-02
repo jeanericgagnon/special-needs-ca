@@ -1,0 +1,9 @@
+{
+	"id": "B1L2gP4dcmIue1m",
+	"json": "{\"id\":\"B1L2gP4dcmIue1m\",\"url\":\"https://genomecenter.ucdavis.edu/training-and-education-uc-davis-genome-center\",\"loadedUrl\":\"https://genomecenter.ucdavis.edu/training-and-education-uc-davis-genome-center\",\"uniqueKey\":\"https://genomecenter.ucdavis.edu/training-and-education-uc-davis-genome-center\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:09.861Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://genomecenter.ucdavis.edu/training-and-education-uc-davis-genome-center",
+	"url": "https://genomecenter.ucdavis.edu/training-and-education-uc-davis-genome-center"
+}

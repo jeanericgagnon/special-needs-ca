@@ -1,0 +1,9 @@
+{
+	"id": "xUtf2KOQMLHipFk",
+	"json": "{\"id\":\"xUtf2KOQMLHipFk\",\"url\":\"https://www.globaldownsyndrome.org/fr/global-membership/\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/fr/global-membership/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/fr/global-membership\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:40.979Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.globaldownsyndrome.org/fr/global-membership",
+	"url": "https://www.globaldownsyndrome.org/fr/global-membership/"
+}

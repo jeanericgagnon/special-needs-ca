@@ -1,0 +1,9 @@
+{
+	"id": "r1uUhf3b81gITSi",
+	"json": "{\"id\":\"r1uUhf3b81gITSi\",\"url\":\"https://cdss.ca.gov/inforesources/Continuum-of-Care-Reform/Performance-and-Oversight\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/continuum-of-care-reform/performance-and-transparency\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Continuum-of-Care-Reform/Performance-and-Oversight\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:14.806Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/Continuum-of-Care-Reform/Performance-and-Oversight",
+	"url": "https://cdss.ca.gov/inforesources/Continuum-of-Care-Reform/Performance-and-Oversight"
+}

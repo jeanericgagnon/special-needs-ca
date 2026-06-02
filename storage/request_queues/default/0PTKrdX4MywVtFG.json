@@ -1,0 +1,9 @@
+{
+	"id": "0PTKrdX4MywVtFG",
+	"json": "{\"id\":\"0PTKrdX4MywVtFG\",\"url\":\"https://www.ucdavis.edu/about/student-safety/transportation-safety\",\"loadedUrl\":\"https://www.ucdavis.edu/about/student-safety/transportation-safety\",\"uniqueKey\":\"https://www.ucdavis.edu/about/student-safety/transportation-safety\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:42.983Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ucdavis.edu/about/student-safety/transportation-safety",
+	"url": "https://www.ucdavis.edu/about/student-safety/transportation-safety"
+}

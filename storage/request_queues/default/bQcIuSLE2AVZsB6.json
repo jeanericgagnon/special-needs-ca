@@ -1,0 +1,9 @@
+{
+	"id": "bQcIuSLE2AVZsB6",
+	"json": "{\"id\":\"bQcIuSLE2AVZsB6\",\"url\":\"https://www.dgs.ca.gov/oah/case-types/special-education\",\"loadedUrl\":\"https://www.dgs.ca.gov/oah/case-types/special-education\",\"uniqueKey\":\"https://www.dgs.ca.gov/oah/case-types/special-education\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:25:43.922Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dgs.ca.gov/oah/case-types/special-education",
+	"url": "https://www.dgs.ca.gov/oah/case-types/special-education"
+}

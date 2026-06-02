@@ -1,0 +1,9 @@
+{
+	"id": "DMFnZ7yTweW2Ldu",
+	"json": "{\"id\":\"DMFnZ7yTweW2Ldu\",\"url\":\"https://www.cdph.ca.gov/Programs/OPA/Pages/CAHAN/Information-On-Methyl-Methacrylate.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/OPA/Pages/CAHAN/Information-On-Methyl-Methacrylate.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/OPA/Pages/CAHAN/Information-On-Methyl-Methacrylate.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:59.030Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/OPA/Pages/CAHAN/Information-On-Methyl-Methacrylate.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/OPA/Pages/CAHAN/Information-On-Methyl-Methacrylate.aspx"
+}

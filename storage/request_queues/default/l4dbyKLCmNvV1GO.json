@@ -1,0 +1,9 @@
+{
+	"id": "l4dbyKLCmNvV1GO",
+	"json": "{\"id\":\"l4dbyKLCmNvV1GO\",\"url\":\"https://health.ucdavis.edu/mind-institute/clinic/22q-healthy-minds\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/clinic/22q-healthy-minds\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/clinic/22q-healthy-minds\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:06:50.100Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mind-institute/clinic/22q-healthy-minds",
+	"url": "https://health.ucdavis.edu/mind-institute/clinic/22q-healthy-minds"
+}

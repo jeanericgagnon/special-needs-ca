@@ -1,0 +1,9 @@
+{
+	"id": "SIyndg5Dg3K3wcm",
+	"json": "{\"id\":\"SIyndg5Dg3K3wcm\",\"url\":\"https://care.ucdavis.edu/contact-hours-and-location\",\"loadedUrl\":\"https://care.ucdavis.edu/contact-hours-and-location\",\"uniqueKey\":\"https://care.ucdavis.edu/contact-hours-and-location\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:00.204Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://care.ucdavis.edu/contact-hours-and-location",
+	"url": "https://care.ucdavis.edu/contact-hours-and-location"
+}

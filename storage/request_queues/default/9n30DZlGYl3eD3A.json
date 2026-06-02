@@ -1,0 +1,9 @@
+{
+	"id": "9n30DZlGYl3eD3A",
+	"json": "{\"id\":\"9n30DZlGYl3eD3A\",\"url\":\"https://give.ucdavis.edu/TGEN\",\"loadedUrl\":\"https://give.ucdavis.edu/TGEN\",\"uniqueKey\":\"https://give.ucdavis.edu/TGEN\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:57.157Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/TGEN",
+	"url": "https://give.ucdavis.edu/TGEN"
+}

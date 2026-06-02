@@ -1,0 +1,9 @@
+{
+	"id": "JyprOtxShgPV2ZF",
+	"json": "{\"id\":\"JyprOtxShgPV2ZF\",\"url\":\"https://health.ucdavis.edu/mind-institute/news/topic/public-health\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/news/topic/public-health\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/news/topic/public-health\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:59.027Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mind-institute/news/topic/public-health",
+	"url": "https://health.ucdavis.edu/mind-institute/news/topic/public-health"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "GZIAfZYaB9ItpKK",
+	"json": "{\"id\":\"GZIAfZYaB9ItpKK\",\"url\":\"https://shcs.ucdavis.edu/uc-davis-health-equity-fund\",\"loadedUrl\":\"https://shcs.ucdavis.edu/hef\",\"uniqueKey\":\"https://shcs.ucdavis.edu/uc-davis-health-equity-fund\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:59.340Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://shcs.ucdavis.edu/uc-davis-health-equity-fund",
+	"url": "https://shcs.ucdavis.edu/uc-davis-health-equity-fund"
+}

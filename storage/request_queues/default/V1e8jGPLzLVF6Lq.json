@@ -1,0 +1,9 @@
+{
+	"id": "V1e8jGPLzLVF6Lq",
+	"json": "{\"id\":\"V1e8jGPLzLVF6Lq\",\"url\":\"https://give.ucdavis.edu/MCMN/CHMPD02\",\"loadedUrl\":\"https://give.ucdavis.edu/MCMN/CHMPD02\",\"uniqueKey\":\"https://give.ucdavis.edu/MCMN/CHMPD02\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:53.460Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/MCMN/CHMPD02",
+	"url": "https://give.ucdavis.edu/MCMN/CHMPD02"
+}

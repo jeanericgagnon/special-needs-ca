@@ -1,0 +1,9 @@
+{
+	"id": "9Cr5FsEqQrdfNL8",
+	"json": "{\"id\":\"9Cr5FsEqQrdfNL8\",\"url\":\"https://www.cde.ca.gov/ls/ec/\",\"loadedUrl\":\"https://www.cde.ca.gov/ls/ec/\",\"uniqueKey\":\"https://www.cde.ca.gov/ls/ec\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:03.304Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ls/ec",
+	"url": "https://www.cde.ca.gov/ls/ec/"
+}

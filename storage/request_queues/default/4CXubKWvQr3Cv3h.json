@@ -1,0 +1,9 @@
+{
+	"id": "4CXubKWvQr3Cv3h",
+	"json": "{\"id\":\"4CXubKWvQr3Cv3h\",\"url\":\"https://health.ucdavis.edu/news/headlines/patient-perspective-gains-importance-in-evaluating-surgery-success-/2024/02\",\"loadedUrl\":\"https://health.ucdavis.edu/news/headlines/patient-perspective-gains-importance-in-evaluating-surgery-success-/2024/02\",\"uniqueKey\":\"https://health.ucdavis.edu/news/headlines/patient-perspective-gains-importance-in-evaluating-surgery-success-/2024/02\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:46:13.059Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/news/headlines/patient-perspective-gains-importance-in-evaluating-surgery-success-/2024/02",
+	"url": "https://health.ucdavis.edu/news/headlines/patient-perspective-gains-importance-in-evaluating-surgery-success-/2024/02"
+}

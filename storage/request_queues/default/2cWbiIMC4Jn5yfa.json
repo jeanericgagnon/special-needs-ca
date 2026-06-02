@@ -1,0 +1,9 @@
+{
+	"id": "2cWbiIMC4Jn5yfa",
+	"json": "{\"id\":\"2cWbiIMC4Jn5yfa\",\"url\":\"https://give.ucdavis.edu/GELA/324848\",\"loadedUrl\":\"https://give.ucdavis.edu/GELA/324848\",\"uniqueKey\":\"https://give.ucdavis.edu/GELA/324848\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:59.649Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/GELA/324848",
+	"url": "https://give.ucdavis.edu/GELA/324848"
+}

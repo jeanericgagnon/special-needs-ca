@@ -1,0 +1,9 @@
+{
+	"id": "GZFUmYvc4fX56tt",
+	"json": "{\"id\":\"GZFUmYvc4fX56tt\",\"url\":\"https://health.ucdavis.edu/conditions/urology/urologic-infections-inflammation\",\"loadedUrl\":\"https://health.ucdavis.edu/conditions/urology/urologic-infections-inflammation\",\"uniqueKey\":\"https://health.ucdavis.edu/conditions/urology/urologic-infections-inflammation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:45.395Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/conditions/urology/urologic-infections-inflammation",
+	"url": "https://health.ucdavis.edu/conditions/urology/urologic-infections-inflammation"
+}

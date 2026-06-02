@@ -1,0 +1,9 @@
+{
+	"id": "FAOMrBnHt1S0vLU",
+	"json": "{\"id\":\"FAOMrBnHt1S0vLU\",\"url\":\"https://www.globaldownsyndrome.org/programs-conferences-grants/\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/programs-conferences-grants/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/programs-conferences-grants\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:28:49.085Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.globaldownsyndrome.org/programs-conferences-grants",
+	"url": "https://www.globaldownsyndrome.org/programs-conferences-grants/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "WP4aD3q5E8ZvKV4",
+	"json": "{\"id\":\"WP4aD3q5E8ZvKV4\",\"url\":\"https://www.cdph.ca.gov/Programs/CEH/Pages/CEH.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CEH/Pages/CEH.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CEH/Pages/CEH.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:11.260Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CEH/Pages/CEH.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CEH/Pages/CEH.aspx"
+}

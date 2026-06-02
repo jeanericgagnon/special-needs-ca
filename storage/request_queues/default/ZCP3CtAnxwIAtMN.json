@@ -1,0 +1,9 @@
+{
+	"id": "ZCP3CtAnxwIAtMN",
+	"json": "{\"id\":\"ZCP3CtAnxwIAtMN\",\"url\":\"https://calable.ca.gov/resources\",\"loadedUrl\":\"https://calable.ca.gov/resources\",\"uniqueKey\":\"https://calable.ca.gov/resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:13.543Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://calable.ca.gov/resources",
+	"url": "https://calable.ca.gov/resources"
+}

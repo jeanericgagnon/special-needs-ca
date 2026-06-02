@@ -1,0 +1,9 @@
+{
+	"id": "qbiGZSHx94VeZTR",
+	"json": "{\"id\":\"qbiGZSHx94VeZTR\",\"url\":\"https://comprehensivecancercenter.ucdavis.edu/people\",\"loadedUrl\":\"https://comprehensivecancercenter.ucdavis.edu/people\",\"uniqueKey\":\"https://comprehensivecancercenter.ucdavis.edu/people\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:15.410Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://comprehensivecancercenter.ucdavis.edu/people",
+	"url": "https://comprehensivecancercenter.ucdavis.edu/people"
+}

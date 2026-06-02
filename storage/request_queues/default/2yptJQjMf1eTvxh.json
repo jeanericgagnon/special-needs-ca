@@ -1,0 +1,9 @@
+{
+	"id": "2yptJQjMf1eTvxh",
+	"json": "{\"id\":\"2yptJQjMf1eTvxh\",\"url\":\"https://learn.rarediseases.org/register/?redirect_to=https://learn.rarediseases.org/courses/de-los-registros-a-la-investigacion-el-sentido-detras-de-los-datos-sobre-la-salud-para-enfermedades-raras/&enrol_course_id=4852\",\"loadedUrl\":\"https://learn.rarediseases.org/default-registration/?redirect_to=https%3A%2F%2Flearn.rarediseases.org%2Fcourses%2Fde-los-registros-a-la-investigacion-el-sentido-detras-de-los-datos-sobre-la-salud-para-enfermedades-raras%2F&enrol_course_id=4852\",\"uniqueKey\":\"https://learn.rarediseases.org/register?enrol_course_id=4852&redirect_to=https%3A%2F%2Flearn.rarediseases.org%2Fcourses%2Fde-los-registros-a-la-investigacion-el-sentido-detras-de-los-datos-sobre-la-salud-para-enfermedades-raras%2F\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:29.066Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://learn.rarediseases.org/register?enrol_course_id=4852&redirect_to=https%3A%2F%2Flearn.rarediseases.org%2Fcourses%2Fde-los-registros-a-la-investigacion-el-sentido-detras-de-los-datos-sobre-la-salud-para-enfermedades-raras%2F",
+	"url": "https://learn.rarediseases.org/register/?redirect_to=https://learn.rarediseases.org/courses/de-los-registros-a-la-investigacion-el-sentido-detras-de-los-datos-sobre-la-salud-para-enfermedades-raras/&enrol_course_id=4852"
+}

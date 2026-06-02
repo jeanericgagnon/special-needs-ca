@@ -1,0 +1,9 @@
+{
+	"id": "AdMgrZQ84H583HI",
+	"json": "{\"id\":\"AdMgrZQ84H583HI\",\"url\":\"https://www.chp.ca.gov/news-alerts/alerts/Endangered-Missing-Advisory-ema/\",\"loadedUrl\":\"https://www.chp.ca.gov/news-alerts/alerts/Endangered-Missing-Advisory-ema/\",\"uniqueKey\":\"https://www.chp.ca.gov/news-alerts/alerts/Endangered-Missing-Advisory-ema\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:12.347Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chp.ca.gov/news-alerts/alerts/Endangered-Missing-Advisory-ema",
+	"url": "https://www.chp.ca.gov/news-alerts/alerts/Endangered-Missing-Advisory-ema/"
+}

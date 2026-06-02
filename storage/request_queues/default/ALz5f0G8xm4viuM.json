@@ -1,0 +1,9 @@
+{
+	"id": "ALz5f0G8xm4viuM",
+	"json": "{\"id\":\"ALz5f0G8xm4viuM\",\"url\":\"https://irb.ucdavis.edu/about-irb/policies-procedures-regulations/irb-sops/\",\"loadedUrl\":\"https://irb.ucdavis.edu/about-irb/policies-procedures-regulations/irb-sops/\",\"uniqueKey\":\"https://irb.ucdavis.edu/about-irb/policies-procedures-regulations/irb-sops\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:39.326Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://irb.ucdavis.edu/about-irb/policies-procedures-regulations/irb-sops",
+	"url": "https://irb.ucdavis.edu/about-irb/policies-procedures-regulations/irb-sops/"
+}

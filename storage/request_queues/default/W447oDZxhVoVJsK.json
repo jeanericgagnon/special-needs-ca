@@ -1,0 +1,9 @@
+{
+	"id": "W447oDZxhVoVJsK",
+	"json": "{\"id\":\"W447oDZxhVoVJsK\",\"url\":\"https://health.ucdavis.edu/patients-visitors/news/headlines/covid-and-flu-vaccine-clinic-for-individuals-with-autism-adhd-and-other-conditions/2024/10\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/news/headlines/covid-and-flu-vaccine-clinic-for-individuals-with-autism-adhd-and-other-conditions/2024/10\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/news/headlines/covid-and-flu-vaccine-clinic-for-individuals-with-autism-adhd-and-other-conditions/2024/10\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:39.306Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/news/headlines/covid-and-flu-vaccine-clinic-for-individuals-with-autism-adhd-and-other-conditions/2024/10",
+	"url": "https://health.ucdavis.edu/patients-visitors/news/headlines/covid-and-flu-vaccine-clinic-for-individuals-with-autism-adhd-and-other-conditions/2024/10"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "5AixWD4IbaLbMSv",
+	"json": "{\"id\":\"5AixWD4IbaLbMSv\",\"url\":\"https://financeandbusiness.ucdavis.edu/student-resources/tuition-fees/historical\",\"loadedUrl\":\"https://financeandbusiness.ucdavis.edu/student-resources/tuition-fees/historical\",\"uniqueKey\":\"https://financeandbusiness.ucdavis.edu/student-resources/tuition-fees/historical\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:49.678Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://financeandbusiness.ucdavis.edu/student-resources/tuition-fees/historical",
+	"url": "https://financeandbusiness.ucdavis.edu/student-resources/tuition-fees/historical"
+}

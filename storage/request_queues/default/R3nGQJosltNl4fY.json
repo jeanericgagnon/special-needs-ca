@@ -1,0 +1,9 @@
+{
+	"id": "R3nGQJosltNl4fY",
+	"json": "{\"id\":\"R3nGQJosltNl4fY\",\"url\":\"https://scdd.ca.gov/pos-service-code/adult-development-center/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/adult-development-center/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/adult-development-center\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:58.567Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/pos-service-code/adult-development-center",
+	"url": "https://scdd.ca.gov/pos-service-code/adult-development-center/"
+}

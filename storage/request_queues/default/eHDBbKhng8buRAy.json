@@ -1,0 +1,9 @@
+{
+	"id": "eHDBbKhng8buRAy",
+	"json": "{\"id\":\"eHDBbKhng8buRAy\",\"url\":\"https://biology.ucdavis.edu/about/directory/center-directors-and-managers\",\"loadedUrl\":\"https://biology.ucdavis.edu/about/directory/center-directors-and-managers\",\"uniqueKey\":\"https://biology.ucdavis.edu/about/directory/center-directors-and-managers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:09.402Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://biology.ucdavis.edu/about/directory/center-directors-and-managers",
+	"url": "https://biology.ucdavis.edu/about/directory/center-directors-and-managers"
+}

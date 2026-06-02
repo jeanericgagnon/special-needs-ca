@@ -1,0 +1,9 @@
+{
+	"id": "IccZV3WDtogf3ZF",
+	"json": "{\"id\":\"IccZV3WDtogf3ZF\",\"url\":\"https://yellowcluster.ucdavis.edu/psychology-career-pathways\",\"loadedUrl\":\"https://yellowcluster.ucdavis.edu/psychology-career-pathways\",\"uniqueKey\":\"https://yellowcluster.ucdavis.edu/psychology-career-pathways\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:15.547Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://yellowcluster.ucdavis.edu/psychology-career-pathways",
+	"url": "https://yellowcluster.ucdavis.edu/psychology-career-pathways"
+}

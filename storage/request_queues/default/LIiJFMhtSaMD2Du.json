@@ -1,0 +1,9 @@
+{
+	"id": "LIiJFMhtSaMD2Du",
+	"json": "{\"id\":\"LIiJFMhtSaMD2Du\",\"url\":\"https://www.chp.ca.gov/link/e28426d2f3c24785bbe98b76376d16c6.aspx\",\"loadedUrl\":\"https://www.chp.ca.gov/news-alerts/alerts/amber-alert/\",\"uniqueKey\":\"https://www.chp.ca.gov/link/e28426d2f3c24785bbe98b76376d16c6.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:12.205Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chp.ca.gov/link/e28426d2f3c24785bbe98b76376d16c6.aspx",
+	"url": "https://www.chp.ca.gov/link/e28426d2f3c24785bbe98b76376d16c6.aspx"
+}

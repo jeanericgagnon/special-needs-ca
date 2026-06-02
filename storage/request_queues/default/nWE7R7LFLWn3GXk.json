@@ -1,0 +1,9 @@
+{
+	"id": "nWE7R7LFLWn3GXk",
+	"json": "{\"id\":\"nWE7R7LFLWn3GXk\",\"url\":\"https://rarediseases.org/organizations/illness-challenge-foundation/\",\"loadedUrl\":\"https://rarediseases.org/organizations/illness-challenge-foundation/\",\"uniqueKey\":\"https://rarediseases.org/organizations/illness-challenge-foundation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:17:29.421Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/organizations/illness-challenge-foundation",
+	"url": "https://rarediseases.org/organizations/illness-challenge-foundation/"
+}

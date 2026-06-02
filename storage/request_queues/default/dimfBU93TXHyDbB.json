@@ -1,0 +1,9 @@
+{
+	"id": "dimfBU93TXHyDbB",
+	"json": "{\"id\":\"dimfBU93TXHyDbB\",\"url\":\"https://health.ucdavis.edu/pediatrics/academic-programs/developmental-behavioral-pediatric-fellowship/\",\"loadedUrl\":\"https://health.ucdavis.edu/pediatrics/academic-programs/developmental-behavioral-pediatric-fellowship/\",\"uniqueKey\":\"https://health.ucdavis.edu/pediatrics/academic-programs/developmental-behavioral-pediatric-fellowship\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:02.807Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/pediatrics/academic-programs/developmental-behavioral-pediatric-fellowship",
+	"url": "https://health.ucdavis.edu/pediatrics/academic-programs/developmental-behavioral-pediatric-fellowship/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "yrqkFrFlVogur2I",
+	"json": "{\"id\":\"yrqkFrFlVogur2I\",\"url\":\"https://www.cdph.ca.gov/Programs/CHSI/Pages/Birth,-Death,-Fetal-Death,-Still-Birth--Marriage-Certificates.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CHSI/Pages/Birth,-Death,-Fetal-Death,-Still-Birth--Marriage-Certificates.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CHSI/Pages/Birth,-Death,-Fetal-Death,-Still-Birth--Marriage-Certificates.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:15:21.388Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CHSI/Pages/Birth,-Death,-Fetal-Death,-Still-Birth--Marriage-Certificates.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CHSI/Pages/Birth,-Death,-Fetal-Death,-Still-Birth--Marriage-Certificates.aspx"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "rSnlhu0G74SKVhC",
+	"json": "{\"id\":\"rSnlhu0G74SKVhC\",\"url\":\"https://health.ucdavis.edu/orthopaedics/specialties/spine.html\",\"loadedUrl\":\"https://health.ucdavis.edu/orthopaedics/specialties/spine.html\",\"uniqueKey\":\"https://health.ucdavis.edu/orthopaedics/specialties/spine.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:42.001Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/orthopaedics/specialties/spine.html",
+	"url": "https://health.ucdavis.edu/orthopaedics/specialties/spine.html"
+}

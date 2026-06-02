@@ -1,0 +1,9 @@
+{
+	"id": "c2DB1uRU8ZvwKlx",
+	"json": "{\"id\":\"c2DB1uRU8ZvwKlx\",\"url\":\"https://financeandbusiness.ucdavis.edu/bia/budget/budget-framework\",\"loadedUrl\":\"https://financeandbusiness.ucdavis.edu/bia/budget/budget-framework\",\"uniqueKey\":\"https://financeandbusiness.ucdavis.edu/bia/budget/budget-framework\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:50.877Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://financeandbusiness.ucdavis.edu/bia/budget/budget-framework",
+	"url": "https://financeandbusiness.ucdavis.edu/bia/budget/budget-framework"
+}

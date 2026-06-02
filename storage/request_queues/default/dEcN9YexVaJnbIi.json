@@ -1,0 +1,9 @@
+{
+	"id": "dEcN9YexVaJnbIi",
+	"json": "{\"id\":\"dEcN9YexVaJnbIi\",\"url\":\"https://cdss.ca.gov/inforesources/Community-Care/Home-Care-Services/Resources-for-Home-Care-Organizations\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/community-care/home-care-services/resources-for-home-care-organizations\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Community-Care/Home-Care-Services/Resources-for-Home-Care-Organizations\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:49.304Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/Community-Care/Home-Care-Services/Resources-for-Home-Care-Organizations",
+	"url": "https://cdss.ca.gov/inforesources/Community-Care/Home-Care-Services/Resources-for-Home-Care-Organizations"
+}

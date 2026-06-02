@@ -1,0 +1,9 @@
+{
+	"id": "YruSW3x2P5x23tI",
+	"json": "{\"id\":\"YruSW3x2P5x23tI\",\"url\":\"https://care.ucdavis.edu/resources-uc-davis-uc-davis-health\",\"loadedUrl\":\"https://care.ucdavis.edu/resources-uc-davis-uc-davis-health\",\"uniqueKey\":\"https://care.ucdavis.edu/resources-uc-davis-uc-davis-health\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:02.466Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://care.ucdavis.edu/resources-uc-davis-uc-davis-health",
+	"url": "https://care.ucdavis.edu/resources-uc-davis-uc-davis-health"
+}

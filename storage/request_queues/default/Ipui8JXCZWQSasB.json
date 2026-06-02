@@ -1,0 +1,9 @@
+{
+	"id": "Ipui8JXCZWQSasB",
+	"json": "{\"id\":\"Ipui8JXCZWQSasB\",\"url\":\"https://health.ucdavis.edu/children/patient-education/Healthy-Food-Kids-Shopping-Guide\",\"loadedUrl\":\"https://health.ucdavis.edu/children/patient-education/Healthy-Food-Kids-Shopping-Guide\",\"uniqueKey\":\"https://health.ucdavis.edu/children/patient-education/Healthy-Food-Kids-Shopping-Guide\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:56.357Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/children/patient-education/Healthy-Food-Kids-Shopping-Guide",
+	"url": "https://health.ucdavis.edu/children/patient-education/Healthy-Food-Kids-Shopping-Guide"
+}

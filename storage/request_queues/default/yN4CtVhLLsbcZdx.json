@@ -1,0 +1,9 @@
+{
+	"id": "yN4CtVhLLsbcZdx",
+	"json": "{\"id\":\"yN4CtVhLLsbcZdx\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/SACB/Pages/ChildPassengerSafety(CPS)InCalifornia.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/SACB/Pages/ChildPassengerSafety(CPS)InCalifornia.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/SACB/Pages/ChildPassengerSafety(CPS)InCalifornia.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:02:25.064Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/SACB/Pages/ChildPassengerSafety(CPS)InCalifornia.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/SACB/Pages/ChildPassengerSafety(CPS)InCalifornia.aspx"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "2gyaeeODws5b8lK",
+	"json": "{\"id\":\"2gyaeeODws5b8lK\",\"url\":\"http://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=25112.5.&lawCode=HSC\",\"loadedUrl\":\"https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=25112.5.&lawCode=HSC\",\"uniqueKey\":\"http://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=HSC&sectionNum=25112.5.\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:20:53.585Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=HSC&sectionNum=25112.5.",
+	"url": "http://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=25112.5.&lawCode=HSC"
+}

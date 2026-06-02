@@ -1,0 +1,9 @@
+{
+	"id": "kXvK3eTPMvd4SQc",
+	"json": "{\"id\":\"kXvK3eTPMvd4SQc\",\"url\":\"https://health.ucdavis.edu/blog/kids-considered/category/babies\",\"loadedUrl\":\"https://health.ucdavis.edu/blog/kids-considered/category/babies\",\"uniqueKey\":\"https://health.ucdavis.edu/blog/kids-considered/category/babies\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:01.760Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/blog/kids-considered/category/babies",
+	"url": "https://health.ucdavis.edu/blog/kids-considered/category/babies"
+}

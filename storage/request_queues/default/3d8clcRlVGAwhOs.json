@@ -1,0 +1,9 @@
+{
+	"id": "3d8clcRlVGAwhOs",
+	"json": "{\"id\":\"3d8clcRlVGAwhOs\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/GDSP-Program-and-Services.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/GDSP-Program-and-Services.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/GDSP-Program-and-Services.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:34.752Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/GDSP-Program-and-Services.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/GDSP-Program-and-Services.aspx"
+}

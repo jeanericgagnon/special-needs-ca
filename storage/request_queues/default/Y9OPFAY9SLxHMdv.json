@@ -1,0 +1,9 @@
+{
+	"id": "Y9OPFAY9SLxHMdv",
+	"json": "{\"id\":\"Y9OPFAY9SLxHMdv\",\"url\":\"https://dmhc.ca.gov/Portals/0/Docs/HC/DMHCLangugeAccessPlan2023.pdf\",\"loadedUrl\":\"https://dmhc.ca.gov/Portals/0/Docs/HC/DMHCLangugeAccessPlan2023.pdf\",\"uniqueKey\":\"https://dmhc.ca.gov/Portals/0/Docs/HC/DMHCLangugeAccessPlan2023.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:36.200Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://dmhc.ca.gov/Portals/0/Docs/HC/DMHCLangugeAccessPlan2023.pdf",
+	"url": "https://dmhc.ca.gov/Portals/0/Docs/HC/DMHCLangugeAccessPlan2023.pdf"
+}

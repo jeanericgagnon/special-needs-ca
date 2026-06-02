@@ -1,0 +1,9 @@
+{
+	"id": "U35HWFfh3Z0EusU",
+	"json": "{\"id\":\"U35HWFfh3Z0EusU\",\"url\":\"https://www.ebtproject.ca.gov/Clients/about.html\",\"loadedUrl\":\"https://www.ebtproject.ca.gov/Clients/about.html\",\"uniqueKey\":\"https://www.ebtproject.ca.gov/Clients/about.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:03.227Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ebtproject.ca.gov/Clients/about.html",
+	"url": "https://www.ebtproject.ca.gov/Clients/about.html"
+}

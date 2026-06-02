@@ -1,0 +1,9 @@
+{
+	"id": "E57seymA3RSEe9s",
+	"json": "{\"id\":\"E57seymA3RSEe9s\",\"url\":\"https://redwoodseed.ucdavis.edu/audited-courses-uc-davis\",\"loadedUrl\":\"https://redwoodseed.ucdavis.edu/audited-courses-uc-davis\",\"uniqueKey\":\"https://redwoodseed.ucdavis.edu/audited-courses-uc-davis\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:46.368Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://redwoodseed.ucdavis.edu/audited-courses-uc-davis",
+	"url": "https://redwoodseed.ucdavis.edu/audited-courses-uc-davis"
+}

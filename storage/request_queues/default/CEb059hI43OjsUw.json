@@ -1,0 +1,9 @@
+{
+	"id": "CEb059hI43OjsUw",
+	"json": "{\"id\":\"CEb059hI43OjsUw\",\"url\":\"https://care.ucdavis.edu/training-employees-and-professionals\",\"loadedUrl\":\"https://care.ucdavis.edu/training-employees-and-professionals\",\"uniqueKey\":\"https://care.ucdavis.edu/training-employees-and-professionals\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:01.951Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://care.ucdavis.edu/training-employees-and-professionals",
+	"url": "https://care.ucdavis.edu/training-employees-and-professionals"
+}

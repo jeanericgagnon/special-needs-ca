@@ -1,0 +1,9 @@
+{
+	"id": "rIsKOPoiJ2j11ti",
+	"json": "{\"id\":\"rIsKOPoiJ2j11ti\",\"url\":\"https://www.cdii.ca.gov/translation-page/cdii-translation-page-chinese/\",\"loadedUrl\":\"https://www.cdii.ca.gov/translation-page/cdii-translation-page-chinese/\",\"uniqueKey\":\"https://www.cdii.ca.gov/translation-page/cdii-translation-page-chinese\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:43.738Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdii.ca.gov/translation-page/cdii-translation-page-chinese",
+	"url": "https://www.cdii.ca.gov/translation-page/cdii-translation-page-chinese/"
+}

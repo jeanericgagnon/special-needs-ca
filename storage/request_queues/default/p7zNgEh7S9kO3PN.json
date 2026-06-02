@@ -1,0 +1,9 @@
+{
+	"id": "p7zNgEh7S9kO3PN",
+	"json": "{\"id\":\"p7zNgEh7S9kO3PN\",\"url\":\"https://cdss.ca.gov/inforesources/CDSS-Programs/Housing-Programs/CalWORKs-Homeless-Assistance\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/cdss-programs/housing-programs/calworks-homeless-assistance\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/CDSS-Programs/Housing-Programs/CalWORKs-Homeless-Assistance\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:03.849Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/CDSS-Programs/Housing-Programs/CalWORKs-Homeless-Assistance",
+	"url": "https://cdss.ca.gov/inforesources/CDSS-Programs/Housing-Programs/CalWORKs-Homeless-Assistance"
+}

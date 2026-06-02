@@ -1,0 +1,9 @@
+{
+	"id": "WFhDDCaZ3z7Ptyt",
+	"json": "{\"id\":\"WFhDDCaZ3z7Ptyt\",\"url\":\"https://www.dhcs.ca.gov/individuals/Pages/Sud-Complaints.aspx\",\"loadedUrl\":\"https://www.dhcs.ca.gov/individuals/licensing-and-certification-complaints/\",\"uniqueKey\":\"https://www.dhcs.ca.gov/individuals/Pages/Sud-Complaints.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:35.226Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dhcs.ca.gov/individuals/Pages/Sud-Complaints.aspx",
+	"url": "https://www.dhcs.ca.gov/individuals/Pages/Sud-Complaints.aspx"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "vAqwy3mbo8oc1Il",
+	"json": "{\"id\":\"vAqwy3mbo8oc1Il\",\"url\":\"https://health.ucdavis.edu/nursing/ourteam/faculty/roslyn-seitz-bio.html\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/ourteam/faculty/roslyn-seitz-bio.html\",\"uniqueKey\":\"https://health.ucdavis.edu/nursing/ourteam/faculty/roslyn-seitz-bio.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:12.315Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/nursing/ourteam/faculty/roslyn-seitz-bio.html",
+	"url": "https://health.ucdavis.edu/nursing/ourteam/faculty/roslyn-seitz-bio.html"
+}

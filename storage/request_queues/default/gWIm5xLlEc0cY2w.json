@@ -1,0 +1,9 @@
+{
+	"id": "gWIm5xLlEc0cY2w",
+	"json": "{\"id\":\"gWIm5xLlEc0cY2w\",\"url\":\"https://alumni.ucdavis.edu/news/give-day-hits-10-year-milestone-strong-support\",\"loadedUrl\":\"https://alumni.ucdavis.edu/news/give-day-hits-10-year-milestone-strong-support\",\"uniqueKey\":\"https://alumni.ucdavis.edu/news/give-day-hits-10-year-milestone-strong-support\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:06.431Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://alumni.ucdavis.edu/news/give-day-hits-10-year-milestone-strong-support",
+	"url": "https://alumni.ucdavis.edu/news/give-day-hits-10-year-milestone-strong-support"
+}

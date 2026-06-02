@@ -1,0 +1,9 @@
+{
+	"id": "MwDTlwuJkQo4W6q",
+	"json": "{\"id\":\"MwDTlwuJkQo4W6q\",\"url\":\"https://give.ucdavis.edu/AANS/ANS114K\",\"loadedUrl\":\"https://give.ucdavis.edu/AANS/ANS114K\",\"uniqueKey\":\"https://give.ucdavis.edu/AANS/ANS114K\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:01.290Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/AANS/ANS114K",
+	"url": "https://give.ucdavis.edu/AANS/ANS114K"
+}

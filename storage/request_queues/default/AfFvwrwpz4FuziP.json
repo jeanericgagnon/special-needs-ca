@@ -1,0 +1,9 @@
+{
+	"id": "AfFvwrwpz4FuziP",
+	"json": "{\"id\":\"AfFvwrwpz4FuziP\",\"url\":\"https://engineering.ucdavis.edu/graduate-students/admissions\",\"loadedUrl\":\"https://engineering.ucdavis.edu/graduate-students/admissions\",\"uniqueKey\":\"https://engineering.ucdavis.edu/graduate-students/admissions\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:33.517Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://engineering.ucdavis.edu/graduate-students/admissions",
+	"url": "https://engineering.ucdavis.edu/graduate-students/admissions"
+}

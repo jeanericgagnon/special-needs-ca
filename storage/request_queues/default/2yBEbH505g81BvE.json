@@ -1,0 +1,9 @@
+{
+	"id": "2yBEbH505g81BvE",
+	"json": "{\"id\":\"2yBEbH505g81BvE\",\"url\":\"https://calcivilrights.ca.gov/accommodation\",\"loadedUrl\":\"https://calcivilrights.ca.gov/accommodation/\",\"uniqueKey\":\"https://calcivilrights.ca.gov/accommodation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T17:23:05.888Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://calcivilrights.ca.gov/accommodation",
+	"url": "https://calcivilrights.ca.gov/accommodation"
+}

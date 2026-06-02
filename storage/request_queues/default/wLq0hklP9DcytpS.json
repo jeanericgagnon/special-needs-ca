@@ -1,0 +1,9 @@
+{
+	"id": "wLq0hklP9DcytpS",
+	"json": "{\"id\":\"wLq0hklP9DcytpS\",\"url\":\"https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=104.&chapter=4.&part=1.&lawCode=HSC&article=5.\",\"loadedUrl\":\"https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=104.&chapter=4.&part=1.&lawCode=HSC&article=5.\",\"uniqueKey\":\"https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?article=5.&chapter=4.&division=104.&lawCode=HSC&part=1.\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T17:03:35.961Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?article=5.&chapter=4.&division=104.&lawCode=HSC&part=1.",
+	"url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=104.&chapter=4.&part=1.&lawCode=HSC&article=5."
+}

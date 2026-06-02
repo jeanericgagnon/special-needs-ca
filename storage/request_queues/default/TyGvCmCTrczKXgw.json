@@ -1,0 +1,9 @@
+{
+	"id": "TyGvCmCTrczKXgw",
+	"json": "{\"id\":\"TyGvCmCTrczKXgw\",\"url\":\"https://www.dds.ca.gov/consumers/wellness-toolkit/vendors-providers/healthy-active\",\"loadedUrl\":\"https://www.dds.ca.gov/individuals-and-families/wellness-toolkit/self-advocates/healthy-active/\",\"uniqueKey\":\"https://www.dds.ca.gov/consumers/wellness-toolkit/vendors-providers/healthy-active\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:05:19.305Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/consumers/wellness-toolkit/vendors-providers/healthy-active",
+	"url": "https://www.dds.ca.gov/consumers/wellness-toolkit/vendors-providers/healthy-active"
+}

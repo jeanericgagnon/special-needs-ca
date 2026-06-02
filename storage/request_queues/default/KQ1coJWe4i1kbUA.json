@@ -1,0 +1,9 @@
+{
+	"id": "KQ1coJWe4i1kbUA",
+	"json": "{\"id\":\"KQ1coJWe4i1kbUA\",\"url\":\"https://www.dhcs.ca.gov/services/pages/medi-calwaivers.aspx\",\"loadedUrl\":\"https://www.dhcs.ca.gov/services/medi-cal-waivers-2/\",\"uniqueKey\":\"https://www.dhcs.ca.gov/services/pages/medi-calwaivers.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:58:20.246Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dhcs.ca.gov/services/pages/medi-calwaivers.aspx",
+	"url": "https://www.dhcs.ca.gov/services/pages/medi-calwaivers.aspx"
+}

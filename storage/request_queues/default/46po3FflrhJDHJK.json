@@ -1,0 +1,9 @@
+{
+	"id": "46po3FflrhJDHJK",
+	"json": "{\"id\":\"46po3FflrhJDHJK\",\"url\":\"https://health.ucdavis.edu/ctsc/area/education/gauctr/\",\"loadedUrl\":\"https://health.ucdavis.edu/ctsc/area/education/gauctr/\",\"uniqueKey\":\"https://health.ucdavis.edu/ctsc/area/education/gauctr\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:33.595Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/ctsc/area/education/gauctr",
+	"url": "https://health.ucdavis.edu/ctsc/area/education/gauctr/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "Dypdm2d0nQ2jIuy",
+	"json": "{\"id\":\"Dypdm2d0nQ2jIuy\",\"url\":\"https://www.globaldownsyndrome.org/news-community/ambassadors/\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/news-community/ambassadors/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/news-community/ambassadors\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:41.802Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.globaldownsyndrome.org/news-community/ambassadors",
+	"url": "https://www.globaldownsyndrome.org/news-community/ambassadors/"
+}

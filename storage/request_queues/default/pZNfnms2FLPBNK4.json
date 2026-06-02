@@ -1,0 +1,9 @@
+{
+	"id": "pZNfnms2FLPBNK4",
+	"json": "{\"id\":\"pZNfnms2FLPBNK4\",\"url\":\"https://edd.ca.gov/en/jobs_and_training/Work_Opportunity_Tax_Credit/\",\"loadedUrl\":\"https://edd.ca.gov/en/jobs_and_training/Work_Opportunity_Tax_Credit/\",\"uniqueKey\":\"https://edd.ca.gov/en/jobs_and_training/Work_Opportunity_Tax_Credit\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:40.769Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://edd.ca.gov/en/jobs_and_training/Work_Opportunity_Tax_Credit",
+	"url": "https://edd.ca.gov/en/jobs_and_training/Work_Opportunity_Tax_Credit/"
+}

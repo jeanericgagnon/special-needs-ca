@@ -1,0 +1,9 @@
+{
+	"id": "8bo2XKcVM7MHLiV",
+	"json": "{\"id\":\"8bo2XKcVM7MHLiV\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/1139/david-barnes-emergency_medicine-sacramento?FreeText%3aLast+name=Barnes\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/1139/david-barnes-emergency_medicine-sacramento?FreeText%3aLast+name=Barnes\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/1139/david-barnes-emergency_medicine-sacramento?FreeText%3ALast+name=Barnes\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:09.144Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/1139/david-barnes-emergency_medicine-sacramento?FreeText%3ALast+name=Barnes",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/1139/david-barnes-emergency_medicine-sacramento?FreeText%3aLast+name=Barnes"
+}

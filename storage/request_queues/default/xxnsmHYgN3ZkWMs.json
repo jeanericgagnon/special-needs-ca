@@ -1,0 +1,9 @@
+{
+	"id": "xxnsmHYgN3ZkWMs",
+	"json": "{\"id\":\"xxnsmHYgN3ZkWMs\",\"url\":\"https://www.dhcs.ca.gov/Get-Medi-Cal/Pages/default.aspx\",\"loadedUrl\":\"https://www.dhcs.ca.gov/Get-Medi-Cal/Pages/default.aspx\",\"uniqueKey\":\"https://www.dhcs.ca.gov/Get-Medi-Cal/Pages/default.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:31.084Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dhcs.ca.gov/Get-Medi-Cal/Pages/default.aspx",
+	"url": "https://www.dhcs.ca.gov/Get-Medi-Cal/Pages/default.aspx"
+}

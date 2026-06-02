@@ -1,0 +1,9 @@
+{
+	"id": "12cIpEbzsX1dMAH",
+	"json": "{\"id\":\"12cIpEbzsX1dMAH\",\"url\":\"https://courses.teach.ucdavis.edu/\",\"loadedUrl\":\"https://courses.teach.ucdavis.edu/\",\"uniqueKey\":\"https://courses.teach.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:17:16.669Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://courses.teach.ucdavis.edu",
+	"url": "https://courses.teach.ucdavis.edu/"
+}

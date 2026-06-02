@@ -1,0 +1,9 @@
+{
+	"id": "N9sQxKBsTs9mZGU",
+	"json": "{\"id\":\"N9sQxKBsTs9mZGU\",\"url\":\"https://health.ucdavis.edu/login/\",\"loadedUrl\":\"https://health.ucdavis.edu/login/\",\"uniqueKey\":\"https://health.ucdavis.edu/login\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:56:04.784Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/login",
+	"url": "https://health.ucdavis.edu/login/"
+}

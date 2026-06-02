@@ -1,0 +1,9 @@
+{
+	"id": "IqdBLPeXnULhDpa",
+	"json": "{\"id\":\"IqdBLPeXnULhDpa\",\"url\":\"https://rarediseases.org/news/?taxonomy[category]=voices-of-rare-cancer\",\"loadedUrl\":\"https://rarediseases.org/news/?taxonomy[category]=voices-of-rare-cancer\",\"uniqueKey\":\"https://rarediseases.org/news?taxonomy%5Bcategory%5D=voices-of-rare-cancer\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:20:35.655Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/news?taxonomy%5Bcategory%5D=voices-of-rare-cancer",
+	"url": "https://rarediseases.org/news/?taxonomy[category]=voices-of-rare-cancer"
+}

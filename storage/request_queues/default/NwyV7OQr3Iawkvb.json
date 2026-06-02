@@ -1,0 +1,9 @@
+{
+	"id": "NwyV7OQr3Iawkvb",
+	"json": "{\"id\":\"NwyV7OQr3Iawkvb\",\"url\":\"https://www.cde.ca.gov/sp/ml/eldtkandkvideos.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/ml/eldtkandkvideos.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/ml/eldtkandkvideos.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":1,\"errorMessages\":[\"Error: request timed out after 30 seconds.\\n    at Timeout._onTimeout (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@apify/timeout/cjs/index.cjs:64:68)\\n    at listOnTimeout (node:internal/timers:588:17)\\n    at process.processTimers (node:internal/timers:523:7)\"],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:23.057Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 1,
+	"uniqueKey": "https://www.cde.ca.gov/sp/ml/eldtkandkvideos.asp",
+	"url": "https://www.cde.ca.gov/sp/ml/eldtkandkvideos.asp"
+}

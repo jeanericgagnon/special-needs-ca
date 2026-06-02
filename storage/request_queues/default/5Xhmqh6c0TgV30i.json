@@ -1,0 +1,9 @@
+{
+	"id": "5Xhmqh6c0TgV30i",
+	"json": "{\"id\":\"5Xhmqh6c0TgV30i\",\"url\":\"https://www.csb-cde.ca.gov/resources/standards/grade05ela.aspx\",\"loadedUrl\":\"https://www.csb-cde.ca.gov/resources/standards/grade05ela.aspx\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/resources/standards/grade05ela.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:07.449Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csb-cde.ca.gov/resources/standards/grade05ela.aspx",
+	"url": "https://www.csb-cde.ca.gov/resources/standards/grade05ela.aspx"
+}

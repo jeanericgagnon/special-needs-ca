@@ -1,0 +1,9 @@
+{
+	"id": "eq7jDDQsXdNF4S4",
+	"json": "{\"id\":\"eq7jDDQsXdNF4S4\",\"url\":\"https://health.ucdavis.edu/internal-medicine/endocrinology/our-services/\",\"loadedUrl\":\"https://health.ucdavis.edu/internal-medicine/endocrinology/our-services/\",\"uniqueKey\":\"https://health.ucdavis.edu/internal-medicine/endocrinology/our-services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:10.276Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/internal-medicine/endocrinology/our-services",
+	"url": "https://health.ucdavis.edu/internal-medicine/endocrinology/our-services/"
+}

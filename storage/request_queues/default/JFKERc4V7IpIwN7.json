@@ -1,0 +1,9 @@
+{
+	"id": "JFKERc4V7IpIwN7",
+	"json": "{\"id\":\"JFKERc4V7IpIwN7\",\"url\":\"https://ucpath.ucdavis.edu/access\",\"loadedUrl\":\"https://ucpath.ucdavis.edu/access\",\"uniqueKey\":\"https://ucpath.ucdavis.edu/access\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:32.803Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://ucpath.ucdavis.edu/access",
+	"url": "https://ucpath.ucdavis.edu/access"
+}

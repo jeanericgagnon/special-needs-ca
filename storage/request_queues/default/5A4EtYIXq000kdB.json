@@ -1,0 +1,9 @@
+{
+	"id": "5A4EtYIXq000kdB",
+	"json": "{\"id\":\"5A4EtYIXq000kdB\",\"url\":\"https://rarediseases.org/rare-diseases/coats-disease/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/coats-disease/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/coats-disease\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:13:02.378Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/rare-diseases/coats-disease",
+	"url": "https://rarediseases.org/rare-diseases/coats-disease/"
+}

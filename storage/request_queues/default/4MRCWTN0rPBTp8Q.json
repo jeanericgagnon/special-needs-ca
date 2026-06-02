@@ -1,0 +1,9 @@
+{
+	"id": "4MRCWTN0rPBTp8Q",
+	"json": "{\"id\":\"4MRCWTN0rPBTp8Q\",\"url\":\"https://ltg.ca.gov/contact/\",\"loadedUrl\":\"https://ltg.ca.gov/contact/\",\"uniqueKey\":\"https://ltg.ca.gov/contact\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:48.320Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://ltg.ca.gov/contact",
+	"url": "https://ltg.ca.gov/contact/"
+}

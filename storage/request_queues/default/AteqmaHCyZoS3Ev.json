@@ -1,0 +1,9 @@
+{
+	"id": "AteqmaHCyZoS3Ev",
+	"json": "{\"id\":\"AteqmaHCyZoS3Ev\",\"url\":\"https://transportation.ucdavis.edu/parking/mas\",\"loadedUrl\":\"https://transportation.ucdavis.edu/parking/mas\",\"uniqueKey\":\"https://transportation.ucdavis.edu/parking/mas\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:10.053Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://transportation.ucdavis.edu/parking/mas",
+	"url": "https://transportation.ucdavis.edu/parking/mas"
+}

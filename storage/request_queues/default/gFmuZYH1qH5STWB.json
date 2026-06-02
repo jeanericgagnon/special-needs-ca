@@ -1,0 +1,9 @@
+{
+	"id": "gFmuZYH1qH5STWB",
+	"json": "{\"id\":\"gFmuZYH1qH5STWB\",\"url\":\"https://genomecenter.sf.ucdavis.edu/ppms-faq-0\",\"loadedUrl\":\"https://genomecenter.sf.ucdavis.edu/ppms-faq-0\",\"uniqueKey\":\"https://genomecenter.sf.ucdavis.edu/ppms-faq-0\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:10.829Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://genomecenter.sf.ucdavis.edu/ppms-faq-0",
+	"url": "https://genomecenter.sf.ucdavis.edu/ppms-faq-0"
+}

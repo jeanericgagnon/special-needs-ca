@@ -1,0 +1,9 @@
+{
+	"id": "bVDpTfgwsVW0rlh",
+	"json": "{\"id\":\"bVDpTfgwsVW0rlh\",\"url\":\"https://cdss.ca.gov/inforesources/CDSS-Programs/CalWORKs/Legislative-Hearings\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/calworks/legislative-hearings\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/CDSS-Programs/CalWORKs/Legislative-Hearings\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:58:42.012Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/CDSS-Programs/CalWORKs/Legislative-Hearings",
+	"url": "https://cdss.ca.gov/inforesources/CDSS-Programs/CalWORKs/Legislative-Hearings"
+}

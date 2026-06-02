@@ -1,0 +1,9 @@
+{
+	"id": "qDAAeQ6VMrxk33v",
+	"json": "{\"id\":\"qDAAeQ6VMrxk33v\",\"url\":\"https://health.ucdavis.edu/children/services/pediatric-heart-center/services-and-programs/fetal-cardiology\",\"loadedUrl\":\"https://health.ucdavis.edu/children/services/pediatric-heart-center/services-and-programs/fetal-cardiology\",\"uniqueKey\":\"https://health.ucdavis.edu/children/services/pediatric-heart-center/services-and-programs/fetal-cardiology\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:01.807Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/children/services/pediatric-heart-center/services-and-programs/fetal-cardiology",
+	"url": "https://health.ucdavis.edu/children/services/pediatric-heart-center/services-and-programs/fetal-cardiology"
+}

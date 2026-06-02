@@ -1,0 +1,9 @@
+{
+	"id": "OWmF8hIeirSDA8q",
+	"json": "{\"id\":\"OWmF8hIeirSDA8q\",\"url\":\"https://webstandards.ca.gov/about-us/community-updates/\",\"loadedUrl\":\"https://webstandards.ca.gov/about-us/community-updates/\",\"uniqueKey\":\"https://webstandards.ca.gov/about-us/community-updates\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:05.464Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://webstandards.ca.gov/about-us/community-updates",
+	"url": "https://webstandards.ca.gov/about-us/community-updates/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "1oURagX6lS2DIki",
+	"json": "{\"id\":\"1oURagX6lS2DIki\",\"url\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/oncology\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/oncology\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/oncology\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:51.306Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/locations/specialty-care/oncology",
+	"url": "https://health.ucdavis.edu/patients-visitors/locations/specialty-care/oncology"
+}

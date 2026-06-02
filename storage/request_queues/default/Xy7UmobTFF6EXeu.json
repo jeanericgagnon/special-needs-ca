@@ -1,0 +1,9 @@
+{
+	"id": "Xy7UmobTFF6EXeu",
+	"json": "{\"id\":\"Xy7UmobTFF6EXeu\",\"url\":\"https://hr.ucdavis.edu/events/bloom\",\"loadedUrl\":\"https://hr.ucdavis.edu/events/bloom\",\"uniqueKey\":\"https://hr.ucdavis.edu/events/bloom\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:32.769Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/events/bloom",
+	"url": "https://hr.ucdavis.edu/events/bloom"
+}

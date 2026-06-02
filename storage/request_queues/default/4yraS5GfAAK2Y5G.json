@@ -1,0 +1,9 @@
+{
+	"id": "4yraS5GfAAK2Y5G",
+	"json": "{\"id\":\"4yraS5GfAAK2Y5G\",\"url\":\"https://www.dds.ca.gov/transparency/facts-stats/\",\"loadedUrl\":\"https://www.dds.ca.gov/transparency/facts-stats/\",\"uniqueKey\":\"https://www.dds.ca.gov/transparency/facts-stats\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:07:50.290Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/transparency/facts-stats",
+	"url": "https://www.dds.ca.gov/transparency/facts-stats/"
+}

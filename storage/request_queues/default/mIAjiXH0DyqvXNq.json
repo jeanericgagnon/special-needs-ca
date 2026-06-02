@@ -1,0 +1,9 @@
+{
+	"id": "mIAjiXH0DyqvXNq",
+	"json": "{\"id\":\"mIAjiXH0DyqvXNq\",\"url\":\"https://health.ucdavis.edu/news/features/man-loses-135-pounds-for-kidney-transplant/2022/03\",\"loadedUrl\":\"https://health.ucdavis.edu/news/features/man-loses-135-pounds-for-kidney-transplant/2022/03\",\"uniqueKey\":\"https://health.ucdavis.edu/news/features/man-loses-135-pounds-for-kidney-transplant/2022/03\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:50.666Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/news/features/man-loses-135-pounds-for-kidney-transplant/2022/03",
+	"url": "https://health.ucdavis.edu/news/features/man-loses-135-pounds-for-kidney-transplant/2022/03"
+}

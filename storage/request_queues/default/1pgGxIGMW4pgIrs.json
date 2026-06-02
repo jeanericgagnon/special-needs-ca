@@ -1,0 +1,9 @@
+{
+	"id": "1pgGxIGMW4pgIrs",
+	"json": "{\"id\":\"1pgGxIGMW4pgIrs\",\"url\":\"https://biology.ucdavis.edu/undergraduate/why-study\",\"loadedUrl\":\"https://biology.ucdavis.edu/undergraduate/why-study\",\"uniqueKey\":\"https://biology.ucdavis.edu/undergraduate/why-study\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:13.998Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://biology.ucdavis.edu/undergraduate/why-study",
+	"url": "https://biology.ucdavis.edu/undergraduate/why-study"
+}

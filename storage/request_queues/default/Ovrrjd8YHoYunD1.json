@@ -1,0 +1,9 @@
+{
+	"id": "Ovrrjd8YHoYunD1",
+	"json": "{\"id\":\"Ovrrjd8YHoYunD1\",\"url\":\"https://www.cdph.ca.gov/Programs/CCLHO/Pages/CCLHOBoardofDirectors.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCLHO/Pages/CCLHOBoardofDirectors.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCLHO/Pages/CCLHOBoardofDirectors.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:18.770Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCLHO/Pages/CCLHOBoardofDirectors.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CCLHO/Pages/CCLHOBoardofDirectors.aspx"
+}

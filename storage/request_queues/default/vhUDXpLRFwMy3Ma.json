@@ -1,0 +1,9 @@
+{
+	"id": "vhUDXpLRFwMy3Ma",
+	"json": "{\"id\":\"vhUDXpLRFwMy3Ma\",\"url\":\"https://hr.ucdavis.edu/departments/recruitment/ucd/starting-recruitment\",\"loadedUrl\":\"https://hr.ucdavis.edu/departments/recruitment/ucd/starting-recruitment\",\"uniqueKey\":\"https://hr.ucdavis.edu/departments/recruitment/ucd/starting-recruitment\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:24.959Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/departments/recruitment/ucd/starting-recruitment",
+	"url": "https://hr.ucdavis.edu/departments/recruitment/ucd/starting-recruitment"
+}

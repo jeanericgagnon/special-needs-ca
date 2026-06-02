@@ -1,0 +1,9 @@
+{
+	"id": "3w9S4pxYhVcJZum",
+	"json": "{\"id\":\"3w9S4pxYhVcJZum\",\"url\":\"https://health.ucdavis.edu/news/headlines/californias-stem-cell-agency-funds-research-into-angelman-syndrome-and-bioprint-pacemaker/2021/08\",\"loadedUrl\":\"https://health.ucdavis.edu/news/headlines/californias-stem-cell-agency-funds-research-into-angelman-syndrome-and-bioprint-pacemaker/2021/08\",\"uniqueKey\":\"https://health.ucdavis.edu/news/headlines/californias-stem-cell-agency-funds-research-into-angelman-syndrome-and-bioprint-pacemaker/2021/08\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:53.502Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/news/headlines/californias-stem-cell-agency-funds-research-into-angelman-syndrome-and-bioprint-pacemaker/2021/08",
+	"url": "https://health.ucdavis.edu/news/headlines/californias-stem-cell-agency-funds-research-into-angelman-syndrome-and-bioprint-pacemaker/2021/08"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "FFv9WRqbemq5CLg",
+	"json": "{\"id\":\"FFv9WRqbemq5CLg\",\"url\":\"https://frcnca.org/events/month/?shortcode=5751ae98\",\"loadedUrl\":\"https://frcnca.org/events/month/?shortcode=5751ae98\",\"uniqueKey\":\"https://frcnca.org/events/month?shortcode=5751ae98\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:23.731Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://frcnca.org/events/month?shortcode=5751ae98",
+	"url": "https://frcnca.org/events/month/?shortcode=5751ae98"
+}

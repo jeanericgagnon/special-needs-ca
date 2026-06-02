@@ -1,0 +1,9 @@
+{
+	"id": "4ISjKYFn5eEoKow",
+	"json": "{\"id\":\"4ISjKYFn5eEoKow\",\"url\":\"https://calable.ca.gov/faqs/does-having-an-account-affect-my-other-benefits\",\"loadedUrl\":\"https://calable.ca.gov/faqs/does-having-an-account-affect-my-other-benefits\",\"uniqueKey\":\"https://calable.ca.gov/faqs/does-having-an-account-affect-my-other-benefits\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:48.974Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://calable.ca.gov/faqs/does-having-an-account-affect-my-other-benefits",
+	"url": "https://calable.ca.gov/faqs/does-having-an-account-affect-my-other-benefits"
+}

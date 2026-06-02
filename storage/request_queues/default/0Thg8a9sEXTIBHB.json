@@ -1,0 +1,9 @@
+{
+	"id": "0Thg8a9sEXTIBHB",
+	"json": "{\"id\":\"0Thg8a9sEXTIBHB\",\"url\":\"https://cdss.ca.gov/inforesources/CDSS-Programs/CalWORKs/Regulations-and-Policy\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/calworks/regulations-and-policy\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/CDSS-Programs/CalWORKs/Regulations-and-Policy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:58:39.989Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/CDSS-Programs/CalWORKs/Regulations-and-Policy",
+	"url": "https://cdss.ca.gov/inforesources/CDSS-Programs/CalWORKs/Regulations-and-Policy"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "UOeK44XcvOSPXpE",
+	"json": "{\"id\":\"UOeK44XcvOSPXpE\",\"url\":\"https://www.dds.ca.gov/transparency/facts-stats/diagnostic-information-and-instruments/\",\"loadedUrl\":\"https://www.dds.ca.gov/transparency/facts-stats/diagnostic-information-and-instruments/\",\"uniqueKey\":\"https://www.dds.ca.gov/transparency/facts-stats/diagnostic-information-and-instruments\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:17:03.720Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/transparency/facts-stats/diagnostic-information-and-instruments",
+	"url": "https://www.dds.ca.gov/transparency/facts-stats/diagnostic-information-and-instruments/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "oINsxXreEKsyBkQ",
+	"json": "{\"id\":\"oINsxXreEKsyBkQ\",\"url\":\"https://eblr.cdph.ca.gov/\",\"loadedUrl\":\"https://eblr.cdph.ca.gov/Shared/Login.aspx\",\"uniqueKey\":\"https://eblr.cdph.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:18:05.774Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://eblr.cdph.ca.gov",
+	"url": "https://eblr.cdph.ca.gov/"
+}

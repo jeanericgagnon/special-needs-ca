@@ -1,0 +1,9 @@
+{
+	"id": "tjkQnizyWMdt8no",
+	"json": "{\"id\":\"tjkQnizyWMdt8no\",\"url\":\"https://www.globaldownsyndrome.org/our-story/history/?page_id=1047\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/our-story/history/about-the-anna-and-john-j-sie-foundation/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/our-story/history?page_id=1047\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:28:02.142Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.globaldownsyndrome.org/our-story/history?page_id=1047",
+	"url": "https://www.globaldownsyndrome.org/our-story/history/?page_id=1047"
+}

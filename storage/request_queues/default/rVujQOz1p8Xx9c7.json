@@ -1,0 +1,9 @@
+{
+	"id": "rVujQOz1p8Xx9c7",
+	"json": "{\"id\":\"rVujQOz1p8Xx9c7\",\"url\":\"https://www.cde.ca.gov/sp/ml/t3lcapguidance.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/ml/t3lcapguidance.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/ml/t3lcapguidance.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:25:39.044Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/sp/ml/t3lcapguidance.asp",
+	"url": "https://www.cde.ca.gov/sp/ml/t3lcapguidance.asp"
+}

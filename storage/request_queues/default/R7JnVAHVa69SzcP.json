@@ -1,0 +1,9 @@
+{
+	"id": "R7JnVAHVa69SzcP",
+	"json": "{\"id\":\"R7JnVAHVa69SzcP\",\"url\":\"https://policy-manual.mes.dhcs.ca.gov/behavioral-health-services-act-county-policy-manual/V1.2.0/7-bhsa-components-and-requirements\",\"loadedUrl\":\"https://policy-manual.mes.dhcs.ca.gov/behavioral-health-services-act-county-policy-manual/V1.2.0/7-bhsa-components-and-requirements\",\"uniqueKey\":\"https://policy-manual.mes.dhcs.ca.gov/behavioral-health-services-act-county-policy-manual/V1.2.0/7-bhsa-components-and-requirements\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:36.652Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://policy-manual.mes.dhcs.ca.gov/behavioral-health-services-act-county-policy-manual/V1.2.0/7-bhsa-components-and-requirements",
+	"url": "https://policy-manual.mes.dhcs.ca.gov/behavioral-health-services-act-county-policy-manual/V1.2.0/7-bhsa-components-and-requirements"
+}

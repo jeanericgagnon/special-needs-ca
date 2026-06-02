@@ -1,0 +1,9 @@
+{
+	"id": "GYCPE1dxW0KBKFS",
+	"json": "{\"id\":\"GYCPE1dxW0KBKFS\",\"url\":\"https://cmgi.ucdavis.edu/services/optical-imaging/bioluminescence/\",\"loadedUrl\":\"https://cmgi.ucdavis.edu/services/optical-imaging/bioluminescence/\",\"uniqueKey\":\"https://cmgi.ucdavis.edu/services/optical-imaging/bioluminescence\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:08.488Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cmgi.ucdavis.edu/services/optical-imaging/bioluminescence",
+	"url": "https://cmgi.ucdavis.edu/services/optical-imaging/bioluminescence/"
+}

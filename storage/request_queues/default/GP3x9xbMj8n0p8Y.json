@@ -1,0 +1,9 @@
+{
+	"id": "GP3x9xbMj8n0p8Y",
+	"json": "{\"id\":\"GP3x9xbMj8n0p8Y\",\"url\":\"https://health.ucdavis.edu/medmicro/\",\"loadedUrl\":\"https://health.ucdavis.edu/medmicro/\",\"uniqueKey\":\"https://health.ucdavis.edu/medmicro\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:03.258Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/medmicro",
+	"url": "https://health.ucdavis.edu/medmicro/"
+}

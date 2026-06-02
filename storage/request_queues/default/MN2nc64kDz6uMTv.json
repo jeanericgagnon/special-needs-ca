@@ -1,0 +1,9 @@
+{
+	"id": "MN2nc64kDz6uMTv",
+	"json": "{\"id\":\"MN2nc64kDz6uMTv\",\"url\":\"https://www.dds.ca.gov/newsletter/in-home-respite-tool-data-collection-phase-ends/\",\"loadedUrl\":\"https://www.dds.ca.gov/newsletter/in-home-respite-tool-data-collection-phase-ends/\",\"uniqueKey\":\"https://www.dds.ca.gov/newsletter/in-home-respite-tool-data-collection-phase-ends\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:10.379Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/newsletter/in-home-respite-tool-data-collection-phase-ends",
+	"url": "https://www.dds.ca.gov/newsletter/in-home-respite-tool-data-collection-phase-ends/"
+}

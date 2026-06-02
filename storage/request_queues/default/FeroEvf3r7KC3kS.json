@@ -1,0 +1,9 @@
+{
+	"id": "FeroEvf3r7KC3kS",
+	"json": "{\"id\":\"FeroEvf3r7KC3kS\",\"url\":\"https://health.ucdavis.edu/patients-visitors/about-patient-care/patient-visitor-pledge\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/about-patient-care/patient-visitor-pledge\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/about-patient-care/patient-visitor-pledge\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:57.687Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/about-patient-care/patient-visitor-pledge",
+	"url": "https://health.ucdavis.edu/patients-visitors/about-patient-care/patient-visitor-pledge"
+}

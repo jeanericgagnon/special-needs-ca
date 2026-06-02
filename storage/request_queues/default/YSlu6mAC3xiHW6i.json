@@ -1,0 +1,9 @@
+{
+	"id": "YSlu6mAC3xiHW6i",
+	"json": "{\"id\":\"YSlu6mAC3xiHW6i\",\"url\":\"https://give.ucdavis.edu/CAES/APSX00W\",\"loadedUrl\":\"https://give.ucdavis.edu/CAES/APSX00W\",\"uniqueKey\":\"https://give.ucdavis.edu/CAES/APSX00W\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:54.857Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/CAES/APSX00W",
+	"url": "https://give.ucdavis.edu/CAES/APSX00W"
+}

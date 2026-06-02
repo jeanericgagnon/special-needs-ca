@@ -1,0 +1,9 @@
+{
+	"id": "mBG37tS9TDB5HWT",
+	"json": "{\"id\":\"mBG37tS9TDB5HWT\",\"url\":\"https://www.dgs.ca.gov/Resources/E-Signature-Toolkit\",\"loadedUrl\":\"https://www.dgs.ca.gov/Resources/E-Signature-Toolkit\",\"uniqueKey\":\"https://www.dgs.ca.gov/Resources/E-Signature-Toolkit\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:06.031Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dgs.ca.gov/Resources/E-Signature-Toolkit",
+	"url": "https://www.dgs.ca.gov/Resources/E-Signature-Toolkit"
+}

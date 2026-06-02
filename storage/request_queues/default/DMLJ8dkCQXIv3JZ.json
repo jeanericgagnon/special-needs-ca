@@ -1,0 +1,9 @@
+{
+	"id": "DMLJ8dkCQXIv3JZ",
+	"json": "{\"id\":\"DMLJ8dkCQXIv3JZ\",\"url\":\"http://www.leginfo.ca.gov/pub/11-12/bill/asm/ab_2101-2150/ab_2114_bill_20120928_chaptered.html\",\"loadedUrl\":\"https://www.leginfo.ca.gov/pub/11-12/bill/asm/ab_2101-2150/ab_2114_bill_20120928_chaptered.html\",\"uniqueKey\":\"http://www.leginfo.ca.gov/pub/11-12/bill/asm/ab_2101-2150/ab_2114_bill_20120928_chaptered.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:12:03.043Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.leginfo.ca.gov/pub/11-12/bill/asm/ab_2101-2150/ab_2114_bill_20120928_chaptered.html",
+	"url": "http://www.leginfo.ca.gov/pub/11-12/bill/asm/ab_2101-2150/ab_2114_bill_20120928_chaptered.html"
+}

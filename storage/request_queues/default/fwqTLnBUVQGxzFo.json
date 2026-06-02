@@ -1,0 +1,9 @@
+{
+	"id": "fwqTLnBUVQGxzFo",
+	"json": "{\"id\":\"fwqTLnBUVQGxzFo\",\"url\":\"https://hr.ucdavis.edu/performance-appraisals/writing-resources/ee\",\"loadedUrl\":\"https://hr.ucdavis.edu/performance-appraisals/writing-resources/ee\",\"uniqueKey\":\"https://hr.ucdavis.edu/performance-appraisals/writing-resources/ee\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:11.293Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/performance-appraisals/writing-resources/ee",
+	"url": "https://hr.ucdavis.edu/performance-appraisals/writing-resources/ee"
+}

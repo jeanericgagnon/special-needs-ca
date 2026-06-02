@@ -1,0 +1,9 @@
+{
+	"id": "L2B56itQnp2FddA",
+	"json": "{\"id\":\"L2B56itQnp2FddA\",\"url\":\"https://health.ucdavis.edu/mind-institute/clinic/access-to-healthcare/\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/clinic/access-to-healthcare/\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/clinic/access-to-healthcare\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:06:50.223Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mind-institute/clinic/access-to-healthcare",
+	"url": "https://health.ucdavis.edu/mind-institute/clinic/access-to-healthcare/"
+}

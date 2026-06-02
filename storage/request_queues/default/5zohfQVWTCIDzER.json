@@ -1,0 +1,9 @@
+{
+	"id": "5zohfQVWTCIDzER",
+	"json": "{\"id\":\"5zohfQVWTCIDzER\",\"url\":\"https://www.dgs.ca.gov/ORIM\",\"loadedUrl\":\"https://www.dgs.ca.gov/ORIM\",\"uniqueKey\":\"https://www.dgs.ca.gov/ORIM\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:05.733Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dgs.ca.gov/ORIM",
+	"url": "https://www.dgs.ca.gov/ORIM"
+}

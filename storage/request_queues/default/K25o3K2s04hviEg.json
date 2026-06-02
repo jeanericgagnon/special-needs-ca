@@ -1,0 +1,9 @@
+{
+	"id": "K25o3K2s04hviEg",
+	"json": "{\"id\":\"K25o3K2s04hviEg\",\"url\":\"https://hcai.ca.gov/mailing-list/\",\"loadedUrl\":\"https://hcai.ca.gov/mailing-list/\",\"uniqueKey\":\"https://hcai.ca.gov/mailing-list\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:36.763Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hcai.ca.gov/mailing-list",
+	"url": "https://hcai.ca.gov/mailing-list/"
+}

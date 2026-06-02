@@ -1,0 +1,9 @@
+{
+	"id": "3Bs8XRixVNbEoVd",
+	"json": "{\"id\":\"3Bs8XRixVNbEoVd\",\"url\":\"https://give.ucdavis.edu/AFST/FST5005\",\"loadedUrl\":\"https://give.ucdavis.edu/AFST/FST5005\",\"uniqueKey\":\"https://give.ucdavis.edu/AFST/FST5005\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:57.319Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/AFST/FST5005",
+	"url": "https://give.ucdavis.edu/AFST/FST5005"
+}

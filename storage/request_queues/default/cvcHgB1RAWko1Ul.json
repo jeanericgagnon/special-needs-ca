@@ -1,0 +1,9 @@
+{
+	"id": "cvcHgB1RAWko1Ul",
+	"json": "{\"id\":\"cvcHgB1RAWko1Ul\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/32341/rebecca-brooks-gynecology_oncology-robotic_surgery-surgery_-_robotic-sacramento?FreeText%3aLast+name=Brooks\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/32341/rebecca-brooks-gynecology_oncology-robotic_surgery-surgery_-_robotic-sacramento?FreeText%3aLast+name=Brooks\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/32341/rebecca-brooks-gynecology_oncology-robotic_surgery-surgery_-_robotic-sacramento?FreeText%3ALast+name=Brooks\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:10.697Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/32341/rebecca-brooks-gynecology_oncology-robotic_surgery-surgery_-_robotic-sacramento?FreeText%3ALast+name=Brooks",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/32341/rebecca-brooks-gynecology_oncology-robotic_surgery-surgery_-_robotic-sacramento?FreeText%3aLast+name=Brooks"
+}

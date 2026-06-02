@@ -1,0 +1,9 @@
+{
+	"id": "wamAl4H5clvPM0p",
+	"json": "{\"id\":\"wamAl4H5clvPM0p\",\"url\":\"https://www.cde.ca.gov/ci/pl/historysocialscience.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/pl/historysocialscience.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/pl/historysocialscience.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:41.005Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ci/pl/historysocialscience.asp",
+	"url": "https://www.cde.ca.gov/ci/pl/historysocialscience.asp"
+}

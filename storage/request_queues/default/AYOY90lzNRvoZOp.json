@@ -1,0 +1,9 @@
+{
+	"id": "AYOY90lzNRvoZOp",
+	"json": "{\"id\":\"AYOY90lzNRvoZOp\",\"url\":\"https://caes.ucdavis.edu/giving/campaign-achievements\",\"loadedUrl\":\"https://caes.ucdavis.edu/giving/campaign-achievements\",\"uniqueKey\":\"https://caes.ucdavis.edu/giving/campaign-achievements\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:55:52.064Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://caes.ucdavis.edu/giving/campaign-achievements",
+	"url": "https://caes.ucdavis.edu/giving/campaign-achievements"
+}

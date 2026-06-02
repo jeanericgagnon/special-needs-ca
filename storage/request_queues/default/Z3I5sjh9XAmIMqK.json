@@ -1,0 +1,9 @@
+{
+	"id": "Z3I5sjh9XAmIMqK",
+	"json": "{\"id\":\"Z3I5sjh9XAmIMqK\",\"url\":\"https://www.dds.ca.gov/rc/disparities/disparity-funds-program/\",\"loadedUrl\":\"https://www.dds.ca.gov/rc/disparities/disparity-funds-program/\",\"uniqueKey\":\"https://www.dds.ca.gov/rc/disparities/disparity-funds-program\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:07:43.053Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/rc/disparities/disparity-funds-program",
+	"url": "https://www.dds.ca.gov/rc/disparities/disparity-funds-program/"
+}

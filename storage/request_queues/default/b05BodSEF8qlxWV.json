@@ -1,0 +1,9 @@
+{
+	"id": "b05BodSEF8qlxWV",
+	"json": "{\"id\":\"b05BodSEF8qlxWV\",\"url\":\"https://www.cdss.ca.gov/inforesources/cdss-programs/adult-protective-services/program-forms\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/cdss-programs/adult-protective-services/program-forms\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/cdss-programs/adult-protective-services/program-forms\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:21:56.301Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/inforesources/cdss-programs/adult-protective-services/program-forms",
+	"url": "https://www.cdss.ca.gov/inforesources/cdss-programs/adult-protective-services/program-forms"
+}

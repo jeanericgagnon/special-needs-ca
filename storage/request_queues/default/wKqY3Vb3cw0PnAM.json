@@ -1,0 +1,9 @@
+{
+	"id": "wKqY3Vb3cw0PnAM",
+	"json": "{\"id\":\"wKqY3Vb3cw0PnAM\",\"url\":\"https://immigrantguide.ca.gov/en/daca\",\"loadedUrl\":\"https://www.immigrantguide.ca.gov/en/daca\",\"uniqueKey\":\"https://immigrantguide.ca.gov/en/daca\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:29.759Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://immigrantguide.ca.gov/en/daca",
+	"url": "https://immigrantguide.ca.gov/en/daca"
+}

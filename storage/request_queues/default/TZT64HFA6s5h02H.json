@@ -1,0 +1,9 @@
+{
+	"id": "TZT64HFA6s5h02H",
+	"json": "{\"id\":\"TZT64HFA6s5h02H\",\"url\":\"https://learn.rarediseases.org/an-introduction-to-rare-diseases/\",\"loadedUrl\":\"https://learn.rarediseases.org/an-introduction-to-rare-diseases/\",\"uniqueKey\":\"https://learn.rarediseases.org/an-introduction-to-rare-diseases\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:57:32.254Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://learn.rarediseases.org/an-introduction-to-rare-diseases",
+	"url": "https://learn.rarediseases.org/an-introduction-to-rare-diseases/"
+}

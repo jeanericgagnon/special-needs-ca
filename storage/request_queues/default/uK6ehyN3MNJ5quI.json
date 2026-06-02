@@ -1,0 +1,9 @@
+{
+	"id": "uK6ehyN3MNJ5quI",
+	"json": "{\"id\":\"uK6ehyN3MNJ5quI\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/Pages/Communications/MyStorySIDS-2018-01.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/Pages/Communications/MyStorySIDS-2018-01.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/Pages/Communications/MyStorySIDS-2018-01.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":1,\"errorMessages\":[\"Error: request timed out after 30 seconds.\\n    at Timeout._onTimeout (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@apify/timeout/cjs/index.cjs:64:68)\\n    at listOnTimeout (node:internal/timers:588:17)\\n    at process.processTimers (node:internal/timers:523:7)\"],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T18:07:57.208Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 1,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/Pages/Communications/MyStorySIDS-2018-01.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/Pages/Communications/MyStorySIDS-2018-01.aspx"
+}

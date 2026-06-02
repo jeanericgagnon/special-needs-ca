@@ -1,0 +1,9 @@
+{
+	"id": "4gLFsXEAQ18wLXu",
+	"json": "{\"id\":\"4gLFsXEAQ18wLXu\",\"url\":\"https://www.cde.ca.gov/ls/ba/cp/index.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ls/ex/fundingop.asp#centurycommunitylearningcenters21st\",\"uniqueKey\":\"https://www.cde.ca.gov/ls/ba/cp/index.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:32.570Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ls/ba/cp/index.asp",
+	"url": "https://www.cde.ca.gov/ls/ba/cp/index.asp"
+}

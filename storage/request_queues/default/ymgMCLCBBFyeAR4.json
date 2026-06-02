@@ -1,0 +1,9 @@
+{
+	"id": "ymgMCLCBBFyeAR4",
+	"json": "{\"id\":\"ymgMCLCBBFyeAR4\",\"url\":\"https://www.csb-cde.ca.gov/instruction/speechlang/index.aspx\",\"loadedUrl\":\"https://www.csb-cde.ca.gov/instruction/speechlang/index.aspx\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/instruction/speechlang/index.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:24.720Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csb-cde.ca.gov/instruction/speechlang/index.aspx",
+	"url": "https://www.csb-cde.ca.gov/instruction/speechlang/index.aspx"
+}

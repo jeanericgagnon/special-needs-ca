@@ -1,0 +1,9 @@
+{
+	"id": "us91CP6XQNrNVsZ",
+	"json": "{\"id\":\"us91CP6XQNrNVsZ\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/pns/patientinformation.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/pns/patientinformation.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/pns/patientinformation.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:06:37.140Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/pns/patientinformation.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/pns/patientinformation.aspx"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "E7e7UNsh5ckzYV9",
+	"json": "{\"id\":\"E7e7UNsh5ckzYV9\",\"url\":\"https://vigarchive.sos.ca.gov/2022/general/propositions/28/\",\"loadedUrl\":\"https://vigarchive.sos.ca.gov/2022/general/propositions/28/\",\"uniqueKey\":\"https://vigarchive.sos.ca.gov/2022/general/propositions/28\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:57.138Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://vigarchive.sos.ca.gov/2022/general/propositions/28",
+	"url": "https://vigarchive.sos.ca.gov/2022/general/propositions/28/"
+}

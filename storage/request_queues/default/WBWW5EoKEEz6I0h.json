@@ -1,0 +1,9 @@
+{
+	"id": "WBWW5EoKEEz6I0h",
+	"json": "{\"id\":\"WBWW5EoKEEz6I0h\",\"url\":\"https://give.ucdavis.edu/ARMI/RMIDNRS\",\"loadedUrl\":\"https://give.ucdavis.edu/ARMI/RMIDNRS\",\"uniqueKey\":\"https://give.ucdavis.edu/ARMI/RMIDNRS\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:59.970Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/ARMI/RMIDNRS",
+	"url": "https://give.ucdavis.edu/ARMI/RMIDNRS"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "Tmi0EZArXWl7kTe",
+	"json": "{\"id\":\"Tmi0EZArXWl7kTe\",\"url\":\"https://rarediseases.org/living-with-a-rare-disease/about-nord-membership/\",\"loadedUrl\":\"https://rarediseases.org/membership/\",\"uniqueKey\":\"https://rarediseases.org/living-with-a-rare-disease/about-nord-membership\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:56:34.389Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/living-with-a-rare-disease/about-nord-membership",
+	"url": "https://rarediseases.org/living-with-a-rare-disease/about-nord-membership/"
+}

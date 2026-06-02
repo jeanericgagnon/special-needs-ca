@@ -1,0 +1,9 @@
+{
+	"id": "rv5LLzmRFeITqTi",
+	"json": "{\"id\":\"rv5LLzmRFeITqTi\",\"url\":\"https://lettersandscience.ucdavis.edu/centers-museums-institutes\",\"loadedUrl\":\"https://lettersandscience.ucdavis.edu/research/centers-museums-institutes\",\"uniqueKey\":\"https://lettersandscience.ucdavis.edu/centers-museums-institutes\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:24.322Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://lettersandscience.ucdavis.edu/centers-museums-institutes",
+	"url": "https://lettersandscience.ucdavis.edu/centers-museums-institutes"
+}

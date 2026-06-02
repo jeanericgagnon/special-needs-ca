@@ -1,0 +1,9 @@
+{
+	"id": "cd3ixfzDRmTf9i9",
+	"json": "{\"id\":\"cd3ixfzDRmTf9i9\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/43266/miquell-miller-colon_and_rectal_surgery-colon_cancer-health_policy-inflammatory_bowel_disease-rectal_cancer-robotic_surgery-sacramento?FreeText%3aLast+name=Miller\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/43266/miquell-miller-colon_and_rectal_surgery-colon_cancer-health_policy-inflammatory_bowel_disease-rectal_cancer-robotic_surgery-sacramento?FreeText%3aLast+name=Miller\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/43266/miquell-miller-colon_and_rectal_surgery-colon_cancer-health_policy-inflammatory_bowel_disease-rectal_cancer-robotic_surgery-sacramento?FreeText%3ALast+name=Miller\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:08.360Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/43266/miquell-miller-colon_and_rectal_surgery-colon_cancer-health_policy-inflammatory_bowel_disease-rectal_cancer-robotic_surgery-sacramento?FreeText%3ALast+name=Miller",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/43266/miquell-miller-colon_and_rectal_surgery-colon_cancer-health_policy-inflammatory_bowel_disease-rectal_cancer-robotic_surgery-sacramento?FreeText%3aLast+name=Miller"
+}

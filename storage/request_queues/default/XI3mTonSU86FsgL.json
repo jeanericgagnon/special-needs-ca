@@ -1,0 +1,9 @@
+{
+	"id": "XI3mTonSU86FsgL",
+	"json": "{\"id\":\"XI3mTonSU86FsgL\",\"url\":\"http://www2.cde.ca.gov/seho/\",\"loadedUrl\":\"https://www2.cde.ca.gov/seho/\",\"uniqueKey\":\"http://www2.cde.ca.gov/seho\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:25:45.256Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www2.cde.ca.gov/seho",
+	"url": "http://www2.cde.ca.gov/seho/"
+}

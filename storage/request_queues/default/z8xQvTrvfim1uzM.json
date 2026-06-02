@@ -1,0 +1,9 @@
+{
+	"id": "z8xQvTrvfim1uzM",
+	"json": "{\"id\":\"z8xQvTrvfim1uzM\",\"url\":\"https://www.cde.ca.gov/SchoolDirectory/active-or-pending-charter-schools\",\"loadedUrl\":\"https://www.cde.ca.gov/SchoolDirectory/active-or-pending-charter-schools\",\"uniqueKey\":\"https://www.cde.ca.gov/SchoolDirectory/active-or-pending-charter-schools\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:24:00.583Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/SchoolDirectory/active-or-pending-charter-schools",
+	"url": "https://www.cde.ca.gov/SchoolDirectory/active-or-pending-charter-schools"
+}

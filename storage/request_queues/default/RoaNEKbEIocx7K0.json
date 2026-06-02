@@ -1,0 +1,9 @@
+{
+	"id": "RoaNEKbEIocx7K0",
+	"json": "{\"id\":\"RoaNEKbEIocx7K0\",\"url\":\"https://engineering.ucdavis.edu/undergraduates/student-life/engineering-ambassadors/tours\",\"loadedUrl\":\"https://engineering.ucdavis.edu/undergraduates/student-life/engineering-ambassadors/tours\",\"uniqueKey\":\"https://engineering.ucdavis.edu/undergraduates/student-life/engineering-ambassadors/tours\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:35.575Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://engineering.ucdavis.edu/undergraduates/student-life/engineering-ambassadors/tours",
+	"url": "https://engineering.ucdavis.edu/undergraduates/student-life/engineering-ambassadors/tours"
+}

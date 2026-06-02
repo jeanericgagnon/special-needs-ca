@@ -1,0 +1,9 @@
+{
+	"id": "ArbTWbk7G3BuILI",
+	"json": "{\"id\":\"ArbTWbk7G3BuILI\",\"url\":\"https://giveto.ucdavis.edu/users/10086614-margaret-w\",\"loadedUrl\":\"https://giveto.ucdavis.edu/users/10086614-margaret-w\",\"uniqueKey\":\"https://giveto.ucdavis.edu/users/10086614-margaret-w\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:04.948Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://giveto.ucdavis.edu/users/10086614-margaret-w",
+	"url": "https://giveto.ucdavis.edu/users/10086614-margaret-w"
+}

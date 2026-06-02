@@ -1,0 +1,9 @@
+{
+	"id": "hCVAdaRtPd8krGF",
+	"json": "{\"id\":\"hCVAdaRtPd8krGF\",\"url\":\"https://giving.ucdavis.edu/impacts-giving?page=4\",\"loadedUrl\":\"https://giving.ucdavis.edu/impacts-giving?page=4\",\"uniqueKey\":\"https://giving.ucdavis.edu/impacts-giving?page=4\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:45.127Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://giving.ucdavis.edu/impacts-giving?page=4",
+	"url": "https://giving.ucdavis.edu/impacts-giving?page=4"
+}

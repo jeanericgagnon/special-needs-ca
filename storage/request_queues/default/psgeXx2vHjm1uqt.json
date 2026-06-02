@@ -1,0 +1,9 @@
+{
+	"id": "psgeXx2vHjm1uqt",
+	"json": "{\"id\":\"psgeXx2vHjm1uqt\",\"url\":\"https://www.vetmed.ucdavis.edu/education/internships-residencies/policy-visiting\",\"loadedUrl\":\"https://www.vetmed.ucdavis.edu/education/internships-residencies/policy-visiting\",\"uniqueKey\":\"https://www.vetmed.ucdavis.edu/education/internships-residencies/policy-visiting\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:18.142Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.vetmed.ucdavis.edu/education/internships-residencies/policy-visiting",
+	"url": "https://www.vetmed.ucdavis.edu/education/internships-residencies/policy-visiting"
+}

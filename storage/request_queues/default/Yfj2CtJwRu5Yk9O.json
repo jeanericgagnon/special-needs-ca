@@ -1,0 +1,9 @@
+{
+	"id": "Yfj2CtJwRu5Yk9O",
+	"json": "{\"id\":\"Yfj2CtJwRu5Yk9O\",\"url\":\"http://www.ots.ca.gov/\",\"loadedUrl\":\"https://www.ots.ca.gov/\",\"uniqueKey\":\"http://www.ots.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T19:42:58.352Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.ots.ca.gov",
+	"url": "http://www.ots.ca.gov/"
+}

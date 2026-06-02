@@ -1,0 +1,9 @@
+{
+	"id": "HBjGEd0XALTElKP",
+	"json": "{\"id\":\"HBjGEd0XALTElKP\",\"url\":\"https://www.ctc.ca.gov/credentials/assignment-resources/transitional-kindergarten\",\"loadedUrl\":\"https://www.ctc.ca.gov/employers/assignment-resources/settings/self-contained/transitional-kindergarten/\",\"uniqueKey\":\"https://www.ctc.ca.gov/credentials/assignment-resources/transitional-kindergarten\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:54.514Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ctc.ca.gov/credentials/assignment-resources/transitional-kindergarten",
+	"url": "https://www.ctc.ca.gov/credentials/assignment-resources/transitional-kindergarten"
+}

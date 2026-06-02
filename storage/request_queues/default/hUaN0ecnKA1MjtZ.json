@@ -1,0 +1,9 @@
+{
+	"id": "hUaN0ecnKA1MjtZ",
+	"json": "{\"id\":\"hUaN0ecnKA1MjtZ\",\"url\":\"https://data.chhs.ca.gov/showcase/calhhs-record-reconciliation-dashboard\",\"loadedUrl\":\"https://data.chhs.ca.gov/showcase/calhhs-record-reconciliation-dashboard\",\"uniqueKey\":\"https://data.chhs.ca.gov/showcase/calhhs-record-reconciliation-dashboard\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:47.247Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://data.chhs.ca.gov/showcase/calhhs-record-reconciliation-dashboard",
+	"url": "https://data.chhs.ca.gov/showcase/calhhs-record-reconciliation-dashboard"
+}

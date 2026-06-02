@@ -1,0 +1,9 @@
+{
+	"id": "cuSCi9COyMY2uP5",
+	"json": "{\"id\":\"cuSCi9COyMY2uP5\",\"url\":\"https://academicaffairs.ucdavis.edu/mission-statement\",\"loadedUrl\":\"https://academicaffairs.ucdavis.edu/mission-statement\",\"uniqueKey\":\"https://academicaffairs.ucdavis.edu/mission-statement\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:18.451Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://academicaffairs.ucdavis.edu/mission-statement",
+	"url": "https://academicaffairs.ucdavis.edu/mission-statement"
+}

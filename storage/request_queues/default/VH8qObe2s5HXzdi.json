@@ -1,0 +1,9 @@
+{
+	"id": "VH8qObe2s5HXzdi",
+	"json": "{\"id\":\"VH8qObe2s5HXzdi\",\"url\":\"https://www.csb-cde.ca.gov/studentlife/sports/sportscalendar.aspx\",\"loadedUrl\":\"https://www.csb-cde.ca.gov/studentlife/sports/sportscalendar.aspx\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/studentlife/sports/sportscalendar.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:27.954Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csb-cde.ca.gov/studentlife/sports/sportscalendar.aspx",
+	"url": "https://www.csb-cde.ca.gov/studentlife/sports/sportscalendar.aspx"
+}

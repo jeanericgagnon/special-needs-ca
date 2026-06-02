@@ -1,0 +1,9 @@
+{
+	"id": "l4bEQV3avWMWfFT",
+	"json": "{\"id\":\"l4bEQV3avWMWfFT\",\"url\":\"https://cdss.ca.gov/inforesources/child-welfare-program-improvement/social-worker-hotline\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/child-welfare-program-improvement/social-worker-hotline\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/child-welfare-program-improvement/social-worker-hotline\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:17.196Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/child-welfare-program-improvement/social-worker-hotline",
+	"url": "https://cdss.ca.gov/inforesources/child-welfare-program-improvement/social-worker-hotline"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "NFoyQc8XCp5HyDL",
+	"json": "{\"id\":\"NFoyQc8XCp5HyDL\",\"url\":\"https://www.cde.ca.gov/fg/cr/\",\"loadedUrl\":\"https://www.cde.ca.gov/fg/cr/\",\"uniqueKey\":\"https://www.cde.ca.gov/fg/cr\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:21:46.830Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/fg/cr",
+	"url": "https://www.cde.ca.gov/fg/cr/"
+}

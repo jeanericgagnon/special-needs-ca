@@ -1,0 +1,9 @@
+{
+	"id": "SKGqEgQMtDe3rYf",
+	"json": "{\"id\":\"SKGqEgQMtDe3rYf\",\"url\":\"https://capitolmuseum.ca.gov/learn/about-the-capitol/history-of-the-capitol/\",\"loadedUrl\":\"https://capitolmuseum.ca.gov/about-the-capitol/history-of-the-capitol/\",\"uniqueKey\":\"https://capitolmuseum.ca.gov/learn/about-the-capitol/history-of-the-capitol\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:57.710Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://capitolmuseum.ca.gov/learn/about-the-capitol/history-of-the-capitol",
+	"url": "https://capitolmuseum.ca.gov/learn/about-the-capitol/history-of-the-capitol/"
+}

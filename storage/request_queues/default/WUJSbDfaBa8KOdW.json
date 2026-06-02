@@ -1,0 +1,9 @@
+{
+	"id": "WUJSbDfaBa8KOdW",
+	"json": "{\"id\":\"WUJSbDfaBa8KOdW\",\"url\":\"https://cnprc.ucdavis.edu/positive-human-animal-interactions\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/positive-human-animal-interactions\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/positive-human-animal-interactions\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:10.354Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cnprc.ucdavis.edu/positive-human-animal-interactions",
+	"url": "https://cnprc.ucdavis.edu/positive-human-animal-interactions"
+}

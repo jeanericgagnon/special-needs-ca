@@ -1,0 +1,9 @@
+{
+	"id": "FIKZLABKI3rKv1c",
+	"json": "{\"id\":\"FIKZLABKI3rKv1c\",\"url\":\"https://www.parks.ca.gov/?page_id=531\",\"loadedUrl\":\"https://www.parks.ca.gov/?page_id=531\",\"uniqueKey\":\"https://www.parks.ca.gov?page_id=531\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:51.995Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.parks.ca.gov?page_id=531",
+	"url": "https://www.parks.ca.gov/?page_id=531"
+}

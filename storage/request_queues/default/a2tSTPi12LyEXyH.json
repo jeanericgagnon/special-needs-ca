@@ -1,0 +1,9 @@
+{
+	"id": "a2tSTPi12LyEXyH",
+	"json": "{\"id\":\"a2tSTPi12LyEXyH\",\"url\":\"https://hr.ucdavis.edu/news/cyberwellness-personal-security-checklist\",\"loadedUrl\":\"https://hr.ucdavis.edu/news/cyberwellness-personal-security-checklist\",\"uniqueKey\":\"https://hr.ucdavis.edu/news/cyberwellness-personal-security-checklist\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:32.124Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/news/cyberwellness-personal-security-checklist",
+	"url": "https://hr.ucdavis.edu/news/cyberwellness-personal-security-checklist"
+}

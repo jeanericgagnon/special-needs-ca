@@ -1,0 +1,9 @@
+{
+	"id": "SuFXonIOoqqAQJc",
+	"json": "{\"id\":\"SuFXonIOoqqAQJc\",\"url\":\"https://fce.ucdavis.edu/\",\"loadedUrl\":\"https://fce.ucdavis.edu/\",\"uniqueKey\":\"https://fce.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:05.207Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://fce.ucdavis.edu",
+	"url": "https://fce.ucdavis.edu/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "2TZnjBgrVw1zK2V",
+	"json": "{\"id\":\"2TZnjBgrVw1zK2V\",\"url\":\"https://neuroscience.ucdavis.edu/people/steven-luck\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/people/steven-luck\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/people/steven-luck\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:48.767Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://neuroscience.ucdavis.edu/people/steven-luck",
+	"url": "https://neuroscience.ucdavis.edu/people/steven-luck"
+}

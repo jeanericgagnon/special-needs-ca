@@ -1,0 +1,9 @@
+{
+	"id": "X3qhbCGWds7On41",
+	"json": "{\"id\":\"X3qhbCGWds7On41\",\"url\":\"https://scdd.ca.gov/education-resources/\",\"loadedUrl\":\"https://scdd.ca.gov/education-resources/\",\"uniqueKey\":\"https://scdd.ca.gov/education-resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:33.863Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/education-resources",
+	"url": "https://scdd.ca.gov/education-resources/"
+}

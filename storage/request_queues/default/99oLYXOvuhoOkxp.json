@@ -1,0 +1,9 @@
+{
+	"id": "99oLYXOvuhoOkxp",
+	"json": "{\"id\":\"99oLYXOvuhoOkxp\",\"url\":\"https://www.ucdavis.edu/emergency\",\"loadedUrl\":\"https://www.ucdavis.edu/campus-life/wellness-safety/emergency\",\"uniqueKey\":\"https://www.ucdavis.edu/emergency\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:59.849Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ucdavis.edu/emergency",
+	"url": "https://www.ucdavis.edu/emergency"
+}

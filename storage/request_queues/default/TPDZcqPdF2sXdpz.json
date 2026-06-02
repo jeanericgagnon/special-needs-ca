@@ -1,0 +1,9 @@
+{
+	"id": "TPDZcqPdF2sXdpz",
+	"json": "{\"id\":\"TPDZcqPdF2sXdpz\",\"url\":\"https://health.ucdavis.edu/pharmacology/\",\"loadedUrl\":\"https://health.ucdavis.edu/pharmacology/\",\"uniqueKey\":\"https://health.ucdavis.edu/pharmacology\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:09:00.038Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/pharmacology",
+	"url": "https://health.ucdavis.edu/pharmacology/"
+}

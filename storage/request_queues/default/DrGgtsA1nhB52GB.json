@@ -1,0 +1,9 @@
+{
+	"id": "DrGgtsA1nhB52GB",
+	"json": "{\"id\":\"DrGgtsA1nhB52GB\",\"url\":\"https://health.ucdavis.edu/healthcare-professionals/featured-specialties/orthopedics\",\"loadedUrl\":\"https://health.ucdavis.edu/healthcare-professionals/featured-specialties/orthopedics\",\"uniqueKey\":\"https://health.ucdavis.edu/healthcare-professionals/featured-specialties/orthopedics\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:09.418Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/healthcare-professionals/featured-specialties/orthopedics",
+	"url": "https://health.ucdavis.edu/healthcare-professionals/featured-specialties/orthopedics"
+}

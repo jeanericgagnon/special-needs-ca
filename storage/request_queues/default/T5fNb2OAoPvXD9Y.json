@@ -1,0 +1,9 @@
+{
+	"id": "T5fNb2OAoPvXD9Y",
+	"json": "{\"id\":\"T5fNb2OAoPvXD9Y\",\"url\":\"https://www.cde.ca.gov/ci/gs/hs/ssplaw.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/gs/hs/ssplaw.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/gs/hs/ssplaw.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:19:35.283Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ci/gs/hs/ssplaw.asp",
+	"url": "https://www.cde.ca.gov/ci/gs/hs/ssplaw.asp"
+}

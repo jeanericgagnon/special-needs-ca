@@ -1,0 +1,9 @@
+{
+	"id": "wdULrJSSn4O6y1Z",
+	"json": "{\"id\":\"wdULrJSSn4O6y1Z\",\"url\":\"https://health.ucdavis.edu/news/features/meet-the-team-providing-patient-care-at-home-/2024/06\",\"loadedUrl\":\"https://health.ucdavis.edu/news/features/meet-the-team-providing-patient-care-at-home-/2024/06\",\"uniqueKey\":\"https://health.ucdavis.edu/news/features/meet-the-team-providing-patient-care-at-home-/2024/06\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:02.635Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/news/features/meet-the-team-providing-patient-care-at-home-/2024/06",
+	"url": "https://health.ucdavis.edu/news/features/meet-the-team-providing-patient-care-at-home-/2024/06"
+}

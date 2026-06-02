@@ -1,0 +1,9 @@
+{
+	"id": "iiXTDZXvggj8khd",
+	"json": "{\"id\":\"iiXTDZXvggj8khd\",\"url\":\"https://www.cde.ca.gov/ci/rl/im/elaeldpubliccomment2026.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=034e5d01-fecd-46c5-8759-3d1381533ccc&ssb=37544217129&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fci%2Frl%2Fim%2Felaeldpubliccomment2026.asp&ssi=ed268bd7-ctxv-442b-bc0e-374e99600969&ssk=botmanager_support@radware.com&ssm=63710639655009327135460682258087&ssn=e3d9b302c48e9230986a44020965fdeddd12623995d2-b871-4f3f-b47dd2&sso=ed21a9dc-d9da8291c07ca2f3927faa92dcb2d54c2340d5a05d09b35d&ssp=35479054721780317405178036679614181&ssq=18690552594634218077325946810215353921428&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDA2MjM5OTVkMi1iODcxLTRmM2YtYjlkYy1kOWRhODI5MWMwN2MxLTE3ODAzMjU5NDY1MDcyNzItMDAzOTlmOGIyNTkwYTU5MmI1ODEzIiwidXpteCI6IjdmOTAwMGQyZWY3NGQ4LWFlODQtNDM1NC1hMzU0LTQ2ZGUzMjMzOTY0MjEtMTc4MDMyNTkwNTAwOTQxNzcwLTYzMWVjMzcyNTQyNDRlNDAxNiIsInJkIjoiY2EuZ292In0=\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/rl/im/elaeldpubliccomment2026.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T14:59:06.918Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ci/rl/im/elaeldpubliccomment2026.asp",
+	"url": "https://www.cde.ca.gov/ci/rl/im/elaeldpubliccomment2026.asp"
+}

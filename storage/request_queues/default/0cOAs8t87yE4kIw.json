@@ -1,0 +1,9 @@
+{
+	"id": "0cOAs8t87yE4kIw",
+	"json": "{\"id\":\"0cOAs8t87yE4kIw\",\"url\":\"https://education.ucdavis.edu/videos\",\"loadedUrl\":\"https://education.ucdavis.edu/videos\",\"uniqueKey\":\"https://education.ucdavis.edu/videos\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:17:25.770Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://education.ucdavis.edu/videos",
+	"url": "https://education.ucdavis.edu/videos"
+}

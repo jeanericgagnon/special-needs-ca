@@ -1,0 +1,9 @@
+{
+	"id": "cu6u5PVmDbkWA1o",
+	"json": "{\"id\":\"cu6u5PVmDbkWA1o\",\"url\":\"https://surveys3.cde.ca.gov/go/cte-mcs-stdsvalid-agriculture.asp\",\"loadedUrl\":\"https://surveys3.cde.ca.gov/s.asp?k=177103028934\",\"uniqueKey\":\"https://surveys3.cde.ca.gov/go/cte-mcs-stdsvalid-agriculture.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:40:09.106Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://surveys3.cde.ca.gov/go/cte-mcs-stdsvalid-agriculture.asp",
+	"url": "https://surveys3.cde.ca.gov/go/cte-mcs-stdsvalid-agriculture.asp"
+}

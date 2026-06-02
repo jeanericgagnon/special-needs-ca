@@ -1,0 +1,9 @@
+{
+	"id": "I0pQMgBH1Mkjfua",
+	"json": "{\"id\":\"I0pQMgBH1Mkjfua\",\"url\":\"https://yellowcluster.ucdavis.edu/key-requests\",\"loadedUrl\":\"https://yellowcluster.ucdavis.edu/key-requests\",\"uniqueKey\":\"https://yellowcluster.ucdavis.edu/key-requests\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:14.131Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://yellowcluster.ucdavis.edu/key-requests",
+	"url": "https://yellowcluster.ucdavis.edu/key-requests"
+}

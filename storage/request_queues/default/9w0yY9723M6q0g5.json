@@ -1,0 +1,9 @@
+{
+	"id": "9w0yY9723M6q0g5",
+	"json": "{\"id\":\"9w0yY9723M6q0g5\",\"url\":\"https://www.ssa.gov/personal-record\",\"loadedUrl\":\"https://www.ssa.gov/personal-record\",\"uniqueKey\":\"https://www.ssa.gov/personal-record\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:54.705Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ssa.gov/personal-record",
+	"url": "https://www.ssa.gov/personal-record"
+}

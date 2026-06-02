@@ -1,0 +1,9 @@
+{
+	"id": "gyp8LLL1EYaANDJ",
+	"json": "{\"id\":\"gyp8LLL1EYaANDJ\",\"url\":\"https://give.ucdavis.edu/BIOT\",\"loadedUrl\":\"https://give.ucdavis.edu/BIOT\",\"uniqueKey\":\"https://give.ucdavis.edu/BIOT\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:54.671Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/BIOT",
+	"url": "https://give.ucdavis.edu/BIOT"
+}

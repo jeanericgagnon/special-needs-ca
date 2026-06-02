@@ -1,0 +1,9 @@
+{
+	"id": "ZpdJevSL9zsZMRf",
+	"json": "{\"id\":\"ZpdJevSL9zsZMRf\",\"url\":\"https://www.ftb.ca.gov/pay/payment-options.html\",\"loadedUrl\":\"https://www.ftb.ca.gov/pay/payment-options.html\",\"uniqueKey\":\"https://www.ftb.ca.gov/pay/payment-options.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:35.943Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ftb.ca.gov/pay/payment-options.html",
+	"url": "https://www.ftb.ca.gov/pay/payment-options.html"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "Zro1IRMQIvsAeBH",
+	"json": "{\"id\":\"Zro1IRMQIvsAeBH\",\"url\":\"https://www.cde.ca.gov/sp/sw/pi/\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/sw/pi/\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/sw/pi\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:01.850Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/sp/sw/pi",
+	"url": "https://www.cde.ca.gov/sp/sw/pi/"
+}

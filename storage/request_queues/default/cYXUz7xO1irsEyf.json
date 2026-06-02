@@ -1,0 +1,9 @@
+{
+	"id": "cYXUz7xO1irsEyf",
+	"json": "{\"id\":\"cYXUz7xO1irsEyf\",\"url\":\"https://www.vetmed.ucdavis.edu/cdn-cgi/l/email-protection#bbc8cdd6d8d4d6d6ced5d2d8dacfd2d4d5c8fbced8dfdacdd2c895dedfce\",\"loadedUrl\":\"https://www.vetmed.ucdavis.edu/cdn-cgi/l/email-protection#bbc8cdd6d8d4d6d6ced5d2d8dacfd2d4d5c8fbced8dfdacdd2c895dedfce\",\"uniqueKey\":\"https://www.vetmed.ucdavis.edu/cdn-cgi/l/email-protection\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:24.829Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.vetmed.ucdavis.edu/cdn-cgi/l/email-protection",
+	"url": "https://www.vetmed.ucdavis.edu/cdn-cgi/l/email-protection#bbc8cdd6d8d4d6d6ced5d2d8dacfd2d4d5c8fbced8dfdacdd2c895dedfce"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "C9OInUpZVmdZy0N",
+	"json": "{\"id\":\"C9OInUpZVmdZy0N\",\"url\":\"https://www.cde.ca.gov/ls/nu/he/water.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=b4e6b203-a7be-49f6-8e2d-7c9dcc7bce0b&ssb=72933289955&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fls%2Fnu%2Fhe%2Fwater.asp&ssi=eff7a513-ctxv-4329-a293-e4813cd0fab4&ssk=botmanager_support@radware.com&ssm=24085480237281055221734078899875&ssn=5e87f4c0a083d34fedca6a32fed112cf1a2d789b7d81-1fb3-4f91-9e1ebb&sso=ee060a71-b4fe74fae2e8a9810e146bdbac1e9fa4984a80cfd1011fba&ssp=55004119211780343780178033441379128&ssq=73025032758253841110727447019305225797839&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDA3ODliN2Q4MS0xZmIzLTRmOTEtOWE3MS1iNGZlNzRmYWUyZTgxLTE3ODAzMjc0NDc5MDkxMzUwNzAtMDAzZGZhNjc4ZTMwOWQzZjMyYzIyIiwicmQiOiJjYS5nb3YiLCJ1em14IjoiN2Y5MDAwNzM5N2MzNmMtMGQzYi00Yzg1LTkyMjktNTM1NTI0YzVmOWFiMS0xNzgwMzI3NDQ3OTA5MTM1MDcwLTVhNDYyNjRiOWJhZGE5MGEyMiJ9\",\"uniqueKey\":\"https://www.cde.ca.gov/ls/nu/he/water.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:26:23.050Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ls/nu/he/water.asp",
+	"url": "https://www.cde.ca.gov/ls/nu/he/water.asp"
+}

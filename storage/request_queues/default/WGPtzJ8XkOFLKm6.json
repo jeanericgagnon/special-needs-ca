@@ -1,0 +1,9 @@
+{
+	"id": "WGPtzJ8XkOFLKm6",
+	"json": "{\"id\":\"WGPtzJ8XkOFLKm6\",\"url\":\"https://www.immigrantguide.ca.gov/en/COVID19\",\"loadedUrl\":\"https://www.immigrantguide.ca.gov/en/COVID19\",\"uniqueKey\":\"https://www.immigrantguide.ca.gov/en/COVID19\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:52.387Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.immigrantguide.ca.gov/en/COVID19",
+	"url": "https://www.immigrantguide.ca.gov/en/COVID19"
+}

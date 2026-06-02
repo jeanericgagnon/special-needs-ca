@@ -1,0 +1,9 @@
+{
+	"id": "ckzD25nJXgplpGC",
+	"json": "{\"id\":\"ckzD25nJXgplpGC\",\"url\":\"https://rarediseases.org/rare-diseases/kcnb1-encephalopathy/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/kcnb1-encephalopathy/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/kcnb1-encephalopathy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:09:24.551Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/rare-diseases/kcnb1-encephalopathy",
+	"url": "https://rarediseases.org/rare-diseases/kcnb1-encephalopathy/"
+}

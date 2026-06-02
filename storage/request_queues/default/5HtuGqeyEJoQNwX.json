@@ -1,0 +1,9 @@
+{
+	"id": "5HtuGqeyEJoQNwX",
+	"json": "{\"id\":\"5HtuGqeyEJoQNwX\",\"url\":\"https://hr.ucdavis.edu/news/open-enrollment-2025\",\"loadedUrl\":\"https://hr.ucdavis.edu/news/open-enrollment-2025\",\"uniqueKey\":\"https://hr.ucdavis.edu/news/open-enrollment-2025\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:06.987Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/news/open-enrollment-2025",
+	"url": "https://hr.ucdavis.edu/news/open-enrollment-2025"
+}

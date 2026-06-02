@@ -1,0 +1,9 @@
+{
+	"id": "dGlJE79YggC5L8T",
+	"json": "{\"id\":\"dGlJE79YggC5L8T\",\"url\":\"https://ww2.arb.ca.gov/our-work/programs/prescribed-burning/about\",\"loadedUrl\":\"https://ww2.arb.ca.gov/our-work/programs/prescribed-burning/about\",\"uniqueKey\":\"https://ww2.arb.ca.gov/our-work/programs/prescribed-burning/about\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:32:40.858Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://ww2.arb.ca.gov/our-work/programs/prescribed-burning/about",
+	"url": "https://ww2.arb.ca.gov/our-work/programs/prescribed-burning/about"
+}

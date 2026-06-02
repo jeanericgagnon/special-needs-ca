@@ -1,0 +1,9 @@
+{
+	"id": "36ZX6rC8uiTaHkr",
+	"json": "{\"id\":\"36ZX6rC8uiTaHkr\",\"url\":\"http://www.ucdmc.ucdavis.edu/publish/news/nursing/8142\",\"loadedUrl\":\"https://health.ucdavis.edu/errormessages/404.asp\",\"uniqueKey\":\"http://www.ucdmc.ucdavis.edu/publish/news/nursing/8142\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:27.568Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.ucdmc.ucdavis.edu/publish/news/nursing/8142",
+	"url": "http://www.ucdmc.ucdavis.edu/publish/news/nursing/8142"
+}

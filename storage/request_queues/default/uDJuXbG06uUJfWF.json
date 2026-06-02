@@ -1,0 +1,9 @@
+{
+	"id": "uDJuXbG06uUJfWF",
+	"json": "{\"id\":\"uDJuXbG06uUJfWF\",\"url\":\"https://www.gov.ca.gov/2026/05/14/presupuestomayo202627/\",\"loadedUrl\":\"https://www.gov.ca.gov/2026/05/14/presupuestomayo202627/\",\"uniqueKey\":\"https://www.gov.ca.gov/2026/05/14/presupuestomayo202627\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:46.498Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.gov.ca.gov/2026/05/14/presupuestomayo202627",
+	"url": "https://www.gov.ca.gov/2026/05/14/presupuestomayo202627/"
+}

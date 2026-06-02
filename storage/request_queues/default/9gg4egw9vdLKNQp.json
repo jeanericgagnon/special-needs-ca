@@ -1,0 +1,9 @@
+{
+	"id": "9gg4egw9vdLKNQp",
+	"json": "{\"id\":\"9gg4egw9vdLKNQp\",\"url\":\"https://www.ftb.ca.gov/help/state-managed-programs/index.html\",\"loadedUrl\":\"https://www.ftb.ca.gov/help/state-managed-programs/index.html\",\"uniqueKey\":\"https://www.ftb.ca.gov/help/state-managed-programs/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:36.740Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ftb.ca.gov/help/state-managed-programs/index.html",
+	"url": "https://www.ftb.ca.gov/help/state-managed-programs/index.html"
+}

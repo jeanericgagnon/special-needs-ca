@@ -1,0 +1,9 @@
+{
+	"id": "Axi6gwcVIwlaRRL",
+	"json": "{\"id\":\"Axi6gwcVIwlaRRL\",\"url\":\"https://www.chhs.ca.gov/blog/2020/04/06/los-angeles-surge-hospital-to-begin-accepting-covid-19-patients/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2020/04/06/los-angeles-surge-hospital-to-begin-accepting-covid-19-patients/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2020/04/06/los-angeles-surge-hospital-to-begin-accepting-covid-19-patients\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:14.835Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chhs.ca.gov/blog/2020/04/06/los-angeles-surge-hospital-to-begin-accepting-covid-19-patients",
+	"url": "https://www.chhs.ca.gov/blog/2020/04/06/los-angeles-surge-hospital-to-begin-accepting-covid-19-patients/"
+}

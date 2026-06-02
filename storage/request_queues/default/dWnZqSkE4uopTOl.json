@@ -1,0 +1,9 @@
+{
+	"id": "dWnZqSkE4uopTOl",
+	"json": "{\"id\":\"dWnZqSkE4uopTOl\",\"url\":\"https://health.ucdavis.edu/patients-visitors/news/topic/cancer\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/news/topic/cancer\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/news/topic/cancer\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:45.817Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/news/topic/cancer",
+	"url": "https://health.ucdavis.edu/patients-visitors/news/topic/cancer"
+}

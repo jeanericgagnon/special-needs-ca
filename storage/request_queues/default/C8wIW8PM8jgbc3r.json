@@ -1,0 +1,9 @@
+{
+	"id": "C8wIW8PM8jgbc3r",
+	"json": "{\"id\":\"C8wIW8PM8jgbc3r\",\"url\":\"https://www.globaldownsyndrome.org/global-awards/\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/global-awards/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/global-awards\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:28:02.266Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.globaldownsyndrome.org/global-awards",
+	"url": "https://www.globaldownsyndrome.org/global-awards/"
+}

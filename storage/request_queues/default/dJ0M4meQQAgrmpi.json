@@ -1,0 +1,9 @@
+{
+	"id": "dJ0M4meQQAgrmpi",
+	"json": "{\"id\":\"dJ0M4meQQAgrmpi\",\"url\":\"https://www.cde.ca.gov/sp/eo/mt/cefmagnetprograms.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=b32273cf-fa6c-4bb0-b315-98e699a28387&ssb=76848262971&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fsp%2Feo%2Fmt%2Fcefmagnetprograms.asp&ssi=bcc57461-ctxv-4610-8583-79fdf3ae9960&ssk=botmanager_support@radware.com&ssm=65842723853879804139471626756389&ssn=3dfbcb4246576658827044f8ce9a2245aae53d33840e-9287-4e32-a40884&sso=7d4af83f-7a08573b9fcc2033920dc12879b132dd170fbbb2b1cd6cbb&ssp=49738499731780348295178035120757467&ssq=81481215534381010708055329668045749315112&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsIl9fdXptZiI6IjdmOTAwMDNkMzM4NDBlLTkyODctNGUzMi1hODNmLTdhMDg1NzNiOWZjYzEtMTc4MDM1NTMyOTk4MDEzNzAwLTAwMzNlNWY4YTE0YjBhNTc2NjgxMyIsInV6bXgiOiI3ZjkwMDAzMmVhNDgwMS1lYjZiLTQwMTYtYmMzMi1hYzNiZWY0YWYwMTgxLTE3ODAzNTUzMjk5ODAxMzcwMC0xZDAzYWFhMjIxZTRlZmJkMTMifQ==\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/eo/mt/cefmagnetprograms.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T23:09:03.806Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/sp/eo/mt/cefmagnetprograms.asp",
+	"url": "https://www.cde.ca.gov/sp/eo/mt/cefmagnetprograms.asp"
+}

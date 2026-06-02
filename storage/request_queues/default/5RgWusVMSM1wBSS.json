@@ -1,0 +1,9 @@
+{
+	"id": "5RgWusVMSM1wBSS",
+	"json": "{\"id\":\"5RgWusVMSM1wBSS\",\"url\":\"https://give.ucdavis.edu/3040/9000863\",\"loadedUrl\":\"https://give.ucdavis.edu/3040/9000863\",\"uniqueKey\":\"https://give.ucdavis.edu/3040/9000863\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:02.450Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/3040/9000863",
+	"url": "https://give.ucdavis.edu/3040/9000863"
+}

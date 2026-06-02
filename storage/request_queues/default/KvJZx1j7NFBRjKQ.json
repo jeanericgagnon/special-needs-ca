@@ -1,0 +1,9 @@
+{
+	"id": "KvJZx1j7NFBRjKQ",
+	"json": "{\"id\":\"KvJZx1j7NFBRjKQ\",\"url\":\"https://give.ucdavis.edu/VVME/76769\",\"loadedUrl\":\"https://give.ucdavis.edu/VVME/76769\",\"uniqueKey\":\"https://give.ucdavis.edu/VVME/76769\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:01.158Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/VVME/76769",
+	"url": "https://give.ucdavis.edu/VVME/76769"
+}

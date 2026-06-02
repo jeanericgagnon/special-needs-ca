@@ -1,0 +1,9 @@
+{
+	"id": "n9B2xRJQgV5VLQ1",
+	"json": "{\"id\":\"n9B2xRJQgV5VLQ1\",\"url\":\"https://complaints.ccld.dss.ca.gov/\",\"loadedUrl\":\"https://complaints.ccld.dss.ca.gov/\",\"uniqueKey\":\"https://complaints.ccld.dss.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:34.100Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://complaints.ccld.dss.ca.gov",
+	"url": "https://complaints.ccld.dss.ca.gov/"
+}

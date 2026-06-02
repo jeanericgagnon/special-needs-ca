@@ -1,0 +1,9 @@
+{
+	"id": "rroqEv4S7sVc67K",
+	"json": "{\"id\":\"rroqEv4S7sVc67K\",\"url\":\"https://health.ucdavis.edu/psychiatry/education/index.html\",\"loadedUrl\":\"https://health.ucdavis.edu/psychiatry/academic-programs/\",\"uniqueKey\":\"https://health.ucdavis.edu/psychiatry/education/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:56.584Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/psychiatry/education/index.html",
+	"url": "https://health.ucdavis.edu/psychiatry/education/index.html"
+}

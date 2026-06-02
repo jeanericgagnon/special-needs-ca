@@ -1,0 +1,9 @@
+{
+	"id": "zIF2GyC1U6E0ysK",
+	"json": "{\"id\":\"zIF2GyC1U6E0ysK\",\"url\":\"https://cdss.ca.gov/inforesources/childrens-residential/resources-for-clients\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/childrens-residential/resources-for-clients\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/childrens-residential/resources-for-clients\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:44.357Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/childrens-residential/resources-for-clients",
+	"url": "https://cdss.ca.gov/inforesources/childrens-residential/resources-for-clients"
+}

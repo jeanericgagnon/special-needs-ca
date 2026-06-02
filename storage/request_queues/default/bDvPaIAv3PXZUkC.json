@@ -1,0 +1,9 @@
+{
+	"id": "bDvPaIAv3PXZUkC",
+	"json": "{\"id\":\"bDvPaIAv3PXZUkC\",\"url\":\"https://www.cdss.ca.gov/inforesources/refugees/stakeholders/sac\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/refugees/stakeholders/sac\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/refugees/stakeholders/sac\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:30.524Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/inforesources/refugees/stakeholders/sac",
+	"url": "https://www.cdss.ca.gov/inforesources/refugees/stakeholders/sac"
+}

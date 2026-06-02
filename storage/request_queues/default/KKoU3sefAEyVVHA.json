@@ -1,0 +1,9 @@
+{
+	"id": "KKoU3sefAEyVVHA",
+	"json": "{\"id\":\"KKoU3sefAEyVVHA\",\"url\":\"https://physicians.ucdavis.edu/?Cities=Rocklin\",\"loadedUrl\":\"https://physicians.ucdavis.edu/?Cities=Rocklin\",\"uniqueKey\":\"https://physicians.ucdavis.edu?Cities=Rocklin\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:11.710Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://physicians.ucdavis.edu?Cities=Rocklin",
+	"url": "https://physicians.ucdavis.edu/?Cities=Rocklin"
+}

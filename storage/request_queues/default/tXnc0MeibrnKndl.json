@@ -1,0 +1,9 @@
+{
+	"id": "tXnc0MeibrnKndl",
+	"json": "{\"id\":\"tXnc0MeibrnKndl\",\"url\":\"https://www.ca.gov/services/all/?q=state+taxes+\",\"loadedUrl\":\"https://www.ca.gov/services/all/?q=state+taxes+\",\"uniqueKey\":\"https://www.ca.gov/services/all?q=state+taxes+\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:28.887Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ca.gov/services/all?q=state+taxes+",
+	"url": "https://www.ca.gov/services/all/?q=state+taxes+"
+}

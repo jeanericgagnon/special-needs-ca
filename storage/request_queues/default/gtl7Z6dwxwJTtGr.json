@@ -1,0 +1,9 @@
+{
+	"id": "gtl7Z6dwxwJTtGr",
+	"json": "{\"id\":\"gtl7Z6dwxwJTtGr\",\"url\":\"https://www.library.ca.gov/student-teacher-resources/\",\"loadedUrl\":\"https://www.library.ca.gov/student-teacher-resources/\",\"uniqueKey\":\"https://www.library.ca.gov/student-teacher-resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:57.876Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.library.ca.gov/student-teacher-resources",
+	"url": "https://www.library.ca.gov/student-teacher-resources/"
+}

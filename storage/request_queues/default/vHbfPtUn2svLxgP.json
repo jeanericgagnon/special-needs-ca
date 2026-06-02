@@ -1,0 +1,9 @@
+{
+	"id": "vHbfPtUn2svLxgP",
+	"json": "{\"id\":\"vHbfPtUn2svLxgP\",\"url\":\"https://www.dds.ca.gov/corona-virus-information-and-resources/participant-directed-services/\",\"loadedUrl\":\"https://www.dds.ca.gov/transparency/laws-regulations/emergency-and-proposed-regulations/participant-directed-services/\",\"uniqueKey\":\"https://www.dds.ca.gov/corona-virus-information-and-resources/participant-directed-services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:23.500Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/corona-virus-information-and-resources/participant-directed-services",
+	"url": "https://www.dds.ca.gov/corona-virus-information-and-resources/participant-directed-services/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "bctUF81iM8GHTRZ",
+	"json": "{\"id\":\"bctUF81iM8GHTRZ\",\"url\":\"https://scdd.ca.gov/2023/11/21/policarpo-despaignes-self-determination-program-experience/\",\"loadedUrl\":\"https://scdd.ca.gov/2023/11/21/policarpo-despaignes-self-determination-program-experience/\",\"uniqueKey\":\"https://scdd.ca.gov/2023/11/21/policarpo-despaignes-self-determination-program-experience\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:45.477Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/2023/11/21/policarpo-despaignes-self-determination-program-experience",
+	"url": "https://scdd.ca.gov/2023/11/21/policarpo-despaignes-self-determination-program-experience/"
+}

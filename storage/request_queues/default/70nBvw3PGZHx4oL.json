@@ -1,0 +1,9 @@
+{
+	"id": "70nBvw3PGZHx4oL",
+	"json": "{\"id\":\"70nBvw3PGZHx4oL\",\"url\":\"https://financeandbusiness.ucdavis.edu/student-resources/payment/checks\",\"loadedUrl\":\"https://financeandbusiness.ucdavis.edu/student-resources/cashier/checks\",\"uniqueKey\":\"https://financeandbusiness.ucdavis.edu/student-resources/payment/checks\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:49.865Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://financeandbusiness.ucdavis.edu/student-resources/payment/checks",
+	"url": "https://financeandbusiness.ucdavis.edu/student-resources/payment/checks"
+}

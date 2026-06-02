@@ -1,0 +1,9 @@
+{
+	"id": "ZfWXkqM0zNN8oSp",
+	"json": "{\"id\":\"ZfWXkqM0zNN8oSp\",\"url\":\"https://www.dds.ca.gov/dds-events/regional-center-learning-series-featuring-pge/\",\"loadedUrl\":\"https://www.dds.ca.gov/dds-events/regional-center-learning-series-featuring-pge/\",\"uniqueKey\":\"https://www.dds.ca.gov/dds-events/regional-center-learning-series-featuring-pge\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:49.453Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/dds-events/regional-center-learning-series-featuring-pge",
+	"url": "https://www.dds.ca.gov/dds-events/regional-center-learning-series-featuring-pge/"
+}

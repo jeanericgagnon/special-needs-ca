@@ -1,0 +1,9 @@
+{
+	"id": "NPZjbnfSX7bMaR2",
+	"json": "{\"id\":\"NPZjbnfSX7bMaR2\",\"url\":\"http://www.dir.ca.gov/wpnodb.html\",\"loadedUrl\":\"http://www.dir.ca.gov/wpnodb.html\",\"uniqueKey\":\"http://www.dir.ca.gov/wpnodb.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:06:47.178Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.dir.ca.gov/wpnodb.html",
+	"url": "http://www.dir.ca.gov/wpnodb.html"
+}

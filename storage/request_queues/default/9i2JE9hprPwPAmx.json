@@ -1,0 +1,9 @@
+{
+	"id": "9i2JE9hprPwPAmx",
+	"json": "{\"id\":\"9i2JE9hprPwPAmx\",\"url\":\"https://www.chhs.ca.gov/blog/2019/10/27/new-hotline-available-to-help-californias-most-vulnerable-during-power-shutoffs/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2019/10/27/new-hotline-available-to-help-californias-most-vulnerable-during-power-shutoffs/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2019/10/27/new-hotline-available-to-help-californias-most-vulnerable-during-power-shutoffs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:15.333Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chhs.ca.gov/blog/2019/10/27/new-hotline-available-to-help-californias-most-vulnerable-during-power-shutoffs",
+	"url": "https://www.chhs.ca.gov/blog/2019/10/27/new-hotline-available-to-help-californias-most-vulnerable-during-power-shutoffs/"
+}

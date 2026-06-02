@@ -1,0 +1,9 @@
+{
+	"id": "iCFRHoD1BAtQ9WD",
+	"json": "{\"id\":\"iCFRHoD1BAtQ9WD\",\"url\":\"https://www.dds.ca.gov/newsletter/growing-independence-with-technology-pilot-shows-positive-results/\",\"loadedUrl\":\"https://www.dds.ca.gov/newsletter/growing-independence-with-technology-pilot-shows-positive-results/\",\"uniqueKey\":\"https://www.dds.ca.gov/newsletter/growing-independence-with-technology-pilot-shows-positive-results\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:00.519Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/newsletter/growing-independence-with-technology-pilot-shows-positive-results",
+	"url": "https://www.dds.ca.gov/newsletter/growing-independence-with-technology-pilot-shows-positive-results/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "bdTUGv3NS8wLzY5",
+	"json": "{\"id\":\"bdTUGv3NS8wLzY5\",\"url\":\"https://rarediseases.org/organizations/chromosome-18-registry-research-society/\",\"loadedUrl\":\"https://rarediseases.org/organizations/chromosome-18-registry-research-society/\",\"uniqueKey\":\"https://rarediseases.org/organizations/chromosome-18-registry-research-society\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:15:39.114Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/organizations/chromosome-18-registry-research-society",
+	"url": "https://rarediseases.org/organizations/chromosome-18-registry-research-society/"
+}

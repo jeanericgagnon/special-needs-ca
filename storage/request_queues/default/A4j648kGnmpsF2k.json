@@ -1,0 +1,9 @@
+{
+	"id": "A4j648kGnmpsF2k",
+	"json": "{\"id\":\"A4j648kGnmpsF2k\",\"url\":\"https://give.ucdavis.edu/VWHC/324423\",\"loadedUrl\":\"https://give.ucdavis.edu/VWHC/324423\",\"uniqueKey\":\"https://give.ucdavis.edu/VWHC/324423\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:54.383Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/VWHC/324423",
+	"url": "https://give.ucdavis.edu/VWHC/324423"
+}

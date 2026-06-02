@@ -1,0 +1,9 @@
+{
+	"id": "ymwZPdnFNX1OXLN",
+	"json": "{\"id\":\"ymwZPdnFNX1OXLN\",\"url\":\"https://rarediseases.org/living-with-a-rare-disease/find-clinical-trials/\",\"loadedUrl\":\"https://rarediseases.org/living-with-a-rare-disease/find-clinical-trials/\",\"uniqueKey\":\"https://rarediseases.org/living-with-a-rare-disease/find-clinical-trials\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:57:23.826Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/living-with-a-rare-disease/find-clinical-trials",
+	"url": "https://rarediseases.org/living-with-a-rare-disease/find-clinical-trials/"
+}

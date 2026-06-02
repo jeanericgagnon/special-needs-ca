@@ -1,0 +1,9 @@
+{
+	"id": "GbRiXvCVlW31YrV",
+	"json": "{\"id\":\"GbRiXvCVlW31YrV\",\"url\":\"https://www.ucdavis.edu/colleges-and-schools/graduate-studies\",\"loadedUrl\":\"https://www.ucdavis.edu/colleges-and-schools/graduate-studies\",\"uniqueKey\":\"https://www.ucdavis.edu/colleges-and-schools/graduate-studies\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:44.816Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ucdavis.edu/colleges-and-schools/graduate-studies",
+	"url": "https://www.ucdavis.edu/colleges-and-schools/graduate-studies"
+}

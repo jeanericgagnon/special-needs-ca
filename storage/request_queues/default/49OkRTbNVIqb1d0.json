@@ -1,0 +1,9 @@
+{
+	"id": "49OkRTbNVIqb1d0",
+	"json": "{\"id\":\"49OkRTbNVIqb1d0\",\"url\":\"https://www.csb-cde.ca.gov/resources/causesvl/cvl-myopia.aspx\",\"loadedUrl\":\"https://www.csb-cde.ca.gov/resources/causesvl/cvl-myopia.aspx\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/resources/causesvl/cvl-myopia.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:13.741Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csb-cde.ca.gov/resources/causesvl/cvl-myopia.aspx",
+	"url": "https://www.csb-cde.ca.gov/resources/causesvl/cvl-myopia.aspx"
+}

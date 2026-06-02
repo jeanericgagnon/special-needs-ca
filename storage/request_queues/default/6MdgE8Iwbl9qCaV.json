@@ -1,0 +1,9 @@
+{
+	"id": "6MdgE8Iwbl9qCaV",
+	"json": "{\"id\":\"6MdgE8Iwbl9qCaV\",\"url\":\"https://cnprc.ucdavis.edu/antibiotic-exposure-during-infancy-remodels-immune-response-respiratory-pathogens\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/antibiotic-exposure-during-infancy-remodels-immune-response-respiratory-pathogens\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/antibiotic-exposure-during-infancy-remodels-immune-response-respiratory-pathogens\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:16.537Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cnprc.ucdavis.edu/antibiotic-exposure-during-infancy-remodels-immune-response-respiratory-pathogens",
+	"url": "https://cnprc.ucdavis.edu/antibiotic-exposure-during-infancy-remodels-immune-response-respiratory-pathogens"
+}

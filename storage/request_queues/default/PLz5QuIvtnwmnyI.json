@@ -1,0 +1,9 @@
+{
+	"id": "PLz5QuIvtnwmnyI",
+	"json": "{\"id\":\"PLz5QuIvtnwmnyI\",\"url\":\"https://rarediseases.org/rare-diseases/acute-eosinophilic-pneumonia/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/acute-eosinophilic-pneumonia/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/acute-eosinophilic-pneumonia\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:14:00.296Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/rare-diseases/acute-eosinophilic-pneumonia",
+	"url": "https://rarediseases.org/rare-diseases/acute-eosinophilic-pneumonia/"
+}

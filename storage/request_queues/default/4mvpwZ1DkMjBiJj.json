@@ -1,0 +1,9 @@
+{
+	"id": "4mvpwZ1DkMjBiJj",
+	"json": "{\"id\":\"4mvpwZ1DkMjBiJj\",\"url\":\"https://cmgi.ucdavis.edu/facility-use/using-the-facility-overview/schedule-a-study/\",\"loadedUrl\":\"https://cmgi.ucdavis.edu/schedule-a-study/\",\"uniqueKey\":\"https://cmgi.ucdavis.edu/facility-use/using-the-facility-overview/schedule-a-study\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:09.280Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cmgi.ucdavis.edu/facility-use/using-the-facility-overview/schedule-a-study",
+	"url": "https://cmgi.ucdavis.edu/facility-use/using-the-facility-overview/schedule-a-study/"
+}

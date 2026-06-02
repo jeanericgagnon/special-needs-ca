@@ -1,0 +1,9 @@
+{
+	"id": "OUnRhWXRMycMJl9",
+	"json": "{\"id\":\"OUnRhWXRMycMJl9\",\"url\":\"https://rarediseases.org/news/?taxonomy[category]=rdca-dap-partnerships\",\"loadedUrl\":\"https://rarediseases.org/news/?taxonomy[category]=rdca-dap-partnerships\",\"uniqueKey\":\"https://rarediseases.org/news?taxonomy%5Bcategory%5D=rdca-dap-partnerships\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:20:06.007Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/news?taxonomy%5Bcategory%5D=rdca-dap-partnerships",
+	"url": "https://rarediseases.org/news/?taxonomy[category]=rdca-dap-partnerships"
+}

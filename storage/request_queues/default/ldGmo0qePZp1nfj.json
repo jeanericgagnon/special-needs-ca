@@ -1,0 +1,9 @@
+{
+	"id": "ldGmo0qePZp1nfj",
+	"json": "{\"id\":\"ldGmo0qePZp1nfj\",\"url\":\"https://www.ssa.gov/OACT/COLA/index.html\",\"loadedUrl\":\"https://www.ssa.gov/OACT/COLA/index.html\",\"uniqueKey\":\"https://www.ssa.gov/OACT/COLA/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:15.370Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ssa.gov/OACT/COLA/index.html",
+	"url": "https://www.ssa.gov/OACT/COLA/index.html"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "xiLqWesn1PTOJr2",
+	"json": "{\"id\":\"xiLqWesn1PTOJr2\",\"url\":\"https://rarediseases.org/organizations/amyloidosis-support-groups/\",\"loadedUrl\":\"https://rarediseases.org/organizations/amyloidosis-support-groups/\",\"uniqueKey\":\"https://rarediseases.org/organizations/amyloidosis-support-groups\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:14:37.304Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/organizations/amyloidosis-support-groups",
+	"url": "https://rarediseases.org/organizations/amyloidosis-support-groups/"
+}

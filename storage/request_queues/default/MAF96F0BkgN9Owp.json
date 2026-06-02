@@ -1,0 +1,9 @@
+{
+	"id": "MAF96F0BkgN9Owp",
+	"json": "{\"id\":\"MAF96F0BkgN9Owp\",\"url\":\"https://www.ctc.ca.gov/employers/assignment-resources/services/librarian-media/library-assignments/#main-content\",\"loadedUrl\":\"https://www.ctc.ca.gov/employers/assignment-resources/services/librarian-media/library-assignments/#main-content\",\"uniqueKey\":\"https://www.ctc.ca.gov/employers/assignment-resources/services/librarian-media/library-assignments\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:58.275Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ctc.ca.gov/employers/assignment-resources/services/librarian-media/library-assignments",
+	"url": "https://www.ctc.ca.gov/employers/assignment-resources/services/librarian-media/library-assignments/#main-content"
+}

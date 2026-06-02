@@ -1,0 +1,9 @@
+{
+	"id": "MiUrrg2vqgt024O",
+	"json": "{\"id\":\"MiUrrg2vqgt024O\",\"url\":\"https://frcnca.org/calendar/\",\"loadedUrl\":\"https://frcnca.org/calendar/\",\"uniqueKey\":\"https://frcnca.org/calendar\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:32.528Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://frcnca.org/calendar",
+	"url": "https://frcnca.org/calendar/"
+}

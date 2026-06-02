@@ -1,0 +1,9 @@
+{
+	"id": "kbJ7O45C2cRi4Lg",
+	"json": "{\"id\":\"kbJ7O45C2cRi4Lg\",\"url\":\"https://cdtfa.ca.gov/jobs/\",\"loadedUrl\":\"https://cdtfa.ca.gov/jobs/\",\"uniqueKey\":\"https://cdtfa.ca.gov/jobs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:45.010Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdtfa.ca.gov/jobs",
+	"url": "https://cdtfa.ca.gov/jobs/"
+}

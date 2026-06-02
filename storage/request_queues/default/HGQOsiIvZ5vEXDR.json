@@ -1,0 +1,9 @@
+{
+	"id": "HGQOsiIvZ5vEXDR",
+	"json": "{\"id\":\"HGQOsiIvZ5vEXDR\",\"url\":\"https://cdss.ca.gov/inforesources/Foster-Care/CANS/Training-and-Certification\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/foster-care/cans/training-and-certification\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Foster-Care/CANS/Training-and-Certification\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:02.712Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/Foster-Care/CANS/Training-and-Certification",
+	"url": "https://cdss.ca.gov/inforesources/Foster-Care/CANS/Training-and-Certification"
+}

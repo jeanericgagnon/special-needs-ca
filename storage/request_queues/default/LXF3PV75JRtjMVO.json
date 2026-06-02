@@ -1,0 +1,9 @@
+{
+	"id": "LXF3PV75JRtjMVO",
+	"json": "{\"id\":\"LXF3PV75JRtjMVO\",\"url\":\"https://www.csdr-cde.ca.gov/technology/\",\"loadedUrl\":\"https://www.csdr-cde.ca.gov/technology/\",\"uniqueKey\":\"https://www.csdr-cde.ca.gov/technology\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:11.591Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csdr-cde.ca.gov/technology",
+	"url": "https://www.csdr-cde.ca.gov/technology/"
+}

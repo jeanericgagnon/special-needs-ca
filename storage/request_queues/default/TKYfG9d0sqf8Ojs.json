@@ -1,0 +1,9 @@
+{
+	"id": "TKYfG9d0sqf8Ojs",
+	"json": "{\"id\":\"TKYfG9d0sqf8Ojs\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/SACB/Pages/Naloxone-Terms-and-Conditions.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/SACB/Pages/Naloxone-Terms-and-Conditions.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/SACB/Pages/Naloxone-Terms-and-Conditions.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:02:27.643Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/SACB/Pages/Naloxone-Terms-and-Conditions.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/SACB/Pages/Naloxone-Terms-and-Conditions.aspx"
+}

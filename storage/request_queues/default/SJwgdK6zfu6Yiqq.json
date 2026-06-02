@@ -1,0 +1,9 @@
+{
+	"id": "SJwgdK6zfu6Yiqq",
+	"json": "{\"id\":\"SJwgdK6zfu6Yiqq\",\"url\":\"https://health.ucdavis.edu/news/headlines/conversations-that-matter-making-advance-care-planning-standard-care/2026/04\",\"loadedUrl\":\"https://health.ucdavis.edu/news/headlines/conversations-that-matter-making-advance-care-planning-standard-care/2026/04\",\"uniqueKey\":\"https://health.ucdavis.edu/news/headlines/conversations-that-matter-making-advance-care-planning-standard-care/2026/04\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:47:16.769Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/news/headlines/conversations-that-matter-making-advance-care-planning-standard-care/2026/04",
+	"url": "https://health.ucdavis.edu/news/headlines/conversations-that-matter-making-advance-care-planning-standard-care/2026/04"
+}

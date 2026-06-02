@@ -1,0 +1,9 @@
+{
+	"id": "Gi7ACm7uGz5JJn0",
+	"json": "{\"id\":\"Gi7ACm7uGz5JJn0\",\"url\":\"https://health.ucdavis.edu/awards/rss/aboutus\",\"loadedUrl\":\"https://health.ucdavis.edu/awards/rss/aboutus\",\"uniqueKey\":\"https://health.ucdavis.edu/awards/rss/aboutus\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:43.554Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/awards/rss/aboutus",
+	"url": "https://health.ucdavis.edu/awards/rss/aboutus"
+}

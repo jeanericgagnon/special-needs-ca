@@ -1,0 +1,9 @@
+{
+	"id": "nRijbobCCI8T3R9",
+	"json": "{\"id\":\"nRijbobCCI8T3R9\",\"url\":\"https://leginfo.legislature.ca.gov/faces/codes.xhtml\",\"loadedUrl\":\"https://leginfo.legislature.ca.gov/faces/codes.xhtml\",\"uniqueKey\":\"https://leginfo.legislature.ca.gov/faces/codes.xhtml\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:16.450Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://leginfo.legislature.ca.gov/faces/codes.xhtml",
+	"url": "https://leginfo.legislature.ca.gov/faces/codes.xhtml"
+}

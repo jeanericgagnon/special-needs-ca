@@ -1,0 +1,9 @@
+{
+	"id": "cnbiGWDc22Icu4Y",
+	"json": "{\"id\":\"cnbiGWDc22Icu4Y\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/820/mark-lee---orthopaedic-surgery---trauma-sacramento/\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/820/mark-lee---orthopaedic-surgery---trauma-sacramento/\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/820/mark-lee---orthopaedic-surgery---trauma-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:13.366Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/820/mark-lee---orthopaedic-surgery---trauma-sacramento",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/820/mark-lee---orthopaedic-surgery---trauma-sacramento/"
+}

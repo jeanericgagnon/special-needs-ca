@@ -1,0 +1,9 @@
+{
+	"id": "rmaeSheqwgBrMgJ",
+	"json": "{\"id\":\"rmaeSheqwgBrMgJ\",\"url\":\"https://health.ucdavis.edu/leadership/bios/Bleichner-Jones\",\"loadedUrl\":\"https://health.ucdavis.edu/leadership/bios/Bleichner-Jones\",\"uniqueKey\":\"https://health.ucdavis.edu/leadership/bios/Bleichner-Jones\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:06.778Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/leadership/bios/Bleichner-Jones",
+	"url": "https://health.ucdavis.edu/leadership/bios/Bleichner-Jones"
+}

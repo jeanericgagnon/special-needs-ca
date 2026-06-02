@@ -1,0 +1,9 @@
+{
+	"id": "ovt6Gez48VNQb9I",
+	"json": "{\"id\":\"ovt6Gez48VNQb9I\",\"url\":\"https://www.dental.dhcs.ca.gov/Privacy_Policy/PrivacyPolicy\",\"loadedUrl\":\"https://www.dental.dhcs.ca.gov/Privacy_Policy/PrivacyPolicy\",\"uniqueKey\":\"https://www.dental.dhcs.ca.gov/Privacy_Policy/PrivacyPolicy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T17:27:10.500Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dental.dhcs.ca.gov/Privacy_Policy/PrivacyPolicy",
+	"url": "https://www.dental.dhcs.ca.gov/Privacy_Policy/PrivacyPolicy"
+}

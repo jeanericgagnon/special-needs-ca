@@ -1,0 +1,9 @@
+{
+	"id": "IqCB6JMLp3fHkZd",
+	"json": "{\"id\":\"IqCB6JMLp3fHkZd\",\"url\":\"https://www.dds.ca.gov/services/early-start/annual-part-c-grant-application/\",\"loadedUrl\":\"https://www.dds.ca.gov/services/early-start/annual-part-c-grant-application/\",\"uniqueKey\":\"https://www.dds.ca.gov/services/early-start/annual-part-c-grant-application\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:25.778Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/services/early-start/annual-part-c-grant-application",
+	"url": "https://www.dds.ca.gov/services/early-start/annual-part-c-grant-application/"
+}

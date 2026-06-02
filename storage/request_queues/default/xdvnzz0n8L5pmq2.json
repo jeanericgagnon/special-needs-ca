@@ -1,0 +1,9 @@
+{
+	"id": "xdvnzz0n8L5pmq2",
+	"json": "{\"id\":\"xdvnzz0n8L5pmq2\",\"url\":\"https://rarediseases.org/es/news/\",\"loadedUrl\":\"https://rarediseases.org/es/news/\",\"uniqueKey\":\"https://rarediseases.org/es/news\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:24:22.688Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/es/news",
+	"url": "https://rarediseases.org/es/news/"
+}

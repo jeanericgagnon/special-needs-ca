@@ -1,0 +1,9 @@
+{
+	"id": "aw1FAU3lqHHs5iN",
+	"json": "{\"id\":\"aw1FAU3lqHHs5iN\",\"url\":\"https://www.csb-cde.ca.gov/studentlife/calendars/daystudenttransportation.aspx\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=2a0d21f8-4ff2-43bc-8e71-52fb2ad3b5b2&ssb=59975266633&ssc=https%3A%2F%2Fwww.csb-cde.ca.gov%2Fstudentlife%2Fcalendars%2Fdaystudenttransportation.aspx&ssi=fa0480cf-cuez-4f19-9739-9338c937c980&ssk=botmanager_support@radware.com&ssm=05662791375746500106578502806743&ssn=4cb01e5348913b19f0c768786763dbc5f5b850ed0394-2737-495a-9cc69c&sso=252cb02c-c9eaeee87660e3e5d911b3ce43080e4d944bdc8d54abc648&ssp=46003840711780306939178031038849732&ssq=35192432590841024979625908203687202383365&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDA1MGVkMDM5NC0yNzM3LTQ5NWEtOTAyYy1jOWVhZWVlODc2NjAxLTE3ODAzMjU5MDgxNjkwLTAwMzk2ZTY0YTQ1ODRjYmZjOWIxMCIsInV6bXgiOiI3ZjkwMDA4NDZlNTMwMy04YWViLTQ3YmMtOTkyMy1hNDFlMTA2MjQ5YzQxLTE3ODAzMjU5MDgxNjkwLWQ0YzE3YmMzMjRhNmFjZWMxMCIsInJkIjoiY2EuZ292In0=\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/studentlife/calendars/daystudenttransportation.aspx\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T14:58:28.288Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csb-cde.ca.gov/studentlife/calendars/daystudenttransportation.aspx",
+	"url": "https://www.csb-cde.ca.gov/studentlife/calendars/daystudenttransportation.aspx"
+}

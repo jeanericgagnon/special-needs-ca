@@ -1,0 +1,9 @@
+{
+	"id": "OEf5Z9iApHZMAUE",
+	"json": "{\"id\":\"OEf5Z9iApHZMAUE\",\"url\":\"https://physicians.ucdavis.edu/details/42548/tanya-rinderknecht-acute_care_surgery-surgical_critical_care-trauma-sacramento?Specialties=10437\",\"loadedUrl\":\"https://physicians.ucdavis.edu/details/42548/tanya-rinderknecht-acute_care_surgery-surgical_critical_care-trauma-sacramento?Specialties=10437\",\"uniqueKey\":\"https://physicians.ucdavis.edu/details/42548/tanya-rinderknecht-acute_care_surgery-surgical_critical_care-trauma-sacramento?Specialties=10437\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:33:02.840Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://physicians.ucdavis.edu/details/42548/tanya-rinderknecht-acute_care_surgery-surgical_critical_care-trauma-sacramento?Specialties=10437",
+	"url": "https://physicians.ucdavis.edu/details/42548/tanya-rinderknecht-acute_care_surgery-surgical_critical_care-trauma-sacramento?Specialties=10437"
+}

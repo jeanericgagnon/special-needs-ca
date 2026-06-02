@@ -1,0 +1,9 @@
+{
+	"id": "UckZMvkZD0r0iUa",
+	"json": "{\"id\":\"UckZMvkZD0r0iUa\",\"url\":\"https://give.ucdavis.edu/MEDI/DBPGIFT\",\"loadedUrl\":\"https://give.ucdavis.edu/MEDI/DBPGIFT\",\"uniqueKey\":\"https://give.ucdavis.edu/MEDI/DBPGIFT\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:45.504Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/MEDI/DBPGIFT",
+	"url": "https://give.ucdavis.edu/MEDI/DBPGIFT"
+}

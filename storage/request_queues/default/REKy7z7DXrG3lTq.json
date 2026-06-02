@@ -1,0 +1,9 @@
+{
+	"id": "REKy7z7DXrG3lTq",
+	"json": "{\"id\":\"REKy7z7DXrG3lTq\",\"url\":\"https://www.cde.ca.gov/re/mo/cameals.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/re/mo/cameals.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/re/mo/cameals.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:00.161Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/re/mo/cameals.asp",
+	"url": "https://www.cde.ca.gov/re/mo/cameals.asp"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "9JDtLVV7rM6sMys",
+	"json": "{\"id\":\"9JDtLVV7rM6sMys\",\"url\":\"https://www.dds.ca.gov/individuals-and-families/\",\"loadedUrl\":\"https://www.dds.ca.gov/individuals-and-families/\",\"uniqueKey\":\"https://www.dds.ca.gov/individuals-and-families\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:17.163Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/individuals-and-families",
+	"url": "https://www.dds.ca.gov/individuals-and-families/"
+}

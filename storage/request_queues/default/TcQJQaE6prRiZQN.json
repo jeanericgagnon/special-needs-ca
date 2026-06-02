@@ -1,0 +1,9 @@
+{
+	"id": "TcQJQaE6prRiZQN",
+	"json": "{\"id\":\"TcQJQaE6prRiZQN\",\"url\":\"https://www.chhs.ca.gov/blog/2022/04/08/rfi2-otc-antigen-test/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2022/04/08/rfi2-otc-antigen-test/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2022/04/08/rfi2-otc-antigen-test\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:17.346Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chhs.ca.gov/blog/2022/04/08/rfi2-otc-antigen-test",
+	"url": "https://www.chhs.ca.gov/blog/2022/04/08/rfi2-otc-antigen-test/"
+}

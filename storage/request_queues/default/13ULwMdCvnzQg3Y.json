@@ -1,0 +1,9 @@
+{
+	"id": "13ULwMdCvnzQg3Y",
+	"json": "{\"id\":\"13ULwMdCvnzQg3Y\",\"url\":\"https://health.ucdavis.edu/family-caregiving/education/\",\"loadedUrl\":\"https://health.ucdavis.edu/family-caregiving/education/\",\"uniqueKey\":\"https://health.ucdavis.edu/family-caregiving/education\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:57.502Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/family-caregiving/education",
+	"url": "https://health.ucdavis.edu/family-caregiving/education/"
+}

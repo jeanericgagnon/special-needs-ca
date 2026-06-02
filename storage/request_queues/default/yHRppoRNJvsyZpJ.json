@@ -1,0 +1,9 @@
+{
+	"id": "yHRppoRNJvsyZpJ",
+	"json": "{\"id\":\"yHRppoRNJvsyZpJ\",\"url\":\"https://health.ucdavis.edu/media-resources/contenthub/health-news/2023/05/body/2023-06-29_Magnet87.jpg\",\"loadedUrl\":\"https://health.ucdavis.edu/media-resources/contenthub/health-news/2023/05/body/2023-06-29_Magnet87.jpg\",\"uniqueKey\":\"https://health.ucdavis.edu/media-resources/contenthub/health-news/2023/05/body/2023-06-29_Magnet87.jpg\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:33.561Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/media-resources/contenthub/health-news/2023/05/body/2023-06-29_Magnet87.jpg",
+	"url": "https://health.ucdavis.edu/media-resources/contenthub/health-news/2023/05/body/2023-06-29_Magnet87.jpg"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "B0nZO7DNf0aBzLW",
+	"json": "{\"id\":\"B0nZO7DNf0aBzLW\",\"url\":\"https://health.ucdavis.edu/nursing/academics/programs/certificate-programs.html\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/academics/programs/certificate-programs.html\",\"uniqueKey\":\"https://health.ucdavis.edu/nursing/academics/programs/certificate-programs.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:56.653Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/nursing/academics/programs/certificate-programs.html",
+	"url": "https://health.ucdavis.edu/nursing/academics/programs/certificate-programs.html"
+}

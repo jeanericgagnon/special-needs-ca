@@ -1,0 +1,9 @@
+{
+	"id": "3d6aCnY0aiddcZR",
+	"json": "{\"id\":\"3d6aCnY0aiddcZR\",\"url\":\"https://health.ucdavis.edu/children/team/188/dennis-styne-pediatric-endocrinology-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/children/team/188/dennis-styne-pediatric-endocrinology-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/children/team/188/dennis-styne-pediatric-endocrinology-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:12.350Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/children/team/188/dennis-styne-pediatric-endocrinology-sacramento",
+	"url": "https://health.ucdavis.edu/children/team/188/dennis-styne-pediatric-endocrinology-sacramento"
+}

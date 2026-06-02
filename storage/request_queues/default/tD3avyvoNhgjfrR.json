@@ -1,0 +1,9 @@
+{
+	"id": "tD3avyvoNhgjfrR",
+	"json": "{\"id\":\"tD3avyvoNhgjfrR\",\"url\":\"https://calable.ca.gov/faqs?tag=opening-an-account\",\"loadedUrl\":\"https://calable.ca.gov/faqs?tag=opening-an-account\",\"uniqueKey\":\"https://calable.ca.gov/faqs?tag=opening-an-account\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:48.570Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://calable.ca.gov/faqs?tag=opening-an-account",
+	"url": "https://calable.ca.gov/faqs?tag=opening-an-account"
+}

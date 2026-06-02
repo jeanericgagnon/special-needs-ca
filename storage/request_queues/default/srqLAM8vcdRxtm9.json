@@ -1,0 +1,9 @@
+{
+	"id": "srqLAM8vcdRxtm9",
+	"json": "{\"id\":\"srqLAM8vcdRxtm9\",\"url\":\"https://hr.ucdavis.edu/careers/apply?format=json&keywords=&Category%5Bcategory_id%5D=&MCampus%5B%5D=DV\",\"loadedUrl\":\"https://hr.ucdavis.edu/careers/apply?Category%5Bcategory_id%5D=&MCampus%5B0%5D=DV&format=json&keywords=\",\"uniqueKey\":\"https://hr.ucdavis.edu/careers/apply?Category%5Bcategory_id%5D=&MCampus%5B%5D=DV&format=json&keywords=\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:52.325Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/careers/apply?Category%5Bcategory_id%5D=&MCampus%5B%5D=DV&format=json&keywords=",
+	"url": "https://hr.ucdavis.edu/careers/apply?format=json&keywords=&Category%5Bcategory_id%5D=&MCampus%5B%5D=DV"
+}

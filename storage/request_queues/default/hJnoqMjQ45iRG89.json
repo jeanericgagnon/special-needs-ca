@@ -1,0 +1,9 @@
+{
+	"id": "hJnoqMjQ45iRG89",
+	"json": "{\"id\":\"hJnoqMjQ45iRG89\",\"url\":\"https://biology.ucdavis.edu/undergraduate/majors-minors\",\"loadedUrl\":\"https://biology.ucdavis.edu/undergraduate/majors-minors\",\"uniqueKey\":\"https://biology.ucdavis.edu/undergraduate/majors-minors\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:14.620Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://biology.ucdavis.edu/undergraduate/majors-minors",
+	"url": "https://biology.ucdavis.edu/undergraduate/majors-minors"
+}

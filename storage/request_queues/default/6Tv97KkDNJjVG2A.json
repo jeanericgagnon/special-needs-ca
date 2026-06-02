@@ -1,0 +1,9 @@
+{
+	"id": "6Tv97KkDNJjVG2A",
+	"json": "{\"id\":\"6Tv97KkDNJjVG2A\",\"url\":\"https://www.parks.ca.gov/AvailabilityInfo\",\"loadedUrl\":\"https://www.parks.ca.gov/AvailabilityInfo\",\"uniqueKey\":\"https://www.parks.ca.gov/AvailabilityInfo\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:41.821Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.parks.ca.gov/AvailabilityInfo",
+	"url": "https://www.parks.ca.gov/AvailabilityInfo"
+}

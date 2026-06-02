@@ -1,0 +1,9 @@
+{
+	"id": "KdVRQA8rtvb4vvP",
+	"json": "{\"id\":\"KdVRQA8rtvb4vvP\",\"url\":\"https://www.dhcs.ca.gov/services/medi-cal/Pages/CountyOffices.aspx\",\"loadedUrl\":\"https://www.dhcs.ca.gov/services/medi-cal/Pages/CountyOffices.aspx\",\"uniqueKey\":\"https://www.dhcs.ca.gov/services/medi-cal/Pages/CountyOffices.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:48.925Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dhcs.ca.gov/services/medi-cal/Pages/CountyOffices.aspx",
+	"url": "https://www.dhcs.ca.gov/services/medi-cal/Pages/CountyOffices.aspx"
+}

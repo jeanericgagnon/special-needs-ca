@@ -1,0 +1,9 @@
+{
+	"id": "kne7KUp3ZaajGhb",
+	"json": "{\"id\":\"kne7KUp3ZaajGhb\",\"url\":\"https://www.cdph.ca.gov/Programs/cls/dehl/fdl/Pages/Food-and-Drug-Laboratory-Branch.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/cls/dehl/fdl/Pages/Food-and-Drug-Laboratory-Branch.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/cls/dehl/fdl/Pages/Food-and-Drug-Laboratory-Branch.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:03:22.301Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/cls/dehl/fdl/Pages/Food-and-Drug-Laboratory-Branch.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/cls/dehl/fdl/Pages/Food-and-Drug-Laboratory-Branch.aspx"
+}

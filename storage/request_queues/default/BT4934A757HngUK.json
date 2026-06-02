@@ -1,0 +1,9 @@
+{
+	"id": "BT4934A757HngUK",
+	"json": "{\"id\":\"BT4934A757HngUK\",\"url\":\"https://scdd.ca.gov/pos-service-code/physical-therapy/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/physical-therapy/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/physical-therapy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:43.178Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/pos-service-code/physical-therapy",
+	"url": "https://scdd.ca.gov/pos-service-code/physical-therapy/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "8uZbXR0HxFmYQiL",
+	"json": "{\"id\":\"8uZbXR0HxFmYQiL\",\"url\":\"http://www.cdss.ca.gov/benefits-services/food-nutrition-services/calfresh/frequently-asked-questions-es\",\"loadedUrl\":\"https://www.cdss.ca.gov/benefits-services/food-nutrition-services/calfresh/frequently-asked-questions-es\",\"uniqueKey\":\"http://www.cdss.ca.gov/benefits-services/food-nutrition-services/calfresh/frequently-asked-questions-es\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:30.739Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.cdss.ca.gov/benefits-services/food-nutrition-services/calfresh/frequently-asked-questions-es",
+	"url": "http://www.cdss.ca.gov/benefits-services/food-nutrition-services/calfresh/frequently-asked-questions-es"
+}

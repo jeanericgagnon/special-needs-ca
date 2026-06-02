@@ -1,0 +1,9 @@
+{
+	"id": "RQnpbho2FUIziEZ",
+	"json": "{\"id\":\"RQnpbho2FUIziEZ\",\"url\":\"https://www.dgs.ca.gov/CCDA/About-Us\",\"loadedUrl\":\"https://www.dgs.ca.gov/CCDA/About-Us\",\"uniqueKey\":\"https://www.dgs.ca.gov/CCDA/About-Us\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:06.816Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dgs.ca.gov/CCDA/About-Us",
+	"url": "https://www.dgs.ca.gov/CCDA/About-Us"
+}

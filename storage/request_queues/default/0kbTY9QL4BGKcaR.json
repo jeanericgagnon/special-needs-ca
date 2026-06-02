@@ -1,0 +1,9 @@
+{
+	"id": "0kbTY9QL4BGKcaR",
+	"json": "{\"id\":\"0kbTY9QL4BGKcaR\",\"url\":\"https://health.ucdavis.edu/medical-center/about/contact/\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-center/about/contact/\",\"uniqueKey\":\"https://health.ucdavis.edu/medical-center/about/contact\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:37.240Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/medical-center/about/contact",
+	"url": "https://health.ucdavis.edu/medical-center/about/contact/"
+}

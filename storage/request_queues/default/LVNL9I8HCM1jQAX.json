@@ -1,0 +1,9 @@
+{
+	"id": "LVNL9I8HCM1jQAX",
+	"json": "{\"id\":\"LVNL9I8HCM1jQAX\",\"url\":\"https://www.ssa.gov/es/medicare\",\"loadedUrl\":\"https://www.ssa.gov/es/medicare\",\"uniqueKey\":\"https://www.ssa.gov/es/medicare\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:36.688Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ssa.gov/es/medicare",
+	"url": "https://www.ssa.gov/es/medicare"
+}

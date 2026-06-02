@@ -1,0 +1,9 @@
+{
+	"id": "HYneDGb5Fe3ae7f",
+	"json": "{\"id\":\"HYneDGb5Fe3ae7f\",\"url\":\"https://health.ucdavis.edu/nursing/about_us/students/Student_distinctions/student_pages/Alumna_profile_Jacquie_DeMellow.html\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/about_us/students/Student_distinctions/student_pages/Alumna_profile_Jacquie_DeMellow.html\",\"uniqueKey\":\"https://health.ucdavis.edu/nursing/about_us/students/Student_distinctions/student_pages/Alumna_profile_Jacquie_DeMellow.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:17.109Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/nursing/about_us/students/Student_distinctions/student_pages/Alumna_profile_Jacquie_DeMellow.html",
+	"url": "https://health.ucdavis.edu/nursing/about_us/students/Student_distinctions/student_pages/Alumna_profile_Jacquie_DeMellow.html"
+}

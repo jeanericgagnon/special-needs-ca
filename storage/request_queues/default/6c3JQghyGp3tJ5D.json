@@ -1,0 +1,9 @@
+{
+	"id": "6c3JQghyGp3tJ5D",
+	"json": "{\"id\":\"6c3JQghyGp3tJ5D\",\"url\":\"https://health.ucdavis.edu/mind-institute/news/headlines/building-a-more-sustainable-health-care-model/2026/03\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/news/headlines/building-a-more-sustainable-health-care-model/2026/03\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/news/headlines/building-a-more-sustainable-health-care-model/2026/03\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:13.923Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mind-institute/news/headlines/building-a-more-sustainable-health-care-model/2026/03",
+	"url": "https://health.ucdavis.edu/mind-institute/news/headlines/building-a-more-sustainable-health-care-model/2026/03"
+}

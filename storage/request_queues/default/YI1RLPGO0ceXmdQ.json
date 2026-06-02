@@ -1,0 +1,9 @@
+{
+	"id": "YI1RLPGO0ceXmdQ",
+	"json": "{\"id\":\"YI1RLPGO0ceXmdQ\",\"url\":\"https://health.ucdavis.edu/graduate-medical-education/current-residents-fellows/gme-policies\",\"loadedUrl\":\"https://health.ucdavis.edu/graduate-medical-education/current-residents-fellows/gme-policies\",\"uniqueKey\":\"https://health.ucdavis.edu/graduate-medical-education/current-residents-fellows/gme-policies\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:12.425Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/graduate-medical-education/current-residents-fellows/gme-policies",
+	"url": "https://health.ucdavis.edu/graduate-medical-education/current-residents-fellows/gme-policies"
+}

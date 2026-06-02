@@ -1,0 +1,9 @@
+{
+	"id": "fZ3hMRja8YgkOh7",
+	"json": "{\"id\":\"fZ3hMRja8YgkOh7\",\"url\":\"https://www.cdss.ca.gov/inforesources/Data-Portal/Plans/TANF-State-Plan\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/data-portal/state-plans/tanf-state-plan\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/Data-Portal/Plans/TANF-State-Plan\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:05.459Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/inforesources/Data-Portal/Plans/TANF-State-Plan",
+	"url": "https://www.cdss.ca.gov/inforesources/Data-Portal/Plans/TANF-State-Plan"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "u82u03H0VWCxTRV",
+	"json": "{\"id\":\"u82u03H0VWCxTRV\",\"url\":\"https://rarediseases.org/rare-diseases/klippel-feil-syndrome/#complete-report\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/klippel-feil-syndrome/#complete-report\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/klippel-feil-syndrome\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:10:46.432Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/rare-diseases/klippel-feil-syndrome",
+	"url": "https://rarediseases.org/rare-diseases/klippel-feil-syndrome/#complete-report"
+}

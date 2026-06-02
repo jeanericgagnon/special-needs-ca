@@ -1,0 +1,9 @@
+{
+	"id": "EdMEn4mulaHkdgv",
+	"json": "{\"id\":\"EdMEn4mulaHkdgv\",\"url\":\"https://www.csb-cde.ca.gov/about/events/caoms.aspx\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=97922a36-95b4-4a01-8af6-6dff253d8f32&ssb=78566280783&ssc=https%3A%2F%2Fwww.csb-cde.ca.gov%2Fabout%2Fevents%2Fcaoms.aspx&ssi=706c382f-cuez-4937-b455-acd3051574b3&ssk=botmanager_support@radware.com&ssm=66456388363680222109829679445869&ssn=1994136e4dd3e79f23779833f87c638338853b5673a7-9623-48fa-bd2eeb&sso=2e85e36b-d43a38ac2de6594100abb8735f49d4e63a16b6cd46551dfd&ssp=71990000441780374464178033500864958&ssq=45635912590668669055825906074467873994963&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDAzYjU2NzNhNy05NjIzLTQ4ZmEtYjM2Yi1kNDNhMzhhYzJkZTYxLTE3ODAzMjU5MDYxMDgwLTAwMzM2YzU0ZGFlNmM5ZDcyNmUxMCIsInV6bXgiOiI3ZjkwMDA3MzAxZjg1ZS0zZTZkLTQ0MjMtYTdhOS1mNWIwZjMxZjZlMzUxLTE3ODAzMjU5MDYxMDgwLWMyMTM5MDE1OTViMjJjZmUxMCIsInJkIjoiY2EuZ292In0=\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/about/events/caoms.aspx\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T14:58:26.231Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csb-cde.ca.gov/about/events/caoms.aspx",
+	"url": "https://www.csb-cde.ca.gov/about/events/caoms.aspx"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "RE4N6AgTP5QcCDU",
+	"json": "{\"id\":\"RE4N6AgTP5QcCDU\",\"url\":\"https://rarediseases.org/es/telemedicina-para-pacientes-y-cuidadores/solicitar-un-recurso/\",\"loadedUrl\":\"https://rarediseases.org/es/telemedicina-para-pacientes-y-cuidadores/solicitar-un-recurso/\",\"uniqueKey\":\"https://rarediseases.org/es/telemedicina-para-pacientes-y-cuidadores/solicitar-un-recurso\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:25:24.756Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/es/telemedicina-para-pacientes-y-cuidadores/solicitar-un-recurso",
+	"url": "https://rarediseases.org/es/telemedicina-para-pacientes-y-cuidadores/solicitar-un-recurso/"
+}

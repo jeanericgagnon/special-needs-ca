@@ -1,0 +1,9 @@
+{
+	"id": "48muGFOyILj2JAB",
+	"json": "{\"id\":\"48muGFOyILj2JAB\",\"url\":\"https://health.ucdavis.edu/cht/index.html\",\"loadedUrl\":\"https://health.ucdavis.edu/cht/index.html\",\"uniqueKey\":\"https://health.ucdavis.edu/cht/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:08.560Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/cht/index.html",
+	"url": "https://health.ucdavis.edu/cht/index.html"
+}

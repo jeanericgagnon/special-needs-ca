@@ -1,0 +1,9 @@
+{
+	"id": "iOebIZ8Vy4M00MN",
+	"json": "{\"id\":\"iOebIZ8Vy4M00MN\",\"url\":\"https://cdss.ca.gov/inforesources/Child-Care-Licensing/How-to-Become-Licensed/Register-for-an-Orientation\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/child-care-licensing/how-to-become-licensed/register-for-an-orientation\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Child-Care-Licensing/How-to-Become-Licensed/Register-for-an-Orientation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:41.585Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/Child-Care-Licensing/How-to-Become-Licensed/Register-for-an-Orientation",
+	"url": "https://cdss.ca.gov/inforesources/Child-Care-Licensing/How-to-Become-Licensed/Register-for-an-Orientation"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "mGOTSaLFvBhf44g",
+	"json": "{\"id\":\"mGOTSaLFvBhf44g\",\"url\":\"https://data.ca.gov/group/health-human-services\",\"loadedUrl\":\"https://data.ca.gov/group/health-human-services\",\"uniqueKey\":\"https://data.ca.gov/group/health-human-services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:14.061Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://data.ca.gov/group/health-human-services",
+	"url": "https://data.ca.gov/group/health-human-services"
+}

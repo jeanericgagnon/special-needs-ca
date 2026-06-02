@@ -1,0 +1,9 @@
+{
+	"id": "5Jdqcbhax0MDi7u",
+	"json": "{\"id\":\"5Jdqcbhax0MDi7u\",\"url\":\"https://hr.ucdavis.edu/cdn-cgi/l/email-protection#1a7268377b6a6a695a6f797e7b6c7369347f7e6f\",\"loadedUrl\":\"https://hr.ucdavis.edu/cdn-cgi/l/email-protection#1a7268377b6a6a695a6f797e7b6c7369347f7e6f\",\"uniqueKey\":\"https://hr.ucdavis.edu/cdn-cgi/l/email-protection\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:32.169Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/cdn-cgi/l/email-protection",
+	"url": "https://hr.ucdavis.edu/cdn-cgi/l/email-protection#1a7268377b6a6a695a6f797e7b6c7369347f7e6f"
+}

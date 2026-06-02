@@ -1,0 +1,9 @@
+{
+	"id": "czgQe6uoy62wlZQ",
+	"json": "{\"id\":\"czgQe6uoy62wlZQ\",\"url\":\"http://www.dir.ca.gov/dlse/districtoffices.htm\",\"loadedUrl\":\"http://www.dir.ca.gov/dlse/districtoffices.htm\",\"uniqueKey\":\"http://www.dir.ca.gov/dlse/districtoffices.htm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T17:27:55.708Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.dir.ca.gov/dlse/districtoffices.htm",
+	"url": "http://www.dir.ca.gov/dlse/districtoffices.htm"
+}

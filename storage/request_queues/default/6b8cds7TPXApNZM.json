@@ -1,0 +1,9 @@
+{
+	"id": "6b8cds7TPXApNZM",
+	"json": "{\"id\":\"6b8cds7TPXApNZM\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/21892/arthur-art-de_lorimier-pediatric_gastroenterology-pediatrics_general-citrus_heights-sacramento?FreeText:Last+name=de+Lorimier&SetSize=48\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/21892/arthur-art-de_lorimier-pediatric_gastroenterology-pediatrics_general-citrus_heights-sacramento?FreeText:Last+name=de+Lorimier&SetSize=48\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/21892/arthur-art-de_lorimier-pediatric_gastroenterology-pediatrics_general-citrus_heights-sacramento?FreeText%3ALast+name=de+Lorimier&SetSize=48\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:16.980Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/21892/arthur-art-de_lorimier-pediatric_gastroenterology-pediatrics_general-citrus_heights-sacramento?FreeText%3ALast+name=de+Lorimier&SetSize=48",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/21892/arthur-art-de_lorimier-pediatric_gastroenterology-pediatrics_general-citrus_heights-sacramento?FreeText:Last+name=de+Lorimier&SetSize=48"
+}

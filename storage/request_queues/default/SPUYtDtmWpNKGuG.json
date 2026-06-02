@@ -1,0 +1,9 @@
+{
+	"id": "SPUYtDtmWpNKGuG",
+	"json": "{\"id\":\"SPUYtDtmWpNKGuG\",\"url\":\"https://rarediseases.org/glybera-becomes-first-ever-gene-therapy-approved-in-europe/\",\"loadedUrl\":\"https://rarediseases.org/glybera-becomes-first-ever-gene-therapy-approved-in-europe/\",\"uniqueKey\":\"https://rarediseases.org/glybera-becomes-first-ever-gene-therapy-approved-in-europe\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:21:31.430Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/glybera-becomes-first-ever-gene-therapy-approved-in-europe",
+	"url": "https://rarediseases.org/glybera-becomes-first-ever-gene-therapy-approved-in-europe/"
+}

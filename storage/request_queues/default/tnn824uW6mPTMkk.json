@@ -1,0 +1,9 @@
+{
+	"id": "tnn824uW6mPTMkk",
+	"json": "{\"id\":\"tnn824uW6mPTMkk\",\"url\":\"https://www.library.ca.gov/collections/online-collections/\",\"loadedUrl\":\"https://www.library.ca.gov/collections/online-collections/\",\"uniqueKey\":\"https://www.library.ca.gov/collections/online-collections\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:17.320Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.library.ca.gov/collections/online-collections",
+	"url": "https://www.library.ca.gov/collections/online-collections/"
+}

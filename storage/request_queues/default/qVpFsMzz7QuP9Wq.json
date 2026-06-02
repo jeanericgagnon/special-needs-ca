@@ -1,0 +1,9 @@
+{
+	"id": "qVpFsMzz7QuP9Wq",
+	"json": "{\"id\":\"qVpFsMzz7QuP9Wq\",\"url\":\"https://www.cde.ca.gov/fg/fo/fm/generalassurances2024-25.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=905a5246-a576-434a-9ee5-181bef5b4e78&ssb=82853264265&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Ffg%2Ffo%2Ffm%2Fgeneralassurances2024-25.asp&ssi=4d601198-ctxv-498c-8ea6-0aa31f36f6d3&ssk=botmanager_support@radware.com&ssm=51822841558863475107750474396585&ssn=6fd109d644f54ca8950f2253887634c4af75c0973b71-22ba-4430-ad4000&sso=09f00bf3-b8db4a1d18631842209d8b1d39efded55245920ba674c2a0&ssp=80407288511780325311178030502453838&ssq=81047325581630328478955816771263554973197&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBjMDk3M2I3MS0yMmJhLTQ0MzAtYWJmMy1iOGRiNGExZDE4NjMxLTE3ODAzNTU4MTYzNjIwLTAwM2QyMDRiOGQ4NTk3MzU0NzIxMCIsInV6bXgiOiI3ZjkwMDAxMDlkOGI0Ny1jNTdiLTRkMzMtYTNhZC1mYTYzNjM3NDFhODkxLTE3ODAzNTU4MTYzNjIwLTA2YThjMzYxYjU3ZWYxNzUxMCIsInJkIjoiY2EuZ292In0=\",\"uniqueKey\":\"https://www.cde.ca.gov/fg/fo/fm/generalassurances2024-25.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T23:16:56.605Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/fg/fo/fm/generalassurances2024-25.asp",
+	"url": "https://www.cde.ca.gov/fg/fo/fm/generalassurances2024-25.asp"
+}

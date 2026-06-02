@@ -1,0 +1,9 @@
+{
+	"id": "rhrLWqZmitJrv0k",
+	"json": "{\"id\":\"rhrLWqZmitJrv0k\",\"url\":\"https://cdss.ca.gov/inforesources/CalFresh/Supplemental-Security-Income\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/calfresh/supplemental-security-income\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/CalFresh/Supplemental-Security-Income\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:58:57.700Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/CalFresh/Supplemental-Security-Income",
+	"url": "https://cdss.ca.gov/inforesources/CalFresh/Supplemental-Security-Income"
+}

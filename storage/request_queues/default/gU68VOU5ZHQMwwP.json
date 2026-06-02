@@ -1,0 +1,9 @@
+{
+	"id": "gU68VOU5ZHQMwwP",
+	"json": "{\"id\":\"gU68VOU5ZHQMwwP\",\"url\":\"https://www.cde.ca.gov/ci/hs/im/evalcriteriamapinstruct.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/hs/im/evalcriteriamapinstruct.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/hs/im/evalcriteriamapinstruct.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:38.955Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ci/hs/im/evalcriteriamapinstruct.asp",
+	"url": "https://www.cde.ca.gov/ci/hs/im/evalcriteriamapinstruct.asp"
+}

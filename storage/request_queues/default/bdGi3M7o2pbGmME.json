@@ -1,0 +1,9 @@
+{
+	"id": "bdGi3M7o2pbGmME",
+	"json": "{\"id\":\"bdGi3M7o2pbGmME\",\"url\":\"https://health.ucdavis.edu/pediatrics/\",\"loadedUrl\":\"https://health.ucdavis.edu/pediatrics/\",\"uniqueKey\":\"https://health.ucdavis.edu/pediatrics\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:18.144Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/pediatrics",
+	"url": "https://health.ucdavis.edu/pediatrics/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "AB4TZdT3LVX87Io",
+	"json": "{\"id\":\"AB4TZdT3LVX87Io\",\"url\":\"https://irb.ucdavis.edu/project-guidance/consent-documentation/\",\"loadedUrl\":\"https://irb.ucdavis.edu/project-guidance/consent-documentation/\",\"uniqueKey\":\"https://irb.ucdavis.edu/project-guidance/consent-documentation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:40.720Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://irb.ucdavis.edu/project-guidance/consent-documentation",
+	"url": "https://irb.ucdavis.edu/project-guidance/consent-documentation/"
+}

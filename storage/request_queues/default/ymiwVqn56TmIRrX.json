@@ -1,0 +1,9 @@
+{
+	"id": "ymiwVqn56TmIRrX",
+	"json": "{\"id\":\"ymiwVqn56TmIRrX\",\"url\":\"https://cmgi.ucdavis.edu/facility-use/using-the-facility-overview/\",\"loadedUrl\":\"https://cmgi.ucdavis.edu/facility-use/using-the-facility-overview/\",\"uniqueKey\":\"https://cmgi.ucdavis.edu/facility-use/using-the-facility-overview\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:08.815Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cmgi.ucdavis.edu/facility-use/using-the-facility-overview",
+	"url": "https://cmgi.ucdavis.edu/facility-use/using-the-facility-overview/"
+}

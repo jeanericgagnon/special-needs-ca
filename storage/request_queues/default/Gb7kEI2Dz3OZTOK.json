@@ -1,0 +1,9 @@
+{
+	"id": "Gb7kEI2Dz3OZTOK",
+	"json": "{\"id\":\"Gb7kEI2Dz3OZTOK\",\"url\":\"https://health.ucdavis.edu/phs/about/team/leadership\",\"loadedUrl\":\"https://health.ucdavis.edu/phs/about/team/leadership\",\"uniqueKey\":\"https://health.ucdavis.edu/phs/about/team/leadership\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:11:08.681Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/phs/about/team/leadership",
+	"url": "https://health.ucdavis.edu/phs/about/team/leadership"
+}

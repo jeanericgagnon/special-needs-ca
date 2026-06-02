@@ -1,0 +1,9 @@
+{
+	"id": "hctj83j6qP0EmUz",
+	"json": "{\"id\":\"hctj83j6qP0EmUz\",\"url\":\"https://alumni.ucdavis.edu/membership/faq\",\"loadedUrl\":\"https://alumni.ucdavis.edu/membership/faq\",\"uniqueKey\":\"https://alumni.ucdavis.edu/membership/faq\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:06.176Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://alumni.ucdavis.edu/membership/faq",
+	"url": "https://alumni.ucdavis.edu/membership/faq"
+}

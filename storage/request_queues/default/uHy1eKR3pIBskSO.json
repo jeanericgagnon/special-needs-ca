@@ -1,0 +1,9 @@
+{
+	"id": "uHy1eKR3pIBskSO",
+	"json": "{\"id\":\"uHy1eKR3pIBskSO\",\"url\":\"https://www.library.ca.gov/btbl/\",\"loadedUrl\":\"https://www.library.ca.gov/btbl/\",\"uniqueKey\":\"https://www.library.ca.gov/btbl\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:05:45.046Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.library.ca.gov/btbl",
+	"url": "https://www.library.ca.gov/btbl/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "IEwuLj7PMDBH3sQ",
+	"json": "{\"id\":\"IEwuLj7PMDBH3sQ\",\"url\":\"https://www.cdss.ca.gov/inforesources/CDSS-Programs/Adult-Programs/IHSS/How-to-Appeal-if-You-are-Denied\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/ihss/ihss-providers/how-to-appeal-if-you-are-denied\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/CDSS-Programs/Adult-Programs/IHSS/How-to-Appeal-if-You-are-Denied\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:45.314Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/inforesources/CDSS-Programs/Adult-Programs/IHSS/How-to-Appeal-if-You-are-Denied",
+	"url": "https://www.cdss.ca.gov/inforesources/CDSS-Programs/Adult-Programs/IHSS/How-to-Appeal-if-You-are-Denied"
+}

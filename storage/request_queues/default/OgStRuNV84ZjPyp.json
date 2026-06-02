@@ -1,0 +1,9 @@
+{
+	"id": "OgStRuNV84ZjPyp",
+	"json": "{\"id\":\"OgStRuNV84ZjPyp\",\"url\":\"https://health.ucdavis.edu/crhd/projects/\",\"loadedUrl\":\"https://health.ucdavis.edu/crhd/projects/\",\"uniqueKey\":\"https://health.ucdavis.edu/crhd/projects\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:06.673Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/crhd/projects",
+	"url": "https://health.ucdavis.edu/crhd/projects/"
+}

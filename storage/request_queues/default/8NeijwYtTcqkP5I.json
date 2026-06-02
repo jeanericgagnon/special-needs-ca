@@ -1,0 +1,9 @@
+{
+	"id": "8NeijwYtTcqkP5I",
+	"json": "{\"id\":\"8NeijwYtTcqkP5I\",\"url\":\"https://www.cde.ca.gov/ls/ex/elopinfo.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ls/ex/elopinfo.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ls/ex/elopinfo.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:01.151Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ls/ex/elopinfo.asp",
+	"url": "https://www.cde.ca.gov/ls/ex/elopinfo.asp"
+}

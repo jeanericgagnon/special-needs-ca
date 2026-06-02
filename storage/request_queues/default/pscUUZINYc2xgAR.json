@@ -1,0 +1,9 @@
+{
+	"id": "pscUUZINYc2xgAR",
+	"json": "{\"id\":\"pscUUZINYc2xgAR\",\"url\":\"https://health.ucdavis.edu/internal-medicine/cardiology/our-services/transcatheter-aortic-valve-replacement-program-tavr\",\"loadedUrl\":\"https://health.ucdavis.edu/internal-medicine/cardiology/our-services/transcatheter-aortic-valve-replacement-program-tavr\",\"uniqueKey\":\"https://health.ucdavis.edu/internal-medicine/cardiology/our-services/transcatheter-aortic-valve-replacement-program-tavr\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:42.403Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/internal-medicine/cardiology/our-services/transcatheter-aortic-valve-replacement-program-tavr",
+	"url": "https://health.ucdavis.edu/internal-medicine/cardiology/our-services/transcatheter-aortic-valve-replacement-program-tavr"
+}

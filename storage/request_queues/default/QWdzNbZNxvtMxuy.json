@@ -1,0 +1,9 @@
+{
+	"id": "QWdzNbZNxvtMxuy",
+	"json": "{\"id\":\"QWdzNbZNxvtMxuy\",\"url\":\"http://breathefree.ucdavis.edu/\",\"loadedUrl\":\"https://healthy.ucdavis.edu/smoke-tobacco-free\",\"uniqueKey\":\"http://breathefree.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:18.835Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://breathefree.ucdavis.edu",
+	"url": "http://breathefree.ucdavis.edu/"
+}

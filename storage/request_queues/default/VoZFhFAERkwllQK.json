@@ -1,0 +1,9 @@
+{
+	"id": "VoZFhFAERkwllQK",
+	"json": "{\"id\":\"VoZFhFAERkwllQK\",\"url\":\"https://www.csdr-cde.ca.gov/middleschool\",\"loadedUrl\":\"https://www.csdr-cde.ca.gov/middleschool/\",\"uniqueKey\":\"https://www.csdr-cde.ca.gov/middleschool\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:10.836Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csdr-cde.ca.gov/middleschool",
+	"url": "https://www.csdr-cde.ca.gov/middleschool"
+}

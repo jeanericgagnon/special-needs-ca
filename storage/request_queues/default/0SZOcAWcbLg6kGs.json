@@ -1,0 +1,9 @@
+{
+	"id": "0SZOcAWcbLg6kGs",
+	"json": "{\"id\":\"0SZOcAWcbLg6kGs\",\"url\":\"https://www.globaldownsyndrome.org/ru/aap-health-supervision-translations/\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/aap-health-supervision-translations/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/ru/aap-health-supervision-translations\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:34.768Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.globaldownsyndrome.org/ru/aap-health-supervision-translations",
+	"url": "https://www.globaldownsyndrome.org/ru/aap-health-supervision-translations/"
+}

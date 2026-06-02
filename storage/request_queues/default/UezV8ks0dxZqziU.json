@@ -1,0 +1,9 @@
+{
+	"id": "UezV8ks0dxZqziU",
+	"json": "{\"id\":\"UezV8ks0dxZqziU\",\"url\":\"https://cdss.ca.gov/inforesources/OCAP/Resources\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/ocap/resources\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/OCAP/Resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:22.768Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/OCAP/Resources",
+	"url": "https://cdss.ca.gov/inforesources/OCAP/Resources"
+}

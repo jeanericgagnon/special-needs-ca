@@ -1,0 +1,9 @@
+{
+	"id": "0Pu8lksJeryQFdW",
+	"json": "{\"id\":\"0Pu8lksJeryQFdW\",\"url\":\"https://www.globaldownsyndrome.org/2022-general-donation-form/\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/global-donation-form/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/2022-general-donation-form\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:40.434Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.globaldownsyndrome.org/2022-general-donation-form",
+	"url": "https://www.globaldownsyndrome.org/2022-general-donation-form/"
+}

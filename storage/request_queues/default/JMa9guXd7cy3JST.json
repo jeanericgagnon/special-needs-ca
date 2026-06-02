@@ -1,0 +1,9 @@
+{
+	"id": "JMa9guXd7cy3JST",
+	"json": "{\"id\":\"JMa9guXd7cy3JST\",\"url\":\"http://www.ucdmc.ucdavis.edu/leadership/pmg.html\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-group/\",\"uniqueKey\":\"http://www.ucdmc.ucdavis.edu/leadership/pmg.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:43.918Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.ucdmc.ucdavis.edu/leadership/pmg.html",
+	"url": "http://www.ucdmc.ucdavis.edu/leadership/pmg.html"
+}

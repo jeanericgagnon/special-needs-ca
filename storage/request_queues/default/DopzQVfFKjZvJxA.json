@@ -1,0 +1,9 @@
+{
+	"id": "DopzQVfFKjZvJxA",
+	"json": "{\"id\":\"DopzQVfFKjZvJxA\",\"url\":\"https://cnprc.ucdavis.edu/social-housing\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/social-housing\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/social-housing\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:10.306Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cnprc.ucdavis.edu/social-housing",
+	"url": "https://cnprc.ucdavis.edu/social-housing"
+}

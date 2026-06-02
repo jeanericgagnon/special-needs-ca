@@ -1,0 +1,9 @@
+{
+	"id": "ybv3hlnLMsWjP7N",
+	"json": "{\"id\":\"ybv3hlnLMsWjP7N\",\"url\":\"https://www.cde.ca.gov/sp/eo/as/cefalternativeschl.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/eo/as/cefalternativeschl.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/eo/as/cefalternativeschl.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:09:03.719Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/sp/eo/as/cefalternativeschl.asp",
+	"url": "https://www.cde.ca.gov/sp/eo/as/cefalternativeschl.asp"
+}

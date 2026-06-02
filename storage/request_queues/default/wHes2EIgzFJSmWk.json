@@ -1,0 +1,9 @@
+{
+	"id": "wHes2EIgzFJSmWk",
+	"json": "{\"id\":\"wHes2EIgzFJSmWk\",\"url\":\"https://cdss.ca.gov/inforesources/cfsd-quarter-policy-guidance-webinars\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/cfsd-quarter-policy-guidance-webinars\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/cfsd-quarter-policy-guidance-webinars\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:15.449Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/cfsd-quarter-policy-guidance-webinars",
+	"url": "https://cdss.ca.gov/inforesources/cfsd-quarter-policy-guidance-webinars"
+}

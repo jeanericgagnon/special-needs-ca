@@ -1,0 +1,9 @@
+{
+	"id": "oTbqjbiUU30QVcC",
+	"json": "{\"id\":\"oTbqjbiUU30QVcC\",\"url\":\"https://give.ucdavis.edu/MRAD/LNDONOR\",\"loadedUrl\":\"https://give.ucdavis.edu/MRAD/LNDONOR\",\"uniqueKey\":\"https://give.ucdavis.edu/MRAD/LNDONOR\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:03.761Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/MRAD/LNDONOR",
+	"url": "https://give.ucdavis.edu/MRAD/LNDONOR"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "gYXU9nO90GOxf4B",
+	"json": "{\"id\":\"gYXU9nO90GOxf4B\",\"url\":\"https://cnprc.ucdavis.edu/cardiorespiratory-diseases-unit-scientists\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/cardiorespiratory-diseases-unit-scientists\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/cardiorespiratory-diseases-unit-scientists\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:13.388Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cnprc.ucdavis.edu/cardiorespiratory-diseases-unit-scientists",
+	"url": "https://cnprc.ucdavis.edu/cardiorespiratory-diseases-unit-scientists"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "ZKP25SgKuP09xTG",
+	"json": "{\"id\":\"ZKP25SgKuP09xTG\",\"url\":\"https://data1.cde.ca.gov/dataquest/content.asp\",\"loadedUrl\":\"https://data1.cde.ca.gov/dataquest/content.asp\",\"uniqueKey\":\"https://data1.cde.ca.gov/dataquest/content.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:54.661Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://data1.cde.ca.gov/dataquest/content.asp",
+	"url": "https://data1.cde.ca.gov/dataquest/content.asp"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "hdSREka2qvab0Ur",
+	"json": "{\"id\":\"hdSREka2qvab0Ur\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/NUPA/Pages/Physical-Activity-for-Children.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/NUPA/Pages/Physical-Activity-for-Children.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/NUPA/Pages/Physical-Activity-for-Children.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:01:26.466Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/NUPA/Pages/Physical-Activity-for-Children.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/NUPA/Pages/Physical-Activity-for-Children.aspx"
+}

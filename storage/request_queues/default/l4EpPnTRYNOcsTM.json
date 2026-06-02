@@ -1,0 +1,9 @@
+{
+	"id": "l4EpPnTRYNOcsTM",
+	"json": "{\"id\":\"l4EpPnTRYNOcsTM\",\"url\":\"https://give.ucdavis.edu/MNSG/76930\",\"loadedUrl\":\"https://give.ucdavis.edu/MNSG/76930\",\"uniqueKey\":\"https://give.ucdavis.edu/MNSG/76930\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:51.721Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/MNSG/76930",
+	"url": "https://give.ucdavis.edu/MNSG/76930"
+}

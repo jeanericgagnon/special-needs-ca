@@ -1,0 +1,9 @@
+{
+	"id": "WdtLsvxaHBD0tq7",
+	"json": "{\"id\":\"WdtLsvxaHBD0tq7\",\"url\":\"https://www.dhcs.ca.gov/services/ltc/Documents/HCBS-Waiver-CA-0183-R06-02-11012023.pdf\",\"loadedUrl\":\"https://www.dhcs.ca.gov/file/hcbs-waiver-ca-0183-r06-02-11012023/\",\"uniqueKey\":\"https://www.dhcs.ca.gov/services/ltc/Documents/HCBS-Waiver-CA-0183-R06-02-11012023.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:56:02.750Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dhcs.ca.gov/services/ltc/Documents/HCBS-Waiver-CA-0183-R06-02-11012023.pdf",
+	"url": "https://www.dhcs.ca.gov/services/ltc/Documents/HCBS-Waiver-CA-0183-R06-02-11012023.pdf"
+}

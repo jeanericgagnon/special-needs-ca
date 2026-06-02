@@ -1,0 +1,9 @@
+{
+	"id": "nQn7zWvt3v5slxm",
+	"json": "{\"id\":\"nQn7zWvt3v5slxm\",\"url\":\"https://scdd.ca.gov/scddcalendar/\",\"loadedUrl\":\"https://scdd.ca.gov/scddcalendar/\",\"uniqueKey\":\"https://scdd.ca.gov/scddcalendar\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:22.488Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/scddcalendar",
+	"url": "https://scdd.ca.gov/scddcalendar/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "73WRAxaTGF8KMXC",
+	"json": "{\"id\":\"73WRAxaTGF8KMXC\",\"url\":\"https://aggiecompass.ucdavis.edu/\",\"loadedUrl\":\"https://aggiecompass.ucdavis.edu/\",\"uniqueKey\":\"https://aggiecompass.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:58.166Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://aggiecompass.ucdavis.edu",
+	"url": "https://aggiecompass.ucdavis.edu/"
+}

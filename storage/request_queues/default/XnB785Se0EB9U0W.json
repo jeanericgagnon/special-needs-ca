@@ -1,0 +1,9 @@
+{
+	"id": "XnB785Se0EB9U0W",
+	"json": "{\"id\":\"XnB785Se0EB9U0W\",\"url\":\"https://neuroscience.ucdavis.edu/people/john-paul-aboubechara\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/people/john-paul-aboubechara\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/people/john-paul-aboubechara\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:52.709Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://neuroscience.ucdavis.edu/people/john-paul-aboubechara",
+	"url": "https://neuroscience.ucdavis.edu/people/john-paul-aboubechara"
+}

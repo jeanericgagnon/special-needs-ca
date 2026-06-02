@@ -1,0 +1,9 @@
+{
+	"id": "2Eygzjp3Kgusa8o",
+	"json": "{\"id\":\"2Eygzjp3Kgusa8o\",\"url\":\"https://oag.ca.gov/appointments\",\"loadedUrl\":\"https://oag.ca.gov/appointments\",\"uniqueKey\":\"https://oag.ca.gov/appointments\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:49.415Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://oag.ca.gov/appointments",
+	"url": "https://oag.ca.gov/appointments"
+}

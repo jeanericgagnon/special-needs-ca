@@ -1,0 +1,9 @@
+{
+	"id": "0uXTq8IeWvMF3Pz",
+	"json": "{\"id\":\"0uXTq8IeWvMF3Pz\",\"url\":\"http://calhr.ca.gov/\",\"loadedUrl\":\"https://www.calhr.ca.gov/\",\"uniqueKey\":\"http://calhr.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:04.972Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://calhr.ca.gov",
+	"url": "http://calhr.ca.gov/"
+}

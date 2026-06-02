@@ -1,0 +1,9 @@
+{
+	"id": "lHoTjZmNz7gYyur",
+	"json": "{\"id\":\"lHoTjZmNz7gYyur\",\"url\":\"https://give.ucdavis.edu/HSYS/CRHDGIV\",\"loadedUrl\":\"https://give.ucdavis.edu/HSYS/CRHDGIV\",\"uniqueKey\":\"https://give.ucdavis.edu/HSYS/CRHDGIV\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:07.193Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/HSYS/CRHDGIV",
+	"url": "https://give.ucdavis.edu/HSYS/CRHDGIV"
+}

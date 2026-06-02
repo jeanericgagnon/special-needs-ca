@@ -1,0 +1,9 @@
+{
+	"id": "RVl5sXuDOfwlxvU",
+	"json": "{\"id\":\"RVl5sXuDOfwlxvU\",\"url\":\"https://health.ucdavis.edu/medical-center/about/leadership/chia\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-center/about/leadership/chia\",\"uniqueKey\":\"https://health.ucdavis.edu/medical-center/about/leadership/chia\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:41.472Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/medical-center/about/leadership/chia",
+	"url": "https://health.ucdavis.edu/medical-center/about/leadership/chia"
+}

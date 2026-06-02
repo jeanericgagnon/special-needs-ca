@@ -1,0 +1,9 @@
+{
+	"id": "gxma4p7hLSnPWFk",
+	"json": "{\"id\":\"gxma4p7hLSnPWFk\",\"url\":\"https://cdtfa.ca.gov/tax-education/\",\"loadedUrl\":\"https://cdtfa.ca.gov/tax-education/\",\"uniqueKey\":\"https://cdtfa.ca.gov/tax-education\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:44.332Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdtfa.ca.gov/tax-education",
+	"url": "https://cdtfa.ca.gov/tax-education/"
+}

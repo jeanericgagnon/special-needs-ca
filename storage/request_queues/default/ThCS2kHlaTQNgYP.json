@@ -1,0 +1,9 @@
+{
+	"id": "ThCS2kHlaTQNgYP",
+	"json": "{\"id\":\"ThCS2kHlaTQNgYP\",\"url\":\"https://www.immigrantguide.ca.gov/en/Home/Services\",\"loadedUrl\":\"https://www.immigrantguide.ca.gov/en/Home/Services\",\"uniqueKey\":\"https://www.immigrantguide.ca.gov/en/Home/Services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:51.768Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.immigrantguide.ca.gov/en/Home/Services",
+	"url": "https://www.immigrantguide.ca.gov/en/Home/Services"
+}

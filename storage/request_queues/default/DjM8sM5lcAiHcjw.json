@@ -1,0 +1,9 @@
+{
+	"id": "DjM8sM5lcAiHcjw",
+	"json": "{\"id\":\"DjM8sM5lcAiHcjw\",\"url\":\"https://cdss.ca.gov/inforesources/CDSS-Programs/Child-Welfare-Program-Improvement/Social-Worker-Hotline/Letter-and-Notices\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/child-welfare-program-improvement/social-worker-hotline/letter-and-notices\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/CDSS-Programs/Child-Welfare-Program-Improvement/Social-Worker-Hotline/Letter-and-Notices\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:27.455Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/CDSS-Programs/Child-Welfare-Program-Improvement/Social-Worker-Hotline/Letter-and-Notices",
+	"url": "https://cdss.ca.gov/inforesources/CDSS-Programs/Child-Welfare-Program-Improvement/Social-Worker-Hotline/Letter-and-Notices"
+}

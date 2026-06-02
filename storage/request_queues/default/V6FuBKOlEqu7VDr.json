@@ -1,0 +1,9 @@
+{
+	"id": "V6FuBKOlEqu7VDr",
+	"json": "{\"id\":\"V6FuBKOlEqu7VDr\",\"url\":\"https://mychart.ucdavis.edu/MyChart/Authentication/Login/\",\"loadedUrl\":\"https://mychart.ucdavis.edu/MyChart/Authentication/Login/\",\"uniqueKey\":\"https://mychart.ucdavis.edu/MyChart/Authentication/Login\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:42.604Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://mychart.ucdavis.edu/MyChart/Authentication/Login",
+	"url": "https://mychart.ucdavis.edu/MyChart/Authentication/Login/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "MQSA6QrtyQEF7TN",
+	"json": "{\"id\":\"MQSA6QrtyQEF7TN\",\"url\":\"https://give.ucdavis.edu/VCPL\",\"loadedUrl\":\"https://give.ucdavis.edu/VCPL\",\"uniqueKey\":\"https://give.ucdavis.edu/VCPL\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:58.737Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/VCPL",
+	"url": "https://give.ucdavis.edu/VCPL"
+}

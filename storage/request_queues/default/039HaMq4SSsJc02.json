@@ -1,0 +1,9 @@
+{
+	"id": "039HaMq4SSsJc02",
+	"json": "{\"id\":\"039HaMq4SSsJc02\",\"url\":\"https://irb.ucdavis.edu/irb-review-process/members/resources/\",\"loadedUrl\":\"https://irb.ucdavis.edu/irb-review-process/members/resources/\",\"uniqueKey\":\"https://irb.ucdavis.edu/irb-review-process/members/resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:41.441Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://irb.ucdavis.edu/irb-review-process/members/resources",
+	"url": "https://irb.ucdavis.edu/irb-review-process/members/resources/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "6NhqlaLQL5TQ3HZ",
+	"json": "{\"id\":\"6NhqlaLQL5TQ3HZ\",\"url\":\"https://oag.ca.gov/bfs/\",\"loadedUrl\":\"https://oag.ca.gov/bfs/\",\"uniqueKey\":\"https://oag.ca.gov/bfs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:51:00.261Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://oag.ca.gov/bfs",
+	"url": "https://oag.ca.gov/bfs/"
+}

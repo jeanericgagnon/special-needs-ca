@@ -1,0 +1,9 @@
+{
+	"id": "LwgyPmhSF2QeH8r",
+	"json": "{\"id\":\"LwgyPmhSF2QeH8r\",\"url\":\"https://rarediseases.org/news/?taxonomy[category]=medical\",\"loadedUrl\":\"https://rarediseases.org/news/?taxonomy[category]=medical\",\"uniqueKey\":\"https://rarediseases.org/news?taxonomy%5Bcategory%5D=medical\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:21:31.035Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/news?taxonomy%5Bcategory%5D=medical",
+	"url": "https://rarediseases.org/news/?taxonomy[category]=medical"
+}

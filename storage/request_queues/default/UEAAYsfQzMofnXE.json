@@ -1,0 +1,9 @@
+{
+	"id": "UEAAYsfQzMofnXE",
+	"json": "{\"id\":\"UEAAYsfQzMofnXE\",\"url\":\"https://campusrecreation.ucdavis.edu/news/safety-courses\",\"loadedUrl\":\"https://campusrecreation.ucdavis.edu/news/safety-courses\",\"uniqueKey\":\"https://campusrecreation.ucdavis.edu/news/safety-courses\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:34.536Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://campusrecreation.ucdavis.edu/news/safety-courses",
+	"url": "https://campusrecreation.ucdavis.edu/news/safety-courses"
+}

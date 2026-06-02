@@ -1,0 +1,9 @@
+{
+	"id": "iZqcKF9W5Kh7Bhx",
+	"json": "{\"id\":\"iZqcKF9W5Kh7Bhx\",\"url\":\"https://www.cdph.ca.gov/Programs/HRB/_layouts/15/listform.aspx?PageType=4&ListId={d0f67b27-9d70-4758-b496-6d5bb7ec8429}&ID=34&RootFolder=*\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/HRB/Pages/HumanResourcesDivision.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/HRB/_layouts/15/listform.aspx?ID=34&ListId=%7Bd0f67b27-9d70-4758-b496-6d5bb7ec8429%7D&PageType=4&RootFolder=*\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":1,\"errorMessages\":[\"Error: request timed out after 30 seconds.\\n    at Timeout._onTimeout (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@apify/timeout/cjs/index.cjs:64:68)\\n    at listOnTimeout (node:internal/timers:588:17)\\n    at process.processTimers (node:internal/timers:523:7)\"],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:13:55.809Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 1,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/HRB/_layouts/15/listform.aspx?ID=34&ListId=%7Bd0f67b27-9d70-4758-b496-6d5bb7ec8429%7D&PageType=4&RootFolder=*",
+	"url": "https://www.cdph.ca.gov/Programs/HRB/_layouts/15/listform.aspx?PageType=4&ListId={d0f67b27-9d70-4758-b496-6d5bb7ec8429}&ID=34&RootFolder=*"
+}

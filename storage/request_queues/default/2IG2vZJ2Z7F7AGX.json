@@ -1,0 +1,9 @@
+{
+	"id": "2IG2vZJ2Z7F7AGX",
+	"json": "{\"id\":\"2IG2vZJ2Z7F7AGX\",\"url\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/Vaccine-Facts-What-You-Need-to-Know.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/Vaccine-Facts-What-You-Need-to-Know.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/Vaccine-Facts-What-You-Need-to-Know.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:11:11.724Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/Vaccine-Facts-What-You-Need-to-Know.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/Vaccine-Facts-What-You-Need-to-Know.aspx"
+}

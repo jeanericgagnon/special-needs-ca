@@ -1,0 +1,9 @@
+{
+	"id": "jBjd4VcYeFfyYEW",
+	"json": "{\"id\":\"jBjd4VcYeFfyYEW\",\"url\":\"https://www.tuolumnecounty.ca.gov/site/copyright\",\"loadedUrl\":\"https://www.tuolumnecounty.ca.gov/site/copyright\",\"uniqueKey\":\"https://www.tuolumnecounty.ca.gov/site/copyright\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:41.841Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.tuolumnecounty.ca.gov/site/copyright",
+	"url": "https://www.tuolumnecounty.ca.gov/site/copyright"
+}

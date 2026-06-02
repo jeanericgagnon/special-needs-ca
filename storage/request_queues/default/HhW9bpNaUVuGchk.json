@@ -1,0 +1,9 @@
+{
+	"id": "HhW9bpNaUVuGchk",
+	"json": "{\"id\":\"HhW9bpNaUVuGchk\",\"url\":\"https://health.ucdavis.edu/compliance/regulatory/data-governance\",\"loadedUrl\":\"https://health.ucdavis.edu/compliance/regulatory/data-governance\",\"uniqueKey\":\"https://health.ucdavis.edu/compliance/regulatory/data-governance\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:33.275Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/compliance/regulatory/data-governance",
+	"url": "https://health.ucdavis.edu/compliance/regulatory/data-governance"
+}

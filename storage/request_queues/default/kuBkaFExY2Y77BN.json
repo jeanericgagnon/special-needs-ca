@@ -1,0 +1,9 @@
+{
+	"id": "kuBkaFExY2Y77BN",
+	"json": "{\"id\":\"kuBkaFExY2Y77BN\",\"url\":\"https://scdd.ca.gov/pos-service-code/occupational-therapy/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/occupational-therapy/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/occupational-therapy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:53.415Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/pos-service-code/occupational-therapy",
+	"url": "https://scdd.ca.gov/pos-service-code/occupational-therapy/"
+}

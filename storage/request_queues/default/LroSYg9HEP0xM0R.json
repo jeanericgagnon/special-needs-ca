@@ -1,0 +1,9 @@
+{
+	"id": "LroSYg9HEP0xM0R",
+	"json": "{\"id\":\"LroSYg9HEP0xM0R\",\"url\":\"https://www.cdss.ca.gov/ihss-for-children\",\"loadedUrl\":\"https://www.cdss.ca.gov/ihss-for-children\",\"uniqueKey\":\"https://www.cdss.ca.gov/ihss-for-children\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:30.400Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/ihss-for-children",
+	"url": "https://www.cdss.ca.gov/ihss-for-children"
+}

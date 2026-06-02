@@ -1,0 +1,9 @@
+{
+	"id": "kUCgRgKB8Ow4Swk",
+	"json": "{\"id\":\"kUCgRgKB8Ow4Swk\",\"url\":\"https://rarediseases.org/rare-diseases/chromosome-11-partial-monosomy-11q/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/chromosome-11-partial-monosomy-11q/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/chromosome-11-partial-monosomy-11q\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:05:51.534Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/rare-diseases/chromosome-11-partial-monosomy-11q",
+	"url": "https://rarediseases.org/rare-diseases/chromosome-11-partial-monosomy-11q/"
+}

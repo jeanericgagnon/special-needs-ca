@@ -1,0 +1,9 @@
+{
+	"id": "KXnotSeUd7taQR4",
+	"json": "{\"id\":\"KXnotSeUd7taQR4\",\"url\":\"https://taps.ucdavis.edu/aggiepark\",\"loadedUrl\":\"https://transportation.ucdavis.edu/aggiepark\",\"uniqueKey\":\"https://taps.ucdavis.edu/aggiepark\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:38.425Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://taps.ucdavis.edu/aggiepark",
+	"url": "https://taps.ucdavis.edu/aggiepark"
+}

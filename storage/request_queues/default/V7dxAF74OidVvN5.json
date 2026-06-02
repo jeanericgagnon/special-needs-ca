@@ -1,0 +1,9 @@
+{
+	"id": "V7dxAF74OidVvN5",
+	"json": "{\"id\":\"V7dxAF74OidVvN5\",\"url\":\"https://health.ucdavis.edu/welcome/living-in-sacramento.page\",\"loadedUrl\":\"https://health.ucdavis.edu/welcome/living-in-sacramento.page\",\"uniqueKey\":\"https://health.ucdavis.edu/welcome/living-in-sacramento.page\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:16.595Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/welcome/living-in-sacramento.page",
+	"url": "https://health.ucdavis.edu/welcome/living-in-sacramento.page"
+}

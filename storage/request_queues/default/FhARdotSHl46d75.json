@@ -1,0 +1,9 @@
+{
+	"id": "FhARdotSHl46d75",
+	"json": "{\"id\":\"FhARdotSHl46d75\",\"url\":\"https://www.globaldownsyndrome.org/blog/\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/blog/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/blog\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:41.634Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.globaldownsyndrome.org/blog",
+	"url": "https://www.globaldownsyndrome.org/blog/"
+}

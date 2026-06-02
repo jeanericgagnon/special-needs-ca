@@ -1,0 +1,9 @@
+{
+	"id": "K3JSjgoILiJl34b",
+	"json": "{\"id\":\"K3JSjgoILiJl34b\",\"url\":\"https://edd.ca.gov/farsi/\",\"loadedUrl\":\"https://edd.ca.gov/farsi/\",\"uniqueKey\":\"https://edd.ca.gov/farsi\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:42.518Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://edd.ca.gov/farsi",
+	"url": "https://edd.ca.gov/farsi/"
+}

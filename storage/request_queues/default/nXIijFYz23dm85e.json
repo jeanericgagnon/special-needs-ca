@@ -1,0 +1,9 @@
+{
+	"id": "nXIijFYz23dm85e",
+	"json": "{\"id\":\"nXIijFYz23dm85e\",\"url\":\"https://ucp.org/my-driving-journey-with-cerebral-palsy/\",\"loadedUrl\":\"https://ucp.org/my-driving-journey-with-cerebral-palsy/\",\"uniqueKey\":\"https://ucp.org/my-driving-journey-with-cerebral-palsy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:35.455Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://ucp.org/my-driving-journey-with-cerebral-palsy",
+	"url": "https://ucp.org/my-driving-journey-with-cerebral-palsy/"
+}

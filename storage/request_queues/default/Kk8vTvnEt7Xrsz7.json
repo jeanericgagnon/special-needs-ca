@@ -1,0 +1,9 @@
+{
+	"id": "Kk8vTvnEt7Xrsz7",
+	"json": "{\"id\":\"Kk8vTvnEt7Xrsz7\",\"url\":\"https://www.dhcs.ca.gov/Documents/MCQMD/2020-Preventive-Services-Report-Addendum.pdf\",\"loadedUrl\":\"https://www.dhcs.ca.gov/file/2020-preventive-services-report-addendum/\",\"uniqueKey\":\"https://www.dhcs.ca.gov/Documents/MCQMD/2020-Preventive-Services-Report-Addendum.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:25:39.469Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dhcs.ca.gov/Documents/MCQMD/2020-Preventive-Services-Report-Addendum.pdf",
+	"url": "https://www.dhcs.ca.gov/Documents/MCQMD/2020-Preventive-Services-Report-Addendum.pdf"
+}

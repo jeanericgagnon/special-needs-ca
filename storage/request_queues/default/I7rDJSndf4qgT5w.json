@@ -1,0 +1,9 @@
+{
+	"id": "I7rDJSndf4qgT5w",
+	"json": "{\"id\":\"I7rDJSndf4qgT5w\",\"url\":\"https://give.ucdavis.edu/Search/Tags/research\",\"loadedUrl\":\"https://give.ucdavis.edu/Search/Tags/research\",\"uniqueKey\":\"https://give.ucdavis.edu/Search/Tags/research\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:54.397Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/Search/Tags/research",
+	"url": "https://give.ucdavis.edu/Search/Tags/research"
+}

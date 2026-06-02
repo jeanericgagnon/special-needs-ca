@@ -1,0 +1,9 @@
+{
+	"id": "moPpxvGFPOBcEOW",
+	"json": "{\"id\":\"moPpxvGFPOBcEOW\",\"url\":\"https://health.ucdavis.edu/conditions/endocrinology-diabetes/diabetes/prediabetes\",\"loadedUrl\":\"https://health.ucdavis.edu/conditions/endocrinology-diabetes/diabetes/prediabetes\",\"uniqueKey\":\"https://health.ucdavis.edu/conditions/endocrinology-diabetes/diabetes/prediabetes\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:46.311Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/conditions/endocrinology-diabetes/diabetes/prediabetes",
+	"url": "https://health.ucdavis.edu/conditions/endocrinology-diabetes/diabetes/prediabetes"
+}

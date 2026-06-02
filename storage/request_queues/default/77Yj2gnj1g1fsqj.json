@@ -1,0 +1,9 @@
+{
+	"id": "77Yj2gnj1g1fsqj",
+	"json": "{\"id\":\"77Yj2gnj1g1fsqj\",\"url\":\"https://www.cdph.ca.gov/Programs/OSPHLD/LFS/Pages/Lab-Testing-Metrics-Platform.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/OSPHLD/LFS/Pages/Lab-Testing-Metrics-Platform.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/OSPHLD/LFS/Pages/Lab-Testing-Metrics-Platform.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:47:12.456Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/OSPHLD/LFS/Pages/Lab-Testing-Metrics-Platform.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/OSPHLD/LFS/Pages/Lab-Testing-Metrics-Platform.aspx"
+}

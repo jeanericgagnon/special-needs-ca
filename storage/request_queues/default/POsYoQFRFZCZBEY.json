@@ -1,0 +1,9 @@
+{
+	"id": "POsYoQFRFZCZBEY",
+	"json": "{\"id\":\"POsYoQFRFZCZBEY\",\"url\":\"https://cadeafblind.org/category/resources/newsletter-archive/\",\"loadedUrl\":\"https://cadeafblind.org/category/resources/newsletter-archive/\",\"uniqueKey\":\"https://cadeafblind.org/category/resources/newsletter-archive\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:51.620Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cadeafblind.org/category/resources/newsletter-archive",
+	"url": "https://cadeafblind.org/category/resources/newsletter-archive/"
+}

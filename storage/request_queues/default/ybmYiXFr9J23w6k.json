@@ -1,0 +1,9 @@
+{
+	"id": "ybmYiXFr9J23w6k",
+	"json": "{\"id\":\"ybmYiXFr9J23w6k\",\"url\":\"https://health.ucdavis.edu/cancer/population-health/tobacco-research-center\",\"loadedUrl\":\"https://health.ucdavis.edu/cancer/population-health/tobacco-research-center\",\"uniqueKey\":\"https://health.ucdavis.edu/cancer/population-health/tobacco-research-center\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:28.543Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/cancer/population-health/tobacco-research-center",
+	"url": "https://health.ucdavis.edu/cancer/population-health/tobacco-research-center"
+}

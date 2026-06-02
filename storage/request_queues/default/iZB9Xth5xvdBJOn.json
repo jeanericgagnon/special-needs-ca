@@ -1,0 +1,9 @@
+{
+	"id": "iZB9Xth5xvdBJOn",
+	"json": "{\"id\":\"iZB9Xth5xvdBJOn\",\"url\":\"https://health.ucdavis.edu/news/headlines/robotic-assisted-reverse-shoulder-replacement-gives-patient-back-his-mobility/2026/02\",\"loadedUrl\":\"https://health.ucdavis.edu/news/headlines/robotic-assisted-reverse-shoulder-replacement-gives-patient-back-his-mobility/2026/02\",\"uniqueKey\":\"https://health.ucdavis.edu/news/headlines/robotic-assisted-reverse-shoulder-replacement-gives-patient-back-his-mobility/2026/02\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:46:04.878Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/news/headlines/robotic-assisted-reverse-shoulder-replacement-gives-patient-back-his-mobility/2026/02",
+	"url": "https://health.ucdavis.edu/news/headlines/robotic-assisted-reverse-shoulder-replacement-gives-patient-back-his-mobility/2026/02"
+}

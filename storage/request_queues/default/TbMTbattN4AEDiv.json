@@ -1,0 +1,9 @@
+{
+	"id": "TbMTbattN4AEDiv",
+	"json": "{\"id\":\"TbMTbattN4AEDiv\",\"url\":\"https://californiaforallkids.chhs.ca.gov/\",\"loadedUrl\":\"https://californiaforallkids.chhs.ca.gov/\",\"uniqueKey\":\"https://californiaforallkids.chhs.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:15:12.536Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://californiaforallkids.chhs.ca.gov",
+	"url": "https://californiaforallkids.chhs.ca.gov/"
+}

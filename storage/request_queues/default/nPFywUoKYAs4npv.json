@@ -1,0 +1,9 @@
+{
+	"id": "nPFywUoKYAs4npv",
+	"json": "{\"id\":\"nPFywUoKYAs4npv\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/1487/lorin-scher-integrated_behavioral_health-population_health-psychiatry-sacramento?FreeText%3aLast+name=Scher\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/1487/lorin-scher-integrated_behavioral_health-population_health-psychiatry-sacramento?FreeText%3aLast+name=Scher\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/1487/lorin-scher-integrated_behavioral_health-population_health-psychiatry-sacramento?FreeText%3ALast+name=Scher\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:14.325Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/1487/lorin-scher-integrated_behavioral_health-population_health-psychiatry-sacramento?FreeText%3ALast+name=Scher",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/1487/lorin-scher-integrated_behavioral_health-population_health-psychiatry-sacramento?FreeText%3aLast+name=Scher"
+}

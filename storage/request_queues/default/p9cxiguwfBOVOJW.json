@@ -1,0 +1,9 @@
+{
+	"id": "p9cxiguwfBOVOJW",
+	"json": "{\"id\":\"p9cxiguwfBOVOJW\",\"url\":\"https://scdd.ca.gov/ca_empl_rate/\",\"loadedUrl\":\"https://scdd.ca.gov/ca_empl_rate/\",\"uniqueKey\":\"https://scdd.ca.gov/ca_empl_rate\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:11:37.161Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/ca_empl_rate",
+	"url": "https://scdd.ca.gov/ca_empl_rate/"
+}

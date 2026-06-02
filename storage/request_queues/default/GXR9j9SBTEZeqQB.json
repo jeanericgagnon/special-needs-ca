@@ -1,0 +1,9 @@
+{
+	"id": "GXR9j9SBTEZeqQB",
+	"json": "{\"id\":\"GXR9j9SBTEZeqQB\",\"url\":\"https://rarediseases.org/organizations/blind-childrens-center/\",\"loadedUrl\":\"https://rarediseases.org/organizations/blind-childrens-center/\",\"uniqueKey\":\"https://rarediseases.org/organizations/blind-childrens-center\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:15:45.708Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/organizations/blind-childrens-center",
+	"url": "https://rarediseases.org/organizations/blind-childrens-center/"
+}

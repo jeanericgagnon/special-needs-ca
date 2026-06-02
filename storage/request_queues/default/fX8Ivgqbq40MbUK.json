@@ -1,0 +1,9 @@
+{
+	"id": "fX8Ivgqbq40MbUK",
+	"json": "{\"id\":\"fX8Ivgqbq40MbUK\",\"url\":\"https://sitefarm.ucdavis.edu/training/managers\",\"loadedUrl\":\"https://sitefarm.ucdavis.edu/training/managers\",\"uniqueKey\":\"https://sitefarm.ucdavis.edu/training/managers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:48.870Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://sitefarm.ucdavis.edu/training/managers",
+	"url": "https://sitefarm.ucdavis.edu/training/managers"
+}

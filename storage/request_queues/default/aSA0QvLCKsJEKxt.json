@@ -1,0 +1,9 @@
+{
+	"id": "aSA0QvLCKsJEKxt",
+	"json": "{\"id\":\"aSA0QvLCKsJEKxt\",\"url\":\"https://shcs.ucdavis.edu/health-and-wellness/alcohol-tobacco-and-other-drugs/overdose-information\",\"loadedUrl\":\"https://shcs.ucdavis.edu/health-and-wellness/alcohol-tobacco-and-other-drugs/overdose-information\",\"uniqueKey\":\"https://shcs.ucdavis.edu/health-and-wellness/alcohol-tobacco-and-other-drugs/overdose-information\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:33.878Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://shcs.ucdavis.edu/health-and-wellness/alcohol-tobacco-and-other-drugs/overdose-information",
+	"url": "https://shcs.ucdavis.edu/health-and-wellness/alcohol-tobacco-and-other-drugs/overdose-information"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "AAnqGx9tUixLMve",
+	"json": "{\"id\":\"AAnqGx9tUixLMve\",\"url\":\"https://www.chhs.ca.gov/blog/2016/08/24/the-8-government-health-it-trends-you-need-to-know/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2016/08/24/the-8-government-health-it-trends-you-need-to-know/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2016/08/24/the-8-government-health-it-trends-you-need-to-know\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:22.473Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chhs.ca.gov/blog/2016/08/24/the-8-government-health-it-trends-you-need-to-know",
+	"url": "https://www.chhs.ca.gov/blog/2016/08/24/the-8-government-health-it-trends-you-need-to-know/"
+}

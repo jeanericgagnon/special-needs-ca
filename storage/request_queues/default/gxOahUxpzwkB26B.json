@@ -1,0 +1,9 @@
+{
+	"id": "gxOahUxpzwkB26B",
+	"json": "{\"id\":\"gxOahUxpzwkB26B\",\"url\":\"https://edd.ca.gov/en/unemployment/step-1-get-your-information-in-order/\",\"loadedUrl\":\"https://edd.ca.gov/en/unemployment/step-1-get-your-information-in-order/\",\"uniqueKey\":\"https://edd.ca.gov/en/unemployment/step-1-get-your-information-in-order\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:39.447Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://edd.ca.gov/en/unemployment/step-1-get-your-information-in-order",
+	"url": "https://edd.ca.gov/en/unemployment/step-1-get-your-information-in-order/"
+}

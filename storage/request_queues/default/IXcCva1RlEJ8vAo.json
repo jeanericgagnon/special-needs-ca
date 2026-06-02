@@ -1,0 +1,9 @@
+{
+	"id": "IXcCva1RlEJ8vAo",
+	"json": "{\"id\":\"IXcCva1RlEJ8vAo\",\"url\":\"https://skylab.cdph.ca.gov/ODdash/\",\"loadedUrl\":\"https://skylab.cdph.ca.gov/ODdash/\",\"uniqueKey\":\"https://skylab.cdph.ca.gov/ODdash\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T19:40:57.796Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://skylab.cdph.ca.gov/ODdash",
+	"url": "https://skylab.cdph.ca.gov/ODdash/"
+}

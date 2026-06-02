@@ -1,0 +1,9 @@
+{
+	"id": "IqagwN3ExMisPGi",
+	"json": "{\"id\":\"IqagwN3ExMisPGi\",\"url\":\"https://www.cde.ca.gov/ci/cr/cf/resourcesfoethnicstudies.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/cr/cf/resourcesfoethnicstudies.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/cr/cf/resourcesfoethnicstudies.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:55.422Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ci/cr/cf/resourcesfoethnicstudies.asp",
+	"url": "https://www.cde.ca.gov/ci/cr/cf/resourcesfoethnicstudies.asp"
+}

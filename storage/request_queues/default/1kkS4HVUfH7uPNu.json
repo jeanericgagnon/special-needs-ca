@@ -1,0 +1,9 @@
+{
+	"id": "1kkS4HVUfH7uPNu",
+	"json": "{\"id\":\"1kkS4HVUfH7uPNu\",\"url\":\"https://www.ctc.ca.gov/credentials/assignment-resources/ar-english-learners/english-learners-faq\",\"loadedUrl\":\"https://www.ctc.ca.gov/employers/assignment-resources/settings/english-learners/faqs/\",\"uniqueKey\":\"https://www.ctc.ca.gov/credentials/assignment-resources/ar-english-learners/english-learners-faq\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:50.745Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ctc.ca.gov/credentials/assignment-resources/ar-english-learners/english-learners-faq",
+	"url": "https://www.ctc.ca.gov/credentials/assignment-resources/ar-english-learners/english-learners-faq"
+}

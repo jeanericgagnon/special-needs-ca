@@ -1,0 +1,9 @@
+{
+	"id": "nqbE8g510un7JZA",
+	"json": "{\"id\":\"nqbE8g510un7JZA\",\"url\":\"https://health.ucdavis.edu/nursing/Research/distinctions/AfricanAmericanCaregivers.html\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/Research/distinctions/AfricanAmericanCaregivers.html\",\"uniqueKey\":\"https://health.ucdavis.edu/nursing/Research/distinctions/AfricanAmericanCaregivers.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:23.983Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/nursing/Research/distinctions/AfricanAmericanCaregivers.html",
+	"url": "https://health.ucdavis.edu/nursing/Research/distinctions/AfricanAmericanCaregivers.html"
+}

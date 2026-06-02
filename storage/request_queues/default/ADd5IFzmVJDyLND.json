@@ -1,0 +1,9 @@
+{
+	"id": "ADd5IFzmVJDyLND",
+	"json": "{\"id\":\"ADd5IFzmVJDyLND\",\"url\":\"https://www.ssa.gov/retirement/plan-for-retirement\",\"loadedUrl\":\"https://www.ssa.gov/retirement/plan-for-retirement\",\"uniqueKey\":\"https://www.ssa.gov/retirement/plan-for-retirement\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:32.221Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ssa.gov/retirement/plan-for-retirement",
+	"url": "https://www.ssa.gov/retirement/plan-for-retirement"
+}

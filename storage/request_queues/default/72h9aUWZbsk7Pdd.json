@@ -1,0 +1,9 @@
+{
+	"id": "72h9aUWZbsk7Pdd",
+	"json": "{\"id\":\"72h9aUWZbsk7Pdd\",\"url\":\"http://www.courts.ca.gov/35563.htm\",\"loadedUrl\":\"https://selfhelp.courts.ca.gov/immigration/basic-resources\",\"uniqueKey\":\"http://www.courts.ca.gov/35563.htm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:52.621Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.courts.ca.gov/35563.htm",
+	"url": "http://www.courts.ca.gov/35563.htm"
+}

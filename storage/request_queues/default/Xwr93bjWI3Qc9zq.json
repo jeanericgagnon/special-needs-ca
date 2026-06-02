@@ -1,0 +1,9 @@
+{
+	"id": "Xwr93bjWI3Qc9zq",
+	"json": "{\"id\":\"Xwr93bjWI3Qc9zq\",\"url\":\"http://www.healthcareoptions.dhcs.ca.gov/HCOCSP/Enrollment/content/en/forms/MU_0003383.pdf\",\"loadedUrl\":\"https://www.healthcareoptions.dhcs.ca.gov/HCOCSP/Enrollment/content/en/forms/MU_0003383.pdf\",\"uniqueKey\":\"http://www.healthcareoptions.dhcs.ca.gov/HCOCSP/Enrollment/content/en/forms/MU_0003383.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:19.227Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.healthcareoptions.dhcs.ca.gov/HCOCSP/Enrollment/content/en/forms/MU_0003383.pdf",
+	"url": "http://www.healthcareoptions.dhcs.ca.gov/HCOCSP/Enrollment/content/en/forms/MU_0003383.pdf"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "f6NGEHauZvuuDdo",
+	"json": "{\"id\":\"f6NGEHauZvuuDdo\",\"url\":\"https://aghealth.ucdavis.edu/\",\"loadedUrl\":\"https://aghealth.ucdavis.edu/\",\"uniqueKey\":\"https://aghealth.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:52.577Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://aghealth.ucdavis.edu",
+	"url": "https://aghealth.ucdavis.edu/"
+}

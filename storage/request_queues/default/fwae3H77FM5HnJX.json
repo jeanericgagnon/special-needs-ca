@@ -1,0 +1,9 @@
+{
+	"id": "fwae3H77FM5HnJX",
+	"json": "{\"id\":\"fwae3H77FM5HnJX\",\"url\":\"https://cdss.ca.gov/inforesources/calworks/transforming-calworks-initiative\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/calworks/transforming-calworks-initiative\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/calworks/transforming-calworks-initiative\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:58:43.132Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/calworks/transforming-calworks-initiative",
+	"url": "https://cdss.ca.gov/inforesources/calworks/transforming-calworks-initiative"
+}

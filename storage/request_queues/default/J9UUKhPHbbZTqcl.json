@@ -1,0 +1,9 @@
+{
+	"id": "J9UUKhPHbbZTqcl",
+	"json": "{\"id\":\"J9UUKhPHbbZTqcl\",\"url\":\"https://cdtfa.ca.gov/taxes-and-fees/calculate.htm\",\"loadedUrl\":\"https://cdtfa.ca.gov/taxes-and-fees/calculate.htm\",\"uniqueKey\":\"https://cdtfa.ca.gov/taxes-and-fees/calculate.htm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:44.145Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdtfa.ca.gov/taxes-and-fees/calculate.htm",
+	"url": "https://cdtfa.ca.gov/taxes-and-fees/calculate.htm"
+}

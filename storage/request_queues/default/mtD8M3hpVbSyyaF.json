@@ -1,0 +1,9 @@
+{
+	"id": "mtD8M3hpVbSyyaF",
+	"json": "{\"id\":\"mtD8M3hpVbSyyaF\",\"url\":\"https://hr.ucdavis.edu/departments/learning-dev/tuition-assist\",\"loadedUrl\":\"https://hr.ucdavis.edu/departments/tuition-assist\",\"uniqueKey\":\"https://hr.ucdavis.edu/departments/learning-dev/tuition-assist\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:23.009Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/departments/learning-dev/tuition-assist",
+	"url": "https://hr.ucdavis.edu/departments/learning-dev/tuition-assist"
+}

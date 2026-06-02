@@ -1,0 +1,9 @@
+{
+	"id": "utMovsMuW3wIrua",
+	"json": "{\"id\":\"utMovsMuW3wIrua\",\"url\":\"http://cdss.ca.gov/inforesources/cdss-programs/2020-income-tax-return-filing\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/cdss-programs/2020-income-tax-return-filing\",\"uniqueKey\":\"http://cdss.ca.gov/inforesources/cdss-programs/2020-income-tax-return-filing\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:58:29.224Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://cdss.ca.gov/inforesources/cdss-programs/2020-income-tax-return-filing",
+	"url": "http://cdss.ca.gov/inforesources/cdss-programs/2020-income-tax-return-filing"
+}

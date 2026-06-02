@@ -1,0 +1,9 @@
+{
+	"id": "YuGq5VyOxPRBXOP",
+	"json": "{\"id\":\"YuGq5VyOxPRBXOP\",\"url\":\"https://health.ucdavis.edu/radiology/mymri/mri-visit.html\",\"loadedUrl\":\"https://health.ucdavis.edu/radiology/mymri/mri-visit.html\",\"uniqueKey\":\"https://health.ucdavis.edu/radiology/mymri/mri-visit.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:53.866Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/radiology/mymri/mri-visit.html",
+	"url": "https://health.ucdavis.edu/radiology/mymri/mri-visit.html"
+}

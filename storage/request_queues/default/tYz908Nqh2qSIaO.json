@@ -1,0 +1,9 @@
+{
+	"id": "tYz908Nqh2qSIaO",
+	"json": "{\"id\":\"tYz908Nqh2qSIaO\",\"url\":\"https://health.ucdavis.edu/family-caregiving/research/research-features.page\",\"loadedUrl\":\"https://health.ucdavis.edu/family-caregiving/research/research-features.page\",\"uniqueKey\":\"https://health.ucdavis.edu/family-caregiving/research/research-features.page\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:24.641Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/family-caregiving/research/research-features.page",
+	"url": "https://health.ucdavis.edu/family-caregiving/research/research-features.page"
+}

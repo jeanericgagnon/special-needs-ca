@@ -1,0 +1,9 @@
+{
+	"id": "SQSM0QGF7je3fe4",
+	"json": "{\"id\":\"SQSM0QGF7je3fe4\",\"url\":\"https://www.calhr.ca.gov/employees/Pages/state-holidays.aspx\",\"loadedUrl\":\"http://www.calhr.ca.gov/about-calhr/divisions-programs/personnel-management/leave-benefits/#holidays\",\"uniqueKey\":\"https://www.calhr.ca.gov/employees/Pages/state-holidays.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:28.987Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.calhr.ca.gov/employees/Pages/state-holidays.aspx",
+	"url": "https://www.calhr.ca.gov/employees/Pages/state-holidays.aspx"
+}

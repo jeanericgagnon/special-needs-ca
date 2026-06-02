@@ -1,0 +1,9 @@
+{
+	"id": "4HB5827S6rGKgUb",
+	"json": "{\"id\":\"4HB5827S6rGKgUb\",\"url\":\"https://health.ucdavis.edu/food-nutrition/find-a-cafe/nourish-cafe\",\"loadedUrl\":\"https://health.ucdavis.edu/food-nutrition/find-a-cafe/nourish-cafe\",\"uniqueKey\":\"https://health.ucdavis.edu/food-nutrition/find-a-cafe/nourish-cafe\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:54.590Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/food-nutrition/find-a-cafe/nourish-cafe",
+	"url": "https://health.ucdavis.edu/food-nutrition/find-a-cafe/nourish-cafe"
+}

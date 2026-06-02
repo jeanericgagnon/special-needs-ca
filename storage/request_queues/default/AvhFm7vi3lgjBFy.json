@@ -1,0 +1,9 @@
+{
+	"id": "AvhFm7vi3lgjBFy",
+	"json": "{\"id\":\"AvhFm7vi3lgjBFy\",\"url\":\"https://www.dhcs.ca.gov/provgovpart/Pages/Dyadic-Services.aspx\",\"loadedUrl\":\"https://www.dhcs.ca.gov/providers-partners/dyadic-services-as-a-medi-cal-benefit/\",\"uniqueKey\":\"https://www.dhcs.ca.gov/provgovpart/Pages/Dyadic-Services.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:18.060Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dhcs.ca.gov/provgovpart/Pages/Dyadic-Services.aspx",
+	"url": "https://www.dhcs.ca.gov/provgovpart/Pages/Dyadic-Services.aspx"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "uXYqat9aqbsGSmJ",
+	"json": "{\"id\":\"uXYqat9aqbsGSmJ\",\"url\":\"http://directory.ucdavis.edu/index.html\",\"loadedUrl\":\"https://directory.ucdavis.edu/index.html\",\"uniqueKey\":\"http://directory.ucdavis.edu/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:15.385Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://directory.ucdavis.edu/index.html",
+	"url": "http://directory.ucdavis.edu/index.html"
+}

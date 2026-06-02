@@ -1,0 +1,9 @@
+{
+	"id": "CUI85mTGxr2TTUw",
+	"json": "{\"id\":\"CUI85mTGxr2TTUw\",\"url\":\"https://cdss.ca.gov/ebt-online\",\"loadedUrl\":\"https://cdss.ca.gov/ebt-online\",\"uniqueKey\":\"https://cdss.ca.gov/ebt-online\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:58:51.534Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/ebt-online",
+	"url": "https://cdss.ca.gov/ebt-online"
+}

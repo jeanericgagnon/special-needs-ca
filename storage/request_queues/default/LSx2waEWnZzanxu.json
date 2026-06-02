@@ -1,0 +1,9 @@
+{
+	"id": "LSx2waEWnZzanxu",
+	"json": "{\"id\":\"LSx2waEWnZzanxu\",\"url\":\"https://data.ca.gov/showcase/statewide-affordable-housing-opportunities-sites\",\"loadedUrl\":\"https://data.ca.gov/showcase/statewide-affordable-housing-opportunities-sites\",\"uniqueKey\":\"https://data.ca.gov/showcase/statewide-affordable-housing-opportunities-sites\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:14.964Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://data.ca.gov/showcase/statewide-affordable-housing-opportunities-sites",
+	"url": "https://data.ca.gov/showcase/statewide-affordable-housing-opportunities-sites"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "zHCY6DLODIcsdMF",
+	"json": "{\"id\":\"zHCY6DLODIcsdMF\",\"url\":\"https://www.cde.ca.gov/ds/dc/c2cdatasystemp20.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ds/dc/c2cdatasystemp20.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ds/dc/c2cdatasystemp20.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:57:21.717Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ds/dc/c2cdatasystemp20.asp",
+	"url": "https://www.cde.ca.gov/ds/dc/c2cdatasystemp20.asp"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "XNA95WuvMHH0HJS",
+	"json": "{\"id\":\"XNA95WuvMHH0HJS\",\"url\":\"https://myfamily.wic.ca.gov/Home/ShoppingforWICFoods#ShoppingforWICFoods\",\"loadedUrl\":\"https://myfamily.wic.ca.gov/Home/ShoppingforWICFoods#ShoppingforWICFoods\",\"uniqueKey\":\"https://myfamily.wic.ca.gov/Home/ShoppingforWICFoods\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T18:08:27.965Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://myfamily.wic.ca.gov/Home/ShoppingforWICFoods",
+	"url": "https://myfamily.wic.ca.gov/Home/ShoppingforWICFoods#ShoppingforWICFoods"
+}

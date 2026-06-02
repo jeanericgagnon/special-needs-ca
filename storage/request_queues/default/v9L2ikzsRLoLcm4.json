@@ -1,0 +1,9 @@
+{
+	"id": "v9L2ikzsRLoLcm4",
+	"json": "{\"id\":\"v9L2ikzsRLoLcm4\",\"url\":\"https://www.dor.ca.gov/Home/StudentsandYouth\",\"loadedUrl\":\"https://www.dor.ca.gov/Home/StudentsandYouth\",\"uniqueKey\":\"https://www.dor.ca.gov/Home/StudentsandYouth\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:39.147Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dor.ca.gov/Home/StudentsandYouth",
+	"url": "https://www.dor.ca.gov/Home/StudentsandYouth"
+}

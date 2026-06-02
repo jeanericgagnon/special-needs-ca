@@ -1,0 +1,9 @@
+{
+	"id": "fmnGRe4BG5HjpAF",
+	"json": "{\"id\":\"fmnGRe4BG5HjpAF\",\"url\":\"https://ucp.org/about-ucp/national-staff/\",\"loadedUrl\":\"https://ucp.org/about-ucp/national-staff/\",\"uniqueKey\":\"https://ucp.org/about-ucp/national-staff\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:31.616Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://ucp.org/about-ucp/national-staff",
+	"url": "https://ucp.org/about-ucp/national-staff/"
+}

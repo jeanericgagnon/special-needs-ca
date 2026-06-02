@@ -1,0 +1,9 @@
+{
+	"id": "eIr6xJCrF3kJMiC",
+	"json": "{\"id\":\"eIr6xJCrF3kJMiC\",\"url\":\"https://cnprc.ucdavis.edu/infectious-diseases-unit-scientists\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/infectious-diseases-unit-scientists\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/infectious-diseases-unit-scientists\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:13.701Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cnprc.ucdavis.edu/infectious-diseases-unit-scientists",
+	"url": "https://cnprc.ucdavis.edu/infectious-diseases-unit-scientists"
+}

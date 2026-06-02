@@ -1,0 +1,9 @@
+{
+	"id": "uGjVb256rEZHzYr",
+	"json": "{\"id\":\"uGjVb256rEZHzYr\",\"url\":\"https://www.dmv.ca.gov/portal/about-the-california-department-of-motor-vehicles/renewal-processing-times/\",\"loadedUrl\":\"https://www.dmv.ca.gov/portal/about-the-california-department-of-motor-vehicles/renewal-processing-times/\",\"uniqueKey\":\"https://www.dmv.ca.gov/portal/about-the-california-department-of-motor-vehicles/renewal-processing-times\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:38.447Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dmv.ca.gov/portal/about-the-california-department-of-motor-vehicles/renewal-processing-times",
+	"url": "https://www.dmv.ca.gov/portal/about-the-california-department-of-motor-vehicles/renewal-processing-times/"
+}

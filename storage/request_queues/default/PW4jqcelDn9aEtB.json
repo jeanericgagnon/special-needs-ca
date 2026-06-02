@@ -1,0 +1,9 @@
+{
+	"id": "PW4jqcelDn9aEtB",
+	"json": "{\"id\":\"PW4jqcelDn9aEtB\",\"url\":\"https://cdss.ca.gov/inforesources/letters-regulations/letters-and-notices/individual-county-letters/all-tribal-leader-letters\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/letters-regulations/letters-and-notices/individual-county-letters/all-tribal-leader-letters\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/letters-regulations/letters-and-notices/individual-county-letters/all-tribal-leader-letters\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:44.925Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/letters-regulations/letters-and-notices/individual-county-letters/all-tribal-leader-letters",
+	"url": "https://cdss.ca.gov/inforesources/letters-regulations/letters-and-notices/individual-county-letters/all-tribal-leader-letters"
+}

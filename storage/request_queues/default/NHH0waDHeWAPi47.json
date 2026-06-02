@@ -1,0 +1,9 @@
+{
+	"id": "NHH0waDHeWAPi47",
+	"json": "{\"id\":\"NHH0waDHeWAPi47\",\"url\":\"https://www.globaldownsyndrome.org/our-story/?page_id=573\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/our-story/linda-crnic-institute/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/our-story?page_id=573\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:29:59.136Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.globaldownsyndrome.org/our-story?page_id=573",
+	"url": "https://www.globaldownsyndrome.org/our-story/?page_id=573"
+}

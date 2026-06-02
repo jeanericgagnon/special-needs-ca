@@ -1,0 +1,9 @@
+{
+	"id": "o7pYUA63tdBY8yS",
+	"json": "{\"id\":\"o7pYUA63tdBY8yS\",\"url\":\"https://rarediseases.org/rare-disease-day/light-up-a-monument/\",\"loadedUrl\":\"https://rarediseases.org/rare-disease-day/light-up-for-rare/\",\"uniqueKey\":\"https://rarediseases.org/rare-disease-day/light-up-a-monument\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:38.041Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/rare-disease-day/light-up-a-monument",
+	"url": "https://rarediseases.org/rare-disease-day/light-up-a-monument/"
+}

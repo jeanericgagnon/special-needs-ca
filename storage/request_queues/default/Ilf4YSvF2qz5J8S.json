@@ -1,0 +1,9 @@
+{
+	"id": "Ilf4YSvF2qz5J8S",
+	"json": "{\"id\":\"Ilf4YSvF2qz5J8S\",\"url\":\"https://www.ctc.ca.gov/commission/meetings-upcoming/\",\"loadedUrl\":\"https://www.ctc.ca.gov/commission/meetings-upcoming/\",\"uniqueKey\":\"https://www.ctc.ca.gov/commission/meetings-upcoming\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:56.479Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ctc.ca.gov/commission/meetings-upcoming",
+	"url": "https://www.ctc.ca.gov/commission/meetings-upcoming/"
+}

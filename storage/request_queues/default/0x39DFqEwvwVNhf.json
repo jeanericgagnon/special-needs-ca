@@ -1,0 +1,9 @@
+{
+	"id": "0x39DFqEwvwVNhf",
+	"json": "{\"id\":\"0x39DFqEwvwVNhf\",\"url\":\"https://www.cdss.ca.gov/Benefits-Services/Food-Nutrition-Services/Emergency-Food\",\"loadedUrl\":\"https://www.cdss.ca.gov/emergency-food\",\"uniqueKey\":\"https://www.cdss.ca.gov/Benefits-Services/Food-Nutrition-Services/Emergency-Food\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:27.156Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/Benefits-Services/Food-Nutrition-Services/Emergency-Food",
+	"url": "https://www.cdss.ca.gov/Benefits-Services/Food-Nutrition-Services/Emergency-Food"
+}

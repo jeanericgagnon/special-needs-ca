@@ -1,0 +1,9 @@
+{
+	"id": "6xXjhD3HF1colqb",
+	"json": "{\"id\":\"6xXjhD3HF1colqb\",\"url\":\"https://cdss.ca.gov/inforesources/Automated-Assistance-Claims/Extended-Foster-Care-Temp-Claim\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/automated-assistance-claims/extended-foster-care-temp-claim\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Automated-Assistance-Claims/Extended-Foster-Care-Temp-Claim\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:34.473Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/Automated-Assistance-Claims/Extended-Foster-Care-Temp-Claim",
+	"url": "https://cdss.ca.gov/inforesources/Automated-Assistance-Claims/Extended-Foster-Care-Temp-Claim"
+}

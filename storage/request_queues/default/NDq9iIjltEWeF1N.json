@@ -1,0 +1,9 @@
+{
+	"id": "NDq9iIjltEWeF1N",
+	"json": "{\"id\":\"NDq9iIjltEWeF1N\",\"url\":\"https://calable.ca.gov/news/the-sacramento-bee-california-forum\",\"loadedUrl\":\"https://calable.ca.gov/news/the-sacramento-bee-california-forum\",\"uniqueKey\":\"https://calable.ca.gov/news/the-sacramento-bee-california-forum\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:55.468Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://calable.ca.gov/news/the-sacramento-bee-california-forum",
+	"url": "https://calable.ca.gov/news/the-sacramento-bee-california-forum"
+}

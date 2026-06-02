@@ -1,0 +1,9 @@
+{
+	"id": "R5YXrxquvOkx6oa",
+	"json": "{\"id\":\"R5YXrxquvOkx6oa\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/21814/david-copenhaver-anesthesiology-pain_medicine-sacramento?FreeText%3aLast+name=Copenhaver\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/21814/david-copenhaver-anesthesiology-pain_medicine-sacramento?FreeText%3aLast+name=Copenhaver\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/21814/david-copenhaver-anesthesiology-pain_medicine-sacramento?FreeText%3ALast+name=Copenhaver\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:13.693Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/21814/david-copenhaver-anesthesiology-pain_medicine-sacramento?FreeText%3ALast+name=Copenhaver",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/21814/david-copenhaver-anesthesiology-pain_medicine-sacramento?FreeText%3aLast+name=Copenhaver"
+}

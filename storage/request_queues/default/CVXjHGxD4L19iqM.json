@@ -1,0 +1,9 @@
+{
+	"id": "CVXjHGxD4L19iqM",
+	"json": "{\"id\":\"CVXjHGxD4L19iqM\",\"url\":\"http://epicenter.cdph.ca.gov/\",\"loadedUrl\":\"http://epicenter.cdph.ca.gov/\",\"uniqueKey\":\"http://epicenter.cdph.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:22:45.545Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://epicenter.cdph.ca.gov",
+	"url": "http://epicenter.cdph.ca.gov/"
+}

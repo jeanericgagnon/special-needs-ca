@@ -1,0 +1,9 @@
+{
+	"id": "YefvXyV8m9g1tOP",
+	"json": "{\"id\":\"YefvXyV8m9g1tOP\",\"url\":\"https://health.ucdavis.edu/news/headlines/uc-davis-health-opens-doors-to-new-state-of-the-art-eye-care-facility-in-sacramento/2022/12\",\"loadedUrl\":\"https://health.ucdavis.edu/news/headlines/uc-davis-health-opens-doors-to-new-state-of-the-art-eye-care-facility-in-sacramento/2022/12\",\"uniqueKey\":\"https://health.ucdavis.edu/news/headlines/uc-davis-health-opens-doors-to-new-state-of-the-art-eye-care-facility-in-sacramento/2022/12\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:06.952Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/news/headlines/uc-davis-health-opens-doors-to-new-state-of-the-art-eye-care-facility-in-sacramento/2022/12",
+	"url": "https://health.ucdavis.edu/news/headlines/uc-davis-health-opens-doors-to-new-state-of-the-art-eye-care-facility-in-sacramento/2022/12"
+}

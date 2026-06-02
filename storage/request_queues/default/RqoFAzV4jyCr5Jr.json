@@ -1,0 +1,9 @@
+{
+	"id": "RqoFAzV4jyCr5Jr",
+	"json": "{\"id\":\"RqoFAzV4jyCr5Jr\",\"url\":\"https://cnprc.ucdavis.edu/cnprc-pilot-research-program-grants\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/cnprc-pilot-research-program-grants\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/cnprc-pilot-research-program-grants\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:11.361Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cnprc.ucdavis.edu/cnprc-pilot-research-program-grants",
+	"url": "https://cnprc.ucdavis.edu/cnprc-pilot-research-program-grants"
+}

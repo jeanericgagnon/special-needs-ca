@@ -1,0 +1,9 @@
+{
+	"id": "IUJW10OcznBUpXb",
+	"json": "{\"id\":\"IUJW10OcznBUpXb\",\"url\":\"https://lettersandscience.ucdavis.edu/minds-over-matters\",\"loadedUrl\":\"https://lettersandscience.ucdavis.edu/minds-over-matters\",\"uniqueKey\":\"https://lettersandscience.ucdavis.edu/minds-over-matters\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:23.899Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://lettersandscience.ucdavis.edu/minds-over-matters",
+	"url": "https://lettersandscience.ucdavis.edu/minds-over-matters"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "eVe5xzzGHWyVj6G",
+	"json": "{\"id\":\"eVe5xzzGHWyVj6G\",\"url\":\"https://rarediseases.org/rare-diseases/fetal-valproate-syndrome/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/fetal-valproate-syndrome/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/fetal-valproate-syndrome\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:12:18.439Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/rare-diseases/fetal-valproate-syndrome",
+	"url": "https://rarediseases.org/rare-diseases/fetal-valproate-syndrome/"
+}

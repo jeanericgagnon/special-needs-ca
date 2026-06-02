@@ -1,0 +1,9 @@
+{
+	"id": "r7YSawpXSscWhrl",
+	"json": "{\"id\":\"r7YSawpXSscWhrl\",\"url\":\"https://giving.ucdavis.edu/ways-to-give/student-foundation/senior-class-challenge\",\"loadedUrl\":\"https://giving.ucdavis.edu/ways-to-give/student-foundation/senior-class-challenge\",\"uniqueKey\":\"https://giving.ucdavis.edu/ways-to-give/student-foundation/senior-class-challenge\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:31.241Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://giving.ucdavis.edu/ways-to-give/student-foundation/senior-class-challenge",
+	"url": "https://giving.ucdavis.edu/ways-to-give/student-foundation/senior-class-challenge"
+}

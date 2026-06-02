@@ -1,0 +1,9 @@
+{
+	"id": "Sw7zG5CJKiYZKci",
+	"json": "{\"id\":\"Sw7zG5CJKiYZKci\",\"url\":\"https://rarediseases.org/rare-diseases/mef2c-deficiency/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/mef2c-deficiency/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/mef2c-deficiency\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:09:24.167Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/rare-diseases/mef2c-deficiency",
+	"url": "https://rarediseases.org/rare-diseases/mef2c-deficiency/"
+}

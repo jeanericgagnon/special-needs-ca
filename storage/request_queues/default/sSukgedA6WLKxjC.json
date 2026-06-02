@@ -1,0 +1,9 @@
+{
+	"id": "sSukgedA6WLKxjC",
+	"json": "{\"id\":\"sSukgedA6WLKxjC\",\"url\":\"https://www.cde.ca.gov/ls/he/hn/poolsafety.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ls/he/hn/poolsafety.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ls/he/hn/poolsafety.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:22:53.557Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ls/he/hn/poolsafety.asp",
+	"url": "https://www.cde.ca.gov/ls/he/hn/poolsafety.asp"
+}

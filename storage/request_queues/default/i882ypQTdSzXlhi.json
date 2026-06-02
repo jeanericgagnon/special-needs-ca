@@ -1,0 +1,9 @@
+{
+	"id": "i882ypQTdSzXlhi",
+	"json": "{\"id\":\"i882ypQTdSzXlhi\",\"url\":\"https://www.cde.ca.gov/ci/vp/cf/vapascheduleofevents.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=3179abfc-d1ed-47f1-8ab8-cdf091ff2624&ssb=19803290014&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fci%2Fvp%2Fcf%2Fvapascheduleofevents.asp&ssi=3c6b0401-ctxv-40cb-bf0e-2493486dfaf2&ssk=botmanager_support@radware.com&ssm=45852917751593947101894496587380&ssn=2b7b3cd51e09a665236a57dc4c2fabff280bd980541f-6e03-416b-b4a1d2&sso=9e8c81ca-ba729ef4872b3918a4b977ee527f4a0ea60c0151bdb6956e&ssp=95645804341780359129178038275191190&ssq=73114745638600328649856386961958387560818&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsInV6bXgiOiI3ZjkwMDBkMjlkYTVkNC04NDYxLTQxNjctOGQxZS0zZDNiNGIyZDM1ODMxLTE3ODAzNTYzODYxNTkwLTdiZTlhYmIxYzBmODg4M2IxMCIsIl9fdXptZiI6IjdmOTAwMGQ5ODA1NDFmLTZlMDMtNDE2Yi1iMWNhLWJhNzI5ZWY0ODcyYjEtMTc4MDM1NjM4NjE1OTAtMDAzYTU4YzkxYWJkZTk0N2VkYzEwIn0=\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/vp/cf/vapascheduleofevents.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T23:26:26.663Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ci/vp/cf/vapascheduleofevents.asp",
+	"url": "https://www.cde.ca.gov/ci/vp/cf/vapascheduleofevents.asp"
+}

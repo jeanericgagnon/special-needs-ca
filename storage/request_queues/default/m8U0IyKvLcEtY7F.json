@@ -1,0 +1,9 @@
+{
+	"id": "m8U0IyKvLcEtY7F",
+	"json": "{\"id\":\"m8U0IyKvLcEtY7F\",\"url\":\"https://apps.dhcs.ca.gov/listsubscribe/default.aspx?list=BHTTRANSFORMATION%22%20%5Co%20%22https://apps.dhcs.ca.gov/listsubscribe/default.aspx?list=bhttransformation%22%20%5Ct%20%22_blank\",\"loadedUrl\":\"https://apps.dhcs.ca.gov/listsubscribe/default.aspx?list=BHTTRANSFORMATION%22%20%5Co%20%22https://apps.dhcs.ca.gov/listsubscribe/default.aspx?list=bhttransformation%22%20%5Ct%20%22_blank\",\"uniqueKey\":\"https://apps.dhcs.ca.gov/listsubscribe/default.aspx?list=BHTTRANSFORMATION%22+%5Co+%22https%3A%2F%2Fapps.dhcs.ca.gov%2Flistsubscribe%2Fdefault.aspx%3Flist%3Dbhttransformation%22+%5Ct+%22_blank\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:47.225Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://apps.dhcs.ca.gov/listsubscribe/default.aspx?list=BHTTRANSFORMATION%22+%5Co+%22https%3A%2F%2Fapps.dhcs.ca.gov%2Flistsubscribe%2Fdefault.aspx%3Flist%3Dbhttransformation%22+%5Ct+%22_blank",
+	"url": "https://apps.dhcs.ca.gov/listsubscribe/default.aspx?list=BHTTRANSFORMATION%22%20%5Co%20%22https://apps.dhcs.ca.gov/listsubscribe/default.aspx?list=bhttransformation%22%20%5Ct%20%22_blank"
+}

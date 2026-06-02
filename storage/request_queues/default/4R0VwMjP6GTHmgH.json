@@ -1,0 +1,9 @@
+{
+	"id": "4R0VwMjP6GTHmgH",
+	"json": "{\"id\":\"4R0VwMjP6GTHmgH\",\"url\":\"https://health.ucdavis.edu/children/team/42827/david-brauer-allergy-asthma-immunology-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/children/team/42827/david-brauer-allergy-asthma-immunology-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/children/team/42827/david-brauer-allergy-asthma-immunology-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:11.776Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/children/team/42827/david-brauer-allergy-asthma-immunology-sacramento",
+	"url": "https://health.ucdavis.edu/children/team/42827/david-brauer-allergy-asthma-immunology-sacramento"
+}

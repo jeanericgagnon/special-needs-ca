@@ -1,0 +1,9 @@
+{
+	"id": "3wv0ZQKHw3gjEcW",
+	"json": "{\"id\":\"3wv0ZQKHw3gjEcW\",\"url\":\"https://neuroscience.ucdavis.edu/tags/uc-davis-college-letters-and-science\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/tags/uc-davis-college-letters-and-science\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/tags/uc-davis-college-letters-and-science\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:00.673Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://neuroscience.ucdavis.edu/tags/uc-davis-college-letters-and-science",
+	"url": "https://neuroscience.ucdavis.edu/tags/uc-davis-college-letters-and-science"
+}

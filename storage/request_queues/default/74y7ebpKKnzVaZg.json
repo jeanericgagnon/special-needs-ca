@@ -1,0 +1,9 @@
+{
+	"id": "74y7ebpKKnzVaZg",
+	"json": "{\"id\":\"74y7ebpKKnzVaZg\",\"url\":\"https://health.ucdavis.edu/belonging/programs/prep-medico/\",\"loadedUrl\":\"https://health.ucdavis.edu/belonging/programs/prep-medico/\",\"uniqueKey\":\"https://health.ucdavis.edu/belonging/programs/prep-medico\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:04.194Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/belonging/programs/prep-medico",
+	"url": "https://health.ucdavis.edu/belonging/programs/prep-medico/"
+}

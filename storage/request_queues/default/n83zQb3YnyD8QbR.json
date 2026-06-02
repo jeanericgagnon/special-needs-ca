@@ -1,0 +1,9 @@
+{
+	"id": "n83zQb3YnyD8QbR",
+	"json": "{\"id\":\"n83zQb3YnyD8QbR\",\"url\":\"https://www.csdr-cde.ca.gov/highschool/\",\"loadedUrl\":\"https://www.csdr-cde.ca.gov/highschool/\",\"uniqueKey\":\"https://www.csdr-cde.ca.gov/highschool\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:10.791Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csdr-cde.ca.gov/highschool",
+	"url": "https://www.csdr-cde.ca.gov/highschool/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "F5aFgAlfgEzGJ9X",
+	"json": "{\"id\":\"F5aFgAlfgEzGJ9X\",\"url\":\"http://www.ucdmc.ucdavis.edu/nursing/ourteam/faculty/Luu_Bio.html\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/ourteam/faculty/Luu_Bio.html\",\"uniqueKey\":\"http://www.ucdmc.ucdavis.edu/nursing/ourteam/faculty/Luu_Bio.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:26.621Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.ucdmc.ucdavis.edu/nursing/ourteam/faculty/Luu_Bio.html",
+	"url": "http://www.ucdmc.ucdavis.edu/nursing/ourteam/faculty/Luu_Bio.html"
+}

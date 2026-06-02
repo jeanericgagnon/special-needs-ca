@@ -1,0 +1,9 @@
+{
+	"id": "zrdUd2Ud1TdBPrP",
+	"json": "{\"id\":\"zrdUd2Ud1TdBPrP\",\"url\":\"https://scdd.ca.gov/grantinformation/\",\"loadedUrl\":\"https://scdd.ca.gov/grantinformation/\",\"uniqueKey\":\"https://scdd.ca.gov/grantinformation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:29.065Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/grantinformation",
+	"url": "https://scdd.ca.gov/grantinformation/"
+}

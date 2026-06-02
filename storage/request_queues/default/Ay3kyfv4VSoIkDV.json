@@ -1,0 +1,9 @@
+{
+	"id": "Ay3kyfv4VSoIkDV",
+	"json": "{\"id\":\"Ay3kyfv4VSoIkDV\",\"url\":\"https://health.ucdavis.edu/patients-visitors/accepted-health-plans/covered-california\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/accepted-health-plans/covered-california\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/accepted-health-plans/covered-california\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:55.078Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/accepted-health-plans/covered-california",
+	"url": "https://health.ucdavis.edu/patients-visitors/accepted-health-plans/covered-california"
+}

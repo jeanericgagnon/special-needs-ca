@@ -1,0 +1,9 @@
+{
+	"id": "lNAGim41HnLS7fA",
+	"json": "{\"id\":\"lNAGim41HnLS7fA\",\"url\":\"https://www.cde.ca.gov/fg/aa/ca/reverseopioid.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/fg/aa/ca/reverseopioid.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/fg/aa/ca/reverseopioid.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:22:21.593Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/fg/aa/ca/reverseopioid.asp",
+	"url": "https://www.cde.ca.gov/fg/aa/ca/reverseopioid.asp"
+}

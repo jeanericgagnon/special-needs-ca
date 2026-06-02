@@ -1,0 +1,9 @@
+{
+	"id": "POTDrFd9eSPBFmh",
+	"json": "{\"id\":\"POTDrFd9eSPBFmh\",\"url\":\"https://www.csb-cde.ca.gov/resources/lessons/eyeballclasses.aspx\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=410a7a31-344b-4f5d-9f71-0c4726a573a5&ssb=43734269068&ssc=https%3A%2F%2Fwww.csb-cde.ca.gov%2Fresources%2Flessons%2Feyeballclasses.aspx&ssi=edc81c0e-cuez-4f4e-8abe-f7eec6980156&ssk=botmanager_support@radware.com&ssm=97576506492237163162908662114497&ssn=1805d5823b66764ee4b78c793e2f50aae42ffcf4a626-c48a-4df3-a07a61&sso=9712589e-9a58ac1546941592e4f3ddec5acbcedc2e54b6e843f3b790&ssp=89033368551780334332178038287066911&ssq=22501542762759253826425905944574385902105&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBmY2Y0YTYyNi1jNDhhLTRkZjMtYTg5ZS05YTU4YWMxNTQ2OTQxLTE3ODAzMjU5MDU2NjkxNzIxNTM4LTAwMzkxMjgwMmVmNjI1Nzg5ODMxNiIsInJkIjoiY2EuZ292IiwidXpteCI6IjdmOTAwMDVkMTU2NWJmLWUzNTQtNDg0Yy1hNGY4LWU5ZDgyYTExYTQ5NzEtMTc4MDMyNTkwNTY2OTE3MjE1MzgtZGYxMDJkYzZmNWJjZTc4NzI1In0=\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/resources/lessons/eyeballclasses.aspx\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:27:07.774Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csb-cde.ca.gov/resources/lessons/eyeballclasses.aspx",
+	"url": "https://www.csb-cde.ca.gov/resources/lessons/eyeballclasses.aspx"
+}

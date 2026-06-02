@@ -1,0 +1,9 @@
+{
+	"id": "PMfI3sFS4isYneb",
+	"json": "{\"id\":\"PMfI3sFS4isYneb\",\"url\":\"https://www.cde.ca.gov/fg/aa/ca/saccoeequity1time.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=a9738941-b2f3-45a4-a6ef-1d1dcd2088f7&ssb=65077287062&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Ffg%2Faa%2Fca%2Fsaccoeequity1time.asp&ssi=fece1481-ctxv-4ca5-bdb9-ccdf05cd554a&ssk=botmanager_support@radware.com&ssm=41545683553872161106069963873182&ssn=202c396b7bdab77adf25d7940fd8e7fe05d26e5a64de-a4be-41b2-bc11d4&sso=cc9c2b19-91a4f2e3efaf150470532a8cdd02eb859eb7ab72ccdec981&ssp=86316976481780367638178032551962665&ssq=70868372734282765467727342047039142735153&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2Y5MDAwN2QyMDVmNzYtODM5Mi00NmE5LWJlYzItMmYyNDU1MDNlYTk5MS0xNzgwMzI3MzQyNjgyMC05ZWUzZjY1NTIxNmM4ZWJjMTAiLCJfX3V6bWYiOiI3ZjkwMDA2ZTVhNjRkZS1hNGJlLTQxYjItYmIxOS05MWE0ZjJlM2VmYWYxLTE3ODAzMjczNDI2ODIwLTAwMzhmNzgyZjdhODQzYjhhNGExMCIsInJkIjoiY2EuZ292In0=\",\"uniqueKey\":\"https://www.cde.ca.gov/fg/aa/ca/saccoeequity1time.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:22:22.774Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/fg/aa/ca/saccoeequity1time.asp",
+	"url": "https://www.cde.ca.gov/fg/aa/ca/saccoeequity1time.asp"
+}

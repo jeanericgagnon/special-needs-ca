@@ -1,0 +1,9 @@
+{
+	"id": "GCY0lQYQp8s1V3Y",
+	"json": "{\"id\":\"GCY0lQYQp8s1V3Y\",\"url\":\"https://rarediseases.org/event/mpn-research-foundation-global-patient-unmet-needs-assessment/\",\"loadedUrl\":\"https://rarediseases.org/event/mpn-research-foundation-global-patient-unmet-needs-assessment/\",\"uniqueKey\":\"https://rarediseases.org/event/mpn-research-foundation-global-patient-unmet-needs-assessment\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:31.960Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/event/mpn-research-foundation-global-patient-unmet-needs-assessment",
+	"url": "https://rarediseases.org/event/mpn-research-foundation-global-patient-unmet-needs-assessment/"
+}

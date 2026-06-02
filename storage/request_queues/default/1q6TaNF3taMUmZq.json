@@ -1,0 +1,9 @@
+{
+	"id": "1q6TaNF3taMUmZq",
+	"json": "{\"id\":\"1q6TaNF3taMUmZq\",\"url\":\"http://blog.ucdmc.ucdavis.edu/chesthealth/\",\"loadedUrl\":\"https://health.ucdavis.edu/news/blogs/\",\"uniqueKey\":\"http://blog.ucdmc.ucdavis.edu/chesthealth\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:51.425Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://blog.ucdmc.ucdavis.edu/chesthealth",
+	"url": "http://blog.ucdmc.ucdavis.edu/chesthealth/"
+}

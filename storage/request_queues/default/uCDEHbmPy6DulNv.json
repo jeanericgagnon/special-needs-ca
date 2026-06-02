@@ -1,0 +1,9 @@
+{
+	"id": "uCDEHbmPy6DulNv",
+	"json": "{\"id\":\"uCDEHbmPy6DulNv\",\"url\":\"https://www.cde.ca.gov/sp/ml/\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=98c7bf31-de50-49ae-a1f8-50ef9c794928&ssb=29198278720&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fsp%2Fml%2F&ssi=a35916d1-ctxv-45c2-9e4a-ada0d8cea202&ssk=botmanager_support@radware.com&ssm=92148860714061285101976066789718&ssn=d8474ebf5a9d79d796f27b2cca4ffa4fda63741ce02e-633d-4f93-b28fde&sso=f3fcbb9a-67165be936a697e5ca967cd514c75dd56b4f7ecd021eb453&ssp=93193461631780336428178039701472227&ssq=80318202587028591275525870664780621839765&ssr=MTcyLjU2LjI0My4xOTM=&sst=&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsIl9fdXptZiI6IjdmOTAwMDc0MWNlMDJlLTYzM2QtNGY5My1iYjlhLTY3MTY1YmU5MzZhNjEtMTc4MDMyNTg3MDkxNDAtMDAzNGIyM2I2ODJhY2YwMjcyZDEwIiwidXpteCI6IjdmOTAwMDkxN2YzZWQxLTM5ZDUtNGVjMi04ZmZhLTkyZGEwZjkwYWJhZDEtMTc4MDMyNTg3MDkxNDAtNTA2NDk5ZjllNTRjOTlkYTEwIn0=\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/ml\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T14:57:51.287Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/sp/ml",
+	"url": "https://www.cde.ca.gov/sp/ml/"
+}

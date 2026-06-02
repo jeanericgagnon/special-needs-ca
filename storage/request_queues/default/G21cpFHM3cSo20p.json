@@ -1,0 +1,9 @@
+{
+	"id": "G21cpFHM3cSo20p",
+	"json": "{\"id\":\"G21cpFHM3cSo20p\",\"url\":\"https://cdss.ca.gov/inforesources/Immigration\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/immigration\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Immigration\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:12.940Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/Immigration",
+	"url": "https://cdss.ca.gov/inforesources/Immigration"
+}

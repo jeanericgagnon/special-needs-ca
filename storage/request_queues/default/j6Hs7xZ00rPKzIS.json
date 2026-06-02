@@ -1,0 +1,9 @@
+{
+	"id": "j6Hs7xZ00rPKzIS",
+	"json": "{\"id\":\"j6Hs7xZ00rPKzIS\",\"url\":\"https://health.ucdavis.edu/pharmacy/health-solutions/prescription-payment-link\",\"loadedUrl\":\"https://health.ucdavis.edu/pharmacy/health-solutions/prescription-payment-link\",\"uniqueKey\":\"https://health.ucdavis.edu/pharmacy/health-solutions/prescription-payment-link\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:42.206Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/pharmacy/health-solutions/prescription-payment-link",
+	"url": "https://health.ucdavis.edu/pharmacy/health-solutions/prescription-payment-link"
+}

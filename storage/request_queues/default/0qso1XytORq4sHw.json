@@ -1,0 +1,9 @@
+{
+	"id": "0qso1XytORq4sHw",
+	"json": "{\"id\":\"0qso1XytORq4sHw\",\"url\":\"https://www.assembly.ca.gov/assemblymembers?sort=district&order=asc\",\"loadedUrl\":\"https://www.assembly.ca.gov/assemblymembers?sort=district&order=asc\",\"uniqueKey\":\"https://www.assembly.ca.gov/assemblymembers?order=asc&sort=district\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:03:00.858Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.assembly.ca.gov/assemblymembers?order=asc&sort=district",
+	"url": "https://www.assembly.ca.gov/assemblymembers?sort=district&order=asc"
+}

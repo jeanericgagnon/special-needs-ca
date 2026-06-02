@@ -1,0 +1,9 @@
+{
+	"id": "o0c3I65wK58T0pw",
+	"json": "{\"id\":\"o0c3I65wK58T0pw\",\"url\":\"https://www.ucdavis.edu/news/faculty-staff-honored-good-stewards\",\"loadedUrl\":\"https://www.ucdavis.edu/news/faculty-staff-honored-good-stewards\",\"uniqueKey\":\"https://www.ucdavis.edu/news/faculty-staff-honored-good-stewards\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:05.125Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ucdavis.edu/news/faculty-staff-honored-good-stewards",
+	"url": "https://www.ucdavis.edu/news/faculty-staff-honored-good-stewards"
+}

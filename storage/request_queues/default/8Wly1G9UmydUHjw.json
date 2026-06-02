@@ -1,0 +1,9 @@
+{
+	"id": "8Wly1G9UmydUHjw",
+	"json": "{\"id\":\"8Wly1G9UmydUHjw\",\"url\":\"https://www.ctc.ca.gov/educator-prep/literacy-and-reading-instruction\",\"loadedUrl\":\"https://www.ctc.ca.gov/program-sponsors/prep-programs/lri/\",\"uniqueKey\":\"https://www.ctc.ca.gov/educator-prep/literacy-and-reading-instruction\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:19.925Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ctc.ca.gov/educator-prep/literacy-and-reading-instruction",
+	"url": "https://www.ctc.ca.gov/educator-prep/literacy-and-reading-instruction"
+}

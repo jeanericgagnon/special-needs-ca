@@ -1,0 +1,9 @@
+{
+	"id": "SOaQB1xdTAhgl03",
+	"json": "{\"id\":\"SOaQB1xdTAhgl03\",\"url\":\"https://health.ucdavis.edu/internalmedicine/education_programs/IMPSYCH/impsych_welcome.html\",\"loadedUrl\":\"https://health.ucdavis.edu/internal-medicine/academic-programs/residency/programs/im-psych/\",\"uniqueKey\":\"https://health.ucdavis.edu/internalmedicine/education_programs/IMPSYCH/impsych_welcome.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:56.496Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/internalmedicine/education_programs/IMPSYCH/impsych_welcome.html",
+	"url": "https://health.ucdavis.edu/internalmedicine/education_programs/IMPSYCH/impsych_welcome.html"
+}

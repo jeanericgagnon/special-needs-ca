@@ -1,0 +1,9 @@
+{
+	"id": "8ghUnT3ktGh3tFL",
+	"json": "{\"id\":\"8ghUnT3ktGh3tFL\",\"url\":\"https://health.ucdavis.edu/mind-institute/education/psychology-training-program/\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/education/psychology-training-program/\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/education/psychology-training-program\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:05:26.413Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mind-institute/education/psychology-training-program",
+	"url": "https://health.ucdavis.edu/mind-institute/education/psychology-training-program/"
+}

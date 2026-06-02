@@ -1,0 +1,9 @@
+{
+	"id": "q2QOuRCnNQLxLmR",
+	"json": "{\"id\":\"q2QOuRCnNQLxLmR\",\"url\":\"http://capitolmuseum.ca.gov/architecture-and-history/architectural-virtual-tour\",\"loadedUrl\":\"https://capitolmuseum.ca.gov/about-the-capitol/architecture/\",\"uniqueKey\":\"http://capitolmuseum.ca.gov/architecture-and-history/architectural-virtual-tour\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:03:00.335Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://capitolmuseum.ca.gov/architecture-and-history/architectural-virtual-tour",
+	"url": "http://capitolmuseum.ca.gov/architecture-and-history/architectural-virtual-tour"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "2u0J0hO5UmGwfTl",
+	"json": "{\"id\":\"2u0J0hO5UmGwfTl\",\"url\":\"https://www.cdph.ca.gov/Programs/CCLHO/Pages/HealthOfficerResources.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCLHO/Pages/HealthOfficerResources.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCLHO/Pages/HealthOfficerResources.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:25.815Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCLHO/Pages/HealthOfficerResources.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CCLHO/Pages/HealthOfficerResources.aspx"
+}

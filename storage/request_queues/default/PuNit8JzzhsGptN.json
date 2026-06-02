@@ -1,0 +1,9 @@
+{
+	"id": "PuNit8JzzhsGptN",
+	"json": "{\"id\":\"PuNit8JzzhsGptN\",\"url\":\"https://health.ucdavis.edu/news/social-media/#social-rss-feeds\",\"loadedUrl\":\"https://health.ucdavis.edu/news/social-media/#social-rss-feeds\",\"uniqueKey\":\"https://health.ucdavis.edu/news/social-media\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:53.656Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/news/social-media",
+	"url": "https://health.ucdavis.edu/news/social-media/#social-rss-feeds"
+}

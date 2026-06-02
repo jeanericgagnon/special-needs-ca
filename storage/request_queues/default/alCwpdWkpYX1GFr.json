@@ -1,0 +1,9 @@
+{
+	"id": "alCwpdWkpYX1GFr",
+	"json": "{\"id\":\"alCwpdWkpYX1GFr\",\"url\":\"https://health.ucdavis.edu/mindinstitute/research/marbles/index.html\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/research/marbles/\",\"uniqueKey\":\"https://health.ucdavis.edu/mindinstitute/research/marbles/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:24.576Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mindinstitute/research/marbles/index.html",
+	"url": "https://health.ucdavis.edu/mindinstitute/research/marbles/index.html"
+}

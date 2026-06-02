@@ -1,0 +1,9 @@
+{
+	"id": "XoYDDVM0FWB7ZCl",
+	"json": "{\"id\":\"XoYDDVM0FWB7ZCl\",\"url\":\"https://www.ucdmc.ucdavis.edu/welcome/index.html\",\"loadedUrl\":\"https://health.ucdavis.edu/welcome/\",\"uniqueKey\":\"https://www.ucdmc.ucdavis.edu/welcome/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:29.893Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ucdmc.ucdavis.edu/welcome/index.html",
+	"url": "https://www.ucdmc.ucdavis.edu/welcome/index.html"
+}

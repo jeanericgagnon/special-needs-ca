@@ -1,0 +1,9 @@
+{
+	"id": "cQYaPnnn3o6G24L",
+	"json": "{\"id\":\"cQYaPnnn3o6G24L\",\"url\":\"https://www.dds.ca.gov/services/coordinated-career-pathways-ccp-services/\",\"loadedUrl\":\"https://www.dds.ca.gov/services/coordinated-career-pathways-ccp-services/\",\"uniqueKey\":\"https://www.dds.ca.gov/services/coordinated-career-pathways-ccp-services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:23.741Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/services/coordinated-career-pathways-ccp-services",
+	"url": "https://www.dds.ca.gov/services/coordinated-career-pathways-ccp-services/"
+}

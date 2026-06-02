@@ -1,0 +1,9 @@
+{
+	"id": "43XPzNHrybY4m1l",
+	"json": "{\"id\":\"43XPzNHrybY4m1l\",\"url\":\"https://health.ucdavis.edu/mind-institute/centers/intellectual-developmental-disabilities-research/cores/biological-analysis\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/centers/intellectual-developmental-disabilities-research/cores/biological-analysis\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/centers/intellectual-developmental-disabilities-research/cores/biological-analysis\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:15.779Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mind-institute/centers/intellectual-developmental-disabilities-research/cores/biological-analysis",
+	"url": "https://health.ucdavis.edu/mind-institute/centers/intellectual-developmental-disabilities-research/cores/biological-analysis"
+}

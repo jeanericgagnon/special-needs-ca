@@ -1,0 +1,9 @@
+{
+	"id": "md6JooNIPRUDYtf",
+	"json": "{\"id\":\"md6JooNIPRUDYtf\",\"url\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/pavilion-surgery-center\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/pavilion-surgery-center\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/pavilion-surgery-center\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:54.836Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/locations/specialty-care/pavilion-surgery-center",
+	"url": "https://health.ucdavis.edu/patients-visitors/locations/specialty-care/pavilion-surgery-center"
+}

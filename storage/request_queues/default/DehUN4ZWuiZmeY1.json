@@ -1,0 +1,9 @@
+{
+	"id": "DehUN4ZWuiZmeY1",
+	"json": "{\"id\":\"DehUN4ZWuiZmeY1\",\"url\":\"https://health.ucdavis.edu/mind-institute/resources/family-resource-centers\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/resources/family-resource-centers\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/resources/family-resource-centers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:38.354Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mind-institute/resources/family-resource-centers",
+	"url": "https://health.ucdavis.edu/mind-institute/resources/family-resource-centers"
+}

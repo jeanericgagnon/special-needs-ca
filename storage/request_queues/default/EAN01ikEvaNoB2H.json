@@ -1,0 +1,9 @@
+{
+	"id": "EAN01ikEvaNoB2H",
+	"json": "{\"id\":\"EAN01ikEvaNoB2H\",\"url\":\"https://cdss.ca.gov/cacfp/waivers\",\"loadedUrl\":\"https://cdss.ca.gov/cacfp/waivers\",\"uniqueKey\":\"https://cdss.ca.gov/cacfp/waivers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:58:33.211Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/cacfp/waivers",
+	"url": "https://cdss.ca.gov/cacfp/waivers"
+}

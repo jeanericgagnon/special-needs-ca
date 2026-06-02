@@ -1,0 +1,9 @@
+{
+	"id": "X5t4sNFC3MrPWLz",
+	"json": "{\"id\":\"X5t4sNFC3MrPWLz\",\"url\":\"https://www.dds.ca.gov/individuals-and-families/wellness-toolkit/vendors-providers/diabetes/#main-content\",\"loadedUrl\":\"https://www.dds.ca.gov/individuals-and-families/wellness-toolkit/vendors-providers/diabetes/#main-content\",\"uniqueKey\":\"https://www.dds.ca.gov/individuals-and-families/wellness-toolkit/vendors-providers/diabetes\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:27.074Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/individuals-and-families/wellness-toolkit/vendors-providers/diabetes",
+	"url": "https://www.dds.ca.gov/individuals-and-families/wellness-toolkit/vendors-providers/diabetes/#main-content"
+}

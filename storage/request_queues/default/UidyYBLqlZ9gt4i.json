@@ -1,0 +1,9 @@
+{
+	"id": "UidyYBLqlZ9gt4i",
+	"json": "{\"id\":\"UidyYBLqlZ9gt4i\",\"url\":\"https://give.ucdavis.edu/MNSG/NEURENG\",\"loadedUrl\":\"https://give.ucdavis.edu/MNSG/NEURENG\",\"uniqueKey\":\"https://give.ucdavis.edu/MNSG/NEURENG\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:03.328Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/MNSG/NEURENG",
+	"url": "https://give.ucdavis.edu/MNSG/NEURENG"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "HKpfeSeEiceA22D",
+	"json": "{\"id\":\"HKpfeSeEiceA22D\",\"url\":\"https://give.ucdavis.edu/CCAD/CC49779\",\"loadedUrl\":\"https://give.ucdavis.edu/CCAD/CC49779\",\"uniqueKey\":\"https://give.ucdavis.edu/CCAD/CC49779\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:03.634Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/CCAD/CC49779",
+	"url": "https://give.ucdavis.edu/CCAD/CC49779"
+}

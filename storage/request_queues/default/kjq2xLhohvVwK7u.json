@@ -1,0 +1,9 @@
+{
+	"id": "kjq2xLhohvVwK7u",
+	"json": "{\"id\":\"kjq2xLhohvVwK7u\",\"url\":\"http://www.ucdmc.ucdavis.edu/neurology/\",\"loadedUrl\":\"https://health.ucdavis.edu/neurology/\",\"uniqueKey\":\"http://www.ucdmc.ucdavis.edu/neurology\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:47:17.314Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.ucdmc.ucdavis.edu/neurology",
+	"url": "http://www.ucdmc.ucdavis.edu/neurology/"
+}

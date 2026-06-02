@@ -1,0 +1,9 @@
+{
+	"id": "kCqQv5uPsQiNBxx",
+	"json": "{\"id\":\"kCqQv5uPsQiNBxx\",\"url\":\"https://health.ucdavis.edu/discovering-healthy/patient-stories/\",\"loadedUrl\":\"https://health.ucdavis.edu/discovering-healthy/patient-stories/\",\"uniqueKey\":\"https://health.ucdavis.edu/discovering-healthy/patient-stories\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:24.501Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/discovering-healthy/patient-stories",
+	"url": "https://health.ucdavis.edu/discovering-healthy/patient-stories/"
+}

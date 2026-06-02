@@ -1,0 +1,9 @@
+{
+	"id": "CbfAnxfDnn0vc5E",
+	"json": "{\"id\":\"CbfAnxfDnn0vc5E\",\"url\":\"https://newstudentprograms.ucdavis.edu/orientation#main-content\",\"loadedUrl\":\"https://newstudentprograms.ucdavis.edu/orientation#main-content\",\"uniqueKey\":\"https://newstudentprograms.ucdavis.edu/orientation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:34:29.055Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://newstudentprograms.ucdavis.edu/orientation",
+	"url": "https://newstudentprograms.ucdavis.edu/orientation#main-content"
+}

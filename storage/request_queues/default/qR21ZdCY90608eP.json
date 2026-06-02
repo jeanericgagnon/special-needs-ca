@@ -1,0 +1,9 @@
+{
+	"id": "qR21ZdCY90608eP",
+	"json": "{\"id\":\"qR21ZdCY90608eP\",\"url\":\"https://gis.data.chhs.ca.gov/\",\"loadedUrl\":\"https://gis.data.chhs.ca.gov/\",\"uniqueKey\":\"https://gis.data.chhs.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:46.700Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://gis.data.chhs.ca.gov",
+	"url": "https://gis.data.chhs.ca.gov/"
+}

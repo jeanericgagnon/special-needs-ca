@@ -1,0 +1,9 @@
+{
+	"id": "hX3brHdaR6kgqv6",
+	"json": "{\"id\":\"hX3brHdaR6kgqv6\",\"url\":\"https://oig.ssa.gov/fraud-reporting/splash/?URL=%2Fpfrf%2Fhome&LVL=3#main-content\",\"loadedUrl\":\"https://oig.ssa.gov/fraud-reporting/splash/?URL=%2Fpfrf%2Fhome&LVL=3#main-content\",\"uniqueKey\":\"https://oig.ssa.gov/fraud-reporting/splash?LVL=3&URL=%2Fpfrf%2Fhome\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:36.231Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://oig.ssa.gov/fraud-reporting/splash?LVL=3&URL=%2Fpfrf%2Fhome",
+	"url": "https://oig.ssa.gov/fraud-reporting/splash/?URL=%2Fpfrf%2Fhome&LVL=3#main-content"
+}

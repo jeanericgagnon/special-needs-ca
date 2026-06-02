@@ -1,0 +1,9 @@
+{
+	"id": "qh1pp5zTwh0aLax",
+	"json": "{\"id\":\"qh1pp5zTwh0aLax\",\"url\":\"https://www.cdph.ca.gov/Programs/cls/dehl/ehl/Pages/About-the-Environmental-Health-Laboratory-.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/cls/dehl/ehl/Pages/About-the-Environmental-Health-Laboratory-.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/cls/dehl/ehl/Pages/About-the-Environmental-Health-Laboratory-.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:49:20.483Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/cls/dehl/ehl/Pages/About-the-Environmental-Health-Laboratory-.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/cls/dehl/ehl/Pages/About-the-Environmental-Health-Laboratory-.aspx"
+}

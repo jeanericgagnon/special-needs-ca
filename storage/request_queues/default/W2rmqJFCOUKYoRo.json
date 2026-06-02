@@ -1,0 +1,9 @@
+{
+	"id": "W2rmqJFCOUKYoRo",
+	"json": "{\"id\":\"W2rmqJFCOUKYoRo\",\"url\":\"https://calable.ca.gov/faqs?page=12\",\"loadedUrl\":\"https://calable.ca.gov/faqs?page=12\",\"uniqueKey\":\"https://calable.ca.gov/faqs?page=12\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:50.631Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://calable.ca.gov/faqs?page=12",
+	"url": "https://calable.ca.gov/faqs?page=12"
+}

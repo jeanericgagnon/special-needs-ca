@@ -1,0 +1,9 @@
+{
+	"id": "f2Km6fJxLoS8PJy",
+	"json": "{\"id\":\"f2Km6fJxLoS8PJy\",\"url\":\"https://www.ctc.ca.gov/employers/assignment-resources/services/librarian-media/\",\"loadedUrl\":\"https://www.ctc.ca.gov/employers/assignment-resources/services/librarian-media/\",\"uniqueKey\":\"https://www.ctc.ca.gov/employers/assignment-resources/services/librarian-media\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:57.663Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ctc.ca.gov/employers/assignment-resources/services/librarian-media",
+	"url": "https://www.ctc.ca.gov/employers/assignment-resources/services/librarian-media/"
+}

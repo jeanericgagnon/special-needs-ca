@@ -1,0 +1,9 @@
+{
+	"id": "qM4aBAvcUUerR6A",
+	"json": "{\"id\":\"qM4aBAvcUUerR6A\",\"url\":\"https://www.chhs.ca.gov/blog/2019/07/07/chhs-earthquake-consumer-resources/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2019/07/07/chhs-earthquake-consumer-resources/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2019/07/07/chhs-earthquake-consumer-resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:07.176Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chhs.ca.gov/blog/2019/07/07/chhs-earthquake-consumer-resources",
+	"url": "https://www.chhs.ca.gov/blog/2019/07/07/chhs-earthquake-consumer-resources/"
+}

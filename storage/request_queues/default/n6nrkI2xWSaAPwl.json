@@ -1,0 +1,9 @@
+{
+	"id": "n6nrkI2xWSaAPwl",
+	"json": "{\"id\":\"n6nrkI2xWSaAPwl\",\"url\":\"https://hr.ucdavis.edu/departments/recruitment/ucd/selection/background-checks\",\"loadedUrl\":\"https://hr.ucdavis.edu/departments/recruitment/ucd/selection/background-checks\",\"uniqueKey\":\"https://hr.ucdavis.edu/departments/recruitment/ucd/selection/background-checks\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:18.216Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/departments/recruitment/ucd/selection/background-checks",
+	"url": "https://hr.ucdavis.edu/departments/recruitment/ucd/selection/background-checks"
+}

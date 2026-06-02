@@ -1,0 +1,9 @@
+{
+	"id": "fX4RYskMVOXg7nu",
+	"json": "{\"id\":\"fX4RYskMVOXg7nu\",\"url\":\"https://www.library.ca.gov/about/senior-staff/\",\"loadedUrl\":\"https://www.library.ca.gov/about/senior-staff/\",\"uniqueKey\":\"https://www.library.ca.gov/about/senior-staff\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:18.263Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.library.ca.gov/about/senior-staff",
+	"url": "https://www.library.ca.gov/about/senior-staff/"
+}

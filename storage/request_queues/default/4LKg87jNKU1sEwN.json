@@ -1,0 +1,9 @@
+{
+	"id": "4LKg87jNKU1sEwN",
+	"json": "{\"id\":\"4LKg87jNKU1sEwN\",\"url\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/STD.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/STD.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/STD.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:42.076Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/STD.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/STD.aspx"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "V3Ub5qMcI5XW8Bf",
+	"json": "{\"id\":\"V3Ub5qMcI5XW8Bf\",\"url\":\"http://www.cdss.ca.gov/inforesources/IHSS\",\"loadedUrl\":\"https://www.cdss.ca.gov/in-home-supportive-services\",\"uniqueKey\":\"http://www.cdss.ca.gov/inforesources/IHSS\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:01.976Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.cdss.ca.gov/inforesources/IHSS",
+	"url": "http://www.cdss.ca.gov/inforesources/IHSS"
+}

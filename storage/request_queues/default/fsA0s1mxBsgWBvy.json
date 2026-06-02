@@ -1,0 +1,9 @@
+{
+	"id": "fsA0s1mxBsgWBvy",
+	"json": "{\"id\":\"fsA0s1mxBsgWBvy\",\"url\":\"https://www.dor.ca.gov/Home/PrivacyPolicy\",\"loadedUrl\":\"https://www.dor.ca.gov/Home/PrivacyPolicy\",\"uniqueKey\":\"https://www.dor.ca.gov/Home/PrivacyPolicy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T17:14:00.086Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dor.ca.gov/Home/PrivacyPolicy",
+	"url": "https://www.dor.ca.gov/Home/PrivacyPolicy"
+}

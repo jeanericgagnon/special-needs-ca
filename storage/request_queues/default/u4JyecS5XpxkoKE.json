@@ -1,0 +1,9 @@
+{
+	"id": "u4JyecS5XpxkoKE",
+	"json": "{\"id\":\"u4JyecS5XpxkoKE\",\"url\":\"https://beincharge.ucdavis.edu/participate.php\",\"loadedUrl\":\"https://beincharge.ucdavis.edu/participate.php\",\"uniqueKey\":\"https://beincharge.ucdavis.edu/participate.php\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:20.952Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://beincharge.ucdavis.edu/participate.php",
+	"url": "https://beincharge.ucdavis.edu/participate.php"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "DCdmCj7tKR9EWdu",
+	"json": "{\"id\":\"DCdmCj7tKR9EWdu\",\"url\":\"https://cdss.ca.gov/inforesources/cdss-programs/community-care-licensing/continuing-care/guides\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/cdss-programs/community-care-licensing/continuing-care/guides\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/cdss-programs/community-care-licensing/continuing-care/guides\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:48.208Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/cdss-programs/community-care-licensing/continuing-care/guides",
+	"url": "https://cdss.ca.gov/inforesources/cdss-programs/community-care-licensing/continuing-care/guides"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "Hg2sL5RwusPg3KN",
+	"json": "{\"id\":\"Hg2sL5RwusPg3KN\",\"url\":\"https://www.calhr.ca.gov/about-calhr/divisions-programs/\",\"loadedUrl\":\"https://www.calhr.ca.gov/about-calhr/divisions-programs/\",\"uniqueKey\":\"https://www.calhr.ca.gov/about-calhr/divisions-programs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:10.148Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.calhr.ca.gov/about-calhr/divisions-programs",
+	"url": "https://www.calhr.ca.gov/about-calhr/divisions-programs/"
+}

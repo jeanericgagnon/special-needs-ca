@@ -1,0 +1,9 @@
+{
+	"id": "0gvhEwKrrKm9pyy",
+	"json": "{\"id\":\"0gvhEwKrrKm9pyy\",\"url\":\"https://health.ucdavis.edu/children/services/fetal-care-treatment-center/conditions-we-treat/spina-bifida\",\"loadedUrl\":\"https://health.ucdavis.edu/children/services/fetal-care-treatment-center/conditions-we-treat/spina-bifida\",\"uniqueKey\":\"https://health.ucdavis.edu/children/services/fetal-care-treatment-center/conditions-we-treat/spina-bifida\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:41.845Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/children/services/fetal-care-treatment-center/conditions-we-treat/spina-bifida",
+	"url": "https://health.ucdavis.edu/children/services/fetal-care-treatment-center/conditions-we-treat/spina-bifida"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "vC7VUp5dtKG82vp",
+	"json": "{\"id\":\"vC7VUp5dtKG82vp\",\"url\":\"https://www.calcareers.ca.gov/CalHRPublic/Search/GeographicalJobSearch.aspx\",\"loadedUrl\":\"https://calcareers.ca.gov/CalHRPublic/Search/GeographicalJobSearch.aspx\",\"uniqueKey\":\"https://www.calcareers.ca.gov/CalHRPublic/Search/GeographicalJobSearch.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:08.426Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.calcareers.ca.gov/CalHRPublic/Search/GeographicalJobSearch.aspx",
+	"url": "https://www.calcareers.ca.gov/CalHRPublic/Search/GeographicalJobSearch.aspx"
+}

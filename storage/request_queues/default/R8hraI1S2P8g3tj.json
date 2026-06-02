@@ -1,0 +1,9 @@
+{
+	"id": "R8hraI1S2P8g3tj",
+	"json": "{\"id\":\"R8hraI1S2P8g3tj\",\"url\":\"https://wildlife.ca.gov/Licensing/Restricted-Species\",\"loadedUrl\":\"https://wildlife.ca.gov/Licensing/Restricted-Species\",\"uniqueKey\":\"https://wildlife.ca.gov/Licensing/Restricted-Species\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:22:07.159Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://wildlife.ca.gov/Licensing/Restricted-Species",
+	"url": "https://wildlife.ca.gov/Licensing/Restricted-Species"
+}

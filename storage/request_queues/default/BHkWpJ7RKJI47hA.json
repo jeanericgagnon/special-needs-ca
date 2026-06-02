@@ -1,0 +1,9 @@
+{
+	"id": "BHkWpJ7RKJI47hA",
+	"json": "{\"id\":\"BHkWpJ7RKJI47hA\",\"url\":\"https://scdd.ca.gov/admin_committee/\",\"loadedUrl\":\"https://scdd.ca.gov/admin_committee/\",\"uniqueKey\":\"https://scdd.ca.gov/admin_committee\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:23.540Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/admin_committee",
+	"url": "https://scdd.ca.gov/admin_committee/"
+}

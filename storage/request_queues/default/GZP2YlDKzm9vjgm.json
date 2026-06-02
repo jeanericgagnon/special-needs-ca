@@ -1,0 +1,9 @@
+{
+	"id": "GZP2YlDKzm9vjgm",
+	"json": "{\"id\":\"GZP2YlDKzm9vjgm\",\"url\":\"https://rarediseases.org/rare-disease-day/\",\"loadedUrl\":\"https://rarediseases.org/rare-disease-day/\",\"uniqueKey\":\"https://rarediseases.org/rare-disease-day\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:48.923Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/rare-disease-day",
+	"url": "https://rarediseases.org/rare-disease-day/"
+}

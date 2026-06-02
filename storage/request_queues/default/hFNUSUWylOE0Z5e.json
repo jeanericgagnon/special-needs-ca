@@ -1,0 +1,9 @@
+{
+	"id": "hFNUSUWylOE0Z5e",
+	"json": "{\"id\":\"hFNUSUWylOE0Z5e\",\"url\":\"https://scdd.ca.gov/events/list/?tribe-bar-date=2026-05-01\",\"loadedUrl\":\"https://scdd.ca.gov/events/list/?tribe-bar-date=2026-05-01\",\"uniqueKey\":\"https://scdd.ca.gov/events/list?tribe-bar-date=2026-05-01\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:34.085Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/events/list?tribe-bar-date=2026-05-01",
+	"url": "https://scdd.ca.gov/events/list/?tribe-bar-date=2026-05-01"
+}

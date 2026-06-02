@@ -1,0 +1,9 @@
+{
+	"id": "rGDzgZIqgdJPuuI",
+	"json": "{\"id\":\"rGDzgZIqgdJPuuI\",\"url\":\"https://www.cdph.ca.gov/_layouts/15/viewlsts.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/\",\"uniqueKey\":\"https://www.cdph.ca.gov/_layouts/15/viewlsts.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:57.294Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/_layouts/15/viewlsts.aspx",
+	"url": "https://www.cdph.ca.gov/_layouts/15/viewlsts.aspx"
+}

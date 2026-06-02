@@ -1,0 +1,9 @@
+{
+	"id": "EhGudZUWrECnOpl",
+	"json": "{\"id\":\"EhGudZUWrECnOpl\",\"url\":\"https://www.hr.ucdavis.edu/departments/worklife-wellness/children/child-care\",\"loadedUrl\":\"https://www.hr.ucdavis.edu/departments/worklife-wellness/family-care/children/child-care\",\"uniqueKey\":\"https://www.hr.ucdavis.edu/departments/worklife-wellness/children/child-care\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:27.747Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.hr.ucdavis.edu/departments/worklife-wellness/children/child-care",
+	"url": "https://www.hr.ucdavis.edu/departments/worklife-wellness/children/child-care"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "k1RDhiV4cBc65Xp",
+	"json": "{\"id\":\"k1RDhiV4cBc65Xp\",\"url\":\"https://scdd.ca.gov/pos-service-code/participant-directed-social-recreation-camp-and-non-medical-therapies/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/participant-directed-social-recreation-camp-and-non-medical-therapies/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/participant-directed-social-recreation-camp-and-non-medical-therapies\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:45.095Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/pos-service-code/participant-directed-social-recreation-camp-and-non-medical-therapies",
+	"url": "https://scdd.ca.gov/pos-service-code/participant-directed-social-recreation-camp-and-non-medical-therapies/"
+}

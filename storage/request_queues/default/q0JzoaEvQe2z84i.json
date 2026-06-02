@@ -1,0 +1,9 @@
+{
+	"id": "q0JzoaEvQe2z84i",
+	"json": "{\"id\":\"q0JzoaEvQe2z84i\",\"url\":\"http://www.ucdmc.ucdavis.edu/medschool/50/\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-school/\",\"uniqueKey\":\"http://www.ucdmc.ucdavis.edu/medschool/50\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:22.863Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.ucdmc.ucdavis.edu/medschool/50",
+	"url": "http://www.ucdmc.ucdavis.edu/medschool/50/"
+}

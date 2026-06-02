@@ -1,0 +1,9 @@
+{
+	"id": "dhHkLqwkEKMCxEH",
+	"json": "{\"id\":\"dhHkLqwkEKMCxEH\",\"url\":\"https://www.dhcs.ca.gov/services/MH/Pages/default.aspx\",\"loadedUrl\":\"https://www.dhcs.ca.gov/services/MH/Pages/default.aspx\",\"uniqueKey\":\"https://www.dhcs.ca.gov/services/MH/Pages/default.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:15:20.118Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dhcs.ca.gov/services/MH/Pages/default.aspx",
+	"url": "https://www.dhcs.ca.gov/services/MH/Pages/default.aspx"
+}

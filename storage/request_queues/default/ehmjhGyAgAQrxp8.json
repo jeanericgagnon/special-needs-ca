@@ -1,0 +1,9 @@
+{
+	"id": "ehmjhGyAgAQrxp8",
+	"json": "{\"id\":\"ehmjhGyAgAQrxp8\",\"url\":\"https://www.cde.ca.gov/SchoolDirectory/details?cdscode=51105120000000\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=a30a9dbb-84f1-428c-b57b-0cc1ebb4c026&ssb=42274244585&ssc=https%3A%2F%2Fwww.cde.ca.gov%2FSchoolDirectory%2Fdetails%3Fcdscode%3D51105120000000&ssi=f0e2ec32-ctxv-4292-b980-7b308056890f&ssk=botmanager_support@radware.com&ssm=89809933666210840104603715684864&ssn=5741e003c5af6d8f8072767d17d738b97262e4ea9612-55df-4b41-9fe86a&sso=49afdf20-0a70dad615763d7436dfca5d93d9cad6cae1258fa8540254&ssp=85619109781780333350178032639253594&ssq=82285465530193330819155301689492194112029&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBlNGVhOTYxMi01NWRmLTRiNDEtOWYyMC0wYTcwZGFkNjE1NzYxLTE3ODAzNTUzMDExNDIwLTAwMzYxZDJjNjBkZGMzZmM1NDExMCIsInJkIjoiY2EuZ292IiwidXpteCI6IjdmOTAwMGU1MWMxNGE5LTMzMmQtNGRkZC1iMTMzLThlZmNlMWRhOGQzYTEtMTc4MDM1NTMwMTE0MjAtNzIzN2VmMGFkYmRlNzA3MzEwIn0=\",\"uniqueKey\":\"https://www.cde.ca.gov/SchoolDirectory/details?cdscode=51105120000000\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T23:08:21.643Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/SchoolDirectory/details?cdscode=51105120000000",
+	"url": "https://www.cde.ca.gov/SchoolDirectory/details?cdscode=51105120000000"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "VZAc36RwZQwrmsK",
+	"json": "{\"id\":\"VZAc36RwZQwrmsK\",\"url\":\"https://dca.ca.gov/consumers/complaints/consumer.shtml\",\"loadedUrl\":\"https://dca.ca.gov/consumers/complaints/consumer.shtml\",\"uniqueKey\":\"https://dca.ca.gov/consumers/complaints/consumer.shtml\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:37.318Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://dca.ca.gov/consumers/complaints/consumer.shtml",
+	"url": "https://dca.ca.gov/consumers/complaints/consumer.shtml"
+}

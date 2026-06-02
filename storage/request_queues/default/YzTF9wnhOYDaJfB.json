@@ -1,0 +1,9 @@
+{
+	"id": "YzTF9wnhOYDaJfB",
+	"json": "{\"id\":\"YzTF9wnhOYDaJfB\",\"url\":\"https://eaap.ca.gov/audit-guide/current-audit-guide-booklet/\",\"loadedUrl\":\"https://eaap.ca.gov/audit-guide/current-audit-guide-booklet/\",\"uniqueKey\":\"https://eaap.ca.gov/audit-guide/current-audit-guide-booklet\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:07.230Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://eaap.ca.gov/audit-guide/current-audit-guide-booklet",
+	"url": "https://eaap.ca.gov/audit-guide/current-audit-guide-booklet/"
+}

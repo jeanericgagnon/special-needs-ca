@@ -1,0 +1,9 @@
+{
+	"id": "bchE5vEmsjOfsvj",
+	"json": "{\"id\":\"bchE5vEmsjOfsvj\",\"url\":\"https://lettersandscience.ucdavis.edu/college-priorities\",\"loadedUrl\":\"https://lettersandscience.ucdavis.edu/giving/college-priorities\",\"uniqueKey\":\"https://lettersandscience.ucdavis.edu/college-priorities\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:23.837Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://lettersandscience.ucdavis.edu/college-priorities",
+	"url": "https://lettersandscience.ucdavis.edu/college-priorities"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "dgDsNvWTvEsn7ID",
+	"json": "{\"id\":\"dgDsNvWTvEsn7ID\",\"url\":\"https://cdss.ca.gov/inforesources/Tribal-TANF/Programs\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/tribal-tanf/programs\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Tribal-TANF/Programs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:23.683Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/Tribal-TANF/Programs",
+	"url": "https://cdss.ca.gov/inforesources/Tribal-TANF/Programs"
+}

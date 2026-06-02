@@ -1,0 +1,9 @@
+{
+	"id": "5yJx4l5XCYAPArK",
+	"json": "{\"id\":\"5yJx4l5XCYAPArK\",\"url\":\"https://health.ucdavis.edu/cme/educators/standards\",\"loadedUrl\":\"https://health.ucdavis.edu/cme/educators/standards\",\"uniqueKey\":\"https://health.ucdavis.edu/cme/educators/standards\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:15.234Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/cme/educators/standards",
+	"url": "https://health.ucdavis.edu/cme/educators/standards"
+}

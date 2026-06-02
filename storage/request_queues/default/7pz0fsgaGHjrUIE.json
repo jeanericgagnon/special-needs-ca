@@ -1,0 +1,9 @@
+{
+	"id": "7pz0fsgaGHjrUIE",
+	"json": "{\"id\":\"7pz0fsgaGHjrUIE\",\"url\":\"https://www.cdph.ca.gov/Programs/HRB/Pages/EntryLevel.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/HRB/Pages/EntryLevel.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/HRB/Pages/EntryLevel.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:03:36.054Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/HRB/Pages/EntryLevel.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/HRB/Pages/EntryLevel.aspx"
+}

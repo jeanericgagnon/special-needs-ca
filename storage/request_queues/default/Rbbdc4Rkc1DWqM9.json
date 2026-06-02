@@ -1,0 +1,9 @@
+{
+	"id": "Rbbdc4Rkc1DWqM9",
+	"json": "{\"id\":\"Rbbdc4Rkc1DWqM9\",\"url\":\"https://www.csb-cde.ca.gov/academics/transition/index.aspx\",\"loadedUrl\":\"https://www.csb-cde.ca.gov/academics/transition/index.aspx\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/academics/transition/index.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:14.394Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csb-cde.ca.gov/academics/transition/index.aspx",
+	"url": "https://www.csb-cde.ca.gov/academics/transition/index.aspx"
+}

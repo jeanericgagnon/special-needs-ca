@@ -1,0 +1,9 @@
+{
+	"id": "b9ubefX3H6Mun3G",
+	"json": "{\"id\":\"b9ubefX3H6Mun3G\",\"url\":\"https://ucdnc.ucdavis.edu/vision\",\"loadedUrl\":\"https://ucdnc.ucdavis.edu/vision\",\"uniqueKey\":\"https://ucdnc.ucdavis.edu/vision\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:20.408Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://ucdnc.ucdavis.edu/vision",
+	"url": "https://ucdnc.ucdavis.edu/vision"
+}

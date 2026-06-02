@@ -1,0 +1,9 @@
+{
+	"id": "qMkGslNOxJkNICx",
+	"json": "{\"id\":\"qMkGslNOxJkNICx\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/1407/john-holcroft-pediatric_critical_care?FreeText%3aLast+name=Holcroft\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/1407/john-holcroft-pediatric_critical_care?FreeText%3aLast+name=Holcroft\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/1407/john-holcroft-pediatric_critical_care?FreeText%3ALast+name=Holcroft\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:16.449Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/1407/john-holcroft-pediatric_critical_care?FreeText%3ALast+name=Holcroft",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/1407/john-holcroft-pediatric_critical_care?FreeText%3aLast+name=Holcroft"
+}

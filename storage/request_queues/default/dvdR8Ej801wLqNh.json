@@ -1,0 +1,9 @@
+{
+	"id": "dvdR8Ej801wLqNh",
+	"json": "{\"id\":\"dvdR8Ej801wLqNh\",\"url\":\"https://rarediseases.org/news/?taxonomy[category]=media-center\",\"loadedUrl\":\"https://rarediseases.org/news/?taxonomy[category]=media-center\",\"uniqueKey\":\"https://rarediseases.org/news?taxonomy%5Bcategory%5D=media-center\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:19:57.781Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/news?taxonomy%5Bcategory%5D=media-center",
+	"url": "https://rarediseases.org/news/?taxonomy[category]=media-center"
+}

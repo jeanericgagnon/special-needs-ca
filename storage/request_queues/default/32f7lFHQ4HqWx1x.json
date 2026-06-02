@@ -1,0 +1,9 @@
+{
+	"id": "32f7lFHQ4HqWx1x",
+	"json": "{\"id\":\"32f7lFHQ4HqWx1x\",\"url\":\"https://surveys3.cde.ca.gov/go/amim-final-exp.asp\",\"loadedUrl\":\"https://surveys3.cde.ca.gov/s.asp?k=172548106316\",\"uniqueKey\":\"https://surveys3.cde.ca.gov/go/amim-final-exp.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:54.753Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://surveys3.cde.ca.gov/go/amim-final-exp.asp",
+	"url": "https://surveys3.cde.ca.gov/go/amim-final-exp.asp"
+}

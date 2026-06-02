@@ -1,0 +1,9 @@
+{
+	"id": "YLgYk44OrQwaHT5",
+	"json": "{\"id\":\"YLgYk44OrQwaHT5\",\"url\":\"https://health.ucdavis.edu/children/news/headlines/surgery-program-cut-wait-times-and-hospital-stays-in-children-with-traumatic-injuries/2022/12\",\"loadedUrl\":\"https://health.ucdavis.edu/children/news/headlines/surgery-program-cut-wait-times-and-hospital-stays-in-children-with-traumatic-injuries/2022/12\",\"uniqueKey\":\"https://health.ucdavis.edu/children/news/headlines/surgery-program-cut-wait-times-and-hospital-stays-in-children-with-traumatic-injuries/2022/12\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:42.318Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/children/news/headlines/surgery-program-cut-wait-times-and-hospital-stays-in-children-with-traumatic-injuries/2022/12",
+	"url": "https://health.ucdavis.edu/children/news/headlines/surgery-program-cut-wait-times-and-hospital-stays-in-children-with-traumatic-injuries/2022/12"
+}

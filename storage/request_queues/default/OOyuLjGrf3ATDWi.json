@@ -1,0 +1,9 @@
+{
+	"id": "OOyuLjGrf3ATDWi",
+	"json": "{\"id\":\"OOyuLjGrf3ATDWi\",\"url\":\"https://health.ucdavis.edu/crhd/\",\"loadedUrl\":\"https://health.ucdavis.edu/crhd/\",\"uniqueKey\":\"https://health.ucdavis.edu/crhd\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:16.015Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/crhd",
+	"url": "https://health.ucdavis.edu/crhd/"
+}

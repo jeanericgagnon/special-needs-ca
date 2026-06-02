@@ -1,0 +1,9 @@
+{
+	"id": "L9TaYKtASq1eBHp",
+	"json": "{\"id\":\"L9TaYKtASq1eBHp\",\"url\":\"https://www.cde.ca.gov/ta/ac/sq/\",\"loadedUrl\":\"https://www.cde.ca.gov/re/pr/sqs.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ta/ac/sq\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:01.435Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ta/ac/sq",
+	"url": "https://www.cde.ca.gov/ta/ac/sq/"
+}

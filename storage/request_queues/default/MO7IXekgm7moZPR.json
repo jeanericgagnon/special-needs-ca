@@ -1,0 +1,9 @@
+{
+	"id": "MO7IXekgm7moZPR",
+	"json": "{\"id\":\"MO7IXekgm7moZPR\",\"url\":\"https://hr.ucdavis.edu/departments/learning-development\",\"loadedUrl\":\"https://hr.ucdavis.edu/departments/learning-development\",\"uniqueKey\":\"https://hr.ucdavis.edu/departments/learning-development\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:31.378Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/departments/learning-development",
+	"url": "https://hr.ucdavis.edu/departments/learning-development"
+}

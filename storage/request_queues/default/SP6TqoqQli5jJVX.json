@@ -1,0 +1,9 @@
+{
+	"id": "SP6TqoqQli5jJVX",
+	"json": "{\"id\":\"SP6TqoqQli5jJVX\",\"url\":\"https://rarediseases.org/rare-diseases/recurrent-pericarditis/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/recurrent-pericarditis/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/recurrent-pericarditis\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:09:14.994Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/rare-diseases/recurrent-pericarditis",
+	"url": "https://rarediseases.org/rare-diseases/recurrent-pericarditis/"
+}

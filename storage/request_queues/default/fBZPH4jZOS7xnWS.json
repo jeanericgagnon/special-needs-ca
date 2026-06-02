@@ -1,0 +1,9 @@
+{
+	"id": "fBZPH4jZOS7xnWS",
+	"json": "{\"id\":\"fBZPH4jZOS7xnWS\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/1318/brandee-waite-physical_medicine_and_rehabilitation-sports_medicine-folsom-sacramento?FreeText%3aLast+name=Waite\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/1318/brandee-waite-physical_medicine_and_rehabilitation-sports_medicine-folsom-sacramento?FreeText%3aLast+name=Waite\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/1318/brandee-waite-physical_medicine_and_rehabilitation-sports_medicine-folsom-sacramento?FreeText%3ALast+name=Waite\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:14.024Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/1318/brandee-waite-physical_medicine_and_rehabilitation-sports_medicine-folsom-sacramento?FreeText%3ALast+name=Waite",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/1318/brandee-waite-physical_medicine_and_rehabilitation-sports_medicine-folsom-sacramento?FreeText%3aLast+name=Waite"
+}

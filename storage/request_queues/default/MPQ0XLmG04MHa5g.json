@@ -1,0 +1,9 @@
+{
+	"id": "MPQ0XLmG04MHa5g",
+	"json": "{\"id\":\"MPQ0XLmG04MHa5g\",\"url\":\"https://health.ucdavis.edu/medical-center/news/topic/internal-medicine\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-center/news/topic/internal-medicine\",\"uniqueKey\":\"https://health.ucdavis.edu/medical-center/news/topic/internal-medicine\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:43.872Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/medical-center/news/topic/internal-medicine",
+	"url": "https://health.ucdavis.edu/medical-center/news/topic/internal-medicine"
+}

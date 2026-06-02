@@ -1,0 +1,9 @@
+{
+	"id": "eAKXmJQNcmDY5dt",
+	"json": "{\"id\":\"eAKXmJQNcmDY5dt\",\"url\":\"https://www.cde.ca.gov/ls/ai/sb/sarbhbkfaqs.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ls/ai/sb/sarbhbkfaqs.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ls/ai/sb/sarbhbkfaqs.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:04.046Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ls/ai/sb/sarbhbkfaqs.asp",
+	"url": "https://www.cde.ca.gov/ls/ai/sb/sarbhbkfaqs.asp"
+}

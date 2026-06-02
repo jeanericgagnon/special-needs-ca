@@ -1,0 +1,9 @@
+{
+	"id": "wN04KOjSVcYizWp",
+	"json": "{\"id\":\"wN04KOjSVcYizWp\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/1448/stephanie-nguyen-pediatric_nephrology-sacramento?FreeText:Last+name=Nguyen\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/1448/stephanie-nguyen-pediatric_nephrology-sacramento?FreeText:Last+name=Nguyen\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/1448/stephanie-nguyen-pediatric_nephrology-sacramento?FreeText%3ALast+name=Nguyen\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:17.767Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/1448/stephanie-nguyen-pediatric_nephrology-sacramento?FreeText%3ALast+name=Nguyen",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/1448/stephanie-nguyen-pediatric_nephrology-sacramento?FreeText:Last+name=Nguyen"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "8e38yVARFJrCaQB",
+	"json": "{\"id\":\"8e38yVARFJrCaQB\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/RPPC/Pages/RPPC-RFA-2025-Final-Announcement-of-Award.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/RPPC/Pages/RPPC-RFA-2025-Final-Announcement-of-Award.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/RPPC/Pages/RPPC-RFA-2025-Final-Announcement-of-Award.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:01:34.200Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/RPPC/Pages/RPPC-RFA-2025-Final-Announcement-of-Award.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/RPPC/Pages/RPPC-RFA-2025-Final-Announcement-of-Award.aspx"
+}

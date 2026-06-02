@@ -1,0 +1,9 @@
+{
+	"id": "Hdp2iMY3Zs53aJv",
+	"json": "{\"id\":\"Hdp2iMY3Zs53aJv\",\"url\":\"https://giving.ucdavis.edu/ways-to-give/employee-giving/employee-giving-month-april\",\"loadedUrl\":\"https://giving.ucdavis.edu/ways-to-give/employee-giving/employee-giving-month-april\",\"uniqueKey\":\"https://giving.ucdavis.edu/ways-to-give/employee-giving/employee-giving-month-april\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:31.183Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://giving.ucdavis.edu/ways-to-give/employee-giving/employee-giving-month-april",
+	"url": "https://giving.ucdavis.edu/ways-to-give/employee-giving/employee-giving-month-april"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "El8K6Fo1x6a4ai5",
+	"json": "{\"id\":\"El8K6Fo1x6a4ai5\",\"url\":\"https://www.cde.ca.gov/fg/aa/pa/altincomeforms.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/fg/aa/pa/altincomeforms.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/fg/aa/pa/altincomeforms.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:22:37.654Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/fg/aa/pa/altincomeforms.asp",
+	"url": "https://www.cde.ca.gov/fg/aa/pa/altincomeforms.asp"
+}

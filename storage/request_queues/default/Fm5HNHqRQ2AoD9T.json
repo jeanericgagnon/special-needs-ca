@@ -1,0 +1,9 @@
+{
+	"id": "Fm5HNHqRQ2AoD9T",
+	"json": "{\"id\":\"Fm5HNHqRQ2AoD9T\",\"url\":\"https://www.chhs.ca.gov/youth-mental-health-resources/\",\"loadedUrl\":\"https://www.chhs.ca.gov/youth-mental-health-resources/\",\"uniqueKey\":\"https://www.chhs.ca.gov/youth-mental-health-resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:06.491Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chhs.ca.gov/youth-mental-health-resources",
+	"url": "https://www.chhs.ca.gov/youth-mental-health-resources/"
+}

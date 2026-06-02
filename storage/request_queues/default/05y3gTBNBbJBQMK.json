@@ -1,0 +1,9 @@
+{
+	"id": "05y3gTBNBbJBQMK",
+	"json": "{\"id\":\"05y3gTBNBbJBQMK\",\"url\":\"https://health.ucdavis.edu/neurology/maps/\",\"loadedUrl\":\"https://health.ucdavis.edu/neurology/maps/\",\"uniqueKey\":\"https://health.ucdavis.edu/neurology/maps\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:51.037Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/neurology/maps",
+	"url": "https://health.ucdavis.edu/neurology/maps/"
+}

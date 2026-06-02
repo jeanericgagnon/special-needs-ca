@@ -1,0 +1,9 @@
+{
+	"id": "zCwSe65anmS2GHu",
+	"json": "{\"id\":\"zCwSe65anmS2GHu\",\"url\":\"https://education.ucdavis.edu/autism-and-education\",\"loadedUrl\":\"https://education.ucdavis.edu/autism-and-education\",\"uniqueKey\":\"https://education.ucdavis.edu/autism-and-education\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:17:29.284Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://education.ucdavis.edu/autism-and-education",
+	"url": "https://education.ucdavis.edu/autism-and-education"
+}

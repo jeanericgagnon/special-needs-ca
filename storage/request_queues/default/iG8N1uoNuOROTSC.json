@@ -1,0 +1,9 @@
+{
+	"id": "iG8N1uoNuOROTSC",
+	"json": "{\"id\":\"iG8N1uoNuOROTSC\",\"url\":\"https://health.ucdavis.edu/neurology/community/support-groups\",\"loadedUrl\":\"https://health.ucdavis.edu/neurology/community/support-groups\",\"uniqueKey\":\"https://health.ucdavis.edu/neurology/community/support-groups\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:52.195Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/neurology/community/support-groups",
+	"url": "https://health.ucdavis.edu/neurology/community/support-groups"
+}

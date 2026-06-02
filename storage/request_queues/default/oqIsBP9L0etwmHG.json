@@ -1,0 +1,9 @@
+{
+	"id": "oqIsBP9L0etwmHG",
+	"json": "{\"id\":\"oqIsBP9L0etwmHG\",\"url\":\"https://agencyreports.ca.gov/search\",\"loadedUrl\":\"https://agencyreports.ca.gov/search\",\"uniqueKey\":\"https://agencyreports.ca.gov/search\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:50.172Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://agencyreports.ca.gov/search",
+	"url": "https://agencyreports.ca.gov/search"
+}

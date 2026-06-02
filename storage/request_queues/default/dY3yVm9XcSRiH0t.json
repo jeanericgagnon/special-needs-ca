@@ -1,0 +1,9 @@
+{
+	"id": "dY3yVm9XcSRiH0t",
+	"json": "{\"id\":\"dY3yVm9XcSRiH0t\",\"url\":\"https://give.ucdavis.edu/IMED\",\"loadedUrl\":\"https://give.ucdavis.edu/IMED\",\"uniqueKey\":\"https://give.ucdavis.edu/IMED\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:46.613Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/IMED",
+	"url": "https://give.ucdavis.edu/IMED"
+}

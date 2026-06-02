@@ -1,0 +1,9 @@
+{
+	"id": "gct0ZzWei5OjUvH",
+	"json": "{\"id\":\"gct0ZzWei5OjUvH\",\"url\":\"https://health.ucdavis.edu/cvc/\",\"loadedUrl\":\"https://health.ucdavis.edu/simulation/\",\"uniqueKey\":\"https://health.ucdavis.edu/cvc\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:51.232Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/cvc",
+	"url": "https://health.ucdavis.edu/cvc/"
+}

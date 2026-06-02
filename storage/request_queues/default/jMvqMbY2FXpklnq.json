@@ -1,0 +1,9 @@
+{
+	"id": "jMvqMbY2FXpklnq",
+	"json": "{\"id\":\"jMvqMbY2FXpklnq\",\"url\":\"https://www.vetmed.ucdavis.edu/hospital/pharm-labs\",\"loadedUrl\":\"https://www.vetmed.ucdavis.edu/hospital/pharm-labs\",\"uniqueKey\":\"https://www.vetmed.ucdavis.edu/hospital/pharm-labs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:19.862Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.vetmed.ucdavis.edu/hospital/pharm-labs",
+	"url": "https://www.vetmed.ucdavis.edu/hospital/pharm-labs"
+}

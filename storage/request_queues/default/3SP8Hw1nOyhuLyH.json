@@ -1,0 +1,9 @@
+{
+	"id": "3SP8Hw1nOyhuLyH",
+	"json": "{\"id\":\"3SP8Hw1nOyhuLyH\",\"url\":\"https://health.ucdavis.edu/cancer/specialties/medical-oncology\",\"loadedUrl\":\"https://health.ucdavis.edu/cancer/specialties/medical-oncology\",\"uniqueKey\":\"https://health.ucdavis.edu/cancer/specialties/medical-oncology\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:52.363Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/cancer/specialties/medical-oncology",
+	"url": "https://health.ucdavis.edu/cancer/specialties/medical-oncology"
+}

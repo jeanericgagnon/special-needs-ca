@@ -1,0 +1,9 @@
+{
+	"id": "WnFDi76gKmQIP52",
+	"json": "{\"id\":\"WnFDi76gKmQIP52\",\"url\":\"https://www.cde.ca.gov/sp/eo/is/faq.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/eo/is/faq.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/eo/is/faq.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:25:34.312Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/sp/eo/is/faq.asp",
+	"url": "https://www.cde.ca.gov/sp/eo/is/faq.asp"
+}

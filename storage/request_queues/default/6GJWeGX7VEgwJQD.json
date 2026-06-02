@@ -1,0 +1,9 @@
+{
+	"id": "6GJWeGX7VEgwJQD",
+	"json": "{\"id\":\"6GJWeGX7VEgwJQD\",\"url\":\"https://caes.ucdavis.edu/outreach/ce\",\"loadedUrl\":\"https://caes.ucdavis.edu/outreach/ce\",\"uniqueKey\":\"https://caes.ucdavis.edu/outreach/ce\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:55:21.316Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://caes.ucdavis.edu/outreach/ce",
+	"url": "https://caes.ucdavis.edu/outreach/ce"
+}

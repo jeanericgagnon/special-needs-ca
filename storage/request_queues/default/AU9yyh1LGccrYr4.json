@@ -1,0 +1,9 @@
+{
+	"id": "AU9yyh1LGccrYr4",
+	"json": "{\"id\":\"AU9yyh1LGccrYr4\",\"url\":\"https://health.ucdavis.edu/cancer/about/comprehensive-designation-nci\",\"loadedUrl\":\"https://health.ucdavis.edu/cancer/about/comprehensive-designation-nci\",\"uniqueKey\":\"https://health.ucdavis.edu/cancer/about/comprehensive-designation-nci\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:16.714Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/cancer/about/comprehensive-designation-nci",
+	"url": "https://health.ucdavis.edu/cancer/about/comprehensive-designation-nci"
+}

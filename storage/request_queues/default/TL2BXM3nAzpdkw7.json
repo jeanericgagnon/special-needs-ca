@@ -1,0 +1,9 @@
+{
+	"id": "TL2BXM3nAzpdkw7",
+	"json": "{\"id\":\"TL2BXM3nAzpdkw7\",\"url\":\"https://www.assembly.ca.gov/speakers-press-office\",\"loadedUrl\":\"https://www.assembly.ca.gov/speakers-press-office\",\"uniqueKey\":\"https://www.assembly.ca.gov/speakers-press-office\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:03:00.006Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.assembly.ca.gov/speakers-press-office",
+	"url": "https://www.assembly.ca.gov/speakers-press-office"
+}

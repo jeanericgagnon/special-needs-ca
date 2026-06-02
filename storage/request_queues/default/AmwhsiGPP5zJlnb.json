@@ -1,0 +1,9 @@
+{
+	"id": "AmwhsiGPP5zJlnb",
+	"json": "{\"id\":\"AmwhsiGPP5zJlnb\",\"url\":\"https://www.cde.ca.gov/ls/tn/ir/\",\"loadedUrl\":\"https://www.cde.ca.gov/ls/tn/ir/\",\"uniqueKey\":\"https://www.cde.ca.gov/ls/tn/ir\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:31.536Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ls/tn/ir",
+	"url": "https://www.cde.ca.gov/ls/tn/ir/"
+}

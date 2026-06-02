@@ -1,0 +1,9 @@
+{
+	"id": "uoVWRFzhggO1ngf",
+	"json": "{\"id\":\"uoVWRFzhggO1ngf\",\"url\":\"https://alumni.ucdavis.edu/membership\",\"loadedUrl\":\"https://alumni.ucdavis.edu/membership\",\"uniqueKey\":\"https://alumni.ucdavis.edu/membership\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:05.537Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://alumni.ucdavis.edu/membership",
+	"url": "https://alumni.ucdavis.edu/membership"
+}

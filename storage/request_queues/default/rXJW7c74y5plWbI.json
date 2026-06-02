@@ -1,0 +1,9 @@
+{
+	"id": "rXJW7c74y5plWbI",
+	"json": "{\"id\":\"rXJW7c74y5plWbI\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/OHB/Pages/methylenechloride.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/OHB/Pages/methylenechloride.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/OHB/Pages/methylenechloride.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:34:02.977Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/OHB/Pages/methylenechloride.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/OHB/Pages/methylenechloride.aspx"
+}

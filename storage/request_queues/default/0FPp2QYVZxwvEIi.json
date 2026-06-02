@@ -1,0 +1,9 @@
+{
+	"id": "0FPp2QYVZxwvEIi",
+	"json": "{\"id\":\"0FPp2QYVZxwvEIi\",\"url\":\"https://cdss.ca.gov/inforesources/Continuum-of-Care-Reform/Communications\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/continuum-of-care-reform/communications\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Continuum-of-Care-Reform/Communications\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:15.483Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/Continuum-of-Care-Reform/Communications",
+	"url": "https://cdss.ca.gov/inforesources/Continuum-of-Care-Reform/Communications"
+}

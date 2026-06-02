@@ -1,0 +1,9 @@
+{
+	"id": "5ddfwczkIDdH5sC",
+	"json": "{\"id\":\"5ddfwczkIDdH5sC\",\"url\":\"https://leadership.ucdavis.edu/strategic-plan/steering-committee\",\"loadedUrl\":\"https://leadership.ucdavis.edu/strategic-plan/steering-committee\",\"uniqueKey\":\"https://leadership.ucdavis.edu/strategic-plan/steering-committee\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:36.461Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://leadership.ucdavis.edu/strategic-plan/steering-committee",
+	"url": "https://leadership.ucdavis.edu/strategic-plan/steering-committee"
+}

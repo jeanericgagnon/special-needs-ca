@@ -1,0 +1,9 @@
+{
+	"id": "B6SOTXayRFBdvnL",
+	"json": "{\"id\":\"B6SOTXayRFBdvnL\",\"url\":\"https://www.ca.gov/services/all/?q=traffic+\",\"loadedUrl\":\"https://www.ca.gov/services/all/?q=traffic+\",\"uniqueKey\":\"https://www.ca.gov/services/all?q=traffic+\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:39.308Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ca.gov/services/all?q=traffic+",
+	"url": "https://www.ca.gov/services/all/?q=traffic+"
+}

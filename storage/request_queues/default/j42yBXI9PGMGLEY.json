@@ -1,0 +1,9 @@
+{
+	"id": "j42yBXI9PGMGLEY",
+	"json": "{\"id\":\"j42yBXI9PGMGLEY\",\"url\":\"https://www.grants.ca.gov/?s&grant_categories_search%5B%5D=education\",\"loadedUrl\":\"https://www.grants.ca.gov/?s&grant_categories_search%5B%5D=education\",\"uniqueKey\":\"https://www.grants.ca.gov?grant_categories_search%5B%5D=education&s=\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:53.175Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.grants.ca.gov?grant_categories_search%5B%5D=education&s=",
+	"url": "https://www.grants.ca.gov/?s&grant_categories_search%5B%5D=education"
+}

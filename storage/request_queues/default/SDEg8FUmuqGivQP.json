@@ -1,0 +1,9 @@
+{
+	"id": "SDEg8FUmuqGivQP",
+	"json": "{\"id\":\"SDEg8FUmuqGivQP\",\"url\":\"https://www.cde.ca.gov/ta/ac/\",\"loadedUrl\":\"https://www.cde.ca.gov/ta/ac/\",\"uniqueKey\":\"https://www.cde.ca.gov/ta/ac\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:54.286Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ta/ac",
+	"url": "https://www.cde.ca.gov/ta/ac/"
+}

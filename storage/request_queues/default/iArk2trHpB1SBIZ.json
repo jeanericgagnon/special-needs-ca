@@ -1,0 +1,9 @@
+{
+	"id": "iArk2trHpB1SBIZ",
+	"json": "{\"id\":\"iArk2trHpB1SBIZ\",\"url\":\"https://www.vetmed.ucdavis.edu/news/vet-med-publications\",\"loadedUrl\":\"https://www.vetmed.ucdavis.edu/publications\",\"uniqueKey\":\"https://www.vetmed.ucdavis.edu/news/vet-med-publications\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:21.903Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.vetmed.ucdavis.edu/news/vet-med-publications",
+	"url": "https://www.vetmed.ucdavis.edu/news/vet-med-publications"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "NCwkvI4KPE9H4xo",
+	"json": "{\"id\":\"NCwkvI4KPE9H4xo\",\"url\":\"https://data.ca.gov/showcase/california-state-geoportal\",\"loadedUrl\":\"https://data.ca.gov/showcase/california-state-geoportal\",\"uniqueKey\":\"https://data.ca.gov/showcase/california-state-geoportal\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:14.874Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://data.ca.gov/showcase/california-state-geoportal",
+	"url": "https://data.ca.gov/showcase/california-state-geoportal"
+}

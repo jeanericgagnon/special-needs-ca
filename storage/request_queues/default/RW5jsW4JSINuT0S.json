@@ -1,0 +1,9 @@
+{
+	"id": "RW5jsW4JSINuT0S",
+	"json": "{\"id\":\"RW5jsW4JSINuT0S\",\"url\":\"https://neuroscience.ucdavis.edu/learning-and-memory\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/learning-and-memory\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/learning-and-memory\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:00.917Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://neuroscience.ucdavis.edu/learning-and-memory",
+	"url": "https://neuroscience.ucdavis.edu/learning-and-memory"
+}

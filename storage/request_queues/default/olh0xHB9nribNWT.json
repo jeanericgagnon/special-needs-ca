@@ -1,0 +1,9 @@
+{
+	"id": "olh0xHB9nribNWT",
+	"json": "{\"id\":\"olh0xHB9nribNWT\",\"url\":\"https://cdss.ca.gov/inforesources/cdss-programs/community-care-licensing/caregiver-background-check/statistics\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/cdss-programs/community-care-licensing/caregiver-background-check/statistics\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/cdss-programs/community-care-licensing/caregiver-background-check/statistics\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:37.985Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/cdss-programs/community-care-licensing/caregiver-background-check/statistics",
+	"url": "https://cdss.ca.gov/inforesources/cdss-programs/community-care-licensing/caregiver-background-check/statistics"
+}

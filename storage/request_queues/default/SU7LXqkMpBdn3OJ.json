@@ -1,0 +1,9 @@
+{
+	"id": "SU7LXqkMpBdn3OJ",
+	"json": "{\"id\":\"SU7LXqkMpBdn3OJ\",\"url\":\"https://calable.ca.gov/faqs?tag=prepaid-card\",\"loadedUrl\":\"https://calable.ca.gov/faqs?tag=prepaid-card\",\"uniqueKey\":\"https://calable.ca.gov/faqs?tag=prepaid-card\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:48.540Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://calable.ca.gov/faqs?tag=prepaid-card",
+	"url": "https://calable.ca.gov/faqs?tag=prepaid-card"
+}

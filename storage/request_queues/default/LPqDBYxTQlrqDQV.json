@@ -1,0 +1,9 @@
+{
+	"id": "LPqDBYxTQlrqDQV",
+	"json": "{\"id\":\"LPqDBYxTQlrqDQV\",\"url\":\"http://www.cdss.ca.gov/home/about-cdss/meet-the-director\",\"loadedUrl\":\"https://www.cdss.ca.gov/home/about-cdss/meet-the-director\",\"uniqueKey\":\"http://www.cdss.ca.gov/home/about-cdss/meet-the-director\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:07.809Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.cdss.ca.gov/home/about-cdss/meet-the-director",
+	"url": "http://www.cdss.ca.gov/home/about-cdss/meet-the-director"
+}

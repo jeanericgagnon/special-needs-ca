@@ -1,0 +1,9 @@
+{
+	"id": "ODR7b4YC8TYmCda",
+	"json": "{\"id\":\"ODR7b4YC8TYmCda\",\"url\":\"https://forums.ucdavis.edu/index.cfm\",\"loadedUrl\":\"https://forums.ucdavis.edu/ucinca/secure/index.cfm?refer=/index.cfm&query=\",\"uniqueKey\":\"https://forums.ucdavis.edu/index.cfm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:37.884Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://forums.ucdavis.edu/index.cfm",
+	"url": "https://forums.ucdavis.edu/index.cfm"
+}

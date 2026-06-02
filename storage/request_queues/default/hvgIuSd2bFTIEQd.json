@@ -1,0 +1,9 @@
+{
+	"id": "hvgIuSd2bFTIEQd",
+	"json": "{\"id\":\"hvgIuSd2bFTIEQd\",\"url\":\"https://health.ucdavis.edu/cancer/support/support-services/resource-center\",\"loadedUrl\":\"https://health.ucdavis.edu/cancer/support/support-services/resource-center\",\"uniqueKey\":\"https://health.ucdavis.edu/cancer/support/support-services/resource-center\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:14.384Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/cancer/support/support-services/resource-center",
+	"url": "https://health.ucdavis.edu/cancer/support/support-services/resource-center"
+}

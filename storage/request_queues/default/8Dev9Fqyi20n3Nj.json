@@ -1,0 +1,9 @@
+{
+	"id": "8Dev9Fqyi20n3Nj",
+	"json": "{\"id\":\"8Dev9Fqyi20n3Nj\",\"url\":\"https://bioinformatics.ucdavis.edu/\",\"loadedUrl\":\"https://bioinformatics.ucdavis.edu/\",\"uniqueKey\":\"https://bioinformatics.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:10.456Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://bioinformatics.ucdavis.edu",
+	"url": "https://bioinformatics.ucdavis.edu/"
+}

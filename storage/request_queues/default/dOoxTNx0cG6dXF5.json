@@ -1,0 +1,9 @@
+{
+	"id": "dOoxTNx0cG6dXF5",
+	"json": "{\"id\":\"dOoxTNx0cG6dXF5\",\"url\":\"https://www.library.ca.gov/work-with-us/internships/\",\"loadedUrl\":\"https://www.library.ca.gov/work-with-us/internships/\",\"uniqueKey\":\"https://www.library.ca.gov/work-with-us/internships\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:17.982Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.library.ca.gov/work-with-us/internships",
+	"url": "https://www.library.ca.gov/work-with-us/internships/"
+}

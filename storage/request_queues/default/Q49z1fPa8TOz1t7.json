@@ -1,0 +1,9 @@
+{
+	"id": "Q49z1fPa8TOz1t7",
+	"json": "{\"id\":\"Q49z1fPa8TOz1t7\",\"url\":\"https://www.sos.ca.gov/site-maintenance-schedule/\",\"loadedUrl\":\"https://www.sos.ca.gov/site-maintenance\",\"uniqueKey\":\"https://www.sos.ca.gov/site-maintenance-schedule\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:17.825Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.sos.ca.gov/site-maintenance-schedule",
+	"url": "https://www.sos.ca.gov/site-maintenance-schedule/"
+}

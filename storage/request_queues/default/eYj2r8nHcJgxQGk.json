@@ -1,0 +1,9 @@
+{
+	"id": "eYj2r8nHcJgxQGk",
+	"json": "{\"id\":\"eYj2r8nHcJgxQGk\",\"url\":\"http://www.cde.ca.gov/ls/nu/sf\",\"loadedUrl\":\"https://www.cde.ca.gov/ls/nu/sf/\",\"uniqueKey\":\"http://www.cde.ca.gov/ls/nu/sf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:32.478Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.cde.ca.gov/ls/nu/sf",
+	"url": "http://www.cde.ca.gov/ls/nu/sf"
+}

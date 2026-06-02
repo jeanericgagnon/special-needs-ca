@@ -1,0 +1,9 @@
+{
+	"id": "XGZoFRRgkZqPa8Z",
+	"json": "{\"id\":\"XGZoFRRgkZqPa8Z\",\"url\":\"https://www.cdss.ca.gov/data-portal1#main-content\",\"loadedUrl\":\"https://www.cdss.ca.gov/data-portal1#main-content\",\"uniqueKey\":\"https://www.cdss.ca.gov/data-portal1\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:48.471Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/data-portal1",
+	"url": "https://www.cdss.ca.gov/data-portal1#main-content"
+}

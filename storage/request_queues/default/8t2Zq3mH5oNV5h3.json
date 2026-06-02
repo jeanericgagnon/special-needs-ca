@@ -1,0 +1,9 @@
+{
+	"id": "8t2Zq3mH5oNV5h3",
+	"json": "{\"id\":\"8t2Zq3mH5oNV5h3\",\"url\":\"https://studentconduct.ucdavis.edu/code-academic-conduct\",\"loadedUrl\":\"https://studentconduct.ucdavis.edu/conduct/policies/student-conduct-and-discipline-interim#102.01.1\",\"uniqueKey\":\"https://studentconduct.ucdavis.edu/code-academic-conduct\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:18.352Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://studentconduct.ucdavis.edu/code-academic-conduct",
+	"url": "https://studentconduct.ucdavis.edu/code-academic-conduct"
+}

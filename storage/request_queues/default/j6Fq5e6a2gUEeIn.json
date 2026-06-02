@@ -1,0 +1,9 @@
+{
+	"id": "j6Fq5e6a2gUEeIn",
+	"json": "{\"id\":\"j6Fq5e6a2gUEeIn\",\"url\":\"https://www.vetmed.ucdavis.edu/research\",\"loadedUrl\":\"https://www.vetmed.ucdavis.edu/research\",\"uniqueKey\":\"https://www.vetmed.ucdavis.edu/research\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:20.413Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.vetmed.ucdavis.edu/research",
+	"url": "https://www.vetmed.ucdavis.edu/research"
+}

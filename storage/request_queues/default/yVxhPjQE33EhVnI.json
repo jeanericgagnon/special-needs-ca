@@ -1,0 +1,9 @@
+{
+	"id": "yVxhPjQE33EhVnI",
+	"json": "{\"id\":\"yVxhPjQE33EhVnI\",\"url\":\"https://www.cdss.ca.gov/inforesources/IHSS-Providers/Resources/Sick-Leave\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/ihss-providers/resources/sick-leave\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/IHSS-Providers/Resources/Sick-Leave\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:50.191Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/inforesources/IHSS-Providers/Resources/Sick-Leave",
+	"url": "https://www.cdss.ca.gov/inforesources/IHSS-Providers/Resources/Sick-Leave"
+}

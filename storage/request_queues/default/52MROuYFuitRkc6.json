@@ -1,0 +1,9 @@
+{
+	"id": "52MROuYFuitRkc6",
+	"json": "{\"id\":\"52MROuYFuitRkc6\",\"url\":\"https://pod.ucdavis.edu/news\",\"loadedUrl\":\"https://pod.ucdavis.edu/news\",\"uniqueKey\":\"https://pod.ucdavis.edu/news\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:57.538Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://pod.ucdavis.edu/news",
+	"url": "https://pod.ucdavis.edu/news"
+}

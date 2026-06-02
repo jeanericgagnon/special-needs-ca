@@ -1,0 +1,9 @@
+{
+	"id": "Y2fo7pJdWrEF2RS",
+	"json": "{\"id\":\"Y2fo7pJdWrEF2RS\",\"url\":\"https://metabolomics.ucdavis.edu/\",\"loadedUrl\":\"https://metabolomics.ucdavis.edu/\",\"uniqueKey\":\"https://metabolomics.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:10.554Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://metabolomics.ucdavis.edu",
+	"url": "https://metabolomics.ucdavis.edu/"
+}

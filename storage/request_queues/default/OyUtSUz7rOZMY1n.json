@@ -1,0 +1,9 @@
+{
+	"id": "OyUtSUz7rOZMY1n",
+	"json": "{\"id\":\"OyUtSUz7rOZMY1n\",\"url\":\"https://www.globaldownsyndrome.org/es_mx/nuestra-historia/personal/\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/es_mx/nuestra-historia/personal/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/es_mx/nuestra-historia/personal\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:28:15.469Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.globaldownsyndrome.org/es_mx/nuestra-historia/personal",
+	"url": "https://www.globaldownsyndrome.org/es_mx/nuestra-historia/personal/"
+}

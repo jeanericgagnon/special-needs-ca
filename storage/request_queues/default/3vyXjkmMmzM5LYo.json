@@ -1,0 +1,9 @@
+{
+	"id": "3vyXjkmMmzM5LYo",
+	"json": "{\"id\":\"3vyXjkmMmzM5LYo\",\"url\":\"https://health.ucdavis.edu/children/services/pediatric-endocrinology/\",\"loadedUrl\":\"https://health.ucdavis.edu/children/services/pediatric-endocrinology/\",\"uniqueKey\":\"https://health.ucdavis.edu/children/services/pediatric-endocrinology\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:12.008Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/children/services/pediatric-endocrinology",
+	"url": "https://health.ucdavis.edu/children/services/pediatric-endocrinology/"
+}

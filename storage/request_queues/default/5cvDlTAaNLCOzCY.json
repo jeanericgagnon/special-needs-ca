@@ -1,0 +1,9 @@
+{
+	"id": "5cvDlTAaNLCOzCY",
+	"json": "{\"id\":\"5cvDlTAaNLCOzCY\",\"url\":\"https://mindbrain.ucdavis.edu/news/focus-butterfly-new-research-attention-seeks-expand-tools-support-children-and-adults\",\"loadedUrl\":\"https://mindbrain.ucdavis.edu/news/focus-butterfly-new-research-attention-seeks-expand-tools-support-children-and-adults\",\"uniqueKey\":\"https://mindbrain.ucdavis.edu/news/focus-butterfly-new-research-attention-seeks-expand-tools-support-children-and-adults\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:12.815Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://mindbrain.ucdavis.edu/news/focus-butterfly-new-research-attention-seeks-expand-tools-support-children-and-adults",
+	"url": "https://mindbrain.ucdavis.edu/news/focus-butterfly-new-research-attention-seeks-expand-tools-support-children-and-adults"
+}

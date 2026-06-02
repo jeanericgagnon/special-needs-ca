@@ -1,0 +1,9 @@
+{
+	"id": "vTt4iMFKoYOhB0V",
+	"json": "{\"id\":\"vTt4iMFKoYOhB0V\",\"url\":\"https://www.cde.ca.gov/ci/pl/clsd.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/pl/clsd.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/pl/clsd.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:18.951Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ci/pl/clsd.asp",
+	"url": "https://www.cde.ca.gov/ci/pl/clsd.asp"
+}

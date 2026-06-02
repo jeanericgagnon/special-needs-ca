@@ -1,0 +1,9 @@
+{
+	"id": "yXVkRwzyk6IjUVS",
+	"json": "{\"id\":\"yXVkRwzyk6IjUVS\",\"url\":\"https://aging.ca.gov/Emergency_Preparedness_Guide/\",\"loadedUrl\":\"https://aging.ca.gov/Emergency_Preparedness_Guide/\",\"uniqueKey\":\"https://aging.ca.gov/Emergency_Preparedness_Guide\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:22.862Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://aging.ca.gov/Emergency_Preparedness_Guide",
+	"url": "https://aging.ca.gov/Emergency_Preparedness_Guide/"
+}

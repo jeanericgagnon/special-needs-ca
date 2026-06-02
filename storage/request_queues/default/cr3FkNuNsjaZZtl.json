@@ -1,0 +1,9 @@
+{
+	"id": "cr3FkNuNsjaZZtl",
+	"json": "{\"id\":\"cr3FkNuNsjaZZtl\",\"url\":\"https://www.dgs.ca.gov/en/OAH/Case-Types/Special-Education/Services/Page-Content/Special-Education-Services-List-Folder/Access-List-of-Low-Cost-or-Free-Attorneys-and-Advocates-for-Special-Education\",\"loadedUrl\":\"https://www.dgs.ca.gov/en/OAH/Case-Types/Special-Education/Services/Page-Content/Special-Education-Services-List-Folder/Access-List-of-Low-Cost-or-Free-Attorneys-and-Advocates-for-Special-Education\",\"uniqueKey\":\"https://www.dgs.ca.gov/en/OAH/Case-Types/Special-Education/Services/Page-Content/Special-Education-Services-List-Folder/Access-List-of-Low-Cost-or-Free-Attorneys-and-Advocates-for-Special-Education\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:38.094Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dgs.ca.gov/en/OAH/Case-Types/Special-Education/Services/Page-Content/Special-Education-Services-List-Folder/Access-List-of-Low-Cost-or-Free-Attorneys-and-Advocates-for-Special-Education",
+	"url": "https://www.dgs.ca.gov/en/OAH/Case-Types/Special-Education/Services/Page-Content/Special-Education-Services-List-Folder/Access-List-of-Low-Cost-or-Free-Attorneys-and-Advocates-for-Special-Education"
+}

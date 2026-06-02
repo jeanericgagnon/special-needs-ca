@@ -1,0 +1,9 @@
+{
+	"id": "VMsPGanIzflbK1o",
+	"json": "{\"id\":\"VMsPGanIzflbK1o\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/42936/sarah-medeiros-emergency_medicine-sacramento?FreeText%3aLast+name=Medeiros\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/42936/sarah-medeiros-emergency_medicine-sacramento?FreeText%3aLast+name=Medeiros\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/42936/sarah-medeiros-emergency_medicine-sacramento?FreeText%3ALast+name=Medeiros\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:09.247Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/42936/sarah-medeiros-emergency_medicine-sacramento?FreeText%3ALast+name=Medeiros",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/42936/sarah-medeiros-emergency_medicine-sacramento?FreeText%3aLast+name=Medeiros"
+}

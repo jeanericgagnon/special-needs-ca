@@ -1,0 +1,9 @@
+{
+	"id": "S6GgClgerfjV6pb",
+	"json": "{\"id\":\"S6GgClgerfjV6pb\",\"url\":\"https://jobs.ca.gov/Default.aspx\",\"loadedUrl\":\"https://calcareers.ca.gov/Default.aspx\",\"uniqueKey\":\"https://jobs.ca.gov/Default.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:31:44.308Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://jobs.ca.gov/Default.aspx",
+	"url": "https://jobs.ca.gov/Default.aspx"
+}

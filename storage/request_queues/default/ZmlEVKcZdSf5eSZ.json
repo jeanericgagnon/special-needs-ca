@@ -1,0 +1,9 @@
+{
+	"id": "ZmlEVKcZdSf5eSZ",
+	"json": "{\"id\":\"ZmlEVKcZdSf5eSZ\",\"url\":\"https://www.cde.ca.gov/ci/se/tselselfawareness.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/se/tselselfawareness.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/se/tselselfawareness.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:09.064Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ci/se/tselselfawareness.asp",
+	"url": "https://www.cde.ca.gov/ci/se/tselselfawareness.asp"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "CYmFcUEQQJSPsG5",
+	"json": "{\"id\":\"CYmFcUEQQJSPsG5\",\"url\":\"https://onlineservices.cdtfa.ca.gov/eserv/?Link=RegLanding\",\"loadedUrl\":\"https://onlineservices.cdtfa.ca.gov/_/\",\"uniqueKey\":\"https://onlineservices.cdtfa.ca.gov/eserv?Link=RegLanding\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:44.071Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://onlineservices.cdtfa.ca.gov/eserv?Link=RegLanding",
+	"url": "https://onlineservices.cdtfa.ca.gov/eserv/?Link=RegLanding"
+}

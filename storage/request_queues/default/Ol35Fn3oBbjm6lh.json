@@ -1,0 +1,9 @@
+{
+	"id": "Ol35Fn3oBbjm6lh",
+	"json": "{\"id\":\"Ol35Fn3oBbjm6lh\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/NEOPB/Pages/ImpactOutcomeEvaluation.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/NEOPB/Pages/ImpactOutcomeEvaluation.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/NEOPB/Pages/ImpactOutcomeEvaluation.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:02:31.291Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/NEOPB/Pages/ImpactOutcomeEvaluation.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/NEOPB/Pages/ImpactOutcomeEvaluation.aspx"
+}

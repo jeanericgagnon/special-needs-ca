@@ -1,0 +1,9 @@
+{
+	"id": "G7mzRf1Ey4QkQrg",
+	"json": "{\"id\":\"G7mzRf1Ey4QkQrg\",\"url\":\"https://www.ucdavis.edu/uc-davis-health-care\",\"loadedUrl\":\"https://www.ucdavis.edu/uc-davis-health-care\",\"uniqueKey\":\"https://www.ucdavis.edu/uc-davis-health-care\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:41.630Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ucdavis.edu/uc-davis-health-care",
+	"url": "https://www.ucdavis.edu/uc-davis-health-care"
+}

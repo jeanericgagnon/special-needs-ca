@@ -1,0 +1,9 @@
+{
+	"id": "I7uPjPCT420KCqf",
+	"json": "{\"id\":\"I7uPjPCT420KCqf\",\"url\":\"https://rarediseases.org/organizations/achalasia-awareness-organization/\",\"loadedUrl\":\"https://rarediseases.org/organizations/achalasia-awareness-organization/\",\"uniqueKey\":\"https://rarediseases.org/organizations/achalasia-awareness-organization\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:06:24.764Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/organizations/achalasia-awareness-organization",
+	"url": "https://rarediseases.org/organizations/achalasia-awareness-organization/"
+}

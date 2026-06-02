@@ -1,0 +1,9 @@
+{
+	"id": "tta3sXvmnN9QeoN",
+	"json": "{\"id\":\"tta3sXvmnN9QeoN\",\"url\":\"https://neuroscience.ucdavis.edu/people/david-olson\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/people/david-olson\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/people/david-olson\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:47.010Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://neuroscience.ucdavis.edu/people/david-olson",
+	"url": "https://neuroscience.ucdavis.edu/people/david-olson"
+}

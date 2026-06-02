@@ -1,0 +1,9 @@
+{
+	"id": "M1ViPMD8dQeBMTG",
+	"json": "{\"id\":\"M1ViPMD8dQeBMTG\",\"url\":\"https://edd.ca.gov/traditional-chinese/\",\"loadedUrl\":\"https://edd.ca.gov/traditional-chinese/\",\"uniqueKey\":\"https://edd.ca.gov/traditional-chinese\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:42.774Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://edd.ca.gov/traditional-chinese",
+	"url": "https://edd.ca.gov/traditional-chinese/"
+}

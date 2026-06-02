@@ -1,0 +1,9 @@
+{
+	"id": "b2ZgpfrE68FUcjt",
+	"json": "{\"id\":\"b2ZgpfrE68FUcjt\",\"url\":\"https://www.captain.ca.gov/privacy.html\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=3f031920-b5b2-4c2a-9a92-1a942722909e&ssb=21623299924&ssc=https%3A%2F%2Fwww.captain.ca.gov%2Fprivacy.html&ssi=a007dfc3-cuez-48a3-8681-358e9c920116&ssk=botmanager_support@radware.com&ssm=13599539991427408100261814644444&ssn=0a3915d24bf5c9e79bc3a85114be9c9b2e6448cd9005-bca9-4267-af3396&sso=619f8f73-d2b0f87726bbb265eb97d2e8977d0499b967af3b097f7ac2&ssp=00933212791780333209178036387235191&ssq=86159703450420863624534504035065238869634&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDA0OGNkOTAwNS1iY2E5LTQyNjctYWY3My1kMmIwZjg3NzI2YmIxLTE3ODAzMzQ1MDQxOTAwLTAwM2RmOTMxNjAwMWM5ZDU1NjAxMCIsInJkIjoiY2EuZ292IiwidXpteCI6IjdmOTAwMGQ5YzNhMTY1LWFhYzMtNGEyMy04ODA5LWEzYmFmYTExMjIzMzEtMTc4MDMzNDUwNDE5MTAtMGUyMGEyOGIzMjk2ZTAzOTEwIn0=\",\"uniqueKey\":\"https://www.captain.ca.gov/privacy.html\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T17:21:44.348Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.captain.ca.gov/privacy.html",
+	"url": "https://www.captain.ca.gov/privacy.html"
+}

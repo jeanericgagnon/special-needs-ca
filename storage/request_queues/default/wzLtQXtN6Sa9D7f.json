@@ -1,0 +1,9 @@
+{
+	"id": "wzLtQXtN6Sa9D7f",
+	"json": "{\"id\":\"wzLtQXtN6Sa9D7f\",\"url\":\"https://www.cdss.ca.gov/Benefits-Services/More-Services/Earned-Income-Tax-Credit\",\"loadedUrl\":\"https://www.cdss.ca.gov/earned-income-tax-credit\",\"uniqueKey\":\"https://www.cdss.ca.gov/Benefits-Services/More-Services/Earned-Income-Tax-Credit\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:32.676Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/Benefits-Services/More-Services/Earned-Income-Tax-Credit",
+	"url": "https://www.cdss.ca.gov/Benefits-Services/More-Services/Earned-Income-Tax-Credit"
+}

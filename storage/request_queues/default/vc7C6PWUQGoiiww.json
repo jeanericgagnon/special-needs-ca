@@ -1,0 +1,9 @@
+{
+	"id": "vc7C6PWUQGoiiww",
+	"json": "{\"id\":\"vc7C6PWUQGoiiww\",\"url\":\"http://www.scdd.ca.gov/Employment_First_Committee.htm\",\"loadedUrl\":\"http://scdd.ca.gov/Employment_First_Committee.htm\",\"uniqueKey\":\"http://www.scdd.ca.gov/Employment_First_Committee.htm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:19:27.724Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.scdd.ca.gov/Employment_First_Committee.htm",
+	"url": "http://www.scdd.ca.gov/Employment_First_Committee.htm"
+}

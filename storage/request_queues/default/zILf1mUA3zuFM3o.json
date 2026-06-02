@@ -1,0 +1,9 @@
+{
+	"id": "zILf1mUA3zuFM3o",
+	"json": "{\"id\":\"zILf1mUA3zuFM3o\",\"url\":\"https://rarediseases.org/rare-diseases/mesothelioma/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/mesothelioma/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/mesothelioma\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:13:40.248Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/rare-diseases/mesothelioma",
+	"url": "https://rarediseases.org/rare-diseases/mesothelioma/"
+}

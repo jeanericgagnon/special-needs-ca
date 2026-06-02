@@ -1,0 +1,9 @@
+{
+	"id": "eFebxARZiWoTBLE",
+	"json": "{\"id\":\"eFebxARZiWoTBLE\",\"url\":\"http://www.dir.ca.gov/dlse\",\"loadedUrl\":\"http://www.dir.ca.gov/dlse/\",\"uniqueKey\":\"http://www.dir.ca.gov/dlse\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:58.322Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.dir.ca.gov/dlse",
+	"url": "http://www.dir.ca.gov/dlse"
+}

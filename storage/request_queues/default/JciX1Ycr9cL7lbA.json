@@ -1,0 +1,9 @@
+{
+	"id": "JciX1Ycr9cL7lbA",
+	"json": "{\"id\":\"JciX1Ycr9cL7lbA\",\"url\":\"https://physicians.ucdavis.edu/details/73587/christina-young-alzheimers_disease-cognitive_neuroscience-dementia-neuropsychology?Specialties=2\",\"loadedUrl\":\"https://physicians.ucdavis.edu/details/73587/christina-young-alzheimers_disease-cognitive_neuroscience-dementia-neuropsychology?Specialties=2\",\"uniqueKey\":\"https://physicians.ucdavis.edu/details/73587/christina-young-alzheimers_disease-cognitive_neuroscience-dementia-neuropsychology?Specialties=2\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:33:31.558Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://physicians.ucdavis.edu/details/73587/christina-young-alzheimers_disease-cognitive_neuroscience-dementia-neuropsychology?Specialties=2",
+	"url": "https://physicians.ucdavis.edu/details/73587/christina-young-alzheimers_disease-cognitive_neuroscience-dementia-neuropsychology?Specialties=2"
+}

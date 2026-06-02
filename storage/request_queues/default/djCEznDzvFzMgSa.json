@@ -1,0 +1,9 @@
+{
+	"id": "djCEznDzvFzMgSa",
+	"json": "{\"id\":\"djCEznDzvFzMgSa\",\"url\":\"https://edd.ca.gov/en/unemployment/forms_and_publications/\",\"loadedUrl\":\"https://edd.ca.gov/en/unemployment/forms_and_publications/\",\"uniqueKey\":\"https://edd.ca.gov/en/unemployment/forms_and_publications\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:41.735Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://edd.ca.gov/en/unemployment/forms_and_publications",
+	"url": "https://edd.ca.gov/en/unemployment/forms_and_publications/"
+}

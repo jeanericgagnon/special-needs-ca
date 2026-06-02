@@ -1,0 +1,9 @@
+{
+	"id": "bAqDx3X9Yz27egU",
+	"json": "{\"id\":\"bAqDx3X9Yz27egU\",\"url\":\"https://physicians.ucdavis.edu/?view=list\",\"loadedUrl\":\"https://physicians.ucdavis.edu/?view=list\",\"uniqueKey\":\"https://physicians.ucdavis.edu?view=list\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:11.697Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://physicians.ucdavis.edu?view=list",
+	"url": "https://physicians.ucdavis.edu/?view=list"
+}

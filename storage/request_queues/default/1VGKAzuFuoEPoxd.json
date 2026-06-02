@@ -1,0 +1,9 @@
+{
+	"id": "1VGKAzuFuoEPoxd",
+	"json": "{\"id\":\"1VGKAzuFuoEPoxd\",\"url\":\"https://biology.ucdavis.edu/cdn-cgi/l/email-protection#1a7978696f747e7f687d687b7e695a6f797e7b6c7369347f7e6f\",\"loadedUrl\":\"https://biology.ucdavis.edu/cdn-cgi/l/email-protection#1a7978696f747e7f687d687b7e695a6f797e7b6c7369347f7e6f\",\"uniqueKey\":\"https://biology.ucdavis.edu/cdn-cgi/l/email-protection\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:27.653Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://biology.ucdavis.edu/cdn-cgi/l/email-protection",
+	"url": "https://biology.ucdavis.edu/cdn-cgi/l/email-protection#1a7978696f747e7f687d687b7e695a6f797e7b6c7369347f7e6f"
+}

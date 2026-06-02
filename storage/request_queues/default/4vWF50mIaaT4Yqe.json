@@ -1,0 +1,9 @@
+{
+	"id": "4vWF50mIaaT4Yqe",
+	"json": "{\"id\":\"4vWF50mIaaT4Yqe\",\"url\":\"https://health.ucdavis.edu/graduate-medical-education/well-being/professional-development-for-residents-and-fellows\",\"loadedUrl\":\"https://health.ucdavis.edu/graduate-medical-education/well-being/professional-development-for-residents-and-fellows\",\"uniqueKey\":\"https://health.ucdavis.edu/graduate-medical-education/well-being/professional-development-for-residents-and-fellows\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:12.674Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/graduate-medical-education/well-being/professional-development-for-residents-and-fellows",
+	"url": "https://health.ucdavis.edu/graduate-medical-education/well-being/professional-development-for-residents-and-fellows"
+}

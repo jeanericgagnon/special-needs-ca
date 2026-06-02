@@ -1,0 +1,9 @@
+{
+	"id": "yWQ6nPUa9s1xx7E",
+	"json": "{\"id\":\"yWQ6nPUa9s1xx7E\",\"url\":\"https://cdss.ca.gov/inforesources/Rules-Regulations/Legislation-and-Regulations/Federal-Data-Reporting-and-Anaylsis\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/letters-regulations/legislation-and-regulations/federal-data-reporting-and-anaylsis\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Rules-Regulations/Legislation-and-Regulations/Federal-Data-Reporting-and-Anaylsis\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:46.764Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/Rules-Regulations/Legislation-and-Regulations/Federal-Data-Reporting-and-Anaylsis",
+	"url": "https://cdss.ca.gov/inforesources/Rules-Regulations/Legislation-and-Regulations/Federal-Data-Reporting-and-Anaylsis"
+}

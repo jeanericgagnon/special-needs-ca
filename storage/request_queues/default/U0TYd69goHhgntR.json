@@ -1,0 +1,9 @@
+{
+	"id": "U0TYd69goHhgntR",
+	"json": "{\"id\":\"U0TYd69goHhgntR\",\"url\":\"https://www.cdss.ca.gov/inforesources/Community-Care-Licensing/Facility-Search-Welcome\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/community-care-licensing/facility-search-welcome\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/Community-Care-Licensing/Facility-Search-Welcome\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:02.736Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/inforesources/Community-Care-Licensing/Facility-Search-Welcome",
+	"url": "https://www.cdss.ca.gov/inforesources/Community-Care-Licensing/Facility-Search-Welcome"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "qN4GDn5HqrqDG2s",
+	"json": "{\"id\":\"qN4GDn5HqrqDG2s\",\"url\":\"https://sitefarm.ucdavis.edu/mailing-lists\",\"loadedUrl\":\"https://sitefarm.ucdavis.edu/mailing-lists\",\"uniqueKey\":\"https://sitefarm.ucdavis.edu/mailing-lists\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:49.182Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://sitefarm.ucdavis.edu/mailing-lists",
+	"url": "https://sitefarm.ucdavis.edu/mailing-lists"
+}

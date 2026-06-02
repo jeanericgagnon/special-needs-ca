@@ -1,0 +1,9 @@
+{
+	"id": "CMU8yzKinnOHWMT",
+	"json": "{\"id\":\"CMU8yzKinnOHWMT\",\"url\":\"https://engineering.ucdavis.edu/news/uc-davis-engineers-help-advance-collaboration-innovation-new-ai-and-health-award\",\"loadedUrl\":\"https://engineering.ucdavis.edu/news/uc-davis-engineers-help-advance-collaboration-innovation-new-ai-and-health-award\",\"uniqueKey\":\"https://engineering.ucdavis.edu/news/uc-davis-engineers-help-advance-collaboration-innovation-new-ai-and-health-award\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:24.898Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://engineering.ucdavis.edu/news/uc-davis-engineers-help-advance-collaboration-innovation-new-ai-and-health-award",
+	"url": "https://engineering.ucdavis.edu/news/uc-davis-engineers-help-advance-collaboration-innovation-new-ai-and-health-award"
+}

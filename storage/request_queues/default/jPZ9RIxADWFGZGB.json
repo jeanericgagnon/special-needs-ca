@@ -1,0 +1,9 @@
+{
+	"id": "jPZ9RIxADWFGZGB",
+	"json": "{\"id\":\"jPZ9RIxADWFGZGB\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/43262/hira-abidi-breast_cancer-breast_disease-cancer-surgery_-_oncology-sacramento?FreeText%3aLast+name=Abidi\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/43262/hira-abidi-breast_cancer-breast_disease-cancer-surgery_-_oncology-sacramento?FreeText%3aLast+name=Abidi\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/43262/hira-abidi-breast_cancer-breast_disease-cancer-surgery_-_oncology-sacramento?FreeText%3ALast+name=Abidi\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:07.644Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/43262/hira-abidi-breast_cancer-breast_disease-cancer-surgery_-_oncology-sacramento?FreeText%3ALast+name=Abidi",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/43262/hira-abidi-breast_cancer-breast_disease-cancer-surgery_-_oncology-sacramento?FreeText%3aLast+name=Abidi"
+}

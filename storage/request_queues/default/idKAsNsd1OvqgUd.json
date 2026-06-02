@@ -1,0 +1,9 @@
+{
+	"id": "idKAsNsd1OvqgUd",
+	"json": "{\"id\":\"idKAsNsd1OvqgUd\",\"url\":\"https://health.ucdavis.edu/mind-institute/resources/understanding-adhd/adhd-treatment\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/resources/understanding-adhd/adhd-treatment\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/resources/understanding-adhd/adhd-treatment\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:49.472Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mind-institute/resources/understanding-adhd/adhd-treatment",
+	"url": "https://health.ucdavis.edu/mind-institute/resources/understanding-adhd/adhd-treatment"
+}

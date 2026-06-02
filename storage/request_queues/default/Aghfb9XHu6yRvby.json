@@ -1,0 +1,9 @@
+{
+	"id": "Aghfb9XHu6yRvby",
+	"json": "{\"id\":\"Aghfb9XHu6yRvby\",\"url\":\"https://icc.ucdavis.edu/\",\"loadedUrl\":\"https://careercenter.ucdavis.edu/\",\"uniqueKey\":\"https://icc.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:23.889Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://icc.ucdavis.edu",
+	"url": "https://icc.ucdavis.edu/"
+}

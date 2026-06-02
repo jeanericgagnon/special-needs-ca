@@ -1,0 +1,9 @@
+{
+	"id": "eD1I4ROy4so2qn5",
+	"json": "{\"id\":\"eD1I4ROy4so2qn5\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/SACB/Pages/TeenDatingViolence.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/SACB/Pages/TeenDatingViolence.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/SACB/Pages/TeenDatingViolence.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:02:24.769Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/SACB/Pages/TeenDatingViolence.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/SACB/Pages/TeenDatingViolence.aspx"
+}

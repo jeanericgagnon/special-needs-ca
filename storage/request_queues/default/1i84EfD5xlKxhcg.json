@@ -1,0 +1,9 @@
+{
+	"id": "1i84EfD5xlKxhcg",
+	"json": "{\"id\":\"1i84EfD5xlKxhcg\",\"url\":\"https://cnprc.ucdavis.edu/melissa-bauman\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/melissa-bauman\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/melissa-bauman\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:14.580Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cnprc.ucdavis.edu/melissa-bauman",
+	"url": "https://cnprc.ucdavis.edu/melissa-bauman"
+}

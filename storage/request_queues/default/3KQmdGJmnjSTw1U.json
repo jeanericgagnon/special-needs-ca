@@ -1,0 +1,9 @@
+{
+	"id": "3KQmdGJmnjSTw1U",
+	"json": "{\"id\":\"3KQmdGJmnjSTw1U\",\"url\":\"https://rarediseases.org/organizations/smith-magenis-syndrome-research-foundation/\",\"loadedUrl\":\"https://rarediseases.org/organizations/smith-magenis-syndrome-research-foundation/\",\"uniqueKey\":\"https://rarediseases.org/organizations/smith-magenis-syndrome-research-foundation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:19:53.756Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/organizations/smith-magenis-syndrome-research-foundation",
+	"url": "https://rarediseases.org/organizations/smith-magenis-syndrome-research-foundation/"
+}

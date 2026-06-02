@@ -1,0 +1,9 @@
+{
+	"id": "0Q9ixfZgnE3jN4Q",
+	"json": "{\"id\":\"0Q9ixfZgnE3jN4Q\",\"url\":\"https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-in-dc-public-schools/\",\"loadedUrl\":\"https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-in-dc-public-schools/\",\"uniqueKey\":\"https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-in-dc-public-schools\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:19:30.593Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-in-dc-public-schools",
+	"url": "https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-in-dc-public-schools/"
+}

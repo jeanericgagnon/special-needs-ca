@@ -1,0 +1,9 @@
+{
+	"id": "cWfuXVF5vGRToXw",
+	"json": "{\"id\":\"cWfuXVF5vGRToXw\",\"url\":\"https://beincharge.ucdavis.edu/newsupdates.php\",\"loadedUrl\":\"https://beincharge.ucdavis.edu/newsupdates.php\",\"uniqueKey\":\"https://beincharge.ucdavis.edu/newsupdates.php\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:31.443Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://beincharge.ucdavis.edu/newsupdates.php",
+	"url": "https://beincharge.ucdavis.edu/newsupdates.php"
+}

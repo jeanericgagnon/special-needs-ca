@@ -1,0 +1,9 @@
+{
+	"id": "2tZ639Du8SHpznz",
+	"json": "{\"id\":\"2tZ639Du8SHpznz\",\"url\":\"https://lao.ca.gov/Budget?year=2026&subjectArea=May\",\"loadedUrl\":\"https://lao.ca.gov/Budget?year=2026&subjectArea=May\",\"uniqueKey\":\"https://lao.ca.gov/Budget?subjectArea=May&year=2026\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:03:02.487Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://lao.ca.gov/Budget?subjectArea=May&year=2026",
+	"url": "https://lao.ca.gov/Budget?year=2026&subjectArea=May"
+}

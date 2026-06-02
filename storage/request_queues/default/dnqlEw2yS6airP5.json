@@ -1,0 +1,9 @@
+{
+	"id": "dnqlEw2yS6airP5",
+	"json": "{\"id\":\"dnqlEw2yS6airP5\",\"url\":\"https://www.ftb.ca.gov/forms/index.html?WT.mc_id=CAGov_Service_Forms\",\"loadedUrl\":\"https://www.ftb.ca.gov/forms/index.html?WT.mc_id=CAGov_Service_Forms\",\"uniqueKey\":\"https://www.ftb.ca.gov/forms/index.html?WT.mc_id=CAGov_Service_Forms\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:29.371Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ftb.ca.gov/forms/index.html?WT.mc_id=CAGov_Service_Forms",
+	"url": "https://www.ftb.ca.gov/forms/index.html?WT.mc_id=CAGov_Service_Forms"
+}

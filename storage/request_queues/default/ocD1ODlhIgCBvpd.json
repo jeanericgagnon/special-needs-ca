@@ -1,0 +1,9 @@
+{
+	"id": "ocD1ODlhIgCBvpd",
+	"json": "{\"id\":\"ocD1ODlhIgCBvpd\",\"url\":\"https://health.ucdavis.edu/neurology/services-specialties/huntingtons/\",\"loadedUrl\":\"https://health.ucdavis.edu/neurology/services-specialties/huntingtons/\",\"uniqueKey\":\"https://health.ucdavis.edu/neurology/services-specialties/huntingtons\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:53.890Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/neurology/services-specialties/huntingtons",
+	"url": "https://health.ucdavis.edu/neurology/services-specialties/huntingtons/"
+}

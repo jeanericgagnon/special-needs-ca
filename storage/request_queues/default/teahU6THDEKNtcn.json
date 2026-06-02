@@ -1,0 +1,9 @@
+{
+	"id": "teahU6THDEKNtcn",
+	"json": "{\"id\":\"teahU6THDEKNtcn\",\"url\":\"https://www.cde.ca.gov/ci/cr/lb/\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/cr/lb/\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/cr/lb\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:23.156Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ci/cr/lb",
+	"url": "https://www.cde.ca.gov/ci/cr/lb/"
+}

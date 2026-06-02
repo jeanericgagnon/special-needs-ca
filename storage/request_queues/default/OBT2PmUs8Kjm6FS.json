@@ -1,0 +1,9 @@
+{
+	"id": "OBT2PmUs8Kjm6FS",
+	"json": "{\"id\":\"OBT2PmUs8Kjm6FS\",\"url\":\"https://health.ucdavis.edu/nursing/academics/DNP-philosophy-methods.html\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/academics/DNP-philosophy-methods.html\",\"uniqueKey\":\"https://health.ucdavis.edu/nursing/academics/DNP-philosophy-methods.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:19.971Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/nursing/academics/DNP-philosophy-methods.html",
+	"url": "https://health.ucdavis.edu/nursing/academics/DNP-philosophy-methods.html"
+}

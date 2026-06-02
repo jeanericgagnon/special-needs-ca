@@ -1,0 +1,9 @@
+{
+	"id": "apH6rcvZ4tiDzFb",
+	"json": "{\"id\":\"apH6rcvZ4tiDzFb\",\"url\":\"https://rarediseases.org/organizations/national-foundation-of-dentistry-for-the-handicapped/\",\"loadedUrl\":\"https://rarediseases.org/organizations/national-foundation-of-dentistry-for-the-handicapped/\",\"uniqueKey\":\"https://rarediseases.org/organizations/national-foundation-of-dentistry-for-the-handicapped\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:10:00.418Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/organizations/national-foundation-of-dentistry-for-the-handicapped",
+	"url": "https://rarediseases.org/organizations/national-foundation-of-dentistry-for-the-handicapped/"
+}

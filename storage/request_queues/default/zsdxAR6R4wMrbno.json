@@ -1,0 +1,9 @@
+{
+	"id": "zsdxAR6R4wMrbno",
+	"json": "{\"id\":\"zsdxAR6R4wMrbno\",\"url\":\"https://surveys3.cde.ca.gov/go/ctemcs-publiccomment-fs.asp\",\"loadedUrl\":\"https://surveys3.cde.ca.gov/s.asp?k=177568997140\",\"uniqueKey\":\"https://surveys3.cde.ca.gov/go/ctemcs-publiccomment-fs.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:40:09.286Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://surveys3.cde.ca.gov/go/ctemcs-publiccomment-fs.asp",
+	"url": "https://surveys3.cde.ca.gov/go/ctemcs-publiccomment-fs.asp"
+}

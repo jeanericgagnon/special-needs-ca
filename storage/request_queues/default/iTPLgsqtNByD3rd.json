@@ -1,0 +1,9 @@
+{
+	"id": "iTPLgsqtNByD3rd",
+	"json": "{\"id\":\"iTPLgsqtNByD3rd\",\"url\":\"https://hr.ucdavis.edu/supervisors/toolkit\",\"loadedUrl\":\"https://hr.ucdavis.edu/supervisors/toolkit\",\"uniqueKey\":\"https://hr.ucdavis.edu/supervisors/toolkit\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:18.929Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/supervisors/toolkit",
+	"url": "https://hr.ucdavis.edu/supervisors/toolkit"
+}

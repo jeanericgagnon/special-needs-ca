@@ -1,0 +1,9 @@
+{
+	"id": "0wEXUgOkAG73zBz",
+	"json": "{\"id\":\"0wEXUgOkAG73zBz\",\"url\":\"https://hr.ucdavis.edu/jobs/nursing#main-content\",\"loadedUrl\":\"https://hr.ucdavis.edu/jobs/nursing#main-content\",\"uniqueKey\":\"https://hr.ucdavis.edu/jobs/nursing\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:10.923Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/jobs/nursing",
+	"url": "https://hr.ucdavis.edu/jobs/nursing#main-content"
+}

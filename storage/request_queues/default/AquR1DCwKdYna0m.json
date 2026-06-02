@@ -1,0 +1,9 @@
+{
+	"id": "AquR1DCwKdYna0m",
+	"json": "{\"id\":\"AquR1DCwKdYna0m\",\"url\":\"https://health.ucdavis.edu/burncenter/Maps/\",\"loadedUrl\":\"https://health.ucdavis.edu/burncenter/Maps/\",\"uniqueKey\":\"https://health.ucdavis.edu/burncenter/Maps\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:51.612Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/burncenter/Maps",
+	"url": "https://health.ucdavis.edu/burncenter/Maps/"
+}

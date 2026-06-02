@@ -1,0 +1,9 @@
+{
+	"id": "rykV0zFNcdU4quT",
+	"json": "{\"id\":\"rykV0zFNcdU4quT\",\"url\":\"https://rarediseases.org/organizations/amniotic-fluid-embolism-foundation-afe-foundation/\",\"loadedUrl\":\"https://rarediseases.org/organizations/amniotic-fluid-embolism-foundation-afe-foundation/\",\"uniqueKey\":\"https://rarediseases.org/organizations/amniotic-fluid-embolism-foundation-afe-foundation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:13:06.125Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/organizations/amniotic-fluid-embolism-foundation-afe-foundation",
+	"url": "https://rarediseases.org/organizations/amniotic-fluid-embolism-foundation-afe-foundation/"
+}

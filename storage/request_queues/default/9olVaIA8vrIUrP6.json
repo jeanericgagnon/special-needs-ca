@@ -1,0 +1,9 @@
+{
+	"id": "9olVaIA8vrIUrP6",
+	"json": "{\"id\":\"9olVaIA8vrIUrP6\",\"url\":\"https://cdss.ca.gov/inforesources/CDSS-Programs/Welfare-to-Work/Repatriation/Policies-and-Procedures\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/repatriation/policies-and-procedures\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/CDSS-Programs/Welfare-to-Work/Repatriation/Policies-and-Procedures\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:19.634Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/CDSS-Programs/Welfare-to-Work/Repatriation/Policies-and-Procedures",
+	"url": "https://cdss.ca.gov/inforesources/CDSS-Programs/Welfare-to-Work/Repatriation/Policies-and-Procedures"
+}

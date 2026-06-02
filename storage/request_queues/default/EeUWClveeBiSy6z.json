@@ -1,0 +1,9 @@
+{
+	"id": "EeUWClveeBiSy6z",
+	"json": "{\"id\":\"EeUWClveeBiSy6z\",\"url\":\"https://health.ucdavis.edu/medicalcenter/features/2013-2014/01/20140115_magnet.html\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-center/features/2013-2014/01/20140115_magnet\",\"uniqueKey\":\"https://health.ucdavis.edu/medicalcenter/features/2013-2014/01/20140115_magnet.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:51.151Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/medicalcenter/features/2013-2014/01/20140115_magnet.html",
+	"url": "https://health.ucdavis.edu/medicalcenter/features/2013-2014/01/20140115_magnet.html"
+}

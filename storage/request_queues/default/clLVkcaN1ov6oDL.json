@@ -1,0 +1,9 @@
+{
+	"id": "clLVkcaN1ov6oDL",
+	"json": "{\"id\":\"clLVkcaN1ov6oDL\",\"url\":\"https://www.grants.ca.gov/for-state-agencies/\",\"loadedUrl\":\"https://www.grants.ca.gov/for-state-agencies/\",\"uniqueKey\":\"https://www.grants.ca.gov/for-state-agencies\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:52.824Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.grants.ca.gov/for-state-agencies",
+	"url": "https://www.grants.ca.gov/for-state-agencies/"
+}

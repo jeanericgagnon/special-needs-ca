@@ -1,0 +1,9 @@
+{
+	"id": "DUJssIuz8m0aCxU",
+	"json": "{\"id\":\"DUJssIuz8m0aCxU\",\"url\":\"https://www.cdss.ca.gov/Benefits-Services/More-Services/Deaf-Access/Deaf-Access-Program-DAP-Service-Providers\",\"loadedUrl\":\"https://www.cdss.ca.gov/deaf-access/deaf-access-program-dap-service-providers\",\"uniqueKey\":\"https://www.cdss.ca.gov/Benefits-Services/More-Services/Deaf-Access/Deaf-Access-Program-DAP-Service-Providers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:33.242Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/Benefits-Services/More-Services/Deaf-Access/Deaf-Access-Program-DAP-Service-Providers",
+	"url": "https://www.cdss.ca.gov/Benefits-Services/More-Services/Deaf-Access/Deaf-Access-Program-DAP-Service-Providers"
+}

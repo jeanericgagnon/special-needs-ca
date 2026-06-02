@@ -1,0 +1,9 @@
+{
+	"id": "4nZZ4UrLLzGpa5l",
+	"json": "{\"id\":\"4nZZ4UrLLzGpa5l\",\"url\":\"https://www.ssa.gov/manage-benefits\",\"loadedUrl\":\"https://www.ssa.gov/manage-benefits\",\"uniqueKey\":\"https://www.ssa.gov/manage-benefits\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:54.325Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ssa.gov/manage-benefits",
+	"url": "https://www.ssa.gov/manage-benefits"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "Nv7S0UWW0DSwMMu",
+	"json": "{\"id\":\"Nv7S0UWW0DSwMMu\",\"url\":\"https://education.ucdavis.edu/e-newsletter\",\"loadedUrl\":\"https://education.ucdavis.edu/e-newsletter\",\"uniqueKey\":\"https://education.ucdavis.edu/e-newsletter\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:21.225Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://education.ucdavis.edu/e-newsletter",
+	"url": "https://education.ucdavis.edu/e-newsletter"
+}

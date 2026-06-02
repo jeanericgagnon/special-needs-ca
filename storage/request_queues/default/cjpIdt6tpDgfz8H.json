@@ -1,0 +1,9 @@
+{
+	"id": "cjpIdt6tpDgfz8H",
+	"json": "{\"id\":\"cjpIdt6tpDgfz8H\",\"url\":\"https://irb.ucdavis.edu/project-guidance/roles-responsibilities/research-personnel-list/\",\"loadedUrl\":\"https://irb.ucdavis.edu/project-guidance/roles-responsibilities/research-personnel-list/\",\"uniqueKey\":\"https://irb.ucdavis.edu/project-guidance/roles-responsibilities/research-personnel-list\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:40.389Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://irb.ucdavis.edu/project-guidance/roles-responsibilities/research-personnel-list",
+	"url": "https://irb.ucdavis.edu/project-guidance/roles-responsibilities/research-personnel-list/"
+}

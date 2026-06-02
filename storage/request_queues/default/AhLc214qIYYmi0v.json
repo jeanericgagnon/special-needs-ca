@@ -1,0 +1,9 @@
+{
+	"id": "AhLc214qIYYmi0v",
+	"json": "{\"id\":\"AhLc214qIYYmi0v\",\"url\":\"https://health.ucdavis.edu/ctsc/area/education/programs-and-resources-for-research-community\",\"loadedUrl\":\"https://health.ucdavis.edu/ctsc/area/education/programs-and-resources-for-research-community\",\"uniqueKey\":\"https://health.ucdavis.edu/ctsc/area/education/programs-and-resources-for-research-community\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:33.397Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/ctsc/area/education/programs-and-resources-for-research-community",
+	"url": "https://health.ucdavis.edu/ctsc/area/education/programs-and-resources-for-research-community"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "5wUcHt1cW8B3n6R",
+	"json": "{\"id\":\"5wUcHt1cW8B3n6R\",\"url\":\"https://give.ucdavis.edu/VCSA/ACGIFTS\",\"loadedUrl\":\"https://give.ucdavis.edu/VCSA/ACGIFTS\",\"uniqueKey\":\"https://give.ucdavis.edu/VCSA/ACGIFTS\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:00.054Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/VCSA/ACGIFTS",
+	"url": "https://give.ucdavis.edu/VCSA/ACGIFTS"
+}

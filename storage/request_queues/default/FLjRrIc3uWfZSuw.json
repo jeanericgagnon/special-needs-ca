@@ -1,0 +1,9 @@
+{
+	"id": "FLjRrIc3uWfZSuw",
+	"json": "{\"id\":\"FLjRrIc3uWfZSuw\",\"url\":\"https://health.ucdavis.edu/news/headlines/uc-davis-health-performs-first-atrial-leadless-pacemaker-implant-in-fontan-patients/2026/02\",\"loadedUrl\":\"https://health.ucdavis.edu/news/headlines/uc-davis-health-performs-first-atrial-leadless-pacemaker-implant-in-fontan-patients/2026/02\",\"uniqueKey\":\"https://health.ucdavis.edu/news/headlines/uc-davis-health-performs-first-atrial-leadless-pacemaker-implant-in-fontan-patients/2026/02\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:47:10.311Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/news/headlines/uc-davis-health-performs-first-atrial-leadless-pacemaker-implant-in-fontan-patients/2026/02",
+	"url": "https://health.ucdavis.edu/news/headlines/uc-davis-health-performs-first-atrial-leadless-pacemaker-implant-in-fontan-patients/2026/02"
+}

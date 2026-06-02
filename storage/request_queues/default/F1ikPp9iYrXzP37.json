@@ -1,0 +1,9 @@
+{
+	"id": "F1ikPp9iYrXzP37",
+	"json": "{\"id\":\"F1ikPp9iYrXzP37\",\"url\":\"https://www.dds.ca.gov/transparency/dds-forms/\",\"loadedUrl\":\"https://www.dds.ca.gov/transparency/dds-forms/\",\"uniqueKey\":\"https://www.dds.ca.gov/transparency/dds-forms\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:07:50.306Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/transparency/dds-forms",
+	"url": "https://www.dds.ca.gov/transparency/dds-forms/"
+}

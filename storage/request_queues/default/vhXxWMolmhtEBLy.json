@@ -1,0 +1,9 @@
+{
+	"id": "vhXxWMolmhtEBLy",
+	"json": "{\"id\":\"vhXxWMolmhtEBLy\",\"url\":\"https://www.dmv.ca.gov/portal/paperless-notices/\",\"loadedUrl\":\"https://www.dmv.ca.gov/portal/paperless-notices/\",\"uniqueKey\":\"https://www.dmv.ca.gov/portal/paperless-notices\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:26.217Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dmv.ca.gov/portal/paperless-notices",
+	"url": "https://www.dmv.ca.gov/portal/paperless-notices/"
+}

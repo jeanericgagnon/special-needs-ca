@@ -1,0 +1,9 @@
+{
+	"id": "IkvVXPSPOYQUBb6",
+	"json": "{\"id\":\"IkvVXPSPOYQUBb6\",\"url\":\"https://skylab.cdph.ca.gov/calwws/\",\"loadedUrl\":\"https://skylab.cdph.ca.gov/calwws/\",\"uniqueKey\":\"https://skylab.cdph.ca.gov/calwws\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:43:23.350Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://skylab.cdph.ca.gov/calwws",
+	"url": "https://skylab.cdph.ca.gov/calwws/"
+}

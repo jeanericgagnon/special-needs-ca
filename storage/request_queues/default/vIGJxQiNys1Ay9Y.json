@@ -1,0 +1,9 @@
+{
+	"id": "vIGJxQiNys1Ay9Y",
+	"json": "{\"id\":\"vIGJxQiNys1Ay9Y\",\"url\":\"https://rarediseases.org/rare-diseases/sacrococcygeal-teratoma/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/sacrococcygeal-teratoma/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/sacrococcygeal-teratoma\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:12:46.979Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/rare-diseases/sacrococcygeal-teratoma",
+	"url": "https://rarediseases.org/rare-diseases/sacrococcygeal-teratoma/"
+}

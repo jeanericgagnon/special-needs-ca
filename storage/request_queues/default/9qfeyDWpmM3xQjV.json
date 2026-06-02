@@ -1,0 +1,9 @@
+{
+	"id": "9qfeyDWpmM3xQjV",
+	"json": "{\"id\":\"9qfeyDWpmM3xQjV\",\"url\":\"https://physicians.ucdavis.edu/medicalcenter?Cities=Davis\",\"loadedUrl\":\"https://physicians.ucdavis.edu/medicalcenter?Cities=Davis\",\"uniqueKey\":\"https://physicians.ucdavis.edu/medicalcenter?Cities=Davis\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:37.584Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://physicians.ucdavis.edu/medicalcenter?Cities=Davis",
+	"url": "https://physicians.ucdavis.edu/medicalcenter?Cities=Davis"
+}

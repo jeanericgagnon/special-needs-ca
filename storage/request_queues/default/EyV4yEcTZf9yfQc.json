@@ -1,0 +1,9 @@
+{
+	"id": "EyV4yEcTZf9yfQc",
+	"json": "{\"id\":\"EyV4yEcTZf9yfQc\",\"url\":\"https://portal.cdph.ca.gov/en-US/\",\"loadedUrl\":\"https://portal.cdph.ca.gov/en-US/\",\"uniqueKey\":\"https://portal.cdph.ca.gov/en-US\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:36:25.236Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://portal.cdph.ca.gov/en-US",
+	"url": "https://portal.cdph.ca.gov/en-US/"
+}

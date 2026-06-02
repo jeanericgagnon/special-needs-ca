@@ -1,0 +1,9 @@
+{
+	"id": "QXY5AbXDYjSED86",
+	"json": "{\"id\":\"QXY5AbXDYjSED86\",\"url\":\"https://www.ucdavis.edu/news/celebrating-those-who-build-community\",\"loadedUrl\":\"https://www.ucdavis.edu/news/celebrating-those-who-build-community\",\"uniqueKey\":\"https://www.ucdavis.edu/news/celebrating-those-who-build-community\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:25.992Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ucdavis.edu/news/celebrating-those-who-build-community",
+	"url": "https://www.ucdavis.edu/news/celebrating-those-who-build-community"
+}

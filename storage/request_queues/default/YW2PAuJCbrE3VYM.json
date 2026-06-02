@@ -1,0 +1,9 @@
+{
+	"id": "YW2PAuJCbrE3VYM",
+	"json": "{\"id\":\"YW2PAuJCbrE3VYM\",\"url\":\"https://irb.ucdavis.edu/about-irb/outreach/upcoming-training/\",\"loadedUrl\":\"https://irb.ucdavis.edu/about-irb/outreach/upcoming-training/\",\"uniqueKey\":\"https://irb.ucdavis.edu/about-irb/outreach/upcoming-training\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:39.580Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://irb.ucdavis.edu/about-irb/outreach/upcoming-training",
+	"url": "https://irb.ucdavis.edu/about-irb/outreach/upcoming-training/"
+}

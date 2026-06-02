@@ -1,0 +1,9 @@
+{
+	"id": "zhlT5JbLjiXxiTc",
+	"json": "{\"id\":\"zhlT5JbLjiXxiTc\",\"url\":\"https://give.ucp.org/checkout?cid=737365&oid=85459&amount=50.00&frequency=one-time&currency=USD&designation=1834884\",\"loadedUrl\":\"https://give.ucp.org/checkout?cid=737365&oid=85459&amount=50.00&frequency=one-time&currency=USD&designation=1834884\",\"uniqueKey\":\"https://give.ucp.org/checkout?amount=50.00&cid=737365&currency=USD&designation=1834884&frequency=one-time&oid=85459\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:23.239Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucp.org/checkout?amount=50.00&cid=737365&currency=USD&designation=1834884&frequency=one-time&oid=85459",
+	"url": "https://give.ucp.org/checkout?cid=737365&oid=85459&amount=50.00&frequency=one-time&currency=USD&designation=1834884"
+}

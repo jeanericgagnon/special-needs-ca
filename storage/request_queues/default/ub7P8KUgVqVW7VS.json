@@ -1,0 +1,9 @@
+{
+	"id": "ub7P8KUgVqVW7VS",
+	"json": "{\"id\":\"ub7P8KUgVqVW7VS\",\"url\":\"https://www.cde.ca.gov/sp/sw/t1/tsi.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/sw/t1/tsi.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/sw/t1/tsi.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:03.609Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/sp/sw/t1/tsi.asp",
+	"url": "https://www.cde.ca.gov/sp/sw/t1/tsi.asp"
+}

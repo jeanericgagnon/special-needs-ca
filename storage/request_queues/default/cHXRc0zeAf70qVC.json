@@ -1,0 +1,9 @@
+{
+	"id": "cHXRc0zeAf70qVC",
+	"json": "{\"id\":\"cHXRc0zeAf70qVC\",\"url\":\"https://osg.ca.gov/sg-report/\",\"loadedUrl\":\"https://osg.ca.gov/sg-report/\",\"uniqueKey\":\"https://osg.ca.gov/sg-report\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:28:06.223Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://osg.ca.gov/sg-report",
+	"url": "https://osg.ca.gov/sg-report/"
+}

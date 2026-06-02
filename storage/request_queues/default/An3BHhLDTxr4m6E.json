@@ -1,0 +1,9 @@
+{
+	"id": "An3BHhLDTxr4m6E",
+	"json": "{\"id\":\"An3BHhLDTxr4m6E\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/21956/gagan-singh-cardiology-cardiovascular_medicine-internal_medicine-interventional_cardiology-peripheral_vascular_interventions-vascular_medicine-sacramento?FreeText:Last+name=Singh\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/21956/gagan-singh-cardiology-cardiovascular_medicine-internal_medicine-interventional_cardiology-peripheral_vascular_interventions-vascular_medicine-sacramento?FreeText:Last+name=Singh\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/21956/gagan-singh-cardiology-cardiovascular_medicine-internal_medicine-interventional_cardiology-peripheral_vascular_interventions-vascular_medicine-sacramento?FreeText%3ALast+name=Singh\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:08.032Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/21956/gagan-singh-cardiology-cardiovascular_medicine-internal_medicine-interventional_cardiology-peripheral_vascular_interventions-vascular_medicine-sacramento?FreeText%3ALast+name=Singh",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/21956/gagan-singh-cardiology-cardiovascular_medicine-internal_medicine-interventional_cardiology-peripheral_vascular_interventions-vascular_medicine-sacramento?FreeText:Last+name=Singh"
+}

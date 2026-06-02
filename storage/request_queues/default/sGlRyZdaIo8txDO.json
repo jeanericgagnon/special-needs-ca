@@ -1,0 +1,9 @@
+{
+	"id": "sGlRyZdaIo8txDO",
+	"json": "{\"id\":\"sGlRyZdaIo8txDO\",\"url\":\"https://surveys3.cde.ca.gov/go/cagrsinterest2025-26.asp\",\"loadedUrl\":\"https://surveys3.cde.ca.gov/s.asp?k=174775673287\",\"uniqueKey\":\"https://surveys3.cde.ca.gov/go/cagrsinterest2025-26.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:37.206Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://surveys3.cde.ca.gov/go/cagrsinterest2025-26.asp",
+	"url": "https://surveys3.cde.ca.gov/go/cagrsinterest2025-26.asp"
+}

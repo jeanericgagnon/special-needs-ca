@@ -1,0 +1,9 @@
+{
+	"id": "wZlyBCLXbWatBiV",
+	"json": "{\"id\":\"wZlyBCLXbWatBiV\",\"url\":\"https://health.ucdavis.edu/irc/\",\"loadedUrl\":\"https://health.ucdavis.edu/imaging-research/\",\"uniqueKey\":\"https://health.ucdavis.edu/irc\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:39.942Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/irc",
+	"url": "https://health.ucdavis.edu/irc/"
+}

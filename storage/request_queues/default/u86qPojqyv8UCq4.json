@@ -1,0 +1,9 @@
+{
+	"id": "u86qPojqyv8UCq4",
+	"json": "{\"id\":\"u86qPojqyv8UCq4\",\"url\":\"https://www.ca.gov/departments/237/\",\"loadedUrl\":\"https://www.ca.gov/departments/237/\",\"uniqueKey\":\"https://www.ca.gov/departments/237\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:57:16.260Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ca.gov/departments/237",
+	"url": "https://www.ca.gov/departments/237/"
+}

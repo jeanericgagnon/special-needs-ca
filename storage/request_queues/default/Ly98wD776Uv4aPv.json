@@ -1,0 +1,9 @@
+{
+	"id": "Ly98wD776Uv4aPv",
+	"json": "{\"id\":\"Ly98wD776Uv4aPv\",\"url\":\"https://www.cdss.ca.gov/inforesources/Child-Care-Licensing\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/child-care-licensing\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/Child-Care-Licensing\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:30.085Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/inforesources/Child-Care-Licensing",
+	"url": "https://www.cdss.ca.gov/inforesources/Child-Care-Licensing"
+}

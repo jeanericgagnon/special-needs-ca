@@ -1,0 +1,9 @@
+{
+	"id": "GCmrrksXS82du0e",
+	"json": "{\"id\":\"GCmrrksXS82du0e\",\"url\":\"https://www.cde.ca.gov/ci/gs/hs/secschlrepipro.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/gs/hs/secschlrepipro.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/gs/hs/secschlrepipro.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:39.458Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ci/gs/hs/secschlrepipro.asp",
+	"url": "https://www.cde.ca.gov/ci/gs/hs/secschlrepipro.asp"
+}

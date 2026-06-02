@@ -1,0 +1,9 @@
+{
+	"id": "CM48EWgpE00fahA",
+	"json": "{\"id\":\"CM48EWgpE00fahA\",\"url\":\"https://hsform.ucdmc.ucdavis.edu/hsform/public/form/fillForm.jsf?formId=99088e060a1847b19d169ea906c8d12b\",\"loadedUrl\":\"https://hsform.ucdmc.ucdavis.edu/hsform/public/form/fillForm.jsf?formId=99088e060a1847b19d169ea906c8d12b\",\"uniqueKey\":\"https://hsform.ucdmc.ucdavis.edu/hsform/public/form/fillForm.jsf?formId=99088e060a1847b19d169ea906c8d12b\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:34.063Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hsform.ucdmc.ucdavis.edu/hsform/public/form/fillForm.jsf?formId=99088e060a1847b19d169ea906c8d12b",
+	"url": "https://hsform.ucdmc.ucdavis.edu/hsform/public/form/fillForm.jsf?formId=99088e060a1847b19d169ea906c8d12b"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "7UpWdXsJJwDu1J4",
+	"json": "{\"id\":\"7UpWdXsJJwDu1J4\",\"url\":\"https://www.cdph.ca.gov/Programs/CID/ORH/Pages/Refugee%20Health%20Clinics.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CID/ORH/Pages/Refugee%20Health%20Clinics.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CID/ORH/Pages/Refugee%20Health%20Clinics.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:03:15.352Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CID/ORH/Pages/Refugee%20Health%20Clinics.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CID/ORH/Pages/Refugee%20Health%20Clinics.aspx"
+}

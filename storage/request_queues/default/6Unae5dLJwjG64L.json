@@ -1,0 +1,9 @@
+{
+	"id": "6Unae5dLJwjG64L",
+	"json": "{\"id\":\"6Unae5dLJwjG64L\",\"url\":\"https://health.ucdavis.edu/parking/green/index.html?tab=carpool#tab_1_3\",\"loadedUrl\":\"https://health.ucdavis.edu/parking/green/index.html?tab=carpool#tab_1_3\",\"uniqueKey\":\"https://health.ucdavis.edu/parking/green/index.html?tab=carpool\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:54.247Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/parking/green/index.html?tab=carpool",
+	"url": "https://health.ucdavis.edu/parking/green/index.html?tab=carpool#tab_1_3"
+}

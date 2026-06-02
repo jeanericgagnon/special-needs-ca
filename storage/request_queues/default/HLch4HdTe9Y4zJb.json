@@ -1,0 +1,9 @@
+{
+	"id": "HLch4HdTe9Y4zJb",
+	"json": "{\"id\":\"HLch4HdTe9Y4zJb\",\"url\":\"https://biology.ucdavis.edu/tags/academic-department-directory\",\"loadedUrl\":\"https://biology.ucdavis.edu/tags/academic-department-directory\",\"uniqueKey\":\"https://biology.ucdavis.edu/tags/academic-department-directory\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:53.822Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://biology.ucdavis.edu/tags/academic-department-directory",
+	"url": "https://biology.ucdavis.edu/tags/academic-department-directory"
+}

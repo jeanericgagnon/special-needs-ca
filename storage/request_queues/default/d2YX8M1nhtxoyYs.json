@@ -1,0 +1,9 @@
+{
+	"id": "d2YX8M1nhtxoyYs",
+	"json": "{\"id\":\"d2YX8M1nhtxoyYs\",\"url\":\"http://chavez.cde.ca.gov/ModelCurriculum/Intro.aspx\",\"loadedUrl\":\"https://chavez.cde.ca.gov/ModelCurriculum/Intro.aspx\",\"uniqueKey\":\"http://chavez.cde.ca.gov/ModelCurriculum/Intro.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:56.137Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://chavez.cde.ca.gov/ModelCurriculum/Intro.aspx",
+	"url": "http://chavez.cde.ca.gov/ModelCurriculum/Intro.aspx"
+}

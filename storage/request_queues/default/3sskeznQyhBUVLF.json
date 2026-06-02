@@ -1,0 +1,9 @@
+{
+	"id": "3sskeznQyhBUVLF",
+	"json": "{\"id\":\"3sskeznQyhBUVLF\",\"url\":\"https://www.caloes.ca.gov/office-of-the-director/operations/public-safety-communications/\",\"loadedUrl\":\"https://www.caloes.ca.gov/office-of-the-director/operations/public-safety-communications/\",\"uniqueKey\":\"https://www.caloes.ca.gov/office-of-the-director/operations/public-safety-communications\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:40.895Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.caloes.ca.gov/office-of-the-director/operations/public-safety-communications",
+	"url": "https://www.caloes.ca.gov/office-of-the-director/operations/public-safety-communications/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "zeyed5ZYRummLlZ",
+	"json": "{\"id\":\"zeyed5ZYRummLlZ\",\"url\":\"https://www.chhs.ca.gov/about/departments-and-offices/\",\"loadedUrl\":\"https://www.chhs.ca.gov/about/departments-and-offices/\",\"uniqueKey\":\"https://www.chhs.ca.gov/about/departments-and-offices\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:13.193Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chhs.ca.gov/about/departments-and-offices",
+	"url": "https://www.chhs.ca.gov/about/departments-and-offices/"
+}

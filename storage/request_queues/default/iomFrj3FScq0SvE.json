@@ -1,0 +1,9 @@
+{
+	"id": "iomFrj3FScq0SvE",
+	"json": "{\"id\":\"iomFrj3FScq0SvE\",\"url\":\"https://rarediseases.org/rare-diseases/new-onset-refractory-status-epilepticus-norse/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/new-onset-refractory-status-epilepticus-norse/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/new-onset-refractory-status-epilepticus-norse\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:12:12.288Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/rare-diseases/new-onset-refractory-status-epilepticus-norse",
+	"url": "https://rarediseases.org/rare-diseases/new-onset-refractory-status-epilepticus-norse/"
+}

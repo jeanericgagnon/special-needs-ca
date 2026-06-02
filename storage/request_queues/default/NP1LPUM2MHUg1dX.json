@@ -1,0 +1,9 @@
+{
+	"id": "NP1LPUM2MHUg1dX",
+	"json": "{\"id\":\"NP1LPUM2MHUg1dX\",\"url\":\"https://www.calhr.ca.gov/employment-career-services/\",\"loadedUrl\":\"https://www.calhr.ca.gov/employment-career-services/\",\"uniqueKey\":\"https://www.calhr.ca.gov/employment-career-services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:10.584Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.calhr.ca.gov/employment-career-services",
+	"url": "https://www.calhr.ca.gov/employment-career-services/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "pVX3ZqvnANYQ2XC",
+	"json": "{\"id\":\"pVX3ZqvnANYQ2XC\",\"url\":\"https://health.ucdavis.edu/surgery/specialties/cardio/lung_cancer_screen.html\",\"loadedUrl\":\"https://health.ucdavis.edu/surgery/specialties/cardio/lung_cancer_screen.html\",\"uniqueKey\":\"https://health.ucdavis.edu/surgery/specialties/cardio/lung_cancer_screen.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:47:10.940Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/surgery/specialties/cardio/lung_cancer_screen.html",
+	"url": "https://health.ucdavis.edu/surgery/specialties/cardio/lung_cancer_screen.html"
+}

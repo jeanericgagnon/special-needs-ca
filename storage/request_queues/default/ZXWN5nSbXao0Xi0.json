@@ -1,0 +1,9 @@
+{
+	"id": "ZXWN5nSbXao0Xi0",
+	"json": "{\"id\":\"ZXWN5nSbXao0Xi0\",\"url\":\"https://scdd.ca.gov/category/content-types/news/page/2/\",\"loadedUrl\":\"https://scdd.ca.gov/category/content-types/news/page/2/\",\"uniqueKey\":\"https://scdd.ca.gov/category/content-types/news/page/2\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:45.019Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/category/content-types/news/page/2",
+	"url": "https://scdd.ca.gov/category/content-types/news/page/2/"
+}

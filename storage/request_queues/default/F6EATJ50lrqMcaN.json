@@ -1,0 +1,9 @@
+{
+	"id": "F6EATJ50lrqMcaN",
+	"json": "{\"id\":\"F6EATJ50lrqMcaN\",\"url\":\"https://calosba.ca.gov/local-direct-assistance/small-business-centers/\",\"loadedUrl\":\"https://calosba.ca.gov/for-small-businesses-and-non-profits/small-business-centers/\",\"uniqueKey\":\"https://calosba.ca.gov/local-direct-assistance/small-business-centers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:40.076Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://calosba.ca.gov/local-direct-assistance/small-business-centers",
+	"url": "https://calosba.ca.gov/local-direct-assistance/small-business-centers/"
+}

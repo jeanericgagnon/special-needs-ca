@@ -1,0 +1,9 @@
+{
+	"id": "wMtCp1N8dFpQRhZ",
+	"json": "{\"id\":\"wMtCp1N8dFpQRhZ\",\"url\":\"https://www.globaldownsyndrome.org/get-involved/donate/?page_id=818\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/our-story/anna-and-john-j-sie-center-for-down-syndrome/anna-and-john-j-sie-center-for-down-syndrome/patricia-c-winders/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/get-involved/donate?page_id=818\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:31.676Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.globaldownsyndrome.org/get-involved/donate?page_id=818",
+	"url": "https://www.globaldownsyndrome.org/get-involved/donate/?page_id=818"
+}

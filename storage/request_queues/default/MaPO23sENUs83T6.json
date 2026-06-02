@@ -1,0 +1,9 @@
+{
+	"id": "MaPO23sENUs83T6",
+	"json": "{\"id\":\"MaPO23sENUs83T6\",\"url\":\"https://rarediseases.org/rare-diseases/trisomy-x/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/trisomy-x/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/trisomy-x\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:15:08.476Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/rare-diseases/trisomy-x",
+	"url": "https://rarediseases.org/rare-diseases/trisomy-x/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "eTCXT73xrt4QFGj",
+	"json": "{\"id\":\"eTCXT73xrt4QFGj\",\"url\":\"https://alumni.ucdavis.edu/travel\",\"loadedUrl\":\"https://alumni.ucdavis.edu/travel\",\"uniqueKey\":\"https://alumni.ucdavis.edu/travel\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:05.406Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://alumni.ucdavis.edu/travel",
+	"url": "https://alumni.ucdavis.edu/travel"
+}

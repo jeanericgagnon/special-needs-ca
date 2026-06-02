@@ -1,0 +1,9 @@
+{
+	"id": "zTs8CLYp9IkpX05",
+	"json": "{\"id\":\"zTs8CLYp9IkpX05\",\"url\":\"https://www.cdph.ca.gov/Programs/OSPHLD/LCS/Pages/LaboratoryAnimalUseApprovalProgram.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/OSPHLD/LCS/Pages/LaboratoryAnimalUseApprovalProgram.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/OSPHLD/LCS/Pages/LaboratoryAnimalUseApprovalProgram.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:15:39.039Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/OSPHLD/LCS/Pages/LaboratoryAnimalUseApprovalProgram.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/OSPHLD/LCS/Pages/LaboratoryAnimalUseApprovalProgram.aspx"
+}

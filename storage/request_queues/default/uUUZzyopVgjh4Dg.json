@@ -1,0 +1,9 @@
+{
+	"id": "uUUZzyopVgjh4Dg",
+	"json": "{\"id\":\"uUUZzyopVgjh4Dg\",\"url\":\"https://cadeafblind.org/interveners/\",\"loadedUrl\":\"https://cadeafblind.org/interveners/\",\"uniqueKey\":\"https://cadeafblind.org/interveners\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:49.925Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cadeafblind.org/interveners",
+	"url": "https://cadeafblind.org/interveners/"
+}

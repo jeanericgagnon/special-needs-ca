@@ -1,0 +1,9 @@
+{
+	"id": "IiFbyhewVbQt78a",
+	"json": "{\"id\":\"IiFbyhewVbQt78a\",\"url\":\"https://give.ucdavis.edu/AENM/EXN0005\",\"loadedUrl\":\"https://give.ucdavis.edu/AENM/EXN0005\",\"uniqueKey\":\"https://give.ucdavis.edu/AENM/EXN0005\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:56.515Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/AENM/EXN0005",
+	"url": "https://give.ucdavis.edu/AENM/EXN0005"
+}

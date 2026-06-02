@@ -1,0 +1,9 @@
+{
+	"id": "qSUieT82U6U3Umv",
+	"json": "{\"id\":\"qSUieT82U6U3Umv\",\"url\":\"https://www.library.ca.gov/about/mission/\",\"loadedUrl\":\"https://www.library.ca.gov/about/mission/\",\"uniqueKey\":\"https://www.library.ca.gov/about/mission\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:18.141Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.library.ca.gov/about/mission",
+	"url": "https://www.library.ca.gov/about/mission/"
+}

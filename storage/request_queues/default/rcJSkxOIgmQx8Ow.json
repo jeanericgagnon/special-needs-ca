@@ -1,0 +1,9 @@
+{
+	"id": "rcJSkxOIgmQx8Ow",
+	"json": "{\"id\":\"rcJSkxOIgmQx8Ow\",\"url\":\"https://health.ucdavis.edu/contact/\",\"loadedUrl\":\"https://health.ucdavis.edu/contact/\",\"uniqueKey\":\"https://health.ucdavis.edu/contact\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:57.496Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/contact",
+	"url": "https://health.ucdavis.edu/contact/"
+}

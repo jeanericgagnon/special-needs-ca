@@ -1,0 +1,9 @@
+{
+	"id": "YCprR7yKtjBY80e",
+	"json": "{\"id\":\"YCprR7yKtjBY80e\",\"url\":\"https://health.ucdavis.edu/internal-medicine/research/centers\",\"loadedUrl\":\"https://health.ucdavis.edu/internal-medicine/research/centers\",\"uniqueKey\":\"https://health.ucdavis.edu/internal-medicine/research/centers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:34:25.771Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/internal-medicine/research/centers",
+	"url": "https://health.ucdavis.edu/internal-medicine/research/centers"
+}

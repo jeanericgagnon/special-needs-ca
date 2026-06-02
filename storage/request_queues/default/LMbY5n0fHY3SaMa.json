@@ -1,0 +1,9 @@
+{
+	"id": "LMbY5n0fHY3SaMa",
+	"json": "{\"id\":\"LMbY5n0fHY3SaMa\",\"url\":\"https://health.ucdavis.edu/healthcare-professionals/news/headlines/vascular-surgery-resident-receives-grant-to-develop-ai-model-to-assess-surgical-technical-skills/2026/04\",\"loadedUrl\":\"https://health.ucdavis.edu/healthcare-professionals/news/headlines/vascular-surgery-resident-receives-grant-to-develop-ai-model-to-assess-surgical-technical-skills/2026/04\",\"uniqueKey\":\"https://health.ucdavis.edu/healthcare-professionals/news/headlines/vascular-surgery-resident-receives-grant-to-develop-ai-model-to-assess-surgical-technical-skills/2026/04\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:12.548Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/healthcare-professionals/news/headlines/vascular-surgery-resident-receives-grant-to-develop-ai-model-to-assess-surgical-technical-skills/2026/04",
+	"url": "https://health.ucdavis.edu/healthcare-professionals/news/headlines/vascular-surgery-resident-receives-grant-to-develop-ai-model-to-assess-surgical-technical-skills/2026/04"
+}

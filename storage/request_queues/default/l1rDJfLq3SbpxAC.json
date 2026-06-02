@@ -1,0 +1,9 @@
+{
+	"id": "l1rDJfLq3SbpxAC",
+	"json": "{\"id\":\"l1rDJfLq3SbpxAC\",\"url\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/STI/DCL-CAHAN-Announcements.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/STI/DCL-CAHAN-Announcements.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/STI/DCL-CAHAN-Announcements.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":2,\"errorMessages\":[\"Error: request timed out after 30 seconds.\\n    at Timeout._onTimeout (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@apify/timeout/cjs/index.cjs:64:68)\\n    at listOnTimeout (node:internal/timers:588:17)\\n    at process.processTimers (node:internal/timers:523:7)\",\"Error: request timed out after 30 seconds.\\n    at Timeout._onTimeout (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@apify/timeout/cjs/index.cjs:64:68)\\n    at listOnTimeout (node:internal/timers:588:17)\\n    at process.processTimers (node:internal/timers:523:7)\"],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:44:37.537Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 2,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/STI/DCL-CAHAN-Announcements.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/STI/DCL-CAHAN-Announcements.aspx"
+}

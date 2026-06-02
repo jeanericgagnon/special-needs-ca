@@ -1,0 +1,9 @@
+{
+	"id": "S8N6O3WIqtNr6ol",
+	"json": "{\"id\":\"S8N6O3WIqtNr6ol\",\"url\":\"https://www.chhs.ca.gov/blog/2021/07/12/ca-submits-home-and-community-based-services-spending-plan/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2021/07/12/ca-submits-home-and-community-based-services-spending-plan/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2021/07/12/ca-submits-home-and-community-based-services-spending-plan\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:03.353Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chhs.ca.gov/blog/2021/07/12/ca-submits-home-and-community-based-services-spending-plan",
+	"url": "https://www.chhs.ca.gov/blog/2021/07/12/ca-submits-home-and-community-based-services-spending-plan/"
+}

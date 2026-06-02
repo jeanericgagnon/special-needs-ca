@@ -1,0 +1,9 @@
+{
+	"id": "RHJnN4G0mgW4mhM",
+	"json": "{\"id\":\"RHJnN4G0mgW4mhM\",\"url\":\"https://hr.ucdavis.edu/news/update-employee-experience-survey-progress\",\"loadedUrl\":\"https://hr.ucdavis.edu/news/update-employee-experience-survey-progress\",\"uniqueKey\":\"https://hr.ucdavis.edu/news/update-employee-experience-survey-progress\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:48.502Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/news/update-employee-experience-survey-progress",
+	"url": "https://hr.ucdavis.edu/news/update-employee-experience-survey-progress"
+}

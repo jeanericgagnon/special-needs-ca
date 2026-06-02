@@ -1,0 +1,9 @@
+{
+	"id": "KFYDGxCHppYS8bx",
+	"json": "{\"id\":\"KFYDGxCHppYS8bx\",\"url\":\"https://financeandbusiness.ucdavis.edu/bia/budget/resources/common-it-services-portfolio\",\"loadedUrl\":\"https://financeandbusiness.ucdavis.edu/bia/budget/resources/common-it-services-portfolio\",\"uniqueKey\":\"https://financeandbusiness.ucdavis.edu/bia/budget/resources/common-it-services-portfolio\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:52.326Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://financeandbusiness.ucdavis.edu/bia/budget/resources/common-it-services-portfolio",
+	"url": "https://financeandbusiness.ucdavis.edu/bia/budget/resources/common-it-services-portfolio"
+}

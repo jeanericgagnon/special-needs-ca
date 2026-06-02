@@ -1,0 +1,9 @@
+{
+	"id": "5LpQSsgICB1VDi2",
+	"json": "{\"id\":\"5LpQSsgICB1VDi2\",\"url\":\"https://www.ucdavis.edu/news/genome-biologist-department-chair-named-new-biological-sciences-dean\",\"loadedUrl\":\"https://www.ucdavis.edu/news/genome-biologist-department-chair-named-new-biological-sciences-dean\",\"uniqueKey\":\"https://www.ucdavis.edu/news/genome-biologist-department-chair-named-new-biological-sciences-dean\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:47.936Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ucdavis.edu/news/genome-biologist-department-chair-named-new-biological-sciences-dean",
+	"url": "https://www.ucdavis.edu/news/genome-biologist-department-chair-named-new-biological-sciences-dean"
+}

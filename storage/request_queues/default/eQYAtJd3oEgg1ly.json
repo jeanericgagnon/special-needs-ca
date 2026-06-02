@@ -1,0 +1,9 @@
+{
+	"id": "eQYAtJd3oEgg1ly",
+	"json": "{\"id\":\"eQYAtJd3oEgg1ly\",\"url\":\"https://www.cdss.ca.gov/Benefits-Services/Adult-Services/In-Home-Supportive-Services/IHSS-Education-Videos#heading\",\"loadedUrl\":\"https://www.cdss.ca.gov/in-home-supportive-services/ihss-education-videos\",\"uniqueKey\":\"https://www.cdss.ca.gov/Benefits-Services/Adult-Services/In-Home-Supportive-Services/IHSS-Education-Videos\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:38.670Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/Benefits-Services/Adult-Services/In-Home-Supportive-Services/IHSS-Education-Videos",
+	"url": "https://www.cdss.ca.gov/Benefits-Services/Adult-Services/In-Home-Supportive-Services/IHSS-Education-Videos#heading"
+}

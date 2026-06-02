@@ -1,0 +1,9 @@
+{
+	"id": "6Ph3nT7GEgnwWnB",
+	"json": "{\"id\":\"6Ph3nT7GEgnwWnB\",\"url\":\"https://www.chhs.ca.gov/home/accessibility/\",\"loadedUrl\":\"https://www.chhs.ca.gov/home/accessibility/\",\"uniqueKey\":\"https://www.chhs.ca.gov/home/accessibility\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:19.941Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chhs.ca.gov/home/accessibility",
+	"url": "https://www.chhs.ca.gov/home/accessibility/"
+}

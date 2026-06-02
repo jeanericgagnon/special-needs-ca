@@ -1,0 +1,9 @@
+{
+	"id": "HMjpmcB0pkHM9bj",
+	"json": "{\"id\":\"HMjpmcB0pkHM9bj\",\"url\":\"https://www.csb-cde.ca.gov/studentlife/sports/sportsteamroster.aspx\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=d50ec295-1612-4efd-bcf0-a6d564e660b6&ssb=07002285200&ssc=https%3A%2F%2Fwww.csb-cde.ca.gov%2Fstudentlife%2Fsports%2Fsportsteamroster.aspx&ssi=543c3ccb-cuez-49b9-8b7c-b1420e3acf04&ssk=botmanager_support@radware.com&ssm=31571191235105553130940296341012&ssn=1b0367bdde286685afe1096ef67a2050e194fcf4a626-c48a-4df3-a38686&sso=a24b589e-9a58ac1546941ec29afc2fc350296f4390ea4a6ca8b8e8c4&ssp=96780725991780346562178033943503990&ssq=09278182762570057700325905998851444568398&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBmY2Y0YTYyNi1jNDhhLTRkZjMtYTg5ZS05YTU4YWMxNTQ2OTQxLTE3ODAzMjU5MDU2NjkxNzE5NDc5LTAwMzlmMjg4ZTgzNDg3NzUzMDUxMyIsInJkIjoiY2EuZ292IiwidXpteCI6IjdmOTAwMDVkMTU2NWJmLWUzNTQtNDg0Yy1hNGY4LWU5ZDgyYTExYTQ5NzEtMTc4MDMyNTkwNTY2OTE3MTk0NzktYjA3YTQ1ZTZmMTdhOTM3MTIyIn0=\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/studentlife/sports/sportsteamroster.aspx\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:27:05.536Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csb-cde.ca.gov/studentlife/sports/sportsteamroster.aspx",
+	"url": "https://www.csb-cde.ca.gov/studentlife/sports/sportsteamroster.aspx"
+}

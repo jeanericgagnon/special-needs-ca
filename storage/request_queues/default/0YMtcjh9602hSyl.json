@@ -1,0 +1,9 @@
+{
+	"id": "0YMtcjh9602hSyl",
+	"json": "{\"id\":\"0YMtcjh9602hSyl\",\"url\":\"https://video.ucdavis.edu/playlist/dedicated/211848273/1_44xyk1ru/1_75s7touy\",\"loadedUrl\":\"https://video.ucdavis.edu/playlist/dedicated/211848273/1_44xyk1ru/1_75s7touy\",\"uniqueKey\":\"https://video.ucdavis.edu/playlist/dedicated/211848273/1_44xyk1ru/1_75s7touy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:21.873Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://video.ucdavis.edu/playlist/dedicated/211848273/1_44xyk1ru/1_75s7touy",
+	"url": "https://video.ucdavis.edu/playlist/dedicated/211848273/1_44xyk1ru/1_75s7touy"
+}

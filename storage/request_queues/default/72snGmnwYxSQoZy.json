@@ -1,0 +1,9 @@
+{
+	"id": "72snGmnwYxSQoZy",
+	"json": "{\"id\":\"72snGmnwYxSQoZy\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/11659/alison-breen-obstetrics_and_gynecology-elk_grove?FreeText:Last+name=Breen\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/11659/alison-breen-obstetrics_and_gynecology-elk_grove?FreeText:Last+name=Breen\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/11659/alison-breen-obstetrics_and_gynecology-elk_grove?FreeText%3ALast+name=Breen\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:12.598Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/11659/alison-breen-obstetrics_and_gynecology-elk_grove?FreeText%3ALast+name=Breen",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/11659/alison-breen-obstetrics_and_gynecology-elk_grove?FreeText:Last+name=Breen"
+}

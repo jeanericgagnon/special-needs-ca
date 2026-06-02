@@ -1,0 +1,9 @@
+{
+	"id": "YtsJH9XInupOLbn",
+	"json": "{\"id\":\"YtsJH9XInupOLbn\",\"url\":\"https://ucdnc.ucdavis.edu/vision-loss-and-blindness\",\"loadedUrl\":\"https://ucdnc.ucdavis.edu/vision-loss-and-blindness\",\"uniqueKey\":\"https://ucdnc.ucdavis.edu/vision-loss-and-blindness\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:20.608Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://ucdnc.ucdavis.edu/vision-loss-and-blindness",
+	"url": "https://ucdnc.ucdavis.edu/vision-loss-and-blindness"
+}

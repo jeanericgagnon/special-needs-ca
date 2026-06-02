@@ -1,0 +1,9 @@
+{
+	"id": "d6Shds8eY6RXv5N",
+	"json": "{\"id\":\"d6Shds8eY6RXv5N\",\"url\":\"https://www.placer.ca.gov/4010/Notice-of-Privacy-Practices\",\"loadedUrl\":\"https://www.placer.ca.gov/4010/Notice-of-Privacy-Practices\",\"uniqueKey\":\"https://www.placer.ca.gov/4010/Notice-of-Privacy-Practices\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:31.198Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.placer.ca.gov/4010/Notice-of-Privacy-Practices",
+	"url": "https://www.placer.ca.gov/4010/Notice-of-Privacy-Practices"
+}

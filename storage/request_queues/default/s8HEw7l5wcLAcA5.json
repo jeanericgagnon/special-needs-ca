@@ -1,0 +1,9 @@
+{
+	"id": "s8HEw7l5wcLAcA5",
+	"json": "{\"id\":\"s8HEw7l5wcLAcA5\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/Breastfeeding/Pages/Guidelines-and-Resources-Community-Partners.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/Breastfeeding/Pages/Guidelines-and-Resources-Community-Partners.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/Breastfeeding/Pages/Guidelines-and-Resources-Community-Partners.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:55.961Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/Breastfeeding/Pages/Guidelines-and-Resources-Community-Partners.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/Breastfeeding/Pages/Guidelines-and-Resources-Community-Partners.aspx"
+}

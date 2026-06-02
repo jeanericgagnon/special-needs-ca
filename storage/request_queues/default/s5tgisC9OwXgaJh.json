@@ -1,0 +1,9 @@
+{
+	"id": "s5tgisC9OwXgaJh",
+	"json": "{\"id\":\"s5tgisC9OwXgaJh\",\"url\":\"https://giveto.ucdavis.edu/schools/UniversityofCaliforniaDavis/login?project_id=73141\",\"loadedUrl\":\"https://giveto.ucdavis.edu/schools/UniversityofCaliforniaDavis/login?project_id=73141\",\"uniqueKey\":\"https://giveto.ucdavis.edu/schools/UniversityofCaliforniaDavis/login?project_id=73141\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:03.865Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://giveto.ucdavis.edu/schools/UniversityofCaliforniaDavis/login?project_id=73141",
+	"url": "https://giveto.ucdavis.edu/schools/UniversityofCaliforniaDavis/login?project_id=73141"
+}

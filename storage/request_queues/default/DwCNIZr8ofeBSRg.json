@@ -1,0 +1,9 @@
+{
+	"id": "DwCNIZr8ofeBSRg",
+	"json": "{\"id\":\"DwCNIZr8ofeBSRg\",\"url\":\"https://www.cdph.ca.gov/Programs/CHCQ/HAI/Pages/HAIProgramHome.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CHCQ/HAI/Pages/HAIProgramHome.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CHCQ/HAI/Pages/HAIProgramHome.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:04.509Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CHCQ/HAI/Pages/HAIProgramHome.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CHCQ/HAI/Pages/HAIProgramHome.aspx"
+}

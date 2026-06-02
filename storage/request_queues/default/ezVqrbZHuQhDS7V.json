@@ -1,0 +1,9 @@
+{
+	"id": "ezVqrbZHuQhDS7V",
+	"json": "{\"id\":\"ezVqrbZHuQhDS7V\",\"url\":\"https://www.ucdavis.edu/news/donate-may-food-drive-staff-and-retirees\",\"loadedUrl\":\"https://www.ucdavis.edu/news/donate-may-food-drive-staff-and-retirees\",\"uniqueKey\":\"https://www.ucdavis.edu/news/donate-may-food-drive-staff-and-retirees\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:32.835Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ucdavis.edu/news/donate-may-food-drive-staff-and-retirees",
+	"url": "https://www.ucdavis.edu/news/donate-may-food-drive-staff-and-retirees"
+}

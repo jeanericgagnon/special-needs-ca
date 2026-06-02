@@ -1,0 +1,9 @@
+{
+	"id": "4yGhGHbE3gLg7tq",
+	"json": "{\"id\":\"4yGhGHbE3gLg7tq\",\"url\":\"https://emsa.ca.gov/medical-health-operational-area-coordinator/\",\"loadedUrl\":\"https://www.emsa.ca.gov/session_timeout.do\",\"uniqueKey\":\"https://emsa.ca.gov/medical-health-operational-area-coordinator\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T17:08:14.347Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://emsa.ca.gov/medical-health-operational-area-coordinator",
+	"url": "https://emsa.ca.gov/medical-health-operational-area-coordinator/"
+}

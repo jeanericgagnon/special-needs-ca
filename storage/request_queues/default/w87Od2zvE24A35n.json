@@ -1,0 +1,9 @@
+{
+	"id": "w87Od2zvE24A35n",
+	"json": "{\"id\":\"w87Od2zvE24A35n\",\"url\":\"https://cdss.ca.gov/inforesources/cdss-programs/foster-care/family-reunification-and-pathways-to-permanency/missing-youth-protocols\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/cdss-programs/foster-care/family-reunification-and-pathways-to-permanency/missing-youth-protocols\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/cdss-programs/foster-care/family-reunification-and-pathways-to-permanency/missing-youth-protocols\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:56.952Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/cdss-programs/foster-care/family-reunification-and-pathways-to-permanency/missing-youth-protocols",
+	"url": "https://cdss.ca.gov/inforesources/cdss-programs/foster-care/family-reunification-and-pathways-to-permanency/missing-youth-protocols"
+}

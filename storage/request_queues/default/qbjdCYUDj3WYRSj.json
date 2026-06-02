@@ -1,0 +1,9 @@
+{
+	"id": "qbjdCYUDj3WYRSj",
+	"json": "{\"id\":\"qbjdCYUDj3WYRSj\",\"url\":\"https://www.bppe.ca.gov/students/transcripts.shtml\",\"loadedUrl\":\"https://www.bppe.ca.gov/students/transcripts.shtml\",\"uniqueKey\":\"https://www.bppe.ca.gov/students/transcripts.shtml\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:21.024Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.bppe.ca.gov/students/transcripts.shtml",
+	"url": "https://www.bppe.ca.gov/students/transcripts.shtml"
+}

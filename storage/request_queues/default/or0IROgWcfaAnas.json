@@ -1,0 +1,9 @@
+{
+	"id": "or0IROgWcfaAnas",
+	"json": "{\"id\":\"or0IROgWcfaAnas\",\"url\":\"https://supplychain.ucdavis.edu/shipping/aggieship\",\"loadedUrl\":\"https://supplychain.ucdavis.edu/logistics/aggieship\",\"uniqueKey\":\"https://supplychain.ucdavis.edu/shipping/aggieship\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:53.817Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://supplychain.ucdavis.edu/shipping/aggieship",
+	"url": "https://supplychain.ucdavis.edu/shipping/aggieship"
+}

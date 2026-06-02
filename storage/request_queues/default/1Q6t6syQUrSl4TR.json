@@ -1,0 +1,9 @@
+{
+	"id": "1Q6t6syQUrSl4TR",
+	"json": "{\"id\":\"1Q6t6syQUrSl4TR\",\"url\":\"https://cnprc.ucdavis.edu/tours-and-presentations\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/tours-and-presentations\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/tours-and-presentations\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:16.944Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cnprc.ucdavis.edu/tours-and-presentations",
+	"url": "https://cnprc.ucdavis.edu/tours-and-presentations"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "nTUNUzmRR4YKlLA",
+	"json": "{\"id\":\"nTUNUzmRR4YKlLA\",\"url\":\"https://biomonitoring.ca.gov/biomonitoring-resources\",\"loadedUrl\":\"https://biomonitoring.ca.gov/biomonitoring-resources\",\"uniqueKey\":\"https://biomonitoring.ca.gov/biomonitoring-resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:31:07.488Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://biomonitoring.ca.gov/biomonitoring-resources",
+	"url": "https://biomonitoring.ca.gov/biomonitoring-resources"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "6j55uFtQfXeMrZP",
+	"json": "{\"id\":\"6j55uFtQfXeMrZP\",\"url\":\"https://care.ucdavis.edu/people\",\"loadedUrl\":\"https://care.ucdavis.edu/people\",\"uniqueKey\":\"https://care.ucdavis.edu/people\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:59.441Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://care.ucdavis.edu/people",
+	"url": "https://care.ucdavis.edu/people"
+}

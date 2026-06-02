@@ -1,0 +1,9 @@
+{
+	"id": "Pr0EGHCHYT613PM",
+	"json": "{\"id\":\"Pr0EGHCHYT613PM\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDSRB/Pages/Cancer-Survivorship-Care-Plans.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDSRB/Pages/Cancer-Survivorship-Care-Plans.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDSRB/Pages/Cancer-Survivorship-Care-Plans.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:02:19.861Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDSRB/Pages/Cancer-Survivorship-Care-Plans.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDSRB/Pages/Cancer-Survivorship-Care-Plans.aspx"
+}

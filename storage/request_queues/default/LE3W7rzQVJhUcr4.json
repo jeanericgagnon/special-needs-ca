@@ -1,0 +1,9 @@
+{
+	"id": "LE3W7rzQVJhUcr4",
+	"json": "{\"id\":\"LE3W7rzQVJhUcr4\",\"url\":\"https://lettersandscience.ucdavis.edu/student-success\",\"loadedUrl\":\"https://lettersandscience.ucdavis.edu/student-success\",\"uniqueKey\":\"https://lettersandscience.ucdavis.edu/student-success\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:22.365Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://lettersandscience.ucdavis.edu/student-success",
+	"url": "https://lettersandscience.ucdavis.edu/student-success"
+}

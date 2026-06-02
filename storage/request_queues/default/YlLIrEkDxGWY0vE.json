@@ -1,0 +1,9 @@
+{
+	"id": "YlLIrEkDxGWY0vE",
+	"json": "{\"id\":\"YlLIrEkDxGWY0vE\",\"url\":\"https://www.ca.gov/services/all/?q=birth+\",\"loadedUrl\":\"https://www.ca.gov/services/all/?q=birth+\",\"uniqueKey\":\"https://www.ca.gov/services/all?q=birth+\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:20.388Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ca.gov/services/all?q=birth+",
+	"url": "https://www.ca.gov/services/all/?q=birth+"
+}

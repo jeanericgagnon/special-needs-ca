@@ -1,0 +1,9 @@
+{
+	"id": "pzMgow33ugdgxzK",
+	"json": "{\"id\":\"pzMgow33ugdgxzK\",\"url\":\"http://www.cde.ca.gov/re/di/wp/\",\"loadedUrl\":\"https://www.cde.ca.gov/re/di/ws/webpolicy.asp\",\"uniqueKey\":\"http://www.cde.ca.gov/re/di/wp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:32.687Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.cde.ca.gov/re/di/wp",
+	"url": "http://www.cde.ca.gov/re/di/wp/"
+}

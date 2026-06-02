@@ -1,0 +1,9 @@
+{
+	"id": "GpJNJByxeyNSduC",
+	"json": "{\"id\":\"GpJNJByxeyNSduC\",\"url\":\"https://calable.ca.gov/faqs/who-can-send-me-gifts\",\"loadedUrl\":\"https://calable.ca.gov/faqs/who-can-send-me-gifts\",\"uniqueKey\":\"https://calable.ca.gov/faqs/who-can-send-me-gifts\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:54.054Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://calable.ca.gov/faqs/who-can-send-me-gifts",
+	"url": "https://calable.ca.gov/faqs/who-can-send-me-gifts"
+}

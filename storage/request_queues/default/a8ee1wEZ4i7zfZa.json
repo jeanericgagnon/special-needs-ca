@@ -1,0 +1,9 @@
+{
+	"id": "a8ee1wEZ4i7zfZa",
+	"json": "{\"id\":\"a8ee1wEZ4i7zfZa\",\"url\":\"https://www.ca.gov/accessibility/\",\"loadedUrl\":\"https://www.ca.gov/legal/accessibility/\",\"uniqueKey\":\"https://www.ca.gov/accessibility\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:40:30.211Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ca.gov/accessibility",
+	"url": "https://www.ca.gov/accessibility/"
+}

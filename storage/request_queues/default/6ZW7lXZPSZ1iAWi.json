@@ -1,0 +1,9 @@
+{
+	"id": "6ZW7lXZPSZ1iAWi",
+	"json": "{\"id\":\"6ZW7lXZPSZ1iAWi\",\"url\":\"https://health.ucdavis.edu/mdprogram/community-health-scholars/index.html\",\"loadedUrl\":\"https://health.ucdavis.edu/mdprogram/community-health-scholars/index.html\",\"uniqueKey\":\"https://health.ucdavis.edu/mdprogram/community-health-scholars/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:00.562Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mdprogram/community-health-scholars/index.html",
+	"url": "https://health.ucdavis.edu/mdprogram/community-health-scholars/index.html"
+}

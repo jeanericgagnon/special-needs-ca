@@ -1,0 +1,9 @@
+{
+	"id": "zHkyYWAyRsAF9t2",
+	"json": "{\"id\":\"zHkyYWAyRsAF9t2\",\"url\":\"https://neuroscience.ucdavis.edu/conte-center-research\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/conte-center-research\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/conte-center-research\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:01.209Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://neuroscience.ucdavis.edu/conte-center-research",
+	"url": "https://neuroscience.ucdavis.edu/conte-center-research"
+}

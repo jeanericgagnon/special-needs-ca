@@ -1,0 +1,9 @@
+{
+	"id": "6iko8EEgjSny3Lx",
+	"json": "{\"id\":\"6iko8EEgjSny3Lx\",\"url\":\"https://www.ctc.ca.gov/employers/assignment-resources/assignment-monitoring/\",\"loadedUrl\":\"https://www.ctc.ca.gov/employers/assignment-resources/assignment-monitoring/\",\"uniqueKey\":\"https://www.ctc.ca.gov/employers/assignment-resources/assignment-monitoring\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:56.491Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ctc.ca.gov/employers/assignment-resources/assignment-monitoring",
+	"url": "https://www.ctc.ca.gov/employers/assignment-resources/assignment-monitoring/"
+}

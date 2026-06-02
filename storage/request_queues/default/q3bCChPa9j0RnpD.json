@@ -1,0 +1,9 @@
+{
+	"id": "q3bCChPa9j0RnpD",
+	"json": "{\"id\":\"q3bCChPa9j0RnpD\",\"url\":\"https://health.ucdavis.edu/news/headlines/new-series-from-the-lancet-offers-roadmap-for-alzheimers-treatment-in-a-changing-therapeutic-landscape/2025/09\",\"loadedUrl\":\"https://health.ucdavis.edu/news/headlines/new-series-from-the-lancet-offers-roadmap-for-alzheimers-treatment-in-a-changing-therapeutic-landscape/2025/09\",\"uniqueKey\":\"https://health.ucdavis.edu/news/headlines/new-series-from-the-lancet-offers-roadmap-for-alzheimers-treatment-in-a-changing-therapeutic-landscape/2025/09\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:08.334Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/news/headlines/new-series-from-the-lancet-offers-roadmap-for-alzheimers-treatment-in-a-changing-therapeutic-landscape/2025/09",
+	"url": "https://health.ucdavis.edu/news/headlines/new-series-from-the-lancet-offers-roadmap-for-alzheimers-treatment-in-a-changing-therapeutic-landscape/2025/09"
+}

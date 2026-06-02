@@ -1,0 +1,9 @@
+{
+	"id": "TsUzqdjDqq6fs5H",
+	"json": "{\"id\":\"TsUzqdjDqq6fs5H\",\"url\":\"https://cdss.ca.gov/inforesources/child-care-licensing/water-testing-information\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/child-care-licensing/water-testing-information\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/child-care-licensing/water-testing-information\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:43.013Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/child-care-licensing/water-testing-information",
+	"url": "https://cdss.ca.gov/inforesources/child-care-licensing/water-testing-information"
+}

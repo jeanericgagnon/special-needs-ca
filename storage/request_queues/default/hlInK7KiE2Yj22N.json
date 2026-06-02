@@ -1,0 +1,9 @@
+{
+	"id": "hlInK7KiE2Yj22N",
+	"json": "{\"id\":\"hlInK7KiE2Yj22N\",\"url\":\"https://registertovote.ca.gov/hi\",\"loadedUrl\":\"https://registertovote.ca.gov/hi\",\"uniqueKey\":\"https://registertovote.ca.gov/hi\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:16.427Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://registertovote.ca.gov/hi",
+	"url": "https://registertovote.ca.gov/hi"
+}

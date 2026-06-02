@@ -1,0 +1,9 @@
+{
+	"id": "wgtolanIIZN1sd8",
+	"json": "{\"id\":\"wgtolanIIZN1sd8\",\"url\":\"https://physics.ucdavis.edu/directory/faculty/daniel-cox\",\"loadedUrl\":\"https://physics.ucdavis.edu/people/faculty/daniel-cox\",\"uniqueKey\":\"https://physics.ucdavis.edu/directory/faculty/daniel-cox\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:49.128Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://physics.ucdavis.edu/directory/faculty/daniel-cox",
+	"url": "https://physics.ucdavis.edu/directory/faculty/daniel-cox"
+}

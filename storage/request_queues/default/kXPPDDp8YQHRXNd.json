@@ -1,0 +1,9 @@
+{
+	"id": "kXPPDDp8YQHRXNd",
+	"json": "{\"id\":\"kXPPDDp8YQHRXNd\",\"url\":\"https://cdss.ca.gov/inforesources/civil-rights/your-rights-under-california-welfare-programs\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/civil-rights/your-rights-under-california-welfare-programs\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/civil-rights/your-rights-under-california-welfare-programs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:51.049Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/civil-rights/your-rights-under-california-welfare-programs",
+	"url": "https://cdss.ca.gov/inforesources/civil-rights/your-rights-under-california-welfare-programs"
+}

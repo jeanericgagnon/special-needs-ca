@@ -1,0 +1,9 @@
+{
+	"id": "v4A4msEZNM2vIU6",
+	"json": "{\"id\":\"v4A4msEZNM2vIU6\",\"url\":\"https://health.ucdavis.edu/imaging-research/services/rates-and-scheduling\",\"loadedUrl\":\"https://health.ucdavis.edu/imaging-research/services/rates-and-scheduling\",\"uniqueKey\":\"https://health.ucdavis.edu/imaging-research/services/rates-and-scheduling\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:06:42.578Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/imaging-research/services/rates-and-scheduling",
+	"url": "https://health.ucdavis.edu/imaging-research/services/rates-and-scheduling"
+}

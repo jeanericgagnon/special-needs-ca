@@ -1,0 +1,9 @@
+{
+	"id": "KCbuwkcRwTfVX4J",
+	"json": "{\"id\":\"KCbuwkcRwTfVX4J\",\"url\":\"https://scdd.ca.gov/event/sacramento-regional-advisory-committee-rac-meeting-10/2026-10-13/\",\"loadedUrl\":\"https://scdd.ca.gov/event/sacramento-regional-advisory-committee-rac-meeting-10/2026-10-13/\",\"uniqueKey\":\"https://scdd.ca.gov/event/sacramento-regional-advisory-committee-rac-meeting-10/2026-10-13\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:16.150Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/event/sacramento-regional-advisory-committee-rac-meeting-10/2026-10-13",
+	"url": "https://scdd.ca.gov/event/sacramento-regional-advisory-committee-rac-meeting-10/2026-10-13/"
+}

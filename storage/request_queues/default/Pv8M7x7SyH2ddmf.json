@@ -1,0 +1,9 @@
+{
+	"id": "Pv8M7x7SyH2ddmf",
+	"json": "{\"id\":\"Pv8M7x7SyH2ddmf\",\"url\":\"https://hr.ucdavis.edu/departments/learning-dev/course-catalog/hr-mgmt/poc\",\"loadedUrl\":\"https://hr.ucdavis.edu/departments/learning/course-catalog/supervisors\",\"uniqueKey\":\"https://hr.ucdavis.edu/departments/learning-dev/course-catalog/hr-mgmt/poc\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:36.261Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/departments/learning-dev/course-catalog/hr-mgmt/poc",
+	"url": "https://hr.ucdavis.edu/departments/learning-dev/course-catalog/hr-mgmt/poc"
+}

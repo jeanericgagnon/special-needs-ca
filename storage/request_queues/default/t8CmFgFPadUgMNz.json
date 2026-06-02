@@ -1,0 +1,9 @@
+{
+	"id": "t8CmFgFPadUgMNz",
+	"json": "{\"id\":\"t8CmFgFPadUgMNz\",\"url\":\"https://donate.rarediseases.org/campaign/739474/privacy\",\"loadedUrl\":\"https://www.gofundme.com/c/privacy\",\"uniqueKey\":\"https://donate.rarediseases.org/campaign/739474/privacy\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:23:43.244Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://donate.rarediseases.org/campaign/739474/privacy",
+	"url": "https://donate.rarediseases.org/campaign/739474/privacy"
+}

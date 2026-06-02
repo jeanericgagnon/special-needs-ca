@@ -1,0 +1,9 @@
+{
+	"id": "BgyrMRod7br7gdR",
+	"json": "{\"id\":\"BgyrMRod7br7gdR\",\"url\":\"http://www.dhcs.ca.gov/services/Pages/Medi-CalManagedCare.aspx\",\"loadedUrl\":\"https://www.dhcs.ca.gov/services/Pages/Medi-CalManagedCare.aspx\",\"uniqueKey\":\"http://www.dhcs.ca.gov/services/Pages/Medi-CalManagedCare.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:07:16.674Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.dhcs.ca.gov/services/Pages/Medi-CalManagedCare.aspx",
+	"url": "http://www.dhcs.ca.gov/services/Pages/Medi-CalManagedCare.aspx"
+}

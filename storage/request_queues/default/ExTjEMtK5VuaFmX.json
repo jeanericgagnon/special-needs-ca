@@ -1,0 +1,9 @@
+{
+	"id": "ExTjEMtK5VuaFmX",
+	"json": "{\"id\":\"ExTjEMtK5VuaFmX\",\"url\":\"https://www.cde.ca.gov/fg/fo/profile.asp?id=7501\",\"loadedUrl\":\"https://www.cde.ca.gov/fg/fo/profile.asp?id=7501\",\"uniqueKey\":\"https://www.cde.ca.gov/fg/fo/profile.asp?id=7501\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:23:06.019Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/fg/fo/profile.asp?id=7501",
+	"url": "https://www.cde.ca.gov/fg/fo/profile.asp?id=7501"
+}

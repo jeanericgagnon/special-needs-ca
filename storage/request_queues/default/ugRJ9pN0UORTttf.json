@@ -1,0 +1,9 @@
+{
+	"id": "ugRJ9pN0UORTttf",
+	"json": "{\"id\":\"ugRJ9pN0UORTttf\",\"url\":\"https://www.ssa.gov/manage-benefits/identify-someone-manage-benefits-you\",\"loadedUrl\":\"https://www.ssa.gov/manage-benefits/identify-someone-manage-benefits-you\",\"uniqueKey\":\"https://www.ssa.gov/manage-benefits/identify-someone-manage-benefits-you\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:34.392Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ssa.gov/manage-benefits/identify-someone-manage-benefits-you",
+	"url": "https://www.ssa.gov/manage-benefits/identify-someone-manage-benefits-you"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "MtHfw5tJzy37tbJ",
+	"json": "{\"id\":\"MtHfw5tJzy37tbJ\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/Pages/Health-Topics/Adolescent-Birth-Control.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/Pages/Health-Topics/Adolescent-Birth-Control.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/Pages/Health-Topics/Adolescent-Birth-Control.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:24:51.796Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/Pages/Health-Topics/Adolescent-Birth-Control.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/Pages/Health-Topics/Adolescent-Birth-Control.aspx"
+}

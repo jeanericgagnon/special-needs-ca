@@ -1,0 +1,9 @@
+{
+	"id": "6IL4izQVk4xQHZY",
+	"json": "{\"id\":\"6IL4izQVk4xQHZY\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/43227/thenappan-thenu-chandrasekar-genitourinary_cancers-urologic_oncology-urologic_surgery-urology-sacramento?FreeText%3aLast+name=Chandrasekar\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/43227/thenappan-thenu-chandrasekar-genitourinary_cancers-urologic_oncology-urologic_surgery-urology-sacramento?FreeText%3aLast+name=Chandrasekar\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/43227/thenappan-thenu-chandrasekar-genitourinary_cancers-urologic_oncology-urologic_surgery-urology-sacramento?FreeText%3ALast+name=Chandrasekar\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:15.533Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/43227/thenappan-thenu-chandrasekar-genitourinary_cancers-urologic_oncology-urologic_surgery-urology-sacramento?FreeText%3ALast+name=Chandrasekar",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/43227/thenappan-thenu-chandrasekar-genitourinary_cancers-urologic_oncology-urologic_surgery-urology-sacramento?FreeText%3aLast+name=Chandrasekar"
+}

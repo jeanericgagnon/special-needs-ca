@@ -1,0 +1,9 @@
+{
+	"id": "gdL2tEh6R0eSbBQ",
+	"json": "{\"id\":\"gdL2tEh6R0eSbBQ\",\"url\":\"https://www.cde.ca.gov/ls/fa/toiletrequire.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ls/fa/toiletrequire.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ls/fa/toiletrequire.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:35.421Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ls/fa/toiletrequire.asp",
+	"url": "https://www.cde.ca.gov/ls/fa/toiletrequire.asp"
+}

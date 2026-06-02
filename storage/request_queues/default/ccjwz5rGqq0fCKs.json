@@ -1,0 +1,9 @@
+{
+	"id": "ccjwz5rGqq0fCKs",
+	"json": "{\"id\":\"ccjwz5rGqq0fCKs\",\"url\":\"http://www.cac.ca.gov/\",\"loadedUrl\":\"https://arts.ca.gov/\",\"uniqueKey\":\"http://www.cac.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:22:48.577Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.cac.ca.gov",
+	"url": "http://www.cac.ca.gov/"
+}

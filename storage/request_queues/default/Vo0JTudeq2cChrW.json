@@ -1,0 +1,9 @@
+{
+	"id": "Vo0JTudeq2cChrW",
+	"json": "{\"id\":\"Vo0JTudeq2cChrW\",\"url\":\"https://health.ucdavis.edu/mind-institute/centers/cedd/cedd-advocacy-span\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/centers/cedd/cedd-advocacy-span\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/centers/cedd/cedd-advocacy-span\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:17.119Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mind-institute/centers/cedd/cedd-advocacy-span",
+	"url": "https://health.ucdavis.edu/mind-institute/centers/cedd/cedd-advocacy-span"
+}

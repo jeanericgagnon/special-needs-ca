@@ -1,0 +1,9 @@
+{
+	"id": "0xp729w4uEmu7YU",
+	"json": "{\"id\":\"0xp729w4uEmu7YU\",\"url\":\"https://www.csdr-cde.ca.gov/wellness/\",\"loadedUrl\":\"https://www.csdr-cde.ca.gov/wellness/\",\"uniqueKey\":\"https://www.csdr-cde.ca.gov/wellness\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:11.545Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csdr-cde.ca.gov/wellness",
+	"url": "https://www.csdr-cde.ca.gov/wellness/"
+}

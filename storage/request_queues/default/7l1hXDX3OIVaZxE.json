@@ -1,0 +1,9 @@
+{
+	"id": "7l1hXDX3OIVaZxE",
+	"json": "{\"id\":\"7l1hXDX3OIVaZxE\",\"url\":\"https://www.cde.ca.gov/ds/si/ds/reorg.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ds/si/ds/reorg.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ds/si/ds/reorg.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:24:03.196Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ds/si/ds/reorg.asp",
+	"url": "https://www.cde.ca.gov/ds/si/ds/reorg.asp"
+}

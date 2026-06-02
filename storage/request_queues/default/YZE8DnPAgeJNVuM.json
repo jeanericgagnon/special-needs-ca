@@ -1,0 +1,9 @@
+{
+	"id": "YZE8DnPAgeJNVuM",
+	"json": "{\"id\":\"YZE8DnPAgeJNVuM\",\"url\":\"https://health.ucdavis.edu/research/news/\",\"loadedUrl\":\"https://health.ucdavis.edu/research/news/\",\"uniqueKey\":\"https://health.ucdavis.edu/research/news\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:52.617Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/research/news",
+	"url": "https://health.ucdavis.edu/research/news/"
+}

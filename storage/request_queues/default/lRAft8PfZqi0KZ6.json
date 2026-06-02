@@ -1,0 +1,9 @@
+{
+	"id": "lRAft8PfZqi0KZ6",
+	"json": "{\"id\":\"lRAft8PfZqi0KZ6\",\"url\":\"https://www.sco.ca.gov/public_services.html\",\"loadedUrl\":\"https://www.sco.ca.gov/public_services.html\",\"uniqueKey\":\"https://www.sco.ca.gov/public_services.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:07.372Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.sco.ca.gov/public_services.html",
+	"url": "https://www.sco.ca.gov/public_services.html"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "4kFEaUaWsIV3u63",
+	"json": "{\"id\":\"4kFEaUaWsIV3u63\",\"url\":\"https://www.dds.ca.gov/rc/vendor-provider/rate-reform/directives-updates/authorization-completion-report-updates-february-13/\",\"loadedUrl\":\"https://www.dds.ca.gov/rc/vendor-provider/rate-reform/directives-updates/authorization-completion-report-updates-february-13/\",\"uniqueKey\":\"https://www.dds.ca.gov/rc/vendor-provider/rate-reform/directives-updates/authorization-completion-report-updates-february-13\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:53.459Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/rc/vendor-provider/rate-reform/directives-updates/authorization-completion-report-updates-february-13",
+	"url": "https://www.dds.ca.gov/rc/vendor-provider/rate-reform/directives-updates/authorization-completion-report-updates-february-13/"
+}

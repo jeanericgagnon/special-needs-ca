@@ -1,0 +1,9 @@
+{
+	"id": "JrjPu2zpx0mFSAe",
+	"json": "{\"id\":\"JrjPu2zpx0mFSAe\",\"url\":\"https://health.ucdavis.edu/children/childrens-miracle-network/ways-to-give\",\"loadedUrl\":\"https://health.ucdavis.edu/children/childrens-miracle-network/ways-to-give\",\"uniqueKey\":\"https://health.ucdavis.edu/children/childrens-miracle-network/ways-to-give\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:02.755Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/children/childrens-miracle-network/ways-to-give",
+	"url": "https://health.ucdavis.edu/children/childrens-miracle-network/ways-to-give"
+}

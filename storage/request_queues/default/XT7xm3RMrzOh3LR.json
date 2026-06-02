@@ -1,0 +1,9 @@
+{
+	"id": "XT7xm3RMrzOh3LR",
+	"json": "{\"id\":\"XT7xm3RMrzOh3LR\",\"url\":\"https://stophate.calcivilrights.ca.gov/s/\",\"loadedUrl\":\"https://stophate.calcivilrights.ca.gov/s/\",\"uniqueKey\":\"https://stophate.calcivilrights.ca.gov/s\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:37.778Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://stophate.calcivilrights.ca.gov/s",
+	"url": "https://stophate.calcivilrights.ca.gov/s/"
+}

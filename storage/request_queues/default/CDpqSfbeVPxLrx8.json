@@ -1,0 +1,9 @@
+{
+	"id": "CDpqSfbeVPxLrx8",
+	"json": "{\"id\":\"CDpqSfbeVPxLrx8\",\"url\":\"https://www.cde.ca.gov/re/di/cd/ap/mainpage.aspx?requrl=http://www.cde.ca.gov/sp/cd/re/itfoundations.asp&refurl=\",\"loadedUrl\":\"https://www.cde.ca.gov/re/di/cd/ap2/\",\"uniqueKey\":\"https://www.cde.ca.gov/re/di/cd/ap/mainpage.aspx?refurl=&requrl=http%3A%2F%2Fwww.cde.ca.gov%2Fsp%2Fcd%2Fre%2Fitfoundations.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:32.022Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/re/di/cd/ap/mainpage.aspx?refurl=&requrl=http%3A%2F%2Fwww.cde.ca.gov%2Fsp%2Fcd%2Fre%2Fitfoundations.asp",
+	"url": "https://www.cde.ca.gov/re/di/cd/ap/mainpage.aspx?requrl=http://www.cde.ca.gov/sp/cd/re/itfoundations.asp&refurl="
+}

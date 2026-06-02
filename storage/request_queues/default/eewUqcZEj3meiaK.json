@@ -1,0 +1,9 @@
+{
+	"id": "eewUqcZEj3meiaK",
+	"json": "{\"id\":\"eewUqcZEj3meiaK\",\"url\":\"https://www.dgs.ca.gov/CCDA/Meetings\",\"loadedUrl\":\"https://www.dgs.ca.gov/CCDA/Meetings\",\"uniqueKey\":\"https://www.dgs.ca.gov/CCDA/Meetings\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:06.649Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dgs.ca.gov/CCDA/Meetings",
+	"url": "https://www.dgs.ca.gov/CCDA/Meetings"
+}

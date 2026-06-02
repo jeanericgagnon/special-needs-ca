@@ -1,0 +1,9 @@
+{
+	"id": "UGr0yYkEjkUYDmZ",
+	"json": "{\"id\":\"UGr0yYkEjkUYDmZ\",\"url\":\"http://dq.cde.ca.gov/dataquest/whatsnew.asp\",\"loadedUrl\":\"https://dq.cde.ca.gov/dataquest/whatsnew.asp\",\"uniqueKey\":\"http://dq.cde.ca.gov/dataquest/whatsnew.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:23:38.998Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://dq.cde.ca.gov/dataquest/whatsnew.asp",
+	"url": "http://dq.cde.ca.gov/dataquest/whatsnew.asp"
+}

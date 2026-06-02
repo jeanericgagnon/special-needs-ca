@@ -1,0 +1,9 @@
+{
+	"id": "8PVQXexelLuwNW1",
+	"json": "{\"id\":\"8PVQXexelLuwNW1\",\"url\":\"https://www.dhcs.ca.gov/CalAIM/Documents/BH-CONNECT/BH-CONNECT-Fact-Sheet-12-16-24.pdf\",\"loadedUrl\":\"https://www.dhcs.ca.gov/file/bh-connect-fact-sheet-12-16-24/\",\"uniqueKey\":\"https://www.dhcs.ca.gov/CalAIM/Documents/BH-CONNECT/BH-CONNECT-Fact-Sheet-12-16-24.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:53.573Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dhcs.ca.gov/CalAIM/Documents/BH-CONNECT/BH-CONNECT-Fact-Sheet-12-16-24.pdf",
+	"url": "https://www.dhcs.ca.gov/CalAIM/Documents/BH-CONNECT/BH-CONNECT-Fact-Sheet-12-16-24.pdf"
+}

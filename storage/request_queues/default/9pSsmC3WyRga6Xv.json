@@ -1,0 +1,9 @@
+{
+	"id": "9pSsmC3WyRga6Xv",
+	"json": "{\"id\":\"9pSsmC3WyRga6Xv\",\"url\":\"https://financeandbusiness.ucdavis.edu/finance/accounting-financial-reporting\",\"loadedUrl\":\"https://financeandbusiness.ucdavis.edu/finance/accounting-financial-reporting\",\"uniqueKey\":\"https://financeandbusiness.ucdavis.edu/finance/accounting-financial-reporting\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:52.467Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://financeandbusiness.ucdavis.edu/finance/accounting-financial-reporting",
+	"url": "https://financeandbusiness.ucdavis.edu/finance/accounting-financial-reporting"
+}

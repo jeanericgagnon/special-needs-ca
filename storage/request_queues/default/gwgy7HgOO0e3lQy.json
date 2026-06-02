@@ -1,0 +1,9 @@
+{
+	"id": "gwgy7HgOO0e3lQy",
+	"json": "{\"id\":\"gwgy7HgOO0e3lQy\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/21825/glenn-yiu---vitreoretinal-service-sacramento/\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/21825/glenn-yiu---vitreoretinal-service-sacramento/\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/21825/glenn-yiu---vitreoretinal-service-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:13.406Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/21825/glenn-yiu---vitreoretinal-service-sacramento",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/21825/glenn-yiu---vitreoretinal-service-sacramento/"
+}

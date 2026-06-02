@@ -1,0 +1,9 @@
+{
+	"id": "k4mPB8XderSGhgS",
+	"json": "{\"id\":\"k4mPB8XderSGhgS\",\"url\":\"https://health.ucdavis.edu/referrals/physician-referral-liaison/index.html\",\"loadedUrl\":\"https://health.ucdavis.edu/referrals/physician-referral-liaison/index.html\",\"uniqueKey\":\"https://health.ucdavis.edu/referrals/physician-referral-liaison/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:27.449Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/referrals/physician-referral-liaison/index.html",
+	"url": "https://health.ucdavis.edu/referrals/physician-referral-liaison/index.html"
+}

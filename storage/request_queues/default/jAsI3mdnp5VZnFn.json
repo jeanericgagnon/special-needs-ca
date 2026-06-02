@@ -1,0 +1,9 @@
+{
+	"id": "jAsI3mdnp5VZnFn",
+	"json": "{\"id\":\"jAsI3mdnp5VZnFn\",\"url\":\"https://health.ucdavis.edu/mind-institute/registry/autism\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/registry/autism\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/registry/autism\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:05:10.957Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mind-institute/registry/autism",
+	"url": "https://health.ucdavis.edu/mind-institute/registry/autism"
+}

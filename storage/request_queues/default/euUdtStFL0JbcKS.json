@@ -1,0 +1,9 @@
+{
+	"id": "euUdtStFL0JbcKS",
+	"json": "{\"id\":\"euUdtStFL0JbcKS\",\"url\":\"https://www.cde.ca.gov/sp/se/qa/\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/se/qa/\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/se/qa\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:57:55.228Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/sp/se/qa",
+	"url": "https://www.cde.ca.gov/sp/se/qa/"
+}

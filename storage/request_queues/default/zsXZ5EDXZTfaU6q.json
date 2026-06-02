@@ -1,0 +1,9 @@
+{
+	"id": "zsXZ5EDXZTfaU6q",
+	"json": "{\"id\":\"zsXZ5EDXZTfaU6q\",\"url\":\"https://calable.ca.gov/es/recursos/pdb\",\"loadedUrl\":\"https://marcom.vestwell.com/program-description/calable.html\",\"uniqueKey\":\"https://calable.ca.gov/es/recursos/pdb\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:38:38.914Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://calable.ca.gov/es/recursos/pdb",
+	"url": "https://calable.ca.gov/es/recursos/pdb"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "Pgor1a3Th53IOU9",
+	"json": "{\"id\":\"Pgor1a3Th53IOU9\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/42837/lakshmi-nagaraju-pediatric-cardiology-fetal-cardiology-roseville\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/42837/lakshmi-nagaraju-pediatric-cardiology-fetal-cardiology-roseville\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/42837/lakshmi-nagaraju-pediatric-cardiology-fetal-cardiology-roseville\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:16.172Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/42837/lakshmi-nagaraju-pediatric-cardiology-fetal-cardiology-roseville",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/42837/lakshmi-nagaraju-pediatric-cardiology-fetal-cardiology-roseville"
+}

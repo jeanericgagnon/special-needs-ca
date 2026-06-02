@@ -1,0 +1,9 @@
+{
+	"id": "U6QwMGg2j6Nxv8E",
+	"json": "{\"id\":\"U6QwMGg2j6Nxv8E\",\"url\":\"https://rarediseases.org/organizations/foundation-for-sarcoidosis-research-fsr/\",\"loadedUrl\":\"https://rarediseases.org/organizations/foundation-for-sarcoidosis-research-fsr/\",\"uniqueKey\":\"https://rarediseases.org/organizations/foundation-for-sarcoidosis-research-fsr\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:16:43.926Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/organizations/foundation-for-sarcoidosis-research-fsr",
+	"url": "https://rarediseases.org/organizations/foundation-for-sarcoidosis-research-fsr/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "PGDv0Ez46IpHvwH",
+	"json": "{\"id\":\"PGDv0Ez46IpHvwH\",\"url\":\"https://www.sos.ca.gov/elections/voter-registration/#main\",\"loadedUrl\":\"https://www.sos.ca.gov/elections/voter-registration/#main\",\"uniqueKey\":\"https://www.sos.ca.gov/elections/voter-registration\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:43.872Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.sos.ca.gov/elections/voter-registration",
+	"url": "https://www.sos.ca.gov/elections/voter-registration/#main"
+}

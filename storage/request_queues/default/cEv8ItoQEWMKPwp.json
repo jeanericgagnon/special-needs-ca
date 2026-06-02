@@ -1,0 +1,9 @@
+{
+	"id": "cEv8ItoQEWMKPwp",
+	"json": "{\"id\":\"cEv8ItoQEWMKPwp\",\"url\":\"https://www.cdss.ca.gov/Reporting/File-a-Complaint/County-Worker-Complaint\",\"loadedUrl\":\"https://www.cdss.ca.gov/reporting/file-a-complaint/county-worker-complaint\",\"uniqueKey\":\"https://www.cdss.ca.gov/Reporting/File-a-Complaint/County-Worker-Complaint\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:33.272Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/Reporting/File-a-Complaint/County-Worker-Complaint",
+	"url": "https://www.cdss.ca.gov/Reporting/File-a-Complaint/County-Worker-Complaint"
+}

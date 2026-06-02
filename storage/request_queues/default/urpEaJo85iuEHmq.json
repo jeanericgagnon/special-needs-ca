@@ -1,0 +1,9 @@
+{
+	"id": "urpEaJo85iuEHmq",
+	"json": "{\"id\":\"urpEaJo85iuEHmq\",\"url\":\"https://capitolmuseum.ca.gov/learn/about-the-capitol/capitol-park/\",\"loadedUrl\":\"https://capitolmuseum.ca.gov/about-the-capitol/capitol-park/\",\"uniqueKey\":\"https://capitolmuseum.ca.gov/learn/about-the-capitol/capitol-park\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:59.845Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://capitolmuseum.ca.gov/learn/about-the-capitol/capitol-park",
+	"url": "https://capitolmuseum.ca.gov/learn/about-the-capitol/capitol-park/"
+}

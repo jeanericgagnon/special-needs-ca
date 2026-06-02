@@ -1,0 +1,9 @@
+{
+	"id": "yEs8pH2wAgqqnj7",
+	"json": "{\"id\":\"yEs8pH2wAgqqnj7\",\"url\":\"https://health.ucdavis.edu/welcome/news/headlines/uc-davis-nursing-school-celebrates-174-graduates--subhead-future-nurses-physician-assistants-and-doctorally-prepa/2025/06\",\"loadedUrl\":\"https://health.ucdavis.edu/welcome/news/headlines/uc-davis-nursing-school-celebrates-174-graduates--subhead-future-nurses-physician-assistants-and-doctorally-prepa/2025/06\",\"uniqueKey\":\"https://health.ucdavis.edu/welcome/news/headlines/uc-davis-nursing-school-celebrates-174-graduates--subhead-future-nurses-physician-assistants-and-doctorally-prepa/2025/06\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:19.670Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/welcome/news/headlines/uc-davis-nursing-school-celebrates-174-graduates--subhead-future-nurses-physician-assistants-and-doctorally-prepa/2025/06",
+	"url": "https://health.ucdavis.edu/welcome/news/headlines/uc-davis-nursing-school-celebrates-174-graduates--subhead-future-nurses-physician-assistants-and-doctorally-prepa/2025/06"
+}

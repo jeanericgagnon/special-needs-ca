@@ -1,0 +1,9 @@
+{
+	"id": "8QeeMhCpQFrTJ9J",
+	"json": "{\"id\":\"8QeeMhCpQFrTJ9J\",\"url\":\"https://www.chp.ca.gov/link/ac598af557d54e938b13a1ec767a50db.aspx\",\"loadedUrl\":\"https://www.chp.ca.gov/news-alerts/alerts/Feather-Alert/\",\"uniqueKey\":\"https://www.chp.ca.gov/link/ac598af557d54e938b13a1ec767a50db.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:12.323Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chp.ca.gov/link/ac598af557d54e938b13a1ec767a50db.aspx",
+	"url": "https://www.chp.ca.gov/link/ac598af557d54e938b13a1ec767a50db.aspx"
+}

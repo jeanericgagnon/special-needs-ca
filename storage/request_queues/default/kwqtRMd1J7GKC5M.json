@@ -1,0 +1,9 @@
+{
+	"id": "kwqtRMd1J7GKC5M",
+	"json": "{\"id\":\"kwqtRMd1J7GKC5M\",\"url\":\"https://www.globaldownsyndrome.org/ja/%e3%82%b9%e3%83%88%e3%83%bc%e3%83%aa%e3%83%bc/about-gdsf/\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/ja/%e3%82%b9%e3%83%88%e3%83%bc%e3%83%aa%e3%83%bc/about-gdsf/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/ja/%e3%82%b9%e3%83%88%e3%83%bc%e3%83%aa%e3%83%bc/about-gdsf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:28:00.321Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.globaldownsyndrome.org/ja/%e3%82%b9%e3%83%88%e3%83%bc%e3%83%aa%e3%83%bc/about-gdsf",
+	"url": "https://www.globaldownsyndrome.org/ja/%e3%82%b9%e3%83%88%e3%83%bc%e3%83%aa%e3%83%bc/about-gdsf/"
+}

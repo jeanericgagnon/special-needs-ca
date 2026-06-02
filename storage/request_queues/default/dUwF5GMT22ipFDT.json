@@ -1,0 +1,9 @@
+{
+	"id": "dUwF5GMT22ipFDT",
+	"json": "{\"id\":\"dUwF5GMT22ipFDT\",\"url\":\"https://www.cdph.ca.gov/Programs/HRB/Pages/CommunitySafety_and_EmergencyResponse.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/HRB/Pages/CommunitySafety_and_EmergencyResponse.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/HRB/Pages/CommunitySafety_and_EmergencyResponse.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:03:32.900Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/HRB/Pages/CommunitySafety_and_EmergencyResponse.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/HRB/Pages/CommunitySafety_and_EmergencyResponse.aspx"
+}

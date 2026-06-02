@@ -1,0 +1,9 @@
+{
+	"id": "QMONPPZfh06Q1q2",
+	"json": "{\"id\":\"QMONPPZfh06Q1q2\",\"url\":\"https://www.cdss.ca.gov/Veterans-Cash-Benefit\",\"loadedUrl\":\"https://www.cdss.ca.gov/veterans-cash-benefit\",\"uniqueKey\":\"https://www.cdss.ca.gov/Veterans-Cash-Benefit\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:28.101Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/Veterans-Cash-Benefit",
+	"url": "https://www.cdss.ca.gov/Veterans-Cash-Benefit"
+}

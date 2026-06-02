@@ -1,0 +1,9 @@
+{
+	"id": "7vw8vXav7jIHxps",
+	"json": "{\"id\":\"7vw8vXav7jIHxps\",\"url\":\"https://www.cde.ca.gov/ci/rl/im/sbeadoptedelaeldprogs.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/rl/im/sbeadoptedelaeldprogs.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/rl/im/sbeadoptedelaeldprogs.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:54.803Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ci/rl/im/sbeadoptedelaeldprogs.asp",
+	"url": "https://www.cde.ca.gov/ci/rl/im/sbeadoptedelaeldprogs.asp"
+}

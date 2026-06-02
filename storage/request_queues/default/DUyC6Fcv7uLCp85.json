@@ -1,0 +1,9 @@
+{
+	"id": "DUyC6Fcv7uLCp85",
+	"json": "{\"id\":\"DUyC6Fcv7uLCp85\",\"url\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Syphilis.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Syphilis.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Syphilis.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:03:07.332Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Syphilis.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Syphilis.aspx"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "rhrW3S7RqcWVoNj",
+	"json": "{\"id\":\"rhrW3S7RqcWVoNj\",\"url\":\"https://www.cdph.ca.gov/Programs/cls/idld/mdl\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/cls/idld/mdl\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/cls/idld/mdl\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:49:16.912Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/cls/idld/mdl",
+	"url": "https://www.cdph.ca.gov/Programs/cls/idld/mdl"
+}

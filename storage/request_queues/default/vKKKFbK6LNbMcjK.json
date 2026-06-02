@@ -1,0 +1,9 @@
+{
+	"id": "vKKKFbK6LNbMcjK",
+	"json": "{\"id\":\"vKKKFbK6LNbMcjK\",\"url\":\"https://irb.ucdavis.edu/irb-review-process/irb-determinations/\",\"loadedUrl\":\"https://irb.ucdavis.edu/irb-review-process/irb-determinations/\",\"uniqueKey\":\"https://irb.ucdavis.edu/irb-review-process/irb-determinations\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:41.225Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://irb.ucdavis.edu/irb-review-process/irb-determinations",
+	"url": "https://irb.ucdavis.edu/irb-review-process/irb-determinations/"
+}

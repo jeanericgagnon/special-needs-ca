@@ -1,0 +1,9 @@
+{
+	"id": "ZGd3uXXD9qMNtkB",
+	"json": "{\"id\":\"ZGd3uXXD9qMNtkB\",\"url\":\"https://www.sos.ca.gov/elections/voting-resources/voting-california/voter-hotlines\",\"loadedUrl\":\"https://www.sos.ca.gov/elections/voting-resources/voting-california/voter-hotlines\",\"uniqueKey\":\"https://www.sos.ca.gov/elections/voting-resources/voting-california/voter-hotlines\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:48.241Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.sos.ca.gov/elections/voting-resources/voting-california/voter-hotlines",
+	"url": "https://www.sos.ca.gov/elections/voting-resources/voting-california/voter-hotlines"
+}

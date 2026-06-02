@@ -1,0 +1,9 @@
+{
+	"id": "Z1je32XyDbYwRO7",
+	"json": "{\"id\":\"Z1je32XyDbYwRO7\",\"url\":\"https://cdss.ca.gov/inforesources/Disaster-Services-Bureau\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/disaster-services-branch\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Disaster-Services-Bureau\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:18.350Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/Disaster-Services-Bureau",
+	"url": "https://cdss.ca.gov/inforesources/Disaster-Services-Bureau"
+}

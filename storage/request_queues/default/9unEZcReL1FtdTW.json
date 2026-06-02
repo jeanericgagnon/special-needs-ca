@@ -1,0 +1,9 @@
+{
+	"id": "9unEZcReL1FtdTW",
+	"json": "{\"id\":\"9unEZcReL1FtdTW\",\"url\":\"https://www.cde.ca.gov/fg/fr/eb/cefedbudget.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=f9d03432-4340-457b-a102-f6d757b793da&ssb=42274244585&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Ffg%2Ffr%2Feb%2Fcefedbudget.asp&ssi=516cb846-ctxv-4a85-8577-85444e708a08&ssk=botmanager_support@radware.com&ssm=89809933666210840104603715684864&ssn=5741e003c1bee19f28f8308daae938b9726293c646d3-66df-43c6-8fe86a&sso=49afda7a-5f12fdf1b8573d7436df1704685181115476cd80a8540254&ssp=85619109781780333350178032639253594&ssq=82285465530193330819155301689492194112029&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2Y5MDAwMGZkMDQzOTYtYmMxNi00ZTMzLWJjNTYtZjE0YzdlZWQxMWRlMS0xNzgwMzU1MzAxNjM5MC05NTA5MzgwZWM5ZmNkZTQ5MTAiLCJfX3V6bWYiOiI3ZjkwMDA5M2M2NDZkMy02NmRmLTQzYzYtOGE3YS01ZjEyZmRmMWI4NTcxLTE3ODAzNTUzMDE2MzkwLTAwM2ViZDQ3NDBiZDRhYTBhOGIxMCIsInJkIjoiY2EuZ292In0=\",\"uniqueKey\":\"https://www.cde.ca.gov/fg/fr/eb/cefedbudget.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T23:08:21.849Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/fg/fr/eb/cefedbudget.asp",
+	"url": "https://www.cde.ca.gov/fg/fr/eb/cefedbudget.asp"
+}

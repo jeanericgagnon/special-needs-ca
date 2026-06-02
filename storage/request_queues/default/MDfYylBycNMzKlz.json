@@ -1,0 +1,9 @@
+{
+	"id": "MDfYylBycNMzKlz",
+	"json": "{\"id\":\"MDfYylBycNMzKlz\",\"url\":\"https://www.ftb.ca.gov/help/website-help.html\",\"loadedUrl\":\"https://www.ftb.ca.gov/help/website-help.html\",\"uniqueKey\":\"https://www.ftb.ca.gov/help/website-help.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:36.825Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ftb.ca.gov/help/website-help.html",
+	"url": "https://www.ftb.ca.gov/help/website-help.html"
+}

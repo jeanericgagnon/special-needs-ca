@@ -1,0 +1,9 @@
+{
+	"id": "AAcm2yM35DGAO14",
+	"json": "{\"id\":\"AAcm2yM35DGAO14\",\"url\":\"https://health.ucdavis.edu/ctsc/area/education/tred-programs\",\"loadedUrl\":\"https://health.ucdavis.edu/ctsc/area/education/tred-programs\",\"uniqueKey\":\"https://health.ucdavis.edu/ctsc/area/education/tred-programs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:33.113Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/ctsc/area/education/tred-programs",
+	"url": "https://health.ucdavis.edu/ctsc/area/education/tred-programs"
+}

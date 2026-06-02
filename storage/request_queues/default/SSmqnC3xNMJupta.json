@@ -1,0 +1,9 @@
+{
+	"id": "SSmqnC3xNMJupta",
+	"json": "{\"id\":\"SSmqnC3xNMJupta\",\"url\":\"https://skylab.cdph.ca.gov/communityBurden/_w_7981bf85cd28483f8d30dd0ea323fd56/SOPH/2024/Full%20Report.html\",\"loadedUrl\":\"https://skylab.cdph.ca.gov/communityBurden/_w_7981bf85cd28483f8d30dd0ea323fd56/SOPH/2024/Full%20Report.html\",\"uniqueKey\":\"https://skylab.cdph.ca.gov/communityBurden/_w_7981bf85cd28483f8d30dd0ea323fd56/SOPH/2024/Full%20Report.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:51:44.183Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://skylab.cdph.ca.gov/communityBurden/_w_7981bf85cd28483f8d30dd0ea323fd56/SOPH/2024/Full%20Report.html",
+	"url": "https://skylab.cdph.ca.gov/communityBurden/_w_7981bf85cd28483f8d30dd0ea323fd56/SOPH/2024/Full%20Report.html"
+}

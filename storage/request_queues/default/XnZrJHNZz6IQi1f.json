@@ -1,0 +1,9 @@
+{
+	"id": "XnZrJHNZz6IQi1f",
+	"json": "{\"id\":\"XnZrJHNZz6IQi1f\",\"url\":\"https://www.cdss.ca.gov/TCVAP\",\"loadedUrl\":\"https://www.cdss.ca.gov/tcvap\",\"uniqueKey\":\"https://www.cdss.ca.gov/TCVAP\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:28.527Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/TCVAP",
+	"url": "https://www.cdss.ca.gov/TCVAP"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "9M5BDPJRwqHC7d7",
+	"json": "{\"id\":\"9M5BDPJRwqHC7d7\",\"url\":\"https://www.cde.ca.gov/fg/aa/ca/educatoreffectiveness.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=ccf0428c-7173-4241-9cc3-b83db2b39116&ssb=65077287062&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Ffg%2Faa%2Fca%2Feducatoreffectiveness.asp&ssi=1c20eb96-ctxv-4471-8cc9-5dd55f1407a4&ssk=botmanager_support@radware.com&ssm=41545683553872161106069963873182&ssn=202c396b9db85908a0a28527aa0fe7fe05d23744d1e6-2d58-4034-ac11d4&sso=cc9c26f4-5fb81cef6dfe150470535d97c74b153c5426f04eccdec981&ssp=86316976481780367638178032551962665&ssq=70868372734282765467727342047039142735153&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsIl9fdXptZiI6IjdmOTAwMDM3NDRkMWU2LTJkNTgtNDAzNC1hNmY0LTVmYjgxY2VmNmRmZTEtMTc4MDMyNzM0MjU3NjAtMDAzNTliMTZiMDVhZDdkNDkxNTEwIiwidXpteCI6IjdmOTAwMDVkMTU2NWJmLWUzNTQtNDg0Yy1hNGY4LWU5ZDgyYTExYTQ5NzEtMTc4MDMyNTkwNTY2OTE0MzY5MDctNDI5MjQxMDM1OGJmODJiOTEzIn0=\",\"uniqueKey\":\"https://www.cde.ca.gov/fg/aa/ca/educatoreffectiveness.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:22:22.696Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/fg/aa/ca/educatoreffectiveness.asp",
+	"url": "https://www.cde.ca.gov/fg/aa/ca/educatoreffectiveness.asp"
+}

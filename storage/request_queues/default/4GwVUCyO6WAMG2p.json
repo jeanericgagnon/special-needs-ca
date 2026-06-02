@@ -1,0 +1,9 @@
+{
+	"id": "4GwVUCyO6WAMG2p",
+	"json": "{\"id\":\"4GwVUCyO6WAMG2p\",\"url\":\"https://www.cde.ca.gov/ci/vp/im/artsadoptpubcomment.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=dd8c2370-111f-4cb6-aaec-2042bf1bdb43&ssb=58611293645&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fci%2Fvp%2Fim%2Fartsadoptpubcomment.asp&ssi=7500deb2-ctxv-41f0-a7b7-167d76a855f3&ssk=botmanager_support@radware.com&ssm=69730916463537304108809205369210&ssn=6c19cc0d46ecd1d386790022db11ec67cf00911359b2-ebad-426f-a693c4&sso=f002b90c-8fd0aad3631b075542eb1e9ada2413379d14fe5a343919f8&ssp=27252208211780389385178036897533665&ssq=05825915638736174402456387269267899773641&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsInV6bXgiOiI3ZjkwMDAzOGY2MzA2My1mYzMxLTQ0NDItYWE3ZC0wYTI2NTI4YjI4YTkxLTE3ODAzNTYzODcwNDEwLTUxMWNjNTVjNGZkNjM1ODIxMCIsIl9fdXptZiI6IjdmOTAwMDkxMTM1OWIyLWViYWQtNDI2Zi1hOTBjLThmZDBhYWQzNjMxYjEtMTc4MDM1NjM4NzA0MTAtMDAzNzFlYjQ5YWYwYjVjYjQxNzEwIn0=\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/vp/im/artsadoptpubcomment.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T23:26:27.196Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ci/vp/im/artsadoptpubcomment.asp",
+	"url": "https://www.cde.ca.gov/ci/vp/im/artsadoptpubcomment.asp"
+}

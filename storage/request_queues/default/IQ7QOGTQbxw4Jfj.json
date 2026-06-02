@@ -1,0 +1,9 @@
+{
+	"id": "IQ7QOGTQbxw4Jfj",
+	"json": "{\"id\":\"IQ7QOGTQbxw4Jfj\",\"url\":\"https://www.cdph.ca.gov/Programs/CHSI/Pages/Sworn-Statement.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CHSI/Pages/Sworn-Statement.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CHSI/Pages/Sworn-Statement.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:15:23.677Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CHSI/Pages/Sworn-Statement.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CHSI/Pages/Sworn-Statement.aspx"
+}

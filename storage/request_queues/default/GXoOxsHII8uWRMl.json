@@ -1,0 +1,9 @@
+{
+	"id": "GXoOxsHII8uWRMl",
+	"json": "{\"id\":\"GXoOxsHII8uWRMl\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/1258/cameron-foster-bladder-nuclear_medicine-folsom-sacramento?FreeText%3aLast+name=Foster\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/1258/cameron-foster-bladder-nuclear_medicine-folsom-sacramento?FreeText%3aLast+name=Foster\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/1258/cameron-foster-bladder-nuclear_medicine-folsom-sacramento?FreeText%3ALast+name=Foster\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:12.507Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/1258/cameron-foster-bladder-nuclear_medicine-folsom-sacramento?FreeText%3ALast+name=Foster",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/1258/cameron-foster-bladder-nuclear_medicine-folsom-sacramento?FreeText%3aLast+name=Foster"
+}

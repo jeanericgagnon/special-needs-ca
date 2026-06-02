@@ -1,0 +1,9 @@
+{
+	"id": "epCDf9OiAL5XqVR",
+	"json": "{\"id\":\"epCDf9OiAL5XqVR\",\"url\":\"http://www.ucdmc.ucdavis.edu/publish/facultybio/search/faculty/659/?searchtype=all\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-center/team/639/charles-decarli---alzheimer-s-disease---cognitive-neuroscience---dementia-sacramento/\",\"uniqueKey\":\"http://www.ucdmc.ucdavis.edu/publish/facultybio/search/faculty/659?searchtype=all\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:10.352Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.ucdmc.ucdavis.edu/publish/facultybio/search/faculty/659?searchtype=all",
+	"url": "http://www.ucdmc.ucdavis.edu/publish/facultybio/search/faculty/659/?searchtype=all"
+}

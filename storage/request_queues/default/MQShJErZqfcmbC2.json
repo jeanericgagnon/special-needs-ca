@@ -1,0 +1,9 @@
+{
+	"id": "MQShJErZqfcmbC2",
+	"json": "{\"id\":\"MQShJErZqfcmbC2\",\"url\":\"https://www.chhs.ca.gov/blog/2025/10/27/calhhs-connect-updates-on-hr-1-efforts-in-california-and-the-rural-health-transformation-opportunity/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2025/10/27/calhhs-connect-updates-on-hr-1-efforts-in-california-and-the-rural-health-transformation-opportunity/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2025/10/27/calhhs-connect-updates-on-hr-1-efforts-in-california-and-the-rural-health-transformation-opportunity\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:49.171Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chhs.ca.gov/blog/2025/10/27/calhhs-connect-updates-on-hr-1-efforts-in-california-and-the-rural-health-transformation-opportunity",
+	"url": "https://www.chhs.ca.gov/blog/2025/10/27/calhhs-connect-updates-on-hr-1-efforts-in-california-and-the-rural-health-transformation-opportunity/"
+}

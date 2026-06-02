@@ -1,0 +1,9 @@
+{
+	"id": "v278B4nqITfz4IV",
+	"json": "{\"id\":\"v278B4nqITfz4IV\",\"url\":\"https://physicians.ucdavis.edu/details/21946/angela-haczku-allergology-pulmonary_and_critical_care-respiratory_pathology_and_physiology-sacramento?Specialties=10398\",\"loadedUrl\":\"https://physicians.ucdavis.edu/details/21946/angela-haczku-allergology-pulmonary_and_critical_care-respiratory_pathology_and_physiology-sacramento?Specialties=10398\",\"uniqueKey\":\"https://physicians.ucdavis.edu/details/21946/angela-haczku-allergology-pulmonary_and_critical_care-respiratory_pathology_and_physiology-sacramento?Specialties=10398\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:33:28.975Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://physicians.ucdavis.edu/details/21946/angela-haczku-allergology-pulmonary_and_critical_care-respiratory_pathology_and_physiology-sacramento?Specialties=10398",
+	"url": "https://physicians.ucdavis.edu/details/21946/angela-haczku-allergology-pulmonary_and_critical_care-respiratory_pathology_and_physiology-sacramento?Specialties=10398"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "2QeEKZSSF9zVA3O",
+	"json": "{\"id\":\"2QeEKZSSF9zVA3O\",\"url\":\"https://oag.ca.gov/research-center\",\"loadedUrl\":\"https://oag.ca.gov/research-services\",\"uniqueKey\":\"https://oag.ca.gov/research-center\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:47.654Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://oag.ca.gov/research-center",
+	"url": "https://oag.ca.gov/research-center"
+}

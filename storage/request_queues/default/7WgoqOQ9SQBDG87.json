@@ -1,0 +1,9 @@
+{
+	"id": "7WgoqOQ9SQBDG87",
+	"json": "{\"id\":\"7WgoqOQ9SQBDG87\",\"url\":\"https://health.ucdavis.edu/graduate-medical-education/why-uc-davis\",\"loadedUrl\":\"https://health.ucdavis.edu/graduate-medical-education/why-uc-davis\",\"uniqueKey\":\"https://health.ucdavis.edu/graduate-medical-education/why-uc-davis\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:12.491Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/graduate-medical-education/why-uc-davis",
+	"url": "https://health.ucdavis.edu/graduate-medical-education/why-uc-davis"
+}

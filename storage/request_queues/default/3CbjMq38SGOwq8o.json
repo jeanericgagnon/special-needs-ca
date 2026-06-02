@@ -1,0 +1,9 @@
+{
+	"id": "3CbjMq38SGOwq8o",
+	"json": "{\"id\":\"3CbjMq38SGOwq8o\",\"url\":\"http://www.cdss.ca.gov/benefits-services/child-services\",\"loadedUrl\":\"https://www.cdss.ca.gov/benefits-services/child-services\",\"uniqueKey\":\"http://www.cdss.ca.gov/benefits-services/child-services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:35.962Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.cdss.ca.gov/benefits-services/child-services",
+	"url": "http://www.cdss.ca.gov/benefits-services/child-services"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "3D79uPtmGcxgiP4",
+	"json": "{\"id\":\"3D79uPtmGcxgiP4\",\"url\":\"https://health.ucdavis.edu/patients-visitors/accepted-health-plans/\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/accepted-health-plans/\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/accepted-health-plans\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:57.382Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/accepted-health-plans",
+	"url": "https://health.ucdavis.edu/patients-visitors/accepted-health-plans/"
+}

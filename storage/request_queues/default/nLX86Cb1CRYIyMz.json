@@ -1,0 +1,9 @@
+{
+	"id": "nLX86Cb1CRYIyMz",
+	"json": "{\"id\":\"nLX86Cb1CRYIyMz\",\"url\":\"https://archive.cdph.ca.gov/programs/cdsrb/Documents/Snapshot_Issue01_Feb2016_final.pdf\",\"loadedUrl\":\"https://archive.cdph.ca.gov/\",\"uniqueKey\":\"https://archive.cdph.ca.gov/programs/cdsrb/Documents/Snapshot_Issue01_Feb2016_final.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T19:35:04.195Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://archive.cdph.ca.gov/programs/cdsrb/Documents/Snapshot_Issue01_Feb2016_final.pdf",
+	"url": "https://archive.cdph.ca.gov/programs/cdsrb/Documents/Snapshot_Issue01_Feb2016_final.pdf"
+}

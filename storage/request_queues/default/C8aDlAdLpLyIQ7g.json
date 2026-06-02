@@ -1,0 +1,9 @@
+{
+	"id": "C8aDlAdLpLyIQ7g",
+	"json": "{\"id\":\"C8aDlAdLpLyIQ7g\",\"url\":\"https://www.cdss.ca.gov/inforesources/Information-Resources/Program-and-Legislative-Reports/Children-and-Family-Services-Reports\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/information-resources/program-and-legislative-reports/children-and-family-services-reports\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/Information-Resources/Program-and-Legislative-Reports/Children-and-Family-Services-Reports\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:06.677Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/inforesources/Information-Resources/Program-and-Legislative-Reports/Children-and-Family-Services-Reports",
+	"url": "https://www.cdss.ca.gov/inforesources/Information-Resources/Program-and-Legislative-Reports/Children-and-Family-Services-Reports"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "WhRhASKtwWacdgK",
+	"json": "{\"id\":\"WhRhASKtwWacdgK\",\"url\":\"https://data.chhs.ca.gov/dataset/sud-recovery-treatment-facilities\",\"loadedUrl\":\"https://data.chhs.ca.gov/dataset/sud-recovery-treatment-facilities\",\"uniqueKey\":\"https://data.chhs.ca.gov/dataset/sud-recovery-treatment-facilities\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:47.807Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://data.chhs.ca.gov/dataset/sud-recovery-treatment-facilities",
+	"url": "https://data.chhs.ca.gov/dataset/sud-recovery-treatment-facilities"
+}

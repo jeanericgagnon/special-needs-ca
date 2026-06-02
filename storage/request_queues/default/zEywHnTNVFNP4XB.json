@@ -1,0 +1,9 @@
+{
+	"id": "zEywHnTNVFNP4XB",
+	"json": "{\"id\":\"zEywHnTNVFNP4XB\",\"url\":\"https://health.ucdavis.edu/research/departments/index.html\",\"loadedUrl\":\"https://health.ucdavis.edu/research/departments/\",\"uniqueKey\":\"https://health.ucdavis.edu/research/departments/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:08.325Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/research/departments/index.html",
+	"url": "https://health.ucdavis.edu/research/departments/index.html"
+}

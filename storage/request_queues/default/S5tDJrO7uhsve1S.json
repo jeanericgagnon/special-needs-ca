@@ -1,0 +1,9 @@
+{
+	"id": "S5tDJrO7uhsve1S",
+	"json": "{\"id\":\"S5tDJrO7uhsve1S\",\"url\":\"https://www.calhr.ca.gov/state-hr-professionals/Pages/ocr-description.aspx\",\"loadedUrl\":\"http://www.calhr.ca.gov/state-hr-professionals/Pages/ocr-description/\",\"uniqueKey\":\"https://www.calhr.ca.gov/state-hr-professionals/Pages/ocr-description.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:50.847Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.calhr.ca.gov/state-hr-professionals/Pages/ocr-description.aspx",
+	"url": "https://www.calhr.ca.gov/state-hr-professionals/Pages/ocr-description.aspx"
+}

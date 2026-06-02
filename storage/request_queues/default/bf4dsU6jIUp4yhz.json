@@ -1,0 +1,9 @@
+{
+	"id": "bf4dsU6jIUp4yhz",
+	"json": "{\"id\":\"bf4dsU6jIUp4yhz\",\"url\":\"http://cdss.ca.gov/inforesources/calfresh\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/calfresh\",\"uniqueKey\":\"http://cdss.ca.gov/inforesources/calfresh\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:58:55.498Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://cdss.ca.gov/inforesources/calfresh",
+	"url": "http://cdss.ca.gov/inforesources/calfresh"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "KN1LnB2csvBgEks",
+	"json": "{\"id\":\"KN1LnB2csvBgEks\",\"url\":\"https://www.dds.ca.gov/rc/vendor-provider/rate-study/rate-models/\",\"loadedUrl\":\"https://www.dds.ca.gov/rc/vendor-provider/rate-reform/rate-models/\",\"uniqueKey\":\"https://www.dds.ca.gov/rc/vendor-provider/rate-study/rate-models\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:38.646Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/rc/vendor-provider/rate-study/rate-models",
+	"url": "https://www.dds.ca.gov/rc/vendor-provider/rate-study/rate-models/"
+}

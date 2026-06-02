@@ -1,0 +1,9 @@
+{
+	"id": "87yzjNYnBpdCMFe",
+	"json": "{\"id\":\"87yzjNYnBpdCMFe\",\"url\":\"https://cnprc.ucdavis.edu/dennis-hartigan-oconnor\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/dennis-hartigan-oconnor\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/dennis-hartigan-oconnor\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:13.735Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cnprc.ucdavis.edu/dennis-hartigan-oconnor",
+	"url": "https://cnprc.ucdavis.edu/dennis-hartigan-oconnor"
+}

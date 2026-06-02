@@ -1,0 +1,9 @@
+{
+	"id": "cPaz38yfptHOjMe",
+	"json": "{\"id\":\"cPaz38yfptHOjMe\",\"url\":\"https://mindbrain.ucdavis.edu/cdn-cgi/l/email-protection#3e5d535c5f5a5357507e4b5d5a5f48574d105b5a4b\",\"loadedUrl\":\"https://mindbrain.ucdavis.edu/cdn-cgi/l/email-protection#3e5d535c5f5a5357507e4b5d5a5f48574d105b5a4b\",\"uniqueKey\":\"https://mindbrain.ucdavis.edu/cdn-cgi/l/email-protection\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:03.744Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://mindbrain.ucdavis.edu/cdn-cgi/l/email-protection",
+	"url": "https://mindbrain.ucdavis.edu/cdn-cgi/l/email-protection#3e5d535c5f5a5357507e4b5d5a5f48574d105b5a4b"
+}

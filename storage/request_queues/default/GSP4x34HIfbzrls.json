@@ -1,0 +1,9 @@
+{
+	"id": "GSP4x34HIfbzrls",
+	"json": "{\"id\":\"GSP4x34HIfbzrls\",\"url\":\"https://www.gov.ca.gov/clemency/commutations/\",\"loadedUrl\":\"https://www.gov.ca.gov/clemency/commutations/\",\"uniqueKey\":\"https://www.gov.ca.gov/clemency/commutations\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:49.733Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.gov.ca.gov/clemency/commutations",
+	"url": "https://www.gov.ca.gov/clemency/commutations/"
+}

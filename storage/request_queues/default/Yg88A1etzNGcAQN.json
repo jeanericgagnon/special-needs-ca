@@ -1,0 +1,9 @@
+{
+	"id": "Yg88A1etzNGcAQN",
+	"json": "{\"id\":\"Yg88A1etzNGcAQN\",\"url\":\"https://health.ucdavis.edu/surgery/specialties/gastro/foregut_endometabolic_program.html\",\"loadedUrl\":\"https://health.ucdavis.edu/surgery/specialties/gastro/foregut_endometabolic_program.html\",\"uniqueKey\":\"https://health.ucdavis.edu/surgery/specialties/gastro/foregut_endometabolic_program.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:48.350Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/surgery/specialties/gastro/foregut_endometabolic_program.html",
+	"url": "https://health.ucdavis.edu/surgery/specialties/gastro/foregut_endometabolic_program.html"
+}

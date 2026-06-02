@@ -1,0 +1,9 @@
+{
+	"id": "hLVn1om3pDODuGJ",
+	"json": "{\"id\":\"hLVn1om3pDODuGJ\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/Pages/CDIC-Leadership.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/Pages/CDIC-Leadership.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/Pages/CDIC-Leadership.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:02:31.975Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/Pages/CDIC-Leadership.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/Pages/CDIC-Leadership.aspx"
+}

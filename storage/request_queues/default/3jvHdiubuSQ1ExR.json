@@ -1,0 +1,9 @@
+{
+	"id": "3jvHdiubuSQ1ExR",
+	"json": "{\"id\":\"3jvHdiubuSQ1ExR\",\"url\":\"https://health.ucdavis.edu/healthcare-professionals/featured-specialties/gastroenterology-gi-surgery\",\"loadedUrl\":\"https://health.ucdavis.edu/healthcare-professionals/featured-specialties/gastroenterology-gi-surgery\",\"uniqueKey\":\"https://health.ucdavis.edu/healthcare-professionals/featured-specialties/gastroenterology-gi-surgery\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:08.634Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/healthcare-professionals/featured-specialties/gastroenterology-gi-surgery",
+	"url": "https://health.ucdavis.edu/healthcare-professionals/featured-specialties/gastroenterology-gi-surgery"
+}

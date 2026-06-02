@@ -1,0 +1,9 @@
+{
+	"id": "sB8oc4uznP8hF85",
+	"json": "{\"id\":\"sB8oc4uznP8hF85\",\"url\":\"https://www.dds.ca.gov/dds-events/?status=past&event_cat=ssip\",\"loadedUrl\":\"https://www.dds.ca.gov/dds-events/?status=past&event_cat=ssip\",\"uniqueKey\":\"https://www.dds.ca.gov/dds-events?event_cat=ssip&status=past\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:20.690Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/dds-events?event_cat=ssip&status=past",
+	"url": "https://www.dds.ca.gov/dds-events/?status=past&event_cat=ssip"
+}

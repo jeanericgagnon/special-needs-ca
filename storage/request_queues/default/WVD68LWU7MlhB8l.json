@@ -1,0 +1,9 @@
+{
+	"id": "WVD68LWU7MlhB8l",
+	"json": "{\"id\":\"WVD68LWU7MlhB8l\",\"url\":\"https://rarediseases.org/rare-diseases/thrombotic-thrombocytopenic-purpura/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/thrombotic-thrombocytopenic-purpura/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/thrombotic-thrombocytopenic-purpura\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:13:11.538Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/rare-diseases/thrombotic-thrombocytopenic-purpura",
+	"url": "https://rarediseases.org/rare-diseases/thrombotic-thrombocytopenic-purpura/"
+}

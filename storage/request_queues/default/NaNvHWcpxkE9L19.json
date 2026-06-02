@@ -1,0 +1,9 @@
+{
+	"id": "NaNvHWcpxkE9L19",
+	"json": "{\"id\":\"NaNvHWcpxkE9L19\",\"url\":\"https://ucdnc.ucdavis.edu/circuits-and-systems\",\"loadedUrl\":\"https://ucdnc.ucdavis.edu/circuits-and-systems\",\"uniqueKey\":\"https://ucdnc.ucdavis.edu/circuits-and-systems\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:19.601Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://ucdnc.ucdavis.edu/circuits-and-systems",
+	"url": "https://ucdnc.ucdavis.edu/circuits-and-systems"
+}

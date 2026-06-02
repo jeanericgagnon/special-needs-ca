@@ -1,0 +1,9 @@
+{
+	"id": "3fT5dnYcqBHBpoW",
+	"json": "{\"id\":\"3fT5dnYcqBHBpoW\",\"url\":\"https://health.ucdavis.edu/belonging/programs/seed/\",\"loadedUrl\":\"https://health.ucdavis.edu/belonging/programs/seed/\",\"uniqueKey\":\"https://health.ucdavis.edu/belonging/programs/seed\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:16.420Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/belonging/programs/seed",
+	"url": "https://health.ucdavis.edu/belonging/programs/seed/"
+}

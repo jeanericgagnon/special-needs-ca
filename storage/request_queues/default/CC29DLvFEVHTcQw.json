@@ -1,0 +1,9 @@
+{
+	"id": "CC29DLvFEVHTcQw",
+	"json": "{\"id\":\"CC29DLvFEVHTcQw\",\"url\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/radiation-oncology\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/radiation-oncology\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/radiation-oncology\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:51.299Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/locations/specialty-care/radiation-oncology",
+	"url": "https://health.ucdavis.edu/patients-visitors/locations/specialty-care/radiation-oncology"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "Zzf4MF70uHlu7rB",
+	"json": "{\"id\":\"Zzf4MF70uHlu7rB\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/22137/sarah-waldman-infectious_diseases-sacramento?FreeText%3aLast+name=waldman\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/22137/sarah-waldman-infectious_diseases-sacramento?FreeText%3aLast+name=waldman\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/22137/sarah-waldman-infectious_diseases-sacramento?FreeText%3ALast+name=waldman\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:11.326Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/22137/sarah-waldman-infectious_diseases-sacramento?FreeText%3ALast+name=waldman",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/22137/sarah-waldman-infectious_diseases-sacramento?FreeText%3aLast+name=waldman"
+}

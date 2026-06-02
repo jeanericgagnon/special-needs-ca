@@ -1,0 +1,9 @@
+{
+	"id": "kRvoa5S850ehgSf",
+	"json": "{\"id\":\"kRvoa5S850ehgSf\",\"url\":\"https://askedd.edd.ca.gov/\",\"loadedUrl\":\"https://askedd.edd.ca.gov/s/\",\"uniqueKey\":\"https://askedd.edd.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:43.089Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://askedd.edd.ca.gov",
+	"url": "https://askedd.edd.ca.gov/"
+}

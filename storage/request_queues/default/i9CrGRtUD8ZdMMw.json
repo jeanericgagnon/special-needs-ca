@@ -1,0 +1,9 @@
+{
+	"id": "i9CrGRtUD8ZdMMw",
+	"json": "{\"id\":\"i9CrGRtUD8ZdMMw\",\"url\":\"https://financeandbusiness.ucdavis.edu/student-resources/cashier/parking\",\"loadedUrl\":\"https://financeandbusiness.ucdavis.edu/student-resources/cashier/parking\",\"uniqueKey\":\"https://financeandbusiness.ucdavis.edu/student-resources/cashier/parking\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:50.764Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://financeandbusiness.ucdavis.edu/student-resources/cashier/parking",
+	"url": "https://financeandbusiness.ucdavis.edu/student-resources/cashier/parking"
+}

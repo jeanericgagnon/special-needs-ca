@@ -1,0 +1,9 @@
+{
+	"id": "Kg5c6bRFLRB1CyA",
+	"json": "{\"id\":\"Kg5c6bRFLRB1CyA\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/32192/kara-kuhn-riordon-neonatology-sacramento?FreeText%3aLast+name=Kuhn-Riordon\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/32192/kara-kuhn-riordon-neonatology-sacramento?FreeText%3aLast+name=Kuhn-Riordon\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/32192/kara-kuhn-riordon-neonatology-sacramento?FreeText%3ALast+name=Kuhn-Riordon\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:17.519Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/32192/kara-kuhn-riordon-neonatology-sacramento?FreeText%3ALast+name=Kuhn-Riordon",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/32192/kara-kuhn-riordon-neonatology-sacramento?FreeText%3aLast+name=Kuhn-Riordon"
+}

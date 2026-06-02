@@ -1,0 +1,9 @@
+{
+	"id": "NTtxJHeZGJqt28r",
+	"json": "{\"id\":\"NTtxJHeZGJqt28r\",\"url\":\"https://www.gov.ca.gov/2026/05/29/governor-newsom-celebrates-graduation-of-emergency-response-leaders-highlights-investments-since-2019/\",\"loadedUrl\":\"https://www.gov.ca.gov/2026/05/29/governor-newsom-celebrates-graduation-of-emergency-response-leaders-highlights-investments-since-2019/\",\"uniqueKey\":\"https://www.gov.ca.gov/2026/05/29/governor-newsom-celebrates-graduation-of-emergency-response-leaders-highlights-investments-since-2019\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:06.257Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.gov.ca.gov/2026/05/29/governor-newsom-celebrates-graduation-of-emergency-response-leaders-highlights-investments-since-2019",
+	"url": "https://www.gov.ca.gov/2026/05/29/governor-newsom-celebrates-graduation-of-emergency-response-leaders-highlights-investments-since-2019/"
+}

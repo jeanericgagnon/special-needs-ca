@@ -1,0 +1,9 @@
+{
+	"id": "82D5FTmj5eQSGoU",
+	"json": "{\"id\":\"82D5FTmj5eQSGoU\",\"url\":\"http://senate.ca.gov/\",\"loadedUrl\":\"https://www.senate.ca.gov/\",\"uniqueKey\":\"http://senate.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:23:25.261Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://senate.ca.gov",
+	"url": "http://senate.ca.gov/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "Rg3vE4TnjlSnw9r",
+	"json": "{\"id\":\"Rg3vE4TnjlSnw9r\",\"url\":\"https://yellowcluster.ucdavis.edu/services/purchasing\",\"loadedUrl\":\"https://yellowcluster.ucdavis.edu/services/purchasing\",\"uniqueKey\":\"https://yellowcluster.ucdavis.edu/services/purchasing\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:14.755Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://yellowcluster.ucdavis.edu/services/purchasing",
+	"url": "https://yellowcluster.ucdavis.edu/services/purchasing"
+}

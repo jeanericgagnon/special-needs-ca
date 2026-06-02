@@ -1,0 +1,9 @@
+{
+	"id": "ktfZwvKbXIBCybK",
+	"json": "{\"id\":\"ktfZwvKbXIBCybK\",\"url\":\"https://www.chhs.ca.gov/home/initiatives/\",\"loadedUrl\":\"https://www.chhs.ca.gov/home/initiatives/\",\"uniqueKey\":\"https://www.chhs.ca.gov/home/initiatives\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:54.128Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chhs.ca.gov/home/initiatives",
+	"url": "https://www.chhs.ca.gov/home/initiatives/"
+}

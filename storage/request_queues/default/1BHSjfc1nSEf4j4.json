@@ -1,0 +1,9 @@
+{
+	"id": "1BHSjfc1nSEf4j4",
+	"json": "{\"id\":\"1BHSjfc1nSEf4j4\",\"url\":\"https://www.chp.ca.gov/link/ec1362b374f340dcbbbbf56e7999ef45.aspx\",\"loadedUrl\":\"https://www.chp.ca.gov/news-alerts/Wireless-Emergency-Alert/\",\"uniqueKey\":\"https://www.chp.ca.gov/link/ec1362b374f340dcbbbbf56e7999ef45.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:12.411Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chp.ca.gov/link/ec1362b374f340dcbbbbf56e7999ef45.aspx",
+	"url": "https://www.chp.ca.gov/link/ec1362b374f340dcbbbbf56e7999ef45.aspx"
+}

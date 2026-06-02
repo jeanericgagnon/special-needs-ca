@@ -1,0 +1,9 @@
+{
+	"id": "F4ZAieWuJZHhG3r",
+	"json": "{\"id\":\"F4ZAieWuJZHhG3r\",\"url\":\"https://www.csb-cde.ca.gov/academics/education/index.aspx\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=ca886134-d28b-4f6f-ab41-9cbee8ca6363&ssb=12598296262&ssc=https%3A%2F%2Fwww.csb-cde.ca.gov%2Facademics%2Feducation%2Findex.aspx&ssi=b9425fb1-cuez-42cd-96f7-3a906194700b&ssk=botmanager_support@radware.com&ssm=72295452637793572100631733886331&ssn=534b18ade7df1f9cd5214097af60327ddcb695eb38e9-5fbe-49d8-a30e23&sso=6afc0727-a6823ab2b992e51ef67093cdb96857a3454a172498c0c62d&ssp=71125040091780379979178031231491605&ssq=60884102589401865408325894051354559376460&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDA5NWViMzhlOS01ZmJlLTQ5ZDgtYTcyNy1hNjgyM2FiMmI5OTIxLTE3ODAzMjU4OTQxODkwLTAwMzExMGE2MjNhNzNmOThhNzMxMCIsInJkIjoiY2EuZ292IiwidXpteCI6IjdmOTAwMDcyMDk1MTBjLWM3NTQtNDIxZS04NDk5LWQ1Mzc4NmQ2ZTJjOTEtMTc4MDMyNTg5NDE4OTAtMzcxMTBiNjRiNTE5OTc1ODEwIn0=\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/academics/education/index.aspx\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T14:58:14.305Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csb-cde.ca.gov/academics/education/index.aspx",
+	"url": "https://www.csb-cde.ca.gov/academics/education/index.aspx"
+}

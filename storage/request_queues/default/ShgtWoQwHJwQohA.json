@@ -1,0 +1,9 @@
+{
+	"id": "ShgtWoQwHJwQohA",
+	"json": "{\"id\":\"ShgtWoQwHJwQohA\",\"url\":\"https://hr.ucdavis.edu/departments/recruitment/ucd\",\"loadedUrl\":\"https://hr.ucdavis.edu/departments/recruitment/ucd\",\"uniqueKey\":\"https://hr.ucdavis.edu/departments/recruitment/ucd\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:31.449Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/departments/recruitment/ucd",
+	"url": "https://hr.ucdavis.edu/departments/recruitment/ucd"
+}

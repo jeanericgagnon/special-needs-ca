@@ -1,0 +1,9 @@
+{
+	"id": "wG107DcQjIANfVs",
+	"json": "{\"id\":\"wG107DcQjIANfVs\",\"url\":\"https://scdd.ca.gov/pos-service-code/respite-individual-and-agency-in-home/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/respite-individual-and-agency-in-home/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/respite-individual-and-agency-in-home\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:48.974Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/pos-service-code/respite-individual-and-agency-in-home",
+	"url": "https://scdd.ca.gov/pos-service-code/respite-individual-and-agency-in-home/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "qKcj7D2dDn94Wwq",
+	"json": "{\"id\":\"qKcj7D2dDn94Wwq\",\"url\":\"https://www.cde.ca.gov/ta/tg/ca/caasppscience.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=e1251a00-6cb4-4218-8899-1c0b5d33d066&ssb=01509229048&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fta%2Ftg%2Fca%2Fcaasppscience.asp&ssi=bd945ffa-ctxv-4a6a-8fbd-cbad03448e81&ssk=botmanager_support@radware.com&ssm=21140752604231428108680024908757&ssn=626f64df7f44081fec4945ded72ec1a33a91598748e7-c487-4ddd-8e9b20&sso=f0e13208-11ea39a0e94f7f030b0c85ca7a541cd477f7245bc75dcaf4&ssp=88591553911780307173178038551490173&ssq=24432282681999052502726819138618008703587&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDA1OTg3NDhlNy1jNDg3LTRkZGQtODIwOC0xMWVhMzlhMGU5NGYxLTE3ODAzMjY4MTk0NzMwLTAwM2FiMmMwYWQ5NzhiMTRhMmYxMCIsInJkIjoiY2EuZ292IiwidXpteCI6IjdmOTAwMDM5YjYxODY0LWI1ZjUtNDk5NS1hNGFjLTBmOTVhYzlkNzc0YjEtMTc4MDMyNjgxOTQ3MzAtZmMzYjA3ZjIwZGY1ZmZmMzEwIn0=\",\"uniqueKey\":\"https://www.cde.ca.gov/ta/tg/ca/caasppscience.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:13:39.572Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ta/tg/ca/caasppscience.asp",
+	"url": "https://www.cde.ca.gov/ta/tg/ca/caasppscience.asp"
+}

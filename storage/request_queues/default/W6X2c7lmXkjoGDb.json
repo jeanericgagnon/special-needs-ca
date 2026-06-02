@@ -1,0 +1,9 @@
+{
+	"id": "W6X2c7lmXkjoGDb",
+	"json": "{\"id\":\"W6X2c7lmXkjoGDb\",\"url\":\"https://www.chp.ca.gov/link/242ddca1dbf0495b8d682141e1363883.aspx\",\"loadedUrl\":\"https://www.chp.ca.gov/news-alerts/Success-Stories/\",\"uniqueKey\":\"https://www.chp.ca.gov/link/242ddca1dbf0495b8d682141e1363883.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:12.398Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chp.ca.gov/link/242ddca1dbf0495b8d682141e1363883.aspx",
+	"url": "https://www.chp.ca.gov/link/242ddca1dbf0495b8d682141e1363883.aspx"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "AeyjQQhtKJ3fG7B",
+	"json": "{\"id\":\"AeyjQQhtKJ3fG7B\",\"url\":\"https://health.ucdavis.edu/leadership/bios/Mintner\",\"loadedUrl\":\"https://health.ucdavis.edu/leadership/bios/Mintner\",\"uniqueKey\":\"https://health.ucdavis.edu/leadership/bios/Mintner\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:29.322Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/leadership/bios/Mintner",
+	"url": "https://health.ucdavis.edu/leadership/bios/Mintner"
+}

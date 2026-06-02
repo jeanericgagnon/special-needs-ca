@@ -1,0 +1,9 @@
+{
+	"id": "06KI4pH0hJvzIGA",
+	"json": "{\"id\":\"06KI4pH0hJvzIGA\",\"url\":\"https://health.ucdavis.edu/research/news/topic/infectious-diseases\",\"loadedUrl\":\"https://health.ucdavis.edu/research/news/topic/infectious-diseases\",\"uniqueKey\":\"https://health.ucdavis.edu/research/news/topic/infectious-diseases\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:54.573Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/research/news/topic/infectious-diseases",
+	"url": "https://health.ucdavis.edu/research/news/topic/infectious-diseases"
+}

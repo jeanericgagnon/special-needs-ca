@@ -1,0 +1,9 @@
+{
+	"id": "WJjLQh0DD3nfCkN",
+	"json": "{\"id\":\"WJjLQh0DD3nfCkN\",\"url\":\"https://oag.ca.gov/privacy\",\"loadedUrl\":\"https://oag.ca.gov/privacy\",\"uniqueKey\":\"https://oag.ca.gov/privacy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:12:00.004Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://oag.ca.gov/privacy",
+	"url": "https://oag.ca.gov/privacy"
+}

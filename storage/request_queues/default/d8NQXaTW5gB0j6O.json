@@ -1,0 +1,9 @@
+{
+	"id": "d8NQXaTW5gB0j6O",
+	"json": "{\"id\":\"d8NQXaTW5gB0j6O\",\"url\":\"https://give.ucdavis.edu/CHDP/CHEONLF\",\"loadedUrl\":\"https://give.ucdavis.edu/CHDP/CHEONLF\",\"uniqueKey\":\"https://give.ucdavis.edu/CHDP/CHEONLF\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:59.211Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/CHDP/CHEONLF",
+	"url": "https://give.ucdavis.edu/CHDP/CHEONLF"
+}

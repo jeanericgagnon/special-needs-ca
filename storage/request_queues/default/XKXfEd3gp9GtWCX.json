@@ -1,0 +1,9 @@
+{
+	"id": "XKXfEd3gp9GtWCX",
+	"json": "{\"id\":\"XKXfEd3gp9GtWCX\",\"url\":\"https://calable.ca.gov/benefits\",\"loadedUrl\":\"https://calable.ca.gov/benefits\",\"uniqueKey\":\"https://calable.ca.gov/benefits\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:12.976Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://calable.ca.gov/benefits",
+	"url": "https://calable.ca.gov/benefits"
+}

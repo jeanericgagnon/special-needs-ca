@@ -1,0 +1,9 @@
+{
+	"id": "RztPKku0uGLIOhp",
+	"json": "{\"id\":\"RztPKku0uGLIOhp\",\"url\":\"https://www.cdss.ca.gov/inforesources/Community-Care/Caregiver-Background-Check/Trustline\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/community-care/caregiver-background-check/trustline\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/Community-Care/Caregiver-Background-Check/Trustline\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:41.948Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/inforesources/Community-Care/Caregiver-Background-Check/Trustline",
+	"url": "https://www.cdss.ca.gov/inforesources/Community-Care/Caregiver-Background-Check/Trustline"
+}

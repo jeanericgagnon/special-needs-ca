@@ -1,0 +1,9 @@
+{
+	"id": "xOFx6geXeqYWBkR",
+	"json": "{\"id\":\"xOFx6geXeqYWBkR\",\"url\":\"https://rarediseases.org/rare-diseases/camurati-engelmann-disease/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/camurati-engelmann-disease/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/camurati-engelmann-disease\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:10:12.846Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/rare-diseases/camurati-engelmann-disease",
+	"url": "https://rarediseases.org/rare-diseases/camurati-engelmann-disease/"
+}

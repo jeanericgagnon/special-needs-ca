@@ -1,0 +1,9 @@
+{
+	"id": "SWf7WyG4WLUYJBS",
+	"json": "{\"id\":\"SWf7WyG4WLUYJBS\",\"url\":\"http://www.courts.ca.gov/16473.htm\",\"loadedUrl\":\"https://selfhelp.courts.ca.gov/resources-develop-parenting-plan\",\"uniqueKey\":\"http://www.courts.ca.gov/16473.htm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:15:56.407Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.courts.ca.gov/16473.htm",
+	"url": "http://www.courts.ca.gov/16473.htm"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "5147t7stFZECWHC",
+	"json": "{\"id\":\"5147t7stFZECWHC\",\"url\":\"https://cdss.ca.gov/cacfp/training\",\"loadedUrl\":\"https://cdss.ca.gov/cacfp/training\",\"uniqueKey\":\"https://cdss.ca.gov/cacfp/training\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:58:31.303Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/cacfp/training",
+	"url": "https://cdss.ca.gov/cacfp/training"
+}

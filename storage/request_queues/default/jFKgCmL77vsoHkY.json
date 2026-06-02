@@ -1,0 +1,9 @@
+{
+	"id": "jFKgCmL77vsoHkY",
+	"json": "{\"id\":\"jFKgCmL77vsoHkY\",\"url\":\"https://rarediseases.org/resource-library/page/18/?taxonomy%5Bcollection%5D=genetic-testing\",\"loadedUrl\":\"https://rarediseases.org/resource-library/page/18/?taxonomy%5Bcollection%5D=genetic-testing\",\"uniqueKey\":\"https://rarediseases.org/resource-library/page/18?taxonomy%5Bcollection%5D=genetic-testing\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:32.715Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/resource-library/page/18?taxonomy%5Bcollection%5D=genetic-testing",
+	"url": "https://rarediseases.org/resource-library/page/18/?taxonomy%5Bcollection%5D=genetic-testing"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "PSqsOVX93lbMPB6",
+	"json": "{\"id\":\"PSqsOVX93lbMPB6\",\"url\":\"https://health.ucdavis.edu/mind-institute/research/adhdprogram/fidget-study\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/research/adhdprogram/fidget-study\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/research/adhdprogram/fidget-study\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:25.389Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mind-institute/research/adhdprogram/fidget-study",
+	"url": "https://health.ucdavis.edu/mind-institute/research/adhdprogram/fidget-study"
+}

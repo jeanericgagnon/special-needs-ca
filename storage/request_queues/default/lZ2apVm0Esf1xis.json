@@ -1,0 +1,9 @@
+{
+	"id": "lZ2apVm0Esf1xis",
+	"json": "{\"id\":\"lZ2apVm0Esf1xis\",\"url\":\"https://www.cdph.ca.gov/Programs/OLGA\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/OLGA/Pages/LegislativeAndGovernmentalAffairs.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/OLGA\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:22:58.912Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/OLGA",
+	"url": "https://www.cdph.ca.gov/Programs/OLGA"
+}

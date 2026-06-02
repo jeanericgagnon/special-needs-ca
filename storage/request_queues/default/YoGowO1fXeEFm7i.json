@@ -1,0 +1,9 @@
+{
+	"id": "YoGowO1fXeEFm7i",
+	"json": "{\"id\":\"YoGowO1fXeEFm7i\",\"url\":\"https://give.ucdavis.edu/MEDI/UR20025\",\"loadedUrl\":\"https://give.ucdavis.edu/MEDI/UR20025\",\"uniqueKey\":\"https://give.ucdavis.edu/MEDI/UR20025\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:46.438Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/MEDI/UR20025",
+	"url": "https://give.ucdavis.edu/MEDI/UR20025"
+}

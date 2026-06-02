@@ -1,0 +1,9 @@
+{
+	"id": "fQ3NbiT7QDn9gV6",
+	"json": "{\"id\":\"fQ3NbiT7QDn9gV6\",\"url\":\"https://www.dgs.ca.gov/CCDA/Business-Connect\",\"loadedUrl\":\"https://www.dgs.ca.gov/CCDA/Business-Connect\",\"uniqueKey\":\"https://www.dgs.ca.gov/CCDA/Business-Connect\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:06.667Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dgs.ca.gov/CCDA/Business-Connect",
+	"url": "https://www.dgs.ca.gov/CCDA/Business-Connect"
+}

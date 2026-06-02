@@ -1,0 +1,9 @@
+{
+	"id": "EubKKUCsUBr47sM",
+	"json": "{\"id\":\"EubKKUCsUBr47sM\",\"url\":\"https://www.ucdavis.edu/sites/default/files/media/documents/uc-davis-administrative-org-chart.pdf\",\"loadedUrl\":\"https://www.ucdavis.edu/sites/default/files/media/documents/uc-davis-administrative-org-chart.pdf\",\"uniqueKey\":\"https://www.ucdavis.edu/sites/default/files/media/documents/uc-davis-administrative-org-chart.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:41.039Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ucdavis.edu/sites/default/files/media/documents/uc-davis-administrative-org-chart.pdf",
+	"url": "https://www.ucdavis.edu/sites/default/files/media/documents/uc-davis-administrative-org-chart.pdf"
+}

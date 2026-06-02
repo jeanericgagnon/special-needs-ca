@@ -1,0 +1,9 @@
+{
+	"id": "uBlg1mD4Qw1UC51",
+	"json": "{\"id\":\"uBlg1mD4Qw1UC51\",\"url\":\"https://health.ucdavis.edu/anesthesiology/research/index.html\",\"loadedUrl\":\"https://health.ucdavis.edu/anesthesiology/research/index.html\",\"uniqueKey\":\"https://health.ucdavis.edu/anesthesiology/research/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:52.379Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/anesthesiology/research/index.html",
+	"url": "https://health.ucdavis.edu/anesthesiology/research/index.html"
+}

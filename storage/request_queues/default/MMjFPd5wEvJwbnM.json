@@ -1,0 +1,9 @@
+{
+	"id": "MMjFPd5wEvJwbnM",
+	"json": "{\"id\":\"MMjFPd5wEvJwbnM\",\"url\":\"https://www.caloes.ca.gov/office-of-the-director/policy-administration/finance-administration/human-resources/employment-information/\",\"loadedUrl\":\"https://www.caloes.ca.gov/office-of-the-director/policy-administration/finance-administration/human-resources/employment-information/\",\"uniqueKey\":\"https://www.caloes.ca.gov/office-of-the-director/policy-administration/finance-administration/human-resources/employment-information\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:42.834Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.caloes.ca.gov/office-of-the-director/policy-administration/finance-administration/human-resources/employment-information",
+	"url": "https://www.caloes.ca.gov/office-of-the-director/policy-administration/finance-administration/human-resources/employment-information/"
+}

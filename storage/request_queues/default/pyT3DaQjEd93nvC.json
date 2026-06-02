@@ -1,0 +1,9 @@
+{
+	"id": "pyT3DaQjEd93nvC",
+	"json": "{\"id\":\"pyT3DaQjEd93nvC\",\"url\":\"https://www.globaldownsyndrome.org/research-medical-care/medical-care-providers/new-hampshire\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/research-medical-care/medical-care-providers/new-hampshire/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/research-medical-care/medical-care-providers/new-hampshire\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:29:47.088Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.globaldownsyndrome.org/research-medical-care/medical-care-providers/new-hampshire",
+	"url": "https://www.globaldownsyndrome.org/research-medical-care/medical-care-providers/new-hampshire"
+}

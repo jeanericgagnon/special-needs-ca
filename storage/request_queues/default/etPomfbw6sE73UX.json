@@ -1,0 +1,9 @@
+{
+	"id": "etPomfbw6sE73UX",
+	"json": "{\"id\":\"etPomfbw6sE73UX\",\"url\":\"http://www.dmhc.ca.gov/FileaComplaint.aspx\",\"loadedUrl\":\"https://www.dmhc.ca.gov/FileaComplaint.aspx\",\"uniqueKey\":\"http://www.dmhc.ca.gov/FileaComplaint.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:46:57.924Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.dmhc.ca.gov/FileaComplaint.aspx",
+	"url": "http://www.dmhc.ca.gov/FileaComplaint.aspx"
+}

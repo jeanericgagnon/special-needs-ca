@@ -1,0 +1,9 @@
+{
+	"id": "eV3ym8CeMUEkIlf",
+	"json": "{\"id\":\"eV3ym8CeMUEkIlf\",\"url\":\"https://www.ctc.ca.gov/credentials/assignment-resources/authorizations-for-librarian-services\",\"loadedUrl\":\"https://www.ctc.ca.gov/employers/assignment-resources/services/librarian-media/auth-library-services/\",\"uniqueKey\":\"https://www.ctc.ca.gov/credentials/assignment-resources/authorizations-for-librarian-services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:05:30.303Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ctc.ca.gov/credentials/assignment-resources/authorizations-for-librarian-services",
+	"url": "https://www.ctc.ca.gov/credentials/assignment-resources/authorizations-for-librarian-services"
+}

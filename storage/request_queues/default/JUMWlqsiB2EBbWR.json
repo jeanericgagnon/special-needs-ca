@@ -1,0 +1,9 @@
+{
+	"id": "JUMWlqsiB2EBbWR",
+	"json": "{\"id\":\"JUMWlqsiB2EBbWR\",\"url\":\"https://skylab4.cdph.ca.gov/epicenter/\",\"loadedUrl\":\"https://skylab4.cdph.ca.gov/epicenter/\",\"uniqueKey\":\"https://skylab4.cdph.ca.gov/epicenter\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":2,\"errorMessages\":[\"Error: request timed out after 30 seconds.\\n    at Timeout._onTimeout (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@apify/timeout/cjs/index.cjs:64:68)\\n    at listOnTimeout (node:internal/timers:588:17)\\n    at process.processTimers (node:internal/timers:523:7)\",\"Error: request timed out after 30 seconds.\\n    at Timeout._onTimeout (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@apify/timeout/cjs/index.cjs:64:68)\\n    at listOnTimeout (node:internal/timers:588:17)\\n    at process.processTimers (node:internal/timers:523:7)\"],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:41:48.545Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 2,
+	"uniqueKey": "https://skylab4.cdph.ca.gov/epicenter",
+	"url": "https://skylab4.cdph.ca.gov/epicenter/"
+}

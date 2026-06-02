@@ -1,0 +1,9 @@
+{
+	"id": "hTTyhNgW0PXSYjx",
+	"json": "{\"id\":\"hTTyhNgW0PXSYjx\",\"url\":\"https://health.ucdavis.edu/mind-institute/our-team/national-visitors\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/our-team/national-visitors\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/our-team/national-visitors\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:27.969Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mind-institute/our-team/national-visitors",
+	"url": "https://health.ucdavis.edu/mind-institute/our-team/national-visitors"
+}

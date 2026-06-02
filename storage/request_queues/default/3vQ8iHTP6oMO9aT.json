@@ -1,0 +1,9 @@
+{
+	"id": "3vQ8iHTP6oMO9aT",
+	"json": "{\"id\":\"3vQ8iHTP6oMO9aT\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/SIDS/Pages/Health-Care-Professionals.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/SIDS/Pages/Health-Care-Professionals.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/SIDS/Pages/Health-Care-Professionals.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:01:38.217Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/SIDS/Pages/Health-Care-Professionals.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/SIDS/Pages/Health-Care-Professionals.aspx"
+}

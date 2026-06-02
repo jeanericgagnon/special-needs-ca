@@ -1,0 +1,9 @@
+{
+	"id": "bXrdLyY2Osnpscp",
+	"json": "{\"id\":\"bXrdLyY2Osnpscp\",\"url\":\"https://cdss.ca.gov/inforesources/community-care/administrator-certification/administrator-information/faq-administrators\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/community-care/administrator-certification/administrator-information/faq-administrators\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/community-care/administrator-certification/administrator-information/faq-administrators\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:33.453Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/community-care/administrator-certification/administrator-information/faq-administrators",
+	"url": "https://cdss.ca.gov/inforesources/community-care/administrator-certification/administrator-information/faq-administrators"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "OtCo3uGOay7J81h",
+	"json": "{\"id\":\"OtCo3uGOay7J81h\",\"url\":\"https://neuroscience.ucdavis.edu/event-category/public-event\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/event-category/public-event\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/event-category/public-event\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:58.857Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://neuroscience.ucdavis.edu/event-category/public-event",
+	"url": "https://neuroscience.ucdavis.edu/event-category/public-event"
+}

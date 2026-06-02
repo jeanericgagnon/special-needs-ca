@@ -1,0 +1,9 @@
+{
+	"id": "qPXGMk6QLYuUJAq",
+	"json": "{\"id\":\"qPXGMk6QLYuUJAq\",\"url\":\"https://health.ucdavis.edu/children/services/pediatric-gastroenterology-nutrition/\",\"loadedUrl\":\"https://health.ucdavis.edu/children/services/pediatric-gastroenterology-nutrition/\",\"uniqueKey\":\"https://health.ucdavis.edu/children/services/pediatric-gastroenterology-nutrition\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:12.028Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/children/services/pediatric-gastroenterology-nutrition",
+	"url": "https://health.ucdavis.edu/children/services/pediatric-gastroenterology-nutrition/"
+}

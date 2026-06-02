@@ -1,0 +1,9 @@
+{
+	"id": "ccAfR7l1Vo5E4fN",
+	"json": "{\"id\":\"ccAfR7l1Vo5E4fN\",\"url\":\"https://edd.ca.gov/en/jobs_and_training/step-6-interview/\",\"loadedUrl\":\"https://edd.ca.gov/en/jobs_and_training/step-6-interview/\",\"uniqueKey\":\"https://edd.ca.gov/en/jobs_and_training/step-6-interview\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:41.006Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://edd.ca.gov/en/jobs_and_training/step-6-interview",
+	"url": "https://edd.ca.gov/en/jobs_and_training/step-6-interview/"
+}

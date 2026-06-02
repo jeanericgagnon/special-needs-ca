@@ -1,0 +1,9 @@
+{
+	"id": "CgokSCJm5XBXxZL",
+	"json": "{\"id\":\"CgokSCJm5XBXxZL\",\"url\":\"https://www.cde.ca.gov/sp/se/qa/cmplntproc.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/se/qa/cmplntproc.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/se/qa/cmplntproc.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:04.213Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/sp/se/qa/cmplntproc.asp",
+	"url": "https://www.cde.ca.gov/sp/se/qa/cmplntproc.asp"
+}

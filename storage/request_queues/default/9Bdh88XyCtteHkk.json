@@ -1,0 +1,9 @@
+{
+	"id": "9Bdh88XyCtteHkk",
+	"json": "{\"id\":\"9Bdh88XyCtteHkk\",\"url\":\"https://www.calepa.ca.gov/border-affairs-program/california-mexico-border-relations-council/\",\"loadedUrl\":\"https://calepa.ca.gov/border-affairs-program/california-mexico-border-relations-council/\",\"uniqueKey\":\"https://www.calepa.ca.gov/border-affairs-program/california-mexico-border-relations-council\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:44:15.329Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.calepa.ca.gov/border-affairs-program/california-mexico-border-relations-council",
+	"url": "https://www.calepa.ca.gov/border-affairs-program/california-mexico-border-relations-council/"
+}

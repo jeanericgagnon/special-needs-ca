@@ -1,0 +1,9 @@
+{
+	"id": "8fP6HaNRJ9Uc5YX",
+	"json": "{\"id\":\"8fP6HaNRJ9Uc5YX\",\"url\":\"https://health.ucdavis.edu/patients-visitors/about-patient-care/quality-safety/recognition\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/about-patient-care/quality-safety/recognition\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/about-patient-care/quality-safety/recognition\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:57.865Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/about-patient-care/quality-safety/recognition",
+	"url": "https://health.ucdavis.edu/patients-visitors/about-patient-care/quality-safety/recognition"
+}

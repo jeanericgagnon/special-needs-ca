@@ -1,0 +1,9 @@
+{
+	"id": "OIvCJIA0T8lqpIv",
+	"json": "{\"id\":\"OIvCJIA0T8lqpIv\",\"url\":\"https://lettersandscience.ucdavis.edu/about/our-history/2000-Present\",\"loadedUrl\":\"https://lettersandscience.ucdavis.edu/about/our-history/2000-Present\",\"uniqueKey\":\"https://lettersandscience.ucdavis.edu/about/our-history/2000-Present\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:22.796Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://lettersandscience.ucdavis.edu/about/our-history/2000-Present",
+	"url": "https://lettersandscience.ucdavis.edu/about/our-history/2000-Present"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "7PeqI61BqwtG1mT",
+	"json": "{\"id\":\"7PeqI61BqwtG1mT\",\"url\":\"https://physicians.ucdavis.edu/?view=tiled\",\"loadedUrl\":\"https://physicians.ucdavis.edu/?view=tiled\",\"uniqueKey\":\"https://physicians.ucdavis.edu?view=tiled\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:11.761Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://physicians.ucdavis.edu?view=tiled",
+	"url": "https://physicians.ucdavis.edu/?view=tiled"
+}

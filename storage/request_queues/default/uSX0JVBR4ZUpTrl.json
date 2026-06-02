@@ -1,0 +1,9 @@
+{
+	"id": "uSX0JVBR4ZUpTrl",
+	"json": "{\"id\":\"uSX0JVBR4ZUpTrl\",\"url\":\"https://alumni.ucdavis.edu/aggie-traditions\",\"loadedUrl\":\"https://alumni.ucdavis.edu/aggie-traditions\",\"uniqueKey\":\"https://alumni.ucdavis.edu/aggie-traditions\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:06.005Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://alumni.ucdavis.edu/aggie-traditions",
+	"url": "https://alumni.ucdavis.edu/aggie-traditions"
+}

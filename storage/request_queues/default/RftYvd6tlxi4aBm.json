@@ -1,0 +1,9 @@
+{
+	"id": "RftYvd6tlxi4aBm",
+	"json": "{\"id\":\"RftYvd6tlxi4aBm\",\"url\":\"https://www.slocounty.ca.gov/departments/social-services/adult-services/services/in-home-supportive-services-(ihss)-program\",\"loadedUrl\":\"https://www.slocounty.ca.gov/departments/social-services/adult-services/services/in-home-supportive-services-(ihss)-program\",\"uniqueKey\":\"https://www.slocounty.ca.gov/departments/social-services/adult-services/services/in-home-supportive-services-(ihss)-program\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:32.528Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.slocounty.ca.gov/departments/social-services/adult-services/services/in-home-supportive-services-(ihss)-program",
+	"url": "https://www.slocounty.ca.gov/departments/social-services/adult-services/services/in-home-supportive-services-(ihss)-program"
+}

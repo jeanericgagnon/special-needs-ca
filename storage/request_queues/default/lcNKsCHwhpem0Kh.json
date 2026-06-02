@@ -1,0 +1,9 @@
+{
+	"id": "lcNKsCHwhpem0Kh",
+	"json": "{\"id\":\"lcNKsCHwhpem0Kh\",\"url\":\"http://www.library.ca.gov/services/to-public/k-12-online-content-project/\",\"loadedUrl\":\"https://www.library.ca.gov/services/to-public/k-12-online-content-project/\",\"uniqueKey\":\"http://www.library.ca.gov/services/to-public/k-12-online-content-project\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:03.050Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.library.ca.gov/services/to-public/k-12-online-content-project",
+	"url": "http://www.library.ca.gov/services/to-public/k-12-online-content-project/"
+}

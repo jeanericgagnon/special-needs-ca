@@ -1,0 +1,9 @@
+{
+	"id": "aAaPphDiKpmNwPD",
+	"json": "{\"id\":\"aAaPphDiKpmNwPD\",\"url\":\"https://health.ucdavis.edu/mind-institute/our-team/executive-committee\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/our-team/executive-committee\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/our-team/executive-committee\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:27.014Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mind-institute/our-team/executive-committee",
+	"url": "https://health.ucdavis.edu/mind-institute/our-team/executive-committee"
+}

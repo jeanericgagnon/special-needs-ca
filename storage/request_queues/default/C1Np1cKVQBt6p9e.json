@@ -1,0 +1,9 @@
+{
+	"id": "C1Np1cKVQBt6p9e",
+	"json": "{\"id\":\"C1Np1cKVQBt6p9e\",\"url\":\"https://cdss.ca.gov/inforesources/dementia-care-information-and-resources\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/dementia-care-information-and-resources\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/dementia-care-information-and-resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:29.381Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/dementia-care-information-and-resources",
+	"url": "https://cdss.ca.gov/inforesources/dementia-care-information-and-resources"
+}

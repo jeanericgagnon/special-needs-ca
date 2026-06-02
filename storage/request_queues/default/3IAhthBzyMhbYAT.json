@@ -1,0 +1,9 @@
+{
+	"id": "3IAhthBzyMhbYAT",
+	"json": "{\"id\":\"3IAhthBzyMhbYAT\",\"url\":\"https://cdss.ca.gov/inforesources/Resource-Family-Approval-Program\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/resource-family-approval-program\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Resource-Family-Approval-Program\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:17.203Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/Resource-Family-Approval-Program",
+	"url": "https://cdss.ca.gov/inforesources/Resource-Family-Approval-Program"
+}

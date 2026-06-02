@@ -1,0 +1,9 @@
+{
+	"id": "Yj9UubPi8NCBT7P",
+	"json": "{\"id\":\"Yj9UubPi8NCBT7P\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/1400/mauro-giordani-adult_reconstruction_-_joint_replacement-orthopaedics-sacramento?FreeText%3aLast+name=Giordani\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/1400/mauro-giordani-adult_reconstruction_-_joint_replacement-orthopaedics-sacramento?FreeText%3aLast+name=Giordani\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/1400/mauro-giordani-adult_reconstruction_-_joint_replacement-orthopaedics-sacramento?FreeText%3ALast+name=Giordani\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:13.400Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/1400/mauro-giordani-adult_reconstruction_-_joint_replacement-orthopaedics-sacramento?FreeText%3ALast+name=Giordani",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/1400/mauro-giordani-adult_reconstruction_-_joint_replacement-orthopaedics-sacramento?FreeText%3aLast+name=Giordani"
+}

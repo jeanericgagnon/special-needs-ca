@@ -1,0 +1,9 @@
+{
+	"id": "U10kjPpPifqxzBY",
+	"json": "{\"id\":\"U10kjPpPifqxzBY\",\"url\":\"https://www.ucdavis.edu/magazine\",\"loadedUrl\":\"https://www.ucdavis.edu/magazine\",\"uniqueKey\":\"https://www.ucdavis.edu/magazine\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:46.218Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ucdavis.edu/magazine",
+	"url": "https://www.ucdavis.edu/magazine"
+}

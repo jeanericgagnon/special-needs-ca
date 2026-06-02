@@ -1,0 +1,9 @@
+{
+	"id": "nGV5lUijMH9pWcI",
+	"json": "{\"id\":\"nGV5lUijMH9pWcI\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/32351/orin-bloch-cancer-neurological_surgery-sacramento?FreeText%3aLast+name=Bloch\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/32351/orin-bloch-cancer-neurological_surgery-sacramento?FreeText%3aLast+name=Bloch\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/32351/orin-bloch-cancer-neurological_surgery-sacramento?FreeText%3ALast+name=Bloch\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:12.228Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/32351/orin-bloch-cancer-neurological_surgery-sacramento?FreeText%3ALast+name=Bloch",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/32351/orin-bloch-cancer-neurological_surgery-sacramento?FreeText%3aLast+name=Bloch"
+}

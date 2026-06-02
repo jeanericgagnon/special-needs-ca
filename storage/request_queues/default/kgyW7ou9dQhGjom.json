@@ -1,0 +1,9 @@
+{
+	"id": "kgyW7ou9dQhGjom",
+	"json": "{\"id\":\"kgyW7ou9dQhGjom\",\"url\":\"https://www.chhs.ca.gov/blog/2020/08/17/be-prepared-for-hot-weather-in-california/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2020/08/17/be-prepared-for-hot-weather-in-california/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2020/08/17/be-prepared-for-hot-weather-in-california\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:57.785Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chhs.ca.gov/blog/2020/08/17/be-prepared-for-hot-weather-in-california",
+	"url": "https://www.chhs.ca.gov/blog/2020/08/17/be-prepared-for-hot-weather-in-california/"
+}

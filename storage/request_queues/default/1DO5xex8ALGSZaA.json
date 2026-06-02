@@ -1,0 +1,9 @@
+{
+	"id": "1DO5xex8ALGSZaA",
+	"json": "{\"id\":\"1DO5xex8ALGSZaA\",\"url\":\"https://www.cde.ca.gov/re/di/kc/\",\"loadedUrl\":\"https://www.cde.ca.gov/re/di/kc/\",\"uniqueKey\":\"https://www.cde.ca.gov/re/di/kc\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:02.654Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/re/di/kc",
+	"url": "https://www.cde.ca.gov/re/di/kc/"
+}

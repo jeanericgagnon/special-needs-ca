@@ -1,0 +1,9 @@
+{
+	"id": "u86bP52zMpw44Qj",
+	"json": "{\"id\":\"u86bP52zMpw44Qj\",\"url\":\"http://www.ucdmc.ucdavis.edu/ucdavismedicine/issues/fall2004/news/news9.html?aID=9\",\"loadedUrl\":\"https://health.ucdavis.edu/ucdavismedicine/issues/fall2004/news/news9.html?aID=9\",\"uniqueKey\":\"http://www.ucdmc.ucdavis.edu/ucdavismedicine/issues/fall2004/news/news9.html?aID=9\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:34:24.907Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.ucdmc.ucdavis.edu/ucdavismedicine/issues/fall2004/news/news9.html?aID=9",
+	"url": "http://www.ucdmc.ucdavis.edu/ucdavismedicine/issues/fall2004/news/news9.html?aID=9"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "H6ibwANV3ARO8E1",
+	"json": "{\"id\":\"H6ibwANV3ARO8E1\",\"url\":\"https://www.cdph.ca.gov/Programs/OLS/Pages/Statement-of-CDPH-HIPAA-Covered-Entity-Status.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/OLS/Pages/Statement-of-CDPH-HIPAA-Covered-Entity-Status.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/OLS/Pages/Statement-of-CDPH-HIPAA-Covered-Entity-Status.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:55:40.100Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/OLS/Pages/Statement-of-CDPH-HIPAA-Covered-Entity-Status.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/OLS/Pages/Statement-of-CDPH-HIPAA-Covered-Entity-Status.aspx"
+}

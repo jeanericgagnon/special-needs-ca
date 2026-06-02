@@ -1,0 +1,9 @@
+{
+	"id": "SMiOCwF13yT4nq5",
+	"json": "{\"id\":\"SMiOCwF13yT4nq5\",\"url\":\"https://edd.ca.gov/en/jobs_and_training/Contact_WSB/\",\"loadedUrl\":\"https://edd.ca.gov/en/jobs_and_training/Contact_WSB/\",\"uniqueKey\":\"https://edd.ca.gov/en/jobs_and_training/Contact_WSB\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:06:47.217Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://edd.ca.gov/en/jobs_and_training/Contact_WSB",
+	"url": "https://edd.ca.gov/en/jobs_and_training/Contact_WSB/"
+}

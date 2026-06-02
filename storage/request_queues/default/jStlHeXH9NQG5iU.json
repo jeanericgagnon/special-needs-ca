@@ -1,0 +1,9 @@
+{
+	"id": "jStlHeXH9NQG5iU",
+	"json": "{\"id\":\"jStlHeXH9NQG5iU\",\"url\":\"https://giving.ucdavis.edu/node/2526\",\"loadedUrl\":\"https://giving.ucdavis.edu/node/2526\",\"uniqueKey\":\"https://giving.ucdavis.edu/node/2526\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:31.683Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://giving.ucdavis.edu/node/2526",
+	"url": "https://giving.ucdavis.edu/node/2526"
+}

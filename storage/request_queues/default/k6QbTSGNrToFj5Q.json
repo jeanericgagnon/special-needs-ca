@@ -1,0 +1,9 @@
+{
+	"id": "k6QbTSGNrToFj5Q",
+	"json": "{\"id\":\"k6QbTSGNrToFj5Q\",\"url\":\"https://ucp.org/news-and-events/?sf_paged=7\",\"loadedUrl\":\"https://ucp.org/news-and-events/?sf_paged=7\",\"uniqueKey\":\"https://ucp.org/news-and-events?sf_paged=7\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:20.937Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://ucp.org/news-and-events?sf_paged=7",
+	"url": "https://ucp.org/news-and-events/?sf_paged=7"
+}

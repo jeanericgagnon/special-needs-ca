@@ -1,0 +1,9 @@
+{
+	"id": "kxCBbUhjqv4O6aA",
+	"json": "{\"id\":\"kxCBbUhjqv4O6aA\",\"url\":\"https://www.globaldownsyndrome.org/hi/legal-disclaimer/\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/hi/legal-disclaimer/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/hi/legal-disclaimer\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:31:11.186Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.globaldownsyndrome.org/hi/legal-disclaimer",
+	"url": "https://www.globaldownsyndrome.org/hi/legal-disclaimer/"
+}

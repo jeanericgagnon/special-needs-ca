@@ -1,0 +1,9 @@
+{
+	"id": "etSiwiZrt3GU7Ss",
+	"json": "{\"id\":\"etSiwiZrt3GU7Ss\",\"url\":\"http://www.cdph.ca.gov/HealthInfo/environhealth/water/Documents/Shellfish/Natural_Marine_Toxins_2015.pdf\",\"loadedUrl\":\"https://www.cdph.ca.gov/Pages/PageNotFoundError.aspx\",\"uniqueKey\":\"http://www.cdph.ca.gov/HealthInfo/environhealth/water/Documents/Shellfish/Natural_Marine_Toxins_2015.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:14:33.300Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.cdph.ca.gov/HealthInfo/environhealth/water/Documents/Shellfish/Natural_Marine_Toxins_2015.pdf",
+	"url": "http://www.cdph.ca.gov/HealthInfo/environhealth/water/Documents/Shellfish/Natural_Marine_Toxins_2015.pdf"
+}

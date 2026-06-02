@@ -1,0 +1,9 @@
+{
+	"id": "PDg7oQAwOVjl7C8",
+	"json": "{\"id\":\"PDg7oQAwOVjl7C8\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/1618/jennifer-rothschild-female_pelvic_medicine_and_reconstructive_surgery-urology-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/1618/jennifer-rothschild-female_pelvic_medicine_and_reconstructive_surgery-urology-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/1618/jennifer-rothschild-female_pelvic_medicine_and_reconstructive_surgery-urology-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:15.622Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/1618/jennifer-rothschild-female_pelvic_medicine_and_reconstructive_surgery-urology-sacramento",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/1618/jennifer-rothschild-female_pelvic_medicine_and_reconstructive_surgery-urology-sacramento"
+}

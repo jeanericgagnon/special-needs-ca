@@ -1,0 +1,9 @@
+{
+	"id": "fT5vidXELwvZ9X1",
+	"json": "{\"id\":\"fT5vidXELwvZ9X1\",\"url\":\"https://www.dgs.ca.gov/CCDA/Resources\",\"loadedUrl\":\"https://www.dgs.ca.gov/CCDA/Resources\",\"uniqueKey\":\"https://www.dgs.ca.gov/CCDA/Resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:06.762Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dgs.ca.gov/CCDA/Resources",
+	"url": "https://www.dgs.ca.gov/CCDA/Resources"
+}

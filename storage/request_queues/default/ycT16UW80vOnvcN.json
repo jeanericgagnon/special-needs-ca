@@ -1,0 +1,9 @@
+{
+	"id": "ycT16UW80vOnvcN",
+	"json": "{\"id\":\"ycT16UW80vOnvcN\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/42840/amol-shah-diagnostic_radiology-vascular_and_interventional_radiology-sacramento?FreeText%3aLast+name=Shah\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/42840/amol-shah-diagnostic_radiology-vascular_and_interventional_radiology-sacramento?FreeText%3aLast+name=Shah\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/42840/amol-shah-diagnostic_radiology-vascular_and_interventional_radiology-sacramento?FreeText%3ALast+name=Shah\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:15.749Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/42840/amol-shah-diagnostic_radiology-vascular_and_interventional_radiology-sacramento?FreeText%3ALast+name=Shah",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/42840/amol-shah-diagnostic_radiology-vascular_and_interventional_radiology-sacramento?FreeText%3aLast+name=Shah"
+}

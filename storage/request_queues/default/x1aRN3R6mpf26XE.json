@@ -1,0 +1,9 @@
+{
+	"id": "x1aRN3R6mpf26XE",
+	"json": "{\"id\":\"x1aRN3R6mpf26XE\",\"url\":\"https://health.ucdavis.edu/phs/research/\",\"loadedUrl\":\"https://health.ucdavis.edu/phs/research/\",\"uniqueKey\":\"https://health.ucdavis.edu/phs/research\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:11:08.109Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/phs/research",
+	"url": "https://health.ucdavis.edu/phs/research/"
+}

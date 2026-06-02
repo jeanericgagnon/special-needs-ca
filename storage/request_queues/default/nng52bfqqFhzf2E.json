@@ -1,0 +1,9 @@
+{
+	"id": "nng52bfqqFhzf2E",
+	"json": "{\"id\":\"nng52bfqqFhzf2E\",\"url\":\"https://mse.engineering.ucdavis.edu/\",\"loadedUrl\":\"https://mse.engineering.ucdavis.edu/\",\"uniqueKey\":\"https://mse.engineering.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:32.668Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://mse.engineering.ucdavis.edu",
+	"url": "https://mse.engineering.ucdavis.edu/"
+}

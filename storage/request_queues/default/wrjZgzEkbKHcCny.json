@@ -1,0 +1,9 @@
+{
+	"id": "wrjZgzEkbKHcCny",
+	"json": "{\"id\":\"wrjZgzEkbKHcCny\",\"url\":\"https://www.vetmed.ucdavis.edu/employment-opportunities\",\"loadedUrl\":\"https://www.vetmed.ucdavis.edu/employment-opportunities\",\"uniqueKey\":\"https://www.vetmed.ucdavis.edu/employment-opportunities\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:14.574Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.vetmed.ucdavis.edu/employment-opportunities",
+	"url": "https://www.vetmed.ucdavis.edu/employment-opportunities"
+}

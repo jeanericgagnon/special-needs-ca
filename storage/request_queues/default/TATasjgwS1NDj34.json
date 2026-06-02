@@ -1,0 +1,9 @@
+{
+	"id": "TATasjgwS1NDj34",
+	"json": "{\"id\":\"TATasjgwS1NDj34\",\"url\":\"https://health.ucdavis.edu/cancer/population-health/\",\"loadedUrl\":\"https://health.ucdavis.edu/cancer/population-health/\",\"uniqueKey\":\"https://health.ucdavis.edu/cancer/population-health\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:14.686Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/cancer/population-health",
+	"url": "https://health.ucdavis.edu/cancer/population-health/"
+}

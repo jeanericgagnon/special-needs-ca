@@ -1,0 +1,9 @@
+{
+	"id": "x12fCx568e5GPqa",
+	"json": "{\"id\":\"x12fCx568e5GPqa\",\"url\":\"https://oag.ca.gov/careers/exams\",\"loadedUrl\":\"https://oag.ca.gov/careers/exams\",\"uniqueKey\":\"https://oag.ca.gov/careers/exams\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:48.343Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://oag.ca.gov/careers/exams",
+	"url": "https://oag.ca.gov/careers/exams"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "5Toqzixj3Cj7uEy",
+	"json": "{\"id\":\"5Toqzixj3Cj7uEy\",\"url\":\"https://cdss.ca.gov/inforesources/Repatriation/Stakeholders\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/repatriation/stakeholders\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Repatriation/Stakeholders\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:20.018Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/Repatriation/Stakeholders",
+	"url": "https://cdss.ca.gov/inforesources/Repatriation/Stakeholders"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "iyLnz9fEkwiADFU",
+	"json": "{\"id\":\"iyLnz9fEkwiADFU\",\"url\":\"https://www.calhr.ca.gov/about-calhr/divisions-programs/personnel-management/job-descriptions/\",\"loadedUrl\":\"https://www.calhr.ca.gov/about-calhr/divisions-programs/personnel-management/job-descriptions/\",\"uniqueKey\":\"https://www.calhr.ca.gov/about-calhr/divisions-programs/personnel-management/job-descriptions\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:10.593Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.calhr.ca.gov/about-calhr/divisions-programs/personnel-management/job-descriptions",
+	"url": "https://www.calhr.ca.gov/about-calhr/divisions-programs/personnel-management/job-descriptions/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "5LWBUR4qC1WZApS",
+	"json": "{\"id\":\"5LWBUR4qC1WZApS\",\"url\":\"https://give.ucdavis.edu/AARB/GIFT002\",\"loadedUrl\":\"https://give.ucdavis.edu/AARB/GIFT002\",\"uniqueKey\":\"https://give.ucdavis.edu/AARB/GIFT002\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:56.106Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/AARB/GIFT002",
+	"url": "https://give.ucdavis.edu/AARB/GIFT002"
+}

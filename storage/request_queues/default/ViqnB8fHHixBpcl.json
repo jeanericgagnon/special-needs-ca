@@ -1,0 +1,9 @@
+{
+	"id": "ViqnB8fHHixBpcl",
+	"json": "{\"id\":\"ViqnB8fHHixBpcl\",\"url\":\"https://hr.ucdavis.edu/experience/results\",\"loadedUrl\":\"https://cas.ucdavis.edu/cas/login?service=https%3A//hr.ucdavis.edu/casservice%3Fdestination%3D/experience/results\",\"uniqueKey\":\"https://hr.ucdavis.edu/experience/results\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:52.288Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/experience/results",
+	"url": "https://hr.ucdavis.edu/experience/results"
+}

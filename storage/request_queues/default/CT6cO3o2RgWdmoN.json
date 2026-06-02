@@ -1,0 +1,9 @@
+{
+	"id": "CT6cO3o2RgWdmoN",
+	"json": "{\"id\":\"CT6cO3o2RgWdmoN\",\"url\":\"https://calable.ca.gov/es/contactenos\",\"loadedUrl\":\"https://calable.ca.gov/es/contactenos\",\"uniqueKey\":\"https://calable.ca.gov/es/contactenos\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:40.087Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://calable.ca.gov/es/contactenos",
+	"url": "https://calable.ca.gov/es/contactenos"
+}

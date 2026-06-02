@@ -1,0 +1,9 @@
+{
+	"id": "VGw1aZ5w5DN29Hy",
+	"json": "{\"id\":\"VGw1aZ5w5DN29Hy\",\"url\":\"https://www.cdph.ca.gov/Programs/CID/DOA/Pages/OA_adap_contractors.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CID/DOA/Pages/OA_adap_contractors.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CID/DOA/Pages/OA_adap_contractors.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:03:00.092Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CID/DOA/Pages/OA_adap_contractors.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CID/DOA/Pages/OA_adap_contractors.aspx"
+}

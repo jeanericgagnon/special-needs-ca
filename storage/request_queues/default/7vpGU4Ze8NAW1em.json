@@ -1,0 +1,9 @@
+{
+	"id": "7vpGU4Ze8NAW1em",
+	"json": "{\"id\":\"7vpGU4Ze8NAW1em\",\"url\":\"https://recruit.ucdavis.edu/accessibility\",\"loadedUrl\":\"https://recruit.ucdavis.edu/accessibility\",\"uniqueKey\":\"https://recruit.ucdavis.edu/accessibility\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:29.425Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://recruit.ucdavis.edu/accessibility",
+	"url": "https://recruit.ucdavis.edu/accessibility"
+}

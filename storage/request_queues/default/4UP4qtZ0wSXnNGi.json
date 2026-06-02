@@ -1,0 +1,9 @@
+{
+	"id": "4UP4qtZ0wSXnNGi",
+	"json": "{\"id\":\"4UP4qtZ0wSXnNGi\",\"url\":\"https://www.ebt.ca.gov/locator/index.html#/locator.page\",\"loadedUrl\":\"https://www.ebt.ca.gov/locator/index.html#/locator.page\",\"uniqueKey\":\"https://www.ebt.ca.gov/locator/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:43.117Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ebt.ca.gov/locator/index.html",
+	"url": "https://www.ebt.ca.gov/locator/index.html#/locator.page"
+}

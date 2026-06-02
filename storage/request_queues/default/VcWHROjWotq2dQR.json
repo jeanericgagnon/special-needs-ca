@@ -1,0 +1,9 @@
+{
+	"id": "VcWHROjWotq2dQR",
+	"json": "{\"id\":\"VcWHROjWotq2dQR\",\"url\":\"https://www.cdss.ca.gov/inforesources/Community-Care/Caregiver-Background-Check/Resources-for-Individuals\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/community-care/caregiver-background-check/resources-for-individuals\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/Community-Care/Caregiver-Background-Check/Resources-for-Individuals\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:10.413Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/inforesources/Community-Care/Caregiver-Background-Check/Resources-for-Individuals",
+	"url": "https://www.cdss.ca.gov/inforesources/Community-Care/Caregiver-Background-Check/Resources-for-Individuals"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "eEarP3sMrTMe3kC",
+	"json": "{\"id\":\"eEarP3sMrTMe3kC\",\"url\":\"https://give.ucdavis.edu/MNSG/TBIGIFT\",\"loadedUrl\":\"https://give.ucdavis.edu/MNSG/TBIGIFT\",\"uniqueKey\":\"https://give.ucdavis.edu/MNSG/TBIGIFT\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:56.395Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/MNSG/TBIGIFT",
+	"url": "https://give.ucdavis.edu/MNSG/TBIGIFT"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "IVvvb2Bip7w8Hhu",
+	"json": "{\"id\":\"IVvvb2Bip7w8Hhu\",\"url\":\"https://hr.ucdavis.edu/supervisors/posters-required-by-law\",\"loadedUrl\":\"https://hr.ucdavis.edu/supervisors/posters-required-by-law\",\"uniqueKey\":\"https://hr.ucdavis.edu/supervisors/posters-required-by-law\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:18.895Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/supervisors/posters-required-by-law",
+	"url": "https://hr.ucdavis.edu/supervisors/posters-required-by-law"
+}

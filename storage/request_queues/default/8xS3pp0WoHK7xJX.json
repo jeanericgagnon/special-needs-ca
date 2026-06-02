@@ -1,0 +1,9 @@
+{
+	"id": "8xS3pp0WoHK7xJX",
+	"json": "{\"id\":\"8xS3pp0WoHK7xJX\",\"url\":\"https://www.cdfa.ca.gov/ahfss/Animal_Health/Entry_Requirements.html\",\"loadedUrl\":\"https://www.cdfa.ca.gov/ahfss/Animal_Health/Entry_Requirements.html\",\"uniqueKey\":\"https://www.cdfa.ca.gov/ahfss/Animal_Health/Entry_Requirements.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:22:35.420Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdfa.ca.gov/ahfss/Animal_Health/Entry_Requirements.html",
+	"url": "https://www.cdfa.ca.gov/ahfss/Animal_Health/Entry_Requirements.html"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "Fcr692C3RBJfstg",
+	"json": "{\"id\":\"Fcr692C3RBJfstg\",\"url\":\"http://www.cdss.ca.gov/reporting/report-fraud\",\"loadedUrl\":\"https://www.cdss.ca.gov/reporting/report-fraud\",\"uniqueKey\":\"http://www.cdss.ca.gov/reporting/report-fraud\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:30.255Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.cdss.ca.gov/reporting/report-fraud",
+	"url": "http://www.cdss.ca.gov/reporting/report-fraud"
+}

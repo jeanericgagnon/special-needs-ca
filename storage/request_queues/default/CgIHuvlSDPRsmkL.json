@@ -1,0 +1,9 @@
+{
+	"id": "CgIHuvlSDPRsmkL",
+	"json": "{\"id\":\"CgIHuvlSDPRsmkL\",\"url\":\"https://leadership.ucdavis.edu/about/councils-committees-boards/provosts-senior-reports\",\"loadedUrl\":\"https://leadership.ucdavis.edu/about/councils-committees-boards/provosts-senior-reports\",\"uniqueKey\":\"https://leadership.ucdavis.edu/about/councils-committees-boards/provosts-senior-reports\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:36.282Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://leadership.ucdavis.edu/about/councils-committees-boards/provosts-senior-reports",
+	"url": "https://leadership.ucdavis.edu/about/councils-committees-boards/provosts-senior-reports"
+}

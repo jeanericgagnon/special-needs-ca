@@ -1,0 +1,9 @@
+{
+	"id": "a3vw1xmqe71XIzW",
+	"json": "{\"id\":\"a3vw1xmqe71XIzW\",\"url\":\"http://www.cdss.ca.gov/inforesources/ebt/california-fruit-vegetable-ebt-pilot-project\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/ebt/california-fruit-vegetable-ebt-pilot-project\",\"uniqueKey\":\"http://www.cdss.ca.gov/inforesources/ebt/california-fruit-vegetable-ebt-pilot-project\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:43.940Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.cdss.ca.gov/inforesources/ebt/california-fruit-vegetable-ebt-pilot-project",
+	"url": "http://www.cdss.ca.gov/inforesources/ebt/california-fruit-vegetable-ebt-pilot-project"
+}

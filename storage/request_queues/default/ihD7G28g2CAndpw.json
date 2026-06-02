@@ -1,0 +1,9 @@
+{
+	"id": "ihD7G28g2CAndpw",
+	"json": "{\"id\":\"ihD7G28g2CAndpw\",\"url\":\"https://scdd.ca.gov/sb639-ca-neon/\",\"loadedUrl\":\"https://scdd.ca.gov/sb639-ca-neon/\",\"uniqueKey\":\"https://scdd.ca.gov/sb639-ca-neon\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:48.349Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/sb639-ca-neon",
+	"url": "https://scdd.ca.gov/sb639-ca-neon/"
+}

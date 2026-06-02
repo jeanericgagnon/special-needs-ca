@@ -1,0 +1,9 @@
+{
+	"id": "cFT2AJDPAJpt9Vg",
+	"json": "{\"id\":\"cFT2AJDPAJpt9Vg\",\"url\":\"https://www.cde.ca.gov/re/di/cd/ap/mainpage.aspx?requrl=http://www.cde.ca.gov/ci/gs/ps/documents/ctecourses2013-14.doc&refurl=\",\"loadedUrl\":\"https://www.cde.ca.gov/re/di/cd/ap2/\",\"uniqueKey\":\"https://www.cde.ca.gov/re/di/cd/ap/mainpage.aspx?refurl=&requrl=http%3A%2F%2Fwww.cde.ca.gov%2Fci%2Fgs%2Fps%2Fdocuments%2Fctecourses2013-14.doc\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:21:41.486Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/re/di/cd/ap/mainpage.aspx?refurl=&requrl=http%3A%2F%2Fwww.cde.ca.gov%2Fci%2Fgs%2Fps%2Fdocuments%2Fctecourses2013-14.doc",
+	"url": "https://www.cde.ca.gov/re/di/cd/ap/mainpage.aspx?requrl=http://www.cde.ca.gov/ci/gs/ps/documents/ctecourses2013-14.doc&refurl="
+}

@@ -1,0 +1,9 @@
+{
+	"id": "g3WhBrrM6QXnFM2",
+	"json": "{\"id\":\"g3WhBrrM6QXnFM2\",\"url\":\"https://elearning.cdph.ca.gov/providers/\",\"loadedUrl\":\"https://elearning.cdph.ca.gov/providers/\",\"uniqueKey\":\"https://elearning.cdph.ca.gov/providers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:56:10.731Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://elearning.cdph.ca.gov/providers",
+	"url": "https://elearning.cdph.ca.gov/providers/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "6vCUgCHwX5oNtVf",
+	"json": "{\"id\":\"6vCUgCHwX5oNtVf\",\"url\":\"https://health.ucdavis.edu/ctsc/area/bcr/bios/nick-anderson-bio\",\"loadedUrl\":\"https://health.ucdavis.edu/ctsc/area/bcr/bios/nick-anderson-bio\",\"uniqueKey\":\"https://health.ucdavis.edu/ctsc/area/bcr/bios/nick-anderson-bio\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:26.308Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/ctsc/area/bcr/bios/nick-anderson-bio",
+	"url": "https://health.ucdavis.edu/ctsc/area/bcr/bios/nick-anderson-bio"
+}

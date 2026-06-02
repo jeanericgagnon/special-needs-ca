@@ -1,0 +1,9 @@
+{
+	"id": "X0fuDIwW8rsNA1a",
+	"json": "{\"id\":\"X0fuDIwW8rsNA1a\",\"url\":\"https://www.ftb.ca.gov/pay/third-party-payments/index.html\",\"loadedUrl\":\"https://www.ftb.ca.gov/pay/third-party-payments/index.html\",\"uniqueKey\":\"https://www.ftb.ca.gov/pay/third-party-payments/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:36.015Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ftb.ca.gov/pay/third-party-payments/index.html",
+	"url": "https://www.ftb.ca.gov/pay/third-party-payments/index.html"
+}

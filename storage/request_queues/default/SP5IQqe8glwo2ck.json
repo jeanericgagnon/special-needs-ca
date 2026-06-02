@@ -1,0 +1,9 @@
+{
+	"id": "SP5IQqe8glwo2ck",
+	"json": "{\"id\":\"SP5IQqe8glwo2ck\",\"url\":\"https://www.cdph.ca.gov/Programs/CCLHO/Pages/CCLHOOrganization.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCLHO/Pages/CCLHOOrganization.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCLHO/Pages/CCLHOOrganization.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:24.717Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCLHO/Pages/CCLHOOrganization.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CCLHO/Pages/CCLHOOrganization.aspx"
+}

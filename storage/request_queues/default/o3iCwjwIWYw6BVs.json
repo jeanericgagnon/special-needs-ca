@@ -1,0 +1,9 @@
+{
+	"id": "o3iCwjwIWYw6BVs",
+	"json": "{\"id\":\"o3iCwjwIWYw6BVs\",\"url\":\"https://securefoia.ssa.gov/\",\"loadedUrl\":\"https://securefoia.ssa.gov/\",\"uniqueKey\":\"https://securefoia.ssa.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:37.357Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://securefoia.ssa.gov",
+	"url": "https://securefoia.ssa.gov/"
+}

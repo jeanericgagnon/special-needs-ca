@@ -1,0 +1,9 @@
+{
+	"id": "ongQH8oHQZar0PR",
+	"json": "{\"id\":\"ongQH8oHQZar0PR\",\"url\":\"https://www.vetmed.ucdavis.edu/news/case-of-the-month\",\"loadedUrl\":\"https://www.vetmed.ucdavis.edu/news/case-of-the-month\",\"uniqueKey\":\"https://www.vetmed.ucdavis.edu/news/case-of-the-month\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:21.994Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.vetmed.ucdavis.edu/news/case-of-the-month",
+	"url": "https://www.vetmed.ucdavis.edu/news/case-of-the-month"
+}

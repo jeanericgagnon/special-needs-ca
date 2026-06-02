@@ -1,0 +1,9 @@
+{
+	"id": "gLt3KQbDtTv6U71",
+	"json": "{\"id\":\"gLt3KQbDtTv6U71\",\"url\":\"https://kb.ucdavis.edu/\",\"loadedUrl\":\"https://servicehub.ucdavis.edu/servicehub?id=ucd_kb_view2\",\"uniqueKey\":\"https://kb.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:37.893Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://kb.ucdavis.edu",
+	"url": "https://kb.ucdavis.edu/"
+}

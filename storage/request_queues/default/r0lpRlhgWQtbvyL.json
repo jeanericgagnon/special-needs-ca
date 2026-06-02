@@ -1,0 +1,9 @@
+{
+	"id": "r0lpRlhgWQtbvyL",
+	"json": "{\"id\":\"r0lpRlhgWQtbvyL\",\"url\":\"https://ucdra.ucdavis.edu/\",\"loadedUrl\":\"https://ucdra.ucdavis.edu/\",\"uniqueKey\":\"https://ucdra.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:46.803Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://ucdra.ucdavis.edu",
+	"url": "https://ucdra.ucdavis.edu/"
+}

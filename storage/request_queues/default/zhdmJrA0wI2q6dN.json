@@ -1,0 +1,9 @@
+{
+	"id": "zhdmJrA0wI2q6dN",
+	"json": "{\"id\":\"zhdmJrA0wI2q6dN\",\"url\":\"https://mychart.ucdavis.edu/mychart/default.asp?mode=stdfile&option=MyChartTeen\",\"loadedUrl\":\"https://mychart.ucdavis.edu/mychart/Authentication/Login/StandardFile?option=MyChartTeen\",\"uniqueKey\":\"https://mychart.ucdavis.edu/mychart/default.asp?mode=stdfile&option=MyChartTeen\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:56.337Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://mychart.ucdavis.edu/mychart/default.asp?mode=stdfile&option=MyChartTeen",
+	"url": "https://mychart.ucdavis.edu/mychart/default.asp?mode=stdfile&option=MyChartTeen"
+}

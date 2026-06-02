@@ -1,0 +1,9 @@
+{
+	"id": "hcqh4s370sotLYL",
+	"json": "{\"id\":\"hcqh4s370sotLYL\",\"url\":\"https://www.cdss.ca.gov/inforesources/information-resources/program-and-legislative-reports/childrens-residential-program-reports\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/information-resources/program-and-legislative-reports/childrens-residential-program-reports\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/information-resources/program-and-legislative-reports/childrens-residential-program-reports\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:06.938Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/inforesources/information-resources/program-and-legislative-reports/childrens-residential-program-reports",
+	"url": "https://www.cdss.ca.gov/inforesources/information-resources/program-and-legislative-reports/childrens-residential-program-reports"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "euBcmsVOqq0Nuaf",
+	"json": "{\"id\":\"euBcmsVOqq0Nuaf\",\"url\":\"https://www.cde.ca.gov/ci/ma/cf/mathfwfaqs.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=84f89ec7-50a2-4b23-af1f-d940426f570f&ssb=52491251625&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fci%2Fma%2Fcf%2Fmathfwfaqs.asp&ssi=ed6da566-ctxv-4d7c-97d8-ad1e9411b0d0&ssk=botmanager_support@radware.com&ssm=48719887050473087136498022086138&ssn=534d6baedfb17ddd137aad8b02a93679910d381804e4-d755-44d9-a4cba0&sso=c67d5042-68cac3d6812d7d1fc8bb49509fb9f42bc16ccc81bd02616b&ssp=57275553421780329368178036200618425&ssq=55658522664998154225325843077842827838464&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDAzODE4MDRlNC1kNzU1LTQ0ZDktYTA0Mi02OGNhYzNkNjgxMmQxLTE3ODAzMjU4NDMwNzI4MDYyNDMtMDAzZDkxZGUyNmFjZjQzYzA4MzEzIiwidXpteCI6IjdmOTAwMDcxYjM2MWY2LWJhZDktNDM3OC1iMTgzLTNhMDUzOTg4NzM1NjEtMTc4MDMyNTg0MzA3MjgwNjI0My1lMjVkZDc4MDBhNjBhODU1MTMiLCJyZCI6ImNhLmdvdiJ9\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/ma/cf/mathfwfaqs.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:10:49.740Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ci/ma/cf/mathfwfaqs.asp",
+	"url": "https://www.cde.ca.gov/ci/ma/cf/mathfwfaqs.asp"
+}

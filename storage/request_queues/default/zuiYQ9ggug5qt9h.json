@@ -1,0 +1,9 @@
+{
+	"id": "zuiYQ9ggug5qt9h",
+	"json": "{\"id\":\"zuiYQ9ggug5qt9h\",\"url\":\"https://education.ucdavis.edu/faculty-profile/lauren-lindstrom\",\"loadedUrl\":\"https://education.ucdavis.edu/faculty-profile/lauren-e-lindstrom\",\"uniqueKey\":\"https://education.ucdavis.edu/faculty-profile/lauren-lindstrom\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:07:50.471Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://education.ucdavis.edu/faculty-profile/lauren-lindstrom",
+	"url": "https://education.ucdavis.edu/faculty-profile/lauren-lindstrom"
+}

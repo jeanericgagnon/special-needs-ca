@@ -1,0 +1,9 @@
+{
+	"id": "stD4PDNtgfE67Jx",
+	"json": "{\"id\":\"stD4PDNtgfE67Jx\",\"url\":\"https://physicians.ucdavis.edu/details/43411/courtney-lyles-health_policy-health_services_research?FreeText%3aLast+name=lyles\",\"loadedUrl\":\"https://physicians.ucdavis.edu/details/43411/courtney-lyles-health_policy-health_services_research?FreeText%3aLast+name=lyles\",\"uniqueKey\":\"https://physicians.ucdavis.edu/details/43411/courtney-lyles-health_policy-health_services_research?FreeText%3ALast+name=lyles\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:27.172Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://physicians.ucdavis.edu/details/43411/courtney-lyles-health_policy-health_services_research?FreeText%3ALast+name=lyles",
+	"url": "https://physicians.ucdavis.edu/details/43411/courtney-lyles-health_policy-health_services_research?FreeText%3aLast+name=lyles"
+}

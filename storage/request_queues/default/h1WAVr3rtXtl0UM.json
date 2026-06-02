@@ -1,0 +1,9 @@
+{
+	"id": "h1WAVr3rtXtl0UM",
+	"json": "{\"id\":\"h1WAVr3rtXtl0UM\",\"url\":\"https://give.ucdavis.edu/MIND/CEDDSIF\",\"loadedUrl\":\"https://give.ucdavis.edu/MIND/CEDDSIF\",\"uniqueKey\":\"https://give.ucdavis.edu/MIND/CEDDSIF\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:07:12.765Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/MIND/CEDDSIF",
+	"url": "https://give.ucdavis.edu/MIND/CEDDSIF"
+}

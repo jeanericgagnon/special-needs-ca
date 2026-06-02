@@ -1,0 +1,9 @@
+{
+	"id": "eiLqs3JWZMz4Ur0",
+	"json": "{\"id\":\"eiLqs3JWZMz4Ur0\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/774/gina-lokna-family_and_community_medicine-sports_medicine-sacramento?FreeText%3aLast+name=Lokna\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/774/gina-lokna-family_and_community_medicine-sports_medicine-sacramento?FreeText%3aLast+name=Lokna\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/774/gina-lokna-family_and_community_medicine-sports_medicine-sacramento?FreeText%3ALast+name=Lokna\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:15.153Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/774/gina-lokna-family_and_community_medicine-sports_medicine-sacramento?FreeText%3ALast+name=Lokna",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/774/gina-lokna-family_and_community_medicine-sports_medicine-sacramento?FreeText%3aLast+name=Lokna"
+}

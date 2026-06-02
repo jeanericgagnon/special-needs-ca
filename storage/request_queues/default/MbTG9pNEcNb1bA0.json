@@ -1,0 +1,9 @@
+{
+	"id": "MbTG9pNEcNb1bA0",
+	"json": "{\"id\":\"MbTG9pNEcNb1bA0\",\"url\":\"https://www.ucdavis.edu/news/uc-davis-top-10-nations-public-universities-5th-year\",\"loadedUrl\":\"https://www.ucdavis.edu/news/uc-davis-top-10-nations-public-universities-5th-year\",\"uniqueKey\":\"https://www.ucdavis.edu/news/uc-davis-top-10-nations-public-universities-5th-year\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:56.291Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ucdavis.edu/news/uc-davis-top-10-nations-public-universities-5th-year",
+	"url": "https://www.ucdavis.edu/news/uc-davis-top-10-nations-public-universities-5th-year"
+}

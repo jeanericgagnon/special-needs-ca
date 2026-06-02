@@ -1,0 +1,9 @@
+{
+	"id": "v5jP8GO4y2Aa2R8",
+	"json": "{\"id\":\"v5jP8GO4y2Aa2R8\",\"url\":\"https://health.ucdavis.edu/medicalcenter/cliniclocations/primarycare/roseville_2261.html\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/locations/primary-care/roseville-1620-east-roseville-pkwy\",\"uniqueKey\":\"https://health.ucdavis.edu/medicalcenter/cliniclocations/primarycare/roseville_2261.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:59.956Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/medicalcenter/cliniclocations/primarycare/roseville_2261.html",
+	"url": "https://health.ucdavis.edu/medicalcenter/cliniclocations/primarycare/roseville_2261.html"
+}

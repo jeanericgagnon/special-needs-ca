@@ -1,0 +1,9 @@
+{
+	"id": "ei8q6Eq42tG7OkB",
+	"json": "{\"id\":\"ei8q6Eq42tG7OkB\",\"url\":\"https://rarediseases.org/state/ohio/?post_type=center-of-excellence\",\"loadedUrl\":\"https://rarediseases.org/state/ohio/?post_type=center-of-excellence\",\"uniqueKey\":\"https://rarediseases.org/state/ohio?post_type=center-of-excellence\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:24:20.975Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/state/ohio?post_type=center-of-excellence",
+	"url": "https://rarediseases.org/state/ohio/?post_type=center-of-excellence"
+}

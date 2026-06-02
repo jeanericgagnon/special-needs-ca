@@ -1,0 +1,9 @@
+{
+	"id": "b0C0dlm4agjLTpH",
+	"json": "{\"id\":\"b0C0dlm4agjLTpH\",\"url\":\"https://www.dds.ca.gov/rc/disparities/data/regional-center-performance-contracts/\",\"loadedUrl\":\"https://www.dds.ca.gov/rc/disparities/data/regional-center-performance-contracts/\",\"uniqueKey\":\"https://www.dds.ca.gov/rc/disparities/data/regional-center-performance-contracts\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:49.305Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/rc/disparities/data/regional-center-performance-contracts",
+	"url": "https://www.dds.ca.gov/rc/disparities/data/regional-center-performance-contracts/"
+}

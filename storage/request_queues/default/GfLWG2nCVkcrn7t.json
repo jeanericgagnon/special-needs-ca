@@ -1,0 +1,9 @@
+{
+	"id": "GfLWG2nCVkcrn7t",
+	"json": "{\"id\":\"GfLWG2nCVkcrn7t\",\"url\":\"https://www.dds.ca.gov/rc/dashboard/4731-complaints/\",\"loadedUrl\":\"https://www.dds.ca.gov/rc/dashboard/4731-complaints/\",\"uniqueKey\":\"https://www.dds.ca.gov/rc/dashboard/4731-complaints\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:52.102Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/rc/dashboard/4731-complaints",
+	"url": "https://www.dds.ca.gov/rc/dashboard/4731-complaints/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "ZJjN1YZEvUVj38o",
+	"json": "{\"id\":\"ZJjN1YZEvUVj38o\",\"url\":\"https://health.ucdavis.edu/compliance/privacy/hipaa/\",\"loadedUrl\":\"https://health.ucdavis.edu/compliance/privacy/hippa-and-the-university-of-california\",\"uniqueKey\":\"https://health.ucdavis.edu/compliance/privacy/hipaa\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:46:19.923Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/compliance/privacy/hipaa",
+	"url": "https://health.ucdavis.edu/compliance/privacy/hipaa/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "FytjiCAqGC0cIOF",
+	"json": "{\"id\":\"FytjiCAqGC0cIOF\",\"url\":\"https://www.placer.ca.gov/site/copyright\",\"loadedUrl\":\"https://www.placer.ca.gov/site/copyright\",\"uniqueKey\":\"https://www.placer.ca.gov/site/copyright\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:31.355Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.placer.ca.gov/site/copyright",
+	"url": "https://www.placer.ca.gov/site/copyright"
+}

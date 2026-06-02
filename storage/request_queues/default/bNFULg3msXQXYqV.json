@@ -1,0 +1,9 @@
+{
+	"id": "bNFULg3msXQXYqV",
+	"json": "{\"id\":\"bNFULg3msXQXYqV\",\"url\":\"https://health.ucdavis.edu/cancer/research/education-training/high-school-students\",\"loadedUrl\":\"https://health.ucdavis.edu/cancer/research/education-training/high-school-students\",\"uniqueKey\":\"https://health.ucdavis.edu/cancer/research/education-training/high-school-students\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:15.817Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/cancer/research/education-training/high-school-students",
+	"url": "https://health.ucdavis.edu/cancer/research/education-training/high-school-students"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "Jhg2ElpruexRtKQ",
+	"json": "{\"id\":\"Jhg2ElpruexRtKQ\",\"url\":\"https://physician-referral.ucdmc.ucdavis.edu/index.cfm\",\"loadedUrl\":\"https://physician-referral.ucdmc.ucdavis.edu/index.cfm\",\"uniqueKey\":\"https://physician-referral.ucdmc.ucdavis.edu/index.cfm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:27.843Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://physician-referral.ucdmc.ucdavis.edu/index.cfm",
+	"url": "https://physician-referral.ucdmc.ucdavis.edu/index.cfm"
+}

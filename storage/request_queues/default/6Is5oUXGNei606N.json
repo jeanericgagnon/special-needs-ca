@@ -1,0 +1,9 @@
+{
+	"id": "6Is5oUXGNei606N",
+	"json": "{\"id\":\"6Is5oUXGNei606N\",\"url\":\"https://lao.ca.gov/Accessibility\",\"loadedUrl\":\"https://lao.ca.gov/Accessibility\",\"uniqueKey\":\"https://lao.ca.gov/Accessibility\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:03:04.553Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://lao.ca.gov/Accessibility",
+	"url": "https://lao.ca.gov/Accessibility"
+}

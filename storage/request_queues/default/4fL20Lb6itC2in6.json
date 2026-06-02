@@ -1,0 +1,9 @@
+{
+	"id": "4fL20Lb6itC2in6",
+	"json": "{\"id\":\"4fL20Lb6itC2in6\",\"url\":\"http://calhr.ca.gov/pages/conditions-of-use.aspx\",\"loadedUrl\":\"http://www.calhr.ca.gov/conditions-of-use/\",\"uniqueKey\":\"http://calhr.ca.gov/pages/conditions-of-use.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:04.785Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://calhr.ca.gov/pages/conditions-of-use.aspx",
+	"url": "http://calhr.ca.gov/pages/conditions-of-use.aspx"
+}

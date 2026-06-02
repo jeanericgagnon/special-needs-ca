@@ -1,0 +1,9 @@
+{
+	"id": "1t9jR59kKuR98Sd",
+	"json": "{\"id\":\"1t9jR59kKuR98Sd\",\"url\":\"https://ldaca.org/chris-dedos/\",\"loadedUrl\":\"https://ldaca.org/chris-dedos/\",\"uniqueKey\":\"https://ldaca.org/chris-dedos\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:57.674Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://ldaca.org/chris-dedos",
+	"url": "https://ldaca.org/chris-dedos/"
+}

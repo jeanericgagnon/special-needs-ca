@@ -1,0 +1,9 @@
+{
+	"id": "gsUuuAspRDn2i6t",
+	"json": "{\"id\":\"gsUuuAspRDn2i6t\",\"url\":\"https://www.dir.ca.gov/dlse/EWPRequirements.html\",\"loadedUrl\":\"https://www.dir.ca.gov/dlse/EWPRequirements.html\",\"uniqueKey\":\"https://www.dir.ca.gov/dlse/EWPRequirements.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:01.184Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dir.ca.gov/dlse/EWPRequirements.html",
+	"url": "https://www.dir.ca.gov/dlse/EWPRequirements.html"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "QUhO0yWulj7jXzn",
+	"json": "{\"id\":\"QUhO0yWulj7jXzn\",\"url\":\"https://scdd.ca.gov/pos-service-code/coordinated-career-pathways/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/coordinated-career-pathways/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/coordinated-career-pathways\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:01.541Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/pos-service-code/coordinated-career-pathways",
+	"url": "https://scdd.ca.gov/pos-service-code/coordinated-career-pathways/"
+}

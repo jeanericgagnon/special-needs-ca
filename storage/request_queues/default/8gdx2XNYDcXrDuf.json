@@ -1,0 +1,9 @@
+{
+	"id": "8gdx2XNYDcXrDuf",
+	"json": "{\"id\":\"8gdx2XNYDcXrDuf\",\"url\":\"https://lettersandscience.ucdavis.edu/ambassadors\",\"loadedUrl\":\"https://lettersandscience.ucdavis.edu/ambassadors\",\"uniqueKey\":\"https://lettersandscience.ucdavis.edu/ambassadors\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:22.977Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://lettersandscience.ucdavis.edu/ambassadors",
+	"url": "https://lettersandscience.ucdavis.edu/ambassadors"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "UFFzqqsmzQJUhJ3",
+	"json": "{\"id\":\"UFFzqqsmzQJUhJ3\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/42508/benjamin-benny-stripe-cardiovascular_medicine-heart_disease-interventional_cardiology-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/42508/benjamin-benny-stripe-cardiovascular_medicine-heart_disease-interventional_cardiology-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/42508/benjamin-benny-stripe-cardiovascular_medicine-heart_disease-interventional_cardiology-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:08.102Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/42508/benjamin-benny-stripe-cardiovascular_medicine-heart_disease-interventional_cardiology-sacramento",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/42508/benjamin-benny-stripe-cardiovascular_medicine-heart_disease-interventional_cardiology-sacramento"
+}

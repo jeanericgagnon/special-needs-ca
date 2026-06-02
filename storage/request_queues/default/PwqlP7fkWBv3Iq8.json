@@ -1,0 +1,9 @@
+{
+	"id": "PwqlP7fkWBv3Iq8",
+	"json": "{\"id\":\"PwqlP7fkWBv3Iq8\",\"url\":\"https://www.dhcs.ca.gov/Documents/BHIN%2024-025-ACL%2024-43%20Presumptive%20Transfer%20Policy.pdf\",\"loadedUrl\":\"https://www.dhcs.ca.gov/file/bhin2024-025-acl2024-4320presumptive20transfer20policy/\",\"uniqueKey\":\"https://www.dhcs.ca.gov/Documents/BHIN%2024-025-ACL%2024-43%20Presumptive%20Transfer%20Policy.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:12:24.645Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dhcs.ca.gov/Documents/BHIN%2024-025-ACL%2024-43%20Presumptive%20Transfer%20Policy.pdf",
+	"url": "https://www.dhcs.ca.gov/Documents/BHIN%2024-025-ACL%2024-43%20Presumptive%20Transfer%20Policy.pdf"
+}

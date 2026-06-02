@@ -1,0 +1,9 @@
+{
+	"id": "imQzf3whxJcaHwV",
+	"json": "{\"id\":\"imQzf3whxJcaHwV\",\"url\":\"https://pathreporting.ccr.ca.gov/selftesting/\",\"loadedUrl\":\"https://pathreporting.ccr.ca.gov/selftesting/\",\"uniqueKey\":\"https://pathreporting.ccr.ca.gov/selftesting\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T19:34:04.529Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://pathreporting.ccr.ca.gov/selftesting",
+	"url": "https://pathreporting.ccr.ca.gov/selftesting/"
+}

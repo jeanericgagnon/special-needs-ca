@@ -1,0 +1,9 @@
+{
+	"id": "dyjtyj3daH3K4EI",
+	"json": "{\"id\":\"dyjtyj3daH3K4EI\",\"url\":\"https://data.chhs.ca.gov/dataset/ca-wellness-plan-data-reference-guide\",\"loadedUrl\":\"https://data.chhs.ca.gov/dataset/ca-wellness-plan-data-reference-guide\",\"uniqueKey\":\"https://data.chhs.ca.gov/dataset/ca-wellness-plan-data-reference-guide\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T19:30:11.864Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://data.chhs.ca.gov/dataset/ca-wellness-plan-data-reference-guide",
+	"url": "https://data.chhs.ca.gov/dataset/ca-wellness-plan-data-reference-guide"
+}

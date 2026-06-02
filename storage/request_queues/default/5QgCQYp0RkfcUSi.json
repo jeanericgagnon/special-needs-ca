@@ -1,0 +1,9 @@
+{
+	"id": "5QgCQYp0RkfcUSi",
+	"json": "{\"id\":\"5QgCQYp0RkfcUSi\",\"url\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Respiratory-Viruses/stayhealthy.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Respiratory-Viruses/stayhealthy.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Respiratory-Viruses/stayhealthy.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:24.177Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Respiratory-Viruses/stayhealthy.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Respiratory-Viruses/stayhealthy.aspx"
+}

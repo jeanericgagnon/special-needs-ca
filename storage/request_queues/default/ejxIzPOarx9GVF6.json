@@ -1,0 +1,9 @@
+{
+	"id": "ejxIzPOarx9GVF6",
+	"json": "{\"id\":\"ejxIzPOarx9GVF6\",\"url\":\"https://health.ucdavis.edu/medicalcenter/cliniclocations/primarycare/davis.html\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/locations/primary-care/davis-2660-west-covell-blvd\",\"uniqueKey\":\"https://health.ucdavis.edu/medicalcenter/cliniclocations/primarycare/davis.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:59.707Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/medicalcenter/cliniclocations/primarycare/davis.html",
+	"url": "https://health.ucdavis.edu/medicalcenter/cliniclocations/primarycare/davis.html"
+}

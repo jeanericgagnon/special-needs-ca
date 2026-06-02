@@ -1,0 +1,9 @@
+{
+	"id": "lqmbgc1fEnw36ah",
+	"json": "{\"id\":\"lqmbgc1fEnw36ah\",\"url\":\"https://www.cde.ca.gov/ls/nu/sn/cep.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ls/nu/sn/cep.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ls/nu/sn/cep.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:23.283Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ls/nu/sn/cep.asp",
+	"url": "https://www.cde.ca.gov/ls/nu/sn/cep.asp"
+}

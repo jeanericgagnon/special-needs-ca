@@ -1,0 +1,9 @@
+{
+	"id": "avAxt7pO6mbcBTR",
+	"json": "{\"id\":\"avAxt7pO6mbcBTR\",\"url\":\"https://www2.cde.ca.gov/cacs/health\",\"loadedUrl\":\"https://www2.cde.ca.gov/cacs/health\",\"uniqueKey\":\"https://www2.cde.ca.gov/cacs/health\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:23:58.618Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www2.cde.ca.gov/cacs/health",
+	"url": "https://www2.cde.ca.gov/cacs/health"
+}

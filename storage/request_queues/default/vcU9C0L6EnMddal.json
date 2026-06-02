@@ -1,0 +1,9 @@
+{
+	"id": "vcU9C0L6EnMddal",
+	"json": "{\"id\":\"vcU9C0L6EnMddal\",\"url\":\"https://www.cdii.ca.gov/news/new-medical-group-report-cards/\",\"loadedUrl\":\"https://www.cdii.ca.gov/news/new-medical-group-report-cards/\",\"uniqueKey\":\"https://www.cdii.ca.gov/news/new-medical-group-report-cards\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:44.113Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdii.ca.gov/news/new-medical-group-report-cards",
+	"url": "https://www.cdii.ca.gov/news/new-medical-group-report-cards/"
+}

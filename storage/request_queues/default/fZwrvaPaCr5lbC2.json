@@ -1,0 +1,9 @@
+{
+	"id": "fZwrvaPaCr5lbC2",
+	"json": "{\"id\":\"fZwrvaPaCr5lbC2\",\"url\":\"https://cdss.ca.gov/inforesources/Community-Care/ASCP-Centralized-Application-Units\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/community-care/ascp-centralized-application-units\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Community-Care/ASCP-Centralized-Application-Units\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:27.501Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/Community-Care/ASCP-Centralized-Application-Units",
+	"url": "https://cdss.ca.gov/inforesources/Community-Care/ASCP-Centralized-Application-Units"
+}

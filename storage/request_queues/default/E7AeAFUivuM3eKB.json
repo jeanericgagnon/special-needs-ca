@@ -1,0 +1,9 @@
+{
+	"id": "E7AeAFUivuM3eKB",
+	"json": "{\"id\":\"E7AeAFUivuM3eKB\",\"url\":\"http://data1.cde.ca.gov/dataquest/\",\"loadedUrl\":\"https://data1.cde.ca.gov/dataquest/\",\"uniqueKey\":\"http://data1.cde.ca.gov/dataquest\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:05:30.143Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://data1.cde.ca.gov/dataquest",
+	"url": "http://data1.cde.ca.gov/dataquest/"
+}

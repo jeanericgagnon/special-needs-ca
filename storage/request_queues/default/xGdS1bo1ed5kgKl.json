@@ -1,0 +1,9 @@
+{
+	"id": "xGdS1bo1ed5kgKl",
+	"json": "{\"id\":\"xGdS1bo1ed5kgKl\",\"url\":\"https://give.ucdavis.edu/ASRC\",\"loadedUrl\":\"https://give.ucdavis.edu/ASRC\",\"uniqueKey\":\"https://give.ucdavis.edu/ASRC\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:56.364Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/ASRC",
+	"url": "https://give.ucdavis.edu/ASRC"
+}

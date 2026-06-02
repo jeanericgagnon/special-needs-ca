@@ -1,0 +1,9 @@
+{
+	"id": "Y2sqEQD6N0VmAtl",
+	"json": "{\"id\":\"Y2sqEQD6N0VmAtl\",\"url\":\"https://cnprc.ucdavis.edu/cardiorespiratory-scientists\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/cardiorespiratory-scientists\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/cardiorespiratory-scientists\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:12.365Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cnprc.ucdavis.edu/cardiorespiratory-scientists",
+	"url": "https://cnprc.ucdavis.edu/cardiorespiratory-scientists"
+}

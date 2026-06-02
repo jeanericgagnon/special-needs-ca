@@ -1,0 +1,9 @@
+{
+	"id": "nidd3uKvwPaVdRs",
+	"json": "{\"id\":\"nidd3uKvwPaVdRs\",\"url\":\"https://health.ucdavis.edu/family-caregiving/research/current-projects\",\"loadedUrl\":\"https://health.ucdavis.edu/family-caregiving/research/current-projects\",\"uniqueKey\":\"https://health.ucdavis.edu/family-caregiving/research/current-projects\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:21.641Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/family-caregiving/research/current-projects",
+	"url": "https://health.ucdavis.edu/family-caregiving/research/current-projects"
+}

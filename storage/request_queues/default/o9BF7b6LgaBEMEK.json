@@ -1,0 +1,9 @@
+{
+	"id": "o9BF7b6LgaBEMEK",
+	"json": "{\"id\":\"o9BF7b6LgaBEMEK\",\"url\":\"https://mindbrain.ucdavis.edu/people/andrew-todd\",\"loadedUrl\":\"https://mindbrain.ucdavis.edu/people/andrew-todd\",\"uniqueKey\":\"https://mindbrain.ucdavis.edu/people/andrew-todd\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:11.412Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://mindbrain.ucdavis.edu/people/andrew-todd",
+	"url": "https://mindbrain.ucdavis.edu/people/andrew-todd"
+}

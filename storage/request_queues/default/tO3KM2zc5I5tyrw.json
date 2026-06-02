@@ -1,0 +1,9 @@
+{
+	"id": "tO3KM2zc5I5tyrw",
+	"json": "{\"id\":\"tO3KM2zc5I5tyrw\",\"url\":\"https://physicians.ucdavis.edu/?Specialties=235\",\"loadedUrl\":\"https://physicians.ucdavis.edu/?Specialties=235\",\"uniqueKey\":\"https://physicians.ucdavis.edu?Specialties=235\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:12:50.441Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://physicians.ucdavis.edu?Specialties=235",
+	"url": "https://physicians.ucdavis.edu/?Specialties=235"
+}

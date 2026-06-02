@@ -1,0 +1,9 @@
+{
+	"id": "woyu6mPyfGMtoKz",
+	"json": "{\"id\":\"woyu6mPyfGMtoKz\",\"url\":\"https://give.ucdavis.edu/cdn-cgi/l/email-protection#240449514a43415649454a4a644c414548504c0a51474045524d570a414051\",\"loadedUrl\":\"https://give.ucdavis.edu/cdn-cgi/l/email-protection#240449514a43415649454a4a644c414548504c0a51474045524d570a414051\",\"uniqueKey\":\"https://give.ucdavis.edu/cdn-cgi/l/email-protection\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:53.721Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/cdn-cgi/l/email-protection",
+	"url": "https://give.ucdavis.edu/cdn-cgi/l/email-protection#240449514a43415649454a4a644c414548504c0a51474045524d570a414051"
+}

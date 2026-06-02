@@ -1,0 +1,9 @@
+{
+	"id": "1Q0DMWrdY0UgPyb",
+	"json": "{\"id\":\"1Q0DMWrdY0UgPyb\",\"url\":\"https://neuroscience.ucdavis.edu/people/christine-nordahl\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/people/christine-nordahl\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/people/christine-nordahl\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:49.489Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://neuroscience.ucdavis.edu/people/christine-nordahl",
+	"url": "https://neuroscience.ucdavis.edu/people/christine-nordahl"
+}

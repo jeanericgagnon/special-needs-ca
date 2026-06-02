@@ -1,0 +1,9 @@
+{
+	"id": "d2SC5w9drOP0a52",
+	"json": "{\"id\":\"d2SC5w9drOP0a52\",\"url\":\"https://grad.ucdavis.edu/mentoring\",\"loadedUrl\":\"https://grad.ucdavis.edu/mentoring-up\",\"uniqueKey\":\"https://grad.ucdavis.edu/mentoring\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:30.259Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://grad.ucdavis.edu/mentoring",
+	"url": "https://grad.ucdavis.edu/mentoring"
+}

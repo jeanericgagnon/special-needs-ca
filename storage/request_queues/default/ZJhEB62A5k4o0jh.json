@@ -1,0 +1,9 @@
+{
+	"id": "ZJhEB62A5k4o0jh",
+	"json": "{\"id\":\"ZJhEB62A5k4o0jh\",\"url\":\"https://hcai.ca.gov/workforce-capacity/initiatives/certified-nursing-assistant-and-home-and-community-based-services-cna-hcbs/#21st-century-nursing\",\"loadedUrl\":\"https://hcai.ca.gov/workforce/initiatives/certified-nursing-assistant-and-home-and-community-based-services-cna-hcbs/\",\"uniqueKey\":\"https://hcai.ca.gov/workforce-capacity/initiatives/certified-nursing-assistant-and-home-and-community-based-services-cna-hcbs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:40.527Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hcai.ca.gov/workforce-capacity/initiatives/certified-nursing-assistant-and-home-and-community-based-services-cna-hcbs",
+	"url": "https://hcai.ca.gov/workforce-capacity/initiatives/certified-nursing-assistant-and-home-and-community-based-services-cna-hcbs/#21st-century-nursing"
+}

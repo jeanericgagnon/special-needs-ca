@@ -1,0 +1,9 @@
+{
+	"id": "kJe8Y0yJL95NSlB",
+	"json": "{\"id\":\"kJe8Y0yJL95NSlB\",\"url\":\"https://toxmsdt.vetmed.ucdavis.edu/research-ethics-training\",\"loadedUrl\":\"https://toxmsdt.vetmed.ucdavis.edu/research-ethics-training\",\"uniqueKey\":\"https://toxmsdt.vetmed.ucdavis.edu/research-ethics-training\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:23:59.427Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://toxmsdt.vetmed.ucdavis.edu/research-ethics-training",
+	"url": "https://toxmsdt.vetmed.ucdavis.edu/research-ethics-training"
+}

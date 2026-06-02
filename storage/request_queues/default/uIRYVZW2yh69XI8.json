@@ -1,0 +1,9 @@
+{
+	"id": "uIRYVZW2yh69XI8",
+	"json": "{\"id\":\"uIRYVZW2yh69XI8\",\"url\":\"https://www.cde.ca.gov/ds/da/researchdata.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ds/da/researchdata.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ds/da/researchdata.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:23:59.468Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ds/da/researchdata.asp",
+	"url": "https://www.cde.ca.gov/ds/da/researchdata.asp"
+}

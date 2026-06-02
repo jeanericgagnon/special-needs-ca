@@ -1,0 +1,9 @@
+{
+	"id": "1rCdqDxJqHJ6auM",
+	"json": "{\"id\":\"1rCdqDxJqHJ6auM\",\"url\":\"https://www.calhr.ca.gov/about-calhr/divisions-programs/workforce-development-division/competencies/\",\"loadedUrl\":\"https://www.calhr.ca.gov/about-calhr/divisions-programs/workforce-development-division/competencies/\",\"uniqueKey\":\"https://www.calhr.ca.gov/about-calhr/divisions-programs/workforce-development-division/competencies\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:13.265Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.calhr.ca.gov/about-calhr/divisions-programs/workforce-development-division/competencies",
+	"url": "https://www.calhr.ca.gov/about-calhr/divisions-programs/workforce-development-division/competencies/"
+}

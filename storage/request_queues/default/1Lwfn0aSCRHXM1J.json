@@ -1,0 +1,9 @@
+{
+	"id": "1Lwfn0aSCRHXM1J",
+	"json": "{\"id\":\"1Lwfn0aSCRHXM1J\",\"url\":\"https://www.cdss.ca.gov/inforesources/The-Integrated-Core-Practice-Model\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/the-integrated-core-practice-model\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/The-Integrated-Core-Practice-Model\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:47.517Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/inforesources/The-Integrated-Core-Practice-Model",
+	"url": "https://www.cdss.ca.gov/inforesources/The-Integrated-Core-Practice-Model"
+}

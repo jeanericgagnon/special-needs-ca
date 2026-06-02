@@ -1,0 +1,9 @@
+{
+	"id": "nPpbALDH8Hz9gJD",
+	"json": "{\"id\":\"nPpbALDH8Hz9gJD\",\"url\":\"https://urc.ucdavis.edu/advising-services\",\"loadedUrl\":\"https://urc.ucdavis.edu/advising-services\",\"uniqueKey\":\"https://urc.ucdavis.edu/advising-services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:34:27.016Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://urc.ucdavis.edu/advising-services",
+	"url": "https://urc.ucdavis.edu/advising-services"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "CrbHnVDX2LGnIN2",
+	"json": "{\"id\":\"CrbHnVDX2LGnIN2\",\"url\":\"https://health.ucdavis.edu/psychiatry/team/1416/christine-nordahl-/\",\"loadedUrl\":\"https://health.ucdavis.edu/psychiatry/team/1416/christine-nordahl-/\",\"uniqueKey\":\"https://health.ucdavis.edu/psychiatry/team/1416/christine-nordahl-\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:47.978Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/psychiatry/team/1416/christine-nordahl-",
+	"url": "https://health.ucdavis.edu/psychiatry/team/1416/christine-nordahl-/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "UFAaIjviJm9izxW",
+	"json": "{\"id\":\"UFAaIjviJm9izxW\",\"url\":\"https://health.ucdavis.edu/news/topic/lung-health\",\"loadedUrl\":\"https://health.ucdavis.edu/news/topic/lung-health\",\"uniqueKey\":\"https://health.ucdavis.edu/news/topic/lung-health\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:47:16.266Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/news/topic/lung-health",
+	"url": "https://health.ucdavis.edu/news/topic/lung-health"
+}

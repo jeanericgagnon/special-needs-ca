@@ -1,0 +1,9 @@
+{
+	"id": "OqQhO9kkTM0I4kE",
+	"json": "{\"id\":\"OqQhO9kkTM0I4kE\",\"url\":\"https://asucd.ucdavis.edu/\",\"loadedUrl\":\"https://asucd.ucdavis.edu/\",\"uniqueKey\":\"https://asucd.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:33.910Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://asucd.ucdavis.edu",
+	"url": "https://asucd.ucdavis.edu/"
+}

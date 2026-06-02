@@ -1,0 +1,9 @@
+{
+	"id": "xeDxTjHoUpJqTAD",
+	"json": "{\"id\":\"xeDxTjHoUpJqTAD\",\"url\":\"https://rarediseases.org/?s=&filter_category=patient-stories&filter_post_tag=&tax_array=category%257Cpost_tag&post_type=post&order=DESC&orderby=relevance&posts_per_page=12&compare=OR\",\"loadedUrl\":\"https://rarediseases.org/?s=&filter_category=patient-stories&filter_post_tag=&tax_array=category%257Cpost_tag&post_type=post&order=DESC&orderby=relevance&posts_per_page=12&compare=OR\",\"uniqueKey\":\"https://rarediseases.org?compare=OR&filter_category=patient-stories&filter_post_tag=&order=DESC&orderby=relevance&post_type=post&posts_per_page=12&s=&tax_array=category%257Cpost_tag\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:23:58.783Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org?compare=OR&filter_category=patient-stories&filter_post_tag=&order=DESC&orderby=relevance&post_type=post&posts_per_page=12&s=&tax_array=category%257Cpost_tag",
+	"url": "https://rarediseases.org/?s=&filter_category=patient-stories&filter_post_tag=&tax_array=category%257Cpost_tag&post_type=post&order=DESC&orderby=relevance&posts_per_page=12&compare=OR"
+}

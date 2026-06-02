@@ -1,0 +1,9 @@
+{
+	"id": "aD890QiyRnUBoVt",
+	"json": "{\"id\":\"aD890QiyRnUBoVt\",\"url\":\"https://www.cde.ca.gov/ci/pl/teacherequitydefinitions.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/pl/teacherequitydefinitions.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/pl/teacherequitydefinitions.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:22:37.874Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ci/pl/teacherequitydefinitions.asp",
+	"url": "https://www.cde.ca.gov/ci/pl/teacherequitydefinitions.asp"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "NMu2aQYQGbwncBY",
+	"json": "{\"id\":\"NMu2aQYQGbwncBY\",\"url\":\"http://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=18990.&lawCode=GOV\",\"loadedUrl\":\"https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=18990.&lawCode=GOV\",\"uniqueKey\":\"http://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=18990.\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:17.530Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=18990.",
+	"url": "http://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=18990.&lawCode=GOV"
+}

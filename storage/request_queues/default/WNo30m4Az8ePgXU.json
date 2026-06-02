@@ -1,0 +1,9 @@
+{
+	"id": "WNo30m4Az8ePgXU",
+	"json": "{\"id\":\"WNo30m4Az8ePgXU\",\"url\":\"https://cdss.ca.gov/inforesources/Community-Care/Caregiver-Background-Check/Background-Check-Process\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/community-care/caregiver-background-check/background-check-process\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Community-Care/Caregiver-Background-Check/Background-Check-Process\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:36.291Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/Community-Care/Caregiver-Background-Check/Background-Check-Process",
+	"url": "https://cdss.ca.gov/inforesources/Community-Care/Caregiver-Background-Check/Background-Check-Process"
+}

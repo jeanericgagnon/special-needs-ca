@@ -1,0 +1,9 @@
+{
+	"id": "RkdFmPBIPA4gtMw",
+	"json": "{\"id\":\"RkdFmPBIPA4gtMw\",\"url\":\"https://gradstudies.ucdavis.edu/programs/gnrs\",\"loadedUrl\":\"https://gradstudies.ucdavis.edu/programs/gnrs\",\"uniqueKey\":\"https://gradstudies.ucdavis.edu/programs/gnrs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:22.833Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://gradstudies.ucdavis.edu/programs/gnrs",
+	"url": "https://gradstudies.ucdavis.edu/programs/gnrs"
+}

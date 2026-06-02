@@ -1,0 +1,9 @@
+{
+	"id": "VcS62m4W67ANx1Q",
+	"json": "{\"id\":\"VcS62m4W67ANx1Q\",\"url\":\"https://www.cdph.ca.gov/Programs/OPDE/_layouts/15/listform.aspx?ListId=%7B8B98430B%2D4615%2D4387%2DBD0A%2DDFBF96DD0B06%7D&PageType=0\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/OPDE/Pages/OPDE.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/OPDE/_layouts/15/listform.aspx?ListId=%7B8B98430B-4615-4387-BD0A-DFBF96DD0B06%7D&PageType=0\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:55:14.300Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/OPDE/_layouts/15/listform.aspx?ListId=%7B8B98430B-4615-4387-BD0A-DFBF96DD0B06%7D&PageType=0",
+	"url": "https://www.cdph.ca.gov/Programs/OPDE/_layouts/15/listform.aspx?ListId=%7B8B98430B%2D4615%2D4387%2DBD0A%2DDFBF96DD0B06%7D&PageType=0"
+}

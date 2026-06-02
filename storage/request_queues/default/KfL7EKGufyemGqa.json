@@ -1,0 +1,9 @@
+{
+	"id": "KfL7EKGufyemGqa",
+	"json": "{\"id\":\"KfL7EKGufyemGqa\",\"url\":\"https://learn.rarediseases.org/courses/rare-disease-drug-development-series/\",\"loadedUrl\":\"https://learn.rarediseases.org/courses/rare-disease-drug-development-series/\",\"uniqueKey\":\"https://learn.rarediseases.org/courses/rare-disease-drug-development-series\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:30.871Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://learn.rarediseases.org/courses/rare-disease-drug-development-series",
+	"url": "https://learn.rarediseases.org/courses/rare-disease-drug-development-series/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "lJOobOAmNfk677x",
+	"json": "{\"id\":\"lJOobOAmNfk677x\",\"url\":\"https://www.cdii.ca.gov/committees-and-advisory-groups/data-exchange-framework/\",\"loadedUrl\":\"https://www.cdii.ca.gov/committees-and-advisory-groups/data-exchange-framework/\",\"uniqueKey\":\"https://www.cdii.ca.gov/committees-and-advisory-groups/data-exchange-framework\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:28:31.961Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdii.ca.gov/committees-and-advisory-groups/data-exchange-framework",
+	"url": "https://www.cdii.ca.gov/committees-and-advisory-groups/data-exchange-framework/"
+}

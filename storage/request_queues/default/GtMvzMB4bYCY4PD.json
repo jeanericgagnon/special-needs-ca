@@ -1,0 +1,9 @@
+{
+	"id": "GtMvzMB4bYCY4PD",
+	"json": "{\"id\":\"GtMvzMB4bYCY4PD\",\"url\":\"https://physicians.ucdavis.edu/details/43422/manpreet-singh-child_and_adolescent_psychiatry-child_development-psychiatry-sacramento?FreeText%3aLast+name=singh\",\"loadedUrl\":\"https://physicians.ucdavis.edu/details/43422/manpreet-singh-child_and_adolescent_psychiatry-child_development-psychiatry-sacramento?FreeText%3aLast+name=singh\",\"uniqueKey\":\"https://physicians.ucdavis.edu/details/43422/manpreet-singh-child_and_adolescent_psychiatry-child_development-psychiatry-sacramento?FreeText%3ALast+name=singh\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:11.938Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://physicians.ucdavis.edu/details/43422/manpreet-singh-child_and_adolescent_psychiatry-child_development-psychiatry-sacramento?FreeText%3ALast+name=singh",
+	"url": "https://physicians.ucdavis.edu/details/43422/manpreet-singh-child_and_adolescent_psychiatry-child_development-psychiatry-sacramento?FreeText%3aLast+name=singh"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "VhR2K4fWFg6rbWJ",
+	"json": "{\"id\":\"VhR2K4fWFg6rbWJ\",\"url\":\"https://www.cdii.ca.gov/data-resources/\",\"loadedUrl\":\"https://www.cdii.ca.gov/data-resources/\",\"uniqueKey\":\"https://www.cdii.ca.gov/data-resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:28:33.678Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdii.ca.gov/data-resources",
+	"url": "https://www.cdii.ca.gov/data-resources/"
+}

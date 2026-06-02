@@ -1,0 +1,9 @@
+{
+	"id": "H5sIFWRUNH7AgHK",
+	"json": "{\"id\":\"H5sIFWRUNH7AgHK\",\"url\":\"https://scdd.ca.gov/pos-service-code/crisis-team-evaluation-and-behavior-intervention/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/crisis-team-evaluation-and-behavior-intervention/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/crisis-team-evaluation-and-behavior-intervention\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:58.479Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/pos-service-code/crisis-team-evaluation-and-behavior-intervention",
+	"url": "https://scdd.ca.gov/pos-service-code/crisis-team-evaluation-and-behavior-intervention/"
+}

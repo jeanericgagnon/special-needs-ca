@@ -1,0 +1,9 @@
+{
+	"id": "Xr5c8NWUUfj5Kc2",
+	"json": "{\"id\":\"Xr5c8NWUUfj5Kc2\",\"url\":\"https://www.hcd.ca.gov/planning-and-community-development/regional-housing-needs-allocation\",\"loadedUrl\":\"https://www.hcd.ca.gov/rhna\",\"uniqueKey\":\"https://www.hcd.ca.gov/planning-and-community-development/regional-housing-needs-allocation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:19:23.159Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.hcd.ca.gov/planning-and-community-development/regional-housing-needs-allocation",
+	"url": "https://www.hcd.ca.gov/planning-and-community-development/regional-housing-needs-allocation"
+}

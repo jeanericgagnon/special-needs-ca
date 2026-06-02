@@ -1,0 +1,9 @@
+{
+	"id": "y0wFP1erQaaET83",
+	"json": "{\"id\":\"y0wFP1erQaaET83\",\"url\":\"https://www.dds.ca.gov/services/work-services/service-providers-information/#main-content\",\"loadedUrl\":\"https://www.dds.ca.gov/services/work-services/service-providers-information/#main-content\",\"uniqueKey\":\"https://www.dds.ca.gov/services/work-services/service-providers-information\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:06:49.138Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/services/work-services/service-providers-information",
+	"url": "https://www.dds.ca.gov/services/work-services/service-providers-information/#main-content"
+}

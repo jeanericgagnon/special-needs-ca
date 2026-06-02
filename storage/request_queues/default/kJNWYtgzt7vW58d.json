@@ -1,0 +1,9 @@
+{
+	"id": "kJNWYtgzt7vW58d",
+	"json": "{\"id\":\"kJNWYtgzt7vW58d\",\"url\":\"https://health.ucdavis.edu/children/team/21766/frank-butera-pediatrics-general-pediatrics-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/children/team/21766/frank-butera-pediatrics-general-pediatrics-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/children/team/21766/frank-butera-pediatrics-general-pediatrics-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:10.339Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/children/team/21766/frank-butera-pediatrics-general-pediatrics-sacramento",
+	"url": "https://health.ucdavis.edu/children/team/21766/frank-butera-pediatrics-general-pediatrics-sacramento"
+}

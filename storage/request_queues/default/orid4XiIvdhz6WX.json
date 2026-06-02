@@ -1,0 +1,9 @@
+{
+	"id": "orid4XiIvdhz6WX",
+	"json": "{\"id\":\"orid4XiIvdhz6WX\",\"url\":\"https://health.ucdavis.edu/imaging-research/services/new-study\",\"loadedUrl\":\"https://health.ucdavis.edu/imaging-research/services/new-study\",\"uniqueKey\":\"https://health.ucdavis.edu/imaging-research/services/new-study\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:06:42.500Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/imaging-research/services/new-study",
+	"url": "https://health.ucdavis.edu/imaging-research/services/new-study"
+}

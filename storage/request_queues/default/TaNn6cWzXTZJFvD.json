@@ -1,0 +1,9 @@
+{
+	"id": "TaNn6cWzXTZJFvD",
+	"json": "{\"id\":\"TaNn6cWzXTZJFvD\",\"url\":\"https://health.ucdavis.edu/nursing/news/headlines/uc-davis-nursing-professor-awarded-125-million-training-grant/2024/08\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/news/headlines/uc-davis-nursing-professor-awarded-125-million-training-grant/2024/08\",\"uniqueKey\":\"https://health.ucdavis.edu/nursing/news/headlines/uc-davis-nursing-professor-awarded-125-million-training-grant/2024/08\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:30.604Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/nursing/news/headlines/uc-davis-nursing-professor-awarded-125-million-training-grant/2024/08",
+	"url": "https://health.ucdavis.edu/nursing/news/headlines/uc-davis-nursing-professor-awarded-125-million-training-grant/2024/08"
+}

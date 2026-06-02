@@ -1,0 +1,9 @@
+{
+	"id": "eTtYqXhA6EGMlW1",
+	"json": "{\"id\":\"eTtYqXhA6EGMlW1\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/32289/hazem-shamseddeen-robotic_surgery-surgery_-_gastrointestinal-surgery_-_general-surgery_-_robotic-sacramento?FreeText%3aLast+name=Shamseddeen\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/32289/hazem-shamseddeen-robotic_surgery-surgery_-_gastrointestinal-surgery_-_general-surgery_-_robotic-sacramento?FreeText%3aLast+name=Shamseddeen\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/32289/hazem-shamseddeen-robotic_surgery-surgery_-_gastrointestinal-surgery_-_general-surgery_-_robotic-sacramento?FreeText%3ALast+name=Shamseddeen\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:10.129Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/32289/hazem-shamseddeen-robotic_surgery-surgery_-_gastrointestinal-surgery_-_general-surgery_-_robotic-sacramento?FreeText%3ALast+name=Shamseddeen",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/32289/hazem-shamseddeen-robotic_surgery-surgery_-_gastrointestinal-surgery_-_general-surgery_-_robotic-sacramento?FreeText%3aLast+name=Shamseddeen"
+}

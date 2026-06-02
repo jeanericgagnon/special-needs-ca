@@ -1,0 +1,9 @@
+{
+	"id": "vPCOPOI9jnxF4PV",
+	"json": "{\"id\":\"vPCOPOI9jnxF4PV\",\"url\":\"https://beincharge.ucdavis.edu/presentpublish.php\",\"loadedUrl\":\"https://beincharge.ucdavis.edu/presentpublish.php\",\"uniqueKey\":\"https://beincharge.ucdavis.edu/presentpublish.php\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:21.042Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://beincharge.ucdavis.edu/presentpublish.php",
+	"url": "https://beincharge.ucdavis.edu/presentpublish.php"
+}

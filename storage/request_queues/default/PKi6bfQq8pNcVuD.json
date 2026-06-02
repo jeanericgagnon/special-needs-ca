@@ -1,0 +1,9 @@
+{
+	"id": "PKi6bfQq8pNcVuD",
+	"json": "{\"id\":\"PKi6bfQq8pNcVuD\",\"url\":\"https://www.cde.ca.gov/fg/sf/fr/budgetreleaseletter26.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=dff83440-8443-4257-a2fb-15c885e25dd5&ssb=20823299059&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Ffg%2Fsf%2Ffr%2Fbudgetreleaseletter26.asp&ssi=45b76b79-ctxv-4a80-b6c3-6125c5215fbf&ssk=botmanager_support@radware.com&ssm=50595181969165169136382728978448&ssn=067b08cd8587c9bea51336addccc4049ed0a233e07c5-7118-49f7-9dd6f7&sso=58d8c218-f341e8d588928f9d39d33a07acae5a86479a1c4b56d1cecc&ssp=10733772361780378004178035491252758&ssq=66934062741505093217126609720749394888505&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsIl9fdXptZiI6IjdmOTAwMDIzM2UwN2M1LTcxMTgtNDlmNy05MjE4LWYzNDFlOGQ1ODg5MjEtMTc4MDMyNjYwOTE4OTgwNjA5OC0wMDMyNzFhNTE5NGE4NGM5NWU2MTMiLCJ1em14IjoiN2Y5MDAwNTE1MDkxZDUtY2UzOS00OTM1LTg2NTUtZmFlNTI2MThhM2VjMS0xNzgwMzI2NjA5MTg5ODA2MDk4LWEyOWE4OGE4ZTVlNGIyNzkxMyJ9\",\"uniqueKey\":\"https://www.cde.ca.gov/fg/sf/fr/budgetreleaseletter26.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:23:35.375Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/fg/sf/fr/budgetreleaseletter26.asp",
+	"url": "https://www.cde.ca.gov/fg/sf/fr/budgetreleaseletter26.asp"
+}

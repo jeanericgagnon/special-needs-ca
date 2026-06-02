@@ -1,0 +1,9 @@
+{
+	"id": "OUn0DVLdpSp7Xdt",
+	"json": "{\"id\":\"OUn0DVLdpSp7Xdt\",\"url\":\"https://ltg.ca.gov/about-the-office-of-lt-governor/\",\"loadedUrl\":\"https://ltg.ca.gov/about-the-office-of-lt-governor/\",\"uniqueKey\":\"https://ltg.ca.gov/about-the-office-of-lt-governor\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:46.455Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://ltg.ca.gov/about-the-office-of-lt-governor",
+	"url": "https://ltg.ca.gov/about-the-office-of-lt-governor/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "bDp2a3Y2vf3po6p",
+	"json": "{\"id\":\"bDp2a3Y2vf3po6p\",\"url\":\"http://www.cdph.ca.gov/HealthInfo/discond/Documents/Week%2051%20-%20FINAL%20Report.pdf\",\"loadedUrl\":\"https://www.cdph.ca.gov/Pages/PageNotFoundError.aspx\",\"uniqueKey\":\"http://www.cdph.ca.gov/HealthInfo/discond/Documents/Week%2051%20-%20FINAL%20Report.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:17:13.715Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.cdph.ca.gov/HealthInfo/discond/Documents/Week%2051%20-%20FINAL%20Report.pdf",
+	"url": "http://www.cdph.ca.gov/HealthInfo/discond/Documents/Week%2051%20-%20FINAL%20Report.pdf"
+}

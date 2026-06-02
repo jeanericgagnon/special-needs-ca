@@ -1,0 +1,9 @@
+{
+	"id": "3NAFBlGQpREUeeN",
+	"json": "{\"id\":\"3NAFBlGQpREUeeN\",\"url\":\"https://cdss.ca.gov/inforesources/CDSS-Programs/Civil-Rights\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/civil-rights\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/CDSS-Programs/Civil-Rights\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:20.710Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/CDSS-Programs/Civil-Rights",
+	"url": "https://cdss.ca.gov/inforesources/CDSS-Programs/Civil-Rights"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "hw43QwUYPBXi5jb",
+	"json": "{\"id\":\"hw43QwUYPBXi5jb\",\"url\":\"https://rarediseases.org/rare-diseases/autoimmune-blistering-diseases/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/autoimmune-blistering-diseases/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/autoimmune-blistering-diseases\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:14:57.798Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/rare-diseases/autoimmune-blistering-diseases",
+	"url": "https://rarediseases.org/rare-diseases/autoimmune-blistering-diseases/"
+}

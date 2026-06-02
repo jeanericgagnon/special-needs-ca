@@ -1,0 +1,9 @@
+{
+	"id": "zNWHjTySbI1TVrX",
+	"json": "{\"id\":\"zNWHjTySbI1TVrX\",\"url\":\"http://www2.cde.ca.gov/cmd/export.aspx?rpt=listbycounty\",\"loadedUrl\":\"https://www2.cde.ca.gov/cmd/viewdata.aspx\",\"uniqueKey\":\"http://www2.cde.ca.gov/cmd/export.aspx?rpt=listbycounty\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:28.930Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www2.cde.ca.gov/cmd/export.aspx?rpt=listbycounty",
+	"url": "http://www2.cde.ca.gov/cmd/export.aspx?rpt=listbycounty"
+}

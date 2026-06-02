@@ -1,0 +1,9 @@
+{
+	"id": "jQfLOogX03ZQymb",
+	"json": "{\"id\":\"jQfLOogX03ZQymb\",\"url\":\"https://scdd.ca.gov/sdp-best-practices-platform/Feria%20de%20Autodeterminaci%C3%B3n%202025\",\"loadedUrl\":\"https://scdd.ca.gov/sdp-best-practices-platform/Feria%20de%20Autodeterminaci%C3%B3n%202025\",\"uniqueKey\":\"https://scdd.ca.gov/sdp-best-practices-platform/Feria%20de%20Autodeterminaci%C3%B3n%202025\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:41.514Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/sdp-best-practices-platform/Feria%20de%20Autodeterminaci%C3%B3n%202025",
+	"url": "https://scdd.ca.gov/sdp-best-practices-platform/Feria%20de%20Autodeterminaci%C3%B3n%202025"
+}

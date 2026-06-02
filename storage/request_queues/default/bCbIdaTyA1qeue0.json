@@ -1,0 +1,9 @@
+{
+	"id": "bCbIdaTyA1qeue0",
+	"json": "{\"id\":\"bCbIdaTyA1qeue0\",\"url\":\"https://opr.ca.gov/about/staff/director-bio.html\",\"loadedUrl\":\"https://www.lci.ca.gov/about/staff/director-bio/\",\"uniqueKey\":\"https://opr.ca.gov/about/staff/director-bio.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:11.622Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://opr.ca.gov/about/staff/director-bio.html",
+	"url": "https://opr.ca.gov/about/staff/director-bio.html"
+}

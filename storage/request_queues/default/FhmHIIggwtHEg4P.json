@@ -1,0 +1,9 @@
+{
+	"id": "FhmHIIggwtHEg4P",
+	"json": "{\"id\":\"FhmHIIggwtHEg4P\",\"url\":\"https://health.ucdavis.edu/nursing/news/headlines/high-school-and-college-students-find-their-path-to-nursing/2025/07\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/news/headlines/high-school-and-college-students-find-their-path-to-nursing/2025/07\",\"uniqueKey\":\"https://health.ucdavis.edu/nursing/news/headlines/high-school-and-college-students-find-their-path-to-nursing/2025/07\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:21.049Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/nursing/news/headlines/high-school-and-college-students-find-their-path-to-nursing/2025/07",
+	"url": "https://health.ucdavis.edu/nursing/news/headlines/high-school-and-college-students-find-their-path-to-nursing/2025/07"
+}

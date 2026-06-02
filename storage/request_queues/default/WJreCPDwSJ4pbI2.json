@@ -1,0 +1,9 @@
+{
+	"id": "WJreCPDwSJ4pbI2",
+	"json": "{\"id\":\"WJreCPDwSJ4pbI2\",\"url\":\"https://www.vetmed.ucdavis.edu/giving\",\"loadedUrl\":\"https://www.vetmed.ucdavis.edu/giving\",\"uniqueKey\":\"https://www.vetmed.ucdavis.edu/giving\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:14.418Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.vetmed.ucdavis.edu/giving",
+	"url": "https://www.vetmed.ucdavis.edu/giving"
+}

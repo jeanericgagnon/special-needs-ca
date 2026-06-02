@@ -1,0 +1,9 @@
+{
+	"id": "bOoRqAF9yaIBOOi",
+	"json": "{\"id\":\"bOoRqAF9yaIBOOi\",\"url\":\"https://calable.ca.gov/api/v1/@apostrophecms/page/cldvysvty5sub0jns02l8de8k:en:published/locale/es\",\"loadedUrl\":\"https://calable.ca.gov/es/recursos/videos\",\"uniqueKey\":\"https://calable.ca.gov/api/v1/@apostrophecms/page/cldvysvty5sub0jns02l8de8k:en:published/locale/es\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:46.402Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://calable.ca.gov/api/v1/@apostrophecms/page/cldvysvty5sub0jns02l8de8k:en:published/locale/es",
+	"url": "https://calable.ca.gov/api/v1/@apostrophecms/page/cldvysvty5sub0jns02l8de8k:en:published/locale/es"
+}

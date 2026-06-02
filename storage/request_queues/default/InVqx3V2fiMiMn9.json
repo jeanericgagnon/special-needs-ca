@@ -1,0 +1,9 @@
+{
+	"id": "InVqx3V2fiMiMn9",
+	"json": "{\"id\":\"InVqx3V2fiMiMn9\",\"url\":\"https://www.mentalhealth.ca.gov/es/\",\"loadedUrl\":\"https://www.mentalhealth.ca.gov/es/\",\"uniqueKey\":\"https://www.mentalhealth.ca.gov/es\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:47.350Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.mentalhealth.ca.gov/es",
+	"url": "https://www.mentalhealth.ca.gov/es/"
+}

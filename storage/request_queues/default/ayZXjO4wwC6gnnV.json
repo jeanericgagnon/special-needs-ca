@@ -1,0 +1,9 @@
+{
+	"id": "ayZXjO4wwC6gnnV",
+	"json": "{\"id\":\"ayZXjO4wwC6gnnV\",\"url\":\"https://cybhi.chhs.ca.gov/\",\"loadedUrl\":\"https://cybhi.chhs.ca.gov/\",\"uniqueKey\":\"https://cybhi.chhs.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:43.022Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cybhi.chhs.ca.gov",
+	"url": "https://cybhi.chhs.ca.gov/"
+}

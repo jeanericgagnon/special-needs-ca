@@ -1,0 +1,9 @@
+{
+	"id": "qOzNEHb7949lLLT",
+	"json": "{\"id\":\"qOzNEHb7949lLLT\",\"url\":\"https://www.cde.ca.gov/re/di/ws/ap/default.aspx?topic=qs\",\"loadedUrl\":\"https://www.cde.ca.gov/re/di/ws/ap/default.aspx?topic=qs\",\"uniqueKey\":\"https://www.cde.ca.gov/re/di/ws/ap/default.aspx?topic=qs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:29.001Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/re/di/ws/ap/default.aspx?topic=qs",
+	"url": "https://www.cde.ca.gov/re/di/ws/ap/default.aspx?topic=qs"
+}

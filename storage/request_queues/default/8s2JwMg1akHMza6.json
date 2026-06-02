@@ -1,0 +1,9 @@
+{
+	"id": "8s2JwMg1akHMza6",
+	"json": "{\"id\":\"8s2JwMg1akHMza6\",\"url\":\"https://financeandbusiness.ucdavis.edu/systems/glacier\",\"loadedUrl\":\"https://financeandbusiness.ucdavis.edu/systems/glacier\",\"uniqueKey\":\"https://financeandbusiness.ucdavis.edu/systems/glacier\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:53.805Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://financeandbusiness.ucdavis.edu/systems/glacier",
+	"url": "https://financeandbusiness.ucdavis.edu/systems/glacier"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "bmv4zoZ61iffhNJ",
+	"json": "{\"id\":\"bmv4zoZ61iffhNJ\",\"url\":\"https://health.ucdavis.edu/mind-institute/research/children-autism-risk/recharge-staff\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/research/children-autism-risk/recharge-staff\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/research/children-autism-risk/recharge-staff\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:26.050Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mind-institute/research/children-autism-risk/recharge-staff",
+	"url": "https://health.ucdavis.edu/mind-institute/research/children-autism-risk/recharge-staff"
+}

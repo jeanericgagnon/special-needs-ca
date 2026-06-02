@@ -1,0 +1,9 @@
+{
+	"id": "IuV8hdLLZglMt8u",
+	"json": "{\"id\":\"IuV8hdLLZglMt8u\",\"url\":\"https://www.dhcs.ca.gov/services/MH/Pages/mh-ombudsman.aspx\",\"loadedUrl\":\"https://www.dhcs.ca.gov/services/MH/Pages/mh-ombudsman.aspx\",\"uniqueKey\":\"https://www.dhcs.ca.gov/services/MH/Pages/mh-ombudsman.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:15:20.015Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dhcs.ca.gov/services/MH/Pages/mh-ombudsman.aspx",
+	"url": "https://www.dhcs.ca.gov/services/MH/Pages/mh-ombudsman.aspx"
+}

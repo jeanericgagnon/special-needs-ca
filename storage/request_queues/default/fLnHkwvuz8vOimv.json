@@ -1,0 +1,9 @@
+{
+	"id": "fLnHkwvuz8vOimv",
+	"json": "{\"id\":\"fLnHkwvuz8vOimv\",\"url\":\"https://health.ucdavis.edu/internal-medicine/pulmonary/our-services/chronic-obstructive-pulmonary-disease-copd\",\"loadedUrl\":\"https://health.ucdavis.edu/internal-medicine/pulmonary/our-services/chronic-obstructive-pulmonary-disease-copd\",\"uniqueKey\":\"https://health.ucdavis.edu/internal-medicine/pulmonary/our-services/chronic-obstructive-pulmonary-disease-copd\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:42.089Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/internal-medicine/pulmonary/our-services/chronic-obstructive-pulmonary-disease-copd",
+	"url": "https://health.ucdavis.edu/internal-medicine/pulmonary/our-services/chronic-obstructive-pulmonary-disease-copd"
+}

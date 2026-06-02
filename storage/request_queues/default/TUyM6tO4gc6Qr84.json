@@ -1,0 +1,9 @@
+{
+	"id": "TUyM6tO4gc6Qr84",
+	"json": "{\"id\":\"TUyM6tO4gc6Qr84\",\"url\":\"https://health.ucdavis.edu/children/team/22044/stephanie-crossen-pediatric-endocrinology-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/children/team/22044/stephanie-crossen-pediatric-endocrinology-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/children/team/22044/stephanie-crossen-pediatric-endocrinology-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:12.266Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/children/team/22044/stephanie-crossen-pediatric-endocrinology-sacramento",
+	"url": "https://health.ucdavis.edu/children/team/22044/stephanie-crossen-pediatric-endocrinology-sacramento"
+}

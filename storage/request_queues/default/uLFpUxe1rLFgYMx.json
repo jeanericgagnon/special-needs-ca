@@ -1,0 +1,9 @@
+{
+	"id": "uLFpUxe1rLFgYMx",
+	"json": "{\"id\":\"uLFpUxe1rLFgYMx\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CTCB/Pages/CessationServicesAndResources.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CTCB/Pages/CessationServicesAndResources.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CTCB/Pages/CessationServicesAndResources.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:02:07.496Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CTCB/Pages/CessationServicesAndResources.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CTCB/Pages/CessationServicesAndResources.aspx"
+}

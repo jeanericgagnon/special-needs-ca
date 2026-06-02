@@ -1,0 +1,9 @@
+{
+	"id": "5QetVsvsNcRQ3yU",
+	"json": "{\"id\":\"5QetVsvsNcRQ3yU\",\"url\":\"https://alumni.ucdavis.edu/alumni-business-directory\",\"loadedUrl\":\"https://alumni.ucdavis.edu/alumni-business-directory\",\"uniqueKey\":\"https://alumni.ucdavis.edu/alumni-business-directory\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:06.280Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://alumni.ucdavis.edu/alumni-business-directory",
+	"url": "https://alumni.ucdavis.edu/alumni-business-directory"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "4eKOm0xmWNEshF5",
+	"json": "{\"id\":\"4eKOm0xmWNEshF5\",\"url\":\"https://www.dhcs.ca.gov/individuals/Pages/Perinatal-Services.aspx\",\"loadedUrl\":\"https://www.dhcs.ca.gov/individuals/Pages/Perinatal-Services.aspx\",\"uniqueKey\":\"https://www.dhcs.ca.gov/individuals/Pages/Perinatal-Services.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:07:14.645Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dhcs.ca.gov/individuals/Pages/Perinatal-Services.aspx",
+	"url": "https://www.dhcs.ca.gov/individuals/Pages/Perinatal-Services.aspx"
+}

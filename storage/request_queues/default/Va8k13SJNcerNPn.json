@@ -1,0 +1,9 @@
+{
+	"id": "Va8k13SJNcerNPn",
+	"json": "{\"id\":\"Va8k13SJNcerNPn\",\"url\":\"https://cases.aggieservice.ucdavis.edu/192\",\"loadedUrl\":\"https://cases.aggieservice.ucdavis.edu/192\",\"uniqueKey\":\"https://cases.aggieservice.ucdavis.edu/192\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:38.173Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cases.aggieservice.ucdavis.edu/192",
+	"url": "https://cases.aggieservice.ucdavis.edu/192"
+}

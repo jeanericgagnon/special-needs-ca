@@ -1,0 +1,9 @@
+{
+	"id": "Wg11taeuceCa85M",
+	"json": "{\"id\":\"Wg11taeuceCa85M\",\"url\":\"http://cdss.ca.gov/child-care-and-nutrition/data-statistics\",\"loadedUrl\":\"https://cdss.ca.gov/child-care-and-nutrition/data-statistics\",\"uniqueKey\":\"http://cdss.ca.gov/child-care-and-nutrition/data-statistics\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:58:26.584Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://cdss.ca.gov/child-care-and-nutrition/data-statistics",
+	"url": "http://cdss.ca.gov/child-care-and-nutrition/data-statistics"
+}

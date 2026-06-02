@@ -1,0 +1,9 @@
+{
+	"id": "bxzaVpMAvJMtxkg",
+	"json": "{\"id\":\"bxzaVpMAvJMtxkg\",\"url\":\"https://yellowcluster.ucdavis.edu/cash-advances\",\"loadedUrl\":\"https://yellowcluster.ucdavis.edu/cash-advances\",\"uniqueKey\":\"https://yellowcluster.ucdavis.edu/cash-advances\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:14.748Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://yellowcluster.ucdavis.edu/cash-advances",
+	"url": "https://yellowcluster.ucdavis.edu/cash-advances"
+}

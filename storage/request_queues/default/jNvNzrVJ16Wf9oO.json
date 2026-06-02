@@ -1,0 +1,9 @@
+{
+	"id": "jNvNzrVJ16Wf9oO",
+	"json": "{\"id\":\"jNvNzrVJ16Wf9oO\",\"url\":\"https://apps.cdph.ca.gov/AutoForm2/default.aspx?af=2058\",\"loadedUrl\":\"https://apps.cdph.ca.gov/AutoForm2/Page/SecureCode.aspx\",\"uniqueKey\":\"https://apps.cdph.ca.gov/AutoForm2/default.aspx?af=2058\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T18:06:59.840Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://apps.cdph.ca.gov/AutoForm2/default.aspx?af=2058",
+	"url": "https://apps.cdph.ca.gov/AutoForm2/default.aspx?af=2058"
+}

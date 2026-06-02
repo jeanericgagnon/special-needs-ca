@@ -1,0 +1,9 @@
+{
+	"id": "FonjM7KPPU8MeSr",
+	"json": "{\"id\":\"FonjM7KPPU8MeSr\",\"url\":\"https://health.ucdavis.edu/mind-institute/research/early-detection/tele-assessment\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/research/early-detection/tele-assessment\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/research/early-detection/tele-assessment\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:26.618Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mind-institute/research/early-detection/tele-assessment",
+	"url": "https://health.ucdavis.edu/mind-institute/research/early-detection/tele-assessment"
+}

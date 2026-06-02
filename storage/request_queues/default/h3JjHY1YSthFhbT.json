@@ -1,0 +1,9 @@
+{
+	"id": "h3JjHY1YSthFhbT",
+	"json": "{\"id\":\"h3JjHY1YSthFhbT\",\"url\":\"https://catalog.library.ca.gov/\",\"loadedUrl\":\"https://csl.primo.exlibrisgroup.com/discovery/search?sortby=rank&vid=01CSL_INST:CSL&lang=en\",\"uniqueKey\":\"https://catalog.library.ca.gov\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:39:17.555Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://catalog.library.ca.gov",
+	"url": "https://catalog.library.ca.gov/"
+}

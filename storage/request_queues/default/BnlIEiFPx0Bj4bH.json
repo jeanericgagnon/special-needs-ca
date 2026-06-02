@@ -1,0 +1,9 @@
+{
+	"id": "BnlIEiFPx0Bj4bH",
+	"json": "{\"id\":\"BnlIEiFPx0Bj4bH\",\"url\":\"https://www.sco.ca.gov/ppsd_cpod.html\",\"loadedUrl\":\"https://www.sco.ca.gov/ppsd_cpod.html\",\"uniqueKey\":\"https://www.sco.ca.gov/ppsd_cpod.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:59.493Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.sco.ca.gov/ppsd_cpod.html",
+	"url": "https://www.sco.ca.gov/ppsd_cpod.html"
+}

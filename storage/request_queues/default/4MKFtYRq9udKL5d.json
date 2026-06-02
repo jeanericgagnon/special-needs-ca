@@ -1,0 +1,9 @@
+{
+	"id": "4MKFtYRq9udKL5d",
+	"json": "{\"id\":\"4MKFtYRq9udKL5d\",\"url\":\"https://genomecenter.ucdavis.edu/jobs\",\"loadedUrl\":\"https://genomecenter.ucdavis.edu/jobs\",\"uniqueKey\":\"https://genomecenter.ucdavis.edu/jobs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:11.259Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://genomecenter.ucdavis.edu/jobs",
+	"url": "https://genomecenter.ucdavis.edu/jobs"
+}

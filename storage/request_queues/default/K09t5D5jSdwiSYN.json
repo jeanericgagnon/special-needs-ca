@@ -1,0 +1,9 @@
+{
+	"id": "K09t5D5jSdwiSYN",
+	"json": "{\"id\":\"K09t5D5jSdwiSYN\",\"url\":\"https://www.dhcs.ca.gov/provgovpart/Documents/PAVE_Project_for_Provider_Enrollment_Division/Provider-Enrollment-Contact-List.pdf\",\"loadedUrl\":\"https://www.dhcs.ca.gov/file/provider-enrollment-contact-list/\",\"uniqueKey\":\"https://www.dhcs.ca.gov/provgovpart/Documents/PAVE_Project_for_Provider_Enrollment_Division/Provider-Enrollment-Contact-List.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T17:47:37.055Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dhcs.ca.gov/provgovpart/Documents/PAVE_Project_for_Provider_Enrollment_Division/Provider-Enrollment-Contact-List.pdf",
+	"url": "https://www.dhcs.ca.gov/provgovpart/Documents/PAVE_Project_for_Provider_Enrollment_Division/Provider-Enrollment-Contact-List.pdf"
+}

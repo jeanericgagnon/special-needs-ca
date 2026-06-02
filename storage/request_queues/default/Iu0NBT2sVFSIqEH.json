@@ -1,0 +1,9 @@
+{
+	"id": "Iu0NBT2sVFSIqEH",
+	"json": "{\"id\":\"Iu0NBT2sVFSIqEH\",\"url\":\"https://rarediseases.org/organizations/child-neurology-foundation/\",\"loadedUrl\":\"https://rarediseases.org/organizations/child-neurology-foundation/\",\"uniqueKey\":\"https://rarediseases.org/organizations/child-neurology-foundation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:12:24.202Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/organizations/child-neurology-foundation",
+	"url": "https://rarediseases.org/organizations/child-neurology-foundation/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "6OkmP6wmzxON41B",
+	"json": "{\"id\":\"6OkmP6wmzxON41B\",\"url\":\"https://acms.dss.ca.gov/\",\"loadedUrl\":\"https://acms.dss.ca.gov/acms/login.request.do\",\"uniqueKey\":\"https://acms.dss.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:32.816Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://acms.dss.ca.gov",
+	"url": "https://acms.dss.ca.gov/"
+}

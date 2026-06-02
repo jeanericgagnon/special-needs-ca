@@ -1,0 +1,9 @@
+{
+	"id": "4sWcI6hAELQZPiw",
+	"json": "{\"id\":\"4sWcI6hAELQZPiw\",\"url\":\"https://www.cde.ca.gov/sp/cd/op/ehsccpgrant.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/cd/op/ehsccpgrant.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/cd/op/ehsccpgrant.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:25:28.254Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/sp/cd/op/ehsccpgrant.asp",
+	"url": "https://www.cde.ca.gov/sp/cd/op/ehsccpgrant.asp"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "l3Trp0US1r32oel",
+	"json": "{\"id\":\"l3Trp0US1r32oel\",\"url\":\"https://health.ucdavis.edu/news/headlines/4-million-research-program-seeks-therapy-for-rare-genetic-condition-adnp-syndrome/2022/03\",\"loadedUrl\":\"https://health.ucdavis.edu/news/headlines/4-million-research-program-seeks-therapy-for-rare-genetic-condition-adnp-syndrome/2022/03\",\"uniqueKey\":\"https://health.ucdavis.edu/news/headlines/4-million-research-program-seeks-therapy-for-rare-genetic-condition-adnp-syndrome/2022/03\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:53.553Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/news/headlines/4-million-research-program-seeks-therapy-for-rare-genetic-condition-adnp-syndrome/2022/03",
+	"url": "https://health.ucdavis.edu/news/headlines/4-million-research-program-seeks-therapy-for-rare-genetic-condition-adnp-syndrome/2022/03"
+}

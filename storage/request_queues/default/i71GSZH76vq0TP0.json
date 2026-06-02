@@ -1,0 +1,9 @@
+{
+	"id": "i71GSZH76vq0TP0",
+	"json": "{\"id\":\"i71GSZH76vq0TP0\",\"url\":\"https://www.dds.ca.gov/initiatives/lois/\",\"loadedUrl\":\"https://www.dds.ca.gov/initiatives/lois/\",\"uniqueKey\":\"https://www.dds.ca.gov/initiatives/lois\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:24.534Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/initiatives/lois",
+	"url": "https://www.dds.ca.gov/initiatives/lois/"
+}

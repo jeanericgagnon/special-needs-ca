@@ -1,0 +1,9 @@
+{
+	"id": "GYW99DE6oReXwvT",
+	"json": "{\"id\":\"GYW99DE6oReXwvT\",\"url\":\"https://www.caloes.ca.gov/cal-oes/director/\",\"loadedUrl\":\"https://www.caloes.ca.gov/cal-oes/director/\",\"uniqueKey\":\"https://www.caloes.ca.gov/cal-oes/director\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:10.831Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.caloes.ca.gov/cal-oes/director",
+	"url": "https://www.caloes.ca.gov/cal-oes/director/"
+}

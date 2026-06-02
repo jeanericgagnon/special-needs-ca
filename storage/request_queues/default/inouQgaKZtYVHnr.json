@@ -1,0 +1,9 @@
+{
+	"id": "inouQgaKZtYVHnr",
+	"json": "{\"id\":\"inouQgaKZtYVHnr\",\"url\":\"https://neuroscience.ucdavis.edu/tags/uc-davis-conte-center\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/tags/uc-davis-conte-center\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/tags/uc-davis-conte-center\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:00.668Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://neuroscience.ucdavis.edu/tags/uc-davis-conte-center",
+	"url": "https://neuroscience.ucdavis.edu/tags/uc-davis-conte-center"
+}

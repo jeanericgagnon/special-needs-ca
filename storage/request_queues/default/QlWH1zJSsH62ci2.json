@@ -1,0 +1,9 @@
+{
+	"id": "QlWH1zJSsH62ci2",
+	"json": "{\"id\":\"QlWH1zJSsH62ci2\",\"url\":\"https://health.ucdavis.edu/medical-school/community-partnership/commitment-to-underresourced-communities\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-school/community-partnership/commitment-to-underresourced-communities\",\"uniqueKey\":\"https://health.ucdavis.edu/medical-school/community-partnership/commitment-to-underresourced-communities\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:17.166Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/medical-school/community-partnership/commitment-to-underresourced-communities",
+	"url": "https://health.ucdavis.edu/medical-school/community-partnership/commitment-to-underresourced-communities"
+}

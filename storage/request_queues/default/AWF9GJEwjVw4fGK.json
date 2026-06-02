@@ -1,0 +1,9 @@
+{
+	"id": "AWF9GJEwjVw4fGK",
+	"json": "{\"id\":\"AWF9GJEwjVw4fGK\",\"url\":\"https://www.cde.ca.gov/sp/cd/re/cddeceplan.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/cd/re/cddeceplan.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/cd/re/cddeceplan.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:25:29.901Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/sp/cd/re/cddeceplan.asp",
+	"url": "https://www.cde.ca.gov/sp/cd/re/cddeceplan.asp"
+}

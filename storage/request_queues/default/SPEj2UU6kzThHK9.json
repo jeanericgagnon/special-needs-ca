@@ -1,0 +1,9 @@
+{
+	"id": "SPEj2UU6kzThHK9",
+	"json": "{\"id\":\"SPEj2UU6kzThHK9\",\"url\":\"https://www.cde.ca.gov/ls/ai/sb/sarbhbk.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ls/ai/sb/sarbhbk.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ls/ai/sb/sarbhbk.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:04.420Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ls/ai/sb/sarbhbk.asp",
+	"url": "https://www.cde.ca.gov/ls/ai/sb/sarbhbk.asp"
+}

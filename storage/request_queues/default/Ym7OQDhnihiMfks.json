@@ -1,0 +1,9 @@
+{
+	"id": "Ym7OQDhnihiMfks",
+	"json": "{\"id\":\"Ym7OQDhnihiMfks\",\"url\":\"https://ucp.org/ucp-statement-on-medicaid-fraud-protecting-services-for-people-with-disabilities/\",\"loadedUrl\":\"https://ucp.org/ucp-statement-on-medicaid-fraud-protecting-services-for-people-with-disabilities/\",\"uniqueKey\":\"https://ucp.org/ucp-statement-on-medicaid-fraud-protecting-services-for-people-with-disabilities\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:18.202Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://ucp.org/ucp-statement-on-medicaid-fraud-protecting-services-for-people-with-disabilities",
+	"url": "https://ucp.org/ucp-statement-on-medicaid-fraud-protecting-services-for-people-with-disabilities/"
+}

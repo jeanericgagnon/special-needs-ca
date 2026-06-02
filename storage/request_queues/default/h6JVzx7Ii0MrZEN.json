@@ -1,0 +1,9 @@
+{
+	"id": "h6JVzx7Ii0MrZEN",
+	"json": "{\"id\":\"h6JVzx7Ii0MrZEN\",\"url\":\"https://www.cde.ca.gov/ci/gs/em/\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/gs/em/\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/gs/em\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:25.667Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ci/gs/em",
+	"url": "https://www.cde.ca.gov/ci/gs/em/"
+}

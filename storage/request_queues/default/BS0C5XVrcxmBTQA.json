@@ -1,0 +1,9 @@
+{
+	"id": "BS0C5XVrcxmBTQA",
+	"json": "{\"id\":\"BS0C5XVrcxmBTQA\",\"url\":\"https://cnprc.ucdavis.edu/wildfires-and-human-health\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/wildfires-and-human-health\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/wildfires-and-human-health\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:12.701Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cnprc.ucdavis.edu/wildfires-and-human-health",
+	"url": "https://cnprc.ucdavis.edu/wildfires-and-human-health"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "JrKRyJAXmh5okJp",
+	"json": "{\"id\":\"JrKRyJAXmh5okJp\",\"url\":\"https://www.auditor.ca.gov/eligibility-list-disclosures/\",\"loadedUrl\":\"https://www.auditor.ca.gov/eligibility-list-disclosures/\",\"uniqueKey\":\"https://www.auditor.ca.gov/eligibility-list-disclosures\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:05:22.662Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.auditor.ca.gov/eligibility-list-disclosures",
+	"url": "https://www.auditor.ca.gov/eligibility-list-disclosures/"
+}

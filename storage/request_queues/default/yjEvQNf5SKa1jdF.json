@@ -1,0 +1,9 @@
+{
+	"id": "yjEvQNf5SKa1jdF",
+	"json": "{\"id\":\"yjEvQNf5SKa1jdF\",\"url\":\"https://give.ucdavis.edu/MSUR/SURGIFT\",\"loadedUrl\":\"https://give.ucdavis.edu/MSUR/SURGIFT\",\"uniqueKey\":\"https://give.ucdavis.edu/MSUR/SURGIFT\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:01.894Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/MSUR/SURGIFT",
+	"url": "https://give.ucdavis.edu/MSUR/SURGIFT"
+}

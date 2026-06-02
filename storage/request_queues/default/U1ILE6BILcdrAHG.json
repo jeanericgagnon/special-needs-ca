@@ -1,0 +1,9 @@
+{
+	"id": "U1ILE6BILcdrAHG",
+	"json": "{\"id\":\"U1ILE6BILcdrAHG\",\"url\":\"https://www.ldaca.org/contact/\",\"loadedUrl\":\"https://www.ldaca.org/contact/\",\"uniqueKey\":\"https://www.ldaca.org/contact\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:16.965Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ldaca.org/contact",
+	"url": "https://www.ldaca.org/contact/"
+}

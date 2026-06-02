@@ -1,0 +1,9 @@
+{
+	"id": "v8d8r4OJ74c7OE5",
+	"json": "{\"id\":\"v8d8r4OJ74c7OE5\",\"url\":\"https://www.chhs.ca.gov/blog/2021/03/15/alert-important-change-to-public-charge-rule/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2021/03/15/alert-important-change-to-public-charge-rule/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2021/03/15/alert-important-change-to-public-charge-rule\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:57.085Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chhs.ca.gov/blog/2021/03/15/alert-important-change-to-public-charge-rule",
+	"url": "https://www.chhs.ca.gov/blog/2021/03/15/alert-important-change-to-public-charge-rule/"
+}

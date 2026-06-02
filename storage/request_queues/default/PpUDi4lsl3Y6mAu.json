@@ -1,0 +1,9 @@
+{
+	"id": "PpUDi4lsl3Y6mAu",
+	"json": "{\"id\":\"PpUDi4lsl3Y6mAu\",\"url\":\"https://health.ucdavis.edu/cancer/specialties/hereditary-cancer\",\"loadedUrl\":\"https://health.ucdavis.edu/cancer/specialties/hereditary-cancer\",\"uniqueKey\":\"https://health.ucdavis.edu/cancer/specialties/hereditary-cancer\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:13.006Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/cancer/specialties/hereditary-cancer",
+	"url": "https://health.ucdavis.edu/cancer/specialties/hereditary-cancer"
+}

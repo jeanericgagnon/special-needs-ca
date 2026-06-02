@@ -1,0 +1,9 @@
+{
+	"id": "2E6mspDKZgv6iLw",
+	"json": "{\"id\":\"2E6mspDKZgv6iLw\",\"url\":\"https://www.ssa.gov/employer/verifySSN.htm\",\"loadedUrl\":\"https://www.ssa.gov/employer/verifySSN.htm\",\"uniqueKey\":\"https://www.ssa.gov/employer/verifySSN.htm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:50.152Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ssa.gov/employer/verifySSN.htm",
+	"url": "https://www.ssa.gov/employer/verifySSN.htm"
+}

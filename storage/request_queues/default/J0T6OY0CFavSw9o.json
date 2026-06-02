@@ -1,0 +1,9 @@
+{
+	"id": "J0T6OY0CFavSw9o",
+	"json": "{\"id\":\"J0T6OY0CFavSw9o\",\"url\":\"https://www.cde.ca.gov/ci/pl/region5.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=5666bb29-7efb-402d-a884-a74473b709ff&ssb=24972286213&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fci%2Fpl%2Fregion5.asp&ssi=f52c0fd8-ctxv-4726-94f3-e9211697b3d8&ssk=botmanager_support@radware.com&ssm=77217714328445484105166564783716&ssn=a65e3d1327b673cf6bc3959051c1bc53f69b3fd15100-120d-4992-b8931f&sso=678414cd-42cadbc69862c678ef015874e9ceca1d91c78073ded158ae&ssp=66753009591780320498178036294891718&ssq=41023335615372867281556153756128348226788&ssr=MTcyLjU2LjI0My4xOTM=&sst=&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2Y5MDAwOGU1ODAzMGQtZGZlZi00ODRmLTlhZWEtYWQ2ZmVkNDE4ZTI0MS0xNzgwMzU2MTUzODI4MC1kMTdkNjk3ZWI0MWIxNzU2MTAiLCJyZCI6ImNhLmdvdiIsIl9fdXptZiI6IjdmOTAwMDNmZDE1MTAwLTEyMGQtNDk5Mi1iNGNkLTQyY2FkYmM2OTg2MjEtMTc4MDM1NjE1MzgyODAtMDAzYTAyMjY4ZWIyZGM1OGNmNzEwIn0=\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/pl/region5.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T23:22:34.305Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ci/pl/region5.asp",
+	"url": "https://www.cde.ca.gov/ci/pl/region5.asp"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "oxTIwxlNw2Z0y2e",
+	"json": "{\"id\":\"oxTIwxlNw2Z0y2e\",\"url\":\"https://health.ucdavis.edu/cancer/patients-visitors/faqs\",\"loadedUrl\":\"https://health.ucdavis.edu/cancer/patients-visitors/faqs\",\"uniqueKey\":\"https://health.ucdavis.edu/cancer/patients-visitors/faqs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:14.549Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/cancer/patients-visitors/faqs",
+	"url": "https://health.ucdavis.edu/cancer/patients-visitors/faqs"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "Ai8M1mHBd8hllQZ",
+	"json": "{\"id\":\"Ai8M1mHBd8hllQZ\",\"url\":\"https://www.cde.ca.gov/sp/cd/ce/upkmixeddelivery.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/cd/ce/upkmixeddelivery.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/cd/ce/upkmixeddelivery.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:13:41.020Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/sp/cd/ce/upkmixeddelivery.asp",
+	"url": "https://www.cde.ca.gov/sp/cd/ce/upkmixeddelivery.asp"
+}

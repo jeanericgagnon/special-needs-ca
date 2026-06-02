@@ -1,0 +1,9 @@
+{
+	"id": "txIP2R6i8wq9dHF",
+	"json": "{\"id\":\"txIP2R6i8wq9dHF\",\"url\":\"https://oag.ca.gov/careers/aboutus\",\"loadedUrl\":\"https://oag.ca.gov/careers/aboutus\",\"uniqueKey\":\"https://oag.ca.gov/careers/aboutus\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:48.552Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://oag.ca.gov/careers/aboutus",
+	"url": "https://oag.ca.gov/careers/aboutus"
+}

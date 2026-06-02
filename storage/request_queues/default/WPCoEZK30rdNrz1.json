@@ -1,0 +1,9 @@
+{
+	"id": "WPCoEZK30rdNrz1",
+	"json": "{\"id\":\"WPCoEZK30rdNrz1\",\"url\":\"https://www.ctc.ca.gov/commission/newsroom/stories/ca-teach-leverage-linguistic-skills/\",\"loadedUrl\":\"https://www.ctc.ca.gov/commission/newsroom/stories/ca-teach-leverage-linguistic-skills/\",\"uniqueKey\":\"https://www.ctc.ca.gov/commission/newsroom/stories/ca-teach-leverage-linguistic-skills\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:56.024Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ctc.ca.gov/commission/newsroom/stories/ca-teach-leverage-linguistic-skills",
+	"url": "https://www.ctc.ca.gov/commission/newsroom/stories/ca-teach-leverage-linguistic-skills/"
+}

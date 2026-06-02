@@ -1,0 +1,9 @@
+{
+	"id": "NXYgIA6HxH1E3Mt",
+	"json": "{\"id\":\"NXYgIA6HxH1E3Mt\",\"url\":\"https://www.dds.ca.gov/rc/nci/reports/\",\"loadedUrl\":\"https://www.dds.ca.gov/rc/nci/reports/\",\"uniqueKey\":\"https://www.dds.ca.gov/rc/nci/reports\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:41.985Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/rc/nci/reports",
+	"url": "https://www.dds.ca.gov/rc/nci/reports/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "MiaGK3eDrcFyQNz",
+	"json": "{\"id\":\"MiaGK3eDrcFyQNz\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/1346/jennifer-plant-pediatric_critical_care-sacramento?FreeText%3aLast+name=plant\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/1346/jennifer-plant-pediatric_critical_care-sacramento?FreeText%3aLast+name=plant\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/1346/jennifer-plant-pediatric_critical_care-sacramento?FreeText%3ALast+name=plant\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:16.529Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/1346/jennifer-plant-pediatric_critical_care-sacramento?FreeText%3ALast+name=plant",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/1346/jennifer-plant-pediatric_critical_care-sacramento?FreeText%3aLast+name=plant"
+}

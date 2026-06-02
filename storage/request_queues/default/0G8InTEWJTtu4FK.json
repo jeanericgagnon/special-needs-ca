@@ -1,0 +1,9 @@
+{
+	"id": "0G8InTEWJTtu4FK",
+	"json": "{\"id\":\"0G8InTEWJTtu4FK\",\"url\":\"https://health.ucdavis.edu/medicalcenter/patient-survey-information/index.html\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-center/patient-survey-information/\",\"uniqueKey\":\"https://health.ucdavis.edu/medicalcenter/patient-survey-information/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:50.630Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/medicalcenter/patient-survey-information/index.html",
+	"url": "https://health.ucdavis.edu/medicalcenter/patient-survey-information/index.html"
+}

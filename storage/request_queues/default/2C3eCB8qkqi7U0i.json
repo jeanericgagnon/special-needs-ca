@@ -1,0 +1,9 @@
+{
+	"id": "2C3eCB8qkqi7U0i",
+	"json": "{\"id\":\"2C3eCB8qkqi7U0i\",\"url\":\"https://health.ucdavis.edu/patients-visitors/insurance-billing/text-messaging\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/insurance-billing/text-messaging\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/insurance-billing/text-messaging\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:55.084Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/insurance-billing/text-messaging",
+	"url": "https://health.ucdavis.edu/patients-visitors/insurance-billing/text-messaging"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "jGEsROGlj3eWMHi",
+	"json": "{\"id\":\"jGEsROGlj3eWMHi\",\"url\":\"https://leadership.ucdavis.edu/sitemap\",\"loadedUrl\":\"https://leadership.ucdavis.edu/sitemap\",\"uniqueKey\":\"https://leadership.ucdavis.edu/sitemap\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:37.130Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://leadership.ucdavis.edu/sitemap",
+	"url": "https://leadership.ucdavis.edu/sitemap"
+}

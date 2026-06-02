@@ -1,0 +1,9 @@
+{
+	"id": "9FlA0aEh59rV4Ce",
+	"json": "{\"id\":\"9FlA0aEh59rV4Ce\",\"url\":\"https://www.slocounty.ca.gov/Departments/Social-Services.aspx\",\"loadedUrl\":\"https://www.slocounty.ca.gov/departments/social-services\",\"uniqueKey\":\"https://www.slocounty.ca.gov/Departments/Social-Services.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:31.528Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.slocounty.ca.gov/Departments/Social-Services.aspx",
+	"url": "https://www.slocounty.ca.gov/Departments/Social-Services.aspx"
+}

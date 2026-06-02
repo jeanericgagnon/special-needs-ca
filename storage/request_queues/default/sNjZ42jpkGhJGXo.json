@@ -1,0 +1,9 @@
+{
+	"id": "sNjZ42jpkGhJGXo",
+	"json": "{\"id\":\"sNjZ42jpkGhJGXo\",\"url\":\"https://www.cdii.ca.gov/info/conditions-of-use/\",\"loadedUrl\":\"https://www.cdii.ca.gov/info/conditions-of-use/\",\"uniqueKey\":\"https://www.cdii.ca.gov/info/conditions-of-use\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:28:37.376Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdii.ca.gov/info/conditions-of-use",
+	"url": "https://www.cdii.ca.gov/info/conditions-of-use/"
+}

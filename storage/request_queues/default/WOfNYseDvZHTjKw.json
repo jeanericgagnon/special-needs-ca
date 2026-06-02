@@ -1,0 +1,9 @@
+{
+	"id": "WOfNYseDvZHTjKw",
+	"json": "{\"id\":\"WOfNYseDvZHTjKw\",\"url\":\"https://health.ucdavis.edu/cancer/services-specialties/colorectal-cancer/\",\"loadedUrl\":\"https://health.ucdavis.edu/cancer/services-specialties/colorectal-cancer/\",\"uniqueKey\":\"https://health.ucdavis.edu/cancer/services-specialties/colorectal-cancer\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:13.584Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/cancer/services-specialties/colorectal-cancer",
+	"url": "https://health.ucdavis.edu/cancer/services-specialties/colorectal-cancer/"
+}

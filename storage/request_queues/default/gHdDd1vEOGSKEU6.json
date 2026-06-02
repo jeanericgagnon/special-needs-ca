@@ -1,0 +1,9 @@
+{
+	"id": "gHdDd1vEOGSKEU6",
+	"json": "{\"id\":\"gHdDd1vEOGSKEU6\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/43400/caitlin-peterman-dermatology-pediatric_dermatology-vascular_medicine-sacramento?FreeText%3aLast+name=Peterman\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/43400/caitlin-peterman-dermatology-pediatric_dermatology-vascular_medicine-sacramento?FreeText%3aLast+name=Peterman\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/43400/caitlin-peterman-dermatology-pediatric_dermatology-vascular_medicine-sacramento?FreeText%3ALast+name=Peterman\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:16.674Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/43400/caitlin-peterman-dermatology-pediatric_dermatology-vascular_medicine-sacramento?FreeText%3ALast+name=Peterman",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/43400/caitlin-peterman-dermatology-pediatric_dermatology-vascular_medicine-sacramento?FreeText%3aLast+name=Peterman"
+}

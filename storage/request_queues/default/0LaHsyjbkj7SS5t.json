@@ -1,0 +1,9 @@
+{
+	"id": "0LaHsyjbkj7SS5t",
+	"json": "{\"id\":\"0LaHsyjbkj7SS5t\",\"url\":\"https://beincharge.ucdavis.edu/resourcelinks.php\",\"loadedUrl\":\"https://beincharge.ucdavis.edu/resourcelinks.php\",\"uniqueKey\":\"https://beincharge.ucdavis.edu/resourcelinks.php\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:21.027Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://beincharge.ucdavis.edu/resourcelinks.php",
+	"url": "https://beincharge.ucdavis.edu/resourcelinks.php"
+}

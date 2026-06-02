@@ -1,0 +1,9 @@
+{
+	"id": "Hjj2ac1QdHygEiD",
+	"json": "{\"id\":\"Hjj2ac1QdHygEiD\",\"url\":\"https://health.ucdavis.edu/nursing/ourteam/faculty/Frances_Patmon_bio.html\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/ourteam/faculty/Frances_Patmon_bio.html\",\"uniqueKey\":\"https://health.ucdavis.edu/nursing/ourteam/faculty/Frances_Patmon_bio.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:26.248Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/nursing/ourteam/faculty/Frances_Patmon_bio.html",
+	"url": "https://health.ucdavis.edu/nursing/ourteam/faculty/Frances_Patmon_bio.html"
+}

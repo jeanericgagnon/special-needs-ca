@@ -1,0 +1,9 @@
+{
+	"id": "F4rJUa5HOfHGRUS",
+	"json": "{\"id\":\"F4rJUa5HOfHGRUS\",\"url\":\"https://learn.rarediseases.org/courses/rarelaunch-forming-a-foundation/\",\"loadedUrl\":\"https://learn.rarediseases.org/courses/rarelaunch-forming-a-foundation/\",\"uniqueKey\":\"https://learn.rarediseases.org/courses/rarelaunch-forming-a-foundation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:32.864Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://learn.rarediseases.org/courses/rarelaunch-forming-a-foundation",
+	"url": "https://learn.rarediseases.org/courses/rarelaunch-forming-a-foundation/"
+}

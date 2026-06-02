@@ -1,0 +1,9 @@
+{
+	"id": "YQF6wnv8b5BNWWf",
+	"json": "{\"id\":\"YQF6wnv8b5BNWWf\",\"url\":\"https://www.dds.ca.gov/news-releases/the-department-of-developmental-services-announces-2022-23-service-access-equity-grants/\",\"loadedUrl\":\"https://www.dds.ca.gov/news-releases/the-department-of-developmental-services-announces-2022-23-service-access-equity-grants/\",\"uniqueKey\":\"https://www.dds.ca.gov/news-releases/the-department-of-developmental-services-announces-2022-23-service-access-equity-grants\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:39.565Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/news-releases/the-department-of-developmental-services-announces-2022-23-service-access-equity-grants",
+	"url": "https://www.dds.ca.gov/news-releases/the-department-of-developmental-services-announces-2022-23-service-access-equity-grants/"
+}

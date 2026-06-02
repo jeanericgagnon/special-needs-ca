@@ -1,0 +1,9 @@
+{
+	"id": "NysIzjBGbUvheCa",
+	"json": "{\"id\":\"NysIzjBGbUvheCa\",\"url\":\"https://scdd.ca.gov/resources/#advocacy\",\"loadedUrl\":\"https://scdd.ca.gov/resources/#advocacy\",\"uniqueKey\":\"https://scdd.ca.gov/resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:19:24.932Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/resources",
+	"url": "https://scdd.ca.gov/resources/#advocacy"
+}

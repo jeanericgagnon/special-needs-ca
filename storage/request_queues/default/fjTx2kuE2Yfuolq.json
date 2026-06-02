@@ -1,0 +1,9 @@
+{
+	"id": "fjTx2kuE2Yfuolq",
+	"json": "{\"id\":\"fjTx2kuE2Yfuolq\",\"url\":\"https://childsupport.ca.gov/find-my-local-agency/\",\"loadedUrl\":\"https://childsupport.ca.gov/find-my-local-agency/\",\"uniqueKey\":\"https://childsupport.ca.gov/find-my-local-agency\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:34.786Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://childsupport.ca.gov/find-my-local-agency",
+	"url": "https://childsupport.ca.gov/find-my-local-agency/"
+}

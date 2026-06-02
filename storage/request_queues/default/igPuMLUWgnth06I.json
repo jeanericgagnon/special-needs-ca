@@ -1,0 +1,9 @@
+{
+	"id": "igPuMLUWgnth06I",
+	"json": "{\"id\":\"igPuMLUWgnth06I\",\"url\":\"https://www.csb-cde.ca.gov/resources/causesvl/cvl-leberson.aspx\",\"loadedUrl\":\"https://www.csb-cde.ca.gov/resources/causesvl/cvl-leberson.aspx\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/resources/causesvl/cvl-leberson.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:13.643Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csb-cde.ca.gov/resources/causesvl/cvl-leberson.aspx",
+	"url": "https://www.csb-cde.ca.gov/resources/causesvl/cvl-leberson.aspx"
+}

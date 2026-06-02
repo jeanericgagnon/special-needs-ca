@@ -1,0 +1,9 @@
+{
+	"id": "6AlAKS0KQzxugWw",
+	"json": "{\"id\":\"6AlAKS0KQzxugWw\",\"url\":\"https://www.ucdavis.edu/about/visit/campus-virtual-tour\",\"loadedUrl\":\"https://www.ucdavis.edu/about/visit/campus-virtual-tour\",\"uniqueKey\":\"https://www.ucdavis.edu/about/visit/campus-virtual-tour\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:41.751Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ucdavis.edu/about/visit/campus-virtual-tour",
+	"url": "https://www.ucdavis.edu/about/visit/campus-virtual-tour"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "7cCKOnzXJXyFqOf",
+	"json": "{\"id\":\"7cCKOnzXJXyFqOf\",\"url\":\"https://mmic.cdph.ca.gov/MMIC_Search.aspx\",\"loadedUrl\":\"https://mmic.cdph.ca.gov/MMIC_Search.aspx\",\"uniqueKey\":\"https://mmic.cdph.ca.gov/MMIC_Search.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:33:13.491Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://mmic.cdph.ca.gov/MMIC_Search.aspx",
+	"url": "https://mmic.cdph.ca.gov/MMIC_Search.aspx"
+}

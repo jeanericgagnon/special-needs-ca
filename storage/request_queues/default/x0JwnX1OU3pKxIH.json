@@ -1,0 +1,9 @@
+{
+	"id": "x0JwnX1OU3pKxIH",
+	"json": "{\"id\":\"x0JwnX1OU3pKxIH\",\"url\":\"https://www.gov.ca.gov/2023/08/30/california-invests-757-million-to-create-affordable-housing-and-clean-transportation/\",\"loadedUrl\":\"https://www.gov.ca.gov/2023/08/30/california-invests-757-million-to-create-affordable-housing-and-clean-transportation/\",\"uniqueKey\":\"https://www.gov.ca.gov/2023/08/30/california-invests-757-million-to-create-affordable-housing-and-clean-transportation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:48.140Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.gov.ca.gov/2023/08/30/california-invests-757-million-to-create-affordable-housing-and-clean-transportation",
+	"url": "https://www.gov.ca.gov/2023/08/30/california-invests-757-million-to-create-affordable-housing-and-clean-transportation/"
+}

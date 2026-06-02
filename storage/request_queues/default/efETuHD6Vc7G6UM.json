@@ -1,0 +1,9 @@
+{
+	"id": "efETuHD6Vc7G6UM",
+	"json": "{\"id\":\"efETuHD6Vc7G6UM\",\"url\":\"https://hr.ucdavis.edu/sitemap\",\"loadedUrl\":\"https://hr.ucdavis.edu/sitemap\",\"uniqueKey\":\"https://hr.ucdavis.edu/sitemap\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:32.314Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/sitemap",
+	"url": "https://hr.ucdavis.edu/sitemap"
+}

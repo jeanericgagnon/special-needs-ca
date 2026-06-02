@@ -1,0 +1,9 @@
+{
+	"id": "z0SgZE8Fi5W25Na",
+	"json": "{\"id\":\"z0SgZE8Fi5W25Na\",\"url\":\"https://ucp.org/ways-to-donate/\",\"loadedUrl\":\"https://ucp.org/ways-to-donate/\",\"uniqueKey\":\"https://ucp.org/ways-to-donate\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:33.058Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://ucp.org/ways-to-donate",
+	"url": "https://ucp.org/ways-to-donate/"
+}

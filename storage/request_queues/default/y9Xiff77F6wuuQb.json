@@ -1,0 +1,9 @@
+{
+	"id": "y9Xiff77F6wuuQb",
+	"json": "{\"id\":\"y9Xiff77F6wuuQb\",\"url\":\"https://leginfo.legislature.ca.gov/faces/codes_displayexpandedbranch.xhtml?tocCode=WIC&division=4.1.&title=&part=&chapter=&article=&goUp=Y\",\"loadedUrl\":\"https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=WIC\",\"uniqueKey\":\"https://leginfo.legislature.ca.gov/faces/codes_displayexpandedbranch.xhtml?article=&chapter=&division=4.1.&goUp=Y&part=&title=&tocCode=WIC\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:12.267Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://leginfo.legislature.ca.gov/faces/codes_displayexpandedbranch.xhtml?article=&chapter=&division=4.1.&goUp=Y&part=&title=&tocCode=WIC",
+	"url": "https://leginfo.legislature.ca.gov/faces/codes_displayexpandedbranch.xhtml?tocCode=WIC&division=4.1.&title=&part=&chapter=&article=&goUp=Y"
+}

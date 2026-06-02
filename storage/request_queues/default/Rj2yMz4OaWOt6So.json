@@ -1,0 +1,9 @@
+{
+	"id": "Rj2yMz4OaWOt6So",
+	"json": "{\"id\":\"Rj2yMz4OaWOt6So\",\"url\":\"https://financeandbusiness.ucdavis.edu/budget/process\",\"loadedUrl\":\"https://financeandbusiness.ucdavis.edu/bia/budget/process\",\"uniqueKey\":\"https://financeandbusiness.ucdavis.edu/budget/process\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:50.729Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://financeandbusiness.ucdavis.edu/budget/process",
+	"url": "https://financeandbusiness.ucdavis.edu/budget/process"
+}

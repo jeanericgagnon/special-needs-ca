@@ -1,0 +1,9 @@
+{
+	"id": "1t5NwuPFklo6kqM",
+	"json": "{\"id\":\"1t5NwuPFklo6kqM\",\"url\":\"https://www.gov.ca.gov/tag/international-partnerships/\",\"loadedUrl\":\"https://www.gov.ca.gov/tag/international-partnerships/\",\"uniqueKey\":\"https://www.gov.ca.gov/tag/international-partnerships\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:40.433Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.gov.ca.gov/tag/international-partnerships",
+	"url": "https://www.gov.ca.gov/tag/international-partnerships/"
+}

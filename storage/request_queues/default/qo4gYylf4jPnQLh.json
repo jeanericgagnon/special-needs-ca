@@ -1,0 +1,9 @@
+{
+	"id": "qo4gYylf4jPnQLh",
+	"json": "{\"id\":\"qo4gYylf4jPnQLh\",\"url\":\"https://srt.csb-cde.ca.gov/game-portal/game-portal-index.html\",\"loadedUrl\":\"https://srt.csb-cde.ca.gov/game-portal/game-portal-index.html\",\"uniqueKey\":\"https://srt.csb-cde.ca.gov/game-portal/game-portal-index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:14.623Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://srt.csb-cde.ca.gov/game-portal/game-portal-index.html",
+	"url": "https://srt.csb-cde.ca.gov/game-portal/game-portal-index.html"
+}

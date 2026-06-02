@@ -1,0 +1,9 @@
+{
+	"id": "JS2lsyEUbikcsaI",
+	"json": "{\"id\":\"JS2lsyEUbikcsaI\",\"url\":\"https://health.ucdavis.edu/children/services/child-life/parent-resources\",\"loadedUrl\":\"https://health.ucdavis.edu/children/services/child-life/parent-resources\",\"uniqueKey\":\"https://health.ucdavis.edu/children/services/child-life/parent-resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:03.023Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/children/services/child-life/parent-resources",
+	"url": "https://health.ucdavis.edu/children/services/child-life/parent-resources"
+}

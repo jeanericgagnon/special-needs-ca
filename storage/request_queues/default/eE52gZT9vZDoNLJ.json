@@ -1,0 +1,9 @@
+{
+	"id": "eE52gZT9vZDoNLJ",
+	"json": "{\"id\":\"eE52gZT9vZDoNLJ\",\"url\":\"https://give.ucdavis.edu/IMED/IMKT400\",\"loadedUrl\":\"https://give.ucdavis.edu/IMED/IMKT400\",\"uniqueKey\":\"https://give.ucdavis.edu/IMED/IMKT400\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:46.957Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/IMED/IMKT400",
+	"url": "https://give.ucdavis.edu/IMED/IMKT400"
+}

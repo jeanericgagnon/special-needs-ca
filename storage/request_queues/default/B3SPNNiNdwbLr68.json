@@ -1,0 +1,9 @@
+{
+	"id": "B3SPNNiNdwbLr68",
+	"json": "{\"id\":\"B3SPNNiNdwbLr68\",\"url\":\"https://cdss.ca.gov/inforesources/Automated-Assistance-Claims/FED-GAP-Claim\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/automated-assistance-claims/continuum-of-care-reform-claim\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Automated-Assistance-Claims/FED-GAP-Claim\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:34.535Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/Automated-Assistance-Claims/FED-GAP-Claim",
+	"url": "https://cdss.ca.gov/inforesources/Automated-Assistance-Claims/FED-GAP-Claim"
+}

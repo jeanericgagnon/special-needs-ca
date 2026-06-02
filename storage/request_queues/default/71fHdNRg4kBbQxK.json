@@ -1,0 +1,9 @@
+{
+	"id": "71fHdNRg4kBbQxK",
+	"json": "{\"id\":\"71fHdNRg4kBbQxK\",\"url\":\"https://hr.ucdavis.edu/departments/elr/layoff\",\"loadedUrl\":\"https://hr.ucdavis.edu/departments/elr/layoff\",\"uniqueKey\":\"https://hr.ucdavis.edu/departments/elr/layoff\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:31.435Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/departments/elr/layoff",
+	"url": "https://hr.ucdavis.edu/departments/elr/layoff"
+}

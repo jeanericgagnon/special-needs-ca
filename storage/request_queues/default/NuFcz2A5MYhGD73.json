@@ -1,0 +1,9 @@
+{
+	"id": "NuFcz2A5MYhGD73",
+	"json": "{\"id\":\"NuFcz2A5MYhGD73\",\"url\":\"https://join.calable.ca.gov/parents/\",\"loadedUrl\":\"https://join.calable.ca.gov/parents/\",\"uniqueKey\":\"https://join.calable.ca.gov/parents\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:51.209Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://join.calable.ca.gov/parents",
+	"url": "https://join.calable.ca.gov/parents/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "MlPXWVyYYb6mjYM",
+	"json": "{\"id\":\"MlPXWVyYYb6mjYM\",\"url\":\"https://rarediseases.org/rare-diseases/cervical-teratoma/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/cervical-teratoma/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/cervical-teratoma\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:11:40.655Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/rare-diseases/cervical-teratoma",
+	"url": "https://rarediseases.org/rare-diseases/cervical-teratoma/"
+}

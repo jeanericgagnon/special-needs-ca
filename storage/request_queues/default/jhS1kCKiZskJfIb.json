@@ -1,0 +1,9 @@
+{
+	"id": "jhS1kCKiZskJfIb",
+	"json": "{\"id\":\"jhS1kCKiZskJfIb\",\"url\":\"https://giving.ucdavis.edu/ways-to-give/student-foundation/apply-assistance\",\"loadedUrl\":\"https://giving.ucdavis.edu/ways-to-give/student-foundation/apply-assistance\",\"uniqueKey\":\"https://giving.ucdavis.edu/ways-to-give/student-foundation/apply-assistance\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:31.321Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://giving.ucdavis.edu/ways-to-give/student-foundation/apply-assistance",
+	"url": "https://giving.ucdavis.edu/ways-to-give/student-foundation/apply-assistance"
+}

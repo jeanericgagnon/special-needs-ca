@@ -1,0 +1,9 @@
+{
+	"id": "P7A5M4JLrbnyDg8",
+	"json": "{\"id\":\"P7A5M4JLrbnyDg8\",\"url\":\"https://diversity.ucdavis.edu/land-acknowledgement-statement\",\"loadedUrl\":\"https://excellence.ucdavis.edu/land-acknowledgement-statement\",\"uniqueKey\":\"https://diversity.ucdavis.edu/land-acknowledgement-statement\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:29.510Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://diversity.ucdavis.edu/land-acknowledgement-statement",
+	"url": "https://diversity.ucdavis.edu/land-acknowledgement-statement"
+}

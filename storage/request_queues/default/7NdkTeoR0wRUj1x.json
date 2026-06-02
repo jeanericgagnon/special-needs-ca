@@ -1,0 +1,9 @@
+{
+	"id": "7NdkTeoR0wRUj1x",
+	"json": "{\"id\":\"7NdkTeoR0wRUj1x\",\"url\":\"http://www.dhcs.ca.gov/services/medi-cal/eligibility/Pages/ACWDLMasterIndex.aspx\",\"loadedUrl\":\"https://www.dhcs.ca.gov/services/medi-cal/eligibility/Pages/ACWDLMasterIndex.aspx\",\"uniqueKey\":\"http://www.dhcs.ca.gov/services/medi-cal/eligibility/Pages/ACWDLMasterIndex.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:46:14.823Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.dhcs.ca.gov/services/medi-cal/eligibility/Pages/ACWDLMasterIndex.aspx",
+	"url": "http://www.dhcs.ca.gov/services/medi-cal/eligibility/Pages/ACWDLMasterIndex.aspx"
+}

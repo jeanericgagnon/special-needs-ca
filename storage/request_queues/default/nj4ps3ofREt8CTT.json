@@ -1,0 +1,9 @@
+{
+	"id": "nj4ps3ofREt8CTT",
+	"json": "{\"id\":\"nj4ps3ofREt8CTT\",\"url\":\"https://physicians.ucdavis.edu/details/43007/daniel-cortez-adult_congenital_cardiology-congenital_anomalies-electrophysiology-pediatric_cardiology-sacramento?Specialties=30783\",\"loadedUrl\":\"https://physicians.ucdavis.edu/details/43007/daniel-cortez-adult_congenital_cardiology-congenital_anomalies-electrophysiology-pediatric_cardiology-sacramento?Specialties=30783\",\"uniqueKey\":\"https://physicians.ucdavis.edu/details/43007/daniel-cortez-adult_congenital_cardiology-congenital_anomalies-electrophysiology-pediatric_cardiology-sacramento?Specialties=30783\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:33:15.936Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://physicians.ucdavis.edu/details/43007/daniel-cortez-adult_congenital_cardiology-congenital_anomalies-electrophysiology-pediatric_cardiology-sacramento?Specialties=30783",
+	"url": "https://physicians.ucdavis.edu/details/43007/daniel-cortez-adult_congenital_cardiology-congenital_anomalies-electrophysiology-pediatric_cardiology-sacramento?Specialties=30783"
+}

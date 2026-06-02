@@ -1,0 +1,9 @@
+{
+	"id": "l1d6Me84KcQE8Ei",
+	"json": "{\"id\":\"l1d6Me84KcQE8Ei\",\"url\":\"https://www.ctc.ca.gov/program-sponsors/prep-programs/intern/\",\"loadedUrl\":\"https://www.ctc.ca.gov/program-sponsors/prep-programs/intern/\",\"uniqueKey\":\"https://www.ctc.ca.gov/program-sponsors/prep-programs/intern\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:26.770Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ctc.ca.gov/program-sponsors/prep-programs/intern",
+	"url": "https://www.ctc.ca.gov/program-sponsors/prep-programs/intern/"
+}

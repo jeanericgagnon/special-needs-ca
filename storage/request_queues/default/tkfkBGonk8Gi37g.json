@@ -1,0 +1,9 @@
+{
+	"id": "tkfkBGonk8Gi37g",
+	"json": "{\"id\":\"tkfkBGonk8Gi37g\",\"url\":\"https://cdss.ca.gov/asip\",\"loadedUrl\":\"https://cdss.ca.gov/asip\",\"uniqueKey\":\"https://cdss.ca.gov/asip\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:58:11.822Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/asip",
+	"url": "https://cdss.ca.gov/asip"
+}

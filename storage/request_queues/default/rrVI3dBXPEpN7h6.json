@@ -1,0 +1,9 @@
+{
+	"id": "rrVI3dBXPEpN7h6",
+	"json": "{\"id\":\"rrVI3dBXPEpN7h6\",\"url\":\"https://www.dds.ca.gov/services/crisis-safety-net-services/porterville-developmental-center-secure-treatment-program-step-down-homes/\",\"loadedUrl\":\"https://www.dds.ca.gov/services/crisis-safety-net-services/porterville-developmental-center-secure-treatment-program-step-down-homes/\",\"uniqueKey\":\"https://www.dds.ca.gov/services/crisis-safety-net-services/porterville-developmental-center-secure-treatment-program-step-down-homes\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:01.470Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/services/crisis-safety-net-services/porterville-developmental-center-secure-treatment-program-step-down-homes",
+	"url": "https://www.dds.ca.gov/services/crisis-safety-net-services/porterville-developmental-center-secure-treatment-program-step-down-homes/"
+}

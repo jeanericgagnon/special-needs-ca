@@ -1,0 +1,9 @@
+{
+	"id": "zDWN6DZWVdEkanY",
+	"json": "{\"id\":\"zDWN6DZWVdEkanY\",\"url\":\"https://data.chhs.ca.gov/dataset/statewide-death-profiles\",\"loadedUrl\":\"https://data.chhs.ca.gov/dataset/statewide-death-profiles\",\"uniqueKey\":\"https://data.chhs.ca.gov/dataset/statewide-death-profiles\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:50:32.127Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://data.chhs.ca.gov/dataset/statewide-death-profiles",
+	"url": "https://data.chhs.ca.gov/dataset/statewide-death-profiles"
+}

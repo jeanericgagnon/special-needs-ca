@@ -1,0 +1,9 @@
+{
+	"id": "YjlrHGy8L9ODQHW",
+	"json": "{\"id\":\"YjlrHGy8L9ODQHW\",\"url\":\"https://www.dds.ca.gov/general/about/\",\"loadedUrl\":\"https://www.dds.ca.gov/general/about/\",\"uniqueKey\":\"https://www.dds.ca.gov/general/about\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:33.274Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/general/about",
+	"url": "https://www.dds.ca.gov/general/about/"
+}

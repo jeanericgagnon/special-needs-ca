@@ -1,0 +1,9 @@
+{
+	"id": "RVXAiEqzwReIY3U",
+	"json": "{\"id\":\"RVXAiEqzwReIY3U\",\"url\":\"https://www.dmv.ca.gov/portal/vehicle-registration/registration-fees/\",\"loadedUrl\":\"https://www.dmv.ca.gov/portal/vehicle-registration/registration-fees/\",\"uniqueKey\":\"https://www.dmv.ca.gov/portal/vehicle-registration/registration-fees\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:38.513Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dmv.ca.gov/portal/vehicle-registration/registration-fees",
+	"url": "https://www.dmv.ca.gov/portal/vehicle-registration/registration-fees/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "l2DKXTl4pqSfwok",
+	"json": "{\"id\":\"l2DKXTl4pqSfwok\",\"url\":\"https://health.ucdavis.edu/mind-institute/our-team/iddrc-external-advisory\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/our-team/iddrc-external-advisory\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/our-team/iddrc-external-advisory\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:15.630Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mind-institute/our-team/iddrc-external-advisory",
+	"url": "https://health.ucdavis.edu/mind-institute/our-team/iddrc-external-advisory"
+}

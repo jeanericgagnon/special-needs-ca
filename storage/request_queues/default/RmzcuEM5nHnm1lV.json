@@ -1,0 +1,9 @@
+{
+	"id": "RmzcuEM5nHnm1lV",
+	"json": "{\"id\":\"RmzcuEM5nHnm1lV\",\"url\":\"https://neuroscience.ucdavis.edu/brain-awareness-week\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/outreach\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/brain-awareness-week\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:01.695Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://neuroscience.ucdavis.edu/brain-awareness-week",
+	"url": "https://neuroscience.ucdavis.edu/brain-awareness-week"
+}

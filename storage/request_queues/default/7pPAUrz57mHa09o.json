@@ -1,0 +1,9 @@
+{
+	"id": "7pPAUrz57mHa09o",
+	"json": "{\"id\":\"7pPAUrz57mHa09o\",\"url\":\"https://grad.ucdavis.edu/programs/gbcb\",\"loadedUrl\":\"https://grad.ucdavis.edu/programs/gbcb\",\"uniqueKey\":\"https://grad.ucdavis.edu/programs/gbcb\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:53.742Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://grad.ucdavis.edu/programs/gbcb",
+	"url": "https://grad.ucdavis.edu/programs/gbcb"
+}

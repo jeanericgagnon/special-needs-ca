@@ -1,0 +1,9 @@
+{
+	"id": "zk7pVQWO3wjA6jb",
+	"json": "{\"id\":\"zk7pVQWO3wjA6jb\",\"url\":\"https://www.cde.ca.gov/sp/cd/re/caqdevelopment.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/cd/re/caqdevelopment.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/cd/re/caqdevelopment.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:07:18.850Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/sp/cd/re/caqdevelopment.asp",
+	"url": "https://www.cde.ca.gov/sp/cd/re/caqdevelopment.asp"
+}

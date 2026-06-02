@@ -1,0 +1,9 @@
+{
+	"id": "cUMwEB7g1XUmEQS",
+	"json": "{\"id\":\"cUMwEB7g1XUmEQS\",\"url\":\"https://rarediseases.org/rare-diseases/gastroschisis/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/gastroschisis/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/gastroschisis\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:15:09.726Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/rare-diseases/gastroschisis",
+	"url": "https://rarediseases.org/rare-diseases/gastroschisis/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "MfCWJETD2DT4mtJ",
+	"json": "{\"id\":\"MfCWJETD2DT4mtJ\",\"url\":\"https://health.ucdavis.edu/mind-institute/research/adhdprogram/mint\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/research/adhdprogram/mint\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/research/adhdprogram/mint\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:25.222Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mind-institute/research/adhdprogram/mint",
+	"url": "https://health.ucdavis.edu/mind-institute/research/adhdprogram/mint"
+}

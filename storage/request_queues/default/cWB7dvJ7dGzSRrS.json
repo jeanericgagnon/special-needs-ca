@@ -1,0 +1,9 @@
+{
+	"id": "cWB7dvJ7dGzSRrS",
+	"json": "{\"id\":\"cWB7dvJ7dGzSRrS\",\"url\":\"https://edd.ca.gov/en/unemployment/\",\"loadedUrl\":\"https://edd.ca.gov/en/unemployment/\",\"uniqueKey\":\"https://edd.ca.gov/en/unemployment\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:32.802Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://edd.ca.gov/en/unemployment",
+	"url": "https://edd.ca.gov/en/unemployment/"
+}

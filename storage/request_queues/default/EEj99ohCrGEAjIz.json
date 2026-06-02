@@ -1,0 +1,9 @@
+{
+	"id": "EEj99ohCrGEAjIz",
+	"json": "{\"id\":\"EEj99ohCrGEAjIz\",\"url\":\"https://www.ssa.gov/benefits/retirement/social-security-fairness-act.html\",\"loadedUrl\":\"https://www.ssa.gov/benefits/retirement/social-security-fairness-act.html\",\"uniqueKey\":\"https://www.ssa.gov/benefits/retirement/social-security-fairness-act.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:33.216Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ssa.gov/benefits/retirement/social-security-fairness-act.html",
+	"url": "https://www.ssa.gov/benefits/retirement/social-security-fairness-act.html"
+}

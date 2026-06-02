@@ -1,0 +1,9 @@
+{
+	"id": "ZBdDiTbmbiaqSpu",
+	"json": "{\"id\":\"ZBdDiTbmbiaqSpu\",\"url\":\"https://www.dir.ca.gov/public-works/certified-payroll-reporting.html\",\"loadedUrl\":\"https://www.dir.ca.gov/public-works/certified-payroll-reporting.html\",\"uniqueKey\":\"https://www.dir.ca.gov/public-works/certified-payroll-reporting.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:31.361Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dir.ca.gov/public-works/certified-payroll-reporting.html",
+	"url": "https://www.dir.ca.gov/public-works/certified-payroll-reporting.html"
+}

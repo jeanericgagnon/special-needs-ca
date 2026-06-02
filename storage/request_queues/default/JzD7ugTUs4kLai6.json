@@ -1,0 +1,9 @@
+{
+	"id": "JzD7ugTUs4kLai6",
+	"json": "{\"id\":\"JzD7ugTUs4kLai6\",\"url\":\"https://health.ucdavis.edu/nursing/about_us/community.html\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/about_us/community.html\",\"uniqueKey\":\"https://health.ucdavis.edu/nursing/about_us/community.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:55.818Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/nursing/about_us/community.html",
+	"url": "https://health.ucdavis.edu/nursing/about_us/community.html"
+}

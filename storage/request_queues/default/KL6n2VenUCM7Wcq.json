@@ -1,0 +1,9 @@
+{
+	"id": "KL6n2VenUCM7Wcq",
+	"json": "{\"id\":\"KL6n2VenUCM7Wcq\",\"url\":\"https://www.ssa.gov/es\",\"loadedUrl\":\"https://www.ssa.gov/es\",\"uniqueKey\":\"https://www.ssa.gov/es\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:54.697Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ssa.gov/es",
+	"url": "https://www.ssa.gov/es"
+}

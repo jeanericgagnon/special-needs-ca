@@ -1,0 +1,9 @@
+{
+	"id": "U9E7sdD1bom8OM4",
+	"json": "{\"id\":\"U9E7sdD1bom8OM4\",\"url\":\"https://health.ucdavis.edu/medical-school/leadership/bios/steve-telliano\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-school/leadership/bios/steve-telliano\",\"uniqueKey\":\"https://health.ucdavis.edu/medical-school/leadership/bios/steve-telliano\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:06.968Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/medical-school/leadership/bios/steve-telliano",
+	"url": "https://health.ucdavis.edu/medical-school/leadership/bios/steve-telliano"
+}

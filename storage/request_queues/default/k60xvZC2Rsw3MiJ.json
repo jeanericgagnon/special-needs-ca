@@ -1,0 +1,9 @@
+{
+	"id": "k60xvZC2Rsw3MiJ",
+	"json": "{\"id\":\"k60xvZC2Rsw3MiJ\",\"url\":\"http://archive.senate.ca.gov/member-archives\",\"loadedUrl\":\"https://archive.senate.ca.gov/member-archives\",\"uniqueKey\":\"http://archive.senate.ca.gov/member-archives\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:56.054Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://archive.senate.ca.gov/member-archives",
+	"url": "http://archive.senate.ca.gov/member-archives"
+}

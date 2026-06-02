@@ -1,0 +1,9 @@
+{
+	"id": "tUgre53Qpg48kmQ",
+	"json": "{\"id\":\"tUgre53Qpg48kmQ\",\"url\":\"https://irb.ucdavis.edu/irb-submissions/irb-forms/\",\"loadedUrl\":\"https://irb.ucdavis.edu/irb-submissions/irb-forms/\",\"uniqueKey\":\"https://irb.ucdavis.edu/irb-submissions/irb-forms\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:39.713Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://irb.ucdavis.edu/irb-submissions/irb-forms",
+	"url": "https://irb.ucdavis.edu/irb-submissions/irb-forms/"
+}

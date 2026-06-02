@@ -1,0 +1,9 @@
+{
+	"id": "Kfo07mPxzozjK68",
+	"json": "{\"id\":\"Kfo07mPxzozjK68\",\"url\":\"https://www.csdr-cde.ca.gov/thrive/index.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=a5764380-c12e-4f9b-88df-e850fda890fc&ssb=75392266188&ssc=https%3A%2F%2Fwww.csdr-cde.ca.gov%2Fthrive%2Findex.asp&ssi=f837b629-cuez-4e6a-8648-6d38d292c0c2&ssk=botmanager_support@radware.com&ssm=90349465400138389100096062906661&ssn=a3465dea00838d6f68f9e34ffd1e6611a89af17192f8-643b-41a0-a3be55&sso=4cdf334f-0a25718fe2b7fd0e503687fbd4dcd20f7dc3e4af330324f6&ssp=42216624151780337000178039419609802&ssq=51458185486355434480154863281384701426794&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBmMTcxOTJmOC02NDNiLTQxYTAtYTM0Zi0wYTI1NzE4ZmUyYjcxLTE3ODAzNTQ4NjM1MjMwLTAwM2JjOGJhY2E1NDc4NzhhYTMxMCIsInJkIjoiY2EuZ292IiwidXpteCI6IjdmOTAwMDA5ZGRlY2EyLTEwMTItNDNmMi1iNmE0LTRkNDIxNGVlNTRiMzEtMTc4MDM1NDg2MzUyMzAtMGVjOTZiMzNlYWY2Yzg4MTEwIn0=\",\"uniqueKey\":\"https://www.csdr-cde.ca.gov/thrive/index.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T23:01:04.724Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csdr-cde.ca.gov/thrive/index.asp",
+	"url": "https://www.csdr-cde.ca.gov/thrive/index.asp"
+}

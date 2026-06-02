@@ -1,0 +1,9 @@
+{
+	"id": "nN1IQddqN1LiOgv",
+	"json": "{\"id\":\"nN1IQddqN1LiOgv\",\"url\":\"https://rarediseases.org/news/?taxonomy[category]=nordinthenews\",\"loadedUrl\":\"https://rarediseases.org/news/?taxonomy[category]=nordinthenews\",\"uniqueKey\":\"https://rarediseases.org/news?taxonomy%5Bcategory%5D=nordinthenews\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:21:08.799Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/news?taxonomy%5Bcategory%5D=nordinthenews",
+	"url": "https://rarediseases.org/news/?taxonomy[category]=nordinthenews"
+}

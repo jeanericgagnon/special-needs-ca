@@ -1,0 +1,9 @@
+{
+	"id": "e6GWU50T1wMJrXP",
+	"json": "{\"id\":\"e6GWU50T1wMJrXP\",\"url\":\"https://policy-manual.mes.dhcs.ca.gov/\",\"loadedUrl\":\"https://policy-manual.mes.dhcs.ca.gov/\",\"uniqueKey\":\"https://policy-manual.mes.dhcs.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:54:06.733Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://policy-manual.mes.dhcs.ca.gov",
+	"url": "https://policy-manual.mes.dhcs.ca.gov/"
+}

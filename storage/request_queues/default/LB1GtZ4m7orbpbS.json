@@ -1,0 +1,9 @@
+{
+	"id": "LB1GtZ4m7orbpbS",
+	"json": "{\"id\":\"LB1GtZ4m7orbpbS\",\"url\":\"https://hsc.ucdavis.edu/payroll\",\"loadedUrl\":\"https://hsc.ucdavis.edu/payroll\",\"uniqueKey\":\"https://hsc.ucdavis.edu/payroll\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:37.700Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hsc.ucdavis.edu/payroll",
+	"url": "https://hsc.ucdavis.edu/payroll"
+}

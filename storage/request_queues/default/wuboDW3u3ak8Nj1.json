@@ -1,0 +1,9 @@
+{
+	"id": "wuboDW3u3ak8Nj1",
+	"json": "{\"id\":\"wuboDW3u3ak8Nj1\",\"url\":\"https://www.chhs.ca.gov/wellness-wednesday/\",\"loadedUrl\":\"https://www.chhs.ca.gov/wellness-wednesday/\",\"uniqueKey\":\"https://www.chhs.ca.gov/wellness-wednesday\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:56.419Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chhs.ca.gov/wellness-wednesday",
+	"url": "https://www.chhs.ca.gov/wellness-wednesday/"
+}

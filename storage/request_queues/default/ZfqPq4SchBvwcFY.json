@@ -1,0 +1,9 @@
+{
+	"id": "ZfqPq4SchBvwcFY",
+	"json": "{\"id\":\"ZfqPq4SchBvwcFY\",\"url\":\"https://www.cdph.ca.gov/Programs/CID/OBBH/Pages/Influenza-and-Other-Respiratory-Infections.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CID/OBBH/Pages/Influenza-and-Other-Respiratory-Infections.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CID/OBBH/Pages/Influenza-and-Other-Respiratory-Infections.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:03:12.264Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CID/OBBH/Pages/Influenza-and-Other-Respiratory-Infections.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CID/OBBH/Pages/Influenza-and-Other-Respiratory-Infections.aspx"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "UPWtP3hkhxLmUx3",
+	"json": "{\"id\":\"UPWtP3hkhxLmUx3\",\"url\":\"https://www.dds.ca.gov/initiatives/autism/\",\"loadedUrl\":\"https://www.dds.ca.gov/initiatives/autism/\",\"uniqueKey\":\"https://www.dds.ca.gov/initiatives/autism\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:18.671Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/initiatives/autism",
+	"url": "https://www.dds.ca.gov/initiatives/autism/"
+}

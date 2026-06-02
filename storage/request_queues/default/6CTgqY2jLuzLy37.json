@@ -1,0 +1,9 @@
+{
+	"id": "6CTgqY2jLuzLy37",
+	"json": "{\"id\":\"6CTgqY2jLuzLy37\",\"url\":\"https://www.calhr.ca.gov/state-hr-professionals/\",\"loadedUrl\":\"https://www.calhr.ca.gov/state-hr-professionals/\",\"uniqueKey\":\"https://www.calhr.ca.gov/state-hr-professionals\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:13.434Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.calhr.ca.gov/state-hr-professionals",
+	"url": "https://www.calhr.ca.gov/state-hr-professionals/"
+}

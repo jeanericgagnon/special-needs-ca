@@ -1,0 +1,9 @@
+{
+	"id": "eL4dU414fc7TIpZ",
+	"json": "{\"id\":\"eL4dU414fc7TIpZ\",\"url\":\"https://www.dmv.ca.gov/portal/vehicle-registration/vehicle-registration-status/\",\"loadedUrl\":\"https://www.dmv.ca.gov/portal/vehicle-registration/vehicle-registration-status/\",\"uniqueKey\":\"https://www.dmv.ca.gov/portal/vehicle-registration/vehicle-registration-status\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:28.839Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dmv.ca.gov/portal/vehicle-registration/vehicle-registration-status",
+	"url": "https://www.dmv.ca.gov/portal/vehicle-registration/vehicle-registration-status/"
+}

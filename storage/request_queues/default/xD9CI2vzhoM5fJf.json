@@ -1,0 +1,9 @@
+{
+	"id": "xD9CI2vzhoM5fJf",
+	"json": "{\"id\":\"xD9CI2vzhoM5fJf\",\"url\":\"http://www.ssa.gov/compassionateallowances/\",\"loadedUrl\":\"https://www.ssa.gov/compassionateallowances/\",\"uniqueKey\":\"http://www.ssa.gov/compassionateallowances\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:55.040Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.ssa.gov/compassionateallowances",
+	"url": "http://www.ssa.gov/compassionateallowances/"
+}

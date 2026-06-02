@@ -1,0 +1,9 @@
+{
+	"id": "4eVhxG3anNCouko",
+	"json": "{\"id\":\"4eVhxG3anNCouko\",\"url\":\"https://scdd.ca.gov/events/2026-05-21/\",\"loadedUrl\":\"https://scdd.ca.gov/events/2026-05-21/\",\"uniqueKey\":\"https://scdd.ca.gov/events/2026-05-21\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:35.541Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/events/2026-05-21",
+	"url": "https://scdd.ca.gov/events/2026-05-21/"
+}

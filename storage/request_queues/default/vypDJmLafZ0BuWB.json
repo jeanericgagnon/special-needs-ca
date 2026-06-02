@@ -1,0 +1,9 @@
+{
+	"id": "vypDJmLafZ0BuWB",
+	"json": "{\"id\":\"vypDJmLafZ0BuWB\",\"url\":\"https://health.ucdavis.edu/nursing/admissions/FAQ-PHD-MSL.html\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/admissions/FAQ-PHD-MSL.html\",\"uniqueKey\":\"https://health.ucdavis.edu/nursing/admissions/FAQ-PHD-MSL.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:19.890Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/nursing/admissions/FAQ-PHD-MSL.html",
+	"url": "https://health.ucdavis.edu/nursing/admissions/FAQ-PHD-MSL.html"
+}

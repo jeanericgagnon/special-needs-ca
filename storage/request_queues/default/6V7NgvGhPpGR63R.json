@@ -1,0 +1,9 @@
+{
+	"id": "6V7NgvGhPpGR63R",
+	"json": "{\"id\":\"6V7NgvGhPpGR63R\",\"url\":\"https://scdd.ca.gov/events/list/?eventDisplay=past\",\"loadedUrl\":\"https://scdd.ca.gov/events/list/?eventDisplay=past\",\"uniqueKey\":\"https://scdd.ca.gov/events/list?eventDisplay=past\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:30.648Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/events/list?eventDisplay=past",
+	"url": "https://scdd.ca.gov/events/list/?eventDisplay=past"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "r62SDoXimxHaxbL",
+	"json": "{\"id\":\"r62SDoXimxHaxbL\",\"url\":\"https://www.captain.ca.gov/families.html\",\"loadedUrl\":\"https://www.captain.ca.gov/families.html\",\"uniqueKey\":\"https://www.captain.ca.gov/families.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:44.783Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.captain.ca.gov/families.html",
+	"url": "https://www.captain.ca.gov/families.html"
+}

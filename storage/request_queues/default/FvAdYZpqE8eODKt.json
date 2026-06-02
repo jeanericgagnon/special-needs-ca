@@ -1,0 +1,9 @@
+{
+	"id": "FvAdYZpqE8eODKt",
+	"json": "{\"id\":\"FvAdYZpqE8eODKt\",\"url\":\"https://give.ucdavis.edu/SONU/NRSP817\",\"loadedUrl\":\"https://give.ucdavis.edu/SONU/NRSP817\",\"uniqueKey\":\"https://give.ucdavis.edu/SONU/NRSP817\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:01.335Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/SONU/NRSP817",
+	"url": "https://give.ucdavis.edu/SONU/NRSP817"
+}

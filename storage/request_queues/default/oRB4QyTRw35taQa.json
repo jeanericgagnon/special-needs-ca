@@ -1,0 +1,9 @@
+{
+	"id": "oRB4QyTRw35taQa",
+	"json": "{\"id\":\"oRB4QyTRw35taQa\",\"url\":\"https://www.cdss.ca.gov/inforesources/Community-Care/Licensing-Fees\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/community-care/licensing-fees\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/Community-Care/Licensing-Fees\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:33.994Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/inforesources/Community-Care/Licensing-Fees",
+	"url": "https://www.cdss.ca.gov/inforesources/Community-Care/Licensing-Fees"
+}

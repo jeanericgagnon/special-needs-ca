@@ -1,0 +1,9 @@
+{
+	"id": "axJarUdhN1urmAP",
+	"json": "{\"id\":\"axJarUdhN1urmAP\",\"url\":\"https://leginfo.legislature.ca.gov/faces/billResultsClient.xhtml?location=CX20&agendadate=06%2F01%2F2026&description=Asm+Rules&hid=11837\",\"loadedUrl\":\"https://leginfo.legislature.ca.gov/faces/billResultsClient.xhtml?location=CX20&agendadate=06%2F01%2F2026&description=Asm+Rules&hid=11837\",\"uniqueKey\":\"https://leginfo.legislature.ca.gov/faces/billResultsClient.xhtml?agendadate=06%2F01%2F2026&description=Asm+Rules&hid=11837&location=CX20\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:19.150Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://leginfo.legislature.ca.gov/faces/billResultsClient.xhtml?agendadate=06%2F01%2F2026&description=Asm+Rules&hid=11837&location=CX20",
+	"url": "https://leginfo.legislature.ca.gov/faces/billResultsClient.xhtml?location=CX20&agendadate=06%2F01%2F2026&description=Asm+Rules&hid=11837"
+}

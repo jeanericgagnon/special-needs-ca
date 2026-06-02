@@ -1,0 +1,9 @@
+{
+	"id": "tuxb0qBgoz1Ufq4",
+	"json": "{\"id\":\"tuxb0qBgoz1Ufq4\",\"url\":\"https://rarediseases.org/rare-diseases/cerebrotendinous-xanthomatosis/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/cerebrotendinous-xanthomatosis/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/cerebrotendinous-xanthomatosis\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:11:53.298Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/rare-diseases/cerebrotendinous-xanthomatosis",
+	"url": "https://rarediseases.org/rare-diseases/cerebrotendinous-xanthomatosis/"
+}

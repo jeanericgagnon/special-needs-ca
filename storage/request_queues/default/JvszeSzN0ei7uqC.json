@@ -1,0 +1,9 @@
+{
+	"id": "JvszeSzN0ei7uqC",
+	"json": "{\"id\":\"JvszeSzN0ei7uqC\",\"url\":\"https://www.senate.ca.gov/publications/senate-daily-journal\",\"loadedUrl\":\"https://www.senate.ca.gov/publications/senate-daily-journal\",\"uniqueKey\":\"https://www.senate.ca.gov/publications/senate-daily-journal\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:55.119Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.senate.ca.gov/publications/senate-daily-journal",
+	"url": "https://www.senate.ca.gov/publications/senate-daily-journal"
+}

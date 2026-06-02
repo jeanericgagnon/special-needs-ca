@@ -1,0 +1,9 @@
+{
+	"id": "XQiTIkfjXS5ryvq",
+	"json": "{\"id\":\"XQiTIkfjXS5ryvq\",\"url\":\"https://www.globaldownsyndrome.org/about-down-syndrome/resources/local-organizations/\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/about-down-syndrome/resources/local-organizations/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/about-down-syndrome/resources/local-organizations\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:28:57.417Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.globaldownsyndrome.org/about-down-syndrome/resources/local-organizations",
+	"url": "https://www.globaldownsyndrome.org/about-down-syndrome/resources/local-organizations/"
+}

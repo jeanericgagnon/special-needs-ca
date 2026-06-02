@@ -1,0 +1,9 @@
+{
+	"id": "5EPxnojOGKIA4bB",
+	"json": "{\"id\":\"5EPxnojOGKIA4bB\",\"url\":\"https://health.ucdavis.edu/medical-group/\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-group/\",\"uniqueKey\":\"https://health.ucdavis.edu/medical-group\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:56.789Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/medical-group",
+	"url": "https://health.ucdavis.edu/medical-group/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "0HqWW5BTjUilES1",
+	"json": "{\"id\":\"0HqWW5BTjUilES1\",\"url\":\"https://scdd.ca.gov/pos-service-code/communication-aides/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/communication-aides/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/communication-aides\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:51.519Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/pos-service-code/communication-aides",
+	"url": "https://scdd.ca.gov/pos-service-code/communication-aides/"
+}

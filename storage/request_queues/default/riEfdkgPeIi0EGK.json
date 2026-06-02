@@ -1,0 +1,9 @@
+{
+	"id": "riEfdkgPeIi0EGK",
+	"json": "{\"id\":\"riEfdkgPeIi0EGK\",\"url\":\"https://www.cde.ca.gov/fg/aa/ca/studentfriendly.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=c3179c14-2a23-444d-983f-23b8f9fcad91&ssb=06911264274&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Ffg%2Faa%2Fca%2Fstudentfriendly.asp&ssi=a374b906-ctxv-4028-847c-36cc9ccb0b34&ssk=botmanager_support@radware.com&ssm=65196996514023587102850344268329&ssn=d60d32b9fb210ceba183004ce9abf6c23cbbad89bacc-563c-4c2b-b869a8&sso=7f9f9f4a-896207e4481ddf4c6f623b57e6ea3126cea0874812de6b58&ssp=64484547661780397143178035381145473&ssq=30004192734127789739027341535638787728708&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsIl9fdXptZiI6IjdmOTAwMGFkODliYWNjLTU2M2MtNGMyYi1iZjRhLTg5NjIwN2U0NDgxZDEtMTc4MDMyNzM0MTQ1ODAtMDAzN2UwOGQ1NmE2YjM3ZGI3MDEwIiwidXpteCI6IjdmOTAwMDgwYWMwZmI4LTkxZGUtNDQ2Yi1hNDE3LWYzNWQ4ZWFjN2VlYTEtMTc4MDMyNzM0MTQ1ODAtZmEyYTg3MTFhOWNlZDk2MjEwIn0=\",\"uniqueKey\":\"https://www.cde.ca.gov/fg/aa/ca/studentfriendly.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:22:21.540Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/fg/aa/ca/studentfriendly.asp",
+	"url": "https://www.cde.ca.gov/fg/aa/ca/studentfriendly.asp"
+}

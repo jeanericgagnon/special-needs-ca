@@ -1,0 +1,9 @@
+{
+	"id": "k22USQoZWvLE9JS",
+	"json": "{\"id\":\"k22USQoZWvLE9JS\",\"url\":\"https://www.ctc.ca.gov/aspiring-educators/regional-accreditation/\",\"loadedUrl\":\"https://www.ctc.ca.gov/aspiring-educators/regional-accreditation/\",\"uniqueKey\":\"https://www.ctc.ca.gov/aspiring-educators/regional-accreditation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:55.602Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ctc.ca.gov/aspiring-educators/regional-accreditation",
+	"url": "https://www.ctc.ca.gov/aspiring-educators/regional-accreditation/"
+}

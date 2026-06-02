@@ -1,0 +1,9 @@
+{
+	"id": "gnDW67oIwd4z5uW",
+	"json": "{\"id\":\"gnDW67oIwd4z5uW\",\"url\":\"https://www.calhr.ca.gov/about-calhr/divisions-programs/workforce-development-division/workforce-planning/\",\"loadedUrl\":\"https://www.calhr.ca.gov/about-calhr/divisions-programs/workforce-development-division/workforce-planning/\",\"uniqueKey\":\"https://www.calhr.ca.gov/about-calhr/divisions-programs/workforce-development-division/workforce-planning\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:14.116Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.calhr.ca.gov/about-calhr/divisions-programs/workforce-development-division/workforce-planning",
+	"url": "https://www.calhr.ca.gov/about-calhr/divisions-programs/workforce-development-division/workforce-planning/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "tgtAbZtVNx6Qkyy",
+	"json": "{\"id\":\"tgtAbZtVNx6Qkyy\",\"url\":\"https://cnprc.ucdavis.edu/news\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/news\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/news\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:16.461Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cnprc.ucdavis.edu/news",
+	"url": "https://cnprc.ucdavis.edu/news"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "TPMB7mbxCX7FfEi",
+	"json": "{\"id\":\"TPMB7mbxCX7FfEi\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/43277/erynne-faucett-pediatric_otolaryngology-sacramento?FreeText%3aLast+name=Faucett\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/43277/erynne-faucett-pediatric_otolaryngology-sacramento?FreeText%3aLast+name=Faucett\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/43277/erynne-faucett-pediatric_otolaryngology-sacramento?FreeText%3ALast+name=Faucett\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:08.933Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/43277/erynne-faucett-pediatric_otolaryngology-sacramento?FreeText%3ALast+name=Faucett",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/43277/erynne-faucett-pediatric_otolaryngology-sacramento?FreeText%3aLast+name=Faucett"
+}

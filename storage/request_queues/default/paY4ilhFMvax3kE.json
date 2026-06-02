@@ -1,0 +1,9 @@
+{
+	"id": "paY4ilhFMvax3kE",
+	"json": "{\"id\":\"paY4ilhFMvax3kE\",\"url\":\"https://health.ucdavis.edu/believe-in-better/\",\"loadedUrl\":\"https://health.ucdavis.edu/believe-in-better/\",\"uniqueKey\":\"https://health.ucdavis.edu/believe-in-better\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:53.253Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/believe-in-better",
+	"url": "https://health.ucdavis.edu/believe-in-better/"
+}

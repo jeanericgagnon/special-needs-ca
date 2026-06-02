@@ -1,0 +1,9 @@
+{
+	"id": "rBoW6BKluEqjW1k",
+	"json": "{\"id\":\"rBoW6BKluEqjW1k\",\"url\":\"https://health.ucdavis.edu/children/team/21789/mikla-derlet-pediatrics-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/children/team/21789/mikla-derlet-pediatrics-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/children/team/21789/mikla-derlet-pediatrics-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:10.449Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/children/team/21789/mikla-derlet-pediatrics-sacramento",
+	"url": "https://health.ucdavis.edu/children/team/21789/mikla-derlet-pediatrics-sacramento"
+}

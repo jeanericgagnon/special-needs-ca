@@ -1,0 +1,9 @@
+{
+	"id": "Nv98GmROyXjSN3Z",
+	"json": "{\"id\":\"Nv98GmROyXjSN3Z\",\"url\":\"https://give.ucdavis.edu/MIND/DABRAIN\",\"loadedUrl\":\"https://give.ucdavis.edu/MIND/DABRAIN\",\"uniqueKey\":\"https://give.ucdavis.edu/MIND/DABRAIN\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:52.140Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/MIND/DABRAIN",
+	"url": "https://give.ucdavis.edu/MIND/DABRAIN"
+}

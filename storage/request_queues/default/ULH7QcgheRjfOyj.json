@@ -1,0 +1,9 @@
+{
+	"id": "ULH7QcgheRjfOyj",
+	"json": "{\"id\":\"ULH7QcgheRjfOyj\",\"url\":\"https://www.cde.ca.gov/ci/cl/grades4and5lcb.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/cl/grades4and5lcb.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/cl/grades4and5lcb.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:17.926Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ci/cl/grades4and5lcb.asp",
+	"url": "https://www.cde.ca.gov/ci/cl/grades4and5lcb.asp"
+}

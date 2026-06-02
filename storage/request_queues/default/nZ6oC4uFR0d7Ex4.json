@@ -1,0 +1,9 @@
+{
+	"id": "nZ6oC4uFR0d7Ex4",
+	"json": "{\"id\":\"nZ6oC4uFR0d7Ex4\",\"url\":\"https://health.ucdavis.edu/healthprofessionals/library/index.html\",\"loadedUrl\":\"https://health.ucdavis.edu/healthcare-professionals/library/\",\"uniqueKey\":\"https://health.ucdavis.edu/healthprofessionals/library/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:08.922Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/healthprofessionals/library/index.html",
+	"url": "https://health.ucdavis.edu/healthprofessionals/library/index.html"
+}

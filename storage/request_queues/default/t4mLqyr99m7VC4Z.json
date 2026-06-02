@@ -1,0 +1,9 @@
+{
+	"id": "t4mLqyr99m7VC4Z",
+	"json": "{\"id\":\"t4mLqyr99m7VC4Z\",\"url\":\"https://health.ucdavis.edu/healthcare-professionals/news/topic/children-health\",\"loadedUrl\":\"https://health.ucdavis.edu/healthcare-professionals/news/topic/children-health\",\"uniqueKey\":\"https://health.ucdavis.edu/healthcare-professionals/news/topic/children-health\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:12.899Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/healthcare-professionals/news/topic/children-health",
+	"url": "https://health.ucdavis.edu/healthcare-professionals/news/topic/children-health"
+}

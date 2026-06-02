@@ -1,0 +1,9 @@
+{
+	"id": "uM7lXXOo9iz02zX",
+	"json": "{\"id\":\"uM7lXXOo9iz02zX\",\"url\":\"https://secure.ssa.gov/RIL/HdkwsoView.action\",\"loadedUrl\":\"https://secure.ssa.gov/RIL/HdkwsoView.action\",\"uniqueKey\":\"https://secure.ssa.gov/RIL/HdkwsoView.action\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:27.965Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://secure.ssa.gov/RIL/HdkwsoView.action",
+	"url": "https://secure.ssa.gov/RIL/HdkwsoView.action"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "YIWdPRulZ03pdsL",
+	"json": "{\"id\":\"YIWdPRulZ03pdsL\",\"url\":\"https://health.ucdavis.edu/children/team/22041/michelle-hamline-pediatric-hospital-medicine-sacramento-lodi\",\"loadedUrl\":\"https://health.ucdavis.edu/children/team/22041/michelle-hamline-pediatric-hospital-medicine-sacramento-lodi\",\"uniqueKey\":\"https://health.ucdavis.edu/children/team/22041/michelle-hamline-pediatric-hospital-medicine-sacramento-lodi\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:12.871Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/children/team/22041/michelle-hamline-pediatric-hospital-medicine-sacramento-lodi",
+	"url": "https://health.ucdavis.edu/children/team/22041/michelle-hamline-pediatric-hospital-medicine-sacramento-lodi"
+}

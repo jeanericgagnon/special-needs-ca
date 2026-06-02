@@ -1,0 +1,9 @@
+{
+	"id": "AecaBc2EuW5gwfI",
+	"json": "{\"id\":\"AecaBc2EuW5gwfI\",\"url\":\"https://neuroscience.ucdavis.edu/people/jeffery-johnson\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/people/jeffery-johnson\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/people/jeffery-johnson\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:41.871Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://neuroscience.ucdavis.edu/people/jeffery-johnson",
+	"url": "https://neuroscience.ucdavis.edu/people/jeffery-johnson"
+}

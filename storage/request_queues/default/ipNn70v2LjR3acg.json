@@ -1,0 +1,9 @@
+{
+	"id": "ipNn70v2LjR3acg",
+	"json": "{\"id\":\"ipNn70v2LjR3acg\",\"url\":\"https://www.csb-cde.ca.gov/resources/causesvl/cvl-retinoblastoma.aspx\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=dc783f36-5bd2-426e-8891-c32c810486bc&ssb=31925279762&ssc=https%3A%2F%2Fwww.csb-cde.ca.gov%2Fresources%2Fcausesvl%2Fcvl-retinoblastoma.aspx&ssi=a8840148-cuez-4a96-a491-580d421b68a4&ssk=botmanager_support@radware.com&ssm=14869364374743720139518768099704&ssn=888c5611a3eebaf14932e522a29891c5401ae95ecfe6-6ff7-49e9-b4657d&sso=c144a659-93b6eba1a0485dce5280c76fd62f9d32bebb7a91fcf59780&ssp=66374797611780351434178033490741062&ssq=35692252763382341079327619946569498687507&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsInV6bXgiOiI3ZjkwMDBkYTI2YWI2OC1mZTk5LTQwMTgtOTY5MS0wNTMyZGQ0MDNjNzUxLTE3ODAzMjc2MTk3MzQxNDI1OC00MWExM2U4MDljNmJlYTQ0MTMiLCJfX3V6bWYiOiI3ZjkwMDBlOTVlY2ZlNi02ZmY3LTQ5ZTktYjY1OS05M2I2ZWJhMWEwNDgxLTE3ODAzMjc2MTk3MzQxNDI1OC0wMDNhZGYxN2Q2NGZlNWE5MTNkMTMifQ==\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/resources/causesvl/cvl-retinoblastoma.aspx\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:27:14.109Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csb-cde.ca.gov/resources/causesvl/cvl-retinoblastoma.aspx",
+	"url": "https://www.csb-cde.ca.gov/resources/causesvl/cvl-retinoblastoma.aspx"
+}

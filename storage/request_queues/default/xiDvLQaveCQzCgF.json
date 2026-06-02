@@ -1,0 +1,9 @@
+{
+	"id": "xiDvLQaveCQzCgF",
+	"json": "{\"id\":\"xiDvLQaveCQzCgF\",\"url\":\"https://scdd.ca.gov/sb-639-resources/%20\",\"loadedUrl\":\"https://scdd.ca.gov/sb-639-resources/\",\"uniqueKey\":\"https://scdd.ca.gov/sb-639-resources/%20\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:48.760Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/sb-639-resources/%20",
+	"url": "https://scdd.ca.gov/sb-639-resources/%20"
+}

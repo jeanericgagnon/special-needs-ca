@@ -1,0 +1,9 @@
+{
+	"id": "Ditzi35Ve0dMgBj",
+	"json": "{\"id\":\"Ditzi35Ve0dMgBj\",\"url\":\"http://www.hcd.ca.gov/community-development/housing-element/index.shtml\",\"loadedUrl\":\"https://www.hcd.ca.gov/housing-element\",\"uniqueKey\":\"http://www.hcd.ca.gov/community-development/housing-element/index.shtml\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:12:23.045Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.hcd.ca.gov/community-development/housing-element/index.shtml",
+	"url": "http://www.hcd.ca.gov/community-development/housing-element/index.shtml"
+}

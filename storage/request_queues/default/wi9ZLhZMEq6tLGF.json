@@ -1,0 +1,9 @@
+{
+	"id": "wi9ZLhZMEq6tLGF",
+	"json": "{\"id\":\"wi9ZLhZMEq6tLGF\",\"url\":\"https://www.csb-cde.ca.gov/studentlife/awards/index.aspx\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=758c9810-5d4c-4f63-a310-7f7cd41a974c&ssb=79454238070&ssc=https%3A%2F%2Fwww.csb-cde.ca.gov%2Fstudentlife%2Fawards%2Findex.aspx&ssi=a09800bd-cuez-4882-9301-29c8cf075319&ssk=botmanager_support@radware.com&ssm=25175589651559262100351901156102&ssn=2ff1abf1913c684c4e9e3fb4c8287c789771fcf4a626-c48a-4df3-a6e91b&sso=ebbc289e-9a58ac15469445433d104f98fac692df400e6a9309634d0c&ssp=88331231021780327428178035115025427&ssq=00461882590560615207925905632599768554811&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBmY2Y0YTYyNi1jNDhhLTRkZjMtYTg5ZS05YTU4YWMxNTQ2OTQxLTE3ODAzMjU5MDU2NjkwLTAwMzYwYzY3N2RlNDE5ZmYwNWYxMCIsInV6bXgiOiI3ZjkwMDA1ZDE1NjViZi1lMzU0LTQ4NGMtYTRmOC1lOWQ4MmExMWE0OTcxLTE3ODAzMjU5MDU2NjkwLTU4NmMwNDkxYWJjZDgzNWYxMCIsInJkIjoiY2EuZ292In0=\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/studentlife/awards/index.aspx\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T14:58:25.802Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csb-cde.ca.gov/studentlife/awards/index.aspx",
+	"url": "https://www.csb-cde.ca.gov/studentlife/awards/index.aspx"
+}

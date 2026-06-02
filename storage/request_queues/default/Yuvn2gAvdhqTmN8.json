@@ -1,0 +1,9 @@
+{
+	"id": "Yuvn2gAvdhqTmN8",
+	"json": "{\"id\":\"Yuvn2gAvdhqTmN8\",\"url\":\"https://cdss.ca.gov/inforesources/Automated-Assistance-Claims/Residentially-Based-Services-Claims\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/automated-assistance-claims/residentially-based-services-claims\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Automated-Assistance-Claims/Residentially-Based-Services-Claims\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:34.548Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/Automated-Assistance-Claims/Residentially-Based-Services-Claims",
+	"url": "https://cdss.ca.gov/inforesources/Automated-Assistance-Claims/Residentially-Based-Services-Claims"
+}

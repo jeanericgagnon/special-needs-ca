@@ -1,0 +1,9 @@
+{
+	"id": "hXTDbnp4XLFO5lk",
+	"json": "{\"id\":\"hXTDbnp4XLFO5lk\",\"url\":\"https://www.cde.ca.gov/ci/sc/im/sciencepubcontact.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=6fc638af-0bbc-434c-9ecf-ed2a36599068&ssb=02591268458&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fci%2Fsc%2Fim%2Fsciencepubcontact.asp&ssi=55f7f4aa-ctxv-4465-9219-2bbdf988595a&ssk=botmanager_support@radware.com&ssm=09782716888304874104553986338963&ssn=5d2c8474e034ec31a1c63d887942565af6c298de1112-f55c-4874-a7cabb&sso=815cf0c5-17d3e94327b0843bcb56eff11c174d0cd983bf8fb59dbcbc&ssp=02597763061780378748178038254457660&ssq=53885935636953556626556369582243423305703&ssr=MTcyLjU2LjI0My4xOTM=&sst=&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsIl9fdXptZiI6IjdmOTAwMDk4ZGUxMTEyLWY1NWMtNDg3NC1hMGM1LTE3ZDNlOTQzMjdiMDEtMTc4MDM1NjM2OTYzNDAtMDAzMjFiMTA3ZjIyNThlZGJlMTEwIiwidXpteCI6IjdmOTAwMDExZWY1YjU2LWQyN2ItNDQ3ZS1hYTAxLWUyMjJhOThhN2RmNjEtMTc4MDM1NjM2OTYzNDAtZmIzOWEwMTI3ZWM0NmQwYzEwIn0=\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/sc/im/sciencepubcontact.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T23:26:10.125Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ci/sc/im/sciencepubcontact.asp",
+	"url": "https://www.cde.ca.gov/ci/sc/im/sciencepubcontact.asp"
+}

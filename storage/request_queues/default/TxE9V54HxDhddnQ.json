@@ -1,0 +1,9 @@
+{
+	"id": "TxE9V54HxDhddnQ",
+	"json": "{\"id\":\"TxE9V54HxDhddnQ\",\"url\":\"https://calable.ca.gov/api/v1/@apostrophecms/page/ckrfdjp1b00h1icouaho0sqfc:en:published/locale/es\",\"loadedUrl\":\"https://calable.ca.gov/es/recursos/formularios\",\"uniqueKey\":\"https://calable.ca.gov/api/v1/@apostrophecms/page/ckrfdjp1b00h1icouaho0sqfc:en:published/locale/es\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:40.751Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://calable.ca.gov/api/v1/@apostrophecms/page/ckrfdjp1b00h1icouaho0sqfc:en:published/locale/es",
+	"url": "https://calable.ca.gov/api/v1/@apostrophecms/page/ckrfdjp1b00h1icouaho0sqfc:en:published/locale/es"
+}

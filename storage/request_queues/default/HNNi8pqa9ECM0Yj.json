@@ -1,0 +1,9 @@
+{
+	"id": "HNNi8pqa9ECM0Yj",
+	"json": "{\"id\":\"HNNi8pqa9ECM0Yj\",\"url\":\"http://www.alumni.ucdavis.edu/#footer\",\"loadedUrl\":\"https://alumni.ucdavis.edu/\",\"uniqueKey\":\"http://www.alumni.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:48.141Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.alumni.ucdavis.edu",
+	"url": "http://www.alumni.ucdavis.edu/#footer"
+}

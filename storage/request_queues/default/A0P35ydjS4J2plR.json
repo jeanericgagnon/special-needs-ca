@@ -1,0 +1,9 @@
+{
+	"id": "A0P35ydjS4J2plR",
+	"json": "{\"id\":\"A0P35ydjS4J2plR\",\"url\":\"https://www.cdph.ca.gov/Programs/EPO/Pages/BI_Natural-Disaster_Know-and-Understand.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/EPO/Pages/BI_Natural-Disaster_Know-and-Understand.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/EPO/Pages/BI_Natural-Disaster_Know-and-Understand.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:04.385Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/EPO/Pages/BI_Natural-Disaster_Know-and-Understand.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/EPO/Pages/BI_Natural-Disaster_Know-and-Understand.aspx"
+}

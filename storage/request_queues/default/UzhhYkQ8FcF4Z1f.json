@@ -1,0 +1,9 @@
+{
+	"id": "UzhhYkQ8FcF4Z1f",
+	"json": "{\"id\":\"UzhhYkQ8FcF4Z1f\",\"url\":\"https://apps.dhcs.ca.gov/listsubscribe/default.aspx?list=BHTTRANSFORMATION\",\"loadedUrl\":\"https://apps.dhcs.ca.gov/listsubscribe/default.aspx?list=BHTTRANSFORMATION\",\"uniqueKey\":\"https://apps.dhcs.ca.gov/listsubscribe/default.aspx?list=BHTTRANSFORMATION\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:36.429Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://apps.dhcs.ca.gov/listsubscribe/default.aspx?list=BHTTRANSFORMATION",
+	"url": "https://apps.dhcs.ca.gov/listsubscribe/default.aspx?list=BHTTRANSFORMATION"
+}

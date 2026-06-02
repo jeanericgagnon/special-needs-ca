@@ -1,0 +1,9 @@
+{
+	"id": "ZYGjcHdhH2cLXAX",
+	"json": "{\"id\":\"ZYGjcHdhH2cLXAX\",\"url\":\"https://www.cdii.ca.gov/about/divisions/\",\"loadedUrl\":\"https://www.cdii.ca.gov/about/divisions/\",\"uniqueKey\":\"https://www.cdii.ca.gov/about/divisions\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:28:34.331Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdii.ca.gov/about/divisions",
+	"url": "https://www.cdii.ca.gov/about/divisions/"
+}

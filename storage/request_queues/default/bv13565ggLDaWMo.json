@@ -1,0 +1,9 @@
+{
+	"id": "bv13565ggLDaWMo",
+	"json": "{\"id\":\"bv13565ggLDaWMo\",\"url\":\"https://health.ucdavis.edu/children/services/pediatric-allergy-immunology-rheumatology/\",\"loadedUrl\":\"https://health.ucdavis.edu/children/services/pediatric-allergy-immunology-rheumatology/\",\"uniqueKey\":\"https://health.ucdavis.edu/children/services/pediatric-allergy-immunology-rheumatology\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:12.914Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/children/services/pediatric-allergy-immunology-rheumatology",
+	"url": "https://health.ucdavis.edu/children/services/pediatric-allergy-immunology-rheumatology/"
+}

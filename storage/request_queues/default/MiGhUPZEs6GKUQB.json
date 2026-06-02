@@ -1,0 +1,9 @@
+{
+	"id": "MiGhUPZEs6GKUQB",
+	"json": "{\"id\":\"MiGhUPZEs6GKUQB\",\"url\":\"https://alumni.ucdavis.edu/college-and-schools-magazines\",\"loadedUrl\":\"https://alumni.ucdavis.edu/college-and-schools-magazines\",\"uniqueKey\":\"https://alumni.ucdavis.edu/college-and-schools-magazines\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:06.137Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://alumni.ucdavis.edu/college-and-schools-magazines",
+	"url": "https://alumni.ucdavis.edu/college-and-schools-magazines"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "D7TQnXC4H4HGdSV",
+	"json": "{\"id\":\"D7TQnXC4H4HGdSV\",\"url\":\"https://rarediseases.org/rare-diseases/adult-onset-stills-disease/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/adult-onset-stills-disease/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/adult-onset-stills-disease\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:13:33.836Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/rare-diseases/adult-onset-stills-disease",
+	"url": "https://rarediseases.org/rare-diseases/adult-onset-stills-disease/"
+}

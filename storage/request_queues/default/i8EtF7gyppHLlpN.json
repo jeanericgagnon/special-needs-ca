@@ -1,0 +1,9 @@
+{
+	"id": "i8EtF7gyppHLlpN",
+	"json": "{\"id\":\"i8EtF7gyppHLlpN\",\"url\":\"https://swaab.faculty.ucdavis.edu/\",\"loadedUrl\":\"https://swaab.faculty.ucdavis.edu/\",\"uniqueKey\":\"https://swaab.faculty.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:09.110Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://swaab.faculty.ucdavis.edu",
+	"url": "https://swaab.faculty.ucdavis.edu/"
+}

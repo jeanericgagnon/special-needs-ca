@@ -1,0 +1,9 @@
+{
+	"id": "4UqmBlzqOSF9QbE",
+	"json": "{\"id\":\"4UqmBlzqOSF9QbE\",\"url\":\"https://neuroscience.ucdavis.edu/news/uc-davis-ranked-no-10-among-nations-public-universities\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/news/uc-davis-ranked-no-10-among-nations-public-universities\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/news/uc-davis-ranked-no-10-among-nations-public-universities\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:01.707Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://neuroscience.ucdavis.edu/news/uc-davis-ranked-no-10-among-nations-public-universities",
+	"url": "https://neuroscience.ucdavis.edu/news/uc-davis-ranked-no-10-among-nations-public-universities"
+}

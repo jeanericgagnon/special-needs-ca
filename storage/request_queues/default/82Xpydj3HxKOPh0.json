@@ -1,0 +1,9 @@
+{
+	"id": "82Xpydj3HxKOPh0",
+	"json": "{\"id\":\"82Xpydj3HxKOPh0\",\"url\":\"https://dq.cde.ca.gov/dataquest/SpringData/StudentsByLanguage.aspx?Level=State&TheYear=2025-26&SubGroup=All&ShortYear=2526&GenderGroup=B&CDSCode=00000000000000&RecordType=EL\",\"loadedUrl\":\"https://dq.cde.ca.gov/dataquest/SpringData/StudentsByLanguage.aspx?Level=State&TheYear=2025-26&SubGroup=All&ShortYear=2526&GenderGroup=B&CDSCode=00000000000000&RecordType=EL\",\"uniqueKey\":\"https://dq.cde.ca.gov/dataquest/SpringData/StudentsByLanguage.aspx?CDSCode=00000000000000&GenderGroup=B&Level=State&RecordType=EL&ShortYear=2526&SubGroup=All&TheYear=2025-26\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:09:07.654Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://dq.cde.ca.gov/dataquest/SpringData/StudentsByLanguage.aspx?CDSCode=00000000000000&GenderGroup=B&Level=State&RecordType=EL&ShortYear=2526&SubGroup=All&TheYear=2025-26",
+	"url": "https://dq.cde.ca.gov/dataquest/SpringData/StudentsByLanguage.aspx?Level=State&TheYear=2025-26&SubGroup=All&ShortYear=2526&GenderGroup=B&CDSCode=00000000000000&RecordType=EL"
+}

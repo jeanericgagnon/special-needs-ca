@@ -1,0 +1,9 @@
+{
+	"id": "bbkQXC3ykitDIbo",
+	"json": "{\"id\":\"bbkQXC3ykitDIbo\",\"url\":\"https://neuroscience.ucdavis.edu/stroke\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/stroke\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/stroke\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:50.417Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://neuroscience.ucdavis.edu/stroke",
+	"url": "https://neuroscience.ucdavis.edu/stroke"
+}

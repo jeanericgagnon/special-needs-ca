@@ -1,0 +1,9 @@
+{
+	"id": "pGwShISo7XgkwVg",
+	"json": "{\"id\":\"pGwShISo7XgkwVg\",\"url\":\"https://rarediseases.org/state-resource-center/?filter_state-resource-type=insurance\",\"loadedUrl\":\"https://rarediseases.org/state-resource-center/?filter_state-resource-type=insurance\",\"uniqueKey\":\"https://rarediseases.org/state-resource-center?filter_state-resource-type=insurance\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:12:27.194Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/state-resource-center?filter_state-resource-type=insurance",
+	"url": "https://rarediseases.org/state-resource-center/?filter_state-resource-type=insurance"
+}

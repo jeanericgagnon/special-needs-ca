@@ -1,0 +1,9 @@
+{
+	"id": "fYsj2fhhgU5n1lJ",
+	"json": "{\"id\":\"fYsj2fhhgU5n1lJ\",\"url\":\"https://lettersandscience.ucdavis.edu/cdn-cgi/l/email-protection#5f333a2b2b3a2d2c3e313b2c3c363a313c3a1f2a3c3b3e29362c713a3b2a\",\"loadedUrl\":\"https://lettersandscience.ucdavis.edu/cdn-cgi/l/email-protection#5f333a2b2b3a2d2c3e313b2c3c363a313c3a1f2a3c3b3e29362c713a3b2a\",\"uniqueKey\":\"https://lettersandscience.ucdavis.edu/cdn-cgi/l/email-protection\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:24.522Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://lettersandscience.ucdavis.edu/cdn-cgi/l/email-protection",
+	"url": "https://lettersandscience.ucdavis.edu/cdn-cgi/l/email-protection#5f333a2b2b3a2d2c3e313b2c3c363a313c3a1f2a3c3b3e29362c713a3b2a"
+}

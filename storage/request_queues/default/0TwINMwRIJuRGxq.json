@@ -1,0 +1,9 @@
+{
+	"id": "0TwINMwRIJuRGxq",
+	"json": "{\"id\":\"0TwINMwRIJuRGxq\",\"url\":\"https://philosophy.ucdavis.edu/\",\"loadedUrl\":\"https://philosophy.ucdavis.edu/\",\"uniqueKey\":\"https://philosophy.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:06.049Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://philosophy.ucdavis.edu",
+	"url": "https://philosophy.ucdavis.edu/"
+}

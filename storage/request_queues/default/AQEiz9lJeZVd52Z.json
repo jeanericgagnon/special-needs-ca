@@ -1,0 +1,9 @@
+{
+	"id": "AQEiz9lJeZVd52Z",
+	"json": "{\"id\":\"AQEiz9lJeZVd52Z\",\"url\":\"https://health.ucdavis.edu/children/team/42368/elysia-alvarez-cancer-pediatric-oncology-sarcoma-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/children/team/42368/elysia-alvarez-cancer-pediatric-oncology-sarcoma-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/children/team/42368/elysia-alvarez-cancer-pediatric-oncology-sarcoma-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:12.651Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/children/team/42368/elysia-alvarez-cancer-pediatric-oncology-sarcoma-sacramento",
+	"url": "https://health.ucdavis.edu/children/team/42368/elysia-alvarez-cancer-pediatric-oncology-sarcoma-sacramento"
+}

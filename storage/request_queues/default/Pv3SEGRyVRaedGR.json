@@ -1,0 +1,9 @@
+{
+	"id": "Pv3SEGRyVRaedGR",
+	"json": "{\"id\":\"Pv3SEGRyVRaedGR\",\"url\":\"https://www.cdph.ca.gov/Programs/OPG/Pages/types-of-treatment.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/OPG/Pages/types-of-treatment.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/OPG/Pages/types-of-treatment.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:03:57.592Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/OPG/Pages/types-of-treatment.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/OPG/Pages/types-of-treatment.aspx"
+}

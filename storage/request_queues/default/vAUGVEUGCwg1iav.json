@@ -1,0 +1,9 @@
+{
+	"id": "vAUGVEUGCwg1iav",
+	"json": "{\"id\":\"vAUGVEUGCwg1iav\",\"url\":\"https://health.ucdavis.edu/healthcare-professionals/featured-specialties/rehabilitation\",\"loadedUrl\":\"https://health.ucdavis.edu/healthcare-professionals/featured-specialties/rehabilitation\",\"uniqueKey\":\"https://health.ucdavis.edu/healthcare-professionals/featured-specialties/rehabilitation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:49.915Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/healthcare-professionals/featured-specialties/rehabilitation",
+	"url": "https://health.ucdavis.edu/healthcare-professionals/featured-specialties/rehabilitation"
+}

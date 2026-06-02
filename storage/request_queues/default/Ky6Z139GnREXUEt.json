@@ -1,0 +1,9 @@
+{
+	"id": "Ky6Z139GnREXUEt",
+	"json": "{\"id\":\"Ky6Z139GnREXUEt\",\"url\":\"https://mychart.ucdavis.edu/MyChart/ProxyInstructions.html\",\"loadedUrl\":\"https://mychart.ucdavis.edu/MyChart/ProxyInstructions.html\",\"uniqueKey\":\"https://mychart.ucdavis.edu/MyChart/ProxyInstructions.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:12:02.016Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://mychart.ucdavis.edu/MyChart/ProxyInstructions.html",
+	"url": "https://mychart.ucdavis.edu/MyChart/ProxyInstructions.html"
+}

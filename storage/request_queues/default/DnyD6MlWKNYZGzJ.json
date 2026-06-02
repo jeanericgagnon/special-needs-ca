@@ -1,0 +1,9 @@
+{
+	"id": "DnyD6MlWKNYZGzJ",
+	"json": "{\"id\":\"DnyD6MlWKNYZGzJ\",\"url\":\"https://neuroscience.ucdavis.edu/person-type/staff\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/person-type/staff\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/person-type/staff\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:59.201Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://neuroscience.ucdavis.edu/person-type/staff",
+	"url": "https://neuroscience.ucdavis.edu/person-type/staff"
+}

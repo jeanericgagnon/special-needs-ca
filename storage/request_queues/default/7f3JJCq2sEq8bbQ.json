@@ -1,0 +1,9 @@
+{
+	"id": "7f3JJCq2sEq8bbQ",
+	"json": "{\"id\":\"7f3JJCq2sEq8bbQ\",\"url\":\"https://rarediseases.org/state-resource-center/?filter_state-resource-type=education\",\"loadedUrl\":\"https://rarediseases.org/state-resource-center/?filter_state-resource-type=education\",\"uniqueKey\":\"https://rarediseases.org/state-resource-center?filter_state-resource-type=education\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:12:22.890Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/state-resource-center?filter_state-resource-type=education",
+	"url": "https://rarediseases.org/state-resource-center/?filter_state-resource-type=education"
+}

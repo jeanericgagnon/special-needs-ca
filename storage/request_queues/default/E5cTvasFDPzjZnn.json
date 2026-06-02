@@ -1,0 +1,9 @@
+{
+	"id": "E5cTvasFDPzjZnn",
+	"json": "{\"id\":\"E5cTvasFDPzjZnn\",\"url\":\"https://calable.ca.gov/faqs/how-do-i-know-if-i-m-an-authorized-legal-representative-alr\",\"loadedUrl\":\"https://calable.ca.gov/faqs/how-do-i-know-if-i-m-an-authorized-legal-representative-alr\",\"uniqueKey\":\"https://calable.ca.gov/faqs/how-do-i-know-if-i-m-an-authorized-legal-representative-alr\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:49.862Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://calable.ca.gov/faqs/how-do-i-know-if-i-m-an-authorized-legal-representative-alr",
+	"url": "https://calable.ca.gov/faqs/how-do-i-know-if-i-m-an-authorized-legal-representative-alr"
+}

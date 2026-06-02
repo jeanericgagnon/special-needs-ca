@@ -1,0 +1,9 @@
+{
+	"id": "aXn4UpcADvCV6Re",
+	"json": "{\"id\":\"aXn4UpcADvCV6Re\",\"url\":\"https://www.cde.ca.gov/ta/cr/cyclealeassel.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=b05e47a6-2f25-4705-a5ce-1fd49e3841ed&ssb=52749243278&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fta%2Fcr%2Fcyclealeassel.asp&ssi=c6abe3c0-ctxv-4fdd-a0c6-cf997e4ff6c4&ssk=botmanager_support@radware.com&ssm=00501258590195199109168411924437&ssn=7421a233fadd23106a6225340e579d7f8baff9e3914a-a564-4c66-b5e527&sso=365e0030-2dfa874585b5e54e9f762becb5bc0c1411128ed2cc094a43&ssp=58697576191780383107178030182144007&ssq=56769322671909809110426719142221370030265&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBmOWUzOTE0YS1hNTY0LTRjNjYtYjAzMC0yZGZhODc0NTg1YjUxLTE3ODAzMjY3MTkyNDIwLTAwMzAyZDczMTA0NzliOTM1NTQxMCIsInJkIjoiY2EuZ292IiwidXpteCI6IjdmOTAwMDQwNGI5YjZjLWZiNjAtNGM2Yy1hMzBlLWNlY2RkYjgyOTljZjEtMTc4MDMyNjcxOTI0MjAtMWQ5ZjU5ZjM0ZTFmMDYxNzEwIn0=\",\"uniqueKey\":\"https://www.cde.ca.gov/ta/cr/cyclealeassel.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:11:59.721Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ta/cr/cyclealeassel.asp",
+	"url": "https://www.cde.ca.gov/ta/cr/cyclealeassel.asp"
+}

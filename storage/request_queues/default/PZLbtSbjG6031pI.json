@@ -1,0 +1,9 @@
+{
+	"id": "PZLbtSbjG6031pI",
+	"json": "{\"id\":\"PZLbtSbjG6031pI\",\"url\":\"https://www.cdph.ca.gov/Programs/DO/letstalkcannabis/Pages/responsibleuse.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/DO/letstalkcannabis/Pages/responsibleuse.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/DO/letstalkcannabis/Pages/responsibleuse.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:03:25.759Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/DO/letstalkcannabis/Pages/responsibleuse.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/DO/letstalkcannabis/Pages/responsibleuse.aspx"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "wXR7gbiDeus24oH",
+	"json": "{\"id\":\"wXR7gbiDeus24oH\",\"url\":\"https://www5.cde.ca.gov/pgms/Logon\",\"loadedUrl\":\"https://www5.cde.ca.gov/pgms/Logon\",\"uniqueKey\":\"https://www5.cde.ca.gov/pgms/Logon\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:36.760Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www5.cde.ca.gov/pgms/Logon",
+	"url": "https://www5.cde.ca.gov/pgms/Logon"
+}

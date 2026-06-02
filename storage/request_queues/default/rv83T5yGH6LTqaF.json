@@ -1,0 +1,9 @@
+{
+	"id": "rv83T5yGH6LTqaF",
+	"json": "{\"id\":\"rv83T5yGH6LTqaF\",\"url\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/CalHealthFind/_layouts/15/spcontnt.aspx?&url=https%3A%2F%2Fwww%2Ecdph%2Eca%2Egov%2FPrograms%2FCHCQ%2FLCP%2FCalHealthFind%2FPages%2FSTATE%5FPENALTY%5F1424%2Easpx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/CalHealthFind/Pages/Home.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/CalHealthFind/_layouts/15/spcontnt.aspx?url=https%3A%2F%2Fwww.cdph.ca.gov%2FPrograms%2FCHCQ%2FLCP%2FCalHealthFind%2FPages%2FSTATE_PENALTY_1424.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T18:45:15.441Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CHCQ/LCP/CalHealthFind/_layouts/15/spcontnt.aspx?url=https%3A%2F%2Fwww.cdph.ca.gov%2FPrograms%2FCHCQ%2FLCP%2FCalHealthFind%2FPages%2FSTATE_PENALTY_1424.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CHCQ/LCP/CalHealthFind/_layouts/15/spcontnt.aspx?&url=https%3A%2F%2Fwww%2Ecdph%2Eca%2Egov%2FPrograms%2FCHCQ%2FLCP%2FCalHealthFind%2FPages%2FSTATE%5FPENALTY%5F1424%2Easpx"
+}

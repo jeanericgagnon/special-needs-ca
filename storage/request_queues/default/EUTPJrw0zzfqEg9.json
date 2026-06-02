@@ -1,0 +1,9 @@
+{
+	"id": "EUTPJrw0zzfqEg9",
+	"json": "{\"id\":\"EUTPJrw0zzfqEg9\",\"url\":\"https://neuroscience.ucdavis.edu/people/logan-bartholdi\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/people/logan-bartholdi\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/people/logan-bartholdi\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:40.556Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://neuroscience.ucdavis.edu/people/logan-bartholdi",
+	"url": "https://neuroscience.ucdavis.edu/people/logan-bartholdi"
+}

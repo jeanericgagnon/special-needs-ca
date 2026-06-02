@@ -1,0 +1,9 @@
+{
+	"id": "17ltUME3JEkaoik",
+	"json": "{\"id\":\"17ltUME3JEkaoik\",\"url\":\"https://health.ucdavis.edu/medicalcenter/cliniclocations/primarycare/index.html\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-center/cliniclocations/primarycare/\",\"uniqueKey\":\"https://health.ucdavis.edu/medicalcenter/cliniclocations/primarycare/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:08.247Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/medicalcenter/cliniclocations/primarycare/index.html",
+	"url": "https://health.ucdavis.edu/medicalcenter/cliniclocations/primarycare/index.html"
+}

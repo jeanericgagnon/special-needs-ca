@@ -1,0 +1,9 @@
+{
+	"id": "S285mFRfytdHZyO",
+	"json": "{\"id\":\"S285mFRfytdHZyO\",\"url\":\"https://health.ucdavis.edu/welcome/donate-blood/\",\"loadedUrl\":\"https://health.ucdavis.edu/welcome/donate-blood/\",\"uniqueKey\":\"https://health.ucdavis.edu/welcome/donate-blood\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:57.842Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/welcome/donate-blood",
+	"url": "https://health.ucdavis.edu/welcome/donate-blood/"
+}

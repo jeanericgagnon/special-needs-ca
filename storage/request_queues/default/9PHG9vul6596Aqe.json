@@ -1,0 +1,9 @@
+{
+	"id": "9PHG9vul6596Aqe",
+	"json": "{\"id\":\"9PHG9vul6596Aqe\",\"url\":\"https://health.ucdavis.edu/internal-medicine/research/research-committee\",\"loadedUrl\":\"https://health.ucdavis.edu/internal-medicine/research/research-committee\",\"uniqueKey\":\"https://health.ucdavis.edu/internal-medicine/research/research-committee\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:34:25.735Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/internal-medicine/research/research-committee",
+	"url": "https://health.ucdavis.edu/internal-medicine/research/research-committee"
+}

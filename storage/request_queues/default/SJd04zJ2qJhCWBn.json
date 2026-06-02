@@ -1,0 +1,9 @@
+{
+	"id": "SJd04zJ2qJhCWBn",
+	"json": "{\"id\":\"SJd04zJ2qJhCWBn\",\"url\":\"https://physicians.ucdavis.edu/?Specialties=10564&view=tiled\",\"loadedUrl\":\"https://physicians.ucdavis.edu/?Specialties=10564&view=tiled\",\"uniqueKey\":\"https://physicians.ucdavis.edu?Specialties=10564&view=tiled\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:58.395Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://physicians.ucdavis.edu?Specialties=10564&view=tiled",
+	"url": "https://physicians.ucdavis.edu/?Specialties=10564&view=tiled"
+}

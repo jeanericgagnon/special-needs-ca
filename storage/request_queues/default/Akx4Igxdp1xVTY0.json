@@ -1,0 +1,9 @@
+{
+	"id": "Akx4Igxdp1xVTY0",
+	"json": "{\"id\":\"Akx4Igxdp1xVTY0\",\"url\":\"https://reportcards.cdii.ca.gov/rc/medicalgroupcounty.aspx\",\"loadedUrl\":\"https://reportcards.cdii.ca.gov/rc/medicalgroupcounty.aspx\",\"uniqueKey\":\"https://reportcards.cdii.ca.gov/rc/medicalgroupcounty.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:28:31.113Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://reportcards.cdii.ca.gov/rc/medicalgroupcounty.aspx",
+	"url": "https://reportcards.cdii.ca.gov/rc/medicalgroupcounty.aspx"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "1cQ3Arc8QqYhu1Z",
+	"json": "{\"id\":\"1cQ3Arc8QqYhu1Z\",\"url\":\"http://www.cde.ca.gov/fg/fo/r14/imm26result.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/fg/fo/r14/imm26result.asp\",\"uniqueKey\":\"http://www.cde.ca.gov/fg/fo/r14/imm26result.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:22:58.826Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.cde.ca.gov/fg/fo/r14/imm26result.asp",
+	"url": "http://www.cde.ca.gov/fg/fo/r14/imm26result.asp"
+}

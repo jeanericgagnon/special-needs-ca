@@ -1,0 +1,9 @@
+{
+	"id": "andSMURgWZOUHBl",
+	"json": "{\"id\":\"andSMURgWZOUHBl\",\"url\":\"https://edd.ca.gov/simplified-chinese/\",\"loadedUrl\":\"https://edd.ca.gov/simplified-chinese/\",\"uniqueKey\":\"https://edd.ca.gov/simplified-chinese\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:42.809Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://edd.ca.gov/simplified-chinese",
+	"url": "https://edd.ca.gov/simplified-chinese/"
+}

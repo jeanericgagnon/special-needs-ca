@@ -1,0 +1,9 @@
+{
+	"id": "wxuw1plR76yeqdk",
+	"json": "{\"id\":\"wxuw1plR76yeqdk\",\"url\":\"https://www.cde.ca.gov/re/di/st/\",\"loadedUrl\":\"https://www.cde.ca.gov/re/di/st/\",\"uniqueKey\":\"https://www.cde.ca.gov/re/di/st\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:24:00.897Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/re/di/st",
+	"url": "https://www.cde.ca.gov/re/di/st/"
+}

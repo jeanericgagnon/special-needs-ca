@@ -1,0 +1,9 @@
+{
+	"id": "DXjzG1aO1ev9IFt",
+	"json": "{\"id\":\"DXjzG1aO1ev9IFt\",\"url\":\"https://hr.ucdavis.edu/news/benefits\",\"loadedUrl\":\"https://hr.ucdavis.edu/news/benefits\",\"uniqueKey\":\"https://hr.ucdavis.edu/news/benefits\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:32.073Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/news/benefits",
+	"url": "https://hr.ucdavis.edu/news/benefits"
+}

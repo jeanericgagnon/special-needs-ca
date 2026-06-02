@@ -1,0 +1,9 @@
+{
+	"id": "Z3n2uJaaxfwmoYq",
+	"json": "{\"id\":\"Z3n2uJaaxfwmoYq\",\"url\":\"https://health.ucdavis.edu/patients-visitors/news/headlines/the-next-pandemic-covid-19-showed-us-how-we-can-fight-the-next-global-outbreak/2025/02\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/news/headlines/the-next-pandemic-covid-19-showed-us-how-we-can-fight-the-next-global-outbreak/2025/02\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/news/headlines/the-next-pandemic-covid-19-showed-us-how-we-can-fight-the-next-global-outbreak/2025/02\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:39.006Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/news/headlines/the-next-pandemic-covid-19-showed-us-how-we-can-fight-the-next-global-outbreak/2025/02",
+	"url": "https://health.ucdavis.edu/patients-visitors/news/headlines/the-next-pandemic-covid-19-showed-us-how-we-can-fight-the-next-global-outbreak/2025/02"
+}

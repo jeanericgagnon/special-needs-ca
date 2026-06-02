@@ -1,0 +1,9 @@
+{
+	"id": "Fegfx3TCewmEGEf",
+	"json": "{\"id\":\"Fegfx3TCewmEGEf\",\"url\":\"https://financeandbusiness.ucdavis.edu/student-resources/tuition-fees/graduate\",\"loadedUrl\":\"https://financeandbusiness.ucdavis.edu/student-resources/tuition-fees/graduate\",\"uniqueKey\":\"https://financeandbusiness.ucdavis.edu/student-resources/tuition-fees/graduate\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:49.546Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://financeandbusiness.ucdavis.edu/student-resources/tuition-fees/graduate",
+	"url": "https://financeandbusiness.ucdavis.edu/student-resources/tuition-fees/graduate"
+}

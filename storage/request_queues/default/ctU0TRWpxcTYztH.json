@@ -1,0 +1,9 @@
+{
+	"id": "ctU0TRWpxcTYztH",
+	"json": "{\"id\":\"ctU0TRWpxcTYztH\",\"url\":\"https://health.ucdavis.edu/aboutus/150th-anniversary/articles/into-the-2020s.html\",\"loadedUrl\":\"https://health.ucdavis.edu/aboutus/150th-anniversary/articles/into-the-2020s.html\",\"uniqueKey\":\"https://health.ucdavis.edu/aboutus/150th-anniversary/articles/into-the-2020s.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:09.368Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/aboutus/150th-anniversary/articles/into-the-2020s.html",
+	"url": "https://health.ucdavis.edu/aboutus/150th-anniversary/articles/into-the-2020s.html"
+}

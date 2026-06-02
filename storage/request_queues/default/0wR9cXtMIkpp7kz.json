@@ -1,0 +1,9 @@
+{
+	"id": "0wR9cXtMIkpp7kz",
+	"json": "{\"id\":\"0wR9cXtMIkpp7kz\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/11663/anastasia-ana-waechter-gastroenterology_and_hepatology-elk_grove?FreeText%3aLast+name=Waechter\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/11663/anastasia-ana-waechter-gastroenterology_and_hepatology-elk_grove?FreeText%3aLast+name=Waechter\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/11663/anastasia-ana-waechter-gastroenterology_and_hepatology-elk_grove?FreeText%3ALast+name=Waechter\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:09.948Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/11663/anastasia-ana-waechter-gastroenterology_and_hepatology-elk_grove?FreeText%3ALast+name=Waechter",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/11663/anastasia-ana-waechter-gastroenterology_and_hepatology-elk_grove?FreeText%3aLast+name=Waechter"
+}

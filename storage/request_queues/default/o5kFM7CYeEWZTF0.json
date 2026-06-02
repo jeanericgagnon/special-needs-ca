@@ -1,0 +1,9 @@
+{
+	"id": "o5kFM7CYeEWZTF0",
+	"json": "{\"id\":\"o5kFM7CYeEWZTF0\",\"url\":\"http://www.cdss.ca.gov/inforesources/statewide-outreach\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/statewide-outreach\",\"uniqueKey\":\"http://www.cdss.ca.gov/inforesources/statewide-outreach\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:33.632Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.cdss.ca.gov/inforesources/statewide-outreach",
+	"url": "http://www.cdss.ca.gov/inforesources/statewide-outreach"
+}

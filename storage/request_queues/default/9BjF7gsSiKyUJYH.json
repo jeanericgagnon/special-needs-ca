@@ -1,0 +1,9 @@
+{
+	"id": "9BjF7gsSiKyUJYH",
+	"json": "{\"id\":\"9BjF7gsSiKyUJYH\",\"url\":\"https://www.ucdavis.edu/about/rankings\",\"loadedUrl\":\"https://www.ucdavis.edu/about/rankings\",\"uniqueKey\":\"https://www.ucdavis.edu/about/rankings\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:03:22.545Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ucdavis.edu/about/rankings",
+	"url": "https://www.ucdavis.edu/about/rankings"
+}

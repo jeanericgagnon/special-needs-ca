@@ -1,0 +1,9 @@
+{
+	"id": "DdooH2R5wJxfxs5",
+	"json": "{\"id\":\"DdooH2R5wJxfxs5\",\"url\":\"https://health.ucdavis.edu/media-resources/about/documents/pdfs/community-health-needs-assessment.pdf\",\"loadedUrl\":\"https://health.ucdavis.edu/media-resources/about/documents/pdfs/community-health-needs-assessment.pdf\",\"uniqueKey\":\"https://health.ucdavis.edu/media-resources/about/documents/pdfs/community-health-needs-assessment.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:02.792Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/media-resources/about/documents/pdfs/community-health-needs-assessment.pdf",
+	"url": "https://health.ucdavis.edu/media-resources/about/documents/pdfs/community-health-needs-assessment.pdf"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "2Z2C4m5IyKeSqaw",
+	"json": "{\"id\":\"2Z2C4m5IyKeSqaw\",\"url\":\"https://health.ucdavis.edu/compliance/privacy/privacy-and-security-training\",\"loadedUrl\":\"https://health.ucdavis.edu/compliance/privacy/privacy-and-security-training\",\"uniqueKey\":\"https://health.ucdavis.edu/compliance/privacy/privacy-and-security-training\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:33.025Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/compliance/privacy/privacy-and-security-training",
+	"url": "https://health.ucdavis.edu/compliance/privacy/privacy-and-security-training"
+}

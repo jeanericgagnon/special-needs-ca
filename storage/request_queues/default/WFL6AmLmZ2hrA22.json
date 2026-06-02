@@ -1,0 +1,9 @@
+{
+	"id": "WFL6AmLmZ2hrA22",
+	"json": "{\"id\":\"WFL6AmLmZ2hrA22\",\"url\":\"https://fosteryouthhelp.ca.gov/trainings/\",\"loadedUrl\":\"https://fosteryouthhelp.ca.gov/trainings/\",\"uniqueKey\":\"https://fosteryouthhelp.ca.gov/trainings\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:11.550Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://fosteryouthhelp.ca.gov/trainings",
+	"url": "https://fosteryouthhelp.ca.gov/trainings/"
+}

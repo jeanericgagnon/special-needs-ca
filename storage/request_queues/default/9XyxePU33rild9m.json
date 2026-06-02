@@ -1,0 +1,9 @@
+{
+	"id": "9XyxePU33rild9m",
+	"json": "{\"id\":\"9XyxePU33rild9m\",\"url\":\"http://www3.cde.ca.gov/reporterrequest/\",\"loadedUrl\":\"https://www3.cde.ca.gov/reporterrequest/\",\"uniqueKey\":\"http://www3.cde.ca.gov/reporterrequest\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:44.128Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www3.cde.ca.gov/reporterrequest",
+	"url": "http://www3.cde.ca.gov/reporterrequest/"
+}

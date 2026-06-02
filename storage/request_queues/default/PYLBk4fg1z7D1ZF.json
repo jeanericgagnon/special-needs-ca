@@ -1,0 +1,9 @@
+{
+	"id": "PYLBk4fg1z7D1ZF",
+	"json": "{\"id\":\"PYLBk4fg1z7D1ZF\",\"url\":\"https://www.dgs.ca.gov/CCDA/News/Page-Content/California-Commission-on-Disability-Access-News-List-Folder/CCDA-Stakeholder-Summits-2026\",\"loadedUrl\":\"https://www.dgs.ca.gov/CCDA/News/Page-Content/California-Commission-on-Disability-Access-News-List-Folder/CCDA-Stakeholder-Summits-2026\",\"uniqueKey\":\"https://www.dgs.ca.gov/CCDA/News/Page-Content/California-Commission-on-Disability-Access-News-List-Folder/CCDA-Stakeholder-Summits-2026\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:06.995Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dgs.ca.gov/CCDA/News/Page-Content/California-Commission-on-Disability-Access-News-List-Folder/CCDA-Stakeholder-Summits-2026",
+	"url": "https://www.dgs.ca.gov/CCDA/News/Page-Content/California-Commission-on-Disability-Access-News-List-Folder/CCDA-Stakeholder-Summits-2026"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "2h8PqZneKioxnpu",
+	"json": "{\"id\":\"2h8PqZneKioxnpu\",\"url\":\"https://health.ucdavis.edu/mind-institute/news/headlines/patient-selected-as-2026-national-childrens-miracle-network-champion/2026/03\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/news/headlines/patient-selected-as-2026-national-childrens-miracle-network-champion/2026/03\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/news/headlines/patient-selected-as-2026-national-childrens-miracle-network-champion/2026/03\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:59.555Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mind-institute/news/headlines/patient-selected-as-2026-national-childrens-miracle-network-champion/2026/03",
+	"url": "https://health.ucdavis.edu/mind-institute/news/headlines/patient-selected-as-2026-national-childrens-miracle-network-champion/2026/03"
+}

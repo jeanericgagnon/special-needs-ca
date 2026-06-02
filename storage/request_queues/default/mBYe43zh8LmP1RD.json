@@ -1,0 +1,9 @@
+{
+	"id": "mBYe43zh8LmP1RD",
+	"json": "{\"id\":\"mBYe43zh8LmP1RD\",\"url\":\"https://neurotherapeutics.ucdavis.edu/\",\"loadedUrl\":\"https://neurotherapeutics.ucdavis.edu/\",\"uniqueKey\":\"https://neurotherapeutics.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:55.520Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://neurotherapeutics.ucdavis.edu",
+	"url": "https://neurotherapeutics.ucdavis.edu/"
+}

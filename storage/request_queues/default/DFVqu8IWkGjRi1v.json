@@ -1,0 +1,9 @@
+{
+	"id": "DFVqu8IWkGjRi1v",
+	"json": "{\"id\":\"DFVqu8IWkGjRi1v\",\"url\":\"https://secure.vetmed.ucdavis.edu/\",\"loadedUrl\":\"https://cas.ucdavis.edu/cas/login?service=https%3A%2F%2Fsecure%2Evetmed%2Eucdavis%2Eedu%2Fdefault%2Ecfm\",\"uniqueKey\":\"https://secure.vetmed.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:16.900Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://secure.vetmed.ucdavis.edu",
+	"url": "https://secure.vetmed.ucdavis.edu/"
+}

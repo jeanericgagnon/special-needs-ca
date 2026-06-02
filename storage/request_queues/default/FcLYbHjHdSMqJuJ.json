@@ -1,0 +1,9 @@
+{
+	"id": "FcLYbHjHdSMqJuJ",
+	"json": "{\"id\":\"FcLYbHjHdSMqJuJ\",\"url\":\"http://www.scdd.ca.gov/employment_data_dashboard.htm\",\"loadedUrl\":\"http://scdd.ca.gov/employment_data_dashboard.htm\",\"uniqueKey\":\"http://www.scdd.ca.gov/employment_data_dashboard.htm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:19:27.375Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.scdd.ca.gov/employment_data_dashboard.htm",
+	"url": "http://www.scdd.ca.gov/employment_data_dashboard.htm"
+}

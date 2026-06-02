@@ -1,0 +1,9 @@
+{
+	"id": "BuUDhqlU7q6lv8S",
+	"json": "{\"id\":\"BuUDhqlU7q6lv8S\",\"url\":\"https://www.csb-cde.ca.gov/about/staff/admindirectory.aspx\",\"loadedUrl\":\"https://www.csb-cde.ca.gov/about/staff/admindirectory.aspx\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/about/staff/admindirectory.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:31.513Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csb-cde.ca.gov/about/staff/admindirectory.aspx",
+	"url": "https://www.csb-cde.ca.gov/about/staff/admindirectory.aspx"
+}

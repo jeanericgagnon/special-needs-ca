@@ -1,0 +1,9 @@
+{
+	"id": "C4tafpVJVTaBlbN",
+	"json": "{\"id\":\"C4tafpVJVTaBlbN\",\"url\":\"https://rarediseases.org/driving-policy/contact-your-representatives/\",\"loadedUrl\":\"https://rarediseases.org/driving-policy/take-action/#/\",\"uniqueKey\":\"https://rarediseases.org/driving-policy/contact-your-representatives\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":1,\"errorMessages\":[\"Error: 502 - Internal Server Error: <!DOCTYPE html>\\n<!--[if lt IE 7]> <html class=\\\"no-js ie6 oldie\\\" lang=\\\"en-US\\\"> <![endif]-->\\n<!--[if I\\n    at CheerioCrawler._parseResponse (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@crawlee/http/internals/http-crawler.js:496:19)\\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\\n    at async CheerioCrawler._runRequestHandler (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@crawlee/http/internals/http-crawler.js:305:28)\\n    at async CheerioCrawler._runRequestHandler (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@crawlee/cheerio/internals/cheerio-crawler.js:153:9)\\n    at async wrap (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@apify/timeout/cjs/index.cjs:54:21)\"],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:57:41.497Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 1,
+	"uniqueKey": "https://rarediseases.org/driving-policy/contact-your-representatives",
+	"url": "https://rarediseases.org/driving-policy/contact-your-representatives/"
+}

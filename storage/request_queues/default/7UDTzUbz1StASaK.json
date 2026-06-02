@@ -1,0 +1,9 @@
+{
+	"id": "7UDTzUbz1StASaK",
+	"json": "{\"id\":\"7UDTzUbz1StASaK\",\"url\":\"https://tutoring.ucdavis.edu/\",\"loadedUrl\":\"https://tutoring.ucdavis.edu/\",\"uniqueKey\":\"https://tutoring.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:23.530Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://tutoring.ucdavis.edu",
+	"url": "https://tutoring.ucdavis.edu/"
+}

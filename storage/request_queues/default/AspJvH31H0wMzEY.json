@@ -1,0 +1,9 @@
+{
+	"id": "AspJvH31H0wMzEY",
+	"json": "{\"id\":\"AspJvH31H0wMzEY\",\"url\":\"https://www.dds.ca.gov/general/eligibility/support-services/day-program/education-services-for-children-with-developmental-disabilities/\",\"loadedUrl\":\"https://www.dds.ca.gov/general/eligibility/support-services/day-program/education-services-for-children-with-developmental-disabilities/\",\"uniqueKey\":\"https://www.dds.ca.gov/general/eligibility/support-services/day-program/education-services-for-children-with-developmental-disabilities\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:23.686Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/general/eligibility/support-services/day-program/education-services-for-children-with-developmental-disabilities",
+	"url": "https://www.dds.ca.gov/general/eligibility/support-services/day-program/education-services-for-children-with-developmental-disabilities/"
+}

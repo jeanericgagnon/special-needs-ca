@@ -1,0 +1,9 @@
+{
+	"id": "cDATSbMYK2ffAtK",
+	"json": "{\"id\":\"cDATSbMYK2ffAtK\",\"url\":\"https://health.ucdavis.edu/children/services/support-services\",\"loadedUrl\":\"https://health.ucdavis.edu/children/services/support-services\",\"uniqueKey\":\"https://health.ucdavis.edu/children/services/support-services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:50.552Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/children/services/support-services",
+	"url": "https://health.ucdavis.edu/children/services/support-services"
+}

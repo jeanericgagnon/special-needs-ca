@@ -1,0 +1,9 @@
+{
+	"id": "boZ35a1YF25uPIH",
+	"json": "{\"id\":\"boZ35a1YF25uPIH\",\"url\":\"https://health.ucdavis.edu/med-pathways/\",\"loadedUrl\":\"https://health.ucdavis.edu/med-pathways/\",\"uniqueKey\":\"https://health.ucdavis.edu/med-pathways\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:09.302Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/med-pathways",
+	"url": "https://health.ucdavis.edu/med-pathways/"
+}

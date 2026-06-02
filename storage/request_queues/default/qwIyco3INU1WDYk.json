@@ -1,0 +1,9 @@
+{
+	"id": "qwIyco3INU1WDYk",
+	"json": "{\"id\":\"qwIyco3INU1WDYk\",\"url\":\"https://genomecenter.ucdavis.edu/person-type/administrative-team\",\"loadedUrl\":\"https://genomecenter.ucdavis.edu/person-type/administrative-team\",\"uniqueKey\":\"https://genomecenter.ucdavis.edu/person-type/administrative-team\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:09.874Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://genomecenter.ucdavis.edu/person-type/administrative-team",
+	"url": "https://genomecenter.ucdavis.edu/person-type/administrative-team"
+}

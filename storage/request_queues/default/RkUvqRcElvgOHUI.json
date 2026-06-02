@@ -1,0 +1,9 @@
+{
+	"id": "RkUvqRcElvgOHUI",
+	"json": "{\"id\":\"RkUvqRcElvgOHUI\",\"url\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/radiology\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/radiology\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/radiology\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:51.447Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/locations/specialty-care/radiology",
+	"url": "https://health.ucdavis.edu/patients-visitors/locations/specialty-care/radiology"
+}

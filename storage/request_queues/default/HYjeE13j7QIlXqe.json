@@ -1,0 +1,9 @@
+{
+	"id": "HYjeE13j7QIlXqe",
+	"json": "{\"id\":\"HYjeE13j7QIlXqe\",\"url\":\"https://www.mentalhealth.ca.gov/conditions-of-use.html\",\"loadedUrl\":\"https://www.mentalhealth.ca.gov/conditions-of-use.html\",\"uniqueKey\":\"https://www.mentalhealth.ca.gov/conditions-of-use.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:47.336Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.mentalhealth.ca.gov/conditions-of-use.html",
+	"url": "https://www.mentalhealth.ca.gov/conditions-of-use.html"
+}

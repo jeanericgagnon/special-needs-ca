@@ -1,0 +1,9 @@
+{
+	"id": "3rXTwQUMzXEE5ma",
+	"json": "{\"id\":\"3rXTwQUMzXEE5ma\",\"url\":\"https://www.dds.ca.gov/individuals-and-families/new-information-packet/\",\"loadedUrl\":\"https://www.dds.ca.gov/individuals-and-families/new-information-packet/\",\"uniqueKey\":\"https://www.dds.ca.gov/individuals-and-families/new-information-packet\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:17.460Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/individuals-and-families/new-information-packet",
+	"url": "https://www.dds.ca.gov/individuals-and-families/new-information-packet/"
+}

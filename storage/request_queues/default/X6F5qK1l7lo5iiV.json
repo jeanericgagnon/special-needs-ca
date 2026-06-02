@@ -1,0 +1,9 @@
+{
+	"id": "X6F5qK1l7lo5iiV",
+	"json": "{\"id\":\"X6F5qK1l7lo5iiV\",\"url\":\"https://hr.ucdavis.edu/departments/recruitment/workforce-management-program\",\"loadedUrl\":\"https://hr.ucdavis.edu/departments/recruitment/workforce-management-program\",\"uniqueKey\":\"https://hr.ucdavis.edu/departments/recruitment/workforce-management-program\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:31.358Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/departments/recruitment/workforce-management-program",
+	"url": "https://hr.ucdavis.edu/departments/recruitment/workforce-management-program"
+}

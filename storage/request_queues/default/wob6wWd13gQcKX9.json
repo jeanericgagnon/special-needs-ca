@@ -1,0 +1,9 @@
+{
+	"id": "wob6wWd13gQcKX9",
+	"json": "{\"id\":\"wob6wWd13gQcKX9\",\"url\":\"https://caes.ucdavis.edu/students/material\",\"loadedUrl\":\"https://caes.ucdavis.edu/students/material\",\"uniqueKey\":\"https://caes.ucdavis.edu/students/material\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:55:20.982Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://caes.ucdavis.edu/students/material",
+	"url": "https://caes.ucdavis.edu/students/material"
+}

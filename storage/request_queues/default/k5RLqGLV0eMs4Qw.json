@@ -1,0 +1,9 @@
+{
+	"id": "k5RLqGLV0eMs4Qw",
+	"json": "{\"id\":\"k5RLqGLV0eMs4Qw\",\"url\":\"https://alumni.ucdavis.edu/about/campus-partners\",\"loadedUrl\":\"https://alumni.ucdavis.edu/about/campus-partners\",\"uniqueKey\":\"https://alumni.ucdavis.edu/about/campus-partners\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:06.590Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://alumni.ucdavis.edu/about/campus-partners",
+	"url": "https://alumni.ucdavis.edu/about/campus-partners"
+}

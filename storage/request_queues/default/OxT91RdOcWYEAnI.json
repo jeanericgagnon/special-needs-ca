@@ -1,0 +1,9 @@
+{
+	"id": "OxT91RdOcWYEAnI",
+	"json": "{\"id\":\"OxT91RdOcWYEAnI\",\"url\":\"https://scdd.ca.gov/pos-service-code/out-of-state-manufacturer-or-distributor/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/out-of-state-manufacturer-or-distributor/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/out-of-state-manufacturer-or-distributor\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:00.255Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/pos-service-code/out-of-state-manufacturer-or-distributor",
+	"url": "https://scdd.ca.gov/pos-service-code/out-of-state-manufacturer-or-distributor/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "TaJGuQ3BzRUKK4w",
+	"json": "{\"id\":\"TaJGuQ3BzRUKK4w\",\"url\":\"https://rarediseases.org/organizations/the-med13l-foundation/\",\"loadedUrl\":\"https://rarediseases.org/organizations/the-med13l-foundation/\",\"uniqueKey\":\"https://rarediseases.org/organizations/the-med13l-foundation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:18:14.551Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/organizations/the-med13l-foundation",
+	"url": "https://rarediseases.org/organizations/the-med13l-foundation/"
+}

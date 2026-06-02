@@ -1,0 +1,9 @@
+{
+	"id": "T48823bVNp6zky0",
+	"json": "{\"id\":\"T48823bVNp6zky0\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/Pages/Topics/Pregnancy-and-Reproductive-Health.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/Pages/Topics/Pregnancy-and-Reproductive-Health.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/Pages/Topics/Pregnancy-and-Reproductive-Health.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:43.883Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/Pages/Topics/Pregnancy-and-Reproductive-Health.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/Pages/Topics/Pregnancy-and-Reproductive-Health.aspx"
+}

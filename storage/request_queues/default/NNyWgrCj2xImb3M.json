@@ -1,0 +1,9 @@
+{
+	"id": "NNyWgrCj2xImb3M",
+	"json": "{\"id\":\"NNyWgrCj2xImb3M\",\"url\":\"https://www.cdss.ca.gov/inforesources/IHSS-Overtime-Exemption-2\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/ihss-overtime-exemption-2\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/IHSS-Overtime-Exemption-2\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:12.799Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/inforesources/IHSS-Overtime-Exemption-2",
+	"url": "https://www.cdss.ca.gov/inforesources/IHSS-Overtime-Exemption-2"
+}

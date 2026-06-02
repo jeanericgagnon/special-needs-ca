@@ -1,0 +1,9 @@
+{
+	"id": "3G9NbgXzQXV2Gbm",
+	"json": "{\"id\":\"3G9NbgXzQXV2Gbm\",\"url\":\"https://health.ucdavis.edu/news/headlines/advancing-global-health-uc-davis-test-identifies-active-infectious-form-of-tb/2026/03\",\"loadedUrl\":\"https://health.ucdavis.edu/news/headlines/advancing-global-health-uc-davis-test-identifies-active-infectious-form-of-tb/2026/03\",\"uniqueKey\":\"https://health.ucdavis.edu/news/headlines/advancing-global-health-uc-davis-test-identifies-active-infectious-form-of-tb/2026/03\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:45:30.182Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/news/headlines/advancing-global-health-uc-davis-test-identifies-active-infectious-form-of-tb/2026/03",
+	"url": "https://health.ucdavis.edu/news/headlines/advancing-global-health-uc-davis-test-identifies-active-infectious-form-of-tb/2026/03"
+}

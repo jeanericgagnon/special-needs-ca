@@ -1,0 +1,9 @@
+{
+	"id": "TnA7UpqHi3C5Eiy",
+	"json": "{\"id\":\"TnA7UpqHi3C5Eiy\",\"url\":\"https://cnprc.ucdavis.edu/spotlight-services-green-gold\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/spotlight-services-green-gold\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/spotlight-services-green-gold\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:16.903Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cnprc.ucdavis.edu/spotlight-services-green-gold",
+	"url": "https://cnprc.ucdavis.edu/spotlight-services-green-gold"
+}

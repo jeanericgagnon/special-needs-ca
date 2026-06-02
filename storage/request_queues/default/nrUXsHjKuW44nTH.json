@@ -1,0 +1,9 @@
+{
+	"id": "nrUXsHjKuW44nTH",
+	"json": "{\"id\":\"nrUXsHjKuW44nTH\",\"url\":\"https://scdd.ca.gov/pos-service-code/activity-center/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/activity-center/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/activity-center\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:57.806Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/pos-service-code/activity-center",
+	"url": "https://scdd.ca.gov/pos-service-code/activity-center/"
+}

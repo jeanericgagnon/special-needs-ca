@@ -1,0 +1,9 @@
+{
+	"id": "2kctxCOgNgjlqG0",
+	"json": "{\"id\":\"2kctxCOgNgjlqG0\",\"url\":\"https://give.ucdavis.edu/Search/Tags/inclusion\",\"loadedUrl\":\"https://give.ucdavis.edu/Search/Tags/inclusion\",\"uniqueKey\":\"https://give.ucdavis.edu/Search/Tags/inclusion\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:12:27.382Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/Search/Tags/inclusion",
+	"url": "https://give.ucdavis.edu/Search/Tags/inclusion"
+}

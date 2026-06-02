@@ -1,0 +1,9 @@
+{
+	"id": "5VLhbPrWey34m0y",
+	"json": "{\"id\":\"5VLhbPrWey34m0y\",\"url\":\"https://care.ucdavis.edu/who-we-are\",\"loadedUrl\":\"https://care.ucdavis.edu/who-we-are\",\"uniqueKey\":\"https://care.ucdavis.edu/who-we-are\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:59.420Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://care.ucdavis.edu/who-we-are",
+	"url": "https://care.ucdavis.edu/who-we-are"
+}

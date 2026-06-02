@@ -1,0 +1,9 @@
+{
+	"id": "UsiSQpS9nDbW3lq",
+	"json": "{\"id\":\"UsiSQpS9nDbW3lq\",\"url\":\"https://www.chhs.ca.gov/home/tribal-affairs/\",\"loadedUrl\":\"https://www.chhs.ca.gov/home/tribal-affairs/\",\"uniqueKey\":\"https://www.chhs.ca.gov/home/tribal-affairs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:50.685Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chhs.ca.gov/home/tribal-affairs",
+	"url": "https://www.chhs.ca.gov/home/tribal-affairs/"
+}

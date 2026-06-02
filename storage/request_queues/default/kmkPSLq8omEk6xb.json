@@ -1,0 +1,9 @@
+{
+	"id": "kmkPSLq8omEk6xb",
+	"json": "{\"id\":\"kmkPSLq8omEk6xb\",\"url\":\"https://www.cdss.ca.gov/tax-outreach\",\"loadedUrl\":\"https://www.cdss.ca.gov/tax-outreach\",\"uniqueKey\":\"https://www.cdss.ca.gov/tax-outreach\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:34.313Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/tax-outreach",
+	"url": "https://www.cdss.ca.gov/tax-outreach"
+}

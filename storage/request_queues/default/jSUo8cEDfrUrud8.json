@@ -1,0 +1,9 @@
+{
+	"id": "jSUo8cEDfrUrud8",
+	"json": "{\"id\":\"jSUo8cEDfrUrud8\",\"url\":\"https://diversity.ucdavis.edu/initiatives/gender-recognition-and-lived-name-ucd-committee\",\"loadedUrl\":\"https://excellence.ucdavis.edu/\",\"uniqueKey\":\"https://diversity.ucdavis.edu/initiatives/gender-recognition-and-lived-name-ucd-committee\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:12.067Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://diversity.ucdavis.edu/initiatives/gender-recognition-and-lived-name-ucd-committee",
+	"url": "https://diversity.ucdavis.edu/initiatives/gender-recognition-and-lived-name-ucd-committee"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "cs4tguDBf5JcMvq",
+	"json": "{\"id\":\"cs4tguDBf5JcMvq\",\"url\":\"https://cdtfa.ca.gov/report-violation.htm\",\"loadedUrl\":\"https://cdtfa.ca.gov/report-violation.htm\",\"uniqueKey\":\"https://cdtfa.ca.gov/report-violation.htm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:44.351Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdtfa.ca.gov/report-violation.htm",
+	"url": "https://cdtfa.ca.gov/report-violation.htm"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "xIeqtDVe1zF01xA",
+	"json": "{\"id\":\"xIeqtDVe1zF01xA\",\"url\":\"https://physicianconnect.ucdmc.ucdavis.edu/EpicLink/common/epic_login.asp\",\"loadedUrl\":\"https://physicianconnect.ucdmc.ucdavis.edu/EpicLink/common/epic_login.asp\",\"uniqueKey\":\"https://physicianconnect.ucdmc.ucdavis.edu/EpicLink/common/epic_login.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:28.006Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://physicianconnect.ucdmc.ucdavis.edu/EpicLink/common/epic_login.asp",
+	"url": "https://physicianconnect.ucdmc.ucdavis.edu/EpicLink/common/epic_login.asp"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "5GQDd0ZvX2hT1E2",
+	"json": "{\"id\":\"5GQDd0ZvX2hT1E2\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/Comms4Pregnancy.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/Comms4Pregnancy.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/Comms4Pregnancy.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:37.894Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/Comms4Pregnancy.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/Comms4Pregnancy.aspx"
+}

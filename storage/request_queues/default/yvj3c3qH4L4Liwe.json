@@ -1,0 +1,9 @@
+{
+	"id": "yvj3c3qH4L4Liwe",
+	"json": "{\"id\":\"yvj3c3qH4L4Liwe\",\"url\":\"https://www.cdii.ca.gov/news-and-events/upcoming-events/\",\"loadedUrl\":\"https://www.cdii.ca.gov/news-and-events/upcoming-events/\",\"uniqueKey\":\"https://www.cdii.ca.gov/news-and-events/upcoming-events\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:44.664Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdii.ca.gov/news-and-events/upcoming-events",
+	"url": "https://www.cdii.ca.gov/news-and-events/upcoming-events/"
+}

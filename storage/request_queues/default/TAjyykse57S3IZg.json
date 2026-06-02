@@ -1,0 +1,9 @@
+{
+	"id": "TAjyykse57S3IZg",
+	"json": "{\"id\":\"TAjyykse57S3IZg\",\"url\":\"https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202120220SB639\",\"loadedUrl\":\"https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202120220SB639\",\"uniqueKey\":\"https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202120220SB639\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:58.205Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202120220SB639",
+	"url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202120220SB639"
+}

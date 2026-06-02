@@ -1,0 +1,9 @@
+{
+	"id": "emehBIi2CupVtVs",
+	"json": "{\"id\":\"emehBIi2CupVtVs\",\"url\":\"https://www.cde.ca.gov/ta/tg/ep/elpactechnicalreports.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=fc7fdb6e-3f9d-4ade-9993-ebde67d34ee3&ssb=20510268837&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fta%2Ftg%2Fep%2Felpactechnicalreports.asp&ssi=b14f3eb9-ctxv-42bd-903a-848f4db3e31b&ssk=botmanager_support@radware.com&ssm=11853608131823250138156836646304&ssn=3954ac572f67edd9d2c397becee1000aff61719630b1-0c44-4854-b542ba&sso=37052837-9b6273edf8f5ae6bcd8755891e5865da12433a209b030048&ssp=19454975251780375842178030265161238&ssq=51071122682950201482526809266387582406299&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDA3MTk2MzBiMS0wYzQ0LTQ4NTQtYjgzNy05YjYyNzNlZGY4ZjUxLTE3ODAzMjY4MDk2NTAxOTgyNi0wMDNlMGE1NjQ4ODNiMDNiY2MzMTMiLCJyZCI6ImNhLmdvdiIsInV6bXgiOiI3ZjkwMDBiMjRjMzM0YS03Y2Q4LTRhNTItYTcyZi0yM2IzODMwOTFhMzQxLTE3ODAzMjY4MDk2NTAxOTgyNi01ODRiYmZlMzIzOGZmZDY2MTMifQ==\",\"uniqueKey\":\"https://www.cde.ca.gov/ta/tg/ep/elpactechnicalreports.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:13:49.581Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ta/tg/ep/elpactechnicalreports.asp",
+	"url": "https://www.cde.ca.gov/ta/tg/ep/elpactechnicalreports.asp"
+}

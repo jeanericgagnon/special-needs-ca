@@ -1,0 +1,9 @@
+{
+	"id": "gjKItu7C25lAMe3",
+	"json": "{\"id\":\"gjKItu7C25lAMe3\",\"url\":\"https://caes.ucdavis.edu/research/initiative/soil-health\",\"loadedUrl\":\"https://caes.ucdavis.edu/research/initiative/soil-health\",\"uniqueKey\":\"https://caes.ucdavis.edu/research/initiative/soil-health\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:55:35.144Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://caes.ucdavis.edu/research/initiative/soil-health",
+	"url": "https://caes.ucdavis.edu/research/initiative/soil-health"
+}

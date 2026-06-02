@@ -1,0 +1,9 @@
+{
+	"id": "p7CPoANIwidV1SL",
+	"json": "{\"id\":\"p7CPoANIwidV1SL\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/SACB/Pages/RapePreventionandEducationProgram.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/SACB/Pages/RapePreventionandEducationProgram.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/SACB/Pages/RapePreventionandEducationProgram.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:02:26.619Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/SACB/Pages/RapePreventionandEducationProgram.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/SACB/Pages/RapePreventionandEducationProgram.aspx"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "ZOR2SlhLaUgBaku",
+	"json": "{\"id\":\"ZOR2SlhLaUgBaku\",\"url\":\"https://health.ucdavis.edu/eyecenter/newsroom/envision-magazine.html\",\"loadedUrl\":\"https://health.ucdavis.edu/eyecenter/newsroom/envision-magazine.html\",\"uniqueKey\":\"https://health.ucdavis.edu/eyecenter/newsroom/envision-magazine.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:35.421Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/eyecenter/newsroom/envision-magazine.html",
+	"url": "https://health.ucdavis.edu/eyecenter/newsroom/envision-magazine.html"
+}

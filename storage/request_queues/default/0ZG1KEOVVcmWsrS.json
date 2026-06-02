@@ -1,0 +1,9 @@
+{
+	"id": "0ZG1KEOVVcmWsrS",
+	"json": "{\"id\":\"0ZG1KEOVVcmWsrS\",\"url\":\"https://www.chhs.ca.gov/blog/2025/10/17/governor-newsom-announces-affordable-calrx-insulin-11-a-pen-will-soon-be-available-for-purchase/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2025/10/17/governor-newsom-announces-affordable-calrx-insulin-11-a-pen-will-soon-be-available-for-purchase/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2025/10/17/governor-newsom-announces-affordable-calrx-insulin-11-a-pen-will-soon-be-available-for-purchase\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:10.227Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chhs.ca.gov/blog/2025/10/17/governor-newsom-announces-affordable-calrx-insulin-11-a-pen-will-soon-be-available-for-purchase",
+	"url": "https://www.chhs.ca.gov/blog/2025/10/17/governor-newsom-announces-affordable-calrx-insulin-11-a-pen-will-soon-be-available-for-purchase/"
+}

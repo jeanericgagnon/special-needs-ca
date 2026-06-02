@@ -1,0 +1,9 @@
+{
+	"id": "TJMIoVBgHShBdZs",
+	"json": "{\"id\":\"TJMIoVBgHShBdZs\",\"url\":\"https://hr.ucdavis.edu/news/healthy%20boundaries%20support%20a%20safer%20workplace\",\"loadedUrl\":\"https://hr.ucdavis.edu/news/healthy%20boundaries%20support%20a%20safer%20workplace\",\"uniqueKey\":\"https://hr.ucdavis.edu/news/healthy%20boundaries%20support%20a%20safer%20workplace\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:37.439Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/news/healthy%20boundaries%20support%20a%20safer%20workplace",
+	"url": "https://hr.ucdavis.edu/news/healthy%20boundaries%20support%20a%20safer%20workplace"
+}

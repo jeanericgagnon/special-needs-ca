@@ -1,0 +1,9 @@
+{
+	"id": "tKMuLfJWwLpgnMm",
+	"json": "{\"id\":\"tKMuLfJWwLpgnMm\",\"url\":\"https://health.ucdavis.edu/children/patient-education/what-families-need-to-know-about-the-signs-and-symptoms-of-eating-disorders\",\"loadedUrl\":\"https://health.ucdavis.edu/children/patient-education/what-families-need-to-know-about-the-signs-and-symptoms-of-eating-disorders\",\"uniqueKey\":\"https://health.ucdavis.edu/children/patient-education/what-families-need-to-know-about-the-signs-and-symptoms-of-eating-disorders\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:55.719Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/children/patient-education/what-families-need-to-know-about-the-signs-and-symptoms-of-eating-disorders",
+	"url": "https://health.ucdavis.edu/children/patient-education/what-families-need-to-know-about-the-signs-and-symptoms-of-eating-disorders"
+}

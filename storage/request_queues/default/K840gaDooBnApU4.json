@@ -1,0 +1,9 @@
+{
+	"id": "K840gaDooBnApU4",
+	"json": "{\"id\":\"K840gaDooBnApU4\",\"url\":\"https://health.ucdavis.edu/publish/providerbio/search/1248\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-center/team/1248/jennifer-draper---internal-medicine-sacramento/\",\"uniqueKey\":\"https://health.ucdavis.edu/publish/providerbio/search/1248\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:04.277Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/publish/providerbio/search/1248",
+	"url": "https://health.ucdavis.edu/publish/providerbio/search/1248"
+}

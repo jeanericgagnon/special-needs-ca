@@ -1,0 +1,9 @@
+{
+	"id": "53hYVveuwuMNeNK",
+	"json": "{\"id\":\"53hYVveuwuMNeNK\",\"url\":\"https://cadeafblind.org/category/uncategorized/\",\"loadedUrl\":\"https://cadeafblind.org/category/uncategorized/\",\"uniqueKey\":\"https://cadeafblind.org/category/uncategorized\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:51.362Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cadeafblind.org/category/uncategorized",
+	"url": "https://cadeafblind.org/category/uncategorized/"
+}

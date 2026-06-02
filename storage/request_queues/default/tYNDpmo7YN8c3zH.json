@@ -1,0 +1,9 @@
+{
+	"id": "tYNDpmo7YN8c3zH",
+	"json": "{\"id\":\"tYNDpmo7YN8c3zH\",\"url\":\"https://health.ucdavis.edu/cancer/adult-cancer-care/appointments\",\"loadedUrl\":\"https://health.ucdavis.edu/cancer/adult-cancer-care/appointments\",\"uniqueKey\":\"https://health.ucdavis.edu/cancer/adult-cancer-care/appointments\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:17.061Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/cancer/adult-cancer-care/appointments",
+	"url": "https://health.ucdavis.edu/cancer/adult-cancer-care/appointments"
+}

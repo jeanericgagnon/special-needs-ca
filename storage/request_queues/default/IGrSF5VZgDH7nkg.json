@@ -1,0 +1,9 @@
+{
+	"id": "IGrSF5VZgDH7nkg",
+	"json": "{\"id\":\"IGrSF5VZgDH7nkg\",\"url\":\"https://calable.ca.gov/faqs/what-is-a-gifting-profile\",\"loadedUrl\":\"https://calable.ca.gov/faqs/what-is-a-gifting-profile\",\"uniqueKey\":\"https://calable.ca.gov/faqs/what-is-a-gifting-profile\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:54.399Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://calable.ca.gov/faqs/what-is-a-gifting-profile",
+	"url": "https://calable.ca.gov/faqs/what-is-a-gifting-profile"
+}

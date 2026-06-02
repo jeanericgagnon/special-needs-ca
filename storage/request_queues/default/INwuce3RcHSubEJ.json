@@ -1,0 +1,9 @@
+{
+	"id": "INwuce3RcHSubEJ",
+	"json": "{\"id\":\"INwuce3RcHSubEJ\",\"url\":\"https://www.globaldownsyndrome.org/photos-and-videos/\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/photos-and-videos/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/photos-and-videos\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:37.251Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.globaldownsyndrome.org/photos-and-videos",
+	"url": "https://www.globaldownsyndrome.org/photos-and-videos/"
+}

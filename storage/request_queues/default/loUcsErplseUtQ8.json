@@ -1,0 +1,9 @@
+{
+	"id": "loUcsErplseUtQ8",
+	"json": "{\"id\":\"loUcsErplseUtQ8\",\"url\":\"https://www.cdph.ca.gov/Programs/CID/ORH/Pages/Preventative-Care.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CID/ORH/Pages/Preventative-Care.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CID/ORH/Pages/Preventative-Care.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:03:18.758Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CID/ORH/Pages/Preventative-Care.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CID/ORH/Pages/Preventative-Care.aspx"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "dQwer4egmyQQjA1",
+	"json": "{\"id\":\"dQwer4egmyQQjA1\",\"url\":\"http://www.calgold.ca.gov/\",\"loadedUrl\":\"https://www.calgold.ca.gov/\",\"uniqueKey\":\"http://www.calgold.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:33.467Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.calgold.ca.gov",
+	"url": "http://www.calgold.ca.gov/"
+}

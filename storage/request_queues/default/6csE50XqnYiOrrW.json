@@ -1,0 +1,9 @@
+{
+	"id": "6csE50XqnYiOrrW",
+	"json": "{\"id\":\"6csE50XqnYiOrrW\",\"url\":\"https://www.cdcr.ca.gov/victim-services/\",\"loadedUrl\":\"https://www.cdcr.ca.gov/victim-services/\",\"uniqueKey\":\"https://www.cdcr.ca.gov/victim-services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:49.169Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdcr.ca.gov/victim-services",
+	"url": "https://www.cdcr.ca.gov/victim-services/"
+}

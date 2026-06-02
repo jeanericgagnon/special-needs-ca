@@ -1,0 +1,9 @@
+{
+	"id": "f7MzNE3bcSc7I8f",
+	"json": "{\"id\":\"f7MzNE3bcSc7I8f\",\"url\":\"http://anson.ucdavis.edu/~drake/\",\"loadedUrl\":\"https://anson.ucdavis.edu/~drake/\",\"uniqueKey\":\"http://anson.ucdavis.edu/~drake\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:26.933Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://anson.ucdavis.edu/~drake",
+	"url": "http://anson.ucdavis.edu/~drake/"
+}

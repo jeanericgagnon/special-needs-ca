@@ -1,0 +1,9 @@
+{
+	"id": "rFMaam2EcRLK08q",
+	"json": "{\"id\":\"rFMaam2EcRLK08q\",\"url\":\"https://www.cdss.ca.gov/inforesources/Foster-Care/Presumptive-Transfer/County-Points-of-Contact\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/foster-care/presumptive-transfer/county-points-of-contact\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/Foster-Care/Presumptive-Transfer/County-Points-of-Contact\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:29.569Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/inforesources/Foster-Care/Presumptive-Transfer/County-Points-of-Contact",
+	"url": "https://www.cdss.ca.gov/inforesources/Foster-Care/Presumptive-Transfer/County-Points-of-Contact"
+}

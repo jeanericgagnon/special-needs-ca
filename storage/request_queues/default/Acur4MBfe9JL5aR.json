@@ -1,0 +1,9 @@
+{
+	"id": "Acur4MBfe9JL5aR",
+	"json": "{\"id\":\"Acur4MBfe9JL5aR\",\"url\":\"https://health.ucdavis.edu/internal-medicine/research/awards\",\"loadedUrl\":\"https://health.ucdavis.edu/internal-medicine/research/awards\",\"uniqueKey\":\"https://health.ucdavis.edu/internal-medicine/research/awards\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:34:25.694Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/internal-medicine/research/awards",
+	"url": "https://health.ucdavis.edu/internal-medicine/research/awards"
+}

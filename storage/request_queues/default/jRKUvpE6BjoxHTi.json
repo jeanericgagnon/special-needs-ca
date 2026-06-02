@@ -1,0 +1,9 @@
+{
+	"id": "jRKUvpE6BjoxHTi",
+	"json": "{\"id\":\"jRKUvpE6BjoxHTi\",\"url\":\"https://health.ucdavis.edu/news/topic/otolaryngology\",\"loadedUrl\":\"https://health.ucdavis.edu/news/topic/otolaryngology\",\"uniqueKey\":\"https://health.ucdavis.edu/news/topic/otolaryngology\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:00.899Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/news/topic/otolaryngology",
+	"url": "https://health.ucdavis.edu/news/topic/otolaryngology"
+}

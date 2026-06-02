@@ -1,0 +1,9 @@
+{
+	"id": "6zTGdH4XWt8B5NP",
+	"json": "{\"id\":\"6zTGdH4XWt8B5NP\",\"url\":\"https://www.cde.ca.gov/ci/pl/evaluationsystems.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/pl/evaluationsystems.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/pl/evaluationsystems.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:39.762Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ci/pl/evaluationsystems.asp",
+	"url": "https://www.cde.ca.gov/ci/pl/evaluationsystems.asp"
+}

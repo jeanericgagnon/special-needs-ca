@@ -1,0 +1,9 @@
+{
+	"id": "izH8JQGii6pe63W",
+	"json": "{\"id\":\"izH8JQGii6pe63W\",\"url\":\"https://cdtfa.ca.gov/taxes-and-fees/sutprograms.htm\",\"loadedUrl\":\"https://cdtfa.ca.gov/taxes-and-fees/sutprograms.htm\",\"uniqueKey\":\"https://cdtfa.ca.gov/taxes-and-fees/sutprograms.htm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:44.189Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdtfa.ca.gov/taxes-and-fees/sutprograms.htm",
+	"url": "https://cdtfa.ca.gov/taxes-and-fees/sutprograms.htm"
+}

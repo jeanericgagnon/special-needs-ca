@@ -1,0 +1,9 @@
+{
+	"id": "rn4qT3ioSnmHrQh",
+	"json": "{\"id\":\"rn4qT3ioSnmHrQh\",\"url\":\"https://www.calcareers.ca.gov/CalHRPublic/Landing/Jobs/Steps.aspx?step=1\",\"loadedUrl\":\"https://calcareers.ca.gov/CalHRPublic/Landing/Jobs/Steps.aspx?step=1\",\"uniqueKey\":\"https://www.calcareers.ca.gov/CalHRPublic/Landing/Jobs/Steps.aspx?step=1\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:08.725Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.calcareers.ca.gov/CalHRPublic/Landing/Jobs/Steps.aspx?step=1",
+	"url": "https://www.calcareers.ca.gov/CalHRPublic/Landing/Jobs/Steps.aspx?step=1"
+}

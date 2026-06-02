@@ -1,0 +1,9 @@
+{
+	"id": "mHsOUD9i8utvvxI",
+	"json": "{\"id\":\"mHsOUD9i8utvvxI\",\"url\":\"https://health.ucdavis.edu/nursing/academics/NPresidency.html\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/academics/PrimaryCareAPPFellowship.html\",\"uniqueKey\":\"https://health.ucdavis.edu/nursing/academics/NPresidency.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:11.541Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/nursing/academics/NPresidency.html",
+	"url": "https://health.ucdavis.edu/nursing/academics/NPresidency.html"
+}

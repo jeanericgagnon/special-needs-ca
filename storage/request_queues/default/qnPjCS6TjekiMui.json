@@ -1,0 +1,9 @@
+{
+	"id": "qnPjCS6TjekiMui",
+	"json": "{\"id\":\"qnPjCS6TjekiMui\",\"url\":\"https://www.ctc.ca.gov/program-sponsors/prep-programs/lri/tpe-crosswalk/\",\"loadedUrl\":\"https://www.ctc.ca.gov/program-sponsors/prep-programs/lri/tpe-crosswalk/\",\"uniqueKey\":\"https://www.ctc.ca.gov/program-sponsors/prep-programs/lri/tpe-crosswalk\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:28.943Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ctc.ca.gov/program-sponsors/prep-programs/lri/tpe-crosswalk",
+	"url": "https://www.ctc.ca.gov/program-sponsors/prep-programs/lri/tpe-crosswalk/"
+}

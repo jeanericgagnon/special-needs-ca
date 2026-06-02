@@ -1,0 +1,9 @@
+{
+	"id": "F6c2IjET1XcXB1J",
+	"json": "{\"id\":\"F6c2IjET1XcXB1J\",\"url\":\"https://www.gov.ca.gov/2020/07/24/governor-newsom-issues-proclamation-declaring-americans-with-disabilities-act-awareness-day/\",\"loadedUrl\":\"https://www.gov.ca.gov/2020/07/24/governor-newsom-issues-proclamation-declaring-americans-with-disabilities-act-awareness-day/\",\"uniqueKey\":\"https://www.gov.ca.gov/2020/07/24/governor-newsom-issues-proclamation-declaring-americans-with-disabilities-act-awareness-day\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:59.935Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.gov.ca.gov/2020/07/24/governor-newsom-issues-proclamation-declaring-americans-with-disabilities-act-awareness-day",
+	"url": "https://www.gov.ca.gov/2020/07/24/governor-newsom-issues-proclamation-declaring-americans-with-disabilities-act-awareness-day/"
+}

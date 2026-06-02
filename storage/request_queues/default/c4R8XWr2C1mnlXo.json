@@ -1,0 +1,9 @@
+{
+	"id": "c4R8XWr2C1mnlXo",
+	"json": "{\"id\":\"c4R8XWr2C1mnlXo\",\"url\":\"https://www.cde.ca.gov/eo/in/ts-professionallearning.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/eo/in/ts-professionallearning.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/eo/in/ts-professionallearning.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:42.285Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/eo/in/ts-professionallearning.asp",
+	"url": "https://www.cde.ca.gov/eo/in/ts-professionallearning.asp"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "BxVxTA4K1NUVAZD",
+	"json": "{\"id\":\"BxVxTA4K1NUVAZD\",\"url\":\"https://www.cdss.ca.gov/inforesources/adult-care-licensing\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/adult-care-licensing\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/adult-care-licensing\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:36.263Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/inforesources/adult-care-licensing",
+	"url": "https://www.cdss.ca.gov/inforesources/adult-care-licensing"
+}

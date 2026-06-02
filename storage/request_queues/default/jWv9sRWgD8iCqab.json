@@ -1,0 +1,9 @@
+{
+	"id": "jWv9sRWgD8iCqab",
+	"json": "{\"id\":\"jWv9sRWgD8iCqab\",\"url\":\"https://learn.rarediseases.org/courses/rarelaunch-research-ready/\",\"loadedUrl\":\"https://learn.rarediseases.org/courses/rarelaunch-research-ready/\",\"uniqueKey\":\"https://learn.rarediseases.org/courses/rarelaunch-research-ready\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:33.068Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://learn.rarediseases.org/courses/rarelaunch-research-ready",
+	"url": "https://learn.rarediseases.org/courses/rarelaunch-research-ready/"
+}

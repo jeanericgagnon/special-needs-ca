@@ -1,0 +1,9 @@
+{
+	"id": "4iYKWnFVzFu59r2",
+	"json": "{\"id\":\"4iYKWnFVzFu59r2\",\"url\":\"https://scdd.ca.gov/event/central-coast-regional-advisory-committee-rac-meeting-6/2026-06-19/\",\"loadedUrl\":\"https://scdd.ca.gov/event/central-coast-regional-advisory-committee-rac-meeting-6/2026-06-19/\",\"uniqueKey\":\"https://scdd.ca.gov/event/central-coast-regional-advisory-committee-rac-meeting-6/2026-06-19\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:05:24.137Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/event/central-coast-regional-advisory-committee-rac-meeting-6/2026-06-19",
+	"url": "https://scdd.ca.gov/event/central-coast-regional-advisory-committee-rac-meeting-6/2026-06-19/"
+}

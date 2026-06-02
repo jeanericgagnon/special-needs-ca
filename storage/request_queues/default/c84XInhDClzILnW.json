@@ -1,0 +1,9 @@
+{
+	"id": "c84XInhDClzILnW",
+	"json": "{\"id\":\"c84XInhDClzILnW\",\"url\":\"https://health.ucdavis.edu/nursing/about_us/students/Student_distinctions/student_pages/student-profile-chris-hall.html\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/about_us/students/Student_distinctions/student_pages/student-profile-chris-hall.html\",\"uniqueKey\":\"https://health.ucdavis.edu/nursing/about_us/students/Student_distinctions/student_pages/student-profile-chris-hall.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:16.595Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/nursing/about_us/students/Student_distinctions/student_pages/student-profile-chris-hall.html",
+	"url": "https://health.ucdavis.edu/nursing/about_us/students/Student_distinctions/student_pages/student-profile-chris-hall.html"
+}

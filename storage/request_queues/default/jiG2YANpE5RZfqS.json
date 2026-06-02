@@ -1,0 +1,9 @@
+{
+	"id": "jiG2YANpE5RZfqS",
+	"json": "{\"id\":\"jiG2YANpE5RZfqS\",\"url\":\"https://osg.ca.gov/positive-childhood-experiences/\",\"loadedUrl\":\"https://osg.ca.gov/positive-childhood-experiences/\",\"uniqueKey\":\"https://osg.ca.gov/positive-childhood-experiences\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T17:20:37.769Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://osg.ca.gov/positive-childhood-experiences",
+	"url": "https://osg.ca.gov/positive-childhood-experiences/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "FJvhzfttkRhV4BX",
+	"json": "{\"id\":\"FJvhzfttkRhV4BX\",\"url\":\"http://fosteryouthhelp.ca.gov/\",\"loadedUrl\":\"https://fosteryouthhelp.ca.gov/\",\"uniqueKey\":\"http://fosteryouthhelp.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:12.222Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://fosteryouthhelp.ca.gov",
+	"url": "http://fosteryouthhelp.ca.gov/"
+}

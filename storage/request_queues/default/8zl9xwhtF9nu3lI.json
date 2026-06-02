@@ -1,0 +1,9 @@
+{
+	"id": "8zl9xwhtF9nu3lI",
+	"json": "{\"id\":\"8zl9xwhtF9nu3lI\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CTCB/_layouts/15/listform.aspx?ListId=%7BF2858C60%2DBC8F%2D4986%2D87D6%2D095A907F74ED%7D&PageType=0\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CTCB/Pages/CaliforniaTobaccoControlBranch.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CTCB/_layouts/15/listform.aspx?ListId=%7BF2858C60-BC8F-4986-87D6-095A907F74ED%7D&PageType=0\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:11:40.179Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CTCB/_layouts/15/listform.aspx?ListId=%7BF2858C60-BC8F-4986-87D6-095A907F74ED%7D&PageType=0",
+	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CTCB/_layouts/15/listform.aspx?ListId=%7BF2858C60%2DBC8F%2D4986%2D87D6%2D095A907F74ED%7D&PageType=0"
+}

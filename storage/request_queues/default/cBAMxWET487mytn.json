@@ -1,0 +1,9 @@
+{
+	"id": "cBAMxWET487mytn",
+	"json": "{\"id\":\"cBAMxWET487mytn\",\"url\":\"https://health.ucdavis.edu/welcome/news/headlines/free-community-health-and-cancer-screening-set-for-april-18-/2026/03\",\"loadedUrl\":\"https://health.ucdavis.edu/welcome/news/headlines/free-community-health-and-cancer-screening-set-for-april-18-/2026/03\",\"uniqueKey\":\"https://health.ucdavis.edu/welcome/news/headlines/free-community-health-and-cancer-screening-set-for-april-18-/2026/03\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:09.793Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/welcome/news/headlines/free-community-health-and-cancer-screening-set-for-april-18-/2026/03",
+	"url": "https://health.ucdavis.edu/welcome/news/headlines/free-community-health-and-cancer-screening-set-for-april-18-/2026/03"
+}

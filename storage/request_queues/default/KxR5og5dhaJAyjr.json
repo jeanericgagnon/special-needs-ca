@@ -1,0 +1,9 @@
+{
+	"id": "KxR5og5dhaJAyjr",
+	"json": "{\"id\":\"KxR5og5dhaJAyjr\",\"url\":\"https://lettersandscience.ucdavis.edu/history-ls\",\"loadedUrl\":\"https://lettersandscience.ucdavis.edu/about/history-ls\",\"uniqueKey\":\"https://lettersandscience.ucdavis.edu/history-ls\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:21.976Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://lettersandscience.ucdavis.edu/history-ls",
+	"url": "https://lettersandscience.ucdavis.edu/history-ls"
+}

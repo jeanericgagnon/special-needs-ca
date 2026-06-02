@@ -1,0 +1,9 @@
+{
+	"id": "SNRZeiwf1EGbG3f",
+	"json": "{\"id\":\"SNRZeiwf1EGbG3f\",\"url\":\"https://give.ucdavis.edu/HSYS/9130847\",\"loadedUrl\":\"https://give.ucdavis.edu/HSYS/9130847\",\"uniqueKey\":\"https://give.ucdavis.edu/HSYS/9130847\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:57.531Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/HSYS/9130847",
+	"url": "https://give.ucdavis.edu/HSYS/9130847"
+}

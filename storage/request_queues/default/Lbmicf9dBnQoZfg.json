@@ -1,0 +1,9 @@
+{
+	"id": "Lbmicf9dBnQoZfg",
+	"json": "{\"id\":\"Lbmicf9dBnQoZfg\",\"url\":\"https://health.ucdavis.edu/news/headlines/does-my-child-have-adhd-or-are-they-just-an-energetic-kid/2025/10\",\"loadedUrl\":\"https://health.ucdavis.edu/news/headlines/does-my-child-have-adhd-or-are-they-just-an-energetic-kid/2025/10\",\"uniqueKey\":\"https://health.ucdavis.edu/news/headlines/does-my-child-have-adhd-or-are-they-just-an-energetic-kid/2025/10\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:46:00.533Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/news/headlines/does-my-child-have-adhd-or-are-they-just-an-energetic-kid/2025/10",
+	"url": "https://health.ucdavis.edu/news/headlines/does-my-child-have-adhd-or-are-they-just-an-energetic-kid/2025/10"
+}

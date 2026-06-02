@@ -1,0 +1,9 @@
+{
+	"id": "i6f9pQ5rbryEq7m",
+	"json": "{\"id\":\"i6f9pQ5rbryEq7m\",\"url\":\"https://www.cdfa.ca.gov/\",\"loadedUrl\":\"https://www.cdfa.ca.gov/\",\"uniqueKey\":\"https://www.cdfa.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:51:00.735Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdfa.ca.gov",
+	"url": "https://www.cdfa.ca.gov/"
+}

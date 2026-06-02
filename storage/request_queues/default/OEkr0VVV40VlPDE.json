@@ -1,0 +1,9 @@
+{
+	"id": "OEkr0VVV40VlPDE",
+	"json": "{\"id\":\"OEkr0VVV40VlPDE\",\"url\":\"https://www.cde.ca.gov/ci/pl/culturalrelevantpedagogy.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=8ff7e3e2-723b-46ed-b368-6e07577a529f&ssb=80948253058&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fci%2Fpl%2Fculturalrelevantpedagogy.asp&ssi=3cbfb92a-ctxv-4833-81da-c647e1d126c6&ssk=botmanager_support@radware.com&ssm=01676522113998639105222257121328&ssn=303e623bb519935b880ae73a717dd5eb8dfb9e863149-6729-4519-a067c1&sso=6a1be594-e9253b0a69e28b94edd64ec2fb612d7fb6dd1d642f5a870f&ssp=82205502131780316534178036564763420&ssq=91010002658133332269226581224763084276029&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2Y5MDAwMzg2YWIyZDEtNGRiNi00MThlLWE2Y2EtODk0NTA3OTRhMDYzMS0xNzgwMzI2NTgxMjQ3MC1mZWRjM2RhNzFiZDVhN2ZlMTAiLCJyZCI6ImNhLmdvdiIsIl9fdXptZiI6IjdmOTAwMDllODYzMTQ5LTY3MjktNDUxOS1hNTk0LWU5MjUzYjBhNjllMjEtMTc4MDMyNjU4MTI0NzAtMDAzM2IyYTUwMzAwYjRiMWJlNzEwIn0=\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/pl/culturalrelevantpedagogy.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:09:41.643Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ci/pl/culturalrelevantpedagogy.asp",
+	"url": "https://www.cde.ca.gov/ci/pl/culturalrelevantpedagogy.asp"
+}

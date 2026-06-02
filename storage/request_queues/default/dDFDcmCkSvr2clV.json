@@ -1,0 +1,9 @@
+{
+	"id": "dDFDcmCkSvr2clV",
+	"json": "{\"id\":\"dDFDcmCkSvr2clV\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/42464/shirin-ahmad-internal_medicine-rheumatology_allergy_and_clinical_immunology-folsom\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/42464/shirin-ahmad-internal_medicine-rheumatology_allergy_and_clinical_immunology-folsom\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/42464/shirin-ahmad-internal_medicine-rheumatology_allergy_and_clinical_immunology-folsom\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:14.707Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/42464/shirin-ahmad-internal_medicine-rheumatology_allergy_and_clinical_immunology-folsom",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/42464/shirin-ahmad-internal_medicine-rheumatology_allergy_and_clinical_immunology-folsom"
+}

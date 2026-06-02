@@ -1,0 +1,9 @@
+{
+	"id": "E4T0EZfDRGhulKN",
+	"json": "{\"id\":\"E4T0EZfDRGhulKN\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/43463/leanna-sudhof-maternal-fetal_medicine-sacramento?FreeText%3aLast+name=Sudhof\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/43463/leanna-sudhof-maternal-fetal_medicine-sacramento?FreeText%3aLast+name=Sudhof\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/43463/leanna-sudhof-maternal-fetal_medicine-sacramento?FreeText%3ALast+name=Sudhof\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:11.824Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/43463/leanna-sudhof-maternal-fetal_medicine-sacramento?FreeText%3ALast+name=Sudhof",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/43463/leanna-sudhof-maternal-fetal_medicine-sacramento?FreeText%3aLast+name=Sudhof"
+}

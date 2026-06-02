@@ -1,0 +1,9 @@
+{
+	"id": "uyPERawaZl7bByo",
+	"json": "{\"id\":\"uyPERawaZl7bByo\",\"url\":\"https://www.dds.ca.gov/rc/dashboard/purchase-of-service-report/\",\"loadedUrl\":\"https://www.dds.ca.gov/rc/dashboard/purchase-of-service-report/\",\"uniqueKey\":\"https://www.dds.ca.gov/rc/dashboard/purchase-of-service-report\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:51.968Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/rc/dashboard/purchase-of-service-report",
+	"url": "https://www.dds.ca.gov/rc/dashboard/purchase-of-service-report/"
+}

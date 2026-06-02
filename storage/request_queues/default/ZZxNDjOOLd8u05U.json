@@ -1,0 +1,9 @@
+{
+	"id": "ZZxNDjOOLd8u05U",
+	"json": "{\"id\":\"ZZxNDjOOLd8u05U\",\"url\":\"https://health.ucdmc.ucdavis.edu/medalumni/president.html\",\"loadedUrl\":\"https://health.ucdavis.edu/welcome/\",\"uniqueKey\":\"https://health.ucdmc.ucdavis.edu/medalumni/president.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:07.925Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdmc.ucdavis.edu/medalumni/president.html",
+	"url": "https://health.ucdmc.ucdavis.edu/medalumni/president.html"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "6U1IjAlnGPt6zwY",
+	"json": "{\"id\":\"6U1IjAlnGPt6zwY\",\"url\":\"https://www.cde.ca.gov/re/cc/clearinghouses.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=1129fff6-eed6-4a4f-bd33-7ae04033ef93&ssb=06440236863&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fre%2Fcc%2Fclearinghouses.asp&ssi=3fe23d92-ctxv-45ed-bef3-48abd6c617bb&ssk=botmanager_support@radware.com&ssm=09089092724129226106120279185504&ssn=5d44f918e8251c339323cc82b2862f099d021fbf75ce-5634-416c-98c0f5&sso=783ec072-6f2462581e3f376b6173787b1402027b04feb89e99f512aa&ssp=66534253491780379501178034195250690&ssq=13557362659288705985526592911367325228307&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2Y5MDAwMzY4MjQ0NDMtM2YxZi00NGQwLWI0NjgtNWY4MGVhZDgwNWQyMS0xNzgwMzI2NTkyMjM3MC0yNTJkN2VlNTgxYzI3YzlmMTAiLCJyZCI6ImNhLmdvdiIsIl9fdXptZiI6IjdmOTAwMDFmYmY3NWNlLTU2MzQtNDE2Yy05MDcyLTZmMjQ2MjU4MWUzZjEtMTc4MDMyNjU5MjIzNzAtMDAzOGQ3OTcyYTI3ZmI3Mjk0NDEwIn0=\",\"uniqueKey\":\"https://www.cde.ca.gov/re/cc/clearinghouses.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:09:52.600Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/re/cc/clearinghouses.asp",
+	"url": "https://www.cde.ca.gov/re/cc/clearinghouses.asp"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "J4o3e7FGZn8moSH",
+	"json": "{\"id\":\"J4o3e7FGZn8moSH\",\"url\":\"https://www.dds.ca.gov/rc/dashboard/\",\"loadedUrl\":\"https://www.dds.ca.gov/rc/dashboard/\",\"uniqueKey\":\"https://www.dds.ca.gov/rc/dashboard\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:21.804Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/rc/dashboard",
+	"url": "https://www.dds.ca.gov/rc/dashboard/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "eA1u8mjMguHpcbP",
+	"json": "{\"id\":\"eA1u8mjMguHpcbP\",\"url\":\"https://ucdnc.ucdavis.edu/education-and-training\",\"loadedUrl\":\"https://ucdnc.ucdavis.edu/education-and-training\",\"uniqueKey\":\"https://ucdnc.ucdavis.edu/education-and-training\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:20.645Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://ucdnc.ucdavis.edu/education-and-training",
+	"url": "https://ucdnc.ucdavis.edu/education-and-training"
+}

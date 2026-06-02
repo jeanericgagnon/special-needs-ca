@@ -1,0 +1,9 @@
+{
+	"id": "p9wOR3yoZU4X4oB",
+	"json": "{\"id\":\"p9wOR3yoZU4X4oB\",\"url\":\"http://www.dtsc.ca.gov/\",\"loadedUrl\":\"https://dtsc.ca.gov/\",\"uniqueKey\":\"http://www.dtsc.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:51:01.992Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.dtsc.ca.gov",
+	"url": "http://www.dtsc.ca.gov/"
+}

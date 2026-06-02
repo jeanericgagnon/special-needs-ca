@@ -1,0 +1,9 @@
+{
+	"id": "QogOS5FbPCyaVGW",
+	"json": "{\"id\":\"QogOS5FbPCyaVGW\",\"url\":\"https://health.ucdavis.edu/interpreting-services/newsletters\",\"loadedUrl\":\"https://health.ucdavis.edu/interpreting-services/newsletters\",\"uniqueKey\":\"https://health.ucdavis.edu/interpreting-services/newsletters\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:16.011Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/interpreting-services/newsletters",
+	"url": "https://health.ucdavis.edu/interpreting-services/newsletters"
+}

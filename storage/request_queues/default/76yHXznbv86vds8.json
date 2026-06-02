@@ -1,0 +1,9 @@
+{
+	"id": "76yHXznbv86vds8",
+	"json": "{\"id\":\"76yHXznbv86vds8\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/21909/jenise-phelps-obstetrics-and-gynecology-folsom\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/21909/jenise-phelps-obstetrics-and-gynecology-folsom\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/21909/jenise-phelps-obstetrics-and-gynecology-folsom\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:12.722Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/21909/jenise-phelps-obstetrics-and-gynecology-folsom",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/21909/jenise-phelps-obstetrics-and-gynecology-folsom"
+}

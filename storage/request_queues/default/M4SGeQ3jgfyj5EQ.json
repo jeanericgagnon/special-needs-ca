@@ -1,0 +1,9 @@
+{
+	"id": "M4SGeQ3jgfyj5EQ",
+	"json": "{\"id\":\"M4SGeQ3jgfyj5EQ\",\"url\":\"https://www.cde.ca.gov/ls/he/at/cefcsclimatesurvey.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=49337280-9d51-4840-b09d-40db585c62b3&ssb=96505254023&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fls%2Fhe%2Fat%2Fcefcsclimatesurvey.asp&ssi=16076031-ctxv-47f0-9114-65abaaa2cb6e&ssk=botmanager_support@radware.com&ssm=77788380687045605105913660569276&ssn=41555448926fd4abd440e69d3d74e3d3e9ffb283145e-5d00-4b8f-a18a6a&sso=04372793-87a432bf117a526348487764c209ee912b75552fa7a654a3&ssp=13175439581780329071178036639935153&ssq=84796885534494831242255344682963626499550&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2Y5MDAwNTRjNzE5Y2EtY2IzYi00MmE3LTg1YTQtMzBlZTMwYjk1MWE2MS0xNzgwMzU1MzQ0OTQwMC03M2E4YTdlMjUzYzFiY2NhMTAiLCJfX3V6bWYiOiI3ZjkwMDBiMjgzMTQ1ZS01ZDAwLTRiOGYtYTc5My04N2E0MzJiZjExN2ExLTE3ODAzNTUzNDQ5NDAwLTAwMzZjNzU4ZjNhOTI3Y2Y2ZjkxMCIsInJkIjoiY2EuZ292In0=\",\"uniqueKey\":\"https://www.cde.ca.gov/ls/he/at/cefcsclimatesurvey.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T23:09:05.073Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ls/he/at/cefcsclimatesurvey.asp",
+	"url": "https://www.cde.ca.gov/ls/he/at/cefcsclimatesurvey.asp"
+}

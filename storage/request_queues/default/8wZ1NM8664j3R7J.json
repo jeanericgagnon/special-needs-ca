@@ -1,0 +1,9 @@
+{
+	"id": "8wZ1NM8664j3R7J",
+	"json": "{\"id\":\"8wZ1NM8664j3R7J\",\"url\":\"https://www.ca.gov/topics/assistance/\",\"loadedUrl\":\"https://www.ca.gov/topics/assistance/\",\"uniqueKey\":\"https://www.ca.gov/topics/assistance\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:58.926Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ca.gov/topics/assistance",
+	"url": "https://www.ca.gov/topics/assistance/"
+}

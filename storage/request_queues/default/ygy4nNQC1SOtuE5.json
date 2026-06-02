@@ -1,0 +1,9 @@
+{
+	"id": "ygy4nNQC1SOtuE5",
+	"json": "{\"id\":\"ygy4nNQC1SOtuE5\",\"url\":\"https://cdss.ca.gov/inforesources/cdss-programs/tribal-affairs/upcoming-meetings-and-events\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/cdss-programs/tribal-affairs/upcoming-meetings-and-events\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/cdss-programs/tribal-affairs/upcoming-meetings-and-events\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:29.946Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/cdss-programs/tribal-affairs/upcoming-meetings-and-events",
+	"url": "https://cdss.ca.gov/inforesources/cdss-programs/tribal-affairs/upcoming-meetings-and-events"
+}

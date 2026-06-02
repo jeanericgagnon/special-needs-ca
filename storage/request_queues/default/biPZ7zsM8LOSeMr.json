@@ -1,0 +1,9 @@
+{
+	"id": "biPZ7zsM8LOSeMr",
+	"json": "{\"id\":\"biPZ7zsM8LOSeMr\",\"url\":\"https://www.dds.ca.gov/consumers/wellness-toolkit/resources\",\"loadedUrl\":\"https://www.dds.ca.gov/individuals-and-families/resources/\",\"uniqueKey\":\"https://www.dds.ca.gov/consumers/wellness-toolkit/resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:23.904Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/consumers/wellness-toolkit/resources",
+	"url": "https://www.dds.ca.gov/consumers/wellness-toolkit/resources"
+}

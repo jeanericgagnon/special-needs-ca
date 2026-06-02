@@ -1,0 +1,9 @@
+{
+	"id": "nPq118TFv68GxI8",
+	"json": "{\"id\":\"nPq118TFv68GxI8\",\"url\":\"https://www.ucdavis.edu/majors/blog/career-preparation/advising\",\"loadedUrl\":\"https://www.ucdavis.edu/majors/blog/career-preparation/advising\",\"uniqueKey\":\"https://www.ucdavis.edu/majors/blog/career-preparation/advising\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:44.167Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ucdavis.edu/majors/blog/career-preparation/advising",
+	"url": "https://www.ucdavis.edu/majors/blog/career-preparation/advising"
+}

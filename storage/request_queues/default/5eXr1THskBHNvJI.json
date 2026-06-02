@@ -1,0 +1,9 @@
+{
+	"id": "5eXr1THskBHNvJI",
+	"json": "{\"id\":\"5eXr1THskBHNvJI\",\"url\":\"https://biology.ucdavis.edu/undergraduate/student-life\",\"loadedUrl\":\"https://biology.ucdavis.edu/undergraduate/student-life\",\"uniqueKey\":\"https://biology.ucdavis.edu/undergraduate/student-life\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:16.807Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://biology.ucdavis.edu/undergraduate/student-life",
+	"url": "https://biology.ucdavis.edu/undergraduate/student-life"
+}

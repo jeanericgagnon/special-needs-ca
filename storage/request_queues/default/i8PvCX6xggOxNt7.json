@@ -1,0 +1,9 @@
+{
+	"id": "i8PvCX6xggOxNt7",
+	"json": "{\"id\":\"i8PvCX6xggOxNt7\",\"url\":\"https://www.cdph.ca.gov/Programs/OPA/_layouts/15/listform.aspx?ListId=%7B230ED15D%2DD62E%2D4FC5%2DBA14%2DC79229104693%7D&PageType=0\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/OPA/Pages/Office-of-Communications.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/OPA/_layouts/15/listform.aspx?ListId=%7B230ED15D-D62E-4FC5-BA14-C79229104693%7D&PageType=0\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:57.366Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/OPA/_layouts/15/listform.aspx?ListId=%7B230ED15D-D62E-4FC5-BA14-C79229104693%7D&PageType=0",
+	"url": "https://www.cdph.ca.gov/Programs/OPA/_layouts/15/listform.aspx?ListId=%7B230ED15D%2DD62E%2D4FC5%2DBA14%2DC79229104693%7D&PageType=0"
+}

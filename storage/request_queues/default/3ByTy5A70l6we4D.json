@@ -1,0 +1,9 @@
+{
+	"id": "3ByTy5A70l6we4D",
+	"json": "{\"id\":\"3ByTy5A70l6we4D\",\"url\":\"https://mychart.ucdavis.edu/MyChart/GuestEstimates?back=True\",\"loadedUrl\":\"https://mychart.ucdavis.edu/MyChart/GuestEstimates?back=True\",\"uniqueKey\":\"https://mychart.ucdavis.edu/MyChart/GuestEstimates?back=True\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:42.264Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://mychart.ucdavis.edu/MyChart/GuestEstimates?back=True",
+	"url": "https://mychart.ucdavis.edu/MyChart/GuestEstimates?back=True"
+}

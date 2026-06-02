@@ -1,0 +1,9 @@
+{
+	"id": "wMvcajuSc6ORLKW",
+	"json": "{\"id\":\"wMvcajuSc6ORLKW\",\"url\":\"https://www.cde.ca.gov/ci/cr/cf/caadoptinstrmaterials.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/cr/cf/caadoptinstrmaterials.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/cr/cf/caadoptinstrmaterials.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:48.995Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ci/cr/cf/caadoptinstrmaterials.asp",
+	"url": "https://www.cde.ca.gov/ci/cr/cf/caadoptinstrmaterials.asp"
+}

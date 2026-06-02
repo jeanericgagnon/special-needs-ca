@@ -1,0 +1,9 @@
+{
+	"id": "Q8T7azc3dWornKH",
+	"json": "{\"id\":\"Q8T7azc3dWornKH\",\"url\":\"https://www.dds.ca.gov/consumers/wellness-toolkit/vendors-providers/emergency-preparedness\",\"loadedUrl\":\"https://www.dds.ca.gov/individuals-and-families/wellness-toolkit/direct-support-professionals/emergency-preparedness/\",\"uniqueKey\":\"https://www.dds.ca.gov/consumers/wellness-toolkit/vendors-providers/emergency-preparedness\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:05:19.305Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/consumers/wellness-toolkit/vendors-providers/emergency-preparedness",
+	"url": "https://www.dds.ca.gov/consumers/wellness-toolkit/vendors-providers/emergency-preparedness"
+}

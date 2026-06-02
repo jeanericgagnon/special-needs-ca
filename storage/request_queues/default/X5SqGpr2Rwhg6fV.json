@@ -1,0 +1,9 @@
+{
+	"id": "X5SqGpr2Rwhg6fV",
+	"json": "{\"id\":\"X5SqGpr2Rwhg6fV\",\"url\":\"https://www.cde.ca.gov/eo/in/documents/globalca2030report.pdf\",\"loadedUrl\":\"https://www.cde.ca.gov/eo/in/documents/globalca2030report.pdf\",\"uniqueKey\":\"https://www.cde.ca.gov/eo/in/documents/globalca2030report.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:22:51.520Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/eo/in/documents/globalca2030report.pdf",
+	"url": "https://www.cde.ca.gov/eo/in/documents/globalca2030report.pdf"
+}

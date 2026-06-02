@@ -1,0 +1,9 @@
+{
+	"id": "n6RmcnNmx9Ak6S2",
+	"json": "{\"id\":\"n6RmcnNmx9Ak6S2\",\"url\":\"https://www.dsh.ca.gov/Hospitals/index.html\",\"loadedUrl\":\"https://www.dsh.ca.gov/Hospitals/index.html\",\"uniqueKey\":\"https://www.dsh.ca.gov/Hospitals/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:39.334Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dsh.ca.gov/Hospitals/index.html",
+	"url": "https://www.dsh.ca.gov/Hospitals/index.html"
+}

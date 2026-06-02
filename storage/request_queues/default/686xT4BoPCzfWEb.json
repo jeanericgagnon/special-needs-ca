@@ -1,0 +1,9 @@
+{
+	"id": "686xT4BoPCzfWEb",
+	"json": "{\"id\":\"686xT4BoPCzfWEb\",\"url\":\"https://irb.ucdavis.edu/project-guidance/consent-process/surrogate-consent/\",\"loadedUrl\":\"https://irb.ucdavis.edu/project-guidance/consent-process/surrogate-consent/\",\"uniqueKey\":\"https://irb.ucdavis.edu/project-guidance/consent-process/surrogate-consent\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:40.678Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://irb.ucdavis.edu/project-guidance/consent-process/surrogate-consent",
+	"url": "https://irb.ucdavis.edu/project-guidance/consent-process/surrogate-consent/"
+}

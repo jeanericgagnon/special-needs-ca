@@ -1,0 +1,9 @@
+{
+	"id": "VDpp4y8XlVCPi4Z",
+	"json": "{\"id\":\"VDpp4y8XlVCPi4Z\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/42822/alyssa-speciale-physical_medicine_and_rehabilitation-sports_medicine-elk_grove-sacramento/?FreeText:Last+name=Speciale\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/42822/alyssa-speciale-physical_medicine_and_rehabilitation-sports_medicine-elk_grove-sacramento/?FreeText:Last+name=Speciale\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/42822/alyssa-speciale-physical_medicine_and_rehabilitation-sports_medicine-elk_grove-sacramento?FreeText%3ALast+name=Speciale\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:15.217Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/42822/alyssa-speciale-physical_medicine_and_rehabilitation-sports_medicine-elk_grove-sacramento?FreeText%3ALast+name=Speciale",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/42822/alyssa-speciale-physical_medicine_and_rehabilitation-sports_medicine-elk_grove-sacramento/?FreeText:Last+name=Speciale"
+}

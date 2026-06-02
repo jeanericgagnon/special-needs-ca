@@ -1,0 +1,9 @@
+{
+	"id": "nc2sDnTumI9xxJm",
+	"json": "{\"id\":\"nc2sDnTumI9xxJm\",\"url\":\"https://www.cdtfa.ca.gov/lawguides/vol1/sutl/7051-3.html\",\"loadedUrl\":\"https://cdtfa.ca.gov/lawguides/vol1/sutl/7051-3.html\",\"uniqueKey\":\"https://www.cdtfa.ca.gov/lawguides/vol1/sutl/7051-3.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:23.427Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdtfa.ca.gov/lawguides/vol1/sutl/7051-3.html",
+	"url": "https://www.cdtfa.ca.gov/lawguides/vol1/sutl/7051-3.html"
+}

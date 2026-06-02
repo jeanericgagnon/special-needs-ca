@@ -1,0 +1,9 @@
+{
+	"id": "KqY4qX4ruzRZBBd",
+	"json": "{\"id\":\"KqY4qX4ruzRZBBd\",\"url\":\"https://health.ucdavis.edu/homecare/homehealth/giving-to-home-health.html\",\"loadedUrl\":\"https://health.ucdavis.edu/homecare/homehealth/giving-to-home-health.html\",\"uniqueKey\":\"https://health.ucdavis.edu/homecare/homehealth/giving-to-home-health.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:43.496Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/homecare/homehealth/giving-to-home-health.html",
+	"url": "https://health.ucdavis.edu/homecare/homehealth/giving-to-home-health.html"
+}

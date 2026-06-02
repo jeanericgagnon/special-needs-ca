@@ -1,0 +1,9 @@
+{
+	"id": "jg8gJ55KfTX0EBb",
+	"json": "{\"id\":\"jg8gJ55KfTX0EBb\",\"url\":\"https://www.cdss.ca.gov/inforesources/IHSS-Providers/Resources/Timesheet-Information\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/esphelp\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/IHSS-Providers/Resources/Timesheet-Information\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:40.033Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/inforesources/IHSS-Providers/Resources/Timesheet-Information",
+	"url": "https://www.cdss.ca.gov/inforesources/IHSS-Providers/Resources/Timesheet-Information"
+}

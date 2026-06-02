@@ -1,0 +1,9 @@
+{
+	"id": "fr8Y4cxJVELqbQa",
+	"json": "{\"id\":\"fr8Y4cxJVELqbQa\",\"url\":\"https://health.ucdavis.edu/medical-school/academic-programs/pre-medical-pathways\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-school/academic-programs/pre-medical-pathways\",\"uniqueKey\":\"https://health.ucdavis.edu/medical-school/academic-programs/pre-medical-pathways\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:52.969Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/medical-school/academic-programs/pre-medical-pathways",
+	"url": "https://health.ucdavis.edu/medical-school/academic-programs/pre-medical-pathways"
+}

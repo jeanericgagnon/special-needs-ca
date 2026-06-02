@@ -1,0 +1,9 @@
+{
+	"id": "KaLgGZZ4tMK69ac",
+	"json": "{\"id\":\"KaLgGZZ4tMK69ac\",\"url\":\"https://health.ucdavis.edu/mind-institute/resources/resource-center\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/resources/resource-center\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/resources/resource-center\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:05:26.128Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mind-institute/resources/resource-center",
+	"url": "https://health.ucdavis.edu/mind-institute/resources/resource-center"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "V85Ax2mfZi1xcYt",
+	"json": "{\"id\":\"V85Ax2mfZi1xcYt\",\"url\":\"https://www.cdph.ca.gov/Programs/CID/DOA/Pages/OAadap.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CID/DOA/Pages/OAadap.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CID/DOA/Pages/OAadap.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:02:58.610Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CID/DOA/Pages/OAadap.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CID/DOA/Pages/OAadap.aspx"
+}

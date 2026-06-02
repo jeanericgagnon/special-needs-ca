@@ -1,0 +1,9 @@
+{
+	"id": "KHl2BZ3L4vI3YLJ",
+	"json": "{\"id\":\"KHl2BZ3L4vI3YLJ\",\"url\":\"https://osg.ca.gov/contraception/\",\"loadedUrl\":\"https://osg.ca.gov/contraception/\",\"uniqueKey\":\"https://osg.ca.gov/contraception\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:06:12.139Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://osg.ca.gov/contraception",
+	"url": "https://osg.ca.gov/contraception/"
+}

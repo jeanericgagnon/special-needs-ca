@@ -1,0 +1,9 @@
+{
+	"id": "xFFFAV8Q0sXFSWU",
+	"json": "{\"id\":\"xFFFAV8Q0sXFSWU\",\"url\":\"https://www.cdss.ca.gov/Benefits-Services/Adoption-Services/Adoptions-Assistance-Program\",\"loadedUrl\":\"https://www.cdss.ca.gov/adoptions-assistance\",\"uniqueKey\":\"https://www.cdss.ca.gov/Benefits-Services/Adoption-Services/Adoptions-Assistance-Program\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:28.733Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/Benefits-Services/Adoption-Services/Adoptions-Assistance-Program",
+	"url": "https://www.cdss.ca.gov/Benefits-Services/Adoption-Services/Adoptions-Assistance-Program"
+}

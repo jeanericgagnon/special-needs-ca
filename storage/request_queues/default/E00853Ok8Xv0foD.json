@@ -1,0 +1,9 @@
+{
+	"id": "E00853Ok8Xv0foD",
+	"json": "{\"id\":\"E00853Ok8Xv0foD\",\"url\":\"https://health.ucdavis.edu/aboutus/150th-anniversary/articles/mid-century-new-drugs-more-change.html\",\"loadedUrl\":\"https://health.ucdavis.edu/aboutus/150th-anniversary/articles/mid-century-new-drugs-more-change.html\",\"uniqueKey\":\"https://health.ucdavis.edu/aboutus/150th-anniversary/articles/mid-century-new-drugs-more-change.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:09.254Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/aboutus/150th-anniversary/articles/mid-century-new-drugs-more-change.html",
+	"url": "https://health.ucdavis.edu/aboutus/150th-anniversary/articles/mid-century-new-drugs-more-change.html"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "Es8w6471ZnGcfO0",
+	"json": "{\"id\":\"Es8w6471ZnGcfO0\",\"url\":\"https://www.ssa.gov/about-ssa\",\"loadedUrl\":\"https://www.ssa.gov/about-ssa\",\"uniqueKey\":\"https://www.ssa.gov/about-ssa\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:55.488Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ssa.gov/about-ssa",
+	"url": "https://www.ssa.gov/about-ssa"
+}

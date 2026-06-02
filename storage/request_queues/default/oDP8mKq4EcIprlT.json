@@ -1,0 +1,9 @@
+{
+	"id": "oDP8mKq4EcIprlT",
+	"json": "{\"id\":\"oDP8mKq4EcIprlT\",\"url\":\"https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/Letter-Award-TB-Funding-Additional-FSIE-23-24_03-06-24.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/Letter-Award-TB-Funding-Additional-FSIE-23-24_03-06-24.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/Letter-Award-TB-Funding-Additional-FSIE-23-24_03-06-24.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:52:43.942Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/Letter-Award-TB-Funding-Additional-FSIE-23-24_03-06-24.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/Letter-Award-TB-Funding-Additional-FSIE-23-24_03-06-24.aspx"
+}

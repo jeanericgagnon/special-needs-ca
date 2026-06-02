@@ -1,0 +1,9 @@
+{
+	"id": "JohqziWIUrOi0nx",
+	"json": "{\"id\":\"JohqziWIUrOi0nx\",\"url\":\"https://www.csdr-cde.ca.gov/admission/\",\"loadedUrl\":\"https://www.csdr-cde.ca.gov/admission/\",\"uniqueKey\":\"https://www.csdr-cde.ca.gov/admission\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:11.046Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csdr-cde.ca.gov/admission",
+	"url": "https://www.csdr-cde.ca.gov/admission/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "zBuWRLITANaeVVs",
+	"json": "{\"id\":\"zBuWRLITANaeVVs\",\"url\":\"https://health.ucdavis.edu/parking/parkmobile/\",\"loadedUrl\":\"https://health.ucdavis.edu/parking/parkmobile/\",\"uniqueKey\":\"https://health.ucdavis.edu/parking/parkmobile\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:54.091Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/parking/parkmobile",
+	"url": "https://health.ucdavis.edu/parking/parkmobile/"
+}

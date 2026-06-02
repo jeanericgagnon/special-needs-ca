@@ -1,0 +1,9 @@
+{
+	"id": "CeSc2VI9XwKhEs2",
+	"json": "{\"id\":\"CeSc2VI9XwKhEs2\",\"url\":\"https://redwoodseed.ucdavis.edu/contact\",\"loadedUrl\":\"https://redwoodseed.ucdavis.edu/contact\",\"uniqueKey\":\"https://redwoodseed.ucdavis.edu/contact\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:47.216Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://redwoodseed.ucdavis.edu/contact",
+	"url": "https://redwoodseed.ucdavis.edu/contact"
+}

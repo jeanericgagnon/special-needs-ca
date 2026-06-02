@@ -1,0 +1,9 @@
+{
+	"id": "TBMyphkstbCDBmz",
+	"json": "{\"id\":\"TBMyphkstbCDBmz\",\"url\":\"http://www.cslb.ca.gov/Consumers/Filing_A_Complaint/\",\"loadedUrl\":\"https://www.cslb.ca.gov/Consumers/Filing_A_Complaint/\",\"uniqueKey\":\"http://www.cslb.ca.gov/Consumers/Filing_A_Complaint\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:37.206Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.cslb.ca.gov/Consumers/Filing_A_Complaint",
+	"url": "http://www.cslb.ca.gov/Consumers/Filing_A_Complaint/"
+}

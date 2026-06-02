@@ -1,0 +1,9 @@
+{
+	"id": "0C8TOiTVKCt8x8p",
+	"json": "{\"id\":\"0C8TOiTVKCt8x8p\",\"url\":\"https://www.csb-cde.ca.gov/resources/presentations/virtualparentfamily.aspx\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=e0f5df4f-2bce-4dd7-afb8-f3ebad661643&ssb=22742244393&ssc=https%3A%2F%2Fwww.csb-cde.ca.gov%2Fresources%2Fpresentations%2Fvirtualparentfamily.aspx&ssi=f709b4d4-cuez-427c-9458-d0347262df2f&ssk=botmanager_support@radware.com&ssm=05393396226608065102167653359784&ssn=5f6d2e3640010f76cdd4c4ddbef67496d2bbbed040ee-3380-4c61-aea16a&sso=ebaa7075-2153719f5841867cef282eb7e3b9facedb2cbb78d9b7ec08&ssp=26295081331780344705178030120516127&ssq=47625312762808560658427628416029009112735&ssr=MTcyLjU2LjI0My4xOTM=&sst=&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsInV6bXgiOiI3ZjkwMDBkNmFmZDQ3OC1kM2RkLTQyNDQtOTI3Zi0xOWZiNTdmOWM4MGMxLTE3ODAzMjc1MzI3MjQ5NTc3Ny1kZmNiNTYxOTYwNWNkOTA2MTMiLCJfX3V6bWYiOiI3ZjkwMDBiZWQwNDBlZS0zMzgwLTRjNjEtYTA3NS0yMTUzNzE5ZjU4NDExLTE3ODAzMjc2Mjg1MDEwLTAwMzkxOTIyZGUzMjIwNWE4ZDgxMCJ9\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/resources/presentations/virtualparentfamily.aspx\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:27:08.612Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csb-cde.ca.gov/resources/presentations/virtualparentfamily.aspx",
+	"url": "https://www.csb-cde.ca.gov/resources/presentations/virtualparentfamily.aspx"
+}

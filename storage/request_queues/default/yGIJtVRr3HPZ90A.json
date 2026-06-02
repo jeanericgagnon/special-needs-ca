@@ -1,0 +1,9 @@
+{
+	"id": "yGIJtVRr3HPZ90A",
+	"json": "{\"id\":\"yGIJtVRr3HPZ90A\",\"url\":\"https://surveys3.cde.ca.gov/go/bnt-list-registration.asp\",\"loadedUrl\":\"https://surveys3.cde.ca.gov/s.asp?k=169826517346\",\"uniqueKey\":\"https://surveys3.cde.ca.gov/go/bnt-list-registration.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:49.696Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://surveys3.cde.ca.gov/go/bnt-list-registration.asp",
+	"url": "https://surveys3.cde.ca.gov/go/bnt-list-registration.asp"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "Gncx3cT6S5adYo1",
+	"json": "{\"id\":\"Gncx3cT6S5adYo1\",\"url\":\"http://www.slocounty.ca.gov/Departments/Health-Agency/Public-Health.aspx\",\"loadedUrl\":\"https://www.slocounty.ca.gov/departments/health-agency/public-health\",\"uniqueKey\":\"http://www.slocounty.ca.gov/Departments/Health-Agency/Public-Health.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:55:08.450Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.slocounty.ca.gov/Departments/Health-Agency/Public-Health.aspx",
+	"url": "http://www.slocounty.ca.gov/Departments/Health-Agency/Public-Health.aspx"
+}

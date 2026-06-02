@@ -1,0 +1,9 @@
+{
+	"id": "fIG58u9G4JTu3Py",
+	"json": "{\"id\":\"fIG58u9G4JTu3Py\",\"url\":\"https://cdss.ca.gov/inforesources/senior-care-licensing/resources-for-providers\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/senior-care-licensing/resources-for-providers\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/senior-care-licensing/resources-for-providers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:50.748Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/senior-care-licensing/resources-for-providers",
+	"url": "https://cdss.ca.gov/inforesources/senior-care-licensing/resources-for-providers"
+}

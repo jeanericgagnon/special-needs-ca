@@ -1,0 +1,9 @@
+{
+	"id": "1UxrqZj17Q9OOzY",
+	"json": "{\"id\":\"1UxrqZj17Q9OOzY\",\"url\":\"https://www.cde.ca.gov/re/lr/wr/federalwaiver.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/re/lr/wr/federalwaiver.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/re/lr/wr/federalwaiver.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:33.451Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/re/lr/wr/federalwaiver.asp",
+	"url": "https://www.cde.ca.gov/re/lr/wr/federalwaiver.asp"
+}

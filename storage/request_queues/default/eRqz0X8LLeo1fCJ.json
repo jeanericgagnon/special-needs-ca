@@ -1,0 +1,9 @@
+{
+	"id": "eRqz0X8LLeo1fCJ",
+	"json": "{\"id\":\"eRqz0X8LLeo1fCJ\",\"url\":\"https://hr.ucdavis.edu/departments/elr/dms/resources\",\"loadedUrl\":\"https://hr.ucdavis.edu/departments/dms/resources\",\"uniqueKey\":\"https://hr.ucdavis.edu/departments/elr/dms/resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:09.058Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/departments/elr/dms/resources",
+	"url": "https://hr.ucdavis.edu/departments/elr/dms/resources"
+}

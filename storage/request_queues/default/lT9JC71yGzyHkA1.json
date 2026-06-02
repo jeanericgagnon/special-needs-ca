@@ -1,0 +1,9 @@
+{
+	"id": "lT9JC71yGzyHkA1",
+	"json": "{\"id\":\"lT9JC71yGzyHkA1\",\"url\":\"https://giving.ucdavis.edu/ways-to-give/cryptocurrencies\",\"loadedUrl\":\"https://giving.ucdavis.edu/ways-to-give/cryptocurrencies\",\"uniqueKey\":\"https://giving.ucdavis.edu/ways-to-give/cryptocurrencies\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:31.442Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://giving.ucdavis.edu/ways-to-give/cryptocurrencies",
+	"url": "https://giving.ucdavis.edu/ways-to-give/cryptocurrencies"
+}

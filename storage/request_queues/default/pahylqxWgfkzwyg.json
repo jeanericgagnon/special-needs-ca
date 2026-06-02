@@ -1,0 +1,9 @@
+{
+	"id": "pahylqxWgfkzwyg",
+	"json": "{\"id\":\"pahylqxWgfkzwyg\",\"url\":\"https://yellowcluster.ucdavis.edu/people/Vacant\",\"loadedUrl\":\"https://yellowcluster.ucdavis.edu/people/Vacant\",\"uniqueKey\":\"https://yellowcluster.ucdavis.edu/people/Vacant\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:17.476Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://yellowcluster.ucdavis.edu/people/Vacant",
+	"url": "https://yellowcluster.ucdavis.edu/people/Vacant"
+}

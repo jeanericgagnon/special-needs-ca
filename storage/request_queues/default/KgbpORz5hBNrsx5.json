@@ -1,0 +1,9 @@
+{
+	"id": "KgbpORz5hBNrsx5",
+	"json": "{\"id\":\"KgbpORz5hBNrsx5\",\"url\":\"https://www.cdph.ca.gov/Programs/ODS/Pages/Office-of-Data-Strategy-Homepage.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/ODS/Pages/Office-of-Data-Strategy-Homepage.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/ODS/Pages/Office-of-Data-Strategy-Homepage.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:03:45.564Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/ODS/Pages/Office-of-Data-Strategy-Homepage.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/ODS/Pages/Office-of-Data-Strategy-Homepage.aspx"
+}

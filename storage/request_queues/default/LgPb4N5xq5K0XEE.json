@@ -1,0 +1,9 @@
+{
+	"id": "LgPb4N5xq5K0XEE",
+	"json": "{\"id\":\"LgPb4N5xq5K0XEE\",\"url\":\"https://www.cde.ca.gov/fg/ac/ic/uniformguidance2425ltr.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=fe812287-1773-4530-bb45-36d40a669482&ssb=48386255225&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Ffg%2Fac%2Fic%2Funiformguidance2425ltr.asp&ssi=8200bbe8-ctxv-4afc-8ac3-99530a4f4f62&ssk=botmanager_support@radware.com&ssm=88643499667243771105766652511904&ssn=92e8d697ac9860514c0752e2585b61bc25f10993d6da-2d89-487d-87de17&sso=20c38f17-aea630b1f87721362040449c95badc3cfbd1d4bcfcb92638&ssp=29626277981780305548178039082013935&ssq=99621442731195949974727311931528388265463&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsIl9fdXptZiI6IjdmOTAwMDA5OTNkNmRhLTJkODktNDg3ZC04ZjE3LWFlYTYzMGIxZjg3NzEtMTc4MDMyNzMxMTE3OTAtMDAzNjUyY2EyMWYwZTY4MmZlNzEwIiwidXpteCI6IjdmOTAwMDk4ODMwZTk3LTIyODUtNGY5MC04MWFmLThiZDMzMzdkNDYwZTEtMTc4MDMyNzMxMTE3OTAtZTdhYzg5MzVlMjM4MDlkOTEwIn0=\",\"uniqueKey\":\"https://www.cde.ca.gov/fg/ac/ic/uniformguidance2425ltr.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:21:51.291Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/fg/ac/ic/uniformguidance2425ltr.asp",
+	"url": "https://www.cde.ca.gov/fg/ac/ic/uniformguidance2425ltr.asp"
+}

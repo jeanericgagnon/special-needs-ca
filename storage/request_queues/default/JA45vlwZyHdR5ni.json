@@ -1,0 +1,9 @@
+{
+	"id": "JA45vlwZyHdR5ni",
+	"json": "{\"id\":\"JA45vlwZyHdR5ni\",\"url\":\"https://www.cdph.ca.gov/Programs/OHE/Pages/Climate-Health-Equity/Climate-Actions.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/OHE/Pages/Climate-Health-Equity/Climate-Actions.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/OHE/Pages/Climate-Health-Equity/Climate-Actions.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:08:10.632Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/OHE/Pages/Climate-Health-Equity/Climate-Actions.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/OHE/Pages/Climate-Health-Equity/Climate-Actions.aspx"
+}

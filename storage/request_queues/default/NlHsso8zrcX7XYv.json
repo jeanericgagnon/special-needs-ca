@@ -1,0 +1,9 @@
+{
+	"id": "NlHsso8zrcX7XYv",
+	"json": "{\"id\":\"NlHsso8zrcX7XYv\",\"url\":\"https://www.placer.ca.gov/2338/In-Home-Supportive-Services\",\"loadedUrl\":\"https://www.placer.ca.gov/2338/In-Home-Supportive-Services\",\"uniqueKey\":\"https://www.placer.ca.gov/2338/In-Home-Supportive-Services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:29.787Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.placer.ca.gov/2338/In-Home-Supportive-Services",
+	"url": "https://www.placer.ca.gov/2338/In-Home-Supportive-Services"
+}

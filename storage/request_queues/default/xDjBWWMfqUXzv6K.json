@@ -1,0 +1,9 @@
+{
+	"id": "xDjBWWMfqUXzv6K",
+	"json": "{\"id\":\"xDjBWWMfqUXzv6K\",\"url\":\"https://www.ctc.ca.gov/educator-discipline/reporting-educator-misconduct\",\"loadedUrl\":\"https://www.ctc.ca.gov/licensure-enforcement/reporting-educator-misconduct/\",\"uniqueKey\":\"https://www.ctc.ca.gov/educator-discipline/reporting-educator-misconduct\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:46.698Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ctc.ca.gov/educator-discipline/reporting-educator-misconduct",
+	"url": "https://www.ctc.ca.gov/educator-discipline/reporting-educator-misconduct"
+}

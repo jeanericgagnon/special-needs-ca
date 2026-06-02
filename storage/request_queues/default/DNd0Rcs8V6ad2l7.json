@@ -1,0 +1,9 @@
+{
+	"id": "DNd0Rcs8V6ad2l7",
+	"json": "{\"id\":\"DNd0Rcs8V6ad2l7\",\"url\":\"https://lao.ca.gov/Policy-Areas?areaId=2\",\"loadedUrl\":\"https://lao.ca.gov/Policy-Areas?areaId=2\",\"uniqueKey\":\"https://lao.ca.gov/Policy-Areas?areaId=2\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:03:02.212Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://lao.ca.gov/Policy-Areas?areaId=2",
+	"url": "https://lao.ca.gov/Policy-Areas?areaId=2"
+}

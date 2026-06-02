@@ -1,0 +1,9 @@
+{
+	"id": "HD2E7gTRls8iLi0",
+	"json": "{\"id\":\"HD2E7gTRls8iLi0\",\"url\":\"https://neuroscience.ucdavis.edu/systems\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/systems\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/systems\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:00.529Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://neuroscience.ucdavis.edu/systems",
+	"url": "https://neuroscience.ucdavis.edu/systems"
+}

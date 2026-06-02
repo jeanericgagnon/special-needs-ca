@@ -1,0 +1,9 @@
+{
+	"id": "VUZZNPaLrlrxZJ3",
+	"json": "{\"id\":\"VUZZNPaLrlrxZJ3\",\"url\":\"https://www.globaldownsyndrome.org/ru/%d0%bd%d0%b0%d1%88%d0%b0-%d0%b8%d1%81%d1%82%d0%be%d1%80%d0%b8%d1%8f/\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/ru/%d0%bd%d0%b0%d1%88%d0%b0-%d0%b8%d1%81%d1%82%d0%be%d1%80%d0%b8%d1%8f/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/ru/%d0%bd%d0%b0%d1%88%d0%b0-%d0%b8%d1%81%d1%82%d0%be%d1%80%d0%b8%d1%8f\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:30:02.888Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.globaldownsyndrome.org/ru/%d0%bd%d0%b0%d1%88%d0%b0-%d0%b8%d1%81%d1%82%d0%be%d1%80%d0%b8%d1%8f",
+	"url": "https://www.globaldownsyndrome.org/ru/%d0%bd%d0%b0%d1%88%d0%b0-%d0%b8%d1%81%d1%82%d0%be%d1%80%d0%b8%d1%8f/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "JbkC7C7kc4xYrre",
+	"json": "{\"id\":\"JbkC7C7kc4xYrre\",\"url\":\"https://health.ucdavis.edu/psychiatry/mental-health-services/substance-use-disorders-treatment-clinic.html\",\"loadedUrl\":\"https://health.ucdavis.edu/psychiatry/services-specialties/addiction-psychiatry\",\"uniqueKey\":\"https://health.ucdavis.edu/psychiatry/mental-health-services/substance-use-disorders-treatment-clinic.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:06.990Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/psychiatry/mental-health-services/substance-use-disorders-treatment-clinic.html",
+	"url": "https://health.ucdavis.edu/psychiatry/mental-health-services/substance-use-disorders-treatment-clinic.html"
+}

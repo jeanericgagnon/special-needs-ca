@@ -1,0 +1,9 @@
+{
+	"id": "Cp0MLTKZBFH2Awl",
+	"json": "{\"id\":\"Cp0MLTKZBFH2Awl\",\"url\":\"http://www.ucdmc.ucdavis.edu/newsroom/publications/index.html\",\"loadedUrl\":\"https://health.ucdavis.edu/news/publications/\",\"uniqueKey\":\"http://www.ucdmc.ucdavis.edu/newsroom/publications/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:28.798Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.ucdmc.ucdavis.edu/newsroom/publications/index.html",
+	"url": "http://www.ucdmc.ucdavis.edu/newsroom/publications/index.html"
+}

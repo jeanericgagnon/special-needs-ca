@@ -1,0 +1,9 @@
+{
+	"id": "2jm0SY10Z7vBMsm",
+	"json": "{\"id\":\"2jm0SY10Z7vBMsm\",\"url\":\"https://www.dmv.ca.gov/portal/shopping-cart/\",\"loadedUrl\":\"https://www.dmv.ca.gov/portal/shopping-cart/\",\"uniqueKey\":\"https://www.dmv.ca.gov/portal/shopping-cart\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:37.858Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dmv.ca.gov/portal/shopping-cart",
+	"url": "https://www.dmv.ca.gov/portal/shopping-cart/"
+}

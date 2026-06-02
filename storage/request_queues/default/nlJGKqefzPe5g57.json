@@ -1,0 +1,9 @@
+{
+	"id": "nlJGKqefzPe5g57",
+	"json": "{\"id\":\"nlJGKqefzPe5g57\",\"url\":\"https://health.ucdavis.edu/nursing/\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/\",\"uniqueKey\":\"https://health.ucdavis.edu/nursing\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:56.230Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/nursing",
+	"url": "https://health.ucdavis.edu/nursing/"
+}

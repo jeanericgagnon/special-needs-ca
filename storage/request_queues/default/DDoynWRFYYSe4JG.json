@@ -1,0 +1,9 @@
+{
+	"id": "DDoynWRFYYSe4JG",
+	"json": "{\"id\":\"DDoynWRFYYSe4JG\",\"url\":\"https://www.cde.ca.gov/sp/se/st/employment.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=248ce61a-1c1c-49b7-934a-99b8a664d81b&ssb=37443215830&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fsp%2Fse%2Fst%2Femployment.asp&ssi=c0ac95f9-ctxv-4417-8a85-efaad995f634&ssk=botmanager_support@radware.com&ssm=28819146371699059139128153808454&ssn=a5ed597edc0ed345ca381238bd0621ffc7db3c1f2446-7d8b-484c-8780f0&sso=9d746cd0-b7341b6eed43fdd618fbad412487726f23a096e984f1dcbb&ssp=99689038071780327299178032635695239&ssq=11243882759804652796726617886802470557254&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsIl9fdXptZiI6IjdmOTAwMDNjMWYyNDQ2LTdkOGItNDg0Yy04Y2QwLWI3MzQxYjZlZWQ0MzEtMTc4MDMyNjYxNzA3Mjk4MTE1NC0wMDMxM2JjNjZiNmY1ZjgzODA4MTMiLCJ1em14IjoiN2Y5MDAwYmQ1M2RmNWItNmE3Ny00MjY3LTg2MTgtYTIzNGYzYjI5Zjk0MS0xNzgwMzI2NjE3MDcyOTgxMTU0LTVkODIzYmFlNDBmNzE2NDcxMyJ9\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/se/st/employment.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:26:38.417Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/sp/se/st/employment.asp",
+	"url": "https://www.cde.ca.gov/sp/se/st/employment.asp"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "U2UXVIozCXFNkcu",
+	"json": "{\"id\":\"U2UXVIozCXFNkcu\",\"url\":\"https://health.ucdavis.edu/mind-institute/resources/assistive-technology\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/resources/assistive-technology\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/resources/assistive-technology\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:37.861Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mind-institute/resources/assistive-technology",
+	"url": "https://health.ucdavis.edu/mind-institute/resources/assistive-technology"
+}

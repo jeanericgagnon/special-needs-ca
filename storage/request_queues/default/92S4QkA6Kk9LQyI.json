@@ -1,0 +1,9 @@
+{
+	"id": "92S4QkA6Kk9LQyI",
+	"json": "{\"id\":\"92S4QkA6Kk9LQyI\",\"url\":\"https://ciris.mt.cdcr.ca.gov/\",\"loadedUrl\":\"https://ciris.mt.cdcr.ca.gov/\",\"uniqueKey\":\"https://ciris.mt.cdcr.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:26.530Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://ciris.mt.cdcr.ca.gov",
+	"url": "https://ciris.mt.cdcr.ca.gov/"
+}

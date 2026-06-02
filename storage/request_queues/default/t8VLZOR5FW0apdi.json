@@ -1,0 +1,9 @@
+{
+	"id": "t8VLZOR5FW0apdi",
+	"json": "{\"id\":\"t8VLZOR5FW0apdi\",\"url\":\"https://neuroscience.ucdavis.edu/people/richard-maddock\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/people/richard-maddock\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/people/richard-maddock\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:49.350Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://neuroscience.ucdavis.edu/people/richard-maddock",
+	"url": "https://neuroscience.ucdavis.edu/people/richard-maddock"
+}

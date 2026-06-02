@@ -1,0 +1,9 @@
+{
+	"id": "fxrJ1IzzHfeieJg",
+	"json": "{\"id\":\"fxrJ1IzzHfeieJg\",\"url\":\"https://neuroscience.ucdavis.edu/tags/alex-nord-phd\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/tags/alex-nord-phd\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/tags/alex-nord-phd\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:59.500Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://neuroscience.ucdavis.edu/tags/alex-nord-phd",
+	"url": "https://neuroscience.ucdavis.edu/tags/alex-nord-phd"
+}

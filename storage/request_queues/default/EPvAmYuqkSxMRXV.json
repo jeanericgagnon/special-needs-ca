@@ -1,0 +1,9 @@
+{
+	"id": "EPvAmYuqkSxMRXV",
+	"json": "{\"id\":\"EPvAmYuqkSxMRXV\",\"url\":\"https://www.ucdavis.edu/admissions/transfer/major-requirements-college-engineering\",\"loadedUrl\":\"https://www.ucdavis.edu/admissions/transfer/major-requirements-college-engineering\",\"uniqueKey\":\"https://www.ucdavis.edu/admissions/transfer/major-requirements-college-engineering\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:43.187Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ucdavis.edu/admissions/transfer/major-requirements-college-engineering",
+	"url": "https://www.ucdavis.edu/admissions/transfer/major-requirements-college-engineering"
+}

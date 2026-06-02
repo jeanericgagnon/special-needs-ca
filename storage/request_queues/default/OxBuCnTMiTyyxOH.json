@@ -1,0 +1,9 @@
+{
+	"id": "OxBuCnTMiTyyxOH",
+	"json": "{\"id\":\"OxBuCnTMiTyyxOH\",\"url\":\"http://sonomacounty.ca.gov/Human-Services/\",\"loadedUrl\":\"https://sonomacounty.gov/health-and-human-services/human-services-x117989\",\"uniqueKey\":\"http://sonomacounty.ca.gov/Human-Services\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:36:30.297Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://sonomacounty.ca.gov/Human-Services",
+	"url": "http://sonomacounty.ca.gov/Human-Services/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "3OkDbrSJDhAzOgY",
+	"json": "{\"id\":\"3OkDbrSJDhAzOgY\",\"url\":\"https://cdss.ca.gov/child-care-and-nutrition/learning-support/nutrition/child-and-adult-care-food-program/cacfp-administrative-manual-child-and-adult-care-food-program\",\"loadedUrl\":\"https://cdss.ca.gov/child-care-and-nutrition/learning-support/nutrition/child-and-adult-care-food-program/cacfp-administrative-manual-child-and-adult-care-food-program\",\"uniqueKey\":\"https://cdss.ca.gov/child-care-and-nutrition/learning-support/nutrition/child-and-adult-care-food-program/cacfp-administrative-manual-child-and-adult-care-food-program\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:40.367Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/child-care-and-nutrition/learning-support/nutrition/child-and-adult-care-food-program/cacfp-administrative-manual-child-and-adult-care-food-program",
+	"url": "https://cdss.ca.gov/child-care-and-nutrition/learning-support/nutrition/child-and-adult-care-food-program/cacfp-administrative-manual-child-and-adult-care-food-program"
+}

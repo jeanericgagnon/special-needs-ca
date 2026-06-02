@@ -1,0 +1,9 @@
+{
+	"id": "xo3WwUvVOBoMjiJ",
+	"json": "{\"id\":\"xo3WwUvVOBoMjiJ\",\"url\":\"https://www.gov.ca.gov/2024/03/08/california-jobs-first-state-launches-first-of-its-kind-council-to-create-thousands-of-more-jobs-across-all-regions/\",\"loadedUrl\":\"https://www.gov.ca.gov/2024/03/08/california-jobs-first-state-launches-first-of-its-kind-council-to-create-thousands-of-more-jobs-across-all-regions/\",\"uniqueKey\":\"https://www.gov.ca.gov/2024/03/08/california-jobs-first-state-launches-first-of-its-kind-council-to-create-thousands-of-more-jobs-across-all-regions\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:47.846Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.gov.ca.gov/2024/03/08/california-jobs-first-state-launches-first-of-its-kind-council-to-create-thousands-of-more-jobs-across-all-regions",
+	"url": "https://www.gov.ca.gov/2024/03/08/california-jobs-first-state-launches-first-of-its-kind-council-to-create-thousands-of-more-jobs-across-all-regions/"
+}

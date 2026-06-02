@@ -1,0 +1,9 @@
+{
+	"id": "aPYyHDBZZj8VgOM",
+	"json": "{\"id\":\"aPYyHDBZZj8VgOM\",\"url\":\"https://health.ucdavis.edu/imaging-research/services/\",\"loadedUrl\":\"https://health.ucdavis.edu/imaging-research/services/\",\"uniqueKey\":\"https://health.ucdavis.edu/imaging-research/services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:06:42.335Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/imaging-research/services",
+	"url": "https://health.ucdavis.edu/imaging-research/services/"
+}

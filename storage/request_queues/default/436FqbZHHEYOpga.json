@@ -1,0 +1,9 @@
+{
+	"id": "436FqbZHHEYOpga",
+	"json": "{\"id\":\"436FqbZHHEYOpga\",\"url\":\"https://rarediseases.org/sitemap_index.xml\",\"loadedUrl\":\"https://rarediseases.org/wp-sitemap.xml\",\"uniqueKey\":\"https://rarediseases.org/sitemap_index.xml\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:03.696Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/sitemap_index.xml",
+	"url": "https://rarediseases.org/sitemap_index.xml"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "YUzaPZCYAgXDVb7",
+	"json": "{\"id\":\"YUzaPZCYAgXDVb7\",\"url\":\"https://www.library.ca.gov/grants/\",\"loadedUrl\":\"https://www.library.ca.gov/grants/\",\"uniqueKey\":\"https://www.library.ca.gov/grants\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:17.168Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.library.ca.gov/grants",
+	"url": "https://www.library.ca.gov/grants/"
+}

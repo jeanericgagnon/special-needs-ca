@@ -1,0 +1,9 @@
+{
+	"id": "DKHcEkOaFsCAf9n",
+	"json": "{\"id\":\"DKHcEkOaFsCAf9n\",\"url\":\"https://manettishremmuseum.ucdavis.edu/find-out-first-sign-email-updates\",\"loadedUrl\":\"https://manettishremmuseum.ucdavis.edu/find-out-first-sign-email-updates\",\"uniqueKey\":\"https://manettishremmuseum.ucdavis.edu/find-out-first-sign-email-updates\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:14.377Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://manettishremmuseum.ucdavis.edu/find-out-first-sign-email-updates",
+	"url": "https://manettishremmuseum.ucdavis.edu/find-out-first-sign-email-updates"
+}

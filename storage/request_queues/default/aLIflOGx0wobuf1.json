@@ -1,0 +1,9 @@
+{
+	"id": "aLIflOGx0wobuf1",
+	"json": "{\"id\":\"aLIflOGx0wobuf1\",\"url\":\"https://www.cde.ca.gov/sp/ml/elannualonlinerpt.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=fe68f6c9-6302-4a58-a91a-793b185918e5&ssb=94680268644&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fsp%2Fml%2Felannualonlinerpt.asp&ssi=1c6b8d82-ctxv-452b-ab93-13bfea689d51&ssk=botmanager_support@radware.com&ssm=64855013474026476164735268009089&ssn=a65cd92b3150e16e95c56adc99f7235cbe8e6613ac24-a7df-434d-9d0bd9&sso=a367983e-db1f0e9625d61b49ca0ddd1f99d3ea5f513fa5482aca6067&ssp=84749637881780348281178033758599912&ssq=75753242753919063717427451295000603733451&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsIl9fdXptZiI6IjdmOTAwMDY2MTNhYzI0LWE3ZGYtNDM0ZC05ODNlLWRiMWYwZTk2MjVkNjEtMTc4MDMyNzQ1MTQ1Mjg4MTcyLTAwM2FlMzA1YzMzM2I5NzEwNjgxNiIsInV6bXgiOiI3ZjkwMDBkNDkwYTM5Yi0wZGI1LTQ1NGEtOGQ2Ni0xZDBkZWYyMTI0YWUxLTE3ODAzMjc0NTE0NTI4ODE3Mi0yYzhiZTFjZjJhNDBjNzNlMTYifQ==\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/ml/elannualonlinerpt.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:25:39.690Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/sp/ml/elannualonlinerpt.asp",
+	"url": "https://www.cde.ca.gov/sp/ml/elannualonlinerpt.asp"
+}

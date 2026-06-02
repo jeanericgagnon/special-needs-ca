@@ -1,0 +1,9 @@
+{
+	"id": "FbVgKUXRWruxJIs",
+	"json": "{\"id\":\"FbVgKUXRWruxJIs\",\"url\":\"https://mindbrain.ucdavis.edu/tags/brain-computer-interfaces\",\"loadedUrl\":\"https://mindbrain.ucdavis.edu/tags/brain-computer-interfaces\",\"uniqueKey\":\"https://mindbrain.ucdavis.edu/tags/brain-computer-interfaces\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:21.368Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://mindbrain.ucdavis.edu/tags/brain-computer-interfaces",
+	"url": "https://mindbrain.ucdavis.edu/tags/brain-computer-interfaces"
+}

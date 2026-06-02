@@ -1,0 +1,9 @@
+{
+	"id": "qPlJbeQxERP7bja",
+	"json": "{\"id\":\"qPlJbeQxERP7bja\",\"url\":\"https://www.cde.ca.gov/re/lc/crosswalk2023lcfftitle1.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=02c25807-d7d0-45ab-b93e-65f7725c1692&ssb=06817211240&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fre%2Flc%2Fcrosswalk2023lcfftitle1.asp&ssi=bb988609-ctxv-4d54-801a-7b8390e1f07d&ssk=botmanager_support@radware.com&ssm=06095228194929997161025378475843&ssn=1f6f49fce9aa703cd057df7c5f872cde7dca8906fe65-484f-4215-a89bd3&sso=a67d7c0e-7e23cc08f1a78be1fc9225cd7513053b1d7ffa2dbb033bec&ssp=97618502071780316323178030871975898&ssq=56856052756268184722127359391730737751589&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsInV6bXgiOiI3ZjkwMDBlYTliYjk5My1iOGE1LTRjMWMtODBmMS1iYTJlYzg4OTFkYzYxLTE3ODAzMjczNTk5NDMyMDI0MzAtM2YxZTIyYWY0ODRhOWMxZjE2IiwiX191em1mIjoiN2Y5MDAwODkwNmZlNjUtNDg0Zi00MjE1LWFjMGUtN2UyM2NjMDhmMWE3MS0xNzgwMzI3MzU5OTQzMjAyNDMwLTAwM2E5MzQzM2E1OGQyNmI4ZTUxNiJ9\",\"uniqueKey\":\"https://www.cde.ca.gov/re/lc/crosswalk2023lcfftitle1.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:26:02.457Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/re/lc/crosswalk2023lcfftitle1.asp",
+	"url": "https://www.cde.ca.gov/re/lc/crosswalk2023lcfftitle1.asp"
+}

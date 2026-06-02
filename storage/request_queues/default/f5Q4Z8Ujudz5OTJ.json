@@ -1,0 +1,9 @@
+{
+	"id": "f5Q4Z8Ujudz5OTJ",
+	"json": "{\"id\":\"f5Q4Z8Ujudz5OTJ\",\"url\":\"https://health.ucdavis.edu/health-topics/pediatrics\",\"loadedUrl\":\"https://health.ucdavis.edu/health-topics/pediatrics\",\"uniqueKey\":\"https://health.ucdavis.edu/health-topics/pediatrics\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:56.464Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/health-topics/pediatrics",
+	"url": "https://health.ucdavis.edu/health-topics/pediatrics"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "xsq5r6TKui3AGUG",
+	"json": "{\"id\":\"xsq5r6TKui3AGUG\",\"url\":\"https://scdd.ca.gov/sdm-tap-resources/supporting-individuals-to-live-full-lives-toolkit/\",\"loadedUrl\":\"https://scdd.ca.gov/sdm-tap-resources/supporting-individuals-to-live-full-lives-toolkit/\",\"uniqueKey\":\"https://scdd.ca.gov/sdm-tap-resources/supporting-individuals-to-live-full-lives-toolkit\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:19:30.713Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/sdm-tap-resources/supporting-individuals-to-live-full-lives-toolkit",
+	"url": "https://scdd.ca.gov/sdm-tap-resources/supporting-individuals-to-live-full-lives-toolkit/"
+}

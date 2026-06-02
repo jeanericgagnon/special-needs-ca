@@ -1,0 +1,9 @@
+{
+	"id": "wfL0OtKL8SwL7xb",
+	"json": "{\"id\":\"wfL0OtKL8SwL7xb\",\"url\":\"https://www.grants.ca.gov/faq/\",\"loadedUrl\":\"https://www.grants.ca.gov/faq/\",\"uniqueKey\":\"https://www.grants.ca.gov/faq\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:52.894Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.grants.ca.gov/faq",
+	"url": "https://www.grants.ca.gov/faq/"
+}

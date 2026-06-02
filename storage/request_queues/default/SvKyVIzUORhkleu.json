@@ -1,0 +1,9 @@
+{
+	"id": "SvKyVIzUORhkleu",
+	"json": "{\"id\":\"SvKyVIzUORhkleu\",\"url\":\"https://budget.ucdavis.edu/student-resources/tuition-fees/professional/sch-nursing\",\"loadedUrl\":\"https://budget.ucdavis.edu/student-resources/tuition-fees/professional#nursing\",\"uniqueKey\":\"https://budget.ucdavis.edu/student-resources/tuition-fees/professional/sch-nursing\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:22.464Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://budget.ucdavis.edu/student-resources/tuition-fees/professional/sch-nursing",
+	"url": "https://budget.ucdavis.edu/student-resources/tuition-fees/professional/sch-nursing"
+}

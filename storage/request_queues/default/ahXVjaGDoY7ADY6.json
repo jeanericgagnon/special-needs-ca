@@ -1,0 +1,9 @@
+{
+	"id": "ahXVjaGDoY7ADY6",
+	"json": "{\"id\":\"ahXVjaGDoY7ADY6\",\"url\":\"https://health.ucdavis.edu/nursing/admissions/programs/scholarships/Loan-Repayment-Options.html\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/admissions/programs/scholarships/Loan-Repayment-Options.html\",\"uniqueKey\":\"https://health.ucdavis.edu/nursing/admissions/programs/scholarships/Loan-Repayment-Options.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:19.144Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/nursing/admissions/programs/scholarships/Loan-Repayment-Options.html",
+	"url": "https://health.ucdavis.edu/nursing/admissions/programs/scholarships/Loan-Repayment-Options.html"
+}

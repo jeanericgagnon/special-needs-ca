@@ -1,0 +1,9 @@
+{
+	"id": "LYPABC2Gtgmui9x",
+	"json": "{\"id\":\"LYPABC2Gtgmui9x\",\"url\":\"https://www.dgs.ca.gov/CCDA/About-Us/CCDA-Commission-Members\",\"loadedUrl\":\"https://www.dgs.ca.gov/CCDA/About-Us/CCDA-Commission-Members\",\"uniqueKey\":\"https://www.dgs.ca.gov/CCDA/About-Us/CCDA-Commission-Members\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:06.846Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dgs.ca.gov/CCDA/About-Us/CCDA-Commission-Members",
+	"url": "https://www.dgs.ca.gov/CCDA/About-Us/CCDA-Commission-Members"
+}

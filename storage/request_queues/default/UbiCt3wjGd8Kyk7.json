@@ -1,0 +1,9 @@
+{
+	"id": "UbiCt3wjGd8Kyk7",
+	"json": "{\"id\":\"UbiCt3wjGd8Kyk7\",\"url\":\"https://www.gov.ca.gov/tag/other/\",\"loadedUrl\":\"https://www.gov.ca.gov/tag/other/\",\"uniqueKey\":\"https://www.gov.ca.gov/tag/other\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:40.452Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.gov.ca.gov/tag/other",
+	"url": "https://www.gov.ca.gov/tag/other/"
+}

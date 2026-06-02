@@ -1,0 +1,9 @@
+{
+	"id": "j3BgA6WuTd0uoZb",
+	"json": "{\"id\":\"j3BgA6WuTd0uoZb\",\"url\":\"https://www.math.ucdavis.edu/~tjlewis/\",\"loadedUrl\":\"https://www.math.ucdavis.edu/~tjlewis/\",\"uniqueKey\":\"https://www.math.ucdavis.edu/~tjlewis\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:10.360Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.math.ucdavis.edu/~tjlewis",
+	"url": "https://www.math.ucdavis.edu/~tjlewis/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "fwYOTXw3kru4qgp",
+	"json": "{\"id\":\"fwYOTXw3kru4qgp\",\"url\":\"http://cdss.ca.gov/inforesources/major-initiative-timelines\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/major-initiative-timelines\",\"uniqueKey\":\"http://cdss.ca.gov/inforesources/major-initiative-timelines\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:47.138Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://cdss.ca.gov/inforesources/major-initiative-timelines",
+	"url": "http://cdss.ca.gov/inforesources/major-initiative-timelines"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "J9mdzU5SxY8lC3M",
+	"json": "{\"id\":\"J9mdzU5SxY8lC3M\",\"url\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/nephrology\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/nephrology\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/nephrology\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:50.941Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/locations/specialty-care/nephrology",
+	"url": "https://health.ucdavis.edu/patients-visitors/locations/specialty-care/nephrology"
+}

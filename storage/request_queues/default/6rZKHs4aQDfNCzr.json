@@ -1,0 +1,9 @@
+{
+	"id": "6rZKHs4aQDfNCzr",
+	"json": "{\"id\":\"6rZKHs4aQDfNCzr\",\"url\":\"https://cdss.ca.gov/inforesources/cdss-programs/emergency-food-programs-section/state-food-bank-providers\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/cdss-programs/emergency-food-programs-section/state-food-bank-providers\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/cdss-programs/emergency-food-programs-section/state-food-bank-providers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:01.490Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/cdss-programs/emergency-food-programs-section/state-food-bank-providers",
+	"url": "https://cdss.ca.gov/inforesources/cdss-programs/emergency-food-programs-section/state-food-bank-providers"
+}

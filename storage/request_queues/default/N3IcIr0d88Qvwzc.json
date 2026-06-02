@@ -1,0 +1,9 @@
+{
+	"id": "N3IcIr0d88Qvwzc",
+	"json": "{\"id\":\"N3IcIr0d88Qvwzc\",\"url\":\"https://scdd.ca.gov/employment-resources/\",\"loadedUrl\":\"https://scdd.ca.gov/employment-resources/\",\"uniqueKey\":\"https://scdd.ca.gov/employment-resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:33.833Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/employment-resources",
+	"url": "https://scdd.ca.gov/employment-resources/"
+}

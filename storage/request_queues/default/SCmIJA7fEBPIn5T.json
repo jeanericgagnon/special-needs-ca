@@ -1,0 +1,9 @@
+{
+	"id": "SCmIJA7fEBPIn5T",
+	"json": "{\"id\":\"SCmIJA7fEBPIn5T\",\"url\":\"https://health.ucdavis.edu/cancer/research/education-training/under-grad-prog\",\"loadedUrl\":\"https://health.ucdavis.edu/cancer/research/education-training/under-grad-prog\",\"uniqueKey\":\"https://health.ucdavis.edu/cancer/research/education-training/under-grad-prog\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:15.809Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/cancer/research/education-training/under-grad-prog",
+	"url": "https://health.ucdavis.edu/cancer/research/education-training/under-grad-prog"
+}

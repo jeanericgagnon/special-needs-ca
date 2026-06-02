@@ -1,0 +1,9 @@
+{
+	"id": "M0htv6R62ydlRag",
+	"json": "{\"id\":\"M0htv6R62ydlRag\",\"url\":\"https://health.ucdavis.edu/mdprogram/specialty-advisors/index.html\",\"loadedUrl\":\"https://health.ucdavis.edu/mdprogram/specialty-advisors/index.html\",\"uniqueKey\":\"https://health.ucdavis.edu/mdprogram/specialty-advisors/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:04.891Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mdprogram/specialty-advisors/index.html",
+	"url": "https://health.ucdavis.edu/mdprogram/specialty-advisors/index.html"
+}

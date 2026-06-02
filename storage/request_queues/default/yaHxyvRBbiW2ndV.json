@@ -1,0 +1,9 @@
+{
+	"id": "yaHxyvRBbiW2ndV",
+	"json": "{\"id\":\"yaHxyvRBbiW2ndV\",\"url\":\"https://www.dhcs.ca.gov/Pages/CalAIM-Mobile-Crisis-Services-Initiative.aspx\",\"loadedUrl\":\"https://www.dhcs.ca.gov/mobile-crisis-services/\",\"uniqueKey\":\"https://www.dhcs.ca.gov/Pages/CalAIM-Mobile-Crisis-Services-Initiative.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:53:38.902Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dhcs.ca.gov/Pages/CalAIM-Mobile-Crisis-Services-Initiative.aspx",
+	"url": "https://www.dhcs.ca.gov/Pages/CalAIM-Mobile-Crisis-Services-Initiative.aspx"
+}

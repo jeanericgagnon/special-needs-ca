@@ -1,0 +1,9 @@
+{
+	"id": "XVbgS6lTfOkKTf9",
+	"json": "{\"id\":\"XVbgS6lTfOkKTf9\",\"url\":\"https://ldaca.org/contact/\",\"loadedUrl\":\"https://ldaca.org/contact/\",\"uniqueKey\":\"https://ldaca.org/contact\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:58.175Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://ldaca.org/contact",
+	"url": "https://ldaca.org/contact/"
+}

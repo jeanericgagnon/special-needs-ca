@@ -1,0 +1,9 @@
+{
+	"id": "az5m7ZsDoHolQMP",
+	"json": "{\"id\":\"az5m7ZsDoHolQMP\",\"url\":\"https://www.cdcr.ca.gov/rehabilitation/request-transcripts-and-certificates/\",\"loadedUrl\":\"https://www.cdcr.ca.gov/rehabilitation/request-transcripts-and-certificates/\",\"uniqueKey\":\"https://www.cdcr.ca.gov/rehabilitation/request-transcripts-and-certificates\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:20.669Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdcr.ca.gov/rehabilitation/request-transcripts-and-certificates",
+	"url": "https://www.cdcr.ca.gov/rehabilitation/request-transcripts-and-certificates/"
+}

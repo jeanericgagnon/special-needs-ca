@@ -1,0 +1,9 @@
+{
+	"id": "EM5o6Po2tpSV5Am",
+	"json": "{\"id\":\"EM5o6Po2tpSV5Am\",\"url\":\"https://www.ca.gov/topics/taxes/\",\"loadedUrl\":\"https://www.ca.gov/topics/taxes/\",\"uniqueKey\":\"https://www.ca.gov/topics/taxes\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:58.909Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ca.gov/topics/taxes",
+	"url": "https://www.ca.gov/topics/taxes/"
+}

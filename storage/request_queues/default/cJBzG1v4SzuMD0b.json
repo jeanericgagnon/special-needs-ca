@@ -1,0 +1,9 @@
+{
+	"id": "cJBzG1v4SzuMD0b",
+	"json": "{\"id\":\"cJBzG1v4SzuMD0b\",\"url\":\"https://www.chhs.ca.gov/blog/category/uncategorized/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/category/uncategorized/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/category/uncategorized\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:06.889Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chhs.ca.gov/blog/category/uncategorized",
+	"url": "https://www.chhs.ca.gov/blog/category/uncategorized/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "6YnN57Oz4sisu4K",
+	"json": "{\"id\":\"6YnN57Oz4sisu4K\",\"url\":\"https://cdss.ca.gov/inforesources/ccld-disaster-information\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/ccld-disaster-information\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/ccld-disaster-information\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:25.997Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/ccld-disaster-information",
+	"url": "https://cdss.ca.gov/inforesources/ccld-disaster-information"
+}

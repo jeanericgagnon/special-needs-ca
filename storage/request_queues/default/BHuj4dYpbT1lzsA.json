@@ -1,0 +1,9 @@
+{
+	"id": "BHuj4dYpbT1lzsA",
+	"json": "{\"id\":\"BHuj4dYpbT1lzsA\",\"url\":\"https://www.caloes.ca.gov/cal-oes-divisions/planning-preparedness/school-emergency-planning-safety/preparedness-ambassadors\",\"loadedUrl\":\"https://www.caloes.ca.gov/office-of-the-director/operations/planning-preparedness-prevention/planning-preparedness/school-emergency-planning-safety/preparedness-ambassadors/\",\"uniqueKey\":\"https://www.caloes.ca.gov/cal-oes-divisions/planning-preparedness/school-emergency-planning-safety/preparedness-ambassadors\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:33.835Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.caloes.ca.gov/cal-oes-divisions/planning-preparedness/school-emergency-planning-safety/preparedness-ambassadors",
+	"url": "https://www.caloes.ca.gov/cal-oes-divisions/planning-preparedness/school-emergency-planning-safety/preparedness-ambassadors"
+}

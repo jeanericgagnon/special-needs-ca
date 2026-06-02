@@ -1,0 +1,9 @@
+{
+	"id": "qbFWK1LZOaeyG59",
+	"json": "{\"id\":\"qbFWK1LZOaeyG59\",\"url\":\"https://secure.ssa.gov/acu/FIS/ap?idp=logingov&app=rir&target=/myssa/myhub\",\"loadedUrl\":\"https://secure.login.gov/\",\"uniqueKey\":\"https://secure.ssa.gov/acu/FIS/ap?app=rir&idp=logingov&target=%2Fmyssa%2Fmyhub\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:34:29.284Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://secure.ssa.gov/acu/FIS/ap?app=rir&idp=logingov&target=%2Fmyssa%2Fmyhub",
+	"url": "https://secure.ssa.gov/acu/FIS/ap?idp=logingov&app=rir&target=/myssa/myhub"
+}

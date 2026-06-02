@@ -1,0 +1,9 @@
+{
+	"id": "yyOB9Pgs8iS3s6F",
+	"json": "{\"id\":\"yyOB9Pgs8iS3s6F\",\"url\":\"https://www.cdss.ca.gov/inforesources/Community-Care/Caregiver-Background-Check/Resources-for-Providers\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/community-care/caregiver-background-check/resources-for-providers\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/Community-Care/Caregiver-Background-Check/Resources-for-Providers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:10.559Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/inforesources/Community-Care/Caregiver-Background-Check/Resources-for-Providers",
+	"url": "https://www.cdss.ca.gov/inforesources/Community-Care/Caregiver-Background-Check/Resources-for-Providers"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "d6jkvbhKb9xxXOh",
+	"json": "{\"id\":\"d6jkvbhKb9xxXOh\",\"url\":\"https://health.ucdavis.edu/cme/innovation/focus-areas\",\"loadedUrl\":\"https://health.ucdavis.edu/cme/innovation/focus-areas\",\"uniqueKey\":\"https://health.ucdavis.edu/cme/innovation/focus-areas\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:14.975Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/cme/innovation/focus-areas",
+	"url": "https://health.ucdavis.edu/cme/innovation/focus-areas"
+}

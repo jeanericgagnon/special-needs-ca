@@ -1,0 +1,9 @@
+{
+	"id": "b0JbNawYkXcxpK9",
+	"json": "{\"id\":\"b0JbNawYkXcxpK9\",\"url\":\"https://ihp.ucdavis.edu/marbles\",\"loadedUrl\":\"https://ihp.ucdavis.edu/marbles/\",\"uniqueKey\":\"https://ihp.ucdavis.edu/marbles\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:23:58.707Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://ihp.ucdavis.edu/marbles",
+	"url": "https://ihp.ucdavis.edu/marbles"
+}

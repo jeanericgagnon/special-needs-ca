@@ -1,0 +1,9 @@
+{
+	"id": "p67c4THSrzsjkIo",
+	"json": "{\"id\":\"p67c4THSrzsjkIo\",\"url\":\"http://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201520160SB225\",\"loadedUrl\":\"https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201520160SB225\",\"uniqueKey\":\"http://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201520160SB225\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:20:54.513Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201520160SB225",
+	"url": "http://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201520160SB225"
+}

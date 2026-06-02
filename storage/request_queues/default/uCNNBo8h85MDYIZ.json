@@ -1,0 +1,9 @@
+{
+	"id": "uCNNBo8h85MDYIZ",
+	"json": "{\"id\":\"uCNNBo8h85MDYIZ\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/1347/george-thompson-infectious_diseases-internal_medicine-medical_microbiology_and_immunology-sacramento?FreeText%3aLast+name=Thompson\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/1347/george-thompson-infectious_diseases-internal_medicine-medical_microbiology_and_immunology-sacramento?FreeText%3aLast+name=Thompson\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/1347/george-thompson-infectious_diseases-internal_medicine-medical_microbiology_and_immunology-sacramento?FreeText%3ALast+name=Thompson\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:11.311Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/1347/george-thompson-infectious_diseases-internal_medicine-medical_microbiology_and_immunology-sacramento?FreeText%3ALast+name=Thompson",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/1347/george-thompson-infectious_diseases-internal_medicine-medical_microbiology_and_immunology-sacramento?FreeText%3aLast+name=Thompson"
+}

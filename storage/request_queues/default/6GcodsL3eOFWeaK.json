@@ -1,0 +1,9 @@
+{
+	"id": "6GcodsL3eOFWeaK",
+	"json": "{\"id\":\"6GcodsL3eOFWeaK\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DWICSN/Pages/ReportWICFraud.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DWICSN/Pages/ReportWICFraud.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DWICSN/Pages/ReportWICFraud.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:01:41.222Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DWICSN/Pages/ReportWICFraud.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CFH/DWICSN/Pages/ReportWICFraud.aspx"
+}

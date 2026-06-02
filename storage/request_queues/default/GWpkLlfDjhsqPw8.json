@@ -1,0 +1,9 @@
+{
+	"id": "GWpkLlfDjhsqPw8",
+	"json": "{\"id\":\"GWpkLlfDjhsqPw8\",\"url\":\"https://health.ucdavis.edu/anesthesiology/education/residency/\",\"loadedUrl\":\"https://health.ucdavis.edu/anesthesiology/education/residency/\",\"uniqueKey\":\"https://health.ucdavis.edu/anesthesiology/education/residency\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:54.546Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/anesthesiology/education/residency",
+	"url": "https://health.ucdavis.edu/anesthesiology/education/residency/"
+}

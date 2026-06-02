@@ -1,0 +1,9 @@
+{
+	"id": "3wYvBY81qU4vHCz",
+	"json": "{\"id\":\"3wYvBY81qU4vHCz\",\"url\":\"https://www.dds.ca.gov/transparency/facts-stats/regional-center-caseload-growth-analysis/\",\"loadedUrl\":\"https://www.dds.ca.gov/transparency/facts-stats/regional-center-caseload-growth-analysis/\",\"uniqueKey\":\"https://www.dds.ca.gov/transparency/facts-stats/regional-center-caseload-growth-analysis\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:10.288Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/transparency/facts-stats/regional-center-caseload-growth-analysis",
+	"url": "https://www.dds.ca.gov/transparency/facts-stats/regional-center-caseload-growth-analysis/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "tY9HnX6cMsuGliZ",
+	"json": "{\"id\":\"tY9HnX6cMsuGliZ\",\"url\":\"https://cdss.ca.gov/inforesources/Tribal-Affairs/Tribal-Title-IV-E\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/tribal-affairs/tribal-title-iv-e\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Tribal-Affairs/Tribal-Title-IV-E\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:32.268Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/Tribal-Affairs/Tribal-Title-IV-E",
+	"url": "https://cdss.ca.gov/inforesources/Tribal-Affairs/Tribal-Title-IV-E"
+}

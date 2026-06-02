@@ -1,0 +1,9 @@
+{
+	"id": "OrvJsc5KrgqqmkQ",
+	"json": "{\"id\":\"OrvJsc5KrgqqmkQ\",\"url\":\"https://www.globaldownsyndrome.org/our-story/history/?page_id=1028\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/our-story/history/qa-with-michelle-sie-whitten/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/our-story/history?page_id=1028\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:28:03.474Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.globaldownsyndrome.org/our-story/history?page_id=1028",
+	"url": "https://www.globaldownsyndrome.org/our-story/history/?page_id=1028"
+}

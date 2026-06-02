@@ -1,0 +1,9 @@
+{
+	"id": "svdldNi2I9VNo4s",
+	"json": "{\"id\":\"svdldNi2I9VNo4s\",\"url\":\"https://mpa.aging.ca.gov/ConditionsOfUse\",\"loadedUrl\":\"https://mpa.aging.ca.gov/ConditionsOfUse\",\"uniqueKey\":\"https://mpa.aging.ca.gov/ConditionsOfUse\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:23.479Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://mpa.aging.ca.gov/ConditionsOfUse",
+	"url": "https://mpa.aging.ca.gov/ConditionsOfUse"
+}

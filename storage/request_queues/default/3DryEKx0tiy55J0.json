@@ -1,0 +1,9 @@
+{
+	"id": "3DryEKx0tiy55J0",
+	"json": "{\"id\":\"3DryEKx0tiy55J0\",\"url\":\"https://www.cdph.ca.gov/Programs/OLGA/Pages/Legislative-Newsletters.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/OLGA/Pages/Legislative-Newsletters.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/OLGA/Pages/Legislative-Newsletters.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:03:50.559Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/OLGA/Pages/Legislative-Newsletters.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/OLGA/Pages/Legislative-Newsletters.aspx"
+}

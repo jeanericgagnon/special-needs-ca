@@ -1,0 +1,9 @@
+{
+	"id": "hiVv1TjL71p8NsQ",
+	"json": "{\"id\":\"hiVv1TjL71p8NsQ\",\"url\":\"https://www.dhcs.ca.gov/provgovpart/Pages/Doula-Services.aspx\",\"loadedUrl\":\"https://www.dhcs.ca.gov/providers-partners/doula-services-as-a-medi-cal-benefit/\",\"uniqueKey\":\"https://www.dhcs.ca.gov/provgovpart/Pages/Doula-Services.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:17.747Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dhcs.ca.gov/provgovpart/Pages/Doula-Services.aspx",
+	"url": "https://www.dhcs.ca.gov/provgovpart/Pages/Doula-Services.aspx"
+}

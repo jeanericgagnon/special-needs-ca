@@ -1,0 +1,9 @@
+{
+	"id": "R6uOaLepkA3J97W",
+	"json": "{\"id\":\"R6uOaLepkA3J97W\",\"url\":\"https://www.cde.ca.gov/ta/ac/cm/documents/ccicareer.pdf\",\"loadedUrl\":\"https://www.cde.ca.gov/ta/ac/cm/documents/ccicareer.pdf\",\"uniqueKey\":\"https://www.cde.ca.gov/ta/ac/cm/documents/ccicareer.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:11.465Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ta/ac/cm/documents/ccicareer.pdf",
+	"url": "https://www.cde.ca.gov/ta/ac/cm/documents/ccicareer.pdf"
+}

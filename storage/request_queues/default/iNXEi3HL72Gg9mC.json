@@ -1,0 +1,9 @@
+{
+	"id": "iNXEi3HL72Gg9mC",
+	"json": "{\"id\":\"iNXEi3HL72Gg9mC\",\"url\":\"http://www.cdss.ca.gov/careers-with-cdss/examinations\",\"loadedUrl\":\"https://www.cdss.ca.gov/careers-with-cdss/examinations\",\"uniqueKey\":\"http://www.cdss.ca.gov/careers-with-cdss/examinations\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:56.347Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.cdss.ca.gov/careers-with-cdss/examinations",
+	"url": "http://www.cdss.ca.gov/careers-with-cdss/examinations"
+}

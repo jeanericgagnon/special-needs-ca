@@ -1,0 +1,9 @@
+{
+	"id": "0H30KBwA1YolZXA",
+	"json": "{\"id\":\"0H30KBwA1YolZXA\",\"url\":\"https://health.ucdavis.edu/burncenter/giving.html\",\"loadedUrl\":\"https://health.ucdavis.edu/burncenter/giving.html\",\"uniqueKey\":\"https://health.ucdavis.edu/burncenter/giving.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:52.084Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/burncenter/giving.html",
+	"url": "https://health.ucdavis.edu/burncenter/giving.html"
+}

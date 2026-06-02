@@ -1,0 +1,9 @@
+{
+	"id": "mFhtk7s3FjB7Adx",
+	"json": "{\"id\":\"mFhtk7s3FjB7Adx\",\"url\":\"https://give.ucdavis.edu/BCNS/BCMHRIF\",\"loadedUrl\":\"https://give.ucdavis.edu/BCNS/BCMHRIF\",\"uniqueKey\":\"https://give.ucdavis.edu/BCNS/BCMHRIF\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:36.018Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/BCNS/BCMHRIF",
+	"url": "https://give.ucdavis.edu/BCNS/BCMHRIF"
+}

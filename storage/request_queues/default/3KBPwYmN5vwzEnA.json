@@ -1,0 +1,9 @@
+{
+	"id": "3KBPwYmN5vwzEnA",
+	"json": "{\"id\":\"3KBPwYmN5vwzEnA\",\"url\":\"https://health.ucdavis.edu/obgyn/specialties/gynecologic-oncology/\",\"loadedUrl\":\"https://health.ucdavis.edu/obgyn/specialties/gynecologic-oncology/\",\"uniqueKey\":\"https://health.ucdavis.edu/obgyn/specialties/gynecologic-oncology\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:50.713Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/obgyn/specialties/gynecologic-oncology",
+	"url": "https://health.ucdavis.edu/obgyn/specialties/gynecologic-oncology/"
+}

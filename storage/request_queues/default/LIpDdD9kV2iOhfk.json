@@ -1,0 +1,9 @@
+{
+	"id": "LIpDdD9kV2iOhfk",
+	"json": "{\"id\":\"LIpDdD9kV2iOhfk\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/CHVP/Pages/Sites.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/CHVP/Pages/Sites.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/CHVP/Pages/Sites.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:01:03.602Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/CHVP/Pages/Sites.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/CHVP/Pages/Sites.aspx"
+}

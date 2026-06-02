@@ -1,0 +1,9 @@
+{
+	"id": "iiXUHqGuu2dap73",
+	"json": "{\"id\":\"iiXUHqGuu2dap73\",\"url\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/pages/cna.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/pages/cna.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/pages/cna.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:38:16.589Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CHCQ/LCP/pages/cna.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CHCQ/LCP/pages/cna.aspx"
+}

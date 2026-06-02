@@ -1,0 +1,9 @@
+{
+	"id": "TPrFt0038JILeGW",
+	"json": "{\"id\":\"TPrFt0038JILeGW\",\"url\":\"https://health.ucdavis.edu/childrens-annual-report/annual-report-2025/serving-our-region/community-outreach\",\"loadedUrl\":\"https://health.ucdavis.edu/childrens-annual-report/annual-report-2025/serving-our-region/community-outreach\",\"uniqueKey\":\"https://health.ucdavis.edu/childrens-annual-report/annual-report-2025/serving-our-region/community-outreach\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:06:50.337Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/childrens-annual-report/annual-report-2025/serving-our-region/community-outreach",
+	"url": "https://health.ucdavis.edu/childrens-annual-report/annual-report-2025/serving-our-region/community-outreach"
+}

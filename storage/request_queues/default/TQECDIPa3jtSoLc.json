@@ -1,0 +1,9 @@
+{
+	"id": "TQECDIPa3jtSoLc",
+	"json": "{\"id\":\"TQECDIPa3jtSoLc\",\"url\":\"https://scdd.ca.gov/sdm-tap-resources/the-right-to-make-choices-international-laws-and-decision-making-by-people-with-disabilities/\",\"loadedUrl\":\"https://scdd.ca.gov/sdm-tap-resources/the-right-to-make-choices-international-laws-and-decision-making-by-people-with-disabilities/\",\"uniqueKey\":\"https://scdd.ca.gov/sdm-tap-resources/the-right-to-make-choices-international-laws-and-decision-making-by-people-with-disabilities\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:19:30.615Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/sdm-tap-resources/the-right-to-make-choices-international-laws-and-decision-making-by-people-with-disabilities",
+	"url": "https://scdd.ca.gov/sdm-tap-resources/the-right-to-make-choices-international-laws-and-decision-making-by-people-with-disabilities/"
+}

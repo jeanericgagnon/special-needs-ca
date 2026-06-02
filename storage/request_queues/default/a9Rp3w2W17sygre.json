@@ -1,0 +1,9 @@
+{
+	"id": "a9Rp3w2W17sygre",
+	"json": "{\"id\":\"a9Rp3w2W17sygre\",\"url\":\"https://www.cde.ca.gov/ls/tn/\",\"loadedUrl\":\"https://www.cde.ca.gov/ls/tn/\",\"uniqueKey\":\"https://www.cde.ca.gov/ls/tn\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:03.730Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ls/tn",
+	"url": "https://www.cde.ca.gov/ls/tn/"
+}

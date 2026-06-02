@@ -1,0 +1,9 @@
+{
+	"id": "teK3jaCHwRd2Tw0",
+	"json": "{\"id\":\"teK3jaCHwRd2Tw0\",\"url\":\"https://safetyservices.ucdavis.edu/units/ehs/research/newsletters-research-community-correspondence\",\"loadedUrl\":\"https://safetyservices.ucdavis.edu/units/ehs/research/newsletters-research-community-correspondence\",\"uniqueKey\":\"https://safetyservices.ucdavis.edu/units/ehs/research/newsletters-research-community-correspondence\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:13.723Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://safetyservices.ucdavis.edu/units/ehs/research/newsletters-research-community-correspondence",
+	"url": "https://safetyservices.ucdavis.edu/units/ehs/research/newsletters-research-community-correspondence"
+}

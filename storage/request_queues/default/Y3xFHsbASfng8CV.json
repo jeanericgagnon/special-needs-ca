@@ -1,0 +1,9 @@
+{
+	"id": "Y3xFHsbASfng8CV",
+	"json": "{\"id\":\"Y3xFHsbASfng8CV\",\"url\":\"https://excellence.ucdavis.edu/anti-racism\",\"loadedUrl\":\"https://excellence.ucdavis.edu/anti-racism\",\"uniqueKey\":\"https://excellence.ucdavis.edu/anti-racism\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:35.251Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://excellence.ucdavis.edu/anti-racism",
+	"url": "https://excellence.ucdavis.edu/anti-racism"
+}

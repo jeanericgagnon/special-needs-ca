@@ -1,0 +1,9 @@
+{
+	"id": "qAgAyB0h4quDky0",
+	"json": "{\"id\":\"qAgAyB0h4quDky0\",\"url\":\"https://www.dmv.ca.gov/portal/driver-handbooks/\",\"loadedUrl\":\"https://www.dmv.ca.gov/portal/driver-handbooks/\",\"uniqueKey\":\"https://www.dmv.ca.gov/portal/driver-handbooks\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:30.254Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dmv.ca.gov/portal/driver-handbooks",
+	"url": "https://www.dmv.ca.gov/portal/driver-handbooks/"
+}

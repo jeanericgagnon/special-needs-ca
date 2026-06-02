@@ -1,0 +1,9 @@
+{
+	"id": "QS0F3PodfWSLWdV",
+	"json": "{\"id\":\"QS0F3PodfWSLWdV\",\"url\":\"https://www.csb-cde.ca.gov/studentlife/health/index.aspx\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=83978a6e-486e-4d2c-9c01-e0d163835d6c&ssb=79454238070&ssc=https%3A%2F%2Fwww.csb-cde.ca.gov%2Fstudentlife%2Fhealth%2Findex.aspx&ssi=6abcafd1-cuez-428c-8213-f5829de574cf&ssk=botmanager_support@radware.com&ssm=25175589651559262100351901156102&ssn=2ff1abf1dff5cd4ff2d29db0e21b7c78977163d623ea-49a0-4a58-a6e91b&sso=ebbc22a5-c156bdef7f8d45433d105e85e00bd7f3c1fa969c09634d0c&ssp=88331231021780327428178035115025427&ssq=00461882590460615207925904632599768554811&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDA2M2Q2MjNlYS00OWEwLTRhNTgtYTJhNS1jMTU2YmRlZjdmOGQxLTE3ODAzMjU5MDUwMDkwLTAwMzZkN2JhZThiNGRjOGI0ZjUxMCIsInV6bXgiOiI3ZjkwMDBkMmVmNzRkOC1hZTg0LTQzNTQtYTM1NC00NmRlMzIzMzk2NDIxLTE3ODAzMjU5MDUwMDkwLWYxMWI5ZWJiYzBjYTMxNDMxMCIsInJkIjoiY2EuZ292In0=\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/studentlife/health/index.aspx\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T14:58:25.124Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csb-cde.ca.gov/studentlife/health/index.aspx",
+	"url": "https://www.csb-cde.ca.gov/studentlife/health/index.aspx"
+}

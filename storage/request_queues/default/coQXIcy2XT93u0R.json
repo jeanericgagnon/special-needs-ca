@@ -1,0 +1,9 @@
+{
+	"id": "coQXIcy2XT93u0R",
+	"json": "{\"id\":\"coQXIcy2XT93u0R\",\"url\":\"https://health.ucdavis.edu/surgery/global-surgery/\",\"loadedUrl\":\"https://health.ucdavis.edu/surgery/global-surgery/\",\"uniqueKey\":\"https://health.ucdavis.edu/surgery/global-surgery\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:49.279Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/surgery/global-surgery",
+	"url": "https://health.ucdavis.edu/surgery/global-surgery/"
+}

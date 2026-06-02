@@ -1,0 +1,9 @@
+{
+	"id": "cMiTvFOrroIKRfW",
+	"json": "{\"id\":\"cMiTvFOrroIKRfW\",\"url\":\"https://hr.ucdavis.edu/articles/hr-news?page=4\",\"loadedUrl\":\"https://hr.ucdavis.edu/articles/hr-news?page=4\",\"uniqueKey\":\"https://hr.ucdavis.edu/articles/hr-news?page=4\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:39.016Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/articles/hr-news?page=4",
+	"url": "https://hr.ucdavis.edu/articles/hr-news?page=4"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "HREMWsmJ2ITxEp1",
+	"json": "{\"id\":\"HREMWsmJ2ITxEp1\",\"url\":\"https://hr.ucdavis.edu/employees/essential-needs-health-finance-legal\",\"loadedUrl\":\"https://hr.ucdavis.edu/employees/essential-needs-health-finance-legal\",\"uniqueKey\":\"https://hr.ucdavis.edu/employees/essential-needs-health-finance-legal\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:57.636Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/employees/essential-needs-health-finance-legal",
+	"url": "https://hr.ucdavis.edu/employees/essential-needs-health-finance-legal"
+}

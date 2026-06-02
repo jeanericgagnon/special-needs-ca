@@ -1,0 +1,9 @@
+{
+	"id": "Qqzg75ovQqDVzHu",
+	"json": "{\"id\":\"Qqzg75ovQqDVzHu\",\"url\":\"https://health.ucdavis.edu/treatments/surgical-oncology\",\"loadedUrl\":\"https://health.ucdavis.edu/treatments/surgical-oncology\",\"uniqueKey\":\"https://health.ucdavis.edu/treatments/surgical-oncology\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:57.988Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/treatments/surgical-oncology",
+	"url": "https://health.ucdavis.edu/treatments/surgical-oncology"
+}

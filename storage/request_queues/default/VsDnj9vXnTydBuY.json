@@ -1,0 +1,9 @@
+{
+	"id": "VsDnj9vXnTydBuY",
+	"json": "{\"id\":\"VsDnj9vXnTydBuY\",\"url\":\"http://mindinstitute.ucdavis.edu/\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/\",\"uniqueKey\":\"http://mindinstitute.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:50.905Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://mindinstitute.ucdavis.edu",
+	"url": "http://mindinstitute.ucdavis.edu/"
+}

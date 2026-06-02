@@ -1,0 +1,9 @@
+{
+	"id": "ChAgnIOxjXDZFF5",
+	"json": "{\"id\":\"ChAgnIOxjXDZFF5\",\"url\":\"https://neuroscience.ucdavis.edu/people?field_sf_person_type_target_id%5B0%5D=516&first=&last=&title=&unit=&page=5\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/people?field_sf_person_type_target_id%5B0%5D=516&first=&last=&title=&unit=&page=5\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/people?field_sf_person_type_target_id%5B0%5D=516&first=&last=&page=5&title=&unit=\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:54.002Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://neuroscience.ucdavis.edu/people?field_sf_person_type_target_id%5B0%5D=516&first=&last=&page=5&title=&unit=",
+	"url": "https://neuroscience.ucdavis.edu/people?field_sf_person_type_target_id%5B0%5D=516&first=&last=&title=&unit=&page=5"
+}

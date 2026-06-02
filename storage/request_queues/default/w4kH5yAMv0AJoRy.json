@@ -1,0 +1,9 @@
+{
+	"id": "w4kH5yAMv0AJoRy",
+	"json": "{\"id\":\"w4kH5yAMv0AJoRy\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/CHVP/Pages/Addendum-1-CHVP-CHVP-State-General-Fund-Innovation-2023-2028_10-26-2023.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/CHVP/Pages/Addendum-1-CHVP-CHVP-State-General-Fund-Innovation-2023-2028_10-26-2023.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/CHVP/Pages/Addendum-1-CHVP-CHVP-State-General-Fund-Innovation-2023-2028_10-26-2023.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:01:07.883Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/CHVP/Pages/Addendum-1-CHVP-CHVP-State-General-Fund-Innovation-2023-2028_10-26-2023.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/CHVP/Pages/Addendum-1-CHVP-CHVP-State-General-Fund-Innovation-2023-2028_10-26-2023.aspx"
+}

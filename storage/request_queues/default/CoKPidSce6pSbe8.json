@@ -1,0 +1,9 @@
+{
+	"id": "CoKPidSce6pSbe8",
+	"json": "{\"id\":\"CoKPidSce6pSbe8\",\"url\":\"http://www.cdss.ca.gov/inforesources/ihss/live-in-provider-self-certification\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/ihss/live-in-provider-self-certification\",\"uniqueKey\":\"http://www.cdss.ca.gov/inforesources/ihss/live-in-provider-self-certification\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:12.991Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.cdss.ca.gov/inforesources/ihss/live-in-provider-self-certification",
+	"url": "http://www.cdss.ca.gov/inforesources/ihss/live-in-provider-self-certification"
+}

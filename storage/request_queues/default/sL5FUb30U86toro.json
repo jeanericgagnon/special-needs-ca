@@ -1,0 +1,9 @@
+{
+	"id": "sL5FUb30U86toro",
+	"json": "{\"id\":\"sL5FUb30U86toro\",\"url\":\"https://myfamily.wic.ca.gov/Home/AmIEligible#step1\",\"loadedUrl\":\"https://myfamily.wic.ca.gov/Home/AmIEligible#step1\",\"uniqueKey\":\"https://myfamily.wic.ca.gov/Home/AmIEligible\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T18:08:32.423Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://myfamily.wic.ca.gov/Home/AmIEligible",
+	"url": "https://myfamily.wic.ca.gov/Home/AmIEligible#step1"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "61G0sFIO9MMFCKx",
+	"json": "{\"id\":\"61G0sFIO9MMFCKx\",\"url\":\"https://cscpsubmit.cdph.ca.gov/\",\"loadedUrl\":\"https://cscpsubmit.cdph.ca.gov/submission/\",\"uniqueKey\":\"https://cscpsubmit.cdph.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:09:58.736Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cscpsubmit.cdph.ca.gov",
+	"url": "https://cscpsubmit.cdph.ca.gov/"
+}

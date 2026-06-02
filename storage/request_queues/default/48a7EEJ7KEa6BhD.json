@@ -1,0 +1,9 @@
+{
+	"id": "48a7EEJ7KEa6BhD",
+	"json": "{\"id\":\"48a7EEJ7KEa6BhD\",\"url\":\"https://ais.ucdavis.edu/gifts-administration-forms\",\"loadedUrl\":\"https://ais.ucdavis.edu/gifts-administration-forms\",\"uniqueKey\":\"https://ais.ucdavis.edu/gifts-administration-forms\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:57.102Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://ais.ucdavis.edu/gifts-administration-forms",
+	"url": "https://ais.ucdavis.edu/gifts-administration-forms"
+}

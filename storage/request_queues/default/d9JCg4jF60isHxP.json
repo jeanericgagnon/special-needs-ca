@@ -1,0 +1,9 @@
+{
+	"id": "d9JCg4jF60isHxP",
+	"json": "{\"id\":\"d9JCg4jF60isHxP\",\"url\":\"https://cmgi.ucdavis.edu/services/magnetic-resonance-imaging-mri/\",\"loadedUrl\":\"https://cmgi.ucdavis.edu/services/magnetic-resonance-imaging-mri/\",\"uniqueKey\":\"https://cmgi.ucdavis.edu/services/magnetic-resonance-imaging-mri\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:08.401Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cmgi.ucdavis.edu/services/magnetic-resonance-imaging-mri",
+	"url": "https://cmgi.ucdavis.edu/services/magnetic-resonance-imaging-mri/"
+}

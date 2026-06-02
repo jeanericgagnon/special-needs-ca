@@ -1,0 +1,9 @@
+{
+	"id": "Ymk4XRKu9z3Nm9K",
+	"json": "{\"id\":\"Ymk4XRKu9z3Nm9K\",\"url\":\"https://www.cde.ca.gov/ta/tg/ca/caaonepercent.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ta/tg/ca/caaonepercent.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ta/tg/ca/caaonepercent.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:40.441Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ta/tg/ca/caaonepercent.asp",
+	"url": "https://www.cde.ca.gov/ta/tg/ca/caaonepercent.asp"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "etZMlkKO20PlLBv",
+	"json": "{\"id\":\"etZMlkKO20PlLBv\",\"url\":\"http://calhr.ca.gov/pages/document-readers.aspx\",\"loadedUrl\":\"http://www.calhr.ca.gov/document-readers/\",\"uniqueKey\":\"http://calhr.ca.gov/pages/document-readers.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:05.275Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://calhr.ca.gov/pages/document-readers.aspx",
+	"url": "http://calhr.ca.gov/pages/document-readers.aspx"
+}

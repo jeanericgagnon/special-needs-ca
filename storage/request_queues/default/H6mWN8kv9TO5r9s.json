@@ -1,0 +1,9 @@
+{
+	"id": "H6mWN8kv9TO5r9s",
+	"json": "{\"id\":\"H6mWN8kv9TO5r9s\",\"url\":\"https://give.ucdavis.edu/VPRC/VPC9078\",\"loadedUrl\":\"https://give.ucdavis.edu/VPRC/VPC9078\",\"uniqueKey\":\"https://give.ucdavis.edu/VPRC/VPC9078\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:03.907Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/VPRC/VPC9078",
+	"url": "https://give.ucdavis.edu/VPRC/VPC9078"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "xgBaWSjkGongPNC",
+	"json": "{\"id\":\"xgBaWSjkGongPNC\",\"url\":\"http://www.cdss.ca.gov/inforesources/guides\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/guides\",\"uniqueKey\":\"http://www.cdss.ca.gov/inforesources/guides\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:05.944Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.cdss.ca.gov/inforesources/guides",
+	"url": "http://www.cdss.ca.gov/inforesources/guides"
+}

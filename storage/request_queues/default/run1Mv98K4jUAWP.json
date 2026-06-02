@@ -1,0 +1,9 @@
+{
+	"id": "run1Mv98K4jUAWP",
+	"json": "{\"id\":\"run1Mv98K4jUAWP\",\"url\":\"https://health.ucdavis.edu/medical-center/about/leadership/galante\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-center/about/leadership/galante\",\"uniqueKey\":\"https://health.ucdavis.edu/medical-center/about/leadership/galante\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:41.414Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/medical-center/about/leadership/galante",
+	"url": "https://health.ucdavis.edu/medical-center/about/leadership/galante"
+}

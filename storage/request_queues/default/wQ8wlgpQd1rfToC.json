@@ -1,0 +1,9 @@
+{
+	"id": "wQ8wlgpQd1rfToC",
+	"json": "{\"id\":\"wQ8wlgpQd1rfToC\",\"url\":\"http://www.leginfo.ca.gov/pub/13-14/bill/sen/sb_0851-0900/sb_857_bill_20140620_chaptered.htm\",\"loadedUrl\":\"https://www.leginfo.ca.gov/pub/13-14/bill/sen/sb_0851-0900/sb_857_bill_20140620_chaptered.htm\",\"uniqueKey\":\"http://www.leginfo.ca.gov/pub/13-14/bill/sen/sb_0851-0900/sb_857_bill_20140620_chaptered.htm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T18:55:42.947Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.leginfo.ca.gov/pub/13-14/bill/sen/sb_0851-0900/sb_857_bill_20140620_chaptered.htm",
+	"url": "http://www.leginfo.ca.gov/pub/13-14/bill/sen/sb_0851-0900/sb_857_bill_20140620_chaptered.htm"
+}

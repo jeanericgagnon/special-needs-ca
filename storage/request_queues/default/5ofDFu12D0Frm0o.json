@@ -1,0 +1,9 @@
+{
+	"id": "5ofDFu12D0Frm0o",
+	"json": "{\"id\":\"5ofDFu12D0Frm0o\",\"url\":\"https://www.caloes.ca.gov/office-of-the-director/operations/recovery-directorate/hazard-mitigation/hm-grant-opportunities/hma-hmgp/\",\"loadedUrl\":\"https://www.caloes.ca.gov/office-of-the-director/operations/recovery-directorate/hazard-mitigation/hm-grant-opportunities/hma-hmgp/\",\"uniqueKey\":\"https://www.caloes.ca.gov/office-of-the-director/operations/recovery-directorate/hazard-mitigation/hm-grant-opportunities/hma-hmgp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:33.502Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.caloes.ca.gov/office-of-the-director/operations/recovery-directorate/hazard-mitigation/hm-grant-opportunities/hma-hmgp",
+	"url": "https://www.caloes.ca.gov/office-of-the-director/operations/recovery-directorate/hazard-mitigation/hm-grant-opportunities/hma-hmgp/"
+}

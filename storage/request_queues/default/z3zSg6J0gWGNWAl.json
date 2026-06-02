@@ -1,0 +1,9 @@
+{
+	"id": "z3zSg6J0gWGNWAl",
+	"json": "{\"id\":\"z3zSg6J0gWGNWAl\",\"url\":\"https://oehha.ca.gov/proposition-65\",\"loadedUrl\":\"https://oehha.ca.gov/proposition-65\",\"uniqueKey\":\"https://oehha.ca.gov/proposition-65\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:19:15.049Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://oehha.ca.gov/proposition-65",
+	"url": "https://oehha.ca.gov/proposition-65"
+}

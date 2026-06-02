@@ -1,0 +1,9 @@
+{
+	"id": "GKuohSGiH9wYeIE",
+	"json": "{\"id\":\"GKuohSGiH9wYeIE\",\"url\":\"https://www.dds.ca.gov/transparency/monitoring-reports/regional-centers-annual-performance-and-performance-contract-year-end-reports/\",\"loadedUrl\":\"https://www.dds.ca.gov/transparency/monitoring-reports/regional-centers-annual-performance-and-performance-contract-year-end-reports/\",\"uniqueKey\":\"https://www.dds.ca.gov/transparency/monitoring-reports/regional-centers-annual-performance-and-performance-contract-year-end-reports\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:07:50.503Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/transparency/monitoring-reports/regional-centers-annual-performance-and-performance-contract-year-end-reports",
+	"url": "https://www.dds.ca.gov/transparency/monitoring-reports/regional-centers-annual-performance-and-performance-contract-year-end-reports/"
+}

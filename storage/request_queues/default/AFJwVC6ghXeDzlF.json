@@ -1,0 +1,9 @@
+{
+	"id": "AFJwVC6ghXeDzlF",
+	"json": "{\"id\":\"AFJwVC6ghXeDzlF\",\"url\":\"https://leadership.ucdavis.edu/aggie-square\",\"loadedUrl\":\"https://leadership.ucdavis.edu/aggie-square\",\"uniqueKey\":\"https://leadership.ucdavis.edu/aggie-square\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:36.668Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://leadership.ucdavis.edu/aggie-square",
+	"url": "https://leadership.ucdavis.edu/aggie-square"
+}

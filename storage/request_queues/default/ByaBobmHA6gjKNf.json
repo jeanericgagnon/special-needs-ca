@@ -1,0 +1,9 @@
+{
+	"id": "ByaBobmHA6gjKNf",
+	"json": "{\"id\":\"ByaBobmHA6gjKNf\",\"url\":\"https://alumni.ucdavis.edu/membership/alumni-and-friends\",\"loadedUrl\":\"https://alumni.ucdavis.edu/membership/alumni-and-friends\",\"uniqueKey\":\"https://alumni.ucdavis.edu/membership/alumni-and-friends\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:05.598Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://alumni.ucdavis.edu/membership/alumni-and-friends",
+	"url": "https://alumni.ucdavis.edu/membership/alumni-and-friends"
+}

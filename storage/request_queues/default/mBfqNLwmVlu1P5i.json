@@ -1,0 +1,9 @@
+{
+	"id": "mBfqNLwmVlu1P5i",
+	"json": "{\"id\":\"mBfqNLwmVlu1P5i\",\"url\":\"https://www.csb-cde.ca.gov/outreach/newsletter/day-of-code-2025.aspx\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=a4ec0aba-63dd-4f76-b108-11f02f4bcae5&ssb=07002285200&ssc=https%3A%2F%2Fwww.csb-cde.ca.gov%2Foutreach%2Fnewsletter%2Fday-of-code-2025.aspx&ssi=1fe69aa9-cuez-4a7e-a27e-9161d497ebed&ssk=botmanager_support@radware.com&ssm=31571191235105553100940296341012&ssn=1b0367bd1b913b45c8d5d3fb8d1d2050e194787217f2-9eef-4b75-938686&sso=a24b5b1c-64e405815b981ec29afc2d3b86c13d88df60a5a1a8b8e8c4&ssp=96780725991780346562178033943503990&ssq=09278182762570057700327625998851444568398&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDA3ODcyMTdmMi05ZWVmLTRiNzUtOWIxYy02NGU0MDU4MTViOTgxLTE3ODAzMjc2MjU2NDIwLTAwMzNlMjVlNDcwZTRiMjBmOWUxMCIsInJkIjoiY2EuZ292IiwidXpteCI6IjdmOTAwMDcxYjM2MWY2LWJhZDktNDM3OC1iMTgzLTNhMDUzOTg4NzM1NjEtMTc4MDMyNTg0MzA3MjE3ODI1NzAtZTI5YmZlMjJjODcyZmIyYzIyIn0=\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/outreach/newsletter/day-of-code-2025.aspx\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:27:05.958Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csb-cde.ca.gov/outreach/newsletter/day-of-code-2025.aspx",
+	"url": "https://www.csb-cde.ca.gov/outreach/newsletter/day-of-code-2025.aspx"
+}

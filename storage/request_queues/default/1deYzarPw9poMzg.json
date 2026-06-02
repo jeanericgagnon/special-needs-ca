@@ -1,0 +1,9 @@
+{
+	"id": "1deYzarPw9poMzg",
+	"json": "{\"id\":\"1deYzarPw9poMzg\",\"url\":\"https://neuroscience.ucdavis.edu/tags/department-mathematics\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/tags/department-mathematics\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/tags/department-mathematics\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:01.417Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://neuroscience.ucdavis.edu/tags/department-mathematics",
+	"url": "https://neuroscience.ucdavis.edu/tags/department-mathematics"
+}

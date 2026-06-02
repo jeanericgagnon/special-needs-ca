@@ -1,0 +1,9 @@
+{
+	"id": "Vs9HH7gswyZ2JHv",
+	"json": "{\"id\":\"Vs9HH7gswyZ2JHv\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/CLPPB/Pages/prov_ed.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/CLPPB/Pages/prov_ed.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/CLPPB/Pages/prov_ed.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:02:33.225Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/CLPPB/Pages/prov_ed.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/CLPPB/Pages/prov_ed.aspx"
+}

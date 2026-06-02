@@ -1,0 +1,9 @@
+{
+	"id": "hjAOZ374hw2Bl6W",
+	"json": "{\"id\":\"hjAOZ374hw2Bl6W\",\"url\":\"https://health.ucdavis.edu/health-news/contenthub/uc-davis-surgeons-on-track-to-do-record-number-of-kidney-transplants-in-2020/2020/09\",\"loadedUrl\":\"https://health.ucdavis.edu/news/headlines/uc-davis-surgeons-on-track-to-do-record-number-of-kidney-transplants-in-2020/2020/09\",\"uniqueKey\":\"https://health.ucdavis.edu/health-news/contenthub/uc-davis-surgeons-on-track-to-do-record-number-of-kidney-transplants-in-2020/2020/09\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:50.767Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/health-news/contenthub/uc-davis-surgeons-on-track-to-do-record-number-of-kidney-transplants-in-2020/2020/09",
+	"url": "https://health.ucdavis.edu/health-news/contenthub/uc-davis-surgeons-on-track-to-do-record-number-of-kidney-transplants-in-2020/2020/09"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "cZiWn31Pr1YnUeC",
+	"json": "{\"id\":\"cZiWn31Pr1YnUeC\",\"url\":\"https://health.ucdavis.edu/stemcellresearch/disease_teams/hiv.html\",\"loadedUrl\":\"https://health.ucdavis.edu/stemcellresearch/disease_teams/hiv.html\",\"uniqueKey\":\"https://health.ucdavis.edu/stemcellresearch/disease_teams/hiv.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:30.912Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/stemcellresearch/disease_teams/hiv.html",
+	"url": "https://health.ucdavis.edu/stemcellresearch/disease_teams/hiv.html"
+}

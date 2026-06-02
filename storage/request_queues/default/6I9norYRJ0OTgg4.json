@@ -1,0 +1,9 @@
+{
+	"id": "6I9norYRJ0OTgg4",
+	"json": "{\"id\":\"6I9norYRJ0OTgg4\",\"url\":\"https://health.ucdavis.edu/medical-school/admissions/tours\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-school/admissions/tours\",\"uniqueKey\":\"https://health.ucdavis.edu/medical-school/admissions/tours\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:04.360Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/medical-school/admissions/tours",
+	"url": "https://health.ucdavis.edu/medical-school/admissions/tours"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "h9a9qvVObLr5rKC",
+	"json": "{\"id\":\"h9a9qvVObLr5rKC\",\"url\":\"https://calcareers.ca.gov/CalHRPublic/CreateNewAccount.aspx\",\"loadedUrl\":\"https://calcareers.ca.gov/CalHRPublic/CreateNewAccount.aspx\",\"uniqueKey\":\"https://calcareers.ca.gov/CalHRPublic/CreateNewAccount.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:32.760Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://calcareers.ca.gov/CalHRPublic/CreateNewAccount.aspx",
+	"url": "https://calcareers.ca.gov/CalHRPublic/CreateNewAccount.aspx"
+}

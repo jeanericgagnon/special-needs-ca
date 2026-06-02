@@ -1,0 +1,9 @@
+{
+	"id": "2GT8OEhSJuhlc4g",
+	"json": "{\"id\":\"2GT8OEhSJuhlc4g\",\"url\":\"https://www.dds.ca.gov/rc/vendor-provider/dsp-workforce-survey/\",\"loadedUrl\":\"https://www.dds.ca.gov/rc/vendor-provider/dsp-workforce-survey/\",\"uniqueKey\":\"https://www.dds.ca.gov/rc/vendor-provider/dsp-workforce-survey\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:05:28.452Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/rc/vendor-provider/dsp-workforce-survey",
+	"url": "https://www.dds.ca.gov/rc/vendor-provider/dsp-workforce-survey/"
+}

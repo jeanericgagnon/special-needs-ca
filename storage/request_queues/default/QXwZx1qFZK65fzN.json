@@ -1,0 +1,9 @@
+{
+	"id": "QXwZx1qFZK65fzN",
+	"json": "{\"id\":\"QXwZx1qFZK65fzN\",\"url\":\"https://www.dds.ca.gov/rc/vendor-provider/vendorization-process/vendor-rates/\",\"loadedUrl\":\"https://www.dds.ca.gov/rc/vendor-provider/vendorization-process/vendor-rates/\",\"uniqueKey\":\"https://www.dds.ca.gov/rc/vendor-provider/vendorization-process/vendor-rates\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:05:23.873Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/rc/vendor-provider/vendorization-process/vendor-rates",
+	"url": "https://www.dds.ca.gov/rc/vendor-provider/vendorization-process/vendor-rates/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "JWCXKDPjcBBMfC9",
+	"json": "{\"id\":\"JWCXKDPjcBBMfC9\",\"url\":\"https://www.ucdavis.edu/majors/blog/top-ten-majors\",\"loadedUrl\":\"https://www.ucdavis.edu/majors/blog/top-ten-majors\",\"uniqueKey\":\"https://www.ucdavis.edu/majors/blog/top-ten-majors\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:44.516Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ucdavis.edu/majors/blog/top-ten-majors",
+	"url": "https://www.ucdavis.edu/majors/blog/top-ten-majors"
+}

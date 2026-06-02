@@ -1,0 +1,9 @@
+{
+	"id": "oJz07dE5UyinoyW",
+	"json": "{\"id\":\"oJz07dE5UyinoyW\",\"url\":\"https://www.cde.ca.gov/fg/aa/cm/\",\"loadedUrl\":\"https://www.cde.ca.gov/fg/aa/cm/\",\"uniqueKey\":\"https://www.cde.ca.gov/fg/aa/cm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:56:44.689Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/fg/aa/cm",
+	"url": "https://www.cde.ca.gov/fg/aa/cm/"
+}

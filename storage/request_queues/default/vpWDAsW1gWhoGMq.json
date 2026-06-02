@@ -1,0 +1,9 @@
+{
+	"id": "vpWDAsW1gWhoGMq",
+	"json": "{\"id\":\"vpWDAsW1gWhoGMq\",\"url\":\"https://neuroscience.ucdavis.edu/news/researchers-develop-lsd-analogue-potential-treating-schizophrenia\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/news/researchers-develop-lsd-analogue-potential-treating-schizophrenia\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/news/researchers-develop-lsd-analogue-potential-treating-schizophrenia\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:54.450Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://neuroscience.ucdavis.edu/news/researchers-develop-lsd-analogue-potential-treating-schizophrenia",
+	"url": "https://neuroscience.ucdavis.edu/news/researchers-develop-lsd-analogue-potential-treating-schizophrenia"
+}

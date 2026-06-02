@@ -1,0 +1,9 @@
+{
+	"id": "j2v2A3Qe2IXrpNI",
+	"json": "{\"id\":\"j2v2A3Qe2IXrpNI\",\"url\":\"https://calable.ca.gov/overview/zh\",\"loadedUrl\":\"https://calable.ca.gov/overview/zh\",\"uniqueKey\":\"https://calable.ca.gov/overview/zh\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:14.202Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://calable.ca.gov/overview/zh",
+	"url": "https://calable.ca.gov/overview/zh"
+}

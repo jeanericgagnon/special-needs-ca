@@ -1,0 +1,9 @@
+{
+	"id": "LzWQuGaUWiqCOtn",
+	"json": "{\"id\":\"LzWQuGaUWiqCOtn\",\"url\":\"https://www.ucdavis.edu/about/locations/unique-to-uc-davis\",\"loadedUrl\":\"https://www.ucdavis.edu/about/locations/unique-to-uc-davis\",\"uniqueKey\":\"https://www.ucdavis.edu/about/locations/unique-to-uc-davis\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:41.275Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ucdavis.edu/about/locations/unique-to-uc-davis",
+	"url": "https://www.ucdavis.edu/about/locations/unique-to-uc-davis"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "4K7VBGqKRXWhd6F",
+	"json": "{\"id\":\"4K7VBGqKRXWhd6F\",\"url\":\"https://www.gov.ca.gov/sample-page/\",\"loadedUrl\":\"https://www.gov.ca.gov/sample-page/\",\"uniqueKey\":\"https://www.gov.ca.gov/sample-page\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:56.482Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.gov.ca.gov/sample-page",
+	"url": "https://www.gov.ca.gov/sample-page/"
+}

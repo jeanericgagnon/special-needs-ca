@@ -1,0 +1,9 @@
+{
+	"id": "yDNc6FmkQPZIPt9",
+	"json": "{\"id\":\"yDNc6FmkQPZIPt9\",\"url\":\"https://www.cde.ca.gov/ci/pl/assetbasedpedagogies.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=d9712604-02a6-4b35-9990-84513280dffc&ssb=12667270954&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fci%2Fpl%2Fassetbasedpedagogies.asp&ssi=c2c6237a-ctxv-462b-af6b-930b1cefa787&ssk=botmanager_support@radware.com&ssm=14326646555692871101186505971061&ssn=7a95c0d6dda09b68e354101d62bc99481d57279fd1b9-1722-4764-b5c783&sso=edad1e0a-d6c8e448852cb0635e345c119b2b5d3d10c631a7dbea865e&ssp=83473293371780306769178033509509423&ssq=46539292657963675828726579099259665329102&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsInV6bXgiOiI3ZjkwMDBmYzdiY2U0MS1mMjNkLTRjYWMtYTYxNy0zMjA1MmY5YWJkOWUxLTE3ODAzMjY1NzkzNjgwLTIyYTNkOGQzNmVjY2VmMjAxMCIsIl9fdXptZiI6IjdmOTAwMDI3OWZkMWI5LTE3MjItNDc2NC1iZTBhLWQ2YzhlNDQ4ODUyYzEtMTc4MDMyNjU3OTM2ODAtMDAzNjAxZDY5YWUwY2I5MDI0ZTEwIn0=\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/pl/assetbasedpedagogies.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:09:39.786Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ci/pl/assetbasedpedagogies.asp",
+	"url": "https://www.cde.ca.gov/ci/pl/assetbasedpedagogies.asp"
+}

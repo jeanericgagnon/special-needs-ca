@@ -1,0 +1,9 @@
+{
+	"id": "J0HFkk06mtP8Njp",
+	"json": "{\"id\":\"J0HFkk06mtP8Njp\",\"url\":\"https://www.cdfa.ca.gov/is/i_&_c/cfm.html\",\"loadedUrl\":\"https://www.cdfa.ca.gov/is/i_&_c/cfm.html\",\"uniqueKey\":\"https://www.cdfa.ca.gov/is/i_&_c/cfm.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:24:25.618Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdfa.ca.gov/is/i_&_c/cfm.html",
+	"url": "https://www.cdfa.ca.gov/is/i_&_c/cfm.html"
+}

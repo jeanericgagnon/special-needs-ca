@@ -1,0 +1,9 @@
+{
+	"id": "2dQhGTOGYrX9MQV",
+	"json": "{\"id\":\"2dQhGTOGYrX9MQV\",\"url\":\"https://www.ssa.gov/ssi/text-apply-ussi.htm\",\"loadedUrl\":\"https://www.ssa.gov/ssi/text-apply-ussi.htm\",\"uniqueKey\":\"https://www.ssa.gov/ssi/text-apply-ussi.htm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:55.052Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ssa.gov/ssi/text-apply-ussi.htm",
+	"url": "https://www.ssa.gov/ssi/text-apply-ussi.htm"
+}

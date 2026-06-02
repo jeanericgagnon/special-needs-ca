@@ -1,0 +1,9 @@
+{
+	"id": "ey47y9guF6XD6TM",
+	"json": "{\"id\":\"ey47y9guF6XD6TM\",\"url\":\"https://www.gov.ca.gov/about/cabinet/\",\"loadedUrl\":\"https://www.gov.ca.gov/about/cabinet/\",\"uniqueKey\":\"https://www.gov.ca.gov/about/cabinet\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:59.681Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.gov.ca.gov/about/cabinet",
+	"url": "https://www.gov.ca.gov/about/cabinet/"
+}

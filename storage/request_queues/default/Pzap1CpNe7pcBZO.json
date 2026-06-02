@@ -1,0 +1,9 @@
+{
+	"id": "Pzap1CpNe7pcBZO",
+	"json": "{\"id\":\"Pzap1CpNe7pcBZO\",\"url\":\"https://health.ucdavis.edu/aboutus/150th-anniversary/articles/history-of-the-hospital.html\",\"loadedUrl\":\"https://health.ucdavis.edu/aboutus/150th-anniversary/articles/history-of-the-hospital.html\",\"uniqueKey\":\"https://health.ucdavis.edu/aboutus/150th-anniversary/articles/history-of-the-hospital.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:09.234Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/aboutus/150th-anniversary/articles/history-of-the-hospital.html",
+	"url": "https://health.ucdavis.edu/aboutus/150th-anniversary/articles/history-of-the-hospital.html"
+}

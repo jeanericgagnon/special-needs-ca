@@ -1,0 +1,9 @@
+{
+	"id": "u8P2AjJ243g6luc",
+	"json": "{\"id\":\"u8P2AjJ243g6luc\",\"url\":\"https://physicians.ucdavis.edu/details/43090/paul-ashwood-autism-gastroenterology-neurobiology_-neurodevelopmental_disorders-sacramento?FreeText%3aLast+name=ashw\",\"loadedUrl\":\"https://physicians.ucdavis.edu/details/43090/paul-ashwood-autism-gastroenterology-neurobiology_-neurodevelopmental_disorders-sacramento?FreeText%3aLast+name=ashw\",\"uniqueKey\":\"https://physicians.ucdavis.edu/details/43090/paul-ashwood-autism-gastroenterology-neurobiology_-neurodevelopmental_disorders-sacramento?FreeText%3ALast+name=ashw\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:07:48.831Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://physicians.ucdavis.edu/details/43090/paul-ashwood-autism-gastroenterology-neurobiology_-neurodevelopmental_disorders-sacramento?FreeText%3ALast+name=ashw",
+	"url": "https://physicians.ucdavis.edu/details/43090/paul-ashwood-autism-gastroenterology-neurobiology_-neurodevelopmental_disorders-sacramento?FreeText%3aLast+name=ashw"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "rlOdGz9x9n8NKTI",
+	"json": "{\"id\":\"rlOdGz9x9n8NKTI\",\"url\":\"https://health.ucdavis.edu/medicalcenter/patients/patient_welcome.html\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/patient-rights/all-persons-welcome\",\"uniqueKey\":\"https://health.ucdavis.edu/medicalcenter/patients/patient_welcome.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:28.323Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/medicalcenter/patients/patient_welcome.html",
+	"url": "https://health.ucdavis.edu/medicalcenter/patients/patient_welcome.html"
+}

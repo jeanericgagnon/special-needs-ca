@@ -1,0 +1,9 @@
+{
+	"id": "MPjX3z5SYPU3DVJ",
+	"json": "{\"id\":\"MPjX3z5SYPU3DVJ\",\"url\":\"https://scdd.ca.gov/pos-service-code/training-and-counseling-services-for-unpaid-caregivers/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/training-and-counseling-services-for-unpaid-caregivers/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/training-and-counseling-services-for-unpaid-caregivers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:47.739Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/pos-service-code/training-and-counseling-services-for-unpaid-caregivers",
+	"url": "https://scdd.ca.gov/pos-service-code/training-and-counseling-services-for-unpaid-caregivers/"
+}

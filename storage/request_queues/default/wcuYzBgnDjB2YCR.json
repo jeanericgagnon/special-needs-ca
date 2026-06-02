@@ -1,0 +1,9 @@
+{
+	"id": "wcuYzBgnDjB2YCR",
+	"json": "{\"id\":\"wcuYzBgnDjB2YCR\",\"url\":\"https://dbw.parks.ca.gov/\",\"loadedUrl\":\"https://dbw.parks.ca.gov/\",\"uniqueKey\":\"https://dbw.parks.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:41.793Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://dbw.parks.ca.gov",
+	"url": "https://dbw.parks.ca.gov/"
+}

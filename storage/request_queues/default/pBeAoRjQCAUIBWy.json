@@ -1,0 +1,9 @@
+{
+	"id": "pBeAoRjQCAUIBWy",
+	"json": "{\"id\":\"pBeAoRjQCAUIBWy\",\"url\":\"https://physicians.ucdavis.edu/?FreeText%3aLast+name=ashw\",\"loadedUrl\":\"https://physicians.ucdavis.edu/?FreeText%3aLast+name=ashw\",\"uniqueKey\":\"https://physicians.ucdavis.edu?FreeText%3ALast+name=ashw\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:56.211Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://physicians.ucdavis.edu?FreeText%3ALast+name=ashw",
+	"url": "https://physicians.ucdavis.edu/?FreeText%3aLast+name=ashw"
+}

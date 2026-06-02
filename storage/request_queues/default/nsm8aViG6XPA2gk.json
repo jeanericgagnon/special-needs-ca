@@ -1,0 +1,9 @@
+{
+	"id": "nsm8aViG6XPA2gk",
+	"json": "{\"id\":\"nsm8aViG6XPA2gk\",\"url\":\"https://scdd.ca.gov/policyandlegislation/\",\"loadedUrl\":\"https://scdd.ca.gov/policyandlegislation/\",\"uniqueKey\":\"https://scdd.ca.gov/policyandlegislation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:19.787Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/policyandlegislation",
+	"url": "https://scdd.ca.gov/policyandlegislation/"
+}

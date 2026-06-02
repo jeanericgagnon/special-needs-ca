@@ -1,0 +1,9 @@
+{
+	"id": "FOJwnciWvG78RoJ",
+	"json": "{\"id\":\"FOJwnciWvG78RoJ\",\"url\":\"https://lao.ca.gov/Notifications\",\"loadedUrl\":\"https://lao.ca.gov/Notifications\",\"uniqueKey\":\"https://lao.ca.gov/Notifications\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:03:04.505Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://lao.ca.gov/Notifications",
+	"url": "https://lao.ca.gov/Notifications"
+}

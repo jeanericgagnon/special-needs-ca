@@ -1,0 +1,9 @@
+{
+	"id": "KYiy5UGNkR1RFl2",
+	"json": "{\"id\":\"KYiy5UGNkR1RFl2\",\"url\":\"https://hr.ucdavis.edu/departments/shared-services/sso/hr/onboarding/id\",\"loadedUrl\":\"https://hr.ucdavis.edu/departments/shared-services/sso/hr/onboarding/id\",\"uniqueKey\":\"https://hr.ucdavis.edu/departments/shared-services/sso/hr/onboarding/id\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:32.906Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/departments/shared-services/sso/hr/onboarding/id",
+	"url": "https://hr.ucdavis.edu/departments/shared-services/sso/hr/onboarding/id"
+}

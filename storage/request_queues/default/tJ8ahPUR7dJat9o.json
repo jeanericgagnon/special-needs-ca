@@ -1,0 +1,9 @@
+{
+	"id": "tJ8ahPUR7dJat9o",
+	"json": "{\"id\":\"tJ8ahPUR7dJat9o\",\"url\":\"https://health.ucdavis.edu/nurse/Career-Ladder/Career-Ladder.html\",\"loadedUrl\":\"https://health.ucdavis.edu/nurse/Career-Ladder/Career-Ladder.html\",\"uniqueKey\":\"https://health.ucdavis.edu/nurse/Career-Ladder/Career-Ladder.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:05.503Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/nurse/Career-Ladder/Career-Ladder.html",
+	"url": "https://health.ucdavis.edu/nurse/Career-Ladder/Career-Ladder.html"
+}

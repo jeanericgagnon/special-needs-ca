@@ -1,0 +1,9 @@
+{
+	"id": "wN323ARbMIx152N",
+	"json": "{\"id\":\"wN323ARbMIx152N\",\"url\":\"https://health.ucdavis.edu/children/team/11708/kiran-nandalike-pediatric-pulmonology-pediatric-sleep-medicine-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/children/team/11708/kiran-nandalike-pediatric-pulmonology-pediatric-sleep-medicine-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/children/team/11708/kiran-nandalike-pediatric-pulmonology-pediatric-sleep-medicine-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:13.777Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/children/team/11708/kiran-nandalike-pediatric-pulmonology-pediatric-sleep-medicine-sacramento",
+	"url": "https://health.ucdavis.edu/children/team/11708/kiran-nandalike-pediatric-pulmonology-pediatric-sleep-medicine-sacramento"
+}

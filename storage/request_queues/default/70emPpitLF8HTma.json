@@ -1,0 +1,9 @@
+{
+	"id": "70emPpitLF8HTma",
+	"json": "{\"id\":\"70emPpitLF8HTma\",\"url\":\"https://www.cdii.ca.gov/translation-page/cdii-translation-page-vietnamese-tieng-viet/\",\"loadedUrl\":\"https://www.cdii.ca.gov/translation-page/cdii-translation-page-vietnamese-tieng-viet/\",\"uniqueKey\":\"https://www.cdii.ca.gov/translation-page/cdii-translation-page-vietnamese-tieng-viet\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:43.297Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdii.ca.gov/translation-page/cdii-translation-page-vietnamese-tieng-viet",
+	"url": "https://www.cdii.ca.gov/translation-page/cdii-translation-page-vietnamese-tieng-viet/"
+}

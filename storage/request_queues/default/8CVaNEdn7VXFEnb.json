@@ -1,0 +1,9 @@
+{
+	"id": "8CVaNEdn7VXFEnb",
+	"json": "{\"id\":\"8CVaNEdn7VXFEnb\",\"url\":\"https://www.dds.ca.gov/rc/vendor-provider/quality-incentive-program/\",\"loadedUrl\":\"https://www.dds.ca.gov/rc/vendor-provider/quality-incentive-program/\",\"uniqueKey\":\"https://www.dds.ca.gov/rc/vendor-provider/quality-incentive-program\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:22.941Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/rc/vendor-provider/quality-incentive-program",
+	"url": "https://www.dds.ca.gov/rc/vendor-provider/quality-incentive-program/"
+}

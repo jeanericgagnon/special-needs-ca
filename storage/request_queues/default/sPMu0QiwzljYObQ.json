@@ -1,0 +1,9 @@
+{
+	"id": "sPMu0QiwzljYObQ",
+	"json": "{\"id\":\"sPMu0QiwzljYObQ\",\"url\":\"https://calable.ca.gov/how-it-works/age-adjustment\",\"loadedUrl\":\"https://calable.ca.gov/how-it-works/age-adjustment\",\"uniqueKey\":\"https://calable.ca.gov/how-it-works/age-adjustment\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:12.675Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://calable.ca.gov/how-it-works/age-adjustment",
+	"url": "https://calable.ca.gov/how-it-works/age-adjustment"
+}

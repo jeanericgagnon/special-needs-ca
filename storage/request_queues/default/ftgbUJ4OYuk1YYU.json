@@ -1,0 +1,9 @@
+{
+	"id": "ftgbUJ4OYuk1YYU",
+	"json": "{\"id\":\"ftgbUJ4OYuk1YYU\",\"url\":\"https://physicians.ucdavis.edu/MedicalCenter/details/1329/mehrdad-abedi-cancer-internal_medicine-leukemia-sacramento\",\"loadedUrl\":\"https://physicians.ucdavis.edu/MedicalCenter/details/1329/mehrdad-abedi-cancer-internal_medicine-leukemia-sacramento\",\"uniqueKey\":\"https://physicians.ucdavis.edu/MedicalCenter/details/1329/mehrdad-abedi-cancer-internal_medicine-leukemia-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:44.518Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://physicians.ucdavis.edu/MedicalCenter/details/1329/mehrdad-abedi-cancer-internal_medicine-leukemia-sacramento",
+	"url": "https://physicians.ucdavis.edu/MedicalCenter/details/1329/mehrdad-abedi-cancer-internal_medicine-leukemia-sacramento"
+}

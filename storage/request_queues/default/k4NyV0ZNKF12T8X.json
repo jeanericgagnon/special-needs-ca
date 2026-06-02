@@ -1,0 +1,9 @@
+{
+	"id": "k4NyV0ZNKF12T8X",
+	"json": "{\"id\":\"k4NyV0ZNKF12T8X\",\"url\":\"https://physicians.ucdavis.edu/medicalcenter/details/536/primo-lucky-lara_jr-adrenal_cortical-bladder-cancer-hematology_oncology-kidney-lung-sacramento\",\"loadedUrl\":\"https://physicians.ucdavis.edu/medicalcenter/details/536/primo-lucky-lara_jr-adrenal_cortical-bladder-cancer-hematology_oncology-kidney-lung-sacramento\",\"uniqueKey\":\"https://physicians.ucdavis.edu/medicalcenter/details/536/primo-lucky-lara_jr-adrenal_cortical-bladder-cancer-hematology_oncology-kidney-lung-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:47:13.208Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://physicians.ucdavis.edu/medicalcenter/details/536/primo-lucky-lara_jr-adrenal_cortical-bladder-cancer-hematology_oncology-kidney-lung-sacramento",
+	"url": "https://physicians.ucdavis.edu/medicalcenter/details/536/primo-lucky-lara_jr-adrenal_cortical-bladder-cancer-hematology_oncology-kidney-lung-sacramento"
+}

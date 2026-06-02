@@ -1,0 +1,9 @@
+{
+	"id": "mnJ42hiPWgpMx7s",
+	"json": "{\"id\":\"mnJ42hiPWgpMx7s\",\"url\":\"https://care.ucdavis.edu/history\",\"loadedUrl\":\"https://care.ucdavis.edu/history\",\"uniqueKey\":\"https://care.ucdavis.edu/history\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:59.753Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://care.ucdavis.edu/history",
+	"url": "https://care.ucdavis.edu/history"
+}

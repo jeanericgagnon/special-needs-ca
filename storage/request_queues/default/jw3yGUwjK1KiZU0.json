@@ -1,0 +1,9 @@
+{
+	"id": "jw3yGUwjK1KiZU0",
+	"json": "{\"id\":\"jw3yGUwjK1KiZU0\",\"url\":\"https://www.dds.ca.gov/initiatives/sdp/self-determination-translated-videos/\",\"loadedUrl\":\"https://www.dds.ca.gov/initiatives/sdp/self-determination-translated-videos/\",\"uniqueKey\":\"https://www.dds.ca.gov/initiatives/sdp/self-determination-translated-videos\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:06:44.869Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/initiatives/sdp/self-determination-translated-videos",
+	"url": "https://www.dds.ca.gov/initiatives/sdp/self-determination-translated-videos/"
+}

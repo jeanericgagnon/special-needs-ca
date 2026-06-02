@@ -1,0 +1,9 @@
+{
+	"id": "G4SujkGrqU1HqUk",
+	"json": "{\"id\":\"G4SujkGrqU1HqUk\",\"url\":\"https://health.ucdavis.edu/cancer/specialties/stem-cell-transplant/\",\"loadedUrl\":\"https://health.ucdavis.edu/cancer/specialties/stem-cell-transplant/\",\"uniqueKey\":\"https://health.ucdavis.edu/cancer/specialties/stem-cell-transplant\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:13.199Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/cancer/specialties/stem-cell-transplant",
+	"url": "https://health.ucdavis.edu/cancer/specialties/stem-cell-transplant/"
+}

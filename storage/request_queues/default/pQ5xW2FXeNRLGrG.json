@@ -1,0 +1,9 @@
+{
+	"id": "pQ5xW2FXeNRLGrG",
+	"json": "{\"id\":\"pQ5xW2FXeNRLGrG\",\"url\":\"https://skylab.cdph.ca.gov/communityBurden/?tab=detailedrace\",\"loadedUrl\":\"https://skylab.cdph.ca.gov/communityBurden/?tab=detailedrace\",\"uniqueKey\":\"https://skylab.cdph.ca.gov/communityBurden?tab=detailedrace\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":1,\"errorMessages\":[\"Error: request timed out after 30 seconds.\\n    at Timeout._onTimeout (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@apify/timeout/cjs/index.cjs:64:68)\\n    at listOnTimeout (node:internal/timers:588:17)\\n    at process.processTimers (node:internal/timers:523:7)\"],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:51:44.199Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 1,
+	"uniqueKey": "https://skylab.cdph.ca.gov/communityBurden?tab=detailedrace",
+	"url": "https://skylab.cdph.ca.gov/communityBurden/?tab=detailedrace"
+}

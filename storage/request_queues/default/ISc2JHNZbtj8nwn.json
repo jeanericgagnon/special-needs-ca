@@ -1,0 +1,9 @@
+{
+	"id": "ISc2JHNZbtj8nwn",
+	"json": "{\"id\":\"ISc2JHNZbtj8nwn\",\"url\":\"https://www.cde.ca.gov/ci/pl/equitystkmtginst.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=ea940aac-b780-4fbf-8b49-634330bcd771&ssb=35312223055&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fci%2Fpl%2Fequitystkmtginst.asp&ssi=ceb9922b-ctxv-4774-a517-7f5fd4d7f539&ssk=botmanager_support@radware.com&ssm=70531321157413709104194370457794&ssn=6c7e7dbad4c29782aac78e9b9fb13d258b618924fb90-9f10-414a-9b192b&sso=2baf24c8-6dbe779d06c896ce8d1d8e161d1dc786df28b764dd8aa072&ssp=08173410571780338793178039813893195&ssq=92498345615147928688256151683962372875440&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsIl9fdXptZiI6IjdmOTAwMDg5MjRmYjkwLTlmMTAtNDE0YS05NGM4LTZkYmU3NzlkMDZjODEtMTc4MDM1NjE1MTkxOTAtMDAzYjdlZmYyNDU0NDliOWQ4ZjEwIiwidXpteCI6IjdmOTAwMDVjM2Y2OTYxLTAxNGQtNGQ0OS04ZWZmLTVmODlkNWY5OTM2NjEtMTc4MDM1NjE1MTkxOTAtNmYzNDE1MThhNmFjOTgyMjEwIn0=\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/pl/equitystkmtginst.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T23:22:32.507Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ci/pl/equitystkmtginst.asp",
+	"url": "https://www.cde.ca.gov/ci/pl/equitystkmtginst.asp"
+}

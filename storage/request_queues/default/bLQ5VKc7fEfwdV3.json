@@ -1,0 +1,9 @@
+{
+	"id": "bLQ5VKc7fEfwdV3",
+	"json": "{\"id\":\"bLQ5VKc7fEfwdV3\",\"url\":\"https://giving.ucdavis.edu/sitemap\",\"loadedUrl\":\"https://giving.ucdavis.edu/sitemap\",\"uniqueKey\":\"https://giving.ucdavis.edu/sitemap\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:31.837Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://giving.ucdavis.edu/sitemap",
+	"url": "https://giving.ucdavis.edu/sitemap"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "serRskkHkN6dCUU",
+	"json": "{\"id\":\"serRskkHkN6dCUU\",\"url\":\"https://www.dds.ca.gov/general/language/tagalog/\",\"loadedUrl\":\"https://www.dds.ca.gov/general/language/tagalog/\",\"uniqueKey\":\"https://www.dds.ca.gov/general/language/tagalog\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:55.447Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/general/language/tagalog",
+	"url": "https://www.dds.ca.gov/general/language/tagalog/"
+}

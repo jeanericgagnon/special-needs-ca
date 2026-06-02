@@ -1,0 +1,9 @@
+{
+	"id": "cGaH1C5IQ9LygZl",
+	"json": "{\"id\":\"cGaH1C5IQ9LygZl\",\"url\":\"https://scdd.ca.gov/pos-service-code/cdss-licensed-group-home-for-children-with-special-health-care-needs/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/cdss-licensed-group-home-for-children-with-special-health-care-needs/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/cdss-licensed-group-home-for-children-with-special-health-care-needs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:44.773Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/pos-service-code/cdss-licensed-group-home-for-children-with-special-health-care-needs",
+	"url": "https://scdd.ca.gov/pos-service-code/cdss-licensed-group-home-for-children-with-special-health-care-needs/"
+}

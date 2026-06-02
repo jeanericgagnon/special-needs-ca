@@ -1,0 +1,9 @@
+{
+	"id": "RfCOoCkU6oPHHOx",
+	"json": "{\"id\":\"RfCOoCkU6oPHHOx\",\"url\":\"https://lists.ucdavis.edu/wws/subscribe/irb-info\",\"loadedUrl\":\"https://lists.ucdavis.edu/sympa/subscribe/irb-info\",\"uniqueKey\":\"https://lists.ucdavis.edu/wws/subscribe/irb-info\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:42.594Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://lists.ucdavis.edu/wws/subscribe/irb-info",
+	"url": "https://lists.ucdavis.edu/wws/subscribe/irb-info"
+}

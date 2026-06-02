@@ -1,0 +1,9 @@
+{
+	"id": "alW3SZVfC6HBZfQ",
+	"json": "{\"id\":\"alW3SZVfC6HBZfQ\",\"url\":\"https://www.globaldownsyndrome.org/it/gala-dellaccettabilita/\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/it/gala-dellaccettabilita/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/it/gala-dellaccettabilita\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:30:06.822Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.globaldownsyndrome.org/it/gala-dellaccettabilita",
+	"url": "https://www.globaldownsyndrome.org/it/gala-dellaccettabilita/"
+}

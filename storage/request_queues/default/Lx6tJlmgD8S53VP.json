@@ -1,0 +1,9 @@
+{
+	"id": "Lx6tJlmgD8S53VP",
+	"json": "{\"id\":\"Lx6tJlmgD8S53VP\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/FLOURISH/_layouts/15/listform.aspx?ListId=%7BA22ED8A7%2DC6BB%2D484E%2D8086%2DCC0963D123D4%7D&PageType=0\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/FLOURISH/Pages/default.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/FLOURISH/_layouts/15/listform.aspx?ListId=%7BA22ED8A7-C6BB-484E-8086-CC0963D123D4%7D&PageType=0\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T17:51:00.168Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/FLOURISH/_layouts/15/listform.aspx?ListId=%7BA22ED8A7-C6BB-484E-8086-CC0963D123D4%7D&PageType=0",
+	"url": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/FLOURISH/_layouts/15/listform.aspx?ListId=%7BA22ED8A7%2DC6BB%2D484E%2D8086%2DCC0963D123D4%7D&PageType=0"
+}

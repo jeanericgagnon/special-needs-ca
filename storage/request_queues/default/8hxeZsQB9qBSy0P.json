@@ -1,0 +1,9 @@
+{
+	"id": "8hxeZsQB9qBSy0P",
+	"json": "{\"id\":\"8hxeZsQB9qBSy0P\",\"url\":\"https://www.calcareers.ca.gov/CalHrPublic/GeneralInfo/Help.aspx\",\"loadedUrl\":\"https://calcareers.ca.gov/CalHrPublic/GeneralInfo/Help.aspx\",\"uniqueKey\":\"https://www.calcareers.ca.gov/CalHrPublic/GeneralInfo/Help.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:08.268Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.calcareers.ca.gov/CalHrPublic/GeneralInfo/Help.aspx",
+	"url": "https://www.calcareers.ca.gov/CalHrPublic/GeneralInfo/Help.aspx"
+}

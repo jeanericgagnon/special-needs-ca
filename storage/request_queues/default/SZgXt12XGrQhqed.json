@@ -1,0 +1,9 @@
+{
+	"id": "SZgXt12XGrQhqed",
+	"json": "{\"id\":\"SZgXt12XGrQhqed\",\"url\":\"https://hdapp.ucdavis.edu/other-prohibited-conduct\",\"loadedUrl\":\"https://hdapp.ucdavis.edu/other-prohibited-conduct\",\"uniqueKey\":\"https://hdapp.ucdavis.edu/other-prohibited-conduct\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:00.502Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hdapp.ucdavis.edu/other-prohibited-conduct",
+	"url": "https://hdapp.ucdavis.edu/other-prohibited-conduct"
+}

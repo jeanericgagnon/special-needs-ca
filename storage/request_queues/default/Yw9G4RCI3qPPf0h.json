@@ -1,0 +1,9 @@
+{
+	"id": "Yw9G4RCI3qPPf0h",
+	"json": "{\"id\":\"Yw9G4RCI3qPPf0h\",\"url\":\"https://physicians.ucdavis.edu/medicalcenter?Index=9\",\"loadedUrl\":\"https://physicians.ucdavis.edu/medicalcenter?Index=9\",\"uniqueKey\":\"https://physicians.ucdavis.edu/medicalcenter?Index=9\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:45.290Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://physicians.ucdavis.edu/medicalcenter?Index=9",
+	"url": "https://physicians.ucdavis.edu/medicalcenter?Index=9"
+}

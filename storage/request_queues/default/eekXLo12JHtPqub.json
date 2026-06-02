@@ -1,0 +1,9 @@
+{
+	"id": "eekXLo12JHtPqub",
+	"json": "{\"id\":\"eekXLo12JHtPqub\",\"url\":\"https://www2.cde.ca.gov/waiverweb/logon.aspx\",\"loadedUrl\":\"https://www2.cde.ca.gov/waiverweb/logon.aspx\",\"uniqueKey\":\"https://www2.cde.ca.gov/waiverweb/logon.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:32.339Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www2.cde.ca.gov/waiverweb/logon.aspx",
+	"url": "https://www2.cde.ca.gov/waiverweb/logon.aspx"
+}

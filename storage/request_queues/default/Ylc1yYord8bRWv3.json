@@ -1,0 +1,9 @@
+{
+	"id": "Ylc1yYord8bRWv3",
+	"json": "{\"id\":\"Ylc1yYord8bRWv3\",\"url\":\"https://dor.ca.gov/Home/BlindFieldServices\",\"loadedUrl\":\"https://dor.ca.gov/Home/BlindFieldServices\",\"uniqueKey\":\"https://dor.ca.gov/Home/BlindFieldServices\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:09:01.841Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://dor.ca.gov/Home/BlindFieldServices",
+	"url": "https://dor.ca.gov/Home/BlindFieldServices"
+}

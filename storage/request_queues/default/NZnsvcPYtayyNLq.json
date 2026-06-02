@@ -1,0 +1,9 @@
+{
+	"id": "NZnsvcPYtayyNLq",
+	"json": "{\"id\":\"NZnsvcPYtayyNLq\",\"url\":\"https://www.cdph.ca.gov/Pages/Accessibility.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Pages/Accessibility.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Pages/Accessibility.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:10.986Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Pages/Accessibility.aspx",
+	"url": "https://www.cdph.ca.gov/Pages/Accessibility.aspx"
+}

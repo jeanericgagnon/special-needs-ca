@@ -1,0 +1,9 @@
+{
+	"id": "yMYZGQNwTB8EoUz",
+	"json": "{\"id\":\"yMYZGQNwTB8EoUz\",\"url\":\"https://caes.ucdavis.edu/research/initiatives\",\"loadedUrl\":\"https://caes.ucdavis.edu/research/initiatives\",\"uniqueKey\":\"https://caes.ucdavis.edu/research/initiatives\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:55:21.416Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://caes.ucdavis.edu/research/initiatives",
+	"url": "https://caes.ucdavis.edu/research/initiatives"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "uq2MopSofuPFdXB",
+	"json": "{\"id\":\"uq2MopSofuPFdXB\",\"url\":\"https://yellowcluster.ucdavis.edu/services/academic-staff-personnel\",\"loadedUrl\":\"https://yellowcluster.ucdavis.edu/services/academic-staff-personnel\",\"uniqueKey\":\"https://yellowcluster.ucdavis.edu/services/academic-staff-personnel\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:16.675Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://yellowcluster.ucdavis.edu/services/academic-staff-personnel",
+	"url": "https://yellowcluster.ucdavis.edu/services/academic-staff-personnel"
+}

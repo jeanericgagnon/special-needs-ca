@@ -1,0 +1,9 @@
+{
+	"id": "J0LDyu0HpX5yn4x",
+	"json": "{\"id\":\"J0LDyu0HpX5yn4x\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/gdspmission.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/gdspmission.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/gdspmission.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:33.288Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/gdspmission.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/gdspmission.aspx"
+}

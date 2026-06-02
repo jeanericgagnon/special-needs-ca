@@ -1,0 +1,9 @@
+{
+	"id": "7weuxNEU38M2MFD",
+	"json": "{\"id\":\"7weuxNEU38M2MFD\",\"url\":\"http://gov.ca.gov/\",\"loadedUrl\":\"https://www.gov.ca.gov/\",\"uniqueKey\":\"http://gov.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:00.832Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://gov.ca.gov",
+	"url": "http://gov.ca.gov/"
+}

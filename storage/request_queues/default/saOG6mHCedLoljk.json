@@ -1,0 +1,9 @@
+{
+	"id": "saOG6mHCedLoljk",
+	"json": "{\"id\":\"saOG6mHCedLoljk\",\"url\":\"https://www.slocounty.ca.gov/departments/social-services/adult-services/services\",\"loadedUrl\":\"https://www.slocounty.ca.gov/departments/social-services/adult-services/services\",\"uniqueKey\":\"https://www.slocounty.ca.gov/departments/social-services/adult-services/services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:32.941Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.slocounty.ca.gov/departments/social-services/adult-services/services",
+	"url": "https://www.slocounty.ca.gov/departments/social-services/adult-services/services"
+}

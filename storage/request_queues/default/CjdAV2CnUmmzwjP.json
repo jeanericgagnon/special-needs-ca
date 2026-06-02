@@ -1,0 +1,9 @@
+{
+	"id": "CjdAV2CnUmmzwjP",
+	"json": "{\"id\":\"CjdAV2CnUmmzwjP\",\"url\":\"https://health.ucdavis.edu/stemcellresearch/cores/vivarium.html\",\"loadedUrl\":\"https://health.ucdavis.edu/stemcellresearch/cores/vivarium.html\",\"uniqueKey\":\"https://health.ucdavis.edu/stemcellresearch/cores/vivarium.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:31.043Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/stemcellresearch/cores/vivarium.html",
+	"url": "https://health.ucdavis.edu/stemcellresearch/cores/vivarium.html"
+}

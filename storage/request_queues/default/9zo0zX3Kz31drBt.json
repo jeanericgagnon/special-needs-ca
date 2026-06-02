@@ -1,0 +1,9 @@
+{
+	"id": "9zo0zX3Kz31drBt",
+	"json": "{\"id\":\"9zo0zX3Kz31drBt\",\"url\":\"https://hr.ucdavis.edu/departments/elr/contracts-policies\",\"loadedUrl\":\"https://hr.ucdavis.edu/departments/elr/contracts-policies\",\"uniqueKey\":\"https://hr.ucdavis.edu/departments/elr/contracts-policies\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:11.251Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/departments/elr/contracts-policies",
+	"url": "https://hr.ucdavis.edu/departments/elr/contracts-policies"
+}

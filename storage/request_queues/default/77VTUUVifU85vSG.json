@@ -1,0 +1,9 @@
+{
+	"id": "77VTUUVifU85vSG",
+	"json": "{\"id\":\"77VTUUVifU85vSG\",\"url\":\"https://www.parks.ca.gov/jobs\",\"loadedUrl\":\"https://www.parks.ca.gov/jobs\",\"uniqueKey\":\"https://www.parks.ca.gov/jobs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:42.275Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.parks.ca.gov/jobs",
+	"url": "https://www.parks.ca.gov/jobs"
+}

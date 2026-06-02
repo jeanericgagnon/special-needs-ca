@@ -1,0 +1,9 @@
+{
+	"id": "uDxAPaDdj6vH6F8",
+	"json": "{\"id\":\"uDxAPaDdj6vH6F8\",\"url\":\"https://www.cde.ca.gov/ta/ac/ca/\",\"loadedUrl\":\"https://www.cde.ca.gov/re/pr/cais.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ta/ac/ca\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:01.328Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ta/ac/ca",
+	"url": "https://www.cde.ca.gov/ta/ac/ca/"
+}

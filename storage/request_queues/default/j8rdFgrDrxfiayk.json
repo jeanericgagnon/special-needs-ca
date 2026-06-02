@@ -1,0 +1,9 @@
+{
+	"id": "j8rdFgrDrxfiayk",
+	"json": "{\"id\":\"j8rdFgrDrxfiayk\",\"url\":\"https://www.globaldownsyndrome.org/mailing-list/\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/join-globals-mailing-list/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/mailing-list\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:41.404Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.globaldownsyndrome.org/mailing-list",
+	"url": "https://www.globaldownsyndrome.org/mailing-list/"
+}

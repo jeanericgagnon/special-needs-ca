@@ -1,0 +1,9 @@
+{
+	"id": "iqo8OXJLg5zErXT",
+	"json": "{\"id\":\"iqo8OXJLg5zErXT\",\"url\":\"https://hr.ucdavis.edu/departments/compensation/training\",\"loadedUrl\":\"https://hr.ucdavis.edu/departments/compensation/training\",\"uniqueKey\":\"https://hr.ucdavis.edu/departments/compensation/training\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:05.885Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/departments/compensation/training",
+	"url": "https://hr.ucdavis.edu/departments/compensation/training"
+}

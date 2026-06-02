@@ -1,0 +1,9 @@
+{
+	"id": "R1KBovIL3g31Vjm",
+	"json": "{\"id\":\"R1KBovIL3g31Vjm\",\"url\":\"https://health.ucdavis.edu/children/services/pediatric-specialty-care\",\"loadedUrl\":\"https://health.ucdavis.edu/children/services/pediatric-specialty-care\",\"uniqueKey\":\"https://health.ucdavis.edu/children/services/pediatric-specialty-care\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:50.395Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/children/services/pediatric-specialty-care",
+	"url": "https://health.ucdavis.edu/children/services/pediatric-specialty-care"
+}

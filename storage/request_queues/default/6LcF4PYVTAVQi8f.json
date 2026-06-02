@@ -1,0 +1,9 @@
+{
+	"id": "6LcF4PYVTAVQi8f",
+	"json": "{\"id\":\"6LcF4PYVTAVQi8f\",\"url\":\"https://yellowcluster.ucdavis.edu/sitemap\",\"loadedUrl\":\"https://yellowcluster.ucdavis.edu/sitemap\",\"uniqueKey\":\"https://yellowcluster.ucdavis.edu/sitemap\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:18.596Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://yellowcluster.ucdavis.edu/sitemap",
+	"url": "https://yellowcluster.ucdavis.edu/sitemap"
+}

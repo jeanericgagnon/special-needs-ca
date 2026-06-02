@@ -1,0 +1,9 @@
+{
+	"id": "M3MXthzqp5AG5zi",
+	"json": "{\"id\":\"M3MXthzqp5AG5zi\",\"url\":\"https://www2.cde.ca.gov/cacs/math\",\"loadedUrl\":\"https://www2.cde.ca.gov/cacs/math\",\"uniqueKey\":\"https://www2.cde.ca.gov/cacs/math\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:23:58.633Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www2.cde.ca.gov/cacs/math",
+	"url": "https://www2.cde.ca.gov/cacs/math"
+}

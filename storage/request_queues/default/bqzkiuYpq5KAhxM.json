@@ -1,0 +1,9 @@
+{
+	"id": "bqzkiuYpq5KAhxM",
+	"json": "{\"id\":\"bqzkiuYpq5KAhxM\",\"url\":\"https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202120220AB130&search_keywords=Educator+Effectiveness\",\"loadedUrl\":\"https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202120220AB130&search_keywords=Educator+Effectiveness\",\"uniqueKey\":\"https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202120220AB130&search_keywords=Educator+Effectiveness\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:22:46.788Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202120220AB130&search_keywords=Educator+Effectiveness",
+	"url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202120220AB130&search_keywords=Educator+Effectiveness"
+}

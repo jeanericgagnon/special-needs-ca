@@ -1,0 +1,9 @@
+{
+	"id": "sMpkLbvxpFij9zY",
+	"json": "{\"id\":\"sMpkLbvxpFij9zY\",\"url\":\"https://physicians.ucdavis.edu/details/1404/michael-mike-corwin-abdominal_imaging-adrenal_cortical-sacramento?Specialties=10481\",\"loadedUrl\":\"https://physicians.ucdavis.edu/details/1404/michael-mike-corwin-abdominal_imaging-adrenal_cortical-sacramento?Specialties=10481\",\"uniqueKey\":\"https://physicians.ucdavis.edu/details/1404/michael-mike-corwin-abdominal_imaging-adrenal_cortical-sacramento?Specialties=10481\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:57.158Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://physicians.ucdavis.edu/details/1404/michael-mike-corwin-abdominal_imaging-adrenal_cortical-sacramento?Specialties=10481",
+	"url": "https://physicians.ucdavis.edu/details/1404/michael-mike-corwin-abdominal_imaging-adrenal_cortical-sacramento?Specialties=10481"
+}

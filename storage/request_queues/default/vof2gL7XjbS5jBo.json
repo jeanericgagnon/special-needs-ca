@@ -1,0 +1,9 @@
+{
+	"id": "vof2gL7XjbS5jBo",
+	"json": "{\"id\":\"vof2gL7XjbS5jBo\",\"url\":\"https://www.parks.ca.gov/?page_id=31646#:~:text=Why%20is%20it%20called%20%22prescribed,that%20collectively%20constitute%20a%20prescription.\",\"loadedUrl\":\"https://www.parks.ca.gov/?page_id=31646#:~:text=Why%20is%20it%20called%20%22prescribed,that%20collectively%20constitute%20a%20prescription.\",\"uniqueKey\":\"https://www.parks.ca.gov?page_id=31646\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:32:33.476Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.parks.ca.gov?page_id=31646",
+	"url": "https://www.parks.ca.gov/?page_id=31646#:~:text=Why%20is%20it%20called%20%22prescribed,that%20collectively%20constitute%20a%20prescription."
+}

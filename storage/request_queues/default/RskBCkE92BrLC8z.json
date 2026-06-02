@@ -1,0 +1,9 @@
+{
+	"id": "RskBCkE92BrLC8z",
+	"json": "{\"id\":\"RskBCkE92BrLC8z\",\"url\":\"https://financeandbusiness.ucdavis.edu/finance/payroll-services/ee-resources/tax-status\",\"loadedUrl\":\"https://financeandbusiness.ucdavis.edu/finance/payroll-services/ee-resources/tax-status\",\"uniqueKey\":\"https://financeandbusiness.ucdavis.edu/finance/payroll-services/ee-resources/tax-status\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:54.965Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://financeandbusiness.ucdavis.edu/finance/payroll-services/ee-resources/tax-status",
+	"url": "https://financeandbusiness.ucdavis.edu/finance/payroll-services/ee-resources/tax-status"
+}

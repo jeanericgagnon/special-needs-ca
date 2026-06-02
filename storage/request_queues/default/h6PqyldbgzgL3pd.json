@@ -1,0 +1,9 @@
+{
+	"id": "h6PqyldbgzgL3pd",
+	"json": "{\"id\":\"h6PqyldbgzgL3pd\",\"url\":\"https://www.cde.ca.gov/sp/cd/re/ptklftradchinese.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/cd/re/ptklftradchinese.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/cd/re/ptklftradchinese.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:11.252Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/sp/cd/re/ptklftradchinese.asp",
+	"url": "https://www.cde.ca.gov/sp/cd/re/ptklftradchinese.asp"
+}

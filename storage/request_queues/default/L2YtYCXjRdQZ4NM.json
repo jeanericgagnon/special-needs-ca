@@ -1,0 +1,9 @@
+{
+	"id": "L2YtYCXjRdQZ4NM",
+	"json": "{\"id\":\"L2YtYCXjRdQZ4NM\",\"url\":\"https://give.ucdavis.edu/DEDU/EDFACRA\",\"loadedUrl\":\"https://give.ucdavis.edu/DEDU/EDFACRA\",\"uniqueKey\":\"https://give.ucdavis.edu/DEDU/EDFACRA\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:57.997Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/DEDU/EDFACRA",
+	"url": "https://give.ucdavis.edu/DEDU/EDFACRA"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "fTJyqiLR83A5B1H",
+	"json": "{\"id\":\"fTJyqiLR83A5B1H\",\"url\":\"https://search.ccl.dss.ca.gov/BackgroundCheck\",\"loadedUrl\":\"https://search.ccl.dss.ca.gov/BackgroundCheck\",\"uniqueKey\":\"https://search.ccl.dss.ca.gov/BackgroundCheck\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:08.287Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://search.ccl.dss.ca.gov/BackgroundCheck",
+	"url": "https://search.ccl.dss.ca.gov/BackgroundCheck"
+}

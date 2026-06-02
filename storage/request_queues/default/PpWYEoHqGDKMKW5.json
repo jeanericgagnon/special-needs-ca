@@ -1,0 +1,9 @@
+{
+	"id": "PpWYEoHqGDKMKW5",
+	"json": "{\"id\":\"PpWYEoHqGDKMKW5\",\"url\":\"https://www.globaldownsyndrome.org/bn/\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/bn/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/bn\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:50.543Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.globaldownsyndrome.org/bn",
+	"url": "https://www.globaldownsyndrome.org/bn/"
+}

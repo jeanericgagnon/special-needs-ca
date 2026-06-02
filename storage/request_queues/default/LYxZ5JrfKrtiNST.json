@@ -1,0 +1,9 @@
+{
+	"id": "LYxZ5JrfKrtiNST",
+	"json": "{\"id\":\"LYxZ5JrfKrtiNST\",\"url\":\"https://calable.ca.gov/news/welcome-squirmy-and-grubs\",\"loadedUrl\":\"https://calable.ca.gov/news/welcome-squirmy-and-grubs\",\"uniqueKey\":\"https://calable.ca.gov/news/welcome-squirmy-and-grubs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:55.109Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://calable.ca.gov/news/welcome-squirmy-and-grubs",
+	"url": "https://calable.ca.gov/news/welcome-squirmy-and-grubs"
+}

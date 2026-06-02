@@ -1,0 +1,9 @@
+{
+	"id": "r8ac28qvdGwE5SK",
+	"json": "{\"id\":\"r8ac28qvdGwE5SK\",\"url\":\"https://health.ucdavis.edu/psychiatry/team/1326/julie-schweitzer---psychiatry-sacramento/\",\"loadedUrl\":\"https://health.ucdavis.edu/psychiatry/team/1326/julie-schweitzer---psychiatry-sacramento/\",\"uniqueKey\":\"https://health.ucdavis.edu/psychiatry/team/1326/julie-schweitzer---psychiatry-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:57.759Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/psychiatry/team/1326/julie-schweitzer---psychiatry-sacramento",
+	"url": "https://health.ucdavis.edu/psychiatry/team/1326/julie-schweitzer---psychiatry-sacramento/"
+}

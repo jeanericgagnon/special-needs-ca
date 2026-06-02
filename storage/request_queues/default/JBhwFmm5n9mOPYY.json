@@ -1,0 +1,9 @@
+{
+	"id": "JBhwFmm5n9mOPYY",
+	"json": "{\"id\":\"JBhwFmm5n9mOPYY\",\"url\":\"http://yonelinas.faculty.ucdavis.edu/\",\"loadedUrl\":\"https://yonelinas.faculty.ucdavis.edu/\",\"uniqueKey\":\"http://yonelinas.faculty.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:09.339Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://yonelinas.faculty.ucdavis.edu",
+	"url": "http://yonelinas.faculty.ucdavis.edu/"
+}

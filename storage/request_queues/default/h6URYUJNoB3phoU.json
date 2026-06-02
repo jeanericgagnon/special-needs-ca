@@ -1,0 +1,9 @@
+{
+	"id": "h6URYUJNoB3phoU",
+	"json": "{\"id\":\"h6URYUJNoB3phoU\",\"url\":\"http://www3.cde.ca.gov/opuscds/default.aspx\",\"loadedUrl\":\"https://www3.cde.ca.gov/opuscds/default.aspx\",\"uniqueKey\":\"http://www3.cde.ca.gov/opuscds/default.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:22:30.826Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www3.cde.ca.gov/opuscds/default.aspx",
+	"url": "http://www3.cde.ca.gov/opuscds/default.aspx"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "P4mcfXvnqytkaNH",
+	"json": "{\"id\":\"P4mcfXvnqytkaNH\",\"url\":\"https://neuroscience.ucdavis.edu/tags/mind-and-brain\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/tags/mind-and-brain\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/tags/mind-and-brain\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:01.614Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://neuroscience.ucdavis.edu/tags/mind-and-brain",
+	"url": "https://neuroscience.ucdavis.edu/tags/mind-and-brain"
+}

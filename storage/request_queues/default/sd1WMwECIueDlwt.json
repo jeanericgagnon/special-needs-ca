@@ -1,0 +1,9 @@
+{
+	"id": "sd1WMwECIueDlwt",
+	"json": "{\"id\":\"sd1WMwECIueDlwt\",\"url\":\"https://irb.ucdavis.edu/project-guidance/frequently-asked-questions-for-researchers/\",\"loadedUrl\":\"https://irb.ucdavis.edu/project-guidance/frequently-asked-questions-for-researchers/\",\"uniqueKey\":\"https://irb.ucdavis.edu/project-guidance/frequently-asked-questions-for-researchers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:40.400Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://irb.ucdavis.edu/project-guidance/frequently-asked-questions-for-researchers",
+	"url": "https://irb.ucdavis.edu/project-guidance/frequently-asked-questions-for-researchers/"
+}

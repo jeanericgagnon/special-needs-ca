@@ -1,0 +1,9 @@
+{
+	"id": "B8qWRjEMRqXt2yI",
+	"json": "{\"id\":\"B8qWRjEMRqXt2yI\",\"url\":\"https://www.cdss.ca.gov/inforesources/foster-care/child-and-family-teams\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/foster-care/child-and-family-teams\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/foster-care/child-and-family-teams\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:45.221Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/inforesources/foster-care/child-and-family-teams",
+	"url": "https://www.cdss.ca.gov/inforesources/foster-care/child-and-family-teams"
+}

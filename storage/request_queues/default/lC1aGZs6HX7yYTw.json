@@ -1,0 +1,9 @@
+{
+	"id": "lC1aGZs6HX7yYTw",
+	"json": "{\"id\":\"lC1aGZs6HX7yYTw\",\"url\":\"http://cdss.ca.gov/inforesources/cdss-programs/foster-care/center-for-excellence\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/cdss-programs/foster-care/center-for-excellence\",\"uniqueKey\":\"http://cdss.ca.gov/inforesources/cdss-programs/foster-care/center-for-excellence\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:51.002Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://cdss.ca.gov/inforesources/cdss-programs/foster-care/center-for-excellence",
+	"url": "http://cdss.ca.gov/inforesources/cdss-programs/foster-care/center-for-excellence"
+}

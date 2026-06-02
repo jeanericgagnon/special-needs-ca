@@ -1,0 +1,9 @@
+{
+	"id": "yeo8JcBI6h4W4VM",
+	"json": "{\"id\":\"yeo8JcBI6h4W4VM\",\"url\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/knee-surgery\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/knee-surgery\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/knee-surgery\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:51.692Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/locations/specialty-care/knee-surgery",
+	"url": "https://health.ucdavis.edu/patients-visitors/locations/specialty-care/knee-surgery"
+}

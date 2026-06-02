@@ -1,0 +1,9 @@
+{
+	"id": "o1Qv2KoYy1JtbCt",
+	"json": "{\"id\":\"o1Qv2KoYy1JtbCt\",\"url\":\"https://health.ucdavis.edu/mind-institute/research/cene-brain-bank/cene-latin-america\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/research/cene-brain-bank/cene-latin-america\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/research/cene-brain-bank/cene-latin-america\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:26.449Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mind-institute/research/cene-brain-bank/cene-latin-america",
+	"url": "https://health.ucdavis.edu/mind-institute/research/cene-brain-bank/cene-latin-america"
+}

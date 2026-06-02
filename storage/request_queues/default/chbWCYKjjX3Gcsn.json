@@ -1,0 +1,9 @@
+{
+	"id": "chbWCYKjjX3Gcsn",
+	"json": "{\"id\":\"chbWCYKjjX3Gcsn\",\"url\":\"https://hcai.ca.gov/data-and-reports/healthcare-workforce/\",\"loadedUrl\":\"https://hcai.ca.gov/data/health-workforce/\",\"uniqueKey\":\"https://hcai.ca.gov/data-and-reports/healthcare-workforce\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T17:52:20.668Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hcai.ca.gov/data-and-reports/healthcare-workforce",
+	"url": "https://hcai.ca.gov/data-and-reports/healthcare-workforce/"
+}

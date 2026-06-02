@@ -1,0 +1,9 @@
+{
+	"id": "A7NumQeDa0kjyuJ",
+	"json": "{\"id\":\"A7NumQeDa0kjyuJ\",\"url\":\"https://osg.ca.gov/safespaces/\",\"loadedUrl\":\"https://osg.ca.gov/safespaces/\",\"uniqueKey\":\"https://osg.ca.gov/safespaces\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:48.206Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://osg.ca.gov/safespaces",
+	"url": "https://osg.ca.gov/safespaces/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "wnmgI48EZfvCBlA",
+	"json": "{\"id\":\"wnmgI48EZfvCBlA\",\"url\":\"https://www.sco.ca.gov/eo_about_func.html\",\"loadedUrl\":\"https://www.sco.ca.gov/eo_about_func.html\",\"uniqueKey\":\"https://www.sco.ca.gov/eo_about_func.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:07.843Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.sco.ca.gov/eo_about_func.html",
+	"url": "https://www.sco.ca.gov/eo_about_func.html"
+}

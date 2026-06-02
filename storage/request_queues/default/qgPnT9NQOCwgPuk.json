@@ -1,0 +1,9 @@
+{
+	"id": "qgPnT9NQOCwgPuk",
+	"json": "{\"id\":\"qgPnT9NQOCwgPuk\",\"url\":\"https://www.ucdavis.edu/about/visit/plan-your-visit\",\"loadedUrl\":\"https://www.ucdavis.edu/about/visit/plan-your-visit\",\"uniqueKey\":\"https://www.ucdavis.edu/about/visit/plan-your-visit\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:41.522Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ucdavis.edu/about/visit/plan-your-visit",
+	"url": "https://www.ucdavis.edu/about/visit/plan-your-visit"
+}

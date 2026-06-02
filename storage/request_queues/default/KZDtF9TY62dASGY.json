@@ -1,0 +1,9 @@
+{
+	"id": "KZDtF9TY62dASGY",
+	"json": "{\"id\":\"KZDtF9TY62dASGY\",\"url\":\"https://learn.rarediseases.org/login/\",\"loadedUrl\":\"https://learn.rarediseases.org/login/\",\"uniqueKey\":\"https://learn.rarediseases.org/login\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:13.336Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://learn.rarediseases.org/login",
+	"url": "https://learn.rarediseases.org/login/"
+}

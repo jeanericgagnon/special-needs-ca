@@ -1,0 +1,9 @@
+{
+	"id": "ROCev7q9AHebTi5",
+	"json": "{\"id\":\"ROCev7q9AHebTi5\",\"url\":\"https://cadeafblind.org/category/resources/\",\"loadedUrl\":\"https://cadeafblind.org/category/resources/\",\"uniqueKey\":\"https://cadeafblind.org/category/resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:51.162Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cadeafblind.org/category/resources",
+	"url": "https://cadeafblind.org/category/resources/"
+}

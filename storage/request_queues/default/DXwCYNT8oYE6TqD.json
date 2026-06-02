@@ -1,0 +1,9 @@
+{
+	"id": "DXwCYNT8oYE6TqD",
+	"json": "{\"id\":\"DXwCYNT8oYE6TqD\",\"url\":\"https://health.ucdavis.edu/neurology/research/\",\"loadedUrl\":\"https://health.ucdavis.edu/neurology/research/\",\"uniqueKey\":\"https://health.ucdavis.edu/neurology/research\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:51.791Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/neurology/research",
+	"url": "https://health.ucdavis.edu/neurology/research/"
+}

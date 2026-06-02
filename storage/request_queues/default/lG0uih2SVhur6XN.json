@@ -1,0 +1,9 @@
+{
+	"id": "lG0uih2SVhur6XN",
+	"json": "{\"id\":\"lG0uih2SVhur6XN\",\"url\":\"https://www.calhr.ca.gov/about-calhr/divisions-programs/personnel-management/salaries-compensation/\",\"loadedUrl\":\"https://www.calhr.ca.gov/about-calhr/divisions-programs/personnel-management/salaries-compensation/\",\"uniqueKey\":\"https://www.calhr.ca.gov/about-calhr/divisions-programs/personnel-management/salaries-compensation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:13.456Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.calhr.ca.gov/about-calhr/divisions-programs/personnel-management/salaries-compensation",
+	"url": "https://www.calhr.ca.gov/about-calhr/divisions-programs/personnel-management/salaries-compensation/"
+}

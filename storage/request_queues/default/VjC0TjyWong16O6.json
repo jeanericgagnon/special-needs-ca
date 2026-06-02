@@ -1,0 +1,9 @@
+{
+	"id": "VjC0TjyWong16O6",
+	"json": "{\"id\":\"VjC0TjyWong16O6\",\"url\":\"https://scdd.ca.gov/category/content-types/events/\",\"loadedUrl\":\"https://scdd.ca.gov/category/content-types/events/\",\"uniqueKey\":\"https://scdd.ca.gov/category/content-types/events\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:05:25.994Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/category/content-types/events",
+	"url": "https://scdd.ca.gov/category/content-types/events/"
+}

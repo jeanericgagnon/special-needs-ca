@@ -1,0 +1,9 @@
+{
+	"id": "lBWFU8fomighPd5",
+	"json": "{\"id\":\"lBWFU8fomighPd5\",\"url\":\"https://cdss.ca.gov/inforesources/Rules-Regulations/Legislation-and-Regulations/Community-Care-Licensing-Provider-Letters\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/letters-regulations/legislation-and-regulations/community-care-licensing-provider-letters\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Rules-Regulations/Legislation-and-Regulations/Community-Care-Licensing-Provider-Letters\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:47.063Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/Rules-Regulations/Legislation-and-Regulations/Community-Care-Licensing-Provider-Letters",
+	"url": "https://cdss.ca.gov/inforesources/Rules-Regulations/Legislation-and-Regulations/Community-Care-Licensing-Provider-Letters"
+}

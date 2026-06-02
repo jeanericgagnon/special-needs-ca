@@ -1,0 +1,9 @@
+{
+	"id": "26pbkk0HcsgiO7m",
+	"json": "{\"id\":\"26pbkk0HcsgiO7m\",\"url\":\"https://www.chhs.ca.gov/blog/2020/01/28/pdgr/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2020/01/28/pdgr/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2020/01/28/pdgr\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:16.347Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chhs.ca.gov/blog/2020/01/28/pdgr",
+	"url": "https://www.chhs.ca.gov/blog/2020/01/28/pdgr/"
+}

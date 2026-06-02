@@ -1,0 +1,9 @@
+{
+	"id": "Kgj2YsOdDoEF1wG",
+	"json": "{\"id\":\"Kgj2YsOdDoEF1wG\",\"url\":\"https://www.cdss.ca.gov/inforesources/CDSS-Programs/CalWORKs-Child-Care\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/calworks-child-care\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/CDSS-Programs/CalWORKs-Child-Care\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:35.436Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/inforesources/CDSS-Programs/CalWORKs-Child-Care",
+	"url": "https://www.cdss.ca.gov/inforesources/CDSS-Programs/CalWORKs-Child-Care"
+}

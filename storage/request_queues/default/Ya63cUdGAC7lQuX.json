@@ -1,0 +1,9 @@
+{
+	"id": "Ya63cUdGAC7lQuX",
+	"json": "{\"id\":\"Ya63cUdGAC7lQuX\",\"url\":\"https://www.vetmed.ucdavis.edu/about/leadership\",\"loadedUrl\":\"https://www.vetmed.ucdavis.edu/about/leadership\",\"uniqueKey\":\"https://www.vetmed.ucdavis.edu/about/leadership\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:17.568Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.vetmed.ucdavis.edu/about/leadership",
+	"url": "https://www.vetmed.ucdavis.edu/about/leadership"
+}

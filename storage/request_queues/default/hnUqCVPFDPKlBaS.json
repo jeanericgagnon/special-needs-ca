@@ -1,0 +1,9 @@
+{
+	"id": "hnUqCVPFDPKlBaS",
+	"json": "{\"id\":\"hnUqCVPFDPKlBaS\",\"url\":\"https://www.chhs.ca.gov/blog/2025/04/04/el-plan-principal-para-mejorar-el-apoyo-a-las-personas-con-discapacidades-del-desarrollo/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2025/04/04/el-plan-principal-para-mejorar-el-apoyo-a-las-personas-con-discapacidades-del-desarrollo/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2025/04/04/el-plan-principal-para-mejorar-el-apoyo-a-las-personas-con-discapacidades-del-desarrollo\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:00.806Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chhs.ca.gov/blog/2025/04/04/el-plan-principal-para-mejorar-el-apoyo-a-las-personas-con-discapacidades-del-desarrollo",
+	"url": "https://www.chhs.ca.gov/blog/2025/04/04/el-plan-principal-para-mejorar-el-apoyo-a-las-personas-con-discapacidades-del-desarrollo/"
+}

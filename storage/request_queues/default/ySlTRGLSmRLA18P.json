@@ -1,0 +1,9 @@
+{
+	"id": "ySlTRGLSmRLA18P",
+	"json": "{\"id\":\"ySlTRGLSmRLA18P\",\"url\":\"https://www.cde.ca.gov/ta/tg/ep/elpacdomaininfo.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=29ceea6c-415f-478f-8d88-ad18b52fef40&ssb=20510268837&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fta%2Ftg%2Fep%2Felpacdomaininfo.asp&ssi=df580c5f-ctxv-478a-b88b-d906ecc0c3ca&ssk=botmanager_support@radware.com&ssm=11853608131823250108156836646304&ssn=3954ac57029bc5d4db42123d3281000aff61538e629c-a9c8-410b-a542ba&sso=37052ff2-856f9c010515ae6bcd8778ccd9ebaca799f67c9e9b030048&ssp=19454975251780375842178030265161238&ssq=51071122682950201482526829266387582406299&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDA1MzhlNjI5Yy1hOWM4LTQxMGItYWZmMi04NTZmOWMwMTA1MTUxLTE3ODAzMjY4Mjk0NzAwLTAwM2E1ODEwMWI4OTZiNWZlOTgxMCIsInV6bXgiOiI3ZjkwMDBhNWIyYmIxMy1lMjc0LTRiZTAtYTRhZi05NGE5OTc4YWY1MmQxLTE3ODAzMjY4Mjk0NzAwLWRjMTc5NTdhNzkzODg2ZDYxMCIsInJkIjoiY2EuZ292In0=\",\"uniqueKey\":\"https://www.cde.ca.gov/ta/tg/ep/elpacdomaininfo.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:13:49.588Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ta/tg/ep/elpacdomaininfo.asp",
+	"url": "https://www.cde.ca.gov/ta/tg/ep/elpacdomaininfo.asp"
+}

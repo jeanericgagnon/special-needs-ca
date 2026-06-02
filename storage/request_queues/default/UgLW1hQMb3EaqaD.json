@@ -1,0 +1,9 @@
+{
+	"id": "UgLW1hQMb3EaqaD",
+	"json": "{\"id\":\"UgLW1hQMb3EaqaD\",\"url\":\"https://www.cdii.ca.gov/consumer-reports/other-health-care-reports/\",\"loadedUrl\":\"https://www.cdii.ca.gov/consumer-reports/other-health-care-reports/\",\"uniqueKey\":\"https://www.cdii.ca.gov/consumer-reports/other-health-care-reports\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:28:33.901Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdii.ca.gov/consumer-reports/other-health-care-reports",
+	"url": "https://www.cdii.ca.gov/consumer-reports/other-health-care-reports/"
+}

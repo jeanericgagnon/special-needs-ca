@@ -1,0 +1,9 @@
+{
+	"id": "CHmZfoetu3LiXD6",
+	"json": "{\"id\":\"CHmZfoetu3LiXD6\",\"url\":\"https://www.chhs.ca.gov/blog/tag/data-playbook/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/tag/data-playbook/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/tag/data-playbook\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:31.973Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chhs.ca.gov/blog/tag/data-playbook",
+	"url": "https://www.chhs.ca.gov/blog/tag/data-playbook/"
+}

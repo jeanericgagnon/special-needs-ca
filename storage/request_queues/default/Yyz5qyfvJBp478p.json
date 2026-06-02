@@ -1,0 +1,9 @@
+{
+	"id": "Yyz5qyfvJBp478p",
+	"json": "{\"id\":\"Yyz5qyfvJBp478p\",\"url\":\"https://health.ucdavis.edu/cancer/specialties/clinical-care-team\",\"loadedUrl\":\"https://health.ucdavis.edu/cancer/specialties/clinical-care-team\",\"uniqueKey\":\"https://health.ucdavis.edu/cancer/specialties/clinical-care-team\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:19.652Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/cancer/specialties/clinical-care-team",
+	"url": "https://health.ucdavis.edu/cancer/specialties/clinical-care-team"
+}

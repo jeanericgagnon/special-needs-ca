@@ -1,0 +1,9 @@
+{
+	"id": "zXzPqyK3TlQR5tz",
+	"json": "{\"id\":\"zXzPqyK3TlQR5tz\",\"url\":\"https://www.cdph.ca.gov/Programs/OPA/Pages/Communications-Toolkits/Communications-Toolkit.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/OPA/Pages/Communications-Toolkits/Communications-Toolkit.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/OPA/Pages/Communications-Toolkits/Communications-Toolkit.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:58.452Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/OPA/Pages/Communications-Toolkits/Communications-Toolkit.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/OPA/Pages/Communications-Toolkits/Communications-Toolkit.aspx"
+}

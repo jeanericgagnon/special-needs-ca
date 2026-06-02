@@ -1,0 +1,9 @@
+{
+	"id": "CtpdZk6QLgObGZD",
+	"json": "{\"id\":\"CtpdZk6QLgObGZD\",\"url\":\"https://www.globaldownsyndrome.org/ja/%e3%82%b9%e3%83%88%e3%83%bc%e3%83%aa%e3%83%bc/history/\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/our-story/history/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/ja/%e3%82%b9%e3%83%88%e3%83%bc%e3%83%aa%e3%83%bc/history\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:31:15.826Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.globaldownsyndrome.org/ja/%e3%82%b9%e3%83%88%e3%83%bc%e3%83%aa%e3%83%bc/history",
+	"url": "https://www.globaldownsyndrome.org/ja/%e3%82%b9%e3%83%88%e3%83%bc%e3%83%aa%e3%83%bc/history/"
+}

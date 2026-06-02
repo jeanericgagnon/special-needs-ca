@@ -1,0 +1,9 @@
+{
+	"id": "17CYqfh1MgEMmmV",
+	"json": "{\"id\":\"17CYqfh1MgEMmmV\",\"url\":\"https://ltg.ca.gov/2026/01/02/lieutenant-governor-eleni-kounalakiss-2025-year-in-review/\",\"loadedUrl\":\"https://ltg.ca.gov/2026/01/02/lieutenant-governor-eleni-kounalakiss-2025-year-in-review/\",\"uniqueKey\":\"https://ltg.ca.gov/2026/01/02/lieutenant-governor-eleni-kounalakiss-2025-year-in-review\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:48.385Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://ltg.ca.gov/2026/01/02/lieutenant-governor-eleni-kounalakiss-2025-year-in-review",
+	"url": "https://ltg.ca.gov/2026/01/02/lieutenant-governor-eleni-kounalakiss-2025-year-in-review/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "6Bj4RsNiADzTY5I",
+	"json": "{\"id\":\"6Bj4RsNiADzTY5I\",\"url\":\"https://financeandbusiness.ucdavis.edu/bia/institutional-analysis/surveys/conduct\",\"loadedUrl\":\"https://financeandbusiness.ucdavis.edu/bia/institutional-analysis/surveys/conduct\",\"uniqueKey\":\"https://financeandbusiness.ucdavis.edu/bia/institutional-analysis/surveys/conduct\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:52.905Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://financeandbusiness.ucdavis.edu/bia/institutional-analysis/surveys/conduct",
+	"url": "https://financeandbusiness.ucdavis.edu/bia/institutional-analysis/surveys/conduct"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "672BVzAkMLQAHaY",
+	"json": "{\"id\":\"672BVzAkMLQAHaY\",\"url\":\"https://health.ucdavis.edu/children/team/5/mohammad-malaekeh-pediatrics-general-roseville\",\"loadedUrl\":\"https://health.ucdavis.edu/children/team/5/mohammad-malaekeh-pediatrics-general-roseville\",\"uniqueKey\":\"https://health.ucdavis.edu/children/team/5/mohammad-malaekeh-pediatrics-general-roseville\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:10.711Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/children/team/5/mohammad-malaekeh-pediatrics-general-roseville",
+	"url": "https://health.ucdavis.edu/children/team/5/mohammad-malaekeh-pediatrics-general-roseville"
+}

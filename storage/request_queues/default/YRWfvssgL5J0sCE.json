@@ -1,0 +1,9 @@
+{
+	"id": "YRWfvssgL5J0sCE",
+	"json": "{\"id\":\"YRWfvssgL5J0sCE\",\"url\":\"https://health.ucdavis.edu/ctsc/area/education/bircwh/bircwh-scholars\",\"loadedUrl\":\"https://health.ucdavis.edu/ctsc/area/education/bircwh/bircwh-scholars\",\"uniqueKey\":\"https://health.ucdavis.edu/ctsc/area/education/bircwh/bircwh-scholars\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:45.422Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/ctsc/area/education/bircwh/bircwh-scholars",
+	"url": "https://health.ucdavis.edu/ctsc/area/education/bircwh/bircwh-scholars"
+}

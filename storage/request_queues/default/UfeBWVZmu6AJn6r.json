@@ -1,0 +1,9 @@
+{
+	"id": "UfeBWVZmu6AJn6r",
+	"json": "{\"id\":\"UfeBWVZmu6AJn6r\",\"url\":\"https://learn.rarediseases.org/courses/de-los-registros-a-la-investigacion-el-sentido-detras-de-los-datos-sobre-la-salud-para-enfermedades-raras/\",\"loadedUrl\":\"https://learn.rarediseases.org/courses/de-los-registros-a-la-investigacion-el-sentido-detras-de-los-datos-sobre-la-salud-para-enfermedades-raras/\",\"uniqueKey\":\"https://learn.rarediseases.org/courses/de-los-registros-a-la-investigacion-el-sentido-detras-de-los-datos-sobre-la-salud-para-enfermedades-raras\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:09.871Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://learn.rarediseases.org/courses/de-los-registros-a-la-investigacion-el-sentido-detras-de-los-datos-sobre-la-salud-para-enfermedades-raras",
+	"url": "https://learn.rarediseases.org/courses/de-los-registros-a-la-investigacion-el-sentido-detras-de-los-datos-sobre-la-salud-para-enfermedades-raras/"
+}

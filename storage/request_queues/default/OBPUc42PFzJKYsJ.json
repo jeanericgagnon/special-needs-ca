@@ -1,0 +1,9 @@
+{
+	"id": "OBPUc42PFzJKYsJ",
+	"json": "{\"id\":\"OBPUc42PFzJKYsJ\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/43199/ambika-chidambaram-pediatric_pulmonology-sleep_medicine-sacramento?FreeText%3aLast+name=Chidambaram\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/43199/ambika-chidambaram-pediatric_pulmonology-sleep_medicine-sacramento?FreeText%3aLast+name=Chidambaram\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/43199/ambika-chidambaram-pediatric_pulmonology-sleep_medicine-sacramento?FreeText%3ALast+name=Chidambaram\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:18.374Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/43199/ambika-chidambaram-pediatric_pulmonology-sleep_medicine-sacramento?FreeText%3ALast+name=Chidambaram",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/43199/ambika-chidambaram-pediatric_pulmonology-sleep_medicine-sacramento?FreeText%3aLast+name=Chidambaram"
+}

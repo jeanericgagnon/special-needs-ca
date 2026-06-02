@@ -1,0 +1,9 @@
+{
+	"id": "5GNTgpjMDsc6MnJ",
+	"json": "{\"id\":\"5GNTgpjMDsc6MnJ\",\"url\":\"https://hpa.ucdavis.edu/\",\"loadedUrl\":\"https://hpa.ucdavis.edu/\",\"uniqueKey\":\"https://hpa.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:14.479Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hpa.ucdavis.edu",
+	"url": "https://hpa.ucdavis.edu/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "sEmv8R5LNUx1iUW",
+	"json": "{\"id\":\"sEmv8R5LNUx1iUW\",\"url\":\"https://health.ucdavis.edu/children/services/fetal-care-treatment-center/support-resources\",\"loadedUrl\":\"https://health.ucdavis.edu/children/services/fetal-care-treatment-center/support-resources\",\"uniqueKey\":\"https://health.ucdavis.edu/children/services/fetal-care-treatment-center/support-resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:00.260Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/children/services/fetal-care-treatment-center/support-resources",
+	"url": "https://health.ucdavis.edu/children/services/fetal-care-treatment-center/support-resources"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "5QJBmxaTneTl6fz",
+	"json": "{\"id\":\"5QJBmxaTneTl6fz\",\"url\":\"https://health.ucdavis.edu/leadership/bios/BruceHall\",\"loadedUrl\":\"https://health.ucdavis.edu/leadership/bios/BruceHall\",\"uniqueKey\":\"https://health.ucdavis.edu/leadership/bios/BruceHall\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:07.517Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/leadership/bios/BruceHall",
+	"url": "https://health.ucdavis.edu/leadership/bios/BruceHall"
+}

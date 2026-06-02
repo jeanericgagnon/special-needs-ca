@@ -1,0 +1,9 @@
+{
+	"id": "bj34NPSFuWcNTF7",
+	"json": "{\"id\":\"bj34NPSFuWcNTF7\",\"url\":\"https://cdss.ca.gov/inforesources/OCAP/How-You-Can-Help\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/ocap/how-you-can-help\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/OCAP/How-You-Can-Help\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:21.792Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/OCAP/How-You-Can-Help",
+	"url": "https://cdss.ca.gov/inforesources/OCAP/How-You-Can-Help"
+}

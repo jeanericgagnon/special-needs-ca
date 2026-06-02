@@ -1,0 +1,9 @@
+{
+	"id": "80g4Rs1lanrjK9Y",
+	"json": "{\"id\":\"80g4Rs1lanrjK9Y\",\"url\":\"https://cdss.ca.gov/county-Offices\",\"loadedUrl\":\"https://cdss.ca.gov/county-offices\",\"uniqueKey\":\"https://cdss.ca.gov/county-Offices\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:11.368Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/county-Offices",
+	"url": "https://cdss.ca.gov/county-Offices"
+}

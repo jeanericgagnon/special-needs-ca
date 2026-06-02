@@ -1,0 +1,9 @@
+{
+	"id": "cckw9tUEq7pjb7r",
+	"json": "{\"id\":\"cckw9tUEq7pjb7r\",\"url\":\"https://aggiedash.ucdavis.edu/views/TalentAcquisitionMetricsHealth/TalentAcquisitionMetrics\",\"loadedUrl\":\"https://login.microsoftonline.com/a8046f64-66c0-4f00-9046-c8daf92ff62b/oauth2/authorize?response_type=code&client_id=0bc518cb-dddb-4e7a-9448-b4f67f70dac4&scope=openid&nonce=14ddeb32-b477-40f8-9da2-09c8ef557d41&redirect_uri=https%3a%2f%2faggiedash.ucdavis.edu%2f&state=AppProxyState%3a%7b%22InvalidTokenRetry%22%3anull%2c%22IsMsofba%22%3afalse%2c%22OriginalRawUrl%22%3a%22https%3a%5c%2f%5c%2faggiedash.ucdavis.edu%5c%2fviews%5c%2fTalentAcquisitionMetricsHealth%5c%2fTalentAcquisitionMetrics%22%2c%22RequestProfileId%22%3anull%2c%22SessionId%22%3a%2239b569c2-0c58-41a4-b437-5007bc2a7120%22%7d%23EndOfStateParam%23&client-request-id=39b569c2-0c58-41a4-b437-5007bc2a7120&claims=%7b%22id_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22CP1%22%5d%7d%7d%7d\",\"uniqueKey\":\"https://aggiedash.ucdavis.edu/views/TalentAcquisitionMetricsHealth/TalentAcquisitionMetrics\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T23:02:31.598Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://aggiedash.ucdavis.edu/views/TalentAcquisitionMetricsHealth/TalentAcquisitionMetrics",
+	"url": "https://aggiedash.ucdavis.edu/views/TalentAcquisitionMetricsHealth/TalentAcquisitionMetrics"
+}

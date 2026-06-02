@@ -1,0 +1,9 @@
+{
+	"id": "1Dy3Gfr0yzcmDrE",
+	"json": "{\"id\":\"1Dy3Gfr0yzcmDrE\",\"url\":\"https://www.globaldownsyndrome.org/uk/research-medical-care/why-is-research-important/\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/uk/research-medical-care/why-is-research-important/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/uk/research-medical-care/why-is-research-important\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:30:24.548Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.globaldownsyndrome.org/uk/research-medical-care/why-is-research-important",
+	"url": "https://www.globaldownsyndrome.org/uk/research-medical-care/why-is-research-important/"
+}

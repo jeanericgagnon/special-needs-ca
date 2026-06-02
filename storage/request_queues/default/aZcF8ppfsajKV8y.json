@@ -1,0 +1,9 @@
+{
+	"id": "aZcF8ppfsajKV8y",
+	"json": "{\"id\":\"aZcF8ppfsajKV8y\",\"url\":\"https://www.calcareers.ca.gov/CalHRPublic/Jobs/Students.aspx\",\"loadedUrl\":\"https://calcareers.ca.gov/CalHRPublic/Jobs/Students.aspx\",\"uniqueKey\":\"https://www.calcareers.ca.gov/CalHRPublic/Jobs/Students.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:17.872Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.calcareers.ca.gov/CalHRPublic/Jobs/Students.aspx",
+	"url": "https://www.calcareers.ca.gov/CalHRPublic/Jobs/Students.aspx"
+}

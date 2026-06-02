@@ -1,0 +1,9 @@
+{
+	"id": "enR94UpWKzK3imW",
+	"json": "{\"id\":\"enR94UpWKzK3imW\",\"url\":\"https://rarediseases.org/patient-assistance-programs/financial-assistance/\",\"loadedUrl\":\"https://rarediseases.org/patient-assistance-programs/financial-assistance/\",\"uniqueKey\":\"https://rarediseases.org/patient-assistance-programs/financial-assistance\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:57:22.340Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/patient-assistance-programs/financial-assistance",
+	"url": "https://rarediseases.org/patient-assistance-programs/financial-assistance/"
+}

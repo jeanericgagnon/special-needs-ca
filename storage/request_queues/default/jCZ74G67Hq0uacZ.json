@@ -1,0 +1,9 @@
+{
+	"id": "jCZ74G67Hq0uacZ",
+	"json": "{\"id\":\"jCZ74G67Hq0uacZ\",\"url\":\"https://health.ucdavis.edu/neurology/news/\",\"loadedUrl\":\"https://health.ucdavis.edu/neurology/news/\",\"uniqueKey\":\"https://health.ucdavis.edu/neurology/news\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:52.680Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/neurology/news",
+	"url": "https://health.ucdavis.edu/neurology/news/"
+}

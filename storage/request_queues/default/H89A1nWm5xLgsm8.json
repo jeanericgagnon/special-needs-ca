@@ -1,0 +1,9 @@
+{
+	"id": "H89A1nWm5xLgsm8",
+	"json": "{\"id\":\"H89A1nWm5xLgsm8\",\"url\":\"https://rarediseases.org/rare-disease-day/become-a-sponsor/\",\"loadedUrl\":\"https://rarediseases.org/rare-disease-day/become-a-sponsor/\",\"uniqueKey\":\"https://rarediseases.org/rare-disease-day/become-a-sponsor\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:38.264Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/rare-disease-day/become-a-sponsor",
+	"url": "https://rarediseases.org/rare-disease-day/become-a-sponsor/"
+}

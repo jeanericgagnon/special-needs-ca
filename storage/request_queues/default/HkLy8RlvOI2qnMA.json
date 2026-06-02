@@ -1,0 +1,9 @@
+{
+	"id": "HkLy8RlvOI2qnMA",
+	"json": "{\"id\":\"HkLy8RlvOI2qnMA\",\"url\":\"https://www.calhr.ca.gov/employees/Pages/salary-and-benefits.aspx\",\"loadedUrl\":\"http://www.calhr.ca.gov/about-calhr/divisions-programs/personnel-management/salaries-compensation/\",\"uniqueKey\":\"https://www.calhr.ca.gov/employees/Pages/salary-and-benefits.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:45.956Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.calhr.ca.gov/employees/Pages/salary-and-benefits.aspx",
+	"url": "https://www.calhr.ca.gov/employees/Pages/salary-and-benefits.aspx"
+}

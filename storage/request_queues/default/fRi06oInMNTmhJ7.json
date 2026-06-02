@@ -1,0 +1,9 @@
+{
+	"id": "fRi06oInMNTmhJ7",
+	"json": "{\"id\":\"fRi06oInMNTmhJ7\",\"url\":\"https://scdd.ca.gov/sdm-tap-resources/finding-the-right-fit-decision-making-supports-and-guardianship/\",\"loadedUrl\":\"https://scdd.ca.gov/sdm-tap-resources/finding-the-right-fit-decision-making-supports-and-guardianship/\",\"uniqueKey\":\"https://scdd.ca.gov/sdm-tap-resources/finding-the-right-fit-decision-making-supports-and-guardianship\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:19:34.775Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/sdm-tap-resources/finding-the-right-fit-decision-making-supports-and-guardianship",
+	"url": "https://scdd.ca.gov/sdm-tap-resources/finding-the-right-fit-decision-making-supports-and-guardianship/"
+}

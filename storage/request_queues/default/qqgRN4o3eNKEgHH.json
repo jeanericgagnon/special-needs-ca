@@ -1,0 +1,9 @@
+{
+	"id": "qqgRN4o3eNKEgHH",
+	"json": "{\"id\":\"qqgRN4o3eNKEgHH\",\"url\":\"https://cdss.ca.gov/inforesources/Community-Care/Other-Links-and-Partner-Agencies\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/community-care/other-links-and-partner-agencies\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Community-Care/Other-Links-and-Partner-Agencies\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:31.302Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/Community-Care/Other-Links-and-Partner-Agencies",
+	"url": "https://cdss.ca.gov/inforesources/Community-Care/Other-Links-and-Partner-Agencies"
+}

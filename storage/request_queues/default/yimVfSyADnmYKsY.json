@@ -1,0 +1,9 @@
+{
+	"id": "yimVfSyADnmYKsY",
+	"json": "{\"id\":\"yimVfSyADnmYKsY\",\"url\":\"https://alumni.ucdavis.edu/board-directors\",\"loadedUrl\":\"https://alumni.ucdavis.edu/board-directors\",\"uniqueKey\":\"https://alumni.ucdavis.edu/board-directors\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:06.582Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://alumni.ucdavis.edu/board-directors",
+	"url": "https://alumni.ucdavis.edu/board-directors"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "FglWvXdooIiPR35",
+	"json": "{\"id\":\"FglWvXdooIiPR35\",\"url\":\"https://health.ucdavis.edu/leadership/bios/cavanagh\",\"loadedUrl\":\"https://health.ucdavis.edu/leadership/bios/cavanagh\",\"uniqueKey\":\"https://health.ucdavis.edu/leadership/bios/cavanagh\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:07.129Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/leadership/bios/cavanagh",
+	"url": "https://health.ucdavis.edu/leadership/bios/cavanagh"
+}

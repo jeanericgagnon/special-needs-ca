@@ -1,0 +1,9 @@
+{
+	"id": "iOqmd2KWVqHymPn",
+	"json": "{\"id\":\"iOqmd2KWVqHymPn\",\"url\":\"https://rarediseases.org/advancing-research/resources-for-patients/\",\"loadedUrl\":\"https://rarediseases.org/clinicians-researchers/resources-for-patients/\",\"uniqueKey\":\"https://rarediseases.org/advancing-research/resources-for-patients\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:56:51.591Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/advancing-research/resources-for-patients",
+	"url": "https://rarediseases.org/advancing-research/resources-for-patients/"
+}

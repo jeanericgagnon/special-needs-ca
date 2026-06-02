@@ -1,0 +1,9 @@
+{
+	"id": "AfsFcEDJTsg5fB4",
+	"json": "{\"id\":\"AfsFcEDJTsg5fB4\",\"url\":\"https://health.ucdavis.edu/faculty-development/\",\"loadedUrl\":\"https://health.ucdavis.edu/faculty-development/\",\"uniqueKey\":\"https://health.ucdavis.edu/faculty-development\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:15.744Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/faculty-development",
+	"url": "https://health.ucdavis.edu/faculty-development/"
+}

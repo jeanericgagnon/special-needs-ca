@@ -1,0 +1,9 @@
+{
+	"id": "90lBq7Dif5FK5Si",
+	"json": "{\"id\":\"90lBq7Dif5FK5Si\",\"url\":\"https://health.ucdavis.edu/children/team/270/jonathan-ducore-pediatric-hematologyoncology-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/children/team/270/jonathan-ducore-pediatric-hematologyoncology-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/children/team/270/jonathan-ducore-pediatric-hematologyoncology-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:12.756Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/children/team/270/jonathan-ducore-pediatric-hematologyoncology-sacramento",
+	"url": "https://health.ucdavis.edu/children/team/270/jonathan-ducore-pediatric-hematologyoncology-sacramento"
+}

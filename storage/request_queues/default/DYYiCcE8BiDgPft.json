@@ -1,0 +1,9 @@
+{
+	"id": "DYYiCcE8BiDgPft",
+	"json": "{\"id\":\"DYYiCcE8BiDgPft\",\"url\":\"https://cnprc.ucdavis.edu/research-units-cnprc\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/research-units-cnprc\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/research-units-cnprc\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:12.335Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cnprc.ucdavis.edu/research-units-cnprc",
+	"url": "https://cnprc.ucdavis.edu/research-units-cnprc"
+}

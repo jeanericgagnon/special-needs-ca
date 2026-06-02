@@ -1,0 +1,9 @@
+{
+	"id": "dVQQO86UfsJYDx7",
+	"json": "{\"id\":\"dVQQO86UfsJYDx7\",\"url\":\"https://www.cde.ca.gov/fg/aa/pa/papayschedule.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=f5340853-6c72-4b2d-b0fe-604aec62a47d&ssb=35278248500&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Ffg%2Faa%2Fpa%2Fpapayschedule.asp&ssi=8ff1b713-ctxv-4632-8f40-f0ecf3c912d6&ssk=botmanager_support@radware.com&ssm=58700068497327070132224203008658&ssn=27c0f701f1f956723e01ed34cbd9d58676a8ad89bacc-563c-4c2b-bbe789&sso=73e51f4a-896207e4481d9a9c4fe71ef5a41b1c8fc8ff9c070af2e57d&ssp=10261744291780309768178031768829686&ssq=57479102735656973368827341264258268682684&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsIl9fdXptZiI6IjdmOTAwMGFkODliYWNjLTU2M2MtNGMyYi1iZjRhLTg5NjIwN2U0NDgxZDEtMTc4MDMyNzM0MTQ1ODE0OTcyLTAwM2YzMzk3N2Q2Y2M5NDkzNDUxMyIsInV6bXgiOiI3ZjkwMDA4MGFjMGZiOC05MWRlLTQ0NmItYTQxNy1mMzVkOGVhYzdlZWExLTE3ODAzMjczNDE0NTgxNDk3Mi04MGU5ZDIxOWM0MDVmZWVlMTMifQ==\",\"uniqueKey\":\"https://www.cde.ca.gov/fg/aa/pa/papayschedule.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:22:36.519Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/fg/aa/pa/papayschedule.asp",
+	"url": "https://www.cde.ca.gov/fg/aa/pa/papayschedule.asp"
+}

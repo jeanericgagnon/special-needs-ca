@@ -1,0 +1,9 @@
+{
+	"id": "yz88cx7BNi6pGjl",
+	"json": "{\"id\":\"yz88cx7BNi6pGjl\",\"url\":\"https://cdss.ca.gov/inforesources/Data-Portal/State-Hearings-Data-Statistics\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/data-portal/state-hearings-data-statistics\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Data-Portal/State-Hearings-Data-Statistics\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:58:07.790Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/Data-Portal/State-Hearings-Data-Statistics",
+	"url": "https://cdss.ca.gov/inforesources/Data-Portal/State-Hearings-Data-Statistics"
+}

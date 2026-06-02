@@ -1,0 +1,9 @@
+{
+	"id": "I6M0ng7VVSr5qY4",
+	"json": "{\"id\":\"I6M0ng7VVSr5qY4\",\"url\":\"https://neuroscience.ucdavis.edu/tags/psychology\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/tags/psychology\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/tags/psychology\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:00.138Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://neuroscience.ucdavis.edu/tags/psychology",
+	"url": "https://neuroscience.ucdavis.edu/tags/psychology"
+}

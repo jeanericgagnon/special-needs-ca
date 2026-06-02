@@ -1,0 +1,9 @@
+{
+	"id": "UsVcq9W4VJ6g85b",
+	"json": "{\"id\":\"UsVcq9W4VJ6g85b\",\"url\":\"https://www.cde.ca.gov/fg/aa/co/ca26assurancestoc.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/fg/aa/co/ca26assurancestoc.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/fg/aa/co/ca26assurancestoc.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:22:28.648Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/fg/aa/co/ca26assurancestoc.asp",
+	"url": "https://www.cde.ca.gov/fg/aa/co/ca26assurancestoc.asp"
+}

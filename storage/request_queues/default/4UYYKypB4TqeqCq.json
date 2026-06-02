@@ -1,0 +1,9 @@
+{
+	"id": "4UYYKypB4TqeqCq",
+	"json": "{\"id\":\"4UYYKypB4TqeqCq\",\"url\":\"https://www.ssa.gov/life-events/need-help-managing-money\",\"loadedUrl\":\"https://www.ssa.gov/life-events/need-help-managing-money\",\"uniqueKey\":\"https://www.ssa.gov/life-events/need-help-managing-money\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:32.623Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ssa.gov/life-events/need-help-managing-money",
+	"url": "https://www.ssa.gov/life-events/need-help-managing-money"
+}

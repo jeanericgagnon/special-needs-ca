@@ -1,0 +1,9 @@
+{
+	"id": "jrmy12UDbMiiavT",
+	"json": "{\"id\":\"jrmy12UDbMiiavT\",\"url\":\"https://www.dds.ca.gov/rc/vendor-provider/rate-study-implementation/rate-model-implementation-frequently-asked-questions/\",\"loadedUrl\":\"https://www.dds.ca.gov/rc/vendor-provider/rate-reform/rate-model-implementation-frequently-asked-questions/\",\"uniqueKey\":\"https://www.dds.ca.gov/rc/vendor-provider/rate-study-implementation/rate-model-implementation-frequently-asked-questions\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:07:17.973Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/rc/vendor-provider/rate-study-implementation/rate-model-implementation-frequently-asked-questions",
+	"url": "https://www.dds.ca.gov/rc/vendor-provider/rate-study-implementation/rate-model-implementation-frequently-asked-questions/"
+}

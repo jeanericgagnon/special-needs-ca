@@ -1,0 +1,9 @@
+{
+	"id": "iLJm5eQ4zUsCL2r",
+	"json": "{\"id\":\"iLJm5eQ4zUsCL2r\",\"url\":\"https://www.ucdavis.edu/health/news/spina-bifida-clinical-trial\",\"loadedUrl\":\"https://www.ucdavis.edu/health/news/spina-bifida-clinical-trial\",\"uniqueKey\":\"https://www.ucdavis.edu/health/news/spina-bifida-clinical-trial\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:59.986Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ucdavis.edu/health/news/spina-bifida-clinical-trial",
+	"url": "https://www.ucdavis.edu/health/news/spina-bifida-clinical-trial"
+}

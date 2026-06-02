@@ -1,0 +1,9 @@
+{
+	"id": "ebq6pO7iSD2RJoa",
+	"json": "{\"id\":\"ebq6pO7iSD2RJoa\",\"url\":\"https://dmv.ca.gov/portal/customer-service/payments-refunds/\",\"loadedUrl\":\"https://www.dmv.ca.gov/portal/customer-service/payments-refunds/\",\"uniqueKey\":\"https://dmv.ca.gov/portal/customer-service/payments-refunds\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:39.037Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://dmv.ca.gov/portal/customer-service/payments-refunds",
+	"url": "https://dmv.ca.gov/portal/customer-service/payments-refunds/"
+}

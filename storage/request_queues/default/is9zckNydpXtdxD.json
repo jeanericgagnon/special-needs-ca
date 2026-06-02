@@ -1,0 +1,9 @@
+{
+	"id": "is9zckNydpXtdxD",
+	"json": "{\"id\":\"is9zckNydpXtdxD\",\"url\":\"https://scdd.ca.gov/sdm-tap-community-conversations/\",\"loadedUrl\":\"https://scdd.ca.gov/sdm-tap-community-conversations/\",\"uniqueKey\":\"https://scdd.ca.gov/sdm-tap-community-conversations\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:53.744Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/sdm-tap-community-conversations",
+	"url": "https://scdd.ca.gov/sdm-tap-community-conversations/"
+}

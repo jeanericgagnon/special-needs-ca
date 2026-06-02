@@ -1,0 +1,9 @@
+{
+	"id": "LDhCScROwRluRgf",
+	"json": "{\"id\":\"LDhCScROwRluRgf\",\"url\":\"https://lettersandscience.ucdavis.edu/undergraduate-research\",\"loadedUrl\":\"https://lettersandscience.ucdavis.edu/research/undergraduate-research\",\"uniqueKey\":\"https://lettersandscience.ucdavis.edu/undergraduate-research\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:23.630Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://lettersandscience.ucdavis.edu/undergraduate-research",
+	"url": "https://lettersandscience.ucdavis.edu/undergraduate-research"
+}

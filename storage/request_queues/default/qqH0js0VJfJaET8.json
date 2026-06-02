@@ -1,0 +1,9 @@
+{
+	"id": "qqH0js0VJfJaET8",
+	"json": "{\"id\":\"qqH0js0VJfJaET8\",\"url\":\"http://cdss.ca.gov/inforesources/letters-and-notices\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/letters-and-notices\",\"uniqueKey\":\"http://cdss.ca.gov/inforesources/letters-and-notices\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:57.436Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://cdss.ca.gov/inforesources/letters-and-notices",
+	"url": "http://cdss.ca.gov/inforesources/letters-and-notices"
+}

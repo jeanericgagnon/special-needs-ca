@@ -1,0 +1,9 @@
+{
+	"id": "pdUKaP9le1FzVKe",
+	"json": "{\"id\":\"pdUKaP9le1FzVKe\",\"url\":\"https://lao.ca.gov/About\",\"loadedUrl\":\"https://lao.ca.gov/About\",\"uniqueKey\":\"https://lao.ca.gov/About\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:03:02.464Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://lao.ca.gov/About",
+	"url": "https://lao.ca.gov/About"
+}

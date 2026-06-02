@@ -1,0 +1,9 @@
+{
+	"id": "m9cbZFbjUKCYsIA",
+	"json": "{\"id\":\"m9cbZFbjUKCYsIA\",\"url\":\"https://financeandbusiness.ucdavis.edu/bia/budget/model/grad-tuition\",\"loadedUrl\":\"https://financeandbusiness.ucdavis.edu/bia/budget/model/grad-tuition\",\"uniqueKey\":\"https://financeandbusiness.ucdavis.edu/bia/budget/model/grad-tuition\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:51.104Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://financeandbusiness.ucdavis.edu/bia/budget/model/grad-tuition",
+	"url": "https://financeandbusiness.ucdavis.edu/bia/budget/model/grad-tuition"
+}

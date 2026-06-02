@@ -1,0 +1,9 @@
+{
+	"id": "tNLT3dt4X4nAt9M",
+	"json": "{\"id\":\"tNLT3dt4X4nAt9M\",\"url\":\"https://health.ucdavis.edu/patients-visitors/news/headlines/us-news--world-report-names-uc-davis-childrens-hospital-among-the-nations-best/2025/10\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/news/headlines/us-news--world-report-names-uc-davis-childrens-hospital-among-the-nations-best/2025/10\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/news/headlines/us-news--world-report-names-uc-davis-childrens-hospital-among-the-nations-best/2025/10\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:06.323Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/news/headlines/us-news--world-report-names-uc-davis-childrens-hospital-among-the-nations-best/2025/10",
+	"url": "https://health.ucdavis.edu/patients-visitors/news/headlines/us-news--world-report-names-uc-davis-childrens-hospital-among-the-nations-best/2025/10"
+}

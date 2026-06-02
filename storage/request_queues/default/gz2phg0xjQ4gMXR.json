@@ -1,0 +1,9 @@
+{
+	"id": "gz2phg0xjQ4gMXR",
+	"json": "{\"id\":\"gz2phg0xjQ4gMXR\",\"url\":\"https://www.csb-cde.ca.gov/resources/causesvl/cvl-braintumorinjury.aspx\",\"loadedUrl\":\"https://www.csb-cde.ca.gov/resources/causesvl/cvl-braintumorinjury.aspx\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/resources/causesvl/cvl-braintumorinjury.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:13.171Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csb-cde.ca.gov/resources/causesvl/cvl-braintumorinjury.aspx",
+	"url": "https://www.csb-cde.ca.gov/resources/causesvl/cvl-braintumorinjury.aspx"
+}

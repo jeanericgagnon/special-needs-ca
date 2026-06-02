@@ -1,0 +1,9 @@
+{
+	"id": "eyG6Q1GahFSxPoN",
+	"json": "{\"id\":\"eyG6Q1GahFSxPoN\",\"url\":\"https://health.ucdavis.edu/compliance/about-us/news-and-events/\",\"loadedUrl\":\"https://health.ucdavis.edu/compliance/about-us/news-and-events/\",\"uniqueKey\":\"https://health.ucdavis.edu/compliance/about-us/news-and-events\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:33.595Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/compliance/about-us/news-and-events",
+	"url": "https://health.ucdavis.edu/compliance/about-us/news-and-events/"
+}

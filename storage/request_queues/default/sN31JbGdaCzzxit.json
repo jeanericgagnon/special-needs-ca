@@ -1,0 +1,9 @@
+{
+	"id": "sN31JbGdaCzzxit",
+	"json": "{\"id\":\"sN31JbGdaCzzxit\",\"url\":\"https://redwoodseed.ucdavis.edu/sitemap\",\"loadedUrl\":\"https://redwoodseed.ucdavis.edu/sitemap\",\"uniqueKey\":\"https://redwoodseed.ucdavis.edu/sitemap\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:46.926Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://redwoodseed.ucdavis.edu/sitemap",
+	"url": "https://redwoodseed.ucdavis.edu/sitemap"
+}

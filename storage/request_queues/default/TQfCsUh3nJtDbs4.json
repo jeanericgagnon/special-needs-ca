@@ -1,0 +1,9 @@
+{
+	"id": "TQfCsUh3nJtDbs4",
+	"json": "{\"id\":\"TQfCsUh3nJtDbs4\",\"url\":\"https://mindbrain.ucdavis.edu/tags/national-science-foundation\",\"loadedUrl\":\"https://mindbrain.ucdavis.edu/tags/national-science-foundation\",\"uniqueKey\":\"https://mindbrain.ucdavis.edu/tags/national-science-foundation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:21.558Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://mindbrain.ucdavis.edu/tags/national-science-foundation",
+	"url": "https://mindbrain.ucdavis.edu/tags/national-science-foundation"
+}

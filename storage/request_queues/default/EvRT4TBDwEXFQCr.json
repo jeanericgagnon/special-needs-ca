@@ -1,0 +1,9 @@
+{
+	"id": "EvRT4TBDwEXFQCr",
+	"json": "{\"id\":\"EvRT4TBDwEXFQCr\",\"url\":\"http://www.cdss.ca.gov/media-center\",\"loadedUrl\":\"https://www.cdss.ca.gov/media-center\",\"uniqueKey\":\"http://www.cdss.ca.gov/media-center\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:20.063Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.cdss.ca.gov/media-center",
+	"url": "http://www.cdss.ca.gov/media-center"
+}

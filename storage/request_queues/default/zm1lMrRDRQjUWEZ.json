@@ -1,0 +1,9 @@
+{
+	"id": "zm1lMrRDRQjUWEZ",
+	"json": "{\"id\":\"zm1lMrRDRQjUWEZ\",\"url\":\"https://www6.cde.ca.gov/californiamodel/\",\"loadedUrl\":\"https://www6.cde.ca.gov/californiamodel/\",\"uniqueKey\":\"https://www6.cde.ca.gov/californiamodel\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:51.356Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www6.cde.ca.gov/californiamodel",
+	"url": "https://www6.cde.ca.gov/californiamodel/"
+}

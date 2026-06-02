@@ -1,0 +1,9 @@
+{
+	"id": "rztdGogIZBloRnJ",
+	"json": "{\"id\":\"rztdGogIZBloRnJ\",\"url\":\"https://www.caloes.ca.gov/office-of-the-director/operations/logistics-management/\",\"loadedUrl\":\"https://www.caloes.ca.gov/office-of-the-director/operations/logistics-management/\",\"uniqueKey\":\"https://www.caloes.ca.gov/office-of-the-director/operations/logistics-management\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:39.811Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.caloes.ca.gov/office-of-the-director/operations/logistics-management",
+	"url": "https://www.caloes.ca.gov/office-of-the-director/operations/logistics-management/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "QnVaLmh5wwqqj8J",
+	"json": "{\"id\":\"QnVaLmh5wwqqj8J\",\"url\":\"https://rarediseases.org/organizations/adult-congenital-heart-association/\",\"loadedUrl\":\"https://rarediseases.org/organizations/adult-congenital-heart-association/\",\"uniqueKey\":\"https://rarediseases.org/organizations/adult-congenital-heart-association\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:06:54.342Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/organizations/adult-congenital-heart-association",
+	"url": "https://rarediseases.org/organizations/adult-congenital-heart-association/"
+}

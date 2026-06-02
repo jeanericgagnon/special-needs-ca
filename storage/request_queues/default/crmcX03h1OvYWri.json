@@ -1,0 +1,9 @@
+{
+	"id": "crmcX03h1OvYWri",
+	"json": "{\"id\":\"crmcX03h1OvYWri\",\"url\":\"https://www.dds.ca.gov/general/language/traditional-chinese/\",\"loadedUrl\":\"https://www.dds.ca.gov/general/language/traditional-chinese/\",\"uniqueKey\":\"https://www.dds.ca.gov/general/language/traditional-chinese\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:54.723Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/general/language/traditional-chinese",
+	"url": "https://www.dds.ca.gov/general/language/traditional-chinese/"
+}

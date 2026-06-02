@@ -1,0 +1,9 @@
+{
+	"id": "e265ygNI6UuC4LT",
+	"json": "{\"id\":\"e265ygNI6UuC4LT\",\"url\":\"https://cdss.ca.gov/cacfp/resources/participants-and-families\",\"loadedUrl\":\"https://cdss.ca.gov/cacfp/resources/participants-and-families\",\"uniqueKey\":\"https://cdss.ca.gov/cacfp/resources/participants-and-families\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:58:31.579Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/cacfp/resources/participants-and-families",
+	"url": "https://cdss.ca.gov/cacfp/resources/participants-and-families"
+}

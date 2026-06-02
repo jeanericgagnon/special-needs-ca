@@ -1,0 +1,9 @@
+{
+	"id": "siD9bksD8B62O9a",
+	"json": "{\"id\":\"siD9bksD8B62O9a\",\"url\":\"https://health.ucdavis.edu/treatments/radiation-therapy\",\"loadedUrl\":\"https://health.ucdavis.edu/treatments/radiation-therapy\",\"uniqueKey\":\"https://health.ucdavis.edu/treatments/radiation-therapy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:47.776Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/treatments/radiation-therapy",
+	"url": "https://health.ucdavis.edu/treatments/radiation-therapy"
+}

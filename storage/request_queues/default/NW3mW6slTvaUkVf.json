@@ -1,0 +1,9 @@
+{
+	"id": "NW3mW6slTvaUkVf",
+	"json": "{\"id\":\"NW3mW6slTvaUkVf\",\"url\":\"https://www.vmtrc.ucdavis.edu/\",\"loadedUrl\":\"https://www.vmtrc.ucdavis.edu/\",\"uniqueKey\":\"https://www.vmtrc.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:22.695Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.vmtrc.ucdavis.edu",
+	"url": "https://www.vmtrc.ucdavis.edu/"
+}

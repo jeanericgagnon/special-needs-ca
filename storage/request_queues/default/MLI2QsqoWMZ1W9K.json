@@ -1,0 +1,9 @@
+{
+	"id": "MLI2QsqoWMZ1W9K",
+	"json": "{\"id\":\"MLI2QsqoWMZ1W9K\",\"url\":\"https://give.ucdavis.edu/MCMN\",\"loadedUrl\":\"https://give.ucdavis.edu/MCMN\",\"uniqueKey\":\"https://give.ucdavis.edu/MCMN\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:50.046Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/MCMN",
+	"url": "https://give.ucdavis.edu/MCMN"
+}

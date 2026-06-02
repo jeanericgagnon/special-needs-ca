@@ -1,0 +1,9 @@
+{
+	"id": "iKxDJs8Htq6RKG3",
+	"json": "{\"id\":\"iKxDJs8Htq6RKG3\",\"url\":\"https://cnprc.ucdavis.edu/our-research-resources\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/our-research-resources\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/our-research-resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:11.892Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cnprc.ucdavis.edu/our-research-resources",
+	"url": "https://cnprc.ucdavis.edu/our-research-resources"
+}

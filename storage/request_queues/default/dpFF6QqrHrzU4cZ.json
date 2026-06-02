@@ -1,0 +1,9 @@
+{
+	"id": "dpFF6QqrHrzU4cZ",
+	"json": "{\"id\":\"dpFF6QqrHrzU4cZ\",\"url\":\"https://www.csdr-cde.ca.gov/documents/PrekGuidelines.pdf\",\"loadedUrl\":\"https://www.csdr-cde.ca.gov/documents/PrekGuidelines.pdf\",\"uniqueKey\":\"https://www.csdr-cde.ca.gov/documents/PrekGuidelines.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:11.696Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csdr-cde.ca.gov/documents/PrekGuidelines.pdf",
+	"url": "https://www.csdr-cde.ca.gov/documents/PrekGuidelines.pdf"
+}

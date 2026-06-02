@@ -1,0 +1,9 @@
+{
+	"id": "xts25SStJeBea3M",
+	"json": "{\"id\":\"xts25SStJeBea3M\",\"url\":\"http://www.arts.ca.gov/\",\"loadedUrl\":\"https://arts.ca.gov/\",\"uniqueKey\":\"http://www.arts.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:22:48.548Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.arts.ca.gov",
+	"url": "http://www.arts.ca.gov/"
+}

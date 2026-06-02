@@ -1,0 +1,9 @@
+{
+	"id": "rY7XTtgWXIBxwko",
+	"json": "{\"id\":\"rY7XTtgWXIBxwko\",\"url\":\"https://oag.ca.gov/prop65/faq\",\"loadedUrl\":\"https://oag.ca.gov/prop65/faq\",\"uniqueKey\":\"https://oag.ca.gov/prop65/faq\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:19:15.229Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://oag.ca.gov/prop65/faq",
+	"url": "https://oag.ca.gov/prop65/faq"
+}

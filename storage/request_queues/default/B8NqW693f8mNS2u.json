@@ -1,0 +1,9 @@
+{
+	"id": "B8NqW693f8mNS2u",
+	"json": "{\"id\":\"B8NqW693f8mNS2u\",\"url\":\"https://care.ucdavis.edu/get-involved\",\"loadedUrl\":\"https://care.ucdavis.edu/get-involved\",\"uniqueKey\":\"https://care.ucdavis.edu/get-involved\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:02.288Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://care.ucdavis.edu/get-involved",
+	"url": "https://care.ucdavis.edu/get-involved"
+}

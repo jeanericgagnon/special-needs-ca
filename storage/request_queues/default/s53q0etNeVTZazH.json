@@ -1,0 +1,9 @@
+{
+	"id": "s53q0etNeVTZazH",
+	"json": "{\"id\":\"s53q0etNeVTZazH\",\"url\":\"https://www.cdph.ca.gov/Programs/DO/letstalkcannabis/Pages/pregnantbreastfeedingwomen.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/DO/letstalkcannabis/Pages/pregnantbreastfeedingwomen.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/DO/letstalkcannabis/Pages/pregnantbreastfeedingwomen.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:03:25.726Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/DO/letstalkcannabis/Pages/pregnantbreastfeedingwomen.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/DO/letstalkcannabis/Pages/pregnantbreastfeedingwomen.aspx"
+}

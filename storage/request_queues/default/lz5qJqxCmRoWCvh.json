@@ -1,0 +1,9 @@
+{
+	"id": "lz5qJqxCmRoWCvh",
+	"json": "{\"id\":\"lz5qJqxCmRoWCvh\",\"url\":\"https://www.dds.ca.gov/services/early-start/early-start-publications-resources-and-program-guidance/publications/\",\"loadedUrl\":\"https://www.dds.ca.gov/services/early-start/early-start-publications-resources-and-program-guidance/publications/\",\"uniqueKey\":\"https://www.dds.ca.gov/services/early-start/early-start-publications-resources-and-program-guidance/publications\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:26.247Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/services/early-start/early-start-publications-resources-and-program-guidance/publications",
+	"url": "https://www.dds.ca.gov/services/early-start/early-start-publications-resources-and-program-guidance/publications/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "FqM4Edq9CFVvsnw",
+	"json": "{\"id\":\"FqM4Edq9CFVvsnw\",\"url\":\"https://give.ucdavis.edu/MOPH/DPTEDUR\",\"loadedUrl\":\"https://give.ucdavis.edu/MOPH/DPTEDUR\",\"uniqueKey\":\"https://give.ucdavis.edu/MOPH/DPTEDUR\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:01.843Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/MOPH/DPTEDUR",
+	"url": "https://give.ucdavis.edu/MOPH/DPTEDUR"
+}

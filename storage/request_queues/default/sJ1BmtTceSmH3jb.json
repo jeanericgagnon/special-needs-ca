@@ -1,0 +1,9 @@
+{
+	"id": "sJ1BmtTceSmH3jb",
+	"json": "{\"id\":\"sJ1BmtTceSmH3jb\",\"url\":\"https://www.csb-cde.ca.gov/resources/causesvl/cvl-lebersca.aspx\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=b0ebe07f-29f5-444c-a397-ce3a0a12bb72&ssb=31925279762&ssc=https%3A%2F%2Fwww.csb-cde.ca.gov%2Fresources%2Fcausesvl%2Fcvl-lebersca.aspx&ssi=9ed8ecc3-cuez-495a-a723-50e9cb3a97a4&ssk=botmanager_support@radware.com&ssm=14869364374743720109518768099704&ssn=888c56116867acd1c3128b0e777591c5401a75f49da9-5a03-4221-a4657d&sso=c144a7df-00bfad8a3b585dce52807c1314079c30b1c6d1f7fcf59780&ssp=66374797611780351434178033490741062&ssq=35692252763382341079327633946569498687507&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsInV6bXgiOiI3ZjkwMDA3ZDIwNWY3Ni04MzkyLTQ2YTktYmVjMi0yZjI0NTUwM2VhOTkxLTE3ODAzMjczNDI2ODIyOTA3OTUtZmEyYTgwZjQzMTdjODViMjE2IiwiX191em1mIjoiN2Y5MDAwNzVmNDlkYTktNWEwMy00MjIxLWE3ZGYtMDBiZmFkOGEzYjU4MS0xNzgwMzI3NjMzNDc3MC0wMDM5MDJkMjAzMjYyYmNmNmNhMTAifQ==\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/resources/causesvl/cvl-lebersca.aspx\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:27:13.605Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csb-cde.ca.gov/resources/causesvl/cvl-lebersca.aspx",
+	"url": "https://www.csb-cde.ca.gov/resources/causesvl/cvl-lebersca.aspx"
+}

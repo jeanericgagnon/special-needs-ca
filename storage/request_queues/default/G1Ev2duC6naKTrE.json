@@ -1,0 +1,9 @@
+{
+	"id": "G1Ev2duC6naKTrE",
+	"json": "{\"id\":\"G1Ev2duC6naKTrE\",\"url\":\"https://health.ucdavis.edu/join-the-team/48X-Opportunities\",\"loadedUrl\":\"https://health.ucdavis.edu/join-the-team/48X-Opportunities\",\"uniqueKey\":\"https://health.ucdavis.edu/join-the-team/48X-Opportunities\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:10.395Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/join-the-team/48X-Opportunities",
+	"url": "https://health.ucdavis.edu/join-the-team/48X-Opportunities"
+}

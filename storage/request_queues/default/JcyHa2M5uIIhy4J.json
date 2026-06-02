@@ -1,0 +1,9 @@
+{
+	"id": "JcyHa2M5uIIhy4J",
+	"json": "{\"id\":\"JcyHa2M5uIIhy4J\",\"url\":\"https://www.cde.ca.gov/re/di/or/oeo.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/re/di/or/oeo.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/re/di/or/oeo.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:36.971Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/re/di/or/oeo.asp",
+	"url": "https://www.cde.ca.gov/re/di/or/oeo.asp"
+}

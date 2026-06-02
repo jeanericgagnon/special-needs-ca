@@ -1,0 +1,9 @@
+{
+	"id": "9OZEQXlSbineJcK",
+	"json": "{\"id\":\"9OZEQXlSbineJcK\",\"url\":\"http://www.edd.ca.gov/Jobs_and_Training/Services_for_People_with_Disabilities.htm\",\"loadedUrl\":\"https://edd.ca.gov/en/Jobs_and_Training/Services_for_People_with_Disabilities\",\"uniqueKey\":\"http://www.edd.ca.gov/Jobs_and_Training/Services_for_People_with_Disabilities.htm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:25.835Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.edd.ca.gov/Jobs_and_Training/Services_for_People_with_Disabilities.htm",
+	"url": "http://www.edd.ca.gov/Jobs_and_Training/Services_for_People_with_Disabilities.htm"
+}

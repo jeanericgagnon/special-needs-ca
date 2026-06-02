@@ -1,0 +1,9 @@
+{
+	"id": "WogcJn9yP6N5OOJ",
+	"json": "{\"id\":\"WogcJn9yP6N5OOJ\",\"url\":\"https://giveto.ucdavis.edu/campaigns/49335/donations/new?designation=centerformindandbrain&amt=100.00\",\"loadedUrl\":\"https://giveto.ucdavis.edu/schools/UniversityofCaliforniaDavis/login\",\"uniqueKey\":\"https://giveto.ucdavis.edu/campaigns/49335/donations/new?amt=100.00&designation=centerformindandbrain\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:13.411Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://giveto.ucdavis.edu/campaigns/49335/donations/new?amt=100.00&designation=centerformindandbrain",
+	"url": "https://giveto.ucdavis.edu/campaigns/49335/donations/new?designation=centerformindandbrain&amt=100.00"
+}

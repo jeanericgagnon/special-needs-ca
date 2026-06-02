@@ -1,0 +1,9 @@
+{
+	"id": "vbiRoKcV8Vpb63j",
+	"json": "{\"id\":\"vbiRoKcV8Vpb63j\",\"url\":\"https://www.fire.ca.gov/what-we-do/grants/wildfire-prevention-grants\",\"loadedUrl\":\"https://www.fire.ca.gov/what-we-do/grants/wildfire-prevention-grants\",\"uniqueKey\":\"https://www.fire.ca.gov/what-we-do/grants/wildfire-prevention-grants\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:33.158Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.fire.ca.gov/what-we-do/grants/wildfire-prevention-grants",
+	"url": "https://www.fire.ca.gov/what-we-do/grants/wildfire-prevention-grants"
+}

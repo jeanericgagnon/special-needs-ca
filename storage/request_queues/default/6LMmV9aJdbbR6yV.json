@@ -1,0 +1,9 @@
+{
+	"id": "6LMmV9aJdbbR6yV",
+	"json": "{\"id\":\"6LMmV9aJdbbR6yV\",\"url\":\"https://www.cdii.ca.gov/compliance-and-policy/resources/\",\"loadedUrl\":\"https://www.cdii.ca.gov/compliance-and-policy/resources/\",\"uniqueKey\":\"https://www.cdii.ca.gov/compliance-and-policy/resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:28:31.529Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdii.ca.gov/compliance-and-policy/resources",
+	"url": "https://www.cdii.ca.gov/compliance-and-policy/resources/"
+}

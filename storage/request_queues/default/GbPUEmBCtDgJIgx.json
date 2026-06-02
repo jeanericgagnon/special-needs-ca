@@ -1,0 +1,9 @@
+{
+	"id": "GbPUEmBCtDgJIgx",
+	"json": "{\"id\":\"GbPUEmBCtDgJIgx\",\"url\":\"https://www.csb-cde.ca.gov/resources/assessments/learningmedia.aspx\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=12f6890e-dd65-4754-bdcc-e936f8fcf5c7&ssb=78566280783&ssc=https%3A%2F%2Fwww.csb-cde.ca.gov%2Fresources%2Fassessments%2Flearningmedia.aspx&ssi=2a3333fa-cuez-4869-99ff-ddb6c2ac5ba3&ssk=botmanager_support@radware.com&ssm=66456388363680222109829679445869&ssn=1994136ec64d46f096c48d52575163833885ed471ce2-c9ff-4f30-ad2eeb&sso=2e85ef9f-17ef40dfc066594100aba22880631ed259717ce546551dfd&ssp=71990000441780374464178033500864958&ssq=45635912590668669055825906074467873994963&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBlZDQ3MWNlMi1jOWZmLTRmMzAtYWY5Zi0xN2VmNDBkZmMwNjYxLTE3ODAzMjU5MDYyNTcwLTAwMzY0ODc0MTBjY2U1NjA0ODcxMCIsInJkIjoiY2EuZ292IiwidXpteCI6IjdmOTAwMGQ1NDYyODFmLWNlYjAtNDY0Yi04MmI5LWRkZDA1NTE0NTBiODEtMTc4MDMyNTkwNjI1NzAtNTEwNGJlMTYwODc5ODViYzEwIn0=\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/resources/assessments/learningmedia.aspx\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T14:58:26.387Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csb-cde.ca.gov/resources/assessments/learningmedia.aspx",
+	"url": "https://www.csb-cde.ca.gov/resources/assessments/learningmedia.aspx"
+}

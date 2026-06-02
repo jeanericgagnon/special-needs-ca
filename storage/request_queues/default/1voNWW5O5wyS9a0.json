@@ -1,0 +1,9 @@
+{
+	"id": "1voNWW5O5wyS9a0",
+	"json": "{\"id\":\"1voNWW5O5wyS9a0\",\"url\":\"https://calable.ca.gov/es/informaci%C3%B3n-del-rla\",\"loadedUrl\":\"https://calable.ca.gov/es/informaci%C3%B3n-del-rla\",\"uniqueKey\":\"https://calable.ca.gov/es/informaci%C3%B3n-del-rla\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:38.828Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://calable.ca.gov/es/informaci%C3%B3n-del-rla",
+	"url": "https://calable.ca.gov/es/informaci%C3%B3n-del-rla"
+}

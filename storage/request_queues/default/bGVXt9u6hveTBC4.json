@@ -1,0 +1,9 @@
+{
+	"id": "bGVXt9u6hveTBC4",
+	"json": "{\"id\":\"bGVXt9u6hveTBC4\",\"url\":\"https://health.ucdavis.edu/health-magazine/\",\"loadedUrl\":\"https://health.ucdavis.edu/health-magazine/\",\"uniqueKey\":\"https://health.ucdavis.edu/health-magazine\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:24.984Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/health-magazine",
+	"url": "https://health.ucdavis.edu/health-magazine/"
+}

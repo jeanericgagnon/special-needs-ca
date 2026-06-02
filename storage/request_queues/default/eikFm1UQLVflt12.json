@@ -1,0 +1,9 @@
+{
+	"id": "eikFm1UQLVflt12",
+	"json": "{\"id\":\"eikFm1UQLVflt12\",\"url\":\"https://www.chhs.ca.gov/blog/2022/08/31/statement-from-california-health-and-human-services-secretary-dr-mark-ghaly-on-the-passage-of-the-care-act/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2022/08/31/statement-from-california-health-and-human-services-secretary-dr-mark-ghaly-on-the-passage-of-the-care-act/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2022/08/31/statement-from-california-health-and-human-services-secretary-dr-mark-ghaly-on-the-passage-of-the-care-act\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:21.281Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chhs.ca.gov/blog/2022/08/31/statement-from-california-health-and-human-services-secretary-dr-mark-ghaly-on-the-passage-of-the-care-act",
+	"url": "https://www.chhs.ca.gov/blog/2022/08/31/statement-from-california-health-and-human-services-secretary-dr-mark-ghaly-on-the-passage-of-the-care-act/"
+}

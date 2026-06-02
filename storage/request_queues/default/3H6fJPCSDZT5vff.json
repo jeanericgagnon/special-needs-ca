@@ -1,0 +1,9 @@
+{
+	"id": "3H6fJPCSDZT5vff",
+	"json": "{\"id\":\"3H6fJPCSDZT5vff\",\"url\":\"https://rarediseases.org/rare-diseases/kat6a-syndrome/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/kat6a-syndrome/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/kat6a-syndrome\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:09:36.214Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/rare-diseases/kat6a-syndrome",
+	"url": "https://rarediseases.org/rare-diseases/kat6a-syndrome/"
+}

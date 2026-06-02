@@ -1,0 +1,9 @@
+{
+	"id": "1RLay0qa7AFZEgE",
+	"json": "{\"id\":\"1RLay0qa7AFZEgE\",\"url\":\"https://health.ucdavis.edu/crhd/publications\",\"loadedUrl\":\"https://health.ucdavis.edu/crhd/publications\",\"uniqueKey\":\"https://health.ucdavis.edu/crhd/publications\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:06.636Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/crhd/publications",
+	"url": "https://health.ucdavis.edu/crhd/publications"
+}

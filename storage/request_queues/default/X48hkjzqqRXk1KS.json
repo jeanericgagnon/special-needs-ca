@@ -1,0 +1,9 @@
+{
+	"id": "X48hkjzqqRXk1KS",
+	"json": "{\"id\":\"X48hkjzqqRXk1KS\",\"url\":\"https://health.ucdavis.edu/mind-institute/clinic/child-life-program/donations\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/clinic/child-life-program/donations\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/clinic/child-life-program/donations\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:06:56.848Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mind-institute/clinic/child-life-program/donations",
+	"url": "https://health.ucdavis.edu/mind-institute/clinic/child-life-program/donations"
+}

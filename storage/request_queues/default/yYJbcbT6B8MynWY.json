@@ -1,0 +1,9 @@
+{
+	"id": "yYJbcbT6B8MynWY",
+	"json": "{\"id\":\"yYJbcbT6B8MynWY\",\"url\":\"https://health.ucdavis.edu/pharmacy/Residency/program/pharmacy-technician-extern-training-program\",\"loadedUrl\":\"https://health.ucdavis.edu/pharmacy/Residency/program/pharmacy-technician-extern-training-program\",\"uniqueKey\":\"https://health.ucdavis.edu/pharmacy/Residency/program/pharmacy-technician-extern-training-program\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:31:33.143Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/pharmacy/Residency/program/pharmacy-technician-extern-training-program",
+	"url": "https://health.ucdavis.edu/pharmacy/Residency/program/pharmacy-technician-extern-training-program"
+}

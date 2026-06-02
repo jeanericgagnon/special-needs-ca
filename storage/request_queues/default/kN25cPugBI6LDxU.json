@@ -1,0 +1,9 @@
+{
+	"id": "kN25cPugBI6LDxU",
+	"json": "{\"id\":\"kN25cPugBI6LDxU\",\"url\":\"https://physicians.ucdavis.edu/details/571/kendra-hutchinson-breast_cancer-cancer-hematology_oncology-oncology-sacramento?Specialties=210\",\"loadedUrl\":\"https://physicians.ucdavis.edu/details/571/kendra-hutchinson-breast_cancer-cancer-hematology_oncology-oncology-sacramento?Specialties=210\",\"uniqueKey\":\"https://physicians.ucdavis.edu/details/571/kendra-hutchinson-breast_cancer-cancer-hematology_oncology-oncology-sacramento?Specialties=210\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:34:03.327Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://physicians.ucdavis.edu/details/571/kendra-hutchinson-breast_cancer-cancer-hematology_oncology-oncology-sacramento?Specialties=210",
+	"url": "https://physicians.ucdavis.edu/details/571/kendra-hutchinson-breast_cancer-cancer-hematology_oncology-oncology-sacramento?Specialties=210"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "d7Odl8cyRgevUws",
+	"json": "{\"id\":\"d7Odl8cyRgevUws\",\"url\":\"https://hr.ucdavis.edu/news/your-new-year-uc-benefits-checklist\",\"loadedUrl\":\"https://hr.ucdavis.edu/news/your-new-year-uc-benefits-checklist\",\"uniqueKey\":\"https://hr.ucdavis.edu/news/your-new-year-uc-benefits-checklist\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:40.764Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/news/your-new-year-uc-benefits-checklist",
+	"url": "https://hr.ucdavis.edu/news/your-new-year-uc-benefits-checklist"
+}

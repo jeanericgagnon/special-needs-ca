@@ -1,0 +1,9 @@
+{
+	"id": "DWlr6pPJspWpFir",
+	"json": "{\"id\":\"DWlr6pPJspWpFir\",\"url\":\"https://www.immigrantguide.ca.gov/en/DACA\",\"loadedUrl\":\"https://www.immigrantguide.ca.gov/en/DACA\",\"uniqueKey\":\"https://www.immigrantguide.ca.gov/en/DACA\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:52.349Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.immigrantguide.ca.gov/en/DACA",
+	"url": "https://www.immigrantguide.ca.gov/en/DACA"
+}

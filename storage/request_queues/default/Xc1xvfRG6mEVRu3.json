@@ -1,0 +1,9 @@
+{
+	"id": "Xc1xvfRG6mEVRu3",
+	"json": "{\"id\":\"Xc1xvfRG6mEVRu3\",\"url\":\"https://www.cdii.ca.gov/compliance-and-policy/health-information-entity-status-assessment/\",\"loadedUrl\":\"https://www.cdii.ca.gov/compliance-and-policy/health-information-entity-status-assessment/\",\"uniqueKey\":\"https://www.cdii.ca.gov/compliance-and-policy/health-information-entity-status-assessment\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:28:34.261Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdii.ca.gov/compliance-and-policy/health-information-entity-status-assessment",
+	"url": "https://www.cdii.ca.gov/compliance-and-policy/health-information-entity-status-assessment/"
+}

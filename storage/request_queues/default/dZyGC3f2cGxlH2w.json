@@ -1,0 +1,9 @@
+{
+	"id": "dZyGC3f2cGxlH2w",
+	"json": "{\"id\":\"dZyGC3f2cGxlH2w\",\"url\":\"https://cdss.ca.gov/inforesources/foster-care/cans/the-cans-tool/cans-resources\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/foster-care/cans/the-cans-tool/cans-resources\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/foster-care/cans/the-cans-tool/cans-resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:01.123Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/foster-care/cans/the-cans-tool/cans-resources",
+	"url": "https://cdss.ca.gov/inforesources/foster-care/cans/the-cans-tool/cans-resources"
+}

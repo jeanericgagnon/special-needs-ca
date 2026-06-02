@@ -1,0 +1,9 @@
+{
+	"id": "NEq2V2M3YEA2q9O",
+	"json": "{\"id\":\"NEq2V2M3YEA2q9O\",\"url\":\"https://scdd.ca.gov/sdm-tap-resources/administration-for-community-living-supported-decision-making-program/\",\"loadedUrl\":\"https://scdd.ca.gov/sdm-tap-resources/administration-for-community-living-supported-decision-making-program/\",\"uniqueKey\":\"https://scdd.ca.gov/sdm-tap-resources/administration-for-community-living-supported-decision-making-program\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:19:32.512Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/sdm-tap-resources/administration-for-community-living-supported-decision-making-program",
+	"url": "https://scdd.ca.gov/sdm-tap-resources/administration-for-community-living-supported-decision-making-program/"
+}

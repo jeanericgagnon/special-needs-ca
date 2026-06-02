@@ -1,0 +1,9 @@
+{
+	"id": "r0kpwW5nWJ6mFhW",
+	"json": "{\"id\":\"r0kpwW5nWJ6mFhW\",\"url\":\"https://academicsenate.ucdavis.edu/academic-policies-operating-status\",\"loadedUrl\":\"https://academicsenate.ucdavis.edu/academic-policies-operating-status\",\"uniqueKey\":\"https://academicsenate.ucdavis.edu/academic-policies-operating-status\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:33.106Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://academicsenate.ucdavis.edu/academic-policies-operating-status",
+	"url": "https://academicsenate.ucdavis.edu/academic-policies-operating-status"
+}

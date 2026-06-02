@@ -1,0 +1,9 @@
+{
+	"id": "neUp07lFHnyunQl",
+	"json": "{\"id\":\"neUp07lFHnyunQl\",\"url\":\"https://www.cde.ca.gov/nr/ne/yr25/yr25rel27.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=edc7c26c-424f-4f50-8054-1e3d1368354b&ssb=14659238559&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fnr%2Fne%2Fyr25%2Fyr25rel27.asp&ssi=4a90fa65-ctxv-4dc0-9535-bee58860e84e&ssk=botmanager_support@radware.com&ssm=48538682540079644100912384139600&ssn=aa0f09a60dbc038bc4020b5667b1ba7dab5f6ff0a914-da42-4521-ab9560&sso=8c5b2648-f6d197d28e989b9a12b9bbc2d3fb65831790e81ea1a437c7&ssp=09938316931780325252178032404627682&ssq=34517725631862803919356318263542963831736&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDA2ZmYwYTkxNC1kYTQyLTQ1MjEtYTY0OC1mNmQxOTdkMjhlOTgxLTE3ODAzNTYzMTgzODUwLTAwM2M3MDNjMDFmMmRlNzE3MGQxMCIsInV6bXgiOiI3ZjkwMDBiMDYzZmIxOS1jZDQ1LTRmNWYtOTI4ZC1lNDg3NGE3N2Q3NTcxLTE3ODAzNTYzMTgzODUwLWZkMmRkZjFiMDYxZWEwZDMxMCIsInJkIjoiY2EuZ292In0=\",\"uniqueKey\":\"https://www.cde.ca.gov/nr/ne/yr25/yr25rel27.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T23:25:18.582Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/nr/ne/yr25/yr25rel27.asp",
+	"url": "https://www.cde.ca.gov/nr/ne/yr25/yr25rel27.asp"
+}

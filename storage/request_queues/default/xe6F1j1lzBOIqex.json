@@ -1,0 +1,9 @@
+{
+	"id": "xe6F1j1lzBOIqex",
+	"json": "{\"id\":\"xe6F1j1lzBOIqex\",\"url\":\"https://learn.rarediseases.org/course-category/data-literacy/?tutor-course-filter-category=60\",\"loadedUrl\":\"https://learn.rarediseases.org/courses/from-records-to-research-making-sense-of-health-data-for-rare-diseases/\",\"uniqueKey\":\"https://learn.rarediseases.org/course-category/data-literacy?tutor-course-filter-category=60\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:24:09.192Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://learn.rarediseases.org/course-category/data-literacy?tutor-course-filter-category=60",
+	"url": "https://learn.rarediseases.org/course-category/data-literacy/?tutor-course-filter-category=60"
+}

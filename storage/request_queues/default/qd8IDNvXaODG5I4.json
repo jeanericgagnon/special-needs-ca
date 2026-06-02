@@ -1,0 +1,9 @@
+{
+	"id": "qd8IDNvXaODG5I4",
+	"json": "{\"id\":\"qd8IDNvXaODG5I4\",\"url\":\"https://www.dmv.ca.gov/portal/vehicle-registration/license-plates-decals-and-placards/\",\"loadedUrl\":\"https://www.dmv.ca.gov/portal/vehicle-registration/license-plates-decals-and-placards/\",\"uniqueKey\":\"https://www.dmv.ca.gov/portal/vehicle-registration/license-plates-decals-and-placards\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:35.644Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dmv.ca.gov/portal/vehicle-registration/license-plates-decals-and-placards",
+	"url": "https://www.dmv.ca.gov/portal/vehicle-registration/license-plates-decals-and-placards/"
+}

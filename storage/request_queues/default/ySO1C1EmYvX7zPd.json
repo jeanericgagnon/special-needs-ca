@@ -1,0 +1,9 @@
+{
+	"id": "ySO1C1EmYvX7zPd",
+	"json": "{\"id\":\"ySO1C1EmYvX7zPd\",\"url\":\"https://health.ucdavis.edu/plasticsurgery/procedures/lymphatic-home.html\",\"loadedUrl\":\"https://health.ucdavis.edu/plasticsurgery/procedures/lymphatic-home.html\",\"uniqueKey\":\"https://health.ucdavis.edu/plasticsurgery/procedures/lymphatic-home.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:48.553Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/plasticsurgery/procedures/lymphatic-home.html",
+	"url": "https://health.ucdavis.edu/plasticsurgery/procedures/lymphatic-home.html"
+}

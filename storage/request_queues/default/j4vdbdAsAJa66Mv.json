@@ -1,0 +1,9 @@
+{
+	"id": "j4vdbdAsAJa66Mv",
+	"json": "{\"id\":\"j4vdbdAsAJa66Mv\",\"url\":\"http://www.dhcs.ca.gov/services/cancer/EWC/Pages/CBACCAC.aspx\",\"loadedUrl\":\"https://www.dhcs.ca.gov/services/every-woman-counts/california-breast-and-cervical-cancer-advisory-council/\",\"uniqueKey\":\"http://www.dhcs.ca.gov/services/cancer/EWC/Pages/CBACCAC.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:54:24.755Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.dhcs.ca.gov/services/cancer/EWC/Pages/CBACCAC.aspx",
+	"url": "http://www.dhcs.ca.gov/services/cancer/EWC/Pages/CBACCAC.aspx"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "5UjAYLtebYHrQoT",
+	"json": "{\"id\":\"5UjAYLtebYHrQoT\",\"url\":\"https://hr.ucdavis.edu/employees/leave-time-off/pto-ucdhs\",\"loadedUrl\":\"https://hr.ucdavis.edu/employees/leave-time-off/pto-ucdhs\",\"uniqueKey\":\"https://hr.ucdavis.edu/employees/leave-time-off/pto-ucdhs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:12.368Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/employees/leave-time-off/pto-ucdhs",
+	"url": "https://hr.ucdavis.edu/employees/leave-time-off/pto-ucdhs"
+}

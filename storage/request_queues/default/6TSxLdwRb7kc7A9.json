@@ -1,0 +1,9 @@
+{
+	"id": "6TSxLdwRb7kc7A9",
+	"json": "{\"id\":\"6TSxLdwRb7kc7A9\",\"url\":\"https://health.ucdavis.edu/news/for-journalists/using-our-name\",\"loadedUrl\":\"https://health.ucdavis.edu/news/for-journalists/using-our-name\",\"uniqueKey\":\"https://health.ucdavis.edu/news/for-journalists/using-our-name\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:27.164Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/news/for-journalists/using-our-name",
+	"url": "https://health.ucdavis.edu/news/for-journalists/using-our-name"
+}

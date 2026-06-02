@@ -1,0 +1,9 @@
+{
+	"id": "eLzDafbZXd1WHsC",
+	"json": "{\"id\":\"eLzDafbZXd1WHsC\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/22081/david-leshikar-surgery_-_general-surgery_-_trauma_acute_care_surgery_and_surgical_critical_care-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/22081/david-leshikar-surgery_-_general-surgery_-_trauma_acute_care_surgery_and_surgical_critical_care-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/22081/david-leshikar-surgery_-_general-surgery_-_trauma_acute_care_surgery_and_surgical_critical_care-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:10.150Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/22081/david-leshikar-surgery_-_general-surgery_-_trauma_acute_care_surgery_and_surgical_critical_care-sacramento",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/22081/david-leshikar-surgery_-_general-surgery_-_trauma_acute_care_surgery_and_surgical_critical_care-sacramento"
+}

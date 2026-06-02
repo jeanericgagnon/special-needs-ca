@@ -1,0 +1,9 @@
+{
+	"id": "RYk1m5XQ17aQdiB",
+	"json": "{\"id\":\"RYk1m5XQ17aQdiB\",\"url\":\"https://health.ucdavis.edu/mind-institute/news/headlines/pilot-program-in-emergency-medicine-department-trains-residents-to-use-ai-tool/2026/03\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/news/headlines/pilot-program-in-emergency-medicine-department-trains-residents-to-use-ai-tool/2026/03\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/news/headlines/pilot-program-in-emergency-medicine-department-trains-residents-to-use-ai-tool/2026/03\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:09:01.095Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mind-institute/news/headlines/pilot-program-in-emergency-medicine-department-trains-residents-to-use-ai-tool/2026/03",
+	"url": "https://health.ucdavis.edu/mind-institute/news/headlines/pilot-program-in-emergency-medicine-department-trains-residents-to-use-ai-tool/2026/03"
+}

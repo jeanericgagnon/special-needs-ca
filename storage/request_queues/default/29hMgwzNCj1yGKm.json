@@ -1,0 +1,9 @@
+{
+	"id": "29hMgwzNCj1yGKm",
+	"json": "{\"id\":\"29hMgwzNCj1yGKm\",\"url\":\"https://www.cdfa.ca.gov/Fairs_&_Expositions/Fair_Information/Fair_Dates_and_Information.asp\",\"loadedUrl\":\"https://www.cdfa.ca.gov/FairsAndExpositions/Fair_Information/Fair_Dates_and_Information.asp\",\"uniqueKey\":\"https://www.cdfa.ca.gov/Fairs_&_Expositions/Fair_Information/Fair_Dates_and_Information.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:34.105Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdfa.ca.gov/Fairs_&_Expositions/Fair_Information/Fair_Dates_and_Information.asp",
+	"url": "https://www.cdfa.ca.gov/Fairs_&_Expositions/Fair_Information/Fair_Dates_and_Information.asp"
+}

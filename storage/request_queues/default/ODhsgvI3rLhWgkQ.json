@@ -1,0 +1,9 @@
+{
+	"id": "ODhsgvI3rLhWgkQ",
+	"json": "{\"id\":\"ODhsgvI3rLhWgkQ\",\"url\":\"https://health.ucdavis.edu/legal/social-media-guidelines\",\"loadedUrl\":\"https://health.ucdavis.edu/legal/social-media-guidelines\",\"uniqueKey\":\"https://health.ucdavis.edu/legal/social-media-guidelines\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:43.095Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/legal/social-media-guidelines",
+	"url": "https://health.ucdavis.edu/legal/social-media-guidelines"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "mV6ToHyA9AE6vvs",
+	"json": "{\"id\":\"mV6ToHyA9AE6vvs\",\"url\":\"https://www.dds.ca.gov/toolkits/early-childhood-transition-resource-lookup-toolkit/\",\"loadedUrl\":\"https://www.dds.ca.gov/toolkits/early-childhood-transition-resource-lookup-toolkit/\",\"uniqueKey\":\"https://www.dds.ca.gov/toolkits/early-childhood-transition-resource-lookup-toolkit\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:29.785Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/toolkits/early-childhood-transition-resource-lookup-toolkit",
+	"url": "https://www.dds.ca.gov/toolkits/early-childhood-transition-resource-lookup-toolkit/"
+}

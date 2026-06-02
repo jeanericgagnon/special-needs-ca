@@ -1,0 +1,9 @@
+{
+	"id": "f1y21BUfhHb7vdX",
+	"json": "{\"id\":\"f1y21BUfhHb7vdX\",\"url\":\"https://www.math.ucdavis.edu/people/general-profile?fac_id=tjlewis\",\"loadedUrl\":\"https://www.math.ucdavis.edu/people/general-profile?fac_id=tjlewis\",\"uniqueKey\":\"https://www.math.ucdavis.edu/people/general-profile?fac_id=tjlewis\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:49.238Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.math.ucdavis.edu/people/general-profile?fac_id=tjlewis",
+	"url": "https://www.math.ucdavis.edu/people/general-profile?fac_id=tjlewis"
+}

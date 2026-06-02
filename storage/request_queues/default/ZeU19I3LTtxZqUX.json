@@ -1,0 +1,9 @@
+{
+	"id": "ZeU19I3LTtxZqUX",
+	"json": "{\"id\":\"ZeU19I3LTtxZqUX\",\"url\":\"https://www.cde.ca.gov/ci/cl/index.asp?tabsection=2#lcb\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/cl/index.asp?tabsection=2#lcb\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/cl/index.asp?tabsection=2\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:17.348Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ci/cl/index.asp?tabsection=2",
+	"url": "https://www.cde.ca.gov/ci/cl/index.asp?tabsection=2#lcb"
+}

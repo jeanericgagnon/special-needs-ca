@@ -1,0 +1,9 @@
+{
+	"id": "PWuoy9Wrv49AjGz",
+	"json": "{\"id\":\"PWuoy9Wrv49AjGz\",\"url\":\"https://care.ucdavis.edu/bystander-intervention\",\"loadedUrl\":\"https://care.ucdavis.edu/bystander-intervention\",\"uniqueKey\":\"https://care.ucdavis.edu/bystander-intervention\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:01.751Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://care.ucdavis.edu/bystander-intervention",
+	"url": "https://care.ucdavis.edu/bystander-intervention"
+}

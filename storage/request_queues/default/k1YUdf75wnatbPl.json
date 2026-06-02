@@ -1,0 +1,9 @@
+{
+	"id": "k1YUdf75wnatbPl",
+	"json": "{\"id\":\"k1YUdf75wnatbPl\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/42870/marcela-estrada-sacramento?OrgUnits=20\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/42870/marcela-estrada-sacramento?OrgUnits=20\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/42870/marcela-estrada-sacramento?OrgUnits=20\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:13.436Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/42870/marcela-estrada-sacramento?OrgUnits=20",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/42870/marcela-estrada-sacramento?OrgUnits=20"
+}

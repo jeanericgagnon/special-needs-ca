@@ -1,0 +1,9 @@
+{
+	"id": "QGsj2O3tUJovGMw",
+	"json": "{\"id\":\"QGsj2O3tUJovGMw\",\"url\":\"http://cdss.ca.gov/notice-on-collection\",\"loadedUrl\":\"https://cdss.ca.gov/notice-on-collection\",\"uniqueKey\":\"http://cdss.ca.gov/notice-on-collection\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:54.036Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://cdss.ca.gov/notice-on-collection",
+	"url": "http://cdss.ca.gov/notice-on-collection"
+}

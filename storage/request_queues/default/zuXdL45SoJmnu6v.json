@@ -1,0 +1,9 @@
+{
+	"id": "zuXdL45SoJmnu6v",
+	"json": "{\"id\":\"zuXdL45SoJmnu6v\",\"url\":\"https://www.chhs.ca.gov/blog/2016/09/21/hhs-open-data-fest-iii-videos-now-available/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2016/09/21/hhs-open-data-fest-iii-videos-now-available/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2016/09/21/hhs-open-data-fest-iii-videos-now-available\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:11.425Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chhs.ca.gov/blog/2016/09/21/hhs-open-data-fest-iii-videos-now-available",
+	"url": "https://www.chhs.ca.gov/blog/2016/09/21/hhs-open-data-fest-iii-videos-now-available/"
+}

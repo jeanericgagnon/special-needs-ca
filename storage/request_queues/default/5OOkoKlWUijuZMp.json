@@ -1,0 +1,9 @@
+{
+	"id": "5OOkoKlWUijuZMp",
+	"json": "{\"id\":\"5OOkoKlWUijuZMp\",\"url\":\"https://marbles.ucdavis.edu/aboutautism.html\",\"loadedUrl\":\"https://marbles.ucdavis.edu/aboutautism.html\",\"uniqueKey\":\"https://marbles.ucdavis.edu/aboutautism.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:23:58.115Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://marbles.ucdavis.edu/aboutautism.html",
+	"url": "https://marbles.ucdavis.edu/aboutautism.html"
+}

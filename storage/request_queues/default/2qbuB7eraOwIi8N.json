@@ -1,0 +1,9 @@
+{
+	"id": "2qbuB7eraOwIi8N",
+	"json": "{\"id\":\"2qbuB7eraOwIi8N\",\"url\":\"https://www.dds.ca.gov/services/icf/program-plan-information-and-development/\",\"loadedUrl\":\"https://www.dds.ca.gov/services/icf/program-plan-information-and-development/\",\"uniqueKey\":\"https://www.dds.ca.gov/services/icf/program-plan-information-and-development\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:10.301Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/services/icf/program-plan-information-and-development",
+	"url": "https://www.dds.ca.gov/services/icf/program-plan-information-and-development/"
+}

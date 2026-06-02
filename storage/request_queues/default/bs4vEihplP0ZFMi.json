@@ -1,0 +1,9 @@
+{
+	"id": "bs4vEihplP0ZFMi",
+	"json": "{\"id\":\"bs4vEihplP0ZFMi\",\"url\":\"https://health.ucdavis.edu/news/es/headlines/est-abierta-la-inscripcin-para-la-mini-escuela-de-medicina-2025-en-espaol/2025/09\",\"loadedUrl\":\"https://health.ucdavis.edu/news/es/headlines/est-abierta-la-inscripcin-para-la-mini-escuela-de-medicina-2025-en-espaol/2025/09\",\"uniqueKey\":\"https://health.ucdavis.edu/news/es/headlines/est-abierta-la-inscripcin-para-la-mini-escuela-de-medicina-2025-en-espaol/2025/09\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:57.807Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/news/es/headlines/est-abierta-la-inscripcin-para-la-mini-escuela-de-medicina-2025-en-espaol/2025/09",
+	"url": "https://health.ucdavis.edu/news/es/headlines/est-abierta-la-inscripcin-para-la-mini-escuela-de-medicina-2025-en-espaol/2025/09"
+}

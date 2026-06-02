@@ -1,0 +1,9 @@
+{
+	"id": "xgQKNMnFHqGkM9S",
+	"json": "{\"id\":\"xgQKNMnFHqGkM9S\",\"url\":\"https://www.cdph.ca.gov/Programs/OSPHLD/LFS/Pages/CLS-Trainee-Chemist.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/OSPHLD/LFS/Pages/CLS-Trainee-Chemist.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/OSPHLD/LFS/Pages/CLS-Trainee-Chemist.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:15:49.742Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/OSPHLD/LFS/Pages/CLS-Trainee-Chemist.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/OSPHLD/LFS/Pages/CLS-Trainee-Chemist.aspx"
+}

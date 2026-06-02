@@ -1,0 +1,9 @@
+{
+	"id": "ltLnU1bZJdy28Pa",
+	"json": "{\"id\":\"ltLnU1bZJdy28Pa\",\"url\":\"https://health.ucdavis.edu/mind-institute/registry/fragile-x\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/registry/fragile-x\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/registry/fragile-x\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:05:11.091Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mind-institute/registry/fragile-x",
+	"url": "https://health.ucdavis.edu/mind-institute/registry/fragile-x"
+}

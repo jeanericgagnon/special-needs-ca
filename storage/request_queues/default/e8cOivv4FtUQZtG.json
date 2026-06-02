@@ -1,0 +1,9 @@
+{
+	"id": "e8cOivv4FtUQZtG",
+	"json": "{\"id\":\"e8cOivv4FtUQZtG\",\"url\":\"https://www.calcareers.ca.gov/CalHRPublic/Jobs/CEAExemptInformation.aspx\",\"loadedUrl\":\"https://calcareers.ca.gov/CalHRPublic/Jobs/CEAExemptInformation.aspx\",\"uniqueKey\":\"https://www.calcareers.ca.gov/CalHRPublic/Jobs/CEAExemptInformation.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:17.521Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.calcareers.ca.gov/CalHRPublic/Jobs/CEAExemptInformation.aspx",
+	"url": "https://www.calcareers.ca.gov/CalHRPublic/Jobs/CEAExemptInformation.aspx"
+}

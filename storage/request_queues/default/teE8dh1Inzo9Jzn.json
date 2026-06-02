@@ -1,0 +1,9 @@
+{
+	"id": "teE8dh1Inzo9Jzn",
+	"json": "{\"id\":\"teE8dh1Inzo9Jzn\",\"url\":\"https://health.ucdavis.edu/medicalcenter/quality/commitment.html\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/about-patient-care/quality-safety/\",\"uniqueKey\":\"https://health.ucdavis.edu/medicalcenter/quality/commitment.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:49.070Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/medicalcenter/quality/commitment.html",
+	"url": "https://health.ucdavis.edu/medicalcenter/quality/commitment.html"
+}

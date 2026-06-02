@@ -1,0 +1,9 @@
+{
+	"id": "7L01UUOAwjeoGKu",
+	"json": "{\"id\":\"7L01UUOAwjeoGKu\",\"url\":\"https://www.cdss.ca.gov/inforesources/Civil-Rights/Compliance-Reviews\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/civil-rights/compliance-reviews\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/Civil-Rights/Compliance-Reviews\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:37.278Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/inforesources/Civil-Rights/Compliance-Reviews",
+	"url": "https://www.cdss.ca.gov/inforesources/Civil-Rights/Compliance-Reviews"
+}

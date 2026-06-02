@@ -1,0 +1,9 @@
+{
+	"id": "rr3LWyRrkePVWRS",
+	"json": "{\"id\":\"rr3LWyRrkePVWRS\",\"url\":\"https://cadeafblind.org/training-videos/\",\"loadedUrl\":\"https://cadeafblind.org/training-videos/\",\"uniqueKey\":\"https://cadeafblind.org/training-videos\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:49.017Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cadeafblind.org/training-videos",
+	"url": "https://cadeafblind.org/training-videos/"
+}

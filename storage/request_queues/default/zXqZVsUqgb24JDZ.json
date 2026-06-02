@@ -1,0 +1,9 @@
+{
+	"id": "zXqZVsUqgb24JDZ",
+	"json": "{\"id\":\"zXqZVsUqgb24JDZ\",\"url\":\"https://www.csd.ca.gov/Pages/Low-Income-Weatherization-Program.aspx\",\"loadedUrl\":\"https://www.csd.ca.gov/Pages/Low-Income-Weatherization-Program.aspx\",\"uniqueKey\":\"https://www.csd.ca.gov/Pages/Low-Income-Weatherization-Program.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:34.371Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csd.ca.gov/Pages/Low-Income-Weatherization-Program.aspx",
+	"url": "https://www.csd.ca.gov/Pages/Low-Income-Weatherization-Program.aspx"
+}

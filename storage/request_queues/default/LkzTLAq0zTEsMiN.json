@@ -1,0 +1,9 @@
+{
+	"id": "LkzTLAq0zTEsMiN",
+	"json": "{\"id\":\"LkzTLAq0zTEsMiN\",\"url\":\"https://rarediseases.org/living-with-a-rare-disease/clinical-trial-and-research-study-recruitment/\",\"loadedUrl\":\"https://rarediseases.org/living-with-a-rare-disease/find-clinical-trials/\",\"uniqueKey\":\"https://rarediseases.org/living-with-a-rare-disease/clinical-trial-and-research-study-recruitment\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:22:25.385Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/living-with-a-rare-disease/clinical-trial-and-research-study-recruitment",
+	"url": "https://rarediseases.org/living-with-a-rare-disease/clinical-trial-and-research-study-recruitment/"
+}

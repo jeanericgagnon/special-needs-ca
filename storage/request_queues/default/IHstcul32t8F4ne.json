@@ -1,0 +1,9 @@
+{
+	"id": "IHstcul32t8F4ne",
+	"json": "{\"id\":\"IHstcul32t8F4ne\",\"url\":\"https://iet.ucdavis.edu/uc-davis-computing-access-and-printing-services\",\"loadedUrl\":\"https://iet.ucdavis.edu/uc-davis-computing-access-and-printing-services\",\"uniqueKey\":\"https://iet.ucdavis.edu/uc-davis-computing-access-and-printing-services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:37.612Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://iet.ucdavis.edu/uc-davis-computing-access-and-printing-services",
+	"url": "https://iet.ucdavis.edu/uc-davis-computing-access-and-printing-services"
+}

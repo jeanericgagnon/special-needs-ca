@@ -1,0 +1,9 @@
+{
+	"id": "nFTOAqLohitymiO",
+	"json": "{\"id\":\"nFTOAqLohitymiO\",\"url\":\"https://ucp.org/about-ucp/subscribe-newsletter/\",\"loadedUrl\":\"https://ucp.org/about-ucp/subscribe-newsletter/\",\"uniqueKey\":\"https://ucp.org/about-ucp/subscribe-newsletter\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:24.158Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://ucp.org/about-ucp/subscribe-newsletter",
+	"url": "https://ucp.org/about-ucp/subscribe-newsletter/"
+}

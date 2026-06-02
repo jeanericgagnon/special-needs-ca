@@ -1,0 +1,9 @@
+{
+	"id": "WfSzwaJKa8re0O8",
+	"json": "{\"id\":\"WfSzwaJKa8re0O8\",\"url\":\"https://pod.ucdavis.edu/research-collaborators\",\"loadedUrl\":\"https://pod.ucdavis.edu/research-collaborators\",\"uniqueKey\":\"https://pod.ucdavis.edu/research-collaborators\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:56.946Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://pod.ucdavis.edu/research-collaborators",
+	"url": "https://pod.ucdavis.edu/research-collaborators"
+}

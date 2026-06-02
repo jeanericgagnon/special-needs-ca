@@ -1,0 +1,9 @@
+{
+	"id": "MqHe6QdTKWSO6W4",
+	"json": "{\"id\":\"MqHe6QdTKWSO6W4\",\"url\":\"https://neuroscience.ucdavis.edu/Post-Doctoral-Position\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/Post-Doctoral-Position\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/Post-Doctoral-Position\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:36.410Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://neuroscience.ucdavis.edu/Post-Doctoral-Position",
+	"url": "https://neuroscience.ucdavis.edu/Post-Doctoral-Position"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "Xiuv2pEQLKi2bhq",
+	"json": "{\"id\":\"Xiuv2pEQLKi2bhq\",\"url\":\"https://health.ucdavis.edu/internal-medicine/pulmonary/our-services/sleep-medicine-program\",\"loadedUrl\":\"https://health.ucdavis.edu/internal-medicine/pulmonary/our-services/sleep-medicine-program\",\"uniqueKey\":\"https://health.ucdavis.edu/internal-medicine/pulmonary/our-services/sleep-medicine-program\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:34:26.361Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/internal-medicine/pulmonary/our-services/sleep-medicine-program",
+	"url": "https://health.ucdavis.edu/internal-medicine/pulmonary/our-services/sleep-medicine-program"
+}

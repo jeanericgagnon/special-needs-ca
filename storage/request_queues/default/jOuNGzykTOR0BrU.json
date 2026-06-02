@@ -1,0 +1,9 @@
+{
+	"id": "jOuNGzykTOR0BrU",
+	"json": "{\"id\":\"jOuNGzykTOR0BrU\",\"url\":\"https://health.ucdavis.edu/news/headlines/nih-research-funding-fuels-innovation-and-health-discovery/2025/03\",\"loadedUrl\":\"https://health.ucdavis.edu/news/headlines/nih-research-funding-fuels-innovation-and-health-discovery/2025/03\",\"uniqueKey\":\"https://health.ucdavis.edu/news/headlines/nih-research-funding-fuels-innovation-and-health-discovery/2025/03\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:45:00.496Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/news/headlines/nih-research-funding-fuels-innovation-and-health-discovery/2025/03",
+	"url": "https://health.ucdavis.edu/news/headlines/nih-research-funding-fuels-innovation-and-health-discovery/2025/03"
+}

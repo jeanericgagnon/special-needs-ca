@@ -1,0 +1,9 @@
+{
+	"id": "awSSGRdg2Jm0kTd",
+	"json": "{\"id\":\"awSSGRdg2Jm0kTd\",\"url\":\"https://calable.ca.gov/#main\",\"loadedUrl\":\"https://calable.ca.gov/#main\",\"uniqueKey\":\"https://calable.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:12.694Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://calable.ca.gov",
+	"url": "https://calable.ca.gov/#main"
+}

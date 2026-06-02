@@ -1,0 +1,9 @@
+{
+	"id": "VrgieELSHHGg16r",
+	"json": "{\"id\":\"VrgieELSHHGg16r\",\"url\":\"https://cnprc.ucdavis.edu/2024-2025-pilot-grant-awardees\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/2024-2025-pilot-grant-awardees\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/2024-2025-pilot-grant-awardees\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:11.642Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cnprc.ucdavis.edu/2024-2025-pilot-grant-awardees",
+	"url": "https://cnprc.ucdavis.edu/2024-2025-pilot-grant-awardees"
+}

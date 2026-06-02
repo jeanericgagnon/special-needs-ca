@@ -1,0 +1,9 @@
+{
+	"id": "xfOrWvpBXKZsm7p",
+	"json": "{\"id\":\"xfOrWvpBXKZsm7p\",\"url\":\"https://care.ucdavis.edu/about-us\",\"loadedUrl\":\"https://care.ucdavis.edu/about-us\",\"uniqueKey\":\"https://care.ucdavis.edu/about-us\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:18.435Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://care.ucdavis.edu/about-us",
+	"url": "https://care.ucdavis.edu/about-us"
+}

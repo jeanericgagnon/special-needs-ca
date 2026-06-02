@@ -1,0 +1,9 @@
+{
+	"id": "lcCJ1cXMlSAmwct",
+	"json": "{\"id\":\"lcCJ1cXMlSAmwct\",\"url\":\"https://health.ucdavis.edu/news/headlines/uc-davis-nursing-and-medical-schools-awarded-for-diversity-education-for-third-time/2024/10\",\"loadedUrl\":\"https://health.ucdavis.edu/news/headlines/uc-davis-nursing-and-medical-schools-awarded-for-diversity-education-for-third-time/2024/10\",\"uniqueKey\":\"https://health.ucdavis.edu/news/headlines/uc-davis-nursing-and-medical-schools-awarded-for-diversity-education-for-third-time/2024/10\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:00.978Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/news/headlines/uc-davis-nursing-and-medical-schools-awarded-for-diversity-education-for-third-time/2024/10",
+	"url": "https://health.ucdavis.edu/news/headlines/uc-davis-nursing-and-medical-schools-awarded-for-diversity-education-for-third-time/2024/10"
+}

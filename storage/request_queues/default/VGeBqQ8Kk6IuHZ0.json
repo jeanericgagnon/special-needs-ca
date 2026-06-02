@@ -1,0 +1,9 @@
+{
+	"id": "VGeBqQ8Kk6IuHZ0",
+	"json": "{\"id\":\"VGeBqQ8Kk6IuHZ0\",\"url\":\"https://www.gov.ca.gov/2026/05/28/governor-newsom-announces-new-funding-for-nonprofits-and-faith-based-groups-following-san-diego-mosque-shooting/\",\"loadedUrl\":\"https://www.gov.ca.gov/2026/05/28/governor-newsom-announces-new-funding-for-nonprofits-and-faith-based-groups-following-san-diego-mosque-shooting/\",\"uniqueKey\":\"https://www.gov.ca.gov/2026/05/28/governor-newsom-announces-new-funding-for-nonprofits-and-faith-based-groups-following-san-diego-mosque-shooting\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:49.084Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.gov.ca.gov/2026/05/28/governor-newsom-announces-new-funding-for-nonprofits-and-faith-based-groups-following-san-diego-mosque-shooting",
+	"url": "https://www.gov.ca.gov/2026/05/28/governor-newsom-announces-new-funding-for-nonprofits-and-faith-based-groups-following-san-diego-mosque-shooting/"
+}

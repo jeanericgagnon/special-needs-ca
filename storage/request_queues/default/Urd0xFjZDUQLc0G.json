@@ -1,0 +1,9 @@
+{
+	"id": "Urd0xFjZDUQLc0G",
+	"json": "{\"id\":\"Urd0xFjZDUQLc0G\",\"url\":\"https://care.ucdavis.edu/healthy-relationships\",\"loadedUrl\":\"https://care.ucdavis.edu/healthy-relationships\",\"uniqueKey\":\"https://care.ucdavis.edu/healthy-relationships\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:01.083Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://care.ucdavis.edu/healthy-relationships",
+	"url": "https://care.ucdavis.edu/healthy-relationships"
+}

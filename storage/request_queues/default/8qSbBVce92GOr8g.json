@@ -1,0 +1,9 @@
+{
+	"id": "8qSbBVce92GOr8g",
+	"json": "{\"id\":\"8qSbBVce92GOr8g\",\"url\":\"https://health.ucdavis.edu/nursingmagazine/\",\"loadedUrl\":\"https://health.ucdavis.edu/nursingmagazine/\",\"uniqueKey\":\"https://health.ucdavis.edu/nursingmagazine\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:25.249Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/nursingmagazine",
+	"url": "https://health.ucdavis.edu/nursingmagazine/"
+}

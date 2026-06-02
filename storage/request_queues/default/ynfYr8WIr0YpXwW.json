@@ -1,0 +1,9 @@
+{
+	"id": "ynfYr8WIr0YpXwW",
+	"json": "{\"id\":\"ynfYr8WIr0YpXwW\",\"url\":\"https://www.globaldownsyndrome.org/zh/global-donation-form/\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/zh/global-donation-form/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/zh/global-donation-form\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:24.032Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.globaldownsyndrome.org/zh/global-donation-form",
+	"url": "https://www.globaldownsyndrome.org/zh/global-donation-form/"
+}

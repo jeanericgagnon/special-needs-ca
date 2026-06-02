@@ -1,0 +1,9 @@
+{
+	"id": "sHze8MIhWi2nz73",
+	"json": "{\"id\":\"sHze8MIhWi2nz73\",\"url\":\"https://www.ca.gov/services/all/?q=where%27s+my+refund+\",\"loadedUrl\":\"https://www.ca.gov/services/all/?q=where%27s+my+refund+\",\"uniqueKey\":\"https://www.ca.gov/services/all?q=where%27s+my+refund+\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:29.032Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ca.gov/services/all?q=where%27s+my+refund+",
+	"url": "https://www.ca.gov/services/all/?q=where%27s+my+refund+"
+}

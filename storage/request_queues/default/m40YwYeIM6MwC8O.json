@@ -1,0 +1,9 @@
+{
+	"id": "m40YwYeIM6MwC8O",
+	"json": "{\"id\":\"m40YwYeIM6MwC8O\",\"url\":\"https://climateaction.ca.gov/home-energy/\",\"loadedUrl\":\"https://climateaction.ca.gov/home-energy/\",\"uniqueKey\":\"https://climateaction.ca.gov/home-energy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:46.701Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://climateaction.ca.gov/home-energy",
+	"url": "https://climateaction.ca.gov/home-energy/"
+}

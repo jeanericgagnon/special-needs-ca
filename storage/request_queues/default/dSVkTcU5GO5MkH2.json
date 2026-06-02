@@ -1,0 +1,9 @@
+{
+	"id": "dSVkTcU5GO5MkH2",
+	"json": "{\"id\":\"dSVkTcU5GO5MkH2\",\"url\":\"https://www.dgs.ca.gov/OAH/Case-Types/Special-Education/Self-Help/The-Mediation-Process-Including-Virtual-Mediations\",\"loadedUrl\":\"https://www.dgs.ca.gov/OAH/Case-Types/Special-Education/Self-Help/The-Mediation-Process-Including-Virtual-Mediations\",\"uniqueKey\":\"https://www.dgs.ca.gov/OAH/Case-Types/Special-Education/Self-Help/The-Mediation-Process-Including-Virtual-Mediations\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:38.187Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dgs.ca.gov/OAH/Case-Types/Special-Education/Self-Help/The-Mediation-Process-Including-Virtual-Mediations",
+	"url": "https://www.dgs.ca.gov/OAH/Case-Types/Special-Education/Self-Help/The-Mediation-Process-Including-Virtual-Mediations"
+}

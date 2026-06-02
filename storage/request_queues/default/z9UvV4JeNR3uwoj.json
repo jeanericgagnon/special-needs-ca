@@ -1,0 +1,9 @@
+{
+	"id": "z9UvV4JeNR3uwoj",
+	"json": "{\"id\":\"z9UvV4JeNR3uwoj\",\"url\":\"https://www.gov.ca.gov/about/first-partner/ca-for-all-kids/outdooraccessforall/\",\"loadedUrl\":\"https://www.gov.ca.gov/about/first-partner/ca-for-all-kids/outdooraccessforall/\",\"uniqueKey\":\"https://www.gov.ca.gov/about/first-partner/ca-for-all-kids/outdooraccessforall\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:56.044Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.gov.ca.gov/about/first-partner/ca-for-all-kids/outdooraccessforall",
+	"url": "https://www.gov.ca.gov/about/first-partner/ca-for-all-kids/outdooraccessforall/"
+}

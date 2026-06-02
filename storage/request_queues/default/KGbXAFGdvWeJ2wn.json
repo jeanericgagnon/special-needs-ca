@@ -1,0 +1,9 @@
+{
+	"id": "KGbXAFGdvWeJ2wn",
+	"json": "{\"id\":\"KGbXAFGdvWeJ2wn\",\"url\":\"https://org.ucdavis.edu/odr\",\"loadedUrl\":\"https://cas.ucdavis.edu/cas/login?service=https%3A%2F%2Fcas.ucdavis.edu%2Fcas%2Foauth2.0%2FcallbackAuthorize%3Fclient_id%3Dc2q5Jecd2DFbfpziEAvObtKLFHoq2XJSftsN%26redirect_uri%3Dhttps%253A%252F%252Forg.ucdavis.edu%252Fodr%252Flogin%252Foauth2%252Fcode%252Fucdavis%26response_type%3Dcode%26state%3DxhT_lDuWDM7rkfqmqAKDrLO0xQqIj1ACf2iLtc0-exY%253D%26client_name%3DCasOAuthClient\",\"uniqueKey\":\"https://org.ucdavis.edu/odr\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:30.722Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://org.ucdavis.edu/odr",
+	"url": "https://org.ucdavis.edu/odr"
+}

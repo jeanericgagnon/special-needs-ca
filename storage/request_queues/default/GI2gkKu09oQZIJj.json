@@ -1,0 +1,9 @@
+{
+	"id": "GI2gkKu09oQZIJj",
+	"json": "{\"id\":\"GI2gkKu09oQZIJj\",\"url\":\"https://www.ucdavis.edu/about/administration\",\"loadedUrl\":\"https://www.ucdavis.edu/about/administration\",\"uniqueKey\":\"https://www.ucdavis.edu/about/administration\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:40.664Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ucdavis.edu/about/administration",
+	"url": "https://www.ucdavis.edu/about/administration"
+}

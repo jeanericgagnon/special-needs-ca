@@ -1,0 +1,9 @@
+{
+	"id": "FNLiPOfkG5zTxfa",
+	"json": "{\"id\":\"FNLiPOfkG5zTxfa\",\"url\":\"https://mindbrain.ucdavis.edu/research-opportunities-uc-davis-grad-students\",\"loadedUrl\":\"https://mindbrain.ucdavis.edu/research-opportunities-uc-davis-grad-students\",\"uniqueKey\":\"https://mindbrain.ucdavis.edu/research-opportunities-uc-davis-grad-students\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:03.469Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://mindbrain.ucdavis.edu/research-opportunities-uc-davis-grad-students",
+	"url": "https://mindbrain.ucdavis.edu/research-opportunities-uc-davis-grad-students"
+}

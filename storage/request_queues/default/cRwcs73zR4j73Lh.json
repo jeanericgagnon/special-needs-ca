@@ -1,0 +1,9 @@
+{
+	"id": "cRwcs73zR4j73Lh",
+	"json": "{\"id\":\"cRwcs73zR4j73Lh\",\"url\":\"http://www.leginfo.ca.gov/pub/07-08/bill/sen/sb_0001-0050/sb_39_bill_20071011_chaptered.html\",\"loadedUrl\":\"https://www.leginfo.ca.gov/pub/07-08/bill/sen/sb_0001-0050/sb_39_bill_20071011_chaptered.html\",\"uniqueKey\":\"http://www.leginfo.ca.gov/pub/07-08/bill/sen/sb_0001-0050/sb_39_bill_20071011_chaptered.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:02.341Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.leginfo.ca.gov/pub/07-08/bill/sen/sb_0001-0050/sb_39_bill_20071011_chaptered.html",
+	"url": "http://www.leginfo.ca.gov/pub/07-08/bill/sen/sb_0001-0050/sb_39_bill_20071011_chaptered.html"
+}

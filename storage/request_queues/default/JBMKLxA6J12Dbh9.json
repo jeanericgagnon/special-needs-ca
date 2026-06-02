@@ -1,0 +1,9 @@
+{
+	"id": "JBMKLxA6J12Dbh9",
+	"json": "{\"id\":\"JBMKLxA6J12Dbh9\",\"url\":\"https://health.ucdavis.edu/medical-center/visiting/finding-your-way\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-center/visiting/finding-your-way\",\"uniqueKey\":\"https://health.ucdavis.edu/medical-center/visiting/finding-your-way\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:37.039Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/medical-center/visiting/finding-your-way",
+	"url": "https://health.ucdavis.edu/medical-center/visiting/finding-your-way"
+}

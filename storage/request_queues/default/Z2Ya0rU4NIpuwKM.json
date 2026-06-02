@@ -1,0 +1,9 @@
+{
+	"id": "Z2Ya0rU4NIpuwKM",
+	"json": "{\"id\":\"Z2Ya0rU4NIpuwKM\",\"url\":\"https://www.gov.ca.gov/2023/12/21/california-awards-150-million-to-support-mental-health-programs-for-youth-and-young-adults/\",\"loadedUrl\":\"https://www.gov.ca.gov/2023/12/21/california-awards-150-million-to-support-mental-health-programs-for-youth-and-young-adults/\",\"uniqueKey\":\"https://www.gov.ca.gov/2023/12/21/california-awards-150-million-to-support-mental-health-programs-for-youth-and-young-adults\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:38.407Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.gov.ca.gov/2023/12/21/california-awards-150-million-to-support-mental-health-programs-for-youth-and-young-adults",
+	"url": "https://www.gov.ca.gov/2023/12/21/california-awards-150-million-to-support-mental-health-programs-for-youth-and-young-adults/"
+}

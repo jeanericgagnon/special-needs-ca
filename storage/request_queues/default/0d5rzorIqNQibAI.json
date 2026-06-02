@@ -1,0 +1,9 @@
+{
+	"id": "0d5rzorIqNQibAI",
+	"json": "{\"id\":\"0d5rzorIqNQibAI\",\"url\":\"https://www.cdss.ca.gov/inforesources/cdss-programs/community-care-expansion\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/cdss-programs/community-care-expansion\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/cdss-programs/community-care-expansion\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:04.102Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/inforesources/cdss-programs/community-care-expansion",
+	"url": "https://www.cdss.ca.gov/inforesources/cdss-programs/community-care-expansion"
+}

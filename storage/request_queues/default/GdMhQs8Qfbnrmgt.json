@@ -1,0 +1,9 @@
+{
+	"id": "GdMhQs8Qfbnrmgt",
+	"json": "{\"id\":\"GdMhQs8Qfbnrmgt\",\"url\":\"https://health.ucdavis.edu/patients-visitors/news/headlines/video-series-aims-at-improving-indoor-air-quality/2024/10\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/news/headlines/video-series-aims-at-improving-indoor-air-quality/2024/10\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/news/headlines/video-series-aims-at-improving-indoor-air-quality/2024/10\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:05.490Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/news/headlines/video-series-aims-at-improving-indoor-air-quality/2024/10",
+	"url": "https://health.ucdavis.edu/patients-visitors/news/headlines/video-series-aims-at-improving-indoor-air-quality/2024/10"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "Ux5A7xhAW7RvKax",
+	"json": "{\"id\":\"Ux5A7xhAW7RvKax\",\"url\":\"https://health.ucdavis.edu/healthy-aging/services/healthy-aging-clinic\",\"loadedUrl\":\"https://health.ucdavis.edu/healthy-aging/services/healthy-aging-clinic\",\"uniqueKey\":\"https://health.ucdavis.edu/healthy-aging/services/healthy-aging-clinic\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:56.547Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/healthy-aging/services/healthy-aging-clinic",
+	"url": "https://health.ucdavis.edu/healthy-aging/services/healthy-aging-clinic"
+}

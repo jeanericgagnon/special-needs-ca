@@ -1,0 +1,9 @@
+{
+	"id": "x5MP81IQ3A8HQFv",
+	"json": "{\"id\":\"x5MP81IQ3A8HQFv\",\"url\":\"https://www.senate.ca.gov/senate-oversight-hearings\",\"loadedUrl\":\"https://www.senate.ca.gov/senate-oversight-hearings\",\"uniqueKey\":\"https://www.senate.ca.gov/senate-oversight-hearings\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:56.311Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.senate.ca.gov/senate-oversight-hearings",
+	"url": "https://www.senate.ca.gov/senate-oversight-hearings"
+}

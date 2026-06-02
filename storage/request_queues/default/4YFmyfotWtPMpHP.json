@@ -1,0 +1,9 @@
+{
+	"id": "4YFmyfotWtPMpHP",
+	"json": "{\"id\":\"4YFmyfotWtPMpHP\",\"url\":\"https://nordahllab.faculty.ucdavis.edu/team/faculty/\",\"loadedUrl\":\"https://nordahllab.faculty.ucdavis.edu/team/faculty/\",\"uniqueKey\":\"https://nordahllab.faculty.ucdavis.edu/team/faculty\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:56.824Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://nordahllab.faculty.ucdavis.edu/team/faculty",
+	"url": "https://nordahllab.faculty.ucdavis.edu/team/faculty/"
+}

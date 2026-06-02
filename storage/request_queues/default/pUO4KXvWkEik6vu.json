@@ -1,0 +1,9 @@
+{
+	"id": "pUO4KXvWkEik6vu",
+	"json": "{\"id\":\"pUO4KXvWkEik6vu\",\"url\":\"https://scdd.ca.gov/event/hablemos-aprendiendo-mas-alla-de-lo-basico-acompanenos-a-una-serie-interactiva-de-seis-sesiones-para-aprender-mas-alla-de-lo-basico-puede-asistir-a-una-o-a-todas-las-sesiones/\",\"loadedUrl\":\"https://scdd.ca.gov/event/hablemos-aprendiendo-mas-alla-de-lo-basico-acompanenos-a-una-serie-interactiva-de-seis-sesiones-para-aprender-mas-alla-de-lo-basico-puede-asistir-a-una-o-a-todas-las-sesiones/\",\"uniqueKey\":\"https://scdd.ca.gov/event/hablemos-aprendiendo-mas-alla-de-lo-basico-acompanenos-a-una-serie-interactiva-de-seis-sesiones-para-aprender-mas-alla-de-lo-basico-puede-asistir-a-una-o-a-todas-las-sesiones\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:30.493Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/event/hablemos-aprendiendo-mas-alla-de-lo-basico-acompanenos-a-una-serie-interactiva-de-seis-sesiones-para-aprender-mas-alla-de-lo-basico-puede-asistir-a-una-o-a-todas-las-sesiones",
+	"url": "https://scdd.ca.gov/event/hablemos-aprendiendo-mas-alla-de-lo-basico-acompanenos-a-una-serie-interactiva-de-seis-sesiones-para-aprender-mas-alla-de-lo-basico-puede-asistir-a-una-o-a-todas-las-sesiones/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "lIfwI5n1NVPNJq1",
+	"json": "{\"id\":\"lIfwI5n1NVPNJq1\",\"url\":\"https://cmgi.ucdavis.edu/contact-us/location-and-directions/\",\"loadedUrl\":\"https://cmgi.ucdavis.edu/contact-us/location-and-directions/\",\"uniqueKey\":\"https://cmgi.ucdavis.edu/contact-us/location-and-directions\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:08.165Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cmgi.ucdavis.edu/contact-us/location-and-directions",
+	"url": "https://cmgi.ucdavis.edu/contact-us/location-and-directions/"
+}

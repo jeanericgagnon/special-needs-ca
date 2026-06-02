@@ -1,0 +1,9 @@
+{
+	"id": "UEuYZs6gNUXTvNJ",
+	"json": "{\"id\":\"UEuYZs6gNUXTvNJ\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/1388/tianhong-li-lung-disease-breast-disease-hematologyoncology-breast-lung-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/1388/tianhong-li-lung-disease-breast-disease-hematologyoncology-breast-lung-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/1388/tianhong-li-lung-disease-breast-disease-hematologyoncology-breast-lung-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:10.828Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/1388/tianhong-li-lung-disease-breast-disease-hematologyoncology-breast-lung-sacramento",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/1388/tianhong-li-lung-disease-breast-disease-hematologyoncology-breast-lung-sacramento"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "x7Rsd6I7ifhsfAp",
+	"json": "{\"id\":\"x7Rsd6I7ifhsfAp\",\"url\":\"https://www.chhs.ca.gov/blog/2017/09/26/reported-sexually-transmitted-diseases-reach-time-high-california/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2017/09/26/reported-sexually-transmitted-diseases-reach-time-high-california/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2017/09/26/reported-sexually-transmitted-diseases-reach-time-high-california\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:17.020Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chhs.ca.gov/blog/2017/09/26/reported-sexually-transmitted-diseases-reach-time-high-california",
+	"url": "https://www.chhs.ca.gov/blog/2017/09/26/reported-sexually-transmitted-diseases-reach-time-high-california/"
+}

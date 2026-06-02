@@ -1,0 +1,9 @@
+{
+	"id": "pjOLUv4uJjSrU41",
+	"json": "{\"id\":\"pjOLUv4uJjSrU41\",\"url\":\"https://www.ucdavis.edu/news/3-rankings-recognize-uc-davis-research-social-mobility-value\",\"loadedUrl\":\"https://www.ucdavis.edu/news/3-rankings-recognize-uc-davis-research-social-mobility-value\",\"uniqueKey\":\"https://www.ucdavis.edu/news/3-rankings-recognize-uc-davis-research-social-mobility-value\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:56.545Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ucdavis.edu/news/3-rankings-recognize-uc-davis-research-social-mobility-value",
+	"url": "https://www.ucdavis.edu/news/3-rankings-recognize-uc-davis-research-social-mobility-value"
+}

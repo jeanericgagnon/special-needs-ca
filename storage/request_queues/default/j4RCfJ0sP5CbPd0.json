@@ -1,0 +1,9 @@
+{
+	"id": "j4RCfJ0sP5CbPd0",
+	"json": "{\"id\":\"j4RCfJ0sP5CbPd0\",\"url\":\"http://www.caloes.ca.gov/\",\"loadedUrl\":\"https://www.caloes.ca.gov/\",\"uniqueKey\":\"http://www.caloes.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:41.147Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.caloes.ca.gov",
+	"url": "http://www.caloes.ca.gov/"
+}

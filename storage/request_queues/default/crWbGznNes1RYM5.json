@@ -1,0 +1,9 @@
+{
+	"id": "crWbGznNes1RYM5",
+	"json": "{\"id\":\"crWbGznNes1RYM5\",\"url\":\"https://give.ucdavis.edu/BPLB/0836GHS\",\"loadedUrl\":\"https://give.ucdavis.edu/BPLB/0836GHS\",\"uniqueKey\":\"https://give.ucdavis.edu/BPLB/0836GHS\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:54.425Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/BPLB/0836GHS",
+	"url": "https://give.ucdavis.edu/BPLB/0836GHS"
+}

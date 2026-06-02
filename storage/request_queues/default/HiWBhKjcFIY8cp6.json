@@ -1,0 +1,9 @@
+{
+	"id": "HiWBhKjcFIY8cp6",
+	"json": "{\"id\":\"HiWBhKjcFIY8cp6\",\"url\":\"https://alumni.ucdavis.edu/career-resources/established-professional\",\"loadedUrl\":\"https://alumni.ucdavis.edu/career-resources/established-professional\",\"uniqueKey\":\"https://alumni.ucdavis.edu/career-resources/established-professional\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:06.230Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://alumni.ucdavis.edu/career-resources/established-professional",
+	"url": "https://alumni.ucdavis.edu/career-resources/established-professional"
+}

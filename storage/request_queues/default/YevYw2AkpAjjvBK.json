@@ -1,0 +1,9 @@
+{
+	"id": "YevYw2AkpAjjvBK",
+	"json": "{\"id\":\"YevYw2AkpAjjvBK\",\"url\":\"https://health.ucdavis.edu/children/patient-education/pediatric-tracheostomy/tracheostomy-travel\",\"loadedUrl\":\"https://health.ucdavis.edu/children/patient-education/pediatric-tracheostomy/tracheostomy-travel\",\"uniqueKey\":\"https://health.ucdavis.edu/children/patient-education/pediatric-tracheostomy/tracheostomy-travel\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:58.370Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/children/patient-education/pediatric-tracheostomy/tracheostomy-travel",
+	"url": "https://health.ucdavis.edu/children/patient-education/pediatric-tracheostomy/tracheostomy-travel"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "0CZjSYeElhy5d37",
+	"json": "{\"id\":\"0CZjSYeElhy5d37\",\"url\":\"https://cdss.ca.gov/Benefits-Services/Food-Nutrition\",\"loadedUrl\":\"https://cdss.ca.gov/benefits-services/food-nutrition\",\"uniqueKey\":\"https://cdss.ca.gov/Benefits-Services/Food-Nutrition\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:58:53.522Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/Benefits-Services/Food-Nutrition",
+	"url": "https://cdss.ca.gov/Benefits-Services/Food-Nutrition"
+}

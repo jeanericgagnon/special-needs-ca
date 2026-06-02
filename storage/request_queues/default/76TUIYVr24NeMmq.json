@@ -1,0 +1,9 @@
+{
+	"id": "76TUIYVr24NeMmq",
+	"json": "{\"id\":\"76TUIYVr24NeMmq\",\"url\":\"https://www.dds.ca.gov/category/toolkits/\",\"loadedUrl\":\"https://www.dds.ca.gov/category/toolkits/\",\"uniqueKey\":\"https://www.dds.ca.gov/category/toolkits\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:04.784Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/category/toolkits",
+	"url": "https://www.dds.ca.gov/category/toolkits/"
+}

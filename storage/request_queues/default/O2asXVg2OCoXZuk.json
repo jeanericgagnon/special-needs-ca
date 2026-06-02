@@ -1,0 +1,9 @@
+{
+	"id": "O2asXVg2OCoXZuk",
+	"json": "{\"id\":\"O2asXVg2OCoXZuk\",\"url\":\"https://health.ucdavis.edu/pediatrics/team/21742/gayatri-mahajan\",\"loadedUrl\":\"https://health.ucdavis.edu/pediatrics/team/21742/gayatri-mahajan\",\"uniqueKey\":\"https://health.ucdavis.edu/pediatrics/team/21742/gayatri-mahajan\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:57.748Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/pediatrics/team/21742/gayatri-mahajan",
+	"url": "https://health.ucdavis.edu/pediatrics/team/21742/gayatri-mahajan"
+}

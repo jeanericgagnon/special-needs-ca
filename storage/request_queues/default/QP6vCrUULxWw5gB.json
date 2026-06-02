@@ -1,0 +1,9 @@
+{
+	"id": "QP6vCrUULxWw5gB",
+	"json": "{\"id\":\"QP6vCrUULxWw5gB\",\"url\":\"https://www.cdss.ca.gov/inforesources/Community-Care/Caregiver-Background-Check/Transfer-Exemptions\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/community-care/caregiver-background-check/transfer-exemptions\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/Community-Care/Caregiver-Background-Check/Transfer-Exemptions\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:10.020Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/inforesources/Community-Care/Caregiver-Background-Check/Transfer-Exemptions",
+	"url": "https://www.cdss.ca.gov/inforesources/Community-Care/Caregiver-Background-Check/Transfer-Exemptions"
+}

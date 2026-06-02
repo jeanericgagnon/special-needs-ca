@@ -1,0 +1,9 @@
+{
+	"id": "h0aPicigjxLfOdd",
+	"json": "{\"id\":\"h0aPicigjxLfOdd\",\"url\":\"https://www.cdtfa.ca.gov/services/resources.htm\",\"loadedUrl\":\"https://cdtfa.ca.gov/services/resources.htm\",\"uniqueKey\":\"https://www.cdtfa.ca.gov/services/resources.htm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:23.389Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdtfa.ca.gov/services/resources.htm",
+	"url": "https://www.cdtfa.ca.gov/services/resources.htm"
+}

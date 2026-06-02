@@ -1,0 +1,9 @@
+{
+	"id": "KQRCvxKhPF5rA9L",
+	"json": "{\"id\":\"KQRCvxKhPF5rA9L\",\"url\":\"https://www.cdss.ca.gov/inforesources/Information-Resources/Program-and-Legislative-Reports/Adult-Programs-Reports\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/information-resources/program-and-legislative-reports/adult-programs-reports\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/Information-Resources/Program-and-Legislative-Reports/Adult-Programs-Reports\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:06.334Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/inforesources/Information-Resources/Program-and-Legislative-Reports/Adult-Programs-Reports",
+	"url": "https://www.cdss.ca.gov/inforesources/Information-Resources/Program-and-Legislative-Reports/Adult-Programs-Reports"
+}

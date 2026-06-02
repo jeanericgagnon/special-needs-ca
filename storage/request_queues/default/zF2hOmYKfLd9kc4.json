@@ -1,0 +1,9 @@
+{
+	"id": "zF2hOmYKfLd9kc4",
+	"json": "{\"id\":\"zF2hOmYKfLd9kc4\",\"url\":\"https://scdd.ca.gov/qap/\",\"loadedUrl\":\"https://scdd.ca.gov/qap/\",\"uniqueKey\":\"https://scdd.ca.gov/qap\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:20.248Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/qap",
+	"url": "https://scdd.ca.gov/qap/"
+}

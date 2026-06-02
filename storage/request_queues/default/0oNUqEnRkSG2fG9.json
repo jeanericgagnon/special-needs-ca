@@ -1,0 +1,9 @@
+{
+	"id": "0oNUqEnRkSG2fG9",
+	"json": "{\"id\":\"0oNUqEnRkSG2fG9\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/32322/elizabeth-partridge-infectious_diseases-sacramento?FreeText:Last+name=Partridge\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/32322/elizabeth-partridge-infectious_diseases-sacramento?FreeText:Last+name=Partridge\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/32322/elizabeth-partridge-infectious_diseases-sacramento?FreeText%3ALast+name=Partridge\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:17.586Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/32322/elizabeth-partridge-infectious_diseases-sacramento?FreeText%3ALast+name=Partridge",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/32322/elizabeth-partridge-infectious_diseases-sacramento?FreeText:Last+name=Partridge"
+}

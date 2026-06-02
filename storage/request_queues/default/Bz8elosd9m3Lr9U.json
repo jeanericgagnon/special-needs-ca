@@ -1,0 +1,9 @@
+{
+	"id": "Bz8elosd9m3Lr9U",
+	"json": "{\"id\":\"Bz8elosd9m3Lr9U\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/42930/jonathan-kohler-pediatric_surgery-surgery_-_pediatric-sacramento?FreeText%3aLast+name=Kohler\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/42930/jonathan-kohler-pediatric_surgery-surgery_-_pediatric-sacramento?FreeText%3aLast+name=Kohler\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/42930/jonathan-kohler-pediatric_surgery-surgery_-_pediatric-sacramento?FreeText%3ALast+name=Kohler\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:18.595Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/42930/jonathan-kohler-pediatric_surgery-surgery_-_pediatric-sacramento?FreeText%3ALast+name=Kohler",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/42930/jonathan-kohler-pediatric_surgery-surgery_-_pediatric-sacramento?FreeText%3aLast+name=Kohler"
+}

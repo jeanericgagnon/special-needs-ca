@@ -1,0 +1,9 @@
+{
+	"id": "3Iw9jEGeqEtlTRw",
+	"json": "{\"id\":\"3Iw9jEGeqEtlTRw\",\"url\":\"https://www.ucdavis.edu/admissions/professional-school-admissions\",\"loadedUrl\":\"https://www.ucdavis.edu/admissions/professional-school-admissions\",\"uniqueKey\":\"https://www.ucdavis.edu/admissions/professional-school-admissions\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:43.718Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ucdavis.edu/admissions/professional-school-admissions",
+	"url": "https://www.ucdavis.edu/admissions/professional-school-admissions"
+}

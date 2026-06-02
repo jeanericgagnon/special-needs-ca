@@ -1,0 +1,9 @@
+{
+	"id": "E782ylJsxHqFYYs",
+	"json": "{\"id\":\"E782ylJsxHqFYYs\",\"url\":\"https://health.ucdavis.edu/treatments/minimally-invasive-surgery\",\"loadedUrl\":\"https://health.ucdavis.edu/treatments/minimally-invasive-surgery\",\"uniqueKey\":\"https://health.ucdavis.edu/treatments/minimally-invasive-surgery\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:45.771Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/treatments/minimally-invasive-surgery",
+	"url": "https://health.ucdavis.edu/treatments/minimally-invasive-surgery"
+}

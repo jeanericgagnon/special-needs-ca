@@ -1,0 +1,9 @@
+{
+	"id": "GJBM5h1t9n0mZ0R",
+	"json": "{\"id\":\"GJBM5h1t9n0mZ0R\",\"url\":\"https://lettersandscience.ucdavis.edu/uc-davis-delivers?utm_source=website-main&utm_medium=research-button\",\"loadedUrl\":\"https://lettersandscience.ucdavis.edu/uc-davis-delivers?utm_source=website-main&utm_medium=research-button\",\"uniqueKey\":\"https://lettersandscience.ucdavis.edu/uc-davis-delivers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:24.032Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://lettersandscience.ucdavis.edu/uc-davis-delivers",
+	"url": "https://lettersandscience.ucdavis.edu/uc-davis-delivers?utm_source=website-main&utm_medium=research-button"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "X7HtgylGopHq1f2",
+	"json": "{\"id\":\"X7HtgylGopHq1f2\",\"url\":\"https://frcnca.org/members-only/\",\"loadedUrl\":\"https://frcnca.org/members-only/\",\"uniqueKey\":\"https://frcnca.org/members-only\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:08.294Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://frcnca.org/members-only",
+	"url": "https://frcnca.org/members-only/"
+}

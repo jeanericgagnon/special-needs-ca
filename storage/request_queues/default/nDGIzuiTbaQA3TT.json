@@ -1,0 +1,9 @@
+{
+	"id": "nDGIzuiTbaQA3TT",
+	"json": "{\"id\":\"nDGIzuiTbaQA3TT\",\"url\":\"https://www.chhs.ca.gov/home/committees/california-child-welfare-council/\",\"loadedUrl\":\"https://www.chhs.ca.gov/home/committees/california-child-welfare-council/\",\"uniqueKey\":\"https://www.chhs.ca.gov/home/committees/california-child-welfare-council\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:15.331Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chhs.ca.gov/home/committees/california-child-welfare-council",
+	"url": "https://www.chhs.ca.gov/home/committees/california-child-welfare-council/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "oD7P2uNZ50EgG6J",
+	"json": "{\"id\":\"oD7P2uNZ50EgG6J\",\"url\":\"https://dq.cde.ca.gov/dataquest/DQCensus/TchAssgnOutcome.aspx?agglevel=State&cds=00&year=2023-24\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=5e9bba02-0f42-4ddf-9b3a-bd4ffa479960&ssb=26361336075&ssc=https%3A%2F%2Fdq.cde.ca.gov%2Fdataquest%2FDQCensus%2FTchAssgnOutcome.aspx%3Fagglevel%3DState%26cds%3D00%26year%3D2023-24&ssi=c013e2e0-cuen-4ec6-94b5-18dd6c6a8a0c&ssk=botmanager_support@radware.com&ssm=52394851612876049107604804850703&ssn=89e06f2d986bd12beb65eb911235eb3850536080a214-9135-4626-bd1330&sso=e43fa602-a1544a80f25b2968bccc234842526fe45b48d417d99989dd&ssp=34535548861780311461178034651302118&ssq=99452735614974107255556149584373631557767&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Windows%20NT%2010.0;%20Win64;%20x64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/145.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDA2MDgwYTIxNC05MTM1LTQ2MjYtYjYwMi1hMTU0NGE4MGYyNWIxLTE3ODAzNTYxNDk2MzEwLTAwMzE5NWUxYTA5YTRhMjYxZTIxMCIsInV6bXgiOiI3ZjkwMDAzOTMwNTQ1Zi00YWViLTQ4ZGQtOGIxZC1lYTAwYjFiOThlMGUxLTE3ODAzNTUzMDM0NDk4NDYxODItNThlMGU3YmUzNDc0MzczNDEzIiwicmQiOiJjYS5nb3YifQ==\",\"uniqueKey\":\"https://dq.cde.ca.gov/dataquest/DQCensus/TchAssgnOutcome.aspx?agglevel=State&cds=00&year=2023-24\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T23:22:30.201Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://dq.cde.ca.gov/dataquest/DQCensus/TchAssgnOutcome.aspx?agglevel=State&cds=00&year=2023-24",
+	"url": "https://dq.cde.ca.gov/dataquest/DQCensus/TchAssgnOutcome.aspx?agglevel=State&cds=00&year=2023-24"
+}

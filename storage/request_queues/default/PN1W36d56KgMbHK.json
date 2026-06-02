@@ -1,0 +1,9 @@
+{
+	"id": "PN1W36d56KgMbHK",
+	"json": "{\"id\":\"PN1W36d56KgMbHK\",\"url\":\"https://www.cdss.ca.gov/sun-bucks/what-are-sun-bucks\",\"loadedUrl\":\"https://www.cdss.ca.gov/sun-bucks/what-are-sun-bucks\",\"uniqueKey\":\"https://www.cdss.ca.gov/sun-bucks/what-are-sun-bucks\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:31.675Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/sun-bucks/what-are-sun-bucks",
+	"url": "https://www.cdss.ca.gov/sun-bucks/what-are-sun-bucks"
+}

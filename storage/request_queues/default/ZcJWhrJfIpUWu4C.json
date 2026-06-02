@@ -1,0 +1,9 @@
+{
+	"id": "ZcJWhrJfIpUWu4C",
+	"json": "{\"id\":\"ZcJWhrJfIpUWu4C\",\"url\":\"https://rarediseases.org/news/?taxonomy[category]=research\",\"loadedUrl\":\"https://rarediseases.org/news/?taxonomy[category]=research\",\"uniqueKey\":\"https://rarediseases.org/news?taxonomy%5Bcategory%5D=research\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:06.860Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/news?taxonomy%5Bcategory%5D=research",
+	"url": "https://rarediseases.org/news/?taxonomy[category]=research"
+}

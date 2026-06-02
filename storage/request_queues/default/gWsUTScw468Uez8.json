@@ -1,0 +1,9 @@
+{
+	"id": "gWsUTScw468Uez8",
+	"json": "{\"id\":\"gWsUTScw468Uez8\",\"url\":\"https://www.ssa.gov/manage-benefits/pause-retirement\",\"loadedUrl\":\"https://www.ssa.gov/manage-benefits/pause-retirement\",\"uniqueKey\":\"https://www.ssa.gov/manage-benefits/pause-retirement\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:34.277Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ssa.gov/manage-benefits/pause-retirement",
+	"url": "https://www.ssa.gov/manage-benefits/pause-retirement"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "3erCBjlGJWiYUDW",
+	"json": "{\"id\":\"3erCBjlGJWiYUDW\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/1024/rajvinder-dhamrait-anesthesiology-pediatric_anesthesiology-sacramento?FreeText%3aLast+name=Dhamrait\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/1024/rajvinder-dhamrait-anesthesiology-pediatric_anesthesiology-sacramento?FreeText%3aLast+name=Dhamrait\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/1024/rajvinder-dhamrait-anesthesiology-pediatric_anesthesiology-sacramento?FreeText%3ALast+name=Dhamrait\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:07.498Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/1024/rajvinder-dhamrait-anesthesiology-pediatric_anesthesiology-sacramento?FreeText%3ALast+name=Dhamrait",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/1024/rajvinder-dhamrait-anesthesiology-pediatric_anesthesiology-sacramento?FreeText%3aLast+name=Dhamrait"
+}

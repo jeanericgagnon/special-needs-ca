@@ -1,0 +1,9 @@
+{
+	"id": "CRqEmqZ6FXNATCq",
+	"json": "{\"id\":\"CRqEmqZ6FXNATCq\",\"url\":\"https://www.cde.ca.gov/fg/aa/ca/sacsreplacement.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/fg/aa/ca/sacsreplacement.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/fg/aa/ca/sacsreplacement.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:22:25.985Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/fg/aa/ca/sacsreplacement.asp",
+	"url": "https://www.cde.ca.gov/fg/aa/ca/sacsreplacement.asp"
+}

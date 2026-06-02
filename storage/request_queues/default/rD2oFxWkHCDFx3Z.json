@@ -1,0 +1,9 @@
+{
+	"id": "rD2oFxWkHCDFx3Z",
+	"json": "{\"id\":\"rD2oFxWkHCDFx3Z\",\"url\":\"https://www.dds.ca.gov/initiatives/sdp/resources-and-tools/\",\"loadedUrl\":\"https://www.dds.ca.gov/initiatives/sdp/resources-and-tools/\",\"uniqueKey\":\"https://www.dds.ca.gov/initiatives/sdp/resources-and-tools\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:40.718Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/initiatives/sdp/resources-and-tools",
+	"url": "https://www.dds.ca.gov/initiatives/sdp/resources-and-tools/"
+}

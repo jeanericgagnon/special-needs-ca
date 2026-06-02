@@ -1,0 +1,9 @@
+{
+	"id": "7oxN5t4QoIthbUb",
+	"json": "{\"id\":\"7oxN5t4QoIthbUb\",\"url\":\"https://physicians.ucdavis.edu/?OrgUnits=134\",\"loadedUrl\":\"https://physicians.ucdavis.edu/?OrgUnits=134\",\"uniqueKey\":\"https://physicians.ucdavis.edu?OrgUnits=134\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:14.481Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://physicians.ucdavis.edu?OrgUnits=134",
+	"url": "https://physicians.ucdavis.edu/?OrgUnits=134"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "nkaiIl1WqMNRtzq",
+	"json": "{\"id\":\"nkaiIl1WqMNRtzq\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/497/dean-blumberg-pediatric_infectious_diseases-sacramento?FreeText:Last+name=Blumberg\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/497/dean-blumberg-pediatric_infectious_diseases-sacramento?FreeText:Last+name=Blumberg\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/497/dean-blumberg-pediatric_infectious_diseases-sacramento?FreeText%3ALast+name=Blumberg\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:17.274Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/497/dean-blumberg-pediatric_infectious_diseases-sacramento?FreeText%3ALast+name=Blumberg",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/497/dean-blumberg-pediatric_infectious_diseases-sacramento?FreeText:Last+name=Blumberg"
+}

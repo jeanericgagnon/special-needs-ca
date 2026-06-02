@@ -1,0 +1,9 @@
+{
+	"id": "dWJdzNlaDmySd9G",
+	"json": "{\"id\":\"dWJdzNlaDmySd9G\",\"url\":\"https://www.treasurer.ca.gov/able/events/webinars/2022/20220720/special-needs-trust-slides.pdf\",\"loadedUrl\":\"https://www.treasurer.ca.gov/able/events/webinars/2022/20220720/special-needs-trust-slides.pdf\",\"uniqueKey\":\"https://www.treasurer.ca.gov/able/events/webinars/2022/20220720/special-needs-trust-slides.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:30.398Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.treasurer.ca.gov/able/events/webinars/2022/20220720/special-needs-trust-slides.pdf",
+	"url": "https://www.treasurer.ca.gov/able/events/webinars/2022/20220720/special-needs-trust-slides.pdf"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "UYdZnFBE1bJ9S9F",
+	"json": "{\"id\":\"UYdZnFBE1bJ9S9F\",\"url\":\"http://facilities.ucdavis.edu/\",\"loadedUrl\":\"https://facilities.ucdavis.edu/\",\"uniqueKey\":\"http://facilities.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:32.047Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://facilities.ucdavis.edu",
+	"url": "http://facilities.ucdavis.edu/"
+}

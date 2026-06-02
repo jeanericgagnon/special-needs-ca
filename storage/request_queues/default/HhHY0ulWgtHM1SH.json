@@ -1,0 +1,9 @@
+{
+	"id": "HhHY0ulWgtHM1SH",
+	"json": "{\"id\":\"HhHY0ulWgtHM1SH\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/448/christopher-bowlus-gastroenterology_and_hepatology-internal_medicine-sacramento?FreeText%3aLast+name=bowlus\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/448/christopher-bowlus-gastroenterology_and_hepatology-internal_medicine-sacramento?FreeText%3aLast+name=bowlus\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/448/christopher-bowlus-gastroenterology_and_hepatology-internal_medicine-sacramento?FreeText%3ALast+name=bowlus\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:09.802Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/448/christopher-bowlus-gastroenterology_and_hepatology-internal_medicine-sacramento?FreeText%3ALast+name=bowlus",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/448/christopher-bowlus-gastroenterology_and_hepatology-internal_medicine-sacramento?FreeText%3aLast+name=bowlus"
+}

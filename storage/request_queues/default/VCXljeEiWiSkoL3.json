@@ -1,0 +1,9 @@
+{
+	"id": "VCXljeEiWiSkoL3",
+	"json": "{\"id\":\"VCXljeEiWiSkoL3\",\"url\":\"https://www.dir.ca.gov/t8/205.html\",\"loadedUrl\":\"https://www.dir.ca.gov/t8/205.html\",\"uniqueKey\":\"https://www.dir.ca.gov/t8/205.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:11.237Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dir.ca.gov/t8/205.html",
+	"url": "https://www.dir.ca.gov/t8/205.html"
+}

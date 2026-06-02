@@ -1,0 +1,9 @@
+{
+	"id": "62Cgbivvhrs3opz",
+	"json": "{\"id\":\"62Cgbivvhrs3opz\",\"url\":\"https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=EDC&division=4.&title=2.&part=33.&chapter=2.&article=1\",\"loadedUrl\":\"https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=EDC&division=4.&title=2.&part=33.&chapter=2.&article=1\",\"uniqueKey\":\"https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?article=1&chapter=2.&division=4.&lawCode=EDC&part=33.&title=2.\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":1,\"errorMessages\":[\"Error: Request blocked - received 403 status code.\\n    at CheerioCrawler._throwOnBlockedRequest (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@crawlee/basic/internals/basic-crawler.js:913:19)\\n    at CheerioCrawler._runRequestHandler (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@crawlee/http/internals/http-crawler.js:324:22)\\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\\n    at async CheerioCrawler._runRequestHandler (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@crawlee/cheerio/internals/cheerio-crawler.js:153:9)\\n    at async wrap (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@apify/timeout/cjs/index.cjs:54:21)\"],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:36.401Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 1,
+	"uniqueKey": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?article=1&chapter=2.&division=4.&lawCode=EDC&part=33.&title=2.",
+	"url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=EDC&division=4.&title=2.&part=33.&chapter=2.&article=1"
+}

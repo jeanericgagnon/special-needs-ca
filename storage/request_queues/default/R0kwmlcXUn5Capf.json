@@ -1,0 +1,9 @@
+{
+	"id": "R0kwmlcXUn5Capf",
+	"json": "{\"id\":\"R0kwmlcXUn5Capf\",\"url\":\"https://health.ucdavis.edu/interpreting_services/\",\"loadedUrl\":\"https://health.ucdavis.edu/interpreting-services/\",\"uniqueKey\":\"https://health.ucdavis.edu/interpreting_services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:10.721Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/interpreting_services",
+	"url": "https://health.ucdavis.edu/interpreting_services/"
+}

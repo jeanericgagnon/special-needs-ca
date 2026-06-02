@@ -1,0 +1,9 @@
+{
+	"id": "wd1UAzMTdFEJvhI",
+	"json": "{\"id\":\"wd1UAzMTdFEJvhI\",\"url\":\"https://www.ctc.ca.gov/credentials/renew/\",\"loadedUrl\":\"https://www.ctc.ca.gov/credentials/renew/\",\"uniqueKey\":\"https://www.ctc.ca.gov/credentials/renew\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:23.401Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ctc.ca.gov/credentials/renew",
+	"url": "https://www.ctc.ca.gov/credentials/renew/"
+}

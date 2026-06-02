@@ -1,0 +1,9 @@
+{
+	"id": "wzDy0wYe3Hp9JLs",
+	"json": "{\"id\":\"wzDy0wYe3Hp9JLs\",\"url\":\"https://www.ssa.gov/agency/plain-language\",\"loadedUrl\":\"https://www.ssa.gov/agency/plain-language/\",\"uniqueKey\":\"https://www.ssa.gov/agency/plain-language\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:55.689Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ssa.gov/agency/plain-language",
+	"url": "https://www.ssa.gov/agency/plain-language"
+}

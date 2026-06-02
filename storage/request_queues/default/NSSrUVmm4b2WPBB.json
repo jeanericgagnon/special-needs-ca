@@ -1,0 +1,9 @@
+{
+	"id": "NSSrUVmm4b2WPBB",
+	"json": "{\"id\":\"NSSrUVmm4b2WPBB\",\"url\":\"https://listserv2.cdph.ca.gov/scripts/wa.exe?SUBED1=STATEWIDEALLIANCE4SAFESCHOOLS&A=1\",\"loadedUrl\":\"https://listserv2.cdph.ca.gov/scripts/wa.exe?SUBED1=STATEWIDEALLIANCE4SAFESCHOOLS&A=1\",\"uniqueKey\":\"https://listserv2.cdph.ca.gov/scripts/wa.exe?A=1&SUBED1=STATEWIDEALLIANCE4SAFESCHOOLS\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:51:56.130Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://listserv2.cdph.ca.gov/scripts/wa.exe?A=1&SUBED1=STATEWIDEALLIANCE4SAFESCHOOLS",
+	"url": "https://listserv2.cdph.ca.gov/scripts/wa.exe?SUBED1=STATEWIDEALLIANCE4SAFESCHOOLS&A=1"
+}

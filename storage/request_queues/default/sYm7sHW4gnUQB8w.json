@@ -1,0 +1,9 @@
+{
+	"id": "sYm7sHW4gnUQB8w",
+	"json": "{\"id\":\"sYm7sHW4gnUQB8w\",\"url\":\"https://redwoodseed.ucdavis.edu/employment\",\"loadedUrl\":\"https://redwoodseed.ucdavis.edu/employment\",\"uniqueKey\":\"https://redwoodseed.ucdavis.edu/employment\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:46.664Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://redwoodseed.ucdavis.edu/employment",
+	"url": "https://redwoodseed.ucdavis.edu/employment"
+}

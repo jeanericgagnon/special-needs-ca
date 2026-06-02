@@ -1,0 +1,9 @@
+{
+	"id": "yi5jeYNKBH4bqY3",
+	"json": "{\"id\":\"yi5jeYNKBH4bqY3\",\"url\":\"https://mindbrain.ucdavis.edu/news/uc-davis-give-day-april-11th-12th\",\"loadedUrl\":\"https://mindbrain.ucdavis.edu/news/uc-davis-give-day-april-11th-12th\",\"uniqueKey\":\"https://mindbrain.ucdavis.edu/news/uc-davis-give-day-april-11th-12th\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:12.727Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://mindbrain.ucdavis.edu/news/uc-davis-give-day-april-11th-12th",
+	"url": "https://mindbrain.ucdavis.edu/news/uc-davis-give-day-april-11th-12th"
+}

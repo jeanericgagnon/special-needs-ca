@@ -1,0 +1,9 @@
+{
+	"id": "cplPMSJt4an9rPI",
+	"json": "{\"id\":\"cplPMSJt4an9rPI\",\"url\":\"https://health.ucdavis.edu/famcommed/research/\",\"loadedUrl\":\"https://health.ucdavis.edu/family-medicine/research/\",\"uniqueKey\":\"https://health.ucdavis.edu/famcommed/research\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:54.908Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/famcommed/research",
+	"url": "https://health.ucdavis.edu/famcommed/research/"
+}

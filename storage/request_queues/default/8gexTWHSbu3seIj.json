@@ -1,0 +1,9 @@
+{
+	"id": "8gexTWHSbu3seIj",
+	"json": "{\"id\":\"8gexTWHSbu3seIj\",\"url\":\"https://data.ca.gov/showcase/administrative-maps-of-the-san-joaquin-river\",\"loadedUrl\":\"https://data.ca.gov/showcase/administrative-maps-of-the-san-joaquin-river\",\"uniqueKey\":\"https://data.ca.gov/showcase/administrative-maps-of-the-san-joaquin-river\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:15.224Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://data.ca.gov/showcase/administrative-maps-of-the-san-joaquin-river",
+	"url": "https://data.ca.gov/showcase/administrative-maps-of-the-san-joaquin-river"
+}

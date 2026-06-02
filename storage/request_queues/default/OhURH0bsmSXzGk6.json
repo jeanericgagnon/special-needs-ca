@@ -1,0 +1,9 @@
+{
+	"id": "OhURH0bsmSXzGk6",
+	"json": "{\"id\":\"OhURH0bsmSXzGk6\",\"url\":\"https://research.ucdavis.edu/research-support/research-core-facilities/\",\"loadedUrl\":\"https://research.ucdavis.edu/research-support/research-core-facilities/\",\"uniqueKey\":\"https://research.ucdavis.edu/research-support/research-core-facilities\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:46.518Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://research.ucdavis.edu/research-support/research-core-facilities",
+	"url": "https://research.ucdavis.edu/research-support/research-core-facilities/"
+}

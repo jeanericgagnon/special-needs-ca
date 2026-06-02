@@ -1,0 +1,9 @@
+{
+	"id": "XROpySCJFCS1fnc",
+	"json": "{\"id\":\"XROpySCJFCS1fnc\",\"url\":\"https://www.cde.ca.gov/sp/ml/dliginfo.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/ml/dliginfo.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/ml/dliginfo.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:03.542Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/sp/ml/dliginfo.asp",
+	"url": "https://www.cde.ca.gov/sp/ml/dliginfo.asp"
+}

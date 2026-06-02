@@ -1,0 +1,9 @@
+{
+	"id": "wAzEAZLgsQvuFJv",
+	"json": "{\"id\":\"wAzEAZLgsQvuFJv\",\"url\":\"https://ssa.gov/agency/performance/\",\"loadedUrl\":\"https://www.ssa.gov/agency/performance/\",\"uniqueKey\":\"https://ssa.gov/agency/performance\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:34.196Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://ssa.gov/agency/performance",
+	"url": "https://ssa.gov/agency/performance/"
+}

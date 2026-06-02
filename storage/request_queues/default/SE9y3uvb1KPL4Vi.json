@@ -1,0 +1,9 @@
+{
+	"id": "SE9y3uvb1KPL4Vi",
+	"json": "{\"id\":\"SE9y3uvb1KPL4Vi\",\"url\":\"https://physicians.ucdavis.edu/?Specialties=210&Gender=Female\",\"loadedUrl\":\"https://physicians.ucdavis.edu/?Specialties=210&Gender=Female\",\"uniqueKey\":\"https://physicians.ucdavis.edu?Gender=Female&Specialties=210\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:34:02.838Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://physicians.ucdavis.edu?Gender=Female&Specialties=210",
+	"url": "https://physicians.ucdavis.edu/?Specialties=210&Gender=Female"
+}

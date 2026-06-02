@@ -1,0 +1,9 @@
+{
+	"id": "7szRbcpKmnOOIi6",
+	"json": "{\"id\":\"7szRbcpKmnOOIi6\",\"url\":\"https://health.ucdavis.edu/compliance/regulatory/guidelines-for-using-ai\",\"loadedUrl\":\"https://health.ucdavis.edu/compliance/regulatory/guidelines-for-using-ai\",\"uniqueKey\":\"https://health.ucdavis.edu/compliance/regulatory/guidelines-for-using-ai\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:00.204Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/compliance/regulatory/guidelines-for-using-ai",
+	"url": "https://health.ucdavis.edu/compliance/regulatory/guidelines-for-using-ai"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "LgeXklpMp6sMQek",
+	"json": "{\"id\":\"LgeXklpMp6sMQek\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/32312/lisa-williams-electrodiagnostic_medicine-neuromuscular_disease-physical_medicine_and_rehabilitation-sacramento?FreeText%3aLast+name=Williams\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/32312/lisa-williams-electrodiagnostic_medicine-neuromuscular_disease-physical_medicine_and_rehabilitation-sacramento?FreeText%3aLast+name=Williams\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/32312/lisa-williams-electrodiagnostic_medicine-neuromuscular_disease-physical_medicine_and_rehabilitation-sacramento?FreeText%3ALast+name=Williams\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:14.106Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/32312/lisa-williams-electrodiagnostic_medicine-neuromuscular_disease-physical_medicine_and_rehabilitation-sacramento?FreeText%3ALast+name=Williams",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/32312/lisa-williams-electrodiagnostic_medicine-neuromuscular_disease-physical_medicine_and_rehabilitation-sacramento?FreeText%3aLast+name=Williams"
+}

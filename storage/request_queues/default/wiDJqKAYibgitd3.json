@@ -1,0 +1,9 @@
+{
+	"id": "wiDJqKAYibgitd3",
+	"json": "{\"id\":\"wiDJqKAYibgitd3\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/1592/diana-farmer-fetal_intervention-fetal_surgery-pediatric_surgery-surgery_-_pediatric-sacramento?FreeText%3aLast+name=Farmer\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/1592/diana-farmer-fetal_intervention-fetal_surgery-pediatric_surgery-surgery_-_pediatric-sacramento?FreeText%3aLast+name=Farmer\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/1592/diana-farmer-fetal_intervention-fetal_surgery-pediatric_surgery-surgery_-_pediatric-sacramento?FreeText%3ALast+name=Farmer\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:18.682Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/1592/diana-farmer-fetal_intervention-fetal_surgery-pediatric_surgery-surgery_-_pediatric-sacramento?FreeText%3ALast+name=Farmer",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/1592/diana-farmer-fetal_intervention-fetal_surgery-pediatric_surgery-surgery_-_pediatric-sacramento?FreeText%3aLast+name=Farmer"
+}

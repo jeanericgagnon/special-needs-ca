@@ -1,0 +1,9 @@
+{
+	"id": "5Toa6t9ntCNNA0j",
+	"json": "{\"id\":\"5Toa6t9ntCNNA0j\",\"url\":\"https://health.ucdavis.edu/psychiatry/research/autism\",\"loadedUrl\":\"https://health.ucdavis.edu/psychiatry/research/autism\",\"uniqueKey\":\"https://health.ucdavis.edu/psychiatry/research/autism\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:48.762Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/psychiatry/research/autism",
+	"url": "https://health.ucdavis.edu/psychiatry/research/autism"
+}

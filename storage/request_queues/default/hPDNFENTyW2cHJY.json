@@ -1,0 +1,9 @@
+{
+	"id": "hPDNFENTyW2cHJY",
+	"json": "{\"id\":\"hPDNFENTyW2cHJY\",\"url\":\"https://www.ucdavis.edu/academics/study-abroad\",\"loadedUrl\":\"https://www.ucdavis.edu/academics/study-abroad\",\"uniqueKey\":\"https://www.ucdavis.edu/academics/study-abroad\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:45.995Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ucdavis.edu/academics/study-abroad",
+	"url": "https://www.ucdavis.edu/academics/study-abroad"
+}

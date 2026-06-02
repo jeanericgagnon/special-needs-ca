@@ -1,0 +1,9 @@
+{
+	"id": "vK4sa8pIW9gWGpt",
+	"json": "{\"id\":\"vK4sa8pIW9gWGpt\",\"url\":\"https://rcscc.adm.dss.ca.gov/\",\"loadedUrl\":\"https://rcscc.adm.dss.ca.gov/\",\"uniqueKey\":\"https://rcscc.adm.dss.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:25:14.337Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rcscc.adm.dss.ca.gov",
+	"url": "https://rcscc.adm.dss.ca.gov/"
+}

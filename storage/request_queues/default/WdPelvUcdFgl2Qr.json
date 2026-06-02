@@ -1,0 +1,9 @@
+{
+	"id": "WdPelvUcdFgl2Qr",
+	"json": "{\"id\":\"WdPelvUcdFgl2Qr\",\"url\":\"https://www.cde.ca.gov/re/di/ws/minbrowser.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/re/di/ws/minbrowser.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/re/di/ws/minbrowser.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:00.054Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/re/di/ws/minbrowser.asp",
+	"url": "https://www.cde.ca.gov/re/di/ws/minbrowser.asp"
+}

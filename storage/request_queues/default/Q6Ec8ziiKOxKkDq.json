@@ -1,0 +1,9 @@
+{
+	"id": "Q6Ec8ziiKOxKkDq",
+	"json": "{\"id\":\"Q6Ec8ziiKOxKkDq\",\"url\":\"https://www.dhcs.ca.gov/Pages/Language_Access.aspx#LAP\",\"loadedUrl\":\"https://www.dhcs.ca.gov/non-discrimination-policy-and-language-access/\",\"uniqueKey\":\"https://www.dhcs.ca.gov/Pages/Language_Access.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:36.814Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dhcs.ca.gov/Pages/Language_Access.aspx",
+	"url": "https://www.dhcs.ca.gov/Pages/Language_Access.aspx#LAP"
+}

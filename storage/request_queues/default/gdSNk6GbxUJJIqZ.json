@@ -1,0 +1,9 @@
+{
+	"id": "gdSNk6GbxUJJIqZ",
+	"json": "{\"id\":\"gdSNk6GbxUJJIqZ\",\"url\":\"https://www.news.caloes.ca.gov/community-resources-for-garden-grove-hazmat-incident/\",\"loadedUrl\":\"https://www.news.caloes.ca.gov/community-resources-for-garden-grove-hazmat-incident/\",\"uniqueKey\":\"https://www.news.caloes.ca.gov/community-resources-for-garden-grove-hazmat-incident\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:12.595Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.news.caloes.ca.gov/community-resources-for-garden-grove-hazmat-incident",
+	"url": "https://www.news.caloes.ca.gov/community-resources-for-garden-grove-hazmat-incident/"
+}

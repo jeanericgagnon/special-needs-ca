@@ -1,0 +1,9 @@
+{
+	"id": "mS0mFqT8zKUGc83",
+	"json": "{\"id\":\"mS0mFqT8zKUGc83\",\"url\":\"https://alumni.ucdavis.edu/aggies-uncorked\",\"loadedUrl\":\"https://alumni.ucdavis.edu/aggies-uncorked\",\"uniqueKey\":\"https://alumni.ucdavis.edu/aggies-uncorked\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:05.462Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://alumni.ucdavis.edu/aggies-uncorked",
+	"url": "https://alumni.ucdavis.edu/aggies-uncorked"
+}

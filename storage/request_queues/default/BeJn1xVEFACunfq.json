@@ -1,0 +1,9 @@
+{
+	"id": "BeJn1xVEFACunfq",
+	"json": "{\"id\":\"BeJn1xVEFACunfq\",\"url\":\"https://www.dds.ca.gov/JobBulletin/dsp_ViewDocument.cfm?id=656C59B7-F1C2-4279-86B1-DB6AF7B2F989\",\"loadedUrl\":\"https://www.dds.ca.gov/JobBulletin/dsp_ViewDocument.cfm?id=656C59B7-F1C2-4279-86B1-DB6AF7B2F989\",\"uniqueKey\":\"https://www.dds.ca.gov/JobBulletin/dsp_ViewDocument.cfm?id=656C59B7-F1C2-4279-86B1-DB6AF7B2F989\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:02.291Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/JobBulletin/dsp_ViewDocument.cfm?id=656C59B7-F1C2-4279-86B1-DB6AF7B2F989",
+	"url": "https://www.dds.ca.gov/JobBulletin/dsp_ViewDocument.cfm?id=656C59B7-F1C2-4279-86B1-DB6AF7B2F989"
+}

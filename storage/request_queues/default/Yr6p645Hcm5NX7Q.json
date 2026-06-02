@@ -1,0 +1,9 @@
+{
+	"id": "Yr6p645Hcm5NX7Q",
+	"json": "{\"id\":\"Yr6p645Hcm5NX7Q\",\"url\":\"https://care.ucdavis.edu/mission-and-history\",\"loadedUrl\":\"https://care.ucdavis.edu/mission-and-history\",\"uniqueKey\":\"https://care.ucdavis.edu/mission-and-history\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:59.527Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://care.ucdavis.edu/mission-and-history",
+	"url": "https://care.ucdavis.edu/mission-and-history"
+}

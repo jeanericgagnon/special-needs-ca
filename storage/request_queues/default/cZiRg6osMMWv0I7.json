@@ -1,0 +1,9 @@
+{
+	"id": "cZiRg6osMMWv0I7",
+	"json": "{\"id\":\"cZiRg6osMMWv0I7\",\"url\":\"https://www.gov.ca.gov/priorities-and-progress/priorities/housing-homelessness/page/2/?et_blog\",\"loadedUrl\":\"https://www.gov.ca.gov/priorities-and-progress/priorities/housing-homelessness/page/2/?et_blog\",\"uniqueKey\":\"https://www.gov.ca.gov/priorities-and-progress/priorities/housing-homelessness/page/2?et_blog=\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:48.058Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.gov.ca.gov/priorities-and-progress/priorities/housing-homelessness/page/2?et_blog=",
+	"url": "https://www.gov.ca.gov/priorities-and-progress/priorities/housing-homelessness/page/2/?et_blog"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "OOdCq6ffJxRH8sI",
+	"json": "{\"id\":\"OOdCq6ffJxRH8sI\",\"url\":\"https://lettersandscience.ucdavis.edu/our-college/college-relations\",\"loadedUrl\":\"https://lettersandscience.ucdavis.edu/our-college/college-relations\",\"uniqueKey\":\"https://lettersandscience.ucdavis.edu/our-college/college-relations\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:23.782Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://lettersandscience.ucdavis.edu/our-college/college-relations",
+	"url": "https://lettersandscience.ucdavis.edu/our-college/college-relations"
+}

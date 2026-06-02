@@ -1,0 +1,9 @@
+{
+	"id": "dN1pUhHN8DkvgSO",
+	"json": "{\"id\":\"dN1pUhHN8DkvgSO\",\"url\":\"https://give.ucdavis.edu/VCPL/V123TEA\",\"loadedUrl\":\"https://give.ucdavis.edu/VCPL/V123TEA\",\"uniqueKey\":\"https://give.ucdavis.edu/VCPL/V123TEA\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:57.193Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/VCPL/V123TEA",
+	"url": "https://give.ucdavis.edu/VCPL/V123TEA"
+}

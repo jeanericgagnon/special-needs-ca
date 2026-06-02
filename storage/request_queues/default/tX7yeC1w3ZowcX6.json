@@ -1,0 +1,9 @@
+{
+	"id": "tX7yeC1w3ZowcX6",
+	"json": "{\"id\":\"tX7yeC1w3ZowcX6\",\"url\":\"http://www.chhs.ca.gov/\",\"loadedUrl\":\"https://www.chhs.ca.gov/\",\"uniqueKey\":\"http://www.chhs.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:10.461Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.chhs.ca.gov",
+	"url": "http://www.chhs.ca.gov/"
+}

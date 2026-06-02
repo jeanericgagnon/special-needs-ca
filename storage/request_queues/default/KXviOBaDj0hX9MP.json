@@ -1,0 +1,9 @@
+{
+	"id": "KXviOBaDj0hX9MP",
+	"json": "{\"id\":\"KXviOBaDj0hX9MP\",\"url\":\"https://give.ucdavis.edu/MSUR/9000644\",\"loadedUrl\":\"https://give.ucdavis.edu/MSUR/9000644\",\"uniqueKey\":\"https://give.ucdavis.edu/MSUR/9000644\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:59.656Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/MSUR/9000644",
+	"url": "https://give.ucdavis.edu/MSUR/9000644"
+}

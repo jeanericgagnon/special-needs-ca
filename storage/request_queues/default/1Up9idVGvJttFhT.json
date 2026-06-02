@@ -1,0 +1,9 @@
+{
+	"id": "1Up9idVGvJttFhT",
+	"json": "{\"id\":\"1Up9idVGvJttFhT\",\"url\":\"http://www.dds.ca.gov/WorkServices/Home.cfm\",\"loadedUrl\":\"https://www.dds.ca.gov/WorkServices/Home.cfm\",\"uniqueKey\":\"http://www.dds.ca.gov/WorkServices/Home.cfm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:19:27.087Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.dds.ca.gov/WorkServices/Home.cfm",
+	"url": "http://www.dds.ca.gov/WorkServices/Home.cfm"
+}

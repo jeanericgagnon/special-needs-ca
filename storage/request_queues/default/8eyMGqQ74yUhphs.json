@@ -1,0 +1,9 @@
+{
+	"id": "8eyMGqQ74yUhphs",
+	"json": "{\"id\":\"8eyMGqQ74yUhphs\",\"url\":\"https://www.cdph.ca.gov/pages/CenterDetails.aspx?center=Ix3TrKJkMAoE2MQnr8BIPSa%2BSWcYY2%2BkftKrYWQowUA%3D\",\"loadedUrl\":\"https://www.cdph.ca.gov/pages/CenterDetails.aspx?center=Ix3TrKJkMAoE2MQnr8BIPSa%2BSWcYY2%2BkftKrYWQowUA%3D\",\"uniqueKey\":\"https://www.cdph.ca.gov/pages/CenterDetails.aspx?center=Ix3TrKJkMAoE2MQnr8BIPSa%2BSWcYY2%2BkftKrYWQowUA%3D\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:15.996Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/pages/CenterDetails.aspx?center=Ix3TrKJkMAoE2MQnr8BIPSa%2BSWcYY2%2BkftKrYWQowUA%3D",
+	"url": "https://www.cdph.ca.gov/pages/CenterDetails.aspx?center=Ix3TrKJkMAoE2MQnr8BIPSa%2BSWcYY2%2BkftKrYWQowUA%3D"
+}

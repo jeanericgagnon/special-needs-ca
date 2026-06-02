@@ -1,0 +1,9 @@
+{
+	"id": "bEkl4l6iShsXRTc",
+	"json": "{\"id\":\"bEkl4l6iShsXRTc\",\"url\":\"https://hr.ucdavis.edu/departments/learning/resources/elearning\",\"loadedUrl\":\"https://hr.ucdavis.edu/departments/learning/resources/elearning\",\"uniqueKey\":\"https://hr.ucdavis.edu/departments/learning/resources/elearning\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:22.599Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/departments/learning/resources/elearning",
+	"url": "https://hr.ucdavis.edu/departments/learning/resources/elearning"
+}

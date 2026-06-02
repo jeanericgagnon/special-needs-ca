@@ -1,0 +1,9 @@
+{
+	"id": "vFXc5RnZTP8cTsZ",
+	"json": "{\"id\":\"vFXc5RnZTP8cTsZ\",\"url\":\"https://www.cdss.ca.gov/inforesources/Forms-Brochures/Privacy-Policy\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/forms-brochures/privacy-policy\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/Forms-Brochures/Privacy-Policy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:28.046Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/inforesources/Forms-Brochures/Privacy-Policy",
+	"url": "https://www.cdss.ca.gov/inforesources/Forms-Brochures/Privacy-Policy"
+}

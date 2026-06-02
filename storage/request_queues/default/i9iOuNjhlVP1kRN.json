@@ -1,0 +1,9 @@
+{
+	"id": "i9iOuNjhlVP1kRN",
+	"json": "{\"id\":\"i9iOuNjhlVP1kRN\",\"url\":\"https://health.ucdavis.edu/internalmedicine/pulmonary/post-covid-19-clinic.html\",\"loadedUrl\":\"https://health.ucdavis.edu/internal-medicine/pulmonary/our-services/\",\"uniqueKey\":\"https://health.ucdavis.edu/internalmedicine/pulmonary/post-covid-19-clinic.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:37.061Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/internalmedicine/pulmonary/post-covid-19-clinic.html",
+	"url": "https://health.ucdavis.edu/internalmedicine/pulmonary/post-covid-19-clinic.html"
+}

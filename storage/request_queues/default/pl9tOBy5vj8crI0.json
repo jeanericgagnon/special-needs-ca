@@ -1,0 +1,9 @@
+{
+	"id": "pl9tOBy5vj8crI0",
+	"json": "{\"id\":\"pl9tOBy5vj8crI0\",\"url\":\"https://excellence.ucdavis.edu/news/content-submission-form\",\"loadedUrl\":\"https://excellence.ucdavis.edu/news/content-submission-form\",\"uniqueKey\":\"https://excellence.ucdavis.edu/news/content-submission-form\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:35.877Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://excellence.ucdavis.edu/news/content-submission-form",
+	"url": "https://excellence.ucdavis.edu/news/content-submission-form"
+}

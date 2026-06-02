@@ -1,0 +1,9 @@
+{
+	"id": "cSJex4hsoxvwr22",
+	"json": "{\"id\":\"cSJex4hsoxvwr22\",\"url\":\"https://www.tuolumnecounty.ca.gov/282/Report-Neglect-or-Abuse\",\"loadedUrl\":\"https://www.tuolumnecounty.ca.gov/282/Report-Neglect-or-Abuse\",\"uniqueKey\":\"https://www.tuolumnecounty.ca.gov/282/Report-Neglect-or-Abuse\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:41.018Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.tuolumnecounty.ca.gov/282/Report-Neglect-or-Abuse",
+	"url": "https://www.tuolumnecounty.ca.gov/282/Report-Neglect-or-Abuse"
+}

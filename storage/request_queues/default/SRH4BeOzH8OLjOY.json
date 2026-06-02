@@ -1,0 +1,9 @@
+{
+	"id": "SRH4BeOzH8OLjOY",
+	"json": "{\"id\":\"SRH4BeOzH8OLjOY\",\"url\":\"https://oag.ca.gov/contact/consumer-complaint-against-business-or-company\",\"loadedUrl\":\"https://oag.ca.gov/contact/consumer-complaint-against-business-or-company\",\"uniqueKey\":\"https://oag.ca.gov/contact/consumer-complaint-against-business-or-company\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:35.932Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://oag.ca.gov/contact/consumer-complaint-against-business-or-company",
+	"url": "https://oag.ca.gov/contact/consumer-complaint-against-business-or-company"
+}

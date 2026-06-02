@@ -1,0 +1,9 @@
+{
+	"id": "WOKUrIkbXNQCXX5",
+	"json": "{\"id\":\"WOKUrIkbXNQCXX5\",\"url\":\"https://health.ucdavis.edu/wellness/resources\",\"loadedUrl\":\"https://health.ucdavis.edu/wellness/resources\",\"uniqueKey\":\"https://health.ucdavis.edu/wellness/resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:31:16.978Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/wellness/resources",
+	"url": "https://health.ucdavis.edu/wellness/resources"
+}

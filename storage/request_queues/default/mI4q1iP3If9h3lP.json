@@ -1,0 +1,9 @@
+{
+	"id": "mI4q1iP3If9h3lP",
+	"json": "{\"id\":\"mI4q1iP3If9h3lP\",\"url\":\"https://neuroscience.ucdavis.edu/people/lucia-borges\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/people/lucia-borges\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/people/lucia-borges\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:44.168Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://neuroscience.ucdavis.edu/people/lucia-borges",
+	"url": "https://neuroscience.ucdavis.edu/people/lucia-borges"
+}

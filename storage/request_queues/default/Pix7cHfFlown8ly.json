@@ -1,0 +1,9 @@
+{
+	"id": "Pix7cHfFlown8ly",
+	"json": "{\"id\":\"Pix7cHfFlown8ly\",\"url\":\"https://health.ucdavis.edu/surgery/specialties/vascular/index.html\",\"loadedUrl\":\"https://health.ucdavis.edu/surgery/specialties/vascular/index.html\",\"uniqueKey\":\"https://health.ucdavis.edu/surgery/specialties/vascular/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:48.784Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/surgery/specialties/vascular/index.html",
+	"url": "https://health.ucdavis.edu/surgery/specialties/vascular/index.html"
+}

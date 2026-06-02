@@ -1,0 +1,9 @@
+{
+	"id": "nJUy1GohYu6qBkA",
+	"json": "{\"id\":\"nJUy1GohYu6qBkA\",\"url\":\"https://lms.ucdavis.edu/\",\"loadedUrl\":\"https://uc.sumtotal.host/Broker/Token/generictokenhandler.ashx?wtrealm=https%3a%2f%2fuc.sumtotal.host%2fcore%2f&wctx=&wa=wsignin1.0&ReturnUrl=http%3a%2f%2fuc.sumtotal.host%2fBroker%2fToken%2fSaml11.ashx%3fwa%3dwsignin1.0%26wtrealm%3dhttps%253a%252f%252fuc.sumtotal.host%252fcore%252f%26wreply%3dhttps%253a%252f%252fuc.sumtotal.host%252fcore%252f%253fdomain%253d8%26domain%3d8&whr=ucd\",\"uniqueKey\":\"https://lms.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T23:02:26.505Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://lms.ucdavis.edu",
+	"url": "https://lms.ucdavis.edu/"
+}

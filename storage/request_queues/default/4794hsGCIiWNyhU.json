@@ -1,0 +1,9 @@
+{
+	"id": "4794hsGCIiWNyhU",
+	"json": "{\"id\":\"4794hsGCIiWNyhU\",\"url\":\"https://www.cde.ca.gov/ci/gs/ps/documents/ctecourses2013-14.doc\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/gs/ps/documents/ctecourses2013-14.doc\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/gs/ps/documents/ctecourses2013-14.doc\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:01.265Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ci/gs/ps/documents/ctecourses2013-14.doc",
+	"url": "https://www.cde.ca.gov/ci/gs/ps/documents/ctecourses2013-14.doc"
+}

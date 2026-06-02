@@ -1,0 +1,9 @@
+{
+	"id": "zUjNLOBsOSTKoUz",
+	"json": "{\"id\":\"zUjNLOBsOSTKoUz\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/42862/roger-scott-akins\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/42862/roger-scott-akins\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/42862/roger-scott-akins\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:16.718Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/42862/roger-scott-akins",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/42862/roger-scott-akins"
+}

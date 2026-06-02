@@ -1,0 +1,9 @@
+{
+	"id": "xtqpnoEmdUmKDkj",
+	"json": "{\"id\":\"xtqpnoEmdUmKDkj\",\"url\":\"https://www.ctc.ca.gov/program-sponsors/prep-programs/asc/\",\"loadedUrl\":\"https://www.ctc.ca.gov/program-sponsors/prep-programs/asc/\",\"uniqueKey\":\"https://www.ctc.ca.gov/program-sponsors/prep-programs/asc\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:26.487Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ctc.ca.gov/program-sponsors/prep-programs/asc",
+	"url": "https://www.ctc.ca.gov/program-sponsors/prep-programs/asc/"
+}

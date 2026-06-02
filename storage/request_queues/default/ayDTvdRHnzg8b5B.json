@@ -1,0 +1,9 @@
+{
+	"id": "ayDTvdRHnzg8b5B",
+	"json": "{\"id\":\"ayDTvdRHnzg8b5B\",\"url\":\"https://health.ucdavis.edu/cancer/events/\",\"loadedUrl\":\"https://health.ucdavis.edu/cancer/events/\",\"uniqueKey\":\"https://health.ucdavis.edu/cancer/events\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:14.664Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/cancer/events",
+	"url": "https://health.ucdavis.edu/cancer/events/"
+}

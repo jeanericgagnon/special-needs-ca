@@ -1,0 +1,9 @@
+{
+	"id": "vscXrtgZG7vHUKd",
+	"json": "{\"id\":\"vscXrtgZG7vHUKd\",\"url\":\"https://www.csb-cde.ca.gov/studentlife/residential/activities.aspx\",\"loadedUrl\":\"https://www.csb-cde.ca.gov/studentlife/residential/activities.aspx\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/studentlife/residential/activities.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:05.358Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csb-cde.ca.gov/studentlife/residential/activities.aspx",
+	"url": "https://www.csb-cde.ca.gov/studentlife/residential/activities.aspx"
+}

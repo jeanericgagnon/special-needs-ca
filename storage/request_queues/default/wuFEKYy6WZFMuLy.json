@@ -1,0 +1,9 @@
+{
+	"id": "wuFEKYy6WZFMuLy",
+	"json": "{\"id\":\"wuFEKYy6WZFMuLy\",\"url\":\"https://www.cde.ca.gov/sp/cd/op/cefccdevprograms.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/cd/op/cefccdevprograms.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/cd/op/cefccdevprograms.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:07:18.401Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/sp/cd/op/cefccdevprograms.asp",
+	"url": "https://www.cde.ca.gov/sp/cd/op/cefccdevprograms.asp"
+}

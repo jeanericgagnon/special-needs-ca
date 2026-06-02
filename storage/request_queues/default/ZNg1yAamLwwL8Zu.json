@@ -1,0 +1,9 @@
+{
+	"id": "ZNg1yAamLwwL8Zu",
+	"json": "{\"id\":\"ZNg1yAamLwwL8Zu\",\"url\":\"https://health.ucdavis.edu/mind-institute/centers/intellectual-developmental-disabilities-research/researchers\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/centers/intellectual-developmental-disabilities-research/researchers\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/centers/intellectual-developmental-disabilities-research/researchers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:15.912Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mind-institute/centers/intellectual-developmental-disabilities-research/researchers",
+	"url": "https://health.ucdavis.edu/mind-institute/centers/intellectual-developmental-disabilities-research/researchers"
+}

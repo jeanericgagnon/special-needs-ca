@@ -1,0 +1,9 @@
+{
+	"id": "B7r08ocbH31cHbC",
+	"json": "{\"id\":\"B7r08ocbH31cHbC\",\"url\":\"https://www.cde.ca.gov/sp/ch/ec47604faq.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=34c5f33c-12e1-454e-b36c-927203d6ade6&ssb=51599233975&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fsp%2Fch%2Fec47604faq.asp&ssi=597f2a34-ctxv-4830-a1d1-7a0c1f4ddd2b&ssk=botmanager_support@radware.com&ssm=61080928955453190132858888013953&ssn=6c57ebda15767e77c45d22807e19e5855f4693529e18-e1ac-4fa1-90a51e&sso=0ff969fa-9c02222639fd015558c640e89b4fca2c5ab85ab4049970b5&ssp=14816343591780331100178035392517737&ssq=44088502750433088552027424865807720092722&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2Y5MDAwMjdiYWJmZTEtNjRiYS00NDBiLTg1MDUtN2I1MDM0YTExNDRhMS0xNzgwMzI3NDI0MjQzODA2ODktNmJkNjdlZGY0ZTdmMjYyNzEzIiwiX191em1mIjoiN2Y5MDAwOTM1MjllMTgtZTFhYy00ZmExLTk5ZmEtOWMwMjIyMjYzOWZkMS0xNzgwMzI3NDI0MjQzODA2ODktMDAzMjVhOTJhYzRjYTJhNTFmYjEzIiwicmQiOiJjYS5nb3YifQ==\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/ch/ec47604faq.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:25:05.029Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/sp/ch/ec47604faq.asp",
+	"url": "https://www.cde.ca.gov/sp/ch/ec47604faq.asp"
+}

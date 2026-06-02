@@ -1,0 +1,9 @@
+{
+	"id": "PF5zirYyhvfbTB5",
+	"json": "{\"id\":\"PF5zirYyhvfbTB5\",\"url\":\"https://www.globaldownsyndrome.org/global-webinars\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/global-webinars/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/global-webinars\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:43.185Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.globaldownsyndrome.org/global-webinars",
+	"url": "https://www.globaldownsyndrome.org/global-webinars"
+}

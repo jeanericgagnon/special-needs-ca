@@ -1,0 +1,9 @@
+{
+	"id": "JGpialwznJe2gQK",
+	"json": "{\"id\":\"JGpialwznJe2gQK\",\"url\":\"https://edd.ca.gov/en/payroll_taxes/Am_I_Required_to_Register_as_an_Employer/\",\"loadedUrl\":\"https://edd.ca.gov/en/payroll_taxes/Am_I_Required_to_Register_as_an_Employer/\",\"uniqueKey\":\"https://edd.ca.gov/en/payroll_taxes/Am_I_Required_to_Register_as_an_Employer\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:40.588Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://edd.ca.gov/en/payroll_taxes/Am_I_Required_to_Register_as_an_Employer",
+	"url": "https://edd.ca.gov/en/payroll_taxes/Am_I_Required_to_Register_as_an_Employer/"
+}

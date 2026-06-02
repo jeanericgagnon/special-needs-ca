@@ -1,0 +1,9 @@
+{
+	"id": "vCJrXxOw4td7nHA",
+	"json": "{\"id\":\"vCJrXxOw4td7nHA\",\"url\":\"https://housing.ca.gov/resources/tenant.html\",\"loadedUrl\":\"https://housing.ca.gov/resources/tenant.html\",\"uniqueKey\":\"https://housing.ca.gov/resources/tenant.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:19:23.136Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://housing.ca.gov/resources/tenant.html",
+	"url": "https://housing.ca.gov/resources/tenant.html"
+}

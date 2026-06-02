@@ -1,0 +1,9 @@
+{
+	"id": "PMK9C4c9y0sgsih",
+	"json": "{\"id\":\"PMK9C4c9y0sgsih\",\"url\":\"https://health.ucdavis.edu/mind-institute/resources/mental-behavioral-health\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/resources/mental-behavioral-health\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/resources/mental-behavioral-health\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:37.757Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mind-institute/resources/mental-behavioral-health",
+	"url": "https://health.ucdavis.edu/mind-institute/resources/mental-behavioral-health"
+}

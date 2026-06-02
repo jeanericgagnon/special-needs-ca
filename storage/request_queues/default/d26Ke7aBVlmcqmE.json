@@ -1,0 +1,9 @@
+{
+	"id": "d26Ke7aBVlmcqmE",
+	"json": "{\"id\":\"d26Ke7aBVlmcqmE\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDSRB/Pages/California%20Comprehensive%20Cancer%20Control%20Program.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDSRB/Pages/California%20Comprehensive%20Cancer%20Control%20Program.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDSRB/Pages/California%20Comprehensive%20Cancer%20Control%20Program.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:02:16.961Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDSRB/Pages/California%20Comprehensive%20Cancer%20Control%20Program.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDSRB/Pages/California%20Comprehensive%20Cancer%20Control%20Program.aspx"
+}

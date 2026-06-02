@@ -1,0 +1,9 @@
+{
+	"id": "kyryENIQmFzMY35",
+	"json": "{\"id\":\"kyryENIQmFzMY35\",\"url\":\"https://scdd.ca.gov/category/employment/\",\"loadedUrl\":\"https://scdd.ca.gov/category/employment/\",\"uniqueKey\":\"https://scdd.ca.gov/category/employment\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:05:25.219Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/category/employment",
+	"url": "https://scdd.ca.gov/category/employment/"
+}

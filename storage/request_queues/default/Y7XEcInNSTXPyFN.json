@@ -1,0 +1,9 @@
+{
+	"id": "Y7XEcInNSTXPyFN",
+	"json": "{\"id\":\"Y7XEcInNSTXPyFN\",\"url\":\"https://avenuem.ucdavis.edu/\",\"loadedUrl\":\"https://avenuem.ucdavis.edu/\",\"uniqueKey\":\"https://avenuem.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:04.352Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://avenuem.ucdavis.edu",
+	"url": "https://avenuem.ucdavis.edu/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "bKDw9Sj5k0f9uMs",
+	"json": "{\"id\":\"bKDw9Sj5k0f9uMs\",\"url\":\"https://neuroscience.ucdavis.edu/tags/vision\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/tags/vision\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/tags/vision\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:00.712Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://neuroscience.ucdavis.edu/tags/vision",
+	"url": "https://neuroscience.ucdavis.edu/tags/vision"
+}

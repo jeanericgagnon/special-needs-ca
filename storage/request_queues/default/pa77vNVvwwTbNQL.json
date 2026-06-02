@@ -1,0 +1,9 @@
+{
+	"id": "pa77vNVvwwTbNQL",
+	"json": "{\"id\":\"pa77vNVvwwTbNQL\",\"url\":\"https://give.ucdavis.edu/MEDI/07987\",\"loadedUrl\":\"https://give.ucdavis.edu/MEDI/07987\",\"uniqueKey\":\"https://give.ucdavis.edu/MEDI/07987\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:46.227Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/MEDI/07987",
+	"url": "https://give.ucdavis.edu/MEDI/07987"
+}

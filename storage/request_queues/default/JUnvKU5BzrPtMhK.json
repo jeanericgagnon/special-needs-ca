@@ -1,0 +1,9 @@
+{
+	"id": "JUnvKU5BzrPtMhK",
+	"json": "{\"id\":\"JUnvKU5BzrPtMhK\",\"url\":\"https://rarediseases.org/news/page/5/?taxonomy%5Bcategory%5D=statements\",\"loadedUrl\":\"https://rarediseases.org/news/page/5/?taxonomy%5Bcategory%5D=statements\",\"uniqueKey\":\"https://rarediseases.org/news/page/5?taxonomy%5Bcategory%5D=statements\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:18:36.819Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/news/page/5?taxonomy%5Bcategory%5D=statements",
+	"url": "https://rarediseases.org/news/page/5/?taxonomy%5Bcategory%5D=statements"
+}

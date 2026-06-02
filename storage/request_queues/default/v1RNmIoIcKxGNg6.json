@@ -1,0 +1,9 @@
+{
+	"id": "v1RNmIoIcKxGNg6",
+	"json": "{\"id\":\"v1RNmIoIcKxGNg6\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/42386/marianne-abouyared-cancer-microvascular_reconstruction-reconstructive_surgery-robotic_surgery-skull_base_surgery-sacramento?FreeText%3aLast+name=Abouyared\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/42386/marianne-abouyared-cancer-microvascular_reconstruction-reconstructive_surgery-robotic_surgery-skull_base_surgery-sacramento?FreeText%3aLast+name=Abouyared\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/42386/marianne-abouyared-cancer-microvascular_reconstruction-reconstructive_surgery-robotic_surgery-skull_base_surgery-sacramento?FreeText%3ALast+name=Abouyared\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:08.730Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/42386/marianne-abouyared-cancer-microvascular_reconstruction-reconstructive_surgery-robotic_surgery-skull_base_surgery-sacramento?FreeText%3ALast+name=Abouyared",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/42386/marianne-abouyared-cancer-microvascular_reconstruction-reconstructive_surgery-robotic_surgery-skull_base_surgery-sacramento?FreeText%3aLast+name=Abouyared"
+}

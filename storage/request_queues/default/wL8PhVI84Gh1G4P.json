@@ -1,0 +1,9 @@
+{
+	"id": "wL8PhVI84Gh1G4P",
+	"json": "{\"id\":\"wL8PhVI84Gh1G4P\",\"url\":\"https://hr.ucdavis.edu/employee-essential-needs\",\"loadedUrl\":\"https://hr.ucdavis.edu/employees#essential\",\"uniqueKey\":\"https://hr.ucdavis.edu/employee-essential-needs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:30.077Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/employee-essential-needs",
+	"url": "https://hr.ucdavis.edu/employee-essential-needs"
+}

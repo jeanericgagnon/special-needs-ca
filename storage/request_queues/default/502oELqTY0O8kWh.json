@@ -1,0 +1,9 @@
+{
+	"id": "502oELqTY0O8kWh",
+	"json": "{\"id\":\"502oELqTY0O8kWh\",\"url\":\"https://www.cde.ca.gov/sp/se/ac/ab130faq.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/se/ac/ab130faq.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/se/ac/ab130faq.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:25:41.835Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/sp/se/ac/ab130faq.asp",
+	"url": "https://www.cde.ca.gov/sp/se/ac/ab130faq.asp"
+}

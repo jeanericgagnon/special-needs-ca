@@ -1,0 +1,9 @@
+{
+	"id": "ILe29xKL5MwQ8AD",
+	"json": "{\"id\":\"ILe29xKL5MwQ8AD\",\"url\":\"https://health.ucdavis.edu/ctsc/area/education/programs-and-resources-for-students\",\"loadedUrl\":\"https://health.ucdavis.edu/ctsc/area/education/programs-and-resources-for-students\",\"uniqueKey\":\"https://health.ucdavis.edu/ctsc/area/education/programs-and-resources-for-students\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:33.376Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/ctsc/area/education/programs-and-resources-for-students",
+	"url": "https://health.ucdavis.edu/ctsc/area/education/programs-and-resources-for-students"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "KILxFbaZRbcibpm",
+	"json": "{\"id\":\"KILxFbaZRbcibpm\",\"url\":\"https://cadeafblind.org/what-is-deafblindness/\",\"loadedUrl\":\"https://cadeafblind.org/what-is-deafblindness/\",\"uniqueKey\":\"https://cadeafblind.org/what-is-deafblindness\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:49.427Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cadeafblind.org/what-is-deafblindness",
+	"url": "https://cadeafblind.org/what-is-deafblindness/"
+}

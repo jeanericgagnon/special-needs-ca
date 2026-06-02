@@ -1,0 +1,9 @@
+{
+	"id": "isIIscMsvj1BPyD",
+	"json": "{\"id\":\"isIIscMsvj1BPyD\",\"url\":\"https://yellowcluster.ucdavis.edu/people\",\"loadedUrl\":\"https://yellowcluster.ucdavis.edu/people\",\"uniqueKey\":\"https://yellowcluster.ucdavis.edu/people\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:03.293Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://yellowcluster.ucdavis.edu/people",
+	"url": "https://yellowcluster.ucdavis.edu/people"
+}

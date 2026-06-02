@@ -1,0 +1,9 @@
+{
+	"id": "TQV2EY2IYYtjmZa",
+	"json": "{\"id\":\"TQV2EY2IYYtjmZa\",\"url\":\"https://hr.ucdavis.edu/newsletters/community-engagement\",\"loadedUrl\":\"https://hr.ucdavis.edu/newsletters/community-engagement\",\"uniqueKey\":\"https://hr.ucdavis.edu/newsletters/community-engagement\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:12.643Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/newsletters/community-engagement",
+	"url": "https://hr.ucdavis.edu/newsletters/community-engagement"
+}

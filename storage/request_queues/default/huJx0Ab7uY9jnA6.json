@@ -1,0 +1,9 @@
+{
+	"id": "huJx0Ab7uY9jnA6",
+	"json": "{\"id\":\"huJx0Ab7uY9jnA6\",\"url\":\"https://neuroscience.ucdavis.edu/neurofest\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/neurofest\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/neurofest\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:01.435Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://neuroscience.ucdavis.edu/neurofest",
+	"url": "https://neuroscience.ucdavis.edu/neurofest"
+}

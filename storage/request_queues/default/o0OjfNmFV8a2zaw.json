@@ -1,0 +1,9 @@
+{
+	"id": "o0OjfNmFV8a2zaw",
+	"json": "{\"id\":\"o0OjfNmFV8a2zaw\",\"url\":\"https://www.dhcs.ca.gov/medi-cal/help/medi-cal-changes/\",\"loadedUrl\":\"https://www.dhcs.ca.gov/medi-cal/help/medi-cal-changes/\",\"uniqueKey\":\"https://www.dhcs.ca.gov/medi-cal/help/medi-cal-changes\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:01.886Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dhcs.ca.gov/medi-cal/help/medi-cal-changes",
+	"url": "https://www.dhcs.ca.gov/medi-cal/help/medi-cal-changes/"
+}

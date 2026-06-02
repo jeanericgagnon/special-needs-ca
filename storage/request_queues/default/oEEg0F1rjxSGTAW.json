@@ -1,0 +1,9 @@
+{
+	"id": "oEEg0F1rjxSGTAW",
+	"json": "{\"id\":\"oEEg0F1rjxSGTAW\",\"url\":\"https://gradstudies.ucdavis.edu/\",\"loadedUrl\":\"https://grad.ucdavis.edu/\",\"uniqueKey\":\"https://gradstudies.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:34:29.075Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://gradstudies.ucdavis.edu",
+	"url": "https://gradstudies.ucdavis.edu/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "srjMXgS4XaU347K",
+	"json": "{\"id\":\"srjMXgS4XaU347K\",\"url\":\"https://cdss.ca.gov/inforesources/Tribal-TANF/Federal-Policies-Regulations-and-Guidelines\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/tribal-tanf/federal-policies-regulations-and-guidelines\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Tribal-TANF/Federal-Policies-Regulations-and-Guidelines\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:24.737Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/Tribal-TANF/Federal-Policies-Regulations-and-Guidelines",
+	"url": "https://cdss.ca.gov/inforesources/Tribal-TANF/Federal-Policies-Regulations-and-Guidelines"
+}

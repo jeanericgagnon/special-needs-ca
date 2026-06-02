@@ -1,0 +1,9 @@
+{
+	"id": "ervpbSmIrccxYux",
+	"json": "{\"id\":\"ervpbSmIrccxYux\",\"url\":\"http://aggiedata.ucdavis.edu/\",\"loadedUrl\":\"https://aggiedata.ucdavis.edu/\",\"uniqueKey\":\"http://aggiedata.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:31.775Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://aggiedata.ucdavis.edu",
+	"url": "http://aggiedata.ucdavis.edu/"
+}

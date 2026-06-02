@@ -1,0 +1,9 @@
+{
+	"id": "uovSRNE5SQGBFJ6",
+	"json": "{\"id\":\"uovSRNE5SQGBFJ6\",\"url\":\"https://studentaffairs.ucdavis.edu/student-life/communities/identity\",\"loadedUrl\":\"https://studentaffairs.ucdavis.edu/student-life/spaces\",\"uniqueKey\":\"https://studentaffairs.ucdavis.edu/student-life/communities/identity\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:23.501Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://studentaffairs.ucdavis.edu/student-life/communities/identity",
+	"url": "https://studentaffairs.ucdavis.edu/student-life/communities/identity"
+}

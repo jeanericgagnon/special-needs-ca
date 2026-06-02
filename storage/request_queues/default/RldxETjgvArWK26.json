@@ -1,0 +1,9 @@
+{
+	"id": "RldxETjgvArWK26",
+	"json": "{\"id\":\"RldxETjgvArWK26\",\"url\":\"https://rarediseases.org/for-patient-organizations/rare-cancer-coalition/\",\"loadedUrl\":\"https://rarediseases.org/get-involved/rare-cancer-coalition/\",\"uniqueKey\":\"https://rarediseases.org/for-patient-organizations/rare-cancer-coalition\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:24:07.576Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/for-patient-organizations/rare-cancer-coalition",
+	"url": "https://rarediseases.org/for-patient-organizations/rare-cancer-coalition/"
+}

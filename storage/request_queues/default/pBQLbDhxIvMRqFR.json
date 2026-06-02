@@ -1,0 +1,9 @@
+{
+	"id": "pBQLbDhxIvMRqFR",
+	"json": "{\"id\":\"pBQLbDhxIvMRqFR\",\"url\":\"https://onlineservices.cdtfa.ca.gov/?Link=PermitSearch\",\"loadedUrl\":\"https://onlineservices.cdtfa.ca.gov/_/\",\"uniqueKey\":\"https://onlineservices.cdtfa.ca.gov?Link=PermitSearch\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:44.197Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://onlineservices.cdtfa.ca.gov?Link=PermitSearch",
+	"url": "https://onlineservices.cdtfa.ca.gov/?Link=PermitSearch"
+}

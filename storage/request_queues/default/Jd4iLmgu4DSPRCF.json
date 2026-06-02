@@ -1,0 +1,9 @@
+{
+	"id": "Jd4iLmgu4DSPRCF",
+	"json": "{\"id\":\"Jd4iLmgu4DSPRCF\",\"url\":\"https://health.ucdavis.edu/internalmedicine/gastro/\",\"loadedUrl\":\"https://health.ucdavis.edu/internal-medicine/gastroenterology-hepatology/\",\"uniqueKey\":\"https://health.ucdavis.edu/internalmedicine/gastro\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:50.595Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/internalmedicine/gastro",
+	"url": "https://health.ucdavis.edu/internalmedicine/gastro/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "Rlo4Qbuje1FFWMI",
+	"json": "{\"id\":\"Rlo4Qbuje1FFWMI\",\"url\":\"https://health.ucdavis.edu/ctsc/area/clinical-trials/navigation-services-for-budget-preparation\",\"loadedUrl\":\"https://health.ucdavis.edu/ctsc/area/clinical-trials/navigation-services-for-budget-preparation\",\"uniqueKey\":\"https://health.ucdavis.edu/ctsc/area/clinical-trials/navigation-services-for-budget-preparation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:32.208Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/ctsc/area/clinical-trials/navigation-services-for-budget-preparation",
+	"url": "https://health.ucdavis.edu/ctsc/area/clinical-trials/navigation-services-for-budget-preparation"
+}

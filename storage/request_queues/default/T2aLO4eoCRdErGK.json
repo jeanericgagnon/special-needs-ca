@@ -1,0 +1,9 @@
+{
+	"id": "T2aLO4eoCRdErGK",
+	"json": "{\"id\":\"T2aLO4eoCRdErGK\",\"url\":\"https://health.ucdavis.edu/children/team/42698/susan-guralnick-pediatrics-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/children/team/42698/susan-guralnick-pediatrics-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/children/team/42698/susan-guralnick-pediatrics-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:10.598Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/children/team/42698/susan-guralnick-pediatrics-sacramento",
+	"url": "https://health.ucdavis.edu/children/team/42698/susan-guralnick-pediatrics-sacramento"
+}

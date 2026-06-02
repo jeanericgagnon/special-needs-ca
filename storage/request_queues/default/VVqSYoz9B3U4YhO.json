@@ -1,0 +1,9 @@
+{
+	"id": "VVqSYoz9B3U4YhO",
+	"json": "{\"id\":\"VVqSYoz9B3U4YhO\",\"url\":\"https://caleprocure.ca.gov/event/4300/0000037311\",\"loadedUrl\":\"https://caleprocure.ca.gov/pages/Events-BS3/event-details.aspx?Page=AUC_RESP_INQ_DTL&Action=U&AUC_ID=0000037311&AUC_ROUND=1&BIDDER_ID=BID0000001&BIDDER_LOC=1&BIDDER_SETID=STATE&BIDDER_TYPE=B&BUSINESS_UNIT=4300\",\"uniqueKey\":\"https://caleprocure.ca.gov/event/4300/0000037311\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:07:12.937Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://caleprocure.ca.gov/event/4300/0000037311",
+	"url": "https://caleprocure.ca.gov/event/4300/0000037311"
+}

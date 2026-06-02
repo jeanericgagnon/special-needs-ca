@@ -1,0 +1,9 @@
+{
+	"id": "WFYF2qdf78DY6zL",
+	"json": "{\"id\":\"WFYF2qdf78DY6zL\",\"url\":\"https://www.calhr.ca.gov/about-calhr/divisions-programs/personnel-management/layoff-information-for-employees/\",\"loadedUrl\":\"https://www.calhr.ca.gov/about-calhr/divisions-programs/personnel-management/layoff-information-for-employees/\",\"uniqueKey\":\"https://www.calhr.ca.gov/about-calhr/divisions-programs/personnel-management/layoff-information-for-employees\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:11.104Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.calhr.ca.gov/about-calhr/divisions-programs/personnel-management/layoff-information-for-employees",
+	"url": "https://www.calhr.ca.gov/about-calhr/divisions-programs/personnel-management/layoff-information-for-employees/"
+}

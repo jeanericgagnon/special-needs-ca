@@ -1,0 +1,9 @@
+{
+	"id": "AhQBaDVUfivINTK",
+	"json": "{\"id\":\"AhQBaDVUfivINTK\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/43336/daniah_thompson-beleford-genetics-genomics-sacramento?FreeText%3aLast+name=Beleford\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/43336/daniah_thompson-beleford-genetics-genomics-sacramento?FreeText%3aLast+name=Beleford\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/43336/daniah_thompson-beleford-genetics-genomics-sacramento?FreeText%3ALast+name=Beleford\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:10.163Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/43336/daniah_thompson-beleford-genetics-genomics-sacramento?FreeText%3ALast+name=Beleford",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/43336/daniah_thompson-beleford-genetics-genomics-sacramento?FreeText%3aLast+name=Beleford"
+}

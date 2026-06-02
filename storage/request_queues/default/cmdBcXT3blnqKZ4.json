@@ -1,0 +1,9 @@
+{
+	"id": "cmdBcXT3blnqKZ4",
+	"json": "{\"id\":\"cmdBcXT3blnqKZ4\",\"url\":\"https://transfer.ccr.ca.gov/\",\"loadedUrl\":\"https://transfer.ccr.ca.gov/\",\"uniqueKey\":\"https://transfer.ccr.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T19:34:04.940Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://transfer.ccr.ca.gov",
+	"url": "https://transfer.ccr.ca.gov/"
+}

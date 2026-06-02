@@ -1,0 +1,9 @@
+{
+	"id": "jygtuv75kMOPVvb",
+	"json": "{\"id\":\"jygtuv75kMOPVvb\",\"url\":\"https://www.globaldownsyndrome.org/become-a-member/#GLOBALMEMBERS\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/global-membership/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/become-a-member\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:38.499Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.globaldownsyndrome.org/become-a-member",
+	"url": "https://www.globaldownsyndrome.org/become-a-member/#GLOBALMEMBERS"
+}

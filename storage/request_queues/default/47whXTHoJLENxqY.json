@@ -1,0 +1,9 @@
+{
+	"id": "47whXTHoJLENxqY",
+	"json": "{\"id\":\"47whXTHoJLENxqY\",\"url\":\"https://bcsh.ca.gov/calich/heart.html\",\"loadedUrl\":\"https://bcsh.ca.gov/calich/heart.html\",\"uniqueKey\":\"https://bcsh.ca.gov/calich/heart.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:53.487Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://bcsh.ca.gov/calich/heart.html",
+	"url": "https://bcsh.ca.gov/calich/heart.html"
+}

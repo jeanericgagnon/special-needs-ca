@@ -1,0 +1,9 @@
+{
+	"id": "xIlYrRGQnrtDhfx",
+	"json": "{\"id\":\"xIlYrRGQnrtDhfx\",\"url\":\"https://leadership.ucdavis.edu/strategic-plan/task-forces/campus-safety/bibliography\",\"loadedUrl\":\"https://leadership.ucdavis.edu/strategic-plan/task-forces/campus-safety/bibliography\",\"uniqueKey\":\"https://leadership.ucdavis.edu/strategic-plan/task-forces/campus-safety/bibliography\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:36.547Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://leadership.ucdavis.edu/strategic-plan/task-forces/campus-safety/bibliography",
+	"url": "https://leadership.ucdavis.edu/strategic-plan/task-forces/campus-safety/bibliography"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "j2WRa0KCf2gSDZH",
+	"json": "{\"id\":\"j2WRa0KCf2gSDZH\",\"url\":\"http://www.cdss.ca.gov/inforesources/cdss-programs/ihss/ihss-recipient-resource\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/cdss-programs/ihss/ihss-recipient-resource\",\"uniqueKey\":\"http://www.cdss.ca.gov/inforesources/cdss-programs/ihss/ihss-recipient-resource\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:49.198Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.cdss.ca.gov/inforesources/cdss-programs/ihss/ihss-recipient-resource",
+	"url": "http://www.cdss.ca.gov/inforesources/cdss-programs/ihss/ihss-recipient-resource"
+}

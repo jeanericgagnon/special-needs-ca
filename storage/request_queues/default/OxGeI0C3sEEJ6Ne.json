@@ -1,0 +1,9 @@
+{
+	"id": "OxGeI0C3sEEJ6Ne",
+	"json": "{\"id\":\"OxGeI0C3sEEJ6Ne\",\"url\":\"https://learn.medi-cal.ca.gov/\",\"loadedUrl\":\"https://learn.medi-cal.ca.gov/\",\"uniqueKey\":\"https://learn.medi-cal.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:07:17.282Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://learn.medi-cal.ca.gov",
+	"url": "https://learn.medi-cal.ca.gov/"
+}

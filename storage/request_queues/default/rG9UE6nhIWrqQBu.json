@@ -1,0 +1,9 @@
+{
+	"id": "rG9UE6nhIWrqQBu",
+	"json": "{\"id\":\"rG9UE6nhIWrqQBu\",\"url\":\"https://www.dhcs.ca.gov/dataandstats/reports/Documents/CA2021-22-Preventative-Services-Report.pdf\",\"loadedUrl\":\"https://www.dhcs.ca.gov/file/ca2021-22-preventative-services-report/\",\"uniqueKey\":\"https://www.dhcs.ca.gov/dataandstats/reports/Documents/CA2021-22-Preventative-Services-Report.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:25:38.957Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dhcs.ca.gov/dataandstats/reports/Documents/CA2021-22-Preventative-Services-Report.pdf",
+	"url": "https://www.dhcs.ca.gov/dataandstats/reports/Documents/CA2021-22-Preventative-Services-Report.pdf"
+}

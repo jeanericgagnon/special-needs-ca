@@ -1,0 +1,9 @@
+{
+	"id": "moJ2XGdsBCLUgfP",
+	"json": "{\"id\":\"moJ2XGdsBCLUgfP\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/43144/chinar-sanghvi-anesthesiology-pain_medicine-sacramento?FreeText%3aLast+name=Sanghvi\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/43144/chinar-sanghvi-anesthesiology-pain_medicine-sacramento?FreeText%3aLast+name=Sanghvi\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/43144/chinar-sanghvi-anesthesiology-pain_medicine-sacramento?FreeText%3ALast+name=Sanghvi\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:13.699Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/43144/chinar-sanghvi-anesthesiology-pain_medicine-sacramento?FreeText%3ALast+name=Sanghvi",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/43144/chinar-sanghvi-anesthesiology-pain_medicine-sacramento?FreeText%3aLast+name=Sanghvi"
+}

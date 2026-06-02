@@ -1,0 +1,9 @@
+{
+	"id": "LgYO0k0nElidNSq",
+	"json": "{\"id\":\"LgYO0k0nElidNSq\",\"url\":\"https://gradpathways.ucdavis.edu/mission\",\"loadedUrl\":\"https://gradpathways.ucdavis.edu/mission\",\"uniqueKey\":\"https://gradpathways.ucdavis.edu/mission\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:52.316Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://gradpathways.ucdavis.edu/mission",
+	"url": "https://gradpathways.ucdavis.edu/mission"
+}

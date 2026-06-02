@@ -1,0 +1,9 @@
+{
+	"id": "Egyg9tX0JghhbhE",
+	"json": "{\"id\":\"Egyg9tX0JghhbhE\",\"url\":\"https://giving.ucdavis.edu/ways-to-give/student-foundation/join-aggies-helping-aggies\",\"loadedUrl\":\"https://giving.ucdavis.edu/ways-to-give/student-foundation/join-aggies-helping-aggies\",\"uniqueKey\":\"https://giving.ucdavis.edu/ways-to-give/student-foundation/join-aggies-helping-aggies\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:31.398Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://giving.ucdavis.edu/ways-to-give/student-foundation/join-aggies-helping-aggies",
+	"url": "https://giving.ucdavis.edu/ways-to-give/student-foundation/join-aggies-helping-aggies"
+}

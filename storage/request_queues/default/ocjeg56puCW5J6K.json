@@ -1,0 +1,9 @@
+{
+	"id": "ocjeg56puCW5J6K",
+	"json": "{\"id\":\"ocjeg56puCW5J6K\",\"url\":\"https://scdd.ca.gov/pos-service-code/infant-development-specialist/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/infant-development-specialist/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/infant-development-specialist\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:44.181Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/pos-service-code/infant-development-specialist",
+	"url": "https://scdd.ca.gov/pos-service-code/infant-development-specialist/"
+}

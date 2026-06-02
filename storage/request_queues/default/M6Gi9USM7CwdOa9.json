@@ -1,0 +1,9 @@
+{
+	"id": "M6Gi9USM7CwdOa9",
+	"json": "{\"id\":\"M6Gi9USM7CwdOa9\",\"url\":\"https://www.cdss.ca.gov/reporting/report-fraud/welfare-fraud#:~:text=To%20report%20welfare%20fraud%20contact,%40dss.ca.gov\",\"loadedUrl\":\"https://www.cdss.ca.gov/reporting/report-fraud/welfare-fraud#:~:text=To%20report%20welfare%20fraud%20contact,%40dss.ca.gov\",\"uniqueKey\":\"https://www.cdss.ca.gov/reporting/report-fraud/welfare-fraud\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:34.958Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/reporting/report-fraud/welfare-fraud",
+	"url": "https://www.cdss.ca.gov/reporting/report-fraud/welfare-fraud#:~:text=To%20report%20welfare%20fraud%20contact,%40dss.ca.gov"
+}

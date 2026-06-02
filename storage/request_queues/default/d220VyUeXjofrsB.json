@@ -1,0 +1,9 @@
+{
+	"id": "d220VyUeXjofrsB",
+	"json": "{\"id\":\"d220VyUeXjofrsB\",\"url\":\"https://www.cdph.ca.gov/Programs/OSPHLD/_layouts/15/listform.aspx?ListId=%7B503992D7%2DBA6A%2D4B62%2D8C38%2DD156F1B6FD42%7D&PageType=0\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/OSPHLD/Pages/Home.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/OSPHLD/_layouts/15/listform.aspx?ListId=%7B503992D7-BA6A-4B62-8C38-D156F1B6FD42%7D&PageType=0\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:15:30.411Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/OSPHLD/_layouts/15/listform.aspx?ListId=%7B503992D7-BA6A-4B62-8C38-D156F1B6FD42%7D&PageType=0",
+	"url": "https://www.cdph.ca.gov/Programs/OSPHLD/_layouts/15/listform.aspx?ListId=%7B503992D7%2DBA6A%2D4B62%2D8C38%2DD156F1B6FD42%7D&PageType=0"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "7o3G1rIp9Ukg0ck",
+	"json": "{\"id\":\"7o3G1rIp9Ukg0ck\",\"url\":\"https://www.cde.ca.gov/re/pr/prbg.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/re/pr/prbg.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/re/pr/prbg.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:24:12.065Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/re/pr/prbg.asp",
+	"url": "https://www.cde.ca.gov/re/pr/prbg.asp"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "2Ai70ytcEp6Gass",
+	"json": "{\"id\":\"2Ai70ytcEp6Gass\",\"url\":\"https://www.cde.ca.gov/ls/nu/mar24tuesday2webinar.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=2e003f4e-e549-424c-8cda-23a1885207cf&ssb=36649253671&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fls%2Fnu%2Fmar24tuesday2webinar.asp&ssi=59c58ccb-ctxv-44e3-8aab-dd7a7d5fcf14&ssk=botmanager_support@radware.com&ssm=60341218527805077164143689362831&ssn=a6fd8111cd4cbd13d1b4871ccaff97b6b3461e686c3a-1eb1-400b-a06ccc&sso=7620bb58-15d665180207aa5a30b695a983e4b2d373e2fb69a0ce0a8f&ssp=19286934331780384894178036251881712&ssq=41644162758405649940727452566041728510144&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2Y5MDAwMGU5ODExMmMtN2E0Yy00MjgxLWI3ZDctMDI1M2JmZDU1ZDIyMS0xNzgwMzI3NDUyNDMwMTMyMjAyLWFmMTU4NzM4NzE4OTM3YjMxNiIsInJkIjoiY2EuZ292IiwiX191em1mIjoiN2Y5MDAwMWU2ODZjM2EtMWViMS00MDBiLWFiNTgtMTVkNjY1MTgwMjA3MS0xNzgwMzI3NDUyNDMwMTMyMjAyLTAwM2NiODMzZTY2ODZiZGZjM2ExNiJ9\",\"uniqueKey\":\"https://www.cde.ca.gov/ls/nu/mar24tuesday2webinar.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:26:24.720Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ls/nu/mar24tuesday2webinar.asp",
+	"url": "https://www.cde.ca.gov/ls/nu/mar24tuesday2webinar.asp"
+}

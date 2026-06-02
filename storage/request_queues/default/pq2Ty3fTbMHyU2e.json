@@ -1,0 +1,9 @@
+{
+	"id": "pq2Ty3fTbMHyU2e",
+	"json": "{\"id\":\"pq2Ty3fTbMHyU2e\",\"url\":\"https://health.ucdavis.edu/patients-visitors/about-patient-care/patient-surveys\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/about-patient-care/patient-surveys\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/about-patient-care/patient-surveys\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:57.716Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/about-patient-care/patient-surveys",
+	"url": "https://health.ucdavis.edu/patients-visitors/about-patient-care/patient-surveys"
+}

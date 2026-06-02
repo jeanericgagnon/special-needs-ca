@@ -1,0 +1,9 @@
+{
+	"id": "vx9YgyMAMYEXDoB",
+	"json": "{\"id\":\"vx9YgyMAMYEXDoB\",\"url\":\"https://www.dhcs.ca.gov/services/medi-cal/eligibility/Pages/The-Newborn-Gateway.aspx\",\"loadedUrl\":\"https://www.dhcs.ca.gov/services/medi-cal/eligibility/Pages/The-Newborn-Gateway.aspx\",\"uniqueKey\":\"https://www.dhcs.ca.gov/services/medi-cal/eligibility/Pages/The-Newborn-Gateway.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:36.271Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dhcs.ca.gov/services/medi-cal/eligibility/Pages/The-Newborn-Gateway.aspx",
+	"url": "https://www.dhcs.ca.gov/services/medi-cal/eligibility/Pages/The-Newborn-Gateway.aspx"
+}

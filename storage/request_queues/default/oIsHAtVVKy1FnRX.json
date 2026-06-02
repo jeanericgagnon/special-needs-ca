@@ -1,0 +1,9 @@
+{
+	"id": "oIsHAtVVKy1FnRX",
+	"json": "{\"id\":\"oIsHAtVVKy1FnRX\",\"url\":\"https://calable.ca.gov/faqs/how-do-gifting-limits-work\",\"loadedUrl\":\"https://calable.ca.gov/faqs/how-do-gifting-limits-work\",\"uniqueKey\":\"https://calable.ca.gov/faqs/how-do-gifting-limits-work\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:54.260Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://calable.ca.gov/faqs/how-do-gifting-limits-work",
+	"url": "https://calable.ca.gov/faqs/how-do-gifting-limits-work"
+}

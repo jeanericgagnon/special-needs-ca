@@ -1,0 +1,9 @@
+{
+	"id": "yusyMDNaA7e6qLb",
+	"json": "{\"id\":\"yusyMDNaA7e6qLb\",\"url\":\"https://education.ucdavis.edu/graduation-celebration\",\"loadedUrl\":\"https://education.ucdavis.edu/graduation-celebration\",\"uniqueKey\":\"https://education.ucdavis.edu/graduation-celebration\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:17:19.330Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://education.ucdavis.edu/graduation-celebration",
+	"url": "https://education.ucdavis.edu/graduation-celebration"
+}

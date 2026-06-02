@@ -1,0 +1,9 @@
+{
+	"id": "QvdOxGyqmR1ogXW",
+	"json": "{\"id\":\"QvdOxGyqmR1ogXW\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/22170/noah-canvasser-endourology-robotic_surgery-surgery_-_robotic-urology-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/22170/noah-canvasser-endourology-robotic_surgery-surgery_-_robotic-urology-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/22170/noah-canvasser-endourology-robotic_surgery-surgery_-_robotic-urology-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:15.524Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/22170/noah-canvasser-endourology-robotic_surgery-surgery_-_robotic-urology-sacramento",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/22170/noah-canvasser-endourology-robotic_surgery-surgery_-_robotic-urology-sacramento"
+}

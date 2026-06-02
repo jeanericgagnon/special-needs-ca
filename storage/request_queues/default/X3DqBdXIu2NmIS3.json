@@ -1,0 +1,9 @@
+{
+	"id": "X3DqBdXIu2NmIS3",
+	"json": "{\"id\":\"X3DqBdXIu2NmIS3\",\"url\":\"https://physicians.ucdavis.edu/MedicalCenter/details/43173/david-dillon-emergency_medicine-sacramento?FreeText%3aLast+name=Dillon\",\"loadedUrl\":\"https://physicians.ucdavis.edu/MedicalCenter/details/43173/david-dillon-emergency_medicine-sacramento?FreeText%3aLast+name=Dillon\",\"uniqueKey\":\"https://physicians.ucdavis.edu/MedicalCenter/details/43173/david-dillon-emergency_medicine-sacramento?FreeText%3ALast+name=Dillon\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:26.704Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://physicians.ucdavis.edu/MedicalCenter/details/43173/david-dillon-emergency_medicine-sacramento?FreeText%3ALast+name=Dillon",
+	"url": "https://physicians.ucdavis.edu/MedicalCenter/details/43173/david-dillon-emergency_medicine-sacramento?FreeText%3aLast+name=Dillon"
+}

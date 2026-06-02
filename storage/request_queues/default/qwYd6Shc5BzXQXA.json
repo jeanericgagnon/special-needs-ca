@@ -1,0 +1,9 @@
+{
+	"id": "qwYd6Shc5BzXQXA",
+	"json": "{\"id\":\"qwYd6Shc5BzXQXA\",\"url\":\"http://cdss.ca.gov/translation-disclaimer\",\"loadedUrl\":\"https://cdss.ca.gov/translation-disclaimer\",\"uniqueKey\":\"http://cdss.ca.gov/translation-disclaimer\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:57:56.879Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://cdss.ca.gov/translation-disclaimer",
+	"url": "http://cdss.ca.gov/translation-disclaimer"
+}

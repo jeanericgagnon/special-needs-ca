@@ -1,0 +1,9 @@
+{
+	"id": "IQKNBqT2QMCCVwO",
+	"json": "{\"id\":\"IQKNBqT2QMCCVwO\",\"url\":\"https://health.ucdavis.edu/mind-institute/news/topic/cancer\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/news/topic/cancer\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/news/topic/cancer\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:58.653Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mind-institute/news/topic/cancer",
+	"url": "https://health.ucdavis.edu/mind-institute/news/topic/cancer"
+}

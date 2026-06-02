@@ -1,0 +1,9 @@
+{
+	"id": "ICwKFGT7rvWHBKd",
+	"json": "{\"id\":\"ICwKFGT7rvWHBKd\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/sapb/Pages/FASDs.aspx#:~:text=%E2%80%8BThere%20is%20no%20safe,st%E2%80%8Bage%20during%20pregnancy.&text=%E2%80%8BThere%20is%20no%20safe%20timeframe%20during%20pregnancy%20or%20while,get%20pregnant%20to%20drink%20alcohol.\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/sapb/Pages/FASDs.aspx#:~:text=%E2%80%8BThere%20is%20no%20safe,st%E2%80%8Bage%20during%20pregnancy.&text=%E2%80%8BThere%20is%20no%20safe%20timeframe%20during%20pregnancy%20or%20while,get%20pregnant%20to%20drink%20alcohol.\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/sapb/Pages/FASDs.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:06:34.279Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/sapb/Pages/FASDs.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/sapb/Pages/FASDs.aspx#:~:text=%E2%80%8BThere%20is%20no%20safe,st%E2%80%8Bage%20during%20pregnancy.&text=%E2%80%8BThere%20is%20no%20safe%20timeframe%20during%20pregnancy%20or%20while,get%20pregnant%20to%20drink%20alcohol."
+}

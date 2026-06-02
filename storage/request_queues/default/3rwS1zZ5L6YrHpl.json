@@ -1,0 +1,9 @@
+{
+	"id": "3rwS1zZ5L6YrHpl",
+	"json": "{\"id\":\"3rwS1zZ5L6YrHpl\",\"url\":\"https://www.ucdavis.edu/top-administrative-units\",\"loadedUrl\":\"https://www.ucdavis.edu/top-administrative-units\",\"uniqueKey\":\"https://www.ucdavis.edu/top-administrative-units\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:40.894Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ucdavis.edu/top-administrative-units",
+	"url": "https://www.ucdavis.edu/top-administrative-units"
+}

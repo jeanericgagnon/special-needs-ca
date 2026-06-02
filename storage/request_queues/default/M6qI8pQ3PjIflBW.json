@@ -1,0 +1,9 @@
+{
+	"id": "M6qI8pQ3PjIflBW",
+	"json": "{\"id\":\"M6qI8pQ3PjIflBW\",\"url\":\"https://www.cde.ca.gov/sp/cd/ci/parentappealinformation.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/cd/ci/parentappealinformation.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/cd/ci/parentappealinformation.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:25:13.895Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/sp/cd/ci/parentappealinformation.asp",
+	"url": "https://www.cde.ca.gov/sp/cd/ci/parentappealinformation.asp"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "ePbQAE4Ta8g6cG5",
+	"json": "{\"id\":\"ePbQAE4Ta8g6cG5\",\"url\":\"https://www.calhr.ca.gov/2024/08/02/state-of-california-launches-new-resource-site-for-displaced-federal-workers/\",\"loadedUrl\":\"https://www.calhr.ca.gov/2025/04/04/state-of-california-launches-new-resource-site-for-displaced-federal-workers/\",\"uniqueKey\":\"https://www.calhr.ca.gov/2024/08/02/state-of-california-launches-new-resource-site-for-displaced-federal-workers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:19.429Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.calhr.ca.gov/2024/08/02/state-of-california-launches-new-resource-site-for-displaced-federal-workers",
+	"url": "https://www.calhr.ca.gov/2024/08/02/state-of-california-launches-new-resource-site-for-displaced-federal-workers/"
+}

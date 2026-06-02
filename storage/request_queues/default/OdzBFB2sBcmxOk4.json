@@ -1,0 +1,9 @@
+{
+	"id": "OdzBFB2sBcmxOk4",
+	"json": "{\"id\":\"OdzBFB2sBcmxOk4\",\"url\":\"https://www.gov.ca.gov/2026/01/16/california-reduces-theft-of-food-and-cash-benefits-by-83-with-state-of-the-art-technology/\",\"loadedUrl\":\"https://www.gov.ca.gov/2026/01/16/california-reduces-theft-of-food-and-cash-benefits-by-83-with-state-of-the-art-technology/\",\"uniqueKey\":\"https://www.gov.ca.gov/2026/01/16/california-reduces-theft-of-food-and-cash-benefits-by-83-with-state-of-the-art-technology\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:20.785Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.gov.ca.gov/2026/01/16/california-reduces-theft-of-food-and-cash-benefits-by-83-with-state-of-the-art-technology",
+	"url": "https://www.gov.ca.gov/2026/01/16/california-reduces-theft-of-food-and-cash-benefits-by-83-with-state-of-the-art-technology/"
+}

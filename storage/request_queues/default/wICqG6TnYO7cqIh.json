@@ -1,0 +1,9 @@
+{
+	"id": "wICqG6TnYO7cqIh",
+	"json": "{\"id\":\"wICqG6TnYO7cqIh\",\"url\":\"https://www.cde.ca.gov/ci/pl/administrators.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/pl/administrators.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/pl/administrators.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:33.322Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ci/pl/administrators.asp",
+	"url": "https://www.cde.ca.gov/ci/pl/administrators.asp"
+}

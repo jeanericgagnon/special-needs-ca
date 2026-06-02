@@ -1,0 +1,9 @@
+{
+	"id": "3RUgmB8xliotqWL",
+	"json": "{\"id\":\"3RUgmB8xliotqWL\",\"url\":\"https://rarediseases.org/organizations/national-kidney-foundation/\",\"loadedUrl\":\"https://rarediseases.org/organizations/national-kidney-foundation/\",\"uniqueKey\":\"https://rarediseases.org/organizations/national-kidney-foundation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:10:34.505Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/organizations/national-kidney-foundation",
+	"url": "https://rarediseases.org/organizations/national-kidney-foundation/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "DuGV7RBkWZlx2nh",
+	"json": "{\"id\":\"DuGV7RBkWZlx2nh\",\"url\":\"https://selfhelp.courts.ca.gov/conservatorships\",\"loadedUrl\":\"https://selfhelp.courts.ca.gov/conservatorships\",\"uniqueKey\":\"https://selfhelp.courts.ca.gov/conservatorships\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:29.681Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://selfhelp.courts.ca.gov/conservatorships",
+	"url": "https://selfhelp.courts.ca.gov/conservatorships"
+}

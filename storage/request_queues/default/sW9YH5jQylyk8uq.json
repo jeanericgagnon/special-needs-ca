@@ -1,0 +1,9 @@
+{
+	"id": "sW9YH5jQylyk8uq",
+	"json": "{\"id\":\"sW9YH5jQylyk8uq\",\"url\":\"https://oag.ca.gov/housing\",\"loadedUrl\":\"https://oag.ca.gov/housing\",\"uniqueKey\":\"https://oag.ca.gov/housing\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:48.052Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://oag.ca.gov/housing",
+	"url": "https://oag.ca.gov/housing"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "ygyyX4FdaKtc9QE",
+	"json": "{\"id\":\"ygyyX4FdaKtc9QE\",\"url\":\"https://biology.ucdavis.edu/about/leadership/college-leadership\",\"loadedUrl\":\"https://biology.ucdavis.edu/about/leadership/college-leadership\",\"uniqueKey\":\"https://biology.ucdavis.edu/about/leadership/college-leadership\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:55:53.175Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://biology.ucdavis.edu/about/leadership/college-leadership",
+	"url": "https://biology.ucdavis.edu/about/leadership/college-leadership"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "bTteB9bJg6WvT4p",
+	"json": "{\"id\":\"bTteB9bJg6WvT4p\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/2/john-anderson-surgery_-_trauma_acute_care_surgery_and_surgical_critical_care-surgical_critical_care-sacramento?FreeText%3aLast+name=Anderson\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/2/john-anderson-surgery_-_trauma_acute_care_surgery_and_surgical_critical_care-surgical_critical_care-sacramento?FreeText%3aLast+name=Anderson\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/2/john-anderson-surgery_-_trauma_acute_care_surgery_and_surgical_critical_care-surgical_critical_care-sacramento?FreeText%3ALast+name=Anderson\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:10.116Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/2/john-anderson-surgery_-_trauma_acute_care_surgery_and_surgical_critical_care-surgical_critical_care-sacramento?FreeText%3ALast+name=Anderson",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/2/john-anderson-surgery_-_trauma_acute_care_surgery_and_surgical_critical_care-surgical_critical_care-sacramento?FreeText%3aLast+name=Anderson"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "KQoIiuJXxDosyz3",
+	"json": "{\"id\":\"KQoIiuJXxDosyz3\",\"url\":\"https://cnprc.ucdavis.edu/andrew-fox\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/andrew-fox\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/andrew-fox\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:14.283Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cnprc.ucdavis.edu/andrew-fox",
+	"url": "https://cnprc.ucdavis.edu/andrew-fox"
+}

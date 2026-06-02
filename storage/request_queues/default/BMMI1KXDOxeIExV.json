@@ -1,0 +1,9 @@
+{
+	"id": "BMMI1KXDOxeIExV",
+	"json": "{\"id\":\"BMMI1KXDOxeIExV\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/43239/timothy-tim-pirolli-congenital_heart_surgery-heart_failure_surgery-pediatric_cardiac_surgery-pediatric_surgery-sacramento?FreeText%3aLast+name=Pirolli\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/43239/timothy-tim-pirolli-congenital_heart_surgery-heart_failure_surgery-pediatric_cardiac_surgery-pediatric_surgery-sacramento?FreeText%3aLast+name=Pirolli\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/43239/timothy-tim-pirolli-congenital_heart_surgery-heart_failure_surgery-pediatric_cardiac_surgery-pediatric_surgery-sacramento?FreeText%3ALast+name=Pirolli\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:15.984Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/43239/timothy-tim-pirolli-congenital_heart_surgery-heart_failure_surgery-pediatric_cardiac_surgery-pediatric_surgery-sacramento?FreeText%3ALast+name=Pirolli",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/43239/timothy-tim-pirolli-congenital_heart_surgery-heart_failure_surgery-pediatric_cardiac_surgery-pediatric_surgery-sacramento?FreeText%3aLast+name=Pirolli"
+}

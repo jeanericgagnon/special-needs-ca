@@ -1,0 +1,9 @@
+{
+	"id": "hNV6UDvgz8blniF",
+	"json": "{\"id\":\"hNV6UDvgz8blniF\",\"url\":\"https://health.ucdavis.edu/ctsc/area/education/kl2/\",\"loadedUrl\":\"https://health.ucdavis.edu/ctsc/area/education/kl2/\",\"uniqueKey\":\"https://health.ucdavis.edu/ctsc/area/education/kl2\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:33.440Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/ctsc/area/education/kl2",
+	"url": "https://health.ucdavis.edu/ctsc/area/education/kl2/"
+}

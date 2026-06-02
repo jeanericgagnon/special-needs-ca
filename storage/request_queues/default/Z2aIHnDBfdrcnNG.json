@@ -1,0 +1,9 @@
+{
+	"id": "Z2aIHnDBfdrcnNG",
+	"json": "{\"id\":\"Z2aIHnDBfdrcnNG\",\"url\":\"https://www.dds.ca.gov/general/appeals-complaints-comments/consumer-rights-complaint/\",\"loadedUrl\":\"https://www.dds.ca.gov/general/appeals-complaints-comments/consumer-rights-complaint/\",\"uniqueKey\":\"https://www.dds.ca.gov/general/appeals-complaints-comments/consumer-rights-complaint\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:21.410Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/general/appeals-complaints-comments/consumer-rights-complaint",
+	"url": "https://www.dds.ca.gov/general/appeals-complaints-comments/consumer-rights-complaint/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "IAoeG1MoWIVFf5T",
+	"json": "{\"id\":\"IAoeG1MoWIVFf5T\",\"url\":\"https://www.ca.gov/departments/238/services/1115/\",\"loadedUrl\":\"https://www.ca.gov/departments/238/services/1115/\",\"uniqueKey\":\"https://www.ca.gov/departments/238/services/1115\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:28.536Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ca.gov/departments/238/services/1115",
+	"url": "https://www.ca.gov/departments/238/services/1115/"
+}

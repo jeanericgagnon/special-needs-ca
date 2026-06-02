@@ -1,0 +1,9 @@
+{
+	"id": "QVKYW9IDtBLItdX",
+	"json": "{\"id\":\"QVKYW9IDtBLItdX\",\"url\":\"https://fosteryouthhelp.ca.gov/foster-youth-rights/\",\"loadedUrl\":\"https://fosteryouthhelp.ca.gov/foster-youth-rights/\",\"uniqueKey\":\"https://fosteryouthhelp.ca.gov/foster-youth-rights\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:11.465Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://fosteryouthhelp.ca.gov/foster-youth-rights",
+	"url": "https://fosteryouthhelp.ca.gov/foster-youth-rights/"
+}

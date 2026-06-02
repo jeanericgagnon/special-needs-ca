@@ -1,0 +1,9 @@
+{
+	"id": "cMXmDKRYhVdJUns",
+	"json": "{\"id\":\"cMXmDKRYhVdJUns\",\"url\":\"https://cdss.ca.gov/inforesources/Adult-Care-Licensing/Public-Information-and-Policies\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/adult-care-licensing/public-information-and-policies\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Adult-Care-Licensing/Public-Information-and-Policies\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:38.506Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/Adult-Care-Licensing/Public-Information-and-Policies",
+	"url": "https://cdss.ca.gov/inforesources/Adult-Care-Licensing/Public-Information-and-Policies"
+}

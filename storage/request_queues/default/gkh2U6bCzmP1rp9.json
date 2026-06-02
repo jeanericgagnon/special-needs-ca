@@ -1,0 +1,9 @@
+{
+	"id": "gkh2U6bCzmP1rp9",
+	"json": "{\"id\":\"gkh2U6bCzmP1rp9\",\"url\":\"https://rarediseases.org/for-patients-and-families/information-resources/info-clinical-trials-and-research-studies/\",\"loadedUrl\":\"https://rarediseases.org/living-with-a-rare-disease/find-clinical-trials/\",\"uniqueKey\":\"https://rarediseases.org/for-patients-and-families/information-resources/info-clinical-trials-and-research-studies\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:10:03.132Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/for-patients-and-families/information-resources/info-clinical-trials-and-research-studies",
+	"url": "https://rarediseases.org/for-patients-and-families/information-resources/info-clinical-trials-and-research-studies/"
+}

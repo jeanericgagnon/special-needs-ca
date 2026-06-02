@@ -1,0 +1,9 @@
+{
+	"id": "tS0LM2c3d7Ni5Nk",
+	"json": "{\"id\":\"tS0LM2c3d7Ni5Nk\",\"url\":\"https://cnprc.ucdavis.edu/flow-cytometry-training\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/flow-cytometry-training\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/flow-cytometry-training\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:16.320Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cnprc.ucdavis.edu/flow-cytometry-training",
+	"url": "https://cnprc.ucdavis.edu/flow-cytometry-training"
+}

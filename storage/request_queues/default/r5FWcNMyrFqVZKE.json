@@ -1,0 +1,9 @@
+{
+	"id": "r5FWcNMyrFqVZKE",
+	"json": "{\"id\":\"r5FWcNMyrFqVZKE\",\"url\":\"https://leginfo.legislature.ca.gov/faces/billResultsClient.xhtml?location=SFLOOR&agendadate=06%2F01%2F2026&description=Senate+Floor+Session\",\"loadedUrl\":\"https://leginfo.legislature.ca.gov/faces/billResultsClient.xhtml?location=SFLOOR&agendadate=06%2F01%2F2026&description=Senate+Floor+Session\",\"uniqueKey\":\"https://leginfo.legislature.ca.gov/faces/billResultsClient.xhtml?agendadate=06%2F01%2F2026&description=Senate+Floor+Session&location=SFLOOR\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:19.190Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://leginfo.legislature.ca.gov/faces/billResultsClient.xhtml?agendadate=06%2F01%2F2026&description=Senate+Floor+Session&location=SFLOOR",
+	"url": "https://leginfo.legislature.ca.gov/faces/billResultsClient.xhtml?location=SFLOOR&agendadate=06%2F01%2F2026&description=Senate+Floor+Session"
+}

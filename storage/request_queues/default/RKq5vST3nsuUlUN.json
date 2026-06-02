@@ -1,0 +1,9 @@
+{
+	"id": "RKq5vST3nsuUlUN",
+	"json": "{\"id\":\"RKq5vST3nsuUlUN\",\"url\":\"https://health.ucdavis.edu/medical-school/admissions/aamc-preview-exam-requirement\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-school/admissions/aamc-preview-exam-requirement\",\"uniqueKey\":\"https://health.ucdavis.edu/medical-school/admissions/aamc-preview-exam-requirement\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:04.266Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/medical-school/admissions/aamc-preview-exam-requirement",
+	"url": "https://health.ucdavis.edu/medical-school/admissions/aamc-preview-exam-requirement"
+}

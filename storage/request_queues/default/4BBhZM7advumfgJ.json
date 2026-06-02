@@ -1,0 +1,9 @@
+{
+	"id": "4BBhZM7advumfgJ",
+	"json": "{\"id\":\"4BBhZM7advumfgJ\",\"url\":\"http://housing.ucdavis.edu/\",\"loadedUrl\":\"https://housing.ucdavis.edu/\",\"uniqueKey\":\"http://housing.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:34.231Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://housing.ucdavis.edu",
+	"url": "http://housing.ucdavis.edu/"
+}

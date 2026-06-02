@@ -1,0 +1,9 @@
+{
+	"id": "PQICqmoQCihb1mO",
+	"json": "{\"id\":\"PQICqmoQCihb1mO\",\"url\":\"https://calable.ca.gov/eligibility-screener\",\"loadedUrl\":\"https://calable.ca.gov/eligibility-screener\",\"uniqueKey\":\"https://calable.ca.gov/eligibility-screener\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:15.373Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://calable.ca.gov/eligibility-screener",
+	"url": "https://calable.ca.gov/eligibility-screener"
+}

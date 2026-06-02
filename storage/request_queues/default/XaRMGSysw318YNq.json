@@ -1,0 +1,9 @@
+{
+	"id": "XaRMGSysw318YNq",
+	"json": "{\"id\":\"XaRMGSysw318YNq\",\"url\":\"https://www.cde.ca.gov/sp/cd/ci/lpcesubmission.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/cd/ci/lpcesubmission.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/cd/ci/lpcesubmission.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:25:13.424Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/sp/cd/ci/lpcesubmission.asp",
+	"url": "https://www.cde.ca.gov/sp/cd/ci/lpcesubmission.asp"
+}

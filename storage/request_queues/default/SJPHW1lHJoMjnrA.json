@@ -1,0 +1,9 @@
+{
+	"id": "SJPHW1lHJoMjnrA",
+	"json": "{\"id\":\"SJPHW1lHJoMjnrA\",\"url\":\"https://ldm.ucdavis.edu/\",\"loadedUrl\":\"https://ldm.ucdavis.edu/\",\"uniqueKey\":\"https://ldm.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:44.397Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://ldm.ucdavis.edu",
+	"url": "https://ldm.ucdavis.edu/"
+}

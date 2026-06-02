@@ -1,0 +1,9 @@
+{
+	"id": "z3r5WlXbSJ8aR0B",
+	"json": "{\"id\":\"z3r5WlXbSJ8aR0B\",\"url\":\"https://www.dds.ca.gov/initiatives/office-of-the-ombudsperson/\",\"loadedUrl\":\"https://www.dds.ca.gov/initiatives/office-of-the-ombudsperson/\",\"uniqueKey\":\"https://www.dds.ca.gov/initiatives/office-of-the-ombudsperson\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:18.828Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/initiatives/office-of-the-ombudsperson",
+	"url": "https://www.dds.ca.gov/initiatives/office-of-the-ombudsperson/"
+}

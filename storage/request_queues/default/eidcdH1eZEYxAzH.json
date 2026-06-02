@@ -1,0 +1,9 @@
+{
+	"id": "eidcdH1eZEYxAzH",
+	"json": "{\"id\":\"eidcdH1eZEYxAzH\",\"url\":\"https://oag.ca.gov/meetings\",\"loadedUrl\":\"https://oag.ca.gov/meetings\",\"uniqueKey\":\"https://oag.ca.gov/meetings\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:51.052Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://oag.ca.gov/meetings",
+	"url": "https://oag.ca.gov/meetings"
+}

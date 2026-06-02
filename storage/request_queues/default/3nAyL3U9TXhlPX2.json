@@ -1,0 +1,9 @@
+{
+	"id": "3nAyL3U9TXhlPX2",
+	"json": "{\"id\":\"3nAyL3U9TXhlPX2\",\"url\":\"https://www.dhcs.ca.gov/formsandpubs/Documents/MMCDAPLsandPolicyLetters/PL1998/MMCDPL98010.pdf\",\"loadedUrl\":\"https://www.dhcs.ca.gov/file/mmcdpl98010/\",\"uniqueKey\":\"https://www.dhcs.ca.gov/formsandpubs/Documents/MMCDAPLsandPolicyLetters/PL1998/MMCDPL98010.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T17:45:13.317Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dhcs.ca.gov/formsandpubs/Documents/MMCDAPLsandPolicyLetters/PL1998/MMCDPL98010.pdf",
+	"url": "https://www.dhcs.ca.gov/formsandpubs/Documents/MMCDAPLsandPolicyLetters/PL1998/MMCDPL98010.pdf"
+}

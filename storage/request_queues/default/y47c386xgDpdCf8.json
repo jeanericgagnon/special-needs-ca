@@ -1,0 +1,9 @@
+{
+	"id": "y47c386xgDpdCf8",
+	"json": "{\"id\":\"y47c386xgDpdCf8\",\"url\":\"https://health.ucdavis.edu/health-topics/aging-senior-health\",\"loadedUrl\":\"https://health.ucdavis.edu/health-topics/aging-senior-health\",\"uniqueKey\":\"https://health.ucdavis.edu/health-topics/aging-senior-health\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:56.816Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/health-topics/aging-senior-health",
+	"url": "https://health.ucdavis.edu/health-topics/aging-senior-health"
+}

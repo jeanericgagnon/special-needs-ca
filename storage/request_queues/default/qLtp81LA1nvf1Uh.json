@@ -1,0 +1,9 @@
+{
+	"id": "qLtp81LA1nvf1Uh",
+	"json": "{\"id\":\"qLtp81LA1nvf1Uh\",\"url\":\"https://www.ctc.ca.gov/program-sponsors/prep-programs/sped/\",\"loadedUrl\":\"https://www.ctc.ca.gov/program-sponsors/prep-programs/sped/\",\"uniqueKey\":\"https://www.ctc.ca.gov/program-sponsors/prep-programs/sped\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:27.342Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ctc.ca.gov/program-sponsors/prep-programs/sped",
+	"url": "https://www.ctc.ca.gov/program-sponsors/prep-programs/sped/"
+}

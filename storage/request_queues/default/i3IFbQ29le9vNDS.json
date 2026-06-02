@@ -1,0 +1,9 @@
+{
+	"id": "i3IFbQ29le9vNDS",
+	"json": "{\"id\":\"i3IFbQ29le9vNDS\",\"url\":\"https://www.library.ca.gov/services/to-libraries/ethnic-media/\",\"loadedUrl\":\"https://www.library.ca.gov/services/to-libraries/ethnic-media/\",\"uniqueKey\":\"https://www.library.ca.gov/services/to-libraries/ethnic-media\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:38.001Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.library.ca.gov/services/to-libraries/ethnic-media",
+	"url": "https://www.library.ca.gov/services/to-libraries/ethnic-media/"
+}

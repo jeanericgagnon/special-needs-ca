@@ -1,0 +1,9 @@
+{
+	"id": "TuVqLi0eeNi5hkw",
+	"json": "{\"id\":\"TuVqLi0eeNi5hkw\",\"url\":\"https://health.ucdavis.edu/internalmedicine/pulmonary/rehabilitation/index.html\",\"loadedUrl\":\"https://health.ucdavis.edu/internal-medicine/pulmonary/our-services/pulmonary-rehabilitation\",\"uniqueKey\":\"https://health.ucdavis.edu/internalmedicine/pulmonary/rehabilitation/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:38.384Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/internalmedicine/pulmonary/rehabilitation/index.html",
+	"url": "https://health.ucdavis.edu/internalmedicine/pulmonary/rehabilitation/index.html"
+}

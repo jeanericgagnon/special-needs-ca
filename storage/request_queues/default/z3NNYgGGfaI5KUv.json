@@ -1,0 +1,9 @@
+{
+	"id": "z3NNYgGGfaI5KUv",
+	"json": "{\"id\":\"z3NNYgGGfaI5KUv\",\"url\":\"http://cdss.ca.gov/inforesources/ccld_acs\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/ccld_acs\",\"uniqueKey\":\"http://cdss.ca.gov/inforesources/ccld_acs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:33.044Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://cdss.ca.gov/inforesources/ccld_acs",
+	"url": "http://cdss.ca.gov/inforesources/ccld_acs"
+}

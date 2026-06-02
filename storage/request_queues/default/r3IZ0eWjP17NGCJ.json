@@ -1,0 +1,9 @@
+{
+	"id": "r3IZ0eWjP17NGCJ",
+	"json": "{\"id\":\"r3IZ0eWjP17NGCJ\",\"url\":\"https://www.cdss.ca.gov/inforesources/cdss-programs/ebt/ebtedge\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/cdss-programs/ebt/ebtedge\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/cdss-programs/ebt/ebtedge\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:03.316Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/inforesources/cdss-programs/ebt/ebtedge",
+	"url": "https://www.cdss.ca.gov/inforesources/cdss-programs/ebt/ebtedge"
+}

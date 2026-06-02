@@ -1,0 +1,9 @@
+{
+	"id": "eN1ZnnHeGtaKxN4",
+	"json": "{\"id\":\"eN1ZnnHeGtaKxN4\",\"url\":\"https://health.ucdavis.edu/surgery/specialties/robotic/\",\"loadedUrl\":\"https://health.ucdavis.edu/surgery/specialties/robotic/\",\"uniqueKey\":\"https://health.ucdavis.edu/surgery/specialties/robotic\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:51.502Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/surgery/specialties/robotic",
+	"url": "https://health.ucdavis.edu/surgery/specialties/robotic/"
+}

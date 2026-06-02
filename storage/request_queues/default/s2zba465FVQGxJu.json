@@ -1,0 +1,9 @@
+{
+	"id": "s2zba465FVQGxJu",
+	"json": "{\"id\":\"s2zba465FVQGxJu\",\"url\":\"https://search.dca.ca.gov/\",\"loadedUrl\":\"https://search.dca.ca.gov/\",\"uniqueKey\":\"https://search.dca.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:35.679Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://search.dca.ca.gov",
+	"url": "https://search.dca.ca.gov/"
+}

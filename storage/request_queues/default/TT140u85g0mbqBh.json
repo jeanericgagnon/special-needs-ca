@@ -1,0 +1,9 @@
+{
+	"id": "TT140u85g0mbqBh",
+	"json": "{\"id\":\"TT140u85g0mbqBh\",\"url\":\"https://give.ucp.org/campaign/737365/privacy\",\"loadedUrl\":\"https://www.gofundme.com/c/privacy\",\"uniqueKey\":\"https://give.ucp.org/campaign/737365/privacy\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:27:23.206Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucp.org/campaign/737365/privacy",
+	"url": "https://give.ucp.org/campaign/737365/privacy"
+}

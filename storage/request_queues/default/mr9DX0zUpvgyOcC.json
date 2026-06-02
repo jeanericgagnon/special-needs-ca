@@ -1,0 +1,9 @@
+{
+	"id": "mr9DX0zUpvgyOcC",
+	"json": "{\"id\":\"mr9DX0zUpvgyOcC\",\"url\":\"https://cdss.ca.gov/inforesources/Foster-Care/Independent-Living-Program\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/foster-care/independent-living-program\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Foster-Care/Independent-Living-Program\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:56.611Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/Foster-Care/Independent-Living-Program",
+	"url": "https://cdss.ca.gov/inforesources/Foster-Care/Independent-Living-Program"
+}

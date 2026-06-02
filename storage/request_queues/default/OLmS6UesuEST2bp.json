@@ -1,0 +1,9 @@
+{
+	"id": "OLmS6UesuEST2bp",
+	"json": "{\"id\":\"OLmS6UesuEST2bp\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/11648/natasha-nakra-pediatric_infectious_diseases-sacramento?FreeText:Last+name=Nakra\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/11648/natasha-nakra-pediatric_infectious_diseases-sacramento?FreeText:Last+name=Nakra\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/11648/natasha-nakra-pediatric_infectious_diseases-sacramento?FreeText%3ALast+name=Nakra\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:17.391Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/11648/natasha-nakra-pediatric_infectious_diseases-sacramento?FreeText%3ALast+name=Nakra",
+	"url": "https://health.ucdavis.edu/patients-visitors/team/11648/natasha-nakra-pediatric_infectious_diseases-sacramento?FreeText:Last+name=Nakra"
+}

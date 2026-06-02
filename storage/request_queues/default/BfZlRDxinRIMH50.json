@@ -1,0 +1,9 @@
+{
+	"id": "BfZlRDxinRIMH50",
+	"json": "{\"id\":\"BfZlRDxinRIMH50\",\"url\":\"https://www.auditor.ca.gov/reports/2025-001/\",\"loadedUrl\":\"https://www.auditor.ca.gov/reports/2025-001/\",\"uniqueKey\":\"https://www.auditor.ca.gov/reports/2025-001\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:05:24.358Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.auditor.ca.gov/reports/2025-001",
+	"url": "https://www.auditor.ca.gov/reports/2025-001/"
+}

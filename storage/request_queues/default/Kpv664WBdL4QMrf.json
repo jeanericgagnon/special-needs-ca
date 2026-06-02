@@ -1,0 +1,9 @@
+{
+	"id": "Kpv664WBdL4QMrf",
+	"json": "{\"id\":\"Kpv664WBdL4QMrf\",\"url\":\"https://cdss.ca.gov/inforesources/statewide-verification-hub\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/statewide-verification-hub\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/statewide-verification-hub\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:18.582Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/statewide-verification-hub",
+	"url": "https://cdss.ca.gov/inforesources/statewide-verification-hub"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "n4YcjdvSokLG1sU",
+	"json": "{\"id\":\"n4YcjdvSokLG1sU\",\"url\":\"https://edd.ca.gov/en/newsroom/benefitting-californians/\",\"loadedUrl\":\"https://edd.ca.gov/en/newsroom/benefitting-californians/\",\"uniqueKey\":\"https://edd.ca.gov/en/newsroom/benefitting-californians\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:41.082Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://edd.ca.gov/en/newsroom/benefitting-californians",
+	"url": "https://edd.ca.gov/en/newsroom/benefitting-californians/"
+}

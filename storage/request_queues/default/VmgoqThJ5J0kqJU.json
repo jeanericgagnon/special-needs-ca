@@ -1,0 +1,9 @@
+{
+	"id": "VmgoqThJ5J0kqJU",
+	"json": "{\"id\":\"VmgoqThJ5J0kqJU\",\"url\":\"https://scdd.ca.gov/pos-service-code/dentistry/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/dentistry/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/dentistry\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:54.139Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/pos-service-code/dentistry",
+	"url": "https://scdd.ca.gov/pos-service-code/dentistry/"
+}

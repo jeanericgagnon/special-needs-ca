@@ -1,0 +1,9 @@
+{
+	"id": "XCZMIKWfxmVtKTP",
+	"json": "{\"id\":\"XCZMIKWfxmVtKTP\",\"url\":\"https://rarediseases.org/patient-registries-natural-history-studies/\",\"loadedUrl\":\"https://rarediseases.org/advancing-research/patient-registry-program/\",\"uniqueKey\":\"https://rarediseases.org/patient-registries-natural-history-studies\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:57:22.463Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/patient-registries-natural-history-studies",
+	"url": "https://rarediseases.org/patient-registries-natural-history-studies/"
+}

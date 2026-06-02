@@ -1,0 +1,9 @@
+{
+	"id": "FFA02wKOR4bOIvZ",
+	"json": "{\"id\":\"FFA02wKOR4bOIvZ\",\"url\":\"https://www.ucdavis.edu/major-requirements-graduate-school-of-management\",\"loadedUrl\":\"https://www.ucdavis.edu/major-requirements-graduate-school-of-management\",\"uniqueKey\":\"https://www.ucdavis.edu/major-requirements-graduate-school-of-management\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:43.201Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ucdavis.edu/major-requirements-graduate-school-of-management",
+	"url": "https://www.ucdavis.edu/major-requirements-graduate-school-of-management"
+}

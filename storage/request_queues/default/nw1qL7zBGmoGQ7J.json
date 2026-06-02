@@ -1,0 +1,9 @@
+{
+	"id": "nw1qL7zBGmoGQ7J",
+	"json": "{\"id\":\"nw1qL7zBGmoGQ7J\",\"url\":\"https://www.cdss.ca.gov/inforesources/forms-brochures\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/forms-brochures\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/forms-brochures\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:43.335Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/inforesources/forms-brochures",
+	"url": "https://www.cdss.ca.gov/inforesources/forms-brochures"
+}

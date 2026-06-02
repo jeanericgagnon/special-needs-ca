@@ -1,0 +1,9 @@
+{
+	"id": "37XaMnOjyZnBNcV",
+	"json": "{\"id\":\"37XaMnOjyZnBNcV\",\"url\":\"https://www.caloes.ca.gov/office-of-the-director/seismic-safety-commission/\",\"loadedUrl\":\"https://www.caloes.ca.gov/office-of-the-director/seismic-safety-commission/\",\"uniqueKey\":\"https://www.caloes.ca.gov/office-of-the-director/seismic-safety-commission\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:40.753Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.caloes.ca.gov/office-of-the-director/seismic-safety-commission",
+	"url": "https://www.caloes.ca.gov/office-of-the-director/seismic-safety-commission/"
+}

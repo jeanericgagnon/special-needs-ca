@@ -1,0 +1,9 @@
+{
+	"id": "a5kZUNKWxslrGtg",
+	"json": "{\"id\":\"a5kZUNKWxslrGtg\",\"url\":\"https://scdd.ca.gov/pos-service-code/supported-living-service-vendor-administration/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/supported-living-service-vendor-administration/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/supported-living-service-vendor-administration\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:41.766Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/pos-service-code/supported-living-service-vendor-administration",
+	"url": "https://scdd.ca.gov/pos-service-code/supported-living-service-vendor-administration/"
+}

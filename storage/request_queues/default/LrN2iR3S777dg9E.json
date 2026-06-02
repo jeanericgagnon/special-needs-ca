@@ -1,0 +1,9 @@
+{
+	"id": "LrN2iR3S777dg9E",
+	"json": "{\"id\":\"LrN2iR3S777dg9E\",\"url\":\"https://biology.ucdavis.edu/about/leadership/clc\",\"loadedUrl\":\"https://biology.ucdavis.edu/about/leadership/clc\",\"uniqueKey\":\"https://biology.ucdavis.edu/about/leadership/clc\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:07.270Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://biology.ucdavis.edu/about/leadership/clc",
+	"url": "https://biology.ucdavis.edu/about/leadership/clc"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "Qun64rsn3OQiIfn",
+	"json": "{\"id\":\"Qun64rsn3OQiIfn\",\"url\":\"https://health.ucdavis.edu/mind-institute/research/autism-phenome-project/\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/research/autism-phenome-project/\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/research/autism-phenome-project\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:05:11.196Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mind-institute/research/autism-phenome-project",
+	"url": "https://health.ucdavis.edu/mind-institute/research/autism-phenome-project/"
+}

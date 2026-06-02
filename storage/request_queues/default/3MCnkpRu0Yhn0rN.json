@@ -1,0 +1,9 @@
+{
+	"id": "3MCnkpRu0Yhn0rN",
+	"json": "{\"id\":\"3MCnkpRu0Yhn0rN\",\"url\":\"https://rarediseases.org/newsletter/\",\"loadedUrl\":\"https://rarediseases.org/newsletter/\",\"uniqueKey\":\"https://rarediseases.org/newsletter\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:57:22.001Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/newsletter",
+	"url": "https://rarediseases.org/newsletter/"
+}

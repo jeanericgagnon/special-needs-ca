@@ -1,0 +1,9 @@
+{
+	"id": "HZrO8AnlUTdQbLf",
+	"json": "{\"id\":\"HZrO8AnlUTdQbLf\",\"url\":\"https://health.ucdavis.edu/pharmacy/outpatient/Frequently-asked-questions\",\"loadedUrl\":\"https://health.ucdavis.edu/pharmacy/outpatient/Frequently-asked-questions\",\"uniqueKey\":\"https://health.ucdavis.edu/pharmacy/outpatient/Frequently-asked-questions\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:37.291Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/pharmacy/outpatient/Frequently-asked-questions",
+	"url": "https://health.ucdavis.edu/pharmacy/outpatient/Frequently-asked-questions"
+}

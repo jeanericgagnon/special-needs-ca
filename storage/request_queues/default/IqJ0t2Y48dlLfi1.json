@@ -1,0 +1,9 @@
+{
+	"id": "IqJ0t2Y48dlLfi1",
+	"json": "{\"id\":\"IqJ0t2Y48dlLfi1\",\"url\":\"https://www.cdph.ca.gov/Programs/OPA/Pages/Office-of-Communications.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/OPA/Pages/Office-of-Communications.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/OPA/Pages/Office-of-Communications.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:56.540Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/OPA/Pages/Office-of-Communications.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/OPA/Pages/Office-of-Communications.aspx"
+}

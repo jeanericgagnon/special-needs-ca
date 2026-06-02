@@ -1,0 +1,9 @@
+{
+	"id": "d2uh4eEujQf7MQw",
+	"json": "{\"id\":\"d2uh4eEujQf7MQw\",\"url\":\"https://health.ucdavis.edu/health-education/topic/weight/\",\"loadedUrl\":\"https://health.ucdavis.edu/health-education/topic/weight/\",\"uniqueKey\":\"https://health.ucdavis.edu/health-education/topic/weight\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:32.975Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/health-education/topic/weight",
+	"url": "https://health.ucdavis.edu/health-education/topic/weight/"
+}

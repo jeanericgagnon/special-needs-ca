@@ -1,0 +1,9 @@
+{
+	"id": "32lIE3jqhDmqWXx",
+	"json": "{\"id\":\"32lIE3jqhDmqWXx\",\"url\":\"https://onlineservices.cdtfa.ca.gov/_/\",\"loadedUrl\":\"https://onlineservices.cdtfa.ca.gov/_/\",\"uniqueKey\":\"https://onlineservices.cdtfa.ca.gov/_\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:45.700Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://onlineservices.cdtfa.ca.gov/_",
+	"url": "https://onlineservices.cdtfa.ca.gov/_/"
+}

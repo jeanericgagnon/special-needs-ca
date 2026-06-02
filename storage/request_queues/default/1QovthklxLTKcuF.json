@@ -1,0 +1,9 @@
+{
+	"id": "1QovthklxLTKcuF",
+	"json": "{\"id\":\"1QovthklxLTKcuF\",\"url\":\"https://www.cdss.ca.gov/adult-protective-services\",\"loadedUrl\":\"https://www.cdss.ca.gov/adult-protective-services\",\"uniqueKey\":\"https://www.cdss.ca.gov/adult-protective-services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:29.403Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/adult-protective-services",
+	"url": "https://www.cdss.ca.gov/adult-protective-services"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "6HZzLRABvLLG5BL",
+	"json": "{\"id\":\"6HZzLRABvLLG5BL\",\"url\":\"https://www.parks.ca.gov/Accessibility\",\"loadedUrl\":\"https://www.parks.ca.gov/Accessibility\",\"uniqueKey\":\"https://www.parks.ca.gov/Accessibility\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:06.870Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.parks.ca.gov/Accessibility",
+	"url": "https://www.parks.ca.gov/Accessibility"
+}

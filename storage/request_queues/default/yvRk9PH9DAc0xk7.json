@@ -1,0 +1,9 @@
+{
+	"id": "yvRk9PH9DAc0xk7",
+	"json": "{\"id\":\"yvRk9PH9DAc0xk7\",\"url\":\"https://www.cde.ca.gov/sp/cd/ci/pilotprogram.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=06e31e22-4b78-4209-9871-181b47ad1447&ssb=22452246853&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fsp%2Fcd%2Fci%2Fpilotprogram.asp&ssi=14ce5306-ctxv-494a-80a1-66e212ef8030&ssk=botmanager_support@radware.com&ssm=52485966953675118135789885187384&ssn=fc5d668f84decd6260923a411faff2d41ff6546fb777-211b-455b-8bdfa2&sso=772063b1-1a33ca96b6bb9aead299284a4f549dda7b5536dbe37aa6aa&ssp=72329967281780348213178030375097622&ssq=50392882751330653564027502019777199844417&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDA1NDZmYjc3Ny0yMTFiLTQ1NWItODNiMS0xYTMzY2E5NmI2YmIxLTE3ODAzMjc1MDI4MTQxMDI5NS0wMDNhNTE0MjkxZWYxZWE2MzBiMTMiLCJ1em14IjoiN2Y5MDAwNzMwMWY4NWUtM2U2ZC00NDIzLWE3YTktZjViMGYzMWY2ZTM1MS0xNzgwMzI1OTA2MTA4MTYwNzAwMS00MDExMjA1OWY0NTMwOTJkMTYiLCJyZCI6ImNhLmdvdiJ9\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/cd/ci/pilotprogram.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:25:13.259Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/sp/cd/ci/pilotprogram.asp",
+	"url": "https://www.cde.ca.gov/sp/cd/ci/pilotprogram.asp"
+}

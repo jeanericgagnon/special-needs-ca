@@ -1,0 +1,9 @@
+{
+	"id": "G6ZbjCKjwL0LcbA",
+	"json": "{\"id\":\"G6ZbjCKjwL0LcbA\",\"url\":\"https://engineering.ucdavis.edu/undergraduates/honors-awards\",\"loadedUrl\":\"https://engineering.ucdavis.edu/undergraduates/honors-awards\",\"uniqueKey\":\"https://engineering.ucdavis.edu/undergraduates/honors-awards\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:34.957Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://engineering.ucdavis.edu/undergraduates/honors-awards",
+	"url": "https://engineering.ucdavis.edu/undergraduates/honors-awards"
+}

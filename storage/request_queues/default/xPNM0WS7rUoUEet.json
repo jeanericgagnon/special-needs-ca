@@ -1,0 +1,9 @@
+{
+	"id": "xPNM0WS7rUoUEet",
+	"json": "{\"id\":\"xPNM0WS7rUoUEet\",\"url\":\"https://irb.ucdavis.edu/category/announcements/\",\"loadedUrl\":\"https://irb.ucdavis.edu/category/announcements/\",\"uniqueKey\":\"https://irb.ucdavis.edu/category/announcements\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:41.817Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://irb.ucdavis.edu/category/announcements",
+	"url": "https://irb.ucdavis.edu/category/announcements/"
+}

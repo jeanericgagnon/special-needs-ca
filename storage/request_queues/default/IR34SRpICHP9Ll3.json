@@ -1,0 +1,9 @@
+{
+	"id": "IR34SRpICHP9Ll3",
+	"json": "{\"id\":\"IR34SRpICHP9Ll3\",\"url\":\"https://health.ucdavis.edu/children/team/32209/satyan-lakshminrusimha-neonatology-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/children/team/32209/satyan-lakshminrusimha-neonatology-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/children/team/32209/satyan-lakshminrusimha-neonatology-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:09.425Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/children/team/32209/satyan-lakshminrusimha-neonatology-sacramento",
+	"url": "https://health.ucdavis.edu/children/team/32209/satyan-lakshminrusimha-neonatology-sacramento"
+}

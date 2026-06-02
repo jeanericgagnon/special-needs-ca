@@ -1,0 +1,9 @@
+{
+	"id": "Aqh2ymF88iA5ihI",
+	"json": "{\"id\":\"Aqh2ymF88iA5ihI\",\"url\":\"https://www.ucdavis.edu/colleges-and-schools/college-engineering\",\"loadedUrl\":\"https://www.ucdavis.edu/colleges-and-schools/college-engineering\",\"uniqueKey\":\"https://www.ucdavis.edu/colleges-and-schools/college-engineering\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:44.758Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ucdavis.edu/colleges-and-schools/college-engineering",
+	"url": "https://www.ucdavis.edu/colleges-and-schools/college-engineering"
+}

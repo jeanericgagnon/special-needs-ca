@@ -1,0 +1,9 @@
+{
+	"id": "od3lZNWdq1NG1BA",
+	"json": "{\"id\":\"od3lZNWdq1NG1BA\",\"url\":\"http://www.cdss.ca.gov/inforesources/foster-care\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/foster-care\",\"uniqueKey\":\"http://www.cdss.ca.gov/inforesources/foster-care\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:51.231Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.cdss.ca.gov/inforesources/foster-care",
+	"url": "http://www.cdss.ca.gov/inforesources/foster-care"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "NWn9jFFn1YvzQWA",
+	"json": "{\"id\":\"NWn9jFFn1YvzQWA\",\"url\":\"https://health.ucdavis.edu/psychiatry/mental-health-services/child-adolescent-psychiatry.html\",\"loadedUrl\":\"https://health.ucdavis.edu/psychiatry/services-specialties/child-adolescent-psychiatry\",\"uniqueKey\":\"https://health.ucdavis.edu/psychiatry/mental-health-services/child-adolescent-psychiatry.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:18.368Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/psychiatry/mental-health-services/child-adolescent-psychiatry.html",
+	"url": "https://health.ucdavis.edu/psychiatry/mental-health-services/child-adolescent-psychiatry.html"
+}

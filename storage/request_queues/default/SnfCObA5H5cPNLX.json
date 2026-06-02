@@ -1,0 +1,9 @@
+{
+	"id": "SnfCObA5H5cPNLX",
+	"json": "{\"id\":\"SnfCObA5H5cPNLX\",\"url\":\"https://cases.aggieservice.ucdavis.edu/198\",\"loadedUrl\":\"https://cases.aggieservice.ucdavis.edu/198\",\"uniqueKey\":\"https://cases.aggieservice.ucdavis.edu/198\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:24.987Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cases.aggieservice.ucdavis.edu/198",
+	"url": "https://cases.aggieservice.ucdavis.edu/198"
+}

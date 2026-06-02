@@ -1,0 +1,9 @@
+{
+	"id": "1s1mEGPmj6BWRkM",
+	"json": "{\"id\":\"1s1mEGPmj6BWRkM\",\"url\":\"https://www.csdr-cde.ca.gov/physicaleducation/\",\"loadedUrl\":\"https://www.csdr-cde.ca.gov/physicaleducation/\",\"uniqueKey\":\"https://www.csdr-cde.ca.gov/physicaleducation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:11.018Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csdr-cde.ca.gov/physicaleducation",
+	"url": "https://www.csdr-cde.ca.gov/physicaleducation/"
+}

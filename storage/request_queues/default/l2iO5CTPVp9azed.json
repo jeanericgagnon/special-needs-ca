@@ -1,0 +1,9 @@
+{
+	"id": "l2iO5CTPVp9azed",
+	"json": "{\"id\":\"l2iO5CTPVp9azed\",\"url\":\"https://campusrecreation.ucdavis.edu/campus-rec-newsletter-signup\",\"loadedUrl\":\"https://campusrecreation.ucdavis.edu/campus-rec-newsletter-signup\",\"uniqueKey\":\"https://campusrecreation.ucdavis.edu/campus-rec-newsletter-signup\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:14.307Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://campusrecreation.ucdavis.edu/campus-rec-newsletter-signup",
+	"url": "https://campusrecreation.ucdavis.edu/campus-rec-newsletter-signup"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "awfgi5pDnGSqsHs",
+	"json": "{\"id\":\"awfgi5pDnGSqsHs\",\"url\":\"https://cnprc.ucdavis.edu/how-reference-us\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/how-reference-us\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/how-reference-us\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:11.938Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cnprc.ucdavis.edu/how-reference-us",
+	"url": "https://cnprc.ucdavis.edu/how-reference-us"
+}

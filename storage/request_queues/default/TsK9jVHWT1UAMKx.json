@@ -1,0 +1,9 @@
+{
+	"id": "TsK9jVHWT1UAMKx",
+	"json": "{\"id\":\"TsK9jVHWT1UAMKx\",\"url\":\"https://www.csb-cde.ca.gov/resources/standards/grade07ela.aspx\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=29ecb4c3-6b61-4e23-bbd6-50ed5bb6cc31&ssb=43734269068&ssc=https%3A%2F%2Fwww.csb-cde.ca.gov%2Fresources%2Fstandards%2Fgrade07ela.aspx&ssi=48c08471-cuez-44bd-944b-f2fcd9d4c78a&ssk=botmanager_support@radware.com&ssm=97576506492237163102908662114497&ssn=1805d5826485284f3b7ab2a9b90250aae42fa6ad4022-543b-4d7b-b07a61&sso=971258c4-c4b2d0d9eeb31592e4f3b8ce787b6f2138dd65df43f3b790&ssp=89033368551780334332178038287066911&ssq=22501542762759253826427627944574385902105&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsInV6bXgiOiI3ZjkwMDAxY2U4M2Q0Ni1mMDlkLTRhY2UtYTQ3Mi1iMzhhMmFmZmJmZjExLTE3ODAzMjY2ODc1Njg5NDAwNjEtZGVjN2Q3MTExZmM2YjJiNDIyIiwiX191em1mIjoiN2Y5MDAwYTZhZDQwMjItNTQzYi00ZDdiLWI4YzQtYzRiMmQwZDllZWIzMS0xNzgwMzI3NjI3NjI5MC0wMDNmYzYwMjUyZmNiMTU2MDFmMTAifQ==\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/resources/standards/grade07ela.aspx\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:27:07.743Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csb-cde.ca.gov/resources/standards/grade07ela.aspx",
+	"url": "https://www.csb-cde.ca.gov/resources/standards/grade07ela.aspx"
+}

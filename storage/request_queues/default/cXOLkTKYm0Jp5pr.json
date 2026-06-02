@@ -1,0 +1,9 @@
+{
+	"id": "cXOLkTKYm0Jp5pr",
+	"json": "{\"id\":\"cXOLkTKYm0Jp5pr\",\"url\":\"https://health.ucdavis.edu/welcome/news/headlines/assistant-professor-alex-fauer-receives-uc-award-to-advance-cancer-care-for-older-adults/2026/05\",\"loadedUrl\":\"https://health.ucdavis.edu/welcome/news/headlines/assistant-professor-alex-fauer-receives-uc-award-to-advance-cancer-care-for-older-adults/2026/05\",\"uniqueKey\":\"https://health.ucdavis.edu/welcome/news/headlines/assistant-professor-alex-fauer-receives-uc-award-to-advance-cancer-care-for-older-adults/2026/05\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:18.214Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/welcome/news/headlines/assistant-professor-alex-fauer-receives-uc-award-to-advance-cancer-care-for-older-adults/2026/05",
+	"url": "https://health.ucdavis.edu/welcome/news/headlines/assistant-professor-alex-fauer-receives-uc-award-to-advance-cancer-care-for-older-adults/2026/05"
+}

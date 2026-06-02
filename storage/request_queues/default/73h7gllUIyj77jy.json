@@ -1,0 +1,9 @@
+{
+	"id": "73h7gllUIyj77jy",
+	"json": "{\"id\":\"73h7gllUIyj77jy\",\"url\":\"https://health.ucdavis.edu/conditions/kidney-disease/kidney-damage/acute-kidney-injury\",\"loadedUrl\":\"https://health.ucdavis.edu/conditions/kidney-disease/kidney-damage/acute-kidney-injury\",\"uniqueKey\":\"https://health.ucdavis.edu/conditions/kidney-disease/kidney-damage/acute-kidney-injury\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:41.978Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/conditions/kidney-disease/kidney-damage/acute-kidney-injury",
+	"url": "https://health.ucdavis.edu/conditions/kidney-disease/kidney-damage/acute-kidney-injury"
+}

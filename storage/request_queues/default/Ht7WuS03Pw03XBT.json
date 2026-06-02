@@ -1,0 +1,9 @@
+{
+	"id": "Ht7WuS03Pw03XBT",
+	"json": "{\"id\":\"Ht7WuS03Pw03XBT\",\"url\":\"https://give.ucdavis.edu/VCCT/325403\",\"loadedUrl\":\"https://give.ucdavis.edu/VCCT/325403\",\"uniqueKey\":\"https://give.ucdavis.edu/VCCT/325403\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:58.775Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/VCCT/325403",
+	"url": "https://give.ucdavis.edu/VCCT/325403"
+}

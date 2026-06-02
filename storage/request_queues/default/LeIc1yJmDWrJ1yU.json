@@ -1,0 +1,9 @@
+{
+	"id": "LeIc1yJmDWrJ1yU",
+	"json": "{\"id\":\"LeIc1yJmDWrJ1yU\",\"url\":\"https://www.cdss.ca.gov/Reporting/File-a-Complaint\",\"loadedUrl\":\"https://www.cdss.ca.gov/reporting/file-a-complaint\",\"uniqueKey\":\"https://www.cdss.ca.gov/Reporting/File-a-Complaint\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:21.597Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/Reporting/File-a-Complaint",
+	"url": "https://www.cdss.ca.gov/Reporting/File-a-Complaint"
+}

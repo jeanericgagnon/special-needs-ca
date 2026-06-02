@@ -1,0 +1,9 @@
+{
+	"id": "sjlcvGztHuEPUhw",
+	"json": "{\"id\":\"sjlcvGztHuEPUhw\",\"url\":\"https://cdss.ca.gov/inforesources/IHSS/IHSS-Providers/Resources\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/cdss-programs/ihss/ihss-provider-resources\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/IHSS/IHSS-Providers/Resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:58:37.636Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/IHSS/IHSS-Providers/Resources",
+	"url": "https://cdss.ca.gov/inforesources/IHSS/IHSS-Providers/Resources"
+}

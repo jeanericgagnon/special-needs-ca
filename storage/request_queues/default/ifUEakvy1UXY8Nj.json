@@ -1,0 +1,9 @@
+{
+	"id": "ifUEakvy1UXY8Nj",
+	"json": "{\"id\":\"ifUEakvy1UXY8Nj\",\"url\":\"https://www.tuolumnecounty.ca.gov/281/Public-Guardian\",\"loadedUrl\":\"https://www.tuolumnecounty.ca.gov/281/Public-Guardian\",\"uniqueKey\":\"https://www.tuolumnecounty.ca.gov/281/Public-Guardian\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:40.978Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.tuolumnecounty.ca.gov/281/Public-Guardian",
+	"url": "https://www.tuolumnecounty.ca.gov/281/Public-Guardian"
+}

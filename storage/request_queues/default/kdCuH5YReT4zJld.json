@@ -1,0 +1,9 @@
+{
+	"id": "kdCuH5YReT4zJld",
+	"json": "{\"id\":\"kdCuH5YReT4zJld\",\"url\":\"https://physicians.ucdavis.edu/details/936/jason-rogers-adult_structural_heart_disease-cardiovascular_medicine-internal_medicine-interventional_cardiology-sacramento?Specialties=10434\",\"loadedUrl\":\"https://physicians.ucdavis.edu/details/936/jason-rogers-adult_structural_heart_disease-cardiovascular_medicine-internal_medicine-interventional_cardiology-sacramento?Specialties=10434\",\"uniqueKey\":\"https://physicians.ucdavis.edu/details/936/jason-rogers-adult_structural_heart_disease-cardiovascular_medicine-internal_medicine-interventional_cardiology-sacramento?Specialties=10434\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:33:23.769Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://physicians.ucdavis.edu/details/936/jason-rogers-adult_structural_heart_disease-cardiovascular_medicine-internal_medicine-interventional_cardiology-sacramento?Specialties=10434",
+	"url": "https://physicians.ucdavis.edu/details/936/jason-rogers-adult_structural_heart_disease-cardiovascular_medicine-internal_medicine-interventional_cardiology-sacramento?Specialties=10434"
+}

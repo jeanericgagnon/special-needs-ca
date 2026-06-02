@@ -1,0 +1,9 @@
+{
+	"id": "DnCAe0MzIPUVA9A",
+	"json": "{\"id\":\"DnCAe0MzIPUVA9A\",\"url\":\"http://www.cde.ca.gov/ls/pf/cm/cmdtroubleshoot.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ls/pf/cm/cmdtroubleshoot.asp\",\"uniqueKey\":\"http://www.cde.ca.gov/ls/pf/cm/cmdtroubleshoot.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:46.464Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.cde.ca.gov/ls/pf/cm/cmdtroubleshoot.asp",
+	"url": "http://www.cde.ca.gov/ls/pf/cm/cmdtroubleshoot.asp"
+}

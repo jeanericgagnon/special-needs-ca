@@ -1,0 +1,9 @@
+{
+	"id": "2i1xedwES3wEWA3",
+	"json": "{\"id\":\"2i1xedwES3wEWA3\",\"url\":\"https://scdd.ca.gov/pos-service-code/supplemental-residential-program-support/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/supplemental-residential-program-support/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/supplemental-residential-program-support\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:57.799Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://scdd.ca.gov/pos-service-code/supplemental-residential-program-support",
+	"url": "https://scdd.ca.gov/pos-service-code/supplemental-residential-program-support/"
+}

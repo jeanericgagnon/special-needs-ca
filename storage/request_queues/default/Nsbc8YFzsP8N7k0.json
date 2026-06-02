@@ -1,0 +1,9 @@
+{
+	"id": "Nsbc8YFzsP8N7k0",
+	"json": "{\"id\":\"Nsbc8YFzsP8N7k0\",\"url\":\"https://give.ucdavis.edu/VVMB/V740GC7\",\"loadedUrl\":\"https://give.ucdavis.edu/VVMB/V740GC7\",\"uniqueKey\":\"https://give.ucdavis.edu/VVMB/V740GC7\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:03.249Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://give.ucdavis.edu/VVMB/V740GC7",
+	"url": "https://give.ucdavis.edu/VVMB/V740GC7"
+}

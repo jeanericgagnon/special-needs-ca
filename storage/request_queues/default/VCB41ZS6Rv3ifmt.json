@@ -1,0 +1,9 @@
+{
+	"id": "VCB41ZS6Rv3ifmt",
+	"json": "{\"id\":\"VCB41ZS6Rv3ifmt\",\"url\":\"https://health.ucdavis.edu/patients-visitors/locations/primary-care/roseville-1620-east-roseville-pkwy\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/locations/primary-care/roseville-1620-east-roseville-pkwy\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/locations/primary-care/roseville-1620-east-roseville-pkwy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:46.713Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/locations/primary-care/roseville-1620-east-roseville-pkwy",
+	"url": "https://health.ucdavis.edu/patients-visitors/locations/primary-care/roseville-1620-east-roseville-pkwy"
+}

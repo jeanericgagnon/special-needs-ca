@@ -1,0 +1,9 @@
+{
+	"id": "CttvUqaUWlSSAnJ",
+	"json": "{\"id\":\"CttvUqaUWlSSAnJ\",\"url\":\"https://sgc.ca.gov/initiatives/healthandequity/hiap/approach.html\",\"loadedUrl\":\"https://sgc.ca.gov/initiatives/health-and-equity/hiap/approach/\",\"uniqueKey\":\"https://sgc.ca.gov/initiatives/healthandequity/hiap/approach.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:08:09.051Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://sgc.ca.gov/initiatives/healthandequity/hiap/approach.html",
+	"url": "https://sgc.ca.gov/initiatives/healthandequity/hiap/approach.html"
+}

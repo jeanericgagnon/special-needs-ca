@@ -1,0 +1,9 @@
+{
+	"id": "yXlvzt5bwyurHAn",
+	"json": "{\"id\":\"yXlvzt5bwyurHAn\",\"url\":\"https://leginfo.legislature.ca.gov/faces/billResultsClient.xhtml?location=CS74&agendadate=06%2F01%2F2026&description=Sen+Human+Services&hid=11793\",\"loadedUrl\":\"https://leginfo.legislature.ca.gov/faces/billResultsClient.xhtml?location=CS74&agendadate=06%2F01%2F2026&description=Sen+Human+Services&hid=11793\",\"uniqueKey\":\"https://leginfo.legislature.ca.gov/faces/billResultsClient.xhtml?agendadate=06%2F01%2F2026&description=Sen+Human+Services&hid=11793&location=CS74\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:19.211Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://leginfo.legislature.ca.gov/faces/billResultsClient.xhtml?agendadate=06%2F01%2F2026&description=Sen+Human+Services&hid=11793&location=CS74",
+	"url": "https://leginfo.legislature.ca.gov/faces/billResultsClient.xhtml?location=CS74&agendadate=06%2F01%2F2026&description=Sen+Human+Services&hid=11793"
+}

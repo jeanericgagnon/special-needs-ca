@@ -1,0 +1,9 @@
+{
+	"id": "U2Tor98bCQmLBXa",
+	"json": "{\"id\":\"U2Tor98bCQmLBXa\",\"url\":\"https://www.dgs.ca.gov/Resources/Legislative-Reports\",\"loadedUrl\":\"https://www.dgs.ca.gov/Resources/Legislative-Reports\",\"uniqueKey\":\"https://www.dgs.ca.gov/Resources/Legislative-Reports\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:06.267Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dgs.ca.gov/Resources/Legislative-Reports",
+	"url": "https://www.dgs.ca.gov/Resources/Legislative-Reports"
+}

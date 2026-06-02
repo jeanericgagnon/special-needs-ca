@@ -1,0 +1,9 @@
+{
+	"id": "umA42WJQfkBQPHi",
+	"json": "{\"id\":\"umA42WJQfkBQPHi\",\"url\":\"https://health.ucdavis.edu/internal-medicine/team/volunteer-clinical-faculty\",\"loadedUrl\":\"https://health.ucdavis.edu/internal-medicine/team/volunteer-clinical-faculty\",\"uniqueKey\":\"https://health.ucdavis.edu/internal-medicine/team/volunteer-clinical-faculty\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:34:25.479Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/internal-medicine/team/volunteer-clinical-faculty",
+	"url": "https://health.ucdavis.edu/internal-medicine/team/volunteer-clinical-faculty"
+}

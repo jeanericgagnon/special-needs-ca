@@ -1,0 +1,9 @@
+{
+	"id": "iJ4TePxyS97GoTL",
+	"json": "{\"id\":\"iJ4TePxyS97GoTL\",\"url\":\"https://www.dds.ca.gov/rc/fg-scp/\",\"loadedUrl\":\"https://www.dds.ca.gov/rc/fg-scp/\",\"uniqueKey\":\"https://www.dds.ca.gov/rc/fg-scp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:23.514Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/rc/fg-scp",
+	"url": "https://www.dds.ca.gov/rc/fg-scp/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "APcUAINydZfE0Lg",
+	"json": "{\"id\":\"APcUAINydZfE0Lg\",\"url\":\"https://rarediseases.org/organizations/autoinflammatory-alliance/\",\"loadedUrl\":\"https://rarediseases.org/organizations/autoinflammatory-alliance/\",\"uniqueKey\":\"https://rarediseases.org/organizations/autoinflammatory-alliance\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:15:03.519Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/organizations/autoinflammatory-alliance",
+	"url": "https://rarediseases.org/organizations/autoinflammatory-alliance/"
+}

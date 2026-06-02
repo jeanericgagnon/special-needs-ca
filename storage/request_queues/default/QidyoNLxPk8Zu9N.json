@@ -1,0 +1,9 @@
+{
+	"id": "QidyoNLxPk8Zu9N",
+	"json": "{\"id\":\"QidyoNLxPk8Zu9N\",\"url\":\"http://www.cdph.ca.gov/programs/wicworks/Pages/default.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/programs/wicworks/Pages/default.aspx\",\"uniqueKey\":\"http://www.cdph.ca.gov/programs/wicworks/Pages/default.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:16:53.404Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "http://www.cdph.ca.gov/programs/wicworks/Pages/default.aspx",
+	"url": "http://www.cdph.ca.gov/programs/wicworks/Pages/default.aspx"
+}

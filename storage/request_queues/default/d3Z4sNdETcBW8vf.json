@@ -1,0 +1,9 @@
+{
+	"id": "d3Z4sNdETcBW8vf",
+	"json": "{\"id\":\"d3Z4sNdETcBW8vf\",\"url\":\"https://health.ucdavis.edu/chpr/education/\",\"loadedUrl\":\"https://health.ucdavis.edu/chpr/education/\",\"uniqueKey\":\"https://health.ucdavis.edu/chpr/education\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:29.839Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/chpr/education",
+	"url": "https://health.ucdavis.edu/chpr/education/"
+}

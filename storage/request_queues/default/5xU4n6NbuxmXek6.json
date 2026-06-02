@@ -1,0 +1,9 @@
+{
+	"id": "5xU4n6NbuxmXek6",
+	"json": "{\"id\":\"5xU4n6NbuxmXek6\",\"url\":\"https://giving.ucdavis.edu/resources\",\"loadedUrl\":\"https://giving.ucdavis.edu/resources\",\"uniqueKey\":\"https://giving.ucdavis.edu/resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:54.670Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://giving.ucdavis.edu/resources",
+	"url": "https://giving.ucdavis.edu/resources"
+}

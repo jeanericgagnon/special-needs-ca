@@ -1,0 +1,9 @@
+{
+	"id": "RbylSmju9Bm9fAZ",
+	"json": "{\"id\":\"RbylSmju9Bm9fAZ\",\"url\":\"https://www.cde.ca.gov/ta/ac/cm/censenrolldatafiles.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=221c5f6a-238f-4306-9343-81daf3eeca21&ssb=04369218476&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fta%2Fac%2Fcm%2Fcensenrolldatafiles.asp&ssi=a3c93f28-ctxv-4ecd-ba85-f8f06e8d8cc4&ssk=botmanager_support@radware.com&ssm=54220463525589088106372072726196&ssn=6b6572e5e189b3dc411445e9dec3bbe24bc2dfdf05cc-4d20-42bb-a8a9c5&sso=0fcca7d7-5dc9f31304627a234684197f76119d8e05f44a0208e712ea&ssp=06525347571780365389178035346083686&ssq=87007315671312900079256713149943237435948&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2Y5MDAwNWM5OWRkZjgtZDc5OC00NjhjLTlhZDYtNzVmYTdkNzczZWI0MS0xNzgwMzU2NzEzMDMzMC0zNmYwOTRjYzMxMzBmZTZhMTAiLCJfX3V6bWYiOiI3ZjkwMDBkZmRmMDVjYy00ZDIwLTQyYmItYTdkNy01ZGM5ZjMxMzA0NjIxLTE3ODAzNTY3MTMwMzMwLTAwMzVkYzk1OTBmN2Q2M2I4YWUxMCIsInJkIjoiY2EuZ292In0=\",\"uniqueKey\":\"https://www.cde.ca.gov/ta/ac/cm/censenrolldatafiles.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T23:31:53.601Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ta/ac/cm/censenrolldatafiles.asp",
+	"url": "https://www.cde.ca.gov/ta/ac/cm/censenrolldatafiles.asp"
+}

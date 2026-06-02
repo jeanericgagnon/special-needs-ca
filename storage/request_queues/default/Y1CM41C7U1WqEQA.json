@@ -1,0 +1,9 @@
+{
+	"id": "Y1CM41C7U1WqEQA",
+	"json": "{\"id\":\"Y1CM41C7U1WqEQA\",\"url\":\"https://www.cde.ca.gov/SchoolDirectory/county-offices-of-education/0/6/500\",\"loadedUrl\":\"https://www.cde.ca.gov/SchoolDirectory/county-offices-of-education/0/6/500\",\"uniqueKey\":\"https://www.cde.ca.gov/SchoolDirectory/county-offices-of-education/0/6/500\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:19.062Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/SchoolDirectory/county-offices-of-education/0/6/500",
+	"url": "https://www.cde.ca.gov/SchoolDirectory/county-offices-of-education/0/6/500"
+}

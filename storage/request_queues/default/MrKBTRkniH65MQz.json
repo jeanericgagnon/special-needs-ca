@@ -1,0 +1,9 @@
+{
+	"id": "MrKBTRkniH65MQz",
+	"json": "{\"id\":\"MrKBTRkniH65MQz\",\"url\":\"https://www.csb-cde.ca.gov/about/organizations/\",\"loadedUrl\":\"https://www.csb-cde.ca.gov/about/organizations/\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/about/organizations\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:06.382Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csb-cde.ca.gov/about/organizations",
+	"url": "https://www.csb-cde.ca.gov/about/organizations/"
+}

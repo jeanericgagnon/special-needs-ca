@@ -1,0 +1,9 @@
+{
+	"id": "2vfWXak8gB9EsTy",
+	"json": "{\"id\":\"2vfWXak8gB9EsTy\",\"url\":\"https://neuroscience.ucdavis.edu/cognition\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/cognition\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/cognition\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:00.611Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://neuroscience.ucdavis.edu/cognition",
+	"url": "https://neuroscience.ucdavis.edu/cognition"
+}

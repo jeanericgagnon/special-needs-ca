@@ -1,0 +1,9 @@
+{
+	"id": "XL7RNhjxNfOMTRg",
+	"json": "{\"id\":\"XL7RNhjxNfOMTRg\",\"url\":\"https://health.ucdavis.edu/healthcare-professionals/news/topic/heart-and-vascular\",\"loadedUrl\":\"https://health.ucdavis.edu/healthcare-professionals/news/topic/heart-and-vascular\",\"uniqueKey\":\"https://health.ucdavis.edu/healthcare-professionals/news/topic/heart-and-vascular\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:12.931Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/healthcare-professionals/news/topic/heart-and-vascular",
+	"url": "https://health.ucdavis.edu/healthcare-professionals/news/topic/heart-and-vascular"
+}

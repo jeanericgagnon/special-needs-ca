@@ -1,0 +1,9 @@
+{
+	"id": "L1P8A853ZB5UBu2",
+	"json": "{\"id\":\"L1P8A853ZB5UBu2\",\"url\":\"https://www.cde.ca.gov/re/di/eo/region11.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=2d45d711-09db-4db6-bfed-8de5c97d7778&ssb=65070250424&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fre%2Fdi%2Feo%2Fregion11.asp&ssi=1d073630-ctxv-43fc-afc3-b4249fc9e93e&ssk=botmanager_support@radware.com&ssm=01783667967020068138831312419861&ssn=4d0c9c56a98aa7f077d17efb6a9e93fb873d2a215b07-9c4b-4f57-ac2558&sso=617f3169-33c75fc14a1a98eed21c1fe148f399ff28802fa863a5d8b6&ssp=84410528281780351204178032865625259&ssq=42606462759697087369327343320813356612014&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsIl9fdXptZiI6IjdmOTAwMDJhMjE1YjA3LTljNGItNGY1Ny1hMTY5LTMzYzc1ZmMxNGExYTEtMTc4MDMyNzM0MzYzODI1MzA5MS0wMDNmMGNkYWQ0M2VjYzI4Mjc4MTMiLCJ1em14IjoiN2Y5MDAwMGI0ZjRmNGUtNzQzMC00NWZhLWIxMmUtYzdjY2E5ZGM3MjFhMS0xNzgwMzI3MzQzNjM4MjUzMDkxLTFlN2RmYjEzM2MyZjU1MjAxMyJ9\",\"uniqueKey\":\"https://www.cde.ca.gov/re/di/eo/region11.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:26:36.809Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/re/di/eo/region11.asp",
+	"url": "https://www.cde.ca.gov/re/di/eo/region11.asp"
+}

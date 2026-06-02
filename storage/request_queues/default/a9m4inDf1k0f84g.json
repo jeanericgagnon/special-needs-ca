@@ -1,0 +1,9 @@
+{
+	"id": "a9m4inDf1k0f84g",
+	"json": "{\"id\":\"a9m4inDf1k0f84g\",\"url\":\"https://care.ucdavis.edu/how-support-survivor\",\"loadedUrl\":\"https://care.ucdavis.edu/how-support-survivor\",\"uniqueKey\":\"https://care.ucdavis.edu/how-support-survivor\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:01.812Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://care.ucdavis.edu/how-support-survivor",
+	"url": "https://care.ucdavis.edu/how-support-survivor"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "jIH0Z6Up2wwxCOQ",
+	"json": "{\"id\":\"jIH0Z6Up2wwxCOQ\",\"url\":\"https://www.ssa.gov/foia/readingroom.html\",\"loadedUrl\":\"https://www.ssa.gov/foia/readingroom.html\",\"uniqueKey\":\"https://www.ssa.gov/foia/readingroom.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:36.365Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ssa.gov/foia/readingroom.html",
+	"url": "https://www.ssa.gov/foia/readingroom.html"
+}

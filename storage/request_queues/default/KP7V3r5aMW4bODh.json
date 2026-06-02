@@ -1,0 +1,9 @@
+{
+	"id": "KP7V3r5aMW4bODh",
+	"json": "{\"id\":\"KP7V3r5aMW4bODh\",\"url\":\"https://health.ucdavis.edu/cancer/research/funding-opportunities/\",\"loadedUrl\":\"https://health.ucdavis.edu/cancer/research/funding-opportunities/\",\"uniqueKey\":\"https://health.ucdavis.edu/cancer/research/funding-opportunities\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:14.705Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/cancer/research/funding-opportunities",
+	"url": "https://health.ucdavis.edu/cancer/research/funding-opportunities/"
+}

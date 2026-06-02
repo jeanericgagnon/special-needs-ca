@@ -1,0 +1,9 @@
+{
+	"id": "sCyrQ3s5CbWB8Mf",
+	"json": "{\"id\":\"sCyrQ3s5CbWB8Mf\",\"url\":\"https://www.cdph.ca.gov/Programs/CHCQ/Pages/SNFeducation.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CHCQ/Pages/SNFeducation.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CHCQ/Pages/SNFeducation.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:02:03.836Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CHCQ/Pages/SNFeducation.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CHCQ/Pages/SNFeducation.aspx"
+}

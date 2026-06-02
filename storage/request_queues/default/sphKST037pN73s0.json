@@ -1,0 +1,9 @@
+{
+	"id": "sphKST037pN73s0",
+	"json": "{\"id\":\"sphKST037pN73s0\",\"url\":\"https://www.cde.ca.gov/be/cc/cd/iqc2021mtgagendas.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/be/cc/cd/iqc2021mtgagendas.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/be/cc/cd/iqc2021mtgagendas.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:52.310Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/be/cc/cd/iqc2021mtgagendas.asp",
+	"url": "https://www.cde.ca.gov/be/cc/cd/iqc2021mtgagendas.asp"
+}

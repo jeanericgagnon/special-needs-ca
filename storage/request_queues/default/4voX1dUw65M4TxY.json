@@ -1,0 +1,9 @@
+{
+	"id": "4voX1dUw65M4TxY",
+	"json": "{\"id\":\"4voX1dUw65M4TxY\",\"url\":\"https://www.cde.ca.gov/re/lr/fm/\",\"loadedUrl\":\"https://www.cde.ca.gov/re/lr/fm/\",\"uniqueKey\":\"https://www.cde.ca.gov/re/lr/fm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:58.384Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/re/lr/fm",
+	"url": "https://www.cde.ca.gov/re/lr/fm/"
+}

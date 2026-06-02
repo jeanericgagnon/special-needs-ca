@@ -1,0 +1,9 @@
+{
+	"id": "81TSAixLEQiYGsO",
+	"json": "{\"id\":\"81TSAixLEQiYGsO\",\"url\":\"https://www.courts.ca.gov/48654.htm\",\"loadedUrl\":\"https://courts.ca.gov/programs-initiatives/families-and-children/behavioral-health/adult-civil-mental-health\",\"uniqueKey\":\"https://www.courts.ca.gov/48654.htm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:50.643Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.courts.ca.gov/48654.htm",
+	"url": "https://www.courts.ca.gov/48654.htm"
+}

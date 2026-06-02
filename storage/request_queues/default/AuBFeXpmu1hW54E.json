@@ -1,0 +1,9 @@
+{
+	"id": "AuBFeXpmu1hW54E",
+	"json": "{\"id\":\"AuBFeXpmu1hW54E\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDCB/Pages/Aboutus.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDCB/Pages/Aboutus.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDCB/Pages/Aboutus.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:02:14.166Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDCB/Pages/Aboutus.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDCB/Pages/Aboutus.aspx"
+}

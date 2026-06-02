@@ -1,0 +1,9 @@
+{
+	"id": "RPswwBEY0fsMSRW",
+	"json": "{\"id\":\"RPswwBEY0fsMSRW\",\"url\":\"https://www.cde.ca.gov/ci/cr/cf/amimartsresources.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=55eff7d4-7c17-4e3b-8767-6ab55cbd63b2&ssb=22134292374&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fci%2Fcr%2Fcf%2Famimartsresources.asp&ssi=db2011d7-ctxv-4652-a26d-31cbc7378047&ssk=botmanager_support@radware.com&ssm=68945363916085703106212749232941&ssn=86cf73f669bd2535508c6f9ba803aa169dd7e3b198ef-b71a-40f8-8592b3&sso=3dfc3edd-7b10fbeb2f85ec9c1091a096f8f2cb5b683e8c689f500463&ssp=84178374261780390687178031362325744&ssq=71837305527412646867155274184287992058891&ssr=MTcyLjU2LjI0My4xOTM=&sst=&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsInV6bXgiOiI3ZjkwMDBjZjZiNjAwNy05ODI3LTRmNDMtYTRjMC0xNGQxMTQ0YjBlYWExLTE3ODAzNTUyNzQ4NjEwLWZiN2E2MzNiMTk3MzI1YjMxMCIsIl9fdXptZiI6IjdmOTAwMGUzYjE5OGVmLWI3MWEtNDBmOC04ZWRkLTdiMTBmYmViMmY4NTEtMTc4MDM1NTI3NDg2MTAtMDAzM2RhNmIyNTEwZTYzMjg3MzEwIn0=\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/cr/cf/amimartsresources.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T23:07:55.356Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cde.ca.gov/ci/cr/cf/amimartsresources.asp",
+	"url": "https://www.cde.ca.gov/ci/cr/cf/amimartsresources.asp"
+}

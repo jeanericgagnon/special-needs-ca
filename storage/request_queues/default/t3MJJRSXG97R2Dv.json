@@ -1,0 +1,9 @@
+{
+	"id": "t3MJJRSXG97R2Dv",
+	"json": "{\"id\":\"t3MJJRSXG97R2Dv\",\"url\":\"https://rarediseases.org/organizations/asthma-society-of-canada/\",\"loadedUrl\":\"https://rarediseases.org/organizations/asthma-society-of-canada/\",\"uniqueKey\":\"https://rarediseases.org/organizations/asthma-society-of-canada\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:14:45.921Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://rarediseases.org/organizations/asthma-society-of-canada",
+	"url": "https://rarediseases.org/organizations/asthma-society-of-canada/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "cygwRcm7FmGob1i",
+	"json": "{\"id\":\"cygwRcm7FmGob1i\",\"url\":\"https://health.ucdavis.edu/internalmedicine/\",\"loadedUrl\":\"https://health.ucdavis.edu/internal-medicine/\",\"uniqueKey\":\"https://health.ucdavis.edu/internalmedicine\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:50.894Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/internalmedicine",
+	"url": "https://health.ucdavis.edu/internalmedicine/"
+}

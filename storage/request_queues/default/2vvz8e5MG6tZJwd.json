@@ -1,0 +1,9 @@
+{
+	"id": "2vvz8e5MG6tZJwd",
+	"json": "{\"id\":\"2vvz8e5MG6tZJwd\",\"url\":\"https://www.csssa.ca.gov/\",\"loadedUrl\":\"https://www.csssa.ca.gov/\",\"uniqueKey\":\"https://www.csssa.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:22:48.880Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csssa.ca.gov",
+	"url": "https://www.csssa.ca.gov/"
+}

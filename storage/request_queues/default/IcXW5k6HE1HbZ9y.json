@@ -1,0 +1,9 @@
+{
+	"id": "IcXW5k6HE1HbZ9y",
+	"json": "{\"id\":\"IcXW5k6HE1HbZ9y\",\"url\":\"https://health.ucdavis.edu/news/headlines/uc-davis-to-lead-mda-kickstart-project-to-develop-gene-therapy-for-rare-neuromuscular-disease/2024/09\",\"loadedUrl\":\"https://health.ucdavis.edu/news/headlines/uc-davis-to-lead-mda-kickstart-project-to-develop-gene-therapy-for-rare-neuromuscular-disease/2024/09\",\"uniqueKey\":\"https://health.ucdavis.edu/news/headlines/uc-davis-to-lead-mda-kickstart-project-to-develop-gene-therapy-for-rare-neuromuscular-disease/2024/09\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:55.147Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/news/headlines/uc-davis-to-lead-mda-kickstart-project-to-develop-gene-therapy-for-rare-neuromuscular-disease/2024/09",
+	"url": "https://health.ucdavis.edu/news/headlines/uc-davis-to-lead-mda-kickstart-project-to-develop-gene-therapy-for-rare-neuromuscular-disease/2024/09"
+}

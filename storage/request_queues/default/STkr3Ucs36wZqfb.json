@@ -1,0 +1,9 @@
+{
+	"id": "STkr3Ucs36wZqfb",
+	"json": "{\"id\":\"STkr3Ucs36wZqfb\",\"url\":\"https://www.dgs.ca.gov/OLS\",\"loadedUrl\":\"https://www.dgs.ca.gov/OLS\",\"uniqueKey\":\"https://www.dgs.ca.gov/OLS\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:05.671Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dgs.ca.gov/OLS",
+	"url": "https://www.dgs.ca.gov/OLS"
+}

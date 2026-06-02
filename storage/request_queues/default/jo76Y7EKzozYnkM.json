@@ -1,0 +1,9 @@
+{
+	"id": "jo76Y7EKzozYnkM",
+	"json": "{\"id\":\"jo76Y7EKzozYnkM\",\"url\":\"https://climateaction.ca.gov/californias-climate-investments/\",\"loadedUrl\":\"https://climateaction.ca.gov/californias-climate-investments/\",\"uniqueKey\":\"https://climateaction.ca.gov/californias-climate-investments\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:46.884Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://climateaction.ca.gov/californias-climate-investments",
+	"url": "https://climateaction.ca.gov/californias-climate-investments/"
+}

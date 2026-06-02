@@ -1,0 +1,9 @@
+{
+	"id": "oK4mIHHM35Cboqa",
+	"json": "{\"id\":\"oK4mIHHM35Cboqa\",\"url\":\"https://www.cdss.ca.gov/inforesources/cdss-programs/foster-care/foster-care-audits-and-rates/foster-care-rate-reform-proposal/upcoming-opportunities-and-previous-meeting\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/cdss-programs/foster-care/foster-care-audits-and-rates/foster-care-rate-reform-proposal/upcoming-opportunities-and-previous-meeting\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/cdss-programs/foster-care/foster-care-audits-and-rates/foster-care-rate-reform-proposal/upcoming-opportunities-and-previous-meeting\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:52.246Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdss.ca.gov/inforesources/cdss-programs/foster-care/foster-care-audits-and-rates/foster-care-rate-reform-proposal/upcoming-opportunities-and-previous-meeting",
+	"url": "https://www.cdss.ca.gov/inforesources/cdss-programs/foster-care/foster-care-audits-and-rates/foster-care-rate-reform-proposal/upcoming-opportunities-and-previous-meeting"
+}

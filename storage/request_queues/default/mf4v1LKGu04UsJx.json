@@ -1,0 +1,9 @@
+{
+	"id": "mf4v1LKGu04UsJx",
+	"json": "{\"id\":\"mf4v1LKGu04UsJx\",\"url\":\"https://www.vetmed.ucdavis.edu/faculty_directory\",\"loadedUrl\":\"https://www.vetmed.ucdavis.edu/faculty_directory\",\"uniqueKey\":\"https://www.vetmed.ucdavis.edu/faculty_directory\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:15.476Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.vetmed.ucdavis.edu/faculty_directory",
+	"url": "https://www.vetmed.ucdavis.edu/faculty_directory"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "qeBqmY2w0SkpNFz",
+	"json": "{\"id\":\"qeBqmY2w0SkpNFz\",\"url\":\"https://ctscassist.ucdmc.ucdavis.edu/redcap/surveys/?s=L3TET8XTP3\",\"loadedUrl\":\"https://ctscassist.ucdmc.ucdavis.edu/redcap/surveys/?s=L3TET8XTP3\",\"uniqueKey\":\"https://ctscassist.ucdmc.ucdavis.edu/redcap/surveys?s=L3TET8XTP3\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:06.511Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://ctscassist.ucdmc.ucdavis.edu/redcap/surveys?s=L3TET8XTP3",
+	"url": "https://ctscassist.ucdmc.ucdavis.edu/redcap/surveys/?s=L3TET8XTP3"
+}

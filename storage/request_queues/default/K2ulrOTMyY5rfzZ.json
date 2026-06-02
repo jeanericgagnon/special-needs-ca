@@ -1,0 +1,9 @@
+{
+	"id": "K2ulrOTMyY5rfzZ",
+	"json": "{\"id\":\"K2ulrOTMyY5rfzZ\",\"url\":\"https://health.ucdavis.edu/mind-institute/centers/intellectual-developmental-disabilities-research/cores/iddrc-affiliated-cores\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/centers/intellectual-developmental-disabilities-research/cores/iddrc-affiliated-cores\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/centers/intellectual-developmental-disabilities-research/cores/iddrc-affiliated-cores\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:15.933Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/mind-institute/centers/intellectual-developmental-disabilities-research/cores/iddrc-affiliated-cores",
+	"url": "https://health.ucdavis.edu/mind-institute/centers/intellectual-developmental-disabilities-research/cores/iddrc-affiliated-cores"
+}

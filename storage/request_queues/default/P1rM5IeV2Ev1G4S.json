@@ -1,0 +1,9 @@
+{
+	"id": "P1rM5IeV2Ev1G4S",
+	"json": "{\"id\":\"P1rM5IeV2Ev1G4S\",\"url\":\"https://surveys3.cde.ca.gov/go/pse2025-26.asp\",\"loadedUrl\":\"https://surveys3.cde.ca.gov/s.asp?k=176964186843\",\"uniqueKey\":\"https://surveys3.cde.ca.gov/go/pse2025-26.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:14:17.370Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://surveys3.cde.ca.gov/go/pse2025-26.asp",
+	"url": "https://surveys3.cde.ca.gov/go/pse2025-26.asp"
+}

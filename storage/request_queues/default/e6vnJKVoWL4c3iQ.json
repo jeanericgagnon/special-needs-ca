@@ -1,0 +1,9 @@
+{
+	"id": "e6vnJKVoWL4c3iQ",
+	"json": "{\"id\":\"e6vnJKVoWL4c3iQ\",\"url\":\"https://hr.ucdavis.edu/supervisors/leave-time-off/comp-time-off\",\"loadedUrl\":\"https://hr.ucdavis.edu/supervisors/leave-time-off/comp-time-off\",\"uniqueKey\":\"https://hr.ucdavis.edu/supervisors/leave-time-off/comp-time-off\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:11.418Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/supervisors/leave-time-off/comp-time-off",
+	"url": "https://hr.ucdavis.edu/supervisors/leave-time-off/comp-time-off"
+}

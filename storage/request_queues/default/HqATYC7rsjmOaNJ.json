@@ -1,0 +1,9 @@
+{
+	"id": "HqATYC7rsjmOaNJ",
+	"json": "{\"id\":\"HqATYC7rsjmOaNJ\",\"url\":\"https://hcai.ca.gov/loans-scholarships-grants/\",\"loadedUrl\":\"https://hcai.ca.gov/workforce/financial-assistance/\",\"uniqueKey\":\"https://hcai.ca.gov/loans-scholarships-grants\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:31.174Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hcai.ca.gov/loans-scholarships-grants",
+	"url": "https://hcai.ca.gov/loans-scholarships-grants/"
+}

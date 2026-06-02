@@ -1,0 +1,9 @@
+{
+	"id": "vXkZ96RoVNcRxbu",
+	"json": "{\"id\":\"vXkZ96RoVNcRxbu\",\"url\":\"https://www.cdtfa.ca.gov/services/state-of-emergency-tax-relief.htm\",\"loadedUrl\":\"https://cdtfa.ca.gov/services/state-of-emergency-tax-relief.htm\",\"uniqueKey\":\"https://www.cdtfa.ca.gov/services/state-of-emergency-tax-relief.htm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:43.790Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdtfa.ca.gov/services/state-of-emergency-tax-relief.htm",
+	"url": "https://www.cdtfa.ca.gov/services/state-of-emergency-tax-relief.htm"
+}

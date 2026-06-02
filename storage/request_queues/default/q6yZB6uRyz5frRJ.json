@@ -1,0 +1,9 @@
+{
+	"id": "q6yZB6uRyz5frRJ",
+	"json": "{\"id\":\"q6yZB6uRyz5frRJ\",\"url\":\"https://cdss.ca.gov/inforesources/California-Foster-Youth-Education-Resource-Hub\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/california-foster-youth-education-resource-hub\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/California-Foster-Youth-Education-Resource-Hub\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:54.285Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/California-Foster-Youth-Education-Resource-Hub",
+	"url": "https://cdss.ca.gov/inforesources/California-Foster-Youth-Education-Resource-Hub"
+}

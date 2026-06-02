@@ -1,0 +1,9 @@
+{
+	"id": "ewqb7dF1MCK6DDe",
+	"json": "{\"id\":\"ewqb7dF1MCK6DDe\",\"url\":\"https://cnprc.ucdavis.edu/initiating-research\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/initiating-research\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/initiating-research\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:14.864Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cnprc.ucdavis.edu/initiating-research",
+	"url": "https://cnprc.ucdavis.edu/initiating-research"
+}

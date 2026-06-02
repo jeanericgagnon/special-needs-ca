@@ -1,0 +1,9 @@
+{
+	"id": "jf1EFaCGRFtsZCF",
+	"json": "{\"id\":\"jf1EFaCGRFtsZCF\",\"url\":\"https://www.chhs.ca.gov/blog/2022/12/28/statement-from-california-health-and-human-services-secretary-dr-mark-ghaly-on-the-announced-closure-of-madera-community-hospital/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2022/12/28/statement-from-california-health-and-human-services-secretary-dr-mark-ghaly-on-the-announced-closure-of-madera-community-hospital/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2022/12/28/statement-from-california-health-and-human-services-secretary-dr-mark-ghaly-on-the-announced-closure-of-madera-community-hospital\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:21.157Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chhs.ca.gov/blog/2022/12/28/statement-from-california-health-and-human-services-secretary-dr-mark-ghaly-on-the-announced-closure-of-madera-community-hospital",
+	"url": "https://www.chhs.ca.gov/blog/2022/12/28/statement-from-california-health-and-human-services-secretary-dr-mark-ghaly-on-the-announced-closure-of-madera-community-hospital/"
+}

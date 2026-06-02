@@ -1,0 +1,9 @@
+{
+	"id": "tY7cCkgrnfIwi1D",
+	"json": "{\"id\":\"tY7cCkgrnfIwi1D\",\"url\":\"https://cmbintranet.ls.ucdavis.edu/login\",\"loadedUrl\":\"https://cas.ucdavis.edu/cas/login?service=https%3A//cmbintranet.ls.ucdavis.edu/casservice%3Fdestination%3D/login\",\"uniqueKey\":\"https://cmbintranet.ls.ucdavis.edu/login\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:04.244Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cmbintranet.ls.ucdavis.edu/login",
+	"url": "https://cmbintranet.ls.ucdavis.edu/login"
+}

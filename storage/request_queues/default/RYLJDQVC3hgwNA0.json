@@ -1,0 +1,9 @@
+{
+	"id": "RYLJDQVC3hgwNA0",
+	"json": "{\"id\":\"RYLJDQVC3hgwNA0\",\"url\":\"https://www.csb-cde.ca.gov/instruction/assistivetech/screenreadertraining.aspx\",\"loadedUrl\":\"https://www.csb-cde.ca.gov/instruction/assistivetech/screenreadertraining.aspx\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/instruction/assistivetech/screenreadertraining.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:26.610Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.csb-cde.ca.gov/instruction/assistivetech/screenreadertraining.aspx",
+	"url": "https://www.csb-cde.ca.gov/instruction/assistivetech/screenreadertraining.aspx"
+}

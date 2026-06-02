@@ -1,0 +1,9 @@
+{
+	"id": "mcPKASHX4Dk7cQ7",
+	"json": "{\"id\":\"mcPKASHX4Dk7cQ7\",\"url\":\"https://mychart.ucdavis.edu/MyChart/Authentication/Login?postloginurl=questionnaire%2fmychartquestionnaire%2faskquestionnaire%3fcontextType%3d3%26lqfid%3dWP-24AkgZkqb4tYnOy4A09SQS-2Bg-3D-3D-24SUZVSSEzBmrWTma3qkNdgp0-2BOFAekeyq-2B-2BM0uslVaWY-3D%26sourceId%3dWP-24xYNfmkecbtMPWiPszNOiXg-3D-3D-249-2FCs\",\"loadedUrl\":\"https://mychart.ucdavis.edu/MyChart/Authentication/Login?postloginurl=questionnaire%2fmychartquestionnaire%2faskquestionnaire%3fcontextType%3d3%26lqfid%3dWP-24AkgZkqb4tYnOy4A09SQS-2Bg-3D-3D-24SUZVSSEzBmrWTma3qkNdgp0-2BOFAekeyq-2B-2BM0uslVaWY-3D%26sourceId%3dWP-24xYNfmkecbtMPWiPszNOiXg-3D-3D-249-2FCs\",\"uniqueKey\":\"https://mychart.ucdavis.edu/MyChart/Authentication/Login?postloginurl=questionnaire%2Fmychartquestionnaire%2Faskquestionnaire%3FcontextType%3D3%26lqfid%3DWP-24AkgZkqb4tYnOy4A09SQS-2Bg-3D-3D-24SUZVSSEzBmrWTma3qkNdgp0-2BOFAekeyq-2B-2BM0uslVaWY-3D%26sourceId%3DWP-24xYNfmkecbtMPWiPszNOiXg-3D-3D-249-2FCs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:46.881Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://mychart.ucdavis.edu/MyChart/Authentication/Login?postloginurl=questionnaire%2Fmychartquestionnaire%2Faskquestionnaire%3FcontextType%3D3%26lqfid%3DWP-24AkgZkqb4tYnOy4A09SQS-2Bg-3D-3D-24SUZVSSEzBmrWTma3qkNdgp0-2BOFAekeyq-2B-2BM0uslVaWY-3D%26sourceId%3DWP-24xYNfmkecbtMPWiPszNOiXg-3D-3D-249-2FCs",
+	"url": "https://mychart.ucdavis.edu/MyChart/Authentication/Login?postloginurl=questionnaire%2fmychartquestionnaire%2faskquestionnaire%3fcontextType%3d3%26lqfid%3dWP-24AkgZkqb4tYnOy4A09SQS-2Bg-3D-3D-24SUZVSSEzBmrWTma3qkNdgp0-2BOFAekeyq-2B-2BM0uslVaWY-3D%26sourceId%3dWP-24xYNfmkecbtMPWiPszNOiXg-3D-3D-249-2FCs"
+}

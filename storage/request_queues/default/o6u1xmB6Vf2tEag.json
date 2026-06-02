@@ -1,0 +1,9 @@
+{
+	"id": "o6u1xmB6Vf2tEag",
+	"json": "{\"id\":\"o6u1xmB6Vf2tEag\",\"url\":\"https://www.ca.gov/services/all/\",\"loadedUrl\":\"https://www.ca.gov/services/all/\",\"uniqueKey\":\"https://www.ca.gov/services/all\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:20.613Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.ca.gov/services/all",
+	"url": "https://www.ca.gov/services/all/"
+}

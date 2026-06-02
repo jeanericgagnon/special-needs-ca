@@ -1,0 +1,9 @@
+{
+	"id": "JaJRjh6G6AT5Z6j",
+	"json": "{\"id\":\"JaJRjh6G6AT5Z6j\",\"url\":\"https://health.ucdavis.edu/compliance/general-compliance/vendor-compliance\",\"loadedUrl\":\"https://health.ucdavis.edu/compliance/general-compliance/vendor-compliance\",\"uniqueKey\":\"https://health.ucdavis.edu/compliance/general-compliance/vendor-compliance\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:32.968Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/compliance/general-compliance/vendor-compliance",
+	"url": "https://health.ucdavis.edu/compliance/general-compliance/vendor-compliance"
+}

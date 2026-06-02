@@ -1,0 +1,9 @@
+{
+	"id": "bkGTjf4cROkW4wZ",
+	"json": "{\"id\":\"bkGTjf4cROkW4wZ\",\"url\":\"https://health.ucdavis.edu/neurology/community/educational-programs\",\"loadedUrl\":\"https://health.ucdavis.edu/neurology/community/educational-programs\",\"uniqueKey\":\"https://health.ucdavis.edu/neurology/community/educational-programs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:52.184Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/neurology/community/educational-programs",
+	"url": "https://health.ucdavis.edu/neurology/community/educational-programs"
+}

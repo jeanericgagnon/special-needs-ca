@@ -1,0 +1,9 @@
+{
+	"id": "s5gkqXZtvDYLWkL",
+	"json": "{\"id\":\"s5gkqXZtvDYLWkL\",\"url\":\"https://cadeafblind.org/pros/\",\"loadedUrl\":\"https://cadeafblind.org/pros/\",\"uniqueKey\":\"https://cadeafblind.org/pros\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:50.689Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cadeafblind.org/pros",
+	"url": "https://cadeafblind.org/pros/"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "WWQcD6Yih56mF3v",
+	"json": "{\"id\":\"WWQcD6Yih56mF3v\",\"url\":\"https://health.ucdavis.edu/cht/telehealth/overview.html\",\"loadedUrl\":\"https://health.ucdavis.edu/cht/telehealth/overview.html\",\"uniqueKey\":\"https://health.ucdavis.edu/cht/telehealth/overview.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:31:11.532Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/cht/telehealth/overview.html",
+	"url": "https://health.ucdavis.edu/cht/telehealth/overview.html"
+}

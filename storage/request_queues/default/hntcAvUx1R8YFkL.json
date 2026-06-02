@@ -1,0 +1,9 @@
+{
+	"id": "hntcAvUx1R8YFkL",
+	"json": "{\"id\":\"hntcAvUx1R8YFkL\",\"url\":\"https://myfamily.wic.ca.gov/NutritionHealth/Breastfeeding#Breastfeeding\",\"loadedUrl\":\"https://myfamily.wic.ca.gov/NutritionHealth/Breastfeeding#Breastfeeding\",\"uniqueKey\":\"https://myfamily.wic.ca.gov/NutritionHealth/Breastfeeding\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:07:19.819Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://myfamily.wic.ca.gov/NutritionHealth/Breastfeeding",
+	"url": "https://myfamily.wic.ca.gov/NutritionHealth/Breastfeeding#Breastfeeding"
+}

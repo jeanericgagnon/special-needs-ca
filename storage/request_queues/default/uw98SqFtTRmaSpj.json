@@ -1,0 +1,9 @@
+{
+	"id": "uw98SqFtTRmaSpj",
+	"json": "{\"id\":\"uw98SqFtTRmaSpj\",\"url\":\"https://neuroscience.ucdavis.edu/people/jennifer-scott\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/people/jennifer-scott\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/people/jennifer-scott\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:41.679Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://neuroscience.ucdavis.edu/people/jennifer-scott",
+	"url": "https://neuroscience.ucdavis.edu/people/jennifer-scott"
+}

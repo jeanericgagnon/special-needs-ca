@@ -1,0 +1,9 @@
+{
+	"id": "kEU33fnd2capyay",
+	"json": "{\"id\":\"kEU33fnd2capyay\",\"url\":\"https://health.ucdavis.edu/basicsciences/administrative-staff/index.html\",\"loadedUrl\":\"https://health.ucdavis.edu/basicsciences/administrative-staff/index.html\",\"uniqueKey\":\"https://health.ucdavis.edu/basicsciences/administrative-staff/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:52.783Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/basicsciences/administrative-staff/index.html",
+	"url": "https://health.ucdavis.edu/basicsciences/administrative-staff/index.html"
+}

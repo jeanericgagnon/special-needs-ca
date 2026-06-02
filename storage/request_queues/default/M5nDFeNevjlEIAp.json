@@ -1,0 +1,9 @@
+{
+	"id": "M5nDFeNevjlEIAp",
+	"json": "{\"id\":\"M5nDFeNevjlEIAp\",\"url\":\"https://cdss.ca.gov/inforesources/Refugees/Guidance/Counties-Providers/Service-Providers-List\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/refugees/guidance/counties-providers/service-providers-list\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Refugees/Guidance/Counties-Providers/Service-Providers-List\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:58:16.691Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://cdss.ca.gov/inforesources/Refugees/Guidance/Counties-Providers/Service-Providers-List",
+	"url": "https://cdss.ca.gov/inforesources/Refugees/Guidance/Counties-Providers/Service-Providers-List"
+}

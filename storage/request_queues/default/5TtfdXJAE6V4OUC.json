@@ -1,0 +1,9 @@
+{
+	"id": "5TtfdXJAE6V4OUC",
+	"json": "{\"id\":\"5TtfdXJAE6V4OUC\",\"url\":\"https://www.dgs.ca.gov/Privacy\",\"loadedUrl\":\"https://www.dgs.ca.gov/Privacy\",\"uniqueKey\":\"https://www.dgs.ca.gov/Privacy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:07.167Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dgs.ca.gov/Privacy",
+	"url": "https://www.dgs.ca.gov/Privacy"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "iUMyE946LDheq5o",
+	"json": "{\"id\":\"iUMyE946LDheq5o\",\"url\":\"https://www.cdph.ca.gov/Programs/OPDE/Pages/Preventive-Medicine-Public-Health-Residency-Program.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/OPDE/Pages/Preventive-Medicine-Public-Health-Residency-Program.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/OPDE/Pages/Preventive-Medicine-Public-Health-Residency-Program.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:08.829Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.cdph.ca.gov/Programs/OPDE/Pages/Preventive-Medicine-Public-Health-Residency-Program.aspx",
+	"url": "https://www.cdph.ca.gov/Programs/OPDE/Pages/Preventive-Medicine-Public-Health-Residency-Program.aspx"
+}

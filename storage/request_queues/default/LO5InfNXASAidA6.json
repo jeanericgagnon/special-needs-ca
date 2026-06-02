@@ -1,0 +1,9 @@
+{
+	"id": "LO5InfNXASAidA6",
+	"json": "{\"id\":\"LO5InfNXASAidA6\",\"url\":\"https://www.dds.ca.gov/rc/disparities/data/\",\"loadedUrl\":\"https://www.dds.ca.gov/rc/disparities/data/\",\"uniqueKey\":\"https://www.dds.ca.gov/rc/disparities/data\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:07:43.574Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.dds.ca.gov/rc/disparities/data",
+	"url": "https://www.dds.ca.gov/rc/disparities/data/"
+}

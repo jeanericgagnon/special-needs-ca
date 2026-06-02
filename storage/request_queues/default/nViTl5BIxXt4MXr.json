@@ -1,0 +1,9 @@
+{
+	"id": "nViTl5BIxXt4MXr",
+	"json": "{\"id\":\"nViTl5BIxXt4MXr\",\"url\":\"https://www.chhs.ca.gov/blog/2021/10/06/cal-hospital-compare-2021-maternity-honor-roll/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2021/10/06/cal-hospital-compare-2021-maternity-honor-roll/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2021/10/06/cal-hospital-compare-2021-maternity-honor-roll\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:58.338Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.chhs.ca.gov/blog/2021/10/06/cal-hospital-compare-2021-maternity-honor-roll",
+	"url": "https://www.chhs.ca.gov/blog/2021/10/06/cal-hospital-compare-2021-maternity-honor-roll/"
+}

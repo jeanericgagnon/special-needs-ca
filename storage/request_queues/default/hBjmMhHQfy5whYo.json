@@ -1,0 +1,9 @@
+{
+	"id": "hBjmMhHQfy5whYo",
+	"json": "{\"id\":\"hBjmMhHQfy5whYo\",\"url\":\"https://safetyservices.ucdavis.edu/units/occupational-health/health-well-being\",\"loadedUrl\":\"https://safetyservices.ucdavis.edu/units/occupational-health/health-well-being\",\"uniqueKey\":\"https://safetyservices.ucdavis.edu/units/occupational-health/health-well-being\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:56.319Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://safetyservices.ucdavis.edu/units/occupational-health/health-well-being",
+	"url": "https://safetyservices.ucdavis.edu/units/occupational-health/health-well-being"
+}

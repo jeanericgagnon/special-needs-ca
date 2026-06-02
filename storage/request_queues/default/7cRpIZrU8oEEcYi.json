@@ -1,0 +1,9 @@
+{
+	"id": "7cRpIZrU8oEEcYi",
+	"json": "{\"id\":\"7cRpIZrU8oEEcYi\",\"url\":\"https://health.ucdavis.edu/med-pathways/medical_student.html\",\"loadedUrl\":\"https://health.ucdavis.edu/med-pathways/medical_student.html\",\"uniqueKey\":\"https://health.ucdavis.edu/med-pathways/medical_student.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:10.961Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/med-pathways/medical_student.html",
+	"url": "https://health.ucdavis.edu/med-pathways/medical_student.html"
+}

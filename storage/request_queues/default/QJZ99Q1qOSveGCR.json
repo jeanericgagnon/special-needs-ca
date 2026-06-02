@@ -1,0 +1,9 @@
+{
+	"id": "QJZ99Q1qOSveGCR",
+	"json": "{\"id\":\"QJZ99Q1qOSveGCR\",\"url\":\"https://health.ucdavis.edu/children/team/43365/lidia-park-pediatrics-pediatric-hospital-medicine-pediatric-hospitalist-\",\"loadedUrl\":\"https://health.ucdavis.edu/children/team/43365/lidia-park-pediatrics-pediatric-hospital-medicine-pediatric-hospitalist-\",\"uniqueKey\":\"https://health.ucdavis.edu/children/team/43365/lidia-park-pediatrics-pediatric-hospital-medicine-pediatric-hospitalist-\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:13.029Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.ucdavis.edu/children/team/43365/lidia-park-pediatrics-pediatric-hospital-medicine-pediatric-hospitalist-",
+	"url": "https://health.ucdavis.edu/children/team/43365/lidia-park-pediatrics-pediatric-hospital-medicine-pediatric-hospitalist-"
+}

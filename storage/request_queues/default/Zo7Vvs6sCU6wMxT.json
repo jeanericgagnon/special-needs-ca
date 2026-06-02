@@ -1,0 +1,9 @@
+{
+	"id": "Zo7Vvs6sCU6wMxT",
+	"json": "{\"id\":\"Zo7Vvs6sCU6wMxT\",\"url\":\"https://hr.ucdavis.edu/news/campus-compensation-services-talent-acquisition-office-hours\",\"loadedUrl\":\"https://hr.ucdavis.edu/news/campus-compensation-services-talent-acquisition-office-hours\",\"uniqueKey\":\"https://hr.ucdavis.edu/news/campus-compensation-services-talent-acquisition-office-hours\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:06.901Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://hr.ucdavis.edu/news/campus-compensation-services-talent-acquisition-office-hours",
+	"url": "https://hr.ucdavis.edu/news/campus-compensation-services-talent-acquisition-office-hours"
+}
