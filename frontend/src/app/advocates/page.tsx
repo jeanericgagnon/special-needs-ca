@@ -2,6 +2,8 @@ import { getCounties, getIepAdvocates } from '@/lib/db';
 import { Metadata } from 'next';
 import { ShieldCheck, Phone, Mail, Globe, MapPin, Award, Search, Sparkles } from 'lucide-react';
 import Link from 'next/link';
+import CopyButton from '@/components/copy-button';
+
 
 type Props = {
   searchParams: Promise<{ county?: string }>;
@@ -244,10 +246,18 @@ export default async function AdvocatesDirectoryPage({ searchParams }: Props) {
                   <span style={{ color: 'var(--text-light)' }}>{adv.languages_spoken}</span>
                 </div>
                 <div>
-                  <strong style={{ display: 'block', color: 'var(--text-main)', marginBottom: '0.25rem' }}>📞 Contact Details:</strong>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem', color: 'var(--text-light)', fontSize: '0.82rem' }}>
-                    <span style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}><Phone size={11} /> {adv.phone}</span>
-                    <span style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}><Mail size={11} /> {adv.email}</span>
+                  <strong style={{ display: 'block', color: 'var(--text-main)', marginBottom: '0.4rem' }}>📞 Contact Details:</strong>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', color: 'var(--text-light)', fontSize: '0.88rem' }}>
+                    <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
+                      <Phone size={13} style={{ flexShrink: 0 }} /> 
+                      <a href={`tel:${adv.phone}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{adv.phone}</a>
+                      <CopyButton text={adv.phone} size={11} />
+                    </span>
+                    <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
+                      <Mail size={13} style={{ flexShrink: 0 }} /> 
+                      <a href={`mailto:${adv.email}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{adv.email}</a>
+                      <CopyButton text={adv.email} size={11} />
+                    </span>
                   </div>
                 </div>
               </div>
@@ -276,6 +286,35 @@ export default async function AdvocatesDirectoryPage({ searchParams }: Props) {
         </div>
       )}
 
+      {/* JSON-LD ProfessionalService Schema Markup for Local SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": advocates.map(adv => ({
+              "@type": "ProfessionalService",
+              "name": adv.name,
+              "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=400",
+              "telephone": adv.phone,
+              "email": adv.email,
+              "url": adv.website,
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": adv.counties_served.split(',')[0]?.trim().replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) || "California",
+                "addressRegion": "CA",
+                "addressCountry": "US"
+              },
+              "description": `${adv.name} is a professional special education IEP advocate with ${adv.experience_years} years of experience. Credentials: ${adv.credentials}. Hourly rate info: ${adv.price_rate}. Languages: ${adv.languages_spoken}.`,
+              "priceRange": adv.price_rate,
+              "areaServed": adv.counties_served.split(',').map(s => ({
+                "@type": "AdministrativeArea",
+                "name": s.trim().replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) + " County"
+              }))
+            }))
+          })
+        }}
+      />
     </main>
   );
 }

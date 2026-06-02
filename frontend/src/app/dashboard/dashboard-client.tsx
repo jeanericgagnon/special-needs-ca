@@ -23,7 +23,8 @@ import ChildEditor from './child-editor';
 import { 
   User, Plus, Edit, Trash2, ShieldCheck, FileText, Calendar, 
   MapPin, CheckCircle, ChevronDown, ChevronUp, AlertCircle, Phone, 
-  Globe, Info, FileCheck, Landmark, CheckSquare, Square, Trash 
+  Globe, Info, FileCheck, Landmark, CheckSquare, Square, Trash,
+  Copy, Check, Mail
 } from 'lucide-react';
 
 interface DashboardClientProps {
@@ -59,6 +60,36 @@ export default function DashboardClient({
   const [activeTab, setActiveTab] = useState<TabType>('benefits');
   const [editingChild, setEditingChild] = useState<ChildProfile | null>(null);
   const [isAddingChild, setIsAddingChild] = useState(false);
+  const [copiedId, setCopiedId] = useState<string | null>(null);
+
+  const handleCopy = (text: string, id: string) => {
+    navigator.clipboard.writeText(text);
+    setCopiedId(id);
+    setTimeout(() => setCopiedId(null), 2000);
+  };
+
+  const renderCopyButton = (text: string, id: string) => {
+    const isCopied = copiedId === id;
+    return (
+      <button
+        onClick={() => handleCopy(text, id)}
+        style={{
+          background: 'none',
+          border: 'none',
+          cursor: 'pointer',
+          padding: '0.2rem',
+          display: 'inline-flex',
+          alignItems: 'center',
+          color: isCopied ? '#10b981' : 'var(--text-light)',
+          transition: 'color 0.2s ease',
+          verticalAlign: 'middle'
+        }}
+        title="Copy to clipboard"
+      >
+        {isCopied ? <Check size={12} /> : <Copy size={12} />}
+      </button>
+    );
+  };
   
   // Collapsed states for benefits panel
   const [expandedProgramId, setExpandedProgramId] = useState<string | null>(null);
@@ -192,6 +223,30 @@ export default function DashboardClient({
                   <span style={{ background: 'rgba(99, 102, 241, 0.08)', color: 'var(--primary-color)', padding: '0.1rem 0.5rem', borderRadius: '999px', fontWeight: 600 }}>
                     {currentChild.conditionIds?.[0] || 'Diagnosed Condition'}
                   </span>
+                </div>
+                
+                {/* Active Tracking Status Summaries */}
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginTop: '0.75rem' }}>
+                  {savedStatuses.filter(s => s.status === 'approved').length > 0 && (
+                    <span style={{ fontSize: '0.75rem', background: 'rgba(16, 185, 129, 0.1)', color: '#10b981', padding: '0.2rem 0.6rem', borderRadius: '999px', fontWeight: 600 }}>
+                      🟢 {savedStatuses.filter(s => s.status === 'approved').length} Approved
+                    </span>
+                  )}
+                  {savedStatuses.filter(s => s.status === 'waiting').length > 0 && (
+                    <span style={{ fontSize: '0.75rem', background: 'rgba(245, 158, 11, 0.1)', color: '#f59e0b', padding: '0.2rem 0.6rem', borderRadius: '999px', fontWeight: 600 }}>
+                      🟡 {savedStatuses.filter(s => s.status === 'waiting').length} Waiting
+                    </span>
+                  )}
+                  {savedStatuses.filter(s => s.status === 'applied').length > 0 && (
+                    <span style={{ fontSize: '0.75rem', background: 'rgba(99, 102, 241, 0.1)', color: 'var(--primary-color)', padding: '0.2rem 0.6rem', borderRadius: '999px', fontWeight: 600 }}>
+                      🔵 {savedStatuses.filter(s => s.status === 'applied').length} Applied
+                    </span>
+                  )}
+                  {savedStatuses.filter(s => s.status === 'recommended').length > 0 && (
+                    <span style={{ fontSize: '0.75rem', background: 'rgba(107, 114, 128, 0.1)', color: 'var(--text-light)', padding: '0.2rem 0.6rem', borderRadius: '999px', fontWeight: 600 }}>
+                      📖 {savedStatuses.filter(s => s.status === 'recommended').length} Matches
+                    </span>
+                  )}
                 </div>
               </div>
             </div>
@@ -472,6 +527,26 @@ export default function DashboardClient({
                 </div>
 
                 <div className="glass-panel" style={{ background: 'rgba(255,255,255,0.85)', padding: '2rem' }}>
+                  {savedChecklist.length > 0 && (
+                    (() => {
+                      const totalDocs = savedChecklist.length;
+                      const collectedDocs = savedChecklist.filter(item => item.is_collected === 1).length;
+                      const pct = Math.round((collectedDocs / totalDocs) * 100);
+                      
+                      return (
+                        <div style={{ padding: '1.25rem', borderRadius: '16px', background: 'rgba(99, 102, 241, 0.04)', border: '1px solid rgba(99, 102, 241, 0.08)', marginBottom: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                            <span style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--text-main)' }}>Document Collection Progress</span>
+                            <span style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--primary-color)' }}>{collectedDocs} of {totalDocs} files ({pct}%)</span>
+                          </div>
+                          <div style={{ height: '8px', width: '100%', backgroundColor: 'rgba(0,0,0,0.05)', borderRadius: '4px', overflow: 'hidden' }}>
+                            <div style={{ height: '100%', width: `${pct}%`, backgroundColor: 'var(--primary-color)', borderRadius: '4px', transition: 'width 0.4s ease' }} />
+                          </div>
+                        </div>
+                      );
+                    })()
+                  )}
+
                   {savedChecklist.length === 0 ? (
                     <div style={{ textAlign: 'center', padding: '2rem' }}>
                       <FileCheck size={36} color="var(--primary-color)" style={{ margin: '0 auto 1rem' }} />
@@ -545,9 +620,24 @@ export default function DashboardClient({
                           <div key={rc.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem', fontSize: '0.9rem' }}>
                             <strong>{rc.name}</strong>
                             <span><strong>Catchment boundary:</strong> {rc.catchment_boundaries}</span>
-                            <span style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}><Phone size={14} /> Intake helpline: {rc.intake_phone}</span>
-                            <span><strong>Early Start Contact:</strong> {rc.early_start_contact}</span>
-                            <span><strong>Lanterman Intake:</strong> {rc.lanterman_intake_contact}</span>
+                            
+                            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
+                              <Phone size={14} style={{ flexShrink: 0 }} /> 
+                              Intake helpline: 
+                              <a href={`tel:${rc.intake_phone}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{rc.intake_phone}</a>
+                              {renderCopyButton(rc.intake_phone, `rc-phone-${rc.id}`)}
+                            </span>
+                            
+                            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
+                              <strong>Early Start Contact:</strong> {rc.early_start_contact}
+                              {renderCopyButton(rc.early_start_contact, `rc-es-${rc.id}`)}
+                            </span>
+                            
+                            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
+                              <strong>Lanterman Intake:</strong> {rc.lanterman_intake_contact}
+                              {renderCopyButton(rc.lanterman_intake_contact, `rc-lanterman-${rc.id}`)}
+                            </span>
+                            
                             <span><strong>Languages spoken:</strong> {rc.languages}</span>
                             <a href={rc.website} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem', color: 'var(--primary-color)', fontWeight: 600, textDecoration: 'none', marginTop: '0.25rem' }}>
                               <Globe size={14} /> Visit RC Portal
@@ -568,14 +658,33 @@ export default function DashboardClient({
                       {countyDetails.countyOffices && countyDetails.countyOffices.length > 0 ? (
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
                           {countyDetails.countyOffices.map((office: any) => (
-                            <div key={office.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', fontSize: '0.9rem' }}>
+                            <div key={office.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', fontSize: '0.9rem', borderBottom: '1px solid rgba(0,0,0,0.03)', paddingBottom: '0.75rem' }}>
                               <strong>{office.office_name}</strong>
                               <span style={{ fontSize: '0.8rem', color: 'var(--text-light)' }}>Program: {matchedPrograms.find(p => p.id === office.program_id)?.name || office.program_id}</span>
-                              <span><strong>Address:</strong> {office.address}</span>
-                              <span style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}><Phone size={14} /> Phone: {office.phone}</span>
-                              {office.email && <span><strong>Email:</strong> {office.email}</span>}
+                              
+                              <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
+                                <strong>Address:</strong> {office.address}
+                                {renderCopyButton(office.address, `office-addr-${office.id}`)}
+                              </span>
+                              
+                              <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
+                                <Phone size={14} style={{ flexShrink: 0 }} /> 
+                                Phone: 
+                                <a href={`tel:${office.phone}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{office.phone}</a>
+                                {renderCopyButton(office.phone, `office-phone-${office.id}`)}
+                              </span>
+                              
+                              {office.email && (
+                                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
+                                  <Mail size={14} style={{ flexShrink: 0 }} />
+                                  Email: 
+                                  <a href={`mailto:${office.email}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{office.email}</a>
+                                  {renderCopyButton(office.email, `office-email-${office.id}`)}
+                                </span>
+                              )}
+                              
                               {office.website && (
-                                <a href={office.website} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem', color: 'var(--primary-color)', fontWeight: 600, textDecoration: 'none' }}>
+                                <a href={office.website} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem', color: 'var(--primary-color)', fontWeight: 600, textDecoration: 'none', marginTop: '0.2rem' }}>
                                   <Globe size={14} /> Visit County Website
                                 </a>
                               )}
@@ -594,13 +703,28 @@ export default function DashboardClient({
                         School District Special Education
                       </h4>
                       {countyDetails.schoolDistricts && countyDetails.schoolDistricts.length > 0 ? (
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
                           {countyDetails.schoolDistricts.map((sd: any) => (
-                            <div key={sd.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', fontSize: '0.9rem' }}>
+                            <div key={sd.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', fontSize: '0.9rem', borderBottom: '1px solid rgba(0,0,0,0.03)', paddingBottom: '0.75rem' }}>
                               <strong>{sd.name}</strong>
-                              <span style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}><Phone size={14} /> SpecEd Helpline: {sd.spec_ed_contact_phone}</span>
-                              {sd.spec_ed_contact_email && <span><strong>Email:</strong> {sd.spec_ed_contact_email}</span>}
-                              <a href={sd.website} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem', color: 'var(--primary-color)', fontWeight: 600, textDecoration: 'none' }}>
+                              
+                              <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
+                                <Phone size={14} style={{ flexShrink: 0 }} /> 
+                                SpecEd Helpline: 
+                                <a href={`tel:${sd.spec_ed_contact_phone}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{sd.spec_ed_contact_phone}</a>
+                                {renderCopyButton(sd.spec_ed_contact_phone, `sd-phone-${sd.id}`)}
+                              </span>
+                              
+                              {sd.spec_ed_contact_email && (
+                                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
+                                  <Mail size={14} style={{ flexShrink: 0 }} />
+                                  Email: 
+                                  <a href={`mailto:${sd.spec_ed_contact_email}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{sd.spec_ed_contact_email}</a>
+                                  {renderCopyButton(sd.spec_ed_contact_email, `sd-email-${sd.id}`)}
+                                </span>
+                              )}
+                              
+                              <a href={sd.website} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem', color: 'var(--primary-color)', fontWeight: 600, textDecoration: 'none', marginTop: '0.2rem' }}>
                                 <Globe size={14} /> District IEP Guidelines
                               </a>
                             </div>

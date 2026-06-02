@@ -3,6 +3,8 @@ import { Metadata } from 'next';
 import { CheckCircle2, MapPin, Activity, Phone, Globe, Landmark, ShieldCheck, FileCheck, Mail, Award } from 'lucide-react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import CopyButton from '@/components/copy-button';
+
 
 type Props = {
   params: Promise<{ diagnosis: string; county: string }>;
@@ -88,6 +90,44 @@ export default async function SEOLandingPage({ params }: Props) {
     ]
   };
 
+  const schoolDistrictsSchema = {
+    '@context': 'https://schema.org',
+    '@graph': (countyData.schoolDistricts || []).map((sd: any) => ({
+      '@type': 'EducationalOrganization',
+      'name': sd.name,
+      'telephone': sd.spec_ed_contact_phone,
+      'email': sd.spec_ed_contact_email,
+      'url': sd.website,
+      'address': {
+        '@type': 'PostalAddress',
+        'addressLocality': countyFormatted,
+        'addressRegion': 'CA',
+        'addressCountry': 'US'
+      },
+      'description': `${sd.name} Special Education department in ${countyFormatted} County. Inclusion rate: ${sd.inclusion_rate_pct}%. SDC self-contained rate: ${sd.self_contained_rate_pct}%.`
+    }))
+  };
+
+  const localAdvocatesSchema = {
+    '@context': 'https://schema.org',
+    '@graph': (localAdvocates || []).map((adv: any) => ({
+      '@type': 'ProfessionalService',
+      'name': adv.name,
+      'telephone': adv.phone,
+      'email': adv.email,
+      'url': adv.website,
+      'image': 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=400',
+      'description': `${adv.name} is a professional special education IEP advocate serving ${countyFormatted} County. Credentials: ${adv.credentials}. Rate: ${adv.price_rate}. Experience: ${adv.experience_years} years.`,
+      'priceRange': adv.price_rate,
+      'address': {
+        '@type': 'PostalAddress',
+        'addressLocality': countyFormatted,
+        'addressRegion': 'CA',
+        'addressCountry': 'US'
+      }
+    }))
+  };
+
   return (
     <main className="container animate-fade-in" style={{ paddingBottom: '5rem' }}>
       
@@ -99,6 +139,14 @@ export default async function SEOLandingPage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalConditionSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schoolDistrictsSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localAdvocatesSchema) }}
       />
 
       {/* Hero Header */}
@@ -130,7 +178,12 @@ export default async function SEOLandingPage({ params }: Props) {
                 </strong>
                 <strong>{countyData.regionalCenters[0].name}</strong>
                 <p style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>{countyData.regionalCenters[0].catchment_boundaries}</p>
-                <span style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}><Phone size={14} /> Intake: {countyData.regionalCenters[0].intake_phone}</span>
+                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
+                  <Phone size={14} style={{ flexShrink: 0 }} /> 
+                  Intake: 
+                  <a href={`tel:${countyData.regionalCenters[0].intake_phone}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{countyData.regionalCenters[0].intake_phone}</a>
+                  <CopyButton text={countyData.regionalCenters[0].intake_phone} size={11} />
+                </span>
                 <span><strong>Languages:</strong> {countyData.regionalCenters[0].languages}</span>
               </div>
             )}
@@ -175,9 +228,21 @@ export default async function SEOLandingPage({ params }: Props) {
                       </div>
                     )}
 
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem', marginTop: '0.4rem', fontSize: '0.82rem' }}>
-                      <span style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}><Phone size={12} /> Helpline: {district.spec_ed_contact_phone}</span>
-                      {district.spec_ed_contact_email && <span style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}><Mail size={12} /> {district.spec_ed_contact_email}</span>}
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.3rem', marginTop: '0.5rem', fontSize: '0.85rem' }}>
+                      <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
+                        <Phone size={13} style={{ flexShrink: 0 }} /> 
+                        Helpline: 
+                        <a href={`tel:${district.spec_ed_contact_phone}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{district.spec_ed_contact_phone}</a>
+                        <CopyButton text={district.spec_ed_contact_phone} size={11} />
+                      </span>
+                      {district.spec_ed_contact_email && (
+                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
+                          <Mail size={13} style={{ flexShrink: 0 }} /> 
+                          Email: 
+                          <a href={`mailto:${district.spec_ed_contact_email}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{district.spec_ed_contact_email}</a>
+                          <CopyButton text={district.spec_ed_contact_email} size={11} />
+                        </span>
+                      )}
                       <a href={district.website} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.2rem', textDecoration: 'none', color: 'var(--primary-color)', fontWeight: 600, marginTop: '0.2rem' }}>
                         <Globe size={11} /> SpEd Department Website
                       </a>
@@ -189,15 +254,23 @@ export default async function SEOLandingPage({ params }: Props) {
 
             {/* County Office Contacts */}
             {countyData.countyOffices && countyData.countyOffices.length > 0 && (
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', fontSize: '0.9rem' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.9rem' }}>
                 <strong style={{ fontSize: '1rem', display: 'flex', alignItems: 'center', gap: '0.4rem', color: 'var(--primary-color)' }}>
                   <FileCheck size={16} /> County Service Office
                 </strong>
                 {countyData.countyOffices.map((office: any) => (
-                  <div key={office.id} style={{ marginBottom: '0.5rem' }}>
+                  <div key={office.id} style={{ marginBottom: '1rem', display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
                     <strong>{office.office_name}</strong>
-                    <span style={{ display: 'block', fontSize: '0.85rem' }}>{office.address}</span>
-                    <span style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}><Phone size={14} /> Phone: {office.phone}</span>
+                    <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap', fontSize: '0.85rem' }}>
+                      <strong>Address:</strong> {office.address}
+                      <CopyButton text={office.address} size={11} />
+                    </span>
+                    <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
+                      <Phone size={13} style={{ flexShrink: 0 }} /> 
+                      Phone: 
+                      <a href={`tel:${office.phone}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{office.phone}</a>
+                      <CopyButton text={office.phone} size={11} />
+                    </span>
                   </div>
                 ))}
               </div>
@@ -256,9 +329,17 @@ export default async function SEOLandingPage({ params }: Props) {
                   </div>
                 </div>
                 
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem', fontSize: '0.8rem', borderTop: '1px solid rgba(0,0,0,0.04)', paddingTop: '0.75rem', marginTop: '0.75rem' }}>
-                  <span style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}><Phone size={12} /> {adv.phone}</span>
-                  <span style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}><Mail size={12} /> {adv.email}</span>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', fontSize: '0.85rem', borderTop: '1px solid rgba(0,0,0,0.04)', paddingTop: '0.75rem', marginTop: '0.75rem' }}>
+                  <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
+                    <Phone size={12} style={{ flexShrink: 0 }} /> 
+                    <a href={`tel:${adv.phone}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{adv.phone}</a>
+                    <CopyButton text={adv.phone} size={11} />
+                  </span>
+                  <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
+                    <Mail size={12} style={{ flexShrink: 0 }} /> 
+                    <a href={`mailto:${adv.email}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{adv.email}</a>
+                    <CopyButton text={adv.email} size={11} />
+                  </span>
                 </div>
               </div>
             ))}
