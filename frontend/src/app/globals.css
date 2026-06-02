@@ -12,6 +12,18 @@
   --accent-gradient: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
 }
 
+:root.dark {
+  --bg-gradient: linear-gradient(135deg, #090d16 0%, #0f172a 100%);
+  --glass-bg: rgba(15, 23, 42, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  --primary-color: #818cf8;
+  --primary-hover: #6366f1;
+  --text-main: #f8fafc;
+  --text-light: #94a3b8;
+  --accent-gradient: linear-gradient(135deg, #6366f1 0%, #a78bfa 100%);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -28,6 +40,7 @@ body {
   overflow-x: hidden;
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 @keyframes gradientBG {
@@ -45,12 +58,12 @@ body {
   border-radius: 24px;
   box-shadow: var(--glass-shadow);
   padding: 2.5rem;
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease, background 0.3s ease, border-color 0.3s ease;
 }
 
 .glass-panel:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.1);
+  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.12);
 }
 
 /* Typography */
@@ -90,19 +103,19 @@ label {
   color: var(--text-main);
 }
 
-input, select {
+input, select, textarea {
   width: 100%;
   padding: 1rem 1.25rem;
   font-size: 1rem;
   font-family: inherit;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 12px;
   outline: none;
-  transition: all 0.2s ease;
+  transition: all 0.2s ease, background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
 
-input:focus, select:focus {
+input:focus, select:focus, textarea:focus {
   border-color: var(--primary-color);
   box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
 }
@@ -365,5 +378,62 @@ input[type="checkbox"] {
   background: rgba(99, 102, 241, 0.04);
   color: var(--primary-color);
 }
+
+/* Dark Mode Overrides & Helper Classes */
+:root.dark select, 
+:root.dark input, 
+:root.dark textarea {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #f8fafc;
+}
+
+:root.dark option {
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+:root.dark .navbar-container {
+  background: rgba(15, 23, 42, 0.65);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+:root.dark .autocomplete-dropdown {
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+:root.dark .autocomplete-item {
+  color: #f8fafc;
+}
+
+:root.dark .autocomplete-item:hover,
+:root.dark .autocomplete-item.highlighted {
+  background: rgba(99, 102, 241, 0.2);
+  color: #818cf8;
+}
+
+:root.dark .modal-content {
+  background: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #f8fafc;
+}
+
+:root.dark input[type="checkbox"] {
+  accent-color: var(--primary-color);
+}
+
+/* Fix tab button background for active profiles in dark mode */
+:root.dark .tab-btn {
+  background: rgba(15, 23, 42, 0.5) !important;
+  color: var(--text-main) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+:root.dark .tab-btn.active {
+  background: var(--primary-color) !important;
+  color: white !important;
+}
+
 
 

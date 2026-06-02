@@ -4,11 +4,29 @@ import { verifyToken } from '@/lib/auth';
 import { logoutAction } from './auth-actions';
 import Link from 'next/link';
 import { HeartHandshake, User, LayoutDashboard, Search, LogOut, Key } from 'lucide-react';
+import ThemeToggle from '@/components/theme-toggle';
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "California Special Needs Navigator",
+  title: {
+    default: "California Special Needs Navigator",
+    template: "%s | California Special Needs Navigator"
+  },
   description: "Find the exact state benefits, waivers, and scholarships your child qualifies for without reading government documents.",
+  metadataBase: new URL("https://special-needs-ca.vercel.app"),
+  openGraph: {
+    title: "California Special Needs Navigator",
+    description: "Find the exact state benefits, waivers, and scholarships your child qualifies for without reading government documents.",
+    url: "https://special-needs-ca.vercel.app",
+    siteName: "California Special Needs Navigator",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "California Special Needs Navigator",
+    description: "Find the exact state benefits, waivers, and scholarships your child qualifies for without reading government documents.",
+  }
 };
 
 export default async function RootLayout({
@@ -33,6 +51,8 @@ export default async function RootLayout({
             </Link>
 
             <div className="nav-links">
+              <ThemeToggle />
+
               <Link href="/" className="nav-link">
                 <Search size={16} />
                 <span>Eligibility Wizard</span>

@@ -227,11 +227,83 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
       
       <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
         <HeartHandshake size={48} color="var(--primary-color)" style={{ margin: '0 auto 1rem' }} />
-        <h1>California Special Needs Screener</h1>
+        <h1>California Special Needs Navigator</h1>
         <p style={{ fontSize: '1.1rem', maxWidth: '600px', margin: '0 auto', color: 'var(--text-light)' }}>
           Input details to screen for specialized wagers and programs. Allow the wizard to compile matches based on CA state rules.
         </p>
       </div>
+
+      {/* Visual Assessment Step Stepper */}
+      {step < 5 && (
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', maxWidth: '520px', margin: '0 auto 3rem', position: 'relative', padding: '0 1rem' }}>
+          {/* Stepper background line */}
+          <div style={{ position: 'absolute', top: '16px', left: '2.5rem', right: '2.5rem', height: '2px', backgroundColor: 'rgba(0,0,0,0.06)', zIndex: 0 }} />
+          
+          {/* Active progress line */}
+          <div 
+            style={{ 
+              position: 'absolute', 
+              top: '16px', 
+              left: '2.5rem', 
+              width: `calc(${((step - 1) / 3) * 100}% - ${((step - 1) / 3) * 5}rem)`, 
+              height: '2px', 
+              backgroundColor: 'var(--primary-color)', 
+              zIndex: 0, 
+              transition: 'width 0.4s cubic-bezier(0.4, 0, 0.2, 1)' 
+            }} 
+          />
+          
+          {[1, 2, 3, 4].map((num) => {
+            const isCompleted = step > num;
+            const isActive = step === num;
+            
+            return (
+              <div 
+                key={num} 
+                style={{ 
+                  zIndex: 1, 
+                  display: 'flex', 
+                  flexDirection: 'column', 
+                  alignItems: 'center', 
+                  gap: '0.5rem',
+                  width: '80px'
+                }}
+              >
+                <div 
+                  style={{ 
+                    width: '32px', 
+                    height: '32px', 
+                    borderRadius: '50%', 
+                    backgroundColor: isCompleted ? 'var(--primary-color)' : isActive ? 'var(--glass-bg)' : 'rgba(0,0,0,0.02)',
+                    border: isCompleted ? 'none' : isActive ? '2px solid var(--primary-color)' : '1px solid rgba(0,0,0,0.08)',
+                    display: 'flex', 
+                    alignItems: 'center', 
+                    justifyContent: 'center', 
+                    fontSize: '0.85rem', 
+                    fontWeight: 700, 
+                    color: isCompleted ? 'white' : isActive ? 'var(--primary-color)' : 'var(--text-light)',
+                    transition: 'all 0.3s ease',
+                    boxShadow: isActive ? '0 0 12px rgba(99, 102, 241, 0.2)' : 'none'
+                  }}
+                >
+                  {isCompleted ? '✓' : num}
+                </div>
+                <span 
+                  style={{ 
+                    fontSize: '0.75rem', 
+                    fontWeight: isActive ? 700 : 500, 
+                    color: isActive ? 'var(--primary-color)' : 'var(--text-light)',
+                    transition: 'color 0.3s ease',
+                    whiteSpace: 'nowrap'
+                  }}
+                >
+                  {num === 1 ? 'Location' : num === 2 ? 'Diagnosis' : num === 3 ? 'Needs' : 'Refinement'}
+                </span>
+              </div>
+            );
+          })}
+        </div>
+      )}
 
       {/* STEP 1: AGE & LOCATION */}
       {step === 1 && (
