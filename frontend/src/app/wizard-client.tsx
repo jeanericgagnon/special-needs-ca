@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { analyzeOnboarding, AnalysisResult } from './actions';
-import type { County } from '@/lib/db';
+import type { County, ProgramWaitlist } from '@/lib/db';
 import { 
   Loader2, CheckCircle2, HeartHandshake, MapPin, Sparkles, 
   LayoutDashboard, Globe, AlertCircle, ArrowRight, ArrowLeft, 
@@ -10,15 +10,19 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import DiagnosisAutocomplete from './components/diagnosis-autocomplete';
+import WaitlistVisualizer from './components/waitlist-visualizer';
+import WaiverComparison from './components/waiver-comparison';
+import RespiteExplainer from './components/respite-explainer';
 
 interface WizardClientProps {
   counties: County[];
   diagnosesList: string[];
+  waitlists: ProgramWaitlist[];
 }
 
 type WizardStep = 1 | 2 | 3 | 4 | 5;
 
-export default function WizardClient({ counties, diagnosesList }: WizardClientProps) {
+export default function WizardClient({ counties, diagnosesList, waitlists }: WizardClientProps) {
   const [step, setStep] = useState<WizardStep>(1);
   const [age, setAge] = useState<string>('');
   const [countyId, setCountyId] = useState<string>('');
@@ -804,6 +808,11 @@ export default function WizardClient({ counties, diagnosesList }: WizardClientPr
                 </p>
               </div>
 
+              {/* Interactive Waiver Comparison */}
+              <div style={{ marginBottom: '2.5rem' }}>
+                <WaiverComparison />
+              </div>
+
               {/* CORE PROGRAMS MATCHED (Detailed checks based on rules) */}
               <h3 style={{ fontSize: '1.2rem', fontWeight: 600, marginBottom: '1rem' }}>Matched Core State Programs</h3>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', marginBottom: '3rem' }}>
@@ -821,10 +830,42 @@ export default function WizardClient({ counties, diagnosesList }: WizardClientPr
                           <div style={{ background: 'rgba(99,102,241,0.06)', border: '1px dashed rgba(99,102,241,0.2)', padding: '0.75rem', borderRadius: '10px', fontSize: '0.82rem', marginBottom: '1rem', color: 'var(--text-main)', lineHeight: '1.4' }}>
                             <strong>Smart Matching Triggers:</strong> {program.trigger_reason}
                           </div>
-                          <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', fontSize: '0.75rem', color: 'var(--text-light)' }}>
+                          <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', fontSize: '0.75rem', color: 'var(--text-light)', marginBottom: '1rem' }}>
                             <span style={{ background: 'rgba(0,0,0,0.04)', padding: '0.2rem 0.5rem', borderRadius: '4px' }}>Category: {program.category.toUpperCase()}</span>
                             <span style={{ background: 'rgba(0,0,0,0.04)', padding: '0.2rem 0.5rem', borderRadius: '4px' }}>Verified: {program.last_verified_date}</span>
                           </div>
+
+                          {/* Program Specific visual aids */}
+                          {program.id === 'ihss-for-children' && (
+                            <div style={{ marginTop: '1.25rem', borderTop: '1px solid rgba(0,0,0,0.05)', paddingTop: '1.25rem' }}>
+                              <h5 style={{ fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.75rem' }}>⏳ IHSS Wait & Assessment Times</h5>
+                              <WaitlistVisualizer activeProgramId="ihss" waitlists={waitlists} />
+                            </div>
+                          )}
+                          
+                          {program.id === 'regional-centers' && (
+                            <div style={{ marginTop: '1.25rem', borderTop: '1px solid rgba(0,0,0,0.05)', paddingTop: '1.25rem', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+                              <div>
+                                <h5 style={{ fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.75rem' }}>⏳ Regional Center Intake Timeline</h5>
+                                <WaitlistVisualizer activeProgramId="regional-centers" waitlists={waitlists} />
+                              </div>
+                              <RespiteExplainer />
+                            </div>
+                          )}
+
+                          {program.id === 'california-childrens-services' && (
+                            <div style={{ marginTop: '1.25rem', borderTop: '1px solid rgba(0,0,0,0.05)', paddingTop: '1.25rem' }}>
+                              <h5 style={{ fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.75rem' }}>⏳ CCS Assessment Timeline</h5>
+                              <WaitlistVisualizer activeProgramId="ccs" waitlists={waitlists} />
+                            </div>
+                          )}
+
+                          {program.id === 'ssi-for-children' && (
+                            <div style={{ marginTop: '1.25rem', borderTop: '1px solid rgba(0,0,0,0.05)', paddingTop: '1.25rem' }}>
+                              <h5 style={{ fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.75rem' }}>⏳ SSI Determination Timeline</h5>
+                              <WaitlistVisualizer activeProgramId="ssi" waitlists={waitlists} />
+                            </div>
+                          )}
                         </div>
 
                         <a 

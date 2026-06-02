@@ -1,4 +1,4 @@
-import { getCounties } from '@/lib/db';
+import { getCounties, getProgramWaitlists } from '@/lib/db';
 import WizardClient from './wizard-client';
 import { cookies } from 'next/headers';
 import { verifyToken } from '@/lib/auth';
@@ -10,6 +10,9 @@ import { DIAGNOSES } from '@/lib/diagnoses';
 export default async function Home() {
   // 1. Fetch counties dynamically from database
   const counties = getCounties();
+
+  // 1.5. Fetch waitlists dynamically from database
+  const waitlists = getProgramWaitlists();
 
   // 2. Read active session for quick dashboard link helper
   const cookieStore = await cookies();
@@ -26,7 +29,7 @@ export default async function Home() {
           </Link>
         </div>
       )}
-      <WizardClient counties={counties} diagnosesList={DIAGNOSES} />
+      <WizardClient counties={counties} diagnosesList={DIAGNOSES} waitlists={waitlists} />
     </>
   );
 }

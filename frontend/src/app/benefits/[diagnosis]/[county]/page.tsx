@@ -1,6 +1,6 @@
-import { getProgramsForDiagnosis, getCountyDetails } from '@/lib/db';
+import { getProgramsForDiagnosis, getCountyDetails, getIepAdvocates } from '@/lib/db';
 import { Metadata } from 'next';
-import { CheckCircle2, MapPin, Activity, Phone, Globe, Landmark, ShieldCheck, FileCheck } from 'lucide-react';
+import { CheckCircle2, MapPin, Activity, Phone, Globe, Landmark, ShieldCheck, FileCheck, Mail, Award } from 'lucide-react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
@@ -42,6 +42,9 @@ export default async function SEOLandingPage({ params }: Props) {
   if (!countyData) {
     notFound();
   }
+
+  // 1.5. Fetch local IEP advocates serving this county
+  const localAdvocates = getIepAdvocates(p.county);
 
   // 2. Fetch matched programs from crawler database
   const programs = getProgramsForDiagnosis(diagnosisFormatted);
@@ -134,13 +137,53 @@ export default async function SEOLandingPage({ params }: Props) {
 
             {/* School District IEPs */}
             {countyData.schoolDistricts && countyData.schoolDistricts.length > 0 && (
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', fontSize: '0.9rem' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', fontSize: '0.9rem' }}>
                 <strong style={{ fontSize: '1rem', display: 'flex', alignItems: 'center', gap: '0.4rem', color: 'var(--primary-color)' }}>
-                  <ShieldCheck size={16} /> Special Education Contacts
+                  <ShieldCheck size={16} /> Special Ed & Inclusion Stats
                 </strong>
-                <strong>{countyData.schoolDistricts[0].name}</strong>
-                <span style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}><Phone size={14} /> SpecEd Helpline: {countyData.schoolDistricts[0].spec_ed_contact_phone}</span>
-                {countyData.schoolDistricts[0].spec_ed_contact_email && <span><strong>Email:</strong> {countyData.schoolDistricts[0].spec_ed_contact_email}</span>}
+                {countyData.schoolDistricts.map((district: any) => (
+                  <div key={district.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', borderBottom: '1px solid rgba(0,0,0,0.05)', paddingBottom: '1rem' }}>
+                    <strong style={{ fontSize: '0.95rem' }}>{district.name}</strong>
+                    
+                    {district.total_enrollment && (
+                      <span style={{ fontSize: '0.78rem', color: 'var(--text-light)', display: 'block' }}>
+                        Enrollment: ~{district.total_enrollment.toLocaleString()} students ({district.special_ed_pct}% SpEd)
+                      </span>
+                    )}
+
+                    {district.inclusion_rate_pct && (
+                      <div style={{ marginTop: '0.25rem' }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', marginBottom: '0.15rem' }}>
+                          <span>Inclusion Rate (Gen-Ed &gt;80%)</span>
+                          <strong style={{ color: '#10b981' }}>{district.inclusion_rate_pct}%</strong>
+                        </div>
+                        <div style={{ height: '6px', width: '100%', backgroundColor: 'rgba(0,0,0,0.04)', borderRadius: '3px', overflow: 'hidden' }}>
+                          <div style={{ height: '100%', width: `${district.inclusion_rate_pct}%`, backgroundColor: '#10b981', borderRadius: '3px' }} />
+                        </div>
+                      </div>
+                    )}
+
+                    {district.self_contained_rate_pct && (
+                      <div>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', marginBottom: '0.15rem' }}>
+                          <span>Self-Contained SDC Classroom</span>
+                          <strong style={{ color: '#8b5cf6' }}>{district.self_contained_rate_pct}%</strong>
+                        </div>
+                        <div style={{ height: '6px', width: '100%', backgroundColor: 'rgba(0,0,0,0.04)', borderRadius: '3px', overflow: 'hidden' }}>
+                          <div style={{ height: '100%', width: `${district.self_contained_rate_pct}%`, backgroundColor: '#8b5cf6', borderRadius: '3px' }} />
+                        </div>
+                      </div>
+                    )}
+
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem', marginTop: '0.4rem', fontSize: '0.82rem' }}>
+                      <span style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}><Phone size={12} /> Helpline: {district.spec_ed_contact_phone}</span>
+                      {district.spec_ed_contact_email && <span style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}><Mail size={12} /> {district.spec_ed_contact_email}</span>}
+                      <a href={district.website} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.2rem', textDecoration: 'none', color: 'var(--primary-color)', fontWeight: 600, marginTop: '0.2rem' }}>
+                        <Globe size={11} /> SpEd Department Website
+                      </a>
+                    </div>
+                  </div>
+                ))}
               </div>
             )}
 
@@ -172,6 +215,73 @@ export default async function SEOLandingPage({ params }: Props) {
         </div>
 
       </div>
+
+      {/* Local IEP Advocates Section */}
+      {localAdvocates && localAdvocates.length > 0 && (
+        <div className="glass-panel" style={{ background: 'rgba(99, 102, 241, 0.02)', marginBottom: '4rem' }}>
+          <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', marginBottom: '1.25rem' }}>
+            <Award color="var(--primary-color)" size={24} />
+            <h2 style={{ fontSize: '1.4rem', margin: 0 }}>Vetted IEP Advocates serving {countyFormatted} County</h2>
+          </div>
+          <p style={{ fontSize: '0.92rem', color: 'var(--text-light)', marginBottom: '1.5rem' }}>
+            Special education advisors and legal advocates serving families in {countyFormatted} County. Advocates help caregivers request assessments, attend IEP meetings, and review placements.
+          </p>
+          
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+            {localAdvocates.map((adv: any) => (
+              <div 
+                key={adv.id} 
+                style={{ 
+                  background: 'white', 
+                  padding: '1.25rem', 
+                  borderRadius: '16px', 
+                  border: '1px solid rgba(0,0,0,0.04)',
+                  boxShadow: '0 2px 12px rgba(0,0,0,0.01)',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'space-between'
+                }}
+              >
+                <div>
+                  <strong style={{ display: 'block', fontSize: '1.05rem', color: 'var(--text-main)', marginBottom: '0.2rem' }}>
+                    {adv.name}
+                  </strong>
+                  <span style={{ fontSize: '0.8rem', color: 'var(--primary-color)', fontWeight: 600, display: 'block', marginBottom: '0.5rem' }}>
+                    {adv.credentials}
+                  </span>
+                  <div style={{ fontSize: '0.82rem', color: 'var(--text-light)', display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
+                    <span><strong>Experience:</strong> {adv.experience_years} years</span>
+                    <span><strong>Rate:</strong> {adv.price_rate}</span>
+                    <span><strong>Languages:</strong> {adv.languages_spoken}</span>
+                  </div>
+                </div>
+                
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem', fontSize: '0.8rem', borderTop: '1px solid rgba(0,0,0,0.04)', paddingTop: '0.75rem', marginTop: '0.75rem' }}>
+                  <span style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}><Phone size={12} /> {adv.phone}</span>
+                  <span style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}><Mail size={12} /> {adv.email}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          <div style={{ marginTop: '1.5rem', textAlign: 'right' }}>
+            <Link 
+              href={`/advocates?county=${p.county}`} 
+              style={{ 
+                fontSize: '0.9rem', 
+                color: 'var(--primary-color)', 
+                textDecoration: 'none', 
+                fontWeight: 600,
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.2rem'
+              }}
+            >
+              View Full Advocates Directory for {countyFormatted} County →
+            </Link>
+          </div>
+        </div>
+      )}
 
       {/* Matched Programs Grid */}
       <h2 style={{ textAlign: 'center', marginBottom: '2.5rem' }}>

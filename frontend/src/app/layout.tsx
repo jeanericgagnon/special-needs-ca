@@ -38,6 +38,11 @@ export default async function RootLayout({
                 <span>Eligibility Wizard</span>
               </Link>
               
+              <Link href="/advocates" className="nav-link">
+                <User size={16} />
+                <span>IEP Advocates</span>
+              </Link>
+              
               {session ? (
                 <>
                   <Link href="/dashboard" className="nav-link">

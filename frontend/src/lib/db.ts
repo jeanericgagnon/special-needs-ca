@@ -32,12 +32,221 @@ function runMigrations() {
       ('rule-haccp-1', 'hearing-aid-coverage', 0, 21, 'hearing-loss', 'hearing-aids', 'any', 'any', 'Hearing loss and private insurance device exclusions trigger the California HACCP waiver program to fund fitting and audiology device costs.'),
       ('rule-haccp-2', 'hearing-aid-coverage', 0, 21, 'hearing-loss', null, 'any', 'any', 'Documented hearing loss triggers potential coverage under the California HACCP waiver for pediatric hearing services.');
   `);
+
+  // Create iep_advocates table
+  navigatorDb.exec(`
+    CREATE TABLE IF NOT EXISTS iep_advocates (
+      id TEXT PRIMARY KEY,
+      name TEXT NOT NULL,
+      credentials TEXT NOT NULL,
+      experience_years INTEGER NOT NULL,
+      price_rate TEXT NOT NULL,
+      counties_served TEXT NOT NULL,
+      languages_spoken TEXT NOT NULL,
+      phone TEXT NOT NULL,
+      email TEXT NOT NULL,
+      website TEXT NOT NULL
+    );
+  `);
+
+  // Add school_districts columns if they do not exist
+  const tableInfo = navigatorDb.prepare("PRAGMA table_info(school_districts)").all() as { name: string }[];
+  const columnNames = tableInfo.map(col => col.name);
+  if (!columnNames.includes('total_enrollment')) {
+    navigatorDb.exec("ALTER TABLE school_districts ADD COLUMN total_enrollment INTEGER;");
+  }
+  if (!columnNames.includes('special_ed_pct')) {
+    navigatorDb.exec("ALTER TABLE school_districts ADD COLUMN special_ed_pct REAL;");
+  }
+  if (!columnNames.includes('inclusion_rate_pct')) {
+    navigatorDb.exec("ALTER TABLE school_districts ADD COLUMN inclusion_rate_pct REAL;");
+  }
+  if (!columnNames.includes('self_contained_rate_pct')) {
+    navigatorDb.exec("ALTER TABLE school_districts ADD COLUMN self_contained_rate_pct REAL;");
+  }
+
+  // Seed school_districts if empty
+  const countDistricts = navigatorDb.prepare("SELECT COUNT(*) as count FROM school_districts").get() as { count: number };
+  if (countDistricts.count === 0) {
+    const insertDistrict = navigatorDb.prepare(`
+      INSERT INTO school_districts (id, county_id, name, spec_ed_contact_phone, spec_ed_contact_email, website, total_enrollment, special_ed_pct, inclusion_rate_pct, self_contained_rate_pct)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    `);
+    
+    const seedDistricts = [
+      ['sd-la-usd', 'los-angeles', 'Los Angeles Unified School District (LAUSD)', '(213) 241-6701', 'sp-ed-parent@lausd.net', 'https://achieve.lausd.net/sped', 540000, 14.5, 58.2, 28.5],
+      ['sd-lb-usd', 'los-angeles', 'Long Beach Unified School District', '(562) 997-8000', 'sped-info@lbschools.net', 'https://www.lbschools.net', 68000, 12.8, 61.5, 22.0],
+      ['sd-irvine-usd', 'orange', 'Irvine Unified School District (IUSD)', '(949) 936-5000', 'specialed@iusd.org', 'https://iusd.org', 36000, 9.8, 74.5, 15.2],
+      ['sd-santa-ana-usd', 'orange', 'Santa Ana Unified School District (SAUSD)', '(714) 558-5832', 'specialed@sausd.us', 'https://sausd.us', 43000, 13.2, 52.1, 31.8],
+      ['sd-sf-usd', 'san-francisco', 'San Francisco Unified School District (SFUSD)', '(415) 241-6000', 'sped@sfusd.edu', 'https://sfusd.edu', 49000, 12.5, 60.8, 24.5],
+      ['sd-oakland-usd', 'alameda', 'Oakland Unified School District (OUSD)', '(510) 879-8000', 'spedinfo@ousd.org', 'https://ousd.org', 34000, 15.1, 54.3, 29.8],
+      ['sd-sd-usd', 'san-diego', 'San Diego Unified School District', '(619) 725-8000', 'speced@sandi.net', 'https://sandiegounified.org', 95000, 13.0, 63.4, 20.6],
+      ['sd-sj-usd', 'santa-clara', 'San Jose Unified School District', '(408) 535-6000', 'specialed@sjusd.org', 'https://sjusd.org', 28000, 11.5, 65.0, 19.5],
+      ['sd-sac-usd', 'sacramento', 'Sacramento City Unified School District', '(916) 643-9000', 'sped@scusd.edu', 'https://scusd.edu', 38000, 15.4, 51.2, 32.4]
+    ];
+
+    const seedTx = navigatorDb.transaction(() => {
+      for (const row of seedDistricts) {
+        insertDistrict.run(...row);
+      }
+    });
+    seedTx();
+    console.log('⚡ Seeded California School Districts LRE Inclusion statistics.');
+  }
+
+  // Seed iep_advocates if empty
+  const countAdvocates = navigatorDb.prepare("SELECT COUNT(*) as count FROM iep_advocates").get() as { count: number };
+  if (countAdvocates.count === 0) {
+    const insertAdvocate = navigatorDb.prepare(`
+      INSERT INTO iep_advocates (id, name, credentials, experience_years, price_rate, counties_served, languages_spoken, phone, email, website)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    `);
+
+    const seedAdvocates = [
+      ['adv-sarah', 'Sarah Jenkins, M.S.Ed.', 'Board Certified Advocate (COPAA), Former Special Ed Teacher', 15, '$150 / hour', 'los-angeles,orange', 'English', '(310) 555-0142', 'sarah@calspedadvocacy.com', 'https://calspedadvocacy.com'],
+      ['adv-marisol', 'Marisol Torres', 'Bilingual IEP Consultant, Parent Advocate Coach', 10, '$120 / hour', 'los-angeles,orange,san-diego', 'English, Spanish', '(714) 555-0189', 'marisol@iep-ayuda.org', 'https://iep-ayuda.org'],
+      ['adv-david', 'David Chen', 'Special Ed Law Advocate, JD (Non-practicing)', 12, '$195 / hour', 'san-francisco,alameda,santa-clara', 'English, Cantonese', '(415) 555-0211', 'dchen@bayareaiep.com', 'https://bayareaiep.com'],
+      ['adv-elena', 'Elena Rostova', 'DDS/Regional Center & IEP Specialist', 8, '$110 / hour', 'sacramento,placer', 'English, Russian', '(916) 555-0273', 'elena@sacramentopedadvocate.com', 'https://sacramentopedadvocate.com'],
+      ['adv-katelyn', 'Katelyn Vance, BCBA', 'Behavior Specialist, Educational Advocate', 9, '$140 / hour', 'san-diego,riverside', 'English', '(619) 555-0304', 'kvance@sandiegoiep.com', 'https://sandiegoiep.com']
+    ];
+
+    const seedTx = navigatorDb.transaction(() => {
+      for (const row of seedAdvocates) {
+        insertAdvocate.run(...row);
+      }
+    });
+    seedTx();
+    console.log('⚡ Seeded California IEP Special Education Advocates.');
+  }
+
+  // Create program_waitlists table
+  navigatorDb.exec(`
+    CREATE TABLE IF NOT EXISTS program_waitlists (
+      id TEXT PRIMARY KEY,
+      program_id TEXT NOT NULL,
+      name TEXT NOT NULL,
+      duration_label TEXT NOT NULL,
+      duration_months REAL NOT NULL,
+      status TEXT NOT NULL,
+      description TEXT NOT NULL,
+      reserve_capacity_notice TEXT,
+      legal_deadline TEXT,
+      last_scraped_at TEXT NOT NULL
+    );
+  `);
+
+  // Seed program_waitlists if empty
+  const countWaitlists = navigatorDb.prepare("SELECT COUNT(*) as count FROM program_waitlists").get() as { count: number };
+  if (countWaitlists.count === 0) {
+    const insertWaitlist = navigatorDb.prepare(`
+      INSERT INTO program_waitlists (id, program_id, name, duration_label, duration_months, status, description, reserve_capacity_notice, legal_deadline, last_scraped_at)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    `);
+
+    const seedWaitlists = [
+      [
+        'wl-hcba',
+        'hcba',
+        'Home and Community-Based Alternatives (HCBA) Waiver',
+        '1.5 to 2+ Years Wait',
+        24,
+        'critical',
+        'California capped enrollment for the HCBA Waiver in July 2023. Newly submitted applications face significant wait times unless reserve capacity criteria apply.',
+        'Priority intake applies to applicants under age 21 (under EPSDT rules), those transitioning from similar waivers, or those residing in health facilities for 60+ days.',
+        'None (Capped waiver slots)',
+        new Date().toISOString()
+      ],
+      [
+        'wl-rc',
+        'regional-centers',
+        'Regional Center Lanterman Act Intake',
+        '45 Days Max',
+        1.5,
+        'standard',
+        'Initial intake and assessment to determine eligibility under the Lanterman Act (Autism, Cerebral Palsy, Intellectual Disability, Epilepsy, Fifth Category).',
+        null,
+        'Statutory 45-day assessment limit (Welfare & Institutions Code § 4646)',
+        new Date().toISOString()
+      ],
+      [
+        'wl-ihss',
+        'ihss',
+        'In-Home Supportive Services (IHSS) Processing',
+        '30 Days from Medical Form',
+        1,
+        'standard',
+        'County social workers conduct an in-home assessment of personal care and protective safety supervision needs once the SOC 873 medical form is submitted.',
+        null,
+        '30-day regulatory processing limit after receiving completed medical certification',
+        new Date().toISOString()
+      ],
+      [
+        'wl-ssi',
+        'ssi',
+        'SSI Childhood Disability Determination',
+        '3 to 5 Months',
+        5,
+        'moderate',
+        'Social Security Administration reviews household financial records and coordinates with State Disability Determination Services (DDS) to evaluate clinical eligibility.',
+        null,
+        'No strict statutory limit, but standard initial reviews average 120 days',
+        new Date().toISOString()
+      ],
+      [
+        'wl-ccs',
+        'ccs',
+        'California Children\'s Services (CCS) Medical Therapy Program',
+        '30 to 45 Days',
+        1.5,
+        'standard',
+        'CCS review of complex physical disabilities (Cerebral Palsy, Spina Bifida) for school-based physical/occupational therapies inside Medical Therapy Units.',
+        null,
+        '30 days for medical eligibility determination from completed application',
+        new Date().toISOString()
+      ]
+    ];
+
+    const seedTx = navigatorDb.transaction(() => {
+      for (const row of seedWaitlists) {
+        insertWaitlist.run(...row);
+      }
+    });
+    seedTx();
+    console.log('⚡ Seeded Dynamic California Program Waitlists metadata.');
+  }
+
   console.log('⚡ SQLite Database migrations completed successfully!');
 }
 
 runMigrations();
 
 // Database interfaces
+export interface ProgramWaitlist {
+  id: string;
+  program_id: string;
+  name: string;
+  duration_label: string;
+  duration_months: number;
+  status: 'critical' | 'moderate' | 'standard' | 'priority';
+  description: string;
+  reserve_capacity_notice: string | null;
+  legal_deadline: string | null;
+  last_scraped_at: string;
+}
+
+export interface IepAdvocate {
+  id: string;
+  name: string;
+  credentials: string;
+  experience_years: number;
+  price_rate: string;
+  counties_served: string;
+  languages_spoken: string;
+  phone: string;
+  email: string;
+  website: string;
+}
+
 export interface Program {
   id: number | string;
   source_url: string;
@@ -504,6 +713,52 @@ export function getProgramsByKeywords(age: number, diagnosis: string, keywords: 
   } catch (err) {
     console.error('Failed to search crawler programs by keywords:', err);
     return [];
+  }
+}
+
+export function getIepAdvocates(countyId?: string): IepAdvocate[] {
+  try {
+    if (countyId) {
+      return navigatorDb.prepare('SELECT * FROM iep_advocates WHERE counties_served LIKE ?').all(`%${countyId}%`) as IepAdvocate[];
+    }
+    return navigatorDb.prepare('SELECT * FROM iep_advocates').all() as IepAdvocate[];
+  } catch (err) {
+    console.error('Failed to query IEP advocates:', err);
+    return [];
+  }
+}
+
+export function getProgramWaitlists(): ProgramWaitlist[] {
+  try {
+    return navigatorDb.prepare('SELECT * FROM program_waitlists').all() as ProgramWaitlist[];
+  } catch (err) {
+    console.error('Failed to query program waitlists:', err);
+    return [];
+  }
+}
+
+export function updateWaitlistStatus(
+  programId: string,
+  durationLabel: string,
+  durationMonths: number,
+  status: 'critical' | 'moderate' | 'standard' | 'priority',
+  description: string
+): boolean {
+  if (process.env.VERCEL === '1') {
+    console.log(`⚠️ Database is read-only on Vercel. Skipping waitlist update on disk for ${programId}.`);
+    return false;
+  }
+  try {
+    const stmt = navigatorDb.prepare(`
+      UPDATE program_waitlists 
+      SET duration_label = ?, duration_months = ?, status = ?, description = ?, last_scraped_at = ?
+      WHERE program_id = ?
+    `);
+    const info = stmt.run(durationLabel, durationMonths, status, description, new Date().toISOString(), programId);
+    return info.changes > 0;
+  } catch (err) {
+    console.error(`Failed to update waitlist for ${programId}:`, err);
+    return false;
   }
 }
 
