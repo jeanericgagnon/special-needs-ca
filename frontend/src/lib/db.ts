@@ -6,14 +6,18 @@ const crawlerDbPath = path.resolve(process.cwd(), 'ca_disability_crawler.db');
 const navigatorDbPath = path.resolve(process.cwd(), 'ca_disability_navigator.db');
 
 // Instantiate DB handles
+const isVercel = process.env.VERCEL === '1';
 const crawlerDb = new Database(crawlerDbPath, { readonly: true });
-const navigatorDb = new Database(navigatorDbPath);
+const navigatorDb = new Database(navigatorDbPath, { readonly: isVercel });
 
-// Enable Foreign Key support in SQLite
-navigatorDb.pragma('foreign_keys = ON');
+// Enable Foreign Key support in SQLite if not read-only
+if (!isVercel) {
+  navigatorDb.pragma('foreign_keys = ON');
+}
 
 // Initialize database schema tables if they don't exist
 function runMigrations() {
+  if (isVercel) return;
   navigatorDb.exec(`
     CREATE TABLE IF NOT EXISTS users (
       id TEXT PRIMARY KEY,
