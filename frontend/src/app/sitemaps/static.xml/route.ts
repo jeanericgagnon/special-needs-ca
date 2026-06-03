@@ -11,7 +11,7 @@ export async function GET() {
     { loc: '/register', changefreq: 'yearly', priority: '0.5', lastmod: today }
   ];
 
-  let xmlUrls = staticUrls.map(url => `  <url>
+  const xmlUrls = staticUrls.map(url => `  <url>
     <loc>${baseUrl}${url.loc}</loc>
     <lastmod>${url.lastmod}</lastmod>
     <changefreq>${url.changefreq}</changefreq>

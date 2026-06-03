@@ -22,7 +22,7 @@ import type {
   Selpa
 } from '@/lib/db';
 
-export type TabType = 'benefits' | 'iep' | 'dds' | 'ihss' | 'appeals' | 'actions' | 'county' | 'waivers' | 'knowledge' | 'waitlists' | 'iepprep' | 'transition' | 'support';
+export type TabType = 'roadmap' | 'benefits' | 'iep' | 'dds' | 'ihss' | 'appeals' | 'actions' | 'county' | 'waivers' | 'knowledge' | 'waitlists' | 'iepprep' | 'transition' | 'support';
 export type LetterTemplateType = 'iep-request' | 'ihss-appeal' | 'rc-appeal' | 'ssi-reconsideration' | 'epsdt-therapy';
 
 interface ChildProfileContextProps {
@@ -100,9 +100,9 @@ export function ChildProfileProvider({
 }) {
   const [selectedChildId, setSelectedChildId] = useState<string | null>(props.selectedChildId);
   const [activeTab, setActiveTab] = useState<TabType>(
-    (initialTab && ['benefits', 'iep', 'dds', 'ihss', 'appeals', 'actions', 'county', 'waivers', 'knowledge', 'waitlists', 'iepprep', 'transition', 'support'].includes(initialTab))
+    (initialTab && ['roadmap', 'benefits', 'iep', 'dds', 'ihss', 'appeals', 'actions', 'county', 'waivers', 'knowledge', 'waitlists', 'iepprep', 'transition', 'support'].includes(initialTab))
       ? (initialTab as TabType)
-      : 'benefits'
+      : 'roadmap'
   );
   const [activeTemplate, setActiveTemplate] = useState<LetterTemplateType>('iep-request');
   const [parentName, setParentName] = useState('');
@@ -124,7 +124,7 @@ export function ChildProfileProvider({
 
   // Handle URL changes
   useEffect(() => {
-    if (initialTab && ['benefits', 'iep', 'dds', 'ihss', 'appeals', 'actions', 'county', 'waivers', 'knowledge', 'waitlists', 'iepprep', 'transition', 'support'].includes(initialTab)) {
+    if (initialTab && ['roadmap', 'benefits', 'iep', 'dds', 'ihss', 'appeals', 'actions', 'county', 'waivers', 'knowledge', 'waitlists', 'iepprep', 'transition', 'support'].includes(initialTab)) {
       Promise.resolve().then(() => {
         setActiveTab(initialTab as TabType);
       });

@@ -37,7 +37,7 @@ import {
   MapPin, ChevronDown, ChevronUp, AlertCircle, Phone, 
   Globe, Info, FileCheck, Landmark, Trash,
   Check, Mail, Sparkles, BookOpen, Layers,
-  ShieldAlert, Scale, Clock, Heart
+  ShieldAlert, Scale, Clock, Heart, LayoutDashboard
 } from 'lucide-react';
 import PrintButton from '@/components/print-button';
 import ShareButton from '@/components/share-button';
@@ -48,6 +48,7 @@ import IEPGoalsPanel from './components/IEPGoalsPanel';
 import RespiteCalculator from './components/RespiteCalculator';
 import IHSSOvertimePanel from './components/IHSSOvertimePanel';
 import WaiverVaultPanel from './components/WaiverVaultPanel';
+import CareRoadmapPanel from './components/CareRoadmapPanel';
 import AppealsCenterPanel from './components/AppealsCenterPanel';
 import KnowledgeBasePanel from './components/KnowledgeBasePanel';
 import DirectoryReviews from './components/DirectoryReviews';
@@ -602,6 +603,12 @@ Sincerely,
           {/* 3. Global Dashboard Tab Navigation Menu */}
           <div style={{ borderBottom: '1px solid var(--glass-border)', marginBottom: '2rem', display: 'flex', gap: '1.5rem', overflowX: 'auto' }} className="no-print">
             <button
+              onClick={() => setActiveTab('roadmap')}
+              style={{ background: 'none', border: 'none', borderBottom: activeTab === 'roadmap' ? '3px solid var(--primary-color)' : '3px solid transparent', padding: '1rem 0.5rem', fontSize: '1rem', fontWeight: 600, cursor: 'pointer', color: activeTab === 'roadmap' ? 'var(--primary-color)' : 'var(--text-light)', display: 'flex', alignItems: 'center', gap: '0.5rem', whiteSpace: 'nowrap' }}
+            >
+              <LayoutDashboard size={18} /> {isSpanish ? 'Mapa de Ruta' : 'Care Roadmap'}
+            </button>
+            <button
               onClick={() => setActiveTab('benefits')}
               style={{ background: 'none', border: 'none', borderBottom: activeTab === 'benefits' ? '3px solid var(--primary-color)' : '3px solid transparent', padding: '1rem 0.5rem', fontSize: '1rem', fontWeight: 600, cursor: 'pointer', color: activeTab === 'benefits' ? 'var(--primary-color)' : 'var(--text-light)', display: 'flex', alignItems: 'center', gap: '0.5rem', whiteSpace: 'nowrap' }}
             >
@@ -946,6 +953,9 @@ Sincerely,
                 </div>
               </div>
             )}
+
+            {/* TAB 0: CARE ROADMAP PANEL */}
+            {activeTab === 'roadmap' && <CareRoadmapPanel key={currentChild?.id || 'none'} isSpanish={isSpanish} />}
 
             {/* TAB 2: IEP PLANNER */}
             {activeTab === 'iep' && <IEPGoalsPanel key={currentChild?.id || 'none'} />}
