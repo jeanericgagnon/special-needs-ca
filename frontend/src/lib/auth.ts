@@ -67,7 +67,7 @@ export function verifyToken(token: string): UserSession | null {
     }
     
     return payload;
-  } catch (err) {
+  } catch {
     return null;
   }
 }

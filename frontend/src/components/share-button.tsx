@@ -28,7 +28,7 @@ export default function ShareButton({ title = 'CA Special Needs Resource Guide',
     }
   };
 
-  const shareText = `Check out this helpful California Special Needs Resource Guide: ${getShareUrl()}`;
+  const shareText = `Check out this helpful ${title}: ${getShareUrl()}`;
 
   return (
     <div style={{ position: 'relative', display: 'inline-block' }} className="no-print">

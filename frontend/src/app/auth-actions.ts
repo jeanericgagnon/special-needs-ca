@@ -5,7 +5,7 @@ import { redirect } from 'next/navigation';
 import { getUserByEmail, createUser, createChildProfile } from '@/lib/db';
 import { hashPassword, verifyPassword, signToken } from '@/lib/auth';
 
-export async function loginAction(prevState: any, formData: FormData) {
+export async function loginAction(prevState: unknown, formData: FormData) {
   const email = formData.get('email') as string;
   const password = formData.get('password') as string;
 
@@ -35,7 +35,7 @@ export async function loginAction(prevState: any, formData: FormData) {
       maxAge: 7 * 24 * 60 * 60, // 7 days
       path: '/'
     });
-  } catch (err: any) {
+  } catch (err) {
     console.error('Login action error:', err);
     return { error: 'An unexpected error occurred. Please try again.' };
   }
@@ -44,7 +44,7 @@ export async function loginAction(prevState: any, formData: FormData) {
   redirect('/dashboard');
 }
 
-export async function registerAction(prevState: any, formData: FormData) {
+export async function registerAction(prevState: unknown, formData: FormData) {
   const email = formData.get('email') as string;
   const password = formData.get('password') as string;
   const confirmPassword = formData.get('confirmPassword') as string;
@@ -107,7 +107,7 @@ export async function registerAction(prevState: any, formData: FormData) {
       maxAge: 7 * 24 * 60 * 60, // 7 days
       path: '/'
     });
-  } catch (err: any) {
+  } catch (err) {
     console.error('Registration action error:', err);
     return { error: 'Registration failed. Please try again.' };
   }

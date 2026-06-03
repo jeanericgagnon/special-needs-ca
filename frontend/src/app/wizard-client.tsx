@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { analyzeOnboarding, AnalysisResult } from './actions';
 import type { County, ProgramWaitlist } from '@/lib/db';
 import { 
-  Loader2, CheckCircle2, HeartHandshake, MapPin, Sparkles, 
+  Loader2, CheckCircle2, HeartHandshake, Sparkles, 
   LayoutDashboard, Globe, AlertCircle, ArrowRight, ArrowLeft, 
   Activity, Info, Sparkle, Milestone, HelpCircle, ShieldAlert,
   ChevronDown, ChevronUp, Clock, Coins, TrendingUp
@@ -16,6 +16,8 @@ import WaiverComparison from './components/waiver-comparison';
 import RespiteExplainer from './components/respite-explainer';
 import PrintButton from '@/components/print-button';
 import ShareButton from '@/components/share-button';
+import { slugifyDiagnosis } from '@/lib/diagnoses';
+import { hasNonNegatedKeyword } from '@/lib/negation';
 
 interface WizardClientProps {
   counties: County[];
@@ -50,15 +52,17 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
   useEffect(() => {
     if (analysis && age) {
       const ageNum = parseInt(age);
-      if (!isNaN(ageNum) && ageNum < 21) {
-        setBypassAgeUnder21(true);
-      } else {
-        setBypassAgeUnder21(false);
-      }
+      setTimeout(() => {
+        if (!isNaN(ageNum) && ageNum < 21) {
+          setBypassAgeUnder21(true);
+        } else {
+          setBypassAgeUnder21(false);
+        }
+      }, 0);
     }
   }, [analysis, age]);
 
-  const getEstimatedFinancialValues = (coreMatches: any[]) => {
+  const getEstimatedFinancialValues = (coreMatches: { id: string; name: string }[]) => {
     let total = 0;
     const items = coreMatches.map(program => {
       let value = 0;
@@ -67,7 +71,7 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
 
       switch (program.id) {
         case 'ihss-for-children':
-          if (severeSafetyRisks === true || additionalText.toLowerCase().match(/(safety|wander|elope|supervision|danger|behavior)/)) {
+          if (severeSafetyRisks === true || hasNonNegatedKeyword(additionalText, ['safety', 'wander', 'elope', 'supervision', 'danger', 'behavior'])) {
             value = 45360;
             label = 'IHSS Protective Supervision';
             calcDesc = 'Based on 210 hours/mo at CA average $18/hr for safety monitoring';
@@ -78,7 +82,7 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
           }
           break;
         case 'regional-centers':
-          if (severeSafetyRisks === true || additionalText.toLowerCase().match(/(safety|wander|elope|supervision|behavior|respite)/)) {
+          if (severeSafetyRisks === true || hasNonNegatedKeyword(additionalText, ['safety', 'wander', 'elope', 'supervision', 'behavior', 'respite'])) {
             value = 24000;
             label = 'Regional Center Respite & Behavior Services';
             calcDesc = 'Estimated high-needs funding for respite care and behavioral support';
@@ -381,7 +385,7 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
                     fontWeight: 700, 
                     color: isCompleted ? 'white' : isActive ? 'var(--primary-color)' : 'var(--text-light)',
                     transition: 'all 0.3s ease',
-                    boxShadow: isActive ? '0 0 12px rgba(99, 102, 241, 0.2)' : 'none'
+                    boxShadow: isActive ? '0 0 12px rgba(var(--primary-rgb), 0.2)' : 'none'
                   }}
                 >
                   {isCompleted ? '✓' : num}
@@ -415,7 +419,7 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
 
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem', marginBottom: '2rem' }}>
             <div className="input-group">
-              <label htmlFor="age">Child's Age (Years)</label>
+              <label htmlFor="age">Child&apos;s Age (Years)</label>
               <input 
                 type="number" 
                 id="age" 
@@ -527,7 +531,7 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
           </div>
 
           <p style={{ fontSize: '0.9rem', color: 'var(--text-light)', marginBottom: '1.5rem', lineHeight: '1.5' }}>
-            In your own words, describe other needs or impairments your child has. Mention keywords like <strong>"vision"</strong>, <strong>"hearing"</strong>, <strong>"speech delay"</strong>, <strong>"diapers"</strong>, or safety issues like <strong>"wandering"</strong> and <strong>"supervision"</strong>.
+            In your own words, describe other needs or impairments your child has. Mention keywords like <strong>&quot;vision&quot;</strong>, <strong>&quot;hearing&quot;</strong>, <strong>&quot;speech delay&quot;</strong>, <strong>&quot;diapers&quot;</strong>, or safety issues like <strong>&quot;wandering&quot;</strong> and <strong>&quot;supervision&quot;</strong>.
           </p>
 
           <div className="input-group" style={{ marginBottom: '1.5rem' }}>
@@ -552,7 +556,7 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
                   key={s.label}
                   type="button"
                   onClick={() => handleSuggestionClick(s.label, s.text)}
-                  style={{ background: 'rgba(99,102,241,0.06)', border: '1px solid rgba(99,102,241,0.1)', borderRadius: '8px', padding: '0.35rem 0.75rem', fontSize: '0.8rem', color: 'var(--primary-color)', cursor: 'pointer', transition: 'all 0.2s' }}
+                  style={{ background: 'rgba(var(--primary-rgb),0.06)', border: '1px solid rgba(var(--primary-rgb),0.1)', borderRadius: '8px', padding: '0.35rem 0.75rem', fontSize: '0.8rem', color: 'var(--primary-color)', cursor: 'pointer', transition: 'all 0.2s' }}
                 >
                   + {s.label}
                 </button>
@@ -701,7 +705,7 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
             {relevantQuestions.includes('physical') && (
               <div style={{ background: 'rgba(255,255,255,0.5)', padding: '1.25rem', borderRadius: '16px', border: '1px solid rgba(0,0,0,0.04)' }}>
                 <strong style={{ display: 'block', fontSize: '0.95rem', marginBottom: '0.75rem' }}>
-                  Therapy Environment: Is your child's physical/occupational therapy school-based (Medical Therapy Unit) or clinical?
+                  Therapy Environment: Is your child&apos;s physical/occupational therapy school-based (Medical Therapy Unit) or clinical?
                 </strong>
                 <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
                   <button 
@@ -781,7 +785,7 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
           {!loading && analysis && (
             <div>
               {/* Dynamic Matches Conversion Header */}
-              <div className="glass-panel" style={{ background: 'rgba(99, 102, 241, 0.04)', border: '2px solid rgba(99, 102, 241, 0.15)', padding: '2rem', marginBottom: '2.5rem', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: '1.5rem' }}>
+              <div className="glass-panel" style={{ background: 'rgba(var(--primary-rgb), 0.04)', border: '2px solid rgba(var(--primary-rgb), 0.15)', padding: '2rem', marginBottom: '2.5rem', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: '1.5rem' }}>
                 <div style={{ flex: 1, minWidth: '280px' }}>
                   <h3 style={{ fontSize: '1.3rem', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
                     <Sparkles color="var(--primary-color)" size={20} />
@@ -892,8 +896,8 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
                       fontSize: '0.78rem',
                       borderRadius: '20px',
                       cursor: 'pointer',
-                      border: '1px solid rgba(99, 102, 241, 0.2)',
-                      background: insuranceExcludesHearing === true ? 'rgba(99, 102, 241, 0.15)' : 'white',
+                      border: '1px solid rgba(var(--primary-rgb), 0.2)',
+                      background: insuranceExcludesHearing === true ? 'rgba(var(--primary-rgb), 0.15)' : 'white',
                       color: insuranceExcludesHearing === true ? 'var(--primary-color)' : 'var(--text-light)',
                       fontWeight: insuranceExcludesHearing === true ? '600' : 'normal',
                       transition: 'all 0.2s',
@@ -914,8 +918,8 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
                       fontSize: '0.78rem',
                       borderRadius: '20px',
                       cursor: 'pointer',
-                      border: '1px solid rgba(99, 102, 241, 0.2)',
-                      background: severeSafetyRisks === true ? 'rgba(99, 102, 241, 0.15)' : 'white',
+                      border: '1px solid rgba(var(--primary-rgb), 0.2)',
+                      background: severeSafetyRisks === true ? 'rgba(var(--primary-rgb), 0.15)' : 'white',
                       color: severeSafetyRisks === true ? 'var(--primary-color)' : 'var(--text-light)',
                       fontWeight: severeSafetyRisks === true ? '600' : 'normal',
                       transition: 'all 0.2s',
@@ -936,8 +940,8 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
                       fontSize: '0.78rem',
                       borderRadius: '20px',
                       cursor: 'pointer',
-                      border: '1px solid rgba(99, 102, 241, 0.2)',
-                      background: exceedsIncomeLimits === true ? 'rgba(99, 102, 241, 0.15)' : 'white',
+                      border: '1px solid rgba(var(--primary-rgb), 0.2)',
+                      background: exceedsIncomeLimits === true ? 'rgba(var(--primary-rgb), 0.15)' : 'white',
                       color: exceedsIncomeLimits === true ? 'var(--primary-color)' : 'var(--text-light)',
                       fontWeight: exceedsIncomeLimits === true ? '600' : 'normal',
                       transition: 'all 0.2s',
@@ -958,8 +962,8 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
                       fontSize: '0.78rem',
                       borderRadius: '20px',
                       cursor: 'pointer',
-                      border: '1px solid rgba(99, 102, 241, 0.2)',
-                      background: schoolBasedTherapy === true ? 'rgba(99, 102, 241, 0.15)' : 'white',
+                      border: '1px solid rgba(var(--primary-rgb), 0.2)',
+                      background: schoolBasedTherapy === true ? 'rgba(var(--primary-rgb), 0.15)' : 'white',
                       color: schoolBasedTherapy === true ? 'var(--primary-color)' : 'var(--text-light)',
                       fontWeight: schoolBasedTherapy === true ? '600' : 'normal',
                       transition: 'all 0.2s',
@@ -989,8 +993,8 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
                 const { items: financialItems, total: totalFinancialValue } = getEstimatedFinancialValues(analysis.coreMatches);
                 return (
                   <div className="glass-panel" style={{ 
-                    background: 'linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(167, 139, 250, 0.08) 100%)',
-                    border: '1px solid rgba(99, 102, 241, 0.2)',
+                    background: 'linear-gradient(135deg, rgba(var(--primary-rgb), 0.08) 0%, rgba(167, 139, 250, 0.08) 100%)',
+                    border: '1px solid rgba(var(--primary-rgb), 0.2)',
                     padding: '2rem',
                     borderRadius: '24px',
                     marginBottom: '2.5rem',
@@ -998,7 +1002,7 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
                     position: 'relative',
                     overflow: 'hidden'
                   }}>
-                    <div style={{ position: 'absolute', top: '-20px', right: '-20px', width: '120px', height: '120px', background: 'radial-gradient(circle, rgba(99,102,241,0.15) 0%, transparent 70%)', pointerEvents: 'none' }} />
+                    <div style={{ position: 'absolute', top: '-20px', right: '-20px', width: '120px', height: '120px', background: 'radial-gradient(circle, rgba(var(--primary-rgb),0.15) 0%, transparent 70%)', pointerEvents: 'none' }} />
                     
                     <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'flex-start', gap: '1.5rem' }}>
                       <div style={{ width: '100%' }}>
@@ -1012,7 +1016,7 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
                           textTransform: 'uppercase', 
                           letterSpacing: '0.05em', 
                           marginBottom: '0.5rem',
-                          background: 'rgba(99,102,241,0.1)',
+                          background: 'rgba(var(--primary-rgb),0.1)',
                           padding: '0.25rem 0.6rem',
                           borderRadius: '20px'
                         }}>
@@ -1261,12 +1265,16 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
                         <div style={{ flex: 1, minWidth: '250px' }}>
                           <h4 style={{ fontSize: '1.15rem', fontWeight: 700, marginBottom: '0.4rem', color: 'var(--text-main)' }}>{program.name}</h4>
                           <p style={{ fontSize: '0.88rem', color: 'var(--text-light)', lineHeight: '1.5', marginBottom: '0.75rem' }}>{program.description}</p>
-                          <div style={{ background: 'rgba(99,102,241,0.06)', border: '1px dashed rgba(99,102,241,0.2)', padding: '0.75rem', borderRadius: '10px', fontSize: '0.82rem', marginBottom: '1rem', color: 'var(--text-main)', lineHeight: '1.4' }}>
+                          <div style={{ background: 'rgba(var(--primary-rgb),0.06)', border: '1px dashed rgba(var(--primary-rgb),0.2)', padding: '0.75rem', borderRadius: '10px', fontSize: '0.82rem', marginBottom: '1rem', color: 'var(--text-main)', lineHeight: '1.4' }}>
                             <strong>Smart Matching Triggers:</strong> {program.trigger_reason}
                           </div>
                           <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', fontSize: '0.75rem', color: 'var(--text-light)', marginBottom: '1rem' }}>
-                            <span style={{ background: 'rgba(0,0,0,0.04)', padding: '0.2rem 0.5rem', borderRadius: '4px' }}>Category: {program.category.toUpperCase()}</span>
-                            <span style={{ background: 'rgba(0,0,0,0.04)', padding: '0.2rem 0.5rem', borderRadius: '4px' }}>Verified: {program.last_verified_date}</span>
+                            {program.category && (
+                              <span style={{ background: 'rgba(0,0,0,0.04)', padding: '0.2rem 0.5rem', borderRadius: '4px' }}>Category: {program.category.toUpperCase()}</span>
+                            )}
+                            {program.last_verified_date && (
+                              <span style={{ background: 'rgba(0,0,0,0.04)', padding: '0.2rem 0.5rem', borderRadius: '4px' }}>Verified: {program.last_verified_date}</span>
+                            )}
                           </div>
 
                           {/* Program Specific visual aids */}
@@ -1302,15 +1310,17 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
                           )}
                         </div>
 
-                        <a 
-                          href={program.official_source_url} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="btn-primary" 
-                          style={{ width: 'auto', padding: '0.5rem 1rem', fontSize: '0.8rem', borderRadius: '8px', display: 'inline-flex', gap: '0.3rem' }}
-                        >
-                          <Globe size={14} /> Official Site
-                        </a>
+                        {program.official_source_url && (
+                          <a 
+                            href={program.official_source_url} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="btn-primary" 
+                            style={{ width: 'auto', padding: '0.5rem 1rem', fontSize: '0.8rem', borderRadius: '8px', display: 'inline-flex', gap: '0.3rem' }}
+                          >
+                            <Globe size={14} /> Official Site
+                          </a>
+                        )}
                       </div>
                     </div>
                   ))
@@ -1365,7 +1375,7 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
                   {counties.slice(0, 8).map(c => (
                     <Link 
                       key={c.id} 
-                      href={`/benefits/${diagnosis.toLowerCase().replace(/\s+/g, '-')}/${c.id}`}
+                      href={`/benefits/${slugifyDiagnosis(diagnosis)}/${c.id}`}
                       style={{ background: 'rgba(255,255,255,0.7)', border: '1px solid rgba(0,0,0,0.06)', borderRadius: '8px', padding: '0.4rem 0.8rem', fontSize: '0.85rem', color: 'var(--text-main)', textDecoration: 'none', fontWeight: 500, transition: 'all 0.2s' }}
                     >
                       {diagnosis} in {c.name}

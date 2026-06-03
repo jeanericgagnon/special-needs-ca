@@ -5,20 +5,58 @@ import path from 'path';
 const crawlerDbPath = path.resolve(process.cwd(), 'ca_disability_crawler.db');
 const navigatorDbPath = path.resolve(process.cwd(), 'ca_disability_navigator.db');
 
-// Instantiate DB handles
+// Instantiate DB handles lazily using proxies to prevent Next.js build-time lockouts
 const isVercel = process.env.VERCEL === '1';
-const crawlerDb = new Database(crawlerDbPath, { readonly: true });
-const navigatorDb = new Database(navigatorDbPath, { readonly: isVercel });
 
-// Enable Foreign Key support in SQLite if not read-only
-if (!isVercel) {
-  navigatorDb.pragma('foreign_keys = ON');
+let crawlerDbInstance: Database.Database | null = null;
+let navigatorDbInstance: Database.Database | null = null;
+let migrationsRun = false;
+
+function ensureCrawlerDb() {
+  if (!crawlerDbInstance) {
+    crawlerDbInstance = new Database(crawlerDbPath, { readonly: true });
+  }
+  return crawlerDbInstance;
 }
 
-// Initialize database schema tables if they don't exist
-function runMigrations() {
+function ensureNavigatorDb() {
+  if (!navigatorDbInstance) {
+    navigatorDbInstance = new Database(navigatorDbPath, { readonly: isVercel });
+    if (!isVercel) {
+      navigatorDbInstance.pragma('foreign_keys = ON');
+      if (!migrationsRun) {
+        migrationsRun = true;
+        runMigrations(navigatorDbInstance);
+      }
+    }
+  }
+  return navigatorDbInstance;
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const crawlerDb = new Proxy({} as any, {
+  get(target, prop) {
+    const db = ensureCrawlerDb();
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const val = (db as any)[prop];
+    return typeof val === 'function' ? val.bind(db) : val;
+  }
+});
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const navigatorDb = new Proxy({} as any, {
+  get(target, prop) {
+    const db = ensureNavigatorDb();
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const val = (db as any)[prop];
+    return typeof val === 'function' ? val.bind(db) : val;
+  }
+});
+
+// Initialize database schema tables if they don't exist (run dynamically on first database access)
+function runMigrations(db: Database.Database) {
   if (isVercel) return;
-  navigatorDb.exec(`
+  db.exec(`
     CREATE TABLE IF NOT EXISTS users (
       id TEXT PRIMARY KEY,
       email TEXT UNIQUE NOT NULL,
@@ -34,7 +72,7 @@ function runMigrations() {
   `);
 
   // Create iep_advocates table
-  navigatorDb.exec(`
+  db.exec(`
     CREATE TABLE IF NOT EXISTS iep_advocates (
       id TEXT PRIMARY KEY,
       name TEXT NOT NULL,
@@ -50,7 +88,7 @@ function runMigrations() {
   `);
 
   // Create community_suggestions table
-  navigatorDb.exec(`
+  db.exec(`
     CREATE TABLE IF NOT EXISTS community_suggestions (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       suggestion_type TEXT NOT NULL,
@@ -64,25 +102,25 @@ function runMigrations() {
   `);
 
   // Add school_districts columns if they do not exist
-  const tableInfo = navigatorDb.prepare("PRAGMA table_info(school_districts)").all() as { name: string }[];
+  const tableInfo = db.prepare("PRAGMA table_info(school_districts)").all() as { name: string }[];
   const columnNames = tableInfo.map(col => col.name);
   if (!columnNames.includes('total_enrollment')) {
-    navigatorDb.exec("ALTER TABLE school_districts ADD COLUMN total_enrollment INTEGER;");
+    db.exec("ALTER TABLE school_districts ADD COLUMN total_enrollment INTEGER;");
   }
   if (!columnNames.includes('special_ed_pct')) {
-    navigatorDb.exec("ALTER TABLE school_districts ADD COLUMN special_ed_pct REAL;");
+    db.exec("ALTER TABLE school_districts ADD COLUMN special_ed_pct REAL;");
   }
   if (!columnNames.includes('inclusion_rate_pct')) {
-    navigatorDb.exec("ALTER TABLE school_districts ADD COLUMN inclusion_rate_pct REAL;");
+    db.exec("ALTER TABLE school_districts ADD COLUMN inclusion_rate_pct REAL;");
   }
   if (!columnNames.includes('self_contained_rate_pct')) {
-    navigatorDb.exec("ALTER TABLE school_districts ADD COLUMN self_contained_rate_pct REAL;");
+    db.exec("ALTER TABLE school_districts ADD COLUMN self_contained_rate_pct REAL;");
   }
 
   // Seed school_districts if empty
-  const countDistricts = navigatorDb.prepare("SELECT COUNT(*) as count FROM school_districts").get() as { count: number };
+  const countDistricts = db.prepare("SELECT COUNT(*) as count FROM school_districts").get() as { count: number };
   if (countDistricts.count === 0) {
-    const insertDistrict = navigatorDb.prepare(`
+    const insertDistrict = db.prepare(`
       INSERT INTO school_districts (id, county_id, name, spec_ed_contact_phone, spec_ed_contact_email, website, total_enrollment, special_ed_pct, inclusion_rate_pct, self_contained_rate_pct)
       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `);
@@ -99,7 +137,7 @@ function runMigrations() {
       ['sd-sac-usd', 'sacramento', 'Sacramento City Unified School District', '(916) 643-9000', 'sped@scusd.edu', 'https://scusd.edu', 38000, 15.4, 51.2, 32.4]
     ];
 
-    const seedTx = navigatorDb.transaction(() => {
+    const seedTx = db.transaction(() => {
       for (const row of seedDistricts) {
         insertDistrict.run(...row);
       }
@@ -109,9 +147,9 @@ function runMigrations() {
   }
 
   // Seed iep_advocates if empty
-  const countAdvocates = navigatorDb.prepare("SELECT COUNT(*) as count FROM iep_advocates").get() as { count: number };
+  const countAdvocates = db.prepare("SELECT COUNT(*) as count FROM iep_advocates").get() as { count: number };
   if (countAdvocates.count === 0) {
-    const insertAdvocate = navigatorDb.prepare(`
+    const insertAdvocate = db.prepare(`
       INSERT INTO iep_advocates (id, name, credentials, experience_years, price_rate, counties_served, languages_spoken, phone, email, website)
       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `);
@@ -120,11 +158,11 @@ function runMigrations() {
       ['adv-sarah', 'Sarah Jenkins, M.S.Ed.', 'Board Certified Advocate (COPAA), Former Special Ed Teacher', 15, '$150 / hour', 'los-angeles,orange', 'English', '(310) 555-0142', 'sarah@calspedadvocacy.com', 'https://calspedadvocacy.com'],
       ['adv-marisol', 'Marisol Torres', 'Bilingual IEP Consultant, Parent Advocate Coach', 10, '$120 / hour', 'los-angeles,orange,san-diego', 'English, Spanish', '(714) 555-0189', 'marisol@iep-ayuda.org', 'https://iep-ayuda.org'],
       ['adv-david', 'David Chen', 'Special Ed Law Advocate, JD (Non-practicing)', 12, '$195 / hour', 'san-francisco,alameda,santa-clara', 'English, Cantonese', '(415) 555-0211', 'dchen@bayareaiep.com', 'https://bayareaiep.com'],
-      ['adv-elena', 'Elena Rostova', 'DDS/Regional Center & IEP Specialist', 8, '$110 / hour', 'sacramento,placer', 'English, Russian', '(916) 555-0273', 'elena@sacramentopedadvocate.com', 'https://sacramentopedadvocate.com'],
-      ['adv-katelyn', 'Katelyn Vance, BCBA', 'Behavior Specialist, Educational Advocate', 9, '$140 / hour', 'san-diego,riverside', 'English', '(619) 555-0304', 'kvance@sandiegoiep.com', 'https://sandiegoiep.com']
+      ['adv-elena', 'Elena Rostova', 'DDS/Regional Center & IEP Specialist', 8, '$110 / hour', 'sacramento,placer', 'English, Russian', '(916) 555-0273', 'elena@sacramentopedadvocate.com', 'https://elena@sacramentopedadvocate.com'],
+      ['adv-katelyn', 'Katelyn Vance, BCBA', 'Behavior Specialist, Educational Advocate', 9, '$140 / hour', 'san-diego,riverside', 'English', '(619) 555-0304', 'kvance@sandiegoiep.com', 'https://bayareaiep.com']
     ];
 
-    const seedTx = navigatorDb.transaction(() => {
+    const seedTx = db.transaction(() => {
       for (const row of seedAdvocates) {
         insertAdvocate.run(...row);
       }
@@ -134,7 +172,7 @@ function runMigrations() {
   }
 
   // Create program_waitlists table
-  navigatorDb.exec(`
+  db.exec(`
     CREATE TABLE IF NOT EXISTS program_waitlists (
       id TEXT PRIMARY KEY,
       program_id TEXT NOT NULL,
@@ -150,9 +188,9 @@ function runMigrations() {
   `);
 
   // Seed program_waitlists if empty
-  const countWaitlists = navigatorDb.prepare("SELECT COUNT(*) as count FROM program_waitlists").get() as { count: number };
+  const countWaitlists = db.prepare("SELECT COUNT(*) as count FROM program_waitlists").get() as { count: number };
   if (countWaitlists.count === 0) {
-    const insertWaitlist = navigatorDb.prepare(`
+    const insertWaitlist = db.prepare(`
       INSERT INTO program_waitlists (id, program_id, name, duration_label, duration_months, status, description, reserve_capacity_notice, legal_deadline, last_scraped_at)
       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `);
@@ -220,7 +258,7 @@ function runMigrations() {
       ]
     ];
 
-    const seedTx = navigatorDb.transaction(() => {
+    const seedTx = db.transaction(() => {
       for (const row of seedWaitlists) {
         insertWaitlist.run(...row);
       }
@@ -230,7 +268,7 @@ function runMigrations() {
   }
 
   // Create child_iep_accommodations table
-  navigatorDb.exec(`
+  db.exec(`
     CREATE TABLE IF NOT EXISTS child_iep_accommodations (
       id TEXT PRIMARY KEY,
       child_id TEXT NOT NULL,
@@ -240,7 +278,7 @@ function runMigrations() {
   `);
 
   // Create child_iep_goals table
-  navigatorDb.exec(`
+  db.exec(`
     CREATE TABLE IF NOT EXISTS child_iep_goals (
       id TEXT PRIMARY KEY,
       child_id TEXT NOT NULL,
@@ -252,7 +290,7 @@ function runMigrations() {
   `);
 
   // Create child_respite_assessments table
-  navigatorDb.exec(`
+  db.exec(`
     CREATE TABLE IF NOT EXISTS child_respite_assessments (
       child_id TEXT PRIMARY KEY,
       safety_score INTEGER NOT NULL,
@@ -264,12 +302,162 @@ function runMigrations() {
     );
   `);
 
+  // Create selpas table
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS selpas (
+      id TEXT PRIMARY KEY,
+      name TEXT NOT NULL,
+      counties_served TEXT NOT NULL,
+      website TEXT NOT NULL
+    );
+  `);
+
+  // Seed selpas if empty
+  const countSelpas = db.prepare("SELECT COUNT(*) as count FROM selpas").get() as { count: number };
+  if (countSelpas.count === 0) {
+    const insertSelpa = db.prepare(`
+      INSERT INTO selpas (id, name, counties_served, website)
+      VALUES (?, ?, ?, ?)
+    `);
+    
+    const seedSelpas = [
+      ['selpa-la', 'Los Angeles Unified SELPA', 'los-angeles', 'https://achieve.lausd.net/Page/1669'],
+      ['selpa-orange', 'Orange County SELPA', 'orange', 'https://ocde.us/SpecialEducation/Pages/SELPA.aspx'],
+      ['selpa-sf', 'San Francisco Unified SELPA', 'san-francisco', 'https://www.sfusd.edu/special-education/selpa'],
+      ['selpa-sd', 'San Diego Unified SELPA', 'san-diego', 'https://sandiegounified.org/selpa'],
+      ['selpa-alameda', 'Alameda County SELPA', 'alameda', 'https://www.acoe.org/selpa'],
+      ['selpa-santa-clara', 'Santa Clara County SELPA', 'santa-clara', 'https://www.sccoe.org/selpa'],
+      ['selpa-sacramento', 'Sacramento County SELPA', 'sacramento', 'https://www.scoe.net/selpa']
+    ];
+
+    const seedTx = db.transaction(() => {
+      for (const row of seedSelpas) {
+        insertSelpa.run(...row);
+      }
+    });
+    seedTx();
+    console.log('⚡ Seeded California SELPAs local plan areas.');
+  }
+
   console.log('⚡ SQLite Database migrations completed successfully!');
 }
 
-runMigrations();
-
 // Database interfaces
+export interface Selpa {
+  id: string;
+  name: string;
+  counties_served: string;
+  website: string;
+}
+
+export interface CountyOffice {
+  id: string;
+  county_id: string;
+  program_id: string;
+  office_name: string;
+  address: string;
+  phone: string;
+  email: string | null;
+  website: string;
+}
+
+export interface SchoolDistrict {
+  id: string;
+  county_id: string;
+  name: string;
+  spec_ed_contact_phone?: string;
+  spec_ed_contact_email?: string;
+  website?: string;
+  total_enrollment?: number;
+  special_ed_pct?: number;
+  inclusion_rate_pct?: number;
+  self_contained_rate_pct?: number;
+}
+
+export interface NonprofitOrganization {
+  id: string;
+  county_id: string;
+  name: string;
+  description: string;
+  phone: string;
+  email: string | null;
+  website: string;
+  category: string;
+}
+
+export interface RegionalCenter {
+  id: string;
+  name: string;
+  website: string;
+  counties_served: string;
+  catchment_boundaries: string;
+  intake_phone: string;
+  early_start_contact: string;
+  lanterman_intake_contact: string;
+  eligibility_info_page: string;
+  services_page: string;
+  appeals_info: string;
+  frc_relationship: string;
+  office_locations: string;
+  languages: string;
+  last_verified_date: string;
+  source_urls: string;
+  service_area_description?: string | null;
+}
+
+export interface ResourceProvider {
+  id: string;
+  name: string;
+  categories: string;
+  county_id: string;
+  phone: string;
+  email: string | null;
+  address: string;
+  accepts_medi_cal: number;
+  regional_center_vendor_ids: string | null;
+}
+
+export interface ProgramDocumentRequirement {
+  id: string;
+  program_id: string;
+  name: string;
+  description: string;
+  is_mandatory: number;
+}
+
+export interface ProgramApplicationStep {
+  id: string;
+  program_id: string;
+  step_number: number;
+  title: string;
+  action_description: string;
+  apply_url_or_contact?: string | null;
+}
+
+export interface ProgramAppealInfo {
+  program_id: string;
+  deadline_days: string;
+  appeal_steps: string;
+  denial_reasons: string;
+  appeal_form_name: string;
+  official_appeal_source_url: string;
+}
+
+export interface CoreProgramMatch {
+  id: string;
+  name: string;
+  description: string;
+  who_it_is_for: string | null;
+  who_might_qualify: string | null;
+  official_source_url: string | null;
+  category: string | null;
+  last_verified_date: string | null;
+  trigger_reason: string | null;
+  documentRequirements: ProgramDocumentRequirement[];
+  applicationSteps: ProgramApplicationStep[];
+  appealInfo: ProgramAppealInfo | null;
+}
+
 export interface ProgramWaitlist {
   id: string;
   program_id: string;
@@ -312,6 +500,7 @@ export interface County {
   id: string;
   name: string;
   website: string;
+  ihss_wage_rate?: number;
 }
 
 export interface TaxonomyCondition {
@@ -643,37 +832,49 @@ export function getCountyDetails(countyId: string) {
   const county = navigatorDb.prepare('SELECT * FROM counties WHERE id = ?').get(countyId) as County | undefined;
   if (!county) return undefined;
 
-  const offices = navigatorDb.prepare('SELECT * FROM county_offices WHERE county_id = ?').all(countyId) as any[];
-  const districts = navigatorDb.prepare('SELECT * FROM school_districts WHERE county_id = ?').all(countyId) as any[];
-  const nonprofits = navigatorDb.prepare('SELECT * FROM nonprofit_organizations WHERE county_id = ?').all(countyId) as any[];
+  const offices = navigatorDb.prepare('SELECT * FROM county_offices WHERE county_id = ?').all(countyId) as CountyOffice[];
+  const districts = navigatorDb.prepare('SELECT * FROM school_districts WHERE county_id = ?').all(countyId) as SchoolDistrict[];
+  const nonprofits = navigatorDb.prepare('SELECT * FROM nonprofit_organizations WHERE county_id = ?').all(countyId) as NonprofitOrganization[];
 
   // Get matching Regional Centers
   // Since regional centers store a comma-separated list of county slugs in counties_served,
   // we can use a query with LIKE
-  const rcs = navigatorDb.prepare('SELECT * FROM regional_centers WHERE counties_served LIKE ?').all(`%${countyId}%`) as any[];
+  const rcs = navigatorDb.prepare('SELECT * FROM regional_centers WHERE counties_served LIKE ?').all(`%${countyId}%`) as RegionalCenter[];
+
+  const countySelpas = navigatorDb.prepare('SELECT * FROM selpas WHERE counties_served LIKE ?').all(`%${countyId}%`) as Selpa[];
 
   return {
     ...county,
     countyOffices: offices,
     schoolDistricts: districts,
     localOrganizations: nonprofits,
-    regionalCenters: rcs
+    regionalCenters: rcs,
+    selpas: countySelpas
   };
 }
 
-export function getProgramDocumentRequirements(programId: string) {
-  return navigatorDb.prepare('SELECT * FROM program_document_requirements WHERE program_id = ?').all(programId) as any[];
+export function getSelpasByCounty(countyId: string): Selpa[] {
+  try {
+    return navigatorDb.prepare('SELECT * FROM selpas WHERE counties_served LIKE ?').all(`%${countyId}%`) as Selpa[];
+  } catch (err) {
+    console.error('Failed to query SELPAs:', err);
+    return [];
+  }
 }
 
-export function getProgramApplicationSteps(programId: string) {
-  return navigatorDb.prepare('SELECT * FROM program_application_steps WHERE program_id = ? ORDER BY step_number ASC').all(programId) as any[];
+export function getProgramDocumentRequirements(programId: string): ProgramDocumentRequirement[] {
+  return navigatorDb.prepare('SELECT * FROM program_document_requirements WHERE program_id = ?').all(programId) as ProgramDocumentRequirement[];
 }
 
-export function getProgramAppealInfo(programId: string) {
-  return navigatorDb.prepare('SELECT * FROM program_appeal_info WHERE program_id = ?').get(programId) as any;
+export function getProgramApplicationSteps(programId: string): ProgramApplicationStep[] {
+  return navigatorDb.prepare('SELECT * FROM program_application_steps WHERE program_id = ? ORDER BY step_number ASC').all(programId) as ProgramApplicationStep[];
 }
 
-export function getMatchedCorePrograms(age: number, conditionIds: string[], needIds: string[]): any[] {
+export function getProgramAppealInfo(programId: string): ProgramAppealInfo | undefined {
+  return navigatorDb.prepare('SELECT * FROM program_appeal_info WHERE program_id = ?').get(programId) as ProgramAppealInfo | undefined;
+}
+
+export function getMatchedCorePrograms(age: number, conditionIds: string[], needIds: string[]): CoreProgramMatch[] {
   let querySql = `
     SELECT r.*, p.name, p.description, p.who_it_is_for, p.who_might_qualify, p.official_source_url, p.category, p.last_verified_date
     FROM program_eligibility_rules r
@@ -681,7 +882,7 @@ export function getMatchedCorePrograms(age: number, conditionIds: string[], need
     WHERE ? >= r.min_age_years AND ? <= r.max_age_years
   `;
   
-  const params: any[] = [age, age];
+  const params: (string | number)[] = [age, age];
 
   if (conditionIds.length > 0) {
     const placeholders = conditionIds.map(() => '?').join(',');
@@ -703,7 +904,17 @@ export function getMatchedCorePrograms(age: number, conditionIds: string[], need
   querySql += ` GROUP BY p.id`;
 
   try {
-    const matchedRules = navigatorDb.prepare(querySql).all(...params) as any[];
+    const matchedRules = navigatorDb.prepare(querySql).all(...params) as {
+      program_id: string;
+      name: string;
+      description: string;
+      who_it_is_for: string | null;
+      who_might_qualify: string | null;
+      official_source_url: string | null;
+      category: string | null;
+      last_verified_date: string | null;
+      trigger_reason: string | null;
+    }[];
     
     // Enrich with document requirements, steps, and appeal info
     return matchedRules.map(rule => {
@@ -744,7 +955,7 @@ export function getProgramsByKeywords(age: number, diagnosis: string, keywords: 
         diagnosis_required LIKE '%13 IDEA Categories%'
       )
   `;
-  const params: any[] = [age, age, `%${diagnosis}%`];
+  const params: (string | number)[] = [age, age, `%${diagnosis}%`];
 
   if (keywords.length > 0) {
     querySql += ' AND (';
@@ -798,13 +1009,16 @@ export function updateWaitlistStatus(
     return false;
   }
   try {
-    const stmt = navigatorDb.prepare(`
-      UPDATE program_waitlists 
-      SET duration_label = ?, duration_months = ?, status = ?, description = ?, last_scraped_at = ?
-      WHERE program_id = ?
-    `);
-    const info = stmt.run(durationLabel, durationMonths, status, description, new Date().toISOString(), programId);
-    return info.changes > 0;
+    const updateTx = navigatorDb.transaction(() => {
+      const stmt = navigatorDb.prepare(`
+        UPDATE program_waitlists 
+        SET duration_label = ?, duration_months = ?, status = ?, description = ?, last_scraped_at = ?
+        WHERE program_id = ?
+      `);
+      const info = stmt.run(durationLabel, durationMonths, status, description, new Date().toISOString(), programId);
+      return info.changes > 0;
+    });
+    return updateTx();
   } catch (err) {
     console.error(`Failed to update waitlist for ${programId}:`, err);
     return false;
@@ -828,19 +1042,22 @@ export function submitCommunitySuggestion(suggestion: CommunitySuggestion): bool
     return true;
   }
   try {
-    const stmt = navigatorDb.prepare(`
-      INSERT INTO community_suggestions (suggestion_type, target_id, submitter_name, submitter_email, details, status, created_at)
-      VALUES (?, ?, ?, ?, ?, 'pending', ?)
-    `);
-    const info = stmt.run(
-      suggestion.suggestion_type,
-      suggestion.target_id,
-      suggestion.submitter_name,
-      suggestion.submitter_email,
-      suggestion.details,
-      new Date().toISOString()
-    );
-    return info.changes > 0;
+    const submitTx = navigatorDb.transaction(() => {
+      const stmt = navigatorDb.prepare(`
+        INSERT INTO community_suggestions (suggestion_type, target_id, submitter_name, submitter_email, details, status, created_at)
+        VALUES (?, ?, ?, ?, ?, 'pending', ?)
+      `);
+      const info = stmt.run(
+        suggestion.suggestion_type,
+        suggestion.target_id,
+        suggestion.submitter_name,
+        suggestion.submitter_email,
+        suggestion.details,
+        new Date().toISOString()
+      );
+      return info.changes > 0;
+    });
+    return submitTx();
   } catch (err) {
     console.error('Failed to submit community suggestion:', err);
     return false;
@@ -869,7 +1086,7 @@ export interface ChildRespiteData {
 export function getChildIepData(childId: string): ChildIepData {
   try {
     const accs = navigatorDb.prepare('SELECT accommodation_id FROM child_iep_accommodations WHERE child_id = ?').all(childId) as { accommodation_id: string }[];
-    const goals = navigatorDb.prepare('SELECT id, goal_template_id, custom_text, tokens_json FROM child_iep_goals WHERE child_id = ?').all(childId) as any[];
+    const goals = navigatorDb.prepare('SELECT id, goal_template_id, custom_text, tokens_json FROM child_iep_goals WHERE child_id = ?').all(childId) as { id: string; goal_template_id: string; custom_text: string; tokens_json: string }[];
     return {
       accommodations: accs.map(a => a.accommodation_id),
       goals: goals.map(g => ({
@@ -933,22 +1150,48 @@ export function saveChildRespiteData(childId: string, scores: { safety: number; 
     return true;
   }
   try {
-    const stmt = navigatorDb.prepare(`
-      INSERT INTO child_respite_assessments (child_id, safety_score, sleep_score, medical_score, behavior_score, updated_at)
-      VALUES (?, ?, ?, ?, ?, ?)
-      ON CONFLICT(child_id) DO UPDATE SET
-        safety_score = excluded.safety_score,
-        sleep_score = excluded.sleep_score,
-        medical_score = excluded.medical_score,
-        behavior_score = excluded.behavior_score,
-        updated_at = excluded.updated_at
-    `);
-    stmt.run(childId, scores.safety, scores.sleep, scores.medical, scores.behavior, new Date().toISOString());
-    return true;
+    const saveRespiteTx = navigatorDb.transaction(() => {
+      const stmt = navigatorDb.prepare(`
+        INSERT INTO child_respite_assessments (child_id, safety_score, sleep_score, medical_score, behavior_score, updated_at)
+        VALUES (?, ?, ?, ?, ?, ?)
+        ON CONFLICT(child_id) DO UPDATE SET
+          safety_score = excluded.safety_score,
+          sleep_score = excluded.sleep_score,
+          medical_score = excluded.medical_score,
+          behavior_score = excluded.behavior_score,
+          updated_at = excluded.updated_at
+      `);
+      stmt.run(childId, scores.safety, scores.sleep, scores.medical, scores.behavior, new Date().toISOString());
+      return true;
+    });
+    return saveRespiteTx();
   } catch (err) {
     console.error('Failed to save child respite data:', err);
     return false;
   }
 }
+
+export function getSchoolDistrictBySlug(slug: string): SchoolDistrict | undefined {
+  try {
+    const districts = navigatorDb.prepare('SELECT * FROM school_districts').all() as SchoolDistrict[];
+    return districts.find(d => {
+      const s = d.name.toLowerCase().replace(/[^\w\s-]/g, '').trim().replace(/\s+/g, '-').replace(/-+/g, '-');
+      return s === slug || d.id === slug;
+    });
+  } catch {
+    console.error('Failed to get school district by slug:');
+    return undefined;
+  }
+}
+
+export function getLocalProviders(countyId: string): ResourceProvider[] {
+  try {
+    return navigatorDb.prepare('SELECT * FROM resource_providers WHERE county_id = ?').all(countyId) as ResourceProvider[];
+  } catch {
+    console.error('Failed to query local resource providers:');
+    return [];
+  }
+}
+
 
 

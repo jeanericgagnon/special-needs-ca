@@ -27,7 +27,7 @@ export default function PrintButton({ label = 'Print / Save PDF Action Plan', st
         display: 'inline-flex',
         alignItems: 'center',
         gap: '0.4rem',
-        boxShadow: '0 4px 12px rgba(99, 102, 241, 0.1)',
+        boxShadow: '0 4px 12px rgba(var(--primary-rgb), 0.1)',
         cursor: 'pointer',
         border: 'none',
         fontWeight: 600,

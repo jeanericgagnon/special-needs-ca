@@ -1,6 +1,7 @@
 'use server'
 
-import { getProgramsByKeywords, getMatchedCorePrograms, Program } from '@/lib/db';
+import { getProgramsByKeywords, getMatchedCorePrograms, Program, CoreProgramMatch } from '@/lib/db';
+import { hasNonNegatedKeyword } from '@/lib/negation';
 
 export interface Refiners {
   insuranceExcludesHearing?: boolean;
@@ -10,7 +11,7 @@ export interface Refiners {
 }
 
 export interface AnalysisResult {
-  coreMatches: any[];
+  coreMatches: CoreProgramMatch[];
   crawlerMatches: Program[];
   explanations: string[];
   detectedNeeds: string[];
@@ -65,15 +66,7 @@ export async function analyzeOnboarding(
   // Supervision / Safety (triggers IHSS Protective Supervision!)
   if (
     refiners?.severeSafetyRisks === true ||
-    lowerText.includes('supervision') || 
-    lowerText.includes('safety') || 
-    lowerText.includes('wander') || 
-    lowerText.includes('elope') || 
-    lowerText.includes('run away') || 
-    lowerText.includes('pica') || 
-    lowerText.includes('harm') || 
-    lowerText.includes('danger') || 
-    lowerText.includes('behavior')
+    hasNonNegatedKeyword(lowerText, ['supervision', 'safety', 'wander', 'elope', 'run away', 'pica', 'harm', 'danger', 'behavior'])
   ) {
     detectedNeedIds.push('protective-supervision');
     detectedNeedNames.push('Protective Supervision');

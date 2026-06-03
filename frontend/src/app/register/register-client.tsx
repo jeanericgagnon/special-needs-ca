@@ -60,7 +60,9 @@ export default function RegisterClient({ counties, diagnosesList, needsList }: R
   // Run mapping on mount if preDiagnosis is passed
   useEffect(() => {
     if (preDiagnosis) {
-      applySmartNeedsMapping(preDiagnosis);
+      setTimeout(() => {
+        applySmartNeedsMapping(preDiagnosis);
+      }, 0);
     }
   }, [preDiagnosis]);
 
@@ -162,7 +164,7 @@ export default function RegisterClient({ counties, diagnosesList, needsList }: R
               </h3>
               
               <div className="input-group">
-                <label htmlFor="nickname">Child's Nickname</label>
+                <label htmlFor="nickname">Child&apos;s Nickname</label>
                 <div style={{ position: 'relative' }}>
                   <User size={18} color="var(--text-light)" style={{ position: 'absolute', left: '1rem', top: '50%', transform: 'translateY(-50%)' }} />
                   <input 
@@ -218,7 +220,7 @@ export default function RegisterClient({ counties, diagnosesList, needsList }: R
               <div className="input-group" style={{ marginTop: '0.5rem' }}>
                 <label style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
                   <span>Needed Support Directory</span>
-                  <span style={{ fontSize: '0.75rem', background: 'rgba(99,102,241,0.08)', color: 'var(--primary-color)', padding: '0.1rem 0.4rem', borderRadius: '4px', fontWeight: 600 }}>Auto-Matched</span>
+                  <span style={{ fontSize: '0.75rem', background: 'rgba(var(--primary-rgb),0.08)', color: 'var(--primary-color)', padding: '0.1rem 0.4rem', borderRadius: '4px', fontWeight: 600 }}>Auto-Matched</span>
                 </label>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem', marginTop: '0.5rem', maxHeight: '180px', overflowY: 'auto', paddingRight: '0.25rem' }}>
                   {needsList.map(need => {
@@ -235,8 +237,8 @@ export default function RegisterClient({ counties, diagnosesList, needsList }: R
                           fontWeight: 'normal',
                           padding: '0.4rem',
                           borderRadius: '8px',
-                          background: isChecked ? 'rgba(99,102,241,0.04)' : 'transparent',
-                          border: isChecked ? '1px solid rgba(99,102,241,0.1)' : '1px solid transparent'
+                          background: isChecked ? 'rgba(var(--primary-rgb),0.04)' : 'transparent',
+                          border: isChecked ? '1px solid rgba(var(--primary-rgb),0.1)' : '1px solid transparent'
                         }}
                       >
                         <input 

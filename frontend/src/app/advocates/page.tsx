@@ -1,6 +1,6 @@
 import { getCounties, getIepAdvocates } from '@/lib/db';
 import { Metadata } from 'next';
-import { ShieldCheck, Search } from 'lucide-react';
+import { Search } from 'lucide-react';
 import Link from 'next/link';
 import AdvocateDirectoryClient from './advocate-directory-client';
 
@@ -76,7 +76,7 @@ export default async function AdvocatesDirectoryPage({ searchParams }: Props) {
               defaultValue={selectedCounty}
               // Automatically submit when changed to avoid extra clicks
               // We use simple inline JS to submit the parent form on change
-              // @ts-ignore
+              // @ts-expect-error: React onChange prop expects function but we use raw string for inline HTML event submission in Server Component
               onChange="this.form.submit()"
               style={{ 
                 padding: '0.75rem 1rem', 

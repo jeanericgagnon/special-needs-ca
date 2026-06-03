@@ -1,11 +1,11 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 import { updateWaitlistStatus, getProgramWaitlists } from '@/lib/db';
 import fs from 'fs';
 import path from 'path';
 
 export const dynamic = 'force-dynamic';
 
-export async function GET(request: NextRequest) {
+export async function GET() {
   const targetUrl = 'https://www.dhcs.ca.gov/services/long-term-care-alternatives-home-and-community-based-service-options/home-and-community-based-alternatives-waiver-2/';
   const fallbackRepoUrl = 'https://raw.githubusercontent.com/jeanericgagnon/special-needs-ca/main/src/data/raw/dhcs_hcba.json';
   
@@ -65,7 +65,7 @@ export async function GET(request: NextRequest) {
           logs.push(`✓ Loaded local file cache successfully from: ${localCachePath}`);
           
           // Parse fields from local JSON
-          const enrollmentSec = cacheData.sections?.find((s: any) => s.heading === 'Enrollment');
+          const enrollmentSec = cacheData.sections?.find((s: { heading: string; content: string[] }) => s.heading === 'Enrollment');
           const textContent = enrollmentSec ? enrollmentSec.content.join(' ') : '';
           
           if (textContent.includes('waiting list has been implemented')) {
@@ -79,7 +79,7 @@ export async function GET(request: NextRequest) {
         const cacheData = await fallbackResponse.json();
         logs.push(`✓ Loaded remote GitHub cache successfully.`);
         
-        const enrollmentSec = cacheData.sections?.find((s: any) => s.heading === 'Enrollment');
+        const enrollmentSec = cacheData.sections?.find((s: { heading: string; content: string[] }) => s.heading === 'Enrollment');
         const textContent = enrollmentSec ? enrollmentSec.content.join(' ') : '';
         
         if (textContent.includes('waiting list has been implemented')) {
@@ -142,12 +142,13 @@ export async function GET(request: NextRequest) {
       logs
     });
 
-  } catch (err: any) {
-    logs.push(`❌ Fatal Error during waitlist sync: ${err?.message || err}`);
+  } catch (err) {
+    const errMsg = err instanceof Error ? err.message : String(err);
+    logs.push(`❌ Fatal Error during waitlist sync: ${errMsg}`);
     return NextResponse.json({
       success: false,
       timestamp: new Date().toISOString(),
-      error: err?.message || 'Unknown crawl error',
+      error: errMsg,
       logs
     }, { status: 500 });
   }

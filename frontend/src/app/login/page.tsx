@@ -22,7 +22,7 @@ export default function LoginPage() {
       <div className="glass-panel" style={{ width: '100%', maxWidth: '450px', padding: '2.5rem' }}>
         <h2 style={{ textAlign: 'center', marginBottom: '0.5rem', fontSize: '1.8rem' }}>Welcome Back</h2>
         <p style={{ textAlign: 'center', marginBottom: '2rem', fontSize: '0.95rem' }}>
-          Log in to manage your child's saved benefit programs and checklists.
+          Log in to manage your child&apos;s saved benefit programs and checklists.
         </p>
 
         {state?.error && (
@@ -70,7 +70,7 @@ export default function LoginPage() {
         </form>
 
         <div style={{ marginTop: '2rem', textAlign: 'center', fontSize: '0.9rem', color: 'var(--text-light)' }}>
-          Don't have an account?{' '}
+          Don&apos;t have an account?{' '}
           <Link href="/register" style={{ color: 'var(--primary-color)', fontWeight: 600, textDecoration: 'none' }}>
             Sign Up
           </Link>

@@ -29,19 +29,22 @@ export default function DiagnosisAutocomplete({
 
   // Filter suggestions when value changes
   useEffect(() => {
-    const trimmed = value.trim();
-    if (!trimmed) {
-      // If empty and open, show a few common default options
-      setFilteredSuggestions(diagnosesList.slice(0, 8));
-    } else {
-      const lower = trimmed.toLowerCase();
-      const filtered = diagnosesList.filter(d => 
-        d.toLowerCase().includes(lower)
-      );
-      // Limit to top 8 matching options
-      setFilteredSuggestions(filtered.slice(0, 8));
-    }
-    setHighlightedIndex(-1);
+    const timer = setTimeout(() => {
+      const trimmed = value.trim();
+      if (!trimmed) {
+        // If empty and open, show a few common default options
+        setFilteredSuggestions(diagnosesList.slice(0, 8));
+      } else {
+        const lower = trimmed.toLowerCase();
+        const filtered = diagnosesList.filter(d => 
+          d.toLowerCase().includes(lower)
+        );
+        // Limit to top 8 matching options
+        setFilteredSuggestions(filtered.slice(0, 8));
+      }
+      setHighlightedIndex(-1);
+    }, 0);
+    return () => clearTimeout(timer);
   }, [value, diagnosesList]);
 
   // Click outside detection
@@ -120,6 +123,8 @@ export default function DiagnosisAutocomplete({
   };
 
   const hasCustomOption = value.trim() !== '' && !filteredSuggestions.includes(value.trim());
+  const dropdownId = `${id}-listbox`;
+  const getOptionId = (index: number) => `${id}-option-${index}`;
 
   return (
     <div className="autocomplete-container" ref={containerRef}>
@@ -138,15 +143,29 @@ export default function DiagnosisAutocomplete({
         required={required}
         onKeyDown={handleKeyDown}
         autoComplete="off"
+        role="combobox"
+        aria-autocomplete="list"
+        aria-expanded={isOpen}
+        aria-controls={isOpen ? dropdownId : undefined}
+        aria-haspopup="listbox"
+        aria-activedescendant={highlightedIndex >= 0 ? getOptionId(highlightedIndex) : undefined}
       />
 
       {isOpen && (filteredSuggestions.length > 0 || hasCustomOption) && (
-        <div className="autocomplete-dropdown">
+        <div 
+          id={dropdownId}
+          className="autocomplete-dropdown"
+          role="listbox"
+          aria-label="Diagnoses suggestions"
+        >
           {filteredSuggestions.map((suggestion, index) => {
             const isHighlighted = index === highlightedIndex;
             return (
               <div
                 key={suggestion}
+                id={getOptionId(index)}
+                role="option"
+                aria-selected={isHighlighted}
                 className={`autocomplete-item ${isHighlighted ? 'highlighted' : ''}`}
                 onClick={() => selectOption(suggestion)}
                 onMouseEnter={() => setHighlightedIndex(index)}
@@ -158,13 +177,16 @@ export default function DiagnosisAutocomplete({
 
           {hasCustomOption && (
             <div
+              id={getOptionId(filteredSuggestions.length)}
+              role="option"
+              aria-selected={highlightedIndex === filteredSuggestions.length}
               className={`autocomplete-item autocomplete-item-custom ${
                 highlightedIndex === filteredSuggestions.length ? 'highlighted' : ''
               }`}
               onClick={() => selectOption(value)}
               onMouseEnter={() => setHighlightedIndex(filteredSuggestions.length)}
             >
-              <span>Use custom: <strong>"{value}"</strong></span>
+              <span>Use custom: <strong>&quot;{value}&quot;</strong></span>
               <span style={{ fontSize: '0.75rem', opacity: 0.7 }}>Press Enter</span>
             </div>
           )}

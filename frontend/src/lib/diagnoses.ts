@@ -91,3 +91,13 @@ export const DIAGNOSES = [
   'Multiple Disabilities',
   'Developmental Delay (CA Education Code)'
 ].sort();
+
+export function slugifyDiagnosis(name: string): string {
+  return name
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, '')
+    .trim()
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-');
+}
+

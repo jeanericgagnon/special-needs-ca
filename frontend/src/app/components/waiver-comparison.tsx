@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Landmark, ShieldAlert, Award, FileText, Check, Info } from 'lucide-react';
+import { Landmark, ShieldAlert, Award, FileText, Check } from 'lucide-react';
 
 interface WaiverDetails {
   id: string;

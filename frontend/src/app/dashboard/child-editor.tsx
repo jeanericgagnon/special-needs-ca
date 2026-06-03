@@ -15,7 +15,7 @@ interface ChildEditorProps {
   onClose: () => void;
 }
 
-export default function ChildEditor({ counties, conditions, needs, initialChild, onClose }: ChildEditorProps) {
+export default function ChildEditor({ counties, needs, initialChild, onClose }: ChildEditorProps) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 

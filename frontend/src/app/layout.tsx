@@ -71,23 +71,23 @@ export default async function RootLayout({
                   <ChevronDown size={14} />
                 </button>
                 <div className="nav-dropdown-menu">
-                  <Link href="/iep-goals" className="nav-dropdown-item">
+                  <Link href="/dashboard?tab=iep" className="nav-dropdown-item">
                     <Sparkles size={14} />
                     <span>IEP Goals Library</span>
                   </Link>
-                  <Link href="/regional-center-funding" className="nav-dropdown-item">
+                  <Link href="/dashboard?tab=dds&sub=respite" className="nav-dropdown-item">
                     <Calculator size={14} />
                     <span>DDS Funding & Respite</span>
                   </Link>
-                  <Link href="/appeals-center" className="nav-dropdown-item">
+                  <Link href="/dashboard?tab=appeals" className="nav-dropdown-item">
                     <Scale size={14} />
                     <span>Appeals & Letter Builder</span>
                   </Link>
-                  <Link href="/ihss-behavior-log" className="nav-dropdown-item">
+                  <Link href="/dashboard?tab=ihss&sub=journal" className="nav-dropdown-item">
                     <ShieldCheck size={14} />
                     <span>IHSS 24-Hr Safety Log</span>
                   </Link>
-                  <Link href="/financial-planning" className="nav-dropdown-item">
+                  <Link href="/dashboard?tab=dds&sub=eligibility" className="nav-dropdown-item">
                     <Coins size={14} />
                     <span>CalABLE & SNT Planner</span>
                   </Link>
@@ -132,6 +132,7 @@ export default async function RootLayout({
           <div style={{ maxWidth: '1000px', margin: '0 auto', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: '1rem' }}>
             <p>© 2026 California Special Needs Navigator. All rights reserved.</p>
             <div style={{ display: 'flex', gap: '1.5rem' }}>
+              <Link href="/benefits" style={{ color: 'var(--text-light)', textDecoration: 'none', fontWeight: 600 }}>Benefits Directory</Link>
               <Link href="/sitemap.xml" style={{ color: 'var(--text-light)', textDecoration: 'none' }}>Sitemap</Link>
               <a href="https://www.cdss.ca.gov" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-light)', textDecoration: 'none' }}>CDSS</a>
               <a href="https://www.dds.ca.gov" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-light)', textDecoration: 'none' }}>DDS</a>

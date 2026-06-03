@@ -19,7 +19,7 @@ export default function WaitlistVisualizer({ activeProgramId, waitlists }: Waitl
       case 'critical': return { bg: 'rgba(239, 68, 68, 0.1)', text: '#ef4444', border: 'rgba(239, 68, 68, 0.2)', bar: 'linear-gradient(90deg, #f87171, #ef4444)' };
       case 'moderate': return { bg: 'rgba(245, 158, 11, 0.1)', text: '#f59e0b', border: 'rgba(245, 158, 11, 0.2)', bar: 'linear-gradient(90deg, #fbbf24, #f59e0b)' };
       case 'standard': return { bg: 'rgba(16, 185, 129, 0.1)', text: '#10b981', border: 'rgba(16, 185, 129, 0.2)', bar: 'linear-gradient(90deg, #34d399, #10b981)' };
-      case 'priority': return { bg: 'rgba(99, 102, 241, 0.1)', text: '#6366f1', border: 'rgba(99, 102, 241, 0.2)', bar: 'linear-gradient(90deg, #818cf8, #6366f1)' };
+      case 'priority': return { bg: 'rgba(var(--primary-rgb), 0.1)', text: 'var(--primary-color)', border: 'rgba(var(--primary-rgb), 0.2)', bar: 'linear-gradient(90deg, var(--primary-color), var(--primary-color))' };
     }
   };
 
@@ -108,7 +108,7 @@ export default function WaitlistVisualizer({ activeProgramId, waitlists }: Waitl
                   marginTop: '1rem', 
                   padding: '0.75rem 1rem', 
                   borderRadius: '10px', 
-                  backgroundColor: 'rgba(99, 102, 241, 0.04)', 
+                  backgroundColor: 'rgba(var(--primary-rgb), 0.04)', 
                   borderLeft: '3px solid var(--primary-color)',
                   display: 'flex',
                   gap: '0.5rem',

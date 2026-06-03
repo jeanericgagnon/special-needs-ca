@@ -73,9 +73,9 @@ export async function saveChildAction(formData: FormData) {
 
     revalidatePath('/dashboard');
     return { success: true };
-  } catch (err: any) {
+  } catch (err) {
     console.error('Save child action error:', err);
-    return { error: err.message || 'Failed to save child profile.' };
+    return { error: err instanceof Error ? err.message : 'Failed to save child profile.' };
   }
 }
 
@@ -85,9 +85,9 @@ export async function deleteChildAction(childId: string) {
     deleteChildProfile(childId);
     revalidatePath('/dashboard');
     return { success: true };
-  } catch (err: any) {
+  } catch (err) {
     console.error('Delete child action error:', err);
-    return { error: err.message || 'Failed to delete child profile.' };
+    return { error: err instanceof Error ? err.message : 'Failed to delete child profile.' };
   }
 }
 
@@ -101,9 +101,9 @@ export async function updateProgramStatusAction(childId: string, programId: stri
     }
     revalidatePath('/dashboard');
     return { success: true };
-  } catch (err: any) {
+  } catch (err) {
     console.error('Update program status action error:', err);
-    return { error: err.message || 'Failed to update program status.' };
+    return { error: err instanceof Error ? err.message : 'Failed to update program status.' };
   }
 }
 
@@ -113,9 +113,9 @@ export async function toggleChecklistItemAction(childId: string, documentName: s
     setChecklistItemCollected(childId, documentName, isCollected, programId);
     revalidatePath('/dashboard');
     return { success: true };
-  } catch (err: any) {
+  } catch (err) {
     console.error('Toggle checklist item error:', err);
-    return { error: err.message || 'Failed to update checklist item.' };
+    return { error: err instanceof Error ? err.message : 'Failed to update checklist item.' };
   }
 }
 
@@ -139,9 +139,9 @@ export async function addReminderAction(childId: string, title: string, dueDate:
     createReminder(reminder);
     revalidatePath('/dashboard');
     return { success: true };
-  } catch (err: any) {
+  } catch (err) {
     console.error('Add reminder action error:', err);
-    return { error: err.message || 'Failed to add reminder.' };
+    return { error: err instanceof Error ? err.message : 'Failed to add reminder.' };
   }
 }
 
@@ -151,9 +151,9 @@ export async function toggleReminderAction(reminderId: string, isCompleted: bool
     toggleReminderCompleted(reminderId, isCompleted);
     revalidatePath('/dashboard');
     return { success: true };
-  } catch (err: any) {
+  } catch (err) {
     console.error('Toggle reminder error:', err);
-    return { error: err.message || 'Failed to toggle reminder status.' };
+    return { error: err instanceof Error ? err.message : 'Failed to toggle reminder status.' };
   }
 }
 
@@ -163,9 +163,9 @@ export async function deleteReminderAction(reminderId: string) {
     deleteReminder(reminderId);
     revalidatePath('/dashboard');
     return { success: true };
-  } catch (err: any) {
+  } catch (err) {
     console.error('Delete reminder error:', err);
-    return { error: err.message || 'Failed to delete reminder.' };
+    return { error: err instanceof Error ? err.message : 'Failed to delete reminder.' };
   }
 }
 
@@ -180,9 +180,9 @@ export async function saveChildIepAction(
     if (!success) throw new Error('DB write failed');
     revalidatePath('/dashboard');
     return { success: true };
-  } catch (err: any) {
+  } catch (err) {
     console.error('Save child IEP action error:', err);
-    return { error: err.message || 'Failed to save child IEP plan.' };
+    return { error: err instanceof Error ? err.message : 'Failed to save child IEP plan.' };
   }
 }
 
@@ -196,8 +196,8 @@ export async function saveChildRespiteAction(
     if (!success) throw new Error('DB write failed');
     revalidatePath('/dashboard');
     return { success: true };
-  } catch (err: any) {
+  } catch (err) {
     console.error('Save child respite action error:', err);
-    return { error: err.message || 'Failed to save child respite parameters.' };
+    return { error: err instanceof Error ? err.message : 'Failed to save child respite parameters.' };
   }
 }

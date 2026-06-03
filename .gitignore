@@ -28,3 +28,4 @@ dist-ssr
 !frontend/ca_disability_crawler.db
 !frontend/ca_disability_navigator.db
 
+.vercel

@@ -2,8 +2,8 @@
 
 import { useState } from 'react';
 import { 
-  ShieldCheck, Phone, Mail, Globe, MapPin, Award, Search, Sparkles, 
-  SlidersHorizontal, Star, ChevronDown, ChevronUp, Send, FileText, Check 
+  Phone, Mail, Globe, MapPin, Award, Search, 
+  SlidersHorizontal, Star, ChevronDown, ChevronUp, Send 
 } from 'lucide-react';
 import CopyButton from '@/components/copy-button';
 import ContributionModal from '@/components/contribution-modal';
@@ -116,7 +116,7 @@ Best regards,
   const handleEmailTrigger = (email: string, advName: string) => {
     const subject = `IEP Advocacy Consultation Request - ${intakeChildName}`;
     const body = compileIntakeEmail(advName);
-    window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.assign(`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`);
   };
 
   return (
@@ -161,7 +161,7 @@ Best regards,
           
           <select
             value={sortBy}
-            onChange={(e) => setSortBy(e.target.value as any)}
+            onChange={(e) => setSortBy(e.target.value as 'experience' | 'price_asc' | 'price_desc' | 'default')}
             style={{
               padding: '0.5rem 2rem 0.5rem 1rem',
               fontSize: '0.85rem',
@@ -259,9 +259,9 @@ Best regards,
                       style={{ 
                         padding: '0.4rem 0.85rem', 
                         borderRadius: '999px', 
-                        backgroundColor: 'rgba(99, 102, 241, 0.08)', 
+                        backgroundColor: 'rgba(var(--primary-rgb), 0.08)', 
                         color: 'var(--primary-color)', 
-                        border: '1px solid rgba(99, 102, 241, 0.15)',
+                        border: '1px solid rgba(var(--primary-rgb), 0.15)',
                         fontSize: '0.82rem',
                         fontWeight: 600
                       }}
@@ -392,7 +392,7 @@ Best regards,
                               ))}
                             </div>
                           </div>
-                          <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', margin: '0.2rem 0', lineHeight: 1.4 }}>"{rev.text}"</p>
+                          <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', margin: '0.2rem 0', lineHeight: 1.4 }}>&quot;{rev.text}&quot;</p>
                           <span style={{ display: 'block', fontSize: '0.72rem', color: 'var(--text-light)' }}>Verified care review: {rev.date}</span>
                         </div>
                       ))
@@ -402,7 +402,7 @@ Best regards,
 
                 {/* 5. Intake Request Form Builder */}
                 {isIntakeExpanded && (
-                  <div style={{ background: 'rgba(99, 102, 241, 0.02)', border: '1px dashed var(--primary-color)', borderRadius: '16px', padding: '1.5rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem', marginTop: '0.5rem' }} className="iep-grid-layout">
+                  <div style={{ background: 'rgba(var(--primary-rgb), 0.02)', border: '1px dashed var(--primary-color)', borderRadius: '16px', padding: '1.5rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem', marginTop: '0.5rem' }} className="iep-grid-layout">
                     
                     {/* Left Form */}
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>

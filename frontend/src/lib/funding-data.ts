@@ -252,3 +252,114 @@ export function compileJustificationBulletPoints(answers: RespiteQuizAnswers): s
 
   return bullets.join('\n');
 }
+
+export interface RegionalCenterMetrics {
+  id: string;
+  name: string;
+  counties: string;
+  avgPosSpend: number;
+  avgRespiteHours: number;
+  utilizationRate: number;
+  disparityScore: number;
+  context: string;
+}
+
+export const REGIONAL_CENTER_METRICS: RegionalCenterMetrics[] = [
+  {
+    id: 'fdlrc',
+    name: 'Frank D. Lanterman Regional Center (FDLRC)',
+    counties: 'Los Angeles (Central, Hollywood, Pasadena)',
+    avgPosSpend: 16800,
+    avgRespiteHours: 28,
+    utilizationRate: 52,
+    disparityScore: 8,
+    context: 'Higher average POS spending but significant service delivery disparities across language/ethnic groups, particularly in respite and behavioral services. Staffing shortages in central LA impact utilization.'
+  },
+  {
+    id: 'sdrc',
+    name: 'San Diego Regional Center (SDRC)',
+    counties: 'San Diego, Imperial',
+    avgPosSpend: 11400,
+    avgRespiteHours: 18,
+    utilizationRate: 42,
+    disparityScore: 6,
+    context: 'Below average respite allocations. Imperial County clients face severe staffing deserts, resulting in a low 42% utilization of authorized hours.'
+  },
+  {
+    id: 'rceb',
+    name: 'Regional Center of the East Bay (RCEB)',
+    counties: 'Alameda, Contra Costa',
+    avgPosSpend: 15200,
+    avgRespiteHours: 24,
+    utilizationRate: 58,
+    disparityScore: 5,
+    context: 'Moderate-high utilization rate compared to southern CA. Strong local advocate presence, though waitlists for social-recreation programs have grown post-restoration.'
+  },
+  {
+    id: 'acrc',
+    name: 'Alta California Regional Center (ACRC)',
+    counties: 'Sacramento, Placer, Yolo, Alpine, El Dorado, Nevada, Sutter, Yuba',
+    avgPosSpend: 13900,
+    avgRespiteHours: 20,
+    utilizationRate: 64,
+    disparityScore: 4,
+    context: 'Relatively high utilization due to robust agency networks in Sacramento. However, rural counties (e.g. Alpine, Sierra) experience critical therapist shortage bottlenecks.'
+  },
+  {
+    id: 'irc',
+    name: 'Inland Regional Center (IRC)',
+    counties: 'Riverside, San Bernardino',
+    avgPosSpend: 9800,
+    avgRespiteHours: 16,
+    utilizationRate: 38,
+    disparityScore: 9,
+    context: 'California\'s largest regional center. Suffers from critical under-funding per capita and the lowest respite utilization (38%) in the state due to severe vendor wage gaps.'
+  },
+  {
+    id: 'rcoc',
+    name: 'Regional Center of Orange County (RCOC)',
+    counties: 'Orange',
+    avgPosSpend: 17300,
+    avgRespiteHours: 32,
+    utilizationRate: 61,
+    disparityScore: 7,
+    context: 'High average spending and respite authorization levels. However, audit reports show substantial POS funding gaps between English-speaking and non-English-speaking households.'
+  },
+  {
+    id: 'ggrc',
+    name: 'Golden Gate Regional Center (GGRC)',
+    counties: 'San Francisco, Marin, San Mateo',
+    avgPosSpend: 18500,
+    avgRespiteHours: 30,
+    utilizationRate: 46,
+    disparityScore: 3,
+    context: 'Highest average POS expenditure per consumer in the state, driven by high cost of living. However, recruitment of respite workers in SF/Marin is extremely difficult.'
+  },
+  {
+    id: 'vmrc',
+    name: 'Valley Mountain Regional Center (VMRC)',
+    counties: 'San Joaquin, Stanislaus, Amador, Calaveras, Tuolumne',
+    avgPosSpend: 12100,
+    avgRespiteHours: 22,
+    utilizationRate: 50,
+    disparityScore: 6,
+    context: 'Moderate spending with significant geographic disparities between Stockton urban centers and foothill counties (Amador/Calaveras) which lack localized respite providers.'
+  },
+  {
+    id: 'cvrc',
+    name: 'Central Valley Regional Center (CVRC)',
+    counties: 'Fresno, Kings, Madera, Mariposa, Merced, Tulare',
+    avgPosSpend: 10500,
+    avgRespiteHours: 18,
+    utilizationRate: 45,
+    disparityScore: 8,
+    context: 'Lower than average expenditures per client. Language access barriers for agricultural communities limit intake and authorization of specialized supervision.'
+  }
+];
+
+export const STATEWIDE_AVERAGES = {
+  avgPosSpend: 14100,
+  avgRespiteHours: 23,
+  utilizationRate: 50,
+  disparityScore: 6
+};

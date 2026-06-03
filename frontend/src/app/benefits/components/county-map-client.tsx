@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { MapPin, Info, Phone, Globe, Navigation, Sparkles } from 'lucide-react';
+import { MapPin, Info, Phone, Navigation } from 'lucide-react';
 
 interface MapResource {
   id: string;
@@ -25,7 +25,7 @@ export default function CountyMapClient({ countyName, resources }: CountyMapClie
 
   // Map category colors
   const typeColors: Record<string, { bg: string; border: string; icon: string }> = {
-    'regional-center': { bg: 'rgba(99, 102, 241, 0.1)', border: 'var(--primary-color)', icon: '#6366f1' },
+    'regional-center': { bg: 'rgba(var(--primary-rgb), 0.1)', border: 'var(--primary-color)', icon: 'var(--primary-color)' },
     'school-board': { bg: 'rgba(16, 185, 129, 0.1)', border: '#10b981', icon: '#10b981' },
     'clinic': { bg: 'rgba(239, 68, 68, 0.1)', border: '#ef4444', icon: '#ef4444' },
     'park': { bg: 'rgba(245, 158, 11, 0.1)', border: '#f59e0b', icon: '#f59e0b' },
@@ -53,7 +53,7 @@ export default function CountyMapClient({ countyName, resources }: CountyMapClie
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem' }}>
           <h3 style={{ fontSize: '1.2rem', fontWeight: 700, margin: 0, display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
             <MapPin size={18} color="var(--primary-color)" />
-            Interactive Resource Coordinates Map
+            Interactive {countyName} Resource Coordinates Map
           </h3>
           <span style={{ fontSize: '0.8rem', color: 'var(--text-light)', fontStyle: 'italic' }}>
             Hover or click pins to inspect county assets
@@ -73,7 +73,7 @@ export default function CountyMapClient({ countyName, resources }: CountyMapClie
           }}
         >
           {/* Grid lines to make it look technical and dashboard-like */}
-          <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(99,102,241,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(99,102,241,0.03) 1px, transparent 1px)', backgroundSize: '25px 25px', pointerEvents: 'none' }} />
+          <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(var(--primary-rgb),0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(var(--primary-rgb),0.03) 1px, transparent 1px)', backgroundSize: '25px 25px', pointerEvents: 'none' }} />
 
           <svg 
             viewBox="0 0 800 450" 
@@ -82,8 +82,8 @@ export default function CountyMapClient({ countyName, resources }: CountyMapClie
             {/* Draw county border shape (representation) */}
             <path 
               d="M 150 100 Q 300 80 450 120 T 650 180 Q 700 300 620 380 T 400 400 Q 250 420 180 340 T 150 100 Z" 
-              fill="rgba(99, 102, 241, 0.02)" 
-              stroke="rgba(99, 102, 241, 0.12)" 
+              fill="rgba(var(--primary-rgb), 0.02)" 
+              stroke="rgba(var(--primary-rgb), 0.12)" 
               strokeWidth="3" 
               strokeDasharray="5,5"
             />

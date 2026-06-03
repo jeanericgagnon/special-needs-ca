@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { HelpCircle, RefreshCw, Sparkles, Smile, ShieldAlert, Award, FileText } from 'lucide-react';
+import { HelpCircle, ShieldAlert } from 'lucide-react';
 
 export default function RespiteExplainer() {
   const [ageRange, setAgeRange] = useState<string>('under-3');
@@ -69,7 +69,7 @@ export default function RespiteExplainer() {
         {/* Left: Explainer text */}
         <div style={{ fontSize: '0.92rem', color: 'var(--text-light)', lineHeight: '1.6' }}>
           <p style={{ marginBottom: '1rem' }}>
-            Many caregivers are shocked when a California Regional Center awards them <strong>0 hours</strong> of respite care. This happens because respite is governed by the concept of <strong>"Extraordinary Care Requirements."</strong>
+            Many caregivers are shocked when a California Regional Center awards them <strong>0 hours</strong> of respite care. This happens because respite is governed by the concept of <strong>&quot;Extraordinary Care Requirements.&quot;</strong>
           </p>
           <p style={{ marginBottom: '1rem' }}>
             Under DDS guidelines, Regional Centers assume parents are naturally responsible for the basic supervision, cleaning, and feeding of their children. They will only fund respite if caregiving demands are **substantially greater** than those of a typically developing child of the identical age.
@@ -80,11 +80,11 @@ export default function RespiteExplainer() {
               <ShieldAlert size={14} color="#ef4444" /> Why Eli Got 0 Hours:
             </strong>
             <span style={{ fontSize: '0.82rem', display: 'block', lineHeight: '1.4' }}>
-              If a child is 2 years old and potty-trained/non-verbal, the intake team will argue that <em>all</em> 2-year-olds need diapers changed and constant supervision, claiming no "extraordinary care" threshold is met yet.
+              If a child is 2 years old and potty-trained/non-verbal, the intake team will argue that <em>all</em> 2-year-olds need diapers changed and constant supervision, claiming no &quot;extraordinary care&quot; threshold is met yet.
             </span>
           </div>
 
-          <strong style={{ color: 'var(--text-main)', display: 'block', fontSize: '0.9rem', marginBottom: '0.5rem' }}>How to prove "Extraordinary Care":</strong>
+          <strong style={{ color: 'var(--text-main)', display: 'block', fontSize: '0.9rem', marginBottom: '0.5rem' }}>How to prove &quot;Extraordinary Care&quot;:</strong>
           <ul style={{ paddingLeft: '1.2rem', display: 'flex', flexDirection: 'column', gap: '0.35rem', margin: 0 }}>
             <li>Log extreme safety concerns (pica/eating non-food, eloping, head-banging).</li>
             <li>Document severe sleep disruption (child awake 2-4 hours every night).</li>
@@ -167,8 +167,8 @@ export default function RespiteExplainer() {
             <div style={{ 
               padding: '1rem', 
               borderRadius: '10px', 
-              backgroundColor: 'rgba(99, 102, 241, 0.03)',
-              border: `1px solid rgba(99, 102, 241, 0.1)`
+              backgroundColor: 'rgba(var(--primary-rgb), 0.03)',
+              border: `1px solid rgba(var(--primary-rgb), 0.1)`
             }}>
               <span style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--text-light)' }}>
                 Estimated Assessment Output:

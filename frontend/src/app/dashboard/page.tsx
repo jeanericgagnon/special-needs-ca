@@ -15,10 +15,25 @@ import {
   getChildIepData,
   getChildRespiteData
 } from '@/lib/db';
+import type {
+  CoreProgramMatch,
+  Program,
+  ProgramStatus,
+  ChecklistItem,
+  Reminder,
+  ChildIepData,
+  ChildRespiteData,
+  County,
+  CountyOffice,
+  SchoolDistrict,
+  NonprofitOrganization,
+  RegionalCenter,
+  Selpa
+} from '@/lib/db';
 import DashboardClient from './dashboard-client';
 
 interface PageProps {
-  searchParams: Promise<{ childId?: string }>;
+  searchParams: Promise<{ childId?: string; tab?: string; sub?: string }>;
 }
 
 function getAgeInYears(dobString: string): number {
@@ -48,20 +63,28 @@ export default async function DashboardPage({ searchParams }: PageProps) {
   const conditions = getTaxonomyConditions();
   const needs = getFunctionalNeeds();
 
-  // 3. Identify selected child profile
+  // 3. Identify selected child profile and query parameters
   const sParams = await searchParams;
   const selectedChildId = sParams.childId || (children.length > 0 ? children[0].id : null);
   const currentChild = children.find(c => c.id === selectedChildId) || children[0];
+  const initialTab = sParams.tab || null;
+  const initialSubTab = sParams.sub || null;
 
   // 4. Fetch child-specific dashboard datasets
-  let matchedPrograms: any[] = [];
-  let crawlerPrograms: any[] = [];
-  let savedStatuses: any[] = [];
-  let savedChecklist: any[] = [];
-  let savedReminders: any[] = [];
-  let countyDetails: any = null;
-  let savedIepData: any = { accommodations: [], goals: [] };
-  let savedRespiteData: any = null;
+  let matchedPrograms: CoreProgramMatch[] = [];
+  let crawlerPrograms: Program[] = [];
+  let savedStatuses: ProgramStatus[] = [];
+  let savedChecklist: ChecklistItem[] = [];
+  let savedReminders: Reminder[] = [];
+  let countyDetails: (County & {
+    countyOffices: CountyOffice[];
+    schoolDistricts: SchoolDistrict[];
+    localOrganizations: NonprofitOrganization[];
+    regionalCenters: RegionalCenter[];
+    selpas: Selpa[];
+  }) | null = null;
+  let savedIepData: ChildIepData = { accommodations: [], goals: [] };
+  let savedRespiteData: ChildRespiteData | null = null;
 
   if (currentChild) {
     const age = getAgeInYears(currentChild.dob);
@@ -86,7 +109,7 @@ export default async function DashboardPage({ searchParams }: PageProps) {
     savedReminders = getReminders(currentChild.id);
 
     // Routing resources
-    countyDetails = getCountyDetails(currentChild.county_id);
+    countyDetails = getCountyDetails(currentChild.county_id) || null;
     
     // IEP & Respite child specific configurations
     savedIepData = getChildIepData(currentChild.id);
@@ -108,6 +131,8 @@ export default async function DashboardPage({ searchParams }: PageProps) {
       countyDetails={countyDetails}
       savedIepData={savedIepData}
       savedRespiteData={savedRespiteData}
+      initialTab={initialTab}
+      initialSubTab={initialSubTab}
     />
   );
 }

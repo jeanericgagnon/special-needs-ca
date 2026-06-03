@@ -9,17 +9,19 @@ export default function ThemeToggle() {
 
   useEffect(() => {
     // Only run on client to avoid server-side hydration mismatches
-    setMounted(true);
-    const savedTheme = localStorage.getItem('theme');
-    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
-    if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
-      document.documentElement.classList.add('dark');
-      setTheme('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-      setTheme('light');
-    }
+    setTimeout(() => {
+      setMounted(true);
+      const savedTheme = localStorage.getItem('theme');
+      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      
+      if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+        document.documentElement.classList.add('dark');
+        setTheme('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+        setTheme('light');
+      }
+    }, 0);
   }, []);
 
   const toggleTheme = () => {

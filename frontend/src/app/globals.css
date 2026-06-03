@@ -1,27 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
-  --glass-bg: rgba(255, 255, 255, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.5);
-  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
-  --primary-color: #6366f1; /* Soft Indigo */
-  --primary-hover: #4f46e5;
-  --text-main: #1f2937;
-  --text-light: #6b7280;
-  --accent-gradient: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+  --bg-gradient: linear-gradient(135deg, #fdfbf7 0%, #f5ece1 100%);
+  --glass-bg: rgba(255, 255, 255, 0.75);
+  --glass-border: rgba(215, 204, 185, 0.4);
+  --glass-shadow: 0 8px 32px 0 rgba(115, 95, 75, 0.06);
+  --primary-rgb: 15, 118, 110;
+  --primary-color: #0f766e;
+  --primary-hover: #0d9488;
+  --text-main: #2d3748;
+  --text-light: #64748b;
+  --accent-gradient: linear-gradient(135deg, #0f766e 0%, #d97706 100%);
 }
 
 :root.dark {
-  --bg-gradient: linear-gradient(135deg, #090d16 0%, #0f172a 100%);
-  --glass-bg: rgba(15, 23, 42, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.08);
-  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-  --primary-color: #818cf8;
-  --primary-hover: #6366f1;
-  --text-main: #f8fafc;
+  --bg-gradient: linear-gradient(135deg, #101618 0%, #172124 100%);
+  --glass-bg: rgba(22, 32, 34, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.07);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.35);
+  --primary-rgb: 45, 212, 191;
+  --primary-color: #2dd4bf;
+  --primary-hover: #14b8a6;
+  --text-main: #f1f5f9;
   --text-light: #94a3b8;
-  --accent-gradient: linear-gradient(135deg, #6366f1 0%, #a78bfa 100%);
+  --accent-gradient: linear-gradient(135deg, #2dd4bf 0%, #fbbf24 100%);
 }
 
 * {
@@ -117,7 +119,7 @@ input, select, textarea {
 
 input:focus, select:focus, textarea:focus {
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+  box-shadow: 0 0 0 3px rgba(var(--primary-rgb), 0.15);
 }
 
 /* Buttons */
@@ -161,7 +163,7 @@ input:focus, select:focus, textarea:focus {
 /* Program Card specifics */
 .program-tag {
   display: inline-block;
-  background: rgba(99, 102, 241, 0.1);
+  background: rgba(var(--primary-rgb), 0.1);
   color: var(--primary-color);
   padding: 0.25rem 0.75rem;
   border-radius: 999px;
@@ -260,7 +262,7 @@ input:focus, select:focus, textarea:focus {
 
 .nav-dropdown-trigger:hover {
   color: var(--primary-color);
-  background: rgba(99, 102, 241, 0.05);
+  background: rgba(var(--primary-rgb), 0.05);
 }
 
 .nav-dropdown-menu {
@@ -299,7 +301,7 @@ input:focus, select:focus, textarea:focus {
 }
 
 .nav-dropdown-item:hover {
-  background: rgba(99, 102, 241, 0.08);
+  background: rgba(var(--primary-rgb), 0.08);
   color: var(--primary-color);
 }
 
@@ -317,7 +319,7 @@ input:focus, select:focus, textarea:focus {
 .nav-btn-signup:hover {
   background: var(--primary-hover);
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.15);
+  box-shadow: 0 4px 12px rgba(var(--primary-rgb), 0.15);
 }
 
 .nav-btn-logout {
@@ -429,7 +431,7 @@ input[type="checkbox"] {
 
 .autocomplete-item:hover,
 .autocomplete-item.highlighted {
-  background: rgba(99, 102, 241, 0.08);
+  background: rgba(var(--primary-rgb), 0.08);
   color: var(--primary-color);
   font-weight: 500;
 }
@@ -442,7 +444,7 @@ input[type="checkbox"] {
 
 .autocomplete-item-custom:hover,
 .autocomplete-item-custom.highlighted {
-  background: rgba(99, 102, 241, 0.04);
+  background: rgba(var(--primary-rgb), 0.04);
   color: var(--primary-color);
 }
 
@@ -476,7 +478,7 @@ input[type="checkbox"] {
 
 :root.dark .autocomplete-item:hover,
 :root.dark .autocomplete-item.highlighted {
-  background: rgba(99, 102, 241, 0.2);
+  background: rgba(var(--primary-rgb), 0.2);
   color: #818cf8;
 }
 
