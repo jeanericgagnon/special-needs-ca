@@ -336,6 +336,12 @@ export default function DashboardClient({
   // Expanded program state for Benefits
   const [expandedProgramId, setExpandedProgramId] = useState<string | null>(null);
 
+  // Milestone Tracker State
+  const [timelineTemplate, setTimelineTemplate] = useState<'iep' | 'rc' | 'ihss'>('iep');
+  const [submissionDate, setSubmissionDate] = useState('');
+  const [iepAssessmentSignedDate, setIepAssessmentSignedDate] = useState('');
+  const [activeBreachLetter, setActiveBreachLetter] = useState<string | null>(null);
+
   // ----------------------------------------------------
   // Sync state to/from URL search parameters
   // ----------------------------------------------------
@@ -1350,6 +1356,279 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
 
   const handleDeleteReminder = async (remId: string) => {
     await deleteReminderAction(remId);
+  };
+
+  interface MilestoneInfo {
+    id: string;
+    title: string;
+    citation: string;
+    dueDate: string;
+    daysRemaining: number;
+    breachType: string;
+    stage: number;
+    description: string;
+  }
+
+  const getMilestones = (): MilestoneInfo[] => {
+    if (!submissionDate) return [];
+    const sub = new Date(submissionDate + 'T00:00:00');
+    if (isNaN(sub.getTime())) return [];
+
+    const formatDate = (d: Date) => {
+      return d.toISOString().split('T')[0];
+    };
+
+    const addDays = (d: Date, days: number) => {
+      const result = new Date(d);
+      result.setDate(result.getDate() + days);
+      return result;
+    };
+
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    if (timelineTemplate === 'iep') {
+      const planDue = addDays(sub, 15);
+      const daysToPlan = Math.ceil((planDue.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
+      
+      let meetingDue: Date;
+      if (iepAssessmentSignedDate) {
+        const signed = new Date(iepAssessmentSignedDate + 'T00:00:00');
+        meetingDue = addDays(signed, 60);
+      } else {
+        meetingDue = addDays(sub, 75);
+      }
+      const daysToMeeting = Math.ceil((meetingDue.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
+
+      return [
+        {
+          id: 'iep-plan',
+          title: 'Assessment Plan Provided by District',
+          citation: 'CA Ed Code § 56321',
+          dueDate: formatDate(planDue),
+          daysRemaining: daysToPlan,
+          breachType: 'iep-15-day',
+          stage: 1,
+          description: 'The school district must provide a proposed Assessment Plan to the parent within 15 calendar days of the initial written referral.'
+        },
+        {
+          id: 'iep-meeting',
+          title: 'IEP Assessment Complete & Meeting Held',
+          citation: 'CA Ed Code § 56344(a)',
+          dueDate: formatDate(meetingDue),
+          daysRemaining: daysToMeeting,
+          breachType: 'iep-60-day',
+          stage: 2,
+          description: 'The district must complete the assessments and hold the IEP team eligibility/placement meeting within 60 calendar days of receiving the signed Assessment Plan.'
+        }
+      ];
+    } else if (timelineTemplate === 'rc') {
+      const intakeDue = addDays(sub, 15);
+      const daysToIntake = Math.ceil((intakeDue.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
+
+      const eligibilityDue = addDays(sub, 120);
+      const daysToElig = Math.ceil((eligibilityDue.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
+
+      return [
+        {
+          id: 'rc-intake',
+          title: 'Initial Intake Interview Completed',
+          citation: 'Welfare & Institutions Code § 4642(a)',
+          dueDate: formatDate(intakeDue),
+          daysRemaining: daysToIntake,
+          breachType: 'rc-15-day',
+          stage: 1,
+          description: 'Regional Center intake and assessment services must be initiated/performed within 15 consecutive days of the initial request.'
+        },
+        {
+          id: 'rc-eligibility',
+          title: 'Eligibility Determined & IPP Held',
+          citation: 'Welfare & Institutions Code § 4642 & 4646',
+          dueDate: formatDate(eligibilityDue),
+          daysRemaining: daysToElig,
+          breachType: 'rc-120-day',
+          stage: 2,
+          description: 'The Regional Center has a maximum of 120 days from the initial request to finalize eligibility determination and hold the IPP meeting.'
+        }
+      ];
+    } else {
+      const visitDue = addDays(sub, 30);
+      const daysToVisit = Math.ceil((visitDue.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
+
+      return [
+        {
+          id: 'ihss-decision',
+          title: 'County In-Home Assessment & Decision',
+          citation: 'CDSS MPP § 30-759.2',
+          dueDate: formatDate(visitDue),
+          daysRemaining: daysToVisit,
+          breachType: 'ihss-30-day',
+          stage: 1,
+          description: 'The county welfare department has a maximum of 30 calendar days from the date of application (or SOC 873 medical form receipt) to perform the home visit and issue an eligibility determination.'
+        }
+      ];
+    }
+  };
+
+  const compileBreachLetter = (breachType: string, milestone: MilestoneInfo) => {
+    if (!currentChild) return '';
+    const childCounty = counties.find(c => c.id === currentChild.county_id);
+    const countyName = childCounty ? childCounty.name : '[County Name]';
+    const todayStr = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    const dobStr = currentChild.dob ? new Date(currentChild.dob).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : '[Child Date of Birth]';
+    const districtName = countyDetails?.schoolDistricts?.[0]?.name || '[School District Name]';
+    const rcName = countyDetails?.regionalCenters?.[0]?.name || '[Regional Center Name]';
+    const daysOverdue = Math.abs(milestone.daysRemaining);
+
+    const formattedSubDate = submissionDate ? new Date(submissionDate + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : '[Submission Date]';
+    const formattedDueDate = milestone.dueDate ? new Date(milestone.dueDate + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : '[Due Date]';
+
+    switch (breachType) {
+      case 'iep-15-day':
+        return `Subject: URGENT: Special Education Assessment Plan Overdue - ${currentChild.nickname}
+
+To: Director of Special Education / IEP Coordinator
+${districtName}
+${countyName} County, CA
+
+Date: ${todayStr}
+
+Dear Special Education Administrator,
+
+I am writing to follow up on the written referral for a special education assessment for my child, ${currentChild.nickname} (DOB: ${dobStr}), which was submitted to the district on ${formattedSubDate}.
+
+Under California Education Code Section 56321, the school district is required to provide parents with a proposed Assessment Plan within 15 calendar days of receiving a written referral. 
+
+As of today, ${todayStr}, it has been ${daysOverdue} days since my request, and the statutory deadline of ${formattedDueDate} has passed. I have not yet received the proposed Assessment Plan.
+
+Please provide the Assessment Plan immediately so that we can proceed with the necessary evaluations without further delay.
+
+Sincerely,
+
+[Parent Name]
+[Parent Signature]
+[Parent Contact Info]`;
+
+      case 'iep-60-day':
+        const formattedSignedDate = iepAssessmentSignedDate ? new Date(iepAssessmentSignedDate + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : '[Signed Date]';
+        return `Subject: URGENT: Demand for IEP Eligibility/Placement Meeting - ${currentChild.nickname}
+
+To: IEP Coordinator / Case Manager
+${districtName}
+${countyName} County, CA
+
+Date: ${todayStr}
+
+Dear IEP Coordinator,
+
+I am writing to formally request the immediate scheduling of an IEP meeting for my child, ${currentChild.nickname} (DOB: ${dobStr}).
+
+On ${formattedSignedDate}, I returned the signed Assessment Plan consenting to special education evaluations. According to California Education Code Section 56344(a), the school district must complete all assessments and hold an IEP team meeting to determine eligibility and placement within 60 calendar days of receiving the signed consent.
+
+The 60-day statutory deadline was ${formattedDueDate}. Today is ${todayStr} (which is ${daysOverdue} days past the deadline), and an IEP meeting has not yet been scheduled or held.
+
+Please contact me immediately to schedule the IEP meeting.
+
+Sincerely,
+
+[Parent Name]
+[Parent Signature]
+[Parent Contact Info]`;
+
+      case 'rc-15-day':
+        return `Subject: URGENT: Request for Intake Appointment - W&I Code § 4642 - ${currentChild.nickname}
+
+To: Intake Coordinator
+${rcName}
+
+Date: ${todayStr}
+
+Dear Intake Coordinator,
+
+I am writing to follow up on the request for Regional Center services for my child, ${currentChild.nickname} (DOB: ${dobStr}), submitted on ${formattedSubDate}.
+
+Pursuant to California Welfare and Institutions Code Section 4642(a), intake and assessment services must be performed within 15 consecutive days of the initial request for services. 
+
+The 15-day statutory deadline was ${formattedDueDate}. As of today, it has been ${daysOverdue} days since my request and the intake interview has not been completed.
+
+Please contact me immediately to schedule the intake appointment.
+
+Sincerely,
+
+[Parent Name]
+[Parent Signature]
+[Parent Contact Info]`;
+
+      case 'rc-120-day':
+        return `Subject: URGENT: Demand for Eligibility Decision and IPP - W&I Code § 4642 - ${currentChild.nickname}
+
+To: Executive Director / Case Manager Supervisor
+${rcName}
+
+Date: ${todayStr}
+
+Dear Regional Center Director,
+
+I am writing to formally demand an eligibility determination and, if eligible, the immediate scheduling of an Individual Program Plan (IPP) meeting for my child, ${currentChild.nickname} (DOB: ${dobStr}).
+
+My initial request for intake and eligibility determination was submitted to the Regional Center on ${formattedSubDate}. Under California Welfare and Institutions Code Sections 4642(a) and 4646, the Regional Center must determine eligibility and complete the IPP within 120 days of the initial request.
+
+The 120-day statutory timeline expired on ${formattedDueDate}. Today is ${todayStr}, meaning the Regional Center is now ${daysOverdue} days out of compliance.
+
+Please contact me within 48 hours to confirm my child's eligibility status and schedule the IPP meeting.
+
+Sincerely,
+
+[Parent Name]
+[Parent Signature]
+[Parent Contact Info]`;
+
+      case 'ihss-30-day':
+        return `Subject: URGENT: Demand for In-Home Assessment & Eligibility Decision - MPP § 30-759.2 - ${currentChild.nickname}
+
+To: IHSS Social Work Supervisor
+County of ${countyName} Social Services Agency
+
+Date: ${todayStr}
+
+Dear IHSS Supervisor,
+
+I am writing regarding the In-Home Supportive Services (IHSS) application for my child, ${currentChild.nickname} (DOB: ${dobStr}), submitted on ${formattedSubDate}.
+
+Under California Department of Social Services (CDSS) Manual of Policies and Procedures (MPP) Section 30-759.2, the county welfare department is required to perform the in-home assessment and issue a notice of action within 30 days of receiving the application or the completed medical certification.
+
+The 30-day regulatory deadline was ${formattedDueDate}. Today is ${todayStr}, and it has been ${daysOverdue} days since the request, but the assessment and eligibility determination have not been completed.
+
+Please contact me immediately to schedule the in-home visit.
+
+Sincerely,
+
+[Parent Name]
+[Parent Signature]
+[Parent Contact Info]`;
+
+      default:
+        return '';
+    }
+  };
+
+  const handleSyncTimelineReminders = async (milestones: MilestoneInfo[]) => {
+    if (!currentChild) return;
+    try {
+      let syncedCount = 0;
+      for (const m of milestones) {
+        const title = `${m.title} (${m.citation})`;
+        const exists = savedReminders.some(r => r.title === title && r.child_id === currentChild.id);
+        if (!exists) {
+          await addReminderAction(currentChild.id, title, m.dueDate, m.id);
+          syncedCount++;
+        }
+      }
+      alert(syncedCount > 0 ? `Successfully synchronized ${syncedCount} timeline alarms to your Agenda.` : 'Timelines are already synced to your Alert Agenda.');
+    } catch (e) {
+      console.error(e);
+      alert('Failed to sync timelines to Alert Agenda.');
+    }
   };
 
   const handleDeleteChild = async (childId: string) => {
@@ -4549,69 +4828,309 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
             {activeTab === 'actions' && (
               <div className="animate-fade-in" style={{ display: 'grid', gridTemplateColumns: '1fr 340px', gap: '2rem', alignItems: 'start' }}>
                 
-                {/* Checklists */}
-                <div className="glass-panel" style={{ background: 'rgba(255,255,255,0.85)', padding: '2rem' }}>
-                  <h3 style={{ fontSize: '1.25rem', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
-                    <FileCheck size={20} color="var(--primary-color)" />
-                    Document Gathering Status
-                  </h3>
+                {/* Left Column: Checklists & Timeline Tracker */}
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+                  
+                  {/* Checklists */}
+                  <div className="glass-panel" style={{ background: 'rgba(255,255,255,0.85)', padding: '2rem' }}>
+                    <h3 style={{ fontSize: '1.25rem', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
+                      <FileCheck size={20} color="var(--primary-color)" />
+                      Document Gathering Status
+                    </h3>
 
-                  {savedChecklist.length > 0 && (
-                    (() => {
-                      const totalDocs = savedChecklist.length;
-                      const collectedDocs = savedChecklist.filter(item => item.is_collected === 1).length;
-                      const pct = Math.round((collectedDocs / totalDocs) * 100);
-                      
-                      return (
-                        <div style={{ padding: '1rem', borderRadius: '12px', background: 'rgba(var(--primary-rgb), 0.04)', border: '1px solid rgba(var(--primary-rgb), 0.08)', marginBottom: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.85rem' }}>
-                            <span style={{ fontWeight: 600 }}>Master Checklist Progress</span>
-                            <span style={{ fontWeight: 700, color: 'var(--primary-color)' }}>{collectedDocs} of {totalDocs} files ({pct}%)</span>
+                    {savedChecklist.length > 0 && (
+                      (() => {
+                        const totalDocs = savedChecklist.length;
+                        const collectedDocs = savedChecklist.filter(item => item.is_collected === 1).length;
+                        const pct = Math.round((collectedDocs / totalDocs) * 100);
+                        
+                        return (
+                          <div style={{ padding: '1rem', borderRadius: '12px', background: 'rgba(var(--primary-rgb), 0.04)', border: '1px solid rgba(var(--primary-rgb), 0.08)', marginBottom: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.85rem' }}>
+                              <span style={{ fontWeight: 600 }}>Master Checklist Progress</span>
+                              <span style={{ fontWeight: 700, color: 'var(--primary-color)' }}>{collectedDocs} of {totalDocs} files ({pct}%)</span>
+                            </div>
+                            <div style={{ height: '6px', width: '100%', backgroundColor: 'rgba(0,0,0,0.05)', borderRadius: '3px', overflow: 'hidden' }}>
+                              <div style={{ height: '100%', width: `${pct}%`, backgroundColor: 'var(--primary-color)', transition: 'width 0.4s ease' }} />
+                            </div>
                           </div>
-                          <div style={{ height: '6px', width: '100%', backgroundColor: 'rgba(0,0,0,0.05)', borderRadius: '3px', overflow: 'hidden' }}>
-                            <div style={{ height: '100%', width: `${pct}%`, backgroundColor: 'var(--primary-color)', transition: 'width 0.4s ease' }} />
-                          </div>
-                        </div>
-                      );
-                    })()
-                  )}
+                        );
+                      })()
+                    )}
 
-                  {savedChecklist.length === 0 ? (
-                    <div style={{ textAlign: 'center', padding: '2rem 1rem' }}>
-                      <p style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>Check eligibility results and set their statuses to &quot;Applied&quot; or &quot;Waiting&quot; to populate checklist files.</p>
-                    </div>
-                  ) : (
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                      {savedChecklist.map(item => (
-                        <div 
-                          key={item.id}
-                          style={{ 
-                            display: 'flex', 
-                            alignItems: 'center', 
-                            justifyContent: 'space-between', 
-                            padding: '0.6rem 1rem',
-                            borderBottom: '1px solid rgba(0,0,0,0.04)',
-                            background: item.is_collected === 1 ? 'rgba(var(--primary-rgb),0.02)' : 'transparent'
+                    {savedChecklist.length === 0 ? (
+                      <div style={{ textAlign: 'center', padding: '2rem 1rem' }}>
+                        <p style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>Check eligibility results and set their statuses to &quot;Applied&quot; or &quot;Waiting&quot; to populate checklist files.</p>
+                      </div>
+                    ) : (
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                        {savedChecklist.map(item => (
+                          <div 
+                            key={item.id}
+                            style={{ 
+                              display: 'flex', 
+                              alignItems: 'center', 
+                              justifyContent: 'space-between', 
+                              padding: '0.6rem 1rem',
+                              borderBottom: '1px solid rgba(0,0,0,0.04)',
+                              background: item.is_collected === 1 ? 'rgba(var(--primary-rgb),0.02)' : 'transparent'
+                            }}
+                          >
+                            <label style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', cursor: 'pointer', flex: 1 }}>
+                              <input 
+                                type="checkbox"
+                                checked={item.is_collected === 1}
+                                onChange={(e) => handleDocToggle(item.document_name, e.target.checked, item.program_id || '')}
+                                style={{ width: 'auto' }}
+                              />
+                              <div>
+                                <strong style={{ fontSize: '0.9rem', textDecoration: item.is_collected === 1 ? 'line-through' : 'none' }}>{item.document_name}</strong>
+                                <span style={{ display: 'block', fontSize: '0.72rem', color: 'var(--text-light)' }}>
+                                  Program: {matchedPrograms.find(p => p.id === item.program_id)?.name || item.program_id}
+                                </span>
+                              </div>
+                            </label>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Statutory Timeline & Milestone Tracker */}
+                  <div className="glass-panel animate-fade-in" style={{ background: 'rgba(255,255,255,0.85)', padding: '2rem' }}>
+                    <h3 style={{ fontSize: '1.25rem', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
+                      <Clock size={20} color="var(--primary-color)" />
+                      Statutory Timeline & Milestone Tracker
+                    </h3>
+                    <p style={{ color: 'var(--text-light)', fontSize: '0.85rem', marginBottom: '1.5rem', lineHeight: 1.5 }}>
+                      Input the date you submitted formal requests to California agencies (IEP, Regional Center, or IHSS) to compute legally mandated response deadlines and download compliance letters.
+                    </p>
+
+                    {/* Pathway Selection */}
+                    <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.5rem', flexWrap: 'wrap' }}>
+                      {[
+                        { id: 'iep' as const, label: 'School District IEP' },
+                        { id: 'rc' as const, label: 'Regional Center Lanterman' },
+                        { id: 'ihss' as const, label: 'County IHSS personal care' }
+                      ].map(tab => (
+                        <button
+                          key={tab.id}
+                          type="button"
+                          onClick={() => {
+                            setTimelineTemplate(tab.id);
+                            setSubmissionDate('');
+                            setIepAssessmentSignedDate('');
+                            setActiveBreachLetter(null);
+                          }}
+                          className={timelineTemplate === tab.id ? 'tab-btn active' : 'tab-btn'}
+                          style={{
+                            padding: '0.5rem 1rem',
+                            fontSize: '0.85rem',
+                            borderRadius: '8px',
+                            border: '1px solid rgba(0,0,0,0.06)',
+                            fontWeight: 500,
+                            cursor: 'pointer',
+                            color: timelineTemplate === tab.id ? 'white' : 'var(--text-main)',
+                            background: timelineTemplate === tab.id ? 'var(--primary-color)' : 'rgba(255,255,255,0.7)'
                           }}
                         >
-                          <label style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', cursor: 'pointer', flex: 1 }}>
-                            <input 
-                              type="checkbox"
-                              checked={item.is_collected === 1}
-                              onChange={(e) => handleDocToggle(item.document_name, e.target.checked, item.program_id || '')}
-                              style={{ width: 'auto' }}
-                            />
-                            <div>
-                              <strong style={{ fontSize: '0.9rem', textDecoration: item.is_collected === 1 ? 'line-through' : 'none' }}>{item.document_name}</strong>
-                              <span style={{ display: 'block', fontSize: '0.72rem', color: 'var(--text-light)' }}>
-                                Program: {matchedPrograms.find(p => p.id === item.program_id)?.name || item.program_id}
-                              </span>
-                            </div>
-                          </label>
-                        </div>
+                          {tab.label}
+                        </button>
                       ))}
                     </div>
-                  )}
+
+                    {/* Date Inputs */}
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginBottom: '1.5rem' }}>
+                      <div className="input-group" style={{ marginBottom: 0 }}>
+                        <label style={{ fontSize: '0.75rem', fontWeight: 600, display: 'block', marginBottom: '0.3rem' }}>
+                          {timelineTemplate === 'iep' && 'IEP Referral Submission Date'}
+                          {timelineTemplate === 'rc' && 'Regional Center Request Date'}
+                          {timelineTemplate === 'ihss' && 'IHSS Application or SOC 873 Date'}
+                        </label>
+                        <input
+                          type="date"
+                          value={submissionDate}
+                          onChange={(e) => setSubmissionDate(e.target.value)}
+                          style={{ padding: '0.5rem', fontSize: '0.85rem', width: '100%', borderRadius: '8px', border: '1px solid rgba(0,0,0,0.08)' }}
+                        />
+                      </div>
+
+                      {timelineTemplate === 'iep' && (
+                        <div className="input-group" style={{ marginBottom: 0 }}>
+                          <label style={{ fontSize: '0.75rem', fontWeight: 600, display: 'block', marginBottom: '0.3rem' }}>
+                            Signed Assessment Plan Date <span style={{ fontWeight: 400, color: 'var(--text-light)' }}>(Optional)</span>
+                          </label>
+                          <input
+                            type="date"
+                            value={iepAssessmentSignedDate}
+                            onChange={(e) => setIepAssessmentSignedDate(e.target.value)}
+                            style={{ padding: '0.5rem', fontSize: '0.85rem', width: '100%', borderRadius: '8px', border: '1px solid rgba(0,0,0,0.08)' }}
+                          />
+                        </div>
+                      )}
+                    </div>
+
+                    {timelineTemplate === 'iep' && (
+                      <div style={{ padding: '0.75rem', background: 'rgba(245,158,11,0.05)', border: '1px solid rgba(245,158,11,0.15)', borderRadius: '8px', marginBottom: '1.5rem', display: 'flex', gap: '0.5rem', alignItems: 'flex-start' }}>
+                        <Info size={16} color="#d97706" style={{ marginTop: '2px', flexShrink: 0 }} />
+                        <span style={{ fontSize: '0.75rem', color: '#b45309', lineHeight: 1.4 }}>
+                          Note: California Education Code excludes school holidays and summer breaks exceeding 5 days from the 15-day and 60-day deadlines.
+                        </span>
+                      </div>
+                    )}
+
+                    {/* Calculated Milestones */}
+                    {submissionDate ? (
+                      (() => {
+                        const milestones = getMilestones();
+                        return (
+                          <div style={{ marginTop: '1.5rem', display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                              <h4 style={{ fontSize: '0.95rem', fontWeight: 600, margin: 0 }}>Computed Statutory Timelines</h4>
+                              <button
+                                type="button"
+                                onClick={() => handleSyncTimelineReminders(milestones)}
+                                className="btn-primary"
+                                style={{
+                                  padding: '0.4rem 0.8rem',
+                                  fontSize: '0.75rem',
+                                  borderRadius: '8px',
+                                  display: 'flex',
+                                  alignItems: 'center',
+                                  gap: '0.3rem',
+                                  width: 'auto',
+                                  cursor: 'pointer'
+                                }}
+                              >
+                                <Calendar size={12} /> Sync to Alarm Agenda
+                              </button>
+                            </div>
+
+                            {/* Timeline Stages */}
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', position: 'relative', paddingLeft: '1.5rem', borderLeft: '2px solid rgba(0,0,0,0.05)' }}>
+                              {milestones.map((m, idx) => {
+                                const isBreached = m.daysRemaining < 0;
+                                const isCompleted = savedReminders.some(r => r.title.startsWith(m.title) && r.child_id === currentChild?.id && r.is_completed === 1);
+
+                                return (
+                                  <div key={m.id} style={{ position: 'relative', marginBottom: idx < milestones.length - 1 ? '0.5rem' : 0 }}>
+                                    {/* Timeline dot */}
+                                    <div
+                                      style={{
+                                        position: 'absolute',
+                                        left: '-29px',
+                                        top: '4px',
+                                        width: '12px',
+                                        height: '12px',
+                                        borderRadius: '50%',
+                                        backgroundColor: isCompleted ? '#10b981' : isBreached ? '#ef4444' : 'var(--primary-color)',
+                                        border: '3px solid white',
+                                        boxShadow: '0 0 0 2px rgba(0,0,0,0.05)'
+                                      }}
+                                    />
+                                    
+                                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
+                                      <div>
+                                        <span style={{ fontSize: '0.88rem', fontWeight: 700, display: 'block', color: 'var(--text-main)' }}>
+                                          {m.title}
+                                        </span>
+                                        <span style={{ fontSize: '0.72rem', color: 'var(--primary-color)', fontWeight: 600, display: 'inline-block', marginRight: '0.5rem' }}>
+                                          {m.citation}
+                                        </span>
+                                        <span style={{ fontSize: '0.78rem', color: 'var(--text-light)', display: 'block', marginTop: '0.2rem', lineHeight: 1.4 }}>
+                                          {m.description}
+                                        </span>
+                                      </div>
+
+                                      <div style={{ textAlign: 'right', display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '0.25rem' }}>
+                                        <span style={{ fontSize: '0.8rem', fontWeight: 700, color: isBreached && !isCompleted ? '#ef4444' : 'var(--text-main)' }}>
+                                          Due: {m.dueDate}
+                                        </span>
+                                        {isCompleted ? (
+                                          <span style={{ fontSize: '0.7rem', color: '#10b981', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '0.2rem' }}>
+                                            <Check size={10} /> Completed
+                                          </span>
+                                        ) : isBreached ? (
+                                          <span style={{ fontSize: '0.7rem', color: '#ef4444', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '0.2rem', padding: '0.1rem 0.4rem', background: '#fee2e2', borderRadius: '4px', border: '1px solid #fecaca' }}>
+                                            <ShieldAlert size={10} /> OVERDUE BY {Math.abs(m.daysRemaining)} DAYS
+                                          </span>
+                                        ) : (
+                                          <span style={{ fontSize: '0.7rem', color: m.daysRemaining <= 5 ? '#d97706' : 'var(--text-light)', fontWeight: 700 }}>
+                                            {m.daysRemaining} days remaining
+                                          </span>
+                                        )}
+                                      </div>
+                                    </div>
+
+                                    {/* Action if breached & not completed */}
+                                    {isBreached && !isCompleted && (
+                                      <div style={{ marginTop: '0.75rem', background: 'rgba(239,68,68,0.03)', border: '1px dashed rgba(239,68,68,0.2)', padding: '0.75rem', borderRadius: '8px' }}>
+                                        <p style={{ fontSize: '0.75rem', color: '#b91c1c', margin: '0 0 0.5rem 0', fontWeight: 500 }}>
+                                          This timeline is legally past due. You have the right to request immediate resolution.
+                                        </p>
+                                        <button
+                                          type="button"
+                                          onClick={() => setActiveBreachLetter(activeBreachLetter === m.breachType ? null : m.breachType)}
+                                          className="btn-secondary"
+                                          style={{
+                                            padding: '0.3rem 0.6rem',
+                                            fontSize: '0.7rem',
+                                            borderRadius: '6px',
+                                            display: 'inline-flex',
+                                            alignItems: 'center',
+                                            gap: '0.25rem',
+                                            cursor: 'pointer',
+                                            color: '#b91c1c',
+                                            borderColor: '#fca5a5',
+                                            background: '#fef2f2'
+                                          }}
+                                        >
+                                          <Mail size={12} /> {activeBreachLetter === m.breachType ? 'Hide Demand Letter' : 'Generate Compliance Letter'}
+                                        </button>
+
+                                        {activeBreachLetter === m.breachType && (
+                                          <div style={{ marginTop: '0.75rem', borderTop: '1px solid rgba(239,68,68,0.1)', paddingTop: '0.75rem' }}>
+                                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
+                                              <span style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-main)' }}>Copyable Email / Demand Letter</span>
+                                              <CopyButton text={compileBreachLetter(m.breachType, m)} size={12} />
+                                            </div>
+                                            <pre
+                                              style={{
+                                                padding: '0.75rem',
+                                                background: '#f8fafc',
+                                                border: '1px solid #e2e8f0',
+                                                borderRadius: '6px',
+                                                fontSize: '0.75rem',
+                                                whiteSpace: 'pre-wrap',
+                                                lineHeight: 1.5,
+                                                maxHeight: '220px',
+                                                overflowY: 'auto',
+                                                color: '#334155',
+                                                fontFamily: 'monospace',
+                                                margin: 0
+                                              }}
+                                            >
+                                              {compileBreachLetter(m.breachType, m)}
+                                            </pre>
+                                          </div>
+                                        )}
+                                      </div>
+                                    )}
+                                  </div>
+                                );
+                              })}
+                            </div>
+                          </div>
+                        );
+                      })()
+                    ) : (
+                      <div style={{ textAlign: 'center', padding: '1.5rem', background: 'rgba(0,0,0,0.01)', border: '1px dashed rgba(0,0,0,0.05)', borderRadius: '10px' }}>
+                        <p style={{ color: 'var(--text-light)', fontSize: '0.8rem', margin: 0 }}>
+                          Select your request/submission date above to calculate timelines.
+                        </p>
+                      </div>
+                    )}
+                  </div>
                 </div>
 
                 {/* Deadlines Sidebar */}
