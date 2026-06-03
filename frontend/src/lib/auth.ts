@@ -1,6 +1,13 @@
 import crypto from 'crypto';
 
-const SECRET_KEY = process.env.JWT_SECRET || 'california-special-needs-navigator-super-secret-key-2026';
+function getSecretKey(): string {
+  const secret = process.env.JWT_SECRET;
+  if (!secret) {
+    throw new Error('CRITICAL CONFIGURATION ERROR: JWT_SECRET environment variable is not defined. Failing closed.');
+  }
+  return secret;
+}
+
 const SALT_ROUNDS = 10000;
 const KEY_LEN = 64;
 const DIGEST = 'sha512';
@@ -39,7 +46,7 @@ export function signToken(payload: Omit<UserSession, 'exp'>, expiresInDays = 7):
   const body = Buffer.from(JSON.stringify({ ...payload, exp })).toString('base64url');
   
   const signature = crypto
-    .createHmac('sha256', SECRET_KEY)
+    .createHmac('sha256', getSecretKey())
     .update(`${header}.${body}`)
     .digest('base64url');
     
@@ -53,7 +60,7 @@ export function verifyToken(token: string): UserSession | null {
     const [header, body, signature] = parts;
     
     const expectedSignature = crypto
-      .createHmac('sha256', SECRET_KEY)
+      .createHmac('sha256', getSecretKey())
       .update(`${header}.${body}`)
       .digest('base64url');
       

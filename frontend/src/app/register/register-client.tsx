@@ -134,7 +134,7 @@ export default function RegisterClient({ counties, diagnosesList, needsList }: R
                     type="password" 
                     id="password" 
                     name="password"
-                    placeholder="Min 6 characters" 
+                    placeholder="Min 10 characters" 
                     required 
                     style={{ paddingLeft: '2.75rem' }}
                   />

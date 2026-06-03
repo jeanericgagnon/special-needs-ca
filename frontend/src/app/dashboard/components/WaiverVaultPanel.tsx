@@ -384,6 +384,11 @@ export default function WaiverVaultPanel() {
               })}
             </div>
           )}
+          
+          {/* Legal Disclaimer Footnote */}
+          <div style={{ marginTop: '2rem', padding: '1.25rem', borderTop: '1px dashed rgba(0,0,0,0.08)', fontSize: '0.78rem', color: 'var(--text-light)', lineHeight: 1.4 }}>
+            <strong>Legal & Estimates Disclaimer:</strong> All estimated care hours, respite allocations, and eligibility statements are based on typical California program parameters and are not guaranteed. Actual program eligibility, parental income deeming exemptions, and care hour authorizations are determined solely by county social workers (for IHSS), regional center caseworkers (for HCBS/institutional deeming), and CCS administrators. This tool does not provide legal or medical advice.
+          </div>
         </div>
       </div>
     </div>

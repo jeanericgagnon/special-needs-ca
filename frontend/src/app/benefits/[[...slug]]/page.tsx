@@ -1728,7 +1728,7 @@ export default async function BenefitsCatchAll({ params }: Props) {
 
         {/* Legal footnoting block for extreme E-E-A-T */}
         <div style={{ borderTop: '1px solid rgba(0,0,0,0.08)', paddingTop: '1.5rem', marginTop: '4rem', fontSize: '0.78rem', color: 'var(--text-light)', lineHeight: '1.4' }}>
-          <p><strong>Legal Disclaimer & Citations:</strong></p>
+          <p><strong>Legal Disclaimer & Citations:</strong> This information is compiled for educational, planning, and advocacy support, and does not constitute official legal or medical advice. Verification dates represent the last data-freshness synchronization with the California Department of Developmental Services (DDS), Department of Health Care Services (DHCS), and county social service registers. Actual eligibility outcomes are subject to individual agency assessments.</p>
           <ul style={{ paddingLeft: '1.2rem', margin: '0.5rem 0 0 0', display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
             <li>Lanterman Developmental Disabilities Services Act: California Welfare & Institutions (W&I) Code § 4600 et seq. assessments guidelines are enforced under W&I § 4646.</li>
             <li>In-Home Supportive Services (IHSS) Protective Supervision regulatory guidelines: California Department of Social Services (CDSS) Manual of Policies and Procedures (MPP) Section 30-757.</li>

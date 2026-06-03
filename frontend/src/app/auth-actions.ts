@@ -63,8 +63,8 @@ export async function registerAction(prevState: unknown, formData: FormData) {
     return { error: 'Passwords do not match.' };
   }
 
-  if (password.length < 6) {
-    return { error: 'Password must be at least 6 characters long.' };
+  if (password.length < 10) {
+    return { error: 'Password must be at least 10 characters long.' };
   }
 
   try {

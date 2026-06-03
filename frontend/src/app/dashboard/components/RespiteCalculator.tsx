@@ -829,6 +829,11 @@ Caregiver Parent`;
           </div>
         </div>
       )}
+      
+      {/* Legal & Financial Estimates Disclaimer */}
+      <div style={{ marginTop: '2.5rem', padding: '1.25rem', borderTop: '1px dashed rgba(0,0,0,0.08)', fontSize: '0.78rem', color: 'var(--text-light)', lineHeight: 1.4 }}>
+        <strong>Legal & Estimates Disclaimer:</strong> All calculations, tiers, SDP budget suggestions, deeming exemptions, and wealth protection recommendations are for educational and planning purposes only. Funding tiers, respite hours, FPL multipliers, FCPP copays, and special needs trusts are subject to changing state guidelines and individual county discretion (DDS, DHCS, or Social Security Administration). This calculator does not constitute official legal, tax, or medical advice.
+      </div>
     </div>
   );
 }
