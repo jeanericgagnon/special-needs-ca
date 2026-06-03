@@ -1,9 +1,0 @@
-{
-	"id": "FAbAVtMf7sIDq0i",
-	"json": "{\"id\":\"FAbAVtMf7sIDq0i\",\"url\":\"https://rarediseases.org/organizations/bhd-foundation/\",\"loadedUrl\":\"https://rarediseases.org/organizations/bhd-foundation/\",\"uniqueKey\":\"https://rarediseases.org/organizations/bhd-foundation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:15:34.108Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/organizations/bhd-foundation",
-	"url": "https://rarediseases.org/organizations/bhd-foundation/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "WQwr7mw9dEBeqcB",
-	"json": "{\"id\":\"WQwr7mw9dEBeqcB\",\"url\":\"https://www.ucdavis.edu/about/student-safety/report-crime-misconduct\",\"loadedUrl\":\"https://www.ucdavis.edu/about/student-safety/report-crime-misconduct\",\"uniqueKey\":\"https://www.ucdavis.edu/about/student-safety/report-crime-misconduct\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:42.625Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ucdavis.edu/about/student-safety/report-crime-misconduct",
-	"url": "https://www.ucdavis.edu/about/student-safety/report-crime-misconduct"
-}

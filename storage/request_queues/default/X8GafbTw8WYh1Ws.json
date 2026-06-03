@@ -1,9 +1,0 @@
-{
-	"id": "X8GafbTw8WYh1Ws",
-	"json": "{\"id\":\"X8GafbTw8WYh1Ws\",\"url\":\"https://www.cdss.ca.gov/reporting/file-a-complaint/discrimination-complaints\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/reporting/file-a-complaint/discrimination-complaints\",\"uniqueKey\":\"https://www.cdss.ca.gov/reporting/file-a-complaint/discrimination-complaints\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:36.470Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/reporting/file-a-complaint/discrimination-complaints",
-	"url": "https://www.cdss.ca.gov/reporting/file-a-complaint/discrimination-complaints"
-}

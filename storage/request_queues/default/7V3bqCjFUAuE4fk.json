@@ -1,9 +1,0 @@
-{
-	"id": "7V3bqCjFUAuE4fk",
-	"json": "{\"id\":\"7V3bqCjFUAuE4fk\",\"url\":\"https://www.dhcs.ca.gov/CalAIM/Pages/Centers-of-Excellence.aspx\",\"loadedUrl\":\"https://www.dhcs.ca.gov/calaim-transforming-medi-cal/centers-of-excellence/\",\"uniqueKey\":\"https://www.dhcs.ca.gov/CalAIM/Pages/Centers-of-Excellence.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:53:06.132Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dhcs.ca.gov/CalAIM/Pages/Centers-of-Excellence.aspx",
-	"url": "https://www.dhcs.ca.gov/CalAIM/Pages/Centers-of-Excellence.aspx"
-}

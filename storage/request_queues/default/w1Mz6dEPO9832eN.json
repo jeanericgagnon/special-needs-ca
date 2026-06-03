@@ -1,9 +1,0 @@
-{
-	"id": "w1Mz6dEPO9832eN",
-	"json": "{\"id\":\"w1Mz6dEPO9832eN\",\"url\":\"https://health.ucdavis.edu/children/team/42636/anh-nguyen-pediatric-allergy-immunology-and-rheumatology-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/children/team/42636/anh-nguyen-pediatric-allergy-immunology-and-rheumatology-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/children/team/42636/anh-nguyen-pediatric-allergy-immunology-and-rheumatology-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:11.836Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/children/team/42636/anh-nguyen-pediatric-allergy-immunology-and-rheumatology-sacramento",
-	"url": "https://health.ucdavis.edu/children/team/42636/anh-nguyen-pediatric-allergy-immunology-and-rheumatology-sacramento"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "IeHOG0CY4VUxqid",
-	"json": "{\"id\":\"IeHOG0CY4VUxqid\",\"url\":\"https://www.dds.ca.gov/consumers/wellness-toolkit/vendors-providers\",\"loadedUrl\":\"https://www.dds.ca.gov/individuals-and-families/wellness-toolkit/vendors-providers/\",\"uniqueKey\":\"https://www.dds.ca.gov/consumers/wellness-toolkit/vendors-providers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:26.105Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/consumers/wellness-toolkit/vendors-providers",
-	"url": "https://www.dds.ca.gov/consumers/wellness-toolkit/vendors-providers"
-}

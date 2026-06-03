@@ -1,9 +1,0 @@
-{
-	"id": "ox58mlkI6oADnl4",
-	"json": "{\"id\":\"ox58mlkI6oADnl4\",\"url\":\"https://cnprc.ucdavis.edu/faq\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/faq\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/faq\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:10.083Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cnprc.ucdavis.edu/faq",
-	"url": "https://cnprc.ucdavis.edu/faq"
-}

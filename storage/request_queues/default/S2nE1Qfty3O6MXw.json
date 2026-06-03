@@ -1,9 +1,0 @@
-{
-	"id": "S2nE1Qfty3O6MXw",
-	"json": "{\"id\":\"S2nE1Qfty3O6MXw\",\"url\":\"https://mindbrain.ucdavis.edu/people/erie-boorman-1\",\"loadedUrl\":\"https://mindbrain.ucdavis.edu/people/erie-boorman-1\",\"uniqueKey\":\"https://mindbrain.ucdavis.edu/people/erie-boorman-1\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:09.481Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://mindbrain.ucdavis.edu/people/erie-boorman-1",
-	"url": "https://mindbrain.ucdavis.edu/people/erie-boorman-1"
-}

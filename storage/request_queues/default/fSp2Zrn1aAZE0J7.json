@@ -1,9 +1,0 @@
-{
-	"id": "fSp2Zrn1aAZE0J7",
-	"json": "{\"id\":\"fSp2Zrn1aAZE0J7\",\"url\":\"https://trailerbill.dof.ca.gov/trailerBill.html\",\"loadedUrl\":\"https://trailerbill.dof.ca.gov/trailerBill.html\",\"uniqueKey\":\"https://trailerbill.dof.ca.gov/trailerBill.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:06:38.724Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://trailerbill.dof.ca.gov/trailerBill.html",
-	"url": "https://trailerbill.dof.ca.gov/trailerBill.html"
-}

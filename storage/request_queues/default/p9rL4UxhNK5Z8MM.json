@@ -1,9 +1,0 @@
-{
-	"id": "p9rL4UxhNK5Z8MM",
-	"json": "{\"id\":\"p9rL4UxhNK5Z8MM\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/Pages/Office-of-School-Health.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/Pages/Office-of-School-Health.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/Pages/Office-of-School-Health.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:02:53.630Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/Pages/Office-of-School-Health.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/Pages/Office-of-School-Health.aspx"
-}

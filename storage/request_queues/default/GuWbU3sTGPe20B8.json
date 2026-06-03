@@ -1,9 +1,0 @@
-{
-	"id": "GuWbU3sTGPe20B8",
-	"json": "{\"id\":\"GuWbU3sTGPe20B8\",\"url\":\"https://hsform.ucdmc.ucdavis.edu/hsform/public/form/fillForm.jsf?formId=9c050a1159264920a80320ba128ca467\",\"loadedUrl\":\"https://hsform.ucdmc.ucdavis.edu/hsform/public/form/fillForm.jsf?formId=9c050a1159264920a80320ba128ca467\",\"uniqueKey\":\"https://hsform.ucdmc.ucdavis.edu/hsform/public/form/fillForm.jsf?formId=9c050a1159264920a80320ba128ca467\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:34.062Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hsform.ucdmc.ucdavis.edu/hsform/public/form/fillForm.jsf?formId=9c050a1159264920a80320ba128ca467",
-	"url": "https://hsform.ucdmc.ucdavis.edu/hsform/public/form/fillForm.jsf?formId=9c050a1159264920a80320ba128ca467"
-}

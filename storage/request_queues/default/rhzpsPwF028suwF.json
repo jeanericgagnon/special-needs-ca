@@ -1,9 +1,0 @@
-{
-	"id": "rhzpsPwF028suwF",
-	"json": "{\"id\":\"rhzpsPwF028suwF\",\"url\":\"https://surveys3.cde.ca.gov/siam/surveylanding/interviewer.asp?sid=711d9179d20349a59459614779d70c27&ta=catoy2027application_t.msf\",\"loadedUrl\":\"https://surveys3.cde.ca.gov/siam/surveylanding/surveylogin.asp\",\"uniqueKey\":\"https://surveys3.cde.ca.gov/siam/surveylanding/interviewer.asp?sid=711d9179d20349a59459614779d70c27&ta=catoy2027application_t.msf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:34:26.041Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://surveys3.cde.ca.gov/siam/surveylanding/interviewer.asp?sid=711d9179d20349a59459614779d70c27&ta=catoy2027application_t.msf",
-	"url": "https://surveys3.cde.ca.gov/siam/surveylanding/interviewer.asp?sid=711d9179d20349a59459614779d70c27&ta=catoy2027application_t.msf"
-}

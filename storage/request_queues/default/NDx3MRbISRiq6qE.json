@@ -1,9 +1,0 @@
-{
-	"id": "NDx3MRbISRiq6qE",
-	"json": "{\"id\":\"NDx3MRbISRiq6qE\",\"url\":\"https://hr.ucdavis.edu/elr/supervisor/layoff_info_sup/layoff_faqs.html\",\"loadedUrl\":\"https://hr.ucdavis.edu/departments/elr/layoff/faq\",\"uniqueKey\":\"https://hr.ucdavis.edu/elr/supervisor/layoff_info_sup/layoff_faqs.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:24.088Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/elr/supervisor/layoff_info_sup/layoff_faqs.html",
-	"url": "https://hr.ucdavis.edu/elr/supervisor/layoff_info_sup/layoff_faqs.html"
-}

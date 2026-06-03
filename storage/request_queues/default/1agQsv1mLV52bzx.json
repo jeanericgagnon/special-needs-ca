@@ -1,9 +1,0 @@
-{
-	"id": "1agQsv1mLV52bzx",
-	"json": "{\"id\":\"1agQsv1mLV52bzx\",\"url\":\"https://www.dds.ca.gov/individuals-and-families/leag/\",\"loadedUrl\":\"https://www.dds.ca.gov/individuals-and-families/leag/\",\"uniqueKey\":\"https://www.dds.ca.gov/individuals-and-families/leag\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:01.003Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/individuals-and-families/leag",
-	"url": "https://www.dds.ca.gov/individuals-and-families/leag/"
-}

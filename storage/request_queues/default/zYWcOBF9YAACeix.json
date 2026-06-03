@@ -1,9 +1,0 @@
-{
-	"id": "zYWcOBF9YAACeix",
-	"json": "{\"id\":\"zYWcOBF9YAACeix\",\"url\":\"https://cdtfa.ca.gov/SocialMedia/\",\"loadedUrl\":\"https://cdtfa.ca.gov/SocialMedia/\",\"uniqueKey\":\"https://cdtfa.ca.gov/SocialMedia\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:45.005Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdtfa.ca.gov/SocialMedia",
-	"url": "https://cdtfa.ca.gov/SocialMedia/"
-}

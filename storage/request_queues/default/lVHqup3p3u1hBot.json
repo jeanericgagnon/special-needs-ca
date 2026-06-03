@@ -1,9 +1,0 @@
-{
-	"id": "lVHqup3p3u1hBot",
-	"json": "{\"id\":\"lVHqup3p3u1hBot\",\"url\":\"https://yellowcluster.ucdavis.edu/people/malina-gillies-doherty\",\"loadedUrl\":\"https://yellowcluster.ucdavis.edu/people/malina-gillies-doherty\",\"uniqueKey\":\"https://yellowcluster.ucdavis.edu/people/malina-gillies-doherty\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:16.780Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://yellowcluster.ucdavis.edu/people/malina-gillies-doherty",
-	"url": "https://yellowcluster.ucdavis.edu/people/malina-gillies-doherty"
-}

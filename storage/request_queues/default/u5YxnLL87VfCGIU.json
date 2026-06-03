@@ -1,9 +1,0 @@
-{
-	"id": "u5YxnLL87VfCGIU",
-	"json": "{\"id\":\"u5YxnLL87VfCGIU\",\"url\":\"https://www.cdss.ca.gov/Benefits-Services/Child-Services/IHSS-for-Children\",\"loadedUrl\":\"https://www.cdss.ca.gov/ihss-for-children\",\"uniqueKey\":\"https://www.cdss.ca.gov/Benefits-Services/Child-Services/IHSS-for-Children\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:30.290Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/Benefits-Services/Child-Services/IHSS-for-Children",
-	"url": "https://www.cdss.ca.gov/Benefits-Services/Child-Services/IHSS-for-Children"
-}

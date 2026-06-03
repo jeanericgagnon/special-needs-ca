@@ -1,9 +1,0 @@
-{
-	"id": "LgI1qkbGrQgi6MF",
-	"json": "{\"id\":\"LgI1qkbGrQgi6MF\",\"url\":\"https://health.ucdavis.edu/medical-school/academic-programs/pathway-programs\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-school/academic-programs/pathway-programs\",\"uniqueKey\":\"https://health.ucdavis.edu/medical-school/academic-programs/pathway-programs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:04.437Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/medical-school/academic-programs/pathway-programs",
-	"url": "https://health.ucdavis.edu/medical-school/academic-programs/pathway-programs"
-}

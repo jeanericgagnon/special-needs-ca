@@ -1,9 +1,0 @@
-{
-	"id": "6DUNa40QKobjltg",
-	"json": "{\"id\":\"6DUNa40QKobjltg\",\"url\":\"https://www.cdph.ca.gov/Programs/CHCQ/HAI/Pages/HAICommitteeAndLaws.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CHCQ/HAI/Pages/HAICommitteeAndLaws.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CHCQ/HAI/Pages/HAICommitteeAndLaws.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:01:48.020Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CHCQ/HAI/Pages/HAICommitteeAndLaws.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CHCQ/HAI/Pages/HAICommitteeAndLaws.aspx"
-}

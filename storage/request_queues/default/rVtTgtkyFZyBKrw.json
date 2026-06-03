@@ -1,9 +1,0 @@
-{
-	"id": "rVtTgtkyFZyBKrw",
-	"json": "{\"id\":\"rVtTgtkyFZyBKrw\",\"url\":\"https://mcip.ucdavis.edu/about\",\"loadedUrl\":\"https://mcip.ucdavis.edu/about\",\"uniqueKey\":\"https://mcip.ucdavis.edu/about\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:56.646Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://mcip.ucdavis.edu/about",
-	"url": "https://mcip.ucdavis.edu/about"
-}

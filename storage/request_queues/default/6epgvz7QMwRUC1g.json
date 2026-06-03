@@ -1,9 +1,0 @@
-{
-	"id": "6epgvz7QMwRUC1g",
-	"json": "{\"id\":\"6epgvz7QMwRUC1g\",\"url\":\"https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=201320140SB468\",\"loadedUrl\":\"https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=201320140SB468\",\"uniqueKey\":\"https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=201320140SB468\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:06:06.988Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=201320140SB468",
-	"url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=201320140SB468"
-}

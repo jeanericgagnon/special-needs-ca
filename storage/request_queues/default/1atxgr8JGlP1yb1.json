@@ -1,9 +1,0 @@
-{
-	"id": "1atxgr8JGlP1yb1",
-	"json": "{\"id\":\"1atxgr8JGlP1yb1\",\"url\":\"https://surveys3.cde.ca.gov/siam/surveylanding/interviewer.asp?sid=01c9c05555634bda8f29373c42b3ca17&ta=litlisttitlereconsideration_t.msf\",\"loadedUrl\":\"https://surveys3.cde.ca.gov/siam/surveylanding/surveylogin.asp\",\"uniqueKey\":\"https://surveys3.cde.ca.gov/siam/surveylanding/interviewer.asp?sid=01c9c05555634bda8f29373c42b3ca17&ta=litlisttitlereconsideration_t.msf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:48.457Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://surveys3.cde.ca.gov/siam/surveylanding/interviewer.asp?sid=01c9c05555634bda8f29373c42b3ca17&ta=litlisttitlereconsideration_t.msf",
-	"url": "https://surveys3.cde.ca.gov/siam/surveylanding/interviewer.asp?sid=01c9c05555634bda8f29373c42b3ca17&ta=litlisttitlereconsideration_t.msf"
-}

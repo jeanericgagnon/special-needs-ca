@@ -1,9 +1,0 @@
-{
-	"id": "Ribc0n2Brw4t4PW",
-	"json": "{\"id\":\"Ribc0n2Brw4t4PW\",\"url\":\"https://financeandbusiness.ucdavis.edu/finance\",\"loadedUrl\":\"https://financeandbusiness.ucdavis.edu/finance\",\"uniqueKey\":\"https://financeandbusiness.ucdavis.edu/finance\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:52.450Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://financeandbusiness.ucdavis.edu/finance",
-	"url": "https://financeandbusiness.ucdavis.edu/finance"
-}

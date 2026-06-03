@@ -1,9 +1,0 @@
-{
-	"id": "LkZFcJo2NDi4SEd",
-	"json": "{\"id\":\"LkZFcJo2NDi4SEd\",\"url\":\"https://safetyservices.ucdavis.edu/units/occupational-health/uc-workstrong/stress-resilience\",\"loadedUrl\":\"https://safetyservices.ucdavis.edu/units/occupational-health/uc-workstrong/stress-resilience\",\"uniqueKey\":\"https://safetyservices.ucdavis.edu/units/occupational-health/uc-workstrong/stress-resilience\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:26.762Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://safetyservices.ucdavis.edu/units/occupational-health/uc-workstrong/stress-resilience",
-	"url": "https://safetyservices.ucdavis.edu/units/occupational-health/uc-workstrong/stress-resilience"
-}

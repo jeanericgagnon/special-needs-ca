@@ -1,9 +1,0 @@
-{
-	"id": "aT4sQcS5iMGWYGK",
-	"json": "{\"id\":\"aT4sQcS5iMGWYGK\",\"url\":\"https://www.globaldownsyndrome.org/bn/global-denver-health-adult-syndrome-clinic/\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/global-denver-health-adult-syndrome-clinic/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/bn/global-denver-health-adult-syndrome-clinic\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:31:07.372Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.globaldownsyndrome.org/bn/global-denver-health-adult-syndrome-clinic",
-	"url": "https://www.globaldownsyndrome.org/bn/global-denver-health-adult-syndrome-clinic/"
-}

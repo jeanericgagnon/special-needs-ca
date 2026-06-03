@@ -1,9 +1,0 @@
-{
-	"id": "9z6D0g4kkxlk94F",
-	"json": "{\"id\":\"9z6D0g4kkxlk94F\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/777/clara-paik---gynecology---obstetrics-and-gynecology-sacramento/\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/777/clara-paik---gynecology---obstetrics-and-gynecology-sacramento/\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/777/clara-paik---gynecology---obstetrics-and-gynecology-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:12.685Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/777/clara-paik---gynecology---obstetrics-and-gynecology-sacramento",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/777/clara-paik---gynecology---obstetrics-and-gynecology-sacramento/"
-}

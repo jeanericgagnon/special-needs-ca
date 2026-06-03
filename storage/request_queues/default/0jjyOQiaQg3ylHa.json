@@ -1,9 +1,0 @@
-{
-	"id": "0jjyOQiaQg3ylHa",
-	"json": "{\"id\":\"0jjyOQiaQg3ylHa\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CTCB/Pages/TobaccoEducationAndResearchOversightCommittee.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CTCB/Pages/TobaccoEducationAndResearchOversightCommittee.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CTCB/Pages/TobaccoEducationAndResearchOversightCommittee.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:02:04.672Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CTCB/Pages/TobaccoEducationAndResearchOversightCommittee.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CTCB/Pages/TobaccoEducationAndResearchOversightCommittee.aspx"
-}

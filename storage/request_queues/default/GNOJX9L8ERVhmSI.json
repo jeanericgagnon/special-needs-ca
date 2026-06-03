@@ -1,9 +1,0 @@
-{
-	"id": "GNOJX9L8ERVhmSI",
-	"json": "{\"id\":\"GNOJX9L8ERVhmSI\",\"url\":\"http://www.leginfo.ca.gov/pub/15-16/bill/asm/ab_1601-1650/ab_1625_bill_20160913_chaptered.htm\",\"loadedUrl\":\"https://www.leginfo.ca.gov/pub/15-16/bill/asm/ab_1601-1650/ab_1625_bill_20160913_chaptered.htm\",\"uniqueKey\":\"http://www.leginfo.ca.gov/pub/15-16/bill/asm/ab_1601-1650/ab_1625_bill_20160913_chaptered.htm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:02.354Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.leginfo.ca.gov/pub/15-16/bill/asm/ab_1601-1650/ab_1625_bill_20160913_chaptered.htm",
-	"url": "http://www.leginfo.ca.gov/pub/15-16/bill/asm/ab_1601-1650/ab_1625_bill_20160913_chaptered.htm"
-}

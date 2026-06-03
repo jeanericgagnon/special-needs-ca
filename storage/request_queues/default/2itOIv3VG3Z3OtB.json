@@ -1,9 +1,0 @@
-{
-	"id": "2itOIv3VG3Z3OtB",
-	"json": "{\"id\":\"2itOIv3VG3Z3OtB\",\"url\":\"https://health.ucdavis.edu/mind-institute/research/adhdprogram/vram\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/research/adhdprogram/vram\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/research/adhdprogram/vram\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:25.337Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mind-institute/research/adhdprogram/vram",
-	"url": "https://health.ucdavis.edu/mind-institute/research/adhdprogram/vram"
-}

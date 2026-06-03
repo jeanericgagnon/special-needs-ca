@@ -1,9 +1,0 @@
-{
-	"id": "zIpxkh2mZGUF5JL",
-	"json": "{\"id\":\"zIpxkh2mZGUF5JL\",\"url\":\"https://www.cde.ca.gov/ci/pl/step2equitygapanalysis.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/pl/step2equitygapanalysis.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/pl/step2equitygapanalysis.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:22:32.142Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ci/pl/step2equitygapanalysis.asp",
-	"url": "https://www.cde.ca.gov/ci/pl/step2equitygapanalysis.asp"
-}

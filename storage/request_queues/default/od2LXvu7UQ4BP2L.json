@@ -1,9 +1,0 @@
-{
-	"id": "od2LXvu7UQ4BP2L",
-	"json": "{\"id\":\"od2LXvu7UQ4BP2L\",\"url\":\"https://physicians.ucdavis.edu/medicalcenter/details/42451/jason-adams-internal_medicine-pulmonary_medicine-rocklin-sacramento\",\"loadedUrl\":\"https://physicians.ucdavis.edu/medicalcenter/details/42451/jason-adams-internal_medicine-pulmonary_medicine-rocklin-sacramento\",\"uniqueKey\":\"https://physicians.ucdavis.edu/medicalcenter/details/42451/jason-adams-internal_medicine-pulmonary_medicine-rocklin-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:26.640Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://physicians.ucdavis.edu/medicalcenter/details/42451/jason-adams-internal_medicine-pulmonary_medicine-rocklin-sacramento",
-	"url": "https://physicians.ucdavis.edu/medicalcenter/details/42451/jason-adams-internal_medicine-pulmonary_medicine-rocklin-sacramento"
-}

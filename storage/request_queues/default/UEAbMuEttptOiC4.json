@@ -1,9 +1,0 @@
-{
-	"id": "UEAbMuEttptOiC4",
-	"json": "{\"id\":\"UEAbMuEttptOiC4\",\"url\":\"https://health.ucdavis.edu/publish/providerbio/search/21784\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-center/team/21784/aubyn-stahmer---autism-assessment---psychosocial-intervention-sacramento/\",\"uniqueKey\":\"https://health.ucdavis.edu/publish/providerbio/search/21784\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:56.281Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/publish/providerbio/search/21784",
-	"url": "https://health.ucdavis.edu/publish/providerbio/search/21784"
-}

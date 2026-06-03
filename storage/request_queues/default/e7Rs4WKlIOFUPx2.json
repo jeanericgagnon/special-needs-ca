@@ -1,9 +1,0 @@
-{
-	"id": "e7Rs4WKlIOFUPx2",
-	"json": "{\"id\":\"e7Rs4WKlIOFUPx2\",\"url\":\"https://data.ca.gov/showcase/california-important-farmland-time-series\",\"loadedUrl\":\"https://data.ca.gov/showcase/california-important-farmland-time-series\",\"uniqueKey\":\"https://data.ca.gov/showcase/california-important-farmland-time-series\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:15.043Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://data.ca.gov/showcase/california-important-farmland-time-series",
-	"url": "https://data.ca.gov/showcase/california-important-farmland-time-series"
-}

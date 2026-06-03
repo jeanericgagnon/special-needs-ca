@@ -3,7 +3,7 @@ import { cookies } from 'next/headers';
 import { verifyToken } from '@/lib/auth';
 import { logoutAction } from './auth-actions';
 import Link from 'next/link';
-import { HeartHandshake, User, LayoutDashboard, Search, LogOut, Key, Sparkles, Calculator, ChevronDown, Scale, ShieldCheck, Coins } from 'lucide-react';
+import { HeartHandshake, User, LayoutDashboard, Search, LogOut, Key, Sparkles, Calculator, ChevronDown, Scale, ShieldCheck, Coins, BookOpen } from 'lucide-react';
 import ThemeToggle from '@/components/theme-toggle';
 import "./globals.css";
 
@@ -57,6 +57,11 @@ export default async function RootLayout({
                 <Search size={16} />
                 <span>Eligibility Wizard</span>
               </Link>
+
+              <Link href="/benefits" className="nav-link">
+                <BookOpen size={16} />
+                <span>Guides & Resources</span>
+              </Link>
               
               <Link href="/advocates" className="nav-link">
                 <User size={16} />
@@ -98,7 +103,7 @@ export default async function RootLayout({
                 <>
                   <Link href="/dashboard" className="nav-link">
                     <LayoutDashboard size={16} />
-                    <span>My Dashboard</span>
+                    <span>Saved Plans</span>
                   </Link>
                   <form action={logoutAction} style={{ display: 'inline' }}>
                     <button type="submit" className="nav-btn-logout">
@@ -132,7 +137,7 @@ export default async function RootLayout({
           <div style={{ maxWidth: '1000px', margin: '0 auto', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: '1rem' }}>
             <p>© 2026 California Special Needs Navigator. All rights reserved.</p>
             <div style={{ display: 'flex', gap: '1.5rem' }}>
-              <Link href="/benefits" style={{ color: 'var(--text-light)', textDecoration: 'none', fontWeight: 600 }}>Benefits Directory</Link>
+              <Link href="/benefits" style={{ color: 'var(--text-light)', textDecoration: 'none', fontWeight: 600 }}>Guides & Resources</Link>
               <Link href="/sitemap.xml" style={{ color: 'var(--text-light)', textDecoration: 'none' }}>Sitemap</Link>
               <a href="https://www.cdss.ca.gov" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-light)', textDecoration: 'none' }}>CDSS</a>
               <a href="https://www.dds.ca.gov" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-light)', textDecoration: 'none' }}>DDS</a>

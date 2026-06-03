@@ -1,9 +1,0 @@
-{
-	"id": "Gxa6CUoH9fxKhjN",
-	"json": "{\"id\":\"Gxa6CUoH9fxKhjN\",\"url\":\"https://leginfo.legislature.ca.gov/faces/codes_displayexpandedbranch.xhtml?tocCode=GOV&division=&title=14.&part=&chapter=&article=&goUp=Y\",\"loadedUrl\":\"https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=GOV\",\"uniqueKey\":\"https://leginfo.legislature.ca.gov/faces/codes_displayexpandedbranch.xhtml?article=&chapter=&division=&goUp=Y&part=&title=14.&tocCode=GOV\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:19.069Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://leginfo.legislature.ca.gov/faces/codes_displayexpandedbranch.xhtml?article=&chapter=&division=&goUp=Y&part=&title=14.&tocCode=GOV",
-	"url": "https://leginfo.legislature.ca.gov/faces/codes_displayexpandedbranch.xhtml?tocCode=GOV&division=&title=14.&part=&chapter=&article=&goUp=Y"
-}

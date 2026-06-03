@@ -1,9 +1,0 @@
-{
-	"id": "FokNpt01zxBRwFG",
-	"json": "{\"id\":\"FokNpt01zxBRwFG\",\"url\":\"http://cachampionsforchange.cdph.ca.gov/Pages/default.aspx\",\"loadedUrl\":\"https://calfreshhealthyliving.cdph.ca.gov/Pages/default.aspx\",\"uniqueKey\":\"http://cachampionsforchange.cdph.ca.gov/Pages/default.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:15:26.847Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://cachampionsforchange.cdph.ca.gov/Pages/default.aspx",
-	"url": "http://cachampionsforchange.cdph.ca.gov/Pages/default.aspx"
-}

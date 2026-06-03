@@ -1,9 +1,0 @@
-{
-	"id": "dXjN4qBXfGjPUFA",
-	"json": "{\"id\":\"dXjN4qBXfGjPUFA\",\"url\":\"https://www.assembly.ca.gov/events/today\",\"loadedUrl\":\"https://www.assembly.ca.gov/events/today\",\"uniqueKey\":\"https://www.assembly.ca.gov/events/today\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:03:00.069Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.assembly.ca.gov/events/today",
-	"url": "https://www.assembly.ca.gov/events/today"
-}

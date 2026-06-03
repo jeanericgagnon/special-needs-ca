@@ -1,9 +1,0 @@
-{
-	"id": "KM0RFmKob2nTsj6",
-	"json": "{\"id\":\"KM0RFmKob2nTsj6\",\"url\":\"https://leganalysis.dof.ca.gov/\",\"loadedUrl\":\"https://leganalysis.dof.ca.gov/\",\"uniqueKey\":\"https://leganalysis.dof.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:06:39.245Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://leganalysis.dof.ca.gov",
-	"url": "https://leganalysis.dof.ca.gov/"
-}

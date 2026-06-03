@@ -1,9 +1,0 @@
-{
-	"id": "cir9QinBPTOyAhf",
-	"json": "{\"id\":\"cir9QinBPTOyAhf\",\"url\":\"https://www.dds.ca.gov/services/crisis-safety-net-services/institutions-for-mental-disease/\",\"loadedUrl\":\"https://www.dds.ca.gov/services/crisis-safety-net-services/institutions-for-mental-disease/\",\"uniqueKey\":\"https://www.dds.ca.gov/services/crisis-safety-net-services/institutions-for-mental-disease\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:00.931Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/services/crisis-safety-net-services/institutions-for-mental-disease",
-	"url": "https://www.dds.ca.gov/services/crisis-safety-net-services/institutions-for-mental-disease/"
-}

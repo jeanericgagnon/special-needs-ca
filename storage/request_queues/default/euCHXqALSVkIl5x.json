@@ -1,9 +1,0 @@
-{
-	"id": "euCHXqALSVkIl5x",
-	"json": "{\"id\":\"euCHXqALSVkIl5x\",\"url\":\"https://www.cde.ca.gov/re/lr/wr/generalwaiver.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=e76ac8a4-3983-4c76-8c35-4a386fd53914&ssb=91860252817&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fre%2Flr%2Fwr%2Fgeneralwaiver.asp&ssi=da98a426-ctxv-4cc5-b36e-8e3a05ff7641&ssk=botmanager_support@radware.com&ssm=48506933190064671109758245928533&ssn=3779efd32ffcabeacea72f5e0fd051546f12a13f4182-ef7a-4d7f-8e98c9&sso=dc0b9b80-6cf261f17b02a2806d4a3940cdc121b5355111212f7f2a7b&ssp=84124525871780372553178039225204976&ssq=12688765579173002512355791723908352830951&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBhMTNmNDE4Mi1lZjdhLTRkN2YtOGI4MC02Y2YyNjFmMTdiMDIxLTE3ODAzNTU3OTE4NDIwLTAwMzIzMjRlYjJmZWRiY2MzZjUxMCIsInV6bXgiOiI3ZjkwMDA0OTJjZGNmMi1mNTBhLTQ2OGMtYjFmMy1kYTcyZTkzZDgwMWMxLTE3ODAzNTU3OTE4NDIwLTJiNTZjYmE4ZTc4MmQ5ZmExMCIsInJkIjoiY2EuZ292In0=\",\"uniqueKey\":\"https://www.cde.ca.gov/re/lr/wr/generalwaiver.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T23:16:32.024Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/re/lr/wr/generalwaiver.asp",
-	"url": "https://www.cde.ca.gov/re/lr/wr/generalwaiver.asp"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "ZD2gq5vC7oEkp0d",
-	"json": "{\"id\":\"ZD2gq5vC7oEkp0d\",\"url\":\"https://www.cdph.ca.gov/Programs/OPA/Pages/Communications-Toolkits/Pregnancy-Immunizations.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/OPA/Pages/Communications-Toolkits/Pregnancy-Immunizations.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/OPA/Pages/Communications-Toolkits/Pregnancy-Immunizations.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:06:48.737Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/OPA/Pages/Communications-Toolkits/Pregnancy-Immunizations.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/OPA/Pages/Communications-Toolkits/Pregnancy-Immunizations.aspx"
-}

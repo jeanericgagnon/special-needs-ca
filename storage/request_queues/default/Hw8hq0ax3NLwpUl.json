@@ -1,9 +1,0 @@
-{
-	"id": "Hw8hq0ax3NLwpUl",
-	"json": "{\"id\":\"Hw8hq0ax3NLwpUl\",\"url\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/PCB-COVID-19.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/PCB-COVID-19.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/PCB-COVID-19.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:16:09.397Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/PCB-COVID-19.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/PCB-COVID-19.aspx"
-}

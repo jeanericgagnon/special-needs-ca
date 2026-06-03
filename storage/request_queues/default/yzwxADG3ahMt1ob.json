@@ -1,9 +1,0 @@
-{
-	"id": "yzwxADG3ahMt1ob",
-	"json": "{\"id\":\"yzwxADG3ahMt1ob\",\"url\":\"https://scdd.ca.gov/sacramento/\",\"loadedUrl\":\"https://scdd.ca.gov/sacramento/\",\"uniqueKey\":\"https://scdd.ca.gov/sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:28.487Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/sacramento",
-	"url": "https://scdd.ca.gov/sacramento/"
-}

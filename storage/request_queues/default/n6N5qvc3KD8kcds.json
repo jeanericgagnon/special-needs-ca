@@ -1,9 +1,0 @@
-{
-	"id": "n6N5qvc3KD8kcds",
-	"json": "{\"id\":\"n6N5qvc3KD8kcds\",\"url\":\"https://cdss.ca.gov/inforesources/DocumentSearch\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/DocumentSearch\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/DocumentSearch\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:20.956Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/DocumentSearch",
-	"url": "https://cdss.ca.gov/inforesources/DocumentSearch"
-}

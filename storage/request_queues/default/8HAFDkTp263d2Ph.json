@@ -1,9 +1,0 @@
-{
-	"id": "8HAFDkTp263d2Ph",
-	"json": "{\"id\":\"8HAFDkTp263d2Ph\",\"url\":\"https://www.cdph.ca.gov/Programs/PSB/Pages/LaboratoryFieldServices.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/PSB/Pages/LaboratoryFieldServices.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/PSB/Pages/LaboratoryFieldServices.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:55:07.692Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/PSB/Pages/LaboratoryFieldServices.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/PSB/Pages/LaboratoryFieldServices.aspx"
-}

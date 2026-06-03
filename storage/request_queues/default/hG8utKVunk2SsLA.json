@@ -1,9 +1,0 @@
-{
-	"id": "hG8utKVunk2SsLA",
-	"json": "{\"id\":\"hG8utKVunk2SsLA\",\"url\":\"https://www.dds.ca.gov/rc/regional-center-directives/\",\"loadedUrl\":\"https://www.dds.ca.gov/rc/regional-center-directives/\",\"uniqueKey\":\"https://www.dds.ca.gov/rc/regional-center-directives\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:22.014Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/rc/regional-center-directives",
-	"url": "https://www.dds.ca.gov/rc/regional-center-directives/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "xR9TSwhN7EYCsqA",
-	"json": "{\"id\":\"xR9TSwhN7EYCsqA\",\"url\":\"https://biology.ucdavis.edu/people/melanie-gareau\",\"loadedUrl\":\"https://www.vetmed.ucdavis.edu/faculty/melanie-gareau\",\"uniqueKey\":\"https://biology.ucdavis.edu/people/melanie-gareau\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:07:48.773Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://biology.ucdavis.edu/people/melanie-gareau",
-	"url": "https://biology.ucdavis.edu/people/melanie-gareau"
-}

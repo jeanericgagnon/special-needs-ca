@@ -1,9 +1,0 @@
-{
-	"id": "OxNahDDgYq6d2yv",
-	"json": "{\"id\":\"OxNahDDgYq6d2yv\",\"url\":\"https://surveys3.cde.ca.gov/go/f2summerpresurvey2026.asp\",\"loadedUrl\":\"https://surveys3.cde.ca.gov/s.asp?k=177791950415\",\"uniqueKey\":\"https://surveys3.cde.ca.gov/go/f2summerpresurvey2026.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:19.532Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://surveys3.cde.ca.gov/go/f2summerpresurvey2026.asp",
-	"url": "https://surveys3.cde.ca.gov/go/f2summerpresurvey2026.asp"
-}

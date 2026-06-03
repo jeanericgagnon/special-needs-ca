@@ -1,9 +1,0 @@
-{
-	"id": "Q72HyqacXppx4Nh",
-	"json": "{\"id\":\"Q72HyqacXppx4Nh\",\"url\":\"https://ombuds.ucdavis.edu/sitemap\",\"loadedUrl\":\"https://ombuds.ucdavis.edu/sitemap\",\"uniqueKey\":\"https://ombuds.ucdavis.edu/sitemap\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:01.039Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ombuds.ucdavis.edu/sitemap",
-	"url": "https://ombuds.ucdavis.edu/sitemap"
-}

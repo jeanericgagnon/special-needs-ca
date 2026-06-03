@@ -1,9 +1,0 @@
-{
-	"id": "9rOZLoW2GcNFrPq",
-	"json": "{\"id\":\"9rOZLoW2GcNFrPq\",\"url\":\"https://caes.ucdavis.edu/news/events/College-Symposium\",\"loadedUrl\":\"https://caes.ucdavis.edu/news/events/College-Symposium\",\"uniqueKey\":\"https://caes.ucdavis.edu/news/events/College-Symposium\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:55:35.798Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://caes.ucdavis.edu/news/events/College-Symposium",
-	"url": "https://caes.ucdavis.edu/news/events/College-Symposium"
-}

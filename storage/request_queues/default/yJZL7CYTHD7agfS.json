@@ -1,9 +1,0 @@
-{
-	"id": "yJZL7CYTHD7agfS",
-	"json": "{\"id\":\"yJZL7CYTHD7agfS\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/43440/sunil-saini-asthma-pediatric_allergy_immunology_and_rheumatology-sacramento?FreeText%3aLast+name=Saini\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/43440/sunil-saini-asthma-pediatric_allergy_immunology_and_rheumatology-sacramento?FreeText%3aLast+name=Saini\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/43440/sunil-saini-asthma-pediatric_allergy_immunology_and_rheumatology-sacramento?FreeText%3ALast+name=Saini\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:07.383Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/43440/sunil-saini-asthma-pediatric_allergy_immunology_and_rheumatology-sacramento?FreeText%3ALast+name=Saini",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/43440/sunil-saini-asthma-pediatric_allergy_immunology_and_rheumatology-sacramento?FreeText%3aLast+name=Saini"
-}

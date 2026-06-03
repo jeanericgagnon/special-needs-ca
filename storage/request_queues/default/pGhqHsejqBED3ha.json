@@ -1,9 +1,0 @@
-{
-	"id": "pGhqHsejqBED3ha",
-	"json": "{\"id\":\"pGhqHsejqBED3ha\",\"url\":\"https://cdss.ca.gov/inforesources/Rules-Regulations/Letters-and-Notices/County-Fiscal-Information-Notices\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/letters-regulations/letters-and-notices/county-fiscal-information-notices\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Rules-Regulations/Letters-and-Notices/County-Fiscal-Information-Notices\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:45.144Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/Rules-Regulations/Letters-and-Notices/County-Fiscal-Information-Notices",
-	"url": "https://cdss.ca.gov/inforesources/Rules-Regulations/Letters-and-Notices/County-Fiscal-Information-Notices"
-}

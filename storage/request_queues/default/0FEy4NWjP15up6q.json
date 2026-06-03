@@ -1,9 +1,0 @@
-{
-	"id": "0FEy4NWjP15up6q",
-	"json": "{\"id\":\"0FEy4NWjP15up6q\",\"url\":\"https://irb.ucdavis.edu/about-irb/policies-procedures-regulations/irb-policies-regulations/\",\"loadedUrl\":\"https://irb.ucdavis.edu/about-irb/policies-procedures-regulations/irb-policies-regulations/\",\"uniqueKey\":\"https://irb.ucdavis.edu/about-irb/policies-procedures-regulations/irb-policies-regulations\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:39.340Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://irb.ucdavis.edu/about-irb/policies-procedures-regulations/irb-policies-regulations",
-	"url": "https://irb.ucdavis.edu/about-irb/policies-procedures-regulations/irb-policies-regulations/"
-}

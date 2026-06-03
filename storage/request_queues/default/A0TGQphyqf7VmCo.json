@@ -1,9 +1,0 @@
-{
-	"id": "A0TGQphyqf7VmCo",
-	"json": "{\"id\":\"A0TGQphyqf7VmCo\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/MIHA/Pages/About-Us.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/MIHA/Pages/About-Us.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/MIHA/Pages/About-Us.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:01:23.099Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/MIHA/Pages/About-Us.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/MIHA/Pages/About-Us.aspx"
-}

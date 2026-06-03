@@ -1,9 +1,0 @@
-{
-	"id": "WyupdwwQ2T0PHfq",
-	"json": "{\"id\":\"WyupdwwQ2T0PHfq\",\"url\":\"https://www.cde.ca.gov/eo/bo/tt/\",\"loadedUrl\":\"https://www.cde.ca.gov/eo/bo/tt/\",\"uniqueKey\":\"https://www.cde.ca.gov/eo/bo/tt\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:05:02.281Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/eo/bo/tt",
-	"url": "https://www.cde.ca.gov/eo/bo/tt/"
-}

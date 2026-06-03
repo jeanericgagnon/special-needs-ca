@@ -1,9 +1,0 @@
-{
-	"id": "ACIw02Bx2LJbIj9",
-	"json": "{\"id\":\"ACIw02Bx2LJbIj9\",\"url\":\"https://www.cdss.ca.gov/Benefits-Services/Cash-Assistance/EBT-Card\",\"loadedUrl\":\"https://www.cdss.ca.gov/ebt-card\",\"uniqueKey\":\"https://www.cdss.ca.gov/Benefits-Services/Cash-Assistance/EBT-Card\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:26.594Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/Benefits-Services/Cash-Assistance/EBT-Card",
-	"url": "https://www.cdss.ca.gov/Benefits-Services/Cash-Assistance/EBT-Card"
-}

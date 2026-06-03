@@ -1,9 +1,0 @@
-{
-	"id": "vb5qYL2xcymXw3z",
-	"json": "{\"id\":\"vb5qYL2xcymXw3z\",\"url\":\"https://health.ucdavis.edu/blog/cultivating-health/category/cancer\",\"loadedUrl\":\"https://health.ucdavis.edu/blog/cultivating-health/category/cancer\",\"uniqueKey\":\"https://health.ucdavis.edu/blog/cultivating-health/category/cancer\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:59:51.191Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/blog/cultivating-health/category/cancer",
-	"url": "https://health.ucdavis.edu/blog/cultivating-health/category/cancer"
-}

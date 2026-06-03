@@ -1,9 +1,0 @@
-{
-	"id": "zCMHEjMI7csY6Vv",
-	"json": "{\"id\":\"zCMHEjMI7csY6Vv\",\"url\":\"https://calgenetic.cdph.ca.gov/content/gdsp/en/my-account/homepage.html\",\"loadedUrl\":\"https://sis2-prod.powerappsportals.us/homepage/\",\"uniqueKey\":\"https://calgenetic.cdph.ca.gov/content/gdsp/en/my-account/homepage.html\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T17:10:59.778Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://calgenetic.cdph.ca.gov/content/gdsp/en/my-account/homepage.html",
-	"url": "https://calgenetic.cdph.ca.gov/content/gdsp/en/my-account/homepage.html"
-}

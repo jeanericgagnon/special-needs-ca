@@ -1,9 +1,0 @@
-{
-	"id": "UvawLw1u8f1yxSk",
-	"json": "{\"id\":\"UvawLw1u8f1yxSk\",\"url\":\"https://health.ucdavis.edu/news/headlines/innovative-spinal-implants-relieve-pain-from-degenerative-disc-disease/2026/01\",\"loadedUrl\":\"https://health.ucdavis.edu/news/headlines/innovative-spinal-implants-relieve-pain-from-degenerative-disc-disease/2026/01\",\"uniqueKey\":\"https://health.ucdavis.edu/news/headlines/innovative-spinal-implants-relieve-pain-from-degenerative-disc-disease/2026/01\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:46:08.111Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/news/headlines/innovative-spinal-implants-relieve-pain-from-degenerative-disc-disease/2026/01",
-	"url": "https://health.ucdavis.edu/news/headlines/innovative-spinal-implants-relieve-pain-from-degenerative-disc-disease/2026/01"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "93lN7gNLH2Hi5XM",
-	"json": "{\"id\":\"93lN7gNLH2Hi5XM\",\"url\":\"https://neuroscience.ucdavis.edu/people/diasynou-fioravante\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/people/diasynou-fioravante\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/people/diasynou-fioravante\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:39.197Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/people/diasynou-fioravante",
-	"url": "https://neuroscience.ucdavis.edu/people/diasynou-fioravante"
-}

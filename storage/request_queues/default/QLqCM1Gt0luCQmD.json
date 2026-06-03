@@ -1,9 +1,0 @@
-{
-	"id": "QLqCM1Gt0luCQmD",
-	"json": "{\"id\":\"QLqCM1Gt0luCQmD\",\"url\":\"https://health.ucdavis.edu/mind-institute/news/topic/school-of-medicine\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/news/topic/school-of-medicine\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/news/topic/school-of-medicine\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:05:43.930Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mind-institute/news/topic/school-of-medicine",
-	"url": "https://health.ucdavis.edu/mind-institute/news/topic/school-of-medicine"
-}

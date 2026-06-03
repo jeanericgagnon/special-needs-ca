@@ -1,9 +1,0 @@
-{
-	"id": "d7HGNIOV13VPo0W",
-	"json": "{\"id\":\"d7HGNIOV13VPo0W\",\"url\":\"https://scdd.ca.gov/centralcoast/\",\"loadedUrl\":\"https://scdd.ca.gov/centralcoast/\",\"uniqueKey\":\"https://scdd.ca.gov/centralcoast\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:29.035Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/centralcoast",
-	"url": "https://scdd.ca.gov/centralcoast/"
-}

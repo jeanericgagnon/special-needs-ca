@@ -1,9 +1,0 @@
-{
-	"id": "lBNT2JlqW0s1wXS",
-	"json": "{\"id\":\"lBNT2JlqW0s1wXS\",\"url\":\"https://health.ucdavis.edu/children/services/pediatric-nephrology/\",\"loadedUrl\":\"https://health.ucdavis.edu/children/services/pediatric-nephrology/\",\"uniqueKey\":\"https://health.ucdavis.edu/children/services/pediatric-nephrology\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:12.453Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/children/services/pediatric-nephrology",
-	"url": "https://health.ucdavis.edu/children/services/pediatric-nephrology/"
-}

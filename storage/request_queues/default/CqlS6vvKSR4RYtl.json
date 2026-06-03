@@ -1,9 +1,0 @@
-{
-	"id": "CqlS6vvKSR4RYtl",
-	"json": "{\"id\":\"CqlS6vvKSR4RYtl\",\"url\":\"https://health.ucdavis.edu/neurology/team/administrative/\",\"loadedUrl\":\"https://health.ucdavis.edu/neurology/team/administrative/\",\"uniqueKey\":\"https://health.ucdavis.edu/neurology/team/administrative\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:51.290Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/neurology/team/administrative",
-	"url": "https://health.ucdavis.edu/neurology/team/administrative/"
-}

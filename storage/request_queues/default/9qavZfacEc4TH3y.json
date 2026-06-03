@@ -1,9 +1,0 @@
-{
-	"id": "9qavZfacEc4TH3y",
-	"json": "{\"id\":\"9qavZfacEc4TH3y\",\"url\":\"https://frcnca.org/events/list/?pagename=calendar&shortcode=5751ae98&eventDisplay=past\",\"loadedUrl\":\"https://frcnca.org/events/list/?pagename=calendar&shortcode=5751ae98&eventDisplay=past\",\"uniqueKey\":\"https://frcnca.org/events/list?eventDisplay=past&pagename=calendar&shortcode=5751ae98\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:22.528Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://frcnca.org/events/list?eventDisplay=past&pagename=calendar&shortcode=5751ae98",
-	"url": "https://frcnca.org/events/list/?pagename=calendar&shortcode=5751ae98&eventDisplay=past"
-}

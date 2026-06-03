@@ -1,9 +1,0 @@
-{
-	"id": "1b2ocNudgd51vYS",
-	"json": "{\"id\":\"1b2ocNudgd51vYS\",\"url\":\"https://ucp.org/advocacy/advocacy-letter-templates/\",\"loadedUrl\":\"https://ucp.org/advocacy/advocacy-letter-templates/\",\"uniqueKey\":\"https://ucp.org/advocacy/advocacy-letter-templates\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:22.279Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ucp.org/advocacy/advocacy-letter-templates",
-	"url": "https://ucp.org/advocacy/advocacy-letter-templates/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "si2APXzp0G5cXeV",
-	"json": "{\"id\":\"si2APXzp0G5cXeV\",\"url\":\"https://www.cde.ca.gov/ta/tg/ca/caaiepteamrev.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ta/tg/ca/caaiepteamrev.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ta/tg/ca/caaiepteamrev.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:39.371Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ta/tg/ca/caaiepteamrev.asp",
-	"url": "https://www.cde.ca.gov/ta/tg/ca/caaiepteamrev.asp"
-}

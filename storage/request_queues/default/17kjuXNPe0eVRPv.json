@@ -1,9 +1,0 @@
-{
-	"id": "17kjuXNPe0eVRPv",
-	"json": "{\"id\":\"17kjuXNPe0eVRPv\",\"url\":\"https://neuroscience.ucdavis.edu/person-type/graduate-student\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/person-type/graduate-student\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/person-type/graduate-student\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:59.009Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/person-type/graduate-student",
-	"url": "https://neuroscience.ucdavis.edu/person-type/graduate-student"
-}

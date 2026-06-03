@@ -1,9 +1,0 @@
-{
-	"id": "SnwKh6MbJRICsYr",
-	"json": "{\"id\":\"SnwKh6MbJRICsYr\",\"url\":\"https://ucdnc.ucdavis.edu/welcomemission-statement\",\"loadedUrl\":\"https://ucdnc.ucdavis.edu/welcomemission-statement\",\"uniqueKey\":\"https://ucdnc.ucdavis.edu/welcomemission-statement\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:19.297Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ucdnc.ucdavis.edu/welcomemission-statement",
-	"url": "https://ucdnc.ucdavis.edu/welcomemission-statement"
-}

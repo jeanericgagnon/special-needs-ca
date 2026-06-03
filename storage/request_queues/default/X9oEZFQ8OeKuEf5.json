@@ -1,9 +1,0 @@
-{
-	"id": "X9oEZFQ8OeKuEf5",
-	"json": "{\"id\":\"X9oEZFQ8OeKuEf5\",\"url\":\"https://www.chhs.ca.gov/blog/2025/01/13/as-firefight-continues-california-secures-additional-federal-support-that-will-help-people-impacted-by-the-fires/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2025/01/13/as-firefight-continues-california-secures-additional-federal-support-that-will-help-people-impacted-by-the-fires/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2025/01/13/as-firefight-continues-california-secures-additional-federal-support-that-will-help-people-impacted-by-the-fires\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:57.160Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chhs.ca.gov/blog/2025/01/13/as-firefight-continues-california-secures-additional-federal-support-that-will-help-people-impacted-by-the-fires",
-	"url": "https://www.chhs.ca.gov/blog/2025/01/13/as-firefight-continues-california-secures-additional-federal-support-that-will-help-people-impacted-by-the-fires/"
-}

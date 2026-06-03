@@ -1,9 +1,0 @@
-{
-	"id": "rTkG0B5gkb4VtVz",
-	"json": "{\"id\":\"rTkG0B5gkb4VtVz\",\"url\":\"https://airquality.ucdavis.edu/news/how-wildfire-smoke-and-ash-impact-your-health-and-how-protect-yourself\",\"loadedUrl\":\"https://airquality.ucdavis.edu/news/how-wildfire-smoke-and-ash-impact-your-health-and-how-protect-yourself\",\"uniqueKey\":\"https://airquality.ucdavis.edu/news/how-wildfire-smoke-and-ash-impact-your-health-and-how-protect-yourself\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:09:05.402Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://airquality.ucdavis.edu/news/how-wildfire-smoke-and-ash-impact-your-health-and-how-protect-yourself",
-	"url": "https://airquality.ucdavis.edu/news/how-wildfire-smoke-and-ash-impact-your-health-and-how-protect-yourself"
-}

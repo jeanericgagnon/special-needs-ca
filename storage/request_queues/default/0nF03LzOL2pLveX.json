@@ -1,9 +1,0 @@
-{
-	"id": "0nF03LzOL2pLveX",
-	"json": "{\"id\":\"0nF03LzOL2pLveX\",\"url\":\"https://biology.ucdavis.edu/undergraduate/experiential-learning\",\"loadedUrl\":\"https://biology.ucdavis.edu/undergraduate/experiential-learning\",\"uniqueKey\":\"https://biology.ucdavis.edu/undergraduate/experiential-learning\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:14.562Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://biology.ucdavis.edu/undergraduate/experiential-learning",
-	"url": "https://biology.ucdavis.edu/undergraduate/experiential-learning"
-}

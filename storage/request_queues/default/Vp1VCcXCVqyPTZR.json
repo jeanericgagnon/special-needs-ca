@@ -1,9 +1,0 @@
-{
-	"id": "Vp1VCcXCVqyPTZR",
-	"json": "{\"id\":\"Vp1VCcXCVqyPTZR\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/1603/simran-sekhon\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/1603/simran-sekhon\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/1603/simran-sekhon\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:14.698Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/1603/simran-sekhon",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/1603/simran-sekhon"
-}

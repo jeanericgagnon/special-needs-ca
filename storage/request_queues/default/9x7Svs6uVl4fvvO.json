@@ -1,9 +1,0 @@
-{
-	"id": "9x7Svs6uVl4fvvO",
-	"json": "{\"id\":\"9x7Svs6uVl4fvvO\",\"url\":\"https://health.ucdavis.edu/nursing/admissions/pdf/DNP-How-to-Apply-2023.pdf\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/admissions/pdf/DNP-How-to-Apply-2023.pdf\",\"uniqueKey\":\"https://health.ucdavis.edu/nursing/admissions/pdf/DNP-How-to-Apply-2023.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:18.797Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/nursing/admissions/pdf/DNP-How-to-Apply-2023.pdf",
-	"url": "https://health.ucdavis.edu/nursing/admissions/pdf/DNP-How-to-Apply-2023.pdf"
-}

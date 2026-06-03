@@ -1,9 +1,0 @@
-{
-	"id": "cBUeEnQRXkTp2dm",
-	"json": "{\"id\":\"cBUeEnQRXkTp2dm\",\"url\":\"https://marbles.ucdavis.edu/newsupdates.html\",\"loadedUrl\":\"https://marbles.ucdavis.edu/newsupdates.html\",\"uniqueKey\":\"https://marbles.ucdavis.edu/newsupdates.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:23:58.046Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://marbles.ucdavis.edu/newsupdates.html",
-	"url": "https://marbles.ucdavis.edu/newsupdates.html"
-}

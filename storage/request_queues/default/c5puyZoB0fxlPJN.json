@@ -1,9 +1,0 @@
-{
-	"id": "c5puyZoB0fxlPJN",
-	"json": "{\"id\":\"c5puyZoB0fxlPJN\",\"url\":\"https://www.gov.ca.gov/join-the-administration/\",\"loadedUrl\":\"https://www.gov.ca.gov/join-the-administration/\",\"uniqueKey\":\"https://www.gov.ca.gov/join-the-administration\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:04.730Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.gov.ca.gov/join-the-administration",
-	"url": "https://www.gov.ca.gov/join-the-administration/"
-}

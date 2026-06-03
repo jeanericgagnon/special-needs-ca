@@ -1,9 +1,0 @@
-{
-	"id": "MAeTFjfLn2sYGsK",
-	"json": "{\"id\":\"MAeTFjfLn2sYGsK\",\"url\":\"https://genomecenter.ucdavis.edu/phd-programs\",\"loadedUrl\":\"https://genomecenter.ucdavis.edu/phd-programs\",\"uniqueKey\":\"https://genomecenter.ucdavis.edu/phd-programs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:09.587Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://genomecenter.ucdavis.edu/phd-programs",
-	"url": "https://genomecenter.ucdavis.edu/phd-programs"
-}

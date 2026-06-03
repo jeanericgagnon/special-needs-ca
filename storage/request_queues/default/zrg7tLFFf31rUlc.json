@@ -1,9 +1,0 @@
-{
-	"id": "zrg7tLFFf31rUlc",
-	"json": "{\"id\":\"zrg7tLFFf31rUlc\",\"url\":\"https://give.ucdavis.edu/MOPH/324495\",\"loadedUrl\":\"https://give.ucdavis.edu/MOPH/324495\",\"uniqueKey\":\"https://give.ucdavis.edu/MOPH/324495\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:00.624Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/MOPH/324495",
-	"url": "https://give.ucdavis.edu/MOPH/324495"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "ET7U60Qlfq92Onw",
-	"json": "{\"id\":\"ET7U60Qlfq92Onw\",\"url\":\"https://www.cdss.ca.gov/inforesources/Child-Care-Licensing/Child-Care-Advocates\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/child-care-licensing/child-care-advocates\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/Child-Care-Licensing/Child-Care-Advocates\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":1,\"errorMessages\":[\"Error: Detected a session error, rotating session... \\nread ECONNRESET\\n\\n    at CheerioCrawler._requestFunction (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@crawlee/http/internals/http-crawler.js:461:23)\\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\\n    at async wrap (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@apify/timeout/cjs/index.cjs:54:21)\"],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4,\"sessionRotationCount\":1}},\"handledAt\":\"2026-06-01T15:36:39.600Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 1,
-	"uniqueKey": "https://www.cdss.ca.gov/inforesources/Child-Care-Licensing/Child-Care-Advocates",
-	"url": "https://www.cdss.ca.gov/inforesources/Child-Care-Licensing/Child-Care-Advocates"
-}

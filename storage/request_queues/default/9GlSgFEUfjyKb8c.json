@@ -1,9 +1,0 @@
-{
-	"id": "9GlSgFEUfjyKb8c",
-	"json": "{\"id\":\"9GlSgFEUfjyKb8c\",\"url\":\"https://toxmsdt.vetmed.ucdavis.edu/mentees\",\"loadedUrl\":\"https://toxmsdt.vetmed.ucdavis.edu/mentees\",\"uniqueKey\":\"https://toxmsdt.vetmed.ucdavis.edu/mentees\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:23:59.138Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://toxmsdt.vetmed.ucdavis.edu/mentees",
-	"url": "https://toxmsdt.vetmed.ucdavis.edu/mentees"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "a5rJCHh1qpoWyhK",
-	"json": "{\"id\":\"a5rJCHh1qpoWyhK\",\"url\":\"https://www2.cde.ca.gov/cacs/cs\",\"loadedUrl\":\"https://www2.cde.ca.gov/cacs/cs\",\"uniqueKey\":\"https://www2.cde.ca.gov/cacs/cs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:23:58.459Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www2.cde.ca.gov/cacs/cs",
-	"url": "https://www2.cde.ca.gov/cacs/cs"
-}

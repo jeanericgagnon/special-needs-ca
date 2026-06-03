@@ -1,9 +1,0 @@
-{
-	"id": "Ml2JUZDcNWDysJy",
-	"json": "{\"id\":\"Ml2JUZDcNWDysJy\",\"url\":\"https://marbles.ucdavis.edu/relatedsites.html\",\"loadedUrl\":\"https://marbles.ucdavis.edu/relatedsites.html\",\"uniqueKey\":\"https://marbles.ucdavis.edu/relatedsites.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:23:58.109Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://marbles.ucdavis.edu/relatedsites.html",
-	"url": "https://marbles.ucdavis.edu/relatedsites.html"
-}

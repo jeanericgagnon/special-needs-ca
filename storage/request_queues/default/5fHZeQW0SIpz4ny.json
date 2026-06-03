@@ -1,9 +1,0 @@
-{
-	"id": "5fHZeQW0SIpz4ny",
-	"json": "{\"id\":\"5fHZeQW0SIpz4ny\",\"url\":\"https://health.ucdavis.edu/mdprogram/OME/\",\"loadedUrl\":\"https://health.ucdavis.edu/mdprogram/OME/\",\"uniqueKey\":\"https://health.ucdavis.edu/mdprogram/OME\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:03.977Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mdprogram/OME",
-	"url": "https://health.ucdavis.edu/mdprogram/OME/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "i8gOOqctyzSd5IQ",
-	"json": "{\"id\":\"i8gOOqctyzSd5IQ\",\"url\":\"https://excellence.ucdavis.edu/\",\"loadedUrl\":\"https://excellence.ucdavis.edu/\",\"uniqueKey\":\"https://excellence.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:21.858Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://excellence.ucdavis.edu",
-	"url": "https://excellence.ucdavis.edu/"
-}

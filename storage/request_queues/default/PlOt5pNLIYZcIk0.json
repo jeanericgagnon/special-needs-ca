@@ -1,9 +1,0 @@
-{
-	"id": "PlOt5pNLIYZcIk0",
-	"json": "{\"id\":\"PlOt5pNLIYZcIk0\",\"url\":\"https://www.dmv.ca.gov/portal/driver-education-and-safety/online-learning-and-tests/\",\"loadedUrl\":\"https://www.dmv.ca.gov/portal/driver-education-and-safety/online-learning-and-tests/\",\"uniqueKey\":\"https://www.dmv.ca.gov/portal/driver-education-and-safety/online-learning-and-tests\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:36.905Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dmv.ca.gov/portal/driver-education-and-safety/online-learning-and-tests",
-	"url": "https://www.dmv.ca.gov/portal/driver-education-and-safety/online-learning-and-tests/"
-}

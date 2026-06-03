@@ -1,9 +1,0 @@
-{
-	"id": "fmyPuHfh4PTvO6G",
-	"json": "{\"id\":\"fmyPuHfh4PTvO6G\",\"url\":\"https://www.ucdavis.edu/majors/animal-science\",\"loadedUrl\":\"https://www.ucdavis.edu/majors/animal-science\",\"uniqueKey\":\"https://www.ucdavis.edu/majors/animal-science\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:51:07.373Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ucdavis.edu/majors/animal-science",
-	"url": "https://www.ucdavis.edu/majors/animal-science"
-}

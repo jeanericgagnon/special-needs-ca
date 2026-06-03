@@ -1,9 +1,0 @@
-{
-	"id": "6d5sKxd2L7p8PZB",
-	"json": "{\"id\":\"6d5sKxd2L7p8PZB\",\"url\":\"https://dissc.ucdavis.edu/\",\"loadedUrl\":\"https://dissc.ucdavis.edu/\",\"uniqueKey\":\"https://dissc.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:38.076Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://dissc.ucdavis.edu",
-	"url": "https://dissc.ucdavis.edu/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "6GbnjTdStP6Icj0",
-	"json": "{\"id\":\"6GbnjTdStP6Icj0\",\"url\":\"https://www.globaldownsyndrome.org/ja/%e3%82%b9%e3%83%88%e3%83%bc%e3%83%aa%e3%83%bc/\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/ja/%e3%82%b9%e3%83%88%e3%83%bc%e3%83%aa%e3%83%bc/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/ja/%e3%82%b9%e3%83%88%e3%83%bc%e3%83%aa%e3%83%bc\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:30:03.081Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.globaldownsyndrome.org/ja/%e3%82%b9%e3%83%88%e3%83%bc%e3%83%aa%e3%83%bc",
-	"url": "https://www.globaldownsyndrome.org/ja/%e3%82%b9%e3%83%88%e3%83%bc%e3%83%aa%e3%83%bc/"
-}

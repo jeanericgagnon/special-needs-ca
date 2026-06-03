@@ -1,9 +1,0 @@
-{
-	"id": "YUy1A6CqlejNM3d",
-	"json": "{\"id\":\"YUy1A6CqlejNM3d\",\"url\":\"https://health.ucdavis.edu/surgery/specialties/burn/research.html\",\"loadedUrl\":\"https://health.ucdavis.edu/surgery/specialties/burn/research.html\",\"uniqueKey\":\"https://health.ucdavis.edu/surgery/specialties/burn/research.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:49.159Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/surgery/specialties/burn/research.html",
-	"url": "https://health.ucdavis.edu/surgery/specialties/burn/research.html"
-}

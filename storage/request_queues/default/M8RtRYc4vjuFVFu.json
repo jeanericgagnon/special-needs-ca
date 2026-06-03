@@ -1,9 +1,0 @@
-{
-	"id": "M8RtRYc4vjuFVFu",
-	"json": "{\"id\":\"M8RtRYc4vjuFVFu\",\"url\":\"https://iedo.ucdavis.edu/\",\"loadedUrl\":\"https://iedo.ucdavis.edu/\",\"uniqueKey\":\"https://iedo.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:00.467Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://iedo.ucdavis.edu",
-	"url": "https://iedo.ucdavis.edu/"
-}

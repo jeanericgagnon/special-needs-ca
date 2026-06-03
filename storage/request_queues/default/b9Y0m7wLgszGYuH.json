@@ -1,9 +1,0 @@
-{
-	"id": "b9Y0m7wLgszGYuH",
-	"json": "{\"id\":\"b9Y0m7wLgszGYuH\",\"url\":\"https://www.cde.ca.gov/fg/aa/ca/caaro-updates.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/fg/aa/ca/caaro-updates.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/fg/aa/ca/caaro-updates.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:22:21.324Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/fg/aa/ca/caaro-updates.asp",
-	"url": "https://www.cde.ca.gov/fg/aa/ca/caaro-updates.asp"
-}

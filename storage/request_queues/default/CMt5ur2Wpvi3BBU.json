@@ -1,9 +1,0 @@
-{
-	"id": "CMt5ur2Wpvi3BBU",
-	"json": "{\"id\":\"CMt5ur2Wpvi3BBU\",\"url\":\"https://rarediseases.org/organizations/setbp1-society/\",\"loadedUrl\":\"https://rarediseases.org/organizations/setbp1-society/\",\"uniqueKey\":\"https://rarediseases.org/organizations/setbp1-society\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:19:45.802Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/organizations/setbp1-society",
-	"url": "https://rarediseases.org/organizations/setbp1-society/"
-}

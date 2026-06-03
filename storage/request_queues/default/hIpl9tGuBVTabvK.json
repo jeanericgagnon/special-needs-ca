@@ -1,9 +1,0 @@
-{
-	"id": "hIpl9tGuBVTabvK",
-	"json": "{\"id\":\"hIpl9tGuBVTabvK\",\"url\":\"https://sitefarm.ucdavis.edu/about\",\"loadedUrl\":\"https://sitefarm.ucdavis.edu/about\",\"uniqueKey\":\"https://sitefarm.ucdavis.edu/about\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:48.223Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://sitefarm.ucdavis.edu/about",
-	"url": "https://sitefarm.ucdavis.edu/about"
-}

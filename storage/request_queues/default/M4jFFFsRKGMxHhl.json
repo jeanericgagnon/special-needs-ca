@@ -1,9 +1,0 @@
-{
-	"id": "M4jFFFsRKGMxHhl",
-	"json": "{\"id\":\"M4jFFFsRKGMxHhl\",\"url\":\"https://health.ucdavis.edu/news/headlines/uc-davis-medical-center-earns-national-lgbtq-health-care-honors-/2022/04\",\"loadedUrl\":\"https://health.ucdavis.edu/news/headlines/uc-davis-medical-center-earns-national-lgbtq-health-care-honors-/2022/04\",\"uniqueKey\":\"https://health.ucdavis.edu/news/headlines/uc-davis-medical-center-earns-national-lgbtq-health-care-honors-/2022/04\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:51.292Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/news/headlines/uc-davis-medical-center-earns-national-lgbtq-health-care-honors-/2022/04",
-	"url": "https://health.ucdavis.edu/news/headlines/uc-davis-medical-center-earns-national-lgbtq-health-care-honors-/2022/04"
-}

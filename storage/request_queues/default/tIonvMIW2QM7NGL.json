@@ -1,9 +1,0 @@
-{
-	"id": "tIonvMIW2QM7NGL",
-	"json": "{\"id\":\"tIonvMIW2QM7NGL\",\"url\":\"https://mindbrain.ucdavis.edu/people/tony-simon\",\"loadedUrl\":\"https://mindbrain.ucdavis.edu/people/tony-simon\",\"uniqueKey\":\"https://mindbrain.ucdavis.edu/people/tony-simon\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:10.830Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://mindbrain.ucdavis.edu/people/tony-simon",
-	"url": "https://mindbrain.ucdavis.edu/people/tony-simon"
-}

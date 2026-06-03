@@ -1,9 +1,0 @@
-{
-	"id": "ciuoepgsa4dJmFs",
-	"json": "{\"id\":\"ciuoepgsa4dJmFs\",\"url\":\"https://cdss.ca.gov/inforesources/Community-Care/Continuing-Care/How-to-Apply-and-Applications\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/community-care/continuing-care/how-to-apply-and-applications\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Community-Care/Continuing-Care/How-to-Apply-and-Applications\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:48.553Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/Community-Care/Continuing-Care/How-to-Apply-and-Applications",
-	"url": "https://cdss.ca.gov/inforesources/Community-Care/Continuing-Care/How-to-Apply-and-Applications"
-}

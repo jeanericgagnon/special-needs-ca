@@ -1,9 +1,0 @@
-{
-	"id": "gpjSko3LH5OV2sk",
-	"json": "{\"id\":\"gpjSko3LH5OV2sk\",\"url\":\"https://biology.ucdavis.edu/undergraduate/new-transfer/biolaunch\",\"loadedUrl\":\"https://biology.ucdavis.edu/undergraduate/new-transfer/biolaunch\",\"uniqueKey\":\"https://biology.ucdavis.edu/undergraduate/new-transfer/biolaunch\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:19.716Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://biology.ucdavis.edu/undergraduate/new-transfer/biolaunch",
-	"url": "https://biology.ucdavis.edu/undergraduate/new-transfer/biolaunch"
-}

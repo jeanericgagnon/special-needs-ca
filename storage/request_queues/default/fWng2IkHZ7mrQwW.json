@@ -1,9 +1,0 @@
-{
-	"id": "fWng2IkHZ7mrQwW",
-	"json": "{\"id\":\"fWng2IkHZ7mrQwW\",\"url\":\"https://genomecenter.ucdavis.edu/sitemap\",\"loadedUrl\":\"https://genomecenter.ucdavis.edu/sitemap\",\"uniqueKey\":\"https://genomecenter.ucdavis.edu/sitemap\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:12.389Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://genomecenter.ucdavis.edu/sitemap",
-	"url": "https://genomecenter.ucdavis.edu/sitemap"
-}

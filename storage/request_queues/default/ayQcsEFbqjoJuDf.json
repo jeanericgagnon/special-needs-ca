@@ -1,9 +1,0 @@
-{
-	"id": "ayQcsEFbqjoJuDf",
-	"json": "{\"id\":\"ayQcsEFbqjoJuDf\",\"url\":\"https://health.ucdavis.edu/patients-visitors/locations/labs/lab-hours\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/locations/labs/lab-hours\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/locations/labs/lab-hours\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:42.539Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/locations/labs/lab-hours",
-	"url": "https://health.ucdavis.edu/patients-visitors/locations/labs/lab-hours"
-}

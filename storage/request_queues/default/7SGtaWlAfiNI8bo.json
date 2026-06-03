@@ -1,9 +1,0 @@
-{
-	"id": "7SGtaWlAfiNI8bo",
-	"json": "{\"id\":\"7SGtaWlAfiNI8bo\",\"url\":\"https://ucp.org/resources/?sf_paged=2\",\"loadedUrl\":\"https://ucp.org/resources/?sf_paged=2\",\"uniqueKey\":\"https://ucp.org/resources?sf_paged=2\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:17.150Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ucp.org/resources?sf_paged=2",
-	"url": "https://ucp.org/resources/?sf_paged=2"
-}

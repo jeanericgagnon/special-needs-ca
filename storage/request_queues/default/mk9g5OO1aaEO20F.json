@@ -1,9 +1,0 @@
-{
-	"id": "mk9g5OO1aaEO20F",
-	"json": "{\"id\":\"mk9g5OO1aaEO20F\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/Pages/Diabetes/Gestational-Diabetes-and-Postpartum-Care.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/Pages/Diabetes/Gestational-Diabetes-and-Postpartum-Care.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/Pages/Diabetes/Gestational-Diabetes-and-Postpartum-Care.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:06:39.794Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/Pages/Diabetes/Gestational-Diabetes-and-Postpartum-Care.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/Pages/Diabetes/Gestational-Diabetes-and-Postpartum-Care.aspx"
-}

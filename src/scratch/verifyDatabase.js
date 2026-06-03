@@ -79,7 +79,7 @@ const programCount = db.prepare('SELECT COUNT(*) as cnt FROM programs').get().cn
 assert(programCount === 9, `Statewide Programs successfully seeded (expected 9, found: ${programCount}).`);
 
 const conditionCount = db.prepare('SELECT COUNT(*) as cnt FROM conditions').get().cnt;
-assert(conditionCount === 4, `Condition Taxonomy successfully seeded (expected 4, found: ${conditionCount}).`);
+assert(conditionCount === 78, `Condition Taxonomy successfully seeded (expected 78, found: ${conditionCount}).`);
 
 const countyCount = db.prepare('SELECT COUNT(*) as cnt FROM counties').get().cnt;
 assert(countyCount === 58, `California Counties successfully seeded (expected 58, found: ${countyCount}).`);
@@ -110,7 +110,7 @@ db.transaction(() => {
 
   // Set selected condition Down Syndrome in many-to-many junction
   db.prepare('INSERT INTO child_profile_conditions (child_id, condition_id) VALUES (?, ?)')
-    .run(childId, 'down-syndrome');
+    .run(childId, 'down-syndrome-trisomy-21');
 
   // Set selected functional needs: speech therapy and respite care in junction
   db.prepare('INSERT INTO child_profile_needs (child_id, need_id) VALUES (?, ?)')

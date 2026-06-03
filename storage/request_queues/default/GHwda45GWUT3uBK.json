@@ -1,9 +1,0 @@
-{
-	"id": "GHwda45GWUT3uBK",
-	"json": "{\"id\":\"GHwda45GWUT3uBK\",\"url\":\"https://www.dhcs.ca.gov/CalAIM/Documents/BD-Perinatal-Provider-Differences-Flyer.pdf\",\"loadedUrl\":\"https://www.dhcs.ca.gov/file/bd-perinatal-provider-differences-flyer/\",\"uniqueKey\":\"https://www.dhcs.ca.gov/CalAIM/Documents/BD-Perinatal-Provider-Differences-Flyer.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T17:44:29.924Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dhcs.ca.gov/CalAIM/Documents/BD-Perinatal-Provider-Differences-Flyer.pdf",
-	"url": "https://www.dhcs.ca.gov/CalAIM/Documents/BD-Perinatal-Provider-Differences-Flyer.pdf"
-}

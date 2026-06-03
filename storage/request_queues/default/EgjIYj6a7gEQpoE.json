@@ -1,9 +1,0 @@
-{
-	"id": "EgjIYj6a7gEQpoE",
-	"json": "{\"id\":\"EgjIYj6a7gEQpoE\",\"url\":\"https://ucdnc.ucdavis.edu/residents-and-clinical-fellows\",\"loadedUrl\":\"https://ucdnc.ucdavis.edu/residents-and-clinical-fellows\",\"uniqueKey\":\"https://ucdnc.ucdavis.edu/residents-and-clinical-fellows\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:20.768Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ucdnc.ucdavis.edu/residents-and-clinical-fellows",
-	"url": "https://ucdnc.ucdavis.edu/residents-and-clinical-fellows"
-}

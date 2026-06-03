@@ -1,9 +1,0 @@
-{
-	"id": "GCbE8jM2Gj22bKS",
-	"json": "{\"id\":\"GCbE8jM2Gj22bKS\",\"url\":\"https://health.ucdavis.edu/conditions/cancer/blood-cancer/multiple-myeloma\",\"loadedUrl\":\"https://health.ucdavis.edu/conditions/cancer/blood-cancer/multiple-myeloma\",\"uniqueKey\":\"https://health.ucdavis.edu/conditions/cancer/blood-cancer/multiple-myeloma\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:42.537Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/conditions/cancer/blood-cancer/multiple-myeloma",
-	"url": "https://health.ucdavis.edu/conditions/cancer/blood-cancer/multiple-myeloma"
-}

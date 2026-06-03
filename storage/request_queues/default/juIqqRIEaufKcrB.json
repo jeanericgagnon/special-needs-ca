@@ -1,9 +1,0 @@
-{
-	"id": "juIqqRIEaufKcrB",
-	"json": "{\"id\":\"juIqqRIEaufKcrB\",\"url\":\"https://rarediseases.org/rare-diseases/mct8-specific-thyroid-hormone-cell-transporter-deficiency/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/mct8-specific-thyroid-hormone-cell-transporter-deficiency/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/mct8-specific-thyroid-hormone-cell-transporter-deficiency\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:09:48.554Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/rare-diseases/mct8-specific-thyroid-hormone-cell-transporter-deficiency",
-	"url": "https://rarediseases.org/rare-diseases/mct8-specific-thyroid-hormone-cell-transporter-deficiency/"
-}

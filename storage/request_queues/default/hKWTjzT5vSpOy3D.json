@@ -1,9 +1,0 @@
-{
-	"id": "hKWTjzT5vSpOy3D",
-	"json": "{\"id\":\"hKWTjzT5vSpOy3D\",\"url\":\"https://health.ucdavis.edu/nursing/academics/Course_Distinctions/course_pages/going-global.html\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/academics/Course_Distinctions/course_pages/going-global.html\",\"uniqueKey\":\"https://health.ucdavis.edu/nursing/academics/Course_Distinctions/course_pages/going-global.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:18.655Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/nursing/academics/Course_Distinctions/course_pages/going-global.html",
-	"url": "https://health.ucdavis.edu/nursing/academics/Course_Distinctions/course_pages/going-global.html"
-}

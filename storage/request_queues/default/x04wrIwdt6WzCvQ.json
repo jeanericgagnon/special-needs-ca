@@ -1,9 +1,0 @@
-{
-	"id": "x04wrIwdt6WzCvQ",
-	"json": "{\"id\":\"x04wrIwdt6WzCvQ\",\"url\":\"https://www.cdph.ca.gov/Pages/AtoZIndex.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Pages/AtoZIndex.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Pages/AtoZIndex.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:15.496Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Pages/AtoZIndex.aspx",
-	"url": "https://www.cdph.ca.gov/Pages/AtoZIndex.aspx"
-}

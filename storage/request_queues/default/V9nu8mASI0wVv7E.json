@@ -1,9 +1,0 @@
-{
-	"id": "V9nu8mASI0wVv7E",
-	"json": "{\"id\":\"V9nu8mASI0wVv7E\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/43328/gia-oh\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/43328/gia-oh\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/43328/gia-oh\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:17.738Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/43328/gia-oh",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/43328/gia-oh"
-}

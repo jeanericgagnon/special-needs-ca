@@ -1,9 +1,0 @@
-{
-	"id": "qv6TgzgrUG4Zh2h",
-	"json": "{\"id\":\"qv6TgzgrUG4Zh2h\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/53490/brandon-hassid-physical-medicine-and-rehabilitation-sports-medicine-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/53490/brandon-hassid-physical-medicine-and-rehabilitation-sports-medicine-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/53490/brandon-hassid-physical-medicine-and-rehabilitation-sports-medicine-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:15.113Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/53490/brandon-hassid-physical-medicine-and-rehabilitation-sports-medicine-sacramento",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/53490/brandon-hassid-physical-medicine-and-rehabilitation-sports-medicine-sacramento"
-}

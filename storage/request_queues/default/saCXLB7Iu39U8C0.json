@@ -1,9 +1,0 @@
-{
-	"id": "saCXLB7Iu39U8C0",
-	"json": "{\"id\":\"saCXLB7Iu39U8C0\",\"url\":\"https://cdss.ca.gov/inforesources/Caregiver-Advocacy-Network/Training\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/caregiver-advocacy-network/training\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Caregiver-Advocacy-Network/Training\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:57.488Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/Caregiver-Advocacy-Network/Training",
-	"url": "https://cdss.ca.gov/inforesources/Caregiver-Advocacy-Network/Training"
-}

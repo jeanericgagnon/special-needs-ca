@@ -1,9 +1,0 @@
-{
-	"id": "g0wIi1WOGn86nOR",
-	"json": "{\"id\":\"g0wIi1WOGn86nOR\",\"url\":\"https://health.ucdavis.edu/mind-institute/research/early-detection/videos-edl\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/research/early-detection/videos-edl\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/research/early-detection/videos-edl\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:26.755Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mind-institute/research/early-detection/videos-edl",
-	"url": "https://health.ucdavis.edu/mind-institute/research/early-detection/videos-edl"
-}

@@ -64,7 +64,7 @@ const testProfile = {
   dob: dobString,
   countyId: 'orange',
   zipCode: '92705',
-  conditionIds: ['down-syndrome'],
+  conditionIds: ['down-syndrome-trisomy-21'],
   suspectedConditionIds: [],
   functionalNeedIds: ['speech-therapy', 'respite-care', 'diapers-incontinence-supplies', 'iep-evaluation'],
   insuranceType: 'both', // Medi-Cal primary + Private secondary

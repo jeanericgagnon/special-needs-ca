@@ -1,9 +1,0 @@
-{
-	"id": "g95SIfiABddrcUk",
-	"json": "{\"id\":\"g95SIfiABddrcUk\",\"url\":\"http://www.ucdmc.ucdavis.edu/plasticsurgery/\",\"loadedUrl\":\"https://health.ucdavis.edu/plasticsurgery/\",\"uniqueKey\":\"http://www.ucdmc.ucdavis.edu/plasticsurgery\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:49.893Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.ucdmc.ucdavis.edu/plasticsurgery",
-	"url": "http://www.ucdmc.ucdavis.edu/plasticsurgery/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "4RlXVdgVfcTYwH6",
-	"json": "{\"id\":\"4RlXVdgVfcTYwH6\",\"url\":\"https://www.library.ca.gov/services/to-public/career-pathways/\",\"loadedUrl\":\"https://www.library.ca.gov/services/to-public/career-pathways/\",\"uniqueKey\":\"https://www.library.ca.gov/services/to-public/career-pathways\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:18.789Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.library.ca.gov/services/to-public/career-pathways",
-	"url": "https://www.library.ca.gov/services/to-public/career-pathways/"
-}

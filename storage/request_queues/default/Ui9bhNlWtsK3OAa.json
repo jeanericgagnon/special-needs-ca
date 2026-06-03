@@ -1,9 +1,0 @@
-{
-	"id": "Ui9bhNlWtsK3OAa",
-	"json": "{\"id\":\"Ui9bhNlWtsK3OAa\",\"url\":\"https://www.cde.ca.gov/ls/fa/sf/greenribbonprog.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ls/fa/greenribbonprog.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ls/fa/sf/greenribbonprog.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:12:00.630Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ls/fa/sf/greenribbonprog.asp",
-	"url": "https://www.cde.ca.gov/ls/fa/sf/greenribbonprog.asp"
-}

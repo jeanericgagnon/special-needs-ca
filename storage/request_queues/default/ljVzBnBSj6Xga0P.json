@@ -1,9 +1,0 @@
-{
-	"id": "ljVzBnBSj6Xga0P",
-	"json": "{\"id\":\"ljVzBnBSj6Xga0P\",\"url\":\"https://health.ucdavis.edu/ctsc/area/join-the-team/\",\"loadedUrl\":\"https://health.ucdavis.edu/ctsc/area/join-the-team/\",\"uniqueKey\":\"https://health.ucdavis.edu/ctsc/area/join-the-team\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:32.670Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/ctsc/area/join-the-team",
-	"url": "https://health.ucdavis.edu/ctsc/area/join-the-team/"
-}

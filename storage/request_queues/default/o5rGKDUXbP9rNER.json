@@ -1,9 +1,0 @@
-{
-	"id": "o5rGKDUXbP9rNER",
-	"json": "{\"id\":\"o5rGKDUXbP9rNER\",\"url\":\"https://hdapp.ucdavis.edu/online-reporting\",\"loadedUrl\":\"https://hdapp.ucdavis.edu/online-reporting\",\"uniqueKey\":\"https://hdapp.ucdavis.edu/online-reporting\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:59.831Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hdapp.ucdavis.edu/online-reporting",
-	"url": "https://hdapp.ucdavis.edu/online-reporting"
-}

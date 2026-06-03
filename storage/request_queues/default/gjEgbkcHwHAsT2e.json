@@ -1,9 +1,0 @@
-{
-	"id": "gjEgbkcHwHAsT2e",
-	"json": "{\"id\":\"gjEgbkcHwHAsT2e\",\"url\":\"http://cmt.cde.ca.gov/support/requestform.aspx\",\"loadedUrl\":\"https://cmt.cde.ca.gov/support/requestform.aspx\",\"uniqueKey\":\"http://cmt.cde.ca.gov/support/requestform.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:33.744Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://cmt.cde.ca.gov/support/requestform.aspx",
-	"url": "http://cmt.cde.ca.gov/support/requestform.aspx"
-}

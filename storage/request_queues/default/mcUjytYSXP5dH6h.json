@@ -1,9 +1,0 @@
-{
-	"id": "mcUjytYSXP5dH6h",
-	"json": "{\"id\":\"mcUjytYSXP5dH6h\",\"url\":\"https://www.chhs.ca.gov/blog/2020/07/16/california-health-and-human-services-agency-announces-new-plans-for-covid-19-testing/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2020/07/16/california-health-and-human-services-agency-announces-new-plans-for-covid-19-testing/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2020/07/16/california-health-and-human-services-agency-announces-new-plans-for-covid-19-testing\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:01.950Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chhs.ca.gov/blog/2020/07/16/california-health-and-human-services-agency-announces-new-plans-for-covid-19-testing",
-	"url": "https://www.chhs.ca.gov/blog/2020/07/16/california-health-and-human-services-agency-announces-new-plans-for-covid-19-testing/"
-}

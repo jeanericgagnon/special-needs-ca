@@ -1,9 +1,0 @@
-{
-	"id": "Rnx3xNnht64vK1S",
-	"json": "{\"id\":\"Rnx3xNnht64vK1S\",\"url\":\"https://specialneeds.help\",\"loadedUrl\":\"https://specialneeds.help/\",\"uniqueKey\":\"https://specialneeds.help\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-06-01T14:55:15.212Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://specialneeds.help",
-	"url": "https://specialneeds.help"
-}

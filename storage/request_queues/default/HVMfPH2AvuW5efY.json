@@ -1,9 +1,0 @@
-{
-	"id": "HVMfPH2AvuW5efY",
-	"json": "{\"id\":\"HVMfPH2AvuW5efY\",\"url\":\"https://www.cdss.ca.gov/inforesources/Refugees/Reports-and-Data\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/refugees/reports-and-data\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/Refugees/Reports-and-Data\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:34.096Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/inforesources/Refugees/Reports-and-Data",
-	"url": "https://www.cdss.ca.gov/inforesources/Refugees/Reports-and-Data"
-}

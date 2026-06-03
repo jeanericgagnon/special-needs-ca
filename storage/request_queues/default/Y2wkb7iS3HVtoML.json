@@ -1,9 +1,0 @@
-{
-	"id": "Y2wkb7iS3HVtoML",
-	"json": "{\"id\":\"Y2wkb7iS3HVtoML\",\"url\":\"https://biology.ucdavis.edu/\",\"loadedUrl\":\"https://biology.ucdavis.edu/\",\"uniqueKey\":\"https://biology.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:03:25.149Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://biology.ucdavis.edu",
-	"url": "https://biology.ucdavis.edu/"
-}

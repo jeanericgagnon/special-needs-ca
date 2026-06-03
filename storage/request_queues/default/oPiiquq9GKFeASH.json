@@ -1,9 +1,0 @@
-{
-	"id": "oPiiquq9GKFeASH",
-	"json": "{\"id\":\"oPiiquq9GKFeASH\",\"url\":\"https://www.cdph.ca.gov/Programs/CID/DOA/Pages/OA_CARE_MAI_Providers.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CID/DOA/Pages/OA_CARE_MAI_Providers.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CID/DOA/Pages/OA_CARE_MAI_Providers.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:00:47.178Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CID/DOA/Pages/OA_CARE_MAI_Providers.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CID/DOA/Pages/OA_CARE_MAI_Providers.aspx"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "V0r16phhLgan2LN",
-	"json": "{\"id\":\"V0r16phhLgan2LN\",\"url\":\"https://www.csb-cde.ca.gov/about/events/\",\"loadedUrl\":\"https://www.csb-cde.ca.gov/about/events/\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/about/events\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:06.383Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.csb-cde.ca.gov/about/events",
-	"url": "https://www.csb-cde.ca.gov/about/events/"
-}

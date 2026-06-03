@@ -1,9 +1,0 @@
-{
-	"id": "7gZKWU1vUE0DkHp",
-	"json": "{\"id\":\"7gZKWU1vUE0DkHp\",\"url\":\"https://neuroscience.ucdavis.edu/jones\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/jones\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/jones\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:35.577Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/jones",
-	"url": "https://neuroscience.ucdavis.edu/jones"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "mJ6kakIjdN23jRV",
-	"json": "{\"id\":\"mJ6kakIjdN23jRV\",\"url\":\"https://shcs.ucdavis.edu/\",\"loadedUrl\":\"https://shcs.ucdavis.edu/\",\"uniqueKey\":\"https://shcs.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:59.229Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://shcs.ucdavis.edu",
-	"url": "https://shcs.ucdavis.edu/"
-}

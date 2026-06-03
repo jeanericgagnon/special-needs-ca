@@ -1,9 +1,0 @@
-{
-	"id": "3EMCuuCbfEQ4Asu",
-	"json": "{\"id\":\"3EMCuuCbfEQ4Asu\",\"url\":\"https://www.ucdavis.edu/news/uc-davis-shines-public-good-rankings\",\"loadedUrl\":\"https://www.ucdavis.edu/news/uc-davis-shines-public-good-rankings\",\"uniqueKey\":\"https://www.ucdavis.edu/news/uc-davis-shines-public-good-rankings\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:51:07.054Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ucdavis.edu/news/uc-davis-shines-public-good-rankings",
-	"url": "https://www.ucdavis.edu/news/uc-davis-shines-public-good-rankings"
-}

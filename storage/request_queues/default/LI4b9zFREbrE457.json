@@ -1,9 +1,0 @@
-{
-	"id": "LI4b9zFREbrE457",
-	"json": "{\"id\":\"LI4b9zFREbrE457\",\"url\":\"https://hr.ucdavis.edu/employees/leave-time-off/sick-leave\",\"loadedUrl\":\"https://hr.ucdavis.edu/employees/leave-time-off/sick-leave\",\"uniqueKey\":\"https://hr.ucdavis.edu/employees/leave-time-off/sick-leave\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:12.454Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/employees/leave-time-off/sick-leave",
-	"url": "https://hr.ucdavis.edu/employees/leave-time-off/sick-leave"
-}

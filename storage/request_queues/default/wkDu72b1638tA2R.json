@@ -1,9 +1,0 @@
-{
-	"id": "wkDu72b1638tA2R",
-	"json": "{\"id\":\"wkDu72b1638tA2R\",\"url\":\"https://rarediseases.org/rare-diseases/glioma/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/glioma/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/glioma\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:12:46.531Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/rare-diseases/glioma",
-	"url": "https://rarediseases.org/rare-diseases/glioma/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "53LCwkXw8EFOKCx",
-	"json": "{\"id\":\"53LCwkXw8EFOKCx\",\"url\":\"https://www.globaldownsyndrome.org/ru/research-medical-care/\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/ru/research-medical-care/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/ru/research-medical-care\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:29:03.791Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.globaldownsyndrome.org/ru/research-medical-care",
-	"url": "https://www.globaldownsyndrome.org/ru/research-medical-care/"
-}

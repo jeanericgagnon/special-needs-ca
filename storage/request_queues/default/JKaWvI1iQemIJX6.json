@@ -1,9 +1,0 @@
-{
-	"id": "JKaWvI1iQemIJX6",
-	"json": "{\"id\":\"JKaWvI1iQemIJX6\",\"url\":\"https://give.ucdavis.edu/CHEM/CHEDOGT\",\"loadedUrl\":\"https://give.ucdavis.edu/CHEM/CHEDOGT\",\"uniqueKey\":\"https://give.ucdavis.edu/CHEM/CHEDOGT\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:52.201Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/CHEM/CHEDOGT",
-	"url": "https://give.ucdavis.edu/CHEM/CHEDOGT"
-}

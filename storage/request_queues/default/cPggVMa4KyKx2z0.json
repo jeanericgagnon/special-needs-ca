@@ -1,9 +1,0 @@
-{
-	"id": "cPggVMa4KyKx2z0",
-	"json": "{\"id\":\"cPggVMa4KyKx2z0\",\"url\":\"https://learn.rarediseases.org/courses/temas-avanzados-en-el-desarrollo-de-farmacos/\",\"loadedUrl\":\"https://learn.rarediseases.org/courses/temas-avanzados-en-el-desarrollo-de-farmacos/\",\"uniqueKey\":\"https://learn.rarediseases.org/courses/temas-avanzados-en-el-desarrollo-de-farmacos\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:31.981Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://learn.rarediseases.org/courses/temas-avanzados-en-el-desarrollo-de-farmacos",
-	"url": "https://learn.rarediseases.org/courses/temas-avanzados-en-el-desarrollo-de-farmacos/"
-}

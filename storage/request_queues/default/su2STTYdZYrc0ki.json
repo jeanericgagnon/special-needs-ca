@@ -1,9 +1,0 @@
-{
-	"id": "su2STTYdZYrc0ki",
-	"json": "{\"id\":\"su2STTYdZYrc0ki\",\"url\":\"https://www.ucdavis.edu/commencement\",\"loadedUrl\":\"https://www.ucdavis.edu/commencement\",\"uniqueKey\":\"https://www.ucdavis.edu/commencement\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:45.954Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ucdavis.edu/commencement",
-	"url": "https://www.ucdavis.edu/commencement"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "NVPWFb2Eex4o6R9",
-	"json": "{\"id\":\"NVPWFb2Eex4o6R9\",\"url\":\"http://downloads.leginfo.legislature.ca.gov/\",\"loadedUrl\":\"https://downloads.leginfo.legislature.ca.gov/\",\"uniqueKey\":\"http://downloads.leginfo.legislature.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:20.156Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://downloads.leginfo.legislature.ca.gov",
-	"url": "http://downloads.leginfo.legislature.ca.gov/"
-}

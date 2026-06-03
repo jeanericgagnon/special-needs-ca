@@ -1,9 +1,0 @@
-{
-	"id": "5IVsRf4BqdjcxQH",
-	"json": "{\"id\":\"5IVsRf4BqdjcxQH\",\"url\":\"https://health.ucdavis.edu/psychiatry/research/cultural\",\"loadedUrl\":\"https://health.ucdavis.edu/psychiatry/research/cultural\",\"uniqueKey\":\"https://health.ucdavis.edu/psychiatry/research/cultural\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:48.700Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/psychiatry/research/cultural",
-	"url": "https://health.ucdavis.edu/psychiatry/research/cultural"
-}

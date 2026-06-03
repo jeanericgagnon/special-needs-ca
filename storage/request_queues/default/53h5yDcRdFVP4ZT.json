@@ -1,9 +1,0 @@
-{
-	"id": "53h5yDcRdFVP4ZT",
-	"json": "{\"id\":\"53h5yDcRdFVP4ZT\",\"url\":\"https://www.cdph.ca.gov/Programs/OPA/Pages/CAHAN/CDPH-Updates-Syphilis-Screening-Recommendations.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/OPA/Pages/CAHAN/CDPH-Updates-Syphilis-Screening-Recommendations.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/OPA/Pages/CAHAN/CDPH-Updates-Syphilis-Screening-Recommendations.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:03:42.534Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/OPA/Pages/CAHAN/CDPH-Updates-Syphilis-Screening-Recommendations.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/OPA/Pages/CAHAN/CDPH-Updates-Syphilis-Screening-Recommendations.aspx"
-}

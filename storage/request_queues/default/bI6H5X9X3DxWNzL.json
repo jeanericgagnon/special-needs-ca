@@ -1,9 +1,0 @@
-{
-	"id": "bI6H5X9X3DxWNzL",
-	"json": "{\"id\":\"bI6H5X9X3DxWNzL\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/1543/ben-waldau-brain_tumors-neurological_surgery-skull_base_surgery-spine_surgery-surgery_-_vascular_and_endovascular-sacramento?FreeText%3aLast+name=Waldau\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/1543/ben-waldau-brain_tumors-neurological_surgery-skull_base_surgery-spine_surgery-surgery_-_vascular_and_endovascular-sacramento?FreeText%3aLast+name=Waldau\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/1543/ben-waldau-brain_tumors-neurological_surgery-skull_base_surgery-spine_surgery-surgery_-_vascular_and_endovascular-sacramento?FreeText%3ALast+name=Waldau\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:12.454Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/1543/ben-waldau-brain_tumors-neurological_surgery-skull_base_surgery-spine_surgery-surgery_-_vascular_and_endovascular-sacramento?FreeText%3ALast+name=Waldau",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/1543/ben-waldau-brain_tumors-neurological_surgery-skull_base_surgery-spine_surgery-surgery_-_vascular_and_endovascular-sacramento?FreeText%3aLast+name=Waldau"
-}

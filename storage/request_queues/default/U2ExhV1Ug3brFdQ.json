@@ -1,9 +1,0 @@
-{
-	"id": "U2ExhV1Ug3brFdQ",
-	"json": "{\"id\":\"U2ExhV1Ug3brFdQ\",\"url\":\"https://cdss.ca.gov/inforesources/OCAP/Safely-Surrendered-Baby/Legislation\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/ocap/safely-surrendered-baby/legislation\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/OCAP/Safely-Surrendered-Baby/Legislation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:29.349Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/OCAP/Safely-Surrendered-Baby/Legislation",
-	"url": "https://cdss.ca.gov/inforesources/OCAP/Safely-Surrendered-Baby/Legislation"
-}

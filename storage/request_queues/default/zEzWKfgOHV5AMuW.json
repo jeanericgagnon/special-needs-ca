@@ -1,9 +1,0 @@
-{
-	"id": "zEzWKfgOHV5AMuW",
-	"json": "{\"id\":\"zEzWKfgOHV5AMuW\",\"url\":\"https://www.ssa.gov/manage-benefits/make-an-appointment\",\"loadedUrl\":\"https://www.ssa.gov/manage-benefits/make-an-appointment\",\"uniqueKey\":\"https://www.ssa.gov/manage-benefits/make-an-appointment\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:32.466Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ssa.gov/manage-benefits/make-an-appointment",
-	"url": "https://www.ssa.gov/manage-benefits/make-an-appointment"
-}

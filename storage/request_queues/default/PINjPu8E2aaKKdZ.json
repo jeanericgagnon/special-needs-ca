@@ -1,9 +1,0 @@
-{
-	"id": "PINjPu8E2aaKKdZ",
-	"json": "{\"id\":\"PINjPu8E2aaKKdZ\",\"url\":\"https://www.cde.ca.gov/ci/fl/im/wladoptionimr2021.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=b724623e-19f6-420e-90e1-425dd7bf95c5&ssb=13665291176&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fci%2Ffl%2Fim%2Fwladoptionimr2021.asp&ssi=39a98579-ctxv-43e3-af29-0f6523f0f58c&ssk=botmanager_support@radware.com&ssm=80770629483411148106101783143166&ssn=a9a86445020260518f589ae05c2c960f212c23aa0bde-9f2c-4bff-99c1e0&sso=0141640a-925b93a57f6e157a5e1f54ba1efdcdcd7364edca78df2f0b&ssp=35212478661780326789178031599865466&ssq=97760345642115481104356421440999315019025&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2Y5MDAwNzUyMGEwNjYtYWRjMC00NzNlLTgxNjktNjQ0MTk3YjVlNDc5MS0xNzgwMzU2NDIxOTA5MC1jNWU4MmU5NzY0MDY4ZWJiMTAiLCJfX3V6bWYiOiI3ZjkwMDAyM2FhMGJkZS05ZjJjLTRiZmYtOTQwYS05MjViOTNhNTdmNmUxLTE3ODAzNTY0MjE5MDkwLTAwMzgwMzk5ZDU5ZWY1NDhhZTkxMCIsInJkIjoiY2EuZ292In0=\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/fl/im/wladoptionimr2021.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T23:27:02.118Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ci/fl/im/wladoptionimr2021.asp",
-	"url": "https://www.cde.ca.gov/ci/fl/im/wladoptionimr2021.asp"
-}

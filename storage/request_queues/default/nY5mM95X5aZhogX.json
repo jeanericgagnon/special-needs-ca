@@ -1,9 +1,0 @@
-{
-	"id": "nY5mM95X5aZhogX",
-	"json": "{\"id\":\"nY5mM95X5aZhogX\",\"url\":\"https://www.cdph.ca.gov/Programs/OHE/Pages/Healthy-Communities-Data-and-Indicators-Project-(HCI).aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/OHE/Pages/Healthy-Communities-Data-and-Indicators-Project-(HCI).aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/OHE/Pages/Healthy-Communities-Data-and-Indicators-Project-(HCI).aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:34:45.843Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/OHE/Pages/Healthy-Communities-Data-and-Indicators-Project-(HCI).aspx",
-	"url": "https://www.cdph.ca.gov/Programs/OHE/Pages/Healthy-Communities-Data-and-Indicators-Project-(HCI).aspx"
-}

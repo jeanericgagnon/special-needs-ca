@@ -1,9 +1,0 @@
-{
-	"id": "OQ5AbhC9JCHPTP7",
-	"json": "{\"id\":\"OQ5AbhC9JCHPTP7\",\"url\":\"https://dq.cde.ca.gov/dataquest/SearchName.asp?rbTimeFrame=oneyear&rYear=2020-21&Topic=TCH&Level=State&submit1=Submit\",\"loadedUrl\":\"https://dq.cde.ca.gov/dataquest/SearchName.asp?rbTimeFrame=oneyear&rYear=2020-21&Topic=TCH&Level=State&submit1=Submit\",\"uniqueKey\":\"https://dq.cde.ca.gov/dataquest/SearchName.asp?Level=State&Topic=TCH&rYear=2020-21&rbTimeFrame=oneyear&submit1=Submit\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:23:46.638Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://dq.cde.ca.gov/dataquest/SearchName.asp?Level=State&Topic=TCH&rYear=2020-21&rbTimeFrame=oneyear&submit1=Submit",
-	"url": "https://dq.cde.ca.gov/dataquest/SearchName.asp?rbTimeFrame=oneyear&rYear=2020-21&Topic=TCH&Level=State&submit1=Submit"
-}

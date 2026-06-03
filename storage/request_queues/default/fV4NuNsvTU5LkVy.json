@@ -1,9 +1,0 @@
-{
-	"id": "fV4NuNsvTU5LkVy",
-	"json": "{\"id\":\"fV4NuNsvTU5LkVy\",\"url\":\"https://www.ssa.gov/retirement/full-retirement-age\",\"loadedUrl\":\"https://www.ssa.gov/retirement/full-retirement-age\",\"uniqueKey\":\"https://www.ssa.gov/retirement/full-retirement-age\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:34.261Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ssa.gov/retirement/full-retirement-age",
-	"url": "https://www.ssa.gov/retirement/full-retirement-age"
-}

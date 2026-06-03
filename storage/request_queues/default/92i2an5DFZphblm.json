@@ -1,9 +1,0 @@
-{
-	"id": "92i2an5DFZphblm",
-	"json": "{\"id\":\"92i2an5DFZphblm\",\"url\":\"https://www.cde.ca.gov/sp/cd/op/ieeresources.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/cd/op/ieeresources.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/cd/op/ieeresources.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:48.186Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/sp/cd/op/ieeresources.asp",
-	"url": "https://www.cde.ca.gov/sp/cd/op/ieeresources.asp"
-}

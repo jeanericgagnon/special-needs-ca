@@ -1,9 +1,0 @@
-{
-	"id": "qWpSro2osCsnjn7",
-	"json": "{\"id\":\"qWpSro2osCsnjn7\",\"url\":\"https://www.chhs.ca.gov/blog/2021/07/14/statement-from-chhs-secretary-dr-mark-ghaly-on-the-2021-budget-act/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2021/07/14/statement-from-chhs-secretary-dr-mark-ghaly-on-the-2021-budget-act/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2021/07/14/statement-from-chhs-secretary-dr-mark-ghaly-on-the-2021-budget-act\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:19.964Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chhs.ca.gov/blog/2021/07/14/statement-from-chhs-secretary-dr-mark-ghaly-on-the-2021-budget-act",
-	"url": "https://www.chhs.ca.gov/blog/2021/07/14/statement-from-chhs-secretary-dr-mark-ghaly-on-the-2021-budget-act/"
-}

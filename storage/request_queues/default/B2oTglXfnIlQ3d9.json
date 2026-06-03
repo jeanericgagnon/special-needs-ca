@@ -1,9 +1,0 @@
-{
-	"id": "B2oTglXfnIlQ3d9",
-	"json": "{\"id\":\"B2oTglXfnIlQ3d9\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/Comms4Providers.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/Comms4Providers.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/Comms4Providers.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:38.169Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/Comms4Providers.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/Comms4Providers.aspx"
-}

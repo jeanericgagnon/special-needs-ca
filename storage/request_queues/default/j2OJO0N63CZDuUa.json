@@ -1,9 +1,0 @@
-{
-	"id": "j2OJO0N63CZDuUa",
-	"json": "{\"id\":\"j2OJO0N63CZDuUa\",\"url\":\"https://calable.ca.gov/investment-options\",\"loadedUrl\":\"https://calable.ca.gov/investment-options\",\"uniqueKey\":\"https://calable.ca.gov/investment-options\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:13.208Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://calable.ca.gov/investment-options",
-	"url": "https://calable.ca.gov/investment-options"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "U1bqXm4HK2zboTd",
-	"json": "{\"id\":\"U1bqXm4HK2zboTd\",\"url\":\"https://www.cdss.ca.gov/deaf-access/deaf-access-program-dap-service-providers\",\"loadedUrl\":\"https://www.cdss.ca.gov/deaf-access/deaf-access-program-dap-service-providers\",\"uniqueKey\":\"https://www.cdss.ca.gov/deaf-access/deaf-access-program-dap-service-providers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:03.437Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/deaf-access/deaf-access-program-dap-service-providers",
-	"url": "https://www.cdss.ca.gov/deaf-access/deaf-access-program-dap-service-providers"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "fEhBd2uiKjS1Dmk",
-	"json": "{\"id\":\"fEhBd2uiKjS1Dmk\",\"url\":\"https://neuroscience.ucdavis.edu/perspectives-neuroscience-seminar-series\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/perspectives-neuroscience-seminar-series\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/perspectives-neuroscience-seminar-series\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:01.449Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/perspectives-neuroscience-seminar-series",
-	"url": "https://neuroscience.ucdavis.edu/perspectives-neuroscience-seminar-series"
-}

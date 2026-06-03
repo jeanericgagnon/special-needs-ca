@@ -1,9 +1,0 @@
-{
-	"id": "une8fzrGLxtWItP",
-	"json": "{\"id\":\"une8fzrGLxtWItP\",\"url\":\"https://health.ucdavis.edu/internal-medicine/pulmonary/our-services/central-valley-pulmonary-fibrosis-support-group\",\"loadedUrl\":\"https://health.ucdavis.edu/internal-medicine/pulmonary/our-services/central-valley-pulmonary-fibrosis-support-group\",\"uniqueKey\":\"https://health.ucdavis.edu/internal-medicine/pulmonary/our-services/central-valley-pulmonary-fibrosis-support-group\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:59.565Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/internal-medicine/pulmonary/our-services/central-valley-pulmonary-fibrosis-support-group",
-	"url": "https://health.ucdavis.edu/internal-medicine/pulmonary/our-services/central-valley-pulmonary-fibrosis-support-group"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "OkOOHzw1UmYyPE2",
-	"json": "{\"id\":\"OkOOHzw1UmYyPE2\",\"url\":\"https://give.ucdavis.edu/MSDP/MSEONLS\",\"loadedUrl\":\"https://give.ucdavis.edu/MSDP/MSEONLS\",\"uniqueKey\":\"https://give.ucdavis.edu/MSDP/MSEONLS\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:59.653Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/MSDP/MSEONLS",
-	"url": "https://give.ucdavis.edu/MSDP/MSEONLS"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "B05DAAxyIPuk08Y",
-	"json": "{\"id\":\"B05DAAxyIPuk08Y\",\"url\":\"https://globalaffairs.ucdavis.edu/tags/global-engagement-insider\",\"loadedUrl\":\"https://globalaffairs.ucdavis.edu/tags/global-engagement-insider\",\"uniqueKey\":\"https://globalaffairs.ucdavis.edu/tags/global-engagement-insider\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:14.441Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://globalaffairs.ucdavis.edu/tags/global-engagement-insider",
-	"url": "https://globalaffairs.ucdavis.edu/tags/global-engagement-insider"
-}

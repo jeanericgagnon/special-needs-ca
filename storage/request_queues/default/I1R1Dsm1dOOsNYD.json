@@ -1,9 +1,0 @@
-{
-	"id": "I1R1Dsm1dOOsNYD",
-	"json": "{\"id\":\"I1R1Dsm1dOOsNYD\",\"url\":\"https://health.ucdavis.edu/news/headlines/patient-selected-as-2026-national-childrens-miracle-network-champion/2026/03\",\"loadedUrl\":\"https://health.ucdavis.edu/news/headlines/patient-selected-as-2026-national-childrens-miracle-network-champion/2026/03\",\"uniqueKey\":\"https://health.ucdavis.edu/news/headlines/patient-selected-as-2026-national-childrens-miracle-network-champion/2026/03\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:47:09.074Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/news/headlines/patient-selected-as-2026-national-childrens-miracle-network-champion/2026/03",
-	"url": "https://health.ucdavis.edu/news/headlines/patient-selected-as-2026-national-childrens-miracle-network-champion/2026/03"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "duT7M8sviyFii0W",
-	"json": "{\"id\":\"duT7M8sviyFii0W\",\"url\":\"https://www.globaldownsyndrome.org/ru/medical-care-centers/\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/research-medical-care/medical-care-providers/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/ru/medical-care-centers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:35.072Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.globaldownsyndrome.org/ru/medical-care-centers",
-	"url": "https://www.globaldownsyndrome.org/ru/medical-care-centers/"
-}

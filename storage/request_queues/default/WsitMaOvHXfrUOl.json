@@ -1,9 +1,0 @@
-{
-	"id": "WsitMaOvHXfrUOl",
-	"json": "{\"id\":\"WsitMaOvHXfrUOl\",\"url\":\"https://www.globaldownsyndrome.org/our-story/about-gdsf/?page_id=695\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/our-story/about-gdsf/an-overview-of-the-global-down-syndrome-foundation/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/our-story/about-gdsf?page_id=695\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:51.149Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.globaldownsyndrome.org/our-story/about-gdsf?page_id=695",
-	"url": "https://www.globaldownsyndrome.org/our-story/about-gdsf/?page_id=695"
-}

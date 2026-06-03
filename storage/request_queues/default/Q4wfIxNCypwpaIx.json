@@ -1,9 +1,0 @@
-{
-	"id": "Q4wfIxNCypwpaIx",
-	"json": "{\"id\":\"Q4wfIxNCypwpaIx\",\"url\":\"https://dbw.parks.ca.gov/?page_id=29179&utm_medium=email&utm_source=govdelivery\",\"loadedUrl\":\"https://dbw.parks.ca.gov/?page_id=29179&utm_medium=email&utm_source=govdelivery\",\"uniqueKey\":\"https://dbw.parks.ca.gov?page_id=29179\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:24.460Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://dbw.parks.ca.gov?page_id=29179",
-	"url": "https://dbw.parks.ca.gov/?page_id=29179&utm_medium=email&utm_source=govdelivery"
-}

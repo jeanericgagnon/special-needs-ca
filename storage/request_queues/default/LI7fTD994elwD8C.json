@@ -1,9 +1,0 @@
-{
-	"id": "LI7fTD994elwD8C",
-	"json": "{\"id\":\"LI7fTD994elwD8C\",\"url\":\"https://www.cdph.ca.gov/Programs/HRB/Pages/Supervisor_and_Managerial.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/HRB/Pages/Supervisor_and_Managerial.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/HRB/Pages/Supervisor_and_Managerial.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:03:34.556Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/HRB/Pages/Supervisor_and_Managerial.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/HRB/Pages/Supervisor_and_Managerial.aspx"
-}

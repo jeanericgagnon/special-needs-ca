@@ -1,9 +1,0 @@
-{
-	"id": "EgIhWKUG3Y9j4T3",
-	"json": "{\"id\":\"EgIhWKUG3Y9j4T3\",\"url\":\"https://ucdnc.ucdavis.edu/graduate-programs\",\"loadedUrl\":\"https://ucdnc.ucdavis.edu/graduate-programs\",\"uniqueKey\":\"https://ucdnc.ucdavis.edu/graduate-programs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:20.695Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ucdnc.ucdavis.edu/graduate-programs",
-	"url": "https://ucdnc.ucdavis.edu/graduate-programs"
-}

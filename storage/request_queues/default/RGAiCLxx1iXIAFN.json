@@ -1,9 +1,0 @@
-{
-	"id": "RGAiCLxx1iXIAFN",
-	"json": "{\"id\":\"RGAiCLxx1iXIAFN\",\"url\":\"https://tobaccoeval.ucdavis.edu/\",\"loadedUrl\":\"https://tobaccoeval.ucdavis.edu/\",\"uniqueKey\":\"https://tobaccoeval.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:11:02.185Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://tobaccoeval.ucdavis.edu",
-	"url": "https://tobaccoeval.ucdavis.edu/"
-}

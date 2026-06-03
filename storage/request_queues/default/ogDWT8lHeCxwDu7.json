@@ -1,9 +1,0 @@
-{
-	"id": "ogDWT8lHeCxwDu7",
-	"json": "{\"id\":\"ogDWT8lHeCxwDu7\",\"url\":\"https://hr.ucdavis.edu/supervisors/sample-letters\",\"loadedUrl\":\"https://hr.ucdavis.edu/supervisors/sample-letters\",\"uniqueKey\":\"https://hr.ucdavis.edu/supervisors/sample-letters\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:17.869Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/supervisors/sample-letters",
-	"url": "https://hr.ucdavis.edu/supervisors/sample-letters"
-}

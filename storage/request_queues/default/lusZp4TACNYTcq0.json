@@ -1,9 +1,0 @@
-{
-	"id": "lusZp4TACNYTcq0",
-	"json": "{\"id\":\"lusZp4TACNYTcq0\",\"url\":\"https://www.cde.ca.gov/ci/gs/hs/hsgrmath.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/gs/hs/hsgrmath.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/gs/hs/hsgrmath.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:35.651Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ci/gs/hs/hsgrmath.asp",
-	"url": "https://www.cde.ca.gov/ci/gs/hs/hsgrmath.asp"
-}

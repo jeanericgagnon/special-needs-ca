@@ -1,9 +1,0 @@
-{
-	"id": "nPABtvpameFGSNE",
-	"json": "{\"id\":\"nPABtvpameFGSNE\",\"url\":\"https://health.ucdavis.edu/ctsc/area/education/research-resources\",\"loadedUrl\":\"https://health.ucdavis.edu/ctsc/area/education/research-resources\",\"uniqueKey\":\"https://health.ucdavis.edu/ctsc/area/education/research-resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:33.154Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/ctsc/area/education/research-resources",
-	"url": "https://health.ucdavis.edu/ctsc/area/education/research-resources"
-}

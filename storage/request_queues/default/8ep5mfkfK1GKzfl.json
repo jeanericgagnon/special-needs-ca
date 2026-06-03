@@ -1,9 +1,0 @@
-{
-	"id": "8ep5mfkfK1GKzfl",
-	"json": "{\"id\":\"8ep5mfkfK1GKzfl\",\"url\":\"https://www.chhs.ca.gov/blog/2026/01/09/joint-statement-from-california-health-and-human-services-leaders-on-vaccine-access-and-availability/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2026/01/09/joint-statement-from-california-health-and-human-services-leaders-on-vaccine-access-and-availability/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2026/01/09/joint-statement-from-california-health-and-human-services-leaders-on-vaccine-access-and-availability\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:01.949Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chhs.ca.gov/blog/2026/01/09/joint-statement-from-california-health-and-human-services-leaders-on-vaccine-access-and-availability",
-	"url": "https://www.chhs.ca.gov/blog/2026/01/09/joint-statement-from-california-health-and-human-services-leaders-on-vaccine-access-and-availability/"
-}

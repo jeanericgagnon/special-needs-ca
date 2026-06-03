@@ -1,9 +1,0 @@
-{
-	"id": "ieErbHe9d4y6MBG",
-	"json": "{\"id\":\"ieErbHe9d4y6MBG\",\"url\":\"https://madlab.faculty.ucdavis.edu/\",\"loadedUrl\":\"https://madlab.faculty.ucdavis.edu/\",\"uniqueKey\":\"https://madlab.faculty.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:07.694Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://madlab.faculty.ucdavis.edu",
-	"url": "https://madlab.faculty.ucdavis.edu/"
-}

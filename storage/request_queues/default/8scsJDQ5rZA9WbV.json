@@ -1,9 +1,0 @@
-{
-	"id": "8scsJDQ5rZA9WbV",
-	"json": "{\"id\":\"8scsJDQ5rZA9WbV\",\"url\":\"https://give.ucdavis.edu/ALAW/BIOCHAR\",\"loadedUrl\":\"https://give.ucdavis.edu/ALAW/BIOCHAR\",\"uniqueKey\":\"https://give.ucdavis.edu/ALAW/BIOCHAR\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:56.228Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/ALAW/BIOCHAR",
-	"url": "https://give.ucdavis.edu/ALAW/BIOCHAR"
-}

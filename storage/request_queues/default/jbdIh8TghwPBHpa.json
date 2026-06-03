@@ -1,9 +1,0 @@
-{
-	"id": "jbdIh8TghwPBHpa",
-	"json": "{\"id\":\"jbdIh8TghwPBHpa\",\"url\":\"https://health.ucdavis.edu/cvri/\",\"loadedUrl\":\"https://health.ucdavis.edu/cardiovascular-research/\",\"uniqueKey\":\"https://health.ucdavis.edu/cvri\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:53.432Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/cvri",
-	"url": "https://health.ucdavis.edu/cvri/"
-}

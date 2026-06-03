@@ -1,9 +1,0 @@
-{
-	"id": "NuH918Y11hcR8uE",
-	"json": "{\"id\":\"NuH918Y11hcR8uE\",\"url\":\"https://biology.ucdavis.edu/undergraduate/explore\",\"loadedUrl\":\"https://biology.ucdavis.edu/undergraduate/explore\",\"uniqueKey\":\"https://biology.ucdavis.edu/undergraduate/explore\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:14.711Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://biology.ucdavis.edu/undergraduate/explore",
-	"url": "https://biology.ucdavis.edu/undergraduate/explore"
-}

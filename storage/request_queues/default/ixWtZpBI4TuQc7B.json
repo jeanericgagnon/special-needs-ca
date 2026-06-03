@@ -1,9 +1,0 @@
-{
-	"id": "ixWtZpBI4TuQc7B",
-	"json": "{\"id\":\"ixWtZpBI4TuQc7B\",\"url\":\"https://www.dhcs.ca.gov/Documents/BHIN-22-003-Medi-Cal-Substance-Use-Disorder-Treatment-Services-for-Beneficiaries-under-age-21.pdf\",\"loadedUrl\":\"https://www.dhcs.ca.gov/file/bhin-22-003-medi-cal-substance-use-disorder-treatment-services-for-beneficiaries-under-age-21/\",\"uniqueKey\":\"https://www.dhcs.ca.gov/Documents/BHIN-22-003-Medi-Cal-Substance-Use-Disorder-Treatment-Services-for-Beneficiaries-under-age-21.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:12:24.693Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dhcs.ca.gov/Documents/BHIN-22-003-Medi-Cal-Substance-Use-Disorder-Treatment-Services-for-Beneficiaries-under-age-21.pdf",
-	"url": "https://www.dhcs.ca.gov/Documents/BHIN-22-003-Medi-Cal-Substance-Use-Disorder-Treatment-Services-for-Beneficiaries-under-age-21.pdf"
-}

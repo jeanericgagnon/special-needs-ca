@@ -1,9 +1,0 @@
-{
-	"id": "zDowPmLtrXfRBHb",
-	"json": "{\"id\":\"zDowPmLtrXfRBHb\",\"url\":\"https://www.cdph.ca.gov/Programs/OPDE/Pages/Cal-EIS-Applicant-Requirements.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/OPDE/Pages/Cal-EIS-Applicant-Requirements.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/OPDE/Pages/Cal-EIS-Applicant-Requirements.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:08.514Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/OPDE/Pages/Cal-EIS-Applicant-Requirements.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/OPDE/Pages/Cal-EIS-Applicant-Requirements.aspx"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "Vwn9kMbUbMSuNoK",
-	"json": "{\"id\":\"Vwn9kMbUbMSuNoK\",\"url\":\"https://www.cdph.ca.gov/Programs/cls/idld/vrdl/Pages/VRDL.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/cls/idld/vrdl/Pages/VRDL.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/cls/idld/vrdl/Pages/VRDL.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:03:23.931Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/cls/idld/vrdl/Pages/VRDL.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/cls/idld/vrdl/Pages/VRDL.aspx"
-}

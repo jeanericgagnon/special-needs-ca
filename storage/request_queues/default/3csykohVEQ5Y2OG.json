@@ -1,9 +1,0 @@
-{
-	"id": "3csykohVEQ5Y2OG",
-	"json": "{\"id\":\"3csykohVEQ5Y2OG\",\"url\":\"https://www.library.ca.gov/about/policies/\",\"loadedUrl\":\"https://www.library.ca.gov/about/policies/\",\"uniqueKey\":\"https://www.library.ca.gov/about/policies\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:18.501Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.library.ca.gov/about/policies",
-	"url": "https://www.library.ca.gov/about/policies/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "pxmUJax5AvhopEY",
-	"json": "{\"id\":\"pxmUJax5AvhopEY\",\"url\":\"https://health.ucdavis.edu/health-education/topic/Smoking/\",\"loadedUrl\":\"https://health.ucdavis.edu/health-education/topic/Smoking/\",\"uniqueKey\":\"https://health.ucdavis.edu/health-education/topic/Smoking\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:33.386Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/health-education/topic/Smoking",
-	"url": "https://health.ucdavis.edu/health-education/topic/Smoking/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "SoP3M78k1NdCH2Z",
-	"json": "{\"id\":\"SoP3M78k1NdCH2Z\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDCB/Pages/AlzheimersDataStatisticsReports.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDCB/Pages/AlzheimersDataStatisticsReports.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDCB/Pages/AlzheimersDataStatisticsReports.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:02:15.846Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDCB/Pages/AlzheimersDataStatisticsReports.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDCB/Pages/AlzheimersDataStatisticsReports.aspx"
-}

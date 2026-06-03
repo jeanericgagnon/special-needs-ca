@@ -1,9 +1,0 @@
-{
-	"id": "jkCYMfCdoqPvnJE",
-	"json": "{\"id\":\"jkCYMfCdoqPvnJE\",\"url\":\"https://hsform.ucdmc.ucdavis.edu/hsform/view-form?formId=ab8b6937b00943b796c6720e1af102d2&internal=Yes\",\"loadedUrl\":\"https://hsform.ucdmc.ucdavis.edu/hsform/view-form?formId=ab8b6937b00943b796c6720e1af102d2&internal=Yes\",\"uniqueKey\":\"https://hsform.ucdmc.ucdavis.edu/hsform/view-form?formId=ab8b6937b00943b796c6720e1af102d2&internal=Yes\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:34.060Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hsform.ucdmc.ucdavis.edu/hsform/view-form?formId=ab8b6937b00943b796c6720e1af102d2&internal=Yes",
-	"url": "https://hsform.ucdmc.ucdavis.edu/hsform/view-form?formId=ab8b6937b00943b796c6720e1af102d2&internal=Yes"
-}

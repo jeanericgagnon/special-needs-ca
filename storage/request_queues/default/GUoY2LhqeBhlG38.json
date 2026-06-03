@@ -1,9 +1,0 @@
-{
-	"id": "GUoY2LhqeBhlG38",
-	"json": "{\"id\":\"GUoY2LhqeBhlG38\",\"url\":\"https://health.ucdavis.edu/ctsc/area/education/mentoring-academy/workshops\",\"loadedUrl\":\"https://health.ucdavis.edu/ctsc/area/education/mentoring-academy/workshops\",\"uniqueKey\":\"https://health.ucdavis.edu/ctsc/area/education/mentoring-academy/workshops\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:55.269Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/ctsc/area/education/mentoring-academy/workshops",
-	"url": "https://health.ucdavis.edu/ctsc/area/education/mentoring-academy/workshops"
-}

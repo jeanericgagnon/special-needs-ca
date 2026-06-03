@@ -1,9 +1,0 @@
-{
-	"id": "50zsdXVnQmBfGmw",
-	"json": "{\"id\":\"50zsdXVnQmBfGmw\",\"url\":\"https://mindbrain.ucdavis.edu/participate-research-subject\",\"loadedUrl\":\"https://mindbrain.ucdavis.edu/participate-research-subject\",\"uniqueKey\":\"https://mindbrain.ucdavis.edu/participate-research-subject\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:03.460Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://mindbrain.ucdavis.edu/participate-research-subject",
-	"url": "https://mindbrain.ucdavis.edu/participate-research-subject"
-}

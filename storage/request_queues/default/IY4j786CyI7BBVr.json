@@ -1,9 +1,0 @@
-{
-	"id": "IY4j786CyI7BBVr",
-	"json": "{\"id\":\"IY4j786CyI7BBVr\",\"url\":\"https://health.ucdavis.edu/internal-medicine/research/training-grants/\",\"loadedUrl\":\"https://health.ucdavis.edu/internal-medicine/research/training-grants/\",\"uniqueKey\":\"https://health.ucdavis.edu/internal-medicine/research/training-grants\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:34:25.838Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/internal-medicine/research/training-grants",
-	"url": "https://health.ucdavis.edu/internal-medicine/research/training-grants/"
-}

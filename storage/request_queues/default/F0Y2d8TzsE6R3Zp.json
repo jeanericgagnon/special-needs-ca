@@ -1,9 +1,0 @@
-{
-	"id": "F0Y2d8TzsE6R3Zp",
-	"json": "{\"id\":\"F0Y2d8TzsE6R3Zp\",\"url\":\"https://health.ucdavis.edu/medical-school/leadership/bios/jana-katz-bell\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-school/leadership/bios/jana-katz-bell\",\"uniqueKey\":\"https://health.ucdavis.edu/medical-school/leadership/bios/jana-katz-bell\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:06.739Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/medical-school/leadership/bios/jana-katz-bell",
-	"url": "https://health.ucdavis.edu/medical-school/leadership/bios/jana-katz-bell"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "aRU9pz5T89iqDht",
-	"json": "{\"id\":\"aRU9pz5T89iqDht\",\"url\":\"https://health.ucdavis.edu/obgyn/specialties/general-obgyn/obstetric-emergency-department\",\"loadedUrl\":\"https://health.ucdavis.edu/obgyn/specialties/general-obgyn/obstetric-emergency-department\",\"uniqueKey\":\"https://health.ucdavis.edu/obgyn/specialties/general-obgyn/obstetric-emergency-department\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:52.220Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/obgyn/specialties/general-obgyn/obstetric-emergency-department",
-	"url": "https://health.ucdavis.edu/obgyn/specialties/general-obgyn/obstetric-emergency-department"
-}

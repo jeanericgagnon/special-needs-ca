@@ -1,9 +1,0 @@
-{
-	"id": "czbE51xMFIz7BFb",
-	"json": "{\"id\":\"czbE51xMFIz7BFb\",\"url\":\"https://health.ucdavis.edu/healthcare-professionals/featured-specialties/pulmonology-lung-surgery\",\"loadedUrl\":\"https://health.ucdavis.edu/healthcare-professionals/featured-specialties/pulmonology-lung-surgery\",\"uniqueKey\":\"https://health.ucdavis.edu/healthcare-professionals/featured-specialties/pulmonology-lung-surgery\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:49.680Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/healthcare-professionals/featured-specialties/pulmonology-lung-surgery",
-	"url": "https://health.ucdavis.edu/healthcare-professionals/featured-specialties/pulmonology-lung-surgery"
-}

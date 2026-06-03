@@ -1,9 +1,0 @@
-{
-	"id": "hXSDuwqMz1KQILq",
-	"json": "{\"id\":\"hXSDuwqMz1KQILq\",\"url\":\"https://cnprc.ucdavis.edu/histology-lab\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/histology-lab\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/histology-lab\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:15.794Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cnprc.ucdavis.edu/histology-lab",
-	"url": "https://cnprc.ucdavis.edu/histology-lab"
-}

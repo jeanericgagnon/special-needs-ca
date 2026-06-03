@@ -1,9 +1,0 @@
-{
-	"id": "CpePrZheM6F8AS0",
-	"json": "{\"id\":\"CpePrZheM6F8AS0\",\"url\":\"https://neuroscience.ucdavis.edu/tags/center-neuroscience\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/tags/center-neuroscience\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/tags/center-neuroscience\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:01.175Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/tags/center-neuroscience",
-	"url": "https://neuroscience.ucdavis.edu/tags/center-neuroscience"
-}

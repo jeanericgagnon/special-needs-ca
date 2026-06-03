@@ -1,9 +1,0 @@
-{
-	"id": "KlbUnQEB3u1XgM8",
-	"json": "{\"id\":\"KlbUnQEB3u1XgM8\",\"url\":\"https://www.calcareers.ca.gov/CalHrPublic/GeneralInfo/WhatsNew.aspx\",\"loadedUrl\":\"https://calcareers.ca.gov/CalHrPublic/GeneralInfo/WhatsNew.aspx\",\"uniqueKey\":\"https://www.calcareers.ca.gov/CalHrPublic/GeneralInfo/WhatsNew.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:09.004Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.calcareers.ca.gov/CalHrPublic/GeneralInfo/WhatsNew.aspx",
-	"url": "https://www.calcareers.ca.gov/CalHrPublic/GeneralInfo/WhatsNew.aspx"
-}

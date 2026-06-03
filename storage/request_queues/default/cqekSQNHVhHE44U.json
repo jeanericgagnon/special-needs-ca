@@ -1,9 +1,0 @@
-{
-	"id": "cqekSQNHVhHE44U",
-	"json": "{\"id\":\"cqekSQNHVhHE44U\",\"url\":\"https://www.cde.ca.gov/fg/ac/es/\",\"loadedUrl\":\"https://www.cde.ca.gov/fg/ac/es/\",\"uniqueKey\":\"https://www.cde.ca.gov/fg/ac/es\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:21:49.176Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/fg/ac/es",
-	"url": "https://www.cde.ca.gov/fg/ac/es/"
-}

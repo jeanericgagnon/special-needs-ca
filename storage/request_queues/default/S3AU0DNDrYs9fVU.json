@@ -1,9 +1,0 @@
-{
-	"id": "S3AU0DNDrYs9fVU",
-	"json": "{\"id\":\"S3AU0DNDrYs9fVU\",\"url\":\"https://health.ucdavis.edu/children/team/435/cathleen-lammers-pediatric-anesthesiology-pain-medicine-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/children/team/435/cathleen-lammers-pediatric-anesthesiology-pain-medicine-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/children/team/435/cathleen-lammers-pediatric-anesthesiology-pain-medicine-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:11.939Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/children/team/435/cathleen-lammers-pediatric-anesthesiology-pain-medicine-sacramento",
-	"url": "https://health.ucdavis.edu/children/team/435/cathleen-lammers-pediatric-anesthesiology-pain-medicine-sacramento"
-}

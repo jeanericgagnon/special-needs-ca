@@ -1,9 +1,0 @@
-{
-	"id": "FjhE47ZbXeNnr5D",
-	"json": "{\"id\":\"FjhE47ZbXeNnr5D\",\"url\":\"https://neuroscience.ucdavis.edu/news/cns-announces-neuroart-contest-2026\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/news/cns-announces-neuroart-contest-2026\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/news/cns-announces-neuroart-contest-2026\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:01.629Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/news/cns-announces-neuroart-contest-2026",
-	"url": "https://neuroscience.ucdavis.edu/news/cns-announces-neuroart-contest-2026"
-}

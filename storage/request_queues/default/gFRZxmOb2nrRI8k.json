@@ -1,9 +1,0 @@
-{
-	"id": "gFRZxmOb2nrRI8k",
-	"json": "{\"id\":\"gFRZxmOb2nrRI8k\",\"url\":\"https://www.cde.ca.gov/fg/fo/r14/litcoaches22result.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/fg/fo/r14/litcoaches22result.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/fg/fo/r14/litcoaches22result.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:12.510Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/fg/fo/r14/litcoaches22result.asp",
-	"url": "https://www.cde.ca.gov/fg/fo/r14/litcoaches22result.asp"
-}

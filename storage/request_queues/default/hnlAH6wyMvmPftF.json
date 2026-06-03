@@ -1,9 +1,0 @@
-{
-	"id": "hnlAH6wyMvmPftF",
-	"json": "{\"id\":\"hnlAH6wyMvmPftF\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/21769/herman-herman-hedriana-maternal-fetal_medicine-sacramento?FreeText%3aLast+name=Hedriana\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/21769/herman-herman-hedriana-maternal-fetal_medicine-sacramento?FreeText%3aLast+name=Hedriana\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/21769/herman-herman-hedriana-maternal-fetal_medicine-sacramento?FreeText%3ALast+name=Hedriana\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:11.779Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/21769/herman-herman-hedriana-maternal-fetal_medicine-sacramento?FreeText%3ALast+name=Hedriana",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/21769/herman-herman-hedriana-maternal-fetal_medicine-sacramento?FreeText%3aLast+name=Hedriana"
-}

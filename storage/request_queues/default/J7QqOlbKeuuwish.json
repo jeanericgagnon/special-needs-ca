@@ -1,9 +1,0 @@
-{
-	"id": "J7QqOlbKeuuwish",
-	"json": "{\"id\":\"J7QqOlbKeuuwish\",\"url\":\"https://health.ucdavis.edu/children/patient-education/pediatric-diabetes/insulin\",\"loadedUrl\":\"https://health.ucdavis.edu/children/patient-education/pediatric-diabetes/insulin\",\"uniqueKey\":\"https://health.ucdavis.edu/children/patient-education/pediatric-diabetes/insulin\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:55.486Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/children/patient-education/pediatric-diabetes/insulin",
-	"url": "https://health.ucdavis.edu/children/patient-education/pediatric-diabetes/insulin"
-}

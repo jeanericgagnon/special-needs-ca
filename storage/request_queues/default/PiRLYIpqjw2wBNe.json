@@ -1,9 +1,0 @@
-{
-	"id": "PiRLYIpqjw2wBNe",
-	"json": "{\"id\":\"PiRLYIpqjw2wBNe\",\"url\":\"https://scdd.ca.gov/pos-service-code/licensed-vocational-nurse/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/licensed-vocational-nurse/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/licensed-vocational-nurse\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:53.876Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/pos-service-code/licensed-vocational-nurse",
-	"url": "https://scdd.ca.gov/pos-service-code/licensed-vocational-nurse/"
-}

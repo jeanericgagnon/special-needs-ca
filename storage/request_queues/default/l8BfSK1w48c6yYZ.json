@@ -1,9 +1,0 @@
-{
-	"id": "l8BfSK1w48c6yYZ",
-	"json": "{\"id\":\"l8BfSK1w48c6yYZ\",\"url\":\"https://www.slocounty.ca.gov/Home/Accessibility\",\"loadedUrl\":\"https://www.slocounty.ca.gov/home/accessibility\",\"uniqueKey\":\"https://www.slocounty.ca.gov/Home/Accessibility\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:31.511Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.slocounty.ca.gov/Home/Accessibility",
-	"url": "https://www.slocounty.ca.gov/Home/Accessibility"
-}

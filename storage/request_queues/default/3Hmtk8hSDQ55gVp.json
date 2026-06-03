@@ -1,9 +1,0 @@
-{
-	"id": "3Hmtk8hSDQ55gVp",
-	"json": "{\"id\":\"3Hmtk8hSDQ55gVp\",\"url\":\"https://www.ssa.gov/retirement/reporting\",\"loadedUrl\":\"https://www.ssa.gov/retirement/reporting\",\"uniqueKey\":\"https://www.ssa.gov/retirement/reporting\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:34.301Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ssa.gov/retirement/reporting",
-	"url": "https://www.ssa.gov/retirement/reporting"
-}

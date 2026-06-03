@@ -1,9 +1,0 @@
-{
-	"id": "DXDEMLsQiT36hx0",
-	"json": "{\"id\":\"DXDEMLsQiT36hx0\",\"url\":\"https://health.ucdavis.edu/medmicro/newsroom/faculty-news.html\",\"loadedUrl\":\"https://health.ucdavis.edu/medmicro/newsroom/faculty-news.html\",\"uniqueKey\":\"https://health.ucdavis.edu/medmicro/newsroom/faculty-news.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:23:54.951Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/medmicro/newsroom/faculty-news.html",
-	"url": "https://health.ucdavis.edu/medmicro/newsroom/faculty-news.html"
-}

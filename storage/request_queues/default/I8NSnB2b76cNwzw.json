@@ -1,9 +1,0 @@
-{
-	"id": "I8NSnB2b76cNwzw",
-	"json": "{\"id\":\"I8NSnB2b76cNwzw\",\"url\":\"https://www.assembly.ca.gov/resources/glossary\",\"loadedUrl\":\"https://www.assembly.ca.gov/resources/glossary\",\"uniqueKey\":\"https://www.assembly.ca.gov/resources/glossary\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:03:00.294Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.assembly.ca.gov/resources/glossary",
-	"url": "https://www.assembly.ca.gov/resources/glossary"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "ttWfx66lMZ7nKnw",
-	"json": "{\"id\":\"ttWfx66lMZ7nKnw\",\"url\":\"https://www.cde.ca.gov/search/searchresults.asp?cx=001779225245372747843:gpfwm5rhxiw&output=xml_no_dtd&filter=1&num=20&start=0&q=instructional+minutes\",\"loadedUrl\":\"https://www.cde.ca.gov/search/searchresults.asp?cx=001779225245372747843:gpfwm5rhxiw&output=xml_no_dtd&filter=1&num=20&start=0&q=instructional+minutes\",\"uniqueKey\":\"https://www.cde.ca.gov/search/searchresults.asp?cx=001779225245372747843%3Agpfwm5rhxiw&filter=1&num=20&output=xml_no_dtd&q=instructional+minutes&start=0\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:02.416Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/search/searchresults.asp?cx=001779225245372747843%3Agpfwm5rhxiw&filter=1&num=20&output=xml_no_dtd&q=instructional+minutes&start=0",
-	"url": "https://www.cde.ca.gov/search/searchresults.asp?cx=001779225245372747843:gpfwm5rhxiw&output=xml_no_dtd&filter=1&num=20&start=0&q=instructional+minutes"
-}

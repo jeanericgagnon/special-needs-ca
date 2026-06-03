@@ -1,9 +1,0 @@
-{
-	"id": "SRntrh3aSFYjy7F",
-	"json": "{\"id\":\"SRntrh3aSFYjy7F\",\"url\":\"https://www.cdss.ca.gov/Reporting/Report-Fraud\",\"loadedUrl\":\"https://www.cdss.ca.gov/reporting/report-fraud\",\"uniqueKey\":\"https://www.cdss.ca.gov/Reporting/Report-Fraud\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:02.074Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/Reporting/Report-Fraud",
-	"url": "https://www.cdss.ca.gov/Reporting/Report-Fraud"
-}

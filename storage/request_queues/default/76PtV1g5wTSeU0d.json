@@ -1,9 +1,0 @@
-{
-	"id": "76PtV1g5wTSeU0d",
-	"json": "{\"id\":\"76PtV1g5wTSeU0d\",\"url\":\"https://leadership.ucdavis.edu/chancellor\",\"loadedUrl\":\"https://leadership.ucdavis.edu/chancellor\",\"uniqueKey\":\"https://leadership.ucdavis.edu/chancellor\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:35.861Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://leadership.ucdavis.edu/chancellor",
-	"url": "https://leadership.ucdavis.edu/chancellor"
-}

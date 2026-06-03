@@ -1,9 +1,0 @@
-{
-	"id": "lT9X5a8bgsuu0rX",
-	"json": "{\"id\":\"lT9X5a8bgsuu0rX\",\"url\":\"https://scdd.ca.gov/pos-service-code/durable-medical-equipment-dealer/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/durable-medical-equipment-dealer/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/durable-medical-equipment-dealer\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:00.561Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/pos-service-code/durable-medical-equipment-dealer",
-	"url": "https://scdd.ca.gov/pos-service-code/durable-medical-equipment-dealer/"
-}

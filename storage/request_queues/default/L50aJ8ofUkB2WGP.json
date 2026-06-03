@@ -1,9 +1,0 @@
-{
-	"id": "L50aJ8ofUkB2WGP",
-	"json": "{\"id\":\"L50aJ8ofUkB2WGP\",\"url\":\"https://www.ctc.ca.gov/credentials/leaflets/cl-659/\",\"loadedUrl\":\"https://www.ctc.ca.gov/credentials/leaflets/cl-659/\",\"uniqueKey\":\"https://www.ctc.ca.gov/credentials/leaflets/cl-659\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:57.100Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ctc.ca.gov/credentials/leaflets/cl-659",
-	"url": "https://www.ctc.ca.gov/credentials/leaflets/cl-659/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "CcXpgTR1aqnKyF1",
-	"json": "{\"id\":\"CcXpgTR1aqnKyF1\",\"url\":\"https://health.ucdavis.edu/referrals/physicianconnect/faqs.html\",\"loadedUrl\":\"https://health.ucdavis.edu/referrals/physicianconnect/faqs.html\",\"uniqueKey\":\"https://health.ucdavis.edu/referrals/physicianconnect/faqs.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:27.936Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/referrals/physicianconnect/faqs.html",
-	"url": "https://health.ucdavis.edu/referrals/physicianconnect/faqs.html"
-}

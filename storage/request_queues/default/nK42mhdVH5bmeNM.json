@@ -1,9 +1,0 @@
-{
-	"id": "nK42mhdVH5bmeNM",
-	"json": "{\"id\":\"nK42mhdVH5bmeNM\",\"url\":\"https://www.auditor.ca.gov/accessibility/\",\"loadedUrl\":\"https://www.auditor.ca.gov/accessibility/\",\"uniqueKey\":\"https://www.auditor.ca.gov/accessibility\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:05:56.476Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.auditor.ca.gov/accessibility",
-	"url": "https://www.auditor.ca.gov/accessibility/"
-}

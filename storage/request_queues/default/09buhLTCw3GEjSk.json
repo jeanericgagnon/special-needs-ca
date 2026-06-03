@@ -1,9 +1,0 @@
-{
-	"id": "09buhLTCw3GEjSk",
-	"json": "{\"id\":\"09buhLTCw3GEjSk\",\"url\":\"https://www.ca.gov/use/\",\"loadedUrl\":\"https://www.ca.gov/legal/conditions-of-use/\",\"uniqueKey\":\"https://www.ca.gov/use\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:37.626Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ca.gov/use",
-	"url": "https://www.ca.gov/use/"
-}

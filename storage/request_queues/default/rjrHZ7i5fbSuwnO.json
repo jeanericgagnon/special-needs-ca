@@ -1,9 +1,0 @@
-{
-	"id": "rjrHZ7i5fbSuwnO",
-	"json": "{\"id\":\"rjrHZ7i5fbSuwnO\",\"url\":\"https://www.cdss.ca.gov/reporting/report-abuse/child-protective-services/report-child-abuse\",\"loadedUrl\":\"https://www.cdss.ca.gov/reporting/report-abuse/child-protective-services/report-child-abuse\",\"uniqueKey\":\"https://www.cdss.ca.gov/reporting/report-abuse/child-protective-services/report-child-abuse\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:42.137Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/reporting/report-abuse/child-protective-services/report-child-abuse",
-	"url": "https://www.cdss.ca.gov/reporting/report-abuse/child-protective-services/report-child-abuse"
-}

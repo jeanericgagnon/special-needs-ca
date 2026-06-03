@@ -1,9 +1,0 @@
-{
-	"id": "Pgs7G8xZn6YKhZH",
-	"json": "{\"id\":\"Pgs7G8xZn6YKhZH\",\"url\":\"https://www.cde.ca.gov/eo/mn/mv\",\"loadedUrl\":\"https://www.cde.ca.gov/eo/mn/mv/\",\"uniqueKey\":\"https://www.cde.ca.gov/eo/mn/mv\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:04.911Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/eo/mn/mv",
-	"url": "https://www.cde.ca.gov/eo/mn/mv"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "JlcSjllq8cjWwNy",
-	"json": "{\"id\":\"JlcSjllq8cjWwNy\",\"url\":\"https://give.ucdavis.edu/CLAS/322626\",\"loadedUrl\":\"https://give.ucdavis.edu/CLAS/322626\",\"uniqueKey\":\"https://give.ucdavis.edu/CLAS/322626\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:03.553Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/CLAS/322626",
-	"url": "https://give.ucdavis.edu/CLAS/322626"
-}

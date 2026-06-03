@@ -1,9 +1,0 @@
-{
-	"id": "PraYTB5M9XROSDg",
-	"json": "{\"id\":\"PraYTB5M9XROSDg\",\"url\":\"https://www.chhs.ca.gov/blog/2018/09/24/californias-adolescent-birth-rate-continues-to-decline/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2018/09/24/californias-adolescent-birth-rate-continues-to-decline/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2018/09/24/californias-adolescent-birth-rate-continues-to-decline\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:03.567Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chhs.ca.gov/blog/2018/09/24/californias-adolescent-birth-rate-continues-to-decline",
-	"url": "https://www.chhs.ca.gov/blog/2018/09/24/californias-adolescent-birth-rate-continues-to-decline/"
-}

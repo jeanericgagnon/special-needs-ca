@@ -1,9 +1,0 @@
-{
-	"id": "KNBmPIQj1lfKkum",
-	"json": "{\"id\":\"KNBmPIQj1lfKkum\",\"url\":\"https://cdss.ca.gov/inforesources/community-care-licensing/policy/provider-information-notices\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/community-care-licensing/policy/provider-information-notices\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/community-care-licensing/policy/provider-information-notices\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:26.375Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/community-care-licensing/policy/provider-information-notices",
-	"url": "https://cdss.ca.gov/inforesources/community-care-licensing/policy/provider-information-notices"
-}

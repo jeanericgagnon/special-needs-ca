@@ -1,9 +1,0 @@
-{
-	"id": "fqT6He8aWLaTytg",
-	"json": "{\"id\":\"fqT6He8aWLaTytg\",\"url\":\"https://caes.ucdavis.edu/research/centers\",\"loadedUrl\":\"https://caes.ucdavis.edu/research/centers\",\"uniqueKey\":\"https://caes.ucdavis.edu/research/centers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:55:21.099Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://caes.ucdavis.edu/research/centers",
-	"url": "https://caes.ucdavis.edu/research/centers"
-}

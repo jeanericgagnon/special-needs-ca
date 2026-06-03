@@ -1,9 +1,0 @@
-{
-	"id": "DUjs5GfFoyLyBfw",
-	"json": "{\"id\":\"DUjs5GfFoyLyBfw\",\"url\":\"https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/25-03_SOE-in-Los-Angeles-County-due-to-the-Several-Fires_01-14-25.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/25-03_SOE-in-Los-Angeles-County-due-to-the-Several-Fires_01-14-25.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/25-03_SOE-in-Los-Angeles-County-due-to-the-Several-Fires_01-14-25.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:49:47.554Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/25-03_SOE-in-Los-Angeles-County-due-to-the-Several-Fires_01-14-25.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/25-03_SOE-in-Los-Angeles-County-due-to-the-Several-Fires_01-14-25.aspx"
-}

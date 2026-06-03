@@ -1,9 +1,0 @@
-{
-	"id": "33InxyltdbCoIkm",
-	"json": "{\"id\":\"33InxyltdbCoIkm\",\"url\":\"https://www.cde.ca.gov/fg/fo/r2/upkpi2122result.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/fg/fo/r2/upkpi2122result.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/fg/fo/r2/upkpi2122result.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:51.726Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/fg/fo/r2/upkpi2122result.asp",
-	"url": "https://www.cde.ca.gov/fg/fo/r2/upkpi2122result.asp"
-}

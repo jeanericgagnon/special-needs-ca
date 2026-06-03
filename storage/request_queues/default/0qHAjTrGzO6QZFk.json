@@ -1,9 +1,0 @@
-{
-	"id": "0qHAjTrGzO6QZFk",
-	"json": "{\"id\":\"0qHAjTrGzO6QZFk\",\"url\":\"https://scdd.ca.gov/pos-service-code/lenses-and-frames/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/lenses-and-frames/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/lenses-and-frames\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:47.204Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/pos-service-code/lenses-and-frames",
-	"url": "https://scdd.ca.gov/pos-service-code/lenses-and-frames/"
-}

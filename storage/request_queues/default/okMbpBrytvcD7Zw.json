@@ -1,9 +1,0 @@
-{
-	"id": "okMbpBrytvcD7Zw",
-	"json": "{\"id\":\"okMbpBrytvcD7Zw\",\"url\":\"https://www.ucdavis.edu/about/inclusive-excellence\",\"loadedUrl\":\"https://www.ucdavis.edu/about/inclusive-excellence\",\"uniqueKey\":\"https://www.ucdavis.edu/about/inclusive-excellence\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:41.017Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ucdavis.edu/about/inclusive-excellence",
-	"url": "https://www.ucdavis.edu/about/inclusive-excellence"
-}

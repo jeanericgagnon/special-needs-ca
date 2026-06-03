@@ -1,9 +1,0 @@
-{
-	"id": "gGr0iUyOHN8JJqZ",
-	"json": "{\"id\":\"gGr0iUyOHN8JJqZ\",\"url\":\"https://www.slocounty.ca.gov/\",\"loadedUrl\":\"https://www.slocounty.ca.gov/\",\"uniqueKey\":\"https://www.slocounty.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:31.435Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.slocounty.ca.gov",
-	"url": "https://www.slocounty.ca.gov/"
-}

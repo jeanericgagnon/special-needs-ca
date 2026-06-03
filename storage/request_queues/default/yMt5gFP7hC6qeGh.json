@@ -1,9 +1,0 @@
-{
-	"id": "yMt5gFP7hC6qeGh",
-	"json": "{\"id\":\"yMt5gFP7hC6qeGh\",\"url\":\"https://edd.ca.gov/en/unemployment/appeals/\",\"loadedUrl\":\"https://edd.ca.gov/en/unemployment/appeals/\",\"uniqueKey\":\"https://edd.ca.gov/en/unemployment/appeals\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:39.657Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://edd.ca.gov/en/unemployment/appeals",
-	"url": "https://edd.ca.gov/en/unemployment/appeals/"
-}

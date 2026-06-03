@@ -1,9 +1,0 @@
-{
-	"id": "UbfDzO5wpDiveHQ",
-	"json": "{\"id\":\"UbfDzO5wpDiveHQ\",\"url\":\"https://edd.ca.gov/en/disability/Am_I_Eligible_for_PFL_Benefits/\",\"loadedUrl\":\"https://edd.ca.gov/en/disability/Am_I_Eligible_for_PFL_Benefits/\",\"uniqueKey\":\"https://edd.ca.gov/en/disability/Am_I_Eligible_for_PFL_Benefits\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:40.297Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://edd.ca.gov/en/disability/Am_I_Eligible_for_PFL_Benefits",
-	"url": "https://edd.ca.gov/en/disability/Am_I_Eligible_for_PFL_Benefits/"
-}

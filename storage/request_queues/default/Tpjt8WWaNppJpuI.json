@@ -1,9 +1,0 @@
-{
-	"id": "Tpjt8WWaNppJpuI",
-	"json": "{\"id\":\"Tpjt8WWaNppJpuI\",\"url\":\"https://mindbrain.sf.ucdavis.edu/research-laboratories\",\"loadedUrl\":\"https://mindbrain.sf.ucdavis.edu/research-laboratories\",\"uniqueKey\":\"https://mindbrain.sf.ucdavis.edu/research-laboratories\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:12.775Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://mindbrain.sf.ucdavis.edu/research-laboratories",
-	"url": "https://mindbrain.sf.ucdavis.edu/research-laboratories"
-}

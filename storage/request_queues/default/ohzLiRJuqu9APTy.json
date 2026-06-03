@@ -1,9 +1,0 @@
-{
-	"id": "ohzLiRJuqu9APTy",
-	"json": "{\"id\":\"ohzLiRJuqu9APTy\",\"url\":\"https://health.ucdavis.edu/mind-institute/contact-us/\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/contact-us/\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/contact-us\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:20.532Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mind-institute/contact-us",
-	"url": "https://health.ucdavis.edu/mind-institute/contact-us/"
-}

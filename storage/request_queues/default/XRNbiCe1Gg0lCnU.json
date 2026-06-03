@@ -1,9 +1,0 @@
-{
-	"id": "XRNbiCe1Gg0lCnU",
-	"json": "{\"id\":\"XRNbiCe1Gg0lCnU\",\"url\":\"https://www.cde.ca.gov/ls/nu/sn/cauniversalmeals.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ls/nu/sn/cauniversalmeals.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ls/nu/sn/cauniversalmeals.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:24.089Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ls/nu/sn/cauniversalmeals.asp",
-	"url": "https://www.cde.ca.gov/ls/nu/sn/cauniversalmeals.asp"
-}

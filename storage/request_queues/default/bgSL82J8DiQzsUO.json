@@ -1,9 +1,0 @@
-{
-	"id": "bgSL82J8DiQzsUO",
-	"json": "{\"id\":\"bgSL82J8DiQzsUO\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/1538/viyeka-sethi?FreeText%3aLast+name=Sethi\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/1538/viyeka-sethi?FreeText%3aLast+name=Sethi\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/1538/viyeka-sethi?FreeText%3ALast+name=Sethi\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:16.535Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/1538/viyeka-sethi?FreeText%3ALast+name=Sethi",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/1538/viyeka-sethi?FreeText%3aLast+name=Sethi"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "lBqNuolfmX8MdX4",
-	"json": "{\"id\":\"lBqNuolfmX8MdX4\",\"url\":\"https://leinlab.vetmed.ucdavis.edu/current-topics-toxicology\",\"loadedUrl\":\"https://leinlab.vetmed.ucdavis.edu/current-topics-toxicology\",\"uniqueKey\":\"https://leinlab.vetmed.ucdavis.edu/current-topics-toxicology\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:00.818Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://leinlab.vetmed.ucdavis.edu/current-topics-toxicology",
-	"url": "https://leinlab.vetmed.ucdavis.edu/current-topics-toxicology"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "nFieX00LZ1srZPx",
-	"json": "{\"id\":\"nFieX00LZ1srZPx\",\"url\":\"https://www.dds.ca.gov/newsletter/dds-hiring/\",\"loadedUrl\":\"https://www.dds.ca.gov/newsletter/dds-hiring/\",\"uniqueKey\":\"https://www.dds.ca.gov/newsletter/dds-hiring\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:04.244Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/newsletter/dds-hiring",
-	"url": "https://www.dds.ca.gov/newsletter/dds-hiring/"
-}

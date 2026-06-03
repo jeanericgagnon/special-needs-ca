@@ -1,9 +1,0 @@
-{
-	"id": "pMUI22CEpAzBfAz",
-	"json": "{\"id\":\"pMUI22CEpAzBfAz\",\"url\":\"https://neuroscience.ucdavis.edu/gazzaniga\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/gazzaniga\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/gazzaniga\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:35.603Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/gazzaniga",
-	"url": "https://neuroscience.ucdavis.edu/gazzaniga"
-}

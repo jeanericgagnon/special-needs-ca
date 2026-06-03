@@ -1,9 +1,0 @@
-{
-	"id": "ZLbTSD5CXLG4K0J",
-	"json": "{\"id\":\"ZLbTSD5CXLG4K0J\",\"url\":\"https://mindbrain.ucdavis.edu/tags/speech\",\"loadedUrl\":\"https://mindbrain.ucdavis.edu/tags/speech\",\"uniqueKey\":\"https://mindbrain.ucdavis.edu/tags/speech\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:21.655Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://mindbrain.ucdavis.edu/tags/speech",
-	"url": "https://mindbrain.ucdavis.edu/tags/speech"
-}

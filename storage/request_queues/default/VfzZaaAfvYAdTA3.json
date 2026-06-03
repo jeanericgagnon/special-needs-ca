@@ -1,9 +1,0 @@
-{
-	"id": "VfzZaaAfvYAdTA3",
-	"json": "{\"id\":\"VfzZaaAfvYAdTA3\",\"url\":\"https://oig.ssa.gov/about-oig/strategy\",\"loadedUrl\":\"https://oig.ssa.gov/about-oig/strategy/\",\"uniqueKey\":\"https://oig.ssa.gov/about-oig/strategy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:37.070Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://oig.ssa.gov/about-oig/strategy",
-	"url": "https://oig.ssa.gov/about-oig/strategy"
-}

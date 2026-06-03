@@ -1,9 +1,0 @@
-{
-	"id": "3mbKmx0F6KuESQ0",
-	"json": "{\"id\":\"3mbKmx0F6KuESQ0\",\"url\":\"https://scdd.ca.gov/pos-service-code/purchase-reimbursement/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/purchase-reimbursement/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/purchase-reimbursement\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:44.373Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/pos-service-code/purchase-reimbursement",
-	"url": "https://scdd.ca.gov/pos-service-code/purchase-reimbursement/"
-}

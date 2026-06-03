@@ -1,9 +1,0 @@
-{
-	"id": "d2rC6CEnka22QaJ",
-	"json": "{\"id\":\"d2rC6CEnka22QaJ\",\"url\":\"https://irb.ucdavis.edu/for-research-participants/\",\"loadedUrl\":\"https://irb.ucdavis.edu/for-research-participants/\",\"uniqueKey\":\"https://irb.ucdavis.edu/for-research-participants\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:41.468Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://irb.ucdavis.edu/for-research-participants",
-	"url": "https://irb.ucdavis.edu/for-research-participants/"
-}

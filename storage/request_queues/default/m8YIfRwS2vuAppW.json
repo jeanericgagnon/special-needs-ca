@@ -1,9 +1,0 @@
-{
-	"id": "m8YIfRwS2vuAppW",
-	"json": "{\"id\":\"m8YIfRwS2vuAppW\",\"url\":\"https://www.cdss.ca.gov/inforesources/Foster-Care/Presumptive-Transfer\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/foster-care/presumptive-transfer\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/Foster-Care/Presumptive-Transfer\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:48.238Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/inforesources/Foster-Care/Presumptive-Transfer",
-	"url": "https://www.cdss.ca.gov/inforesources/Foster-Care/Presumptive-Transfer"
-}

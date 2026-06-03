@@ -1,9 +1,0 @@
-{
-	"id": "ff7c12k3Q9L7aeS",
-	"json": "{\"id\":\"ff7c12k3Q9L7aeS\",\"url\":\"https://mindbrain.ucdavis.edu/people/david-whitney\",\"loadedUrl\":\"https://mindbrain.ucdavis.edu/people/david-whitney\",\"uniqueKey\":\"https://mindbrain.ucdavis.edu/people/david-whitney\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:11.670Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://mindbrain.ucdavis.edu/people/david-whitney",
-	"url": "https://mindbrain.ucdavis.edu/people/david-whitney"
-}

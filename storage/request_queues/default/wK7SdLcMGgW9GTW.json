@@ -1,9 +1,0 @@
-{
-	"id": "wK7SdLcMGgW9GTW",
-	"json": "{\"id\":\"wK7SdLcMGgW9GTW\",\"url\":\"https://physicians.ucdavis.edu/?Specialties=10476&Languages=5\",\"loadedUrl\":\"https://physicians.ucdavis.edu/?Specialties=10476&Languages=5\",\"uniqueKey\":\"https://physicians.ucdavis.edu?Languages=5&Specialties=10476\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:33:25.511Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://physicians.ucdavis.edu?Languages=5&Specialties=10476",
-	"url": "https://physicians.ucdavis.edu/?Specialties=10476&Languages=5"
-}

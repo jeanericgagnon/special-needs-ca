@@ -1,9 +1,0 @@
-{
-	"id": "oDkapVw0kRUedBq",
-	"json": "{\"id\":\"oDkapVw0kRUedBq\",\"url\":\"https://rarediseases.org/organizations/kcnt1-epilepsy-foundation-2/\",\"loadedUrl\":\"https://rarediseases.org/organizations/kcnt1-epilepsy-foundation-2/\",\"uniqueKey\":\"https://rarediseases.org/organizations/kcnt1-epilepsy-foundation-2\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:17:58.401Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/organizations/kcnt1-epilepsy-foundation-2",
-	"url": "https://rarediseases.org/organizations/kcnt1-epilepsy-foundation-2/"
-}

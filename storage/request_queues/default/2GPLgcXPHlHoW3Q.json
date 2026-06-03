@@ -1,9 +1,0 @@
-{
-	"id": "2GPLgcXPHlHoW3Q",
-	"json": "{\"id\":\"2GPLgcXPHlHoW3Q\",\"url\":\"https://health.ucdavis.edu/mind-institute/resources/understanding-adhd/\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/resources/understanding-adhd/\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/resources/understanding-adhd\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:05:28.453Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mind-institute/resources/understanding-adhd",
-	"url": "https://health.ucdavis.edu/mind-institute/resources/understanding-adhd/"
-}

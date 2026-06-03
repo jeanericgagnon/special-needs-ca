@@ -1,9 +1,0 @@
-{
-	"id": "Urw7VMkZZ9dUj46",
-	"json": "{\"id\":\"Urw7VMkZZ9dUj46\",\"url\":\"https://www.csb-cde.ca.gov/about/events/openhouse.aspx\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=498e25e3-a8da-460d-b5b6-91ee6bba33b3&ssb=55692262182&ssc=https%3A%2F%2Fwww.csb-cde.ca.gov%2Fabout%2Fevents%2Fopenhouse.aspx&ssi=95a18d9e-cuez-4e2a-9812-4f34623328e7&ssk=botmanager_support@radware.com&ssm=33959949008599929109057500408276&ssn=0ffc3e31311f3c3e10e5cf7f1df4e2b797c4cafb6f93-5933-4dc6-a455d7&sso=cfda00bf-ca67fd957288b04258a69c587b72068296201401b7cf7e97&ssp=46054915481780335499178038205790612&ssq=70931852762005232535327620181220686736730&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBjYWZiNmY5My01OTMzLTRkYzYtYTBiZi1jYTY3ZmQ5NTcyODgxLTE3ODAzMjc2MjA3MjYwLTAwMzllNDc4NmNmODJmNGM4OTYxMCIsInJkIjoiY2EuZ292IiwidXpteCI6IjdmOTAwMDc3MjY1NjgwLTExNWEtNGZmNC1iNzFhLTRlMzM0YmY5MDRlNDEtMTc4MDMyNzQ1MzQ0NDE2NzI4Mi04NzRhMzU3MjE2ZWU2NmM0MTYifQ==\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/about/events/openhouse.aspx\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:27:00.999Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.csb-cde.ca.gov/about/events/openhouse.aspx",
-	"url": "https://www.csb-cde.ca.gov/about/events/openhouse.aspx"
-}

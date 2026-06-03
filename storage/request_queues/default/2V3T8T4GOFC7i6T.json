@@ -1,9 +1,0 @@
-{
-	"id": "2V3T8T4GOFC7i6T",
-	"json": "{\"id\":\"2V3T8T4GOFC7i6T\",\"url\":\"https://www.cde.ca.gov/sp/se/qa/cimprocess.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/se/qa/cimprocess.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/se/qa/cimprocess.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:25:47.018Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/sp/se/qa/cimprocess.asp",
-	"url": "https://www.cde.ca.gov/sp/se/qa/cimprocess.asp"
-}

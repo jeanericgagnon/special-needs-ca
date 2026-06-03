@@ -1,9 +1,0 @@
-{
-	"id": "LWYToV22IwhRmCC",
-	"json": "{\"id\":\"LWYToV22IwhRmCC\",\"url\":\"https://www.sos.ca.gov/campaign-lobbying/\",\"loadedUrl\":\"https://www.sos.ca.gov/campaign-lobbying\",\"uniqueKey\":\"https://www.sos.ca.gov/campaign-lobbying\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:17.407Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.sos.ca.gov/campaign-lobbying",
-	"url": "https://www.sos.ca.gov/campaign-lobbying/"
-}

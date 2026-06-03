@@ -1,9 +1,0 @@
-{
-	"id": "M9JYldtGj7sK7Uf",
-	"json": "{\"id\":\"M9JYldtGj7sK7Uf\",\"url\":\"https://rarediseases.org/organizations/kares-foundation-inc/\",\"loadedUrl\":\"https://rarediseases.org/organizations/kares-foundation-inc/\",\"uniqueKey\":\"https://rarediseases.org/organizations/kares-foundation-inc\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:17:55.824Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/organizations/kares-foundation-inc",
-	"url": "https://rarediseases.org/organizations/kares-foundation-inc/"
-}

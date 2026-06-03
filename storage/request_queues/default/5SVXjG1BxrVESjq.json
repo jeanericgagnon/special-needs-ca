@@ -1,9 +1,0 @@
-{
-	"id": "5SVXjG1BxrVESjq",
-	"json": "{\"id\":\"5SVXjG1BxrVESjq\",\"url\":\"https://www.ssa.gov/employer/\",\"loadedUrl\":\"https://www.ssa.gov/employer/\",\"uniqueKey\":\"https://www.ssa.gov/employer\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:55.319Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ssa.gov/employer",
-	"url": "https://www.ssa.gov/employer/"
-}

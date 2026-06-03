@@ -1,9 +1,0 @@
-{
-	"id": "ODAX4g4sXr1TdnA",
-	"json": "{\"id\":\"ODAX4g4sXr1TdnA\",\"url\":\"https://gsm.ucdavis.edu/profile/stephen-garcia\",\"loadedUrl\":\"https://gsm.ucdavis.edu/faculty/stephen-garcia\",\"uniqueKey\":\"https://gsm.ucdavis.edu/profile/stephen-garcia\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:11.555Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://gsm.ucdavis.edu/profile/stephen-garcia",
-	"url": "https://gsm.ucdavis.edu/profile/stephen-garcia"
-}

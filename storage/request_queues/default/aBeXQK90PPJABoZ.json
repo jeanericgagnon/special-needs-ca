@@ -1,9 +1,0 @@
-{
-	"id": "aBeXQK90PPJABoZ",
-	"json": "{\"id\":\"aBeXQK90PPJABoZ\",\"url\":\"https://psychology.ucdavis.edu/undergraduate/honors-and-awards/graduating-with-high-highest-honors\",\"loadedUrl\":\"https://psychology.ucdavis.edu/undergraduate/honors-and-awards/graduating-with-high-highest-honors\",\"uniqueKey\":\"https://psychology.ucdavis.edu/undergraduate/honors-and-awards/graduating-with-high-highest-honors\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:15.670Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://psychology.ucdavis.edu/undergraduate/honors-and-awards/graduating-with-high-highest-honors",
-	"url": "https://psychology.ucdavis.edu/undergraduate/honors-and-awards/graduating-with-high-highest-honors"
-}

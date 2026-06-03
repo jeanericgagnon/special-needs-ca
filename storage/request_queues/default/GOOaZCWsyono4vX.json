@@ -1,9 +1,0 @@
-{
-	"id": "GOOaZCWsyono4vX",
-	"json": "{\"id\":\"GOOaZCWsyono4vX\",\"url\":\"https://scdd.ca.gov/sdm-tap-resources/colorado-supported-decision-making-a-guide-for-parents/\",\"loadedUrl\":\"https://scdd.ca.gov/sdm-tap-resources/colorado-supported-decision-making-a-guide-for-parents/\",\"uniqueKey\":\"https://scdd.ca.gov/sdm-tap-resources/colorado-supported-decision-making-a-guide-for-parents\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:19:31.247Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/sdm-tap-resources/colorado-supported-decision-making-a-guide-for-parents",
-	"url": "https://scdd.ca.gov/sdm-tap-resources/colorado-supported-decision-making-a-guide-for-parents/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "7eXSzxUgzsO9QHS",
-	"json": "{\"id\":\"7eXSzxUgzsO9QHS\",\"url\":\"https://health.ucdavis.edu/treatments/obstetric-anesthesia\",\"loadedUrl\":\"https://health.ucdavis.edu/treatments/obstetric-anesthesia\",\"uniqueKey\":\"https://health.ucdavis.edu/treatments/obstetric-anesthesia\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:53.023Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/treatments/obstetric-anesthesia",
-	"url": "https://health.ucdavis.edu/treatments/obstetric-anesthesia"
-}

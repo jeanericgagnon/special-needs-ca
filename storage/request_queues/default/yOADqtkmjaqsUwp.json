@@ -1,9 +1,0 @@
-{
-	"id": "yOADqtkmjaqsUwp",
-	"json": "{\"id\":\"yOADqtkmjaqsUwp\",\"url\":\"https://give.ucdavis.edu/CHDP\",\"loadedUrl\":\"https://give.ucdavis.edu/CHDP\",\"uniqueKey\":\"https://give.ucdavis.edu/CHDP\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:58.480Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/CHDP",
-	"url": "https://give.ucdavis.edu/CHDP"
-}

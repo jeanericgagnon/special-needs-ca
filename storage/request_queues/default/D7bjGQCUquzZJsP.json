@@ -1,9 +1,0 @@
-{
-	"id": "D7bjGQCUquzZJsP",
-	"json": "{\"id\":\"D7bjGQCUquzZJsP\",\"url\":\"https://rarediseases.org/news/?taxonomy[category]=medicare\",\"loadedUrl\":\"https://rarediseases.org/news/?taxonomy[category]=medicare\",\"uniqueKey\":\"https://rarediseases.org/news?taxonomy%5Bcategory%5D=medicare\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:29.064Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/news?taxonomy%5Bcategory%5D=medicare",
-	"url": "https://rarediseases.org/news/?taxonomy[category]=medicare"
-}

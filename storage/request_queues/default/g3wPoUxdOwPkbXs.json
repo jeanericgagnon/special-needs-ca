@@ -1,9 +1,0 @@
-{
-	"id": "g3wPoUxdOwPkbXs",
-	"json": "{\"id\":\"g3wPoUxdOwPkbXs\",\"url\":\"https://cnprc.ucdavis.edu/services-and-rates\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/services-and-rates\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/services-and-rates\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:14.885Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cnprc.ucdavis.edu/services-and-rates",
-	"url": "https://cnprc.ucdavis.edu/services-and-rates"
-}

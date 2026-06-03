@@ -1,9 +1,0 @@
-{
-	"id": "vtnXeqhV5rPnEl8",
-	"json": "{\"id\":\"vtnXeqhV5rPnEl8\",\"url\":\"https://www.applications.dgs.ca.gov/oah/oahsftweb\",\"loadedUrl\":\"https://www.applications.dgs.ca.gov/oah/oahsftweb\",\"uniqueKey\":\"https://www.applications.dgs.ca.gov/oah/oahsftweb\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:21:52.952Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.applications.dgs.ca.gov/oah/oahsftweb",
-	"url": "https://www.applications.dgs.ca.gov/oah/oahsftweb"
-}

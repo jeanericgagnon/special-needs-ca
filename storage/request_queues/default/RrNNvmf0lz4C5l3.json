@@ -1,9 +1,0 @@
-{
-	"id": "RrNNvmf0lz4C5l3",
-	"json": "{\"id\":\"RrNNvmf0lz4C5l3\",\"url\":\"https://www.myfamily.wic.ca.gov/Home/MilitaryFamilies\",\"loadedUrl\":\"https://www.myfamily.wic.ca.gov/Home/MilitaryFamilies\",\"uniqueKey\":\"https://www.myfamily.wic.ca.gov/Home/MilitaryFamilies\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:07:18.450Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.myfamily.wic.ca.gov/Home/MilitaryFamilies",
-	"url": "https://www.myfamily.wic.ca.gov/Home/MilitaryFamilies"
-}

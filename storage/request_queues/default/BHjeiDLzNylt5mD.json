@@ -1,9 +1,0 @@
-{
-	"id": "BHjeiDLzNylt5mD",
-	"json": "{\"id\":\"BHjeiDLzNylt5mD\",\"url\":\"https://staff.ucdavis.edu/donation-suggestion-guide\",\"loadedUrl\":\"https://staff.ucdavis.edu/donation-suggestion-guide\",\"uniqueKey\":\"https://staff.ucdavis.edu/donation-suggestion-guide\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:46.909Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://staff.ucdavis.edu/donation-suggestion-guide",
-	"url": "https://staff.ucdavis.edu/donation-suggestion-guide"
-}

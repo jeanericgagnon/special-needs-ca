@@ -1,9 +1,0 @@
-{
-	"id": "Tzo5X2HHDBVaYHT",
-	"json": "{\"id\":\"Tzo5X2HHDBVaYHT\",\"url\":\"https://mindbrain.ucdavis.edu/news/2024-child-fund-seed-grant-recipients\",\"loadedUrl\":\"https://mindbrain.ucdavis.edu/news/2024-child-fund-seed-grant-recipients\",\"uniqueKey\":\"https://mindbrain.ucdavis.edu/news/2024-child-fund-seed-grant-recipients\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:12.918Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://mindbrain.ucdavis.edu/news/2024-child-fund-seed-grant-recipients",
-	"url": "https://mindbrain.ucdavis.edu/news/2024-child-fund-seed-grant-recipients"
-}

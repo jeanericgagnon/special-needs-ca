@@ -1,9 +1,0 @@
-{
-	"id": "msaNEtBMlTiBGmy",
-	"json": "{\"id\":\"msaNEtBMlTiBGmy\",\"url\":\"https://cdss.ca.gov/inforesources/CDSS-Programs/Welfare-to-Work/Refugees/Reports-Data-Plans\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/refugees/reports-and-data\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/CDSS-Programs/Welfare-to-Work/Refugees/Reports-Data-Plans\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:58:20.339Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/CDSS-Programs/Welfare-to-Work/Refugees/Reports-Data-Plans",
-	"url": "https://cdss.ca.gov/inforesources/CDSS-Programs/Welfare-to-Work/Refugees/Reports-Data-Plans"
-}

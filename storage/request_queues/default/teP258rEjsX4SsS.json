@@ -1,9 +1,0 @@
-{
-	"id": "teP258rEjsX4SsS",
-	"json": "{\"id\":\"teP258rEjsX4SsS\",\"url\":\"http://ucdirc.ucdavis.edu/\",\"loadedUrl\":\"http://ucdirc.ucdavis.edu/\",\"uniqueKey\":\"http://ucdirc.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:58.321Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://ucdirc.ucdavis.edu",
-	"url": "http://ucdirc.ucdavis.edu/"
-}

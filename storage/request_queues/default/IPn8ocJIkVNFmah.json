@@ -1,9 +1,0 @@
-{
-	"id": "IPn8ocJIkVNFmah",
-	"json": "{\"id\":\"IPn8ocJIkVNFmah\",\"url\":\"https://www.dhcs.ca.gov/provgovpart/Documents/Enclosure-1-CARE-Act-County-allocations-26-million.pdf\",\"loadedUrl\":\"https://www.dhcs.ca.gov/file/enclosure-1-care-act-county-allocations-26-million/\",\"uniqueKey\":\"https://www.dhcs.ca.gov/provgovpart/Documents/Enclosure-1-CARE-Act-County-allocations-26-million.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:40.632Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dhcs.ca.gov/provgovpart/Documents/Enclosure-1-CARE-Act-County-allocations-26-million.pdf",
-	"url": "https://www.dhcs.ca.gov/provgovpart/Documents/Enclosure-1-CARE-Act-County-allocations-26-million.pdf"
-}

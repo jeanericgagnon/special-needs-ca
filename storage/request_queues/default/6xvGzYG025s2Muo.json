@@ -1,9 +1,0 @@
-{
-	"id": "6xvGzYG025s2Muo",
-	"json": "{\"id\":\"6xvGzYG025s2Muo\",\"url\":\"https://hr.ucdavis.edu/departments/shared-services/sso/about/org-chart\",\"loadedUrl\":\"https://hr.ucdavis.edu/departments/shared-services/sso/about/org-chart\",\"uniqueKey\":\"https://hr.ucdavis.edu/departments/shared-services/sso/about/org-chart\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:33.022Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/departments/shared-services/sso/about/org-chart",
-	"url": "https://hr.ucdavis.edu/departments/shared-services/sso/about/org-chart"
-}

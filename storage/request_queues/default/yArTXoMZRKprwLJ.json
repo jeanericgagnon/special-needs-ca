@@ -1,9 +1,0 @@
-{
-	"id": "yArTXoMZRKprwLJ",
-	"json": "{\"id\":\"yArTXoMZRKprwLJ\",\"url\":\"https://www.auditor.ca.gov/whistleblower/\",\"loadedUrl\":\"https://www.auditor.ca.gov/whistleblower/\",\"uniqueKey\":\"https://www.auditor.ca.gov/whistleblower\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:41.617Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.auditor.ca.gov/whistleblower",
-	"url": "https://www.auditor.ca.gov/whistleblower/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "7XNzxw2lquMAh7M",
-	"json": "{\"id\":\"7XNzxw2lquMAh7M\",\"url\":\"https://www.cdss.ca.gov/inforesources/Community-Care/Policy\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/community-care/policy\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/Community-Care/Policy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:10.464Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/inforesources/Community-Care/Policy",
-	"url": "https://www.cdss.ca.gov/inforesources/Community-Care/Policy"
-}

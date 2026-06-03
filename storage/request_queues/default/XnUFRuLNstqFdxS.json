@@ -1,9 +1,0 @@
-{
-	"id": "XnUFRuLNstqFdxS",
-	"json": "{\"id\":\"XnUFRuLNstqFdxS\",\"url\":\"https://giveto.ucdavis.edu/campaigns/49377/donations/new?value=100&appeal_code=W2026&hide_appeal_code=1&designation_id=MNDDISJ\",\"loadedUrl\":\"https://giveto.ucdavis.edu/campaigns/49377/donations/new?value=100&appeal_code=W2026&hide_appeal_code=1&designation_id=MNDDISJ\",\"uniqueKey\":\"https://giveto.ucdavis.edu/campaigns/49377/donations/new?appeal_code=W2026&designation_id=MNDDISJ&hide_appeal_code=1&value=100\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:48.631Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://giveto.ucdavis.edu/campaigns/49377/donations/new?appeal_code=W2026&designation_id=MNDDISJ&hide_appeal_code=1&value=100",
-	"url": "https://giveto.ucdavis.edu/campaigns/49377/donations/new?value=100&appeal_code=W2026&hide_appeal_code=1&designation_id=MNDDISJ"
-}

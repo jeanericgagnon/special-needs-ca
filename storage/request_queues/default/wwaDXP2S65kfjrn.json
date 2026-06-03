@@ -1,9 +1,0 @@
-{
-	"id": "wwaDXP2S65kfjrn",
-	"json": "{\"id\":\"wwaDXP2S65kfjrn\",\"url\":\"https://www.cde.ca.gov/sp/eo/jc/\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/eo/jc/\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/eo/jc\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:25:33.461Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/sp/eo/jc",
-	"url": "https://www.cde.ca.gov/sp/eo/jc/"
-}

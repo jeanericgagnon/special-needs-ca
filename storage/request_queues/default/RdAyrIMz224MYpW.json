@@ -1,9 +1,0 @@
-{
-	"id": "RdAyrIMz224MYpW",
-	"json": "{\"id\":\"RdAyrIMz224MYpW\",\"url\":\"https://health.ucdavis.edu/internalmedicine/general/\",\"loadedUrl\":\"https://health.ucdavis.edu/internal-medicine/general/\",\"uniqueKey\":\"https://health.ucdavis.edu/internalmedicine/general\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:51.023Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/internalmedicine/general",
-	"url": "https://health.ucdavis.edu/internalmedicine/general/"
-}

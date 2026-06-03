@@ -1,9 +1,0 @@
-{
-	"id": "uc8LFLIzatzaxsZ",
-	"json": "{\"id\":\"uc8LFLIzatzaxsZ\",\"url\":\"https://www.cdph.ca.gov/Programs/CID/OBBH/_layouts/15/listform.aspx?ListId=%7B31770ED6%2DA5BA%2D4564%2DA65C%2D601F7C605B6E%7D&PageType=0\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CID/OBBH/Pages/OBBHHome.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CID/OBBH/_layouts/15/listform.aspx?ListId=%7B31770ED6-A5BA-4564-A65C-601F7C605B6E%7D&PageType=0\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":3,\"errorMessages\":[\"Error: request timed out after 30 seconds.\\n    at Timeout._onTimeout (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@apify/timeout/cjs/index.cjs:64:68)\\n    at listOnTimeout (node:internal/timers:588:17)\\n    at process.processTimers (node:internal/timers:523:7)\",\"Error: request timed out after 30 seconds.\\n    at Timeout._onTimeout (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@apify/timeout/cjs/index.cjs:64:68)\\n    at listOnTimeout (node:internal/timers:588:17)\\n    at process.processTimers (node:internal/timers:523:7)\",\"Error: request timed out after 30 seconds.\\n    at Timeout._onTimeout (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@apify/timeout/cjs/index.cjs:64:68)\\n    at listOnTimeout (node:internal/timers:588:17)\\n    at process.processTimers (node:internal/timers:523:7)\"],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:46:38.253Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 3,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CID/OBBH/_layouts/15/listform.aspx?ListId=%7B31770ED6-A5BA-4564-A65C-601F7C605B6E%7D&PageType=0",
-	"url": "https://www.cdph.ca.gov/Programs/CID/OBBH/_layouts/15/listform.aspx?ListId=%7B31770ED6%2DA5BA%2D4564%2DA65C%2D601F7C605B6E%7D&PageType=0"
-}

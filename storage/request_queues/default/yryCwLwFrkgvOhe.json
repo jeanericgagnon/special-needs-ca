@@ -1,9 +1,0 @@
-{
-	"id": "yryCwLwFrkgvOhe",
-	"json": "{\"id\":\"yryCwLwFrkgvOhe\",\"url\":\"https://calcareers.ca.gov/CalHrPublic/GeneralInfo/transfers.aspx\",\"loadedUrl\":\"https://calcareers.ca.gov/CalHrPublic/GeneralInfo/transfers.aspx\",\"uniqueKey\":\"https://calcareers.ca.gov/CalHrPublic/GeneralInfo/transfers.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:40:07.506Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://calcareers.ca.gov/CalHrPublic/GeneralInfo/transfers.aspx",
-	"url": "https://calcareers.ca.gov/CalHrPublic/GeneralInfo/transfers.aspx"
-}

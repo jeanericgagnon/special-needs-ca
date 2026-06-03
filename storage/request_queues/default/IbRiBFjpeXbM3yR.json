@@ -1,9 +1,0 @@
-{
-	"id": "IbRiBFjpeXbM3yR",
-	"json": "{\"id\":\"IbRiBFjpeXbM3yR\",\"url\":\"https://cnprc.ucdavis.edu/contact\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/contact\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/contact\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:17.455Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cnprc.ucdavis.edu/contact",
-	"url": "https://cnprc.ucdavis.edu/contact"
-}

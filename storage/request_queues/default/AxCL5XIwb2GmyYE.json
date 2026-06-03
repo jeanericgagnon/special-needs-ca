@@ -1,9 +1,0 @@
-{
-	"id": "AxCL5XIwb2GmyYE",
-	"json": "{\"id\":\"AxCL5XIwb2GmyYE\",\"url\":\"https://writingcenter.ucdavis.edu/\",\"loadedUrl\":\"https://writingcenter.ucdavis.edu/\",\"uniqueKey\":\"https://writingcenter.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:21.137Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://writingcenter.ucdavis.edu",
-	"url": "https://writingcenter.ucdavis.edu/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "qJT4LoSSelTc2sD",
-	"json": "{\"id\":\"qJT4LoSSelTc2sD\",\"url\":\"http://inet2.cde.ca.gov/cmd/translatedparentaldoc.aspx?docid=3789-3814,3825-3827,3839,3841,3842,3857,3859,3876,3879,3881-3886\",\"loadedUrl\":\"https://inet2.cde.ca.gov/cmd/translatedparentaldoc.aspx?docid=3789-3814,3825-3827,3839,3841,3842,3857,3859,3876,3879,3881-3886\",\"uniqueKey\":\"http://inet2.cde.ca.gov/cmd/translatedparentaldoc.aspx?docid=3789-3814%2C3825-3827%2C3839%2C3841%2C3842%2C3857%2C3859%2C3876%2C3879%2C3881-3886\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:22:37.211Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://inet2.cde.ca.gov/cmd/translatedparentaldoc.aspx?docid=3789-3814%2C3825-3827%2C3839%2C3841%2C3842%2C3857%2C3859%2C3876%2C3879%2C3881-3886",
-	"url": "http://inet2.cde.ca.gov/cmd/translatedparentaldoc.aspx?docid=3789-3814,3825-3827,3839,3841,3842,3857,3859,3876,3879,3881-3886"
-}

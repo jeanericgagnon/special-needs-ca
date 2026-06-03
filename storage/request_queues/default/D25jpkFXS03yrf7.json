@@ -1,9 +1,0 @@
-{
-	"id": "D25jpkFXS03yrf7",
-	"json": "{\"id\":\"D25jpkFXS03yrf7\",\"url\":\"https://www.ucdavis.edu/about/student-safety/basic-needs\",\"loadedUrl\":\"https://www.ucdavis.edu/about/student-safety/basic-needs\",\"uniqueKey\":\"https://www.ucdavis.edu/about/student-safety/basic-needs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:41.995Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ucdavis.edu/about/student-safety/basic-needs",
-	"url": "https://www.ucdavis.edu/about/student-safety/basic-needs"
-}

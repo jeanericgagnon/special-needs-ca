@@ -1,9 +1,0 @@
-{
-	"id": "yNTSDZs6SbtCXfo",
-	"json": "{\"id\":\"yNTSDZs6SbtCXfo\",\"url\":\"https://health.ucdavis.edu/cancer/adult-cancer-care/\",\"loadedUrl\":\"https://health.ucdavis.edu/cancer/adult-cancer-care/\",\"uniqueKey\":\"https://health.ucdavis.edu/cancer/adult-cancer-care\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:13.865Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/cancer/adult-cancer-care",
-	"url": "https://health.ucdavis.edu/cancer/adult-cancer-care/"
-}

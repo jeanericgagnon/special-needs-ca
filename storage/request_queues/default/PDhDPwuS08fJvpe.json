@@ -1,9 +1,0 @@
-{
-	"id": "PDhDPwuS08fJvpe",
-	"json": "{\"id\":\"PDhDPwuS08fJvpe\",\"url\":\"https://data.chhs.ca.gov/pages/calhhs-program-counts-methodology\",\"loadedUrl\":\"https://data.chhs.ca.gov/pages/calhhs-program-counts-methodology\",\"uniqueKey\":\"https://data.chhs.ca.gov/pages/calhhs-program-counts-methodology\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:49.699Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://data.chhs.ca.gov/pages/calhhs-program-counts-methodology",
-	"url": "https://data.chhs.ca.gov/pages/calhhs-program-counts-methodology"
-}

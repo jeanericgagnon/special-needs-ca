@@ -1,9 +1,0 @@
-{
-	"id": "rUvQYIUkBL6CYPE",
-	"json": "{\"id\":\"rUvQYIUkBL6CYPE\",\"url\":\"https://www.chhs.ca.gov/blog/tag/measles/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/tag/measles/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/tag/measles\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:34.808Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chhs.ca.gov/blog/tag/measles",
-	"url": "https://www.chhs.ca.gov/blog/tag/measles/"
-}

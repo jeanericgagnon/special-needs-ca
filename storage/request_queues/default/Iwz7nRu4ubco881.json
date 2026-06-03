@@ -1,9 +1,0 @@
-{
-	"id": "Iwz7nRu4ubco881",
-	"json": "{\"id\":\"Iwz7nRu4ubco881\",\"url\":\"https://health.ucdavis.edu/mind-institute/research/girls-with-autism/\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/research/girls-with-autism/\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/research/girls-with-autism\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:07:48.718Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mind-institute/research/girls-with-autism",
-	"url": "https://health.ucdavis.edu/mind-institute/research/girls-with-autism/"
-}

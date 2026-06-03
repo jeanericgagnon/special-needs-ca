@@ -1,9 +1,0 @@
-{
-	"id": "jPtmYPTwnziGNW9",
-	"json": "{\"id\":\"jPtmYPTwnziGNW9\",\"url\":\"http://www.edd.ca.gov/\",\"loadedUrl\":\"https://edd.ca.gov/\",\"uniqueKey\":\"http://www.edd.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T17:53:07.596Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.edd.ca.gov",
-	"url": "http://www.edd.ca.gov/"
-}

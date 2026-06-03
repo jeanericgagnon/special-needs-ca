@@ -1,9 +1,0 @@
-{
-	"id": "57Fi7DJNVJ7DsRI",
-	"json": "{\"id\":\"57Fi7DJNVJ7DsRI\",\"url\":\"https://www.cde.ca.gov/eo/ce/\",\"loadedUrl\":\"https://www.cde.ca.gov/eo/ce/\",\"uniqueKey\":\"https://www.cde.ca.gov/eo/ce\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:03.078Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/eo/ce",
-	"url": "https://www.cde.ca.gov/eo/ce/"
-}

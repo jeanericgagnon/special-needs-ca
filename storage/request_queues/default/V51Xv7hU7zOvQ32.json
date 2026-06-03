@@ -1,9 +1,0 @@
-{
-	"id": "V51Xv7hU7zOvQ32",
-	"json": "{\"id\":\"V51Xv7hU7zOvQ32\",\"url\":\"https://hcai.ca.gov/workforce-capacity/initiatives/community-health-workers-promotores-chw-p/\",\"loadedUrl\":\"https://hcai.ca.gov/workforce/initiatives/community-health-workers-promotores-chw-p/\",\"uniqueKey\":\"https://hcai.ca.gov/workforce-capacity/initiatives/community-health-workers-promotores-chw-p\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:40.320Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hcai.ca.gov/workforce-capacity/initiatives/community-health-workers-promotores-chw-p",
-	"url": "https://hcai.ca.gov/workforce-capacity/initiatives/community-health-workers-promotores-chw-p/"
-}

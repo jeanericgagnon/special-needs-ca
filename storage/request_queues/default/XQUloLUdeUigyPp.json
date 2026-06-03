@@ -1,9 +1,0 @@
-{
-	"id": "XQUloLUdeUigyPp",
-	"json": "{\"id\":\"XQUloLUdeUigyPp\",\"url\":\"https://data.chhs.ca.gov/dataset/852008e0-85d1-470d-982e-531860d9a52f/resource/9a7239e6-b1cc-4fe6-a6b6-de747825154e/download/record_reconciliation_methodology.html\",\"loadedUrl\":\"https://s3.amazonaws.com/og-production-open-data-chelseama-892364687672/resources/9a7239e6-b1cc-4fe6-a6b6-de747825154e/record_reconciliation_methodology.html?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJJIENTAPKHZMIPXQ%2F20260601%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260601T233050Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=f5e459c9bf3d18491125fb2f0e8f4ff42f221d7182cfbc9ee32ba27c5faf9625\",\"uniqueKey\":\"https://data.chhs.ca.gov/dataset/852008e0-85d1-470d-982e-531860d9a52f/resource/9a7239e6-b1cc-4fe6-a6b6-de747825154e/download/record_reconciliation_methodology.html\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T23:30:51.382Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://data.chhs.ca.gov/dataset/852008e0-85d1-470d-982e-531860d9a52f/resource/9a7239e6-b1cc-4fe6-a6b6-de747825154e/download/record_reconciliation_methodology.html",
-	"url": "https://data.chhs.ca.gov/dataset/852008e0-85d1-470d-982e-531860d9a52f/resource/9a7239e6-b1cc-4fe6-a6b6-de747825154e/download/record_reconciliation_methodology.html"
-}

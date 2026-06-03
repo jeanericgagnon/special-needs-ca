@@ -1,9 +1,0 @@
-{
-	"id": "iCRV9LN81RGpw3j",
-	"json": "{\"id\":\"iCRV9LN81RGpw3j\",\"url\":\"https://saronlab.ucdavis.edu/cdn-cgi/l/email-protection#c5a6a1b6a4b7aaab85b0a6a1a4b3acb6eba0a1b0\",\"loadedUrl\":\"https://saronlab.ucdavis.edu/cdn-cgi/l/email-protection#c5a6a1b6a4b7aaab85b0a6a1a4b3acb6eba0a1b0\",\"uniqueKey\":\"https://saronlab.ucdavis.edu/cdn-cgi/l/email-protection\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:56.039Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://saronlab.ucdavis.edu/cdn-cgi/l/email-protection",
-	"url": "https://saronlab.ucdavis.edu/cdn-cgi/l/email-protection#c5a6a1b6a4b7aaab85b0a6a1a4b3acb6eba0a1b0"
-}

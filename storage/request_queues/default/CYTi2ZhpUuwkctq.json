@@ -1,9 +1,0 @@
-{
-	"id": "CYTi2ZhpUuwkctq",
-	"json": "{\"id\":\"CYTi2ZhpUuwkctq\",\"url\":\"https://rarediseases.org/organizations/e-we-foundation/\",\"loadedUrl\":\"https://rarediseases.org/organizations/e-we-foundation/\",\"uniqueKey\":\"https://rarediseases.org/organizations/e-we-foundation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:16:20.374Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/organizations/e-we-foundation",
-	"url": "https://rarediseases.org/organizations/e-we-foundation/"
-}

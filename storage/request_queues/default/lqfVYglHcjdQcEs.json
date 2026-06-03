@@ -1,9 +1,0 @@
-{
-	"id": "lqfVYglHcjdQcEs",
-	"json": "{\"id\":\"lqfVYglHcjdQcEs\",\"url\":\"https://secure.ssa.gov/eSubmit/upload-documents-ui/start?target=552&type=upload&ref=rpp\",\"loadedUrl\":\"https://secure.ssa.gov/RIL/default.jsp?URL=%2FeSubmit%2Fupload-documents-ui%2Fstart%3Ftarget%3D552%26type%3Dupload%26ref%3Drpp\",\"uniqueKey\":\"https://secure.ssa.gov/eSubmit/upload-documents-ui/start?ref=rpp&target=552&type=upload\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:46.702Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://secure.ssa.gov/eSubmit/upload-documents-ui/start?ref=rpp&target=552&type=upload",
-	"url": "https://secure.ssa.gov/eSubmit/upload-documents-ui/start?target=552&type=upload&ref=rpp"
-}

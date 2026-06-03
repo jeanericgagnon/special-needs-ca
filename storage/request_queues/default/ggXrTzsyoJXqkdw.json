@@ -1,9 +1,0 @@
-{
-	"id": "ggXrTzsyoJXqkdw",
-	"json": "{\"id\":\"ggXrTzsyoJXqkdw\",\"url\":\"https://www.cde.ca.gov/ci/cr/sl/\",\"loadedUrl\":\"https://www.cde.ca.gov/re/pr/servicelearning.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/cr/sl\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:23.535Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ci/cr/sl",
-	"url": "https://www.cde.ca.gov/ci/cr/sl/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "4klYYLc48GHKP5P",
-	"json": "{\"id\":\"4klYYLc48GHKP5P\",\"url\":\"https://www.cde.ca.gov/ci/ma/im/mathadoptsignificantevents.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/ma/im/mathadoptsignificantevents.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/ma/im/mathadoptsignificantevents.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:50.159Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ci/ma/im/mathadoptsignificantevents.asp",
-	"url": "https://www.cde.ca.gov/ci/ma/im/mathadoptsignificantevents.asp"
-}

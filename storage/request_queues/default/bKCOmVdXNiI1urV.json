@@ -1,9 +1,0 @@
-{
-	"id": "bKCOmVdXNiI1urV",
-	"json": "{\"id\":\"bKCOmVdXNiI1urV\",\"url\":\"https://www.cdph.ca.gov/Programs/OLS/Pages/DPH-16-015E-Newborn-Screening-Fee-Increase.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/OLS/Pages/DPH-16-015E-Newborn-Screening-Fee-Increase.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/OLS/Pages/DPH-16-015E-Newborn-Screening-Fee-Increase.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:55:50.970Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/OLS/Pages/DPH-16-015E-Newborn-Screening-Fee-Increase.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/OLS/Pages/DPH-16-015E-Newborn-Screening-Fee-Increase.aspx"
-}

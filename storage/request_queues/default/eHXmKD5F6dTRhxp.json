@@ -1,9 +1,0 @@
-{
-	"id": "eHXmKD5F6dTRhxp",
-	"json": "{\"id\":\"eHXmKD5F6dTRhxp\",\"url\":\"https://health.ucdavis.edu/health-education/topic/healthcare-decisions/\",\"loadedUrl\":\"https://health.ucdavis.edu/health-education/topic/healthcare-decisions/\",\"uniqueKey\":\"https://health.ucdavis.edu/health-education/topic/healthcare-decisions\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:32.249Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/health-education/topic/healthcare-decisions",
-	"url": "https://health.ucdavis.edu/health-education/topic/healthcare-decisions/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "pRdlc3qSXjLBdy0",
-	"json": "{\"id\":\"pRdlc3qSXjLBdy0\",\"url\":\"https://health.ucdavis.edu/nursing/ourteam/join/\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/ourteam/join/\",\"uniqueKey\":\"https://health.ucdavis.edu/nursing/ourteam/join\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:55.737Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/nursing/ourteam/join",
-	"url": "https://health.ucdavis.edu/nursing/ourteam/join/"
-}

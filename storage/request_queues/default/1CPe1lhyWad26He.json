@@ -1,9 +1,0 @@
-{
-	"id": "1CPe1lhyWad26He",
-	"json": "{\"id\":\"1CPe1lhyWad26He\",\"url\":\"https://myvaccinerecord.cdph.ca.gov/\",\"loadedUrl\":\"https://myvaccinerecord.cdph.ca.gov/\",\"uniqueKey\":\"https://myvaccinerecord.cdph.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:08.244Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://myvaccinerecord.cdph.ca.gov",
-	"url": "https://myvaccinerecord.cdph.ca.gov/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "FTpL8eQ4eWaaIyV",
-	"json": "{\"id\":\"FTpL8eQ4eWaaIyV\",\"url\":\"https://www.ucdavis.edu/news/latest\",\"loadedUrl\":\"https://www.ucdavis.edu/news/latest\",\"uniqueKey\":\"https://www.ucdavis.edu/news/latest\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:46.121Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ucdavis.edu/news/latest",
-	"url": "https://www.ucdavis.edu/news/latest"
-}

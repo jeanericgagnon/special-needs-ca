@@ -1,9 +1,0 @@
-{
-	"id": "jos0CpGN3G0E3fl",
-	"json": "{\"id\":\"jos0CpGN3G0E3fl\",\"url\":\"https://www.dgs.ca.gov/CCDA/Resources/Page-Content/California-Commission-on-Disability-Access-Resources-List-Folder/Newsletters\",\"loadedUrl\":\"https://www.dgs.ca.gov/CCDA/Resources/Page-Content/California-Commission-on-Disability-Access-Resources-List-Folder/Newsletters\",\"uniqueKey\":\"https://www.dgs.ca.gov/CCDA/Resources/Page-Content/California-Commission-on-Disability-Access-Resources-List-Folder/Newsletters\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:06.910Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dgs.ca.gov/CCDA/Resources/Page-Content/California-Commission-on-Disability-Access-Resources-List-Folder/Newsletters",
-	"url": "https://www.dgs.ca.gov/CCDA/Resources/Page-Content/California-Commission-on-Disability-Access-Resources-List-Folder/Newsletters"
-}

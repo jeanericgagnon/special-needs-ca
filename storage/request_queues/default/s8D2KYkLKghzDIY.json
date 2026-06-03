@@ -1,9 +1,0 @@
-{
-	"id": "s8D2KYkLKghzDIY",
-	"json": "{\"id\":\"s8D2KYkLKghzDIY\",\"url\":\"https://scdd.ca.gov/pos-service-code/vehicle-modification-and-adaptation/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/vehicle-modification-and-adaptation/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/vehicle-modification-and-adaptation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:59.474Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/pos-service-code/vehicle-modification-and-adaptation",
-	"url": "https://scdd.ca.gov/pos-service-code/vehicle-modification-and-adaptation/"
-}

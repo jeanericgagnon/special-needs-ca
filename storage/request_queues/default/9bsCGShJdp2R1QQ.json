@@ -1,9 +1,0 @@
-{
-	"id": "9bsCGShJdp2R1QQ",
-	"json": "{\"id\":\"9bsCGShJdp2R1QQ\",\"url\":\"https://health.ucdavis.edu/children/team/1499/shannon-clark-obstetrics-psychiatry-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/children/team/1499/shannon-clark-obstetrics-psychiatry-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/children/team/1499/shannon-clark-obstetrics-psychiatry-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:11.383Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/children/team/1499/shannon-clark-obstetrics-psychiatry-sacramento",
-	"url": "https://health.ucdavis.edu/children/team/1499/shannon-clark-obstetrics-psychiatry-sacramento"
-}

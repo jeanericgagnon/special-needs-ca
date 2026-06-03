@@ -1,9 +1,0 @@
-{
-	"id": "7csDhgKgRxf01YX",
-	"json": "{\"id\":\"7csDhgKgRxf01YX\",\"url\":\"https://health.ucdavis.edu/women/women-services/\",\"loadedUrl\":\"https://health.ucdavis.edu/women/women-services/\",\"uniqueKey\":\"https://health.ucdavis.edu/women/women-services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:47.780Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/women/women-services",
-	"url": "https://health.ucdavis.edu/women/women-services/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "0kQ1DMQ6O2vmEbK",
-	"json": "{\"id\":\"0kQ1DMQ6O2vmEbK\",\"url\":\"https://give.ucdavis.edu/AFST/122475\",\"loadedUrl\":\"https://give.ucdavis.edu/AFST/122475\",\"uniqueKey\":\"https://give.ucdavis.edu/AFST/122475\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:54.221Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/AFST/122475",
-	"url": "https://give.ucdavis.edu/AFST/122475"
-}

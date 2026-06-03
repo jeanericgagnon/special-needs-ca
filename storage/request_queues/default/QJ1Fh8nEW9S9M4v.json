@@ -1,9 +1,0 @@
-{
-	"id": "QJ1Fh8nEW9S9M4v",
-	"json": "{\"id\":\"QJ1Fh8nEW9S9M4v\",\"url\":\"https://health.ucdavis.edu/mind-institute/research/children-autism-risk/\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/research/children-autism-risk/\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/research/children-autism-risk\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:05:11.382Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mind-institute/research/children-autism-risk",
-	"url": "https://health.ucdavis.edu/mind-institute/research/children-autism-risk/"
-}

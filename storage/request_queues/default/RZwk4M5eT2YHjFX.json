@@ -1,9 +1,0 @@
-{
-	"id": "RZwk4M5eT2YHjFX",
-	"json": "{\"id\":\"RZwk4M5eT2YHjFX\",\"url\":\"https://www.treasurer.ca.gov/chffa/\",\"loadedUrl\":\"https://www.treasurer.ca.gov/chffa\",\"uniqueKey\":\"https://www.treasurer.ca.gov/chffa\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:12:20.440Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.treasurer.ca.gov/chffa",
-	"url": "https://www.treasurer.ca.gov/chffa/"
-}

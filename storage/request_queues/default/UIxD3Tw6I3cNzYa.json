@@ -1,9 +1,0 @@
-{
-	"id": "UIxD3Tw6I3cNzYa",
-	"json": "{\"id\":\"UIxD3Tw6I3cNzYa\",\"url\":\"http://www.cdss.ca.gov/accessibility\",\"loadedUrl\":\"https://www.cdss.ca.gov/accessibility\",\"uniqueKey\":\"http://www.cdss.ca.gov/accessibility\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:48.504Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.cdss.ca.gov/accessibility",
-	"url": "http://www.cdss.ca.gov/accessibility"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "sqLG6ePj7E51bfv",
-	"json": "{\"id\":\"sqLG6ePj7E51bfv\",\"url\":\"https://www.library.ca.gov/services/to-libraries/library-directory/\",\"loadedUrl\":\"https://www.library.ca.gov/services/to-libraries/library-directory/\",\"uniqueKey\":\"https://www.library.ca.gov/services/to-libraries/library-directory\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:52.000Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.library.ca.gov/services/to-libraries/library-directory",
-	"url": "https://www.library.ca.gov/services/to-libraries/library-directory/"
-}

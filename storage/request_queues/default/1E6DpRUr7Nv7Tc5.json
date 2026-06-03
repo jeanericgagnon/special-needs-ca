@@ -1,9 +1,0 @@
-{
-	"id": "1E6DpRUr7Nv7Tc5",
-	"json": "{\"id\":\"1E6DpRUr7Nv7Tc5\",\"url\":\"https://health.ucdavis.edu/children/news/latest\",\"loadedUrl\":\"https://health.ucdavis.edu/children/news/latest\",\"uniqueKey\":\"https://health.ucdavis.edu/children/news/latest\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:00.709Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/children/news/latest",
-	"url": "https://health.ucdavis.edu/children/news/latest"
-}

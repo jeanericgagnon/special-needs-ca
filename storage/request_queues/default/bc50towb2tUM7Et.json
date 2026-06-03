@@ -1,9 +1,0 @@
-{
-	"id": "bc50towb2tUM7Et",
-	"json": "{\"id\":\"bc50towb2tUM7Et\",\"url\":\"https://www.chp.ca.gov/link/4f9c643b96ea4f0abcf0c602db747e4a.aspx\",\"loadedUrl\":\"https://www.chp.ca.gov/find-an-office/\",\"uniqueKey\":\"https://www.chp.ca.gov/link/4f9c643b96ea4f0abcf0c602db747e4a.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:11.769Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chp.ca.gov/link/4f9c643b96ea4f0abcf0c602db747e4a.aspx",
-	"url": "https://www.chp.ca.gov/link/4f9c643b96ea4f0abcf0c602db747e4a.aspx"
-}

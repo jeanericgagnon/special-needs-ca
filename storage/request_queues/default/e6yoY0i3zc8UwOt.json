@@ -1,9 +1,0 @@
-{
-	"id": "e6yoY0i3zc8UwOt",
-	"json": "{\"id\":\"e6yoY0i3zc8UwOt\",\"url\":\"https://health.ucdavis.edu/medical-school-research/safety-management/\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-school-research/safety-management/\",\"uniqueKey\":\"https://health.ucdavis.edu/medical-school-research/safety-management\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:34.181Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/medical-school-research/safety-management",
-	"url": "https://health.ucdavis.edu/medical-school-research/safety-management/"
-}

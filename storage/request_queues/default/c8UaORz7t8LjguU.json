@@ -1,9 +1,0 @@
-{
-	"id": "c8UaORz7t8LjguU",
-	"json": "{\"id\":\"c8UaORz7t8LjguU\",\"url\":\"https://health.ucdavis.edu/pediatrics/team/43402/zachary-chaffin\",\"loadedUrl\":\"https://health.ucdavis.edu/pediatrics/team/43402/zachary-chaffin\",\"uniqueKey\":\"https://health.ucdavis.edu/pediatrics/team/43402/zachary-chaffin\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:47:03.642Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/pediatrics/team/43402/zachary-chaffin",
-	"url": "https://health.ucdavis.edu/pediatrics/team/43402/zachary-chaffin"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "CV9GDoOlBqoLnDZ",
-	"json": "{\"id\":\"CV9GDoOlBqoLnDZ\",\"url\":\"https://myedd.edd.ca.gov/s/login/?language=en_US&ec=302&startURL=%2Fs%2F\",\"loadedUrl\":\"https://myedd.edd.ca.gov/s/login/?language=en_US&ec=302&startURL=%2Fs%2F\",\"uniqueKey\":\"https://myedd.edd.ca.gov/s/login?ec=302&language=en_US&startURL=%2Fs%2F\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:42.155Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://myedd.edd.ca.gov/s/login?ec=302&language=en_US&startURL=%2Fs%2F",
-	"url": "https://myedd.edd.ca.gov/s/login/?language=en_US&ec=302&startURL=%2Fs%2F"
-}

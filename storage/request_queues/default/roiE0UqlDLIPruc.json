@@ -1,9 +1,0 @@
-{
-	"id": "roiE0UqlDLIPruc",
-	"json": "{\"id\":\"roiE0UqlDLIPruc\",\"url\":\"https://www.globaldownsyndrome.org/our-story/history/\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/our-story/history/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/our-story/history\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:35.053Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.globaldownsyndrome.org/our-story/history",
-	"url": "https://www.globaldownsyndrome.org/our-story/history/"
-}

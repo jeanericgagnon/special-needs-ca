@@ -1,9 +1,0 @@
-{
-	"id": "AhT1fm9YZcWlVlu",
-	"json": "{\"id\":\"AhT1fm9YZcWlVlu\",\"url\":\"https://rarediseases.org/rare-diseases/ataxia-telangiectasia/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/ataxia-telangiectasia/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/ataxia-telangiectasia\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:14:56.133Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/rare-diseases/ataxia-telangiectasia",
-	"url": "https://rarediseases.org/rare-diseases/ataxia-telangiectasia/"
-}

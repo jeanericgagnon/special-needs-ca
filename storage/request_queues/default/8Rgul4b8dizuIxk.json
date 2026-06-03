@@ -1,9 +1,0 @@
-{
-	"id": "8Rgul4b8dizuIxk",
-	"json": "{\"id\":\"8Rgul4b8dizuIxk\",\"url\":\"https://rarediseases.org/rare-diseases/danon-disease/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/danon-disease/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/danon-disease\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:11:06.853Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/rare-diseases/danon-disease",
-	"url": "https://rarediseases.org/rare-diseases/danon-disease/"
-}

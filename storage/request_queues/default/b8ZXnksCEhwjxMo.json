@@ -1,9 +1,0 @@
-{
-	"id": "b8ZXnksCEhwjxMo",
-	"json": "{\"id\":\"b8ZXnksCEhwjxMo\",\"url\":\"https://data.chhs.ca.gov/pages/about-zh-cn\",\"loadedUrl\":\"https://data.chhs.ca.gov/pages/about-zh-cn\",\"uniqueKey\":\"https://data.chhs.ca.gov/pages/about-zh-cn\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:46.772Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://data.chhs.ca.gov/pages/about-zh-cn",
-	"url": "https://data.chhs.ca.gov/pages/about-zh-cn"
-}

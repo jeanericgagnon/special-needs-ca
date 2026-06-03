@@ -1,9 +1,0 @@
-{
-	"id": "sUv6dFJ567MXmJV",
-	"json": "{\"id\":\"sUv6dFJ567MXmJV\",\"url\":\"https://www.chhs.ca.gov/care-act\",\"loadedUrl\":\"https://www.chhs.ca.gov/care-act/\",\"uniqueKey\":\"https://www.chhs.ca.gov/care-act\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:17.643Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chhs.ca.gov/care-act",
-	"url": "https://www.chhs.ca.gov/care-act"
-}

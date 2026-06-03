@@ -1,9 +1,0 @@
-{
-	"id": "1pDEeZBsFISYkZ4",
-	"json": "{\"id\":\"1pDEeZBsFISYkZ4\",\"url\":\"https://grants.ca.gov/\",\"loadedUrl\":\"https://www.grants.ca.gov/\",\"uniqueKey\":\"https://grants.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:58.445Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://grants.ca.gov",
-	"url": "https://grants.ca.gov/"
-}

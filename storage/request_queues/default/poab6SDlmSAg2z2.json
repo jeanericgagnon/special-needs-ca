@@ -1,9 +1,0 @@
-{
-	"id": "poab6SDlmSAg2z2",
-	"json": "{\"id\":\"poab6SDlmSAg2z2\",\"url\":\"https://health.ucdavis.edu/medical-school/leadership/bios/sean-munoz\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-school/leadership/bios/sean-munoz\",\"uniqueKey\":\"https://health.ucdavis.edu/medical-school/leadership/bios/sean-munoz\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:06.853Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/medical-school/leadership/bios/sean-munoz",
-	"url": "https://health.ucdavis.edu/medical-school/leadership/bios/sean-munoz"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "UwJMFT5dDwU6noq",
-	"json": "{\"id\":\"UwJMFT5dDwU6noq\",\"url\":\"https://education.ucdavis.edu/research-innovation-centers\",\"loadedUrl\":\"https://education.ucdavis.edu/research-innovation-centers\",\"uniqueKey\":\"https://education.ucdavis.edu/research-innovation-centers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:17:20.573Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://education.ucdavis.edu/research-innovation-centers",
-	"url": "https://education.ucdavis.edu/research-innovation-centers"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "hooOmaxIThFYU3Q",
-	"json": "{\"id\":\"hooOmaxIThFYU3Q\",\"url\":\"https://health.ucdavis.edu/publish/news/contenthub\",\"loadedUrl\":\"https://health.ucdavis.edu/news/latest/\",\"uniqueKey\":\"https://health.ucdavis.edu/publish/news/contenthub\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:22.432Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/publish/news/contenthub",
-	"url": "https://health.ucdavis.edu/publish/news/contenthub"
-}

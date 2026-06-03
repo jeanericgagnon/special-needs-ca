@@ -1,9 +1,0 @@
-{
-	"id": "yfNDY9RBlRXbpm9",
-	"json": "{\"id\":\"yfNDY9RBlRXbpm9\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/sapb/Pages/Rainbow-Fentanyl-Alert.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/sapb/Pages/Rainbow-Fentanyl-Alert.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/sapb/Pages/Rainbow-Fentanyl-Alert.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:18.983Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/sapb/Pages/Rainbow-Fentanyl-Alert.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/sapb/Pages/Rainbow-Fentanyl-Alert.aspx"
-}

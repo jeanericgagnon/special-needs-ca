@@ -1,9 +1,0 @@
-{
-	"id": "d6adKJwaNrw8JYy",
-	"json": "{\"id\":\"d6adKJwaNrw8JYy\",\"url\":\"https://oag.ca.gov/privacy/databreach/report-a-breach\",\"loadedUrl\":\"https://oag.ca.gov/privacy/databreach/report-a-breach\",\"uniqueKey\":\"https://oag.ca.gov/privacy/databreach/report-a-breach\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:12:00.535Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://oag.ca.gov/privacy/databreach/report-a-breach",
-	"url": "https://oag.ca.gov/privacy/databreach/report-a-breach"
-}

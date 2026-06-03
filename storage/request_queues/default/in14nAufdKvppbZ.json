@@ -1,9 +1,0 @@
-{
-	"id": "in14nAufdKvppbZ",
-	"json": "{\"id\":\"in14nAufdKvppbZ\",\"url\":\"https://edd.ca.gov/en/disability/disability_insurance/\",\"loadedUrl\":\"https://edd.ca.gov/en/disability/disability_insurance/\",\"uniqueKey\":\"https://edd.ca.gov/en/disability/disability_insurance\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:32.742Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://edd.ca.gov/en/disability/disability_insurance",
-	"url": "https://edd.ca.gov/en/disability/disability_insurance/"
-}

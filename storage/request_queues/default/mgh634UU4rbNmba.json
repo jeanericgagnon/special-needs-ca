@@ -1,9 +1,0 @@
-{
-	"id": "mgh634UU4rbNmba",
-	"json": "{\"id\":\"mgh634UU4rbNmba\",\"url\":\"https://cdss.ca.gov/inforesources/Adoptions\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/adoptions\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Adoptions\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:14.925Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/Adoptions",
-	"url": "https://cdss.ca.gov/inforesources/Adoptions"
-}

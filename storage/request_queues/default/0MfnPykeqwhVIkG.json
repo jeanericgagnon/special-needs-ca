@@ -1,9 +1,0 @@
-{
-	"id": "0MfnPykeqwhVIkG",
-	"json": "{\"id\":\"0MfnPykeqwhVIkG\",\"url\":\"https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=60810&lawCode=EDC#:~:text=(3)%C2%A0For%20purposes%20of%20this%20subdivision,%20%E2%80%9Ckindergarten%E2%80%9D%20does%20not%20include%20transitional%20kindergarten.\",\"loadedUrl\":\"https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=60810&lawCode=EDC#:~:text=(3)%C2%A0For%20purposes%20of%20this%20subdivision,%20%E2%80%9Ckindergarten%E2%80%9D%20does%20not%20include%20transitional%20kindergarten.\",\"uniqueKey\":\"https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=EDC&sectionNum=60810\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:57.231Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=EDC&sectionNum=60810",
-	"url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=60810&lawCode=EDC#:~:text=(3)%C2%A0For%20purposes%20of%20this%20subdivision,%20%E2%80%9Ckindergarten%E2%80%9D%20does%20not%20include%20transitional%20kindergarten."
-}

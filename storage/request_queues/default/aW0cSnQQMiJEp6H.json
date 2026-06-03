@@ -1,9 +1,0 @@
-{
-	"id": "aW0cSnQQMiJEp6H",
-	"json": "{\"id\":\"aW0cSnQQMiJEp6H\",\"url\":\"https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202320240SB1329\",\"loadedUrl\":\"https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202320240SB1329\",\"uniqueKey\":\"https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202320240SB1329\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:51.025Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202320240SB1329",
-	"url": "https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202320240SB1329"
-}

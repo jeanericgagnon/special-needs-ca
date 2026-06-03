@@ -19,6 +19,10 @@ interface Advocate {
   phone: string;
   email: string;
   website: string;
+  specialties?: string | null;
+  regional_center_vendorized?: number;
+  organization_affiliation?: string | null;
+  description?: string | null;
 }
 
 interface AdvocateDirectoryClientProps {
@@ -59,9 +63,19 @@ export default function AdvocateDirectoryClient({ initialAdvocates }: AdvocateDi
   const [searchQuery, setSearchQuery] = useState('');
   const [sortBy, setSortBy] = useState<'experience' | 'price_asc' | 'price_desc' | 'default'>('default');
   
+  // Advanced filters state
+  const [selectedSpecialties, setSelectedSpecialties] = useState<string[]>([]);
+  const [vendorizedOnly, setVendorizedOnly] = useState(false);
+  const [selectedAffiliation, setSelectedAffiliation] = useState('');
+
   // Accordion toggle states
   const [expandedReviewsId, setExpandedReviewsId] = useState<string | null>(null);
   const [expandedIntakeId, setExpandedIntakeId] = useState<string | null>(null);
+  const [expandedDescIds, setExpandedDescIds] = useState<Record<string, boolean>>({});
+
+  const toggleDescription = (id: string) => {
+    setExpandedDescIds(prev => ({ ...prev, [id]: !prev[id] }));
+  };
 
   // Intake Form parameters (shared/mapped for rendering)
   const [intakeChildName, setIntakeChildName] = useState('Liam');
@@ -69,14 +83,80 @@ export default function AdvocateDirectoryClient({ initialAdvocates }: AdvocateDi
   const [intakeDistrict, setIntakeDistrict] = useState('Los Angeles Unified');
   const [intakeGoal, setIntakeGoal] = useState('Request 1:1 behavioral aide safety supervision');
 
+  // Available specialties for filtering
+  const ALL_SPECIALTIES = [
+    'Autism',
+    'Down Syndrome',
+    'Hearing Loss',
+    'Vision Impairment',
+    'ADHD',
+    'Learning Disabilities',
+    'Speech & Language',
+    'Behavioral Needs',
+    'Cerebral Palsy',
+    'Epilepsy',
+    'Spina Bifida',
+    'Muscular Dystrophy',
+    'Intellectual Disability',
+    'Emotional Disturbance',
+    'Orthopedic Impairment',
+    'Deaf-Blindness',
+    'Other Health Impairment',
+    'Multiple Disabilities',
+    'General Advocacy'
+  ];
+
+  // Dynamically compute unique organization affiliations present in the loaded dataset
+  const availableAffiliations = Array.from(
+    new Set(
+      initialAdvocates
+        .map(a => a.organization_affiliation)
+        .filter((aff): aff is string => typeof aff === 'string' && aff !== 'Independent Practice')
+    )
+  ).sort();
+
+  const toggleSpecialty = (spec: string) => {
+    setSelectedSpecialties(prev => 
+      prev.includes(spec) ? prev.filter(s => s !== spec) : [...prev, spec]
+    );
+  };
+
   const filteredAdvocates = initialAdvocates.filter(adv => {
+    // 1. Search text query
     const q = searchQuery.toLowerCase();
-    return (
+    const matchesSearch = 
       adv.name.toLowerCase().includes(q) ||
       adv.credentials.toLowerCase().includes(q) ||
       adv.languages_spoken.toLowerCase().includes(q) ||
-      adv.counties_served.toLowerCase().includes(q)
-    );
+      adv.counties_served.toLowerCase().includes(q) ||
+      (adv.description && adv.description.toLowerCase().includes(q));
+      
+    if (!matchesSearch) return false;
+
+    // 2. Specialties (AND logic for Down Syndrome AND Hearing Loss, etc.)
+    if (selectedSpecialties.length > 0) {
+      const advSpecs = adv.specialties ? adv.specialties.split(',').map(s => s.trim()) : [];
+      const matchesAllSpecialties = selectedSpecialties.every(spec => advSpecs.includes(spec));
+      if (!matchesAllSpecialties) return false;
+    }
+
+    // 3. Regional Center vendorization
+    if (vendorizedOnly && adv.regional_center_vendorized !== 1) {
+      return false;
+    }
+
+    // 4. Organization affiliation
+    if (selectedAffiliation) {
+      if (selectedAffiliation === 'any_affiliated') {
+        if (!adv.organization_affiliation || adv.organization_affiliation === 'Independent Practice') {
+          return false;
+        }
+      } else if (adv.organization_affiliation !== selectedAffiliation) {
+        return false;
+      }
+    }
+
+    return true;
   });
 
   const getNumericPrice = (rateString: string) => {
@@ -130,53 +210,172 @@ Best regards,
           background: 'rgba(255, 255, 255, 0.75)',
           marginBottom: '2rem',
           display: 'flex',
-          flexWrap: 'wrap',
+          flexDirection: 'column',
           gap: '1.25rem',
-          alignItems: 'center',
-          justifyContent: 'space-between',
           boxShadow: '0 4px 15px rgba(0,0,0,0.01)'
         }}
       >
-        <div style={{ display: 'flex', flex: '1', minWidth: '280px', position: 'relative' }}>
-          <Search size={18} color="var(--text-light)" style={{ position: 'absolute', left: '1rem', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none' }} />
-          <input
-            type="text"
-            placeholder="Search advocates by name, credentials, language..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            style={{
-              padding: '0.65rem 1rem 0.65rem 2.5rem',
-              fontSize: '0.92rem',
-              borderRadius: '10px',
-              border: '1px solid rgba(0, 0, 0, 0.08)'
-            }}
-          />
+        {/* Row 1: Search, Sort and Add Advocate */}
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1.25rem', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
+          <div style={{ display: 'flex', flex: '1', minWidth: '280px', position: 'relative' }}>
+            <Search size={18} color="var(--text-light)" style={{ position: 'absolute', left: '1rem', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none' }} />
+            <input
+              type="text"
+              placeholder="Search advocates by name, credentials, language..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              style={{
+                padding: '0.65rem 1rem 0.65rem 2.5rem',
+                fontSize: '0.92rem',
+                borderRadius: '10px',
+                border: '1px solid rgba(0, 0, 0, 0.08)'
+              }}
+            />
+          </div>
+
+          <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-light)' }}>
+              <SlidersHorizontal size={14} />
+              Sort By:
+            </div>
+            
+            <select
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value as 'experience' | 'price_asc' | 'price_desc' | 'default')}
+              style={{
+                padding: '0.5rem 2rem 0.5rem 1rem',
+                fontSize: '0.85rem',
+                borderRadius: '8px',
+                width: 'auto',
+                border: '1px solid rgba(0, 0, 0, 0.08)'
+              }}
+            >
+              <option value="default">Default Match</option>
+              <option value="experience">Most Experienced (Years)</option>
+              <option value="price_asc">Price: Low to High</option>
+              <option value="price_desc">Price: High to Low</option>
+            </select>
+
+            <ContributionModal suggestionType="advocate" targetId={null} buttonLabel="Add New Advocate" />
+          </div>
         </div>
 
-        <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', flexWrap: 'wrap' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-light)' }}>
-            <SlidersHorizontal size={14} />
-            Sort By:
+        {/* Divider */}
+        <div style={{ height: '1px', backgroundColor: 'rgba(0,0,0,0.06)', width: '100%' }} />
+
+        {/* Row 2: Specialty Selector Tag Pills */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', width: '100%' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem' }}>
+            <span style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-main)' }}>
+              Filter by Specialty Focus (select multiple to find specialists in both):
+            </span>
+            {selectedSpecialties.length > 0 && (
+              <button 
+                onClick={() => setSelectedSpecialties([])}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  color: 'var(--primary-color)',
+                  fontSize: '0.78rem',
+                  fontWeight: 600,
+                  cursor: 'pointer',
+                  padding: 0
+                }}
+              >
+                Clear Specialties ({selectedSpecialties.length})
+              </button>
+            )}
           </div>
           
-          <select
-            value={sortBy}
-            onChange={(e) => setSortBy(e.target.value as 'experience' | 'price_asc' | 'price_desc' | 'default')}
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
+            {ALL_SPECIALTIES.map(spec => {
+              const isSelected = selectedSpecialties.includes(spec);
+              return (
+                <button
+                  key={spec}
+                  onClick={() => toggleSpecialty(spec)}
+                  style={{
+                    padding: '0.35rem 0.75rem',
+                    borderRadius: '20px',
+                    fontSize: '0.78rem',
+                    fontWeight: 600,
+                    cursor: 'pointer',
+                    transition: 'all 0.15s ease',
+                    border: isSelected ? '1px solid transparent' : '1px solid rgba(0, 0, 0, 0.08)',
+                    background: isSelected ? 'var(--accent-gradient)' : 'rgba(0,0,0,0.02)',
+                    color: isSelected ? 'white' : 'var(--text-light)',
+                    boxShadow: isSelected ? '0 2px 8px rgba(99, 102, 241, 0.2)' : 'none'
+                  }}
+                >
+                  {spec} {isSelected && '✓'}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Divider */}
+        <div style={{ height: '1px', backgroundColor: 'rgba(0,0,0,0.06)', width: '100%' }} />
+
+        {/* Row 3: Health Provider / Vendorization Filters */}
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem', alignItems: 'center', width: '100%' }}>
+          <button
+            onClick={() => setVendorizedOnly(!vendorizedOnly)}
             style={{
-              padding: '0.5rem 2rem 0.5rem 1rem',
-              fontSize: '0.85rem',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              padding: '0.4rem 0.8rem',
               borderRadius: '8px',
-              width: 'auto',
-              border: '1px solid rgba(0, 0, 0, 0.08)'
+              fontSize: '0.82rem',
+              fontWeight: 600,
+              cursor: 'pointer',
+              border: vendorizedOnly ? '1px solid #10b981' : '1px solid rgba(0, 0, 0, 0.08)',
+              background: vendorizedOnly ? '#ecfdf5' : 'rgba(0,0,0,0.02)',
+              color: vendorizedOnly ? '#047857' : 'var(--text-light)',
+              transition: 'all 0.15s ease'
             }}
           >
-            <option value="default">Default Match</option>
-            <option value="experience">Most Experienced (Years)</option>
-            <option value="price_asc">Price: Low to High</option>
-            <option value="price_desc">Price: High to Low</option>
-          </select>
+            <span style={{ 
+              width: '12px', 
+              height: '12px', 
+              borderRadius: '3px', 
+              border: vendorizedOnly ? 'none' : '1px solid rgba(0,0,0,0.2)',
+              backgroundColor: vendorizedOnly ? '#10b981' : 'transparent',
+              display: 'inline-flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              color: 'white',
+              fontSize: '8px',
+              fontWeight: 'bold'
+            }}>
+              {vendorizedOnly && '✓'}
+            </span>
+            Regional Center Vendored Only
+          </button>
 
-          <ContributionModal suggestionType="advocate" targetId={null} buttonLabel="Add New Advocate" />
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <span style={{ fontSize: '0.82rem', fontWeight: 600, color: 'var(--text-light)' }}>
+              Health Provider / Hospital Network:
+            </span>
+            <select
+              value={selectedAffiliation}
+              onChange={(e) => setSelectedAffiliation(e.target.value)}
+              style={{
+                padding: '0.4rem 1.5rem 0.4rem 0.75rem',
+                fontSize: '0.82rem',
+                borderRadius: '8px',
+                width: 'auto',
+                border: '1px solid rgba(0, 0, 0, 0.08)'
+              }}
+            >
+              <option value="">-- All Networks --</option>
+              <option value="any_affiliated">Any Hospital / Agency Affiliation</option>
+              {availableAffiliations.map(aff => (
+                <option key={aff} value={aff}>{aff}</option>
+              ))}
+            </select>
+          </div>
         </div>
       </div>
 
@@ -271,6 +470,109 @@ Best regards,
                     <ContributionModal suggestionType="advocate" targetId={adv.id} targetName={adv.name} buttonLabel="Suggest Update" />
                   </div>
                 </div>
+
+                {/* Specialty Tags & Affiliation Badges */}
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', alignItems: 'center', marginTop: '-0.25rem' }}>
+                  {/* Regional Center Vendorized Badge */}
+                  {adv.regional_center_vendorized === 1 && (
+                    <span 
+                      style={{ 
+                        display: 'inline-flex', 
+                        alignItems: 'center', 
+                        gap: '0.3rem',
+                        padding: '0.25rem 0.65rem', 
+                        borderRadius: '999px', 
+                        backgroundColor: '#ecfdf5', 
+                        color: '#047857', 
+                        border: '1px solid #a7f3d0',
+                        fontSize: '0.74rem',
+                        fontWeight: 600
+                      }}
+                    >
+                      <span style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#10b981' }} />
+                      Regional Center Vendored
+                    </span>
+                  )}
+                  
+                  {/* Organization Affiliation Badge */}
+                  {adv.organization_affiliation && adv.organization_affiliation !== 'Independent Practice' && (
+                    <span 
+                      style={{ 
+                        display: 'inline-flex', 
+                        alignItems: 'center', 
+                        gap: '0.3rem',
+                        padding: '0.25rem 0.65rem', 
+                        borderRadius: '999px', 
+                        backgroundColor: '#eff6ff', 
+                        color: '#1d4ed8', 
+                        border: '1px solid #bfdbfe',
+                        fontSize: '0.74rem',
+                        fontWeight: 600
+                      }}
+                    >
+                      🏥 {adv.organization_affiliation}
+                    </span>
+                  )}
+
+                  {/* Specialties tags */}
+                  {adv.specialties && adv.specialties.split(',').map(spec => spec.trim()).filter(Boolean).map((spec, i) => (
+                    <span 
+                      key={i} 
+                      style={{ 
+                        padding: '0.2rem 0.55rem', 
+                        borderRadius: '6px', 
+                        backgroundColor: 'rgba(99, 102, 241, 0.08)', 
+                        color: '#4f46e5', 
+                        border: '1px solid rgba(99, 102, 241, 0.15)',
+                        fontSize: '0.74rem',
+                        fontWeight: 500
+                      }}
+                    >
+                      {spec}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Collapsible Glassmorphic Description/Bio Section */}
+                {adv.description && (
+                  <div 
+                    style={{ 
+                      padding: '1rem 1.25rem', 
+                      borderRadius: '16px', 
+                      background: 'rgba(255, 255, 255, 0.4)',
+                      border: '1px solid rgba(255, 255, 255, 0.6)',
+                      backdropFilter: 'blur(10px)',
+                      boxShadow: 'inset 0 1px 1px rgba(255,255,255,0.2)',
+                      fontSize: '0.88rem',
+                      lineHeight: 1.5,
+                      color: 'var(--text-light)',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '0.25rem'
+                    }}
+                  >
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', cursor: 'pointer' }} onClick={() => toggleDescription(adv.id)}>
+                      <span style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--primary-color)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+                        About / Professional Bio
+                      </span>
+                      <button style={{ background: 'none', border: 'none', color: 'var(--primary-color)', fontSize: '0.8rem', fontWeight: 600, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.2rem' }}>
+                        {expandedDescIds[adv.id] ? 'Show Less' : 'Show More'}
+                        {expandedDescIds[adv.id] ? <ChevronUp size={12} /> : <ChevronDown size={12} />}
+                      </button>
+                    </div>
+                    <p style={{ 
+                      margin: 0, 
+                      color: 'var(--text-main)', 
+                      overflow: 'hidden', 
+                      display: '-webkit-box', 
+                      WebkitLineClamp: expandedDescIds[adv.id] ? 'unset' : 2, 
+                      WebkitBoxOrient: 'vertical',
+                      transition: 'all 0.3s ease'
+                    }}>
+                      {adv.description}
+                    </p>
+                  </div>
+                )}
 
                 {/* 2. Demographic specifications grid */}
                 <div 

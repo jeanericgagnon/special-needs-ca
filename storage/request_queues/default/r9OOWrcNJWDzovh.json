@@ -1,9 +1,0 @@
-{
-	"id": "r9OOWrcNJWDzovh",
-	"json": "{\"id\":\"r9OOWrcNJWDzovh\",\"url\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/LandCProgramHome.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/LandCProgramHome.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/LandCProgramHome.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:05.343Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/LandCProgramHome.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/LandCProgramHome.aspx"
-}

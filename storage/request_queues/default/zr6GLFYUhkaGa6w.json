@@ -1,9 +1,0 @@
-{
-	"id": "zr6GLFYUhkaGa6w",
-	"json": "{\"id\":\"zr6GLFYUhkaGa6w\",\"url\":\"https://www.cde.ca.gov/re/di/ws/webpolicy.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/re/di/ws/webpolicy.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/re/di/ws/webpolicy.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:06.227Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/re/di/ws/webpolicy.asp",
-	"url": "https://www.cde.ca.gov/re/di/ws/webpolicy.asp"
-}

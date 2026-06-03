@@ -1,9 +1,0 @@
-{
-	"id": "3JSYCrxRcXtLQsT",
-	"json": "{\"id\":\"3JSYCrxRcXtLQsT\",\"url\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/CalHealthFind/Pages/FacilityDetailPopup.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/CalHealthFind/Pages/FacilityDetailPopup.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/CalHealthFind/Pages/FacilityDetailPopup.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:01:54.698Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CHCQ/LCP/CalHealthFind/Pages/FacilityDetailPopup.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CHCQ/LCP/CalHealthFind/Pages/FacilityDetailPopup.aspx"
-}

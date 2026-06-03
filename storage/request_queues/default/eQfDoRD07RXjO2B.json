@@ -1,9 +1,0 @@
-{
-	"id": "eQfDoRD07RXjO2B",
-	"json": "{\"id\":\"eQfDoRD07RXjO2B\",\"url\":\"https://www.cde.ca.gov/sp/ml/rmresources.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/ml/rmresources.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/ml/rmresources.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:12.152Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/sp/ml/rmresources.asp",
-	"url": "https://www.cde.ca.gov/sp/ml/rmresources.asp"
-}

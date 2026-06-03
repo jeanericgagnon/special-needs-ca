@@ -1,9 +1,0 @@
-{
-	"id": "WiDIhO0Ls3DwrxQ",
-	"json": "{\"id\":\"WiDIhO0Ls3DwrxQ\",\"url\":\"https://redwoodseed.ucdavis.edu/admissions\",\"loadedUrl\":\"https://redwoodseed.ucdavis.edu/admissions\",\"uniqueKey\":\"https://redwoodseed.ucdavis.edu/admissions\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:05:26.362Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://redwoodseed.ucdavis.edu/admissions",
-	"url": "https://redwoodseed.ucdavis.edu/admissions"
-}

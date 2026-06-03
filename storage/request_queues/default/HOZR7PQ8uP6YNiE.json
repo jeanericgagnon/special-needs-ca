@@ -1,9 +1,0 @@
-{
-	"id": "HOZR7PQ8uP6YNiE",
-	"json": "{\"id\":\"HOZR7PQ8uP6YNiE\",\"url\":\"https://www.cde.ca.gov/ci/rl/im/elaeldfupbulletin1.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/rl/im/elaeldfupbulletin1.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/rl/im/elaeldfupbulletin1.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:58.969Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ci/rl/im/elaeldfupbulletin1.asp",
-	"url": "https://www.cde.ca.gov/ci/rl/im/elaeldfupbulletin1.asp"
-}

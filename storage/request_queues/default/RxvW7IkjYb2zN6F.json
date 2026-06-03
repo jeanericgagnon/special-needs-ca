@@ -1,9 +1,0 @@
-{
-	"id": "RxvW7IkjYb2zN6F",
-	"json": "{\"id\":\"RxvW7IkjYb2zN6F\",\"url\":\"https://neuroscience.ucdavis.edu/people/randi-hagerman\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/people/randi-hagerman\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/people/randi-hagerman\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:48.816Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/people/randi-hagerman",
-	"url": "https://neuroscience.ucdavis.edu/people/randi-hagerman"
-}

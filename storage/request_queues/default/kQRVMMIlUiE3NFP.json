@@ -1,9 +1,0 @@
-{
-	"id": "kQRVMMIlUiE3NFP",
-	"json": "{\"id\":\"kQRVMMIlUiE3NFP\",\"url\":\"https://www.cdss.ca.gov/benefits-services/more-services/immigration-services/immigration-legal-service-providers\",\"loadedUrl\":\"https://www.cdss.ca.gov/benefits-services/more-services/immigration-services/immigration-legal-service-providers\",\"uniqueKey\":\"https://www.cdss.ca.gov/benefits-services/more-services/immigration-services/immigration-legal-service-providers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:58.442Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/benefits-services/more-services/immigration-services/immigration-legal-service-providers",
-	"url": "https://www.cdss.ca.gov/benefits-services/more-services/immigration-services/immigration-legal-service-providers"
-}

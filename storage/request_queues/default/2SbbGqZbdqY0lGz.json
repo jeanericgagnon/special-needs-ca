@@ -1,9 +1,0 @@
-{
-	"id": "2SbbGqZbdqY0lGz",
-	"json": "{\"id\":\"2SbbGqZbdqY0lGz\",\"url\":\"https://www.cdph.ca.gov/Programs/cls/idld/mdl/_layouts/15/listform.aspx?ListId=%7BA52F3758%2DBBC5%2D45A0%2DA2BF%2DF50075768819%7D&PageType=0\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/cls/idld/mdl/\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/cls/idld/mdl/_layouts/15/listform.aspx?ListId=%7BA52F3758-BBC5-45A0-A2BF-F50075768819%7D&PageType=0\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:51:35.325Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/cls/idld/mdl/_layouts/15/listform.aspx?ListId=%7BA52F3758-BBC5-45A0-A2BF-F50075768819%7D&PageType=0",
-	"url": "https://www.cdph.ca.gov/Programs/cls/idld/mdl/_layouts/15/listform.aspx?ListId=%7BA52F3758%2DBBC5%2D45A0%2DA2BF%2DF50075768819%7D&PageType=0"
-}

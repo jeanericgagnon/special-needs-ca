@@ -1,9 +1,0 @@
-{
-	"id": "WKZ2qySIfeuoMFN",
-	"json": "{\"id\":\"WKZ2qySIfeuoMFN\",\"url\":\"https://academicaffairs.ucdavis.edu/work-life\",\"loadedUrl\":\"https://academicaffairs.ucdavis.edu/work-life\",\"uniqueKey\":\"https://academicaffairs.ucdavis.edu/work-life\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:16.003Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://academicaffairs.ucdavis.edu/work-life",
-	"url": "https://academicaffairs.ucdavis.edu/work-life"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "yQWrv71qAYPg7fD",
-	"json": "{\"id\":\"yQWrv71qAYPg7fD\",\"url\":\"https://health.ucdavis.edu/family-caregiving/education/innovations-summit\",\"loadedUrl\":\"https://health.ucdavis.edu/family-caregiving/education/innovations-summit\",\"uniqueKey\":\"https://health.ucdavis.edu/family-caregiving/education/innovations-summit\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:22.094Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/family-caregiving/education/innovations-summit",
-	"url": "https://health.ucdavis.edu/family-caregiving/education/innovations-summit"
-}

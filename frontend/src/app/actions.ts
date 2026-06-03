@@ -1,7 +1,8 @@
 'use server'
 
-import { getProgramsByKeywords, getMatchedCorePrograms, Program, CoreProgramMatch } from '@/lib/db';
+import { getProgramsByKeywords, getMatchedCorePrograms, getCountyDetails, Program, CoreProgramMatch } from '@/lib/db';
 import { hasNonNegatedKeyword } from '@/lib/negation';
+import { DIAGNOSES_DETAILS } from '@/lib/diagnoses';
 
 export interface Refiners {
   insuranceExcludesHearing?: boolean;
@@ -16,6 +17,10 @@ export interface AnalysisResult {
   explanations: string[];
   detectedNeeds: string[];
   detectedConditions: string[];
+}
+
+export async function fetchCountyDetailsAction(countyId: string) {
+  return getCountyDetails(countyId);
 }
 
 export async function fetchBenefits(age: number, diagnosis: string): Promise<Program[]> {
@@ -42,24 +47,37 @@ export async function analyzeOnboarding(
   const detectedConditionNames: string[] = [];
   const explanations: string[] = [];
 
-  // 1. Map Diagnosis to relational conditions
-  if (lowerDiag.includes('autism') || lowerDiag.includes('asd') || lowerDiag.includes('asperger')) {
-    detectedConditionIds.push('autism');
-    detectedConditionNames.push('Autism Spectrum Disorder');
-    explanations.push('California Regional Centers prioritize Autism as a primary developmental qualifying condition under the Lanterman Act.');
-  }
-  if (lowerDiag.includes('down') || lowerDiag.includes('trisomy 21') || lowerDiag.includes('down syndrome')) {
-    detectedConditionIds.push('down-syndrome');
-    detectedConditionNames.push('Down Syndrome');
-    explanations.push('Down Syndrome qualifies automatically for childhood SSI medical listings and coordinates with CCS for cardiac/audiology specialists.');
-  }
-  if (lowerDiag.includes('hearing') || lowerDiag.includes('deaf')) {
-    detectedConditionIds.push('hearing-loss');
-    detectedConditionNames.push('Hearing Loss');
-  }
-  if (lowerDiag.includes('vision') || lowerDiag.includes('blind') || lowerDiag.includes('cvi')) {
-    detectedConditionIds.push('vision-impairment');
-    detectedConditionNames.push('Vision Impairment');
+  // 1. Map Diagnosis to relational conditions dynamically across all 78 taxonomy conditions
+  for (const cond of DIAGNOSES_DETAILS) {
+    const condName = cond.name.toLowerCase();
+    const condId = cond.id;
+    const condAliases = cond.aliases.toLowerCase().split(',').map(a => a.trim());
+
+    let matches = false;
+    if (lowerDiag.includes(condName) || condName.includes(lowerDiag)) {
+      matches = true;
+    } else if (lowerDiag.includes(condId) || condId.includes(lowerDiag)) {
+      matches = true;
+    } else {
+      for (const alias of condAliases) {
+        if (alias && (lowerDiag.includes(alias) || alias.includes(lowerDiag))) {
+          matches = true;
+          break;
+        }
+      }
+    }
+
+    if (matches) {
+      detectedConditionIds.push(cond.id);
+      detectedConditionNames.push(cond.name);
+
+      if (cond.regional_center_relevance === 1) {
+        explanations.push(`California Regional Centers prioritize ${cond.name} as a qualifying condition under the Lanterman Act.`);
+      }
+      if (cond.ccs_relevance === 1) {
+        explanations.push(`${cond.name} is medically eligible for California Children's Services (CCS) therapy and specialized care.`);
+      }
+    }
   }
 
   // 2. Scan additional text & refiners for functional needs keywords
@@ -116,7 +134,7 @@ export async function analyzeOnboarding(
   ) {
     detectedNeedIds.push('hearing-aids');
     detectedNeedNames.push('Hearing Aids');
-    detectedConditionIds.push('hearing-loss');
+    detectedConditionIds.push('hearing-loss-deafness');
     if (refiners?.insuranceExcludesHearing === true) {
       explanations.push('Since your private insurance excludes hearing aid coverage, you trigger the CA HACCP Waiver which funds device fitting costs for children up to 600% FPL.');
     } else {
@@ -134,7 +152,7 @@ export async function analyzeOnboarding(
   ) {
     detectedNeedIds.push('vision-services');
     detectedNeedNames.push('Vision Services');
-    detectedConditionIds.push('vision-impairment');
+    detectedConditionIds.push('visual-impairment-blindness');
     explanations.push('Vision delays qualify for CDE Specialized Teachers (TVI) and Orientation & Mobility assessments in schools.');
   }
 

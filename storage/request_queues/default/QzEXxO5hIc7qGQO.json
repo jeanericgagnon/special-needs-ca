@@ -1,9 +1,0 @@
-{
-	"id": "QzEXxO5hIc7qGQO",
-	"json": "{\"id\":\"QzEXxO5hIc7qGQO\",\"url\":\"https://neuroscience.ucdavis.edu/people/ethan-fenton\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/people/ethan-fenton\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/people/ethan-fenton\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:42.530Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/people/ethan-fenton",
-	"url": "https://neuroscience.ucdavis.edu/people/ethan-fenton"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "mGqKI6QTcDpAoFQ",
-	"json": "{\"id\":\"mGqKI6QTcDpAoFQ\",\"url\":\"https://health.ucdavis.edu/mind-institute/resources/understanding-adhd/adhd-cam-treatments\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/resources/understanding-adhd/adhd-cam-treatments\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/resources/understanding-adhd/adhd-cam-treatments\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:49.444Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mind-institute/resources/understanding-adhd/adhd-cam-treatments",
-	"url": "https://health.ucdavis.edu/mind-institute/resources/understanding-adhd/adhd-cam-treatments"
-}

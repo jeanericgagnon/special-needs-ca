@@ -1,9 +1,0 @@
-{
-	"id": "48YjZOuFLW5RPSo",
-	"json": "{\"id\":\"48YjZOuFLW5RPSo\",\"url\":\"https://www.ctc.ca.gov/program-sponsors/prep-programs/lri/webinar-resources/\",\"loadedUrl\":\"https://www.ctc.ca.gov/program-sponsors/prep-programs/lri/webinar-resources/\",\"uniqueKey\":\"https://www.ctc.ca.gov/program-sponsors/prep-programs/lri/webinar-resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:28.939Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ctc.ca.gov/program-sponsors/prep-programs/lri/webinar-resources",
-	"url": "https://www.ctc.ca.gov/program-sponsors/prep-programs/lri/webinar-resources/"
-}

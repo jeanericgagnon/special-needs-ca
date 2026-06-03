@@ -1,9 +1,0 @@
-{
-	"id": "AVne7TtKb1TSAaV",
-	"json": "{\"id\":\"AVne7TtKb1TSAaV\",\"url\":\"https://www.vetmed.ucdavis.edu/research/student-research/cmstp\",\"loadedUrl\":\"https://www.vetmed.ucdavis.edu/research/student-research/cmstp\",\"uniqueKey\":\"https://www.vetmed.ucdavis.edu/research/student-research/cmstp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:21.302Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.vetmed.ucdavis.edu/research/student-research/cmstp",
-	"url": "https://www.vetmed.ucdavis.edu/research/student-research/cmstp"
-}

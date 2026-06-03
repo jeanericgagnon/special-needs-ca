@@ -1,9 +1,0 @@
-{
-	"id": "CThfRZ94YLK5cS3",
-	"json": "{\"id\":\"CThfRZ94YLK5cS3\",\"url\":\"https://www.dds.ca.gov/rc/vendor-provider/rate-changes/rate-changes-due-to-ab-1522-employee-sick-leave/\",\"loadedUrl\":\"https://www.dds.ca.gov/rc/vendor-provider/rate-changes/rate-changes-due-to-ab-1522-employee-sick-leave/\",\"uniqueKey\":\"https://www.dds.ca.gov/rc/vendor-provider/rate-changes/rate-changes-due-to-ab-1522-employee-sick-leave\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:41.276Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/rc/vendor-provider/rate-changes/rate-changes-due-to-ab-1522-employee-sick-leave",
-	"url": "https://www.dds.ca.gov/rc/vendor-provider/rate-changes/rate-changes-due-to-ab-1522-employee-sick-leave/"
-}

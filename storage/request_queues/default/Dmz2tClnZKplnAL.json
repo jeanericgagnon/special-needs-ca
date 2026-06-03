@@ -1,9 +1,0 @@
-{
-	"id": "Dmz2tClnZKplnAL",
-	"json": "{\"id\":\"Dmz2tClnZKplnAL\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/RPPC/Pages/RPPC-RFA-2025-Addendum-1.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/RPPC/Pages/RPPC-RFA-2025-Addendum-1.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/RPPC/Pages/RPPC-RFA-2025-Addendum-1.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:01:35.710Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/RPPC/Pages/RPPC-RFA-2025-Addendum-1.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/RPPC/Pages/RPPC-RFA-2025-Addendum-1.aspx"
-}

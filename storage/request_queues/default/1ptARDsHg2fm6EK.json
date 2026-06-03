@@ -1,9 +1,0 @@
-{
-	"id": "1ptARDsHg2fm6EK",
-	"json": "{\"id\":\"1ptARDsHg2fm6EK\",\"url\":\"https://training.ctc.ca.gov/Modules/CalSAASTraining/\",\"loadedUrl\":\"https://training.ctc.ca.gov/Modules/CalSAASTraining/\",\"uniqueKey\":\"https://training.ctc.ca.gov/Modules/CalSAASTraining\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:22:40.464Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://training.ctc.ca.gov/Modules/CalSAASTraining",
-	"url": "https://training.ctc.ca.gov/Modules/CalSAASTraining/"
-}

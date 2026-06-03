@@ -1,9 +1,0 @@
-{
-	"id": "EDpnifB9PXgIHun",
-	"json": "{\"id\":\"EDpnifB9PXgIHun\",\"url\":\"https://www.grants.ca.gov/?s&grant_categories_search%5B%5D=agriculture\",\"loadedUrl\":\"https://www.grants.ca.gov/?s&grant_categories_search%5B%5D=agriculture\",\"uniqueKey\":\"https://www.grants.ca.gov?grant_categories_search%5B%5D=agriculture&s=\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:54.418Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.grants.ca.gov?grant_categories_search%5B%5D=agriculture&s=",
-	"url": "https://www.grants.ca.gov/?s&grant_categories_search%5B%5D=agriculture"
-}

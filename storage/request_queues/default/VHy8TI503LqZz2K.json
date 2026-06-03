@@ -1,9 +1,0 @@
-{
-	"id": "VHy8TI503LqZz2K",
-	"json": "{\"id\":\"VHy8TI503LqZz2K\",\"url\":\"https://excellence.ucdavis.edu/idare\",\"loadedUrl\":\"https://excellence.ucdavis.edu/idare\",\"uniqueKey\":\"https://excellence.ucdavis.edu/idare\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:35.553Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://excellence.ucdavis.edu/idare",
-	"url": "https://excellence.ucdavis.edu/idare"
-}

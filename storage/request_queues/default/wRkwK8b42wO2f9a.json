@@ -1,9 +1,0 @@
-{
-	"id": "wRkwK8b42wO2f9a",
-	"json": "{\"id\":\"wRkwK8b42wO2f9a\",\"url\":\"https://health.ucdavis.edu/academic-personnel/\",\"loadedUrl\":\"https://health.ucdavis.edu/academic-personnel/\",\"uniqueKey\":\"https://health.ucdavis.edu/academic-personnel\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:03.882Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/academic-personnel",
-	"url": "https://health.ucdavis.edu/academic-personnel/"
-}

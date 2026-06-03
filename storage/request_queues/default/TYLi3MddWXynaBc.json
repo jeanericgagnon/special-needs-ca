@@ -1,9 +1,0 @@
-{
-	"id": "TYLi3MddWXynaBc",
-	"json": "{\"id\":\"TYLi3MddWXynaBc\",\"url\":\"https://educator.ctc.ca.gov/siebel/app/esales/enu?SWECmd=GotoView&SWEView=Login+View&_gl=1*1xl8qff*_ga*Mjc1MTMxODAzLjE3MjY2ODQ4NDk.*_ga_8L1GC3E1C3*MTcyNjc4NTQ3MS41LjAuMTcyNjc4NTQ3MS4wLjAuMA..\",\"loadedUrl\":\"https://educator.ctc.ca.gov/siebel/app/esales/enu?SWECmd=GotoView&SWEView=Login+View&_gl=1*1xl8qff*_ga*Mjc1MTMxODAzLjE3MjY2ODQ4NDk.*_ga_8L1GC3E1C3*MTcyNjc4NTQ3MS41LjAuMTcyNjc4NTQ3MS4wLjAuMA..\",\"uniqueKey\":\"https://educator.ctc.ca.gov/siebel/app/esales/enu?SWECmd=GotoView&SWEView=Login+View&_gl=1*1xl8qff*_ga*Mjc1MTMxODAzLjE3MjY2ODQ4NDk.*_ga_8L1GC3E1C3*MTcyNjc4NTQ3MS41LjAuMTcyNjc4NTQ3MS4wLjAuMA..\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:21.480Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://educator.ctc.ca.gov/siebel/app/esales/enu?SWECmd=GotoView&SWEView=Login+View&_gl=1*1xl8qff*_ga*Mjc1MTMxODAzLjE3MjY2ODQ4NDk.*_ga_8L1GC3E1C3*MTcyNjc4NTQ3MS41LjAuMTcyNjc4NTQ3MS4wLjAuMA..",
-	"url": "https://educator.ctc.ca.gov/siebel/app/esales/enu?SWECmd=GotoView&SWEView=Login+View&_gl=1*1xl8qff*_ga*Mjc1MTMxODAzLjE3MjY2ODQ4NDk.*_ga_8L1GC3E1C3*MTcyNjc4NTQ3MS41LjAuMTcyNjc4NTQ3MS4wLjAuMA.."
-}

@@ -1,9 +1,0 @@
-{
-	"id": "O93wakL3xBRN2xi",
-	"json": "{\"id\":\"O93wakL3xBRN2xi\",\"url\":\"https://cdss.ca.gov/inforesources/child-care-and-development/equity-centered-qris-advisory-panel\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/child-care-and-development/equity-centered-qris-advisory-panel\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/child-care-and-development/equity-centered-qris-advisory-panel\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:58:50.169Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/child-care-and-development/equity-centered-qris-advisory-panel",
-	"url": "https://cdss.ca.gov/inforesources/child-care-and-development/equity-centered-qris-advisory-panel"
-}

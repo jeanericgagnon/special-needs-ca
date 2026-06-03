@@ -1,9 +1,0 @@
-{
-	"id": "BHkLUNLrMgHyMMh",
-	"json": "{\"id\":\"BHkLUNLrMgHyMMh\",\"url\":\"http://www.dhcs.ca.gov/individuals/Pages/StopMedi-CalFraud.aspx\",\"loadedUrl\":\"https://www.dhcs.ca.gov/individuals/Pages/StopMedi-CalFraud.aspx\",\"uniqueKey\":\"http://www.dhcs.ca.gov/individuals/Pages/StopMedi-CalFraud.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:43.309Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.dhcs.ca.gov/individuals/Pages/StopMedi-CalFraud.aspx",
-	"url": "http://www.dhcs.ca.gov/individuals/Pages/StopMedi-CalFraud.aspx"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "9a6B1WeyDcc79nU",
-	"json": "{\"id\":\"9a6B1WeyDcc79nU\",\"url\":\"https://rarediseases.org/organizations/pericarditis-alliance/\",\"loadedUrl\":\"https://rarediseases.org/organizations/pericarditis-alliance/\",\"uniqueKey\":\"https://rarediseases.org/organizations/pericarditis-alliance\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:18:58.068Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/organizations/pericarditis-alliance",
-	"url": "https://rarediseases.org/organizations/pericarditis-alliance/"
-}

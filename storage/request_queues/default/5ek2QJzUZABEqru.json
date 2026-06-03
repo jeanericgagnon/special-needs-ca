@@ -1,9 +1,0 @@
-{
-	"id": "5ek2QJzUZABEqru",
-	"json": "{\"id\":\"5ek2QJzUZABEqru\",\"url\":\"https://giving.ucdavis.edu/ways-to-give/student-foundation/contact-student-foundation\",\"loadedUrl\":\"https://giving.ucdavis.edu/ways-to-give/student-foundation/contact-student-foundation\",\"uniqueKey\":\"https://giving.ucdavis.edu/ways-to-give/student-foundation/contact-student-foundation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:31.411Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://giving.ucdavis.edu/ways-to-give/student-foundation/contact-student-foundation",
-	"url": "https://giving.ucdavis.edu/ways-to-give/student-foundation/contact-student-foundation"
-}

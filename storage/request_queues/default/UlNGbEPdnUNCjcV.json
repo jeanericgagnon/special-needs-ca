@@ -1,9 +1,0 @@
-{
-	"id": "UlNGbEPdnUNCjcV",
-	"json": "{\"id\":\"UlNGbEPdnUNCjcV\",\"url\":\"https://frcnca.org/resources-directory/\",\"loadedUrl\":\"https://frcnca.org/resources-directory/\",\"uniqueKey\":\"https://frcnca.org/resources-directory\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:31.868Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://frcnca.org/resources-directory",
-	"url": "https://frcnca.org/resources-directory/"
-}

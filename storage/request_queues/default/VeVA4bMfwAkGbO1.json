@@ -1,9 +1,0 @@
-{
-	"id": "VeVA4bMfwAkGbO1",
-	"json": "{\"id\":\"VeVA4bMfwAkGbO1\",\"url\":\"https://privacy.ca.gov/drop/\",\"loadedUrl\":\"https://privacy.ca.gov/drop/\",\"uniqueKey\":\"https://privacy.ca.gov/drop\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:27.345Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://privacy.ca.gov/drop",
-	"url": "https://privacy.ca.gov/drop/"
-}

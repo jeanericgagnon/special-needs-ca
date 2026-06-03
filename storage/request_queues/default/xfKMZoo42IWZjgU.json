@@ -1,9 +1,0 @@
-{
-	"id": "xfKMZoo42IWZjgU",
-	"json": "{\"id\":\"xfKMZoo42IWZjgU\",\"url\":\"https://rarediseases.org/organizations/american-cancer-society-inc/\",\"loadedUrl\":\"https://rarediseases.org/organizations/american-cancer-society-inc/\",\"uniqueKey\":\"https://rarediseases.org/organizations/american-cancer-society-inc\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:12:45.217Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/organizations/american-cancer-society-inc",
-	"url": "https://rarediseases.org/organizations/american-cancer-society-inc/"
-}

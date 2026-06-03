@@ -1,9 +1,0 @@
-{
-	"id": "zEwqEqkPTDS4Iga",
-	"json": "{\"id\":\"zEwqEqkPTDS4Iga\",\"url\":\"https://hcai.ca.gov/hcai-awards-49-6-million-in-grants-to-support-primary-care-residency-programs/\",\"loadedUrl\":\"https://hcai.ca.gov/hcai-awards-49-6-million-in-grants-to-support-primary-care-residency-programs/\",\"uniqueKey\":\"https://hcai.ca.gov/hcai-awards-49-6-million-in-grants-to-support-primary-care-residency-programs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:38.319Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hcai.ca.gov/hcai-awards-49-6-million-in-grants-to-support-primary-care-residency-programs",
-	"url": "https://hcai.ca.gov/hcai-awards-49-6-million-in-grants-to-support-primary-care-residency-programs/"
-}

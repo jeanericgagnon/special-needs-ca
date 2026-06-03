@@ -1,9 +1,0 @@
-{
-	"id": "lH5Qx5ComUbJ5Om",
-	"json": "{\"id\":\"lH5Qx5ComUbJ5Om\",\"url\":\"https://health.ucdavis.edu/compliance/research/hippa-and-research-beyond-hippa\",\"loadedUrl\":\"https://health.ucdavis.edu/compliance/research/hippa-and-research-beyond-hippa\",\"uniqueKey\":\"https://health.ucdavis.edu/compliance/research/hippa-and-research-beyond-hippa\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:33.641Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/compliance/research/hippa-and-research-beyond-hippa",
-	"url": "https://health.ucdavis.edu/compliance/research/hippa-and-research-beyond-hippa"
-}

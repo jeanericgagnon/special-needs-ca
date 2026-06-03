@@ -1,9 +1,0 @@
-{
-	"id": "Q8yCF9nlxQrfhra",
-	"json": "{\"id\":\"Q8yCF9nlxQrfhra\",\"url\":\"https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-and-guardianship-alternatives/\",\"loadedUrl\":\"https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-and-guardianship-alternatives/\",\"uniqueKey\":\"https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-and-guardianship-alternatives\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:19:30.214Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-and-guardianship-alternatives",
-	"url": "https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-and-guardianship-alternatives/"
-}

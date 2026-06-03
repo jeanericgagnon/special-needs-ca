@@ -1,9 +1,0 @@
-{
-	"id": "BLqlm3RA8IhlmCp",
-	"json": "{\"id\":\"BLqlm3RA8IhlmCp\",\"url\":\"https://health.ucdavis.edu/parking/stacked_parking/index.html\",\"loadedUrl\":\"https://health.ucdavis.edu/parking/stacked_parking/index.html\",\"uniqueKey\":\"https://health.ucdavis.edu/parking/stacked_parking/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:54.153Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/parking/stacked_parking/index.html",
-	"url": "https://health.ucdavis.edu/parking/stacked_parking/index.html"
-}

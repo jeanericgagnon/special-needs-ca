@@ -1,9 +1,0 @@
-{
-	"id": "k4oUf6vJUEnC6of",
-	"json": "{\"id\":\"k4oUf6vJUEnC6of\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/sapb/cannabis/Pages/Cannabis-Use-Disorder.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/sapb/cannabis/Pages/Cannabis-Use-Disorder.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/sapb/cannabis/Pages/Cannabis-Use-Disorder.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:50:15.053Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/sapb/cannabis/Pages/Cannabis-Use-Disorder.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/sapb/cannabis/Pages/Cannabis-Use-Disorder.aspx"
-}

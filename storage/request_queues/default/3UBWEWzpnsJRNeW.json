@@ -1,9 +1,0 @@
-{
-	"id": "3UBWEWzpnsJRNeW",
-	"json": "{\"id\":\"3UBWEWzpnsJRNeW\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CTCB/Pages/30-Years-of-Success-and-Innovation.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CTCB/Pages/30-Years-of-Success-and-Innovation.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CTCB/Pages/30-Years-of-Success-and-Innovation.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:11:37.410Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CTCB/Pages/30-Years-of-Success-and-Innovation.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CTCB/Pages/30-Years-of-Success-and-Innovation.aspx"
-}

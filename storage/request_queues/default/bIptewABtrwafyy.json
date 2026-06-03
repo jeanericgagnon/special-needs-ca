@@ -1,9 +1,0 @@
-{
-	"id": "bIptewABtrwafyy",
-	"json": "{\"id\":\"bIptewABtrwafyy\",\"url\":\"https://hr.ucdavis.edu/departments/elr/layoff/initiation\",\"loadedUrl\":\"https://hr.ucdavis.edu/departments/elr/layoff/initiation\",\"uniqueKey\":\"https://hr.ucdavis.edu/departments/elr/layoff/initiation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:23.762Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/departments/elr/layoff/initiation",
-	"url": "https://hr.ucdavis.edu/departments/elr/layoff/initiation"
-}

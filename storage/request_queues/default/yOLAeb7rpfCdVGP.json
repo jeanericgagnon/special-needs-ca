@@ -1,9 +1,0 @@
-{
-	"id": "yOLAeb7rpfCdVGP",
-	"json": "{\"id\":\"yOLAeb7rpfCdVGP\",\"url\":\"https://myhazards.caloes.ca.gov/\",\"loadedUrl\":\"https://myhazards.caloes.ca.gov/\",\"uniqueKey\":\"https://myhazards.caloes.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:00.133Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://myhazards.caloes.ca.gov",
-	"url": "https://myhazards.caloes.ca.gov/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "tvaP0jQLbn5w6cn",
-	"json": "{\"id\":\"tvaP0jQLbn5w6cn\",\"url\":\"https://www.chhs.ca.gov/blog/tag/california-health-care-foundation/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/tag/california-health-care-foundation/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/tag/california-health-care-foundation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:29.594Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chhs.ca.gov/blog/tag/california-health-care-foundation",
-	"url": "https://www.chhs.ca.gov/blog/tag/california-health-care-foundation/"
-}

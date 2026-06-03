@@ -1,9 +1,0 @@
-{
-	"id": "5UfFmbVYrHwfObW",
-	"json": "{\"id\":\"5UfFmbVYrHwfObW\",\"url\":\"https://hr.ucdavis.edu/experience/progress\",\"loadedUrl\":\"https://hr.ucdavis.edu/experience/progress\",\"uniqueKey\":\"https://hr.ucdavis.edu/experience/progress\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:53.535Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/experience/progress",
-	"url": "https://hr.ucdavis.edu/experience/progress"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "XiPu2OnoPwBNn4r",
-	"json": "{\"id\":\"XiPu2OnoPwBNn4r\",\"url\":\"https://rarediseases.org/organizations/mdds-foundation-mal-de-debarquement-syndrome/\",\"loadedUrl\":\"https://rarediseases.org/organizations/mdds-foundation-mal-de-debarquement-syndrome/\",\"uniqueKey\":\"https://rarediseases.org/organizations/mdds-foundation-mal-de-debarquement-syndrome\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:18:17.344Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/organizations/mdds-foundation-mal-de-debarquement-syndrome",
-	"url": "https://rarediseases.org/organizations/mdds-foundation-mal-de-debarquement-syndrome/"
-}

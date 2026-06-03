@@ -1,9 +1,0 @@
-{
-	"id": "BR3oN5QV982Vgmv",
-	"json": "{\"id\":\"BR3oN5QV982Vgmv\",\"url\":\"https://health.ucdavis.edu/conditions/mens-health/testicular-torsion\",\"loadedUrl\":\"https://health.ucdavis.edu/conditions/mens-health/testicular-torsion\",\"uniqueKey\":\"https://health.ucdavis.edu/conditions/mens-health/testicular-torsion\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:45.589Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/conditions/mens-health/testicular-torsion",
-	"url": "https://health.ucdavis.edu/conditions/mens-health/testicular-torsion"
-}

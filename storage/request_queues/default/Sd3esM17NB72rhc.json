@@ -1,9 +1,0 @@
-{
-	"id": "Sd3esM17NB72rhc",
-	"json": "{\"id\":\"Sd3esM17NB72rhc\",\"url\":\"https://data.ca.gov/dataset/housing-element-annual-progress-report-apr-data-by-jurisdiction-and-year\",\"loadedUrl\":\"https://data.ca.gov/dataset/housing-element-annual-progress-report-apr-data-by-jurisdiction-and-year\",\"uniqueKey\":\"https://data.ca.gov/dataset/housing-element-annual-progress-report-apr-data-by-jurisdiction-and-year\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:15.979Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://data.ca.gov/dataset/housing-element-annual-progress-report-apr-data-by-jurisdiction-and-year",
-	"url": "https://data.ca.gov/dataset/housing-element-annual-progress-report-apr-data-by-jurisdiction-and-year"
-}

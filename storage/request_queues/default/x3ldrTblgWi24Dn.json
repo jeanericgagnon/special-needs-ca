@@ -1,9 +1,0 @@
-{
-	"id": "x3ldrTblgWi24Dn",
-	"json": "{\"id\":\"x3ldrTblgWi24Dn\",\"url\":\"https://ucp.org/about-ucp/committees/\",\"loadedUrl\":\"https://ucp.org/about-ucp/committees/\",\"uniqueKey\":\"https://ucp.org/about-ucp/committees\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:33.022Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ucp.org/about-ucp/committees",
-	"url": "https://ucp.org/about-ucp/committees/"
-}

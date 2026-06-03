@@ -1,9 +1,0 @@
-{
-	"id": "jwAQg0jxsIaVXKv",
-	"json": "{\"id\":\"jwAQg0jxsIaVXKv\",\"url\":\"https://leginfo.legislature.ca.gov/faces/codes_displayexpandedbranch.xhtml?tocCode=EDC&division=&title=2.&part=&chapter=&article=&nodetreepath=2\",\"loadedUrl\":\"https://leginfo.legislature.ca.gov/faces/codes_displayexpandedbranch.xhtml?tocCode=EDC&division=&title=2.&part=&chapter=&article=&nodetreepath=2\",\"uniqueKey\":\"https://leginfo.legislature.ca.gov/faces/codes_displayexpandedbranch.xhtml?article=&chapter=&division=&nodetreepath=2&part=&title=2.&tocCode=EDC\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:51.140Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://leginfo.legislature.ca.gov/faces/codes_displayexpandedbranch.xhtml?article=&chapter=&division=&nodetreepath=2&part=&title=2.&tocCode=EDC",
-	"url": "https://leginfo.legislature.ca.gov/faces/codes_displayexpandedbranch.xhtml?tocCode=EDC&division=&title=2.&part=&chapter=&article=&nodetreepath=2"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "Pk1Y0RHSgcHwY1I",
-	"json": "{\"id\":\"Pk1Y0RHSgcHwY1I\",\"url\":\"http://cdss.ca.gov/inforesources/fraud\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/fraud\",\"uniqueKey\":\"http://cdss.ca.gov/inforesources/fraud\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:15.708Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://cdss.ca.gov/inforesources/fraud",
-	"url": "http://cdss.ca.gov/inforesources/fraud"
-}

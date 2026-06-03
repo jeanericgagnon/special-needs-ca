@@ -1,9 +1,0 @@
-{
-	"id": "8T9IyN9ARg5hdfk",
-	"json": "{\"id\":\"8T9IyN9ARg5hdfk\",\"url\":\"https://neuroscience.ucdavis.edu/autism-and-other-learning-disabilities\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/autism-and-other-learning-disabilities\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/autism-and-other-learning-disabilities\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:50.031Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/autism-and-other-learning-disabilities",
-	"url": "https://neuroscience.ucdavis.edu/autism-and-other-learning-disabilities"
-}

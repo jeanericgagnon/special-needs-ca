@@ -1,9 +1,0 @@
-{
-	"id": "bNJkGUfLQGKlHis",
-	"json": "{\"id\":\"bNJkGUfLQGKlHis\",\"url\":\"http://secretary.senate.ca.gov/californiabluebook18502000\",\"loadedUrl\":\"https://secretary.senate.ca.gov/california-legislative-and-congressional-members-1849-current-blue-book-stats\",\"uniqueKey\":\"http://secretary.senate.ca.gov/californiabluebook18502000\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:57.412Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://secretary.senate.ca.gov/californiabluebook18502000",
-	"url": "http://secretary.senate.ca.gov/californiabluebook18502000"
-}

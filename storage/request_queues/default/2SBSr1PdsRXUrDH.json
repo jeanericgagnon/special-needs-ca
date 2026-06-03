@@ -1,9 +1,0 @@
-{
-	"id": "2SBSr1PdsRXUrDH",
-	"json": "{\"id\":\"2SBSr1PdsRXUrDH\",\"url\":\"https://rarediseases.org/organizations/chromosome-22-central/\",\"loadedUrl\":\"https://rarediseases.org/organizations/chromosome-22-central/\",\"uniqueKey\":\"https://rarediseases.org/organizations/chromosome-22-central\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:09:18.833Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/organizations/chromosome-22-central",
-	"url": "https://rarediseases.org/organizations/chromosome-22-central/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "kVFD9bDcPGU1VbE",
-	"json": "{\"id\":\"kVFD9bDcPGU1VbE\",\"url\":\"https://mindbrain.ucdavis.edu/tags/perception\",\"loadedUrl\":\"https://mindbrain.ucdavis.edu/tags/perception\",\"uniqueKey\":\"https://mindbrain.ucdavis.edu/tags/perception\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:21.652Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://mindbrain.ucdavis.edu/tags/perception",
-	"url": "https://mindbrain.ucdavis.edu/tags/perception"
-}

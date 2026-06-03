@@ -1,9 +1,0 @@
-{
-	"id": "ZqG5A9xyVqZtN4Z",
-	"json": "{\"id\":\"ZqG5A9xyVqZtN4Z\",\"url\":\"https://hr.ucdavis.edu/employees/leave-time-off/voting\",\"loadedUrl\":\"https://hr.ucdavis.edu/employees/leave-time-off/voting\",\"uniqueKey\":\"https://hr.ucdavis.edu/employees/leave-time-off/voting\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:12.503Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/employees/leave-time-off/voting",
-	"url": "https://hr.ucdavis.edu/employees/leave-time-off/voting"
-}

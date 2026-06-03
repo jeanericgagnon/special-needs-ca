@@ -1,9 +1,0 @@
-{
-	"id": "7edaMhLSPO2MMC0",
-	"json": "{\"id\":\"7edaMhLSPO2MMC0\",\"url\":\"https://financeandbusiness.ucdavis.edu/bia/budget/model/professional-tuition\",\"loadedUrl\":\"https://financeandbusiness.ucdavis.edu/bia/budget/model/professional-tuition\",\"uniqueKey\":\"https://financeandbusiness.ucdavis.edu/bia/budget/model/professional-tuition\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:52.021Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://financeandbusiness.ucdavis.edu/bia/budget/model/professional-tuition",
-	"url": "https://financeandbusiness.ucdavis.edu/bia/budget/model/professional-tuition"
-}

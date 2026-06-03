@@ -1,9 +1,0 @@
-{
-	"id": "KR1fRFOjOfhkTxd",
-	"json": "{\"id\":\"KR1fRFOjOfhkTxd\",\"url\":\"https://education.ucdavis.edu/contact-us\",\"loadedUrl\":\"https://education.ucdavis.edu/contact-us\",\"uniqueKey\":\"https://education.ucdavis.edu/contact-us\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:17:24.535Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://education.ucdavis.edu/contact-us",
-	"url": "https://education.ucdavis.edu/contact-us"
-}

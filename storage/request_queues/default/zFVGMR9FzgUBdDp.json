@@ -1,9 +1,0 @@
-{
-	"id": "zFVGMR9FzgUBdDp",
-	"json": "{\"id\":\"zFVGMR9FzgUBdDp\",\"url\":\"https://health.ucdavis.edu/nursing/academics/Course_Distinctions/course_pages/being-the-first.html\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/academics/Course_Distinctions/course_pages/being-the-first.html\",\"uniqueKey\":\"https://health.ucdavis.edu/nursing/academics/Course_Distinctions/course_pages/being-the-first.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:18.240Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/nursing/academics/Course_Distinctions/course_pages/being-the-first.html",
-	"url": "https://health.ucdavis.edu/nursing/academics/Course_Distinctions/course_pages/being-the-first.html"
-}

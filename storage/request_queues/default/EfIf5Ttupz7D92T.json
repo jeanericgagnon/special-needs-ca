@@ -1,9 +1,0 @@
-{
-	"id": "EfIf5Ttupz7D92T",
-	"json": "{\"id\":\"EfIf5Ttupz7D92T\",\"url\":\"https://data.ca.gov/showcase/areas-of-conservation-emphasis-ace\",\"loadedUrl\":\"https://data.ca.gov/showcase/areas-of-conservation-emphasis-ace\",\"uniqueKey\":\"https://data.ca.gov/showcase/areas-of-conservation-emphasis-ace\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:14.623Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://data.ca.gov/showcase/areas-of-conservation-emphasis-ace",
-	"url": "https://data.ca.gov/showcase/areas-of-conservation-emphasis-ace"
-}

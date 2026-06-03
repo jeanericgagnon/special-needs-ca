@@ -1,9 +1,0 @@
-{
-	"id": "gI2T9ORIyNwiY8y",
-	"json": "{\"id\":\"gI2T9ORIyNwiY8y\",\"url\":\"https://www.cdph.ca.gov/Programs/cls/dehl/ehl/Pages/EHL-Program-Landing-Page.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/cls/dehl/ehl/Pages/EHL-Program-Landing-Page.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/cls/dehl/ehl/Pages/EHL-Program-Landing-Page.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:03:22.246Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/cls/dehl/ehl/Pages/EHL-Program-Landing-Page.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/cls/dehl/ehl/Pages/EHL-Program-Landing-Page.aspx"
-}

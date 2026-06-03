@@ -1,9 +1,0 @@
-{
-	"id": "c8fcnoFqMJuzJU5",
-	"json": "{\"id\":\"c8fcnoFqMJuzJU5\",\"url\":\"https://www.cde.ca.gov/sp/cd/ci/maximizingenrollment.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=0bc759a1-7590-4ac0-83d3-029f53e1faa6&ssb=22452246853&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fsp%2Fcd%2Fci%2Fmaximizingenrollment.asp&ssi=cb846f26-ctxv-43b2-86bc-67a6d98b9989&ssk=botmanager_support@radware.com&ssm=52485966953675118105789885187384&ssn=fc5d668fa2e399e1343c6d3d3db5f2d41ff60219e8fc-dc1e-491a-9bdfa2&sso=772061df-106f539188e39aead2994dce472f579a6f463828e37aa6aa&ssp=72329967281780348213178030375097622&ssq=50392882751330653564027513019777199844417&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsIl9fdXptZiI6IjdmOTAwMDAyMTllOGZjLWRjMWUtNDkxYS05MWRmLTEwNmY1MzkxODhlMzEtMTc4MDMyNzUxMzM4ODAtMDAzNzQ0NTcyMzdhOTJmZThkZTEwIiwidXpteCI6IjdmOTAwMDhhOTk3ZDhiLWVlM2UtNDEyZC1hOGYwLWQ1OGJkODgxOTZkMDEtMTc4MDMyNzUxMzM4ODAtZWVhZjlhNWFmMWRhODc4MzEwIn0=\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/cd/ci/maximizingenrollment.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:25:13.465Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/sp/cd/ci/maximizingenrollment.asp",
-	"url": "https://www.cde.ca.gov/sp/cd/ci/maximizingenrollment.asp"
-}

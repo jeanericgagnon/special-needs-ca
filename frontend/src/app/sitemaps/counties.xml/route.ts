@@ -34,6 +34,12 @@ export async function GET() {
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>\n`;
+    xmlUrls += `  <url>
+    <loc>${baseUrl}/counties/${county.id}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>\n`;
   });
 
   // 2. Diagnosis directories (/benefits/[diagnosis])

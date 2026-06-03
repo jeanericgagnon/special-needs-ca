@@ -1,9 +1,0 @@
-{
-	"id": "qRC2wZHGF5rgPJc",
-	"json": "{\"id\":\"qRC2wZHGF5rgPJc\",\"url\":\"https://ucdnc.ucdavis.edu/research-0\",\"loadedUrl\":\"https://ucdnc.ucdavis.edu/research-0\",\"uniqueKey\":\"https://ucdnc.ucdavis.edu/research-0\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:19.565Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ucdnc.ucdavis.edu/research-0",
-	"url": "https://ucdnc.ucdavis.edu/research-0"
-}

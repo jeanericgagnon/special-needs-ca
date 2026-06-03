@@ -1,9 +1,0 @@
-{
-	"id": "sYVIRw7SeTF2jMg",
-	"json": "{\"id\":\"sYVIRw7SeTF2jMg\",\"url\":\"https://give.ucdavis.edu/ALAW/ADM7633\",\"loadedUrl\":\"https://give.ucdavis.edu/ALAW/ADM7633\",\"uniqueKey\":\"https://give.ucdavis.edu/ALAW/ADM7633\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:00.406Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/ALAW/ADM7633",
-	"url": "https://give.ucdavis.edu/ALAW/ADM7633"
-}

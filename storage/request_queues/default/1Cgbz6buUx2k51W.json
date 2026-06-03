@@ -1,9 +1,0 @@
-{
-	"id": "1Cgbz6buUx2k51W",
-	"json": "{\"id\":\"1Cgbz6buUx2k51W\",\"url\":\"https://www.chhs.ca.gov/home/system-of-care/\",\"loadedUrl\":\"https://www.chhs.ca.gov/home/system-of-care/\",\"uniqueKey\":\"https://www.chhs.ca.gov/home/system-of-care\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:18.657Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chhs.ca.gov/home/system-of-care",
-	"url": "https://www.chhs.ca.gov/home/system-of-care/"
-}

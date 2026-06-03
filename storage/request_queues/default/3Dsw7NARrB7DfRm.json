@@ -1,9 +1,0 @@
-{
-	"id": "3Dsw7NARrB7DfRm",
-	"json": "{\"id\":\"3Dsw7NARrB7DfRm\",\"url\":\"https://www.slocounty.ca.gov/departments/social-services/adult-services/services/slo-master-plan-for-aging-(slompa)-8d5eb9cd5b322ea2ba384bfee0e111f0\",\"loadedUrl\":\"https://www.slocounty.ca.gov/departments/social-services/adult-services/services/slo-master-plan-for-aging-(slompa)-8d5eb9cd5b322ea2ba384bfee0e111f0\",\"uniqueKey\":\"https://www.slocounty.ca.gov/departments/social-services/adult-services/services/slo-master-plan-for-aging-(slompa)-8d5eb9cd5b322ea2ba384bfee0e111f0\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:32.557Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.slocounty.ca.gov/departments/social-services/adult-services/services/slo-master-plan-for-aging-(slompa)-8d5eb9cd5b322ea2ba384bfee0e111f0",
-	"url": "https://www.slocounty.ca.gov/departments/social-services/adult-services/services/slo-master-plan-for-aging-(slompa)-8d5eb9cd5b322ea2ba384bfee0e111f0"
-}

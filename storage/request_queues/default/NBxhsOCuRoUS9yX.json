@@ -1,9 +1,0 @@
-{
-	"id": "NBxhsOCuRoUS9yX",
-	"json": "{\"id\":\"NBxhsOCuRoUS9yX\",\"url\":\"https://hr.ucdavis.edu/news/identify-emergency-contact-ucpath-if-detainedarrested-work\",\"loadedUrl\":\"https://hr.ucdavis.edu/news/identify-emergency-contact-ucpath-if-detainedarrested-work\",\"uniqueKey\":\"https://hr.ucdavis.edu/news/identify-emergency-contact-ucpath-if-detainedarrested-work\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:41.006Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/news/identify-emergency-contact-ucpath-if-detainedarrested-work",
-	"url": "https://hr.ucdavis.edu/news/identify-emergency-contact-ucpath-if-detainedarrested-work"
-}

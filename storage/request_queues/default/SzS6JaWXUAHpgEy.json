@@ -1,9 +1,0 @@
-{
-	"id": "SzS6JaWXUAHpgEy",
-	"json": "{\"id\":\"SzS6JaWXUAHpgEy\",\"url\":\"https://mychart.ucdavis.edu/MyChart/GuestEstimates/AcceptDisclaimer?svcArea=eux3W1MkhC8U9s4jqvyIjQ%3D%3D\",\"loadedUrl\":\"https://mychart.ucdavis.edu/MyChart/GuestEstimates/SelectServiceArea\",\"uniqueKey\":\"https://mychart.ucdavis.edu/MyChart/GuestEstimates/AcceptDisclaimer?svcArea=eux3W1MkhC8U9s4jqvyIjQ%3D%3D\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:03.021Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://mychart.ucdavis.edu/MyChart/GuestEstimates/AcceptDisclaimer?svcArea=eux3W1MkhC8U9s4jqvyIjQ%3D%3D",
-	"url": "https://mychart.ucdavis.edu/MyChart/GuestEstimates/AcceptDisclaimer?svcArea=eux3W1MkhC8U9s4jqvyIjQ%3D%3D"
-}

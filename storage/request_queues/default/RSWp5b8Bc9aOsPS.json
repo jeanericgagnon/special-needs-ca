@@ -1,9 +1,0 @@
-{
-	"id": "RSWp5b8Bc9aOsPS",
-	"json": "{\"id\":\"RSWp5b8Bc9aOsPS\",\"url\":\"https://health.ucdavis.edu/health-news/contenthub/stem-cells-a-possible-treatment-for-severe-respiratory-failure-a-covid-19-complication/2020/12\",\"loadedUrl\":\"https://health.ucdavis.edu/news/headlines/stem-cells-a-possible-treatment-for-severe-respiratory-failure-a-covid-19-complication/2020/12\",\"uniqueKey\":\"https://health.ucdavis.edu/health-news/contenthub/stem-cells-a-possible-treatment-for-severe-respiratory-failure-a-covid-19-complication/2020/12\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:50.720Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/health-news/contenthub/stem-cells-a-possible-treatment-for-severe-respiratory-failure-a-covid-19-complication/2020/12",
-	"url": "https://health.ucdavis.edu/health-news/contenthub/stem-cells-a-possible-treatment-for-severe-respiratory-failure-a-covid-19-complication/2020/12"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "wWvZ4j7gHZh9T3x",
-	"json": "{\"id\":\"wWvZ4j7gHZh9T3x\",\"url\":\"https://aggieenterprise.ucdavis.edu/planning\",\"loadedUrl\":\"https://aggieenterprise.ucdavis.edu/planning\",\"uniqueKey\":\"https://aggieenterprise.ucdavis.edu/planning\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:49.454Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://aggieenterprise.ucdavis.edu/planning",
-	"url": "https://aggieenterprise.ucdavis.edu/planning"
-}

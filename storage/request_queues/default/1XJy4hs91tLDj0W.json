@@ -1,9 +1,0 @@
-{
-	"id": "1XJy4hs91tLDj0W",
-	"json": "{\"id\":\"1XJy4hs91tLDj0W\",\"url\":\"https://shcs.ucdavis.edu/insurance\",\"loadedUrl\":\"https://shcs.ucdavis.edu/insurance\",\"uniqueKey\":\"https://shcs.ucdavis.edu/insurance\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:21.078Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://shcs.ucdavis.edu/insurance",
-	"url": "https://shcs.ucdavis.edu/insurance"
-}

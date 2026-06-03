@@ -1,9 +1,0 @@
-{
-	"id": "Q6v3za33wW38Tgs",
-	"json": "{\"id\":\"Q6v3za33wW38Tgs\",\"url\":\"https://sd21.senate.ca.gov/\",\"loadedUrl\":\"https://sd21.senate.ca.gov/\",\"uniqueKey\":\"https://sd21.senate.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:56.593Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://sd21.senate.ca.gov",
-	"url": "https://sd21.senate.ca.gov/"
-}

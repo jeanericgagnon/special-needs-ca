@@ -1,9 +1,0 @@
-{
-	"id": "tDXds68FkufRBy3",
-	"json": "{\"id\":\"tDXds68FkufRBy3\",\"url\":\"https://health.ucdavis.edu/patients-visitors/patient-rights/advance-care-planning\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/patient-rights/advance-care-planning\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/patient-rights/advance-care-planning\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:55.556Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/patient-rights/advance-care-planning",
-	"url": "https://health.ucdavis.edu/patients-visitors/patient-rights/advance-care-planning"
-}

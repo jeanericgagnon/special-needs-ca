@@ -1,9 +1,0 @@
-{
-	"id": "kcqHC6b6HRokMuv",
-	"json": "{\"id\":\"kcqHC6b6HRokMuv\",\"url\":\"https://mindbrain.ucdavis.edu/caslogin\",\"loadedUrl\":\"https://cas.ucdavis.edu/cas/login?service=https%3A//mindbrain.ucdavis.edu/casservice\",\"uniqueKey\":\"https://mindbrain.ucdavis.edu/caslogin\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:19.255Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://mindbrain.ucdavis.edu/caslogin",
-	"url": "https://mindbrain.ucdavis.edu/caslogin"
-}

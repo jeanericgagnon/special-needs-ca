@@ -1,9 +1,0 @@
-{
-	"id": "ZYGW4UqYPRO0VtQ",
-	"json": "{\"id\":\"ZYGW4UqYPRO0VtQ\",\"url\":\"https://www.cash4college.csac.ca.gov/\",\"loadedUrl\":\"https://www.cash4college.csac.ca.gov/\",\"uniqueKey\":\"https://www.cash4college.csac.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:32.583Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cash4college.csac.ca.gov",
-	"url": "https://www.cash4college.csac.ca.gov/"
-}

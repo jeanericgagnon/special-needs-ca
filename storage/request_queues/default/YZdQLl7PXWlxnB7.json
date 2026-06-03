@@ -1,9 +1,0 @@
-{
-	"id": "YZdQLl7PXWlxnB7",
-	"json": "{\"id\":\"YZdQLl7PXWlxnB7\",\"url\":\"http://www.mbc.ca.gov/Consumers/Complaints/\",\"loadedUrl\":\"https://www.mbc.ca.gov/Consumers/file-a-complaint/\",\"uniqueKey\":\"http://www.mbc.ca.gov/Consumers/Complaints\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T18:46:11.130Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.mbc.ca.gov/Consumers/Complaints",
-	"url": "http://www.mbc.ca.gov/Consumers/Complaints/"
-}

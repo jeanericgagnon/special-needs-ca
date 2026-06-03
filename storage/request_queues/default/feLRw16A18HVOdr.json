@@ -1,9 +1,0 @@
-{
-	"id": "feLRw16A18HVOdr",
-	"json": "{\"id\":\"feLRw16A18HVOdr\",\"url\":\"https://health.ucdavis.edu/blog/kids-considered/category/infectious-diseases\",\"loadedUrl\":\"https://health.ucdavis.edu/blog/kids-considered/category/infectious-diseases\",\"uniqueKey\":\"https://health.ucdavis.edu/blog/kids-considered/category/infectious-diseases\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:01.856Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/blog/kids-considered/category/infectious-diseases",
-	"url": "https://health.ucdavis.edu/blog/kids-considered/category/infectious-diseases"
-}

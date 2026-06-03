@@ -1,9 +1,0 @@
-{
-	"id": "HBVn1ThyQv6wc1S",
-	"json": "{\"id\":\"HBVn1ThyQv6wc1S\",\"url\":\"https://cdss.ca.gov/inforesources/community-care/self-assessment-guides-and-key-indicator-tools/most-commonly-cited-deficiencies\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/community-care/self-assessment-guides-and-key-indicator-tools/most-commonly-cited-deficiencies\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/community-care/self-assessment-guides-and-key-indicator-tools/most-commonly-cited-deficiencies\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:30.988Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/community-care/self-assessment-guides-and-key-indicator-tools/most-commonly-cited-deficiencies",
-	"url": "https://cdss.ca.gov/inforesources/community-care/self-assessment-guides-and-key-indicator-tools/most-commonly-cited-deficiencies"
-}

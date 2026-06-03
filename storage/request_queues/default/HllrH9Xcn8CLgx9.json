@@ -1,9 +1,0 @@
-{
-	"id": "HllrH9Xcn8CLgx9",
-	"json": "{\"id\":\"HllrH9Xcn8CLgx9\",\"url\":\"https://www.dds.ca.gov/transparency/laws-regulations/lanterman-act-and-related-laws/\",\"loadedUrl\":\"https://www.dds.ca.gov/transparency/laws-regulations/lanterman-act-and-related-laws/\",\"uniqueKey\":\"https://www.dds.ca.gov/transparency/laws-regulations/lanterman-act-and-related-laws\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:50.766Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/transparency/laws-regulations/lanterman-act-and-related-laws",
-	"url": "https://www.dds.ca.gov/transparency/laws-regulations/lanterman-act-and-related-laws/"
-}

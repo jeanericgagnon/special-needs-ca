@@ -1,9 +1,0 @@
-{
-	"id": "OmKt9nCndYlG3dp",
-	"json": "{\"id\":\"OmKt9nCndYlG3dp\",\"url\":\"https://www.ctc.ca.gov/employers/assignment-resources/services/health-services/\",\"loadedUrl\":\"https://www.ctc.ca.gov/employers/assignment-resources/services/health-services/\",\"uniqueKey\":\"https://www.ctc.ca.gov/employers/assignment-resources/services/health-services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:57.214Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ctc.ca.gov/employers/assignment-resources/services/health-services",
-	"url": "https://www.ctc.ca.gov/employers/assignment-resources/services/health-services/"
-}

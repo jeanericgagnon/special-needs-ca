@@ -1,9 +1,0 @@
-{
-	"id": "qc19cMds3SJaXAy",
-	"json": "{\"id\":\"qc19cMds3SJaXAy\",\"url\":\"https://give.ucdavis.edu/MORT\",\"loadedUrl\":\"https://give.ucdavis.edu/MORT\",\"uniqueKey\":\"https://give.ucdavis.edu/MORT\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:46.884Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/MORT",
-	"url": "https://give.ucdavis.edu/MORT"
-}

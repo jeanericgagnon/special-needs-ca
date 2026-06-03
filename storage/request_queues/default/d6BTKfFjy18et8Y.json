@@ -1,9 +1,0 @@
-{
-	"id": "d6BTKfFjy18et8Y",
-	"json": "{\"id\":\"d6BTKfFjy18et8Y\",\"url\":\"https://health.ucdavis.edu/remoteaccess/downloads/Ergonomic%20Tips%20for%20Remote%20Work%20Final.pdf\",\"loadedUrl\":\"https://health.ucdavis.edu/remote-access/downloads/Ergonomic%20Tips%20for%20Remote%20Work%20Final.pdf\",\"uniqueKey\":\"https://health.ucdavis.edu/remoteaccess/downloads/Ergonomic%20Tips%20for%20Remote%20Work%20Final.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:09.375Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/remoteaccess/downloads/Ergonomic%20Tips%20for%20Remote%20Work%20Final.pdf",
-	"url": "https://health.ucdavis.edu/remoteaccess/downloads/Ergonomic%20Tips%20for%20Remote%20Work%20Final.pdf"
-}

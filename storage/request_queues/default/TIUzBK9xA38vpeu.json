@@ -1,9 +1,0 @@
-{
-	"id": "TIUzBK9xA38vpeu",
-	"json": "{\"id\":\"TIUzBK9xA38vpeu\",\"url\":\"https://sgc.ca.gov/programs/healthandequity/hiap/\",\"loadedUrl\":\"https://sgc.ca.gov/programs/healthandequity/hiap/\",\"uniqueKey\":\"https://sgc.ca.gov/programs/healthandequity/hiap\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:24:52.030Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://sgc.ca.gov/programs/healthandequity/hiap",
-	"url": "https://sgc.ca.gov/programs/healthandequity/hiap/"
-}

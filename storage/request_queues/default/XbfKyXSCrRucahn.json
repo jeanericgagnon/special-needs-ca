@@ -1,9 +1,0 @@
-{
-	"id": "XbfKyXSCrRucahn",
-	"json": "{\"id\":\"XbfKyXSCrRucahn\",\"url\":\"https://health.ucdavis.edu/patients-visitors/about-patient-care/quality-safety/quality-safety-measures\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/about-patient-care/quality-safety/quality-safety-measures\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/about-patient-care/quality-safety/quality-safety-measures\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:31:17.217Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/about-patient-care/quality-safety/quality-safety-measures",
-	"url": "https://health.ucdavis.edu/patients-visitors/about-patient-care/quality-safety/quality-safety-measures"
-}

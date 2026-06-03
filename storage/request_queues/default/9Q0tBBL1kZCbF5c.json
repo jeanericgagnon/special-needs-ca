@@ -1,9 +1,0 @@
-{
-	"id": "9Q0tBBL1kZCbF5c",
-	"json": "{\"id\":\"9Q0tBBL1kZCbF5c\",\"url\":\"https://www.cdph.ca.gov/Programs/OPP/Pages/Population-Based-Prevention-Early-Intervention-Factsheet.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/OPP/Pages/Population-Based-Prevention-Early-Intervention-Factsheet.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/OPP/Pages/Population-Based-Prevention-Early-Intervention-Factsheet.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:03:57.115Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/OPP/Pages/Population-Based-Prevention-Early-Intervention-Factsheet.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/OPP/Pages/Population-Based-Prevention-Early-Intervention-Factsheet.aspx"
-}

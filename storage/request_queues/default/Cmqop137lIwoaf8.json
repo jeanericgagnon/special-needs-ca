@@ -1,9 +1,0 @@
-{
-	"id": "Cmqop137lIwoaf8",
-	"json": "{\"id\":\"Cmqop137lIwoaf8\",\"url\":\"https://biology.ucdavis.edu/news-events/biome-newsletter/signup\",\"loadedUrl\":\"https://biology.ucdavis.edu/news-events/biome-newsletter/signup\",\"uniqueKey\":\"https://biology.ucdavis.edu/news-events/biome-newsletter/signup\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:13.324Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://biology.ucdavis.edu/news-events/biome-newsletter/signup",
-	"url": "https://biology.ucdavis.edu/news-events/biome-newsletter/signup"
-}

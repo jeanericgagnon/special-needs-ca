@@ -1,9 +1,0 @@
-{
-	"id": "nJ5QhYh8L1R0lYg",
-	"json": "{\"id\":\"nJ5QhYh8L1R0lYg\",\"url\":\"https://www.cdph.ca.gov/Programs/CHSI/Pages/Obtaining-Certified-Copies-Online.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CHSI/Pages/Obtaining-Certified-Copies-Online.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CHSI/Pages/Obtaining-Certified-Copies-Online.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:57.431Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CHSI/Pages/Obtaining-Certified-Copies-Online.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CHSI/Pages/Obtaining-Certified-Copies-Online.aspx"
-}

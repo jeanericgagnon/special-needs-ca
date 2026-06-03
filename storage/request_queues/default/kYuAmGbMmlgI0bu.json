@@ -1,9 +1,0 @@
-{
-	"id": "kYuAmGbMmlgI0bu",
-	"json": "{\"id\":\"kYuAmGbMmlgI0bu\",\"url\":\"https://www.dds.ca.gov/rc/disparities/data/dds-disparity-measures/\",\"loadedUrl\":\"https://www.dds.ca.gov/rc/disparities/data/dds-disparity-measures/\",\"uniqueKey\":\"https://www.dds.ca.gov/rc/disparities/data/dds-disparity-measures\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:49.063Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/rc/disparities/data/dds-disparity-measures",
-	"url": "https://www.dds.ca.gov/rc/disparities/data/dds-disparity-measures/"
-}

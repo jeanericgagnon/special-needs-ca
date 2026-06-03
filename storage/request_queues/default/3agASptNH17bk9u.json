@@ -1,9 +1,0 @@
-{
-	"id": "3agASptNH17bk9u",
-	"json": "{\"id\":\"3agASptNH17bk9u\",\"url\":\"https://www.csb-cde.ca.gov/resources/causesvl/cvl-septoopticdysplasia.aspx\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=55da2bc3-15ad-4d23-9a4a-dd79564308d3&ssb=23173292894&ssc=https%3A%2F%2Fwww.csb-cde.ca.gov%2Fresources%2Fcausesvl%2Fcvl-septoopticdysplasia.aspx&ssi=fd41a173-cuez-49f1-81fc-37e057c7a30f&ssk=botmanager_support@radware.com&ssm=31313435998308061139066143154915&ssn=83d86c4b71e2be3e6bc884eb212a6f1cbc406cae5521-a0e3-4d69-9f6229&sso=2eb40985-e9a480098496ca786fad0349cefa67ad977a156e62e634c6&ssp=24772901561780354160178030367353348&ssq=57813952763448830850927620558265500152676&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDA2Y2FlNTUyMS1hMGUzLTRkNjktOTk4NS1lOWE0ODAwOTg0OTYxLTE3ODAzMjc2MjA2NDcxMzM4NS0wMDNiMmVjYzU1NzgyZTUxNDU2MTMiLCJyZCI6ImNhLmdvdiIsInV6bXgiOiI3ZjkwMDAzNjgyNDQ0My0zZjFmLTQ0ZDAtYjQ2OC01ZjgwZWFkODA1ZDIxLTE3ODAzMjY1OTIyMzcxMDQxNzk1LTY4MmM1ODM1NDMyZjg1ZDkxOSJ9\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/resources/causesvl/cvl-septoopticdysplasia.aspx\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:27:14.142Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.csb-cde.ca.gov/resources/causesvl/cvl-septoopticdysplasia.aspx",
-	"url": "https://www.csb-cde.ca.gov/resources/causesvl/cvl-septoopticdysplasia.aspx"
-}

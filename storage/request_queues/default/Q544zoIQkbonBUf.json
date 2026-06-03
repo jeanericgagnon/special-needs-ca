@@ -1,9 +1,0 @@
-{
-	"id": "Q544zoIQkbonBUf",
-	"json": "{\"id\":\"Q544zoIQkbonBUf\",\"url\":\"https://www.cdph.ca.gov/Programs/OSPHLD/LFS/Pages/LLSContactUs.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/OSPHLD/LFS/Pages/LLSContactUs.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/OSPHLD/LFS/Pages/LLSContactUs.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:40:03.887Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/OSPHLD/LFS/Pages/LLSContactUs.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/OSPHLD/LFS/Pages/LLSContactUs.aspx"
-}

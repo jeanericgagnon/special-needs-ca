@@ -1,9 +1,0 @@
-{
-	"id": "sS7z7IGKMDRgwX0",
-	"json": "{\"id\":\"sS7z7IGKMDRgwX0\",\"url\":\"https://health.ucdavis.edu/psychiatry/services-specialties/addiction-psychiatry\",\"loadedUrl\":\"https://health.ucdavis.edu/psychiatry/services-specialties/addiction-psychiatry\",\"uniqueKey\":\"https://health.ucdavis.edu/psychiatry/services-specialties/addiction-psychiatry\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:47.958Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/psychiatry/services-specialties/addiction-psychiatry",
-	"url": "https://health.ucdavis.edu/psychiatry/services-specialties/addiction-psychiatry"
-}

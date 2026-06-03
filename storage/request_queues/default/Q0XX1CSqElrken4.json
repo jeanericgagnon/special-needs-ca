@@ -1,9 +1,0 @@
-{
-	"id": "Q0XX1CSqElrken4",
-	"json": "{\"id\":\"Q0XX1CSqElrken4\",\"url\":\"https://www.globaldownsyndrome.org/?page_id=1581\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/educational-series-featured-speakers-william-i-cohen/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org?page_id=1581\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:28:07.079Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.globaldownsyndrome.org?page_id=1581",
-	"url": "https://www.globaldownsyndrome.org/?page_id=1581"
-}

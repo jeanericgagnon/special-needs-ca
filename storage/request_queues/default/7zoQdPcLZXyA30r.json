@@ -1,9 +1,0 @@
-{
-	"id": "7zoQdPcLZXyA30r",
-	"json": "{\"id\":\"7zoQdPcLZXyA30r\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/1144/david-cooke-cancer-robotic_surgery-surgery_-_cardiothoracic-surgery_-_robotic-surgery_-_thoracic-sacramento?FreeText%3aLast+name=cooke\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/1144/david-cooke-cancer-robotic_surgery-surgery_-_cardiothoracic-surgery_-_robotic-surgery_-_thoracic-sacramento?FreeText%3aLast+name=cooke\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/1144/david-cooke-cancer-robotic_surgery-surgery_-_cardiothoracic-surgery_-_robotic-surgery_-_thoracic-sacramento?FreeText%3ALast+name=cooke\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:15.359Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/1144/david-cooke-cancer-robotic_surgery-surgery_-_cardiothoracic-surgery_-_robotic-surgery_-_thoracic-sacramento?FreeText%3ALast+name=cooke",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/1144/david-cooke-cancer-robotic_surgery-surgery_-_cardiothoracic-surgery_-_robotic-surgery_-_thoracic-sacramento?FreeText%3aLast+name=cooke"
-}

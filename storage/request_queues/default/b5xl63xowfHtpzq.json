@@ -1,9 +1,0 @@
-{
-	"id": "b5xl63xowfHtpzq",
-	"json": "{\"id\":\"b5xl63xowfHtpzq\",\"url\":\"https://cdss.ca.gov/inforesources/community-care/continuing-care/resources-for-providers\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/community-care/continuing-care/resources-for-providers\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/community-care/continuing-care/resources-for-providers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:47.959Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/community-care/continuing-care/resources-for-providers",
-	"url": "https://cdss.ca.gov/inforesources/community-care/continuing-care/resources-for-providers"
-}

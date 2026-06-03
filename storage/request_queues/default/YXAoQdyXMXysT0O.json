@@ -1,9 +1,0 @@
-{
-	"id": "YXAoQdyXMXysT0O",
-	"json": "{\"id\":\"YXAoQdyXMXysT0O\",\"url\":\"https://www.chhs.ca.gov/blog/2019/10/11/calfresh-benefits-replacement-available-for-families-impacted-by-power-outages/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2019/10/11/calfresh-benefits-replacement-available-for-families-impacted-by-power-outages/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2019/10/11/calfresh-benefits-replacement-available-for-families-impacted-by-power-outages\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:22.991Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chhs.ca.gov/blog/2019/10/11/calfresh-benefits-replacement-available-for-families-impacted-by-power-outages",
-	"url": "https://www.chhs.ca.gov/blog/2019/10/11/calfresh-benefits-replacement-available-for-families-impacted-by-power-outages/"
-}

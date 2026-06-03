@@ -1,9 +1,0 @@
-{
-	"id": "wIOSygOp8W6sV3P",
-	"json": "{\"id\":\"wIOSygOp8W6sV3P\",\"url\":\"https://www.caloes.ca.gov/office-of-the-director/operations/homeland-security/california-cybersecurity-integration-center/\",\"loadedUrl\":\"https://www.caloes.ca.gov/office-of-the-director/operations/homeland-security/california-cybersecurity-integration-center/\",\"uniqueKey\":\"https://www.caloes.ca.gov/office-of-the-director/operations/homeland-security/california-cybersecurity-integration-center\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:41.909Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.caloes.ca.gov/office-of-the-director/operations/homeland-security/california-cybersecurity-integration-center",
-	"url": "https://www.caloes.ca.gov/office-of-the-director/operations/homeland-security/california-cybersecurity-integration-center/"
-}

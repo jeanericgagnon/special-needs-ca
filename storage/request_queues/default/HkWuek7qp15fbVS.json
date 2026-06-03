@@ -1,9 +1,0 @@
-{
-	"id": "HkWuek7qp15fbVS",
-	"json": "{\"id\":\"HkWuek7qp15fbVS\",\"url\":\"https://lettersandscience.ucdavis.edu/about/ls-strategic-vision\",\"loadedUrl\":\"https://lettersandscience.ucdavis.edu/about/ls-strategic-vision\",\"uniqueKey\":\"https://lettersandscience.ucdavis.edu/about/ls-strategic-vision\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:22.093Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://lettersandscience.ucdavis.edu/about/ls-strategic-vision",
-	"url": "https://lettersandscience.ucdavis.edu/about/ls-strategic-vision"
-}

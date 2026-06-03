@@ -15,7 +15,10 @@ import {
   deleteReminder,
   Reminder,
   saveChildIepData,
-  saveChildRespiteData
+  saveChildRespiteData,
+  saveChildWaiver,
+  deleteChildWaiver,
+  ChildWaiver
 } from '@/lib/db';
 
 // Helper to check authentication
@@ -199,5 +202,29 @@ export async function saveChildRespiteAction(
   } catch (err) {
     console.error('Save child respite action error:', err);
     return { error: err instanceof Error ? err.message : 'Failed to save child respite parameters.' };
+  }
+}
+
+export async function saveChildWaiverAction(waiver: ChildWaiver) {
+  try {
+    await getSessionUser();
+    saveChildWaiver(waiver);
+    revalidatePath('/dashboard');
+    return { success: true };
+  } catch (err) {
+    console.error('Save child waiver action error:', err);
+    return { error: err instanceof Error ? err.message : 'Failed to save waiver.' };
+  }
+}
+
+export async function deleteChildWaiverAction(waiverId: string) {
+  try {
+    await getSessionUser();
+    deleteChildWaiver(waiverId);
+    revalidatePath('/dashboard');
+    return { success: true };
+  } catch (err) {
+    console.error('Delete child waiver action error:', err);
+    return { error: err instanceof Error ? err.message : 'Failed to delete waiver.' };
   }
 }

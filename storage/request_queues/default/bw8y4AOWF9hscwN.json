@@ -1,9 +1,0 @@
-{
-	"id": "bw8y4AOWF9hscwN",
-	"json": "{\"id\":\"bw8y4AOWF9hscwN\",\"url\":\"https://health.ucdavis.edu/pain/\",\"loadedUrl\":\"https://health.ucdavis.edu/pain/\",\"uniqueKey\":\"https://health.ucdavis.edu/pain\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:51.268Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/pain",
-	"url": "https://health.ucdavis.edu/pain/"
-}

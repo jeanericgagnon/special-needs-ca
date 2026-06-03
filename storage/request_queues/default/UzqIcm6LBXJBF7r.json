@@ -1,9 +1,0 @@
-{
-	"id": "UzqIcm6LBXJBF7r",
-	"json": "{\"id\":\"UzqIcm6LBXJBF7r\",\"url\":\"https://www.dgs.ca.gov/OFS\",\"loadedUrl\":\"https://www.dgs.ca.gov/OFS\",\"uniqueKey\":\"https://www.dgs.ca.gov/OFS\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:05.563Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dgs.ca.gov/OFS",
-	"url": "https://www.dgs.ca.gov/OFS"
-}

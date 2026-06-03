@@ -1,9 +1,0 @@
-{
-	"id": "JKT9FvEl39vMZHm",
-	"json": "{\"id\":\"JKT9FvEl39vMZHm\",\"url\":\"https://give.ucdavis.edu/BEDF/BME4GEN\",\"loadedUrl\":\"https://give.ucdavis.edu/BEDF/BME4GEN\",\"uniqueKey\":\"https://give.ucdavis.edu/BEDF/BME4GEN\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:57.173Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/BEDF/BME4GEN",
-	"url": "https://give.ucdavis.edu/BEDF/BME4GEN"
-}

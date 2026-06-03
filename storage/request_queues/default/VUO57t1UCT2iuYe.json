@@ -1,9 +1,0 @@
-{
-	"id": "VUO57t1UCT2iuYe",
-	"json": "{\"id\":\"VUO57t1UCT2iuYe\",\"url\":\"https://give.ucdavis.edu/VCAH/325704\",\"loadedUrl\":\"https://give.ucdavis.edu/VCAH/325704\",\"uniqueKey\":\"https://give.ucdavis.edu/VCAH/325704\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:00.063Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/VCAH/325704",
-	"url": "https://give.ucdavis.edu/VCAH/325704"
-}

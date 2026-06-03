@@ -1,9 +1,0 @@
-{
-	"id": "HBLKS0uvzZSNern",
-	"json": "{\"id\":\"HBLKS0uvzZSNern\",\"url\":\"https://www.cde.ca.gov/ci/se/tseldecisionmaking.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/se/tseldecisionmaking.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/se/tseldecisionmaking.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:09.137Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ci/se/tseldecisionmaking.asp",
-	"url": "https://www.cde.ca.gov/ci/se/tseldecisionmaking.asp"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "sbI6bArUlAv65TD",
-	"json": "{\"id\":\"sbI6bArUlAv65TD\",\"url\":\"https://health.ucdavis.edu/surgicalservices/\",\"loadedUrl\":\"https://health.ucdavis.edu/health-topics/surgery\",\"uniqueKey\":\"https://health.ucdavis.edu/surgicalservices\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:57.549Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/surgicalservices",
-	"url": "https://health.ucdavis.edu/surgicalservices/"
-}

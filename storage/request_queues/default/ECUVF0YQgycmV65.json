@@ -1,9 +1,0 @@
-{
-	"id": "ECUVF0YQgycmV65",
-	"json": "{\"id\":\"ECUVF0YQgycmV65\",\"url\":\"https://extensionpv.ucdavis.edu/coursebasket/publicCourseBasket.do?method=load&_ga=2.117253830.1586709875.1535383907-1149725988.1505539135\",\"loadedUrl\":\"https://extensionpv.ucdavis.edu/coursebasket/publicCourseBasket.do?method=load&_ga=2.117253830.1586709875.1535383907-1149725988.1505539135\",\"uniqueKey\":\"https://extensionpv.ucdavis.edu/coursebasket/publicCourseBasket.do?_ga=2.117253830.1586709875.1535383907-1149725988.1505539135&method=load\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:34:29.583Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://extensionpv.ucdavis.edu/coursebasket/publicCourseBasket.do?_ga=2.117253830.1586709875.1535383907-1149725988.1505539135&method=load",
-	"url": "https://extensionpv.ucdavis.edu/coursebasket/publicCourseBasket.do?method=load&_ga=2.117253830.1586709875.1535383907-1149725988.1505539135"
-}

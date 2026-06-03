@@ -1,9 +1,0 @@
-{
-	"id": "cWC9Hi75dJ7S5m3",
-	"json": "{\"id\":\"cWC9Hi75dJ7S5m3\",\"url\":\"https://health.ucdavis.edu/nursing/ourteam/national-advisory-council.html\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/ourteam/national-advisory-council.html\",\"uniqueKey\":\"https://health.ucdavis.edu/nursing/ourteam/national-advisory-council.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:11.707Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/nursing/ourteam/national-advisory-council.html",
-	"url": "https://health.ucdavis.edu/nursing/ourteam/national-advisory-council.html"
-}

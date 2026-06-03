@@ -1,9 +1,0 @@
-{
-	"id": "pMfGLKXdWzu1SJ8",
-	"json": "{\"id\":\"pMfGLKXdWzu1SJ8\",\"url\":\"https://www.cdss.ca.gov/inforesources/CDSS-Programs/Continuum-of-Care-Reform/Level-of-Care-and-Rates-Information\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/cdss-programs/continuum-of-care-reform/level-of-care-and-rates-information\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/CDSS-Programs/Continuum-of-Care-Reform/Level-of-Care-and-Rates-Information\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:45.648Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/inforesources/CDSS-Programs/Continuum-of-Care-Reform/Level-of-Care-and-Rates-Information",
-	"url": "https://www.cdss.ca.gov/inforesources/CDSS-Programs/Continuum-of-Care-Reform/Level-of-Care-and-Rates-Information"
-}

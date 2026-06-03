@@ -1,9 +1,0 @@
-{
-	"id": "WkWIVPQnNBmVqpC",
-	"json": "{\"id\":\"WkWIVPQnNBmVqpC\",\"url\":\"https://www.cde.ca.gov/SchoolDirectory/report?rid=dl2&tp=xlsx&ict=Y\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=7a1862aa-29dd-4410-914a-5a28406ae83a&ssb=68930241193&ssc=https%3A%2F%2Fwww.cde.ca.gov%2FSchoolDirectory%2Freport%3Frid%3Ddl2%26tp%3Dxlsx%26ict%3DY&ssi=db93b535-ctxv-4308-9562-995135c4fb40&ssk=botmanager_support@radware.com&ssm=41192572963362321107670454715469&ssn=4294ae20411f1169a578a4f8d8ff1f7164d1789b7d81-1fb3-4f91-977dc5&sso=9d158a71-b4fe74fae2e8a8be9c6ea8ae04c1f5b99848abea04a99dd5&ssp=14377092181780314690178033059916277&ssq=18460652744729257520027447470623789821458&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDA3ODliN2Q4MS0xZmIzLTRmOTEtOWE3MS1iNGZlNzRmYWUyZTgxLTE3ODAzMjc0NDc5MDkwLTAwMzY4NWMzZTQ5NzY4OTYzNzMxMCIsInV6bXgiOiI3ZjkwMDA3Mzk3YzM2Yy0wZDNiLTRjODUtOTIyOS01MzU1MjRjNWY5YWIxLTE3ODAzMjc0NDc5MDkwLWZhOWQyNDNhOWViZDdmOTAxMCIsInJkIjoiY2EuZ292In0=\",\"uniqueKey\":\"https://www.cde.ca.gov/SchoolDirectory/report?ict=Y&rid=dl2&tp=xlsx\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:24:08.009Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/SchoolDirectory/report?ict=Y&rid=dl2&tp=xlsx",
-	"url": "https://www.cde.ca.gov/SchoolDirectory/report?rid=dl2&tp=xlsx&ict=Y"
-}

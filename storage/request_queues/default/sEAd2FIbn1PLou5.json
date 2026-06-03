@@ -1,9 +1,0 @@
-{
-	"id": "sEAd2FIbn1PLou5",
-	"json": "{\"id\":\"sEAd2FIbn1PLou5\",\"url\":\"http://staff.ucdavis.edu/#footer\",\"loadedUrl\":\"https://staff.ucdavis.edu/\",\"uniqueKey\":\"http://staff.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:48.694Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://staff.ucdavis.edu",
-	"url": "http://staff.ucdavis.edu/#footer"
-}

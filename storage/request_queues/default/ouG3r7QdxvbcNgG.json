@@ -1,9 +1,0 @@
-{
-	"id": "ouG3r7QdxvbcNgG",
-	"json": "{\"id\":\"ouG3r7QdxvbcNgG\",\"url\":\"https://health.ucdavis.edu/eyecenter/appointment/referring_physicians.html\",\"loadedUrl\":\"https://health.ucdavis.edu/eyecenter/appointment/referring_physicians.html\",\"uniqueKey\":\"https://health.ucdavis.edu/eyecenter/appointment/referring_physicians.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:34.506Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/eyecenter/appointment/referring_physicians.html",
-	"url": "https://health.ucdavis.edu/eyecenter/appointment/referring_physicians.html"
-}

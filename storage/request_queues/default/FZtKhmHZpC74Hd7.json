@@ -1,9 +1,0 @@
-{
-	"id": "FZtKhmHZpC74Hd7",
-	"json": "{\"id\":\"FZtKhmHZpC74Hd7\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/42368/elysia-alvarez-pediatric_oncology-sacramento?FreeText:Last+name=Alvarez\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/42368/elysia-alvarez-pediatric_oncology-sacramento?FreeText:Last+name=Alvarez\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/42368/elysia-alvarez-pediatric_oncology-sacramento?FreeText%3ALast+name=Alvarez\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:17.028Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/42368/elysia-alvarez-pediatric_oncology-sacramento?FreeText%3ALast+name=Alvarez",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/42368/elysia-alvarez-pediatric_oncology-sacramento?FreeText:Last+name=Alvarez"
-}

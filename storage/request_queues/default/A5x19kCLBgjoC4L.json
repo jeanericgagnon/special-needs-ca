@@ -1,9 +1,0 @@
-{
-	"id": "A5x19kCLBgjoC4L",
-	"json": "{\"id\":\"A5x19kCLBgjoC4L\",\"url\":\"https://hr.ucdavis.edu/news/stretch-assignments-iet-what-weve-learned-so-far\",\"loadedUrl\":\"https://hr.ucdavis.edu/news/stretch-assignments-iet-what-weve-learned-so-far\",\"uniqueKey\":\"https://hr.ucdavis.edu/news/stretch-assignments-iet-what-weve-learned-so-far\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:37.846Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/news/stretch-assignments-iet-what-weve-learned-so-far",
-	"url": "https://hr.ucdavis.edu/news/stretch-assignments-iet-what-weve-learned-so-far"
-}

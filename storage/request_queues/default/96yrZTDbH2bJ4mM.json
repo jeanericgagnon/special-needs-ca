@@ -1,9 +1,0 @@
-{
-	"id": "96yrZTDbH2bJ4mM",
-	"json": "{\"id\":\"96yrZTDbH2bJ4mM\",\"url\":\"https://clinicaltrials.vetmed.ucdavis.edu/\",\"loadedUrl\":\"https://clinicaltrials.vetmed.ucdavis.edu/\",\"uniqueKey\":\"https://clinicaltrials.vetmed.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:20.393Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://clinicaltrials.vetmed.ucdavis.edu",
-	"url": "https://clinicaltrials.vetmed.ucdavis.edu/"
-}

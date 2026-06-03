@@ -1,9 +1,0 @@
-{
-	"id": "yNDiWsad8ll9KsT",
-	"json": "{\"id\":\"yNDiWsad8ll9KsT\",\"url\":\"http://leginfo.legislature.ca.gov/faces/codes_displayexpandedbranch.xhtml?lawCode=HSC&division=104.&title=&part=9.&chapter=4.&article=1.&goUp=Y\",\"loadedUrl\":\"https://leginfo.legislature.ca.gov/faces/codes_displayexpandedbranch.xhtml?lawCode=HSC&division=104.&title=&part=9.&chapter=4.&article=1.&goUp=Y\",\"uniqueKey\":\"http://leginfo.legislature.ca.gov/faces/codes_displayexpandedbranch.xhtml?article=1.&chapter=4.&division=104.&goUp=Y&lawCode=HSC&part=9.&title=\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T17:04:49.798Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://leginfo.legislature.ca.gov/faces/codes_displayexpandedbranch.xhtml?article=1.&chapter=4.&division=104.&goUp=Y&lawCode=HSC&part=9.&title=",
-	"url": "http://leginfo.legislature.ca.gov/faces/codes_displayexpandedbranch.xhtml?lawCode=HSC&division=104.&title=&part=9.&chapter=4.&article=1.&goUp=Y"
-}

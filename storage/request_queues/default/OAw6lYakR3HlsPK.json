@@ -1,9 +1,0 @@
-{
-	"id": "OAw6lYakR3HlsPK",
-	"json": "{\"id\":\"OAw6lYakR3HlsPK\",\"url\":\"https://giving.ucdavis.edu/ways-to-give/employee-giving\",\"loadedUrl\":\"https://giving.ucdavis.edu/ways-to-give/employee-giving\",\"uniqueKey\":\"https://giving.ucdavis.edu/ways-to-give/employee-giving\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:30.799Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://giving.ucdavis.edu/ways-to-give/employee-giving",
-	"url": "https://giving.ucdavis.edu/ways-to-give/employee-giving"
-}

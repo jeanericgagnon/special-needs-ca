@@ -1,9 +1,0 @@
-{
-	"id": "pwgbTPp5VQAa1CA",
-	"json": "{\"id\":\"pwgbTPp5VQAa1CA\",\"url\":\"https://www.cde.ca.gov/sp/cd/ci/plissupportlanding.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/cd/ci/plissupportlanding.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/cd/ci/plissupportlanding.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:23:42.194Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/sp/cd/ci/plissupportlanding.asp",
-	"url": "https://www.cde.ca.gov/sp/cd/ci/plissupportlanding.asp"
-}

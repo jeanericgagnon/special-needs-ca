@@ -1,9 +1,0 @@
-{
-	"id": "Te42Iz2sRTKmX7t",
-	"json": "{\"id\":\"Te42Iz2sRTKmX7t\",\"url\":\"https://www.edd.ca.gov/Jobs_and_Training/WIOA_FAQs.htm\",\"loadedUrl\":\"https://edd.ca.gov/en/Jobs_and_Training/WIOA_FAQs\",\"uniqueKey\":\"https://www.edd.ca.gov/Jobs_and_Training/WIOA_FAQs.htm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:21:55.030Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.edd.ca.gov/Jobs_and_Training/WIOA_FAQs.htm",
-	"url": "https://www.edd.ca.gov/Jobs_and_Training/WIOA_FAQs.htm"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "C7nU72K1BvCCA0k",
-	"json": "{\"id\":\"C7nU72K1BvCCA0k\",\"url\":\"https://give.ucdavis.edu/MIND/325420\",\"loadedUrl\":\"https://give.ucdavis.edu/MIND/325420\",\"uniqueKey\":\"https://give.ucdavis.edu/MIND/325420\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:53.326Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/MIND/325420",
-	"url": "https://give.ucdavis.edu/MIND/325420"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "BtQUP7zs6gkkBP3",
-	"json": "{\"id\":\"BtQUP7zs6gkkBP3\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/42400/andrew-birkeland-otolaryngology_ent_ears_nose_throat-sacramento?FreeText%3aLast+name=Birkeland\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/42400/andrew-birkeland-otolaryngology_ent_ears_nose_throat-sacramento?FreeText%3aLast+name=Birkeland\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/42400/andrew-birkeland-otolaryngology_ent_ears_nose_throat-sacramento?FreeText%3ALast+name=Birkeland\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:08.864Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/42400/andrew-birkeland-otolaryngology_ent_ears_nose_throat-sacramento?FreeText%3ALast+name=Birkeland",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/42400/andrew-birkeland-otolaryngology_ent_ears_nose_throat-sacramento?FreeText%3aLast+name=Birkeland"
-}

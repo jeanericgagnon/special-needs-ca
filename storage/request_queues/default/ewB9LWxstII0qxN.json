@@ -1,9 +1,0 @@
-{
-	"id": "ewB9LWxstII0qxN",
-	"json": "{\"id\":\"ewB9LWxstII0qxN\",\"url\":\"https://give.ucdavis.edu/SONU/123750\",\"loadedUrl\":\"https://give.ucdavis.edu/SONU/123750\",\"uniqueKey\":\"https://give.ucdavis.edu/SONU/123750\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:01.715Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/SONU/123750",
-	"url": "https://give.ucdavis.edu/SONU/123750"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "6rDe9n9x9Ml1qch",
-	"json": "{\"id\":\"6rDe9n9x9Ml1qch\",\"url\":\"https://scdd.ca.gov/pos-service-code/teacher-of-special-education/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/teacher-of-special-education/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/teacher-of-special-education\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:57.105Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/pos-service-code/teacher-of-special-education",
-	"url": "https://scdd.ca.gov/pos-service-code/teacher-of-special-education/"
-}

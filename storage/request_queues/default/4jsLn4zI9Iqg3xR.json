@@ -1,9 +1,0 @@
-{
-	"id": "4jsLn4zI9Iqg3xR",
-	"json": "{\"id\":\"4jsLn4zI9Iqg3xR\",\"url\":\"https://www.dgs.ca.gov/OLS/Resources/Page-Content/Office-of-Legal-Services-Resources-List-Folder/Model-Contract-Language\",\"loadedUrl\":\"https://www.dgs.ca.gov/OLS/Resources/Page-Content/Office-of-Legal-Services-Resources-List-Folder/Model-Contract-Language\",\"uniqueKey\":\"https://www.dgs.ca.gov/OLS/Resources/Page-Content/Office-of-Legal-Services-Resources-List-Folder/Model-Contract-Language\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:06:48.521Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dgs.ca.gov/OLS/Resources/Page-Content/Office-of-Legal-Services-Resources-List-Folder/Model-Contract-Language",
-	"url": "https://www.dgs.ca.gov/OLS/Resources/Page-Content/Office-of-Legal-Services-Resources-List-Folder/Model-Contract-Language"
-}

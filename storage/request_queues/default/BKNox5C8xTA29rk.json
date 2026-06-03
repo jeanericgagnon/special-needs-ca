@@ -1,9 +1,0 @@
-{
-	"id": "BKNox5C8xTA29rk",
-	"json": "{\"id\":\"BKNox5C8xTA29rk\",\"url\":\"https://hobbs.vetmed.ucdavis.edu/\",\"loadedUrl\":\"https://hobbs.vetmed.ucdavis.edu/\",\"uniqueKey\":\"https://hobbs.vetmed.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:16.227Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hobbs.vetmed.ucdavis.edu",
-	"url": "https://hobbs.vetmed.ucdavis.edu/"
-}

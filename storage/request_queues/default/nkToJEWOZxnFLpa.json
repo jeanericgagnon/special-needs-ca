@@ -1,9 +1,0 @@
-{
-	"id": "nkToJEWOZxnFLpa",
-	"json": "{\"id\":\"nkToJEWOZxnFLpa\",\"url\":\"http://www.hr.ucdavis.edu/elr/employee/leave-time-off/Supplement%20to%20Military%20Pay_Issuance.pdf\",\"loadedUrl\":\"https://www.hr.ucdavis.edu/elr/employee/leave-time-off/Supplement%20to%20Military%20Pay_Issuance.pdf\",\"uniqueKey\":\"http://www.hr.ucdavis.edu/elr/employee/leave-time-off/Supplement%20to%20Military%20Pay_Issuance.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:49.475Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.hr.ucdavis.edu/elr/employee/leave-time-off/Supplement%20to%20Military%20Pay_Issuance.pdf",
-	"url": "http://www.hr.ucdavis.edu/elr/employee/leave-time-off/Supplement%20to%20Military%20Pay_Issuance.pdf"
-}

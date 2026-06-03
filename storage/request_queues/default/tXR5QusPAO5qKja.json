@@ -1,9 +1,0 @@
-{
-	"id": "tXR5QusPAO5qKja",
-	"json": "{\"id\":\"tXR5QusPAO5qKja\",\"url\":\"https://www.ucdavis.edu/admissions/cost/educational-opportunity-program\",\"loadedUrl\":\"https://www.ucdavis.edu/admissions/cost/educational-opportunity-program\",\"uniqueKey\":\"https://www.ucdavis.edu/admissions/cost/educational-opportunity-program\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:43.833Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ucdavis.edu/admissions/cost/educational-opportunity-program",
-	"url": "https://www.ucdavis.edu/admissions/cost/educational-opportunity-program"
-}

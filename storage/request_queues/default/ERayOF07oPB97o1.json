@@ -1,9 +1,0 @@
-{
-	"id": "ERayOF07oPB97o1",
-	"json": "{\"id\":\"ERayOF07oPB97o1\",\"url\":\"https://www.globaldownsyndrome.org/sq/\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/sq/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/sq\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:42.918Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.globaldownsyndrome.org/sq",
-	"url": "https://www.globaldownsyndrome.org/sq/"
-}

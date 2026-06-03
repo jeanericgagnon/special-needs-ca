@@ -1,9 +1,0 @@
-{
-	"id": "QloK6thLD2ee8Sk",
-	"json": "{\"id\":\"QloK6thLD2ee8Sk\",\"url\":\"https://www.library.ca.gov/btbl/contact/\",\"loadedUrl\":\"https://www.library.ca.gov/btbl/contact/\",\"uniqueKey\":\"https://www.library.ca.gov/btbl/contact\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:09:06.890Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.library.ca.gov/btbl/contact",
-	"url": "https://www.library.ca.gov/btbl/contact/"
-}

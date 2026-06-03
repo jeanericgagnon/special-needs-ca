@@ -1,9 +1,0 @@
-{
-	"id": "diSx4XYjpqJExba",
-	"json": "{\"id\":\"diSx4XYjpqJExba\",\"url\":\"https://resources.ca.gov/About-Us/Secretary-Crowfoot\",\"loadedUrl\":\"https://resources.ca.gov/About-Us/Secretary-Crowfoot\",\"uniqueKey\":\"https://resources.ca.gov/About-Us/Secretary-Crowfoot\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:10.826Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://resources.ca.gov/About-Us/Secretary-Crowfoot",
-	"url": "https://resources.ca.gov/About-Us/Secretary-Crowfoot"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "Gk5lMbLYmOZJkqp",
-	"json": "{\"id\":\"Gk5lMbLYmOZJkqp\",\"url\":\"https://health.ucdavis.edu/children/patient-education/\",\"loadedUrl\":\"https://health.ucdavis.edu/children/patient-education/\",\"uniqueKey\":\"https://health.ucdavis.edu/children/patient-education\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:50.861Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/children/patient-education",
-	"url": "https://health.ucdavis.edu/children/patient-education/"
-}

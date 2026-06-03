@@ -1,9 +1,0 @@
-{
-	"id": "jTkjQ6jQ7zNay4g",
-	"json": "{\"id\":\"jTkjQ6jQ7zNay4g\",\"url\":\"https://hr.ucdavis.edu/departments/learning/toolkits/mentoring\",\"loadedUrl\":\"https://hr.ucdavis.edu/departments/learning/toolkits/mentoring\",\"uniqueKey\":\"https://hr.ucdavis.edu/departments/learning/toolkits/mentoring\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:20.328Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/departments/learning/toolkits/mentoring",
-	"url": "https://hr.ucdavis.edu/departments/learning/toolkits/mentoring"
-}

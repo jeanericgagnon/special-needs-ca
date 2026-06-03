@@ -1,9 +1,0 @@
-{
-	"id": "D9Mv20P7H9SSYWz",
-	"json": "{\"id\":\"D9Mv20P7H9SSYWz\",\"url\":\"https://www.ucdavis.edu/admissions/undergraduate/apply/waitlist\",\"loadedUrl\":\"https://www.ucdavis.edu/admissions/undergraduate/apply/waitlist\",\"uniqueKey\":\"https://www.ucdavis.edu/admissions/undergraduate/apply/waitlist\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:42.528Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ucdavis.edu/admissions/undergraduate/apply/waitlist",
-	"url": "https://www.ucdavis.edu/admissions/undergraduate/apply/waitlist"
-}

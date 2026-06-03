@@ -1,9 +1,0 @@
-{
-	"id": "eK6U10JCzf9skyT",
-	"json": "{\"id\":\"eK6U10JCzf9skyT\",\"url\":\"https://health.ucdavis.edu/homecare/homehealth/about_home_health.html\",\"loadedUrl\":\"https://health.ucdavis.edu/homecare/homehealth/about_home_health.html\",\"uniqueKey\":\"https://health.ucdavis.edu/homecare/homehealth/about_home_health.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:43.328Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/homecare/homehealth/about_home_health.html",
-	"url": "https://health.ucdavis.edu/homecare/homehealth/about_home_health.html"
-}

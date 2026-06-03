@@ -1,9 +1,0 @@
-{
-	"id": "IDCm7EHRrqQOgAH",
-	"json": "{\"id\":\"IDCm7EHRrqQOgAH\",\"url\":\"https://police.ucdavis.edu/warnme#everbridge\",\"loadedUrl\":\"https://org.ucdavis.edu/wmnotify/home\",\"uniqueKey\":\"https://police.ucdavis.edu/warnme\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:32.330Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://police.ucdavis.edu/warnme",
-	"url": "https://police.ucdavis.edu/warnme#everbridge"
-}

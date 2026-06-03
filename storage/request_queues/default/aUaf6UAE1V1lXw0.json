@@ -1,9 +1,0 @@
-{
-	"id": "aUaf6UAE1V1lXw0",
-	"json": "{\"id\":\"aUaf6UAE1V1lXw0\",\"url\":\"https://health.ucdavis.edu/mind-institute/clinic/genomic-medicine/ourteam\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/clinic/genomic-medicine/ourteam\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/clinic/genomic-medicine/ourteam\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:47.847Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mind-institute/clinic/genomic-medicine/ourteam",
-	"url": "https://health.ucdavis.edu/mind-institute/clinic/genomic-medicine/ourteam"
-}

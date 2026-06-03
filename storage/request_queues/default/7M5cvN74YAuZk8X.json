@@ -1,9 +1,0 @@
-{
-	"id": "7M5cvN74YAuZk8X",
-	"json": "{\"id\":\"7M5cvN74YAuZk8X\",\"url\":\"https://www.ucdavis.edu/admissions/undergraduate/more-info\",\"loadedUrl\":\"https://www.ucdavis.edu/admissions/undergraduate/more-info\",\"uniqueKey\":\"https://www.ucdavis.edu/admissions/undergraduate/more-info\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:47.743Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ucdavis.edu/admissions/undergraduate/more-info",
-	"url": "https://www.ucdavis.edu/admissions/undergraduate/more-info"
-}

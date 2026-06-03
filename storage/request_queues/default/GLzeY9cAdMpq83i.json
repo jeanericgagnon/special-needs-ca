@@ -1,9 +1,0 @@
-{
-	"id": "GLzeY9cAdMpq83i",
-	"json": "{\"id\":\"GLzeY9cAdMpq83i\",\"url\":\"https://www.cde.ca.gov/ci/pl/antibiasab130.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/pl/antibiasab130.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/pl/antibiasab130.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:22:46.747Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ci/pl/antibiasab130.asp",
-	"url": "https://www.cde.ca.gov/ci/pl/antibiasab130.asp"
-}

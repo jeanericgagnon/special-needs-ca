@@ -1,9 +1,0 @@
-{
-	"id": "C8CvPc4R8pl84Cj",
-	"json": "{\"id\":\"C8CvPc4R8pl84Cj\",\"url\":\"https://cnprc.ucdavis.edu/marcelo-kuroda\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/marcelo-kuroda\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/marcelo-kuroda\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:13.717Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cnprc.ucdavis.edu/marcelo-kuroda",
-	"url": "https://cnprc.ucdavis.edu/marcelo-kuroda"
-}

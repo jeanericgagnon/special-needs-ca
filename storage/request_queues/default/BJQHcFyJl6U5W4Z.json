@@ -1,9 +1,0 @@
-{
-	"id": "BJQHcFyJl6U5W4Z",
-	"json": "{\"id\":\"BJQHcFyJl6U5W4Z\",\"url\":\"https://neuroscience.ucdavis.edu/people/jie-zheng\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/people/jie-zheng\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/people/jie-zheng\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:50.048Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/people/jie-zheng",
-	"url": "https://neuroscience.ucdavis.edu/people/jie-zheng"
-}

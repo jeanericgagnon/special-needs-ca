@@ -1,9 +1,0 @@
-{
-	"id": "FWPrOEryx4s6Tgb",
-	"json": "{\"id\":\"FWPrOEryx4s6Tgb\",\"url\":\"https://www.calhr.ca.gov/about-calhr/childcare-providers-labor-relations/\",\"loadedUrl\":\"https://www.calhr.ca.gov/about-calhr/childcare-providers-labor-relations/\",\"uniqueKey\":\"https://www.calhr.ca.gov/about-calhr/childcare-providers-labor-relations\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:25:12.016Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.calhr.ca.gov/about-calhr/childcare-providers-labor-relations",
-	"url": "https://www.calhr.ca.gov/about-calhr/childcare-providers-labor-relations/"
-}

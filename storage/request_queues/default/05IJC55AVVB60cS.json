@@ -1,9 +1,0 @@
-{
-	"id": "05IJC55AVVB60cS",
-	"json": "{\"id\":\"05IJC55AVVB60cS\",\"url\":\"https://www.chhs.ca.gov/blog/2018/04/26/open-data-for-government/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2018/04/26/open-data-for-government/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2018/04/26/open-data-for-government\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:15.845Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chhs.ca.gov/blog/2018/04/26/open-data-for-government",
-	"url": "https://www.chhs.ca.gov/blog/2018/04/26/open-data-for-government/"
-}

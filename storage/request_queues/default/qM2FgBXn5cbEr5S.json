@@ -1,9 +1,0 @@
-{
-	"id": "qM2FgBXn5cbEr5S",
-	"json": "{\"id\":\"qM2FgBXn5cbEr5S\",\"url\":\"https://ait-bi.ucdavis.edu/ibmcognos/bi/\",\"loadedUrl\":\"https://cas.ucdavis.edu/cas/login?service=https%3a%2f%2fait-bi.ucdavis.edu%2fibmcognos%2fbi%2f\",\"uniqueKey\":\"https://ait-bi.ucdavis.edu/ibmcognos/bi\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:29.989Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ait-bi.ucdavis.edu/ibmcognos/bi",
-	"url": "https://ait-bi.ucdavis.edu/ibmcognos/bi/"
-}

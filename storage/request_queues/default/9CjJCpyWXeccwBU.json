@@ -1,9 +1,0 @@
-{
-	"id": "9CjJCpyWXeccwBU",
-	"json": "{\"id\":\"9CjJCpyWXeccwBU\",\"url\":\"https://data.ca.gov/pages/portal-metrics\",\"loadedUrl\":\"https://data.ca.gov/pages/portal-metrics\",\"uniqueKey\":\"https://data.ca.gov/pages/portal-metrics\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:13.543Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://data.ca.gov/pages/portal-metrics",
-	"url": "https://data.ca.gov/pages/portal-metrics"
-}

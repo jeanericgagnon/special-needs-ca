@@ -1,9 +1,0 @@
-{
-	"id": "XFfSfKDWUpSPDDR",
-	"json": "{\"id\":\"XFfSfKDWUpSPDDR\",\"url\":\"https://capitolmuseum.ca.gov/\",\"loadedUrl\":\"https://capitolmuseum.ca.gov/\",\"uniqueKey\":\"https://capitolmuseum.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:03:00.996Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://capitolmuseum.ca.gov",
-	"url": "https://capitolmuseum.ca.gov/"
-}

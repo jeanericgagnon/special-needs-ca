@@ -1,9 +1,0 @@
-{
-	"id": "TR7f0Unx1MaFfIu",
-	"json": "{\"id\":\"TR7f0Unx1MaFfIu\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/1246/noriko-satake---pediatrics---pediatric-hematology-oncology---hematology-oncology-sacramento/\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/1246/noriko-satake---pediatrics---pediatric-hematology-oncology---hematology-oncology-sacramento/\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/1246/noriko-satake---pediatrics---pediatric-hematology-oncology---hematology-oncology-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:17.261Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/1246/noriko-satake---pediatrics---pediatric-hematology-oncology---hematology-oncology-sacramento",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/1246/noriko-satake---pediatrics---pediatric-hematology-oncology---hematology-oncology-sacramento/"
-}

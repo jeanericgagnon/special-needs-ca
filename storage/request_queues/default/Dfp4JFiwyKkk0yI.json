@@ -1,9 +1,0 @@
-{
-	"id": "Dfp4JFiwyKkk0yI",
-	"json": "{\"id\":\"Dfp4JFiwyKkk0yI\",\"url\":\"https://give.ucdavis.edu/BMIC/MICVARD\",\"loadedUrl\":\"https://give.ucdavis.edu/BMIC/MICVARD\",\"uniqueKey\":\"https://give.ucdavis.edu/BMIC/MICVARD\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:57.012Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/BMIC/MICVARD",
-	"url": "https://give.ucdavis.edu/BMIC/MICVARD"
-}

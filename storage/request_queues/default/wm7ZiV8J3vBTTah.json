@@ -1,9 +1,0 @@
-{
-	"id": "wm7ZiV8J3vBTTah",
-	"json": "{\"id\":\"wm7ZiV8J3vBTTah\",\"url\":\"https://mychart.ucdavis.edu/mychart/SymptomChecker/SelfTriage/Load?TreeUniversalKey=1003945\",\"loadedUrl\":\"https://mychart.ucdavis.edu/MyChart/Authentication/Login?postloginurl=SymptomChecker%2fProxySelect%3fTreeUniversalKey%3d1003945&liteMode=true\",\"uniqueKey\":\"https://mychart.ucdavis.edu/mychart/SymptomChecker/SelfTriage/Load?TreeUniversalKey=1003945\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:54.680Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://mychart.ucdavis.edu/mychart/SymptomChecker/SelfTriage/Load?TreeUniversalKey=1003945",
-	"url": "https://mychart.ucdavis.edu/mychart/SymptomChecker/SelfTriage/Load?TreeUniversalKey=1003945"
-}

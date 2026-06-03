@@ -1,9 +1,0 @@
-{
-	"id": "NLjRBveOSpor68T",
-	"json": "{\"id\":\"NLjRBveOSpor68T\",\"url\":\"https://secure.ssa.gov/RIL/logout\",\"loadedUrl\":\"https://secure.ssa.gov/isam/sps/mySSAsp/saml20/sloinitial\",\"uniqueKey\":\"https://secure.ssa.gov/RIL/logout\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:32.794Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://secure.ssa.gov/RIL/logout",
-	"url": "https://secure.ssa.gov/RIL/logout"
-}

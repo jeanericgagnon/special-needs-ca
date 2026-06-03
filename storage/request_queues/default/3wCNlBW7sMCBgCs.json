@@ -1,9 +1,0 @@
-{
-	"id": "3wCNlBW7sMCBgCs",
-	"json": "{\"id\":\"3wCNlBW7sMCBgCs\",\"url\":\"https://rarediseases.org/es/telemedicina-para-pacientes-y-cuidadores/\",\"loadedUrl\":\"https://rarediseases.org/es/telemedicina-para-pacientes-y-cuidadores/\",\"uniqueKey\":\"https://rarediseases.org/es/telemedicina-para-pacientes-y-cuidadores\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:57:41.914Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/es/telemedicina-para-pacientes-y-cuidadores",
-	"url": "https://rarediseases.org/es/telemedicina-para-pacientes-y-cuidadores/"
-}

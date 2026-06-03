@@ -1,9 +1,0 @@
-{
-	"id": "zr44Fl8mSJ1Tpks",
-	"json": "{\"id\":\"zr44Fl8mSJ1Tpks\",\"url\":\"https://aggieenterprise.ucdavis.edu/\",\"loadedUrl\":\"https://aggieenterprise.ucdavis.edu/\",\"uniqueKey\":\"https://aggieenterprise.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:49.445Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://aggieenterprise.ucdavis.edu",
-	"url": "https://aggieenterprise.ucdavis.edu/"
-}

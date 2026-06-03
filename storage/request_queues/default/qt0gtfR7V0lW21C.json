@@ -1,9 +1,0 @@
-{
-	"id": "qt0gtfR7V0lW21C",
-	"json": "{\"id\":\"qt0gtfR7V0lW21C\",\"url\":\"https://health.ucdavis.edu/internalmedicine/nephrology/\",\"loadedUrl\":\"https://health.ucdavis.edu/internal-medicine/nephrology/\",\"uniqueKey\":\"https://health.ucdavis.edu/internalmedicine/nephrology\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:51.060Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/internalmedicine/nephrology",
-	"url": "https://health.ucdavis.edu/internalmedicine/nephrology/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "8xtkY1gTe1kBqnn",
-	"json": "{\"id\":\"8xtkY1gTe1kBqnn\",\"url\":\"https://health.ucdavis.edu/medical-center/patients/about-your-stay/visiting-hours-policies\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-center/patients/about-your-stay/visiting-hours-policies\",\"uniqueKey\":\"https://health.ucdavis.edu/medical-center/patients/about-your-stay/visiting-hours-policies\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:56.060Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/medical-center/patients/about-your-stay/visiting-hours-policies",
-	"url": "https://health.ucdavis.edu/medical-center/patients/about-your-stay/visiting-hours-policies"
-}

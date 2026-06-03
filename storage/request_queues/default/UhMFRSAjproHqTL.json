@@ -1,9 +1,0 @@
-{
-	"id": "UhMFRSAjproHqTL",
-	"json": "{\"id\":\"UhMFRSAjproHqTL\",\"url\":\"https://neuroscience.ucdavis.edu/people/william-debello\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/people/william-debello\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/people/william-debello\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:39.155Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/people/william-debello",
-	"url": "https://neuroscience.ucdavis.edu/people/william-debello"
-}

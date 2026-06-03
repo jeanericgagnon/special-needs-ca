@@ -1,9 +1,0 @@
-{
-	"id": "PuTVDVhJwLhhm64",
-	"json": "{\"id\":\"PuTVDVhJwLhhm64\",\"url\":\"https://mindbrain.ucdavis.edu/what-others-say\",\"loadedUrl\":\"https://mindbrain.ucdavis.edu/what-others-say\",\"uniqueKey\":\"https://mindbrain.ucdavis.edu/what-others-say\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:02.655Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://mindbrain.ucdavis.edu/what-others-say",
-	"url": "https://mindbrain.ucdavis.edu/what-others-say"
-}

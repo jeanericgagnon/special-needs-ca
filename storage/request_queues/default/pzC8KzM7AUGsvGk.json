@@ -1,9 +1,0 @@
-{
-	"id": "pzC8KzM7AUGsvGk",
-	"json": "{\"id\":\"pzC8KzM7AUGsvGk\",\"url\":\"https://scdd.ca.gov/sdm-tap-resources/american-bar-association-resolution-on-supported-decision-making/\",\"loadedUrl\":\"https://scdd.ca.gov/sdm-tap-resources/american-bar-association-resolution-on-supported-decision-making/\",\"uniqueKey\":\"https://scdd.ca.gov/sdm-tap-resources/american-bar-association-resolution-on-supported-decision-making\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:19:34.191Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/sdm-tap-resources/american-bar-association-resolution-on-supported-decision-making",
-	"url": "https://scdd.ca.gov/sdm-tap-resources/american-bar-association-resolution-on-supported-decision-making/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "5yipARRXEbzcZfB",
-	"json": "{\"id\":\"5yipARRXEbzcZfB\",\"url\":\"https://health.ucdavis.edu/emergency/patients/index.html\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-center/services-specialties/emergency/\",\"uniqueKey\":\"https://health.ucdavis.edu/emergency/patients/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:54.571Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/emergency/patients/index.html",
-	"url": "https://health.ucdavis.edu/emergency/patients/index.html"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "pV4tmW3Q78iTmwy",
-	"json": "{\"id\":\"pV4tmW3Q78iTmwy\",\"url\":\"https://www.ftb.ca.gov/file/ways-to-file/online/index.html?WT.mc_id=CAGov_Service_efile\",\"loadedUrl\":\"https://www.ftb.ca.gov/file/ways-to-file/online/index.html?WT.mc_id=CAGov_Service_efile\",\"uniqueKey\":\"https://www.ftb.ca.gov/file/ways-to-file/online/index.html?WT.mc_id=CAGov_Service_efile\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:32.566Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ftb.ca.gov/file/ways-to-file/online/index.html?WT.mc_id=CAGov_Service_efile",
-	"url": "https://www.ftb.ca.gov/file/ways-to-file/online/index.html?WT.mc_id=CAGov_Service_efile"
-}

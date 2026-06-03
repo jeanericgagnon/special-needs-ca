@@ -1,9 +1,0 @@
-{
-	"id": "g1BEI1w5PD81Hi7",
-	"json": "{\"id\":\"g1BEI1w5PD81Hi7\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/default.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/default.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/default.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-06-01T14:55:18.852Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/default.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/default.aspx"
-}

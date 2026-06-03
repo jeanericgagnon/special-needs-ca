@@ -1,9 +1,0 @@
-{
-	"id": "qxoYPpXvmLSmoRS",
-	"json": "{\"id\":\"qxoYPpXvmLSmoRS\",\"url\":\"https://health.ucdavis.edu/neurology/giving/ways-to-give\",\"loadedUrl\":\"https://health.ucdavis.edu/neurology/giving/ways-to-give\",\"uniqueKey\":\"https://health.ucdavis.edu/neurology/giving/ways-to-give\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:52.388Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/neurology/giving/ways-to-give",
-	"url": "https://health.ucdavis.edu/neurology/giving/ways-to-give"
-}

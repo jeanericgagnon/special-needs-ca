@@ -1,9 +1,0 @@
-{
-	"id": "sjZPufn6ck40H5O",
-	"json": "{\"id\":\"sjZPufn6ck40H5O\",\"url\":\"https://health.ucdavis.edu/cancer/support/support-services/\",\"loadedUrl\":\"https://health.ucdavis.edu/cancer/support/support-services/\",\"uniqueKey\":\"https://health.ucdavis.edu/cancer/support/support-services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:23.059Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/cancer/support/support-services",
-	"url": "https://health.ucdavis.edu/cancer/support/support-services/"
-}

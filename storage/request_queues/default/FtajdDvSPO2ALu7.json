@@ -1,9 +1,0 @@
-{
-	"id": "FtajdDvSPO2ALu7",
-	"json": "{\"id\":\"FtajdDvSPO2ALu7\",\"url\":\"https://health.ucdavis.edu/graduate-medical-education/prospective-applicants/housing-notices\",\"loadedUrl\":\"https://health.ucdavis.edu/graduate-medical-education/prospective-applicants/housing-notices\",\"uniqueKey\":\"https://health.ucdavis.edu/graduate-medical-education/prospective-applicants/housing-notices\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:12.292Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/graduate-medical-education/prospective-applicants/housing-notices",
-	"url": "https://health.ucdavis.edu/graduate-medical-education/prospective-applicants/housing-notices"
-}

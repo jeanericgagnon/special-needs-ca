@@ -1,9 +1,0 @@
-{
-	"id": "7oHBkOPIZa0YLXO",
-	"json": "{\"id\":\"7oHBkOPIZa0YLXO\",\"url\":\"https://www.dds.ca.gov/rc/vendor-provider/rate-reform/directives-updates/servicecodeexemptiontotals-february22026/\",\"loadedUrl\":\"https://www.dds.ca.gov/rc/vendor-provider/rate-reform/directives-updates/servicecodeexemptiontotals-february22026/\",\"uniqueKey\":\"https://www.dds.ca.gov/rc/vendor-provider/rate-reform/directives-updates/servicecodeexemptiontotals-february22026\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:53.961Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/rc/vendor-provider/rate-reform/directives-updates/servicecodeexemptiontotals-february22026",
-	"url": "https://www.dds.ca.gov/rc/vendor-provider/rate-reform/directives-updates/servicecodeexemptiontotals-february22026/"
-}

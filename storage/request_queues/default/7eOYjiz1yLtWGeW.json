@@ -1,9 +1,0 @@
-{
-	"id": "7eOYjiz1yLtWGeW",
-	"json": "{\"id\":\"7eOYjiz1yLtWGeW\",\"url\":\"https://cdss.ca.gov/cacfp/apply\",\"loadedUrl\":\"https://cdss.ca.gov/cacfp/apply\",\"uniqueKey\":\"https://cdss.ca.gov/cacfp/apply\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:58:30.574Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/cacfp/apply",
-	"url": "https://cdss.ca.gov/cacfp/apply"
-}

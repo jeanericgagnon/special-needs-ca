@@ -1,9 +1,0 @@
-{
-	"id": "WlWikXN1m4NWpI4",
-	"json": "{\"id\":\"WlWikXN1m4NWpI4\",\"url\":\"https://www.accountability.ca.gov/website-accessibility-certification.html\",\"loadedUrl\":\"https://www.accountability.ca.gov/website-accessibility-certification.html\",\"uniqueKey\":\"https://www.accountability.ca.gov/website-accessibility-certification.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:57.443Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.accountability.ca.gov/website-accessibility-certification.html",
-	"url": "https://www.accountability.ca.gov/website-accessibility-certification.html"
-}

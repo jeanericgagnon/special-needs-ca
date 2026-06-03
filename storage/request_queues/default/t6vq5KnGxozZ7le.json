@@ -1,9 +1,0 @@
-{
-	"id": "t6vq5KnGxozZ7le",
-	"json": "{\"id\":\"t6vq5KnGxozZ7le\",\"url\":\"https://calable.ca.gov/news\",\"loadedUrl\":\"https://calable.ca.gov/news\",\"uniqueKey\":\"https://calable.ca.gov/news\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:15.627Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://calable.ca.gov/news",
-	"url": "https://calable.ca.gov/news"
-}

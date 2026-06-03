@@ -1,9 +1,0 @@
-{
-	"id": "gL2XAx94Fpjfpd7",
-	"json": "{\"id\":\"gL2XAx94Fpjfpd7\",\"url\":\"https://calable.ca.gov/api/v1/@apostrophecms/page/ckrefnb3a000g8houqdkolq6z:en:published/locale/en\",\"loadedUrl\":\"https://calable.ca.gov/eligibility-screener\",\"uniqueKey\":\"https://calable.ca.gov/api/v1/@apostrophecms/page/ckrefnb3a000g8houqdkolq6z:en:published/locale/en\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:54.805Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://calable.ca.gov/api/v1/@apostrophecms/page/ckrefnb3a000g8houqdkolq6z:en:published/locale/en",
-	"url": "https://calable.ca.gov/api/v1/@apostrophecms/page/ckrefnb3a000g8houqdkolq6z:en:published/locale/en"
-}

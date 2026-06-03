@@ -1,9 +1,0 @@
-{
-	"id": "aj3N3rkueZewCaq",
-	"json": "{\"id\":\"aj3N3rkueZewCaq\",\"url\":\"https://health.ucdavis.edu/psychiatry/giving/\",\"loadedUrl\":\"https://health.ucdavis.edu/psychiatry/giving/\",\"uniqueKey\":\"https://health.ucdavis.edu/psychiatry/giving\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:51.277Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/psychiatry/giving",
-	"url": "https://health.ucdavis.edu/psychiatry/giving/"
-}

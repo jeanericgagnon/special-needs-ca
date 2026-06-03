@@ -1,9 +1,0 @@
-{
-	"id": "fAtVFjRvHw1FJK2",
-	"json": "{\"id\":\"fAtVFjRvHw1FJK2\",\"url\":\"https://bigideas.ucdavis.edu/brain-health-brain-fitness-healthy-aging\",\"loadedUrl\":\"https://giving.ucdavis.edu/\",\"uniqueKey\":\"https://bigideas.ucdavis.edu/brain-health-brain-fitness-healthy-aging\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:22.439Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://bigideas.ucdavis.edu/brain-health-brain-fitness-healthy-aging",
-	"url": "https://bigideas.ucdavis.edu/brain-health-brain-fitness-healthy-aging"
-}

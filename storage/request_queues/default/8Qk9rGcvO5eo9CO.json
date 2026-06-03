@@ -1,9 +1,0 @@
-{
-	"id": "8Qk9rGcvO5eo9CO",
-	"json": "{\"id\":\"8Qk9rGcvO5eo9CO\",\"url\":\"https://dtsc.ca.gov/toxics-in-products/lead-in-jewelry/\",\"loadedUrl\":\"https://dtsc.ca.gov/toxics-in-products/lead-in-jewelry/\",\"uniqueKey\":\"https://dtsc.ca.gov/toxics-in-products/lead-in-jewelry\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:19:15.721Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://dtsc.ca.gov/toxics-in-products/lead-in-jewelry",
-	"url": "https://dtsc.ca.gov/toxics-in-products/lead-in-jewelry/"
-}

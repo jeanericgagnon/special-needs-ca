@@ -1,9 +1,0 @@
-{
-	"id": "9O5XKScdZjTGHIg",
-	"json": "{\"id\":\"9O5XKScdZjTGHIg\",\"url\":\"https://appointments.ucdavis.edu/default.aspx?office=1\",\"loadedUrl\":\"https://cas.ucdavis.edu/cas/login?service=https%3a%2f%2fappointments.ucdavis.edu%2fdefault.aspx%3foffice%3d1\",\"uniqueKey\":\"https://appointments.ucdavis.edu/default.aspx?office=1\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:22.275Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://appointments.ucdavis.edu/default.aspx?office=1",
-	"url": "https://appointments.ucdavis.edu/default.aspx?office=1"
-}

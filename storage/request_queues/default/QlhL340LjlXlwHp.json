@@ -1,9 +1,0 @@
-{
-	"id": "QlhL340LjlXlwHp",
-	"json": "{\"id\":\"QlhL340LjlXlwHp\",\"url\":\"http://www.cdss.ca.gov/contact-us\",\"loadedUrl\":\"https://www.cdss.ca.gov/contact-us\",\"uniqueKey\":\"http://www.cdss.ca.gov/contact-us\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:56.312Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.cdss.ca.gov/contact-us",
-	"url": "http://www.cdss.ca.gov/contact-us"
-}

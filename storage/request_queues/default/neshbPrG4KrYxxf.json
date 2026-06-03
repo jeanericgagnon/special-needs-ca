@@ -1,9 +1,0 @@
-{
-	"id": "neshbPrG4KrYxxf",
-	"json": "{\"id\":\"neshbPrG4KrYxxf\",\"url\":\"https://www.cde.ca.gov/ls/nu/fd\",\"loadedUrl\":\"https://www.cde.ca.gov/ls/nu/fd/\",\"uniqueKey\":\"https://www.cde.ca.gov/ls/nu/fd\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:19.229Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ls/nu/fd",
-	"url": "https://www.cde.ca.gov/ls/nu/fd"
-}

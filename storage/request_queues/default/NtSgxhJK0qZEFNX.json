@@ -1,9 +1,0 @@
-{
-	"id": "NtSgxhJK0qZEFNX",
-	"json": "{\"id\":\"NtSgxhJK0qZEFNX\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/AFLP/Pages/AFLP-RFA-2023-Addendum-1.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/AFLP/Pages/AFLP-RFA-2023-Addendum-1.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/AFLP/Pages/AFLP-RFA-2023-Addendum-1.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:40.715Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/AFLP/Pages/AFLP-RFA-2023-Addendum-1.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/AFLP/Pages/AFLP-RFA-2023-Addendum-1.aspx"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "uFFe6cK9Pfyj2s5",
-	"json": "{\"id\":\"uFFe6cK9Pfyj2s5\",\"url\":\"https://cdss.ca.gov/inforesources/letters-regulations/letters-and-notices/cfsd/2019\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/letters-regulations/letters-and-notices/cfsd/2019\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/letters-regulations/letters-and-notices/cfsd/2019\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:58.735Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/letters-regulations/letters-and-notices/cfsd/2019",
-	"url": "https://cdss.ca.gov/inforesources/letters-regulations/letters-and-notices/cfsd/2019"
-}

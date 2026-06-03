@@ -1,9 +1,0 @@
-{
-	"id": "v55xg1zzcgTfFsV",
-	"json": "{\"id\":\"v55xg1zzcgTfFsV\",\"url\":\"https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/HCV-Allocations-Fiscal-Year-2024-25-through-Fiscal-Year-2027-28.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/HCV-Allocations-Fiscal-Year-2024-25-through-Fiscal-Year-2027-28.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/HCV-Allocations-Fiscal-Year-2024-25-through-Fiscal-Year-2027-28.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":1,\"errorMessages\":[\"Error: request timed out after 30 seconds.\\n    at Timeout._onTimeout (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@apify/timeout/cjs/index.cjs:64:68)\\n    at listOnTimeout (node:internal/timers:588:17)\\n    at process.processTimers (node:internal/timers:523:7)\"],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:52:58.797Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 1,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/HCV-Allocations-Fiscal-Year-2024-25-through-Fiscal-Year-2027-28.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/HCV-Allocations-Fiscal-Year-2024-25-through-Fiscal-Year-2027-28.aspx"
-}

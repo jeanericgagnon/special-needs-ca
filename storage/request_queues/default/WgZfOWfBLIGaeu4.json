@@ -1,9 +1,0 @@
-{
-	"id": "WgZfOWfBLIGaeu4",
-	"json": "{\"id\":\"WgZfOWfBLIGaeu4\",\"url\":\"https://data.ca.gov/group/water\",\"loadedUrl\":\"https://data.ca.gov/group/water\",\"uniqueKey\":\"https://data.ca.gov/group/water\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:13.998Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://data.ca.gov/group/water",
-	"url": "https://data.ca.gov/group/water"
-}

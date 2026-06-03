@@ -1,9 +1,0 @@
-{
-	"id": "rAzAy8BBIaEW1Vv",
-	"json": "{\"id\":\"rAzAy8BBIaEW1Vv\",\"url\":\"https://www.cdph.ca.gov/Programs/cls/idld/vrdl/Pages/TestCatalog/Dengue-1-4-PCR.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/cls/idld/vrdl/Pages/TestCatalog/Dengue-1-4-PCR.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/cls/idld/vrdl/Pages/TestCatalog/Dengue-1-4-PCR.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:53:11.523Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/cls/idld/vrdl/Pages/TestCatalog/Dengue-1-4-PCR.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/cls/idld/vrdl/Pages/TestCatalog/Dengue-1-4-PCR.aspx"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "1yojhmZJzngFBbZ",
-	"json": "{\"id\":\"1yojhmZJzngFBbZ\",\"url\":\"https://health.ucdavis.edu/mind-institute/news/headlines/new-trial-at-uc-davis-health-shows-promising-results-for-rare-liver-disease/2025/12\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/news/headlines/new-trial-at-uc-davis-health-shows-promising-results-for-rare-liver-disease/2025/12\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/news/headlines/new-trial-at-uc-davis-health-shows-promising-results-for-rare-liver-disease/2025/12\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:25.012Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mind-institute/news/headlines/new-trial-at-uc-davis-health-shows-promising-results-for-rare-liver-disease/2025/12",
-	"url": "https://health.ucdavis.edu/mind-institute/news/headlines/new-trial-at-uc-davis-health-shows-promising-results-for-rare-liver-disease/2025/12"
-}

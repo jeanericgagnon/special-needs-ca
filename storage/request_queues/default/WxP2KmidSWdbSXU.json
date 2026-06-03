@@ -1,9 +1,0 @@
-{
-	"id": "WxP2KmidSWdbSXU",
-	"json": "{\"id\":\"WxP2KmidSWdbSXU\",\"url\":\"https://www.chp.ca.gov/link/d6283547ac00447f8f0916c798c3f2a7.aspx\",\"loadedUrl\":\"https://www.chp.ca.gov/faq/\",\"uniqueKey\":\"https://www.chp.ca.gov/link/d6283547ac00447f8f0916c798c3f2a7.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:11.734Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chp.ca.gov/link/d6283547ac00447f8f0916c798c3f2a7.aspx",
-	"url": "https://www.chp.ca.gov/link/d6283547ac00447f8f0916c798c3f2a7.aspx"
-}

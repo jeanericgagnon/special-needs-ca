@@ -1,9 +1,0 @@
-{
-	"id": "BfjoGVZ8FN9fK7l",
-	"json": "{\"id\":\"BfjoGVZ8FN9fK7l\",\"url\":\"https://www.cde.ca.gov/sp/se/sr/cefspeced.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/se/sr/cefspeced.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/se/sr/cefspeced.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:04.607Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/sp/se/sr/cefspeced.asp",
-	"url": "https://www.cde.ca.gov/sp/se/sr/cefspeced.asp"
-}

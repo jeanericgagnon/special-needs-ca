@@ -1,9 +1,0 @@
-{
-	"id": "hSg0zXumJXGPKYO",
-	"json": "{\"id\":\"hSg0zXumJXGPKYO\",\"url\":\"https://health.ucdavis.edu/nursing/ourteam/faculty/brittany-stagg-bio.html\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/ourteam/faculty/brittany-stagg-bio.html\",\"uniqueKey\":\"https://health.ucdavis.edu/nursing/ourteam/faculty/brittany-stagg-bio.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:12.994Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/nursing/ourteam/faculty/brittany-stagg-bio.html",
-	"url": "https://health.ucdavis.edu/nursing/ourteam/faculty/brittany-stagg-bio.html"
-}

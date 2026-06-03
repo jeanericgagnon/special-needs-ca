@@ -1,9 +1,0 @@
-{
-	"id": "LB6F4fttdNfAhHg",
-	"json": "{\"id\":\"LB6F4fttdNfAhHg\",\"url\":\"https://www.cde.ca.gov/ci/pl/hssstateseal.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=a75ee76a-f71e-4fba-bc0b-bc4a47129861&ssb=80948253058&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fci%2Fpl%2Fhssstateseal.asp&ssi=f9f9d40d-ctxv-4ddf-ab05-aceacfcaf062&ssk=botmanager_support@radware.com&ssm=01676522113998639105222257121328&ssn=303e623b72bbc67c2bc309bc9441d5eb8dfb35df18e9-6448-43e9-a067c1&sso=6a1bec7c-e622178c06448b94edd6f4fb6e81a46de6aa1fe32f5a870f&ssp=82205502131780316534178036564763420&ssq=91010002658133332269226581224763084276029&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsIl9fdXptZiI6IjdmOTAwMDM1ZGYxOGU5LTY0NDgtNDNlOS1hYzdjLWU2MjIxNzhjMDY0NDEtMTc4MDMyNjU4MTIzOTAtMDAzOTBlZWQyNWJlNDQ3YmM1NTEwIiwidXpteCI6IjdmOTAwMDYyZjZiMDYzLTA2MjgtNDgxNC05ZGQ3LTU5YTZmYWE3MDEyOTEtMTc4MDMyNjU4MTIzOTAtZjM5ZDI4NjA2YTNiOWY2YjEwIn0=\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/pl/hssstateseal.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:09:41.647Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ci/pl/hssstateseal.asp",
-	"url": "https://www.cde.ca.gov/ci/pl/hssstateseal.asp"
-}

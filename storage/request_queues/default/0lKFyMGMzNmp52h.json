@@ -1,9 +1,0 @@
-{
-	"id": "0lKFyMGMzNmp52h",
-	"json": "{\"id\":\"0lKFyMGMzNmp52h\",\"url\":\"http://registrar.ucdavis.edu/tuition/residence/index.cfm\",\"loadedUrl\":\"https://registrar.ucdavis.edu/tuition\",\"uniqueKey\":\"http://registrar.ucdavis.edu/tuition/residence/index.cfm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:19.297Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://registrar.ucdavis.edu/tuition/residence/index.cfm",
-	"url": "http://registrar.ucdavis.edu/tuition/residence/index.cfm"
-}

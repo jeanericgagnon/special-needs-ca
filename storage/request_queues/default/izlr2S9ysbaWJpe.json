@@ -1,9 +1,0 @@
-{
-	"id": "izlr2S9ysbaWJpe",
-	"json": "{\"id\":\"izlr2S9ysbaWJpe\",\"url\":\"https://health.ucdavis.edu/healthcare-professionals/news/headlines/uc-davis-health-opens-obesity-clinic-/2026/03\",\"loadedUrl\":\"https://health.ucdavis.edu/healthcare-professionals/news/headlines/uc-davis-health-opens-obesity-clinic-/2026/03\",\"uniqueKey\":\"https://health.ucdavis.edu/healthcare-professionals/news/headlines/uc-davis-health-opens-obesity-clinic-/2026/03\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:06.228Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/healthcare-professionals/news/headlines/uc-davis-health-opens-obesity-clinic-/2026/03",
-	"url": "https://health.ucdavis.edu/healthcare-professionals/news/headlines/uc-davis-health-opens-obesity-clinic-/2026/03"
-}

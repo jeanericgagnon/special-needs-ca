@@ -1,9 +1,0 @@
-{
-	"id": "BS3zzFRXIb1oJlq",
-	"json": "{\"id\":\"BS3zzFRXIb1oJlq\",\"url\":\"https://health.ucdavis.edu/cnr/\",\"loadedUrl\":\"https://health.ucdavis.edu/cnr/\",\"uniqueKey\":\"https://health.ucdavis.edu/cnr\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:53.528Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/cnr",
-	"url": "https://health.ucdavis.edu/cnr/"
-}

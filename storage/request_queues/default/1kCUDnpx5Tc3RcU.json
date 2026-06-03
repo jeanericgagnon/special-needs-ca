@@ -1,9 +1,0 @@
-{
-	"id": "1kCUDnpx5Tc3RcU",
-	"json": "{\"id\":\"1kCUDnpx5Tc3RcU\",\"url\":\"https://hr.ucdavis.edu/newsletters/health-wellness\",\"loadedUrl\":\"https://hr.ucdavis.edu/newsletters/health-wellness\",\"uniqueKey\":\"https://hr.ucdavis.edu/newsletters/health-wellness\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:12.766Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/newsletters/health-wellness",
-	"url": "https://hr.ucdavis.edu/newsletters/health-wellness"
-}

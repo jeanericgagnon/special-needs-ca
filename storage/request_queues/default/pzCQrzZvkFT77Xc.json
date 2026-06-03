@@ -1,9 +1,0 @@
-{
-	"id": "pzCQrzZvkFT77Xc",
-	"json": "{\"id\":\"pzCQrzZvkFT77Xc\",\"url\":\"https://www.library.ca.gov/california-history/\",\"loadedUrl\":\"https://www.library.ca.gov/california-history/\",\"uniqueKey\":\"https://www.library.ca.gov/california-history\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:17.496Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.library.ca.gov/california-history",
-	"url": "https://www.library.ca.gov/california-history/"
-}

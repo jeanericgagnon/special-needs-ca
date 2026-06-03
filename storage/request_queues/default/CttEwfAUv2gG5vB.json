@@ -1,9 +1,0 @@
-{
-	"id": "CttEwfAUv2gG5vB",
-	"json": "{\"id\":\"CttEwfAUv2gG5vB\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/1449/veronique-tache-maternal-fetal_medicine-obstetrics_and_gynecology-sacramento?FreeText%3aLast+name=Tache\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/1449/veronique-tache-maternal-fetal_medicine-obstetrics_and_gynecology-sacramento?FreeText%3aLast+name=Tache\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/1449/veronique-tache-maternal-fetal_medicine-obstetrics_and_gynecology-sacramento?FreeText%3ALast+name=Tache\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:11.831Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/1449/veronique-tache-maternal-fetal_medicine-obstetrics_and_gynecology-sacramento?FreeText%3ALast+name=Tache",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/1449/veronique-tache-maternal-fetal_medicine-obstetrics_and_gynecology-sacramento?FreeText%3aLast+name=Tache"
-}

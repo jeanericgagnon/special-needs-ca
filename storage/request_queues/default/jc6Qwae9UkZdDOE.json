@@ -1,9 +1,0 @@
-{
-	"id": "jc6Qwae9UkZdDOE",
-	"json": "{\"id\":\"jc6Qwae9UkZdDOE\",\"url\":\"https://data.chhs.ca.gov/organization/about/california-health-and-human-services-agency-chhs\",\"loadedUrl\":\"https://data.chhs.ca.gov/organization/about/california-health-and-human-services-agency-chhs\",\"uniqueKey\":\"https://data.chhs.ca.gov/organization/about/california-health-and-human-services-agency-chhs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:48.956Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://data.chhs.ca.gov/organization/about/california-health-and-human-services-agency-chhs",
-	"url": "https://data.chhs.ca.gov/organization/about/california-health-and-human-services-agency-chhs"
-}

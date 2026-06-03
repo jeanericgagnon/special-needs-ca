@@ -1,9 +1,0 @@
-{
-	"id": "ixZL4mYX8nysXK2",
-	"json": "{\"id\":\"ixZL4mYX8nysXK2\",\"url\":\"http://ceed.ucdavis.edu/#!/\",\"loadedUrl\":\"https://ceed.ucdavis.edu/map\",\"uniqueKey\":\"http://ceed.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:35.424Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://ceed.ucdavis.edu",
-	"url": "http://ceed.ucdavis.edu/#!/"
-}

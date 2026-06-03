@@ -1,9 +1,0 @@
-{
-	"id": "SqDsGc6tiBegjD8",
-	"json": "{\"id\":\"SqDsGc6tiBegjD8\",\"url\":\"https://giveto.ucdavis.edu/campaigns/49377/donations/new?a=1a\",\"loadedUrl\":\"https://giveto.ucdavis.edu/campaigns/49377/donations/new?a=1a\",\"uniqueKey\":\"https://giveto.ucdavis.edu/campaigns/49377/donations/new?a=1a\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:04.641Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://giveto.ucdavis.edu/campaigns/49377/donations/new?a=1a",
-	"url": "https://giveto.ucdavis.edu/campaigns/49377/donations/new?a=1a"
-}

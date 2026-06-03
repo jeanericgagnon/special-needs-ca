@@ -1,9 +1,0 @@
-{
-	"id": "XYLtT81WEUpA9iK",
-	"json": "{\"id\":\"XYLtT81WEUpA9iK\",\"url\":\"https://business.ca.gov/about/go-biz-team/\",\"loadedUrl\":\"https://business.ca.gov/about/go-biz-team/\",\"uniqueKey\":\"https://business.ca.gov/about/go-biz-team\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:09.783Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://business.ca.gov/about/go-biz-team",
-	"url": "https://business.ca.gov/about/go-biz-team/"
-}

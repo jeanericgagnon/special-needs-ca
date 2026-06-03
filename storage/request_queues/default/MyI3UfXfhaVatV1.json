@@ -1,9 +1,0 @@
-{
-	"id": "MyI3UfXfhaVatV1",
-	"json": "{\"id\":\"MyI3UfXfhaVatV1\",\"url\":\"https://www.dgs.ca.gov/Divisions-and-Offices\",\"loadedUrl\":\"https://www.dgs.ca.gov/Divisions-and-Offices\",\"uniqueKey\":\"https://www.dgs.ca.gov/Divisions-and-Offices\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:06.086Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dgs.ca.gov/Divisions-and-Offices",
-	"url": "https://www.dgs.ca.gov/Divisions-and-Offices"
-}

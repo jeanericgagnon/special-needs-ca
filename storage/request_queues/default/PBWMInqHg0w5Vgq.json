@@ -1,9 +1,0 @@
-{
-	"id": "PBWMInqHg0w5Vgq",
-	"json": "{\"id\":\"PBWMInqHg0w5Vgq\",\"url\":\"https://engineering.ucdavis.edu/engineering-research/advancing-human-health\",\"loadedUrl\":\"https://engineering.ucdavis.edu/engineering-research/advancing-human-health\",\"uniqueKey\":\"https://engineering.ucdavis.edu/engineering-research/advancing-human-health\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:36.663Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://engineering.ucdavis.edu/engineering-research/advancing-human-health",
-	"url": "https://engineering.ucdavis.edu/engineering-research/advancing-human-health"
-}

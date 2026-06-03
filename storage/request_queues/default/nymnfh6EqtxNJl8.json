@@ -1,9 +1,0 @@
-{
-	"id": "nymnfh6EqtxNJl8",
-	"json": "{\"id\":\"nymnfh6EqtxNJl8\",\"url\":\"https://www.cdss.ca.gov/inforesources/IHSS/Letters-and-Notices\",\"loadedUrl\":\"https://www.cdss.ca.gov/in-home-supportive-services\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/IHSS/Letters-and-Notices\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:27.211Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/inforesources/IHSS/Letters-and-Notices",
-	"url": "https://www.cdss.ca.gov/inforesources/IHSS/Letters-and-Notices"
-}

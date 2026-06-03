@@ -1,9 +1,0 @@
-{
-	"id": "i2SQcv7eiKbUcP1",
-	"json": "{\"id\":\"i2SQcv7eiKbUcP1\",\"url\":\"https://dor.ca.gov/Home/StudentServices\",\"loadedUrl\":\"https://dor.ca.gov/Home/StudentServices\",\"uniqueKey\":\"https://dor.ca.gov/Home/StudentServices\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:06:47.730Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://dor.ca.gov/Home/StudentServices",
-	"url": "https://dor.ca.gov/Home/StudentServices"
-}

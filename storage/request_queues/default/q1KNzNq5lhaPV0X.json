@@ -1,9 +1,0 @@
-{
-	"id": "q1KNzNq5lhaPV0X",
-	"json": "{\"id\":\"q1KNzNq5lhaPV0X\",\"url\":\"https://health.ucdavis.edu/ctsc/area/education/\",\"loadedUrl\":\"https://health.ucdavis.edu/ctsc/area/education/\",\"uniqueKey\":\"https://health.ucdavis.edu/ctsc/area/education\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:21.665Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/ctsc/area/education",
-	"url": "https://health.ucdavis.edu/ctsc/area/education/"
-}

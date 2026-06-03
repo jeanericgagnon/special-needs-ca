@@ -1,9 +1,0 @@
-{
-	"id": "CWMxIPCs8dnlYMM",
-	"json": "{\"id\":\"CWMxIPCs8dnlYMM\",\"url\":\"https://hie.cdph.ca.gov/\",\"loadedUrl\":\"https://hie.cdph.ca.gov/\",\"uniqueKey\":\"https://hie.cdph.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:59:52.967Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hie.cdph.ca.gov",
-	"url": "https://hie.cdph.ca.gov/"
-}

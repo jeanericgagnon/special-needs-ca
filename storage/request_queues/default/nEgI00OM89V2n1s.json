@@ -1,9 +1,0 @@
-{
-	"id": "nEgI00OM89V2n1s",
-	"json": "{\"id\":\"nEgI00OM89V2n1s\",\"url\":\"https://cdss.ca.gov/ansp\",\"loadedUrl\":\"https://cdss.ca.gov/ansp\",\"uniqueKey\":\"https://cdss.ca.gov/ansp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:11.541Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/ansp",
-	"url": "https://cdss.ca.gov/ansp"
-}

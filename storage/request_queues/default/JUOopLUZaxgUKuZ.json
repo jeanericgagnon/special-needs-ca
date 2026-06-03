@@ -1,9 +1,0 @@
-{
-	"id": "JUOopLUZaxgUKuZ",
-	"json": "{\"id\":\"JUOopLUZaxgUKuZ\",\"url\":\"https://www.cde.ca.gov/ta/sr/pa/paemstcardenas.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=dc27d418-c321-4a9b-969e-cffab869a8cb&ssb=31459278343&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fta%2Fsr%2Fpa%2Fpaemstcardenas.asp&ssi=e15bced8-ctxv-4d1c-9353-e36ddad36844&ssk=botmanager_support@radware.com&ssm=45840420194783643102321956149005&ssn=2eb0670239b26755b4e0c058e9ab08ba92812c0e55cd-cfeb-4e7f-976d5a&sso=55faf6cd-bd8bebf56c6a6ab16987114d0011e2ae58027067a316d452&ssp=19185892111780397712178037684219319&ssq=59160295675962956636456759706737967815207&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDAyYzBlNTVjZC1jZmViLTRlN2YtOTZjZC1iZDhiZWJmNTZjNmExLTE3ODAzNTY3NTkxNDYwLTAwMzgxOGY5YjgwOTNhZGM0MzIxMCIsInV6bXgiOiI3ZjkwMDA1NzAxZDZmYy0yYWE1LTRjMjUtOWZmNS03N2MyOWVkYjYxZTcxLTE3ODAzNTY3NTkxNDYwLTk1MjIwYzQ4NTRkNTJiMDgxMCIsInJkIjoiY2EuZ292In0=\",\"uniqueKey\":\"https://www.cde.ca.gov/ta/sr/pa/paemstcardenas.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T23:32:39.293Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ta/sr/pa/paemstcardenas.asp",
-	"url": "https://www.cde.ca.gov/ta/sr/pa/paemstcardenas.asp"
-}

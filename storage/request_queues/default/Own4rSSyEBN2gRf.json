@@ -1,9 +1,0 @@
-{
-	"id": "Own4rSSyEBN2gRf",
-	"json": "{\"id\":\"Own4rSSyEBN2gRf\",\"url\":\"https://www.assembly.ca.gov/california-state-assembly-fellowship-program\",\"loadedUrl\":\"https://www.assembly.ca.gov/california-state-assembly-fellowship-program\",\"uniqueKey\":\"https://www.assembly.ca.gov/california-state-assembly-fellowship-program\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:59.931Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.assembly.ca.gov/california-state-assembly-fellowship-program",
-	"url": "https://www.assembly.ca.gov/california-state-assembly-fellowship-program"
-}

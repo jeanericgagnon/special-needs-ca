@@ -1,9 +1,0 @@
-{
-	"id": "bfjUYT6cMPdjMRL",
-	"json": "{\"id\":\"bfjUYT6cMPdjMRL\",\"url\":\"https://data.chhs.ca.gov/showcase/dmhc-health-plan-dashboard\",\"loadedUrl\":\"https://data.chhs.ca.gov/showcase/dmhc-health-plan-dashboard\",\"uniqueKey\":\"https://data.chhs.ca.gov/showcase/dmhc-health-plan-dashboard\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:47.512Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://data.chhs.ca.gov/showcase/dmhc-health-plan-dashboard",
-	"url": "https://data.chhs.ca.gov/showcase/dmhc-health-plan-dashboard"
-}

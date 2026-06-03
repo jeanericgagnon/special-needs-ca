@@ -1,9 +1,0 @@
-{
-	"id": "wkzCHzkbZceNtRu",
-	"json": "{\"id\":\"wkzCHzkbZceNtRu\",\"url\":\"https://www.cde.ca.gov/ds/ed/dataprivacy.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=cb0b1613-f783-4e2c-818c-7ca4845aa66d&ssb=26472208149&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fds%2Fed%2Fdataprivacy.asp&ssi=36357959-ctxv-44c2-a6a0-7e957fbea224&ssk=botmanager_support@radware.com&ssm=88434517749987059104017939587100&ssn=4c95f82b382577e69470637ead580eec8507381804e4-d755-44d9-a53782&sso=f6933042-68cac3d6812d67cc0502cb8e2c61f09e9e2a8a063eed263c&ssp=73986592591780386523178039351845767&ssq=55983592584366170736825843623093444312265&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsIl9fdXptZiI6IjdmOTAwMDM4MTgwNGU0LWQ3NTUtNDRkOS1hMDQyLTY4Y2FjM2Q2ODEyZDEtMTc4MDMyNTg0MzA3MjAtMDAzNDdmNjkxMzFlYzdkODYzMjEwIiwidXpteCI6IjdmOTAwMDcxYjM2MWY2LWJhZDktNDM3OC1iMTgzLTNhMDUzOTg4NzM1NjEtMTc4MDMyNTg0MzA3MjAtYjcxY2Q4YzJmMWY1MzE1ODEwIn0=\",\"uniqueKey\":\"https://www.cde.ca.gov/ds/ed/dataprivacy.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T14:57:23.174Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ds/ed/dataprivacy.asp",
-	"url": "https://www.cde.ca.gov/ds/ed/dataprivacy.asp"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "N7scUqAJBnn05US",
-	"json": "{\"id\":\"N7scUqAJBnn05US\",\"url\":\"https://surveys3.cde.ca.gov/go/ctemcs-crs-pc-form.asp\",\"loadedUrl\":\"https://surveys3.cde.ca.gov/s.asp?k=175459678429\",\"uniqueKey\":\"https://surveys3.cde.ca.gov/go/ctemcs-crs-pc-form.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:40:09.248Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://surveys3.cde.ca.gov/go/ctemcs-crs-pc-form.asp",
-	"url": "https://surveys3.cde.ca.gov/go/ctemcs-crs-pc-form.asp"
-}

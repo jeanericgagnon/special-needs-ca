@@ -1,9 +1,0 @@
-{
-	"id": "N6DVfDdrOc67VLX",
-	"json": "{\"id\":\"N6DVfDdrOc67VLX\",\"url\":\"https://ucp.org/research/early-detection-and-intervention-collaborative/\",\"loadedUrl\":\"https://ucp.org/research/early-detection-and-intervention-collaborative/\",\"uniqueKey\":\"https://ucp.org/research/early-detection-and-intervention-collaborative\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:34.718Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ucp.org/research/early-detection-and-intervention-collaborative",
-	"url": "https://ucp.org/research/early-detection-and-intervention-collaborative/"
-}

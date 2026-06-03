@@ -1,9 +1,0 @@
-{
-	"id": "mlHO2zVabwZ7XYS",
-	"json": "{\"id\":\"mlHO2zVabwZ7XYS\",\"url\":\"https://cdtfa.ca.gov/industry/\",\"loadedUrl\":\"https://cdtfa.ca.gov/industry/\",\"uniqueKey\":\"https://cdtfa.ca.gov/industry\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:44.371Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdtfa.ca.gov/industry",
-	"url": "https://cdtfa.ca.gov/industry/"
-}

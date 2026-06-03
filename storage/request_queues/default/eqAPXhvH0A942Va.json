@@ -1,9 +1,0 @@
-{
-	"id": "eqAPXhvH0A942Va",
-	"json": "{\"id\":\"eqAPXhvH0A942Va\",\"url\":\"https://neuroscience.ucdavis.edu/people/sergi-simo\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/people/sergi-simo\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/people/sergi-simo\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:49.922Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/people/sergi-simo",
-	"url": "https://neuroscience.ucdavis.edu/people/sergi-simo"
-}

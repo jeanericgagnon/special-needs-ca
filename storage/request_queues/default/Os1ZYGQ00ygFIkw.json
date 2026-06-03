@@ -1,9 +1,0 @@
-{
-	"id": "Os1ZYGQ00ygFIkw",
-	"json": "{\"id\":\"Os1ZYGQ00ygFIkw\",\"url\":\"https://www.cde.ca.gov/sp/ch/stacs.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/ch/stacs.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/ch/stacs.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:25:01.450Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/sp/ch/stacs.asp",
-	"url": "https://www.cde.ca.gov/sp/ch/stacs.asp"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "aYCnIvDXZXOJ1zz",
-	"json": "{\"id\":\"aYCnIvDXZXOJ1zz\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DWICSN/Pages/LocalAgencies.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DWICSN/Pages/LocalAgencies.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DWICSN/Pages/LocalAgencies.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:01:40.873Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DWICSN/Pages/LocalAgencies.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CFH/DWICSN/Pages/LocalAgencies.aspx"
-}

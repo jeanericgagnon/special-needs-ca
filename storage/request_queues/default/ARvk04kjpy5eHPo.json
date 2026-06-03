@@ -1,9 +1,0 @@
-{
-	"id": "ARvk04kjpy5eHPo",
-	"json": "{\"id\":\"ARvk04kjpy5eHPo\",\"url\":\"https://www.dds.ca.gov/services/early-start/state-performance-reports/\",\"loadedUrl\":\"https://www.dds.ca.gov/services/early-start/state-performance-reports/\",\"uniqueKey\":\"https://www.dds.ca.gov/services/early-start/state-performance-reports\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:25.911Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/services/early-start/state-performance-reports",
-	"url": "https://www.dds.ca.gov/services/early-start/state-performance-reports/"
-}

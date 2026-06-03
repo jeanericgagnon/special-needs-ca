@@ -1,9 +1,0 @@
-{
-	"id": "qvnxsUcHLP6EINV",
-	"json": "{\"id\":\"qvnxsUcHLP6EINV\",\"url\":\"https://www.ssa.gov/medicare/lower-irmaa\",\"loadedUrl\":\"https://www.ssa.gov/medicare/lower-irmaa\",\"uniqueKey\":\"https://www.ssa.gov/medicare/lower-irmaa\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:54.466Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ssa.gov/medicare/lower-irmaa",
-	"url": "https://www.ssa.gov/medicare/lower-irmaa"
-}

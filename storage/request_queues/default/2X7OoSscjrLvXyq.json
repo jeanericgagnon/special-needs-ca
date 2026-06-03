@@ -1,9 +1,0 @@
-{
-	"id": "2X7OoSscjrLvXyq",
-	"json": "{\"id\":\"2X7OoSscjrLvXyq\",\"url\":\"https://health.ucdavis.edu/news/headlines/a-colusa-boy-with-leukemia-and-his-familys-drive-to-save-his-life/2022/09\",\"loadedUrl\":\"https://health.ucdavis.edu/news/headlines/a-colusa-boy-with-leukemia-and-his-familys-drive-to-save-his-life/2022/09\",\"uniqueKey\":\"https://health.ucdavis.edu/news/headlines/a-colusa-boy-with-leukemia-and-his-familys-drive-to-save-his-life/2022/09\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:02.818Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/news/headlines/a-colusa-boy-with-leukemia-and-his-familys-drive-to-save-his-life/2022/09",
-	"url": "https://health.ucdavis.edu/news/headlines/a-colusa-boy-with-leukemia-and-his-familys-drive-to-save-his-life/2022/09"
-}

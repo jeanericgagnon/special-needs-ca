@@ -1,9 +1,0 @@
-{
-	"id": "NxQsqZQx5IC4nua",
-	"json": "{\"id\":\"NxQsqZQx5IC4nua\",\"url\":\"https://rarediseases.org/rare-diseases/empty-sella-syndrome/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/empty-sella-syndrome/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/empty-sella-syndrome\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:11:25.758Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/rare-diseases/empty-sella-syndrome",
-	"url": "https://rarediseases.org/rare-diseases/empty-sella-syndrome/"
-}

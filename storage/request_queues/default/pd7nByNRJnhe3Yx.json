@@ -1,9 +1,0 @@
-{
-	"id": "pd7nByNRJnhe3Yx",
-	"json": "{\"id\":\"pd7nByNRJnhe3Yx\",\"url\":\"https://engineering.ucdavis.edu/undergraduates/prospective-students\",\"loadedUrl\":\"https://engineering.ucdavis.edu/undergraduates/prospective-students\",\"uniqueKey\":\"https://engineering.ucdavis.edu/undergraduates/prospective-students\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:33.414Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://engineering.ucdavis.edu/undergraduates/prospective-students",
-	"url": "https://engineering.ucdavis.edu/undergraduates/prospective-students"
-}

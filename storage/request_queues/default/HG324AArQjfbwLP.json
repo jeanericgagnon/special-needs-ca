@@ -1,9 +1,0 @@
-{
-	"id": "HG324AArQjfbwLP",
-	"json": "{\"id\":\"HG324AArQjfbwLP\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/22162/holly-leshikar-pediatric_orthopaedics-sacramento?FreeText%3aLast+name=Leshikar\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/22162/holly-leshikar-pediatric_orthopaedics-sacramento?FreeText%3aLast+name=Leshikar\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/22162/holly-leshikar-pediatric_orthopaedics-sacramento?FreeText%3ALast+name=Leshikar\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:13.494Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/22162/holly-leshikar-pediatric_orthopaedics-sacramento?FreeText%3ALast+name=Leshikar",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/22162/holly-leshikar-pediatric_orthopaedics-sacramento?FreeText%3aLast+name=Leshikar"
-}

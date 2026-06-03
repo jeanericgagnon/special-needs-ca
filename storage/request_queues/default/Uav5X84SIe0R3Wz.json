@@ -1,9 +1,0 @@
-{
-	"id": "Uav5X84SIe0R3Wz",
-	"json": "{\"id\":\"Uav5X84SIe0R3Wz\",\"url\":\"https://www.cde.ca.gov/ta/ac/xx//\",\"loadedUrl\":\"https://www.cde.ca.gov/re/pr/progimprov.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ta/ac/xx/\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:12:00.176Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ta/ac/xx/",
-	"url": "https://www.cde.ca.gov/ta/ac/xx//"
-}

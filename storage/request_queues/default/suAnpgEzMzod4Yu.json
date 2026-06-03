@@ -1,9 +1,0 @@
-{
-	"id": "suAnpgEzMzod4Yu",
-	"json": "{\"id\":\"suAnpgEzMzod4Yu\",\"url\":\"https://www.assembly.ca.gov/2017-oversight-handbook\",\"loadedUrl\":\"https://www.assembly.ca.gov/2017-oversight-handbook\",\"uniqueKey\":\"https://www.assembly.ca.gov/2017-oversight-handbook\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:03:01.276Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.assembly.ca.gov/2017-oversight-handbook",
-	"url": "https://www.assembly.ca.gov/2017-oversight-handbook"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "aWUNtdAlAQpZ1Xi",
-	"json": "{\"id\":\"aWUNtdAlAQpZ1Xi\",\"url\":\"https://www.dds.ca.gov/rc/information-about-regional-centers/\",\"loadedUrl\":\"https://www.dds.ca.gov/rc/information-about-regional-centers/\",\"uniqueKey\":\"https://www.dds.ca.gov/rc/information-about-regional-centers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:44.679Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/rc/information-about-regional-centers",
-	"url": "https://www.dds.ca.gov/rc/information-about-regional-centers/"
-}

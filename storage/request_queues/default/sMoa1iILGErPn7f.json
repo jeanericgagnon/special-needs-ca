@@ -1,9 +1,0 @@
-{
-	"id": "sMoa1iILGErPn7f",
-	"json": "{\"id\":\"sMoa1iILGErPn7f\",\"url\":\"https://health.ucdavis.edu/children/about/\",\"loadedUrl\":\"https://health.ucdavis.edu/children/about/\",\"uniqueKey\":\"https://health.ucdavis.edu/children/about\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:51.421Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/children/about",
-	"url": "https://health.ucdavis.edu/children/about/"
-}

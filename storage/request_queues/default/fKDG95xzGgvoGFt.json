@@ -1,9 +1,0 @@
-{
-	"id": "fKDG95xzGgvoGFt",
-	"json": "{\"id\":\"fKDG95xzGgvoGFt\",\"url\":\"http://assembly.ca.gov/audioandtv\",\"loadedUrl\":\"https://www.assembly.ca.gov/events/tv-schedule\",\"uniqueKey\":\"http://assembly.ca.gov/audioandtv\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:19.971Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://assembly.ca.gov/audioandtv",
-	"url": "http://assembly.ca.gov/audioandtv"
-}

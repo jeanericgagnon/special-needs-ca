@@ -1,9 +1,0 @@
-{
-	"id": "vOjdkq62zMEiMeb",
-	"json": "{\"id\":\"vOjdkq62zMEiMeb\",\"url\":\"https://www.senate.ca.gov/legislative-deadlines-calendar\",\"loadedUrl\":\"https://www.senate.ca.gov/legislative-deadlines-calendar\",\"uniqueKey\":\"https://www.senate.ca.gov/legislative-deadlines-calendar\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:56.087Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.senate.ca.gov/legislative-deadlines-calendar",
-	"url": "https://www.senate.ca.gov/legislative-deadlines-calendar"
-}

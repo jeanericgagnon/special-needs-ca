@@ -1,9 +1,0 @@
-{
-	"id": "2BHcrudFR5DCHSv",
-	"json": "{\"id\":\"2BHcrudFR5DCHSv\",\"url\":\"https://ucdnc.ucdavis.edu/neuromuscular-disorders\",\"loadedUrl\":\"https://ucdnc.ucdavis.edu/neuromuscular-disorders\",\"uniqueKey\":\"https://ucdnc.ucdavis.edu/neuromuscular-disorders\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:20.629Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ucdnc.ucdavis.edu/neuromuscular-disorders",
-	"url": "https://ucdnc.ucdavis.edu/neuromuscular-disorders"
-}

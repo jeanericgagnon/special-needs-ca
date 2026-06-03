@@ -1,9 +1,0 @@
-{
-	"id": "DJoEtA5Z7QffKyj",
-	"json": "{\"id\":\"DJoEtA5Z7QffKyj\",\"url\":\"https://www.auditor.ca.gov/reports/2025-117/\",\"loadedUrl\":\"https://www.auditor.ca.gov/reports/2025-117/\",\"uniqueKey\":\"https://www.auditor.ca.gov/reports/2025-117\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:05:24.884Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.auditor.ca.gov/reports/2025-117",
-	"url": "https://www.auditor.ca.gov/reports/2025-117/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "fKnLmm7DmsIvWrS",
-	"json": "{\"id\":\"fKnLmm7DmsIvWrS\",\"url\":\"https://cdss.ca.gov/inforesources/calworks\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/calworks\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/calworks\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:35.265Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/calworks",
-	"url": "https://cdss.ca.gov/inforesources/calworks"
-}

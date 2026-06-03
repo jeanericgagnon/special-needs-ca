@@ -1,9 +1,0 @@
-{
-	"id": "LcPM9QTCoUevcku",
-	"json": "{\"id\":\"LcPM9QTCoUevcku\",\"url\":\"https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/23-03_AB218-Updated-Pamphlets-Website_1-20-23.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/23-03_AB218-Updated-Pamphlets-Website_1-20-23.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/23-03_AB218-Updated-Pamphlets-Website_1-20-23.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:53:40.580Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/23-03_AB218-Updated-Pamphlets-Website_1-20-23.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/23-03_AB218-Updated-Pamphlets-Website_1-20-23.aspx"
-}

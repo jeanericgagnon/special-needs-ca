@@ -1,9 +1,0 @@
-{
-	"id": "Lf75sHThBs6q1Qh",
-	"json": "{\"id\":\"Lf75sHThBs6q1Qh\",\"url\":\"https://www.cdtfa.ca.gov/services/#Register-Renewals\",\"loadedUrl\":\"https://cdtfa.ca.gov/services/\",\"uniqueKey\":\"https://www.cdtfa.ca.gov/services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:05.835Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdtfa.ca.gov/services",
-	"url": "https://www.cdtfa.ca.gov/services/#Register-Renewals"
-}

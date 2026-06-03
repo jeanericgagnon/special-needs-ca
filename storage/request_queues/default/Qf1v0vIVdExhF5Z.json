@@ -1,9 +1,0 @@
-{
-	"id": "Qf1v0vIVdExhF5Z",
-	"json": "{\"id\":\"Qf1v0vIVdExhF5Z\",\"url\":\"https://data.chhs.ca.gov/pages/terms\",\"loadedUrl\":\"https://data.chhs.ca.gov/pages/terms\",\"uniqueKey\":\"https://data.chhs.ca.gov/pages/terms\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:47.789Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://data.chhs.ca.gov/pages/terms",
-	"url": "https://data.chhs.ca.gov/pages/terms"
-}

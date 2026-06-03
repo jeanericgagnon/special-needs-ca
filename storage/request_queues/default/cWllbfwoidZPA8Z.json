@@ -1,9 +1,0 @@
-{
-	"id": "cWllbfwoidZPA8Z",
-	"json": "{\"id\":\"cWllbfwoidZPA8Z\",\"url\":\"http://www.cdss.ca.gov/inforesources/ihss/ihss-providers/orientation-process\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/ihss/ihss-providers/orientation-process\",\"uniqueKey\":\"http://www.cdss.ca.gov/inforesources/ihss/ihss-providers/orientation-process\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:05.243Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.cdss.ca.gov/inforesources/ihss/ihss-providers/orientation-process",
-	"url": "http://www.cdss.ca.gov/inforesources/ihss/ihss-providers/orientation-process"
-}

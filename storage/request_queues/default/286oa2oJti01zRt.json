@@ -1,9 +1,0 @@
-{
-	"id": "286oa2oJti01zRt",
-	"json": "{\"id\":\"286oa2oJti01zRt\",\"url\":\"https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=48263.5.&lawCode=EDC\",\"loadedUrl\":\"https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=48263.5.&lawCode=EDC\",\"uniqueKey\":\"https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=EDC&sectionNum=48263.5.\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:04.625Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=EDC&sectionNum=48263.5.",
-	"url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=48263.5.&lawCode=EDC"
-}

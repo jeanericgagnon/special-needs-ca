@@ -1,9 +1,0 @@
-{
-	"id": "ZCEeMXFrHJFOq1Q",
-	"json": "{\"id\":\"ZCEeMXFrHJFOq1Q\",\"url\":\"http://www.childsworld.ca.gov/res/pdf/CPSEmergNumbers.pdf\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/guides\",\"uniqueKey\":\"http://www.childsworld.ca.gov/res/pdf/CPSEmergNumbers.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:06.735Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.childsworld.ca.gov/res/pdf/CPSEmergNumbers.pdf",
-	"url": "http://www.childsworld.ca.gov/res/pdf/CPSEmergNumbers.pdf"
-}

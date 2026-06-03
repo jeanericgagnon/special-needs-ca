@@ -1,9 +1,0 @@
-{
-	"id": "arxb1qQr4QsOgPj",
-	"json": "{\"id\":\"arxb1qQr4QsOgPj\",\"url\":\"https://health.ucdavis.edu/about/ventures-office/\",\"loadedUrl\":\"https://health.ucdavis.edu/about/ventures-office/\",\"uniqueKey\":\"https://health.ucdavis.edu/about/ventures-office\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:52.803Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/about/ventures-office",
-	"url": "https://health.ucdavis.edu/about/ventures-office/"
-}

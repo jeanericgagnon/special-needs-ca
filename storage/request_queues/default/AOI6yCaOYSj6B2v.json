@@ -1,9 +1,0 @@
-{
-	"id": "AOI6yCaOYSj6B2v",
-	"json": "{\"id\":\"AOI6yCaOYSj6B2v\",\"url\":\"https://hr.ucdavis.edu/departments/worklife-wellness/managers/wbeing-toolkit\",\"loadedUrl\":\"https://hr.ucdavis.edu/departments/worklife-wellness/managers/wbeing-toolkit\",\"uniqueKey\":\"https://hr.ucdavis.edu/departments/worklife-wellness/managers/wbeing-toolkit\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:21.409Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/departments/worklife-wellness/managers/wbeing-toolkit",
-	"url": "https://hr.ucdavis.edu/departments/worklife-wellness/managers/wbeing-toolkit"
-}

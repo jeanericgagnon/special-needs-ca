@@ -1,9 +1,0 @@
-{
-	"id": "vFQliLgzW9Tovm7",
-	"json": "{\"id\":\"vFQliLgzW9Tovm7\",\"url\":\"https://biology.ucdavis.edu/news/training-naturalists-behind-prison-walls\",\"loadedUrl\":\"https://biology.ucdavis.edu/news/training-naturalists-behind-prison-walls\",\"uniqueKey\":\"https://biology.ucdavis.edu/news/training-naturalists-behind-prison-walls\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:26.619Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://biology.ucdavis.edu/news/training-naturalists-behind-prison-walls",
-	"url": "https://biology.ucdavis.edu/news/training-naturalists-behind-prison-walls"
-}

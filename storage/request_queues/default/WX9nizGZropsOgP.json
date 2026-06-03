@@ -1,9 +1,0 @@
-{
-	"id": "WX9nizGZropsOgP",
-	"json": "{\"id\":\"WX9nizGZropsOgP\",\"url\":\"https://give.ucdavis.edu/CLAS/AHIGTIG\",\"loadedUrl\":\"https://give.ucdavis.edu/CLAS/AHIGTIG\",\"uniqueKey\":\"https://give.ucdavis.edu/CLAS/AHIGTIG\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:55.327Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/CLAS/AHIGTIG",
-	"url": "https://give.ucdavis.edu/CLAS/AHIGTIG"
-}

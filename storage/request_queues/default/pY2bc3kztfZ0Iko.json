@@ -1,9 +1,0 @@
-{
-	"id": "pY2bc3kztfZ0Iko",
-	"json": "{\"id\":\"pY2bc3kztfZ0Iko\",\"url\":\"https://hr.ucdavis.edu/news/group-mentoring-program-applications-now-open\",\"loadedUrl\":\"https://hr.ucdavis.edu/news/group-mentoring-program-applications-now-open\",\"uniqueKey\":\"https://hr.ucdavis.edu/news/group-mentoring-program-applications-now-open\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:47.854Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/news/group-mentoring-program-applications-now-open",
-	"url": "https://hr.ucdavis.edu/news/group-mentoring-program-applications-now-open"
-}

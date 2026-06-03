@@ -1,9 +1,0 @@
-{
-	"id": "00XJESVBfJY6lJX",
-	"json": "{\"id\":\"00XJESVBfJY6lJX\",\"url\":\"https://www.ssa.gov/forms/\",\"loadedUrl\":\"https://www.ssa.gov/forms/\",\"uniqueKey\":\"https://www.ssa.gov/forms\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:55.328Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ssa.gov/forms",
-	"url": "https://www.ssa.gov/forms/"
-}

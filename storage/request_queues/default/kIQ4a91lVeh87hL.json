@@ -1,9 +1,0 @@
-{
-	"id": "kIQ4a91lVeh87hL",
-	"json": "{\"id\":\"kIQ4a91lVeh87hL\",\"url\":\"https://www.cde.ca.gov/ci/ct/pk/timeline.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/ct/pk/timeline.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/ct/pk/timeline.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:26.896Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ci/ct/pk/timeline.asp",
-	"url": "https://www.cde.ca.gov/ci/ct/pk/timeline.asp"
-}

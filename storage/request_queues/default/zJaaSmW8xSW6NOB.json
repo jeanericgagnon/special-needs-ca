@@ -1,9 +1,0 @@
-{
-	"id": "zJaaSmW8xSW6NOB",
-	"json": "{\"id\":\"zJaaSmW8xSW6NOB\",\"url\":\"https://health.ucdavis.edu/news/headlines/large-study-confirms-siblings-of-autistic-children-have-20-chance-of-autism-/2024/07\",\"loadedUrl\":\"https://health.ucdavis.edu/news/headlines/large-study-confirms-siblings-of-autistic-children-have-20-chance-of-autism-/2024/07\",\"uniqueKey\":\"https://health.ucdavis.edu/news/headlines/large-study-confirms-siblings-of-autistic-children-have-20-chance-of-autism-/2024/07\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:50.471Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/news/headlines/large-study-confirms-siblings-of-autistic-children-have-20-chance-of-autism-/2024/07",
-	"url": "https://health.ucdavis.edu/news/headlines/large-study-confirms-siblings-of-autistic-children-have-20-chance-of-autism-/2024/07"
-}

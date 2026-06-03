@@ -1,9 +1,0 @@
-{
-	"id": "iqfIfSenAQd2z7r",
-	"json": "{\"id\":\"iqfIfSenAQd2z7r\",\"url\":\"https://linguistics.ucdavis.edu/graduate/graduate-programs\",\"loadedUrl\":\"https://linguistics.ucdavis.edu/graduate/graduate-programs\",\"uniqueKey\":\"https://linguistics.ucdavis.edu/graduate/graduate-programs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:05.687Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://linguistics.ucdavis.edu/graduate/graduate-programs",
-	"url": "https://linguistics.ucdavis.edu/graduate/graduate-programs"
-}

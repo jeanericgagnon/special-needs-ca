@@ -1,9 +1,0 @@
-{
-	"id": "JZUF1GfovEI4Ykx",
-	"json": "{\"id\":\"JZUF1GfovEI4Ykx\",\"url\":\"https://www.gov.ca.gov/2025/04/02/governor-newsom-proclaims-autism-acceptance-month/\",\"loadedUrl\":\"https://www.gov.ca.gov/2025/04/02/governor-newsom-proclaims-autism-acceptance-month/\",\"uniqueKey\":\"https://www.gov.ca.gov/2025/04/02/governor-newsom-proclaims-autism-acceptance-month\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:01:00.583Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.gov.ca.gov/2025/04/02/governor-newsom-proclaims-autism-acceptance-month",
-	"url": "https://www.gov.ca.gov/2025/04/02/governor-newsom-proclaims-autism-acceptance-month/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "4nobtgdrWjweMSY",
-	"json": "{\"id\":\"4nobtgdrWjweMSY\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DWICSN/Pages/Grocers.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DWICSN/Pages/Grocers.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DWICSN/Pages/Grocers.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:01:41.138Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DWICSN/Pages/Grocers.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CFH/DWICSN/Pages/Grocers.aspx"
-}

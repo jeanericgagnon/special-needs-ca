@@ -1,9 +1,0 @@
-{
-	"id": "hE18x8cclSKHOqH",
-	"json": "{\"id\":\"hE18x8cclSKHOqH\",\"url\":\"https://health.ucdavis.edu/mind-institute/clinic/parent-education-group\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/clinic/parent-education-group\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/clinic/parent-education-group\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:06:50.249Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mind-institute/clinic/parent-education-group",
-	"url": "https://health.ucdavis.edu/mind-institute/clinic/parent-education-group"
-}

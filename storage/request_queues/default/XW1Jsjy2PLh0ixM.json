@@ -1,9 +1,0 @@
-{
-	"id": "XW1Jsjy2PLh0ixM",
-	"json": "{\"id\":\"XW1Jsjy2PLh0ixM\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/21977/kathryn-katie-newell-internal_medicine-sacramento?FreeText%3aLast+name=Newell\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/21977/kathryn-katie-newell-internal_medicine-sacramento?FreeText%3aLast+name=Newell\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/21977/kathryn-katie-newell-internal_medicine-sacramento?FreeText%3ALast+name=Newell\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:11.728Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/21977/kathryn-katie-newell-internal_medicine-sacramento?FreeText%3ALast+name=Newell",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/21977/kathryn-katie-newell-internal_medicine-sacramento?FreeText%3aLast+name=Newell"
-}

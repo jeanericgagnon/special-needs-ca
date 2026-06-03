@@ -1,9 +1,0 @@
-{
-	"id": "yWEOh4EoOa3kpXo",
-	"json": "{\"id\":\"yWEOh4EoOa3kpXo\",\"url\":\"https://cannabis.ca.gov/consumers/whats-legal/\",\"loadedUrl\":\"https://www.cannabis.ca.gov/consumers/whats-legal/\",\"uniqueKey\":\"https://cannabis.ca.gov/consumers/whats-legal\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:48:51.645Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cannabis.ca.gov/consumers/whats-legal",
-	"url": "https://cannabis.ca.gov/consumers/whats-legal/"
-}

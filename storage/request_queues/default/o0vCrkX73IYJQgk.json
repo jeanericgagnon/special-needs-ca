@@ -1,9 +1,0 @@
-{
-	"id": "o0vCrkX73IYJQgk",
-	"json": "{\"id\":\"o0vCrkX73IYJQgk\",\"url\":\"https://www.cdss.ca.gov/earned-income-tax-credit\",\"loadedUrl\":\"https://www.cdss.ca.gov/earned-income-tax-credit\",\"uniqueKey\":\"https://www.cdss.ca.gov/earned-income-tax-credit\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:31.949Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/earned-income-tax-credit",
-	"url": "https://www.cdss.ca.gov/earned-income-tax-credit"
-}

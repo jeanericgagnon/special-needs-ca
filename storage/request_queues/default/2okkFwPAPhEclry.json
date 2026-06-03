@@ -1,9 +1,0 @@
-{
-	"id": "2okkFwPAPhEclry",
-	"json": "{\"id\":\"2okkFwPAPhEclry\",\"url\":\"https://hr.ucdavis.edu/news/classification-appeal-form-launched-davis-campus\",\"loadedUrl\":\"https://hr.ucdavis.edu/news/classification-appeal-form-launched-davis-campus\",\"uniqueKey\":\"https://hr.ucdavis.edu/news/classification-appeal-form-launched-davis-campus\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:06.885Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/news/classification-appeal-form-launched-davis-campus",
-	"url": "https://hr.ucdavis.edu/news/classification-appeal-form-launched-davis-campus"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "T1YvXJwPznBjW8P",
-	"json": "{\"id\":\"T1YvXJwPznBjW8P\",\"url\":\"https://calable.ca.gov/faqs?tag=fees\",\"loadedUrl\":\"https://calable.ca.gov/faqs?tag=fees\",\"uniqueKey\":\"https://calable.ca.gov/faqs?tag=fees\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:42.996Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://calable.ca.gov/faqs?tag=fees",
-	"url": "https://calable.ca.gov/faqs?tag=fees"
-}

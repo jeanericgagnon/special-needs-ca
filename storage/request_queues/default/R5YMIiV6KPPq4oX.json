@@ -1,9 +1,0 @@
-{
-	"id": "R5YMIiV6KPPq4oX",
-	"json": "{\"id\":\"R5YMIiV6KPPq4oX\",\"url\":\"https://www.cde.ca.gov/eo/in/blackstudentachievement.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=e0750fa9-b99f-4491-a0da-c8fc55acd247&ssb=45098228767&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Feo%2Fin%2Fblackstudentachievement.asp&ssi=0d1b4112-ctxv-4f18-8063-ec789eebebbd&ssk=botmanager_support@radware.com&ssm=54381101139978411133193330078528&ssn=68ed53aa89098e4af4f17007b63eabfa5a001fbf75ce-5634-416c-98dafd&sso=12564072-6f2462581e3f9f746019048cc486e937b06419661059d6b5&ssp=95490195521780315265178036766835103&ssq=89362912756198951042326592225227880563242&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2Y5MDAwMzY4MjQ0NDMtM2YxZi00NGQwLWI0NjgtNWY4MGVhZDgwNWQyMS0xNzgwMzI2NTkyMjM3OTY5MTU1LTBiYWZlZjg3NWM2ZTAxZmYxMyIsIl9fdXptZiI6IjdmOTAwMDFmYmY3NWNlLTU2MzQtNDE2Yy05MDcyLTZmMjQ2MjU4MWUzZjEtMTc4MDMyNjU5MjIzNzk2OTE1NS0wMDM3OGNhMmEzZDAyNGNmZGFmMTMiLCJyZCI6ImNhLmdvdiJ9\",\"uniqueKey\":\"https://www.cde.ca.gov/eo/in/blackstudentachievement.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:26:01.472Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/eo/in/blackstudentachievement.asp",
-	"url": "https://www.cde.ca.gov/eo/in/blackstudentachievement.asp"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "CE7hbFXs1vnMZMp",
-	"json": "{\"id\":\"CE7hbFXs1vnMZMp\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/42406/hui-amy-chen-cancer-gynecology_oncology-obstetrics_and_gynecology-oncology-robotic_surgery-surgery_-_robotic-sacramento?FreeText%3aLast+name=chen\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/42406/hui-amy-chen-cancer-gynecology_oncology-obstetrics_and_gynecology-oncology-robotic_surgery-surgery_-_robotic-sacramento?FreeText%3aLast+name=chen\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/42406/hui-amy-chen-cancer-gynecology_oncology-obstetrics_and_gynecology-oncology-robotic_surgery-surgery_-_robotic-sacramento?FreeText%3ALast+name=chen\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:10.503Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/42406/hui-amy-chen-cancer-gynecology_oncology-obstetrics_and_gynecology-oncology-robotic_surgery-surgery_-_robotic-sacramento?FreeText%3ALast+name=chen",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/42406/hui-amy-chen-cancer-gynecology_oncology-obstetrics_and_gynecology-oncology-robotic_surgery-surgery_-_robotic-sacramento?FreeText%3aLast+name=chen"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "EEvs2M8y2vwmwCU",
-	"json": "{\"id\":\"EEvs2M8y2vwmwCU\",\"url\":\"https://education.ucdavis.edu/center-directors-and-program-administrators-directory\",\"loadedUrl\":\"https://education.ucdavis.edu/center-directors-and-program-administrators-directory\",\"uniqueKey\":\"https://education.ucdavis.edu/center-directors-and-program-administrators-directory\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:17:21.144Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://education.ucdavis.edu/center-directors-and-program-administrators-directory",
-	"url": "https://education.ucdavis.edu/center-directors-and-program-administrators-directory"
-}

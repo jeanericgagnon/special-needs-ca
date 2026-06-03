@@ -1,9 +1,0 @@
-{
-	"id": "9GtwhNSmSVwmnVj",
-	"json": "{\"id\":\"9GtwhNSmSVwmnVj\",\"url\":\"https://caes.ucdavis.edu/outreach/industry\",\"loadedUrl\":\"https://caes.ucdavis.edu/outreach/industry\",\"uniqueKey\":\"https://caes.ucdavis.edu/outreach/industry\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:55:35.459Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://caes.ucdavis.edu/outreach/industry",
-	"url": "https://caes.ucdavis.edu/outreach/industry"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "cFCXZOO8ksZQExL",
-	"json": "{\"id\":\"cFCXZOO8ksZQExL\",\"url\":\"https://www.cdss.ca.gov/inforesources/Community-Care/Child-Care-Licensing/Resources-for-Providers/Child-Care-Related-Websites\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/child-care-licensing/resources-for-providers/child-care-related-websites\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/Community-Care/Child-Care-Licensing/Resources-for-Providers/Child-Care-Related-Websites\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:37.133Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/inforesources/Community-Care/Child-Care-Licensing/Resources-for-Providers/Child-Care-Related-Websites",
-	"url": "https://www.cdss.ca.gov/inforesources/Community-Care/Child-Care-Licensing/Resources-for-Providers/Child-Care-Related-Websites"
-}

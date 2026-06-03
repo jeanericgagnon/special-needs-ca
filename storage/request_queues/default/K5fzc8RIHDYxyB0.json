@@ -1,9 +1,0 @@
-{
-	"id": "K5fzc8RIHDYxyB0",
-	"json": "{\"id\":\"K5fzc8RIHDYxyB0\",\"url\":\"https://neuroscience.ucdavis.edu/cns-members-only\",\"loadedUrl\":\"https://cas.ucdavis.edu/cas/login?service=https%3A//neuroscience.ucdavis.edu/casservice%3Fdestination%3D/cns-members-only\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/cns-members-only\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:59.896Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/cns-members-only",
-	"url": "https://neuroscience.ucdavis.edu/cns-members-only"
-}

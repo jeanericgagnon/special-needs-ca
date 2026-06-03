@@ -1,9 +1,0 @@
-{
-	"id": "SSRKf2eaLIiGnJ5",
-	"json": "{\"id\":\"SSRKf2eaLIiGnJ5\",\"url\":\"https://ucp.org/category/all-ucp-news/\",\"loadedUrl\":\"https://ucp.org/category/all-ucp-news/\",\"uniqueKey\":\"https://ucp.org/category/all-ucp-news\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:22.004Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ucp.org/category/all-ucp-news",
-	"url": "https://ucp.org/category/all-ucp-news/"
-}

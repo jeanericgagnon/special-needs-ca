@@ -1,9 +1,0 @@
-{
-	"id": "KsRbsU1627dolzn",
-	"json": "{\"id\":\"KsRbsU1627dolzn\",\"url\":\"https://health.ucdavis.edu/welcome/news/headlines/uc-davis-health-is-transforming-care-for-the-underserved-through-primary-care-medicine/2025/10\",\"loadedUrl\":\"https://health.ucdavis.edu/welcome/news/headlines/uc-davis-health-is-transforming-care-for-the-underserved-through-primary-care-medicine/2025/10\",\"uniqueKey\":\"https://health.ucdavis.edu/welcome/news/headlines/uc-davis-health-is-transforming-care-for-the-underserved-through-primary-care-medicine/2025/10\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:10.258Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/welcome/news/headlines/uc-davis-health-is-transforming-care-for-the-underserved-through-primary-care-medicine/2025/10",
-	"url": "https://health.ucdavis.edu/welcome/news/headlines/uc-davis-health-is-transforming-care-for-the-underserved-through-primary-care-medicine/2025/10"
-}

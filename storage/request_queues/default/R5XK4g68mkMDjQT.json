@@ -1,9 +1,0 @@
-{
-	"id": "R5XK4g68mkMDjQT",
-	"json": "{\"id\":\"R5XK4g68mkMDjQT\",\"url\":\"https://www.ucdavis.edu/campus-life/dining-food\",\"loadedUrl\":\"https://www.ucdavis.edu/campus-life/dining-food\",\"uniqueKey\":\"https://www.ucdavis.edu/campus-life/dining-food\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:45.686Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ucdavis.edu/campus-life/dining-food",
-	"url": "https://www.ucdavis.edu/campus-life/dining-food"
-}

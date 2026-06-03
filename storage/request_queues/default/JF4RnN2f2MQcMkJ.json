@@ -1,9 +1,0 @@
-{
-	"id": "JF4RnN2f2MQcMkJ",
-	"json": "{\"id\":\"JF4RnN2f2MQcMkJ\",\"url\":\"https://www.csb-cde.ca.gov/about/events/springartshow.aspx\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=4266b7c7-b32b-43b3-a302-654e498f9fa7&ssb=55692262182&ssc=https%3A%2F%2Fwww.csb-cde.ca.gov%2Fabout%2Fevents%2Fspringartshow.aspx&ssi=ea15e4ed-cuez-458f-ba84-09476680f6ce&ssk=botmanager_support@radware.com&ssm=33959949008599929109057500408276&ssn=0ffc3e31a99434f36757203a78a1e2b797c46cae5521-a0e3-4d69-9455d7&sso=cfda0985-e9a480098496b04258a69d0341104bb3770c6b2bb7cf7e97&ssp=46054915481780335499178038205790612&ssq=70931852762005232535327620181220686736730&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDA2Y2FlNTUyMS1hMGUzLTRkNjktOTk4NS1lOWE0ODAwOTg0OTYxLTE3ODAzMjc2MjA2NDcwLTAwM2RjNTdmYmZmZjUwMjVjZTUxMCIsInJkIjoiY2EuZ292IiwidXpteCI6IjdmOTAwMDM2ODI0NDQzLTNmMWYtNDRkMC1iNDY4LTVmODBlYWQ4MDVkMjEtMTc4MDMyNjU5MjIzNzEwMjg0MTAtODVjNWFiOTgzZmM0Y2ZlNjE2In0=\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/about/events/springartshow.aspx\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:27:00.998Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.csb-cde.ca.gov/about/events/springartshow.aspx",
-	"url": "https://www.csb-cde.ca.gov/about/events/springartshow.aspx"
-}

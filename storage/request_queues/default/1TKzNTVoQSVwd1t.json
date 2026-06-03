@@ -1,9 +1,0 @@
-{
-	"id": "1TKzNTVoQSVwd1t",
-	"json": "{\"id\":\"1TKzNTVoQSVwd1t\",\"url\":\"https://health.ucdavis.edu/chpr/programs/ca-quits/\",\"loadedUrl\":\"https://health.ucdavis.edu/chpr/programs/ca-quits/\",\"uniqueKey\":\"https://health.ucdavis.edu/chpr/programs/ca-quits\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:30.735Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/chpr/programs/ca-quits",
-	"url": "https://health.ucdavis.edu/chpr/programs/ca-quits/"
-}

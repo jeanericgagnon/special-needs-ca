@@ -1,9 +1,0 @@
-{
-	"id": "8OtmoqUQ9OLvHgc",
-	"json": "{\"id\":\"8OtmoqUQ9OLvHgc\",\"url\":\"http://www.dir.ca.gov/dosh/valley-fever-home.html\",\"loadedUrl\":\"http://www.dir.ca.gov/dosh/valley-fever-home.html\",\"uniqueKey\":\"http://www.dir.ca.gov/dosh/valley-fever-home.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:41:55.334Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.dir.ca.gov/dosh/valley-fever-home.html",
-	"url": "http://www.dir.ca.gov/dosh/valley-fever-home.html"
-}

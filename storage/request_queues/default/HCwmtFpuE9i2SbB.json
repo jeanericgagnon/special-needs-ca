@@ -1,9 +1,0 @@
-{
-	"id": "HCwmtFpuE9i2SbB",
-	"json": "{\"id\":\"HCwmtFpuE9i2SbB\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/FLOURISH/Pages/Values-and-Guiding-Principles.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/FLOURISH/Pages/Values-and-Guiding-Principles.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/FLOURISH/Pages/Values-and-Guiding-Principles.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T17:50:47.840Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/FLOURISH/Pages/Values-and-Guiding-Principles.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/FLOURISH/Pages/Values-and-Guiding-Principles.aspx"
-}

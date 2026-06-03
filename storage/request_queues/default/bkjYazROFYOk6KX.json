@@ -1,9 +1,0 @@
-{
-	"id": "bkjYazROFYOk6KX",
-	"json": "{\"id\":\"bkjYazROFYOk6KX\",\"url\":\"https://engineering.ucdavis.edu/about/privacy-and-accessibility/\",\"loadedUrl\":\"https://www.ucdavis.edu/privacy-and-accessibility\",\"uniqueKey\":\"https://engineering.ucdavis.edu/about/privacy-and-accessibility\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:09.512Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://engineering.ucdavis.edu/about/privacy-and-accessibility",
-	"url": "https://engineering.ucdavis.edu/about/privacy-and-accessibility/"
-}

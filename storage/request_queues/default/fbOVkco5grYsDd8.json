@@ -1,9 +1,0 @@
-{
-	"id": "fbOVkco5grYsDd8",
-	"json": "{\"id\":\"fbOVkco5grYsDd8\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/sapb/_layouts/15/listform.aspx?ListId=%7BBF92F26E%2DBF49%2D47C5%2D8387%2DCB57919F26C5%7D&PageType=0\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/sapb/Pages/default.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/sapb/_layouts/15/listform.aspx?ListId=%7BBF92F26E-BF49-47C5-8387-CB57919F26C5%7D&PageType=0\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:42:58.774Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/sapb/_layouts/15/listform.aspx?ListId=%7BBF92F26E-BF49-47C5-8387-CB57919F26C5%7D&PageType=0",
-	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/sapb/_layouts/15/listform.aspx?ListId=%7BBF92F26E%2DBF49%2D47C5%2D8387%2DCB57919F26C5%7D&PageType=0"
-}

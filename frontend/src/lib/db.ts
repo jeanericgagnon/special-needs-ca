@@ -1,5 +1,6 @@
 import Database from 'better-sqlite3';
 import path from 'path';
+import { DIAGNOSES_DETAILS } from './diagnoses';
 
 // Define DB Paths relative to next.js execution (working directory is usually the root of frontend/)
 const crawlerDbPath = path.resolve(process.cwd(), 'ca_disability_crawler.db');
@@ -67,8 +68,8 @@ function runMigrations(db: Database.Database) {
     INSERT OR IGNORE INTO program_eligibility_rules 
       (id, program_id, min_age_years, max_age_years, required_condition, required_need, insurance_status, school_status, trigger_reason)
     VALUES 
-      ('rule-haccp-1', 'hearing-aid-coverage', 0, 21, 'hearing-loss', 'hearing-aids', 'any', 'any', 'Hearing loss and private insurance device exclusions trigger the California HACCP waiver program to fund fitting and audiology device costs.'),
-      ('rule-haccp-2', 'hearing-aid-coverage', 0, 21, 'hearing-loss', null, 'any', 'any', 'Documented hearing loss triggers potential coverage under the California HACCP waiver for pediatric hearing services.');
+      ('rule-haccp-1', 'hearing-aid-coverage', 0, 21, 'hearing-loss-deafness', 'hearing-aids', 'any', 'any', 'Hearing loss and private insurance device exclusions trigger the California HACCP waiver program to fund fitting and audiology device costs.'),
+      ('rule-haccp-2', 'hearing-aid-coverage', 0, 21, 'hearing-loss-deafness', null, 'any', 'any', 'Documented hearing loss triggers potential coverage under the California HACCP waiver for pediatric hearing services.');
   `);
 
   // Create iep_advocates table
@@ -83,9 +84,26 @@ function runMigrations(db: Database.Database) {
       languages_spoken TEXT NOT NULL,
       phone TEXT NOT NULL,
       email TEXT NOT NULL,
-      website TEXT NOT NULL
+      website TEXT NOT NULL,
+      description TEXT
     );
   `);
+
+  // Add iep_advocates columns if they do not exist
+  const advocateTableInfo = db.prepare("PRAGMA table_info(iep_advocates)").all() as { name: string }[];
+  const advocateColumnNames = advocateTableInfo.map(col => col.name);
+  if (!advocateColumnNames.includes('specialties')) {
+    db.exec("ALTER TABLE iep_advocates ADD COLUMN specialties TEXT;");
+  }
+  if (!advocateColumnNames.includes('regional_center_vendorized')) {
+    db.exec("ALTER TABLE iep_advocates ADD COLUMN regional_center_vendorized INTEGER DEFAULT 0;");
+  }
+  if (!advocateColumnNames.includes('organization_affiliation')) {
+    db.exec("ALTER TABLE iep_advocates ADD COLUMN organization_affiliation TEXT;");
+  }
+  if (!advocateColumnNames.includes('description')) {
+    db.exec("ALTER TABLE iep_advocates ADD COLUMN description TEXT;");
+  }
 
   // Create community_suggestions table
   db.exec(`
@@ -339,6 +357,150 @@ function runMigrations(db: Database.Database) {
     console.log('⚡ Seeded California SELPAs local plan areas.');
   }
 
+  // Seed/Sync conditions and program rules if count is not 78
+  const countConditions = db.prepare("SELECT COUNT(*) as count FROM conditions").get() as { count: number };
+  if (countConditions.count !== 78) {
+    console.log(`⚡ Conditions count is ${countConditions.count}, expected 78. Re-seeding taxonomy conditions & eligibility rules...`);
+    
+    const seedCondTx = db.transaction(() => {
+      // 1. Clear old conditions and rules associated with conditions
+      db.prepare("DELETE FROM child_profile_conditions").run();
+      db.prepare("DELETE FROM conditions").run();
+      db.prepare("DELETE FROM program_eligibility_rules WHERE required_condition IS NOT NULL").run();
+
+      // 2. Insert all 78 conditions
+      const insertCond = db.prepare(`
+        INSERT INTO conditions 
+        (id, name, aliases, parent_friendly_explanation, regional_center_relevance, iep_relevance, ccs_relevance, ssi_relevance, cal_able_relevance, age_specific_notes, source_url, last_verified_date)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      `);
+
+      const insertRule = db.prepare(`
+        INSERT OR IGNORE INTO program_eligibility_rules 
+        (id, program_id, min_age_years, max_age_years, required_condition, required_need, insurance_status, school_status, trigger_reason)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+      `);
+
+      for (const cond of DIAGNOSES_DETAILS) {
+        insertCond.run(
+          cond.id,
+          cond.name,
+          cond.aliases,
+          cond.parent_friendly_explanation,
+          cond.regional_center_relevance,
+          cond.iep_relevance,
+          cond.ccs_relevance,
+          cond.ssi_relevance,
+          cond.cal_able_relevance,
+          cond.age_specific_notes,
+          cond.source_url,
+          cond.last_verified_date
+        );
+
+        // Generate rules dynamically for this condition!
+        // A. Regional Center (Lanterman) rule if rc relevant
+        if (cond.regional_center_relevance === 1) {
+          insertRule.run(
+            `rule-rc-${cond.id}`,
+            'regional-centers',
+            3.0,
+            120.0,
+            cond.id,
+            null,
+            'any',
+            'any',
+            `${cond.name} is a qualifying condition (or associated developmental delay category) under the Lanterman Act for California Regional Centers.`
+          );
+        }
+
+        // B. CCS rule if ccs relevant
+        if (cond.ccs_relevance === 1) {
+          insertRule.run(
+            `rule-ccs-${cond.id}`,
+            'california-childrens-services',
+            0.0,
+            21.0,
+            cond.id,
+            null,
+            'any',
+            'any',
+            `${cond.name} is medically eligible for CCS specialized physician care and school-based Medical Therapy Program (MTP) physical/occupational therapies.`
+          );
+        }
+
+        // C. SSI rule if ssi relevant
+        if (cond.ssi_relevance === 1) {
+          const reason = cond.id === 'down-syndrome-trisomy-21'
+            ? 'Down Syndrome automatically satisfies the childhood disability medical listing (Listing 110.06) for cash benefits.'
+            : `Assessments for ${cond.name} check for marked and severe functional limitations under childhood SSI guidelines.`;
+          
+          insertRule.run(
+            `rule-ssi-${cond.id}`,
+            'ssi-for-children',
+            0.0,
+            18.0,
+            cond.id,
+            null,
+            'any',
+            'any',
+            reason
+          );
+        }
+
+        // D. CalABLE rule if cal_able relevant
+        if (cond.cal_able_relevance === 1) {
+          insertRule.run(
+            `rule-able-${cond.id}`,
+            'calable',
+            0.0,
+            120.0,
+            cond.id,
+            null,
+            'any',
+            'any',
+            `Disability onset of ${cond.name} before age 26 qualifies for a tax-advantaged CalABLE savings account.`
+          );
+        }
+
+        // E. Early Start rule if RC/CCS relevant and under age 3
+        if (cond.regional_center_relevance === 1 || cond.ccs_relevance === 1) {
+          insertRule.run(
+            `rule-es-${cond.id}`,
+            'early-start',
+            0.0,
+            3.0,
+            cond.id,
+            null,
+            'any',
+            'any',
+            `Child is under age 3 and has an established high-risk condition (${cond.name}); Early Start intervention is highly recommended.`
+          );
+        }
+      }
+    });
+    seedCondTx();
+    console.log(`⚡ Seeded 78 Taxonomy Conditions & eligibility rules in SQLite.`);
+  }
+
+  // Create directory_reviews table for county directory community review system
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS directory_reviews (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      entity_type TEXT NOT NULL,
+      entity_id TEXT NOT NULL,
+      entity_name TEXT NOT NULL,
+      county_id TEXT NOT NULL,
+      rating INTEGER NOT NULL CHECK(rating BETWEEN 1 AND 5),
+      comment TEXT NOT NULL,
+      reviewer_label TEXT NOT NULL DEFAULT 'Parent',
+      experience_type TEXT,
+      helpful_count INTEGER DEFAULT 0,
+      created_at TEXT NOT NULL
+    );
+    CREATE INDEX IF NOT EXISTS idx_directory_reviews_entity ON directory_reviews(entity_type, entity_id);
+    CREATE INDEX IF NOT EXISTS idx_directory_reviews_county ON directory_reviews(county_id);
+  `);
+
   console.log('⚡ SQLite Database migrations completed successfully!');
 }
 
@@ -405,7 +567,22 @@ export interface RegionalCenter {
   service_area_description?: string | null;
 }
 
+export interface DirectoryReview {
+  id: number;
+  entity_type: string;
+  entity_id: string;
+  entity_name: string;
+  county_id: string;
+  rating: number;
+  comment: string;
+  reviewer_label: string;
+  experience_type: string | null;
+  helpful_count: number;
+  created_at: string;
+}
+
 export interface ResourceProvider {
+
   id: string;
   name: string;
   categories: string;
@@ -482,6 +659,10 @@ export interface IepAdvocate {
   phone: string;
   email: string;
   website: string;
+  specialties?: string | null;
+  regional_center_vendorized?: number;
+  organization_affiliation?: string | null;
+  description?: string | null;
 }
 
 export interface Program {
@@ -501,6 +682,20 @@ export interface County {
   name: string;
   website: string;
   ihss_wage_rate?: number;
+  medi_cal_plans?: string;
+}
+
+export interface ChildWaiver {
+  id: string;
+  child_id: string;
+  waiver_type: string;
+  document_name: string;
+  file_path?: string | null;
+  effective_date?: string | null;
+  expiration_date?: string | null;
+  authorized_hours?: number | null;
+  parsed_content?: string | null;
+  created_at: string;
 }
 
 export interface TaxonomyCondition {
@@ -604,6 +799,35 @@ export function getProgramsForDiagnosis(diagnosis: string): Program[] {
   const results = stmt.all(`%${diagnosis}%`);
   return results as Program[];
 }
+
+export function getAllPrograms(): Program[] {
+  try {
+    const stmt = crawlerDb.prepare(`
+      SELECT * FROM structured_programs 
+      GROUP BY program_name
+      ORDER BY id ASC
+    `);
+    return stmt.all() as Program[];
+  } catch (err) {
+    console.error('Failed to get all programs:', err);
+    return [];
+  }
+}
+
+export function getProgramBySlug(slug: string): Program | null {
+  const all = getAllPrograms();
+  const found = all.find(p => {
+    const pSlug = p.program_name
+      .toLowerCase()
+      .replace(/[^\w\s-]/g, '')
+      .trim()
+      .replace(/\s+/g, '-')
+      .replace(/-+/g, '-');
+    return pSlug === slug;
+  });
+  return found || null;
+}
+
 
 export interface User {
   id: string;
@@ -822,6 +1046,44 @@ export function toggleReminderCompleted(reminderId: string, isCompleted: boolean
 
 export function deleteReminder(reminderId: string) {
   navigatorDb.prepare('DELETE FROM reminders WHERE id = ?').run(reminderId);
+}
+
+// ----------------------------------------------------
+// 5.5. Child Waiver Vault Queries
+// ----------------------------------------------------
+
+export function getChildWaivers(childId: string): ChildWaiver[] {
+  return navigatorDb.prepare('SELECT * FROM child_waivers WHERE child_id = ? ORDER BY created_at DESC').all(childId) as ChildWaiver[];
+}
+
+export function saveChildWaiver(waiver: ChildWaiver) {
+  navigatorDb.prepare(`
+    INSERT INTO child_waivers (id, child_id, waiver_type, document_name, file_path, effective_date, expiration_date, authorized_hours, parsed_content, created_at)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    ON CONFLICT(id) DO UPDATE SET
+      waiver_type = excluded.waiver_type,
+      document_name = excluded.document_name,
+      file_path = excluded.file_path,
+      effective_date = excluded.effective_date,
+      expiration_date = excluded.expiration_date,
+      authorized_hours = excluded.authorized_hours,
+      parsed_content = excluded.parsed_content
+  `).run(
+    waiver.id,
+    waiver.child_id,
+    waiver.waiver_type,
+    waiver.document_name,
+    waiver.file_path,
+    waiver.effective_date,
+    waiver.expiration_date,
+    waiver.authorized_hours,
+    waiver.parsed_content,
+    waiver.created_at
+  );
+}
+
+export function deleteChildWaiver(waiverId: string) {
+  navigatorDb.prepare('DELETE FROM child_waivers WHERE id = ?').run(waiverId);
 }
 
 // ----------------------------------------------------

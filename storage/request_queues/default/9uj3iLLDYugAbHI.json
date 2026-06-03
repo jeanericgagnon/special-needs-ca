@@ -1,9 +1,0 @@
-{
-	"id": "9uj3iLLDYugAbHI",
-	"json": "{\"id\":\"9uj3iLLDYugAbHI\",\"url\":\"https://give.ucdavis.edu/Search/Tags/disease\",\"loadedUrl\":\"https://give.ucdavis.edu/Search/Tags/disease\",\"uniqueKey\":\"https://give.ucdavis.edu/Search/Tags/disease\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:54.800Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/Search/Tags/disease",
-	"url": "https://give.ucdavis.edu/Search/Tags/disease"
-}

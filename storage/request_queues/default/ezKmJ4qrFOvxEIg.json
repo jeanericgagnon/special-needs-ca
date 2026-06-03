@@ -1,9 +1,0 @@
-{
-	"id": "ezKmJ4qrFOvxEIg",
-	"json": "{\"id\":\"ezKmJ4qrFOvxEIg\",\"url\":\"https://health.ucdavis.edu/leadership/bios/orlowski_bio.html\",\"loadedUrl\":\"https://health.ucdavis.edu/leadership/bios/orlowski\",\"uniqueKey\":\"https://health.ucdavis.edu/leadership/bios/orlowski_bio.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:29.625Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/leadership/bios/orlowski_bio.html",
-	"url": "https://health.ucdavis.edu/leadership/bios/orlowski_bio.html"
-}

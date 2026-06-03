@@ -1,9 +1,0 @@
-{
-	"id": "vGHrkU5b1GSwwXV",
-	"json": "{\"id\":\"vGHrkU5b1GSwwXV\",\"url\":\"http://www.cdss.ca.gov/reporting/report-abuse\",\"loadedUrl\":\"https://www.cdss.ca.gov/reporting/report-abuse\",\"uniqueKey\":\"http://www.cdss.ca.gov/reporting/report-abuse\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:09.848Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.cdss.ca.gov/reporting/report-abuse",
-	"url": "http://www.cdss.ca.gov/reporting/report-abuse"
-}

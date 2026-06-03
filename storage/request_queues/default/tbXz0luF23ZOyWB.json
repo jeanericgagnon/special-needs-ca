@@ -1,9 +1,0 @@
-{
-	"id": "tbXz0luF23ZOyWB",
-	"json": "{\"id\":\"tbXz0luF23ZOyWB\",\"url\":\"https://health.ucdavis.edu/cancer/support/supportgroups\",\"loadedUrl\":\"https://health.ucdavis.edu/cancer/support/supportgroups\",\"uniqueKey\":\"https://health.ucdavis.edu/cancer/support/supportgroups\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:14.261Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/cancer/support/supportgroups",
-	"url": "https://health.ucdavis.edu/cancer/support/supportgroups"
-}

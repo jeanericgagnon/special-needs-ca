@@ -1,9 +1,0 @@
-{
-	"id": "CPugalVbGVH2XLS",
-	"json": "{\"id\":\"CPugalVbGVH2XLS\",\"url\":\"https://www.cde.ca.gov/re/cc/documents/cdecommstoolkit.doc\",\"loadedUrl\":\"https://www.cde.ca.gov/re/cc/documents/cdecommstoolkit.doc\",\"uniqueKey\":\"https://www.cde.ca.gov/re/cc/documents/cdecommstoolkit.doc\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:01.541Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/re/cc/documents/cdecommstoolkit.doc",
-	"url": "https://www.cde.ca.gov/re/cc/documents/cdecommstoolkit.doc"
-}

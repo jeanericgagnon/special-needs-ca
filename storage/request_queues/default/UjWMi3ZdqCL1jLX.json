@@ -1,9 +1,0 @@
-{
-	"id": "UjWMi3ZdqCL1jLX",
-	"json": "{\"id\":\"UjWMi3ZdqCL1jLX\",\"url\":\"https://hr.ucdavis.edu/supervisors\",\"loadedUrl\":\"https://hr.ucdavis.edu/supervisors\",\"uniqueKey\":\"https://hr.ucdavis.edu/supervisors\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:31.118Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/supervisors",
-	"url": "https://hr.ucdavis.edu/supervisors"
-}

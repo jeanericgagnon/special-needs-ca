@@ -1,9 +1,0 @@
-{
-	"id": "FW0Xp29KEhzsT76",
-	"json": "{\"id\":\"FW0Xp29KEhzsT76\",\"url\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/plastic-surgery\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/plastic-surgery\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/plastic-surgery\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:51.527Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/locations/specialty-care/plastic-surgery",
-	"url": "https://health.ucdavis.edu/patients-visitors/locations/specialty-care/plastic-surgery"
-}

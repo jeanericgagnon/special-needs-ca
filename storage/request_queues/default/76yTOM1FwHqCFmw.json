@@ -1,9 +1,0 @@
-{
-	"id": "76yTOM1FwHqCFmw",
-	"json": "{\"id\":\"76yTOM1FwHqCFmw\",\"url\":\"https://www.cde.ca.gov/sp/hs/cy/\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/hs/cy/\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/hs/cy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:03.061Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/sp/hs/cy",
-	"url": "https://www.cde.ca.gov/sp/hs/cy/"
-}

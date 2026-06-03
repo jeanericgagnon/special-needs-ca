@@ -1,9 +1,0 @@
-{
-	"id": "CNVTWneo5iTE6WR",
-	"json": "{\"id\":\"CNVTWneo5iTE6WR\",\"url\":\"https://health.ucdavis.edu/medmicro/graduategroupaffiliations.html\",\"loadedUrl\":\"https://health.ucdavis.edu/medmicro/graduategroupaffiliations.html\",\"uniqueKey\":\"https://health.ucdavis.edu/medmicro/graduategroupaffiliations.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:23:55.485Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/medmicro/graduategroupaffiliations.html",
-	"url": "https://health.ucdavis.edu/medmicro/graduategroupaffiliations.html"
-}

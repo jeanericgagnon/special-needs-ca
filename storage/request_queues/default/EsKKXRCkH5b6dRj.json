@@ -1,9 +1,0 @@
-{
-	"id": "EsKKXRCkH5b6dRj",
-	"json": "{\"id\":\"EsKKXRCkH5b6dRj\",\"url\":\"https://health.ucdavis.edu/conditions/asthma-respiratory/respiratory-infections/long-covid\",\"loadedUrl\":\"https://health.ucdavis.edu/conditions/asthma-respiratory/respiratory-infections/long-covid\",\"uniqueKey\":\"https://health.ucdavis.edu/conditions/asthma-respiratory/respiratory-infections/long-covid\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:37.464Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/conditions/asthma-respiratory/respiratory-infections/long-covid",
-	"url": "https://health.ucdavis.edu/conditions/asthma-respiratory/respiratory-infections/long-covid"
-}

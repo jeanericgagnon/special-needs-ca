@@ -1,9 +1,0 @@
-{
-	"id": "RoG00yY3rD4FKfS",
-	"json": "{\"id\":\"RoG00yY3rD4FKfS\",\"url\":\"https://www.dds.ca.gov/wp-content/uploads/2024/04/EnclosureG-FY2023-24_RegionalCenterClaimsReimbursementSummary.pdf\",\"loadedUrl\":\"https://www.dds.ca.gov/wp-content/uploads/2024/04/EnclosureG-FY2023-24_RegionalCenterClaimsReimbursementSummary.pdf\",\"uniqueKey\":\"https://www.dds.ca.gov/wp-content/uploads/2024/04/EnclosureG-FY2023-24_RegionalCenterClaimsReimbursementSummary.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:12:03.764Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/wp-content/uploads/2024/04/EnclosureG-FY2023-24_RegionalCenterClaimsReimbursementSummary.pdf",
-	"url": "https://www.dds.ca.gov/wp-content/uploads/2024/04/EnclosureG-FY2023-24_RegionalCenterClaimsReimbursementSummary.pdf"
-}

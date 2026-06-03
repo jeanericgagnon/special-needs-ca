@@ -1,9 +1,0 @@
-{
-	"id": "PUzCU90m5NgINva",
-	"json": "{\"id\":\"PUzCU90m5NgINva\",\"url\":\"http://www.dhcs.ca.gov/services/cancer/Pages/default.aspx\",\"loadedUrl\":\"https://www.dhcs.ca.gov/services/cancer/Pages/default.aspx\",\"uniqueKey\":\"http://www.dhcs.ca.gov/services/cancer/Pages/default.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:14:57.233Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.dhcs.ca.gov/services/cancer/Pages/default.aspx",
-	"url": "http://www.dhcs.ca.gov/services/cancer/Pages/default.aspx"
-}

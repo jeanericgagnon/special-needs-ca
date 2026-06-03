@@ -1,9 +1,0 @@
-{
-	"id": "dAidkf8Xiy1wWMn",
-	"json": "{\"id\":\"dAidkf8Xiy1wWMn\",\"url\":\"https://www.dir.ca.gov/das/\",\"loadedUrl\":\"https://www.dir.ca.gov/das/\",\"uniqueKey\":\"https://www.dir.ca.gov/das\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:51.940Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dir.ca.gov/das",
-	"url": "https://www.dir.ca.gov/das/"
-}

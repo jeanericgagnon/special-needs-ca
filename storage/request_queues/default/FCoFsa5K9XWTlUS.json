@@ -1,9 +1,0 @@
-{
-	"id": "FCoFsa5K9XWTlUS",
-	"json": "{\"id\":\"FCoFsa5K9XWTlUS\",\"url\":\"https://excellence.ucdavis.edu/about/publications-recognitions\",\"loadedUrl\":\"https://excellence.ucdavis.edu/about/publications-recognitions\",\"uniqueKey\":\"https://excellence.ucdavis.edu/about/publications-recognitions\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:35.688Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://excellence.ucdavis.edu/about/publications-recognitions",
-	"url": "https://excellence.ucdavis.edu/about/publications-recognitions"
-}

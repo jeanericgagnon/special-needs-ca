@@ -1,9 +1,0 @@
-{
-	"id": "qsL7jRwSEjg6VPo",
-	"json": "{\"id\":\"qsL7jRwSEjg6VPo\",\"url\":\"https://pod.ucdavis.edu/?page=3\",\"loadedUrl\":\"https://pod.ucdavis.edu/?page=3\",\"uniqueKey\":\"https://pod.ucdavis.edu?page=3\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:26.083Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://pod.ucdavis.edu?page=3",
-	"url": "https://pod.ucdavis.edu/?page=3"
-}

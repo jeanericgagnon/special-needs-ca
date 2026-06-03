@@ -1,9 +1,0 @@
-{
-	"id": "aeoKHxBqyrVUii1",
-	"json": "{\"id\":\"aeoKHxBqyrVUii1\",\"url\":\"https://health.ucdavis.edu/treatments/chemotherapy\",\"loadedUrl\":\"https://health.ucdavis.edu/treatments/chemotherapy\",\"uniqueKey\":\"https://health.ucdavis.edu/treatments/chemotherapy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:47.805Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/treatments/chemotherapy",
-	"url": "https://health.ucdavis.edu/treatments/chemotherapy"
-}

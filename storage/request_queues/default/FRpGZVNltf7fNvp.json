@@ -1,9 +1,0 @@
-{
-	"id": "FRpGZVNltf7fNvp",
-	"json": "{\"id\":\"FRpGZVNltf7fNvp\",\"url\":\"https://rarediseases.org/organizations/national-ataxia-foundation/\",\"loadedUrl\":\"https://rarediseases.org/organizations/national-ataxia-foundation/\",\"uniqueKey\":\"https://rarediseases.org/organizations/national-ataxia-foundation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:18:31.599Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/organizations/national-ataxia-foundation",
-	"url": "https://rarediseases.org/organizations/national-ataxia-foundation/"
-}

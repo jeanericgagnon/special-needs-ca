@@ -1,9 +1,0 @@
-{
-	"id": "S5TGGg3KuUzLNP9",
-	"json": "{\"id\":\"S5TGGg3KuUzLNP9\",\"url\":\"https://www.csdr-cde.ca.gov/internships/\",\"loadedUrl\":\"https://www.csdr-cde.ca.gov/internships/\",\"uniqueKey\":\"https://www.csdr-cde.ca.gov/internships\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:11.269Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.csdr-cde.ca.gov/internships",
-	"url": "https://www.csdr-cde.ca.gov/internships/"
-}

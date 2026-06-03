@@ -1,9 +1,0 @@
-{
-	"id": "y1feANP83M6QXRX",
-	"json": "{\"id\":\"y1feANP83M6QXRX\",\"url\":\"https://give.ucdavis.edu/FERI/FRIEAD2\",\"loadedUrl\":\"https://give.ucdavis.edu/FERI/FRIEAD2\",\"uniqueKey\":\"https://give.ucdavis.edu/FERI/FRIEAD2\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:58.502Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/FERI/FRIEAD2",
-	"url": "https://give.ucdavis.edu/FERI/FRIEAD2"
-}

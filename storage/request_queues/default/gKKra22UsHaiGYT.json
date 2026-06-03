@@ -1,9 +1,0 @@
-{
-	"id": "gKKra22UsHaiGYT",
-	"json": "{\"id\":\"gKKra22UsHaiGYT\",\"url\":\"https://www.cdss.ca.gov/inforesources/ihss-providers/resources/direct-deposit\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/ihss-providers/resources/direct-deposit\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/ihss-providers/resources/direct-deposit\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:56.125Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/inforesources/ihss-providers/resources/direct-deposit",
-	"url": "https://www.cdss.ca.gov/inforesources/ihss-providers/resources/direct-deposit"
-}

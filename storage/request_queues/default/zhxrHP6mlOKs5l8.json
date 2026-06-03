@@ -1,9 +1,0 @@
-{
-	"id": "zhxrHP6mlOKs5l8",
-	"json": "{\"id\":\"zhxrHP6mlOKs5l8\",\"url\":\"https://financeandbusiness.ucdavis.edu/finance/equipment-management\",\"loadedUrl\":\"https://financeandbusiness.ucdavis.edu/finance/equipment-management\",\"uniqueKey\":\"https://financeandbusiness.ucdavis.edu/finance/equipment-management\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:53.445Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://financeandbusiness.ucdavis.edu/finance/equipment-management",
-	"url": "https://financeandbusiness.ucdavis.edu/finance/equipment-management"
-}

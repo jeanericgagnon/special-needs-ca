@@ -1,9 +1,0 @@
-{
-	"id": "hycTbZjhoVDd1qM",
-	"json": "{\"id\":\"hycTbZjhoVDd1qM\",\"url\":\"https://financeandbusiness.ucdavis.edu/student-resources/accounting/dd\",\"loadedUrl\":\"https://financeandbusiness.ucdavis.edu/student-resources/accounting/dd\",\"uniqueKey\":\"https://financeandbusiness.ucdavis.edu/student-resources/accounting/dd\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:50.395Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://financeandbusiness.ucdavis.edu/student-resources/accounting/dd",
-	"url": "https://financeandbusiness.ucdavis.edu/student-resources/accounting/dd"
-}

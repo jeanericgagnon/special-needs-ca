@@ -1,9 +1,0 @@
-{
-	"id": "IY7COhhYZTdQNxH",
-	"json": "{\"id\":\"IY7COhhYZTdQNxH\",\"url\":\"https://health.ucdavis.edu/cellbio/\",\"loadedUrl\":\"https://health.ucdavis.edu/cellbio/\",\"uniqueKey\":\"https://health.ucdavis.edu/cellbio\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:53.212Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/cellbio",
-	"url": "https://health.ucdavis.edu/cellbio/"
-}

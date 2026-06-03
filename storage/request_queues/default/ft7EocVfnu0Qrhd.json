@@ -1,9 +1,0 @@
-{
-	"id": "ft7EocVfnu0Qrhd",
-	"json": "{\"id\":\"ft7EocVfnu0Qrhd\",\"url\":\"https://data.chhs.ca.gov/cdn-cgi/l/email-protection#0b647b6e656f6a7f6a4b6863637825686a256c647d\",\"loadedUrl\":\"https://data.chhs.ca.gov/cdn-cgi/l/email-protection#0b647b6e656f6a7f6a4b6863637825686a256c647d\",\"uniqueKey\":\"https://data.chhs.ca.gov/cdn-cgi/l/email-protection\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:46.288Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://data.chhs.ca.gov/cdn-cgi/l/email-protection",
-	"url": "https://data.chhs.ca.gov/cdn-cgi/l/email-protection#0b647b6e656f6a7f6a4b6863637825686a256c647d"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "FnKn7Vwn3cncFe3",
-	"json": "{\"id\":\"FnKn7Vwn3cncFe3\",\"url\":\"https://cdss.ca.gov/inforesources/Data-Portal/Research-and-Data/CalFresh-Data-Dashboard\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/data-portal/research-and-data/calfresh-data-dashboard\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Data-Portal/Research-and-Data/CalFresh-Data-Dashboard\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:58:58.262Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/Data-Portal/Research-and-Data/CalFresh-Data-Dashboard",
-	"url": "https://cdss.ca.gov/inforesources/Data-Portal/Research-and-Data/CalFresh-Data-Dashboard"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "q1p1gFBmrxI3imy",
-	"json": "{\"id\":\"q1p1gFBmrxI3imy\",\"url\":\"https://www.ca.gov/departments/220/services/1220/\",\"loadedUrl\":\"https://www.ca.gov/departments/220/services/1220/\",\"uniqueKey\":\"https://www.ca.gov/departments/220/services/1220\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:21.888Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ca.gov/departments/220/services/1220",
-	"url": "https://www.ca.gov/departments/220/services/1220/"
-}

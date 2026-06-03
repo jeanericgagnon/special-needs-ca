@@ -1,9 +1,0 @@
-{
-	"id": "lXGPfpxo5yNM68G",
-	"json": "{\"id\":\"lXGPfpxo5yNM68G\",\"url\":\"https://yellowcluster.ucdavis.edu/transfer-credit\",\"loadedUrl\":\"https://yellowcluster.ucdavis.edu/equivalencies-substitutions\",\"uniqueKey\":\"https://yellowcluster.ucdavis.edu/transfer-credit\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:15.090Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://yellowcluster.ucdavis.edu/transfer-credit",
-	"url": "https://yellowcluster.ucdavis.edu/transfer-credit"
-}

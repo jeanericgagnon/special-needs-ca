@@ -1,9 +1,0 @@
-{
-	"id": "bC9Tu8ae8qJIVvM",
-	"json": "{\"id\":\"bC9Tu8ae8qJIVvM\",\"url\":\"https://physicians.ucdavis.edu/?Cities=Auburn\",\"loadedUrl\":\"https://physicians.ucdavis.edu/?Cities=Auburn\",\"uniqueKey\":\"https://physicians.ucdavis.edu?Cities=Auburn\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:12.001Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://physicians.ucdavis.edu?Cities=Auburn",
-	"url": "https://physicians.ucdavis.edu/?Cities=Auburn"
-}

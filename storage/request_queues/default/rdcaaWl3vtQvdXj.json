@@ -1,9 +1,0 @@
-{
-	"id": "rdcaaWl3vtQvdXj",
-	"json": "{\"id\":\"rdcaaWl3vtQvdXj\",\"url\":\"https://oag.ca.gov/children-seniors\",\"loadedUrl\":\"https://oag.ca.gov/children-seniors\",\"uniqueKey\":\"https://oag.ca.gov/children-seniors\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:47.496Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://oag.ca.gov/children-seniors",
-	"url": "https://oag.ca.gov/children-seniors"
-}

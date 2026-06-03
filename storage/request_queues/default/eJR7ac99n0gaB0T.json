@@ -1,9 +1,0 @@
-{
-	"id": "eJR7ac99n0gaB0T",
-	"json": "{\"id\":\"eJR7ac99n0gaB0T\",\"url\":\"https://www.cde.ca.gov/ta/ac/growthmodelfaq.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ta/ac/growthmodelfaq.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ta/ac/growthmodelfaq.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:50.229Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ta/ac/growthmodelfaq.asp",
-	"url": "https://www.cde.ca.gov/ta/ac/growthmodelfaq.asp"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "qlE6upC01SvWuy7",
-	"json": "{\"id\":\"qlE6upC01SvWuy7\",\"url\":\"https://cdss.ca.gov/inforesources/childrens-residential/how-to-become-licensed\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/childrens-residential/how-to-become-licensed\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/childrens-residential/how-to-become-licensed\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:44.334Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/childrens-residential/how-to-become-licensed",
-	"url": "https://cdss.ca.gov/inforesources/childrens-residential/how-to-become-licensed"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "tDUKvQ1bphEPfgB",
-	"json": "{\"id\":\"tDUKvQ1bphEPfgB\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/SACB/Pages/PedestrianSafety(PedSafe)Program.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/SACB/Pages/PedestrianSafety(PedSafe)Program.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/SACB/Pages/PedestrianSafety(PedSafe)Program.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:02:25.529Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/SACB/Pages/PedestrianSafety(PedSafe)Program.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/SACB/Pages/PedestrianSafety(PedSafe)Program.aspx"
-}

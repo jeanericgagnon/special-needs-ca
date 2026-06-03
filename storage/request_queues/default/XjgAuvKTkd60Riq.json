@@ -1,9 +1,0 @@
-{
-	"id": "XjgAuvKTkd60Riq",
-	"json": "{\"id\":\"XjgAuvKTkd60Riq\",\"url\":\"https://rarediseases.org/telemedicine-resources/request-resource/\",\"loadedUrl\":\"https://rarediseases.org/telemedicine-resources/request-resource/\",\"uniqueKey\":\"https://rarediseases.org/telemedicine-resources/request-resource\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:38.584Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/telemedicine-resources/request-resource",
-	"url": "https://rarediseases.org/telemedicine-resources/request-resource/"
-}

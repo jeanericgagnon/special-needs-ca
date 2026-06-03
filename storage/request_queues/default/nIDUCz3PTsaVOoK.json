@@ -1,9 +1,0 @@
-{
-	"id": "nIDUCz3PTsaVOoK",
-	"json": "{\"id\":\"nIDUCz3PTsaVOoK\",\"url\":\"https://cdss.ca.gov/goldenbearpass\",\"loadedUrl\":\"https://cdss.ca.gov/goldenbearpass\",\"uniqueKey\":\"https://cdss.ca.gov/goldenbearpass\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:02.852Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/goldenbearpass",
-	"url": "https://cdss.ca.gov/goldenbearpass"
-}

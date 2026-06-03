@@ -1,9 +1,0 @@
-{
-	"id": "EREnEeJ3ZKXKVex",
-	"json": "{\"id\":\"EREnEeJ3ZKXKVex\",\"url\":\"http://www.dhcs.ca.gov/services/medi-cal\",\"loadedUrl\":\"https://www.dhcs.ca.gov/services/medi-cal\",\"uniqueKey\":\"http://www.dhcs.ca.gov/services/medi-cal\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T17:55:27.244Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.dhcs.ca.gov/services/medi-cal",
-	"url": "http://www.dhcs.ca.gov/services/medi-cal"
-}

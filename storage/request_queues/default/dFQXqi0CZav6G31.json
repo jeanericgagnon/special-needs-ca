@@ -1,9 +1,0 @@
-{
-	"id": "dFQXqi0CZav6G31",
-	"json": "{\"id\":\"dFQXqi0CZav6G31\",\"url\":\"https://www.dds.ca.gov/general/appeals-complaints-comments/vendorization-appeals/\",\"loadedUrl\":\"https://www.dds.ca.gov/general/appeals-complaints-comments/vendorization-appeals/\",\"uniqueKey\":\"https://www.dds.ca.gov/general/appeals-complaints-comments/vendorization-appeals\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:02.491Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/general/appeals-complaints-comments/vendorization-appeals",
-	"url": "https://www.dds.ca.gov/general/appeals-complaints-comments/vendorization-appeals/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "gU6WCGGDXqmC7X7",
-	"json": "{\"id\":\"gU6WCGGDXqmC7X7\",\"url\":\"https://leadership.ucdavis.edu/about/councils-committees-boards\",\"loadedUrl\":\"https://leadership.ucdavis.edu/about/councils-committees-boards\",\"uniqueKey\":\"https://leadership.ucdavis.edu/about/councils-committees-boards\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:36.274Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://leadership.ucdavis.edu/about/councils-committees-boards",
-	"url": "https://leadership.ucdavis.edu/about/councils-committees-boards"
-}

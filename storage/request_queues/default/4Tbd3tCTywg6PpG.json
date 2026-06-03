@@ -1,9 +1,0 @@
-{
-	"id": "4Tbd3tCTywg6PpG",
-	"json": "{\"id\":\"4Tbd3tCTywg6PpG\",\"url\":\"https://health.ucdavis.edu/about/facts-figures.html\",\"loadedUrl\":\"https://health.ucdavis.edu/about/facts-figures\",\"uniqueKey\":\"https://health.ucdavis.edu/about/facts-figures.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:28.904Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/about/facts-figures.html",
-	"url": "https://health.ucdavis.edu/about/facts-figures.html"
-}

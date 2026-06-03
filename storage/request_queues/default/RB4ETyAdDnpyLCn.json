@@ -1,9 +1,0 @@
-{
-	"id": "RB4ETyAdDnpyLCn",
-	"json": "{\"id\":\"RB4ETyAdDnpyLCn\",\"url\":\"https://www.cde.ca.gov/sp/ae/fg/\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/ae/fg/\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/ae/fg\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:57:39.249Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/sp/ae/fg",
-	"url": "https://www.cde.ca.gov/sp/ae/fg/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "5TDq9FiqMBheBlR",
-	"json": "{\"id\":\"5TDq9FiqMBheBlR\",\"url\":\"https://neuroscience.ucdavis.edu/people?page=4\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/people?page=4\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/people?page=4\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:38.777Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/people?page=4",
-	"url": "https://neuroscience.ucdavis.edu/people?page=4"
-}

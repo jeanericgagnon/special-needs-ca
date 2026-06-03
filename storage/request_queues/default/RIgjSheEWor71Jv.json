@@ -1,9 +1,0 @@
-{
-	"id": "RIgjSheEWor71Jv",
-	"json": "{\"id\":\"RIgjSheEWor71Jv\",\"url\":\"https://www.ctc.ca.gov/licensure-enforcement/\",\"loadedUrl\":\"https://www.ctc.ca.gov/licensure-enforcement/\",\"uniqueKey\":\"https://www.ctc.ca.gov/licensure-enforcement\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:25.522Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ctc.ca.gov/licensure-enforcement",
-	"url": "https://www.ctc.ca.gov/licensure-enforcement/"
-}

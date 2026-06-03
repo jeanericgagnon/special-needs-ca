@@ -1,9 +1,0 @@
-{
-	"id": "cmazTAHoqwhTLgX",
-	"json": "{\"id\":\"cmazTAHoqwhTLgX\",\"url\":\"https://rarediseases.org/living-with-a-rare-disease/find-a-rare-disease-organization/\",\"loadedUrl\":\"https://rarediseases.org/patient-organizations/\",\"uniqueKey\":\"https://rarediseases.org/living-with-a-rare-disease/find-a-rare-disease-organization\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:12:05.722Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/living-with-a-rare-disease/find-a-rare-disease-organization",
-	"url": "https://rarediseases.org/living-with-a-rare-disease/find-a-rare-disease-organization/"
-}

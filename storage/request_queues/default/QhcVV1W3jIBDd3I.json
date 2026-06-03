@@ -1,9 +1,0 @@
-{
-	"id": "QhcVV1W3jIBDd3I",
-	"json": "{\"id\":\"QhcVV1W3jIBDd3I\",\"url\":\"https://www.assembly.ca.gov/schedules-publications/daily-file\",\"loadedUrl\":\"https://www.assembly.ca.gov/schedules-publications/daily-file\",\"uniqueKey\":\"https://www.assembly.ca.gov/schedules-publications/daily-file\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:59.761Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.assembly.ca.gov/schedules-publications/daily-file",
-	"url": "https://www.assembly.ca.gov/schedules-publications/daily-file"
-}

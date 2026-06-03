@@ -1,9 +1,0 @@
-{
-	"id": "t9RfPGKsqie9SVA",
-	"json": "{\"id\":\"t9RfPGKsqie9SVA\",\"url\":\"https://plannedgiving.ucdavis.edu/real-estate\",\"loadedUrl\":\"https://plannedgiving.ucdavis.edu/real-estate\",\"uniqueKey\":\"https://plannedgiving.ucdavis.edu/real-estate\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:49.228Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://plannedgiving.ucdavis.edu/real-estate",
-	"url": "https://plannedgiving.ucdavis.edu/real-estate"
-}

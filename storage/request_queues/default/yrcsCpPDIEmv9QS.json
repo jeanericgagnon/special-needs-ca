@@ -1,9 +1,0 @@
-{
-	"id": "yrcsCpPDIEmv9QS",
-	"json": "{\"id\":\"yrcsCpPDIEmv9QS\",\"url\":\"https://www.aging.ca.gov/Programs_and_Services/Long-Term_Care_Ombudsman/Report_Elder_Abuse_or_Neglect/\",\"loadedUrl\":\"https://www.aging.ca.gov/Programs_and_Services/Long-Term_Care_Ombudsman/Report_Elder_Abuse_or_Neglect/\",\"uniqueKey\":\"https://www.aging.ca.gov/Programs_and_Services/Long-Term_Care_Ombudsman/Report_Elder_Abuse_or_Neglect\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T17:27:07.331Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.aging.ca.gov/Programs_and_Services/Long-Term_Care_Ombudsman/Report_Elder_Abuse_or_Neglect",
-	"url": "https://www.aging.ca.gov/Programs_and_Services/Long-Term_Care_Ombudsman/Report_Elder_Abuse_or_Neglect/"
-}

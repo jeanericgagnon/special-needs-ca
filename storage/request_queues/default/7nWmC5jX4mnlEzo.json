@@ -1,9 +1,0 @@
-{
-	"id": "7nWmC5jX4mnlEzo",
-	"json": "{\"id\":\"7nWmC5jX4mnlEzo\",\"url\":\"https://health.ucdavis.edu/conditions/endocrinology-diabetes/diabetes/type-1-diabetes\",\"loadedUrl\":\"https://health.ucdavis.edu/conditions/endocrinology-diabetes/diabetes/type-1-diabetes\",\"uniqueKey\":\"https://health.ucdavis.edu/conditions/endocrinology-diabetes/diabetes/type-1-diabetes\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:37.973Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/conditions/endocrinology-diabetes/diabetes/type-1-diabetes",
-	"url": "https://health.ucdavis.edu/conditions/endocrinology-diabetes/diabetes/type-1-diabetes"
-}

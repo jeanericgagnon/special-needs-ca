@@ -1,9 +1,0 @@
-{
-	"id": "g51InSiFJ1gi2Zk",
-	"json": "{\"id\":\"g51InSiFJ1gi2Zk\",\"url\":\"https://www.dds.ca.gov/consumers/cal-able/\",\"loadedUrl\":\"https://www.dds.ca.gov/individuals-and-families/cal-able/\",\"uniqueKey\":\"https://www.dds.ca.gov/consumers/cal-able\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:01.665Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/consumers/cal-able",
-	"url": "https://www.dds.ca.gov/consumers/cal-able/"
-}

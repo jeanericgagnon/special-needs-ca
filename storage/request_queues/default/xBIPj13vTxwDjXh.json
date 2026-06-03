@@ -1,9 +1,0 @@
-{
-	"id": "xBIPj13vTxwDjXh",
-	"json": "{\"id\":\"xBIPj13vTxwDjXh\",\"url\":\"https://www.dds.ca.gov/consumers/resources/\",\"loadedUrl\":\"https://www.dds.ca.gov/individuals-and-families/resources/\",\"uniqueKey\":\"https://www.dds.ca.gov/consumers/resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:01.620Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/consumers/resources",
-	"url": "https://www.dds.ca.gov/consumers/resources/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "tmn5mQmakBR4jeJ",
-	"json": "{\"id\":\"tmn5mQmakBR4jeJ\",\"url\":\"https://www.cde.ca.gov/re/pn/\",\"loadedUrl\":\"https://www.cde.ca.gov/re/pn/\",\"uniqueKey\":\"https://www.cde.ca.gov/re/pn\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:05.990Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/re/pn",
-	"url": "https://www.cde.ca.gov/re/pn/"
-}

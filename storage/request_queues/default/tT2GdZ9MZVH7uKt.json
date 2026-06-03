@@ -1,9 +1,0 @@
-{
-	"id": "tT2GdZ9MZVH7uKt",
-	"json": "{\"id\":\"tT2GdZ9MZVH7uKt\",\"url\":\"https://www.assembly.ca.gov/resources/legislative-process\",\"loadedUrl\":\"https://www.assembly.ca.gov/resources/legislative-process\",\"uniqueKey\":\"https://www.assembly.ca.gov/resources/legislative-process\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:03:00.281Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.assembly.ca.gov/resources/legislative-process",
-	"url": "https://www.assembly.ca.gov/resources/legislative-process"
-}

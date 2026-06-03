@@ -1,9 +1,0 @@
-{
-	"id": "v4Rx81SgeaTYeDX",
-	"json": "{\"id\":\"v4Rx81SgeaTYeDX\",\"url\":\"https://www.cde.ca.gov/SchoolDirectory/details?cdscode=06100660000000\",\"loadedUrl\":\"https://www.cde.ca.gov/SchoolDirectory/details?cdscode=06100660000000\",\"uniqueKey\":\"https://www.cde.ca.gov/SchoolDirectory/details?cdscode=06100660000000\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:19.919Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/SchoolDirectory/details?cdscode=06100660000000",
-	"url": "https://www.cde.ca.gov/SchoolDirectory/details?cdscode=06100660000000"
-}

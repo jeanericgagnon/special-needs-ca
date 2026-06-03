@@ -1,9 +1,0 @@
-{
-	"id": "EcdnXDvJlqv0irT",
-	"json": "{\"id\":\"EcdnXDvJlqv0irT\",\"url\":\"https://www.cde.ca.gov/ls/cg/mh/studentcrisishelp.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ls/mh/studentcrisishelp.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ls/cg/mh/studentcrisishelp.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:58.760Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ls/cg/mh/studentcrisishelp.asp",
-	"url": "https://www.cde.ca.gov/ls/cg/mh/studentcrisishelp.asp"
-}

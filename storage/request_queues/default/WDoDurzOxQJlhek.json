@@ -1,9 +1,0 @@
-{
-	"id": "WDoDurzOxQJlhek",
-	"json": "{\"id\":\"WDoDurzOxQJlhek\",\"url\":\"https://health.ucdavis.edu/cancer/office-clinical-research/\",\"loadedUrl\":\"https://health.ucdavis.edu/cancer/office-clinical-research/\",\"uniqueKey\":\"https://health.ucdavis.edu/cancer/office-clinical-research\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:14.794Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/cancer/office-clinical-research",
-	"url": "https://health.ucdavis.edu/cancer/office-clinical-research/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "VBYQptgQXbpAmWW",
-	"json": "{\"id\":\"VBYQptgQXbpAmWW\",\"url\":\"https://neuroscience.ucdavis.edu/people/brian-wiltgen\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/people/brian-wiltgen\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/people/brian-wiltgen\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:46.385Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/people/brian-wiltgen",
-	"url": "https://neuroscience.ucdavis.edu/people/brian-wiltgen"
-}

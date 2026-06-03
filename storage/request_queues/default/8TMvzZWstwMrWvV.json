@@ -1,9 +1,0 @@
-{
-	"id": "8TMvzZWstwMrWvV",
-	"json": "{\"id\":\"8TMvzZWstwMrWvV\",\"url\":\"https://health.ucdavis.edu/medical-school/leadership/dean-message\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-school/leadership/dean-message\",\"uniqueKey\":\"https://health.ucdavis.edu/medical-school/leadership/dean-message\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:53.974Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/medical-school/leadership/dean-message",
-	"url": "https://health.ucdavis.edu/medical-school/leadership/dean-message"
-}

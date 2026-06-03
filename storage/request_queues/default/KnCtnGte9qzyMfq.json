@@ -1,9 +1,0 @@
-{
-	"id": "KnCtnGte9qzyMfq",
-	"json": "{\"id\":\"KnCtnGte9qzyMfq\",\"url\":\"http://gsm.ucdavis.edu/staffMBA\",\"loadedUrl\":\"https://gsm.ucdavis.edu/post/uc-davis-mba-and-mm-employee-scholarship-program\",\"uniqueKey\":\"http://gsm.ucdavis.edu/staffMBA\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:56.968Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://gsm.ucdavis.edu/staffMBA",
-	"url": "http://gsm.ucdavis.edu/staffMBA"
-}

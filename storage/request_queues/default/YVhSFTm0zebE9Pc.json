@@ -1,9 +1,0 @@
-{
-	"id": "YVhSFTm0zebE9Pc",
-	"json": "{\"id\":\"YVhSFTm0zebE9Pc\",\"url\":\"https://www.cde.ca.gov/sp/ml/roadmaptolcap.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/ml/roadmaptolcap.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/ml/roadmaptolcap.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:12.069Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/sp/ml/roadmaptolcap.asp",
-	"url": "https://www.cde.ca.gov/sp/ml/roadmaptolcap.asp"
-}

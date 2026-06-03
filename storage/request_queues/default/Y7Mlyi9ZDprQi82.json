@@ -1,9 +1,0 @@
-{
-	"id": "Y7Mlyi9ZDprQi82",
-	"json": "{\"id\":\"Y7Mlyi9ZDprQi82\",\"url\":\"https://health.ucdavis.edu/livinghealthy/index.html\",\"loadedUrl\":\"https://health.ucdavis.edu/health-education/\",\"uniqueKey\":\"https://health.ucdavis.edu/livinghealthy/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:11.158Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/livinghealthy/index.html",
-	"url": "https://health.ucdavis.edu/livinghealthy/index.html"
-}

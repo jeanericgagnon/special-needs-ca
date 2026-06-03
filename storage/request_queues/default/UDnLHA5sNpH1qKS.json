@@ -1,9 +1,0 @@
-{
-	"id": "UDnLHA5sNpH1qKS",
-	"json": "{\"id\":\"UDnLHA5sNpH1qKS\",\"url\":\"https://lettersandscience.ucdavis.edu/student-success/keep-up-with-ls/connect-dean\",\"loadedUrl\":\"https://lettersandscience.ucdavis.edu/student-success/keep-up-with-ls/connect-dean\",\"uniqueKey\":\"https://lettersandscience.ucdavis.edu/student-success/keep-up-with-ls/connect-dean\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:23.426Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://lettersandscience.ucdavis.edu/student-success/keep-up-with-ls/connect-dean",
-	"url": "https://lettersandscience.ucdavis.edu/student-success/keep-up-with-ls/connect-dean"
-}

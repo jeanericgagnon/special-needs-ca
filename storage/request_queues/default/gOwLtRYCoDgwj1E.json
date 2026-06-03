@@ -1,9 +1,0 @@
-{
-	"id": "gOwLtRYCoDgwj1E",
-	"json": "{\"id\":\"gOwLtRYCoDgwj1E\",\"url\":\"https://www.dds.ca.gov/initiatives/workforce-initiatives-4/workforce-initiatives-resources/\",\"loadedUrl\":\"https://www.dds.ca.gov/initiatives/workforce-initiatives-4/workforce-initiatives-resources/\",\"uniqueKey\":\"https://www.dds.ca.gov/initiatives/workforce-initiatives-4/workforce-initiatives-resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:12:23.225Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/initiatives/workforce-initiatives-4/workforce-initiatives-resources",
-	"url": "https://www.dds.ca.gov/initiatives/workforce-initiatives-4/workforce-initiatives-resources/"
-}

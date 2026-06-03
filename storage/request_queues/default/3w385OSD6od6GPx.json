@@ -1,9 +1,0 @@
-{
-	"id": "3w385OSD6od6GPx",
-	"json": "{\"id\":\"3w385OSD6od6GPx\",\"url\":\"https://health.ucdavis.edu/health-news/eyecenter/\",\"loadedUrl\":\"https://health.ucdavis.edu/eye-center/news/\",\"uniqueKey\":\"https://health.ucdavis.edu/health-news/eyecenter\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:36.118Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/health-news/eyecenter",
-	"url": "https://health.ucdavis.edu/health-news/eyecenter/"
-}

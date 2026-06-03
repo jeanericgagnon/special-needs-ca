@@ -1,9 +1,0 @@
-{
-	"id": "3ljn7qoVIab1hX2",
-	"json": "{\"id\":\"3ljn7qoVIab1hX2\",\"url\":\"https://cdss.ca.gov/inforesources/Caregiver-Advocacy-Network/Health-Passport\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/caregiver-advocacy-network/health-passport\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Caregiver-Advocacy-Network/Health-Passport\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:56.454Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/Caregiver-Advocacy-Network/Health-Passport",
-	"url": "https://cdss.ca.gov/inforesources/Caregiver-Advocacy-Network/Health-Passport"
-}

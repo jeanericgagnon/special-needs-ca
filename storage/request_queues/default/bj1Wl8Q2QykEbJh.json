@@ -1,9 +1,0 @@
-{
-	"id": "bj1Wl8Q2QykEbJh",
-	"json": "{\"id\":\"bj1Wl8Q2QykEbJh\",\"url\":\"https://data.chhs.ca.gov/dataset/healthcare-facility-locations\",\"loadedUrl\":\"https://data.chhs.ca.gov/dataset/healthcare-facility-locations\",\"uniqueKey\":\"https://data.chhs.ca.gov/dataset/healthcare-facility-locations\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T18:45:16.415Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://data.chhs.ca.gov/dataset/healthcare-facility-locations",
-	"url": "https://data.chhs.ca.gov/dataset/healthcare-facility-locations"
-}

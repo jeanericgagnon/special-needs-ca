@@ -1,9 +1,0 @@
-{
-	"id": "wei9PjCEXrY0DBZ",
-	"json": "{\"id\":\"wei9PjCEXrY0DBZ\",\"url\":\"https://www.ctc.ca.gov/docs/default-source/educator-prep/standards/cpsel-booklet-2014.pdf\",\"loadedUrl\":\"https://www.ctc.ca.gov/docs/default-source/educator-prep/standards/cpsel-booklet-2014.pdf\",\"uniqueKey\":\"https://www.ctc.ca.gov/docs/default-source/educator-prep/standards/cpsel-booklet-2014.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:58.514Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ctc.ca.gov/docs/default-source/educator-prep/standards/cpsel-booklet-2014.pdf",
-	"url": "https://www.ctc.ca.gov/docs/default-source/educator-prep/standards/cpsel-booklet-2014.pdf"
-}

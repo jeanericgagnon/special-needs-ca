@@ -109,9 +109,12 @@ export function runMatchingEngine(profile) {
     if (prog.id === 'early-start') {
       if (ageInYears < 3) {
         const triggers = [];
-        if (allConditions.includes('down-syndrome')) triggers.push('Down Syndrome diagnosis');
-        if (allConditions.includes('hearing-loss')) triggers.push('Hearing Loss diagnosis');
-        if (allConditions.includes('vision-impairment')) triggers.push('Vision Impairment diagnosis');
+        const matchedConditions = conditions.filter(c => allConditions.includes(c.id));
+        matchedConditions.forEach(c => {
+          if (c.categoryMappings?.regionalCenterRelevance || c.categoryMappings?.ccsRelevance) {
+            triggers.push(`${c.name} diagnosis`);
+          }
+        });
         if (selectedNeeds.includes('speech-therapy')) triggers.push('speech therapy needs');
         if (selectedNeeds.includes('feeding-therapy')) triggers.push('feeding therapy needs');
         if (suspectedConditions.length > 0) triggers.push('suspected undiagnosed conditions');
@@ -139,11 +142,12 @@ export function runMatchingEngine(profile) {
     // --- PROGRAM 2: REGIONAL CENTERS (LANTERMAN ACT 3+) ---
     else if (prog.id === 'regional-centers') {
       if (ageInYears >= 3) {
-        const rcDiagnoses = allConditions.filter(c => ['down-syndrome', 'autism'].includes(c));
+        const matchedConditions = conditions.filter(c => allConditions.includes(c.id));
+        const rcDiagnoses = matchedConditions.filter(c => c.categoryMappings?.regionalCenterRelevance);
         const rcNeeds = selectedNeeds.filter(n => ['respite-care', 'behavior-support'].includes(n));
         
         if (rcDiagnoses.length > 0 || rcNeeds.length > 0) {
-          const matchedTerms = [...rcDiagnoses.map(c => conditions.find(cond => cond.id === c)?.name), ...rcNeeds.map(n => functionalNeeds.find(fn => fn.id === n)?.name)];
+          const matchedTerms = [...rcDiagnoses.map(c => c.name), ...rcNeeds.map(n => functionalNeeds.find(fn => fn.id === n)?.name)];
           recommendation.whyMatched = `Because your child is over age 3 and has developmental markers (${matchedTerms.join(', ')}), they may be highly eligible for lifelong Regional Center services.`;
           recommendation.childProfileTrigger = `Age >= 3, Condition/Needs: ${matchedTerms.join(', ')}`;
           recommendation.whatIsStillUnknown = 'Whether they meet the strict legal standard of substantial limitations in 3 of the 7 major life activity domains.';
@@ -171,13 +175,15 @@ export function runMatchingEngine(profile) {
 
     // --- PROGRAM 3: IHSS FOR CHILDREN ---
     else if (prog.id === 'ihss-for-children') {
+      const matchedConditions = conditions.filter(c => allConditions.includes(c.id));
       const isDangerous = selectedNeeds.includes('protective-supervision') || selectedNeeds.includes('behavior-support');
       const isHighlyDependent = selectedNeeds.includes('diapers-incontinence-supplies') || selectedNeeds.includes('feeding-therapy');
-      const hasEligibleCondition = allConditions.includes('down-syndrome') || allConditions.includes('autism');
+      const hasEligibleCondition = matchedConditions.some(c => c.categoryMappings?.regionalCenterRelevance || c.categoryMappings?.ccsRelevance);
+      const condNames = matchedConditions.map(c => c.name);
       
       if (hasEligibleCondition && (isDangerous || isHighlyDependent)) {
-        recommendation.whyMatched = `Because your child has a developmental condition (${allConditions.join(', ')}) combined with severe safety needs (${selectedNeeds.includes('protective-supervision') ? 'Protective Supervision' : 'high-care dependencies'}), they likely worth screening for paid IHSS care hours.`;
-        recommendation.childProfileTrigger = `Conditions: ${allConditions.join(', ')}, Needs: ${selectedNeeds.join(', ')}`;
+        recommendation.whyMatched = `Because your child has a developmental condition (${condNames.join(', ')}) combined with severe safety needs (${selectedNeeds.includes('protective-supervision') ? 'Protective Supervision' : 'high-care dependencies'}), they likely worth screening for paid IHSS care hours.`;
+        recommendation.childProfileTrigger = `Conditions: ${condNames.join(', ')}, Needs: ${selectedNeeds.join(', ')}`;
         recommendation.whatIsStillUnknown = `Active Medi-Cal status (required). If family income is too high, you must secure the Regional Center Waiver first.`;
         recommendation.whatToDoNext = `Have your pediatrician complete the SOC 873 Medical Certification and call the County IHSS Intake office at ${localCounty?.ihssContact || 'local DPSS'}.`;
         
@@ -188,8 +194,8 @@ export function runMatchingEngine(profile) {
           results.possible.push(recommendation);
         }
       } else if (hasEligibleCondition) {
-        recommendation.whyMatched = `Because your child has ${allConditions.join(', ')}, they may qualify for personal care support (bathing, dressing, diapers). Screen for safety concerns to unlock protective supervision.`;
-        recommendation.childProfileTrigger = `Conditions: ${allConditions.join(', ')}`;
+        recommendation.whyMatched = `Because your child has ${condNames.join(', ')}, they may qualify for personal care support (bathing, dressing, diapers). Screen for safety concerns to unlock protective supervision.`;
+        recommendation.childProfileTrigger = `Conditions: ${condNames.join(', ')}`;
         recommendation.whatIsStillUnknown = 'Hours of daily physical care needed and safety elopement habits.';
         recommendation.whatToDoNext = 'Keep a daily care log for 2 weeks tracking safety hazards or extra hygiene routines.';
         results.possible.push(recommendation);
@@ -218,12 +224,14 @@ export function runMatchingEngine(profile) {
 
     // --- PROGRAM 5: CALIFORNIA CHILDREN\'S SERVICES (CCS) ---
     else if (prog.id === 'california-childrens-services') {
-      const ccsConditions = allConditions.filter(c => ['down-syndrome', 'hearing-loss', 'vision-impairment'].includes(c));
+      const matchedConditions = conditions.filter(c => allConditions.includes(c.id));
+      const ccsConditions = matchedConditions.filter(c => c.categoryMappings?.ccsRelevance);
       const ccsNeeds = selectedNeeds.filter(n => ['hearing-aids', 'vision-services', 'feeding-therapy'].includes(n));
+      const ccsCondNames = ccsConditions.map(c => c.name);
       
       if (ccsConditions.length > 0 || ccsNeeds.length > 0) {
-        recommendation.whyMatched = `Because your child has a qualifying physical, sensory, or genetic condition (${[...ccsConditions, ...ccsNeeds].join(', ')}), they are a high-priority screen for CCS specialty care and school-based Medical Therapy Program (MTP) speech/occupational therapies.`;
-        recommendation.childProfileTrigger = `Triggers: ${[...ccsConditions, ...ccsNeeds].join(', ')}`;
+        recommendation.whyMatched = `Because your child has a qualifying physical, sensory, or genetic condition (${[...ccsCondNames, ...ccsNeeds].join(', ')}), they are a high-priority screen for CCS specialty care and school-based Medical Therapy Program (MTP) speech/occupational therapies.`;
+        recommendation.childProfileTrigger = `Triggers: ${[...ccsCondNames, ...ccsNeeds].join(', ')}`;
         recommendation.whatIsStillUnknown = 'Income verification (waived for school-based MTP, required under $40k for medical specialty referrals).';
         recommendation.whatToDoNext = `Submit a CCS application (DHCS 4480) along with diagnostic audiograms/cardiac records to the local CCS office: ${localCounty?.ccsContact || 'county health'}.`;
         results.highPriority.push(recommendation);
@@ -237,11 +245,13 @@ export function runMatchingEngine(profile) {
     // --- PROGRAM 6: IEP SPECIAL EDUCATION (3-22) ---
     else if (prog.id === 'iep-special-education') {
       if (ageInYears >= 3 && ageInYears <= 22) {
+        const matchedConditions = conditions.filter(c => allConditions.includes(c.id));
         const iepTriggers = [];
-        if (allConditions.includes('down-syndrome')) iepTriggers.push('Down Syndrome');
-        if (allConditions.includes('autism')) iepTriggers.push('Autism');
-        if (allConditions.includes('hearing-loss')) iepTriggers.push('Hearing Loss');
-        if (allConditions.includes('vision-impairment')) iepTriggers.push('Vision Impairment');
+        matchedConditions.forEach(c => {
+          if (c.categoryMappings?.iepRelevance) {
+            iepTriggers.push(c.name);
+          }
+        });
         if (selectedNeeds.includes('speech-therapy')) iepTriggers.push('speech delay');
         if (selectedNeeds.includes('iep-evaluation')) iepTriggers.push('IEP assessment needs');
         
@@ -272,7 +282,10 @@ export function runMatchingEngine(profile) {
 
     // --- PROGRAM 7: SSI FOR CHILDREN ---
     else if (prog.id === 'ssi-for-children') {
-      const hasMedicallyListed = allConditions.includes('down-syndrome');
+      const hasMedicallyListed = allConditions.some(cId => cId.includes('down-syndrome'));
+      const matchedConditions = conditions.filter(c => allConditions.includes(c.id));
+      const hasEligibleCondition = matchedConditions.some(c => c.categoryMappings?.ssiRelevance);
+      const condNames = matchedConditions.map(c => c.name);
       
       if (hasMedicallyListed) {
         recommendation.whyMatched = `Because your child has Down Syndrome, they automatically meet the childhood medical listing (110.06) without further testing. If you meet the income requirements, this is a high-priority program.`;
@@ -280,9 +293,9 @@ export function runMatchingEngine(profile) {
         recommendation.whatIsStillUnknown = 'Household income and liquid asset limits ($2,000/$3,000).';
         recommendation.whatToDoNext = 'Call the SSA at 1-800-772-1213 to schedule a financial intake interview.';
         results.highPriority.push(recommendation);
-      } else if (allConditions.includes('autism') || allConditions.includes('hearing-loss') || allConditions.includes('vision-impairment')) {
-        recommendation.whyMatched = `Because your child has a chronic condition (${allConditions.join(', ')}), they may qualify for monthly financial aid if the household meets income/asset tests and has marked functional limitations.`;
-        recommendation.childProfileTrigger = `Conditions: ${allConditions.join(', ')}`;
+      } else if (hasEligibleCondition) {
+        recommendation.whyMatched = `Because your child has a chronic condition (${condNames.join(', ')}), they may qualify for monthly financial aid if the household meets income/asset tests and has marked functional limitations.`;
+        recommendation.childProfileTrigger = `Conditions: ${condNames.join(', ')}`;
         recommendation.whatIsStillUnknown = 'Household wealth and level of childhood developmental severity.';
         recommendation.whatToDoNext = 'Complete the online Child Disability Report (SSA-3820) and review the SSA Deeming Charts.';
         results.possible.push(recommendation);
@@ -295,10 +308,13 @@ export function runMatchingEngine(profile) {
 
     // --- PROGRAM 8: CALABLE ---
     else if (prog.id === 'calable') {
-      const isEligible = allConditions.length > 0 || selectedNeeds.length > 0;
+      const matchedConditions = conditions.filter(c => allConditions.includes(c.id));
+      const hasEligibleCondition = matchedConditions.some(c => c.categoryMappings?.calAbleRelevance);
+      const condNames = matchedConditions.map(c => c.name);
+      const isEligible = hasEligibleCondition || selectedNeeds.length > 0;
       if (isEligible) {
         recommendation.whyMatched = 'Because your child has a documented chronic developmental or sensory condition, they are a high-priority match to open a tax-free CalABLE savings account. This lets you save money for therapies, schools, or houses, protecting them from public benefit asset caps.';
-        recommendation.childProfileTrigger = `Has conditions/needs: ${allConditions.join(', ')}`;
+        recommendation.childProfileTrigger = `Has conditions/needs: ${[...condNames, ...selectedNeeds].join(', ')}`;
         recommendation.whatIsStillUnknown = 'None. Child qualifies based on age of onset of disability (< 26 years).';
         recommendation.whatToDoNext = 'Visit CalABLE.ca.gov and open a free account online with an initial $25 contribution.';
         results.highPriority.push(recommendation);

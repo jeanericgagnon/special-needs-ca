@@ -1,9 +1,0 @@
-{
-	"id": "v7t8Y28118T3677",
-	"json": "{\"id\":\"v7t8Y28118T3677\",\"url\":\"https://www.slocounty.ca.gov/departments/social-services/adult-services/services/adult-protective-services-program-(aps)\",\"loadedUrl\":\"https://www.slocounty.ca.gov/departments/social-services/adult-services/services/adult-protective-services-program-(aps)\",\"uniqueKey\":\"https://www.slocounty.ca.gov/departments/social-services/adult-services/services/adult-protective-services-program-(aps)\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:32.998Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.slocounty.ca.gov/departments/social-services/adult-services/services/adult-protective-services-program-(aps)",
-	"url": "https://www.slocounty.ca.gov/departments/social-services/adult-services/services/adult-protective-services-program-(aps)"
-}

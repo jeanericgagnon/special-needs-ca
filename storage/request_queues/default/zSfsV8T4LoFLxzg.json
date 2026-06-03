@@ -1,9 +1,0 @@
-{
-	"id": "zSfsV8T4LoFLxzg",
-	"json": "{\"id\":\"zSfsV8T4LoFLxzg\",\"url\":\"https://cdt.ca.gov/policy/simm/\",\"loadedUrl\":\"https://www.cdt.ca.gov/policy/simm/\",\"uniqueKey\":\"https://cdt.ca.gov/policy/simm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:01.439Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdt.ca.gov/policy/simm",
-	"url": "https://cdt.ca.gov/policy/simm/"
-}

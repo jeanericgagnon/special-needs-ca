@@ -1,9 +1,0 @@
-{
-	"id": "PPkG7TVMpoHzaT9",
-	"json": "{\"id\":\"PPkG7TVMpoHzaT9\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/SACB/Pages/TheRisksAreRealPublicEducationCampaign.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/SACB/Pages/TheRisksAreRealPublicEducationCampaign.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/SACB/Pages/TheRisksAreRealPublicEducationCampaign.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:02:28.232Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/SACB/Pages/TheRisksAreRealPublicEducationCampaign.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/SACB/Pages/TheRisksAreRealPublicEducationCampaign.aspx"
-}

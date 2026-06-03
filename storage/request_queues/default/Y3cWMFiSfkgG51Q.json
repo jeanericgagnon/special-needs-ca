@@ -1,9 +1,0 @@
-{
-	"id": "Y3cWMFiSfkgG51Q",
-	"json": "{\"id\":\"Y3cWMFiSfkgG51Q\",\"url\":\"https://www.cde.ca.gov/re/pn/sm/documents/nakeynotes.docx\",\"loadedUrl\":\"https://www.cde.ca.gov/re/pn/sm/documents/nakeynotes.docx\",\"uniqueKey\":\"https://www.cde.ca.gov/re/pn/sm/documents/nakeynotes.docx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:09:01.725Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/re/pn/sm/documents/nakeynotes.docx",
-	"url": "https://www.cde.ca.gov/re/pn/sm/documents/nakeynotes.docx"
-}

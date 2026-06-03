@@ -1,9 +1,0 @@
-{
-	"id": "oZqeqSAzTviJyWJ",
-	"json": "{\"id\":\"oZqeqSAzTviJyWJ\",\"url\":\"https://cdss.ca.gov/inforesources/tribal-tanf#main-content\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/tribal-tanf#main-content\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/tribal-tanf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:23.054Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/tribal-tanf",
-	"url": "https://cdss.ca.gov/inforesources/tribal-tanf#main-content"
-}

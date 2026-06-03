@@ -1,9 +1,0 @@
-{
-	"id": "MTV6VOEx6c52GI2",
-	"json": "{\"id\":\"MTV6VOEx6c52GI2\",\"url\":\"https://health.ucdavis.edu/basicsciences/\",\"loadedUrl\":\"https://health.ucdavis.edu/basicsciences/\",\"uniqueKey\":\"https://health.ucdavis.edu/basicsciences\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:52.433Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/basicsciences",
-	"url": "https://health.ucdavis.edu/basicsciences/"
-}

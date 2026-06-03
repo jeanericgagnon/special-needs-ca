@@ -1,9 +1,0 @@
-{
-	"id": "foqfJh8J2ZA8J15",
-	"json": "{\"id\":\"foqfJh8J2ZA8J15\",\"url\":\"https://oag.ca.gov/privacy/business-privacy\",\"loadedUrl\":\"https://oag.ca.gov/privacy/business-privacy\",\"uniqueKey\":\"https://oag.ca.gov/privacy/business-privacy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:48.765Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://oag.ca.gov/privacy/business-privacy",
-	"url": "https://oag.ca.gov/privacy/business-privacy"
-}

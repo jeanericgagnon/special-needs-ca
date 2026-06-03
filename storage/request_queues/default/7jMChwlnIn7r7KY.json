@@ -1,9 +1,0 @@
-{
-	"id": "7jMChwlnIn7r7KY",
-	"json": "{\"id\":\"7jMChwlnIn7r7KY\",\"url\":\"https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=EDC&sectionNum=49414.&article=1.&highlight=true&keyword=epinephrine\",\"loadedUrl\":\"https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=EDC&sectionNum=49414.&article=1.&highlight=true&keyword=epinephrine\",\"uniqueKey\":\"https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?article=1.&highlight=true&keyword=epinephrine&lawCode=EDC&sectionNum=49414.\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:53:08.866Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?article=1.&highlight=true&keyword=epinephrine&lawCode=EDC&sectionNum=49414.",
-	"url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=EDC&sectionNum=49414.&article=1.&highlight=true&keyword=epinephrine"
-}

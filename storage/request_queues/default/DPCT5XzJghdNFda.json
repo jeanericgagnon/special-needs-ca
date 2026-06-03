@@ -1,9 +1,0 @@
-{
-	"id": "DPCT5XzJghdNFda",
-	"json": "{\"id\":\"DPCT5XzJghdNFda\",\"url\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVIDVaccineSolicitation.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVIDVaccineSolicitation.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVIDVaccineSolicitation.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:11:30.711Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVIDVaccineSolicitation.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVIDVaccineSolicitation.aspx"
-}

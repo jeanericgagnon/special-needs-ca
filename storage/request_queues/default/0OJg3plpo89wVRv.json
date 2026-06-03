@@ -1,9 +1,0 @@
-{
-	"id": "0OJg3plpo89wVRv",
-	"json": "{\"id\":\"0OJg3plpo89wVRv\",\"url\":\"https://rarediseases.org/organizations/pulmonary-fibrosis-foundation-pff/\",\"loadedUrl\":\"https://rarediseases.org/organizations/pulmonary-fibrosis-foundation-pff/\",\"uniqueKey\":\"https://rarediseases.org/organizations/pulmonary-fibrosis-foundation-pff\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:19:26.145Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/organizations/pulmonary-fibrosis-foundation-pff",
-	"url": "https://rarediseases.org/organizations/pulmonary-fibrosis-foundation-pff/"
-}

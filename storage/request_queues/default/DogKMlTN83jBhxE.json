@@ -1,9 +1,0 @@
-{
-	"id": "DogKMlTN83jBhxE",
-	"json": "{\"id\":\"DogKMlTN83jBhxE\",\"url\":\"https://www.vetmed.ucdavis.edu/community/inclusive-excellence\",\"loadedUrl\":\"https://www.vetmed.ucdavis.edu/community/inclusive-excellence\",\"uniqueKey\":\"https://www.vetmed.ucdavis.edu/community/inclusive-excellence\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:17.771Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.vetmed.ucdavis.edu/community/inclusive-excellence",
-	"url": "https://www.vetmed.ucdavis.edu/community/inclusive-excellence"
-}

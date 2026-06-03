@@ -1,9 +1,0 @@
-{
-	"id": "tTmnZCcP4631c54",
-	"json": "{\"id\":\"tTmnZCcP4631c54\",\"url\":\"https://www.library.ca.gov/btbl/assistive-technology/#da2\",\"loadedUrl\":\"https://www.library.ca.gov/btbl/assistive-technology/#da2\",\"uniqueKey\":\"https://www.library.ca.gov/btbl/assistive-technology\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:09:05.938Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.library.ca.gov/btbl/assistive-technology",
-	"url": "https://www.library.ca.gov/btbl/assistive-technology/#da2"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "PgaNsxlKrgbdyPt",
-	"json": "{\"id\":\"PgaNsxlKrgbdyPt\",\"url\":\"https://www.ctc.ca.gov/performance-assessment/\",\"loadedUrl\":\"https://www.ctc.ca.gov/performance-assessment/\",\"uniqueKey\":\"https://www.ctc.ca.gov/performance-assessment\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:25.701Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ctc.ca.gov/performance-assessment",
-	"url": "https://www.ctc.ca.gov/performance-assessment/"
-}

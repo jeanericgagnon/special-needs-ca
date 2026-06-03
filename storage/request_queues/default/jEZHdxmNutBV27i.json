@@ -1,9 +1,0 @@
-{
-	"id": "jEZHdxmNutBV27i",
-	"json": "{\"id\":\"jEZHdxmNutBV27i\",\"url\":\"https://cdss.ca.gov/inforesources/CDSS-Programs/Foster-Care/Foster-Care/Kinship-Support-Services\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/foster-care/kinship-support-services\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/CDSS-Programs/Foster-Care/Foster-Care/Kinship-Support-Services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:54.847Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/CDSS-Programs/Foster-Care/Foster-Care/Kinship-Support-Services",
-	"url": "https://cdss.ca.gov/inforesources/CDSS-Programs/Foster-Care/Foster-Care/Kinship-Support-Services"
-}

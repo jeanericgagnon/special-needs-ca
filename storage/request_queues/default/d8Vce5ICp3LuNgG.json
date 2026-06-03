@@ -1,9 +1,0 @@
-{
-	"id": "d8Vce5ICp3LuNgG",
-	"json": "{\"id\":\"d8Vce5ICp3LuNgG\",\"url\":\"https://status.ucdavis.edu/\",\"loadedUrl\":\"https://status.ucdavis.edu/\",\"uniqueKey\":\"https://status.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:37.065Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://status.ucdavis.edu",
-	"url": "https://status.ucdavis.edu/"
-}

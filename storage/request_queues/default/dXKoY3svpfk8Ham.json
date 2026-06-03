@@ -1,9 +1,0 @@
-{
-	"id": "dXKoY3svpfk8Ham",
-	"json": "{\"id\":\"dXKoY3svpfk8Ham\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/43443/kaitlan-cobb-endourology-urology-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/43443/kaitlan-cobb-endourology-urology-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/43443/kaitlan-cobb-endourology-urology-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:15.509Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/43443/kaitlan-cobb-endourology-urology-sacramento",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/43443/kaitlan-cobb-endourology-urology-sacramento"
-}

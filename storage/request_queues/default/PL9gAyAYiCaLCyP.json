@@ -1,9 +1,0 @@
-{
-	"id": "PL9gAyAYiCaLCyP",
-	"json": "{\"id\":\"PL9gAyAYiCaLCyP\",\"url\":\"http://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=WIC&division=9.&title=&part=3.&chapter=2.&article=3.3.\",\"loadedUrl\":\"https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=WIC&division=9.&title=&part=3.&chapter=2.&article=3.3.\",\"uniqueKey\":\"http://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?article=3.3.&chapter=2.&division=9.&lawCode=WIC&part=3.&title=\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:01.954Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?article=3.3.&chapter=2.&division=9.&lawCode=WIC&part=3.&title=",
-	"url": "http://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=WIC&division=9.&title=&part=3.&chapter=2.&article=3.3."
-}

@@ -1,9 +1,0 @@
-{
-	"id": "AzVLNyCY9j2sGbG",
-	"json": "{\"id\":\"AzVLNyCY9j2sGbG\",\"url\":\"https://calcareers.ca.gov/CalHRPublic/Search/ExamSearchResults.aspx#depid=21\",\"loadedUrl\":\"https://calcareers.ca.gov/CalHRPublic/Search/ExamSearchResults.aspx#depid=21\",\"uniqueKey\":\"https://calcareers.ca.gov/CalHRPublic/Search/ExamSearchResults.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:42.602Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://calcareers.ca.gov/CalHRPublic/Search/ExamSearchResults.aspx",
-	"url": "https://calcareers.ca.gov/CalHRPublic/Search/ExamSearchResults.aspx#depid=21"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "fNxHS4qqIbeBpej",
-	"json": "{\"id\":\"fNxHS4qqIbeBpej\",\"url\":\"https://www.dhcs.ca.gov/services/ltc/Pages/Home-and-Community-Based-(HCB)-Alternatives-Waiver.aspx\",\"loadedUrl\":\"https://www.dhcs.ca.gov/services/long-term-care-alternatives-home-and-community-based-service-options/home-and-community-based-alternatives-waiver-2/\",\"uniqueKey\":\"https://www.dhcs.ca.gov/services/ltc/Pages/Home-and-Community-Based-(HCB)-Alternatives-Waiver.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:23:45.044Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dhcs.ca.gov/services/ltc/Pages/Home-and-Community-Based-(HCB)-Alternatives-Waiver.aspx",
-	"url": "https://www.dhcs.ca.gov/services/ltc/Pages/Home-and-Community-Based-(HCB)-Alternatives-Waiver.aspx"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "gBomySY4krQnhSI",
-	"json": "{\"id\":\"gBomySY4krQnhSI\",\"url\":\"https://health.ucdavis.edu/health-education/services-and-support/\",\"loadedUrl\":\"https://health.ucdavis.edu/health-education/services-and-support/\",\"uniqueKey\":\"https://health.ucdavis.edu/health-education/services-and-support\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:33.640Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/health-education/services-and-support",
-	"url": "https://health.ucdavis.edu/health-education/services-and-support/"
-}

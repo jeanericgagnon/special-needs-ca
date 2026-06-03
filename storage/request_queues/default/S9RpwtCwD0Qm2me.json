@@ -1,9 +1,0 @@
-{
-	"id": "S9RpwtCwD0Qm2me",
-	"json": "{\"id\":\"S9RpwtCwD0Qm2me\",\"url\":\"https://www.globaldownsyndrome.org/our-story/about-gdsf/\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/our-story/about-gdsf/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/our-story/about-gdsf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:35.010Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.globaldownsyndrome.org/our-story/about-gdsf",
-	"url": "https://www.globaldownsyndrome.org/our-story/about-gdsf/"
-}

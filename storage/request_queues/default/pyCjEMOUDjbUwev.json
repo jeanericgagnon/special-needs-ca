@@ -1,9 +1,0 @@
-{
-	"id": "pyCjEMOUDjbUwev",
-	"json": "{\"id\":\"pyCjEMOUDjbUwev\",\"url\":\"https://www.library.ca.gov/services/digital-concierge/\",\"loadedUrl\":\"https://www.library.ca.gov/services/digital-concierge/\",\"uniqueKey\":\"https://www.library.ca.gov/services/digital-concierge\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:17.062Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.library.ca.gov/services/digital-concierge",
-	"url": "https://www.library.ca.gov/services/digital-concierge/"
-}

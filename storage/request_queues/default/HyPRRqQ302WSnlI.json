@@ -1,9 +1,0 @@
-{
-	"id": "HyPRRqQ302WSnlI",
-	"json": "{\"id\":\"HyPRRqQ302WSnlI\",\"url\":\"https://frcnca.org/what-we-do/\",\"loadedUrl\":\"https://frcnca.org/what-we-do/\",\"uniqueKey\":\"https://frcnca.org/what-we-do\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:14.338Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://frcnca.org/what-we-do",
-	"url": "https://frcnca.org/what-we-do/"
-}

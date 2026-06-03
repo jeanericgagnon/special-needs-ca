@@ -1,9 +1,0 @@
-{
-	"id": "q2LoYHU6uqlml6R",
-	"json": "{\"id\":\"q2LoYHU6uqlml6R\",\"url\":\"https://calable.ca.gov/resources/presentation-form\",\"loadedUrl\":\"https://docs.google.com/forms/d/1G6FXUbpF66nWEOa4RX3jGdxOf9Kq2p_1ZQD5AUs6YBA/viewform?edit_requested=true\",\"uniqueKey\":\"https://calable.ca.gov/resources/presentation-form\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T14:59:14.378Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://calable.ca.gov/resources/presentation-form",
-	"url": "https://calable.ca.gov/resources/presentation-form"
-}

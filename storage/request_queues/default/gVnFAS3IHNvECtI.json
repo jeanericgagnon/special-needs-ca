@@ -1,9 +1,0 @@
-{
-	"id": "gVnFAS3IHNvECtI",
-	"json": "{\"id\":\"gVnFAS3IHNvECtI\",\"url\":\"https://lettersandscience.ucdavis.edu/faculty-honors\",\"loadedUrl\":\"https://lettersandscience.ucdavis.edu/faculty-honors\",\"uniqueKey\":\"https://lettersandscience.ucdavis.edu/faculty-honors\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:23.656Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://lettersandscience.ucdavis.edu/faculty-honors",
-	"url": "https://lettersandscience.ucdavis.edu/faculty-honors"
-}

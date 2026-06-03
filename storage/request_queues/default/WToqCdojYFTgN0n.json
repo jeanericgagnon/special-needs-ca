@@ -1,9 +1,0 @@
-{
-	"id": "WToqCdojYFTgN0n",
-	"json": "{\"id\":\"WToqCdojYFTgN0n\",\"url\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/nCoV2019.aspx#\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/nCoV2019.aspx#\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/nCoV2019.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:25.632Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/nCoV2019.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/nCoV2019.aspx#"
-}

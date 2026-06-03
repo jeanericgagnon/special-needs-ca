@@ -1,9 +1,0 @@
-{
-	"id": "MidZArKNOLtM0Kr",
-	"json": "{\"id\":\"MidZArKNOLtM0Kr\",\"url\":\"https://rarediseases.org/news/?taxonomy[category]=equity-and-inclusion\",\"loadedUrl\":\"https://rarediseases.org/news/?taxonomy[category]=equity-and-inclusion\",\"uniqueKey\":\"https://rarediseases.org/news?taxonomy%5Bcategory%5D=equity-and-inclusion\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:19:51.589Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/news?taxonomy%5Bcategory%5D=equity-and-inclusion",
-	"url": "https://rarediseases.org/news/?taxonomy[category]=equity-and-inclusion"
-}

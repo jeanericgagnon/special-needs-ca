@@ -1,9 +1,0 @@
-{
-	"id": "fu9hJfCuUXtCPuA",
-	"json": "{\"id\":\"fu9hJfCuUXtCPuA\",\"url\":\"https://edd.ca.gov/en/Office_Locator/\",\"loadedUrl\":\"https://edd.ca.gov/en/Office_Locator/\",\"uniqueKey\":\"https://edd.ca.gov/en/Office_Locator\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:33.582Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://edd.ca.gov/en/Office_Locator",
-	"url": "https://edd.ca.gov/en/Office_Locator/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "eHXcAkKySfF0ZXu",
-	"json": "{\"id\":\"eHXcAkKySfF0ZXu\",\"url\":\"https://oag.ca.gov/privacy/consumer-privacy-resources\",\"loadedUrl\":\"https://oag.ca.gov/privacy/consumer-privacy-resources\",\"uniqueKey\":\"https://oag.ca.gov/privacy/consumer-privacy-resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:50.422Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://oag.ca.gov/privacy/consumer-privacy-resources",
-	"url": "https://oag.ca.gov/privacy/consumer-privacy-resources"
-}

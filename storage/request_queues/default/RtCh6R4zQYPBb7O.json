@@ -1,9 +1,0 @@
-{
-	"id": "RtCh6R4zQYPBb7O",
-	"json": "{\"id\":\"RtCh6R4zQYPBb7O\",\"url\":\"https://csi.ucdavis.edu/principles-action\",\"loadedUrl\":\"https://csi.ucdavis.edu/operation-reimbursement-grant\",\"uniqueKey\":\"https://csi.ucdavis.edu/principles-action\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:36.367Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://csi.ucdavis.edu/principles-action",
-	"url": "https://csi.ucdavis.edu/principles-action"
-}

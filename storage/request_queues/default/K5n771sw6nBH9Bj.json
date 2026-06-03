@@ -1,9 +1,0 @@
-{
-	"id": "K5n771sw6nBH9Bj",
-	"json": "{\"id\":\"K5n771sw6nBH9Bj\",\"url\":\"https://give.ucdavis.edu/BCNS/324623\",\"loadedUrl\":\"https://give.ucdavis.edu/BCNS/324623\",\"uniqueKey\":\"https://give.ucdavis.edu/BCNS/324623\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:35.443Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/BCNS/324623",
-	"url": "https://give.ucdavis.edu/BCNS/324623"
-}

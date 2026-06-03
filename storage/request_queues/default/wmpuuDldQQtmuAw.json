@@ -1,9 +1,0 @@
-{
-	"id": "wmpuuDldQQtmuAw",
-	"json": "{\"id\":\"wmpuuDldQQtmuAw\",\"url\":\"https://www.chhs.ca.gov/blog/2025/03/05/calhhs-emergency-resource-guide/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2025/03/05/calhhs-emergency-resource-guide/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2025/03/05/calhhs-emergency-resource-guide\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:59.527Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chhs.ca.gov/blog/2025/03/05/calhhs-emergency-resource-guide",
-	"url": "https://www.chhs.ca.gov/blog/2025/03/05/calhhs-emergency-resource-guide/"
-}

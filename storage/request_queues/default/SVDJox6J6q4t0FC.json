@@ -1,9 +1,0 @@
-{
-	"id": "SVDJox6J6q4t0FC",
-	"json": "{\"id\":\"SVDJox6J6q4t0FC\",\"url\":\"https://health.ucdavis.edu/transplant/aboutus/results.html\",\"loadedUrl\":\"https://health.ucdavis.edu/transplant/aboutus/results.html\",\"uniqueKey\":\"https://health.ucdavis.edu/transplant/aboutus/results.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:46.545Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/transplant/aboutus/results.html",
-	"url": "https://health.ucdavis.edu/transplant/aboutus/results.html"
-}

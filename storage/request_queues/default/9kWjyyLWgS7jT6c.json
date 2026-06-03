@@ -1,9 +1,0 @@
-{
-	"id": "9kWjyyLWgS7jT6c",
-	"json": "{\"id\":\"9kWjyyLWgS7jT6c\",\"url\":\"https://www.cde.ca.gov/ci/be/become-a-teacher.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=4160644e-ccc7-45bf-882d-77733d8c146b&ssb=73528251039&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fci%2Fbe%2Fbecome-a-teacher.asp&ssi=fa488fbf-ctxv-40e8-b043-f0b32c1c2782&ssk=botmanager_support@radware.com&ssm=13542596633312897103629619837997&ssn=7fa282d5332de017173478092cdc86c1129943133492-12a9-4af6-937ec4&sso=ba874949-0e7975afbee162a34ef359db440eb14db18c238d85db03fa&ssp=69246179541780305493178036296335745&ssq=58183462571737211341825717972739305653479&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsIl9fdXptZiI6IjdmOTAwMDQzMTMzNDkyLTEyYTktNGFmNi05OTQ5LTBlNzk3NWFmYmVlMTEtMTc4MDMyNTcxNzUzNDAtMDAzMDczMDQ5NzZjNGM4NzQ5MjEwIiwidXpteCI6IjdmOTAwMGZkMzAzZjNmLTI1ODEtNGE2My05Yzk3LTNjYmE2ZjA0NzVkYjEtMTc4MDMyNTcxNzUzNDAtNzMwNzc4MWY0NTViMmRmYzEwIn0=\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/be/become-a-teacher.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T14:55:18.282Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ci/be/become-a-teacher.asp",
-	"url": "https://www.cde.ca.gov/ci/be/become-a-teacher.asp"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "f2tI6w3Yr20yXkk",
-	"json": "{\"id\":\"f2tI6w3Yr20yXkk\",\"url\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/occupational-environmental\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/occupational-environmental\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/occupational-environmental\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:51.173Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/locations/specialty-care/occupational-environmental",
-	"url": "https://health.ucdavis.edu/patients-visitors/locations/specialty-care/occupational-environmental"
-}

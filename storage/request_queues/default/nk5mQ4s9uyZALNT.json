@@ -1,9 +1,0 @@
-{
-	"id": "nk5mQ4s9uyZALNT",
-	"json": "{\"id\":\"nk5mQ4s9uyZALNT\",\"url\":\"https://hr.ucdavis.edu/departments/recruitment/tes\",\"loadedUrl\":\"https://hr.ucdavis.edu/departments/recruitment/tes\",\"uniqueKey\":\"https://hr.ucdavis.edu/departments/recruitment/tes\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:31.508Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/departments/recruitment/tes",
-	"url": "https://hr.ucdavis.edu/departments/recruitment/tes"
-}

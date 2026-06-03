@@ -1,9 +1,0 @@
-{
-	"id": "eBkQItH2iPaicIz",
-	"json": "{\"id\":\"eBkQItH2iPaicIz\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/22099/brian-young-nephrology-sacramento?FreeText%3aLast+name=young\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/22099/brian-young-nephrology-sacramento?FreeText%3aLast+name=young\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/22099/brian-young-nephrology-sacramento?FreeText%3ALast+name=young\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:12.062Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/22099/brian-young-nephrology-sacramento?FreeText%3ALast+name=young",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/22099/brian-young-nephrology-sacramento?FreeText%3aLast+name=young"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "B4LlMkN5qDvLF7j",
-	"json": "{\"id\":\"B4LlMkN5qDvLF7j\",\"url\":\"https://scdd.ca.gov/sb639stakeholderworkgroups/\",\"loadedUrl\":\"https://scdd.ca.gov/sb639stakeholderworkgroups/\",\"uniqueKey\":\"https://scdd.ca.gov/sb639stakeholderworkgroups\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:47.655Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/sb639stakeholderworkgroups",
-	"url": "https://scdd.ca.gov/sb639stakeholderworkgroups/"
-}

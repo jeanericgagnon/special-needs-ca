@@ -1,9 +1,0 @@
-{
-	"id": "mK3N1GYx6puVx9c",
-	"json": "{\"id\":\"mK3N1GYx6puVx9c\",\"url\":\"https://www.gov.ca.gov/2020/12/01/governor-newsom-releases-the-master-plan-for-early-learning-and-care-california-for-all-kids/\",\"loadedUrl\":\"https://www.gov.ca.gov/2020/12/01/governor-newsom-releases-the-master-plan-for-early-learning-and-care-california-for-all-kids/\",\"uniqueKey\":\"https://www.gov.ca.gov/2020/12/01/governor-newsom-releases-the-master-plan-for-early-learning-and-care-california-for-all-kids\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:15:12.576Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.gov.ca.gov/2020/12/01/governor-newsom-releases-the-master-plan-for-early-learning-and-care-california-for-all-kids",
-	"url": "https://www.gov.ca.gov/2020/12/01/governor-newsom-releases-the-master-plan-for-early-learning-and-care-california-for-all-kids/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "TKhvrFG8eYOB5Yz",
-	"json": "{\"id\":\"TKhvrFG8eYOB5Yz\",\"url\":\"https://health.ucdavis.edu/mind-institute/events/dls/\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/events/dls/\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/events/dls\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:24.187Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mind-institute/events/dls",
-	"url": "https://health.ucdavis.edu/mind-institute/events/dls/"
-}

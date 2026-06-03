@@ -1,9 +1,0 @@
-{
-	"id": "44AzM6rsxWwAItm",
-	"json": "{\"id\":\"44AzM6rsxWwAItm\",\"url\":\"https://www.chp.ca.gov/link/eceb5581202044d5897af58b9835587d.aspx\",\"loadedUrl\":\"https://www.chp.ca.gov/traffic/\",\"uniqueKey\":\"https://www.chp.ca.gov/link/eceb5581202044d5897af58b9835587d.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:11.894Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chp.ca.gov/link/eceb5581202044d5897af58b9835587d.aspx",
-	"url": "https://www.chp.ca.gov/link/eceb5581202044d5897af58b9835587d.aspx"
-}

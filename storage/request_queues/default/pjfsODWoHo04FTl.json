@@ -1,9 +1,0 @@
-{
-	"id": "pjfsODWoHo04FTl",
-	"json": "{\"id\":\"pjfsODWoHo04FTl\",\"url\":\"https://cnprc.ucdavis.edu/our-mission\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/our-mission\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/our-mission\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:09.438Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cnprc.ucdavis.edu/our-mission",
-	"url": "https://cnprc.ucdavis.edu/our-mission"
-}

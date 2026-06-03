@@ -1,9 +1,0 @@
-{
-	"id": "ToYsNvYiu0soZhJ",
-	"json": "{\"id\":\"ToYsNvYiu0soZhJ\",\"url\":\"https://www.cdph.ca.gov/Programs/PSB/Pages/LicensingandCertificationProgram.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/PSB/Pages/LicensingandCertificationProgram.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/PSB/Pages/LicensingandCertificationProgram.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:54:53.620Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/PSB/Pages/LicensingandCertificationProgram.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/PSB/Pages/LicensingandCertificationProgram.aspx"
-}

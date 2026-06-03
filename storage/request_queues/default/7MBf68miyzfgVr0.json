@@ -1,9 +1,0 @@
-{
-	"id": "7MBf68miyzfgVr0",
-	"json": "{\"id\":\"7MBf68miyzfgVr0\",\"url\":\"https://www.vetmed.ucdavis.edu/hospital/emergency\",\"loadedUrl\":\"https://www.vetmed.ucdavis.edu/hospital/emergency\",\"uniqueKey\":\"https://www.vetmed.ucdavis.edu/hospital/emergency\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:14.565Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.vetmed.ucdavis.edu/hospital/emergency",
-	"url": "https://www.vetmed.ucdavis.edu/hospital/emergency"
-}

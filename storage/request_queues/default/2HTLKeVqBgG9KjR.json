@@ -1,9 +1,0 @@
-{
-	"id": "2HTLKeVqBgG9KjR",
-	"json": "{\"id\":\"2HTLKeVqBgG9KjR\",\"url\":\"https://www.cdph.ca.gov/programs/rpho/pages/all-local-health-jurisdiction-letters-notices/alhjln.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/programs/rpho/pages/all-local-health-jurisdiction-letters-notices/alhjln.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/programs/rpho/pages/all-local-health-jurisdiction-letters-notices/alhjln.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:31.674Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/programs/rpho/pages/all-local-health-jurisdiction-letters-notices/alhjln.aspx",
-	"url": "https://www.cdph.ca.gov/programs/rpho/pages/all-local-health-jurisdiction-letters-notices/alhjln.aspx"
-}

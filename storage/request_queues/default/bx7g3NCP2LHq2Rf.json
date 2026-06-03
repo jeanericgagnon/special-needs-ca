@@ -1,9 +1,0 @@
-{
-	"id": "bx7g3NCP2LHq2Rf",
-	"json": "{\"id\":\"bx7g3NCP2LHq2Rf\",\"url\":\"https://www.calhr.ca.gov/about-calhr/strategic-plan/\",\"loadedUrl\":\"https://www.calhr.ca.gov/about-calhr/strategic-plan/\",\"uniqueKey\":\"https://www.calhr.ca.gov/about-calhr/strategic-plan\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:10.556Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.calhr.ca.gov/about-calhr/strategic-plan",
-	"url": "https://www.calhr.ca.gov/about-calhr/strategic-plan/"
-}

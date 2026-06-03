@@ -1,9 +1,0 @@
-{
-	"id": "wEkdMzEqmE9i2pR",
-	"json": "{\"id\":\"wEkdMzEqmE9i2pR\",\"url\":\"https://physicians.ucdavis.edu/?CustomField=8%3bYes\",\"loadedUrl\":\"https://physicians.ucdavis.edu/?CustomField=8%3bYes\",\"uniqueKey\":\"https://physicians.ucdavis.edu?CustomField=8%3BYes\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:12.215Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://physicians.ucdavis.edu?CustomField=8%3BYes",
-	"url": "https://physicians.ucdavis.edu/?CustomField=8%3bYes"
-}

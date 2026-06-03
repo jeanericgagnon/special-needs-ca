@@ -1,9 +1,0 @@
-{
-	"id": "JuJnrydHAircEG1",
-	"json": "{\"id\":\"JuJnrydHAircEG1\",\"url\":\"https://mindbrain.sf.ucdavis.edu/research-groups-and-projects\",\"loadedUrl\":\"https://mindbrain.sf.ucdavis.edu/research-groups-and-projects\",\"uniqueKey\":\"https://mindbrain.sf.ucdavis.edu/research-groups-and-projects\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:05.288Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://mindbrain.sf.ucdavis.edu/research-groups-and-projects",
-	"url": "https://mindbrain.sf.ucdavis.edu/research-groups-and-projects"
-}

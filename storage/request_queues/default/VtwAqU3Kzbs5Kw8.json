@@ -1,9 +1,0 @@
-{
-	"id": "VtwAqU3Kzbs5Kw8",
-	"json": "{\"id\":\"VtwAqU3Kzbs5Kw8\",\"url\":\"https://health.ucdavis.edu/interpreting-services/written-translation\",\"loadedUrl\":\"https://health.ucdavis.edu/interpreting-services/written-translation\",\"uniqueKey\":\"https://health.ucdavis.edu/interpreting-services/written-translation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:15.889Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/interpreting-services/written-translation",
-	"url": "https://health.ucdavis.edu/interpreting-services/written-translation"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "iGy708SnpFybumj",
-	"json": "{\"id\":\"iGy708SnpFybumj\",\"url\":\"https://health.ucdavis.edu/mind-institute/research/language-development/publications\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/research/language-development/publications\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/research/language-development/publications\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:25.939Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mind-institute/research/language-development/publications",
-	"url": "https://health.ucdavis.edu/mind-institute/research/language-development/publications"
-}

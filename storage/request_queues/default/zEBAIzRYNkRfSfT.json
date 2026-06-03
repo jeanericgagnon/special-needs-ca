@@ -1,9 +1,0 @@
-{
-	"id": "zEBAIzRYNkRfSfT",
-	"json": "{\"id\":\"zEBAIzRYNkRfSfT\",\"url\":\"https://neuroscience.ucdavis.edu/people/stacey-combes\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/people/stacey-combes\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/people/stacey-combes\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:46.500Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/people/stacey-combes",
-	"url": "https://neuroscience.ucdavis.edu/people/stacey-combes"
-}

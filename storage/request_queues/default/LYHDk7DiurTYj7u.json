@@ -1,9 +1,0 @@
-{
-	"id": "LYHDk7DiurTYj7u",
-	"json": "{\"id\":\"LYHDk7DiurTYj7u\",\"url\":\"http://archive.senate.ca.gov/committee-archives\",\"loadedUrl\":\"https://archive.senate.ca.gov/committee-archives\",\"uniqueKey\":\"http://archive.senate.ca.gov/committee-archives\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:55.998Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://archive.senate.ca.gov/committee-archives",
-	"url": "http://archive.senate.ca.gov/committee-archives"
-}

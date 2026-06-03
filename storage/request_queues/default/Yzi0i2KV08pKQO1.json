@@ -1,9 +1,0 @@
-{
-	"id": "Yzi0i2KV08pKQO1",
-	"json": "{\"id\":\"Yzi0i2KV08pKQO1\",\"url\":\"https://skylab4.cdph.ca.gov/epicenter/_w_29b3f41c/?tabs=Home-welcome\",\"loadedUrl\":\"https://skylab4.cdph.ca.gov/epicenter/?tabs=Home-welcome\",\"uniqueKey\":\"https://skylab4.cdph.ca.gov/epicenter/_w_29b3f41c?tabs=Home-welcome\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:50:35.400Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://skylab4.cdph.ca.gov/epicenter/_w_29b3f41c?tabs=Home-welcome",
-	"url": "https://skylab4.cdph.ca.gov/epicenter/_w_29b3f41c/?tabs=Home-welcome"
-}

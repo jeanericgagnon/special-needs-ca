@@ -1,9 +1,0 @@
-{
-	"id": "bIKWH6XT3ntxZwM",
-	"json": "{\"id\":\"bIKWH6XT3ntxZwM\",\"url\":\"https://scdd.ca.gov/pos-service-code/driver-trainer/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/driver-trainer/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/driver-trainer\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:54.937Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/pos-service-code/driver-trainer",
-	"url": "https://scdd.ca.gov/pos-service-code/driver-trainer/"
-}

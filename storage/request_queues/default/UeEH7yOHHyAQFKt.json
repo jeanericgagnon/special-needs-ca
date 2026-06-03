@@ -1,9 +1,0 @@
-{
-	"id": "UeEH7yOHHyAQFKt",
-	"json": "{\"id\":\"UeEH7yOHHyAQFKt\",\"url\":\"https://www.chhs.ca.gov/blog/2020/11/04/playbook-to-stand-up-community-based-testing-sites/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2020/11/04/playbook-to-stand-up-community-based-testing-sites/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2020/11/04/playbook-to-stand-up-community-based-testing-sites\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:16.314Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chhs.ca.gov/blog/2020/11/04/playbook-to-stand-up-community-based-testing-sites",
-	"url": "https://www.chhs.ca.gov/blog/2020/11/04/playbook-to-stand-up-community-based-testing-sites/"
-}

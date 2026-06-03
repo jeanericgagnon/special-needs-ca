@@ -1,9 +1,0 @@
-{
-	"id": "R0ViRAF77EN5y1H",
-	"json": "{\"id\":\"R0ViRAF77EN5y1H\",\"url\":\"https://health.ucdavis.edu/burncenter/data_coordinating_center.html\",\"loadedUrl\":\"https://health.ucdavis.edu/burncenter/data_coordinating_center.html\",\"uniqueKey\":\"https://health.ucdavis.edu/burncenter/data_coordinating_center.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:53.219Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/burncenter/data_coordinating_center.html",
-	"url": "https://health.ucdavis.edu/burncenter/data_coordinating_center.html"
-}

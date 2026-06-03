@@ -1,9 +1,0 @@
-{
-	"id": "lN2mj9ObpWP8W8p",
-	"json": "{\"id\":\"lN2mj9ObpWP8W8p\",\"url\":\"https://www.ucdavis.edu/academics/our-faculty\",\"loadedUrl\":\"https://www.ucdavis.edu/academics/our-faculty\",\"uniqueKey\":\"https://www.ucdavis.edu/academics/our-faculty\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:45.017Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ucdavis.edu/academics/our-faculty",
-	"url": "https://www.ucdavis.edu/academics/our-faculty"
-}

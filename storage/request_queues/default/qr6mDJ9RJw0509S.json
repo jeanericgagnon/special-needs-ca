@@ -1,9 +1,0 @@
-{
-	"id": "qr6mDJ9RJw0509S",
-	"json": "{\"id\":\"qr6mDJ9RJw0509S\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/42920/michael-sim-nephrology-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/42920/michael-sim-nephrology-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/42920/michael-sim-nephrology-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:11.999Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/42920/michael-sim-nephrology-sacramento",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/42920/michael-sim-nephrology-sacramento"
-}

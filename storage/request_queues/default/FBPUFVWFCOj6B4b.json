@@ -1,9 +1,0 @@
-{
-	"id": "FBPUFVWFCOj6B4b",
-	"json": "{\"id\":\"FBPUFVWFCOj6B4b\",\"url\":\"https://neuroscience.ucdavis.edu/person-type/emeriti\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/person-type/emeriti\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/person-type/emeriti\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:59.194Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/person-type/emeriti",
-	"url": "https://neuroscience.ucdavis.edu/person-type/emeriti"
-}

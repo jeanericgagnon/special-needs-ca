@@ -1,9 +1,0 @@
-{
-	"id": "yoMf87XDO6VLKo3",
-	"json": "{\"id\":\"yoMf87XDO6VLKo3\",\"url\":\"https://mychart.ucdavis.edu/MyChart/GuestEstimates/AcceptDisclaimer?svcArea=WP-246NIdj-2BWviC2UI9QZXUveJQ-3D-3D-240CSM9RXq3QtYOU8S4nk7Ql-2FQ7ZztVZh36KeRDHh70ig-3D&isMultiSA=true\",\"loadedUrl\":\"https://mychart.ucdavis.edu/MyChart/GuestEstimates/AcceptDisclaimer?svcArea=WP-246NIdj-2BWviC2UI9QZXUveJQ-3D-3D-240CSM9RXq3QtYOU8S4nk7Ql-2FQ7ZztVZh36KeRDHh70ig-3D&isMultiSA=true\",\"uniqueKey\":\"https://mychart.ucdavis.edu/MyChart/GuestEstimates/AcceptDisclaimer?isMultiSA=true&svcArea=WP-246NIdj-2BWviC2UI9QZXUveJQ-3D-3D-240CSM9RXq3QtYOU8S4nk7Ql-2FQ7ZztVZh36KeRDHh70ig-3D\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:12:02.263Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://mychart.ucdavis.edu/MyChart/GuestEstimates/AcceptDisclaimer?isMultiSA=true&svcArea=WP-246NIdj-2BWviC2UI9QZXUveJQ-3D-3D-240CSM9RXq3QtYOU8S4nk7Ql-2FQ7ZztVZh36KeRDHh70ig-3D",
-	"url": "https://mychart.ucdavis.edu/MyChart/GuestEstimates/AcceptDisclaimer?svcArea=WP-246NIdj-2BWviC2UI9QZXUveJQ-3D-3D-240CSM9RXq3QtYOU8S4nk7Ql-2FQ7ZztVZh36KeRDHh70ig-3D&isMultiSA=true"
-}

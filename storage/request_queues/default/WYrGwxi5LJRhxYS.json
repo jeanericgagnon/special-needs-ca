@@ -1,9 +1,0 @@
-{
-	"id": "WYrGwxi5LJRhxYS",
-	"json": "{\"id\":\"WYrGwxi5LJRhxYS\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/43132/jose-joaquin_lado-lado_abeal-endocrinology-roseville-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/43132/jose-joaquin_lado-lado_abeal-endocrinology-roseville-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/43132/jose-joaquin_lado-lado_abeal-endocrinology-roseville-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:09.353Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/43132/jose-joaquin_lado-lado_abeal-endocrinology-roseville-sacramento",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/43132/jose-joaquin_lado-lado_abeal-endocrinology-roseville-sacramento"
-}

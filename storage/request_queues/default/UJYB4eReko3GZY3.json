@@ -1,9 +1,0 @@
-{
-	"id": "UJYB4eReko3GZY3",
-	"json": "{\"id\":\"UJYB4eReko3GZY3\",\"url\":\"https://www.cde.ca.gov/ls/nu/ed/cnpcoursecatalog.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ls/nu/ed/cnpcoursecatalog.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ls/nu/ed/cnpcoursecatalog.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:21.358Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ls/nu/ed/cnpcoursecatalog.asp",
-	"url": "https://www.cde.ca.gov/ls/nu/ed/cnpcoursecatalog.asp"
-}

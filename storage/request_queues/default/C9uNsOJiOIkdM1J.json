@@ -1,9 +1,0 @@
-{
-	"id": "C9uNsOJiOIkdM1J",
-	"json": "{\"id\":\"C9uNsOJiOIkdM1J\",\"url\":\"https://health.ucdavis.edu/schools-programs/\",\"loadedUrl\":\"https://health.ucdavis.edu/schools-programs/\",\"uniqueKey\":\"https://health.ucdavis.edu/schools-programs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:18.306Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/schools-programs",
-	"url": "https://health.ucdavis.edu/schools-programs/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "OqtTx0BMnCGQxvL",
-	"json": "{\"id\":\"OqtTx0BMnCGQxvL\",\"url\":\"https://health.ucdavis.edu/internal-medicine/pulmonary/our-services/road-program\",\"loadedUrl\":\"https://health.ucdavis.edu/internal-medicine/pulmonary/our-services/road-program\",\"uniqueKey\":\"https://health.ucdavis.edu/internal-medicine/pulmonary/our-services/road-program\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:34:26.279Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/internal-medicine/pulmonary/our-services/road-program",
-	"url": "https://health.ucdavis.edu/internal-medicine/pulmonary/our-services/road-program"
-}

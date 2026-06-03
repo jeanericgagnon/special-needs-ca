@@ -1,9 +1,0 @@
-{
-	"id": "nxQSahpoNexss5N",
-	"json": "{\"id\":\"nxQSahpoNexss5N\",\"url\":\"https://aggieservice.ucdavis.edu/s/\",\"loadedUrl\":\"https://aggieservice.ucdavis.edu/s/\",\"uniqueKey\":\"https://aggieservice.ucdavis.edu/s\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:30.750Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://aggieservice.ucdavis.edu/s",
-	"url": "https://aggieservice.ucdavis.edu/s/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "WATX5F8JTXNdiXj",
-	"json": "{\"id\":\"WATX5F8JTXNdiXj\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/43260/erik-noren-cancer-colon_and_rectal_surgery-colorectal_surgery-robotic_surgery-sacramento?FreeText%3aLast+name=Noren\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/43260/erik-noren-cancer-colon_and_rectal_surgery-colorectal_surgery-robotic_surgery-sacramento?FreeText%3aLast+name=Noren\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/43260/erik-noren-cancer-colon_and_rectal_surgery-colorectal_surgery-robotic_surgery-sacramento?FreeText%3ALast+name=Noren\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:08.298Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/43260/erik-noren-cancer-colon_and_rectal_surgery-colorectal_surgery-robotic_surgery-sacramento?FreeText%3ALast+name=Noren",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/43260/erik-noren-cancer-colon_and_rectal_surgery-colorectal_surgery-robotic_surgery-sacramento?FreeText%3aLast+name=Noren"
-}

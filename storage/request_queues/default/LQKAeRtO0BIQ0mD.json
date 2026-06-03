@@ -1,9 +1,0 @@
-{
-	"id": "LQKAeRtO0BIQ0mD",
-	"json": "{\"id\":\"LQKAeRtO0BIQ0mD\",\"url\":\"https://financeandbusiness.ucdavis.edu/finance/self-supporting-activities/introduction\",\"loadedUrl\":\"https://financeandbusiness.ucdavis.edu/finance/self-supporting-activities/introduction\",\"uniqueKey\":\"https://financeandbusiness.ucdavis.edu/finance/self-supporting-activities/introduction\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:52.434Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://financeandbusiness.ucdavis.edu/finance/self-supporting-activities/introduction",
-	"url": "https://financeandbusiness.ucdavis.edu/finance/self-supporting-activities/introduction"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "GyARqKM0flLSeE1",
-	"json": "{\"id\":\"GyARqKM0flLSeE1\",\"url\":\"https://www.cde.ca.gov/ta/sr/aa/images/title1aaalogo2.eps\",\"loadedUrl\":\"https://www6.cde.ca.gov/wafalert.html?_event_transid=563511335\",\"uniqueKey\":\"https://www.cde.ca.gov/ta/sr/aa/images/title1aaalogo2.eps\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:42.956Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ta/sr/aa/images/title1aaalogo2.eps",
-	"url": "https://www.cde.ca.gov/ta/sr/aa/images/title1aaalogo2.eps"
-}

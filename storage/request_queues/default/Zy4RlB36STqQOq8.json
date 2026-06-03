@@ -1,9 +1,0 @@
-{
-	"id": "Zy4RlB36STqQOq8",
-	"json": "{\"id\":\"Zy4RlB36STqQOq8\",\"url\":\"https://health.ucdavis.edu/ctsc/area/education/mentoring-academy/\",\"loadedUrl\":\"https://health.ucdavis.edu/ctsc/area/education/mentoring-academy/\",\"uniqueKey\":\"https://health.ucdavis.edu/ctsc/area/education/mentoring-academy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:33.742Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/ctsc/area/education/mentoring-academy",
-	"url": "https://health.ucdavis.edu/ctsc/area/education/mentoring-academy/"
-}

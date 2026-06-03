@@ -1,9 +1,0 @@
-{
-	"id": "ObFdSfk247Vkfar",
-	"json": "{\"id\":\"ObFdSfk247Vkfar\",\"url\":\"https://lucklab.ucdavis.edu/\",\"loadedUrl\":\"https://lucklab.ucdavis.edu/\",\"uniqueKey\":\"https://lucklab.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:42.715Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://lucklab.ucdavis.edu",
-	"url": "https://lucklab.ucdavis.edu/"
-}

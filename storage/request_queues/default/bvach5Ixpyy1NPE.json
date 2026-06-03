@@ -1,9 +1,0 @@
-{
-	"id": "bvach5Ixpyy1NPE",
-	"json": "{\"id\":\"bvach5Ixpyy1NPE\",\"url\":\"https://www.ctc.ca.gov/educator-prep/grant-funded-programs/teacher-residency-grant-program\",\"loadedUrl\":\"https://www.ctc.ca.gov/program-sponsors/grant-funded-programs/teacher-residency/\",\"uniqueKey\":\"https://www.ctc.ca.gov/educator-prep/grant-funded-programs/teacher-residency-grant-program\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:53.556Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ctc.ca.gov/educator-prep/grant-funded-programs/teacher-residency-grant-program",
-	"url": "https://www.ctc.ca.gov/educator-prep/grant-funded-programs/teacher-residency-grant-program"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "zjMMn1anVzzjN5D",
-	"json": "{\"id\":\"zjMMn1anVzzjN5D\",\"url\":\"https://scdd.ca.gov/pos-service-code/professional-copying-reporting-and-technical-services/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/professional-copying-reporting-and-technical-services/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/professional-copying-reporting-and-technical-services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:51.245Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/pos-service-code/professional-copying-reporting-and-technical-services",
-	"url": "https://scdd.ca.gov/pos-service-code/professional-copying-reporting-and-technical-services/"
-}

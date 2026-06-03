@@ -1,9 +1,0 @@
-{
-	"id": "uoY66ejdTHqlvX1",
-	"json": "{\"id\":\"uoY66ejdTHqlvX1\",\"url\":\"https://www.ucdavis.edu/admissions/undergraduate/transfer/transfer-admission-guarantee/counselors/tag-evaluations\",\"loadedUrl\":\"https://www.ucdavis.edu/admissions/undergraduate/transfer/transfer-admission-guarantee/counselors/tag-evaluations\",\"uniqueKey\":\"https://www.ucdavis.edu/admissions/undergraduate/transfer/transfer-admission-guarantee/counselors/tag-evaluations\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:43.043Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ucdavis.edu/admissions/undergraduate/transfer/transfer-admission-guarantee/counselors/tag-evaluations",
-	"url": "https://www.ucdavis.edu/admissions/undergraduate/transfer/transfer-admission-guarantee/counselors/tag-evaluations"
-}

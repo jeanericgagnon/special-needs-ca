@@ -1,9 +1,0 @@
-{
-	"id": "M6H1pkuLGcIpEt1",
-	"json": "{\"id\":\"M6H1pkuLGcIpEt1\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/42923/sindhura-batchu-pediatric_gastroenterology-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/42923/sindhura-batchu-pediatric_gastroenterology-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/42923/sindhura-batchu-pediatric_gastroenterology-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:16.931Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/42923/sindhura-batchu-pediatric_gastroenterology-sacramento",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/42923/sindhura-batchu-pediatric_gastroenterology-sacramento"
-}

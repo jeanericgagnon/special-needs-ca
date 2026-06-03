@@ -1,9 +1,0 @@
-{
-	"id": "hD7jpROEP1XM1O5",
-	"json": "{\"id\":\"hD7jpROEP1XM1O5\",\"url\":\"https://www.cde.ca.gov/ls/nu/townhallmay2026.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=39569d9e-c978-4027-becd-ecaa9b1cbb9a&ssb=80689246998&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fls%2Fnu%2Ftownhallmay2026.asp&ssi=92b9da1a-ctxv-471f-921d-9e777af88a68&ssk=botmanager_support@radware.com&ssm=56377669462111745109818389953513&ssn=ed7de85fdd13f13105be36320157253b79715995a9f4-1f52-4409-874749&sso=a5041343-9bf8889fe64e25898840adaccd8b2655317b89724cde8050&ssp=71030822261780377980178031073129899&ssq=82570322661980339791226619588653482840808&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsIl9fdXptZiI6IjdmOTAwMDU5OTVhOWY0LTFmNTItNDQwOS04MzQzLTliZjg4ODlmZTY0ZTEtMTc4MDMyNjYxOTQ1NzAtMDAzMDg1ZjY3YjA0N2M0OGRjMTEwIiwidXpteCI6IjdmOTAwMGQ5YTlkMDMwLWZkMDktNGViOC05YjhjLTQzZTBiNmVlY2Y0MTEtMTc4MDMyNjYxOTQ1NzAtMDRkNDVkNjRiOTE3NTJkYTEwIn0=\",\"uniqueKey\":\"https://www.cde.ca.gov/ls/nu/townhallmay2026.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:10:19.881Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ls/nu/townhallmay2026.asp",
-	"url": "https://www.cde.ca.gov/ls/nu/townhallmay2026.asp"
-}

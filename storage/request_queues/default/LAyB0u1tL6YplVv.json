@@ -1,9 +1,0 @@
-{
-	"id": "LAyB0u1tL6YplVv",
-	"json": "{\"id\":\"LAyB0u1tL6YplVv\",\"url\":\"https://leginfo.legislature.ca.gov/faces/codes_displayexpandedbranch.xhtml?tocCode=HSC&division=106.&title=&part=&chapter=&article=\",\"loadedUrl\":\"https://leginfo.legislature.ca.gov/faces/codes_displayexpandedbranch.xhtml?tocCode=HSC&division=106.&title=&part=&chapter=&article=\",\"uniqueKey\":\"https://leginfo.legislature.ca.gov/faces/codes_displayexpandedbranch.xhtml?article=&chapter=&division=106.&part=&title=&tocCode=HSC\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T18:03:11.774Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://leginfo.legislature.ca.gov/faces/codes_displayexpandedbranch.xhtml?article=&chapter=&division=106.&part=&title=&tocCode=HSC",
-	"url": "https://leginfo.legislature.ca.gov/faces/codes_displayexpandedbranch.xhtml?tocCode=HSC&division=106.&title=&part=&chapter=&article="
-}

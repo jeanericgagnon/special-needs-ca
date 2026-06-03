@@ -1,9 +1,0 @@
-{
-	"id": "p3FfBRWRfvbx8P3",
-	"json": "{\"id\":\"p3FfBRWRfvbx8P3\",\"url\":\"https://www.dds.ca.gov/category/newsletter/page/3/\",\"loadedUrl\":\"https://www.dds.ca.gov/category/newsletter/page/3/\",\"uniqueKey\":\"https://www.dds.ca.gov/category/newsletter/page/3\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:10.962Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/category/newsletter/page/3",
-	"url": "https://www.dds.ca.gov/category/newsletter/page/3/"
-}

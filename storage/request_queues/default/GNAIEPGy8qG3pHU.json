@@ -1,9 +1,0 @@
-{
-	"id": "GNAIEPGy8qG3pHU",
-	"json": "{\"id\":\"GNAIEPGy8qG3pHU\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/21906/lisa-brown-clinical_research-robotic_surgery-surgery_-_robotic-surgery_-_thoracic-sacramento?FreeText%3aLast+name=brown\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/21906/lisa-brown-clinical_research-robotic_surgery-surgery_-_robotic-surgery_-_thoracic-sacramento?FreeText%3aLast+name=brown\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/21906/lisa-brown-clinical_research-robotic_surgery-surgery_-_robotic-surgery_-_thoracic-sacramento?FreeText%3ALast+name=brown\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:15.395Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/21906/lisa-brown-clinical_research-robotic_surgery-surgery_-_robotic-surgery_-_thoracic-sacramento?FreeText%3ALast+name=brown",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/21906/lisa-brown-clinical_research-robotic_surgery-surgery_-_robotic-surgery_-_thoracic-sacramento?FreeText%3aLast+name=brown"
-}

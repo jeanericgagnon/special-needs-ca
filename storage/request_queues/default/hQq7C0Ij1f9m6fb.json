@@ -1,9 +1,0 @@
-{
-	"id": "hQq7C0Ij1f9m6fb",
-	"json": "{\"id\":\"hQq7C0Ij1f9m6fb\",\"url\":\"http://cdss.ca.gov/inforesources/cecris\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/cecris\",\"uniqueKey\":\"http://cdss.ca.gov/inforesources/cecris\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:51.979Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://cdss.ca.gov/inforesources/cecris",
-	"url": "http://cdss.ca.gov/inforesources/cecris"
-}

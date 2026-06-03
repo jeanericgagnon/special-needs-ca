@@ -1,9 +1,0 @@
-{
-	"id": "F4pYgKqsOvjk1er",
-	"json": "{\"id\":\"F4pYgKqsOvjk1er\",\"url\":\"https://ltg.ca.gov/equity/\",\"loadedUrl\":\"https://ltg.ca.gov/equity/\",\"uniqueKey\":\"https://ltg.ca.gov/equity\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:47.291Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ltg.ca.gov/equity",
-	"url": "https://ltg.ca.gov/equity/"
-}

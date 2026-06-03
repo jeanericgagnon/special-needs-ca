@@ -1,9 +1,0 @@
-{
-	"id": "PpXb1gjO74hcXlP",
-	"json": "{\"id\":\"PpXb1gjO74hcXlP\",\"url\":\"https://diversity.ucdavis.edu/chancellors-achievement-awards-diversity-and-community\",\"loadedUrl\":\"https://excellence.ucdavis.edu/\",\"uniqueKey\":\"https://diversity.ucdavis.edu/chancellors-achievement-awards-diversity-and-community\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:25.102Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://diversity.ucdavis.edu/chancellors-achievement-awards-diversity-and-community",
-	"url": "https://diversity.ucdavis.edu/chancellors-achievement-awards-diversity-and-community"
-}

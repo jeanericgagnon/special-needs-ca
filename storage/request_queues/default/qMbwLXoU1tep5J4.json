@@ -1,9 +1,0 @@
-{
-	"id": "qMbwLXoU1tep5J4",
-	"json": "{\"id\":\"qMbwLXoU1tep5J4\",\"url\":\"https://www.cdph.ca.gov/Programs/CHCQ/HAI/Pages/PublicHealthPartners.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CHCQ/HAI/Pages/PublicHealthPartners.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CHCQ/HAI/Pages/PublicHealthPartners.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:01:47.633Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CHCQ/HAI/Pages/PublicHealthPartners.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CHCQ/HAI/Pages/PublicHealthPartners.aspx"
-}

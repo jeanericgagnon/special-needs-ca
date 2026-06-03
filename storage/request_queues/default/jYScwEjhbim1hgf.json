@@ -1,9 +1,0 @@
-{
-	"id": "jYScwEjhbim1hgf",
-	"json": "{\"id\":\"jYScwEjhbim1hgf\",\"url\":\"https://www.dir.ca.gov/das/Laws_Regulations.htm\",\"loadedUrl\":\"https://www.dir.ca.gov/das/Laws_Regulations.htm\",\"uniqueKey\":\"https://www.dir.ca.gov/das/Laws_Regulations.htm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:11.232Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dir.ca.gov/das/Laws_Regulations.htm",
-	"url": "https://www.dir.ca.gov/das/Laws_Regulations.htm"
-}

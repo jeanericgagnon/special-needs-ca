@@ -1,9 +1,0 @@
-{
-	"id": "csSrmyWGGqvsdW7",
-	"json": "{\"id\":\"csSrmyWGGqvsdW7\",\"url\":\"https://www.cdss.ca.gov/inforesources/Community-Care/Home-Care-Services/Application-Fees\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/community-care/home-care-services/application-fees\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/Community-Care/Home-Care-Services/Application-Fees\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:42.038Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/inforesources/Community-Care/Home-Care-Services/Application-Fees",
-	"url": "https://www.cdss.ca.gov/inforesources/Community-Care/Home-Care-Services/Application-Fees"
-}

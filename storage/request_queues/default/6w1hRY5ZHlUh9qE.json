@@ -1,9 +1,0 @@
-{
-	"id": "6w1hRY5ZHlUh9qE",
-	"json": "{\"id\":\"6w1hRY5ZHlUh9qE\",\"url\":\"https://scdd.ca.gov/pos-service-code/housing-services/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/housing-services/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/housing-services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:55.630Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/pos-service-code/housing-services",
-	"url": "https://scdd.ca.gov/pos-service-code/housing-services/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "236ODaDndWnu0ob",
-	"json": "{\"id\":\"236ODaDndWnu0ob\",\"url\":\"https://www.cde.ca.gov/be/st/ss/\",\"loadedUrl\":\"https://www.cde.ca.gov/be/st/ss/\",\"uniqueKey\":\"https://www.cde.ca.gov/be/st/ss\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:05.581Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/be/st/ss",
-	"url": "https://www.cde.ca.gov/be/st/ss/"
-}

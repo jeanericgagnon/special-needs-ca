@@ -1,9 +1,0 @@
-{
-	"id": "ViUkk9RoLIdTgKF",
-	"json": "{\"id\":\"ViUkk9RoLIdTgKF\",\"url\":\"https://www.assembly.ca.gov/committees\",\"loadedUrl\":\"https://www.assembly.ca.gov/committees\",\"uniqueKey\":\"https://www.assembly.ca.gov/committees\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:59.452Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.assembly.ca.gov/committees",
-	"url": "https://www.assembly.ca.gov/committees"
-}

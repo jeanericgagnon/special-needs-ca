@@ -1,9 +1,0 @@
-{
-	"id": "dQpnMmefQoErj2W",
-	"json": "{\"id\":\"dQpnMmefQoErj2W\",\"url\":\"https://www.globaldownsyndrome.org/get-involved/donate/\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/get-involved/donate/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/get-involved/donate\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:34.740Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.globaldownsyndrome.org/get-involved/donate",
-	"url": "https://www.globaldownsyndrome.org/get-involved/donate/"
-}

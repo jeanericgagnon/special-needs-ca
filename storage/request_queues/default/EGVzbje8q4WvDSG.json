@@ -1,9 +1,0 @@
-{
-	"id": "EGVzbje8q4WvDSG",
-	"json": "{\"id\":\"EGVzbje8q4WvDSG\",\"url\":\"https://www.cde.ca.gov/nr/ne/yr20/\",\"loadedUrl\":\"https://www.cde.ca.gov/nr/ne/yr20/\",\"uniqueKey\":\"https://www.cde.ca.gov/nr/ne/yr20\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:01.961Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/nr/ne/yr20",
-	"url": "https://www.cde.ca.gov/nr/ne/yr20/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "P6fni93uYmLoWuQ",
-	"json": "{\"id\":\"P6fni93uYmLoWuQ\",\"url\":\"https://health.ucdavis.edu/mind-institute/research/cene-brain-bank/cene-about\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/research/cene-brain-bank/cene-about\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/research/cene-brain-bank/cene-about\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:26.477Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mind-institute/research/cene-brain-bank/cene-about",
-	"url": "https://health.ucdavis.edu/mind-institute/research/cene-brain-bank/cene-about"
-}

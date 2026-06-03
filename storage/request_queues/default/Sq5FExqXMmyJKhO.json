@@ -1,9 +1,0 @@
-{
-	"id": "Sq5FExqXMmyJKhO",
-	"json": "{\"id\":\"Sq5FExqXMmyJKhO\",\"url\":\"http://www.caloes.ca.gov/Cal-OES-Divisions/Legal-Affairs/Website-Conditions-of-Use\",\"loadedUrl\":\"https://www.caloes.ca.gov/Cal-OES-Divisions/Legal-Affairs/Website-Conditions-of-Use\",\"uniqueKey\":\"http://www.caloes.ca.gov/Cal-OES-Divisions/Legal-Affairs/Website-Conditions-of-Use\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:19.575Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.caloes.ca.gov/Cal-OES-Divisions/Legal-Affairs/Website-Conditions-of-Use",
-	"url": "http://www.caloes.ca.gov/Cal-OES-Divisions/Legal-Affairs/Website-Conditions-of-Use"
-}

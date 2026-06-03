@@ -1,9 +1,0 @@
-{
-	"id": "a4PuzWW053xt9Za",
-	"json": "{\"id\":\"a4PuzWW053xt9Za\",\"url\":\"https://www.cdph.ca.gov/Programs/OSPHLD/LFS/Pages/OnlineNewApplication.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/OSPHLD/LFS/Pages/OnlineNewApplication.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/OSPHLD/LFS/Pages/OnlineNewApplication.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:46:55.555Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/OSPHLD/LFS/Pages/OnlineNewApplication.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/OSPHLD/LFS/Pages/OnlineNewApplication.aspx"
-}

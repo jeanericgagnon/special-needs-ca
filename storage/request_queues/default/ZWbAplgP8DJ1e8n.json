@@ -1,9 +1,0 @@
-{
-	"id": "ZWbAplgP8DJ1e8n",
-	"json": "{\"id\":\"ZWbAplgP8DJ1e8n\",\"url\":\"https://taps.ucdavis.edu/bicycleprogram\",\"loadedUrl\":\"https://transportation.ucdavis.edu/bicycleprogram\",\"uniqueKey\":\"https://taps.ucdavis.edu/bicycleprogram\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:29.336Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://taps.ucdavis.edu/bicycleprogram",
-	"url": "https://taps.ucdavis.edu/bicycleprogram"
-}

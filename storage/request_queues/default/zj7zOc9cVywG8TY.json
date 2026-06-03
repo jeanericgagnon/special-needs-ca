@@ -1,9 +1,0 @@
-{
-	"id": "zj7zOc9cVywG8TY",
-	"json": "{\"id\":\"zj7zOc9cVywG8TY\",\"url\":\"https://rarediseases.org/rare-diseases/orthostatic-hypotension/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/orthostatic-hypotension/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/orthostatic-hypotension\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:15:02.629Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/rare-diseases/orthostatic-hypotension",
-	"url": "https://rarediseases.org/rare-diseases/orthostatic-hypotension/"
-}

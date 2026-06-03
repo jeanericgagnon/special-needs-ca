@@ -1,9 +1,0 @@
-{
-	"id": "KN0Fr4mdUv8E31Q",
-	"json": "{\"id\":\"KN0Fr4mdUv8E31Q\",\"url\":\"https://health.ucdavis.edu/children/news/blogs/\",\"loadedUrl\":\"https://health.ucdavis.edu/children/news/blogs/\",\"uniqueKey\":\"https://health.ucdavis.edu/children/news/blogs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:51.989Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/children/news/blogs",
-	"url": "https://health.ucdavis.edu/children/news/blogs/"
-}

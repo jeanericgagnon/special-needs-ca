@@ -1,9 +1,0 @@
-{
-	"id": "CYCEtTbUFEHKpY5",
-	"json": "{\"id\":\"CYCEtTbUFEHKpY5\",\"url\":\"https://health.ucdavis.edu/research/departments-programs/\",\"loadedUrl\":\"https://health.ucdavis.edu/research/departments-programs/\",\"uniqueKey\":\"https://health.ucdavis.edu/research/departments-programs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:52.626Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/research/departments-programs",
-	"url": "https://health.ucdavis.edu/research/departments-programs/"
-}

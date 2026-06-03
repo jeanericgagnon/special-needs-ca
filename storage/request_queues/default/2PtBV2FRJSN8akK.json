@@ -1,9 +1,0 @@
-{
-	"id": "2PtBV2FRJSN8akK",
-	"json": "{\"id\":\"2PtBV2FRJSN8akK\",\"url\":\"https://engineering.ucdavis.edu/engineering-research\",\"loadedUrl\":\"https://engineering.ucdavis.edu/engineering-research\",\"uniqueKey\":\"https://engineering.ucdavis.edu/engineering-research\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:31.279Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://engineering.ucdavis.edu/engineering-research",
-	"url": "https://engineering.ucdavis.edu/engineering-research"
-}

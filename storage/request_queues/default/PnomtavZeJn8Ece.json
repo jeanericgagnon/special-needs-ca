@@ -1,9 +1,0 @@
-{
-	"id": "PnomtavZeJn8Ece",
-	"json": "{\"id\":\"PnomtavZeJn8Ece\",\"url\":\"https://www.calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=503822\",\"loadedUrl\":\"https://calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=503822\",\"uniqueKey\":\"https://www.calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=503822\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:55.898Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=503822",
-	"url": "https://www.calcareers.ca.gov/CalHrPublic/Jobs/JobPosting.aspx?JobControlId=503822"
-}

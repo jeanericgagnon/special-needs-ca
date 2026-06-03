@@ -1,9 +1,0 @@
-{
-	"id": "aWPNjZwcFu9BRKb",
-	"json": "{\"id\":\"aWPNjZwcFu9BRKb\",\"url\":\"https://leadership.ucdavis.edu/hate-free-together\",\"loadedUrl\":\"https://leadership.ucdavis.edu/hate-free-together\",\"uniqueKey\":\"https://leadership.ucdavis.edu/hate-free-together\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:37.100Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://leadership.ucdavis.edu/hate-free-together",
-	"url": "https://leadership.ucdavis.edu/hate-free-together"
-}

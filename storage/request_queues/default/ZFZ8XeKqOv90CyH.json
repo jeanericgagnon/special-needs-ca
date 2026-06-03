@@ -1,9 +1,0 @@
-{
-	"id": "ZFZ8XeKqOv90CyH",
-	"json": "{\"id\":\"ZFZ8XeKqOv90CyH\",\"url\":\"https://edd.ca.gov/en/jobs_and_training/step-2-explore-career-paths/\",\"loadedUrl\":\"https://edd.ca.gov/en/jobs_and_training/step-2-explore-career-paths/\",\"uniqueKey\":\"https://edd.ca.gov/en/jobs_and_training/step-2-explore-career-paths\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:40.733Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://edd.ca.gov/en/jobs_and_training/step-2-explore-career-paths",
-	"url": "https://edd.ca.gov/en/jobs_and_training/step-2-explore-career-paths/"
-}

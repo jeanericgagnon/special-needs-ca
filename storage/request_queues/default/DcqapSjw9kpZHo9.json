@@ -1,9 +1,0 @@
-{
-	"id": "DcqapSjw9kpZHo9",
-	"json": "{\"id\":\"DcqapSjw9kpZHo9\",\"url\":\"http://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=EDC&division=1.&title=1.&part=1.&chapter=3.&article=2.\",\"loadedUrl\":\"https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=EDC&division=1.&title=1.&part=1.&chapter=3.&article=2.\",\"uniqueKey\":\"http://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?article=2.&chapter=3.&division=1.&lawCode=EDC&part=1.&title=1.\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:51.148Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?article=2.&chapter=3.&division=1.&lawCode=EDC&part=1.&title=1.",
-	"url": "http://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=EDC&division=1.&title=1.&part=1.&chapter=3.&article=2."
-}

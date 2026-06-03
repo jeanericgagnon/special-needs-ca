@@ -1,9 +1,0 @@
-{
-	"id": "hAurMOwFfqkQG5c",
-	"json": "{\"id\":\"hAurMOwFfqkQG5c\",\"url\":\"https://cdss.ca.gov/inforesources/Rules-Regulations/Legislation-and-Regulations/Community-Care-Licensing-Information-Releases\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/letters-regulations/legislation-and-regulations/community-care-licensing-information-releases\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Rules-Regulations/Legislation-and-Regulations/Community-Care-Licensing-Information-Releases\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:47.197Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/Rules-Regulations/Legislation-and-Regulations/Community-Care-Licensing-Information-Releases",
-	"url": "https://cdss.ca.gov/inforesources/Rules-Regulations/Legislation-and-Regulations/Community-Care-Licensing-Information-Releases"
-}

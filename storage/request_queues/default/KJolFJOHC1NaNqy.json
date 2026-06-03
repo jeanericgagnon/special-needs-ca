@@ -1,9 +1,0 @@
-{
-	"id": "KJolFJOHC1NaNqy",
-	"json": "{\"id\":\"KJolFJOHC1NaNqy\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/1111/radhika-dr_nadur-bukkapatnam-adult_echocardiography-cardiovascular_medicine-roseville-sacramento?FreeText%3aLast+name=Bukkapatnam\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/1111/radhika-dr_nadur-bukkapatnam-adult_echocardiography-cardiovascular_medicine-roseville-sacramento?FreeText%3aLast+name=Bukkapatnam\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/1111/radhika-dr_nadur-bukkapatnam-adult_echocardiography-cardiovascular_medicine-roseville-sacramento?FreeText%3ALast+name=Bukkapatnam\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:07.866Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/1111/radhika-dr_nadur-bukkapatnam-adult_echocardiography-cardiovascular_medicine-roseville-sacramento?FreeText%3ALast+name=Bukkapatnam",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/1111/radhika-dr_nadur-bukkapatnam-adult_echocardiography-cardiovascular_medicine-roseville-sacramento?FreeText%3aLast+name=Bukkapatnam"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "3Ls0tMFU3f1qnz9",
-	"json": "{\"id\":\"3Ls0tMFU3f1qnz9\",\"url\":\"https://www.dhcs.ca.gov/formsandpubs/Documents/MMCDAPLsandPolicyLetters/PL2012/PL12-003.pdf\",\"loadedUrl\":\"https://www.dhcs.ca.gov/file/pl12-003/\",\"uniqueKey\":\"https://www.dhcs.ca.gov/formsandpubs/Documents/MMCDAPLsandPolicyLetters/PL2012/PL12-003.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T17:44:31.922Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dhcs.ca.gov/formsandpubs/Documents/MMCDAPLsandPolicyLetters/PL2012/PL12-003.pdf",
-	"url": "https://www.dhcs.ca.gov/formsandpubs/Documents/MMCDAPLsandPolicyLetters/PL2012/PL12-003.pdf"
-}

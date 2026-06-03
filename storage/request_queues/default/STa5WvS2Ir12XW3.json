@@ -1,9 +1,0 @@
-{
-	"id": "STa5WvS2Ir12XW3",
-	"json": "{\"id\":\"STa5WvS2Ir12XW3\",\"url\":\"https://health.ucdavis.edu/medalumni/forms/award_nomination.html\",\"loadedUrl\":\"https://health.ucdavis.edu/medalumni/forms/award_nomination.html\",\"uniqueKey\":\"https://health.ucdavis.edu/medalumni/forms/award_nomination.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:07.105Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/medalumni/forms/award_nomination.html",
-	"url": "https://health.ucdavis.edu/medalumni/forms/award_nomination.html"
-}

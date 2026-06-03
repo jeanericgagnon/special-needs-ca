@@ -1,9 +1,0 @@
-{
-	"id": "JPy01cQU4MAJU4i",
-	"json": "{\"id\":\"JPy01cQU4MAJU4i\",\"url\":\"http://www.cdss.ca.gov/careers-with-cdss/cdss-job-vacancies\",\"loadedUrl\":\"https://www.cdss.ca.gov/careers-with-cdss/cdss-job-vacancies\",\"uniqueKey\":\"http://www.cdss.ca.gov/careers-with-cdss/cdss-job-vacancies\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:53.803Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.cdss.ca.gov/careers-with-cdss/cdss-job-vacancies",
-	"url": "http://www.cdss.ca.gov/careers-with-cdss/cdss-job-vacancies"
-}

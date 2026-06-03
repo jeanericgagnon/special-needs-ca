@@ -1,9 +1,0 @@
-{
-	"id": "XqJcmzj1wgYuSRS",
-	"json": "{\"id\":\"XqJcmzj1wgYuSRS\",\"url\":\"https://www.senate.ca.gov/senatejobs\",\"loadedUrl\":\"https://www.senate.ca.gov/senatejobs\",\"uniqueKey\":\"https://www.senate.ca.gov/senatejobs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:54.498Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.senate.ca.gov/senatejobs",
-	"url": "https://www.senate.ca.gov/senatejobs"
-}

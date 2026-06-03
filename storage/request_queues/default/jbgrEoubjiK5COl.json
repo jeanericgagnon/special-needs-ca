@@ -1,9 +1,0 @@
-{
-	"id": "jbgrEoubjiK5COl",
-	"json": "{\"id\":\"jbgrEoubjiK5COl\",\"url\":\"https://www.cde.ca.gov/ls/ep/resforwildfires2025.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ls/ep/resforwildfires2025.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ls/ep/resforwildfires2025.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:32.041Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ls/ep/resforwildfires2025.asp",
-	"url": "https://www.cde.ca.gov/ls/ep/resforwildfires2025.asp"
-}

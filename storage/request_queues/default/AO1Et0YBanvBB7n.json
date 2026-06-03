@@ -1,9 +1,0 @@
-{
-	"id": "AO1Et0YBanvBB7n",
-	"json": "{\"id\":\"AO1Et0YBanvBB7n\",\"url\":\"https://giving.ucdavis.edu/ways-to-give/employee-giving/meet-committee\",\"loadedUrl\":\"https://giving.ucdavis.edu/ways-to-give/employee-giving/meet-committee\",\"uniqueKey\":\"https://giving.ucdavis.edu/ways-to-give/employee-giving/meet-committee\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:31.177Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://giving.ucdavis.edu/ways-to-give/employee-giving/meet-committee",
-	"url": "https://giving.ucdavis.edu/ways-to-give/employee-giving/meet-committee"
-}

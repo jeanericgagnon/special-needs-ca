@@ -1,9 +1,0 @@
-{
-	"id": "1dUnFU4Bj0YCTNt",
-	"json": "{\"id\":\"1dUnFU4Bj0YCTNt\",\"url\":\"https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-and-education/\",\"loadedUrl\":\"https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-and-education/\",\"uniqueKey\":\"https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-and-education\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:19:32.177Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-and-education",
-	"url": "https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-and-education/"
-}

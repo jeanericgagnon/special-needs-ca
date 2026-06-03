@@ -1,9 +1,0 @@
-{
-	"id": "qrhq5V40ClIXYhb",
-	"json": "{\"id\":\"qrhq5V40ClIXYhb\",\"url\":\"https://www.cde.ca.gov/ci/pl/computerscience.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=c9010dbb-3f7e-428c-b167-7c32b75f6b4e&ssb=64284296266&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fci%2Fpl%2Fcomputerscience.asp&ssi=4d0ece34-ctxv-4157-bb9f-1047e79c5371&ssk=botmanager_support@radware.com&ssm=79368926493709815102775548106959&ssn=c122900babc2b62a6dfe54a9e44f2ee32860cebc2cad-4a53-4192-a36a36&sso=ee18d8d1-fce8acaeb9e7e42f3214b7e37cf3c0baf32c90394d899d8f&ssp=48984289151780325582178032521227809&ssq=73891302574310022381725743756866200704284&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBjZWJjMmNhZC00YTUzLTQxOTItYThkMS1mY2U4YWNhZWI5ZTcxLTE3ODAzMjU3NDM0MjMwLTAwMzdhMWY5ZTU2NzZkZWRkMGQxMCIsInV6bXgiOiI3ZjkwMDA2NjAxMGJjYi04YzkwLTQzYTktYTk0ZS05YzExYWE5Mzg2MmUxLTE3ODAzMjU3NDM0MjMwLTc1YTYwMzA3YjQ3ZGQ3YjAxMCIsInJkIjoiY2EuZ292In0=\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/pl/computerscience.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T14:55:43.828Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ci/pl/computerscience.asp",
-	"url": "https://www.cde.ca.gov/ci/pl/computerscience.asp"
-}

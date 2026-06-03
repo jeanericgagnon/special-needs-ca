@@ -1,9 +1,0 @@
-{
-	"id": "f6nWvfwvEP247nH",
-	"json": "{\"id\":\"f6nWvfwvEP247nH\",\"url\":\"https://pod.ucdavis.edu/upcoming-events\",\"loadedUrl\":\"https://pod.ucdavis.edu/upcoming-events\",\"uniqueKey\":\"https://pod.ucdavis.edu/upcoming-events\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:57.610Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://pod.ucdavis.edu/upcoming-events",
-	"url": "https://pod.ucdavis.edu/upcoming-events"
-}

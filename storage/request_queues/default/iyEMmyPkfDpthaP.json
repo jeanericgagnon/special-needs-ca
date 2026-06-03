@@ -1,9 +1,0 @@
-{
-	"id": "iyEMmyPkfDpthaP",
-	"json": "{\"id\":\"iyEMmyPkfDpthaP\",\"url\":\"https://ombuds.ucdavis.edu/tips-and-tools\",\"loadedUrl\":\"https://ombuds.ucdavis.edu/tips-and-tools\",\"uniqueKey\":\"https://ombuds.ucdavis.edu/tips-and-tools\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:59.914Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ombuds.ucdavis.edu/tips-and-tools",
-	"url": "https://ombuds.ucdavis.edu/tips-and-tools"
-}

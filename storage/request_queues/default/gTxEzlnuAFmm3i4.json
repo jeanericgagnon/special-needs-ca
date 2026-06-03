@@ -1,9 +1,0 @@
-{
-	"id": "gTxEzlnuAFmm3i4",
-	"json": "{\"id\":\"gTxEzlnuAFmm3i4\",\"url\":\"https://www.dds.ca.gov/newsletter/get-ahead-this-spring/\",\"loadedUrl\":\"https://www.dds.ca.gov/newsletter/get-ahead-this-spring/\",\"uniqueKey\":\"https://www.dds.ca.gov/newsletter/get-ahead-this-spring\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:03.373Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/newsletter/get-ahead-this-spring",
-	"url": "https://www.dds.ca.gov/newsletter/get-ahead-this-spring/"
-}

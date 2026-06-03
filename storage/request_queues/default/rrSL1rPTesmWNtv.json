@@ -1,9 +1,0 @@
-{
-	"id": "rrSL1rPTesmWNtv",
-	"json": "{\"id\":\"rrSL1rPTesmWNtv\",\"url\":\"https://health.ucdavis.edu/gift-shop/\",\"loadedUrl\":\"https://health.ucdavis.edu/gift-shop/\",\"uniqueKey\":\"https://health.ucdavis.edu/gift-shop\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:40.937Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/gift-shop",
-	"url": "https://health.ucdavis.edu/gift-shop/"
-}

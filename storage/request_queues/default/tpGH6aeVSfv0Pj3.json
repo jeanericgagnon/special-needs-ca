@@ -1,9 +1,0 @@
-{
-	"id": "tpGH6aeVSfv0Pj3",
-	"json": "{\"id\":\"tpGH6aeVSfv0Pj3\",\"url\":\"https://hcai.ca.gov/loans-scholarships-grants/loan-repayment/\",\"loadedUrl\":\"https://hcai.ca.gov/workforce/financial-assistance/loan-repayment/\",\"uniqueKey\":\"https://hcai.ca.gov/loans-scholarships-grants/loan-repayment\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:39.001Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hcai.ca.gov/loans-scholarships-grants/loan-repayment",
-	"url": "https://hcai.ca.gov/loans-scholarships-grants/loan-repayment/"
-}

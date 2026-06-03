@@ -1,9 +1,0 @@
-{
-	"id": "mG9piEUZKmeI3d6",
-	"json": "{\"id\":\"mG9piEUZKmeI3d6\",\"url\":\"https://www.calcareers.ca.gov/CalHRPublic/Search/JobSearchResults.aspx#depid=200&locid=358\",\"loadedUrl\":\"https://calcareers.ca.gov/CalHRPublic/Search/JobSearchResults.aspx\",\"uniqueKey\":\"https://www.calcareers.ca.gov/CalHRPublic/Search/JobSearchResults.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:01.997Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.calcareers.ca.gov/CalHRPublic/Search/JobSearchResults.aspx",
-	"url": "https://www.calcareers.ca.gov/CalHRPublic/Search/JobSearchResults.aspx#depid=200&locid=358"
-}

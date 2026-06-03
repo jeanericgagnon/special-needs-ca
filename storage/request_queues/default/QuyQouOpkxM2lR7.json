@@ -1,9 +1,0 @@
-{
-	"id": "QuyQouOpkxM2lR7",
-	"json": "{\"id\":\"QuyQouOpkxM2lR7\",\"url\":\"https://edd.ca.gov/en/disability/paid-family-leave/Physicians-and-Practitioners/\",\"loadedUrl\":\"https://edd.ca.gov/en/disability/paid-family-leave/Physicians-and-Practitioners/\",\"uniqueKey\":\"https://edd.ca.gov/en/disability/paid-family-leave/Physicians-and-Practitioners\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:40.540Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://edd.ca.gov/en/disability/paid-family-leave/Physicians-and-Practitioners",
-	"url": "https://edd.ca.gov/en/disability/paid-family-leave/Physicians-and-Practitioners/"
-}

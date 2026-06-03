@@ -1,9 +1,0 @@
-{
-	"id": "Wgy4EcGpvDCSJ0L",
-	"json": "{\"id\":\"Wgy4EcGpvDCSJ0L\",\"url\":\"https://www.calhr.ca.gov/about-calhr/divisions-programs/personnel-management/performance-management/\",\"loadedUrl\":\"https://www.calhr.ca.gov/about-calhr/divisions-programs/personnel-management/performance-management/\",\"uniqueKey\":\"https://www.calhr.ca.gov/about-calhr/divisions-programs/personnel-management/performance-management\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:12.343Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.calhr.ca.gov/about-calhr/divisions-programs/personnel-management/performance-management",
-	"url": "https://www.calhr.ca.gov/about-calhr/divisions-programs/personnel-management/performance-management/"
-}

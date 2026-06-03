@@ -1,9 +1,0 @@
-{
-	"id": "ia12sBnue2LWZ1t",
-	"json": "{\"id\":\"ia12sBnue2LWZ1t\",\"url\":\"https://sitefarm.ucdavis.edu/training/all/blocks/custom-blocks/basic-block\",\"loadedUrl\":\"https://sitefarm.ucdavis.edu/training/all/blocks/custom-blocks/basic-block\",\"uniqueKey\":\"https://sitefarm.ucdavis.edu/training/all/blocks/custom-blocks/basic-block\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:50.424Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://sitefarm.ucdavis.edu/training/all/blocks/custom-blocks/basic-block",
-	"url": "https://sitefarm.ucdavis.edu/training/all/blocks/custom-blocks/basic-block"
-}

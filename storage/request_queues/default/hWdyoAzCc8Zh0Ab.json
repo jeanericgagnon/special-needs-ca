@@ -1,9 +1,0 @@
-{
-	"id": "hWdyoAzCc8Zh0Ab",
-	"json": "{\"id\":\"hWdyoAzCc8Zh0Ab\",\"url\":\"http://www.ucdmc.ucdavis.edu/publish/facultybio/search/faculty/40\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-center/team/39/frederick-meyers---genitourinary--gu--oncology-sacramento/\",\"uniqueKey\":\"http://www.ucdmc.ucdavis.edu/publish/facultybio/search/faculty/40\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:27.788Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.ucdmc.ucdavis.edu/publish/facultybio/search/faculty/40",
-	"url": "http://www.ucdmc.ucdavis.edu/publish/facultybio/search/faculty/40"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "A24ptlGzQLc4mpQ",
-	"json": "{\"id\":\"A24ptlGzQLc4mpQ\",\"url\":\"https://hr.ucdavis.edu/experience/network\",\"loadedUrl\":\"https://hr.ucdavis.edu/experience/network\",\"uniqueKey\":\"https://hr.ucdavis.edu/experience/network\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:53.102Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/experience/network",
-	"url": "https://hr.ucdavis.edu/experience/network"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "mGcVqd5v6ylDanO",
-	"json": "{\"id\":\"mGcVqd5v6ylDanO\",\"url\":\"https://neuroscience.ucdavis.edu/people/anna-la-torre-villa\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/people/anna-la-torre-villa\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/people/anna-la-torre-villa\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:49.332Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/people/anna-la-torre-villa",
-	"url": "https://neuroscience.ucdavis.edu/people/anna-la-torre-villa"
-}

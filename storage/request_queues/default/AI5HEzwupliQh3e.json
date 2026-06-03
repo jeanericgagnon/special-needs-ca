@@ -1,9 +1,0 @@
-{
-	"id": "AI5HEzwupliQh3e",
-	"json": "{\"id\":\"AI5HEzwupliQh3e\",\"url\":\"https://stophazing.ucdavis.edu/\",\"loadedUrl\":\"https://stophazing.ucdavis.edu/\",\"uniqueKey\":\"https://stophazing.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:33.793Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://stophazing.ucdavis.edu",
-	"url": "https://stophazing.ucdavis.edu/"
-}

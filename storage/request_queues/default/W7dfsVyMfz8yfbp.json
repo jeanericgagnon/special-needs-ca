@@ -1,9 +1,0 @@
-{
-	"id": "W7dfsVyMfz8yfbp",
-	"json": "{\"id\":\"W7dfsVyMfz8yfbp\",\"url\":\"https://www.cde.ca.gov/re/pr/aimhigh.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/re/pr/aimhigh.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/re/pr/aimhigh.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:24:08.747Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/re/pr/aimhigh.asp",
-	"url": "https://www.cde.ca.gov/re/pr/aimhigh.asp"
-}

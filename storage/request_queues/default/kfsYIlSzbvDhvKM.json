@@ -1,9 +1,0 @@
-{
-	"id": "kfsYIlSzbvDhvKM",
-	"json": "{\"id\":\"kfsYIlSzbvDhvKM\",\"url\":\"https://plannedgiving.ucdavis.edu/\",\"loadedUrl\":\"https://plannedgiving.ucdavis.edu/\",\"uniqueKey\":\"https://plannedgiving.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:30.703Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://plannedgiving.ucdavis.edu",
-	"url": "https://plannedgiving.ucdavis.edu/"
-}

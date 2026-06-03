@@ -1,9 +1,0 @@
-{
-	"id": "AGh2mn22qwWwvdF",
-	"json": "{\"id\":\"AGh2mn22qwWwvdF\",\"url\":\"https://www.globaldownsyndrome.org/our-story/about-gdsf/?page_id=719\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/our-story/about-gdsf/a-personal-glimpse-into-the-foundations-establishment/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/our-story/about-gdsf?page_id=719\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:49.909Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.globaldownsyndrome.org/our-story/about-gdsf?page_id=719",
-	"url": "https://www.globaldownsyndrome.org/our-story/about-gdsf/?page_id=719"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "zLS78zVSgZXXJZd",
-	"json": "{\"id\":\"zLS78zVSgZXXJZd\",\"url\":\"https://library.ucdavis.edu/location/blaisdell-medical-library/\",\"loadedUrl\":\"https://library.ucdavis.edu/location/blaisdell-medical-library/\",\"uniqueKey\":\"https://library.ucdavis.edu/location/blaisdell-medical-library\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:04.058Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://library.ucdavis.edu/location/blaisdell-medical-library",
-	"url": "https://library.ucdavis.edu/location/blaisdell-medical-library/"
-}

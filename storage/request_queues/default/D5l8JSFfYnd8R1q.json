@@ -1,9 +1,0 @@
-{
-	"id": "D5l8JSFfYnd8R1q",
-	"json": "{\"id\":\"D5l8JSFfYnd8R1q\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/1442/ruben-fragoso-cancer-radiation_oncology-sacramento?FreeText%3aLast+name=Fragoso\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/1442/ruben-fragoso-cancer-radiation_oncology-sacramento?FreeText%3aLast+name=Fragoso\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/1442/ruben-fragoso-cancer-radiation_oncology-sacramento?FreeText%3ALast+name=Fragoso\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:14.454Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/1442/ruben-fragoso-cancer-radiation_oncology-sacramento?FreeText%3ALast+name=Fragoso",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/1442/ruben-fragoso-cancer-radiation_oncology-sacramento?FreeText%3aLast+name=Fragoso"
-}

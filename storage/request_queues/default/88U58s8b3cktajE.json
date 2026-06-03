@@ -1,9 +1,0 @@
-{
-	"id": "88U58s8b3cktajE",
-	"json": "{\"id\":\"88U58s8b3cktajE\",\"url\":\"http://www.healthcareoptions.dhcs.ca.gov/HCOCSP/Enrollment/default.aspx\",\"loadedUrl\":\"https://www.healthcareoptions.dhcs.ca.gov/HCOCSP/Enrollment/default.aspx\",\"uniqueKey\":\"http://www.healthcareoptions.dhcs.ca.gov/HCOCSP/Enrollment/default.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:19.224Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.healthcareoptions.dhcs.ca.gov/HCOCSP/Enrollment/default.aspx",
-	"url": "http://www.healthcareoptions.dhcs.ca.gov/HCOCSP/Enrollment/default.aspx"
-}

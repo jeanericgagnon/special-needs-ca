@@ -1,9 +1,0 @@
-{
-	"id": "8PBBwMZBd6WRGg8",
-	"json": "{\"id\":\"8PBBwMZBd6WRGg8\",\"url\":\"https://health.ucdavis.edu/heart/cardiac-services/heart-valve-repair-replacement.html\",\"loadedUrl\":\"https://health.ucdavis.edu/health-topics/heart-vascular\",\"uniqueKey\":\"https://health.ucdavis.edu/heart/cardiac-services/heart-valve-repair-replacement.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:42.066Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/heart/cardiac-services/heart-valve-repair-replacement.html",
-	"url": "https://health.ucdavis.edu/heart/cardiac-services/heart-valve-repair-replacement.html"
-}

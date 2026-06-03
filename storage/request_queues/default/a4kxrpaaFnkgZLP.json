@@ -1,9 +1,0 @@
-{
-	"id": "a4kxrpaaFnkgZLP",
-	"json": "{\"id\":\"a4kxrpaaFnkgZLP\",\"url\":\"https://engineering.ucdavis.edu/next-level-research-awards\",\"loadedUrl\":\"https://engineering.ucdavis.edu/next-level-research-awards\",\"uniqueKey\":\"https://engineering.ucdavis.edu/next-level-research-awards\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:31.301Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://engineering.ucdavis.edu/next-level-research-awards",
-	"url": "https://engineering.ucdavis.edu/next-level-research-awards"
-}

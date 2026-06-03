@@ -1,9 +1,0 @@
-{
-	"id": "259qQx2T6ST7xeZ",
-	"json": "{\"id\":\"259qQx2T6ST7xeZ\",\"url\":\"https://www.cde.ca.gov/re/pr/fsp.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/re/pr/fsp.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/re/pr/fsp.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:24:10.668Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/re/pr/fsp.asp",
-	"url": "https://www.cde.ca.gov/re/pr/fsp.asp"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "cpSaEWLXJsJ9IOu",
-	"json": "{\"id\":\"cpSaEWLXJsJ9IOu\",\"url\":\"https://giving.ucdavis.edu/ways-to-give/family-fellows\",\"loadedUrl\":\"https://giving.ucdavis.edu/ways-to-give/family-fellows\",\"uniqueKey\":\"https://giving.ucdavis.edu/ways-to-give/family-fellows\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:30.683Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://giving.ucdavis.edu/ways-to-give/family-fellows",
-	"url": "https://giving.ucdavis.edu/ways-to-give/family-fellows"
-}

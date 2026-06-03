@@ -1,9 +1,0 @@
-{
-	"id": "fdTRdJgMl2XFf5z",
-	"json": "{\"id\":\"fdTRdJgMl2XFf5z\",\"url\":\"https://www.ssa.gov/ssi/text-resources-ussi.htm\",\"loadedUrl\":\"https://www.ssa.gov/ssi/text-resources-ussi.htm\",\"uniqueKey\":\"https://www.ssa.gov/ssi/text-resources-ussi.htm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:55.252Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ssa.gov/ssi/text-resources-ussi.htm",
-	"url": "https://www.ssa.gov/ssi/text-resources-ussi.htm"
-}

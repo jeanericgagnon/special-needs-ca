@@ -1,9 +1,0 @@
-{
-	"id": "8ABhszw1DcbpLcb",
-	"json": "{\"id\":\"8ABhszw1DcbpLcb\",\"url\":\"https://health.ucdavis.edu/team/search/21/timothy-albertson---pulmonary-and-critical-care---pharmacology-and-toxicology---internal-medicine-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-center/team/21/timothy-albertson---pulmonary-and-critical-care---pharmacology-and-toxicology---internal-medicine-sacramento/\",\"uniqueKey\":\"https://health.ucdavis.edu/team/search/21/timothy-albertson---pulmonary-and-critical-care---pharmacology-and-toxicology---internal-medicine-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:29.169Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/team/search/21/timothy-albertson---pulmonary-and-critical-care---pharmacology-and-toxicology---internal-medicine-sacramento",
-	"url": "https://health.ucdavis.edu/team/search/21/timothy-albertson---pulmonary-and-critical-care---pharmacology-and-toxicology---internal-medicine-sacramento"
-}

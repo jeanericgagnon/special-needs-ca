@@ -1,9 +1,0 @@
-{
-	"id": "CZfoTX2qSMFxlFp",
-	"json": "{\"id\":\"CZfoTX2qSMFxlFp\",\"url\":\"https://www.chp.ca.gov/link/1a3bf6026d0749e7a5f8235154e66caa.aspx\",\"loadedUrl\":\"https://www.chp.ca.gov/about-us/accessibility/\",\"uniqueKey\":\"https://www.chp.ca.gov/link/1a3bf6026d0749e7a5f8235154e66caa.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:12.581Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chp.ca.gov/link/1a3bf6026d0749e7a5f8235154e66caa.aspx",
-	"url": "https://www.chp.ca.gov/link/1a3bf6026d0749e7a5f8235154e66caa.aspx"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "aaLNlVsfbaBk9gM",
-	"json": "{\"id\":\"aaLNlVsfbaBk9gM\",\"url\":\"https://calable.ca.gov/calable-ambassadors\",\"loadedUrl\":\"https://calable.ca.gov/calable-ambassadors\",\"uniqueKey\":\"https://calable.ca.gov/calable-ambassadors\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:15.221Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://calable.ca.gov/calable-ambassadors",
-	"url": "https://calable.ca.gov/calable-ambassadors"
-}

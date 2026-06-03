@@ -1,9 +1,0 @@
-{
-	"id": "ALhCLUiCNs2Cq6R",
-	"json": "{\"id\":\"ALhCLUiCNs2Cq6R\",\"url\":\"https://neuroscience.ucdavis.edu/people/margarita-anisimova\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/people/margarita-anisimova\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/people/margarita-anisimova\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:52.804Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/people/margarita-anisimova",
-	"url": "https://neuroscience.ucdavis.edu/people/margarita-anisimova"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "4MBxFz8T8f90Js7",
-	"json": "{\"id\":\"4MBxFz8T8f90Js7\",\"url\":\"https://www.dds.ca.gov/services/state-facilities/regional-resource-development-projects/\",\"loadedUrl\":\"https://www.dds.ca.gov/services/state-facilities/regional-resource-development-projects/\",\"uniqueKey\":\"https://www.dds.ca.gov/services/state-facilities/regional-resource-development-projects\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:59.350Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/services/state-facilities/regional-resource-development-projects",
-	"url": "https://www.dds.ca.gov/services/state-facilities/regional-resource-development-projects/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "4pnMfg2mL13KAzA",
-	"json": "{\"id\":\"4pnMfg2mL13KAzA\",\"url\":\"https://myedd.edd.ca.gov/s/\",\"loadedUrl\":\"https://myedd.edd.ca.gov/s/\",\"uniqueKey\":\"https://myedd.edd.ca.gov/s\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:39.664Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://myedd.edd.ca.gov/s",
-	"url": "https://myedd.edd.ca.gov/s/"
-}

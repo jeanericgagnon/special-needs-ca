@@ -1,9 +1,0 @@
-{
-	"id": "GZ6X1uWFa5m4628",
-	"json": "{\"id\":\"GZ6X1uWFa5m4628\",\"url\":\"https://www.ccld.dss.ca.gov/carefacilitysearch/?rewrite=downloaddata\",\"loadedUrl\":\"https://www.ccld.dss.ca.gov/carefacilitysearch/?rewrite=downloaddata\",\"uniqueKey\":\"https://www.ccld.dss.ca.gov/carefacilitysearch?rewrite=downloaddata\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:35.243Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ccld.dss.ca.gov/carefacilitysearch?rewrite=downloaddata",
-	"url": "https://www.ccld.dss.ca.gov/carefacilitysearch/?rewrite=downloaddata"
-}

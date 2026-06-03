@@ -1,9 +1,0 @@
-{
-	"id": "wP4lnHPxMYw2LtZ",
-	"json": "{\"id\":\"wP4lnHPxMYw2LtZ\",\"url\":\"https://oag.ca.gov/consumers\",\"loadedUrl\":\"https://oag.ca.gov/consumers\",\"uniqueKey\":\"https://oag.ca.gov/consumers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:47.480Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://oag.ca.gov/consumers",
-	"url": "https://oag.ca.gov/consumers"
-}

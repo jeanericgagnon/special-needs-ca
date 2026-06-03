@@ -1,9 +1,0 @@
-{
-	"id": "mXLx5qUBsCUzP78",
-	"json": "{\"id\":\"mXLx5qUBsCUzP78\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/474/suzanne-teuber-internal_medicine-rheumatology_allergy_and_clinical_immunology-davis-sacramento?FreeText%3aLast+name=Teuber\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/474/suzanne-teuber-internal_medicine-rheumatology_allergy_and_clinical_immunology-davis-sacramento?FreeText%3aLast+name=Teuber\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/474/suzanne-teuber-internal_medicine-rheumatology_allergy_and_clinical_immunology-davis-sacramento?FreeText%3ALast+name=Teuber\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:07.422Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/474/suzanne-teuber-internal_medicine-rheumatology_allergy_and_clinical_immunology-davis-sacramento?FreeText%3ALast+name=Teuber",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/474/suzanne-teuber-internal_medicine-rheumatology_allergy_and_clinical_immunology-davis-sacramento?FreeText%3aLast+name=Teuber"
-}

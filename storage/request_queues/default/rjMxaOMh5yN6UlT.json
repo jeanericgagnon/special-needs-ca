@@ -1,9 +1,0 @@
-{
-	"id": "rjMxaOMh5yN6UlT",
-	"json": "{\"id\":\"rjMxaOMh5yN6UlT\",\"url\":\"https://health.ucdavis.edu/blog/kids-considered/category/teens\",\"loadedUrl\":\"https://health.ucdavis.edu/blog/kids-considered/category/teens\",\"uniqueKey\":\"https://health.ucdavis.edu/blog/kids-considered/category/teens\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:01.893Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/blog/kids-considered/category/teens",
-	"url": "https://health.ucdavis.edu/blog/kids-considered/category/teens"
-}

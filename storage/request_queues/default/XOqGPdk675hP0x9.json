@@ -1,9 +1,0 @@
-{
-	"id": "XOqGPdk675hP0x9",
-	"json": "{\"id\":\"XOqGPdk675hP0x9\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/22079/victoria-dimitriades-internal_medicine-pediatric_allergy_immunology_and_rheumatology-sacramento?FreeText%3aLast+name=Dimitriades\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/22079/victoria-dimitriades-internal_medicine-pediatric_allergy_immunology_and_rheumatology-sacramento?FreeText%3aLast+name=Dimitriades\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/22079/victoria-dimitriades-internal_medicine-pediatric_allergy_immunology_and_rheumatology-sacramento?FreeText%3ALast+name=Dimitriades\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:07.335Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/22079/victoria-dimitriades-internal_medicine-pediatric_allergy_immunology_and_rheumatology-sacramento?FreeText%3ALast+name=Dimitriades",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/22079/victoria-dimitriades-internal_medicine-pediatric_allergy_immunology_and_rheumatology-sacramento?FreeText%3aLast+name=Dimitriades"
-}

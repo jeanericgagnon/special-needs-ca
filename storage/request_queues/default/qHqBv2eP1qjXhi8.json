@@ -1,9 +1,0 @@
-{
-	"id": "qHqBv2eP1qjXhi8",
-	"json": "{\"id\":\"qHqBv2eP1qjXhi8\",\"url\":\"https://www.cde.ca.gov/ci/sc/im/sciadoptiontimeline.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/sc/im/sciadoptiontimeline.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/sc/im/sciadoptiontimeline.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:10.182Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ci/sc/im/sciadoptiontimeline.asp",
-	"url": "https://www.cde.ca.gov/ci/sc/im/sciadoptiontimeline.asp"
-}

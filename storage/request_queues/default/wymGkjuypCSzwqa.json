@@ -1,9 +1,0 @@
-{
-	"id": "wymGkjuypCSzwqa",
-	"json": "{\"id\":\"wymGkjuypCSzwqa\",\"url\":\"https://cnprc.ucdavis.edu/educators\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/educators\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/educators\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:16.359Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cnprc.ucdavis.edu/educators",
-	"url": "https://cnprc.ucdavis.edu/educators"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "Lq27bSGNJTFQEjD",
-	"json": "{\"id\":\"Lq27bSGNJTFQEjD\",\"url\":\"https://health.ucdavis.edu/children/team/43319/jennifer-naidu-pediatrics-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/children/team/43319/jennifer-naidu-pediatrics-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/children/team/43319/jennifer-naidu-pediatrics-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:10.811Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/children/team/43319/jennifer-naidu-pediatrics-sacramento",
-	"url": "https://health.ucdavis.edu/children/team/43319/jennifer-naidu-pediatrics-sacramento"
-}

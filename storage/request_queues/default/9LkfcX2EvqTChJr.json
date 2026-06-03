@@ -1,9 +1,0 @@
-{
-	"id": "9LkfcX2EvqTChJr",
-	"json": "{\"id\":\"9LkfcX2EvqTChJr\",\"url\":\"https://neuroscience.ucdavis.edu/tags/martine-therrien\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/tags/martine-therrien\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/tags/martine-therrien\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:59.298Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/tags/martine-therrien",
-	"url": "https://neuroscience.ucdavis.edu/tags/martine-therrien"
-}

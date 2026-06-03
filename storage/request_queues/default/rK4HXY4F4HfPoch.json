@@ -1,9 +1,0 @@
-{
-	"id": "rK4HXY4F4HfPoch",
-	"json": "{\"id\":\"rK4HXY4F4HfPoch\",\"url\":\"http://cdss.ca.gov/inforesources/fdu\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/fdu\",\"uniqueKey\":\"http://cdss.ca.gov/inforesources/fdu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:58:59.102Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://cdss.ca.gov/inforesources/fdu",
-	"url": "http://cdss.ca.gov/inforesources/fdu"
-}

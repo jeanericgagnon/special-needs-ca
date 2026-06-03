@@ -1,9 +1,0 @@
-{
-	"id": "OKy5UhVaReFzvBw",
-	"json": "{\"id\":\"OKy5UhVaReFzvBw\",\"url\":\"https://www.dhcs.ca.gov/services/chdp/Documents/2023-Blood-Lead-Testing-and-Anticipatory-Guidance.pdf\",\"loadedUrl\":\"https://www.dhcs.ca.gov/file/2023-blood-lead-testing-and-anticipatory-guidance/\",\"uniqueKey\":\"https://www.dhcs.ca.gov/services/chdp/Documents/2023-Blood-Lead-Testing-and-Anticipatory-Guidance.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:17:14.231Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dhcs.ca.gov/services/chdp/Documents/2023-Blood-Lead-Testing-and-Anticipatory-Guidance.pdf",
-	"url": "https://www.dhcs.ca.gov/services/chdp/Documents/2023-Blood-Lead-Testing-and-Anticipatory-Guidance.pdf"
-}

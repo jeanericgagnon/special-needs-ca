@@ -1,9 +1,0 @@
-{
-	"id": "ObJEQ2HjlNKknlu",
-	"json": "{\"id\":\"ObJEQ2HjlNKknlu\",\"url\":\"https://cdss.ca.gov/inforesources/OCAP/Safely-Surrendered-Baby/SSB-Publications\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/ocap/safely-surrendered-baby/ssb-publications\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/OCAP/Safely-Surrendered-Baby/SSB-Publications\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:29.092Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/OCAP/Safely-Surrendered-Baby/SSB-Publications",
-	"url": "https://cdss.ca.gov/inforesources/OCAP/Safely-Surrendered-Baby/SSB-Publications"
-}

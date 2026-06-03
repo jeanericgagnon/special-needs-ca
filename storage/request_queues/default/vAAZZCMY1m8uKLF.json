@@ -1,9 +1,0 @@
-{
-	"id": "vAAZZCMY1m8uKLF",
-	"json": "{\"id\":\"vAAZZCMY1m8uKLF\",\"url\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/mpox.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/mpox.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/mpox.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:40.946Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/mpox.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/mpox.aspx"
-}

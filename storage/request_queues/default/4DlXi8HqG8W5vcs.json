@@ -1,9 +1,0 @@
-{
-	"id": "4DlXi8HqG8W5vcs",
-	"json": "{\"id\":\"4DlXi8HqG8W5vcs\",\"url\":\"https://cdss.ca.gov/inforesources/Fiscal-Financial/Grants-and-Opportunities\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/fiscal-financial/grants-and-opportunities\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Fiscal-Financial/Grants-and-Opportunities\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:58:05.377Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/Fiscal-Financial/Grants-and-Opportunities",
-	"url": "https://cdss.ca.gov/inforesources/Fiscal-Financial/Grants-and-Opportunities"
-}

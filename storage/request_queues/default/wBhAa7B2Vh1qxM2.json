@@ -1,9 +1,0 @@
-{
-	"id": "wBhAa7B2Vh1qxM2",
-	"json": "{\"id\":\"wBhAa7B2Vh1qxM2\",\"url\":\"https://www.gov.ca.gov/2026/05/15/governor-newsom-celebrates-more-than-380-new-affordable-homes-coming-to-the-bay-area-and-coachella-valley/\",\"loadedUrl\":\"https://www.gov.ca.gov/2026/05/15/governor-newsom-celebrates-more-than-380-new-affordable-homes-coming-to-the-bay-area-and-coachella-valley/\",\"uniqueKey\":\"https://www.gov.ca.gov/2026/05/15/governor-newsom-celebrates-more-than-380-new-affordable-homes-coming-to-the-bay-area-and-coachella-valley\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:47.999Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.gov.ca.gov/2026/05/15/governor-newsom-celebrates-more-than-380-new-affordable-homes-coming-to-the-bay-area-and-coachella-valley",
-	"url": "https://www.gov.ca.gov/2026/05/15/governor-newsom-celebrates-more-than-380-new-affordable-homes-coming-to-the-bay-area-and-coachella-valley/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "kSawO7PwhtSXZQq",
-	"json": "{\"id\":\"kSawO7PwhtSXZQq\",\"url\":\"https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=EDC&tocTitle=+Education+Code+-+EDC\",\"loadedUrl\":\"https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=EDC&tocTitle=+Education+Code+-+EDC\",\"uniqueKey\":\"https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=EDC&tocTitle=+Education+Code+-+EDC\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:20.048Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=EDC&tocTitle=+Education+Code+-+EDC",
-	"url": "https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=EDC&tocTitle=+Education+Code+-+EDC"
-}

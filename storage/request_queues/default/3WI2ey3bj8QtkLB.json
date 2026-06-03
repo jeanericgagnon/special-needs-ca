@@ -1,9 +1,0 @@
-{
-	"id": "3WI2ey3bj8QtkLB",
-	"json": "{\"id\":\"3WI2ey3bj8QtkLB\",\"url\":\"https://ucdnc.ucdavis.edu/contact\",\"loadedUrl\":\"https://ucdnc.ucdavis.edu/contact\",\"uniqueKey\":\"https://ucdnc.ucdavis.edu/contact\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:21.377Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ucdnc.ucdavis.edu/contact",
-	"url": "https://ucdnc.ucdavis.edu/contact"
-}

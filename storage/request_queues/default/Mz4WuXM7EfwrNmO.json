@@ -1,9 +1,0 @@
-{
-	"id": "Mz4WuXM7EfwrNmO",
-	"json": "{\"id\":\"Mz4WuXM7EfwrNmO\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/1137/norika-malhado-chang-neurology-sacramento?FreeText%3aLast+name=Malhado-Chang\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/1137/norika-malhado-chang-neurology-sacramento?FreeText%3aLast+name=Malhado-Chang\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/1137/norika-malhado-chang-neurology-sacramento?FreeText%3ALast+name=Malhado-Chang\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:12.139Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/1137/norika-malhado-chang-neurology-sacramento?FreeText%3ALast+name=Malhado-Chang",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/1137/norika-malhado-chang-neurology-sacramento?FreeText%3aLast+name=Malhado-Chang"
-}

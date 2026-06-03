@@ -1,9 +1,0 @@
-{
-	"id": "ftEL62v0yGGBH1H",
-	"json": "{\"id\":\"ftEL62v0yGGBH1H\",\"url\":\"https://ucp.org/affiliate-network/\",\"loadedUrl\":\"https://ucp.org/affiliate-network/\",\"uniqueKey\":\"https://ucp.org/affiliate-network\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:32.073Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ucp.org/affiliate-network",
-	"url": "https://ucp.org/affiliate-network/"
-}

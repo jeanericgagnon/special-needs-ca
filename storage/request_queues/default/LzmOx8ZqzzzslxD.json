@@ -1,9 +1,0 @@
-{
-	"id": "LzmOx8ZqzzzslxD",
-	"json": "{\"id\":\"LzmOx8ZqzzzslxD\",\"url\":\"https://www.ucdavis.edu/graduate-programs/human-development\",\"loadedUrl\":\"https://www.ucdavis.edu/graduate-programs/human-development\",\"uniqueKey\":\"https://www.ucdavis.edu/graduate-programs/human-development\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:57.026Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ucdavis.edu/graduate-programs/human-development",
-	"url": "https://www.ucdavis.edu/graduate-programs/human-development"
-}

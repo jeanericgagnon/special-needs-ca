@@ -1,9 +1,0 @@
-{
-	"id": "jIZX6uHxs4xbzfX",
-	"json": "{\"id\":\"jIZX6uHxs4xbzfX\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/CHVP/Pages/Funding-Alert-CHVP-CHVP-State-General-Fund-Innovation-2023-2028_10-11-2023.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/CHVP/Pages/Funding-Alert-CHVP-CHVP-State-General-Fund-Innovation-2023-2028_10-11-2023.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/CHVP/Pages/Funding-Alert-CHVP-CHVP-State-General-Fund-Innovation-2023-2028_10-11-2023.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:01:07.156Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/CHVP/Pages/Funding-Alert-CHVP-CHVP-State-General-Fund-Innovation-2023-2028_10-11-2023.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/CHVP/Pages/Funding-Alert-CHVP-CHVP-State-General-Fund-Innovation-2023-2028_10-11-2023.aspx"
-}

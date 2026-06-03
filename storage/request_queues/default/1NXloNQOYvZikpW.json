@@ -1,9 +1,0 @@
-{
-	"id": "1NXloNQOYvZikpW",
-	"json": "{\"id\":\"1NXloNQOYvZikpW\",\"url\":\"https://www.ccld.dss.ca.gov/hcsregistry/Guardian@dss.ca.gov\",\"loadedUrl\":\"https://www.ccld.dss.ca.gov/hcsregistry/Guardian@dss.ca.gov\",\"uniqueKey\":\"https://www.ccld.dss.ca.gov/hcsregistry/Guardian@dss.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:00.367Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ccld.dss.ca.gov/hcsregistry/Guardian@dss.ca.gov",
-	"url": "https://www.ccld.dss.ca.gov/hcsregistry/Guardian@dss.ca.gov"
-}

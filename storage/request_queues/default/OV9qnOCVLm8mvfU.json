@@ -1,9 +1,0 @@
-{
-	"id": "OV9qnOCVLm8mvfU",
-	"json": "{\"id\":\"OV9qnOCVLm8mvfU\",\"url\":\"https://caweb.cdt.ca.gov/\",\"loadedUrl\":\"https://caweb.cdt.ca.gov/\",\"uniqueKey\":\"https://caweb.cdt.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:09:03.458Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://caweb.cdt.ca.gov",
-	"url": "https://caweb.cdt.ca.gov/"
-}

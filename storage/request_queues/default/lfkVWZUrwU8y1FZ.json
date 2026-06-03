@@ -1,9 +1,0 @@
-{
-	"id": "lfkVWZUrwU8y1FZ",
-	"json": "{\"id\":\"lfkVWZUrwU8y1FZ\",\"url\":\"https://www.ctc.ca.gov/docs/default-source/educator-prep/standards/2024-cstp.pdf?sfvrsn=62eb3cb1_12\",\"loadedUrl\":\"https://www.ctc.ca.gov/docs/default-source/educator-prep/standards/2024-cstp.pdf?sfvrsn=62eb3cb1_12\",\"uniqueKey\":\"https://www.ctc.ca.gov/docs/default-source/educator-prep/standards/2024-cstp.pdf?sfvrsn=62eb3cb1_12\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:58.563Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ctc.ca.gov/docs/default-source/educator-prep/standards/2024-cstp.pdf?sfvrsn=62eb3cb1_12",
-	"url": "https://www.ctc.ca.gov/docs/default-source/educator-prep/standards/2024-cstp.pdf?sfvrsn=62eb3cb1_12"
-}

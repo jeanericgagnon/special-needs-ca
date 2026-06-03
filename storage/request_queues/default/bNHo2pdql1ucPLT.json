@@ -1,9 +1,0 @@
-{
-	"id": "bNHo2pdql1ucPLT",
-	"json": "{\"id\":\"bNHo2pdql1ucPLT\",\"url\":\"https://physicians.ucdavis.edu/?Cities=Sacramento\",\"loadedUrl\":\"https://physicians.ucdavis.edu/?Cities=Sacramento\",\"uniqueKey\":\"https://physicians.ucdavis.edu?Cities=Sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:11.551Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://physicians.ucdavis.edu?Cities=Sacramento",
-	"url": "https://physicians.ucdavis.edu/?Cities=Sacramento"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "Lj5ZSPBqKvEzlOZ",
-	"json": "{\"id\":\"Lj5ZSPBqKvEzlOZ\",\"url\":\"https://www.cde.ca.gov/re/ca//re/pn/fb/cdecalendar.asp/\",\"loadedUrl\":\"https://www.cde.ca.gov/re/ca//re/pn/fb/cdecalendar.asp/\",\"uniqueKey\":\"https://www.cde.ca.gov/re/ca//re/pn/fb/cdecalendar.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:02.202Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/re/ca//re/pn/fb/cdecalendar.asp",
-	"url": "https://www.cde.ca.gov/re/ca//re/pn/fb/cdecalendar.asp/"
-}

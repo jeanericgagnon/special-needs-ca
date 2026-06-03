@@ -1,9 +1,0 @@
-{
-	"id": "vGxJ63nKK6LTHJp",
-	"json": "{\"id\":\"vGxJ63nKK6LTHJp\",\"url\":\"http://www.sdcounty.ca.gov/hhsa/programs/phs/tuberculosis_control_program/refugee_health_programs.html\",\"loadedUrl\":\"https://www.sandiegocounty.gov/hhsa/programs/phs/tuberculosis_control_program/refugee_health_programs.html\",\"uniqueKey\":\"http://www.sdcounty.ca.gov/hhsa/programs/phs/tuberculosis_control_program/refugee_health_programs.html\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T21:46:16.771Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.sdcounty.ca.gov/hhsa/programs/phs/tuberculosis_control_program/refugee_health_programs.html",
-	"url": "http://www.sdcounty.ca.gov/hhsa/programs/phs/tuberculosis_control_program/refugee_health_programs.html"
-}

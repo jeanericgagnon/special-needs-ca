@@ -1,9 +1,0 @@
-{
-	"id": "v1I5PKQxbRAnP98",
-	"json": "{\"id\":\"v1I5PKQxbRAnP98\",\"url\":\"https://health.ucdavis.edu/him/my-medical-records-simplified.html\",\"loadedUrl\":\"https://health.ucdavis.edu/him/my-medical-records-simplified.html\",\"uniqueKey\":\"https://health.ucdavis.edu/him/my-medical-records-simplified.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:55.782Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/him/my-medical-records-simplified.html",
-	"url": "https://health.ucdavis.edu/him/my-medical-records-simplified.html"
-}

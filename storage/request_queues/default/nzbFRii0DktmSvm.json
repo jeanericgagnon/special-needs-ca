@@ -1,9 +1,0 @@
-{
-	"id": "nzbFRii0DktmSvm",
-	"json": "{\"id\":\"nzbFRii0DktmSvm\",\"url\":\"https://www.dds.ca.gov/consumers/new-information-packet/\",\"loadedUrl\":\"https://www.dds.ca.gov/individuals-and-families/new-information-packet/\",\"uniqueKey\":\"https://www.dds.ca.gov/consumers/new-information-packet\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:50.375Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/consumers/new-information-packet",
-	"url": "https://www.dds.ca.gov/consumers/new-information-packet/"
-}

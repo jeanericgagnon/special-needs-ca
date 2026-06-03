@@ -1,9 +1,0 @@
-{
-	"id": "FnwtVRPy7c1J12X",
-	"json": "{\"id\":\"FnwtVRPy7c1J12X\",\"url\":\"https://scdd.ca.gov/event/mental-health-awareness-month/2026-05-07/\",\"loadedUrl\":\"https://scdd.ca.gov/event/mental-health-awareness-month/2026-05-07/\",\"uniqueKey\":\"https://scdd.ca.gov/event/mental-health-awareness-month/2026-05-07\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:34.171Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/event/mental-health-awareness-month/2026-05-07",
-	"url": "https://scdd.ca.gov/event/mental-health-awareness-month/2026-05-07/"
-}

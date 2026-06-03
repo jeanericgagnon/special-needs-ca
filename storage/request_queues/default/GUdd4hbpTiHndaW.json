@@ -1,9 +1,0 @@
-{
-	"id": "GUdd4hbpTiHndaW",
-	"json": "{\"id\":\"GUdd4hbpTiHndaW\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/RPPC/Pages/Sites.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/RPPC/Pages/Sites.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/RPPC/Pages/Sites.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:01:32.437Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/RPPC/Pages/Sites.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/RPPC/Pages/Sites.aspx"
-}

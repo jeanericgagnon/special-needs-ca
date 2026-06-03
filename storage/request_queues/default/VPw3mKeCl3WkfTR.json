@@ -1,9 +1,0 @@
-{
-	"id": "VPw3mKeCl3WkfTR",
-	"json": "{\"id\":\"VPw3mKeCl3WkfTR\",\"url\":\"http://cdss.ca.gov/Home\",\"loadedUrl\":\"https://cdss.ca.gov/\",\"uniqueKey\":\"http://cdss.ca.gov/Home\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:34.117Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://cdss.ca.gov/Home",
-	"url": "http://cdss.ca.gov/Home"
-}

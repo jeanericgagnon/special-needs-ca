@@ -1,9 +1,0 @@
-{
-	"id": "5uTL5t1XNppp47K",
-	"json": "{\"id\":\"5uTL5t1XNppp47K\",\"url\":\"https://cnprc.ucdavis.edu/neuroscience-and-behavior-scientists\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/neuroscience-and-behavior-scientists\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/neuroscience-and-behavior-scientists\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:12.929Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cnprc.ucdavis.edu/neuroscience-and-behavior-scientists",
-	"url": "https://cnprc.ucdavis.edu/neuroscience-and-behavior-scientists"
-}

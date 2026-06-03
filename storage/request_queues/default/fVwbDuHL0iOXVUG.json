@@ -1,9 +1,0 @@
-{
-	"id": "fVwbDuHL0iOXVUG",
-	"json": "{\"id\":\"fVwbDuHL0iOXVUG\",\"url\":\"https://beincharge.ucdavis.edu/outreach.php\",\"loadedUrl\":\"https://beincharge.ucdavis.edu/outreach.php\",\"uniqueKey\":\"https://beincharge.ucdavis.edu/outreach.php\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:21.136Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://beincharge.ucdavis.edu/outreach.php",
-	"url": "https://beincharge.ucdavis.edu/outreach.php"
-}

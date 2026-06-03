@@ -1,9 +1,0 @@
-{
-	"id": "hHw3XP1TdUglPFR",
-	"json": "{\"id\":\"hHw3XP1TdUglPFR\",\"url\":\"https://www.cdph.ca.gov/Programs/CEH/DRSEM/Pages/RadiationEmergency.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CEH/DRSEM/Pages/RadiationEmergency.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CEH/DRSEM/Pages/RadiationEmergency.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:28.365Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CEH/DRSEM/Pages/RadiationEmergency.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CEH/DRSEM/Pages/RadiationEmergency.aspx"
-}

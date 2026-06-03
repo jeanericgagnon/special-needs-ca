@@ -1,9 +1,0 @@
-{
-	"id": "tfQSnRDfTwjY6UQ",
-	"json": "{\"id\":\"tfQSnRDfTwjY6UQ\",\"url\":\"https://give.ucdavis.edu/Search/Tags/excellence\",\"loadedUrl\":\"https://give.ucdavis.edu/Search/Tags/excellence\",\"uniqueKey\":\"https://give.ucdavis.edu/Search/Tags/excellence\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:54.043Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/Search/Tags/excellence",
-	"url": "https://give.ucdavis.edu/Search/Tags/excellence"
-}

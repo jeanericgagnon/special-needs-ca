@@ -1,9 +1,0 @@
-{
-	"id": "C6xlm8YgCDFjwGX",
-	"json": "{\"id\":\"C6xlm8YgCDFjwGX\",\"url\":\"https://engineering.ucdavis.edu/alumni\",\"loadedUrl\":\"https://engineering.ucdavis.edu/alumni\",\"uniqueKey\":\"https://engineering.ucdavis.edu/alumni\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:30.415Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://engineering.ucdavis.edu/alumni",
-	"url": "https://engineering.ucdavis.edu/alumni"
-}

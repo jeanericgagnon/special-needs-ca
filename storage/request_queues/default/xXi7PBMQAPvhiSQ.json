@@ -1,9 +1,0 @@
-{
-	"id": "xXi7PBMQAPvhiSQ",
-	"json": "{\"id\":\"xXi7PBMQAPvhiSQ\",\"url\":\"https://hr.ucdavis.edu/departments/worklife-wellness/workplace-flex/telework/workplace-disruption/supervisor-guide/implementation\",\"loadedUrl\":\"https://hr.ucdavis.edu/departments/worklife-wellness/flexiblework/supervisor-guide\",\"uniqueKey\":\"https://hr.ucdavis.edu/departments/worklife-wellness/workplace-flex/telework/workplace-disruption/supervisor-guide/implementation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:08.925Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/departments/worklife-wellness/workplace-flex/telework/workplace-disruption/supervisor-guide/implementation",
-	"url": "https://hr.ucdavis.edu/departments/worklife-wellness/workplace-flex/telework/workplace-disruption/supervisor-guide/implementation"
-}

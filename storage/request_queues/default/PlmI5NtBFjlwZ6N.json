@@ -1,9 +1,0 @@
-{
-	"id": "PlmI5NtBFjlwZ6N",
-	"json": "{\"id\":\"PlmI5NtBFjlwZ6N\",\"url\":\"https://cdss.ca.gov/inforesources/Community-Care/Home-Care-Services/Home-Care-Aide-Application-Process\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/community-care/home-care-services/home-care-aide-application-process\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Community-Care/Home-Care-Services/Home-Care-Aide-Application-Process\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:49.756Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/Community-Care/Home-Care-Services/Home-Care-Aide-Application-Process",
-	"url": "https://cdss.ca.gov/inforesources/Community-Care/Home-Care-Services/Home-Care-Aide-Application-Process"
-}

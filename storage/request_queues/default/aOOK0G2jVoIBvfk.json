@@ -1,9 +1,0 @@
-{
-	"id": "aOOK0G2jVoIBvfk",
-	"json": "{\"id\":\"aOOK0G2jVoIBvfk\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/534/john-macmillan_jr-hospice_and_palliative_medicine-internal_medicine-sacramento?FreeText%3aLast+name=MacMillan\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/534/john-macmillan_jr-hospice_and_palliative_medicine-internal_medicine-sacramento?FreeText%3aLast+name=MacMillan\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/534/john-macmillan_jr-hospice_and_palliative_medicine-internal_medicine-sacramento?FreeText%3ALast+name=MacMillan\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:10.927Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/534/john-macmillan_jr-hospice_and_palliative_medicine-internal_medicine-sacramento?FreeText%3ALast+name=MacMillan",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/534/john-macmillan_jr-hospice_and_palliative_medicine-internal_medicine-sacramento?FreeText%3aLast+name=MacMillan"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "KXOb7sYZnaKtSj5",
-	"json": "{\"id\":\"KXOb7sYZnaKtSj5\",\"url\":\"http://bme.ucdavis.edu/benham/\",\"loadedUrl\":\"https://benham.bme.ucdavis.edu/\",\"uniqueKey\":\"http://bme.ucdavis.edu/benham\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:43.511Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://bme.ucdavis.edu/benham",
-	"url": "http://bme.ucdavis.edu/benham/"
-}

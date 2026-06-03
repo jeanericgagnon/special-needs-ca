@@ -1,9 +1,0 @@
-{
-	"id": "5p1Uk5tOCkAKAC2",
-	"json": "{\"id\":\"5p1Uk5tOCkAKAC2\",\"url\":\"https://www.cde.ca.gov/ci/be/financial-support.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/be/financial-support.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/be/financial-support.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:06.207Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ci/be/financial-support.asp",
-	"url": "https://www.cde.ca.gov/ci/be/financial-support.asp"
-}

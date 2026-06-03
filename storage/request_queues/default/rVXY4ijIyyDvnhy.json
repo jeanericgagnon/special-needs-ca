@@ -1,9 +1,0 @@
-{
-	"id": "rVXY4ijIyyDvnhy",
-	"json": "{\"id\":\"rVXY4ijIyyDvnhy\",\"url\":\"https://biology.ucdavis.edu/events/current-progress-biotechnology-seminar-jenna-gallegos\",\"loadedUrl\":\"https://biology.ucdavis.edu/events/current-progress-biotechnology-seminar-jenna-gallegos\",\"uniqueKey\":\"https://biology.ucdavis.edu/events/current-progress-biotechnology-seminar-jenna-gallegos\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:26.698Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://biology.ucdavis.edu/events/current-progress-biotechnology-seminar-jenna-gallegos",
-	"url": "https://biology.ucdavis.edu/events/current-progress-biotechnology-seminar-jenna-gallegos"
-}

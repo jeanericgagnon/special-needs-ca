@@ -1,9 +1,0 @@
-{
-	"id": "AwaKu1hPNNs6Khn",
-	"json": "{\"id\":\"AwaKu1hPNNs6Khn\",\"url\":\"https://health.ucdavis.edu/pharmacy/health-solutions/track-delivery\",\"loadedUrl\":\"https://health.ucdavis.edu/pharmacy/health-solutions/track-delivery\",\"uniqueKey\":\"https://health.ucdavis.edu/pharmacy/health-solutions/track-delivery\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:42.137Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/pharmacy/health-solutions/track-delivery",
-	"url": "https://health.ucdavis.edu/pharmacy/health-solutions/track-delivery"
-}

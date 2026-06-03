@@ -1,9 +1,0 @@
-{
-	"id": "FUannRv55wBU1d2",
-	"json": "{\"id\":\"FUannRv55wBU1d2\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/875/robert-allen-orthopaedic_surgery_-_hand-orthopaedic_surgery_-_microvascular-sacramento?FreeText%3aLast+name=Allen\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/875/robert-allen-orthopaedic_surgery_-_hand-orthopaedic_surgery_-_microvascular-sacramento?FreeText%3aLast+name=Allen\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/875/robert-allen-orthopaedic_surgery_-_hand-orthopaedic_surgery_-_microvascular-sacramento?FreeText%3ALast+name=Allen\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:10.589Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/875/robert-allen-orthopaedic_surgery_-_hand-orthopaedic_surgery_-_microvascular-sacramento?FreeText%3ALast+name=Allen",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/875/robert-allen-orthopaedic_surgery_-_hand-orthopaedic_surgery_-_microvascular-sacramento?FreeText%3aLast+name=Allen"
-}

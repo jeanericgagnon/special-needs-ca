@@ -1,9 +1,0 @@
-{
-	"id": "q3P22NyquAP7D8D",
-	"json": "{\"id\":\"q3P22NyquAP7D8D\",\"url\":\"https://www3.cde.ca.gov/cdeauthentication/logon.aspx?programabbr=PAS\",\"loadedUrl\":\"https://www3.cde.ca.gov/cdeauthentication/logon.aspx?programabbr=PAS\",\"uniqueKey\":\"https://www3.cde.ca.gov/cdeauthentication/logon.aspx?programabbr=PAS\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:22:39.475Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www3.cde.ca.gov/cdeauthentication/logon.aspx?programabbr=PAS",
-	"url": "https://www3.cde.ca.gov/cdeauthentication/logon.aspx?programabbr=PAS"
-}

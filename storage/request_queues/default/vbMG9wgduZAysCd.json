@@ -1,9 +1,0 @@
-{
-	"id": "vbMG9wgduZAysCd",
-	"json": "{\"id\":\"vbMG9wgduZAysCd\",\"url\":\"https://www.cdph.ca.gov/_layouts/15/listform.aspx?ListId=%7BD7FE5061%2D1F58%2D4B3B%2DB1D8%2D9F26D3BEF13B%7D&PageType=0\",\"loadedUrl\":\"https://www.cdph.ca.gov/\",\"uniqueKey\":\"https://www.cdph.ca.gov/_layouts/15/listform.aspx?ListId=%7BD7FE5061-1F58-4B3B-B1D8-9F26D3BEF13B%7D&PageType=0\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:57.333Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/_layouts/15/listform.aspx?ListId=%7BD7FE5061-1F58-4B3B-B1D8-9F26D3BEF13B%7D&PageType=0",
-	"url": "https://www.cdph.ca.gov/_layouts/15/listform.aspx?ListId=%7BD7FE5061%2D1F58%2D4B3B%2DB1D8%2D9F26D3BEF13B%7D&PageType=0"
-}

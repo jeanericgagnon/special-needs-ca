@@ -1,9 +1,0 @@
-{
-	"id": "YupBbuDbg42VcD4",
-	"json": "{\"id\":\"YupBbuDbg42VcD4\",\"url\":\"https://rarediseases.org/organizations/blanche-fischer-foundation/\",\"loadedUrl\":\"https://rarediseases.org/organizations/blanche-fischer-foundation/\",\"uniqueKey\":\"https://rarediseases.org/organizations/blanche-fischer-foundation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:15:44.616Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/organizations/blanche-fischer-foundation",
-	"url": "https://rarediseases.org/organizations/blanche-fischer-foundation/"
-}

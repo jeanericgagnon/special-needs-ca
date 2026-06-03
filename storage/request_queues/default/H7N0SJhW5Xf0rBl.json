@@ -1,9 +1,0 @@
-{
-	"id": "H7N0SJhW5Xf0rBl",
-	"json": "{\"id\":\"H7N0SJhW5Xf0rBl\",\"url\":\"https://health.ucdavis.edu/conditions/cancer/kidney-cancer\",\"loadedUrl\":\"https://health.ucdavis.edu/conditions/cancer/kidney-cancer\",\"uniqueKey\":\"https://health.ucdavis.edu/conditions/cancer/kidney-cancer\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:45.794Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/conditions/cancer/kidney-cancer",
-	"url": "https://health.ucdavis.edu/conditions/cancer/kidney-cancer"
-}

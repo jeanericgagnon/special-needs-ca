@@ -1524,6 +1524,69 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
         </pre>
       </div>
 
+      {/* Hidden Print Container for Court-Ready Safety Journal Table */}
+      <div 
+        style={{ display: 'none', marginTop: '3rem', borderTop: '2px solid #000', paddingTop: '1rem', pageBreakBefore: 'always', fontSize: '9.5pt' }}
+        className="print-expand"
+      >
+        <h2 style={{ fontSize: '15pt', textAlign: 'center', marginBottom: '1.5rem', textTransform: 'uppercase', letterSpacing: '0.5px', fontWeight: 'bold' }}>
+          OFFICIAL 24-HOUR BEHAVIOR & SAFETY LOG
+        </h2>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '1.5rem', background: '#f8fafc', padding: '1rem', borderRadius: '8px', border: '1px solid #cbd5e1' }}>
+          <span><strong>Child Recipient:</strong> {childName}</span>
+          <span><strong>Parent/Reporter:</strong> {parentName}</span>
+          <span><strong>Date of Log:</strong> {logDate}</span>
+          <span><strong>Total Incidents:</strong> {incidents.length} (Critical: {getCriticalCount()}, Medium: {getMediumCount()})</span>
+        </div>
+
+        <h3 style={{ fontSize: '11pt', fontWeight: 'bold', marginBottom: '0.75rem', borderBottom: '1px solid #000', paddingBottom: '3px' }}>
+          I. Chronological Incident Log Table
+        </h3>
+        <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '9pt', border: '1px solid #cbd5e1', marginBottom: '2rem' }}>
+          <thead>
+            <tr style={{ background: '#f1f5f9', borderBottom: '2px solid #94a3b8', textAlign: 'left' }}>
+              <th style={{ padding: '8px', border: '1px solid #cbd5e1', width: '12%' }}>Time</th>
+              <th style={{ padding: '8px', border: '1px solid #cbd5e1', width: '23%' }}>Category & Risk</th>
+              <th style={{ padding: '8px', border: '1px solid #cbd5e1', width: '38%' }}>Observed Safety Hazard Detail</th>
+              <th style={{ padding: '8px', border: '1px solid #cbd5e1', width: '27%' }}>Caregiver Safety Intervention</th>
+            </tr>
+          </thead>
+          <tbody>
+            {incidents.map((inc) => (
+              <tr key={inc.id} style={{ borderBottom: '1px solid #cbd5e1' }}>
+                <td style={{ padding: '8px', border: '1px solid #cbd5e1', fontWeight: 600, verticalAlign: 'top' }}>{inc.time}</td>
+                <td style={{ padding: '8px', border: '1px solid #cbd5e1', verticalAlign: 'top' }}>
+                  <div style={{ fontWeight: 600 }}>{inc.category}</div>
+                  <span style={{ 
+                    fontSize: '7.5pt', 
+                    fontWeight: 700, 
+                    color: inc.riskLevel === 'critical' ? '#ef4444' : inc.riskLevel === 'medium' ? '#d97706' : '#10b981',
+                    textTransform: 'uppercase'
+                  }}>
+                    {inc.riskLevel}
+                  </span>
+                </td>
+                <td style={{ padding: '8px', border: '1px solid #cbd5e1', lineHeight: '1.4', verticalAlign: 'top' }}>{inc.details}</td>
+                <td style={{ padding: '8px', border: '1px solid #cbd5e1', lineHeight: '1.4', fontStyle: 'italic', color: '#0f766e', verticalAlign: 'top' }}>{inc.intervention}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+        <div style={{ marginTop: '3rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
+          <div style={{ borderTop: '1px solid #000', paddingTop: '0.5rem', textAlign: 'center' }}>
+            <span>Parent/Caregiver Signature</span>
+          </div>
+          <div style={{ borderTop: '1px solid #000', paddingTop: '0.5rem', textAlign: 'center' }}>
+            <span>Date Signed</span>
+          </div>
+        </div>
+
+        <p style={{ fontSize: '7pt', color: '#64748b', marginTop: '2.5rem', fontStyle: 'italic', margin: 0 }}>
+          Notice: This behavior log is constructed in support of IHSS Protective Supervision assessment criteria under CDSS MPP Section 30-757.17. Any recorded incident represents an active intervention required to prevent physical injury or property hazard.
+        </p>
+      </div>
+
     </main>
   );
 }

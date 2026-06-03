@@ -1,9 +1,0 @@
-{
-	"id": "Snrmd3TqeFglpbG",
-	"json": "{\"id\":\"Snrmd3TqeFglpbG\",\"url\":\"https://genomecenter.ucdavis.edu/core-managers\",\"loadedUrl\":\"https://genomecenter.ucdavis.edu/core-managers\",\"uniqueKey\":\"https://genomecenter.ucdavis.edu/core-managers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:10.203Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://genomecenter.ucdavis.edu/core-managers",
-	"url": "https://genomecenter.ucdavis.edu/core-managers"
-}

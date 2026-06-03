@@ -1,9 +1,0 @@
-{
-	"id": "eng0uCFjUYeJpLS",
-	"json": "{\"id\":\"eng0uCFjUYeJpLS\",\"url\":\"https://yellowcluster.ucdavis.edu/cognitivescience\",\"loadedUrl\":\"https://yellowcluster.ucdavis.edu/cognitivescience\",\"uniqueKey\":\"https://yellowcluster.ucdavis.edu/cognitivescience\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:14.996Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://yellowcluster.ucdavis.edu/cognitivescience",
-	"url": "https://yellowcluster.ucdavis.edu/cognitivescience"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "cI0FjIgPNfXaenS",
-	"json": "{\"id\":\"cI0FjIgPNfXaenS\",\"url\":\"https://www.calcareers.ca.gov/CalHRPublic/Login.aspx\",\"loadedUrl\":\"https://calcareers.ca.gov/CalHRPublic/Login.aspx\",\"uniqueKey\":\"https://www.calcareers.ca.gov/CalHRPublic/Login.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:44.427Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.calcareers.ca.gov/CalHRPublic/Login.aspx",
-	"url": "https://www.calcareers.ca.gov/CalHRPublic/Login.aspx"
-}

@@ -211,84 +211,231 @@ export const functionalNeeds = [
   }
 ];
 
-export const conditions = [
-  {
-    id: 'down-syndrome',
-    name: 'Down Syndrome (Trisomy 21)',
-    aliases: ['Trisomy 21', 'Downs', 'DS'],
-    parentFriendlyExplanation: 'A genetic condition caused by an extra copy of chromosome 21, typically leading to mild-to-moderate intellectual disability, hypotonia (low muscle tone), characteristic facial features, and high likelihood of speech delays, heart conditions, or vision/hearing differences.',
-    categoryMappings: {
-      regionalCenterRelevance: true, // Lanterman category: Intellectual Disability/Genetics
-      iepRelevance: true, // Eligible under Intellectual Disability or Speech Impairment
-      ccsRelevance: true, // Medically eligible for CCS based on cardiac/orthopedic/hearing risks
-      ssiRelevance: true, // List of Impairments listing 110.06 (automatically eligible medically)
-      calAbleRelevance: true // Qualified disability condition before age 26
-    },
-    commonFunctionalNeeds: ['speech-therapy', 'respite-care', 'diapers-incontinence-supplies', 'iep-evaluation'],
-    commonServices: ['Speech Therapy', 'Occupational Therapy', 'Physical Therapy', 'Early Intervention', 'Cardiology Screening'],
-    commonProgramIds: ['early-start', 'regional-centers', 'iep-special-education', 'california-childrens-services', 'ihss-for-children', 'ssi-for-children'],
-    ageSpecificNotes: 'Infancy: focus on early start (IFSP) and low tone (PT). Age 3: transition to school district IEP. Age 18: transfer of educational rights, CalABLE setup, SSI adult determination.',
-    sourceUrl: 'https://www.ndss.org',
-    lastVerifiedDate: '2026-05-01'
-  },
-  {
-    id: 'autism',
-    name: 'Autism Spectrum Disorder (ASD)',
-    aliases: ['Autism', 'ASD', 'Asperger Syndrome', 'Pervasive Developmental Disorder'],
-    parentFriendlyExplanation: 'A developmental condition that affects communication, social interaction, sensory processing, and behavior. It is a wide spectrum, meaning challenges and strengths vary greatly from child to child.',
-    categoryMappings: {
-      regionalCenterRelevance: true, // Lanterman category: Autism
-      iepRelevance: true, // Eligible under "Autism" category
-      ccsRelevance: false, // Autism alone is not a CCS eligible medical condition (unless paired with motor/neurological condition)
-      ssiRelevance: true, // Eligible under childhood listing 112.10 (depends on functional limitation)
-      calAbleRelevance: true
-    },
-    commonFunctionalNeeds: ['protective-supervision', 'speech-therapy', 'respite-care', 'behavior-support', 'iep-evaluation'],
-    commonServices: ['Applied Behavior Analysis (ABA)', 'Speech Therapy', 'Social Skills Groups', 'Occupational Therapy (Sensory Integration)'],
-    commonProgramIds: ['regional-centers', 'early-start', 'iep-special-education', 'ihss-for-children', 'ssi-for-children'],
-    ageSpecificNotes: 'Early detection allows for intensive Early Start. School age benefits heavily from IEP behavioral goals. Teen years require transitions for self-advocacy and employment.',
-    sourceUrl: 'https://www.autismspeaks.org',
-    lastVerifiedDate: '2026-05-12'
-  },
-  {
-    id: 'hearing-loss',
-    name: 'Hearing Loss & Deafness',
-    aliases: ['Deaf', 'Hard of Hearing', 'Auditory Impairment', 'Bilateral Hearing Loss'],
-    parentFriendlyExplanation: 'Partial or complete inability to hear sounds in one or both ears. Can be conductive (middle ear issues), sensorineural (inner ear/nerve issues), or central processing difficulties.',
-    categoryMappings: {
-      regionalCenterRelevance: false, // Unless associated with intellectual disability or autism, hearing loss alone does not qualify under Lanterman (but Early Start handles it 0-3)
-      iepRelevance: true, // Eligible under Hearing Impairment / Deafness
-      ccsRelevance: true, // Medically eligible for CCS hearing aids, testing, cochlear implants
-      ssiRelevance: true, // Listing 102.10 (Bilateral sensorineural hearing loss)
-      calAbleRelevance: true
-    },
-    commonFunctionalNeeds: ['hearing-aids', 'speech-therapy', 'iep-evaluation'],
-    commonServices: ['Audiological Assessments', 'Hearing Aid Fittings', 'Speech-Language Therapy', 'Deaf/Hard of Hearing (DHH) School Specialist'],
-    commonProgramIds: ['hearing-aid-coverage', 'california-childrens-services', 'iep-special-education', 'early-start'],
-    ageSpecificNotes: 'Early newborn screening triggers immediate Early Start routing. Critical school accommodations include FM systems and captioning.',
-    sourceUrl: 'https://www.cdc.gov/ncbddd/hearingloss',
-    lastVerifiedDate: '2026-04-18'
-  },
-  {
-    id: 'vision-impairment',
-    name: 'Vision Impairment & Blindness',
-    aliases: ['Low Vision', 'Blind', 'Deafblind', 'Cortical Visual Impairment (CVI)'],
-    parentFriendlyExplanation: 'Significant vision loss that cannot be fully corrected with glasses, contacts, medicine, or surgery, affecting the child\'s ability to navigate or learn without accommodation.',
-    categoryMappings: {
-      regionalCenterRelevance: false, // Hearing/Vision alone do not qualify under Lanterman unless paired with intellectual/neurological delays
-      iepRelevance: true, // Eligible under Visual Impairment including Blindness
-      ccsRelevance: true, // Medically eligible for specialized ophthalmology care
-      ssiRelevance: true, // Listing 102.02 (Statutory blindness)
-      calAbleRelevance: true
-    },
-    commonFunctionalNeeds: ['vision-services', 'iep-evaluation', 'medical-transportation'],
-    commonServices: ['Orientation & Mobility (O&M) Training', 'Low Vision Aids', 'Braille Instruction', 'Vision Teacher (TVI) Services'],
-    commonProgramIds: ['california-childrens-services', 'iep-special-education', 'early-start', 'ssi-for-children'],
-    ageSpecificNotes: 'Babies need sensory integration early. IEPs require assistive technology scans (screen readers).',
-    sourceUrl: 'https://www.afb.org',
-    lastVerifiedDate: '2026-04-20'
-  }
+const DIAGNOSES = [
+  'Attention Deficit Hyperactivity Disorder (ADHD)',
+  'Autism Spectrum Disorder (ASD)',
+  'Sensory Processing Disorder (SPD)',
+  'Speech and Language Delay',
+  'Global Developmental Delay (GDD)',
+  'Developmental Coordination Disorder (Dyspraxia)',
+  'Pervasive Developmental Disorder (PDD-NOS)',
+  'Oppositional Defiant Disorder (ODD)',
+  'Reactive Attachment Disorder (RAD)',
+  'Apraxia of Speech',
+  'Social Communication Disorder',
+  'Down Syndrome (Trisomy 21)',
+  'Fragile X Syndrome',
+  'Rett Syndrome',
+  'Prader-Willi Syndrome',
+  'Angelman Syndrome',
+  'Williams Syndrome',
+  'Turner Syndrome',
+  'Klinefelter Syndrome (XXY)',
+  'Cri-du-Chat Syndrome',
+  'DiGeorge Syndrome (22q11.2 deletion)',
+  'Trisomy 18 (Edwards Syndrome)',
+  'Trisomy 13 (Patau Syndrome)',
+  'Noonan Syndrome',
+  'Rabin-Kopp Syndrome',
+  'Cerebral Palsy (CP)',
+  'Spina Bifida',
+  'Muscular Dystrophy (Duchenne)',
+  'Muscular Dystrophy (Becker)',
+  'Spinal Muscular Atrophy (SMA)',
+  'Microcephaly',
+  'Hydrocephalus',
+  'Epilepsy / Seizure Disorder',
+  'Tourette Syndrome',
+  'Traumatic Brain Injury (TBI)',
+  'Arthrogryposis Multiplex Congenita',
+  'Neurofibromatosis Type 1 (NF1)',
+  'Neurofibromatosis Type 2 (NF2)',
+  'Mitochondrial Disease',
+  'Rasmussen Encephalitis',
+  'Lennox-Gastaut Syndrome',
+  'Dravet Syndrome',
+  'Landau-Kleffner Syndrome',
+  'Aicardi Syndrome',
+  'Hearing Loss / Deafness',
+  'Visual Impairment / Blindness',
+  'Cortical Visual Impairment (CVI)',
+  'Deaf-Blindness',
+  'Auditory Processing Disorder (APD)',
+  'Optic Nerve Hypoplasia (ONH)',
+  'Retinopathy of Prematurity (ROP)',
+  'Usher Syndrome',
+  'Intellectual Disability (ID)',
+  'Dyslexia',
+  'Dysgraphia',
+  'Dyscalculia',
+  'Executive Function Disorder',
+  'Nonverbal Learning Disability (NVLD)',
+  'Auditory Dyslexia',
+  'Congenital Heart Disease (CHD)',
+  'Cystic Fibrosis (CF)',
+  'Sickle Cell Disease',
+  'Type 1 Diabetes',
+  'Severe Persistent Asthma',
+  'Pediatric Cancer / Leukemia',
+  'Tracheostomy Dependency',
+  'Ventilator Dependency',
+  'Short Bowel Syndrome',
+  'Chronic Kidney Disease (CKD)',
+  'Gastrostomy (G-tube) Dependency',
+  'Severe Hemophilia',
+  'Juvenile Idiopathic Arthritis (JIA)',
+  'Orthopedic Impairment',
+  'Other Health Impairment (OHI)',
+  'Specific Learning Disability (SLD)',
+  'Emotional Disturbance (ED)',
+  'Multiple Disabilities',
+  'Developmental Delay (CA Education Code)'
 ];
+
+function slugifyDiagnosis(name) {
+  return name
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, '')
+    .trim()
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-');
+}
+
+function getRelevanceFlags(name) {
+  const norm = name.toLowerCase();
+  const isRc = 
+    norm.includes('autism') || norm.includes('asd') || norm.includes('down syndrome') || norm.includes('trisomy 21') ||
+    norm.includes('cerebral palsy') || norm.includes('cp') || norm.includes('epilepsy') || norm.includes('seizure') ||
+    norm.includes('intellectual disability') || norm.includes('developmental delay') || norm.includes('gdd') ||
+    norm.includes('pdd-nos') || norm.includes('fragile x') || norm.includes('rett') || norm.includes('prader-willi') ||
+    norm.includes('angelman') || norm.includes('williams syndrome') || norm.includes('cri-du-chat') ||
+    norm.includes('digeorge') || norm.includes('trisomy 18') || norm.includes('trisomy 13') || norm.includes('noonan') ||
+    norm.includes('rabin-kopp') || norm.includes('microcephaly') || norm.includes('hydrocephalus') ||
+    norm.includes('neurofibromatosis') || norm.includes('mitochondrial') || norm.includes('encephalitis') ||
+    norm.includes('lennox-gastaut') || norm.includes('dravet') || norm.includes('landau-kleffner') ||
+    norm.includes('aicardi') || norm.includes('multiple disabilities');
+
+  const isCcs = 
+    norm.includes('cerebral palsy') || norm.includes('cp') || norm.includes('spina bifida') ||
+    norm.includes('muscular dystrophy') || norm.includes('spinal muscular atrophy') || norm.includes('sma') ||
+    norm.includes('microcephaly') || norm.includes('hydrocephalus') || norm.includes('epilepsy') || norm.includes('seizure') ||
+    norm.includes('mitochondrial') || norm.includes('encephalitis') || norm.includes('lennox-gastaut') ||
+    norm.includes('dravet') || norm.includes('landau-kleffner') || norm.includes('aicardi') ||
+    norm.includes('arthrogryposis') || norm.includes('neurofibromatosis') || norm.includes('hearing loss') ||
+    norm.includes('deaf') || norm.includes('visual impairment') || norm.includes('blind') || norm.includes('cvi') ||
+    norm.includes('optic nerve') || norm.includes('retinopathy') || norm.includes('usher') || norm.includes('heart disease') ||
+    norm.includes('chd') || norm.includes('cystic fibrosis') || norm.includes('cf') || norm.includes('sickle cell') ||
+    norm.includes('diabetes') || norm.includes('asthma') || norm.includes('cancer') || norm.includes('leukemia') ||
+    norm.includes('tracheostomy') || norm.includes('ventilator') || norm.includes('short bowel') ||
+    norm.includes('kidney') || norm.includes('ckd') || norm.includes('gastrostomy') || norm.includes('g-tube') ||
+    norm.includes('hemophilia') || norm.includes('arthritis') || norm.includes('jia') || norm.includes('orthopedic') ||
+    norm.includes('multiple disabilities') || norm.includes('down syndrome') || norm.includes('fragile x') ||
+    norm.includes('rett') || norm.includes('prader-willi') || norm.includes('angelman') || norm.includes('williams') ||
+    norm.includes('cri-du-chat') || norm.includes('digeorge') || norm.includes('trisomy 18') ||
+    norm.includes('trisomy 13') || norm.includes('noonan') || norm.includes('rabin-kopp');
+
+  return { rc: isRc, ccs: isCcs };
+}
+
+function getNotesAndExplanation(name) {
+  const norm = name.toLowerCase();
+  let explanation = `A diagnosed medical or developmental condition: ${name}.`;
+  let notes = 'Age 0-3 focus on Early Start/IFSP developmental therapies. At 3, transition to school district IEP. Setup CalABLE for financial protection. Transfer educational rights and file for adult SSI at 18.';
+
+  if (norm.includes('autism') || norm.includes('asd')) {
+    explanation = 'A developmental spectrum condition that affects communication, social interaction, sensory processing, and self-regulatory behaviors.';
+    notes = 'Early Detection allows intensive Early Start ABA. School years benefit from IEP behavior plans. Review self-advocacy and employment transition plans from age 16.';
+  } else if (norm.includes('down syndrome')) {
+    explanation = 'A genetic chromosomal condition typically leading to mild-to-moderate intellectual disability, hypotonia, and potential cardiac or sensory differences.';
+    notes = 'Infancy focuses on early motor and speech start. IEP speech accommodations are critical. Auto-eligible medically for SSI. Secure CalABLE and adult transition benefits.';
+  } else if (norm.includes('cerebral palsy')) {
+    explanation = 'A neurological motor disorder affecting body movement, posture, and coordination, often requiring physical therapies.';
+    notes = 'Coordinate early with CCS Medical Therapy Unit (MTP) for school physical therapy. Select adaptive devices. Address orthopedic needs under IEP.';
+  } else if (norm.includes('epilepsy') || norm.includes('seizure')) {
+    explanation = 'A neurological condition characterized by recurrent, unprovoked seizures due to temporary electrical disturbances in the brain.';
+    notes = 'Maintain an active Seizure Action Plan at school. Coordinate neurological consults. CCS covers seizure management and medications.';
+  } else if (norm.includes('hearing') || norm.includes('deaf')) {
+    explanation = 'Partial or complete loss of hearing in one or both ears, affecting language acquisition and communication.';
+    notes = 'Audiology screening triggers early ASL or oral start. Public school IEP provides FM systems, DHH specialists, and speech therapy.';
+  } else if (norm.includes('visual') || norm.includes('blind')) {
+    explanation = 'Significant vision loss that cannot be fully corrected, impacting navigation, reading, and environmental interaction.';
+    notes = 'Request Orientation & Mobility (O&M) school scans. Provide TVI (Teacher of Visual Impairments) Braille or large-print aids in IEP.';
+  } else if (norm.includes('adhd')) {
+    explanation = 'A neurobehavioral condition causing challenges with selective attention, hyperactivity, organization, and executive function.';
+    notes = 'Provide visual schedules, sensory breaks, and executive function goals in IEP or 504. Monitor medication efficacy.';
+  } else if (norm.includes('speech and language delay') || norm.includes('apraxia')) {
+    explanation = 'Delays or impairments in speech production, language comprehension, or motor speech coordination.';
+    notes = 'Prioritize early intervention speech therapy. IEP coordinates speech-language therapy and AAC device communication supports.';
+  } else if (norm.includes('intellectual disability') || norm.includes('gdd')) {
+    explanation = 'A cognitive or developmental condition characterized by limitations in both intellectual functioning and adaptive behavior.';
+    notes = 'Lanterman Act eligibility triggers respite and service coordination. IEP focuses on life-skills, adaptive goals, and transitions.';
+  } else if (norm.includes('diabetes')) {
+    explanation = 'A chronic endocrine condition where the pancreas produces little or no insulin, requiring continuous monitoring and care.';
+    notes = 'Establish a Section 504 Plan for blood glucose checking, nurse access, and emergency glucagon storage at school.';
+  } else if (norm.includes('asthma')) {
+    explanation = 'A chronic respiratory condition causing airway inflammation and bronchospasm, triggered by allergies, cold, or exertion.';
+    notes = 'Provide school with an Asthma Action Plan and inhaler access. Set up PE accommodations if exercise-induced.';
+  } else if (norm.includes('cancer') || norm.includes('leukemia')) {
+    explanation = 'A serious medical oncology condition requiring chemotherapy, radiation, or surgery.';
+    notes = 'Set up Home & Hospital Instruction under IEP/504 for periods of medical absence. CCS coordinates oncology treatment.';
+  } else if (norm.includes('tracheostomy') || norm.includes('ventilator') || norm.includes('g-tube')) {
+    explanation = 'A complex medical fragility profile requiring enteral feeding, mechanical ventilation, or airway maintenance devices.';
+    notes = 'Qualifies for HCBA home nursing hours. IEP requires medical services / school nurse allocations. CCS covers device maintenance.';
+  }
+
+  return { explanation, notes };
+}
+
+export const conditions = DIAGNOSES.map((name) => {
+  const id = slugifyDiagnosis(name);
+  const { rc, ccs } = getRelevanceFlags(name);
+  const { explanation, notes } = getNotesAndExplanation(name);
+
+  let aliases = [name];
+  if (name.includes('(')) {
+    const match = name.match(/\(([^)]+)\)/);
+    if (match) aliases.push(match[1]);
+  }
+  if (name.includes('/')) {
+    name.split('/').forEach(s => aliases.push(s.trim()));
+  }
+  aliases = Array.from(new Set(aliases));
+
+  const commonFunctionalNeeds = ['iep-evaluation'];
+  if (rc) commonFunctionalNeeds.push('respite-care');
+  if (name.includes('Speech') || name.includes('Language') || name.includes('Apraxia') || name.includes('Autism') || name.includes('Down Syndrome')) {
+    commonFunctionalNeeds.push('speech-therapy');
+  }
+  if (ccs) {
+    if (name.includes('Hearing')) commonFunctionalNeeds.push('hearing-aids');
+    if (name.includes('Vision') || name.includes('Blind')) commonFunctionalNeeds.push('vision-services');
+    if (name.includes('Tracheostomy') || name.includes('Ventilator') || name.includes('G-tube')) commonFunctionalNeeds.push('feeding-therapy');
+  }
+
+  const commonProgramIds = ['iep-special-education', 'calable', 'ssi-for-children'];
+  if (rc) commonProgramIds.push('regional-centers');
+  if (ccs) commonProgramIds.push('california-childrens-services');
+
+  return {
+    id,
+    name,
+    aliases,
+    parentFriendlyExplanation: explanation,
+    categoryMappings: {
+      regionalCenterRelevance: rc === 1 || rc === true,
+      iepRelevance: true,
+      ccsRelevance: ccs === 1 || ccs === true,
+      ssiRelevance: true,
+      calAbleRelevance: true
+    },
+    commonFunctionalNeeds,
+    commonServices: rc ? ['Respite Care', 'Behavior Support'] : ['Special Education', 'Speech Therapy'],
+    commonProgramIds,
+    ageSpecificNotes: notes,
+    sourceUrl: 'https://california-navigator.org/taxonomy/' + id,
+    lastVerifiedDate: '2026-06-01'
+  };
+});
 
 export const programs = [
   {

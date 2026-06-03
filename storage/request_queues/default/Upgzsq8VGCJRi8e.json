@@ -1,9 +1,0 @@
-{
-	"id": "Upgzsq8VGCJRi8e",
-	"json": "{\"id\":\"Upgzsq8VGCJRi8e\",\"url\":\"https://saronlab.ucdavis.edu/ccc-project.html\",\"loadedUrl\":\"https://saronlab.ucdavis.edu/ccc-project.html\",\"uniqueKey\":\"https://saronlab.ucdavis.edu/ccc-project.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:55.601Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://saronlab.ucdavis.edu/ccc-project.html",
-	"url": "https://saronlab.ucdavis.edu/ccc-project.html"
-}

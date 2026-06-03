@@ -1,9 +1,0 @@
-{
-	"id": "gek8ibzmoqJNaNe",
-	"json": "{\"id\":\"gek8ibzmoqJNaNe\",\"url\":\"https://www.library.ca.gov/government-publications/slaa/\",\"loadedUrl\":\"https://www.library.ca.gov/government-publications/slaa/\",\"uniqueKey\":\"https://www.library.ca.gov/government-publications/slaa\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:41.742Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.library.ca.gov/government-publications/slaa",
-	"url": "https://www.library.ca.gov/government-publications/slaa/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "yvezHn7MWVuoR98",
-	"json": "{\"id\":\"yvezHn7MWVuoR98\",\"url\":\"https://www.vetmed.ucdavis.edu/research/research-resources\",\"loadedUrl\":\"https://www.vetmed.ucdavis.edu/research/research-development/funding\",\"uniqueKey\":\"https://www.vetmed.ucdavis.edu/research/research-resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:21.164Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.vetmed.ucdavis.edu/research/research-resources",
-	"url": "https://www.vetmed.ucdavis.edu/research/research-resources"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "QK3BPf8IQcbrpcp",
-	"json": "{\"id\":\"QK3BPf8IQcbrpcp\",\"url\":\"https://giving.ucdavis.edu/foundation\",\"loadedUrl\":\"https://giving.ucdavis.edu/foundation\",\"uniqueKey\":\"https://giving.ucdavis.edu/foundation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:55.489Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://giving.ucdavis.edu/foundation",
-	"url": "https://giving.ucdavis.edu/foundation"
-}

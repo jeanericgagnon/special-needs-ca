@@ -1,9 +1,0 @@
-{
-	"id": "E0p1B72t0wnuBP5",
-	"json": "{\"id\":\"E0p1B72t0wnuBP5\",\"url\":\"https://data.ca.gov/dataset/california-grants-portal-grant-awards-2023-2024\",\"loadedUrl\":\"https://data.ca.gov/dataset/california-grants-portal-grant-awards-2023-2024\",\"uniqueKey\":\"https://data.ca.gov/dataset/california-grants-portal-grant-awards-2023-2024\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:15.939Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://data.ca.gov/dataset/california-grants-portal-grant-awards-2023-2024",
-	"url": "https://data.ca.gov/dataset/california-grants-portal-grant-awards-2023-2024"
-}

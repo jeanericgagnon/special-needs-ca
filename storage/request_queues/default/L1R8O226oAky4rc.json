@@ -1,9 +1,0 @@
-{
-	"id": "L1R8O226oAky4rc",
-	"json": "{\"id\":\"L1R8O226oAky4rc\",\"url\":\"https://www.ctc.ca.gov/credentials/assignment-resources/challenges-with-library-assignments\",\"loadedUrl\":\"https://www.ctc.ca.gov/employers/assignment-resources/services/librarian-media/library-assignments/\",\"uniqueKey\":\"https://www.ctc.ca.gov/credentials/assignment-resources/challenges-with-library-assignments\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:05:30.561Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ctc.ca.gov/credentials/assignment-resources/challenges-with-library-assignments",
-	"url": "https://www.ctc.ca.gov/credentials/assignment-resources/challenges-with-library-assignments"
-}

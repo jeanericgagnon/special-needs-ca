@@ -1,9 +1,0 @@
-{
-	"id": "8ZxH2FTJcPJknxq",
-	"json": "{\"id\":\"8ZxH2FTJcPJknxq\",\"url\":\"https://www.dhcs.ca.gov/services/medi-cal/eligibility/Pages/PE.aspx\",\"loadedUrl\":\"https://www.dhcs.ca.gov/services/medi-cal/eligibility/Pages/PE.aspx\",\"uniqueKey\":\"https://www.dhcs.ca.gov/services/medi-cal/eligibility/Pages/PE.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T17:47:37.164Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dhcs.ca.gov/services/medi-cal/eligibility/Pages/PE.aspx",
-	"url": "https://www.dhcs.ca.gov/services/medi-cal/eligibility/Pages/PE.aspx"
-}

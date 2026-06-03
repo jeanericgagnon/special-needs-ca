@@ -1,9 +1,0 @@
-{
-	"id": "61lTLTWBm7VcAX1",
-	"json": "{\"id\":\"61lTLTWBm7VcAX1\",\"url\":\"https://health.ucdavis.edu/patients-visitors/conditions-treatments/covid-19/what-to-do-if-you-test-positive\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/conditions-treatments/covid-19/what-to-do-if-you-test-positive\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/conditions-treatments/covid-19/what-to-do-if-you-test-positive\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:38.149Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/conditions-treatments/covid-19/what-to-do-if-you-test-positive",
-	"url": "https://health.ucdavis.edu/patients-visitors/conditions-treatments/covid-19/what-to-do-if-you-test-positive"
-}

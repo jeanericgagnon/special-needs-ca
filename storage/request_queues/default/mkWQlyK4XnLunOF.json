@@ -1,9 +1,0 @@
-{
-	"id": "mkWQlyK4XnLunOF",
-	"json": "{\"id\":\"mkWQlyK4XnLunOF\",\"url\":\"https://www.chhs.ca.gov/2022-23-enacted-budget-highlights/\",\"loadedUrl\":\"https://www.chhs.ca.gov/2022-23-enacted-budget-highlights/\",\"uniqueKey\":\"https://www.chhs.ca.gov/2022-23-enacted-budget-highlights\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:53.624Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chhs.ca.gov/2022-23-enacted-budget-highlights",
-	"url": "https://www.chhs.ca.gov/2022-23-enacted-budget-highlights/"
-}

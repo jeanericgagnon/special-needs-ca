@@ -1,9 +1,0 @@
-{
-	"id": "VmU6WBBYt3AA876",
-	"json": "{\"id\":\"VmU6WBBYt3AA876\",\"url\":\"https://cdss.ca.gov/inforesources/civil-rights#main-content\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/civil-rights#main-content\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/civil-rights\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:35.981Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/civil-rights",
-	"url": "https://cdss.ca.gov/inforesources/civil-rights#main-content"
-}

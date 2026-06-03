@@ -1,9 +1,0 @@
-{
-	"id": "2Ka3xb9HznkxCn4",
-	"json": "{\"id\":\"2Ka3xb9HznkxCn4\",\"url\":\"https://health.ucdavis.edu/imaging-research/services/safety-training\",\"loadedUrl\":\"https://health.ucdavis.edu/imaging-research/services/safety-training\",\"uniqueKey\":\"https://health.ucdavis.edu/imaging-research/services/safety-training\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:06:42.652Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/imaging-research/services/safety-training",
-	"url": "https://health.ucdavis.edu/imaging-research/services/safety-training"
-}

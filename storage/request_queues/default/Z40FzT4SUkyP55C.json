@@ -1,9 +1,0 @@
-{
-	"id": "Z40FzT4SUkyP55C",
-	"json": "{\"id\":\"Z40FzT4SUkyP55C\",\"url\":\"http://www.cdph.ca.gov/HealthInfo/Pages/fdbDomoicAcidInfo.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Pages/PageNotFoundError.aspx\",\"uniqueKey\":\"http://www.cdph.ca.gov/HealthInfo/Pages/fdbDomoicAcidInfo.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:14:43.726Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.cdph.ca.gov/HealthInfo/Pages/fdbDomoicAcidInfo.aspx",
-	"url": "http://www.cdph.ca.gov/HealthInfo/Pages/fdbDomoicAcidInfo.aspx"
-}

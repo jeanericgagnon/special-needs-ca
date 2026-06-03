@@ -1,9 +1,0 @@
-{
-	"id": "noQd8FLfBj18v6S",
-	"json": "{\"id\":\"noQd8FLfBj18v6S\",\"url\":\"https://www.caloes.ca.gov/cal-oes/website-accessibility-certification/\",\"loadedUrl\":\"https://www.caloes.ca.gov/cal-oes/website-accessibility-certification/\",\"uniqueKey\":\"https://www.caloes.ca.gov/cal-oes/website-accessibility-certification\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:44.006Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.caloes.ca.gov/cal-oes/website-accessibility-certification",
-	"url": "https://www.caloes.ca.gov/cal-oes/website-accessibility-certification/"
-}

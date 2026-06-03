@@ -1,9 +1,0 @@
-{
-	"id": "sZNka9p4k2VAVIJ",
-	"json": "{\"id\":\"sZNka9p4k2VAVIJ\",\"url\":\"https://health.ucdavis.edu/medical-school-research/services\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-school-research/services\",\"uniqueKey\":\"https://health.ucdavis.edu/medical-school-research/services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:34.238Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/medical-school-research/services",
-	"url": "https://health.ucdavis.edu/medical-school-research/services"
-}

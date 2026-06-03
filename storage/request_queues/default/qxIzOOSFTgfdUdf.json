@@ -1,9 +1,0 @@
-{
-	"id": "qxIzOOSFTgfdUdf",
-	"json": "{\"id\":\"qxIzOOSFTgfdUdf\",\"url\":\"https://www.cde.ca.gov/be/ag/ag/yr14/may14item04a4-addendumaav.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/be/ag/ag/yr14/may14item04a4-addendumaav.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/be/ag/ag/yr14/may14item04a4-addendumaav.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:31.206Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/be/ag/ag/yr14/may14item04a4-addendumaav.asp",
-	"url": "https://www.cde.ca.gov/be/ag/ag/yr14/may14item04a4-addendumaav.asp"
-}

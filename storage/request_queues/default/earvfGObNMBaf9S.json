@@ -1,9 +1,0 @@
-{
-	"id": "earvfGObNMBaf9S",
-	"json": "{\"id\":\"earvfGObNMBaf9S\",\"url\":\"https://lettersandscience.ucdavis.edu/ls-student-clubs-and-student-organizations\",\"loadedUrl\":\"https://lettersandscience.ucdavis.edu/ls-student-clubs-and-student-organizations\",\"uniqueKey\":\"https://lettersandscience.ucdavis.edu/ls-student-clubs-and-student-organizations\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:23.457Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://lettersandscience.ucdavis.edu/ls-student-clubs-and-student-organizations",
-	"url": "https://lettersandscience.ucdavis.edu/ls-student-clubs-and-student-organizations"
-}

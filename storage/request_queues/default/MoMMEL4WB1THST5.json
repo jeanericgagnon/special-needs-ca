@@ -1,9 +1,0 @@
-{
-	"id": "MoMMEL4WB1THST5",
-	"json": "{\"id\":\"MoMMEL4WB1THST5\",\"url\":\"https://leinlab.vetmed.ucdavis.edu/our-team\",\"loadedUrl\":\"https://leinlab.vetmed.ucdavis.edu/our-team\",\"uniqueKey\":\"https://leinlab.vetmed.ucdavis.edu/our-team\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:00.792Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://leinlab.vetmed.ucdavis.edu/our-team",
-	"url": "https://leinlab.vetmed.ucdavis.edu/our-team"
-}

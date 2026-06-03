@@ -1,9 +1,0 @@
-{
-	"id": "eVIqtrINfvZ0wvE",
-	"json": "{\"id\":\"eVIqtrINfvZ0wvE\",\"url\":\"https://health.ucdavis.edu/mind-institute/centers/intellectual-developmental-disabilities-research/\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/centers/intellectual-developmental-disabilities-research/\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/centers/intellectual-developmental-disabilities-research\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:46.393Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mind-institute/centers/intellectual-developmental-disabilities-research",
-	"url": "https://health.ucdavis.edu/mind-institute/centers/intellectual-developmental-disabilities-research/"
-}

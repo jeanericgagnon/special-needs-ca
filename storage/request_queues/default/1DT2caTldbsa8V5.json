@@ -1,9 +1,0 @@
-{
-	"id": "1DT2caTldbsa8V5",
-	"json": "{\"id\":\"1DT2caTldbsa8V5\",\"url\":\"https://health.ucdavis.edu/medical-school/academic-programs/MD-program/md-phd/contact\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-school/academic-programs/MD-program/md-phd/contact\",\"uniqueKey\":\"https://health.ucdavis.edu/medical-school/academic-programs/MD-program/md-phd/contact\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:11:37.809Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/medical-school/academic-programs/MD-program/md-phd/contact",
-	"url": "https://health.ucdavis.edu/medical-school/academic-programs/MD-program/md-phd/contact"
-}

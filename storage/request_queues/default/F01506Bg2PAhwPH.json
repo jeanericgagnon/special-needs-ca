@@ -1,9 +1,0 @@
-{
-	"id": "F01506Bg2PAhwPH",
-	"json": "{\"id\":\"F01506Bg2PAhwPH\",\"url\":\"https://www.ca.gov/topics/health/\",\"loadedUrl\":\"https://www.ca.gov/topics/health/\",\"uniqueKey\":\"https://www.ca.gov/topics/health\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:20.212Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ca.gov/topics/health",
-	"url": "https://www.ca.gov/topics/health/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "4gCXSJqcbWCmAZq",
-	"json": "{\"id\":\"4gCXSJqcbWCmAZq\",\"url\":\"http://www.sierracounty.ca.gov/305/Social-Services\",\"loadedUrl\":\"http://www.sierracounty.ca.gov/305/Social-Services\",\"uniqueKey\":\"http://www.sierracounty.ca.gov/305/Social-Services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:36.633Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.sierracounty.ca.gov/305/Social-Services",
-	"url": "http://www.sierracounty.ca.gov/305/Social-Services"
-}

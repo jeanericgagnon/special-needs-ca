@@ -1,9 +1,0 @@
-{
-	"id": "5Svxld645Bf1aio",
-	"json": "{\"id\":\"5Svxld645Bf1aio\",\"url\":\"https://education.ucdavis.edu/catalyst-magazine\",\"loadedUrl\":\"https://education.ucdavis.edu/catalyst-magazine\",\"uniqueKey\":\"https://education.ucdavis.edu/catalyst-magazine\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:17:32.920Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://education.ucdavis.edu/catalyst-magazine",
-	"url": "https://education.ucdavis.edu/catalyst-magazine"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "BjvP9IMy4EBFCMV",
-	"json": "{\"id\":\"BjvP9IMy4EBFCMV\",\"url\":\"https://scdd.ca.gov/pos-service-code/specialized-health-treatment-and-training-services/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/specialized-health-treatment-and-training-services/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/specialized-health-treatment-and-training-services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:59.762Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/pos-service-code/specialized-health-treatment-and-training-services",
-	"url": "https://scdd.ca.gov/pos-service-code/specialized-health-treatment-and-training-services/"
-}

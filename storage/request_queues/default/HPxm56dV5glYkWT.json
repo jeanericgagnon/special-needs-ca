@@ -1,9 +1,0 @@
-{
-	"id": "HPxm56dV5glYkWT",
-	"json": "{\"id\":\"HPxm56dV5glYkWT\",\"url\":\"https://irb.ucdavis.edu/irb-submissions/irbnet/\",\"loadedUrl\":\"https://irb.ucdavis.edu/irb-submissions/irbnet/\",\"uniqueKey\":\"https://irb.ucdavis.edu/irb-submissions/irbnet\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:39.823Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://irb.ucdavis.edu/irb-submissions/irbnet",
-	"url": "https://irb.ucdavis.edu/irb-submissions/irbnet/"
-}

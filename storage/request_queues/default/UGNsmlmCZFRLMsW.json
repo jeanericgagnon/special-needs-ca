@@ -1,9 +1,0 @@
-{
-	"id": "UGNsmlmCZFRLMsW",
-	"json": "{\"id\":\"UGNsmlmCZFRLMsW\",\"url\":\"https://www.csb-cde.ca.gov/resources/presentations/accessbooksharecontent.aspx\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=808b3356-ef87-48ba-b9a6-91008c821e70&ssb=22742244393&ssc=https%3A%2F%2Fwww.csb-cde.ca.gov%2Fresources%2Fpresentations%2Faccessbooksharecontent.aspx&ssi=72573d69-cuez-458d-ae8f-5bc4df0db1be&ssk=botmanager_support@radware.com&ssm=05393396226608065102167653359784&ssn=5f6d2e3657095fe111b3e32a0e547496d2bbae326bbf-8e29-444b-aea16a&sso=ebaa7db9-5b2779411d0a867cef287ce6557ae351c84eca45d9b7ec08&ssp=26295081331780344705178030120516127&ssq=47625312762808560658427628416029009112735&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBhZTMyNmJiZi04ZTI5LTQ0NGItYWRiOS01YjI3Nzk0MTFkMGExLTE3ODAzMjc2MjgwNTcwLTAwM2MwMDFjZTEwZjhmZTFlZDgxMCIsInJkIjoiY2EuZ292IiwidXpteCI6IjdmOTAwMDY0NDUwMjFmLTdkNDAtNGVjMy04NzhlLTU5ZDlmYWJhYTI2NzEtMTc4MDMyNzQzOTM1ODE4ODY5OS1mNTMzODQzMDFlN2M5YzFhMTYifQ==\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/resources/presentations/accessbooksharecontent.aspx\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:27:08.464Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.csb-cde.ca.gov/resources/presentations/accessbooksharecontent.aspx",
-	"url": "https://www.csb-cde.ca.gov/resources/presentations/accessbooksharecontent.aspx"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "KSC0SD4XwOe8c2S",
-	"json": "{\"id\":\"KSC0SD4XwOe8c2S\",\"url\":\"https://mindbrain.ucdavis.edu/people/tim-lewis\",\"loadedUrl\":\"https://mindbrain.ucdavis.edu/people/tim-lewis\",\"uniqueKey\":\"https://mindbrain.ucdavis.edu/people/tim-lewis\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:10.301Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://mindbrain.ucdavis.edu/people/tim-lewis",
-	"url": "https://mindbrain.ucdavis.edu/people/tim-lewis"
-}

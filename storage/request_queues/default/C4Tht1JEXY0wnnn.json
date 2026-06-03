@@ -1,9 +1,0 @@
-{
-	"id": "C4Tht1JEXY0wnnn",
-	"json": "{\"id\":\"C4Tht1JEXY0wnnn\",\"url\":\"https://www.cdss.ca.gov/inforesources/Data-Portal/Plans/Title-IV-E-State-Plans\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/data-portal/state-plans/title-iv-e-state-plans\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/Data-Portal/Plans/Title-IV-E-State-Plans\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:05.724Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/inforesources/Data-Portal/Plans/Title-IV-E-State-Plans",
-	"url": "https://www.cdss.ca.gov/inforesources/Data-Portal/Plans/Title-IV-E-State-Plans"
-}

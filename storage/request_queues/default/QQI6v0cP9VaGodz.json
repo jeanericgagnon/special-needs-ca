@@ -1,9 +1,0 @@
-{
-	"id": "QQI6v0cP9VaGodz",
-	"json": "{\"id\":\"QQI6v0cP9VaGodz\",\"url\":\"https://health.ucdavis.edu/nursing/contact_us/join_our_email_list_myemma.html\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/contact_us/join_our_email_list_myemma.html\",\"uniqueKey\":\"https://health.ucdavis.edu/nursing/contact_us/join_our_email_list_myemma.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:55.786Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/nursing/contact_us/join_our_email_list_myemma.html",
-	"url": "https://health.ucdavis.edu/nursing/contact_us/join_our_email_list_myemma.html"
-}

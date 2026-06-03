@@ -1,9 +1,0 @@
-{
-	"id": "JZWjTlUJRcoN6qv",
-	"json": "{\"id\":\"JZWjTlUJRcoN6qv\",\"url\":\"https://dq.cde.ca.gov/dataquest/DQCensus/AttAbsByRsn.aspx?agglevel=state&cds=00&year=2022-23\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=bc2cdcd9-d19c-4824-b33c-dd48db155971&ssb=93943304744&ssc=https%3A%2F%2Fdq.cde.ca.gov%2Fdataquest%2FDQCensus%2FAttAbsByRsn.aspx%3Fagglevel%3Dstate%26cds%3D00%26year%3D2022-23&ssi=dc4e9d37-cuen-441a-9349-188298c5b77e&ssk=botmanager_support@radware.com&ssm=15163245496707777108265250930738&ssn=ecda178941be2c8bb86399ffaf4f9785f69849890254-2137-4f5b-805336&sso=fbb904be-51a58c37493aa3c424a88c405a311f64b2f788eab050a38e&ssp=83914275441780369519178038550846457&ssq=29816125671119630293156711417853739413554&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/146.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDA0OTg5MDI1NC0yMTM3LTRmNWItODRiZS01MWE1OGMzNzQ5M2ExLTE3ODAzNTY3MTE2MTQwLTAwM2VjZTY3ODYwZTAzNzQxMWIxMCIsInV6bXgiOiI3ZjkwMDA5ZWUwNjUzYy1iNWY5LTRkODgtOWJlMS04MWJiNDkzNjU3Y2IxLTE3ODAzNTY3MTE2MTQwLTcwMjkxODFjNGQ1YzEzNWExMCIsInJkIjoiY2EuZ292In0=\",\"uniqueKey\":\"https://dq.cde.ca.gov/dataquest/DQCensus/AttAbsByRsn.aspx?agglevel=state&cds=00&year=2022-23\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T23:31:52.033Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://dq.cde.ca.gov/dataquest/DQCensus/AttAbsByRsn.aspx?agglevel=state&cds=00&year=2022-23",
-	"url": "https://dq.cde.ca.gov/dataquest/DQCensus/AttAbsByRsn.aspx?agglevel=state&cds=00&year=2022-23"
-}

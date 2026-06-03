@@ -1,9 +1,0 @@
-{
-	"id": "4Tw3W1ivw7lz6Ul",
-	"json": "{\"id\":\"4Tw3W1ivw7lz6Ul\",\"url\":\"https://ltg.ca.gov/environment/\",\"loadedUrl\":\"https://ltg.ca.gov/environment/\",\"uniqueKey\":\"https://ltg.ca.gov/environment\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:47.574Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ltg.ca.gov/environment",
-	"url": "https://ltg.ca.gov/environment/"
-}

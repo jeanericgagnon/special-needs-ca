@@ -1,9 +1,0 @@
-{
-	"id": "Dx1rpi1AdkpTZa4",
-	"json": "{\"id\":\"Dx1rpi1AdkpTZa4\",\"url\":\"https://www.cdcr.ca.gov/about-cdcr/secretary/\",\"loadedUrl\":\"https://www.cdcr.ca.gov/about-cdcr/secretary/\",\"uniqueKey\":\"https://www.cdcr.ca.gov/about-cdcr/secretary\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:09.258Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdcr.ca.gov/about-cdcr/secretary",
-	"url": "https://www.cdcr.ca.gov/about-cdcr/secretary/"
-}

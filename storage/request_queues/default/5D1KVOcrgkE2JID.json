@@ -1,9 +1,0 @@
-{
-	"id": "5D1KVOcrgkE2JID",
-	"json": "{\"id\":\"5D1KVOcrgkE2JID\",\"url\":\"https://hcai.ca.gov/construction-finance/construction-financing/\",\"loadedUrl\":\"https://hcai.ca.gov/facilities/health-facility-financing/construction-financing/\",\"uniqueKey\":\"https://hcai.ca.gov/construction-finance/construction-financing\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:12:22.382Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hcai.ca.gov/construction-finance/construction-financing",
-	"url": "https://hcai.ca.gov/construction-finance/construction-financing/"
-}

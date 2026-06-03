@@ -1,9 +1,0 @@
-{
-	"id": "YshH8FgU5jiPt0b",
-	"json": "{\"id\":\"YshH8FgU5jiPt0b\",\"url\":\"https://www.dds.ca.gov/transparency/laws-regulations/\",\"loadedUrl\":\"https://www.dds.ca.gov/transparency/laws-regulations/\",\"uniqueKey\":\"https://www.dds.ca.gov/transparency/laws-regulations\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:27.337Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/transparency/laws-regulations",
-	"url": "https://www.dds.ca.gov/transparency/laws-regulations/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "6A0Ff6rySt6juEk",
-	"json": "{\"id\":\"6A0Ff6rySt6juEk\",\"url\":\"https://www.sos.ca.gov/elections/voting-resources/voting-california/khmer\",\"loadedUrl\":\"https://www.sos.ca.gov/elections/voting-resources/voting-california/khmer\",\"uniqueKey\":\"https://www.sos.ca.gov/elections/voting-resources/voting-california/khmer\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:47.752Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.sos.ca.gov/elections/voting-resources/voting-california/khmer",
-	"url": "https://www.sos.ca.gov/elections/voting-resources/voting-california/khmer"
-}

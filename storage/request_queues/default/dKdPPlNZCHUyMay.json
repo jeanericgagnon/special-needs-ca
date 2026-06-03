@@ -1,9 +1,0 @@
-{
-	"id": "dKdPPlNZCHUyMay",
-	"json": "{\"id\":\"dKdPPlNZCHUyMay\",\"url\":\"https://www.dds.ca.gov/services/mhsa/mental-health-services-act-progress-reports/\",\"loadedUrl\":\"https://www.dds.ca.gov/services/mhsa/mental-health-services-act-progress-reports/\",\"uniqueKey\":\"https://www.dds.ca.gov/services/mhsa/mental-health-services-act-progress-reports\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:45.900Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/services/mhsa/mental-health-services-act-progress-reports",
-	"url": "https://www.dds.ca.gov/services/mhsa/mental-health-services-act-progress-reports/"
-}

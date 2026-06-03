@@ -1,9 +1,0 @@
-{
-	"id": "kWLKNwdBI8qnROl",
-	"json": "{\"id\":\"kWLKNwdBI8qnROl\",\"url\":\"https://health.ucdavis.edu/children/patient-education/Inflammatory-Bowel-Disease\",\"loadedUrl\":\"https://health.ucdavis.edu/children/patient-education/Inflammatory-Bowel-Disease\",\"uniqueKey\":\"https://health.ucdavis.edu/children/patient-education/Inflammatory-Bowel-Disease\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:56.823Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/children/patient-education/Inflammatory-Bowel-Disease",
-	"url": "https://health.ucdavis.edu/children/patient-education/Inflammatory-Bowel-Disease"
-}

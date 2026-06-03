@@ -1,9 +1,0 @@
-{
-	"id": "5QLS39HADErsJTC",
-	"json": "{\"id\":\"5QLS39HADErsJTC\",\"url\":\"https://www.cdss.ca.gov/inforesources/guaranteed-income-exemption-requests\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/guaranteed-income-exemption-requests\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/guaranteed-income-exemption-requests\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:35.395Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/inforesources/guaranteed-income-exemption-requests",
-	"url": "https://www.cdss.ca.gov/inforesources/guaranteed-income-exemption-requests"
-}

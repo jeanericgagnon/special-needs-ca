@@ -1,9 +1,0 @@
-{
-	"id": "77wyOsiQSzlWDiV",
-	"json": "{\"id\":\"77wyOsiQSzlWDiV\",\"url\":\"https://oig.ssa.gov/report/\",\"loadedUrl\":\"https://oig.ssa.gov/report/\",\"uniqueKey\":\"https://oig.ssa.gov/report\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:40.992Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://oig.ssa.gov/report",
-	"url": "https://oig.ssa.gov/report/"
-}

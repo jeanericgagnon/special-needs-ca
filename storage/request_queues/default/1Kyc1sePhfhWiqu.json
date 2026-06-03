@@ -1,9 +1,0 @@
-{
-	"id": "1Kyc1sePhfhWiqu",
-	"json": "{\"id\":\"1Kyc1sePhfhWiqu\",\"url\":\"https://rarediseases.org/rare-diseases/keratomalacia/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/keratomalacia/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/keratomalacia\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:15:46.846Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/rare-diseases/keratomalacia",
-	"url": "https://rarediseases.org/rare-diseases/keratomalacia/"
-}

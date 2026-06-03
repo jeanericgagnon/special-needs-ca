@@ -1,9 +1,0 @@
-{
-	"id": "bp2N76bElL4U7HV",
-	"json": "{\"id\":\"bp2N76bElL4U7HV\",\"url\":\"https://surveys3.cde.ca.gov/go/cte-mcs-stdsvalid-healthcare.asp\",\"loadedUrl\":\"https://surveys3.cde.ca.gov/s.asp?k=177143636207\",\"uniqueKey\":\"https://surveys3.cde.ca.gov/go/cte-mcs-stdsvalid-healthcare.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:40:09.082Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://surveys3.cde.ca.gov/go/cte-mcs-stdsvalid-healthcare.asp",
-	"url": "https://surveys3.cde.ca.gov/go/cte-mcs-stdsvalid-healthcare.asp"
-}

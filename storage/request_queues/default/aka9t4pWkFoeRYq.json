@@ -1,9 +1,0 @@
-{
-	"id": "aka9t4pWkFoeRYq",
-	"json": "{\"id\":\"aka9t4pWkFoeRYq\",\"url\":\"https://iet.ucdavis.edu/it-governance-committees-and-special-interest-groups\",\"loadedUrl\":\"https://iet.ucdavis.edu/it-governance-committees-and-special-interest-groups\",\"uniqueKey\":\"https://iet.ucdavis.edu/it-governance-committees-and-special-interest-groups\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:36.483Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://iet.ucdavis.edu/it-governance-committees-and-special-interest-groups",
-	"url": "https://iet.ucdavis.edu/it-governance-committees-and-special-interest-groups"
-}

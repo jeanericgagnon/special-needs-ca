@@ -1,9 +1,0 @@
-{
-	"id": "zKlqS3r7dAcBaRa",
-	"json": "{\"id\":\"zKlqS3r7dAcBaRa\",\"url\":\"https://rarediseases.org/organizations/coalition-to-cure-calpain-3-c3/\",\"loadedUrl\":\"https://rarediseases.org/organizations/coalition-to-cure-calpain-3-c3/\",\"uniqueKey\":\"https://rarediseases.org/organizations/coalition-to-cure-calpain-3-c3\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:15:44.801Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/organizations/coalition-to-cure-calpain-3-c3",
-	"url": "https://rarediseases.org/organizations/coalition-to-cure-calpain-3-c3/"
-}

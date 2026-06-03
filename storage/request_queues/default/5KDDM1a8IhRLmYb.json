@@ -1,9 +1,0 @@
-{
-	"id": "5KDDM1a8IhRLmYb",
-	"json": "{\"id\":\"5KDDM1a8IhRLmYb\",\"url\":\"https://www.dgs.ca.gov/ccda#@ViewBag.JumpTo\",\"loadedUrl\":\"https://www.dgs.ca.gov/ccda#@ViewBag.JumpTo\",\"uniqueKey\":\"https://www.dgs.ca.gov/ccda\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:50.497Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dgs.ca.gov/ccda",
-	"url": "https://www.dgs.ca.gov/ccda#@ViewBag.JumpTo"
-}

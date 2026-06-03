@@ -1,9 +1,0 @@
-{
-	"id": "9I7gCsxcvjasHta",
-	"json": "{\"id\":\"9I7gCsxcvjasHta\",\"url\":\"https://health.ucdavis.edu/medicalcenter/patients/affiliations-care-policies.html\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-center/patients/affiliations-care-policies\",\"uniqueKey\":\"https://health.ucdavis.edu/medicalcenter/patients/affiliations-care-policies.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:03.313Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/medicalcenter/patients/affiliations-care-policies.html",
-	"url": "https://health.ucdavis.edu/medicalcenter/patients/affiliations-care-policies.html"
-}

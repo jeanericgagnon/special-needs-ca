@@ -1,9 +1,0 @@
-{
-	"id": "Nju7yy4whqIivUC",
-	"json": "{\"id\":\"Nju7yy4whqIivUC\",\"url\":\"https://health.ucdavis.edu/patients-visitors/news/headlines/advancing-global-health-uc-davis-test-identifies-active-infectious-form-of-tb/2026/03\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/news/headlines/advancing-global-health-uc-davis-test-identifies-active-infectious-form-of-tb/2026/03\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/news/headlines/advancing-global-health-uc-davis-test-identifies-active-infectious-form-of-tb/2026/03\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:52.585Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/news/headlines/advancing-global-health-uc-davis-test-identifies-active-infectious-form-of-tb/2026/03",
-	"url": "https://health.ucdavis.edu/patients-visitors/news/headlines/advancing-global-health-uc-davis-test-identifies-active-infectious-form-of-tb/2026/03"
-}

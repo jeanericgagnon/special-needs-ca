@@ -1,9 +1,0 @@
-{
-	"id": "vGRcRrRU0osh6fX",
-	"json": "{\"id\":\"vGRcRrRU0osh6fX\",\"url\":\"https://www.cde.ca.gov/ds/dc/cb/faqs.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ds/dc/cb/faqs.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ds/dc/cb/faqs.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:23:42.716Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ds/dc/cb/faqs.asp",
-	"url": "https://www.cde.ca.gov/ds/dc/cb/faqs.asp"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "mijlk8zxF2Oibee",
-	"json": "{\"id\":\"mijlk8zxF2Oibee\",\"url\":\"https://rarediseases.org/rare-diseases/infantile-neuroaxonal-dystrophy/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/infantile-neuroaxonal-dystrophy/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/infantile-neuroaxonal-dystrophy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:12:04.131Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/rare-diseases/infantile-neuroaxonal-dystrophy",
-	"url": "https://rarediseases.org/rare-diseases/infantile-neuroaxonal-dystrophy/"
-}

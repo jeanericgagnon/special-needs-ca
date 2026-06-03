@@ -1,9 +1,0 @@
-{
-	"id": "I569rxXs2GRJuu2",
-	"json": "{\"id\":\"I569rxXs2GRJuu2\",\"url\":\"https://psychology.ucdavis.edu/people/blissmor\",\"loadedUrl\":\"https://psychology.ucdavis.edu/people/eliza-bliss-moreau\",\"uniqueKey\":\"https://psychology.ucdavis.edu/people/blissmor\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:42.787Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://psychology.ucdavis.edu/people/blissmor",
-	"url": "https://psychology.ucdavis.edu/people/blissmor"
-}

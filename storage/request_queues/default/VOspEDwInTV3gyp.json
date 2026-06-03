@@ -1,9 +1,0 @@
-{
-	"id": "VOspEDwInTV3gyp",
-	"json": "{\"id\":\"VOspEDwInTV3gyp\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/21851/mili-arora-breast_cancer-cancer-hematology_oncology-oncology-thyroid-sacramento?FreeText%3aLast+name=Arora\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/21851/mili-arora-breast_cancer-cancer-hematology_oncology-oncology-thyroid-sacramento?FreeText%3aLast+name=Arora\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/21851/mili-arora-breast_cancer-cancer-hematology_oncology-oncology-thyroid-sacramento?FreeText%3ALast+name=Arora\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:10.733Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/21851/mili-arora-breast_cancer-cancer-hematology_oncology-oncology-thyroid-sacramento?FreeText%3ALast+name=Arora",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/21851/mili-arora-breast_cancer-cancer-hematology_oncology-oncology-thyroid-sacramento?FreeText%3aLast+name=Arora"
-}

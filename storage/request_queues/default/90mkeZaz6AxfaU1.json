@@ -1,9 +1,0 @@
-{
-	"id": "90mkeZaz6AxfaU1",
-	"json": "{\"id\":\"90mkeZaz6AxfaU1\",\"url\":\"https://scdd.ca.gov/membership_committee/\",\"loadedUrl\":\"https://scdd.ca.gov/membership_committee/\",\"uniqueKey\":\"https://scdd.ca.gov/membership_committee\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:24.933Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/membership_committee",
-	"url": "https://scdd.ca.gov/membership_committee/"
-}

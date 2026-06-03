@@ -1,9 +1,0 @@
-{
-	"id": "VrEJEzwdDmVgv7X",
-	"json": "{\"id\":\"VrEJEzwdDmVgv7X\",\"url\":\"https://mindbrain.ucdavis.edu/people\",\"loadedUrl\":\"https://mindbrain.ucdavis.edu/people\",\"uniqueKey\":\"https://mindbrain.ucdavis.edu/people\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:02.965Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://mindbrain.ucdavis.edu/people",
-	"url": "https://mindbrain.ucdavis.edu/people"
-}

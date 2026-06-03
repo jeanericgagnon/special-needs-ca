@@ -1,9 +1,0 @@
-{
-	"id": "mLmdj0OLg1U1OuF",
-	"json": "{\"id\":\"mLmdj0OLg1U1OuF\",\"url\":\"https://www.ucdavis.edu/news/rankings-recognize-global-leadership-uc-davis-0\",\"loadedUrl\":\"https://www.ucdavis.edu/news/rankings-recognize-global-leadership-uc-davis-0\",\"uniqueKey\":\"https://www.ucdavis.edu/news/rankings-recognize-global-leadership-uc-davis-0\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:46.768Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ucdavis.edu/news/rankings-recognize-global-leadership-uc-davis-0",
-	"url": "https://www.ucdavis.edu/news/rankings-recognize-global-leadership-uc-davis-0"
-}

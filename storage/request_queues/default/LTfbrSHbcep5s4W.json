@@ -1,9 +1,0 @@
-{
-	"id": "LTfbrSHbcep5s4W",
-	"json": "{\"id\":\"LTfbrSHbcep5s4W\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/43007/daniel-cortez-cardiology-congenital_anomalies-electrophysiology-pediatric_cardiology-sacramento?FreeText%3aLast+name=Cortez\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/43007/daniel-cortez-cardiology-congenital_anomalies-electrophysiology-pediatric_cardiology-sacramento?FreeText%3aLast+name=Cortez\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/43007/daniel-cortez-cardiology-congenital_anomalies-electrophysiology-pediatric_cardiology-sacramento?FreeText%3ALast+name=Cortez\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:16.117Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/43007/daniel-cortez-cardiology-congenital_anomalies-electrophysiology-pediatric_cardiology-sacramento?FreeText%3ALast+name=Cortez",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/43007/daniel-cortez-cardiology-congenital_anomalies-electrophysiology-pediatric_cardiology-sacramento?FreeText%3aLast+name=Cortez"
-}

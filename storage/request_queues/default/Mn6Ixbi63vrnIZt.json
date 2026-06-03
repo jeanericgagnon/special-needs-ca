@@ -1,9 +1,0 @@
-{
-	"id": "Mn6Ixbi63vrnIZt",
-	"json": "{\"id\":\"Mn6Ixbi63vrnIZt\",\"url\":\"https://give.ucdavis.edu/AANS/324353\",\"loadedUrl\":\"https://give.ucdavis.edu/AANS/324353\",\"uniqueKey\":\"https://give.ucdavis.edu/AANS/324353\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:54.372Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/AANS/324353",
-	"url": "https://give.ucdavis.edu/AANS/324353"
-}

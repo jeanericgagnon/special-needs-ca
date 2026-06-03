@@ -1,9 +1,0 @@
-{
-	"id": "Cm8xguecEODLaWn",
-	"json": "{\"id\":\"Cm8xguecEODLaWn\",\"url\":\"https://health.ucdavis.edu/mdprogram/research/arc-md/index.html\",\"loadedUrl\":\"https://health.ucdavis.edu/mdprogram/research/arc-md/index.html\",\"uniqueKey\":\"https://health.ucdavis.edu/mdprogram/research/arc-md/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:04.444Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mdprogram/research/arc-md/index.html",
-	"url": "https://health.ucdavis.edu/mdprogram/research/arc-md/index.html"
-}

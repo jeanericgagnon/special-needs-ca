@@ -1,9 +1,0 @@
-{
-	"id": "kk5jsGhYcQLClz8",
-	"json": "{\"id\":\"kk5jsGhYcQLClz8\",\"url\":\"https://www.library.ca.gov/btbl/federal-funding-update/\",\"loadedUrl\":\"https://www.library.ca.gov/btbl/federal-funding-update/\",\"uniqueKey\":\"https://www.library.ca.gov/btbl/federal-funding-update\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:09:05.429Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.library.ca.gov/btbl/federal-funding-update",
-	"url": "https://www.library.ca.gov/btbl/federal-funding-update/"
-}

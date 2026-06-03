@@ -1,9 +1,0 @@
-{
-	"id": "lIMSI0Cvem3M7vS",
-	"json": "{\"id\":\"lIMSI0Cvem3M7vS\",\"url\":\"https://research.ucdavis.edu/\",\"loadedUrl\":\"https://research.ucdavis.edu/\",\"uniqueKey\":\"https://research.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:45.851Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://research.ucdavis.edu",
-	"url": "https://research.ucdavis.edu/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "fz596MV3XfpTTUb",
-	"json": "{\"id\":\"fz596MV3XfpTTUb\",\"url\":\"http://www.cdph.ca.gov/Pages/NR16-081.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Pages/NR16-081.aspx\",\"uniqueKey\":\"http://www.cdph.ca.gov/Pages/NR16-081.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:22:23.432Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.cdph.ca.gov/Pages/NR16-081.aspx",
-	"url": "http://www.cdph.ca.gov/Pages/NR16-081.aspx"
-}

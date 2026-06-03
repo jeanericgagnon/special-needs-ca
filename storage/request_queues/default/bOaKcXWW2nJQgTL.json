@@ -1,9 +1,0 @@
-{
-	"id": "bOaKcXWW2nJQgTL",
-	"json": "{\"id\":\"bOaKcXWW2nJQgTL\",\"url\":\"https://www.cdph.ca.gov/Programs/HRB/Pages/DEI.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/HRB/Pages/DEI.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/HRB/Pages/DEI.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:03:34.446Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/HRB/Pages/DEI.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/HRB/Pages/DEI.aspx"
-}

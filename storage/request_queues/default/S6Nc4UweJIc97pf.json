@@ -1,9 +1,0 @@
-{
-	"id": "S6Nc4UweJIc97pf",
-	"json": "{\"id\":\"S6Nc4UweJIc97pf\",\"url\":\"https://www.cde.ca.gov/fg/ac/ic/icrfaq.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/fg/ac/ic/icrfaq.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/fg/ac/ic/icrfaq.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:21:50.328Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/fg/ac/ic/icrfaq.asp",
-	"url": "https://www.cde.ca.gov/fg/ac/ic/icrfaq.asp"
-}

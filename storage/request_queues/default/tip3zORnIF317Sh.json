@@ -1,9 +1,0 @@
-{
-	"id": "tip3zORnIF317Sh",
-	"json": "{\"id\":\"tip3zORnIF317Sh\",\"url\":\"https://scdd.ca.gov/pos-service-code/interdisciplinary-assessment-service/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/interdisciplinary-assessment-service/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/interdisciplinary-assessment-service\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:00.810Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/pos-service-code/interdisciplinary-assessment-service",
-	"url": "https://scdd.ca.gov/pos-service-code/interdisciplinary-assessment-service/"
-}

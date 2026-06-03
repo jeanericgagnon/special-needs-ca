@@ -1,9 +1,0 @@
-{
-	"id": "H78g0bGIskHtiY0",
-	"json": "{\"id\":\"H78g0bGIskHtiY0\",\"url\":\"https://cnprc.ucdavis.edu/anatomic-and-clinical-pathology\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/anatomic-and-clinical-pathology\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/anatomic-and-clinical-pathology\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:15.508Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cnprc.ucdavis.edu/anatomic-and-clinical-pathology",
-	"url": "https://cnprc.ucdavis.edu/anatomic-and-clinical-pathology"
-}

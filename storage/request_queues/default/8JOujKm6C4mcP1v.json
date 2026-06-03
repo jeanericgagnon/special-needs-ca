@@ -1,9 +1,0 @@
-{
-	"id": "8JOujKm6C4mcP1v",
-	"json": "{\"id\":\"8JOujKm6C4mcP1v\",\"url\":\"https://edd.ca.gov/en/payroll_taxes/holidays/\",\"loadedUrl\":\"https://edd.ca.gov/en/payroll_taxes/holidays/\",\"uniqueKey\":\"https://edd.ca.gov/en/payroll_taxes/holidays\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:41.391Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://edd.ca.gov/en/payroll_taxes/holidays",
-	"url": "https://edd.ca.gov/en/payroll_taxes/holidays/"
-}

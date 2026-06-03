@@ -1,9 +1,0 @@
-{
-	"id": "G4bP2RYedaHiqqb",
-	"json": "{\"id\":\"G4bP2RYedaHiqqb\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DGDS/_layouts/15/listform.aspx?ListId=%7B82399EAE%2D5FAD%2D47F5%2D9C23%2DC43F6C35CA33%7D&PageType=0\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/default.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DGDS/_layouts/15/listform.aspx?ListId=%7B82399EAE-5FAD-47F5-9C23-C43F6C35CA33%7D&PageType=0\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:17.284Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DGDS/_layouts/15/listform.aspx?ListId=%7B82399EAE-5FAD-47F5-9C23-C43F6C35CA33%7D&PageType=0",
-	"url": "https://www.cdph.ca.gov/Programs/CFH/DGDS/_layouts/15/listform.aspx?ListId=%7B82399EAE%2D5FAD%2D47F5%2D9C23%2DC43F6C35CA33%7D&PageType=0"
-}

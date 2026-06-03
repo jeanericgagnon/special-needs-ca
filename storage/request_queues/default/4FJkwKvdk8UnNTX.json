@@ -1,9 +1,0 @@
-{
-	"id": "4FJkwKvdk8UnNTX",
-	"json": "{\"id\":\"4FJkwKvdk8UnNTX\",\"url\":\"https://scdd.ca.gov/pos-service-code/transportation-public-transit-authority-dial-a-ride-rental-car-agency-or-taxi/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/transportation-public-transit-authority-dial-a-ride-rental-car-agency-or-taxi/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/transportation-public-transit-authority-dial-a-ride-rental-car-agency-or-taxi\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:52.610Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/pos-service-code/transportation-public-transit-authority-dial-a-ride-rental-car-agency-or-taxi",
-	"url": "https://scdd.ca.gov/pos-service-code/transportation-public-transit-authority-dial-a-ride-rental-car-agency-or-taxi/"
-}

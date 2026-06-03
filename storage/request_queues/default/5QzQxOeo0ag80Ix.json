@@ -1,9 +1,0 @@
-{
-	"id": "5QzQxOeo0ag80Ix",
-	"json": "{\"id\":\"5QzQxOeo0ag80Ix\",\"url\":\"https://www.ctc.ca.gov/commission/notices/\",\"loadedUrl\":\"https://www.ctc.ca.gov/commission/notices/\",\"uniqueKey\":\"https://www.ctc.ca.gov/commission/notices\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:24.108Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ctc.ca.gov/commission/notices",
-	"url": "https://www.ctc.ca.gov/commission/notices/"
-}

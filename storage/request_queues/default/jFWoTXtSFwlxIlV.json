@@ -1,9 +1,0 @@
-{
-	"id": "jFWoTXtSFwlxIlV",
-	"json": "{\"id\":\"jFWoTXtSFwlxIlV\",\"url\":\"https://compling.ucdavis.edu/sagae/\",\"loadedUrl\":\"https://compling.ucdavis.edu/sagae/\",\"uniqueKey\":\"https://compling.ucdavis.edu/sagae\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:11.065Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://compling.ucdavis.edu/sagae",
-	"url": "https://compling.ucdavis.edu/sagae/"
-}

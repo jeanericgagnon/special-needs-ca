@@ -1,9 +1,0 @@
-{
-	"id": "ZMgEXNtuwM4JPGi",
-	"json": "{\"id\":\"ZMgEXNtuwM4JPGi\",\"url\":\"https://scdd.ca.gov/pos-service-code/adaptive-skills-training-professional-specialist/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/adaptive-skills-training-professional-specialist/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/adaptive-skills-training-professional-specialist\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:01.163Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/pos-service-code/adaptive-skills-training-professional-specialist",
-	"url": "https://scdd.ca.gov/pos-service-code/adaptive-skills-training-professional-specialist/"
-}

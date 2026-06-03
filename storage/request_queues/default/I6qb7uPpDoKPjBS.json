@@ -1,9 +1,0 @@
-{
-	"id": "I6qb7uPpDoKPjBS",
-	"json": "{\"id\":\"I6qb7uPpDoKPjBS\",\"url\":\"https://ucpath.ucdavis.edu/news/ucpath-notice-pathpal-chatbot-now-available\",\"loadedUrl\":\"https://ucpath.ucdavis.edu/news/ucpath-notice-pathpal-chatbot-now-available\",\"uniqueKey\":\"https://ucpath.ucdavis.edu/news/ucpath-notice-pathpal-chatbot-now-available\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:40.554Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ucpath.ucdavis.edu/news/ucpath-notice-pathpal-chatbot-now-available",
-	"url": "https://ucpath.ucdavis.edu/news/ucpath-notice-pathpal-chatbot-now-available"
-}

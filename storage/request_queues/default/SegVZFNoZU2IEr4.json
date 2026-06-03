@@ -1,9 +1,0 @@
-{
-	"id": "SegVZFNoZU2IEr4",
-	"json": "{\"id\":\"SegVZFNoZU2IEr4\",\"url\":\"https://www.dhcs.ca.gov/CalAIM/Pages/BH-CONNECT.aspx\",\"loadedUrl\":\"https://www.dhcs.ca.gov/calaim-transforming-medi-cal/behavioral-health-community-based-organized-networks-of-equitable-care-and-treatment-bh-connect-initiative/\",\"uniqueKey\":\"https://www.dhcs.ca.gov/CalAIM/Pages/BH-CONNECT.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:53:41.416Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dhcs.ca.gov/CalAIM/Pages/BH-CONNECT.aspx",
-	"url": "https://www.dhcs.ca.gov/CalAIM/Pages/BH-CONNECT.aspx"
-}

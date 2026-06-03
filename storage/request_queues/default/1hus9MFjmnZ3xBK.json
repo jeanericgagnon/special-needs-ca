@@ -1,9 +1,0 @@
-{
-	"id": "1hus9MFjmnZ3xBK",
-	"json": "{\"id\":\"1hus9MFjmnZ3xBK\",\"url\":\"https://cdss.ca.gov/inforesources/CECRIS/Project-Status-Events-and-Updates\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/cecris/project-status-events-and-updates\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/CECRIS/Project-Status-Events-and-Updates\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:51.903Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/CECRIS/Project-Status-Events-and-Updates",
-	"url": "https://cdss.ca.gov/inforesources/CECRIS/Project-Status-Events-and-Updates"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "gtHlF9MLevJ5z5x",
-	"json": "{\"id\":\"gtHlF9MLevJ5z5x\",\"url\":\"https://rarediseases.org/organizations/myasthenia-gravis-foundation-of-america-inc/\",\"loadedUrl\":\"https://rarediseases.org/organizations/myasthenia-gravis-foundation-of-america-inc/\",\"uniqueKey\":\"https://rarediseases.org/organizations/myasthenia-gravis-foundation-of-america-inc\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:18:27.576Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/organizations/myasthenia-gravis-foundation-of-america-inc",
-	"url": "https://rarediseases.org/organizations/myasthenia-gravis-foundation-of-america-inc/"
-}

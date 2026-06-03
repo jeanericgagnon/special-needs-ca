@@ -1,9 +1,0 @@
-{
-	"id": "A4QWd2bM7g9hfu4",
-	"json": "{\"id\":\"A4QWd2bM7g9hfu4\",\"url\":\"https://health.ucdavis.edu/conditions/cancer/digestive-system-cancer\",\"loadedUrl\":\"https://health.ucdavis.edu/conditions/cancer/digestive-system-cancer\",\"uniqueKey\":\"https://health.ucdavis.edu/conditions/cancer/digestive-system-cancer\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:47.498Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/conditions/cancer/digestive-system-cancer",
-	"url": "https://health.ucdavis.edu/conditions/cancer/digestive-system-cancer"
-}

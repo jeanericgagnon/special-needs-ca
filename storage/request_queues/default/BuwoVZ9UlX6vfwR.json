@@ -1,9 +1,0 @@
-{
-	"id": "BuwoVZ9UlX6vfwR",
-	"json": "{\"id\":\"BuwoVZ9UlX6vfwR\",\"url\":\"https://www.dds.ca.gov/rc/vendor-provider/rate-reform/directives-updates/\",\"loadedUrl\":\"https://www.dds.ca.gov/rc/vendor-provider/rate-reform/directives-updates/\",\"uniqueKey\":\"https://www.dds.ca.gov/rc/vendor-provider/rate-reform/directives-updates\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:03.250Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/rc/vendor-provider/rate-reform/directives-updates",
-	"url": "https://www.dds.ca.gov/rc/vendor-provider/rate-reform/directives-updates/"
-}

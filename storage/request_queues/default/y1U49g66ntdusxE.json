@@ -1,9 +1,0 @@
-{
-	"id": "y1U49g66ntdusxE",
-	"json": "{\"id\":\"y1U49g66ntdusxE\",\"url\":\"https://www.ftb.ca.gov/myftb/index.asp?WT.mc_id=CAGov_Service_MyFTB\",\"loadedUrl\":\"https://www.ftb.ca.gov/myftb/index.asp?WT.mc_id=CAGov_Service_MyFTB\",\"uniqueKey\":\"https://www.ftb.ca.gov/myftb/index.asp?WT.mc_id=CAGov_Service_MyFTB\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:31.533Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ftb.ca.gov/myftb/index.asp?WT.mc_id=CAGov_Service_MyFTB",
-	"url": "https://www.ftb.ca.gov/myftb/index.asp?WT.mc_id=CAGov_Service_MyFTB"
-}

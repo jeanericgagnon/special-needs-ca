@@ -1,9 +1,0 @@
-{
-	"id": "DE6iKVae3rV0iPD",
-	"json": "{\"id\":\"DE6iKVae3rV0iPD\",\"url\":\"https://www.dgs.ca.gov/Resources/SAM\",\"loadedUrl\":\"https://www.dgs.ca.gov/Resources/SAM\",\"uniqueKey\":\"https://www.dgs.ca.gov/Resources/SAM\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:06.243Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dgs.ca.gov/Resources/SAM",
-	"url": "https://www.dgs.ca.gov/Resources/SAM"
-}

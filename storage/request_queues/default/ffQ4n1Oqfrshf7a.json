@@ -1,9 +1,0 @@
-{
-	"id": "ffQ4n1Oqfrshf7a",
-	"json": "{\"id\":\"ffQ4n1Oqfrshf7a\",\"url\":\"https://www.ca.gov/?utm_campaign=state_template_link&utm_medium=header&utm_source=external\",\"loadedUrl\":\"https://www.ca.gov/?utm_campaign=state_template_link&utm_medium=header&utm_source=external\",\"uniqueKey\":\"https://www.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:17.110Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ca.gov",
-	"url": "https://www.ca.gov/?utm_campaign=state_template_link&utm_medium=header&utm_source=external"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "5HEPJ20rh0g1yUg",
-	"json": "{\"id\":\"5HEPJ20rh0g1yUg\",\"url\":\"https://rarediseases.org/rare-diseases/turner-syndrome/#complete-report\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/turner-syndrome/#complete-report\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/turner-syndrome\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:10:46.157Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/rare-diseases/turner-syndrome",
-	"url": "https://rarediseases.org/rare-diseases/turner-syndrome/#complete-report"
-}

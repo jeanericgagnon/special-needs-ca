@@ -1,9 +1,0 @@
-{
-	"id": "fuY5S7eSlvibJSi",
-	"json": "{\"id\":\"fuY5S7eSlvibJSi\",\"url\":\"https://health.ucdavis.edu/mind-institute/events/summer-institute\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/events/summer-institute\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/events/summer-institute\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:24.823Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mind-institute/events/summer-institute",
-	"url": "https://health.ucdavis.edu/mind-institute/events/summer-institute"
-}

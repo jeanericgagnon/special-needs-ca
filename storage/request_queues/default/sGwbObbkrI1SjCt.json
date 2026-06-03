@@ -1,9 +1,0 @@
-{
-	"id": "sGwbObbkrI1SjCt",
-	"json": "{\"id\":\"sGwbObbkrI1SjCt\",\"url\":\"https://health.ucdavis.edu/medicalcenter/myucdavishealth/family-video-visits.html\",\"loadedUrl\":\"https://health.ucdavis.edu/myucdavishealth/family-video-visits/\",\"uniqueKey\":\"https://health.ucdavis.edu/medicalcenter/myucdavishealth/family-video-visits.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:10:28.964Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/medicalcenter/myucdavishealth/family-video-visits.html",
-	"url": "https://health.ucdavis.edu/medicalcenter/myucdavishealth/family-video-visits.html"
-}

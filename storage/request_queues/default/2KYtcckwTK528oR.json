@@ -1,9 +1,0 @@
-{
-	"id": "2KYtcckwTK528oR",
-	"json": "{\"id\":\"2KYtcckwTK528oR\",\"url\":\"https://health.ucdavis.edu/internal-medicine/hematology-oncology/careers\",\"loadedUrl\":\"https://health.ucdavis.edu/internal-medicine/hematology-oncology/careers\",\"uniqueKey\":\"https://health.ucdavis.edu/internal-medicine/hematology-oncology/careers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:14.364Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/internal-medicine/hematology-oncology/careers",
-	"url": "https://health.ucdavis.edu/internal-medicine/hematology-oncology/careers"
-}

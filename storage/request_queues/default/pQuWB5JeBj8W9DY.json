@@ -1,9 +1,0 @@
-{
-	"id": "pQuWB5JeBj8W9DY",
-	"json": "{\"id\":\"pQuWB5JeBj8W9DY\",\"url\":\"https://health.ucdavis.edu/news/headlines/us-news--world-report-names-uc-davis-childrens-hospital-among-the-nations-best/2025/10\",\"loadedUrl\":\"https://health.ucdavis.edu/news/headlines/us-news--world-report-names-uc-davis-childrens-hospital-among-the-nations-best/2025/10\",\"uniqueKey\":\"https://health.ucdavis.edu/news/headlines/us-news--world-report-names-uc-davis-childrens-hospital-among-the-nations-best/2025/10\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:46:09.232Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/news/headlines/us-news--world-report-names-uc-davis-childrens-hospital-among-the-nations-best/2025/10",
-	"url": "https://health.ucdavis.edu/news/headlines/us-news--world-report-names-uc-davis-childrens-hospital-among-the-nations-best/2025/10"
-}

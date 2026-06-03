@@ -1,9 +1,0 @@
-{
-	"id": "k0r4vI5M4yLoggz",
-	"json": "{\"id\":\"k0r4vI5M4yLoggz\",\"url\":\"https://www.aging.ca.gov/Care_Options/\",\"loadedUrl\":\"https://www.aging.ca.gov/Care_Options/\",\"uniqueKey\":\"https://www.aging.ca.gov/Care_Options\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T17:26:25.368Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.aging.ca.gov/Care_Options",
-	"url": "https://www.aging.ca.gov/Care_Options/"
-}

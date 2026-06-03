@@ -1,9 +1,0 @@
-{
-	"id": "4gQBvjMrj5AtjKQ",
-	"json": "{\"id\":\"4gQBvjMrj5AtjKQ\",\"url\":\"https://health.ucdavis.edu/mind-institute/resources/advocacy\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/resources/advocacy\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/resources/advocacy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:37.732Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mind-institute/resources/advocacy",
-	"url": "https://health.ucdavis.edu/mind-institute/resources/advocacy"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "kBn4Ia3kB1Jw9wa",
-	"json": "{\"id\":\"kBn4Ia3kB1Jw9wa\",\"url\":\"https://bcsh.ca.gov/hcfc/\",\"loadedUrl\":\"https://bcsh.ca.gov/calich/\",\"uniqueKey\":\"https://bcsh.ca.gov/hcfc\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:07.298Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://bcsh.ca.gov/hcfc",
-	"url": "https://bcsh.ca.gov/hcfc/"
-}

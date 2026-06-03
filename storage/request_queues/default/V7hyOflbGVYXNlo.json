@@ -1,9 +1,0 @@
-{
-	"id": "V7hyOflbGVYXNlo",
-	"json": "{\"id\":\"V7hyOflbGVYXNlo\",\"url\":\"https://health.ucdavis.edu/parking/intercampus/\",\"loadedUrl\":\"https://health.ucdavis.edu/parking/intercampus/\",\"uniqueKey\":\"https://health.ucdavis.edu/parking/intercampus\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:54.048Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/parking/intercampus",
-	"url": "https://health.ucdavis.edu/parking/intercampus/"
-}

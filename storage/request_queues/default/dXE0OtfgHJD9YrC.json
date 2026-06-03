@@ -1,9 +1,0 @@
-{
-	"id": "dXE0OtfgHJD9YrC",
-	"json": "{\"id\":\"dXE0OtfgHJD9YrC\",\"url\":\"https://www.chhs.ca.gov/blog/category/updates/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/category/updates/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/category/updates\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:07.361Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chhs.ca.gov/blog/category/updates",
-	"url": "https://www.chhs.ca.gov/blog/category/updates/"
-}

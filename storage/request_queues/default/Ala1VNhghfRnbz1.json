@@ -1,9 +1,0 @@
-{
-	"id": "Ala1VNhghfRnbz1",
-	"json": "{\"id\":\"Ala1VNhghfRnbz1\",\"url\":\"https://archive.cdph.ca.gov/programs/cdcb/Documents/CDPHEconomicBurdenCD2015California.pdf\",\"loadedUrl\":\"https://archive.cdph.ca.gov/\",\"uniqueKey\":\"https://archive.cdph.ca.gov/programs/cdcb/Documents/CDPHEconomicBurdenCD2015California.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:24:02.684Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://archive.cdph.ca.gov/programs/cdcb/Documents/CDPHEconomicBurdenCD2015California.pdf",
-	"url": "https://archive.cdph.ca.gov/programs/cdcb/Documents/CDPHEconomicBurdenCD2015California.pdf"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "oy00sOwfVm27Lpf",
-	"json": "{\"id\":\"oy00sOwfVm27Lpf\",\"url\":\"https://www.cde.ca.gov/ta/tg/ca/csa.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ta/tg/ca/csa.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ta/tg/ca/csa.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:39.976Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ta/tg/ca/csa.asp",
-	"url": "https://www.cde.ca.gov/ta/tg/ca/csa.asp"
-}

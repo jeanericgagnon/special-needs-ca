@@ -1,9 +1,0 @@
-{
-	"id": "zioecfrYnwtyDWs",
-	"json": "{\"id\":\"zioecfrYnwtyDWs\",\"url\":\"https://ucp.org/collaborative-research-brings-pediatric-mobility-innovation-to-ucp-of-greater-cleveland/\",\"loadedUrl\":\"https://ucp.org/collaborative-research-brings-pediatric-mobility-innovation-to-ucp-of-greater-cleveland/\",\"uniqueKey\":\"https://ucp.org/collaborative-research-brings-pediatric-mobility-innovation-to-ucp-of-greater-cleveland\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:33.198Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ucp.org/collaborative-research-brings-pediatric-mobility-innovation-to-ucp-of-greater-cleveland",
-	"url": "https://ucp.org/collaborative-research-brings-pediatric-mobility-innovation-to-ucp-of-greater-cleveland/"
-}

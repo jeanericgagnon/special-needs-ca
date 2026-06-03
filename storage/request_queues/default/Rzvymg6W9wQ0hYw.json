@@ -1,9 +1,0 @@
-{
-	"id": "Rzvymg6W9wQ0hYw",
-	"json": "{\"id\":\"Rzvymg6W9wQ0hYw\",\"url\":\"https://www.ca.gov/services/all/?q=car+\",\"loadedUrl\":\"https://www.ca.gov/services/all/?q=car+\",\"uniqueKey\":\"https://www.ca.gov/services/all?q=car+\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:21.767Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ca.gov/services/all?q=car+",
-	"url": "https://www.ca.gov/services/all/?q=car+"
-}

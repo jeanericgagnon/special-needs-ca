@@ -1,4 +1,4 @@
-import { CheerioCrawler } from 'crawlee';
+import { PlaywrightCrawler } from 'crawlee';
 import Database from 'better-sqlite3';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -61,18 +61,21 @@ const keywords = [
 console.log('Starting the Exhaustive Crawlee Spider...');
 console.log('This crawler will spider across all links on the seeded domains up to a depth of 5.');
 
-const crawler = new CheerioCrawler({
+const crawler = new PlaywrightCrawler({
     // Limits for testing. In the 24-hour run, maxRequestsPerCrawl can be removed or set to 100000.
     maxRequestsPerCrawl: process.env.TEST_MODE ? 50 : 50000,
-    maxConcurrency: 10, // Be polite to the state servers
+    maxConcurrency: 5, // Lower concurrency for browser-based crawlers to save local resources
     
-    async requestHandler({ request, $, enqueueLinks, log }) {
-        const title = $('title').text().trim();
-        const url = request.loadedUrl;
+    async requestHandler({ request, page, enqueueLinks, log }) {
+        const title = await page.title();
+        const url = request.loadedUrl || request.url;
         const domain = new URL(url).hostname;
         
-        // Extract text from paragraph and list elements
-        const rawText = $('p, li, h1, h2, h3, h4').map((i, el) => $(el).text().trim()).get().join('\\n');
+        // Extract text from paragraph, list, and heading elements inside browser page context
+        const rawText = await page.evaluate(() => {
+            const elements = Array.from(document.querySelectorAll('p, li, h1, h2, h3, h4'));
+            return elements.map(el => el.innerText.trim()).filter(Boolean).join('\n');
+        });
         
         // Check if the page contains relevant keywords before saving
         const lowerText = rawText.toLowerCase();

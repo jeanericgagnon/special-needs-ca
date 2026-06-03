@@ -1,9 +1,0 @@
-{
-	"id": "9mA59qdJgZgNamO",
-	"json": "{\"id\":\"9mA59qdJgZgNamO\",\"url\":\"https://extension.ucdavis.edu/areas-study/autism-spectrum-disorders\",\"loadedUrl\":\"https://cpe.ucdavis.edu/\",\"uniqueKey\":\"https://extension.ucdavis.edu/areas-study/autism-spectrum-disorders\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:49.353Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://extension.ucdavis.edu/areas-study/autism-spectrum-disorders",
-	"url": "https://extension.ucdavis.edu/areas-study/autism-spectrum-disorders"
-}

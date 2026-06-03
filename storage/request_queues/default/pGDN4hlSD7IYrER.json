@@ -1,9 +1,0 @@
-{
-	"id": "pGDN4hlSD7IYrER",
-	"json": "{\"id\":\"pGDN4hlSD7IYrER\",\"url\":\"https://www.csdr-cde.ca.gov/covid-19/index.asp\",\"loadedUrl\":\"https://www.csdr-cde.ca.gov/covid-19/index.asp\",\"uniqueKey\":\"https://www.csdr-cde.ca.gov/covid-19/index.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:08.019Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.csdr-cde.ca.gov/covid-19/index.asp",
-	"url": "https://www.csdr-cde.ca.gov/covid-19/index.asp"
-}

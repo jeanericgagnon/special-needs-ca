@@ -1,9 +1,0 @@
-{
-	"id": "z3I1u0lapuEHA7d",
-	"json": "{\"id\":\"z3I1u0lapuEHA7d\",\"url\":\"https://genomecenter.ucdavis.edu/current-positions\",\"loadedUrl\":\"https://genomecenter.ucdavis.edu/current-positions\",\"uniqueKey\":\"https://genomecenter.ucdavis.edu/current-positions\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:11.304Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://genomecenter.ucdavis.edu/current-positions",
-	"url": "https://genomecenter.ucdavis.edu/current-positions"
-}

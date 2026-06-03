@@ -1,9 +1,0 @@
-{
-	"id": "zlqmbSKjf9MeuTX",
-	"json": "{\"id\":\"zlqmbSKjf9MeuTX\",\"url\":\"https://www.cde.ca.gov/be/ms//be/ms/mm/sbestudentmember.asp/\",\"loadedUrl\":\"https://www.cde.ca.gov/be/ms//be/ms/mm/sbestudentmember.asp/\",\"uniqueKey\":\"https://www.cde.ca.gov/be/ms//be/ms/mm/sbestudentmember.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:03.782Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/be/ms//be/ms/mm/sbestudentmember.asp",
-	"url": "https://www.cde.ca.gov/be/ms//be/ms/mm/sbestudentmember.asp/"
-}

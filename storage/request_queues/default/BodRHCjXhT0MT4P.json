@@ -1,9 +1,0 @@
-{
-	"id": "BodRHCjXhT0MT4P",
-	"json": "{\"id\":\"BodRHCjXhT0MT4P\",\"url\":\"https://www.cdss.ca.gov/inforesources/letters-regulations/legislation-and-regulations/adult-services-regulations\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/letters-regulations/legislation-and-regulations/adult-services-regulations\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/letters-regulations/legislation-and-regulations/adult-services-regulations\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:03.569Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/inforesources/letters-regulations/legislation-and-regulations/adult-services-regulations",
-	"url": "https://www.cdss.ca.gov/inforesources/letters-regulations/legislation-and-regulations/adult-services-regulations"
-}

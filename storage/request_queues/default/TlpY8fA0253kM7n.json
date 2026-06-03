@@ -1,9 +1,0 @@
-{
-	"id": "TlpY8fA0253kM7n",
-	"json": "{\"id\":\"TlpY8fA0253kM7n\",\"url\":\"https://calguard.ca.gov/otag/\",\"loadedUrl\":\"https://calguard.ca.gov/otag/\",\"uniqueKey\":\"https://calguard.ca.gov/otag\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:11.105Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://calguard.ca.gov/otag",
-	"url": "https://calguard.ca.gov/otag/"
-}

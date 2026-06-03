@@ -1,9 +1,0 @@
-{
-	"id": "1VhUWMKirmuK03y",
-	"json": "{\"id\":\"1VhUWMKirmuK03y\",\"url\":\"https://www.dhcs.ca.gov/services/ltc/Documents/MCWP-Renewal-2023-2027.pdf\",\"loadedUrl\":\"https://www.dhcs.ca.gov/file/mcwp-renewal-2023-2027/\",\"uniqueKey\":\"https://www.dhcs.ca.gov/services/ltc/Documents/MCWP-Renewal-2023-2027.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:56:02.240Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dhcs.ca.gov/services/ltc/Documents/MCWP-Renewal-2023-2027.pdf",
-	"url": "https://www.dhcs.ca.gov/services/ltc/Documents/MCWP-Renewal-2023-2027.pdf"
-}

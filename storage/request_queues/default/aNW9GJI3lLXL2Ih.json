@@ -1,9 +1,0 @@
-{
-	"id": "aNW9GJI3lLXL2Ih",
-	"json": "{\"id\":\"aNW9GJI3lLXL2Ih\",\"url\":\"https://www.cde.ca.gov/ci/gs/em/eligandpriofaq.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/gs/em/eligandpriofaq.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/gs/em/eligandpriofaq.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:25:13.066Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ci/gs/em/eligandpriofaq.asp",
-	"url": "https://www.cde.ca.gov/ci/gs/em/eligandpriofaq.asp"
-}

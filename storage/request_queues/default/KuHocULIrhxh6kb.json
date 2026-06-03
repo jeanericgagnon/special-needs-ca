@@ -1,9 +1,0 @@
-{
-	"id": "KuHocULIrhxh6kb",
-	"json": "{\"id\":\"KuHocULIrhxh6kb\",\"url\":\"https://www.globaldownsyndrome.org/fr/sur-le-syndrome-de-down/ressources/\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/fr/sur-le-syndrome-de-down/ressources/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/fr/sur-le-syndrome-de-down/ressources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:29:06.283Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.globaldownsyndrome.org/fr/sur-le-syndrome-de-down/ressources",
-	"url": "https://www.globaldownsyndrome.org/fr/sur-le-syndrome-de-down/ressources/"
-}

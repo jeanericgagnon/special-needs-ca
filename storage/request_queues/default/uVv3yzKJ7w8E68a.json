@@ -1,9 +1,0 @@
-{
-	"id": "uVv3yzKJ7w8E68a",
-	"json": "{\"id\":\"uVv3yzKJ7w8E68a\",\"url\":\"https://myfamily.wic.ca.gov/Home/WICOfficeGrocer#WICOfficeGrocer\",\"loadedUrl\":\"https://myfamily.wic.ca.gov/Home/WICOfficeGrocer#WICOfficeGrocer\",\"uniqueKey\":\"https://myfamily.wic.ca.gov/Home/WICOfficeGrocer\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T18:08:32.480Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://myfamily.wic.ca.gov/Home/WICOfficeGrocer",
-	"url": "https://myfamily.wic.ca.gov/Home/WICOfficeGrocer#WICOfficeGrocer"
-}

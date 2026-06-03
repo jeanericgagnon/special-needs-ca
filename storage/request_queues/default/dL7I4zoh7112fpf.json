@@ -1,9 +1,0 @@
-{
-	"id": "dL7I4zoh7112fpf",
-	"json": "{\"id\":\"dL7I4zoh7112fpf\",\"url\":\"https://neuroscience.ucdavis.edu/cns-shared-resources\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/cns-shared-resources\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/cns-shared-resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:51.357Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/cns-shared-resources",
-	"url": "https://neuroscience.ucdavis.edu/cns-shared-resources"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "xTbtLWUjwhuRrAT",
-	"json": "{\"id\":\"xTbtLWUjwhuRrAT\",\"url\":\"https://give.ucdavis.edu/CLAS/POVGIFT\",\"loadedUrl\":\"https://give.ucdavis.edu/CLAS/POVGIFT\",\"uniqueKey\":\"https://give.ucdavis.edu/CLAS/POVGIFT\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:58.024Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/CLAS/POVGIFT",
-	"url": "https://give.ucdavis.edu/CLAS/POVGIFT"
-}

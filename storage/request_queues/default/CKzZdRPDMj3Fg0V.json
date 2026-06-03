@@ -1,9 +1,0 @@
-{
-	"id": "CKzZdRPDMj3Fg0V",
-	"json": "{\"id\":\"CKzZdRPDMj3Fg0V\",\"url\":\"https://give.ucdavis.edu/CHPR\",\"loadedUrl\":\"https://give.ucdavis.edu/CHPR\",\"uniqueKey\":\"https://give.ucdavis.edu/CHPR\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:30.866Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/CHPR",
-	"url": "https://give.ucdavis.edu/CHPR"
-}

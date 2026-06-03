@@ -1,9 +1,0 @@
-{
-	"id": "dsoHCDVeV8IubNo",
-	"json": "{\"id\":\"dsoHCDVeV8IubNo\",\"url\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/InquirySubmissionPortal.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/InquirySubmissionPortal.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/InquirySubmissionPortal.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:54:46.101Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/InquirySubmissionPortal.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/InquirySubmissionPortal.aspx"
-}

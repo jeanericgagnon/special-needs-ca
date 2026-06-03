@@ -1,9 +1,0 @@
-{
-	"id": "imONwz1QaXBFXKz",
-	"json": "{\"id\":\"imONwz1QaXBFXKz\",\"url\":\"https://www.cde.ca.gov/eo/in/socialemotionallearning.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/se/index.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/eo/in/socialemotionallearning.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:05.858Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/eo/in/socialemotionallearning.asp",
-	"url": "https://www.cde.ca.gov/eo/in/socialemotionallearning.asp"
-}

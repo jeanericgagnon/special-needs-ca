@@ -1,9 +1,0 @@
-{
-	"id": "3uYsNOLwzzWKodM",
-	"json": "{\"id\":\"3uYsNOLwzzWKodM\",\"url\":\"https://scdd.ca.gov/sdm-tap-resources/colorado-department-of-health-care-policy-and-financing-supported-decision-making/\",\"loadedUrl\":\"https://scdd.ca.gov/sdm-tap-resources/colorado-department-of-health-care-policy-and-financing-supported-decision-making/\",\"uniqueKey\":\"https://scdd.ca.gov/sdm-tap-resources/colorado-department-of-health-care-policy-and-financing-supported-decision-making\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:19:29.678Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/sdm-tap-resources/colorado-department-of-health-care-policy-and-financing-supported-decision-making",
-	"url": "https://scdd.ca.gov/sdm-tap-resources/colorado-department-of-health-care-policy-and-financing-supported-decision-making/"
-}

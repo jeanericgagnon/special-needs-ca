@@ -1,9 +1,0 @@
-{
-	"id": "Uyy9Z8PPtEIpt37",
-	"json": "{\"id\":\"Uyy9Z8PPtEIpt37\",\"url\":\"https://health.ucdavis.edu/cancer-care-network/\",\"loadedUrl\":\"https://health.ucdavis.edu/cancer-care-network/\",\"uniqueKey\":\"https://health.ucdavis.edu/cancer-care-network\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:14.814Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/cancer-care-network",
-	"url": "https://health.ucdavis.edu/cancer-care-network/"
-}

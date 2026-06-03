@@ -1,9 +1,0 @@
-{
-	"id": "CNbC2ez4EYo3aO4",
-	"json": "{\"id\":\"CNbC2ez4EYo3aO4\",\"url\":\"https://www.dds.ca.gov/general/appeals-complaints-comments/title-17-complaint-procedure/\",\"loadedUrl\":\"https://www.dds.ca.gov/general/appeals-complaints-comments/title-17-complaint-procedure/\",\"uniqueKey\":\"https://www.dds.ca.gov/general/appeals-complaints-comments/title-17-complaint-procedure\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:02.452Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/general/appeals-complaints-comments/title-17-complaint-procedure",
-	"url": "https://www.dds.ca.gov/general/appeals-complaints-comments/title-17-complaint-procedure/"
-}

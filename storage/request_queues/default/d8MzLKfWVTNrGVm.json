@@ -1,9 +1,0 @@
-{
-	"id": "d8MzLKfWVTNrGVm",
-	"json": "{\"id\":\"d8MzLKfWVTNrGVm\",\"url\":\"https://health.ucdavis.edu/blog/kids-considered/fever-in-infants-/2026/04\",\"loadedUrl\":\"https://health.ucdavis.edu/blog/kids-considered/fever-in-infants-/2026/04\",\"uniqueKey\":\"https://health.ucdavis.edu/blog/kids-considered/fever-in-infants-/2026/04\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:51.979Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/blog/kids-considered/fever-in-infants-/2026/04",
-	"url": "https://health.ucdavis.edu/blog/kids-considered/fever-in-infants-/2026/04"
-}

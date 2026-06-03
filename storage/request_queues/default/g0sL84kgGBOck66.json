@@ -1,9 +1,0 @@
-{
-	"id": "g0sL84kgGBOck66",
-	"json": "{\"id\":\"g0sL84kgGBOck66\",\"url\":\"https://cdss.ca.gov/inforesources/letters-regulations/letters-and-notices/cfsd/2021\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/letters-regulations/letters-and-notices/cfsd/2021\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/letters-regulations/letters-and-notices/cfsd/2021\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:58.436Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/letters-regulations/letters-and-notices/cfsd/2021",
-	"url": "https://cdss.ca.gov/inforesources/letters-regulations/letters-and-notices/cfsd/2021"
-}

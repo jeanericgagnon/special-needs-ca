@@ -1,9 +1,0 @@
-{
-	"id": "rcvNDBRrCo3MWQo",
-	"json": "{\"id\":\"rcvNDBRrCo3MWQo\",\"url\":\"https://edd.ca.gov/en/jobs/\",\"loadedUrl\":\"https://edd.ca.gov/en/jobs/\",\"uniqueKey\":\"https://edd.ca.gov/en/jobs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:33.769Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://edd.ca.gov/en/jobs",
-	"url": "https://edd.ca.gov/en/jobs/"
-}

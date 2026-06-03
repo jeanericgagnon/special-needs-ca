@@ -1,9 +1,0 @@
-{
-	"id": "4iKnJHA3NJUcKmV",
-	"json": "{\"id\":\"4iKnJHA3NJUcKmV\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CTCB/Pages/HealthEquity.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CTCB/Pages/HealthEquity.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CTCB/Pages/HealthEquity.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:11:41.385Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CTCB/Pages/HealthEquity.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CTCB/Pages/HealthEquity.aspx"
-}

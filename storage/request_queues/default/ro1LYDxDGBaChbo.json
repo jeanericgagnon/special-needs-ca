@@ -1,9 +1,0 @@
-{
-	"id": "ro1LYDxDGBaChbo",
-	"json": "{\"id\":\"ro1LYDxDGBaChbo\",\"url\":\"http://archive.cdph.ca.gov/programs/olppp/Documents/CABLLReport2012-14.pdf\",\"loadedUrl\":\"https://archive.cdph.ca.gov/\",\"uniqueKey\":\"http://archive.cdph.ca.gov/programs/olppp/Documents/CABLLReport2012-14.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:40:25.973Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://archive.cdph.ca.gov/programs/olppp/Documents/CABLLReport2012-14.pdf",
-	"url": "http://archive.cdph.ca.gov/programs/olppp/Documents/CABLLReport2012-14.pdf"
-}

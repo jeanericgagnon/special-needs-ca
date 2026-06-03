@@ -1,9 +1,0 @@
-{
-	"id": "NPCvoYmw8GJ7Ho9",
-	"json": "{\"id\":\"NPCvoYmw8GJ7Ho9\",\"url\":\"https://cdss.ca.gov/inforesources/cdss-programs/appeals-case-management-system/training-and-support\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/cdss-programs/appeals-case-management-system/training-and-support\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/cdss-programs/appeals-case-management-system/training-and-support\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:33.190Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/cdss-programs/appeals-case-management-system/training-and-support",
-	"url": "https://cdss.ca.gov/inforesources/cdss-programs/appeals-case-management-system/training-and-support"
-}

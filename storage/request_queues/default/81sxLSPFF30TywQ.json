@@ -1,9 +1,0 @@
-{
-	"id": "81sxLSPFF30TywQ",
-	"json": "{\"id\":\"81sxLSPFF30TywQ\",\"url\":\"https://www.cde.ca.gov/ci/pl/edequitylcapaddendum.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/pl/edequitylcapaddendum.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/pl/edequitylcapaddendum.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:39.286Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ci/pl/edequitylcapaddendum.asp",
-	"url": "https://www.cde.ca.gov/ci/pl/edequitylcapaddendum.asp"
-}

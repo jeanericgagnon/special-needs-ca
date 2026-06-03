@@ -1,9 +1,0 @@
-{
-	"id": "QHKBOmACZtRN67H",
-	"json": "{\"id\":\"QHKBOmACZtRN67H\",\"url\":\"https://rarediseases.org/organizations/asthma-and-allergy-foundation-of-america-inc/\",\"loadedUrl\":\"https://rarediseases.org/organizations/asthma-and-allergy-foundation-of-america-inc/\",\"uniqueKey\":\"https://rarediseases.org/organizations/asthma-and-allergy-foundation-of-america-inc\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:14:46.513Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/organizations/asthma-and-allergy-foundation-of-america-inc",
-	"url": "https://rarediseases.org/organizations/asthma-and-allergy-foundation-of-america-inc/"
-}

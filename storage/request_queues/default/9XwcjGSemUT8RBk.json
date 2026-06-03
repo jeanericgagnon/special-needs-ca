@@ -1,9 +1,0 @@
-{
-	"id": "9XwcjGSemUT8RBk",
-	"json": "{\"id\":\"9XwcjGSemUT8RBk\",\"url\":\"https://www6.cde.ca.gov/padu/\",\"loadedUrl\":\"https://www6.cde.ca.gov/padu/\",\"uniqueKey\":\"https://www6.cde.ca.gov/padu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:22:40.960Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www6.cde.ca.gov/padu",
-	"url": "https://www6.cde.ca.gov/padu/"
-}

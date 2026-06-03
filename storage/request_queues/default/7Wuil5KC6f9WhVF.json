@@ -1,9 +1,0 @@
-{
-	"id": "7Wuil5KC6f9WhVF",
-	"json": "{\"id\":\"7Wuil5KC6f9WhVF\",\"url\":\"https://iet.ucdavis.edu/registry-of-authentic-messages\",\"loadedUrl\":\"https://cas.ucdavis.edu/cas/login?service=https%3A//iet.ucdavis.edu/casservice%3Fdestination%3D/registry-of-authentic-messages\",\"uniqueKey\":\"https://iet.ucdavis.edu/registry-of-authentic-messages\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:37.774Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://iet.ucdavis.edu/registry-of-authentic-messages",
-	"url": "https://iet.ucdavis.edu/registry-of-authentic-messages"
-}

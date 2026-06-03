@@ -1,9 +1,0 @@
-{
-	"id": "2bEpR43ca8xx2gB",
-	"json": "{\"id\":\"2bEpR43ca8xx2gB\",\"url\":\"https://www.cdph.ca.gov/Programs/CEH/_layouts/15/listform.aspx?ListId=%7B4EF17E14%2DCCA3%2D453F%2DBAC2%2DFEDF0566C164%7D&PageType=0\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CEH/Pages/CEH.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CEH/_layouts/15/listform.aspx?ListId=%7B4EF17E14-CCA3-453F-BAC2-FEDF0566C164%7D&PageType=0\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:12:00.107Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CEH/_layouts/15/listform.aspx?ListId=%7B4EF17E14-CCA3-453F-BAC2-FEDF0566C164%7D&PageType=0",
-	"url": "https://www.cdph.ca.gov/Programs/CEH/_layouts/15/listform.aspx?ListId=%7B4EF17E14%2DCCA3%2D453F%2DBAC2%2DFEDF0566C164%7D&PageType=0"
-}

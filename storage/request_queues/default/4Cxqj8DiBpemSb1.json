@@ -1,9 +1,0 @@
-{
-	"id": "4Cxqj8DiBpemSb1",
-	"json": "{\"id\":\"4Cxqj8DiBpemSb1\",\"url\":\"https://srt.csb-cde.ca.gov/jaws/jaws-index.html\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=5368e1f4-0042-4e08-b394-cb0bceff4371&ssb=23173292894&ssc=https%3A%2F%2Fsrt.csb-cde.ca.gov%2Fjaws%2Fjaws-index.html&ssi=404db32d-cuez-4b06-8535-80eef0c6dd5b&ssk=botmanager_support@radware.com&ssm=31313435998308061109066143154915&ssn=83d86c4bc2951ba24c3703286c656f1cbc40ca7ff8c0-be4f-44bd-9f6229&sso=2eb40c02-3e9324432f07ca786fad8421dfc8eabdf4a446c262e634c6&ssp=24772901561780354160178030367353348&ssq=57813952763448830850927634558265500152676&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBjYTdmZjhjMC1iZTRmLTQ0YmQtOWMwMi0zZTkzMjQ0MzJmMDcxLTE3ODAzMjc2MzQ2NjUwLTAwMzg5M2E3NWZkMGFkMmEzY2MxMCIsInV6bXgiOiI3ZjkwMDBhYWQ2ZGY2NC0yOGQzLTQwYmItYmYxZi1iMzJmZDBmNTZiNWUxLTE3ODAzMjY2ODg1Mjk5NDYxMzYtNWE3YTFlNmNhM2Q5YWU4MDE2IiwicmQiOiJjYS5nb3YifQ==\",\"uniqueKey\":\"https://srt.csb-cde.ca.gov/jaws/jaws-index.html\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:27:14.763Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://srt.csb-cde.ca.gov/jaws/jaws-index.html",
-	"url": "https://srt.csb-cde.ca.gov/jaws/jaws-index.html"
-}

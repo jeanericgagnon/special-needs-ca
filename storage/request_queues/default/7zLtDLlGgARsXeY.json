@@ -1,9 +1,0 @@
-{
-	"id": "7zLtDLlGgARsXeY",
-	"json": "{\"id\":\"7zLtDLlGgARsXeY\",\"url\":\"https://www.calhr.ca.gov/state-supervisors-managers/onboarding-resources/\",\"loadedUrl\":\"https://www.calhr.ca.gov/state-supervisors-managers/onboarding-resources/\",\"uniqueKey\":\"https://www.calhr.ca.gov/state-supervisors-managers/onboarding-resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:12.152Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.calhr.ca.gov/state-supervisors-managers/onboarding-resources",
-	"url": "https://www.calhr.ca.gov/state-supervisors-managers/onboarding-resources/"
-}

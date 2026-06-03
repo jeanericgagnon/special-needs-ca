@@ -1,9 +1,0 @@
-{
-	"id": "g23kUm0vrvV2wHy",
-	"json": "{\"id\":\"g23kUm0vrvV2wHy\",\"url\":\"https://scdd.ca.gov/pos-service-code/behavior-day-service/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/behavior-day-service/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/behavior-day-service\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:58.193Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/pos-service-code/behavior-day-service",
-	"url": "https://scdd.ca.gov/pos-service-code/behavior-day-service/"
-}

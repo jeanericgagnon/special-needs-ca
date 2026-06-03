@@ -1,9 +1,0 @@
-{
-	"id": "QEFIQ82DRmrHl2p",
-	"json": "{\"id\":\"QEFIQ82DRmrHl2p\",\"url\":\"https://physicians.ucdavis.edu/?Specialties=13&Cities=Folsom\",\"loadedUrl\":\"https://physicians.ucdavis.edu/?Specialties=13&Cities=Folsom\",\"uniqueKey\":\"https://physicians.ucdavis.edu?Cities=Folsom&Specialties=13\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:34:14.653Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://physicians.ucdavis.edu?Cities=Folsom&Specialties=13",
-	"url": "https://physicians.ucdavis.edu/?Specialties=13&Cities=Folsom"
-}

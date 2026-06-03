@@ -1,9 +1,0 @@
-{
-	"id": "HA4sGvxjXCT1L3t",
-	"json": "{\"id\":\"HA4sGvxjXCT1L3t\",\"url\":\"https://health.ucdavis.edu/nursing/Research/faculty_distinctions/katherine_k.html\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/Research/faculty_distinctions/katherine_k.html\",\"uniqueKey\":\"https://health.ucdavis.edu/nursing/Research/faculty_distinctions/katherine_k.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:24.137Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/nursing/Research/faculty_distinctions/katherine_k.html",
-	"url": "https://health.ucdavis.edu/nursing/Research/faculty_distinctions/katherine_k.html"
-}

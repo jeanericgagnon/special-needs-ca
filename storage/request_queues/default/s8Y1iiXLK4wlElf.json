@@ -1,9 +1,0 @@
-{
-	"id": "s8Y1iiXLK4wlElf",
-	"json": "{\"id\":\"s8Y1iiXLK4wlElf\",\"url\":\"https://health.ucdavis.edu/conditions/infectious-diseases/bacterial-infections\",\"loadedUrl\":\"https://health.ucdavis.edu/conditions/infectious-diseases/bacterial-infections\",\"uniqueKey\":\"https://health.ucdavis.edu/conditions/infectious-diseases/bacterial-infections\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:51.568Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/conditions/infectious-diseases/bacterial-infections",
-	"url": "https://health.ucdavis.edu/conditions/infectious-diseases/bacterial-infections"
-}

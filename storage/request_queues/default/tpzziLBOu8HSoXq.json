@@ -1,9 +1,0 @@
-{
-	"id": "tpzziLBOu8HSoXq",
-	"json": "{\"id\":\"tpzziLBOu8HSoXq\",\"url\":\"https://www.dds.ca.gov/services/pfp/\",\"loadedUrl\":\"https://www.dds.ca.gov/services/pfp/\",\"uniqueKey\":\"https://www.dds.ca.gov/services/pfp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:23.861Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/services/pfp",
-	"url": "https://www.dds.ca.gov/services/pfp/"
-}

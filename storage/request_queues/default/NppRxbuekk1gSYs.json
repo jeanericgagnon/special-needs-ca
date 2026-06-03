@@ -1,9 +1,0 @@
-{
-	"id": "NppRxbuekk1gSYs",
-	"json": "{\"id\":\"NppRxbuekk1gSYs\",\"url\":\"https://ctscassist.ucdmc.ucdavis.edu/ctscassist/surveys/?s=42x939jxVM&__return=1\",\"loadedUrl\":\"https://ctscassist.ucdmc.ucdavis.edu/ctscassist/surveys/?s=42x939jxVM&__return=1\",\"uniqueKey\":\"https://ctscassist.ucdmc.ucdavis.edu/ctscassist/surveys?__return=1&s=42x939jxVM\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:58.531Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ctscassist.ucdmc.ucdavis.edu/ctscassist/surveys?__return=1&s=42x939jxVM",
-	"url": "https://ctscassist.ucdmc.ucdavis.edu/ctscassist/surveys/?s=42x939jxVM&__return=1"
-}

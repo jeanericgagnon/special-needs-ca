@@ -1,9 +1,0 @@
-{
-	"id": "lnQ7Tc51m1McX5m",
-	"json": "{\"id\":\"lnQ7Tc51m1McX5m\",\"url\":\"https://hr.ucdavis.edu/employees/leave-time-off/catastrophic\",\"loadedUrl\":\"https://hr.ucdavis.edu/employees/leave-time-off/catastrophic\",\"uniqueKey\":\"https://hr.ucdavis.edu/employees/leave-time-off/catastrophic\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:12.032Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/employees/leave-time-off/catastrophic",
-	"url": "https://hr.ucdavis.edu/employees/leave-time-off/catastrophic"
-}

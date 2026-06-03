@@ -1,9 +1,0 @@
-{
-	"id": "gnZc5I79ogLtPJX",
-	"json": "{\"id\":\"gnZc5I79ogLtPJX\",\"url\":\"https://health.ucdavis.edu/news/headlines/transportation-problems-disrupt-dialysis-care-for-patients-with-kidney-failure/2026/04\",\"loadedUrl\":\"https://health.ucdavis.edu/news/headlines/transportation-problems-disrupt-dialysis-care-for-patients-with-kidney-failure/2026/04\",\"uniqueKey\":\"https://health.ucdavis.edu/news/headlines/transportation-problems-disrupt-dialysis-care-for-patients-with-kidney-failure/2026/04\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:47:13.837Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/news/headlines/transportation-problems-disrupt-dialysis-care-for-patients-with-kidney-failure/2026/04",
-	"url": "https://health.ucdavis.edu/news/headlines/transportation-problems-disrupt-dialysis-care-for-patients-with-kidney-failure/2026/04"
-}

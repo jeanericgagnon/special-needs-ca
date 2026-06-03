@@ -1,9 +1,0 @@
-{
-	"id": "eX9Lxg66R1t8N2W",
-	"json": "{\"id\":\"eX9Lxg66R1t8N2W\",\"url\":\"https://www.dmv.ca.gov/portal/california-mdl/\",\"loadedUrl\":\"https://www.dmv.ca.gov/portal/california-mdl/\",\"uniqueKey\":\"https://www.dmv.ca.gov/portal/california-mdl\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:29.074Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dmv.ca.gov/portal/california-mdl",
-	"url": "https://www.dmv.ca.gov/portal/california-mdl/"
-}

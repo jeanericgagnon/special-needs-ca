@@ -1,9 +1,0 @@
-{
-	"id": "vrHFR6sbyNrM73c",
-	"json": "{\"id\":\"vrHFR6sbyNrM73c\",\"url\":\"https://www.placer.ca.gov/2096/Human-Services\",\"loadedUrl\":\"https://www.placer.ca.gov/2096/Human-Services\",\"uniqueKey\":\"https://www.placer.ca.gov/2096/Human-Services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:30.016Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.placer.ca.gov/2096/Human-Services",
-	"url": "https://www.placer.ca.gov/2096/Human-Services"
-}

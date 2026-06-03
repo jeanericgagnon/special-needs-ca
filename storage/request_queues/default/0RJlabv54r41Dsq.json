@@ -1,9 +1,0 @@
-{
-	"id": "0RJlabv54r41Dsq",
-	"json": "{\"id\":\"0RJlabv54r41Dsq\",\"url\":\"https://inet2.cde.ca.gov/cmd/documentdetail.aspx?doc=9297\",\"loadedUrl\":\"https://inet2.cde.ca.gov/cmd/documentdetail.aspx?doc=9297\",\"uniqueKey\":\"https://inet2.cde.ca.gov/cmd/documentdetail.aspx?doc=9297\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:44.646Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://inet2.cde.ca.gov/cmd/documentdetail.aspx?doc=9297",
-	"url": "https://inet2.cde.ca.gov/cmd/documentdetail.aspx?doc=9297"
-}

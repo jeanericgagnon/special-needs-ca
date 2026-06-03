@@ -1,9 +1,0 @@
-{
-	"id": "UKWwJaXHRCqL7Ma",
-	"json": "{\"id\":\"UKWwJaXHRCqL7Ma\",\"url\":\"http://www.sierracounty.ca.gov/index.aspx?NID=306\",\"loadedUrl\":\"http://www.sierracounty.ca.gov/306/Public-Assistance\",\"uniqueKey\":\"http://www.sierracounty.ca.gov/index.aspx?NID=306\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:29.549Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.sierracounty.ca.gov/index.aspx?NID=306",
-	"url": "http://www.sierracounty.ca.gov/index.aspx?NID=306"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "nPbB34NEVjIlfp8",
-	"json": "{\"id\":\"nPbB34NEVjIlfp8\",\"url\":\"https://caes.ucdavis.edu/people?first=&last=&title=&unit=&field_sf_person_type_target_id%5B0%5D=1631\",\"loadedUrl\":\"https://caes.ucdavis.edu/people?first=&last=&title=&unit=&field_sf_person_type_target_id%5B0%5D=1631\",\"uniqueKey\":\"https://caes.ucdavis.edu/people?field_sf_person_type_target_id%5B0%5D=1631&first=&last=&title=&unit=\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:54:59.884Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://caes.ucdavis.edu/people?field_sf_person_type_target_id%5B0%5D=1631&first=&last=&title=&unit=",
-	"url": "https://caes.ucdavis.edu/people?first=&last=&title=&unit=&field_sf_person_type_target_id%5B0%5D=1631"
-}

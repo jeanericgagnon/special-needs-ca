@@ -1,9 +1,0 @@
-{
-	"id": "xqPNmxi2dXJO8mk",
-	"json": "{\"id\":\"xqPNmxi2dXJO8mk\",\"url\":\"https://cdss.ca.gov/inforesources/Child-Welfare-Services-Case-Management-System\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/child-welfare-services-case-management-system\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Child-Welfare-Services-Case-Management-System\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:16.044Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/Child-Welfare-Services-Case-Management-System",
-	"url": "https://cdss.ca.gov/inforesources/Child-Welfare-Services-Case-Management-System"
-}

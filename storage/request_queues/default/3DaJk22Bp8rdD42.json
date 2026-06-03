@@ -1,9 +1,0 @@
-{
-	"id": "3DaJk22Bp8rdD42",
-	"json": "{\"id\":\"3DaJk22Bp8rdD42\",\"url\":\"https://www.chhs.ca.gov/blog/2024/07/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2024/07/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2024/07\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:11.638Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chhs.ca.gov/blog/2024/07",
-	"url": "https://www.chhs.ca.gov/blog/2024/07/"
-}

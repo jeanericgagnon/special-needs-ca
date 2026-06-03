@@ -1,9 +1,0 @@
-{
-	"id": "eD2adFpAsnHeTVP",
-	"json": "{\"id\":\"eD2adFpAsnHeTVP\",\"url\":\"https://cdss.ca.gov/inforesources/CCLD-Complaint-Hotline\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/ccld-complaint-hotline\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/CCLD-Complaint-Hotline\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:26.518Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/CCLD-Complaint-Hotline",
-	"url": "https://cdss.ca.gov/inforesources/CCLD-Complaint-Hotline"
-}

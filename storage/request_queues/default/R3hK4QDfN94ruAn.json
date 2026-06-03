@@ -1,9 +1,0 @@
-{
-	"id": "R3hK4QDfN94ruAn",
-	"json": "{\"id\":\"R3hK4QDfN94ruAn\",\"url\":\"https://neuroscience.ucdavis.edu/people/johannes-hell\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/people/johannes-hell\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/people/johannes-hell\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:46.579Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/people/johannes-hell",
-	"url": "https://neuroscience.ucdavis.edu/people/johannes-hell"
-}

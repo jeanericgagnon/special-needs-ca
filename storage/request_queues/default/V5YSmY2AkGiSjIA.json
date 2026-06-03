@@ -1,9 +1,0 @@
-{
-	"id": "V5YSmY2AkGiSjIA",
-	"json": "{\"id\":\"V5YSmY2AkGiSjIA\",\"url\":\"https://health.ucdavis.edu/compliance/about-us/\",\"loadedUrl\":\"https://health.ucdavis.edu/compliance/about-us/\",\"uniqueKey\":\"https://health.ucdavis.edu/compliance/about-us\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:33.543Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/compliance/about-us",
-	"url": "https://health.ucdavis.edu/compliance/about-us/"
-}

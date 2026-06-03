@@ -1,9 +1,0 @@
-{
-	"id": "bOQHeIrOvm7oPdB",
-	"json": "{\"id\":\"bOQHeIrOvm7oPdB\",\"url\":\"https://health.ucdavis.edu/children/directions/\",\"loadedUrl\":\"https://health.ucdavis.edu/children/directions/\",\"uniqueKey\":\"https://health.ucdavis.edu/children/directions\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:53.339Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/children/directions",
-	"url": "https://health.ucdavis.edu/children/directions/"
-}

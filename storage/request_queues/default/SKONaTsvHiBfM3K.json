@@ -1,9 +1,0 @@
-{
-	"id": "SKONaTsvHiBfM3K",
-	"json": "{\"id\":\"SKONaTsvHiBfM3K\",\"url\":\"https://data.chhs.ca.gov/dataset/modified-retail-food-environment-index\",\"loadedUrl\":\"https://data.chhs.ca.gov/dataset/modified-retail-food-environment-index\",\"uniqueKey\":\"https://data.chhs.ca.gov/dataset/modified-retail-food-environment-index\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T17:57:05.314Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://data.chhs.ca.gov/dataset/modified-retail-food-environment-index",
-	"url": "https://data.chhs.ca.gov/dataset/modified-retail-food-environment-index"
-}

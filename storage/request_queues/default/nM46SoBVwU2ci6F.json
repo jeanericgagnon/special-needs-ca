@@ -1,9 +1,0 @@
-{
-	"id": "nM46SoBVwU2ci6F",
-	"json": "{\"id\":\"nM46SoBVwU2ci6F\",\"url\":\"https://health.ucdavis.edu/participate/resources\",\"loadedUrl\":\"https://health.ucdavis.edu/participate/resources\",\"uniqueKey\":\"https://health.ucdavis.edu/participate/resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:26.401Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/participate/resources",
-	"url": "https://health.ucdavis.edu/participate/resources"
-}

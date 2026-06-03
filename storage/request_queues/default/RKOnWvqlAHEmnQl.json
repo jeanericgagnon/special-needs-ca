@@ -1,9 +1,0 @@
-{
-	"id": "RKOnWvqlAHEmnQl",
-	"json": "{\"id\":\"RKOnWvqlAHEmnQl\",\"url\":\"https://capitolmuseum.ca.gov/visit/#parking\",\"loadedUrl\":\"https://capitolmuseum.ca.gov/visiting-the-capitol/\",\"uniqueKey\":\"https://capitolmuseum.ca.gov/visit\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:58.829Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://capitolmuseum.ca.gov/visit",
-	"url": "https://capitolmuseum.ca.gov/visit/#parking"
-}

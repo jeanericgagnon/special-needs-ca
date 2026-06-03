@@ -1,9 +1,0 @@
-{
-	"id": "wQD8Tw13PlqAY1s",
-	"json": "{\"id\":\"wQD8Tw13PlqAY1s\",\"url\":\"https://www.dmv.ca.gov/portal/customer-service/records-request/online-vehicle-record-request/\",\"loadedUrl\":\"https://www.dmv.ca.gov/portal/customer-service/records-request/online-vehicle-record-request/\",\"uniqueKey\":\"https://www.dmv.ca.gov/portal/customer-service/records-request/online-vehicle-record-request\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:35.711Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dmv.ca.gov/portal/customer-service/records-request/online-vehicle-record-request",
-	"url": "https://www.dmv.ca.gov/portal/customer-service/records-request/online-vehicle-record-request/"
-}

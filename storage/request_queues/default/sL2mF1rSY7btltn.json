@@ -1,9 +1,0 @@
-{
-	"id": "sL2mF1rSY7btltn",
-	"json": "{\"id\":\"sL2mF1rSY7btltn\",\"url\":\"https://health.ucdavis.edu/nursing/ourteam/faculty/lynda-wong-bio.html\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/ourteam/faculty/lynda-wong-bio.html\",\"uniqueKey\":\"https://health.ucdavis.edu/nursing/ourteam/faculty/lynda-wong-bio.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:03.353Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/nursing/ourteam/faculty/lynda-wong-bio.html",
-	"url": "https://health.ucdavis.edu/nursing/ourteam/faculty/lynda-wong-bio.html"
-}

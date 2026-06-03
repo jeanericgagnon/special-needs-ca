@@ -1,9 +1,0 @@
-{
-	"id": "dG7LqL4MyNq8RZY",
-	"json": "{\"id\":\"dG7LqL4MyNq8RZY\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/NEOPB/Pages/LHDProgramLetters.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/NEOPB/Pages/LHDProgramLetters.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/NEOPB/Pages/LHDProgramLetters.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:02:31.370Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/NEOPB/Pages/LHDProgramLetters.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/NEOPB/Pages/LHDProgramLetters.aspx"
-}

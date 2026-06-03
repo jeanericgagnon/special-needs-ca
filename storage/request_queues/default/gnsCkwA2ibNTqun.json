@@ -1,9 +1,0 @@
-{
-	"id": "gnsCkwA2ibNTqun",
-	"json": "{\"id\":\"gnsCkwA2ibNTqun\",\"url\":\"https://www.cde.ca.gov/ds/sp/cl/communications.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ds/sp/cl/communications.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ds/sp/cl/communications.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:23:44.104Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ds/sp/cl/communications.asp",
-	"url": "https://www.cde.ca.gov/ds/sp/cl/communications.asp"
-}

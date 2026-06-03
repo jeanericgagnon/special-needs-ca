@@ -1,9 +1,0 @@
-{
-	"id": "BdVw0eSFnVARfGn",
-	"json": "{\"id\":\"BdVw0eSFnVARfGn\",\"url\":\"https://give.ucdavis.edu/VCSA/124486\",\"loadedUrl\":\"https://give.ucdavis.edu/VCSA/124486\",\"uniqueKey\":\"https://give.ucdavis.edu/VCSA/124486\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:49.825Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/VCSA/124486",
-	"url": "https://give.ucdavis.edu/VCSA/124486"
-}

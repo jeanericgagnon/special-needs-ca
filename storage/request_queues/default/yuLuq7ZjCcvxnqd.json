@@ -1,9 +1,0 @@
-{
-	"id": "yuLuq7ZjCcvxnqd",
-	"json": "{\"id\":\"yuLuq7ZjCcvxnqd\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/NUPA\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/NUPA/Pages/default.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/NUPA\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:04:20.854Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/NUPA",
-	"url": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/NUPA"
-}

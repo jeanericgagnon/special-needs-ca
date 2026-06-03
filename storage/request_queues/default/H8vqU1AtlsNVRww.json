@@ -1,9 +1,0 @@
-{
-	"id": "H8vqU1AtlsNVRww",
-	"json": "{\"id\":\"H8vqU1AtlsNVRww\",\"url\":\"https://health.ucdavis.edu/patients-visitors/conditions-treatments/health-topics/\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/conditions-treatments/health-topics/\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/conditions-treatments/health-topics\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:55.803Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/conditions-treatments/health-topics",
-	"url": "https://health.ucdavis.edu/patients-visitors/conditions-treatments/health-topics/"
-}

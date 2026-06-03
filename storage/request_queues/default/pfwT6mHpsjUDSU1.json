@@ -1,9 +1,0 @@
-{
-	"id": "pfwT6mHpsjUDSU1",
-	"json": "{\"id\":\"pfwT6mHpsjUDSU1\",\"url\":\"https://www.dds.ca.gov/initiatives/sdp/implementation-updates/\",\"loadedUrl\":\"https://www.dds.ca.gov/initiatives/sdp/implementation-updates/\",\"uniqueKey\":\"https://www.dds.ca.gov/initiatives/sdp/implementation-updates\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:40.845Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/initiatives/sdp/implementation-updates",
-	"url": "https://www.dds.ca.gov/initiatives/sdp/implementation-updates/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "138d5Kp342OWIGB",
-	"json": "{\"id\":\"138d5Kp342OWIGB\",\"url\":\"https://hr.ucdavis.edu/careers/browse-jobs\",\"loadedUrl\":\"https://hr.ucdavis.edu/careers/apply?keywords=&Category_category_id=All%20Categories&format=json&MCampus%5B0%5D=&search=\",\"uniqueKey\":\"https://hr.ucdavis.edu/careers/browse-jobs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:11.614Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/careers/browse-jobs",
-	"url": "https://hr.ucdavis.edu/careers/browse-jobs"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "ZJ6caF6YtY1t6bf",
-	"json": "{\"id\":\"ZJ6caF6YtY1t6bf\",\"url\":\"https://www.cdph.ca.gov/Programs/OHE/Pages/Climate-Health-Equity/Health-Impacts.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/OHE/Pages/Climate-Health-Equity/Health-Impacts.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/OHE/Pages/Climate-Health-Equity/Health-Impacts.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:08:02.666Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/OHE/Pages/Climate-Health-Equity/Health-Impacts.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/OHE/Pages/Climate-Health-Equity/Health-Impacts.aspx"
-}

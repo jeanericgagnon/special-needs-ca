@@ -1,9 +1,0 @@
-{
-	"id": "PuZQeeHmow3n1aZ",
-	"json": "{\"id\":\"PuZQeeHmow3n1aZ\",\"url\":\"https://cnprc.ucdavis.edu/translational-human-pluripotent-stem-cell-shared-research-facility-tsrf\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/translational-human-pluripotent-stem-cell-shared-research-facility-tsrf\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/translational-human-pluripotent-stem-cell-shared-research-facility-tsrf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:13.436Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cnprc.ucdavis.edu/translational-human-pluripotent-stem-cell-shared-research-facility-tsrf",
-	"url": "https://cnprc.ucdavis.edu/translational-human-pluripotent-stem-cell-shared-research-facility-tsrf"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "rJ8H1ngWg9d0jiI",
-	"json": "{\"id\":\"rJ8H1ngWg9d0jiI\",\"url\":\"https://www.csb-cde.ca.gov/about/history/index.aspx\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=a9e6cbf9-9ec2-4853-b447-dfa91eb1f0f0&ssb=69881244403&ssc=https%3A%2F%2Fwww.csb-cde.ca.gov%2Fabout%2Fhistory%2Findex.aspx&ssi=37e651cc-cuez-49df-82af-977afb177384&ssk=botmanager_support@radware.com&ssm=05966303120172799102496055501434&ssn=5aac5df56bfa39b4296bb561b8c374694fb1e95ecfe6-6ff7-49e9-b2c5e1&sso=2de60659-93b6eba1a0481299d4439aefe51d00efe6bcbf724ed8d6e0&ssp=84090995071780394587178037955643854&ssq=13160422761983040271727619101324377581795&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsInV6bXgiOiI3ZjkwMDBkYTI2YWI2OC1mZTk5LTQwMTgtOTY5MS0wNTMyZGQ0MDNjNzUxLTE3ODAzMjc2MTk3MzQwLTU4YTk0ZTdjNDY2NzU1NGUxMCIsIl9fdXptZiI6IjdmOTAwMGU5NWVjZmU2LTZmZjctNDllOS1iNjU5LTkzYjZlYmExYTA0ODEtMTc4MDMyNzYxOTczNDAtMDAzMTY3N2I3NjM2NTU1ZjdhZTEwIn0=\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/about/history/index.aspx\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:26:59.848Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.csb-cde.ca.gov/about/history/index.aspx",
-	"url": "https://www.csb-cde.ca.gov/about/history/index.aspx"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "mwSZ5kjVRd7Bh7f",
-	"json": "{\"id\":\"mwSZ5kjVRd7Bh7f\",\"url\":\"https://cdss.ca.gov/inforesources/Community-Care/Administrator-Certification/Administrator-Information/List-of-Approved-Vendors\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/community-care/administrator-certification/administrator-information/list-of-approved-vendors\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Community-Care/Administrator-Certification/Administrator-Information/List-of-Approved-Vendors\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:37.767Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/Community-Care/Administrator-Certification/Administrator-Information/List-of-Approved-Vendors",
-	"url": "https://cdss.ca.gov/inforesources/Community-Care/Administrator-Certification/Administrator-Information/List-of-Approved-Vendors"
-}

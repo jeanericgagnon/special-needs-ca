@@ -1,9 +1,0 @@
-{
-	"id": "7U88xpFrre9ELHK",
-	"json": "{\"id\":\"7U88xpFrre9ELHK\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/43096/kate-richards-family_and_community_medicine-psychiatry-sacramento?FreeText%3aLast+name=Richards\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/43096/kate-richards-family_and_community_medicine-psychiatry-sacramento?FreeText%3aLast+name=Richards\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/43096/kate-richards-family_and_community_medicine-psychiatry-sacramento?FreeText%3ALast+name=Richards\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:14.353Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/43096/kate-richards-family_and_community_medicine-psychiatry-sacramento?FreeText%3ALast+name=Richards",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/43096/kate-richards-family_and_community_medicine-psychiatry-sacramento?FreeText%3aLast+name=Richards"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "fK0l1mlt00LTBd3",
-	"json": "{\"id\":\"fK0l1mlt00LTBd3\",\"url\":\"https://financeandbusiness.ucdavis.edu/bia/budget/model/faculty-resources\",\"loadedUrl\":\"https://financeandbusiness.ucdavis.edu/bia/budget/model/faculty-resources\",\"uniqueKey\":\"https://financeandbusiness.ucdavis.edu/bia/budget/model/faculty-resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:52.034Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://financeandbusiness.ucdavis.edu/bia/budget/model/faculty-resources",
-	"url": "https://financeandbusiness.ucdavis.edu/bia/budget/model/faculty-resources"
-}

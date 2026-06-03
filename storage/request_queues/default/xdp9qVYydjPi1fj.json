@@ -1,9 +1,0 @@
-{
-	"id": "xdp9qVYydjPi1fj",
-	"json": "{\"id\":\"xdp9qVYydjPi1fj\",\"url\":\"https://www.cdph.ca.gov/Programs/CHCQ/HAI/Pages/MonitoringAdherenceToHCPracticesThatPreventInfection.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CHCQ/HAI/Pages/MonitoringAdherenceToHCPracticesThatPreventInfection.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CHCQ/HAI/Pages/MonitoringAdherenceToHCPracticesThatPreventInfection.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:01:50.362Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CHCQ/HAI/Pages/MonitoringAdherenceToHCPracticesThatPreventInfection.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CHCQ/HAI/Pages/MonitoringAdherenceToHCPracticesThatPreventInfection.aspx"
-}

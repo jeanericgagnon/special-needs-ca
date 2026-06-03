@@ -1,9 +1,0 @@
-{
-	"id": "gmMhcabQYN95iWH",
-	"json": "{\"id\":\"gmMhcabQYN95iWH\",\"url\":\"https://health.ucdavis.edu/mind-institute/research/collaborative-start/research-studies\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/research/collaborative-start/research-studies\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/research/collaborative-start/research-studies\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:25.592Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mind-institute/research/collaborative-start/research-studies",
-	"url": "https://health.ucdavis.edu/mind-institute/research/collaborative-start/research-studies"
-}

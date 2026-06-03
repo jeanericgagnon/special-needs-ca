@@ -1,9 +1,0 @@
-{
-	"id": "iNTwyEi9Gb4eldQ",
-	"json": "{\"id\":\"iNTwyEi9Gb4eldQ\",\"url\":\"https://giving.ucdavis.edu/foundation/committees\",\"loadedUrl\":\"https://giving.ucdavis.edu/foundation/committees\",\"uniqueKey\":\"https://giving.ucdavis.edu/foundation/committees\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:06.869Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://giving.ucdavis.edu/foundation/committees",
-	"url": "https://giving.ucdavis.edu/foundation/committees"
-}

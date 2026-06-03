@@ -1,9 +1,0 @@
-{
-	"id": "P3fCVmxpGwNEX8k",
-	"json": "{\"id\":\"P3fCVmxpGwNEX8k\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/43347/lisa-madden-pediatric_hematology_oncology-stem_cell_transplant-sacramento?FreeText%3aLast+name=Madden\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/43347/lisa-madden-pediatric_hematology_oncology-stem_cell_transplant-sacramento?FreeText%3aLast+name=Madden\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/43347/lisa-madden-pediatric_hematology_oncology-stem_cell_transplant-sacramento?FreeText%3ALast+name=Madden\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:17.157Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/43347/lisa-madden-pediatric_hematology_oncology-stem_cell_transplant-sacramento?FreeText%3ALast+name=Madden",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/43347/lisa-madden-pediatric_hematology_oncology-stem_cell_transplant-sacramento?FreeText%3aLast+name=Madden"
-}

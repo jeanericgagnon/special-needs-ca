@@ -1,9 +1,0 @@
-{
-	"id": "mL5IcljZcmsKuJD",
-	"json": "{\"id\":\"mL5IcljZcmsKuJD\",\"url\":\"https://rarediseases.org/es/living-with-a-rare-disease/\",\"loadedUrl\":\"https://rarediseases.org/es/living-with-a-rare-disease/\",\"uniqueKey\":\"https://rarediseases.org/es/living-with-a-rare-disease\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:24:34.344Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/es/living-with-a-rare-disease",
-	"url": "https://rarediseases.org/es/living-with-a-rare-disease/"
-}

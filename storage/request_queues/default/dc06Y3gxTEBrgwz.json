@@ -1,9 +1,0 @@
-{
-	"id": "dc06Y3gxTEBrgwz",
-	"json": "{\"id\":\"dc06Y3gxTEBrgwz\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/579/michele-lim-glaucoma-ophthalmology-sacramento?FreeText:Last+name=Lim\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/579/michele-lim-glaucoma-ophthalmology-sacramento?FreeText:Last+name=Lim\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/579/michele-lim-glaucoma-ophthalmology-sacramento?FreeText%3ALast+name=Lim\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:13.069Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/579/michele-lim-glaucoma-ophthalmology-sacramento?FreeText%3ALast+name=Lim",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/579/michele-lim-glaucoma-ophthalmology-sacramento?FreeText:Last+name=Lim"
-}

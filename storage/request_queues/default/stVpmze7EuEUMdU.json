@@ -1,9 +1,0 @@
-{
-	"id": "stVpmze7EuEUMdU",
-	"json": "{\"id\":\"stVpmze7EuEUMdU\",\"url\":\"https://www.chhs.ca.gov/blog/2021/12/30/calhhs-2021-annual-letter/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2021/12/30/calhhs-2021-annual-letter/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2021/12/30/calhhs-2021-annual-letter\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:59.397Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chhs.ca.gov/blog/2021/12/30/calhhs-2021-annual-letter",
-	"url": "https://www.chhs.ca.gov/blog/2021/12/30/calhhs-2021-annual-letter/"
-}

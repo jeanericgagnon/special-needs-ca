@@ -1,9 +1,0 @@
-{
-	"id": "ZiXWI94XiZkTglj",
-	"json": "{\"id\":\"ZiXWI94XiZkTglj\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/EHIB/Pages/EIS/Poisonous-Mushrooms.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/EHIB/Pages/EIS/Poisonous-Mushrooms.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/EHIB/Pages/EIS/Poisonous-Mushrooms.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:30.947Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/EHIB/Pages/EIS/Poisonous-Mushrooms.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/EHIB/Pages/EIS/Poisonous-Mushrooms.aspx"
-}

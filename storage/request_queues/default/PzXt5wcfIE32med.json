@@ -1,9 +1,0 @@
-{
-	"id": "PzXt5wcfIE32med",
-	"json": "{\"id\":\"PzXt5wcfIE32med\",\"url\":\"https://sitefarm.ucdavis.edu/training/intro\",\"loadedUrl\":\"https://sitefarm.ucdavis.edu/training/intro\",\"uniqueKey\":\"https://sitefarm.ucdavis.edu/training/intro\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:48.829Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://sitefarm.ucdavis.edu/training/intro",
-	"url": "https://sitefarm.ucdavis.edu/training/intro"
-}

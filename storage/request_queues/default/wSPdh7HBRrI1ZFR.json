@@ -1,9 +1,0 @@
-{
-	"id": "wSPdh7HBRrI1ZFR",
-	"json": "{\"id\":\"wSPdh7HBRrI1ZFR\",\"url\":\"https://cnprc.ucdavis.edu/inhalation-exposure-core\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/inhalation-exposure-core\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/inhalation-exposure-core\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:14.791Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cnprc.ucdavis.edu/inhalation-exposure-core",
-	"url": "https://cnprc.ucdavis.edu/inhalation-exposure-core"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "XE4kBUSLB2425X3",
-	"json": "{\"id\":\"XE4kBUSLB2425X3\",\"url\":\"https://www.ftb.ca.gov/refund/index.asp?WT.mc_id=CAGov_Service_Refund\",\"loadedUrl\":\"https://www.ftb.ca.gov/refund/index.asp?WT.mc_id=CAGov_Service_Refund\",\"uniqueKey\":\"https://www.ftb.ca.gov/refund/index.asp?WT.mc_id=CAGov_Service_Refund\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:27.499Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ftb.ca.gov/refund/index.asp?WT.mc_id=CAGov_Service_Refund",
-	"url": "https://www.ftb.ca.gov/refund/index.asp?WT.mc_id=CAGov_Service_Refund"
-}

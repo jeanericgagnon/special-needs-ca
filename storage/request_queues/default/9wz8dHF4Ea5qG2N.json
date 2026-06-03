@@ -1,9 +1,0 @@
-{
-	"id": "9wz8dHF4Ea5qG2N",
-	"json": "{\"id\":\"9wz8dHF4Ea5qG2N\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/21914/asha-cogdill-gastroenterology-gastrointestinal_motility_disorders-elk_grove-sacramento?FreeText%3aLast+name=Cogdill\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/21914/asha-cogdill-gastroenterology-gastrointestinal_motility_disorders-elk_grove-sacramento?FreeText%3aLast+name=Cogdill\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/21914/asha-cogdill-gastroenterology-gastrointestinal_motility_disorders-elk_grove-sacramento?FreeText%3ALast+name=Cogdill\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:09.808Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/21914/asha-cogdill-gastroenterology-gastrointestinal_motility_disorders-elk_grove-sacramento?FreeText%3ALast+name=Cogdill",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/21914/asha-cogdill-gastroenterology-gastrointestinal_motility_disorders-elk_grove-sacramento?FreeText%3aLast+name=Cogdill"
-}

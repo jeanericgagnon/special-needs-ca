@@ -1,9 +1,0 @@
-{
-	"id": "SdgX2qLQYAFk8WH",
-	"json": "{\"id\":\"SdgX2qLQYAFk8WH\",\"url\":\"https://www.csb-cde.ca.gov/panels/aphartcontest.aspx\",\"loadedUrl\":\"https://www.csb-cde.ca.gov/panels/aphartcontest.aspx\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/panels/aphartcontest.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:00.488Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.csb-cde.ca.gov/panels/aphartcontest.aspx",
-	"url": "https://www.csb-cde.ca.gov/panels/aphartcontest.aspx"
-}

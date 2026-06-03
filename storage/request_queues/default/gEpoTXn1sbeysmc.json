@@ -1,9 +1,0 @@
-{
-	"id": "gEpoTXn1sbeysmc",
-	"json": "{\"id\":\"gEpoTXn1sbeysmc\",\"url\":\"https://www.csb-cde.ca.gov/instruction/ot/index.aspx\",\"loadedUrl\":\"https://www.csb-cde.ca.gov/instruction/ot/index.aspx\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/instruction/ot/index.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:22.442Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.csb-cde.ca.gov/instruction/ot/index.aspx",
-	"url": "https://www.csb-cde.ca.gov/instruction/ot/index.aspx"
-}

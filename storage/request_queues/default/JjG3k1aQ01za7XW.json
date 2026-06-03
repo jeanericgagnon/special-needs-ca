@@ -1,9 +1,0 @@
-{
-	"id": "JjG3k1aQ01za7XW",
-	"json": "{\"id\":\"JjG3k1aQ01za7XW\",\"url\":\"https://health.ucdavis.edu/children/team/43304/javar-van-buren-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/children/team/43304/javar-van-buren-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/children/team/43304/javar-van-buren-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:10.912Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/children/team/43304/javar-van-buren-sacramento",
-	"url": "https://health.ucdavis.edu/children/team/43304/javar-van-buren-sacramento"
-}

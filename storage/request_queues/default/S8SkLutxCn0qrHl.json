@@ -1,9 +1,0 @@
-{
-	"id": "S8SkLutxCn0qrHl",
-	"json": "{\"id\":\"S8SkLutxCn0qrHl\",\"url\":\"https://gsm.ucdavis.edu/program-detail/leaders-future\",\"loadedUrl\":\"https://gsm.ucdavis.edu/program-detail/leaders-future\",\"uniqueKey\":\"https://gsm.ucdavis.edu/program-detail/leaders-future\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:58.478Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://gsm.ucdavis.edu/program-detail/leaders-future",
-	"url": "https://gsm.ucdavis.edu/program-detail/leaders-future"
-}

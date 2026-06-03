@@ -1,9 +1,0 @@
-{
-	"id": "p6ZPcCd3nq8ZfHr",
-	"json": "{\"id\":\"p6ZPcCd3nq8ZfHr\",\"url\":\"https://caes.ucdavis.edu/about/overview/mission-statement-and-strategic-plan\",\"loadedUrl\":\"https://caes.ucdavis.edu/about/overview/mission-statement-and-strategic-plan\",\"uniqueKey\":\"https://caes.ucdavis.edu/about/overview/mission-statement-and-strategic-plan\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:54:42.598Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://caes.ucdavis.edu/about/overview/mission-statement-and-strategic-plan",
-	"url": "https://caes.ucdavis.edu/about/overview/mission-statement-and-strategic-plan"
-}

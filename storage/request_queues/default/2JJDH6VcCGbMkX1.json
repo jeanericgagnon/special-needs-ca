@@ -1,9 +1,0 @@
-{
-	"id": "2JJDH6VcCGbMkX1",
-	"json": "{\"id\":\"2JJDH6VcCGbMkX1\",\"url\":\"https://www.cdss.ca.gov/Benefits-Services/Food-Nutrition-Services/Food-Banks\",\"loadedUrl\":\"https://www.cdss.ca.gov/food-banks\",\"uniqueKey\":\"https://www.cdss.ca.gov/Benefits-Services/Food-Nutrition-Services/Food-Banks\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:32.327Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/Benefits-Services/Food-Nutrition-Services/Food-Banks",
-	"url": "https://www.cdss.ca.gov/Benefits-Services/Food-Nutrition-Services/Food-Banks"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "aVDyc0jBPrKCTJj",
-	"json": "{\"id\":\"aVDyc0jBPrKCTJj\",\"url\":\"https://www.cdtfa.ca.gov/taxes-and-fees/qualified-purchaser/faqs.htm\",\"loadedUrl\":\"https://cdtfa.ca.gov/taxes-and-fees/qualified-purchaser/faqs.htm\",\"uniqueKey\":\"https://www.cdtfa.ca.gov/taxes-and-fees/qualified-purchaser/faqs.htm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:23.399Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdtfa.ca.gov/taxes-and-fees/qualified-purchaser/faqs.htm",
-	"url": "https://www.cdtfa.ca.gov/taxes-and-fees/qualified-purchaser/faqs.htm"
-}

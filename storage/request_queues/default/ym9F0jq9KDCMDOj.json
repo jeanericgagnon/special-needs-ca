@@ -1,9 +1,0 @@
-{
-	"id": "ym9F0jq9KDCMDOj",
-	"json": "{\"id\":\"ym9F0jq9KDCMDOj\",\"url\":\"https://www.sos.ca.gov/elections/contact/email-elections-division\",\"loadedUrl\":\"https://www.sos.ca.gov/elections/contact/email-elections-division\",\"uniqueKey\":\"https://www.sos.ca.gov/elections/contact/email-elections-division\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:45.254Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.sos.ca.gov/elections/contact/email-elections-division",
-	"url": "https://www.sos.ca.gov/elections/contact/email-elections-division"
-}

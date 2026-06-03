@@ -1,9 +1,0 @@
-{
-	"id": "lYBLP8ax8WanBfy",
-	"json": "{\"id\":\"lYBLP8ax8WanBfy\",\"url\":\"https://engineering.ucdavis.edu/undergraduates/student-life/engineering-ambassadors\",\"loadedUrl\":\"https://engineering.ucdavis.edu/undergraduates/student-life/engineering-ambassadors\",\"uniqueKey\":\"https://engineering.ucdavis.edu/undergraduates/student-life/engineering-ambassadors\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:35.610Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://engineering.ucdavis.edu/undergraduates/student-life/engineering-ambassadors",
-	"url": "https://engineering.ucdavis.edu/undergraduates/student-life/engineering-ambassadors"
-}

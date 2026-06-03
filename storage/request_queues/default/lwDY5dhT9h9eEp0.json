@@ -1,9 +1,0 @@
-{
-	"id": "lwDY5dhT9h9eEp0",
-	"json": "{\"id\":\"lwDY5dhT9h9eEp0\",\"url\":\"https://ucpath.ucdavis.edu/change-requests\",\"loadedUrl\":\"https://ucpath.ucdavis.edu/change-requests\",\"uniqueKey\":\"https://ucpath.ucdavis.edu/change-requests\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:32.534Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ucpath.ucdavis.edu/change-requests",
-	"url": "https://ucpath.ucdavis.edu/change-requests"
-}

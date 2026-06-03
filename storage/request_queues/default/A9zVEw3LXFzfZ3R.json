@@ -1,9 +1,0 @@
-{
-	"id": "A9zVEw3LXFzfZ3R",
-	"json": "{\"id\":\"A9zVEw3LXFzfZ3R\",\"url\":\"http://www.csac.ca.gov/doc.asp?id=33\",\"loadedUrl\":\"https://www.csac.ca.gov/doc.asp?id=33\",\"uniqueKey\":\"http://www.csac.ca.gov/doc.asp?id=33\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:50.074Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.csac.ca.gov/doc.asp?id=33",
-	"url": "http://www.csac.ca.gov/doc.asp?id=33"
-}

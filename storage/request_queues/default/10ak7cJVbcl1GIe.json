@@ -1,9 +1,0 @@
-{
-	"id": "10ak7cJVbcl1GIe",
-	"json": "{\"id\":\"10ak7cJVbcl1GIe\",\"url\":\"https://financeandbusiness.ucdavis.edu/bia/institutional-analysis/surveys/alumni\",\"loadedUrl\":\"https://financeandbusiness.ucdavis.edu/bia/institutional-analysis/surveys/alumni\",\"uniqueKey\":\"https://financeandbusiness.ucdavis.edu/bia/institutional-analysis/surveys/alumni\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:52.977Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://financeandbusiness.ucdavis.edu/bia/institutional-analysis/surveys/alumni",
-	"url": "https://financeandbusiness.ucdavis.edu/bia/institutional-analysis/surveys/alumni"
-}

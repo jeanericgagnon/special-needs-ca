@@ -1,9 +1,0 @@
-{
-	"id": "PPtMzF1s31FBK1n",
-	"json": "{\"id\":\"PPtMzF1s31FBK1n\",\"url\":\"https://health.ucdavis.edu/pathology/\",\"loadedUrl\":\"https://health.ucdavis.edu/pathology/\",\"uniqueKey\":\"https://health.ucdavis.edu/pathology\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:13.587Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/pathology",
-	"url": "https://health.ucdavis.edu/pathology/"
-}

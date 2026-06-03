@@ -1,9 +1,0 @@
-{
-	"id": "p3Oi8uBME0ebZbr",
-	"json": "{\"id\":\"p3Oi8uBME0ebZbr\",\"url\":\"https://www.dgs.ca.gov/RESD\",\"loadedUrl\":\"https://www.dgs.ca.gov/RESD\",\"uniqueKey\":\"https://www.dgs.ca.gov/RESD\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:06.155Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dgs.ca.gov/RESD",
-	"url": "https://www.dgs.ca.gov/RESD"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "1CX9VybaavmyjJC",
-	"json": "{\"id\":\"1CX9VybaavmyjJC\",\"url\":\"https://www.ctc.ca.gov/commission/reports/\",\"loadedUrl\":\"https://www.ctc.ca.gov/commission/reports/\",\"uniqueKey\":\"https://www.ctc.ca.gov/commission/reports\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:23.569Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ctc.ca.gov/commission/reports",
-	"url": "https://www.ctc.ca.gov/commission/reports/"
-}

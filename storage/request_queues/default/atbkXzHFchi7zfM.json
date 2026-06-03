@@ -1,9 +1,0 @@
-{
-	"id": "atbkXzHFchi7zfM",
-	"json": "{\"id\":\"atbkXzHFchi7zfM\",\"url\":\"https://fisds.ucdavis.edu/ds/menu.cfm\",\"loadedUrl\":\"https://cas.ucdavis.edu/cas/login?service=https%3A%2F%2Ffisds%2Eucdavis%2Eedu%2Fds%2Fmenu%2Ecfm\",\"uniqueKey\":\"https://fisds.ucdavis.edu/ds/menu.cfm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:50.132Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://fisds.ucdavis.edu/ds/menu.cfm",
-	"url": "https://fisds.ucdavis.edu/ds/menu.cfm"
-}

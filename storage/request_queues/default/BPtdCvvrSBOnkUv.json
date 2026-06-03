@@ -1,9 +1,0 @@
-{
-	"id": "BPtdCvvrSBOnkUv",
-	"json": "{\"id\":\"BPtdCvvrSBOnkUv\",\"url\":\"https://give.ucdavis.edu/Search/Tags/mind\",\"loadedUrl\":\"https://give.ucdavis.edu/Search/Tags/mind\",\"uniqueKey\":\"https://give.ucdavis.edu/Search/Tags/mind\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:54.026Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/Search/Tags/mind",
-	"url": "https://give.ucdavis.edu/Search/Tags/mind"
-}

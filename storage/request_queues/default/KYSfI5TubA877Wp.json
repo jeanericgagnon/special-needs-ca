@@ -1,9 +1,0 @@
-{
-	"id": "KYSfI5TubA877Wp",
-	"json": "{\"id\":\"KYSfI5TubA877Wp\",\"url\":\"https://fosteryouthhelp.ca.gov/accessibility-certification\",\"loadedUrl\":\"https://fosteryouthhelp.ca.gov/accessibility-certification/\",\"uniqueKey\":\"https://fosteryouthhelp.ca.gov/accessibility-certification\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:12.832Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://fosteryouthhelp.ca.gov/accessibility-certification",
-	"url": "https://fosteryouthhelp.ca.gov/accessibility-certification"
-}

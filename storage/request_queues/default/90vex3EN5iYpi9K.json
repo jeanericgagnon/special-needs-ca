@@ -1,9 +1,0 @@
-{
-	"id": "90vex3EN5iYpi9K",
-	"json": "{\"id\":\"90vex3EN5iYpi9K\",\"url\":\"https://www.cdss.ca.gov/inforesources/CDSS-Programs/Adult-Programs/IHSS/County-IHSS-Wage-Rates\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/ihss/county-ihss-wage-rates\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/CDSS-Programs/Adult-Programs/IHSS/County-IHSS-Wage-Rates\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:03.562Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/inforesources/CDSS-Programs/Adult-Programs/IHSS/County-IHSS-Wage-Rates",
-	"url": "https://www.cdss.ca.gov/inforesources/CDSS-Programs/Adult-Programs/IHSS/County-IHSS-Wage-Rates"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "0bbtbxay2VDagKD",
-	"json": "{\"id\":\"0bbtbxay2VDagKD\",\"url\":\"https://cnprc.ucdavis.edu/david-amaral\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/david-amaral\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/david-amaral\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:14.017Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cnprc.ucdavis.edu/david-amaral",
-	"url": "https://cnprc.ucdavis.edu/david-amaral"
-}

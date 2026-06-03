@@ -1,9 +1,0 @@
-{
-	"id": "4X1gz301vPIK88h",
-	"json": "{\"id\":\"4X1gz301vPIK88h\",\"url\":\"http://ecrc.ucdmc.ucdavis.edu/\",\"loadedUrl\":\"https://ecrc.ucdmc.ucdavis.edu/\",\"uniqueKey\":\"http://ecrc.ucdmc.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:23.764Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://ecrc.ucdmc.ucdavis.edu",
-	"url": "http://ecrc.ucdmc.ucdavis.edu/"
-}

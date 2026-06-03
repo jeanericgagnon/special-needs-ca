@@ -16,7 +16,6 @@ import WaiverComparison from './components/waiver-comparison';
 import RespiteExplainer from './components/respite-explainer';
 import PrintButton from '@/components/print-button';
 import ShareButton from '@/components/share-button';
-import { slugifyDiagnosis } from '@/lib/diagnoses';
 import { hasNonNegatedKeyword } from '@/lib/negation';
 
 interface WizardClientProps {
@@ -1375,10 +1374,10 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
                   {counties.slice(0, 8).map(c => (
                     <Link 
                       key={c.id} 
-                      href={`/benefits/${slugifyDiagnosis(diagnosis)}/${c.id}`}
+                      href={`/counties/${c.id}`}
                       style={{ background: 'rgba(255,255,255,0.7)', border: '1px solid rgba(0,0,0,0.06)', borderRadius: '8px', padding: '0.4rem 0.8rem', fontSize: '0.85rem', color: 'var(--text-main)', textDecoration: 'none', fontWeight: 500, transition: 'all 0.2s' }}
                     >
-                      {diagnosis} in {c.name}
+                      {c.name} County Guide
                     </Link>
                   ))}
                 </div>

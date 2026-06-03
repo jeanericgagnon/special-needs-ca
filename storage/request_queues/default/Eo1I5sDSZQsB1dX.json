@@ -1,9 +1,0 @@
-{
-	"id": "Eo1I5sDSZQsB1dX",
-	"json": "{\"id\":\"Eo1I5sDSZQsB1dX\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/22090/reuben-antony-pediatric_hematology_oncology-sacramento?FreeText%3aLast+name=Antony\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/22090/reuben-antony-pediatric_hematology_oncology-sacramento?FreeText%3aLast+name=Antony\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/22090/reuben-antony-pediatric_hematology_oncology-sacramento?FreeText%3ALast+name=Antony\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:17.064Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/22090/reuben-antony-pediatric_hematology_oncology-sacramento?FreeText%3ALast+name=Antony",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/22090/reuben-antony-pediatric_hematology_oncology-sacramento?FreeText%3aLast+name=Antony"
-}

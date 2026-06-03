@@ -1,9 +1,0 @@
-{
-	"id": "IsxL9jwFTz8yJo5",
-	"json": "{\"id\":\"IsxL9jwFTz8yJo5\",\"url\":\"http://www.ucdmc.ucdavis.edu/eyecenter/\",\"loadedUrl\":\"https://health.ucdavis.edu/eyecenter/\",\"uniqueKey\":\"http://www.ucdmc.ucdavis.edu/eyecenter\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:56.483Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.ucdmc.ucdavis.edu/eyecenter",
-	"url": "http://www.ucdmc.ucdavis.edu/eyecenter/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "cLQ3rfWIG9NdIBS",
-	"json": "{\"id\":\"cLQ3rfWIG9NdIBS\",\"url\":\"https://www.chhs.ca.gov/blog/2017/10/31/california-release-2017-hmo-ppo-medical-group-ratings/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2017/10/31/california-release-2017-hmo-ppo-medical-group-ratings/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2017/10/31/california-release-2017-hmo-ppo-medical-group-ratings\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:03.578Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chhs.ca.gov/blog/2017/10/31/california-release-2017-hmo-ppo-medical-group-ratings",
-	"url": "https://www.chhs.ca.gov/blog/2017/10/31/california-release-2017-hmo-ppo-medical-group-ratings/"
-}

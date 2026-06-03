@@ -1,9 +1,0 @@
-{
-	"id": "OFbZATPNhulsosV",
-	"json": "{\"id\":\"OFbZATPNhulsosV\",\"url\":\"https://irb.ucdavis.edu/irb-news-february-2026/\",\"loadedUrl\":\"https://irb.ucdavis.edu/irb-news-february-2026/\",\"uniqueKey\":\"https://irb.ucdavis.edu/irb-news-february-2026\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:41.913Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://irb.ucdavis.edu/irb-news-february-2026",
-	"url": "https://irb.ucdavis.edu/irb-news-february-2026/"
-}

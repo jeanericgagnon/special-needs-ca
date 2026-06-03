@@ -1,9 +1,0 @@
-{
-	"id": "A4lV6IWZBjOye2i",
-	"json": "{\"id\":\"A4lV6IWZBjOye2i\",\"url\":\"https://edd.ca.gov/en/jobs_and_training/services_for_veterans/\",\"loadedUrl\":\"https://edd.ca.gov/en/jobs_and_training/services_for_veterans/\",\"uniqueKey\":\"https://edd.ca.gov/en/jobs_and_training/services_for_veterans\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:41.132Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://edd.ca.gov/en/jobs_and_training/services_for_veterans",
-	"url": "https://edd.ca.gov/en/jobs_and_training/services_for_veterans/"
-}

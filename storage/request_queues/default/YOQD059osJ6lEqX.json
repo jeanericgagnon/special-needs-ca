@@ -1,9 +1,0 @@
-{
-	"id": "YOQD059osJ6lEqX",
-	"json": "{\"id\":\"YOQD059osJ6lEqX\",\"url\":\"https://access.ucpath.ucdavis.edu/\",\"loadedUrl\":\"https://cas.ucdavis.edu/cas/login?service=https%3A%2F%2Faccess.ucpath.ucdavis.edu%2Flogin\",\"uniqueKey\":\"https://access.ucpath.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:36.210Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://access.ucpath.ucdavis.edu",
-	"url": "https://access.ucpath.ucdavis.edu/"
-}

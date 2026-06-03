@@ -1,9 +1,0 @@
-{
-	"id": "QXXfqYwpP00ykvm",
-	"json": "{\"id\":\"QXXfqYwpP00ykvm\",\"url\":\"https://give.ucdavis.edu/FFHC\",\"loadedUrl\":\"https://give.ucdavis.edu/FFHC\",\"uniqueKey\":\"https://give.ucdavis.edu/FFHC\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:02.320Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/FFHC",
-	"url": "https://give.ucdavis.edu/FFHC"
-}

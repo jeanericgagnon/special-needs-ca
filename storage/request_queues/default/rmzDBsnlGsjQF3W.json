@@ -1,9 +1,0 @@
-{
-	"id": "rmzDBsnlGsjQF3W",
-	"json": "{\"id\":\"rmzDBsnlGsjQF3W\",\"url\":\"https://rarediseases.org/organizations/the-allo-hope-foundation/\",\"loadedUrl\":\"https://rarediseases.org/organizations/the-allo-hope-foundation/\",\"uniqueKey\":\"https://rarediseases.org/organizations/the-allo-hope-foundation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:20:39.874Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/organizations/the-allo-hope-foundation",
-	"url": "https://rarediseases.org/organizations/the-allo-hope-foundation/"
-}

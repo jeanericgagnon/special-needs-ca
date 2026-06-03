@@ -1,9 +1,0 @@
-{
-	"id": "OerIiIpEFzIjOin",
-	"json": "{\"id\":\"OerIiIpEFzIjOin\",\"url\":\"https://health.ucdavis.edu/children/team/32271/kelly-haas-pediatric-gastroenterology-sacramento-citrus-heights\",\"loadedUrl\":\"https://health.ucdavis.edu/children/team/32271/kelly-haas-pediatric-gastroenterology-sacramento-citrus-heights\",\"uniqueKey\":\"https://health.ucdavis.edu/children/team/32271/kelly-haas-pediatric-gastroenterology-sacramento-citrus-heights\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:12.506Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/children/team/32271/kelly-haas-pediatric-gastroenterology-sacramento-citrus-heights",
-	"url": "https://health.ucdavis.edu/children/team/32271/kelly-haas-pediatric-gastroenterology-sacramento-citrus-heights"
-}

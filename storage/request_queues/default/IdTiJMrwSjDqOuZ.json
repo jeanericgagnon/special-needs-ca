@@ -1,9 +1,0 @@
-{
-	"id": "IdTiJMrwSjDqOuZ",
-	"json": "{\"id\":\"IdTiJMrwSjDqOuZ\",\"url\":\"https://www.cde.ca.gov/ta/tg/sa/tools-for-teachers.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=82275dd0-a677-4551-9528-85ee0e9dc3b5&ssb=11872232857&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fta%2Ftg%2Fsa%2Ftools-for-teachers.asp&ssi=899d156a-ctxv-47c0-bddf-b4ecc6b5d027&ssk=botmanager_support@radware.com&ssm=09028092620580031104007603671082&ssn=613b3d9b59c4224be8183e9c8baf379248c437cbd216-7fdb-43d4-92a51b&sso=9ae7c5a4-3ea05a2c72bdf517240bc29d4b56a62fb695192e47073fb0&ssp=83867109601780384588178037160785971&ssq=89158122730530151143927305083003363885909&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsIl9fdXptZiI6IjdmOTAwMDM3Y2JkMjE2LTdmZGItNDNkNC05NWE0LTNlYTA1YTJjNzJiZDEtMTc4MDMyNzMwNTc5NTAtMDAzODkxOTNiODEzZTc5MGMyYjEwIiwidXpteCI6IjdmOTAwMGY4ZGM5YTE5LWNjZDEtNDMwNC1hNzkyLTFmMWM5ZGU5ZTE4ZjEtMTc4MDMyNzMwNTc5NTAtNjgzZDI5YTU3YjZlNmQ1NzEwIn0=\",\"uniqueKey\":\"https://www.cde.ca.gov/ta/tg/sa/tools-for-teachers.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:21:45.879Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ta/tg/sa/tools-for-teachers.asp",
-	"url": "https://www.cde.ca.gov/ta/tg/sa/tools-for-teachers.asp"
-}

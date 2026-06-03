@@ -1,9 +1,0 @@
-{
-	"id": "wcntFyrLuKT3zfC",
-	"json": "{\"id\":\"wcntFyrLuKT3zfC\",\"url\":\"https://www.cdss.ca.gov/sun-bucks/who-is-eligible\",\"loadedUrl\":\"https://www.cdss.ca.gov/sun-bucks/who-is-eligible\",\"uniqueKey\":\"https://www.cdss.ca.gov/sun-bucks/who-is-eligible\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:31.870Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/sun-bucks/who-is-eligible",
-	"url": "https://www.cdss.ca.gov/sun-bucks/who-is-eligible"
-}

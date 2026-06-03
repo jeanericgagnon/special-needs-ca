@@ -1,9 +1,0 @@
-{
-	"id": "axFbHN74S701PFW",
-	"json": "{\"id\":\"axFbHN74S701PFW\",\"url\":\"https://hr.ucdavis.edu/employees/layoff/manage-stress\",\"loadedUrl\":\"https://hr.ucdavis.edu/employees/layoff/manage-stress\",\"uniqueKey\":\"https://hr.ucdavis.edu/employees/layoff/manage-stress\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:10.995Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/employees/layoff/manage-stress",
-	"url": "https://hr.ucdavis.edu/employees/layoff/manage-stress"
-}

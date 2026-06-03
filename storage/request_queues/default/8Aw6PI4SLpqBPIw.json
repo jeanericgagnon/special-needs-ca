@@ -1,9 +1,0 @@
-{
-	"id": "8Aw6PI4SLpqBPIw",
-	"json": "{\"id\":\"8Aw6PI4SLpqBPIw\",\"url\":\"https://health.ucdavis.edu/gme/application.html\",\"loadedUrl\":\"https://health.ucdavis.edu/graduate-medical-education/prospective-applicants/applying-for-a-post-graduate-position\",\"uniqueKey\":\"https://health.ucdavis.edu/gme/application.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:53.367Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/gme/application.html",
-	"url": "https://health.ucdavis.edu/gme/application.html"
-}

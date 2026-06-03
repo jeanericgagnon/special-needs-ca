@@ -1,9 +1,0 @@
-{
-	"id": "fgBIS0y7y8dYEXm",
-	"json": "{\"id\":\"fgBIS0y7y8dYEXm\",\"url\":\"https://my.ucdavis.edu/ask_us/\",\"loadedUrl\":\"https://my.ucdavis.edu/ask_us/\",\"uniqueKey\":\"https://my.ucdavis.edu/ask_us\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:24.674Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://my.ucdavis.edu/ask_us",
-	"url": "https://my.ucdavis.edu/ask_us/"
-}

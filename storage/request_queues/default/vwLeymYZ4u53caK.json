@@ -1,9 +1,0 @@
-{
-	"id": "vwLeymYZ4u53caK",
-	"json": "{\"id\":\"vwLeymYZ4u53caK\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/21998/sam-hwang-dermatology-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/21998/sam-hwang-dermatology-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/21998/sam-hwang-dermatology-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:08.661Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/21998/sam-hwang-dermatology-sacramento",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/21998/sam-hwang-dermatology-sacramento"
-}

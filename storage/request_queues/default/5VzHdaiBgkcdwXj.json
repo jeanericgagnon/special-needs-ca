@@ -1,9 +1,0 @@
-{
-	"id": "5VzHdaiBgkcdwXj",
-	"json": "{\"id\":\"5VzHdaiBgkcdwXj\",\"url\":\"https://www.cde.ca.gov/re/pn/sm/legblindreginstructions.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/re/pn/sm/legblindreginstructions.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/re/pn/sm/legblindreginstructions.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:09:01.709Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/re/pn/sm/legblindreginstructions.asp",
-	"url": "https://www.cde.ca.gov/re/pn/sm/legblindreginstructions.asp"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "ppfbbr5E1x8YXft",
-	"json": "{\"id\":\"ppfbbr5E1x8YXft\",\"url\":\"https://sgc.ca.gov/programs/community-resilience-centers/\",\"loadedUrl\":\"https://sgc.ca.gov/programs/community-resilience-centers/\",\"uniqueKey\":\"https://sgc.ca.gov/programs/community-resilience-centers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:32.865Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://sgc.ca.gov/programs/community-resilience-centers",
-	"url": "https://sgc.ca.gov/programs/community-resilience-centers/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "J4F4jStqPVQCRYU",
-	"json": "{\"id\":\"J4F4jStqPVQCRYU\",\"url\":\"https://www.csb-cde.ca.gov/resources/whatsavailable/refreshbrailletactgraph.aspx\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=da6ffa13-aa9e-4b8a-bbc4-68dd9451cb8a&ssb=23173292894&ssc=https%3A%2F%2Fwww.csb-cde.ca.gov%2Fresources%2Fwhatsavailable%2Frefreshbrailletactgraph.aspx&ssi=14677f77-cuez-4370-b7b7-eefd2254ee47&ssk=botmanager_support@radware.com&ssm=31313435998308061139066143154915&ssn=83d86c4bbf0b2d2fe09dea1832166f1cbc40e0f12113-2e69-4ea5-bf6229&sso=2eb40ca2-062957764fbaca786fad9d7d2f2a16d5b9028c0362e634c6&ssp=24772901561780354160178030367353348&ssq=57813952763448830850927624558265500152676&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBlMGYxMjExMy0yZTY5LTRlYTUtYmNhMi0wNjI5NTc3NjRmYmExLTE3ODAzMjc2MjQ0NTg5ODAyLTAwMzgxYzJlZGFjY2I1NzJhMjcxMyIsInJkIjoiY2EuZ292IiwidXpteCI6IjdmOTAwMGY3MTcwZWJlLTc1NWEtNGIyMS05Yjk2LTBkYTAxNTY4MTE5MTEtMTc4MDMyNjU0MTMyNDEwOTI5MzYtNWRmOTEwMDhiNGMzYzQ2NTE5In0=\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/resources/whatsavailable/refreshbrailletactgraph.aspx\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:27:14.370Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.csb-cde.ca.gov/resources/whatsavailable/refreshbrailletactgraph.aspx",
-	"url": "https://www.csb-cde.ca.gov/resources/whatsavailable/refreshbrailletactgraph.aspx"
-}

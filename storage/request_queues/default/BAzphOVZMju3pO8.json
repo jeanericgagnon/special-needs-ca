@@ -1,9 +1,0 @@
-{
-	"id": "BAzphOVZMju3pO8",
-	"json": "{\"id\":\"BAzphOVZMju3pO8\",\"url\":\"https://health.ucdavis.edu/treatments/reconstructive-urology\",\"loadedUrl\":\"https://health.ucdavis.edu/treatments/reconstructive-urology\",\"uniqueKey\":\"https://health.ucdavis.edu/treatments/reconstructive-urology\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:45.780Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/treatments/reconstructive-urology",
-	"url": "https://health.ucdavis.edu/treatments/reconstructive-urology"
-}

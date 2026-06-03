@@ -1,9 +1,0 @@
-{
-	"id": "52C6aq23SrqbbT0",
-	"json": "{\"id\":\"52C6aq23SrqbbT0\",\"url\":\"https://irb.ucdavis.edu/irb-review-process/irb-determinations/reasons-deferral/\",\"loadedUrl\":\"https://irb.ucdavis.edu/irb-review-process/irb-determinations/reasons-deferral/\",\"uniqueKey\":\"https://irb.ucdavis.edu/irb-review-process/irb-determinations/reasons-deferral\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:41.248Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://irb.ucdavis.edu/irb-review-process/irb-determinations/reasons-deferral",
-	"url": "https://irb.ucdavis.edu/irb-review-process/irb-determinations/reasons-deferral/"
-}

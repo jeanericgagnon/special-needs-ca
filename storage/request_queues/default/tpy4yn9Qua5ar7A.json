@@ -1,9 +1,0 @@
-{
-	"id": "tpy4yn9Qua5ar7A",
-	"json": "{\"id\":\"tpy4yn9Qua5ar7A\",\"url\":\"https://data.ca.gov/dataset/safer-failing-and-at-risk-drinking-water-systems\",\"loadedUrl\":\"https://data.ca.gov/dataset/safer-failing-and-at-risk-drinking-water-systems\",\"uniqueKey\":\"https://data.ca.gov/dataset/safer-failing-and-at-risk-drinking-water-systems\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:15.822Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://data.ca.gov/dataset/safer-failing-and-at-risk-drinking-water-systems",
-	"url": "https://data.ca.gov/dataset/safer-failing-and-at-risk-drinking-water-systems"
-}

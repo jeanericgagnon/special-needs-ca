@@ -1,9 +1,0 @@
-{
-	"id": "3rue9jLlWWQpAeq",
-	"json": "{\"id\":\"3rue9jLlWWQpAeq\",\"url\":\"https://iet.ucdavis.edu/iet-connect-archive\",\"loadedUrl\":\"https://cas.ucdavis.edu/cas/login?service=https%3A//iet.ucdavis.edu/casservice%3Fdestination%3D/iet-connect-archive\",\"uniqueKey\":\"https://iet.ucdavis.edu/iet-connect-archive\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:14.341Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://iet.ucdavis.edu/iet-connect-archive",
-	"url": "https://iet.ucdavis.edu/iet-connect-archive"
-}

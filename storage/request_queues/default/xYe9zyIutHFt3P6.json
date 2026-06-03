@@ -1,9 +1,0 @@
-{
-	"id": "xYe9zyIutHFt3P6",
-	"json": "{\"id\":\"xYe9zyIutHFt3P6\",\"url\":\"https://cdss.ca.gov/inforesources/OCAP/Shaken-Baby-Syndrome\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/ocap/shaken-baby-syndrome\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/OCAP/Shaken-Baby-Syndrome\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:22.821Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/OCAP/Shaken-Baby-Syndrome",
-	"url": "https://cdss.ca.gov/inforesources/OCAP/Shaken-Baby-Syndrome"
-}

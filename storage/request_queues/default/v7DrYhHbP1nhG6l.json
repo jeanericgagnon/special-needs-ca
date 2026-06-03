@@ -1,9 +1,0 @@
-{
-	"id": "v7DrYhHbP1nhG6l",
-	"json": "{\"id\":\"v7DrYhHbP1nhG6l\",\"url\":\"https://www.cdss.ca.gov/inforesources/cdss-programs/ihss/evvhelp\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/cdss-programs/ihss/evvhelp\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/cdss-programs/ihss/evvhelp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:50.707Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/inforesources/cdss-programs/ihss/evvhelp",
-	"url": "https://www.cdss.ca.gov/inforesources/cdss-programs/ihss/evvhelp"
-}

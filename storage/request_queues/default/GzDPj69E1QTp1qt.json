@@ -1,9 +1,0 @@
-{
-	"id": "GzDPj69E1QTp1qt",
-	"json": "{\"id\":\"GzDPj69E1QTp1qt\",\"url\":\"https://cdss.ca.gov/sunbucks/faq\",\"loadedUrl\":\"https://cdss.ca.gov/sun-bucks/faq\",\"uniqueKey\":\"https://cdss.ca.gov/sunbucks/faq\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:04.470Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/sunbucks/faq",
-	"url": "https://cdss.ca.gov/sunbucks/faq"
-}

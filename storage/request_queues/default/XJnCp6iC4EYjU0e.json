@@ -1,9 +1,0 @@
-{
-	"id": "XJnCp6iC4EYjU0e",
-	"json": "{\"id\":\"XJnCp6iC4EYjU0e\",\"url\":\"https://health.ucdavis.edu/internal-medicine/pulmonary/our-services/\",\"loadedUrl\":\"https://health.ucdavis.edu/internal-medicine/pulmonary/our-services/\",\"uniqueKey\":\"https://health.ucdavis.edu/internal-medicine/pulmonary/our-services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:34:25.946Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/internal-medicine/pulmonary/our-services",
-	"url": "https://health.ucdavis.edu/internal-medicine/pulmonary/our-services/"
-}

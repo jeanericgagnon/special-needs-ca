@@ -1,9 +1,0 @@
-{
-	"id": "RS7GcVh8YRdDHst",
-	"json": "{\"id\":\"RS7GcVh8YRdDHst\",\"url\":\"https://calcivilrights.ca.gov/events/list/\",\"loadedUrl\":\"https://calcivilrights.ca.gov/events/list/\",\"uniqueKey\":\"https://calcivilrights.ca.gov/events/list\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T17:23:20.500Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://calcivilrights.ca.gov/events/list",
-	"url": "https://calcivilrights.ca.gov/events/list/"
-}

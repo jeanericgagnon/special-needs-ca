@@ -1,9 +1,0 @@
-{
-	"id": "6F6E7sOYFYZcwSM",
-	"json": "{\"id\":\"6F6E7sOYFYZcwSM\",\"url\":\"https://health.ucdavis.edu/pediatrics/team/63552/van_kim-ma\",\"loadedUrl\":\"https://health.ucdavis.edu/pediatrics/team/63552/van_kim-ma\",\"uniqueKey\":\"https://health.ucdavis.edu/pediatrics/team/63552/van_kim-ma\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:54.029Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/pediatrics/team/63552/van_kim-ma",
-	"url": "https://health.ucdavis.edu/pediatrics/team/63552/van_kim-ma"
-}

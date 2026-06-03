@@ -1,9 +1,0 @@
-{
-	"id": "1wmyRz8wN5F0Ash",
-	"json": "{\"id\":\"1wmyRz8wN5F0Ash\",\"url\":\"https://financeandbusiness.ucdavis.edu/training/systemstraining\",\"loadedUrl\":\"https://financeandbusiness.ucdavis.edu/training/systemstraining\",\"uniqueKey\":\"https://financeandbusiness.ucdavis.edu/training/systemstraining\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:54.623Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://financeandbusiness.ucdavis.edu/training/systemstraining",
-	"url": "https://financeandbusiness.ucdavis.edu/training/systemstraining"
-}

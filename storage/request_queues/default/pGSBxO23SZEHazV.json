@@ -1,9 +1,0 @@
-{
-	"id": "pGSBxO23SZEHazV",
-	"json": "{\"id\":\"pGSBxO23SZEHazV\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/MIHA/Pages/COVID-19-Data-Brief-Food-and-Housing.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/MIHA/Pages/COVID-19-Data-Brief-Food-and-Housing.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/MIHA/Pages/COVID-19-Data-Brief-Food-and-Housing.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:01:20.429Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/MIHA/Pages/COVID-19-Data-Brief-Food-and-Housing.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/MIHA/Pages/COVID-19-Data-Brief-Food-and-Housing.aspx"
-}

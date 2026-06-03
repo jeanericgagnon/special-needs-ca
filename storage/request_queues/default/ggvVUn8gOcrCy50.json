@@ -1,9 +1,0 @@
-{
-	"id": "ggvVUn8gOcrCy50",
-	"json": "{\"id\":\"ggvVUn8gOcrCy50\",\"url\":\"https://health.ucdavis.edu/internal-medicine/make-a-gift\",\"loadedUrl\":\"https://health.ucdavis.edu/internal-medicine/make-a-gift\",\"uniqueKey\":\"https://health.ucdavis.edu/internal-medicine/make-a-gift\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:34:25.116Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/internal-medicine/make-a-gift",
-	"url": "https://health.ucdavis.edu/internal-medicine/make-a-gift"
-}

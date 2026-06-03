@@ -1,9 +1,0 @@
-{
-	"id": "wsdG96Zltd5oR5I",
-	"json": "{\"id\":\"wsdG96Zltd5oR5I\",\"url\":\"https://scdd.ca.gov/sdm-tap-resources/keeping-individuals-with-disabilities-and-aging-adults-in-charge-of-their-lives-supported-decision-making-and-other-alternatives-to-guardianship/\",\"loadedUrl\":\"https://scdd.ca.gov/sdm-tap-resources/keeping-individuals-with-disabilities-and-aging-adults-in-charge-of-their-lives-supported-decision-making-and-other-alternatives-to-guardianship/\",\"uniqueKey\":\"https://scdd.ca.gov/sdm-tap-resources/keeping-individuals-with-disabilities-and-aging-adults-in-charge-of-their-lives-supported-decision-making-and-other-alternatives-to-guardianship\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:19:34.948Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/sdm-tap-resources/keeping-individuals-with-disabilities-and-aging-adults-in-charge-of-their-lives-supported-decision-making-and-other-alternatives-to-guardianship",
-	"url": "https://scdd.ca.gov/sdm-tap-resources/keeping-individuals-with-disabilities-and-aging-adults-in-charge-of-their-lives-supported-decision-making-and-other-alternatives-to-guardianship/"
-}

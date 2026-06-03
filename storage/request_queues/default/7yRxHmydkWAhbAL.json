@@ -1,9 +1,0 @@
-{
-	"id": "7yRxHmydkWAhbAL",
-	"json": "{\"id\":\"7yRxHmydkWAhbAL\",\"url\":\"https://recruit.ucdavis.edu/JPF06973\",\"loadedUrl\":\"https://recruit.ucdavis.edu/JPF06973\",\"uniqueKey\":\"https://recruit.ucdavis.edu/JPF06973\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:28.819Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://recruit.ucdavis.edu/JPF06973",
-	"url": "https://recruit.ucdavis.edu/JPF06973"
-}

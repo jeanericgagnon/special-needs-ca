@@ -67,7 +67,9 @@ CREATE TABLE IF NOT EXISTS program_appeal_info (
 CREATE TABLE IF NOT EXISTS counties (
     id TEXT PRIMARY KEY, -- 'los-angeles', 'orange', etc.
     name TEXT NOT NULL,
-    website TEXT NOT NULL
+    website TEXT NOT NULL,
+    ihss_wage_rate REAL DEFAULT 16.00,
+    medi_cal_plans TEXT
 );
 
 -- 7. county_offices
@@ -316,6 +318,24 @@ CREATE TABLE IF NOT EXISTS verification_queue_items (
     verification_level INTEGER NOT NULL DEFAULT 5 -- Level 1-6 scale
 );
 
+-- 27. iep_advocates
+CREATE TABLE IF NOT EXISTS iep_advocates (
+    id TEXT PRIMARY KEY,
+    name TEXT NOT NULL,
+    credentials TEXT NOT NULL,
+    experience_years INTEGER NOT NULL,
+    price_rate TEXT NOT NULL,
+    counties_served TEXT NOT NULL,
+    languages_spoken TEXT NOT NULL,
+    phone TEXT NOT NULL,
+    email TEXT NOT NULL,
+    website TEXT NOT NULL,
+    specialties TEXT,
+    regional_center_vendorized INTEGER DEFAULT 0,
+    organization_affiliation TEXT,
+    description TEXT
+);
+
 -- Create optimized database indexes to accelerate query joins
 CREATE INDEX IF NOT EXISTS idx_rules_program ON program_eligibility_rules(program_id);
 CREATE INDEX IF NOT EXISTS idx_offices_county ON county_offices(county_id);
@@ -326,3 +346,19 @@ CREATE INDEX IF NOT EXISTS idx_junction_child_need ON child_profile_needs(child_
 CREATE INDEX IF NOT EXISTS idx_statuses_child ON case_program_statuses(child_id);
 CREATE INDEX IF NOT EXISTS idx_checklists_child ON document_checklist_items(child_id);
 CREATE INDEX IF NOT EXISTS idx_reminders_child ON reminders(child_id);
+
+-- 28. child_waivers (Waiver Vault & Re-Application)
+CREATE TABLE IF NOT EXISTS child_waivers (
+    id TEXT PRIMARY KEY,
+    child_id TEXT NOT NULL,
+    waiver_type TEXT NOT NULL, -- 'hcbs-dd-waiver' | 'institutional-deeming' | 'ccs-authorization' | 'other'
+    document_name TEXT NOT NULL,
+    file_path TEXT,
+    effective_date TEXT,
+    expiration_date TEXT,
+    authorized_hours REAL,
+    parsed_content TEXT,
+    created_at TEXT NOT NULL,
+    FOREIGN KEY (child_id) REFERENCES child_profiles(id) ON DELETE CASCADE
+);
+CREATE INDEX IF NOT EXISTS idx_waivers_child ON child_waivers(child_id);

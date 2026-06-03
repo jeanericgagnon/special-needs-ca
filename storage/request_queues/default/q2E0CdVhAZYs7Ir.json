@@ -1,9 +1,0 @@
-{
-	"id": "q2E0CdVhAZYs7Ir",
-	"json": "{\"id\":\"q2E0CdVhAZYs7Ir\",\"url\":\"https://ucp.org/research/\",\"loadedUrl\":\"https://ucp.org/research/\",\"uniqueKey\":\"https://ucp.org/research\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:34.526Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ucp.org/research",
-	"url": "https://ucp.org/research/"
-}

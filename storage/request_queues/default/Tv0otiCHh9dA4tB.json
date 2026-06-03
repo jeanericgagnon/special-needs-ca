@@ -1,9 +1,0 @@
-{
-	"id": "Tv0otiCHh9dA4tB",
-	"json": "{\"id\":\"Tv0otiCHh9dA4tB\",\"url\":\"https://www.ccld.dss.ca.gov/use.html\",\"loadedUrl\":\"https://www.ccld.dss.ca.gov/use.html\",\"uniqueKey\":\"https://www.ccld.dss.ca.gov/use.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:00.781Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ccld.dss.ca.gov/use.html",
-	"url": "https://www.ccld.dss.ca.gov/use.html"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "BJ75hYByuEmYexM",
-	"json": "{\"id\":\"BJ75hYByuEmYexM\",\"url\":\"https://health.ucdavis.edu/news/es/headlines/tipos-de-dolores-de-cabeza-sus-causas-y-tratamientos/2026/02\",\"loadedUrl\":\"https://health.ucdavis.edu/news/es/headlines/tipos-de-dolores-de-cabeza-sus-causas-y-tratamientos/2026/02\",\"uniqueKey\":\"https://health.ucdavis.edu/news/es/headlines/tipos-de-dolores-de-cabeza-sus-causas-y-tratamientos/2026/02\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:19.491Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/news/es/headlines/tipos-de-dolores-de-cabeza-sus-causas-y-tratamientos/2026/02",
-	"url": "https://health.ucdavis.edu/news/es/headlines/tipos-de-dolores-de-cabeza-sus-causas-y-tratamientos/2026/02"
-}

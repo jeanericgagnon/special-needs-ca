@@ -1,9 +1,0 @@
-{
-	"id": "PKDNNS6qHcPs0Sr",
-	"json": "{\"id\":\"PKDNNS6qHcPs0Sr\",\"url\":\"http://www.scdd.ca.gov/res/docs/pdf/Employment_First/Employment%20First%20Policy%20Summary%20SCDD%20CECY.pdf\",\"loadedUrl\":\"http://scdd.ca.gov/res/docs/pdf/Employment_First/Employment%20First%20Policy%20Summary%20SCDD%20CECY.pdf\",\"uniqueKey\":\"http://www.scdd.ca.gov/res/docs/pdf/Employment_First/Employment%20First%20Policy%20Summary%20SCDD%20CECY.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:19:27.362Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.scdd.ca.gov/res/docs/pdf/Employment_First/Employment%20First%20Policy%20Summary%20SCDD%20CECY.pdf",
-	"url": "http://www.scdd.ca.gov/res/docs/pdf/Employment_First/Employment%20First%20Policy%20Summary%20SCDD%20CECY.pdf"
-}

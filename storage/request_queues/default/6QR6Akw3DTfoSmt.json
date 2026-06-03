@@ -1,9 +1,0 @@
-{
-	"id": "6QR6Akw3DTfoSmt",
-	"json": "{\"id\":\"6QR6Akw3DTfoSmt\",\"url\":\"https://health.ucdavis.edu/stemcellresearch/cores/lassf_facility.html\",\"loadedUrl\":\"https://health.ucdavis.edu/stemcellresearch/cores/lassf_facility.html\",\"uniqueKey\":\"https://health.ucdavis.edu/stemcellresearch/cores/lassf_facility.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:31.085Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/stemcellresearch/cores/lassf_facility.html",
-	"url": "https://health.ucdavis.edu/stemcellresearch/cores/lassf_facility.html"
-}

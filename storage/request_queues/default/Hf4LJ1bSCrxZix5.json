@@ -1,9 +1,0 @@
-{
-	"id": "Hf4LJ1bSCrxZix5",
-	"json": "{\"id\":\"Hf4LJ1bSCrxZix5\",\"url\":\"https://neuroscience.ucdavis.edu/tags/autism\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/tags/autism\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/tags/autism\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:00.977Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/tags/autism",
-	"url": "https://neuroscience.ucdavis.edu/tags/autism"
-}

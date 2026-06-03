@@ -1,9 +1,0 @@
-{
-	"id": "JCSPP47DknAtFnY",
-	"json": "{\"id\":\"JCSPP47DknAtFnY\",\"url\":\"https://financeandbusiness.ucdavis.edu/finance/tax-reporting-compliance/help\",\"loadedUrl\":\"https://financeandbusiness.ucdavis.edu/finance/tax-reporting-compliance/help\",\"uniqueKey\":\"https://financeandbusiness.ucdavis.edu/finance/tax-reporting-compliance/help\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:53.781Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://financeandbusiness.ucdavis.edu/finance/tax-reporting-compliance/help",
-	"url": "https://financeandbusiness.ucdavis.edu/finance/tax-reporting-compliance/help"
-}

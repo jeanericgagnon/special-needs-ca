@@ -1,9 +1,0 @@
-{
-	"id": "FIcED2XpPXPCzvd",
-	"json": "{\"id\":\"FIcED2XpPXPCzvd\",\"url\":\"https://www.cdss.ca.gov/sun-bucks/how-to-submit-a-dispute\",\"loadedUrl\":\"https://www.cdss.ca.gov/sun-bucks/how-to-submit-a-dispute\",\"uniqueKey\":\"https://www.cdss.ca.gov/sun-bucks/how-to-submit-a-dispute\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:31.648Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/sun-bucks/how-to-submit-a-dispute",
-	"url": "https://www.cdss.ca.gov/sun-bucks/how-to-submit-a-dispute"
-}

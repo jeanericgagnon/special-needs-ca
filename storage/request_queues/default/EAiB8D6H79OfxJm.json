@@ -1,9 +1,0 @@
-{
-	"id": "EAiB8D6H79OfxJm",
-	"json": "{\"id\":\"EAiB8D6H79OfxJm\",\"url\":\"https://www.cde.ca.gov/fg/ac/fs/\",\"loadedUrl\":\"https://www.cde.ca.gov/fg/ac/fs/\",\"uniqueKey\":\"https://www.cde.ca.gov/fg/ac/fs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:21:50.026Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/fg/ac/fs",
-	"url": "https://www.cde.ca.gov/fg/ac/fs/"
-}

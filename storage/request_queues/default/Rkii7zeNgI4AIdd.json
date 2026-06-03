@@ -1,9 +1,0 @@
-{
-	"id": "Rkii7zeNgI4AIdd",
-	"json": "{\"id\":\"Rkii7zeNgI4AIdd\",\"url\":\"https://cdss.ca.gov/inforesources/Adoptions/Adoption-Assistance-Program\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/adoptions/adoption-assistance-program\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Adoptions/Adoption-Assistance-Program\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:15.089Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/Adoptions/Adoption-Assistance-Program",
-	"url": "https://cdss.ca.gov/inforesources/Adoptions/Adoption-Assistance-Program"
-}

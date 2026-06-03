@@ -1,9 +1,0 @@
-{
-	"id": "J02arqEMGVFhcEu",
-	"json": "{\"id\":\"J02arqEMGVFhcEu\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/42379/natascha-tuznik---infectious-diseases-sacramento/\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/42379/natascha-tuznik---infectious-diseases-sacramento/\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/42379/natascha-tuznik---infectious-diseases-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:11.318Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/42379/natascha-tuznik---infectious-diseases-sacramento",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/42379/natascha-tuznik---infectious-diseases-sacramento/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "O3QWeScNOtKLIyb",
-	"json": "{\"id\":\"O3QWeScNOtKLIyb\",\"url\":\"https://www.dds.ca.gov/initiatives/\",\"loadedUrl\":\"https://www.dds.ca.gov/initiatives/\",\"uniqueKey\":\"https://www.dds.ca.gov/initiatives\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:24.085Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/initiatives",
-	"url": "https://www.dds.ca.gov/initiatives/"
-}

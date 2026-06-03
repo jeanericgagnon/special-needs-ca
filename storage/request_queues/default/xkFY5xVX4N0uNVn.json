@@ -1,9 +1,0 @@
-{
-	"id": "xkFY5xVX4N0uNVn",
-	"json": "{\"id\":\"xkFY5xVX4N0uNVn\",\"url\":\"https://scdd.ca.gov/housing-resources/\",\"loadedUrl\":\"https://scdd.ca.gov/housing-resources/\",\"uniqueKey\":\"https://scdd.ca.gov/housing-resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:32.831Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/housing-resources",
-	"url": "https://scdd.ca.gov/housing-resources/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "VfLg6DR8D9rPA4Q",
-	"json": "{\"id\":\"VfLg6DR8D9rPA4Q\",\"url\":\"https://www.cde.ca.gov/SchoolDirectory/active-or-pending-schools/0\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=015f6a15-0d78-4983-94fe-9ab5db55126b&ssb=75977221366&ssc=https%3A%2F%2Fwww.cde.ca.gov%2FSchoolDirectory%2Factive-or-pending-schools%2F0&ssi=5505b4a0-ctxv-41b1-a9d6-bc4699286ef7&ssk=botmanager_support@radware.com&ssm=72598324562201695165395843311457&ssn=f4661f050e000216839029de5cd518c0bc81233e07c5-7118-49f7-9b6997&sso=17710218-f341e8d588927251243e832a8335fe72efe4c00561574ab9&ssp=66691864871780363431178030784491996&ssq=24276982744089817801526609807902330127342&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsIl9fdXptZiI6IjdmOTAwMDIzM2UwN2M1LTcxMTgtNDlmNy05MjE4LWYzNDFlOGQ1ODg5MjEtMTc4MDMyNjYwOTE4OTgzMTE2NC0wMDMyMjgzODAxYmI5MzYzMWQ5MTYiLCJ1em14IjoiN2Y5MDAwNTE1MDkxZDUtY2UzOS00OTM1LTg2NTUtZmFlNTI2MThhM2VjMS0xNzgwMzI2NjA5MTg5ODMxMTY0LWRhMWI2YmU1YTZlNTQ4MjkxNiJ9\",\"uniqueKey\":\"https://www.cde.ca.gov/SchoolDirectory/active-or-pending-schools/0\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:24:00.433Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/SchoolDirectory/active-or-pending-schools/0",
-	"url": "https://www.cde.ca.gov/SchoolDirectory/active-or-pending-schools/0"
-}

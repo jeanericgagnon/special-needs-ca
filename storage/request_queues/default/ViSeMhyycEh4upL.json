@@ -1,9 +1,0 @@
-{
-	"id": "ViSeMhyycEh4upL",
-	"json": "{\"id\":\"ViSeMhyycEh4upL\",\"url\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/School/resources-parents.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/School/resources-parents.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/School/resources-parents.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:54:30.699Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/School/resources-parents.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/School/resources-parents.aspx"
-}

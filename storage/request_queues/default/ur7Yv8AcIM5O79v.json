@@ -1,9 +1,0 @@
-{
-	"id": "ur7Yv8AcIM5O79v",
-	"json": "{\"id\":\"ur7Yv8AcIM5O79v\",\"url\":\"https://health.ucdavis.edu/mind-institute/resources/learning-disabilities\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/resources/learning-disabilities\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/resources/learning-disabilities\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:38.586Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mind-institute/resources/learning-disabilities",
-	"url": "https://health.ucdavis.edu/mind-institute/resources/learning-disabilities"
-}

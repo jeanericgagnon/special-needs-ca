@@ -1,9 +1,0 @@
-{
-	"id": "PlNGeAa4aWjAPEH",
-	"json": "{\"id\":\"PlNGeAa4aWjAPEH\",\"url\":\"https://www.dds.ca.gov/transparency/dds-publications/\",\"loadedUrl\":\"https://www.dds.ca.gov/transparency/dds-publications/\",\"uniqueKey\":\"https://www.dds.ca.gov/transparency/dds-publications\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:07:50.285Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/transparency/dds-publications",
-	"url": "https://www.dds.ca.gov/transparency/dds-publications/"
-}

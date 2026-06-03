@@ -1,9 +1,0 @@
-{
-	"id": "L6hwzWa5eBTiGCi",
-	"json": "{\"id\":\"L6hwzWa5eBTiGCi\",\"url\":\"https://www.grants.ca.gov/?s&grant_categories_search%5B%5D=employment-labor-training\",\"loadedUrl\":\"https://www.grants.ca.gov/?s&grant_categories_search%5B%5D=employment-labor-training\",\"uniqueKey\":\"https://www.grants.ca.gov?grant_categories_search%5B%5D=employment-labor-training&s=\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:54.028Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.grants.ca.gov?grant_categories_search%5B%5D=employment-labor-training&s=",
-	"url": "https://www.grants.ca.gov/?s&grant_categories_search%5B%5D=employment-labor-training"
-}

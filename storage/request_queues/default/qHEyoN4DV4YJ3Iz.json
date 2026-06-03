@@ -1,9 +1,0 @@
-{
-	"id": "qHEyoN4DV4YJ3Iz",
-	"json": "{\"id\":\"qHEyoN4DV4YJ3Iz\",\"url\":\"https://www.dds.ca.gov/services/mhsa/mental-health-services-act-cycle-v/\",\"loadedUrl\":\"https://www.dds.ca.gov/services/mhsa/mental-health-services-act-cycle-v/\",\"uniqueKey\":\"https://www.dds.ca.gov/services/mhsa/mental-health-services-act-cycle-v\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:46.439Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/services/mhsa/mental-health-services-act-cycle-v",
-	"url": "https://www.dds.ca.gov/services/mhsa/mental-health-services-act-cycle-v/"
-}

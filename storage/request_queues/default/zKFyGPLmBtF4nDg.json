@@ -1,9 +1,0 @@
-{
-	"id": "zKFyGPLmBtF4nDg",
-	"json": "{\"id\":\"zKFyGPLmBtF4nDg\",\"url\":\"https://census.ca.gov/\",\"loadedUrl\":\"https://census.ca.gov/\",\"uniqueKey\":\"https://census.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:24:33.242Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://census.ca.gov",
-	"url": "https://census.ca.gov/"
-}

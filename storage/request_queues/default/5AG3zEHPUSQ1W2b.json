@@ -1,9 +1,0 @@
-{
-	"id": "5AG3zEHPUSQ1W2b",
-	"json": "{\"id\":\"5AG3zEHPUSQ1W2b\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/1589/niti-madan-nephrology-rocklin-sacramento?FreeText:Last+name=madan\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/1589/niti-madan-nephrology-rocklin-sacramento?FreeText:Last+name=madan\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/1589/niti-madan-nephrology-rocklin-sacramento?FreeText%3ALast+name=madan\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:11.945Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/1589/niti-madan-nephrology-rocklin-sacramento?FreeText%3ALast+name=madan",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/1589/niti-madan-nephrology-rocklin-sacramento?FreeText:Last+name=madan"
-}

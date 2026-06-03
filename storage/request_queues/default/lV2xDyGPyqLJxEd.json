@@ -1,9 +1,0 @@
-{
-	"id": "lV2xDyGPyqLJxEd",
-	"json": "{\"id\":\"lV2xDyGPyqLJxEd\",\"url\":\"https://giving.ucdavis.edu/ways-to-give/giving-societies/shields-society\",\"loadedUrl\":\"https://giving.ucdavis.edu/ways-to-give/giving-societies/shields-society\",\"uniqueKey\":\"https://giving.ucdavis.edu/ways-to-give/giving-societies/shields-society\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:31.542Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://giving.ucdavis.edu/ways-to-give/giving-societies/shields-society",
-	"url": "https://giving.ucdavis.edu/ways-to-give/giving-societies/shields-society"
-}

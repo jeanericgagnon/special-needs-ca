@@ -1,9 +1,0 @@
-{
-	"id": "LgYMMMVJ7IWqKHr",
-	"json": "{\"id\":\"LgYMMMVJ7IWqKHr\",\"url\":\"https://health.ucdavis.edu/blog/cultivating-health/subscribe\",\"loadedUrl\":\"https://health.ucdavis.edu/blog/cultivating-health/subscribe\",\"uniqueKey\":\"https://health.ucdavis.edu/blog/cultivating-health/subscribe\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T17:00:21.694Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/blog/cultivating-health/subscribe",
-	"url": "https://health.ucdavis.edu/blog/cultivating-health/subscribe"
-}

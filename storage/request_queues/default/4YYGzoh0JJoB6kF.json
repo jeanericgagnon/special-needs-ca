@@ -1,9 +1,0 @@
-{
-	"id": "4YYGzoh0JJoB6kF",
-	"json": "{\"id\":\"4YYGzoh0JJoB6kF\",\"url\":\"https://www.cde.ca.gov/ta/tg/pf/pftcoordinatorresources.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=78404a6a-3975-4061-aa47-c904a65e288c&ssb=55322286734&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fta%2Ftg%2Fpf%2Fpftcoordinatorresources.asp&ssi=fa8bd752-ctxv-42b8-a2ef-ea3b484e9f0f&ssk=botmanager_support@radware.com&ssm=27294350816415441102436163686230&ssn=3ad001ab0abfe16d9b7c9c93ed3d7ee010d9c87d63a7-8a3c-4003-ada4cd&sso=b2874219-586e309ca2827c6e4e002d8af50232ac0af76e2c0153f4d7&ssp=92423861721780337315178032765209887&ssq=97190552730447215785727304934831078101780&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsIl9fdXptZiI6IjdmOTAwMGM4N2Q2M2E3LThhM2MtNDAwMy1hMjE5LTU4NmUzMDljYTI4MjEtMTc4MDMyNzMwNDA5NjAtMDAzMjhmYzdkY2ExNmE0NDI1ODEwIiwidXpteCI6IjdmOTAwMDczMDJmYmQ2LWJjYTYtNDkxYy05OTExLTQzY2UwYjY1NmY2MjEtMTc4MDMyNzMwNDA5NjAtOWJiYWFmOGNiOWU0YWNlMjEwIn0=\",\"uniqueKey\":\"https://www.cde.ca.gov/ta/tg/pf/pftcoordinatorresources.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:21:44.626Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ta/tg/pf/pftcoordinatorresources.asp",
-	"url": "https://www.cde.ca.gov/ta/tg/pf/pftcoordinatorresources.asp"
-}

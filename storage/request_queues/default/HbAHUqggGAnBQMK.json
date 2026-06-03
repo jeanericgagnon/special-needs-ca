@@ -1,9 +1,0 @@
-{
-	"id": "HbAHUqggGAnBQMK",
-	"json": "{\"id\":\"HbAHUqggGAnBQMK\",\"url\":\"https://neuroscience.ucdavis.edu/news/center-neuroscience-appoints-new-director\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/news/center-neuroscience-appoints-new-director\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/news/center-neuroscience-appoints-new-director\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:01.767Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/news/center-neuroscience-appoints-new-director",
-	"url": "https://neuroscience.ucdavis.edu/news/center-neuroscience-appoints-new-director"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "H2nyPOSqZtqrgaV",
-	"json": "{\"id\":\"H2nyPOSqZtqrgaV\",\"url\":\"https://calable.ca.gov/api/v1/@apostrophecms/page/ckrfdpggz00joicoudt126otn:en:published/locale/es\",\"loadedUrl\":\"https://calable.ca.gov/es/acuerdo-de-participaci%C3%B3n\",\"uniqueKey\":\"https://calable.ca.gov/api/v1/@apostrophecms/page/ckrfdpggz00joicoudt126otn:en:published/locale/es\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:03.387Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://calable.ca.gov/api/v1/@apostrophecms/page/ckrfdpggz00joicoudt126otn:en:published/locale/es",
-	"url": "https://calable.ca.gov/api/v1/@apostrophecms/page/ckrfdpggz00joicoudt126otn:en:published/locale/es"
-}

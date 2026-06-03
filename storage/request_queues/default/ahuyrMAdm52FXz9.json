@@ -1,9 +1,0 @@
-{
-	"id": "ahuyrMAdm52FXz9",
-	"json": "{\"id\":\"ahuyrMAdm52FXz9\",\"url\":\"https://www.ca.gov/topics/jobs/\",\"loadedUrl\":\"https://www.ca.gov/topics/jobs/\",\"uniqueKey\":\"https://www.ca.gov/topics/jobs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:58.920Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ca.gov/topics/jobs",
-	"url": "https://www.ca.gov/topics/jobs/"
-}

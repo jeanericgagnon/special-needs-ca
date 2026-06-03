@@ -1,9 +1,0 @@
-{
-	"id": "EU7TvyaR479g6nA",
-	"json": "{\"id\":\"EU7TvyaR479g6nA\",\"url\":\"https://rarediseases.org/rare-diseases/pompe-disease/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/pompe-disease/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/pompe-disease\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:06:31.070Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/rare-diseases/pompe-disease",
-	"url": "https://rarediseases.org/rare-diseases/pompe-disease/"
-}

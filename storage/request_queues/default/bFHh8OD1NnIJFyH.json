@@ -1,9 +1,0 @@
-{
-	"id": "bFHh8OD1NnIJFyH",
-	"json": "{\"id\":\"bFHh8OD1NnIJFyH\",\"url\":\"https://health.ucdavis.edu/internalmedicine/pulmonary/interventional/index.html\",\"loadedUrl\":\"https://health.ucdavis.edu/internal-medicine/pulmonary/our-services/interventional-pulmonology-program\",\"uniqueKey\":\"https://health.ucdavis.edu/internalmedicine/pulmonary/interventional/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:42.108Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/internalmedicine/pulmonary/interventional/index.html",
-	"url": "https://health.ucdavis.edu/internalmedicine/pulmonary/interventional/index.html"
-}

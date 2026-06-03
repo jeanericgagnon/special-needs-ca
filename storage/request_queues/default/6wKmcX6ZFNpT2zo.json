@@ -1,9 +1,0 @@
-{
-	"id": "6wKmcX6ZFNpT2zo",
-	"json": "{\"id\":\"6wKmcX6ZFNpT2zo\",\"url\":\"https://www.sos.ca.gov/elections/voting-rights-restored\",\"loadedUrl\":\"https://www.sos.ca.gov/elections/voting-rights-restored\",\"uniqueKey\":\"https://www.sos.ca.gov/elections/voting-rights-restored\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:45.502Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.sos.ca.gov/elections/voting-rights-restored",
-	"url": "https://www.sos.ca.gov/elections/voting-rights-restored"
-}

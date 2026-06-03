@@ -1,9 +1,0 @@
-{
-	"id": "Bx4mpF0mZVuNa0v",
-	"json": "{\"id\":\"Bx4mpF0mZVuNa0v\",\"url\":\"https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=5892.&nodeTreePath=11.15&lawCode=WIC\",\"loadedUrl\":\"https://leginfo.legislature.ca.gov/faces/selectFromMultiples.xhtml?lawCode=WIC&sectionNum=5892.\",\"uniqueKey\":\"https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=WIC&nodeTreePath=11.15&sectionNum=5892.\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:54:07.943Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=WIC&nodeTreePath=11.15&sectionNum=5892.",
-	"url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=5892.&nodeTreePath=11.15&lawCode=WIC"
-}

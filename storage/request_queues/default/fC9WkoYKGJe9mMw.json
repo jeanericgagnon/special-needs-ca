@@ -1,9 +1,0 @@
-{
-	"id": "fC9WkoYKGJe9mMw",
-	"json": "{\"id\":\"fC9WkoYKGJe9mMw\",\"url\":\"https://health.ucdavis.edu/community-relations/construction-activity\",\"loadedUrl\":\"https://health.ucdavis.edu/community-relations/construction-activity\",\"uniqueKey\":\"https://health.ucdavis.edu/community-relations/construction-activity\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:10.823Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/community-relations/construction-activity",
-	"url": "https://health.ucdavis.edu/community-relations/construction-activity"
-}

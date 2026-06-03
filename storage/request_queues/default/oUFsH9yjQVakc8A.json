@@ -1,9 +1,0 @@
-{
-	"id": "oUFsH9yjQVakc8A",
-	"json": "{\"id\":\"oUFsH9yjQVakc8A\",\"url\":\"https://www.conservation.ca.gov/cgs/sh/program\",\"loadedUrl\":\"https://www.conservation.ca.gov/cgs/sh/program\",\"uniqueKey\":\"https://www.conservation.ca.gov/cgs/sh/program\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:18.473Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.conservation.ca.gov/cgs/sh/program",
-	"url": "https://www.conservation.ca.gov/cgs/sh/program"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "PgGJJYb2mKCjDdT",
-	"json": "{\"id\":\"PgGJJYb2mKCjDdT\",\"url\":\"https://health.ucdavis.edu/ctsc/news-and-events\",\"loadedUrl\":\"https://health.ucdavis.edu/ctsc/news-and-events\",\"uniqueKey\":\"https://health.ucdavis.edu/ctsc/news-and-events\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:32.051Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/ctsc/news-and-events",
-	"url": "https://health.ucdavis.edu/ctsc/news-and-events"
-}

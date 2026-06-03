@@ -1,9 +1,0 @@
-{
-	"id": "7JEQd8a39fCJJlf",
-	"json": "{\"id\":\"7JEQd8a39fCJJlf\",\"url\":\"https://www.cdph.ca.gov/Programs/CID/ORH/Pages/Health-Emergency.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CID/ORH/Pages/Health-Emergency.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CID/ORH/Pages/Health-Emergency.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:03:17.877Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CID/ORH/Pages/Health-Emergency.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CID/ORH/Pages/Health-Emergency.aspx"
-}

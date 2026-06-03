@@ -1,9 +1,0 @@
-{
-	"id": "eQWvT6zrO72h4a5",
-	"json": "{\"id\":\"eQWvT6zrO72h4a5\",\"url\":\"https://edd.ca.gov/en/unemployment/certify/\",\"loadedUrl\":\"https://edd.ca.gov/en/unemployment/step-5-certify-for-benefits-to-avoid-delays\",\"uniqueKey\":\"https://edd.ca.gov/en/unemployment/certify\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:32.248Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://edd.ca.gov/en/unemployment/certify",
-	"url": "https://edd.ca.gov/en/unemployment/certify/"
-}

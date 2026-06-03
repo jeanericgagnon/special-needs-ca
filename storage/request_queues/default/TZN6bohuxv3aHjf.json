@@ -1,9 +1,0 @@
-{
-	"id": "TZN6bohuxv3aHjf",
-	"json": "{\"id\":\"TZN6bohuxv3aHjf\",\"url\":\"https://careercenter.ucdavis.edu/#footer\",\"loadedUrl\":\"https://careercenter.ucdavis.edu/#footer\",\"uniqueKey\":\"https://careercenter.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:47.962Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://careercenter.ucdavis.edu",
-	"url": "https://careercenter.ucdavis.edu/#footer"
-}

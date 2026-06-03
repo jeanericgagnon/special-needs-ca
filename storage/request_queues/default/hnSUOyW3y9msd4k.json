@@ -1,9 +1,0 @@
-{
-	"id": "hnSUOyW3y9msd4k",
-	"json": "{\"id\":\"hnSUOyW3y9msd4k\",\"url\":\"https://health.ucdavis.edu/hemophilia/\",\"loadedUrl\":\"https://health.ucdavis.edu/hemophilia/\",\"uniqueKey\":\"https://health.ucdavis.edu/hemophilia\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:34:24.395Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/hemophilia",
-	"url": "https://health.ucdavis.edu/hemophilia/"
-}

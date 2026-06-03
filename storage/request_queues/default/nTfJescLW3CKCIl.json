@@ -1,9 +1,0 @@
-{
-	"id": "nTfJescLW3CKCIl",
-	"json": "{\"id\":\"nTfJescLW3CKCIl\",\"url\":\"https://www.cde.ca.gov/ta/tg/ep/alternateelpac.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ta/tg/ep/alternateelpac.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ta/tg/ep/alternateelpac.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:49.226Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ta/tg/ep/alternateelpac.asp",
-	"url": "https://www.cde.ca.gov/ta/tg/ep/alternateelpac.asp"
-}

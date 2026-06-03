@@ -1,9 +1,0 @@
-{
-	"id": "QSZItZJEjNI1Uhr",
-	"json": "{\"id\":\"QSZItZJEjNI1Uhr\",\"url\":\"https://health.ucdavis.edu/team/search/1278/tony-simon---psychiatry-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-center/team/1278/tony-simon---psychiatry-sacramento/\",\"uniqueKey\":\"https://health.ucdavis.edu/team/search/1278/tony-simon---psychiatry-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:11.332Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/team/search/1278/tony-simon---psychiatry-sacramento",
-	"url": "https://health.ucdavis.edu/team/search/1278/tony-simon---psychiatry-sacramento"
-}

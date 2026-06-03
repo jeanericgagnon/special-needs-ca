@@ -1,9 +1,0 @@
-{
-	"id": "FEUXGU9MaJH5ypr",
-	"json": "{\"id\":\"FEUXGU9MaJH5ypr\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/42362/laura_kester-prakash-adolescent_medicine-sacramento?FreeText%3aLast+name=Prakash\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/42362/laura_kester-prakash-adolescent_medicine-sacramento?FreeText%3aLast+name=Prakash\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/42362/laura_kester-prakash-adolescent_medicine-sacramento?FreeText%3ALast+name=Prakash\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:15.976Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/42362/laura_kester-prakash-adolescent_medicine-sacramento?FreeText%3ALast+name=Prakash",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/42362/laura_kester-prakash-adolescent_medicine-sacramento?FreeText%3aLast+name=Prakash"
-}

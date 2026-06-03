@@ -7,6 +7,11 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
+    "crawl:advocates": "node src/scrapers/advocate_scraper.js",
+    "crawl:fecs": "node src/scrapers/fec_scraper.js",
+    "crawl:wrightslaw": "node src/scrapers/wrightslaw_scraper.js",
+
+
     "preview": "vite preview"
   },
   "dependencies": {

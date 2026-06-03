@@ -1,9 +1,0 @@
-{
-	"id": "jK0PUO3RhruDlAx",
-	"json": "{\"id\":\"jK0PUO3RhruDlAx\",\"url\":\"https://www.cdph.ca.gov/Programs/OPA/Pages/NR16-054.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/OPA/Pages/NR16-054.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/OPA/Pages/NR16-054.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:17:53.960Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/OPA/Pages/NR16-054.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/OPA/Pages/NR16-054.aspx"
-}

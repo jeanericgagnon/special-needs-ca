@@ -1,9 +1,0 @@
-{
-	"id": "eEIOaf6sq91Wjrq",
-	"json": "{\"id\":\"eEIOaf6sq91Wjrq\",\"url\":\"https://www.ucdavis.edu/majors/evolution-ecology-and-biodiversity/\",\"loadedUrl\":\"https://www.ucdavis.edu/majors/evolution-ecology-and-biodiversity\",\"uniqueKey\":\"https://www.ucdavis.edu/majors/evolution-ecology-and-biodiversity\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:51:26.683Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ucdavis.edu/majors/evolution-ecology-and-biodiversity",
-	"url": "https://www.ucdavis.edu/majors/evolution-ecology-and-biodiversity/"
-}

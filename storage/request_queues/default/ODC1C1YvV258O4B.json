@@ -1,9 +1,0 @@
-{
-	"id": "ODC1C1YvV258O4B",
-	"json": "{\"id\":\"ODC1C1YvV258O4B\",\"url\":\"https://health.ucdavis.edu/him/medical-board-attestations-for-clinical-cases/medical-board-attestations.html\",\"loadedUrl\":\"https://health.ucdavis.edu/him/medical-board-attestations-for-clinical-cases/medical-board-attestations.html\",\"uniqueKey\":\"https://health.ucdavis.edu/him/medical-board-attestations-for-clinical-cases/medical-board-attestations.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:56.748Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/him/medical-board-attestations-for-clinical-cases/medical-board-attestations.html",
-	"url": "https://health.ucdavis.edu/him/medical-board-attestations-for-clinical-cases/medical-board-attestations.html"
-}

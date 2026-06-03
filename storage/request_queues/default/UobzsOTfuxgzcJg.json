@@ -1,9 +1,0 @@
-{
-	"id": "UobzsOTfuxgzcJg",
-	"json": "{\"id\":\"UobzsOTfuxgzcJg\",\"url\":\"https://www.dds.ca.gov/initiatives/sdp/independent-facilitators/\",\"loadedUrl\":\"https://www.dds.ca.gov/initiatives/sdp/independent-facilitators/\",\"uniqueKey\":\"https://www.dds.ca.gov/initiatives/sdp/independent-facilitators\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:40.465Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/initiatives/sdp/independent-facilitators",
-	"url": "https://www.dds.ca.gov/initiatives/sdp/independent-facilitators/"
-}

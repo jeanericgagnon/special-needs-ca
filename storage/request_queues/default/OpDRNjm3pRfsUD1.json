@@ -1,9 +1,0 @@
-{
-	"id": "OpDRNjm3pRfsUD1",
-	"json": "{\"id\":\"OpDRNjm3pRfsUD1\",\"url\":\"https://www.cde.ca.gov/re/pn/sm/documents/bntregistration.pdf\",\"loadedUrl\":\"https://www.cde.ca.gov/re/pn/sm/documents/bntregistration.pdf\",\"uniqueKey\":\"https://www.cde.ca.gov/re/pn/sm/documents/bntregistration.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:09:01.827Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/re/pn/sm/documents/bntregistration.pdf",
-	"url": "https://www.cde.ca.gov/re/pn/sm/documents/bntregistration.pdf"
-}

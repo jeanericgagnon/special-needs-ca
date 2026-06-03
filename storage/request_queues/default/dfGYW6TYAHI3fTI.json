@@ -1,9 +1,0 @@
-{
-	"id": "dfGYW6TYAHI3fTI",
-	"json": "{\"id\":\"dfGYW6TYAHI3fTI\",\"url\":\"https://cdss.ca.gov/inforesources/CDSS-Programs/Foster-Care/Foster-Care/Chafee-Education-and-Training-Vouchers-Program\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/foster-care/chafee-education-and-training-vouchers-program\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/CDSS-Programs/Foster-Care/Foster-Care/Chafee-Education-and-Training-Vouchers-Program\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:55.906Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/CDSS-Programs/Foster-Care/Foster-Care/Chafee-Education-and-Training-Vouchers-Program",
-	"url": "https://cdss.ca.gov/inforesources/CDSS-Programs/Foster-Care/Foster-Care/Chafee-Education-and-Training-Vouchers-Program"
-}

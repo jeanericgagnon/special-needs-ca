@@ -1,9 +1,0 @@
-{
-	"id": "5OFSlHi6I32gtMt",
-	"json": "{\"id\":\"5OFSlHi6I32gtMt\",\"url\":\"https://gradpathways.ucdavis.edu/pftf/about\",\"loadedUrl\":\"https://gradpathways.ucdavis.edu/pftf/about\",\"uniqueKey\":\"https://gradpathways.ucdavis.edu/pftf/about\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:52.251Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://gradpathways.ucdavis.edu/pftf/about",
-	"url": "https://gradpathways.ucdavis.edu/pftf/about"
-}

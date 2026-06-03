@@ -1,9 +1,0 @@
-{
-	"id": "U4f2uQu2K4qmCqW",
-	"json": "{\"id\":\"U4f2uQu2K4qmCqW\",\"url\":\"http://www.cdss.ca.gov/inforesources/cdss-programs/housing-programs\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/cdss-programs/housing-programs\",\"uniqueKey\":\"http://www.cdss.ca.gov/inforesources/cdss-programs/housing-programs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:01.183Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.cdss.ca.gov/inforesources/cdss-programs/housing-programs",
-	"url": "http://www.cdss.ca.gov/inforesources/cdss-programs/housing-programs"
-}

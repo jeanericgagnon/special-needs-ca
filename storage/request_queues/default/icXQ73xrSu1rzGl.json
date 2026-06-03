@@ -1,9 +1,0 @@
-{
-	"id": "icXQ73xrSu1rzGl",
-	"json": "{\"id\":\"icXQ73xrSu1rzGl\",\"url\":\"https://www.cde.ca.gov/ci/cr/cf/personalfinance.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=822e8dbd-368e-4ab2-98d1-965c4f632c16&ssb=06923219340&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fci%2Fcr%2Fcf%2Fpersonalfinance.asp&ssi=03ce2bff-ctxv-47d2-86c7-97bf63b409d4&ssk=botmanager_support@radware.com&ssm=36143154747118648136008833630198&ssn=b415a0a2769f76a840c340fd7a3d9e5fa1366ffb74a8-8a3b-4a7b-b6b533&sso=52867482-1b4362a2a0bbf6d91a654191a9f5ea74f1a56ab2e2e8a364&ssp=40172527371780396739178034560307057&ssq=76005392628993834433025885264758279343284&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2Y5MDAwZGE3ZjhkZmYtNmQwNS00YTU5LWFhN2UtZGExODIzNDA4NGNmMS0xNzgwMzI1ODg1MzI5NDA0MTY3LTA1OTk4ZTQ1OWYyZjMzNTYxMyIsIl9fdXptZiI6IjdmOTAwMDZmZmI3NGE4LThhM2ItNGE3Yi1iNDgyLTFiNDM2MmEyYTBiYjEtMTc4MDMyNTg4NTMyOTQwNDE2Ny0wMDM3NTVkYTMwNWY1NzcwZjNlMTMiLCJyZCI6ImNhLmdvdiJ9\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/cr/cf/personalfinance.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:04:49.594Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ci/cr/cf/personalfinance.asp",
-	"url": "https://www.cde.ca.gov/ci/cr/cf/personalfinance.asp"
-}

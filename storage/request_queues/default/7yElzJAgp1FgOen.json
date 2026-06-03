@@ -1,9 +1,0 @@
-{
-	"id": "7yElzJAgp1FgOen",
-	"json": "{\"id\":\"7yElzJAgp1FgOen\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDSRB/Pages/Library-of-Surveillance-Tutorials.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDSRB/Pages/Library-of-Surveillance-Tutorials.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDSRB/Pages/Library-of-Surveillance-Tutorials.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:02:20.284Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDSRB/Pages/Library-of-Surveillance-Tutorials.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDSRB/Pages/Library-of-Surveillance-Tutorials.aspx"
-}

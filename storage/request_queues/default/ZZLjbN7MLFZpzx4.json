@@ -1,9 +1,0 @@
-{
-	"id": "ZZLjbN7MLFZpzx4",
-	"json": "{\"id\":\"ZZLjbN7MLFZpzx4\",\"url\":\"https://intranet.ucdmc.ucdavis.edu/cancer/\",\"uniqueKey\":\"https://intranet.ucdmc.ucdavis.edu/cancer\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":3,\"errorMessages\":[\"Error: request timed out after 30 seconds.\\n    at Timeout._onTimeout (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@apify/timeout/cjs/index.cjs:64:68)\\n    at listOnTimeout (node:internal/timers:588:17)\\n    at process.processTimers (node:internal/timers:523:7)\",\"Error: request timed out after 30 seconds.\\n    at Timeout._onTimeout (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@apify/timeout/cjs/index.cjs:64:68)\\n    at listOnTimeout (node:internal/timers:588:17)\\n    at process.processTimers (node:internal/timers:523:7)\",\"Error: request timed out after 30 seconds.\\n    at Timeout._onTimeout (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@apify/timeout/cjs/index.cjs:64:68)\\n    at listOnTimeout (node:internal/timers:588:17)\\n    at process.processTimers (node:internal/timers:523:7)\",\"Error: request timed out after 30 seconds.\\n    at Timeout._onTimeout (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@apify/timeout/cjs/index.cjs:64:68)\\n    at listOnTimeout (node:internal/timers:588:17)\\n    at process.processTimers (node:internal/timers:523:7)\"],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":5}},\"handledAt\":\"2026-06-01T15:35:18.877Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 3,
-	"uniqueKey": "https://intranet.ucdmc.ucdavis.edu/cancer",
-	"url": "https://intranet.ucdmc.ucdavis.edu/cancer/"
-}

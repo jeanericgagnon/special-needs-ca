@@ -1,9 +1,0 @@
-{
-	"id": "8kD76FmjjI1uIag",
-	"json": "{\"id\":\"8kD76FmjjI1uIag\",\"url\":\"https://cdss.ca.gov/inforesources/Adult-Care-Licensing/Resources-for-Residents-and-Families\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/adult-care-licensing/resources-for-residents-and-families\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Adult-Care-Licensing/Resources-for-Residents-and-Families\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:39.082Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/Adult-Care-Licensing/Resources-for-Residents-and-Families",
-	"url": "https://cdss.ca.gov/inforesources/Adult-Care-Licensing/Resources-for-Residents-and-Families"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "uyVffJ3ARmSPIjO",
-	"json": "{\"id\":\"uyVffJ3ARmSPIjO\",\"url\":\"https://health.ucdavis.edu/graduate-medical-education/wellness-program/\",\"loadedUrl\":\"https://health.ucdavis.edu/graduate-medical-education/wellness-program/\",\"uniqueKey\":\"https://health.ucdavis.edu/graduate-medical-education/wellness-program\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:12.579Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/graduate-medical-education/wellness-program",
-	"url": "https://health.ucdavis.edu/graduate-medical-education/wellness-program/"
-}

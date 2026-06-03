@@ -1,9 +1,0 @@
-{
-	"id": "3PNE5I03cgq6mPl",
-	"json": "{\"id\":\"3PNE5I03cgq6mPl\",\"url\":\"https://hdapp.ucdavis.edu/sitemap\",\"loadedUrl\":\"https://hdapp.ucdavis.edu/sitemap\",\"uniqueKey\":\"https://hdapp.ucdavis.edu/sitemap\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:02.363Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hdapp.ucdavis.edu/sitemap",
-	"url": "https://hdapp.ucdavis.edu/sitemap"
-}

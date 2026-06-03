@@ -1,9 +1,0 @@
-{
-	"id": "dRyYPlv2p3cgh6t",
-	"json": "{\"id\":\"dRyYPlv2p3cgh6t\",\"url\":\"https://health.ucdavis.edu/neurology/\",\"loadedUrl\":\"https://health.ucdavis.edu/neurology/\",\"uniqueKey\":\"https://health.ucdavis.edu/neurology\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:51.039Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/neurology",
-	"url": "https://health.ucdavis.edu/neurology/"
-}

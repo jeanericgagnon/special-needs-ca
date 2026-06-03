@@ -1,9 +1,0 @@
-{
-	"id": "TtP5HnwTcDY2lT1",
-	"json": "{\"id\":\"TtP5HnwTcDY2lT1\",\"url\":\"https://www.ctc.ca.gov/credentials/req-child-dev\",\"loadedUrl\":\"https://www.ctc.ca.gov/aspiring-educators/req-credentials/child-dev/\",\"uniqueKey\":\"https://www.ctc.ca.gov/credentials/req-child-dev\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:25:12.022Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ctc.ca.gov/credentials/req-child-dev",
-	"url": "https://www.ctc.ca.gov/credentials/req-child-dev"
-}

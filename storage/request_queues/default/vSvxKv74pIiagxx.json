@@ -1,9 +1,0 @@
-{
-	"id": "vSvxKv74pIiagxx",
-	"json": "{\"id\":\"vSvxKv74pIiagxx\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/43186/gaurav-gulati-rheumatology-internal-medicine-rheumatology-allergy-and-clinical-immunology-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/43186/gaurav-gulati-rheumatology-internal-medicine-rheumatology-allergy-and-clinical-immunology-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/43186/gaurav-gulati-rheumatology-internal-medicine-rheumatology-allergy-and-clinical-immunology-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:14.889Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/43186/gaurav-gulati-rheumatology-internal-medicine-rheumatology-allergy-and-clinical-immunology-sacramento",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/43186/gaurav-gulati-rheumatology-internal-medicine-rheumatology-allergy-and-clinical-immunology-sacramento"
-}

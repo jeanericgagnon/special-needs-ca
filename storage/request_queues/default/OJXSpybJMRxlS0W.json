@@ -1,9 +1,0 @@
-{
-	"id": "OJXSpybJMRxlS0W",
-	"json": "{\"id\":\"OJXSpybJMRxlS0W\",\"url\":\"https://health.ucdavis.edu/injuryprevention/childhoodsafety/child_passenger_safety.html\",\"loadedUrl\":\"https://health.ucdavis.edu/injury-prevention/car-seat-safety/\",\"uniqueKey\":\"https://health.ucdavis.edu/injuryprevention/childhoodsafety/child_passenger_safety.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:57.897Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/injuryprevention/childhoodsafety/child_passenger_safety.html",
-	"url": "https://health.ucdavis.edu/injuryprevention/childhoodsafety/child_passenger_safety.html"
-}

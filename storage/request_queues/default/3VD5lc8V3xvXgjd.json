@@ -1,9 +1,0 @@
-{
-	"id": "3VD5lc8V3xvXgjd",
-	"json": "{\"id\":\"3VD5lc8V3xvXgjd\",\"url\":\"https://www.cdph.ca.gov/Programs/OPP/Pages/BHSA-Guidance-Archive.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/OPP/Pages/BHSA-Guidance-Archive.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/OPP/Pages/BHSA-Guidance-Archive.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:03:56.393Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/OPP/Pages/BHSA-Guidance-Archive.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/OPP/Pages/BHSA-Guidance-Archive.aspx"
-}

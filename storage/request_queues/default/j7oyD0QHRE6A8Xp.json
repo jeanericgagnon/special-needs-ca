@@ -1,9 +1,0 @@
-{
-	"id": "j7oyD0QHRE6A8Xp",
-	"json": "{\"id\":\"j7oyD0QHRE6A8Xp\",\"url\":\"https://health.ucdavis.edu/conditions/cancer/male-reproductive-system-cancers\",\"loadedUrl\":\"https://health.ucdavis.edu/conditions/cancer/male-reproductive-system-cancers\",\"uniqueKey\":\"https://health.ucdavis.edu/conditions/cancer/male-reproductive-system-cancers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:45.499Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/conditions/cancer/male-reproductive-system-cancers",
-	"url": "https://health.ucdavis.edu/conditions/cancer/male-reproductive-system-cancers"
-}

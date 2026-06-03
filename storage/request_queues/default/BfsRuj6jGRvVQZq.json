@@ -1,9 +1,0 @@
-{
-	"id": "BfsRuj6jGRvVQZq",
-	"json": "{\"id\":\"BfsRuj6jGRvVQZq\",\"url\":\"http://www.cdss.ca.gov/inforesources/cdss-programs/ihss/covid-19-resources\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/cdss-programs/ihss/covid-19-resources\",\"uniqueKey\":\"http://www.cdss.ca.gov/inforesources/cdss-programs/ihss/covid-19-resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:23:10.119Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.cdss.ca.gov/inforesources/cdss-programs/ihss/covid-19-resources",
-	"url": "http://www.cdss.ca.gov/inforesources/cdss-programs/ihss/covid-19-resources"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "6G53HTgKSIYi6O7",
-	"json": "{\"id\":\"6G53HTgKSIYi6O7\",\"url\":\"https://give.ucdavis.edu/BHCE\",\"loadedUrl\":\"https://give.ucdavis.edu/BHCE\",\"uniqueKey\":\"https://give.ucdavis.edu/BHCE\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:46.486Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/BHCE",
-	"url": "https://give.ucdavis.edu/BHCE"
-}

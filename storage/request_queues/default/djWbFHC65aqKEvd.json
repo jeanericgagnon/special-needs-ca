@@ -1,9 +1,0 @@
-{
-	"id": "djWbFHC65aqKEvd",
-	"json": "{\"id\":\"djWbFHC65aqKEvd\",\"url\":\"https://rarediseases.org/rare-diseases/wnt4-deficiency/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/wnt4-deficiency/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/wnt4-deficiency\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:06:18.561Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/rare-diseases/wnt4-deficiency",
-	"url": "https://rarediseases.org/rare-diseases/wnt4-deficiency/"
-}

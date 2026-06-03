@@ -1,9 +1,0 @@
-{
-	"id": "bjWmAZGSUJwRr9S",
-	"json": "{\"id\":\"bjWmAZGSUJwRr9S\",\"url\":\"https://give.ucdavis.edu/HISS/323469\",\"loadedUrl\":\"https://give.ucdavis.edu/HISS/323469\",\"uniqueKey\":\"https://give.ucdavis.edu/HISS/323469\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:58.719Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/HISS/323469",
-	"url": "https://give.ucdavis.edu/HISS/323469"
-}

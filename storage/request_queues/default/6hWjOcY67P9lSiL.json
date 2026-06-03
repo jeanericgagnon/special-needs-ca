@@ -1,9 +1,0 @@
-{
-	"id": "6hWjOcY67P9lSiL",
-	"json": "{\"id\":\"6hWjOcY67P9lSiL\",\"url\":\"https://www.library.ca.gov/\",\"loadedUrl\":\"https://www.library.ca.gov/\",\"uniqueKey\":\"https://www.library.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:16.022Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.library.ca.gov",
-	"url": "https://www.library.ca.gov/"
-}

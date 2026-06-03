@@ -1,9 +1,0 @@
-{
-	"id": "98u99q9J97F9Sys",
-	"json": "{\"id\":\"98u99q9J97F9Sys\",\"url\":\"https://www.calvet.ca.gov/\",\"loadedUrl\":\"https://www.calvet.ca.gov/\",\"uniqueKey\":\"https://www.calvet.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:07.690Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.calvet.ca.gov",
-	"url": "https://www.calvet.ca.gov/"
-}

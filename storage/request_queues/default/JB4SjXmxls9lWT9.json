@@ -1,9 +1,0 @@
-{
-	"id": "JB4SjXmxls9lWT9",
-	"json": "{\"id\":\"JB4SjXmxls9lWT9\",\"url\":\"https://www.dmv.ca.gov/portal/vehicle-registration/smog-inspections/\",\"loadedUrl\":\"https://www.dmv.ca.gov/portal/vehicle-registration/smog-inspections/\",\"uniqueKey\":\"https://www.dmv.ca.gov/portal/vehicle-registration/smog-inspections\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:39.083Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dmv.ca.gov/portal/vehicle-registration/smog-inspections",
-	"url": "https://www.dmv.ca.gov/portal/vehicle-registration/smog-inspections/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "MxOm8EQNvs2RxZM",
-	"json": "{\"id\":\"MxOm8EQNvs2RxZM\",\"url\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/CalHealthFind/Pages/SurveyInspectionDetails.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/CalHealthFind/Pages/SurveyInspectionDetails.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/CalHealthFind/Pages/SurveyInspectionDetails.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:01:57.397Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CHCQ/LCP/CalHealthFind/Pages/SurveyInspectionDetails.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CHCQ/LCP/CalHealthFind/Pages/SurveyInspectionDetails.aspx"
-}

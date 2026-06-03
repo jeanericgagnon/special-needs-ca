@@ -1,9 +1,0 @@
-{
-	"id": "8yUZKPGUlC765Mm",
-	"json": "{\"id\":\"8yUZKPGUlC765Mm\",\"url\":\"https://www.cdss.ca.gov/in-home-supportive-services\",\"loadedUrl\":\"https://www.cdss.ca.gov/in-home-supportive-services\",\"uniqueKey\":\"https://www.cdss.ca.gov/in-home-supportive-services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-06-01T14:55:15.261Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/in-home-supportive-services",
-	"url": "https://www.cdss.ca.gov/in-home-supportive-services"
-}

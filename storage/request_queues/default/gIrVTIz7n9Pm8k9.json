@@ -1,9 +1,0 @@
-{
-	"id": "gIrVTIz7n9Pm8k9",
-	"json": "{\"id\":\"gIrVTIz7n9Pm8k9\",\"url\":\"http://cdss.ca.gov/inforesources/childrens-residential\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/childrens-residential\",\"uniqueKey\":\"http://cdss.ca.gov/inforesources/childrens-residential\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:43.121Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://cdss.ca.gov/inforesources/childrens-residential",
-	"url": "http://cdss.ca.gov/inforesources/childrens-residential"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "Get0R438rVzyyxY",
-	"json": "{\"id\":\"Get0R438rVzyyxY\",\"url\":\"https://www.ucdavis.edu/admissions/undergraduate/first-year/timeline\",\"loadedUrl\":\"https://www.ucdavis.edu/admissions/undergraduate/first-year/timeline\",\"uniqueKey\":\"https://www.ucdavis.edu/admissions/undergraduate/first-year/timeline\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:42.733Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ucdavis.edu/admissions/undergraduate/first-year/timeline",
-	"url": "https://www.ucdavis.edu/admissions/undergraduate/first-year/timeline"
-}

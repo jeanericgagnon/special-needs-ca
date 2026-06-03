@@ -1,9 +1,0 @@
-{
-	"id": "921fyyYOWDWsr5m",
-	"json": "{\"id\":\"921fyyYOWDWsr5m\",\"url\":\"https://biology.ucdavis.edu/faculty/plant-biology\",\"loadedUrl\":\"https://biology.ucdavis.edu/faculty/plant-biology\",\"uniqueKey\":\"https://biology.ucdavis.edu/faculty/plant-biology\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:24.406Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://biology.ucdavis.edu/faculty/plant-biology",
-	"url": "https://biology.ucdavis.edu/faculty/plant-biology"
-}

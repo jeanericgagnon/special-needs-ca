@@ -1,9 +1,0 @@
-{
-	"id": "v94WpZsDlfIb19y",
-	"json": "{\"id\":\"v94WpZsDlfIb19y\",\"url\":\"https://give.ucdavis.edu/VMTH/V1TH231\",\"loadedUrl\":\"https://give.ucdavis.edu/VMTH/V1TH231\",\"uniqueKey\":\"https://give.ucdavis.edu/VMTH/V1TH231\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:02.416Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/VMTH/V1TH231",
-	"url": "https://give.ucdavis.edu/VMTH/V1TH231"
-}

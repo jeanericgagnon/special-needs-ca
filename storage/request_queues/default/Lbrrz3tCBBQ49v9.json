@@ -1,9 +1,0 @@
-{
-	"id": "Lbrrz3tCBBQ49v9",
-	"json": "{\"id\":\"Lbrrz3tCBBQ49v9\",\"url\":\"https://www.cde.ca.gov/sp/hs/homelessdef.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=b0a21875-8c76-45bb-b613-786db5e5b742&ssb=06817211240&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fsp%2Fhs%2Fhomelessdef.asp&ssi=9fb684cd-ctxv-4e0c-bcc5-91517dc5522e&ssk=botmanager_support@radware.com&ssm=06095228194929997101025378475843&ssn=1f6f49fc7b2ca19475601108caa72cde7dcaef7333c7-4702-47ec-a89bd3&sso=a67d79ae-91a9c433ef2f8be1fc92bc1a4e6f597d1d7eaa22bb033bec&ssp=97618502071780316323178030871975898&ssq=56856052756268184722127562391730737751589&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsIl9fdXptZiI6IjdmOTAwMGVmNzMzM2M3LTQ3MDItNDdlYy1hOWFlLTkxYTljNDMzZWYyZjEtMTc4MDMyNzU2Mjk1MTAtMDAzZTA3MTE4MWM5ZmMwNGMyNjEwIiwidXpteCI6IjdmOTAwMGFiZTYyNTcxLTEyZTYtNGQ1NS1iZjAwLWM4YjgwYjAxNDM4MTEtMTc4MDMyNzU2Mjk1MTAtNjliODliYjBlYWIwZDgyYTEwIn0=\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/hs/homelessdef.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:26:03.050Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/sp/hs/homelessdef.asp",
-	"url": "https://www.cde.ca.gov/sp/hs/homelessdef.asp"
-}

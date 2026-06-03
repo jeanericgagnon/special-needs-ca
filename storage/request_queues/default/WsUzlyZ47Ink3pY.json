@@ -1,9 +1,0 @@
-{
-	"id": "WsUzlyZ47Ink3pY",
-	"json": "{\"id\":\"WsUzlyZ47Ink3pY\",\"url\":\"https://health.ucdavis.edu/pharmacy/health-solutions/rx-replenish\",\"loadedUrl\":\"https://health.ucdavis.edu/pharmacy/health-solutions/rx-replenish\",\"uniqueKey\":\"https://health.ucdavis.edu/pharmacy/health-solutions/rx-replenish\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:41.983Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/pharmacy/health-solutions/rx-replenish",
-	"url": "https://health.ucdavis.edu/pharmacy/health-solutions/rx-replenish"
-}

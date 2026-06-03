@@ -1,9 +1,0 @@
-{
-	"id": "KRPE2sU5Rg8FjnV",
-	"json": "{\"id\":\"KRPE2sU5Rg8FjnV\",\"url\":\"https://www.sos.ca.gov/elections/voting-resources/voting-california/chinese\",\"loadedUrl\":\"https://www.sos.ca.gov/elections/voting-resources/voting-california/chinese\",\"uniqueKey\":\"https://www.sos.ca.gov/elections/voting-resources/voting-california/chinese\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:47.405Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.sos.ca.gov/elections/voting-resources/voting-california/chinese",
-	"url": "https://www.sos.ca.gov/elections/voting-resources/voting-california/chinese"
-}

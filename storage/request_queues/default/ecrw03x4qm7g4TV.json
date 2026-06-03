@@ -1,9 +1,0 @@
-{
-	"id": "ecrw03x4qm7g4TV",
-	"json": "{\"id\":\"ecrw03x4qm7g4TV\",\"url\":\"https://www.dds.ca.gov/services/dspt/year-1-2-trainer-and-student-resource-guides/\",\"loadedUrl\":\"https://www.dds.ca.gov/services/dspt/year-1-2-trainer-and-student-resource-guides/\",\"uniqueKey\":\"https://www.dds.ca.gov/services/dspt/year-1-2-trainer-and-student-resource-guides\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:05:34.084Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/services/dspt/year-1-2-trainer-and-student-resource-guides",
-	"url": "https://www.dds.ca.gov/services/dspt/year-1-2-trainer-and-student-resource-guides/"
-}

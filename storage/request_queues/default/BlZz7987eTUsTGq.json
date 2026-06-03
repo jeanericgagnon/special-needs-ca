@@ -1,9 +1,0 @@
-{
-	"id": "BlZz7987eTUsTGq",
-	"json": "{\"id\":\"BlZz7987eTUsTGq\",\"url\":\"https://hr.ucdavis.edu/departments/worklife-wellness/events/gunrock-goes\",\"loadedUrl\":\"https://hr.ucdavis.edu/departments/worklife-wellness/events/gunrock-goes\",\"uniqueKey\":\"https://hr.ucdavis.edu/departments/worklife-wellness/events/gunrock-goes\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:22.080Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/departments/worklife-wellness/events/gunrock-goes",
-	"url": "https://hr.ucdavis.edu/departments/worklife-wellness/events/gunrock-goes"
-}

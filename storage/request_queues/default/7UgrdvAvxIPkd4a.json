@@ -1,9 +1,0 @@
-{
-	"id": "7UgrdvAvxIPkd4a",
-	"json": "{\"id\":\"7UgrdvAvxIPkd4a\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/AFLP/Pages/AFLP-RFA-2023-Final-Announcement-of-Awards.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/AFLP/Pages/AFLP-RFA-2023-Final-Announcement-of-Awards.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/AFLP/Pages/AFLP-RFA-2023-Final-Announcement-of-Awards.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:43.274Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/AFLP/Pages/AFLP-RFA-2023-Final-Announcement-of-Awards.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/AFLP/Pages/AFLP-RFA-2023-Final-Announcement-of-Awards.aspx"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "MVSLqKIEpmmcbn3",
-	"json": "{\"id\":\"MVSLqKIEpmmcbn3\",\"url\":\"https://caes.ucdavis.edu/admin\",\"loadedUrl\":\"https://caes.ucdavis.edu/admin\",\"uniqueKey\":\"https://caes.ucdavis.edu/admin\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:55:00.531Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://caes.ucdavis.edu/admin",
-	"url": "https://caes.ucdavis.edu/admin"
-}

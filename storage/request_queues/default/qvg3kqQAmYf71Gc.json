@@ -1,9 +1,0 @@
-{
-	"id": "qvg3kqQAmYf71Gc",
-	"json": "{\"id\":\"qvg3kqQAmYf71Gc\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/CurrentYearBudgetEstimates.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/CurrentYearBudgetEstimates.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/CurrentYearBudgetEstimates.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:35.488Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/CurrentYearBudgetEstimates.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CFH/DGDS/Pages/CurrentYearBudgetEstimates.aspx"
-}

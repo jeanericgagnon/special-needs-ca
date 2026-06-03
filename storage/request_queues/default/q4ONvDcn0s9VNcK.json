@@ -1,9 +1,0 @@
-{
-	"id": "q4ONvDcn0s9VNcK",
-	"json": "{\"id\":\"q4ONvDcn0s9VNcK\",\"url\":\"http://www.ucdavis.edu/search/\",\"loadedUrl\":\"https://www.ucdavis.edu/search/node\",\"uniqueKey\":\"http://www.ucdavis.edu/search\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:23.536Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.ucdavis.edu/search",
-	"url": "http://www.ucdavis.edu/search/"
-}

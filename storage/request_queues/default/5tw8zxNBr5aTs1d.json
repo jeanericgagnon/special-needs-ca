@@ -1,9 +1,0 @@
-{
-	"id": "5tw8zxNBr5aTs1d",
-	"json": "{\"id\":\"5tw8zxNBr5aTs1d\",\"url\":\"https://www.cde.ca.gov/ta/sr/ct/toypsponsors.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ta/sr/ct/toypsponsors.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ta/sr/ct/toypsponsors.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:27.259Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ta/sr/ct/toypsponsors.asp",
-	"url": "https://www.cde.ca.gov/ta/sr/ct/toypsponsors.asp"
-}

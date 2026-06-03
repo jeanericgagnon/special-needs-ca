@@ -1,9 +1,0 @@
-{
-	"id": "HGHc0Yz1xEaOCwy",
-	"json": "{\"id\":\"HGHc0Yz1xEaOCwy\",\"url\":\"https://rarediseases.org/news/?taxonomy[category]=medical-affairs\",\"loadedUrl\":\"https://rarediseases.org/news/?taxonomy[category]=medical-affairs\",\"uniqueKey\":\"https://rarediseases.org/news?taxonomy%5Bcategory%5D=medical-affairs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:14.296Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/news?taxonomy%5Bcategory%5D=medical-affairs",
-	"url": "https://rarediseases.org/news/?taxonomy[category]=medical-affairs"
-}

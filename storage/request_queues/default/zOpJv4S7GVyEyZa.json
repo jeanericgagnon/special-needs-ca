@@ -1,9 +1,0 @@
-{
-	"id": "zOpJv4S7GVyEyZa",
-	"json": "{\"id\":\"zOpJv4S7GVyEyZa\",\"url\":\"https://give.ucdavis.edu/VVMC/76826\",\"loadedUrl\":\"https://give.ucdavis.edu/VVMC/76826\",\"uniqueKey\":\"https://give.ucdavis.edu/VVMC/76826\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:02.494Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/VVMC/76826",
-	"url": "https://give.ucdavis.edu/VVMC/76826"
-}

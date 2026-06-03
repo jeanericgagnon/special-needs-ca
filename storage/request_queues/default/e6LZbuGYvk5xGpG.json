@@ -1,9 +1,0 @@
-{
-	"id": "e6LZbuGYvk5xGpG",
-	"json": "{\"id\":\"e6LZbuGYvk5xGpG\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/21979/barton-bart-wise-internal_medicine-rheumatology_allergy_and_clinical_immunology-sacramento?FreeText%3aLast+name=wise\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/21979/barton-bart-wise-internal_medicine-rheumatology_allergy_and_clinical_immunology-sacramento?FreeText%3aLast+name=wise\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/21979/barton-bart-wise-internal_medicine-rheumatology_allergy_and_clinical_immunology-sacramento?FreeText%3ALast+name=wise\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:15.120Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/21979/barton-bart-wise-internal_medicine-rheumatology_allergy_and_clinical_immunology-sacramento?FreeText%3ALast+name=wise",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/21979/barton-bart-wise-internal_medicine-rheumatology_allergy_and_clinical_immunology-sacramento?FreeText%3aLast+name=wise"
-}

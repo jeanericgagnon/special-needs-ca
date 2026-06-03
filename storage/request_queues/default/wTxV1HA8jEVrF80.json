@@ -1,9 +1,0 @@
-{
-	"id": "wTxV1HA8jEVrF80",
-	"json": "{\"id\":\"wTxV1HA8jEVrF80\",\"url\":\"https://www.cpuc.ca.gov/lifeline/\",\"loadedUrl\":\"https://www.cpuc.ca.gov/lifeline/\",\"uniqueKey\":\"https://www.cpuc.ca.gov/lifeline\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:27.187Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cpuc.ca.gov/lifeline",
-	"url": "https://www.cpuc.ca.gov/lifeline/"
-}

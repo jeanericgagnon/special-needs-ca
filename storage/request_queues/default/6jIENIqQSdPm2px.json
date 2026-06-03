@@ -1,9 +1,0 @@
-{
-	"id": "6jIENIqQSdPm2px",
-	"json": "{\"id\":\"6jIENIqQSdPm2px\",\"url\":\"https://give.ucdavis.edu/MFCM\",\"loadedUrl\":\"https://give.ucdavis.edu/MFCM\",\"uniqueKey\":\"https://give.ucdavis.edu/MFCM\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:46.574Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/MFCM",
-	"url": "https://give.ucdavis.edu/MFCM"
-}

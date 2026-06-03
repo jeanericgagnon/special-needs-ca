@@ -1,9 +1,0 @@
-{
-	"id": "LVqZG4rc48MNCdn",
-	"json": "{\"id\":\"LVqZG4rc48MNCdn\",\"url\":\"https://health.ucdavis.edu/nursing/academics/studentwellness/counseling.html\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/academics/studentwellness/counseling.html\",\"uniqueKey\":\"https://health.ucdavis.edu/nursing/academics/studentwellness/counseling.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:18.084Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/nursing/academics/studentwellness/counseling.html",
-	"url": "https://health.ucdavis.edu/nursing/academics/studentwellness/counseling.html"
-}

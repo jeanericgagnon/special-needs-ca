@@ -1,9 +1,0 @@
-{
-	"id": "r1siHp54maDyBsi",
-	"json": "{\"id\":\"r1siHp54maDyBsi\",\"url\":\"https://owcn.vetmed.ucdavis.edu/\",\"loadedUrl\":\"https://owcn.vetmed.ucdavis.edu/\",\"uniqueKey\":\"https://owcn.vetmed.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:24.353Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://owcn.vetmed.ucdavis.edu",
-	"url": "https://owcn.vetmed.ucdavis.edu/"
-}

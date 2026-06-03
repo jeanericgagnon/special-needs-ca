@@ -1,9 +1,0 @@
-{
-	"id": "CSknOlyfsbWcJoj",
-	"json": "{\"id\":\"CSknOlyfsbWcJoj\",\"url\":\"https://rarediseases.org/rare-diseases/tumor-necrosis-factor-receptor-associated-periodic-syndrome/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/tumor-necrosis-factor-receptor-associated-periodic-syndrome/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/tumor-necrosis-factor-receptor-associated-periodic-syndrome\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:15:01.928Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/rare-diseases/tumor-necrosis-factor-receptor-associated-periodic-syndrome",
-	"url": "https://rarediseases.org/rare-diseases/tumor-necrosis-factor-receptor-associated-periodic-syndrome/"
-}

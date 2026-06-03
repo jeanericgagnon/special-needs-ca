@@ -1,9 +1,0 @@
-{
-	"id": "swPQTuOsvUJzu6o",
-	"json": "{\"id\":\"swPQTuOsvUJzu6o\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDSRB/Pages/CDOC-Big-Win.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDSRB/Pages/CDOC-Big-Win.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDSRB/Pages/CDOC-Big-Win.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:02:19.859Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDSRB/Pages/CDOC-Big-Win.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDSRB/Pages/CDOC-Big-Win.aspx"
-}

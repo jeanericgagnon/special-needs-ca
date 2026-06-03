@@ -1,9 +1,0 @@
-{
-	"id": "ooISUAuRatSF7IJ",
-	"json": "{\"id\":\"ooISUAuRatSF7IJ\",\"url\":\"https://cdss.ca.gov/inforesources/Data-Portal/County-Data-Reports\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/data-portal/county-data-reports\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Data-Portal/County-Data-Reports\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:58:07.054Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/Data-Portal/County-Data-Reports",
-	"url": "https://cdss.ca.gov/inforesources/Data-Portal/County-Data-Reports"
-}

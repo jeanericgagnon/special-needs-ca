@@ -1,9 +1,0 @@
-{
-	"id": "oVrD9sclgBgwUcz",
-	"json": "{\"id\":\"oVrD9sclgBgwUcz\",\"url\":\"https://iet.ucdavis.edu/iet-rates-recharge\",\"loadedUrl\":\"https://cas.ucdavis.edu/cas/login?service=https%3A//iet.ucdavis.edu/casservice%3Fdestination%3D/iet-rates-recharge\",\"uniqueKey\":\"https://iet.ucdavis.edu/iet-rates-recharge\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:36.977Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://iet.ucdavis.edu/iet-rates-recharge",
-	"url": "https://iet.ucdavis.edu/iet-rates-recharge"
-}

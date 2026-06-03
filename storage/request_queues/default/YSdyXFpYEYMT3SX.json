@@ -1,9 +1,0 @@
-{
-	"id": "YSdyXFpYEYMT3SX",
-	"json": "{\"id\":\"YSdyXFpYEYMT3SX\",\"url\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/CHT.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/CHT.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/CHT.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:16:16.128Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/CHT.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/CHT.aspx"
-}

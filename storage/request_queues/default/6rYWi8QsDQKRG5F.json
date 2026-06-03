@@ -1,9 +1,0 @@
-{
-	"id": "6rYWi8QsDQKRG5F",
-	"json": "{\"id\":\"6rYWi8QsDQKRG5F\",\"url\":\"https://learn.medi-cal.ca.gov/catalog/search.asp?formCert=0fe14abc8268a3f47962d647e73849ca&formPubKey=5ji48ili862rj749whf0&search=cpsp\",\"loadedUrl\":\"https://learn.medi-cal.ca.gov/catalog/search.asp?formCert=0fe14abc8268a3f47962d647e73849ca&formPubKey=5ji48ili862rj749whf0&search=cpsp\",\"uniqueKey\":\"https://learn.medi-cal.ca.gov/catalog/search.asp?formCert=0fe14abc8268a3f47962d647e73849ca&formPubKey=5ji48ili862rj749whf0&search=cpsp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T17:44:31.502Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://learn.medi-cal.ca.gov/catalog/search.asp?formCert=0fe14abc8268a3f47962d647e73849ca&formPubKey=5ji48ili862rj749whf0&search=cpsp",
-	"url": "https://learn.medi-cal.ca.gov/catalog/search.asp?formCert=0fe14abc8268a3f47962d647e73849ca&formPubKey=5ji48ili862rj749whf0&search=cpsp"
-}

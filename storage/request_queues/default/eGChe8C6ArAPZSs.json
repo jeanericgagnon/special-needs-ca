@@ -1,9 +1,0 @@
-{
-	"id": "eGChe8C6ArAPZSs",
-	"json": "{\"id\":\"eGChe8C6ArAPZSs\",\"url\":\"https://health.ucdavis.edu/conditions/pediatrics/neonatal-care\",\"loadedUrl\":\"https://health.ucdavis.edu/conditions/pediatrics/neonatal-care\",\"uniqueKey\":\"https://health.ucdavis.edu/conditions/pediatrics/neonatal-care\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:53.387Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/conditions/pediatrics/neonatal-care",
-	"url": "https://health.ucdavis.edu/conditions/pediatrics/neonatal-care"
-}

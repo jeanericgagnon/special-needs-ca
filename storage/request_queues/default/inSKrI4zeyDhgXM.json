@@ -1,9 +1,0 @@
-{
-	"id": "inSKrI4zeyDhgXM",
-	"json": "{\"id\":\"inSKrI4zeyDhgXM\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/772/daniel-eisen-dermatologic_surgery-mohs_surgery-sacramento?FreeText%3aLast+name=Eisen\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/772/daniel-eisen-dermatologic_surgery-mohs_surgery-sacramento?FreeText%3aLast+name=Eisen\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/772/daniel-eisen-dermatologic_surgery-mohs_surgery-sacramento?FreeText%3ALast+name=Eisen\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:08.514Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/772/daniel-eisen-dermatologic_surgery-mohs_surgery-sacramento?FreeText%3ALast+name=Eisen",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/772/daniel-eisen-dermatologic_surgery-mohs_surgery-sacramento?FreeText%3aLast+name=Eisen"
-}

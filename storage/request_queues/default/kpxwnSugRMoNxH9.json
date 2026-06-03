@@ -1,9 +1,0 @@
-{
-	"id": "kpxwnSugRMoNxH9",
-	"json": "{\"id\":\"kpxwnSugRMoNxH9\",\"url\":\"https://biology.ucdavis.edu/articles/evolution-ecology\",\"loadedUrl\":\"https://biology.ucdavis.edu/articles/evolution-ecology\",\"uniqueKey\":\"https://biology.ucdavis.edu/articles/evolution-ecology\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:25.648Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://biology.ucdavis.edu/articles/evolution-ecology",
-	"url": "https://biology.ucdavis.edu/articles/evolution-ecology"
-}

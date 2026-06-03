@@ -1,9 +1,0 @@
-{
-	"id": "KNb1tPLG8Dc7ZzJ",
-	"json": "{\"id\":\"KNb1tPLG8Dc7ZzJ\",\"url\":\"https://health.ucdavis.edu/nursing/academics/NPprogramgoals.html\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/academics/NPprogramgoals.html\",\"uniqueKey\":\"https://health.ucdavis.edu/nursing/academics/NPprogramgoals.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:22.238Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/nursing/academics/NPprogramgoals.html",
-	"url": "https://health.ucdavis.edu/nursing/academics/NPprogramgoals.html"
-}

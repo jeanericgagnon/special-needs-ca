@@ -1,9 +1,0 @@
-{
-	"id": "xnuOF1g59cnd40P",
-	"json": "{\"id\":\"xnuOF1g59cnd40P\",\"url\":\"https://registertovote.ca.gov/vi-vn\",\"loadedUrl\":\"https://registertovote.ca.gov/vi-vn\",\"uniqueKey\":\"https://registertovote.ca.gov/vi-vn\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:44.900Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://registertovote.ca.gov/vi-vn",
-	"url": "https://registertovote.ca.gov/vi-vn"
-}

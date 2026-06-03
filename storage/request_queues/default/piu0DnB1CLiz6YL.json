@@ -1,9 +1,0 @@
-{
-	"id": "piu0DnB1CLiz6YL",
-	"json": "{\"id\":\"piu0DnB1CLiz6YL\",\"url\":\"https://saronlab.ucdavis.edu/pathways-project.html\",\"loadedUrl\":\"https://saronlab.ucdavis.edu/pathways-project.html\",\"uniqueKey\":\"https://saronlab.ucdavis.edu/pathways-project.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:55.595Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://saronlab.ucdavis.edu/pathways-project.html",
-	"url": "https://saronlab.ucdavis.edu/pathways-project.html"
-}

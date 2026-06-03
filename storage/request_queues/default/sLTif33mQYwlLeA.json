@@ -1,9 +1,0 @@
-{
-	"id": "sLTif33mQYwlLeA",
-	"json": "{\"id\":\"sLTif33mQYwlLeA\",\"url\":\"https://www.cde.ca.gov/re/pr/camsp.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=3b4b23e6-745f-4579-9173-2c413bcd04d6&ssb=87239206665&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fre%2Fpr%2Fcamsp.asp&ssi=e7a0f0f4-ctxv-491c-99f4-46ae1f222057&ssk=botmanager_support@radware.com&ssm=68302753635079708108471034687786&ssn=8e466d50b4c1afabec31d8619619cd0dca11d21a7c2b-be26-4b1c-9278a1&sso=3419feef-301b5f731fb7480459eee25b47c8382daa3c7a8d760bff26&ssp=03892334101780316646178033951543740&ssq=10560602744912121762527449395049779689837&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2Y5MDAwNzk1Y2ZlODktNmQxOC00NDdjLWJhZmUtOGY4MGJhN2Q0ZmQ0MS0xNzgwMzI3NDQ5OTQ2MC0yODJiMmZhMTljNjJhMTg2MTAiLCJfX3V6bWYiOiI3ZjkwMDBkMjFhN2MyYi1iZTI2LTRiMWMtOWVlZi0zMDFiNWY3MzFmYjcxLTE3ODAzMjc0NDk5NDYwLTAwMzhjZWExYzU2MDM4ZDcxNWIxMCIsInJkIjoiY2EuZ292In0=\",\"uniqueKey\":\"https://www.cde.ca.gov/re/pr/camsp.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:24:10.358Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/re/pr/camsp.asp",
-	"url": "https://www.cde.ca.gov/re/pr/camsp.asp"
-}

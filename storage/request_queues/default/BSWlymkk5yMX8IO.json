@@ -1,9 +1,0 @@
-{
-	"id": "BSWlymkk5yMX8IO",
-	"json": "{\"id\":\"BSWlymkk5yMX8IO\",\"url\":\"http://www.cdss.ca.gov/inforesources/ihss/quality-assurance\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/ihss/quality-assurance\",\"uniqueKey\":\"http://www.cdss.ca.gov/inforesources/ihss/quality-assurance\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:27.481Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.cdss.ca.gov/inforesources/ihss/quality-assurance",
-	"url": "http://www.cdss.ca.gov/inforesources/ihss/quality-assurance"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "gxpQTld4hg1i031",
-	"json": "{\"id\":\"gxpQTld4hg1i031\",\"url\":\"https://cannabis.ca.gov/\",\"loadedUrl\":\"https://www.cannabis.ca.gov/\",\"uniqueKey\":\"https://cannabis.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:50:17.604Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cannabis.ca.gov",
-	"url": "https://cannabis.ca.gov/"
-}

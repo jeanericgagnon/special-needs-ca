@@ -1,9 +1,0 @@
-{
-	"id": "qyGo5Joi60A5j7r",
-	"json": "{\"id\":\"qyGo5Joi60A5j7r\",\"url\":\"https://health.ucdavis.edu/giving/\",\"loadedUrl\":\"https://health.ucdavis.edu/giving/\",\"uniqueKey\":\"https://health.ucdavis.edu/giving\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:19.066Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/giving",
-	"url": "https://health.ucdavis.edu/giving/"
-}

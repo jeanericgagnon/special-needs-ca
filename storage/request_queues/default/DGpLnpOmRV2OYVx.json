@@ -1,9 +1,0 @@
-{
-	"id": "DGpLnpOmRV2OYVx",
-	"json": "{\"id\":\"DGpLnpOmRV2OYVx\",\"url\":\"https://osg.ca.gov/reprohealth/\",\"loadedUrl\":\"https://osg.ca.gov/reprohealth/\",\"uniqueKey\":\"https://osg.ca.gov/reprohealth\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:43.999Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://osg.ca.gov/reprohealth",
-	"url": "https://osg.ca.gov/reprohealth/"
-}

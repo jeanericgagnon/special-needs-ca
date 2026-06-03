@@ -1,9 +1,0 @@
-{
-	"id": "KI0t7vkftNZxXjU",
-	"json": "{\"id\":\"KI0t7vkftNZxXjU\",\"url\":\"http://www.labor.ca.gov/\",\"loadedUrl\":\"https://www.labor.ca.gov/\",\"uniqueKey\":\"http://www.labor.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T17:53:09.990Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.labor.ca.gov",
-	"url": "http://www.labor.ca.gov/"
-}

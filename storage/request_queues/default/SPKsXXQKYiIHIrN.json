@@ -1,9 +1,0 @@
-{
-	"id": "SPKsXXQKYiIHIrN",
-	"json": "{\"id\":\"SPKsXXQKYiIHIrN\",\"url\":\"https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/STI-Allocations-Fiscal-Year-2024-25-and-2025-26-Funding-for-LHJs.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/STI-Allocations-Fiscal-Year-2024-25-and-2025-26-Funding-for-LHJs.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/STI-Allocations-Fiscal-Year-2024-25-and-2025-26-Funding-for-LHJs.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:53:06.158Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/STI-Allocations-Fiscal-Year-2024-25-and-2025-26-Funding-for-LHJs.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/STI-Allocations-Fiscal-Year-2024-25-and-2025-26-Funding-for-LHJs.aspx"
-}

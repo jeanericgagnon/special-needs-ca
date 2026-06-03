@@ -1,9 +1,0 @@
-{
-	"id": "rKoPHLksyVa76Z9",
-	"json": "{\"id\":\"rKoPHLksyVa76Z9\",\"url\":\"https://health.ucdavis.edu/healthy-aging/about-us\",\"loadedUrl\":\"https://health.ucdavis.edu/healthy-aging/about-us\",\"uniqueKey\":\"https://health.ucdavis.edu/healthy-aging/about-us\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:43.174Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/healthy-aging/about-us",
-	"url": "https://health.ucdavis.edu/healthy-aging/about-us"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "F0jQYPySAirE31U",
-	"json": "{\"id\":\"F0jQYPySAirE31U\",\"url\":\"https://lists.ucdavis.edu/sympa/subscribe/funding/index.html\",\"loadedUrl\":\"https://lists.ucdavis.edu/sympa/subscribe/funding/index.html\",\"uniqueKey\":\"https://lists.ucdavis.edu/sympa/subscribe/funding/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:14.894Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://lists.ucdavis.edu/sympa/subscribe/funding/index.html",
-	"url": "https://lists.ucdavis.edu/sympa/subscribe/funding/index.html"
-}

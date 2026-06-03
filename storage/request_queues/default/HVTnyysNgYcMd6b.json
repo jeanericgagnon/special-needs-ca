@@ -1,9 +1,0 @@
-{
-	"id": "HVTnyysNgYcMd6b",
-	"json": "{\"id\":\"HVTnyysNgYcMd6b\",\"url\":\"https://cdss.ca.gov/inforesources/tribal-affairs\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/tribal-affairs\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/tribal-affairs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:26.006Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/tribal-affairs",
-	"url": "https://cdss.ca.gov/inforesources/tribal-affairs"
-}

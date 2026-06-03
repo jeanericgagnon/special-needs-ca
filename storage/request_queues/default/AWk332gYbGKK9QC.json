@@ -1,9 +1,0 @@
-{
-	"id": "AWk332gYbGKK9QC",
-	"json": "{\"id\":\"AWk332gYbGKK9QC\",\"url\":\"https://health.ucdavis.edu/cancer/patients-visitors/parking-and-construction-updates.html\",\"loadedUrl\":\"https://health.ucdavis.edu/cancer/patients-visitors/parking\",\"uniqueKey\":\"https://health.ucdavis.edu/cancer/patients-visitors/parking-and-construction-updates.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:54.916Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/cancer/patients-visitors/parking-and-construction-updates.html",
-	"url": "https://health.ucdavis.edu/cancer/patients-visitors/parking-and-construction-updates.html"
-}

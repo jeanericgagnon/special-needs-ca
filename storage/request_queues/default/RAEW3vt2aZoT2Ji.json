@@ -1,9 +1,0 @@
-{
-	"id": "RAEW3vt2aZoT2Ji",
-	"json": "{\"id\":\"RAEW3vt2aZoT2Ji\",\"url\":\"https://health.ucdavis.edu/belonging/news-and-events/latest-news\",\"loadedUrl\":\"https://health.ucdavis.edu/belonging/news-and-events/latest-news\",\"uniqueKey\":\"https://health.ucdavis.edu/belonging/news-and-events/latest-news\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:20.256Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/belonging/news-and-events/latest-news",
-	"url": "https://health.ucdavis.edu/belonging/news-and-events/latest-news"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "ghQuKjGKvATLznq",
-	"json": "{\"id\":\"ghQuKjGKvATLznq\",\"url\":\"https://health.ucdavis.edu/radiology/research/active_research.html\",\"loadedUrl\":\"https://health.ucdavis.edu/radiology/research/active_research.html\",\"uniqueKey\":\"https://health.ucdavis.edu/radiology/research/active_research.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:56.124Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/radiology/research/active_research.html",
-	"url": "https://health.ucdavis.edu/radiology/research/active_research.html"
-}

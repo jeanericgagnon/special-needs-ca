@@ -1,9 +1,0 @@
-{
-	"id": "LzvGHbr3Iw9mCoN",
-	"json": "{\"id\":\"LzvGHbr3Iw9mCoN\",\"url\":\"https://www.dhcs.ca.gov/services/mh/Pages/MH_Prop63.aspx\",\"loadedUrl\":\"https://www.dhcs.ca.gov/services/mental-health-services-division-default/behavioral-health-services-act-mh-prop63/\",\"uniqueKey\":\"https://www.dhcs.ca.gov/services/mh/Pages/MH_Prop63.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:46.100Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dhcs.ca.gov/services/mh/Pages/MH_Prop63.aspx",
-	"url": "https://www.dhcs.ca.gov/services/mh/Pages/MH_Prop63.aspx"
-}

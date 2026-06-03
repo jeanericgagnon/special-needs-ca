@@ -1,9 +1,0 @@
-{
-	"id": "Gkr8Wp2BJRgSzO9",
-	"json": "{\"id\":\"Gkr8Wp2BJRgSzO9\",\"url\":\"https://ucvmcsd.vetmed.ucdavis.edu/\",\"loadedUrl\":\"https://ucvmcsd.vetmed.ucdavis.edu/\",\"uniqueKey\":\"https://ucvmcsd.vetmed.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:23.154Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ucvmcsd.vetmed.ucdavis.edu",
-	"url": "https://ucvmcsd.vetmed.ucdavis.edu/"
-}

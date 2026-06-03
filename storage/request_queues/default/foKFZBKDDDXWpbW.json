@@ -1,9 +1,0 @@
-{
-	"id": "foKFZBKDDDXWpbW",
-	"json": "{\"id\":\"foKFZBKDDDXWpbW\",\"url\":\"https://health.ucdavis.edu/conditions/heart-vascular/peripheral-arterial-disease\",\"loadedUrl\":\"https://health.ucdavis.edu/conditions/heart-vascular/peripheral-arterial-disease\",\"uniqueKey\":\"https://health.ucdavis.edu/conditions/heart-vascular/peripheral-arterial-disease\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:41.510Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/conditions/heart-vascular/peripheral-arterial-disease",
-	"url": "https://health.ucdavis.edu/conditions/heart-vascular/peripheral-arterial-disease"
-}

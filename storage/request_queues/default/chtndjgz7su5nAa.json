@@ -1,9 +1,0 @@
-{
-	"id": "chtndjgz7su5nAa",
-	"json": "{\"id\":\"chtndjgz7su5nAa\",\"url\":\"https://cdss.ca.gov/Deaf-Access\",\"loadedUrl\":\"https://cdss.ca.gov/deaf-access\",\"uniqueKey\":\"https://cdss.ca.gov/Deaf-Access\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:20.437Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/Deaf-Access",
-	"url": "https://cdss.ca.gov/Deaf-Access"
-}

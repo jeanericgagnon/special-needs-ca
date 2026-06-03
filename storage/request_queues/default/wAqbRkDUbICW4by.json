@@ -1,9 +1,0 @@
-{
-	"id": "wAqbRkDUbICW4by",
-	"json": "{\"id\":\"wAqbRkDUbICW4by\",\"url\":\"https://www.ca.gov/contact/\",\"loadedUrl\":\"https://www.ca.gov/contact/\",\"uniqueKey\":\"https://www.ca.gov/contact\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:59.650Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ca.gov/contact",
-	"url": "https://www.ca.gov/contact/"
-}

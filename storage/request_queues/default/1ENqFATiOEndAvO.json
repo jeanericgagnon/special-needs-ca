@@ -1,9 +1,0 @@
-{
-	"id": "1ENqFATiOEndAvO",
-	"json": "{\"id\":\"1ENqFATiOEndAvO\",\"url\":\"https://health.ucdavis.edu/mind-institute/news/headlines/project-adam-sacramento-launches-first-heart-safe-youth-sports-program-/2026/03\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/news/headlines/project-adam-sacramento-launches-first-heart-safe-youth-sports-program-/2026/03\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/news/headlines/project-adam-sacramento-launches-first-heart-safe-youth-sports-program-/2026/03\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:59.136Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mind-institute/news/headlines/project-adam-sacramento-launches-first-heart-safe-youth-sports-program-/2026/03",
-	"url": "https://health.ucdavis.edu/mind-institute/news/headlines/project-adam-sacramento-launches-first-heart-safe-youth-sports-program-/2026/03"
-}

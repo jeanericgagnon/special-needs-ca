@@ -1,9 +1,0 @@
-{
-	"id": "9ZJivIjprHiRDvn",
-	"json": "{\"id\":\"9ZJivIjprHiRDvn\",\"url\":\"https://www.cdss.ca.gov/inforesources/CDSS-Programs/Adult-Programs/IHSS/IHSS-Resources\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/ihss/resources\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/CDSS-Programs/Adult-Programs/IHSS/IHSS-Resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:43.178Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/inforesources/CDSS-Programs/Adult-Programs/IHSS/IHSS-Resources",
-	"url": "https://www.cdss.ca.gov/inforesources/CDSS-Programs/Adult-Programs/IHSS/IHSS-Resources"
-}

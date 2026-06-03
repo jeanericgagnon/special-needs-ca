@@ -1,9 +1,0 @@
-{
-	"id": "lgCsQE3kU1pLRHy",
-	"json": "{\"id\":\"lgCsQE3kU1pLRHy\",\"url\":\"https://www.csb-cde.ca.gov/outreach/summeracademies/index.aspx\",\"loadedUrl\":\"https://www.csb-cde.ca.gov/outreach/summeracademies/index.aspx\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/outreach/summeracademies/index.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:25.929Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.csb-cde.ca.gov/outreach/summeracademies/index.aspx",
-	"url": "https://www.csb-cde.ca.gov/outreach/summeracademies/index.aspx"
-}

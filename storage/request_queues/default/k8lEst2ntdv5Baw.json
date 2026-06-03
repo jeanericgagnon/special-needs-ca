@@ -1,9 +1,0 @@
-{
-	"id": "k8lEst2ntdv5Baw",
-	"json": "{\"id\":\"k8lEst2ntdv5Baw\",\"url\":\"http://tag.ucdavis.edu/contacts.cfm\",\"loadedUrl\":\"https://ua.ucdavis.edu/portal/find-my-advisor\",\"uniqueKey\":\"http://tag.ucdavis.edu/contacts.cfm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:44.192Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://tag.ucdavis.edu/contacts.cfm",
-	"url": "http://tag.ucdavis.edu/contacts.cfm"
-}

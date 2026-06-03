@@ -1,9 +1,0 @@
-{
-	"id": "i5IWF8xLfiuw08A",
-	"json": "{\"id\":\"i5IWF8xLfiuw08A\",\"url\":\"https://health.ucdavis.edu/healthcare-professionals/featured-specialties/ophthalmology\",\"loadedUrl\":\"https://health.ucdavis.edu/healthcare-professionals/featured-specialties/ophthalmology\",\"uniqueKey\":\"https://health.ucdavis.edu/healthcare-professionals/featured-specialties/ophthalmology\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:09.186Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/healthcare-professionals/featured-specialties/ophthalmology",
-	"url": "https://health.ucdavis.edu/healthcare-professionals/featured-specialties/ophthalmology"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "cdXAG6iW9r8fGIV",
-	"json": "{\"id\":\"cdXAG6iW9r8fGIV\",\"url\":\"http://www.cdss.ca.gov/reporting/file-a-complaint\",\"loadedUrl\":\"https://www.cdss.ca.gov/reporting/file-a-complaint\",\"uniqueKey\":\"http://www.cdss.ca.gov/reporting/file-a-complaint\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:32.645Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.cdss.ca.gov/reporting/file-a-complaint",
-	"url": "http://www.cdss.ca.gov/reporting/file-a-complaint"
-}

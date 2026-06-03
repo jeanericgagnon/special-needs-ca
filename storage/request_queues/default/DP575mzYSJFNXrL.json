@@ -1,9 +1,0 @@
-{
-	"id": "DP575mzYSJFNXrL",
-	"json": "{\"id\":\"DP575mzYSJFNXrL\",\"url\":\"https://www.cde.ca.gov/ci/pl/litpdinvitationerrata.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=5e201356-6aed-4886-b778-ded69349c165&ssb=32209223344&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fci%2Fpl%2Flitpdinvitationerrata.asp&ssi=0107c7a8-ctxv-4b12-9fb8-d4e5d4ea5537&ssk=botmanager_support@radware.com&ssm=77438266878950099104963863435965&ssn=4e5010f1dc3f4d6b2802d34fae0fa4650171626b3e4e-dad8-4b8e-80e527&sso=79427836-a3e20cbec6bf501e515644e2f8e6b5451f4003cf2a6ad2c7&ssp=36020757381780366451178031737396496&ssq=39066382833604563062928336055264238621374&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsInV6bXgiOiI3ZjkwMDBlZjZlNzRiNi0yNTUyLTQ4ZWUtOWE0Yi01MWRlODZiODhlMjQxLTE3ODAzMjgzMzY1MTIwLWE2ZjhlMzQzYWQ0NGJhMTUxMCIsIl9fdXptZiI6IjdmOTAwMDYyNmIzZTRlLWRhZDgtNGI4ZS04ODM2LWEzZTIwY2JlYzZiZjEtMTc4MDMyODMzNjUxMjAtMDAzMTVhYjY2MGY3NjMxOWQ1YzEwIn0=\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/pl/litpdinvitationerrata.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:38:56.875Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ci/pl/litpdinvitationerrata.asp",
-	"url": "https://www.cde.ca.gov/ci/pl/litpdinvitationerrata.asp"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "tpBlnGRqoGBp41y",
-	"json": "{\"id\":\"tpBlnGRqoGBp41y\",\"url\":\"https://www.auditor.ca.gov/contracts/\",\"loadedUrl\":\"https://www.auditor.ca.gov/contracts/\",\"uniqueKey\":\"https://www.auditor.ca.gov/contracts\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:05:22.955Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.auditor.ca.gov/contracts",
-	"url": "https://www.auditor.ca.gov/contracts/"
-}

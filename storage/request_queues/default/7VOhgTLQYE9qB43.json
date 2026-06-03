@@ -1,9 +1,0 @@
-{
-	"id": "7VOhgTLQYE9qB43",
-	"json": "{\"id\":\"7VOhgTLQYE9qB43\",\"url\":\"https://www.cde.ca.gov/sp/cd/ci/staffqualifications.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=6fde17c9-fda8-4542-8f27-c814b878f5d4&ssb=26756205692&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fsp%2Fcd%2Fci%2Fstaffqualifications.asp&ssi=8ea55d88-ctxv-43c7-b86c-cebcba6a6a55&ssk=botmanager_support@radware.com&ssm=06127687611671497169205374125198&ssn=ad39eb7f9949c3c2ad455d390c592e4fef0f789b7d81-1fb3-4f91-9e714e&sso=1a195a71-b4fe74fae2e810e8c132a2135fc20700a6a8f55bfdc168f1&ssp=64196345021780396084178031421182593&ssq=08981532751478162560127447255265358084594&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsIl9fdXptZiI6IjdmOTAwMDc4OWI3ZDgxLTFmYjMtNGY5MS05YTcxLWI0ZmU3NGZhZTJlODEtMTc4MDMyNzQ0NzkwOTY2MTE2LTAwMzNiMGRiNDYxMTFhZGM5N2MxNiIsInV6bXgiOiI3ZjkwMDA3Mzk3YzM2Yy0wZDNiLTRjODUtOTIyOS01MzU1MjRjNWY5YWIxLTE3ODAzMjc0NDc5MDk2NjExNi04ODk2MWEzMjRlNDY4ZWY3MTYifQ==\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/cd/ci/staffqualifications.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:25:14.102Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/sp/cd/ci/staffqualifications.asp",
-	"url": "https://www.cde.ca.gov/sp/cd/ci/staffqualifications.asp"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "d2hUrkynk8XHnKF",
-	"json": "{\"id\":\"d2hUrkynk8XHnKF\",\"url\":\"https://www.treasurer.ca.gov/able/reports.asp\",\"loadedUrl\":\"https://www.treasurer.ca.gov/able/reports\",\"uniqueKey\":\"https://www.treasurer.ca.gov/able/reports.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:47.712Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.treasurer.ca.gov/able/reports.asp",
-	"url": "https://www.treasurer.ca.gov/able/reports.asp"
-}

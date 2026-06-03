@@ -1,9 +1,0 @@
-{
-	"id": "7brBWAj0OV5wdmE",
-	"json": "{\"id\":\"7brBWAj0OV5wdmE\",\"url\":\"https://giveto.ucdavis.edu/users/10197514-leigh-ann-hartman\",\"loadedUrl\":\"https://giveto.ucdavis.edu/users/10197514-leigh-ann-hartman\",\"uniqueKey\":\"https://giveto.ucdavis.edu/users/10197514-leigh-ann-hartman\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:05.094Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://giveto.ucdavis.edu/users/10197514-leigh-ann-hartman",
-	"url": "https://giveto.ucdavis.edu/users/10197514-leigh-ann-hartman"
-}

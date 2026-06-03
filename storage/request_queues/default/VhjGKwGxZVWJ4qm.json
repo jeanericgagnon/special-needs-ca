@@ -1,9 +1,0 @@
-{
-	"id": "VhjGKwGxZVWJ4qm",
-	"json": "{\"id\":\"VhjGKwGxZVWJ4qm\",\"url\":\"https://caes.ucdavis.edu/about/overview/CAESfacts-distinctions\",\"loadedUrl\":\"https://caes.ucdavis.edu/about/overview/CAESfacts-distinctions\",\"uniqueKey\":\"https://caes.ucdavis.edu/about/overview/CAESfacts-distinctions\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:54:42.513Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://caes.ucdavis.edu/about/overview/CAESfacts-distinctions",
-	"url": "https://caes.ucdavis.edu/about/overview/CAESfacts-distinctions"
-}

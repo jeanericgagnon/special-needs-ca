@@ -1,9 +1,0 @@
-{
-	"id": "po4vhrOXac0By67",
-	"json": "{\"id\":\"po4vhrOXac0By67\",\"url\":\"https://cdss.ca.gov/inforesources/Caregiver-Advocacy-Network/Caregivers\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/caregiver-advocacy-network/caregivers\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Caregiver-Advocacy-Network/Caregivers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:55.008Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/Caregiver-Advocacy-Network/Caregivers",
-	"url": "https://cdss.ca.gov/inforesources/Caregiver-Advocacy-Network/Caregivers"
-}

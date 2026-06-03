@@ -1,9 +1,0 @@
-{
-	"id": "ty83BlBZR1ysXKS",
-	"json": "{\"id\":\"ty83BlBZR1ysXKS\",\"url\":\"https://calable.ca.gov/faqs/who-controls-the-funds-in-a-calable-account\",\"loadedUrl\":\"https://calable.ca.gov/faqs/who-controls-the-funds-in-a-calable-account\",\"uniqueKey\":\"https://calable.ca.gov/faqs/who-controls-the-funds-in-a-calable-account\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:49.490Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://calable.ca.gov/faqs/who-controls-the-funds-in-a-calable-account",
-	"url": "https://calable.ca.gov/faqs/who-controls-the-funds-in-a-calable-account"
-}

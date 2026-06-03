@@ -1,9 +1,0 @@
-{
-	"id": "OhQ5dCbcVrG1Djo",
-	"json": "{\"id\":\"OhQ5dCbcVrG1Djo\",\"url\":\"https://somapp.ucdmc.ucdavis.edu/meded/scheduling/index.cfm\",\"loadedUrl\":\"https://cas.ucdavis.edu/cas/login?service=https%3A%2F%2Fcas.ucdavis.edu%2Fcas%2Foauth2.0%2FcallbackAuthorize%3Fclient_id%3DyyvjOAxrpdYqQptXFCP2AQh0SDv69KjVlkTU%26redirect_uri%3Dhttps%253A%252F%252Fsomapp.ucdmc.ucdavis.edu%252Fmeded%252Fscheduling%252Findex.cfm%26response_type%3Dcode%26client_name%3DCasOAuthClient\",\"uniqueKey\":\"https://somapp.ucdmc.ucdavis.edu/meded/scheduling/index.cfm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:24.872Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://somapp.ucdmc.ucdavis.edu/meded/scheduling/index.cfm",
-	"url": "https://somapp.ucdmc.ucdavis.edu/meded/scheduling/index.cfm"
-}

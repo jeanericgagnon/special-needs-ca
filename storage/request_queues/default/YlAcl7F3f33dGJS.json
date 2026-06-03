@@ -1,9 +1,0 @@
-{
-	"id": "YlAcl7F3f33dGJS",
-	"json": "{\"id\":\"YlAcl7F3f33dGJS\",\"url\":\"https://www.ucdavis.edu/news/food-drive\",\"loadedUrl\":\"https://www.ucdavis.edu/news/food-drive\",\"uniqueKey\":\"https://www.ucdavis.edu/news/food-drive\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:47.553Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ucdavis.edu/news/food-drive",
-	"url": "https://www.ucdavis.edu/news/food-drive"
-}

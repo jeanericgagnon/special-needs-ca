@@ -1,9 +1,0 @@
-{
-	"id": "RphuoDQEKAZBqvu",
-	"json": "{\"id\":\"RphuoDQEKAZBqvu\",\"url\":\"https://oal.ca.gov/publications/ccr/\",\"loadedUrl\":\"https://oal.ca.gov/publications/ccr/\",\"uniqueKey\":\"https://oal.ca.gov/publications/ccr\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:09:02.157Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://oal.ca.gov/publications/ccr",
-	"url": "https://oal.ca.gov/publications/ccr/"
-}

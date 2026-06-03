@@ -1,9 +1,0 @@
-{
-	"id": "mN6QMvPqumkjfta",
-	"json": "{\"id\":\"mN6QMvPqumkjfta\",\"url\":\"https://registertovote.ca.gov/tl-ph\",\"loadedUrl\":\"https://registertovote.ca.gov/tl-ph\",\"uniqueKey\":\"https://registertovote.ca.gov/tl-ph\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:44.854Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://registertovote.ca.gov/tl-ph",
-	"url": "https://registertovote.ca.gov/tl-ph"
-}

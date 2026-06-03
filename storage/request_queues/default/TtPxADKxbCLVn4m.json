@@ -1,9 +1,0 @@
-{
-	"id": "TtPxADKxbCLVn4m",
-	"json": "{\"id\":\"TtPxADKxbCLVn4m\",\"url\":\"https://mindbrain.ucdavis.edu/tags/amygdala\",\"loadedUrl\":\"https://mindbrain.ucdavis.edu/tags/amygdala\",\"uniqueKey\":\"https://mindbrain.ucdavis.edu/tags/amygdala\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:21.389Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://mindbrain.ucdavis.edu/tags/amygdala",
-	"url": "https://mindbrain.ucdavis.edu/tags/amygdala"
-}

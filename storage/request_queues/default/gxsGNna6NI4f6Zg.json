@@ -1,9 +1,0 @@
-{
-	"id": "gxsGNna6NI4f6Zg",
-	"json": "{\"id\":\"gxsGNna6NI4f6Zg\",\"url\":\"https://hr.ucdavis.edu/tags/hrbp-staff\",\"loadedUrl\":\"https://hr.ucdavis.edu/tags/hrbp-staff\",\"uniqueKey\":\"https://hr.ucdavis.edu/tags/hrbp-staff\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:44.544Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/tags/hrbp-staff",
-	"url": "https://hr.ucdavis.edu/tags/hrbp-staff"
-}

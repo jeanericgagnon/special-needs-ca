@@ -1,9 +1,0 @@
-{
-	"id": "80SKh3ouv010U99",
-	"json": "{\"id\":\"80SKh3ouv010U99\",\"url\":\"https://health.ucdavis.edu/cancer/community/scope\",\"loadedUrl\":\"https://health.ucdavis.edu/cancer/community/scope\",\"uniqueKey\":\"https://health.ucdavis.edu/cancer/community/scope\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:14.640Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/cancer/community/scope",
-	"url": "https://health.ucdavis.edu/cancer/community/scope"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "CNJVi2OpnqkuuZ4",
-	"json": "{\"id\":\"CNJVi2OpnqkuuZ4\",\"url\":\"https://listserv2.cdph.ca.gov/scripts/wa.exe?SUBED1=CDPHWICVENDORS&A=1\",\"loadedUrl\":\"https://listserv2.cdph.ca.gov/scripts/wa.exe?SUBED1=CDPHWICVENDORS&A=1\",\"uniqueKey\":\"https://listserv2.cdph.ca.gov/scripts/wa.exe?A=1&SUBED1=CDPHWICVENDORS\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T18:08:32.071Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://listserv2.cdph.ca.gov/scripts/wa.exe?A=1&SUBED1=CDPHWICVENDORS",
-	"url": "https://listserv2.cdph.ca.gov/scripts/wa.exe?SUBED1=CDPHWICVENDORS&A=1"
-}

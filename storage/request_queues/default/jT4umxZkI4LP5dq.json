@@ -1,9 +1,0 @@
-{
-	"id": "jT4umxZkI4LP5dq",
-	"json": "{\"id\":\"jT4umxZkI4LP5dq\",\"url\":\"https://rarediseases.org/rare-diseases/congenital-generalized-lipodystrophy/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/congenital-generalized-lipodystrophy/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/congenital-generalized-lipodystrophy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:12:59.719Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/rare-diseases/congenital-generalized-lipodystrophy",
-	"url": "https://rarediseases.org/rare-diseases/congenital-generalized-lipodystrophy/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "GYwpwKAS4wV9esq",
-	"json": "{\"id\":\"GYwpwKAS4wV9esq\",\"url\":\"https://www.cde.ca.gov/be/mt/ms/documents/finalmins070705.doc\",\"loadedUrl\":\"https://www.cde.ca.gov/be/mt/ms/documents/finalmins070705.doc\",\"uniqueKey\":\"https://www.cde.ca.gov/be/mt/ms/documents/finalmins070705.doc\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:55.553Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/be/mt/ms/documents/finalmins070705.doc",
-	"url": "https://www.cde.ca.gov/be/mt/ms/documents/finalmins070705.doc"
-}

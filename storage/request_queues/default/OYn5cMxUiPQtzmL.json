@@ -1,9 +1,0 @@
-{
-	"id": "OYn5cMxUiPQtzmL",
-	"json": "{\"id\":\"OYn5cMxUiPQtzmL\",\"url\":\"https://health.ucdavis.edu/children/team/43009/carrie-silver-psychology-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/children/team/43009/carrie-silver-psychology-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/children/team/43009/carrie-silver-psychology-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:08.530Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/children/team/43009/carrie-silver-psychology-sacramento",
-	"url": "https://health.ucdavis.edu/children/team/43009/carrie-silver-psychology-sacramento"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "M7juop6AFJER5tT",
-	"json": "{\"id\":\"M7juop6AFJER5tT\",\"url\":\"https://www.ucdavis.edu/contact\",\"loadedUrl\":\"https://www.ucdavis.edu/about/campus-safety/help/contact\",\"uniqueKey\":\"https://www.ucdavis.edu/contact\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:48.545Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ucdavis.edu/contact",
-	"url": "https://www.ucdavis.edu/contact"
-}

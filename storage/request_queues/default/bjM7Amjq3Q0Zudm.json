@@ -1,9 +1,0 @@
-{
-	"id": "bjM7Amjq3Q0Zudm",
-	"json": "{\"id\":\"bjM7Amjq3Q0Zudm\",\"url\":\"https://health.ucdavis.edu/myucdavishealth/video-visits/\",\"loadedUrl\":\"https://health.ucdavis.edu/myucdavishealth/video-visits/\",\"uniqueKey\":\"https://health.ucdavis.edu/myucdavishealth/video-visits\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:57.076Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/myucdavishealth/video-visits",
-	"url": "https://health.ucdavis.edu/myucdavishealth/video-visits/"
-}

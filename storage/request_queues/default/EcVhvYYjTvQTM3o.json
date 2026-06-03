@@ -1,9 +1,0 @@
-{
-	"id": "EcVhvYYjTvQTM3o",
-	"json": "{\"id\":\"EcVhvYYjTvQTM3o\",\"url\":\"https://scdd.ca.gov/\",\"loadedUrl\":\"https://scdd.ca.gov/\",\"uniqueKey\":\"https://scdd.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-06-01T14:55:15.256Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov",
-	"url": "https://scdd.ca.gov/"
-}

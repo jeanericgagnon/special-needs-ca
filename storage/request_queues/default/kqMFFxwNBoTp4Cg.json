@@ -1,9 +1,0 @@
-{
-	"id": "kqMFFxwNBoTp4Cg",
-	"json": "{\"id\":\"kqMFFxwNBoTp4Cg\",\"url\":\"https://health.ucdavis.edu/medical-center/visiting/visitor-policies/index#alternate-visit\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-center/visiting/visitor-policies/index#alternate-visit\",\"uniqueKey\":\"https://health.ucdavis.edu/medical-center/visiting/visitor-policies/index\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:12.827Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/medical-center/visiting/visitor-policies/index",
-	"url": "https://health.ucdavis.edu/medical-center/visiting/visitor-policies/index#alternate-visit"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "D63PaoM7rlDTDOq",
-	"json": "{\"id\":\"D63PaoM7rlDTDOq\",\"url\":\"https://hr.ucdavis.edu/jobs/tes#main-content\",\"loadedUrl\":\"https://hr.ucdavis.edu/jobs/tes#main-content\",\"uniqueKey\":\"https://hr.ucdavis.edu/jobs/tes\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:08.156Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/jobs/tes",
-	"url": "https://hr.ucdavis.edu/jobs/tes#main-content"
-}

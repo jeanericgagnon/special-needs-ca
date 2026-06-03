@@ -1,9 +1,0 @@
-{
-	"id": "TkG9NMCfWQ531Wb",
-	"json": "{\"id\":\"TkG9NMCfWQ531Wb\",\"url\":\"https://data.ca.gov/showcase\",\"loadedUrl\":\"https://data.ca.gov/showcase\",\"uniqueKey\":\"https://data.ca.gov/showcase\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:14.730Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://data.ca.gov/showcase",
-	"url": "https://data.ca.gov/showcase"
-}

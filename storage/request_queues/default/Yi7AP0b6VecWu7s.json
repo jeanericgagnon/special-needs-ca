@@ -1,9 +1,0 @@
-{
-	"id": "Yi7AP0b6VecWu7s",
-	"json": "{\"id\":\"Yi7AP0b6VecWu7s\",\"url\":\"https://calable.ca.gov/api/v1/@apostrophecms/page/ckvwpnmqs00040ipm30lv5tw1:en:published/locale/en\",\"loadedUrl\":\"https://calable.ca.gov/search\",\"uniqueKey\":\"https://calable.ca.gov/api/v1/@apostrophecms/page/ckvwpnmqs00040ipm30lv5tw1:en:published/locale/en\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:36.166Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://calable.ca.gov/api/v1/@apostrophecms/page/ckvwpnmqs00040ipm30lv5tw1:en:published/locale/en",
-	"url": "https://calable.ca.gov/api/v1/@apostrophecms/page/ckvwpnmqs00040ipm30lv5tw1:en:published/locale/en"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "JBdMRzcUqgZDcyl",
-	"json": "{\"id\":\"JBdMRzcUqgZDcyl\",\"url\":\"https://calable.ca.gov/es/faqs/qu%C3%A9-es-able-para-trabajar\",\"loadedUrl\":\"https://calable.ca.gov/es/faqs/qu%C3%A9-es-able-para-trabajar\",\"uniqueKey\":\"https://calable.ca.gov/es/faqs/qu%C3%A9-es-able-para-trabajar\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:39.123Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://calable.ca.gov/es/faqs/qu%C3%A9-es-able-para-trabajar",
-	"url": "https://calable.ca.gov/es/faqs/qu%C3%A9-es-able-para-trabajar"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "U98fqQoGaAwteKN",
-	"json": "{\"id\":\"U98fqQoGaAwteKN\",\"url\":\"https://mindbrain.ucdavis.edu/people/veronica-martinez-cerdeno\",\"loadedUrl\":\"https://mindbrain.ucdavis.edu/people/veronica-martinez-cerdeno\",\"uniqueKey\":\"https://mindbrain.ucdavis.edu/people/veronica-martinez-cerdeno\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:10.356Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://mindbrain.ucdavis.edu/people/veronica-martinez-cerdeno",
-	"url": "https://mindbrain.ucdavis.edu/people/veronica-martinez-cerdeno"
-}

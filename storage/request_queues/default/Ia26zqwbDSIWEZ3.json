@@ -1,9 +1,0 @@
-{
-	"id": "Ia26zqwbDSIWEZ3",
-	"json": "{\"id\":\"Ia26zqwbDSIWEZ3\",\"url\":\"https://health.ucdavis.edu/internal-medicine/team/chair\",\"loadedUrl\":\"https://health.ucdavis.edu/internal-medicine/team/chair\",\"uniqueKey\":\"https://health.ucdavis.edu/internal-medicine/team/chair\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:34:25.268Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/internal-medicine/team/chair",
-	"url": "https://health.ucdavis.edu/internal-medicine/team/chair"
-}

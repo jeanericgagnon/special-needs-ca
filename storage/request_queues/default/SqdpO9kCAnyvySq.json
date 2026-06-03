@@ -1,9 +1,0 @@
-{
-	"id": "SqdpO9kCAnyvySq",
-	"json": "{\"id\":\"SqdpO9kCAnyvySq\",\"url\":\"https://www.dmv.ca.gov/portal/vehicle-registration/license-plates-decals-and-placards/california-license-plates/order-special-interest-and-personalized-license-plates/\",\"loadedUrl\":\"https://www.dmv.ca.gov/portal/vehicle-registration/license-plates-decals-and-placards/license-plates/order-special-interest-and-personalized-license-plates/\",\"uniqueKey\":\"https://www.dmv.ca.gov/portal/vehicle-registration/license-plates-decals-and-placards/california-license-plates/order-special-interest-and-personalized-license-plates\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:38.517Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dmv.ca.gov/portal/vehicle-registration/license-plates-decals-and-placards/california-license-plates/order-special-interest-and-personalized-license-plates",
-	"url": "https://www.dmv.ca.gov/portal/vehicle-registration/license-plates-decals-and-placards/california-license-plates/order-special-interest-and-personalized-license-plates/"
-}

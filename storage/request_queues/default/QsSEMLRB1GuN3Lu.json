@@ -1,9 +1,0 @@
-{
-	"id": "QsSEMLRB1GuN3Lu",
-	"json": "{\"id\":\"QsSEMLRB1GuN3Lu\",\"url\":\"https://www.cdss.ca.gov/inforesources/CDSS-Programs/Adult-Programs/IHSS/Quality-Assurance\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/ihss/quality-assurance\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/CDSS-Programs/Adult-Programs/IHSS/Quality-Assurance\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:03.808Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/inforesources/CDSS-Programs/Adult-Programs/IHSS/Quality-Assurance",
-	"url": "https://www.cdss.ca.gov/inforesources/CDSS-Programs/Adult-Programs/IHSS/Quality-Assurance"
-}

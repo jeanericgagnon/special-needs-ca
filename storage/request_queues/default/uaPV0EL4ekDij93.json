@@ -1,9 +1,0 @@
-{
-	"id": "uaPV0EL4ekDij93",
-	"json": "{\"id\":\"uaPV0EL4ekDij93\",\"url\":\"https://www.cde.ca.gov/fg/aa/lc/lcffandtheucp.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/fg/aa/lc/lcffandtheucp.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/fg/aa/lc/lcffandtheucp.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:22:34.675Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/fg/aa/lc/lcffandtheucp.asp",
-	"url": "https://www.cde.ca.gov/fg/aa/lc/lcffandtheucp.asp"
-}

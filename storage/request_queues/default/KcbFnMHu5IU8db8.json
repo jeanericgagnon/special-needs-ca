@@ -1,9 +1,0 @@
-{
-	"id": "KcbFnMHu5IU8db8",
-	"json": "{\"id\":\"KcbFnMHu5IU8db8\",\"url\":\"https://cnprc.ucdavis.edu/training\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/training\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/training\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:16.101Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cnprc.ucdavis.edu/training",
-	"url": "https://cnprc.ucdavis.edu/training"
-}

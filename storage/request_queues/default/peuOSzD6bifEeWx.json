@@ -1,9 +1,0 @@
-{
-	"id": "peuOSzD6bifEeWx",
-	"json": "{\"id\":\"peuOSzD6bifEeWx\",\"url\":\"https://viscoglab.ucdavis.edu/\",\"loadedUrl\":\"https://viscoglab.ucdavis.edu/\",\"uniqueKey\":\"https://viscoglab.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:07.816Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://viscoglab.ucdavis.edu",
-	"url": "https://viscoglab.ucdavis.edu/"
-}

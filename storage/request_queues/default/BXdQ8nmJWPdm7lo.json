@@ -1,9 +1,0 @@
-{
-	"id": "BXdQ8nmJWPdm7lo",
-	"json": "{\"id\":\"BXdQ8nmJWPdm7lo\",\"url\":\"https://www.dhcs.ca.gov/es/individuals/Pages/SUD_County_Access_Lines.aspx\",\"loadedUrl\":\"https://www.dhcs.ca.gov/es/individuals/Pages/SUD_County_Access_Lines.aspx\",\"uniqueKey\":\"https://www.dhcs.ca.gov/es/individuals/Pages/SUD_County_Access_Lines.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T17:55:29.920Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dhcs.ca.gov/es/individuals/Pages/SUD_County_Access_Lines.aspx",
-	"url": "https://www.dhcs.ca.gov/es/individuals/Pages/SUD_County_Access_Lines.aspx"
-}

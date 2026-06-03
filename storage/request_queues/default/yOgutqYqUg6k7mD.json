@@ -1,9 +1,0 @@
-{
-	"id": "yOgutqYqUg6k7mD",
-	"json": "{\"id\":\"yOgutqYqUg6k7mD\",\"url\":\"https://rarediseases.org/organizations/pten-uk-and-ireland-patient-group/\",\"loadedUrl\":\"https://rarediseases.org/organizations/pten-uk-and-ireland-patient-group/\",\"uniqueKey\":\"https://rarediseases.org/organizations/pten-uk-and-ireland-patient-group\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:19:20.942Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/organizations/pten-uk-and-ireland-patient-group",
-	"url": "https://rarediseases.org/organizations/pten-uk-and-ireland-patient-group/"
-}

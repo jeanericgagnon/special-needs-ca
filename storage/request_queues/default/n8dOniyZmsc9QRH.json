@@ -1,9 +1,0 @@
-{
-	"id": "n8dOniyZmsc9QRH",
-	"json": "{\"id\":\"n8dOniyZmsc9QRH\",\"url\":\"https://registrar.ucdavis.edu/records/transcripts#footer\",\"loadedUrl\":\"https://registrar.ucdavis.edu/records/transcripts#footer\",\"uniqueKey\":\"https://registrar.ucdavis.edu/records/transcripts\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:48.252Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://registrar.ucdavis.edu/records/transcripts",
-	"url": "https://registrar.ucdavis.edu/records/transcripts#footer"
-}

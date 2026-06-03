@@ -1,9 +1,0 @@
-{
-	"id": "cOPvtzzOqWUQ0NP",
-	"json": "{\"id\":\"cOPvtzzOqWUQ0NP\",\"url\":\"https://www.cdss.ca.gov/Benefits-Services/Hearings-and-Appeals/IHSS-Provider-Denials\",\"loadedUrl\":\"https://www.cdss.ca.gov/hearings-and-appeals/ihss-provider-denials\",\"uniqueKey\":\"https://www.cdss.ca.gov/Benefits-Services/Hearings-and-Appeals/IHSS-Provider-Denials\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:28.213Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/Benefits-Services/Hearings-and-Appeals/IHSS-Provider-Denials",
-	"url": "https://www.cdss.ca.gov/Benefits-Services/Hearings-and-Appeals/IHSS-Provider-Denials"
-}

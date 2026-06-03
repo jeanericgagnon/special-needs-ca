@@ -1,9 +1,0 @@
-{
-	"id": "RLb4UOGSnTA9WXJ",
-	"json": "{\"id\":\"RLb4UOGSnTA9WXJ\",\"url\":\"https://sitefarm.ucdavis.edu/events/sitefarm-co-working-session-156\",\"loadedUrl\":\"https://sitefarm.ucdavis.edu/events/sitefarm-co-working-session-156\",\"uniqueKey\":\"https://sitefarm.ucdavis.edu/events/sitefarm-co-working-session-156\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:50.090Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://sitefarm.ucdavis.edu/events/sitefarm-co-working-session-156",
-	"url": "https://sitefarm.ucdavis.edu/events/sitefarm-co-working-session-156"
-}

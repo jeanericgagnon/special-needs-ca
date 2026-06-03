@@ -1,9 +1,0 @@
-{
-	"id": "HHhkT5R1w3LzoEE",
-	"json": "{\"id\":\"HHhkT5R1w3LzoEE\",\"url\":\"https://rarediseases.org/news/?taxonomy[category]=patients-members\",\"loadedUrl\":\"https://rarediseases.org/news/?taxonomy[category]=patients-members\",\"uniqueKey\":\"https://rarediseases.org/news?taxonomy%5Bcategory%5D=patients-members\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:30.756Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/news?taxonomy%5Bcategory%5D=patients-members",
-	"url": "https://rarediseases.org/news/?taxonomy[category]=patients-members"
-}

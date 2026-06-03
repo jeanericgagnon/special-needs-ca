@@ -1,9 +1,0 @@
-{
-	"id": "Eo4F9v6tKpqQnIb",
-	"json": "{\"id\":\"Eo4F9v6tKpqQnIb\",\"url\":\"https://www.cde.ca.gov/ta/tg/sa/assessmentspotlight362.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=062c9a8e-f296-40c7-a921-cf451c5a7e66&ssb=89929294583&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fta%2Ftg%2Fsa%2Fassessmentspotlight362.asp&ssi=a6b0c857-ctxv-4793-bb3b-52db79444ba8&ssk=botmanager_support@radware.com&ssm=61695949250988573101568128182821&ssn=6871b49c2c5a2b71040e8be5a2bd0f91f16ae9815420-781f-4a3f-ba806e&sso=3cc5007e-e0f951e85aa6bf712038de61e9356885365ea217bf5839d5&ssp=38651595631780328854178031639194758&ssq=40548162668765308166926687602110920020310&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBlOTgxNTQyMC03ODFmLTRhM2YtYjA3ZS1lMGY5NTFlODVhYTYxLTE3ODAzMjY2ODc1NjgwLTAwMzZiN2M3YThmNjczZDQ1NmQxMCIsInV6bXgiOiI3ZjkwMDAxY2U4M2Q0Ni1mMDlkLTRhY2UtYTQ3Mi1iMzhhMmFmZmJmZjExLTE3ODAzMjY2ODc1NjgwLWQ3ZjE2NTBiZWE1MTIxM2MxMCIsInJkIjoiY2EuZ292In0=\",\"uniqueKey\":\"https://www.cde.ca.gov/ta/tg/sa/assessmentspotlight362.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:11:27.953Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ta/tg/sa/assessmentspotlight362.asp",
-	"url": "https://www.cde.ca.gov/ta/tg/sa/assessmentspotlight362.asp"
-}

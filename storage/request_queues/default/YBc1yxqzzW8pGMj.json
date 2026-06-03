@@ -1,9 +1,0 @@
-{
-	"id": "YBc1yxqzzW8pGMj",
-	"json": "{\"id\":\"YBc1yxqzzW8pGMj\",\"url\":\"https://www.ssa.gov/personal-record/update-citizenship-or-immigration-status\",\"loadedUrl\":\"https://www.ssa.gov/personal-record/update-citizenship-or-immigration-status\",\"uniqueKey\":\"https://www.ssa.gov/personal-record/update-citizenship-or-immigration-status\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:32.952Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ssa.gov/personal-record/update-citizenship-or-immigration-status",
-	"url": "https://www.ssa.gov/personal-record/update-citizenship-or-immigration-status"
-}

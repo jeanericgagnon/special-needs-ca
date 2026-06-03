@@ -1,9 +1,0 @@
-{
-	"id": "gPtLG5CImGipDIU",
-	"json": "{\"id\":\"gPtLG5CImGipDIU\",\"url\":\"https://rarediseases.org/mondo-disease/blue-cone-monochromacy/\",\"loadedUrl\":\"https://rarediseases.org/mondo-disease/blue-cone-monochromacy/\",\"uniqueKey\":\"https://rarediseases.org/mondo-disease/blue-cone-monochromacy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:11:01.465Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/mondo-disease/blue-cone-monochromacy",
-	"url": "https://rarediseases.org/mondo-disease/blue-cone-monochromacy/"
-}

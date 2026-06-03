@@ -1,9 +1,0 @@
-{
-	"id": "vzNiMobNUQZ6OdM",
-	"json": "{\"id\":\"vzNiMobNUQZ6OdM\",\"url\":\"https://hdapp.ucdavis.edu/risk-reduction-strategies\",\"loadedUrl\":\"https://hdapp.ucdavis.edu/risk-reduction-strategies\",\"uniqueKey\":\"https://hdapp.ucdavis.edu/risk-reduction-strategies\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:01.152Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hdapp.ucdavis.edu/risk-reduction-strategies",
-	"url": "https://hdapp.ucdavis.edu/risk-reduction-strategies"
-}

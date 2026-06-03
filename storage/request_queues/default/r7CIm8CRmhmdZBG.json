@@ -1,9 +1,0 @@
-{
-	"id": "r7CIm8CRmhmdZBG",
-	"json": "{\"id\":\"r7CIm8CRmhmdZBG\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DWICSN/_layouts/15/listform.aspx?ListId=%7BB865B7B3%2D366A%2D41D4%2D9930%2D5A836F2A546F%7D&PageType=0\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DWICSN/Pages/Program-Landing1.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DWICSN/_layouts/15/listform.aspx?ListId=%7BB865B7B3-366A-41D4-9930-5A836F2A546F%7D&PageType=0\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":1,\"errorMessages\":[\"Error: request timed out after 30 seconds.\\n    at Timeout._onTimeout (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@apify/timeout/cjs/index.cjs:64:68)\\n    at listOnTimeout (node:internal/timers:588:17)\\n    at process.processTimers (node:internal/timers:523:7)\"],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:08:33.832Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 1,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DWICSN/_layouts/15/listform.aspx?ListId=%7BB865B7B3-366A-41D4-9930-5A836F2A546F%7D&PageType=0",
-	"url": "https://www.cdph.ca.gov/Programs/CFH/DWICSN/_layouts/15/listform.aspx?ListId=%7BB865B7B3%2D366A%2D41D4%2D9930%2D5A836F2A546F%7D&PageType=0"
-}

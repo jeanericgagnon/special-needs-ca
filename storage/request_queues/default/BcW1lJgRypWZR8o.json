@@ -1,9 +1,0 @@
-{
-	"id": "BcW1lJgRypWZR8o",
-	"json": "{\"id\":\"BcW1lJgRypWZR8o\",\"url\":\"https://health.ucdavis.edu/legal/privacy-notice/\",\"loadedUrl\":\"https://health.ucdavis.edu/legal/privacy-notice/\",\"uniqueKey\":\"https://health.ucdavis.edu/legal/privacy-notice\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:48.627Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/legal/privacy-notice",
-	"url": "https://health.ucdavis.edu/legal/privacy-notice/"
-}

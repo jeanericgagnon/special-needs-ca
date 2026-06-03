@@ -1,9 +1,0 @@
-{
-	"id": "MJsXwrZfyE23Avt",
-	"json": "{\"id\":\"MJsXwrZfyE23Avt\",\"url\":\"https://rarediseases.org/organizations/raymond-a-wood-foundation/\",\"loadedUrl\":\"https://rarediseases.org/organizations/raymond-a-wood-foundation/\",\"uniqueKey\":\"https://rarediseases.org/organizations/raymond-a-wood-foundation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:19:37.147Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/organizations/raymond-a-wood-foundation",
-	"url": "https://rarediseases.org/organizations/raymond-a-wood-foundation/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "Pmk7Q5qKDUtkEfZ",
-	"json": "{\"id\":\"Pmk7Q5qKDUtkEfZ\",\"url\":\"https://give.ucdavis.edu/AFDS/77016\",\"loadedUrl\":\"https://give.ucdavis.edu/AFDS/77016\",\"uniqueKey\":\"https://give.ucdavis.edu/AFDS/77016\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:59.180Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/AFDS/77016",
-	"url": "https://give.ucdavis.edu/AFDS/77016"
-}

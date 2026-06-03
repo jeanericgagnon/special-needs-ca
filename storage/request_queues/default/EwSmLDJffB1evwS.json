@@ -1,9 +1,0 @@
-{
-	"id": "EwSmLDJffB1evwS",
-	"json": "{\"id\":\"EwSmLDJffB1evwS\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/43251/vinay-goswamy-rheumatology_allergy_and_clinical_immunology-roseville-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/43251/vinay-goswamy-rheumatology_allergy_and_clinical_immunology-roseville-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/43251/vinay-goswamy-rheumatology_allergy_and_clinical_immunology-roseville-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:07.196Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/43251/vinay-goswamy-rheumatology_allergy_and_clinical_immunology-roseville-sacramento",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/43251/vinay-goswamy-rheumatology_allergy_and_clinical_immunology-roseville-sacramento"
-}

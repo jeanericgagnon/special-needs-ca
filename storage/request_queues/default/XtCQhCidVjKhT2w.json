@@ -1,9 +1,0 @@
-{
-	"id": "XtCQhCidVjKhT2w",
-	"json": "{\"id\":\"XtCQhCidVjKhT2w\",\"url\":\"https://www.cdph.ca.gov/Programs/HRB/_layouts/15/listform.aspx?ListId=%7B29E0ED1A%2DF63D%2D4575%2DAE85%2D591B8F4A64AB%7D&PageType=0\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/HRB/Pages/HumanResourcesDivision.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/HRB/_layouts/15/listform.aspx?ListId=%7B29E0ED1A-F63D-4575-AE85-591B8F4A64AB%7D&PageType=0\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:40:06.510Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/HRB/_layouts/15/listform.aspx?ListId=%7B29E0ED1A-F63D-4575-AE85-591B8F4A64AB%7D&PageType=0",
-	"url": "https://www.cdph.ca.gov/Programs/HRB/_layouts/15/listform.aspx?ListId=%7B29E0ED1A%2DF63D%2D4575%2DAE85%2D591B8F4A64AB%7D&PageType=0"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "3idt4eOz3Sda3Q0",
-	"json": "{\"id\":\"3idt4eOz3Sda3Q0\",\"url\":\"https://www.ucdavis.edu/search/google\",\"loadedUrl\":\"https://www.ucdavis.edu/gcs/search\",\"uniqueKey\":\"https://www.ucdavis.edu/search/google\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:08.068Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ucdavis.edu/search/google",
-	"url": "https://www.ucdavis.edu/search/google"
-}

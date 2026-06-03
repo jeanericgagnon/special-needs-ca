@@ -1,9 +1,0 @@
-{
-	"id": "JRa7XXcc5zR38Cm",
-	"json": "{\"id\":\"JRa7XXcc5zR38Cm\",\"url\":\"https://www.cdph.ca.gov/Programs/OPP/Pages/State-of-Public-Health-Report.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/OPP/Pages/State-of-Public-Health-Report.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/OPP/Pages/State-of-Public-Health-Report.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:03:52.708Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/OPP/Pages/State-of-Public-Health-Report.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/OPP/Pages/State-of-Public-Health-Report.aspx"
-}

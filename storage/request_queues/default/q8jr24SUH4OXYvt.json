@@ -1,9 +1,0 @@
-{
-	"id": "q8jr24SUH4OXYvt",
-	"json": "{\"id\":\"q8jr24SUH4OXYvt\",\"url\":\"https://www.senate.ca.gov/senators/senate-leadership\",\"loadedUrl\":\"https://www.senate.ca.gov/senators/senate-leadership\",\"uniqueKey\":\"https://www.senate.ca.gov/senators/senate-leadership\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:54.641Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.senate.ca.gov/senators/senate-leadership",
-	"url": "https://www.senate.ca.gov/senators/senate-leadership"
-}

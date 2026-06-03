@@ -1,9 +1,0 @@
-{
-	"id": "9ofSmvWl027Fnse",
-	"json": "{\"id\":\"9ofSmvWl027Fnse\",\"url\":\"https://health.ucdavis.edu/3dprintviz/\",\"loadedUrl\":\"https://health.ucdavis.edu/3dprintviz/\",\"uniqueKey\":\"https://health.ucdavis.edu/3dprintviz\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:59.494Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/3dprintviz",
-	"url": "https://health.ucdavis.edu/3dprintviz/"
-}

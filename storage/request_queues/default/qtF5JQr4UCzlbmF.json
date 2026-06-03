@@ -1,9 +1,0 @@
-{
-	"id": "qtF5JQr4UCzlbmF",
-	"json": "{\"id\":\"qtF5JQr4UCzlbmF\",\"url\":\"https://health.ucdavis.edu/referrals/services/outpatient-referrals.html\",\"loadedUrl\":\"https://health.ucdavis.edu/referrals/services/outpatient-referrals.html\",\"uniqueKey\":\"https://health.ucdavis.edu/referrals/services/outpatient-referrals.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:47.775Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/referrals/services/outpatient-referrals.html",
-	"url": "https://health.ucdavis.edu/referrals/services/outpatient-referrals.html"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "xlm4mwCfjK25uYI",
-	"json": "{\"id\":\"xlm4mwCfjK25uYI\",\"url\":\"https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=48000&lawCode=EDC#:~:text=(4)%C2%A0Ensure%20that,on%20Teacher%20Credentialing.\",\"loadedUrl\":\"https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=48000&lawCode=EDC#:~:text=(4)%C2%A0Ensure%20that,on%20Teacher%20Credentialing.\",\"uniqueKey\":\"https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=EDC&sectionNum=48000\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:53.328Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=EDC&sectionNum=48000",
-	"url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=48000&lawCode=EDC#:~:text=(4)%C2%A0Ensure%20that,on%20Teacher%20Credentialing."
-}

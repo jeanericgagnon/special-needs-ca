@@ -1,9 +1,0 @@
-{
-	"id": "KvCJUaPnZxI0I7E",
-	"json": "{\"id\":\"KvCJUaPnZxI0I7E\",\"url\":\"https://health.ucdavis.edu/medical-center/patients/about-your-stay/special-services\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-center/patients/about-your-stay/special-services\",\"uniqueKey\":\"https://health.ucdavis.edu/medical-center/patients/about-your-stay/special-services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:56.079Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/medical-center/patients/about-your-stay/special-services",
-	"url": "https://health.ucdavis.edu/medical-center/patients/about-your-stay/special-services"
-}

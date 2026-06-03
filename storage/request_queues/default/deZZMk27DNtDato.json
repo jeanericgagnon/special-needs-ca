@@ -1,9 +1,0 @@
-{
-	"id": "deZZMk27DNtDato",
-	"json": "{\"id\":\"deZZMk27DNtDato\",\"url\":\"https://give.ucdavis.edu/VCEH/V407NFS\",\"loadedUrl\":\"https://give.ucdavis.edu/VCEH/V407NFS\",\"uniqueKey\":\"https://give.ucdavis.edu/VCEH/V407NFS\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:56.137Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/VCEH/V407NFS",
-	"url": "https://give.ucdavis.edu/VCEH/V407NFS"
-}

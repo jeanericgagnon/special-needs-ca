@@ -1,9 +1,0 @@
-{
-	"id": "0ZZSxi6PiZQpL4d",
-	"json": "{\"id\":\"0ZZSxi6PiZQpL4d\",\"url\":\"https://health.ucdavis.edu/mind-institute/clinic/clinc-faq\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/clinic/clinc-faq\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/clinic/clinc-faq\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:41.865Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mind-institute/clinic/clinc-faq",
-	"url": "https://health.ucdavis.edu/mind-institute/clinic/clinc-faq"
-}

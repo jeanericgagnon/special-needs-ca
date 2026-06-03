@@ -1,9 +1,0 @@
-{
-	"id": "3cKCY46VseiKr98",
-	"json": "{\"id\":\"3cKCY46VseiKr98\",\"url\":\"https://www.cdss.ca.gov/inforesources/Continuum-of-Care-Reform\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/continuum-of-care-reform\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/Continuum-of-Care-Reform\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:13.054Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/inforesources/Continuum-of-Care-Reform",
-	"url": "https://www.cdss.ca.gov/inforesources/Continuum-of-Care-Reform"
-}

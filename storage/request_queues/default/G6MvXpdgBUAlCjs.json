@@ -1,9 +1,0 @@
-{
-	"id": "G6MvXpdgBUAlCjs",
-	"json": "{\"id\":\"G6MvXpdgBUAlCjs\",\"url\":\"https://mindbrain.ucdavis.edu/affiliated-departments-and-centers\",\"loadedUrl\":\"https://mindbrain.ucdavis.edu/affiliated-departments-and-centers\",\"uniqueKey\":\"https://mindbrain.ucdavis.edu/affiliated-departments-and-centers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:02.660Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://mindbrain.ucdavis.edu/affiliated-departments-and-centers",
-	"url": "https://mindbrain.ucdavis.edu/affiliated-departments-and-centers"
-}

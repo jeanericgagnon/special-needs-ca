@@ -1,9 +1,0 @@
-{
-	"id": "N759ASrqss09kkg",
-	"json": "{\"id\":\"N759ASrqss09kkg\",\"url\":\"https://health.ucdavis.edu/psychiatry/services-specialties/early-psychosis-programs/\",\"loadedUrl\":\"https://health.ucdavis.edu/psychiatry/services-specialties/early-psychosis-programs/\",\"uniqueKey\":\"https://health.ucdavis.edu/psychiatry/services-specialties/early-psychosis-programs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:48.319Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/psychiatry/services-specialties/early-psychosis-programs",
-	"url": "https://health.ucdavis.edu/psychiatry/services-specialties/early-psychosis-programs/"
-}

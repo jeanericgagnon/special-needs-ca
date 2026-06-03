@@ -1,9 +1,0 @@
-{
-	"id": "0irVd1i3vvtfRwr",
-	"json": "{\"id\":\"0irVd1i3vvtfRwr\",\"url\":\"https://www.cde.ca.gov/ds/ad/fos.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ds/ad/fos.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ds/ad/fos.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:23:41.458Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ds/ad/fos.asp",
-	"url": "https://www.cde.ca.gov/ds/ad/fos.asp"
-}

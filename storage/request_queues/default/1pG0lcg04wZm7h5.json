@@ -1,9 +1,0 @@
-{
-	"id": "1pG0lcg04wZm7h5",
-	"json": "{\"id\":\"1pG0lcg04wZm7h5\",\"url\":\"https://iet.ucdavis.edu/it-governance-uc-davis\",\"loadedUrl\":\"https://iet.ucdavis.edu/it-governance-uc-davis\",\"uniqueKey\":\"https://iet.ucdavis.edu/it-governance-uc-davis\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:36.438Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://iet.ucdavis.edu/it-governance-uc-davis",
-	"url": "https://iet.ucdavis.edu/it-governance-uc-davis"
-}

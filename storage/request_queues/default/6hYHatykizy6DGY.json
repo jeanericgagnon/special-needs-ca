@@ -1,9 +1,0 @@
-{
-	"id": "6hYHatykizy6DGY",
-	"json": "{\"id\":\"6hYHatykizy6DGY\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/42946/fatma-sen-diagnostic_radiology-neuroradiology-nuclear_cardiology-nuclear_medicine-sacramento?FreeText%3aLast+name=Sen&Index=2\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/42946/fatma-sen-diagnostic_radiology-neuroradiology-nuclear_cardiology-nuclear_medicine-sacramento?FreeText%3aLast+name=Sen&Index=2\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/42946/fatma-sen-diagnostic_radiology-neuroradiology-nuclear_cardiology-nuclear_medicine-sacramento?FreeText%3ALast+name=Sen&Index=2\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:12.604Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/42946/fatma-sen-diagnostic_radiology-neuroradiology-nuclear_cardiology-nuclear_medicine-sacramento?FreeText%3ALast+name=Sen&Index=2",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/42946/fatma-sen-diagnostic_radiology-neuroradiology-nuclear_cardiology-nuclear_medicine-sacramento?FreeText%3aLast+name=Sen&Index=2"
-}

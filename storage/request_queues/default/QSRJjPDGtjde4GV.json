@@ -1,9 +1,0 @@
-{
-	"id": "QSRJjPDGtjde4GV",
-	"json": "{\"id\":\"QSRJjPDGtjde4GV\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/32215/alicia-agnoli-addiction-sacramento?FreeText%3aLast+name=Agnoli\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/32215/alicia-agnoli-addiction-sacramento?FreeText%3aLast+name=Agnoli\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/32215/alicia-agnoli-addiction-sacramento?FreeText%3ALast+name=Agnoli\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:06.856Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/32215/alicia-agnoli-addiction-sacramento?FreeText%3ALast+name=Agnoli",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/32215/alicia-agnoli-addiction-sacramento?FreeText%3aLast+name=Agnoli"
-}

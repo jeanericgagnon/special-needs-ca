@@ -1,9 +1,0 @@
-{
-	"id": "m8g9gQ0eGt5U50s",
-	"json": "{\"id\":\"m8g9gQ0eGt5U50s\",\"url\":\"https://health.ucdavis.edu/stemcellresearch/disease_teams/traumatic_brain_injury.html\",\"loadedUrl\":\"https://health.ucdavis.edu/stemcellresearch/disease_teams/traumatic_brain_injury.html\",\"uniqueKey\":\"https://health.ucdavis.edu/stemcellresearch/disease_teams/traumatic_brain_injury.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:30.955Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/stemcellresearch/disease_teams/traumatic_brain_injury.html",
-	"url": "https://health.ucdavis.edu/stemcellresearch/disease_teams/traumatic_brain_injury.html"
-}

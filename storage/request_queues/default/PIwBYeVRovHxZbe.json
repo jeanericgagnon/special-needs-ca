@@ -1,9 +1,0 @@
-{
-	"id": "PIwBYeVRovHxZbe",
-	"json": "{\"id\":\"PIwBYeVRovHxZbe\",\"url\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/vascular-endovascular\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/vascular-endovascular\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/vascular-endovascular\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:50.444Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/locations/specialty-care/vascular-endovascular",
-	"url": "https://health.ucdavis.edu/patients-visitors/locations/specialty-care/vascular-endovascular"
-}

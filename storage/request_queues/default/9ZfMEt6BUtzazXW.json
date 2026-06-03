@@ -1,9 +1,0 @@
-{
-	"id": "9ZfMEt6BUtzazXW",
-	"json": "{\"id\":\"9ZfMEt6BUtzazXW\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/63497/stephano-chang-deep_brain_stimulation-epilepsy-peripheral_nerve-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/63497/stephano-chang-deep_brain_stimulation-epilepsy-peripheral_nerve-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/63497/stephano-chang-deep_brain_stimulation-epilepsy-peripheral_nerve-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:12.292Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/63497/stephano-chang-deep_brain_stimulation-epilepsy-peripheral_nerve-sacramento",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/63497/stephano-chang-deep_brain_stimulation-epilepsy-peripheral_nerve-sacramento"
-}

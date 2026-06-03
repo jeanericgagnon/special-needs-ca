@@ -1,9 +1,0 @@
-{
-	"id": "uHZXCbAY0Gf2Ffk",
-	"json": "{\"id\":\"uHZXCbAY0Gf2Ffk\",\"url\":\"https://www.ssa.gov/apply/appeal-decision-we-made\",\"loadedUrl\":\"https://www.ssa.gov/apply/appeal-decision-we-made\",\"uniqueKey\":\"https://www.ssa.gov/apply/appeal-decision-we-made\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:32.678Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ssa.gov/apply/appeal-decision-we-made",
-	"url": "https://www.ssa.gov/apply/appeal-decision-we-made"
-}

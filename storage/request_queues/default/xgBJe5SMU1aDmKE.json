@@ -1,9 +1,0 @@
-{
-	"id": "xgBJe5SMU1aDmKE",
-	"json": "{\"id\":\"xgBJe5SMU1aDmKE\",\"url\":\"https://give.ucdavis.edu/MINT/76758\",\"loadedUrl\":\"https://give.ucdavis.edu/MINT/76758\",\"uniqueKey\":\"https://give.ucdavis.edu/MINT/76758\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:03.046Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/MINT/76758",
-	"url": "https://give.ucdavis.edu/MINT/76758"
-}

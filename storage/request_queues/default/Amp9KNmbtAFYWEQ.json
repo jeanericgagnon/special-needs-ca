@@ -1,9 +1,0 @@
-{
-	"id": "Amp9KNmbtAFYWEQ",
-	"json": "{\"id\":\"Amp9KNmbtAFYWEQ\",\"url\":\"https://www.ucdavis.edu/academics/colleges-and-schools/academic-departments\",\"loadedUrl\":\"https://www.ucdavis.edu/academics/colleges-and-schools/academic-departments\",\"uniqueKey\":\"https://www.ucdavis.edu/academics/colleges-and-schools/academic-departments\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:45.542Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ucdavis.edu/academics/colleges-and-schools/academic-departments",
-	"url": "https://www.ucdavis.edu/academics/colleges-and-schools/academic-departments"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "hzmwOIpVZlBvyy9",
-	"json": "{\"id\":\"hzmwOIpVZlBvyy9\",\"url\":\"https://cdss.ca.gov/inforesources/Forms-Brochures/Translated-Forms-and-Publications\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/translated-forms-and-publications\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Forms-Brochures/Translated-Forms-and-Publications\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:58:00.601Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/Forms-Brochures/Translated-Forms-and-Publications",
-	"url": "https://cdss.ca.gov/inforesources/Forms-Brochures/Translated-Forms-and-Publications"
-}

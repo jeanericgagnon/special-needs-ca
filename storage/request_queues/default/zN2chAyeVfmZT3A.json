@@ -1,9 +1,0 @@
-{
-	"id": "zN2chAyeVfmZT3A",
-	"json": "{\"id\":\"zN2chAyeVfmZT3A\",\"url\":\"https://www.chhs.ca.gov/care-act/is-care-right/\",\"loadedUrl\":\"https://www.chhs.ca.gov/care-act/is-care-right/\",\"uniqueKey\":\"https://www.chhs.ca.gov/care-act/is-care-right\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:55.370Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chhs.ca.gov/care-act/is-care-right",
-	"url": "https://www.chhs.ca.gov/care-act/is-care-right/"
-}

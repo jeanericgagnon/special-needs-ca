@@ -1,9 +1,0 @@
-{
-	"id": "Ve30ZTBfPv6lqH0",
-	"json": "{\"id\":\"Ve30ZTBfPv6lqH0\",\"url\":\"https://iet.ucdavis.edu/technology-impact-report-2024-2025\",\"loadedUrl\":\"https://iet.ucdavis.edu/technology-impact-report-2024-2025\",\"uniqueKey\":\"https://iet.ucdavis.edu/technology-impact-report-2024-2025\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:37.206Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://iet.ucdavis.edu/technology-impact-report-2024-2025",
-	"url": "https://iet.ucdavis.edu/technology-impact-report-2024-2025"
-}

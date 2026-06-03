@@ -1,9 +1,0 @@
-{
-	"id": "S2ZbSrrAxw0bbsS",
-	"json": "{\"id\":\"S2ZbSrrAxw0bbsS\",\"url\":\"https://surveys3.cde.ca.gov/go/cte-mcs-stdsvalid-manufacture.asp\",\"loadedUrl\":\"https://surveys3.cde.ca.gov/s.asp?k=177136846308\",\"uniqueKey\":\"https://surveys3.cde.ca.gov/go/cte-mcs-stdsvalid-manufacture.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:40:09.031Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://surveys3.cde.ca.gov/go/cte-mcs-stdsvalid-manufacture.asp",
-	"url": "https://surveys3.cde.ca.gov/go/cte-mcs-stdsvalid-manufacture.asp"
-}

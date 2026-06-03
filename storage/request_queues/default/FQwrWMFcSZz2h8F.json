@@ -1,9 +1,0 @@
-{
-	"id": "FQwrWMFcSZz2h8F",
-	"json": "{\"id\":\"FQwrWMFcSZz2h8F\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/Pages/Local-Health-Department-Corner.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/Pages/Local-Health-Department-Corner.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/Pages/Local-Health-Department-Corner.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:02:53.081Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/Pages/Local-Health-Department-Corner.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/Pages/Local-Health-Department-Corner.aspx"
-}

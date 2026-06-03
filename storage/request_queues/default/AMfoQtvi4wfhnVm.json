@@ -1,9 +1,0 @@
-{
-	"id": "AMfoQtvi4wfhnVm",
-	"json": "{\"id\":\"AMfoQtvi4wfhnVm\",\"url\":\"https://www.cdss.ca.gov/inforesources/community-care/continuing-care\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/community-care/continuing-care\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/community-care/continuing-care\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:36.494Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/inforesources/community-care/continuing-care",
-	"url": "https://www.cdss.ca.gov/inforesources/community-care/continuing-care"
-}

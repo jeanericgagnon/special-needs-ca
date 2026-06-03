@@ -1,9 +1,0 @@
-{
-	"id": "Qgkq0lcPayAVfDz",
-	"json": "{\"id\":\"Qgkq0lcPayAVfDz\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/21886/daphne-say-inflammatory_bowel_disease-pediatric_gastroenterology-pediatric_hepatology-pediatric_nutrition-sacramento?FreeText:Last+name=say\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/21886/daphne-say-inflammatory_bowel_disease-pediatric_gastroenterology-pediatric_hepatology-pediatric_nutrition-sacramento?FreeText:Last+name=say\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/21886/daphne-say-inflammatory_bowel_disease-pediatric_gastroenterology-pediatric_hepatology-pediatric_nutrition-sacramento?FreeText%3ALast+name=say\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:17.021Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/21886/daphne-say-inflammatory_bowel_disease-pediatric_gastroenterology-pediatric_hepatology-pediatric_nutrition-sacramento?FreeText%3ALast+name=say",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/21886/daphne-say-inflammatory_bowel_disease-pediatric_gastroenterology-pediatric_hepatology-pediatric_nutrition-sacramento?FreeText:Last+name=say"
-}

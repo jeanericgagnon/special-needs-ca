@@ -1,9 +1,0 @@
-{
-	"id": "fO7LaikFIBgj1iQ",
-	"json": "{\"id\":\"fO7LaikFIBgj1iQ\",\"url\":\"https://www.cde.ca.gov/sp/se/ac/uebimplementationplan.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/se/ac/uebimplementationplan.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/se/ac/uebimplementationplan.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:25:42.551Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/sp/se/ac/uebimplementationplan.asp",
-	"url": "https://www.cde.ca.gov/sp/se/ac/uebimplementationplan.asp"
-}

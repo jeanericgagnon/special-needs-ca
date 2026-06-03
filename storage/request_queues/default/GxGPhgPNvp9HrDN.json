@@ -1,9 +1,0 @@
-{
-	"id": "GxGPhgPNvp9HrDN",
-	"json": "{\"id\":\"GxGPhgPNvp9HrDN\",\"url\":\"https://scdd.ca.gov/accessibility/\",\"loadedUrl\":\"https://scdd.ca.gov/accessibility/\",\"uniqueKey\":\"https://scdd.ca.gov/accessibility\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:42.843Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/accessibility",
-	"url": "https://scdd.ca.gov/accessibility/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "sAc0Nvh4WfLyh8o",
-	"json": "{\"id\":\"sAc0Nvh4WfLyh8o\",\"url\":\"https://cdss.ca.gov/inforesources/Automated-Assistance-Claims\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/automated-assistance-claims\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Automated-Assistance-Claims\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:17.720Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/Automated-Assistance-Claims",
-	"url": "https://cdss.ca.gov/inforesources/Automated-Assistance-Claims"
-}

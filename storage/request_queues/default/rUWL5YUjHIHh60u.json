@@ -1,9 +1,0 @@
-{
-	"id": "rUWL5YUjHIHh60u",
-	"json": "{\"id\":\"rUWL5YUjHIHh60u\",\"url\":\"https://www.dgs.ca.gov/OSP\",\"loadedUrl\":\"https://www.dgs.ca.gov/OSP\",\"uniqueKey\":\"https://www.dgs.ca.gov/OSP\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:05.959Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dgs.ca.gov/OSP",
-	"url": "https://www.dgs.ca.gov/OSP"
-}

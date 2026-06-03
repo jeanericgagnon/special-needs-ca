@@ -1,9 +1,0 @@
-{
-	"id": "QaOuZo5u3PpKtIW",
-	"json": "{\"id\":\"QaOuZo5u3PpKtIW\",\"url\":\"https://www.globaldownsyndrome.org/es/nuestra-historia/about-gdsf/\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/es/nuestra-historia/about-gdsf/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/es/nuestra-historia/about-gdsf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:28:01.505Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.globaldownsyndrome.org/es/nuestra-historia/about-gdsf",
-	"url": "https://www.globaldownsyndrome.org/es/nuestra-historia/about-gdsf/"
-}

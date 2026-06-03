@@ -1,9 +1,0 @@
-{
-	"id": "cHlv8FDJ8kNTINe",
-	"json": "{\"id\":\"cHlv8FDJ8kNTINe\",\"url\":\"https://health.ucdavis.edu/leadership/bios/condrin\",\"loadedUrl\":\"https://health.ucdavis.edu/leadership/bios/condrin\",\"uniqueKey\":\"https://health.ucdavis.edu/leadership/bios/condrin\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:06.622Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/leadership/bios/condrin",
-	"url": "https://health.ucdavis.edu/leadership/bios/condrin"
-}

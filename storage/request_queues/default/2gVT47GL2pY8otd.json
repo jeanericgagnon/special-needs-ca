@@ -1,9 +1,0 @@
-{
-	"id": "2gVT47GL2pY8otd",
-	"json": "{\"id\":\"2gVT47GL2pY8otd\",\"url\":\"https://www.cdfa.ca.gov/SeniorFarmersMrktNutritionPrgm/\",\"loadedUrl\":\"https://www.cdfa.ca.gov/SeniorFarmersMrktNutritionPrgm/\",\"uniqueKey\":\"https://www.cdfa.ca.gov/SeniorFarmersMrktNutritionPrgm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T18:07:00.508Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdfa.ca.gov/SeniorFarmersMrktNutritionPrgm",
-	"url": "https://www.cdfa.ca.gov/SeniorFarmersMrktNutritionPrgm/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "2vtqb5c2VqtF5NJ",
-	"json": "{\"id\":\"2vtqb5c2VqtF5NJ\",\"url\":\"https://www.dds.ca.gov/general/language/korean/\",\"loadedUrl\":\"https://www.dds.ca.gov/general/language/korean/\",\"uniqueKey\":\"https://www.dds.ca.gov/general/language/korean\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:56.574Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/general/language/korean",
-	"url": "https://www.dds.ca.gov/general/language/korean/"
-}

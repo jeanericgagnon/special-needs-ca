@@ -1,9 +1,0 @@
-{
-	"id": "B5uEDEIG34siKMy",
-	"json": "{\"id\":\"B5uEDEIG34siKMy\",\"url\":\"https://www.cde.ca.gov/be/cc/cd/iqcagendameets2017.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=caf84fbc-2cf5-4079-ad61-a8f0162b6c0d&ssb=16263257987&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fbe%2Fcc%2Fcd%2Fiqcagendameets2017.asp&ssi=67e02907-ctxv-4c96-b94e-5e148662acbb&ssk=botmanager_support@radware.com&ssm=45346174178397007106493313554522&ssn=33daa3370b20fb85f6f1a6cff03f962f85ee93642c26-822f-4c42-82fa26&sso=679d24d6-afa8f829aca6247c7b80e7f80e5306eb2942ca6033716124&ssp=80693966421780377481178039113803649&ssq=59454735527287068477155272485751103382933&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsIl9fdXptZiI6IjdmOTAwMDkzNjQyYzI2LTgyMmYtNGM0Mi04NGQ2LWFmYThmODI5YWNhNjEtMTc4MDM1NTI3MjE5OTAtMDAzNTAyZWFiNzNlOWQyZTA5ODEwIiwidXpteCI6IjdmOTAwMDExZTgxNDYzLWFkYTAtNDAyMS04OTBhLTIwOGJkYTU4Yjc0MTEtMTc4MDM1NTI3MjE5OTAtZDlmYzhkNzUzMmJlZDM3YTEwIn0=\",\"uniqueKey\":\"https://www.cde.ca.gov/be/cc/cd/iqcagendameets2017.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T23:07:52.536Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/be/cc/cd/iqcagendameets2017.asp",
-	"url": "https://www.cde.ca.gov/be/cc/cd/iqcagendameets2017.asp"
-}

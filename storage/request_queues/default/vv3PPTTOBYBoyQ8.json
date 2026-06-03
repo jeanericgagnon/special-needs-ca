@@ -1,9 +1,0 @@
-{
-	"id": "vv3PPTTOBYBoyQ8",
-	"json": "{\"id\":\"vv3PPTTOBYBoyQ8\",\"url\":\"https://health.ucdavis.edu/conditions/heart-vascular/aortic-aneurysm\",\"loadedUrl\":\"https://health.ucdavis.edu/conditions/heart-vascular/aortic-aneurysm\",\"uniqueKey\":\"https://health.ucdavis.edu/conditions/heart-vascular/aortic-aneurysm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:41.482Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/conditions/heart-vascular/aortic-aneurysm",
-	"url": "https://health.ucdavis.edu/conditions/heart-vascular/aortic-aneurysm"
-}

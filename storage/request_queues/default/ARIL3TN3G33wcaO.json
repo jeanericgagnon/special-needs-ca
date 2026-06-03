@@ -1,9 +1,0 @@
-{
-	"id": "ARIL3TN3G33wcaO",
-	"json": "{\"id\":\"ARIL3TN3G33wcaO\",\"url\":\"http://archive.cdph.ca.gov/programs/Pages/CHCQPerformanceMetrics.aspx\",\"loadedUrl\":\"https://archive.cdph.ca.gov/\",\"uniqueKey\":\"http://archive.cdph.ca.gov/programs/Pages/CHCQPerformanceMetrics.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T18:55:43.310Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://archive.cdph.ca.gov/programs/Pages/CHCQPerformanceMetrics.aspx",
-	"url": "http://archive.cdph.ca.gov/programs/Pages/CHCQPerformanceMetrics.aspx"
-}

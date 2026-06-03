@@ -1,9 +1,0 @@
-{
-	"id": "5omER09ZpYI4u7J",
-	"json": "{\"id\":\"5omER09ZpYI4u7J\",\"url\":\"http://police.ucdavis.edu/divisions_services/operations/sacramento_campus.html\",\"loadedUrl\":\"https://police.ucdavis.edu/uc-davis-difference/our-team/sacramento\",\"uniqueKey\":\"http://police.ucdavis.edu/divisions_services/operations/sacramento_campus.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:33.989Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://police.ucdavis.edu/divisions_services/operations/sacramento_campus.html",
-	"url": "http://police.ucdavis.edu/divisions_services/operations/sacramento_campus.html"
-}

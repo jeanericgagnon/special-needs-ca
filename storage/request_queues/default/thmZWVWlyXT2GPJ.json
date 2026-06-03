@@ -1,9 +1,0 @@
-{
-	"id": "thmZWVWlyXT2GPJ",
-	"json": "{\"id\":\"thmZWVWlyXT2GPJ\",\"url\":\"https://give.ucdavis.edu/AETX/122915\",\"loadedUrl\":\"https://give.ucdavis.edu/AETX/122915\",\"uniqueKey\":\"https://give.ucdavis.edu/AETX/122915\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:00.629Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/AETX/122915",
-	"url": "https://give.ucdavis.edu/AETX/122915"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "Is7gpH8liAVvGXe",
-	"json": "{\"id\":\"Is7gpH8liAVvGXe\",\"url\":\"https://give.ucdavis.edu/VOHI/V473OHL\",\"loadedUrl\":\"https://give.ucdavis.edu/VOHI/V473OHL\",\"uniqueKey\":\"https://give.ucdavis.edu/VOHI/V473OHL\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:03.796Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/VOHI/V473OHL",
-	"url": "https://give.ucdavis.edu/VOHI/V473OHL"
-}

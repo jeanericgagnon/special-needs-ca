@@ -1,9 +1,0 @@
-{
-	"id": "lfjPosI8twhpPY9",
-	"json": "{\"id\":\"lfjPosI8twhpPY9\",\"url\":\"https://cancerreporting.ccr.ca.gov/\",\"loadedUrl\":\"https://cancerreporting.ccr.ca.gov/\",\"uniqueKey\":\"https://cancerreporting.ccr.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T19:34:05.849Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cancerreporting.ccr.ca.gov",
-	"url": "https://cancerreporting.ccr.ca.gov/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "XM3aJWqlt0uWVaB",
-	"json": "{\"id\":\"XM3aJWqlt0uWVaB\",\"url\":\"https://www.cde.ca.gov/ds/sp/cl/charterschools.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=d936454c-38a3-4820-af92-f39aa0ccee74&ssb=06733258488&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fds%2Fsp%2Fcl%2Fcharterschools.asp&ssi=ae894e0f-ctxv-431c-94fd-1322a8fbf2a1&ssk=botmanager_support@radware.com&ssm=35557730075892553169703746539892&ssn=276e060684d6674e3737ee9754fc6632971147c06b10-b224-4a4a-a3f991&sso=b431dcc9-d359cfdcc5ca2a67c92882a6b0aa85261e5f8e3fea0d65a6&ssp=47308244011780383785178035736331130&ssq=76538312742362440863426640249722972317728&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsIl9fdXptZiI6IjdmOTAwMDQ3YzA2YjEwLWIyMjQtNGE0YS1hY2M5LWQzNTljZmRjYzVjYTEtMTc4MDMyNjY0MDUzNDc4MjkzNS0wMDNjYWM3NTdlOTg1ZDY5Mzk3MTYiLCJ1em14IjoiN2Y5MDAwMGVmZWRhZTAtNzEwMi00ZDQzLWJmZTAtNjNkMzBiZDVhM2E2MS0xNzgwMzI2NjQwNTM0NzgyOTM1LTY1MTEzYjI2OTExYTVjMGUxNiJ9\",\"uniqueKey\":\"https://www.cde.ca.gov/ds/sp/cl/charterschools.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:23:43.586Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ds/sp/cl/charterschools.asp",
-	"url": "https://www.cde.ca.gov/ds/sp/cl/charterschools.asp"
-}

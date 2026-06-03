@@ -1,9 +1,0 @@
-{
-	"id": "rVxb5DOEAK24SIo",
-	"json": "{\"id\":\"rVxb5DOEAK24SIo\",\"url\":\"https://www.cdss.ca.gov/trafficking-victims\",\"loadedUrl\":\"https://www.cdss.ca.gov/trafficking-victims\",\"uniqueKey\":\"https://www.cdss.ca.gov/trafficking-victims\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:50.491Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/trafficking-victims",
-	"url": "https://www.cdss.ca.gov/trafficking-victims"
-}

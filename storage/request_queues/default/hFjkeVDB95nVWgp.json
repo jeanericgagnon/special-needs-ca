@@ -1,9 +1,0 @@
-{
-	"id": "hFjkeVDB95nVWgp",
-	"json": "{\"id\":\"hFjkeVDB95nVWgp\",\"url\":\"https://caes.ucdavis.edu/news/events/aggiehour\",\"loadedUrl\":\"https://caes.ucdavis.edu/news/events/aggiehour\",\"uniqueKey\":\"https://caes.ucdavis.edu/news/events/aggiehour\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:55:35.599Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://caes.ucdavis.edu/news/events/aggiehour",
-	"url": "https://caes.ucdavis.edu/news/events/aggiehour"
-}

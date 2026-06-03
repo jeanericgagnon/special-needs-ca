@@ -1,9 +1,0 @@
-{
-	"id": "Np5Hm8imPTvKryt",
-	"json": "{\"id\":\"Np5Hm8imPTvKryt\",\"url\":\"https://giving.ucdavis.edu/foundation/trustees\",\"loadedUrl\":\"https://giving.ucdavis.edu/foundation/trustees\",\"uniqueKey\":\"https://giving.ucdavis.edu/foundation/trustees\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:06.829Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://giving.ucdavis.edu/foundation/trustees",
-	"url": "https://giving.ucdavis.edu/foundation/trustees"
-}

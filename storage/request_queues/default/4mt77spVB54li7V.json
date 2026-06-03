@@ -1,9 +1,0 @@
-{
-	"id": "4mt77spVB54li7V",
-	"json": "{\"id\":\"4mt77spVB54li7V\",\"url\":\"https://cdss.ca.gov/inforesources/CDSS-Programs/CalWORKs/Cal-Learn\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/calworks/cal-learn\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/CDSS-Programs/CalWORKs/Cal-Learn\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:58:40.682Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/CDSS-Programs/CalWORKs/Cal-Learn",
-	"url": "https://cdss.ca.gov/inforesources/CDSS-Programs/CalWORKs/Cal-Learn"
-}

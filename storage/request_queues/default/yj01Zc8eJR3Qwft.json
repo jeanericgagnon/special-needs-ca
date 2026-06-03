@@ -1,9 +1,0 @@
-{
-	"id": "yj01Zc8eJR3Qwft",
-	"json": "{\"id\":\"yj01Zc8eJR3Qwft\",\"url\":\"https://health.ucdavis.edu/patients-visitors/\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:17.024Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors",
-	"url": "https://health.ucdavis.edu/patients-visitors/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "hDfYPy5qNbRa8eg",
-	"json": "{\"id\":\"hDfYPy5qNbRa8eg\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/1248/jennifer-draper---internal-medicine-sacramento/\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/1248/jennifer-draper---internal-medicine-sacramento/\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/1248/jennifer-draper---internal-medicine-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:11.555Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/1248/jennifer-draper---internal-medicine-sacramento",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/1248/jennifer-draper---internal-medicine-sacramento/"
-}

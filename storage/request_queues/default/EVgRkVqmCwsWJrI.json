@@ -1,9 +1,0 @@
-{
-	"id": "EVgRkVqmCwsWJrI",
-	"json": "{\"id\":\"EVgRkVqmCwsWJrI\",\"url\":\"https://health.ucdavis.edu/neurology/giving/\",\"loadedUrl\":\"https://health.ucdavis.edu/neurology/giving/\",\"uniqueKey\":\"https://health.ucdavis.edu/neurology/giving\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:52.294Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/neurology/giving",
-	"url": "https://health.ucdavis.edu/neurology/giving/"
-}

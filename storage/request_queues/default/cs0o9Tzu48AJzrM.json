@@ -1,9 +1,0 @@
-{
-	"id": "cs0o9Tzu48AJzrM",
-	"json": "{\"id\":\"cs0o9Tzu48AJzrM\",\"url\":\"https://health.ucdavis.edu/medical-center/visiting/patient-visitor-pledge/\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-center/visiting/patient-visitor-pledge/\",\"uniqueKey\":\"https://health.ucdavis.edu/medical-center/visiting/patient-visitor-pledge\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:40.996Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/medical-center/visiting/patient-visitor-pledge",
-	"url": "https://health.ucdavis.edu/medical-center/visiting/patient-visitor-pledge/"
-}

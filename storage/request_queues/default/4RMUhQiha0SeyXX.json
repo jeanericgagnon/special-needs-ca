@@ -1,9 +1,0 @@
-{
-	"id": "4RMUhQiha0SeyXX",
-	"json": "{\"id\":\"4RMUhQiha0SeyXX\",\"url\":\"https://cdss.ca.gov/inforesources/information-resources/program-and-legislative-reports/child-care-and-development-reports\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/information-resources/program-and-legislative-reports/child-care-and-development-reports\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/information-resources/program-and-legislative-reports/child-care-and-development-reports\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:48.252Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/information-resources/program-and-legislative-reports/child-care-and-development-reports",
-	"url": "https://cdss.ca.gov/inforesources/information-resources/program-and-legislative-reports/child-care-and-development-reports"
-}

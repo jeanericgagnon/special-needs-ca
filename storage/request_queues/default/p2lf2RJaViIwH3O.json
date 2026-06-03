@@ -1,9 +1,0 @@
-{
-	"id": "p2lf2RJaViIwH3O",
-	"json": "{\"id\":\"p2lf2RJaViIwH3O\",\"url\":\"https://pod.ucdavis.edu/news-events\",\"loadedUrl\":\"https://pod.ucdavis.edu/news-events\",\"uniqueKey\":\"https://pod.ucdavis.edu/news-events\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:57.657Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://pod.ucdavis.edu/news-events",
-	"url": "https://pod.ucdavis.edu/news-events"
-}

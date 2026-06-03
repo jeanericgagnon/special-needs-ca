@@ -1,9 +1,0 @@
-{
-	"id": "TYghaCgQEZKWwR9",
-	"json": "{\"id\":\"TYghaCgQEZKWwR9\",\"url\":\"https://rarediseases.org/advancing-research/iamrare-patient-registry-platform/\",\"loadedUrl\":\"https://rarediseases.org/advancing-research/patient-registry-program/\",\"uniqueKey\":\"https://rarediseases.org/advancing-research/iamrare-patient-registry-platform\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:56:29.867Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/advancing-research/iamrare-patient-registry-platform",
-	"url": "https://rarediseases.org/advancing-research/iamrare-patient-registry-platform/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "a3062c1EpTYKcB3",
-	"json": "{\"id\":\"a3062c1EpTYKcB3\",\"url\":\"https://www.ctc.ca.gov/credentials/rules-of-conduct.html\",\"loadedUrl\":\"https://www.ctc.ca.gov/credentials/rules-of-conduct.html\",\"uniqueKey\":\"https://www.ctc.ca.gov/credentials/rules-of-conduct.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:22:33.332Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ctc.ca.gov/credentials/rules-of-conduct.html",
-	"url": "https://www.ctc.ca.gov/credentials/rules-of-conduct.html"
-}

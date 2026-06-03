@@ -1,9 +1,0 @@
-{
-	"id": "tOGi5qPOBXmnDPW",
-	"json": "{\"id\":\"tOGi5qPOBXmnDPW\",\"url\":\"https://rarediseases.org/rare-diseases/landau-kleffner-syndrome/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/landau-kleffner-syndrome/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/landau-kleffner-syndrome\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:12:12.170Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/rare-diseases/landau-kleffner-syndrome",
-	"url": "https://rarediseases.org/rare-diseases/landau-kleffner-syndrome/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "cq1gERYAWz3sYU7",
-	"json": "{\"id\":\"cq1gERYAWz3sYU7\",\"url\":\"https://financeandbusiness.ucdavis.edu/tuition/non-payment\",\"loadedUrl\":\"https://registrar.ucdavis.edu/tuition/non-payment\",\"uniqueKey\":\"https://financeandbusiness.ucdavis.edu/tuition/non-payment\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:50.680Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://financeandbusiness.ucdavis.edu/tuition/non-payment",
-	"url": "https://financeandbusiness.ucdavis.edu/tuition/non-payment"
-}

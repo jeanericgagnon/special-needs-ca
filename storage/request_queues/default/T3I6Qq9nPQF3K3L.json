@@ -1,9 +1,0 @@
-{
-	"id": "T3I6Qq9nPQF3K3L",
-	"json": "{\"id\":\"T3I6Qq9nPQF3K3L\",\"url\":\"https://www.cdph.ca.gov/Programs\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:40:04.830Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs",
-	"url": "https://www.cdph.ca.gov/Programs"
-}

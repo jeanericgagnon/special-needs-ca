@@ -1,9 +1,0 @@
-{
-	"id": "vCLUT0CyBuMnbWN",
-	"json": "{\"id\":\"vCLUT0CyBuMnbWN\",\"url\":\"https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-agreements-in-virginia-an-overview/\",\"loadedUrl\":\"https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-agreements-in-virginia-an-overview/\",\"uniqueKey\":\"https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-agreements-in-virginia-an-overview\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:19:33.490Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-agreements-in-virginia-an-overview",
-	"url": "https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-agreements-in-virginia-an-overview/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "UwYYw4buVq7ybCk",
-	"json": "{\"id\":\"UwYYw4buVq7ybCk\",\"url\":\"https://www.globaldownsyndrome.org/es_mx/folleto-sobre-pruebas-prenatales/\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/es_mx/folleto-sobre-pruebas-prenatales/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/es_mx/folleto-sobre-pruebas-prenatales\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:28:41.813Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.globaldownsyndrome.org/es_mx/folleto-sobre-pruebas-prenatales",
-	"url": "https://www.globaldownsyndrome.org/es_mx/folleto-sobre-pruebas-prenatales/"
-}

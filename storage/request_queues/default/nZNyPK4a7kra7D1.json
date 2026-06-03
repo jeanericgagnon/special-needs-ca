@@ -1,9 +1,0 @@
-{
-	"id": "nZNyPK4a7kra7D1",
-	"json": "{\"id\":\"nZNyPK4a7kra7D1\",\"url\":\"https://www.cde.ca.gov/sp/eo/cd/\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/eo/cd/\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/eo/cd\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:25:32.567Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/sp/eo/cd",
-	"url": "https://www.cde.ca.gov/sp/eo/cd/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "WYU4UYMg8sirVak",
-	"json": "{\"id\":\"WYU4UYMg8sirVak\",\"url\":\"https://www.cde.ca.gov/ta/ac/cm/documents/ccicollege.pdf\",\"loadedUrl\":\"https://www.cde.ca.gov/ta/ac/cm/documents/ccicollege.pdf\",\"uniqueKey\":\"https://www.cde.ca.gov/ta/ac/cm/documents/ccicollege.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:16.175Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ta/ac/cm/documents/ccicollege.pdf",
-	"url": "https://www.cde.ca.gov/ta/ac/cm/documents/ccicollege.pdf"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "p10FynbUJYxUxf4",
-	"json": "{\"id\":\"p10FynbUJYxUxf4\",\"url\":\"https://basicscience.ucdmc.ucdavis.edu/beleford-lab/\",\"loadedUrl\":\"https://basicscience.ucdmc.ucdavis.edu/beleford-lab/\",\"uniqueKey\":\"https://basicscience.ucdmc.ucdavis.edu/beleford-lab\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:06:50.939Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://basicscience.ucdmc.ucdavis.edu/beleford-lab",
-	"url": "https://basicscience.ucdmc.ucdavis.edu/beleford-lab/"
-}

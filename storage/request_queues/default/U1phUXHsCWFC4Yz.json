@@ -1,9 +1,0 @@
-{
-	"id": "U1phUXHsCWFC4Yz",
-	"json": "{\"id\":\"U1phUXHsCWFC4Yz\",\"url\":\"https://lettersandscience.ucdavis.edu/forms\",\"loadedUrl\":\"https://lettersandscience.ucdavis.edu/forms\",\"uniqueKey\":\"https://lettersandscience.ucdavis.edu/forms\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:21.894Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://lettersandscience.ucdavis.edu/forms",
-	"url": "https://lettersandscience.ucdavis.edu/forms"
-}

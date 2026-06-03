@@ -1,9 +1,0 @@
-{
-	"id": "fAJIad8Qwg4v9TD",
-	"json": "{\"id\":\"fAJIad8Qwg4v9TD\",\"url\":\"https://www.chhs.ca.gov/blog/2020/02/13/statement-from-california-health-and-human-services-secretary-dr-mark-ghaly-on-federal-2021-budget-proposal/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2020/02/13/statement-from-california-health-and-human-services-secretary-dr-mark-ghaly-on-federal-2021-budget-proposal/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2020/02/13/statement-from-california-health-and-human-services-secretary-dr-mark-ghaly-on-federal-2021-budget-proposal\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:20.021Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chhs.ca.gov/blog/2020/02/13/statement-from-california-health-and-human-services-secretary-dr-mark-ghaly-on-federal-2021-budget-proposal",
-	"url": "https://www.chhs.ca.gov/blog/2020/02/13/statement-from-california-health-and-human-services-secretary-dr-mark-ghaly-on-federal-2021-budget-proposal/"
-}

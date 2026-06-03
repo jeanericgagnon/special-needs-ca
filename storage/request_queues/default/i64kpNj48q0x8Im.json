@@ -1,9 +1,0 @@
-{
-	"id": "i64kpNj48q0x8Im",
-	"json": "{\"id\":\"i64kpNj48q0x8Im\",\"url\":\"https://www.cde.ca.gov/ta/ac/cm/covid19faq.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=0c878777-a0d8-4b0b-bf29-55ede3526899&ssb=46354243383&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fta%2Fac%2Fcm%2Fcovid19faq.asp&ssi=ec12948d-ctxv-4b90-b62e-5a3b05494698&ssk=botmanager_support@radware.com&ssm=89132977647777754104446701623849&ssn=539337c1872fc846c4c2bc0e308edc665149f61f8062-cfa6-4d38-870d0a&sso=08c081ca-668ad97f5d581b612eb3d5eb3cfe428fb8e3ab9b7789a24b&ssp=03771820501780318787178038294311281&ssq=89226452671206322951226712354288459909035&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBmNjFmODA2Mi1jZmE2LTRkMzgtODFjYS02NjhhZDk3ZjVkNTgxLTE3ODAzMjY3MTIyMDkwLTAwM2U0OTM5ZTZmMDBmMTBkODAxMCIsInJkIjoiY2EuZ292IiwidXpteCI6IjdmOTAwMGE3ZGM5MmRmLWU5ZjItNGM3MC04NjQ4LWUxNjJjMTk0ZTRiNTEtMTc4MDMyNjcxMjIwOTAtMGM4YjRlMWMzZjRhN2FkMzEwIn0=\",\"uniqueKey\":\"https://www.cde.ca.gov/ta/ac/cm/covid19faq.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:11:52.612Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ta/ac/cm/covid19faq.asp",
-	"url": "https://www.cde.ca.gov/ta/ac/cm/covid19faq.asp"
-}

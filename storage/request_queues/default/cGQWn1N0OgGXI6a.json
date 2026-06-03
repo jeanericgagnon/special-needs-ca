@@ -1,9 +1,0 @@
-{
-	"id": "cGQWn1N0OgGXI6a",
-	"json": "{\"id\":\"cGQWn1N0OgGXI6a\",\"url\":\"https://www.fire.ca.gov/programs/communications/\",\"loadedUrl\":\"https://www.fire.ca.gov/Error-Pages/404?item=%2fprograms%2fcommunications%2f&user=extranet%5cAnonymous&site=calfire\",\"uniqueKey\":\"https://www.fire.ca.gov/programs/communications\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:19.048Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.fire.ca.gov/programs/communications",
-	"url": "https://www.fire.ca.gov/programs/communications/"
-}

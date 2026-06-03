@@ -1,9 +1,0 @@
-{
-	"id": "UDsRAIUsKLK1Hgb",
-	"json": "{\"id\":\"UDsRAIUsKLK1Hgb\",\"url\":\"https://conte.ucdavis.edu/index.php\",\"loadedUrl\":\"https://sites.uci.edu/tcan/\",\"uniqueKey\":\"https://conte.ucdavis.edu/index.php\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:07:49.467Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://conte.ucdavis.edu/index.php",
-	"url": "https://conte.ucdavis.edu/index.php"
-}

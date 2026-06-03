@@ -1,9 +1,0 @@
-{
-	"id": "LFGb4jP779UacUP",
-	"json": "{\"id\":\"LFGb4jP779UacUP\",\"url\":\"https://www.cdph.ca.gov/Programs/OPP/Pages/BHSA-Final-Plan-FAQs.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/OPP/Pages/BHSA-Final-Plan-FAQs.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/OPP/Pages/BHSA-Final-Plan-FAQs.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:03:56.391Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/OPP/Pages/BHSA-Final-Plan-FAQs.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/OPP/Pages/BHSA-Final-Plan-FAQs.aspx"
-}

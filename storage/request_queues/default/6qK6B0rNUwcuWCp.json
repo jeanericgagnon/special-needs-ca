@@ -1,9 +1,0 @@
-{
-	"id": "6qK6B0rNUwcuWCp",
-	"json": "{\"id\":\"6qK6B0rNUwcuWCp\",\"url\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/HPCTS-Contact-Us.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/HPCTS-Contact-Us.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/HPCTS-Contact-Us.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:40:03.202Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/HPCTS-Contact-Us.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/HPCTS-Contact-Us.aspx"
-}

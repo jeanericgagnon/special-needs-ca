@@ -1,9 +1,0 @@
-{
-	"id": "M3xZbMoDfUxN5rf",
-	"json": "{\"id\":\"M3xZbMoDfUxN5rf\",\"url\":\"https://www.gov.ca.gov/2026/02/12/governor-newsom-announces-major-expansion-of-mortgage-relief-program-with-a-four-fold-increase-in-payments-to-survivors/\",\"loadedUrl\":\"https://www.gov.ca.gov/2026/02/12/governor-newsom-announces-major-expansion-of-mortgage-relief-program-with-a-four-fold-increase-in-payments-to-survivors/\",\"uniqueKey\":\"https://www.gov.ca.gov/2026/02/12/governor-newsom-announces-major-expansion-of-mortgage-relief-program-with-a-four-fold-increase-in-payments-to-survivors\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:56.879Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.gov.ca.gov/2026/02/12/governor-newsom-announces-major-expansion-of-mortgage-relief-program-with-a-four-fold-increase-in-payments-to-survivors",
-	"url": "https://www.gov.ca.gov/2026/02/12/governor-newsom-announces-major-expansion-of-mortgage-relief-program-with-a-four-fold-increase-in-payments-to-survivors/"
-}

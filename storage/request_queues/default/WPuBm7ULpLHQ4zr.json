@@ -1,9 +1,0 @@
-{
-	"id": "WPuBm7ULpLHQ4zr",
-	"json": "{\"id\":\"WPuBm7ULpLHQ4zr\",\"url\":\"https://health.ucdavis.edu/news/headlines/yolo-run-raises-funds-for-uc-davis-childrens-hospital-on-may-16/2026/03\",\"loadedUrl\":\"https://health.ucdavis.edu/news/headlines/yolo-run-raises-funds-for-uc-davis-childrens-hospital-on-may-16/2026/03\",\"uniqueKey\":\"https://health.ucdavis.edu/news/headlines/yolo-run-raises-funds-for-uc-davis-childrens-hospital-on-may-16/2026/03\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:47:07.602Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/news/headlines/yolo-run-raises-funds-for-uc-davis-childrens-hospital-on-may-16/2026/03",
-	"url": "https://health.ucdavis.edu/news/headlines/yolo-run-raises-funds-for-uc-davis-childrens-hospital-on-may-16/2026/03"
-}

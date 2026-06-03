@@ -1,9 +1,0 @@
-{
-	"id": "fFIUusvb11AUkc6",
-	"json": "{\"id\":\"fFIUusvb11AUkc6\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/surveillance/Pages/Sudden-Unexpected-Infant-Death.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/surveillance/Pages/Sudden-Unexpected-Infant-Death.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/surveillance/Pages/Sudden-Unexpected-Infant-Death.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T17:49:38.884Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/surveillance/Pages/Sudden-Unexpected-Infant-Death.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/surveillance/Pages/Sudden-Unexpected-Infant-Death.aspx"
-}

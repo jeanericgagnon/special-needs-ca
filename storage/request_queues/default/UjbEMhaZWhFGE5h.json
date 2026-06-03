@@ -1,9 +1,0 @@
-{
-	"id": "UjbEMhaZWhFGE5h",
-	"json": "{\"id\":\"UjbEMhaZWhFGE5h\",\"url\":\"https://leadership.ucdavis.edu/strategic-plan/task-forces/food-access-and-security\",\"loadedUrl\":\"https://leadership.ucdavis.edu/strategic-plan/task-forces/food-access-and-security\",\"uniqueKey\":\"https://leadership.ucdavis.edu/strategic-plan/task-forces/food-access-and-security\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:36.653Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://leadership.ucdavis.edu/strategic-plan/task-forces/food-access-and-security",
-	"url": "https://leadership.ucdavis.edu/strategic-plan/task-forces/food-access-and-security"
-}

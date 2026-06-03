@@ -1,9 +1,0 @@
-{
-	"id": "FgTRhDr8c7KkhMX",
-	"json": "{\"id\":\"FgTRhDr8c7KkhMX\",\"url\":\"https://irb.ucdavis.edu/about-irb/\",\"loadedUrl\":\"https://irb.ucdavis.edu/about-irb/\",\"uniqueKey\":\"https://irb.ucdavis.edu/about-irb\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:39.297Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://irb.ucdavis.edu/about-irb",
-	"url": "https://irb.ucdavis.edu/about-irb/"
-}

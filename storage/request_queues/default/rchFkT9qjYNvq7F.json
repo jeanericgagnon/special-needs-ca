@@ -1,9 +1,0 @@
-{
-	"id": "rchFkT9qjYNvq7F",
-	"json": "{\"id\":\"rchFkT9qjYNvq7F\",\"url\":\"https://www.cde.ca.gov/ds/si/ds/cdsappinstructions.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ds/si/ds/cdsappinstructions.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ds/si/ds/cdsappinstructions.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:24:02.208Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ds/si/ds/cdsappinstructions.asp",
-	"url": "https://www.cde.ca.gov/ds/si/ds/cdsappinstructions.asp"
-}

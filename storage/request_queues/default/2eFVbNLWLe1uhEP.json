@@ -1,9 +1,0 @@
-{
-	"id": "2eFVbNLWLe1uhEP",
-	"json": "{\"id\":\"2eFVbNLWLe1uhEP\",\"url\":\"https://education.ucdavis.edu/student-associations\",\"loadedUrl\":\"https://education.ucdavis.edu/student-associations\",\"uniqueKey\":\"https://education.ucdavis.edu/student-associations\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:17:21.285Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://education.ucdavis.edu/student-associations",
-	"url": "https://education.ucdavis.edu/student-associations"
-}

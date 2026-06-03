@@ -1,9 +1,0 @@
-{
-	"id": "DXj3sIeyq3GYoyC",
-	"json": "{\"id\":\"DXj3sIeyq3GYoyC\",\"url\":\"https://rarediseases.org/rare-diseases/mog-antibody-disease/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/mog-antibody-disease/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/mog-antibody-disease\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:09:56.733Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/rare-diseases/mog-antibody-disease",
-	"url": "https://rarediseases.org/rare-diseases/mog-antibody-disease/"
-}

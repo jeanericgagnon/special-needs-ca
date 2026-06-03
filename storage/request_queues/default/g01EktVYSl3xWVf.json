@@ -1,9 +1,0 @@
-{
-	"id": "g01EktVYSl3xWVf",
-	"json": "{\"id\":\"g01EktVYSl3xWVf\",\"url\":\"https://irb.ucdavis.edu/project-guidance/privacy-and-confidentiality/\",\"loadedUrl\":\"https://irb.ucdavis.edu/project-guidance/privacy-and-confidentiality/\",\"uniqueKey\":\"https://irb.ucdavis.edu/project-guidance/privacy-and-confidentiality\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:40.963Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://irb.ucdavis.edu/project-guidance/privacy-and-confidentiality",
-	"url": "https://irb.ucdavis.edu/project-guidance/privacy-and-confidentiality/"
-}

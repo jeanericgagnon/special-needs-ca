@@ -1,9 +1,0 @@
-{
-	"id": "ce0NlVViuF7ntXj",
-	"json": "{\"id\":\"ce0NlVViuF7ntXj\",\"url\":\"https://www.ssa.gov/eeo/ArchitecturalBarriersAct.html\",\"loadedUrl\":\"https://www.ssa.gov/eeo/ArchitecturalBarriersAct.html\",\"uniqueKey\":\"https://www.ssa.gov/eeo/ArchitecturalBarriersAct.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:36.294Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ssa.gov/eeo/ArchitecturalBarriersAct.html",
-	"url": "https://www.ssa.gov/eeo/ArchitecturalBarriersAct.html"
-}

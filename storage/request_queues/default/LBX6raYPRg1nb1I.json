@@ -1,9 +1,0 @@
-{
-	"id": "LBX6raYPRg1nb1I",
-	"json": "{\"id\":\"LBX6raYPRg1nb1I\",\"url\":\"https://leinlab.vetmed.ucdavis.edu/about/our-research-grants\",\"loadedUrl\":\"https://leinlab.vetmed.ucdavis.edu/about/our-research-grants\",\"uniqueKey\":\"https://leinlab.vetmed.ucdavis.edu/about/our-research-grants\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:00.883Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://leinlab.vetmed.ucdavis.edu/about/our-research-grants",
-	"url": "https://leinlab.vetmed.ucdavis.edu/about/our-research-grants"
-}

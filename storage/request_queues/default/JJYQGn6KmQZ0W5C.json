@@ -1,9 +1,0 @@
-{
-	"id": "JJYQGn6KmQZ0W5C",
-	"json": "{\"id\":\"JJYQGn6KmQZ0W5C\",\"url\":\"https://www.cdss.ca.gov/inforesources/Fiscal-Financial/Local-Assistance-Estimates\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/fiscal-financial/local-assistance-estimates\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/Fiscal-Financial/Local-Assistance-Estimates\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:07.536Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/inforesources/Fiscal-Financial/Local-Assistance-Estimates",
-	"url": "https://www.cdss.ca.gov/inforesources/Fiscal-Financial/Local-Assistance-Estimates"
-}

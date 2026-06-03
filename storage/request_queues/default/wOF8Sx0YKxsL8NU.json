@@ -1,9 +1,0 @@
-{
-	"id": "wOF8Sx0YKxsL8NU",
-	"json": "{\"id\":\"wOF8Sx0YKxsL8NU\",\"url\":\"https://hr.ucdavis.edu/people/jenna-makus\",\"loadedUrl\":\"https://hr.ucdavis.edu/people/jenna-makus\",\"uniqueKey\":\"https://hr.ucdavis.edu/people/jenna-makus\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:29.096Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/people/jenna-makus",
-	"url": "https://hr.ucdavis.edu/people/jenna-makus"
-}

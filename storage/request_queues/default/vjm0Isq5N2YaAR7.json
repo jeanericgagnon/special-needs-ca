@@ -1,9 +1,0 @@
-{
-	"id": "vjm0Isq5N2YaAR7",
-	"json": "{\"id\":\"vjm0Isq5N2YaAR7\",\"url\":\"https://aspire.ucdavis.edu/donate\",\"loadedUrl\":\"https://aspire.ucdavis.edu/donate\",\"uniqueKey\":\"https://aspire.ucdavis.edu/donate\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:18.478Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://aspire.ucdavis.edu/donate",
-	"url": "https://aspire.ucdavis.edu/donate"
-}

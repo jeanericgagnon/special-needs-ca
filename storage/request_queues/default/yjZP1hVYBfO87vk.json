@@ -1,9 +1,0 @@
-{
-	"id": "yjZP1hVYBfO87vk",
-	"json": "{\"id\":\"yjZP1hVYBfO87vk\",\"url\":\"https://calable.ca.gov/faqs/can-a-social-security-representative-payee-open-an-account-for-a-beneficiary\",\"loadedUrl\":\"https://calable.ca.gov/faqs/can-a-social-security-representative-payee-open-an-account-for-a-beneficiary\",\"uniqueKey\":\"https://calable.ca.gov/faqs/can-a-social-security-representative-payee-open-an-account-for-a-beneficiary\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:49.760Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://calable.ca.gov/faqs/can-a-social-security-representative-payee-open-an-account-for-a-beneficiary",
-	"url": "https://calable.ca.gov/faqs/can-a-social-security-representative-payee-open-an-account-for-a-beneficiary"
-}

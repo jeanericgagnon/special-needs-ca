@@ -1,9 +1,0 @@
-{
-	"id": "LV5V0S9uNz6d3qM",
-	"json": "{\"id\":\"LV5V0S9uNz6d3qM\",\"url\":\"https://give.ucdavis.edu/Search/Tags/environment\",\"loadedUrl\":\"https://give.ucdavis.edu/Search/Tags/environment\",\"uniqueKey\":\"https://give.ucdavis.edu/Search/Tags/environment\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:44.040Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/Search/Tags/environment",
-	"url": "https://give.ucdavis.edu/Search/Tags/environment"
-}

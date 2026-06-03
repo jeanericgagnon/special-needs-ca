@@ -1,9 +1,0 @@
-{
-	"id": "JVfnJV8VacXKIzi",
-	"json": "{\"id\":\"JVfnJV8VacXKIzi\",\"url\":\"https://www.chhs.ca.gov/blog/2022/05/12/18b-inflation-relief-package/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2022/05/12/18b-inflation-relief-package/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2022/05/12/18b-inflation-relief-package\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:19.476Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chhs.ca.gov/blog/2022/05/12/18b-inflation-relief-package",
-	"url": "https://www.chhs.ca.gov/blog/2022/05/12/18b-inflation-relief-package/"
-}

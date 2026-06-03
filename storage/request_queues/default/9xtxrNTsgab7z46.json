@@ -1,9 +1,0 @@
-{
-	"id": "9xtxrNTsgab7z46",
-	"json": "{\"id\":\"9xtxrNTsgab7z46\",\"url\":\"https://health.ucdavis.edu/healthcare-professionals/\",\"loadedUrl\":\"https://health.ucdavis.edu/healthcare-professionals/\",\"uniqueKey\":\"https://health.ucdavis.edu/healthcare-professionals\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:17.543Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/healthcare-professionals",
-	"url": "https://health.ucdavis.edu/healthcare-professionals/"
-}

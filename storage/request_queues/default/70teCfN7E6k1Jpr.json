@@ -1,9 +1,0 @@
-{
-	"id": "70teCfN7E6k1Jpr",
-	"json": "{\"id\":\"70teCfN7E6k1Jpr\",\"url\":\"https://giving.ucdavis.edu/ways-to-give/giving-societies/leadership-giving-society\",\"loadedUrl\":\"https://giving.ucdavis.edu/ways-to-give/giving-societies/leadership-giving-society\",\"uniqueKey\":\"https://giving.ucdavis.edu/ways-to-give/giving-societies/leadership-giving-society\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:31.514Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://giving.ucdavis.edu/ways-to-give/giving-societies/leadership-giving-society",
-	"url": "https://giving.ucdavis.edu/ways-to-give/giving-societies/leadership-giving-society"
-}

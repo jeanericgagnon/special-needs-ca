@@ -1,9 +1,0 @@
-{
-	"id": "JsR5YusQlORDcnY",
-	"json": "{\"id\":\"JsR5YusQlORDcnY\",\"url\":\"https://www.gov.ca.gov/news.php?id=17223\",\"loadedUrl\":\"https://www.gov.ca.gov/news.php?id=17223\",\"uniqueKey\":\"https://www.gov.ca.gov/news.php?id=17223\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:23.641Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.gov.ca.gov/news.php?id=17223",
-	"url": "https://www.gov.ca.gov/news.php?id=17223"
-}

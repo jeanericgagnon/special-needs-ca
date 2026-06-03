@@ -1,9 +1,0 @@
-{
-	"id": "l2TL5WzqIsT1mXl",
-	"json": "{\"id\":\"l2TL5WzqIsT1mXl\",\"url\":\"https://calable.ca.gov/api/v1/@apostrophecms/page/clzx0fko2mtzq0jpmfcathg89:en:published/locale/es\",\"loadedUrl\":\"https://calable.ca.gov/es/c%C3%B3mo-funciona/contribuciones\",\"uniqueKey\":\"https://calable.ca.gov/api/v1/@apostrophecms/page/clzx0fko2mtzq0jpmfcathg89:en:published/locale/es\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:36.032Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://calable.ca.gov/api/v1/@apostrophecms/page/clzx0fko2mtzq0jpmfcathg89:en:published/locale/es",
-	"url": "https://calable.ca.gov/api/v1/@apostrophecms/page/clzx0fko2mtzq0jpmfcathg89:en:published/locale/es"
-}

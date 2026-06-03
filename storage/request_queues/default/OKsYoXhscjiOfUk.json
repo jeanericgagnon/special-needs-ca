@@ -1,9 +1,0 @@
-{
-	"id": "OKsYoXhscjiOfUk",
-	"json": "{\"id\":\"OKsYoXhscjiOfUk\",\"url\":\"https://health.ucdavis.edu/treatments/orthopaedic-surgery\",\"loadedUrl\":\"https://health.ucdavis.edu/treatments/orthopaedic-surgery\",\"uniqueKey\":\"https://health.ucdavis.edu/treatments/orthopaedic-surgery\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:58.691Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/treatments/orthopaedic-surgery",
-	"url": "https://health.ucdavis.edu/treatments/orthopaedic-surgery"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "R9xmkwY3AAhiNNn",
-	"json": "{\"id\":\"R9xmkwY3AAhiNNn\",\"url\":\"https://hr.ucdavis.edu/departments/elr/dms/managerandsupervisortips\",\"loadedUrl\":\"https://hr.ucdavis.edu/departments/dms/managerandsupervisortips\",\"uniqueKey\":\"https://hr.ucdavis.edu/departments/elr/dms/managerandsupervisortips\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:09.626Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/departments/elr/dms/managerandsupervisortips",
-	"url": "https://hr.ucdavis.edu/departments/elr/dms/managerandsupervisortips"
-}

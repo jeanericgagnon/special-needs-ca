@@ -1,9 +1,0 @@
-{
-	"id": "tKy9jy6DF2OdhtH",
-	"json": "{\"id\":\"tKy9jy6DF2OdhtH\",\"url\":\"https://www.ssa.gov/apply?benefits=family_adult&age=adult\",\"loadedUrl\":\"https://www.ssa.gov/apply?benefits=family_adult&age=adult\",\"uniqueKey\":\"https://www.ssa.gov/apply?age=adult&benefits=family_adult\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:36.472Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ssa.gov/apply?age=adult&benefits=family_adult",
-	"url": "https://www.ssa.gov/apply?benefits=family_adult&age=adult"
-}

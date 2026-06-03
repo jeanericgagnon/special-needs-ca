@@ -1,9 +1,0 @@
-{
-	"id": "77H2bzrAWvr4GYY",
-	"json": "{\"id\":\"77H2bzrAWvr4GYY\",\"url\":\"https://cdss.ca.gov/inforesources/Rules-Regulations/Legislation-and-Regulations/Child-Welfare-Services-Regulations\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/letters-regulations/legislation-and-regulations/child-welfare-services-regulations\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Rules-Regulations/Legislation-and-Regulations/Child-Welfare-Services-Regulations\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:06.693Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/Rules-Regulations/Legislation-and-Regulations/Child-Welfare-Services-Regulations",
-	"url": "https://cdss.ca.gov/inforesources/Rules-Regulations/Legislation-and-Regulations/Child-Welfare-Services-Regulations"
-}

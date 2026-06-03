@@ -1,9 +1,0 @@
-{
-	"id": "2k5Iy9vGsdILTST",
-	"json": "{\"id\":\"2k5Iy9vGsdILTST\",\"url\":\"https://mindbrain.ucdavis.edu/coronavirus-information\",\"loadedUrl\":\"https://mindbrain.ucdavis.edu/coronavirus-information\",\"uniqueKey\":\"https://mindbrain.ucdavis.edu/coronavirus-information\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:02.865Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://mindbrain.ucdavis.edu/coronavirus-information",
-	"url": "https://mindbrain.ucdavis.edu/coronavirus-information"
-}

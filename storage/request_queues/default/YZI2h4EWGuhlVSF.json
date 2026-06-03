@@ -1,9 +1,0 @@
-{
-	"id": "YZI2h4EWGuhlVSF",
-	"json": "{\"id\":\"YZI2h4EWGuhlVSF\",\"url\":\"https://financeandbusiness.ucdavis.edu/bia/budget/model/state-funds-and-tuition\",\"loadedUrl\":\"https://financeandbusiness.ucdavis.edu/bia/budget/model/state-funds-and-tuition\",\"uniqueKey\":\"https://financeandbusiness.ucdavis.edu/bia/budget/model/state-funds-and-tuition\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:51.021Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://financeandbusiness.ucdavis.edu/bia/budget/model/state-funds-and-tuition",
-	"url": "https://financeandbusiness.ucdavis.edu/bia/budget/model/state-funds-and-tuition"
-}

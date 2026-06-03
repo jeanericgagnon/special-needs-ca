@@ -1,9 +1,0 @@
-{
-	"id": "R0a1x8H4IOHg0Yz",
-	"json": "{\"id\":\"R0a1x8H4IOHg0Yz\",\"url\":\"https://health.ucdavis.edu/referrals/physicianconnect/customer-service.html\",\"loadedUrl\":\"https://health.ucdavis.edu/referrals/physicianconnect/customer-service.html\",\"uniqueKey\":\"https://health.ucdavis.edu/referrals/physicianconnect/customer-service.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:27.949Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/referrals/physicianconnect/customer-service.html",
-	"url": "https://health.ucdavis.edu/referrals/physicianconnect/customer-service.html"
-}

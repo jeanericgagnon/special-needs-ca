@@ -1,9 +1,0 @@
-{
-	"id": "hSp1te1Jv0So4Jn",
-	"json": "{\"id\":\"hSp1te1Jv0So4Jn\",\"url\":\"https://www.cdss.ca.gov/inforesources/IHSS-Providers/Resources/electronic-services\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/esphelp\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/IHSS-Providers/Resources/electronic-services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:23:46.927Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/inforesources/IHSS-Providers/Resources/electronic-services",
-	"url": "https://www.cdss.ca.gov/inforesources/IHSS-Providers/Resources/electronic-services"
-}

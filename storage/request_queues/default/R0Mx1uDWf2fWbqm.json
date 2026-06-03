@@ -1,9 +1,0 @@
-{
-	"id": "R0Mx1uDWf2fWbqm",
-	"json": "{\"id\":\"R0Mx1uDWf2fWbqm\",\"url\":\"https://health.ucdavis.edu/mind-institute/our-team/leadership-and-staff\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/our-team/leadership-and-staff\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/our-team/leadership-and-staff\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:25.652Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mind-institute/our-team/leadership-and-staff",
-	"url": "https://health.ucdavis.edu/mind-institute/our-team/leadership-and-staff"
-}

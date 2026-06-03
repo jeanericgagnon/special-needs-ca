@@ -1,9 +1,0 @@
-{
-	"id": "pZGNUyNetFrVpoE",
-	"json": "{\"id\":\"pZGNUyNetFrVpoE\",\"url\":\"https://www.dds.ca.gov/consumers/wellness-toolkit/vendors-providers/cold-and-flu\",\"loadedUrl\":\"https://www.dds.ca.gov/individuals-and-families/wellness-toolkit/self-advocates/cold-and-flu/\",\"uniqueKey\":\"https://www.dds.ca.gov/consumers/wellness-toolkit/vendors-providers/cold-and-flu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:05:18.877Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/consumers/wellness-toolkit/vendors-providers/cold-and-flu",
-	"url": "https://www.dds.ca.gov/consumers/wellness-toolkit/vendors-providers/cold-and-flu"
-}

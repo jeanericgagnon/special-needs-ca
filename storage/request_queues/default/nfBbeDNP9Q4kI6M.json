@@ -1,9 +1,0 @@
-{
-	"id": "nfBbeDNP9Q4kI6M",
-	"json": "{\"id\":\"nfBbeDNP9Q4kI6M\",\"url\":\"https://www.dhcs.ca.gov/services/MH/Pages/BHCIP-Home.aspx\",\"loadedUrl\":\"https://www.dhcs.ca.gov/services/MH/Pages/BHCIP-Home.aspx\",\"uniqueKey\":\"https://www.dhcs.ca.gov/services/MH/Pages/BHCIP-Home.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:53:39.580Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dhcs.ca.gov/services/MH/Pages/BHCIP-Home.aspx",
-	"url": "https://www.dhcs.ca.gov/services/MH/Pages/BHCIP-Home.aspx"
-}

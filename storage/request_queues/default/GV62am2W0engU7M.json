@@ -1,9 +1,0 @@
-{
-	"id": "GV62am2W0engU7M",
-	"json": "{\"id\":\"GV62am2W0engU7M\",\"url\":\"https://health.ucdavis.edu/conditions/mens-health/male-infertility-and-reproductive-health\",\"loadedUrl\":\"https://health.ucdavis.edu/conditions/mens-health/male-infertility-and-reproductive-health\",\"uniqueKey\":\"https://health.ucdavis.edu/conditions/mens-health/male-infertility-and-reproductive-health\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:45.369Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/conditions/mens-health/male-infertility-and-reproductive-health",
-	"url": "https://health.ucdavis.edu/conditions/mens-health/male-infertility-and-reproductive-health"
-}

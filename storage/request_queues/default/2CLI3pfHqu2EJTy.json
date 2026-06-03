@@ -1,9 +1,0 @@
-{
-	"id": "2CLI3pfHqu2EJTy",
-	"json": "{\"id\":\"2CLI3pfHqu2EJTy\",\"url\":\"https://health.ucdavis.edu/news/headlines/two-researchers-elected-as-aaas-fellows-for-shaping-science-of-neurological-conditions/2026/03\",\"loadedUrl\":\"https://health.ucdavis.edu/news/headlines/two-researchers-elected-as-aaas-fellows-for-shaping-science-of-neurological-conditions/2026/03\",\"uniqueKey\":\"https://health.ucdavis.edu/news/headlines/two-researchers-elected-as-aaas-fellows-for-shaping-science-of-neurological-conditions/2026/03\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:45:58.052Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/news/headlines/two-researchers-elected-as-aaas-fellows-for-shaping-science-of-neurological-conditions/2026/03",
-	"url": "https://health.ucdavis.edu/news/headlines/two-researchers-elected-as-aaas-fellows-for-shaping-science-of-neurological-conditions/2026/03"
-}

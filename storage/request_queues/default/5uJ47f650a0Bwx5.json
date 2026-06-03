@@ -1,9 +1,0 @@
-{
-	"id": "5uJ47f650a0Bwx5",
-	"json": "{\"id\":\"5uJ47f650a0Bwx5\",\"url\":\"https://health.ucdavis.edu/mind-institute/news/headlines/-medical-center-ranked-as-a-best-hospital-for-maternity-care-pediatric-care-by-money-magazine-/2026/05\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/news/headlines/-medical-center-ranked-as-a-best-hospital-for-maternity-care-pediatric-care-by-money-magazine-/2026/05\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/news/headlines/-medical-center-ranked-as-a-best-hospital-for-maternity-care-pediatric-care-by-money-magazine-/2026/05\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:58.978Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mind-institute/news/headlines/-medical-center-ranked-as-a-best-hospital-for-maternity-care-pediatric-care-by-money-magazine-/2026/05",
-	"url": "https://health.ucdavis.edu/mind-institute/news/headlines/-medical-center-ranked-as-a-best-hospital-for-maternity-care-pediatric-care-by-money-magazine-/2026/05"
-}

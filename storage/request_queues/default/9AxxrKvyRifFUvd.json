@@ -1,9 +1,0 @@
-{
-	"id": "9AxxrKvyRifFUvd",
-	"json": "{\"id\":\"9AxxrKvyRifFUvd\",\"url\":\"https://health.ucdavis.edu/news/topic/clinical-science\",\"loadedUrl\":\"https://health.ucdavis.edu/news/topic/clinical-science\",\"uniqueKey\":\"https://health.ucdavis.edu/news/topic/clinical-science\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:47:04.909Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/news/topic/clinical-science",
-	"url": "https://health.ucdavis.edu/news/topic/clinical-science"
-}

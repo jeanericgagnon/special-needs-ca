@@ -1,9 +1,0 @@
-{
-	"id": "TGbNabyuGA2THan",
-	"json": "{\"id\":\"TGbNabyuGA2THan\",\"url\":\"https://health.ucdavis.edu/research/news/headlines/cold-hands-warm-heart--researchers-solve-medical-mystery-of-why-trpm4-mutations-affect-skin-and-heart-differently/2026/05\",\"loadedUrl\":\"https://health.ucdavis.edu/research/news/headlines/cold-hands-warm-heart--researchers-solve-medical-mystery-of-why-trpm4-mutations-affect-skin-and-heart-differently/2026/05\",\"uniqueKey\":\"https://health.ucdavis.edu/research/news/headlines/cold-hands-warm-heart--researchers-solve-medical-mystery-of-why-trpm4-mutations-affect-skin-and-heart-differently/2026/05\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:53.332Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/research/news/headlines/cold-hands-warm-heart--researchers-solve-medical-mystery-of-why-trpm4-mutations-affect-skin-and-heart-differently/2026/05",
-	"url": "https://health.ucdavis.edu/research/news/headlines/cold-hands-warm-heart--researchers-solve-medical-mystery-of-why-trpm4-mutations-affect-skin-and-heart-differently/2026/05"
-}

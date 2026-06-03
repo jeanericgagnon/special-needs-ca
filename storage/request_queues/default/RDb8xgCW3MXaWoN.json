@@ -1,9 +1,0 @@
-{
-	"id": "RDb8xgCW3MXaWoN",
-	"json": "{\"id\":\"RDb8xgCW3MXaWoN\",\"url\":\"https://irb.ucdavis.edu/project-guidance/investigational-drugs-or-devices/drugs/\",\"loadedUrl\":\"https://irb.ucdavis.edu/project-guidance/investigational-drugs-or-devices/drugs/\",\"uniqueKey\":\"https://irb.ucdavis.edu/project-guidance/investigational-drugs-or-devices/drugs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:40.729Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://irb.ucdavis.edu/project-guidance/investigational-drugs-or-devices/drugs",
-	"url": "https://irb.ucdavis.edu/project-guidance/investigational-drugs-or-devices/drugs/"
-}

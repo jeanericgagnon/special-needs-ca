@@ -1,9 +1,0 @@
-{
-	"id": "LN3CwMtCGFQLpdO",
-	"json": "{\"id\":\"LN3CwMtCGFQLpdO\",\"url\":\"https://scdd.ca.gov/regionalcenterservices/\",\"loadedUrl\":\"https://scdd.ca.gov/regionalcenterservices/\",\"uniqueKey\":\"https://scdd.ca.gov/regionalcenterservices\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:27.795Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/regionalcenterservices",
-	"url": "https://scdd.ca.gov/regionalcenterservices/"
-}

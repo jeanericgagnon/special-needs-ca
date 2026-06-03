@@ -1,9 +1,0 @@
-{
-	"id": "o0SCZZrpMm3KGxx",
-	"json": "{\"id\":\"o0SCZZrpMm3KGxx\",\"url\":\"https://rarediseases.org/organizations/american-heart-association/\",\"loadedUrl\":\"https://rarediseases.org/non-member-patient/american-heart-association/\",\"uniqueKey\":\"https://rarediseases.org/organizations/american-heart-association\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:09:14.009Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/organizations/american-heart-association",
-	"url": "https://rarediseases.org/organizations/american-heart-association/"
-}

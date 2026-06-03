@@ -1,9 +1,0 @@
-{
-	"id": "cv4InNpmYlVnWxC",
-	"json": "{\"id\":\"cv4InNpmYlVnWxC\",\"url\":\"https://edd.ca.gov/arabic/\",\"loadedUrl\":\"https://edd.ca.gov/arabic/\",\"uniqueKey\":\"https://edd.ca.gov/arabic\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:42.372Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://edd.ca.gov/arabic",
-	"url": "https://edd.ca.gov/arabic/"
-}

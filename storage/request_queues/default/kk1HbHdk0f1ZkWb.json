@@ -1,9 +1,0 @@
-{
-	"id": "kk1HbHdk0f1ZkWb",
-	"json": "{\"id\":\"kk1HbHdk0f1ZkWb\",\"url\":\"https://health.ucdavis.edu/pharmacy/inpatient\",\"loadedUrl\":\"https://health.ucdavis.edu/pharmacy/inpatient\",\"uniqueKey\":\"https://health.ucdavis.edu/pharmacy/inpatient\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:31:31.014Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/pharmacy/inpatient",
-	"url": "https://health.ucdavis.edu/pharmacy/inpatient"
-}

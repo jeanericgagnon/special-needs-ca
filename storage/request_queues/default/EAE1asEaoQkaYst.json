@@ -1,9 +1,0 @@
-{
-	"id": "EAE1asEaoQkaYst",
-	"json": "{\"id\":\"EAE1asEaoQkaYst\",\"url\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/_layouts/15/listform.aspx?ListId=%7B6AAD4E4A%2DF5C6%2D484E%2D8D56%2DFD7746CD9D60%7D&PageType=0&RootFolder=%2FPrograms%2FCID%2FDCDC%2FPages%2FRespiratory%2DViruses\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/DCDC.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/_layouts/15/listform.aspx?ListId=%7B6AAD4E4A-F5C6-484E-8D56-FD7746CD9D60%7D&PageType=0&RootFolder=%2FPrograms%2FCID%2FDCDC%2FPages%2FRespiratory-Viruses\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":2,\"errorMessages\":[\"Error: request timed out after 30 seconds.\\n    at Timeout._onTimeout (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@apify/timeout/cjs/index.cjs:64:68)\\n    at listOnTimeout (node:internal/timers:588:17)\\n    at process.processTimers (node:internal/timers:523:7)\",\"Error: request timed out after 30 seconds.\\n    at Timeout._onTimeout (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@apify/timeout/cjs/index.cjs:64:68)\\n    at listOnTimeout (node:internal/timers:588:17)\\n    at process.processTimers (node:internal/timers:523:7)\"],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:07:16.781Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 2,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CID/DCDC/_layouts/15/listform.aspx?ListId=%7B6AAD4E4A-F5C6-484E-8D56-FD7746CD9D60%7D&PageType=0&RootFolder=%2FPrograms%2FCID%2FDCDC%2FPages%2FRespiratory-Viruses",
-	"url": "https://www.cdph.ca.gov/Programs/CID/DCDC/_layouts/15/listform.aspx?ListId=%7B6AAD4E4A%2DF5C6%2D484E%2D8D56%2DFD7746CD9D60%7D&PageType=0&RootFolder=%2FPrograms%2FCID%2FDCDC%2FPages%2FRespiratory%2DViruses"
-}

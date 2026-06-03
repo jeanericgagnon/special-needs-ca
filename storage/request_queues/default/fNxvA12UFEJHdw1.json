@@ -1,9 +1,0 @@
-{
-	"id": "fNxvA12UFEJHdw1",
-	"json": "{\"id\":\"fNxvA12UFEJHdw1\",\"url\":\"https://www.ftb.ca.gov/file/personal/credits/caleitc/index.html\",\"loadedUrl\":\"https://www.ftb.ca.gov/file/personal/credits/caleitc/index.html\",\"uniqueKey\":\"https://www.ftb.ca.gov/file/personal/credits/caleitc/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:36.349Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ftb.ca.gov/file/personal/credits/caleitc/index.html",
-	"url": "https://www.ftb.ca.gov/file/personal/credits/caleitc/index.html"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "PKkcFj0JRNTkuwz",
-	"json": "{\"id\":\"PKkcFj0JRNTkuwz\",\"url\":\"https://data.ca.gov/group/government\",\"loadedUrl\":\"https://data.ca.gov/group/government\",\"uniqueKey\":\"https://data.ca.gov/group/government\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:14.521Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://data.ca.gov/group/government",
-	"url": "https://data.ca.gov/group/government"
-}

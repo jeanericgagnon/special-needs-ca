@@ -1,9 +1,0 @@
-{
-	"id": "lKXpa0C1xhD2TP7",
-	"json": "{\"id\":\"lKXpa0C1xhD2TP7\",\"url\":\"https://cnprc.ucdavis.edu/monkey-model-hiv\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/monkey-model-hiv\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/monkey-model-hiv\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:12.718Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cnprc.ucdavis.edu/monkey-model-hiv",
-	"url": "https://cnprc.ucdavis.edu/monkey-model-hiv"
-}

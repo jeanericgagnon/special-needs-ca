@@ -1,9 +1,0 @@
-{
-	"id": "2djnaUnLdwfokFY",
-	"json": "{\"id\":\"2djnaUnLdwfokFY\",\"url\":\"https://www.dds.ca.gov/rc/vendor-provider/vendorization-process/vendorization-rates-frequently-asked-questions/\",\"loadedUrl\":\"https://www.dds.ca.gov/rc/vendor-provider/vendorization-process/vendorization-rates-frequently-asked-questions/\",\"uniqueKey\":\"https://www.dds.ca.gov/rc/vendor-provider/vendorization-process/vendorization-rates-frequently-asked-questions\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:05:41.424Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/rc/vendor-provider/vendorization-process/vendorization-rates-frequently-asked-questions",
-	"url": "https://www.dds.ca.gov/rc/vendor-provider/vendorization-process/vendorization-rates-frequently-asked-questions/"
-}

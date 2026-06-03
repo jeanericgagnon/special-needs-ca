@@ -1,9 +1,0 @@
-{
-	"id": "6mbb5P5oiXfgw7S",
-	"json": "{\"id\":\"6mbb5P5oiXfgw7S\",\"url\":\"https://care.ucdavis.edu/request-program-or-collaboration\",\"loadedUrl\":\"https://care.ucdavis.edu/request-program-or-collaboration\",\"uniqueKey\":\"https://care.ucdavis.edu/request-program-or-collaboration\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:02.306Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://care.ucdavis.edu/request-program-or-collaboration",
-	"url": "https://care.ucdavis.edu/request-program-or-collaboration"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "IvTvYaLSGCsLawB",
-	"json": "{\"id\":\"IvTvYaLSGCsLawB\",\"url\":\"https://scdd.ca.gov/sandiego/\",\"loadedUrl\":\"https://scdd.ca.gov/sandiego/\",\"uniqueKey\":\"https://scdd.ca.gov/sandiego\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:29.433Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/sandiego",
-	"url": "https://scdd.ca.gov/sandiego/"
-}

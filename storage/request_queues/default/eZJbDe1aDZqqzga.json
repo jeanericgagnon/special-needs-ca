@@ -1,9 +1,0 @@
-{
-	"id": "eZJbDe1aDZqqzga",
-	"json": "{\"id\":\"eZJbDe1aDZqqzga\",\"url\":\"https://neuroscience.ucdavis.edu/directors-message\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/directors-message\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/directors-message\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:00.099Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/directors-message",
-	"url": "https://neuroscience.ucdavis.edu/directors-message"
-}

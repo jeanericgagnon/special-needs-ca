@@ -1,9 +1,0 @@
-{
-	"id": "GAQKwUU5V5R3yhc",
-	"json": "{\"id\":\"GAQKwUU5V5R3yhc\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/22131/brooks-kuhn-pulmonology-critical-care-medicine-internal-medicine-sacramento/\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/22131/brooks-kuhn-pulmonology-critical-care-medicine-internal-medicine-sacramento/\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/22131/brooks-kuhn-pulmonology-critical-care-medicine-internal-medicine-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:08.455Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/22131/brooks-kuhn-pulmonology-critical-care-medicine-internal-medicine-sacramento",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/22131/brooks-kuhn-pulmonology-critical-care-medicine-internal-medicine-sacramento/"
-}

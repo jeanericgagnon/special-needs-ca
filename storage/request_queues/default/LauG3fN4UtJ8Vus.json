@@ -1,9 +1,0 @@
-{
-	"id": "LauG3fN4UtJ8Vus",
-	"json": "{\"id\":\"LauG3fN4UtJ8Vus\",\"url\":\"https://mindbrain.ucdavis.edu/news/psychologist-attention-receives-uc-davis-teaching-prize\",\"loadedUrl\":\"https://mindbrain.ucdavis.edu/news/psychologist-attention-receives-uc-davis-teaching-prize\",\"uniqueKey\":\"https://mindbrain.ucdavis.edu/news/psychologist-attention-receives-uc-davis-teaching-prize\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:12.939Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://mindbrain.ucdavis.edu/news/psychologist-attention-receives-uc-davis-teaching-prize",
-	"url": "https://mindbrain.ucdavis.edu/news/psychologist-attention-receives-uc-davis-teaching-prize"
-}

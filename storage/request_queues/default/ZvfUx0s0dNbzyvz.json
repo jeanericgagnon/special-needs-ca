@@ -1,9 +1,0 @@
-{
-	"id": "ZvfUx0s0dNbzyvz",
-	"json": "{\"id\":\"ZvfUx0s0dNbzyvz\",\"url\":\"https://www.cde.ca.gov/ci/rl/im/elaeldadoptbulletin2.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/rl/im/elaeldadoptbulletin2.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/rl/im/elaeldadoptbulletin2.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:59.276Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ci/rl/im/elaeldadoptbulletin2.asp",
-	"url": "https://www.cde.ca.gov/ci/rl/im/elaeldadoptbulletin2.asp"
-}

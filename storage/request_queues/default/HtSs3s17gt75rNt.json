@@ -1,9 +1,0 @@
-{
-	"id": "HtSs3s17gt75rNt",
-	"json": "{\"id\":\"HtSs3s17gt75rNt\",\"url\":\"https://edd.ca.gov/en/disability/step-6-manage-benefits/\",\"loadedUrl\":\"https://edd.ca.gov/en/disability/step-6-manage-benefits/\",\"uniqueKey\":\"https://edd.ca.gov/en/disability/step-6-manage-benefits\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:39.898Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://edd.ca.gov/en/disability/step-6-manage-benefits",
-	"url": "https://edd.ca.gov/en/disability/step-6-manage-benefits/"
-}

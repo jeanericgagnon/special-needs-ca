@@ -1,9 +1,0 @@
-{
-	"id": "68uLB18RZ7ri0CT",
-	"json": "{\"id\":\"68uLB18RZ7ri0CT\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDCB/Pages/AlzheimersDiseaseProgram.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDCB/Pages/AlzheimersDiseaseProgram.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDCB/Pages/AlzheimersDiseaseProgram.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:02:15.551Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDCB/Pages/AlzheimersDiseaseProgram.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDCB/Pages/AlzheimersDiseaseProgram.aspx"
-}

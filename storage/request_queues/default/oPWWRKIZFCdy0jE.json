@@ -1,9 +1,0 @@
-{
-	"id": "oPWWRKIZFCdy0jE",
-	"json": "{\"id\":\"oPWWRKIZFCdy0jE\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/1591/megan-daly-cancer-radiation_oncology-sacramento?FreeText%3aLast+name=daly\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/1591/megan-daly-cancer-radiation_oncology-sacramento?FreeText%3aLast+name=daly\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/1591/megan-daly-cancer-radiation_oncology-sacramento?FreeText%3ALast+name=daly\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:14.448Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/1591/megan-daly-cancer-radiation_oncology-sacramento?FreeText%3ALast+name=daly",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/1591/megan-daly-cancer-radiation_oncology-sacramento?FreeText%3aLast+name=daly"
-}

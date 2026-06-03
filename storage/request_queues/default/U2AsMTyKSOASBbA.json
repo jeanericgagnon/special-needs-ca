@@ -1,9 +1,0 @@
-{
-	"id": "U2AsMTyKSOASBbA",
-	"json": "{\"id\":\"U2AsMTyKSOASBbA\",\"url\":\"https://www.immigrantguide.ca.gov/en/Home/Translate\",\"loadedUrl\":\"https://www.immigrantguide.ca.gov/en/Home/Translate\",\"uniqueKey\":\"https://www.immigrantguide.ca.gov/en/Home/Translate\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:51.702Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.immigrantguide.ca.gov/en/Home/Translate",
-	"url": "https://www.immigrantguide.ca.gov/en/Home/Translate"
-}

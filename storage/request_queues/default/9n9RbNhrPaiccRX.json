@@ -1,9 +1,0 @@
-{
-	"id": "9n9RbNhrPaiccRX",
-	"json": "{\"id\":\"9n9RbNhrPaiccRX\",\"url\":\"https://health.ucdavis.edu/publish/news/him/\",\"loadedUrl\":\"https://health.ucdavis.edu/news/latest/\",\"uniqueKey\":\"https://health.ucdavis.edu/publish/news/him\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:58.292Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/publish/news/him",
-	"url": "https://health.ucdavis.edu/publish/news/him/"
-}

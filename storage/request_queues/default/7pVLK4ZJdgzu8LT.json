@@ -1,9 +1,0 @@
-{
-	"id": "7pVLK4ZJdgzu8LT",
-	"json": "{\"id\":\"7pVLK4ZJdgzu8LT\",\"url\":\"https://health.ucdavis.edu/nursing/ourteam/faculty/edna-esquer-bio.html\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/ourteam/faculty/edna-esquer-bio.html\",\"uniqueKey\":\"https://health.ucdavis.edu/nursing/ourteam/faculty/edna-esquer-bio.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:09.144Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/nursing/ourteam/faculty/edna-esquer-bio.html",
-	"url": "https://health.ucdavis.edu/nursing/ourteam/faculty/edna-esquer-bio.html"
-}

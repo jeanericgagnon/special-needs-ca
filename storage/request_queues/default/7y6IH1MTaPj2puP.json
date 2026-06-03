@@ -1,9 +1,0 @@
-{
-	"id": "7y6IH1MTaPj2puP",
-	"json": "{\"id\":\"7y6IH1MTaPj2puP\",\"url\":\"https://health.ucdavis.edu/mind-institute/research/cene-brain-bank/cene-brain-donations-span\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/research/cene-brain-bank/cene-brain-donations-span\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/research/cene-brain-bank/cene-brain-donations-span\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:26.411Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mind-institute/research/cene-brain-bank/cene-brain-donations-span",
-	"url": "https://health.ucdavis.edu/mind-institute/research/cene-brain-bank/cene-brain-donations-span"
-}

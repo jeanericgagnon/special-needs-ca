@@ -1,9 +1,0 @@
-{
-	"id": "cyMGER0eYiCkrWc",
-	"json": "{\"id\":\"cyMGER0eYiCkrWc\",\"url\":\"https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=LAB&division=3.&title=&part=&chapter=4.&article=4.\",\"loadedUrl\":\"https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=LAB&division=3.&title=&part=&chapter=4.&article=4.\",\"uniqueKey\":\"https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?article=4.&chapter=4.&division=3.&lawCode=LAB&part=&title=\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:10.994Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?article=4.&chapter=4.&division=3.&lawCode=LAB&part=&title=",
-	"url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=LAB&division=3.&title=&part=&chapter=4.&article=4."
-}

@@ -1,9 +1,0 @@
-{
-	"id": "YwEBSNj12WHQth8",
-	"json": "{\"id\":\"YwEBSNj12WHQth8\",\"url\":\"https://www.cde.ca.gov/ta/ac/cm/\",\"loadedUrl\":\"https://www.cde.ca.gov/ta/ac/cm/\",\"uniqueKey\":\"https://www.cde.ca.gov/ta/ac/cm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:54.628Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ta/ac/cm",
-	"url": "https://www.cde.ca.gov/ta/ac/cm/"
-}

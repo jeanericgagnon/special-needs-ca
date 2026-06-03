@@ -1,9 +1,0 @@
-{
-	"id": "KVL8vNvgJ3DQS6L",
-	"json": "{\"id\":\"KVL8vNvgJ3DQS6L\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/BIH/Pages/Evaluation.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/BIH/Pages/Evaluation.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/BIH/Pages/Evaluation.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:50.162Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/BIH/Pages/Evaluation.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/BIH/Pages/Evaluation.aspx"
-}

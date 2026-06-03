@@ -1,9 +1,0 @@
-{
-	"id": "3spgIuBoOQGsZWI",
-	"json": "{\"id\":\"3spgIuBoOQGsZWI\",\"url\":\"https://rarediseases.org/news/?taxonomy[category]=medicaid\",\"loadedUrl\":\"https://rarediseases.org/news/?taxonomy[category]=medicaid\",\"uniqueKey\":\"https://rarediseases.org/news?taxonomy%5Bcategory%5D=medicaid\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:20:43.887Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/news?taxonomy%5Bcategory%5D=medicaid",
-	"url": "https://rarediseases.org/news/?taxonomy[category]=medicaid"
-}

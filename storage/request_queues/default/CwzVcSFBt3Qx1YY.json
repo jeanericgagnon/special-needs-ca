@@ -1,9 +1,0 @@
-{
-	"id": "CwzVcSFBt3Qx1YY",
-	"json": "{\"id\":\"CwzVcSFBt3Qx1YY\",\"url\":\"https://calable.ca.gov/historical-performance\",\"loadedUrl\":\"https://calable.ca.gov/historical-performance\",\"uniqueKey\":\"https://calable.ca.gov/historical-performance\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:15.592Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://calable.ca.gov/historical-performance",
-	"url": "https://calable.ca.gov/historical-performance"
-}

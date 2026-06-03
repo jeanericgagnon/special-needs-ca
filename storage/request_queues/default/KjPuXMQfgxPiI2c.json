@@ -1,9 +1,0 @@
-{
-	"id": "KjPuXMQfgxPiI2c",
-	"json": "{\"id\":\"KjPuXMQfgxPiI2c\",\"url\":\"https://bme.ucdavis.edu/people/craig-benham\",\"loadedUrl\":\"https://bme.ucdavis.edu/people/craig-benham\",\"uniqueKey\":\"https://bme.ucdavis.edu/people/craig-benham\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:42.207Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://bme.ucdavis.edu/people/craig-benham",
-	"url": "https://bme.ucdavis.edu/people/craig-benham"
-}

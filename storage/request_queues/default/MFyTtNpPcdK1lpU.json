@@ -1,9 +1,0 @@
-{
-	"id": "MFyTtNpPcdK1lpU",
-	"json": "{\"id\":\"MFyTtNpPcdK1lpU\",\"url\":\"https://hr.ucdavis.edu/news/mandatory-training-uc-ethics-and-compliance-briefing\",\"loadedUrl\":\"https://hr.ucdavis.edu/news/mandatory-training-uc-ethics-and-compliance-briefing\",\"uniqueKey\":\"https://hr.ucdavis.edu/news/mandatory-training-uc-ethics-and-compliance-briefing\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:47.904Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/news/mandatory-training-uc-ethics-and-compliance-briefing",
-	"url": "https://hr.ucdavis.edu/news/mandatory-training-uc-ethics-and-compliance-briefing"
-}

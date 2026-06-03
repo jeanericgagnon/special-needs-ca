@@ -1,9 +1,0 @@
-{
-	"id": "nAgjnVPp69M1v4R",
-	"json": "{\"id\":\"nAgjnVPp69M1v4R\",\"url\":\"https://www.reducetherisk.ca.gov/newsletters/\",\"loadedUrl\":\"https://www.reducetherisk.ca.gov/newsletters/\",\"uniqueKey\":\"https://www.reducetherisk.ca.gov/newsletters\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:52.260Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.reducetherisk.ca.gov/newsletters",
-	"url": "https://www.reducetherisk.ca.gov/newsletters/"
-}

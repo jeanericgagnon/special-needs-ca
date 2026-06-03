@@ -1,9 +1,0 @@
-{
-	"id": "FgeJvRcbt6mHfNT",
-	"json": "{\"id\":\"FgeJvRcbt6mHfNT\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/1193/marc-silverstein-dermatology-sacramento?FreeText%3aLast+name=silverstein\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/1193/marc-silverstein-dermatology-sacramento?FreeText%3aLast+name=silverstein\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/1193/marc-silverstein-dermatology-sacramento?FreeText%3ALast+name=silverstein\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:08.692Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/1193/marc-silverstein-dermatology-sacramento?FreeText%3ALast+name=silverstein",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/1193/marc-silverstein-dermatology-sacramento?FreeText%3aLast+name=silverstein"
-}

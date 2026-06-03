@@ -1,9 +1,0 @@
-{
-	"id": "PZ1SxI2aIorjfVb",
-	"json": "{\"id\":\"PZ1SxI2aIorjfVb\",\"url\":\"https://savma.vetmed.ucdavis.edu/\",\"loadedUrl\":\"https://savma.vetmed.ucdavis.edu/\",\"uniqueKey\":\"https://savma.vetmed.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:23:59.190Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://savma.vetmed.ucdavis.edu",
-	"url": "https://savma.vetmed.ucdavis.edu/"
-}

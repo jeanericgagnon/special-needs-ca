@@ -1,9 +1,0 @@
-{
-	"id": "L77crQltCJTpwEG",
-	"json": "{\"id\":\"L77crQltCJTpwEG\",\"url\":\"https://www.cde.ca.gov/fg/aa/ca/socalroc.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/fg/aa/ca/socalroc.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/fg/aa/ca/socalroc.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:22:25.861Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/fg/aa/ca/socalroc.asp",
-	"url": "https://www.cde.ca.gov/fg/aa/ca/socalroc.asp"
-}

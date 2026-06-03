@@ -1,9 +1,0 @@
-{
-	"id": "cps9SMBxHkNR4ET",
-	"json": "{\"id\":\"cps9SMBxHkNR4ET\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/1031/chris-shin-physical_medicine_and_rehabilitation-sacramento?FreeText:Last+name=shin\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/1031/chris-shin-physical_medicine_and_rehabilitation-sacramento?FreeText:Last+name=shin\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/1031/chris-shin-physical_medicine_and_rehabilitation-sacramento?FreeText%3ALast+name=shin\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:13.937Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/1031/chris-shin-physical_medicine_and_rehabilitation-sacramento?FreeText%3ALast+name=shin",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/1031/chris-shin-physical_medicine_and_rehabilitation-sacramento?FreeText:Last+name=shin"
-}

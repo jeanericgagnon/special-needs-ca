@@ -1,9 +1,0 @@
-{
-	"id": "Xt7cKqi1A7eovcP",
-	"json": "{\"id\":\"Xt7cKqi1A7eovcP\",\"url\":\"https://edd.ca.gov/en/unemployment/Employer_Information/\",\"loadedUrl\":\"https://edd.ca.gov/en/unemployment/Employer_Information/\",\"uniqueKey\":\"https://edd.ca.gov/en/unemployment/Employer_Information\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:40.811Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://edd.ca.gov/en/unemployment/Employer_Information",
-	"url": "https://edd.ca.gov/en/unemployment/Employer_Information/"
-}

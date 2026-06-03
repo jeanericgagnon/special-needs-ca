@@ -1,9 +1,0 @@
-{
-	"id": "C9N0z2hwIMg7LqU",
-	"json": "{\"id\":\"C9N0z2hwIMg7LqU\",\"url\":\"https://data.chhs.ca.gov/dataset?sort=views_recent+desc\",\"loadedUrl\":\"https://data.chhs.ca.gov/dataset?sort=views_recent+desc\",\"uniqueKey\":\"https://data.chhs.ca.gov/dataset?sort=views_recent+desc\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:47.762Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://data.chhs.ca.gov/dataset?sort=views_recent+desc",
-	"url": "https://data.chhs.ca.gov/dataset?sort=views_recent+desc"
-}

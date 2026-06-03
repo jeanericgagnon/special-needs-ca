@@ -1,9 +1,0 @@
-{
-	"id": "8GgEcmbnUCP0LPx",
-	"json": "{\"id\":\"8GgEcmbnUCP0LPx\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/1138/eric-giza-orthopaedic_surgery_-_adult_foot_and_ankle_surgery-sacramento?FreeText%3aLast+name=Giza\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/1138/eric-giza-orthopaedic_surgery_-_adult_foot_and_ankle_surgery-sacramento?FreeText%3aLast+name=Giza\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/1138/eric-giza-orthopaedic_surgery_-_adult_foot_and_ankle_surgery-sacramento?FreeText%3ALast+name=Giza\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:13.273Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/1138/eric-giza-orthopaedic_surgery_-_adult_foot_and_ankle_surgery-sacramento?FreeText%3ALast+name=Giza",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/1138/eric-giza-orthopaedic_surgery_-_adult_foot_and_ankle_surgery-sacramento?FreeText%3aLast+name=Giza"
-}

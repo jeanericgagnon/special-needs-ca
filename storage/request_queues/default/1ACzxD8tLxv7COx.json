@@ -1,9 +1,0 @@
-{
-	"id": "1ACzxD8tLxv7COx",
-	"json": "{\"id\":\"1ACzxD8tLxv7COx\",\"url\":\"https://mindbrain.ucdavis.edu/people/petr-janata\",\"loadedUrl\":\"https://mindbrain.ucdavis.edu/people/petr-janata\",\"uniqueKey\":\"https://mindbrain.ucdavis.edu/people/petr-janata\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:08.891Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://mindbrain.ucdavis.edu/people/petr-janata",
-	"url": "https://mindbrain.ucdavis.edu/people/petr-janata"
-}

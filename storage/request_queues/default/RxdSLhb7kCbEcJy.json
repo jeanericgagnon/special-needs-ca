@@ -1,9 +1,0 @@
-{
-	"id": "RxdSLhb7kCbEcJy",
-	"json": "{\"id\":\"RxdSLhb7kCbEcJy\",\"url\":\"https://data.ca.gov/dataset/ccrs\",\"loadedUrl\":\"https://data.ca.gov/dataset/ccrs\",\"uniqueKey\":\"https://data.ca.gov/dataset/ccrs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:16.105Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://data.ca.gov/dataset/ccrs",
-	"url": "https://data.ca.gov/dataset/ccrs"
-}

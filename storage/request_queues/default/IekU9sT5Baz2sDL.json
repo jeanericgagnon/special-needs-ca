@@ -1,9 +1,0 @@
-{
-	"id": "IekU9sT5Baz2sDL",
-	"json": "{\"id\":\"IekU9sT5Baz2sDL\",\"url\":\"https://www.dds.ca.gov/rc/vendor-provider/rate-reform/directives-updates/exemptions-data-march-16\",\"loadedUrl\":\"https://www.dds.ca.gov/rc/vendor-provider/rate-reform/directives-updates/exemptions-data-march-16/\",\"uniqueKey\":\"https://www.dds.ca.gov/rc/vendor-provider/rate-reform/directives-updates/exemptions-data-march-16\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:53.215Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/rc/vendor-provider/rate-reform/directives-updates/exemptions-data-march-16",
-	"url": "https://www.dds.ca.gov/rc/vendor-provider/rate-reform/directives-updates/exemptions-data-march-16"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "pzsJa3U4j6aaddi",
-	"json": "{\"id\":\"pzsJa3U4j6aaddi\",\"url\":\"https://neuroscience.ucdavis.edu/people/kassandra-ori-mckenney\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/people/kassandra-ori-mckenney\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/people/kassandra-ori-mckenney\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:49.695Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/people/kassandra-ori-mckenney",
-	"url": "https://neuroscience.ucdavis.edu/people/kassandra-ori-mckenney"
-}

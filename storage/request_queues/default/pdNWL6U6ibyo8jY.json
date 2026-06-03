@@ -1,9 +1,0 @@
-{
-	"id": "pdNWL6U6ibyo8jY",
-	"json": "{\"id\":\"pdNWL6U6ibyo8jY\",\"url\":\"https://health.ucdavis.edu/conditions/endocrinology-diabetes/diabetes\",\"loadedUrl\":\"https://health.ucdavis.edu/conditions/endocrinology-diabetes/diabetes\",\"uniqueKey\":\"https://health.ucdavis.edu/conditions/endocrinology-diabetes/diabetes\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:39.881Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/conditions/endocrinology-diabetes/diabetes",
-	"url": "https://health.ucdavis.edu/conditions/endocrinology-diabetes/diabetes"
-}

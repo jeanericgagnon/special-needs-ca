@@ -1,9 +1,0 @@
-{
-	"id": "wNUjpNAX2HQ3Aik",
-	"json": "{\"id\":\"wNUjpNAX2HQ3Aik\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/CLPPB/Pages/LRCcertreqd.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/CLPPB/Pages/LRCcertreqd.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/CLPPB/Pages/LRCcertreqd.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:11:31.647Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/CLPPB/Pages/LRCcertreqd.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/CLPPB/Pages/LRCcertreqd.aspx"
-}

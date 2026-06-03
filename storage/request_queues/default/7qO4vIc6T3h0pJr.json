@@ -1,9 +1,0 @@
-{
-	"id": "7qO4vIc6T3h0pJr",
-	"json": "{\"id\":\"7qO4vIc6T3h0pJr\",\"url\":\"https://health.ucdavis.edu/otolaryngology/education/residency/program.html\",\"loadedUrl\":\"https://health.ucdavis.edu/otolaryngology/education/residency/program.html\",\"uniqueKey\":\"https://health.ucdavis.edu/otolaryngology/education/residency/program.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:55.913Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/otolaryngology/education/residency/program.html",
-	"url": "https://health.ucdavis.edu/otolaryngology/education/residency/program.html"
-}

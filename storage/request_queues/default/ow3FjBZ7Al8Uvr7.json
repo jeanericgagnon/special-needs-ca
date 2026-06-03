@@ -1,9 +1,0 @@
-{
-	"id": "ow3FjBZ7Al8Uvr7",
-	"json": "{\"id\":\"ow3FjBZ7Al8Uvr7\",\"url\":\"https://www.cdii.ca.gov/info/privacy-policy/\",\"loadedUrl\":\"https://www.cdii.ca.gov/info/privacy-policy/\",\"uniqueKey\":\"https://www.cdii.ca.gov/info/privacy-policy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:28:37.533Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdii.ca.gov/info/privacy-policy",
-	"url": "https://www.cdii.ca.gov/info/privacy-policy/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "v7mNLeXDQm2xD6j",
-	"json": "{\"id\":\"v7mNLeXDQm2xD6j\",\"url\":\"https://www.csb-cde.ca.gov/resources/covid-19/ipevocamerazoom.aspx\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=5648236b-e36e-4b6d-ad03-81b8552df867&ssb=43734269068&ssc=https%3A%2F%2Fwww.csb-cde.ca.gov%2Fresources%2Fcovid-19%2Fipevocamerazoom.aspx&ssi=dd091d98-cuez-4d4c-8d5e-b3c18ed254d5&ssk=botmanager_support@radware.com&ssm=97576506492237163102908662114497&ssn=1805d582a3c79e7eacd86b7f2e0e50aae42f7364b387-4a6d-4486-907a61&sso=97125b15-d07196df48631592e4f3f5851030e8168494f57143f3b790&ssp=89033368551780334332178038287066911&ssq=22501542762759253826427627944574385902105&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDA3MzY0YjM4Ny00YTZkLTQ0ODYtOWIxNS1kMDcxOTZkZjQ4NjMxLTE3ODAzMjc2MjcxMzcwLTAwM2Q4MjFkYjc2MTlmYzc3ZDcxMCIsInJkIjoiY2EuZ292IiwidXpteCI6IjdmOTAwMDAyNmE5MjUzLWMzMDItNDA0MS1hNzJhLTY3ZjU0N2ZjNDdiMzEtMTc4MDMyNTg4Mjg2OTE3NDQyNjgtNDgxZGJjMjUzMmU2NDYwYzE5In0=\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/resources/covid-19/ipevocamerazoom.aspx\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:27:07.682Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.csb-cde.ca.gov/resources/covid-19/ipevocamerazoom.aspx",
-	"url": "https://www.csb-cde.ca.gov/resources/covid-19/ipevocamerazoom.aspx"
-}

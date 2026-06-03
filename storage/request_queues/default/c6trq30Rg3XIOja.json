@@ -1,9 +1,0 @@
-{
-	"id": "c6trq30Rg3XIOja",
-	"json": "{\"id\":\"c6trq30Rg3XIOja\",\"url\":\"https://health.ucdavis.edu/surgery/research.html\",\"loadedUrl\":\"https://health.ucdavis.edu/surgery/research.html\",\"uniqueKey\":\"https://health.ucdavis.edu/surgery/research.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:56.204Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/surgery/research.html",
-	"url": "https://health.ucdavis.edu/surgery/research.html"
-}

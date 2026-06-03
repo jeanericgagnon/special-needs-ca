@@ -1,9 +1,0 @@
-{
-	"id": "r6s4PMeBnho8QfU",
-	"json": "{\"id\":\"r6s4PMeBnho8QfU\",\"url\":\"https://health.ucdavis.edu/medical-center/team/201/joseph-tuscano---bone-marrow-transplant---leukemia-sacramento/\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-center/team/201/joseph-tuscano---bone-marrow-transplant---leukemia-sacramento/\",\"uniqueKey\":\"https://health.ucdavis.edu/medical-center/team/201/joseph-tuscano---bone-marrow-transplant---leukemia-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:42.907Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/medical-center/team/201/joseph-tuscano---bone-marrow-transplant---leukemia-sacramento",
-	"url": "https://health.ucdavis.edu/medical-center/team/201/joseph-tuscano---bone-marrow-transplant---leukemia-sacramento/"
-}

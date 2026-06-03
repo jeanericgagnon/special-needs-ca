@@ -1,9 +1,0 @@
-{
-	"id": "nS4maU3L31SVy3G",
-	"json": "{\"id\":\"nS4maU3L31SVy3G\",\"url\":\"https://lgbtqia.ucdavis.edu/support/trans-resources\",\"loadedUrl\":\"https://lgbtqia.ucdavis.edu/support/trans-resources\",\"uniqueKey\":\"https://lgbtqia.ucdavis.edu/support/trans-resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:11.445Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://lgbtqia.ucdavis.edu/support/trans-resources",
-	"url": "https://lgbtqia.ucdavis.edu/support/trans-resources"
-}

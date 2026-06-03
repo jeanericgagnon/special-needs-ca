@@ -1,9 +1,0 @@
-{
-	"id": "BWNekOVNoqanI82",
-	"json": "{\"id\":\"BWNekOVNoqanI82\",\"url\":\"https://data.chhs.ca.gov/dataset\",\"loadedUrl\":\"https://data.chhs.ca.gov/dataset\",\"uniqueKey\":\"https://data.chhs.ca.gov/dataset\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:46.632Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://data.chhs.ca.gov/dataset",
-	"url": "https://data.chhs.ca.gov/dataset"
-}

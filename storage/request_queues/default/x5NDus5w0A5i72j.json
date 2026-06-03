@@ -1,9 +1,0 @@
-{
-	"id": "x5NDus5w0A5i72j",
-	"json": "{\"id\":\"x5NDus5w0A5i72j\",\"url\":\"https://health.ucdavis.edu/children/services/NICU/special-programs/webcam-program\",\"loadedUrl\":\"https://health.ucdavis.edu/children/services/NICU/special-programs/webcam-program\",\"uniqueKey\":\"https://health.ucdavis.edu/children/services/NICU/special-programs/webcam-program\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:31:11.903Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/children/services/NICU/special-programs/webcam-program",
-	"url": "https://health.ucdavis.edu/children/services/NICU/special-programs/webcam-program"
-}

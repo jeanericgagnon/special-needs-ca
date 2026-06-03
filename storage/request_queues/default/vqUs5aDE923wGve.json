@@ -1,9 +1,0 @@
-{
-	"id": "vqUs5aDE923wGve",
-	"json": "{\"id\":\"vqUs5aDE923wGve\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/EHIB/SAS/_layouts/15/listform.aspx?ListId=%7BD22410EC%2D4C5A%2D4922%2D80C0%2D9D73089B41E1%7D&PageType=0\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/EHIB/SAS/Pages/SAS-Landing-Page.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/EHIB/SAS/_layouts/15/listform.aspx?ListId=%7BD22410EC-4C5A-4922-80C0-9D73089B41E1%7D&PageType=0\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:30:24.605Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/EHIB/SAS/_layouts/15/listform.aspx?ListId=%7BD22410EC-4C5A-4922-80C0-9D73089B41E1%7D&PageType=0",
-	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/EHIB/SAS/_layouts/15/listform.aspx?ListId=%7BD22410EC%2D4C5A%2D4922%2D80C0%2D9D73089B41E1%7D&PageType=0"
-}

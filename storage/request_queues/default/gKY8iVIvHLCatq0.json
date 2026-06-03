@@ -1,9 +1,0 @@
-{
-	"id": "gKY8iVIvHLCatq0",
-	"json": "{\"id\":\"gKY8iVIvHLCatq0\",\"url\":\"https://cdss.ca.gov/inforesources/IHSS/Fact-Sheets\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/ihss/fact-sheets\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/IHSS/Fact-Sheets\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:58:37.606Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/IHSS/Fact-Sheets",
-	"url": "https://cdss.ca.gov/inforesources/IHSS/Fact-Sheets"
-}

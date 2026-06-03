@@ -1,9 +1,0 @@
-{
-	"id": "QlM1rZgJsuIgwdH",
-	"json": "{\"id\":\"QlM1rZgJsuIgwdH\",\"url\":\"https://cdss.ca.gov/inforesources/child-welfare-overview/child-welfare-for-medi-cal-providers\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/child-welfare-overview/child-welfare-for-medi-cal-providers\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/child-welfare-overview/child-welfare-for-medi-cal-providers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:18.070Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/child-welfare-overview/child-welfare-for-medi-cal-providers",
-	"url": "https://cdss.ca.gov/inforesources/child-welfare-overview/child-welfare-for-medi-cal-providers"
-}

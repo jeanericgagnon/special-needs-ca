@@ -1,9 +1,0 @@
-{
-	"id": "o8z84ttntKW2YRV",
-	"json": "{\"id\":\"o8z84ttntKW2YRV\",\"url\":\"https://cdss.ca.gov/inforesources/complex-care/funding-available\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/complex-care/funding-available\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/complex-care/funding-available\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:13.520Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/complex-care/funding-available",
-	"url": "https://cdss.ca.gov/inforesources/complex-care/funding-available"
-}

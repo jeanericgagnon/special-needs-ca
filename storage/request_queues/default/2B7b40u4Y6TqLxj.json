@@ -1,9 +1,0 @@
-{
-	"id": "2B7b40u4Y6TqLxj",
-	"json": "{\"id\":\"2B7b40u4Y6TqLxj\",\"url\":\"https://caes.ucdavis.edu/news/events/alumni\",\"loadedUrl\":\"https://caes.ucdavis.edu/news/events/alumni\",\"uniqueKey\":\"https://caes.ucdavis.edu/news/events/alumni\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:55:35.703Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://caes.ucdavis.edu/news/events/alumni",
-	"url": "https://caes.ucdavis.edu/news/events/alumni"
-}

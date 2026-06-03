@@ -1,9 +1,0 @@
-{
-	"id": "zKFPE2iMF8JucWn",
-	"json": "{\"id\":\"zKFPE2iMF8JucWn\",\"url\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/FY25-26-ROC-Fee-Schedule.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/FY25-26-ROC-Fee-Schedule.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/FY25-26-ROC-Fee-Schedule.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":1,\"errorMessages\":[\"RequestError: Timeout awaiting 'request' for 30000ms\\n    at ClientRequest.<anonymous> (file:///Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/got/dist/source/core/index.js:868:61)\\n    at Object.onceWrapper (node:events:634:26)\\n    at ClientRequest.emit (node:events:531:35)\\n    at request.emit (file:///Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/got-scraping/dist/index.js:703:14)\\n    at emitErrorNT (node:internal/streams/destroy:170:8)\\n    at emitErrorCloseNT (node:internal/streams/destroy:129:3)\\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)\\n    at Timeout._onTimeout (file:///Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/got/dist/source/core/timed-out.js:38:33)\\n    at listOnTimeout (node:internal/timers:588:17)\\n    at process.processTimers (node:internal/timers:523:7)\"],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:13:13.048Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 1,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/FY25-26-ROC-Fee-Schedule.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/FY25-26-ROC-Fee-Schedule.aspx"
-}

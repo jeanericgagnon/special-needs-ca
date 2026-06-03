@@ -1,9 +1,0 @@
-{
-	"id": "kkhuRxv23Ov2uzj",
-	"json": "{\"id\":\"kkhuRxv23Ov2uzj\",\"url\":\"https://www.cde.ca.gov/ta/tg/gd/hseadmindocuments.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ta/tg/gd/hseadmindocuments.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ta/tg/gd/hseadmindocuments.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:14:07.849Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ta/tg/gd/hseadmindocuments.asp",
-	"url": "https://www.cde.ca.gov/ta/tg/gd/hseadmindocuments.asp"
-}

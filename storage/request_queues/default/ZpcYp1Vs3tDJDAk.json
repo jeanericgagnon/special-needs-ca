@@ -1,9 +1,0 @@
-{
-	"id": "ZpcYp1Vs3tDJDAk",
-	"json": "{\"id\":\"ZpcYp1Vs3tDJDAk\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/NUPA/Pages/Tips-for-Healthy-Families.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/NUPA/Pages/Tips-for-Healthy-Families.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/NUPA/Pages/Tips-for-Healthy-Families.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:01:26.227Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/NUPA/Pages/Tips-for-Healthy-Families.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/NUPA/Pages/Tips-for-Healthy-Families.aspx"
-}

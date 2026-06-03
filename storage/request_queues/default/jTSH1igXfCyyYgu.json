@@ -1,9 +1,0 @@
-{
-	"id": "jTSH1igXfCyyYgu",
-	"json": "{\"id\":\"jTSH1igXfCyyYgu\",\"url\":\"https://iet.ucdavis.edu/units/enterprise-iet/academic-applications/ats\",\"loadedUrl\":\"https://iet.ucdavis.edu/units/enterprise-iet/academic-applications/ats\",\"uniqueKey\":\"https://iet.ucdavis.edu/units/enterprise-iet/academic-applications/ats\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:16.690Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://iet.ucdavis.edu/units/enterprise-iet/academic-applications/ats",
-	"url": "https://iet.ucdavis.edu/units/enterprise-iet/academic-applications/ats"
-}

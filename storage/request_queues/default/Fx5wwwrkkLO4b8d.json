@@ -1,9 +1,0 @@
-{
-	"id": "Fx5wwwrkkLO4b8d",
-	"json": "{\"id\":\"Fx5wwwrkkLO4b8d\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/456/anthony-tony-jerant-family_and_community_medicine-sacramento?FreeText%3aLast+name=jerant\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/456/anthony-tony-jerant-family_and_community_medicine-sacramento?FreeText%3aLast+name=jerant\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/456/anthony-tony-jerant-family_and_community_medicine-sacramento?FreeText%3ALast+name=jerant\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:09.754Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/456/anthony-tony-jerant-family_and_community_medicine-sacramento?FreeText%3ALast+name=jerant",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/456/anthony-tony-jerant-family_and_community_medicine-sacramento?FreeText%3aLast+name=jerant"
-}

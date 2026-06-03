@@ -1,9 +1,0 @@
-{
-	"id": "g1xgFVcVqHHkNj4",
-	"json": "{\"id\":\"g1xgFVcVqHHkNj4\",\"url\":\"https://ombuds.ucdavis.edu/cdn-cgi/l/email-protection\",\"loadedUrl\":\"https://ombuds.ucdavis.edu/cdn-cgi/l/email-protection\",\"uniqueKey\":\"https://ombuds.ucdavis.edu/cdn-cgi/l/email-protection\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:00.945Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ombuds.ucdavis.edu/cdn-cgi/l/email-protection",
-	"url": "https://ombuds.ucdavis.edu/cdn-cgi/l/email-protection"
-}

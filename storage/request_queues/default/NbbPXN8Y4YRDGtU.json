@@ -1,9 +1,0 @@
-{
-	"id": "NbbPXN8Y4YRDGtU",
-	"json": "{\"id\":\"NbbPXN8Y4YRDGtU\",\"url\":\"https://give.ucdavis.edu/MNAL/ADCGIFT\",\"loadedUrl\":\"https://give.ucdavis.edu/MNAL/ADCGIFT\",\"uniqueKey\":\"https://give.ucdavis.edu/MNAL/ADCGIFT\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:52.092Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/MNAL/ADCGIFT",
-	"url": "https://give.ucdavis.edu/MNAL/ADCGIFT"
-}

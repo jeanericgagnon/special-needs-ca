@@ -1,9 +1,0 @@
-{
-	"id": "X1hiHuB4ab769K8",
-	"json": "{\"id\":\"X1hiHuB4ab769K8\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/866/cecilia-terrado-gastroenterology-rocklin-sacramento?FreeText%3aLast+name=Terrado\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/866/cecilia-terrado-gastroenterology-rocklin-sacramento?FreeText%3aLast+name=Terrado\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/866/cecilia-terrado-gastroenterology-rocklin-sacramento?FreeText%3ALast+name=Terrado\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:09.904Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/866/cecilia-terrado-gastroenterology-rocklin-sacramento?FreeText%3ALast+name=Terrado",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/866/cecilia-terrado-gastroenterology-rocklin-sacramento?FreeText%3aLast+name=Terrado"
-}

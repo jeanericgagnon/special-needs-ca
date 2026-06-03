@@ -1,9 +1,0 @@
-{
-	"id": "D9Sz9dDdIVtxHfJ",
-	"json": "{\"id\":\"D9Sz9dDdIVtxHfJ\",\"url\":\"https://cadeafblind.org/deafblindness-overview/\",\"loadedUrl\":\"https://cadeafblind.org/deafblindness-overview/\",\"uniqueKey\":\"https://cadeafblind.org/deafblindness-overview\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:50.269Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cadeafblind.org/deafblindness-overview",
-	"url": "https://cadeafblind.org/deafblindness-overview/"
-}

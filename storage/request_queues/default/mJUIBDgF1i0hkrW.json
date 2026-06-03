@@ -1,9 +1,0 @@
-{
-	"id": "mJUIBDgF1i0hkrW",
-	"json": "{\"id\":\"mJUIBDgF1i0hkrW\",\"url\":\"https://calepa.ca.gov/yana-garcia-secretary-for-environmental-protection/\",\"loadedUrl\":\"https://calepa.ca.gov/yana-garcia-secretary-for-environmental-protection/\",\"uniqueKey\":\"https://calepa.ca.gov/yana-garcia-secretary-for-environmental-protection\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:09.522Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://calepa.ca.gov/yana-garcia-secretary-for-environmental-protection",
-	"url": "https://calepa.ca.gov/yana-garcia-secretary-for-environmental-protection/"
-}

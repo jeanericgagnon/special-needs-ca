@@ -1,9 +1,0 @@
-{
-	"id": "8oV0cgBIxmANdVD",
-	"json": "{\"id\":\"8oV0cgBIxmANdVD\",\"url\":\"https://www.cde.ca.gov/ci/cl/screenerfaqs.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/cl/screenerfaqs.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/cl/screenerfaqs.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:16.617Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ci/cl/screenerfaqs.asp",
-	"url": "https://www.cde.ca.gov/ci/cl/screenerfaqs.asp"
-}

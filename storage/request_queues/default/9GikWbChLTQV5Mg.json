@@ -1,9 +1,0 @@
-{
-	"id": "9GikWbChLTQV5Mg",
-	"json": "{\"id\":\"9GikWbChLTQV5Mg\",\"url\":\"https://cdss.ca.gov/inforesources/CDSS-Programs/Adoptions\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/cdss-programs/adoptions\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/CDSS-Programs/Adoptions\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:19.488Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/CDSS-Programs/Adoptions",
-	"url": "https://cdss.ca.gov/inforesources/CDSS-Programs/Adoptions"
-}

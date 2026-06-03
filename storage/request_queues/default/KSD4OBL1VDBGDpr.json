@@ -1,9 +1,0 @@
-{
-	"id": "KSD4OBL1VDBGDpr",
-	"json": "{\"id\":\"KSD4OBL1VDBGDpr\",\"url\":\"https://www.sos.ca.gov/elections/voting-resources/voting-california\",\"loadedUrl\":\"https://www.sos.ca.gov/elections/voting-resources/voting-california\",\"uniqueKey\":\"https://www.sos.ca.gov/elections/voting-resources/voting-california\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:19.156Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.sos.ca.gov/elections/voting-resources/voting-california",
-	"url": "https://www.sos.ca.gov/elections/voting-resources/voting-california"
-}

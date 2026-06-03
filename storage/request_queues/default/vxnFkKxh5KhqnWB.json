@@ -1,9 +1,0 @@
-{
-	"id": "vxnFkKxh5KhqnWB",
-	"json": "{\"id\":\"vxnFkKxh5KhqnWB\",\"url\":\"https://www.bcsh.ca.gov/calich/action_plan\",\"loadedUrl\":\"https://www.bcsh.ca.gov/calich/action_plan\",\"uniqueKey\":\"https://www.bcsh.ca.gov/calich/action_plan\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:48.283Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.bcsh.ca.gov/calich/action_plan",
-	"url": "https://www.bcsh.ca.gov/calich/action_plan"
-}

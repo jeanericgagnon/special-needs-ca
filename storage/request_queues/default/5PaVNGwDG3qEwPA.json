@@ -1,9 +1,0 @@
-{
-	"id": "5PaVNGwDG3qEwPA",
-	"json": "{\"id\":\"5PaVNGwDG3qEwPA\",\"url\":\"https://health.ucdavis.edu/welcome/news/headlines/naloxone-use-during-cardiac-arrest-linked-to-improved-survival/2026/05\",\"loadedUrl\":\"https://health.ucdavis.edu/welcome/news/headlines/naloxone-use-during-cardiac-arrest-linked-to-improved-survival/2026/05\",\"uniqueKey\":\"https://health.ucdavis.edu/welcome/news/headlines/naloxone-use-during-cardiac-arrest-linked-to-improved-survival/2026/05\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:53.972Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/welcome/news/headlines/naloxone-use-during-cardiac-arrest-linked-to-improved-survival/2026/05",
-	"url": "https://health.ucdavis.edu/welcome/news/headlines/naloxone-use-during-cardiac-arrest-linked-to-improved-survival/2026/05"
-}

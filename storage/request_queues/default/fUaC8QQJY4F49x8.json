@@ -1,9 +1,0 @@
-{
-	"id": "fUaC8QQJY4F49x8",
-	"json": "{\"id\":\"fUaC8QQJY4F49x8\",\"url\":\"https://rarediseases.org/rare-diseases/systemic-scleroderma/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/systemic-scleroderma/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/systemic-scleroderma\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:11:33.766Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/rare-diseases/systemic-scleroderma",
-	"url": "https://rarediseases.org/rare-diseases/systemic-scleroderma/"
-}

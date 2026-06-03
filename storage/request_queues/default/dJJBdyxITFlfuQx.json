@@ -1,9 +1,0 @@
-{
-	"id": "dJJBdyxITFlfuQx",
-	"json": "{\"id\":\"dJJBdyxITFlfuQx\",\"url\":\"https://give.ucdavis.edu/VCCM\",\"loadedUrl\":\"https://give.ucdavis.edu/404?aspxerrorpath=/VCCM\",\"uniqueKey\":\"https://give.ucdavis.edu/VCCM\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:54.326Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/VCCM",
-	"url": "https://give.ucdavis.edu/VCCM"
-}

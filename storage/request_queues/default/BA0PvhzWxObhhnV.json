@@ -1,9 +1,0 @@
-{
-	"id": "BA0PvhzWxObhhnV",
-	"json": "{\"id\":\"BA0PvhzWxObhhnV\",\"url\":\"https://environmentalhealth.ucdavis.edu/scientists/career-development\",\"loadedUrl\":\"https://environmentalhealth.ucdavis.edu/scientists/career-development\",\"uniqueKey\":\"https://environmentalhealth.ucdavis.edu/scientists/career-development\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:01.777Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://environmentalhealth.ucdavis.edu/scientists/career-development",
-	"url": "https://environmentalhealth.ucdavis.edu/scientists/career-development"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "RYlvyaY8Ei1qaX5",
-	"json": "{\"id\":\"RYlvyaY8Ei1qaX5\",\"url\":\"https://www.dds.ca.gov/newsletter/interactive-dashboard-on-equity-coming-summer-2026/\",\"loadedUrl\":\"https://www.dds.ca.gov/newsletter/interactive-dashboard-on-equity-coming-summer-2026/\",\"uniqueKey\":\"https://www.dds.ca.gov/newsletter/interactive-dashboard-on-equity-coming-summer-2026\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:02.829Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/newsletter/interactive-dashboard-on-equity-coming-summer-2026",
-	"url": "https://www.dds.ca.gov/newsletter/interactive-dashboard-on-equity-coming-summer-2026/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "K07dSFqHoXlq8oh",
-	"json": "{\"id\":\"K07dSFqHoXlq8oh\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/22044/stephanie-crossen-pediatric_endocrinology-sacramento?FreeText:Last+name=Crossen\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/22044/stephanie-crossen-pediatric_endocrinology-sacramento?FreeText:Last+name=Crossen\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/22044/stephanie-crossen-pediatric_endocrinology-sacramento?FreeText%3ALast+name=Crossen\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:16.782Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/22044/stephanie-crossen-pediatric_endocrinology-sacramento?FreeText%3ALast+name=Crossen",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/22044/stephanie-crossen-pediatric_endocrinology-sacramento?FreeText:Last+name=Crossen"
-}

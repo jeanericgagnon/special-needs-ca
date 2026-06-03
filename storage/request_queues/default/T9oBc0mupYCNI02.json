@@ -1,9 +1,0 @@
-{
-	"id": "T9oBc0mupYCNI02",
-	"json": "{\"id\":\"T9oBc0mupYCNI02\",\"url\":\"https://eservices.calhr.ca.gov/Survey/NewEmployee\",\"loadedUrl\":\"https://eservices.calhr.ca.gov/Survey/NewEmployee\",\"uniqueKey\":\"https://eservices.calhr.ca.gov/Survey/NewEmployee\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:03.608Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://eservices.calhr.ca.gov/Survey/NewEmployee",
-	"url": "https://eservices.calhr.ca.gov/Survey/NewEmployee"
-}

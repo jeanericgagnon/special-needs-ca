@@ -1,9 +1,0 @@
-{
-	"id": "IgmrBUGmenMfdxn",
-	"json": "{\"id\":\"IgmrBUGmenMfdxn\",\"url\":\"https://www.csdr-cde.ca.gov/charactereducation/\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=55cec909-117f-46b7-b856-fb97b61db09f&ssb=11370208183&ssc=https%3A%2F%2Fwww.csdr-cde.ca.gov%2Fcharactereducation%2F&ssi=a9a8f291-cuez-4d20-bb17-35999a5d5d56&ssk=botmanager_support@radware.com&ssm=16543140640414698101226113139280&ssn=48bf984876ef1b5dae080505b128e601414c7e4024a8-8d89-4443-a3f9c1&sso=53f1eca6-4856f80d724921409324b98c68636096c22a0dfdd3579ed9&ssp=82399057791780310230178030209733167&ssq=88549055487157893014154871391586251011455&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDA3ZTQwMjRhOC04ZDg5LTQ0NDMtYWNhNi00ODU2ZjgwZDcyNDkxLTE3ODAzNTQ4NzEwMzgwLTAwMzIyODNkM2M5ZmY4MGQ4NmUxMCIsInJkIjoiY2EuZ292IiwidXpteCI6IjdmOTAwMDZjYWU0ZTM1LWJiNWQtNGJhMC04NjU0LTYxM2E1YTQ2ZmE0NzEtMTc4MDM1NDg3MTAzOTAtM2Q0MTk5ZDdlM2VjNjlkMTEwIn0=\",\"uniqueKey\":\"https://www.csdr-cde.ca.gov/charactereducation\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T23:01:11.497Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.csdr-cde.ca.gov/charactereducation",
-	"url": "https://www.csdr-cde.ca.gov/charactereducation/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "HdR30XBNOPgK7KA",
-	"json": "{\"id\":\"HdR30XBNOPgK7KA\",\"url\":\"https://health.ucdavis.edu/ctsc/event-calendar.html\",\"loadedUrl\":\"https://health.ucdavis.edu/ctsc/event-calendar\",\"uniqueKey\":\"https://health.ucdavis.edu/ctsc/event-calendar.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:32.189Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/ctsc/event-calendar.html",
-	"url": "https://health.ucdavis.edu/ctsc/event-calendar.html"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "MZUt7t7ScCfauRQ",
-	"json": "{\"id\":\"MZUt7t7ScCfauRQ\",\"url\":\"https://data.chhs.ca.gov/group/diseases-and-conditions\",\"loadedUrl\":\"https://data.chhs.ca.gov/group/diseases-and-conditions\",\"uniqueKey\":\"https://data.chhs.ca.gov/group/diseases-and-conditions\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T18:34:17.260Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://data.chhs.ca.gov/group/diseases-and-conditions",
-	"url": "https://data.chhs.ca.gov/group/diseases-and-conditions"
-}

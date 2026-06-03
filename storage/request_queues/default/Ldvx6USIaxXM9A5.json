@@ -1,9 +1,0 @@
-{
-	"id": "Ldvx6USIaxXM9A5",
-	"json": "{\"id\":\"Ldvx6USIaxXM9A5\",\"url\":\"http://www.cdss.ca.gov/in-home-supportive-services/ihss-education-videos\",\"loadedUrl\":\"https://www.cdss.ca.gov/in-home-supportive-services/ihss-education-videos\",\"uniqueKey\":\"http://www.cdss.ca.gov/in-home-supportive-services/ihss-education-videos\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:38.293Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.cdss.ca.gov/in-home-supportive-services/ihss-education-videos",
-	"url": "http://www.cdss.ca.gov/in-home-supportive-services/ihss-education-videos"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "3Uj2f0cSrh3oZbv",
-	"json": "{\"id\":\"3Uj2f0cSrh3oZbv\",\"url\":\"https://health.ucdavis.edu/health-topics/obgyn\",\"loadedUrl\":\"https://health.ucdavis.edu/health-topics/obgyn\",\"uniqueKey\":\"https://health.ucdavis.edu/health-topics/obgyn\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:57.128Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/health-topics/obgyn",
-	"url": "https://health.ucdavis.edu/health-topics/obgyn"
-}

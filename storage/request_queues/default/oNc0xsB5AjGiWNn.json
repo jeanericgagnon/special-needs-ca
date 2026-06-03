@@ -1,9 +1,0 @@
-{
-	"id": "oNc0xsB5AjGiWNn",
-	"json": "{\"id\":\"oNc0xsB5AjGiWNn\",\"url\":\"https://health.ucdavis.edu/nursing/Research/distinctions/health-coaching.html\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/Research/distinctions/health-coaching.html\",\"uniqueKey\":\"https://health.ucdavis.edu/nursing/Research/distinctions/health-coaching.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:24.148Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/nursing/Research/distinctions/health-coaching.html",
-	"url": "https://health.ucdavis.edu/nursing/Research/distinctions/health-coaching.html"
-}

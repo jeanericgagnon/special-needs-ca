@@ -1,9 +1,0 @@
-{
-	"id": "CIRccaSwKKHKMld",
-	"json": "{\"id\":\"CIRccaSwKKHKMld\",\"url\":\"https://www.cde.ca.gov/ci/ct/bm/\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/ct/bm/\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/ct/bm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:18.581Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ci/ct/bm",
-	"url": "https://www.cde.ca.gov/ci/ct/bm/"
-}

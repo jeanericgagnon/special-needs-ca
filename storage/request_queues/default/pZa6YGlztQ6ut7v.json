@@ -1,9 +1,0 @@
-{
-	"id": "pZa6YGlztQ6ut7v",
-	"json": "{\"id\":\"pZa6YGlztQ6ut7v\",\"url\":\"https://www.cdss.ca.gov/Reporting/Report-Fraud/Welfare-Fraud\",\"loadedUrl\":\"https://www.cdss.ca.gov/reporting/report-fraud/welfare-fraud\",\"uniqueKey\":\"https://www.cdss.ca.gov/Reporting/Report-Fraud/Welfare-Fraud\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:30.329Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/Reporting/Report-Fraud/Welfare-Fraud",
-	"url": "https://www.cdss.ca.gov/Reporting/Report-Fraud/Welfare-Fraud"
-}

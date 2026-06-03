@@ -1,9 +1,0 @@
-{
-	"id": "u63GESK6iEPsp5I",
-	"json": "{\"id\":\"u63GESK6iEPsp5I\",\"url\":\"https://www.cde.ca.gov/sp/se/ac/calpadsspedroadshows.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/se/ac/calpadsspedroadshows.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/se/ac/calpadsspedroadshows.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:04.619Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/sp/se/ac/calpadsspedroadshows.asp",
-	"url": "https://www.cde.ca.gov/sp/se/ac/calpadsspedroadshows.asp"
-}

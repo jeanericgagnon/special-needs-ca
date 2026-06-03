@@ -1,9 +1,0 @@
-{
-	"id": "jMOvlRGqDTbph6x",
-	"json": "{\"id\":\"jMOvlRGqDTbph6x\",\"url\":\"https://ucdavis.edu/help/privacy-accessibility.html\",\"loadedUrl\":\"https://www.ucdavis.edu/privacy-and-accessibility\",\"uniqueKey\":\"https://ucdavis.edu/help/privacy-accessibility.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:32.750Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ucdavis.edu/help/privacy-accessibility.html",
-	"url": "https://ucdavis.edu/help/privacy-accessibility.html"
-}

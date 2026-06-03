@@ -1,9 +1,0 @@
-{
-	"id": "CTB2VkR0SYNE5gh",
-	"json": "{\"id\":\"CTB2VkR0SYNE5gh\",\"url\":\"https://leadership.ucdavis.edu/news/chancell-ing-celebrating-our-core-principles\",\"loadedUrl\":\"https://leadership.ucdavis.edu/news/chancell-ing-celebrating-our-core-principles\",\"uniqueKey\":\"https://leadership.ucdavis.edu/news/chancell-ing-celebrating-our-core-principles\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:36.125Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://leadership.ucdavis.edu/news/chancell-ing-celebrating-our-core-principles",
-	"url": "https://leadership.ucdavis.edu/news/chancell-ing-celebrating-our-core-principles"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "pZk9ODmGqF3zL2D",
-	"json": "{\"id\":\"pZk9ODmGqF3zL2D\",\"url\":\"https://health.ucdavis.edu/phs/education/PhD/phd_about.html\",\"loadedUrl\":\"https://health.ucdavis.edu/phs/academic/phd/about\",\"uniqueKey\":\"https://health.ucdavis.edu/phs/education/PhD/phd_about.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:52.250Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/phs/education/PhD/phd_about.html",
-	"url": "https://health.ucdavis.edu/phs/education/PhD/phd_about.html"
-}

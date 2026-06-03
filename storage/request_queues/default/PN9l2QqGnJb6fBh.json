@@ -1,9 +1,0 @@
-{
-	"id": "PN9l2QqGnJb6fBh",
-	"json": "{\"id\":\"PN9l2QqGnJb6fBh\",\"url\":\"https://hr.ucdavis.edu/departments/elr/asap\",\"loadedUrl\":\"https://hr.ucdavis.edu/departments/elr/asap\",\"uniqueKey\":\"https://hr.ucdavis.edu/departments/elr/asap\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:11.620Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/departments/elr/asap",
-	"url": "https://hr.ucdavis.edu/departments/elr/asap"
-}

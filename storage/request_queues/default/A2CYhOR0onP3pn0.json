@@ -1,9 +1,0 @@
-{
-	"id": "A2CYhOR0onP3pn0",
-	"json": "{\"id\":\"A2CYhOR0onP3pn0\",\"url\":\"https://www.cdph.ca.gov/Programs/CID/_layouts/15/listform.aspx?ListId=%7B9BE491E9%2D227A%2D4000%2D8207%2D8B57BCBB0F5F%7D&PageType=0\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CID/Pages/CID.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CID/_layouts/15/listform.aspx?ListId=%7B9BE491E9-227A-4000-8207-8B57BCBB0F5F%7D&PageType=0\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":2,\"errorMessages\":[\"Error: request timed out after 30 seconds.\\n    at Timeout._onTimeout (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@apify/timeout/cjs/index.cjs:64:68)\\n    at listOnTimeout (node:internal/timers:588:17)\\n    at process.processTimers (node:internal/timers:523:7)\",\"Error: request timed out after 30 seconds.\\n    at Timeout._onTimeout (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@apify/timeout/cjs/index.cjs:64:68)\\n    at listOnTimeout (node:internal/timers:588:17)\\n    at process.processTimers (node:internal/timers:523:7)\"],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:45:27.066Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 2,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CID/_layouts/15/listform.aspx?ListId=%7B9BE491E9-227A-4000-8207-8B57BCBB0F5F%7D&PageType=0",
-	"url": "https://www.cdph.ca.gov/Programs/CID/_layouts/15/listform.aspx?ListId=%7B9BE491E9%2D227A%2D4000%2D8207%2D8B57BCBB0F5F%7D&PageType=0"
-}

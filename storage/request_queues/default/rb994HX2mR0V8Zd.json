@@ -1,9 +1,0 @@
-{
-	"id": "rb994HX2mR0V8Zd",
-	"json": "{\"id\":\"rb994HX2mR0V8Zd\",\"url\":\"https://edd.ca.gov/en/unemployment/overpayments-and-penalties/\",\"loadedUrl\":\"https://edd.ca.gov/en/unemployment/overpayments-and-penalties/\",\"uniqueKey\":\"https://edd.ca.gov/en/unemployment/overpayments-and-penalties\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:39.860Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://edd.ca.gov/en/unemployment/overpayments-and-penalties",
-	"url": "https://edd.ca.gov/en/unemployment/overpayments-and-penalties/"
-}

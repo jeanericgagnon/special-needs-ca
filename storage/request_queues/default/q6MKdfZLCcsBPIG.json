@@ -1,9 +1,0 @@
-{
-	"id": "q6MKdfZLCcsBPIG",
-	"json": "{\"id\":\"q6MKdfZLCcsBPIG\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/22008/daniel-colby-emergency_medicine-sacramento?FreeText%3aLast+name=colby\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/22008/daniel-colby-emergency_medicine-sacramento?FreeText%3aLast+name=colby\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/22008/daniel-colby-emergency_medicine-sacramento?FreeText%3ALast+name=colby\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:09.183Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/22008/daniel-colby-emergency_medicine-sacramento?FreeText%3ALast+name=colby",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/22008/daniel-colby-emergency_medicine-sacramento?FreeText%3aLast+name=colby"
-}

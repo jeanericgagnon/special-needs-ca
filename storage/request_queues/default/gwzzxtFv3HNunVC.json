@@ -1,9 +1,0 @@
-{
-	"id": "gwzzxtFv3HNunVC",
-	"json": "{\"id\":\"gwzzxtFv3HNunVC\",\"url\":\"https://www.cde.ca.gov/pd/ps/nbpts.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/pl/nbpts.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/pd/ps/nbpts.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:27.824Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/pd/ps/nbpts.asp",
-	"url": "https://www.cde.ca.gov/pd/ps/nbpts.asp"
-}

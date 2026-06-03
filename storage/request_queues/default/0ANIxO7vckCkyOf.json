@@ -1,9 +1,0 @@
-{
-	"id": "0ANIxO7vckCkyOf",
-	"json": "{\"id\":\"0ANIxO7vckCkyOf\",\"url\":\"https://genomecenter.ucdavis.edu/genome-center-cores-newsletter\",\"loadedUrl\":\"https://genomecenter.ucdavis.edu/genome-center-cores-newsletter\",\"uniqueKey\":\"https://genomecenter.ucdavis.edu/genome-center-cores-newsletter\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:10.892Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://genomecenter.ucdavis.edu/genome-center-cores-newsletter",
-	"url": "https://genomecenter.ucdavis.edu/genome-center-cores-newsletter"
-}

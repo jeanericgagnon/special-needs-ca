@@ -1,9 +1,0 @@
-{
-	"id": "aCME6B1QRaDTrWf",
-	"json": "{\"id\":\"aCME6B1QRaDTrWf\",\"url\":\"https://rarediseases.org/organizations/hyper-igm-foundation/\",\"loadedUrl\":\"https://rarediseases.org/organizations/hyper-igm-foundation/\",\"uniqueKey\":\"https://rarediseases.org/organizations/hyper-igm-foundation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:17:23.115Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/organizations/hyper-igm-foundation",
-	"url": "https://rarediseases.org/organizations/hyper-igm-foundation/"
-}

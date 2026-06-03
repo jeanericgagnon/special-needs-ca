@@ -1,9 +1,0 @@
-{
-	"id": "uw99tO2qtTYkFdA",
-	"json": "{\"id\":\"uw99tO2qtTYkFdA\",\"url\":\"https://www.gov.ca.gov/2026/05/12/california-remains-the-nations-top-travel-destination-tourism-spending-climbs-to-a-record-high-158-9-billion/\",\"loadedUrl\":\"https://www.gov.ca.gov/2026/05/12/california-remains-the-nations-top-travel-destination-tourism-spending-climbs-to-a-record-high-158-9-billion/\",\"uniqueKey\":\"https://www.gov.ca.gov/2026/05/12/california-remains-the-nations-top-travel-destination-tourism-spending-climbs-to-a-record-high-158-9-billion\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:48.273Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.gov.ca.gov/2026/05/12/california-remains-the-nations-top-travel-destination-tourism-spending-climbs-to-a-record-high-158-9-billion",
-	"url": "https://www.gov.ca.gov/2026/05/12/california-remains-the-nations-top-travel-destination-tourism-spending-climbs-to-a-record-high-158-9-billion/"
-}

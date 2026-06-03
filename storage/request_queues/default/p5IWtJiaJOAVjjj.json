@@ -1,9 +1,0 @@
-{
-	"id": "p5IWtJiaJOAVjjj",
-	"json": "{\"id\":\"p5IWtJiaJOAVjjj\",\"url\":\"https://www.cde.ca.gov/ci/ct/pk/legreport.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/ct/pk/legreport.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/ct/pk/legreport.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:26.955Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ci/ct/pk/legreport.asp",
-	"url": "https://www.cde.ca.gov/ci/ct/pk/legreport.asp"
-}

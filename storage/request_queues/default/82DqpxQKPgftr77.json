@@ -1,9 +1,0 @@
-{
-	"id": "82DqpxQKPgftr77",
-	"json": "{\"id\":\"82DqpxQKPgftr77\",\"url\":\"https://health.ucdavis.edu/news/headlines/new-study-validates-prediction-rules-for-pediatric-intra-abdominal-and-traumatic-brain-injuries/2024/04\",\"loadedUrl\":\"https://health.ucdavis.edu/news/headlines/new-study-validates-prediction-rules-for-pediatric-intra-abdominal-and-traumatic-brain-injuries/2024/04\",\"uniqueKey\":\"https://health.ucdavis.edu/news/headlines/new-study-validates-prediction-rules-for-pediatric-intra-abdominal-and-traumatic-brain-injuries/2024/04\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:45:08.148Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/news/headlines/new-study-validates-prediction-rules-for-pediatric-intra-abdominal-and-traumatic-brain-injuries/2024/04",
-	"url": "https://health.ucdavis.edu/news/headlines/new-study-validates-prediction-rules-for-pediatric-intra-abdominal-and-traumatic-brain-injuries/2024/04"
-}

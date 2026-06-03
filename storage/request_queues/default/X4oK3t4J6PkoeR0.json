@@ -1,9 +1,0 @@
-{
-	"id": "X4oK3t4J6PkoeR0",
-	"json": "{\"id\":\"X4oK3t4J6PkoeR0\",\"url\":\"https://www.cdph.ca.gov/Programs/OPG/Pages/PGTI-Provider-Directory.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/OPG/Pages/PGTI-Provider-Directory.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/OPG/Pages/PGTI-Provider-Directory.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:01.363Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/OPG/Pages/PGTI-Provider-Directory.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/OPG/Pages/PGTI-Provider-Directory.aspx"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "eqmn2P0VQVRSotA",
-	"json": "{\"id\":\"eqmn2P0VQVRSotA\",\"url\":\"https://ucdnc.ucdavis.edu/prosthetics-and-human-machine-interfaces\",\"loadedUrl\":\"https://ucdnc.ucdavis.edu/prosthetics-and-human-machine-interfaces\",\"uniqueKey\":\"https://ucdnc.ucdavis.edu/prosthetics-and-human-machine-interfaces\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:20.210Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ucdnc.ucdavis.edu/prosthetics-and-human-machine-interfaces",
-	"url": "https://ucdnc.ucdavis.edu/prosthetics-and-human-machine-interfaces"
-}

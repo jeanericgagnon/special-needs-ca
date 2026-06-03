@@ -1,9 +1,0 @@
-{
-	"id": "9I7ydyi63XYlIIn",
-	"json": "{\"id\":\"9I7ydyi63XYlIIn\",\"url\":\"https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-in-special-education-programs/\",\"loadedUrl\":\"https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-in-special-education-programs/\",\"uniqueKey\":\"https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-in-special-education-programs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:19:32.287Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-in-special-education-programs",
-	"url": "https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-in-special-education-programs/"
-}

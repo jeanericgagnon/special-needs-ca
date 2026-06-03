@@ -1,9 +1,0 @@
-{
-	"id": "EFPQu1AdEgoR1nl",
-	"json": "{\"id\":\"EFPQu1AdEgoR1nl\",\"url\":\"https://choosework.ssa.gov/blog-archive/list\",\"loadedUrl\":\"https://choosework.ssa.gov/blog-archive/list\",\"uniqueKey\":\"https://choosework.ssa.gov/blog-archive/list\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:33.992Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://choosework.ssa.gov/blog-archive/list",
-	"url": "https://choosework.ssa.gov/blog-archive/list"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "ZymqlTzvO7z3nLa",
-	"json": "{\"id\":\"ZymqlTzvO7z3nLa\",\"url\":\"https://rarediseases.org/rare-diseases/ocular-melanoma/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/ocular-melanoma/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/ocular-melanoma\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:05:58.033Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/rare-diseases/ocular-melanoma",
-	"url": "https://rarediseases.org/rare-diseases/ocular-melanoma/"
-}

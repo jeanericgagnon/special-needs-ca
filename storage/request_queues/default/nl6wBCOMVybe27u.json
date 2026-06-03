@@ -1,9 +1,0 @@
-{
-	"id": "nl6wBCOMVybe27u",
-	"json": "{\"id\":\"nl6wBCOMVybe27u\",\"url\":\"https://health.ucdavis.edu/parking/departmental_request/\",\"loadedUrl\":\"https://health.ucdavis.edu/parking/departmental_request/\",\"uniqueKey\":\"https://health.ucdavis.edu/parking/departmental_request\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:06:42.024Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/parking/departmental_request",
-	"url": "https://health.ucdavis.edu/parking/departmental_request/"
-}

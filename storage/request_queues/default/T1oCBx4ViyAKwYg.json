@@ -1,9 +1,0 @@
-{
-	"id": "T1oCBx4ViyAKwYg",
-	"json": "{\"id\":\"T1oCBx4ViyAKwYg\",\"url\":\"https://cdss.ca.gov/inforesources/cdss-programs/community-care-licensing/child-care-licensing/surveys\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/cdss-programs/community-care-licensing/child-care-licensing/surveys\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/cdss-programs/community-care-licensing/child-care-licensing/surveys\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:42.305Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/cdss-programs/community-care-licensing/child-care-licensing/surveys",
-	"url": "https://cdss.ca.gov/inforesources/cdss-programs/community-care-licensing/child-care-licensing/surveys"
-}

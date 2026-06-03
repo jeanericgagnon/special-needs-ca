@@ -13,7 +13,9 @@ import {
   getReminders,
   getCountyDetails,
   getChildIepData,
-  getChildRespiteData
+  getChildRespiteData,
+  getIepAdvocates,
+  getChildWaivers
 } from '@/lib/db';
 import type {
   CoreProgramMatch,
@@ -28,7 +30,8 @@ import type {
   SchoolDistrict,
   NonprofitOrganization,
   RegionalCenter,
-  Selpa
+  Selpa,
+  ChildWaiver
 } from '@/lib/db';
 import DashboardClient from './dashboard-client';
 
@@ -85,6 +88,7 @@ export default async function DashboardPage({ searchParams }: PageProps) {
   }) | null = null;
   let savedIepData: ChildIepData = { accommodations: [], goals: [] };
   let savedRespiteData: ChildRespiteData | null = null;
+  let savedWaivers: ChildWaiver[] = [];
 
   if (currentChild) {
     const age = getAgeInYears(currentChild.dob);
@@ -114,7 +118,10 @@ export default async function DashboardPage({ searchParams }: PageProps) {
     // IEP & Respite child specific configurations
     savedIepData = getChildIepData(currentChild.id);
     savedRespiteData = getChildRespiteData(currentChild.id);
+    savedWaivers = getChildWaivers(currentChild.id);
   }
+
+  const localAdvocates = currentChild ? getIepAdvocates(currentChild.county_id) : [];
 
   return (
     <DashboardClient 
@@ -133,6 +140,8 @@ export default async function DashboardPage({ searchParams }: PageProps) {
       savedRespiteData={savedRespiteData}
       initialTab={initialTab}
       initialSubTab={initialSubTab}
+      localAdvocates={localAdvocates}
+      savedWaivers={savedWaivers}
     />
   );
 }

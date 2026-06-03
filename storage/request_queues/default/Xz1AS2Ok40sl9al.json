@@ -1,9 +1,0 @@
-{
-	"id": "Xz1AS2Ok40sl9al",
-	"json": "{\"id\":\"Xz1AS2Ok40sl9al\",\"url\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/same-day-surgery-center\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/same-day-surgery-center\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/same-day-surgery-center\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:54.655Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/locations/specialty-care/same-day-surgery-center",
-	"url": "https://health.ucdavis.edu/patients-visitors/locations/specialty-care/same-day-surgery-center"
-}

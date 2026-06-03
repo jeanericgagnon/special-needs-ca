@@ -1,9 +1,0 @@
-{
-	"id": "8PmcGhJulzneK1c",
-	"json": "{\"id\":\"8PmcGhJulzneK1c\",\"url\":\"https://scdd.ca.gov/pos-service-code/residential-facility-serving-adults-staff-operated/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/residential-facility-serving-adults-staff-operated/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/residential-facility-serving-adults-staff-operated\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:51.899Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/pos-service-code/residential-facility-serving-adults-staff-operated",
-	"url": "https://scdd.ca.gov/pos-service-code/residential-facility-serving-adults-staff-operated/"
-}

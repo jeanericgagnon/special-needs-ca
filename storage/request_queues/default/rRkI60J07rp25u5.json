@@ -1,9 +1,0 @@
-{
-	"id": "rRkI60J07rp25u5",
-	"json": "{\"id\":\"rRkI60J07rp25u5\",\"url\":\"https://health.ucdavis.edu/coronavirus/covid-19-vaccine/\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/conditions-treatments/covid-19/vaccines\",\"uniqueKey\":\"https://health.ucdavis.edu/coronavirus/covid-19-vaccine\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:55.672Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/coronavirus/covid-19-vaccine",
-	"url": "https://health.ucdavis.edu/coronavirus/covid-19-vaccine/"
-}

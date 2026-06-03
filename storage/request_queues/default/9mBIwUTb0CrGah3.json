@@ -1,9 +1,0 @@
-{
-	"id": "9mBIwUTb0CrGah3",
-	"json": "{\"id\":\"9mBIwUTb0CrGah3\",\"url\":\"https://www.cde.ca.gov/fg/aa/ca/mentalhealth.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/fg/aa/ca/mentalhealth.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/fg/aa/ca/mentalhealth.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:22:25.555Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/fg/aa/ca/mentalhealth.asp",
-	"url": "https://www.cde.ca.gov/fg/aa/ca/mentalhealth.asp"
-}

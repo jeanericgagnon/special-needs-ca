@@ -1,9 +1,0 @@
-{
-	"id": "NjUPe39Flmg7B4K",
-	"json": "{\"id\":\"NjUPe39Flmg7B4K\",\"url\":\"https://health.ucdavis.edu/medicalcenter/cliniclocations/specialtycare/index.html\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-center/cliniclocations/specialtycare/\",\"uniqueKey\":\"https://health.ucdavis.edu/medicalcenter/cliniclocations/specialtycare/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:08.071Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/medicalcenter/cliniclocations/specialtycare/index.html",
-	"url": "https://health.ucdavis.edu/medicalcenter/cliniclocations/specialtycare/index.html"
-}

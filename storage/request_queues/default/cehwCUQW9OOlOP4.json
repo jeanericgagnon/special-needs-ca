@@ -1,9 +1,0 @@
-{
-	"id": "cehwCUQW9OOlOP4",
-	"json": "{\"id\":\"cehwCUQW9OOlOP4\",\"url\":\"https://cnprc.ucdavis.edu/media\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/media\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/media\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:16.494Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cnprc.ucdavis.edu/media",
-	"url": "https://cnprc.ucdavis.edu/media"
-}

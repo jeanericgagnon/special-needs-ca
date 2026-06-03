@@ -1,9 +1,0 @@
-{
-	"id": "nez5Iud2U4Yazja",
-	"json": "{\"id\":\"nez5Iud2U4Yazja\",\"url\":\"https://surveys3.cde.ca.gov/siam/surveylanding/interviewer.asp?sid=424dae3c4eaf47869802e2cf97135510&ta=reclitlist_t.msf\",\"loadedUrl\":\"https://surveys3.cde.ca.gov/siam/surveylanding/surveylogin.asp\",\"uniqueKey\":\"https://surveys3.cde.ca.gov/siam/surveylanding/interviewer.asp?sid=424dae3c4eaf47869802e2cf97135510&ta=reclitlist_t.msf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:48.233Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://surveys3.cde.ca.gov/siam/surveylanding/interviewer.asp?sid=424dae3c4eaf47869802e2cf97135510&ta=reclitlist_t.msf",
-	"url": "https://surveys3.cde.ca.gov/siam/surveylanding/interviewer.asp?sid=424dae3c4eaf47869802e2cf97135510&ta=reclitlist_t.msf"
-}

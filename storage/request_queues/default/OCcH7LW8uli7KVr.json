@@ -1,9 +1,0 @@
-{
-	"id": "OCcH7LW8uli7KVr",
-	"json": "{\"id\":\"OCcH7LW8uli7KVr\",\"url\":\"https://health.ucdavis.edu/children/team/21996/robert-kriss-pediatric-anesthesiology-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/children/team/21996/robert-kriss-pediatric-anesthesiology-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/children/team/21996/robert-kriss-pediatric-anesthesiology-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:11.914Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/children/team/21996/robert-kriss-pediatric-anesthesiology-sacramento",
-	"url": "https://health.ucdavis.edu/children/team/21996/robert-kriss-pediatric-anesthesiology-sacramento"
-}

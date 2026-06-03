@@ -1,9 +1,0 @@
-{
-	"id": "SzNSe8PKX8FQjBu",
-	"json": "{\"id\":\"SzNSe8PKX8FQjBu\",\"url\":\"https://www.chhs.ca.gov/blog/2019/09/30/request-for-proposal-healthy-california-for-all/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2019/09/30/request-for-proposal-healthy-california-for-all/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2019/09/30/request-for-proposal-healthy-california-for-all\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:17.121Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chhs.ca.gov/blog/2019/09/30/request-for-proposal-healthy-california-for-all",
-	"url": "https://www.chhs.ca.gov/blog/2019/09/30/request-for-proposal-healthy-california-for-all/"
-}

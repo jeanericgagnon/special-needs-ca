@@ -1,9 +1,0 @@
-{
-	"id": "Bbk6C4ExHyYiTGu",
-	"json": "{\"id\":\"Bbk6C4ExHyYiTGu\",\"url\":\"https://www.dds.ca.gov/newsletter/lanterman-spanish/\",\"loadedUrl\":\"https://www.dds.ca.gov/newsletter/lanterman-spanish/\",\"uniqueKey\":\"https://www.dds.ca.gov/newsletter/lanterman-spanish\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:04.630Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/newsletter/lanterman-spanish",
-	"url": "https://www.dds.ca.gov/newsletter/lanterman-spanish/"
-}

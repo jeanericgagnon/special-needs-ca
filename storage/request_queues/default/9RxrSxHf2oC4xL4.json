@@ -1,9 +1,0 @@
-{
-	"id": "9RxrSxHf2oC4xL4",
-	"json": "{\"id\":\"9RxrSxHf2oC4xL4\",\"url\":\"https://rarediseases.org/organizations/association-for-frontotemporal-degeneration-aftd/\",\"loadedUrl\":\"https://rarediseases.org/organizations/association-for-frontotemporal-degeneration-aftd/\",\"uniqueKey\":\"https://rarediseases.org/organizations/association-for-frontotemporal-degeneration-aftd\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:14:49.920Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/organizations/association-for-frontotemporal-degeneration-aftd",
-	"url": "https://rarediseases.org/organizations/association-for-frontotemporal-degeneration-aftd/"
-}

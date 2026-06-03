@@ -1,9 +1,0 @@
-{
-	"id": "memdmQvF7I1DM8W",
-	"json": "{\"id\":\"memdmQvF7I1DM8W\",\"url\":\"https://cnprc.ucdavis.edu/primate-services\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/primate-services\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/primate-services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:10.972Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cnprc.ucdavis.edu/primate-services",
-	"url": "https://cnprc.ucdavis.edu/primate-services"
-}

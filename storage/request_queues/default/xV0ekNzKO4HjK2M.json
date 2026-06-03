@@ -1,9 +1,0 @@
-{
-	"id": "xV0ekNzKO4HjK2M",
-	"json": "{\"id\":\"xV0ekNzKO4HjK2M\",\"url\":\"https://gradstudies.ucdavis.edu/current-students/#footer\",\"loadedUrl\":\"https://gradstudies.ucdavis.edu/current-students\",\"uniqueKey\":\"https://gradstudies.ucdavis.edu/current-students\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:47.983Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://gradstudies.ucdavis.edu/current-students",
-	"url": "https://gradstudies.ucdavis.edu/current-students/#footer"
-}

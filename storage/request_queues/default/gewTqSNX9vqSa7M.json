@@ -1,9 +1,0 @@
-{
-	"id": "gewTqSNX9vqSa7M",
-	"json": "{\"id\":\"gewTqSNX9vqSa7M\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/OHB/Pages/SaferAlts.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/OHB/Pages/SaferAlts.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/OHB/Pages/SaferAlts.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:33:48.360Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/OHB/Pages/SaferAlts.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/OHB/Pages/SaferAlts.aspx"
-}

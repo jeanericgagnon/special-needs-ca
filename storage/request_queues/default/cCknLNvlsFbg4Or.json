@@ -1,9 +1,0 @@
-{
-	"id": "cCknLNvlsFbg4Or",
-	"json": "{\"id\":\"cCknLNvlsFbg4Or\",\"url\":\"https://www.slocounty.ca.gov/Departments/Social-Services/Contact-Us.aspx\",\"loadedUrl\":\"https://www.slocounty.ca.gov/departments/social-services/contact-us\",\"uniqueKey\":\"https://www.slocounty.ca.gov/Departments/Social-Services/Contact-Us.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:32.652Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.slocounty.ca.gov/Departments/Social-Services/Contact-Us.aspx",
-	"url": "https://www.slocounty.ca.gov/Departments/Social-Services/Contact-Us.aspx"
-}

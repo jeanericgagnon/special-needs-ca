@@ -1,9 +1,0 @@
-{
-	"id": "qjmVoPc2Epcl1lW",
-	"json": "{\"id\":\"qjmVoPc2Epcl1lW\",\"url\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/CalHealthFind/Pages/SearchResult.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/CalHealthFind/Pages/SearchResult.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/CalHealthFind/Pages/SearchResult.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:01:55.360Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CHCQ/LCP/CalHealthFind/Pages/SearchResult.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CHCQ/LCP/CalHealthFind/Pages/SearchResult.aspx"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "qk5dr3i528gwQKG",
-	"json": "{\"id\":\"qk5dr3i528gwQKG\",\"url\":\"https://www.hcd.ca.gov/planning-and-community-development/housing-open-data-tools/housing-accountability-dashboard\",\"loadedUrl\":\"https://www.hcd.ca.gov/housing-open-data-tools/housing-accountability-dashboard\",\"uniqueKey\":\"https://www.hcd.ca.gov/planning-and-community-development/housing-open-data-tools/housing-accountability-dashboard\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:49.142Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.hcd.ca.gov/planning-and-community-development/housing-open-data-tools/housing-accountability-dashboard",
-	"url": "https://www.hcd.ca.gov/planning-and-community-development/housing-open-data-tools/housing-accountability-dashboard"
-}

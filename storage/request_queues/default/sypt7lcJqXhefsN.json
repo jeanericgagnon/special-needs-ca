@@ -1,9 +1,0 @@
-{
-	"id": "sypt7lcJqXhefsN",
-	"json": "{\"id\":\"sypt7lcJqXhefsN\",\"url\":\"http://www.dir.ca.gov/DOSH/CalOSHA.htm\",\"loadedUrl\":\"http://www.dir.ca.gov/DOSH/CalOSHA.htm\",\"uniqueKey\":\"http://www.dir.ca.gov/DOSH/CalOSHA.htm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:06:47.050Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.dir.ca.gov/DOSH/CalOSHA.htm",
-	"url": "http://www.dir.ca.gov/DOSH/CalOSHA.htm"
-}

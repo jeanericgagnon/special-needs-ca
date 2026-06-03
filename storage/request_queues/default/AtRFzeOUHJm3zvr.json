@@ -1,9 +1,0 @@
-{
-	"id": "AtRFzeOUHJm3zvr",
-	"json": "{\"id\":\"AtRFzeOUHJm3zvr\",\"url\":\"http://www.cde.ca.gov/ci/cr/\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/cr/\",\"uniqueKey\":\"http://www.cde.ca.gov/ci/cr\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:49.216Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.cde.ca.gov/ci/cr",
-	"url": "http://www.cde.ca.gov/ci/cr/"
-}

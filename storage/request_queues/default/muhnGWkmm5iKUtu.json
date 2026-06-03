@@ -1,9 +1,0 @@
-{
-	"id": "muhnGWkmm5iKUtu",
-	"json": "{\"id\":\"muhnGWkmm5iKUtu\",\"url\":\"https://portal.ucp.org/login/index.php\",\"loadedUrl\":\"https://portal.ucp.org/login/index.php\",\"uniqueKey\":\"https://portal.ucp.org/login/index.php\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:34.290Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://portal.ucp.org/login/index.php",
-	"url": "https://portal.ucp.org/login/index.php"
-}

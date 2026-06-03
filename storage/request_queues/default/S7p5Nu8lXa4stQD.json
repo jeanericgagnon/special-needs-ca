@@ -1,9 +1,0 @@
-{
-	"id": "S7p5Nu8lXa4stQD",
-	"json": "{\"id\":\"S7p5Nu8lXa4stQD\",\"url\":\"https://scdd.ca.gov/2026/02/25/working-draft_i-said-i-want-to-work-that-changed-everything/\",\"loadedUrl\":\"https://scdd.ca.gov/2026/02/25/working-draft_i-said-i-want-to-work-that-changed-everything/\",\"uniqueKey\":\"https://scdd.ca.gov/2026/02/25/working-draft_i-said-i-want-to-work-that-changed-everything\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:05:25.576Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/2026/02/25/working-draft_i-said-i-want-to-work-that-changed-everything",
-	"url": "https://scdd.ca.gov/2026/02/25/working-draft_i-said-i-want-to-work-that-changed-everything/"
-}

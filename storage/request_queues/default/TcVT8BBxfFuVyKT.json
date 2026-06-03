@@ -1,9 +1,0 @@
-{
-	"id": "TcVT8BBxfFuVyKT",
-	"json": "{\"id\":\"TcVT8BBxfFuVyKT\",\"url\":\"https://www.cdss.ca.gov/inforesources/Fiscal-Financial\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/fiscal-financial\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/Fiscal-Financial\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:04.863Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/inforesources/Fiscal-Financial",
-	"url": "https://www.cdss.ca.gov/inforesources/Fiscal-Financial"
-}

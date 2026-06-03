@@ -1,9 +1,0 @@
-{
-	"id": "tnKIVlRa86fG4dq",
-	"json": "{\"id\":\"tnKIVlRa86fG4dq\",\"url\":\"https://login.canvas.ucdavis.edu/\",\"loadedUrl\":\"https://login.canvas.ucdavis.edu/\",\"uniqueKey\":\"https://login.canvas.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:37.763Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://login.canvas.ucdavis.edu",
-	"url": "https://login.canvas.ucdavis.edu/"
-}

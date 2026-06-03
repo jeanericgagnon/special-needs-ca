@@ -1,9 +1,0 @@
-{
-	"id": "R5zZ8WsHJKD7Pp5",
-	"json": "{\"id\":\"R5zZ8WsHJKD7Pp5\",\"url\":\"https://alumni.ucdavis.edu/alumni-business-directory/browse?field_industry_target_id=1586&field_service_provided_target_id=All\",\"loadedUrl\":\"https://alumni.ucdavis.edu/alumni-business-directory/browse?field_industry_target_id=1586&field_service_provided_target_id=All\",\"uniqueKey\":\"https://alumni.ucdavis.edu/alumni-business-directory/browse?field_industry_target_id=1586&field_service_provided_target_id=All\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:06.204Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://alumni.ucdavis.edu/alumni-business-directory/browse?field_industry_target_id=1586&field_service_provided_target_id=All",
-	"url": "https://alumni.ucdavis.edu/alumni-business-directory/browse?field_industry_target_id=1586&field_service_provided_target_id=All"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "6yCRgxv6GGYjcNM",
-	"json": "{\"id\":\"6yCRgxv6GGYjcNM\",\"url\":\"https://rarediseases.org/rare-diseases/chromosome-9-trisomy-9p-multiple-variants/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/chromosome-9-trisomy-9p-multiple-variants/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/chromosome-9-trisomy-9p-multiple-variants\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:15:40.116Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/rare-diseases/chromosome-9-trisomy-9p-multiple-variants",
-	"url": "https://rarediseases.org/rare-diseases/chromosome-9-trisomy-9p-multiple-variants/"
-}

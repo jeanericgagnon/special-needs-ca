@@ -1,9 +1,0 @@
-{
-	"id": "HaHKFu3edJtSKSp",
-	"json": "{\"id\":\"HaHKFu3edJtSKSp\",\"url\":\"https://calable.ca.gov/alr-info/org-alr/registration\",\"loadedUrl\":\"https://calable.ca.gov/alr-info/org-alr/registration\",\"uniqueKey\":\"https://calable.ca.gov/alr-info/org-alr/registration\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:50.923Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://calable.ca.gov/alr-info/org-alr/registration",
-	"url": "https://calable.ca.gov/alr-info/org-alr/registration"
-}

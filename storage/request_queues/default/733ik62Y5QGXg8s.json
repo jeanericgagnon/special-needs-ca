@@ -1,9 +1,0 @@
-{
-	"id": "733ik62Y5QGXg8s",
-	"json": "{\"id\":\"733ik62Y5QGXg8s\",\"url\":\"http://www.ucdmc.ucdavis.edu/nursing/ourteam/faculty/Miles-Harris_bio.html\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/ourteam/faculty/Miles-Harris_bio.html\",\"uniqueKey\":\"http://www.ucdmc.ucdavis.edu/nursing/ourteam/faculty/Miles-Harris_bio.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:10.275Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.ucdmc.ucdavis.edu/nursing/ourteam/faculty/Miles-Harris_bio.html",
-	"url": "http://www.ucdmc.ucdavis.edu/nursing/ourteam/faculty/Miles-Harris_bio.html"
-}

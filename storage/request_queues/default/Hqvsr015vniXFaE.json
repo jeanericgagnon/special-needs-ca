@@ -1,9 +1,0 @@
-{
-	"id": "Hqvsr015vniXFaE",
-	"json": "{\"id\":\"Hqvsr015vniXFaE\",\"url\":\"https://health.ucdavis.edu/conditions/heart-vascular/coronary-artery-disease\",\"loadedUrl\":\"https://health.ucdavis.edu/conditions/heart-vascular/coronary-artery-disease\",\"uniqueKey\":\"https://health.ucdavis.edu/conditions/heart-vascular/coronary-artery-disease\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:41.520Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/conditions/heart-vascular/coronary-artery-disease",
-	"url": "https://health.ucdavis.edu/conditions/heart-vascular/coronary-artery-disease"
-}

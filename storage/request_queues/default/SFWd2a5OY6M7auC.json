@@ -1,9 +1,0 @@
-{
-	"id": "SFWd2a5OY6M7auC",
-	"json": "{\"id\":\"SFWd2a5OY6M7auC\",\"url\":\"http://cdss.ca.gov/inforesources/cdss-programs/poverty-task-force\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/cdss-programs/poverty-task-force\",\"uniqueKey\":\"http://cdss.ca.gov/inforesources/cdss-programs/poverty-task-force\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:42.233Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://cdss.ca.gov/inforesources/cdss-programs/poverty-task-force",
-	"url": "http://cdss.ca.gov/inforesources/cdss-programs/poverty-task-force"
-}

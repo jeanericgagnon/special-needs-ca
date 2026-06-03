@@ -1,9 +1,0 @@
-{
-	"id": "PImDMgkTyO2LFPy",
-	"json": "{\"id\":\"PImDMgkTyO2LFPy\",\"url\":\"https://calable.ca.gov/participation-agreement\",\"loadedUrl\":\"https://calable.ca.gov/participation-agreement\",\"uniqueKey\":\"https://calable.ca.gov/participation-agreement\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:16.223Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://calable.ca.gov/participation-agreement",
-	"url": "https://calable.ca.gov/participation-agreement"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "Cj2aG0hhiHFrcm7",
-	"json": "{\"id\":\"Cj2aG0hhiHFrcm7\",\"url\":\"https://entomology.ucdavis.edu/people/joanna-chiu\",\"loadedUrl\":\"https://entomology.ucdavis.edu/people/joanna-chiu\",\"uniqueKey\":\"https://entomology.ucdavis.edu/people/joanna-chiu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:09:00.485Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://entomology.ucdavis.edu/people/joanna-chiu",
-	"url": "https://entomology.ucdavis.edu/people/joanna-chiu"
-}

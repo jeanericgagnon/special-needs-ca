@@ -1,9 +1,0 @@
-{
-	"id": "4aZSoR58yuPWcci",
-	"json": "{\"id\":\"4aZSoR58yuPWcci\",\"url\":\"https://caes.ucdavis.edu/news/highlights/signup\",\"loadedUrl\":\"https://caes.ucdavis.edu/news/highlights/signup\",\"uniqueKey\":\"https://caes.ucdavis.edu/news/highlights/signup\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:14.690Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://caes.ucdavis.edu/news/highlights/signup",
-	"url": "https://caes.ucdavis.edu/news/highlights/signup"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "U8i6O9gYzUKIR4c",
-	"json": "{\"id\":\"U8i6O9gYzUKIR4c\",\"url\":\"https://www.chp.ca.gov/link/bc9a924e60c240a581a032f9aed9996b.aspx\",\"loadedUrl\":\"https://www.chp.ca.gov/news-alerts/alerts/Ebony-Alert/\",\"uniqueKey\":\"https://www.chp.ca.gov/link/bc9a924e60c240a581a032f9aed9996b.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:12.402Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chp.ca.gov/link/bc9a924e60c240a581a032f9aed9996b.aspx",
-	"url": "https://www.chp.ca.gov/link/bc9a924e60c240a581a032f9aed9996b.aspx"
-}

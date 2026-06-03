@@ -1,9 +1,0 @@
-{
-	"id": "M3el0qoAFYGCsf6",
-	"json": "{\"id\":\"M3el0qoAFYGCsf6\",\"url\":\"https://toxmsdt.vetmed.ucdavis.edu/our-people\",\"loadedUrl\":\"https://toxmsdt.vetmed.ucdavis.edu/our-people\",\"uniqueKey\":\"https://toxmsdt.vetmed.ucdavis.edu/our-people\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:23:59.199Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://toxmsdt.vetmed.ucdavis.edu/our-people",
-	"url": "https://toxmsdt.vetmed.ucdavis.edu/our-people"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "CF4Daw1mLe0HWKP",
-	"json": "{\"id\":\"CF4Daw1mLe0HWKP\",\"url\":\"https://bmcdb.ucdavis.edu/\",\"loadedUrl\":\"https://bmcdb.ucdavis.edu/\",\"uniqueKey\":\"https://bmcdb.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:46.076Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://bmcdb.ucdavis.edu",
-	"url": "https://bmcdb.ucdavis.edu/"
-}

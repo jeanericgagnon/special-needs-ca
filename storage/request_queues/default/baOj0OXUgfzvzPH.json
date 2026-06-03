@@ -1,9 +1,0 @@
-{
-	"id": "baOj0OXUgfzvzPH",
-	"json": "{\"id\":\"baOj0OXUgfzvzPH\",\"url\":\"https://rarediseases.org/state-resource-center/?filter_state-resource-type=legal-advocacy\",\"loadedUrl\":\"https://rarediseases.org/state-resource-center/?filter_state-resource-type=legal-advocacy\",\"uniqueKey\":\"https://rarediseases.org/state-resource-center?filter_state-resource-type=legal-advocacy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:12:31.132Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/state-resource-center?filter_state-resource-type=legal-advocacy",
-	"url": "https://rarediseases.org/state-resource-center/?filter_state-resource-type=legal-advocacy"
-}

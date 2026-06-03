@@ -1,9 +1,0 @@
-{
-	"id": "HEBDxxVqDuHELo9",
-	"json": "{\"id\":\"HEBDxxVqDuHELo9\",\"url\":\"https://www.cdss.ca.gov/inforesources/IHSS/IHSS-Providers/How-to-Become-an-IHSS-Provider\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/ihss/ihss-providers/how-to-become-an-ihss-provider\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/IHSS/IHSS-Providers/How-to-Become-an-IHSS-Provider\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:47.291Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/inforesources/IHSS/IHSS-Providers/How-to-Become-an-IHSS-Provider",
-	"url": "https://www.cdss.ca.gov/inforesources/IHSS/IHSS-Providers/How-to-Become-an-IHSS-Provider"
-}

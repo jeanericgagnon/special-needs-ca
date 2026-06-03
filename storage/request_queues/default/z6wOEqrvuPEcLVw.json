@@ -1,9 +1,0 @@
-{
-	"id": "z6wOEqrvuPEcLVw",
-	"json": "{\"id\":\"z6wOEqrvuPEcLVw\",\"url\":\"https://www.cdph.ca.gov/Programs/CID/DOA/Pages/OAmain.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CID/DOA/Pages/OAmain.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CID/DOA/Pages/OAmain.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:38.622Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CID/DOA/Pages/OAmain.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CID/DOA/Pages/OAmain.aspx"
-}

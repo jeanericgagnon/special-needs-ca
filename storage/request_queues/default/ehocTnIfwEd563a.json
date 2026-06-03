@@ -1,9 +1,0 @@
-{
-	"id": "ehocTnIfwEd563a",
-	"json": "{\"id\":\"ehocTnIfwEd563a\",\"url\":\"https://www.cde.ca.gov/fg/fr/lo/lottery2425.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=fbfbdac1-9f47-49d5-a73d-311cd401edfb&ssb=51578230607&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Ffg%2Ffr%2Flo%2Flottery2425.asp&ssi=27e6e58d-ctxv-40f6-9749-dfd0804a339b&ssk=botmanager_support@radware.com&ssm=67462547182950850109099444662228&ssn=9ec77cb89b1770731d0cc58547d608be6b0ec2f24268-ad82-46b5-91e81d&sso=7e6b9341-bbeb7141161f91285a5caa01c228f63e722eb3f5f4a161aa&ssp=46984312051780397746178038865501892&ssq=68032832730716181498327307902616999735418&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsIl9fdXptZiI6IjdmOTAwMGMyZjI0MjY4LWFkODItNDZiNS05MzQxLWJiZWI3MTQxMTYxZjEtMTc4MDMyNzMwNzk5NDAtMDAzMTNlYTRjZmE4N2JiNmUxNTEwIiwidXpteCI6IjdmOTAwMDQ3YzJmYWMzLThmYTMtNGQ3Yy1iNzA0LTZmYzM1ZTVlN2ZmNjEtMTc4MDMyNzMwNzk5NDAtMTRkM2Q3NDQ5MjUzOGY4ODEwIn0=\",\"uniqueKey\":\"https://www.cde.ca.gov/fg/fr/lo/lottery2425.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:21:48.085Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/fg/fr/lo/lottery2425.asp",
-	"url": "https://www.cde.ca.gov/fg/fr/lo/lottery2425.asp"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "QVUWBv2qL1SmxtJ",
-	"json": "{\"id\":\"QVUWBv2qL1SmxtJ\",\"url\":\"http://cancer.ucdavis.edu/\",\"loadedUrl\":\"https://health.ucdavis.edu/cancer/\",\"uniqueKey\":\"http://cancer.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:52.728Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://cancer.ucdavis.edu",
-	"url": "http://cancer.ucdavis.edu/"
-}

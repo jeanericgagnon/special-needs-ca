@@ -1,9 +1,0 @@
-{
-	"id": "979Y6cfba2Vylfn",
-	"json": "{\"id\":\"979Y6cfba2Vylfn\",\"url\":\"http://www.calhr.ca.gov/state-hr-professionals/pages/limited-examination-appointment-program.aspx\",\"loadedUrl\":\"http://www.calhr.ca.gov/about-calhr/divisions-programs/equity-accessibility-management-services/limited-examination-and-appointment-program-leap/\",\"uniqueKey\":\"http://www.calhr.ca.gov/state-hr-professionals/pages/limited-examination-appointment-program.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:26.091Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.calhr.ca.gov/state-hr-professionals/pages/limited-examination-appointment-program.aspx",
-	"url": "http://www.calhr.ca.gov/state-hr-professionals/pages/limited-examination-appointment-program.aspx"
-}

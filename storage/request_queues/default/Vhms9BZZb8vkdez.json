@@ -1,9 +1,0 @@
-{
-	"id": "Vhms9BZZb8vkdez",
-	"json": "{\"id\":\"Vhms9BZZb8vkdez\",\"url\":\"https://www.cdph.ca.gov/Programs/DO/letstalkcannabis/_layouts/15/listform.aspx?ListId=%7B35C65211%2DB7AD%2D4784%2D8F1B%2D0A4705B0BE7F%7D&PageType=0\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/DO/letstalkcannabis/Pages/LetsTalkCannabis.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/DO/letstalkcannabis/_layouts/15/listform.aspx?ListId=%7B35C65211-B7AD-4784-8F1B-0A4705B0BE7F%7D&PageType=0\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:11:41.096Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/DO/letstalkcannabis/_layouts/15/listform.aspx?ListId=%7B35C65211-B7AD-4784-8F1B-0A4705B0BE7F%7D&PageType=0",
-	"url": "https://www.cdph.ca.gov/Programs/DO/letstalkcannabis/_layouts/15/listform.aspx?ListId=%7B35C65211%2DB7AD%2D4784%2D8F1B%2D0A4705B0BE7F%7D&PageType=0"
-}

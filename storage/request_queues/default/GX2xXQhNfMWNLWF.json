@@ -1,9 +1,0 @@
-{
-	"id": "GX2xXQhNfMWNLWF",
-	"json": "{\"id\":\"GX2xXQhNfMWNLWF\",\"url\":\"https://irb.ucdavis.edu/irb-submissions/new-projects/\",\"loadedUrl\":\"https://irb.ucdavis.edu/irb-submissions/new-projects/\",\"uniqueKey\":\"https://irb.ucdavis.edu/irb-submissions/new-projects\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:39.885Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://irb.ucdavis.edu/irb-submissions/new-projects",
-	"url": "https://irb.ucdavis.edu/irb-submissions/new-projects/"
-}

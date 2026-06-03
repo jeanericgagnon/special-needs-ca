@@ -1,9 +1,0 @@
-{
-	"id": "uudYQrA4cEILXjv",
-	"json": "{\"id\":\"uudYQrA4cEILXjv\",\"url\":\"https://www.gov.ca.gov/tag/spanish/\",\"loadedUrl\":\"https://www.gov.ca.gov/tag/spanish/\",\"uniqueKey\":\"https://www.gov.ca.gov/tag/spanish\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:41.018Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.gov.ca.gov/tag/spanish",
-	"url": "https://www.gov.ca.gov/tag/spanish/"
-}

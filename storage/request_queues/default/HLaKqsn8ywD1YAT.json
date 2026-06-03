@@ -1,9 +1,0 @@
-{
-	"id": "HLaKqsn8ywD1YAT",
-	"json": "{\"id\":\"HLaKqsn8ywD1YAT\",\"url\":\"https://psychology.ucdavis.edu/research/research-areas/perception-cognition/area-brown-bags\",\"loadedUrl\":\"https://psychology.ucdavis.edu/research/research-areas/perception-cognition/area-brown-bags\",\"uniqueKey\":\"https://psychology.ucdavis.edu/research/research-areas/perception-cognition/area-brown-bags\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:57.649Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://psychology.ucdavis.edu/research/research-areas/perception-cognition/area-brown-bags",
-	"url": "https://psychology.ucdavis.edu/research/research-areas/perception-cognition/area-brown-bags"
-}

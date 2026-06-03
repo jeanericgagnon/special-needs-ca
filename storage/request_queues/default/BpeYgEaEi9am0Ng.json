@@ -1,9 +1,0 @@
-{
-	"id": "BpeYgEaEi9am0Ng",
-	"json": "{\"id\":\"BpeYgEaEi9am0Ng\",\"url\":\"https://health.ucdavis.edu/nursing/ourteam/postdocs/Howe-Rebecca-bio.html\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/ourteam/postdocs/Howe-Rebecca-bio.html\",\"uniqueKey\":\"https://health.ucdavis.edu/nursing/ourteam/postdocs/Howe-Rebecca-bio.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:27.091Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/nursing/ourteam/postdocs/Howe-Rebecca-bio.html",
-	"url": "https://health.ucdavis.edu/nursing/ourteam/postdocs/Howe-Rebecca-bio.html"
-}

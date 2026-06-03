@@ -1,9 +1,0 @@
-{
-	"id": "IzGSdRjMEOCsmuP",
-	"json": "{\"id\":\"IzGSdRjMEOCsmuP\",\"url\":\"https://www.dmv.ca.gov/portal/customer-service/report-an-issue-or-complaint/dmv-technical-support/\",\"loadedUrl\":\"https://www.dmv.ca.gov/portal/customer-service/customer-support/dmv-technical-support/\",\"uniqueKey\":\"https://www.dmv.ca.gov/portal/customer-service/report-an-issue-or-complaint/dmv-technical-support\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:39.175Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dmv.ca.gov/portal/customer-service/report-an-issue-or-complaint/dmv-technical-support",
-	"url": "https://www.dmv.ca.gov/portal/customer-service/report-an-issue-or-complaint/dmv-technical-support/"
-}

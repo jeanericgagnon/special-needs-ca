@@ -1,9 +1,0 @@
-{
-	"id": "KlC2s0G8TI18Y1f",
-	"json": "{\"id\":\"KlC2s0G8TI18Y1f\",\"url\":\"https://dq.cde.ca.gov/dataquest/Staff/StaffByEth.aspx?cYear=2018-19&cChoice=StateNum&cType=T&cGender=&Submit=1\",\"loadedUrl\":\"https://dq.cde.ca.gov/dataquest/Staff/StaffByEth.aspx?cYear=2018-19&cChoice=StateNum&cType=T&cGender=&Submit=1\",\"uniqueKey\":\"https://dq.cde.ca.gov/dataquest/Staff/StaffByEth.aspx?Submit=1&cChoice=StateNum&cGender=&cType=T&cYear=2018-19\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:09:14.050Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://dq.cde.ca.gov/dataquest/Staff/StaffByEth.aspx?Submit=1&cChoice=StateNum&cGender=&cType=T&cYear=2018-19",
-	"url": "https://dq.cde.ca.gov/dataquest/Staff/StaffByEth.aspx?cYear=2018-19&cChoice=StateNum&cType=T&cGender=&Submit=1"
-}

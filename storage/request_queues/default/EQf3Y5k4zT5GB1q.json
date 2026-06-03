@@ -1,9 +1,0 @@
-{
-	"id": "EQf3Y5k4zT5GB1q",
-	"json": "{\"id\":\"EQf3Y5k4zT5GB1q\",\"url\":\"https://www3.cde.ca.gov/pgms/forgotpw.aspx\",\"loadedUrl\":\"https://www3.cde.ca.gov/pgms/forgotpw\",\"uniqueKey\":\"https://www3.cde.ca.gov/pgms/forgotpw.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:35.831Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www3.cde.ca.gov/pgms/forgotpw.aspx",
-	"url": "https://www3.cde.ca.gov/pgms/forgotpw.aspx"
-}

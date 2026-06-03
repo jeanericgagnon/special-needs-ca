@@ -1,9 +1,0 @@
-{
-	"id": "rgbrnHvXg1UZRhC",
-	"json": "{\"id\":\"rgbrnHvXg1UZRhC\",\"url\":\"https://www.cdph.ca.gov/Programs/OPG/Pages/Hope-for-Gamblers.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/OPG/Pages/Hope-for-Gamblers.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/OPG/Pages/Hope-for-Gamblers.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:03.872Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/OPG/Pages/Hope-for-Gamblers.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/OPG/Pages/Hope-for-Gamblers.aspx"
-}

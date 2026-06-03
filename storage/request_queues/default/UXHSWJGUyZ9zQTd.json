@@ -1,9 +1,0 @@
-{
-	"id": "UXHSWJGUyZ9zQTd",
-	"json": "{\"id\":\"UXHSWJGUyZ9zQTd\",\"url\":\"https://financeandbusiness.ucdavis.edu/systems/desii\",\"loadedUrl\":\"https://financeandbusiness.ucdavis.edu/systems/desii\",\"uniqueKey\":\"https://financeandbusiness.ucdavis.edu/systems/desii\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:50.125Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://financeandbusiness.ucdavis.edu/systems/desii",
-	"url": "https://financeandbusiness.ucdavis.edu/systems/desii"
-}

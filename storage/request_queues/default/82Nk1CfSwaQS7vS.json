@@ -1,9 +1,0 @@
-{
-	"id": "82Nk1CfSwaQS7vS",
-	"json": "{\"id\":\"82Nk1CfSwaQS7vS\",\"url\":\"http://cdss.ca.gov/inforesources/tribal-tanf/ihc\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/tribal-tanf/ihc\",\"uniqueKey\":\"http://cdss.ca.gov/inforesources/tribal-tanf/ihc\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":1,\"errorMessages\":[\"Error: Detected a session error, rotating session... \\nread ECONNRESET\\n\\n    at CheerioCrawler._requestFunction (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@crawlee/http/internals/http-crawler.js:461:23)\\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\\n    at async wrap (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@apify/timeout/cjs/index.cjs:54:21)\"],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4,\"sessionRotationCount\":1}},\"handledAt\":\"2026-06-01T22:59:13.838Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 1,
-	"uniqueKey": "http://cdss.ca.gov/inforesources/tribal-tanf/ihc",
-	"url": "http://cdss.ca.gov/inforesources/tribal-tanf/ihc"
-}

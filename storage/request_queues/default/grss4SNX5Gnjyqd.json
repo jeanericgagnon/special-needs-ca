@@ -1,9 +1,0 @@
-{
-	"id": "grss4SNX5Gnjyqd",
-	"json": "{\"id\":\"grss4SNX5Gnjyqd\",\"url\":\"https://engineering.ucdavis.edu/undergraduates/majors-and-minors/abet\",\"loadedUrl\":\"https://engineering.ucdavis.edu/undergraduates/majors-and-minors/abet\",\"uniqueKey\":\"https://engineering.ucdavis.edu/undergraduates/majors-and-minors/abet\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:33.549Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://engineering.ucdavis.edu/undergraduates/majors-and-minors/abet",
-	"url": "https://engineering.ucdavis.edu/undergraduates/majors-and-minors/abet"
-}

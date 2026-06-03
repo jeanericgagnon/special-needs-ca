@@ -1,9 +1,0 @@
-{
-	"id": "u6wAgQgome1hwxy",
-	"json": "{\"id\":\"u6wAgQgome1hwxy\",\"url\":\"http://www.cdph.ca.gov/certlic/facilities/Documents/LNC-AFL-16-14.pdf\",\"loadedUrl\":\"https://www.cdph.ca.gov/certlic/facilities/Documents/LNC-AFL-16-14.pdf\",\"uniqueKey\":\"http://www.cdph.ca.gov/certlic/facilities/Documents/LNC-AFL-16-14.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":3,\"errorMessages\":[\"Error: request timed out after 30 seconds.\\n    at Timeout._onTimeout (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@apify/timeout/cjs/index.cjs:64:68)\\n    at listOnTimeout (node:internal/timers:588:17)\\n    at process.processTimers (node:internal/timers:523:7)\",\"Error: request timed out after 30 seconds.\\n    at Timeout._onTimeout (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@apify/timeout/cjs/index.cjs:64:68)\\n    at listOnTimeout (node:internal/timers:588:17)\\n    at process.processTimers (node:internal/timers:523:7)\",\"Error: request timed out after 30 seconds.\\n    at Timeout._onTimeout (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@apify/timeout/cjs/index.cjs:64:68)\\n    at listOnTimeout (node:internal/timers:588:17)\\n    at process.processTimers (node:internal/timers:523:7)\"],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T18:43:40.138Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 3,
-	"uniqueKey": "http://www.cdph.ca.gov/certlic/facilities/Documents/LNC-AFL-16-14.pdf",
-	"url": "http://www.cdph.ca.gov/certlic/facilities/Documents/LNC-AFL-16-14.pdf"
-}

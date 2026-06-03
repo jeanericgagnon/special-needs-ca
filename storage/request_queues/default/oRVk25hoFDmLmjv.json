@@ -1,9 +1,0 @@
-{
-	"id": "oRVk25hoFDmLmjv",
-	"json": "{\"id\":\"oRVk25hoFDmLmjv\",\"url\":\"https://leginfo.legislature.ca.gov/faces/codes_displayexpandedbranch.xhtml?tocCode=WIC&division=4.1.&title=&part=&chapter=&article=&nodetreepath=8\",\"loadedUrl\":\"https://leginfo.legislature.ca.gov/faces/codes_displayexpandedbranch.xhtml?tocCode=WIC&division=4.1.&title=&part=&chapter=&article=&nodetreepath=8\",\"uniqueKey\":\"https://leginfo.legislature.ca.gov/faces/codes_displayexpandedbranch.xhtml?article=&chapter=&division=4.1.&nodetreepath=8&part=&title=&tocCode=WIC\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:57.357Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://leginfo.legislature.ca.gov/faces/codes_displayexpandedbranch.xhtml?article=&chapter=&division=4.1.&nodetreepath=8&part=&title=&tocCode=WIC",
-	"url": "https://leginfo.legislature.ca.gov/faces/codes_displayexpandedbranch.xhtml?tocCode=WIC&division=4.1.&title=&part=&chapter=&article=&nodetreepath=8"
-}

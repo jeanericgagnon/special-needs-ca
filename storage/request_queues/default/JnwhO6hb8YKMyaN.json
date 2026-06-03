@@ -1,9 +1,0 @@
-{
-	"id": "JnwhO6hb8YKMyaN",
-	"json": "{\"id\":\"JnwhO6hb8YKMyaN\",\"url\":\"https://rarediseases.org/rare-diseases/meige-syndrome/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/meige-syndrome/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/meige-syndrome\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:15:31.061Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/rare-diseases/meige-syndrome",
-	"url": "https://rarediseases.org/rare-diseases/meige-syndrome/"
-}

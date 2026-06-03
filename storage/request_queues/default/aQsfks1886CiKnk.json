@@ -1,9 +1,0 @@
-{
-	"id": "aQsfks1886CiKnk",
-	"json": "{\"id\":\"aQsfks1886CiKnk\",\"url\":\"https://rarediseases.org/news/?taxonomy[category]=industry\",\"loadedUrl\":\"https://rarediseases.org/news/?taxonomy[category]=industry\",\"uniqueKey\":\"https://rarediseases.org/news?taxonomy%5Bcategory%5D=industry\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:19:43.141Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/news?taxonomy%5Bcategory%5D=industry",
-	"url": "https://rarediseases.org/news/?taxonomy[category]=industry"
-}

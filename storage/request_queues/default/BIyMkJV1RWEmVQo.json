@@ -1,9 +1,0 @@
-{
-	"id": "BIyMkJV1RWEmVQo",
-	"json": "{\"id\":\"BIyMkJV1RWEmVQo\",\"url\":\"https://www.cde.ca.gov/ta/tg/\",\"loadedUrl\":\"https://www.cde.ca.gov/ta/tg/\",\"uniqueKey\":\"https://www.cde.ca.gov/ta/tg\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:56:10.552Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ta/tg",
-	"url": "https://www.cde.ca.gov/ta/tg/"
-}

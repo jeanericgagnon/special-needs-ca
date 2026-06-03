@@ -1,9 +1,0 @@
-{
-	"id": "ucLKeroQ6wky9vB",
-	"json": "{\"id\":\"ucLKeroQ6wky9vB\",\"url\":\"https://mychart.ucdavis.edu/MyChart/Home/Logout?postloginmode=patientestimates\",\"loadedUrl\":\"https://mychart.ucdavis.edu/MyChart/Authentication/Login?postloginurl=InsideAsp%2fMode%3fmode%3dpatientestimates%26hideText%3d1%26liteMode%3dtrue&liteMode=true&forceAuthn=true\",\"uniqueKey\":\"https://mychart.ucdavis.edu/MyChart/Home/Logout?postloginmode=patientestimates\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:42.089Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://mychart.ucdavis.edu/MyChart/Home/Logout?postloginmode=patientestimates",
-	"url": "https://mychart.ucdavis.edu/MyChart/Home/Logout?postloginmode=patientestimates"
-}

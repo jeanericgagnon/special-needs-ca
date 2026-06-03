@@ -1,9 +1,0 @@
-{
-	"id": "ZD8EuK7nfuWnvg7",
-	"json": "{\"id\":\"ZD8EuK7nfuWnvg7\",\"url\":\"https://irb.ucdavis.edu/irb-submissions/coll-research/\",\"loadedUrl\":\"https://irb.ucdavis.edu/irb-submissions/coll-research/\",\"uniqueKey\":\"https://irb.ucdavis.edu/irb-submissions/coll-research\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:40.194Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://irb.ucdavis.edu/irb-submissions/coll-research",
-	"url": "https://irb.ucdavis.edu/irb-submissions/coll-research/"
-}

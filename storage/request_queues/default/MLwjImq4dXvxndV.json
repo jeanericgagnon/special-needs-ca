@@ -1,9 +1,0 @@
-{
-	"id": "MLwjImq4dXvxndV",
-	"json": "{\"id\":\"MLwjImq4dXvxndV\",\"url\":\"https://neuroscience.ucdavis.edu/faculty-positions\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/faculty-positions\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/faculty-positions\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:36.282Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/faculty-positions",
-	"url": "https://neuroscience.ucdavis.edu/faculty-positions"
-}

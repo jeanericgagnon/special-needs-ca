@@ -1,9 +1,0 @@
-{
-	"id": "o5MXXQrcnKKhuDj",
-	"json": "{\"id\":\"o5MXXQrcnKKhuDj\",\"url\":\"https://health.ucdavis.edu/ctsc/area/clinical-trials/clinical-research-recruitment\",\"loadedUrl\":\"https://health.ucdavis.edu/ctsc/area/clinical-trials/clinical-research-recruitment\",\"uniqueKey\":\"https://health.ucdavis.edu/ctsc/area/clinical-trials/clinical-research-recruitment\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:32.316Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/ctsc/area/clinical-trials/clinical-research-recruitment",
-	"url": "https://health.ucdavis.edu/ctsc/area/clinical-trials/clinical-research-recruitment"
-}

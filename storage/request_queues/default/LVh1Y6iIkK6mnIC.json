@@ -1,9 +1,0 @@
-{
-	"id": "LVh1Y6iIkK6mnIC",
-	"json": "{\"id\":\"LVh1Y6iIkK6mnIC\",\"url\":\"https://www.dds.ca.gov/category/news-releases/page/3/\",\"loadedUrl\":\"https://www.dds.ca.gov/category/news-releases/page/3/\",\"uniqueKey\":\"https://www.dds.ca.gov/category/news-releases/page/3\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:36.910Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/category/news-releases/page/3",
-	"url": "https://www.dds.ca.gov/category/news-releases/page/3/"
-}

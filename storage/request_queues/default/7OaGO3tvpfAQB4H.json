@@ -1,9 +1,0 @@
-{
-	"id": "7OaGO3tvpfAQB4H",
-	"json": "{\"id\":\"7OaGO3tvpfAQB4H\",\"url\":\"https://www.chhs.ca.gov/blog/2022/02/24/joint-statement-from-calhhs-secretary-dr-mark-ghaly-and-cdss-director-kim-johnson/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/2022/02/24/joint-statement-from-calhhs-secretary-dr-mark-ghaly-and-cdss-director-kim-johnson/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/2022/02/24/joint-statement-from-calhhs-secretary-dr-mark-ghaly-and-cdss-director-kim-johnson\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:14.546Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chhs.ca.gov/blog/2022/02/24/joint-statement-from-calhhs-secretary-dr-mark-ghaly-and-cdss-director-kim-johnson",
-	"url": "https://www.chhs.ca.gov/blog/2022/02/24/joint-statement-from-calhhs-secretary-dr-mark-ghaly-and-cdss-director-kim-johnson/"
-}

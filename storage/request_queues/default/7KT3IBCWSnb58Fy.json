@@ -1,9 +1,0 @@
-{
-	"id": "7KT3IBCWSnb58Fy",
-	"json": "{\"id\":\"7KT3IBCWSnb58Fy\",\"url\":\"https://health.ucdavis.edu/leadership/bios/galante\",\"loadedUrl\":\"https://health.ucdavis.edu/leadership/bios/galante\",\"uniqueKey\":\"https://health.ucdavis.edu/leadership/bios/galante\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:07.278Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/leadership/bios/galante",
-	"url": "https://health.ucdavis.edu/leadership/bios/galante"
-}

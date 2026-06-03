@@ -1,9 +1,0 @@
-{
-	"id": "1Fdd9zcIW7x6TpU",
-	"json": "{\"id\":\"1Fdd9zcIW7x6TpU\",\"url\":\"https://neuroscience.ucdavis.edu/people/dan-ragland\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/people/dan-ragland\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/people/dan-ragland\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:49.624Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/people/dan-ragland",
-	"url": "https://neuroscience.ucdavis.edu/people/dan-ragland"
-}

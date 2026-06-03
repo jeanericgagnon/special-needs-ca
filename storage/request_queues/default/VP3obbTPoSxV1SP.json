@@ -1,9 +1,0 @@
-{
-	"id": "VP3obbTPoSxV1SP",
-	"json": "{\"id\":\"VP3obbTPoSxV1SP\",\"url\":\"https://www.ssa.gov/ssi/text-income-ussi.htm\",\"loadedUrl\":\"https://www.ssa.gov/ssi/text-income-ussi.htm\",\"uniqueKey\":\"https://www.ssa.gov/ssi/text-income-ussi.htm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:54.894Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ssa.gov/ssi/text-income-ussi.htm",
-	"url": "https://www.ssa.gov/ssi/text-income-ussi.htm"
-}

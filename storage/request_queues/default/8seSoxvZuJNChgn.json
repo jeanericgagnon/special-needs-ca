@@ -1,9 +1,0 @@
-{
-	"id": "8seSoxvZuJNChgn",
-	"json": "{\"id\":\"8seSoxvZuJNChgn\",\"url\":\"https://lettersandscience.ucdavis.edu/support-college\",\"loadedUrl\":\"https://lettersandscience.ucdavis.edu/giving\",\"uniqueKey\":\"https://lettersandscience.ucdavis.edu/support-college\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:24.476Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://lettersandscience.ucdavis.edu/support-college",
-	"url": "https://lettersandscience.ucdavis.edu/support-college"
-}

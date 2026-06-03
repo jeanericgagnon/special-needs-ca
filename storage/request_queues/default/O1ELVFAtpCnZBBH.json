@@ -1,9 +1,0 @@
-{
-	"id": "O1ELVFAtpCnZBBH",
-	"json": "{\"id\":\"O1ELVFAtpCnZBBH\",\"url\":\"https://health.ucdavis.edu/patients-visitors/insurance-billing/paperless-billing\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/insurance-billing/paperless-billing\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/insurance-billing/paperless-billing\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:54.926Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/insurance-billing/paperless-billing",
-	"url": "https://health.ucdavis.edu/patients-visitors/insurance-billing/paperless-billing"
-}

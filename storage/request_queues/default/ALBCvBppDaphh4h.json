@@ -1,9 +1,0 @@
-{
-	"id": "ALBCvBppDaphh4h",
-	"json": "{\"id\":\"ALBCvBppDaphh4h\",\"url\":\"https://health.ucdavis.edu/data/tools.html\",\"loadedUrl\":\"https://health.ucdavis.edu/data/tools.html\",\"uniqueKey\":\"https://health.ucdavis.edu/data/tools.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:00.132Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/data/tools.html",
-	"url": "https://health.ucdavis.edu/data/tools.html"
-}

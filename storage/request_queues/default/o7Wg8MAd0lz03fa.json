@@ -1,9 +1,0 @@
-{
-	"id": "o7Wg8MAd0lz03fa",
-	"json": "{\"id\":\"o7Wg8MAd0lz03fa\",\"url\":\"https://health.ucdavis.edu/integrative-medicine/\",\"loadedUrl\":\"https://health.ucdavis.edu/integrative-medicine/\",\"uniqueKey\":\"https://health.ucdavis.edu/integrative-medicine\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:50.943Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/integrative-medicine",
-	"url": "https://health.ucdavis.edu/integrative-medicine/"
-}

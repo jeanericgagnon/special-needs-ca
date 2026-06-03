@@ -1,9 +1,0 @@
-{
-	"id": "ABXkuq9s4FipYv8",
-	"json": "{\"id\":\"ABXkuq9s4FipYv8\",\"url\":\"https://www.cdss.ca.gov/stakeholder-resources\",\"loadedUrl\":\"https://www.cdss.ca.gov/stakeholder-resources\",\"uniqueKey\":\"https://www.cdss.ca.gov/stakeholder-resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:05.483Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/stakeholder-resources",
-	"url": "https://www.cdss.ca.gov/stakeholder-resources"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "QhMgvgRjQLoBk2B",
-	"json": "{\"id\":\"QhMgvgRjQLoBk2B\",\"url\":\"https://www.cdph.ca.gov/Programs/OLS/Pages/HIPAA-and-Your-Privacy-Rights.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/OLS/Pages/HIPAA-and-Your-Privacy-Rights.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/OLS/Pages/HIPAA-and-Your-Privacy-Rights.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:55:46.113Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/OLS/Pages/HIPAA-and-Your-Privacy-Rights.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/OLS/Pages/HIPAA-and-Your-Privacy-Rights.aspx"
-}

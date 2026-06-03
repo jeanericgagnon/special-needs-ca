@@ -1,9 +1,0 @@
-{
-	"id": "7EtW5aYQ9BEwqLp",
-	"json": "{\"id\":\"7EtW5aYQ9BEwqLp\",\"url\":\"https://www.cde.ca.gov/be/ag/ag/yr16/agenda201601.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/be/ag/ag/yr16/agenda201601.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/be/ag/ag/yr16/agenda201601.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:55.025Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/be/ag/ag/yr16/agenda201601.asp",
-	"url": "https://www.cde.ca.gov/be/ag/ag/yr16/agenda201601.asp"
-}

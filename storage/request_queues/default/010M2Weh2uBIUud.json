@@ -1,9 +1,0 @@
-{
-	"id": "010M2Weh2uBIUud",
-	"json": "{\"id\":\"010M2Weh2uBIUud\",\"url\":\"https://cdtfa.ca.gov/taxes-and-fees/rates.htm\",\"loadedUrl\":\"https://cdtfa.ca.gov/taxes-and-fees/rates.htm\",\"uniqueKey\":\"https://cdtfa.ca.gov/taxes-and-fees/rates.htm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:43.767Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdtfa.ca.gov/taxes-and-fees/rates.htm",
-	"url": "https://cdtfa.ca.gov/taxes-and-fees/rates.htm"
-}

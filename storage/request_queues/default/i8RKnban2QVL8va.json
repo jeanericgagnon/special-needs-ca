@@ -1,9 +1,0 @@
-{
-	"id": "i8RKnban2QVL8va",
-	"json": "{\"id\":\"i8RKnban2QVL8va\",\"url\":\"https://www.dds.ca.gov/dds-events\",\"loadedUrl\":\"https://www.dds.ca.gov/dds-events/\",\"uniqueKey\":\"https://www.dds.ca.gov/dds-events\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:34.575Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/dds-events",
-	"url": "https://www.dds.ca.gov/dds-events"
-}

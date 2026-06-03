@@ -1,9 +1,0 @@
-{
-	"id": "6mb0T1duEQwsVuS",
-	"json": "{\"id\":\"6mb0T1duEQwsVuS\",\"url\":\"https://www.hr.ucdavis.edu/resources/trans-nonbinary\",\"loadedUrl\":\"https://www.hr.ucdavis.edu/resources/trans-nonbinary\",\"uniqueKey\":\"https://www.hr.ucdavis.edu/resources/trans-nonbinary\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:56.883Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.hr.ucdavis.edu/resources/trans-nonbinary",
-	"url": "https://www.hr.ucdavis.edu/resources/trans-nonbinary"
-}

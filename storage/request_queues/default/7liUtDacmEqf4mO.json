@@ -1,9 +1,0 @@
-{
-	"id": "7liUtDacmEqf4mO",
-	"json": "{\"id\":\"7liUtDacmEqf4mO\",\"url\":\"https://www.cdss.ca.gov/inforesources/Child-Care-Licensing/Resources-for-Providers/Laws-and-Regulations\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/child-care-licensing/resources-for-providers/laws-and-regulations\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/Child-Care-Licensing/Resources-for-Providers/Laws-and-Regulations\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:38.582Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/inforesources/Child-Care-Licensing/Resources-for-Providers/Laws-and-Regulations",
-	"url": "https://www.cdss.ca.gov/inforesources/Child-Care-Licensing/Resources-for-Providers/Laws-and-Regulations"
-}

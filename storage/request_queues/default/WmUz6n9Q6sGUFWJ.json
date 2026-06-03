@@ -1,9 +1,0 @@
-{
-	"id": "WmUz6n9Q6sGUFWJ",
-	"json": "{\"id\":\"WmUz6n9Q6sGUFWJ\",\"url\":\"https://health.ucdavis.edu/neurology/giving/strengthen-partnerships\",\"loadedUrl\":\"https://health.ucdavis.edu/neurology/giving/strengthen-partnerships\",\"uniqueKey\":\"https://health.ucdavis.edu/neurology/giving/strengthen-partnerships\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:52.418Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/neurology/giving/strengthen-partnerships",
-	"url": "https://health.ucdavis.edu/neurology/giving/strengthen-partnerships"
-}

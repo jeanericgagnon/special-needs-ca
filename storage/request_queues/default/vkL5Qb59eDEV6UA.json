@@ -1,9 +1,0 @@
-{
-	"id": "vkL5Qb59eDEV6UA",
-	"json": "{\"id\":\"vkL5Qb59eDEV6UA\",\"url\":\"https://health.ucdavis.edu/compliance/privacy/business-associate-agreement\",\"loadedUrl\":\"https://health.ucdavis.edu/compliance/privacy/business-associate-agreement\",\"uniqueKey\":\"https://health.ucdavis.edu/compliance/privacy/business-associate-agreement\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:33.134Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/compliance/privacy/business-associate-agreement",
-	"url": "https://health.ucdavis.edu/compliance/privacy/business-associate-agreement"
-}

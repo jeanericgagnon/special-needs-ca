@@ -1,9 +1,0 @@
-{
-	"id": "BGK3fv0uj1MbOyB",
-	"json": "{\"id\":\"BGK3fv0uj1MbOyB\",\"url\":\"https://health.ucdavis.edu/internal-medicine/team/42806/angel-desai-infectious-diseases-sacramento-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/internal-medicine/team/42806/angel-desai-infectious-diseases-sacramento-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/internal-medicine/team/42806/angel-desai-infectious-diseases-sacramento-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:21.602Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/internal-medicine/team/42806/angel-desai-infectious-diseases-sacramento-sacramento",
-	"url": "https://health.ucdavis.edu/internal-medicine/team/42806/angel-desai-infectious-diseases-sacramento-sacramento"
-}

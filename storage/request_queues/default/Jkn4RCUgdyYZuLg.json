@@ -1,9 +1,0 @@
-{
-	"id": "Jkn4RCUgdyYZuLg",
-	"json": "{\"id\":\"Jkn4RCUgdyYZuLg\",\"url\":\"https://health.ucdavis.edu/medical-school/academic-programs/residents-fellows/residencies-fellowships\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-school/academic-programs/residents-fellows/residencies-fellowships\",\"uniqueKey\":\"https://health.ucdavis.edu/medical-school/academic-programs/residents-fellows/residencies-fellowships\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:52.632Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/medical-school/academic-programs/residents-fellows/residencies-fellowships",
-	"url": "https://health.ucdavis.edu/medical-school/academic-programs/residents-fellows/residencies-fellowships"
-}

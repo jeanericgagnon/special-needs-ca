@@ -1,9 +1,0 @@
-{
-	"id": "2LR2rAIhSkSSQzk",
-	"json": "{\"id\":\"2LR2rAIhSkSSQzk\",\"url\":\"https://give.ucdavis.edu/AWFC/AWFRI14\",\"loadedUrl\":\"https://give.ucdavis.edu/AWFC/AWFRI14\",\"uniqueKey\":\"https://give.ucdavis.edu/AWFC/AWFRI14\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:58.615Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/AWFC/AWFRI14",
-	"url": "https://give.ucdavis.edu/AWFC/AWFRI14"
-}

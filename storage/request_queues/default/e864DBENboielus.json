@@ -1,9 +1,0 @@
-{
-	"id": "e864DBENboielus",
-	"json": "{\"id\":\"e864DBENboielus\",\"url\":\"http://www.ucdmc.ucdavis.edu/welcome/\",\"loadedUrl\":\"https://health.ucdavis.edu/welcome/\",\"uniqueKey\":\"http://www.ucdmc.ucdavis.edu/welcome\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:32.928Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.ucdmc.ucdavis.edu/welcome",
-	"url": "http://www.ucdmc.ucdavis.edu/welcome/"
-}

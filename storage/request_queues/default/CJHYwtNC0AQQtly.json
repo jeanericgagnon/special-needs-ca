@@ -1,9 +1,0 @@
-{
-	"id": "CJHYwtNC0AQQtly",
-	"json": "{\"id\":\"CJHYwtNC0AQQtly\",\"url\":\"https://www.cdph.ca.gov/Programs/EPO/Pages/BP_Schools_Emergencies_Tips-for-Communicating-with-Students-During-an-Emergency.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/EPO/Pages/BP_Schools_Emergencies_Tips-for-Communicating-with-Students-During-an-Emergency.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/EPO/Pages/BP_Schools_Emergencies_Tips-for-Communicating-with-Students-During-an-Emergency.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:03:29.476Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/EPO/Pages/BP_Schools_Emergencies_Tips-for-Communicating-with-Students-During-an-Emergency.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/EPO/Pages/BP_Schools_Emergencies_Tips-for-Communicating-with-Students-During-an-Emergency.aspx"
-}

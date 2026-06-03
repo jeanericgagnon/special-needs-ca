@@ -1,9 +1,0 @@
-{
-	"id": "cvMV1l4Zg59GL7k",
-	"json": "{\"id\":\"cvMV1l4Zg59GL7k\",\"url\":\"https://giving.ucdavis.edu/resources/stewardship-award-program\",\"loadedUrl\":\"https://giving.ucdavis.edu/impacts-giving/faculty-staff-stewardship-award-program\",\"uniqueKey\":\"https://giving.ucdavis.edu/resources/stewardship-award-program\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:55.051Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://giving.ucdavis.edu/resources/stewardship-award-program",
-	"url": "https://giving.ucdavis.edu/resources/stewardship-award-program"
-}

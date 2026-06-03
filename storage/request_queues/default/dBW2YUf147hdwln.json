@@ -1,9 +1,0 @@
-{
-	"id": "dBW2YUf147hdwln",
-	"json": "{\"id\":\"dBW2YUf147hdwln\",\"url\":\"https://health.ucdavis.edu/news/topic/obstetrics-gynecology\",\"loadedUrl\":\"https://health.ucdavis.edu/news/topic/obstetrics-gynecology\",\"uniqueKey\":\"https://health.ucdavis.edu/news/topic/obstetrics-gynecology\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:01.441Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/news/topic/obstetrics-gynecology",
-	"url": "https://health.ucdavis.edu/news/topic/obstetrics-gynecology"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "FDz1zBrgbZKMx3m",
-	"json": "{\"id\":\"FDz1zBrgbZKMx3m\",\"url\":\"https://data.chhs.ca.gov/dataset/health-and-human-services-program-counts/resource/ec397c9d-9406-4a8b-bc59-7e611310e587\",\"loadedUrl\":\"https://data.chhs.ca.gov/dataset/health-and-human-services-program-counts/resource/ec397c9d-9406-4a8b-bc59-7e611310e587\",\"uniqueKey\":\"https://data.chhs.ca.gov/dataset/health-and-human-services-program-counts/resource/ec397c9d-9406-4a8b-bc59-7e611310e587\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:49.913Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://data.chhs.ca.gov/dataset/health-and-human-services-program-counts/resource/ec397c9d-9406-4a8b-bc59-7e611310e587",
-	"url": "https://data.chhs.ca.gov/dataset/health-and-human-services-program-counts/resource/ec397c9d-9406-4a8b-bc59-7e611310e587"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "DHjqzUeYYj2rrMq",
-	"json": "{\"id\":\"DHjqzUeYYj2rrMq\",\"url\":\"https://health.ucdavis.edu/data/HDOC/aoc.html\",\"loadedUrl\":\"https://health.ucdavis.edu/data/HDOC/aoc.html\",\"uniqueKey\":\"https://health.ucdavis.edu/data/HDOC/aoc.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:00.142Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/data/HDOC/aoc.html",
-	"url": "https://health.ucdavis.edu/data/HDOC/aoc.html"
-}

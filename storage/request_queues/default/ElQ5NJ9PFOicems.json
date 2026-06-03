@@ -1,9 +1,0 @@
-{
-	"id": "ElQ5NJ9PFOicems",
-	"json": "{\"id\":\"ElQ5NJ9PFOicems\",\"url\":\"https://www.ftb.ca.gov/myftb/index.asp\",\"loadedUrl\":\"https://www.ftb.ca.gov/myftb/index.asp\",\"uniqueKey\":\"https://www.ftb.ca.gov/myftb/index.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:35.742Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ftb.ca.gov/myftb/index.asp",
-	"url": "https://www.ftb.ca.gov/myftb/index.asp"
-}

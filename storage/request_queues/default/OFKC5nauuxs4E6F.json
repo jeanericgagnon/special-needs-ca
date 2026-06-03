@@ -1,9 +1,0 @@
-{
-	"id": "OFKC5nauuxs4E6F",
-	"json": "{\"id\":\"OFKC5nauuxs4E6F\",\"url\":\"https://www.cdii.ca.gov/consumer-reports/health-care-quality-report-cards/\",\"loadedUrl\":\"https://www.cdii.ca.gov/consumer-reports/health-care-quality-report-cards/\",\"uniqueKey\":\"https://www.cdii.ca.gov/consumer-reports/health-care-quality-report-cards\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:28:33.755Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdii.ca.gov/consumer-reports/health-care-quality-report-cards",
-	"url": "https://www.cdii.ca.gov/consumer-reports/health-care-quality-report-cards/"
-}

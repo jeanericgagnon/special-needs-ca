@@ -1,9 +1,0 @@
-{
-	"id": "WSyAWLf0aDv0bf1",
-	"json": "{\"id\":\"WSyAWLf0aDv0bf1\",\"url\":\"https://data.ca.gov/pages/state-portals\",\"loadedUrl\":\"https://data.ca.gov/pages/state-portals\",\"uniqueKey\":\"https://data.ca.gov/pages/state-portals\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:13.488Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://data.ca.gov/pages/state-portals",
-	"url": "https://data.ca.gov/pages/state-portals"
-}

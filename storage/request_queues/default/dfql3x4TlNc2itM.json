@@ -1,9 +1,0 @@
-{
-	"id": "dfql3x4TlNc2itM",
-	"json": "{\"id\":\"dfql3x4TlNc2itM\",\"url\":\"https://myfamily.wic.ca.gov/Home/WICFarmersMarkets#WICFarmersMarkets\",\"loadedUrl\":\"https://myfamily.wic.ca.gov/Home/WICFarmersMarkets#WICFarmersMarkets\",\"uniqueKey\":\"https://myfamily.wic.ca.gov/Home/WICFarmersMarkets\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:07:19.043Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://myfamily.wic.ca.gov/Home/WICFarmersMarkets",
-	"url": "https://myfamily.wic.ca.gov/Home/WICFarmersMarkets#WICFarmersMarkets"
-}

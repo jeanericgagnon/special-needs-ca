@@ -1,9 +1,0 @@
-{
-	"id": "Fy4rBzLHPDFHFqQ",
-	"json": "{\"id\":\"Fy4rBzLHPDFHFqQ\",\"url\":\"https://www.cdph.ca.gov/Programs/CID/OBBH/Pages/Border-Demographics.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CID/OBBH/Pages/Border-Demographics.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CID/OBBH/Pages/Border-Demographics.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:03:12.293Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CID/OBBH/Pages/Border-Demographics.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CID/OBBH/Pages/Border-Demographics.aspx"
-}

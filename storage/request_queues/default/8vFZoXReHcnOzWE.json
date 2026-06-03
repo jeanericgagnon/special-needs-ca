@@ -1,9 +1,0 @@
-{
-	"id": "8vFZoXReHcnOzWE",
-	"json": "{\"id\":\"8vFZoXReHcnOzWE\",\"url\":\"https://www.cdph.ca.gov/Programs/CHSI/Pages/Frequently-Asked-Questions-(FAQs).aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CHSI/Pages/Frequently-Asked-Questions-(FAQs).aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CHSI/Pages/Frequently-Asked-Questions-(FAQs).aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:15:33.531Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CHSI/Pages/Frequently-Asked-Questions-(FAQs).aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CHSI/Pages/Frequently-Asked-Questions-(FAQs).aspx"
-}

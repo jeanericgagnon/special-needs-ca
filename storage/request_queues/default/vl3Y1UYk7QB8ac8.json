@@ -1,9 +1,0 @@
-{
-	"id": "vl3Y1UYk7QB8ac8",
-	"json": "{\"id\":\"vl3Y1UYk7QB8ac8\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/32266/victor-huang-oncodermatology-skin_toxicities-vitiligo-davis-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/32266/victor-huang-oncodermatology-skin_toxicities-vitiligo-davis-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/32266/victor-huang-oncodermatology-skin_toxicities-vitiligo-davis-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:08.561Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/32266/victor-huang-oncodermatology-skin_toxicities-vitiligo-davis-sacramento",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/32266/victor-huang-oncodermatology-skin_toxicities-vitiligo-davis-sacramento"
-}

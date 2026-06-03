@@ -1,9 +1,0 @@
-{
-	"id": "6Vh5IMmhcMWvqFg",
-	"json": "{\"id\":\"6Vh5IMmhcMWvqFg\",\"url\":\"https://give.ucdavis.edu/BCNS/CNSVARD\",\"loadedUrl\":\"https://give.ucdavis.edu/BCNS/CNSVARD\",\"uniqueKey\":\"https://give.ucdavis.edu/BCNS/CNSVARD\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:01.643Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/BCNS/CNSVARD",
-	"url": "https://give.ucdavis.edu/BCNS/CNSVARD"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "ac8dKtS5yy5Rgui",
-	"json": "{\"id\":\"ac8dKtS5yy5Rgui\",\"url\":\"https://rarediseases.org/driving-policy/policy-issues/\",\"loadedUrl\":\"https://rarediseases.org/driving-policy/public-policy-positions/\",\"uniqueKey\":\"https://rarediseases.org/driving-policy/policy-issues\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:57:01.680Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/driving-policy/policy-issues",
-	"url": "https://rarediseases.org/driving-policy/policy-issues/"
-}

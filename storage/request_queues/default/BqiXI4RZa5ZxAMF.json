@@ -1,9 +1,0 @@
-{
-	"id": "BqiXI4RZa5ZxAMF",
-	"json": "{\"id\":\"BqiXI4RZa5ZxAMF\",\"url\":\"https://www.cde.ca.gov/fg/aa/co/cafaqs.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/fg/aa/co/cafaqs.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/fg/aa/co/cafaqs.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:22:28.142Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/fg/aa/co/cafaqs.asp",
-	"url": "https://www.cde.ca.gov/fg/aa/co/cafaqs.asp"
-}

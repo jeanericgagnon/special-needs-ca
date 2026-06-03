@@ -1,9 +1,0 @@
-{
-	"id": "8WGOdH4kuu4VFJx",
-	"json": "{\"id\":\"8WGOdH4kuu4VFJx\",\"url\":\"https://health.ucdavis.edu/medical-center/news/topic/general-health-news\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-center/news/topic/general-health-news\",\"uniqueKey\":\"https://health.ucdavis.edu/medical-center/news/topic/general-health-news\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:42.477Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/medical-center/news/topic/general-health-news",
-	"url": "https://health.ucdavis.edu/medical-center/news/topic/general-health-news"
-}

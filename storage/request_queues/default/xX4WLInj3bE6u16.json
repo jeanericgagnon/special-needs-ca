@@ -1,9 +1,0 @@
-{
-	"id": "xX4WLInj3bE6u16",
-	"json": "{\"id\":\"xX4WLInj3bE6u16\",\"url\":\"https://health.ucdavis.edu/children/services/pediatric-endocrinology/conditions-we-treat/diabetes\",\"loadedUrl\":\"https://health.ucdavis.edu/children/services/pediatric-endocrinology/conditions-we-treat/diabetes\",\"uniqueKey\":\"https://health.ucdavis.edu/children/services/pediatric-endocrinology/conditions-we-treat/diabetes\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:47:02.762Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/children/services/pediatric-endocrinology/conditions-we-treat/diabetes",
-	"url": "https://health.ucdavis.edu/children/services/pediatric-endocrinology/conditions-we-treat/diabetes"
-}

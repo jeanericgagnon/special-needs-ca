@@ -1,9 +1,0 @@
-{
-	"id": "sciZ0I9mXvSHMWb",
-	"json": "{\"id\":\"sciZ0I9mXvSHMWb\",\"url\":\"https://rarediseases.org/organizations/angelman-syndrome-support-education-and-research-trust/\",\"loadedUrl\":\"https://rarediseases.org/organizations/angelman-syndrome-support-education-and-research-trust/\",\"uniqueKey\":\"https://rarediseases.org/organizations/angelman-syndrome-support-education-and-research-trust\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:13:11.114Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/organizations/angelman-syndrome-support-education-and-research-trust",
-	"url": "https://rarediseases.org/organizations/angelman-syndrome-support-education-and-research-trust/"
-}

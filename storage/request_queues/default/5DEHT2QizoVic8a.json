@@ -1,9 +1,0 @@
-{
-	"id": "5DEHT2QizoVic8a",
-	"json": "{\"id\":\"5DEHT2QizoVic8a\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/32264/trishna-kantamneni-pediatric_epilepsy-pediatric_neurology-sacramento?FreeText:Last+name=Kantamneni\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/32264/trishna-kantamneni-pediatric_epilepsy-pediatric_neurology-sacramento?FreeText:Last+name=Kantamneni\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/32264/trishna-kantamneni-pediatric_epilepsy-pediatric_neurology-sacramento?FreeText%3ALast+name=Kantamneni\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:17.822Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/32264/trishna-kantamneni-pediatric_epilepsy-pediatric_neurology-sacramento?FreeText%3ALast+name=Kantamneni",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/32264/trishna-kantamneni-pediatric_epilepsy-pediatric_neurology-sacramento?FreeText:Last+name=Kantamneni"
-}

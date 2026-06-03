@@ -1,9 +1,0 @@
-{
-	"id": "70VMtewbFY5PRmM",
-	"json": "{\"id\":\"70VMtewbFY5PRmM\",\"url\":\"http://cdss.ca.gov/inforesources/research-and-data\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/research-and-data\",\"uniqueKey\":\"http://cdss.ca.gov/inforesources/research-and-data\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:49.161Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://cdss.ca.gov/inforesources/research-and-data",
-	"url": "http://cdss.ca.gov/inforesources/research-and-data"
-}

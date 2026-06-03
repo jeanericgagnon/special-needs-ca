@@ -1,9 +1,0 @@
-{
-	"id": "ey18kKx9u3wGwkU",
-	"json": "{\"id\":\"ey18kKx9u3wGwkU\",\"url\":\"https://www.ssa.gov/ssi/reporting\",\"loadedUrl\":\"https://www.ssa.gov/ssi/reporting\",\"uniqueKey\":\"https://www.ssa.gov/ssi/reporting\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:34.543Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ssa.gov/ssi/reporting",
-	"url": "https://www.ssa.gov/ssi/reporting"
-}

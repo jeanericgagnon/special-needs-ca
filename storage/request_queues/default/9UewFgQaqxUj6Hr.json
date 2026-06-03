@@ -1,9 +1,0 @@
-{
-	"id": "9UewFgQaqxUj6Hr",
-	"json": "{\"id\":\"9UewFgQaqxUj6Hr\",\"url\":\"https://archive.cdph.ca.gov/programs/dis/Pages/CDPHIDBGuidanceforManagingSelectCommunicableDiseases.aspx\",\"loadedUrl\":\"https://archive.cdph.ca.gov/\",\"uniqueKey\":\"https://archive.cdph.ca.gov/programs/dis/Pages/CDPHIDBGuidanceforManagingSelectCommunicableDiseases.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:36:12.717Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://archive.cdph.ca.gov/programs/dis/Pages/CDPHIDBGuidanceforManagingSelectCommunicableDiseases.aspx",
-	"url": "https://archive.cdph.ca.gov/programs/dis/Pages/CDPHIDBGuidanceforManagingSelectCommunicableDiseases.aspx"
-}

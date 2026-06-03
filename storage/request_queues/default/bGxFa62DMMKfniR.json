@@ -1,9 +1,0 @@
-{
-	"id": "bGxFa62DMMKfniR",
-	"json": "{\"id\":\"bGxFa62DMMKfniR\",\"url\":\"https://scdd.ca.gov/pos-service-code/participant-directed-goods-and-services/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/participant-directed-goods-and-services/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/participant-directed-goods-and-services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:48.300Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/pos-service-code/participant-directed-goods-and-services",
-	"url": "https://scdd.ca.gov/pos-service-code/participant-directed-goods-and-services/"
-}

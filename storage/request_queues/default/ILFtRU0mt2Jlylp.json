@@ -1,9 +1,0 @@
-{
-	"id": "ILFtRU0mt2Jlylp",
-	"json": "{\"id\":\"ILFtRU0mt2Jlylp\",\"url\":\"https://health.ucdavis.edu/healthcare-professionals/news/headlines/new-mind-institute-pathway-connects-hbcu-students-with-research-careers/2026/03\",\"loadedUrl\":\"https://health.ucdavis.edu/healthcare-professionals/news/headlines/new-mind-institute-pathway-connects-hbcu-students-with-research-careers/2026/03\",\"uniqueKey\":\"https://health.ucdavis.edu/healthcare-professionals/news/headlines/new-mind-institute-pathway-connects-hbcu-students-with-research-careers/2026/03\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:10.112Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/healthcare-professionals/news/headlines/new-mind-institute-pathway-connects-hbcu-students-with-research-careers/2026/03",
-	"url": "https://health.ucdavis.edu/healthcare-professionals/news/headlines/new-mind-institute-pathway-connects-hbcu-students-with-research-careers/2026/03"
-}

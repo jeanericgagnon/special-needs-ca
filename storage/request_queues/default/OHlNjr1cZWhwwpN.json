@@ -1,9 +1,0 @@
-{
-	"id": "OHlNjr1cZWhwwpN",
-	"json": "{\"id\":\"OHlNjr1cZWhwwpN\",\"url\":\"http://www.sierracounty.ca.gov/185/County-Ordinance-Code\",\"loadedUrl\":\"http://www.sierracounty.ca.gov/185/County-Ordinance-Code\",\"uniqueKey\":\"http://www.sierracounty.ca.gov/185/County-Ordinance-Code\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:37.255Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.sierracounty.ca.gov/185/County-Ordinance-Code",
-	"url": "http://www.sierracounty.ca.gov/185/County-Ordinance-Code"
-}

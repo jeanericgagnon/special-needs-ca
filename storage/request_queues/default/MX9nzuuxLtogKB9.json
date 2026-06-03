@@ -1,9 +1,0 @@
-{
-	"id": "MX9nzuuxLtogKB9",
-	"json": "{\"id\":\"MX9nzuuxLtogKB9\",\"url\":\"https://information.auditor.ca.gov/reports/2016-112/auditresults.html\",\"loadedUrl\":\"https://information.auditor.ca.gov/reports/2016-112/auditresults.html\",\"uniqueKey\":\"https://information.auditor.ca.gov/reports/2016-112/auditresults.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:50.859Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://information.auditor.ca.gov/reports/2016-112/auditresults.html",
-	"url": "https://information.auditor.ca.gov/reports/2016-112/auditresults.html"
-}

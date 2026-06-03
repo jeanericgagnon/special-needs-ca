@@ -1,9 +1,0 @@
-{
-	"id": "MWjjvv8mMPrris2",
-	"json": "{\"id\":\"MWjjvv8mMPrris2\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/187/e_bradley-strong-otolaryngology_ent_ears_nose_throat-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/187/e_bradley-strong-otolaryngology_ent_ears_nose_throat-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/187/e_bradley-strong-otolaryngology_ent_ears_nose_throat-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:09.021Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/187/e_bradley-strong-otolaryngology_ent_ears_nose_throat-sacramento",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/187/e_bradley-strong-otolaryngology_ent_ears_nose_throat-sacramento"
-}

@@ -173,20 +173,14 @@ const seedRules = [
   // Early Start Rules
   { id: 'rule-es-1', program_id: 'early-start', min_age_years: 0.0, max_age_years: 3.0, required_condition: null, required_need: 'speech-therapy', insurance_status: 'any', school_status: 'any', trigger_reason: 'Child is under age 3 and has active speech delay or therapeutic needs; Early Start IFSP evaluation is recommended.' },
   { id: 'rule-es-2', program_id: 'early-start', min_age_years: 0.0, max_age_years: 3.0, required_condition: null, required_need: 'feeding-therapy', insurance_status: 'any', school_status: 'any', trigger_reason: 'Child under 3 with swallowing/feeding needs qualifies for early intervention physical support.' },
-  // Regional Center Rules
-  { id: 'rule-rc-1', program_id: 'regional-centers', min_age_years: 3.0, max_age_years: 120.0, required_condition: 'down-syndrome', required_need: null, insurance_status: 'any', school_status: 'any', trigger_reason: 'Down Syndrome is a genetic/developmental listing that matches Lanterman Act categories (Intellectual Disability/Fifth Category) after age 3.' },
-  { id: 'rule-rc-2', program_id: 'regional-centers', min_age_years: 3.0, max_age_years: 120.0, required_condition: 'autism', required_need: null, insurance_status: 'any', school_status: 'any', trigger_reason: 'Autism is a primary qualifying category for California Regional Centers.' },
   // IHSS Rules
   { id: 'rule-ihss-1', program_id: 'ihss-for-children', min_age_years: 0.0, max_age_years: 18.0, required_condition: null, required_need: 'protective-supervision', insurance_status: 'any', school_status: 'any', trigger_reason: 'Child profile exhibits a critical lack of safety awareness (elopement, pica, self-injury) requiring 24/7 Protective Supervision care.' },
   { id: 'rule-ihss-2', program_id: 'ihss-for-children', min_age_years: 3.0, max_age_years: 18.0, required_condition: null, required_need: 'diapers-incontinence-supplies', insurance_status: 'any', school_status: 'any', trigger_reason: 'Incontinence after age 36 months represents an eligible personal care delay; screen for IHSS hours.' },
   // IEP Rules
   { id: 'rule-iep-1', program_id: 'iep-special-education', min_age_years: 3.0, max_age_years: 22.0, required_condition: null, required_need: 'iep-evaluation', insurance_status: 'any', school_status: 'any', trigger_reason: 'School-aged child exhibits speech, developmental, or academic needs requiring a formal school district IEP assessment.' },
-  // CCS Rules
-  { id: 'rule-ccs-1', program_id: 'california-childrens-services', min_age_years: 0.0, max_age_years: 21.0, required_condition: 'hearing-loss', required_need: null, insurance_status: 'any', school_status: 'any', trigger_reason: 'Hearing loss is a CCS eligible physical medical condition for specialized audiology and device coverage.' },
-  { id: 'rule-ccs-2', program_id: 'california-childrens-services', min_age_years: 0.0, max_age_years: 21.0, required_condition: 'vision-impairment', required_need: null, insurance_status: 'any', school_status: 'any', trigger_reason: 'Blindness or cortical visual impairment triggers eligibility for CCS medical eye specialists.' },
-  { id: 'rule-ccs-3', program_id: 'california-childrens-services', min_age_years: 0.0, max_age_years: 21.0, required_condition: 'down-syndrome', required_need: null, insurance_status: 'any', school_status: 'any', trigger_reason: 'Down Syndrome is an established high-risk medical condition qualifying for CCS specialized medical care and MTP physical/occupational therapies.' },
-  // SSI Rules
-  { id: 'rule-ssi-1', program_id: 'ssi-for-children', min_age_years: 0.0, max_age_years: 18.0, required_condition: 'down-syndrome', required_need: null, insurance_status: 'any', school_status: 'any', trigger_reason: 'Down Syndrome automatically satisfies the childhood disability medical listing (Listing 110.06) for cash benefits.' }
+  // HACCP Rules
+  { id: 'rule-haccp-1', program_id: 'hearing-aid-coverage', min_age_years: 0.0, max_age_years: 21.0, required_condition: 'hearing-loss-deafness', required_need: 'hearing-aids', insurance_status: 'any', school_status: 'any', trigger_reason: 'Hearing loss and private insurance device exclusions trigger the California HACCP waiver program to fund fitting and audiology device costs.' },
+  { id: 'rule-haccp-2', program_id: 'hearing-aid-coverage', min_age_years: 0.0, max_age_years: 21.0, required_condition: 'hearing-loss-deafness', required_need: null, insurance_status: 'any', school_status: 'any', trigger_reason: 'Documented hearing loss triggers potential coverage under the California HACCP waiver for pediatric hearing services.' }
 ];
 
 const insertRule = db.prepare(`
@@ -335,77 +329,294 @@ seedDistrictsTx(seedDistricts);
 console.log(`  ✓ Seeded ${seedDistricts.length} School Districts.`);
 
 // Conditions Seed
-const seedConditions = [
-  {
-    id: 'down-syndrome',
-    name: 'Down Syndrome (Trisomy 21)',
-    aliases: 'Trisomy 21, Downs, DS',
-    parent_friendly_explanation: 'A genetic condition caused by an extra copy of chromosome 21, leading to low muscle tone (hypotonia), speech delays, developmental blocks, and increased risk of heart/vision conditions.',
-    regional_center_relevance: 1,
-    iep_relevance: 1,
-    ccs_relevance: 1,
-    ssi_relevance: 1,
-    cal_able_relevance: 1,
-    age_specific_notes: 'Birth to 3 focus on Early Start physical/speech therapies. Transition to school IEP at age 3. CalABLE accounts protect savings during teen years. At 18, transfer educational rights and secure adult SSI.',
-    source_url: 'https://www.ndss.org',
-    last_verified_date: '2026-05-01'
-  },
-  {
-    id: 'autism',
-    name: 'Autism Spectrum Disorder (ASD)',
-    aliases: 'Autism, ASD, Aspergers',
-    parent_friendly_explanation: 'A developmental condition that affects social interaction, communication milestones, sensory integration, and self-regulatory behaviors.',
-    regional_center_relevance: 1,
-    iep_relevance: 1,
-    ccs_relevance: 0,
-    ssi_relevance: 1,
-    cal_able_relevance: 1,
-    age_specific_notes: 'Early detection triggers intensive Early Start behavioral supports. School IEP goals focus on speech and behavior. Transition services are critical age 16+.',
-    source_url: 'https://www.autismspeaks.org',
-    last_verified_date: '2026-05-12'
-  },
-  {
-    id: 'hearing-loss',
-    name: 'Hearing Loss & Deafness',
-    aliases: 'Deaf, Hard of Hearing, Bilateral Sensorineural Loss',
-    parent_friendly_explanation: 'Partial or complete hearing loss in one or both ears, requiring specialized testing, DHH specialized instruction, or hearing aids.',
-    regional_center_relevance: 0,
-    iep_relevance: 1,
-    ccs_relevance: 1,
-    ssi_relevance: 1,
-    cal_able_relevance: 1,
-    age_specific_notes: 'Newborn auditory tests trigger early start. Public school provides FM hearing loop accessories and speech therapists.',
-    source_url: 'https://www.cdc.gov/ncbddd/hearingloss',
-    last_verified_date: '2026-04-18'
-  },
-  {
-    id: 'vision-impairment',
-    name: 'Vision Impairment & Blindness',
-    aliases: 'Low Vision, Blind, Statutory Blindness, CVI',
-    parent_friendly_explanation: 'Significant vision loss that cannot be corrected by glasses or medicine, impacting a child\'s ability to navigate and learn without specialized aids.',
-    regional_center_relevance: 0,
-    iep_relevance: 1,
-    ccs_relevance: 1,
-    ssi_relevance: 1,
-    cal_able_relevance: 1,
-    age_specific_notes: 'Requires Orientation & Mobility (O&M) assessments early. IEP requires TVI (Teacher of Visual Impairments) accommodations.',
-    source_url: 'https://www.afb.org',
-    last_verified_date: '2026-04-20'
-  }
+const DIAGNOSES = [
+  'Attention Deficit Hyperactivity Disorder (ADHD)',
+  'Autism Spectrum Disorder (ASD)',
+  'Sensory Processing Disorder (SPD)',
+  'Speech and Language Delay',
+  'Global Developmental Delay (GDD)',
+  'Developmental Coordination Disorder (Dyspraxia)',
+  'Pervasive Developmental Disorder (PDD-NOS)',
+  'Oppositional Defiant Disorder (ODD)',
+  'Reactive Attachment Disorder (RAD)',
+  'Apraxia of Speech',
+  'Social Communication Disorder',
+  'Down Syndrome (Trisomy 21)',
+  'Fragile X Syndrome',
+  'Rett Syndrome',
+  'Prader-Willi Syndrome',
+  'Angelman Syndrome',
+  'Williams Syndrome',
+  'Turner Syndrome',
+  'Klinefelter Syndrome (XXY)',
+  'Cri-du-Chat Syndrome',
+  'DiGeorge Syndrome (22q11.2 deletion)',
+  'Trisomy 18 (Edwards Syndrome)',
+  'Trisomy 13 (Patau Syndrome)',
+  'Noonan Syndrome',
+  'Rabin-Kopp Syndrome',
+  'Cerebral Palsy (CP)',
+  'Spina Bifida',
+  'Muscular Dystrophy (Duchenne)',
+  'Muscular Dystrophy (Becker)',
+  'Spinal Muscular Atrophy (SMA)',
+  'Microcephaly',
+  'Hydrocephalus',
+  'Epilepsy / Seizure Disorder',
+  'Tourette Syndrome',
+  'Traumatic Brain Injury (TBI)',
+  'Arthrogryposis Multiplex Congenita',
+  'Neurofibromatosis Type 1 (NF1)',
+  'Neurofibromatosis Type 2 (NF2)',
+  'Mitochondrial Disease',
+  'Rasmussen Encephalitis',
+  'Lennox-Gastaut Syndrome',
+  'Dravet Syndrome',
+  'Landau-Kleffner Syndrome',
+  'Aicardi Syndrome',
+  'Hearing Loss / Deafness',
+  'Visual Impairment / Blindness',
+  'Cortical Visual Impairment (CVI)',
+  'Deaf-Blindness',
+  'Auditory Processing Disorder (APD)',
+  'Optic Nerve Hypoplasia (ONH)',
+  'Retinopathy of Prematurity (ROP)',
+  'Usher Syndrome',
+  'Intellectual Disability (ID)',
+  'Dyslexia',
+  'Dysgraphia',
+  'Dyscalculia',
+  'Executive Function Disorder',
+  'Nonverbal Learning Disability (NVLD)',
+  'Auditory Dyslexia',
+  'Congenital Heart Disease (CHD)',
+  'Cystic Fibrosis (CF)',
+  'Sickle Cell Disease',
+  'Type 1 Diabetes',
+  'Severe Persistent Asthma',
+  'Pediatric Cancer / Leukemia',
+  'Tracheostomy Dependency',
+  'Ventilator Dependency',
+  'Short Bowel Syndrome',
+  'Chronic Kidney Disease (CKD)',
+  'Gastrostomy (G-tube) Dependency',
+  'Severe Hemophilia',
+  'Juvenile Idiopathic Arthritis (JIA)',
+  'Orthopedic Impairment',
+  'Other Health Impairment (OHI)',
+  'Specific Learning Disability (SLD)',
+  'Emotional Disturbance (ED)',
+  'Multiple Disabilities',
+  'Developmental Delay (CA Education Code)'
 ];
+
+function slugifyDiagnosis(name) {
+  return name
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, '')
+    .trim()
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-');
+}
+
+function getRelevanceFlags(name) {
+  const norm = name.toLowerCase();
+  const isRc = 
+    norm.includes('autism') || norm.includes('asd') || norm.includes('down syndrome') || norm.includes('trisomy 21') ||
+    norm.includes('cerebral palsy') || norm.includes('cp') || norm.includes('epilepsy') || norm.includes('seizure') ||
+    norm.includes('intellectual disability') || norm.includes('developmental delay') || norm.includes('gdd') ||
+    norm.includes('pdd-nos') || norm.includes('fragile x') || norm.includes('rett') || norm.includes('prader-willi') ||
+    norm.includes('angelman') || norm.includes('williams syndrome') || norm.includes('cri-du-chat') ||
+    norm.includes('digeorge') || norm.includes('trisomy 18') || norm.includes('trisomy 13') || norm.includes('noonan') ||
+    norm.includes('rabin-kopp') || norm.includes('microcephaly') || norm.includes('hydrocephalus') ||
+    norm.includes('neurofibromatosis') || norm.includes('mitochondrial') || norm.includes('encephalitis') ||
+    norm.includes('lennox-gastaut') || norm.includes('dravet') || norm.includes('landau-kleffner') ||
+    norm.includes('aicardi') || norm.includes('multiple disabilities');
+
+  const isCcs = 
+    norm.includes('cerebral palsy') || norm.includes('cp') || norm.includes('spina bifida') ||
+    norm.includes('muscular dystrophy') || norm.includes('spinal muscular atrophy') || norm.includes('sma') ||
+    norm.includes('microcephaly') || norm.includes('hydrocephalus') || norm.includes('epilepsy') || norm.includes('seizure') ||
+    norm.includes('mitochondrial') || norm.includes('encephalitis') || norm.includes('lennox-gastaut') ||
+    norm.includes('dravet') || norm.includes('landau-kleffner') || norm.includes('aicardi') ||
+    norm.includes('arthrogryposis') || norm.includes('neurofibromatosis') || norm.includes('hearing loss') ||
+    norm.includes('deaf') || norm.includes('visual impairment') || norm.includes('blind') || norm.includes('cvi') ||
+    norm.includes('optic nerve') || norm.includes('retinopathy') || norm.includes('usher') || norm.includes('heart disease') ||
+    norm.includes('chd') || norm.includes('cystic fibrosis') || norm.includes('cf') || norm.includes('sickle cell') ||
+    norm.includes('diabetes') || norm.includes('asthma') || norm.includes('cancer') || norm.includes('leukemia') ||
+    norm.includes('tracheostomy') || norm.includes('ventilator') || norm.includes('short bowel') ||
+    norm.includes('kidney') || norm.includes('ckd') || norm.includes('gastrostomy') || norm.includes('g-tube') ||
+    norm.includes('hemophilia') || norm.includes('arthritis') || norm.includes('jia') || norm.includes('orthopedic') ||
+    norm.includes('multiple disabilities') || norm.includes('down syndrome') || norm.includes('fragile x') ||
+    norm.includes('rett') || norm.includes('prader-willi') || norm.includes('angelman') || norm.includes('williams') ||
+    norm.includes('cri-du-chat') || norm.includes('digeorge') || norm.includes('trisomy 18') ||
+    norm.includes('trisomy 13') || norm.includes('noonan') || norm.includes('rabin-kopp');
+
+  return { rc: isRc, ccs: isCcs };
+}
+
+function getNotesAndExplanation(name) {
+  const norm = name.toLowerCase();
+  let explanation = `A diagnosed medical or developmental condition: ${name}.`;
+  let notes = 'Age 0-3 focus on Early Start/IFSP developmental therapies. At 3, transition to school district IEP. Setup CalABLE for financial protection. Transfer educational rights and file for adult SSI at 18.';
+
+  if (norm.includes('autism') || norm.includes('asd')) {
+    explanation = 'A developmental spectrum condition that affects communication, social interaction, sensory processing, and self-regulatory behaviors.';
+    notes = 'Early Detection allows intensive Early Start ABA. School years benefit from IEP behavior plans. Review self-advocacy and employment transition plans from age 16.';
+  } else if (norm.includes('down syndrome')) {
+    explanation = 'A genetic chromosomal condition typically leading to mild-to-moderate intellectual disability, hypotonia, and potential cardiac or sensory differences.';
+    notes = 'Infancy focuses on early motor and speech start. IEP speech accommodations are critical. Auto-eligible medically for SSI. Secure CalABLE and adult transition benefits.';
+  } else if (norm.includes('cerebral palsy')) {
+    explanation = 'A neurological motor disorder affecting body movement, posture, and coordination, often requiring physical therapies.';
+    notes = 'Coordinate early with CCS Medical Therapy Unit (MTP) for school physical therapy. Select adaptive devices. Address orthopedic needs under IEP.';
+  } else if (norm.includes('epilepsy') || norm.includes('seizure')) {
+    explanation = 'A neurological condition characterized by recurrent, unprovoked seizures due to temporary electrical disturbances in the brain.';
+    notes = 'Maintain an active Seizure Action Plan at school. Coordinate neurological consults. CCS covers seizure management and medications.';
+  } else if (norm.includes('hearing') || norm.includes('deaf')) {
+    explanation = 'Partial or complete loss of hearing in one or both ears, affecting language acquisition and communication.';
+    notes = 'Audiology screening triggers early ASL or oral start. Public school IEP provides FM systems, DHH specialists, and speech therapy.';
+  } else if (norm.includes('visual') || norm.includes('blind')) {
+    explanation = 'Significant vision loss that cannot be fully corrected, impacting navigation, reading, and environmental interaction.';
+    notes = 'Request Orientation & Mobility (O&M) school scans. Provide TVI (Teacher of Visual Impairments) Braille or large-print aids in IEP.';
+  } else if (norm.includes('adhd')) {
+    explanation = 'A neurobehavioral condition causing challenges with selective attention, hyperactivity, organization, and executive function.';
+    notes = 'Provide visual schedules, sensory breaks, and executive function goals in IEP or 504. Monitor medication efficacy.';
+  } else if (norm.includes('speech and language delay') || norm.includes('apraxia')) {
+    explanation = 'Delays or impairments in speech production, language comprehension, or motor speech coordination.';
+    notes = 'Prioritize early intervention speech therapy. IEP coordinates speech-language therapy and AAC device communication supports.';
+  } else if (norm.includes('intellectual disability') || norm.includes('gdd')) {
+    explanation = 'A cognitive or developmental condition characterized by limitations in both intellectual functioning and adaptive behavior.';
+    notes = 'Lanterman Act eligibility triggers respite and service coordination. IEP focuses on life-skills, adaptive goals, and transitions.';
+  } else if (norm.includes('diabetes')) {
+    explanation = 'A chronic endocrine condition where the pancreas produces little or no insulin, requiring continuous monitoring and care.';
+    notes = 'Establish a Section 504 Plan for blood glucose checking, nurse access, and emergency glucagon storage at school.';
+  } else if (norm.includes('asthma')) {
+    explanation = 'A chronic respiratory condition causing airway inflammation and bronchospasm, triggered by allergies, cold, or exertion.';
+    notes = 'Provide school with an Asthma Action Plan and inhaler access. Set up PE accommodations if exercise-induced.';
+  } else if (norm.includes('cancer') || norm.includes('leukemia')) {
+    explanation = 'A serious medical oncology condition requiring chemotherapy, radiation, or surgery.';
+    notes = 'Set up Home & Hospital Instruction under IEP/504 for periods of medical absence. CCS coordinates oncology treatment.';
+  } else if (norm.includes('tracheostomy') || norm.includes('ventilator') || norm.includes('g-tube')) {
+    explanation = 'A complex medical fragility profile requiring enteral feeding, mechanical ventilation, or airway maintenance devices.';
+    notes = 'Qualifies for HCBA home nursing hours. IEP requires medical services / school nurse allocations. CCS covers device maintenance.';
+  }
+
+  return { explanation, notes };
+}
+
+const seedConditions = DIAGNOSES.map((name) => {
+  const id = slugifyDiagnosis(name);
+  const { rc, ccs } = getRelevanceFlags(name);
+  const { explanation, notes } = getNotesAndExplanation(name);
+
+  let aliasesList = '';
+  if (name.includes('(')) {
+    const match = name.match(/\(([^)]+)\)/);
+    if (match) aliasesList = match[1];
+  }
+  if (name.includes('/')) {
+    aliasesList += (aliasesList ? ', ' : '') + name.split('/').map(s => s.trim()).join(', ');
+  }
+
+  return {
+    id,
+    name,
+    aliases: aliasesList || name,
+    parent_friendly_explanation: explanation,
+    regional_center_relevance: rc ? 1 : 0,
+    iep_relevance: 1,
+    ccs_relevance: ccs ? 1 : 0,
+    ssi_relevance: 1,
+    cal_able_relevance: 1,
+    age_specific_notes: notes,
+    source_url: 'https://california-navigator.org/taxonomy/' + id,
+    last_verified_date: '2026-06-01'
+  };
+});
 
 const insertCondition = db.prepare(`
   INSERT OR REPLACE INTO conditions 
   (id, name, aliases, parent_friendly_explanation, regional_center_relevance, iep_relevance, ccs_relevance, ssi_relevance, cal_able_relevance, age_specific_notes, source_url, last_verified_date) 
   VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 `);
+
 const seedConditionsTx = db.transaction((conds) => {
   for (const c of conds) {
     insertCondition.run(c.id, c.name, c.aliases, c.parent_friendly_explanation, c.regional_center_relevance, c.iep_relevance, c.ccs_relevance, c.ssi_relevance, c.cal_able_relevance, c.age_specific_notes, c.source_url, c.last_verified_date);
+    
+    // Dynamically seed rules in program_eligibility_rules as well!
+    if (c.regional_center_relevance === 1) {
+      insertRule.run(
+        `rule-rc-${c.id}`,
+        'regional-centers',
+        3.0,
+        120.0,
+        c.id,
+        null,
+        'any',
+        'any',
+        `${c.name} is a qualifying condition (or associated developmental delay category) under the Lanterman Act for California Regional Centers.`
+      );
+    }
+    if (c.ccs_relevance === 1) {
+      insertRule.run(
+        `rule-ccs-${c.id}`,
+        'california-childrens-services',
+        0.0,
+        21.0,
+        c.id,
+        null,
+        'any',
+        'any',
+        `${c.name} is medically eligible for CCS specialized physician care and school-based Medical Therapy Program (MTP) physical/occupational therapies.`
+      );
+    }
+    if (c.ssi_relevance === 1) {
+      const reason = c.id === 'down-syndrome-trisomy-21'
+        ? 'Down Syndrome automatically satisfies the childhood disability medical listing (Listing 110.06) for cash benefits.'
+        : `Assessments for ${c.name} check for marked and severe functional limitations under childhood SSI guidelines.`;
+      insertRule.run(
+        `rule-ssi-${c.id}`,
+        'ssi-for-children',
+        0.0,
+        18.0,
+        c.id,
+        null,
+        'any',
+        'any',
+        reason
+      );
+    }
+    if (c.cal_able_relevance === 1) {
+      insertRule.run(
+        `rule-able-${c.id}`,
+        'calable',
+        0.0,
+        120.0,
+        c.id,
+        null,
+        'any',
+        'any',
+        `Disability onset of ${c.name} before age 26 qualifies for a tax-advantaged CalABLE savings account.`
+      );
+    }
+    if (c.regional_center_relevance === 1 || c.ccs_relevance === 1) {
+      insertRule.run(
+        `rule-es-${c.id}`,
+        'early-start',
+        0.0,
+        3.0,
+        c.id,
+        null,
+        'any',
+        'any',
+        `Child is under age 3 and has an established high-risk condition (${c.name}); Early Start intervention is highly recommended.`
+      );
+    }
   }
 });
 seedConditionsTx(seedConditions);
-console.log(`  ✓ Seeded ${seedConditions.length} Conditions in Taxonomy.`);
+console.log(`  ✓ Seeded ${seedConditions.length} Conditions & dynamically generated eligibility rules in Taxonomy.`);
 
 // Functional Needs Seed
 const seedNeeds = [
@@ -473,4 +684,14 @@ seedProvidersTx(seedProviders);
 console.log(`  ✓ Seeded ${seedProviders.length} Resource Providers.`);
 
 db.close();
+
+// Sync the generated database to the frontend directory
+try {
+  const frontendDbPath = path.resolve(__dirname, '../../frontend/ca_disability_navigator.db');
+  fs.copyFileSync(dbPath, frontendDbPath);
+  console.log(`  ✓ Synced database to frontend directory: ${frontendDbPath}`);
+} catch (err) {
+  console.error('  ❌ Error copying database to frontend directory:', err.message);
+}
+
 console.log('🎉 SQLite Relational Database build and seed execution completed successfully!\n');

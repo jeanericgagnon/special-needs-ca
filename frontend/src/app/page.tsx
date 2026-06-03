@@ -25,7 +25,7 @@ export default async function Home() {
         <div style={{ background: 'var(--primary-color)', color: 'white', padding: '0.75rem 1rem', textAlign: 'center', fontSize: '0.9rem', fontWeight: 600 }}>
           You are logged in.{' '}
           <Link href="/dashboard" style={{ color: 'white', textDecoration: 'underline', display: 'inline-flex', alignItems: 'center', gap: '0.25rem', marginLeft: '0.25rem' }}>
-            <LayoutDashboard size={14} /> Go to My Dashboard →
+            <LayoutDashboard size={14} /> Go to Saved Plans →
           </Link>
         </div>
       )}

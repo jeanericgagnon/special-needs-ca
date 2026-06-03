@@ -1,9 +1,0 @@
-{
-	"id": "Gor3pGkUNFCbRMI",
-	"json": "{\"id\":\"Gor3pGkUNFCbRMI\",\"url\":\"https://www.chhs.ca.gov/blog/category/events/\",\"loadedUrl\":\"https://www.chhs.ca.gov/blog/category/events/\",\"uniqueKey\":\"https://www.chhs.ca.gov/blog/category/events\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:06.210Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chhs.ca.gov/blog/category/events",
-	"url": "https://www.chhs.ca.gov/blog/category/events/"
-}

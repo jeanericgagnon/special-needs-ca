@@ -1,9 +1,0 @@
-{
-	"id": "RrhNJbtGRr9eRG2",
-	"json": "{\"id\":\"RrhNJbtGRr9eRG2\",\"url\":\"https://cases.aggieservice.ucdavis.edu/f/elr-change-request-form\",\"loadedUrl\":\"https://cas.ucdavis.edu/cas/login?service=https%3A%2F%2Fcases.aggieservice.ucdavis.edu%2Ff%2Felr-change-request-form\",\"uniqueKey\":\"https://cases.aggieservice.ucdavis.edu/f/elr-change-request-form\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:09.262Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cases.aggieservice.ucdavis.edu/f/elr-change-request-form",
-	"url": "https://cases.aggieservice.ucdavis.edu/f/elr-change-request-form"
-}

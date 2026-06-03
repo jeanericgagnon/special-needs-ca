@@ -1,9 +1,0 @@
-{
-	"id": "qpXl5mav5yQ5Sae",
-	"json": "{\"id\":\"qpXl5mav5yQ5Sae\",\"url\":\"https://www.dhcs.ca.gov/services/ltc/Documents/CA-0183R0600-Approval-Letter-Feb2023.pdf\",\"loadedUrl\":\"https://www.dhcs.ca.gov/file/ca-0183r0600-approval-letter-feb2023/\",\"uniqueKey\":\"https://www.dhcs.ca.gov/services/ltc/Documents/CA-0183R0600-Approval-Letter-Feb2023.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:56:01.816Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dhcs.ca.gov/services/ltc/Documents/CA-0183R0600-Approval-Letter-Feb2023.pdf",
-	"url": "https://www.dhcs.ca.gov/services/ltc/Documents/CA-0183R0600-Approval-Letter-Feb2023.pdf"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "psXSMUaBYabplOs",
-	"json": "{\"id\":\"psXSMUaBYabplOs\",\"url\":\"https://hdapp.ucdavis.edu/non-discrimination-statement\",\"loadedUrl\":\"https://hdapp.ucdavis.edu/non-discrimination-statement\",\"uniqueKey\":\"https://hdapp.ucdavis.edu/non-discrimination-statement\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:59.043Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hdapp.ucdavis.edu/non-discrimination-statement",
-	"url": "https://hdapp.ucdavis.edu/non-discrimination-statement"
-}

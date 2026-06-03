@@ -1,9 +1,0 @@
-{
-	"id": "1KbgHHuQHniyXEL",
-	"json": "{\"id\":\"1KbgHHuQHniyXEL\",\"url\":\"https://lgbtqia.ucdavis.edu/name-and-gender-changes-ucd\",\"loadedUrl\":\"https://lgbtqia.ucdavis.edu/name-gender-changes\",\"uniqueKey\":\"https://lgbtqia.ucdavis.edu/name-and-gender-changes-ucd\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:12.316Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://lgbtqia.ucdavis.edu/name-and-gender-changes-ucd",
-	"url": "https://lgbtqia.ucdavis.edu/name-and-gender-changes-ucd"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "nKEsfPmHc8a6fLr",
-	"json": "{\"id\":\"nKEsfPmHc8a6fLr\",\"url\":\"https://give.ucdavis.edu/NRSD/124588\",\"loadedUrl\":\"https://give.ucdavis.edu/NRSD/124588\",\"uniqueKey\":\"https://give.ucdavis.edu/NRSD/124588\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:58.526Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/NRSD/124588",
-	"url": "https://give.ucdavis.edu/NRSD/124588"
-}

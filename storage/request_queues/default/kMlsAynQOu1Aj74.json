@@ -1,9 +1,0 @@
-{
-	"id": "kMlsAynQOu1Aj74",
-	"json": "{\"id\":\"kMlsAynQOu1Aj74\",\"url\":\"https://hr.ucdavis.edu/careers/campuses-communities\",\"loadedUrl\":\"https://hr.ucdavis.edu/jobs\",\"uniqueKey\":\"https://hr.ucdavis.edu/careers/campuses-communities\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:09.192Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/careers/campuses-communities",
-	"url": "https://hr.ucdavis.edu/careers/campuses-communities"
-}

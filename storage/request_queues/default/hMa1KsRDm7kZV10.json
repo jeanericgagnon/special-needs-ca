@@ -1,9 +1,0 @@
-{
-	"id": "hMa1KsRDm7kZV10",
-	"json": "{\"id\":\"hMa1KsRDm7kZV10\",\"url\":\"https://cnprc.ucdavis.edu/neurodevelopment-and-neurobiology\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/neurodevelopment-and-neurobiology\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/neurodevelopment-and-neurobiology\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:12.970Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cnprc.ucdavis.edu/neurodevelopment-and-neurobiology",
-	"url": "https://cnprc.ucdavis.edu/neurodevelopment-and-neurobiology"
-}

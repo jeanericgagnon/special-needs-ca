@@ -1,9 +1,0 @@
-{
-	"id": "kkfeIkwDcwB4xHH",
-	"json": "{\"id\":\"kkfeIkwDcwB4xHH\",\"url\":\"https://alumni.ucdavis.edu/member-benefit-directory\",\"loadedUrl\":\"https://alumni.ucdavis.edu/member-benefit-directory\",\"uniqueKey\":\"https://alumni.ucdavis.edu/member-benefit-directory\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:05.568Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://alumni.ucdavis.edu/member-benefit-directory",
-	"url": "https://alumni.ucdavis.edu/member-benefit-directory"
-}

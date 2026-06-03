@@ -1,9 +1,0 @@
-{
-	"id": "gK4fbBkU4DH54xP",
-	"json": "{\"id\":\"gK4fbBkU4DH54xP\",\"url\":\"https://philosophy.ucdavis.edu/undergraduate/honors-and-awards/honors-program\",\"loadedUrl\":\"https://philosophy.ucdavis.edu/undergraduate/honors-and-awards/honors-program\",\"uniqueKey\":\"https://philosophy.ucdavis.edu/undergraduate/honors-and-awards/honors-program\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:15.998Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://philosophy.ucdavis.edu/undergraduate/honors-and-awards/honors-program",
-	"url": "https://philosophy.ucdavis.edu/undergraduate/honors-and-awards/honors-program"
-}

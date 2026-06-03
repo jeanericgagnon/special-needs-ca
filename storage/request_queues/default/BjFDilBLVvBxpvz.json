@@ -1,9 +1,0 @@
-{
-	"id": "BjFDilBLVvBxpvz",
-	"json": "{\"id\":\"BjFDilBLVvBxpvz\",\"url\":\"https://health.ucdavis.edu/news/headlines/uc-davis-health-is-expanding-access-to-free-mammograms-during-breast-cancer-awareness-month/2025/09\",\"loadedUrl\":\"https://health.ucdavis.edu/news/headlines/uc-davis-health-is-expanding-access-to-free-mammograms-during-breast-cancer-awareness-month/2025/09\",\"uniqueKey\":\"https://health.ucdavis.edu/news/headlines/uc-davis-health-is-expanding-access-to-free-mammograms-during-breast-cancer-awareness-month/2025/09\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:59:08.861Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/news/headlines/uc-davis-health-is-expanding-access-to-free-mammograms-during-breast-cancer-awareness-month/2025/09",
-	"url": "https://health.ucdavis.edu/news/headlines/uc-davis-health-is-expanding-access-to-free-mammograms-during-breast-cancer-awareness-month/2025/09"
-}

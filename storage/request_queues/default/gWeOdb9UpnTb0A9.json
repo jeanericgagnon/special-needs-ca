@@ -1,9 +1,0 @@
-{
-	"id": "gWeOdb9UpnTb0A9",
-	"json": "{\"id\":\"gWeOdb9UpnTb0A9\",\"url\":\"https://www.gov.ca.gov/priorities-and-progress/\",\"loadedUrl\":\"https://www.gov.ca.gov/priorities-and-progress/\",\"uniqueKey\":\"https://www.gov.ca.gov/priorities-and-progress\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:05.467Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.gov.ca.gov/priorities-and-progress",
-	"url": "https://www.gov.ca.gov/priorities-and-progress/"
-}

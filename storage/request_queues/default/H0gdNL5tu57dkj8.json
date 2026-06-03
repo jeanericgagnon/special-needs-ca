@@ -1,9 +1,0 @@
-{
-	"id": "H0gdNL5tu57dkj8",
-	"json": "{\"id\":\"H0gdNL5tu57dkj8\",\"url\":\"https://oig.ssa.gov/fraud-reporting/consumer-protection-section-1140\",\"loadedUrl\":\"https://oig.ssa.gov/fraud-reporting/consumer-protection-section-1140/\",\"uniqueKey\":\"https://oig.ssa.gov/fraud-reporting/consumer-protection-section-1140\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:37.935Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://oig.ssa.gov/fraud-reporting/consumer-protection-section-1140",
-	"url": "https://oig.ssa.gov/fraud-reporting/consumer-protection-section-1140"
-}

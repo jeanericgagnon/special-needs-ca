@@ -1,9 +1,0 @@
-{
-	"id": "VZ5ZZ7kunephMC9",
-	"json": "{\"id\":\"VZ5ZZ7kunephMC9\",\"url\":\"https://computingaccounts.ucdavis.edu/cgi-bin/services/index.cgi\",\"loadedUrl\":\"https://computingaccounts.ucdavis.edu/cgi-bin/services/index.cgi\",\"uniqueKey\":\"https://computingaccounts.ucdavis.edu/cgi-bin/services/index.cgi\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:37.990Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://computingaccounts.ucdavis.edu/cgi-bin/services/index.cgi",
-	"url": "https://computingaccounts.ucdavis.edu/cgi-bin/services/index.cgi"
-}

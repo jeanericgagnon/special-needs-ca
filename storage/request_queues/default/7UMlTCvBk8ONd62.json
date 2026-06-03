@@ -1,9 +1,0 @@
-{
-	"id": "7UMlTCvBk8ONd62",
-	"json": "{\"id\":\"7UMlTCvBk8ONd62\",\"url\":\"https://health.ucdavis.edu/patients-visitors/insurance-billing/financial-assistance.html\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/insurance-billing/financial-assistance\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/insurance-billing/financial-assistance.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:28.500Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/insurance-billing/financial-assistance.html",
-	"url": "https://health.ucdavis.edu/patients-visitors/insurance-billing/financial-assistance.html"
-}

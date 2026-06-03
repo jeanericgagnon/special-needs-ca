@@ -1,9 +1,0 @@
-{
-	"id": "GO0tEQc8RjxrJox",
-	"json": "{\"id\":\"GO0tEQc8RjxrJox\",\"url\":\"https://health.ucdavis.edu/news/videos/\",\"loadedUrl\":\"https://health.ucdavis.edu/news/\",\"uniqueKey\":\"https://health.ucdavis.edu/news/videos\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:09.271Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/news/videos",
-	"url": "https://health.ucdavis.edu/news/videos/"
-}

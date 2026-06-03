@@ -1,9 +1,0 @@
-{
-	"id": "reOj6w2RJ3bdNt6",
-	"json": "{\"id\":\"reOj6w2RJ3bdNt6\",\"url\":\"https://learn.rarediseases.org/courses/navegando-por-la-revision-y-el-acceso-a-los-medicamentos/\",\"loadedUrl\":\"https://learn.rarediseases.org/courses/navegando-por-la-revision-y-el-acceso-a-los-medicamentos/\",\"uniqueKey\":\"https://learn.rarediseases.org/courses/navegando-por-la-revision-y-el-acceso-a-los-medicamentos\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:33.294Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://learn.rarediseases.org/courses/navegando-por-la-revision-y-el-acceso-a-los-medicamentos",
-	"url": "https://learn.rarediseases.org/courses/navegando-por-la-revision-y-el-acceso-a-los-medicamentos/"
-}

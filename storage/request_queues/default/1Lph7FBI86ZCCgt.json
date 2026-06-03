@@ -1,9 +1,0 @@
-{
-	"id": "1Lph7FBI86ZCCgt",
-	"json": "{\"id\":\"1Lph7FBI86ZCCgt\",\"url\":\"https://cdss.ca.gov/inforesources/Caregiver-Advocacy-Network/Visitation\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/caregiver-advocacy-network/visitation\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Caregiver-Advocacy-Network/Visitation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:55.160Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/Caregiver-Advocacy-Network/Visitation",
-	"url": "https://cdss.ca.gov/inforesources/Caregiver-Advocacy-Network/Visitation"
-}

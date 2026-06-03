@@ -1,9 +1,0 @@
-{
-	"id": "t0PqXdtv9RT6Ry3",
-	"json": "{\"id\":\"t0PqXdtv9RT6Ry3\",\"url\":\"https://health.ucdavis.edu/good-food/\",\"loadedUrl\":\"https://health.ucdavis.edu/blog/good-food\",\"uniqueKey\":\"https://health.ucdavis.edu/good-food\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:14.568Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/good-food",
-	"url": "https://health.ucdavis.edu/good-food/"
-}

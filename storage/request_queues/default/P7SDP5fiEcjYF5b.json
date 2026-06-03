@@ -1,9 +1,0 @@
-{
-	"id": "P7SDP5fiEcjYF5b",
-	"json": "{\"id\":\"P7SDP5fiEcjYF5b\",\"url\":\"https://maps.conservation.ca.gov/cgs/EQZApp/app/\",\"loadedUrl\":\"https://maps.conservation.ca.gov/cgs/informationwarehouse/eqzapp/\",\"uniqueKey\":\"https://maps.conservation.ca.gov/cgs/EQZApp/app\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:18.776Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://maps.conservation.ca.gov/cgs/EQZApp/app",
-	"url": "https://maps.conservation.ca.gov/cgs/EQZApp/app/"
-}

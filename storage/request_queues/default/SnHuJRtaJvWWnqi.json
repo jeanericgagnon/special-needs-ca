@@ -1,9 +1,0 @@
-{
-	"id": "SnHuJRtaJvWWnqi",
-	"json": "{\"id\":\"SnHuJRtaJvWWnqi\",\"url\":\"https://rarediseases.org/rare-diseases/batten-disease/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/batten-disease/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/batten-disease\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:15:22.079Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/rare-diseases/batten-disease",
-	"url": "https://rarediseases.org/rare-diseases/batten-disease/"
-}

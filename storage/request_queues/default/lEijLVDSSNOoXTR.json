@@ -1,9 +1,0 @@
-{
-	"id": "lEijLVDSSNOoXTR",
-	"json": "{\"id\":\"lEijLVDSSNOoXTR\",\"url\":\"https://www.cde.ca.gov/re/pr/ib.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/re/pr/ib.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/re/pr/ib.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:24:10.725Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/re/pr/ib.asp",
-	"url": "https://www.cde.ca.gov/re/pr/ib.asp"
-}

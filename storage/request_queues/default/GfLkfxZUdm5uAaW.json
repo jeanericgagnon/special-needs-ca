@@ -1,9 +1,0 @@
-{
-	"id": "GfLkfxZUdm5uAaW",
-	"json": "{\"id\":\"GfLkfxZUdm5uAaW\",\"url\":\"http://www.cdph.ca.gov/certlic/facilities/Documents/2567_LagunaHondaAA_SanFrancisco.pdf\",\"loadedUrl\":\"https://www.cdph.ca.gov/certlic/facilities/Documents/2567_LagunaHondaAA_SanFrancisco.pdf\",\"uniqueKey\":\"http://www.cdph.ca.gov/certlic/facilities/Documents/2567_LagunaHondaAA_SanFrancisco.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:17:00.218Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.cdph.ca.gov/certlic/facilities/Documents/2567_LagunaHondaAA_SanFrancisco.pdf",
-	"url": "http://www.cdph.ca.gov/certlic/facilities/Documents/2567_LagunaHondaAA_SanFrancisco.pdf"
-}

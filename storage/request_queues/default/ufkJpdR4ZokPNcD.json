@@ -1,9 +1,0 @@
-{
-	"id": "ufkJpdR4ZokPNcD",
-	"json": "{\"id\":\"ufkJpdR4ZokPNcD\",\"url\":\"https://health.ucdavis.edu/healthcare-professionals/featured-specialties/psychiatry\",\"loadedUrl\":\"https://health.ucdavis.edu/healthcare-professionals/featured-specialties/psychiatry\",\"uniqueKey\":\"https://health.ucdavis.edu/healthcare-professionals/featured-specialties/psychiatry\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:49.716Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/healthcare-professionals/featured-specialties/psychiatry",
-	"url": "https://health.ucdavis.edu/healthcare-professionals/featured-specialties/psychiatry"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "5g8NH3tpAnxyhUF",
-	"json": "{\"id\":\"5g8NH3tpAnxyhUF\",\"url\":\"https://www.cde.ca.gov/ci/rl/im/elaeldfollowupadoptfaq.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/rl/im/elaeldfollowupadoptfaq.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/rl/im/elaeldfollowupadoptfaq.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:58.980Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ci/rl/im/elaeldfollowupadoptfaq.asp",
-	"url": "https://www.cde.ca.gov/ci/rl/im/elaeldfollowupadoptfaq.asp"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "n6mdmfB6ZYizp7G",
-	"json": "{\"id\":\"n6mdmfB6ZYizp7G\",\"url\":\"https://calable.ca.gov/es/c%C3%B3mo-funciona/gastos-calificados\",\"loadedUrl\":\"https://calable.ca.gov/es/c%C3%B3mo-funciona/gastos-calificados\",\"uniqueKey\":\"https://calable.ca.gov/es/c%C3%B3mo-funciona/gastos-calificados\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:38.050Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://calable.ca.gov/es/c%C3%B3mo-funciona/gastos-calificados",
-	"url": "https://calable.ca.gov/es/c%C3%B3mo-funciona/gastos-calificados"
-}

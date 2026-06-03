@@ -1,9 +1,0 @@
-{
-	"id": "qMPWkTKDCTx6LlM",
-	"json": "{\"id\":\"qMPWkTKDCTx6LlM\",\"url\":\"https://scdd.ca.gov/events/month/?pagename=scddcalendar&shortcode=f555021d\",\"loadedUrl\":\"https://scdd.ca.gov/events/month/?pagename=scddcalendar&shortcode=f555021d\",\"uniqueKey\":\"https://scdd.ca.gov/events/month?pagename=scddcalendar&shortcode=f555021d\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:05:21.456Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/events/month?pagename=scddcalendar&shortcode=f555021d",
-	"url": "https://scdd.ca.gov/events/month/?pagename=scddcalendar&shortcode=f555021d"
-}

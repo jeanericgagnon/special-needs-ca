@@ -1,9 +1,0 @@
-{
-	"id": "TKvfCeISPT0KrZr",
-	"json": "{\"id\":\"TKvfCeISPT0KrZr\",\"url\":\"https://www.hcd.ca.gov/\",\"loadedUrl\":\"https://www.hcd.ca.gov/\",\"uniqueKey\":\"https://www.hcd.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T17:53:25.982Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.hcd.ca.gov",
-	"url": "https://www.hcd.ca.gov/"
-}

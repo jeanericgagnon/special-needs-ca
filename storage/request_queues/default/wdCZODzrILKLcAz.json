@@ -1,9 +1,0 @@
-{
-	"id": "wdCZODzrILKLcAz",
-	"json": "{\"id\":\"wdCZODzrILKLcAz\",\"url\":\"https://www.chhs.ca.gov/calhhs-conflict-of-interest-code-amendment/\",\"loadedUrl\":\"https://www.chhs.ca.gov/calhhs-conflict-of-interest-code-amendment/\",\"uniqueKey\":\"https://www.chhs.ca.gov/calhhs-conflict-of-interest-code-amendment\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:53.782Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chhs.ca.gov/calhhs-conflict-of-interest-code-amendment",
-	"url": "https://www.chhs.ca.gov/calhhs-conflict-of-interest-code-amendment/"
-}

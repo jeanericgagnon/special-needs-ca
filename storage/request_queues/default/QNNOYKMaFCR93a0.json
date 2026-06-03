@@ -1,9 +1,0 @@
-{
-	"id": "QNNOYKMaFCR93a0",
-	"json": "{\"id\":\"QNNOYKMaFCR93a0\",\"url\":\"https://www.cde.ca.gov/ci/ma/im/2025mathpublishers.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/ma/im/2025mathpublishers.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/ma/im/2025mathpublishers.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:49.371Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ci/ma/im/2025mathpublishers.asp",
-	"url": "https://www.cde.ca.gov/ci/ma/im/2025mathpublishers.asp"
-}

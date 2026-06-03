@@ -1,9 +1,0 @@
-{
-	"id": "og869rFLS4gL3xr",
-	"json": "{\"id\":\"og869rFLS4gL3xr\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/42820/lena-van-der-list-pediatrics-sacramento/\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/42820/lena-van-der-list-pediatrics-sacramento/\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/42820/lena-van-der-list-pediatrics-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:18.191Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/42820/lena-van-der-list-pediatrics-sacramento",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/42820/lena-van-der-list-pediatrics-sacramento/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "2kdhBMBLIwl91Zv",
-	"json": "{\"id\":\"2kdhBMBLIwl91Zv\",\"url\":\"https://www.cde.ca.gov/ci/pl/professionalstandards.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/pl/professionalstandards.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/pl/professionalstandards.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:35.183Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ci/pl/professionalstandards.asp",
-	"url": "https://www.cde.ca.gov/ci/pl/professionalstandards.asp"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "hl9cwrj3KWxmnXG",
-	"json": "{\"id\":\"hl9cwrj3KWxmnXG\",\"url\":\"https://www.cde.ca.gov/fg/fo/profile.asp?id=6485\",\"loadedUrl\":\"https://www.cde.ca.gov/fg/fo/profile.asp?id=6485\",\"uniqueKey\":\"https://www.cde.ca.gov/fg/fo/profile.asp?id=6485\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:23:03.584Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/fg/fo/profile.asp?id=6485",
-	"url": "https://www.cde.ca.gov/fg/fo/profile.asp?id=6485"
-}

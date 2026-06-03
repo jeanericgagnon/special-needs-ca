@@ -1,9 +1,0 @@
-{
-	"id": "DkOEhAX9EZAolEj",
-	"json": "{\"id\":\"DkOEhAX9EZAolEj\",\"url\":\"https://oag.ca.gov/media/news\",\"loadedUrl\":\"https://oag.ca.gov/media/news\",\"uniqueKey\":\"https://oag.ca.gov/media/news\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:47.918Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://oag.ca.gov/media/news",
-	"url": "https://oag.ca.gov/media/news"
-}

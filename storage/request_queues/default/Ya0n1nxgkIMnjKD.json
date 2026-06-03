@@ -1,9 +1,0 @@
-{
-	"id": "Ya0n1nxgkIMnjKD",
-	"json": "{\"id\":\"Ya0n1nxgkIMnjKD\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/863/christian-sandrock-critical_care_medicine-emerging_infectious_diseases-internal_medicine-outbreak_management-sepsis-davis?FreeText:Last+name=sandrock\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/863/christian-sandrock-critical_care_medicine-emerging_infectious_diseases-internal_medicine-outbreak_management-sepsis-davis?FreeText:Last+name=sandrock\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/863/christian-sandrock-critical_care_medicine-emerging_infectious_diseases-internal_medicine-outbreak_management-sepsis-davis?FreeText%3ALast+name=sandrock\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:08.465Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/863/christian-sandrock-critical_care_medicine-emerging_infectious_diseases-internal_medicine-outbreak_management-sepsis-davis?FreeText%3ALast+name=sandrock",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/863/christian-sandrock-critical_care_medicine-emerging_infectious_diseases-internal_medicine-outbreak_management-sepsis-davis?FreeText:Last+name=sandrock"
-}

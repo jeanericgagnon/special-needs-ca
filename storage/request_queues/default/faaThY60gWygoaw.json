@@ -1,9 +1,0 @@
-{
-	"id": "faaThY60gWygoaw",
-	"json": "{\"id\":\"faaThY60gWygoaw\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/NEOPB/_layouts/15/listform.aspx?ListId=%7B46F75B74%2DB8EA%2D435A%2DAD85%2D810256DF8C8B%7D&PageType=0\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/NEOPB/Pages/Nutrition_Physical_Activity_Branch.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/NEOPB/_layouts/15/listform.aspx?ListId=%7B46F75B74-B8EA-435A-AD85-810256DF8C8B%7D&PageType=0\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:11:42.296Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/NEOPB/_layouts/15/listform.aspx?ListId=%7B46F75B74-B8EA-435A-AD85-810256DF8C8B%7D&PageType=0",
-	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/NEOPB/_layouts/15/listform.aspx?ListId=%7B46F75B74%2DB8EA%2D435A%2DAD85%2D810256DF8C8B%7D&PageType=0"
-}

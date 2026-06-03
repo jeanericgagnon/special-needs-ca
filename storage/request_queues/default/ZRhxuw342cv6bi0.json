@@ -1,9 +1,0 @@
-{
-	"id": "ZRhxuw342cv6bi0",
-	"json": "{\"id\":\"ZRhxuw342cv6bi0\",\"url\":\"https://cnprc.ucdavis.edu/zika-virus-projects-and-teams\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/zika-virus-projects-and-teams\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/zika-virus-projects-and-teams\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:12.826Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cnprc.ucdavis.edu/zika-virus-projects-and-teams",
-	"url": "https://cnprc.ucdavis.edu/zika-virus-projects-and-teams"
-}

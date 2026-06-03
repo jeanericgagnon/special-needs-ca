@@ -1,9 +1,0 @@
-{
-	"id": "lGIePEcO4QIl4n0",
-	"json": "{\"id\":\"lGIePEcO4QIl4n0\",\"url\":\"https://shcs.ucdavis.edu/services/optical-services\",\"loadedUrl\":\"https://shcs.ucdavis.edu/services/optical-services\",\"uniqueKey\":\"https://shcs.ucdavis.edu/services/optical-services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:35.056Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://shcs.ucdavis.edu/services/optical-services",
-	"url": "https://shcs.ucdavis.edu/services/optical-services"
-}

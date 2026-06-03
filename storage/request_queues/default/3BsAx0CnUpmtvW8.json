@@ -1,9 +1,0 @@
-{
-	"id": "3BsAx0CnUpmtvW8",
-	"json": "{\"id\":\"3BsAx0CnUpmtvW8\",\"url\":\"https://neuroscience.ucdavis.edu/person-type/faculty\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/person-type/faculty\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/person-type/faculty\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:58.948Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/person-type/faculty",
-	"url": "https://neuroscience.ucdavis.edu/person-type/faculty"
-}

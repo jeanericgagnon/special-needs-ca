@@ -1,9 +1,0 @@
-{
-	"id": "vTKm2orH6mB5pbD",
-	"json": "{\"id\":\"vTKm2orH6mB5pbD\",\"url\":\"https://status.ssa.gov/\",\"loadedUrl\":\"https://status.ssa.gov/\",\"uniqueKey\":\"https://status.ssa.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:34.085Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://status.ssa.gov",
-	"url": "https://status.ssa.gov/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "AG4vZtdLqBdnRQj",
-	"json": "{\"id\":\"AG4vZtdLqBdnRQj\",\"url\":\"http://www.ucdmc.ucdavis.edu/publish/providerbio/psychiatry/551\",\"loadedUrl\":\"https://health.ucdavis.edu/psychiatry/team/551/ladson-hinton---psychiatry-sacramento/\",\"uniqueKey\":\"http://www.ucdmc.ucdavis.edu/publish/providerbio/psychiatry/551\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:25.279Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.ucdmc.ucdavis.edu/publish/providerbio/psychiatry/551",
-	"url": "http://www.ucdmc.ucdavis.edu/publish/providerbio/psychiatry/551"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "uSdswLHc2AuZ5Qe",
-	"json": "{\"id\":\"uSdswLHc2AuZ5Qe\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/21910/madelena-maddy-martin-biochemical_genetics-general_genetics-sacramento?FreeText%3aLast+name=martin\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/21910/madelena-maddy-martin-biochemical_genetics-general_genetics-sacramento?FreeText%3aLast+name=martin\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/21910/madelena-maddy-martin-biochemical_genetics-general_genetics-sacramento?FreeText%3ALast+name=martin\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:10.255Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/21910/madelena-maddy-martin-biochemical_genetics-general_genetics-sacramento?FreeText%3ALast+name=martin",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/21910/madelena-maddy-martin-biochemical_genetics-general_genetics-sacramento?FreeText%3aLast+name=martin"
-}

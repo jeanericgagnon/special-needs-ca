@@ -1,9 +1,0 @@
-{
-	"id": "j0e8i5KOfZsFmIC",
-	"json": "{\"id\":\"j0e8i5KOfZsFmIC\",\"url\":\"https://ucp.org/10-facts-about-cerebral-palsy-you-may-not-know/\",\"loadedUrl\":\"https://ucp.org/10-facts-about-cerebral-palsy-you-may-not-know/\",\"uniqueKey\":\"https://ucp.org/10-facts-about-cerebral-palsy-you-may-not-know\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:18.424Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ucp.org/10-facts-about-cerebral-palsy-you-may-not-know",
-	"url": "https://ucp.org/10-facts-about-cerebral-palsy-you-may-not-know/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "HyVZGDPGljkg1Su",
-	"json": "{\"id\":\"HyVZGDPGljkg1Su\",\"url\":\"https://diversity.ucdavis.edu/dei-strategic-investments\",\"loadedUrl\":\"https://excellence.ucdavis.edu/\",\"uniqueKey\":\"https://diversity.ucdavis.edu/dei-strategic-investments\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:37.137Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://diversity.ucdavis.edu/dei-strategic-investments",
-	"url": "https://diversity.ucdavis.edu/dei-strategic-investments"
-}

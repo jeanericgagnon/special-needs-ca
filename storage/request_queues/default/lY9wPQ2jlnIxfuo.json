@@ -1,9 +1,0 @@
-{
-	"id": "lY9wPQ2jlnIxfuo",
-	"json": "{\"id\":\"lY9wPQ2jlnIxfuo\",\"url\":\"https://www.dds.ca.gov/consumers/wellness-toolkit/self-advocates\",\"loadedUrl\":\"https://www.dds.ca.gov/individuals-and-families/wellness-toolkit/self-advocates/\",\"uniqueKey\":\"https://www.dds.ca.gov/consumers/wellness-toolkit/self-advocates\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:26.100Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/consumers/wellness-toolkit/self-advocates",
-	"url": "https://www.dds.ca.gov/consumers/wellness-toolkit/self-advocates"
-}

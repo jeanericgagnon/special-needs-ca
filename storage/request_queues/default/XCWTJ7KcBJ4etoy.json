@@ -1,9 +1,0 @@
-{
-	"id": "XCWTJ7KcBJ4etoy",
-	"json": "{\"id\":\"XCWTJ7KcBJ4etoy\",\"url\":\"https://mindbrain.ucdavis.edu/directions-uc-davis-campus-bus\",\"loadedUrl\":\"https://mindbrain.ucdavis.edu/directions-uc-davis-campus-bus\",\"uniqueKey\":\"https://mindbrain.ucdavis.edu/directions-uc-davis-campus-bus\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:03.565Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://mindbrain.ucdavis.edu/directions-uc-davis-campus-bus",
-	"url": "https://mindbrain.ucdavis.edu/directions-uc-davis-campus-bus"
-}

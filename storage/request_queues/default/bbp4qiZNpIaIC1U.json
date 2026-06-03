@@ -1,9 +1,0 @@
-{
-	"id": "bbp4qiZNpIaIC1U",
-	"json": "{\"id\":\"bbp4qiZNpIaIC1U\",\"url\":\"https://www.dds.ca.gov/corona-virus-information-and-resources/\",\"loadedUrl\":\"https://www.dds.ca.gov/corona-virus-information-and-resources/\",\"uniqueKey\":\"https://www.dds.ca.gov/corona-virus-information-and-resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:05:18.611Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/corona-virus-information-and-resources",
-	"url": "https://www.dds.ca.gov/corona-virus-information-and-resources/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "Bof1kt3XAeEmKWI",
-	"json": "{\"id\":\"Bof1kt3XAeEmKWI\",\"url\":\"https://give.ucdavis.edu/BEVE\",\"loadedUrl\":\"https://give.ucdavis.edu/BEVE\",\"uniqueKey\":\"https://give.ucdavis.edu/BEVE\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:56.663Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/BEVE",
-	"url": "https://give.ucdavis.edu/BEVE"
-}

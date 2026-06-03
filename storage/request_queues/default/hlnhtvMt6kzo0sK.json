@@ -1,9 +1,0 @@
-{
-	"id": "hlnhtvMt6kzo0sK",
-	"json": "{\"id\":\"hlnhtvMt6kzo0sK\",\"url\":\"https://www.ssa.gov/OACT/anypia/index.html\",\"loadedUrl\":\"https://www.ssa.gov/OACT/anypia/index.html\",\"uniqueKey\":\"https://www.ssa.gov/OACT/anypia/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:12.522Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ssa.gov/OACT/anypia/index.html",
-	"url": "https://www.ssa.gov/OACT/anypia/index.html"
-}

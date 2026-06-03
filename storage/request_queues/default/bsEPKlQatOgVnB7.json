@@ -1,9 +1,0 @@
-{
-	"id": "bsEPKlQatOgVnB7",
-	"json": "{\"id\":\"bsEPKlQatOgVnB7\",\"url\":\"https://rarediseases.org/news/?taxonomy[category]=uncategorized\",\"loadedUrl\":\"https://rarediseases.org/news/?taxonomy[category]=uncategorized\",\"uniqueKey\":\"https://rarediseases.org/news?taxonomy%5Bcategory%5D=uncategorized\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:25.866Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/news?taxonomy%5Bcategory%5D=uncategorized",
-	"url": "https://rarediseases.org/news/?taxonomy[category]=uncategorized"
-}

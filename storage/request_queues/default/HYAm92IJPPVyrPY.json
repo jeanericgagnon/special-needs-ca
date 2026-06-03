@@ -1,9 +1,0 @@
-{
-	"id": "HYAm92IJPPVyrPY",
-	"json": "{\"id\":\"HYAm92IJPPVyrPY\",\"url\":\"https://www.ucdavis.edu/news/social-media/guidelines\",\"loadedUrl\":\"https://www.ucdavis.edu/news/social-media/guidelines\",\"uniqueKey\":\"https://www.ucdavis.edu/news/social-media/guidelines\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:47.143Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ucdavis.edu/news/social-media/guidelines",
-	"url": "https://www.ucdavis.edu/news/social-media/guidelines"
-}

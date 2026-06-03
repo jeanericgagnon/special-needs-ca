@@ -1,9 +1,0 @@
-{
-	"id": "6bDyIr0hhFB52RB",
-	"json": "{\"id\":\"6bDyIr0hhFB52RB\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/1401/shubha-ananthakrishnan-internal_medicine-nephrology-elk_grove-sacramento?FreeText%3aLast+name=Ananthakrishnan\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/1401/shubha-ananthakrishnan-internal_medicine-nephrology-elk_grove-sacramento?FreeText%3aLast+name=Ananthakrishnan\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/1401/shubha-ananthakrishnan-internal_medicine-nephrology-elk_grove-sacramento?FreeText%3ALast+name=Ananthakrishnan\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:12.023Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/1401/shubha-ananthakrishnan-internal_medicine-nephrology-elk_grove-sacramento?FreeText%3ALast+name=Ananthakrishnan",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/1401/shubha-ananthakrishnan-internal_medicine-nephrology-elk_grove-sacramento?FreeText%3aLast+name=Ananthakrishnan"
-}

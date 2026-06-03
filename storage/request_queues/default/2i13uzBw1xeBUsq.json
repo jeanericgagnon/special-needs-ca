@@ -1,9 +1,0 @@
-{
-	"id": "2i13uzBw1xeBUsq",
-	"json": "{\"id\":\"2i13uzBw1xeBUsq\",\"url\":\"https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-in-the-legal-system-for-adults-with-intellectual-and-developmental-disabilities/\",\"loadedUrl\":\"https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-in-the-legal-system-for-adults-with-intellectual-and-developmental-disabilities/\",\"uniqueKey\":\"https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-in-the-legal-system-for-adults-with-intellectual-and-developmental-disabilities\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:19:31.700Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-in-the-legal-system-for-adults-with-intellectual-and-developmental-disabilities",
-	"url": "https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-in-the-legal-system-for-adults-with-intellectual-and-developmental-disabilities/"
-}

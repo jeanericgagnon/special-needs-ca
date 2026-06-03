@@ -1,9 +1,0 @@
-{
-	"id": "vrJTNYxyOVEMbMB",
-	"json": "{\"id\":\"vrJTNYxyOVEMbMB\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/43332/benjamin-ben-jastrzembski-pediatric_ophthalmology-folsom-sacramento?FreeText%3aLast+name=Jastrzembski\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/43332/benjamin-ben-jastrzembski-pediatric_ophthalmology-folsom-sacramento?FreeText%3aLast+name=Jastrzembski\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/43332/benjamin-ben-jastrzembski-pediatric_ophthalmology-folsom-sacramento?FreeText%3ALast+name=Jastrzembski\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:13.034Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/43332/benjamin-ben-jastrzembski-pediatric_ophthalmology-folsom-sacramento?FreeText%3ALast+name=Jastrzembski",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/43332/benjamin-ben-jastrzembski-pediatric_ophthalmology-folsom-sacramento?FreeText%3aLast+name=Jastrzembski"
-}

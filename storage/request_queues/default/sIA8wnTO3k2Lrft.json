@@ -1,9 +1,0 @@
-{
-	"id": "sIA8wnTO3k2Lrft",
-	"json": "{\"id\":\"sIA8wnTO3k2Lrft\",\"url\":\"https://health.ucdavis.edu/volunteer/opportunities/student-externships\",\"loadedUrl\":\"https://health.ucdavis.edu/volunteer/opportunities/student-externships\",\"uniqueKey\":\"https://health.ucdavis.edu/volunteer/opportunities/student-externships\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:59.855Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/volunteer/opportunities/student-externships",
-	"url": "https://health.ucdavis.edu/volunteer/opportunities/student-externships"
-}

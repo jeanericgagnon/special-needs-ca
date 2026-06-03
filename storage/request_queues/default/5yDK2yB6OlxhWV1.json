@@ -1,9 +1,0 @@
-{
-	"id": "5yDK2yB6OlxhWV1",
-	"json": "{\"id\":\"5yDK2yB6OlxhWV1\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/21750/kevin-burnham-internal_medicine-sports_medicine-sacramento?FreeText%3aLast+name=burnham\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/21750/kevin-burnham-internal_medicine-sports_medicine-sacramento?FreeText%3aLast+name=burnham\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/21750/kevin-burnham-internal_medicine-sports_medicine-sacramento?FreeText%3ALast+name=burnham\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:14.995Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/21750/kevin-burnham-internal_medicine-sports_medicine-sacramento?FreeText%3ALast+name=burnham",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/21750/kevin-burnham-internal_medicine-sports_medicine-sacramento?FreeText%3aLast+name=burnham"
-}

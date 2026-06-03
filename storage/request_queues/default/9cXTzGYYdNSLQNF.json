@@ -1,9 +1,0 @@
-{
-	"id": "9cXTzGYYdNSLQNF",
-	"json": "{\"id\":\"9cXTzGYYdNSLQNF\",\"url\":\"https://www.dmv.ca.gov/portal/privacy-and-security/\",\"loadedUrl\":\"https://www.dmv.ca.gov/portal/privacy-and-security/\",\"uniqueKey\":\"https://www.dmv.ca.gov/portal/privacy-and-security\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:39.260Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dmv.ca.gov/portal/privacy-and-security",
-	"url": "https://www.dmv.ca.gov/portal/privacy-and-security/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "7qP3OWpEUnpONLe",
-	"json": "{\"id\":\"7qP3OWpEUnpONLe\",\"url\":\"https://www.cde.ca.gov/fg/fr/lo/\",\"loadedUrl\":\"https://www.cde.ca.gov/fg/fr/lo/\",\"uniqueKey\":\"https://www.cde.ca.gov/fg/fr/lo\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:01.561Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/fg/fr/lo",
-	"url": "https://www.cde.ca.gov/fg/fr/lo/"
-}

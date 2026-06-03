@@ -1,9 +1,0 @@
-{
-	"id": "rVaMkP3bTl8X6jL",
-	"json": "{\"id\":\"rVaMkP3bTl8X6jL\",\"url\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/AFLP/Pages/Stories.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/AFLP/Pages/Stories.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CFH/DMCAH/AFLP/Pages/Stories.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:40.481Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/AFLP/Pages/Stories.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CFH/DMCAH/AFLP/Pages/Stories.aspx"
-}

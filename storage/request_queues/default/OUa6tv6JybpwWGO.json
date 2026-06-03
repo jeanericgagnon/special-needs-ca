@@ -1,9 +1,0 @@
-{
-	"id": "OUa6tv6JybpwWGO",
-	"json": "{\"id\":\"OUa6tv6JybpwWGO\",\"url\":\"https://health.ucdavis.edu/patients-visitors/conditions-treatments/\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/conditions-treatments/\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/conditions-treatments\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:52.467Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/conditions-treatments",
-	"url": "https://health.ucdavis.edu/patients-visitors/conditions-treatments/"
-}

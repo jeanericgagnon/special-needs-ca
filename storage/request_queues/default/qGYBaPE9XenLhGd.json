@@ -1,9 +1,0 @@
-{
-	"id": "qGYBaPE9XenLhGd",
-	"json": "{\"id\":\"qGYBaPE9XenLhGd\",\"url\":\"https://care.ucdavis.edu/definitions\",\"loadedUrl\":\"https://care.ucdavis.edu/definitions\",\"uniqueKey\":\"https://care.ucdavis.edu/definitions\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:00.974Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://care.ucdavis.edu/definitions",
-	"url": "https://care.ucdavis.edu/definitions"
-}

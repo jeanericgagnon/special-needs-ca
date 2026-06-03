@@ -1,9 +1,0 @@
-{
-	"id": "rB8Sia9fcbV9nqZ",
-	"json": "{\"id\":\"rB8Sia9fcbV9nqZ\",\"url\":\"https://dmv.ca.gov/portal/vehicle-registration/\",\"loadedUrl\":\"https://www.dmv.ca.gov/portal/vehicle-registration/\",\"uniqueKey\":\"https://dmv.ca.gov/portal/vehicle-registration\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:38.982Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://dmv.ca.gov/portal/vehicle-registration",
-	"url": "https://dmv.ca.gov/portal/vehicle-registration/"
-}

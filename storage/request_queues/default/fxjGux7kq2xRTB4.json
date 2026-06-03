@@ -1,9 +1,0 @@
-{
-	"id": "fxjGux7kq2xRTB4",
-	"json": "{\"id\":\"fxjGux7kq2xRTB4\",\"url\":\"https://biomonitoring.ca.gov/biomonitoring-guide\",\"loadedUrl\":\"https://biomonitoring.ca.gov/biomonitoring-guide\",\"uniqueKey\":\"https://biomonitoring.ca.gov/biomonitoring-guide\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:31:07.734Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://biomonitoring.ca.gov/biomonitoring-guide",
-	"url": "https://biomonitoring.ca.gov/biomonitoring-guide"
-}

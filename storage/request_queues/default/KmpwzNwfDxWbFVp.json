@@ -1,9 +1,0 @@
-{
-	"id": "KmpwzNwfDxWbFVp",
-	"json": "{\"id\":\"KmpwzNwfDxWbFVp\",\"url\":\"https://www.dmv.ca.gov/portal/vehicle-registration/vehicle-registration-renewal/file-for-planned-non-operation/\",\"loadedUrl\":\"https://www.dmv.ca.gov/portal/vehicle-registration/vehicle-registration-renewal/file-for-planned-non-operation/\",\"uniqueKey\":\"https://www.dmv.ca.gov/portal/vehicle-registration/vehicle-registration-renewal/file-for-planned-non-operation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:39.073Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dmv.ca.gov/portal/vehicle-registration/vehicle-registration-renewal/file-for-planned-non-operation",
-	"url": "https://www.dmv.ca.gov/portal/vehicle-registration/vehicle-registration-renewal/file-for-planned-non-operation/"
-}

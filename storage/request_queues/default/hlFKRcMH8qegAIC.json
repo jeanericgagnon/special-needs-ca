@@ -1,9 +1,0 @@
-{
-	"id": "hlFKRcMH8qegAIC",
-	"json": "{\"id\":\"hlFKRcMH8qegAIC\",\"url\":\"https://www.ucdavis.edu/news/uc-davis-takes-top-spot-diversity-national-rankings\",\"loadedUrl\":\"https://www.ucdavis.edu/news/uc-davis-takes-top-spot-diversity-national-rankings\",\"uniqueKey\":\"https://www.ucdavis.edu/news/uc-davis-takes-top-spot-diversity-national-rankings\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:51:05.737Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ucdavis.edu/news/uc-davis-takes-top-spot-diversity-national-rankings",
-	"url": "https://www.ucdavis.edu/news/uc-davis-takes-top-spot-diversity-national-rankings"
-}

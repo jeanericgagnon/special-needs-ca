@@ -1,9 +1,0 @@
-{
-	"id": "x2pLa2iP9ZZLFpY",
-	"json": "{\"id\":\"x2pLa2iP9ZZLFpY\",\"url\":\"https://www.vetmed.ucdavis.edu/hospital/small-animal\",\"loadedUrl\":\"https://www.vetmed.ucdavis.edu/hospital/small-animal\",\"uniqueKey\":\"https://www.vetmed.ucdavis.edu/hospital/small-animal\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:19.714Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.vetmed.ucdavis.edu/hospital/small-animal",
-	"url": "https://www.vetmed.ucdavis.edu/hospital/small-animal"
-}

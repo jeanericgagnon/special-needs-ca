@@ -1,9 +1,0 @@
-{
-	"id": "j1uDLsNck4XDv0C",
-	"json": "{\"id\":\"j1uDLsNck4XDv0C\",\"url\":\"https://www.chp.ca.gov/link/af44ddebfe3a46cea262b34b21b1b695.aspx\",\"loadedUrl\":\"https://www.chp.ca.gov/programs-services/\",\"uniqueKey\":\"https://www.chp.ca.gov/link/af44ddebfe3a46cea262b34b21b1b695.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:12.131Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chp.ca.gov/link/af44ddebfe3a46cea262b34b21b1b695.aspx",
-	"url": "https://www.chp.ca.gov/link/af44ddebfe3a46cea262b34b21b1b695.aspx"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "5ne3KX3znnbfp9d",
-	"json": "{\"id\":\"5ne3KX3znnbfp9d\",\"url\":\"https://www.caloes.ca.gov/office-of-the-director/policy-administration/finance-administration/grants-management/search-for-grants/\",\"loadedUrl\":\"https://www.caloes.ca.gov/office-of-the-director/policy-administration/finance-administration/grants-management/search-for-grants/\",\"uniqueKey\":\"https://www.caloes.ca.gov/office-of-the-director/policy-administration/finance-administration/grants-management/search-for-grants\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:42.193Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.caloes.ca.gov/office-of-the-director/policy-administration/finance-administration/grants-management/search-for-grants",
-	"url": "https://www.caloes.ca.gov/office-of-the-director/policy-administration/finance-administration/grants-management/search-for-grants/"
-}

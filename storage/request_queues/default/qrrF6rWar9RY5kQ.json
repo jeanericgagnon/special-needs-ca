@@ -1,9 +1,0 @@
-{
-	"id": "qrrF6rWar9RY5kQ",
-	"json": "{\"id\":\"qrrF6rWar9RY5kQ\",\"url\":\"https://give.ucdavis.edu/MEDI/325083\",\"loadedUrl\":\"https://give.ucdavis.edu/MEDI/325083\",\"uniqueKey\":\"https://give.ucdavis.edu/MEDI/325083\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:59.780Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/MEDI/325083",
-	"url": "https://give.ucdavis.edu/MEDI/325083"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "JQjvvuIM343o6hI",
-	"json": "{\"id\":\"JQjvvuIM343o6hI\",\"url\":\"https://health.ucdavis.edu/medresearch/grants-facilitation/\",\"loadedUrl\":\"https://health.ucdavis.edu/medical-school-research/grants-facilitation/\",\"uniqueKey\":\"https://health.ucdavis.edu/medresearch/grants-facilitation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:21.810Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/medresearch/grants-facilitation",
-	"url": "https://health.ucdavis.edu/medresearch/grants-facilitation/"
-}

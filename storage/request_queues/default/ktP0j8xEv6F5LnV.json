@@ -1,9 +1,0 @@
-{
-	"id": "ktP0j8xEv6F5LnV",
-	"json": "{\"id\":\"ktP0j8xEv6F5LnV\",\"url\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/womens\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/womens\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/locations/specialty-care/womens\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:50.618Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/locations/specialty-care/womens",
-	"url": "https://health.ucdavis.edu/patients-visitors/locations/specialty-care/womens"
-}

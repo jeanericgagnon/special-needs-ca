@@ -1,9 +1,0 @@
-{
-	"id": "93D1wEIdTPDvtXt",
-	"json": "{\"id\":\"93D1wEIdTPDvtXt\",\"url\":\"https://lao.ca.gov/Publications/Detail/5164\",\"loadedUrl\":\"https://lao.ca.gov/Publications/Detail/5164\",\"uniqueKey\":\"https://lao.ca.gov/Publications/Detail/5164\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:03:04.537Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://lao.ca.gov/Publications/Detail/5164",
-	"url": "https://lao.ca.gov/Publications/Detail/5164"
-}

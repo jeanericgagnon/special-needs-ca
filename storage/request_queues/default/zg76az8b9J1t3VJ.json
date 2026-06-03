@@ -1,9 +1,0 @@
-{
-	"id": "zg76az8b9J1t3VJ",
-	"json": "{\"id\":\"zg76az8b9J1t3VJ\",\"url\":\"https://financeandbusiness.ucdavis.edu/bia/institutional-analysis/surveys/ucues\",\"loadedUrl\":\"https://financeandbusiness.ucdavis.edu/bia/institutional-analysis/surveys/ucues\",\"uniqueKey\":\"https://financeandbusiness.ucdavis.edu/bia/institutional-analysis/surveys/ucues\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:52.360Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://financeandbusiness.ucdavis.edu/bia/institutional-analysis/surveys/ucues",
-	"url": "https://financeandbusiness.ucdavis.edu/bia/institutional-analysis/surveys/ucues"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "Cf8QHAsmHkHsILL",
-	"json": "{\"id\":\"Cf8QHAsmHkHsILL\",\"url\":\"https://scdd.ca.gov/sdm-tap-resources/what-kind-of-support-do-i-want-supported-decision-making-discovery-tool/\",\"loadedUrl\":\"https://scdd.ca.gov/sdm-tap-resources/what-kind-of-support-do-i-want-supported-decision-making-discovery-tool/\",\"uniqueKey\":\"https://scdd.ca.gov/sdm-tap-resources/what-kind-of-support-do-i-want-supported-decision-making-discovery-tool\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:19:32.934Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/sdm-tap-resources/what-kind-of-support-do-i-want-supported-decision-making-discovery-tool",
-	"url": "https://scdd.ca.gov/sdm-tap-resources/what-kind-of-support-do-i-want-supported-decision-making-discovery-tool/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "069IdDYDP6dcJtc",
-	"json": "{\"id\":\"069IdDYDP6dcJtc\",\"url\":\"https://learning.parks.ca.gov/youth-family/\",\"loadedUrl\":\"https://learning.parks.ca.gov/youth-family/\",\"uniqueKey\":\"https://learning.parks.ca.gov/youth-family\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:44.378Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://learning.parks.ca.gov/youth-family",
-	"url": "https://learning.parks.ca.gov/youth-family/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "UhlikO5KnSLymiU",
-	"json": "{\"id\":\"UhlikO5KnSLymiU\",\"url\":\"https://neuroscience.ucdavis.edu/people/david-segal\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/people/david-segal\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/people/david-segal\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:49.889Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/people/david-segal",
-	"url": "https://neuroscience.ucdavis.edu/people/david-segal"
-}

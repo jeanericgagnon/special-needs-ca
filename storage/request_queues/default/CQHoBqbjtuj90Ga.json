@@ -1,9 +1,0 @@
-{
-	"id": "CQHoBqbjtuj90Ga",
-	"json": "{\"id\":\"CQHoBqbjtuj90Ga\",\"url\":\"https://alumni.ucdavis.edu/about/contact-us\",\"loadedUrl\":\"https://alumni.ucdavis.edu/about/contact-us\",\"uniqueKey\":\"https://alumni.ucdavis.edu/about/contact-us\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:06.678Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://alumni.ucdavis.edu/about/contact-us",
-	"url": "https://alumni.ucdavis.edu/about/contact-us"
-}

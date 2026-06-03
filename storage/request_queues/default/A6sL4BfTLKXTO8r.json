@@ -1,9 +1,0 @@
-{
-	"id": "A6sL4BfTLKXTO8r",
-	"json": "{\"id\":\"A6sL4BfTLKXTO8r\",\"url\":\"https://www.globaldownsyndrome.org/es_mx/nuestra-historia/\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/es_mx/nuestra-historia/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/es_mx/nuestra-historia\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:30:03.782Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.globaldownsyndrome.org/es_mx/nuestra-historia",
-	"url": "https://www.globaldownsyndrome.org/es_mx/nuestra-historia/"
-}

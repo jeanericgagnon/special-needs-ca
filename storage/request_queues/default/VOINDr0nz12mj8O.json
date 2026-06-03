@@ -1,9 +1,0 @@
-{
-	"id": "VOINDr0nz12mj8O",
-	"json": "{\"id\":\"VOINDr0nz12mj8O\",\"url\":\"https://www.cde.ca.gov/ta/sr/me/\",\"loadedUrl\":\"https://www.cde.ca.gov/ta/sr/me/\",\"uniqueKey\":\"https://www.cde.ca.gov/ta/sr/me\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:12:00.613Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ta/sr/me",
-	"url": "https://www.cde.ca.gov/ta/sr/me/"
-}

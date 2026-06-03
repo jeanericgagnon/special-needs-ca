@@ -1,9 +1,0 @@
-{
-	"id": "srLtFQieSYU5RPn",
-	"json": "{\"id\":\"srLtFQieSYU5RPn\",\"url\":\"https://www.chhs.ca.gov/home/committees/care-act-working-group/\",\"loadedUrl\":\"https://www.chhs.ca.gov/home/committees/care-act-working-group/\",\"uniqueKey\":\"https://www.chhs.ca.gov/home/committees/care-act-working-group\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:14.913Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chhs.ca.gov/home/committees/care-act-working-group",
-	"url": "https://www.chhs.ca.gov/home/committees/care-act-working-group/"
-}

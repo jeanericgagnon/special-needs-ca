@@ -1,9 +1,0 @@
-{
-	"id": "zUyHWT1gWh7PmOP",
-	"json": "{\"id\":\"zUyHWT1gWh7PmOP\",\"url\":\"https://calcareers.ca.gov/CalHrPublic/Exams/ExamBulletin.aspx?ExamControlId=1304\",\"loadedUrl\":\"https://calcareers.ca.gov/CalHrPublic/Exams/ExamBulletin.aspx?ExamControlId=1304\",\"uniqueKey\":\"https://calcareers.ca.gov/CalHrPublic/Exams/ExamBulletin.aspx?ExamControlId=1304\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:13:52.536Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://calcareers.ca.gov/CalHrPublic/Exams/ExamBulletin.aspx?ExamControlId=1304",
-	"url": "https://calcareers.ca.gov/CalHrPublic/Exams/ExamBulletin.aspx?ExamControlId=1304"
-}

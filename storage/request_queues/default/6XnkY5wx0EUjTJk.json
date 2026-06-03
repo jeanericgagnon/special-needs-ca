@@ -1,9 +1,0 @@
-{
-	"id": "6XnkY5wx0EUjTJk",
-	"json": "{\"id\":\"6XnkY5wx0EUjTJk\",\"url\":\"https://frcnca.org/register/\",\"loadedUrl\":\"https://frcnca.org/register/\",\"uniqueKey\":\"https://frcnca.org/register\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:26.467Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://frcnca.org/register",
-	"url": "https://frcnca.org/register/"
-}

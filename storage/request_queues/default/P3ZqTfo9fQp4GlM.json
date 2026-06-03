@@ -1,9 +1,0 @@
-{
-	"id": "P3ZqTfo9fQp4GlM",
-	"json": "{\"id\":\"P3ZqTfo9fQp4GlM\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDCB/_layouts/15/listform.aspx?ListId=%7B1FD1BB85%2D4886%2D4059%2DAE9E%2D1600FB7A7910%7D&PageType=0\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDCB/Pages/ChronicDiseaseControlBranch2.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDCB/_layouts/15/listform.aspx?ListId=%7B1FD1BB85-4886-4059-AE9E-1600FB7A7910%7D&PageType=0\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:56:39.813Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDCB/_layouts/15/listform.aspx?ListId=%7B1FD1BB85-4886-4059-AE9E-1600FB7A7910%7D&PageType=0",
-	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDCB/_layouts/15/listform.aspx?ListId=%7B1FD1BB85%2D4886%2D4059%2DAE9E%2D1600FB7A7910%7D&PageType=0"
-}

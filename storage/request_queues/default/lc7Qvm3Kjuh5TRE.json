@@ -1,9 +1,0 @@
-{
-	"id": "lc7Qvm3Kjuh5TRE",
-	"json": "{\"id\":\"lc7Qvm3Kjuh5TRE\",\"url\":\"https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=INS&tocTitle=+Insurance+Code+-+INS\",\"loadedUrl\":\"https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=INS&tocTitle=+Insurance+Code+-+INS\",\"uniqueKey\":\"https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=INS&tocTitle=+Insurance+Code+-+INS\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:20.539Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=INS&tocTitle=+Insurance+Code+-+INS",
-	"url": "https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=INS&tocTitle=+Insurance+Code+-+INS"
-}

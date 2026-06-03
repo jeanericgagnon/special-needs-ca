@@ -1,9 +1,0 @@
-{
-	"id": "2o73rDgf6bYTBDl",
-	"json": "{\"id\":\"2o73rDgf6bYTBDl\",\"url\":\"https://lettersandscience.ucdavis.edu/ls-experience\",\"loadedUrl\":\"https://lettersandscience.ucdavis.edu/ls-experience\",\"uniqueKey\":\"https://lettersandscience.ucdavis.edu/ls-experience\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:24.066Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://lettersandscience.ucdavis.edu/ls-experience",
-	"url": "https://lettersandscience.ucdavis.edu/ls-experience"
-}

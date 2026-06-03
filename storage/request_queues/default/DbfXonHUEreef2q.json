@@ -1,9 +1,0 @@
-{
-	"id": "DbfXonHUEreef2q",
-	"json": "{\"id\":\"DbfXonHUEreef2q\",\"url\":\"https://health.ucdavis.edu/mind-institute/research/adhdprogram/delta\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/research/adhdprogram/delta\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/research/adhdprogram/delta\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:25.142Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mind-institute/research/adhdprogram/delta",
-	"url": "https://health.ucdavis.edu/mind-institute/research/adhdprogram/delta"
-}

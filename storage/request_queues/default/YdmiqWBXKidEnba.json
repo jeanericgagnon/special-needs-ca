@@ -1,9 +1,0 @@
-{
-	"id": "YdmiqWBXKidEnba",
-	"json": "{\"id\":\"YdmiqWBXKidEnba\",\"url\":\"https://biology.ucdavis.edu/faculty/neurobiology-physiology-and-behavior\",\"loadedUrl\":\"https://biology.ucdavis.edu/faculty/neurobiology-physiology-and-behavior\",\"uniqueKey\":\"https://biology.ucdavis.edu/faculty/neurobiology-physiology-and-behavior\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:24.414Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://biology.ucdavis.edu/faculty/neurobiology-physiology-and-behavior",
-	"url": "https://biology.ucdavis.edu/faculty/neurobiology-physiology-and-behavior"
-}

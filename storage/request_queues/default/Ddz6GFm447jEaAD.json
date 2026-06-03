@@ -1,9 +1,0 @@
-{
-	"id": "Ddz6GFm447jEaAD",
-	"json": "{\"id\":\"Ddz6GFm447jEaAD\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDCB/Pages/HeartDiseasePrevention.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDCB/Pages/HeartDiseasePrevention.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDCB/Pages/HeartDiseasePrevention.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:02:12.388Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDCB/Pages/HeartDiseasePrevention.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDCB/Pages/HeartDiseasePrevention.aspx"
-}

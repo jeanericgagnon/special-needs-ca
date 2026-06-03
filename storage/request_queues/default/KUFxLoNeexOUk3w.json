@@ -1,9 +1,0 @@
-{
-	"id": "KUFxLoNeexOUk3w",
-	"json": "{\"id\":\"KUFxLoNeexOUk3w\",\"url\":\"https://www.grants.ca.gov/?s&grant_categories_search%5B%5D=disadvantaged-communities\",\"loadedUrl\":\"https://www.grants.ca.gov/?s&grant_categories_search%5B%5D=disadvantaged-communities\",\"uniqueKey\":\"https://www.grants.ca.gov?grant_categories_search%5B%5D=disadvantaged-communities&s=\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:53.356Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.grants.ca.gov?grant_categories_search%5B%5D=disadvantaged-communities&s=",
-	"url": "https://www.grants.ca.gov/?s&grant_categories_search%5B%5D=disadvantaged-communities"
-}

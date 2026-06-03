@@ -1,9 +1,0 @@
-{
-	"id": "UwAkzVPsg7reUSW",
-	"json": "{\"id\":\"UwAkzVPsg7reUSW\",\"url\":\"https://registertovote.ca.gov/km-kh\",\"loadedUrl\":\"https://registertovote.ca.gov/km-kh\",\"uniqueKey\":\"https://registertovote.ca.gov/km-kh\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:44.747Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://registertovote.ca.gov/km-kh",
-	"url": "https://registertovote.ca.gov/km-kh"
-}

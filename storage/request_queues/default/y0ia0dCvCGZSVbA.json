@@ -1,9 +1,0 @@
-{
-	"id": "y0ia0dCvCGZSVbA",
-	"json": "{\"id\":\"y0ia0dCvCGZSVbA\",\"url\":\"https://alumni.ucdavis.edu/career-resources/in-transition\",\"loadedUrl\":\"https://alumni.ucdavis.edu/career-resources/in-transition\",\"uniqueKey\":\"https://alumni.ucdavis.edu/career-resources/in-transition\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:06.285Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://alumni.ucdavis.edu/career-resources/in-transition",
-	"url": "https://alumni.ucdavis.edu/career-resources/in-transition"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "Ax8jeec0PBaOP7k",
-	"json": "{\"id\":\"Ax8jeec0PBaOP7k\",\"url\":\"https://cdss.ca.gov/inforesources/CDSS-Programs/Welfare-to-Work/TCVAP/Events-News-and-Resources\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/tcvap/events-news-and-resources\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/CDSS-Programs/Welfare-to-Work/TCVAP/Events-News-and-Resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:22.138Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/CDSS-Programs/Welfare-to-Work/TCVAP/Events-News-and-Resources",
-	"url": "https://cdss.ca.gov/inforesources/CDSS-Programs/Welfare-to-Work/TCVAP/Events-News-and-Resources"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "bvrxPUBah6jNa0P",
-	"json": "{\"id\":\"bvrxPUBah6jNa0P\",\"url\":\"https://cadeafblind.org/contact/\",\"loadedUrl\":\"https://cadeafblind.org/contact/\",\"uniqueKey\":\"https://cadeafblind.org/contact\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:48.982Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cadeafblind.org/contact",
-	"url": "https://cadeafblind.org/contact/"
-}

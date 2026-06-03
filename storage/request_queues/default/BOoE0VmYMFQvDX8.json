@@ -1,9 +1,0 @@
-{
-	"id": "BOoE0VmYMFQvDX8",
-	"json": "{\"id\":\"BOoE0VmYMFQvDX8\",\"url\":\"https://cdss.ca.gov/Public-Record-Requests#\",\"loadedUrl\":\"https://cdss.ca.gov/public-record-requests\",\"uniqueKey\":\"https://cdss.ca.gov/Public-Record-Requests\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:52.441Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/Public-Record-Requests",
-	"url": "https://cdss.ca.gov/Public-Record-Requests#"
-}

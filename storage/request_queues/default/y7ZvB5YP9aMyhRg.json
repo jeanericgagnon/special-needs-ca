@@ -1,9 +1,0 @@
-{
-	"id": "y7ZvB5YP9aMyhRg",
-	"json": "{\"id\":\"y7ZvB5YP9aMyhRg\",\"url\":\"https://hr.ucdavis.edu/events/career-design-lab-july-cloned\",\"loadedUrl\":\"https://hr.ucdavis.edu/events/career-design-lab-july-cloned\",\"uniqueKey\":\"https://hr.ucdavis.edu/events/career-design-lab-july-cloned\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:21.681Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/events/career-design-lab-july-cloned",
-	"url": "https://hr.ucdavis.edu/events/career-design-lab-july-cloned"
-}

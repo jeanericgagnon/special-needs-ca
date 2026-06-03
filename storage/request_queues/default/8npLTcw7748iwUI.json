@@ -1,9 +1,0 @@
-{
-	"id": "8npLTcw7748iwUI",
-	"json": "{\"id\":\"8npLTcw7748iwUI\",\"url\":\"https://www.dds.ca.gov/JobBulletin/dsp_ViewDocument.cfm?id=A50EF82E-6374-46A7-A590-704CA39669E0\",\"loadedUrl\":\"https://www.dds.ca.gov/JobBulletin/dsp_ViewDocument.cfm?id=A50EF82E-6374-46A7-A590-704CA39669E0\",\"uniqueKey\":\"https://www.dds.ca.gov/JobBulletin/dsp_ViewDocument.cfm?id=A50EF82E-6374-46A7-A590-704CA39669E0\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:02.274Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/JobBulletin/dsp_ViewDocument.cfm?id=A50EF82E-6374-46A7-A590-704CA39669E0",
-	"url": "https://www.dds.ca.gov/JobBulletin/dsp_ViewDocument.cfm?id=A50EF82E-6374-46A7-A590-704CA39669E0"
-}

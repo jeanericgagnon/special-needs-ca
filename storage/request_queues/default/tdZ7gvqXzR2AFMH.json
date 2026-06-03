@@ -1,9 +1,0 @@
-{
-	"id": "tdZ7gvqXzR2AFMH",
-	"json": "{\"id\":\"tdZ7gvqXzR2AFMH\",\"url\":\"https://www.vetmed.ucdavis.edu/hospital/directions\",\"loadedUrl\":\"https://www.vetmed.ucdavis.edu/hospital/directions\",\"uniqueKey\":\"https://www.vetmed.ucdavis.edu/hospital/directions\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:20.140Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.vetmed.ucdavis.edu/hospital/directions",
-	"url": "https://www.vetmed.ucdavis.edu/hospital/directions"
-}

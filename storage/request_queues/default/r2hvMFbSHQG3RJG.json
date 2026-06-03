@@ -1,9 +1,0 @@
-{
-	"id": "r2hvMFbSHQG3RJG",
-	"json": "{\"id\":\"r2hvMFbSHQG3RJG\",\"url\":\"https://scdd.ca.gov/pos-service-code/socialization-training-program/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/socialization-training-program/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/socialization-training-program\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:57.247Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/pos-service-code/socialization-training-program",
-	"url": "https://scdd.ca.gov/pos-service-code/socialization-training-program/"
-}

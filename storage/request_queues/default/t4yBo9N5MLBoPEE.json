@@ -1,9 +1,0 @@
-{
-	"id": "t4yBo9N5MLBoPEE",
-	"json": "{\"id\":\"t4yBo9N5MLBoPEE\",\"url\":\"https://rarediseases.org/organizations/national-foundation-for-ectodermal-dysplasias-nfed/\",\"loadedUrl\":\"https://rarediseases.org/organizations/national-foundation-for-ectodermal-dysplasias-nfed/\",\"uniqueKey\":\"https://rarediseases.org/organizations/national-foundation-for-ectodermal-dysplasias-nfed\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:18:33.976Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/organizations/national-foundation-for-ectodermal-dysplasias-nfed",
-	"url": "https://rarediseases.org/organizations/national-foundation-for-ectodermal-dysplasias-nfed/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "999qIbkqypt9ytE",
-	"json": "{\"id\":\"999qIbkqypt9ytE\",\"url\":\"https://www.vetmed.ucdavis.edu/research/research-resources/research-centers\",\"loadedUrl\":\"https://www.vetmed.ucdavis.edu/research/research-resources/research-centers\",\"uniqueKey\":\"https://www.vetmed.ucdavis.edu/research/research-resources/research-centers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:20.526Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.vetmed.ucdavis.edu/research/research-resources/research-centers",
-	"url": "https://www.vetmed.ucdavis.edu/research/research-resources/research-centers"
-}

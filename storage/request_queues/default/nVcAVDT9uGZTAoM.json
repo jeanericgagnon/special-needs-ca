@@ -1,9 +1,0 @@
-{
-	"id": "nVcAVDT9uGZTAoM",
-	"json": "{\"id\":\"nVcAVDT9uGZTAoM\",\"url\":\"https://yellowcluster.ucdavis.edu/node/106\",\"loadedUrl\":\"https://yellowcluster.ucdavis.edu/node/106\",\"uniqueKey\":\"https://yellowcluster.ucdavis.edu/node/106\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:17.022Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://yellowcluster.ucdavis.edu/node/106",
-	"url": "https://yellowcluster.ucdavis.edu/node/106"
-}

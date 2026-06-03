@@ -1,9 +1,0 @@
-{
-	"id": "ww6VBAwin67c71E",
-	"json": "{\"id\":\"ww6VBAwin67c71E\",\"url\":\"https://www.vetmed.ucdavis.edu/student-life/career-leadership-wellness/leadership/clubs-organizations\",\"loadedUrl\":\"https://www.vetmed.ucdavis.edu/student-life/career-leadership-wellness/leadership/clubs-organizations\",\"uniqueKey\":\"https://www.vetmed.ucdavis.edu/student-life/career-leadership-wellness/leadership/clubs-organizations\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:19.062Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.vetmed.ucdavis.edu/student-life/career-leadership-wellness/leadership/clubs-organizations",
-	"url": "https://www.vetmed.ucdavis.edu/student-life/career-leadership-wellness/leadership/clubs-organizations"
-}

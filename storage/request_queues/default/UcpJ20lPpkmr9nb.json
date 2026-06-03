@@ -1,9 +1,0 @@
-{
-	"id": "UcpJ20lPpkmr9nb",
-	"json": "{\"id\":\"UcpJ20lPpkmr9nb\",\"url\":\"https://www.dds.ca.gov/rc/vendor-provider/rate-reform/directives-updates/rate-reform-exemptions-data-as-of-may-4/\",\"loadedUrl\":\"https://www.dds.ca.gov/rc/vendor-provider/rate-reform/directives-updates/rate-reform-exemptions-data-as-of-may-4/\",\"uniqueKey\":\"https://www.dds.ca.gov/rc/vendor-provider/rate-reform/directives-updates/rate-reform-exemptions-data-as-of-may-4\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:50.354Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/rc/vendor-provider/rate-reform/directives-updates/rate-reform-exemptions-data-as-of-may-4",
-	"url": "https://www.dds.ca.gov/rc/vendor-provider/rate-reform/directives-updates/rate-reform-exemptions-data-as-of-may-4/"
-}

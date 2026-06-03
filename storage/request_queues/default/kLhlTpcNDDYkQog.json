@@ -1,9 +1,0 @@
-{
-	"id": "kLhlTpcNDDYkQog",
-	"json": "{\"id\":\"kLhlTpcNDDYkQog\",\"url\":\"https://health.ucdavis.edu/nursing/about_us/Students/Student_distinctions/student_pages/student_profile_Besa.Dion.Jagoda.html\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/about_us/Students/Student_distinctions/student_pages/student_profile_Besa.Dion.Jagoda.html\",\"uniqueKey\":\"https://health.ucdavis.edu/nursing/about_us/Students/Student_distinctions/student_pages/student_profile_Besa.Dion.Jagoda.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:17.459Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/nursing/about_us/Students/Student_distinctions/student_pages/student_profile_Besa.Dion.Jagoda.html",
-	"url": "https://health.ucdavis.edu/nursing/about_us/Students/Student_distinctions/student_pages/student_profile_Besa.Dion.Jagoda.html"
-}

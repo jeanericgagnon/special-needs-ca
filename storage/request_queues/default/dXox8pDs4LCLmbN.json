@@ -1,9 +1,0 @@
-{
-	"id": "dXox8pDs4LCLmbN",
-	"json": "{\"id\":\"dXox8pDs4LCLmbN\",\"url\":\"https://health.ucdavis.edu/conditions/infectious-diseases/fungal-infections\",\"loadedUrl\":\"https://health.ucdavis.edu/conditions/infectious-diseases/fungal-infections\",\"uniqueKey\":\"https://health.ucdavis.edu/conditions/infectious-diseases/fungal-infections\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:51.859Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/conditions/infectious-diseases/fungal-infections",
-	"url": "https://health.ucdavis.edu/conditions/infectious-diseases/fungal-infections"
-}

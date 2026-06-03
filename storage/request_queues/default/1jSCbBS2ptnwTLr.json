@@ -1,9 +1,0 @@
-{
-	"id": "1jSCbBS2ptnwTLr",
-	"json": "{\"id\":\"1jSCbBS2ptnwTLr\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/EHIB/Pages/Data-and-Tools.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/EHIB/Pages/Data-and-Tools.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/EHIB/Pages/Data-and-Tools.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:02:42.351Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/EHIB/Pages/Data-and-Tools.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/EHIB/Pages/Data-and-Tools.aspx"
-}

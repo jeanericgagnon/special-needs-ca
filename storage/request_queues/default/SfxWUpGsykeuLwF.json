@@ -1,9 +1,0 @@
-{
-	"id": "SfxWUpGsykeuLwF",
-	"json": "{\"id\":\"SfxWUpGsykeuLwF\",\"url\":\"https://www.cde.ca.gov/ci/cr/cf/artsmusicgrantfaqs.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=91422753-9b5b-447e-8092-2a38cf00461d&ssb=22154240750&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fci%2Fcr%2Fcf%2Fartsmusicgrantfaqs.asp&ssi=c4e82549-ctxv-4fd8-bee2-5e3da12ffe9f&ssk=botmanager_support@radware.com&ssm=37683235126966931109097043935141&ssn=6394927456cb645f816e310aa14ef18b155c5d47f903-c273-41f6-97b06c&sso=15c2422e-75b156a54b35b69c10026adc5c9f07592978ca41df592f59&ssp=73500037801780361376178030213932649&ssq=30664335527504235000055275990493661850237&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2Y5MDAwNTk0OGE3MzktNGYxYS00ZDFiLTk3YzgtZWEwZDk3ZGI0MTZiMS0xNzgwMzU1Mjc1ODk1MC0wMTdhY2UwZmE2YWI1ZGEwMTAiLCJfX3V6bWYiOiI3ZjkwMDA1ZDQ3ZjkwMy1jMjczLTQxZjYtOTIyZS03NWIxNTZhNTRiMzUxLTE3ODAzNTUyNzU4OTUwLTAwMzhkNGJmNjY4ZDBiODA1ZTExMCIsInJkIjoiY2EuZ292In0=\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/cr/cf/artsmusicgrantfaqs.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T23:07:56.421Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ci/cr/cf/artsmusicgrantfaqs.asp",
-	"url": "https://www.cde.ca.gov/ci/cr/cf/artsmusicgrantfaqs.asp"
-}

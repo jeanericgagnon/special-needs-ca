@@ -1,9 +1,0 @@
-{
-	"id": "3g1tRHphLa04RMi",
-	"json": "{\"id\":\"3g1tRHphLa04RMi\",\"url\":\"https://www.placer.ca.gov/QuickLinks.aspx?CID=94\",\"loadedUrl\":\"https://www.placer.ca.gov/QuickLinks.aspx?CID=94\",\"uniqueKey\":\"https://www.placer.ca.gov/QuickLinks.aspx?CID=94\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:30.652Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.placer.ca.gov/QuickLinks.aspx?CID=94",
-	"url": "https://www.placer.ca.gov/QuickLinks.aspx?CID=94"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "INiuFUXIrtP7Ass",
-	"json": "{\"id\":\"INiuFUXIrtP7Ass\",\"url\":\"https://ssl.arb.ca.gov/pfirs/\",\"loadedUrl\":\"https://ssl.arb.ca.gov/pfirs/\",\"uniqueKey\":\"https://ssl.arb.ca.gov/pfirs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:32:44.852Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ssl.arb.ca.gov/pfirs",
-	"url": "https://ssl.arb.ca.gov/pfirs/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "NtX3PkoEO3uM1vW",
-	"json": "{\"id\":\"NtX3PkoEO3uM1vW\",\"url\":\"https://health.ucdavis.edu/children/services/Childrens-surgery-center/\",\"loadedUrl\":\"https://health.ucdavis.edu/children/services/Childrens-surgery-center/\",\"uniqueKey\":\"https://health.ucdavis.edu/children/services/Childrens-surgery-center\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:53.828Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/children/services/Childrens-surgery-center",
-	"url": "https://health.ucdavis.edu/children/services/Childrens-surgery-center/"
-}

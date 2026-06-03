@@ -1,9 +1,0 @@
-{
-	"id": "D4BVFAKGCK0rdf8",
-	"json": "{\"id\":\"D4BVFAKGCK0rdf8\",\"url\":\"https://health.ucdavis.edu/physiology/faculty/borodinsky.html\",\"loadedUrl\":\"https://health.ucdavis.edu/physiology/faculty/borodinsky.html\",\"uniqueKey\":\"https://health.ucdavis.edu/physiology/faculty/borodinsky.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:44.540Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/physiology/faculty/borodinsky.html",
-	"url": "https://health.ucdavis.edu/physiology/faculty/borodinsky.html"
-}

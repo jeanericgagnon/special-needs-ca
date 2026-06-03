@@ -1,9 +1,0 @@
-{
-	"id": "xCVmDQneRM6Q09D",
-	"json": "{\"id\":\"xCVmDQneRM6Q09D\",\"url\":\"https://health.ucdavis.edu/medicalcenter/cliniclocations/primarycare/davis-campus-clinic.html\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/locations/primary-care/davis-campus-684-hutchison-drive\",\"uniqueKey\":\"https://health.ucdavis.edu/medicalcenter/cliniclocations/primarycare/davis-campus-clinic.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:31:59.798Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/medicalcenter/cliniclocations/primarycare/davis-campus-clinic.html",
-	"url": "https://health.ucdavis.edu/medicalcenter/cliniclocations/primarycare/davis-campus-clinic.html"
-}

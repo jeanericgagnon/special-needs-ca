@@ -1,9 +1,0 @@
-{
-	"id": "MzwZC2N9kWnMADd",
-	"json": "{\"id\":\"MzwZC2N9kWnMADd\",\"url\":\"http://languagesciences.ucdavis.edu/\",\"loadedUrl\":\"http://languagesciences.ucdavis.edu/\",\"uniqueKey\":\"http://languagesciences.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:07.439Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://languagesciences.ucdavis.edu",
-	"url": "http://languagesciences.ucdavis.edu/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "zsaqv9LYnotM5Tt",
-	"json": "{\"id\":\"zsaqv9LYnotM5Tt\",\"url\":\"https://cdss.ca.gov/sun-bucks/other-food-resources\",\"loadedUrl\":\"https://cdss.ca.gov/sun-bucks/other-food-resources\",\"uniqueKey\":\"https://cdss.ca.gov/sun-bucks/other-food-resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:01.836Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/sun-bucks/other-food-resources",
-	"url": "https://cdss.ca.gov/sun-bucks/other-food-resources"
-}

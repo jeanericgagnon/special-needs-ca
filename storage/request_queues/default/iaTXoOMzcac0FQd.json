@@ -1,9 +1,0 @@
-{
-	"id": "iaTXoOMzcac0FQd",
-	"json": "{\"id\":\"iaTXoOMzcac0FQd\",\"url\":\"https://care.ucdavis.edu/sitemap\",\"loadedUrl\":\"https://care.ucdavis.edu/sitemap\",\"uniqueKey\":\"https://care.ucdavis.edu/sitemap\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:02.749Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://care.ucdavis.edu/sitemap",
-	"url": "https://care.ucdavis.edu/sitemap"
-}

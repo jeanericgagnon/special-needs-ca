@@ -1,9 +1,0 @@
-{
-	"id": "F2eQxmp8j7Grkh0",
-	"json": "{\"id\":\"F2eQxmp8j7Grkh0\",\"url\":\"https://financeandbusiness.ucdavis.edu/bia/budget/model/patent-income\",\"loadedUrl\":\"https://financeandbusiness.ucdavis.edu/bia/budget/model/patent-income\",\"uniqueKey\":\"https://financeandbusiness.ucdavis.edu/bia/budget/model/patent-income\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:51.242Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://financeandbusiness.ucdavis.edu/bia/budget/model/patent-income",
-	"url": "https://financeandbusiness.ucdavis.edu/bia/budget/model/patent-income"
-}

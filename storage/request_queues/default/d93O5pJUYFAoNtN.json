@@ -1,9 +1,0 @@
-{
-	"id": "d93O5pJUYFAoNtN",
-	"json": "{\"id\":\"d93O5pJUYFAoNtN\",\"url\":\"https://maps.cdtfa.ca.gov/\",\"loadedUrl\":\"https://maps.cdtfa.ca.gov/\",\"uniqueKey\":\"https://maps.cdtfa.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:33.224Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://maps.cdtfa.ca.gov",
-	"url": "https://maps.cdtfa.ca.gov/"
-}

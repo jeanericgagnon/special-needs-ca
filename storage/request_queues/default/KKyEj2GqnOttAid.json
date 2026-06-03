@@ -1,9 +1,0 @@
-{
-	"id": "KKyEj2GqnOttAid",
-	"json": "{\"id\":\"KKyEj2GqnOttAid\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/22147/marcia-marcy-faustin-family_and_community_medicine-musculoskeletal_pain_medicine-sports_medicine-sacramento?FreeText:Last+name=Faustin\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/22147/marcia-marcy-faustin-family_and_community_medicine-musculoskeletal_pain_medicine-sports_medicine-sacramento?FreeText:Last+name=Faustin\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/22147/marcia-marcy-faustin-family_and_community_medicine-musculoskeletal_pain_medicine-sports_medicine-sacramento?FreeText%3ALast+name=Faustin\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:15.039Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/22147/marcia-marcy-faustin-family_and_community_medicine-musculoskeletal_pain_medicine-sports_medicine-sacramento?FreeText%3ALast+name=Faustin",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/22147/marcia-marcy-faustin-family_and_community_medicine-musculoskeletal_pain_medicine-sports_medicine-sacramento?FreeText:Last+name=Faustin"
-}

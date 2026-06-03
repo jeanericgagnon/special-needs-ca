@@ -1,9 +1,0 @@
-{
-	"id": "K4QvDVYVNoKkKhB",
-	"json": "{\"id\":\"K4QvDVYVNoKkKhB\",\"url\":\"https://physicians.ucdavis.edu/details/43422/manpreet-singh-child_and_adolescent_psychiatry-child_development-psychiatry-sacramento?FreeText%3aLast+name=singh,%20https://health.ucdavis.edu/psychiatry/research/labs/mood-disorders-research-program/index.html\",\"loadedUrl\":\"https://physicians.ucdavis.edu/details/43422/manpreet-singh-child_and_adolescent_psychiatry-child_development-psychiatry-sacramento?FreeText%3aLast+name=singh,%20https://health.ucdavis.edu/psychiatry/research/labs/mood-disorders-research-program/index.html\",\"uniqueKey\":\"https://physicians.ucdavis.edu/details/43422/manpreet-singh-child_and_adolescent_psychiatry-child_development-psychiatry-sacramento?FreeText%3ALast+name=singh%2C+https%3A%2F%2Fhealth.ucdavis.edu%2Fpsychiatry%2Fresearch%2Flabs%2Fmood-disorders-research-program%2Findex.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:19.612Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://physicians.ucdavis.edu/details/43422/manpreet-singh-child_and_adolescent_psychiatry-child_development-psychiatry-sacramento?FreeText%3ALast+name=singh%2C+https%3A%2F%2Fhealth.ucdavis.edu%2Fpsychiatry%2Fresearch%2Flabs%2Fmood-disorders-research-program%2Findex.html",
-	"url": "https://physicians.ucdavis.edu/details/43422/manpreet-singh-child_and_adolescent_psychiatry-child_development-psychiatry-sacramento?FreeText%3aLast+name=singh,%20https://health.ucdavis.edu/psychiatry/research/labs/mood-disorders-research-program/index.html"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "ZklbHyfsSGDQrlB",
-	"json": "{\"id\":\"ZklbHyfsSGDQrlB\",\"url\":\"https://scdd.ca.gov/pos-service-code/residential-facility-serving-children-staff-operated/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/residential-facility-serving-children-staff-operated/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/residential-facility-serving-children-staff-operated\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:51.871Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/pos-service-code/residential-facility-serving-children-staff-operated",
-	"url": "https://scdd.ca.gov/pos-service-code/residential-facility-serving-children-staff-operated/"
-}

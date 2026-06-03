@@ -1,9 +1,0 @@
-{
-	"id": "3kNKQSJUQ0oZmVE",
-	"json": "{\"id\":\"3kNKQSJUQ0oZmVE\",\"url\":\"https://health.ucdavis.edu/mind-institute/clinic/social-skills/\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/clinic/social-skills/\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/clinic/social-skills\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:06:50.081Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mind-institute/clinic/social-skills",
-	"url": "https://health.ucdavis.edu/mind-institute/clinic/social-skills/"
-}

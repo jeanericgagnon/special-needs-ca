@@ -1,9 +1,0 @@
-{
-	"id": "cQCCcLGx7eR6pAP",
-	"json": "{\"id\":\"cQCCcLGx7eR6pAP\",\"url\":\"https://www.ca.gov/support/\",\"loadedUrl\":\"https://www.ca.gov/support/\",\"uniqueKey\":\"https://www.ca.gov/support\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:58.845Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ca.gov/support",
-	"url": "https://www.ca.gov/support/"
-}

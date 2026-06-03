@@ -1,9 +1,0 @@
-{
-	"id": "ZOritvSULo3o2DW",
-	"json": "{\"id\":\"ZOritvSULo3o2DW\",\"url\":\"https://www.globaldownsyndrome.org/research-medical-care/medical-care-providers/missouri\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/research-medical-care/medical-care-providers/missouri/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/research-medical-care/medical-care-providers/missouri\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:29:43.561Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.globaldownsyndrome.org/research-medical-care/medical-care-providers/missouri",
-	"url": "https://www.globaldownsyndrome.org/research-medical-care/medical-care-providers/missouri"
-}

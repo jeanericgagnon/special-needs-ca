@@ -1,9 +1,0 @@
-{
-	"id": "NbLi1QFZxxmgk1P",
-	"json": "{\"id\":\"NbLi1QFZxxmgk1P\",\"url\":\"https://calcareers.ca.gov/CalHrPublic/Exams/Legacy/ShowBulletins.aspx?classCode=4687\",\"loadedUrl\":\"https://calcareers.ca.gov/Default.aspx\",\"uniqueKey\":\"https://calcareers.ca.gov/CalHrPublic/Exams/Legacy/ShowBulletins.aspx?classCode=4687\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:02.423Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://calcareers.ca.gov/CalHrPublic/Exams/Legacy/ShowBulletins.aspx?classCode=4687",
-	"url": "https://calcareers.ca.gov/CalHrPublic/Exams/Legacy/ShowBulletins.aspx?classCode=4687"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "9tvC8MnQzyBsMyP",
-	"json": "{\"id\":\"9tvC8MnQzyBsMyP\",\"url\":\"https://www.dhcs.ca.gov/dataandstats/Pages/Data-Sharing-Authorization-Guidance-Medi-Cal-Housing-Support-Services-and-Reentry-Initiative-Toolkits.aspx\",\"loadedUrl\":\"https://www.dhcs.ca.gov/data-statistics/the-data-sharing-authorization-guidance-medi-cal-housing-support-services-and-reentry-initiative-toolkits/\",\"uniqueKey\":\"https://www.dhcs.ca.gov/dataandstats/Pages/Data-Sharing-Authorization-Guidance-Medi-Cal-Housing-Support-Services-and-Reentry-Initiative-Toolkits.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:29:14.076Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dhcs.ca.gov/dataandstats/Pages/Data-Sharing-Authorization-Guidance-Medi-Cal-Housing-Support-Services-and-Reentry-Initiative-Toolkits.aspx",
-	"url": "https://www.dhcs.ca.gov/dataandstats/Pages/Data-Sharing-Authorization-Guidance-Medi-Cal-Housing-Support-Services-and-Reentry-Initiative-Toolkits.aspx"
-}

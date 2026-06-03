@@ -1,9 +1,0 @@
-{
-	"id": "FNDXYVG5ARut93F",
-	"json": "{\"id\":\"FNDXYVG5ARut93F\",\"url\":\"https://baumanlab.faculty.ucdavis.edu/\",\"loadedUrl\":\"https://baumanlab.faculty.ucdavis.edu/\",\"uniqueKey\":\"https://baumanlab.faculty.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:41.576Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://baumanlab.faculty.ucdavis.edu",
-	"url": "https://baumanlab.faculty.ucdavis.edu/"
-}

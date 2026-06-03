@@ -1,9 +1,0 @@
-{
-	"id": "KKCiVF4jjYR5zSH",
-	"json": "{\"id\":\"KKCiVF4jjYR5zSH\",\"url\":\"https://www.insurance.ca.gov/01-consumers/101-help/index.cfm\",\"loadedUrl\":\"https://www.insurance.ca.gov/01-consumers/101-help/index.cfm\",\"uniqueKey\":\"https://www.insurance.ca.gov/01-consumers/101-help/index.cfm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:27.937Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.insurance.ca.gov/01-consumers/101-help/index.cfm",
-	"url": "https://www.insurance.ca.gov/01-consumers/101-help/index.cfm"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "X3fn61fLiN6Bveb",
-	"json": "{\"id\":\"X3fn61fLiN6Bveb\",\"url\":\"https://www.csb-cde.ca.gov/resources/presentations/braillenotetrainings.aspx\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=7572bda7-433c-4748-9ff1-d57fcfbda4a3&ssb=22742244393&ssc=https%3A%2F%2Fwww.csb-cde.ca.gov%2Fresources%2Fpresentations%2Fbraillenotetrainings.aspx&ssi=89263cf4-cuez-4c7d-8d57-471446e5ccd1&ssk=botmanager_support@radware.com&ssm=05393396226608065132167653359784&ssn=5f6d2e3695cdedd7af04188254157496d2bb481b7c92-8dd6-44b8-8ea16a&sso=ebaa7638-80229bfca497867cef285056a9500e4030112f1bd9b7ec08&ssp=26295081331780344705178030120516127&ssq=47625312762808560658427624416029009112735&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDA0ODFiN2M5Mi04ZGQ2LTQ0YjgtODYzOC04MDIyOWJmY2E0OTcxLTE3ODAzMjc2MjQzNzYzNzAxLTAwM2Y5YmVjY2UzNTZkNDMxZWIxMyIsInJkIjoiY2EuZ292IiwidXpteCI6IjdmOTAwMGQ5YTlkMDMwLWZkMDktNGViOC05YjhjLTQzZTBiNmVlY2Y0MTEtMTc4MDMyNjYxOTQ1NzEwMDg2MjAtNzdhYmI5NDY4OGY0MDIyNTE2In0=\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/resources/presentations/braillenotetrainings.aspx\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:27:08.611Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.csb-cde.ca.gov/resources/presentations/braillenotetrainings.aspx",
-	"url": "https://www.csb-cde.ca.gov/resources/presentations/braillenotetrainings.aspx"
-}

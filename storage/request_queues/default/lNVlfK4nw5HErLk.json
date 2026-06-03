@@ -1,9 +1,0 @@
-{
-	"id": "lNVlfK4nw5HErLk",
-	"json": "{\"id\":\"lNVlfK4nw5HErLk\",\"url\":\"http://cdss.ca.gov/privacy-policy\",\"loadedUrl\":\"https://cdss.ca.gov/privacy-policy\",\"uniqueKey\":\"http://cdss.ca.gov/privacy-policy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:52.913Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://cdss.ca.gov/privacy-policy",
-	"url": "http://cdss.ca.gov/privacy-policy"
-}

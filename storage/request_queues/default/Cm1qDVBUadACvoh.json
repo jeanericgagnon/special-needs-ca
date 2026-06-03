@@ -1,9 +1,0 @@
-{
-	"id": "Cm1qDVBUadACvoh",
-	"json": "{\"id\":\"Cm1qDVBUadACvoh\",\"url\":\"https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-tools-to-support-adults-with-disabilities-2023/\",\"loadedUrl\":\"https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-tools-to-support-adults-with-disabilities-2023/\",\"uniqueKey\":\"https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-tools-to-support-adults-with-disabilities-2023\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:19:31.563Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-tools-to-support-adults-with-disabilities-2023",
-	"url": "https://scdd.ca.gov/sdm-tap-resources/supported-decision-making-tools-to-support-adults-with-disabilities-2023/"
-}

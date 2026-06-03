@@ -1,9 +1,0 @@
-{
-	"id": "8yInmXVGyg14ulO",
-	"json": "{\"id\":\"8yInmXVGyg14ulO\",\"url\":\"https://giveto.ucdavis.edu/users/10075074-trent-sunahara\",\"loadedUrl\":\"https://giveto.ucdavis.edu/users/10075074-trent-sunahara\",\"uniqueKey\":\"https://giveto.ucdavis.edu/users/10075074-trent-sunahara\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:04.818Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://giveto.ucdavis.edu/users/10075074-trent-sunahara",
-	"url": "https://giveto.ucdavis.edu/users/10075074-trent-sunahara"
-}

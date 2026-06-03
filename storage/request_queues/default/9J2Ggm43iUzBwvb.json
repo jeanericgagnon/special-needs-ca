@@ -1,9 +1,0 @@
-{
-	"id": "9J2Ggm43iUzBwvb",
-	"json": "{\"id\":\"9J2Ggm43iUzBwvb\",\"url\":\"https://health.ucdavis.edu/children/patients/lodging/kiwanis-family-house\",\"loadedUrl\":\"https://health.ucdavis.edu/children/patients/lodging/kiwanis-family-house\",\"uniqueKey\":\"https://health.ucdavis.edu/children/patients/lodging/kiwanis-family-house\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:54.469Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/children/patients/lodging/kiwanis-family-house",
-	"url": "https://health.ucdavis.edu/children/patients/lodging/kiwanis-family-house"
-}

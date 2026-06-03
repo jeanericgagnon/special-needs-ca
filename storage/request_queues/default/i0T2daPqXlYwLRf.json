@@ -1,9 +1,0 @@
-{
-	"id": "i0T2daPqXlYwLRf",
-	"json": "{\"id\":\"i0T2daPqXlYwLRf\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDSRB/CDPH%20Document%20Library/CPDR/CPDR_Data_Disclosure_Policies_Procedures-2025.pdf\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDSRB/CDPH%20Document%20Library/CPDR/CPDR_Data_Disclosure_Policies_Procedures-2025.pdf\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDSRB/CDPH%20Document%20Library/CPDR/CPDR_Data_Disclosure_Policies_Procedures-2025.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T19:34:34.466Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDSRB/CDPH%20Document%20Library/CPDR/CPDR_Data_Disclosure_Policies_Procedures-2025.pdf",
-	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDSRB/CDPH%20Document%20Library/CPDR/CPDR_Data_Disclosure_Policies_Procedures-2025.pdf"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "1aG8pdpyaM0S1Z4",
-	"json": "{\"id\":\"1aG8pdpyaM0S1Z4\",\"url\":\"https://www.cde.ca.gov/ta/sr/pa/paemstwalter.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ta/sr/pa/paemstwalter.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ta/sr/pa/paemstwalter.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:39.148Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ta/sr/pa/paemstwalter.asp",
-	"url": "https://www.cde.ca.gov/ta/sr/pa/paemstwalter.asp"
-}

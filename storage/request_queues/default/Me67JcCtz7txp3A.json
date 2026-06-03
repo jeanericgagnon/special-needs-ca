@@ -1,9 +1,0 @@
-{
-	"id": "Me67JcCtz7txp3A",
-	"json": "{\"id\":\"Me67JcCtz7txp3A\",\"url\":\"https://health.ucdavis.edu/patients-visitors/news/headlines/what-you-need-to-know-about-wild-mushroom-poisoning/2025/12\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/news/headlines/what-you-need-to-know-about-wild-mushroom-poisoning/2025/12\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/news/headlines/what-you-need-to-know-about-wild-mushroom-poisoning/2025/12\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:19.114Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/news/headlines/what-you-need-to-know-about-wild-mushroom-poisoning/2025/12",
-	"url": "https://health.ucdavis.edu/patients-visitors/news/headlines/what-you-need-to-know-about-wild-mushroom-poisoning/2025/12"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "t5YpaSe7BpaOouH",
-	"json": "{\"id\":\"t5YpaSe7BpaOouH\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/815/juan-garcia-esophageal_and_anorectal_motility-evaluation_and_placement_of_gastric_neurostimulators-gastroenterology_and_hepatology-gastrointestinal_motility_disorders-internal_medicine?FreeText%3aLast+name=Garcia\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/815/juan-garcia-esophageal_and_anorectal_motility-evaluation_and_placement_of_gastric_neurostimulators-gastroenterology_and_hepatology-gastrointestinal_motility_disorders-internal_medicine?FreeText%3aLast+name=Garcia\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/815/juan-garcia-esophageal_and_anorectal_motility-evaluation_and_placement_of_gastric_neurostimulators-gastroenterology_and_hepatology-gastrointestinal_motility_disorders-internal_medicine?FreeText%3ALast+name=Garcia\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:09.885Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/815/juan-garcia-esophageal_and_anorectal_motility-evaluation_and_placement_of_gastric_neurostimulators-gastroenterology_and_hepatology-gastrointestinal_motility_disorders-internal_medicine?FreeText%3ALast+name=Garcia",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/815/juan-garcia-esophageal_and_anorectal_motility-evaluation_and_placement_of_gastric_neurostimulators-gastroenterology_and_hepatology-gastrointestinal_motility_disorders-internal_medicine?FreeText%3aLast+name=Garcia"
-}

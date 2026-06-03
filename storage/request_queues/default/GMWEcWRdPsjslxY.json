@@ -1,9 +1,0 @@
-{
-	"id": "GMWEcWRdPsjslxY",
-	"json": "{\"id\":\"GMWEcWRdPsjslxY\",\"url\":\"https://www.cde.ca.gov/be/ag/ag/\",\"loadedUrl\":\"https://www.cde.ca.gov/be/ag/ag/\",\"uniqueKey\":\"https://www.cde.ca.gov/be/ag/ag\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:05.575Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/be/ag/ag",
-	"url": "https://www.cde.ca.gov/be/ag/ag/"
-}

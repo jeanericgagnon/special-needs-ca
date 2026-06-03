@@ -1,9 +1,0 @@
-{
-	"id": "AEjKnWYhn1RTaQK",
-	"json": "{\"id\":\"AEjKnWYhn1RTaQK\",\"url\":\"https://www.globaldownsyndrome.org/zh/medical-care-guidelines-for-adults/\",\"loadedUrl\":\"https://www.globaldownsyndrome.org/zh/medical-care-guidelines-for-adults/\",\"uniqueKey\":\"https://www.globaldownsyndrome.org/zh/medical-care-guidelines-for-adults\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:28:46.092Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.globaldownsyndrome.org/zh/medical-care-guidelines-for-adults",
-	"url": "https://www.globaldownsyndrome.org/zh/medical-care-guidelines-for-adults/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "amqOgy7H2fkAJLZ",
-	"json": "{\"id\":\"amqOgy7H2fkAJLZ\",\"url\":\"https://www.dds.ca.gov/wp-content/uploads/2019/05/DS1950.pdf\",\"loadedUrl\":\"https://www.dds.ca.gov/wp-content/uploads/2019/05/DS1950.pdf\",\"uniqueKey\":\"https://www.dds.ca.gov/wp-content/uploads/2019/05/DS1950.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:17:08.983Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/wp-content/uploads/2019/05/DS1950.pdf",
-	"url": "https://www.dds.ca.gov/wp-content/uploads/2019/05/DS1950.pdf"
-}

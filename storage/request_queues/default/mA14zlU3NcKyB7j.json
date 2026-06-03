@@ -1,9 +1,0 @@
-{
-	"id": "mA14zlU3NcKyB7j",
-	"json": "{\"id\":\"mA14zlU3NcKyB7j\",\"url\":\"https://www.cde.ca.gov/re/lr/do/schooldistrictlist.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=5ac1285d-9210-49cd-897b-6258db17c604&ssb=07642251508&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fre%2Flr%2Fdo%2Fschooldistrictlist.asp&ssi=4eed7b98-ctxv-43e0-b9fa-0a2d8553512a&ssk=botmanager_support@radware.com&ssm=95532278082171163165375141479994&ssn=4c3f4c3974a4113e3a910b415f63562e1c38f588b751-2524-4f04-a59afc&sso=64ab5147-ce221bd198f4bad2109c721b64a6030c1a06bd17c96ef6c1&ssp=70766965941780331343178037357040103&ssq=53215582761864638531226339119099417123135&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBmNTg4Yjc1MS0yNTI0LTRmMDQtYTE0Ny1jZTIyMWJkMTk4ZjQxLTE3ODAzMjYzMzk4MzUxMjc4Njg0LTAwM2FjNGM4MzY0MmM5YjlmNTcxNiIsInJkIjoiY2EuZ292IiwidXpteCI6IjdmOTAwMGUwMjQwN2FjLTEwOWYtNGNmMC1iZWI0LTQ2NjI0MWM5YzFmZjEtMTc4MDMyNjMzOTgzNTEyNzg2ODQtYjRhYmY2YWNlMzA4NWVjMTE2In0=\",\"uniqueKey\":\"https://www.cde.ca.gov/re/lr/do/schooldistrictlist.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:26:58.604Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/re/lr/do/schooldistrictlist.asp",
-	"url": "https://www.cde.ca.gov/re/lr/do/schooldistrictlist.asp"
-}

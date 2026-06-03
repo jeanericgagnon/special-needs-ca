@@ -1,9 +1,0 @@
-{
-	"id": "Ww5svslEO05NF01",
-	"json": "{\"id\":\"Ww5svslEO05NF01\",\"url\":\"http://inet2.cde.ca.gov/cmd/translatedparentaldoc.aspx?docid=7935-7940,8243-8255\",\"loadedUrl\":\"https://inet2.cde.ca.gov/cmd/translatedparentaldoc.aspx?docid=7935-7940,8243-8255\",\"uniqueKey\":\"http://inet2.cde.ca.gov/cmd/translatedparentaldoc.aspx?docid=7935-7940%2C8243-8255\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:03.673Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://inet2.cde.ca.gov/cmd/translatedparentaldoc.aspx?docid=7935-7940%2C8243-8255",
-	"url": "http://inet2.cde.ca.gov/cmd/translatedparentaldoc.aspx?docid=7935-7940,8243-8255"
-}

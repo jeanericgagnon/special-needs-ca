@@ -1,9 +1,0 @@
-{
-	"id": "W1nGjkit1ji4icj",
-	"json": "{\"id\":\"W1nGjkit1ji4icj\",\"url\":\"https://health.ucdavis.edu/emergency/clinicalcare/pediatric/\",\"loadedUrl\":\"https://health.ucdavis.edu/emergency/clinicalcare/pediatric/\",\"uniqueKey\":\"https://health.ucdavis.edu/emergency/clinicalcare/pediatric\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:11.948Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/emergency/clinicalcare/pediatric",
-	"url": "https://health.ucdavis.edu/emergency/clinicalcare/pediatric/"
-}

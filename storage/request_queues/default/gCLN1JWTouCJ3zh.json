@@ -1,9 +1,0 @@
-{
-	"id": "gCLN1JWTouCJ3zh",
-	"json": "{\"id\":\"gCLN1JWTouCJ3zh\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/43050/daniel-dan-herman-physical_medicine_and_rehabilitation-sports_medicine-sacramento/?FreeText%3ALast+name=Herman\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/43050/daniel-dan-herman-physical_medicine_and_rehabilitation-sports_medicine-sacramento/?FreeText%3ALast+name=Herman\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/43050/daniel-dan-herman-physical_medicine_and_rehabilitation-sports_medicine-sacramento?FreeText%3ALast+name=Herman\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:15.141Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/43050/daniel-dan-herman-physical_medicine_and_rehabilitation-sports_medicine-sacramento?FreeText%3ALast+name=Herman",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/43050/daniel-dan-herman-physical_medicine_and_rehabilitation-sports_medicine-sacramento/?FreeText%3ALast+name=Herman"
-}

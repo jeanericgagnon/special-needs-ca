@@ -1,9 +1,0 @@
-{
-	"id": "x1wL2RIydf8eZ7o",
-	"json": "{\"id\":\"x1wL2RIydf8eZ7o\",\"url\":\"https://police.ucdavis.edu/crime-safety-data/clery\",\"loadedUrl\":\"https://police.ucdavis.edu/clery\",\"uniqueKey\":\"https://police.ucdavis.edu/crime-safety-data/clery\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:34.479Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://police.ucdavis.edu/crime-safety-data/clery",
-	"url": "https://police.ucdavis.edu/crime-safety-data/clery"
-}

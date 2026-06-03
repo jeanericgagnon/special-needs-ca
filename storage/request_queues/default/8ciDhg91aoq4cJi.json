@@ -1,9 +1,0 @@
-{
-	"id": "8ciDhg91aoq4cJi",
-	"json": "{\"id\":\"8ciDhg91aoq4cJi\",\"url\":\"https://www.cde.ca.gov/ci/gs/em/documents/firstclass.pdf\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/gs/em/documents/firstclass.pdf\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/gs/em/documents/firstclass.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:31.736Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ci/gs/em/documents/firstclass.pdf",
-	"url": "https://www.cde.ca.gov/ci/gs/em/documents/firstclass.pdf"
-}

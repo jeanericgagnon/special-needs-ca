@@ -1,9 +1,0 @@
-{
-	"id": "0K2HyyCk7OsKfEU",
-	"json": "{\"id\":\"0K2HyyCk7OsKfEU\",\"url\":\"http://inet2.cde.ca.gov/cmd/userinfo.aspx\",\"loadedUrl\":\"https://inet2.cde.ca.gov/cmd/userinfo.aspx\",\"uniqueKey\":\"http://inet2.cde.ca.gov/cmd/userinfo.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:28.715Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://inet2.cde.ca.gov/cmd/userinfo.aspx",
-	"url": "http://inet2.cde.ca.gov/cmd/userinfo.aspx"
-}

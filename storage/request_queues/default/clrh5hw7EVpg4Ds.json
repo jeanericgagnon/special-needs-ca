@@ -1,9 +1,0 @@
-{
-	"id": "clrh5hw7EVpg4Ds",
-	"json": "{\"id\":\"clrh5hw7EVpg4Ds\",\"url\":\"https://rarediseases.org/news/?taxonomy[category]=press-releases-advocacy\",\"loadedUrl\":\"https://rarediseases.org/news/?taxonomy[category]=press-releases-advocacy\",\"uniqueKey\":\"https://rarediseases.org/news?taxonomy%5Bcategory%5D=press-releases-advocacy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:29.066Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/news?taxonomy%5Bcategory%5D=press-releases-advocacy",
-	"url": "https://rarediseases.org/news/?taxonomy[category]=press-releases-advocacy"
-}

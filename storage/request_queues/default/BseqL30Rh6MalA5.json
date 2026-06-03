@@ -1,9 +1,0 @@
-{
-	"id": "BseqL30Rh6MalA5",
-	"json": "{\"id\":\"BseqL30Rh6MalA5\",\"url\":\"https://health.ucdavis.edu/treatments/cardiothoracic-surgery\",\"loadedUrl\":\"https://health.ucdavis.edu/treatments/cardiothoracic-surgery\",\"uniqueKey\":\"https://health.ucdavis.edu/treatments/cardiothoracic-surgery\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:56.350Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/treatments/cardiothoracic-surgery",
-	"url": "https://health.ucdavis.edu/treatments/cardiothoracic-surgery"
-}

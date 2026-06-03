@@ -1,9 +1,0 @@
-{
-	"id": "mIh1hM0c1AdsndI",
-	"json": "{\"id\":\"mIh1hM0c1AdsndI\",\"url\":\"https://health.ucdavis.edu/eyecenter/research/index.html\",\"loadedUrl\":\"https://health.ucdavis.edu/eyecenter/research/index.html\",\"uniqueKey\":\"https://health.ucdavis.edu/eyecenter/research/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:54.575Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/eyecenter/research/index.html",
-	"url": "https://health.ucdavis.edu/eyecenter/research/index.html"
-}

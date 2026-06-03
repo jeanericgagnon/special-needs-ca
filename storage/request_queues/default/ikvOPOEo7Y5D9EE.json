@@ -1,9 +1,0 @@
-{
-	"id": "ikvOPOEo7Y5D9EE",
-	"json": "{\"id\":\"ikvOPOEo7Y5D9EE\",\"url\":\"https://give.ucdavis.edu/MUGF/TCGGIFT\",\"loadedUrl\":\"https://give.ucdavis.edu/MUGF/TCGGIFT\",\"uniqueKey\":\"https://give.ucdavis.edu/MUGF/TCGGIFT\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:01.276Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/MUGF/TCGGIFT",
-	"url": "https://give.ucdavis.edu/MUGF/TCGGIFT"
-}

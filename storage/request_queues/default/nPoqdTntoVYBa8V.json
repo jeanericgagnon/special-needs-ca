@@ -1,9 +1,0 @@
-{
-	"id": "nPoqdTntoVYBa8V",
-	"json": "{\"id\":\"nPoqdTntoVYBa8V\",\"url\":\"https://registrar.ucdavis.edu/registration/leave/refunds\",\"loadedUrl\":\"https://registrar.ucdavis.edu/registration/leave/refunds\",\"uniqueKey\":\"https://registrar.ucdavis.edu/registration/leave/refunds\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:50.708Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://registrar.ucdavis.edu/registration/leave/refunds",
-	"url": "https://registrar.ucdavis.edu/registration/leave/refunds"
-}

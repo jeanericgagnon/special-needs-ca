@@ -1,9 +1,0 @@
-{
-	"id": "713EX2Wl1AC6red",
-	"json": "{\"id\":\"713EX2Wl1AC6red\",\"url\":\"https://www.ctc.ca.gov/employers/assignment-resources/settings/\",\"loadedUrl\":\"https://www.ctc.ca.gov/employers/assignment-resources/settings/\",\"uniqueKey\":\"https://www.ctc.ca.gov/employers/assignment-resources/settings\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:57.832Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ctc.ca.gov/employers/assignment-resources/settings",
-	"url": "https://www.ctc.ca.gov/employers/assignment-resources/settings/"
-}

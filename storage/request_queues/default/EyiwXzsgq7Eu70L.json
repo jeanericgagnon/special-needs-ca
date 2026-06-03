@@ -1,9 +1,0 @@
-{
-	"id": "EyiwXzsgq7Eu70L",
-	"json": "{\"id\":\"EyiwXzsgq7Eu70L\",\"url\":\"http://www.csd.ca.gov/\",\"loadedUrl\":\"https://www.csd.ca.gov/\",\"uniqueKey\":\"http://www.csd.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:10.785Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.csd.ca.gov",
-	"url": "http://www.csd.ca.gov/"
-}

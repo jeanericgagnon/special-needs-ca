@@ -1,9 +1,0 @@
-{
-	"id": "5YMJ0CREc5pBwXi",
-	"json": "{\"id\":\"5YMJ0CREc5pBwXi\",\"url\":\"https://cdss.ca.gov/inforesources/Information-Resources/Family-Engagement-and-Empowerment-Reports\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/information-resources/family-engagement-and-empowerment-reports\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Information-Resources/Family-Engagement-and-Empowerment-Reports\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:48.540Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/Information-Resources/Family-Engagement-and-Empowerment-Reports",
-	"url": "https://cdss.ca.gov/inforesources/Information-Resources/Family-Engagement-and-Empowerment-Reports"
-}

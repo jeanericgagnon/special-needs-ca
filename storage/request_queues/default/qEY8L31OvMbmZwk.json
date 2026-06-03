@@ -1,9 +1,0 @@
-{
-	"id": "qEY8L31OvMbmZwk",
-	"json": "{\"id\":\"qEY8L31OvMbmZwk\",\"url\":\"https://www.csdr-cde.ca.gov/lr/\",\"loadedUrl\":\"https://www.csdr-cde.ca.gov/lr/\",\"uniqueKey\":\"https://www.csdr-cde.ca.gov/lr\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:10.589Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.csdr-cde.ca.gov/lr",
-	"url": "https://www.csdr-cde.ca.gov/lr/"
-}

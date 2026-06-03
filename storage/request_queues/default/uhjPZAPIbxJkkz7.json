@@ -1,9 +1,0 @@
-{
-	"id": "uhjPZAPIbxJkkz7",
-	"json": "{\"id\":\"uhjPZAPIbxJkkz7\",\"url\":\"https://biology.ucdavis.edu/graduate/academic/designated-emphases\",\"loadedUrl\":\"https://biology.ucdavis.edu/graduate/academic/designated-emphases\",\"uniqueKey\":\"https://biology.ucdavis.edu/graduate/academic/designated-emphases\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:21.418Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://biology.ucdavis.edu/graduate/academic/designated-emphases",
-	"url": "https://biology.ucdavis.edu/graduate/academic/designated-emphases"
-}

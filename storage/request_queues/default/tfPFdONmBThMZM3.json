@@ -1,9 +1,0 @@
-{
-	"id": "tfPFdONmBThMZM3",
-	"json": "{\"id\":\"tfPFdONmBThMZM3\",\"url\":\"https://safetyservices.ucdavis.edu/units/ehs/industrial-hygiene/wildfire-smoke\",\"loadedUrl\":\"https://safetyservices.ucdavis.edu/units/ehs/industrial-hygiene/wildfire-smoke\",\"uniqueKey\":\"https://safetyservices.ucdavis.edu/units/ehs/industrial-hygiene/wildfire-smoke\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:32.973Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://safetyservices.ucdavis.edu/units/ehs/industrial-hygiene/wildfire-smoke",
-	"url": "https://safetyservices.ucdavis.edu/units/ehs/industrial-hygiene/wildfire-smoke"
-}

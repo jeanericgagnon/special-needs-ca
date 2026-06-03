@@ -1,9 +1,0 @@
-{
-	"id": "3K9i4uiR3buohiC",
-	"json": "{\"id\":\"3K9i4uiR3buohiC\",\"url\":\"https://www.cde.ca.gov/LS/nu/sunbucks.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/LS/nu/sunbucks.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/LS/nu/sunbucks.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:21.202Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/LS/nu/sunbucks.asp",
-	"url": "https://www.cde.ca.gov/LS/nu/sunbucks.asp"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "S8VbqmWNpb9xQLc",
-	"json": "{\"id\":\"S8VbqmWNpb9xQLc\",\"url\":\"https://give.ucdavis.edu/ABAE/BAERGFT\",\"loadedUrl\":\"https://give.ucdavis.edu/ABAE/BAERGFT\",\"uniqueKey\":\"https://give.ucdavis.edu/ABAE/BAERGFT\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:57.921Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/ABAE/BAERGFT",
-	"url": "https://give.ucdavis.edu/ABAE/BAERGFT"
-}

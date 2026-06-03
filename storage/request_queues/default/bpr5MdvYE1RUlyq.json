@@ -1,9 +1,0 @@
-{
-	"id": "bpr5MdvYE1RUlyq",
-	"json": "{\"id\":\"bpr5MdvYE1RUlyq\",\"url\":\"https://www2.cde.ca.gov/cacs/arts\",\"loadedUrl\":\"https://www2.cde.ca.gov/cacs/arts\",\"uniqueKey\":\"https://www2.cde.ca.gov/cacs/arts\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:23:58.279Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www2.cde.ca.gov/cacs/arts",
-	"url": "https://www2.cde.ca.gov/cacs/arts"
-}

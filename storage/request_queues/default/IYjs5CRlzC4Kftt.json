@@ -1,9 +1,0 @@
-{
-	"id": "IYjs5CRlzC4Kftt",
-	"json": "{\"id\":\"IYjs5CRlzC4Kftt\",\"url\":\"https://biology.ucdavis.edu/about/leadership/fec\",\"loadedUrl\":\"https://biology.ucdavis.edu/about/leadership/fec\",\"uniqueKey\":\"https://biology.ucdavis.edu/about/leadership/fec\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:55:54.141Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://biology.ucdavis.edu/about/leadership/fec",
-	"url": "https://biology.ucdavis.edu/about/leadership/fec"
-}

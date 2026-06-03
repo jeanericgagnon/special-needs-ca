@@ -1,9 +1,0 @@
-{
-	"id": "5eQq7JRri9LRhZN",
-	"json": "{\"id\":\"5eQq7JRri9LRhZN\",\"url\":\"https://www.cde.ca.gov/be/cc/rd/basisforappapproval.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/be/cc/rd/basisforappapproval.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/be/cc/rd/basisforappapproval.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:05.258Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/be/cc/rd/basisforappapproval.asp",
-	"url": "https://www.cde.ca.gov/be/cc/rd/basisforappapproval.asp"
-}

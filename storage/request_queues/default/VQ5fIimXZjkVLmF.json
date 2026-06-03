@@ -1,9 +1,0 @@
-{
-	"id": "VQ5fIimXZjkVLmF",
-	"json": "{\"id\":\"VQ5fIimXZjkVLmF\",\"url\":\"https://ldaca.org\",\"loadedUrl\":\"https://ldaca.org/\",\"uniqueKey\":\"https://ldaca.org\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-06-01T14:55:34.924Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ldaca.org",
-	"url": "https://ldaca.org"
-}

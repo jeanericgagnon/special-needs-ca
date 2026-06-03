@@ -1,9 +1,0 @@
-{
-	"id": "MEY8hgsWE9JhyZk",
-	"json": "{\"id\":\"MEY8hgsWE9JhyZk\",\"url\":\"https://cdss.ca.gov/inforesources/Adoptions/Adoption-Service-Providers\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/adoptions/adoption-service-providers\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Adoptions/Adoption-Service-Providers\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:52.141Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/Adoptions/Adoption-Service-Providers",
-	"url": "https://cdss.ca.gov/inforesources/Adoptions/Adoption-Service-Providers"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "rT9ZtbP2uj5yiLt",
-	"json": "{\"id\":\"rT9ZtbP2uj5yiLt\",\"url\":\"https://www.cdii.ca.gov/committees-and-advisory-groups/committee-for-the-protection-of-human-subjects-cphs/resources-and-downloads/laws-and-regulations/\",\"loadedUrl\":\"https://www.cdii.ca.gov/committees-and-advisory-groups/committee-for-the-protection-of-human-subjects-cphs/resources-and-downloads/laws-and-regulations/\",\"uniqueKey\":\"https://www.cdii.ca.gov/committees-and-advisory-groups/committee-for-the-protection-of-human-subjects-cphs/resources-and-downloads/laws-and-regulations\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:28:34.679Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdii.ca.gov/committees-and-advisory-groups/committee-for-the-protection-of-human-subjects-cphs/resources-and-downloads/laws-and-regulations",
-	"url": "https://www.cdii.ca.gov/committees-and-advisory-groups/committee-for-the-protection-of-human-subjects-cphs/resources-and-downloads/laws-and-regulations/"
-}

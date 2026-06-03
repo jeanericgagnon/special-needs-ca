@@ -1,9 +1,0 @@
-{
-	"id": "E6fPi4IR5CVDW6a",
-	"json": "{\"id\":\"E6fPi4IR5CVDW6a\",\"url\":\"https://www.cde.ca.gov/qs/ar/\",\"loadedUrl\":\"https://www.cde.ca.gov/qs/ar/\",\"uniqueKey\":\"https://www.cde.ca.gov/qs/ar\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:04.092Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/qs/ar",
-	"url": "https://www.cde.ca.gov/qs/ar/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "3BqVWOZ2Nn5CFiw",
-	"json": "{\"id\":\"3BqVWOZ2Nn5CFiw\",\"url\":\"https://www.cde.ca.gov/sp/cd/ci/documents/eed2425.docx\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/cd/ci/documents/eed2425.docx\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/cd/ci/documents/eed2425.docx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:25:11.802Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/sp/cd/ci/documents/eed2425.docx",
-	"url": "https://www.cde.ca.gov/sp/cd/ci/documents/eed2425.docx"
-}

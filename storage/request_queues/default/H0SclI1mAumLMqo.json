@@ -1,9 +1,0 @@
-{
-	"id": "H0SclI1mAumLMqo",
-	"json": "{\"id\":\"H0SclI1mAumLMqo\",\"url\":\"https://health.ucdavis.edu/neurology/subspecialties/headache_migraine.html\",\"loadedUrl\":\"https://health.ucdavis.edu/neurology/services-specialties/headaches/\",\"uniqueKey\":\"https://health.ucdavis.edu/neurology/subspecialties/headache_migraine.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:50.871Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/neurology/subspecialties/headache_migraine.html",
-	"url": "https://health.ucdavis.edu/neurology/subspecialties/headache_migraine.html"
-}

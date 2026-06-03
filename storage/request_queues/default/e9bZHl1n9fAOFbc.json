@@ -1,9 +1,0 @@
-{
-	"id": "e9bZHl1n9fAOFbc",
-	"json": "{\"id\":\"e9bZHl1n9fAOFbc\",\"url\":\"http://apps.cdpr.ca.gov/schoolipm/training/main.cfm\",\"loadedUrl\":\"https://www.cdpr.ca.gov/spm-ipm-overview/\",\"uniqueKey\":\"http://apps.cdpr.ca.gov/schoolipm/training/main.cfm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:42:50.385Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://apps.cdpr.ca.gov/schoolipm/training/main.cfm",
-	"url": "http://apps.cdpr.ca.gov/schoolipm/training/main.cfm"
-}

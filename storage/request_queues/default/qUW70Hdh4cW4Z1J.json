@@ -1,9 +1,0 @@
-{
-	"id": "qUW70Hdh4cW4Z1J",
-	"json": "{\"id\":\"qUW70Hdh4cW4Z1J\",\"url\":\"https://data.ca.gov/dataset\",\"loadedUrl\":\"https://data.ca.gov/dataset\",\"uniqueKey\":\"https://data.ca.gov/dataset\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:13.248Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://data.ca.gov/dataset",
-	"url": "https://data.ca.gov/dataset"
-}

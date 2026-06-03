@@ -1,9 +1,0 @@
-{
-	"id": "OLlxYDx9v6KKf03",
-	"json": "{\"id\":\"OLlxYDx9v6KKf03\",\"url\":\"http://inet2.cde.ca.gov/cmd/login.aspx\",\"loadedUrl\":\"https://inet2.cde.ca.gov/cmd/login.aspx\",\"uniqueKey\":\"http://inet2.cde.ca.gov/cmd/login.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:28.570Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://inet2.cde.ca.gov/cmd/login.aspx",
-	"url": "http://inet2.cde.ca.gov/cmd/login.aspx"
-}

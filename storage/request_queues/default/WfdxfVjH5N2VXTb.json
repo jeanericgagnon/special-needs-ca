@@ -1,9 +1,0 @@
-{
-	"id": "WfdxfVjH5N2VXTb",
-	"json": "{\"id\":\"WfdxfVjH5N2VXTb\",\"url\":\"https://www.dds.ca.gov/general/conditions-of-use/\",\"loadedUrl\":\"https://www.dds.ca.gov/general/conditions-of-use/\",\"uniqueKey\":\"https://www.dds.ca.gov/general/conditions-of-use\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:57.345Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dds.ca.gov/general/conditions-of-use",
-	"url": "https://www.dds.ca.gov/general/conditions-of-use/"
-}

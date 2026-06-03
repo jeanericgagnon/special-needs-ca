@@ -1,9 +1,0 @@
-{
-	"id": "h2jZVBpRSThBLth",
-	"json": "{\"id\":\"h2jZVBpRSThBLth\",\"url\":\"https://cdss.ca.gov/inforesources/community-care/administrator-certification/certification-forms\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/community-care/administrator-certification/certification-forms\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/community-care/administrator-certification/certification-forms\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:33.598Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/community-care/administrator-certification/certification-forms",
-	"url": "https://cdss.ca.gov/inforesources/community-care/administrator-certification/certification-forms"
-}

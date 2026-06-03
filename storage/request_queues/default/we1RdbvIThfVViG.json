@@ -1,9 +1,0 @@
-{
-	"id": "we1RdbvIThfVViG",
-	"json": "{\"id\":\"we1RdbvIThfVViG\",\"url\":\"http://www.ucdmc.ucdavis.edu/publish/providerbio/pediatrics/122\",\"loadedUrl\":\"https://health.ucdavis.edu/pediatrics/team/122/patrick-romano---internal-medicine---pediatrics-general---health-policy-sacramento/\",\"uniqueKey\":\"http://www.ucdmc.ucdavis.edu/publish/providerbio/pediatrics/122\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:27.495Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.ucdmc.ucdavis.edu/publish/providerbio/pediatrics/122",
-	"url": "http://www.ucdmc.ucdavis.edu/publish/providerbio/pediatrics/122"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "o6WBkD5J2LRDOhQ",
-	"json": "{\"id\":\"o6WBkD5J2LRDOhQ\",\"url\":\"https://health.ucdavis.edu/cancer/about/welcome-message\",\"loadedUrl\":\"https://health.ucdavis.edu/cancer/about/welcome-message\",\"uniqueKey\":\"https://health.ucdavis.edu/cancer/about/welcome-message\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:16.725Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/cancer/about/welcome-message",
-	"url": "https://health.ucdavis.edu/cancer/about/welcome-message"
-}

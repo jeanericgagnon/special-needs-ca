@@ -1,9 +1,0 @@
-{
-	"id": "T58qMSWRH0Wgl18",
-	"json": "{\"id\":\"T58qMSWRH0Wgl18\",\"url\":\"http://guyerlab.faculty.ucdavis.edu/\",\"loadedUrl\":\"https://guyerlab.faculty.ucdavis.edu/\",\"uniqueKey\":\"http://guyerlab.faculty.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:08.731Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://guyerlab.faculty.ucdavis.edu",
-	"url": "http://guyerlab.faculty.ucdavis.edu/"
-}

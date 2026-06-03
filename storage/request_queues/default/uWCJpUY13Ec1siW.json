@@ -1,9 +1,0 @@
-{
-	"id": "uWCJpUY13Ec1siW",
-	"json": "{\"id\":\"uWCJpUY13Ec1siW\",\"url\":\"https://health.ucdavis.edu/psychiatry/news/topic/mind-institute\",\"loadedUrl\":\"https://health.ucdavis.edu/psychiatry/news/topic/mind-institute\",\"uniqueKey\":\"https://health.ucdavis.edu/psychiatry/news/topic/mind-institute\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:23:07.460Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/psychiatry/news/topic/mind-institute",
-	"url": "https://health.ucdavis.edu/psychiatry/news/topic/mind-institute"
-}

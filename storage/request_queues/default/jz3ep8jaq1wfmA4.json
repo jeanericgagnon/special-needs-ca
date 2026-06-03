@@ -1,9 +1,0 @@
-{
-	"id": "jz3ep8jaq1wfmA4",
-	"json": "{\"id\":\"jz3ep8jaq1wfmA4\",\"url\":\"https://grad.ucdavis.edu/faculty-staff/training-grant-support/training-grant-programs\",\"loadedUrl\":\"https://grad.ucdavis.edu/training-grant-support-services\",\"uniqueKey\":\"https://grad.ucdavis.edu/faculty-staff/training-grant-support/training-grant-programs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:56.937Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://grad.ucdavis.edu/faculty-staff/training-grant-support/training-grant-programs",
-	"url": "https://grad.ucdavis.edu/faculty-staff/training-grant-support/training-grant-programs"
-}

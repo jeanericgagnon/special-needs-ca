@@ -1,9 +1,0 @@
-{
-	"id": "2E82dHYwQUQQMO4",
-	"json": "{\"id\":\"2E82dHYwQUQQMO4\",\"url\":\"https://health.ucdavis.edu/cancer/about/find-a-job\",\"loadedUrl\":\"https://health.ucdavis.edu/cancer/about/find-a-job\",\"uniqueKey\":\"https://health.ucdavis.edu/cancer/about/find-a-job\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:17.228Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/cancer/about/find-a-job",
-	"url": "https://health.ucdavis.edu/cancer/about/find-a-job"
-}

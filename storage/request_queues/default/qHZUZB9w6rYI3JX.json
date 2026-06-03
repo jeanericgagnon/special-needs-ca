@@ -1,9 +1,0 @@
-{
-	"id": "qHZUZB9w6rYI3JX",
-	"json": "{\"id\":\"qHZUZB9w6rYI3JX\",\"url\":\"https://www.gov.ca.gov/2026/05/23/governor-newsom-proclaims-state-of-emergency-in-orange-county-in-response-to-ongoing-chemical-incident-in-garden-grove-makes-additional-shelter-sites-available/\",\"loadedUrl\":\"https://www.gov.ca.gov/2026/05/23/governor-newsom-proclaims-state-of-emergency-in-orange-county-in-response-to-ongoing-chemical-incident-in-garden-grove-makes-additional-shelter-sites-available/\",\"uniqueKey\":\"https://www.gov.ca.gov/2026/05/23/governor-newsom-proclaims-state-of-emergency-in-orange-county-in-response-to-ongoing-chemical-incident-in-garden-grove-makes-additional-shelter-sites-available\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:18.746Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.gov.ca.gov/2026/05/23/governor-newsom-proclaims-state-of-emergency-in-orange-county-in-response-to-ongoing-chemical-incident-in-garden-grove-makes-additional-shelter-sites-available",
-	"url": "https://www.gov.ca.gov/2026/05/23/governor-newsom-proclaims-state-of-emergency-in-orange-county-in-response-to-ongoing-chemical-incident-in-garden-grove-makes-additional-shelter-sites-available/"
-}

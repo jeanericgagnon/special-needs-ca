@@ -1,9 +1,0 @@
-{
-	"id": "MlWTahety4jdRVg",
-	"json": "{\"id\":\"MlWTahety4jdRVg\",\"url\":\"https://oycr.ca.gov/\",\"loadedUrl\":\"https://oycr.ca.gov/\",\"uniqueKey\":\"https://oycr.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:34.770Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://oycr.ca.gov",
-	"url": "https://oycr.ca.gov/"
-}

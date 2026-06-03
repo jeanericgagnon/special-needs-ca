@@ -1,9 +1,0 @@
-{
-	"id": "4qlcjTwUxcPdsdP",
-	"json": "{\"id\":\"4qlcjTwUxcPdsdP\",\"url\":\"https://www.cde.ca.gov/re/di/or/icpguidance.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/re/di/or/icpguidance.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/re/di/or/icpguidance.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:09:07.230Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/re/di/or/icpguidance.asp",
-	"url": "https://www.cde.ca.gov/re/di/or/icpguidance.asp"
-}

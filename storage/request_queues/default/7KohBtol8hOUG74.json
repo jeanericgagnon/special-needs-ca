@@ -1,9 +1,0 @@
-{
-	"id": "7KohBtol8hOUG74",
-	"json": "{\"id\":\"7KohBtol8hOUG74\",\"url\":\"https://alumni.ucdavis.edu/cdn-cgi/l/email-protection#b8d9d4cdd5d6d1f8cddbdcd9ced1cb96dddccd\",\"loadedUrl\":\"https://alumni.ucdavis.edu/cdn-cgi/l/email-protection#b8d9d4cdd5d6d1f8cddbdcd9ced1cb96dddccd\",\"uniqueKey\":\"https://alumni.ucdavis.edu/cdn-cgi/l/email-protection\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:06.645Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://alumni.ucdavis.edu/cdn-cgi/l/email-protection",
-	"url": "https://alumni.ucdavis.edu/cdn-cgi/l/email-protection#b8d9d4cdd5d6d1f8cddbdcd9ced1cb96dddccd"
-}

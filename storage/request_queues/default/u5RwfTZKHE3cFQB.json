@@ -1,9 +1,0 @@
-{
-	"id": "u5RwfTZKHE3cFQB",
-	"json": "{\"id\":\"u5RwfTZKHE3cFQB\",\"url\":\"https://www.ca.gov/immigration/\",\"loadedUrl\":\"https://www.ca.gov/immigration/\",\"uniqueKey\":\"https://www.ca.gov/immigration\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:24.100Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ca.gov/immigration",
-	"url": "https://www.ca.gov/immigration/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "d4zAPYc4RilDZkG",
-	"json": "{\"id\":\"d4zAPYc4RilDZkG\",\"url\":\"https://calable.ca.gov/es/recursos\",\"loadedUrl\":\"https://calable.ca.gov/es/recursos\",\"uniqueKey\":\"https://calable.ca.gov/es/recursos\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:38.359Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://calable.ca.gov/es/recursos",
-	"url": "https://calable.ca.gov/es/recursos"
-}

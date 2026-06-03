@@ -1,9 +1,0 @@
-{
-	"id": "QDZUCbqVxZdNm1n",
-	"json": "{\"id\":\"QDZUCbqVxZdNm1n\",\"url\":\"https://hcai.ca.gov/data/data-and-reports/\",\"loadedUrl\":\"https://hcai.ca.gov/data/data-and-reports/\",\"uniqueKey\":\"https://hcai.ca.gov/data/data-and-reports\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:43:11.895Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hcai.ca.gov/data/data-and-reports",
-	"url": "https://hcai.ca.gov/data/data-and-reports/"
-}

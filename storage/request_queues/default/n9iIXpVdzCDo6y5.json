@@ -1,9 +1,0 @@
-{
-	"id": "n9iIXpVdzCDo6y5",
-	"json": "{\"id\":\"n9iIXpVdzCDo6y5\",\"url\":\"https://wanglab.engineering.ucdavis.edu/people/aijun-wang\",\"loadedUrl\":\"https://wanglab.engineering.ucdavis.edu/people/aijun-wang\",\"uniqueKey\":\"https://wanglab.engineering.ucdavis.edu/people/aijun-wang\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:47:20.198Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://wanglab.engineering.ucdavis.edu/people/aijun-wang",
-	"url": "https://wanglab.engineering.ucdavis.edu/people/aijun-wang"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "mgozkbR7Etz02by",
-	"json": "{\"id\":\"mgozkbR7Etz02by\",\"url\":\"https://www.cdph.ca.gov/Programs/CCLHO/Pages/HealthInformationAndData.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCLHO/Pages/HealthInformationAndData.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCLHO/Pages/HealthInformationAndData.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:00:20.262Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCLHO/Pages/HealthInformationAndData.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CCLHO/Pages/HealthInformationAndData.aspx"
-}

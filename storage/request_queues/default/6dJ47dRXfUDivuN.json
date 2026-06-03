@@ -1,9 +1,0 @@
-{
-	"id": "6dJ47dRXfUDivuN",
-	"json": "{\"id\":\"6dJ47dRXfUDivuN\",\"url\":\"http://campusmap.ucdavis.edu/?b=220\",\"loadedUrl\":\"https://campusmap.ucdavis.edu/?b=220\",\"uniqueKey\":\"http://campusmap.ucdavis.edu?b=220\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:46.971Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://campusmap.ucdavis.edu?b=220",
-	"url": "http://campusmap.ucdavis.edu/?b=220"
-}

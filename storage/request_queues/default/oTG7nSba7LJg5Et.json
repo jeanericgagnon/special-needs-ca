@@ -1,9 +1,0 @@
-{
-	"id": "oTG7nSba7LJg5Et",
-	"json": "{\"id\":\"oTG7nSba7LJg5Et\",\"url\":\"https://hr.ucdavis.edu/careers/apply?format=json&keywords=&Category%5Bcategory_id%5D=&MCampus%5B%5D=DVMC\",\"loadedUrl\":\"https://hr.ucdavis.edu/careers/apply?Category%5Bcategory_id%5D=&MCampus%5B0%5D=DVMC&format=json&keywords=\",\"uniqueKey\":\"https://hr.ucdavis.edu/careers/apply?Category%5Bcategory_id%5D=&MCampus%5B%5D=DVMC&format=json&keywords=\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:52.329Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/careers/apply?Category%5Bcategory_id%5D=&MCampus%5B%5D=DVMC&format=json&keywords=",
-	"url": "https://hr.ucdavis.edu/careers/apply?format=json&keywords=&Category%5Bcategory_id%5D=&MCampus%5B%5D=DVMC"
-}

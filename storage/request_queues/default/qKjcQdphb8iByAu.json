@@ -1,9 +1,0 @@
-{
-	"id": "qKjcQdphb8iByAu",
-	"json": "{\"id\":\"qKjcQdphb8iByAu\",\"url\":\"https://biology.ucdavis.edu/about/dei/about/committee\",\"loadedUrl\":\"https://biology.ucdavis.edu/about/principles-community/collective\",\"uniqueKey\":\"https://biology.ucdavis.edu/about/dei/about/committee\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:05.750Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://biology.ucdavis.edu/about/dei/about/committee",
-	"url": "https://biology.ucdavis.edu/about/dei/about/committee"
-}

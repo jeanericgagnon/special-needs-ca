@@ -1,9 +1,0 @@
-{
-	"id": "uDGYrEVpBZAVx34",
-	"json": "{\"id\":\"uDGYrEVpBZAVx34\",\"url\":\"https://www.cdss.ca.gov/careers-with-cdss/examination-information\",\"loadedUrl\":\"https://www.cdss.ca.gov/careers-with-cdss/exam-inquiries\",\"uniqueKey\":\"https://www.cdss.ca.gov/careers-with-cdss/examination-information\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:56.225Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/careers-with-cdss/examination-information",
-	"url": "https://www.cdss.ca.gov/careers-with-cdss/examination-information"
-}

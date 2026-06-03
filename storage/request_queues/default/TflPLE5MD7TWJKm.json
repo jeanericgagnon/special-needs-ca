@@ -1,9 +1,0 @@
-{
-	"id": "TflPLE5MD7TWJKm",
-	"json": "{\"id\":\"TflPLE5MD7TWJKm\",\"url\":\"https://www.cdss.ca.gov/inforesources/data-portal/research-and-data/ccr-data-dashboard\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/data-portal/research-and-data/ccr-data-dashboard\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/data-portal/research-and-data/ccr-data-dashboard\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:47.227Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/inforesources/data-portal/research-and-data/ccr-data-dashboard",
-	"url": "https://www.cdss.ca.gov/inforesources/data-portal/research-and-data/ccr-data-dashboard"
-}

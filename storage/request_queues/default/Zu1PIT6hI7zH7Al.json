@@ -1,9 +1,0 @@
-{
-	"id": "Zu1PIT6hI7zH7Al",
-	"json": "{\"id\":\"Zu1PIT6hI7zH7Al\",\"url\":\"https://health.ucdavis.edu/mind-institute/videos/video-dls\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/videos/video-dls\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/videos/video-dls\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:05:28.276Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mind-institute/videos/video-dls",
-	"url": "https://health.ucdavis.edu/mind-institute/videos/video-dls"
-}

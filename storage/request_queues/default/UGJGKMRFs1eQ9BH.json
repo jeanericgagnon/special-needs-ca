@@ -1,9 +1,0 @@
-{
-	"id": "UGJGKMRFs1eQ9BH",
-	"json": "{\"id\":\"UGJGKMRFs1eQ9BH\",\"url\":\"https://oag.ca.gov/privacy/facts/online-privacy/privacy-policy\",\"loadedUrl\":\"https://oag.ca.gov/privacy/facts/online-privacy/privacy-policy\",\"uniqueKey\":\"https://oag.ca.gov/privacy/facts/online-privacy/privacy-policy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:49.994Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://oag.ca.gov/privacy/facts/online-privacy/privacy-policy",
-	"url": "https://oag.ca.gov/privacy/facts/online-privacy/privacy-policy"
-}

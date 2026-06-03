@@ -1,9 +1,0 @@
-{
-	"id": "PO2s4tHSrC7DFTT",
-	"json": "{\"id\":\"PO2s4tHSrC7DFTT\",\"url\":\"https://cdss.ca.gov/inforesources/EFAP/Fact-Sheets\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/efap/fact-sheets\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/EFAP/Fact-Sheets\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:00.917Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/EFAP/Fact-Sheets",
-	"url": "https://cdss.ca.gov/inforesources/EFAP/Fact-Sheets"
-}

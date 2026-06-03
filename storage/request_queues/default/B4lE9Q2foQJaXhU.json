@@ -1,9 +1,0 @@
-{
-	"id": "B4lE9Q2foQJaXhU",
-	"json": "{\"id\":\"B4lE9Q2foQJaXhU\",\"url\":\"https://www.cde.ca.gov/sp/ml/multilingualtoolkit.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/sp/ml/multilingualtoolkit.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/ml/multilingualtoolkit.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:03.097Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/sp/ml/multilingualtoolkit.asp",
-	"url": "https://www.cde.ca.gov/sp/ml/multilingualtoolkit.asp"
-}

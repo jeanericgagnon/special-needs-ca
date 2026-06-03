@@ -1,9 +1,0 @@
-{
-	"id": "xarpVIw0rI1tczB",
-	"json": "{\"id\":\"xarpVIw0rI1tczB\",\"url\":\"https://health.ucdavis.edu/mind-institute/our-team/mindinstitute-faculty\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/our-team/mindinstitute-faculty\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/our-team/mindinstitute-faculty\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:26.356Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mind-institute/our-team/mindinstitute-faculty",
-	"url": "https://health.ucdavis.edu/mind-institute/our-team/mindinstitute-faculty"
-}

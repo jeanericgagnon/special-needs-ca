@@ -1,9 +1,0 @@
-{
-	"id": "7WkqibMjQuccE8X",
-	"json": "{\"id\":\"7WkqibMjQuccE8X\",\"url\":\"https://health.ucdavis.edu/food-nutrition/farm-to-fork\",\"loadedUrl\":\"https://health.ucdavis.edu/food-nutrition/farm-to-fork\",\"uniqueKey\":\"https://health.ucdavis.edu/food-nutrition/farm-to-fork\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:55.187Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/food-nutrition/farm-to-fork",
-	"url": "https://health.ucdavis.edu/food-nutrition/farm-to-fork"
-}

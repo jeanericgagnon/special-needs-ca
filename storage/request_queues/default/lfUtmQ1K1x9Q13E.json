@@ -1,9 +1,0 @@
-{
-	"id": "lfUtmQ1K1x9Q13E",
-	"json": "{\"id\":\"lfUtmQ1K1x9Q13E\",\"url\":\"https://health.ucdavis.edu/nursing/academics/programs/phd.html\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/academics/programs/phd.html\",\"uniqueKey\":\"https://health.ucdavis.edu/nursing/academics/programs/phd.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:56.533Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/nursing/academics/programs/phd.html",
-	"url": "https://health.ucdavis.edu/nursing/academics/programs/phd.html"
-}

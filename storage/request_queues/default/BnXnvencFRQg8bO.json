@@ -1,9 +1,0 @@
-{
-	"id": "BnXnvencFRQg8bO",
-	"json": "{\"id\":\"BnXnvencFRQg8bO\",\"url\":\"https://www.ctc.ca.gov/aspiring-educators/apply/\",\"loadedUrl\":\"https://www.ctc.ca.gov/aspiring-educators/apply/\",\"uniqueKey\":\"https://www.ctc.ca.gov/aspiring-educators/apply\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:22.300Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ctc.ca.gov/aspiring-educators/apply",
-	"url": "https://www.ctc.ca.gov/aspiring-educators/apply/"
-}

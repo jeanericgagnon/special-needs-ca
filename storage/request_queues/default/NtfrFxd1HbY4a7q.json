@@ -1,9 +1,0 @@
-{
-	"id": "NtfrFxd1HbY4a7q",
-	"json": "{\"id\":\"NtfrFxd1HbY4a7q\",\"url\":\"https://health.ucdavis.edu/international-affiliations/partnerships/index.html\",\"loadedUrl\":\"https://health.ucdavis.edu/international-affiliations/partnerships/index.html\",\"uniqueKey\":\"https://health.ucdavis.edu/international-affiliations/partnerships/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:11.041Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/international-affiliations/partnerships/index.html",
-	"url": "https://health.ucdavis.edu/international-affiliations/partnerships/index.html"
-}

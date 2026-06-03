@@ -1,9 +1,0 @@
-{
-	"id": "sMmnFTZOKkwZD7E",
-	"json": "{\"id\":\"sMmnFTZOKkwZD7E\",\"url\":\"https://give.ucdavis.edu/SCHP/122063\",\"loadedUrl\":\"https://give.ucdavis.edu/SCHP/122063\",\"uniqueKey\":\"https://give.ucdavis.edu/SCHP/122063\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:01.194Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/SCHP/122063",
-	"url": "https://give.ucdavis.edu/SCHP/122063"
-}

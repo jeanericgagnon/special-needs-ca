@@ -1,9 +1,0 @@
-{
-	"id": "Ky1Lzqp295YZYLz",
-	"json": "{\"id\":\"Ky1Lzqp295YZYLz\",\"url\":\"https://scdd.ca.gov/how_many_earned_wages/\",\"loadedUrl\":\"https://scdd.ca.gov/how_many_earned_wages/\",\"uniqueKey\":\"https://scdd.ca.gov/how_many_earned_wages\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:11:37.727Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/how_many_earned_wages",
-	"url": "https://scdd.ca.gov/how_many_earned_wages/"
-}

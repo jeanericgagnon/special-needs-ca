@@ -1,9 +1,0 @@
-{
-	"id": "kAfZUJI8Z6AcYTS",
-	"json": "{\"id\":\"kAfZUJI8Z6AcYTS\",\"url\":\"https://cnprc.ucdavis.edu/2023-2024-pilot-research-program-recipients\",\"loadedUrl\":\"https://cnprc.ucdavis.edu/2023-2024-pilot-research-program-recipients\",\"uniqueKey\":\"https://cnprc.ucdavis.edu/2023-2024-pilot-research-program-recipients\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:11.626Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cnprc.ucdavis.edu/2023-2024-pilot-research-program-recipients",
-	"url": "https://cnprc.ucdavis.edu/2023-2024-pilot-research-program-recipients"
-}

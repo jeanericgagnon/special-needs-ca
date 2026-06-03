@@ -1,9 +1,0 @@
-{
-	"id": "vZ9Bj2wH2z7Tga8",
-	"json": "{\"id\":\"vZ9Bj2wH2z7Tga8\",\"url\":\"https://www.cdph.ca.gov/Programs/CHSI/Pages/Researchers-and-Statisticians.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CHSI/Pages/Researchers-and-Statisticians.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CHSI/Pages/Researchers-and-Statisticians.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:56.267Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CHSI/Pages/Researchers-and-Statisticians.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CHSI/Pages/Researchers-and-Statisticians.aspx"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "5UIydMOfldPHksC",
-	"json": "{\"id\":\"5UIydMOfldPHksC\",\"url\":\"https://cdss.ca.gov/inforesources/cdss-programs/housing-programs/tribal-grantee\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/cdss-programs/housing-programs/tribal-grantee\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/cdss-programs/housing-programs/tribal-grantee\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:06.600Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/cdss-programs/housing-programs/tribal-grantee",
-	"url": "https://cdss.ca.gov/inforesources/cdss-programs/housing-programs/tribal-grantee"
-}

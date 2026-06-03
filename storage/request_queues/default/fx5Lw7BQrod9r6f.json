@@ -1,9 +1,0 @@
-{
-	"id": "fx5Lw7BQrod9r6f",
-	"json": "{\"id\":\"fx5Lw7BQrod9r6f\",\"url\":\"https://www.cde.ca.gov/re/di/ws/privacypolicy.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/re/di/ws/privacypolicy.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/re/di/ws/privacypolicy.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:59.993Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/re/di/ws/privacypolicy.asp",
-	"url": "https://www.cde.ca.gov/re/di/ws/privacypolicy.asp"
-}

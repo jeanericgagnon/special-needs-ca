@@ -1,9 +1,0 @@
-{
-	"id": "fn47eNHaP8nUL3S",
-	"json": "{\"id\":\"fn47eNHaP8nUL3S\",\"url\":\"http://www.cdss.ca.gov/immigration-services\",\"loadedUrl\":\"https://www.cdss.ca.gov/immigration-services\",\"uniqueKey\":\"http://www.cdss.ca.gov/immigration-services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:33.305Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.cdss.ca.gov/immigration-services",
-	"url": "http://www.cdss.ca.gov/immigration-services"
-}

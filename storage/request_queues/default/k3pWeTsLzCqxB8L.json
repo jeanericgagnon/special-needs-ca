@@ -1,9 +1,0 @@
-{
-	"id": "k3pWeTsLzCqxB8L",
-	"json": "{\"id\":\"k3pWeTsLzCqxB8L\",\"url\":\"https://pledge.ucdmc.ucdavis.edu/pledge/index.jsf\",\"loadedUrl\":\"https://cas.ucdavis.edu/cas/login?service=https%3A%2F%2Fcas.ucdavis.edu%2Fcas%2Foauth2.0%2FcallbackAuthorize%3Fclient_id%3DyyvjOAxrpdYqQptXFCP2AQh0SDv69KjVlkTU%26redirect_uri%3Dhttps%253A%252F%252Fpledge.ucdmc.ucdavis.edu%252Flogin%252Foauth2%252Fcode%252Fauthorization-code%26response_type%3Dcode%26state%3D58bFga4cZCinn4ohyzNvULHYEAzFBBeJYy1AmH1WjSA%253D%26nonce%3DyvA1THx0__JOziamOrHfZyF0mgBT2aLJ0P7Fh9K1dfo%26client_name%3DCasOAuthClient\",\"uniqueKey\":\"https://pledge.ucdmc.ucdavis.edu/pledge/index.jsf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:23.120Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://pledge.ucdmc.ucdavis.edu/pledge/index.jsf",
-	"url": "https://pledge.ucdmc.ucdavis.edu/pledge/index.jsf"
-}

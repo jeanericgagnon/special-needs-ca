@@ -1,9 +1,0 @@
-{
-	"id": "ve3AfR2kBiio0KB",
-	"json": "{\"id\":\"ve3AfR2kBiio0KB\",\"url\":\"https://edd.ca.gov/en/unemployment/step-3-register-in-caljobs/\",\"loadedUrl\":\"https://edd.ca.gov/en/unemployment/step-3-register-in-caljobs/\",\"uniqueKey\":\"https://edd.ca.gov/en/unemployment/step-3-register-in-caljobs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:39.624Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://edd.ca.gov/en/unemployment/step-3-register-in-caljobs",
-	"url": "https://edd.ca.gov/en/unemployment/step-3-register-in-caljobs/"
-}

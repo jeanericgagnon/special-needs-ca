@@ -1,9 +1,0 @@
-{
-	"id": "4kSxMH1LOciglS2",
-	"json": "{\"id\":\"4kSxMH1LOciglS2\",\"url\":\"https://urc.ucdavis.edu/people\",\"loadedUrl\":\"https://urc.ucdavis.edu/people\",\"uniqueKey\":\"https://urc.ucdavis.edu/people\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:34:26.996Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://urc.ucdavis.edu/people",
-	"url": "https://urc.ucdavis.edu/people"
-}

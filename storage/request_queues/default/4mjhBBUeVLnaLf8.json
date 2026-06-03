@@ -1,9 +1,0 @@
-{
-	"id": "4mjhBBUeVLnaLf8",
-	"json": "{\"id\":\"4mjhBBUeVLnaLf8\",\"url\":\"https://yellowcluster.ucdavis.edu/philosophy\",\"loadedUrl\":\"https://yellowcluster.ucdavis.edu/philosophy\",\"uniqueKey\":\"https://yellowcluster.ucdavis.edu/philosophy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:14.966Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://yellowcluster.ucdavis.edu/philosophy",
-	"url": "https://yellowcluster.ucdavis.edu/philosophy"
-}

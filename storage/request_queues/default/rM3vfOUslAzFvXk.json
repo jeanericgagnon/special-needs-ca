@@ -1,9 +1,0 @@
-{
-	"id": "rM3vfOUslAzFvXk",
-	"json": "{\"id\":\"rM3vfOUslAzFvXk\",\"url\":\"https://www.cde.ca.gov/sp/ae/sf/caepfunding2025.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=236f2378-fbe0-4195-bf6c-3b7e384d4a3f&ssb=01544269048&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fsp%2Fae%2Fsf%2Fcaepfunding2025.asp&ssi=d50c1d4b-ctxv-4506-be82-8bde119e3855&ssk=botmanager_support@radware.com&ssm=12626940397347299109288035135406&ssn=2782ad4fc96f981774b56c50fd7608924fc5a3f54230-74b4-49a7-9e72cb&sso=9c71881c-fdf001f1c0629051902fad20299afeb4243aebaf7cfc1948&ssp=87738799181780390749178035197846634&ssq=98002425611369217911056113466934731513906&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBhM2Y1NDIzMC03NGI0LTQ5YTctOTgxYy1mZGYwMDFmMWMwNjIxLTE3ODAzNTYxMTM1NTIwLTAwMzI5YzhjYWVlZDU2YjBhNmIxMCIsInV6bXgiOiI3ZjkwMDA2OGQ4MTc2Yi02ODM0LTQxZmYtYjg1Ni0xYTk0OWU4ZmZmNTQxLTE3ODAzNTYxMTM1NTIwLTlmZDgyMmFiOGVkZDdhY2IxMCIsInJkIjoiY2EuZ292In0=\",\"uniqueKey\":\"https://www.cde.ca.gov/sp/ae/sf/caepfunding2025.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T23:21:53.985Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/sp/ae/sf/caepfunding2025.asp",
-	"url": "https://www.cde.ca.gov/sp/ae/sf/caepfunding2025.asp"
-}

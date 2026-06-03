@@ -1,9 +1,0 @@
-{
-	"id": "nhI5SjblCnRfeDb",
-	"json": "{\"id\":\"nhI5SjblCnRfeDb\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/32209/satyan-lakshminrusimha-neonatal-perinatal_medicine-sacramento?FreeText%3aLast+name=Lakshminrusimha\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/32209/satyan-lakshminrusimha-neonatal-perinatal_medicine-sacramento?FreeText%3aLast+name=Lakshminrusimha\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/32209/satyan-lakshminrusimha-neonatal-perinatal_medicine-sacramento?FreeText%3ALast+name=Lakshminrusimha\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:17.514Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/32209/satyan-lakshminrusimha-neonatal-perinatal_medicine-sacramento?FreeText%3ALast+name=Lakshminrusimha",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/32209/satyan-lakshminrusimha-neonatal-perinatal_medicine-sacramento?FreeText%3aLast+name=Lakshminrusimha"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "DpCHT0roMvXINQk",
-	"json": "{\"id\":\"DpCHT0roMvXINQk\",\"url\":\"https://www.ucdavis.edu/about/administration/initiatives\",\"loadedUrl\":\"https://www.ucdavis.edu/about/administration/initiatives\",\"uniqueKey\":\"https://www.ucdavis.edu/about/administration/initiatives\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:40.640Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ucdavis.edu/about/administration/initiatives",
-	"url": "https://www.ucdavis.edu/about/administration/initiatives"
-}

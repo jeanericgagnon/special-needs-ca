@@ -1,9 +1,0 @@
-{
-	"id": "qW4bAQ26JuxrBCa",
-	"json": "{\"id\":\"qW4bAQ26JuxrBCa\",\"url\":\"https://rarediseases.org/organizations/ara-parseghian-medical-research-foundation/\",\"loadedUrl\":\"https://rarediseases.org/organizations/ara-parseghian-medical-research-foundation/\",\"uniqueKey\":\"https://rarediseases.org/organizations/ara-parseghian-medical-research-foundation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:13:24.011Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/organizations/ara-parseghian-medical-research-foundation",
-	"url": "https://rarediseases.org/organizations/ara-parseghian-medical-research-foundation/"
-}

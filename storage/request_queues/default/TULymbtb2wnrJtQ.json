@@ -1,9 +1,0 @@
-{
-	"id": "TULymbtb2wnrJtQ",
-	"json": "{\"id\":\"TULymbtb2wnrJtQ\",\"url\":\"https://health.ucdavis.edu/cancer/patients-visitors/parking\",\"loadedUrl\":\"https://health.ucdavis.edu/cancer/patients-visitors/parking\",\"uniqueKey\":\"https://health.ucdavis.edu/cancer/patients-visitors/parking\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:14.355Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/cancer/patients-visitors/parking",
-	"url": "https://health.ucdavis.edu/cancer/patients-visitors/parking"
-}

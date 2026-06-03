@@ -1,9 +1,0 @@
-{
-	"id": "LSzXPogYvx9XnDa",
-	"json": "{\"id\":\"LSzXPogYvx9XnDa\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/32222/sherzana-sunderji-echocardiography-fetal_echocardiography-pediatric_cardiology-pediatric_cardiology_advanced_imaging-sacramento?FreeText%3aLast+name=Sunderji\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/32222/sherzana-sunderji-echocardiography-fetal_echocardiography-pediatric_cardiology-pediatric_cardiology_advanced_imaging-sacramento?FreeText%3aLast+name=Sunderji\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/32222/sherzana-sunderji-echocardiography-fetal_echocardiography-pediatric_cardiology-pediatric_cardiology_advanced_imaging-sacramento?FreeText%3ALast+name=Sunderji\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:16.307Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/32222/sherzana-sunderji-echocardiography-fetal_echocardiography-pediatric_cardiology-pediatric_cardiology_advanced_imaging-sacramento?FreeText%3ALast+name=Sunderji",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/32222/sherzana-sunderji-echocardiography-fetal_echocardiography-pediatric_cardiology-pediatric_cardiology_advanced_imaging-sacramento?FreeText%3aLast+name=Sunderji"
-}

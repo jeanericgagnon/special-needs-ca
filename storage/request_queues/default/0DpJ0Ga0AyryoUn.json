@@ -1,9 +1,0 @@
-{
-	"id": "0DpJ0Ga0AyryoUn",
-	"json": "{\"id\":\"0DpJ0Ga0AyryoUn\",\"url\":\"https://ltg.ca.gov/about/\",\"loadedUrl\":\"https://ltg.ca.gov/about/\",\"uniqueKey\":\"https://ltg.ca.gov/about\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:46.247Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ltg.ca.gov/about",
-	"url": "https://ltg.ca.gov/about/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "v4VEE4UThUWpjGI",
-	"json": "{\"id\":\"v4VEE4UThUWpjGI\",\"url\":\"https://cdss.ca.gov/inforesources/cdss-programs/ebt/retailer-opportunities\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/cdss-programs/ebt/retailer-opportunities\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/cdss-programs/ebt/retailer-opportunities\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:58:54.287Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/cdss-programs/ebt/retailer-opportunities",
-	"url": "https://cdss.ca.gov/inforesources/cdss-programs/ebt/retailer-opportunities"
-}

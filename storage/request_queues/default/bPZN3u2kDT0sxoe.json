@@ -1,9 +1,0 @@
-{
-	"id": "bPZN3u2kDT0sxoe",
-	"json": "{\"id\":\"bPZN3u2kDT0sxoe\",\"url\":\"https://rarediseases.org/rare-diseases/eosinophilic-esophagitis/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/eosinophilic-esophagitis/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/eosinophilic-esophagitis\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:11:04.215Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/rare-diseases/eosinophilic-esophagitis",
-	"url": "https://rarediseases.org/rare-diseases/eosinophilic-esophagitis/"
-}

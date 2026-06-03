@@ -1,9 +1,0 @@
-{
-	"id": "xuOWgYvyTz1h3DE",
-	"json": "{\"id\":\"xuOWgYvyTz1h3DE\",\"url\":\"https://give.ucdavis.edu/INFH/IFHGIFT\",\"loadedUrl\":\"https://give.ucdavis.edu/INFH/IFHGIFT\",\"uniqueKey\":\"https://give.ucdavis.edu/INFH/IFHGIFT\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:01.588Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/INFH/IFHGIFT",
-	"url": "https://give.ucdavis.edu/INFH/IFHGIFT"
-}

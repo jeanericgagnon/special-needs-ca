@@ -1,9 +1,0 @@
-{
-	"id": "j64Ahbaq5vkJMZv",
-	"json": "{\"id\":\"j64Ahbaq5vkJMZv\",\"url\":\"https://health.ucdavis.edu/children/team/32220/ayaka-suzuki-metabolic-disorders-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/children/team/32220/ayaka-suzuki-metabolic-disorders-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/children/team/32220/ayaka-suzuki-metabolic-disorders-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:11.254Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/children/team/32220/ayaka-suzuki-metabolic-disorders-sacramento",
-	"url": "https://health.ucdavis.edu/children/team/32220/ayaka-suzuki-metabolic-disorders-sacramento"
-}

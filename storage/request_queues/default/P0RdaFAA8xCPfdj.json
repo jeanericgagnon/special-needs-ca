@@ -1,9 +1,0 @@
-{
-	"id": "P0RdaFAA8xCPfdj",
-	"json": "{\"id\":\"P0RdaFAA8xCPfdj\",\"url\":\"https://care.ucdavis.edu/annual-reports\",\"loadedUrl\":\"https://care.ucdavis.edu/annual-reports\",\"uniqueKey\":\"https://care.ucdavis.edu/annual-reports\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:59.788Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://care.ucdavis.edu/annual-reports",
-	"url": "https://care.ucdavis.edu/annual-reports"
-}

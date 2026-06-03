@@ -1,9 +1,0 @@
-{
-	"id": "bAjB0ErAO9hbMum",
-	"json": "{\"id\":\"bAjB0ErAO9hbMum\",\"url\":\"https://www.breeze.ca.gov/datamart/mainMenu.do\",\"loadedUrl\":\"https://www.breeze.ca.gov/datamart/loginCADCA.do\",\"uniqueKey\":\"https://www.breeze.ca.gov/datamart/mainMenu.do\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:38.499Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.breeze.ca.gov/datamart/mainMenu.do",
-	"url": "https://www.breeze.ca.gov/datamart/mainMenu.do"
-}

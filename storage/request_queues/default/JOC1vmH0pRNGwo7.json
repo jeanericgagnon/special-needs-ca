@@ -1,9 +1,0 @@
-{
-	"id": "JOC1vmH0pRNGwo7",
-	"json": "{\"id\":\"JOC1vmH0pRNGwo7\",\"url\":\"https://ucdnc.ucdavis.edu/cells-and-signals\",\"loadedUrl\":\"https://ucdnc.ucdavis.edu/cells-and-signals\",\"uniqueKey\":\"https://ucdnc.ucdavis.edu/cells-and-signals\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:19.583Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ucdnc.ucdavis.edu/cells-and-signals",
-	"url": "https://ucdnc.ucdavis.edu/cells-and-signals"
-}

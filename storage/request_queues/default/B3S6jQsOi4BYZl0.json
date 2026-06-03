@@ -1,9 +1,0 @@
-{
-	"id": "B3S6jQsOi4BYZl0",
-	"json": "{\"id\":\"B3S6jQsOi4BYZl0\",\"url\":\"https://lettersandscience.ucdavis.edu/star-program\",\"loadedUrl\":\"https://lettersandscience.ucdavis.edu/star-program\",\"uniqueKey\":\"https://lettersandscience.ucdavis.edu/star-program\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:23.523Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://lettersandscience.ucdavis.edu/star-program",
-	"url": "https://lettersandscience.ucdavis.edu/star-program"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "FCv4dg9iEtpkE1h",
-	"json": "{\"id\":\"FCv4dg9iEtpkE1h\",\"url\":\"https://health.ucdavis.edu/patients-visitors/patients-visitors-with-disabilities\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/patients-visitors-with-disabilities\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/patients-visitors-with-disabilities\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:57.327Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/patients-visitors-with-disabilities",
-	"url": "https://health.ucdavis.edu/patients-visitors/patients-visitors-with-disabilities"
-}

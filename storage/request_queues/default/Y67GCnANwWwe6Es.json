@@ -1,9 +1,0 @@
-{
-	"id": "Y67GCnANwWwe6Es",
-	"json": "{\"id\":\"Y67GCnANwWwe6Es\",\"url\":\"https://www.cde.ca.gov/SchoolDirectory/topic/8\",\"loadedUrl\":\"https://www.cde.ca.gov/SchoolDirectory/topic/8\",\"uniqueKey\":\"https://www.cde.ca.gov/SchoolDirectory/topic/8\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:24:02.839Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/SchoolDirectory/topic/8",
-	"url": "https://www.cde.ca.gov/SchoolDirectory/topic/8"
-}

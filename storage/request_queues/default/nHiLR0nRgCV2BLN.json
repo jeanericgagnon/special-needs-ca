@@ -1,9 +1,0 @@
-{
-	"id": "nHiLR0nRgCV2BLN",
-	"json": "{\"id\":\"nHiLR0nRgCV2BLN\",\"url\":\"https://physicians.ucdavis.edu/medicalcenter?Specialties=10440\",\"loadedUrl\":\"https://physicians.ucdavis.edu/medicalcenter?Specialties=10440\",\"uniqueKey\":\"https://physicians.ucdavis.edu/medicalcenter?Specialties=10440\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:31:32.352Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://physicians.ucdavis.edu/medicalcenter?Specialties=10440",
-	"url": "https://physicians.ucdavis.edu/medicalcenter?Specialties=10440"
-}

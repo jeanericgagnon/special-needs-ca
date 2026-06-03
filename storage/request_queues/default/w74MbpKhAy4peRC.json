@@ -1,9 +1,0 @@
-{
-	"id": "w74MbpKhAy4peRC",
-	"json": "{\"id\":\"w74MbpKhAy4peRC\",\"url\":\"https://www.dmv.ca.gov/portal/dmv\",\"loadedUrl\":\"https://www.dmv.ca.gov/portal/\",\"uniqueKey\":\"https://www.dmv.ca.gov/portal/dmv\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T19:43:33.502Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dmv.ca.gov/portal/dmv",
-	"url": "https://www.dmv.ca.gov/portal/dmv"
-}

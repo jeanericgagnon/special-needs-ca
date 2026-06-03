@@ -1,9 +1,0 @@
-{
-	"id": "8IzTxpDoMRY3qZH",
-	"json": "{\"id\":\"8IzTxpDoMRY3qZH\",\"url\":\"https://rarediseases.org/organizations/pituitary-foundation/\",\"loadedUrl\":\"https://rarediseases.org/organizations/pituitary-foundation/\",\"uniqueKey\":\"https://rarediseases.org/organizations/pituitary-foundation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:11:24.897Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/organizations/pituitary-foundation",
-	"url": "https://rarediseases.org/organizations/pituitary-foundation/"
-}

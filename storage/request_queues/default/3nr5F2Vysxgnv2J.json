@@ -1,9 +1,0 @@
-{
-	"id": "3nr5F2Vysxgnv2J",
-	"json": "{\"id\":\"3nr5F2Vysxgnv2J\",\"url\":\"https://cdss.ca.gov/inforesources/child-care-and-development/supplemental-rate-payments\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/child-care-and-development/supplemental-rate-payments\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/child-care-and-development/supplemental-rate-payments\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:58:45.026Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/child-care-and-development/supplemental-rate-payments",
-	"url": "https://cdss.ca.gov/inforesources/child-care-and-development/supplemental-rate-payments"
-}

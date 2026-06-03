@@ -1,9 +1,0 @@
-{
-	"id": "9YtnS85RgywFcEa",
-	"json": "{\"id\":\"9YtnS85RgywFcEa\",\"url\":\"https://linguistics.ucdavis.edu/people/jhawkins\",\"loadedUrl\":\"https://linguistics.ucdavis.edu/people/jack-hawkins\",\"uniqueKey\":\"https://linguistics.ucdavis.edu/people/jhawkins\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:10.319Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://linguistics.ucdavis.edu/people/jhawkins",
-	"url": "https://linguistics.ucdavis.edu/people/jhawkins"
-}

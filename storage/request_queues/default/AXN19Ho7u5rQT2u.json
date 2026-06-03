@@ -1,9 +1,0 @@
-{
-	"id": "AXN19Ho7u5rQT2u",
-	"json": "{\"id\":\"AXN19Ho7u5rQT2u\",\"url\":\"https://www.vetmed.ucdavis.edu/departments\",\"loadedUrl\":\"https://www.vetmed.ucdavis.edu/departments\",\"uniqueKey\":\"https://www.vetmed.ucdavis.edu/departments\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:17.616Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.vetmed.ucdavis.edu/departments",
-	"url": "https://www.vetmed.ucdavis.edu/departments"
-}

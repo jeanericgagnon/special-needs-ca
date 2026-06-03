@@ -1,9 +1,0 @@
-{
-	"id": "sYaopTeHtAOKHuE",
-	"json": "{\"id\":\"sYaopTeHtAOKHuE\",\"url\":\"https://www.dhcs.ca.gov/Documents/MCQMD/2020-21-Preventive-Services-Report-0603.pdf\",\"loadedUrl\":\"https://www.dhcs.ca.gov/file/2020-21-preventive-services-report-0603/\",\"uniqueKey\":\"https://www.dhcs.ca.gov/Documents/MCQMD/2020-21-Preventive-Services-Report-0603.pdf\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:25:39.372Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dhcs.ca.gov/Documents/MCQMD/2020-21-Preventive-Services-Report-0603.pdf",
-	"url": "https://www.dhcs.ca.gov/Documents/MCQMD/2020-21-Preventive-Services-Report-0603.pdf"
-}

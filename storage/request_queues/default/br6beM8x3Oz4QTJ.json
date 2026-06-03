@@ -1,9 +1,0 @@
-{
-	"id": "br6beM8x3Oz4QTJ",
-	"json": "{\"id\":\"br6beM8x3Oz4QTJ\",\"url\":\"https://www.gov.ca.gov/about/first-partner/\",\"loadedUrl\":\"https://www.gov.ca.gov/about/first-partner/\",\"uniqueKey\":\"https://www.gov.ca.gov/about/first-partner\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:10:04.794Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.gov.ca.gov/about/first-partner",
-	"url": "https://www.gov.ca.gov/about/first-partner/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "sJzgaoKyn7ZXKLz",
-	"json": "{\"id\":\"sJzgaoKyn7ZXKLz\",\"url\":\"https://servicehub.ucdavis.edu/servicehub?id=catalog&spa=1&sys_id=5ec4eed5134143003527bd122244b0af\",\"loadedUrl\":\"https://servicehub.ucdavis.edu/servicehub?id=catalog&spa=1&sys_id=5ec4eed5134143003527bd122244b0af\",\"uniqueKey\":\"https://servicehub.ucdavis.edu/servicehub?id=catalog&spa=1&sys_id=5ec4eed5134143003527bd122244b0af\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:36.916Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://servicehub.ucdavis.edu/servicehub?id=catalog&spa=1&sys_id=5ec4eed5134143003527bd122244b0af",
-	"url": "https://servicehub.ucdavis.edu/servicehub?id=catalog&spa=1&sys_id=5ec4eed5134143003527bd122244b0af"
-}

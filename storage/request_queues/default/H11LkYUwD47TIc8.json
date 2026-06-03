@@ -1,9 +1,0 @@
-{
-	"id": "H11LkYUwD47TIc8",
-	"json": "{\"id\":\"H11LkYUwD47TIc8\",\"url\":\"https://www.chhs.ca.gov/language-access/\",\"loadedUrl\":\"https://www.chhs.ca.gov/language-access/\",\"uniqueKey\":\"https://www.chhs.ca.gov/language-access\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:17.024Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.chhs.ca.gov/language-access",
-	"url": "https://www.chhs.ca.gov/language-access/"
-}

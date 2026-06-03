@@ -1,9 +1,0 @@
-{
-	"id": "ehS8qvAktQl7aVt",
-	"json": "{\"id\":\"ehS8qvAktQl7aVt\",\"url\":\"https://education.ucdavis.edu/words-take-wing\",\"loadedUrl\":\"https://education.ucdavis.edu/words-take-wing\",\"uniqueKey\":\"https://education.ucdavis.edu/words-take-wing\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:17:23.355Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://education.ucdavis.edu/words-take-wing",
-	"url": "https://education.ucdavis.edu/words-take-wing"
-}

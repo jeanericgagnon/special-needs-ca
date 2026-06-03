@@ -1,9 +1,0 @@
-{
-	"id": "l4PysI7Uvx7D8kV",
-	"json": "{\"id\":\"l4PysI7Uvx7D8kV\",\"url\":\"http://www.cde.ca.gov/ls/he/hn/fluinfo.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ls/he/hn/fluinfo.asp\",\"uniqueKey\":\"http://www.cde.ca.gov/ls/he/hn/fluinfo.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:12:25.357Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.cde.ca.gov/ls/he/hn/fluinfo.asp",
-	"url": "http://www.cde.ca.gov/ls/he/hn/fluinfo.asp"
-}

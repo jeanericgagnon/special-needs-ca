@@ -1,9 +1,0 @@
-{
-	"id": "mGwz8z60zYpo0cj",
-	"json": "{\"id\":\"mGwz8z60zYpo0cj\",\"url\":\"https://data.chhs.ca.gov/dataset/dataset-catalog/resource/354ec4a0-5176-415c-b491-c0efbe0d257a\",\"loadedUrl\":\"https://data.chhs.ca.gov/dataset/dataset-catalog/resource/354ec4a0-5176-415c-b491-c0efbe0d257a\",\"uniqueKey\":\"https://data.chhs.ca.gov/dataset/dataset-catalog/resource/354ec4a0-5176-415c-b491-c0efbe0d257a\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:49.399Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://data.chhs.ca.gov/dataset/dataset-catalog/resource/354ec4a0-5176-415c-b491-c0efbe0d257a",
-	"url": "https://data.chhs.ca.gov/dataset/dataset-catalog/resource/354ec4a0-5176-415c-b491-c0efbe0d257a"
-}

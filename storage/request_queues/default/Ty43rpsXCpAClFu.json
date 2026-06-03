@@ -1,9 +1,0 @@
-{
-	"id": "Ty43rpsXCpAClFu",
-	"json": "{\"id\":\"Ty43rpsXCpAClFu\",\"url\":\"https://leadership.ucdavis.edu/engagement/social-media\",\"loadedUrl\":\"https://leadership.ucdavis.edu/engagement/social-media\",\"uniqueKey\":\"https://leadership.ucdavis.edu/engagement/social-media\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:36.953Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://leadership.ucdavis.edu/engagement/social-media",
-	"url": "https://leadership.ucdavis.edu/engagement/social-media"
-}

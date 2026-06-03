@@ -1,9 +1,0 @@
-{
-	"id": "91ATAVjpKq5Nah8",
-	"json": "{\"id\":\"91ATAVjpKq5Nah8\",\"url\":\"https://scdd.ca.gov/pos-service-code/tutor-services/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/tutor-services/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/tutor-services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:44.284Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/pos-service-code/tutor-services",
-	"url": "https://scdd.ca.gov/pos-service-code/tutor-services/"
-}

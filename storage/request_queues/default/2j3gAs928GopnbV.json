@@ -1,9 +1,0 @@
-{
-	"id": "2j3gAs928GopnbV",
-	"json": "{\"id\":\"2j3gAs928GopnbV\",\"url\":\"https://www.calhr.ca.gov/california-citizens-compensation-commission/\",\"loadedUrl\":\"https://www.calhr.ca.gov/california-citizens-compensation-commission/\",\"uniqueKey\":\"https://www.calhr.ca.gov/california-citizens-compensation-commission\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:19.652Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.calhr.ca.gov/california-citizens-compensation-commission",
-	"url": "https://www.calhr.ca.gov/california-citizens-compensation-commission/"
-}

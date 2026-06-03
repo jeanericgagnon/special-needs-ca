@@ -1,9 +1,0 @@
-{
-	"id": "Eu6ry8rAzltCf3E",
-	"json": "{\"id\":\"Eu6ry8rAzltCf3E\",\"url\":\"https://cdss.ca.gov/inforesources/calfresh/disaster-calfresh\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/calfresh/disaster-calfresh\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/calfresh/disaster-calfresh\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:17.110Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/calfresh/disaster-calfresh",
-	"url": "https://cdss.ca.gov/inforesources/calfresh/disaster-calfresh"
-}

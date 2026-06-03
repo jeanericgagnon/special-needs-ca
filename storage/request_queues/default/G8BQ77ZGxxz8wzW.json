@@ -1,9 +1,0 @@
-{
-	"id": "G8BQ77ZGxxz8wzW",
-	"json": "{\"id\":\"G8BQ77ZGxxz8wzW\",\"url\":\"https://giveto.ucdavis.edu/users/9686784-erin-friscia\",\"loadedUrl\":\"https://giveto.ucdavis.edu/users/9686784-erin-friscia\",\"uniqueKey\":\"https://giveto.ucdavis.edu/users/9686784-erin-friscia\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:27:05.122Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://giveto.ucdavis.edu/users/9686784-erin-friscia",
-	"url": "https://giveto.ucdavis.edu/users/9686784-erin-friscia"
-}

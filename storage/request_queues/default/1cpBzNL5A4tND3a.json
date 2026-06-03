@@ -1,9 +1,0 @@
-{
-	"id": "1cpBzNL5A4tND3a",
-	"json": "{\"id\":\"1cpBzNL5A4tND3a\",\"url\":\"https://ocpweb.ucdavis.edu/svsh/public/report-form.cfm\",\"loadedUrl\":\"https://ocpweb.ucdavis.edu/svsh/public/report-form.cfm\",\"uniqueKey\":\"https://ocpweb.ucdavis.edu/svsh/public/report-form.cfm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:02.427Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ocpweb.ucdavis.edu/svsh/public/report-form.cfm",
-	"url": "https://ocpweb.ucdavis.edu/svsh/public/report-form.cfm"
-}

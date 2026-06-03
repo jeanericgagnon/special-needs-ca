@@ -1,9 +1,0 @@
-{
-	"id": "m7WTa5leLSvmMTZ",
-	"json": "{\"id\":\"m7WTa5leLSvmMTZ\",\"url\":\"https://leginfo.legislature.ca.gov/faces/billPdf.xhtml?bill_id=201720180AB107&version=20170AB10796CHP\",\"loadedUrl\":\"https://leginfo.legislature.ca.gov/faces/billPdf.xhtml?bill_id=201720180AB107&version=20170AB10796CHP\",\"uniqueKey\":\"https://leginfo.legislature.ca.gov/faces/billPdf.xhtml?bill_id=201720180AB107&version=20170AB10796CHP\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:23:06.686Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://leginfo.legislature.ca.gov/faces/billPdf.xhtml?bill_id=201720180AB107&version=20170AB10796CHP",
-	"url": "https://leginfo.legislature.ca.gov/faces/billPdf.xhtml?bill_id=201720180AB107&version=20170AB10796CHP"
-}

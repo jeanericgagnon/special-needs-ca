@@ -1,9 +1,0 @@
-{
-	"id": "d9a1JS1dmqc0kmo",
-	"json": "{\"id\":\"d9a1JS1dmqc0kmo\",\"url\":\"https://health.ucdavis.edu/mind-institute/centers/cedd/adept\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/centers/cedd/adept\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/centers/cedd/adept\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:43.029Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mind-institute/centers/cedd/adept",
-	"url": "https://health.ucdavis.edu/mind-institute/centers/cedd/adept"
-}

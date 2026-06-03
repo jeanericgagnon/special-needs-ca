@@ -1,9 +1,0 @@
-{
-	"id": "I3OVYefxWkfyQpW",
-	"json": "{\"id\":\"I3OVYefxWkfyQpW\",\"url\":\"https://biology.ucdavis.edu/news/mice-provide-insight-genetics-autism-spectrum-disorders\",\"loadedUrl\":\"https://biology.ucdavis.edu/news/mice-provide-insight-genetics-autism-spectrum-disorders\",\"uniqueKey\":\"https://biology.ucdavis.edu/news/mice-provide-insight-genetics-autism-spectrum-disorders\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:53.933Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://biology.ucdavis.edu/news/mice-provide-insight-genetics-autism-spectrum-disorders",
-	"url": "https://biology.ucdavis.edu/news/mice-provide-insight-genetics-autism-spectrum-disorders"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "Fu4EevAmpliREU0",
-	"json": "{\"id\":\"Fu4EevAmpliREU0\",\"url\":\"https://health.ucdavis.edu/cancer/clinical-services/in-home-care-resources\",\"loadedUrl\":\"https://health.ucdavis.edu/cancer/clinical-services/in-home-care-resources\",\"uniqueKey\":\"https://health.ucdavis.edu/cancer/clinical-services/in-home-care-resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:14.360Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/cancer/clinical-services/in-home-care-resources",
-	"url": "https://health.ucdavis.edu/cancer/clinical-services/in-home-care-resources"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "AtrEmCXSyXs7Tpb",
-	"json": "{\"id\":\"AtrEmCXSyXs7Tpb\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/43306/ankit-sarin-colon_and_rectal_surgery-surgery_-_general-sacramento?FreeText%3aLast+name=Sarin\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/43306/ankit-sarin-colon_and_rectal_surgery-surgery_-_general-sacramento?FreeText%3aLast+name=Sarin\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/43306/ankit-sarin-colon_and_rectal_surgery-surgery_-_general-sacramento?FreeText%3ALast+name=Sarin\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:08.219Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/43306/ankit-sarin-colon_and_rectal_surgery-surgery_-_general-sacramento?FreeText%3ALast+name=Sarin",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/43306/ankit-sarin-colon_and_rectal_surgery-surgery_-_general-sacramento?FreeText%3aLast+name=Sarin"
-}

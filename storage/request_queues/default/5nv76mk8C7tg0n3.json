@@ -1,9 +1,0 @@
-{
-	"id": "5nv76mk8C7tg0n3",
-	"json": "{\"id\":\"5nv76mk8C7tg0n3\",\"url\":\"https://scdd.ca.gov/category/self-determination-program/\",\"loadedUrl\":\"https://scdd.ca.gov/category/self-determination-program/\",\"uniqueKey\":\"https://scdd.ca.gov/category/self-determination-program\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:05:25.928Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/category/self-determination-program",
-	"url": "https://scdd.ca.gov/category/self-determination-program/"
-}

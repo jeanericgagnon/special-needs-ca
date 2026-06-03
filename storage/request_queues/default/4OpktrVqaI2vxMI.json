@@ -1,9 +1,0 @@
-{
-	"id": "4OpktrVqaI2vxMI",
-	"json": "{\"id\":\"4OpktrVqaI2vxMI\",\"url\":\"https://health.ucdavis.edu/mind-institute/resources/local-state-fed\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/resources/local-state-fed\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/resources/local-state-fed\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:38.619Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mind-institute/resources/local-state-fed",
-	"url": "https://health.ucdavis.edu/mind-institute/resources/local-state-fed"
-}

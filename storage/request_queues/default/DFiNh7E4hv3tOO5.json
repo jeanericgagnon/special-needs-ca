@@ -1,9 +1,0 @@
-{
-	"id": "DFiNh7E4hv3tOO5",
-	"json": "{\"id\":\"DFiNh7E4hv3tOO5\",\"url\":\"https://clerk.assembly.ca.gov/legislative-publications/daily-journals\",\"loadedUrl\":\"https://clerk.assembly.ca.gov/legislative-publications/daily-journals\",\"uniqueKey\":\"https://clerk.assembly.ca.gov/legislative-publications/daily-journals\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:03:01.403Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://clerk.assembly.ca.gov/legislative-publications/daily-journals",
-	"url": "https://clerk.assembly.ca.gov/legislative-publications/daily-journals"
-}

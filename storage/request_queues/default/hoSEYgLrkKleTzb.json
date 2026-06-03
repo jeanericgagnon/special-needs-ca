@@ -1,9 +1,0 @@
-{
-	"id": "hoSEYgLrkKleTzb",
-	"json": "{\"id\":\"hoSEYgLrkKleTzb\",\"url\":\"https://health.ucdavis.edu/health-news/newsroom/uc-davis-nursing-school-launches-scholarship-program-for-disadvantaged-students/2020/08\",\"loadedUrl\":\"https://health.ucdavis.edu/news/headlines/uc-davis-nursing-school-launches-scholarship-program-for-disadvantaged-students/2020/08\",\"uniqueKey\":\"https://health.ucdavis.edu/health-news/newsroom/uc-davis-nursing-school-launches-scholarship-program-for-disadvantaged-students/2020/08\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:22.731Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/health-news/newsroom/uc-davis-nursing-school-launches-scholarship-program-for-disadvantaged-students/2020/08",
-	"url": "https://health.ucdavis.edu/health-news/newsroom/uc-davis-nursing-school-launches-scholarship-program-for-disadvantaged-students/2020/08"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "E7zR4wwZ3eQIjKd",
-	"json": "{\"id\":\"E7zR4wwZ3eQIjKd\",\"url\":\"https://ucp.org/research/research-grant-program/\",\"loadedUrl\":\"https://ucp.org/research/research-grant-program/\",\"uniqueKey\":\"https://ucp.org/research/research-grant-program\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:32.652Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ucp.org/research/research-grant-program",
-	"url": "https://ucp.org/research/research-grant-program/"
-}

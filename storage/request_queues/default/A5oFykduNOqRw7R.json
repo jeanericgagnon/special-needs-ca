@@ -1,9 +1,0 @@
-{
-	"id": "A5oFykduNOqRw7R",
-	"json": "{\"id\":\"A5oFykduNOqRw7R\",\"url\":\"https://cdss.ca.gov/inforesources/cdss-programs/community-care-licensing/administrator-certification/administrator-information/exams\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/cdss-programs/community-care-licensing/administrator-certification/administrator-information/exams\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/cdss-programs/community-care-licensing/administrator-certification/administrator-information/exams\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:32.964Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/cdss-programs/community-care-licensing/administrator-certification/administrator-information/exams",
-	"url": "https://cdss.ca.gov/inforesources/cdss-programs/community-care-licensing/administrator-certification/administrator-information/exams"
-}

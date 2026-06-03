@@ -1,9 +1,0 @@
-{
-	"id": "SzoNfk1uKv1Lxxt",
-	"json": "{\"id\":\"SzoNfk1uKv1Lxxt\",\"url\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/EHIB/CPE/Pages/HealthyHomes.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/EHIB/CPE/Pages/HealthyHomes.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/EHIB/CPE/Pages/HealthyHomes.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:27:30.800Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/EHIB/CPE/Pages/HealthyHomes.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/EHIB/CPE/Pages/HealthyHomes.aspx"
-}

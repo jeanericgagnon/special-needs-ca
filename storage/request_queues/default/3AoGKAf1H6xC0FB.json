@@ -1,9 +1,0 @@
-{
-	"id": "3AoGKAf1H6xC0FB",
-	"json": "{\"id\":\"3AoGKAf1H6xC0FB\",\"url\":\"https://cpe.ucdavis.edu/areas-study/education/redwood-seed-scholars-program\",\"loadedUrl\":\"https://cpe.ucdavis.edu/areas-study/education/redwood-seed-scholars-program\",\"uniqueKey\":\"https://cpe.ucdavis.edu/areas-study/education/redwood-seed-scholars-program\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:46.941Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cpe.ucdavis.edu/areas-study/education/redwood-seed-scholars-program",
-	"url": "https://cpe.ucdavis.edu/areas-study/education/redwood-seed-scholars-program"
-}

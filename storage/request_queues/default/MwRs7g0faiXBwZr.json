@@ -1,9 +1,0 @@
-{
-	"id": "MwRs7g0faiXBwZr",
-	"json": "{\"id\":\"MwRs7g0faiXBwZr\",\"url\":\"https://comprehensivecancercenter.ucdavis.edu/\",\"loadedUrl\":\"https://comprehensivecancercenter.ucdavis.edu/\",\"uniqueKey\":\"https://comprehensivecancercenter.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:15.634Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://comprehensivecancercenter.ucdavis.edu",
-	"url": "https://comprehensivecancercenter.ucdavis.edu/"
-}

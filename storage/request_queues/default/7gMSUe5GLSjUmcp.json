@@ -1,9 +1,0 @@
-{
-	"id": "7gMSUe5GLSjUmcp",
-	"json": "{\"id\":\"7gMSUe5GLSjUmcp\",\"url\":\"https://neuroscience.ucdavis.edu/postdoctoral-training\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/postdoctoral-training\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/postdoctoral-training\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:01.311Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/postdoctoral-training",
-	"url": "https://neuroscience.ucdavis.edu/postdoctoral-training"
-}

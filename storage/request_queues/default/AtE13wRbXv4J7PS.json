@@ -1,9 +1,0 @@
-{
-	"id": "AtE13wRbXv4J7PS",
-	"json": "{\"id\":\"AtE13wRbXv4J7PS\",\"url\":\"https://health.ucdavis.edu/cancer/support/adultinfusion.html\",\"loadedUrl\":\"https://health.ucdavis.edu/cancer/adult-cancer-care/\",\"uniqueKey\":\"https://health.ucdavis.edu/cancer/support/adultinfusion.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:54.921Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/cancer/support/adultinfusion.html",
-	"url": "https://health.ucdavis.edu/cancer/support/adultinfusion.html"
-}

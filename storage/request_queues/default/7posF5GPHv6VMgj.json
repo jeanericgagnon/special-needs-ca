@@ -1,9 +1,0 @@
-{
-	"id": "7posF5GPHv6VMgj",
-	"json": "{\"id\":\"7posF5GPHv6VMgj\",\"url\":\"https://oag.ca.gov/hatecrimes\",\"loadedUrl\":\"https://oag.ca.gov/hatecrimes\",\"uniqueKey\":\"https://oag.ca.gov/hatecrimes\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:38.026Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://oag.ca.gov/hatecrimes",
-	"url": "https://oag.ca.gov/hatecrimes"
-}

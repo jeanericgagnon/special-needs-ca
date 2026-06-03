@@ -1,9 +1,0 @@
-{
-	"id": "R4jzS8iAM9ELqvu",
-	"json": "{\"id\":\"R4jzS8iAM9ELqvu\",\"url\":\"https://toxmsdt.vetmed.ucdavis.edu/donors\",\"loadedUrl\":\"https://toxmsdt.vetmed.ucdavis.edu/donors\",\"uniqueKey\":\"https://toxmsdt.vetmed.ucdavis.edu/donors\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:23:59.447Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://toxmsdt.vetmed.ucdavis.edu/donors",
-	"url": "https://toxmsdt.vetmed.ucdavis.edu/donors"
-}

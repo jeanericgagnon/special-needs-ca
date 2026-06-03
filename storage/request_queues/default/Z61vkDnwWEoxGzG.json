@@ -1,9 +1,0 @@
-{
-	"id": "Z61vkDnwWEoxGzG",
-	"json": "{\"id\":\"Z61vkDnwWEoxGzG\",\"url\":\"https://www.cde.ca.gov/eo/ce/wc/williamsinstrmaterials.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/eo/ce/wc/williamsinstrmaterials.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/eo/ce/wc/williamsinstrmaterials.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:59.586Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/eo/ce/wc/williamsinstrmaterials.asp",
-	"url": "https://www.cde.ca.gov/eo/ce/wc/williamsinstrmaterials.asp"
-}

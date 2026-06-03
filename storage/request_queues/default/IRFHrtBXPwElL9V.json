@@ -1,9 +1,0 @@
-{
-	"id": "IRFHrtBXPwElL9V",
-	"json": "{\"id\":\"IRFHrtBXPwElL9V\",\"url\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/CalHealthFind/Pages/ASPEN_FEDERAL_2567.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/CalHealthFind/Pages/ASPEN_FEDERAL_2567.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CHCQ/LCP/CalHealthFind/Pages/ASPEN_FEDERAL_2567.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:01:54.554Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CHCQ/LCP/CalHealthFind/Pages/ASPEN_FEDERAL_2567.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CHCQ/LCP/CalHealthFind/Pages/ASPEN_FEDERAL_2567.aspx"
-}

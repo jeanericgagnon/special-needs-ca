@@ -3,12 +3,15 @@ import {
   getIepAdvocates, 
   getCounties, 
   getSchoolDistrictBySlug,
-  getLocalProviders
+  getLocalProviders,
+  getProgramsForDiagnosis,
+  getAllPrograms,
+  getProgramBySlug
 } from '@/lib/db';
 import { DIAGNOSES, slugifyDiagnosis } from '@/lib/diagnoses';
 import { getCityBySlug } from '@/lib/cities';
 import { Metadata } from 'next';
-import { MapPin, Phone, Landmark, ShieldCheck, Mail, Award, Sparkles, ArrowLeft, ArrowRight } from 'lucide-react';
+import { MapPin, Phone, Landmark, ShieldCheck, Mail, Award, Sparkles, ArrowLeft, ArrowRight, Heart } from 'lucide-react';
 import { IEP_ACCOMMODATIONS, SMART_GOAL_TEMPLATES } from '@/lib/iep-data';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -21,6 +24,7 @@ import CountyMapClient from '../components/county-map-client';
 import IepGoalsBuilder from '../components/iep-goals-builder';
 import IhssCalculator from '../components/ihss-calculator';
 import AppealLetterGenerator from '../components/appeal-letter-generator';
+import IhssMiniProduct from '../components/ihss-mini-product';
 
 type Props = {
   params: Promise<{ slug?: string[] }>;
@@ -99,13 +103,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (slug.length === 0) {
     return {
-      title: 'California Special Education & Disability Benefits Directory',
+      title: 'California Special Education & Disability Guides & Resources',
       description: 'Select your California county to access local developmental benefits, Regional Center intakes, school district inclusion rates, and special needs advocates.',
       alternates: { canonical: '/benefits' }
     };
   }
 
   if (slug.length === 1) {
+    if (slug[0].toLowerCase() === 'programs') {
+      return {
+        title: 'California Special Needs Government & Community Guides & Resources',
+        description: 'Explore California special needs public programs: Regional Center, IHSS Protective Supervision, California Children\'s Services (CCS), and CalABLE.',
+        alternates: { canonical: '/benefits/programs' }
+      };
+    }
     const isCounty = getCounties().some(c => c.id === slug[0].toLowerCase());
     if (isCounty) {
       const countyFormatted = formatParam(slug[0]);
@@ -125,6 +136,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   if (slug.length === 2) {
+    if (slug[0].toLowerCase() === 'program') {
+      const prog = getProgramBySlug(slug[1].toLowerCase());
+      const title = prog ? prog.program_name : formatParam(slug[1]);
+      return {
+        title: `${title} - California Special Needs Program Guide (2026)`,
+        description: `Complete guide to ${title} in California. Check clinical eligibility rules, age limits, income guidelines, and related advocate services.`,
+        alternates: { canonical: `/benefits/program/${slug[1].toLowerCase()}` }
+      };
+    }
     const diagnosisFormatted = formatParam(slug[0]);
     const secondSlug = slug[1].toLowerCase();
 
@@ -171,6 +191,295 @@ export default async function BenefitsCatchAll({ params }: Props) {
   const slug = p.slug || [];
 
   // ==========================================
+  // CASE 7: Programs Index (/benefits/programs)
+  // ==========================================
+  if (slug.length === 1 && slug[0].toLowerCase() === 'programs') {
+    const allPrograms = getAllPrograms();
+    return (
+      <main className="container animate-fade-in" style={{ paddingBottom: '5rem', paddingTop: '2.5rem' }}>
+        <div style={{ textAlign: 'center', marginBottom: '3.5rem' }}>
+          <span style={{ 
+            display: 'inline-flex', 
+            alignItems: 'center', 
+            gap: '0.3rem', 
+            fontSize: '0.75rem', 
+            fontWeight: 700, 
+            color: 'var(--primary-color)', 
+            textTransform: 'uppercase', 
+            letterSpacing: '0.05em', 
+            marginBottom: '0.75rem',
+            background: 'rgba(var(--primary-rgb),0.1)',
+            padding: '0.25rem 0.6rem',
+            borderRadius: '20px'
+          }}>
+            <ShieldCheck size={12} /> Government & Private Support
+          </span>
+          <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem', fontWeight: 800 }}>
+            California Special Needs Guides & Resources
+          </h1>
+          <p style={{ fontSize: '1.15rem', maxWidth: '800px', margin: '0 auto', color: 'var(--text-light)', lineHeight: '1.6' }}>
+            Comprehensive collection of guides and resources for specialized public benefits, waivers, healthcare plans, and developmental support programs available for children with special needs in California.
+          </p>
+        </div>
+
+        <div className="glass-panel" style={{ background: 'rgba(255,255,255,0.9)', padding: '2.5rem', borderRadius: '24px' }}>
+          <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <Sparkles color="var(--primary-color)" size={22} />
+            Available Programs & Benefits
+          </h2>
+          
+          <div style={{ 
+            display: 'grid', 
+            gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', 
+            gap: '1.5rem' 
+          }}>
+            {allPrograms.map(p => {
+              const pSlug = p.program_name
+                .toLowerCase()
+                .replace(/[^\w\s-]/g, '')
+                .trim()
+                .replace(/\s+/g, '-')
+                .replace(/-+/g, '-');
+              return (
+                <Link 
+                  key={p.id} 
+                  href={`/benefits/program/${pSlug}`}
+                  style={{ textDecoration: 'none' }}
+                >
+                  <div 
+                    className="glass-panel" 
+                    style={{ 
+                      padding: '1.5rem', 
+                      borderRadius: '16px', 
+                      border: '1px solid rgba(0,0,0,0.04)',
+                      background: 'white',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      justifyContent: 'space-between',
+                      height: '100%',
+                      transition: 'all 0.2s ease',
+                      cursor: 'pointer',
+                      boxShadow: '0 2px 12px rgba(0,0,0,0.01)'
+                    }}
+                  >
+                    <div>
+                      <h3 style={{ fontWeight: 800, color: 'var(--primary-color)', fontSize: '1.15rem', marginBottom: '0.75rem', lineHeight: 1.3 }}>
+                        {p.program_name}
+                      </h3>
+                      <p style={{ fontSize: '0.88rem', color: 'var(--text-light)', lineHeight: 1.4, marginBottom: '1rem' }}>
+                        {p.target_demographic}
+                      </p>
+                    </div>
+                    
+                    <div style={{ borderTop: '1px solid rgba(0,0,0,0.05)', paddingTop: '0.75rem', marginTop: 'auto', display: 'flex', flexDirection: 'column', gap: '0.35rem', fontSize: '0.8rem', color: 'var(--text-light)' }}>
+                      <span><strong>Age Limits:</strong> {p.age_limit_min} - {p.age_limit_max} years</span>
+                      <span><strong>Income Limit:</strong> {p.income_limit}</span>
+                      <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.2rem', color: 'var(--primary-color)', fontWeight: 600, marginTop: '0.5rem' }}>
+                        View Program Details <ArrowRight size={12} />
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      </main>
+    );
+  }
+
+  // ==========================================
+  // CASE 8: Program Detail (/benefits/program/[slug])
+  // ==========================================
+  if (slug.length === 2 && slug[0].toLowerCase() === 'program') {
+    const programSlug = slug[1].toLowerCase();
+    const program = getProgramBySlug(programSlug);
+    
+    if (!program) {
+      notFound();
+    }
+    
+    // Find related advocates serving this program's general specialties
+    const allAdvocates = getIepAdvocates();
+    
+    // Sort and filter advocates to show relevant professionals
+    const relatedAdvocates = allAdvocates
+      .filter(adv => {
+        const text = ((adv.specialties || '') + ' ' + (adv.description || '') + ' ' + adv.credentials).toLowerCase();
+        // Match terms
+        if (program.program_name.toLowerCase().includes('ihss')) return text.includes('ihss') || text.includes('behavior') || text.includes('advocate');
+        if (program.program_name.toLowerCase().includes('ccs')) return text.includes('physical') || text.includes('therapy') || text.includes('medical') || text.includes('care');
+        if (program.program_name.toLowerCase().includes('calable')) return text.includes('financial') || text.includes('able') || text.includes('trust') || text.includes('estate') || text.includes('advocate');
+        if (program.program_name.toLowerCase().includes('idea') || program.program_name.toLowerCase().includes('special education')) return text.includes('iep') || text.includes('education') || text.includes('school') || text.includes('attorney');
+        if (program.program_name.toLowerCase().includes('regional center') || program.program_name.toLowerCase().includes('lanterman')) return text.includes('regional center') || text.includes('respite') || text.includes('lanterman') || text.includes('developmental');
+        return true;
+      })
+      .slice(0, 3);
+      
+    // Find qualifying diagnoses listed in this program
+    let parsedDiagnoses: string[] = [];
+    try {
+      parsedDiagnoses = JSON.parse(program.diagnosis_required);
+    } catch {
+      parsedDiagnoses = [program.diagnosis_required];
+    }
+    
+    return (
+      <main className="container animate-fade-in" style={{ paddingBottom: '5rem', paddingTop: '2.5rem' }}>
+        <div style={{ marginBottom: '1.5rem' }}>
+          <Link 
+            href="/benefits/programs" 
+            style={{ 
+              display: 'inline-flex', 
+              alignItems: 'center', 
+              gap: '0.4rem', 
+              color: 'var(--primary-color)', 
+              textDecoration: 'none', 
+              fontSize: '0.9rem',
+              fontWeight: 600
+            }}
+          >
+            <ArrowLeft size={16} /> Back to Guides & Resources
+          </Link>
+        </div>
+
+        <div style={{ display: 'grid', gridTemplateColumns: '3fr 2fr', gap: '2rem', alignItems: 'start' }} className="responsive-grid">
+          {/* Main Details Panel */}
+          <div>
+            <div className="glass-panel" style={{ background: 'white', padding: '2.5rem', borderRadius: '24px', marginBottom: '2rem' }}>
+              <span style={{ 
+                display: 'inline-block', 
+                fontSize: '0.75rem', 
+                fontWeight: 700, 
+                color: 'var(--primary-color)', 
+                textTransform: 'uppercase', 
+                letterSpacing: '0.05em', 
+                marginBottom: '0.5rem',
+                background: 'rgba(var(--primary-rgb),0.08)',
+                padding: '0.2rem 0.5rem',
+                borderRadius: '4px'
+              }}>
+                {program.county_specific}
+              </span>
+              
+              <h1 style={{ fontSize: '2.2rem', marginBottom: '1rem', fontWeight: 800, color: 'var(--text-main)', lineHeight: 1.25 }}>
+                {program.program_name}
+              </h1>
+              
+              <p style={{ fontSize: '1.1rem', color: 'var(--text-light)', lineHeight: '1.6', marginBottom: '2rem' }}>
+                {program.target_demographic}
+              </p>
+
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem', borderTop: '1px solid rgba(0,0,0,0.06)', borderBottom: '1px solid rgba(0,0,0,0.06)', padding: '1.5rem 0', marginBottom: '2rem' }}>
+                <div>
+                  <strong style={{ display: 'block', fontSize: '0.8rem', color: 'var(--text-light)', textTransform: 'uppercase', marginBottom: '0.25rem' }}>Age Requirements</strong>
+                  <span style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--text-main)' }}>
+                    {program.age_limit_min} to {program.age_limit_max} years old
+                  </span>
+                </div>
+                <div>
+                  <strong style={{ display: 'block', fontSize: '0.8rem', color: 'var(--text-light)', textTransform: 'uppercase', marginBottom: '0.25rem' }}>Income limits</strong>
+                  <span style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--text-main)' }}>
+                    {program.income_limit}
+                  </span>
+                </div>
+              </div>
+
+              <h2 style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '1rem' }}>
+                Qualifying Clinical Diagnoses
+              </h2>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '2rem' }}>
+                {parsedDiagnoses.map((diag, index) => (
+                  <span 
+                    key={index} 
+                    style={{ 
+                      background: 'rgba(var(--primary-rgb),0.04)', 
+                      color: 'var(--primary-color)', 
+                      fontSize: '0.85rem', 
+                      fontWeight: 600, 
+                      padding: '0.3rem 0.6rem', 
+                      borderRadius: '8px', 
+                      border: '1px solid rgba(var(--primary-rgb),0.08)' 
+                    }}
+                  >
+                    {diag}
+                  </span>
+                ))}
+              </div>
+
+              <div style={{ display: 'flex', gap: '1rem', marginTop: '2rem' }}>
+                <a 
+                  href={program.source_url} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="btn-primary" 
+                  style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', width: 'auto', padding: '0.75rem 1.5rem', height: 'auto' }}
+                >
+                  Visit Official Agency Source <Sparkles size={16} />
+                </a>
+              </div>
+            </div>
+
+            {/* Legal Footnotes & Citations block */}
+            <div className="glass-panel" style={{ background: 'rgba(0,0,0,0.01)', padding: '1.5rem', borderRadius: '16px', fontSize: '0.8rem', color: 'var(--text-light)', lineHeight: '1.5' }}>
+              <h3 style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--text-main)', marginTop: 0, marginBottom: '0.5rem' }}>
+                Regulatory & Statutory Framework
+              </h3>
+              <p style={{ margin: 0 }}>
+                This program is governed under specific California Welfare and Institutions Codes, California Education Codes, and the federal Individuals with Disabilities Education Act (IDEA). Eligibility criteria are audited regularly against raw government documents crawled from CDSS, DDS, DHCS, and CDE portals.
+              </p>
+            </div>
+          </div>
+
+          {/* Sidebar: Related Advocates & Quick Actions */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+            {/* Quick Actions Panel */}
+            <div className="glass-panel" style={{ background: 'white', padding: '1.5rem', borderRadius: '20px' }}>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--text-main)' }}>
+                Navigator Toolset
+              </h3>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                <Link href="/" style={{ textDecoration: 'none' }}>
+                  <button className="btn-primary" style={{ width: '100%', height: '42px', padding: 0 }}>
+                    Check Child&apos;s Eligibility
+                  </button>
+                </Link>
+                <Link href="/advocates" style={{ textDecoration: 'none' }}>
+                  <button className="btn-secondary" style={{ width: '100%', height: '42px', padding: 0 }}>
+                    Browse IEP Advocates
+                  </button>
+                </Link>
+              </div>
+            </div>
+
+            {/* Related Advocates list */}
+            {relatedAdvocates.length > 0 && (
+              <div className="glass-panel" style={{ background: 'white', padding: '1.5rem', borderRadius: '20px' }}>
+                <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--text-main)' }}>
+                  IEP Advocates & Specialists
+                </h3>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                  {relatedAdvocates.map(adv => (
+                    <div key={adv.id} style={{ borderBottom: '1px solid rgba(0,0,0,0.05)', paddingBottom: '0.75rem' }}>
+                      <strong style={{ fontSize: '0.9rem', color: 'var(--text-main)', display: 'block' }}>{adv.name}</strong>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--primary-color)', fontWeight: 600, display: 'block', margin: '0.1rem 0' }}>
+                        {adv.credentials}
+                      </span>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--text-light)' }}>
+                        Serving: {adv.counties_served.split(',').slice(0, 3).map(s => formatParam(s)).join(', ')}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </main>
+    );
+  }
+
+  // ==========================================
   // CASE 1: Root Directory Index (/benefits)
   // ==========================================
   if (slug.length === 0) {
@@ -195,11 +504,43 @@ export default async function BenefitsCatchAll({ params }: Props) {
             <ShieldCheck size={12} /> Legal & Care Resources
           </span>
           <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem', fontWeight: 800 }}>
-            California Local Disability Benefits Directory
+            Guides & Resources: Local Disability Benefits
           </h1>
           <p style={{ fontSize: '1.15rem', maxWidth: '800px', margin: '0 auto', color: 'var(--text-light)', lineHeight: '1.6' }}>
             Select your county to browse localized guides for all 78 diagnoses. Discover Lanterman Act Regional Center intake lines, local school district special education inclusion rates, and independent IEP advocates.
           </p>
+        </div>
+
+        {/* State Programs Directory Link Banner */}
+        <div 
+          className="glass-panel" 
+          style={{ 
+            background: 'linear-gradient(135deg, rgba(var(--primary-rgb), 0.08) 0%, rgba(var(--primary-rgb), 0.02) 100%)', 
+            border: '1px solid rgba(var(--primary-rgb), 0.15)',
+            padding: '1.5rem 2rem', 
+            borderRadius: '20px', 
+            marginBottom: '2.5rem',
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            flexWrap: 'wrap',
+            gap: '1rem'
+          }}
+        >
+          <div>
+            <h2 style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--primary-color)', margin: '0 0 0.25rem 0', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <Sparkles size={20} />
+              Looking for Statewide Special Needs Programs?
+            </h2>
+            <p style={{ fontSize: '0.9rem', color: 'var(--text-light)', margin: 0 }}>
+              Browse eligibility guidelines, age requirements, and income limits for all major California public benefits.
+            </p>
+          </div>
+          <Link href="/benefits/programs" style={{ textDecoration: 'none' }}>
+            <button className="btn-primary" style={{ height: '42px', padding: '0 1.5rem', width: 'auto', display: 'flex', alignItems: 'center', gap: '0.4rem', marginTop: 0 }}>
+              Browse Programs Guides & Resources <ArrowRight size={16} />
+            </button>
+          </Link>
         </div>
 
         <div className="glass-panel" style={{ background: 'rgba(255,255,255,0.9)', padding: '2.5rem', borderRadius: '24px' }}>
@@ -276,7 +617,7 @@ export default async function BenefitsCatchAll({ params }: Props) {
                 fontWeight: 600
               }}
             >
-              <ArrowLeft size={16} /> Back to California Directory
+              <ArrowLeft size={16} /> Back to Guides & Resources
             </Link>
           </div>
 
@@ -303,7 +644,7 @@ export default async function BenefitsCatchAll({ params }: Props) {
               <h2 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--primary-color)', display: 'flex', alignItems: 'center', gap: '0.4rem', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
                 <Landmark size={15} /> Catchment Agency
               </h2>
-              <strong style={{ fontSize: '1.05rem', display: 'block', marginBottom: '0.2,rem', color: 'var(--text-main)' }}>
+              <strong style={{ fontSize: '1.05rem', display: 'block', marginBottom: '0.2rem', color: 'var(--text-main)' }}>
                 {countyData.regionalCenters?.[0]?.name || 'California Regional Center'}
               </strong>
               <span style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>
@@ -332,6 +673,18 @@ export default async function BenefitsCatchAll({ params }: Props) {
               </strong>
               <span style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>
                 Current 2026 hourly caregiver rate for In-Home Supportive Services in this county.
+              </span>
+            </div>
+
+            <div>
+              <h2 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--primary-color)', display: 'flex', alignItems: 'center', gap: '0.4rem', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                <Heart size={15} /> Medi-Cal Managed Care
+              </h2>
+              <strong style={{ fontSize: '1.05rem', display: 'block', marginBottom: '0.2rem', color: 'var(--text-main)' }}>
+                {countyData.medi_cal_plans || 'Standard Managed Care Plans'}
+              </strong>
+              <span style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>
+                Assigned Managed Care Plans (MCP) providing healthcare & therapy benefits in this county.
               </span>
             </div>
           </div>
@@ -403,17 +756,25 @@ export default async function BenefitsCatchAll({ params }: Props) {
                 fontWeight: 600
               }}
             >
-              <ArrowLeft size={16} /> Back to California Directory
+              <ArrowLeft size={16} /> Back to Guides & Resources
             </Link>
           </div>
 
+
           <div style={{ marginBottom: '3.5rem' }}>
             <h1 style={{ fontSize: '2.2rem', marginBottom: '0.75rem', fontWeight: 800 }}>
-              {diagnosisFormatted} Benefits Directory by County
+              {diagnosisFormatted} Benefits Guides by County
             </h1>
             <p style={{ fontSize: '1.1rem', color: 'var(--text-light)', lineHeight: '1.6', maxWidth: '850px' }}>
               Select a California county below to view tailored, legally-backed directories outlining local special education services, Regional Center intake departments, and IHSS caregiver wages for children with <strong>{diagnosisFormatted}</strong>.
             </p>
+          </div>
+
+          <div style={{ marginBottom: '2rem' }}>
+            <IhssMiniProduct 
+              diagnosisName={diagnosisFormatted} 
+              countiesList={countiesList.map(c => ({ id: c.id, name: c.name }))}
+            />
           </div>
 
           <div className="glass-panel" style={{ background: 'rgba(255,255,255,0.9)', padding: '2.5rem', borderRadius: '24px' }}>
@@ -515,10 +876,61 @@ export default async function BenefitsCatchAll({ params }: Props) {
       notFound();
     }
 
+    const countiesList = getCounties();
+    const ihssOffice = countyData.countyOffices?.find((o) => o.program_id === 'ihss-for-children');
+    const ihssPhone = ihssOffice?.phone || '';
+    const ihssAddress = ihssOffice?.address || '';
+
+    // Fetch AI-extracted programs from the crawler database matching this diagnosis
+    const crawlerPrograms = getProgramsForDiagnosis(diagnosisSlug);
+
     const countySelpa = countyData.selpas?.[0];
 
     // Load local advocates
-    const localAdvocates = getIepAdvocates(countyId);
+    const rawLocalAdvocates = getIepAdvocates(countyId);
+
+    // Sort local advocates to prioritize specialists matching the child's diagnosis
+    const localAdvocates = [...rawLocalAdvocates].sort((a, b) => {
+      const aText = ((a.specialties || '') + ' ' + (a.description || '')).toLowerCase();
+      const bText = ((b.specialties || '') + ' ' + (b.description || '')).toLowerCase();
+      
+      const diagTerms = [diagnosisFormatted.toLowerCase()];
+      if (diagnosisFormatted.toLowerCase().includes('autism')) {
+        diagTerms.push('autism', 'asd', 'spectrum', 'behavior');
+      }
+      if (diagnosisFormatted.toLowerCase().includes('down syndrome')) {
+        diagTerms.push('down syndrome', 'down\'s', 'trisomy');
+      }
+      if (diagnosisFormatted.toLowerCase().includes('adhd')) {
+        diagTerms.push('adhd', 'add', 'attention deficit');
+      }
+      if (diagnosisFormatted.toLowerCase().includes('learning')) {
+        diagTerms.push('learning', 'dyslexia', 'dysgraphia', 'reading', 'math');
+      }
+      if (diagnosisFormatted.toLowerCase().includes('cerebral palsy')) {
+        diagTerms.push('cerebral palsy', 'palsy');
+      }
+      if (diagnosisFormatted.toLowerCase().includes('speech') || diagnosisFormatted.toLowerCase().includes('language')) {
+        diagTerms.push('speech', 'language', 'apraxia');
+      }
+      if (diagnosisFormatted.toLowerCase().includes('epilepsy')) {
+        diagTerms.push('epilepsy', 'seizure');
+      }
+      if (diagnosisFormatted.toLowerCase().includes('hearing') || diagnosisFormatted.toLowerCase().includes('deaf')) {
+        diagTerms.push('hearing', 'deaf', 'auditory');
+      }
+      if (diagnosisFormatted.toLowerCase().includes('vision') || diagnosisFormatted.toLowerCase().includes('blind')) {
+        diagTerms.push('vision', 'blind', 'visual');
+      }
+      
+      const aScore = diagTerms.some(term => aText.includes(term)) ? 1 : 0;
+      const bScore = diagTerms.some(term => bText.includes(term)) ? 1 : 0;
+      
+      if (aScore !== bScore) {
+        return bScore - aScore;
+      }
+      return b.experience_years - a.experience_years;
+    });
 
     // Gather local resources from database
     const localProviders = getLocalProviders(countyId);
@@ -620,6 +1032,57 @@ export default async function BenefitsCatchAll({ params }: Props) {
       }
     };
 
+    const governmentServicesSchema = {
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'GovernmentService',
+          'name': 'Lanterman Developmental Disabilities Services (Regional Center)',
+          'serviceOperator': {
+            '@type': 'GovernmentOrganization',
+            'name': 'California Department of Developmental Services (DDS)'
+          },
+          'provider': {
+            '@type': 'GovernmentOrganization',
+            'name': rcName
+          },
+          'serviceType': 'Developmental Disability Support'
+        },
+        {
+          '@type': 'GovernmentService',
+          'name': 'In-Home Supportive Services (IHSS)',
+          'serviceOperator': {
+            '@type': 'GovernmentOrganization',
+            'name': 'California Department of Social Services (CDSS)'
+          },
+          'provider': {
+            '@type': 'GovernmentOrganization',
+            'name': `${countyFormatted} County Social Services Agency`
+          },
+          'serviceType': 'Personal Care & Protective Supervision'
+        }
+      ]
+    };
+
+    const advocatesSchema = {
+      '@context': 'https://schema.org',
+      '@graph': localAdvocates.map(adv => ({
+        '@type': 'ProfessionalService',
+        'name': adv.name,
+        'image': 'https://special-needs-ca.vercel.app/avatar-default.png',
+        'telephone': adv.phone,
+        'email': adv.email,
+        'url': adv.website,
+        'address': {
+          '@type': 'PostalAddress',
+          'addressLocality': countyFormatted,
+          'addressRegion': 'CA',
+          'addressCountry': 'US'
+        },
+        'description': `${adv.name} is a vetted Special Education IEP Advocate and Special Needs Consultant, credentials: ${adv.credentials}. specialties: ${adv.specialties || 'IEP, Regional Center, Appeals'}.`
+      }))
+    };
+
     // Coordinate Map pins compile
     const mapResources: {
       id: string;
@@ -676,6 +1139,14 @@ export default async function BenefitsCatchAll({ params }: Props) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewedBySchema) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(governmentServicesSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(advocatesSchema) }}
+        />
 
         {/* E-E-A-T Review Stamp Banner */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'rgba(var(--primary-rgb), 0.03)', border: '1px solid rgba(var(--primary-rgb), 0.08)', padding: '0.75rem 1.5rem', borderRadius: '16px', marginBottom: '2.5rem', flexWrap: 'wrap', gap: '0.75rem' }} className="no-print">
@@ -698,13 +1169,26 @@ export default async function BenefitsCatchAll({ params }: Props) {
           </p>
           <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center', alignItems: 'center' }}>
             <ShareButton />
-            <PrintButton label="Print PDF Directory Guide" />
+            <PrintButton label="Print PDF Guides & Resources" />
           </div>
         </div>
 
         {/* Inclusive resource playground interactive map canvas */}
         <div style={{ marginBottom: '4rem' }} className="no-print">
           <CountyMapClient countyName={countyFormatted} resources={mapResources} />
+        </div>
+
+        {/* IHSS Protective Supervision Mini-Product Tool */}
+        <div style={{ marginBottom: '4rem' }}>
+          <IhssMiniProduct 
+            diagnosisName={diagnosisFormatted}
+            initialCountyId={countyId}
+            initialCountyName={countyFormatted}
+            initialWage={displayWage}
+            initialPhone={ihssPhone}
+            initialAddress={ihssAddress}
+            countiesList={countiesList.map(c => ({ id: c.id, name: c.name }))}
+          />
         </div>
 
         {/* School District Local Stats Banner (renders only for district scope) */}
@@ -798,11 +1282,72 @@ export default async function BenefitsCatchAll({ params }: Props) {
           </div>
         </div>
 
+        {/* Matched Government & Specialized Programs Section */}
+        {crawlerPrograms && crawlerPrograms.length > 0 && (
+          <div className="glass-panel" style={{ background: 'rgba(255, 255, 255, 0.95)', border: '1px solid rgba(var(--primary-rgb), 0.12)', padding: '2rem', borderRadius: '24px', marginBottom: '4rem' }}>
+            <h2 style={{ fontSize: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.25rem', color: 'var(--text-main)' }}>
+              <ShieldCheck color="var(--primary-color)" size={24} />
+              Vetted Government & Community Support Programs for {diagnosisFormatted}
+            </h2>
+            <p style={{ fontSize: '0.98rem', color: 'var(--text-light)', lineHeight: '1.6', marginBottom: '1.5rem' }}>
+              Based on crawled state agency rules, the following programs specify qualifying eligibility rules matching <strong>{diagnosisFormatted}</strong>:
+            </p>
+            
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
+              {crawlerPrograms.map((prog) => {
+                const pSlug = prog.program_name
+                  .toLowerCase()
+                  .replace(/[^\w\s-]/g, '')
+                  .trim()
+                  .replace(/\s+/g, '-')
+                  .replace(/-+/g, '-');
+                return (
+                  <div 
+                    key={prog.id} 
+                    style={{ 
+                      padding: '1.25rem', 
+                      background: 'rgba(var(--primary-rgb), 0.02)', 
+                      borderRadius: '16px', 
+                      border: '1px solid rgba(0,0,0,0.03)', 
+                      display: 'flex', 
+                      flexDirection: 'column', 
+                      justifyContent: 'space-between',
+                      transition: 'transform 0.2s ease, box-shadow 0.2s ease'
+                    }}
+                  >
+                    <div>
+                      <h3 style={{ fontSize: '1.1rem', color: 'var(--primary-color)', margin: '0 0 0.5rem 0', fontWeight: 700 }}>
+                        {prog.program_name}
+                      </h3>
+                      <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', lineHeight: '1.4', margin: '0 0 1rem 0' }}>
+                        {prog.target_demographic}
+                      </p>
+                    </div>
+                    
+                    <div style={{ borderTop: '1px solid rgba(0,0,0,0.04)', paddingTop: '0.75rem', fontSize: '0.78rem', color: 'var(--text-light)', display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
+                      <span><strong>Ages:</strong> {prog.age_limit_min} - {prog.age_limit_max} years</span>
+                      <span><strong>Income:</strong> {prog.income_limit}</span>
+                      <div style={{ display: 'flex', gap: '0.75rem', marginTop: '0.75rem' }}>
+                        <Link href={`/benefits/program/${pSlug}`} style={{ textDecoration: 'none', color: 'var(--primary-color)', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '0.2rem' }}>
+                          View Guide <ArrowRight size={12} />
+                        </Link>
+                        <a href={prog.source_url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', color: 'var(--text-light)' }}>
+                          Official Source ↗
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
         {/* Local Resource Directory Layout */}
         <div className="glass-panel" style={{ background: 'rgba(var(--primary-rgb), 0.03)', border: '1px solid rgba(var(--primary-rgb), 0.08)', padding: '2rem', borderRadius: '24px', marginBottom: '4rem' }}>
           <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', marginBottom: '1.25rem' }}>
             <MapPin color="var(--primary-color)" size={24} />
-            <h2 style={{ fontSize: '1.4rem' }}>Local Resource Directory ({countyFormatted})</h2>
+            <h2 style={{ fontSize: '1.4rem' }}>Local Resource Guides & Contacts ({countyFormatted})</h2>
           </div>
           
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', marginTop: '1.5rem' }}>
@@ -856,6 +1401,39 @@ export default async function BenefitsCatchAll({ params }: Props) {
                 ))}
               </div>
             )}
+
+            {/* Local Insurance & Payouts details */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', fontSize: '0.9rem' }}>
+              <strong style={{ fontSize: '1rem', display: 'flex', alignItems: 'center', gap: '0.4rem', color: 'var(--primary-color)' }}>
+                <Heart size={16} /> Local Insurance & Payouts
+              </strong>
+              
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+                <strong style={{ fontSize: '0.95rem' }}>Medi-Cal Managed Care Plans</strong>
+                {countyData.medi_cal_plans ? (
+                  <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', margin: 0, lineHeight: 1.4 }}>
+                    {countyData.medi_cal_plans}
+                  </p>
+                ) : (
+                  <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', margin: 0 }}>
+                    Standard Medi-Cal Managed Care Plans apply.
+                  </p>
+                )}
+                <span style={{ fontSize: '0.78rem', color: 'var(--text-light)', display: 'block', marginTop: '0.2rem' }}>
+                  Managed care plans coordinate medical, pediatric, and developmental therapies in this county.
+                </span>
+              </div>
+
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', borderTop: '1px solid rgba(0,0,0,0.05)', paddingTop: '1rem' }}>
+                <strong style={{ fontSize: '0.95rem' }}>IHSS Provider Payout Rate</strong>
+                <span style={{ fontSize: '1.2rem', fontWeight: 700, color: 'var(--text-main)' }}>
+                  ${displayWage.toFixed(2)} / Hour
+                </span>
+                <span style={{ fontSize: '0.78rem', color: 'var(--text-light)', display: 'block' }}>
+                  Current In-Home Supportive Services (IHSS) hourly rate for parent caregivers in {countyFormatted} County.
+                </span>
+              </div>
+            </div>
           </div>
 
           {/* Localized Community Assets Section */}
@@ -1022,49 +1600,99 @@ export default async function BenefitsCatchAll({ params }: Props) {
             </p>
             
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
-              {localAdvocates.map((adv) => (
-                <div 
-                  key={adv.id} 
-                  style={{ 
-                    background: 'white', 
-                    padding: '1.25rem', 
-                    borderRadius: '16px', 
-                    border: '1px solid rgba(0,0,0,0.04)',
-                    boxShadow: '0 2px 12px rgba(0,0,0,0.01)',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    justifyContent: 'space-between'
-                  }}
-                >
-                  <div>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '1rem' }}>
-                      <strong style={{ display: 'block', fontSize: '1.05rem', color: 'var(--text-main)', marginBottom: '0.2rem' }}>
-                        {adv.name}
-                      </strong>
-                      <ContributionModal suggestionType="advocate" targetId={adv.id} targetName={adv.name} buttonLabel="Update" />
+              {localAdvocates.map((adv) => {
+                const isSpecialist = (() => {
+                  const text = ((adv.specialties || '') + ' ' + (adv.description || '')).toLowerCase();
+                  const diagTerms = [diagnosisFormatted.toLowerCase()];
+                  if (diagnosisFormatted.toLowerCase().includes('autism')) {
+                    diagTerms.push('autism', 'asd', 'spectrum', 'behavior');
+                  }
+                  if (diagnosisFormatted.toLowerCase().includes('down syndrome')) {
+                    diagTerms.push('down syndrome', 'down\'s', 'trisomy');
+                  }
+                  if (diagnosisFormatted.toLowerCase().includes('adhd')) {
+                    diagTerms.push('adhd', 'add', 'attention deficit');
+                  }
+                  if (diagnosisFormatted.toLowerCase().includes('learning')) {
+                    diagTerms.push('learning', 'dyslexia', 'dysgraphia', 'reading', 'math');
+                  }
+                  if (diagnosisFormatted.toLowerCase().includes('cerebral palsy')) {
+                    diagTerms.push('cerebral palsy', 'palsy');
+                  }
+                  if (diagnosisFormatted.toLowerCase().includes('speech') || diagnosisFormatted.toLowerCase().includes('language')) {
+                    diagTerms.push('speech', 'language', 'apraxia');
+                  }
+                  if (diagnosisFormatted.toLowerCase().includes('epilepsy')) {
+                    diagTerms.push('epilepsy', 'seizure');
+                  }
+                  if (diagnosisFormatted.toLowerCase().includes('hearing') || diagnosisFormatted.toLowerCase().includes('deaf')) {
+                    diagTerms.push('hearing', 'deaf', 'auditory');
+                  }
+                  if (diagnosisFormatted.toLowerCase().includes('vision') || diagnosisFormatted.toLowerCase().includes('blind')) {
+                    diagTerms.push('vision', 'blind', 'visual');
+                  }
+                  return diagTerms.some(term => text.includes(term));
+                })();
+
+                return (
+                  <div 
+                    key={adv.id} 
+                    style={{ 
+                      background: 'white', 
+                      padding: '1.25rem', 
+                      borderRadius: '16px', 
+                      border: '1px solid rgba(0,0,0,0.04)',
+                      boxShadow: '0 2px 12px rgba(0,0,0,0.01)',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      justifyContent: 'space-between'
+                    }}
+                  >
+                    <div>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '1rem' }}>
+                        <strong style={{ display: 'block', fontSize: '1.05rem', color: 'var(--text-main)', marginBottom: '0.2rem' }}>
+                          {adv.name}
+                        </strong>
+                        <ContributionModal suggestionType="advocate" targetId={adv.id} targetName={adv.name} buttonLabel="Update" />
+                      </div>
+                      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.35rem', alignItems: 'center', marginBottom: '0.5rem' }}>
+                        <span style={{ fontSize: '0.8rem', color: 'var(--primary-color)', fontWeight: 600 }}>
+                          {adv.credentials}
+                        </span>
+                        {isSpecialist && (
+                          <span style={{ 
+                            background: 'rgba(16, 185, 129, 0.08)', 
+                            color: '#10b981', 
+                            fontSize: '0.72rem', 
+                            fontWeight: 700, 
+                            padding: '0.1rem 0.4rem', 
+                            borderRadius: '4px', 
+                            border: '1px solid rgba(16, 185, 129, 0.15)'
+                          }}>
+                            ✓ {diagnosisFormatted} Specialist
+                          </span>
+                        )}
+                      </div>
+                      <div style={{ fontSize: '0.82rem', color: 'var(--text-light)', display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
+                        <span><strong>Experience:</strong> {adv.experience_years} years</span>
+                        <span><strong>Rate:</strong> {adv.price_rate}</span>
+                        <span><strong>Languages:</strong> {adv.languages_spoken}</span>
+                      </div>
                     </div>
-                    <span style={{ fontSize: '0.8rem', color: 'var(--primary-color)', fontWeight: 600, display: 'block', marginBottom: '0.5rem' }}>
-                      {adv.credentials}
-                    </span>
-                    <div style={{ fontSize: '0.82rem', color: 'var(--text-light)', display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
-                      <span><strong>Experience:</strong> {adv.experience_years} years</span>
-                      <span><strong>Rate:</strong> {adv.price_rate}</span>
-                      <span><strong>Languages:</strong> {adv.languages_spoken}</span>
+                    
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', fontSize: '0.85rem', borderTop: '1px solid rgba(0,0,0,0.04)', paddingTop: '0.75rem', marginTop: '0.75rem' }}>
+                      <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
+                        <Phone size={12} style={{ flexShrink: 0 }} /> 
+                        <a href={`tel:${adv.phone}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{adv.phone}</a>
+                      </span>
+                      <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
+                        <Mail size={12} style={{ flexShrink: 0 }} /> 
+                        <a href={`mailto:${adv.email}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{adv.email}</a>
+                      </span>
                     </div>
                   </div>
-                  
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', fontSize: '0.85rem', borderTop: '1px solid rgba(0,0,0,0.04)', paddingTop: '0.75rem', marginTop: '0.75rem' }}>
-                    <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
-                      <Phone size={12} style={{ flexShrink: 0 }} /> 
-                      <a href={`tel:${adv.phone}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{adv.phone}</a>
-                    </span>
-                    <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
-                      <Mail size={12} style={{ flexShrink: 0 }} /> 
-                      <a href={`mailto:${adv.email}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{adv.email}</a>
-                    </span>
-                  </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         )}

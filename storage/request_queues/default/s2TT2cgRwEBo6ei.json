@@ -1,9 +1,0 @@
-{
-	"id": "s2TT2cgRwEBo6ei",
-	"json": "{\"id\":\"s2TT2cgRwEBo6ei\",\"url\":\"https://health.ucdavis.edu/vascular/research/\",\"loadedUrl\":\"https://health.ucdavis.edu/vascular/research/\",\"uniqueKey\":\"https://health.ucdavis.edu/vascular/research\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:56.253Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/vascular/research",
-	"url": "https://health.ucdavis.edu/vascular/research/"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "oEbTMGMYnGVl92J",
-	"json": "{\"id\":\"oEbTMGMYnGVl92J\",\"url\":\"https://www.hcd.ca.gov/funding/mhp\",\"loadedUrl\":\"https://www.hcd.ca.gov/funding/mhp\",\"uniqueKey\":\"https://www.hcd.ca.gov/funding/mhp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:12:22.936Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.hcd.ca.gov/funding/mhp",
-	"url": "https://www.hcd.ca.gov/funding/mhp"
-}

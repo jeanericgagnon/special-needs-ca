@@ -1,9 +1,0 @@
-{
-	"id": "oaeS96UIR5MLIET",
-	"json": "{\"id\":\"oaeS96UIR5MLIET\",\"url\":\"https://rarediseases.org/rare-diseases/refractory-celiac-disease/\",\"loadedUrl\":\"https://rarediseases.org/rare-diseases/refractory-celiac-disease/\",\"uniqueKey\":\"https://rarediseases.org/rare-diseases/refractory-celiac-disease\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:06:15.565Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/rare-diseases/refractory-celiac-disease",
-	"url": "https://rarediseases.org/rare-diseases/refractory-celiac-disease/"
-}

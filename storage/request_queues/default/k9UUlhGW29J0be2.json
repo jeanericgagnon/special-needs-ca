@@ -1,9 +1,0 @@
-{
-	"id": "k9UUlhGW29J0be2",
-	"json": "{\"id\":\"k9UUlhGW29J0be2\",\"url\":\"https://scdd.ca.gov/pos-service-code/intermediate-care-facility-developmentally-disabled-nursing-icf-dd-n/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/intermediate-care-facility-developmentally-disabled-nursing-icf-dd-n/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/intermediate-care-facility-developmentally-disabled-nursing-icf-dd-n\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:51.807Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/pos-service-code/intermediate-care-facility-developmentally-disabled-nursing-icf-dd-n",
-	"url": "https://scdd.ca.gov/pos-service-code/intermediate-care-facility-developmentally-disabled-nursing-icf-dd-n/"
-}

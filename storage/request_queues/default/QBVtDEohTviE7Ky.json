@@ -1,9 +1,0 @@
-{
-	"id": "QBVtDEohTviE7Ky",
-	"json": "{\"id\":\"QBVtDEohTviE7Ky\",\"url\":\"https://www.cdph.ca.gov/Programs/OHE/abortion/Pages/update-on-medication-abortion.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/OHE/abortion/Pages/update-on-medication-abortion.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/OHE/abortion/Pages/update-on-medication-abortion.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:21:11.931Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/OHE/abortion/Pages/update-on-medication-abortion.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/OHE/abortion/Pages/update-on-medication-abortion.aspx"
-}

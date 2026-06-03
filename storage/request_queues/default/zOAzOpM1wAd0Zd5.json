@@ -1,9 +1,0 @@
-{
-	"id": "zOAzOpM1wAd0Zd5",
-	"json": "{\"id\":\"zOAzOpM1wAd0Zd5\",\"url\":\"https://www.cdii.ca.gov/committees-and-advisory-groups/data-exchange-framework/archive/#stakeholderadvisory\",\"loadedUrl\":\"https://www.cdii.ca.gov/committees-and-advisory-groups/data-exchange-framework/archive/#stakeholderadvisory\",\"uniqueKey\":\"https://www.cdii.ca.gov/committees-and-advisory-groups/data-exchange-framework/archive\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:29:31.271Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdii.ca.gov/committees-and-advisory-groups/data-exchange-framework/archive",
-	"url": "https://www.cdii.ca.gov/committees-and-advisory-groups/data-exchange-framework/archive/#stakeholderadvisory"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "ZLNzxE1qBiyvbOa",
-	"json": "{\"id\":\"ZLNzxE1qBiyvbOa\",\"url\":\"https://www.cdss.ca.gov/inforesources/cdss-programs/adult-protective-services/information-for-mandated-reporters\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/cdss-programs/adult-protective-services/information-for-mandated-reporters\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/cdss-programs/adult-protective-services/information-for-mandated-reporters\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:21:56.218Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/inforesources/cdss-programs/adult-protective-services/information-for-mandated-reporters",
-	"url": "https://www.cdss.ca.gov/inforesources/cdss-programs/adult-protective-services/information-for-mandated-reporters"
-}

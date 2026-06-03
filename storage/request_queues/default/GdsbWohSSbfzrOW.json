@@ -1,9 +1,0 @@
-{
-	"id": "GdsbWohSSbfzrOW",
-	"json": "{\"id\":\"GdsbWohSSbfzrOW\",\"url\":\"https://cdss.ca.gov/inforesources/Tribal-Affairs/Clearing-House-Resources\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/tribal-affairs/clearing-house-resources\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Tribal-Affairs/Clearing-House-Resources\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:31.788Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/Tribal-Affairs/Clearing-House-Resources",
-	"url": "https://cdss.ca.gov/inforesources/Tribal-Affairs/Clearing-House-Resources"
-}

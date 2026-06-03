@@ -1,9 +1,0 @@
-{
-	"id": "SlJj5piBbYBiHjM",
-	"json": "{\"id\":\"SlJj5piBbYBiHjM\",\"url\":\"https://give.ucdavis.edu/OBGE\",\"loadedUrl\":\"https://give.ucdavis.edu/OBGE\",\"uniqueKey\":\"https://give.ucdavis.edu/OBGE\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:00:57.038Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/OBGE",
-	"url": "https://give.ucdavis.edu/OBGE"
-}

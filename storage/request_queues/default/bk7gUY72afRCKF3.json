@@ -1,9 +1,0 @@
-{
-	"id": "bk7gUY72afRCKF3",
-	"json": "{\"id\":\"bk7gUY72afRCKF3\",\"url\":\"https://www.cde.ca.gov/ci/se/tselsocialawareness.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=8a3a2a41-9218-4f71-85ae-509f52115725&ssb=52611262766&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fci%2Fse%2Ftselsocialawareness.asp&ssi=f13c119d-ctxv-4c05-a2eb-2d71dce9686e&ssk=botmanager_support@radware.com&ssm=71028273438981988131650996944869&ssn=a88b0083163730fba9a92ddbd8d9a498e83843133492-12a9-4af6-9e276e&sso=d7506949-0e7975afbee11b15b298568836d4e9d980c85e52c98530ed&ssp=85450601351780350051178038893177559&ssq=32905562660946748496325717048131710443721&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/138.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImNhLmdvdiIsIl9fdXptZiI6IjdmOTAwMDQzMTMzNDkyLTEyYTktNGFmNi05OTQ5LTBlNzk3NWFmYmVlMTEtMTc4MDMyNTcxNzUzNDg5MTUxNC0wMDMxOTM3ZDNkNjQzMWZmOGI5MTMiLCJ1em14IjoiN2Y5MDAwZmQzMDNmM2YtMjU4MS00YTYzLTljOTctM2NiYTZmMDQ3NWRiMS0xNzgwMzI1NzE3NTM0ODkxNTE0LWU2ZTQ1OTk3MjI1MzJiNzgxMyJ9\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/se/tselsocialawareness.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:10:09.573Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ci/se/tselsocialawareness.asp",
-	"url": "https://www.cde.ca.gov/ci/se/tselsocialawareness.asp"
-}

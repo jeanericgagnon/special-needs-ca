@@ -1,9 +1,0 @@
-{
-	"id": "8PqT2U2p0K4kOXR",
-	"json": "{\"id\":\"8PqT2U2p0K4kOXR\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/21786/marc-lenaerts-headache_medicine-neurology-sacramento\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/21786/marc-lenaerts-headache_medicine-neurology-sacramento\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/21786/marc-lenaerts-headache_medicine-neurology-sacramento\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:12.096Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/21786/marc-lenaerts-headache_medicine-neurology-sacramento",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/21786/marc-lenaerts-headache_medicine-neurology-sacramento"
-}

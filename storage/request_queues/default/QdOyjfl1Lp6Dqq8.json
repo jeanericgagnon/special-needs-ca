@@ -1,9 +1,0 @@
-{
-	"id": "QdOyjfl1Lp6Dqq8",
-	"json": "{\"id\":\"QdOyjfl1Lp6Dqq8\",\"url\":\"https://www.immigrantguide.ca.gov/en/Search?googleid=001779225245372747843%3A8cyk3d-ufgk&q=Immigrant%20Guide\",\"loadedUrl\":\"https://www.immigrantguide.ca.gov/en/Search?googleid=001779225245372747843%3A8cyk3d-ufgk&q=Immigrant%20Guide\",\"uniqueKey\":\"https://www.immigrantguide.ca.gov/en/Search?googleid=001779225245372747843%3A8cyk3d-ufgk&q=Immigrant+Guide\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:30:51.782Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.immigrantguide.ca.gov/en/Search?googleid=001779225245372747843%3A8cyk3d-ufgk&q=Immigrant+Guide",
-	"url": "https://www.immigrantguide.ca.gov/en/Search?googleid=001779225245372747843%3A8cyk3d-ufgk&q=Immigrant%20Guide"
-}

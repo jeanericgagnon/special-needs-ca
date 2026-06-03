@@ -1,9 +1,0 @@
-{
-	"id": "oOowlFEJFbB5Ang",
-	"json": "{\"id\":\"oOowlFEJFbB5Ang\",\"url\":\"https://www.calvet.ca.gov/Pages/Secretary.aspx\",\"loadedUrl\":\"https://www.calvet.ca.gov/Pages/Secretary.aspx\",\"uniqueKey\":\"https://www.calvet.ca.gov/Pages/Secretary.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:10.936Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.calvet.ca.gov/Pages/Secretary.aspx",
-	"url": "https://www.calvet.ca.gov/Pages/Secretary.aspx"
-}

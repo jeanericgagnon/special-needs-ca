@@ -1,9 +1,0 @@
-{
-	"id": "zUa3wzmGNKm5Aku",
-	"json": "{\"id\":\"zUa3wzmGNKm5Aku\",\"url\":\"https://ucp.org/accessibility-statement/\",\"loadedUrl\":\"https://ucp.org/accessibility-statement/\",\"uniqueKey\":\"https://ucp.org/accessibility-statement\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:34.263Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ucp.org/accessibility-statement",
-	"url": "https://ucp.org/accessibility-statement/"
-}

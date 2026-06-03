@@ -1,9 +1,0 @@
-{
-	"id": "AHIWThZxTdvO0eV",
-	"json": "{\"id\":\"AHIWThZxTdvO0eV\",\"url\":\"https://mychart.ucdavis.edu/mychart/\",\"loadedUrl\":\"https://health.ucdavis.edu/login/\",\"uniqueKey\":\"https://mychart.ucdavis.edu/mychart\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:43.995Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://mychart.ucdavis.edu/mychart",
-	"url": "https://mychart.ucdavis.edu/mychart/"
-}

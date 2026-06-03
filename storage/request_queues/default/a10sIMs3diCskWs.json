@@ -1,9 +1,0 @@
-{
-	"id": "a10sIMs3diCskWs",
-	"json": "{\"id\":\"a10sIMs3diCskWs\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/43393/frederick-bassal-pediatric_neurology-sacramento?FreeText%3aLast+name=Bassal\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/43393/frederick-bassal-pediatric_neurology-sacramento?FreeText%3aLast+name=Bassal\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/43393/frederick-bassal-pediatric_neurology-sacramento?FreeText%3ALast+name=Bassal\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:17.753Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/43393/frederick-bassal-pediatric_neurology-sacramento?FreeText%3ALast+name=Bassal",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/43393/frederick-bassal-pediatric_neurology-sacramento?FreeText%3aLast+name=Bassal"
-}

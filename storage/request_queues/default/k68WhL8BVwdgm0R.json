@@ -1,9 +1,0 @@
-{
-	"id": "k68WhL8BVwdgm0R",
-	"json": "{\"id\":\"k68WhL8BVwdgm0R\",\"url\":\"https://saronlab.ucdavis.edu/spirit-rock-i.html\",\"loadedUrl\":\"https://saronlab.ucdavis.edu/spirit-rock-i.html\",\"uniqueKey\":\"https://saronlab.ucdavis.edu/spirit-rock-i.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:55.608Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://saronlab.ucdavis.edu/spirit-rock-i.html",
-	"url": "https://saronlab.ucdavis.edu/spirit-rock-i.html"
-}

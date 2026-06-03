@@ -1,9 +1,0 @@
-{
-	"id": "QeH3AKX1oQcAivp",
-	"json": "{\"id\":\"QeH3AKX1oQcAivp\",\"url\":\"https://www.cdph.ca.gov/Programs/CID/DOA/Pages/OA_ADAP_Allowable_Cabenuva_Related_Medical_Services.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CID/DOA/Pages/OA_ADAP_Allowable_Cabenuva_Related_Medical_Services.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CID/DOA/Pages/OA_ADAP_Allowable_Cabenuva_Related_Medical_Services.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":3,\"errorMessages\":[\"Error: request timed out after 30 seconds.\\n    at Timeout._onTimeout (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@apify/timeout/cjs/index.cjs:64:68)\\n    at listOnTimeout (node:internal/timers:588:17)\\n    at process.processTimers (node:internal/timers:523:7)\",\"Error: request timed out after 30 seconds.\\n    at Timeout._onTimeout (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@apify/timeout/cjs/index.cjs:64:68)\\n    at listOnTimeout (node:internal/timers:588:17)\\n    at process.processTimers (node:internal/timers:523:7)\",\"Error: request timed out after 30 seconds.\\n    at Timeout._onTimeout (/Users/ericgagnon/Documents/antigravity/beautiful-lavoisier/node_modules/@apify/timeout/cjs/index.cjs:64:68)\\n    at listOnTimeout (node:internal/timers:588:17)\\n    at process.processTimers (node:internal/timers:523:7)\"],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:37:12.428Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 3,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CID/DOA/Pages/OA_ADAP_Allowable_Cabenuva_Related_Medical_Services.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CID/DOA/Pages/OA_ADAP_Allowable_Cabenuva_Related_Medical_Services.aspx"
-}

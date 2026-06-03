@@ -1,9 +1,0 @@
-{
-	"id": "UMZm2oRcjN0L8Gd",
-	"json": "{\"id\":\"UMZm2oRcjN0L8Gd\",\"url\":\"https://giving.ucdavis.edu/ways-to-give/employer-donation-matching\",\"loadedUrl\":\"https://giving.ucdavis.edu/ways-to-give/employer-donation-matching\",\"uniqueKey\":\"https://giving.ucdavis.edu/ways-to-give/employer-donation-matching\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:31.578Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://giving.ucdavis.edu/ways-to-give/employer-donation-matching",
-	"url": "https://giving.ucdavis.edu/ways-to-give/employer-donation-matching"
-}

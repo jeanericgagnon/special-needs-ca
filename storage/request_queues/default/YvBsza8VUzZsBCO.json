@@ -1,9 +1,0 @@
-{
-	"id": "YvBsza8VUzZsBCO",
-	"json": "{\"id\":\"YvBsza8VUzZsBCO\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/11708/kiran-nandalike-pediatric_pulmonology-pediatric_respiratory_and_sleep_medicine-pediatric_sleep-sleep_medicine-sacramento?FreeText%3aLast+name=Nandalike\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/11708/kiran-nandalike-pediatric_pulmonology-pediatric_respiratory_and_sleep_medicine-pediatric_sleep-sleep_medicine-sacramento?FreeText%3aLast+name=Nandalike\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/11708/kiran-nandalike-pediatric_pulmonology-pediatric_respiratory_and_sleep_medicine-pediatric_sleep-sleep_medicine-sacramento?FreeText%3ALast+name=Nandalike\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:18.458Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/11708/kiran-nandalike-pediatric_pulmonology-pediatric_respiratory_and_sleep_medicine-pediatric_sleep-sleep_medicine-sacramento?FreeText%3ALast+name=Nandalike",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/11708/kiran-nandalike-pediatric_pulmonology-pediatric_respiratory_and_sleep_medicine-pediatric_sleep-sleep_medicine-sacramento?FreeText%3aLast+name=Nandalike"
-}

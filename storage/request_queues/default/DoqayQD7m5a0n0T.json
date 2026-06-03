@@ -1,9 +1,0 @@
-{
-	"id": "DoqayQD7m5a0n0T",
-	"json": "{\"id\":\"DoqayQD7m5a0n0T\",\"url\":\"https://www.cdph.ca.gov/Programs/CID/ORH/Pages/What-is-a-Specialist.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CID/ORH/Pages/What-is-a-Specialist.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CID/ORH/Pages/What-is-a-Specialist.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:03:16.282Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CID/ORH/Pages/What-is-a-Specialist.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CID/ORH/Pages/What-is-a-Specialist.aspx"
-}

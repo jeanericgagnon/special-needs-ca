@@ -1,9 +1,0 @@
-{
-	"id": "ZKcxKrcLkwx8vki",
-	"json": "{\"id\":\"ZKcxKrcLkwx8vki\",\"url\":\"https://caes.ucdavis.edu/students/clubs\",\"loadedUrl\":\"https://caes.ucdavis.edu/students/clubs\",\"uniqueKey\":\"https://caes.ucdavis.edu/students/clubs\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:55:00.926Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://caes.ucdavis.edu/students/clubs",
-	"url": "https://caes.ucdavis.edu/students/clubs"
-}

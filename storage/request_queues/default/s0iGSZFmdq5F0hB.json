@@ -1,9 +1,0 @@
-{
-	"id": "s0iGSZFmdq5F0hB",
-	"json": "{\"id\":\"s0iGSZFmdq5F0hB\",\"url\":\"https://shcs.ucdavis.edu/services/other-services/intervention-services\",\"loadedUrl\":\"https://shcs.ucdavis.edu/services/other-services/intervention-services\",\"uniqueKey\":\"https://shcs.ucdavis.edu/services/other-services/intervention-services\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:34.129Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://shcs.ucdavis.edu/services/other-services/intervention-services",
-	"url": "https://shcs.ucdavis.edu/services/other-services/intervention-services"
-}

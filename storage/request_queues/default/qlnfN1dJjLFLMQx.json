@@ -1,9 +1,0 @@
-{
-	"id": "qlnfN1dJjLFLMQx",
-	"json": "{\"id\":\"qlnfN1dJjLFLMQx\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/42555/sabrina-evans-surgery_-_cardiothoracic-surgery_-_thoracic-sacramento?FreeText:Last+name=evans\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/42555/sabrina-evans-surgery_-_cardiothoracic-surgery_-_thoracic-sacramento?FreeText:Last+name=evans\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/42555/sabrina-evans-surgery_-_cardiothoracic-surgery_-_thoracic-sacramento?FreeText%3ALast+name=evans\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:07.725Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/42555/sabrina-evans-surgery_-_cardiothoracic-surgery_-_thoracic-sacramento?FreeText%3ALast+name=evans",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/42555/sabrina-evans-surgery_-_cardiothoracic-surgery_-_thoracic-sacramento?FreeText:Last+name=evans"
-}

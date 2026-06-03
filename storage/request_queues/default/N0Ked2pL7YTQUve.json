@@ -1,9 +1,0 @@
-{
-	"id": "N0Ked2pL7YTQUve",
-	"json": "{\"id\":\"N0Ked2pL7YTQUve\",\"url\":\"https://scdd.ca.gov/pos-service-code/out-of-home-respite-acute-care-facility/\",\"loadedUrl\":\"https://scdd.ca.gov/pos-service-code/out-of-home-respite-acute-care-facility/\",\"uniqueKey\":\"https://scdd.ca.gov/pos-service-code/out-of-home-respite-acute-care-facility\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:08:50.470Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/pos-service-code/out-of-home-respite-acute-care-facility",
-	"url": "https://scdd.ca.gov/pos-service-code/out-of-home-respite-acute-care-facility/"
-}

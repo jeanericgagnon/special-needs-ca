@@ -1,9 +1,0 @@
-{
-	"id": "ct4czHXGo44YExo",
-	"json": "{\"id\":\"ct4czHXGo44YExo\",\"url\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Reportable-Disease-and-Conditions.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Reportable-Disease-and-Conditions.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Reportable-Disease-and-Conditions.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:44:18.633Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Reportable-Disease-and-Conditions.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Reportable-Disease-and-Conditions.aspx"
-}

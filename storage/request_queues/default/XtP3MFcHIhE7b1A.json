@@ -1,9 +1,0 @@
-{
-	"id": "XtP3MFcHIhE7b1A",
-	"json": "{\"id\":\"XtP3MFcHIhE7b1A\",\"url\":\"http://www.cdss.ca.gov/inforesources/ihss/ihss-providers/how-to-appeal-if-you-are-denied\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/ihss/ihss-providers/how-to-appeal-if-you-are-denied\",\"uniqueKey\":\"http://www.cdss.ca.gov/inforesources/ihss/ihss-providers/how-to-appeal-if-you-are-denied\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:07:46.950Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.cdss.ca.gov/inforesources/ihss/ihss-providers/how-to-appeal-if-you-are-denied",
-	"url": "http://www.cdss.ca.gov/inforesources/ihss/ihss-providers/how-to-appeal-if-you-are-denied"
-}

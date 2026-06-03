@@ -1,9 +1,0 @@
-{
-	"id": "Dn5Krp08pHgq3hk",
-	"json": "{\"id\":\"Dn5Krp08pHgq3hk\",\"url\":\"https://neuroscience.ucdavis.edu/people/elle-murphy\",\"loadedUrl\":\"https://neuroscience.ucdavis.edu/people/elle-murphy\",\"uniqueKey\":\"https://neuroscience.ucdavis.edu/people/elle-murphy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:26:38.529Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://neuroscience.ucdavis.edu/people/elle-murphy",
-	"url": "https://neuroscience.ucdavis.edu/people/elle-murphy"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "bWwj112qzgfbNJe",
-	"json": "{\"id\":\"bWwj112qzgfbNJe\",\"url\":\"https://www.ssa.gov/ssi/ssi-additional-info.htm\",\"loadedUrl\":\"https://www.ssa.gov/ssi/ssi-additional-info.htm\",\"uniqueKey\":\"https://www.ssa.gov/ssi/ssi-additional-info.htm\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:54.860Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ssa.gov/ssi/ssi-additional-info.htm",
-	"url": "https://www.ssa.gov/ssi/ssi-additional-info.htm"
-}

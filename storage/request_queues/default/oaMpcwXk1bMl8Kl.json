@@ -1,9 +1,0 @@
-{
-	"id": "oaMpcwXk1bMl8Kl",
-	"json": "{\"id\":\"oaMpcwXk1bMl8Kl\",\"url\":\"https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/CDPH-CFHL_LHD-Allocations-FFY2024.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/CDPH-CFHL_LHD-Allocations-FFY2024.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/CDPH-CFHL_LHD-Allocations-FFY2024.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:53:42.232Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/CDPH-CFHL_LHD-Allocations-FFY2024.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/RPHO/Pages/All-Local-Health-Jurisdiction-Letters-Notices/CDPH-CFHL_LHD-Allocations-FFY2024.aspx"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "CvU8O62MkmtaMwh",
-	"json": "{\"id\":\"CvU8O62MkmtaMwh\",\"url\":\"https://www.dgs.ca.gov/OAH/Case-Types/Special-Education/Self-Help/Due-Process-Hearings?search=due%20process%20complaint\",\"loadedUrl\":\"https://www.dgs.ca.gov/OAH/Case-Types/Special-Education/Self-Help/Due-Process-Hearings?search=due%20process%20complaint\",\"uniqueKey\":\"https://www.dgs.ca.gov/OAH/Case-Types/Special-Education/Self-Help/Due-Process-Hearings?search=due+process+complaint\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:37.935Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dgs.ca.gov/OAH/Case-Types/Special-Education/Self-Help/Due-Process-Hearings?search=due+process+complaint",
-	"url": "https://www.dgs.ca.gov/OAH/Case-Types/Special-Education/Self-Help/Due-Process-Hearings?search=due%20process%20complaint"
-}

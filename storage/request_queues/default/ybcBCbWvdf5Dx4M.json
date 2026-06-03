@@ -1,9 +1,0 @@
-{
-	"id": "ybcBCbWvdf5Dx4M",
-	"json": "{\"id\":\"ybcBCbWvdf5Dx4M\",\"url\":\"https://oig.ssa.gov/fraud-reporting/resources-for-other-types-of-fraud/\",\"loadedUrl\":\"https://oig.ssa.gov/fraud-reporting/resources-for-other-types-of-fraud/\",\"uniqueKey\":\"https://oig.ssa.gov/fraud-reporting/resources-for-other-types-of-fraud\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:37.836Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://oig.ssa.gov/fraud-reporting/resources-for-other-types-of-fraud",
-	"url": "https://oig.ssa.gov/fraud-reporting/resources-for-other-types-of-fraud/"
-}

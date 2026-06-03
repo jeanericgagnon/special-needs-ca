@@ -1,9 +1,0 @@
-{
-	"id": "gl3gaFLjRAIzxgg",
-	"json": "{\"id\":\"gl3gaFLjRAIzxgg\",\"url\":\"https://www.senate.ca.gov/accessibility\",\"loadedUrl\":\"https://www.senate.ca.gov/accessibility\",\"uniqueKey\":\"https://www.senate.ca.gov/accessibility\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:57.925Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.senate.ca.gov/accessibility",
-	"url": "https://www.senate.ca.gov/accessibility"
-}

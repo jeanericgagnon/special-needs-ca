@@ -1,9 +1,0 @@
-{
-	"id": "1X7hc5w5XhvWDPE",
-	"json": "{\"id\":\"1X7hc5w5XhvWDPE\",\"url\":\"https://health.ucdavis.edu/biochem/seminars/trip-seminars/index.html\",\"loadedUrl\":\"https://health.ucdavis.edu/biochem/seminars/trip-seminars/index.html\",\"uniqueKey\":\"https://health.ucdavis.edu/biochem/seminars/trip-seminars/index.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:16:53.094Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/biochem/seminars/trip-seminars/index.html",
-	"url": "https://health.ucdavis.edu/biochem/seminars/trip-seminars/index.html"
-}

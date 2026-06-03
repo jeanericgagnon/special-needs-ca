@@ -1,9 +1,0 @@
-{
-	"id": "NgnRXKiRiKgdQ3Y",
-	"json": "{\"id\":\"NgnRXKiRiKgdQ3Y\",\"url\":\"https://financeandbusiness.ucdavis.edu/student-resources/accounting/sponsorship\",\"loadedUrl\":\"https://financeandbusiness.ucdavis.edu/student-resources/accounting/sponsorship\",\"uniqueKey\":\"https://financeandbusiness.ucdavis.edu/student-resources/accounting/sponsorship\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:01:51.263Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://financeandbusiness.ucdavis.edu/student-resources/accounting/sponsorship",
-	"url": "https://financeandbusiness.ucdavis.edu/student-resources/accounting/sponsorship"
-}

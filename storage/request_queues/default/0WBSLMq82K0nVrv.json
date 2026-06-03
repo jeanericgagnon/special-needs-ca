@@ -1,9 +1,0 @@
-{
-	"id": "0WBSLMq82K0nVrv",
-	"json": "{\"id\":\"0WBSLMq82K0nVrv\",\"url\":\"https://health.ucdavis.edu/ctsc/about-us/\",\"loadedUrl\":\"https://health.ucdavis.edu/ctsc/about-us/\",\"uniqueKey\":\"https://health.ucdavis.edu/ctsc/about-us\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:31.777Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/ctsc/about-us",
-	"url": "https://health.ucdavis.edu/ctsc/about-us/"
-}

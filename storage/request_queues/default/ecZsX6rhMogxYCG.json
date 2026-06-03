@@ -1,9 +1,0 @@
-{
-	"id": "ecZsX6rhMogxYCG",
-	"json": "{\"id\":\"ecZsX6rhMogxYCG\",\"url\":\"https://health.ucdavis.edu/nursing/about_us/why-UC-Davis.html\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/about_us/why-UC-Davis.html\",\"uniqueKey\":\"https://health.ucdavis.edu/nursing/about_us/why-UC-Davis.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:11:56.019Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/nursing/about_us/why-UC-Davis.html",
-	"url": "https://health.ucdavis.edu/nursing/about_us/why-UC-Davis.html"
-}

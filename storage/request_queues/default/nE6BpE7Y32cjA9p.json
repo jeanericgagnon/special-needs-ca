@@ -1,9 +1,0 @@
-{
-	"id": "nE6BpE7Y32cjA9p",
-	"json": "{\"id\":\"nE6BpE7Y32cjA9p\",\"url\":\"https://give.ucdavis.edu/VCEH/125558\",\"loadedUrl\":\"https://give.ucdavis.edu/VCEH/125558\",\"uniqueKey\":\"https://give.ucdavis.edu/VCEH/125558\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:55.405Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/VCEH/125558",
-	"url": "https://give.ucdavis.edu/VCEH/125558"
-}

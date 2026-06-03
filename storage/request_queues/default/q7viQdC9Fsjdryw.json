@@ -1,9 +1,0 @@
-{
-	"id": "q7viQdC9Fsjdryw",
-	"json": "{\"id\":\"q7viQdC9Fsjdryw\",\"url\":\"https://health.ucdavis.edu/chpr/research/\",\"loadedUrl\":\"https://health.ucdavis.edu/chpr/research/\",\"uniqueKey\":\"https://health.ucdavis.edu/chpr/research\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:39:29.497Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/chpr/research",
-	"url": "https://health.ucdavis.edu/chpr/research/"
-}

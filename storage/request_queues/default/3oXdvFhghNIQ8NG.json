@@ -1,9 +1,0 @@
-{
-	"id": "3oXdvFhghNIQ8NG",
-	"json": "{\"id\":\"3oXdvFhghNIQ8NG\",\"url\":\"https://scdd.ca.gov/councilmeetings/\",\"loadedUrl\":\"https://scdd.ca.gov/councilmeetings/\",\"uniqueKey\":\"https://scdd.ca.gov/councilmeetings\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:55:23.345Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://scdd.ca.gov/councilmeetings",
-	"url": "https://scdd.ca.gov/councilmeetings/"
-}

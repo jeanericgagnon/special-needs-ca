@@ -1,9 +1,0 @@
-{
-	"id": "lF1HuKa9h7kyxP7",
-	"json": "{\"id\":\"lF1HuKa9h7kyxP7\",\"url\":\"https://www.ccld.dss.ca.gov/hcsregistry/Login.aspx\",\"loadedUrl\":\"https://www.ccld.dss.ca.gov/hcsregistry/Login.aspx\",\"uniqueKey\":\"https://www.ccld.dss.ca.gov/hcsregistry/Login.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:00.142Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ccld.dss.ca.gov/hcsregistry/Login.aspx",
-	"url": "https://www.ccld.dss.ca.gov/hcsregistry/Login.aspx"
-}

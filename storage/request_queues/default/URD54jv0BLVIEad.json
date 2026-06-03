@@ -1,9 +1,0 @@
-{
-	"id": "URD54jv0BLVIEad",
-	"json": "{\"id\":\"URD54jv0BLVIEad\",\"url\":\"https://bar.ca.gov/complaint\",\"loadedUrl\":\"https://bar.ca.gov/complaint\",\"uniqueKey\":\"https://bar.ca.gov/complaint\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:27.332Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://bar.ca.gov/complaint",
-	"url": "https://bar.ca.gov/complaint"
-}

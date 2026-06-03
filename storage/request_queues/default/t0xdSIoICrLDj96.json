@@ -1,9 +1,0 @@
-{
-	"id": "t0xdSIoICrLDj96",
-	"json": "{\"id\":\"t0xdSIoICrLDj96\",\"url\":\"https://health.ucdavis.edu/prevention/pregnancy-health-nutrition\",\"loadedUrl\":\"https://health.ucdavis.edu/prevention/pregnancy-health-nutrition\",\"uniqueKey\":\"https://health.ucdavis.edu/prevention/pregnancy-health-nutrition\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:52.755Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/prevention/pregnancy-health-nutrition",
-	"url": "https://health.ucdavis.edu/prevention/pregnancy-health-nutrition"
-}

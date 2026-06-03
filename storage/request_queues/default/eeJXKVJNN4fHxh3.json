@@ -1,9 +1,0 @@
-{
-	"id": "eeJXKVJNN4fHxh3",
-	"json": "{\"id\":\"eeJXKVJNN4fHxh3\",\"url\":\"https://hr.ucdavis.edu/performance-appraisals/mandatory-training\",\"loadedUrl\":\"https://hr.ucdavis.edu/performance-appraisals/mandatory-training\",\"uniqueKey\":\"https://hr.ucdavis.edu/performance-appraisals/mandatory-training\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:11.716Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/performance-appraisals/mandatory-training",
-	"url": "https://hr.ucdavis.edu/performance-appraisals/mandatory-training"
-}

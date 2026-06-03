@@ -1,9 +1,0 @@
-{
-	"id": "pHm6uG4aKlE14f0",
-	"json": "{\"id\":\"pHm6uG4aKlE14f0\",\"url\":\"https://www.cde.ca.gov/eo/in/ts-mentalhealthsupport.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/eo/in/ts-mentalhealthsupport.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/eo/in/ts-mentalhealthsupport.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:26:42.516Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/eo/in/ts-mentalhealthsupport.asp",
-	"url": "https://www.cde.ca.gov/eo/in/ts-mentalhealthsupport.asp"
-}

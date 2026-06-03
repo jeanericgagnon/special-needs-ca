@@ -1,9 +1,0 @@
-{
-	"id": "VvarvjHg7nRxp1S",
-	"json": "{\"id\":\"VvarvjHg7nRxp1S\",\"url\":\"https://www.cde.ca.gov/ci/pl/riigrant.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/pl/riigrant.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/pl/riigrant.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:59:19.001Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ci/pl/riigrant.asp",
-	"url": "https://www.cde.ca.gov/ci/pl/riigrant.asp"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "CXy9es5IhbUbvMx",
-	"json": "{\"id\":\"CXy9es5IhbUbvMx\",\"url\":\"https://health.ucdavis.edu/nursing/ourteam/join/clinician-educator-2023.html\",\"loadedUrl\":\"https://health.ucdavis.edu/nursing/ourteam/join/clinician-educator-2023.html\",\"uniqueKey\":\"https://health.ucdavis.edu/nursing/ourteam/join/clinician-educator-2023.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:11.249Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/nursing/ourteam/join/clinician-educator-2023.html",
-	"url": "https://health.ucdavis.edu/nursing/ourteam/join/clinician-educator-2023.html"
-}

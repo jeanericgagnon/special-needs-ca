@@ -1,9 +1,0 @@
-{
-	"id": "z9oOGny01d8Yme8",
-	"json": "{\"id\":\"z9oOGny01d8Yme8\",\"url\":\"https://engineering.ucdavis.edu/undergraduates/academic-advising\",\"loadedUrl\":\"https://engineering.ucdavis.edu/undergraduates/academic-advising\",\"uniqueKey\":\"https://engineering.ucdavis.edu/undergraduates/academic-advising\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T21:56:34.083Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://engineering.ucdavis.edu/undergraduates/academic-advising",
-	"url": "https://engineering.ucdavis.edu/undergraduates/academic-advising"
-}

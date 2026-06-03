@@ -1,9 +1,0 @@
-{
-	"id": "943QzlUlOeajV5T",
-	"json": "{\"id\":\"943QzlUlOeajV5T\",\"url\":\"https://cdss.ca.gov/inforesources/Caregiver-Advocacy-Network/Rights-De-Facto-Parent\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/caregiver-advocacy-network/rights-de-facto-parent\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/Caregiver-Advocacy-Network/Rights-De-Facto-Parent\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:59:56.335Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/Caregiver-Advocacy-Network/Rights-De-Facto-Parent",
-	"url": "https://cdss.ca.gov/inforesources/Caregiver-Advocacy-Network/Rights-De-Facto-Parent"
-}

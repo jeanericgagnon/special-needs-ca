@@ -1,9 +1,0 @@
-{
-	"id": "NsW4g2QAs9iM58Z",
-	"json": "{\"id\":\"NsW4g2QAs9iM58Z\",\"url\":\"https://genomecenter.ucdavis.edu/living-davis\",\"loadedUrl\":\"https://genomecenter.ucdavis.edu/living-davis\",\"uniqueKey\":\"https://genomecenter.ucdavis.edu/living-davis\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:11.391Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://genomecenter.ucdavis.edu/living-davis",
-	"url": "https://genomecenter.ucdavis.edu/living-davis"
-}

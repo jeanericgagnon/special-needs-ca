@@ -1,9 +1,0 @@
-{
-	"id": "3qvz6pISDzILMXx",
-	"json": "{\"id\":\"3qvz6pISDzILMXx\",\"url\":\"https://cdss.ca.gov/Benefits-Services/Cash-Assistance/CAPI\",\"loadedUrl\":\"https://cdss.ca.gov/capi\",\"uniqueKey\":\"https://cdss.ca.gov/Benefits-Services/Cash-Assistance/CAPI\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:58:12.426Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/Benefits-Services/Cash-Assistance/CAPI",
-	"url": "https://cdss.ca.gov/Benefits-Services/Cash-Assistance/CAPI"
-}

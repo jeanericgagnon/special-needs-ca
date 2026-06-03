@@ -1,9 +1,0 @@
-{
-	"id": "NmGwjEDTLAvLwnD",
-	"json": "{\"id\":\"NmGwjEDTLAvLwnD\",\"url\":\"https://health.ucdavis.edu/pathology/education/residency_program/integrated_training.html\",\"loadedUrl\":\"https://health.ucdavis.edu/pathology/education/residency_program/integrated_training.html\",\"uniqueKey\":\"https://health.ucdavis.edu/pathology/education/residency_program/integrated_training.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:32:55.943Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/pathology/education/residency_program/integrated_training.html",
-	"url": "https://health.ucdavis.edu/pathology/education/residency_program/integrated_training.html"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "VKoZ9vKivZGepRB",
-	"json": "{\"id\":\"VKoZ9vKivZGepRB\",\"url\":\"https://calable.ca.gov/api/v1/@apostrophecms/page/clwaqjfip0rxm0jlh4sdqbz1q:en:published/locale/en\",\"loadedUrl\":\"https://calable.ca.gov/how-it-works/gifting\",\"uniqueKey\":\"https://calable.ca.gov/api/v1/@apostrophecms/page/clwaqjfip0rxm0jlh4sdqbz1q:en:published/locale/en\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:38:37.057Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://calable.ca.gov/api/v1/@apostrophecms/page/clwaqjfip0rxm0jlh4sdqbz1q:en:published/locale/en",
-	"url": "https://calable.ca.gov/api/v1/@apostrophecms/page/clwaqjfip0rxm0jlh4sdqbz1q:en:published/locale/en"
-}

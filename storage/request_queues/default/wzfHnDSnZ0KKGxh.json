@@ -1,9 +1,0 @@
-{
-	"id": "wzfHnDSnZ0KKGxh",
-	"json": "{\"id\":\"wzfHnDSnZ0KKGxh\",\"url\":\"https://cdss.ca.gov/inforesources/calfresh/employment-and-training\",\"loadedUrl\":\"https://cdss.ca.gov/inforesources/calfresh/employment-and-training\",\"uniqueKey\":\"https://cdss.ca.gov/inforesources/calfresh/employment-and-training\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T22:58:56.226Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cdss.ca.gov/inforesources/calfresh/employment-and-training",
-	"url": "https://cdss.ca.gov/inforesources/calfresh/employment-and-training"
-}

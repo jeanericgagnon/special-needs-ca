@@ -1,9 +1,0 @@
-{
-	"id": "wcWY0JVicIWrsIG",
-	"json": "{\"id\":\"wcWY0JVicIWrsIG\",\"url\":\"https://www.dgs.ca.gov/Resources/ManagementMemos\",\"loadedUrl\":\"https://www.dgs.ca.gov/Resources/ManagementMemos\",\"uniqueKey\":\"https://www.dgs.ca.gov/Resources/ManagementMemos\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:08:06.291Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.dgs.ca.gov/Resources/ManagementMemos",
-	"url": "https://www.dgs.ca.gov/Resources/ManagementMemos"
-}

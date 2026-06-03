@@ -1,9 +1,0 @@
-{
-	"id": "AoSwP2QgTTAH73d",
-	"json": "{\"id\":\"AoSwP2QgTTAH73d\",\"url\":\"https://www.cdss.ca.gov/inforesources/ssi-ssp\",\"loadedUrl\":\"https://www.cdss.ca.gov/inforesources/ssi-ssp\",\"uniqueKey\":\"https://www.cdss.ca.gov/inforesources/ssi-ssp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:49.702Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/inforesources/ssi-ssp",
-	"url": "https://www.cdss.ca.gov/inforesources/ssi-ssp"
-}

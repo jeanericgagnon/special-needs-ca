@@ -1,9 +1,0 @@
-{
-	"id": "9zTbxa8dqTmYTjJ",
-	"json": "{\"id\":\"9zTbxa8dqTmYTjJ\",\"url\":\"https://hr.ucdavis.edu/forms?title=&order=title&sort=asc\",\"loadedUrl\":\"https://hr.ucdavis.edu/forms?title=&order=title&sort=asc\",\"uniqueKey\":\"https://hr.ucdavis.edu/forms?order=title&sort=asc&title=\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:35.778Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/forms?order=title&sort=asc&title=",
-	"url": "https://hr.ucdavis.edu/forms?title=&order=title&sort=asc"
-}

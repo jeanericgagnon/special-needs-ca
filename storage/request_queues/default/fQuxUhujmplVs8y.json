@@ -1,9 +1,0 @@
-{
-	"id": "fQuxUhujmplVs8y",
-	"json": "{\"id\":\"fQuxUhujmplVs8y\",\"url\":\"https://www.cdcr.ca.gov/Facilities_Locator/\",\"loadedUrl\":\"https://www.cdcr.ca.gov/facility-locator/\",\"uniqueKey\":\"https://www.cdcr.ca.gov/Facilities_Locator\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:27.319Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdcr.ca.gov/Facilities_Locator",
-	"url": "https://www.cdcr.ca.gov/Facilities_Locator/"
-}

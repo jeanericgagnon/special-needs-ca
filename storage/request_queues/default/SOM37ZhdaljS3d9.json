@@ -1,9 +1,0 @@
-{
-	"id": "SOM37ZhdaljS3d9",
-	"json": "{\"id\":\"SOM37ZhdaljS3d9\",\"url\":\"https://www.cde.ca.gov/ci/pl/global2030suggestions.asp\",\"loadedUrl\":\"https://www.cde.ca.gov/ci/pl/global2030suggestions.asp\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/pl/global2030suggestions.asp\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:22:51.917Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ci/pl/global2030suggestions.asp",
-	"url": "https://www.cde.ca.gov/ci/pl/global2030suggestions.asp"
-}

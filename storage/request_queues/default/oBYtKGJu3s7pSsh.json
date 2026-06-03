@@ -1,9 +1,0 @@
-{
-	"id": "oBYtKGJu3s7pSsh",
-	"json": "{\"id\":\"oBYtKGJu3s7pSsh\",\"url\":\"https://www.csb-cde.ca.gov/about/organizations/csbef.aspx\",\"loadedUrl\":\"https://www.csb-cde.ca.gov/about/organizations/csbef.aspx\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/about/organizations/csbef.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:00.920Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.csb-cde.ca.gov/about/organizations/csbef.aspx",
-	"url": "https://www.csb-cde.ca.gov/about/organizations/csbef.aspx"
-}

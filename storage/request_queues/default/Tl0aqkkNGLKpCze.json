@@ -1,9 +1,0 @@
-{
-	"id": "Tl0aqkkNGLKpCze",
-	"json": "{\"id\":\"Tl0aqkkNGLKpCze\",\"url\":\"https://www.placer.ca.gov/myaccount\",\"loadedUrl\":\"https://cpauthentication.civicplus.com/Identity/Account/Login?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3D9163310b-4a02-442a-8134-2247d3b11b4d%26redirect_uri%3Dhttps%253A%252F%252Fwww.placer.ca.gov%252FIdentityServer%252FSignInCallback%26response_type%3Dcode%2520id_token%2520token%26scope%3Dopenid%2520profile%2520email%26state%3Dfa66b2fe2c634ae388b8c2933ebd5077_https%253A%252F%252Fwww.placer.ca.gov%252Fmyaccount%252Fprofile%26nonce%3D6ef7cf13bb2d472ab9a7bb1788c9bf85%26response_mode%3Dform_post%26acr_values%3DOrgBranding%253A963cf01c-6b4e-48e4-ba71-4f636f8df5ca%26code_challenge%3D69eeb24110855e111947f2ee9c9efe3c67dc9d75da6adcbd8ece07d68e2fb3c7%26code_challenge_method%3DS256%26login_origin_uri%3Dhttps%253A%252F%252Fwww.placer.ca.gov%252Fmyaccount%252Fprofile\",\"uniqueKey\":\"https://www.placer.ca.gov/myaccount\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T23:07:31.616Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.placer.ca.gov/myaccount",
-	"url": "https://www.placer.ca.gov/myaccount"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "s7Rpapm0HSs39Hl",
-	"json": "{\"id\":\"s7Rpapm0HSs39Hl\",\"url\":\"https://health.ucdavis.edu/parking/visitor/?tab=acc\",\"loadedUrl\":\"https://health.ucdavis.edu/parking/visitor/?tab=acc\",\"uniqueKey\":\"https://health.ucdavis.edu/parking/visitor?tab=acc\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:06:41.870Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/parking/visitor?tab=acc",
-	"url": "https://health.ucdavis.edu/parking/visitor/?tab=acc"
-}

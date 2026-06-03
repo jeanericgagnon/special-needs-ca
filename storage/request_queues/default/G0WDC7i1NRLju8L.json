@@ -1,9 +1,0 @@
-{
-	"id": "G0WDC7i1NRLju8L",
-	"json": "{\"id\":\"G0WDC7i1NRLju8L\",\"url\":\"https://health.ucdavis.edu/news/headlines/improving-health-outcomes-by-connecting-with-patients-on-a-cultural-level-/2025/09\",\"loadedUrl\":\"https://health.ucdavis.edu/news/headlines/improving-health-outcomes-by-connecting-with-patients-on-a-cultural-level-/2025/09\",\"uniqueKey\":\"https://health.ucdavis.edu/news/headlines/improving-health-outcomes-by-connecting-with-patients-on-a-cultural-level-/2025/09\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T16:59:09.280Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/news/headlines/improving-health-outcomes-by-connecting-with-patients-on-a-cultural-level-/2025/09",
-	"url": "https://health.ucdavis.edu/news/headlines/improving-health-outcomes-by-connecting-with-patients-on-a-cultural-level-/2025/09"
-}

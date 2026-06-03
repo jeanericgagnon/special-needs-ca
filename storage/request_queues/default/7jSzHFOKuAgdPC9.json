@@ -1,9 +1,0 @@
-{
-	"id": "7jSzHFOKuAgdPC9",
-	"json": "{\"id\":\"7jSzHFOKuAgdPC9\",\"url\":\"https://health.ucdavis.edu/mind-institute/resources/sensory\",\"loadedUrl\":\"https://health.ucdavis.edu/mind-institute/resources/sensory\",\"uniqueKey\":\"https://health.ucdavis.edu/mind-institute/resources/sensory\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:09:38.739Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/mind-institute/resources/sensory",
-	"url": "https://health.ucdavis.edu/mind-institute/resources/sensory"
-}

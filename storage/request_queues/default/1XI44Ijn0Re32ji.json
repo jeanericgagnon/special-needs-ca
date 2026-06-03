@@ -1,9 +1,0 @@
-{
-	"id": "1XI44Ijn0Re32ji",
-	"json": "{\"id\":\"1XI44Ijn0Re32ji\",\"url\":\"https://www.cdss.ca.gov/Benefits-Services/Adult-Services/Continuing-Care-Communities\",\"loadedUrl\":\"https://www.cdss.ca.gov/continuing-care-communities\",\"uniqueKey\":\"https://www.cdss.ca.gov/Benefits-Services/Adult-Services/Continuing-Care-Communities\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:04:24.182Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdss.ca.gov/Benefits-Services/Adult-Services/Continuing-Care-Communities",
-	"url": "https://www.cdss.ca.gov/Benefits-Services/Adult-Services/Continuing-Care-Communities"
-}

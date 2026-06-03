@@ -1,9 +1,0 @@
-{
-	"id": "cLzw64oXRKqKWz2",
-	"json": "{\"id\":\"cLzw64oXRKqKWz2\",\"url\":\"https://hr.ucdavis.edu/event-category/worklife-wellness-events\",\"loadedUrl\":\"https://hr.ucdavis.edu/event-category/worklife-wellness-events\",\"uniqueKey\":\"https://hr.ucdavis.edu/event-category/worklife-wellness-events\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:02:43.032Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://hr.ucdavis.edu/event-category/worklife-wellness-events",
-	"url": "https://hr.ucdavis.edu/event-category/worklife-wellness-events"
-}

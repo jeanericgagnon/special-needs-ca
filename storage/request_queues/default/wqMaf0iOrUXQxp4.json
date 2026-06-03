@@ -1,9 +1,0 @@
-{
-	"id": "wqMaf0iOrUXQxp4",
-	"json": "{\"id\":\"wqMaf0iOrUXQxp4\",\"url\":\"https://www.cde.ca.gov/ci/ct/ie/energy.asp\",\"loadedUrl\":\"https://validate.perfdrive.com/?ssa=1d3f5347-1e71-4d1e-87fd-8a546bf7d067&ssb=98697243113&ssc=https%3A%2F%2Fwww.cde.ca.gov%2Fci%2Fct%2Fie%2Fenergy.asp&ssi=5baebff4-ctxv-4eda-80c3-dcf413db3eac&ssk=botmanager_support@radware.com&ssm=44685113956462633138771267959700&ssn=db159b9610f714ae820d680f8df302d97bfcc3d33162-1edc-4ddf-a2c42e&sso=ed1e1e7a-023dc27d1f3945e6cf0d810a5a02e064f07ef39334b13bc5&ssp=61941689901780368018178031040365050&ssq=96160382626331684871025885739140968041341&ssr=MTcyLjU2LjI0My4xOTM=&sst=Mozilla/5.0%20(X11;%20Linux%20x86_64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko;%20compatible;%20pageburst)%20Chrome/144.0.7559.132%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBjM2QzMzE2Mi0xZWRjLTRkZGYtYWU3YS0wMjNkYzI3ZDFmMzkxLTE3ODAzMjU4ODU3MjgzNzgxODgtMDAzYjA2YWQ5MTQ0MmM2YjFlOTEzIiwidXpteCI6IjdmOTAwMGFjNzYzYmVmLWZiMTEtNGY2ZS05MmM2LWNlMTMyOGE0MjY5ZDEtMTc4MDMyNTg4NTcyODM3ODE4OC00OWQ4YTkyZjJiYmRkODM5MTMiLCJyZCI6ImNhLmdvdiJ9\",\"uniqueKey\":\"https://www.cde.ca.gov/ci/ct/ie/energy.asp\",\"method\":\"GET\",\"noRetry\":true,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":7}},\"handledAt\":\"2026-06-01T15:04:24.042Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/ci/ct/ie/energy.asp",
-	"url": "https://www.cde.ca.gov/ci/ct/ie/energy.asp"
-}

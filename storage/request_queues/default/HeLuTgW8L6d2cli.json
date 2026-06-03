@@ -1,9 +1,0 @@
-{
-	"id": "HeLuTgW8L6d2cli",
-	"json": "{\"id\":\"HeLuTgW8L6d2cli\",\"url\":\"https://ucp.org/advocacy/case-for-inclusion/\",\"loadedUrl\":\"https://ucp.org/advocacy/case-for-inclusion/\",\"uniqueKey\":\"https://ucp.org/advocacy/case-for-inclusion\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:58:33.305Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://ucp.org/advocacy/case-for-inclusion",
-	"url": "https://ucp.org/advocacy/case-for-inclusion/"
-}

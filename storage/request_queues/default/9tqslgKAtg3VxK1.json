@@ -1,9 +1,0 @@
-{
-	"id": "9tqslgKAtg3VxK1",
-	"json": "{\"id\":\"9tqslgKAtg3VxK1\",\"url\":\"https://www.csb-cde.ca.gov/resources/covid-19/parentresourcesspanish.aspx\",\"loadedUrl\":\"https://www.csb-cde.ca.gov/resources/covid-19/parentresourcesspanish.aspx\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/resources/covid-19/parentresourcesspanish.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:07.032Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.csb-cde.ca.gov/resources/covid-19/parentresourcesspanish.aspx",
-	"url": "https://www.csb-cde.ca.gov/resources/covid-19/parentresourcesspanish.aspx"
-}

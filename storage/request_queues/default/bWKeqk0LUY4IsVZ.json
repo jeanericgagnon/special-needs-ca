@@ -1,9 +1,0 @@
-{
-	"id": "bWKeqk0LUY4IsVZ",
-	"json": "{\"id\":\"bWKeqk0LUY4IsVZ\",\"url\":\"https://health.ucdavis.edu/patients-visitors/team/43297/antonio-mendoza_ladd-endoscopy-gastroenterology-sacramento?FreeText%3aLast+name=Mendoza+Ladd\",\"loadedUrl\":\"https://health.ucdavis.edu/patients-visitors/team/43297/antonio-mendoza_ladd-endoscopy-gastroenterology-sacramento?FreeText%3aLast+name=Mendoza+Ladd\",\"uniqueKey\":\"https://health.ucdavis.edu/patients-visitors/team/43297/antonio-mendoza_ladd-endoscopy-gastroenterology-sacramento?FreeText%3ALast+name=Mendoza+Ladd\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:35:09.909Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/patients-visitors/team/43297/antonio-mendoza_ladd-endoscopy-gastroenterology-sacramento?FreeText%3ALast+name=Mendoza+Ladd",
-	"url": "https://health.ucdavis.edu/patients-visitors/team/43297/antonio-mendoza_ladd-endoscopy-gastroenterology-sacramento?FreeText%3aLast+name=Mendoza+Ladd"
-}

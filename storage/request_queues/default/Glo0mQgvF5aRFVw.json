@@ -1,9 +1,0 @@
-{
-	"id": "Glo0mQgvF5aRFVw",
-	"json": "{\"id\":\"Glo0mQgvF5aRFVw\",\"url\":\"https://www.cdph.ca.gov/Programs/CID/DOA/Pages/MM-2026-04-IntersexVariations-In-Sex-Characteristics-Data.aspx\",\"loadedUrl\":\"https://www.cdph.ca.gov/Programs/CID/DOA/Pages/MM-2026-04-IntersexVariations-In-Sex-Characteristics-Data.aspx\",\"uniqueKey\":\"https://www.cdph.ca.gov/Programs/CID/DOA/Pages/MM-2026-04-IntersexVariations-In-Sex-Characteristics-Data.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T20:29:34.257Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cdph.ca.gov/Programs/CID/DOA/Pages/MM-2026-04-IntersexVariations-In-Sex-Characteristics-Data.aspx",
-	"url": "https://www.cdph.ca.gov/Programs/CID/DOA/Pages/MM-2026-04-IntersexVariations-In-Sex-Characteristics-Data.aspx"
-}

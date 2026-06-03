@@ -1,9 +1,0 @@
-{
-	"id": "AcEhpsv39e1hGp2",
-	"json": "{\"id\":\"AcEhpsv39e1hGp2\",\"url\":\"https://www.parks.ca.gov/Privacy\",\"loadedUrl\":\"https://www.parks.ca.gov/Privacy\",\"uniqueKey\":\"https://www.parks.ca.gov/Privacy\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:36:06.822Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.parks.ca.gov/Privacy",
-	"url": "https://www.parks.ca.gov/Privacy"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "MhqWd4bfj0nF5JZ",
-	"json": "{\"id\":\"MhqWd4bfj0nF5JZ\",\"url\":\"https://oig.ssa.gov/major-management-and-performance-challenges\",\"loadedUrl\":\"https://oig.ssa.gov/major-management-and-performance-challenges/\",\"uniqueKey\":\"https://oig.ssa.gov/major-management-and-performance-challenges\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:34:38.622Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://oig.ssa.gov/major-management-and-performance-challenges",
-	"url": "https://oig.ssa.gov/major-management-and-performance-challenges"
-}

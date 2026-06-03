@@ -1,9 +1,0 @@
-{
-	"id": "3HZIWVE5cIxdMKH",
-	"json": "{\"id\":\"3HZIWVE5cIxdMKH\",\"url\":\"http://www.cdss.ca.gov/Tips-for-Using-Adobe-PDF-Files\",\"loadedUrl\":\"https://www.cdss.ca.gov/tips-for-using-adobe-pdf-files\",\"uniqueKey\":\"http://www.cdss.ca.gov/Tips-for-Using-Adobe-PDF-Files\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:37:04.223Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.cdss.ca.gov/Tips-for-Using-Adobe-PDF-Files",
-	"url": "http://www.cdss.ca.gov/Tips-for-Using-Adobe-PDF-Files"
-}

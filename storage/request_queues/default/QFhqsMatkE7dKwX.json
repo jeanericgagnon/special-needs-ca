@@ -1,9 +1,0 @@
-{
-	"id": "QFhqsMatkE7dKwX",
-	"json": "{\"id\":\"QFhqsMatkE7dKwX\",\"url\":\"https://www.ssa.gov/forms/ha-4632.html\",\"loadedUrl\":\"https://www.ssa.gov/forms/ha-4632.html\",\"uniqueKey\":\"https://www.ssa.gov/forms/ha-4632.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:43.475Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ssa.gov/forms/ha-4632.html",
-	"url": "https://www.ssa.gov/forms/ha-4632.html"
-}

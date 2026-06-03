@@ -1,9 +1,0 @@
-{
-	"id": "dm0un0hhuBAOxmz",
-	"json": "{\"id\":\"dm0un0hhuBAOxmz\",\"url\":\"https://health.ucdavis.edu/news/headlines/clinical-trial-may-offer-relief-for-rare-autoimmune-disease-/2024/03\",\"loadedUrl\":\"https://health.ucdavis.edu/news/headlines/clinical-trial-may-offer-relief-for-rare-autoimmune-disease-/2024/03\",\"uniqueKey\":\"https://health.ucdavis.edu/news/headlines/clinical-trial-may-offer-relief-for-rare-autoimmune-disease-/2024/03\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:24:54.217Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://health.ucdavis.edu/news/headlines/clinical-trial-may-offer-relief-for-rare-autoimmune-disease-/2024/03",
-	"url": "https://health.ucdavis.edu/news/headlines/clinical-trial-may-offer-relief-for-rare-autoimmune-disease-/2024/03"
-}

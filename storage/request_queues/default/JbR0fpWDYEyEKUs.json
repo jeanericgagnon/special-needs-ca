@@ -1,9 +1,0 @@
-{
-	"id": "JbR0fpWDYEyEKUs",
-	"json": "{\"id\":\"JbR0fpWDYEyEKUs\",\"url\":\"https://pod.ucdavis.edu/news/registration-now-open-fall-2025-symposium\",\"loadedUrl\":\"https://pod.ucdavis.edu/news/registration-now-open-fall-2025-symposium\",\"uniqueKey\":\"https://pod.ucdavis.edu/news/registration-now-open-fall-2025-symposium\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:32:25.712Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://pod.ucdavis.edu/news/registration-now-open-fall-2025-symposium",
-	"url": "https://pod.ucdavis.edu/news/registration-now-open-fall-2025-symposium"
-}

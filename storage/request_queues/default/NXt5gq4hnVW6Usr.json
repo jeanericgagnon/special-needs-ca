@@ -1,9 +1,0 @@
-{
-	"id": "NXt5gq4hnVW6Usr",
-	"json": "{\"id\":\"NXt5gq4hnVW6Usr\",\"url\":\"http://www.dhcs.ca.gov/individuals/Pages/MHPContactList.aspx\",\"loadedUrl\":\"https://www.dhcs.ca.gov/individuals/Pages/MHPContactList.aspx\",\"uniqueKey\":\"http://www.dhcs.ca.gov/individuals/Pages/MHPContactList.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T17:55:27.531Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.dhcs.ca.gov/individuals/Pages/MHPContactList.aspx",
-	"url": "http://www.dhcs.ca.gov/individuals/Pages/MHPContactList.aspx"
-}

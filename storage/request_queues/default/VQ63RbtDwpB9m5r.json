@@ -1,9 +1,0 @@
-{
-	"id": "VQ63RbtDwpB9m5r",
-	"json": "{\"id\":\"VQ63RbtDwpB9m5r\",\"url\":\"https://www.csb-cde.ca.gov/resources/covid-19/parentingtipscovid19.aspx\",\"loadedUrl\":\"https://www.csb-cde.ca.gov/resources/covid-19/parentingtipscovid19.aspx\",\"uniqueKey\":\"https://www.csb-cde.ca.gov/resources/covid-19/parentingtipscovid19.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:27:06.695Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.csb-cde.ca.gov/resources/covid-19/parentingtipscovid19.aspx",
-	"url": "https://www.csb-cde.ca.gov/resources/covid-19/parentingtipscovid19.aspx"
-}

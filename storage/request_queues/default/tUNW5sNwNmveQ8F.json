@@ -1,9 +1,0 @@
-{
-	"id": "tUNW5sNwNmveQ8F",
-	"json": "{\"id\":\"tUNW5sNwNmveQ8F\",\"url\":\"https://rarediseases.org/organizations/guthy-jackson-charitable-foundation/\",\"loadedUrl\":\"https://rarediseases.org/organizations/guthy-jackson-charitable-foundation/\",\"uniqueKey\":\"https://rarediseases.org/organizations/guthy-jackson-charitable-foundation\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:16:58.112Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://rarediseases.org/organizations/guthy-jackson-charitable-foundation",
-	"url": "https://rarediseases.org/organizations/guthy-jackson-charitable-foundation/"
-}

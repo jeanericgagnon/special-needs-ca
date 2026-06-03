@@ -1,9 +1,0 @@
-{
-	"id": "q7I6f0w61e2ENNO",
-	"json": "{\"id\":\"q7I6f0w61e2ENNO\",\"url\":\"https://spwb.ca.gov/\",\"loadedUrl\":\"https://spwb.ca.gov/\",\"uniqueKey\":\"https://spwb.ca.gov\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:06:41.697Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://spwb.ca.gov",
-	"url": "https://spwb.ca.gov/"
-}

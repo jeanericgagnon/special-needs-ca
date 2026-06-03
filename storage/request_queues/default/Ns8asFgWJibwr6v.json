@@ -1,9 +1,0 @@
-{
-	"id": "Ns8asFgWJibwr6v",
-	"json": "{\"id\":\"Ns8asFgWJibwr6v\",\"url\":\"https://www.ucdavis.edu/admissions/undergraduate/events/aggie-transfer-scholars-weekend\",\"loadedUrl\":\"https://www.ucdavis.edu/admissions/undergraduate/events/aggie-transfer-scholars-weekend\",\"uniqueKey\":\"https://www.ucdavis.edu/admissions/undergraduate/events/aggie-transfer-scholars-weekend\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:13:43.428Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ucdavis.edu/admissions/undergraduate/events/aggie-transfer-scholars-weekend",
-	"url": "https://www.ucdavis.edu/admissions/undergraduate/events/aggie-transfer-scholars-weekend"
-}

@@ -1,9 +1,0 @@
-{
-	"id": "TO3xTQIdvVDanIt",
-	"json": "{\"id\":\"TO3xTQIdvVDanIt\",\"url\":\"https://www.cde.ca.gov/fg/au/\",\"loadedUrl\":\"https://www.cde.ca.gov/fg/au/\",\"uniqueKey\":\"https://www.cde.ca.gov/fg/au\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T14:57:01.863Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.cde.ca.gov/fg/au",
-	"url": "https://www.cde.ca.gov/fg/au/"
-}

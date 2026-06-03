@@ -1,9 +1,0 @@
-{
-	"id": "wijcYKzun5CXdjL",
-	"json": "{\"id\":\"wijcYKzun5CXdjL\",\"url\":\"https://give.ucdavis.edu/ALAW/PARIKHG\",\"loadedUrl\":\"https://give.ucdavis.edu/ALAW/PARIKHG\",\"uniqueKey\":\"https://give.ucdavis.edu/ALAW/PARIKHG\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:57.719Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://give.ucdavis.edu/ALAW/PARIKHG",
-	"url": "https://give.ucdavis.edu/ALAW/PARIKHG"
-}

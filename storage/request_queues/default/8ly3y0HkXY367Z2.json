@@ -1,9 +1,0 @@
-{
-	"id": "8ly3y0HkXY367Z2",
-	"json": "{\"id\":\"8ly3y0HkXY367Z2\",\"url\":\"http://www.ucdmc.ucdavis.edu/medicalcenter/features/2009-2010/03/20100304_robotic-cardiac.html\",\"loadedUrl\":\"https://health.ucdavis.edu/news/headlines/states-first-robotic-assisted-multiple-artery-cardiac-bypass/2010/03\",\"uniqueKey\":\"http://www.ucdmc.ucdavis.edu/medicalcenter/features/2009-2010/03/20100304_robotic-cardiac.html\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:34:25.567Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "http://www.ucdmc.ucdavis.edu/medicalcenter/features/2009-2010/03/20100304_robotic-cardiac.html",
-	"url": "http://www.ucdmc.ucdavis.edu/medicalcenter/features/2009-2010/03/20100304_robotic-cardiac.html"
-}

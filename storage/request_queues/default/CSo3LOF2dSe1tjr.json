@@ -1,9 +1,0 @@
-{
-	"id": "CSo3LOF2dSe1tjr",
-	"json": "{\"id\":\"CSo3LOF2dSe1tjr\",\"url\":\"https://registration.genomecenter.ucdavis.edu/\",\"loadedUrl\":\"https://registration.genomecenter.ucdavis.edu/\",\"uniqueKey\":\"https://registration.genomecenter.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:25:11.171Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://registration.genomecenter.ucdavis.edu",
-	"url": "https://registration.genomecenter.ucdavis.edu/"
-}

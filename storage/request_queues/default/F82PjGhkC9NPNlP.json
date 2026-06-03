@@ -1,9 +1,0 @@
-{
-	"id": "F82PjGhkC9NPNlP",
-	"json": "{\"id\":\"F82PjGhkC9NPNlP\",\"url\":\"https://cop.ucdavis.edu/\",\"loadedUrl\":\"https://education.ucdavis.edu/college-opportunity-programs\",\"uniqueKey\":\"https://cop.ucdavis.edu\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":3,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T23:17:30.939Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://cop.ucdavis.edu",
-	"url": "https://cop.ucdavis.edu/"
-}

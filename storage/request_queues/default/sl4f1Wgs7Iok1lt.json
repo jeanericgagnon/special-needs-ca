@@ -1,9 +1,0 @@
-{
-	"id": "sl4f1Wgs7Iok1lt",
-	"json": "{\"id\":\"sl4f1Wgs7Iok1lt\",\"url\":\"https://www.ssa.gov/myaccount\",\"loadedUrl\":\"https://www.ssa.gov/myaccount/\",\"uniqueKey\":\"https://www.ssa.gov/myaccount\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":2,\"enqueueStrategy\":\"same-domain\",\"state\":4}},\"handledAt\":\"2026-06-01T15:33:32.189Z\"}",
-	"method": "GET",
-	"orderNo": null,
-	"retryCount": 0,
-	"uniqueKey": "https://www.ssa.gov/myaccount",
-	"url": "https://www.ssa.gov/myaccount"
-}
