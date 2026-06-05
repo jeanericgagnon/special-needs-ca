@@ -91,35 +91,35 @@ async function run() {
   const fallbackLawyers = [
     {
       name: "Richard L. Newman, Esq.",
-      phone: "(858) 555-0182",
+      phone: "None Listed",
       website: "https://www.newmaneducationlaw.com",
       location: "San Diego, CA",
       description: "Richard Newman has over 20 years of experience representing children and parents in special education due process hearings and IEP disputes across San Diego County."
     },
     {
       name: "Sandra G. Martinez",
-      phone: "(213) 555-0291",
+      phone: "None Listed",
       website: "https://www.martinezspedlaw.com",
       location: "Los Angeles, CA",
       description: "Bilingual special education attorney focusing on securing occupational therapy, speech services, and non-public school placements for families in LAUSD."
     },
     {
       name: "Douglas R. McArthur",
-      phone: "(415) 555-0303",
+      phone: "None Listed",
       website: "https://www.mcarthureducationlaw.com",
       location: "San Francisco, CA",
       description: "Dedicated education law practitioner representing families in due process complaints, expulsion hearings, and Regional Center appeals in the SF Bay Area."
     },
     {
       name: "Jennifer S. Grogan",
-      phone: "(408) 555-0988",
+      phone: "None Listed",
       website: "https://www.groganlawsped.com",
       location: "San Jose, CA",
       description: "Advocating for children with autism, dyslexia, and learning disabilities. Securing independent educational evaluations (IEEs) and robust school district IEPs."
     },
     {
       name: "Timothy W. Vance",
-      phone: "(916) 555-0442",
+      phone: "None Listed",
       website: "https://www.vancelegalca.com",
       location: "Sacramento, CA",
       description: "Timothy Vance specializes in regional center Lanterman disputes, IEP accommodations, and school district mediations throughout Sacramento and Placer counties."
@@ -167,7 +167,7 @@ async function run() {
         price_rate: "Varies / Private Rate",
         counties_served: countiesServed,
         languages_spoken: searchTxt.includes('spanish') || searchTxt.includes('bilingual') ? "English, Spanish" : "English",
-        phone: l.phone || "(800) 555-0199",
+        phone: l.phone || "None Listed",
         email: "contact@" + l.name.replace(/[^a-zA-Z0-9]/g, '').toLowerCase().substring(0, 10) + "law.com",
         website: l.website || "https://www.justia.com",
         specialties: "Education Law, Special Education, IEP Appeals",

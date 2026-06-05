@@ -1,11 +1,17 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import { useChildProfile, LetterTemplateType } from './ChildProfileContext';
-import { 
-  FileText, Clock, Scale, Check, Copy, AlertCircle, ShieldCheck
-} from 'lucide-react';
-import PrintButton from '@/components/print-button';
+import React, { useState, useEffect, useRef } from 'react';
+import { useChildProfile } from './ChildProfileContext';
+import { AlertCircle } from 'lucide-react';
+import {
+  getCaregiverProfileAction,
+  saveCaregiverProfileAction,
+  getChildCoordinatorAction,
+  saveChildCoordinatorAction
+} from '../child-actions';
+import AppealsSelector from './AppealsSelector';
+import AppealsForm from './AppealsForm';
+import AppealTemplateCard from './AppealTemplateCard';
 
 interface AppealsCenterPanelProps {
   isSpanish?: boolean;
@@ -22,6 +28,9 @@ export default function AppealsCenterPanel({ isSpanish = false }: AppealsCenterP
     setActiveTemplate
   } = useChildProfile();
 
+  const loadedProfileRef = useRef<{name: string, email: string, phone: string, address: string} | null>(null);
+  const loadedCoordinatorRef = useRef<string | null>(null);
+
   const [parentEmail, setParentEmail] = useState('');
   const [parentPhone, setParentPhone] = useState('');
   const [parentAddress, setParentAddress] = useState('');
@@ -29,7 +38,6 @@ export default function AppealsCenterPanel({ isSpanish = false }: AppealsCenterP
   const [coordinatorName, setCoordinatorName] = useState('');
 
   const [iepSubmissionDate, setIepSubmissionDate] = useState('2026-06-01');
-  const [copied, setCopied] = useState(false);
 
   // Specific letter settings
   const [schoolDistrict, setSchoolDistrict] = useState('Los Angeles Unified School District (LAUSD)');
@@ -87,31 +95,135 @@ export default function AppealsCenterPanel({ isSpanish = false }: AppealsCenterP
         setChildDob(currentChild.dob || '');
         setIepSubmissionDate(new Date().toISOString().split('T')[0]);
 
-        const savedParentName = localStorage.getItem('caregiver_name') || localStorage.getItem('funding_parent_name');
-        const savedParentEmail = localStorage.getItem('caregiver_email');
-        const savedParentPhone = localStorage.getItem('caregiver_phone') || localStorage.getItem('funding_parent_phone');
-        const savedParentAddress = localStorage.getItem('caregiver_address');
-        const savedCoordName = localStorage.getItem(`funding_coordinator_name_${currentChild.id}`);
+        // Load caregiver profile from DB
+        getCaregiverProfileAction()
+          .then(res => {
+            if (res.success && res.profile) {
+              const name = res.profile.name || '';
+              const email = res.profile.email || '';
+              const phone = res.profile.phone || '';
+              const address = res.profile.address || '';
 
-        if (savedParentName) setParentName(savedParentName);
-        if (savedParentEmail) setParentEmail(savedParentEmail);
-        if (savedParentPhone) setParentPhone(savedParentPhone);
-        if (savedParentAddress) setParentAddress(savedParentAddress);
-        if (savedCoordName) setCoordinatorName(savedCoordName);
+              setParentName(name);
+              setParentEmail(email);
+              setParentPhone(phone);
+              setParentAddress(address);
+
+              loadedProfileRef.current = { name, email, phone, address };
+            } else {
+              // Fallback to localStorage
+              const savedParentName = localStorage.getItem('caregiver_name') || localStorage.getItem('funding_parent_name') || '';
+              const savedParentEmail = localStorage.getItem('caregiver_email') || '';
+              const savedParentPhone = localStorage.getItem('caregiver_phone') || localStorage.getItem('funding_parent_phone') || '';
+              const savedParentAddress = localStorage.getItem('caregiver_address') || '';
+
+              setParentName(savedParentName);
+              setParentEmail(savedParentEmail);
+              setParentPhone(savedParentPhone);
+              setParentAddress(savedParentAddress);
+
+              loadedProfileRef.current = {
+                name: savedParentName,
+                email: savedParentEmail,
+                phone: savedParentPhone,
+                address: savedParentAddress
+              };
+            }
+          })
+          .catch(() => {
+            const savedParentName = localStorage.getItem('caregiver_name') || localStorage.getItem('funding_parent_name') || '';
+            const savedParentEmail = localStorage.getItem('caregiver_email') || '';
+            const savedParentPhone = localStorage.getItem('caregiver_phone') || localStorage.getItem('funding_parent_phone') || '';
+            const savedParentAddress = localStorage.getItem('caregiver_address') || '';
+
+            setParentName(savedParentName);
+            setParentEmail(savedParentEmail);
+            setParentPhone(savedParentPhone);
+            setParentAddress(savedParentAddress);
+
+            loadedProfileRef.current = {
+              name: savedParentName,
+              email: savedParentEmail,
+              phone: savedParentPhone,
+              address: savedParentAddress
+            };
+          });
+
+        // Load coordinator from DB
+        getChildCoordinatorAction(currentChild.id)
+          .then(res => {
+            if (res.success && res.name) {
+              setCoordinatorName(res.name);
+              loadedCoordinatorRef.current = res.name;
+            } else {
+              const savedCoordName = localStorage.getItem(`funding_coordinator_name_${currentChild.id}`) || '';
+              setCoordinatorName(savedCoordName);
+              loadedCoordinatorRef.current = savedCoordName;
+            }
+          })
+          .catch(() => {
+            const savedCoordName = localStorage.getItem(`funding_coordinator_name_${currentChild.id}`) || '';
+            setCoordinatorName(savedCoordName);
+            loadedCoordinatorRef.current = savedCoordName;
+          });
       });
     }
   }, [currentChild, setChildName, setParentName]);
 
-  // Save Appeals / contact data overrides to global localStorage
+  // Debounced save of caregiver profile to DB via server action
   useEffect(() => {
-    if (parentName) localStorage.setItem('caregiver_name', parentName);
-    if (parentEmail) localStorage.setItem('caregiver_email', parentEmail);
-    if (parentPhone) localStorage.setItem('caregiver_phone', parentPhone);
-    if (parentAddress) localStorage.setItem('caregiver_address', parentAddress);
-    if (currentChild && coordinatorName) {
+    if (!parentName && !parentEmail && !parentPhone && !parentAddress) return;
+
+    // Check if dirty (differs from loaded values)
+    const isDirty = !loadedProfileRef.current ||
+      parentName !== loadedProfileRef.current.name ||
+      parentEmail !== loadedProfileRef.current.email ||
+      parentPhone !== loadedProfileRef.current.phone ||
+      parentAddress !== loadedProfileRef.current.address;
+
+    if (!isDirty) return;
+
+    const delayDebounce = setTimeout(() => {
+      // Also save locally as fallback
+      if (parentName) localStorage.setItem('caregiver_name', parentName);
+      if (parentEmail) localStorage.setItem('caregiver_email', parentEmail);
+      if (parentPhone) localStorage.setItem('caregiver_phone', parentPhone);
+      if (parentAddress) localStorage.setItem('caregiver_address', parentAddress);
+
+      saveCaregiverProfileAction(parentName, parentEmail, parentPhone, parentAddress)
+        .then(() => {
+          loadedProfileRef.current = {
+            name: parentName,
+            email: parentEmail,
+            phone: parentPhone,
+            address: parentAddress
+          };
+        })
+        .catch(err => console.error('Failed to save caregiver profile:', err));
+    }, 800);
+
+    return () => clearTimeout(delayDebounce);
+  }, [parentName, parentEmail, parentPhone, parentAddress]);
+
+  // Debounced save of child coordinator name to DB via server action
+  useEffect(() => {
+    if (!currentChild || !coordinatorName) return;
+
+    const isDirty = loadedCoordinatorRef.current !== coordinatorName;
+    if (!isDirty) return;
+
+    const delayDebounce = setTimeout(() => {
       localStorage.setItem(`funding_coordinator_name_${currentChild.id}`, coordinatorName);
-    }
-  }, [parentName, parentEmail, parentPhone, parentAddress, coordinatorName, currentChild]);
+
+      saveChildCoordinatorAction(currentChild.id, coordinatorName)
+        .then(() => {
+          loadedCoordinatorRef.current = coordinatorName;
+        })
+        .catch(err => console.error('Failed to save child coordinator:', err));
+    }, 800);
+
+    return () => clearTimeout(delayDebounce);
+  }, [coordinatorName, currentChild]);
 
   if (!currentChild) return null;
 
@@ -227,7 +339,7 @@ ${parentAddress}
 ${parentPhone}
 ${parentEmail}
 
-To:
+A:
 Director of Special Education / IEP Intake Department
 ${schoolDistrict}
 
@@ -337,7 +449,7 @@ ${parentAddress}
 ${parentPhone}
 ${parentEmail}
 
-To:
+A:
 State Hearings Division
 California Department of Social Services
 744 P Street, M.S. 21-97
@@ -454,7 +566,7 @@ ${parentAddress}
 ${parentPhone}
 ${parentEmail}
 
-To:
+A:
 Intake Appeal Coordinator
 ${regionalCenterName}
 
@@ -536,7 +648,7 @@ ${parentAddress}
 ${parentPhone}
 ${parentEmail}
 
-To:
+A:
 Social Security Administration / Disability Determination Services
 
 Re: Written Request for Reconsideration of Childhood Disability Denial
@@ -620,7 +732,7 @@ ${parentAddress}
 ${parentPhone}
 ${parentEmail}
 
-To:
+A:
 Appeals and Grievance Department
 ${insurancePlanName}
 
@@ -635,7 +747,7 @@ To Whom It May Concern,
 
 I am writing to formally appeal the denial of coverage for ${therapyType} recommended for my child, ${childName}, by their treating clinician, ${prescribingDoctor}. The plan has denied coverage citing: "${denialReason}".
 
-I dispute this denial under federal Medicaid EPSDT mandates and California state law. Specifically, under 42 U.S.C. Section 1396d(r)(5), the federal Medicaid program requires states to provide "early and periodic screening, diagnostic, and treatment services" (EPSDT) to determine physical or mental illnesses or conditions, and provide "necessary health care, diagnostic services, treatment, and other measures... to correct or ameliorate defects and physical and mental illnesses and conditions."
+I dispute this denial under federal Medicaid EPSDT mandates and California state law. Specifically, under 42 U.S.C. Section 1396d(r)(5), the federal Medicaid program requires states to provide "early and periodic screening, diagnostic, and treatment services" (EPSDT) to determine physical or mental illnesses or conditions, and provide "necessary health care, diagnostic services, treatment, and other measures... to correct or improve defects and physical and mental illnesses and conditions."
 
 Under California Title 22 Code of Regulations Section 51340, services must be authorized if they are necessary to correct or "ameliorate" a developmental condition. Ameliorate includes maintaining the child's level of functioning or preventing deterioration. 
 
@@ -787,62 +899,18 @@ ${parentName}`;
       : 'The CA Special Needs Navigator is an educational tool. This builder provides templates referencing California regulations but does not constitute formal legal counsel. Always review and attach supporting medical records before sending letters to agencies.'
   };
 
-  const templatesList = [
-    { id: 'iep-request', label: isSpanish ? 'Solicitud de Evaluación IEP' : 'IEP Evaluation Request', badge: 'Ed Code' },
-    { id: 'ihss-appeal', label: isSpanish ? 'Apelación de Denegación IHSS' : 'IHSS Denial Appeal', badge: 'W&I Code' },
-    { id: 'rc-appeal', label: isSpanish ? 'Denegación del Centro Regional' : 'Regional Center Denial', badge: 'Lanterman' },
-    { id: 'ssi-reconsideration', label: isSpanish ? 'Reconsideración de SSI' : 'SSI Reconsideration', badge: 'SSA' },
-    { id: 'epsdt-therapy', label: isSpanish ? 'Autorización de Terapia' : 'Therapy Authorization', badge: 'EPSDT' }
-  ];
-
   return (
-    <div className="animate-fade-in" style={{ display: 'grid', gridTemplateColumns: 'repeat(12, 1fr)', gap: '2rem' }}>
+    <div className="animate-fade-in dashboard-grid-12">
       
       {/* Template Selector & Settings Sidebar */}
-      <div style={{ gridColumn: '1 / 5', display: 'flex', flexDirection: 'column', gap: '1.5rem' }} className="grid-col-lg-4">
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }} className="grid-col-lg-4">
         
-        {/* Template Selector Cards */}
-        <div className="glass-panel" style={{ padding: '1.5rem' }}>
-          <h3 style={{ fontSize: '1rem', fontWeight: 700, marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-            <FileText size={16} color="var(--primary-color)" /> {t.selectTemplate}
-          </h3>
-          
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-            {templatesList.map((tpl) => (
-              <button
-                key={tpl.id}
-                onClick={() => setActiveTemplate(tpl.id as LetterTemplateType)}
-                style={{
-                  padding: '0.75rem 1rem',
-                  borderRadius: '10px',
-                  border: '1px solid var(--glass-border)',
-                  background: activeTemplate === tpl.id ? 'var(--primary-color)' : 'rgba(255,255,255,0.6)',
-                  color: activeTemplate === tpl.id ? 'white' : 'var(--text-main)',
-                  textAlign: 'left',
-                  cursor: 'pointer',
-                  fontWeight: 600,
-                  fontSize: '0.85rem',
-                  transition: 'all 0.2s',
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  alignItems: 'center',
-                  width: '100%'
-                }}
-              >
-                <span>{tpl.label}</span>
-                <span style={{ 
-                  fontSize: '0.7rem', 
-                  padding: '0.1rem 0.4rem', 
-                  borderRadius: '4px', 
-                  background: activeTemplate === tpl.id ? 'rgba(255,255,255,0.2)' : 'rgba(0,0,0,0.04)', 
-                  color: activeTemplate === tpl.id ? 'white' : 'var(--text-light)' 
-                }}>
-                  {tpl.badge}
-                </span>
-              </button>
-            ))}
-          </div>
-        </div>
+        <AppealsSelector
+          activeTemplate={activeTemplate}
+          setActiveTemplate={setActiveTemplate}
+          isSpanish={isSpanish}
+          t={t}
+        />
 
         {/* Personal Contact Details */}
         <div className="glass-panel" style={{ padding: '1.5rem' }}>
@@ -916,647 +984,90 @@ ${parentName}`;
       </div>
 
       {/* Template Customizer & Preview Panel */}
-      <div style={{ gridColumn: '5 / 13', display: 'flex', flexDirection: 'column', gap: '2rem' }} className="grid-col-lg-8">
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }} className="grid-col-lg-8">
         
-        {/* Parameter settings card */}
-        <div className="glass-panel" style={{ padding: '2rem' }}>
-          
-          {/* IEP Request Fields */}
-          {activeTemplate === 'iep-request' && (
-            <div>
-              <h3 style={{ fontSize: '1.15rem', fontWeight: 700, marginBottom: '0.5rem' }}>{t.iepParamsTitle}</h3>
-              <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', marginBottom: '1.5rem' }}>
-                {t.iepParamsSub}
-              </p>
+        <AppealsForm
+          activeTemplate={activeTemplate}
+          isSpanish={isSpanish}
+          t={t}
+          calculateDateOffset={calculateDateOffset}
 
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1.5rem' }}>
-                <div className="input-group" style={{ marginBottom: 0 }}>
-                  <label style={{ fontSize: '0.8rem' }}>{t.schoolDistrictLabel}</label>
-                  <input 
-                    type="text" 
-                    value={schoolDistrict} 
-                    onChange={(e) => setSchoolDistrict(e.target.value)} 
-                    style={{ padding: '0.6rem 0.8rem', fontSize: '0.88rem', width: '100%' }}
-                  />
-                </div>
-                <div className="input-group" style={{ marginBottom: 0 }}>
-                  <label style={{ fontSize: '0.8rem' }}>{t.schoolNameLabel}</label>
-                  <input 
-                    type="text" 
-                    value={schoolName} 
-                    onChange={(e) => setSchoolName(e.target.value)} 
-                    style={{ padding: '0.6rem 0.8rem', fontSize: '0.88rem', width: '100%' }}
-                  />
-                </div>
-              </div>
+          // IEP
+          schoolDistrict={schoolDistrict}
+          setSchoolDistrict={setSchoolDistrict}
+          schoolName={schoolName}
+          setSchoolName={setSchoolName}
+          iepSubmissionDate={iepSubmissionDate}
+          setIepSubmissionDate={setIepSubmissionDate}
+          iepConcerns={iepConcerns}
+          setIepConcerns={setIepConcerns}
+          customIepText={customIepText}
+          setCustomIepText={setCustomIepText}
 
-              <div style={{ marginBottom: '1.5rem' }}>
-                <label style={{ fontSize: '0.85rem', fontWeight: 600, display: 'block', marginBottom: '0.5rem' }}>{t.iepSuspectedDelay}</label>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '0.75rem' }}>
-                  <label style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.85rem', cursor: 'pointer' }}>
-                    <input 
-                      type="checkbox"
-                      checked={iepConcerns.speech}
-                      onChange={(e) => setIepConcerns(prev => ({ ...prev, speech: e.target.checked }))}
-                    />
-                    <span>{t.iepSpeechConcerns}</span>
-                  </label>
-                  <label style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.85rem', cursor: 'pointer' }}>
-                    <input 
-                      type="checkbox"
-                      checked={iepConcerns.sensory}
-                      onChange={(e) => setIepConcerns(prev => ({ ...prev, sensory: e.target.checked }))}
-                    />
-                    <span>{t.iepSensoryConcerns}</span>
-                  </label>
-                  <label style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.85rem', cursor: 'pointer' }}>
-                    <input 
-                      type="checkbox"
-                      checked={iepConcerns.academic}
-                      onChange={(e) => setIepConcerns(prev => ({ ...prev, academic: e.target.checked }))}
-                    />
-                    <span>{t.iepAcademicConcerns}</span>
-                  </label>
-                  <label style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.85rem', cursor: 'pointer' }}>
-                    <input 
-                      type="checkbox"
-                      checked={iepConcerns.fineMotor}
-                      onChange={(e) => setIepConcerns(prev => ({ ...prev, fineMotor: e.target.checked }))}
-                    />
-                    <span>{t.iepFineMotorConcerns}</span>
-                  </label>
-                  <label style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.85rem', cursor: 'pointer' }}>
-                    <input 
-                      type="checkbox"
-                      checked={iepConcerns.social}
-                      onChange={(e) => setIepConcerns(prev => ({ ...prev, social: e.target.checked }))}
-                    />
-                    <span>{t.iepSocialConcerns}</span>
-                  </label>
-                  <label style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.85rem', cursor: 'pointer' }}>
-                    <input 
-                      type="checkbox"
-                      checked={iepConcerns.behavioral}
-                      onChange={(e) => setIepConcerns(prev => ({ ...prev, behavioral: e.target.checked }))}
-                    />
-                    <span>{t.iepBehavioralConcerns}</span>
-                  </label>
-                </div>
-              </div>
+          // IHSS
+          ihssCounty={ihssCounty}
+          setIhssCounty={setIhssCounty}
+          ihssDenialDate={ihssDenialDate}
+          setIhssDenialDate={setIhssDenialDate}
+          ihssSafetyConcerns={ihssSafetyConcerns}
+          setIhssSafetyConcerns={setIhssSafetyConcerns}
+          customIhssText={customIhssText}
+          setCustomIhssText={setCustomIhssText}
 
-              <div className="input-group" style={{ marginBottom: 0 }}>
-                <label style={{ fontSize: '0.85rem' }}>{t.iepObservedChallenges}</label>
-                <textarea 
-                  value={customIepText}
-                  onChange={(e) => setCustomIepText(e.target.value)}
-                  style={{ width: '100%', minHeight: '80px', fontSize: '0.88rem', padding: '0.75rem', borderRadius: '8px' }}
-                />
-              </div>
+          // RC
+          regionalCenterName={regionalCenterName}
+          setRegionalCenterName={setRegionalCenterName}
+          rcDenialDate={rcDenialDate}
+          setRcDenialDate={setRcDenialDate}
+          rcDiagnosis={rcDiagnosis}
+          setRcDiagnosis={setRcDiagnosis}
+          rcLimitations={rcLimitations}
+          setRcLimitations={setRcLimitations}
+          customRcText={customRcText}
+          setCustomRcText={setCustomRcText}
 
-              {/* Interactive Statutory IEP Timeline Calculator */}
-              <div style={{ 
-                marginTop: '1.5rem', 
-                borderTop: '1px dashed var(--glass-border)', 
-                paddingTop: '1.25rem',
-                background: 'rgba(var(--primary-rgb), 0.03)',
-                padding: '1.25rem',
-                borderRadius: '12px',
-                border: '1px solid rgba(var(--primary-rgb), 0.08)'
-              }}>
-                <h4 style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
-                  <Clock size={14} color="var(--primary-color)" /> {t.iepTimelineTitle}
-                </h4>
-                <p style={{ fontSize: '0.78rem', color: 'var(--text-light)', lineHeight: 1.4, marginBottom: '0.75rem' }}>
-                  {t.iepTimelineSub}
-                </p>
-                
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', alignItems: 'flex-end', marginBottom: '0.75rem' }}>
-                  <div className="input-group" style={{ marginBottom: 0 }}>
-                    <label style={{ fontSize: '0.75rem' }}>{t.submissionDateLabel}</label>
-                    <input 
-                      type="date"
-                      value={iepSubmissionDate}
-                      onChange={(e) => setIepSubmissionDate(e.target.value)}
-                      style={{ padding: '0.4rem 0.6rem', fontSize: '0.8rem', width: '100%' }}
-                    />
-                  </div>
-                  <div style={{ fontSize: '0.72rem', color: 'var(--text-light)', paddingBottom: '0.4rem' }}>
-                    {t.iepStatCode}
-                  </div>
-                </div>
+          // SSI
+          ssiDate={ssiDate}
+          setSsiDate={setSsiDate}
+          ssiDiagnosis={ssiDiagnosis}
+          setSsiDiagnosis={setSsiDiagnosis}
+          ssiClinicInfo={ssiClinicInfo}
+          setSsiClinicInfo={setSsiClinicInfo}
+          customSsiText={customSsiText}
+          setCustomSsiText={setCustomSsiText}
 
-                <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.75rem', fontSize: '0.8rem', flexDirection: 'column' }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px dashed var(--glass-border)', paddingBottom: '0.25rem' }}>
-                    <span>{t.iepTimeline1}</span>
-                    <strong style={{ color: 'var(--primary-color)' }}>{calculateDateOffset(iepSubmissionDate, 15)}</strong>
-                  </div>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px dashed var(--glass-border)', paddingBottom: '0.25rem' }}>
-                    <span>{t.iepTimeline2}</span>
-                    <strong>{calculateDateOffset(iepSubmissionDate, 30)}</strong>
-                  </div>
-                  <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <span>{t.iepTimeline3}</span>
-                    <strong style={{ color: '#10b981' }}>{calculateDateOffset(iepSubmissionDate, 60)}</strong>
-                  </div>
-                </div>
-              </div>
+          // EPSDT
+          therapyType={therapyType}
+          setTherapyType={setTherapyType}
+          denialReason={denialReason}
+          setDenialReason={setDenialReason}
+          insurancePlanName={insurancePlanName}
+          setInsurancePlanName={setInsurancePlanName}
+          prescribingDoctor={prescribingDoctor}
+          setPrescribingDoctor={setPrescribingDoctor}
+          customTherapyText={customTherapyText}
+          setCustomTherapyText={setCustomTherapyText}
+        />
 
-            </div>
-          )}
-
-          {/* IHSS Appeal Fields */}
-          {activeTemplate === 'ihss-appeal' && (
-            <div>
-              <h3 style={{ fontSize: '1.15rem', fontWeight: 700, marginBottom: '0.5rem' }}>{t.ihssParamsTitle}</h3>
-              <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', marginBottom: '1.5rem' }}>
-                {t.ihssParamsSub}
-              </p>
-
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1.5rem' }}>
-                <div className="input-group" style={{ marginBottom: 0 }}>
-                  <label style={{ fontSize: '0.8rem' }}>{t.countyNameLabel}</label>
-                  <input 
-                    type="text" 
-                    value={ihssCounty} 
-                    onChange={(e) => setIhssCounty(e.target.value)} 
-                    style={{ padding: '0.6rem 0.8rem', fontSize: '0.88rem', width: '100%' }}
-                  />
-                </div>
-                <div className="input-group" style={{ marginBottom: 0 }}>
-                  <label style={{ fontSize: '0.8rem' }}>{t.noticeDateLabel}</label>
-                  <input 
-                    type="date" 
-                    value={ihssDenialDate} 
-                    onChange={(e) => setIhssDenialDate(e.target.value)} 
-                    style={{ padding: '0.6rem 0.8rem', fontSize: '0.88rem', width: '100%' }}
-                  />
-                </div>
-              </div>
-
-              <div style={{ marginBottom: '1.5rem' }}>
-                <label style={{ fontSize: '0.85rem', fontWeight: 600, display: 'block', marginBottom: '0.5rem' }}>{t.ihssHazardsLabel}</label>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '0.75rem' }}>
-                  <label style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.85rem', cursor: 'pointer' }}>
-                    <input 
-                      type="checkbox"
-                      checked={ihssSafetyConcerns.elopement}
-                      onChange={(e) => setIhssSafetyConcerns(prev => ({ ...prev, elopement: e.target.checked }))}
-                    />
-                    <span>{t.ihssElopement}</span>
-                  </label>
-                  <label style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.85rem', cursor: 'pointer' }}>
-                    <input 
-                      type="checkbox"
-                      checked={ihssSafetyConcerns.pica}
-                      onChange={(e) => setIhssSafetyConcerns(prev => ({ ...prev, pica: e.target.checked }))}
-                    />
-                    <span>{t.ihssPica}</span>
-                  </label>
-                  <label style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.85rem', cursor: 'pointer' }}>
-                    <input 
-                      type="checkbox"
-                      checked={ihssSafetyConcerns.selfInjury}
-                      onChange={(e) => setIhssSafetyConcerns(prev => ({ ...prev, selfInjury: e.target.checked }))}
-                    />
-                    <span>{t.ihssSelfInjury}</span>
-                  </label>
-                  <label style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.85rem', cursor: 'pointer' }}>
-                    <input 
-                      type="checkbox"
-                      checked={ihssSafetyConcerns.climbing}
-                      onChange={(e) => setIhssSafetyConcerns(prev => ({ ...prev, climbing: e.target.checked }))}
-                    />
-                    <span>{t.ihssClimbing}</span>
-                  </label>
-                  <label style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.85rem', cursor: 'pointer' }}>
-                    <input 
-                      type="checkbox"
-                      checked={ihssSafetyConcerns.electricalSafety}
-                      onChange={(e) => setIhssSafetyConcerns(prev => ({ ...prev, electricalSafety: e.target.checked }))}
-                    />
-                    <span>{t.ihssElectrical}</span>
-                  </label>
-                </div>
-              </div>
-
-              <div className="input-group" style={{ marginBottom: 0 }}>
-                <label style={{ fontSize: '0.85rem' }}>{t.ihssDescriptionLabel}</label>
-                <textarea 
-                  value={customIhssText}
-                  onChange={(e) => setCustomIhssText(e.target.value)}
-                  style={{ width: '100%', minHeight: '80px', fontSize: '0.88rem', padding: '0.75rem', borderRadius: '8px' }}
-                />
-              </div>
-
-              {/* Statutory IHSS Appeal Deadline warning */}
-              <div style={{ 
-                marginTop: '1.5rem', 
-                borderTop: '1px dashed var(--glass-border)', 
-                paddingTop: '1.25rem',
-                background: 'rgba(239, 68, 68, 0.02)',
-                padding: '1.25rem',
-                borderRadius: '12px',
-                border: '1px solid rgba(239, 68, 68, 0.08)'
-              }}>
-                <h4 style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
-                  <Scale size={14} color="#ef4444" /> {t.ihssTimelineTitle}
-                </h4>
-                <p style={{ fontSize: '0.78rem', color: 'var(--text-light)', lineHeight: 1.4, marginBottom: '0.75rem' }}>
-                  {t.ihssTimelineSub}
-                </p>
-                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.8rem' }}>
-                  <span>{t.noaDateLabel}</span>
-                  <strong>{ihssDenialDate ? new Date(ihssDenialDate + 'T00:00:00').toLocaleDateString(isSpanish ? 'es-ES' : 'en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : 'N/A'}</strong>
-                </div>
-                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.8rem', marginTop: '0.4rem', borderTop: '1px dashed var(--glass-border)', paddingTop: '0.4rem' }}>
-                  <span style={{ color: '#b91c1c', fontWeight: 600 }}>{t.filingDeadlineLabel}</span>
-                  <strong style={{ color: '#ef4444' }}>{calculateDateOffset(ihssDenialDate, 90)}</strong>
-                </div>
-              </div>
-
-            </div>
-          )}
-
-          {/* Regional Center Appeal Fields */}
-          {activeTemplate === 'rc-appeal' && (
-            <div>
-              <h3 style={{ fontSize: '1.15rem', fontWeight: 700, marginBottom: '0.5rem' }}>{t.rcParamsTitle}</h3>
-              <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', marginBottom: '1.5rem' }}>
-                {t.rcParamsSub}
-              </p>
-
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginBottom: '1.5rem' }}>
-                <div className="input-group" style={{ marginBottom: 0 }}>
-                  <label style={{ fontSize: '0.8rem' }}>{t.rcNameLabel}</label>
-                  <input 
-                    type="text" 
-                    value={regionalCenterName} 
-                    onChange={(e) => setRegionalCenterName(e.target.value)} 
-                    style={{ padding: '0.6rem 0.8rem', fontSize: '0.88rem', width: '100%' }}
-                  />
-                </div>
-                <div className="input-group" style={{ marginBottom: 0 }}>
-                  <label style={{ fontSize: '0.8rem' }}>{t.rcDenialDateLabel}</label>
-                  <input 
-                    type="date" 
-                    value={rcDenialDate} 
-                    onChange={(e) => setRcDenialDate(e.target.value)} 
-                    style={{ padding: '0.6rem 0.8rem', fontSize: '0.88rem', width: '100%' }}
-                  />
-                </div>
-                <div className="input-group" style={{ marginBottom: 0 }}>
-                  <label style={{ fontSize: '0.8rem' }}>{t.rcDiagnosisLabel}</label>
-                  <input 
-                    type="text" 
-                    value={rcDiagnosis} 
-                    onChange={(e) => setRcDiagnosis(e.target.value)} 
-                    style={{ padding: '0.6rem 0.8rem', fontSize: '0.88rem', width: '100%' }}
-                  />
-                </div>
-              </div>
-
-              <div style={{ marginBottom: '1.5rem' }}>
-                <label style={{ fontSize: '0.85rem', fontWeight: 600, display: 'block', marginBottom: '0.5rem' }}>{t.rcLimitationsLabel}</label>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '0.75rem' }}>
-                  <label style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.85rem', cursor: 'pointer' }}>
-                    <input 
-                      type="checkbox"
-                      checked={rcLimitations.receptiveLanguage}
-                      onChange={(e) => setRcLimitations(prev => ({ ...prev, receptiveLanguage: e.target.checked }))}
-                    />
-                    <span>{t.rcReceptive}</span>
-                  </label>
-                  <label style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.85rem', cursor: 'pointer' }}>
-                    <input 
-                      type="checkbox"
-                      checked={rcLimitations.expressiveLanguage}
-                      onChange={(e) => setRcLimitations(prev => ({ ...prev, expressiveLanguage: e.target.checked }))}
-                    />
-                    <span>{t.rcExpressive}</span>
-                  </label>
-                  <label style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.85rem', cursor: 'pointer' }}>
-                    <input 
-                      type="checkbox"
-                      checked={rcLimitations.learning}
-                      onChange={(e) => setRcLimitations(prev => ({ ...prev, learning: e.target.checked }))}
-                    />
-                    <span>{t.rcLearning}</span>
-                  </label>
-                  <label style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.85rem', cursor: 'pointer' }}>
-                    <input 
-                      type="checkbox"
-                      checked={rcLimitations.mobility}
-                      onChange={(e) => setRcLimitations(prev => ({ ...prev, mobility: e.target.checked }))}
-                    />
-                    <span>{t.rcMobility}</span>
-                  </label>
-                  <label style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.85rem', cursor: 'pointer' }}>
-                    <input 
-                      type="checkbox"
-                      checked={rcLimitations.selfCare}
-                      onChange={(e) => setRcLimitations(prev => ({ ...prev, selfCare: e.target.checked }))}
-                    />
-                    <span>{t.rcSelfCare}</span>
-                  </label>
-                  <label style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.85rem', cursor: 'pointer' }}>
-                    <input 
-                      type="checkbox"
-                      checked={rcLimitations.selfDirection}
-                      onChange={(e) => setRcLimitations(prev => ({ ...prev, selfDirection: e.target.checked }))}
-                    />
-                    <span>{t.rcSelfDirection}</span>
-                  </label>
-                </div>
-              </div>
-
-              <div className="input-group" style={{ marginBottom: 0 }}>
-                <label style={{ fontSize: '0.85rem' }}>{t.rcDescLabel}</label>
-                <textarea 
-                  value={customRcText}
-                  onChange={(e) => setCustomRcText(e.target.value)}
-                  style={{ width: '100%', minHeight: '80px', fontSize: '0.88rem', padding: '0.75rem', borderRadius: '8px' }}
-                />
-              </div>
-
-              {/* Statutory Lanterman Appeal Deadline warning */}
-              <div style={{ 
-                marginTop: '1.5rem', 
-                borderTop: '1px dashed var(--glass-border)', 
-                paddingTop: '1.25rem',
-                background: 'rgba(239, 68, 68, 0.02)',
-                padding: '1.25rem',
-                borderRadius: '12px',
-                border: '1px solid rgba(239, 68, 68, 0.08)'
-              }}>
-                <h4 style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
-                  <Scale size={14} color="#ef4444" /> {t.rcTimelineTitle}
-                </h4>
-                <p style={{ fontSize: '0.78rem', color: 'var(--text-light)', lineHeight: 1.4, marginBottom: '0.75rem' }}>
-                  {t.rcTimelineSub}
-                </p>
-                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.8rem' }}>
-                  <span>{isSpanish ? 'Fecha de Aviso de Denegación:' : 'Denial Notice Date:'}</span>
-                  <strong>{rcDenialDate ? new Date(rcDenialDate + 'T00:00:00').toLocaleDateString(isSpanish ? 'es-ES' : 'en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : 'N/A'}</strong>
-                </div>
-                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.8rem', marginTop: '0.4rem', borderTop: '1px dashed var(--glass-border)', paddingTop: '0.4rem' }}>
-                  <span style={{ color: '#b91c1c', fontWeight: 600 }}>{t.filingDeadlineLabel}</span>
-                  <strong style={{ color: '#ef4444' }}>{calculateDateOffset(rcDenialDate, 30)}</strong>
-                </div>
-              </div>
-
-            </div>
-          )}
-
-          {/* SSI Reconsideration Fields */}
-          {activeTemplate === 'ssi-reconsideration' && (
-            <div>
-              <h3 style={{ fontSize: '1.15rem', fontWeight: 700, marginBottom: '0.5rem' }}>{t.ssiParamsTitle}</h3>
-              <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', marginBottom: '1.5rem' }}>
-                {t.ssiParamsSub}
-              </p>
-
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginBottom: '1.5rem' }}>
-                <div className="input-group" style={{ marginBottom: 0 }}>
-                  <label style={{ fontSize: '0.8rem' }}>{t.ssiDenialDateLabel}</label>
-                  <input 
-                    type="date" 
-                    value={ssiDate} 
-                    onChange={(e) => setSsiDate(e.target.value)} 
-                    style={{ padding: '0.6rem 0.8rem', fontSize: '0.88rem', width: '100%' }}
-                  />
-                </div>
-                <div className="input-group" style={{ marginBottom: 0 }}>
-                  <label style={{ fontSize: '0.8rem' }}>{t.ssiDiagnosisLabel}</label>
-                  <input 
-                    type="text" 
-                    value={ssiDiagnosis} 
-                    onChange={(e) => setSsiDiagnosis(e.target.value)} 
-                    style={{ padding: '0.6rem 0.8rem', fontSize: '0.88rem', width: '100%' }}
-                  />
-                </div>
-                <div className="input-group" style={{ marginBottom: 0 }}>
-                  <label style={{ fontSize: '0.8rem' }}>{t.ssiClinicLabel}</label>
-                  <input 
-                    type="text" 
-                    value={ssiClinicInfo} 
-                    onChange={(e) => setSsiClinicInfo(e.target.value)} 
-                    style={{ padding: '0.6rem 0.8rem', fontSize: '0.88rem', width: '100%' }}
-                  />
-                </div>
-              </div>
-
-              <div className="input-group" style={{ marginBottom: 0 }}>
-                <label style={{ fontSize: '0.85rem' }}>{t.ssiDescLabel}</label>
-                <textarea 
-                  value={customSsiText}
-                  onChange={(e) => setCustomSsiText(e.target.value)}
-                  style={{ width: '100%', minHeight: '80px', fontSize: '0.88rem', padding: '0.75rem', borderRadius: '8px' }}
-                />
-              </div>
-
-              {/* Statutory SSI Reconsideration Deadline warning */}
-              <div style={{ 
-                marginTop: '1.5rem', 
-                borderTop: '1px dashed var(--glass-border)', 
-                paddingTop: '1.25rem',
-                background: 'rgba(239, 68, 68, 0.02)',
-                padding: '1.25rem',
-                borderRadius: '12px',
-                border: '1px solid rgba(239, 68, 68, 0.08)'
-              }}>
-                <h4 style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
-                  <Scale size={14} color="#ef4444" /> {t.ssiTimelineTitle}
-                </h4>
-                <p style={{ fontSize: '0.78rem', color: 'var(--text-light)', lineHeight: 1.4, marginBottom: '0.75rem' }}>
-                  {t.ssiTimelineSub}
-                </p>
-                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.8rem' }}>
-                  <span>{isSpanish ? 'Fecha de Aviso de Denegación:' : 'Denial Notice Date:'}</span>
-                  <strong>{ssiDate ? new Date(ssiDate + 'T00:00:00').toLocaleDateString(isSpanish ? 'es-ES' : 'en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : 'N/A'}</strong>
-                </div>
-                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.8rem', marginTop: '0.4rem', borderTop: '1px dashed var(--glass-border)', paddingTop: '0.4rem' }}>
-                  <span style={{ color: '#b91c1c', fontWeight: 600 }}>{t.filingDeadlineLabel}</span>
-                  <strong style={{ color: '#ef4444' }}>{calculateDateOffset(ssiDate, 60)}</strong>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {/* EPSDT Therapy Fields */}
-          {activeTemplate === 'epsdt-therapy' && (
-            <div>
-              <h3 style={{ fontSize: '1.15rem', fontWeight: 700, marginBottom: '0.5rem' }}>{t.epsdtParamsTitle}</h3>
-              <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', marginBottom: '1.5rem' }}>
-                {t.epsdtParamsSub}
-              </p>
-
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginBottom: '1.5rem' }}>
-                <div className="input-group" style={{ marginBottom: 0 }}>
-                  <label style={{ fontSize: '0.8rem' }}>{t.therapyTypeLabel}</label>
-                  <select 
-                    value={therapyType} 
-                    onChange={(e) => setTherapyType(e.target.value)} 
-                    style={{ padding: '0.6rem 0.8rem', fontSize: '0.88rem', width: '100%', borderRadius: '8px', border: '1px solid rgba(0,0,0,0.12)', background: 'var(--card-bg, white)', color: 'var(--text-main)' }}
-                  >
-                    <option value="Speech-Language Therapy">{isSpanish ? 'Terapia de Habla y Lenguaje' : 'Speech-Language Therapy'}</option>
-                    <option value="Occupational Therapy">{isSpanish ? 'Terapia Ocupacional' : 'Occupational Therapy'}</option>
-                    <option value="Physical Therapy">{isSpanish ? 'Terapia Física' : 'Physical Therapy'}</option>
-                    <option value="Feeding Therapy">{isSpanish ? 'Terapia de Alimentación' : 'Feeding Therapy'}</option>
-                    <option value="Behavioral Therapy (ABA)">{isSpanish ? 'Terapia Conductual (ABA)' : 'Behavioral Therapy (ABA)'}</option>
-                    <option value="Mental Health / Psychotherapy">{isSpanish ? 'Salud Mental / Psicoterapia' : 'Mental Health / Psychotherapy'}</option>
-                  </select>
-                </div>
-                <div className="input-group" style={{ marginBottom: 0 }}>
-                  <label style={{ fontSize: '0.8rem' }}>{t.denialReasonLabel}</label>
-                  <select 
-                    value={denialReason} 
-                    onChange={(e) => setDenialReason(e.target.value)} 
-                    style={{ padding: '0.6rem 0.8rem', fontSize: '0.88rem', width: '100%', borderRadius: '8px', border: '1px solid rgba(0,0,0,0.12)', background: 'var(--card-bg, white)', color: 'var(--text-main)' }}
-                  >
-                    <option value="Excludes developmental delays / Not rehabilitative">{isSpanish ? 'Excluye retrasos del desarrollo / No rehabilitadora' : 'Excludes developmental delays / Not rehabilitative'}</option>
-                    <option value="Not medically necessary">{isSpanish ? 'No es médicamente necesaria' : 'Not medically necessary'}</option>
-                    <option value="Exceeds annual session limits">{isSpanish ? 'Excede los límites anuales de sesiones' : 'Exceeds annual session limits'}</option>
-                    <option value="Lack of progress / Maintenance care only">{isSpanish ? 'Falta de progreso / Solo cuidado de mantenimiento' : 'Lack of progress / Maintenance care only'}</option>
-                    <option value="Out-of-network provider">{isSpanish ? 'Proveedor fuera de la red' : 'Out-of-network provider'}</option>
-                  </select>
-                </div>
-              </div>
-
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginBottom: '1.5rem' }}>
-                <div className="input-group" style={{ marginBottom: 0 }}>
-                  <label style={{ fontSize: '0.8rem' }}>{t.insuranceNameLabel}</label>
-                  <input 
-                    type="text" 
-                    value={insurancePlanName} 
-                    onChange={(e) => setInsurancePlanName(e.target.value)} 
-                    style={{ padding: '0.6rem 0.8rem', fontSize: '0.88rem', width: '100%' }}
-                  />
-                </div>
-                <div className="input-group" style={{ marginBottom: 0 }}>
-                  <label style={{ fontSize: '0.8rem' }}>{t.physicianLabel}</label>
-                  <input 
-                    type="text" 
-                    value={prescribingDoctor} 
-                    onChange={(e) => setPrescribingDoctor(e.target.value)} 
-                    style={{ padding: '0.6rem 0.8rem', fontSize: '0.88rem', width: '100%' }}
-                  />
-                </div>
-              </div>
-
-              <div className="input-group" style={{ marginBottom: 0 }}>
-                <label style={{ fontSize: '0.85rem' }}>{t.epsdtDescLabel}</label>
-                <textarea 
-                  value={customTherapyText}
-                  onChange={(e) => setCustomTherapyText(e.target.value)}
-                  style={{ width: '100%', minHeight: '100px', fontSize: '0.88rem', padding: '0.75rem', borderRadius: '8px' }}
-                />
-              </div>
-
-              {/* Statutory EPSDT Appeal Timeline warning */}
-              <div style={{ 
-                marginTop: '1.5rem', 
-                borderTop: '1px dashed var(--glass-border)', 
-                paddingTop: '1.25rem',
-                background: 'rgba(59, 130, 246, 0.02)',
-                padding: '1.25rem',
-                borderRadius: '12px',
-                border: '1px solid rgba(59, 130, 246, 0.08)'
-              }}>
-                <h4 style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
-                  <ShieldCheck size={14} color="#3b82f6" /> {t.epsdtTimelineTitle}
-                </h4>
-                <p style={{ fontSize: '0.78rem', color: 'var(--text-light)', lineHeight: 1.4, marginBottom: '0.75rem' }}>
-                  {t.epsdtTimelineSub}
-                </p>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.8rem' }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px dashed var(--glass-border)', paddingBottom: '0.25rem' }}>
-                    <span>{t.epsdtTimeline1}</span>
-                    <strong style={{ color: '#10b981' }}>{t.epsdtTimeline1Val}</strong>
-                  </div>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px dashed var(--glass-border)', paddingBottom: '0.25rem' }}>
-                    <span>{t.epsdtTimeline2}</span>
-                    <strong>{t.epsdtTimeline2Val}</strong>
-                  </div>
-                  <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <span>{t.epsdtTimeline3}</span>
-                    <strong>{t.epsdtTimeline3Val}</strong>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          )}
-
-        </div>
-
-        {/* Render Compiled Letter Editor */}
-        <div className="glass-panel" style={{ padding: '2rem' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem', flexWrap: 'wrap', gap: '1rem' }}>
-            <div>
-              <h3 style={{ fontSize: '1.2rem', fontWeight: 700, margin: 0 }}>{t.previewTitle}</h3>
-              <span style={{ fontSize: '0.8rem', color: 'var(--text-light)' }}>{t.previewSub}</span>
-            </div>
-
-            <div style={{ display: 'flex', gap: '0.5rem' }}>
-              <button
-                onClick={() => {
-                  navigator.clipboard.writeText(letterText);
-                  setCopied(true);
-                  setTimeout(() => setCopied(false), 2000);
-                }}
-                className="btn-primary"
-                style={{ width: 'auto', padding: '0.5rem 1rem', fontSize: '0.82rem', borderRadius: '8px', background: 'rgba(0,0,0,0.04)', color: 'var(--text-main)', border: '1px solid rgba(0,0,0,0.06)', cursor: 'pointer' }}
-              >
-                {copied ? (
-                  <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.2rem', color: '#10b981' }}><Check size={14} /> {t.copiedText}</span>
-                ) : (
-                  <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.2rem' }}><Copy size={14} /> {t.copyLabel}</span>
-                )}
-              </button>
-              <PrintButton label={t.printLabel} />
-            </div>
-          </div>
-
-          {/* Simulated Paper Draft Canvas */}
-          <div style={{
-            background: 'var(--simulated-paper-bg, #f8fafc)',
-            border: '1px solid var(--glass-border)',
-            borderRadius: '12px',
-            padding: '2rem',
-            boxShadow: 'inset 0 2px 8px rgba(0,0,0,0.04)',
-            minHeight: '400px',
-            overflowX: 'auto'
-          }}
-          >
-            <pre style={{
-              fontFamily: 'Courier, monospace',
-              fontSize: '0.88rem',
-              color: 'var(--text-main, #334155)',
-              whiteSpace: 'pre-wrap',
-              lineHeight: '1.6',
-              margin: 0
-            }}>
-              {letterText}
-            </pre>
-          </div>
-          
-          {/* Legal Advisory warning */}
-          <div style={{ 
-            marginTop: '1.5rem', 
-            background: 'rgba(245, 158, 11, 0.05)', 
-            border: '1px solid rgba(245, 158, 11, 0.2)', 
-            borderRadius: '12px', 
-            padding: '1rem', 
-            display: 'flex', 
-            gap: '0.75rem', 
-            alignItems: 'flex-start' 
-          }}>
-            <AlertCircle size={20} color="#f59e0b" style={{ flexShrink: 0, marginTop: '2px' }} />
-            <p style={{ fontSize: '0.8rem', color: '#b45309', margin: 0, lineHeight: 1.4 }}>
-              <strong>{t.disclaimerTitle}</strong> {t.disclaimerText}
-            </p>
-          </div>
-
+        <AppealTemplateCard
+          letterText={letterText}
+          t={t}
+        />
+        
+        {/* Legal Advisory warning */}
+        <div style={{ 
+          background: 'rgba(245, 158, 11, 0.05)', 
+          border: '1px solid rgba(245, 158, 11, 0.2)', 
+          borderRadius: '12px', 
+          padding: '1rem', 
+          display: 'flex', 
+          gap: '0.75rem', 
+          alignItems: 'flex-start' 
+        }}>
+          <AlertCircle size={20} color="#f59e0b" style={{ flexShrink: 0, marginTop: '2px' }} />
+          <p style={{ fontSize: '0.8rem', color: '#b45309', margin: 0, lineHeight: 1.4 }}>
+            <strong>{t.disclaimerTitle}</strong> {t.disclaimerText}
+          </p>
         </div>
 
       </div>

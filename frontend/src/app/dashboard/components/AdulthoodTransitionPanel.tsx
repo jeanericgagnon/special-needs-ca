@@ -5,7 +5,7 @@ import { useChildProfile } from './ChildProfileContext';
 import { 
   Clock, Calendar, ChevronRight, Info, Scale 
 } from 'lucide-react';
-import { addReminderAction } from '../child-actions';
+import { addReminderAction, toggleTransitionTaskAction, getChildTransitionTasksAction } from '../child-actions';
 
 interface AdulthoodTransitionPanelProps {
   isSpanish?: boolean;
@@ -118,34 +118,29 @@ export default function AdulthoodTransitionPanel({ isSpanish = false }: Adulthoo
   const [completedTaskIds, setCompletedTaskIds] = useState<string[]>([]);
   const [selectedAgeBand, setSelectedAgeBand] = useState<'14-16' | '17' | '18' | '22'>('18');
   const [childAge, setChildAge] = useState<number>(0);
-
+ 
   // Load completed tasks on mount/swap
   useEffect(() => {
     if (currentChild) {
-      const saved = localStorage.getItem(`transition_completed_${currentChild.id}`);
-      let loadedTasks: string[] = [];
-      if (saved) {
-        try {
-          loadedTasks = JSON.parse(saved);
-        } catch {
-          // ignore
+      getChildTransitionTasksAction(currentChild.id).then(res => {
+        let loadedTasks: string[] = [];
+        if (res.success && res.tasks) {
+          loadedTasks = res.tasks;
         }
-      }
-
-      // Auto-set recommended tab based on child age if possible
-      const dobStr = currentChild.dob;
-      let calculatedAge = 0;
-      let recommendedBand: '14-16' | '17' | '18' | '22' | null = null;
-      if (dobStr) {
-        const dob = new Date(dobStr);
-        calculatedAge = Math.floor((Date.now() - dob.getTime()) / (1000 * 60 * 60 * 24 * 365.25));
-        if (calculatedAge >= 14 && calculatedAge <= 16) recommendedBand = '14-16';
-        else if (calculatedAge === 17) recommendedBand = '17';
-        else if (calculatedAge === 18 || calculatedAge === 19 || calculatedAge === 20 || calculatedAge === 21) recommendedBand = '18';
-        else if (calculatedAge >= 22) recommendedBand = '22';
-      }
-
-      Promise.resolve().then(() => {
+ 
+        // Auto-set recommended tab based on child age if possible
+        const dobStr = currentChild.dob;
+        let calculatedAge = 0;
+        let recommendedBand: '14-16' | '17' | '18' | '22' | null = null;
+        if (dobStr) {
+          const dob = new Date(dobStr);
+          calculatedAge = Math.floor((Date.now() - dob.getTime()) / (1000 * 60 * 60 * 24 * 365.25));
+          if (calculatedAge >= 14 && calculatedAge <= 16) recommendedBand = '14-16';
+          else if (calculatedAge === 17) recommendedBand = '17';
+          else if (calculatedAge === 18 || calculatedAge === 19 || calculatedAge === 20 || calculatedAge === 21) recommendedBand = '18';
+          else if (calculatedAge >= 22) recommendedBand = '22';
+        }
+ 
         setCompletedTaskIds(loadedTasks);
         setChildAge(calculatedAge);
         if (recommendedBand) {
@@ -154,7 +149,7 @@ export default function AdulthoodTransitionPanel({ isSpanish = false }: Adulthoo
       });
     }
   }, [currentChild]);
-
+ 
   // Persist completed tasks
   const toggleTaskCompleted = (id: string) => {
     if (!currentChild) return;
@@ -164,7 +159,7 @@ export default function AdulthoodTransitionPanel({ isSpanish = false }: Adulthoo
       : [...completedTaskIds, id];
     
     setCompletedTaskIds(updated);
-    localStorage.setItem(`transition_completed_${currentChild.id}`, JSON.stringify(updated));
+    toggleTransitionTaskAction(currentChild.id, id, !isCompleted);
   };
 
   const handleSyncAlarm = async (task: TransitionTask) => {

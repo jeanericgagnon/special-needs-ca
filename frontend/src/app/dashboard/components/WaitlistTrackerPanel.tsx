@@ -6,6 +6,11 @@ import {
   ClipboardList, Calendar, Phone, 
   Trash2, Plus, Sparkles, Info 
 } from 'lucide-react';
+import { 
+  getChildWaitlistItemsAction, 
+  saveChildWaitlistItemAction, 
+  deleteChildWaitlistItemAction 
+} from '../child-actions';
 
 interface WaitlistItem {
   id: string;
@@ -22,6 +27,39 @@ interface WaitlistTrackerPanelProps {
   isSpanish?: boolean;
 }
 
+interface DbWaitlistItem {
+  id: string;
+  provider_name: string;
+  service_category: string;
+  date_joined?: string;
+  position?: string;
+  contact_phone?: string;
+  notes?: string;
+  status?: string;
+}
+
+const mapDbToClient = (dbItem: DbWaitlistItem): WaitlistItem => ({
+  id: dbItem.id,
+  providerName: dbItem.provider_name,
+  category: dbItem.service_category as 'clinical' | 'therapy' | 'regional-center',
+  dateJoined: dbItem.date_joined || '',
+  position: dbItem.position || '',
+  phone: dbItem.contact_phone || '',
+  notes: dbItem.notes || '',
+  status: (dbItem.status as 'waiting' | 'contacted' | 'scheduled' | 'active') || 'waiting'
+});
+
+const mapClientToDb = (clientItem: WaitlistItem) => ({
+  id: clientItem.id,
+  provider_name: clientItem.providerName,
+  service_category: clientItem.category,
+  date_joined: clientItem.dateJoined,
+  position: clientItem.position,
+  contact_phone: clientItem.phone,
+  notes: clientItem.notes,
+  status: clientItem.status
+});
+
 export default function WaitlistTrackerPanel({ isSpanish = false }: WaitlistTrackerPanelProps) {
   const { currentChild } = useChildProfile();
   const [items, setItems] = useState<WaitlistItem[]>([]);
@@ -37,64 +75,60 @@ export default function WaitlistTrackerPanel({ isSpanish = false }: WaitlistTrac
   
   const [showAddForm, setShowAddForm] = useState(false);
 
-  // Load items from localStorage on mount/child change
+  // Load items from DB on mount/child change
   useEffect(() => {
     if (currentChild) {
-      const saved = localStorage.getItem(`waitlists_${currentChild.id}`);
-      let loadedItems: WaitlistItem[] = [];
-      if (saved) {
-        try {
-          loadedItems = JSON.parse(saved);
-        } catch {
-          // ignore
-        }
-      } else {
-        // Seed default waitlist items for demonstration
-        const defaultItems: WaitlistItem[] = [
-          {
-            id: 'demo-1',
-            providerName: 'Children\'s Hospital LA (CHLA) Developmental Ped',
-            category: 'clinical',
-            dateJoined: new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
-            position: '142',
-            phone: '(323) 361-2000',
-            notes: 'Wait time estimated at 12-18 months. Need to follow up monthly.',
-            status: 'waiting'
-          },
-          {
-            id: 'demo-2',
-            providerName: 'Milestones Pediatric Speech Therapy',
-            category: 'therapy',
-            dateJoined: new Date(Date.now() - 10 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
-            position: '12',
-            phone: '(818) 555-0192',
-            notes: 'In-network with L.A. Care. Initial intake scheduled but actual services waitlisted.',
-            status: 'contacted'
+      getChildWaitlistItemsAction(currentChild.id).then(async (res) => {
+        if (res.success && res.items && res.items.length > 0) {
+          setItems(res.items.map(mapDbToClient));
+        } else {
+          // Check localStorage fallback
+          const saved = localStorage.getItem(`waitlists_${currentChild.id}`);
+          let loadedItems: WaitlistItem[] = [];
+          if (saved) {
+            try {
+              loadedItems = JSON.parse(saved);
+            } catch {}
+          } else {
+            // Seed defaults
+            loadedItems = [
+              {
+                id: 'demo-1',
+                providerName: 'Children\'s Hospital LA (CHLA) Developmental Ped',
+                category: 'clinical',
+                dateJoined: new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+                position: '142',
+                phone: '(323) 361-2000',
+                notes: 'Wait time estimated at 12-18 months. Need to follow up monthly.',
+                status: 'waiting'
+              },
+              {
+                id: 'demo-2',
+                providerName: 'Milestones Pediatric Speech Therapy',
+                category: 'therapy',
+                dateJoined: new Date(Date.now() - 10 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+                position: '12',
+                phone: '(818) 555-0192',
+                notes: 'In-network with L.A. Care. Initial intake scheduled but actual services waitlisted.',
+                status: 'contacted'
+              }
+            ];
           }
-        ];
-        loadedItems = defaultItems;
-        localStorage.setItem(`waitlists_${currentChild.id}`, JSON.stringify(defaultItems));
-      }
-
-      Promise.resolve().then(() => {
-        setItems(loadedItems);
+          // Seed back to DB
+          for (const item of loadedItems) {
+            await saveChildWaitlistItemAction(mapClientToDb(item), currentChild.id);
+          }
+          setItems(loadedItems);
+        }
       });
     }
   }, [currentChild]);
 
-  // Persist items
-  const saveItems = (newItems: WaitlistItem[]) => {
-    setItems(newItems);
-    if (currentChild) {
-      localStorage.setItem(`waitlists_${currentChild.id}`, JSON.stringify(newItems));
-    }
-  };
-
   if (!currentChild) return null;
 
-  const handleAddItem = (e: React.FormEvent) => {
+  const handleAddItem = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!providerName.trim()) return;
+    if (!providerName.trim() || !currentChild) return;
 
     const newItem: WaitlistItem = {
       id: `item-${Date.now()}`,
@@ -107,9 +141,11 @@ export default function WaitlistTrackerPanel({ isSpanish = false }: WaitlistTrac
       status
     };
 
-    const updated = [...items, newItem];
-    saveItems(updated);
-    
+    const res = await saveChildWaitlistItemAction(mapClientToDb(newItem), currentChild.id);
+    if (res.success) {
+      setItems(prev => [...prev, newItem]);
+    }
+
     // Reset form
     setProviderName('');
     setCategory('therapy');
@@ -121,19 +157,24 @@ export default function WaitlistTrackerPanel({ isSpanish = false }: WaitlistTrac
     setShowAddForm(false);
   };
 
-  const handleDeleteItem = (id: string) => {
-    const updated = items.filter(item => item.id !== id);
-    saveItems(updated);
+  const handleDeleteItem = async (id: string) => {
+    if (!currentChild) return;
+    const res = await deleteChildWaitlistItemAction(id, currentChild.id);
+    if (res.success) {
+      setItems(prev => prev.filter(item => item.id !== id));
+    }
   };
 
-  const handleStatusChange = (id: string, newStatus: WaitlistItem['status']) => {
-    const updated = items.map(item => {
-      if (item.id === id) {
-        return { ...item, status: newStatus };
-      }
-      return item;
-    });
-    saveItems(updated);
+  const handleStatusChange = async (id: string, newStatus: WaitlistItem['status']) => {
+    if (!currentChild) return;
+    const itemToUpdate = items.find(item => item.id === id);
+    if (!itemToUpdate) return;
+
+    const updatedItem = { ...itemToUpdate, status: newStatus };
+    const res = await saveChildWaitlistItemAction(mapClientToDb(updatedItem), currentChild.id);
+    if (res.success) {
+      setItems(prev => prev.map(item => item.id === id ? updatedItem : item));
+    }
   };
 
   const getCategoryLabel = (cat: WaitlistItem['category']) => {

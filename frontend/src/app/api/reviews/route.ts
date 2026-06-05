@@ -1,5 +1,20 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { cookies } from 'next/headers';
 import { navigatorDb } from '@/lib/db';
+import { verifyToken } from '@/lib/auth';
+
+// In-memory rate limiter map: IP -> array of timestamps
+const rateLimitMap = new Map<string, number[]>();
+
+// Rate limit helper: maximum 5 requests per 10 minutes per IP
+function isRateLimited(ip: string, limit = 5, windowMs = 600000): boolean {
+  const now = Date.now();
+  const timestamps = rateLimitMap.get(ip) || [];
+  const validTimestamps = timestamps.filter(time => now - time < windowMs);
+  validTimestamps.push(now);
+  rateLimitMap.set(ip, validTimestamps);
+  return validTimestamps.length > limit;
+}
 
 // GET /api/reviews?entityId=...&entityType=...
 export async function GET(request: NextRequest) {
@@ -11,15 +26,15 @@ export async function GET(request: NextRequest) {
 
     let reviews;
     if (entityId && entityType) {
-      reviews = navigatorDb
+      reviews = await navigatorDb
         .prepare('SELECT * FROM directory_reviews WHERE entity_id = ? AND entity_type = ? ORDER BY created_at DESC LIMIT 50')
         .all(entityId, entityType);
     } else if (countyId) {
-      reviews = navigatorDb
+      reviews = await navigatorDb
         .prepare('SELECT * FROM directory_reviews WHERE county_id = ? ORDER BY created_at DESC LIMIT 100')
         .all(countyId);
     } else {
-      reviews = navigatorDb
+      reviews = await navigatorDb
         .prepare('SELECT * FROM directory_reviews ORDER BY created_at DESC LIMIT 50')
         .all();
     }
@@ -34,6 +49,32 @@ export async function GET(request: NextRequest) {
 // POST /api/reviews
 export async function POST(request: NextRequest) {
   try {
+    // Write safety block for serverless Vercel environments without active PG
+    const isVercel = process.env.VERCEL === '1';
+    const usePg = !!process.env.DATABASE_URL;
+    if (isVercel && !usePg) {
+      console.warn('Write safety block: database writes disabled on Vercel without active PG pool.');
+      return NextResponse.json(
+        { error: 'Database writes are unavailable in serverless mode without a PostgreSQL instance.' },
+        { status: 503 }
+      );
+    }
+
+    // Rate limit check
+    const ipHeader = request.headers.get('x-forwarded-for') || '127.0.0.1';
+    const ip = ipHeader.split(',')[0].trim();
+    if (isRateLimited(ip)) {
+      return NextResponse.json({ error: 'Too Many Requests' }, { status: 429 });
+    }
+
+    // Authentication check
+    const cookieStore = await cookies();
+    const token = cookieStore.get('session')?.value;
+    const session = token ? verifyToken(token) : null;
+    if (!session) {
+      return NextResponse.json({ error: 'Unauthorized access' }, { status: 401 });
+    }
+
     const body = await request.json();
     const { entity_type, entity_id, entity_name, county_id, rating, comment, reviewer_label, experience_type } = body;
 
@@ -51,14 +92,22 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Comment must be under 1000 characters' }, { status: 400 });
     }
 
+    // Enforce review submission constraints: verify that user hasn't already reviewed this provider
+    const existingReview = await navigatorDb
+      .prepare('SELECT id FROM directory_reviews WHERE user_id = ? AND entity_id = ? AND entity_type = ? LIMIT 1')
+      .get(session.userId, entity_id, entity_type);
+    if (existingReview) {
+      return NextResponse.json({ error: 'You have already submitted a review for this provider.' }, { status: 400 });
+    }
+
     // Sanitize: strip any HTML tags
     const sanitizeStr = (s: string) => String(s).replace(/<[^>]*>/g, '').trim().slice(0, 1000);
 
-    const result = navigatorDb
+    const result = await navigatorDb
       .prepare(`
         INSERT INTO directory_reviews 
-          (entity_type, entity_id, entity_name, county_id, rating, comment, reviewer_label, experience_type, created_at)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+          (entity_type, entity_id, entity_name, county_id, rating, comment, reviewer_label, experience_type, user_id, created_at)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
       `)
       .run(
         sanitizeStr(entity_type),
@@ -69,6 +118,7 @@ export async function POST(request: NextRequest) {
         sanitizeStr(comment),
         sanitizeStr(reviewer_label || 'Parent'),
         experience_type ? sanitizeStr(experience_type) : null,
+        session.userId,
         new Date().toISOString()
       );
 
@@ -82,10 +132,40 @@ export async function POST(request: NextRequest) {
 // POST /api/reviews/helpful (increment helpful_count)
 export async function PATCH(request: NextRequest) {
   try {
+    // Write safety block for serverless Vercel environments without active PG
+    const isVercel = process.env.VERCEL === '1';
+    const usePg = !!process.env.DATABASE_URL;
+    if (isVercel && !usePg) {
+      console.warn('Write safety block: database writes disabled on Vercel without active PG pool.');
+      return NextResponse.json(
+        { error: 'Database writes are unavailable in serverless mode without a PostgreSQL instance.' },
+        { status: 503 }
+      );
+    }
+
+    // Rate limit check
+    const ipHeader = request.headers.get('x-forwarded-for') || '127.0.0.1';
+    const ip = ipHeader.split(',')[0].trim();
+    if (isRateLimited(ip)) {
+      return NextResponse.json({ error: 'Too Many Requests' }, { status: 429 });
+    }
+
+    // Authentication check
+    const cookieStore = await cookies();
+    const token = cookieStore.get('session')?.value;
+    const session = token ? verifyToken(token) : null;
+    if (!session) {
+      return NextResponse.json({ error: 'Unauthorized access' }, { status: 401 });
+    }
+
     const body = await request.json();
     const { review_id } = body;
     if (!review_id) return NextResponse.json({ error: 'Missing review_id' }, { status: 400 });
-    navigatorDb.prepare('UPDATE directory_reviews SET helpful_count = helpful_count + 1 WHERE id = ?').run(review_id);
+    
+    await navigatorDb
+      .prepare('UPDATE directory_reviews SET helpful_count = helpful_count + 1 WHERE id = ?')
+      .run(review_id);
+      
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error('Error marking helpful:', error);

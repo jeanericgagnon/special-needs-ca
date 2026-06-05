@@ -8,6 +8,7 @@ import {
 } from 'lucide-react';
 import CopyButton from '@/components/copy-button';
 import PrintButton from '@/components/print-button';
+import { getCaregiverProfileAction } from '../dashboard/child-actions';
 
 export default function PlanningClient() {
   const [activeTab, setActiveTab] = useState<'shield' | 'deeming'>('shield');
@@ -21,20 +22,36 @@ export default function PlanningClient() {
 
   // Load from profile cache on mount
   useEffect(() => {
-    const savedParentName = localStorage.getItem('caregiver_name') || localStorage.getItem('funding_parent_name') || localStorage.getItem('ca_special_needs_safety_parent');
-    const savedChildName = localStorage.getItem('child_name') || localStorage.getItem('iep_student_name') || localStorage.getItem('funding_child_name') || localStorage.getItem('ca_special_needs_safety_child');
-    const savedChildDob = localStorage.getItem('child_dob') || localStorage.getItem('funding_child_dob');
-    const savedParentPhone = localStorage.getItem('caregiver_phone') || localStorage.getItem('funding_parent_phone');
-    const savedCoordName = localStorage.getItem('funding_coordinator_name');
+    Promise.resolve().then(() => {
+      // 1. First fetch database values
+      getCaregiverProfileAction()
+        .then(res => {
+          if (res.success && res.profile) {
+            if (res.profile.name) setParentName(res.profile.name);
+            if (res.profile.phone) setParentPhone(res.profile.phone);
+          } else {
+            const savedParentName = localStorage.getItem('caregiver_name') || localStorage.getItem('funding_parent_name') || localStorage.getItem('ca_special_needs_safety_parent');
+            const savedParentPhone = localStorage.getItem('caregiver_phone') || localStorage.getItem('funding_parent_phone');
+            if (savedParentName) setParentName(savedParentName);
+            if (savedParentPhone) setParentPhone(savedParentPhone);
+          }
+        })
+        .catch(() => {
+          const savedParentName = localStorage.getItem('caregiver_name') || localStorage.getItem('funding_parent_name') || localStorage.getItem('ca_special_needs_safety_parent');
+          const savedParentPhone = localStorage.getItem('caregiver_phone') || localStorage.getItem('funding_parent_phone');
+          if (savedParentName) setParentName(savedParentName);
+          if (savedParentPhone) setParentPhone(savedParentPhone);
+        });
 
-    const timer = setTimeout(() => {
-      if (savedParentName) setParentName(savedParentName);
+      // 2. Load remaining local-only / child values
+      const savedChildName = localStorage.getItem('child_name') || localStorage.getItem('iep_student_name') || localStorage.getItem('funding_child_name') || localStorage.getItem('ca_special_needs_safety_child');
+      const savedChildDob = localStorage.getItem('child_dob') || localStorage.getItem('funding_child_dob');
+      const savedCoordName = localStorage.getItem('funding_coordinator_name');
+
       if (savedChildName) setChildName(savedChildName);
       if (savedChildDob) setChildDob(savedChildDob);
-      if (savedParentPhone) setParentPhone(savedParentPhone);
       if (savedCoordName) setCoordinatorName(savedCoordName);
-    }, 0);
-    return () => clearTimeout(timer);
+    });
   }, []);
 
   // ----- TAB 1: ASSET SHIELD SIMULATOR STATES -----

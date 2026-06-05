@@ -1,6 +1,7 @@
 'use client';
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
+import { getCaregiverProfileAction } from '../child-actions';
 import type {
   County,
   TaxonomyCondition,
@@ -22,7 +23,7 @@ import type {
   Selpa
 } from '@/lib/db';
 
-export type TabType = 'roadmap' | 'benefits' | 'iep' | 'dds' | 'ihss' | 'appeals' | 'actions' | 'county' | 'waivers' | 'knowledge' | 'waitlists' | 'iepprep' | 'transition' | 'support';
+export type TabType = 'roadmap' | 'benefits' | 'iep' | 'dds' | 'ihss' | 'appeals' | 'actions' | 'county' | 'waivers' | 'knowledge' | 'waitlists' | 'iepprep' | 'transition' | 'support' | 'documents' | 'inbox' | 'share';
 export type LetterTemplateType = 'iep-request' | 'ihss-appeal' | 'rc-appeal' | 'ssi-reconsideration' | 'epsdt-therapy';
 
 interface ChildProfileContextProps {
@@ -65,6 +66,8 @@ interface ChildProfileContextProps {
   setParentName: (name: string) => void;
   childName: string;
   setChildName: (name: string) => void;
+  isSpanish: boolean;
+  setIsSpanish: (val: boolean) => void;
 }
 
 const ChildProfileContext = createContext<ChildProfileContextProps | undefined>(undefined);
@@ -100,13 +103,23 @@ export function ChildProfileProvider({
 }) {
   const [selectedChildId, setSelectedChildId] = useState<string | null>(props.selectedChildId);
   const [activeTab, setActiveTab] = useState<TabType>(
-    (initialTab && ['roadmap', 'benefits', 'iep', 'dds', 'ihss', 'appeals', 'actions', 'county', 'waivers', 'knowledge', 'waitlists', 'iepprep', 'transition', 'support'].includes(initialTab))
+    (initialTab && ['roadmap', 'benefits', 'dds', 'actions', 'county', 'waivers', 'knowledge', 'waitlists'].includes(initialTab))
       ? (initialTab as TabType)
       : 'roadmap'
   );
   const [activeTemplate, setActiveTemplate] = useState<LetterTemplateType>('iep-request');
   const [parentName, setParentName] = useState('');
   const [childName, setChildName] = useState('');
+  const [isSpanish, setIsSpanish] = useState<boolean>(false);
+
+  useEffect(() => {
+    const savedLang = localStorage.getItem('caregiver_lang');
+    if (savedLang === 'es') {
+      Promise.resolve().then(() => {
+        setIsSpanish(true);
+      });
+    }
+  }, []);
 
   // Find active child profile
   const currentChild = props.childrenList.find(c => c.id === selectedChildId) || props.childrenList[0] || null;
@@ -116,15 +129,26 @@ export function ChildProfileProvider({
     if (currentChild) {
       Promise.resolve().then(() => {
         setChildName(currentChild.nickname);
-        const savedParentName = localStorage.getItem('caregiver_name') || localStorage.getItem('funding_parent_name');
-        if (savedParentName) setParentName(savedParentName);
+        getCaregiverProfileAction()
+          .then(res => {
+            if (res.success && res.profile?.name) {
+              setParentName(res.profile.name);
+            } else {
+              const savedParentName = localStorage.getItem('caregiver_name') || localStorage.getItem('funding_parent_name');
+              if (savedParentName) setParentName(savedParentName);
+            }
+          })
+          .catch(() => {
+            const savedParentName = localStorage.getItem('caregiver_name') || localStorage.getItem('funding_parent_name');
+            if (savedParentName) setParentName(savedParentName);
+          });
       });
     }
   }, [currentChild]);
 
   // Handle URL changes
   useEffect(() => {
-    if (initialTab && ['roadmap', 'benefits', 'iep', 'dds', 'ihss', 'appeals', 'actions', 'county', 'waivers', 'knowledge', 'waitlists', 'iepprep', 'transition', 'support'].includes(initialTab)) {
+    if (initialTab && ['roadmap', 'benefits', 'dds', 'actions', 'county', 'waivers', 'knowledge', 'waitlists'].includes(initialTab)) {
       Promise.resolve().then(() => {
         setActiveTab(initialTab as TabType);
       });
@@ -164,7 +188,9 @@ export function ChildProfileProvider({
         parentName,
         setParentName,
         childName,
-        setChildName
+        setChildName,
+        isSpanish,
+        setIsSpanish
       }}
     >
       {children}

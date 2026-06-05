@@ -8,7 +8,7 @@ export async function GET() {
 
   let counties: County[] = [];
   try {
-    counties = getCounties();
+    counties = await getCounties();
   } catch {
     console.error('Failed to load counties for sitemap:');
     counties = [
@@ -21,28 +21,28 @@ export async function GET() {
 
   // Pre-load county details maps for fast checking
   const countyDetailsMap = new Map();
-  counties.forEach(c => {
+  for (const c of counties) {
     try {
-      const details = getCountyDetails(c.id);
+      const details = await getCountyDetails(c.id);
       if (details) {
         countyDetailsMap.set(c.id, details);
       }
     } catch (e) {
       console.error(`Failed to fetch details for county ${c.id}:`, e);
     }
-  });
+  }
 
   // Pre-load programs matches map for fast checking
   const diagnosisProgramsMap = new Map();
-  DIAGNOSES.forEach(diag => {
+  for (const diag of DIAGNOSES) {
     const slug = slugifyDiagnosis(diag);
     try {
-      const progs = getProgramsForDiagnosis(slug);
+      const progs = await getProgramsForDiagnosis(slug);
       diagnosisProgramsMap.set(slug, progs);
     } catch (e) {
       console.error(`Failed to fetch programs for diagnosis ${slug}:`, e);
     }
-  });
+  }
 
   let xmlUrls = `  <url>
     <loc>${baseUrl}/benefits</loc>

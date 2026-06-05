@@ -22,12 +22,22 @@ export function hashPassword(password: string): string {
   return `${salt}:${hash}`;
 }
 
+export function timingSafeCompare(a: string, b: string): boolean {
+  const bufA = Buffer.from(a, 'utf8');
+  const bufB = Buffer.from(b, 'utf8');
+  if (bufA.length !== bufB.length) {
+    crypto.timingSafeEqual(bufA, bufA);
+    return false;
+  }
+  return crypto.timingSafeEqual(bufA, bufB);
+}
+
 export function verifyPassword(password: string, storedHash: string): boolean {
   const parts = storedHash.split(':');
   if (parts.length !== 2) return false;
   const [salt, hash] = parts;
   const verifyHash = crypto.pbkdf2Sync(password, salt, SALT_ROUNDS, KEY_LEN, DIGEST).toString('hex');
-  return hash === verifyHash;
+  return timingSafeCompare(hash, verifyHash);
 }
 
 // ----------------------------------------------------
@@ -64,7 +74,7 @@ export function verifyToken(token: string): UserSession | null {
       .update(`${header}.${body}`)
       .digest('base64url');
       
-    if (signature !== expectedSignature) return null;
+    if (!timingSafeCompare(signature, expectedSignature)) return null;
     
     const payload = JSON.parse(Buffer.from(body, 'base64url').toString('utf8')) as UserSession;
     
@@ -78,3 +88,4 @@ export function verifyToken(token: string): UserSession | null {
     return null;
   }
 }
+

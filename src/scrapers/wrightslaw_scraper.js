@@ -186,7 +186,7 @@ async function run() {
     // Extract phone
     const phoneRegex = /\b\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}\b/;
     const phoneMatch = textContent.match(phoneRegex);
-    const phone = phoneMatch ? phoneMatch[0] : '(800) 555-0199';
+    const phone = phoneMatch ? phoneMatch[0] : 'None Listed';
     
     // Extract & reconstruct email
     let email = '';

@@ -16,8 +16,8 @@ export default async function RegisterPage() {
   }
 
   // Fetch counties & functional needs dynamically from database
-  const counties = getCounties();
-  const needs = getFunctionalNeeds();
+  const counties = await getCounties();
+  const needs = await getFunctionalNeeds();
 
   return (
     <RegisterClient 

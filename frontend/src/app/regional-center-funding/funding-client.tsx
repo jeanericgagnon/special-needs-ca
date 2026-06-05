@@ -23,6 +23,7 @@ import {
 } from '@/lib/funding-data';
 import CopyButton from '@/components/copy-button';
 import PrintButton from '@/components/print-button';
+import { getCaregiverProfileAction } from '../dashboard/child-actions';
 
 export default function FundingClient() {
   const [activeTab, setActiveTab] = useState<'catalog' | 'calculator' | 'appeals' | 'disparities' | 'sdp'>('catalog');
@@ -160,17 +161,34 @@ export default function FundingClient() {
     justificationBullets
   ]);
 
-  // Load from local storage
+  // Load from local storage and database
   useEffect(() => {
+    // 1. Fetch database caregiver values
+    getCaregiverProfileAction()
+      .then(res => {
+        if (res.success && res.profile) {
+          if (res.profile.name) setParentName(res.profile.name);
+          if (res.profile.phone) setParentPhone(res.profile.phone);
+        } else {
+          const savedParentName = localStorage.getItem('funding_parent_name');
+          const savedParentPhone = localStorage.getItem('funding_parent_phone');
+          if (savedParentName) setParentName(savedParentName);
+          if (savedParentPhone) setParentPhone(savedParentPhone);
+        }
+      })
+      .catch(() => {
+        const savedParentName = localStorage.getItem('funding_parent_name');
+        const savedParentPhone = localStorage.getItem('funding_parent_phone');
+        if (savedParentName) setParentName(savedParentName);
+        if (savedParentPhone) setParentPhone(savedParentPhone);
+      });
+
+    // 2. Load child profile and SDP simulation data from localStorage
     setTimeout(() => {
-      const savedParentName = localStorage.getItem('funding_parent_name');
-      const savedParentPhone = localStorage.getItem('funding_parent_phone');
       const savedChildName = localStorage.getItem('funding_child_name');
       const savedChildDob = localStorage.getItem('funding_child_dob');
       const savedCoordName = localStorage.getItem('funding_coordinator_name');
 
-      if (savedParentName) setParentName(savedParentName);
-      if (savedParentPhone) setParentPhone(savedParentPhone);
       if (savedChildName) setChildName(savedChildName);
       if (savedChildDob) setChildDob(savedChildDob);
       if (savedCoordName) setCoordinatorName(savedCoordName);

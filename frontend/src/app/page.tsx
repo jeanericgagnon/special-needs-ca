@@ -9,10 +9,10 @@ import { DIAGNOSES } from '@/lib/diagnoses';
 
 export default async function Home() {
   // 1. Fetch counties dynamically from database
-  const counties = getCounties();
+  const counties = await getCounties();
 
   // 1.5. Fetch waitlists dynamically from database
-  const waitlists = getProgramWaitlists();
+  const waitlists = await getProgramWaitlists();
 
   // 2. Read active session for quick dashboard link helper
   const cookieStore = await cookies();

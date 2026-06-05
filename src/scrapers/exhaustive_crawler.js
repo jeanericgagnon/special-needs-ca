@@ -66,7 +66,41 @@ const crawler = new PlaywrightCrawler({
     maxRequestsPerCrawl: process.env.TEST_MODE ? 50 : 50000,
     maxConcurrency: 5, // Lower concurrency for browser-based crawlers to save local resources
     
+    // Stealth & Anti-bot Launch Options
+    launchContext: {
+        launchOptions: {
+            headless: true,
+            args: [
+                '--disable-blink-features=AutomationControlled',
+                '--use-fake-device-for-media-stream',
+                '--use-fake-ui-for-media-stream'
+            ]
+        }
+    },
+    
+    // Rotate sessions to bypass CDN / IP blocks
+    useSessionPool: true,
+    sessionPoolOptions: {
+        maxPoolSize: 50,
+        sessionOptions: {
+            maxUsageCount: 10
+        }
+    },
+    
+    // Pre-navigation hooks to set stealth headers and user-agents
+    preNavigationHooks: [
+        async ({ page }) => {
+            await page.setExtraHTTPHeaders({
+                'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                'Accept-Language': 'en-US,en;q=0.9,es-ES;q=0.8,es;q=0.7',
+                'Referer': 'https://www.google.com/'
+            });
+        }
+    ],
+    
     async requestHandler({ request, page, enqueueLinks, log }) {
+        // Request throttling: introduce a variable delay to prevent rate-limit bans
+        await new Promise(resolve => setTimeout(resolve, 500 + Math.random() * 1500));
         const title = await page.title();
         const url = request.loadedUrl || request.url;
         const domain = new URL(url).hostname;

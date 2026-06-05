@@ -11,24 +11,24 @@ export async function GET() {
 
   // Pre-load programs matches map for fast checking
   const diagnosisProgramsMap = new Map();
-  DIAGNOSES.forEach(diag => {
+  for (const diag of DIAGNOSES) {
     const slug = slugifyDiagnosis(diag);
     try {
-      const progs = getProgramsForDiagnosis(slug);
+      const progs = await getProgramsForDiagnosis(slug);
       diagnosisProgramsMap.set(slug, progs);
     } catch (e) {
       console.error(`Failed to fetch programs for diagnosis ${slug}:`, e);
     }
-  });
+  }
 
   // Pre-load county details map for fast checking
   const countyDetailsMap = new Map();
   const countiesChecked = new Set<string>();
-  CITIES.forEach(city => {
+  for (const city of CITIES) {
     if (city.countyId && !countiesChecked.has(city.countyId)) {
       countiesChecked.add(city.countyId);
       try {
-        const details = getCountyDetails(city.countyId);
+        const details = await getCountyDetails(city.countyId);
         if (details) {
           countyDetailsMap.set(city.countyId, details);
         }
@@ -36,7 +36,7 @@ export async function GET() {
         console.error(`Failed to fetch county details for city county: ${city.countyId}`, e);
       }
     }
-  });
+  }
 
   let xmlUrls = '';
 

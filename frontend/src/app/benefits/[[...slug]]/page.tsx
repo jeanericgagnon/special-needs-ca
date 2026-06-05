@@ -19,6 +19,7 @@ import ContributionModal from '@/components/contribution-modal';
 import PrintButton from '@/components/print-button';
 import ShareButton from '@/components/share-button';
 import CountyMapClient from '../components/county-map-client';
+import CaliforniaMap from '@/app/components/california-map';
 
 // Client Components
 import IepGoalsBuilder from '../components/iep-goals-builder';
@@ -117,7 +118,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         alternates: { canonical: '/benefits/programs' }
       };
     }
-    const isCounty = getCounties().some(c => c.id === slug[0].toLowerCase());
+    const isCounty = (await getCounties()).some(c => c.id === slug[0].toLowerCase());
     if (isCounty) {
       const countyFormatted = formatParam(slug[0]);
       return {
@@ -137,7 +138,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (slug.length === 2) {
     if (slug[0].toLowerCase() === 'program') {
-      const prog = getProgramBySlug(slug[1].toLowerCase());
+      const prog = await getProgramBySlug(slug[1].toLowerCase());
       const title = prog ? prog.program_name : formatParam(slug[1]);
       return {
         title: `${title} - California Special Needs Program Guide (2026)`,
@@ -149,7 +150,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const secondSlug = slug[1].toLowerCase();
 
     // Check if second slug is a county
-    const isCounty = getCounties().some(c => c.id === secondSlug);
+    const isCounty = (await getCounties()).some(c => c.id === secondSlug);
     if (isCounty) {
       const countyFormatted = formatParam(secondSlug);
       return {
@@ -160,7 +161,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
 
     // Check if second slug is a school district
-    const district = getSchoolDistrictBySlug(secondSlug);
+    const district = await getSchoolDistrictBySlug(secondSlug);
     if (district) {
       return {
         title: `${diagnosisFormatted} IEP & Special Education Support in ${district.name} (2026)`,
@@ -194,7 +195,7 @@ export default async function BenefitsCatchAll({ params }: Props) {
   // CASE 7: Programs Index (/benefits/programs)
   // ==========================================
   if (slug.length === 1 && slug[0].toLowerCase() === 'programs') {
-    const allPrograms = getAllPrograms();
+    const allPrograms = await getAllPrograms();
     return (
       <main className="container animate-fade-in" style={{ paddingBottom: '5rem', paddingTop: '2.5rem' }}>
         <div style={{ textAlign: 'center', marginBottom: '3.5rem' }}>
@@ -293,14 +294,14 @@ export default async function BenefitsCatchAll({ params }: Props) {
   // ==========================================
   if (slug.length === 2 && slug[0].toLowerCase() === 'program') {
     const programSlug = slug[1].toLowerCase();
-    const program = getProgramBySlug(programSlug);
+    const program = await getProgramBySlug(programSlug);
     
     if (!program) {
       notFound();
     }
     
     // Find related advocates serving this program's general specialties
-    const allAdvocates = getIepAdvocates();
+    const allAdvocates = await getIepAdvocates();
     
     // Sort and filter advocates to show relevant professionals
     const relatedAdvocates = allAdvocates
@@ -483,7 +484,7 @@ export default async function BenefitsCatchAll({ params }: Props) {
   // CASE 1: Root Directory Index (/benefits)
   // ==========================================
   if (slug.length === 0) {
-    const counties = getCounties();
+    const counties = await getCounties();
     return (
       <main className="container animate-fade-in" style={{ paddingBottom: '5rem', paddingTop: '2.5rem' }}>
         <div style={{ textAlign: 'center', marginBottom: '3.5rem' }}>
@@ -543,6 +544,8 @@ export default async function BenefitsCatchAll({ params }: Props) {
           </Link>
         </div>
 
+        <CaliforniaMap />
+
         <div className="glass-panel" style={{ background: 'rgba(255,255,255,0.9)', padding: '2.5rem', borderRadius: '24px' }}>
           <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
             <MapPin color="var(--primary-color)" size={22} />
@@ -593,7 +596,7 @@ export default async function BenefitsCatchAll({ params }: Props) {
   // ==========================================
   if (slug.length === 1) {
     const countyId = slug[0].toLowerCase();
-    const countyData = getCountyDetails(countyId);
+    const countyData = await getCountyDetails(countyId);
 
     if (countyData) {
       const countyFormatted = formatParam(countyId);
@@ -739,7 +742,7 @@ export default async function BenefitsCatchAll({ params }: Props) {
     const isDiagnosis = DIAGNOSES.map(slugifyDiagnosis).includes(countyId);
     if (isDiagnosis) {
       const diagnosisFormatted = formatParam(countyId);
-      const countiesList = getCounties();
+      const countiesList = await getCounties();
 
       return (
         <main className="container animate-fade-in" style={{ paddingBottom: '5rem', paddingTop: '2.5rem' }}>
@@ -835,8 +838,8 @@ export default async function BenefitsCatchAll({ params }: Props) {
     const iepBlueprint = getRelevantIepData(diagnosisSlug);
 
     // Resolve Geography type
-    const isCounty = getCounties().some(c => c.id === targetSlug);
-    const district = getSchoolDistrictBySlug(targetSlug);
+    const isCounty = (await getCounties()).some(c => c.id === targetSlug);
+    const district = await getSchoolDistrictBySlug(targetSlug);
     const city = getCityBySlug(targetSlug);
 
     let countyId = '';
@@ -871,23 +874,23 @@ export default async function BenefitsCatchAll({ params }: Props) {
     }
 
     // Load County-level details for underlying service models
-    const countyData = getCountyDetails(countyId);
+    const countyData = await getCountyDetails(countyId);
     if (!countyData) {
       notFound();
     }
 
-    const countiesList = getCounties();
+    const countiesList = await getCounties();
     const ihssOffice = countyData.countyOffices?.find((o) => o.program_id === 'ihss-for-children');
     const ihssPhone = ihssOffice?.phone || '';
     const ihssAddress = ihssOffice?.address || '';
 
     // Fetch AI-extracted programs from the crawler database matching this diagnosis
-    const crawlerPrograms = getProgramsForDiagnosis(diagnosisSlug);
+    const crawlerPrograms = await getProgramsForDiagnosis(diagnosisSlug);
 
     const countySelpa = countyData.selpas?.[0];
 
     // Load local advocates
-    const rawLocalAdvocates = getIepAdvocates(countyId);
+    const rawLocalAdvocates = await getIepAdvocates(countyId);
 
     // Sort local advocates to prioritize specialists matching the child's diagnosis
     const localAdvocates = [...rawLocalAdvocates].sort((a, b) => {
@@ -933,7 +936,7 @@ export default async function BenefitsCatchAll({ params }: Props) {
     });
 
     // Gather local resources from database
-    const localProviders = getLocalProviders(countyId);
+    const localProviders = await getLocalProviders(countyId);
     
     const playgrounds = localProviders.filter(p => p.categories === 'playground');
     const clinics = localProviders.filter(p => p.categories === 'therapy-clinic');

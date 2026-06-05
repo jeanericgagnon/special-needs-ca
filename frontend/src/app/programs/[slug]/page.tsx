@@ -1,11 +1,34 @@
 import { notFound } from 'next/navigation';
 import { SEO_CLUSTERS } from '@/lib/seo-data';
-import { getCounties, getProgramBySlug } from '@/lib/db';
+import { getCounties, getProgramBySlug, getAllPrograms } from '@/lib/db';
 import AnswerPage from '@/app/components/answer-page';
 
 type Props = {
   params: Promise<{ slug: string }>;
 };
+
+export async function generateStaticParams() {
+  const params: { slug: string }[] = [];
+  for (const key of Object.keys(SEO_CLUSTERS)) {
+    if (SEO_CLUSTERS[key].category === 'programs') {
+      params.push({ slug: key });
+    }
+  }
+  try {
+    const programs = await getAllPrograms();
+    for (const prog of programs) {
+      const idStr = String(prog.id);
+      if (!params.some(p => p.slug === idStr)) {
+        params.push({ slug: idStr });
+      }
+      const slung = idStr.toLowerCase().replace(/_/g, '-');
+      if (!params.some(p => p.slug === slung)) {
+        params.push({ slug: slung });
+      }
+    }
+  } catch {}
+  return params;
+}
 
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
@@ -17,7 +40,7 @@ export async function generateMetadata({ params }: Props) {
     };
   }
 
-  const program = getProgramBySlug(slug);
+  const program = await getProgramBySlug(slug);
   if (program) {
     return {
       title: `${program.program_name} California Guide`,
@@ -32,7 +55,7 @@ export async function generateMetadata({ params }: Props) {
 
 export default async function ProgramPage({ params }: Props) {
   const { slug } = await params;
-  const counties = getCounties().map(c => ({ id: c.id, name: c.name }));
+  const counties = (await getCounties()).map(c => ({ id: c.id, name: c.name }));
 
   const cluster = SEO_CLUSTERS[slug];
   if (cluster && cluster.category === 'programs') {
@@ -40,7 +63,7 @@ export default async function ProgramPage({ params }: Props) {
   }
 
   // Fallback to DB query
-  const program = getProgramBySlug(slug);
+  const program = await getProgramBySlug(slug);
   if (!program) {
     notFound();
   }

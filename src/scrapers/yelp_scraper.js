@@ -83,31 +83,31 @@ async function run() {
   const fallbackYelp = [
     {
       name: "Advocacy for Special Kids (ASK)",
-      phone: "(310) 555-0811",
+      phone: "None Listed",
       location: "Los Angeles, CA",
       description: "Yelp Spotlight: Specializing in autism IEP plans, behavioral assessments, and school district mediations. Parent support coaching."
     },
     {
       name: "Bay Area IEP Partners",
-      phone: "(415) 555-0722",
+      phone: "None Listed",
       location: "San Jose, CA",
       description: "Yelp Spotlight: Dedicated advocates providing expert guidance on learning disabilities, speech therapy, and assistive technology accommodations."
     },
     {
       name: "Premier Special Ed Consulting",
-      phone: "(949) 555-0633",
+      phone: "None Listed",
       location: "Irvine, CA",
       description: "Yelp Spotlight: Orange County private IEP consultant representing families in eligibility disputes, dyslexia assessments, and 504 plans."
     },
     {
       name: "San Diego Special Ed Solutions",
-      phone: "(619) 555-0544",
+      phone: "None Listed",
       location: "San Diego, CA",
       description: "Yelp Spotlight: IEP advocacy, behavior intervention plans, regional center coordinator assistance, and manifestation determination hearings."
     },
     {
       name: "Sac Valley Advocacy Services",
-      phone: "(916) 555-0955",
+      phone: "None Listed",
       location: "Sacramento, CA",
       description: "Yelp Spotlight: Regional center intake navigators and school special education advocates serving Sacramento, Yolo, and Placer counties."
     }
@@ -153,7 +153,7 @@ async function run() {
         price_rate: "Varies / Private Hourly",
         counties_served: countiesServed,
         languages_spoken: searchTxt.includes('spanish') || searchTxt.includes('bilingual') ? "English, Spanish" : "English",
-        phone: a.phone || "(800) 555-0199",
+        phone: a.phone || "None Listed",
         email: "advocacy@" + a.name.replace(/[^a-zA-Z0-9]/g, '').toLowerCase().substring(0, 10) + ".org",
         website: "https://www.yelp.com",
         specialties: "IEP Advocacy, Behavior Plans, Autism Support, Learning Disabilities",

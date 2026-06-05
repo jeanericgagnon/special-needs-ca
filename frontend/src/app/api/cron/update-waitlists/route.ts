@@ -5,7 +5,18 @@ import path from 'path';
 
 export const dynamic = 'force-dynamic';
 
-export async function GET() {
+export async function GET(request: Request) {
+  const cronSecret = process.env.CRON_SECRET;
+  const authHeader = request.headers.get('authorization');
+  const isVercelCron = request.headers.get('x-vercel-cron') === 'true';
+
+  // Secure route in production or if CRON_SECRET is defined
+  if ((process.env.NODE_ENV === 'production' || cronSecret) && 
+      authHeader !== `Bearer ${cronSecret}` && 
+      !isVercelCron) {
+    return NextResponse.json({ error: 'Unauthorized access' }, { status: 401 });
+  }
+
   const targetUrl = 'https://www.dhcs.ca.gov/services/long-term-care-alternatives-home-and-community-based-service-options/home-and-community-based-alternatives-waiver-2/';
   const fallbackRepoUrl = 'https://raw.githubusercontent.com/jeanericgagnon/special-needs-ca/main/src/data/raw/dhcs_hcba.json';
   
@@ -109,18 +120,19 @@ export async function GET() {
 
     // Update database row
     const isVercel = process.env.VERCEL === '1';
+    const usePg = !!process.env.DATABASE_URL;
     let dbUpdated = false;
     
-    if (!isVercel) {
-      logs.push('Updating SQLite navigator database program_waitlists table...');
-      dbUpdated = updateWaitlistStatus('hcba', durationLabel, durationMonths, status, description);
-      logs.push(dbUpdated ? '✓ Database successfully updated on disk.' : '✓ Database on disk up-to-date.');
+    if (!isVercel || usePg) {
+      logs.push('Updating database program_waitlists table...');
+      dbUpdated = await updateWaitlistStatus('hcba', durationLabel, durationMonths, status, description);
+      logs.push(dbUpdated ? '✓ Database successfully updated.' : '✓ Database up-to-date.');
     } else {
-      logs.push('⚠️ Running in Serverless mode on Vercel. Database disk update bypassed.');
+      logs.push('⚠️ Running in Serverless mode on Vercel without active PG pool. Database update bypassed.');
     }
 
     // Retrieve active database records
-    const waitlists = getProgramWaitlists();
+    const waitlists = await getProgramWaitlists();
     const hcbaWl = waitlists.find(w => w.program_id === 'hcba');
 
     return NextResponse.json({

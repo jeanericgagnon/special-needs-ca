@@ -3,6 +3,7 @@ import { runDbMatchingEngine } from '../engine/dbMatchingEngine.js';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { execSync } from 'child_process';
+import fs from 'fs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -181,6 +182,15 @@ console.log('');
 console.log(`${BOLD}====================================================${RESET}`);
 if (testPassed) {
   console.log(`${GREEN}${BOLD}🎉 SUCCESS: Relational SQLite database integrity verified perfectly!${RESET}`);
+  
+  // Sync the fully seeded database to the frontend directory
+  try {
+    const frontendDbPath = path.resolve(__dirname, '../../frontend/ca_disability_navigator.db');
+    fs.copyFileSync(dbPath, frontendDbPath);
+    console.log(`  ✓ Synced fully seeded database to frontend directory: ${frontendDbPath}`);
+  } catch (err) {
+    console.error('  ❌ Error copying database to frontend directory:', err.message);
+  }
 } else {
   console.log(`${RED}${BOLD}🚨 FAILURE: Database integrity checks failed.${RESET}`);
 }

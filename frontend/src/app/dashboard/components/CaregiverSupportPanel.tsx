@@ -6,6 +6,7 @@ import {
   Heart, Phone, HelpCircle, 
   Info, Landmark, Calendar 
 } from 'lucide-react';
+import { getSelfCareLogAction, saveSelfCareLogAction } from '../child-actions';
 
 interface CaregiverSupportPanelProps {
   isSpanish?: boolean;
@@ -28,16 +29,11 @@ export default function CaregiverSupportPanel({ isSpanish = false }: CaregiverSu
   // Load self-care logs on mount/swap
   useEffect(() => {
     if (currentChild) {
-      const savedLog = localStorage.getItem(`selfcare_log_${currentChild.id}`);
-      let logData = { Mon: false, Tue: false, Wed: false, Thu: false, Fri: false, Sat: false, Sun: false };
-      if (savedLog) {
-        try {
-          logData = JSON.parse(savedLog);
-        } catch {
-          // ignore
+      getSelfCareLogAction(currentChild.id).then(res => {
+        let logData: Record<string, boolean> = { Mon: false, Tue: false, Wed: false, Thu: false, Fri: false, Sat: false, Sun: false };
+        if (res.success && res.log) {
+          logData = res.log;
         }
-      }
-      Promise.resolve().then(() => {
         setSelfCareDays(logData);
         setQ1(false);
         setQ2(false);
@@ -55,7 +51,7 @@ export default function CaregiverSupportPanel({ isSpanish = false }: CaregiverSu
       [day]: !selfCareDays[day]
     };
     setSelfCareDays(updated);
-    localStorage.setItem(`selfcare_log_${currentChild.id}`, JSON.stringify(updated));
+    saveSelfCareLogAction(currentChild.id, updated);
   };
 
   if (!currentChild) return null;

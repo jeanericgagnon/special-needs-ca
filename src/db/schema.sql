@@ -362,3 +362,134 @@ CREATE TABLE IF NOT EXISTS child_waivers (
     FOREIGN KEY (child_id) REFERENCES child_profiles(id) ON DELETE CASCADE
 );
 CREATE INDEX IF NOT EXISTS idx_waivers_child ON child_waivers(child_id);
+
+-- 29. regional_center_counties
+CREATE TABLE IF NOT EXISTS regional_center_counties (
+    regional_center_id TEXT,
+    county_id TEXT,
+    PRIMARY KEY (regional_center_id, county_id),
+    FOREIGN KEY (regional_center_id) REFERENCES regional_centers(id) ON DELETE CASCADE,
+    FOREIGN KEY (county_id) REFERENCES counties(id) ON DELETE CASCADE
+);
+
+-- 30. selpa_counties
+CREATE TABLE IF NOT EXISTS selpa_counties (
+    selpa_id TEXT,
+    county_id TEXT,
+    PRIMARY KEY (selpa_id, county_id),
+    FOREIGN KEY (selpa_id) REFERENCES selpas(id) ON DELETE CASCADE,
+    FOREIGN KEY (county_id) REFERENCES counties(id) ON DELETE CASCADE
+);
+
+-- 31. iep_advocate_counties
+CREATE TABLE IF NOT EXISTS iep_advocate_counties (
+    iep_advocate_id TEXT,
+    county_id TEXT,
+    PRIMARY KEY (iep_advocate_id, county_id),
+    FOREIGN KEY (iep_advocate_id) REFERENCES iep_advocates(id) ON DELETE CASCADE,
+    FOREIGN KEY (county_id) REFERENCES counties(id) ON DELETE CASCADE
+);
+
+-- 32. safety_incidents
+CREATE TABLE IF NOT EXISTS safety_incidents (
+    id TEXT PRIMARY KEY,
+    child_id TEXT NOT NULL,
+    time TEXT NOT NULL,
+    category TEXT NOT NULL,
+    risk_level TEXT NOT NULL,
+    details TEXT NOT NULL,
+    intervention TEXT NOT NULL,
+    FOREIGN KEY (child_id) REFERENCES child_profiles(id) ON DELETE CASCADE
+);
+
+-- 33. parent_declarations
+CREATE TABLE IF NOT EXISTS parent_declarations (
+    child_id TEXT PRIMARY KEY,
+    declaration_text TEXT,
+    doctor_name TEXT,
+    FOREIGN KEY (child_id) REFERENCES child_profiles(id) ON DELETE CASCADE
+);
+
+-- 34. caregiver_profiles
+CREATE TABLE IF NOT EXISTS caregiver_profiles (
+    user_id TEXT PRIMARY KEY,
+    name TEXT,
+    email TEXT,
+    phone TEXT,
+    address TEXT,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+-- 35. child_transition_tasks
+CREATE TABLE IF NOT EXISTS child_transition_tasks (
+    child_id TEXT,
+    task_id TEXT,
+    PRIMARY KEY (child_id, task_id),
+    FOREIGN KEY (child_id) REFERENCES child_profiles(id) ON DELETE CASCADE
+);
+
+-- 36. caregiver_selfcare_logs
+CREATE TABLE IF NOT EXISTS caregiver_selfcare_logs (
+    child_id TEXT PRIMARY KEY,
+    mon INTEGER DEFAULT 0,
+    tue INTEGER DEFAULT 0,
+    wed INTEGER DEFAULT 0,
+    thu INTEGER DEFAULT 0,
+    fri INTEGER DEFAULT 0,
+    sat INTEGER DEFAULT 0,
+    sun INTEGER DEFAULT 0,
+    FOREIGN KEY (child_id) REFERENCES child_profiles(id) ON DELETE CASCADE
+);
+
+-- 37. child_coordinators
+CREATE TABLE IF NOT EXISTS child_coordinators (
+    child_id TEXT PRIMARY KEY,
+    coordinator_name TEXT,
+    FOREIGN KEY (child_id) REFERENCES child_profiles(id) ON DELETE CASCADE
+);
+
+-- 38. child_clinical_documents
+CREATE TABLE IF NOT EXISTS child_clinical_documents (
+    id TEXT PRIMARY KEY,
+    child_id TEXT NOT NULL,
+    file_name TEXT NOT NULL,
+    document_type TEXT NOT NULL,
+    parsed_data_json TEXT NOT NULL,
+    uploaded_at TEXT NOT NULL,
+    status TEXT NOT NULL,
+    FOREIGN KEY (child_id) REFERENCES child_profiles(id) ON DELETE CASCADE
+);
+
+-- 39. consultation_threads
+CREATE TABLE IF NOT EXISTS consultation_threads (
+    id TEXT PRIMARY KEY,
+    child_id TEXT NOT NULL,
+    advocate_id TEXT NOT NULL,
+    status TEXT NOT NULL,
+    created_at TEXT NOT NULL,
+    FOREIGN KEY (child_id) REFERENCES child_profiles(id) ON DELETE CASCADE,
+    FOREIGN KEY (advocate_id) REFERENCES iep_advocates(id) ON DELETE CASCADE
+);
+
+-- 40. consultation_messages
+CREATE TABLE IF NOT EXISTS consultation_messages (
+    id TEXT PRIMARY KEY,
+    thread_id TEXT NOT NULL,
+    sender_role TEXT NOT NULL,
+    message_text TEXT NOT NULL,
+    attachments_json TEXT,
+    created_at TEXT NOT NULL,
+    FOREIGN KEY (thread_id) REFERENCES consultation_threads(id) ON DELETE CASCADE
+);
+
+-- 41. shared_portal_tokens
+CREATE TABLE IF NOT EXISTS shared_portal_tokens (
+    id TEXT PRIMARY KEY,
+    child_id TEXT NOT NULL,
+    token TEXT NOT NULL UNIQUE,
+    expires_at TEXT NOT NULL,
+    access_scope TEXT NOT NULL,
+    created_at TEXT NOT NULL,
+    FOREIGN KEY (child_id) REFERENCES child_profiles(id) ON DELETE CASCADE
+);
+

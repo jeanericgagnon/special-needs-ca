@@ -20,12 +20,12 @@ export interface AnalysisResult {
 }
 
 export async function fetchCountyDetailsAction(countyId: string) {
-  return getCountyDetails(countyId);
+  return await getCountyDetails(countyId);
 }
 
 export async function fetchBenefits(age: number, diagnosis: string): Promise<Program[]> {
   await new Promise(resolve => setTimeout(resolve, 800));
-  return getProgramsByKeywords(age, diagnosis, []);
+  return await getProgramsByKeywords(age, diagnosis, []);
 }
 
 export async function analyzeOnboarding(
@@ -207,10 +207,10 @@ export async function analyzeOnboarding(
   const uniqueKeywords = Array.from(new Set(words)).slice(0, 5);
 
   // 4. Query Core Relational Database Matches
-  const coreMatches = getMatchedCorePrograms(age, detectedConditionIds, detectedNeedIds);
+  const coreMatches = await getMatchedCorePrograms(age, detectedConditionIds, detectedNeedIds);
 
   // 5. Query Crawler Database Rules Matches (combining age, diagnosis, and extracted text keywords)
-  const crawlerMatches = getProgramsByKeywords(age, diagnosis, uniqueKeywords);
+  const crawlerMatches = await getProgramsByKeywords(age, diagnosis, uniqueKeywords);
 
   // Default explanation if empty
   if (explanations.length === 0) {
@@ -240,7 +240,7 @@ export async function submitSuggestionAction(formData: {
     return { success: false, message: 'Please fill in all required fields.' };
   }
 
-  const success = submitCommunitySuggestion({
+  const success = await submitCommunitySuggestion({
     suggestion_type: formData.suggestion_type,
     target_id: formData.target_id,
     submitter_name: formData.submitter_name,

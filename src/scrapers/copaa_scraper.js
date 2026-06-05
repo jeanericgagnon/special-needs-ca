@@ -240,7 +240,7 @@ async function run() {
             price_rate: "Contact for Rates / Consultation",
             counties_served: countiesServed,
             languages_spoken: "English",
-            phone: a.phone || "(800) 555-0199",
+            phone: a.phone || "None Listed",
             email: a.email || "info@copaa-advocate.org",
             website: "https://connect.copaa.org",
             specialties,

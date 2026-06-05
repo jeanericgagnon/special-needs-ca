@@ -30,10 +30,10 @@ export default async function AdvocatesDirectoryPage({ searchParams }: Props) {
   const selectedCounty = sp.county || '';
 
   // 1. Fetch counties for filter dropdown
-  const counties = getCounties();
+  const counties = await getCounties();
 
   // 2. Fetch advocates (filter by county if selected)
-  const advocates = getIepAdvocates(selectedCounty);
+  const advocates = await getIepAdvocates(selectedCounty);
 
   // Get name of selected county
   const selectedCountyName = selectedCounty

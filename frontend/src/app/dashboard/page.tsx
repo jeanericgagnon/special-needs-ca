@@ -61,10 +61,10 @@ export default async function DashboardPage({ searchParams }: PageProps) {
   }
 
   // 2. Load configurations & user profiles
-  const children = getChildrenByUserId(session.userId);
-  const counties = getCounties();
-  const conditions = getTaxonomyConditions();
-  const needs = getFunctionalNeeds();
+  const children = await getChildrenByUserId(session.userId);
+  const counties = await getCounties();
+  const conditions = await getTaxonomyConditions();
+  const needs = await getFunctionalNeeds();
 
   // 3. Identify selected child profile and query parameters
   const sParams = await searchParams;
@@ -94,7 +94,7 @@ export default async function DashboardPage({ searchParams }: PageProps) {
     const age = getAgeInYears(currentChild.dob);
     
     // Dynamic matching queries
-    matchedPrograms = getMatchedCorePrograms(
+    matchedPrograms = await getMatchedCorePrograms(
       age, 
       currentChild.conditionIds || [], 
       currentChild.functionalNeedIds || []
@@ -105,23 +105,23 @@ export default async function DashboardPage({ searchParams }: PageProps) {
       ? conditions.find(c => c.id === currentChild.conditionIds?.[0])?.name || ''
       : '';
       
-    crawlerPrograms = getProgramsByCriteria(age, diagnosisName);
+    crawlerPrograms = await getProgramsByCriteria(age, diagnosisName);
 
     // Save states
-    savedStatuses = getSavedProgramStatuses(currentChild.id);
-    savedChecklist = getChecklistItems(currentChild.id);
-    savedReminders = getReminders(currentChild.id);
+    savedStatuses = await getSavedProgramStatuses(currentChild.id);
+    savedChecklist = await getChecklistItems(currentChild.id);
+    savedReminders = await getReminders(currentChild.id);
 
     // Routing resources
-    countyDetails = getCountyDetails(currentChild.county_id) || null;
+    countyDetails = await getCountyDetails(currentChild.county_id) || null;
     
     // IEP & Respite child specific configurations
-    savedIepData = getChildIepData(currentChild.id);
-    savedRespiteData = getChildRespiteData(currentChild.id);
-    savedWaivers = getChildWaivers(currentChild.id);
+    savedIepData = await getChildIepData(currentChild.id);
+    savedRespiteData = await getChildRespiteData(currentChild.id);
+    savedWaivers = await getChildWaivers(currentChild.id);
   }
 
-  const localAdvocates = currentChild ? getIepAdvocates(currentChild.county_id) : [];
+  const localAdvocates = currentChild ? await getIepAdvocates(currentChild.county_id) : [];
 
   return (
     <DashboardClient 

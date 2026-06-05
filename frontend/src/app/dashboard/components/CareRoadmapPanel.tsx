@@ -7,7 +7,11 @@ import {
   Globe, Scale, Clock, Printer, Copy, CheckCircle2, Activity, 
   Mail, Check
 } from 'lucide-react';
-import { toggleReminderAction, addReminderAction, deleteReminderAction } from '../child-actions';
+import { 
+  toggleReminderAction, addReminderAction, deleteReminderAction,
+  getSafetyIncidentsAction, saveSafetyIncidentAction,
+  getParentDeclarationAction, saveParentDeclarationAction
+} from '../child-actions';
 
 interface CareRoadmapPanelProps {
   isSpanish?: boolean;
@@ -137,19 +141,25 @@ Parent/Primary Caregiver`;
       const childId = currentChild.id;
       
       Promise.resolve().then(() => {
-        // Load Safety Log from Local Storage
-        try {
-          const cachedLog = localStorage.getItem(`ihss_safety_log_${childId}`);
-          if (cachedLog) {
-            setIncidents(JSON.parse(cachedLog));
+        // Load safety incidents from server action
+        getSafetyIncidentsAction(childId).then(res => {
+          if (res.success && res.incidents && res.incidents.length > 0) {
+            setIncidents(res.incidents.map((inc: { id: string; time: string; category: string; risk_level?: string; riskLevel?: string; details: string; intervention: string }) => ({
+              id: inc.id,
+              time: inc.time,
+              category: inc.category,
+              riskLevel: (inc.risk_level || inc.riskLevel) as 'low' | 'medium' | 'critical',
+              details: inc.details,
+              intervention: inc.intervention
+            })));
           } else {
             // Default incidents for preview
-            setIncidents([
+            const defaultInc = [
               {
                 id: 'inc-1',
                 time: '08:15 AM',
                 category: 'Elopement / Wandering',
-                riskLevel: 'critical',
+                riskLevel: 'critical' as const,
                 details: 'Unlocked the front deadbolt lock while parent was in kitchen. Child eloped into the active driveway toward the main street with zero awareness of oncoming cars.',
                 intervention: 'Chased child down, retrieved physically, carried back inside, locked deadbolt, and added safety cover to the doorknob.'
               },
@@ -157,27 +167,36 @@ Parent/Primary Caregiver`;
                 id: 'inc-2',
                 time: '11:30 AM',
                 category: 'Pica (Swallowing non-foods)',
-                riskLevel: 'critical',
+                riskLevel: 'critical' as const,
                 details: 'Attempted to swallow small decorative gravel pebbles from a potted indoor plant, presenting an immediate choking/toxicity risk.',
                 intervention: 'Verbally redirected, physically swept mouth to clear pebbles, and moved all potted plants to locked shelving areas.'
               }
-            ]);
+            ];
+            setIncidents(defaultInc);
+            // Save defaults in background
+            defaultInc.forEach(inc => {
+              saveSafetyIncidentAction({
+                id: inc.id,
+                time: inc.time,
+                category: inc.category,
+                risk_level: inc.riskLevel,
+                details: inc.details,
+                intervention: inc.intervention
+              }, childId);
+            });
           }
-        } catch {
-          setIncidents([]);
-        }
+        });
 
-        // Load Doctor Name
-        const cachedDoc = localStorage.getItem(`evidence_doctor_name_${childId}`);
-        setDoctorName(cachedDoc || '');
-
-        // Load/Generate Parent Declaration
-        const cachedDec = localStorage.getItem(`evidence_declaration_${childId}`);
-        if (cachedDec) {
-          setDeclarationText(cachedDec);
-        } else {
-          generateDefaultDeclaration();
-        }
+        // Load Parent Declaration & Doctor Name from database
+        getParentDeclarationAction(childId).then(res => {
+          if (res.success && res.declaration) {
+            setDoctorName(res.declaration.doctor_name || '');
+            setDeclarationText(res.declaration.declaration_text || '');
+          } else {
+            setDoctorName('');
+            generateDefaultDeclaration();
+          }
+        });
       });
     }
   }, [currentChild, generateDefaultDeclaration]);
@@ -186,25 +205,27 @@ Parent/Primary Caregiver`;
   useEffect(() => {
     if (currentChild) {
       Promise.resolve().then(() => {
-        if (!localStorage.getItem(`evidence_declaration_${currentChild.id}`)) {
-          generateDefaultDeclaration();
-        }
+        getParentDeclarationAction(currentChild.id).then(res => {
+          if (!res.success || !res.declaration || !res.declaration.declaration_text) {
+            generateDefaultDeclaration();
+          }
+        });
       });
     }
   }, [currentChild, generateDefaultDeclaration]);
 
-  // Persist edits to Local Storage
+  // Persist edits to Database
   const handleDeclarationChange = (text: string) => {
     setDeclarationText(text);
     if (currentChild) {
-      localStorage.setItem(`evidence_declaration_${currentChild.id}`, text);
+      saveParentDeclarationAction(currentChild.id, text, doctorName);
     }
   };
 
   const handleDoctorNameChange = (name: string) => {
     setDoctorName(name);
     if (currentChild) {
-      localStorage.setItem(`evidence_doctor_name_${currentChild.id}`, name);
+      saveParentDeclarationAction(currentChild.id, declarationText, name);
     }
   };
 
@@ -554,7 +575,7 @@ ${parentName || '[Your Name]'}`;
   };
 
   return (
-    <div className="animate-fade-in" style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+    <div className="animate-fade-in flex-col-gap-2">
       
       {/* SECTION 1: CHILD PROFILE COMMAND CARD */}
       <div 
@@ -572,20 +593,20 @@ ${parentName || '[Your Name]'}`;
         {/* Decorative Gradient Blob */}
         <div style={{ position: 'absolute', top: 0, right: 0, width: '180px', height: '180px', background: 'var(--accent-gradient)', opacity: 0.08, filter: 'blur(40px)', pointerEvents: 'none' }}></div>
         
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1.5rem' }}>
+        <div className="flex-row-between-start">
           <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', marginBottom: '0.5rem' }}>
-              <div style={{ background: 'rgba(var(--primary-rgb), 0.15)', color: 'var(--primary-color)', padding: '0.6rem', borderRadius: '14px' }}>
+            <div className="flex-row-center-gap-2" style={{ marginBottom: '0.5rem' }}>
+              <div className="badge-primary-bg">
                 <User size={24} />
               </div>
               <div>
                 <h2 style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--text-main)', margin: 0, display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                   {childName}
-                  <span style={{ fontSize: '0.88rem', fontWeight: 500, color: 'var(--text-light)', background: 'rgba(0,0,0,0.04)', padding: '0.2rem 0.6rem', borderRadius: '20px' }}>
+                  <span className="badge-standard">
                     {childAge} {isSpanish ? 'años' : 'years old'}
                   </span>
                 </h2>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.3rem', fontSize: '0.85rem', color: 'var(--text-light)', marginTop: '0.2rem' }}>
+                <div className="meta-text">
                   <MapPin size={14} />
                   <span>{activeCounty ? `${activeCounty.name} County, CA` : (isSpanish ? 'Condado no especificado' : 'County not specified')}</span>
                 </div>
@@ -610,26 +631,26 @@ ${parentName || '[Your Name]'}`;
           </div>
 
           {/* Program Status Badges Grid */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0.75rem', minWidth: '320px' }} className="grid-col-lg-4">
-            <div style={{ background: 'rgba(0,0,0,0.02)', border: '1px solid var(--glass-border)', padding: '0.75rem', borderRadius: '12px', textAlign: 'center' }}>
-              <span style={{ fontSize: '0.65rem', color: 'var(--text-light)', textTransform: 'uppercase', fontWeight: 700 }}>IHSS</span>
-              <strong style={{ display: 'block', fontSize: '0.82rem', color: 'var(--primary-color)', marginTop: '0.2rem', textTransform: 'capitalize' }}>
+          <div className="stat-grid-3 grid-col-lg-4">
+            <div className="stat-box-small">
+              <span className="stat-box-label">IHSS</span>
+              <strong className="stat-box-val">
                 {ihssStatus === 'approved' ? '🟢 ' + (isSpanish ? 'Aprobado' : 'Approved') : 
                  ihssStatus === 'applied' ? '🔵 ' + (isSpanish ? 'Pendiente' : 'Pending') : 
                  ihssStatus === 'denied' ? '🔴 ' + (isSpanish ? 'Denegado' : 'Denied') : '⚪ ' + (isSpanish ? 'Sin rastrear' : 'Untracked')}
               </strong>
             </div>
-            <div style={{ background: 'rgba(0,0,0,0.02)', border: '1px solid var(--glass-border)', padding: '0.75rem', borderRadius: '12px', textAlign: 'center' }}>
-              <span style={{ fontSize: '0.65rem', color: 'var(--text-light)', textTransform: 'uppercase', fontWeight: 700 }}>{isSpanish ? 'Centro Reg.' : 'Reg. Center'}</span>
-              <strong style={{ display: 'block', fontSize: '0.82rem', color: 'var(--primary-color)', marginTop: '0.2rem', textTransform: 'capitalize' }}>
+            <div className="stat-box-small">
+              <span className="stat-box-label">{isSpanish ? 'Centro Reg.' : 'Reg. Center'}</span>
+              <strong className="stat-box-val">
                 {rcStatus === 'approved' ? '🟢 ' + (isSpanish ? 'Aprobado' : 'Approved') : 
                  rcStatus === 'applied' ? '🔵 ' + (isSpanish ? 'Pendiente' : 'Pending') : 
                  rcStatus === 'denied' ? '🔴 ' + (isSpanish ? 'Denegado' : 'Denied') : '⚪ ' + (isSpanish ? 'Sin rastrear' : 'Untracked')}
               </strong>
             </div>
-            <div style={{ background: 'rgba(0,0,0,0.02)', border: '1px solid var(--glass-border)', padding: '0.75rem', borderRadius: '12px', textAlign: 'center' }}>
-              <span style={{ fontSize: '0.65rem', color: 'var(--text-light)', textTransform: 'uppercase', fontWeight: 700 }}>IEP</span>
-              <strong style={{ display: 'block', fontSize: '0.82rem', color: 'var(--primary-color)', marginTop: '0.2rem', textTransform: 'capitalize' }}>
+            <div className="stat-box-small">
+              <span className="stat-box-label">IEP</span>
+              <strong className="stat-box-val">
                 {iepStatus === 'approved' ? '🟢 ' + (isSpanish ? 'Aprobado' : 'Approved') : 
                  iepStatus === 'applied' ? '🔵 ' + (isSpanish ? 'Pendiente' : 'Pending') : '⚪ ' + (isSpanish ? 'Sin rastrear' : 'Untracked')}
               </strong>
@@ -638,21 +659,21 @@ ${parentName || '[Your Name]'}`;
         </div>
 
         {/* Alerts / Risks Banner */}
-        <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginTop: '1.5rem', borderTop: '1px solid var(--glass-border)', paddingTop: '1.25rem' }}>
+        <div className="tag-row">
           {hasSafetyConcerns && (
-            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem', fontSize: '0.75rem', fontWeight: 700, color: '#ef4444', border: '1px solid rgba(239, 68, 68, 0.2)', padding: '0.35rem 0.75rem', borderRadius: '30px', background: 'rgba(239,68,68,0.06)' }}>
+            <span className="tag-red">
               <AlertCircle size={12} />
               {isSpanish ? 'RIESGO CRÍTICO DE SEGURIDAD / FUGA' : 'CRITICAL SAFETY / ELOPEMENT RISK'}
             </span>
           )}
           {isMedicallyComplex && (
-            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem', fontSize: '0.75rem', fontWeight: 700, color: '#3b82f6', border: '1px solid rgba(59, 130, 246, 0.2)', padding: '0.35rem 0.75rem', borderRadius: '30px', background: 'rgba(59,130,246,0.06)' }}>
+            <span className="tag-blue">
               <Activity size={12} />
               {isSpanish ? 'COMPLEJIDAD MÉDICA REGISTRADA' : 'COMPLEX MEDICAL NEEDS REGISTERED'}
             </span>
           )}
           {!hasSafetyConcerns && !isMedicallyComplex && (
-            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem', fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-light)', border: '1px solid var(--glass-border)', padding: '0.35rem 0.75rem', borderRadius: '30px', background: 'rgba(0,0,0,0.01)' }}>
+            <span className="tag-gray">
               <CheckCircle2 size={12} color="var(--primary-color)" />
               {isSpanish ? 'Perfil de Cuidados Activo' : 'Care Profile Active'}
             </span>

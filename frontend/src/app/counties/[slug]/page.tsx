@@ -3,14 +3,22 @@ import { getCountyDetails, getCounties } from '@/lib/db';
 import { MapPin, Phone, Landmark, Globe, ArrowLeft, BookOpen, ShieldCheck, Calculator } from 'lucide-react';
 import Link from 'next/link';
 import DirectoryReviews from '../../dashboard/components/DirectoryReviews';
+import SeoSchema from '@/app/components/seo-schema';
 
 type Props = {
   params: Promise<{ slug: string }>;
 };
 
+export async function generateStaticParams() {
+  const counties = await getCounties();
+  return counties.map((county) => ({
+    slug: county.id,
+  }));
+}
+
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
-  const counties = getCounties();
+  const counties = await getCounties();
   const county = counties.find(c => c.id === slug);
   
   if (county) {
@@ -27,17 +35,68 @@ export async function generateMetadata({ params }: Props) {
 
 export default async function CountyPage({ params }: Props) {
   const { slug } = await params;
-  const countyDetails = getCountyDetails(slug);
+  const countyDetails = await getCountyDetails(slug);
 
   if (!countyDetails) {
     notFound();
   }
 
-  const countiesList = getCounties().map(c => ({ id: c.id, name: c.name }));
+  const countiesList = (await getCounties()).map(c => ({ id: c.id, name: c.name }));
   const countyWage = countyDetails.ihss_wage_rate || 18.00;
+
+  const countyName = countyDetails.name;
+  const rcName = countyDetails.regionalCenters?.[0]?.name || 'Local Regional Center';
+  
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: `What is the local IHSS hourly wage in ${countyName}?`,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: `The current In-Home Supportive Services (IHSS) provider wage in ${countyName} is $${countyWage.toFixed(2)} per hour.`
+        }
+      },
+      {
+        '@type': 'Question',
+        name: `Which Regional Center serves families in ${countyName}?`,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: `Families in ${countyName} are served by ${rcName}, which manages developmental assessments, respite care allocations, and Lanterman Act service coordination.`
+        }
+      },
+      {
+        '@type': 'Question',
+        name: `How long does the school district have to respond to an IEP assessment request in ${countyName}?`,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: `Under California Education Code, school districts in ${countyName} have 15 calendar days to provide an Assessment Plan once a parent submits a written request. After the plan is signed, they have 60 calendar days to complete evaluations and hold the initial IEP meeting.`
+        }
+      }
+    ]
+  };
+
+  const governmentOrganizationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'GovernmentOrganization',
+    'name': `${countyName} County Disability Services`,
+    'address': {
+      '@type': 'PostalAddress',
+      'addressLocality': countyName,
+      'addressRegion': 'CA',
+      'addressCountry': 'US'
+    },
+    'areaServed': {
+      '@type': 'AdministrativeArea',
+      'name': `${countyName} County, CA`
+    }
+  };
 
   return (
     <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '2rem 1.5rem' }}>
+      <SeoSchema data={[faqSchema, governmentOrganizationSchema]} />
       
       {/* Back button */}
       <div style={{ marginBottom: '1.5rem' }}>

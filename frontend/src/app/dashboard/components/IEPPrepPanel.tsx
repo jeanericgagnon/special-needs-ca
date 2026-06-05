@@ -5,15 +5,23 @@ import { useChildProfile } from './ChildProfileContext';
 import { 
   BookOpen, FileText, CheckCircle2, Copy, Printer, Scale 
 } from 'lucide-react';
+import { 
+  getChildIepPrepDataAction, 
+  saveChildIepPrepDataAction,
+  getCaregiverProfileAction,
+  saveCaregiverProfileAction
+} from '../child-actions';
+
 interface IEPPrepPanelProps {
   isSpanish?: boolean;
 }
 
 export default function IEPPrepPanel({ isSpanish = false }: IEPPrepPanelProps) {
-  const { currentChild } = useChildProfile();
+  const { currentChild, parentName, setParentName } = useChildProfile();
   
+  const loadedParentNameRef = React.useRef<string | null>(null);
+
   // Parent Statement Builder Form States
-  const [parentName, setParentName] = useState('');
   const [childName, setChildName] = useState('');
   const [strengths, setStrengths] = useState('');
   const [academicConcerns, setAcademicConcerns] = useState('');
@@ -24,63 +32,114 @@ export default function IEPPrepPanel({ isSpanish = false }: IEPPrepPanelProps) {
   const [requestedServices, setRequestedServices] = useState('');
   const [parentVision, setParentVision] = useState('');
   const [copied, setCopied] = useState(false);
+  const [saveStatus, setSaveStatus] = useState<{ type: 'success' | 'error' | null; message: string }>({ type: null, message: '' });
 
-  // Hydrate child names
+  // Hydrate ref once parentName changes on mount or child swap
+  useEffect(() => {
+    if (parentName) {
+      loadedParentNameRef.current = parentName;
+    }
+  }, [currentChild, parentName]);
+
+  // Debounced save of parent name to DB via server action
+  useEffect(() => {
+    if (!parentName) return;
+
+    const isDirty = loadedParentNameRef.current !== parentName;
+    if (!isDirty) return;
+
+    const delayDebounce = setTimeout(async () => {
+      localStorage.setItem('caregiver_name', parentName);
+      
+      try {
+        const res = await getCaregiverProfileAction();
+        let email = '';
+        let phone = '';
+        let address = '';
+        if (res.success && res.profile) {
+          email = res.profile.email || '';
+          phone = res.profile.phone || '';
+          address = res.profile.address || '';
+        } else {
+          email = localStorage.getItem('caregiver_email') || '';
+          phone = localStorage.getItem('caregiver_phone') || '';
+          address = localStorage.getItem('caregiver_address') || '';
+        }
+
+        const saveRes = await saveCaregiverProfileAction(parentName, email, phone, address);
+        if (saveRes.success) {
+          loadedParentNameRef.current = parentName;
+        }
+      } catch (err) {
+        console.error('Failed to save caregiver name from IEPPrepPanel:', err);
+      }
+    }, 800);
+
+    return () => clearTimeout(delayDebounce);
+  }, [parentName]);
+
+  // Hydrate form from DB or fallback to localStorage
   useEffect(() => {
     if (currentChild) {
       const nickname = currentChild.nickname || '';
-      const savedParent = localStorage.getItem('caregiver_name') || localStorage.getItem('funding_parent_name') || '';
       
-      // Load cached form states for this child if any
-      const cached = localStorage.getItem(`iep_prep_data_${currentChild.id}`);
-      const formFields = {
-        strengths: '',
-        academicConcerns: '',
-        speechConcerns: '',
-        sensoryConcerns: '',
-        motorConcerns: '',
-        socialConcerns: '',
-        requestedServices: '',
-        parentVision: ''
-      };
-      if (cached) {
-        try {
-          const parsed = JSON.parse(cached);
-          if (parsed.strengths) formFields.strengths = parsed.strengths;
-          if (parsed.academicConcerns) formFields.academicConcerns = parsed.academicConcerns;
-          if (parsed.speechConcerns) formFields.speechConcerns = parsed.speechConcerns;
-          if (parsed.sensoryConcerns) formFields.sensoryConcerns = parsed.sensoryConcerns;
-          if (parsed.motorConcerns) formFields.motorConcerns = parsed.motorConcerns;
-          if (parsed.socialConcerns) formFields.socialConcerns = parsed.socialConcerns;
-          if (parsed.requestedServices) formFields.requestedServices = parsed.requestedServices;
-          if (parsed.parentVision) formFields.parentVision = parsed.parentVision;
-        } catch {}
-      }
-
       Promise.resolve().then(() => {
         setChildName(nickname);
-        setParentName(savedParent);
-        setStrengths(formFields.strengths);
-        setAcademicConcerns(formFields.academicConcerns);
-        setSpeechConcerns(formFields.speechConcerns);
-        setSensoryConcerns(formFields.sensoryConcerns);
-        setMotorConcerns(formFields.motorConcerns);
-        setSocialConcerns(formFields.socialConcerns);
-        setRequestedServices(formFields.requestedServices);
-        setParentVision(formFields.parentVision);
+        setSaveStatus({ type: null, message: '' });
+      });
+
+      getChildIepPrepDataAction(currentChild.id).then(res => {
+        if (res.success && res.data) {
+          const d = res.data;
+          setStrengths(d.strengths || '');
+          setAcademicConcerns(d.academic_concerns || '');
+          setSpeechConcerns(d.speech_concerns || '');
+          setSensoryConcerns(d.sensory_concerns || '');
+          setMotorConcerns(d.motor_concerns || '');
+          setSocialConcerns(d.social_concerns || '');
+          setRequestedServices(d.requested_services || '');
+          setParentVision(d.parent_vision || '');
+        } else {
+          // Fallback to localStorage
+          const cached = localStorage.getItem(`iep_prep_data_${currentChild.id}`);
+          if (cached) {
+            try {
+              const parsed = JSON.parse(cached);
+              setStrengths(parsed.strengths || '');
+              setAcademicConcerns(parsed.academicConcerns || '');
+              setSpeechConcerns(parsed.speechConcerns || '');
+              setSensoryConcerns(parsed.sensoryConcerns || '');
+              setMotorConcerns(parsed.motorConcerns || '');
+              setSocialConcerns(parsed.socialConcerns || '');
+              setRequestedServices(parsed.requestedServices || '');
+              setParentVision(parsed.parentVision || '');
+            } catch {}
+          }
+        }
       });
     }
   }, [currentChild]);
 
-  // Persist form states
-  const persistPrepData = (fields: Record<string, string>) => {
+  const handleSaveIepPrepData = async () => {
     if (!currentChild) return;
-    const currentData = {
-      strengths, academicConcerns, speechConcerns, sensoryConcerns,
-      motorConcerns, socialConcerns, requestedServices, parentVision,
-      ...fields
+    setSaveStatus({ type: null, message: '' });
+    const payload = {
+      strengths,
+      academic_concerns: academicConcerns,
+      speech_concerns: speechConcerns,
+      sensory_concerns: sensoryConcerns,
+      motor_concerns: motorConcerns,
+      social_concerns: socialConcerns,
+      requested_services: requestedServices,
+      parent_vision: parentVision
     };
-    localStorage.setItem(`iep_prep_data_${currentChild.id}`, JSON.stringify(currentData));
+    const res = await saveChildIepPrepDataAction(currentChild.id, payload);
+    if (res.success) {
+      setSaveStatus({ type: 'success', message: isSpanish ? '¡Declaración del IEP guardada!' : 'IEP Statement draft saved to profile!' });
+      setTimeout(() => setSaveStatus({ type: null, message: '' }), 4000);
+    } else {
+      setSaveStatus({ type: 'error', message: res.error || 'Failed to save IEP prep draft.' });
+    }
   };
 
   if (!currentChild) return null;
@@ -253,7 +312,7 @@ Parent/Guardian Signature`;
               <input 
                 type="text" 
                 value={parentName} 
-                onChange={(e) => { setParentName(e.target.value); persistPrepData({ parentName: e.target.value }); }} 
+                onChange={(e) => setParentName(e.target.value)} 
                 style={{ padding: '0.4rem 0.6rem', fontSize: '0.82rem', width: '100%' }}
               />
             </div>
@@ -262,7 +321,7 @@ Parent/Guardian Signature`;
               <label style={{ fontSize: '0.78rem', fontWeight: 600 }}>{t.lblStrengths}</label>
               <textarea 
                 value={strengths} 
-                onChange={(e) => { setStrengths(e.target.value); persistPrepData({ strengths: e.target.value }); }} 
+                onChange={(e) => setStrengths(e.target.value)} 
                 style={{ width: '100%', minHeight: '50px', fontSize: '0.82rem', padding: '0.4rem', borderRadius: '6px' }}
               />
             </div>
@@ -271,7 +330,7 @@ Parent/Guardian Signature`;
               <label style={{ fontSize: '0.78rem', fontWeight: 600 }}>{t.lblAcademic}</label>
               <textarea 
                 value={academicConcerns} 
-                onChange={(e) => { setAcademicConcerns(e.target.value); persistPrepData({ academicConcerns: e.target.value }); }} 
+                onChange={(e) => setAcademicConcerns(e.target.value)} 
                 style={{ width: '100%', minHeight: '40px', fontSize: '0.82rem', padding: '0.4rem', borderRadius: '6px' }}
               />
             </div>
@@ -280,7 +339,7 @@ Parent/Guardian Signature`;
               <label style={{ fontSize: '0.78rem', fontWeight: 600 }}>{t.lblSpeech}</label>
               <textarea 
                 value={speechConcerns} 
-                onChange={(e) => { setSpeechConcerns(e.target.value); persistPrepData({ speechConcerns: e.target.value }); }} 
+                onChange={(e) => setSpeechConcerns(e.target.value)} 
                 style={{ width: '100%', minHeight: '40px', fontSize: '0.82rem', padding: '0.4rem', borderRadius: '6px' }}
               />
             </div>
@@ -289,7 +348,7 @@ Parent/Guardian Signature`;
               <label style={{ fontSize: '0.78rem', fontWeight: 600 }}>{t.lblSensory}</label>
               <textarea 
                 value={sensoryConcerns} 
-                onChange={(e) => { setSensoryConcerns(e.target.value); persistPrepData({ sensoryConcerns: e.target.value }); }} 
+                onChange={(e) => setSensoryConcerns(e.target.value)} 
                 style={{ width: '100%', minHeight: '40px', fontSize: '0.82rem', padding: '0.4rem', borderRadius: '6px' }}
               />
             </div>
@@ -298,7 +357,7 @@ Parent/Guardian Signature`;
               <label style={{ fontSize: '0.78rem', fontWeight: 600 }}>{t.lblMotor}</label>
               <textarea 
                 value={motorConcerns} 
-                onChange={(e) => { setMotorConcerns(e.target.value); persistPrepData({ motorConcerns: e.target.value }); }} 
+                onChange={(e) => setMotorConcerns(e.target.value)} 
                 style={{ width: '100%', minHeight: '40px', fontSize: '0.82rem', padding: '0.4rem', borderRadius: '6px' }}
               />
             </div>
@@ -307,7 +366,7 @@ Parent/Guardian Signature`;
               <label style={{ fontSize: '0.78rem', fontWeight: 600 }}>{t.lblSocial}</label>
               <textarea 
                 value={socialConcerns} 
-                onChange={(e) => { setSocialConcerns(e.target.value); persistPrepData({ socialConcerns: e.target.value }); }} 
+                onChange={(e) => setSocialConcerns(e.target.value)} 
                 style={{ width: '100%', minHeight: '40px', fontSize: '0.82rem', padding: '0.4rem', borderRadius: '6px' }}
               />
             </div>
@@ -316,7 +375,7 @@ Parent/Guardian Signature`;
               <label style={{ fontSize: '0.78rem', fontWeight: 600 }}>{t.lblServices}</label>
               <textarea 
                 value={requestedServices} 
-                onChange={(e) => { setRequestedServices(e.target.value); persistPrepData({ requestedServices: e.target.value }); }} 
+                onChange={(e) => setRequestedServices(e.target.value)} 
                 style={{ width: '100%', minHeight: '50px', fontSize: '0.82rem', padding: '0.4rem', borderRadius: '6px' }}
               />
             </div>
@@ -325,10 +384,24 @@ Parent/Guardian Signature`;
               <label style={{ fontSize: '0.78rem', fontWeight: 600 }}>{t.lblVision}</label>
               <textarea 
                 value={parentVision} 
-                onChange={(e) => { setParentVision(e.target.value); persistPrepData({ parentVision: e.target.value }); }} 
+                onChange={(e) => setParentVision(e.target.value)} 
                 style={{ width: '100%', minHeight: '50px', fontSize: '0.82rem', padding: '0.4rem', borderRadius: '6px' }}
               />
             </div>
+
+            <button 
+              type="button" 
+              onClick={handleSaveIepPrepData} 
+              className="btn-primary" 
+              style={{ width: '100%', padding: '0.6rem 1rem', fontSize: '0.88rem', fontWeight: 700, borderRadius: '8px', cursor: 'pointer', marginTop: '0.5rem' }}
+            >
+              {isSpanish ? 'Guardar Borrador del IEP' : 'Save IEP Statement Draft'}
+            </button>
+            {saveStatus.message && (
+              <div style={{ fontSize: '0.78rem', color: saveStatus.type === 'success' ? '#10b981' : '#ef4444', textAlign: 'center', fontWeight: 600, marginTop: '0.25rem' }}>
+                {saveStatus.message}
+              </div>
+            )}
           </div>
         </div>
 

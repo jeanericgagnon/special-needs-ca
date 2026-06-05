@@ -4,6 +4,8 @@ import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
 import { getUserByEmail, createUser, createChildProfile } from '@/lib/db';
 import { hashPassword, verifyPassword, signToken } from '@/lib/auth';
+import crypto from 'crypto';
+
 
 export async function loginAction(prevState: unknown, formData: FormData) {
   const email = formData.get('email') as string;
@@ -14,7 +16,7 @@ export async function loginAction(prevState: unknown, formData: FormData) {
   }
 
   try {
-    const user = getUserByEmail(email);
+    const user = await getUserByEmail(email);
     if (!user) {
       return { error: 'Invalid email or password.' };
     }
@@ -68,21 +70,21 @@ export async function registerAction(prevState: unknown, formData: FormData) {
   }
 
   try {
-    const existing = getUserByEmail(email);
+    const existing = await getUserByEmail(email);
     if (existing) {
       return { error: 'An account with this email already exists.' };
     }
 
-    const userId = 'user-' + Date.now() + '-' + Math.random().toString(36).substr(2, 9);
+    const userId = 'user-' + crypto.randomUUID();
     const passwordHash = hashPassword(password);
 
     // Create user & family case
-    createUser(userId, email, passwordHash);
+    await createUser(userId, email, passwordHash);
 
     // If onboarding child profile info is provided, seed the first child
     if (nickname && dob && countyId) {
       const childId = 'child-' + Date.now();
-      createChildProfile({
+      await createChildProfile({
         id: childId,
         nickname,
         dob,

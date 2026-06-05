@@ -33,11 +33,11 @@ import type {
 } from '@/lib/db';
 import ChildEditor from './child-editor';
 import { 
-  User, Plus, Edit, Trash2, ShieldCheck, FileText, Calendar, 
+  User, Plus, Edit, Trash2, ShieldCheck, Calendar, 
   MapPin, ChevronDown, ChevronUp, AlertCircle, Phone, 
   Globe, Info, FileCheck, Landmark, Trash,
   Check, Mail, Sparkles, BookOpen, Layers,
-  ShieldAlert, Scale, Clock, Heart, LayoutDashboard
+  ShieldAlert, Scale, Clock, LayoutDashboard
 } from 'lucide-react';
 import PrintButton from '@/components/print-button';
 import ShareButton from '@/components/share-button';
@@ -56,6 +56,9 @@ import WaitlistTrackerPanel from './components/WaitlistTrackerPanel';
 import IEPPrepPanel from './components/IEPPrepPanel';
 import AdulthoodTransitionPanel from './components/AdulthoodTransitionPanel';
 import CaregiverSupportPanel from './components/CaregiverSupportPanel';
+import DocumentOcrPanel from './components/DocumentOcrPanel';
+import InboxPanel from './components/InboxPanel';
+import ShareSettingsWidget from './components/ShareSettingsWidget';
 import { sanitizeText } from '@/lib/storage-helper';
 
 interface DashboardClientProps {
@@ -131,21 +134,13 @@ function DashboardInnerClient() {
     countyDetails,
     localAdvocates,
     activeTab,
-    setActiveTab
+    setActiveTab,
+    isSpanish,
+    setIsSpanish
   } = useChildProfile();
 
   const [editingChild, setEditingChild] = useState<ChildProfile | null>(null);
   const [isAddingChild, setIsAddingChild] = useState(false);
-
-  const [isSpanish, setIsSpanish] = useState<boolean>(false);
-  useEffect(() => {
-    const savedLang = localStorage.getItem('caregiver_lang');
-    if (savedLang === 'es') {
-      Promise.resolve().then(() => {
-        setIsSpanish(true);
-      });
-    }
-  }, []);
 
   const toggleLanguage = () => {
     const newVal = !isSpanish;
@@ -615,28 +610,10 @@ Sincerely,
               <ShieldCheck size={18} /> {isSpanish ? 'Beneficios' : 'State Benefits'}
             </button>
             <button
-              onClick={() => setActiveTab('iep')}
-              style={{ background: 'none', border: 'none', borderBottom: activeTab === 'iep' ? '3px solid var(--primary-color)' : '3px solid transparent', padding: '1rem 0.5rem', fontSize: '1rem', fontWeight: 600, cursor: 'pointer', color: activeTab === 'iep' ? 'var(--primary-color)' : 'var(--text-light)', display: 'flex', alignItems: 'center', gap: '0.5rem', whiteSpace: 'nowrap' }}
-            >
-              <BookOpen size={18} /> {isSpanish ? 'Metas IEP' : 'IEP Goals'}
-            </button>
-            <button
               onClick={() => setActiveTab('dds')}
               style={{ background: 'none', border: 'none', borderBottom: activeTab === 'dds' ? '3px solid var(--primary-color)' : '3px solid transparent', padding: '1rem 0.5rem', fontSize: '1rem', fontWeight: 600, cursor: 'pointer', color: activeTab === 'dds' ? 'var(--primary-color)' : 'var(--text-light)', display: 'flex', alignItems: 'center', gap: '0.5rem', whiteSpace: 'nowrap' }}
             >
               <Layers size={18} /> {isSpanish ? 'Respiro y DDS' : 'Respite & DDS'}
-            </button>
-            <button
-              onClick={() => setActiveTab('ihss')}
-              style={{ background: 'none', border: 'none', borderBottom: activeTab === 'ihss' ? '3px solid var(--primary-color)' : '3px solid transparent', padding: '1rem 0.5rem', fontSize: '1rem', fontWeight: 600, cursor: 'pointer', color: activeTab === 'ihss' ? 'var(--primary-color)' : 'var(--text-light)', display: 'flex', alignItems: 'center', gap: '0.5rem', whiteSpace: 'nowrap' }}
-            >
-              <Calendar size={18} /> {isSpanish ? 'IHSS y Horas Extras' : 'IHSS & Overtime'}
-            </button>
-            <button
-              onClick={() => setActiveTab('appeals')}
-              style={{ background: 'none', border: 'none', borderBottom: activeTab === 'appeals' ? '3px solid var(--primary-color)' : '3px solid transparent', padding: '1rem 0.5rem', fontSize: '1rem', fontWeight: 600, cursor: 'pointer', color: activeTab === 'appeals' ? 'var(--primary-color)' : 'var(--text-light)', display: 'flex', alignItems: 'center', gap: '0.5rem', whiteSpace: 'nowrap' }}
-            >
-              <Scale size={18} /> {isSpanish ? 'Apelaciones' : 'Appeals & Letters'}
             </button>
             <button
               onClick={() => setActiveTab('actions')}
@@ -668,24 +645,6 @@ Sincerely,
             >
               <FileCheck size={18} /> {isSpanish ? 'Listas de Espera' : 'Waitlists'}
             </button>
-            <button
-              onClick={() => setActiveTab('iepprep')}
-              style={{ background: 'none', border: 'none', borderBottom: activeTab === 'iepprep' ? '3px solid var(--primary-color)' : '3px solid transparent', padding: '1rem 0.5rem', fontSize: '1rem', fontWeight: 600, cursor: 'pointer', color: activeTab === 'iepprep' ? 'var(--primary-color)' : 'var(--text-light)', display: 'flex', alignItems: 'center', gap: '0.5rem', whiteSpace: 'nowrap' }}
-            >
-              <BookOpen size={18} /> {isSpanish ? 'Prep IEP' : 'IEP Prep'}
-            </button>
-            <button
-              onClick={() => setActiveTab('transition')}
-              style={{ background: 'none', border: 'none', borderBottom: activeTab === 'transition' ? '3px solid var(--primary-color)' : '3px solid transparent', padding: '1rem 0.5rem', fontSize: '1rem', fontWeight: 600, cursor: 'pointer', color: activeTab === 'transition' ? 'var(--primary-color)' : 'var(--text-light)', display: 'flex', alignItems: 'center', gap: '0.5rem', whiteSpace: 'nowrap' }}
-            >
-              <Clock size={18} /> {isSpanish ? 'Transición 22' : 'Transition Cliff'}
-            </button>
-            <button
-              onClick={() => setActiveTab('support')}
-              style={{ background: 'none', border: 'none', borderBottom: activeTab === 'support' ? '3px solid var(--primary-color)' : '3px solid transparent', padding: '1rem 0.5rem', fontSize: '1rem', fontWeight: 600, cursor: 'pointer', color: activeTab === 'support' ? 'var(--primary-color)' : 'var(--text-light)', display: 'flex', alignItems: 'center', gap: '0.5rem', whiteSpace: 'nowrap' }}
-            >
-              <Heart size={18} /> {isSpanish ? 'Bienestar' : 'Caregiver Support'}
-            </button>
           </div>
 
           {/* 4. Tab Views Panel Container */}
@@ -715,10 +674,10 @@ Sincerely,
                           </p>
                           <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
                             <button
-                              onClick={() => setActiveTab('appeals')}
+                              onClick={() => setActiveTab('county')}
                               style={{ background: '#dc2626', color: 'white', border: 'none', borderRadius: '10px', padding: '0.5rem 1rem', fontSize: '0.85rem', fontWeight: 700, cursor: 'pointer', display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}
                             >
-                              <Scale size={15} /> Generate Appeal Letter
+                              <Scale size={15} /> Find Local Advocate
                             </button>
                             <button
                               onClick={() => setActiveTab('actions')}
@@ -961,7 +920,7 @@ Sincerely,
             {activeTab === 'iep' && <IEPGoalsPanel key={currentChild?.id || 'none'} />}
 
             {/* TAB 3: DDS RESPITE & FUNDING */}
-            {activeTab === 'dds' && <RespiteCalculator key={currentChild?.id || 'none'} />}
+            {activeTab === 'dds' && <RespiteCalculator key={currentChild?.id || 'none'} isSpanish={isSpanish} />}
 
             {/* TAB 4: IHSS & OVERTIME */}
             {activeTab === 'ihss' && <IHSSOvertimePanel key={currentChild?.id || 'none'} />}
@@ -1064,28 +1023,6 @@ Sincerely,
                                 </label>
                                 
                                 <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
-                                  {item.document_name === 'Parent Assessment Request Letter' && (
-                                    <button
-                                      onClick={() => {
-                                        setActiveTab('appeals');
-                                      }}
-                                      className="btn-secondary"
-                                      style={{ padding: '0.25rem 0.5rem', fontSize: '0.72rem', display: 'inline-flex', alignItems: 'center', gap: '0.2rem', width: 'auto', background: 'rgba(var(--primary-rgb), 0.05)', border: '1px solid rgba(var(--primary-rgb), 0.15)', color: 'var(--primary-color)', cursor: 'pointer', borderRadius: '6px', fontWeight: 600 }}
-                                    >
-                                      <FileText size={12} /> Generate Letter
-                                    </button>
-                                  )}
-                                  {item.document_name === '24-hour Daily Care & Supervision Log' && (
-                                    <button
-                                      onClick={() => {
-                                        setActiveTab('ihss');
-                                      }}
-                                      className="btn-secondary"
-                                      style={{ padding: '0.25rem 0.5rem', fontSize: '0.72rem', display: 'inline-flex', alignItems: 'center', gap: '0.2rem', width: 'auto', background: 'rgba(var(--primary-rgb), 0.05)', border: '1px solid rgba(var(--primary-rgb), 0.15)', color: 'var(--primary-color)', cursor: 'pointer', borderRadius: '6px', fontWeight: 600 }}
-                                    >
-                                      <Calendar size={12} /> Log Incidents
-                                    </button>
-                                  )}
                                   {item.document_name === 'SOC 873 Medical Certification Form' && (
                                     <a
                                       href="https://www.cdss.ca.gov/cdssweb/entres/forms/english/soc873.pdf"
@@ -1470,6 +1407,15 @@ Sincerely,
             {/* TAB: CAREGIVER SUPPORT */}
             {activeTab === 'support' && <CaregiverSupportPanel isSpanish={isSpanish} />}
 
+            {/* TAB: CLINICAL DOCUMENT VAULT OCR */}
+            {activeTab === 'documents' && <DocumentOcrPanel />}
+
+            {/* TAB: MESSAGING HUB */}
+            {activeTab === 'inbox' && <InboxPanel />}
+
+            {/* TAB: PORTAL SHARING SETTINGS */}
+            {activeTab === 'share' && <ShareSettingsWidget />}
+
             {/* TAB: COUNTY DIRECTORY */}
             {activeTab === 'county' && (
               <div className="animate-fade-in">
@@ -1524,6 +1470,7 @@ Sincerely,
                               entityId={rc.id}
                               entityName={rc.name}
                               countyId={currentChild?.county_id || ''}
+                              isSpanish={isSpanish}
                             />
                           </div>
                         ))
@@ -1612,6 +1559,7 @@ Sincerely,
                                 entityId={sd.id}
                                 entityName={sd.name}
                                 countyId={currentChild?.county_id || ''}
+                                isSpanish={isSpanish}
                               />
                             </div>
                           ))}

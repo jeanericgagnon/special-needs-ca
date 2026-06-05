@@ -64,21 +64,7 @@ function cleanName(rawName) {
   return name.replace(/\s+/g, ' ').trim();
 }
 
-function parseParagraphs(html) {
-  const paragraphs = [];
-  const regex = /<p\s*(?:[^>]*?\s+)?style=["']margin:\s*0in;["'][^>]*>([\s\S]*?)<\/p>/g;
-  let match;
-  while ((match = regex.exec(html)) !== null) {
-    let text = match[1]
-      .replace(/<[^>]*>/g, ' ') // Strip HTML tags
-      .replace(/&nbsp;/gi, ' ') // Replace entities
-      .replace(/&#160;/gi, ' ')
-      .replace(/\s+/g, ' ')
-      .trim();
-    paragraphs.push(text);
-  }
-  return paragraphs;
-}
+// parseParagraphs is deprecated, using Playwright DOM evaluation instead
 
 function extractGroups(paragraphs) {
   const groups = [];
@@ -232,9 +218,23 @@ async function scrapePage(page, url, isAttorney) {
   try {
     await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
     await page.waitForTimeout(1000);
-    const html = await page.content();
+    
+    // Extract paragraphs matching Word/OAH format utilizing Playwright DOM selectors
+    const rawParagraphs = await page.locator('p').evaluateAll((elements) => {
+      return elements
+        .filter(el => {
+          const style = el.getAttribute('style') || '';
+          return style.replace(/\s+/g, '').includes('margin:0in');
+        })
+        .map(el => el.textContent || '');
+    });
 
-    const paragraphs = parseParagraphs(html);
+    const paragraphs = rawParagraphs.map(text => 
+      text
+        .replace(/\s+/g, ' ')
+        .trim()
+    ).filter(Boolean);
+
     const groups = extractGroups(paragraphs);
     
     console.log(`Extracted ${groups.length} directory records from page.`);
@@ -305,7 +305,7 @@ async function scrapePage(page, url, isAttorney) {
       }
       
       // Fallback values
-      if (!phone) phone = '(800) 555-0199';
+      if (!phone) phone = 'None Listed';
       if (!email) email = 'info@iepadvocateonline.org';
       if (!website) website = 'https://www.dgs.ca.gov/OAH';
       
@@ -391,8 +391,27 @@ async function run() {
       description = excluded.description
   `);
   
+  // Query to find duplicate advocates by unique identifiers (ignoring standard defaults/placeholders)
+  const checkDuplicateStmt = db.prepare(`
+    SELECT id FROM iep_advocates WHERE 
+      (phone = ? AND phone != 'None Listed') OR 
+      (email = ? AND email != 'info@iepadvocateonline.org')
+    LIMIT 1
+  `);
+
   const transaction = db.transaction((records) => {
     for (const r of records) {
+      let existingId = null;
+      if ((r.phone && r.phone !== 'None Listed') || (r.email && r.email !== 'info@iepadvocateonline.org')) {
+        const dup = checkDuplicateStmt.get(r.phone, r.email);
+        if (dup) {
+          existingId = dup.id;
+        }
+      }
+      
+      if (existingId) {
+        r.id = existingId; // Prevent duplicates by reusing existing record ID
+      }
       insertStmt.run(r);
     }
   });

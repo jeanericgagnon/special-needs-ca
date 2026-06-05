@@ -3,7 +3,13 @@
 import React, { useState, useEffect } from 'react';
 import { useChildProfile } from './ChildProfileContext';
 import DisparityComparison from './DisparityComparison';
-import { saveChildRespiteAction } from '../child-actions';
+import { 
+  saveChildRespiteAction, 
+  getCaregiverFinancialProfileAction, 
+  saveCaregiverFinancialProfileAction,
+  getChildSdpBudgetAction,
+  saveChildSdpBudgetAction
+} from '../child-actions';
 import { 
   Calculator, Mail, Sparkles, Scale, Trash2, Award
 } from 'lucide-react';
@@ -21,7 +27,11 @@ interface UnmetNeed {
   justification: string;
 }
 
-export default function RespiteCalculator() {
+interface RespiteCalculatorProps {
+  isSpanish?: boolean;
+}
+
+export default function RespiteCalculator({ isSpanish = false }: RespiteCalculatorProps) {
   const { currentChild, savedRespiteData } = useChildProfile();
 
   const [sdpSubTab, setSdpSubTab] = useState<'respite' | 'sdp' | 'eligibility'>('respite');
@@ -32,6 +42,8 @@ export default function RespiteCalculator() {
   const [medicalScore, setMedicalScore] = useState<number>(0);
   const [behaviorScore, setBehaviorScore] = useState<number>(0);
   const [respiteSaveStatus, setRespiteSaveStatus] = useState<{ type: 'success' | 'error' | null; message: string }>({ type: null, message: '' });
+  const [financialSaveStatus, setFinancialSaveStatus] = useState<{ type: 'success' | 'error' | null; message: string }>({ type: null, message: '' });
+  const [sdpSaveStatus, setSdpSaveStatus] = useState<{ type: 'success' | 'error' | null; message: string }>({ type: null, message: '' });
 
   // SDP budget formulation states
   const [posSpend, setPosSpend] = useState<number>(15000);
@@ -99,60 +111,150 @@ export default function RespiteCalculator() {
         setSleepScore(sleep);
         setMedicalScore(medical);
         setBehaviorScore(behavior);
-
-        // Hydrate Deeming & Financial states
-        try {
-          const savedSavings = localStorage.getItem(`wealth_savings_${currentChild.id}`);
-          const savedSource = localStorage.getItem(`wealth_source_${currentChild.id}`);
-          const savedBalance = localStorage.getItem(`wealth_balance_${currentChild.id}`);
-          const savedTimeline = localStorage.getItem(`wealth_timeline_${currentChild.id}`);
-          const savedRcClient = localStorage.getItem(`deeming_rc_client_${currentChild.id}`);
-          const savedDiag = localStorage.getItem(`deeming_diagnosis_${currentChild.id}`);
-          const savedLimit = localStorage.getItem(`deeming_limit_${currentChild.id}`);
-          const savedMedNeeds = localStorage.getItem(`deeming_med_needs_${currentChild.id}`);
-          const savedChildMediCal = localStorage.getItem(`deeming_child_medical_${currentChild.id}`);
-          const savedFamSize = localStorage.getItem(`deeming_family_size_${currentChild.id}`);
-          const savedGrossIncome = localStorage.getItem(`deeming_gross_income_${currentChild.id}`);
-          const savedRcChildren = localStorage.getItem(`deeming_rc_children_${currentChild.id}`);
-
-          if (savedSavings) setSavingsAmount(parseInt(savedSavings));
-          if (savedSource) setFundingSource(savedSource as 'parents' | 'inheritance' | 'child-injury');
-          if (savedBalance) setExpectedBalance(savedBalance as 'low' | 'mid' | 'high');
-          if (savedTimeline) setSpendingTimeline(savedTimeline as 'immediate' | 'longterm' | 'mixed');
-          if (savedRcClient) setIsRcClient(savedRcClient === 'true');
-          if (savedDiag) setHasDiagnosis(savedDiag === 'true');
-          if (savedLimit) setMajorLimitations(parseInt(savedLimit));
-          if (savedMedNeeds) setHasMedicalNeeds(savedMedNeeds === 'true');
-          if (savedChildMediCal) setChildMediCal(savedChildMediCal === 'true');
-          if (savedFamSize) setFamilySize(parseInt(savedFamSize));
-          if (savedGrossIncome) setGrossIncome(parseInt(savedGrossIncome));
-          if (savedRcChildren) setRcChildren(parseInt(savedRcChildren));
-        } catch {}
       });
     }
   }, [currentChild, savedRespiteData]);
 
-  // Persist Deeming & Financial states locally
+  // Hydrate Deeming & Financial states from DB, fallback to localStorage
   useEffect(() => {
     if (currentChild) {
-      localStorage.setItem(`wealth_savings_${currentChild.id}`, savingsAmount.toString());
-      localStorage.setItem(`wealth_source_${currentChild.id}`, fundingSource);
-      localStorage.setItem(`wealth_balance_${currentChild.id}`, expectedBalance);
-      localStorage.setItem(`wealth_timeline_${currentChild.id}`, spendingTimeline);
-      localStorage.setItem(`deeming_rc_client_${currentChild.id}`, isRcClient.toString());
-      localStorage.setItem(`deeming_diagnosis_${currentChild.id}`, hasDiagnosis.toString());
-      localStorage.setItem(`deeming_limit_${currentChild.id}`, majorLimitations.toString());
-      localStorage.setItem(`deeming_med_needs_${currentChild.id}`, hasMedicalNeeds.toString());
-      localStorage.setItem(`deeming_child_medical_${currentChild.id}`, childMediCal.toString());
-      localStorage.setItem(`deeming_family_size_${currentChild.id}`, familySize.toString());
-      localStorage.setItem(`deeming_gross_income_${currentChild.id}`, grossIncome.toString());
-      localStorage.setItem(`deeming_rc_children_${currentChild.id}`, rcChildren.toString());
+      Promise.resolve().then(() => {
+        setFinancialSaveStatus({ type: null, message: '' });
+      });
+      getCaregiverFinancialProfileAction(currentChild.id).then(res => {
+        if (res.success && res.profile) {
+          const p = res.profile;
+          setSavingsAmount(p.savings ?? 15000);
+          setFundingSource((p.funding_source as unknown as 'parents' | 'inheritance' | 'child-injury') ?? 'parents');
+          setExpectedBalance((p.expected_balance as unknown as 'low' | 'mid' | 'high') ?? 'low');
+          setSpendingTimeline((p.spending_timeline as unknown as 'immediate' | 'longterm' | 'mixed') ?? 'immediate');
+          setIsRcClient(p.is_rc_client === 1);
+          setHasDiagnosis(p.has_diagnosis === 1);
+          setMajorLimitations(p.major_limitations ?? 3);
+          setHasMedicalNeeds(p.has_medical_needs === 1);
+          setChildMediCal(p.child_medi_cal === 1);
+          setFamilySize(p.family_size ?? 3);
+          setGrossIncome(p.gross_income ?? 85000);
+          setRcChildren(p.rc_children ?? 1);
+        } else {
+          try {
+            const savedSavings = localStorage.getItem(`wealth_savings_${currentChild.id}`);
+            const savedSource = localStorage.getItem(`wealth_source_${currentChild.id}`);
+            const savedBalance = localStorage.getItem(`wealth_balance_${currentChild.id}`);
+            const savedTimeline = localStorage.getItem(`wealth_timeline_${currentChild.id}`);
+            const savedRcClient = localStorage.getItem(`deeming_rc_client_${currentChild.id}`);
+            const savedDiag = localStorage.getItem(`deeming_diagnosis_${currentChild.id}`);
+            const savedLimit = localStorage.getItem(`deeming_limit_${currentChild.id}`);
+            const savedMedNeeds = localStorage.getItem(`deeming_med_needs_${currentChild.id}`);
+            const savedChildMediCal = localStorage.getItem(`deeming_child_medical_${currentChild.id}`);
+            const savedFamSize = localStorage.getItem(`deeming_family_size_${currentChild.id}`);
+            const savedGrossIncome = localStorage.getItem(`deeming_gross_income_${currentChild.id}`);
+            const savedRcChildren = localStorage.getItem(`deeming_rc_children_${currentChild.id}`);
+
+            if (savedSavings) setSavingsAmount(parseInt(savedSavings));
+            if (savedSource) setFundingSource(savedSource as unknown as 'parents' | 'inheritance' | 'child-injury');
+            if (savedBalance) setExpectedBalance(savedBalance as unknown as 'low' | 'mid' | 'high');
+            if (savedTimeline) setSpendingTimeline(savedTimeline as unknown as 'immediate' | 'longterm' | 'mixed');
+            if (savedRcClient) setIsRcClient(savedRcClient === 'true');
+            if (savedDiag) setHasDiagnosis(savedDiag === 'true');
+            if (savedLimit) setMajorLimitations(parseInt(savedLimit));
+            if (savedMedNeeds) setHasMedicalNeeds(savedMedNeeds === 'true');
+            if (savedChildMediCal) setChildMediCal(savedChildMediCal === 'true');
+            if (savedFamSize) setFamilySize(parseInt(savedFamSize));
+            if (savedGrossIncome) setGrossIncome(parseInt(savedGrossIncome));
+            if (savedRcChildren) setRcChildren(parseInt(savedRcChildren));
+          } catch {}
+        }
+      });
     }
-  }, [
-    currentChild, savingsAmount, fundingSource, expectedBalance, spendingTimeline,
-    isRcClient, hasDiagnosis, majorLimitations, hasMedicalNeeds, childMediCal,
-    familySize, grossIncome, rcChildren
-  ]);
+  }, [currentChild]);
+
+  const handleSaveFinancialProfile = async () => {
+    if (!currentChild) return;
+    setFinancialSaveStatus({ type: null, message: '' });
+    const profile = {
+      savings: savingsAmount,
+      funding_source: fundingSource,
+      expected_balance: expectedBalance,
+      spending_timeline: spendingTimeline,
+      is_rc_client: isRcClient ? 1 : 0,
+      has_diagnosis: hasDiagnosis ? 1 : 0,
+      major_limitations: majorLimitations,
+      has_medical_needs: hasMedicalNeeds ? 1 : 0,
+      child_medi_cal: childMediCal ? 1 : 0,
+      family_size: familySize,
+      gross_income: grossIncome,
+      rc_children: rcChildren
+    };
+    const res = await saveCaregiverFinancialProfileAction(currentChild.id, profile);
+    if (res.success) {
+      setFinancialSaveStatus({ type: 'success', message: 'Asset limits & deeming parameters saved!' });
+      setTimeout(() => setFinancialSaveStatus({ type: null, message: '' }), 4000);
+    } else {
+      setFinancialSaveStatus({ type: 'error', message: res.error || 'Failed to save financial profile.' });
+    }
+  };
+
+  // Hydrate child SDP budget on mount/child change
+  useEffect(() => {
+    if (currentChild) {
+      Promise.resolve().then(() => {
+        setSdpSaveStatus({ type: null, message: '' });
+      });
+      getChildSdpBudgetAction(currentChild.id).then(res => {
+        if (res.success && res.budget) {
+          const b = res.budget;
+          setPosSpend(b.pos_spend ?? 15000);
+          setOneTimeDeductions(b.one_time_deductions ?? 0);
+          setFmsModel(b.fms_model ?? 'bill-payer');
+          setSdpCommunity(b.allocated_community ?? 5000);
+          setSdpRespite(b.allocated_respite ?? 5000);
+          setSdpTherapies(b.allocated_therapies ?? 3000);
+          setSdpEquipment(b.allocated_equipment ?? 2000);
+          try {
+            const parsed = JSON.parse(b.unmet_needs_json || '[]');
+            setUnmetNeeds(parsed);
+          } catch {
+            setUnmetNeeds([]);
+          }
+        } else {
+          // Reset to defaults
+          setPosSpend(15000);
+          setOneTimeDeductions(0);
+          setFmsModel('bill-payer');
+          setSdpCommunity(5000);
+          setSdpRespite(5000);
+          setSdpTherapies(3000);
+          setSdpEquipment(2000);
+          setUnmetNeeds([]);
+        }
+      });
+    }
+  }, [currentChild]);
+
+  const handleSaveSdpBudget = async () => {
+    if (!currentChild) return;
+    setSdpSaveStatus({ type: null, message: '' });
+    
+    const budgetData = {
+      pos_spend: posSpend,
+      one_time_deductions: oneTimeDeductions,
+      fms_model: fmsModel,
+      allocated_community: sdpCommunity,
+      allocated_respite: sdpRespite,
+      allocated_therapies: sdpTherapies,
+      allocated_equipment: sdpEquipment,
+      unmet_needs_json: JSON.stringify(unmetNeeds)
+    };
+
+    const res = await saveChildSdpBudgetAction(currentChild.id, budgetData);
+    if (res.success) {
+      setSdpSaveStatus({ type: 'success', message: 'Proposed budget saved to profile!' });
+      setTimeout(() => setSdpSaveStatus({ type: null, message: '' }), 4000);
+    } else {
+      setSdpSaveStatus({ type: 'error', message: res.error || 'Failed to save proposed budget.' });
+    }
+  };
 
   if (!currentChild) return null;
 
@@ -363,7 +465,7 @@ Caregiver Parent`;
       </div>
 
       {sdpSubTab === 'respite' && (
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 340px', gap: '2rem', alignItems: 'start' }} className="iep-grid-layout">
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 340px', gap: '2rem', alignItems: 'start' }} className="iep-grid-layout animate-fade-in">
           <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
             
             {/* Estimator Quiz */}
@@ -448,13 +550,13 @@ Caregiver Parent`;
             </div>
 
             {/* Disparity chart */}
-            <DisparityComparison />
+            <DisparityComparison isSpanish={isSpanish} />
           </div>
         </div>
       )}
 
       {sdpSubTab === 'sdp' && (
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 340px', gap: '2rem', alignItems: 'start' }} className="iep-grid-layout">
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 340px', gap: '2rem', alignItems: 'start' }} className="iep-grid-layout animate-fade-in">
           <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
             <div className="glass-panel" style={{ padding: '2rem' }}>
               <h2 style={{ fontSize: '1.3rem', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem', borderBottom: '1px solid rgba(0,0,0,0.06)', paddingBottom: '0.5rem' }}>
@@ -685,13 +787,18 @@ Caregiver Parent`;
                     </div>
 
                     <button 
-                      onClick={() => alert('Proposed budget drafted and saved locally!')}
+                      onClick={handleSaveSdpBudget}
                       className="btn-primary"
                       style={{ padding: '0.6rem 1rem', fontSize: '0.9rem', width: '100%', background: isOverBudget ? '#64748b' : 'var(--primary-color)' }}
                       disabled={isOverBudget}
                     >
                       Save proposed budget
                     </button>
+                    {sdpSaveStatus.message && (
+                      <div style={{ marginTop: '0.75rem', fontSize: '0.75rem', color: sdpSaveStatus.type === 'success' ? '#10b981' : '#ef4444', textAlign: 'center', fontWeight: 600 }}>
+                        {sdpSaveStatus.message}
+                      </div>
+                    )}
                   </div>
                 </>
               );
@@ -701,7 +808,7 @@ Caregiver Parent`;
       )}
 
       {sdpSubTab === 'eligibility' && (
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2.5rem' }} className="iep-grid-layout">
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2.5rem' }} className="iep-grid-layout animate-fade-in">
           {/* Deeming and AFPF */}
           <div className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
             <h3 style={{ fontSize: '1.15rem', fontWeight: 700, borderBottom: '1px solid rgba(0,0,0,0.06)', paddingBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.4rem', margin: 0 }}>
@@ -766,7 +873,7 @@ Caregiver Parent`;
                         {showDeemingLetter ? 'Hide Request Letter' : 'Show Request Letter'}
                       </button>
                       {showDeemingLetter && (
-                        <div style={{ background: '#fff', border: '1px solid #eee', padding: '0.5rem', borderRadius: '6px', fontSize: '0.75rem', marginTop: '0.5rem', maxHeight: '150px', overflowY: 'auto' }}>
+                        <div className="animate-fade-in" style={{ background: '#fff', border: '1px solid #eee', padding: '0.5rem', borderRadius: '6px', fontSize: '0.75rem', marginTop: '0.5rem', maxHeight: '150px', overflowY: 'auto' }}>
                           <div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: 'bold' }}>
                             <span>Request Letter Draft</span>
                             <CopyButton text={compileDeemingLetter()} size={12} />
@@ -826,6 +933,19 @@ Caregiver Parent`;
                 </div>
               );
             })()}
+            
+            <button 
+              onClick={handleSaveFinancialProfile}
+              className="btn-primary"
+              style={{ padding: '0.6rem 1rem', fontSize: '0.9rem', width: '100%', marginTop: '1rem' }}
+            >
+              Save Asset & Deeming Profiles
+            </button>
+            {financialSaveStatus.message && (
+              <div style={{ marginTop: '0.75rem', fontSize: '0.75rem', color: financialSaveStatus.type === 'success' ? '#10b981' : '#ef4444', textAlign: 'center', fontWeight: 600 }}>
+                {financialSaveStatus.message}
+              </div>
+            )}
           </div>
         </div>
       )}

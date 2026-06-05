@@ -35,12 +35,13 @@ async function run() {
   const url = 'https://www.californiafamilyempowermentcenters.org/overview.html';
   
   const browser = await chromium.launch({ headless: true });
-  const page = await browser.newPage();
-  
-  await page.setExtraHTTPHeaders({
-    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-    'Accept-Language': 'en-US,en;q=0.9'
+  const context = await browser.newContext({
+    userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+    viewport: { width: 1280, height: 800 },
+    locale: 'en-US',
+    timezoneId: 'America/Los_Angeles'
   });
+  const page = await context.newPage();
   
   console.log(`Fetching FEC directory from: ${url}`);
   let html = '';
@@ -106,7 +107,7 @@ async function run() {
       // Extract phone
       const phoneRegex = /\b\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}\b/;
       const phoneMatch = contactCell.match(phoneRegex);
-      const phone = phoneMatch ? phoneMatch[0] : '(800) 555-0199';
+      const phone = phoneMatch ? phoneMatch[0] : 'None Listed';
       
       // Extract website
       let website = '';

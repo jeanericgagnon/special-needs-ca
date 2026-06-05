@@ -7,6 +7,16 @@ type Props = {
   params: Promise<{ slug: string }>;
 };
 
+export async function generateStaticParams() {
+  const params: { slug: string }[] = [];
+  for (const key of Object.keys(SEO_CLUSTERS)) {
+    if (SEO_CLUSTERS[key].category === 'deadlines') {
+      params.push({ slug: key });
+    }
+  }
+  return params;
+}
+
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
   const cluster = SEO_CLUSTERS[slug];
@@ -24,7 +34,7 @@ export async function generateMetadata({ params }: Props) {
 
 export default async function DeadlinePage({ params }: Props) {
   const { slug } = await params;
-  const counties = getCounties().map(c => ({ id: c.id, name: c.name }));
+  const counties = (await getCounties()).map(c => ({ id: c.id, name: c.name }));
 
   const cluster = SEO_CLUSTERS[slug];
   if (cluster && cluster.category === 'deadlines') {

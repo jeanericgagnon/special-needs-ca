@@ -13,7 +13,7 @@ export default function WaiverVaultPanel() {
     currentChild, 
     savedWaivers, 
     setActiveTab, 
-    setActiveTemplate, 
+    parentName,
     setParentName, 
     setChildName 
   } = useChildProfile();
@@ -365,18 +365,14 @@ export default function WaiverVaultPanel() {
                       
                       <button
                         onClick={() => {
-                          setActiveTemplate(
-                            waiver.waiver_type === 'hcbs-dd-waiver' ? 'rc-appeal' : 
-                            waiver.waiver_type === 'institutional-deeming' ? 'rc-appeal' : 'iep-request'
-                          );
-                          setActiveTab('appeals');
-                          setParentName(localStorage.getItem('caregiver_name') || 'Caregiver Parent');
+                          setActiveTab('county');
+                          setParentName(parentName || 'Caregiver Parent');
                           setChildName(currentChild.nickname);
                         }}
                         className="btn-primary"
                         style={{ flex: 1, padding: '0.35rem', fontSize: '0.75rem', fontWeight: 600, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '0.2rem' }}
                       >
-                        <FileText size={12} /> Pre-fill Re-Application
+                        <FileText size={12} /> Find Advocate for Renewal
                       </button>
                     </div>
                   </div>

@@ -6,6 +6,10 @@ import {
   Info, Plus, BookOpen, AlertOctagon, AlertTriangle, Trash2
 } from 'lucide-react';
 import CopyButton from '@/components/copy-button';
+import { 
+  getSafetyIncidentsAction, saveSafetyIncidentAction, deleteSafetyIncidentAction,
+  getIhssOvertimeScheduleAction, saveIhssOvertimeScheduleAction
+} from '../child-actions';
 
 interface SafetyIncident {
   id: string;
@@ -64,7 +68,6 @@ export default function IHSSOvertimePanel() {
   const [riskLevel, setRiskLevel] = useState<'low' | 'medium' | 'critical'>('medium');
   const [details, setDetails] = useState<string>('');
   const [intervention, setIntervention] = useState<string>('');
-  const [safetyLogHydrated, setSafetyLogHydrated] = useState(false);
 
   // Estimator States
   const [feedingRank, setFeedingRank] = useState<number>(1);
@@ -85,99 +88,136 @@ export default function IHSSOvertimePanel() {
   const [monthlyHours3, setMonthlyHours3] = useState<number>(0);
   const [weeklyTravelHours, setWeeklyTravelHours] = useState<number>(3);
   const [schedule, setSchedule] = useState<Record<string, number>>({});
+  const [scheduleSaveStatus, setScheduleSaveStatus] = useState<{ type: 'success' | 'error' | null; message: string }>({ type: null, message: '' });
 
   // Hydrate child states on swap
   useEffect(() => {
     if (currentChild) {
       Promise.resolve().then(() => {
         setLogDate(new Date().toISOString().split('T')[0]);
+        setScheduleSaveStatus({ type: null, message: '' });
         
-        // Safety incidents hydration
-        try {
-          const cached = localStorage.getItem(`ihss_safety_log_${currentChild.id}`);
-          if (cached) {
-            setIncidents(JSON.parse(cached));
+        getSafetyIncidentsAction(currentChild.id).then(res => {
+          if (res.success && res.incidents && res.incidents.length > 0) {
+            setIncidents(res.incidents.map((inc: { id: string; time: string; category: string; risk_level?: string; riskLevel?: string; details: string; intervention: string }) => ({
+              id: inc.id,
+              time: inc.time,
+              category: inc.category,
+              riskLevel: (inc.risk_level || inc.riskLevel) as 'low' | 'medium' | 'critical',
+              details: inc.details,
+              intervention: inc.intervention
+            })));
           } else {
             setIncidents(DEFAULT_INCIDENTS);
+            // Save defaults in background
+            DEFAULT_INCIDENTS.forEach(inc => {
+              saveSafetyIncidentAction({
+                id: inc.id,
+                time: inc.time,
+                category: inc.category,
+                risk_level: inc.riskLevel,
+                details: inc.details,
+                intervention: inc.intervention
+              }, currentChild.id);
+            });
           }
-        } catch {
-          setIncidents(DEFAULT_INCIDENTS);
-        }
-        setSafetyLogHydrated(true);
+        });
 
-        // Estimator & Overtime parameters hydration
-        try {
-          const savedFeeding = localStorage.getItem(`ihss_feeding_rank_${currentChild.id}`);
-          const savedBowel = localStorage.getItem(`ihss_bowel_rank_${currentChild.id}`);
-          const savedBathing = localStorage.getItem(`ihss_bathing_rank_${currentChild.id}`);
-          const savedDressing = localStorage.getItem(`ihss_dressing_rank_${currentChild.id}`);
-          const savedAmbulation = localStorage.getItem(`ihss_ambulation_rank_${currentChild.id}`);
-          const savedParamedical = localStorage.getItem(`ihss_has_paramedical_${currentChild.id}`);
-          const savedParamedicalHours = localStorage.getItem(`ihss_paramedical_hours_${currentChild.id}`);
-          const savedParamedicalDesc = localStorage.getItem(`ihss_paramedical_desc_${currentChild.id}`);
-          const savedSupervision = localStorage.getItem(`ihss_requires_supervision_${currentChild.id}`);
-          const savedWage = localStorage.getItem(`ihss_wage_${currentChild.id}`);
-          const savedRecipientCount = localStorage.getItem(`ihss_recipient_count_${currentChild.id}`);
-          const savedMonthlyHours1 = localStorage.getItem(`ihss_monthly_hours_1_${currentChild.id}`);
-          const savedMonthlyHours2 = localStorage.getItem(`ihss_monthly_hours_2_${currentChild.id}`);
-          const savedMonthlyHours3 = localStorage.getItem(`ihss_monthly_hours_3_${currentChild.id}`);
-          const savedTravelHours = localStorage.getItem(`ihss_travel_hours_${currentChild.id}`);
-          const savedSchedule = localStorage.getItem(`ihss_schedule_grid_${currentChild.id}`);
+        // Estimator & Overtime parameters hydration from DB, fallback to localStorage
+        getIhssOvertimeScheduleAction(currentChild.id).then(res => {
+          if (res.success && res.schedule) {
+            const s = res.schedule;
+            setFeedingRank(s.feeding_rank ?? 1);
+            setBowelBladderRank(s.bowel_rank ?? 1);
+            setBathingOralRank(s.bathing_rank ?? 1);
+            setDressingRank(s.dressing_rank ?? 1);
+            setAmbulationTransfersRank(s.ambulation_rank ?? 1);
+            setHasParamedical(s.has_paramedical === 1);
+            setParamedicalHours(s.paramedical_hours ?? 2);
+            setParamedicalDesc(s.paramedical_desc ?? 'Daily G-tube feeding prep, tube sanitization, and skin site inspection.');
+            setRequiresSupervision(s.requires_supervision === 1);
+            setIhssWage(s.ihss_wage ?? 18.00);
+            setRecipientCount(s.recipient_count ?? 1);
+            setMonthlyHours1(s.monthly_hours_1 ?? 120);
+            setMonthlyHours2(s.monthly_hours_2 ?? 80);
+            setMonthlyHours3(s.monthly_hours_3 ?? 0);
+            setWeeklyTravelHours(s.weekly_travel_hours ?? 3);
+            try {
+              if (s.schedule_grid_json) {
+                setSchedule(JSON.parse(s.schedule_grid_json));
+              }
+            } catch {}
+          } else {
+            try {
+              const savedFeeding = localStorage.getItem(`ihss_feeding_rank_${currentChild.id}`);
+              const savedBowel = localStorage.getItem(`ihss_bowel_rank_${currentChild.id}`);
+              const savedBathing = localStorage.getItem(`ihss_bathing_rank_${currentChild.id}`);
+              const savedDressing = localStorage.getItem(`ihss_dressing_rank_${currentChild.id}`);
+              const savedAmbulation = localStorage.getItem(`ihss_ambulation_rank_${currentChild.id}`);
+              const savedParamedical = localStorage.getItem(`ihss_has_paramedical_${currentChild.id}`);
+              const savedParamedicalHours = localStorage.getItem(`ihss_paramedical_hours_${currentChild.id}`);
+              const savedParamedicalDesc = localStorage.getItem(`ihss_paramedical_desc_${currentChild.id}`);
+              const savedSupervision = localStorage.getItem(`ihss_requires_supervision_${currentChild.id}`);
+              const savedWage = localStorage.getItem(`ihss_wage_${currentChild.id}`);
+              const savedRecipientCount = localStorage.getItem(`ihss_recipient_count_${currentChild.id}`);
+              const savedMonthlyHours1 = localStorage.getItem(`ihss_monthly_hours_1_${currentChild.id}`);
+              const savedMonthlyHours2 = localStorage.getItem(`ihss_monthly_hours_2_${currentChild.id}`);
+              const savedMonthlyHours3 = localStorage.getItem(`ihss_monthly_hours_3_${currentChild.id}`);
+              const savedTravelHours = localStorage.getItem(`ihss_travel_hours_${currentChild.id}`);
+              const savedSchedule = localStorage.getItem(`ihss_schedule_grid_${currentChild.id}`);
 
-          if (savedFeeding) setFeedingRank(parseInt(savedFeeding));
-          if (savedBowel) setBowelBladderRank(parseInt(savedBowel));
-          if (savedBathing) setBathingOralRank(parseInt(savedBathing));
-          if (savedDressing) setDressingRank(parseInt(savedDressing));
-          if (savedAmbulation) setAmbulationTransfersRank(parseInt(savedAmbulation));
-          if (savedParamedical) setHasParamedical(savedParamedical === 'true');
-          if (savedParamedicalHours) setParamedicalHours(parseFloat(savedParamedicalHours));
-          if (savedParamedicalDesc) setParamedicalDesc(savedParamedicalDesc);
-          if (savedSupervision) setRequiresSupervision(savedSupervision === 'true');
-          if (savedWage) setIhssWage(parseFloat(savedWage));
-          if (savedRecipientCount) setRecipientCount(parseInt(savedRecipientCount));
-          if (savedMonthlyHours1) setMonthlyHours1(parseInt(savedMonthlyHours1));
-          if (savedMonthlyHours2) setMonthlyHours2(parseInt(savedMonthlyHours2));
-          if (savedMonthlyHours3) setMonthlyHours3(parseInt(savedMonthlyHours3));
-          if (savedTravelHours) setWeeklyTravelHours(parseFloat(savedTravelHours));
-          if (savedSchedule) setSchedule(JSON.parse(savedSchedule));
-        } catch {}
+              if (savedFeeding) setFeedingRank(parseInt(savedFeeding));
+              if (savedBowel) setBowelBladderRank(parseInt(savedBowel));
+              if (savedBathing) setBathingOralRank(parseInt(savedBathing));
+              if (savedDressing) setDressingRank(parseInt(savedDressing));
+              if (savedAmbulation) setAmbulationTransfersRank(parseInt(savedAmbulation));
+              if (savedParamedical) setHasParamedical(savedParamedical === 'true');
+              if (savedParamedicalHours) setParamedicalHours(parseFloat(savedParamedicalHours));
+              if (savedParamedicalDesc) setParamedicalDesc(savedParamedicalDesc);
+              if (savedSupervision) setRequiresSupervision(savedSupervision === 'true');
+              if (savedWage) setIhssWage(parseFloat(savedWage));
+              if (savedRecipientCount) setRecipientCount(parseInt(savedRecipientCount));
+              if (savedMonthlyHours1) setMonthlyHours1(parseInt(savedMonthlyHours1));
+              if (savedMonthlyHours2) setMonthlyHours2(parseInt(savedMonthlyHours2));
+              if (savedMonthlyHours3) setMonthlyHours3(parseInt(savedMonthlyHours3));
+              if (savedTravelHours) setWeeklyTravelHours(parseFloat(savedTravelHours));
+              if (savedSchedule) setSchedule(JSON.parse(savedSchedule));
+            } catch {}
+          }
+        });
       });
     }
   }, [currentChild]);
 
-  // Persist Safety Log
-  useEffect(() => {
-    if (currentChild && safetyLogHydrated) {
-      localStorage.setItem(`ihss_safety_log_${currentChild.id}`, JSON.stringify(incidents));
+  const handleSaveSchedule = async () => {
+    if (!currentChild) return;
+    setScheduleSaveStatus({ type: null, message: '' });
+    const payload = {
+      feeding_rank: feedingRank,
+      bowel_rank: bowelBladderRank,
+      bathing_rank: bathingOralRank,
+      dressing_rank: dressingRank,
+      ambulation_rank: ambulationTransfersRank,
+      has_paramedical: hasParamedical ? 1 : 0,
+      paramedical_hours: paramedicalHours,
+      paramedical_desc: paramedicalDesc,
+      requires_supervision: requiresSupervision ? 1 : 0,
+      ihss_wage: ihssWage,
+      recipient_count: recipientCount,
+      monthly_hours_1: monthlyHours1,
+      monthly_hours_2: monthlyHours2,
+      monthly_hours_3: monthlyHours3,
+      weekly_travel_hours: weeklyTravelHours,
+      schedule_grid_json: JSON.stringify(schedule)
+    };
+    const res = await saveIhssOvertimeScheduleAction(currentChild.id, payload);
+    if (res.success) {
+      setScheduleSaveStatus({ type: 'success', message: 'Estimator & Overtime parameters saved!' });
+      setTimeout(() => setScheduleSaveStatus({ type: null, message: '' }), 4000);
+    } else {
+      setScheduleSaveStatus({ type: 'error', message: res.error || 'Failed to save parameters.' });
     }
-  }, [incidents, currentChild, safetyLogHydrated]);
-
-  // Persist Estimator & Overtime Parameters
-  useEffect(() => {
-    if (currentChild) {
-      localStorage.setItem(`ihss_feeding_rank_${currentChild.id}`, feedingRank.toString());
-      localStorage.setItem(`ihss_bowel_rank_${currentChild.id}`, bowelBladderRank.toString());
-      localStorage.setItem(`ihss_bathing_rank_${currentChild.id}`, bathingOralRank.toString());
-      localStorage.setItem(`ihss_dressing_rank_${currentChild.id}`, dressingRank.toString());
-      localStorage.setItem(`ihss_ambulation_rank_${currentChild.id}`, ambulationTransfersRank.toString());
-      localStorage.setItem(`ihss_has_paramedical_${currentChild.id}`, hasParamedical.toString());
-      localStorage.setItem(`ihss_paramedical_hours_${currentChild.id}`, paramedicalHours.toString());
-      localStorage.setItem(`ihss_paramedical_desc_${currentChild.id}`, paramedicalDesc);
-      localStorage.setItem(`ihss_requires_supervision_${currentChild.id}`, requiresSupervision.toString());
-      localStorage.setItem(`ihss_wage_${currentChild.id}`, ihssWage.toString());
-      localStorage.setItem(`ihss_recipient_count_${currentChild.id}`, recipientCount.toString());
-      localStorage.setItem(`ihss_monthly_hours_1_${currentChild.id}`, monthlyHours1.toString());
-      localStorage.setItem(`ihss_monthly_hours_2_${currentChild.id}`, monthlyHours2.toString());
-      localStorage.setItem(`ihss_monthly_hours_3_${currentChild.id}`, monthlyHours3.toString());
-      localStorage.setItem(`ihss_travel_hours_${currentChild.id}`, weeklyTravelHours.toString());
-      localStorage.setItem(`ihss_schedule_grid_${currentChild.id}`, JSON.stringify(schedule));
-    }
-  }, [
-    currentChild, feedingRank, bowelBladderRank, bathingOralRank, dressingRank,
-    ambulationTransfersRank, hasParamedical, paramedicalHours, paramedicalDesc,
-    requiresSupervision, ihssWage, recipientCount, monthlyHours1, monthlyHours2,
-    monthlyHours3, weeklyTravelHours, schedule
-  ]);
+  };
 
   if (!currentChild) return null;
 
@@ -189,7 +229,7 @@ export default function IHSSOvertimePanel() {
     e.preventDefault();
     if (!details.trim() || !intervention.trim()) return;
 
-    const newInc: SafetyIncident = {
+    const newInc = {
       id: 'inc-' + Date.now(),
       time: time || new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
       category,
@@ -198,14 +238,26 @@ export default function IHSSOvertimePanel() {
       intervention
     };
 
-    setIncidents(prev => [newInc, ...prev]);
+    saveSafetyIncidentAction({
+      id: newInc.id,
+      time: newInc.time,
+      category: newInc.category,
+      risk_level: newInc.riskLevel,
+      details: newInc.details,
+      intervention: newInc.intervention
+    }, currentChild.id).then(() => {
+      setIncidents(prev => [newInc, ...prev]);
+    });
+
     setTime('');
     setDetails('');
     setIntervention('');
   };
 
   const handleDeleteIncident = (id: string) => {
-    setIncidents(prev => prev.filter(i => i.id !== id));
+    deleteSafetyIncidentAction(id).then(() => {
+      setIncidents(prev => prev.filter(i => i.id !== id));
+    });
   };
 
   const getRiskColor = (level: string) => {
@@ -411,8 +463,35 @@ Calculated local hourly provider wage rate: $${ihssWage.toFixed(2)}/hour`;
                     <span style={{ fontSize: '0.75rem', color: 'var(--text-light)' }}>Log Date: {logDate} | Reporter: {parentName}</span>
                   </div>
                   <div className="no-print" style={{ display: 'flex', gap: '0.5rem' }}>
-                    <button onClick={() => { if(confirm('Clear all?')) setIncidents([]); }} style={{ border: '1px solid rgba(239, 68, 68, 0.2)', color: '#ef4444', padding: '0.3rem 0.6rem', fontSize: '0.75rem', background: 'none', cursor: 'pointer', borderRadius: '6px' }}>Clear Log</button>
-                    <button onClick={() => setIncidents(DEFAULT_INCIDENTS)} style={{ border: '1px solid rgba(var(--primary-rgb), 0.2)', color: 'var(--primary-color)', padding: '0.3rem 0.6rem', fontSize: '0.75rem', background: 'none', cursor: 'pointer', borderRadius: '6px' }}>Load Sample</button>
+                    <button 
+                      onClick={() => { 
+                        if (confirm('Clear all?')) {
+                          Promise.all(incidents.map(inc => deleteSafetyIncidentAction(inc.id))).then(() => {
+                            setIncidents([]);
+                          });
+                        }
+                      }} 
+                      style={{ border: '1px solid rgba(239, 68, 68, 0.2)', color: '#ef4444', padding: '0.3rem 0.6rem', fontSize: '0.75rem', background: 'none', cursor: 'pointer', borderRadius: '6px' }}
+                    >
+                      Clear Log
+                    </button>
+                    <button 
+                      onClick={() => {
+                        Promise.all(DEFAULT_INCIDENTS.map(inc => saveSafetyIncidentAction({
+                          id: inc.id,
+                          time: inc.time,
+                          category: inc.category,
+                          risk_level: inc.riskLevel,
+                          details: inc.details,
+                          intervention: inc.intervention
+                        }, currentChild.id))).then(() => {
+                          setIncidents(DEFAULT_INCIDENTS);
+                        });
+                      }} 
+                      style={{ border: '1px solid rgba(var(--primary-rgb), 0.2)', color: 'var(--primary-color)', padding: '0.3rem 0.6rem', fontSize: '0.75rem', background: 'none', cursor: 'pointer', borderRadius: '6px' }}
+                    >
+                      Load Sample
+                    </button>
                   </div>
                 </div>
 
@@ -561,6 +640,27 @@ Calculated local hourly provider wage rate: $${ihssWage.toFixed(2)}/hour`;
               <h4 style={{ fontSize: '0.88rem', fontWeight: 700, margin: '0.2rem 0' }}>SI Status Confirmed (20+ hrs)</h4>
               <p style={{ margin: 0, fontSize: '0.75rem', color: 'var(--text-light)', lineHeight: 1.3 }}>{isSeverelyImpaired ? 'Qualifies for 283 max hours under Protective Supervision.' : 'Cap at 195 max hours under Protective Supervision.'}</p>
             </div>
+            <button
+              onClick={handleSaveSchedule}
+              className="btn-primary w-full"
+              style={{ padding: '0.75rem', display: 'block', width: '100%', marginTop: '0.5rem' }}
+            >
+              Save Estimator & Overtime Parameters
+            </button>
+            {scheduleSaveStatus.type && (
+              <div style={{
+                padding: '0.5rem',
+                borderRadius: '6px',
+                fontSize: '0.82rem',
+                textAlign: 'center',
+                marginTop: '0.5rem',
+                background: scheduleSaveStatus.type === 'success' ? '#eefcf5' : '#fef2f2',
+                border: `1px solid ${scheduleSaveStatus.type === 'success' ? '#cbf7e1' : '#fee2e2'}`,
+                color: scheduleSaveStatus.type === 'success' ? '#10b981' : '#ef4444'
+              }}>
+                {scheduleSaveStatus.message}
+              </div>
+            )}
           </div>
         </div>
       )}
@@ -656,6 +756,27 @@ Calculated local hourly provider wage rate: $${ihssWage.toFixed(2)}/hour`;
                 </div>
               );
             })()}
+            <button
+              onClick={handleSaveSchedule}
+              className="btn-primary w-full"
+              style={{ padding: '0.75rem', display: 'block', width: '100%', marginTop: '0.5rem' }}
+            >
+              Save Estimator & Overtime Parameters
+            </button>
+            {scheduleSaveStatus.type && (
+              <div style={{
+                padding: '0.5rem',
+                borderRadius: '6px',
+                fontSize: '0.82rem',
+                textAlign: 'center',
+                marginTop: '0.5rem',
+                background: scheduleSaveStatus.type === 'success' ? '#eefcf5' : '#fef2f2',
+                border: `1px solid ${scheduleSaveStatus.type === 'success' ? '#cbf7e1' : '#fee2e2'}`,
+                color: scheduleSaveStatus.type === 'success' ? '#10b981' : '#ef4444'
+              }}>
+                {scheduleSaveStatus.message}
+              </div>
+            )}
           </div>
         </div>
       )}
