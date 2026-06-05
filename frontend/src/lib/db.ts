@@ -15,7 +15,7 @@ const isVercel = process.env.VERCEL === '1';
 
 // Enforce standard key length of 32 bytes for AES-256-CBC
 const ENCRYPTION_KEY = process.env.DB_ENCRYPTION_KEY || 'ca-special-needs-navigator-key-dev-32';
-if (!process.env.DB_ENCRYPTION_KEY && process.env.NODE_ENV === 'production') {
+if (!process.env.DB_ENCRYPTION_KEY && process.env.NODE_ENV === 'production' && process.env.NEXT_PHASE !== 'phase-production-build') {
   throw new Error('CRITICAL CONFIGURATION ERROR: DB_ENCRYPTION_KEY environment variable is not defined. Failing closed.');
 }
 const IV_LENGTH = 16;

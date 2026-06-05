@@ -214,7 +214,7 @@ export async function analyzeOnboarding(
 
   // Default explanation if empty
   if (explanations.length === 0) {
-    explanations.push('Matched general programs. Add details like "supervision", "diapers", or "speech therapy" to screen for specialized wagers and services.');
+    explanations.push('Matched general programs. Add details like "supervision", "diapers", or "speech therapy" to screen for specialized waivers and services.');
   }
 
   return {

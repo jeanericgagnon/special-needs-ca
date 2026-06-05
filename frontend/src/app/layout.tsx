@@ -3,7 +3,7 @@ import { cookies } from 'next/headers';
 import { verifyToken } from '@/lib/auth';
 import { logoutAction } from './auth-actions';
 import Link from 'next/link';
-import { HeartHandshake, User, LayoutDashboard, Search, LogOut, Key, Sparkles, Calculator, ChevronDown, Scale, ShieldCheck, Coins, BookOpen } from 'lucide-react';
+import { HeartHandshake, User, LayoutDashboard, Search, LogOut, BookOpen, MapPin } from 'lucide-react';
 import ThemeToggle from '@/components/theme-toggle';
 import "./globals.css";
 
@@ -12,12 +12,12 @@ export const metadata: Metadata = {
     default: "California Special Needs Navigator",
     template: "%s | California Special Needs Navigator"
   },
-  description: "Find the exact state benefits, waivers, and scholarships your child qualifies for without reading government documents.",
-  metadataBase: new URL("https://special-needs-ca.vercel.app"),
+  description: "Find California disability benefits and local special-needs resources your child may qualify for.",
+  metadataBase: new URL("https://california-navigator.org"),
   openGraph: {
     title: "California Special Needs Navigator",
-    description: "Find the exact state benefits, waivers, and scholarships your child qualifies for without reading government documents.",
-    url: "https://special-needs-ca.vercel.app",
+    description: "Find California disability benefits and local special-needs resources your child may qualify for.",
+    url: "https://california-navigator.org",
     siteName: "California Special Needs Navigator",
     locale: "en_US",
     type: "website",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "California Special Needs Navigator",
-    description: "Find the exact state benefits, waivers, and scholarships your child qualifies for without reading government documents.",
+    description: "Find California disability benefits and local special-needs resources your child may qualify for.",
   }
 };
 
@@ -55,12 +55,17 @@ export default async function RootLayout({
 
               <Link href="/" className="nav-link">
                 <Search size={16} />
-                <span>Eligibility Wizard</span>
+                <span>Find Benefits</span>
               </Link>
 
-              <Link href="/benefits" className="nav-link">
+              <Link href="/benefits/programs" className="nav-link">
                 <BookOpen size={16} />
-                <span>Guides & Resources</span>
+                <span>Benefit Guides</span>
+              </Link>
+              
+              <Link href="/counties" className="nav-link">
+                <MapPin size={16} />
+                <span>County Resources</span>
               </Link>
               
               <Link href="/advocates" className="nav-link">
@@ -68,38 +73,7 @@ export default async function RootLayout({
                 <span>IEP Advocates</span>
               </Link>
               
-              {/* Caregiver Tools Dropdown */}
-              <div className="nav-dropdown">
-                <button className="nav-dropdown-trigger" type="button">
-                  <Sparkles size={16} />
-                  <span>Caregiver Tools</span>
-                  <ChevronDown size={14} />
-                </button>
-                <div className="nav-dropdown-menu">
-                  <Link href="/dashboard?tab=iep" className="nav-dropdown-item">
-                    <Sparkles size={14} />
-                    <span>IEP Goals Library</span>
-                  </Link>
-                  <Link href="/dashboard?tab=dds&sub=respite" className="nav-dropdown-item">
-                    <Calculator size={14} />
-                    <span>DDS Funding & Respite</span>
-                  </Link>
-                  <Link href="/dashboard?tab=appeals" className="nav-dropdown-item">
-                    <Scale size={14} />
-                    <span>Appeals & Letter Builder</span>
-                  </Link>
-                  <Link href="/dashboard?tab=ihss&sub=journal" className="nav-dropdown-item">
-                    <ShieldCheck size={14} />
-                    <span>IHSS 24-Hr Safety Log</span>
-                  </Link>
-                  <Link href="/dashboard?tab=dds&sub=eligibility" className="nav-dropdown-item">
-                    <Coins size={14} />
-                    <span>CalABLE & SNT Planner</span>
-                  </Link>
-                </div>
-              </div>
-              
-              {session ? (
+              {session && (
                 <>
                   <Link href="/dashboard" className="nav-link">
                     <LayoutDashboard size={16} />
@@ -111,16 +85,6 @@ export default async function RootLayout({
                       <span>Log Out</span>
                     </button>
                   </form>
-                </>
-              ) : (
-                <>
-                  <Link href="/login" className="nav-link">
-                    <Key size={16} />
-                    <span>Log In</span>
-                  </Link>
-                  <Link href="/register" className="nav-btn-signup">
-                    <span>Sign Up</span>
-                  </Link>
                 </>
               )}
             </div>
@@ -136,9 +100,19 @@ export default async function RootLayout({
         <footer style={{ background: 'rgba(255, 255, 255, 0.4)', backdropFilter: 'blur(10px)', borderTop: '1px solid rgba(0,0,0,0.05)', padding: '2rem 1rem', marginTop: 'auto', textAlign: 'center', fontSize: '0.85rem', color: 'var(--text-light)' }}>
           <div style={{ maxWidth: '1000px', margin: '0 auto', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: '1rem' }}>
             <p>© 2026 California Special Needs Navigator. All rights reserved.</p>
-            <div style={{ display: 'flex', gap: '1.5rem' }}>
-              <Link href="/benefits" style={{ color: 'var(--text-light)', textDecoration: 'none', fontWeight: 600 }}>Guides & Resources</Link>
+            <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
+              <Link href="/benefits/programs" style={{ color: 'var(--text-light)', textDecoration: 'none', fontWeight: 600 }}>Guides</Link>
+              <Link href="/counties" style={{ color: 'var(--text-light)', textDecoration: 'none', fontWeight: 600 }}>Counties</Link>
+              <Link href="/advocates" style={{ color: 'var(--text-light)', textDecoration: 'none', fontWeight: 600 }}>Advocates</Link>
               <Link href="/sitemap.xml" style={{ color: 'var(--text-light)', textDecoration: 'none' }}>Sitemap</Link>
+              {!session ? (
+                <>
+                  <Link href="/login" style={{ color: 'var(--text-light)', textDecoration: 'none' }}>Log In</Link>
+                  <Link href="/register" style={{ color: 'var(--text-light)', textDecoration: 'none' }}>Sign Up</Link>
+                </>
+              ) : (
+                <Link href="/dashboard" style={{ color: 'var(--text-light)', textDecoration: 'none' }}>Dashboard</Link>
+              )}
               <a href="https://www.cdss.ca.gov" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-light)', textDecoration: 'none' }}>CDSS</a>
               <a href="https://www.dds.ca.gov" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-light)', textDecoration: 'none' }}>DDS</a>
             </div>

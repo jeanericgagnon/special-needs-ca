@@ -19,7 +19,14 @@ export default defineConfig([
     },
   },
   {
-    files: ['src/scrapers/**/*.js', 'src/db/**/*.js', 'src/scratch/**/*.js', 'src/pipeline/**/*.js', 'src/server.js'],
+    files: [
+      'src/scrapers/**/*.js',
+      'src/db/**/*.js',
+      'src/scratch/**/*.js',
+      'src/pipeline/**/*.js',
+      'src/server.js',
+      'tests/**/*.js'
+    ],
     languageOptions: {
       globals: {
         ...globals.node,

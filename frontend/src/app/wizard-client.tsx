@@ -328,9 +328,9 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
       
       <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
         <HeartHandshake size={48} color="var(--primary-color)" style={{ margin: '0 auto 1rem' }} />
-        <h1>California Special Needs Navigator</h1>
+        <h1>Find California disability benefits and local special-needs resources</h1>
         <p style={{ fontSize: '1.1rem', maxWidth: '600px', margin: '0 auto', color: 'var(--text-light)' }}>
-          Input details to screen for specialized wagers and programs. Allow the wizard to compile matches based on CA state rules.
+          Answer a few questions to see programs your child may qualify for, official application links, and county-specific contacts.
         </p>
       </div>
 
@@ -976,7 +976,7 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
 
               <div style={{ marginBottom: '2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
                 <div>
-                  <h2 style={{ margin: 0 }}>Here is what we think your child qualifies for:</h2>
+                  <h2 style={{ margin: 0 }}>Here are programs your child may qualify for:</h2>
                   <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', marginTop: '0.2rem', margin: 0 }}>
                     Based on active filters: {age} years old, {countyId.toUpperCase()} County, and diagnosed with {diagnosis}.
                   </p>
