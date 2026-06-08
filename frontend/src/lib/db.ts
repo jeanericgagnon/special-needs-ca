@@ -215,7 +215,24 @@ export const navigatorDb = new Proxy({} as any, {
             }
           } else {
             const db = ensureNavigatorDb();
-            return db.transaction(fn)(...args);
+            try {
+              const txn = db.transaction(fn);
+              return txn(...args);
+            } catch (e: any) {
+              if (e && e.message && e.message.includes('cannot return a promise')) {
+                db.prepare('BEGIN').run();
+                try {
+                  const result = await fn(...args);
+                  db.prepare('COMMIT').run();
+                  return result;
+                } catch (err) {
+                  db.prepare('ROLLBACK').run();
+                  throw err;
+                }
+              } else {
+                throw e;
+              }
+            }
           }
         };
       };
@@ -2491,6 +2508,7 @@ export async function getAllPrograms(): Promise<Program[]> {
 export async function getProgramBySlug(slug: string): Promise<Program | null> {
   const all = await getAllPrograms();
   const found = all.find(p => {
+    if (p.id === slug) return true;
     const pSlug = p.program_name
       .toLowerCase()
       .replace(/[^\w\s-]/g, '')
