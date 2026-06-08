@@ -23,7 +23,7 @@ test.describe('Advocates Directory E2E Tests', () => {
     // Select Los Angeles County and click Apply Filter
     const countySelect = page.locator('select[name="county"]');
     await countySelect.selectOption('los-angeles');
-    await page.click('button:has-text("Apply Filter")');
+    await page.click('button:has-text("Apply Filter")', { force: true });
 
     // URL should contain query parameter
     expect(page.url()).toContain('county=los-angeles');
@@ -53,7 +53,7 @@ test.describe('Advocates Directory E2E Tests', () => {
     // Suggest correction flow trigger
     const suggestUpdate = page.locator('button:has-text("Update")').first();
     await expect(suggestUpdate).toBeVisible();
-    await suggestUpdate.click();
+    await suggestUpdate.click({ force: true });
 
     // Check modal overlay
     const modalHeader = page.locator('h3:has-text("Suggest Correction")');

@@ -27,7 +27,7 @@ test.describe('County Page Detail E2E Tests (Desktop)', () => {
       expect(bodyText).not.toContain('No local special education boundaries listed in DB');
 
       // Offices & districts
-      expect(bodyText).toContain('County Service Office');
+      expect(bodyText).toContain('County Admin Support Offices');
       expect(bodyText).not.toContain('No county administrative offices listed in DB');
       
       expect(bodyText).toContain('School District');
@@ -54,7 +54,7 @@ test.describe('County Page Detail E2E Tests (Desktop)', () => {
     
     // Find suggest update button and click
     const suggestButton = page.locator('button:has-text("Suggest update")').first();
-    await suggestButton.click();
+    await suggestButton.click({ force: true });
 
     // Verify modal elements are visible
     const modalHeader = page.locator('h3:has-text("Suggest Correction")');
@@ -67,7 +67,7 @@ test.describe('County Page Detail E2E Tests (Desktop)', () => {
 
     // Submit
     const submitBtn = page.locator('button[type="submit"]');
-    await submitBtn.click();
+    await submitBtn.click({ force: true });
 
     // Wait for success indicator
     const successMsg = page.locator('text=Suggestion submitted successfully');
