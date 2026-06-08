@@ -21,6 +21,10 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
     description: `Find special education IEP advocates in ${countyName}. Compare experience, hourly rates, credentials, and languages to advocate for your child in school.`,
     alternates: {
       canonical: `/advocates`
+    },
+    robots: {
+      index: false,
+      follow: true
     }
   };
 }
@@ -30,10 +34,11 @@ export default async function AdvocatesDirectoryPage({ searchParams }: Props) {
   const selectedCounty = sp.county || '';
 
   // 1. Fetch counties for filter dropdown
-  const counties = await getCounties();
+  const counties = await getCounties('california');
 
   // 2. Fetch advocates (filter by county if selected)
   const advocates = await getIepAdvocates(selectedCounty);
+  const verifiedAdvocates = advocates.filter(adv => adv.verification_status === 'verified');
 
   // Get name of selected county
   const selectedCountyName = selectedCounty
@@ -140,34 +145,36 @@ export default async function AdvocatesDirectoryPage({ searchParams }: Props) {
       <AdvocateDirectoryClient initialAdvocates={advocates} />
 
       {/* JSON-LD ProfessionalService Schema Markup for Local SEO */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@graph": advocates.map(adv => ({
-              "@type": "ProfessionalService",
-              "name": adv.name,
-              "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=400",
-              "telephone": adv.phone,
-              "email": adv.email,
-              "url": adv.website,
-              "address": {
-                "@type": "PostalAddress",
-                "addressLocality": adv.counties_served.split(',')[0]?.trim().replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) || "California",
-                "addressRegion": "CA",
-                "addressCountry": "US"
-              },
-              "description": `${adv.name} is a professional special education IEP advocate with ${adv.experience_years} years of experience. Credentials: ${adv.credentials}. Hourly rate info: ${adv.price_rate}. Languages: ${adv.languages_spoken}.`,
-              "priceRange": adv.price_rate,
-              "areaServed": adv.counties_served.split(',').map(s => ({
-                "@type": "AdministrativeArea",
-                "name": s.trim().replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) + " County"
+      {verifiedAdvocates.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": verifiedAdvocates.map(adv => ({
+                "@type": "ProfessionalService",
+                "name": adv.name,
+                "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=400",
+                "telephone": adv.phone,
+                "email": adv.email,
+                "url": adv.website,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": adv.counties_served.split(',')[0]?.trim().replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) || "California",
+                  "addressRegion": "CA",
+                  "addressCountry": "US"
+                },
+                "description": `${adv.name} is a professional special education IEP advocate with ${adv.experience_years} years of experience. Credentials: ${adv.credentials}. Hourly rate info: ${adv.price_rate}. Languages: ${adv.languages_spoken}.`,
+                "priceRange": adv.price_rate,
+                "areaServed": adv.counties_served.split(',').map(s => ({
+                  "@type": "AdministrativeArea",
+                  "name": s.trim().replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) + " County"
+                }))
               }))
-            }))
-          })
-        }}
-      />
+            })
+          }}
+        />
+      )}
     </main>
   );
 }

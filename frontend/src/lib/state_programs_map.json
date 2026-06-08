@@ -1,0 +1,902 @@
+{
+  "AL": {
+    "state_name": "Alabama",
+    "developmental_services": {
+      "name": "Alabama Department of Mental Health",
+      "landing_page": "https://mh.alabama.gov",
+      "eligibility_url": "https://mh.alabama.gov/developmental-disabilities/"
+    },
+    "personal_care": {
+      "name": "Alabama Medicaid Personal Care",
+      "landing_page": "https://medicaid.alabama.gov",
+      "eligibility_url": "https://medicaid.alabama.gov/program"
+    },
+    "hcbs_waivers": {
+      "name": "Alabama HCBS Waiver",
+      "landing_page": "https://medicaid.alabama.gov/hcbs",
+      "eligibility_url": "https://medicaid.alabama.gov/hcbs/eligibility"
+    }
+  },
+  "AK": {
+    "state_name": "Alaska",
+    "developmental_services": {
+      "name": "Alaska Division of Senior and Disabilities Services",
+      "landing_page": "https://dhss.alaska.gov/dsds",
+      "eligibility_url": "https://dhss.alaska.gov/dsds/Pages/dd/default.aspx"
+    },
+    "personal_care": {
+      "name": "Alaska Personal Care Services",
+      "landing_page": "https://dhss.alaska.gov/dsds/Pages/pcs",
+      "eligibility_url": "https://dhss.alaska.gov/dsds/Pages/pcs/eligibility.aspx"
+    },
+    "hcbs_waivers": {
+      "name": "Alaska HCBS Waivers",
+      "landing_page": "https://dhss.alaska.gov/dsds/Pages/hcbw",
+      "eligibility_url": "https://dhss.alaska.gov/dsds/Pages/hcbw/eligibility.aspx"
+    }
+  },
+  "AZ": {
+    "state_name": "Arizona",
+    "developmental_services": {
+      "name": "Arizona Division of Developmental Disabilities",
+      "landing_page": "https://des.az.gov/ddd",
+      "eligibility_url": "https://des.az.gov/services/developmental-disabilities/determine-eligibility"
+    },
+    "personal_care": {
+      "name": "AHCCCS Medical Assistance",
+      "landing_page": "https://www.azahcccs.gov",
+      "eligibility_url": "https://www.azahcccs.gov/Members/GetCovered/"
+    },
+    "hcbs_waivers": {
+      "name": "Arizona HCBS Waivers",
+      "landing_page": "https://www.azahcccs.gov/hcbs",
+      "eligibility_url": "https://www.azahcccs.gov/hcbs/eligibility"
+    }
+  },
+  "AR": {
+    "state_name": "Arkansas",
+    "developmental_services": {
+      "name": "Arkansas Division of Developmental Disabilities Services",
+      "landing_page": "https://humanservices.arkansas.gov/dds",
+      "eligibility_url": "https://humanservices.arkansas.gov/dds/eligibility"
+    },
+    "personal_care": {
+      "name": "Arkansas Medicaid Personal Care",
+      "landing_page": "https://humanservices.arkansas.gov/medicaid",
+      "eligibility_url": "https://humanservices.arkansas.gov/medicaid/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Arkansas HCBS Waivers",
+      "landing_page": "https://humanservices.arkansas.gov/hcbs",
+      "eligibility_url": "https://humanservices.arkansas.gov/hcbs/eligibility"
+    }
+  },
+  "CA": {
+    "state_name": "California",
+    "developmental_services": {
+      "name": "California Department of Developmental Services",
+      "landing_page": "https://www.dds.ca.gov",
+      "eligibility_url": "https://www.dds.ca.gov/rc/eligibility/"
+    },
+    "personal_care": {
+      "name": "California In-Home Supportive Services (IHSS)",
+      "landing_page": "https://www.cdss.ca.gov/in-home-supportive-services",
+      "eligibility_url": "https://www.cdss.ca.gov/inforesources/ihss"
+    },
+    "hcbs_waivers": {
+      "name": "California HCBS Waivers",
+      "landing_page": "https://www.dhcs.ca.gov/services/Pages/HCBSWaivers.aspx",
+      "eligibility_url": "https://www.dhcs.ca.gov/services/Pages/HCBSWaivers/eligibility.aspx"
+    }
+  },
+  "CO": {
+    "state_name": "Colorado",
+    "developmental_services": {
+      "name": "Colorado Division for Developmental Disabilities",
+      "landing_page": "https://hcpf.colorado.gov/developmental-disabilities",
+      "eligibility_url": "https://hcpf.colorado.gov/dd-eligibility"
+    },
+    "personal_care": {
+      "name": "Colorado Medicaid Personal Care",
+      "landing_page": "https://hcpf.colorado.gov/pcs",
+      "eligibility_url": "https://hcpf.colorado.gov/pcs/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Colorado HCBS Waivers",
+      "landing_page": "https://hcpf.colorado.gov/hcbs",
+      "eligibility_url": "https://hcpf.colorado.gov/hcbs/eligibility"
+    }
+  },
+  "CT": {
+    "state_name": "Connecticut",
+    "developmental_services": {
+      "name": "Connecticut Department of Developmental Services",
+      "landing_page": "https://portal.ct.gov/dds",
+      "eligibility_url": "https://portal.ct.gov/dds/eligibility"
+    },
+    "personal_care": {
+      "name": "Connecticut Medicaid Personal Care",
+      "landing_page": "https://portal.ct.gov/dss",
+      "eligibility_url": "https://portal.ct.gov/dss/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Connecticut HCBS Waivers",
+      "landing_page": "https://portal.ct.gov/dds/hcbs",
+      "eligibility_url": "https://portal.ct.gov/dds/hcbs/eligibility"
+    }
+  },
+  "DE": {
+    "state_name": "Delaware",
+    "developmental_services": {
+      "name": "Delaware Division of Developmental Disabilities Services",
+      "landing_page": "https://dhss.delaware.gov/ddds",
+      "eligibility_url": "https://dhss.delaware.gov/ddds/eligibility.html"
+    },
+    "personal_care": {
+      "name": "Delaware Medicaid Personal Care",
+      "landing_page": "https://dhss.delaware.gov/dmma",
+      "eligibility_url": "https://dhss.delaware.gov/dmma/eligibility.html"
+    },
+    "hcbs_waivers": {
+      "name": "Delaware HCBS Waivers",
+      "landing_page": "https://dhss.delaware.gov/ddds/hcbs",
+      "eligibility_url": "https://dhss.delaware.gov/ddds/hcbs/eligibility.html"
+    }
+  },
+  "FL": {
+    "state_name": "Florida",
+    "developmental_services": {
+      "name": "Florida Agency for Persons with Disabilities",
+      "landing_page": "https://apd.myflorida.com",
+      "eligibility_url": "https://apd.myflorida.com/customers/application/"
+    },
+    "personal_care": {
+      "name": "Florida Medicaid Personal Care",
+      "landing_page": "https://ahca.myflorida.com",
+      "eligibility_url": "https://ahca.myflorida.com/medicaid/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Florida iBudget HCBS Waiver",
+      "landing_page": "https://apd.myflorida.com/ibudget/",
+      "eligibility_url": "https://apd.myflorida.com/ibudget/eligibility.htm"
+    }
+  },
+  "GA": {
+    "state_name": "Georgia",
+    "developmental_services": {
+      "name": "Georgia Department of Behavioral Health and Developmental Disabilities",
+      "landing_page": "https://dbhdd.georgia.gov",
+      "eligibility_url": "https://dbhdd.georgia.gov/developmental-disabilities"
+    },
+    "personal_care": {
+      "name": "Georgia Medicaid Personal Care",
+      "landing_page": "https://dch.georgia.gov",
+      "eligibility_url": "https://dch.georgia.gov/medicaid"
+    },
+    "hcbs_waivers": {
+      "name": "Georgia HCBS Waivers",
+      "landing_page": "https://dbhdd.georgia.gov/hcbs",
+      "eligibility_url": "https://dbhdd.georgia.gov/hcbs/eligibility"
+    }
+  },
+  "HI": {
+    "state_name": "Hawaii",
+    "developmental_services": {
+      "name": "Hawaii Developmental Disabilities Division",
+      "landing_page": "https://health.hawaii.gov/ddd",
+      "eligibility_url": "https://health.hawaii.gov/ddd/eligibility/"
+    },
+    "personal_care": {
+      "name": "Hawaii Medicaid Personal Care",
+      "landing_page": "https://medquest.hawaii.gov",
+      "eligibility_url": "https://medquest.hawaii.gov/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Hawaii HCBS Waivers",
+      "landing_page": "https://health.hawaii.gov/ddd/hcbs",
+      "eligibility_url": "https://health.hawaii.gov/ddd/hcbs/eligibility"
+    }
+  },
+  "ID": {
+    "state_name": "Idaho",
+    "developmental_services": {
+      "name": "Idaho Department of Health and Welfare",
+      "landing_page": "https://healthandwelfare.idaho.gov",
+      "eligibility_url": "https://healthandwelfare.idaho.gov/developmental-disabilities"
+    },
+    "personal_care": {
+      "name": "Idaho Medicaid Personal Care",
+      "landing_page": "https://healthandwelfare.idaho.gov/medicaid",
+      "eligibility_url": "https://healthandwelfare.idaho.gov/medicaid/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Idaho HCBS Waivers",
+      "landing_page": "https://healthandwelfare.idaho.gov/hcbs",
+      "eligibility_url": "https://healthandwelfare.idaho.gov/hcbs/eligibility"
+    }
+  },
+  "IL": {
+    "state_name": "Illinois",
+    "developmental_services": {
+      "name": "Illinois Division of Developmental Disabilities",
+      "landing_page": "https://www.dhs.state.il.us",
+      "eligibility_url": "https://www.dhs.state.il.us/page.aspx?item=32253"
+    },
+    "personal_care": {
+      "name": "Illinois Medicaid Personal Care",
+      "landing_page": "https://www.illinois.gov/hfs",
+      "eligibility_url": "https://www.illinois.gov/hfs/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Illinois HCBS Waivers",
+      "landing_page": "https://www.dhs.state.il.us/hcbs",
+      "eligibility_url": "https://www.dhs.state.il.us/hcbs/eligibility"
+    }
+  },
+  "IN": {
+    "state_name": "Indiana",
+    "developmental_services": {
+      "name": "Indiana Division of Disability and Rehabilitative Services",
+      "landing_page": "https://www.in.gov/fssa/ddrs",
+      "eligibility_url": "https://www.in.gov/fssa/ddrs/eligibility"
+    },
+    "personal_care": {
+      "name": "Indiana Medicaid Personal Care",
+      "landing_page": "https://www.in.gov/medicaid",
+      "eligibility_url": "https://www.in.gov/medicaid/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Indiana HCBS Waivers",
+      "landing_page": "https://www.in.gov/fssa/ddrs/hcbs",
+      "eligibility_url": "https://www.in.gov/fssa/ddrs/hcbs/eligibility"
+    }
+  },
+  "IA": {
+    "state_name": "Iowa",
+    "developmental_services": {
+      "name": "Iowa Department of Health and Human Services",
+      "landing_page": "https://hhs.iowa.gov",
+      "eligibility_url": "https://hhs.iowa.gov/developmental-disabilities"
+    },
+    "personal_care": {
+      "name": "Iowa Medicaid Personal Care",
+      "landing_page": "https://hhs.iowa.gov/ime",
+      "eligibility_url": "https://hhs.iowa.gov/ime/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Iowa HCBS Waivers",
+      "landing_page": "https://hhs.iowa.gov/hcbs",
+      "eligibility_url": "https://hhs.iowa.gov/hcbs/eligibility"
+    }
+  },
+  "KS": {
+    "state_name": "Kansas",
+    "developmental_services": {
+      "name": "Kansas Department for Aging and Disability Services",
+      "landing_page": "https://www.kdads.ks.gov",
+      "eligibility_url": "https://www.kdads.ks.gov/developmental-disabilities"
+    },
+    "personal_care": {
+      "name": "Kansas Medicaid Personal Care",
+      "landing_page": "https://www.kancare.ks.gov",
+      "eligibility_url": "https://www.kancare.ks.gov/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Kansas HCBS Waivers",
+      "landing_page": "https://www.kdads.ks.gov/hcbs",
+      "eligibility_url": "https://www.kdads.ks.gov/hcbs/eligibility"
+    }
+  },
+  "KY": {
+    "state_name": "Kentucky",
+    "developmental_services": {
+      "name": "Kentucky Department for Behavioral Health, Developmental and Intellectual Disabilities",
+      "landing_page": "https://dbhdid.ky.gov",
+      "eligibility_url": "https://dbhdid.ky.gov/ddid/"
+    },
+    "personal_care": {
+      "name": "Kentucky Medicaid Personal Care",
+      "landing_page": "https://chfs.ky.gov/dms",
+      "eligibility_url": "https://chfs.ky.gov/dms/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Kentucky HCBS Waivers",
+      "landing_page": "https://dbhdid.ky.gov/hcbs",
+      "eligibility_url": "https://dbhdid.ky.gov/hcbs/eligibility"
+    }
+  },
+  "LA": {
+    "state_name": "Louisiana",
+    "developmental_services": {
+      "name": "Louisiana Office for Citizens with Developmental Disabilities",
+      "landing_page": "https://ldh.la.gov/ocdd",
+      "eligibility_url": "https://ldh.la.gov/ocdd/eligibility"
+    },
+    "personal_care": {
+      "name": "Louisiana Medicaid Personal Care",
+      "landing_page": "https://ldh.la.gov/medicaid",
+      "eligibility_url": "https://ldh.la.gov/medicaid/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Louisiana HCBS Waivers",
+      "landing_page": "https://ldh.la.gov/ocdd/hcbs",
+      "eligibility_url": "https://ldh.la.gov/ocdd/hcbs/eligibility"
+    }
+  },
+  "ME": {
+    "state_name": "Maine",
+    "developmental_services": {
+      "name": "Maine Office of Aging and Disability Services",
+      "landing_page": "https://www.maine.gov/dhhs/oads",
+      "eligibility_url": "https://www.maine.gov/dhhs/oads/eligibility"
+    },
+    "personal_care": {
+      "name": "MaineCare Personal Care Services",
+      "landing_page": "https://www.maine.gov/dhhs/oms",
+      "eligibility_url": "https://www.maine.gov/dhhs/oms/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Maine HCBS Waivers",
+      "landing_page": "https://www.maine.gov/dhhs/oads/hcbs",
+      "eligibility_url": "https://www.maine.gov/dhhs/oads/hcbs/eligibility"
+    }
+  },
+  "MD": {
+    "state_name": "Maryland",
+    "developmental_services": {
+      "name": "Maryland Developmental Disabilities Administration",
+      "landing_page": "https://dda.health.maryland.gov",
+      "eligibility_url": "https://dda.health.maryland.gov/Pages/Eligibility.aspx"
+    },
+    "personal_care": {
+      "name": "Maryland Medicaid Personal Care",
+      "landing_page": "https://health.maryland.gov",
+      "eligibility_url": "https://health.maryland.gov/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Maryland HCBS Waivers",
+      "landing_page": "https://dda.health.maryland.gov/hcbs",
+      "eligibility_url": "https://dda.health.maryland.gov/hcbs/eligibility"
+    }
+  },
+  "MA": {
+    "state_name": "Massachusetts",
+    "developmental_services": {
+      "name": "Massachusetts Department of Developmental Services",
+      "landing_page": "https://www.mass.gov/dds",
+      "eligibility_url": "https://www.mass.gov/dds-eligibility"
+    },
+    "personal_care": {
+      "name": "MassHealth Personal Care Attendant Program",
+      "landing_page": "https://www.mass.gov/masshealth",
+      "eligibility_url": "https://www.mass.gov/masshealth-eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Massachusetts HCBS Waivers",
+      "landing_page": "https://www.mass.gov/dds/hcbs",
+      "eligibility_url": "https://www.mass.gov/dds/hcbs/eligibility"
+    }
+  },
+  "MI": {
+    "state_name": "Michigan",
+    "developmental_services": {
+      "name": "Michigan Department of Health and Human Services",
+      "landing_page": "https://www.michigan.gov/mdhhs",
+      "eligibility_url": "https://www.michigan.gov/mdhhs/eligibility"
+    },
+    "personal_care": {
+      "name": "Michigan Medicaid Personal Care",
+      "landing_page": "https://www.michigan.gov/medicaid",
+      "eligibility_url": "https://www.michigan.gov/medicaid/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Michigan HCBS Waivers",
+      "landing_page": "https://www.michigan.gov/mdhhs/hcbs",
+      "eligibility_url": "https://www.michigan.gov/mdhhs/hcbs/eligibility"
+    }
+  },
+  "MN": {
+    "state_name": "Minnesota",
+    "developmental_services": {
+      "name": "Minnesota Department of Human Services",
+      "landing_page": "https://mn.gov/dhs",
+      "eligibility_url": "https://mn.gov/dhs/eligibility"
+    },
+    "personal_care": {
+      "name": "Minnesota Personal Care Assistance",
+      "landing_page": "https://mn.gov/dhs/pca",
+      "eligibility_url": "https://mn.gov/dhs/pca/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Minnesota HCBS Waivers",
+      "landing_page": "https://mn.gov/dhs/waivers",
+      "eligibility_url": "https://mn.gov/dhs/waivers/eligibility"
+    }
+  },
+  "MS": {
+    "state_name": "Mississippi",
+    "developmental_services": {
+      "name": "Mississippi Department of Mental Health",
+      "landing_page": "https://www.dmh.ms.gov",
+      "eligibility_url": "https://www.dmh.ms.gov/intellectual-developmental-disabilities"
+    },
+    "personal_care": {
+      "name": "Mississippi Medicaid Personal Care",
+      "landing_page": "https://medicaid.ms.gov",
+      "eligibility_url": "https://medicaid.ms.gov/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Mississippi HCBS Waivers",
+      "landing_page": "https://www.dmh.ms.gov/hcbs",
+      "eligibility_url": "https://www.dmh.ms.gov/hcbs/eligibility"
+    }
+  },
+  "MO": {
+    "state_name": "Missouri",
+    "developmental_services": {
+      "name": "Missouri Division of Developmental Disabilities",
+      "landing_page": "https://dmh.mo.gov/dev-disabilities",
+      "eligibility_url": "https://dmh.mo.gov/dev-disabilities/eligibility"
+    },
+    "personal_care": {
+      "name": "Missouri Medicaid Personal Care",
+      "landing_page": "https://mydss.mo.gov",
+      "eligibility_url": "https://mydss.mo.gov/medicaid"
+    },
+    "hcbs_waivers": {
+      "name": "Missouri HCBS Waivers",
+      "landing_page": "https://dmh.mo.gov/dev-disabilities/hcbs",
+      "eligibility_url": "https://dmh.mo.gov/dev-disabilities/hcbs/eligibility"
+    }
+  },
+  "MT": {
+    "state_name": "Montana",
+    "developmental_services": {
+      "name": "Montana Developmental Disabilities Program",
+      "landing_page": "https://dphhs.mt.gov/dsd/ddp",
+      "eligibility_url": "https://dphhs.mt.gov/dsd/ddp/eligibility"
+    },
+    "personal_care": {
+      "name": "Montana Medicaid Personal Care",
+      "landing_page": "https://dphhs.mt.gov/brd/medicaid",
+      "eligibility_url": "https://dphhs.mt.gov/brd/medicaid/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Montana HCBS Waivers",
+      "landing_page": "https://dphhs.mt.gov/dsd/ddp/hcbs",
+      "eligibility_url": "https://dphhs.mt.gov/dsd/ddp/hcbs/eligibility"
+    }
+  },
+  "NE": {
+    "state_name": "Nebraska",
+    "developmental_services": {
+      "name": "Nebraska Division of Developmental Disabilities",
+      "landing_page": "https://dhhs.ne.gov/Pages/DD",
+      "eligibility_url": "https://dhhs.ne.gov/Pages/DD-Eligibility.aspx"
+    },
+    "personal_care": {
+      "name": "Nebraska Medicaid Personal Care",
+      "landing_page": "https://dhhs.ne.gov/medicaid",
+      "eligibility_url": "https://dhhs.ne.gov/medicaid/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Nebraska HCBS Waivers",
+      "landing_page": "https://dhhs.ne.gov/Pages/DD-Waivers.aspx",
+      "eligibility_url": "https://dhhs.ne.gov/Pages/DD-Waivers-Eligibility.aspx"
+    }
+  },
+  "NV": {
+    "state_name": "Nevada",
+    "developmental_services": {
+      "name": "Nevada Aging and Disability Services Division",
+      "landing_page": "https://adsd.nv.gov",
+      "eligibility_url": "https://adsd.nv.gov/Programs/Intellectual/Intellectual/"
+    },
+    "personal_care": {
+      "name": "Nevada Medicaid Personal Care",
+      "landing_page": "https://dhcfp.nv.gov",
+      "eligibility_url": "https://dhcfp.nv.gov/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Nevada HCBS Waivers",
+      "landing_page": "https://adsd.nv.gov/hcbs",
+      "eligibility_url": "https://adsd.nv.gov/hcbs/eligibility"
+    }
+  },
+  "NH": {
+    "state_name": "New Hampshire",
+    "developmental_services": {
+      "name": "New Hampshire Bureau of Developmental Services",
+      "landing_page": "https://www.dhhs.nh.gov/bds",
+      "eligibility_url": "https://www.dhhs.nh.gov/bds/eligibility"
+    },
+    "personal_care": {
+      "name": "New Hampshire Medicaid Personal Care",
+      "landing_page": "https://www.dhhs.nh.gov/medicaid",
+      "eligibility_url": "https://www.dhhs.nh.gov/medicaid/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "New Hampshire HCBS Waivers",
+      "landing_page": "https://www.dhhs.nh.gov/bds/hcbs",
+      "eligibility_url": "https://www.dhhs.nh.gov/bds/hcbs/eligibility"
+    }
+  },
+  "NJ": {
+    "state_name": "New Jersey",
+    "developmental_services": {
+      "name": "New Jersey Division of Developmental Disabilities",
+      "landing_page": "https://www.nj.gov/humanservices/ddd",
+      "eligibility_url": "https://www.nj.gov/humanservices/ddd/services/apply/"
+    },
+    "personal_care": {
+      "name": "New Jersey Personal Care Assistant Program",
+      "landing_page": "https://www.nj.gov/humanservices/dmahs",
+      "eligibility_url": "https://www.nj.gov/humanservices/dmahs/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "New Jersey HCBS Waivers",
+      "landing_page": "https://www.nj.gov/humanservices/ddd/hcbs",
+      "eligibility_url": "https://www.nj.gov/humanservices/ddd/hcbs/eligibility"
+    }
+  },
+  "NM": {
+    "state_name": "New Mexico",
+    "developmental_services": {
+      "name": "New Mexico Developmental Disabilities Division",
+      "landing_page": "https://www.nmhealth.org/about/ddsd",
+      "eligibility_url": "https://www.nmhealth.org/about/ddsd/eligibility"
+    },
+    "personal_care": {
+      "name": "New Mexico Medicaid Personal Care",
+      "landing_page": "https://www.hsd.state.nm.us/mad",
+      "eligibility_url": "https://www.hsd.state.nm.us/mad/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "New Mexico HCBS Waivers",
+      "landing_page": "https://www.nmhealth.org/about/ddsd/hcbs",
+      "eligibility_url": "https://www.nmhealth.org/about/ddsd/hcbs/eligibility"
+    }
+  },
+  "NY": {
+    "state_name": "New York",
+    "developmental_services": {
+      "name": "New York Office for People With Developmental Disabilities",
+      "landing_page": "https://opwdd.ny.gov",
+      "eligibility_url": "https://opwdd.ny.gov/eligibility"
+    },
+    "personal_care": {
+      "name": "New York Medicaid Personal Care",
+      "landing_page": "https://www.health.ny.gov/health_care/medicaid/",
+      "eligibility_url": "https://www.health.ny.gov/health_care/medicaid/eligibility.htm"
+    },
+    "hcbs_waivers": {
+      "name": "New York OPWDD HCBS Waiver",
+      "landing_page": "https://opwdd.ny.gov/services-guidance/home-and-community-based-services-waiver",
+      "eligibility_url": "https://opwdd.ny.gov/services-guidance/home-and-community-based-services-waiver/eligibility"
+    }
+  },
+  "NC": {
+    "state_name": "North Carolina",
+    "developmental_services": {
+      "name": "North Carolina Division of Mental Health, Developmental Disabilities and Substance Abuse Services",
+      "landing_page": "https://www.ncdhhs.gov/divisions/mhddsas",
+      "eligibility_url": "https://www.ncdhhs.gov/divisions/mhddsas/eligibility"
+    },
+    "personal_care": {
+      "name": "North Carolina Medicaid Personal Care",
+      "landing_page": "https://medicaid.ncdhhs.gov",
+      "eligibility_url": "https://medicaid.ncdhhs.gov/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "North Carolina Innovations HCBS Waiver",
+      "landing_page": "https://www.ncdhhs.gov/innovations",
+      "eligibility_url": "https://www.ncdhhs.gov/innovations/eligibility"
+    }
+  },
+  "ND": {
+    "state_name": "North Dakota",
+    "developmental_services": {
+      "name": "North Dakota Developmental Disabilities Division",
+      "landing_page": "https://www.hhs.nd.gov/dd",
+      "eligibility_url": "https://www.hhs.nd.gov/dd/eligibility"
+    },
+    "personal_care": {
+      "name": "North Dakota Medicaid Personal Care",
+      "landing_page": "https://www.hhs.nd.gov/medicaid",
+      "eligibility_url": "https://www.hhs.nd.gov/medicaid/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "North Dakota HCBS Waivers",
+      "landing_page": "https://www.hhs.nd.gov/dd/hcbs",
+      "eligibility_url": "https://www.hhs.nd.gov/dd/hcbs/eligibility"
+    }
+  },
+  "OH": {
+    "state_name": "Ohio",
+    "developmental_services": {
+      "name": "Ohio Department of Developmental Disabilities",
+      "landing_page": "https://dodd.ohio.gov",
+      "eligibility_url": "https://dodd.ohio.gov/your-family/eligibility"
+    },
+    "personal_care": {
+      "name": "Ohio Medicaid Personal Care",
+      "landing_page": "https://medicaid.ohio.gov",
+      "eligibility_url": "https://medicaid.ohio.gov/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Ohio HCBS Waivers",
+      "landing_page": "https://dodd.ohio.gov/hcbs",
+      "eligibility_url": "https://dodd.ohio.gov/hcbs/eligibility"
+    }
+  },
+  "OK": {
+    "state_name": "Oklahoma",
+    "developmental_services": {
+      "name": "Oklahoma Developmental Disabilities Services",
+      "landing_page": "https://oklahoma.gov/okdhs/services/dds",
+      "eligibility_url": "https://oklahoma.gov/okdhs/services/dds/eligibility.html"
+    },
+    "personal_care": {
+      "name": "Oklahoma SoonerCare Personal Care",
+      "landing_page": "https://oklahoma.gov/ohca",
+      "eligibility_url": "https://oklahoma.gov/ohca/eligibility.html"
+    },
+    "hcbs_waivers": {
+      "name": "Oklahoma HCBS Waivers",
+      "landing_page": "https://oklahoma.gov/okdhs/services/dds/hcbs",
+      "eligibility_url": "https://oklahoma.gov/okdhs/services/dds/hcbs/eligibility.html"
+    }
+  },
+  "OR": {
+    "state_name": "Oregon",
+    "developmental_services": {
+      "name": "Oregon Developmental Disability Services",
+      "landing_page": "https://www.oregon.gov/odhs/dds",
+      "eligibility_url": "https://www.oregon.gov/odhs/dds/pages/eligibility.aspx"
+    },
+    "personal_care": {
+      "name": "Oregon Medicaid Personal Care",
+      "landing_page": "https://www.oregon.gov/oha",
+      "eligibility_url": "https://www.oregon.gov/oha/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Oregon HCBS Waivers",
+      "landing_page": "https://www.oregon.gov/odhs/dds/hcbs",
+      "eligibility_url": "https://www.oregon.gov/odhs/dds/hcbs/eligibility"
+    }
+  },
+  "PA": {
+    "state_name": "Pennsylvania",
+    "developmental_services": {
+      "name": "Pennsylvania Office of Developmental Programs",
+      "landing_page": "https://www.dhs.pa.gov/ODP",
+      "eligibility_url": "https://www.dhs.pa.gov/ODP/eligibility"
+    },
+    "personal_care": {
+      "name": "Pennsylvania Medicaid Personal Care",
+      "landing_page": "https://www.dhs.pa.gov",
+      "eligibility_url": "https://www.dhs.pa.gov/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Pennsylvania HCBS Waivers",
+      "landing_page": "https://www.dhs.pa.gov/ODP/hcbs",
+      "eligibility_url": "https://www.dhs.pa.gov/ODP/hcbs/eligibility"
+    }
+  },
+  "RI": {
+    "state_name": "Rhode Island",
+    "developmental_services": {
+      "name": "Rhode Island Division of Developmental Disabilities",
+      "landing_page": "https://bhddh.ri.gov/developmental-disabilities",
+      "eligibility_url": "https://bhddh.ri.gov/developmental-disabilities/eligibility"
+    },
+    "personal_care": {
+      "name": "Rhode Island Medicaid Personal Care",
+      "landing_page": "https://eohhs.ri.gov",
+      "eligibility_url": "https://eohhs.ri.gov/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Rhode Island HCBS Waivers",
+      "landing_page": "https://bhddh.ri.gov/developmental-disabilities/hcbs",
+      "eligibility_url": "https://bhddh.ri.gov/developmental-disabilities/hcbs/eligibility"
+    }
+  },
+  "SC": {
+    "state_name": "South Carolina",
+    "developmental_services": {
+      "name": "South Carolina Department of Disabilities and Special Needs",
+      "landing_page": "https://ddsn.sc.gov",
+      "eligibility_url": "https://ddsn.sc.gov/consumers/eligibility"
+    },
+    "personal_care": {
+      "name": "South Carolina Medicaid Personal Care",
+      "landing_page": "https://www.scdhhs.gov",
+      "eligibility_url": "https://www.scdhhs.gov/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "South Carolina HCBS Waivers",
+      "landing_page": "https://ddsn.sc.gov/hcbs",
+      "eligibility_url": "https://ddsn.sc.gov/hcbs/eligibility"
+    }
+  },
+  "SD": {
+    "state_name": "South Dakota",
+    "developmental_services": {
+      "name": "South Dakota Division of Developmental Disabilities",
+      "landing_page": "https://dhs.sd.gov/dd",
+      "eligibility_url": "https://dhs.sd.gov/dd/eligibility"
+    },
+    "personal_care": {
+      "name": "South Dakota Medicaid Personal Care",
+      "landing_page": "https://dss.sd.gov/medicaid",
+      "eligibility_url": "https://dss.sd.gov/medicaid/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "South Dakota HCBS Waivers",
+      "landing_page": "https://dhs.sd.gov/dd/hcbs",
+      "eligibility_url": "https://dhs.sd.gov/dd/hcbs/eligibility"
+    }
+  },
+  "TN": {
+    "state_name": "Tennessee",
+    "developmental_services": {
+      "name": "Tennessee Department of Intellectual and Developmental Disabilities",
+      "landing_page": "https://www.tn.gov/didd",
+      "eligibility_url": "https://www.tn.gov/didd/eligibility"
+    },
+    "personal_care": {
+      "name": "Tennessee Medicaid Personal Care",
+      "landing_page": "https://www.tn.gov/tenncare",
+      "eligibility_url": "https://www.tn.gov/tenncare/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Tennessee HCBS Waivers",
+      "landing_page": "https://www.tn.gov/didd/hcbs",
+      "eligibility_url": "https://www.tn.gov/didd/hcbs/eligibility"
+    }
+  },
+  "TX": {
+    "state_name": "Texas",
+    "developmental_services": {
+      "name": "Texas Health and Human Services Commission",
+      "landing_page": "https://www.hhs.texas.gov",
+      "eligibility_url": "https://www.hhs.texas.gov/services/disability/developmental-services"
+    },
+    "personal_care": {
+      "name": "Texas Medicaid Personal Care Services",
+      "landing_page": "https://www.hhs.texas.gov/medicaid",
+      "eligibility_url": "https://www.hhs.texas.gov/medicaid/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Texas HCBS Waiver Programs",
+      "landing_page": "https://www.hhs.texas.gov/hcbs",
+      "eligibility_url": "https://www.hhs.texas.gov/hcbs/eligibility"
+    }
+  },
+  "UT": {
+    "state_name": "Utah",
+    "developmental_services": {
+      "name": "Utah Division of Services for People with Disabilities",
+      "landing_page": "https://dspd.utah.gov",
+      "eligibility_url": "https://dspd.utah.gov/eligibility"
+    },
+    "personal_care": {
+      "name": "Utah Medicaid Personal Care",
+      "landing_page": "https://medicaid.utah.gov",
+      "eligibility_url": "https://medicaid.utah.gov/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Utah HCBS Waivers",
+      "landing_page": "https://dspd.utah.gov/hcbs",
+      "eligibility_url": "https://dspd.utah.gov/hcbs/eligibility"
+    }
+  },
+  "VT": {
+    "state_name": "Vermont",
+    "developmental_services": {
+      "name": "Vermont Developmental Disabilities Services Division",
+      "landing_page": "https://ddsd.vermont.gov",
+      "eligibility_url": "https://ddsd.vermont.gov/eligibility"
+    },
+    "personal_care": {
+      "name": "Vermont Medicaid Personal Care",
+      "landing_page": "https://dvha.vermont.gov",
+      "eligibility_url": "https://dvha.vermont.gov/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Vermont HCBS Waivers",
+      "landing_page": "https://ddsd.vermont.gov/hcbs",
+      "eligibility_url": "https://ddsd.vermont.gov/hcbs/eligibility"
+    }
+  },
+  "VA": {
+    "state_name": "Virginia",
+    "developmental_services": {
+      "name": "Virginia Department of Behavioral Health and Developmental Services",
+      "landing_page": "https://dbhds.virginia.gov",
+      "eligibility_url": "https://dbhds.virginia.gov/developmental-services"
+    },
+    "personal_care": {
+      "name": "Virginia Medicaid Personal Care",
+      "landing_page": "https://www.dmas.virginia.gov",
+      "eligibility_url": "https://www.dmas.virginia.gov/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Virginia HCBS Waivers",
+      "landing_page": "https://dbhds.virginia.gov/hcbs",
+      "eligibility_url": "https://dbhds.virginia.gov/hcbs/eligibility"
+    }
+  },
+  "WA": {
+    "state_name": "Washington",
+    "developmental_services": {
+      "name": "Washington Developmental Disabilities Administration",
+      "landing_page": "https://www.dshs.wa.gov/dda",
+      "eligibility_url": "https://www.dshs.wa.gov/dda/eligibility"
+    },
+    "personal_care": {
+      "name": "Washington Medicaid Personal Care",
+      "landing_page": "https://www.hca.wa.gov",
+      "eligibility_url": "https://www.hca.wa.gov/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Washington HCBS Waivers",
+      "landing_page": "https://www.dshs.wa.gov/dda/hcbs",
+      "eligibility_url": "https://www.dshs.wa.gov/dda/hcbs/eligibility"
+    }
+  },
+  "WV": {
+    "state_name": "West Virginia",
+    "developmental_services": {
+      "name": "West Virginia Intellectual and Developmental Disabilities Division",
+      "landing_page": "https://dhhr.wv.gov/bms",
+      "eligibility_url": "https://dhhr.wv.gov/bms/eligibility"
+    },
+    "personal_care": {
+      "name": "West Virginia Medicaid Personal Care",
+      "landing_page": "https://dhhr.wv.gov",
+      "eligibility_url": "https://dhhr.wv.gov/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "West Virginia HCBS Waivers",
+      "landing_page": "https://dhhr.wv.gov/bms/hcbs",
+      "eligibility_url": "https://dhhr.wv.gov/bms/hcbs/eligibility"
+    }
+  },
+  "WI": {
+    "state_name": "Wisconsin",
+    "developmental_services": {
+      "name": "Wisconsin Department of Health Services",
+      "landing_page": "https://www.dhs.wisconsin.gov",
+      "eligibility_url": "https://www.dhs.wisconsin.gov/disabilities/index.htm"
+    },
+    "personal_care": {
+      "name": "Wisconsin Medicaid Personal Care",
+      "landing_page": "https://www.dhs.wisconsin.gov/medicaid",
+      "eligibility_url": "https://www.dhs.wisconsin.gov/medicaid/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Wisconsin Family Care HCBS Waiver",
+      "landing_page": "https://www.dhs.wisconsin.gov/familycare/",
+      "eligibility_url": "https://www.dhs.wisconsin.gov/familycare/eligibility.htm"
+    }
+  },
+  "WY": {
+    "state_name": "Wyoming",
+    "developmental_services": {
+      "name": "Wyoming Developmental Disabilities Division",
+      "landing_page": "https://health.wyo.gov/behavioralhealth/dd",
+      "eligibility_url": "https://health.wyo.gov/behavioralhealth/dd/eligibility"
+    },
+    "personal_care": {
+      "name": "Wyoming Medicaid Personal Care",
+      "landing_page": "https://health.wyo.gov/healthcarefin",
+      "eligibility_url": "https://health.wyo.gov/healthcarefin/eligibility"
+    },
+    "hcbs_waivers": {
+      "name": "Wyoming HCBS Waivers",
+      "landing_page": "https://health.wyo.gov/behavioralhealth/dd/hcbs",
+      "eligibility_url": "https://health.wyo.gov/behavioralhealth/dd/hcbs/eligibility"
+    }
+  }
+}

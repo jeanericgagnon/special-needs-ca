@@ -4,6 +4,13 @@
 -- Enable Foreign Key Enforcement
 PRAGMA foreign_keys = ON;
 
+-- 0. states
+CREATE TABLE IF NOT EXISTS states (
+    id TEXT PRIMARY KEY,       -- 'california', 'texas', etc.
+    name TEXT NOT NULL,        -- 'California', 'Texas'
+    code TEXT NOT NULL UNIQUE  -- 'CA', 'TX'
+);
+
 -- 1. programs
 CREATE TABLE IF NOT EXISTS programs (
     id TEXT PRIMARY KEY,
@@ -14,7 +21,8 @@ CREATE TABLE IF NOT EXISTS programs (
     official_source_url TEXT NOT NULL,
     category TEXT NOT NULL, -- 'federal' | 'state' | 'county'
     confidence_score INTEGER NOT NULL DEFAULT 5, -- 1 to 5 scale
-    last_verified_date TEXT NOT NULL -- YYYY-MM-DD
+    last_verified_date TEXT NOT NULL, -- YYYY-MM-DD
+    state_id TEXT REFERENCES states(id)
 );
 
 -- 2. program_eligibility_rules
@@ -64,8 +72,10 @@ CREATE TABLE IF NOT EXISTS program_appeal_info (
 );
 
 -- 6. counties
+-- 6. counties
 CREATE TABLE IF NOT EXISTS counties (
     id TEXT PRIMARY KEY, -- 'los-angeles', 'orange', etc.
+    state_id TEXT NOT NULL REFERENCES states(id),
     name TEXT NOT NULL,
     website TEXT NOT NULL,
     ihss_wage_rate REAL DEFAULT 16.00,
@@ -86,33 +96,66 @@ CREATE TABLE IF NOT EXISTS county_offices (
     FOREIGN KEY (program_id) REFERENCES programs(id) ON DELETE CASCADE
 );
 
--- 8. regional_centers
-CREATE TABLE IF NOT EXISTS regional_centers (
+-- 8. state_resource_agencies
+CREATE TABLE IF NOT EXISTS state_resource_agencies (
     id TEXT PRIMARY KEY,
+    state_id TEXT NOT NULL REFERENCES states(id),
+    agency_type TEXT NOT NULL, -- 'regional_center' | 'lidda' | 'apd_office' | 'ddro'
     name TEXT NOT NULL,
     counties_served TEXT NOT NULL, -- Comma-separated slug list
     catchment_boundaries TEXT NOT NULL,
     website TEXT NOT NULL,
     intake_phone TEXT NOT NULL,
-    early_start_contact TEXT NOT NULL,
-    lanterman_intake_contact TEXT NOT NULL,
+    early_intervention_contact TEXT NOT NULL,
+    agency_intake_contact TEXT NOT NULL,
     eligibility_info_page TEXT NOT NULL,
     services_page TEXT NOT NULL,
     appeals_info TEXT NOT NULL,
-    frc_relationship TEXT NOT NULL,
-    office_locations TEXT NOT NULL,
+    frc_relationship TEXT,
+    office_locations TEXT,
     languages TEXT NOT NULL, -- Comma-separated languages list
     last_verified_date TEXT NOT NULL,
     source_urls TEXT NOT NULL -- Comma-separated list
 );
 
--- 9. selpas
-CREATE TABLE IF NOT EXISTS selpas (
+-- 9. regional_education_agencies
+CREATE TABLE IF NOT EXISTS regional_education_agencies (
     id TEXT PRIMARY KEY,
+    state_id TEXT NOT NULL REFERENCES states(id),
+    agency_type TEXT NOT NULL, -- 'selpa' | 'boces' | 'resc'
     name TEXT NOT NULL,
     counties_served TEXT NOT NULL,
     website TEXT NOT NULL
 );
+
+-- Backward Compatible Views
+CREATE VIEW IF NOT EXISTS regional_centers AS
+SELECT 
+    id,
+    name,
+    counties_served,
+    catchment_boundaries,
+    website,
+    intake_phone,
+    early_intervention_contact AS early_start_contact,
+    agency_intake_contact AS lanterman_intake_contact,
+    eligibility_info_page,
+    services_page,
+    appeals_info,
+    frc_relationship,
+    office_locations,
+    languages,
+    last_verified_date,
+    source_urls
+FROM state_resource_agencies;
+
+CREATE VIEW IF NOT EXISTS selpas AS
+SELECT
+    id,
+    name,
+    counties_served,
+    website
+FROM regional_education_agencies;
 
 -- 10. school_districts
 CREATE TABLE IF NOT EXISTS school_districts (
@@ -122,6 +165,10 @@ CREATE TABLE IF NOT EXISTS school_districts (
     spec_ed_contact_phone TEXT NOT NULL,
     spec_ed_contact_email TEXT,
     website TEXT NOT NULL,
+    total_enrollment INTEGER,
+    special_ed_pct REAL,
+    inclusion_rate_pct REAL,
+    self_contained_rate_pct REAL,
     FOREIGN KEY (county_id) REFERENCES counties(id) ON DELETE CASCADE
 );
 
@@ -333,7 +380,12 @@ CREATE TABLE IF NOT EXISTS iep_advocates (
     specialties TEXT,
     regional_center_vendorized INTEGER DEFAULT 0,
     organization_affiliation TEXT,
-    description TEXT
+    description TEXT,
+    verification_status TEXT DEFAULT 'unverified',
+    source_url TEXT,
+    source_type TEXT,
+    last_scraped_at TEXT,
+    last_verified_at TEXT
 );
 
 -- Create optimized database indexes to accelerate query joins
@@ -368,7 +420,7 @@ CREATE TABLE IF NOT EXISTS regional_center_counties (
     regional_center_id TEXT,
     county_id TEXT,
     PRIMARY KEY (regional_center_id, county_id),
-    FOREIGN KEY (regional_center_id) REFERENCES regional_centers(id) ON DELETE CASCADE,
+    FOREIGN KEY (regional_center_id) REFERENCES state_resource_agencies(id) ON DELETE CASCADE,
     FOREIGN KEY (county_id) REFERENCES counties(id) ON DELETE CASCADE
 );
 
@@ -377,7 +429,7 @@ CREATE TABLE IF NOT EXISTS selpa_counties (
     selpa_id TEXT,
     county_id TEXT,
     PRIMARY KEY (selpa_id, county_id),
-    FOREIGN KEY (selpa_id) REFERENCES selpas(id) ON DELETE CASCADE,
+    FOREIGN KEY (selpa_id) REFERENCES regional_education_agencies(id) ON DELETE CASCADE,
     FOREIGN KEY (county_id) REFERENCES counties(id) ON DELETE CASCADE
 );
 
@@ -490,6 +542,65 @@ CREATE TABLE IF NOT EXISTS shared_portal_tokens (
     expires_at TEXT NOT NULL,
     access_scope TEXT NOT NULL,
     created_at TEXT NOT NULL,
+    FOREIGN KEY (child_id) REFERENCES child_profiles(id) ON DELETE CASCADE
+);
+
+-- 42. program_waitlists
+CREATE TABLE IF NOT EXISTS program_waitlists (
+    id TEXT PRIMARY KEY,
+    program_id TEXT NOT NULL,
+    name TEXT NOT NULL,
+    duration_label TEXT NOT NULL,
+    duration_months REAL NOT NULL,
+    status TEXT NOT NULL,
+    description TEXT NOT NULL,
+    reserve_capacity_notice TEXT,
+    legal_deadline TEXT,
+    last_scraped_at TEXT NOT NULL
+);
+
+-- 43. knowledge_articles
+CREATE TABLE IF NOT EXISTS knowledge_articles (
+    id TEXT PRIMARY KEY,
+    category TEXT NOT NULL,
+    title TEXT NOT NULL,
+    subtitle TEXT NOT NULL,
+    title_es TEXT NOT NULL,
+    subtitle_es TEXT NOT NULL,
+    read_time TEXT NOT NULL,
+    read_time_es TEXT NOT NULL,
+    difficulty TEXT NOT NULL,
+    color TEXT NOT NULL,
+    steps_json TEXT NOT NULL,
+    steps_json_es TEXT NOT NULL
+);
+
+-- 44. child_iep_accommodations
+CREATE TABLE IF NOT EXISTS child_iep_accommodations (
+    id TEXT PRIMARY KEY,
+    child_id TEXT NOT NULL,
+    accommodation_id TEXT NOT NULL,
+    FOREIGN KEY (child_id) REFERENCES child_profiles(id) ON DELETE CASCADE
+);
+
+-- 45. child_iep_goals
+CREATE TABLE IF NOT EXISTS child_iep_goals (
+    id TEXT PRIMARY KEY,
+    child_id TEXT NOT NULL,
+    goal_template_id TEXT NOT NULL,
+    custom_text TEXT NOT NULL,
+    tokens_json TEXT,
+    FOREIGN KEY (child_id) REFERENCES child_profiles(id) ON DELETE CASCADE
+);
+
+-- 46. child_respite_assessments
+CREATE TABLE IF NOT EXISTS child_respite_assessments (
+    child_id TEXT PRIMARY KEY,
+    safety_score INTEGER NOT NULL,
+    sleep_score INTEGER NOT NULL,
+    medical_score INTEGER NOT NULL,
+    behavior_score INTEGER NOT NULL,
+    updated_at TEXT NOT NULL,
     FOREIGN KEY (child_id) REFERENCES child_profiles(id) ON DELETE CASCADE
 );
 

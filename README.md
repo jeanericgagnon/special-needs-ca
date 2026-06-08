@@ -1,6 +1,6 @@
-# California Special Needs Navigator: Case Command Center & Resource Directories
+# California Special Needs Navigator: Public Benefits & Resource Directory
 
-A professional-grade, data-driven web application designed to help California families and caregivers navigate complex state disability programs, special education inclusion frameworks, and local advocate support directories.
+A professional-grade, public benefits and resource directory with a free match finder designed to help California families and caregivers navigate complex state disability programs, special education inclusion frameworks, and local advocate support directories.
 
 ---
 
@@ -11,7 +11,7 @@ This repository is structured as a monorepo containing a production Next.js fron
 ```
 ├── frontend/                     # Production Next.js App Workspace
 │   ├── src/app/                  # App Router pages and API routes
-│   │   ├── dashboard/            # Care Roadmap Case Command Center
+│   │   ├── dashboard/            # Saved Plans & Care Roadmap Tracker
 │   │   ├── sitemaps/             # Dynamic quality-controlled XML sitemaps
 │   │   └── benefits/             # Leaf directories for diagnoses & counties
 │   ├── src/lib/                  # Shared database handlers, auth, and data assets
@@ -28,7 +28,7 @@ This repository is structured as a monorepo containing a production Next.js fron
 │
 ├── prototype_quarantine/         # Archived Vite/Express prototype files (Quarantined)
 ├── package.json                  # Root monorepo scripts & dependencies
-└── README.md                     # This documentation
+│   └── README.md                 # This documentation
 ```
 
 ---
@@ -82,11 +82,9 @@ npm run crawl:wrightslaw
 
 ---
 
-## 📈 SEO & Sitemap Thresholds
+## 📈 SEO & Sitemap Gates
 
-Leaf pages (`/benefits/[diagnosis]/[geography]`) are subject to a strict database-backed **Quality Index Threshold** before being indexed in dynamic sitemaps:
-- The county must have active Regional Center contacts.
-- The county must have active IHSS/Social Services offices.
-- The county must have at least one school district or SELPA record.
-- The diagnosis must have at least one source-backed program match.
-This prevents search engines from indexing thin, duplicate, or blank boilerplate templates.
+Leaf pages (`/benefits/[diagnosis]/[geography]`) and county resources (`/counties/[county]`) are subject to strict quality-controlled indexing gates to prevent doorway penalties:
+- **Strict County & Diagnosis Gates**: Only combinations of the 4 verified counties (`los-angeles`, `orange`, `sacramento`, `san-francisco`) and 6 core diagnoses (`autism-spectrum-disorder`, `adhd`, `down-syndrome`, `speech-or-language-delay`, `cerebral-palsy`, `epilepsy`) are allowed to be indexed.
+- **Dynamic Noindexing**: All other county or diagnosis leaf pages automatically render `noindex, follow` tags.
+- **Sitemap Restrictions**: Sitemaps are hard-coded to only expose URLs of these verified cohorts, utilizing a static update date stamp of `2026-05-31`.

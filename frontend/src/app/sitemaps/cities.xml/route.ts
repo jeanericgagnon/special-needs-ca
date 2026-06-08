@@ -58,7 +58,7 @@ export async function GET() {
       if (matchingPrograms.length === 0) return;
 
       xmlUrls += `  <url>
-    <loc>${baseUrl}/benefits/${diag}/${city.id}</loc>
+    <loc>${baseUrl}/benefits/california/${diag}/${city.id}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>

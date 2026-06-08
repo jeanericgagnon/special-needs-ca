@@ -29,6 +29,7 @@ type WizardStep = 1 | 2 | 3 | 4 | 5;
 export default function WizardClient({ counties, diagnosesList, waitlists }: WizardClientProps) {
   const [step, setStep] = useState<WizardStep>(1);
   const [age, setAge] = useState<string>('');
+  const [stateId, setStateId] = useState<string>('california');
   const [countyId, setCountyId] = useState<string>('');
   const [diagnosis, setDiagnosis] = useState<string>('');
   const [additionalText, setAdditionalText] = useState<string>('');
@@ -416,7 +417,7 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
             <span style={{ fontSize: '0.85rem', color: 'var(--text-light)', fontWeight: 600 }}>1 of 3</span>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem', marginBottom: '2rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr 1.5fr', gap: '1.5rem', marginBottom: '2rem' }}>
             <div className="input-group">
               <label htmlFor="age">Child&apos;s Age (Years)</label>
               <input 
@@ -432,7 +433,30 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
             </div>
 
             <div className="input-group">
-              <label htmlFor="county">California County</label>
+              <label htmlFor="state">State</label>
+              <select 
+                id="state" 
+                value={stateId}
+                onChange={(e) => {
+                  setStateId(e.target.value);
+                  setCountyId('');
+                }}
+                required
+              >
+                {Array.from(new Set(counties.map(c => c.state_id))).filter((st): st is string => !!st).sort().map(st => {
+                  const stateName = st
+                    .split('-')
+                    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                    .join(' ');
+                  return <option key={st} value={st}>{stateName}</option>;
+                })}
+              </select>
+            </div>
+
+            <div className="input-group">
+              <label htmlFor="county">
+                {stateId ? `${stateId.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')} County` : 'County'}
+              </label>
               <select 
                 id="county" 
                 value={countyId}
@@ -440,7 +464,7 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
                 required
               >
                 <option value="">Select county...</option>
-                {counties.map(c => (
+                {counties.filter(c => c.state_id === stateId).map(c => (
                   <option key={c.id} value={c.id}>{c.name}</option>
                 ))}
               </select>
@@ -861,9 +885,21 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
                       }}
                       style={{ padding: '0.5rem 0.75rem', fontSize: '0.9rem', borderRadius: '8px', background: 'white' }}
                     >
-                      {counties.map(c => (
-                        <option key={c.id} value={c.id}>{c.name}</option>
-                      ))}
+                      {Array.from(new Set(counties.map(c => c.state_id))).filter((st): st is string => !!st).sort().map(st => {
+                        const stateCounties = counties.filter(c => c.state_id === st);
+                        if (stateCounties.length === 0) return null;
+                        const stateName = st
+                          .split('-')
+                          .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                          .join(' ');
+                        return (
+                          <optgroup key={st} label={stateName}>
+                            {stateCounties.map(c => (
+                              <option key={c.id} value={c.id}>{c.name}</option>
+                            ))}
+                          </optgroup>
+                        );
+                      })}
                     </select>
                   </div>
 
@@ -1280,7 +1316,7 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
                           {program.id === 'ihss-for-children' && (
                             <div style={{ marginTop: '1.25rem', borderTop: '1px solid rgba(0,0,0,0.05)', paddingTop: '1.25rem' }}>
                               <h5 style={{ fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.75rem' }}>⏳ IHSS Wait & Assessment Times</h5>
-                              <WaitlistVisualizer activeProgramId="ihss" waitlists={waitlists} />
+                              <WaitlistVisualizer activeProgramId="ihss-for-children" waitlists={waitlists} />
                             </div>
                           )}
                           
@@ -1297,14 +1333,14 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
                           {program.id === 'california-childrens-services' && (
                             <div style={{ marginTop: '1.25rem', borderTop: '1px solid rgba(0,0,0,0.05)', paddingTop: '1.25rem' }}>
                               <h5 style={{ fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.75rem' }}>⏳ CCS Assessment Timeline</h5>
-                              <WaitlistVisualizer activeProgramId="ccs" waitlists={waitlists} />
+                              <WaitlistVisualizer activeProgramId="california-childrens-services" waitlists={waitlists} />
                             </div>
                           )}
 
                           {program.id === 'ssi-for-children' && (
                             <div style={{ marginTop: '1.25rem', borderTop: '1px solid rgba(0,0,0,0.05)', paddingTop: '1.25rem' }}>
                               <h5 style={{ fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.75rem' }}>⏳ SSI Determination Timeline</h5>
-                              <WaitlistVisualizer activeProgramId="ssi" waitlists={waitlists} />
+                              <WaitlistVisualizer activeProgramId="ssi-for-children" waitlists={waitlists} />
                             </div>
                           )}
                         </div>

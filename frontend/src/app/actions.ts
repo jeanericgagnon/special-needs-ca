@@ -1,8 +1,12 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use server'
 
-import { getProgramsByKeywords, getMatchedCorePrograms, getCountyDetails, Program, CoreProgramMatch } from '@/lib/db';
+import { getProgramsByKeywords, getMatchedCorePrograms, getCountyDetails, Program, CoreProgramMatch, getStateByIdOrCode } from '@/lib/db';
 import { hasNonNegatedKeyword } from '@/lib/negation';
 import { DIAGNOSES_DETAILS } from '@/lib/diagnoses';
+import stateProgramsMapRaw from '@/lib/state_programs_map.json';
+
+const stateProgramsMap = stateProgramsMapRaw as Record<string, any>;
 
 export interface Refiners {
   insuranceExcludesHearing?: boolean;
@@ -38,6 +42,15 @@ export async function analyzeOnboarding(
   // Artificial delay to simulate screening over 33k rules
   await new Promise(resolve => setTimeout(resolve, 1200));
 
+  // Determine state of the selected county
+  const countyDetails = await getCountyDetails(countyId);
+  const stateId = countyDetails?.state_id || 'california';
+
+  // Fetch state details dynamically from database
+  const stateObj = await getStateByIdOrCode(stateId);
+  const stateName = stateObj?.name || 'California';
+  const stateCode = (stateObj?.code || 'CA').toUpperCase();
+
   const lowerText = additionalText.toLowerCase();
   const lowerDiag = diagnosis.toLowerCase();
 
@@ -72,10 +85,31 @@ export async function analyzeOnboarding(
       detectedConditionNames.push(cond.name);
 
       if (cond.regional_center_relevance === 1) {
-        explanations.push(`California Regional Centers prioritize ${cond.name} as a qualifying condition under the Lanterman Act.`);
+        if (stateId === 'california') {
+          explanations.push(`California Regional Centers prioritize ${cond.name} as a qualifying condition under the Lanterman Act.`);
+        } else if (stateId === 'texas') {
+          explanations.push(`Texas LIDDAs prioritize ${cond.name} as a qualifying condition for state-funded IDD services.`);
+        } else if (stateId === 'florida') {
+          explanations.push(`Florida Agency for Persons with Disabilities (APD) prioritizes ${cond.name} for eligibility screening.`);
+        } else if (stateId === 'new-york') {
+          explanations.push(`New York OPWDD prioritizes ${cond.name} as a qualifying developmental disability.`);
+        } else {
+          const devServicesName = stateProgramsMap[stateCode]?.developmental_services?.name || `${stateName} Developmental Services`;
+          explanations.push(`${devServicesName} prioritizes ${cond.name} as a qualifying condition.`);
+        }
       }
       if (cond.ccs_relevance === 1) {
-        explanations.push(`${cond.name} is medically eligible for California Children's Services (CCS) therapy and specialized care.`);
+        if (stateId === 'california') {
+          explanations.push(`${cond.name} is medically eligible for California Children's Services (CCS) therapy and specialized care.`);
+        } else if (stateId === 'texas') {
+          explanations.push(`${cond.name} qualifies for specialized pediatric medical and therapy support in Texas.`);
+        } else if (stateId === 'florida') {
+          explanations.push(`${cond.name} qualifies for Florida Children's Medical Services (CMS) specialized therapy and clinical programs.`);
+        } else if (stateId === 'new-york') {
+          explanations.push(`${cond.name} is eligible for specialized pediatric clinical and therapeutic benefits in New York.`);
+        } else {
+          explanations.push(`${cond.name} may qualify for specialized pediatric medical and clinical support in ${stateName}.`);
+        }
       }
     }
   }
@@ -89,9 +123,25 @@ export async function analyzeOnboarding(
     detectedNeedIds.push('protective-supervision');
     detectedNeedNames.push('Protective Supervision');
     if (refiners?.severeSafetyRisks === true) {
-      explanations.push('Confirmed safety risks (wandering, elopement, or self-injury) verify eligibility for max IHSS hours under the Protective Supervision category.');
+      if (stateId === 'california') {
+        explanations.push('Confirmed safety risks (wandering, elopement, or self-injury) may support eligibility for additional IHSS hours under the Protective Supervision category. Actual approved hours depend on individual county assessment.');
+      } else if (stateId === 'texas') {
+        explanations.push('Confirmed safety risks (wandering, elopement, or self-injury) may support eligibility for personal care hours or behavioral support under the HCS or CLASS waivers.');
+      } else if (stateId === 'florida') {
+        explanations.push('Confirmed safety risks (wandering, elopement, or self-injury) support eligibility for personal care, respite, or behavioral services under the iBudget waiver.');
+      } else if (stateId === 'new-york') {
+        explanations.push('Confirmed safety risks (wandering, elopement, or self-injury) support eligibility for personal care hours under CDPAP or behavioral support under the OPWDD HCBS waiver.');
+      } else {
+        const hcbsWaiversName = stateProgramsMap[stateCode]?.hcbs_waivers?.name || `${stateName} HCBS Waivers`;
+        explanations.push(`Confirmed safety risks (wandering, elopement, or self-injury) may support eligibility for personal care hours or behavioral support under ${stateName}'s ${hcbsWaiversName} program.`);
+      }
     } else {
-      explanations.push('Your mention of safety hazards indicates a critical need for IHSS Protective Supervision, which pays parents to provide 24/7 care.');
+      if (stateId === 'california') {
+        explanations.push('Your mention of safety hazards indicates a possible relevance to IHSS Protective Supervision, which may pay eligible providers for approved care hours. Eligibility requires a formal county assessment.');
+      } else {
+        const program = stateId === 'texas' ? 'HCS/CLASS waivers' : (stateId === 'florida' ? 'iBudget waiver' : (stateId === 'new-york' ? 'CDPAP/OPWDD programs' : `${stateProgramsMap[stateCode]?.hcbs_waivers?.name || `${stateName} HCBS Waivers`} program`));
+        explanations.push(`Your mention of safety hazards indicates relevance to behavioral support or personal care under the state's ${program}.`);
+      }
     }
   }
 
@@ -107,7 +157,8 @@ export async function analyzeOnboarding(
   ) {
     detectedNeedIds.push('speech-therapy');
     detectedNeedNames.push('Speech Therapy');
-    explanations.push('Speech and language needs trigger Early Start (under 3) and public school IEP therapy evaluations.');
+    const earlyIntervention = stateId === 'california' ? 'Early Start' : (stateId === 'texas' ? 'Early Childhood Intervention (ECI)' : (stateId === 'florida' ? 'Early Steps' : (stateId === 'new-york' ? 'Early Intervention (EI)' : `${stateName} Early Intervention Program`)));
+    explanations.push(`Speech and language needs may lead to ${earlyIntervention} (under 3) referrals and public school IEP therapy evaluations. Qualification requires a formal evaluation by a licensed speech-language pathologist.`);
   }
 
   // Respite
@@ -120,7 +171,8 @@ export async function analyzeOnboarding(
   ) {
     detectedNeedIds.push('respite-care');
     detectedNeedNames.push('Respite Care');
-    explanations.push('Respite hours are funded by Regional Centers to prevent caregiver burnout, providing a vetted sitter to look after your child.');
+    const agencyName = stateId === 'california' ? 'Regional Centers' : (stateId === 'texas' ? 'LIDDAs (via waiver lists)' : (stateId === 'florida' ? 'APD Regional Offices' : (stateId === 'new-york' ? 'OPWDD / CCO care coordinators' : (stateProgramsMap[stateCode]?.developmental_services?.name || `${stateName} Developmental Services`))));
+    explanations.push(`Respite hours are funded by ${agencyName} to prevent caregiver burnout, providing a vetted sitter to look after your child.`);
   }
 
   // Hearing / HACCP Waiver Nuance
@@ -136,9 +188,17 @@ export async function analyzeOnboarding(
     detectedNeedNames.push('Hearing Aids');
     detectedConditionIds.push('hearing-loss-deafness');
     if (refiners?.insuranceExcludesHearing === true) {
-      explanations.push('Since your private insurance excludes hearing aid coverage, you trigger the CA HACCP Waiver which funds device fitting costs for children up to 600% FPL.');
+      if (stateId === 'california') {
+        explanations.push('Since your private insurance excludes hearing aid coverage, you may be eligible for the CA HACCP program, which may fund device fitting costs for children up to 600% FPL. Eligibility is determined by CDPH.');
+      } else {
+        explanations.push(`Since your private insurance excludes hearing aid coverage, you may qualify for children's special health services or Medicaid-sponsored hearing device programs in ${stateName}.`);
+      }
     } else {
-      explanations.push('Hearing impairment triggers eligibility for the state HACCP program and CCS medical fittings.');
+      if (stateId === 'california') {
+        explanations.push('Hearing impairment may indicate relevance to the state HACCP program and CCS medical fittings. A formal audiological evaluation is required to confirm eligibility.');
+      } else {
+        explanations.push(`Hearing impairment indicates relevance to state-sponsored pediatric hearing screenings and device programs in ${stateName}. A formal audiological evaluation is required.`);
+      }
     }
   }
 
@@ -153,7 +213,7 @@ export async function analyzeOnboarding(
     detectedNeedIds.push('vision-services');
     detectedNeedNames.push('Vision Services');
     detectedConditionIds.push('visual-impairment-blindness');
-    explanations.push('Vision delays qualify for CDE Specialized Teachers (TVI) and Orientation & Mobility assessments in schools.');
+    explanations.push('Vision delays qualify for Specialized Teachers (TVI) and Orientation & Mobility assessments in schools.');
   }
 
   // Diapers
@@ -168,10 +228,11 @@ export async function analyzeOnboarding(
   ) {
     detectedNeedIds.push('diapers-incontinence-supplies');
     detectedNeedNames.push('Incontinence Supplies');
+    const medicaidName = stateId === 'california' ? 'Medi-Cal' : `${stateName} Medicaid`;
     if (age >= 3) {
-      explanations.push('Medi-Cal covers diapers and incontinence briefs starting at age 3 for children with documented developmental delays.');
+      explanations.push(`${medicaidName} covers diapers and incontinence briefs starting at age 3 for children with documented developmental delays.`);
     } else {
-      explanations.push('Note: Medi-Cal incontinence brief coverage typically starts at age 3. Keep tracking this for future eligibility.');
+      explanations.push(`Note: ${medicaidName} incontinence brief coverage typically starts at age 3. Keep tracking this for future eligibility.`);
     }
   }
 
@@ -188,14 +249,23 @@ export async function analyzeOnboarding(
     explanations.push('School district special education departments are legally mandated under the IDEA act to evaluate learning adaptations within 60 days of written parent request.');
   }
 
-  // Lanterman Institutional Deeming Nuance
+  // Institutional Deeming Nuance
   if (refiners?.exceedsIncomeLimits === true) {
-    explanations.push('Exceeding standard Medi-Cal income limits triggers the Lanterman Act Institutional Deeming waiver, letting you bypass parent wealth limits completely.');
+    if (stateId === 'california') {
+      explanations.push('Exceeding standard Medi-Cal income limits may be relevant to the Lanterman Act Institutional Deeming rules: some waiver rules may reduce how parental income is counted. Consult with your Regional Center service coordinator to confirm applicability.');
+    } else {
+      const waiverType = stateId === 'texas' ? 'CLASS or HCS' : (stateId === 'florida' ? 'iBudget' : (stateId === 'new-york' ? 'OPWDD HCBS' : (stateProgramsMap[stateCode]?.hcbs_waivers?.name || 'HCBS Waivers')));
+      explanations.push(`Exceeding standard Medicaid income limits may be bypassed by enrolling in the state's ${waiverType} waiver, which ignores parental income and counts only the child's assets. Consult your local intake office/care manager.`);
+    }
   }
 
   // CCS MTU School Therapy Nuance
   if (refiners?.schoolBasedTherapy === true) {
-    explanations.push('School-based Medical Therapy Unit (MTU) physical and occupational therapies are funded by CCS regardless of family income limits.');
+    if (stateId === 'california') {
+      explanations.push('School-based Medical Therapy Unit (MTU) physical and occupational therapies are funded by CCS regardless of family income limits.');
+    } else {
+      explanations.push(`School-based physical and occupational therapies are provided under your child's IEP as a related service, funded by the school district in ${stateName} regardless of family income.`);
+    }
   }
 
   // 3. Extract custom keywords for raw text crawler DB matching

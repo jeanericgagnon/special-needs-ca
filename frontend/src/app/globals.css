@@ -26,20 +26,7 @@
   --accent-gradient: linear-gradient(135deg, #2dd4bf 0%, #fbbf24 100%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-gradient: linear-gradient(135deg, #101618 0%, #172124 100%);
-    --glass-bg: rgba(22, 32, 34, 0.85);
-    --glass-border: rgba(255, 255, 255, 0.07);
-    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.35);
-    --primary-rgb: 45, 212, 191;
-    --primary-color: #2dd4bf;
-    --primary-hover: #14b8a6;
-    --text-main: #f1f5f9;
-    --text-light: #94a3b8;
-    --accent-gradient: linear-gradient(135deg, #2dd4bf 0%, #fbbf24 100%);
-  }
-}
+
 
 * {
   box-sizing: border-box;

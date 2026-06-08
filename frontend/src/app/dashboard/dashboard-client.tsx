@@ -1417,162 +1417,231 @@ Sincerely,
             {activeTab === 'share' && <ShareSettingsWidget />}
 
             {/* TAB: COUNTY DIRECTORY */}
-            {activeTab === 'county' && (
-              <div className="animate-fade-in">
-                <div style={{ marginBottom: '1.5rem' }}>
-                  <h3 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '0.25rem' }}>Dynamic County Routing Directory</h3>
-                  <p style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>
-                    Local contact numbers, school district offices, and Regional Center catchments.
-                  </p>
-                </div>
+            {activeTab === 'county' && (() => {
+              const stateCatchments: Record<string, string> = {
+                'california': 'Regional Center',
+                'texas': 'LIDDA',
+                'florida': 'APD Office',
+                'new-york': 'OPWDD Front Door'
+              };
 
-                {!countyDetails ? (
-                  <div className="glass-panel" style={{ textAlign: 'center', padding: '2rem' }}>
-                    <p>No resource records found for this county in the database.</p>
+              const stateNames: Record<string, string> = {
+                'california': 'California',
+                'texas': 'Texas',
+                'florida': 'Florida',
+                'new-york': 'New York'
+              };
+
+              const childCounty = counties.find(c => c.id === currentChild?.county_id);
+              const childStateId = childCounty?.state_id || 'california';
+              const catchmentLabel = stateCatchments[childStateId] || 'Developmental Disability Agency';
+              const stateNameStr = stateNames[childStateId] || 'State';
+
+              return (
+                <div className="animate-fade-in">
+                  <div style={{ marginBottom: '1.5rem' }}>
+                    <h3 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '0.25rem' }}>Dynamic County Routing Directory</h3>
+                    <p style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>
+                      Local contact numbers, school district offices, and {catchmentLabel} catchments.
+                    </p>
                   </div>
-                ) : (
-                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.5rem' }}>
-                    
-                    {/* RC Contacts */}
-                    <div className="glass-panel" style={{ background: 'rgba(255,255,255,0.7)', padding: '1.5rem' }}>
-                      <h4 style={{ fontSize: '1.1rem', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem', borderBottom: '1px solid rgba(0,0,0,0.06)', paddingBottom: '0.5rem' }}>
-                        <Landmark color="var(--primary-color)" size={18} />
-                        California Regional Center Intake
-                      </h4>
-                      {countyDetails.regionalCenters && countyDetails.regionalCenters.length > 0 ? (
-                        countyDetails.regionalCenters.map((rc: RegionalCenter) => (
-                          <div key={rc.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem', fontSize: '0.9rem' }}>
-                            <strong>{rc.name}</strong>
-                            <span><strong>Catchment boundary:</strong> {rc.catchment_boundaries}</span>
-                            
-                            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
-                              <Phone size={14} style={{ flexShrink: 0 }} /> 
-                              Intake helpline: 
-                              <a href={`tel:${rc.intake_phone}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{rc.intake_phone}</a>
-                              <CopyButton text={rc.intake_phone} size={12} />
-                            </span>
-                            
-                            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
-                              <strong>Early Start Contact:</strong> {rc.early_start_contact}
-                              <CopyButton text={rc.early_start_contact} size={12} />
-                            </span>
-                            
-                            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
-                              <strong>Lanterman Intake:</strong> {rc.lanterman_intake_contact}
-                              <CopyButton text={rc.lanterman_intake_contact} size={12} />
-                            </span>
-                            
-                            <a href={rc.website} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem', color: 'var(--primary-color)', fontWeight: 600, textDecoration: 'none', marginTop: '0.25rem' }}>
-                              <Globe size={14} /> Visit RC Portal
-                            </a>
-                            <DirectoryReviews
-                              entityType="regional_center"
-                              entityId={rc.id}
-                              entityName={rc.name}
-                              countyId={currentChild?.county_id || ''}
-                              isSpanish={isSpanish}
-                            />
-                          </div>
-                        ))
-                      ) : (
-                        <p style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>No Regional Center records available.</p>
-                      )}
-                    </div>
 
-                    {/* County Support Offices */}
-                    <div className="glass-panel" style={{ background: 'rgba(255,255,255,0.7)', padding: '1.5rem' }}>
-                      <h4 style={{ fontSize: '1.1rem', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem', borderBottom: '1px solid rgba(0,0,0,0.06)', paddingBottom: '0.5rem' }}>
-                        <MapPin color="var(--primary-color)" size={18} />
-                        County Admin Support Offices
-                      </h4>
-                      {countyDetails.countyOffices && countyDetails.countyOffices.length > 0 ? (
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
-                          {countyDetails.countyOffices.map((office: CountyOffice) => (
-                            <div key={office.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', fontSize: '0.9rem', borderBottom: '1px solid rgba(0,0,0,0.03)', paddingBottom: '0.75rem' }}>
-                              <strong>{office.office_name}</strong>
-                              
-                              <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
-                                <strong>Address:</strong> {office.address}
-                                <CopyButton text={office.address} size={12} />
-                              </span>
+                  {!countyDetails ? (
+                    <div className="glass-panel" style={{ textAlign: 'center', padding: '2rem' }}>
+                      <p>No resource records found for this county in the database.</p>
+                    </div>
+                  ) : (
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.5rem' }}>
+                      
+                      {/* RC/LIDDA Contacts */}
+                      <div className="glass-panel" style={{ background: 'rgba(255,255,255,0.7)', padding: '1.5rem' }}>
+                        <h4 style={{ fontSize: '1.1rem', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem', borderBottom: '1px solid rgba(0,0,0,0.06)', paddingBottom: '0.5rem' }}>
+                          <Landmark color="var(--primary-color)" size={18} />
+                          {stateNameStr} {catchmentLabel} Intake
+                        </h4>
+                        {countyDetails.regionalCenters && countyDetails.regionalCenters.length > 0 ? (
+                          countyDetails.regionalCenters.map((rc: RegionalCenter) => (
+                            <div key={rc.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem', fontSize: '0.9rem' }}>
+                              <strong>{rc.name}</strong>
+                              <span><strong>Catchment boundary:</strong> {rc.catchment_boundaries}</span>
                               
                               <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
                                 <Phone size={14} style={{ flexShrink: 0 }} /> 
-                                Phone: 
-                                <a href={`tel:${office.phone}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{office.phone}</a>
-                                <CopyButton text={office.phone} size={12} />
+                                Intake helpline: 
+                                <a href={`tel:${rc.intake_phone}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{rc.intake_phone}</a>
+                                <CopyButton text={rc.intake_phone} size={12} />
                               </span>
                               
-                              {office.email && (
+                              {rc.early_start_contact && (
                                 <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
-                                  <Mail size={14} style={{ flexShrink: 0 }} />
-                                  Email: 
-                                  <a href={`mailto:${office.email}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{office.email}</a>
-                                  <CopyButton text={office.email} size={12} />
-                                </span>
-                              )}
-                            </div>
-                          ))}
-                        </div>
-                      ) : (
-                        <p style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>No county-level office records loaded.</p>
-                      )}
-                    </div>
-
-                    {/* School Districts */}
-                    <div className="glass-panel" style={{ background: 'rgba(255,255,255,0.7)', padding: '1.5rem' }}>
-                      <h4 style={{ fontSize: '1.1rem', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem', borderBottom: '1px solid rgba(0,0,0,0.06)', paddingBottom: '0.5rem' }}>
-                        <User color="var(--primary-color)" size={18} />
-                        School District Special Education
-                      </h4>
-                      {countyDetails.schoolDistricts && countyDetails.schoolDistricts.length > 0 ? (
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
-                          {countyDetails.schoolDistricts.map((sd: SchoolDistrict) => (
-                            <div key={sd.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', fontSize: '0.9rem', borderBottom: '1px solid rgba(0,0,0,0.03)', paddingBottom: '0.75rem' }}>
-                              <strong>{sd.name}</strong>
-                              
-                              {sd.spec_ed_contact_phone && (
-                                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
-                                  <Phone size={14} style={{ flexShrink: 0 }} /> 
-                                  SpecEd Helpline: 
-                                  <a href={`tel:${sd.spec_ed_contact_phone}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{sd.spec_ed_contact_phone}</a>
-                                  <CopyButton text={sd.spec_ed_contact_phone} size={12} />
+                                  <strong>Early Intervention Contact:</strong> {rc.early_start_contact}
+                                  <CopyButton text={rc.early_start_contact} size={12} />
                                 </span>
                               )}
                               
-                              {sd.spec_ed_contact_email && (
+                              {rc.lanterman_intake_contact && (
                                 <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
-                                  <Mail size={14} style={{ flexShrink: 0 }} />
-                                  Email: 
-                                  <a href={`mailto:${sd.spec_ed_contact_email}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{sd.spec_ed_contact_email}</a>
-                                  <CopyButton text={sd.spec_ed_contact_email} size={12} />
+                                  <strong>Services Intake Contact:</strong> {rc.lanterman_intake_contact}
+                                  <CopyButton text={rc.lanterman_intake_contact} size={12} />
                                 </span>
                               )}
                               
-                              {sd.website && (
-                                <a href={sd.website} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem', color: 'var(--primary-color)', fontWeight: 600, textDecoration: 'none', marginTop: '0.2rem' }}>
-                                  <Globe size={14} /> District IEP Guidelines
-                                </a>
-                              )}
+                              <a href={rc.website} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem', color: 'var(--primary-color)', fontWeight: 600, textDecoration: 'none', marginTop: '0.25rem' }}>
+                                <Globe size={14} /> Visit Agency Portal
+                              </a>
                               <DirectoryReviews
-                                entityType="school_district"
-                                entityId={sd.id}
-                                entityName={sd.name}
+                                entityType="regional_center"
+                                entityId={rc.id}
+                                entityName={rc.name}
                                 countyId={currentChild?.county_id || ''}
                                 isSpanish={isSpanish}
                               />
                             </div>
-                          ))}
-                        </div>
-                      ) : (
-                        <p style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>No school district contacts listed.</p>
-                      )}
-                    </div>
+                          ))
+                        ) : (
+                          <p style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>No {catchmentLabel} records available.</p>
+                        )}
+                      </div>
 
-                  </div>
-                )}
-              </div>
-            )}
+                      {/* County Support Offices */}
+                      <div className="glass-panel" style={{ background: 'rgba(255,255,255,0.7)', padding: '1.5rem' }}>
+                        <h4 style={{ fontSize: '1.1rem', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem', borderBottom: '1px solid rgba(0,0,0,0.06)', paddingBottom: '0.5rem' }}>
+                          <MapPin color="var(--primary-color)" size={18} />
+                          County Admin Support Offices
+                        </h4>
+                        {countyDetails.countyOffices && countyDetails.countyOffices.length > 0 ? (
+                          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+                            {countyDetails.countyOffices.map((office: CountyOffice) => (
+                              <div key={office.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', fontSize: '0.9rem', borderBottom: '1px solid rgba(0,0,0,0.03)', paddingBottom: '0.75rem' }}>
+                                <strong>{office.office_name}</strong>
+                                
+                                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
+                                  <strong>Address:</strong> {office.address}
+                                  <CopyButton text={office.address} size={12} />
+                                </span>
+                                
+                                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
+                                  <Phone size={14} style={{ flexShrink: 0 }} /> 
+                                  Phone: 
+                                  <a href={`tel:${office.phone}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{office.phone}</a>
+                                  <CopyButton text={office.phone} size={12} />
+                                </span>
+                                
+                                {office.email && (
+                                  <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
+                                    <Mail size={14} style={{ flexShrink: 0 }} />
+                                    Email: 
+                                    <a href={`mailto:${office.email}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{office.email}</a>
+                                    <CopyButton text={office.email} size={12} />
+                                  </span>
+                                )}
+                              </div>
+                            ))}
+                          </div>
+                        ) : (
+                          <p style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>No county-level office records loaded.</p>
+                        )}
+                      </div>
+
+                      {/* School Districts */}
+                      <div className="glass-panel" style={{ background: 'rgba(255,255,255,0.7)', padding: '1.5rem' }}>
+                        <h4 style={{ fontSize: '1.1rem', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem', borderBottom: '1px solid rgba(0,0,0,0.06)', paddingBottom: '0.5rem' }}>
+                          <BookOpen color="var(--primary-color)" size={18} />
+                          School District Special Education
+                        </h4>
+                        {countyDetails.schoolDistricts && countyDetails.schoolDistricts.length > 0 ? (
+                          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+                            {countyDetails.schoolDistricts.map((sd: SchoolDistrict) => (
+                              <div key={sd.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', fontSize: '0.9rem', borderBottom: '1px solid rgba(0,0,0,0.03)', paddingBottom: '0.75rem' }}>
+                                <strong>{sd.name}</strong>
+                                
+                                {sd.spec_ed_contact_phone && (
+                                  <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
+                                    <Phone size={14} style={{ flexShrink: 0 }} /> 
+                                    SpecEd Helpline: 
+                                    <a href={`tel:${sd.spec_ed_contact_phone}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{sd.spec_ed_contact_phone}</a>
+                                    <CopyButton text={sd.spec_ed_contact_phone} size={12} />
+                                  </span>
+                                )}
+                                
+                                {sd.spec_ed_contact_email && (
+                                  <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
+                                    <Mail size={14} style={{ flexShrink: 0 }} />
+                                    Email: 
+                                    <a href={`mailto:${sd.spec_ed_contact_email}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{sd.spec_ed_contact_email}</a>
+                                    <CopyButton text={sd.spec_ed_contact_email} size={12} />
+                                  </span>
+                                )}
+                                
+                                {sd.website && (
+                                  <a href={sd.website} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem', color: 'var(--primary-color)', fontWeight: 600, textDecoration: 'none', marginTop: '0.2rem' }}>
+                                    <Globe size={14} /> District IEP Guidelines
+                                  </a>
+                                )}
+                                <DirectoryReviews
+                                  entityType="school_district"
+                                  entityId={sd.id}
+                                  entityName={sd.name}
+                                  countyId={currentChild?.county_id || ''}
+                                  isSpanish={isSpanish}
+                                />
+                              </div>
+                            ))}
+                          </div>
+                        ) : (
+                          <p style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>No school district contacts listed.</p>
+                        )}
+                      </div>
+
+                      {/* Nonprofit Support Organizations */}
+                      <div className="glass-panel" style={{ background: 'rgba(255,255,255,0.7)', padding: '1.5rem' }}>
+                        <h4 style={{ fontSize: '1.1rem', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem', borderBottom: '1px solid rgba(0,0,0,0.06)', paddingBottom: '0.5rem' }}>
+                          <Globe color="var(--primary-color)" size={18} />
+                          Local Nonprofit & Support Organizations
+                        </h4>
+                        {countyDetails.localOrganizations && countyDetails.localOrganizations.length > 0 ? (
+                          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+                            {countyDetails.localOrganizations.map((org: NonprofitOrganization) => (
+                              <div key={org.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', fontSize: '0.9rem', borderBottom: '1px solid rgba(0,0,0,0.03)', paddingBottom: '0.75rem' }}>
+                                <strong>{org.name}</strong>
+                                {org.focus_condition && org.focus_condition !== 'any' && (
+                                  <span style={{ fontSize: '0.75rem', color: 'var(--primary-color)', fontWeight: 600 }}>
+                                    Focus: {org.focus_condition.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}
+                                  </span>
+                                )}
+                                
+                                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
+                                  <Phone size={14} style={{ flexShrink: 0 }} /> 
+                                  Phone: 
+                                  <a href={`tel:${org.phone}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{org.phone}</a>
+                                  <CopyButton text={org.phone} size={12} />
+                                </span>
+                                
+                                {org.website && (
+                                  <a href={org.website} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem', color: 'var(--primary-color)', fontWeight: 600, textDecoration: 'none', marginTop: '0.2rem' }}>
+                                    <Globe size={14} /> Visit Support Site
+                                  </a>
+                                )}
+                                <DirectoryReviews
+                                  entityType="nonprofit"
+                                  entityId={org.id}
+                                  entityName={org.name}
+                                  countyId={currentChild?.county_id || ''}
+                                  isSpanish={isSpanish}
+                                />
+                              </div>
+                            ))}
+                          </div>
+                        ) : (
+                          <p style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>No local support organizations listed.</p>
+                        )}
+                      </div>
+
+                    </div>
+                  )}
+                </div>
+              );
+            })()}
 
           </div>
         </>

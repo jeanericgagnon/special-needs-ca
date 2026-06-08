@@ -1,23 +1,26 @@
 import { NextResponse } from 'next/server';
-import { getCounties, getCountyDetails, getProgramsForDiagnosis, County } from '@/lib/db';
+import { getCounties, getCountyDetails, getProgramsForDiagnosis, getAllStates, County } from '@/lib/db';
 import { DIAGNOSES, slugifyDiagnosis } from '@/lib/diagnoses';
 
 export async function GET() {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://special-needs-ca.vercel.app';
-  const today = new Date().toISOString().split('T')[0];
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://california-navigator.org';
+  const today = '2026-05-31';
 
+  const verifiedCounties = ['los-angeles', 'orange', 'sacramento', 'san-francisco', 'travis-tx', 'harris-tx', 'miami-dade-fl', 'kings-ny', 'queens-ny'];
   let counties: County[] = [];
   try {
     counties = await getCounties();
+    counties = counties.filter(c => verifiedCounties.includes(c.id));
   } catch {
     console.error('Failed to load counties for sitemap:');
     counties = [
       { id: 'los-angeles', name: 'Los Angeles', website: '' },
       { id: 'orange', name: 'Orange', website: '' }
-    ];
+    ].filter(c => verifiedCounties.includes(c.id));
   }
 
-  const diagnosesSlugs = DIAGNOSES.map(slugifyDiagnosis);
+  const coreDiagnoses = ['autism-spectrum-disorder', 'adhd', 'down-syndrome', 'speech-or-language-delay', 'cerebral-palsy', 'epilepsy'];
+  const diagnosesSlugs = DIAGNOSES.map(slugifyDiagnosis).filter(d => coreDiagnoses.includes(d));
 
   // Pre-load county details maps for fast checking
   const countyDetailsMap = new Map();
@@ -44,6 +47,8 @@ export async function GET() {
     }
   }
 
+  const states = await getAllStates();
+
   let xmlUrls = `  <url>
     <loc>${baseUrl}/benefits</loc>
     <lastmod>${today}</lastmod>
@@ -51,33 +56,36 @@ export async function GET() {
     <priority>0.9</priority>
   </url>\n`;
 
-  // 1. County root directories (/benefits/[county])
+  // 1. County root directories (/benefits/[state]/[county])
   counties.forEach(county => {
+    const stateId = county.state_id || 'california';
     xmlUrls += `  <url>
-    <loc>${baseUrl}/benefits/${county.id}</loc>
+    <loc>${baseUrl}/benefits/${stateId}/${county.id}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>\n`;
     xmlUrls += `  <url>
-    <loc>${baseUrl}/counties/${county.id}</loc>
+    <loc>${baseUrl}/counties/${stateId}/${county.id}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>\n`;
   });
 
-  // 2. Diagnosis directories (/benefits/[diagnosis])
-  diagnosesSlugs.forEach(diag => {
-    xmlUrls += `  <url>
-    <loc>${baseUrl}/benefits/${diag}</loc>
+  // 2. Diagnosis directories (/benefits/[state]/[diagnosis])
+  states.forEach(st => {
+    diagnosesSlugs.forEach(diag => {
+      xmlUrls += `  <url>
+    <loc>${baseUrl}/benefits/${st.id}/${diag}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>\n`;
+    });
   });
 
-  // 3. County x Diagnosis leaves (/benefits/[diagnosis]/[county])
+  // 3. County x Diagnosis leaves (/benefits/[state]/[diagnosis]/[county])
   counties.forEach(county => {
     const countyDetails = countyDetailsMap.get(county.id);
     if (!countyDetails) return;
@@ -94,6 +102,8 @@ export async function GET() {
     const hasSchoolOrSelpa = (countyDetails.schoolDistricts && countyDetails.schoolDistricts.length > 0) || (countyDetails.selpas && countyDetails.selpas.length > 0);
     if (!hasSchoolOrSelpa) return;
 
+    const stateId = county.state_id || 'california';
+
     diagnosesSlugs.forEach(diag => {
       // Check at least one source-backed program match exists
       const matchingPrograms = diagnosisProgramsMap.get(diag) || [];
@@ -101,7 +111,7 @@ export async function GET() {
       if (!hasProgramMatch) return;
 
       xmlUrls += `  <url>
-    <loc>${baseUrl}/benefits/${diag}/${county.id}</loc>
+    <loc>${baseUrl}/benefits/${stateId}/${diag}/${county.id}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>

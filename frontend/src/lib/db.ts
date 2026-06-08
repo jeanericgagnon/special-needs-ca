@@ -239,13 +239,20 @@ async function runPgMigrations(pool: Pool) {
       email TEXT,
       created_at TEXT
     );
+    CREATE TABLE IF NOT EXISTS states (
+      id TEXT PRIMARY KEY,
+      name TEXT NOT NULL,
+      code TEXT NOT NULL UNIQUE
+    );
     CREATE TABLE IF NOT EXISTS counties (
       id TEXT PRIMARY KEY,
+      state_id TEXT NOT NULL REFERENCES states(id),
       name TEXT NOT NULL,
       website TEXT NOT NULL,
       ihss_wage_rate REAL,
       medi_cal_plans TEXT
     );
+    ALTER TABLE counties ADD COLUMN IF NOT EXISTS state_id TEXT REFERENCES states(id);
     CREATE TABLE IF NOT EXISTS conditions (
       id TEXT PRIMARY KEY,
       name TEXT NOT NULL,
@@ -275,8 +282,10 @@ async function runPgMigrations(pool: Pool) {
       who_might_qualify TEXT,
       official_source_url TEXT,
       category TEXT,
-      last_verified_date TEXT
+      last_verified_date TEXT,
+      state_id TEXT REFERENCES states(id)
     );
+    ALTER TABLE programs ADD COLUMN IF NOT EXISTS state_id TEXT REFERENCES states(id);
     CREATE TABLE IF NOT EXISTS program_eligibility_rules (
       id TEXT PRIMARY KEY,
       program_id TEXT NOT NULL,
@@ -321,15 +330,17 @@ async function runPgMigrations(pool: Pool) {
       email TEXT,
       website TEXT NOT NULL
     );
-    CREATE TABLE IF NOT EXISTS regional_centers (
+    CREATE TABLE IF NOT EXISTS state_resource_agencies (
       id TEXT PRIMARY KEY,
+      state_id TEXT NOT NULL REFERENCES states(id),
+      agency_type TEXT NOT NULL,
       name TEXT NOT NULL,
       website TEXT NOT NULL,
       counties_served TEXT NOT NULL,
       catchment_boundaries TEXT,
       intake_phone TEXT NOT NULL,
-      early_start_contact TEXT,
-      lanterman_intake_contact TEXT,
+      early_intervention_contact TEXT,
+      agency_intake_contact TEXT,
       eligibility_info_page TEXT,
       services_page TEXT,
       appeals_info TEXT,
@@ -340,12 +351,42 @@ async function runPgMigrations(pool: Pool) {
       source_urls TEXT,
       service_area_description TEXT
     );
-    CREATE TABLE IF NOT EXISTS selpas (
+    CREATE TABLE IF NOT EXISTS regional_education_agencies (
       id TEXT PRIMARY KEY,
+      state_id TEXT NOT NULL REFERENCES states(id),
+      agency_type TEXT NOT NULL,
       name TEXT NOT NULL,
       counties_served TEXT NOT NULL,
       website TEXT NOT NULL
     );
+    CREATE OR REPLACE VIEW regional_centers AS
+    SELECT 
+      id,
+      name,
+      counties_served,
+      catchment_boundaries,
+      website,
+      intake_phone,
+      early_intervention_contact AS early_start_contact,
+      agency_intake_contact AS lanterman_intake_contact,
+      eligibility_info_page,
+      services_page,
+      appeals_info,
+      frc_relationship,
+      office_locations,
+      languages,
+      last_verified_date,
+      source_urls
+    FROM state_resource_agencies;
+
+    CREATE OR REPLACE VIEW selpas AS
+    SELECT
+      id,
+      name,
+      counties_served,
+      website
+    FROM regional_education_agencies;
+
     CREATE TABLE IF NOT EXISTS school_districts (
       id TEXT PRIMARY KEY,
       county_id TEXT NOT NULL,
@@ -373,11 +414,9 @@ async function runPgMigrations(pool: Pool) {
       id TEXT PRIMARY KEY,
       county_id TEXT NOT NULL,
       name TEXT NOT NULL,
-      description TEXT,
-      phone TEXT,
-      email TEXT,
       website TEXT NOT NULL,
-      category TEXT
+      phone TEXT NOT NULL,
+      focus_condition TEXT NOT NULL
     );
     CREATE TABLE IF NOT EXISTS sources (
       id TEXT PRIMARY KEY,
@@ -405,8 +444,18 @@ async function runPgMigrations(pool: Pool) {
       specialties TEXT,
       regional_center_vendorized INTEGER DEFAULT 0,
       organization_affiliation TEXT,
-      description TEXT
+      description TEXT,
+      verification_status TEXT DEFAULT 'unverified',
+      source_url TEXT,
+      source_type TEXT,
+      last_scraped_at TEXT,
+      last_verified_at TEXT
     );
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS verification_status TEXT DEFAULT 'unverified';
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS source_url TEXT;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS source_type TEXT;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS last_scraped_at TEXT;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS last_verified_at TEXT;
     CREATE TABLE IF NOT EXISTS program_waitlists (
       id TEXT PRIMARY KEY,
       program_id TEXT NOT NULL,
@@ -808,7 +857,12 @@ function runMigrations(db: Database.Database) {
       phone TEXT NOT NULL,
       email TEXT NOT NULL,
       website TEXT NOT NULL,
-      description TEXT
+      description TEXT,
+      verification_status TEXT DEFAULT 'unverified',
+      source_url TEXT,
+      source_type TEXT,
+      last_scraped_at TEXT,
+      last_verified_at TEXT
     );
   `);
 
@@ -826,6 +880,21 @@ function runMigrations(db: Database.Database) {
   }
   if (!advocateColumnNames.includes('description')) {
     db.exec("ALTER TABLE iep_advocates ADD COLUMN description TEXT;");
+  }
+  if (!advocateColumnNames.includes('verification_status')) {
+    db.exec("ALTER TABLE iep_advocates ADD COLUMN verification_status TEXT DEFAULT 'unverified';");
+  }
+  if (!advocateColumnNames.includes('source_url')) {
+    db.exec("ALTER TABLE iep_advocates ADD COLUMN source_url TEXT;");
+  }
+  if (!advocateColumnNames.includes('source_type')) {
+    db.exec("ALTER TABLE iep_advocates ADD COLUMN source_type TEXT;");
+  }
+  if (!advocateColumnNames.includes('last_scraped_at')) {
+    db.exec("ALTER TABLE iep_advocates ADD COLUMN last_scraped_at TEXT;");
+  }
+  if (!advocateColumnNames.includes('last_verified_at')) {
+    db.exec("ALTER TABLE iep_advocates ADD COLUMN last_verified_at TEXT;");
   }
 
   // Create community_suggestions table
@@ -890,10 +959,7 @@ function runMigrations(db: Database.Database) {
   // Seed iep_advocates if empty
   const countAdvocates = db.prepare("SELECT COUNT(*) as count FROM iep_advocates").get() as { count: number };
   if (countAdvocates.count === 0) {
-    const insertAdvocate = db.prepare(`
-      INSERT INTO iep_advocates (id, name, credentials, experience_years, price_rate, counties_served, languages_spoken, phone, email, website)
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-    `);
+    const insertAdvocate = db.prepare("INSERT INTO iep_advocates (id, name, credentials, experience_years, price_rate, counties_served, languages_spoken, phone, email, website, verification_status, source_type) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'verified', 'seed')");
 
     const seedAdvocates = [
       ['adv-sarah', 'Sarah Jenkins, M.S.Ed.', 'Board Certified Advocate (COPAA), Former Special Ed Teacher', 15, '$150 / hour', 'los-angeles,orange', 'English', '(310) 492-0142', 'sarah@calspedadvocacy.com', 'https://calspedadvocacy.com'],
@@ -1043,41 +1109,47 @@ function runMigrations(db: Database.Database) {
     );
   `);
 
-  // Create selpas table
+  // Create regional_education_agencies table and selpas view
   db.exec(`
-    CREATE TABLE IF NOT EXISTS selpas (
+    CREATE TABLE IF NOT EXISTS regional_education_agencies (
       id TEXT PRIMARY KEY,
+      state_id TEXT NOT NULL REFERENCES states(id),
+      agency_type TEXT NOT NULL,
       name TEXT NOT NULL,
       counties_served TEXT NOT NULL,
       website TEXT NOT NULL
     );
+
+    CREATE VIEW IF NOT EXISTS selpas AS
+    SELECT id, name, counties_served, website
+    FROM regional_education_agencies;
   `);
 
-  // Seed selpas if empty
-  const countSelpas = db.prepare("SELECT COUNT(*) as count FROM selpas").get() as { count: number };
-  if (countSelpas.count === 0) {
-    const insertSelpa = db.prepare(`
-      INSERT INTO selpas (id, name, counties_served, website)
-      VALUES (?, ?, ?, ?)
+  // Seed regional_education_agencies if empty
+  const countAgencies = db.prepare("SELECT COUNT(*) as count FROM regional_education_agencies WHERE agency_type = 'selpa'").get() as { count: number };
+  if (countAgencies.count === 0) {
+    const insertAgency = db.prepare(`
+      INSERT INTO regional_education_agencies (id, state_id, agency_type, name, counties_served, website)
+      VALUES (?, ?, ?, ?, ?, ?)
     `);
     
     const seedSelpas = [
-      ['selpa-la', 'Los Angeles Unified SELPA', 'los-angeles', 'https://achieve.lausd.net/Page/1669'],
-      ['selpa-orange', 'Orange County SELPA', 'orange', 'https://ocde.us/SpecialEducation/Pages/SELPA.aspx'],
-      ['selpa-sf', 'San Francisco Unified SELPA', 'san-francisco', 'https://www.sfusd.edu/special-education/selpa'],
-      ['selpa-sd', 'San Diego Unified SELPA', 'san-diego', 'https://sandiegounified.org/selpa'],
-      ['selpa-alameda', 'Alameda County SELPA', 'alameda', 'https://www.acoe.org/selpa'],
-      ['selpa-santa-clara', 'Santa Clara County SELPA', 'santa-clara', 'https://www.sccoe.org/selpa'],
-      ['selpa-sacramento', 'Sacramento County SELPA', 'sacramento', 'https://www.scoe.net/selpa']
+      ['selpa-la', 'california', 'selpa', 'Los Angeles Unified SELPA', 'los-angeles', 'https://achieve.lausd.net/Page/1669'],
+      ['selpa-orange', 'california', 'selpa', 'Orange County SELPA', 'orange', 'https://ocde.us/SpecialEducation/Pages/SELPA.aspx'],
+      ['selpa-sf', 'california', 'selpa', 'San Francisco Unified SELPA', 'san-francisco', 'https://www.sfusd.edu/special-education/selpa'],
+      ['selpa-sd', 'california', 'selpa', 'San Diego Unified SELPA', 'san-diego', 'https://sandiegounified.org/selpa'],
+      ['selpa-alameda', 'california', 'selpa', 'Alameda County SELPA', 'alameda', 'https://www.acoe.org/selpa'],
+      ['selpa-santa-clara', 'california', 'selpa', 'Santa Clara County SELPA', 'santa-clara', 'https://www.sccoe.org/selpa'],
+      ['selpa-sacramento', 'california', 'selpa', 'Sacramento County SELPA', 'sacramento', 'https://www.scoe.net/selpa']
     ];
 
     const seedTx = db.transaction(() => {
       for (const row of seedSelpas) {
-        insertSelpa.run(...row);
+        insertAgency.run(...row);
       }
     });
     seedTx();
-    console.log('⚡ Seeded California SELPAs local plan areas.');
+    console.log('⚡ Seeded California SELPAs local plan areas into regional_education_agencies.');
   }
 
   // Seed/Sync conditions and program rules if count is not 78
@@ -1238,7 +1310,7 @@ function runMigrations(db: Database.Database) {
       regional_center_id TEXT,
       county_id TEXT,
       PRIMARY KEY (regional_center_id, county_id),
-      FOREIGN KEY (regional_center_id) REFERENCES regional_centers(id) ON DELETE CASCADE,
+      FOREIGN KEY (regional_center_id) REFERENCES state_resource_agencies(id) ON DELETE CASCADE,
       FOREIGN KEY (county_id) REFERENCES counties(id) ON DELETE CASCADE
     );
   `);
@@ -1249,7 +1321,7 @@ function runMigrations(db: Database.Database) {
       selpa_id TEXT,
       county_id TEXT,
       PRIMARY KEY (selpa_id, county_id),
-      FOREIGN KEY (selpa_id) REFERENCES selpas(id) ON DELETE CASCADE,
+      FOREIGN KEY (selpa_id) REFERENCES regional_education_agencies(id) ON DELETE CASCADE,
       FOREIGN KEY (county_id) REFERENCES counties(id) ON DELETE CASCADE
     );
   `);
@@ -1957,11 +2029,9 @@ export interface NonprofitOrganization {
   id: string;
   county_id: string;
   name: string;
-  description: string;
-  phone: string;
-  email: string | null;
   website: string;
-  category: string;
+  phone: string;
+  focus_condition: string;
 }
 
 export interface RegionalCenter {
@@ -2080,6 +2150,11 @@ export interface IepAdvocate {
   regional_center_vendorized?: number;
   organization_affiliation?: string | null;
   description?: string | null;
+  verification_status?: string | null;
+  source_url?: string | null;
+  source_type?: string | null;
+  last_scraped_at?: string | null;
+  last_verified_at?: string | null;
 }
 
 export interface Program {
@@ -2092,6 +2167,7 @@ export interface Program {
   income_limit: string;
   diagnosis_required: string; // JSON array string
   county_specific: string;
+  state_id?: string | null;
 }
 
 export interface County {
@@ -2100,6 +2176,7 @@ export interface County {
   website: string;
   ihss_wage_rate?: number;
   medi_cal_plans?: string;
+  state_id?: string;
 }
 
 export interface ChildWaiver {
@@ -2278,8 +2355,49 @@ export async function createUser(id: string, email: string, passwordHash: string
 // 3. Child Profiles & Taxonomy Queries
 // ----------------------------------------------------
 
-export async function getCounties(): Promise<County[]> {
-  return await navigatorDb.prepare('SELECT * FROM counties ORDER BY name ASC').all() as County[];
+export interface State {
+  id: string;
+  name: string;
+  code: string;
+}
+
+export async function getStateByIdOrCode(stateIdOrCode: string): Promise<State | undefined> {
+  try {
+    const clean = stateIdOrCode.toLowerCase();
+    return await navigatorDb.prepare(`
+      SELECT * FROM states WHERE LOWER(id) = ? OR LOWER(code) = ?
+    `).get(clean, clean) as State | undefined;
+  } catch (err) {
+    console.error('Failed to query state:', err);
+    return undefined;
+  }
+}
+
+export async function getAllStates(): Promise<State[]> {
+  try {
+    return await navigatorDb.prepare('SELECT * FROM states ORDER BY name ASC').all() as State[];
+  } catch (err) {
+    console.error('Failed to query states:', err);
+    return [];
+  }
+}
+
+export async function getCounties(stateIdOrCode?: string): Promise<County[]> {
+  try {
+    if (stateIdOrCode) {
+      const clean = stateIdOrCode.toLowerCase();
+      return await navigatorDb.prepare(`
+        SELECT c.* FROM counties c
+        JOIN states s ON c.state_id = s.id
+        WHERE LOWER(s.id) = ? OR LOWER(s.code) = ?
+        ORDER BY c.name ASC
+      `).all(clean, clean) as County[];
+    }
+    return await navigatorDb.prepare('SELECT * FROM counties ORDER BY name ASC').all() as County[];
+  } catch (err) {
+    console.error('Failed to query counties:', err);
+    return [];
+  }
 }
 
 export async function getTaxonomyConditions(): Promise<TaxonomyCondition[]> {

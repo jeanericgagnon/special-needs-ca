@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const dbPath = path.resolve(__dirname, '../../frontend/ca_disability_navigator.db');
+const dbPath = path.resolve(__dirname, '../../ca_disability_navigator.db');
 const db = new Database(dbPath);
 
 const FIRST_NAMES = [
@@ -73,8 +73,8 @@ function getAreaCode(countyId) {
 
 async function run() {
   console.log("⏳ Loading California counties from database...");
-  const counties = db.prepare("SELECT id, name FROM counties").all();
-  console.log(`Found ${counties.length} counties.`);
+  const counties = db.prepare("SELECT id, name FROM counties WHERE state_id = 'california'").all();
+  console.log(`Found ${counties.length} California counties.`);
 
   console.log("⏳ Seeding localized exhaustive advocate directory (10 practitioners per county)...");
 
@@ -83,6 +83,10 @@ async function run() {
       (id, name, credentials, experience_years, price_rate, counties_served, languages_spoken, phone, email, website, specialties, regional_center_vendorized, organization_affiliation, description)
     VALUES 
       ($id, $name, $credentials, $experience_years, $price_rate, $counties_served, $languages_spoken, $phone, $email, $website, $specialties, $regional_center_vendorized, $organization_affiliation, $description)
+  `);
+
+  const insertAdvCountyStmt = db.prepare(`
+    INSERT OR IGNORE INTO iep_advocate_counties (iep_advocate_id, county_id) VALUES (?, ?)
   `);
 
   let count = 0;
@@ -120,9 +124,9 @@ async function run() {
         
         const bio = BIO_TEMPLATES[Math.floor(Math.random() * BIO_TEMPLATES.length)];
         const description = `${bio} Supporting families in the ${county.name} area.`;
-
+  
         const id = `gen-${county.id}-${handle}-${i}`;
-
+  
         insertStmt.run({
           id,
           name,
@@ -139,13 +143,14 @@ async function run() {
           organization_affiliation: affiliation,
           description
         });
+        insertAdvCountyStmt.run(id, county.id);
         count++;
       }
     }
   });
-
+  
   tx();
-  console.log(`🎉 Seeded ${count} additional localized advocates and attorneys!`);
+  console.log(`🎉 Seeded ${count} additional localized advocates, attorneys, and county mappings!`);
 
   // Log final DB count
   const total = db.prepare("SELECT COUNT(*) as count FROM iep_advocates").get().count;
