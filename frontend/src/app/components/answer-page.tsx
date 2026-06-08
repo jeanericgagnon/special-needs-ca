@@ -9,6 +9,7 @@ import {
 import Link from 'next/link';
 import { SEOPageData } from '@/lib/seo-data';
 import { fetchCountyDetailsAction } from '../actions';
+import SourceFreshnessDisclosure from './SourceFreshnessDisclosure';
 
 interface CountyDetailsType {
   id: string;
@@ -314,16 +315,12 @@ export default function AnswerPage({ data, counties }: AnswerPageProps) {
           </div>
 
           {/* Source Footer references */}
-          <div style={{ borderTop: '1px solid rgba(0,0,0,0.06)', paddingTop: '1rem', fontSize: '0.8rem', color: 'var(--text-light)' }}>
-            <span style={{ fontWeight: 600, display: 'block', marginBottom: '0.25rem' }}>Official Citations & Sources:</span>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
-              {data.officialSources.map((src, idx) => (
-                <a key={idx} href={src.url} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>
-                  {src.name}
-                </a>
-              ))}
-            </div>
-          </div>
+          <SourceFreshnessDisclosure sources={data.officialSources.map(src => ({
+            name: src.name,
+            url: src.url,
+            lastReviewedDate: data.lastReviewedDate,
+            verificationStatus: 'official_verified'
+          }))} />
 
         </div>
 

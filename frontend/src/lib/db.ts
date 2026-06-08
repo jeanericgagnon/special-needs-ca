@@ -376,7 +376,13 @@ async function runPgMigrations(pool: Pool) {
       office_locations,
       languages,
       last_verified_date,
-      source_urls
+      source_urls,
+      source_url,
+      source_type,
+      data_origin,
+      verification_status,
+      last_scraped_at,
+      confidence_score
     FROM state_resource_agencies;
 
     CREATE OR REPLACE VIEW selpas AS
@@ -384,7 +390,14 @@ async function runPgMigrations(pool: Pool) {
       id,
       name,
       counties_served,
-      website
+      website,
+      source_url,
+      source_type,
+      data_origin,
+      verification_status,
+      last_verified_date,
+      last_scraped_at,
+      confidence_score
     FROM regional_education_agencies;
 
     CREATE TABLE IF NOT EXISTS school_districts (
@@ -456,6 +469,80 @@ async function runPgMigrations(pool: Pool) {
     ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS source_type TEXT;
     ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS last_scraped_at TEXT;
     ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS last_verified_at TEXT;
+
+    ALTER TABLE county_offices ADD COLUMN IF NOT EXISTS source_url TEXT;
+    ALTER TABLE county_offices ADD COLUMN IF NOT EXISTS source_type TEXT;
+    ALTER TABLE county_offices ADD COLUMN IF NOT EXISTS data_origin TEXT;
+    ALTER TABLE county_offices ADD COLUMN IF NOT EXISTS verification_status TEXT;
+    ALTER TABLE county_offices ADD COLUMN IF NOT EXISTS last_verified_date TEXT;
+    ALTER TABLE county_offices ADD COLUMN IF NOT EXISTS last_scraped_at TEXT;
+    ALTER TABLE county_offices ADD COLUMN IF NOT EXISTS confidence_score REAL;
+
+    ALTER TABLE school_districts ADD COLUMN IF NOT EXISTS source_url TEXT;
+    ALTER TABLE school_districts ADD COLUMN IF NOT EXISTS source_type TEXT;
+    ALTER TABLE school_districts ADD COLUMN IF NOT EXISTS data_origin TEXT;
+    ALTER TABLE school_districts ADD COLUMN IF NOT EXISTS verification_status TEXT;
+    ALTER TABLE school_districts ADD COLUMN IF NOT EXISTS last_verified_date TEXT;
+    ALTER TABLE school_districts ADD COLUMN IF NOT EXISTS last_scraped_at TEXT;
+    ALTER TABLE school_districts ADD COLUMN IF NOT EXISTS confidence_score REAL;
+
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS source_url TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS source_type TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS data_origin TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS verification_status TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS last_verified_date TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS last_scraped_at TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS confidence_score REAL;
+
+    ALTER TABLE regional_education_agencies ADD COLUMN IF NOT EXISTS source_url TEXT;
+    ALTER TABLE regional_education_agencies ADD COLUMN IF NOT EXISTS source_type TEXT;
+    ALTER TABLE regional_education_agencies ADD COLUMN IF NOT EXISTS data_origin TEXT;
+    ALTER TABLE regional_education_agencies ADD COLUMN IF NOT EXISTS verification_status TEXT;
+    ALTER TABLE regional_education_agencies ADD COLUMN IF NOT EXISTS last_verified_date TEXT;
+    ALTER TABLE regional_education_agencies ADD COLUMN IF NOT EXISTS last_scraped_at TEXT;
+    ALTER TABLE regional_education_agencies ADD COLUMN IF NOT EXISTS confidence_score REAL;
+
+    ALTER TABLE state_resource_agencies ADD COLUMN IF NOT EXISTS source_url TEXT;
+    ALTER TABLE state_resource_agencies ADD COLUMN IF NOT EXISTS source_type TEXT;
+    ALTER TABLE state_resource_agencies ADD COLUMN IF NOT EXISTS data_origin TEXT;
+    ALTER TABLE state_resource_agencies ADD COLUMN IF NOT EXISTS verification_status TEXT;
+    ALTER TABLE state_resource_agencies ADD COLUMN IF NOT EXISTS last_scraped_at TEXT;
+    ALTER TABLE state_resource_agencies ADD COLUMN IF NOT EXISTS confidence_score REAL;
+
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS data_origin TEXT;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS last_verified_date TEXT;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS confidence_score REAL;
+
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS source_url TEXT;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS source_type TEXT;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS data_origin TEXT;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS verification_status TEXT;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS last_verified_date TEXT;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS last_scraped_at TEXT;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS confidence_score REAL;
+
+    ALTER TABLE programs ADD COLUMN IF NOT EXISTS source_url TEXT;
+    ALTER TABLE programs ADD COLUMN IF NOT EXISTS source_type TEXT;
+    ALTER TABLE programs ADD COLUMN IF NOT EXISTS data_origin TEXT;
+    ALTER TABLE programs ADD COLUMN IF NOT EXISTS verification_status TEXT;
+    ALTER TABLE programs ADD COLUMN IF NOT EXISTS last_scraped_at TEXT;
+    ALTER TABLE programs ADD COLUMN IF NOT EXISTS confidence_score REAL;
+
+    ALTER TABLE sources ADD COLUMN IF NOT EXISTS source_url TEXT;
+    ALTER TABLE sources ADD COLUMN IF NOT EXISTS source_type TEXT;
+    ALTER TABLE sources ADD COLUMN IF NOT EXISTS data_origin TEXT;
+    ALTER TABLE sources ADD COLUMN IF NOT EXISTS verification_status TEXT;
+    ALTER TABLE sources ADD COLUMN IF NOT EXISTS last_verified_date TEXT;
+    ALTER TABLE sources ADD COLUMN IF NOT EXISTS last_scraped_at TEXT;
+    ALTER TABLE sources ADD COLUMN IF NOT EXISTS confidence_score REAL;
+
+    ALTER TABLE source_verifications ADD COLUMN IF NOT EXISTS source_url TEXT;
+    ALTER TABLE source_verifications ADD COLUMN IF NOT EXISTS source_type TEXT;
+    ALTER TABLE source_verifications ADD COLUMN IF NOT EXISTS data_origin TEXT;
+    ALTER TABLE source_verifications ADD COLUMN IF NOT EXISTS verification_status TEXT;
+    ALTER TABLE source_verifications ADD COLUMN IF NOT EXISTS last_verified_date TEXT;
+    ALTER TABLE source_verifications ADD COLUMN IF NOT EXISTS last_scraped_at TEXT;
+    ALTER TABLE source_verifications ADD COLUMN IF NOT EXISTS confidence_score REAL;
     CREATE TABLE IF NOT EXISTS program_waitlists (
       id TEXT PRIMARY KEY,
       program_id TEXT NOT NULL,
@@ -1121,7 +1208,7 @@ function runMigrations(db: Database.Database) {
     );
 
     CREATE VIEW IF NOT EXISTS selpas AS
-    SELECT id, name, counties_served, website
+    SELECT id, name, counties_served, website, source_url, source_type, data_origin, verification_status, last_verified_date, last_scraped_at, confidence_score
     FROM regional_education_agencies;
   `);
 
@@ -1990,6 +2077,44 @@ function runMigrations(db: Database.Database) {
     );
   `);
 
+  // Dynamic SQLite Trust/Source Column Migrations
+  const targetTables = [
+    'county_offices',
+    'school_districts',
+    'nonprofit_organizations',
+    'regional_education_agencies',
+    'state_resource_agencies',
+    'iep_advocates',
+    'resource_providers',
+    'programs',
+    'sources',
+    'source_verifications'
+  ];
+
+  const trustColsToAdd = [
+    { name: 'source_url', type: 'TEXT' },
+    { name: 'source_type', type: 'TEXT' },
+    { name: 'data_origin', type: 'TEXT' },
+    { name: 'verification_status', type: 'TEXT' },
+    { name: 'last_verified_date', type: 'TEXT' },
+    { name: 'last_scraped_at', type: 'TEXT' },
+    { name: 'confidence_score', type: 'REAL' }
+  ];
+
+  for (const tbl of targetTables) {
+    try {
+      const tblInfo = db.prepare(`PRAGMA table_info(${tbl})`).all() as { name: string }[];
+      const colNames = tblInfo.map(col => col.name);
+      for (const c of trustColsToAdd) {
+        if (!colNames.includes(c.name)) {
+          db.exec(`ALTER TABLE ${tbl} ADD COLUMN ${c.name} ${c.type};`);
+        }
+      }
+    } catch (e) {
+      console.warn(`⚠️ Warning: Failed to run trust migration on SQLite table '${tbl}':`, (e as Error).message);
+    }
+  }
+
   console.log('⚡ SQLite Database migrations completed successfully!');
 }
 
@@ -1999,6 +2124,13 @@ export interface Selpa {
   name: string;
   counties_served: string;
   website: string;
+  source_url?: string | null;
+  source_type?: string | null;
+  data_origin?: string | null;
+  verification_status?: string | null;
+  last_verified_date?: string | null;
+  last_scraped_at?: string | null;
+  confidence_score?: number | null;
 }
 
 export interface CountyOffice {
@@ -2010,6 +2142,13 @@ export interface CountyOffice {
   phone: string;
   email: string | null;
   website: string;
+  source_url?: string | null;
+  source_type?: string | null;
+  data_origin?: string | null;
+  verification_status?: string | null;
+  last_verified_date?: string | null;
+  last_scraped_at?: string | null;
+  confidence_score?: number | null;
 }
 
 export interface SchoolDistrict {
@@ -2023,6 +2162,13 @@ export interface SchoolDistrict {
   special_ed_pct?: number;
   inclusion_rate_pct?: number;
   self_contained_rate_pct?: number;
+  source_url?: string | null;
+  source_type?: string | null;
+  data_origin?: string | null;
+  verification_status?: string | null;
+  last_verified_date?: string | null;
+  last_scraped_at?: string | null;
+  confidence_score?: number | null;
 }
 
 export interface NonprofitOrganization {
@@ -2032,6 +2178,13 @@ export interface NonprofitOrganization {
   website: string;
   phone: string;
   focus_condition: string;
+  source_url?: string | null;
+  source_type?: string | null;
+  data_origin?: string | null;
+  verification_status?: string | null;
+  last_verified_date?: string | null;
+  last_scraped_at?: string | null;
+  confidence_score?: number | null;
 }
 
 export interface RegionalCenter {
@@ -2052,6 +2205,12 @@ export interface RegionalCenter {
   last_verified_date: string;
   source_urls: string;
   service_area_description?: string | null;
+  source_url?: string | null;
+  source_type?: string | null;
+  data_origin?: string | null;
+  verification_status?: string | null;
+  last_scraped_at?: string | null;
+  confidence_score?: number | null;
 }
 
 export interface DirectoryReview {
@@ -2069,7 +2228,6 @@ export interface DirectoryReview {
 }
 
 export interface ResourceProvider {
-
   id: string;
   name: string;
   categories: string;
@@ -2079,6 +2237,13 @@ export interface ResourceProvider {
   address: string;
   accepts_medi_cal: number;
   regional_center_vendor_ids: string | null;
+  source_url?: string | null;
+  source_type?: string | null;
+  data_origin?: string | null;
+  verification_status?: string | null;
+  last_verified_date?: string | null;
+  last_scraped_at?: string | null;
+  confidence_score?: number | null;
 }
 
 export interface ProgramDocumentRequirement {
@@ -2120,6 +2285,12 @@ export interface CoreProgramMatch {
   documentRequirements: ProgramDocumentRequirement[];
   applicationSteps: ProgramApplicationStep[];
   appealInfo: ProgramAppealInfo | null;
+  source_url?: string | null;
+  source_type?: string | null;
+  data_origin?: string | null;
+  verification_status?: string | null;
+  last_scraped_at?: string | null;
+  confidence_score?: number | null;
 }
 
 export interface ProgramWaitlist {
@@ -2155,6 +2326,9 @@ export interface IepAdvocate {
   source_type?: string | null;
   last_scraped_at?: string | null;
   last_verified_at?: string | null;
+  data_origin?: string | null;
+  last_verified_date?: string | null;
+  confidence_score?: number | null;
 }
 
 export interface Program {
@@ -2168,6 +2342,12 @@ export interface Program {
   diagnosis_required: string; // JSON array string
   county_specific: string;
   state_id?: string | null;
+  source_type?: string | null;
+  data_origin?: string | null;
+  verification_status?: string | null;
+  last_verified_date?: string | null;
+  last_scraped_at?: string | null;
+  confidence_score?: number | null;
 }
 
 export interface County {

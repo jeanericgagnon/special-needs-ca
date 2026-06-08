@@ -322,13 +322,53 @@ const seedPrograms = [
     "confidence_score": 5,
     "last_verified_date": "2026-06-01",
     "state_id": "new-york"
+  },
+  {
+    "id": "self-determination-program",
+    "name": "California Self-Determination Program (SDP)",
+    "description": "An alternative way to receive Regional Center services, allowing consumers and families more control over their service budget to hire their own staff and design custom plans.",
+    "who_it_is_for": "California Regional Center consumers of any age who want more flexibility and control over their services.",
+    "who_might_qualify": "Must be an active Regional Center consumer, complete an SDP orientation, and choose a Financial Management Service (FMS).",
+    "official_source_url": "https://www.dds.ca.gov/initiatives/sdp/",
+    "category": "state",
+    "confidence_score": 5,
+    "last_verified_date": "2026-06-01",
+    "state_id": "california"
+  },
+  {
+    "id": "hcba",
+    "name": "California Home & Community-Based Alternatives (HCBA) Waiver",
+    "description": "Provides in-home private duty nursing and care coordination for medically fragile individuals who would otherwise require long-term institutionalized care.",
+    "who_it_is_for": "California residents of any age with high-level nursing needs (ventilators, tracheostomies, complex medical fragile status).",
+    "who_might_qualify": "Meets nursing facility level of care, eligible for full-scope Medi-Cal (parent income can be waived via institutional deeming), and safely careable at home.",
+    "official_source_url": "https://www.dhcs.ca.gov/services/ltc/Pages/Home-and-Community-Based-Alternatives-Waiver.aspx",
+    "category": "state",
+    "confidence_score": 5,
+    "last_verified_date": "2026-06-01",
+    "state_id": "california"
   }
 ];
 
-const insertProgram = db.prepare('INSERT OR REPLACE INTO programs (id, name, description, who_it_is_for, who_might_qualify, official_source_url, category, confidence_score, last_verified_date, state_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
+const insertProgram = db.prepare('INSERT OR REPLACE INTO programs (id, name, description, who_it_is_for, who_might_qualify, official_source_url, category, confidence_score, last_verified_date, state_id, source_url, source_type, data_origin, verification_status, last_scraped_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
 const seedProgramsTx = db.transaction((progs) => {
   for (const p of progs) {
-    insertProgram.run(p.id, p.name, p.description, p.who_it_is_for, p.who_might_qualify, p.official_source_url, p.category, p.confidence_score, p.last_verified_date, p.state_id);
+    insertProgram.run(
+      p.id,
+      p.name,
+      p.description,
+      p.who_it_is_for,
+      p.who_might_qualify,
+      p.official_source_url,
+      p.category,
+      p.confidence_score,
+      p.last_verified_date,
+      p.state_id,
+      p.official_source_url,
+      'official',
+      'seed',
+      'official_verified',
+      new Date().toISOString()
+    );
   }
 });
 seedProgramsTx(seedPrograms);
@@ -3709,6 +3749,62 @@ const seedDocs = [
     "name": "Parent Assessment Request Letter",
     "description": "A dated, signed written request submitted to the school principal requesting psycho-educational assessments.",
     "is_mandatory": 1
+  },
+  {
+    "id": "doc-req-5",
+    "program_id": "early-start",
+    "name": "Early Start Referral Form",
+    "description": "A standard referral webform or phone intake sheet detailing child's birth and developmental concerns.",
+    "is_mandatory": 1
+  },
+  {
+    "id": "doc-req-6",
+    "program_id": "medi-cal-for-kids-and-teens",
+    "name": "Proof of Income (Medi-Cal)",
+    "description": "Paystubs, tax statements, or institutional deeming letters showing financial context.",
+    "is_mandatory": 1
+  },
+  {
+    "id": "doc-req-7",
+    "program_id": "california-childrens-services",
+    "name": "CCS Medical Report",
+    "description": "Detailed clinical reports from a specialist indicating a qualifying medical diagnosis.",
+    "is_mandatory": 1
+  },
+  {
+    "id": "doc-req-8",
+    "program_id": "hearing-aid-coverage",
+    "name": "Audiological Evaluation",
+    "description": "Comprehensive audiogram and diagnostic report performed within the last 12 months.",
+    "is_mandatory": 1
+  },
+  {
+    "id": "doc-req-9",
+    "program_id": "ssi-for-children",
+    "name": "SSA Child Disability Report (SSA-3820)",
+    "description": "Form documenting child's medical, developmental, and school progress history.",
+    "is_mandatory": 1
+  },
+  {
+    "id": "doc-req-10",
+    "program_id": "calable",
+    "name": "Self-Certification of Disability (CalABLE)",
+    "description": "Document confirming childhood disability onset prior to age 26.",
+    "is_mandatory": 1
+  },
+  {
+    "id": "doc-req-11",
+    "program_id": "hcba",
+    "name": "HCBA Waiver Intake Application",
+    "description": "Intake paperwork requesting home care agency nursing coordination assessments.",
+    "is_mandatory": 1
+  },
+  {
+    "id": "doc-req-12",
+    "program_id": "self-determination-program",
+    "name": "Individual Program Plan (IPP) SDP Amendment",
+    "description": "Regional Center IPP agreement confirming transitions into self-determination.",
+    "is_mandatory": 1
   }
 ];
 
@@ -3746,6 +3842,78 @@ const seedSteps = [
     "title": "Submit Referral Webform",
     "action_description": "Complete online intake referral form with birth records and clinical reports attached.",
     "apply_url_or_contact": "Regional Center Portal"
+  },
+  {
+    "id": "step-es-1",
+    "program_id": "early-start",
+    "step_number": 1,
+    "title": "Submit Early Start Referral",
+    "action_description": "Contact local Regional Center early intervention department by phone or online form.",
+    "apply_url_or_contact": "Regional Center Intake Portal"
+  },
+  {
+    "id": "step-mc-1",
+    "program_id": "medi-cal-for-kids-and-teens",
+    "step_number": 1,
+    "title": "Submit BenefitsCal Application",
+    "action_description": "File single streamline application for Medi-Cal online.",
+    "apply_url_or_contact": "https://www.benefitscal.com"
+  },
+  {
+    "id": "step-ccs-1",
+    "program_id": "california-childrens-services",
+    "step_number": 1,
+    "title": "Submit CCS Application",
+    "action_description": "Mail or upload the completed application form to the county health department's CCS office.",
+    "apply_url_or_contact": "Local County CCS Office"
+  },
+  {
+    "id": "step-haccp-1",
+    "program_id": "hearing-aid-coverage",
+    "step_number": 1,
+    "title": "Submit HACCP Webform",
+    "action_description": "Download and file the HACCP application package with the Department of Health Care Services.",
+    "apply_url_or_contact": "https://www.dhcs.ca.gov/services/Pages/HACCP.aspx"
+  },
+  {
+    "id": "step-ssi-1",
+    "program_id": "ssi-for-children",
+    "step_number": 1,
+    "title": "Complete Child Disability Report",
+    "action_description": "Submit report describing medical conditions, treatments, and education background.",
+    "apply_url_or_contact": "https://www.ssa.gov/benefits/disability/apply-child.html"
+  },
+  {
+    "id": "step-able-1",
+    "program_id": "calable",
+    "step_number": 1,
+    "title": "Open Account Online",
+    "action_description": "Complete CalABLE enrollment wizard and verify childhood disability onset details.",
+    "apply_url_or_contact": "https://calable.ca.gov"
+  },
+  {
+    "id": "step-iep-1",
+    "program_id": "iep-special-education",
+    "step_number": 1,
+    "title": "Request Educational Assessment",
+    "action_description": "Send written request to the school principal asking for special education evaluations.",
+    "apply_url_or_contact": "School Principal"
+  },
+  {
+    "id": "step-hcba-1",
+    "program_id": "hcba",
+    "step_number": 1,
+    "title": "Contact HCBA Waiver Agency",
+    "action_description": "Contact local waiver agency to start intake assessment request.",
+    "apply_url_or_contact": "Local Waiver Agency"
+  },
+  {
+    "id": "step-sdp-1",
+    "program_id": "self-determination-program",
+    "step_number": 1,
+    "title": "Attend SDP Orientation",
+    "action_description": "Complete mandatory state orientation course offered by Regional Center or family empowerment centers.",
+    "apply_url_or_contact": "Regional Center Coordinator"
   }
 ];
 
@@ -3767,6 +3935,78 @@ const seedAppeals = [
     "denial_reasons": "Claims parent provider care covers all safety risks; claims child does not show active wandering behavior.",
     "appeal_form_name": "Notice of Action back side appeal request (NA 690)",
     "official_appeal_source_url": "https://www.cdss.ca.gov/hearing-requests"
+  },
+  {
+    "program_id": "regional-centers",
+    "deadline_days": "30 days",
+    "appeal_steps": "1. Submit DDS Fair Hearing request form to the Regional Center.\n2. Attend voluntary mediation with a Regional Center representative.\n3. Present medical/developmental evidence at formal OAH hearing.",
+    "denial_reasons": "Does not meet qualifying developmental diagnosis criteria (Autism, Cerebral Palsy, Epilepsy, Down Syndrome, or Fifth Category).",
+    "appeal_form_name": "DDS Fair Hearing Request Form (DS 1805)",
+    "official_appeal_source_url": "https://www.dds.ca.gov/general/appeals/"
+  },
+  {
+    "program_id": "early-start",
+    "deadline_days": "30 days",
+    "appeal_steps": "1. Request State Mediation or Early Start Due Process Hearing.\n2. Participate in informal case resolution.\n3. Provide clinical reports demonstrating developmental delay.",
+    "denial_reasons": "Developmental delay is evaluated as less than 25% across motor/cognitive/speech scales.",
+    "appeal_form_name": "Early Start Due Process Hearing / Mediation Request Form",
+    "official_appeal_source_url": "https://www.dds.ca.gov/general/appeals/early-start-complaints/"
+  },
+  {
+    "program_id": "medi-cal-for-kids-and-teens",
+    "deadline_days": "90 days",
+    "appeal_steps": "1. File State Fair Hearing request online or via phone.\n2. Work with county eligibility caseworker or submit doctor's letters.\n3. Present case at fair hearing.",
+    "denial_reasons": "Household income exceeds eligibility limits; services deemed not medically necessary.",
+    "appeal_form_name": "State Hearing Request Form",
+    "official_appeal_source_url": "https://www.cdss.ca.gov/hearing-requests"
+  },
+  {
+    "program_id": "california-childrens-services",
+    "deadline_days": "30 days",
+    "appeal_steps": "1. File written appeal with the county CCS office.\n2. Request state-level administrative review from DHCS.\n3. Submit detailed pediatric diagnostic evaluations.",
+    "denial_reasons": "Condition is not on the list of CCS-eligible complex physical diagnoses.",
+    "appeal_form_name": "CCS Appeal Request Letter",
+    "official_appeal_source_url": "https://www.dhcs.ca.gov/services/ccs/"
+  },
+  {
+    "program_id": "hearing-aid-coverage",
+    "deadline_days": "60 days",
+    "appeal_steps": "1. Send appeal letter directly to DHCS HACCP program.\n2. Submit official health insurance declarations showing device exclusions.\n3. Participate in administrative review.",
+    "denial_reasons": "Primary health plan covers pediatric hearing devices; household income exceeds 600% FPL.",
+    "appeal_form_name": "HACCP Appeal Request Letter",
+    "official_appeal_source_url": "https://www.dhcs.ca.gov/services/Pages/HACCP.aspx"
+  },
+  {
+    "program_id": "ssi-for-children",
+    "deadline_days": "60 days",
+    "appeal_steps": "1. File Request for Reconsideration online.\n2. Submit new clinical records or school evaluations.\n3. Request administrative hearing before an ALJ if reconsideration fails.\n4. Present case and educator testimony to Special Ed ALJ.",
+    "denial_reasons": "Impairments do not meet SSI childhood listings; parental resources exceed asset ceilings.",
+    "appeal_form_name": "Request for Reconsideration (SSA-561-U2)",
+    "official_appeal_source_url": "https://www.ssa.gov/benefits/disability/appeal.html"
+  },
+  {
+    "program_id": "iep-special-education",
+    "deadline_days": "2 years",
+    "appeal_steps": "1. Submit Due Process complaint to Office of Administrative Hearings (OAH).\n2. Participate in voluntary special education mediation.\n3. Present case and educator testimony to Special Ed ALJ.",
+    "denial_reasons": "School evaluation determines student does not meet special ed eligibility criteria or need specialized services.",
+    "appeal_form_name": "OAH Special Education Due Process Hearing Request Form",
+    "official_appeal_source_url": "https://www.dgs.ca.gov/OAH/Case-Types/Special-Education"
+  },
+  {
+    "program_id": "hcba",
+    "deadline_days": "90 days",
+    "appeal_steps": "1. Request State Fair Hearing through CDSS.\n2. Submit clinical nurse records indicating medically fragile nursing need.\n3. Present case at fair hearing.",
+    "denial_reasons": "Medical records do not verify nursing facility level of care requirement.",
+    "appeal_form_name": "State Hearing Request Form",
+    "official_appeal_source_url": "https://www.dhcs.ca.gov/services/ltc/Pages/Home-and-Community-Based-Alternatives-Waiver.aspx"
+  },
+  {
+    "program_id": "self-determination-program",
+    "deadline_days": "30 days",
+    "appeal_steps": "1. File DDS Fair Hearing request regarding budget or transition disputes.\n2. Participate in informal local RC meetings.\n3. Present case to OAH ALJ.",
+    "denial_reasons": "Proposed spending plan categories violate DDS state guidelines.",
+    "appeal_form_name": "DDS Fair Hearing Request Form (DS 1805)",
+    "official_appeal_source_url": "https://www.dds.ca.gov/general/appeals/"
   }
 ];
 
@@ -4783,10 +5023,35 @@ const seedAgencies = [
   }
 ];
 
-const insertAgency = db.prepare('INSERT OR REPLACE INTO state_resource_agencies (id, state_id, agency_type, name, website, counties_served, catchment_boundaries, intake_phone, early_intervention_contact, agency_intake_contact, eligibility_info_page, services_page, appeals_info, frc_relationship, office_locations, languages, last_verified_date, source_urls) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
+const insertAgency = db.prepare('INSERT OR REPLACE INTO state_resource_agencies (id, state_id, agency_type, name, website, counties_served, catchment_boundaries, intake_phone, early_intervention_contact, agency_intake_contact, eligibility_info_page, services_page, appeals_info, frc_relationship, office_locations, languages, last_verified_date, source_urls, source_url, source_type, data_origin, verification_status, last_scraped_at, confidence_score) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
 const seedAgenciesTx = db.transaction((agenciesList) => {
   for (const ag of agenciesList) {
-    insertAgency.run(ag.id, ag.state_id, ag.agency_type, ag.name, ag.website, ag.counties_served, ag.catchment_boundaries, ag.intake_phone, ag.early_intervention_contact, ag.agency_intake_contact, ag.eligibility_info_page, ag.services_page, ag.appeals_info, ag.frc_relationship, ag.office_locations, ag.languages, ag.last_verified_date, ag.source_urls);
+    insertAgency.run(
+      ag.id,
+      ag.state_id,
+      ag.agency_type,
+      ag.name,
+      ag.website,
+      ag.counties_served,
+      ag.catchment_boundaries,
+      ag.intake_phone,
+      ag.early_intervention_contact,
+      ag.agency_intake_contact,
+      ag.eligibility_info_page,
+      ag.services_page,
+      ag.appeals_info,
+      ag.frc_relationship,
+      ag.office_locations,
+      ag.languages,
+      ag.last_verified_date,
+      ag.source_urls,
+      ag.website,
+      'official',
+      'state_seed',
+      'official_verified',
+      new Date().toISOString(),
+      5.0
+    );
   }
 });
 seedAgenciesTx(seedAgencies);

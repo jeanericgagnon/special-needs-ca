@@ -7,6 +7,8 @@ import {
 } from 'lucide-react';
 import CopyButton from '@/components/copy-button';
 import ContributionModal from '@/components/contribution-modal';
+import { TrustBadge } from '@/app/counties/components/CorrectionFlow';
+import SourceFreshnessDisclosure from '@/app/components/SourceFreshnessDisclosure';
 
 interface Advocate {
   id: string;
@@ -23,6 +25,8 @@ interface Advocate {
   regional_center_vendorized?: number;
   organization_affiliation?: string | null;
   description?: string | null;
+  verification_status?: string | null;
+  last_verified_date?: string | null;
 }
 
 interface AdvocateDirectoryClientProps {
@@ -379,6 +383,30 @@ Best regards,
         </div>
       </div>
 
+      {/* Disclaimer Banner */}
+      <div 
+        className="glass-panel" 
+        style={{ 
+          padding: '1rem 1.5rem', 
+          borderRadius: '16px', 
+          background: 'rgba(239, 68, 68, 0.04)', 
+          border: '1px solid rgba(239, 68, 68, 0.2)', 
+          marginBottom: '1.5rem',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '0.75rem',
+          fontSize: '0.88rem',
+          color: '#b91c1c'
+        }}
+      >
+        <span style={{ fontSize: '1.25rem', lineHeight: 1 }}>⚠️</span>
+        <div>
+          <strong>Important Directory Disclaimer:</strong> The listings in this directory are community-sourced or public listings. 
+          <strong> Inclusion does not constitute an endorsement, recommendation, or verification</strong> of credentials by the Special Needs Navigator team. 
+          Please independently verify credentials, references, and billing policies locally before hiring any professional advisor.
+        </div>
+      </div>
+
       {/* Grid of Results */}
       {sortedAdvocates.length === 0 ? (
         <div className="glass-panel" style={{ textAlign: 'center', padding: '4rem 2rem', borderRadius: '20px', background: 'rgba(255,255,255,0.6)' }}>
@@ -532,6 +560,15 @@ Best regards,
                     </span>
                   ))}
                 </div>
+
+                <TrustBadge
+                  status={adv.verification_status}
+                  lastVerifiedDate={adv.last_verified_date}
+                  sourceUrl={adv.website}
+                  entityId={adv.id}
+                  entityName={adv.name}
+                  entityType="advocate"
+                />
 
                 {/* Collapsible Glassmorphic Description/Bio Section */}
                 {adv.description && (
@@ -775,6 +812,11 @@ Best regards,
           })}
         </div>
       )}
+
+      <SourceFreshnessDisclosure sources={[
+        { name: 'California COPAA Advocate Listings', url: 'https://www.copaa.org', lastReviewedDate: '2026-06-01', verificationStatus: 'unverified' },
+        { name: 'California Office of Administrative Hearings Directory', url: 'https://www.dgs.ca.gov/OAH', lastReviewedDate: '2026-06-01', verificationStatus: 'unverified' }
+      ]} />
     </div>
   );
 }

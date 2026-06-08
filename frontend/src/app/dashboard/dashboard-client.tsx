@@ -60,6 +60,7 @@ import DocumentOcrPanel from './components/DocumentOcrPanel';
 import InboxPanel from './components/InboxPanel';
 import ShareSettingsWidget from './components/ShareSettingsWidget';
 import { sanitizeText } from '@/lib/storage-helper';
+import { TrustBadge } from '@/app/counties/components/CorrectionFlow';
 
 interface DashboardClientProps {
   counties: County[];
@@ -1489,6 +1490,14 @@ Sincerely,
                               <a href={rc.website} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem', color: 'var(--primary-color)', fontWeight: 600, textDecoration: 'none', marginTop: '0.25rem' }}>
                                 <Globe size={14} /> Visit Agency Portal
                               </a>
+                              <TrustBadge
+                                status={rc.verification_status}
+                                lastVerifiedDate={rc.last_verified_date}
+                                sourceUrl={rc.source_url || rc.website}
+                                entityId={rc.id}
+                                entityName={rc.name}
+                                entityType="regional_center"
+                              />
                               <DirectoryReviews
                                 entityType="regional_center"
                                 entityId={rc.id}
@@ -1535,6 +1544,19 @@ Sincerely,
                                     <CopyButton text={office.email} size={12} />
                                   </span>
                                 )}
+                                {office.website && (
+                                  <a href={office.website} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem', color: 'var(--primary-color)', fontWeight: 600, textDecoration: 'none', marginTop: '0.25rem' }}>
+                                    <Globe size={14} /> Visit Office Webpage
+                                  </a>
+                                )}
+                                <TrustBadge
+                                  status={office.verification_status}
+                                  lastVerifiedDate={office.last_verified_date}
+                                  sourceUrl={office.source_url || office.website}
+                                  entityId={office.id}
+                                  entityName={office.office_name}
+                                  entityType="county_office"
+                                />
                               </div>
                             ))}
                           </div>
@@ -1578,6 +1600,14 @@ Sincerely,
                                     <Globe size={14} /> District IEP Guidelines
                                   </a>
                                 )}
+                                <TrustBadge
+                                  status={sd.verification_status}
+                                  lastVerifiedDate={sd.last_verified_date}
+                                  sourceUrl={sd.source_url || sd.website}
+                                  entityId={sd.id}
+                                  entityName={sd.name}
+                                  entityType="school_district"
+                                />
                                 <DirectoryReviews
                                   entityType="school_district"
                                   entityId={sd.id}
@@ -1622,6 +1652,14 @@ Sincerely,
                                     <Globe size={14} /> Visit Support Site
                                   </a>
                                 )}
+                                <TrustBadge
+                                  status={org.verification_status}
+                                  lastVerifiedDate={org.last_verified_date}
+                                  sourceUrl={org.source_url || org.website}
+                                  entityId={org.id}
+                                  entityName={org.name}
+                                  entityType="nonprofit"
+                                />
                                 <DirectoryReviews
                                   entityType="nonprofit"
                                   entityId={org.id}

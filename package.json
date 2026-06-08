@@ -10,8 +10,8 @@
     "crawl:advocates": "node src/scrapers/advocate_scraper.js",
     "crawl:fecs": "node src/scrapers/fec_scraper.js",
     "crawl:wrightslaw": "node src/scrapers/wrightslaw_scraper.js",
-
-
+    "audit:ca-coverage": "node src/db/audit_ca_coverage.js",
+    "test:quality-gates": "node src/scratch/verify_requirements.js",
     "preview": "vite preview"
   },
   "dependencies": {

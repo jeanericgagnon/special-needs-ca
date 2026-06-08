@@ -82,7 +82,7 @@ console.log('');
 console.log(`${BOLD}Test 2: Seeding Capacity Audit${RESET}`);
 
 const programCount = db.prepare('SELECT COUNT(*) as cnt FROM programs').get().cnt;
-assert(programCount === 156, `Statewide Programs successfully seeded (expected 156, found: ${programCount}).`);
+assert(programCount === 158, `Statewide Programs successfully seeded (expected 158, found: ${programCount}).`);
 
 const conditionCount = db.prepare('SELECT COUNT(*) as cnt FROM conditions').get().cnt;
 assert(conditionCount === 78, `Condition Taxonomy successfully seeded (expected 78, found: ${conditionCount}).`);

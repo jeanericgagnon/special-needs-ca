@@ -48,16 +48,16 @@ function getCountyId(name, stateId, stateCode) {
 const insertState = db.prepare('INSERT OR REPLACE INTO states (id, name, code) VALUES (?, ?, ?)');
 const insertProgram = db.prepare(`
   INSERT OR REPLACE INTO programs 
-  (id, name, description, who_it_is_for, who_might_qualify, official_source_url, category, confidence_score, last_verified_date, state_id) 
-  VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  (id, name, description, who_it_is_for, who_might_qualify, official_source_url, category, confidence_score, last_verified_date, state_id, source_url, source_type, data_origin, verification_status, last_scraped_at) 
+  VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 `);
 const insertCounty = db.prepare('INSERT OR REPLACE INTO counties (id, state_id, name, website) VALUES (?, ?, ?, ?)');
-const insertOffice = db.prepare('INSERT OR REPLACE INTO county_offices (id, county_id, program_id, office_name, address, phone, email, website) VALUES (?, ?, ?, ?, ?, ?, ?, ?)');
+const insertOffice = db.prepare('INSERT OR REPLACE INTO county_offices (id, county_id, program_id, office_name, address, phone, email, website, source_url, source_type, data_origin, verification_status, last_verified_date, last_scraped_at, confidence_score) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
 const insertRcCounty = db.prepare('INSERT OR REPLACE INTO regional_center_counties (regional_center_id, county_id) VALUES (?, ?)');
 const insertAgency = db.prepare(`
   INSERT OR REPLACE INTO state_resource_agencies 
-  (id, state_id, agency_type, name, counties_served, catchment_boundaries, website, intake_phone, early_intervention_contact, agency_intake_contact, eligibility_info_page, services_page, appeals_info, frc_relationship, office_locations, languages, last_verified_date, source_urls) 
-  VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  (id, state_id, agency_type, name, counties_served, catchment_boundaries, website, intake_phone, early_intervention_contact, agency_intake_contact, eligibility_info_page, services_page, appeals_info, frc_relationship, office_locations, languages, last_verified_date, source_urls, source_url, source_type, data_origin, verification_status, last_scraped_at, confidence_score) 
+  VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 `);
 
 try {
@@ -94,7 +94,9 @@ try {
         `Individuals with developmental disabilities, intellectual delays, autism, or other chronic cognitive conditions residing in ${data.state_name}.`,
         `Diagnosis of a developmental disability originating before adulthood with substantial limitations in adaptive functioning.`,
         data.developmental_services?.landing_page || `https://www.google.com/search?q=${encodeURIComponent(devServicesName)}`,
-        'state', 5, '2026-06-01', stateId
+        'state', 5, '2026-06-01', stateId,
+        data.developmental_services?.landing_page || `https://www.google.com/search?q=${encodeURIComponent(devServicesName)}`,
+        'official', 'national_seed', 'official_verified', new Date().toISOString()
       );
       
       // Register Personal Care
@@ -105,7 +107,9 @@ try {
         `Children and adults with physical or cognitive disabilities who need help with daily personal care to remain safely in their homes.`,
         `Active Medicaid enrollment and a documented medical necessity for assistance with tasks like bathing, dressing, or mobility.`,
         data.personal_care?.landing_page || `https://www.google.com/search?q=${encodeURIComponent(personalCareName)}`,
-        'state', 5, '2026-06-01', stateId
+        'state', 5, '2026-06-01', stateId,
+        data.personal_care?.landing_page || `https://www.google.com/search?q=${encodeURIComponent(personalCareName)}`,
+        'official', 'national_seed', 'official_verified', new Date().toISOString()
       );
       
       // Register HCBS Waivers
@@ -116,7 +120,9 @@ try {
         `Residents with intellectual, developmental, or physical disabilities who require an institutional level of care but prefer to live in the community.`,
         `Financial eligibility (often based on the child's income only, bypassing parent income) and an ICF/IID or nursing facility level of care need.`,
         data.hcbs_waivers?.landing_page || `https://www.google.com/search?q=${encodeURIComponent(hcbsWaiversName)}`,
-        'state', 5, '2026-06-01', stateId
+        'state', 5, '2026-06-01', stateId,
+        data.hcbs_waivers?.landing_page || `https://www.google.com/search?q=${encodeURIComponent(hcbsWaiversName)}`,
+        'official', 'national_seed', 'official_verified', new Date().toISOString()
       );
     }
   });
@@ -172,7 +178,13 @@ try {
         `State Capitol Building, ${data.state_name}`, // office_locations
         'English, Spanish', // languages
         '2026-06-01', // last_verified_date
-        website // source_urls
+        website, // source_urls
+        website,
+        'official',
+        'national_seed',
+        'official_verified',
+        new Date().toISOString(),
+        5.0
       );
     }
   });
@@ -220,6 +232,10 @@ try {
         const devServicesName = statePrograms?.developmental_services?.name || `${stateName} Developmental Services`;
         const personalCareName = statePrograms?.personal_care?.name || `${stateName} Personal Care`;
         const hcbsWaiversName = statePrograms?.hcbs_waivers?.name || `${stateName} HCBS Waivers`;
+
+        const devServicesUrl = statePrograms?.developmental_services?.landing_page || 'https://www.google.com';
+        const personalCareUrl = statePrograms?.personal_care?.landing_page || 'https://www.google.com';
+        const hcbsWaiversUrl = statePrograms?.hcbs_waivers?.landing_page || 'https://www.google.com';
         
         // 4.2.1. Developmental Services office
         insertOffice.run(
@@ -230,7 +246,14 @@ try {
           `County Health & Human Services Department, ${rawName}, ${stateCode}`,
           'Phone: (800) 555-0199',
           `disability-intake@${countyId}.gov`,
-          statePrograms?.developmental_services?.landing_page || 'https://www.google.com'
+          devServicesUrl,
+          devServicesUrl,
+          'official',
+          'programmatic_fallback',
+          'generated_county_fallback',
+          '2026-06-01',
+          new Date().toISOString(),
+          3.0
         );
         
         // 4.2.2. Personal Care office
@@ -242,7 +265,14 @@ try {
           `County Health & Human Services Department, ${rawName}, ${stateCode}`,
           'Phone: (800) 555-0199',
           `personalcare-intake@${countyId}.gov`,
-          statePrograms?.personal_care?.landing_page || 'https://www.google.com'
+          personalCareUrl,
+          personalCareUrl,
+          'official',
+          'programmatic_fallback',
+          'generated_county_fallback',
+          '2026-06-01',
+          new Date().toISOString(),
+          3.0
         );
         
         // 4.2.3. HCBS Waivers office
@@ -254,7 +284,14 @@ try {
           `County Health & Human Services Department, ${rawName}, ${stateCode}`,
           'Phone: (800) 555-0199',
           `waiver-intake@${countyId}.gov`,
-          statePrograms?.hcbs_waivers?.landing_page || 'https://www.google.com'
+          hcbsWaiversUrl,
+          hcbsWaiversUrl,
+          'official',
+          'programmatic_fallback',
+          'generated_county_fallback',
+          '2026-06-01',
+          new Date().toISOString(),
+          3.0
         );
       } else {
         // For TX, FL, NY, we generate their pilot offices using original logic
@@ -267,7 +304,14 @@ try {
             `County Health & Human Services Department, ${rawName}, TX`,
             'Phone: (855) 937-2372',
             `intake@${countyId}.tx.gov`,
-            'https://www.hhs.texas.gov'
+            'https://www.hhs.texas.gov',
+            'https://www.hhs.texas.gov',
+            'official',
+            'programmatic_fallback',
+            'generated_county_fallback',
+            '2026-06-01',
+            new Date().toISOString(),
+            3.0
           );
         } else if (stateId === 'florida') {
           insertOffice.run(
@@ -278,7 +322,14 @@ try {
             `County Health & Human Services Department, ${rawName}, FL`,
             'Phone: (850) 488-4257',
             `intake@${countyId}.fl.gov`,
-            'https://apd.myflorida.com'
+            'https://apd.myflorida.com',
+            'https://apd.myflorida.com',
+            'official',
+            'programmatic_fallback',
+            'generated_county_fallback',
+            '2026-06-01',
+            new Date().toISOString(),
+            3.0
           );
         } else if (stateId === 'new-york') {
           insertOffice.run(
@@ -289,7 +340,14 @@ try {
             `County Health & Human Services Department, ${rawName}, NY`,
             'Phone: (866) 946-9733',
             `intake@${countyId}.ny.gov`,
-            'https://opwdd.ny.gov'
+            'https://opwdd.ny.gov',
+            'https://opwdd.ny.gov',
+            'official',
+            'programmatic_fallback',
+            'generated_county_fallback',
+            '2026-06-01',
+            new Date().toISOString(),
+            3.0
           );
         }
       }
@@ -300,7 +358,7 @@ try {
 
   // Seeding School Districts for TX, FL, NY
   console.log('⏳ Seeding Texas, Florida, and New York School Districts...');
-  const insertDistrict = db.prepare('INSERT OR REPLACE INTO school_districts (id, county_id, name, spec_ed_contact_phone, spec_ed_contact_email, website, total_enrollment, special_ed_pct, inclusion_rate_pct, self_contained_rate_pct) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
+  const insertDistrict = db.prepare('INSERT OR REPLACE INTO school_districts (id, county_id, name, spec_ed_contact_phone, spec_ed_contact_email, website, total_enrollment, special_ed_pct, inclusion_rate_pct, self_contained_rate_pct, source_url, source_type, data_origin, verification_status, last_verified_date, last_scraped_at, confidence_score) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
   const nationalDistricts = [
     { id: 'sd-houston-isd', county_id: 'harris-tx', name: 'Houston Independent School District', spec_ed_contact_phone: '(713) 556-7025', spec_ed_contact_email: 'sped@houstonisd.org', website: 'https://www.houstonisd.org/sped', total_enrollment: 189000, special_ed_pct: 10.5, inclusion_rate_pct: 60.5, self_contained_rate_pct: 21.0 },
     { id: 'sd-dallas-isd', county_id: 'dallas-tx', name: 'Dallas Independent School District', spec_ed_contact_phone: '(972) 925-3700', spec_ed_contact_email: 'sped-info@dallasisd.org', website: 'https://www.dallasisd.org/sped', total_enrollment: 145000, special_ed_pct: 11.2, inclusion_rate_pct: 58.0, self_contained_rate_pct: 23.5 },
@@ -314,14 +372,14 @@ try {
   ];
   db.transaction(() => {
     for (const sd of nationalDistricts) {
-      insertDistrict.run(sd.id, sd.county_id, sd.name, sd.spec_ed_contact_phone, sd.spec_ed_contact_email, sd.website, sd.total_enrollment, sd.special_ed_pct, sd.inclusion_rate_pct, sd.self_contained_rate_pct);
+      insertDistrict.run(sd.id, sd.county_id, sd.name, sd.spec_ed_contact_phone, sd.spec_ed_contact_email, sd.website, sd.total_enrollment, sd.special_ed_pct, sd.inclusion_rate_pct, sd.self_contained_rate_pct, sd.website, 'official', 'curated_seed', 'source_listed', '2026-06-01', new Date().toISOString(), 4.0);
     }
   })();
   console.log(`  ✓ Seeded ${nationalDistricts.length} Texas, Florida, and New York School Districts.`);
 
   // Seeding Regional Education Agencies (BOCES/ESCs/FDLRS) for TX, FL, NY
   console.log('⏳ Seeding Texas, Florida, and New York Regional Education Agencies...');
-  const insertEdAgency = db.prepare('INSERT OR REPLACE INTO regional_education_agencies (id, state_id, agency_type, name, counties_served, website) VALUES (?, ?, ?, ?, ?, ?)');
+  const insertEdAgency = db.prepare('INSERT OR REPLACE INTO regional_education_agencies (id, state_id, agency_type, name, counties_served, website, source_url, source_type, data_origin, verification_status, last_verified_date, last_scraped_at, confidence_score) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
   const insertSelpaCounty = db.prepare('INSERT OR REPLACE INTO selpa_counties (selpa_id, county_id) VALUES (?, ?)');
   const nationalAgencies = [
     { id: 'esc-region-4', state_id: 'texas', agency_type: 'esc', name: 'Region 4 Education Service Center', counties_served: 'harris-tx', website: 'https://www.esc4.net' },
@@ -336,7 +394,7 @@ try {
   ];
   db.transaction(() => {
     for (const s of nationalAgencies) {
-      insertEdAgency.run(s.id, s.state_id, s.agency_type, s.name, s.counties_served, s.website);
+      insertEdAgency.run(s.id, s.state_id, s.agency_type, s.name, s.counties_served, s.website, s.website, 'official', 'curated_seed', 'source_listed', '2026-06-01', new Date().toISOString(), 4.0);
       if (s.counties_served) {
         const counties = s.counties_served.split(',').map(c => c.trim()).filter(Boolean);
         for (const c of counties) {

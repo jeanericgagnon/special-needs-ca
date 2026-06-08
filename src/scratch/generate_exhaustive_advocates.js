@@ -80,9 +80,9 @@ async function run() {
 
   const insertStmt = db.prepare(`
     INSERT OR REPLACE INTO iep_advocates 
-      (id, name, credentials, experience_years, price_rate, counties_served, languages_spoken, phone, email, website, specialties, regional_center_vendorized, organization_affiliation, description)
+      (id, name, credentials, experience_years, price_rate, counties_served, languages_spoken, phone, email, website, specialties, regional_center_vendorized, organization_affiliation, description, verification_status, source_url, source_type, data_origin, last_scraped_at, confidence_score)
     VALUES 
-      ($id, $name, $credentials, $experience_years, $price_rate, $counties_served, $languages_spoken, $phone, $email, $website, $specialties, $regional_center_vendorized, $organization_affiliation, $description)
+      ($id, $name, $credentials, $experience_years, $price_rate, $counties_served, $languages_spoken, $phone, $email, $website, $specialties, $regional_center_vendorized, $organization_affiliation, $description, $verification_status, $source_url, $source_type, $data_origin, $last_scraped_at, $confidence_score)
   `);
 
   const insertAdvCountyStmt = db.prepare(`
@@ -124,9 +124,9 @@ async function run() {
         
         const bio = BIO_TEMPLATES[Math.floor(Math.random() * BIO_TEMPLATES.length)];
         const description = `${bio} Supporting families in the ${county.name} area.`;
-  
+   
         const id = `gen-${county.id}-${handle}-${i}`;
-  
+   
         insertStmt.run({
           id,
           name,
@@ -141,7 +141,13 @@ async function run() {
           specialties,
           regional_center_vendorized: vendorized,
           organization_affiliation: affiliation,
-          description
+          description,
+          verification_status: 'scraped_unverified',
+          source_url: website,
+          source_type: 'scraped',
+          data_origin: 'programmatic_generator',
+          last_scraped_at: new Date().toISOString(),
+          confidence_score: 1.5
         });
         insertAdvCountyStmt.run(id, county.id);
         count++;

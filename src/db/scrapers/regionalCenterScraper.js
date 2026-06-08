@@ -395,8 +395,8 @@ const allRegionalCenters = [
 
 const insertRC = db.prepare(`
   INSERT OR REPLACE INTO state_resource_agencies 
-  (id, state_id, agency_type, name, counties_served, catchment_boundaries, website, intake_phone, early_intervention_contact, agency_intake_contact, eligibility_info_page, services_page, appeals_info, frc_relationship, office_locations, languages, last_verified_date, source_urls) 
-  VALUES (?, 'california', 'regional_center', ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  (id, state_id, agency_type, name, counties_served, catchment_boundaries, website, intake_phone, early_intervention_contact, agency_intake_contact, eligibility_info_page, services_page, appeals_info, frc_relationship, office_locations, languages, last_verified_date, source_urls, source_url, source_type, data_origin, verification_status, last_scraped_at, confidence_score) 
+  VALUES (?, 'california', 'regional_center', ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 `);
 
 const insertRcCounty = db.prepare('INSERT OR REPLACE INTO regional_center_counties (regional_center_id, county_id) VALUES (?, ?)');
@@ -404,7 +404,30 @@ const insertRcCounty = db.prepare('INSERT OR REPLACE INTO regional_center_counti
 // Seeding in a single transaction
 const seedAllRCsTx = db.transaction((rcs) => {
   for (const rc of rcs) {
-    insertRC.run(rc.id, rc.name, rc.counties_served, rc.catchment_boundaries, rc.website, rc.intake_phone, rc.early_start_contact, rc.lanterman_intake_contact, rc.eligibility_info_page, rc.services_page, rc.appeals_info, rc.frc_relationship, rc.office_locations, rc.languages, rc.last_verified_date, rc.source_urls);
+    insertRC.run(
+      rc.id,
+      rc.name,
+      rc.counties_served,
+      rc.catchment_boundaries,
+      rc.website,
+      rc.intake_phone,
+      rc.early_start_contact,
+      rc.lanterman_intake_contact,
+      rc.eligibility_info_page,
+      rc.services_page,
+      rc.appeals_info,
+      rc.frc_relationship,
+      rc.office_locations,
+      rc.languages,
+      rc.last_verified_date,
+      rc.source_urls,
+      rc.website,
+      'official',
+      'crawler',
+      'official_verified',
+      new Date().toISOString(),
+      5.0
+    );
     if (rc.counties_served) {
       const counties = rc.counties_served.split(',').map(c => c.trim()).filter(Boolean);
       for (const c of counties) {

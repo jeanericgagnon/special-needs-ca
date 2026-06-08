@@ -24,7 +24,7 @@ const californiaCounties = [
 ];
 
 const insertCounty = db.prepare('INSERT OR REPLACE INTO counties (id, state_id, name, website) VALUES (?, ?, ?, ?)');
-const insertOffice = db.prepare('INSERT OR REPLACE INTO county_offices (id, county_id, program_id, office_name, address, phone, email, website) VALUES (?, ?, ?, ?, ?, ?, ?, ?)');
+const insertOffice = db.prepare('INSERT OR REPLACE INTO county_offices (id, county_id, program_id, office_name, address, phone, email, website, source_url, source_type, data_origin, verification_status, last_verified_date, last_scraped_at, confidence_score) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
 
 const seedAllCountiesTx = db.transaction((countiesNames) => {
   for (const name of countiesNames) {
@@ -43,7 +43,14 @@ const seedAllCountiesTx = db.transaction((countiesNames) => {
       `County Administration Building, ${name}, CA`,
       'Phone: (800) 510-2020',
       `ihss-intake@${slug}county.ca.gov`,
-      `${website}/ihss`
+      `${website}/ihss`,
+      `${website}/ihss`,
+      'official',
+      'programmatic_fallback',
+      'generated_county_fallback',
+      '2026-06-01',
+      new Date().toISOString(),
+      3.0
     );
 
     // 3. Programmatically generate local Medi-Cal office
@@ -55,7 +62,14 @@ const seedAllCountiesTx = db.transaction((countiesNames) => {
       `County Administration Building, ${name}, CA`,
       'Phone: (800) 281-9799',
       `medi-cal@${slug}county.ca.gov`,
-      'https://www.benefitscal.com'
+      'https://www.benefitscal.com',
+      'https://www.benefitscal.com',
+      'official',
+      'programmatic_fallback',
+      'generated_county_fallback',
+      '2026-06-01',
+      new Date().toISOString(),
+      3.0
     );
 
     // 4. Programmatically generate local California Children Services (CCS) office
@@ -67,7 +81,14 @@ const seedAllCountiesTx = db.transaction((countiesNames) => {
       `County Public Health Center, ${name}, CA`,
       'Phone: (800) 288-4584',
       `ccs@${slug}county.ca.gov`,
-      `${website}/public-health/ccs`
+      `${website}/public-health/ccs`,
+      `${website}/public-health/ccs`,
+      'official',
+      'programmatic_fallback',
+      'generated_county_fallback',
+      '2026-06-01',
+      new Date().toISOString(),
+      3.0
     );
   }
 });
@@ -272,21 +293,55 @@ try {
   }
 
   // Insert school districts
-  const insertDistrict = db.prepare('INSERT OR REPLACE INTO school_districts (id, county_id, name, spec_ed_contact_phone, spec_ed_contact_email, website, total_enrollment, special_ed_pct, inclusion_rate_pct, self_contained_rate_pct) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
+  const insertDistrict = db.prepare('INSERT OR REPLACE INTO school_districts (id, county_id, name, spec_ed_contact_phone, spec_ed_contact_email, website, total_enrollment, special_ed_pct, inclusion_rate_pct, self_contained_rate_pct, source_url, source_type, data_origin, verification_status, last_verified_date, last_scraped_at, confidence_score) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
   const seedDistrictsTx = db.transaction((districts) => {
     for (const sd of districts) {
-      insertDistrict.run(sd.id, sd.county_id, sd.name, sd.spec_ed_contact_phone, sd.spec_ed_contact_email, sd.website, sd.total_enrollment, sd.special_ed_pct, sd.inclusion_rate_pct, sd.self_contained_rate_pct);
+      const isGen = sd.id.startsWith('sd-gen-');
+      insertDistrict.run(
+        sd.id,
+        sd.county_id,
+        sd.name,
+        sd.spec_ed_contact_phone,
+        sd.spec_ed_contact_email,
+        sd.website,
+        sd.total_enrollment,
+        sd.special_ed_pct,
+        sd.inclusion_rate_pct,
+        sd.self_contained_rate_pct,
+        sd.website || 'https://www.cde.ca.gov',
+        'official',
+        isGen ? 'programmatic_fallback' : 'curated_seed',
+        isGen ? 'generated_county_fallback' : 'source_listed',
+        '2026-06-01',
+        new Date().toISOString(),
+        isGen ? 2.0 : 4.0
+      );
     }
   });
   seedDistrictsTx(seedDistricts);
   console.log(`  ✓ Seeded ${seedDistricts.length} California School Districts (explicit + generated).`);
 
   // Insert SELPAs
-  const insertEdAgency = db.prepare('INSERT OR REPLACE INTO regional_education_agencies (id, state_id, agency_type, name, counties_served, website) VALUES (?, ?, ?, ?, ?, ?)');
+  const insertEdAgency = db.prepare('INSERT OR REPLACE INTO regional_education_agencies (id, state_id, agency_type, name, counties_served, website, source_url, source_type, data_origin, verification_status, last_verified_date, last_scraped_at, confidence_score) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
   const insertSelpaCounty = db.prepare('INSERT OR REPLACE INTO selpa_counties (selpa_id, county_id) VALUES (?, ?)');
   const seedSelpasTx = db.transaction((selpas) => {
     for (const s of selpas) {
-      insertEdAgency.run(s.id, s.state_id, s.agency_type, s.name, s.counties_served, s.website);
+      const isGen = s.id.startsWith('selpa-gen-');
+      insertEdAgency.run(
+        s.id,
+        s.state_id,
+        s.agency_type,
+        s.name,
+        s.counties_served,
+        s.website,
+        s.website || 'https://www.cde.ca.gov',
+        'official',
+        isGen ? 'programmatic_fallback' : 'curated_seed',
+        isGen ? 'generated_county_fallback' : 'source_listed',
+        '2026-06-01',
+        new Date().toISOString(),
+        isGen ? 2.0 : 4.0
+      );
       if (s.counties_served) {
         const counties = s.counties_served.split(',').map(c => c.trim()).filter(Boolean);
         for (const c of counties) {
@@ -299,10 +354,25 @@ try {
   console.log(`  ✓ Seeded ${seedSelpas.length} California SELPAs & junctions (explicit + generated).`);
 
   // Insert Nonprofits
-  const insertNonprofit = db.prepare('INSERT OR REPLACE INTO nonprofit_organizations (id, name, county_id, website, phone, focus_condition) VALUES (?, ?, ?, ?, ?, ?)');
+  const insertNonprofit = db.prepare('INSERT OR REPLACE INTO nonprofit_organizations (id, name, county_id, website, phone, focus_condition, source_url, source_type, data_origin, verification_status, last_verified_date, last_scraped_at, confidence_score) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
   const seedNonprofitsTx = db.transaction((nonprofits) => {
     for (const np of nonprofits) {
-      insertNonprofit.run(np.id, np.name, np.county_id, np.website, np.phone, np.focus_condition);
+      const isGen = np.id.startsWith('np-gen-');
+      insertNonprofit.run(
+        np.id,
+        np.name,
+        np.county_id,
+        np.website,
+        np.phone,
+        np.focus_condition,
+        np.website,
+        'nonprofit',
+        isGen ? 'programmatic_fallback' : 'curated_seed',
+        isGen ? 'generated_county_fallback' : 'source_listed',
+        '2026-06-01',
+        new Date().toISOString(),
+        isGen ? 2.0 : 4.0
+      );
     }
   });
   seedNonprofitsTx(seedNonprofits);

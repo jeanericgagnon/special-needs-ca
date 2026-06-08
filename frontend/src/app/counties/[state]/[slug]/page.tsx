@@ -4,6 +4,8 @@ import { MapPin, Phone, Landmark, Globe, ArrowLeft, BookOpen, ShieldCheck, Calcu
 import Link from 'next/link';
 import DirectoryReviews from '@/app/dashboard/components/DirectoryReviews';
 import SeoSchema from '@/app/components/seo-schema';
+import { TrustBadge } from '@/app/counties/components/CorrectionFlow';
+import SourceFreshnessDisclosure from '@/app/components/SourceFreshnessDisclosure';
 
 type Props = {
   params: Promise<{ state: string; slug: string }>;
@@ -194,6 +196,15 @@ export default async function CountyPage({ params }: Props) {
                       </a>
                     </div>
 
+                    <TrustBadge
+                      status={rc.verification_status}
+                      lastVerifiedDate={rc.last_verified_date}
+                      sourceUrl={rc.source_url || rc.website}
+                      entityId={rc.id}
+                      entityName={rc.name}
+                      entityType="regional_center"
+                    />
+
                     {/* Community Reviews Widget */}
                     <div style={{ marginTop: '1.25rem', borderTop: '1px solid #f0f0f0', paddingTop: '1rem' }}>
                       <DirectoryReviews
@@ -219,7 +230,7 @@ export default async function CountyPage({ params }: Props) {
             {countyDetails.countyOffices && countyDetails.countyOffices.length > 0 ? (
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                 {countyDetails.countyOffices.map((office) => (
-                  <div key={office.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', fontSize: '0.9rem' }}>
+                  <div key={office.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', fontSize: '0.9rem', borderBottom: '1px solid #f0f0f0', paddingBottom: '1rem' }}>
                     <h3 style={{ fontSize: '1.05rem', fontWeight: 700, color: 'var(--text-main)', margin: 0 }}>{office.office_name}</h3>
                     <span><strong>Address:</strong> {office.address}</span>
                     <span><strong>Phone Intake:</strong> <a href={`tel:${office.phone}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{office.phone}</a></span>
@@ -229,6 +240,14 @@ export default async function CountyPage({ params }: Props) {
                         <Globe size={14} /> Visit Office Webpage
                       </a>
                     )}
+                    <TrustBadge
+                      status={office.verification_status}
+                      lastVerifiedDate={office.last_verified_date}
+                      sourceUrl={office.source_url || office.website}
+                      entityId={office.id}
+                      entityName={office.office_name}
+                      entityType="county_office"
+                    />
                   </div>
                 ))}
               </div>
@@ -249,13 +268,23 @@ export default async function CountyPage({ params }: Props) {
               {countyDetails.schoolDistricts && countyDetails.schoolDistricts.length > 0 ? (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                   {countyDetails.schoolDistricts.map((dist) => (
-                    <div key={dist.id} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: '#fafafa', padding: '0.75rem', borderRadius: '8px', border: '1px solid #eee', fontSize: '0.85rem' }}>
-                      <span style={{ fontWeight: 600, color: 'var(--text-main)' }}>{dist.name}</span>
-                      {dist.spec_ed_contact_phone && (
-                        <a href={`tel:${dist.spec_ed_contact_phone}`} style={{ color: 'var(--primary-color)', display: 'inline-flex', alignItems: 'center', gap: '0.2rem', textDecoration: 'none' }}>
-                          <Phone size={12} /> {dist.spec_ed_contact_phone}
-                        </a>
-                      )}
+                    <div key={dist.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', background: '#fafafa', padding: '0.75rem 1rem', borderRadius: '8px', border: '1px solid #eee', fontSize: '0.85rem' }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem' }}>
+                        <span style={{ fontWeight: 600, color: 'var(--text-main)' }}>{dist.name}</span>
+                        {dist.spec_ed_contact_phone && (
+                          <a href={`tel:${dist.spec_ed_contact_phone}`} style={{ color: 'var(--primary-color)', display: 'inline-flex', alignItems: 'center', gap: '0.2rem', textDecoration: 'none' }}>
+                            <Phone size={12} /> {dist.spec_ed_contact_phone}
+                          </a>
+                        )}
+                      </div>
+                      <TrustBadge
+                        status={dist.verification_status}
+                        lastVerifiedDate={dist.last_verified_date}
+                        sourceUrl={dist.source_url || dist.website}
+                        entityId={dist.id}
+                        entityName={dist.name}
+                        entityType="school_district"
+                      />
                     </div>
                   ))}
                 </div>
@@ -270,14 +299,22 @@ export default async function CountyPage({ params }: Props) {
               {countyDetails.selpas && countyDetails.selpas.length > 0 ? (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                   {countyDetails.selpas.map((selpa) => (
-                    <div key={selpa.id} style={{ fontSize: '0.85rem', display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
+                    <div key={selpa.id} style={{ fontSize: '0.85rem', display: 'flex', flexDirection: 'column', gap: '0.4rem', borderBottom: '1px solid #f0f0f0', paddingBottom: '0.75rem' }}>
                       <strong style={{ color: 'var(--text-main)' }}>{selpa.name}</strong>
                       <span style={{ color: 'var(--text-light)' }}>Counties Served: {selpa.counties_served}</span>
                       {selpa.website && (
-                        <a href={selpa.website} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>
-                          Visit Portal
+                        <a href={selpa.website} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)', textDecoration: 'underline', display: 'inline-flex', alignItems: 'center', gap: '0.2rem' }}>
+                          <Globe size={12} /> Visit Portal
                         </a>
                       )}
+                      <TrustBadge
+                        status={selpa.verification_status}
+                        lastVerifiedDate={selpa.last_verified_date}
+                        sourceUrl={selpa.source_url || selpa.website}
+                        entityId={selpa.id}
+                        entityName={selpa.name}
+                        entityType="selpa"
+                      />
                     </div>
                   ))}
                 </div>
@@ -292,7 +329,7 @@ export default async function CountyPage({ params }: Props) {
               {countyDetails.localOrganizations && countyDetails.localOrganizations.length > 0 ? (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                   {countyDetails.localOrganizations.map((org) => (
-                    <div key={org.id} style={{ fontSize: '0.85rem', display: 'flex', flexDirection: 'column', gap: '0.2rem', padding: '0.75rem', background: '#fafafa', borderRadius: '8px', border: '1px solid #eee' }}>
+                    <div key={org.id} style={{ fontSize: '0.85rem', display: 'flex', flexDirection: 'column', gap: '0.4rem', padding: '0.75rem', background: '#fafafa', borderRadius: '8px', border: '1px solid #eee' }}>
                       <strong style={{ color: 'var(--text-main)' }}>{org.name}</strong>
                       {org.focus_condition && org.focus_condition !== 'any' && (
                         <span style={{ fontSize: '0.75rem', color: 'var(--primary-color)', fontWeight: 600 }}>
@@ -305,6 +342,14 @@ export default async function CountyPage({ params }: Props) {
                           <Globe size={12} /> Visit Support Site
                         </a>
                       )}
+                      <TrustBadge
+                        status={org.verification_status}
+                        lastVerifiedDate={org.last_verified_date}
+                        sourceUrl={org.source_url || org.website}
+                        entityId={org.id}
+                        entityName={org.name}
+                        entityType="nonprofit"
+                      />
                     </div>
                   ))}
                 </div>
@@ -382,6 +427,12 @@ export default async function CountyPage({ params }: Props) {
         </div>
 
       </div>
+
+      <SourceFreshnessDisclosure sources={[
+        { name: 'California Department of Developmental Services', url: 'https://www.dds.ca.gov', lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' },
+        { name: 'California Department of Social Services', url: 'https://www.cdss.ca.gov', lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' },
+        { name: 'California Department of Health Care Services', url: 'https://www.dhcs.ca.gov', lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' }
+      ]} />
 
     </div>
   );

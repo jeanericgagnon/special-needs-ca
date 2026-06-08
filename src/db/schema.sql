@@ -20,9 +20,14 @@ CREATE TABLE IF NOT EXISTS programs (
     who_might_qualify TEXT NOT NULL,
     official_source_url TEXT NOT NULL,
     category TEXT NOT NULL, -- 'federal' | 'state' | 'county'
-    confidence_score INTEGER NOT NULL DEFAULT 5, -- 1 to 5 scale
+    confidence_score REAL NOT NULL DEFAULT 5.0,
     last_verified_date TEXT NOT NULL, -- YYYY-MM-DD
-    state_id TEXT REFERENCES states(id)
+    state_id TEXT REFERENCES states(id),
+    source_url TEXT,
+    source_type TEXT,
+    data_origin TEXT,
+    verification_status TEXT,
+    last_scraped_at TEXT
 );
 
 -- 2. program_eligibility_rules
@@ -92,6 +97,13 @@ CREATE TABLE IF NOT EXISTS county_offices (
     phone TEXT NOT NULL,
     email TEXT,
     website TEXT,
+    source_url TEXT,
+    source_type TEXT,
+    data_origin TEXT,
+    verification_status TEXT,
+    last_verified_date TEXT,
+    last_scraped_at TEXT,
+    confidence_score REAL,
     FOREIGN KEY (county_id) REFERENCES counties(id) ON DELETE CASCADE,
     FOREIGN KEY (program_id) REFERENCES programs(id) ON DELETE CASCADE
 );
@@ -115,7 +127,13 @@ CREATE TABLE IF NOT EXISTS state_resource_agencies (
     office_locations TEXT,
     languages TEXT NOT NULL, -- Comma-separated languages list
     last_verified_date TEXT NOT NULL,
-    source_urls TEXT NOT NULL -- Comma-separated list
+    source_urls TEXT NOT NULL, -- Comma-separated list
+    source_url TEXT,
+    source_type TEXT,
+    data_origin TEXT,
+    verification_status TEXT,
+    last_scraped_at TEXT,
+    confidence_score REAL
 );
 
 -- 9. regional_education_agencies
@@ -125,7 +143,14 @@ CREATE TABLE IF NOT EXISTS regional_education_agencies (
     agency_type TEXT NOT NULL, -- 'selpa' | 'boces' | 'resc'
     name TEXT NOT NULL,
     counties_served TEXT NOT NULL,
-    website TEXT NOT NULL
+    website TEXT NOT NULL,
+    source_url TEXT,
+    source_type TEXT,
+    data_origin TEXT,
+    verification_status TEXT,
+    last_verified_date TEXT,
+    last_scraped_at TEXT,
+    confidence_score REAL
 );
 
 -- Backward Compatible Views
@@ -146,7 +171,13 @@ SELECT
     office_locations,
     languages,
     last_verified_date,
-    source_urls
+    source_urls,
+    source_url,
+    source_type,
+    data_origin,
+    verification_status,
+    last_scraped_at,
+    confidence_score
 FROM state_resource_agencies;
 
 CREATE VIEW IF NOT EXISTS selpas AS
@@ -154,7 +185,14 @@ SELECT
     id,
     name,
     counties_served,
-    website
+    website,
+    source_url,
+    source_type,
+    data_origin,
+    verification_status,
+    last_verified_date,
+    last_scraped_at,
+    confidence_score
 FROM regional_education_agencies;
 
 -- 10. school_districts
@@ -169,6 +207,13 @@ CREATE TABLE IF NOT EXISTS school_districts (
     special_ed_pct REAL,
     inclusion_rate_pct REAL,
     self_contained_rate_pct REAL,
+    source_url TEXT,
+    source_type TEXT,
+    data_origin TEXT,
+    verification_status TEXT,
+    last_verified_date TEXT,
+    last_scraped_at TEXT,
+    confidence_score REAL,
     FOREIGN KEY (county_id) REFERENCES counties(id) ON DELETE CASCADE
 );
 
@@ -183,6 +228,13 @@ CREATE TABLE IF NOT EXISTS resource_providers (
     address TEXT NOT NULL,
     accepts_medi_cal INTEGER NOT NULL DEFAULT 1,
     regional_center_vendor_ids TEXT NOT NULL, -- Comma-separated list
+    source_url TEXT,
+    source_type TEXT,
+    data_origin TEXT,
+    verification_status TEXT,
+    last_verified_date TEXT,
+    last_scraped_at TEXT,
+    confidence_score REAL,
     FOREIGN KEY (county_id) REFERENCES counties(id) ON DELETE CASCADE
 );
 
@@ -194,6 +246,13 @@ CREATE TABLE IF NOT EXISTS nonprofit_organizations (
     website TEXT NOT NULL,
     phone TEXT NOT NULL,
     focus_condition TEXT NOT NULL,
+    source_url TEXT,
+    source_type TEXT,
+    data_origin TEXT,
+    verification_status TEXT,
+    last_verified_date TEXT,
+    last_scraped_at TEXT,
+    confidence_score REAL,
     FOREIGN KEY (county_id) REFERENCES counties(id) ON DELETE CASCADE
 );
 
@@ -319,6 +378,13 @@ CREATE TABLE IF NOT EXISTS sources (
     url TEXT NOT NULL,
     type TEXT NOT NULL, -- 'official' | 'nonprofit' | 'provider' | 'scraped'
     confidence_rating TEXT NOT NULL, -- 'high' | 'medium' | 'low'
+    source_url TEXT,
+    source_type TEXT,
+    data_origin TEXT,
+    verification_status TEXT,
+    last_verified_date TEXT,
+    last_scraped_at TEXT,
+    confidence_score REAL,
     FOREIGN KEY (program_id) REFERENCES programs(id) ON DELETE CASCADE
 );
 
@@ -329,6 +395,13 @@ CREATE TABLE IF NOT EXISTS source_verifications (
     verified_by TEXT NOT NULL,
     verified_date TEXT NOT NULL,
     notes TEXT,
+    source_url TEXT,
+    source_type TEXT,
+    data_origin TEXT,
+    verification_status TEXT,
+    last_verified_date TEXT,
+    last_scraped_at TEXT,
+    confidence_score REAL,
     FOREIGN KEY (source_id) REFERENCES sources(id) ON DELETE CASCADE
 );
 
@@ -385,7 +458,10 @@ CREATE TABLE IF NOT EXISTS iep_advocates (
     source_url TEXT,
     source_type TEXT,
     last_scraped_at TEXT,
-    last_verified_at TEXT
+    last_verified_at TEXT,
+    data_origin TEXT,
+    last_verified_date TEXT,
+    confidence_score REAL
 );
 
 -- Create optimized database indexes to accelerate query joins
