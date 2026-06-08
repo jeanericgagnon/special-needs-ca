@@ -81,8 +81,7 @@ export default async function AdvocatesDirectoryPage({ searchParams }: Props) {
               defaultValue={selectedCounty}
               // Automatically submit when changed to avoid extra clicks
               // We use simple inline JS to submit the parent form on change
-              // @ts-expect-error: React onChange prop expects function but we use raw string for inline HTML event submission in Server Component
-              onChange="this.form.submit()"
+              {...{ onchange: 'this.form.submit()' }}
               style={{ 
                 padding: '0.75rem 1rem', 
                 borderRadius: '10px', 
