@@ -23,7 +23,7 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
       canonical: `/advocates`
     },
     robots: {
-      index: false,
+      index: true,
       follow: true
     }
   };

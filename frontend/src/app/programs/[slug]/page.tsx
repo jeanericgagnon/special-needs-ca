@@ -37,6 +37,9 @@ export async function generateMetadata({ params }: Props) {
     return {
       title: cluster.metaTitle,
       description: cluster.metaDescription,
+      alternates: {
+        canonical: `/${cluster.category}/${slug}`
+      }
     };
   }
 
@@ -45,6 +48,9 @@ export async function generateMetadata({ params }: Props) {
     return {
       title: `${program.program_name} California Guide`,
       description: `Learn about eligibility, requirements, and how to apply for ${program.program_name} in California.`,
+      alternates: {
+        canonical: `/programs/${slug}`
+      }
     };
   }
 
@@ -59,7 +65,7 @@ export default async function ProgramPage({ params }: Props) {
 
   const cluster = SEO_CLUSTERS[slug];
   if (cluster && cluster.category === 'programs') {
-    return <AnswerPage data={cluster} counties={counties} />;
+    return <AnswerPage slug={slug} counties={counties} />;
   }
 
   // Fallback to DB query

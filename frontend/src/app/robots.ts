@@ -12,7 +12,9 @@ export default function robots(): MetadataRoute.Robots {
         '/benefits/*',
         '/counties',
         '/counties/*',
-        '/advocates'
+        '/advocates',
+        '/forms',
+        '/forms/*'
       ],
       disallow: [
         '/dashboard',

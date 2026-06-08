@@ -6,6 +6,15 @@ import Link from 'next/link';
 import { LayoutDashboard } from 'lucide-react';
 
 import { DIAGNOSES } from '@/lib/diagnoses';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Special Needs California Navigator',
+  description: 'Navigate special needs benefits, IHSS protective supervision caregiver hours, Regional Center intakes, and school IEP services in California.',
+  alternates: {
+    canonical: '/'
+  }
+};
 
 export default async function Home() {
   // 1. Fetch counties dynamically from database

@@ -11,6 +11,7 @@
     "crawl:fecs": "node src/scrapers/fec_scraper.js",
     "crawl:wrightslaw": "node src/scrapers/wrightslaw_scraper.js",
     "audit:ca-coverage": "node src/db/audit_ca_coverage.js",
+    "audit:seo-launch-ca": "node src/db/audit_seo_launch_ca.js",
     "test:quality-gates": "node src/scratch/verify_requirements.js",
     "preview": "vite preview"
   },

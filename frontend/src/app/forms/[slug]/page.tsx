@@ -25,6 +25,9 @@ export async function generateMetadata({ params }: Props) {
     return {
       title: cluster.metaTitle,
       description: cluster.metaDescription,
+      alternates: {
+        canonical: `/forms/${slug}`
+      }
     };
   }
 
@@ -40,7 +43,7 @@ export default async function FormPage({ params }: Props) {
 
   const cluster = SEO_CLUSTERS[slug];
   if (cluster && cluster.category === 'forms') {
-    return <AnswerPage data={cluster} counties={counties} />;
+    return <AnswerPage slug={slug} counties={counties} />;
   }
 
   notFound();

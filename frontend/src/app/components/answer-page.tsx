@@ -7,7 +7,7 @@ import {
   Download, FileDown, CheckCircle2, ChevronRight
 } from 'lucide-react';
 import Link from 'next/link';
-import { SEOPageData } from '@/lib/seo-data';
+import { SEOPageData, SEO_CLUSTERS } from '@/lib/seo-data';
 import { fetchCountyDetailsAction } from '../actions';
 import SourceFreshnessDisclosure from './SourceFreshnessDisclosure';
 
@@ -40,11 +40,16 @@ interface CountyDetailsType {
 }
 
 interface AnswerPageProps {
-  data: SEOPageData;
+  data?: SEOPageData;
+  slug?: string;
   counties: { id: string; name: string }[];
 }
 
-export default function AnswerPage({ data, counties }: AnswerPageProps) {
+export default function AnswerPage({ data: propData, slug, counties }: AnswerPageProps) {
+  const data = propData || (slug ? SEO_CLUSTERS[slug] : null);
+  if (!data) {
+    throw new Error(`AnswerPage: data or slug must be provided. Slug: ${slug}`);
+  }
   // Client state
   const [selectedCounty, setSelectedCounty] = useState<string>('los-angeles');
   const [countyDetails, setCountyDetails] = useState<CountyDetailsType | null>(null);

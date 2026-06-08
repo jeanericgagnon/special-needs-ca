@@ -9,6 +9,7 @@ export async function GET() {
     { loc: '/', changefreq: 'monthly', priority: '1.0', lastmod: today },
     { loc: '/benefits', changefreq: 'weekly', priority: '0.9', lastmod: today },
     { loc: '/advocates', changefreq: 'weekly', priority: '0.7', lastmod: today },
+    { loc: '/forms', changefreq: 'weekly', priority: '0.8', lastmod: today },
     // California
     { loc: '/benefits/california', changefreq: 'weekly', priority: '0.9', lastmod: today },
     { loc: '/counties/california', changefreq: 'weekly', priority: '0.85', lastmod: today },

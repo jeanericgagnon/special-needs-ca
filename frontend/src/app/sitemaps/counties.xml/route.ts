@@ -4,7 +4,7 @@ import { DIAGNOSES, slugifyDiagnosis } from '@/lib/diagnoses';
 
 // Sitemap expansion batch configuration
 // 1 = Top 10 CA counties, 2 = Top 25 CA counties, 3 = All 58 CA counties, 4 = All CA + county x diagnosis leaves
-const SITEMAP_BATCH = parseInt(process.env.SITEMAP_BATCH || '3', 10);
+const SITEMAP_BATCH = parseInt(process.env.SITEMAP_BATCH || '4', 10);
 
 const TOP_10_CA_COUNTIES = [
   'los-angeles', 'san-diego', 'orange', 'riverside', 'san-bernardino', 
@@ -176,6 +176,12 @@ export async function GET() {
 
         // Quality Gate: Check county passes quality gate (already verified in count loop above, but double check)
         if (stateId === 'california' && !passesCountyQualityGate(countyDetails)) return;
+
+        // Gate: Only index CA county x diagnosis if they have enough unique content (los-angeles and orange)
+        if (stateId === 'california') {
+          const isHighFidelity = county.id === 'los-angeles' || county.id === 'orange';
+          if (!isHighFidelity) return;
+        }
 
         xmlUrls += `  <url>
       <loc>${baseUrl}/benefits/${stateId}/${diag}/${county.id}</loc>

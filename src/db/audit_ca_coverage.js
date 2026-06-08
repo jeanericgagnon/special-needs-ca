@@ -202,7 +202,14 @@ check(programsWithSteps === totalProgsChecked, `Core programs with application s
 const appealsPassed = missingAppealsProgs.length === 0;
 check(appealsPassed, `Core programs with appeal info: ${programsWithAppeals}/${totalProgsChecked}`, missingAppealsProgs.length ? `Missing appeals data for: ${missingAppealsProgs.join(', ')}` : '');
 
-// 4. Trust and Freshness Fields validation
+// 4. Source & Verification records existence
+const sourcesCount = db.prepare("SELECT COUNT(*) as cnt FROM sources").get().cnt;
+check(sourcesCount > 0, `Source records exist (Total: ${sourcesCount})`, `Expected sources table to have records, found ${sourcesCount}`);
+
+const verificationsCount = db.prepare("SELECT COUNT(*) as cnt FROM source_verifications").get().cnt;
+check(verificationsCount > 0, `Source verification records exist (Total: ${verificationsCount})`, `Expected source_verifications table to have records, found ${verificationsCount}`);
+
+// 5. Trust and Freshness Fields validation
 // Ensure every record in county_offices, school_districts, and nonprofit_organizations has data_origin and verification_status
 const tablesToAudit = [
   { name: 'county_offices', label: 'County Offices' },
