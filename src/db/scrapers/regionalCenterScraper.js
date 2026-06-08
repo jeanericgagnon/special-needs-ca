@@ -34,8 +34,8 @@ const allRegionalCenters = [
   {
     id: 'central-valley',
     name: 'Central Valley Regional Center (CVRC)',
-    counties_served: 'fresno,kings,madera,tulare',
-    catchment_boundaries: 'Serves Fresno, Kings, Madera, and Tulare counties.',
+    counties_served: 'fresno,kings,madera,mariposa,merced,tulare',
+    catchment_boundaries: 'Serves Fresno, Kings, Madera, Mariposa, Merced, and Tulare counties.',
     website: 'https://www.cvrc.org',
     intake_phone: '(559) 276-4300',
     early_start_contact: 'Phone: (559) 276-4300, Email: earlystart@cvrc.org',
