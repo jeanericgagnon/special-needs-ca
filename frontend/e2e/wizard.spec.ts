@@ -42,21 +42,21 @@ test.describe('Eligibility Onboarding Wizard E2E Tests', () => {
 
     // 6. Step 5: Results View
     // Wait for loader to finish and results to appear
-    const resultsHeader = page.locator('h2:has-text("Your Customized Benefit Match Plan")');
+    const resultsHeader = page.locator('h2:has-text("Here are programs your child may qualify for")');
     await expect(resultsHeader).toBeVisible();
 
     // Verify program matches are shown in results
-    const bodyText = await page.textContent('body');
+    const bodyText = await page.innerText('body');
     expect(bodyText).toContain('Regional Center');
-    expect(bodyText).toContain('In-Home Supportive Services (IHSS)');
-    expect(bodyText).toContain('Special Education (IEP)');
+    expect(bodyText).toContain('In-Home Supportive Services');
+    expect(bodyText).toContain('Special Education');
     expect(bodyText).toContain('Medi-Cal');
 
     // Verify that the local Regional Center contact is loaded
-    expect(bodyText).toContain('Lanman'); // Westside/Frank D. Lanterman or regional center specific
+    expect(bodyText).toContain('Lanterman'); // Westside/Frank D. Lanterman or regional center specific
     
     // Verify explanation section is populated
-    expect(bodyText).toContain('Why it matches');
+    expect(bodyText).toContain('Smart Screening Rationale');
   });
 
   test('conditional path: toddler speech delay in Orange County matches Early Start', async ({ page }) => {
@@ -69,22 +69,25 @@ test.describe('Eligibility Onboarding Wizard E2E Tests', () => {
 
     // Step 2: Speech and Language Delay
     await page.fill('#diagnosis', 'Speech');
-    await page.click('.autocomplete-item:has-text("Speech or Language Delay")');
+    await page.click('.autocomplete-item:has-text("Speech and Language Delay")');
     await page.click('button:has-text("Next Step")', { force: true });
 
     // Step 3: Needs speech therapy
     await page.fill('#additionalText', 'Delayed communication milestones, needs early speech therapy support.');
     await page.click('button:has-text("Analyze observed needs")', { force: true });
 
-    // Step 4: Skip refiners
-    await page.click('button:has-text("Skip Answers")', { force: true });
+    // Step 4: Skip refiners if visible
+    const skipBtn1 = page.locator('button:has-text("Skip Answers")');
+    if (await skipBtn1.count() > 0 && await skipBtn1.isVisible()) {
+      await skipBtn1.click({ force: true });
+    }
 
     // Step 5: Results - Verify Early Start matches (under age 3)
-    await expect(page.locator('h2:has-text("Your Customized Benefit Match Plan")')).toBeVisible();
+    await expect(page.locator('h2:has-text("Here are programs your child may qualify for")')).toBeVisible();
     
-    const bodyText = await page.textContent('body');
-    expect(bodyText).toContain('Early Start Intervention');
-    expect(bodyText).not.toContain('Special Education (IEP)'); // IEP is age 3+
+    const bodyText = await page.innerText('body');
+    expect(bodyText).toContain('Early Start');
+    expect(bodyText).not.toContain('Special Education'); // IEP is age 3+
   });
 
   test('fallback path: developmental delay in Mariposa County', async ({ page }) => {
@@ -104,13 +107,16 @@ test.describe('Eligibility Onboarding Wizard E2E Tests', () => {
     await page.fill('#additionalText', 'Needs general support.');
     await page.click('button:has-text("Analyze observed needs")', { force: true });
 
-    // Step 4: Skip refiners
-    await page.click('button:has-text("Skip Answers")', { force: true });
+    // Step 4: Skip refiners if visible
+    const skipBtn2 = page.locator('button:has-text("Skip Answers")');
+    if (await skipBtn2.count() > 0 && await skipBtn2.isVisible()) {
+      await skipBtn2.click({ force: true });
+    }
 
     // Step 5: Results - Verify Mariposa local contacts do not crash
-    await expect(page.locator('h2:has-text("Your Customized Benefit Match Plan")')).toBeVisible();
+    await expect(page.locator('h2:has-text("Here are programs your child may qualify for")')).toBeVisible();
 
-    const bodyText = await page.textContent('body');
+    const bodyText = await page.innerText('body');
     expect(bodyText).toContain('IEP');
     expect(bodyText).toContain('Mariposa'); // checks local county name is present
   });

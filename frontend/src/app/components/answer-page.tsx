@@ -173,7 +173,7 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
   };
 
   return (
-    <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '2rem 1.5rem' }}>
+    <main style={{ maxWidth: '1200px', margin: '0 auto', padding: '2rem 1.5rem' }}>
       
       {/* Breadcrumb path navigation */}
       <div style={{ fontSize: '0.85rem', color: 'var(--text-light)', marginBottom: '1rem', display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
@@ -272,6 +272,7 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
                 <label key={idx} style={{ display: 'flex', gap: '0.6rem', alignItems: 'flex-start', cursor: 'pointer', fontSize: '0.85rem' }}>
                   <input 
                     type="checkbox" 
+                    aria-label={doc.name}
                     checked={!!checkedDocs[doc.name]} 
                     onChange={() => toggleDocChecked(doc.name)} 
                     style={{ marginTop: '3px', accentColor: 'var(--primary-color)' }}
@@ -340,8 +341,9 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
             
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
-                <label style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-light)' }}>Select California County</label>
+                <label htmlFor="county-select" style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-light)' }}>Select California County</label>
                 <select
+                  id="county-select"
                   value={selectedCounty}
                   onChange={(e) => setSelectedCounty(e.target.value)}
                   style={{
@@ -419,6 +421,7 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
                       <label key={oIdx} style={{ display: 'flex', gap: '0.4rem', alignItems: 'center', fontSize: '0.75rem', cursor: 'pointer', background: quizAnswers[qIdx] === oIdx ? 'rgba(var(--primary-rgb),0.05)' : 'white', padding: '0.35rem 0.5rem', borderRadius: '6px', border: quizAnswers[qIdx] === oIdx ? '1px solid var(--primary-color)' : '1px solid #ddd' }}>
                         <input 
                           type="radio" 
+                          aria-label={opt.text}
                           name={`quiz-${qIdx}`} 
                           checked={quizAnswers[qIdx] === oIdx} 
                           onChange={() => {
@@ -457,6 +460,7 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '0.75rem' }}>
               <input 
                 type="text" 
+                aria-label="Parent Name"
                 placeholder="Parent Name" 
                 value={parentNameInput} 
                 onChange={(e) => setParentNameInput(e.target.value)}
@@ -464,6 +468,7 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
               />
               <input 
                 type="text" 
+                aria-label="Child Name"
                 placeholder="Child&apos;s Name" 
                 value={childNameInput} 
                 onChange={(e) => setChildNameInput(e.target.value)}
@@ -471,6 +476,7 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
               />
               <input 
                 type="text" 
+                aria-label="Child Date of Birth"
                 placeholder="Child&apos;s DOB (e.g. 10/12/2021)" 
                 value={childDobInput} 
                 onChange={(e) => setChildDobInput(e.target.value)}
@@ -500,9 +506,11 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
               <form onSubmit={handleGenerateLetter} style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                 {data.letterTemplate.fields.map(field => (
                   <div key={field.key} style={{ display: 'flex', flexDirection: 'column', gap: '0.15rem' }}>
-                    <label style={{ fontSize: '0.7rem', fontWeight: 600, color: 'var(--text-light)' }}>{field.label}</label>
+                    <label htmlFor={`letter-field-${field.key}`} style={{ fontSize: '0.7rem', fontWeight: 600 }}>{field.label}</label>
                     <input 
                       type="text" 
+                      id={`letter-field-${field.key}`}
+                      aria-label={field.label}
                       placeholder={field.placeholder}
                       value={letterInputs[field.key] || ''}
                       onChange={(e) => setLetterInputs(prev => ({ ...prev, [field.key]: e.target.value }))}
@@ -591,6 +599,6 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
 
       </div>
 
-    </div>
+    </main>
   );
 }

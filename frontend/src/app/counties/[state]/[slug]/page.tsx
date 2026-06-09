@@ -130,7 +130,7 @@ export default async function CountyPage({ params }: Props) {
   };
 
   return (
-    <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '2rem 1.5rem' }}>
+    <main style={{ maxWidth: '1200px', margin: '0 auto', padding: '2rem 1.5rem' }}>
       <SeoSchema data={[faqSchema, governmentOrganizationSchema]} />
       
       {/* Back button */}
@@ -325,7 +325,7 @@ export default async function CountyPage({ params }: Props) {
 
             {/* Local Nonprofits & Support Organizations */}
             <div>
-              <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '0.75rem' }}>Local Nonprofit Support Organizations</h3>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '0.75rem' }}>Nonprofit Support & Local Resources</h3>
               {countyDetails.localOrganizations && countyDetails.localOrganizations.length > 0 ? (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                   {countyDetails.localOrganizations.map((org) => (
@@ -434,6 +434,6 @@ export default async function CountyPage({ params }: Props) {
         { name: 'California Department of Health Care Services', url: 'https://www.dhcs.ca.gov', lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' }
       ]} />
 
-    </div>
+    </main>
   );
 }

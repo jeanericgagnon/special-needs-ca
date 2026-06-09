@@ -1361,8 +1361,8 @@ function runMigrations(db: Database.Database) {
           );
         }
 
-        // E. Early Start rule if RC/CCS relevant and under age 3
-        if (cond.regional_center_relevance === 1 || cond.ccs_relevance === 1) {
+        // E. Early Start rule if RC/CCS/Speech relevant and under age 3
+        if (cond.regional_center_relevance === 1 || cond.ccs_relevance === 1 || cond.id.includes('speech-and-language-delay') || cond.id.includes('apraxia')) {
           insertRule.run(
             `rule-es-${cond.id}`,
             'early-start',
@@ -2506,9 +2506,47 @@ export async function getAllPrograms(): Promise<Program[]> {
 }
 
 export async function getProgramBySlug(slug: string): Promise<Program | null> {
+  try {
+    // 1. Look up in the navigator DB first
+    const programRow = await navigatorDb.prepare(`
+      SELECT * FROM programs 
+      WHERE LOWER(id) = ? OR LOWER(name) = ?
+    `).get(slug.toLowerCase(), slug.toLowerCase().replace(/-/g, ' '));
+
+    if (programRow) {
+      // Look up its eligibility rules to extract age range
+      const rules = await navigatorDb.prepare(`
+        SELECT MIN(min_age_years) as min_age, MAX(max_age_years) as max_age
+        FROM program_eligibility_rules
+        WHERE program_id = ?
+      `).get(programRow.id);
+
+      const ageLimitMin = rules && rules.min_age !== null ? Number(rules.min_age) : 0;
+      const ageLimitMax = rules && rules.max_age !== null ? Number(rules.max_age) : 21;
+
+      return {
+        id: programRow.id,
+        source_url: programRow.official_source_url || '',
+        program_name: programRow.name,
+        target_demographic: programRow.who_it_is_for || '',
+        age_limit_min: ageLimitMin,
+        age_limit_max: ageLimitMax,
+        income_limit: 'Medi-Cal standard / None',
+        diagnosis_required: programRow.who_might_qualify || '',
+        county_specific: 'Statewide',
+        state_id: programRow.state_id,
+        last_verified_date: programRow.last_verified_date,
+        confidence_score: Number(programRow.confidence_score || 5.0)
+      } as Program;
+    }
+  } catch (err) {
+    console.error('Error looking up program in navigatorDb:', err);
+  }
+
+  // 2. Fall back to structured_programs from the crawler database
   const all = await getAllPrograms();
   const found = all.find(p => {
-    if (p.id === slug) return true;
+    if (String(p.id) === slug) return true;
     const pSlug = p.program_name
       .toLowerCase()
       .replace(/[^\w\s-]/g, '')
@@ -3129,7 +3167,7 @@ export async function submitCommunitySuggestion(suggestion: CommunitySuggestion)
         INSERT INTO community_suggestions (suggestion_type, target_id, submitter_name, submitter_email, details, status, created_at)
         VALUES (?, ?, ?, ?, ?, 'pending', ?)
       `);
-      const info = stmt.run(
+      const info = await stmt.run(
         suggestion.suggestion_type,
         suggestion.target_id,
         suggestion.submitter_name,

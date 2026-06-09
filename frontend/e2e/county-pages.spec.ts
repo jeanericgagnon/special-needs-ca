@@ -16,7 +16,7 @@ test.describe('County Page Detail E2E Tests (Desktop)', () => {
       await expect(h1).toHaveText(new RegExp(county.replace(/-/g, ' '), 'i'));
 
       // 2. Main sections verification
-      const bodyText = await page.textContent('body');
+      const bodyText = await page.innerText('body');
       
       // Regional Center Section
       expect(bodyText).toContain('Regional Center');

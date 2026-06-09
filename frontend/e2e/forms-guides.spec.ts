@@ -6,7 +6,7 @@ test.describe('Forms and Guides E2E Tests', () => {
     expect(response?.status()).toBe(200);
 
     const h1 = page.locator('h1');
-    await expect(h1).toHaveText(/California Special Needs Directory Forms Library/i);
+    await expect(h1).toHaveText(/California Special Needs Forms Directory/i);
 
     // Verify presence of form links
     const soc873Link = page.locator('a[href="/forms/soc-873"]');
@@ -37,10 +37,10 @@ test.describe('Forms and Guides E2E Tests', () => {
       await expect(h1).toBeVisible();
 
       // Quick Answer section
-      const bodyText = await page.textContent('body');
+      const bodyText = await page.innerText('body');
       expect(bodyText).toContain('Quick Answer');
       expect(bodyText).toContain('What to Do First');
-      expect(bodyText).toContain('Documents to Gather');
+      expect(bodyText).toContain('Documents & Evidence to Gather');
 
       // Check official download link
       const downloadLink = page.locator('a:has-text("Official Portal"), a:has-text("Source Website")');
@@ -51,7 +51,7 @@ test.describe('Forms and Guides E2E Tests', () => {
       await expect(freshness).toBeVisible();
 
       // Printable templates or script helper (e.g. Call Script or Letter template)
-      expect(bodyText).toMatch(/Call Script|Letter Template|Briefing Document/i);
+      expect(bodyText).toMatch(/Phone Script|Cover Letter|Briefing Document|Request Letter|Intake Phone Script/i);
     });
   }
 
@@ -75,7 +75,7 @@ test.describe('Forms and Guides E2E Tests', () => {
       const h1 = page.locator('h1');
       await expect(h1).toBeVisible();
 
-      const bodyText = await page.textContent('body');
+      const bodyText = await page.innerText('body');
       expect(bodyText).toContain('Quick Answer');
       expect(bodyText).toContain('Common Mistakes');
 

@@ -113,7 +113,7 @@ export default function ContributionModal({
 
             <h3 style={{ fontSize: '1.3rem', fontWeight: 700, marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-main)' }}>
               <MessageSquare color="var(--primary-color)" size={20} />
-              Suggest an Update
+              Suggest Correction
             </h3>
             <p style={{ fontSize: '0.88rem', color: 'var(--text-light)', marginBottom: '1.5rem', lineHeight: '1.4' }}>
               Help keep the Special Needs Navigator accurate. Suggest corrections or additions for {targetName || 'this page'}.

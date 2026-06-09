@@ -242,7 +242,8 @@ export async function analyzeOnboarding(
     lowerText.includes('school') || 
     lowerText.includes('education') || 
     lowerText.includes('special ed') || 
-    lowerText.includes('learning')
+    lowerText.includes('learning') ||
+    (age >= 3 && (detectedNeedIds.includes('speech-therapy') || detectedConditionIds.length > 0))
   ) {
     detectedNeedIds.push('iep-evaluation');
     detectedNeedNames.push('IEP Evaluation');

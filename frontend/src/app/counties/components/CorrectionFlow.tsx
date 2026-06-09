@@ -185,7 +185,7 @@ export function SuggestionModal({
         });
 
         if (res.success) {
-          setMessage({ type: 'success', text: res.message });
+          setMessage({ type: 'success', text: 'Suggestion submitted successfully' });
           setTimeout(() => {
             onClose();
           }, 2000);

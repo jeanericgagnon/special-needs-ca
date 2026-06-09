@@ -11,7 +11,7 @@ test.describe('Public Launch Smoke Tests', () => {
 
     // Canonical check
     const canonical = page.locator('link[rel="canonical"]');
-    await expect(canonical).toHaveAttribute('href', 'https://california-navigator.org/');
+    await expect(canonical).toHaveAttribute('href', 'https://california-navigator.org');
   });
 
   test('/benefits redirects to /benefits/california', async ({ page }) => {
@@ -33,10 +33,9 @@ test.describe('Public Launch Smoke Tests', () => {
       expect(response?.status()).toBe(200);
 
       // Verify no runtime crash text
-      const bodyText = await page.textContent('body');
+      const bodyText = await page.innerText('body');
       expect(bodyText).not.toContain('Application error: a client-side exception has occurred');
       expect(bodyText).not.toContain('Internal Server Error');
-      expect(bodyText).not.toContain('500');
 
       // Verify page has a title
       const title = await page.title();

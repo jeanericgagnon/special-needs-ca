@@ -123,7 +123,7 @@ export default async function FormsIndexPage() {
   ];
 
   return (
-    <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '2.5rem 1.5rem', minHeight: '80vh' }}>
+    <main style={{ maxWidth: '1200px', margin: '0 auto', padding: '2.5rem 1.5rem', minHeight: '80vh' }}>
       
       {/* Hero Header */}
       <div style={{ textAlign: 'center', marginBottom: '3.5rem' }}>
@@ -265,7 +265,6 @@ export default async function FormsIndexPage() {
           </div>
         ))}
       </div>
-
-    </div>
+    </main>
   );
 }

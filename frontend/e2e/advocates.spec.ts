@@ -20,13 +20,14 @@ test.describe('Advocates Directory E2E Tests', () => {
   test('filtering by county updates advocate listings', async ({ page }) => {
     await page.goto('/advocates');
 
-    // Select Los Angeles County and click Apply Filter
     const countySelect = page.locator('select[name="county"]');
+    await page.waitForTimeout(1000);
     await countySelect.selectOption('los-angeles');
+    await expect(countySelect).toHaveValue('los-angeles');
     await page.click('button:has-text("Apply Filter")', { force: true });
 
-    // URL should contain query parameter
-    expect(page.url()).toContain('county=los-angeles');
+    // URL should contain query parameter after submit
+    await expect(page).toHaveURL(/county=los-angeles/);
 
     // Heading should update to specify county
     const resultsHeading = page.locator('h2');
@@ -45,7 +46,7 @@ test.describe('Advocates Directory E2E Tests', () => {
     const firstCard = page.locator('strong:has-text("Advocate")').first();
     await expect(firstCard).toBeVisible();
 
-    const bodyText = await page.textContent('body');
+    const bodyText = await page.innerText('body');
     
     // Unverified/source-listed labels check
     expect(bodyText).toMatch(/Unverified directory listing|Verified Professional Listing|Source-listed/i);
