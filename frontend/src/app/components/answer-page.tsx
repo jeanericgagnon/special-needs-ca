@@ -120,7 +120,7 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
     let medCount = 0;
     
     Object.entries(quizAnswers).forEach(([qIdx, oIdx]) => {
-      const option = data.eligibilityQuiz[Number(qIdx)]?.options[oIdx];
+      const option = data.eligibilityQuiz?.[Number(qIdx)]?.options[oIdx];
       if (option?.score === 'high') highCount++;
       if (option?.score === 'med') medCount++;
     });
@@ -131,6 +131,7 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
   };
 
   const handleCopyScript = () => {
+    if (!data.callScriptTemplate) return;
     let scriptText = data.callScriptTemplate.script;
     
     // Replace script placeholders dynamically
@@ -404,97 +405,101 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
           </div>
 
           {/* Eligibility Screener Quiz */}
-          <div className="glass-panel" style={{ padding: '1.25rem', background: '#fafafa', border: '1px solid #eee' }}>
-            <h3 style={{ fontSize: '1rem', fontWeight: 800, margin: '0 0 0.5rem 0', display: 'flex', alignItems: 'center', gap: '0.4rem', color: 'var(--text-main)' }}>
-              <HelpCircle size={16} color="var(--primary-color)" /> Mini-Screener Check
-            </h3>
-            <p style={{ fontSize: '0.78rem', color: 'var(--text-light)', marginBottom: '0.75rem' }}>
-              Answer these questions to check likelihood.
-            </p>
+          {data.eligibilityQuiz && data.eligibilityQuiz.length > 0 && (
+            <div className="glass-panel" style={{ padding: '1.25rem', background: '#fafafa', border: '1px solid #eee' }}>
+              <h3 style={{ fontSize: '1rem', fontWeight: 800, margin: '0 0 0.5rem 0', display: 'flex', alignItems: 'center', gap: '0.4rem', color: 'var(--text-main)' }}>
+                <HelpCircle size={16} color="var(--primary-color)" /> Mini-Screener Check
+              </h3>
+              <p style={{ fontSize: '0.78rem', color: 'var(--text-light)', marginBottom: '0.75rem' }}>
+                Answer these questions to check likelihood.
+              </p>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
-              {data.eligibilityQuiz.map((q, qIdx) => (
-                <div key={qIdx} style={{ display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
-                  <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--text-main)' }}>{q.question}</span>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
-                    {q.options.map((opt, oIdx) => (
-                      <label key={oIdx} style={{ display: 'flex', gap: '0.4rem', alignItems: 'center', fontSize: '0.75rem', cursor: 'pointer', background: quizAnswers[qIdx] === oIdx ? 'rgba(var(--primary-rgb),0.05)' : 'white', padding: '0.35rem 0.5rem', borderRadius: '6px', border: quizAnswers[qIdx] === oIdx ? '1px solid var(--primary-color)' : '1px solid #ddd' }}>
-                        <input 
-                          type="radio" 
-                          aria-label={opt.text}
-                          name={`quiz-${qIdx}`} 
-                          checked={quizAnswers[qIdx] === oIdx} 
-                          onChange={() => {
-                            setQuizAnswers(prev => ({ ...prev, [qIdx]: oIdx }));
-                            setShowQuizResult(true);
-                          }}
-                          style={{ accentColor: 'var(--primary-color)' }}
-                        />
-                        <span>{opt.text}</span>
-                      </label>
-                    ))}
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
+                {data.eligibilityQuiz.map((q, qIdx) => (
+                  <div key={qIdx} style={{ display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
+                    <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--text-main)' }}>{q.question}</span>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
+                      {q.options.map((opt, oIdx) => (
+                        <label key={oIdx} style={{ display: 'flex', gap: '0.4rem', alignItems: 'center', fontSize: '0.75rem', cursor: 'pointer', background: quizAnswers[qIdx] === oIdx ? 'rgba(var(--primary-rgb),0.05)' : 'white', padding: '0.35rem 0.5rem', borderRadius: '6px', border: quizAnswers[qIdx] === oIdx ? '1px solid var(--primary-color)' : '1px solid #ddd' }}>
+                          <input 
+                            type="radio" 
+                            aria-label={opt.text}
+                            name={`quiz-${qIdx}`} 
+                            checked={quizAnswers[qIdx] === oIdx} 
+                            onChange={() => {
+                              setQuizAnswers(prev => ({ ...prev, [qIdx]: oIdx }));
+                              setShowQuizResult(true);
+                            }}
+                            style={{ accentColor: 'var(--primary-color)' }}
+                          />
+                          <span>{opt.text}</span>
+                        </label>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
 
-              {showQuizResult && (
-                <div style={{ background: getQuizScore().bg, padding: '0.75rem', borderRadius: '8px', border: '1px solid', borderColor: getQuizScore().color }} className="animate-fade-in">
-                  <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '0.25rem' }}>
-                    <span>Estimated Likelihood:</span>
-                    <span style={{ color: getQuizScore().color }}>{getQuizScore().score}</span>
+                {showQuizResult && (
+                  <div style={{ background: getQuizScore().bg, padding: '0.75rem', borderRadius: '8px', border: '1px solid', borderColor: getQuizScore().color }} className="animate-fade-in">
+                    <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '0.25rem' }}>
+                      <span>Estimated Likelihood:</span>
+                      <span style={{ color: getQuizScore().color }}>{getQuizScore().score}</span>
+                    </div>
+                    <p style={{ margin: 0, fontSize: '0.7rem', color: 'var(--text-light)', lineHeight: '1.3' }}>
+                      {quizAnswers[0] !== undefined && data.eligibilityQuiz?.[0]?.options[quizAnswers[0]]?.reason}
+                    </p>
                   </div>
-                  <p style={{ margin: 0, fontSize: '0.7rem', color: 'var(--text-light)', lineHeight: '1.3' }}>
-                    {quizAnswers[0] !== undefined && data.eligibilityQuiz[0]?.options[quizAnswers[0]]?.reason}
-                  </p>
-                </div>
-              )}
+                )}
+              </div>
             </div>
-          </div>
+          )}
 
           {/* Call Script Customizer */}
-          <div className="glass-panel" style={{ padding: '1.25rem', background: '#fafafa', border: '1px solid #eee' }}>
-            <h3 style={{ fontSize: '1rem', fontWeight: 800, margin: '0 0 0.5rem 0', display: 'flex', alignItems: 'center', gap: '0.4rem', color: 'var(--text-main)' }}>
-              <Phone size={16} color="var(--primary-color)" /> Intake Phone Script
-            </h3>
-            
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '0.75rem' }}>
-              <input 
-                type="text" 
-                aria-label="Parent Name"
-                placeholder="Parent Name" 
-                value={parentNameInput} 
-                onChange={(e) => setParentNameInput(e.target.value)}
-                style={{ padding: '0.35rem 0.5rem', borderRadius: '6px', border: '1px solid #ddd', fontSize: '0.75rem' }}
-              />
-              <input 
-                type="text" 
-                aria-label="Child Name"
-                placeholder="Child&apos;s Name" 
-                value={childNameInput} 
-                onChange={(e) => setChildNameInput(e.target.value)}
-                style={{ padding: '0.35rem 0.5rem', borderRadius: '6px', border: '1px solid #ddd', fontSize: '0.75rem' }}
-              />
-              <input 
-                type="text" 
-                aria-label="Child Date of Birth"
-                placeholder="Child&apos;s DOB (e.g. 10/12/2021)" 
-                value={childDobInput} 
-                onChange={(e) => setChildDobInput(e.target.value)}
-                style={{ padding: '0.35rem 0.5rem', borderRadius: '6px', border: '1px solid #ddd', fontSize: '0.75rem' }}
-              />
-            </div>
+          {data.callScriptTemplate && (
+            <div className="glass-panel" style={{ padding: '1.25rem', background: '#fafafa', border: '1px solid #eee' }}>
+              <h3 style={{ fontSize: '1rem', fontWeight: 800, margin: '0 0 0.5rem 0', display: 'flex', alignItems: 'center', gap: '0.4rem', color: 'var(--text-main)' }}>
+                <Phone size={16} color="var(--primary-color)" /> Intake Phone Script
+              </h3>
+              
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '0.75rem' }}>
+                <input 
+                  type="text" 
+                  aria-label="Parent Name"
+                  placeholder="Parent Name" 
+                  value={parentNameInput} 
+                  onChange={(e) => setParentNameInput(e.target.value)}
+                  style={{ padding: '0.35rem 0.5rem', borderRadius: '6px', border: '1px solid #ddd', fontSize: '0.75rem' }}
+                />
+                <input 
+                  type="text" 
+                  aria-label="Child Name"
+                  placeholder="Child&apos;s Name" 
+                  value={childNameInput} 
+                  onChange={(e) => setChildNameInput(e.target.value)}
+                  style={{ padding: '0.35rem 0.5rem', borderRadius: '6px', border: '1px solid #ddd', fontSize: '0.75rem' }}
+                />
+                <input 
+                  type="text" 
+                  aria-label="Child Date of Birth"
+                  placeholder="Child&apos;s DOB (e.g. 10/12/2021)" 
+                  value={childDobInput} 
+                  onChange={(e) => setChildDobInput(e.target.value)}
+                  style={{ padding: '0.35rem 0.5rem', borderRadius: '6px', border: '1px solid #ddd', fontSize: '0.75rem' }}
+                />
+              </div>
 
-            <button 
-              onClick={handleCopyScript}
-              className="btn-primary"
-              style={{ width: '100%', fontSize: '0.75rem', height: '32px', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '0.25rem' }}
-            >
-              <Copy size={12} /> {copiedScript ? 'Script Copied!' : 'Copy Filled Script'}
-            </button>
-            <span style={{ fontSize: '0.68rem', color: 'var(--text-light)', display: 'block', marginTop: '0.3rem', textAlign: 'center' }}>
-              {data.callScriptTemplate.intro}
-            </span>
-          </div>
+              <button 
+                onClick={handleCopyScript}
+                className="btn-primary"
+                style={{ width: '100%', fontSize: '0.75rem', height: '32px', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '0.25rem' }}
+              >
+                <Copy size={12} /> {copiedScript ? 'Script Copied!' : 'Copy Filled Script'}
+              </button>
+              <span style={{ fontSize: '0.68rem', color: 'var(--text-light)', display: 'block', marginTop: '0.3rem', textAlign: 'center' }}>
+                {data.callScriptTemplate.intro}
+              </span>
+            </div>
+          )}
 
           {/* Letter Template Generator */}
           {data.letterTemplate && (

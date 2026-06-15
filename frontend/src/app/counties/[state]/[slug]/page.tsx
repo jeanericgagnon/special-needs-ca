@@ -6,6 +6,26 @@ import DirectoryReviews from '@/app/dashboard/components/DirectoryReviews';
 import SeoSchema from '@/app/components/seo-schema';
 import { TrustBadge } from '@/app/counties/components/CorrectionFlow';
 import SourceFreshnessDisclosure from '@/app/components/SourceFreshnessDisclosure';
+import { getDynamicStateConfig } from '@/lib/stateConfigs';
+import { NON_CA_VERIFIED_COUNTIES } from '@/lib/verifiedCounties';
+import { getCountyMetadata, getCountyIntroCopy } from '@/lib/countySeoHelpers';
+
+function formatIntroCopy(text: string) {
+  return text.split('\n').map((line, i) => {
+    const parts = line.split('**');
+    return (
+      <div key={i} style={{ marginBottom: '0.4rem', lineHeight: '1.6' }}>
+        {parts.map((part, j) => {
+          if (j % 2 === 1) {
+            return <strong key={j}>{part}</strong>;
+          }
+          return part;
+        })}
+      </div>
+    );
+  });
+}
+
 
 type Props = {
   params: Promise<{ state: string; slug: string }>;
@@ -34,12 +54,16 @@ export async function generateMetadata({ params }: Props) {
   const countyDetails = await getCountyDetails(slug);
   
   if (stateData && countyDetails && countyDetails.state_id === stateData.id) {
+    const isIndexable = stateData.id === 'california' || NON_CA_VERIFIED_COUNTIES.includes(countyDetails.id);
+    const seo = getCountyMetadata(stateData.id, stateData.name, stateData.code, countyDetails);
+    
     return {
-      title: `${countyDetails.name} County Special Needs Benefits & Resources (${stateData.code})`,
-      description: `Find local service helpline numbers, school district offices, and catchment boundaries for ${countyDetails.name} County, ${stateData.name}.`,
+      title: seo.title,
+      description: seo.description,
       alternates: {
         canonical: `/counties/${stateData.id}/${countyDetails.id}`
-      }
+      },
+      robots: isIndexable ? undefined : { index: false, follow: true }
     };
   }
 
@@ -70,13 +94,14 @@ export default async function CountyPage({ params }: Props) {
     notFound();
   }
 
+  const stateConfig = getDynamicStateConfig(stateData.id, stateData.name, stateData.code);
   const countiesList = (await getCounties(stateData.id)).map(c => ({ id: c.id, name: c.name }));
   const countyWage = countyDetails.ihss_wage_rate || 18.00;
 
   const countyName = countyDetails.name;
-  const catchmentLabel = stateCatchments[stateData.id] || 'Developmental Disability Agency';
-  const educationLabel = educationLabels[stateData.id] || educationLabels.default;
-  const insuranceLabel = stateData.id === 'california' ? 'Medi-Cal' : 'Medicaid';
+  const catchmentLabel = stateConfig.catchmentName;
+  const educationLabel = stateConfig.educationAgencyLabel;
+  const insuranceLabel = stateConfig.medicaidName;
   
   const rcName = countyDetails.regionalCenters?.[0]?.name || `Local ${catchmentLabel}`;
   
@@ -151,9 +176,9 @@ export default async function CountyPage({ params }: Props) {
         <h1 style={{ fontSize: '2.2rem', fontWeight: 800, margin: 0, color: 'var(--text-main)' }}>
           {countyDetails.name} County Disability Benefits Guide
         </h1>
-        <p style={{ fontSize: '1rem', color: 'var(--text-light)', marginTop: '0.5rem', maxWidth: '800px', lineHeight: '1.5' }}>
-          If you live in {countyDetails.name} County, {stateData.name}, your child is eligible for specialized local services. The local waiver/caregiver hourly wage is <strong>${countyWage.toFixed(2)}/hour</strong>. Use this directory to contact intake offices, look up school districts, check {catchmentLabel} boundary coverage, and read community reviews.
-        </p>
+        <div style={{ fontSize: '1rem', color: 'var(--text-light)', marginTop: '0.75rem', maxWidth: '850px' }}>
+          {formatIntroCopy(getCountyIntroCopy(stateData.id, stateData.name, stateData.code, countyDetails, countyWage, catchmentLabel, insuranceLabel))}
+        </div>
       </div>
 
       {/* 2-Column Grid Layout */}
@@ -227,29 +252,42 @@ export default async function CountyPage({ params }: Props) {
             <h2 style={{ fontSize: '1.3rem', fontWeight: 800, color: 'var(--text-main)', marginBottom: '1.25rem', borderBottom: '1px solid rgba(0,0,0,0.06)', paddingBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
               <MapPin color="var(--primary-color)" size={20} /> County Admin Support Offices
             </h2>
+            <p style={{ fontSize: '0.9rem', color: 'var(--text-light)', marginBottom: '1.25rem', marginTop: '-0.5rem', lineHeight: '1.5' }}>
+              Local administrative offices managing eligibility, applications, and intake support for {insuranceLabel} and county-level social services.
+            </p>
             {countyDetails.countyOffices && countyDetails.countyOffices.length > 0 ? (
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-                {countyDetails.countyOffices.map((office) => (
-                  <div key={office.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', fontSize: '0.9rem', borderBottom: '1px solid #f0f0f0', paddingBottom: '1rem' }}>
-                    <h3 style={{ fontSize: '1.05rem', fontWeight: 700, color: 'var(--text-main)', margin: 0 }}>{office.office_name}</h3>
-                    <span><strong>Address:</strong> {office.address}</span>
-                    <span><strong>Phone Intake:</strong> <a href={`tel:${office.phone}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{office.phone}</a></span>
-                    {office.email && <span><strong>Email:</strong> {office.email}</span>}
-                    {office.website && (
-                      <a href={office.website} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem', color: 'var(--primary-color)', fontWeight: 600, textDecoration: 'none', marginTop: '0.2rem' }}>
-                        <Globe size={14} /> Visit Office Webpage
-                      </a>
-                    )}
-                    <TrustBadge
-                      status={office.verification_status}
-                      lastVerifiedDate={office.last_verified_date}
-                      sourceUrl={office.source_url || office.website}
-                      entityId={office.id}
-                      entityName={office.office_name}
-                      entityType="county_office"
-                    />
-                  </div>
-                ))}
+                {countyDetails.countyOffices.map((office) => {
+                  const isEmptyManualReview = office.verification_status === 'manual_review_required' &&
+                    !office.phone &&
+                    !office.email &&
+                    !office.website &&
+                    !office.address;
+                  if (isEmptyManualReview) return null;
+                  return (
+                    <div key={office.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', fontSize: '0.9rem', borderBottom: '1px solid #f0f0f0', paddingBottom: '1rem' }}>
+                      <h3 style={{ fontSize: '1.05rem', fontWeight: 700, color: 'var(--text-main)', margin: 0 }}>{office.office_name}</h3>
+                      {office.address && <span><strong>Address:</strong> {office.address}</span>}
+                      {office.phone && (
+                        <span><strong>Phone Intake:</strong> <a href={`tel:${office.phone}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{office.phone}</a></span>
+                      )}
+                      {office.email && <span><strong>Email:</strong> {office.email}</span>}
+                      {office.website && (
+                        <a href={office.website} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem', color: 'var(--primary-color)', fontWeight: 600, textDecoration: 'none', marginTop: '0.2rem' }}>
+                          <Globe size={14} /> Visit Office Webpage
+                        </a>
+                      )}
+                      <TrustBadge
+                        status={office.verification_status}
+                        lastVerifiedDate={office.last_verified_date}
+                        sourceUrl={office.source_url || office.website}
+                        entityId={office.id}
+                        entityName={office.office_name}
+                        entityType="county_office"
+                      />
+                    </div>
+                  );
+                })}
               </div>
             ) : (
               <p style={{ fontSize: '0.9rem', color: 'var(--text-light)' }}>No county administrative offices listed in DB.</p>
@@ -267,26 +305,33 @@ export default async function CountyPage({ params }: Props) {
               <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '0.75rem' }}>Local School Districts</h3>
               {countyDetails.schoolDistricts && countyDetails.schoolDistricts.length > 0 ? (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                  {countyDetails.schoolDistricts.map((dist) => (
-                    <div key={dist.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', background: '#fafafa', padding: '0.75rem 1rem', borderRadius: '8px', border: '1px solid #eee', fontSize: '0.85rem' }}>
-                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem' }}>
-                        <span style={{ fontWeight: 600, color: 'var(--text-main)' }}>{dist.name}</span>
-                        {dist.spec_ed_contact_phone && (
-                          <a href={`tel:${dist.spec_ed_contact_phone}`} style={{ color: 'var(--primary-color)', display: 'inline-flex', alignItems: 'center', gap: '0.2rem', textDecoration: 'none' }}>
-                            <Phone size={12} /> {dist.spec_ed_contact_phone}
-                          </a>
-                        )}
+                  {countyDetails.schoolDistricts.map((dist) => {
+                    const isEmptyManualReview = dist.verification_status === 'manual_review_required' &&
+                      !dist.spec_ed_contact_phone &&
+                      !dist.spec_ed_contact_email &&
+                      !dist.website;
+                    if (isEmptyManualReview) return null;
+                    return (
+                      <div key={dist.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', background: '#fafafa', padding: '0.75rem 1rem', borderRadius: '8px', border: '1px solid #eee', fontSize: '0.85rem' }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem' }}>
+                          <span style={{ fontWeight: 600, color: 'var(--text-main)' }}>{dist.name}</span>
+                          {dist.spec_ed_contact_phone && (
+                            <a href={`tel:${dist.spec_ed_contact_phone}`} style={{ color: 'var(--primary-color)', display: 'inline-flex', alignItems: 'center', gap: '0.2rem', textDecoration: 'none' }}>
+                              <Phone size={12} /> {dist.spec_ed_contact_phone}
+                            </a>
+                          )}
+                        </div>
+                        <TrustBadge
+                          status={dist.verification_status}
+                          lastVerifiedDate={dist.last_verified_date}
+                          sourceUrl={dist.source_url || dist.website}
+                          entityId={dist.id}
+                          entityName={dist.name}
+                          entityType="school_district"
+                        />
                       </div>
-                      <TrustBadge
-                        status={dist.verification_status}
-                        lastVerifiedDate={dist.last_verified_date}
-                        sourceUrl={dist.source_url || dist.website}
-                        entityId={dist.id}
-                        entityName={dist.name}
-                        entityType="school_district"
-                      />
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               ) : (
                 <p style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>No school district records in database.</p>
@@ -328,30 +373,38 @@ export default async function CountyPage({ params }: Props) {
               <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '0.75rem' }}>Nonprofit Support & Local Resources</h3>
               {countyDetails.localOrganizations && countyDetails.localOrganizations.length > 0 ? (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                  {countyDetails.localOrganizations.map((org) => (
-                    <div key={org.id} style={{ fontSize: '0.85rem', display: 'flex', flexDirection: 'column', gap: '0.4rem', padding: '0.75rem', background: '#fafafa', borderRadius: '8px', border: '1px solid #eee' }}>
-                      <strong style={{ color: 'var(--text-main)' }}>{org.name}</strong>
-                      {org.focus_condition && org.focus_condition !== 'any' && (
-                        <span style={{ fontSize: '0.75rem', color: 'var(--primary-color)', fontWeight: 600 }}>
-                          Focus: {org.focus_condition.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}
-                        </span>
-                      )}
-                      <span><strong>Phone:</strong> <a href={`tel:${org.phone}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{org.phone}</a></span>
-                      {org.website && (
-                        <a href={org.website} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)', textDecoration: 'underline', marginTop: '0.1rem', display: 'inline-flex', alignItems: 'center', gap: '0.2rem' }}>
-                          <Globe size={12} /> Visit Support Site
-                        </a>
-                      )}
-                      <TrustBadge
-                        status={org.verification_status}
-                        lastVerifiedDate={org.last_verified_date}
-                        sourceUrl={org.source_url || org.website}
-                        entityId={org.id}
-                        entityName={org.name}
-                        entityType="nonprofit"
-                      />
-                    </div>
-                  ))}
+                  {countyDetails.localOrganizations.map((org) => {
+                    const isEmptyManualReview = org.verification_status === 'manual_review_required' &&
+                      !org.phone &&
+                      !org.website;
+                    if (isEmptyManualReview) return null;
+                    return (
+                      <div key={org.id} style={{ fontSize: '0.85rem', display: 'flex', flexDirection: 'column', gap: '0.4rem', padding: '0.75rem', background: '#fafafa', borderRadius: '8px', border: '1px solid #eee' }}>
+                        <strong style={{ color: 'var(--text-main)' }}>{org.name}</strong>
+                        {org.focus_condition && org.focus_condition !== 'any' && (
+                          <span style={{ fontSize: '0.75rem', color: 'var(--primary-color)', fontWeight: 600 }}>
+                            Focus: {org.focus_condition.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}
+                          </span>
+                        )}
+                        {org.phone && (
+                          <span><strong>Phone:</strong> <a href={`tel:${org.phone}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{org.phone}</a></span>
+                        )}
+                        {org.website && (
+                          <a href={org.website} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)', textDecoration: 'underline', marginTop: '0.1rem', display: 'inline-flex', alignItems: 'center', gap: '0.2rem' }}>
+                            <Globe size={12} /> Visit Support Site
+                          </a>
+                        )}
+                        <TrustBadge
+                          status={org.verification_status}
+                          lastVerifiedDate={org.last_verified_date}
+                          sourceUrl={org.source_url || org.website}
+                          entityId={org.id}
+                          entityName={org.name}
+                          entityType="nonprofit"
+                        />
+                      </div>
+                    );
+                  })}
                 </div>
               ) : (
                 <p style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>No local support organizations listed in DB.</p>
@@ -428,11 +481,17 @@ export default async function CountyPage({ params }: Props) {
 
       </div>
 
-      <SourceFreshnessDisclosure sources={[
-        { name: 'California Department of Developmental Services', url: 'https://www.dds.ca.gov', lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' },
-        { name: 'California Department of Social Services', url: 'https://www.cdss.ca.gov', lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' },
-        { name: 'California Department of Health Care Services', url: 'https://www.dhcs.ca.gov', lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' }
-      ]} />
+      <SourceFreshnessDisclosure sources={
+        stateData.id === 'california' ? [
+          { name: 'California Department of Developmental Services', url: 'https://www.dds.ca.gov', lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' },
+          { name: 'California Department of Social Services', url: 'https://www.cdss.ca.gov', lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' },
+          { name: 'California Department of Health Care Services', url: 'https://www.dhcs.ca.gov', lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' }
+        ] : [
+          { name: stateConfig.ddAgency, url: '#', lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' },
+          { name: stateConfig.stateMedicaidAgency, url: '#', lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' },
+          { name: stateConfig.educationAgency, url: '#', lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' }
+        ]
+      } />
 
     </main>
   );

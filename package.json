@@ -12,6 +12,11 @@
     "crawl:wrightslaw": "node src/scrapers/wrightslaw_scraper.js",
     "audit:ca-coverage": "node src/db/audit_ca_coverage.js",
     "audit:seo-launch-ca": "node src/db/audit_seo_launch_ca.js",
+    "audit:state": "node src/db/audit_state.js",
+    "audit:state-standard": "node --experimental-strip-types src/db/audit_state_standard.js",
+    "audit:state-depth": "node --experimental-strip-types src/db/audit_state_depth.js",
+    "audit:scraping-vs-seeding": "node --experimental-strip-types src/db/audit_scraping_vs_seeding.js",
+    "plan:state-upgrade": "node --experimental-strip-types src/db/plan_state_upgrade.js",
     "test:quality-gates": "node src/scratch/verify_requirements.js",
     "preview": "vite preview"
   },

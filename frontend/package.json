@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test:e2e": "playwright test",
-    "test:e2e:headed": "playwright test --headed",
+    "test:e2e": "DB_ENCRYPTION_KEY=ca-special-needs-navigator-key-dev-32 playwright test",
+    "test:e2e:headed": "DB_ENCRYPTION_KEY=ca-special-needs-navigator-key-dev-32 playwright test --headed",
     "test:e2e:report": "playwright show-report"
   },
   "dependencies": {

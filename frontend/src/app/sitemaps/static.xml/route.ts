@@ -16,12 +16,25 @@ export async function GET() {
     // Texas
     { loc: '/benefits/texas', changefreq: 'weekly', priority: '0.9', lastmod: today },
     { loc: '/counties/texas', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Texas Programs
+    { loc: '/programs/tx-hcs', changefreq: 'weekly', priority: '0.8', lastmod: today },
+    { loc: '/programs/tx-class', changefreq: 'weekly', priority: '0.8', lastmod: today },
+    { loc: '/programs/tx-txhml', changefreq: 'weekly', priority: '0.8', lastmod: today },
+    { loc: '/programs/tx-mdcp', changefreq: 'weekly', priority: '0.8', lastmod: today },
+    { loc: '/programs/tx-eci', changefreq: 'weekly', priority: '0.8', lastmod: today },
+    { loc: '/programs/tx-tea-sped', changefreq: 'weekly', priority: '0.8', lastmod: today },
+    { loc: '/programs/tx-able', changefreq: 'weekly', priority: '0.8', lastmod: today },
+    { loc: '/programs/tx-medicaid', changefreq: 'weekly', priority: '0.8', lastmod: today },
+    { loc: '/programs/tx-yes', changefreq: 'weekly', priority: '0.8', lastmod: today },
+    { loc: '/programs/tx-dbmd', changefreq: 'weekly', priority: '0.8', lastmod: today },
+    { loc: '/programs/tx-starplus-hcbs', changefreq: 'weekly', priority: '0.8', lastmod: today },
+    { loc: '/programs/tx-twc-vr', changefreq: 'weekly', priority: '0.8', lastmod: today },
     // Florida
     { loc: '/benefits/florida', changefreq: 'weekly', priority: '0.9', lastmod: today },
     { loc: '/counties/florida', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // New York
-    { loc: '/benefits/new-york', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/new-york', changefreq: 'weekly', priority: '0.85', lastmod: today }
+    // Pennsylvania
+    { loc: '/benefits/pennsylvania', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/pennsylvania', changefreq: 'weekly', priority: '0.85', lastmod: today }
   ];
 
   const xmlUrls = staticUrls.map(url => `  <url>

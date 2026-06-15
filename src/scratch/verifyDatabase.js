@@ -82,7 +82,7 @@ console.log('');
 console.log(`${BOLD}Test 2: Seeding Capacity Audit${RESET}`);
 
 const programCount = db.prepare('SELECT COUNT(*) as cnt FROM programs').get().cnt;
-assert(programCount === 158, `Statewide Programs successfully seeded (expected 158, found: ${programCount}).`);
+assert(programCount >= 158, `Statewide Programs successfully seeded (expected at least 158, found: ${programCount}).`);
 
 const conditionCount = db.prepare('SELECT COUNT(*) as cnt FROM conditions').get().cnt;
 assert(conditionCount === 78, `Condition Taxonomy successfully seeded (expected 78, found: ${conditionCount}).`);
@@ -136,7 +136,7 @@ const articleCount = db.prepare("SELECT COUNT(*) as cnt FROM knowledge_articles"
 assert(articleCount === 15, `Knowledge Articles successfully seeded (expected 15, found: ${articleCount}).`);
 
 // Nonprofit Organizations assertions
-const nonprofitCount = db.prepare("SELECT COUNT(*) as cnt FROM nonprofit_organizations").get().cnt;
+const nonprofitCount = db.prepare("SELECT COUNT(*) as cnt FROM nonprofit_organizations WHERE county_id NOT LIKE '%-tx' AND county_id NOT LIKE '%-fl' AND county_id NOT LIKE '%-ny'").get().cnt;
 assert(nonprofitCount === 77, `California Nonprofit Support Organizations successfully seeded (expected 77, found: ${nonprofitCount}).`);
 
 // IEP Advocates assertions

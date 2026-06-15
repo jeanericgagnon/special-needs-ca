@@ -4,11 +4,26 @@ import { Pool, PoolClient } from 'pg';
 import { AsyncLocalStorage } from 'async_hooks';
 import path from 'path';
 import crypto from 'crypto';
+import fs from 'fs';
 import { DIAGNOSES_DETAILS } from './diagnoses';
 
-// Define DB Paths relative to next.js execution (working directory is usually the root of frontend/)
-const crawlerDbPath = path.resolve(process.cwd(), 'ca_disability_crawler.db');
-const navigatorDbPath = path.resolve(process.cwd(), 'ca_disability_navigator.db');
+// Helper to locate DB file dynamically in serverless environments
+function findDbPath(dbName: string): string {
+  const paths = [
+    path.resolve(process.cwd(), dbName),
+    path.resolve(process.cwd(), 'frontend', dbName),
+  ];
+  for (const p of paths) {
+    if (fs.existsSync(p)) {
+      return p;
+    }
+  }
+  return path.resolve(process.cwd(), dbName); // fallback
+}
+
+// Define DB Paths relative to next.js execution
+const crawlerDbPath = findDbPath('ca_disability_crawler.db');
+const navigatorDbPath = findDbPath('ca_disability_navigator.db');
 
 // Instantiate DB handles lazily using proxies to prevent Next.js build-time lockouts
 const isVercel = process.env.VERCEL === '1';
@@ -158,15 +173,26 @@ let migrationsRun = false;
 
 function ensureCrawlerDb() {
   if (!crawlerDbInstance) {
-    crawlerDbInstance = new Database(crawlerDbPath, { readonly: true });
+    crawlerDbInstance = new Database(crawlerDbPath, { readonly: true, timeout: 5000 });
+    try {
+      crawlerDbInstance.pragma('journal_mode = WAL');
+    } catch (e) {
+      // Ignore if readonly connection cannot enable WAL
+    }
   }
   return crawlerDbInstance;
 }
 
 function ensureNavigatorDb() {
   if (!navigatorDbInstance) {
-    navigatorDbInstance = new Database(navigatorDbPath, { readonly: isVercel });
-    if (!isVercel) {
+    const readonly = isVercel;
+    navigatorDbInstance = new Database(navigatorDbPath, { readonly, timeout: 5000 });
+    try {
+      navigatorDbInstance.pragma('journal_mode = WAL');
+    } catch (e) {
+      // Ignore if readonly connection cannot enable WAL
+    }
+    if (!readonly) {
       navigatorDbInstance.pragma('foreign_keys = ON');
       if (!migrationsRun) {
         migrationsRun = true;
@@ -379,6 +405,8 @@ async function runPgMigrations(pool: Pool) {
     CREATE OR REPLACE VIEW regional_centers AS
     SELECT 
       id,
+      state_id,
+      agency_type,
       name,
       counties_served,
       catchment_boundaries,
@@ -2206,6 +2234,8 @@ export interface NonprofitOrganization {
 
 export interface RegionalCenter {
   id: string;
+  state_id?: string | null;
+  agency_type?: string | null;
   name: string;
   website: string;
   counties_served: string;

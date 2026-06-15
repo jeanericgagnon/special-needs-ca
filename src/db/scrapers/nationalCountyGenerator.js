@@ -405,6 +405,67 @@ try {
   })();
   console.log(`  ✓ Seeded ${nationalAgencies.length} Regional Education Agencies & county mappings.`);
 
+  console.log('⏳ Generating non-California Agency County mappings...');
+  const agencies = db.prepare("SELECT id, counties_served FROM state_resource_agencies WHERE state_id != 'california'").all();
+  let mappedCount = 0;
+  db.transaction(() => {
+    for (const agency of agencies) {
+      if (agency.counties_served) {
+        const counties = agency.counties_served.split(',').map(c => c.trim()).filter(Boolean);
+        for (const c of counties) {
+          insertRcCounty.run(agency.id, c);
+          mappedCount++;
+        }
+      }
+    }
+  })();
+  console.log(`  ✓ Seeded ${mappedCount} non-California Agency County mappings.`);
+
+  // Ensure all 254 Texas counties have a LIDDA mapping by covering the 18 counties that aren't in the default list
+  const txCountyFallbacks = {
+    'borden-tx': 'west-texas',
+    'childress-tx': 'helen-farabee',
+    'dawson-tx': 'west-texas',
+    'dickens-tx': 'helen-farabee',
+    'fisher-tx': 'west-texas',
+    'haskell-tx': 'helen-farabee',
+    'howard-tx': 'west-texas',
+    'kent-tx': 'helen-farabee',
+    'king-tx': 'helen-farabee',
+    'knox-tx': 'helen-farabee',
+    'runnels-tx': 'west-texas',
+    'stonewall-tx': 'helen-farabee',
+    'terry-tx': 'west-texas',
+    'throckmorton-tx': 'helen-farabee',
+    'trinity-tx': 'burke',
+    'uvalde-tx': 'hill-country',
+    'wise-tx': 'helen-farabee',
+    'yoakum-tx': 'west-texas'
+  };
+
+  db.transaction(() => {
+    for (const [cId, agencyId] of Object.entries(txCountyFallbacks)) {
+      insertRcCounty.run(agencyId, cId);
+    }
+  })();
+  console.log('  ✓ Seeded fallback LIDDA mappings for remaining 18 Texas counties.');
+
+  console.log('⏳ Seeding Texas Local Nonprofit Organizations...');
+  const insertNonprofit = db.prepare('INSERT OR REPLACE INTO nonprofit_organizations (id, name, county_id, website, phone, focus_condition, source_url, source_type, data_origin, verification_status, last_verified_date, last_scraped_at, confidence_score) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
+  const txNonprofits = [
+    { id: 'tx-nonprofit-harris-1', county_id: 'harris-tx', name: 'Family to Family Network', website: 'https://www.familytofamilynetwork.org', phone: '(713) 466-6504', focus: 'any' },
+    { id: 'tx-nonprofit-dallas-1', county_id: 'dallas-tx', name: 'Partners Resource Network - PATH Project', website: 'https://prntexas.org', phone: '(409) 898-4684', focus: 'any' },
+    { id: 'tx-nonprofit-travis-1', county_id: 'travis-tx', name: 'Texas Parent to Parent', website: 'https://www.txp2p.org', phone: '(512) 458-8600', focus: 'any' },
+    { id: 'tx-nonprofit-bexar-1', county_id: 'bexar-tx', name: 'The Arc of San Antonio', website: 'https://www.thearcsada.org', phone: '(210) 490-4300', focus: 'any' },
+    { id: 'tx-nonprofit-tarrant-1', county_id: 'tarrant-tx', name: 'Partners Resource Network - PEN Project', website: 'https://prntexas.org', phone: '(409) 898-4684', focus: 'any' }
+  ];
+  db.transaction(() => {
+    for (const np of txNonprofits) {
+      insertNonprofit.run(np.id, np.name, np.county_id, np.website, np.phone, np.focus, np.website, 'nonprofit', 'curated_seed', 'source_listed', '2026-06-01', new Date().toISOString(), 4.0);
+    }
+  })();
+  console.log(`  ✓ Seeded ${txNonprofits.length} Texas local nonprofits.`);
+
   console.log('🎉 SUCCESS: Ingestion of all 50-state county records completed successfully!');
 
 } catch (err) {

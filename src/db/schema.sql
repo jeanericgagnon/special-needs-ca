@@ -157,6 +157,8 @@ CREATE TABLE IF NOT EXISTS regional_education_agencies (
 CREATE VIEW IF NOT EXISTS regional_centers AS
 SELECT 
     id,
+    state_id,
+    agency_type,
     name,
     counties_served,
     catchment_boundaries,
@@ -679,4 +681,283 @@ CREATE TABLE IF NOT EXISTS child_respite_assessments (
     updated_at TEXT NOT NULL,
     FOREIGN KEY (child_id) REFERENCES child_profiles(id) ON DELETE CASCADE
 );
+
+-- 47. staging_source_targets
+CREATE TABLE IF NOT EXISTS staging_source_targets (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    state_id TEXT NOT NULL,
+    category TEXT NOT NULL,
+    source_name TEXT NOT NULL,
+    organization_type TEXT NOT NULL,
+    source_url TEXT NOT NULL,
+    domain TEXT NOT NULL,
+    target_tables TEXT NOT NULL,
+    expected_fields TEXT NOT NULL,
+    crawl_method TEXT NOT NULL,
+    robots_txt_status TEXT NOT NULL,
+    terms_risk TEXT NOT NULL,
+    priority INTEGER NOT NULL,
+    update_frequency_estimate TEXT,
+    notes TEXT,
+    last_checked_at TEXT
+);
+
+-- 48. staging_scraped_county_offices
+CREATE TABLE IF NOT EXISTS staging_scraped_county_offices (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    source_url TEXT NOT NULL,
+    source_name TEXT,
+    source_type TEXT,
+    scraped_at TEXT NOT NULL,
+    state_id TEXT NOT NULL,
+    county_id TEXT,
+    confidence_score REAL,
+    extraction_notes TEXT,
+    raw_text_excerpt TEXT,
+    suggested_target_table TEXT,
+    suggested_target_id TEXT,
+    duplicate_candidate_id TEXT,
+    review_status TEXT DEFAULT 'pending_review',
+    extracted_name TEXT NOT NULL,
+    extracted_phone TEXT NOT NULL,
+    extracted_email TEXT,
+    extracted_address TEXT NOT NULL,
+    extracted_website TEXT,
+    program_id TEXT NOT NULL
+);
+
+-- 49. staging_scraped_state_resource_agencies
+CREATE TABLE IF NOT EXISTS staging_scraped_state_resource_agencies (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    source_url TEXT NOT NULL,
+    source_name TEXT,
+    source_type TEXT,
+    scraped_at TEXT NOT NULL,
+    state_id TEXT NOT NULL,
+    county_id TEXT,
+    confidence_score REAL,
+    extraction_notes TEXT,
+    raw_text_excerpt TEXT,
+    suggested_target_table TEXT,
+    suggested_target_id TEXT,
+    duplicate_candidate_id TEXT,
+    review_status TEXT DEFAULT 'pending_review',
+    extracted_name TEXT NOT NULL,
+    agency_type TEXT NOT NULL,
+    counties_served TEXT NOT NULL,
+    catchment_boundaries TEXT NOT NULL,
+    extracted_website TEXT NOT NULL,
+    extracted_phone TEXT NOT NULL,
+    early_intervention_contact TEXT NOT NULL,
+    agency_intake_contact TEXT NOT NULL,
+    eligibility_info_page TEXT NOT NULL,
+    services_page TEXT NOT NULL,
+    appeals_info TEXT NOT NULL
+);
+
+-- 50. staging_scraped_regional_education_agencies
+CREATE TABLE IF NOT EXISTS staging_scraped_regional_education_agencies (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    source_url TEXT NOT NULL,
+    source_name TEXT,
+    source_type TEXT,
+    scraped_at TEXT NOT NULL,
+    state_id TEXT NOT NULL,
+    county_id TEXT,
+    confidence_score REAL,
+    extraction_notes TEXT,
+    raw_text_excerpt TEXT,
+    suggested_target_table TEXT,
+    suggested_target_id TEXT,
+    duplicate_candidate_id TEXT,
+    review_status TEXT DEFAULT 'pending_review',
+    extracted_name TEXT NOT NULL,
+    agency_type TEXT NOT NULL,
+    counties_served TEXT NOT NULL,
+    extracted_website TEXT NOT NULL
+);
+
+-- 51. staging_scraped_school_districts
+CREATE TABLE IF NOT EXISTS staging_scraped_school_districts (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    source_url TEXT NOT NULL,
+    source_name TEXT,
+    source_type TEXT,
+    scraped_at TEXT NOT NULL,
+    state_id TEXT NOT NULL,
+    county_id TEXT,
+    confidence_score REAL,
+    extraction_notes TEXT,
+    raw_text_excerpt TEXT,
+    suggested_target_table TEXT,
+    suggested_target_id TEXT,
+    duplicate_candidate_id TEXT,
+    review_status TEXT DEFAULT 'pending_review',
+    extracted_name TEXT NOT NULL,
+    spec_ed_contact_phone TEXT NOT NULL,
+    spec_ed_contact_email TEXT,
+    extracted_website TEXT NOT NULL,
+    total_enrollment INTEGER
+);
+
+-- 52. staging_scraped_nonprofit_organizations
+CREATE TABLE IF NOT EXISTS staging_scraped_nonprofit_organizations (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    source_url TEXT NOT NULL,
+    source_name TEXT,
+    source_type TEXT,
+    scraped_at TEXT NOT NULL,
+    state_id TEXT NOT NULL,
+    county_id TEXT,
+    confidence_score REAL,
+    extraction_notes TEXT,
+    raw_text_excerpt TEXT,
+    suggested_target_table TEXT,
+    suggested_target_id TEXT,
+    duplicate_candidate_id TEXT,
+    review_status TEXT DEFAULT 'pending_review',
+    extracted_name TEXT NOT NULL,
+    extracted_website TEXT NOT NULL,
+    extracted_phone TEXT NOT NULL,
+    focus_condition TEXT NOT NULL
+);
+
+-- 53. staging_scraped_iep_advocates
+CREATE TABLE IF NOT EXISTS staging_scraped_iep_advocates (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    source_url TEXT NOT NULL,
+    source_name TEXT,
+    source_type TEXT,
+    scraped_at TEXT NOT NULL,
+    state_id TEXT NOT NULL,
+    county_id TEXT,
+    confidence_score REAL,
+    extraction_notes TEXT,
+    raw_text_excerpt TEXT,
+    suggested_target_table TEXT,
+    suggested_target_id TEXT,
+    duplicate_candidate_id TEXT,
+    review_status TEXT DEFAULT 'pending_review',
+    extracted_name TEXT NOT NULL,
+    credentials TEXT NOT NULL,
+    experience_years INTEGER,
+    price_rate TEXT,
+    counties_served TEXT,
+    languages_spoken TEXT,
+    extracted_phone TEXT NOT NULL,
+    extracted_email TEXT NOT NULL,
+    extracted_website TEXT NOT NULL,
+    specialties TEXT,
+    description TEXT
+);
+
+-- 54. staging_scraped_resource_providers
+CREATE TABLE IF NOT EXISTS staging_scraped_resource_providers (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    source_url TEXT NOT NULL,
+    source_name TEXT,
+    source_type TEXT,
+    scraped_at TEXT NOT NULL,
+    state_id TEXT NOT NULL,
+    county_id TEXT,
+    confidence_score REAL,
+    extraction_notes TEXT,
+    raw_text_excerpt TEXT,
+    suggested_target_table TEXT,
+    suggested_target_id TEXT,
+    duplicate_candidate_id TEXT,
+    review_status TEXT DEFAULT 'pending_review',
+    extracted_name TEXT NOT NULL,
+    categories TEXT NOT NULL,
+    extracted_phone TEXT NOT NULL,
+    extracted_email TEXT,
+    extracted_address TEXT NOT NULL,
+    accepts_medi_cal INTEGER
+);
+
+-- 55. staging_scraped_forms
+CREATE TABLE IF NOT EXISTS staging_scraped_forms (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    source_url TEXT NOT NULL,
+    source_name TEXT,
+    source_type TEXT,
+    scraped_at TEXT NOT NULL,
+    state_id TEXT NOT NULL,
+    county_id TEXT,
+    confidence_score REAL,
+    extraction_notes TEXT,
+    raw_text_excerpt TEXT,
+    suggested_target_table TEXT,
+    suggested_target_id TEXT,
+    duplicate_candidate_id TEXT,
+    review_status TEXT DEFAULT 'pending_review',
+    slug TEXT NOT NULL,
+    program TEXT NOT NULL,
+    official_download_url TEXT NOT NULL,
+    who_uses_it TEXT,
+    who_signs_it TEXT,
+    where_to_send_it TEXT,
+    letter_script TEXT
+);
+
+-- 56. staging_scraped_waitlists
+CREATE TABLE IF NOT EXISTS staging_scraped_waitlists (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    source_url TEXT NOT NULL,
+    source_name TEXT,
+    source_type TEXT,
+    scraped_at TEXT NOT NULL,
+    state_id TEXT NOT NULL,
+    county_id TEXT,
+    confidence_score REAL,
+    extraction_notes TEXT,
+    raw_text_excerpt TEXT,
+    suggested_target_table TEXT,
+    suggested_target_id TEXT,
+    duplicate_candidate_id TEXT,
+    review_status TEXT DEFAULT 'pending_review',
+    program_id TEXT NOT NULL,
+    name TEXT NOT NULL,
+    duration_label TEXT NOT NULL,
+    duration_months REAL NOT NULL,
+    status TEXT NOT NULL,
+    description TEXT NOT NULL
+);
+
+-- 57. staging_scraped_sources
+CREATE TABLE IF NOT EXISTS staging_scraped_sources (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    source_url TEXT NOT NULL,
+    source_name TEXT,
+    source_type TEXT,
+    scraped_at TEXT NOT NULL,
+    state_id TEXT NOT NULL,
+    county_id TEXT,
+    confidence_score REAL,
+    extraction_notes TEXT,
+    raw_text_excerpt TEXT,
+    suggested_target_table TEXT,
+    suggested_target_id TEXT,
+    duplicate_candidate_id TEXT,
+    review_status TEXT DEFAULT 'pending_review',
+    program_id TEXT NOT NULL,
+    url TEXT NOT NULL,
+    type TEXT NOT NULL,
+    confidence_rating TEXT NOT NULL
+);
+
+-- 58. staging_promotion_audit
+CREATE TABLE IF NOT EXISTS staging_promotion_audit (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    staging_table TEXT NOT NULL,
+    staging_record_id INTEGER NOT NULL,
+    target_table TEXT NOT NULL,
+    target_record_id TEXT NOT NULL,
+    promoted_at TEXT NOT NULL,
+    source_url TEXT NOT NULL,
+    old_value TEXT,
+    new_value TEXT,
+    reason TEXT NOT NULL
+);
+
 

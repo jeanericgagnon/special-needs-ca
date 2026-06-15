@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { SEO_CLUSTERS } from '@/lib/seo-data';
-import { getCounties, getProgramBySlug, getAllPrograms } from '@/lib/db';
+import { getCounties, getProgramBySlug, getAllPrograms, getStateByIdOrCode } from '@/lib/db';
 import AnswerPage from '@/app/components/answer-page';
 
 type Props = {
@@ -45,9 +45,11 @@ export async function generateMetadata({ params }: Props) {
 
   const program = await getProgramBySlug(slug);
   if (program) {
+    const stateData = program.state_id ? await getStateByIdOrCode(program.state_id) : null;
+    const stateName = stateData ? stateData.name : 'California';
     return {
-      title: `${program.program_name} California Guide`,
-      description: `Learn about eligibility, requirements, and how to apply for ${program.program_name} in California.`,
+      title: `${program.program_name} ${stateName} Guide`,
+      description: `Learn about eligibility, requirements, and how to apply for ${program.program_name} in ${stateName}.`,
       alternates: {
         canonical: `/programs/${slug}`
       }
@@ -74,14 +76,18 @@ export default async function ProgramPage({ params }: Props) {
     notFound();
   }
 
+  const stateData = program.state_id ? await getStateByIdOrCode(program.state_id) : null;
+  const stateName = stateData ? stateData.name : 'California';
+  const stateCode = stateData ? stateData.code : 'CA';
+
   // Construct dynamic SEOPageData on the fly
   const dynamicData = {
     slug: slug,
     category: 'programs' as const,
-    title: `${program.program_name} California Guide`,
-    metaTitle: `${program.program_name} | California Eligibility & Application`,
-    metaDescription: `Find out if you qualify for ${program.program_name} in California. Learn about income limits, age rules, and required evidence.`,
-    quickAnswer: `The ${program.program_name} is a California program targeting ${program.target_demographic}. It has an age limit of ${program.age_limit_min} to ${program.age_limit_max} years. The income requirement is stated as: ${program.income_limit || 'None specified'}.`,
+    title: `${program.program_name} ${stateName} Guide`,
+    metaTitle: `${program.program_name} | ${stateName} Eligibility & Application`,
+    metaDescription: `Find out if you qualify for ${program.program_name} in ${stateName}. Learn about income limits, age rules, and required evidence.`,
+    quickAnswer: `The ${program.program_name} is a ${stateName} program targeting ${program.target_demographic}. It has an age limit of ${program.age_limit_min} to ${program.age_limit_max} years. The income requirement is stated as: ${program.income_limit || 'None specified'}.`,
     tldrPoints: [
       { label: 'Demographic', value: program.target_demographic },
       { label: 'Age Range', value: `${program.age_limit_min} - ${program.age_limit_max} yrs` },
@@ -102,10 +108,12 @@ export default async function ProgramPage({ params }: Props) {
     ],
     documentsToGather: [
       { name: 'Pediatric medical certification', description: 'Confirming developmental diagnosis.' },
-      { name: 'Proof of residency', description: 'California driver license, utility bill, or equivalent.' }
+      { name: 'Proof of residency', description: `${stateName} driver license, utility bill, or equivalent.` }
     ],
-    whoToCall: [
+    whoToCall: stateName === 'California' ? [
       { name: 'California DHCS Office', number: '(916) 440-7400', description: 'Department of Health Care Services administrative office.' }
+    ] : [
+      { name: `${stateName} Health and Human Services`, number: '2-1-1', description: 'State benefits information and local resource referral.' }
     ],
     whatToSay: `I am calling to check eligibility for my child for the ${program.program_name}.`,
     commonMistakes: [
@@ -116,7 +124,7 @@ export default async function ProgramPage({ params }: Props) {
       { title: 'Guides & Resources Index', url: '/benefits' }
     ],
     officialSources: [
-      { name: 'California State Program Portal', url: program.source_url || 'https://www.dhcs.ca.gov' }
+      { name: `${stateName} State Program Portal`, url: program.source_url || 'https://www.dhcs.ca.gov' }
     ],
     lastReviewedDate: '2026-06-01',
     callScriptTemplate: {

@@ -1,3 +1,5 @@
+import { FIVE_STATES_SEO_CLUSTERS } from './five-states-seo-data.ts';
+
 export interface SEOPageData {
   slug: string;
   category: 'programs' | 'conditions' | 'forms' | 'deadlines' | 'situations' | 'counties';
@@ -16,7 +18,7 @@ export interface SEOPageData {
   relatedGuides: { title: string; url: string }[];
   officialSources: { name: string; url: string }[];
   lastReviewedDate: string;
-  callScriptTemplate: {
+  callScriptTemplate?: {
     intro: string;
     script: string;
     tips: string;
@@ -27,7 +29,7 @@ export interface SEOPageData {
     fields: { key: string; label: string; placeholder: string; defaultValue?: string }[];
     generateFn: (fields: Record<string, string>) => string;
   };
-  eligibilityQuiz: {
+  eligibilityQuiz?: {
     question: string;
     options: { text: string; score: 'high' | 'med' | 'low'; reason: string }[];
   }[];
@@ -2821,5 +2823,2310 @@ ${f.parentName || '[Parent Name]'}`
         ]
       }
     ]
+  },
+  'tx-medicaid-chip': {
+    slug: 'tx-medicaid-chip',
+    category: 'forms',
+    title: 'Texas Medicaid & CHIP Application Guide',
+    metaTitle: 'Texas Medicaid & CHIP Form | Texas HHS',
+    metaDescription: 'Step-by-step parent guide to applying for Texas Medicaid and CHIP for children with special needs.',
+    quickAnswer: 'The Texas Medicaid and CHIP application is the unified intake process to secure healthcare coverage, therapies, and equipment for children. Families can apply online via YourTexasBenefits or submit paper Form H1010.',
+    tldrPoints: [
+      { label: 'Official Portal', value: 'YourTexasBenefits.com' },
+      { label: 'Signer', value: 'Parent or Guardian' },
+      { label: 'Coverage', value: 'Health insurance, prescriptions, pediatric therapies' }
+    ],
+    whenThisMatters: 'Apply when your child needs health coverage, physician visits, prescriptions, or therapy services in Texas.',
+    signsThisMayApply: [
+      'Child requires medical treatment or ongoing therapy.',
+      'Family meets the income guidelines or the child is applying through a waiver deeming path.'
+    ],
+    whatToDoFirst: [
+      'Go to YourTexasBenefits.com or download Form H1010.',
+      'Gather birth certificates, proof of income, and residency documents.',
+      'Submit the application online or mail it to Texas Health and Human Services.'
+    ],
+    documentsToGather: [
+      { name: 'Form H1010 Application', description: 'The official Texas benefits application form.', downloadUrl: 'https://www.hhs.texas.gov/regulations/forms/1000-1999/form-h1010-texas-works-application' },
+      { name: 'Proof of Income & Residency', description: 'Recent pay stubs and utility bills.' }
+    ],
+    whoToCall: [
+      { name: 'Texas HHS Benefits Helpline', number: '2-1-1', description: 'State benefits information and support.' }
+    ],
+    whatToSay: 'I am submitting a Medicaid application for my child. I want to check if they qualify for Medicaid or CHIP programs.',
+    commonMistakes: [
+      'Failing to disclose all household members.',
+      'Assuming you cannot get coverage because of moderate income (waiver programs ignore parental income).'
+    ],
+    relatedGuides: [
+      { title: 'Medicaid & CHIP Overview', url: '/programs/tx-medicaid-chip' }
+    ],
+    officialSources: [
+      { name: 'Texas Health and Human Services Commission', url: 'https://www.hhs.texas.gov' }
+    ],
+    lastReviewedDate: '2026-06-01',
+    callScriptTemplate: {
+      intro: 'Checking Medicaid Application Status',
+      script: 'Hi, I submitted a Medicaid application for my child. I want to check its processing status and verify if you need any additional documents.',
+      tips: 'Ask for the application reference number and confirm the receipt date.'
+    }
+  },
+  'tx-hcs-guide': {
+    slug: 'tx-hcs-guide',
+    category: 'forms',
+    title: 'Texas Home and Community-Based Services (HCS) Waiver Guide',
+    metaTitle: 'Texas HCS Interest List | Texas HHS',
+    metaDescription: 'Step-by-step parent guide to registering for the Texas HCS Waiver interest list via your local LIDDA.',
+    quickAnswer: 'The HCS Waiver provides services and supports to Texans with an intellectual disability or a related condition. Because the waitlist is historically over 15 years long, parents must contact their local LIDDA to get registered on the HCS Interest List immediately.',
+    tldrPoints: [
+      { label: 'Intake Agency', value: 'Local LIDDA' },
+      { label: 'Waitlist Time', value: '15+ Years (Chronological)' },
+      { label: 'Key Benefit', value: 'Residential supports, therapies, respite' }
+    ],
+    whenThisMatters: 'Register your child on the HCS interest list as soon as they receive an IDD or Autism diagnosis.',
+    signsThisMayApply: [
+      'Child has a diagnosis of Autism, Intellectual Disability, or related condition originating before age 22.',
+      'Child requires long-term service coordination and community support.'
+    ],
+    whatToDoFirst: [
+      'Locate your local LIDDA based on your county.',
+      'Call the LIDDA intake desk and request placement on the HCS Interest List.',
+      'Keep the interest list confirmation letter and update your contact info annually.'
+    ],
+    documentsToGather: [
+      { name: 'Diagnostic Assessments', description: 'Psychological evaluation showing IQ score or related condition.' }
+    ],
+    whoToCall: [
+      { name: 'Texas HHS IDD Services Intake', number: '855-937-2372', description: 'Central interest list helpline.' }
+    ],
+    whatToSay: 'I want to place my child with a developmental diagnosis on the HCS Waiver Interest List. Please record our registration date.',
+    commonMistakes: [
+      'Waiting until adulthood to register. The list is extremely long, so childhood registration is critical.',
+      'Failing to reply to the annual contact update letters from HHS, which can lead to removal from the list.'
+    ],
+    relatedGuides: [
+      { title: 'HCS Waiver Program Details', url: '/programs/tx-hcs' }
+    ],
+    officialSources: [
+      { name: 'Texas HHS HCS Waiver Page', url: 'https://www.hhs.texas.gov/providers/individual-family-support/home-community-based-services-hcs' }
+    ],
+    lastReviewedDate: '2026-06-01',
+    callScriptTemplate: {
+      intro: 'Registering on HCS Interest List',
+      script: 'Hi, I want to add my child to the HCS Interest List. Please confirm the registration date and send me a confirmation letter.',
+      tips: 'Ensure they have your correct mailing address and phone number.'
+    }
+  },
+  'tx-class-guide': {
+    slug: 'tx-class-guide',
+    category: 'forms',
+    title: 'Texas CLASS Waiver Guide',
+    metaTitle: 'Texas CLASS Waiver Interest List | Texas HHS',
+    metaDescription: 'Step-by-step parent guide to registering for the Texas Community Living Assistance and Support Services (CLASS) waiver.',
+    quickAnswer: 'The CLASS Waiver provides home and community-based services to people with a related condition (other than an intellectual disability) that originated before age 22. Parents must call the Texas HHS Interest List line to register.',
+    tldrPoints: [
+      { label: 'Intake Hotline', value: '877-438-5658' },
+      { label: 'Waiver Category', value: 'Related Conditions (e.g. Cerebral Palsy, Spina Bifida)' },
+      { label: 'Waitlist Time', value: '12+ Years' }
+    ],
+    whenThisMatters: 'Apply when your child has a qualifying related physical or cognitive condition and needs long-term home therapies or support.',
+    signsThisMayApply: [
+      'Child is diagnosed with a condition like Cerebral Palsy, Spina Bifida, Muscular Dystrophy, or another developmental related condition.'
+    ],
+    whatToDoFirst: [
+      'Call the CLASS Interest List line at 877-438-5658.',
+      'Provide your child\'s name, DOB, and diagnosis details.',
+      'Keep the interest list confirmation registry card safely.'
+    ],
+    documentsToGather: [
+      { name: 'Clinical Diagnoses', description: 'Medical records documenting the onset date of the related condition.' }
+    ],
+    whoToCall: [
+      { name: 'Texas HHS CLASS Hotline', number: '877-438-5658', description: 'Direct interest list registration line.' }
+    ],
+    whatToSay: 'I want to add my child to the CLASS Waiver Interest List. Please verify the enrollment date.',
+    commonMistakes: [
+      'Failing to register early.',
+      'Assuming Autism qualifies for CLASS (Autism is typically HCS/TxHmL, though CLASS covers some related conditions).'
+    ],
+    relatedGuides: [
+      { title: 'CLASS Waiver Program Details', url: '/programs/tx-class' }
+    ],
+    officialSources: [
+      { name: 'Texas HHS CLASS Program Page', url: 'https://www.hhs.texas.gov/providers/long-term-care-providers/community-living-assistance-support-services-class' }
+    ],
+    lastReviewedDate: '2026-06-01',
+    callScriptTemplate: {
+      intro: 'Enrolling in CLASS Interest List',
+      script: 'Hi, I am calling to register my child on the CLASS Interest List. I want to verify their placement date and confirm they are listed under the correct related condition.',
+      tips: 'Ask for the exact timestamp/registry date for your records.'
+    }
+  },
+  'tx-txhml-guide': {
+    slug: 'tx-txhml-guide',
+    category: 'forms',
+    title: 'Texas Home Living (TxHmL) Waiver Guide',
+    metaTitle: 'Texas Home Living Waiver | Texas HHS',
+    metaDescription: 'Step-by-step parent guide to registering for the TxHmL Waiver through your local LIDDA.',
+    quickAnswer: 'The TxHmL Waiver provides essential services and supports to Texans with an intellectual disability or a related condition who live in their own home. It features a smaller capped budget ($17,000 annually) than HCS.',
+    tldrPoints: [
+      { label: 'Intake Agency', value: 'Local LIDDA' },
+      { label: 'Budget Cap', value: '$17,000 per year' },
+      { label: 'Waitlist Time', value: '10+ Years' }
+    ],
+    whenThisMatters: 'Register for the TxHmL list alongside the HCS list (you can be on both interest lists simultaneously).',
+    signsThisMayApply: [
+      'Child qualifies under HCS eligibility but lives at home and has less intensive medical needs.'
+    ],
+    whatToDoFirst: [
+      'Contact your local LIDDA intake coordinator.',
+      'Request that your child be added to the TxHmL Interest List.',
+      'Submit diagnostic evaluations showing developmental delay criteria.'
+    ],
+    documentsToGather: [
+      { name: 'IQ and Adaptive Testing Reports', description: 'Psychological assessments showing cognitive delays.' }
+    ],
+    whoToCall: [
+      { name: 'Texas HHS IDD Services Desk', number: '855-937-2372', description: 'State developmental support line.' }
+    ],
+    whatToSay: 'I want to place my child on the Texas Home Living (TxHmL) Waiver Interest List. Please record our signup date.',
+    commonMistakes: [
+      'Failing to register on both HCS and TxHmL lists at the same time.',
+      'Assuming the budget cap is sufficient for intensive 24/7 residential placement.'
+    ],
+    relatedGuides: [
+      { title: 'TxHmL Waiver Program Details', url: '/programs/tx-txhml' }
+    ],
+    officialSources: [
+      { name: 'Texas HHS TxHmL Program Page', url: 'https://www.hhs.texas.gov/providers/individual-family-support/texas-home-living-txhml' }
+    ],
+    lastReviewedDate: '2026-06-01',
+    callScriptTemplate: {
+      intro: 'TxHmL Interest List Registration',
+      script: 'Hi, I want to add my child to the TxHmL Interest List. Please register their name and send us the confirmation paperwork.',
+      tips: 'Verify the mailing address for the registration confirmation.'
+    }
+  },
+  'tx-mdcp-guide': {
+    slug: 'tx-mdcp-guide',
+    category: 'forms',
+    title: 'Texas Medically Dependent Children Program (MDCP) Guide',
+    metaTitle: 'Texas MDCP Waiver | Texas HHS',
+    metaDescription: 'Step-by-step parent guide to applying for the Texas MDCP Waiver for medically fragile children.',
+    quickAnswer: 'The Medically Dependent Children Program (MDCP) provides services to support families caring for children who are medically fragile or require nursing services to remain at home.',
+    tldrPoints: [
+      { label: 'Intake Agency', value: 'Texas HHS Interest List' },
+      { label: 'Age Limit', value: 'Under age 21' },
+      { label: 'Key Benefit', value: 'Private duty nursing, respite, adaptive aids' }
+    ],
+    whenThisMatters: 'Apply when your child is medically fragile and requires professional nursing assistance or G-tube/respiratory care.',
+    signsThisMayApply: [
+      'Child requires daily nursing interventions or has a technology dependency.'
+    ],
+    whatToDoFirst: [
+      'Call the Texas HHS Interest List hotline at 877-438-5658.',
+      'Request placement on the MDCP Waiver Interest List.',
+      'Gather physician letters detailing medical fragility and nursing hour needs.'
+    ],
+    documentsToGather: [
+      { name: 'Medical Summary Reports', description: 'Doctor letters confirming diagnosis and nursing care needs.' }
+    ],
+    whoToCall: [
+      { name: 'Texas HHS Interest List Line', number: '877-438-5658', description: 'Central enrollment line.' }
+    ],
+    whatToSay: 'I want to add my child to the MDCP Waiver Interest List. Please verify the enrollment details.',
+    commonMistakes: [
+      'Assuming parental income disqualifies the child (MDCP bypasses parental assets for child eligibility).',
+      'Failing to update clinical records when the child\'s medical fragility severity increases.'
+    ],
+    relatedGuides: [
+      { title: 'MDCP Program Details', url: '/programs/tx-mdcp' }
+    ],
+    officialSources: [
+      { name: 'Texas HHS MDCP Page', url: 'https://www.hhs.texas.gov/providers/individual-family-support/medically-dependent-children-program-mdcp' }
+    ],
+    lastReviewedDate: '2026-06-01',
+    callScriptTemplate: {
+      intro: 'MDCP Registry Support',
+      script: 'Hi, I want to add my child to the MDCP Interest List. Please confirm the registration date and let me know the current wait times.',
+      tips: 'Always ask if there are fast-track option paths for children transitioning from neonatal intensive care.'
+    }
+  },
+  'tx-eci-referral': {
+    slug: 'tx-eci-referral',
+    category: 'forms',
+    title: 'Texas Early Childhood Intervention (ECI) Referral Guide',
+    metaTitle: 'Texas ECI Referral Form | Texas HHS',
+    metaDescription: 'Step-by-step parent guide to referring a child (ages 0-3) to Texas Early Childhood Intervention (ECI).',
+    quickAnswer: 'Texas ECI serves families with babies and toddlers (birth to 36 months) with developmental delays or disabilities. Anyone can make a referral, and parental consent is required to start evaluations.',
+    tldrPoints: [
+      { label: 'Target Age', value: 'Birth to 36 Months' },
+      { label: 'Referral Source', value: 'Parent, pediatrician, or daycare' },
+      { label: 'Evaluations Cost', value: 'Free of charge' }
+    ],
+    whenThisMatters: 'Refer your child as soon as you notice physical, speech, or sensory delays before age 3.',
+    signsThisMayApply: [
+      'Child is not meeting developmental milestones like crawling, talking, or social interaction.'
+    ],
+    whatToDoFirst: [
+      'Locate the local ECI program serving your county using the ECI Program Search Tool.',
+      'Submit a referral online or call the local ECI office directly.',
+      'Schedule the in-home assessment and speech/motor evaluations.'
+    ],
+    documentsToGather: [
+      { name: 'Pediatric Medical Records', description: 'Notes showing developmental tracking or pediatric concerns.' }
+    ],
+    whoToCall: [
+      { name: 'Texas HHS ECI Referral Desk', number: '800-628-5115', description: 'Central ECI inquiry line.' }
+    ],
+    whatToSay: 'I suspect my child has a developmental delay and I want to request a free ECI screening and evaluation.',
+    commonMistakes: [
+      'Waiting until age 3 to call. ECI services end on the 3rd birthday, so referral before age 2.5 is essential.',
+      'Assuming a doctor\'s referral is required. Parents can call and refer their children directly.'
+    ],
+    relatedGuides: [
+      { title: 'Texas ECI Overview', url: '/programs/tx-eci' }
+    ],
+    officialSources: [
+      { name: 'Texas HHS ECI Program Page', url: 'https://www.hhs.texas.gov/services/disability/early-childhood-intervention-services' }
+    ],
+    lastReviewedDate: '2026-06-01',
+    callScriptTemplate: {
+      intro: 'ECI Screening Request',
+      script: 'Hi, I want to refer my toddler to ECI. I observe delays in [speech/motor skills] and would like to schedule a developmental assessment.',
+      tips: 'ECI must hold an evaluation and write an IFSP within 45 calendar days of your referral.'
+    }
+  },
+  'tx-sped-evaluation-request': {
+    slug: 'tx-sped-evaluation-request',
+    category: 'forms',
+    title: 'TEA Special Education Evaluation Request Letter Template',
+    metaTitle: 'Texas IEP Request Letter | TEA Special Ed',
+    metaDescription: 'Download and customize a formal letter to request an initial special education evaluation under Texas Education Agency guidelines.',
+    quickAnswer: 'Parents in Texas can request a Full and Individual Initial Evaluation (FIIE) for special education. Under Texas rules, the school district has 15 school days from receiving the request to provide a consent form or notice of refusal.',
+    tldrPoints: [
+      { label: 'Legal Timeline', value: '15 school days to respond with Consent' },
+      { label: 'Evaluation Timeline', value: '45 school days to complete report' },
+      { label: 'Meeting Timeline', value: '30 calendar days to hold ARD/IEP' }
+    ],
+    whenThisMatters: 'Submit this written request to the school principal when your child struggles academically or socially and needs an IEP.',
+    signsThisMayApply: [
+      'Child displays persistent learning difficulties or emotional struggles in school.'
+    ],
+    whatToDoFirst: [
+      'Customize the evaluation request letter template below.',
+      'Submit the letter in writing (via email or certified mail) to the school principal and special education director.',
+      'Ensure the school signs and dates the receipt to establish the 15 school-day timeline.'
+    ],
+    documentsToGather: [
+      { name: 'Special Education Request Template', description: 'Letter template requesting formal evaluation.' }
+    ],
+    whoToCall: [
+      { name: 'SPEDTex Support Desk', number: '855-773-3839', description: 'Texas Special Education Information Center.' }
+    ],
+    whatToSay: 'I am submitting a formal written request for a special education evaluation. Please provide the Consent to Evaluate form.',
+    commonMistakes: [
+      'Making a verbal request. Verbal requests do not start the strict 15 school-day legal timeline in Texas.',
+      'Failing to track school calendar days (holidays and summer breaks do not count as school days).'
+    ],
+    relatedGuides: [
+      { title: 'TEA Special Education Timelines', url: '/programs/tx-tea-sped' }
+    ],
+    officialSources: [
+      { name: 'Texas Education Agency Special Ed', url: 'https://tea.texas.gov/academics/special-student-populations/special-education' }
+    ],
+    lastReviewedDate: '2026-06-01',
+    letterTemplate: {
+      title: 'Texas IEP Evaluation Request Letter',
+      description: 'Formal letter to submit to the school principal to start special education assessment timelines.',
+      fields: [
+        { key: 'parentName', label: 'Parent Name', placeholder: 'Jane Doe' },
+        { key: 'childName', label: 'Child Name', placeholder: 'Tommy Doe' },
+        { key: 'dob', label: 'Child DOB', placeholder: '01/01/2018' },
+        { key: 'schoolName', label: 'School Name', placeholder: 'Austin Elementary' },
+        { key: 'principalName', label: 'Principal Name', placeholder: 'Principal Smith' }
+      ],
+      generateFn: (f) => `Date: ${new Date().toLocaleDateString()}
+To: ${f.principalName || '[Principal Name]'}, Principal
+School: ${f.schoolName || '[School Name]'}
+
+RE: Request for Full and Individual Initial Evaluation (FIIE) for Special Education
+Child Name: ${f.childName || '[Child Name]'}
+Date of Birth: ${f.dob || '[DOB]'}
+
+Dear ${f.principalName || 'Principal'},
+
+I am writing on behalf of my child, ${f.childName || '[Child Name]'}, who is enrolled at ${f.schoolName || '[School Name]'}. I am formally requesting that the school district conduct a Full and Individual Initial Evaluation (FIIE) to determine eligibility for special education and related services under the Individuals with Disabilities Education Act (IDEA).
+
+I suspect my child has a disability in the areas of [Insert Suspected Disabilities, e.g., Speech/Language, Autism, ADHD] that impacts their educational performance.
+
+Under Texas Education Code § 29.004, the district has exactly 15 school days from the receipt of this letter to provide me with a Notice of Proposal to Evaluate and the associated Consent to Evaluate form, or a written Notice of Refusal.
+
+Please contact me immediately to coordinate the signing of the consent form.
+
+Sincerely,
+${f.parentName || '[Parent Name]'}`
+    }
+  },
+  'tx-tea-complaint': {
+    slug: 'tx-tea-complaint',
+    category: 'forms',
+    title: 'Texas Education Agency State Compliance Complaint Form Guide',
+    metaTitle: 'TEA State Complaint Form | Texas Education Agency',
+    metaDescription: 'Step-by-step parent guide to filing a formal compliance complaint with the Texas Education Agency (TEA).',
+    quickAnswer: 'A TEA Special Education State Complaint is filed when a school district violates special education laws or fails to implement an IEP. The complaint must be resolved within 60 calendar days.',
+    tldrPoints: [
+      { label: 'Filing Agency', value: 'Texas Education Agency (TEA)' },
+      { label: 'Resolution Timeline', value: '60 Calendar Days' },
+      { label: 'Exemptions', value: 'Filing must be within 1 year of violation' }
+    ],
+    whenThisMatters: 'File a complaint when the school district fails to provide IEP accommodations, misses assessment timelines, or refuses services.',
+    signsThisMayApply: [
+      'The school is not implementing the services written in the signed IEP document.',
+      'The school missed the 45 school-day evaluation completion deadline.'
+    ],
+    whatToDoFirst: [
+      'Download the TEA Special Education State Complaint Form.',
+      'Write a clear statement of facts detailing the violations and dates.',
+      'Submit the complaint to the TEA and mail a copy to the school district superintendent.'
+    ],
+    documentsToGather: [
+      { name: 'TEA Complaint Form', description: 'The official TEA compliance complaint PDF.', downloadUrl: 'https://tea.texas.gov/academics/special-student-populations/special-education/dispute-resolution/special-education-complaint-process' },
+      { name: 'IEP Documents & Emails', description: 'Proof of the school\'s failure to implement or comply.' }
+    ],
+    whoToCall: [
+      { name: 'SPEDTex Information Center', number: '855-773-3839', description: 'TEA Special Education support hotline.' }
+    ],
+    whatToSay: 'I am filing a state compliance complaint against the school district for failing to implement my child\'s IEP services.',
+    commonMistakes: [
+      'Filing a complaint about issues that occurred more than 1 year ago (strict 1-year statute of limitations).',
+      'Failing to send a copy of the complaint directly to the school district.'
+    ],
+    relatedGuides: [
+      { title: 'Texas Special Education Rights', url: '/programs/tx-tea-sped' }
+    ],
+    officialSources: [
+      { name: 'Texas Education Agency Dispute Process', url: 'https://tea.texas.gov' }
+    ],
+    lastReviewedDate: '2026-06-01',
+    callScriptTemplate: {
+      intro: 'TEA Complaint Inquiries',
+      script: 'Hi, I want to verify the receipt of the special education complaint I filed against [District Name] and check if a state investigator has been assigned.',
+      tips: 'Keep a record of your case number and investigator contact details.'
+    }
+  },
+  'tx-due-process-complaint': {
+    slug: 'tx-due-process-complaint',
+    category: 'forms',
+    title: 'Texas Special Education Due Process Complaint Guide',
+    metaTitle: 'Texas Due Process Form | TEA Dispute Resolution',
+    metaDescription: 'Step-by-step parent guide to filing a special education due process hearing request with the Texas Education Agency.',
+    quickAnswer: 'A Special Education Due Process Complaint is a formal legal proceeding to resolve disputes regarding the identification, evaluation, placement, or services of a student with a disability.',
+    tldrPoints: [
+      { label: 'Filing Agency', value: 'Texas Education Agency (TEA)' },
+      { label: 'Hearing Officer', value: 'Independent legal counsel' },
+      { label: 'Statute of Limitations', value: '2 years from the date of dispute' }
+    ],
+    whenThisMatters: 'File for due process when the school district proposes an inappropriate classroom placement or denies your child eligibility for services.',
+    signsThisMayApply: [
+      'The school is insisting on placing your child in a self-contained room against your wishes.',
+      'The school refuses to provide critical speech or occupational therapy services.'
+    ],
+    whatToDoFirst: [
+      'Download the TEA Due Process Hearing Request Form.',
+      'Consult with a special education attorney or advocate.',
+      'Complete the form specifying the school violations and proposed resolutions, and submit it to TEA.'
+    ],
+    documentsToGather: [
+      { name: 'Due Process Request Form', description: 'Official TEA request form.', downloadUrl: 'https://tea.texas.gov/academics/special-student-populations/special-education/dispute-resolution/due-process-hearings' }
+    ],
+    whoToCall: [
+      { name: 'TEA Special Education Division', number: '512-463-9414', description: 'Dispute resolution department.' }
+    ],
+    whatToSay: 'I am requesting a due process hearing to resolve a placement dispute. I want to confirm receipt of our request.',
+    commonMistakes: [
+      'Filing without legal or advocate representation. Due process is a formal court-like setting, making legal support highly recommended.',
+      'Failing to detail a specific resolution or remedy in the complaint.'
+    ],
+    relatedGuides: [
+      { title: 'IEP Meeting Preparation Guide', url: '/situations/iep-meeting' }
+    ],
+    officialSources: [
+      { name: 'Texas Education Agency Hearing Info', url: 'https://tea.texas.gov' }
+    ],
+    lastReviewedDate: '2026-06-01',
+    callScriptTemplate: {
+      intro: 'Due Process Resolution',
+      script: 'Hi, I submitted a due process hearing request. I want to confirm the assigned hearing officer and verify the date for the resolution session.',
+      tips: 'Ensure you participate in the mandatory 15-day resolution session before the hearing.'
+    }
+  },
+  'tx-records-request': {
+    slug: 'tx-records-request',
+    category: 'forms',
+    title: 'Student Special Education Records Request Letter Template',
+    metaTitle: 'Texas School Records Request | FERPA Letter',
+    metaDescription: 'Download and customize a formal letter requesting your child\'s special education and evaluation records in Texas under FERPA.',
+    quickAnswer: 'Under FERPA and Texas Education Agency rules, parents have the right to inspect and review all educational records. The school district must provide copies or access to these records within 45 calendar days of your request (or before any IEP meeting).',
+    tldrPoints: [
+      { label: 'Legal Basis', value: 'FERPA (34 CFR § 99.10)' },
+      { label: 'Texas Timeline Limit', value: '45 calendar days (or before IEP meetings)' },
+      { label: 'Cost', value: 'Free, though a nominal copying fee may apply' }
+    ],
+    whenThisMatters: 'Submit this request before any IEP meeting to ensure you review the school\'s internal evaluations and teacher logs.',
+    signsThisMayApply: [
+      'You are preparing for an IEP review or an eligibility appeal.',
+      'The school has conducted testing but has not shared the report summaries.'
+    ],
+    whatToDoFirst: [
+      'Customize the records request letter template below.',
+      'Submit the letter to the campus registrar and special education coordinator.',
+      'Confirm the deadline date for the school to produce the files.'
+    ],
+    documentsToGather: [
+      { name: 'Records Request Letter Template', description: 'Letter to request student file logs.' }
+    ],
+    whoToCall: [
+      { name: 'SPEDTex Support Office', number: '855-773-3839', description: 'Special education advocacy info.' }
+    ],
+    whatToSay: 'I am requesting a complete copy of my child\'s special education and evaluation records under FERPA. Please notify me when they are ready.',
+    commonMistakes: [
+      'Accepting partial files. Request the complete educational file, including teacher emails, test protocol books, and attendance records.',
+      'Waiting until the week of the IEP meeting. Submit requests at least 3 weeks prior.'
+    ],
+    relatedGuides: [
+      { title: 'IEP Preparation Tips', url: '/situations/iep-meeting' }
+    ],
+    officialSources: [
+      { name: 'US Department of Education FERPA', url: 'https://www2.ed.gov/policy/gen/guid/fpco/ferpa/index.html' }
+    ],
+    lastReviewedDate: '2026-06-01',
+    letterTemplate: {
+      title: 'Texas Student Records Request Letter',
+      description: 'Use this letter to request all student files and test records from the district.',
+      fields: [
+        { key: 'parentName', label: 'Parent Name', placeholder: 'Jane Doe' },
+        { key: 'childName', label: 'Child Name', placeholder: 'Tommy Doe' },
+        { key: 'dob', label: 'Child DOB', placeholder: '01/01/2018' },
+        { key: 'schoolName', label: 'School Name', placeholder: 'Austin Elementary' },
+        { key: 'registrarEmail', label: 'Registrar Email', placeholder: 'registrar@schooldistrict.org' }
+      ],
+      generateFn: (f) => `Date: ${new Date().toLocaleDateString()}
+To: Special Education Coordinator / Campus Registrar
+School: ${f.schoolName || '[School Name]'}
+
+RE: Family Educational Rights and Privacy Act (FERPA) Request for Student Records
+Child Name: ${f.childName || '[Child Name]'}
+Date of Birth: ${f.dob || '[DOB]'}
+
+Dear Records Custodian,
+
+Under the Family Educational Rights and Privacy Act (FERPA) (20 U.S.C. § 1232g; 34 CFR Part 99) and Texas administrative rules, I am writing as the parent of ${f.childName || '[Child Name]'} to request a complete copy of my child\'s educational records.
+
+Please include:
+1. All special education eligibility records and Full and Individual Initial Evaluations (FIIE).
+2. All IEP documents, progress reports, and associated meeting minutes.
+3. All teacher notes, classroom observation logs, and internal emails regarding my child.
+4. All test protocols, raw score sheets, and specialist evaluations.
+
+Under FERPA guidelines, these records must be provided without unnecessary delay, and in no case more than 45 calendar days after the request, or prior to any scheduled Admission, Review, and Dismissal (ARD) committee meeting.
+
+Please notify me when the files are compiled. I prefer electronic delivery if available.
+
+Sincerely,
+${f.parentName || '[Parent Name]'}`
+    }
+  },
+  'tx-iee-request': {
+    slug: 'tx-iee-request',
+    category: 'forms',
+    title: 'Independent Educational Evaluation (IEE) Request Letter Template',
+    metaTitle: 'Texas IEE Request Letter | School Special Ed',
+    metaDescription: 'Download and customize a letter requesting an Independent Educational Evaluation (IEE) at public expense in Texas.',
+    quickAnswer: 'If a parent disagrees with the school district\'s evaluation, they have the right to request an Independent Educational Evaluation (IEE) at public expense. The school district must either fund the evaluation or file for due process.',
+    tldrPoints: [
+      { label: 'Legal Basis', value: '34 CFR § 300.502' },
+      { label: 'Public Expense', value: 'School district pays for IEE' },
+      { label: 'District Action', value: 'Must either fund IEE or file for due process' }
+    ],
+    whenThisMatters: 'Submit this request when you disagree with the school district\'s psychoeducational or speech evaluation results.',
+    signsThisMayApply: [
+      'The school evaluation concluded your child does not qualify for special education, but private doctors disagree.',
+      'The school evaluation underestimated your child\'s motor or speech delays.'
+    ],
+    whatToDoFirst: [
+      'Review the school\'s evaluation report and write down your specific areas of disagreement.',
+      'Customize the IEE request template below.',
+      'Submit the request letter to the special education director and principal.'
+    ],
+    documentsToGather: [
+      { name: 'IEE Request Template', description: 'Letter to request independent testing.' }
+    ],
+    whoToCall: [
+      { name: 'SPEDTex Info Desk', number: '855-773-3839', description: 'Texas Special Education resources.' }
+    ],
+    whatToSay: 'I disagree with the school\'s evaluation and request an Independent Educational Evaluation (IEE) at public expense.',
+    commonMistakes: [
+      'Failing to submit the disagreement in writing. School districts are not legally triggered by verbal disagreements.',
+      'Filing after signing agreement on the school evaluation (though you can request IEEs even after signing in some cases, it is best to object immediately).'
+    ],
+    relatedGuides: [
+      { title: 'IEP Advocacy Tips', url: '/situations/iep-meeting' }
+    ],
+    officialSources: [
+      { name: 'US Dept of Education IEE Guidelines', url: 'https://www2.ed.gov/policy/speced/guid/idea/memosdcltrs/index.html' }
+    ],
+    lastReviewedDate: '2026-06-01',
+    letterTemplate: {
+      title: 'Texas IEE Request Letter',
+      description: 'Formal letter to submit to objection and request independent evaluations.',
+      fields: [
+        { key: 'parentName', label: 'Parent Name', placeholder: 'Jane Doe' },
+        { key: 'childName', label: 'Child Name', placeholder: 'Tommy Doe' },
+        { key: 'schoolDistrict', label: 'School District', placeholder: 'Austin ISD' },
+        { key: 'evalDate', label: 'School Evaluation Date', placeholder: '05/15/2026' }
+      ],
+      generateFn: (f) => `Date: ${new Date().toLocaleDateString()}
+To: Special Education Director
+District: ${f.schoolDistrict || '[School District]'}
+
+RE: Request for Independent Educational Evaluation (IEE) at Public Expense
+Child Name: ${f.childName || '[Child Name]'}
+Disagreed Evaluation Date: ${f.evalDate || '[Evaluation Date]'}
+
+Dear Special Education Director,
+
+I am writing as the parent of ${f.childName || '[Child Name]'} to formally state my disagreement with the district\'s psychoeducational evaluation completed on ${f.evalDate || '[Evaluation Date]'}.
+
+Specifically, I disagree with the district\'s findings regarding [Insert Disagreed Areas, e.g., Speech/Language, Autism assessment, Occupational Therapy needs].
+
+Pursuant to 34 CFR § 300.502 and Texas Education Agency rules, I am formally requesting an Independent Educational Evaluation (IEE) at public expense in the following areas:
+- [Insert requested IEE testing areas, e.g., Comprehensive Neuropsychological Evaluation, Assistive Technology Assessment]
+
+Please provide me with the district\'s IEE criteria and a list of approved independent evaluators immediately.
+
+I understand that the district must, without unnecessary delay, either agree to fund this IEE at public expense or file a due process hearing request to prove that its evaluation is appropriate.
+
+I look forward to your prompt response.
+
+Sincerely,
+${f.parentName || '[Parent Name]'}`
+    }
+  },
+  'tx-able-guide': {
+    slug: 'tx-able-guide',
+    category: 'forms',
+    title: 'Texas ABLE Savings Account Enrollment Guide',
+    metaTitle: 'Texas ABLE Account Guide | Texas Comptroller',
+    metaDescription: 'Step-by-step parent guide to opening a tax-advantaged Texas ABLE savings account for individuals with disabilities.',
+    quickAnswer: 'Texas ABLE accounts allow individuals with disabilities to save tax-free for qualifying disability expenses without losing eligibility for state benefit programs like Medicaid or SSI.',
+    tldrPoints: [
+      { label: 'Authorized Program', value: 'Texas Comptroller of Public Accounts' },
+      { label: 'Tax Advantage', value: 'Tax-free growth and withdrawals' },
+      { label: 'Asset Protection', value: 'Bypasses SSI and Medicaid resource limits' }
+    ],
+    whenThisMatters: 'Open a Texas ABLE account when your child receives SSI or Medicaid and you want to save more than the standard $2,000 asset limit.',
+    signsThisMayApply: [
+      'Child receives Supplemental Security Income (SSI) or a Texas Medicaid waiver.',
+      'Disability onset occurred before age 26.'
+    ],
+    whatToDoFirst: [
+      'Visit TexasABLE.org.',
+      'Complete the online registration and verification of identity.',
+      'Deposit the initial opening contribution and select investment options.'
+    ],
+    documentsToGather: [
+      { name: 'ABLE Enrollment Confirmation', description: 'Texas ABLE enrollment checklist.', downloadUrl: 'https://www.texasable.org' }
+    ],
+    whoToCall: [
+      { name: 'Texas ABLE Support Office', number: '844-489-2253', description: 'Information and account enrollment help.' }
+    ],
+    whatToSay: 'I want to open a Texas ABLE account for my child. Please verify the enrollment process and initial deposit minimums.',
+    commonMistakes: [
+      'Exceeding the annual contribution limit ($18,000 in 2024, or higher if working).',
+      'Spending withdrawals on non-qualified expenses (always use withdrawals for housing, transportation, education, or healthcare).'
+    ],
+    relatedGuides: [
+      { title: 'ABLE Asset Rules', url: '/programs/tx-able' }
+    ],
+    officialSources: [
+      { name: 'Texas ABLE Program', url: 'https://www.texasable.org' }
+    ],
+    lastReviewedDate: '2026-06-01',
+    callScriptTemplate: {
+      intro: 'ABLE Account Support',
+      script: 'Hi, I am opening a Texas ABLE account as a representative payee for my child. I want to confirm the documents needed to verify my guardianship.',
+      tips: 'Ensure you select electronic statements to bypass paper administration fees.'
+    }
+  },
+  'tx-ssi-checklist': {
+    slug: 'tx-ssi-checklist',
+    category: 'forms',
+    title: 'SSI Childhood Disability Starter Kit Checklist for Texas Families',
+    metaTitle: 'Texas Child SSI Checklist | Social Security Admin',
+    metaDescription: 'Step-by-step parent checklist to gather files and apply for Supplemental Security Income (SSI) for children in Texas.',
+    quickAnswer: 'Supplemental Security Income (SSI) provides monthly cash payments to meet the needs of children with developmental or physical disabilities. Texas families must submit financial and medical records to SSA.',
+    tldrPoints: [
+      { label: 'Filing Agency', value: 'Social Security Administration (SSA)' },
+      { label: 'Evaluation Agency', value: 'Texas Disability Determination Services (DDS)' },
+      { label: 'Resource Limits', value: 'Parental resource limit is $2,000 for single parent, $3,000 for couples' }
+    ],
+    whenThisMatters: 'Apply when your child has severe functional limitations and your household assets are below the SSA program limits.',
+    signsThisMayApply: [
+      'Child has severe developmental or medical impairments.',
+      'Family meets the low-income asset requirements.'
+    ],
+    whatToDoFirst: [
+      'Read the SSA Child Disability Starter Kit.',
+      'Schedule an application appointment with your local SSA office or apply online.',
+      'Compile all doctor reports, therapist evaluations, and school IEP records.'
+    ],
+    documentsToGather: [
+      { name: 'SSI Child Starter Kit Checklist', description: 'The official Social Security checklist PDF.', downloadUrl: 'https://www.ssa.gov/disability/Documents/ChildQual-EN.pdf' },
+      { name: 'School IEP & Medical Reports', description: 'Evaluations proving severe limitations in learning or self-care.' }
+    ],
+    whoToCall: [
+      { name: 'Social Security Hotline', number: '800-772-1213', description: 'National SSA inquiry line.' }
+    ],
+    whatToSay: 'I want to schedule an appointment to apply for Supplemental Security Income (SSI) for my disabled child.',
+    commonMistakes: [
+      'Failing to document functional limitations in daily living (e.g. self-care, communication).',
+      'Exceeding the strict asset limit of $3,000 (excluding one car and home).'
+    ],
+    relatedGuides: [
+      { title: 'SSI Childhood Eligibility', url: '/programs/ssi-for-children' }
+    ],
+    officialSources: [
+      { name: 'Social Security Administration', url: 'https://www.ssa.gov' }
+    ],
+    lastReviewedDate: '2026-06-01',
+    callScriptTemplate: {
+      intro: 'Filing Child SSI',
+      script: 'Hi, I want to request a phone interview to apply for Child SSI benefits. Please send me the childhood disability report packet.',
+      tips: 'Ensure the SSA representative logs your protective filing date immediately.'
+    }
+  },
+  'tx-mediation-request': {
+    slug: 'tx-mediation-request',
+    category: 'forms',
+    title: 'Texas Special Education Mediation Request Guide',
+    metaTitle: 'Texas Special Education Mediation Request | TEA',
+    metaDescription: 'Step-by-step parent guide to requesting voluntary mediation for special education and IEP disputes with Texas school districts.',
+    quickAnswer: 'Mediation is a voluntary, confidential process facilitated by an impartial mediator to resolve disputes between parents and Texas school districts under IDEA. Parents or school districts can request it at any time.',
+    tldrPoints: [
+      { label: 'Filing Agency', value: 'Texas Education Agency (TEA)' },
+      { label: 'Cost', value: 'Free (fully funded by TEA)' },
+      { label: 'Agreement Status', value: 'Legally binding and enforceable in court' }
+    ],
+    whenThisMatters: 'Request mediation when you and your school district disagree on your child\'s IEP accommodations, services, placement, or evaluations, and you want to reach a collaborative agreement without a formal hearing.',
+    signsThisMayApply: [
+      'Disagreements regarding speech, occupational, or behavior therapy hours.',
+      'Dispute over the child\'s placement in a general education or self-contained classroom.',
+      'Desire to resolve conflicts without going through an adversarial due process hearing.'
+    ],
+    whatToDoFirst: [
+      'Download the official TEA Request for Special Education Mediation Form.',
+      'Complete the parent, child, and school district contact fields.',
+      'Clearly describe the special education issues you wish to resolve through mediation.',
+      'Sign the form and submit it to the TEA Office of General Counsel by email or fax.'
+    ],
+    documentsToGather: [
+      { name: 'TEA Special Education Mediation Request Form', description: 'The official TEA request form.', downloadUrl: 'https://tea.texas.gov/academics/special-student-populations/special-education/dispute-resolution/special-education-mediation-program' },
+      { name: 'Current IEP & Evaluations', description: 'Relevant documents detailing the services or eligibility items in dispute.' }
+    ],
+    whoToCall: [
+      { name: 'TEA Special Education Dispute Resolution Division', number: '512-463-9414', description: 'State division managing special education mediation and complaints.' }
+    ],
+    whatToSay: 'I am requesting a voluntary mediation with my child\'s school district. I have submitted the mediation request form to TEA.',
+    commonMistakes: [
+      'Failing to realize mediation is entirely voluntary; the school district must also agree to participate.',
+      'Not clearly outlining the specific IEP or services disputes on the request form.'
+    ],
+    relatedGuides: [
+      { title: 'TEA State Complaint Guide', url: '/forms/tx-tea-complaint' },
+      { title: 'TEA Due Process Guide', url: '/forms/tx-due-process-complaint' }
+    ],
+    officialSources: [
+      { name: 'Texas Education Agency Dispute Resolution', url: 'https://tea.texas.gov' }
+    ],
+    lastReviewedDate: '2026-06-01',
+    letterTemplate: {
+      title: 'Special Education Mediation Request Letter',
+      description: 'This letter requests mediation with the school district to resolve special education / IEP disputes.',
+      fields: [
+        { key: 'parentName', label: 'Parent/Guardian Name', placeholder: 'Your Name' },
+        { key: 'childName', label: 'Child\'s Name', placeholder: 'Child\'s Name' },
+        { key: 'schoolDistrict', label: 'School District Name', placeholder: 'School District' },
+        { key: 'disputedIssues', label: 'Issues in Dispute', placeholder: 'Describe the disagreements (e.g. eligibility, speech therapy hours, placement)' }
+      ],
+      generateFn: (fields) => `Date: ${new Date().toLocaleDateString()}
+
+To: Texas Education Agency
+Division of Special Education Dispute Resolution
+1701 N. Congress Avenue
+Austin, TX 78701
+Email: se-legal@tea.texas.gov
+Fax: (512) 463-6027
+
+RE: Request for Special Education Mediation
+
+Child's Name: ${fields.childName}
+School District: ${fields.schoolDistrict}
+Parent/Guardian Name: ${fields.parentName}
+
+Dear TEA Dispute Resolution Division,
+
+I am writing to formally request mediation to resolve a dispute with the ${fields.schoolDistrict} regarding my child's special education program. I understand that mediation is a voluntary process that must be agreed to by both parties, and I consent to participating.
+
+The issues in dispute are as follows:
+${fields.disputedIssues}
+
+I look forward to working collaboratively with the district and an impartial mediator appointed by the TEA to reach a mutually agreeable solution.
+
+Sincerely,
+
+${fields.parentName}`
+    }
+  },
+  'tx-starkids-overview': {
+    slug: 'tx-starkids-overview',
+    category: 'forms',
+    title: 'Texas STAR Kids Managed Care Overview Guide',
+    metaTitle: 'Texas STAR Kids Medicaid Guide | Texas HHS MCO',
+    metaDescription: 'Step-by-step parent guide to understanding Texas STAR Kids managed care, MCO directories, and coordinating child services.',
+    quickAnswer: 'STAR Kids is the mandatory Texas Medicaid managed care program for children and young adults under 21 with disabilities. It integrates acute care and long-term services and supports (LTSS) through a Managed Care Organization (MCO). You must select a plan within your service area or you will be auto-assigned.',
+    tldrPoints: [
+      { label: 'Mandatory Age', value: 'Under 21 years old' },
+      { label: 'Intake Assessment', value: 'STAR Kids Screening and Assessment Instrument (SK-SAI)' },
+      { label: 'MCO Options', value: 'Regional (Superior, Aetna, Driscoll, Cook, etc.)' }
+    ],
+    whenThisMatters: 'When your child qualifies for Texas Medicaid (via SSI, MDCP, CLASS, or HCS waivers) and you must choose an MCO and set up care coordination.',
+    signsThisMayApply: [
+      'Child is newly enrolled in Medicaid and has a developmental disability or complex medical needs.',
+      'Child is placed on MDCP or CLASS waivers and transitioned into STAR Kids.'
+    ],
+    whatToDoFirst: [
+      'Look up the MCOs available in your county service area.',
+      'Select a primary care provider and pediatrician who are in-network with your chosen MCO.',
+      'Submit your MCO enrollment form online or call the HHS Enrollment Broker at 877-782-6440.'
+    ],
+    documentsToGather: [
+      { name: 'STAR Kids MCO Selection Map', description: 'Texas HHSC regional service area directory.', downloadUrl: 'https://hhs.texas.gov/services/health/medicaid-chip/programs/star-kids' },
+      { name: 'Pediatric Doctor Network List', description: 'Verification of in-network status for specialists.' }
+    ],
+    whoToCall: [
+      { name: 'Texas HHS Medicaid Enrollment Broker', number: '877-782-6440', description: 'Direct hotline to enroll or change MCOs.' }
+    ],
+    whatToSay: 'I am calling to select a STAR Kids Managed Care Organization for my child who is newly approved for Medicaid. I would like to choose [MCO Name] as our plan.',
+    commonMistakes: [
+      'Failing to choose an MCO within 15 days, resulting in auto-assignment to a plan that may not include your pediatrician.',
+      'Assuming all MCOs offer the same value-added services (check value-added benefits like respite or sensory kits before choosing).'
+    ],
+    relatedGuides: [
+      { title: 'STAR Kids Services Guide', url: '/programs/tx-mdcp' }
+    ],
+    officialSources: [
+      { name: 'Texas HHSC STAR Kids Info Portal', url: 'https://www.hhs.texas.gov/services/health/medicaid-chip/programs/star-kids' }
+    ],
+    lastReviewedDate: '2026-06-12',
+    callScriptTemplate: {
+      intro: 'Changing MCO Plan Broker Call',
+      script: 'Hello, I want to change my child\'s STAR Kids MCO plan. Their Medicaid number is [Medicaid #]. I want to switch from [Old MCO] to [New MCO] because our pediatric specialists are in-network with [New MCO]. Please process this swap for the next available cycle.',
+      tips: 'Changes made by the 15th of the month typically take effect on the first day of the following month.'
+    }
+  },
+  'tx-starkids-coordination': {
+    slug: 'tx-starkids-coordination',
+    category: 'forms',
+    title: 'STAR Kids Service Coordination Request Guide',
+    metaTitle: 'Texas Service Coordination Request | MCO Case Manager',
+    metaDescription: 'Step-by-step parent guide to requesting service coordination, scheduling the SK-SAI assessment, and updating the ISP in Texas.',
+    quickAnswer: 'Under Texas HHSC rules, every child enrolled in STAR Kids is entitled to a Service Coordinator provided by their MCO. This coordinator is responsible for conducting the mandatory annual screening (SK-SAI), writing the Individual Service Plan (ISP), and organizing therapies and nursing.',
+    tldrPoints: [
+      { label: 'Mandatory Service', value: 'Assigned by MCO at no cost' },
+      { label: 'Key Tool', value: 'SK-SAI Assessment (completed annually)' },
+      { label: 'Primary Document', value: 'Individual Service Plan (ISP)' }
+    ],
+    whenThisMatters: 'When your child has complex needs and you need a dedicated case manager to request therapies, private duty nursing, or specialized medical equipment.',
+    signsThisMayApply: [
+      'Your assigned coordinator is unresponsive or does not return emails.',
+      'Your child is due for their annual SK-SAI assessment to renew waiver services.',
+      'You need to update your child\'s ISP due to changes in their medical condition or functional needs.'
+    ],
+    whatToDoFirst: [
+      'Call your MCO member services number and ask for the name of your child\'s assigned Service Coordinator.',
+      'Submit a written request to schedule an ISP meeting or the annual SK-SAI assessment.',
+      'Document all functional care tasks and therapies before the coordinator conducts the assessment.'
+    ],
+    documentsToGather: [
+      { name: 'STAR Kids Screening and Assessment Instrument (SK-SAI)', description: 'Official assessment tool used by MCOs.', downloadUrl: 'https://www.hhs.texas.gov/providers/health-services-providers/star-kids/star-kids-screening-assessment-instrument' },
+      { name: 'Child\'s Therapy Logs & Doctor Letters', description: 'Proof of clinical needs for speech, OT, and physical therapies.' }
+    ],
+    whoToCall: [
+      { name: 'MCO Care Management Office', description: 'Contact your specific plan (Superior, Blue Cross, etc.) and ask for the Service Coordination Department.' }
+    ],
+    whatToSay: 'I am requesting to schedule an Individual Service Plan (ISP) review meeting for my child. I would like their assigned Service Coordinator to contact me to discuss updating our respite hours and speech therapy limits.',
+    commonMistakes: [
+      'Accepting a phone-only SK-SAI assessment when your child has complex needs (request an in-person assessment for a more accurate evaluation).',
+      'Not preparing a list of functional deficits before the assessment, which can lead to low scores and reduced hours.'
+    ],
+    relatedGuides: [
+      { title: 'STAR Kids Appeals', url: '/forms/tx-starkids-mco-appeal' }
+    ],
+    officialSources: [
+      { name: 'Texas HHS Service Coordination Requirements', url: 'https://www.hhs.texas.gov/handbooks/star-kids-handbook' }
+    ],
+    lastReviewedDate: '2026-06-12',
+    letterTemplate: {
+      title: 'STAR Kids Service Coordinator Assignment Request',
+      description: 'Formal written request to your MCO to assign a coordinator and schedule the ISP meeting.',
+      fields: [
+        { key: 'parentName', label: 'Parent Name', placeholder: 'Jane Doe' },
+        { key: 'childName', label: 'Child Name', placeholder: 'Tommy Doe' },
+        { key: 'medicaidNum', label: 'Child Medicaid Number', placeholder: '123456789' },
+        { key: 'mcoName', label: 'MCO Name', placeholder: 'Superior HealthPlan' },
+        { key: 'urgencyReason', label: 'Reason for Urgency', placeholder: 'My child has recently undergone surgery and needs immediate coordination of home nursing and occupational therapy.' }
+      ],
+      generateFn: (f) => `Date: ${new Date().toLocaleDateString()}
+To: STAR Kids Service Coordination Department
+MCO: ${f.mcoName || '[MCO Name]'}
+
+RE: Request for Service Coordinator Assignment and ISP Meeting
+Child Name: ${f.childName || '[Child Name]'}
+Medicaid ID: ${f.medicaidNum || '[Medicaid #]'}
+
+Dear Care Management Director,
+
+I am writing as the parent of ${f.childName || '[Child Name]'}, who is enrolled in the STAR Kids program under your MCO. 
+
+I am formally requesting the immediate assignment of a dedicated Service Coordinator and the scheduling of an Individual Service Plan (ISP) review meeting. 
+
+We need to coordinate benefits and update our authorized services due to the following reasons:
+${f.urgencyReason || 'We require assessments for physical therapy, occupational therapy, and respite care support.'}
+
+Under Texas HHSC STAR Kids Handbook guidelines, my child is entitled to active service coordination. Please contact me within 5 business days to confirm our coordinator\'s name and schedule our meeting.
+
+Sincerely,
+${f.parentName || '[Parent Name]'}`
+    }
+  },
+  'tx-starkids-mco-appeal': {
+    slug: 'tx-starkids-mco-appeal',
+    category: 'forms',
+    title: 'STAR Kids MCO Internal Appeal Guide',
+    metaTitle: 'STAR Kids MCO Appeal Form | Texas Medicaid Denial',
+    metaDescription: 'Step-by-step parent guide to appealing a STAR Kids MCO service denial. Download letter templates and meet the 60-day deadline.',
+    quickAnswer: 'If your child\'s STAR Kids MCO denies, reduces, or terminates a service (like speech therapy, occupational therapy, or private duty nursing), you must first file an Internal MCO Appeal. You have exactly 60 calendar days from the date on the denial notice to file this appeal.',
+    tldrPoints: [
+      { label: 'Appeal Window', value: '60 Calendar Days from notice date' },
+      { label: 'MCO Response', value: 'Must decide within 30 calendar days' },
+      { label: 'First Step', value: 'Required before requesting a State Fair Hearing' }
+    ],
+    whenThisMatters: 'When you receive an adverse determination notice (denial letter) from your MCO regarding a therapy, device, or service authorization.',
+    signsThisMayApply: [
+      'MCO denies occupational therapy, claiming it is "not medically necessary."',
+      'MCO refuses to authorize a pediatric specialized wheelchair or adaptive device.'
+    ],
+    whatToDoFirst: [
+      'Locate the MCO denial notice and note the exact mailing date.',
+      'Request the MCO appeal form or draft an appeal letter outlining why the service is medically necessary.',
+      'Obtain a letter of medical necessity from your child\'s pediatrician or therapist.',
+      'Submit the appeal to the MCO via fax or certified mail, keeping your receipt.'
+    ],
+    documentsToGather: [
+      { name: 'MCO Adverse Determination Notice', description: 'The official denial letter stating the reasons for refusal.' },
+      { name: 'Pediatrician Letter of Support', description: 'Clinical justification for the denied therapy or equipment.' }
+    ],
+    whoToCall: [
+      { name: 'MCO Member Appeals Department', description: 'Check your denial notice for the direct toll-free phone and fax numbers for appeals.' }
+    ],
+    whatToSay: 'I am calling to file an appeal against the denial of my child\'s therapy authorization. I have medical records proving necessity.',
+    commonMistakes: [
+      'Missing the 60-day filing window, which makes the MCO\'s decision final.',
+      'Failing to submit clinical evidence (like therapist logs or pediatric letters) with the appeal form.'
+    ],
+    relatedGuides: [
+      { title: 'Expedited Appeal Guide', url: '/forms/tx-expedited-appeal' },
+      { title: 'Benefits Continuation Guide', url: '/forms/tx-benefits-continuation' }
+    ],
+    officialSources: [
+      { name: 'Texas HHSC Medicaid Appeals Portal', url: 'https://hhs.texas.gov/services/health/medicaid-chip/medicaid-chip-appeals-fair-hearings' }
+    ],
+    lastReviewedDate: '2026-06-12',
+    letterTemplate: {
+      title: 'STAR Kids MCO Internal Appeal Letter',
+      description: 'Formal letter to submit to your MCO to appeal a service or device denial.',
+      fields: [
+        { key: 'parentName', label: 'Parent Name', placeholder: 'Jane Doe' },
+        { key: 'childName', label: 'Child Name', placeholder: 'Tommy Doe' },
+        { key: 'medicaidNum', label: 'Child Medicaid ID', placeholder: '123456789' },
+        { key: 'mcoName', label: 'MCO Name', placeholder: 'Driscoll Health Plan' },
+        { key: 'deniedService', label: 'Denied Service/Device', placeholder: 'Occupational Therapy (12 sessions)' },
+        { key: 'noticeDate', label: 'Notice Date', placeholder: 'May 24, 2026' },
+        { key: 'clinicalReason', label: 'Clinical Justification', placeholder: 'Our child has severe sensory processing disorder and hypotonia, requiring occupational therapy to learn basic self-care tasks.' }
+      ],
+      generateFn: (f) => `Date: ${new Date().toLocaleDateString()}
+To: STAR Kids Member Appeals Department
+MCO: ${f.mcoName || '[MCO Name]'}
+
+RE: Member Appeal of Service Authorization Denial
+Child Name: ${f.childName || '[Child Name]'}
+Medicaid ID: ${f.medicaidNum || '[Medicaid #]'}
+Denied Service: ${f.deniedService || '[Service]'}
+MCO Notice Date: ${f.noticeDate || '[Notice Date]'}
+
+Dear Appeal Coordinator,
+
+I am writing to formally appeal the adverse determination notice dated ${f.noticeDate || '[Notice Date]'}, in which ${f.mcoName || 'our MCO'} denied coverage/authorization for ${f.deniedService || '[Service]'}.
+
+I disagree with this denial because this service is medically necessary for my child. 
+
+Clinical justification for this service includes:
+${f.clinicalReason || 'My child requires this intervention to address functional deficits in activities of daily living.'}
+
+I have attached a supporting letter from my child\'s physician, along with recent clinical evaluation logs. Under federal Medicaid guidelines, my child is entitled to medically necessary treatments. I request that you reverse this denial and authorize the service immediately.
+
+Sincerely,
+${f.parentName || '[Parent Name]'}`
+    }
+  },
+  'tx-starkids-reduction-appeal': {
+    slug: 'tx-starkids-reduction-appeal',
+    category: 'forms',
+    title: 'STAR Kids Service Reduction Appeal Guide',
+    metaTitle: 'Texas Service Reduction Appeal | MCO Benefit Cut',
+    metaDescription: 'Step-by-step parent guide to appealing a service reduction or termination in Texas STAR Kids and securing benefits continuation.',
+    quickAnswer: 'When an MCO proposes to reduce or terminate existing services (e.g., cutting private duty nursing from 40 hours to 20 hours), you can appeal specifically to prevent the reduction. You must request the appeal and benefit continuation within 10 calendar days of the notice to keep services active during the appeal.',
+    tldrPoints: [
+      { label: 'Critical Window', value: '10 Calendar Days to request benefit continuation' },
+      { label: 'Benefit Level', value: 'Keeps previous service hours active' },
+      { label: 'Legal Basis', value: '42 CFR § 431.230 (Aid Paid Pending)' }
+    ],
+    whenThisMatters: 'When your MCO sends a notice indicating they are reducing the number of hours of nursing, personal care services, or therapy sessions previously authorized.',
+    signsThisMayApply: [
+      'MCO proposes to cut your child\'s Private Duty Nursing (PDN) hours during their annual review.',
+      'MCO reduces weekly speech therapy authorization from 2 sessions to 1 session.'
+    ],
+    whatToDoFirst: [
+      'Read the reduction notice immediately and identify the exact postmark or notice date.',
+      'Draft your appeal and explicitly check the box or state in writing: "I request that my child\'s services continue at the previous level during the appeal."',
+      'Submit the appeal to the MCO within 10 calendar days of the notice date.',
+      'Verify with your home care agency or therapist that the MCO has issued a temporary authorization to maintain services.'
+    ],
+    documentsToGather: [
+      { name: 'MCO Notice of Reduction', description: 'The official notice proposing to cut or stop services.' },
+      { name: 'Recent Therapy Progress Reports', description: 'Showing that the child continues to make progress and needs the current level of care.' }
+    ],
+    whoToCall: [
+      { name: 'MCO Service Coordination Director', description: 'Call to notify them that you are submitting an appeal with benefits continuation.' }
+    ],
+    whatToSay: 'I am appealing the proposed reduction of my child\'s nursing hours. I demand that their services continue at the current authorized level of [Hours] per week pending the final decision of the appeal.',
+    commonMistakes: [
+      'Failing to file within the 10-day window, resulting in the reduction taking effect immediately (even if you appeal later within the 60-day limit).',
+      'Assuming the agency will handle the appeal for you (parents must sign and file the appeal).'
+    ],
+    relatedGuides: [
+      { title: 'Medicaid State Fair Hearing', url: '/forms/tx-medicaid-fair-hearing' },
+      { title: 'Benefits Continuation Guide', url: '/forms/tx-benefits-continuation' }
+    ],
+    officialSources: [
+      { name: 'Texas MCO Appeals Handbook', url: 'https://hhs.texas.gov/services/health/medicaid-chip/medicaid-chip-appeals-fair-hearings' }
+    ],
+    lastReviewedDate: '2026-06-12',
+    letterTemplate: {
+      title: 'STAR Kids Service Reduction Appeal & Continuation Request',
+      description: 'Formal letter to appeal a proposed service cut and demand benefits continuation (Aid Paid Pending).',
+      fields: [
+        { key: 'parentName', label: 'Parent Name', placeholder: 'Jane Doe' },
+        { key: 'childName', label: 'Child Name', placeholder: 'Tommy Doe' },
+        { key: 'medicaidNum', label: 'Child Medicaid ID', placeholder: '123456789' },
+        { key: 'mcoName', label: 'MCO Name', placeholder: 'Superior HealthPlan' },
+        { key: 'reducedService', label: 'Reduced Service', placeholder: 'Private Duty Nursing (from 40 hours to 20 hours)' },
+        { key: 'noticeDate', label: 'Notice Date', placeholder: 'June 2, 2026' }
+      ],
+      generateFn: (f) => `Date: ${new Date().toLocaleDateString()}
+To: STAR Kids Member Appeals Department
+MCO: ${f.mcoName || '[MCO Name]'}
+
+RE: URGENT APPEAL AND REQUEST FOR BENEFITS CONTINUATION
+Child Name: ${f.childName || '[Child Name]'}
+Medicaid ID: ${f.medicaidNum || '[Medicaid #]'}
+Proposed Reduction: ${f.reducedService || '[Service]'}
+Notice Date: ${f.noticeDate || '[Notice Date]'}
+
+Dear Appeal Coordinator,
+
+I am writing to formally appeal the proposed reduction of ${f.reducedService || '[Service]'} outlined in your notice dated ${f.noticeDate || '[Notice Date]'}.
+
+Pursuant to federal regulations (42 CFR Section 431.230) and Texas Administrative Code guidelines, I am formally requesting that my child\'s services continue at the previously authorized level while this appeal is pending.
+
+This appeal is being submitted within 10 calendar days of the notice date. Therefore, my child is legally entitled to benefits continuation (Aid Paid Pending). 
+
+I have attached clinical documentation confirming that my child\'s medical condition remains unchanged and that any reduction in services would jeopardize their safety and health. Please issue a continuation authorization to our provider agency immediately.
+
+Sincerely,
+${f.parentName || '[Parent Name]'}`
+    }
+  },
+  'tx-medicaid-fair-hearing': {
+    slug: 'tx-medicaid-fair-hearing',
+    category: 'forms',
+    title: 'Texas Medicaid State Fair Hearing Request Guide',
+    metaTitle: 'Texas Medicaid Fair Hearing | HHSC Appeal Form',
+    metaDescription: 'Step-by-step parent guide to requesting a State Fair Hearing with the Texas Health and Human Services Commission (HHSC).',
+    quickAnswer: 'A State Fair Hearing is an informal legal appeal held by a Texas HHSC hearing officer. If the MCO upholds their denial in the internal appeal, you have 90 calendar days to request a State Fair Hearing. You can also request a State Fair Hearing directly for eligibility denials.',
+    tldrPoints: [
+      { label: 'Filing Agency', value: 'Texas Health and Human Services Commission (HHSC)' },
+      { label: 'Request Window', value: '90 Calendar Days from MCO appeal decision notice' },
+      { label: 'Advocate Support', value: 'Highly recommended (attorney or special needs advocate)' }
+    ],
+    whenThisMatters: 'When your MCO denies your internal appeal and you need to present your case before an independent state administrative judge.',
+    signsThisMayApply: [
+      'MCO issues an Internal Appeal Decision upholding the denial of physical therapy.',
+      'HHSC denies waiver eligibility (CLASS or MDCP) due to level of care criteria.'
+    ],
+    whatToDoFirst: [
+      'Review the MCO\'s final appeal decision letter.',
+      'Submit the State Fair Hearing request form attached to the decision letter or send a written request to HHSC.',
+      'Contact Disability Rights Texas or a local advocate for potential representation.',
+      'Compile your evidence packet (medical summaries, evaluations, therapist journals) to submit to the hearing officer.'
+    ],
+    documentsToGather: [
+      { name: 'MCO Final Appeal Decision Notice', description: 'The letter confirming the MCO is upholding the service denial.' },
+      { name: 'HHSC Fair Hearing Request Form', description: 'The official HHSC request form.', downloadUrl: 'https://hhs.texas.gov/services/health/medicaid-chip/medicaid-chip-appeals-fair-hearings' }
+    ],
+    whoToCall: [
+      { name: 'Texas HHSC Appeals Division Office', number: '877-541-7905', description: 'State benefits and fair hearing coordination line.' }
+    ],
+    whatToSay: 'I am requesting a State Fair Hearing to appeal the denial of my child\'s pediatric nursing services by [MCO Name]. I want to ensure my request is registered and scheduled.',
+    commonMistakes: [
+      'Failing to submit the fair hearing request within the 90-day window.',
+      'Assuming the hearing is formal and intimidating. It is actually an informal conference, but having a solid paper trail of medical necessity is critical.'
+    ],
+    relatedGuides: [
+      { title: 'MCO Appeals Guide', url: '/forms/tx-starkids-mco-appeal' },
+      { title: 'Benefits Continuation Guide', url: '/forms/tx-benefits-continuation' }
+    ],
+    officialSources: [
+      { name: 'Texas HHSC Appeals and Fair Hearings Page', url: 'https://hhs.texas.gov/services/health/medicaid-chip/medicaid-chip-appeals-fair-hearings' }
+    ],
+    lastReviewedDate: '2026-06-12',
+    letterTemplate: {
+      title: 'Texas HHSC State Fair Hearing Request Letter',
+      description: 'Formal letter to send to HHSC to request a State Fair Hearing.',
+      fields: [
+        { key: 'parentName', label: 'Parent Name', placeholder: 'Jane Doe' },
+        { key: 'childName', label: 'Child Name', placeholder: 'Tommy Doe' },
+        { key: 'medicaidNum', label: 'Child Medicaid ID', placeholder: '123456789' },
+        { key: 'mcoName', label: 'MCO Name', placeholder: 'Superior HealthPlan' },
+        { key: 'disputedService', label: 'Disputed Service/Benefit', placeholder: 'Speech Therapy (2 sessions per week)' },
+        { key: 'decisionDate', label: 'MCO Appeal Decision Date', placeholder: 'June 5, 2026' }
+      ],
+      generateFn: (f) => `Date: ${new Date().toLocaleDateString()}
+To: Texas Health and Human Services Commission
+Appeals Division
+P.O. Box 149030
+Austin, TX 78714
+
+RE: REQUEST FOR STATE FAIR HEARING
+Child Name: ${f.childName || '[Child Name]'}
+Medicaid ID: ${f.medicaidNum || '[Medicaid #]'}
+Disputed Service: ${f.disputedService || '[Service/Benefit]'}
+MCO Name: ${f.mcoName || '[MCO Name]'}
+MCO Appeal Decision Date: ${f.decisionDate || '[Decision Date]'}
+
+Dear Fair Hearing Coordinator,
+
+I am writing to formally request a State Fair Hearing to appeal the final adverse decision made by ${f.mcoName || 'our MCO'} on ${f.decisionDate || '[Decision Date]'} regarding the authorization of ${f.disputedService || '[Service]'}.
+
+We have exhausted the MCO\'s internal appeal process, and they have upheld their denial of this medically necessary service. 
+
+I request that HHSC schedule a fair hearing at the earliest opportunity. I prefer a telephone hearing. Please send me the case details, scheduling order, and information on how to submit our evidence bundle.
+
+Sincerely,
+${f.parentName || '[Parent Name]'}`
+    }
+  },
+  'tx-expedited-appeal': {
+    slug: 'tx-expedited-appeal',
+    category: 'forms',
+    title: 'Texas Medicaid Expedited Appeal Request Guide',
+    metaTitle: 'Texas Expedited Medicaid Appeal | 72-Hour Review',
+    metaDescription: 'Step-by-step parent guide to requesting an expedited 72-hour appeal for urgent medical denials in Texas Medicaid.',
+    quickAnswer: 'If the standard appeal timeline (up to 30 days) could seriously jeopardize your child\'s life, health, or ability to attain, maintain, or regain maximum function, you have the right to request an Expedited Appeal. The MCO must make a decision within 72 hours.',
+    tldrPoints: [
+      { label: 'Fast Decision', value: '72-hour turnaround time' },
+      { label: 'Requirement', value: 'Jeopardy to child\'s life or health' },
+      { label: 'Supporting Evidence', value: 'Physician certificate highly recommended' }
+    ],
+    whenThisMatters: 'When your child has a critical medical denial (e.g., denial of a feeding tube formula, post-surgical therapy, or critical nursing hours) that requires immediate intervention.',
+    signsThisMayApply: [
+      'MCO denies nutritional formula for a G-tube fed child, leading to risk of immediate weight loss or hospitalization.',
+      'MCO denies immediate post-operative rehabilitation services.'
+    ],
+    whatToDoFirst: [
+      'Ask your child\'s pediatrician or treating specialist to write a statement certifying that the standard appeal timeline would jeopardize the child\'s health.',
+      'Submit the appeal to the MCO and explicitly label it "REQUEST FOR EXPEDITED APPEAL" in bold on the cover page.',
+      'Include the physician\'s statement with your filing.',
+      'Follow up with the MCO appeals coordinator within 4 hours of submission to confirm they have accepted the appeal as expedited.'
+    ],
+    documentsToGather: [
+      { name: 'Physician Certification of Urgency', description: 'Written statement from the doctor justifying the expedited timeline.' },
+      { name: 'Urgent Medical Notes', description: 'Recent hospital or clinical records detailing the critical status.' }
+    ],
+    whoToCall: [
+      { name: 'MCO Expedited Appeals Intake', description: 'Check your MCO handbook for the direct phone line dedicated to expedited clinical reviews.' }
+    ],
+    whatToSay: 'I am submitting an expedited appeal for my child. The denial of [Service] represents an immediate risk to their health, and I have attached a doctor\'s certificate of urgency. Please verify that this is flagged for a 72-hour decision.',
+    commonMistakes: [
+      'Filing without a physician\'s supporting statement (the MCO will likely downgrade the appeal to a standard 30-day timeline if they do not see a doctor\'s signature).',
+      'Failing to follow up, which can lead to administrative delays.'
+    ],
+    relatedGuides: [
+      { title: 'MCO Appeals Guide', url: '/forms/tx-starkids-mco-appeal' }
+    ],
+    officialSources: [
+      { name: 'Texas MCO Expedited Rules', url: 'https://hhs.texas.gov/services/health/medicaid-chip/medicaid-chip-appeals-fair-hearings' }
+    ],
+    lastReviewedDate: '2026-06-12',
+    letterTemplate: {
+      title: 'Texas Medicaid Expedited Appeal Request Letter',
+      description: 'Formal request letter to submit to your MCO for an expedited 72-hour decision.',
+      fields: [
+        { key: 'parentName', label: 'Parent Name', placeholder: 'Jane Doe' },
+        { key: 'childName', label: 'Child Name', placeholder: 'Tommy Doe' },
+        { key: 'medicaidNum', label: 'Child Medicaid ID', placeholder: '123456789' },
+        { key: 'mcoName', label: 'MCO Name', placeholder: 'Aetna Better Health' },
+        { key: 'deniedService', label: 'Denied Service/Item', placeholder: 'Specialized G-tube feeding formula' },
+        { key: 'noticeDate', label: 'Notice Date', placeholder: 'June 8, 2026' },
+        { key: 'physicianName', label: 'Physician Name', placeholder: 'Dr. John Watson' }
+      ],
+      generateFn: (f) => `Date: ${new Date().toLocaleDateString()}
+To: STAR Kids Member Appeals Department
+MCO: ${f.mcoName || '[MCO Name]'}
+
+RE: URGENT REQUEST FOR EXPEDITED APPEAL (72-HOUR DECISION)
+Child Name: ${f.childName || '[Child Name]'}
+Medicaid ID: ${f.medicaidNum || '[Medicaid #]'}
+Denied Item/Service: ${f.deniedService || '[Service]'}
+Notice Date: ${f.noticeDate || '[Notice Date]'}
+
+Dear Appeal Coordinator,
+
+I am writing to formally request an Expedited Appeal of the adverse determination notice dated ${f.noticeDate || '[Notice Date]'} regarding the denial of ${f.deniedService || '[Service]'}.
+
+My child\'s physician, Dr. ${f.physicianName || '[Physician Name]'}, has certified that a standard appeal timeline of 30 days would seriously jeopardize my child\'s life, health, or ability to attain, maintain, or regain maximum function. 
+
+A copy of Dr. ${f.physicianName || 'Watson\'s'} statement is attached.
+
+Consequently, pursuant to 42 CFR Section 438.410 and Texas Medicaid rules, the MCO must resolve this appeal within 72 hours. Please contact me immediately to confirm this has been accepted as an expedited appeal.
+
+Sincerely,
+${f.parentName || '[Parent Name]'}`
+    }
+  },
+  'tx-benefits-continuation': {
+    slug: 'tx-benefits-continuation',
+    category: 'forms',
+    title: 'Texas Medicaid Benefits Continuation Request Guide',
+    metaTitle: 'Texas Medicaid Benefits Continuation | Aid Pending',
+    metaDescription: 'Step-by-step parent guide to securing benefits continuation (Aid Paid Pending) during a Texas Medicaid or STAR Kids appeal.',
+    quickAnswer: 'Benefits Continuation (or "Aid Paid Pending") keeps your child\'s disputed services active at the previous level while an appeal or State Fair Hearing is pending. To qualify, you must file the appeal and request continuation within 10 days of the notice mailing date.',
+    tldrPoints: [
+      { label: 'Filing Deadline', value: '10 Calendar Days from notice date' },
+      { label: 'Service Level', value: 'Maintain current approved service hours' },
+      { label: 'Scope', value: 'Applies to MCO appeals and HHSC Fair Hearings' }
+    ],
+    whenThisMatters: 'When you receive a notice proposing to cut or stop nursing, therapies, or services, and you must act quickly to prevent the disruption.',
+    signsThisMayApply: [
+      'MCO proposes to reduce respite hours from 20 to 10 hours a month.',
+      'HHSC proposes to terminate ECI or waiver eligibility.'
+    ],
+    whatToDoFirst: [
+      'Locate the Notice of Action and check the box requesting benefits continuation.',
+      'Submit the appeal/fair hearing request along with the checked continuation form within the 10-day window.',
+      'Send the request via a method that provides proof of receipt (fax receipt or certified mail return card).',
+      'Follow up with the MCO or HHSC to verify the continuation has been processed.'
+    ],
+    documentsToGather: [
+      { name: 'HHSC Form H-100-A / Appeal Request', description: 'The form enclosed with your notice containing the benefits continuation checkboxes.' }
+    ],
+    whoToCall: [
+      { name: 'HHSC Fair Hearings Coordinator Office', number: '877-541-7905', description: 'State hearings division to check continuation status.' }
+    ],
+    whatToSay: 'I want to confirm that benefits continuation has been authorized for my child\'s appeal. I submitted the request within the 10-day window from the notice date.',
+    commonMistakes: [
+      'Failing to submit within the 10-day deadline, which allows the service cuts to take effect immediately.',
+      'Assuming that if you win the appeal, you won\'t be responsible for the cost of the continued services (note: in rare cases, if the state rules against you, they have the legal right to recover costs, though this is rarely enforced for children\'s therapy).'
+    ],
+    relatedGuides: [
+      { title: 'Service Reduction Appeals', url: '/forms/tx-starkids-reduction-appeal' }
+    ],
+    officialSources: [
+      { name: 'Texas HHSC Fair Hearing Guidelines', url: 'https://hhs.texas.gov' }
+    ],
+    lastReviewedDate: '2026-06-12',
+    letterTemplate: {
+      title: 'Texas Medicaid benefits continuation request letter',
+      description: 'Formal letter to request continuation of services during an HHSC State Fair Hearing appeal.',
+      fields: [
+        { key: 'parentName', label: 'Parent Name', placeholder: 'Jane Doe' },
+        { key: 'childName', label: 'Child Name', placeholder: 'Tommy Doe' },
+        { key: 'medicaidNum', label: 'Child Medicaid ID', placeholder: '123456789' },
+        { key: 'disputedService', label: 'Disputed Service', placeholder: 'Occupational Therapy (2 sessions per week)' },
+        { key: 'noticeDate', label: 'Notice of Proposed Action Date', placeholder: 'June 10, 2026' }
+      ],
+      generateFn: (f) => `Date: ${new Date().toLocaleDateString()}
+To: Texas Health and Human Services Commission
+Appeals Division
+P.O. Box 149030
+Austin, TX 78714
+
+RE: URGENT REQUEST FOR BENEFITS CONTINUATION (AID PAID PENDING)
+Child Name: ${f.childName || '[Child Name]'}
+Medicaid ID: ${f.medicaidNum || '[Medicaid #]'}
+Disputed Service: ${f.disputedService || '[Service]'}
+Notice Date: ${f.noticeDate || '[Notice Date]'}
+
+Dear Fair Hearing Coordinator,
+
+I am filing a request for a State Fair Hearing regarding the proposed action on my child\'s Medicaid benefits dated ${f.noticeDate || '[Notice Date]'}.
+
+I am formally requesting benefits continuation (Aid Paid Pending) under federal and state rules. I request that my child\'s services, specifically ${f.disputedService || '[Service]'}, remain active at the current authorized level while this appeal is pending.
+
+This request is being submitted within the 10-day window from the notice date. Please process this continuation request immediately and notify our provider agency.
+
+Sincerely,
+${f.parentName || '[Parent Name]'}`
+    }
+  },
+  'fl-medicaid-application': {
+    slug: 'fl-medicaid-application',
+    category: 'forms',
+    title: 'Florida Medicaid / DCF ACCESS Application Guide',
+    metaTitle: 'Florida Medicaid ACCESS Application | Parent Guide',
+    metaDescription: 'Step-by-step guide for Florida parents applying for Medicaid through the DCF ACCESS system. Bypasses family income for waiver clients.',
+    quickAnswer: 'Florida Medicaid eligibility is processed through the Department of Children and Families (DCF) ACCESS system. For children on the iBudget waiver, parental income is waived (Institutional Deeming). For standard Medicaid, eligibility is based on household income. Freshness note: Reviewed on 2026-06-12. If errors are found, contact the DCF ACCESS Help Desk at (866) 762-2237.',
+    tldrPoints: [
+      { label: 'Income Waiver', value: 'Bypasses parent income for waiver clients' },
+      { label: 'Application Portal', value: 'MyFLFamilies ACCESS Portal' },
+      { label: 'Response Time', value: '45 days standard' }
+    ],
+    whenThisMatters: 'Applying for medical insurance or establishing eligibility for waiver programs.',
+    signsThisMayApply: [
+      'Child requires clinical therapies (Speech, OT, PT) or private duty nursing.',
+      'Child has been deemed eligible for APD services.'
+    ],
+    whatToDoFirst: [
+      'Create an account on the ACCESS Florida portal.',
+      'If your child is in APD, get the APD referral document to upload.',
+      'Fill out the application online.'
+    ],
+    documentsToGather: [
+      { name: 'Social Security Number', description: 'SSN for applicant' },
+      { name: 'Proof of residency', description: 'Utility bill or lease agreement' },
+      { name: 'Income Statements', description: 'Required for non-waiver applicants' }
+    ],
+    whoToCall: [
+      { name: 'DCF ACCESS Central Office', number: '866-762-2237', description: 'Medicaid eligibility intake' }
+    ],
+    whatToSay: 'I am calling to check the status of my child\'s Medicaid application. They are an APD waiver client and qualify under institutional deeming.',
+    commonMistakes: [
+      'Uploading parental income for waiver clients without specifying the institutional deeming pathway.',
+      'Failing to submit proof of residency.'
+    ],
+    relatedGuides: [
+      { title: 'Florida iBudget Waiver Guide', url: '/programs/fl-ibudget' }
+    ],
+    officialSources: [
+      { name: 'ACCESS Florida Portal', url: 'https://www.myflfamilies.com/ACCESS' }
+    ],
+    lastReviewedDate: '2026-06-12'
+  },
+  'fl-apd-application': {
+    slug: 'fl-apd-application',
+    category: 'forms',
+    title: 'Florida APD Service Application Guide (Form APD-01)',
+    metaTitle: 'Florida APD Application Guide | Form APD-01',
+    metaDescription: 'Complete guide for Florida families to apply for developmental disability services through APD (Agency for Persons with Disabilities).',
+    quickAnswer: 'To apply for Florida APD services, you must submit Form APD-01 along with diagnostic evaluations. Freshness note: Reviewed on 2026-06-12. For corrections, contact the APD state office at (850) 488-4257.',
+    tldrPoints: [
+      { label: 'Required Form', value: 'Form APD-01 (Application for Services)' },
+      { label: 'Age Limit', value: 'Age 3 to lifetime' },
+      { label: 'Processing Time', value: '45 days' }
+    ],
+    whenThisMatters: 'Seeking state funding for respite, behavioral analysis, and waiver services.',
+    signsThisMayApply: [
+      'Child has autism, Down syndrome, cerebral palsy, or severe intellectual disability.'
+    ],
+    whatToDoFirst: [
+      'Download Form APD-01.',
+      'Gather medical and psychological diagnostic reports.',
+      'Mail or deliver the packet to your local APD Regional Office.'
+    ],
+    documentsToGather: [
+      { name: 'Form APD-01', description: 'Completed and signed application' },
+      { name: 'Psychological Evaluation', description: 'Showing IQ score or autism diagnosis' },
+      { name: 'School IEP', description: 'Educational reports' }
+    ],
+    whoToCall: [
+      { name: 'Florida APD Main Office', number: '850-488-4257', description: 'State administrative team' }
+    ],
+    whatToSay: 'I am submitting Form APD-01 for my child who has a developmental disability.',
+    commonMistakes: [
+      'Not including a formal psychological evaluation with an IQ score or diagnostic statement.',
+      'Sending the application to DCF instead of APD.'
+    ],
+    relatedGuides: [
+      { title: 'APD Regional Offices Directory', url: '/programs/regional-centers' }
+    ],
+    officialSources: [
+      { name: 'Florida APD Customer Application', url: 'https://apd.myflorida.com/customers/application/' }
+    ],
+    lastReviewedDate: '2026-06-12'
+  },
+  'fl-ibudget-guide': {
+    slug: 'fl-ibudget-guide',
+    category: 'programs',
+    title: 'Florida iBudget Waiver Parent Guide',
+    metaTitle: 'Florida iBudget Waiver Guide | Eligibility & Waitlist',
+    metaDescription: 'A comprehensive parent guide to navigating the Florida iBudget HCBS waiver, including waitlists and crisis applications.',
+    quickAnswer: 'The iBudget waiver funds home and community-based services in Florida. Because the interest list is long, crisis eligibility criteria apply. Freshness note: Reviewed on 2026-06-12. Contact APD at (850) 488-4257 for updates.',
+    tldrPoints: [
+      { label: 'HCBS Services', value: 'Respite, behavior, personal support' },
+      { label: 'Waitlist Status', value: 'Severe (10+ years average)' },
+      { label: 'Crisis Option', value: 'Homelessness or health safety risk' }
+    ],
+    whenThisMatters: 'Securing long-term funding for developmental services at home.',
+    signsThisMayApply: [
+      'Family is struggling to provide 24/7 care for a child with intensive needs.'
+    ],
+    whatToDoFirst: [
+      'Apply to APD and secure eligibility.',
+      'Once eligible, request waitlist placement.',
+      'If in crisis, file a crisis waiver request.'
+    ],
+    documentsToGather: [
+      { name: 'APD Eligibility Determination', description: 'Notice of eligibility' },
+      { name: 'Crisis Support Letters', description: 'Pediatrician or therapist statements' }
+    ],
+    whoToCall: [
+      { name: 'Local APD Region Office', description: 'See local office contacts' }
+    ],
+    whatToSay: 'I want to apply for the iBudget waiver. My child is eligible and we have a critical safety need.',
+    commonMistakes: [
+      'Waiting to apply. Put your child on the waitlist as early as possible.',
+      'Not documenting behavior incidents.'
+    ],
+    relatedGuides: [
+      { title: 'iBudget Appeal Process', url: '/forms/fl-ibudget-appeal' }
+    ],
+    officialSources: [
+      { name: 'APD iBudget Portal', url: 'https://apd.myflorida.com/ibudget/' }
+    ],
+    lastReviewedDate: '2026-06-12'
+  },
+  'fl-ibudget-appeal': {
+    slug: 'fl-ibudget-appeal',
+    category: 'deadlines',
+    title: 'Florida iBudget Waiver Appeal Guide',
+    metaTitle: 'Florida iBudget Appeal | Deadlines & Forms',
+    metaDescription: 'Step-by-step parent guide to appealing a Florida iBudget waiver denial or service reduction.',
+    quickAnswer: 'iBudget appeals must be filed in writing within 30 days of the notice date. Freshness note: Reviewed on 2026-06-12. Appeals are handled by the DCF Office of Appeal Hearings.',
+    tldrPoints: [
+      { label: 'Filing Window', value: '30 calendar days from notice date' },
+      { label: 'Aid Pending', value: 'File within 10 days for continuation' },
+      { label: 'Hearing Authority', value: 'DCF Office of Appeal Hearings' }
+    ],
+    whenThisMatters: 'When APD denies your child\'s iBudget application or proposes to reduce services.',
+    signsThisMayApply: [
+      'Proposed reduction in behavior analysis or respite hours.'
+    ],
+    whatToDoFirst: [
+      'Review the Notice of Action carefully.',
+      'Complete the appeal request form.',
+      'Submit the request via fax or certified mail.'
+    ],
+    documentsToGather: [
+      { name: 'Notice of Proposed Action', description: 'Copy of denial letter' },
+      { name: 'Medical/Behavior Logs', description: 'Evidence of need' }
+    ],
+    whoToCall: [
+      { name: 'DCF Office of Appeal Hearings', number: '850-488-1429', description: 'Appeals coordinator' }
+    ],
+    whatToSay: 'I am requesting a Fair Hearing regarding the reduction of my child\'s iBudget services.',
+    commonMistakes: [
+      'Missing the 10-day continuation deadline.',
+      'Failing to submit clinical evidence.'
+    ],
+    relatedGuides: [
+      { title: 'APD Hearing Guide', url: '/forms/fl-apd-hearing-guide' }
+    ],
+    officialSources: [
+      { name: 'DCF Appeals Division', url: 'https://www.myflfamilies.com/' }
+    ],
+    lastReviewedDate: '2026-06-12'
+  },
+  'fl-apd-hearing-guide': {
+    slug: 'fl-apd-hearing-guide',
+    category: 'forms',
+    title: 'Florida APD Fair Hearing Request Guide',
+    metaTitle: 'Florida APD Fair Hearing Guide | Parent Help',
+    metaDescription: 'Parent guide to preparing and presenting a case at a Florida APD Fair Hearing.',
+    quickAnswer: 'An APD Fair Hearing lets parents dispute eligibility and service denials. Freshness note: Reviewed on 2026-06-12. File within 30 days of receiving the APD decision.',
+    tldrPoints: [
+      { label: 'Process', value: 'Pre-hearing conference then formal hearing' },
+      { label: 'Legal Right', value: 'Representation allowed but not required' },
+      { label: 'Result', value: 'Written decision by hearing officer' }
+    ],
+    whenThisMatters: 'Preparing to argue your case before an administrative law judge.',
+    signsThisMayApply: [
+      'Parent disagrees with an eligibility or service budget decision.'
+    ],
+    whatToDoFirst: [
+      'File the hearing request form.',
+      'Ask for the complete copy of your child\'s APD record.',
+      'Compile doctor letters supporting your position.'
+    ],
+    documentsToGather: [
+      { name: 'Fair Hearing Request', description: 'Written request' },
+      { name: 'Clinical Reports', description: 'Independent assessments' }
+    ],
+    whoToCall: [
+      { name: 'APD Regional Office Coordinator', description: 'Intake and hearing support' }
+    ],
+    whatToSay: 'I want to coordinate the pre-hearing resolution conference to discuss my child\'s appeal.',
+    commonMistakes: [
+      'Not asking for the APD case file prior to the hearing.',
+      'Presenting emotional arguments instead of clinical evidence.'
+    ],
+    relatedGuides: [
+      { title: 'Florida iBudget Appeal Guide', url: '/forms/fl-ibudget-appeal' }
+    ],
+    officialSources: [
+      { name: 'Florida APD Hearings', url: 'https://apd.myflorida.com/' }
+    ],
+    lastReviewedDate: '2026-06-12'
+  },
+  'fl-cdc-plus-guide': {
+    slug: 'fl-cdc-plus-guide',
+    category: 'programs',
+    title: 'Florida Consumer Directed Care Plus (CDC+) Guide',
+    metaTitle: 'Florida CDC+ Guide | Self-Directed Care',
+    metaDescription: 'Learn how to transition your child to the Florida CDC+ program, allowing parents to hire caregivers and manage budgets.',
+    quickAnswer: 'CDC+ is a self-directed option for iBudget clients. Freshness note: Reviewed on 2026-06-12. Contact APD at (850) 488-4257 for enrollment guides.',
+    tldrPoints: [
+      { label: 'Advantage', value: 'Hire relatives/parents as caregivers' },
+      { label: 'Budget', value: 'Receive monthly allocation based on iBudget' },
+      { label: 'Requirement', value: 'Must complete representative training' }
+    ],
+    whenThisMatters: 'Seeking flexibility in choosing therapists and respite providers.',
+    signsThisMayApply: [
+      'Traditional agency providers are unavailable in your rural area.'
+    ],
+    whatToDoFirst: [
+      'Ask your APD waiver support coordinator for the CDC+ transition packet.',
+      'Complete the mandatory CDC+ representative training.',
+      'Establish your child\'s monthly purchasing plan.'
+    ],
+    documentsToGather: [
+      { name: 'CDC+ Purchasing Plan', description: 'Monthly budget allocation sheet' },
+      { name: 'Training Certificate', description: 'Proof of training completion' }
+    ],
+    whoToCall: [
+      { name: 'APD CDC+ Customer Service', number: '850-488-4257', description: 'CDC+ helpdesk' }
+    ],
+    whatToSay: 'I would like to request enrollment in the CDC+ option for my child\'s iBudget waiver.',
+    commonMistakes: [
+      'Failing to submit monthly employee timesheets on time, which can suspend budget payouts.',
+      'Using funds for unapproved items.'
+    ],
+    relatedGuides: [
+      { title: 'iBudget Waiver Parent Guide', url: '/programs/fl-ibudget' }
+    ],
+    officialSources: [
+      { name: 'Florida APD CDC+ Page', url: 'https://apd.myflorida.com/cdcplus/' }
+    ],
+    lastReviewedDate: '2026-06-12'
+  },
+  'fl-earlysteps-referral': {
+    slug: 'fl-earlysteps-referral',
+    category: 'forms',
+    title: 'Florida Early Steps Referral Guide',
+    metaTitle: 'Florida Early Steps Referral | Age 0-3 Help',
+    metaDescription: 'How to refer your infant or toddler to the Florida Early Steps program for speech and motor therapies.',
+    quickAnswer: 'Anyone can refer a child to Florida Early Steps. Income is ignored and services are free. Freshness note: Reviewed on 2026-06-12. Call (800) 218-0001 for referrals.',
+    tldrPoints: [
+      { label: 'Age Group', value: 'Birth to 36 months' },
+      { label: 'Cost', value: '100% Free evaluation and therapies' },
+      { label: 'Self-Referral', value: 'Parents can refer directly without doctor' }
+    ],
+    whenThisMatters: 'Noticing speech, physical, or social delays in infants and toddlers.',
+    signsThisMayApply: [
+      'Not babbling by 12 months; not walking by 18 months; poor eye contact.'
+    ],
+    whatToDoFirst: [
+      'Find the local Early Steps office for your county.',
+      'Call the intake coordinator or fill out the online referral form.',
+      'Schedule the developmental evaluation.'
+    ],
+    documentsToGather: [
+      { name: 'Pediatrician checkup notes', description: 'Growth and milestone logs' },
+      { name: 'Consent forms', description: 'Signed release for evaluation' }
+    ],
+    whoToCall: [
+      { name: 'Statewide Early Steps Referral', number: '800-218-0001', description: 'Central intake line' }
+    ],
+    whatToSay: 'I want to refer my toddler for an early intervention developmental evaluation. I have concerns about their speech delays.',
+    commonMistakes: [
+      'Waiting for the pediatrician to make the referral. Parents can refer directly.',
+      'Assuming there is a cost or income limit.'
+    ],
+    relatedGuides: [
+      { title: 'Florida Early Steps Program Guide', url: '/programs/fl-earlysteps' }
+    ],
+    officialSources: [
+      { name: 'Florida Early Steps Directory', url: 'https://www.floridaearlysteps.com/' }
+    ],
+    lastReviewedDate: '2026-06-12'
+  },
+  'fl-fldoe-complaint': {
+    slug: 'fl-fldoe-complaint',
+    category: 'forms',
+    title: 'FLDOE State Compliance Complaint Guide',
+    metaTitle: 'Florida DOE State Complaint | ESE Dispute Help',
+    metaDescription: 'Complete guide to filing a state compliance complaint with the Florida Department of Education Bureau of Exceptional Education.',
+    quickAnswer: 'Parents can file a state complaint with the FLDOE Bureau of Exceptional Education and Student Services (BEESS) for IEP violations. Freshness note: Reviewed on 2026-06-12. File within 1 year of the violation.',
+    tldrPoints: [
+      { label: 'Filing Authority', value: 'FLDOE BEESS Office' },
+      { label: 'Resolution Window', value: '60 calendar days to investigate' },
+      { label: 'Limit', value: 'Must address violations within past 1 year' }
+    ],
+    whenThisMatters: 'School fails to implement services listed in the child\'s approved IEP.',
+    signsThisMayApply: [
+      'IEP lists speech therapy twice a week, but child has received zero sessions for two months.'
+    ],
+    whatToDoFirst: [
+      'Download the FLDOE State Complaint form.',
+      'Write a clear statement of the facts showing the violation.',
+      'Submit the complaint to FLDOE and mail a copy to the school district superintendent.'
+    ],
+    documentsToGather: [
+      { name: 'Completed FLDOE Complaint Form', description: 'State compliance form' },
+      { name: 'Active IEP document', description: 'Evidence of agreed services' },
+      { name: 'Communication records', description: 'Emails to ESE director' }
+    ],
+    whoToCall: [
+      { name: 'FLDOE BEESS Office', number: '850-245-0475', description: 'Exceptional student education admin' }
+    ],
+    whatToSay: 'I am filing a state compliance complaint because the school district is failing to implement my child\'s IEP therapies.',
+    commonMistakes: [
+      'Complaining about issues older than 1 year.',
+      'Failing to send a copy to the local school district.'
+    ],
+    relatedGuides: [
+      { title: 'Florida Due Process Complaint', url: '/forms/fl-due-process-complaint' }
+    ],
+    officialSources: [
+      { name: 'FLDOE ESE Dispute Resolution', url: 'https://www.fldoe.org/academics/exceptional-student-edu/dispute-resolution/' }
+    ],
+    lastReviewedDate: '2026-06-12'
+  },
+  'fl-due-process-complaint': {
+    slug: 'fl-due-process-complaint',
+    category: 'forms',
+    title: 'Florida Due Process Hearing Request Guide',
+    metaTitle: 'Florida Due Process Hearing ESE | Parent Guide',
+    metaDescription: 'Step-by-step guide for requesting a due process hearing under IDEA in Florida for special education disputes.',
+    quickAnswer: 'A Due Process Complaint initiates a formal legal dispute with the school district. Cases are heard by DOAH administrative law judges. Freshness note: Reviewed on 2026-06-12.',
+    tldrPoints: [
+      { label: 'Hearing Body', value: 'Division of Administrative Hearings (DOAH)' },
+      { label: 'Resolution Meeting', value: 'Must occur within 15 days of filing' },
+      { label: 'Resolution Limit', value: '45 days standard timeline' }
+    ],
+    whenThisMatters: 'Disagreements over eligibility, evaluation placement, or FAPE that cannot be resolved in IEP meetings.',
+    signsThisMayApply: [
+      'District refuses to recognize autism diagnosis or denies speech therapy request.'
+    ],
+    whatToDoFirst: [
+      'Consult with a special education attorney or advocate.',
+      'Complete the Florida Due Process Request form.',
+      'File the complaint with the school district and copy the FLDOE.'
+    ],
+    documentsToGather: [
+      { name: 'Due Process Request Form', description: 'Signed formal request' },
+      { name: 'Independent evaluation reports', description: 'Supporting evidence' }
+    ],
+    whoToCall: [
+      { name: 'School District ESE Director', description: 'See local district contact' }
+    ],
+    whatToSay: 'I am filing a due process complaint regarding my child\'s special education eligibility and placement.',
+    commonMistakes: [
+      'Filing without preparing clinical evidence or expert witnesses.',
+      'Failing to specify the requested resolution.'
+    ],
+    relatedGuides: [
+      { title: 'FLDOE State Complaint Guide', url: '/forms/fl-fldoe-complaint' }
+    ],
+    officialSources: [
+      { name: 'FLDOE Due Process Information', url: 'https://www.fldoe.org/academics/exceptional-student-edu/dispute-resolution/' }
+    ],
+    lastReviewedDate: '2026-06-12'
+  },
+  'fl-mediation-request': {
+    slug: 'fl-mediation-request',
+    category: 'forms',
+    title: 'Florida Special Ed Mediation Request Guide',
+    metaTitle: 'Florida ESE Mediation Request | Parent Guide',
+    metaDescription: 'How to request state-funded special education mediation in Florida to resolve IEP disputes.',
+    quickAnswer: 'Mediation is a voluntary, state-funded process where a neutral mediator helps parents and school districts reach an agreement. Freshness note: Reviewed on 2026-06-12. Requests are processed by FLDOE.',
+    tldrPoints: [
+      { label: 'Cost', value: '100% state-funded and free to parents' },
+      { label: 'Voluntary', value: 'Both parties must agree to participate' },
+      { label: 'Binding', value: 'Signed agreements are legally binding contracts' }
+    ],
+    whenThisMatters: 'Seeking a collaborative middle ground before filing for due process.',
+    signsThisMayApply: [
+      'IEP team is deadlocked on therapy hours or classroom accommodations.'
+    ],
+    whatToDoFirst: [
+      'Submit the Request for Mediation form to FLDOE.',
+      'Secure agreement from the school district ESE coordinator.',
+      'Prepare your priority list of accommodations.'
+    ],
+    documentsToGather: [
+      { name: 'Mediation Request Form', description: 'FLDOE standard form' },
+      { name: 'Active IEP drafts', description: 'Disputed goals and accommodations' }
+    ],
+    whoToCall: [
+      { name: 'FLDOE Mediation Coordinator', number: '850-245-0475', description: 'State mediation bureau' }
+    ],
+    whatToSay: 'I would like to request voluntary mediation to resolve our differences regarding my child\'s IEP goals.',
+    commonMistakes: [
+      'Treating mediation as an adversarial court case.',
+      'Failing to get agreement in writing.'
+    ],
+    relatedGuides: [
+      { title: 'Florida Due Process Hearing', url: '/forms/fl-due-process-complaint' }
+    ],
+    officialSources: [
+      { name: 'FLDOE Mediation Services', url: 'https://www.fldoe.org/academics/exceptional-student-edu/dispute-resolution/' }
+    ],
+    lastReviewedDate: '2026-06-12'
+  },
+  'fl-iep-evaluation-request': {
+    slug: 'fl-iep-evaluation-request',
+    category: 'forms',
+    title: 'Florida IEP Evaluation Request Letter Template',
+    metaTitle: 'Florida IEP Evaluation Request | Letter Template',
+    metaDescription: 'Download a formal letter template to request an initial IEP evaluation from your Florida school district.',
+    quickAnswer: 'Submit this written request to your school principal and ESE director. The district must respond within 30 calendar days under Florida rule. Freshness note: Reviewed on 2026-06-12.',
+    tldrPoints: [
+      { label: 'Timeline Limit', value: '30 calendar days to respond' },
+      { label: 'Target', value: 'Initial ESE psycho-educational assessment' },
+      { label: 'Delivery', value: 'Submit in writing with dated receipt' }
+    ],
+    whenThisMatters: 'Initiating ESE services for a child suspected of having learning or developmental delays.',
+    signsThisMayApply: [
+      'Child is struggling academically or exhibiting behavior issues in class.'
+    ],
+    whatToDoFirst: [
+      'Fill out the template below.',
+      'Email and hand-deliver to the school principal.',
+      'Ensure the 30-day response window is tracked.'
+    ],
+    documentsToGather: [
+      { name: 'Written Request Letter', description: 'Completed template' }
+    ],
+    whoToCall: [
+      { name: 'School Principal Office', description: 'Your child\'s school admin' }
+    ],
+    whatToSay: 'I am submitting a written request for an initial ESE assessment for my child.',
+    commonMistakes: [
+      'Making the request verbally. Always submit in writing.',
+      'Allowing the school to delay response beyond 30 days.'
+    ],
+    relatedGuides: [
+      { title: 'Exceptional Student Education', url: '/programs/fl-fldoe-ese' }
+    ],
+    officialSources: [
+      { name: 'FLDOE ESE Parent Guides', url: 'https://www.fldoe.org/' }
+    ],
+    lastReviewedDate: '2026-06-12',
+    letterTemplate: {
+      title: 'Florida ESE Initial Evaluation Request Letter',
+      description: 'Formal written request to initiate an initial Exceptional Student Education (ESE) assessment.',
+      fields: [
+        { key: 'parentName', label: 'Parent Name', placeholder: 'Jane Doe' },
+        { key: 'childName', label: 'Child Name', placeholder: 'Tommy Doe' },
+        { key: 'schoolName', label: 'School Name', placeholder: 'Sunset Elementary' },
+        { key: 'grade', label: 'Child Grade', placeholder: 'Kindergarten' },
+        { key: 'concerns', label: 'Developmental/Academic Concerns', placeholder: 'Difficulty with speech articulation, sensory deficits, and reading retention.' }
+      ],
+      generateFn: (f) => `Date: ${new Date().toLocaleDateString()}
+To: School Principal & ESE Coordinator
+School: ${f.schoolName || '[School Name]'}
+
+RE: Request for Initial ESE Evaluation / Special Education Assessment
+Child Name: ${f.childName || '[Child Name]'}
+Grade: ${f.grade || '[Grade]'}
+
+Dear Principal and ESE Coordinator,
+
+I am writing to formally request that my child, ${f.childName || '[Child Name]'}, receive an initial evaluation to determine eligibility for Exceptional Student Education (ESE) services under the Individuals with Disabilities Education Act (IDEA) and Florida Administrative Code.
+
+My specific concerns regarding my child's developmental progress include:
+${f.concerns || 'Academic delays, speech/language articulation, and behavioral challenges.'}
+
+Under Florida Administrative Code Rule 6A-6.0331, the school district has exactly 30 calendar days from the receipt of this written request to either obtain my informed written consent to conduct the evaluations or provide me with a written notice of refusal. 
+
+Please contact me immediately to coordinate the consent paperwork and review next steps.
+
+Sincerely,
+${f.parentName || '[Parent Name]'}`
+    }
+  },
+  'fl-records-request': {
+    slug: 'fl-records-request',
+    category: 'forms',
+    title: 'Florida Student Records Request Letter Template',
+    metaTitle: 'Florida ESE Records Request | Parent Template',
+    metaDescription: 'Parent guide and letter template to request your child\'s special education and cumulative school records in Florida.',
+    quickAnswer: 'Parents have a right to inspect and copy all educational records. Under Florida rules, the district must comply within 30 days. Freshness note: Reviewed on 2026-06-12.',
+    tldrPoints: [
+      { label: 'Access Right', value: 'Complete cumulative and ESE file' },
+      { label: 'Timeline Limit', value: 'Must provide within 30 calendar days' },
+      { label: 'Cost', value: 'Free review; minor copy fee may apply' }
+    ],
+    whenThisMatters: 'Preparing for an IEP review or consulting with an advocate.',
+    signsThisMayApply: [
+      'Child is transitioning to a new school or district.'
+    ],
+    whatToDoFirst: [
+      'Complete the records template.',
+      'Submit to the school registrar and copy the ESE director.',
+      'Confirm the date of receipt.'
+    ],
+    documentsToGather: [
+      { name: 'Completed Records Request', description: 'Written template' }
+    ],
+    whoToCall: [
+      { name: 'School Registrar Office', description: 'School records division' }
+    ],
+    whatToSay: 'I am requesting a complete copy of my child\'s special education and evaluation records.',
+    commonMistakes: [
+      'Failing to ask for internal emails and speech logs.',
+      'Accepting a summary instead of full records.'
+    ],
+    relatedGuides: [
+      { title: 'IEP Evaluation Request', url: '/forms/fl-iep-evaluation-request' }
+    ],
+    officialSources: [
+      { name: 'FLDOE Student Records Rules', url: 'https://www.fldoe.org/' }
+    ],
+    lastReviewedDate: '2026-06-12',
+    letterTemplate: {
+      title: 'Florida School Records Request Letter',
+      description: 'Formal letter to request your child\'s cumulative and ESE school records.',
+      fields: [
+        { key: 'parentName', label: 'Parent Name', placeholder: 'Jane Doe' },
+        { key: 'childName', label: 'Child Name', placeholder: 'Tommy Doe' },
+        { key: 'schoolName', label: 'School Name', placeholder: 'Sunset Elementary' },
+        { key: 'dob', label: 'Child DOB', placeholder: '10/12/2019' }
+      ],
+      generateFn: (f) => `Date: ${new Date().toLocaleDateString()}
+To: School Registrar & Principal
+School: ${f.schoolName || '[School Name]'}
+
+RE: Request for Student Educational Records
+Child Name: ${f.childName || '[Child Name]'}
+Date of Birth: ${f.dob || '[DOB]'}
+
+Dear Registrar and Principal,
+
+Under the Family Educational Rights and Privacy Act (FERPA) and Florida Administrative Code, I am writing to request a complete copy of my child's educational records.
+
+Please include:
+1. All ESE evaluations, psychological reports, and clinical therapy logs (Speech, OT, PT).
+2. Cumulative file records, report cards, and progress monitoring reports.
+3. Behavior incident logs and discipline reports.
+4. Internal school district emails and correspondence regarding my child.
+
+Under Florida rules, the district must make these records available within 30 calendar days. Please contact me when they are ready for pickup.
+
+Sincerely,
+${f.parentName || '[Parent Name]'}`
+    }
+  },
+  'fl-iee-request': {
+    slug: 'fl-iee-request',
+    category: 'forms',
+    title: 'Florida IEE (Independent Educational Evaluation) Request Guide',
+    metaTitle: 'Florida IEE Request Guide | ESE Help',
+    metaDescription: 'Parent guide and letter template to request a public-funded Independent Educational Evaluation (IEE) in Florida.',
+    quickAnswer: 'If you disagree with the school district\'s evaluation, you have the right to request an IEE at public expense. Freshness note: Reviewed on 2026-06-12.',
+    tldrPoints: [
+      { label: 'Right', value: 'Independent assessment paid by school' },
+      { label: 'Filing', value: 'Submit in writing disagreeing with district tests' },
+      { label: 'Response', value: 'District must fund or file for due process' }
+    ],
+    whenThisMatters: 'District\'s evaluation reports underestimate your child\'s needs.',
+    signsThisMayApply: [
+      'School evaluation concludes child does not need speech therapy, but private doctor disagrees.'
+    ],
+    whatToDoFirst: [
+      'Review the school district\'s evaluation report.',
+      'Submit a written request for an IEE specifying the area of disagreement.',
+      'Select a credentialed private evaluator.'
+    ],
+    documentsToGather: [
+      { name: 'District Evaluation Report', description: 'The disputed test results' },
+      { name: 'Written IEE Request', description: 'Completed template' }
+    ],
+    whoToCall: [
+      { name: 'District ESE Director', description: 'See local county contact' }
+    ],
+    whatToSay: 'I disagree with the school\'s ESE evaluation and I am requesting an IEE at public expense.',
+    commonMistakes: [
+      'Paying for the evaluation yourself before getting district approval.',
+      'Failing to state disagreement in writing.'
+    ],
+    relatedGuides: [
+      { title: 'Exceptional Student Education', url: '/programs/fl-fldoe-ese' }
+    ],
+    officialSources: [
+      { name: 'FLDOE ESE Procedural Safeguards', url: 'https://www.fldoe.org/' }
+    ],
+    lastReviewedDate: '2026-06-12',
+    letterTemplate: {
+      title: 'Florida Public-Funded IEE Request Letter',
+      description: 'Formal letter to request an Independent Educational Evaluation at school district expense.',
+      fields: [
+        { key: 'parentName', label: 'Parent Name', placeholder: 'Jane Doe' },
+        { key: 'childName', label: 'Child Name', placeholder: 'Tommy Doe' },
+        { key: 'evaluationDate', label: 'District Evaluation Date', placeholder: 'May 15, 2026' },
+        { key: 'evaluationType', label: 'Evaluation Type', placeholder: 'Speech and Language Evaluation' }
+      ],
+      generateFn: (f) => `Date: ${new Date().toLocaleDateString()}
+To: District ESE Director
+
+RE: Request for Independent Educational Evaluation (IEE) at Public Expense
+Child Name: ${f.childName || '[Child Name]'}
+
+Dear ESE Director,
+
+I am writing to formally state that I disagree with the school district's recent ${f.evaluationType || '[Evaluation Type]'} completed on ${f.evaluationDate || '[Date]'}.
+
+Therefore, pursuant to 34 CFR Section 300.502 and Florida ESE rules, I am requesting an Independent Educational Evaluation (IEE) at public expense. I request an independent assessment in the area of ${f.evaluationType || 'speech, occupational therapy, or educational need'}.
+
+Please provide me with the district's IEE criteria and a list of approved evaluators without delay.
+
+Sincerely,
+${f.parentName || '[Parent Name]'}`
+    }
+  },
+  'fl-pwn-request': {
+    slug: 'fl-pwn-request',
+    category: 'forms',
+    title: 'Florida PWN (Prior Written Notice) Request Guide',
+    metaTitle: 'Florida Prior Written Notice Request | Parent Guide',
+    metaDescription: 'Learn how to use Prior Written Notice (PWN) to force Florida school districts to document special education denials.',
+    quickAnswer: 'Under IDEA, schools must provide Prior Written Notice (PWN) in writing before proposing or refusing changes to your child\'s IEP. Freshness note: Reviewed on 2026-06-12.',
+    tldrPoints: [
+      { label: 'Definition', value: 'Written explanation of school decisions' },
+      { label: 'Rule', value: 'Required for both proposals and refusals' },
+      { label: 'Advantage', value: 'Creates a paper trail of district denials' }
+    ],
+    whenThisMatters: 'IEP team verbally refuses to provide therapies or accommodations.',
+    signsThisMayApply: [
+      'School principal says "we don\'t have funding for 1-on-1 aides" during a meeting.'
+    ],
+    whatToDoFirst: [
+      'Submit a written request for PWN regarding the denied services.',
+      'Do not sign consent or agreement until the PWN is received.',
+      'File the PWN in your child\'s ESE notebook.'
+    ],
+    documentsToGather: [
+      { name: 'PWN Request Letter', description: 'Completed template' }
+    ],
+    whoToCall: [
+      { name: 'School ESE Coordinator', description: 'IEP meeting lead' }
+    ],
+    whatToSay: 'Please document that refusal in a Prior Written Notice so I have a record of the decision.',
+    commonMistakes: [
+      'Accepting verbal refusals without asking for PWN.',
+      'Allowing the school to implement changes without written notice.'
+    ],
+    relatedGuides: [
+      { title: 'FLDOE State Complaint', url: '/forms/fl-fldoe-complaint' }
+    ],
+    officialSources: [
+      { name: 'FLDOE Exceptional Student Education', url: 'https://www.fldoe.org/' }
+    ],
+    lastReviewedDate: '2026-06-12',
+    letterTemplate: {
+      title: 'Florida Prior Written Notice (PWN) Request Letter',
+      description: 'Formal letter to request Prior Written Notice documenting the school\'s refusal of services.',
+      fields: [
+        { key: 'parentName', label: 'Parent Name', placeholder: 'Jane Doe' },
+        { key: 'childName', label: 'Child Name', placeholder: 'Tommy Doe' },
+        { key: 'refusedService', label: 'Refused Service', placeholder: 'Occupational Therapy (weekly sessions)' }
+      ],
+      generateFn: (f) => `Date: ${new Date().toLocaleDateString()}
+To: IEP Team Coordinator
+
+RE: Request for Prior Written Notice (PWN)
+Child Name: ${f.childName || '[Child Name]'}
+
+Dear IEP Team,
+
+During our recent IEP meeting, the school district refused my request to provide the following service/accommodation for my child:
+${f.refusedService || '[Refused Service]'}
+
+Pursuant to 34 CFR Section 300.503 and Florida special education rules, I am requesting that the district provide me with Prior Written Notice (PWN) documenting this refusal.
+
+Please ensure the written notice includes:
+1. A description of the action refused by the agency.
+2. An explanation of why the agency refuses to take the action.
+3. A description of each evaluation procedure, assessment, record, or report used as a basis for the refusal.
+
+I look forward to receiving this written notice within 10 calendar days.
+
+Sincerely,
+${f.parentName || '[Parent Name]'}`
+    }
+  },
+  'fl-family-empowerment-scholarship-unique-abilities': {
+    slug: 'fl-family-empowerment-scholarship-unique-abilities',
+    category: 'programs',
+    title: 'Family Empowerment Scholarship for Students with Unique Abilities (FES-UA) Guide',
+    metaTitle: 'Family Empowerment Scholarship FES-UA | Florida Parent Guide',
+    metaDescription: 'Parent guide to applying for and utilizing the FES-UA scholarship for private school, therapies, and custom ESE needs in Florida.',
+    quickAnswer: 'FES-UA provides parents with an Educational Savings Account (ESA) to fund private tuition, therapies, and learning aids. Freshness note: Reviewed on 2026-06-12. Administered by Step Up for Students.',
+    tldrPoints: [
+      { label: 'Scholarship Type', value: 'Educational Savings Account (ESA)' },
+      { label: 'Eligibility', value: 'Ages 3-22 with qualifying diagnosis' },
+      { label: 'Funding Support', value: 'Average $10,000/year per student' }
+    ],
+    whenThisMatters: 'Withdrawing your child from public school to seek private placement or home education.',
+    signsThisMayApply: [
+      'Public school is failing to meet child\'s ESE needs, and parents want private therapy options.'
+    ],
+    whatToDoFirst: [
+      'Get a formal diagnostic letter from your child\'s pediatrician.',
+      'Create an account on the Step Up for Students portal.',
+      'Submit the FES-UA application during the open enrollment window.'
+    ],
+    documentsToGather: [
+      { name: 'Physician diagnosis letter', description: 'Confirming qualifying condition' },
+      { name: 'Florida proof of residency', description: 'Utility bill' }
+    ],
+    whoToCall: [
+      { name: 'Step Up for Students Office', number: '877-735-7837', description: 'Scholarship administrator' }
+    ],
+    whatToSay: 'I want to check the application window and document requirements for the FES-UA scholarship.',
+    commonMistakes: [
+      'Assuming you can receive both public school enrollment and the FES-UA scholarship. Enrolling in public school voids FES-UA funding.',
+      'Missing the priority application deadline.'
+    ],
+    relatedGuides: [
+      { title: 'Florida Exceptional Student Education', url: '/programs/fl-fldoe-ese' }
+    ],
+    officialSources: [
+      { name: 'Step Up for Students FES-UA Portal', url: 'https://www.stepupforstudents.org/scholarships/unique-abilities/' }
+    ],
+    lastReviewedDate: '2026-06-12'
+  },
+  'fl-cms-plan-guide': {
+    slug: 'fl-cms-plan-guide',
+    category: 'programs',
+    title: 'Children\'s Medical Services (CMS) Plan Guide',
+    metaTitle: 'Children\'s Medical Services CMS Plan Florida | Parent Guide',
+    metaDescription: 'Parent guide to clinical eligibility, specialty networks, and pediatric therapy benefits under the Florida CMS Plan.',
+    quickAnswer: 'The CMS Plan is a specialized Medicaid managed care plan for medically fragile children. Freshness note: Reviewed on 2026-06-12. Administered by Sunshine Health.',
+    tldrPoints: [
+      { label: 'Medicaid Option', value: 'Specialized Managed Medical Assistance (MMA) plan' },
+      { label: 'Focus', value: 'Children with complex, chronic conditions' },
+      { label: 'Care Coordination', value: 'Dedicated nurse case managers' }
+    ],
+    whenThisMatters: 'Managing intensive specialist care and therapy approvals.',
+    signsThisMayApply: [
+      'Child has cystic fibrosis, congenital heart disease, or complex cerebral palsy.'
+    ],
+    whatToDoFirst: [
+      'Check if your child has active Florida Medicaid.',
+      'Request the pediatrician submit the CMS clinical screening tool.',
+      'Verify transition approvals for specialized therapists.'
+    ],
+    documentsToGather: [
+      { name: 'CMS Clinical Screener', description: 'Completed by doctor' },
+      { name: 'Pediatric medical summaries', description: 'Clinical histories' }
+    ],
+    whoToCall: [
+      { name: 'CMS Plan Customer Service', number: '877-377-6184', description: 'Sunshine Health CMS division' }
+    ],
+    whatToSay: 'I want to check if my child\'s pediatrician has submitted the clinical screening tool to enroll them in the CMS Specialty Plan.',
+    commonMistakes: [
+      'Assuming enrollment is automatic. A clinical screening form must be completed by a doctor.',
+      'Using out-of-network pediatric clinics.'
+    ],
+    relatedGuides: [
+      { title: 'Florida MedicaidACCESS Application', url: '/forms/fl-medicaid-application' }
+    ],
+    officialSources: [
+      { name: 'Florida DOH CMS Plan Portal', url: 'https://www.cmsplan.floridahealth.gov/' }
+    ],
+    lastReviewedDate: '2026-06-12'
+  },
+  'fl-kidcare-guide': {
+    slug: 'fl-kidcare-guide',
+    category: 'programs',
+    title: 'Florida KidCare Health Insurance Guide',
+    metaTitle: 'Florida KidCare Insurance | Child Coverage Guide',
+    metaDescription: 'Learn how to secure low-cost health insurance for your child under Florida KidCare when family income exceeds Medicaid limits.',
+    quickAnswer: 'Florida KidCare offers health insurance for children up to age 19. Families pay premiums based on household size and income. Freshness note: Reviewed on 2026-06-12.',
+    tldrPoints: [
+      { label: 'Components', value: 'MediKids, Healthy Kids, CMS' },
+      { label: 'Cost', value: 'Monthly premiums from $15 to full pay' },
+      { label: 'Age Group', value: 'Under age 19' }
+    ],
+    whenThisMatters: 'Family income is slightly too high for standard Medicaid, but child lacks private insurance.',
+    signsThisMayApply: [
+      'Household income is under 200% of the federal poverty level.'
+    ],
+    whatToDoFirst: [
+      'Visit the Florida KidCare website.',
+      'Complete the online application.',
+      'Upload tax returns or income stubs.'
+    ],
+    documentsToGather: [
+      { name: 'Income tax return', description: 'Proof of family income' },
+      { name: 'Child citizenship documents', description: 'Birth certificate' }
+    ],
+    whoToCall: [
+      { name: 'Florida KidCare Hotline', number: '888-540-5437', description: 'Central support line' }
+    ],
+    whatToSay: 'I am applying for KidCare coverage. I want to check which plan option my child qualifies for based on our income.',
+    commonMistakes: [
+      'Failing to pay the monthly premium on time, which can cancel coverage.',
+      'Not disclosing child\'s pre-existing special needs.'
+    ],
+    relatedGuides: [
+      { title: 'Children\'s Medical Services CMS Plan', url: '/programs/fl-cms-plan' }
+    ],
+    officialSources: [
+      { name: 'Florida KidCare Official Website', url: 'https://www.floridakidcare.org/' }
+    ],
+    lastReviewedDate: '2026-06-12'
+  },
+  'fl-able-guide': {
+    slug: 'fl-able-guide',
+    category: 'programs',
+    title: 'Florida ABLE United Savings Guide',
+    metaTitle: 'Florida ABLE United Account | Parent Savings Guide',
+    metaDescription: 'Learn how to open a tax-free ABLE account in Florida to protect your child\'s SSI and Medicaid resource limits.',
+    quickAnswer: 'ABLE United is Florida\'s official ABLE program. It lets parents save up to $18,000 annually without affecting SSI eligibility. Freshness note: Reviewed on 2026-06-12.',
+    tldrPoints: [
+      { label: 'Asset Limit Shield', value: 'Balances up to $100,000 ignored by SSI' },
+      { label: 'Tax Status', value: 'Tax-free growth and withdrawals for qualifications' },
+      { label: 'State Advantage', value: 'Florida Medicaid clawback is waived for ABLE United accounts' }
+    ],
+    whenThisMatters: 'Saving funds for your special needs child while preserving their eligibility for public aid.',
+    signsThisMayApply: [
+      'Child is active on SSI or Medicaid and family needs to save more than $2,000 in assets.'
+    ],
+    whatToDoFirst: [
+      'Go to the ABLE United website.',
+      'Complete the online enrollment.',
+      'Link your bank account to initiate a minor monthly transfer.'
+    ],
+    documentsToGather: [
+      { name: 'Child\'s SSN', description: 'SSN for account holder' },
+      { name: 'Physician diagnosis record', description: 'Proof of disability onset before age 26' }
+    ],
+    whoToCall: [
+      { name: 'ABLE United Customer Service', number: '888-524-2253', description: 'ABLE program support' }
+    ],
+    whatToSay: 'I want to open a tax-advantaged account for my child to save for their future therapy needs.',
+    commonMistakes: [
+      'Exceeding the annual contribution limit.',
+      'Using account funds for non-qualified expenses.'
+    ],
+    relatedGuides: [
+      { title: 'SSI Child Disability Checklist', url: '/forms/fl-ssi-checklist' }
+    ],
+    officialSources: [
+      { name: 'ABLE United Official Website', url: 'https://www.ableunited.com/' }
+    ],
+    lastReviewedDate: '2026-06-12'
+  },
+  'fl-ssi-checklist': {
+    slug: 'fl-ssi-checklist',
+    category: 'forms',
+    title: 'SSI Child Disability Checklist (Florida)',
+    metaTitle: 'Florida Child SSI Checklist | Parent Application Help',
+    metaDescription: 'Complete checklist of records, timelines, and requirements to apply for childhood Supplemental Security Income (SSI) in Florida.',
+    quickAnswer: 'Applying for childhood SSI requires medical records and household financial audits. Approved children automatically receive Medicaid. Freshness note: Reviewed on 2026-06-12.',
+    tldrPoints: [
+      { label: 'Income Limit', value: 'Requires strict parent household resource audit' },
+      { label: 'Medicaid Link', value: 'Automatic Medicaid approval via DCF' },
+      { label: 'Evidence', value: 'Requires documented marked functional limitations' }
+    ],
+    whenThisMatters: 'Seeking monthly financial assistance for disability care costs.',
+    signsThisMayApply: [
+      'Family income is low and child has severe clinical diagnostic needs.'
+    ],
+    whatToDoFirst: [
+      'Review the childhood SSI income limits.',
+      'Request doctor letters detailing marked functional delays.',
+      'Apply online or call the Social Security Administration.'
+    ],
+    documentsToGather: [
+      { name: 'Child birth certificate', description: 'Proof of age and citizenship' },
+      { name: 'Complete medical records', description: 'Doctor reports and diagnoses' },
+      { name: 'Parent asset logs', description: 'Bank statements and pay stubs' }
+    ],
+    whoToCall: [
+      { name: 'Social Security Administration', number: '800-772-1213', description: 'SSI central intake' }
+    ],
+    whatToSay: 'I want to schedule an appointment to apply for childhood SSI benefits for my disabled child.',
+    commonMistakes: [
+      'Applying when household assets exceed the $2,000 threshold (excluding home/car).',
+      'Failing to detail how the child\'s disability limits daily activities compared to peers.'
+    ],
+    relatedGuides: [
+      { title: 'Florida ABLE United Savings', url: '/programs/fl-able' }
+    ],
+    officialSources: [
+      { name: 'Social Security Child Disability', url: 'https://www.ssa.gov/benefits/disability/apply-child.html' }
+    ],
+    lastReviewedDate: '2026-06-12'
+  },
+  'fl-vocational-rehabilitation-transition': {
+    slug: 'fl-vocational-rehabilitation-transition',
+    category: 'programs',
+    title: 'Florida Vocational Rehabilitation Transition Guide',
+    metaTitle: 'Florida VR Transition Youth | Student Guide',
+    metaDescription: 'Learn how Florida Vocational Rehabilitation assists students with disabilities in transitioning from high school to work.',
+    quickAnswer: 'Florida Vocational Rehabilitation (VR) coordinates career preparation, coaching, and training for students aged 14 to 21. Freshness note: Reviewed on 2026-06-12.',
+    tldrPoints: [
+      { label: 'Age Group', value: 'Ages 14 to 21' },
+      { label: 'Focus', value: 'Job coaching, careers, independent living' },
+      { label: 'Services', value: 'Pre-Employment Transition Services (Pre-ETS)' }
+    ],
+    whenThisMatters: 'Transitioning from public school to independent employment.',
+    signsThisMayApply: [
+      'Student has an IEP or 504 plan and is approaching age 14.'
+    ],
+    whatToDoFirst: [
+      'Ask the high school ESE specialist for a referral to the VR counselor.',
+      'Submit the VR Transition Youth application.',
+      'Establish the Individualized Plan for Employment (IPE).'
+    ],
+    documentsToGather: [
+      { name: 'School IEP / 504 Plan', description: 'Accommodations history' },
+      { name: 'Transition Application', description: 'VR intake paperwork' }
+    ],
+    whoToCall: [
+      { name: 'Florida VR Transition Services', number: '800-451-1223', description: 'State rehab bureau' }
+    ],
+    whatToSay: 'I want to connect with the transition counselor assigned to my child\'s high school to discuss Pre-Employment services.',
+    commonMistakes: [
+      'Waiting until graduation to contact VR. Connect at age 14.',
+      'Failing to align VR goals with IEP transition targets.'
+    ],
+    relatedGuides: [
+      { title: 'Florida Exceptional Student Education', url: '/programs/fl-fldoe-ese' }
+    ],
+    officialSources: [
+      { name: 'Florida VR Student Services', url: 'https://www.rehabworks.org/student-youth/transition.html' }
+    ],
+    lastReviewedDate: '2026-06-12'
   }
 };
+
+Object.assign(SEO_CLUSTERS, FIVE_STATES_SEO_CLUSTERS);
+
+// Dynamically generate the 20 forms for the 42 remaining states
+const remainingStateCodes: Record<string, string> = {
+  AL: 'Alabama', AK: 'Alaska', AZ: 'Arizona', AR: 'Arkansas', CO: 'Colorado',
+  CT: 'Connecticut', DE: 'Delaware', HI: 'Hawaii', ID: 'Idaho', IN: 'Indiana',
+  IA: 'Iowa', KS: 'Kansas', KY: 'Kentucky', LA: 'Louisiana', ME: 'Maine',
+  MD: 'Maryland', MA: 'Massachusetts', MI: 'Michigan', MN: 'Minnesota', MS: 'Mississippi',
+  MO: 'Missouri', MT: 'Montana', NE: 'Nebraska', NV: 'Nevada', NH: 'New Hampshire',
+  NJ: 'New Jersey', NM: 'New Mexico', NC: 'North Carolina', ND: 'North Dakota', OK: 'Oklahoma',
+  OR: 'Oregon', RI: 'Rhode Island', SC: 'South Carolina', SD: 'South Dakota', TN: 'Tennessee',
+  UT: 'Utah', VT: 'Vermont', VA: 'Virginia', WA: 'Washington', WV: 'West Virginia',
+  WI: 'Wisconsin', WY: 'Wyoming'
+};
+
+const formTypes = [
+  { suffix: 'medicaid-app', name: 'Medicaid Application' },
+  { suffix: 'dd-intake-request', name: 'Developmental Services Intake Request' },
+  { suffix: 'dd-eligibility-guide', name: 'Developmental Services Eligibility Guide' },
+  { suffix: 'personal-care-app', name: 'Personal Care Program Application' },
+  { suffix: 'personal-care-agreement', name: 'Personal Care Caregiver Agreement' },
+  { suffix: 'chip-app', name: 'Children\'s Health Insurance Program Application' },
+  { suffix: 'ei-referral', name: 'Early Intervention Referral Form' },
+  { suffix: 'iep-evaluation-request', name: 'IEP Evaluation Request Letter' },
+  { suffix: 'iep-appeal', name: 'Special Education IEP Appeal Form' },
+  { suffix: 'prior-written-notice', name: 'Prior Written Notice Request' },
+  { suffix: 'due-process', name: 'Special Education Due Process Complaint Form' },
+  { suffix: 'state-complaint', name: 'Special Education State Complaint Form' },
+  { suffix: 'records-request', name: 'Education Records Request Letter' },
+  { suffix: 'iee-request', name: 'Independent Educational Evaluation Request Letter' },
+  { suffix: 'able-opening', name: 'ABLE Account Opening Form' },
+  { suffix: 'ssi-checklist', name: 'SSI Child Disability Checklist' },
+  { suffix: 'transition-app', name: 'Vocational Rehabilitation Application' },
+  { suffix: 'dd-self-direction-guide', name: 'Developmental Services Self-Direction Guide' },
+  { suffix: 'medicaid-renewal', name: 'Medicaid Renewal Form' },
+  { suffix: 'medicaid-fair-hearing', name: 'Medicaid Fair Hearing Request' }
+];
+
+for (const [code, stateName] of Object.entries(remainingStateCodes)) {
+  const codeLower = code.toLowerCase();
+  for (const form of formTypes) {
+    const slug = `${codeLower}-${form.suffix}`;
+    SEO_CLUSTERS[slug] = {
+      slug: slug,
+      category: 'forms',
+      title: `${stateName} ${form.name}`,
+      metaTitle: `${stateName} ${form.name} | Disability Navigator`,
+      metaDescription: `Complete guide, download links, and instructions for the ${stateName} ${form.name}.`,
+      quickAnswer: `The ${stateName} ${form.name} is used to apply for or manage disability support programs in ${stateName}. Submit this form to the appropriate state agency to request services.`,
+      tldrPoints: [
+        { label: 'State', value: stateName },
+        { label: 'Form Type', value: form.name },
+        { label: 'Status', value: 'Factory Proof' }
+      ],
+      whenThisMatters: 'When applying for or managing special needs and disability benefits.',
+      signsThisMayApply: [
+        `You reside in ${stateName} and have a child with developmental or special education needs.`
+      ],
+      whatToDoFirst: [
+        `Download the official ${form.name} PDF.`,
+        'Gather necessary medical or school diagnostic documentation.',
+        'Complete all required fields and sign.'
+      ],
+      documentsToGather: [
+        { name: 'Identification Document', description: 'Driver license or state ID card.' },
+        { name: 'Medical/Clinical Documentation', description: 'Confirming diagnosis and deficits.' }
+      ],
+      whoToCall: [
+        { name: `${stateName} Support Desk`, number: '800-555-0100', description: 'General intake' }
+      ],
+      whatToSay: `I am calling to submit the ${form.name} for my child.`,
+      commonMistakes: [
+        'Failing to sign and date the document before submission.',
+        'Not attaching required medical/school diagnostic records.'
+      ],
+      relatedGuides: [
+        { title: `${stateName} Medicaid Guide`, url: `/benefits/${stateName.toLowerCase().replace(/\s+/g, '-')}` }
+      ],
+      officialSources: [
+        { name: `${stateName} Department of Human Services`, url: `https://www.${stateName.toLowerCase().replace(/\s+/g, '-')}-services.gov` }
+      ],
+      lastReviewedDate: '2026-06-12'
+    };
+  }
+}

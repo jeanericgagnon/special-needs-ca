@@ -8,7 +8,7 @@ import ContributionModal from '@/components/contribution-modal';
 import PrintButton from '@/components/print-button';
 import ShareButton from '@/components/share-button';
 import CountyMapClient from '@/app/benefits/components/county-map-client';
-import { stateConfigs } from '../../[[...slug]]/page';
+import { stateConfigs, getDynamicStateConfig } from '@/lib/stateConfigs';
 import { TrustBadge } from '@/app/counties/components/CorrectionFlow';
 import SourceFreshnessDisclosure from '@/app/components/SourceFreshnessDisclosure';
 
@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const stateId = stateData ? stateData.id : 'california';
   const stateName = stateData ? stateData.name : 'California';
   const stateCode = stateData ? stateData.code.toUpperCase() : 'CA';
-  const config = stateConfigs[stateId] || stateConfigs.california;
+  const config = getDynamicStateConfig(stateId, stateName, stateCode);
   const diagnosisFormatted = formatParam(p.diagnosis);
   const countyFormatted = formatParam(p.county);
 
@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `/benefits/${stateId}/${p.diagnosis}/${p.county}`
     },
-    ...(!isHighFidelity && stateId === 'california' ? { robots: { index: false } } : {})
+    ...((!isHighFidelity && stateId === 'california') || stateId !== 'california' ? { robots: { index: false } } : {})
   };
 }
 
@@ -57,7 +57,7 @@ export default async function SEOLandingPage({ params }: Props) {
   const stateId = stateData.id;
   const stateName = stateData.name;
   const stateCode = stateData.code.toUpperCase();
-  const config = stateConfigs[stateId] || stateConfigs.california;
+  const config = getDynamicStateConfig(stateId, stateName, stateCode);
 
   const diagnosisFormatted = formatParam(p.diagnosis);
   const countyFormatted = formatParam(p.county);
@@ -116,7 +116,9 @@ export default async function SEOLandingPage({ params }: Props) {
       );
     } else {
       freshnessSources.push(
-        { name: `${stateName} Department of Social Services`, lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' }
+        { name: config.ddAgency, url: undefined, lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' },
+        { name: config.educationAgency, url: undefined, lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' },
+        { name: config.stateMedicaidAgency, url: undefined, lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' }
       );
     }
   }
@@ -223,9 +225,9 @@ export default async function SEOLandingPage({ params }: Props) {
       id: 'rc-1',
       type: 'regional-center',
       name: countyData.regionalCenters[0].name,
-      address: `Intake Desk, ${countyFormatted}, CA`,
+      address: `Intake Desk, ${countyFormatted}, ${stateCode}`,
       phone: countyData.regionalCenters[0].intake_phone,
-      description: `California Lanterman Act agency coordinating respite, therapy funding, and developmental support: ${countyData.regionalCenters[0].catchment_boundaries}`,
+      description: `${config.catchmentName} coordinating ${config.waiverProgram} developmental support: ${countyData.regionalCenters[0].catchment_boundaries}`,
       x: 210,
       y: 260
     });
@@ -236,7 +238,7 @@ export default async function SEOLandingPage({ params }: Props) {
       id: 'sd-1',
       type: 'school-board',
       name: countyData.schoolDistricts[0].name,
-      address: `Special Education Department, ${countyFormatted}, CA`,
+      address: `Special Education Department, ${countyFormatted}, ${stateCode}`,
       phone: countyData.schoolDistricts[0].spec_ed_contact_phone || '',
       description: `Special education district coordinator responsible for IEP evaluations, placement, and inclusion LRE classrooms.`,
       x: 580,
@@ -304,7 +306,7 @@ export default async function SEOLandingPage({ params }: Props) {
       'address': {
         '@type': 'PostalAddress',
         'addressLocality': countyFormatted,
-        'addressRegion': 'CA',
+        'addressRegion': stateCode,
         'addressCountry': 'US'
       },
       'description': `${sd.name} Special Education department in ${countyFormatted} County. Inclusion rate: ${sd.inclusion_rate_pct}%. SDC self-contained rate: ${sd.self_contained_rate_pct}%.`
@@ -325,7 +327,7 @@ export default async function SEOLandingPage({ params }: Props) {
       'address': {
         '@type': 'PostalAddress',
         'addressLocality': countyFormatted,
-        'addressRegion': 'CA',
+        'addressRegion': stateCode,
         'addressCountry': 'US'
       }
     }))
@@ -343,7 +345,7 @@ export default async function SEOLandingPage({ params }: Props) {
           '@type': 'PostalAddress',
           'streetAddress': therapyClinic.address.split(',')[0],
           'addressLocality': countyFormatted,
-          'addressRegion': 'CA',
+          'addressRegion': stateCode,
           'addressCountry': 'US'
         },
         'description': therapyClinic.description
@@ -356,7 +358,7 @@ export default async function SEOLandingPage({ params }: Props) {
           '@type': 'PostalAddress',
           'streetAddress': playground.address.split(',')[0],
           'addressLocality': countyFormatted,
-          'addressRegion': 'CA',
+          'addressRegion': stateCode,
           'addressCountry': 'US'
         },
         'description': playground.description
@@ -369,7 +371,7 @@ export default async function SEOLandingPage({ params }: Props) {
           '@type': 'PostalAddress',
           'streetAddress': supportGroup.address.split(',')[0],
           'addressLocality': countyFormatted,
-          'addressRegion': 'CA',
+          'addressRegion': stateCode,
           'addressCountry': 'US'
         },
         'description': supportGroup.description
@@ -408,7 +410,7 @@ export default async function SEOLandingPage({ params }: Props) {
           {diagnosisFormatted} Benefits in {countyFormatted} County
         </h1>
         <p style={{ fontSize: '1.15rem', maxWidth: '800px', margin: '0 auto 1.5rem', color: 'var(--text-light)', lineHeight: '1.6' }}>
-          Navigating developmental care in {countyFormatted} County. If you have a child with {diagnosisFormatted}, your family may qualify for Medi-Cal waivers, safety supervision wages, and educational services.
+          Navigating developmental care in {countyFormatted} County. If you have a child with {diagnosisFormatted}, your family may qualify for {config.medicaidName} waivers, safety supervision wages, and educational services.
         </p>
         <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center', alignItems: 'center' }}>
           <ShareButton />

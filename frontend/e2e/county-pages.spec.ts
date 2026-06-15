@@ -97,4 +97,22 @@ test.describe('County Page Detail E2E Tests (Mobile Viewport)', () => {
       expect(hasOverflow).toBe(false);
     }
   });
+
+  test('empty fields are hidden and no broken tel: links exist on pages with manual review', async ({ page }) => {
+    // Navigate to Cook County, Illinois county page which has manual-review school districts with empty phone numbers
+    await page.goto('/counties/illinois/cook-il');
+    
+    // 1. Verify there are no broken tel: links
+    const brokenTelLinks = await page.locator('a[href="tel:"]').count();
+    expect(brokenTelLinks).toBe(0);
+    
+    // 2. Ensure every tel: link has non-empty phone text and valid href
+    const allTelLinks = await page.locator('a[href^="tel:"]').all();
+    for (const link of allTelLinks) {
+      const href = await link.getAttribute('href');
+      expect(href).not.toBe('tel:');
+      const text = await link.innerText();
+      expect(text.trim().length).toBeGreaterThan(0);
+    }
+  });
 });

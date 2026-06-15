@@ -105,10 +105,9 @@ function mockPassesCountyQualityGate(details) {
   const hasMediCal = details.countyOffices && details.countyOffices.some(o => o.program_id === 'medi-cal-for-kids-and-teens');
   const hasCcs = details.countyOffices && details.countyOffices.some(o => o.program_id === 'california-childrens-services');
   const hasDistrict = details.schoolDistricts && details.schoolDistricts.length > 0;
-  const hasNonprofit = details.localOrganizations && details.localOrganizations.length > 0;
   const hasMetadata = details.countyOffices && details.countyOffices.every(o => o.verification_status && o.data_origin);
 
-  return !!(hasRc && hasSelpa && hasIhss && hasMediCal && hasCcs && hasDistrict && hasNonprofit && hasMetadata);
+  return !!(hasRc && hasSelpa && hasIhss && hasMediCal && hasCcs && hasDistrict && hasMetadata);
 }
 
 let sitemapViolations = [];

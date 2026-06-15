@@ -8,12 +8,7 @@ type Props = {
   params: Promise<{ state: string }>;
 };
 
-const stateCatchments: Record<string, string> = {
-  'california': 'Regional Center',
-  'texas': 'LIDDA',
-  'florida': 'APD Office',
-  'new-york': 'OPWDD Front Door'
-};
+import { getDynamicStateConfig } from '@/lib/stateConfigs';
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const p = await params;
@@ -25,13 +20,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
-  const catchment = stateCatchments[stateData.id] || 'developmental disability agency';
+  const config = getDynamicStateConfig(stateData.id, stateData.name, stateData.code);
+  const catchment = config.catchmentName;
+  const isIndexedState = ['california', 'texas', 'florida', 'pennsylvania'].includes(stateData.id);
   return {
     title: `${stateData.name} Counties Special Needs Resource Directories (2026)`,
     description: `Select your ${stateData.name} county to access local developmental services, ${catchment} boundary details, Medicaid waiver rates, and special education advocates.`,
     alternates: {
       canonical: `/counties/${stateData.id}`
-    }
+    },
+    robots: isIndexedState ? undefined : { index: false, follow: true }
   };
 }
 
@@ -42,8 +40,9 @@ export default async function CountiesDirectoryPage({ params }: Props) {
     notFound();
   }
 
+  const config = getDynamicStateConfig(stateData.id, stateData.name, stateData.code);
   const counties = await getCounties(stateData.id);
-  const catchment = stateCatchments[stateData.id] || 'Developmental Disability Agency';
+  const catchment = config.catchmentName;
 
   return (
     <main className="container animate-fade-in" style={{ paddingBottom: '5rem' }}>

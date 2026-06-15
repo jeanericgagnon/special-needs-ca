@@ -7,25 +7,27 @@ import { HeartHandshake, User, LayoutDashboard, Search, LogOut, BookOpen, MapPin
 import ThemeToggle from '@/components/theme-toggle';
 import "./globals.css";
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://california-navigator.org';
+
 export const metadata: Metadata = {
   title: {
-    default: "California Special Needs Navigator",
-    template: "%s | California Special Needs Navigator"
+    default: "Special Needs Navigator — 50-State Disability Benefits Guide",
+    template: "%s | Special Needs Navigator"
   },
-  description: "Find California disability benefits and local special-needs resources your child may qualify for.",
-  metadataBase: new URL("https://california-navigator.org"),
+  description: "Find disability benefits, waiver programs, IEP advocacy, and early intervention resources for your child — across all 50 states.",
+  metadataBase: new URL(SITE_URL),
   openGraph: {
-    title: "California Special Needs Navigator",
-    description: "Find California disability benefits and local special-needs resources your child may qualify for.",
-    url: "https://california-navigator.org",
-    siteName: "California Special Needs Navigator",
+    title: "Special Needs Navigator",
+    description: "Find disability benefits, waiver programs, IEP advocacy, and early intervention resources for your child — across all 50 states.",
+    url: SITE_URL,
+    siteName: "Special Needs Navigator",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "California Special Needs Navigator",
-    description: "Find California disability benefits and local special-needs resources your child may qualify for.",
+    title: "Special Needs Navigator",
+    description: "Find disability benefits, waiver programs, IEP advocacy, and early intervention resources for your child — across all 50 states.",
   }
 };
 
@@ -47,7 +49,7 @@ export default async function RootLayout({
           <nav className="navbar-content">
             <Link href="/" className="nav-logo">
               <HeartHandshake size={24} color="var(--primary-color)" />
-              <span>CA Special Needs Navigator</span>
+              <span>Special Needs Navigator</span>
             </Link>
 
             <div className="nav-links">
@@ -99,8 +101,11 @@ export default async function RootLayout({
         {/* Global Footer */}
         <footer style={{ background: 'rgba(255, 255, 255, 0.4)', backdropFilter: 'blur(10px)', borderTop: '1px solid rgba(0,0,0,0.05)', padding: '2rem 1rem', marginTop: 'auto', textAlign: 'center', fontSize: '0.85rem', color: 'var(--text-light)' }}>
           <div style={{ maxWidth: '1000px', margin: '0 auto', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: '1rem' }}>
-            <p>© 2026 California Special Needs Navigator. All rights reserved.</p>
+            <p>&copy; 2026 Special Needs Navigator. All rights reserved.{' '}California is the only exhaustive launch-grade state; all 49 other states offer source-backed pilot coverage.</p>
             <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>
+              <Link href="/benefits/california" style={{ color: 'var(--text-light)', textDecoration: 'none', fontWeight: 600 }}>California</Link>
+              <Link href="/benefits/texas" style={{ color: 'var(--text-light)', textDecoration: 'none', fontWeight: 600 }}>Texas</Link>
+              <Link href="/benefits/florida" style={{ color: 'var(--text-light)', textDecoration: 'none', fontWeight: 600 }}>Florida</Link>
               <Link href="/benefits/programs" style={{ color: 'var(--text-light)', textDecoration: 'none', fontWeight: 600 }}>Guides</Link>
               <Link href="/counties" style={{ color: 'var(--text-light)', textDecoration: 'none', fontWeight: 600 }}>Counties</Link>
               <Link href="/advocates" style={{ color: 'var(--text-light)', textDecoration: 'none', fontWeight: 600 }}>Advocates</Link>
@@ -113,8 +118,6 @@ export default async function RootLayout({
               ) : (
                 <Link href="/dashboard" style={{ color: 'var(--text-light)', textDecoration: 'none' }}>Dashboard</Link>
               )}
-              <a href="https://www.cdss.ca.gov" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-light)', textDecoration: 'none' }}>CDSS</a>
-              <a href="https://www.dds.ca.gov" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-light)', textDecoration: 'none' }}>DDS</a>
             </div>
           </div>
         </footer>

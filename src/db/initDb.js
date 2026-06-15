@@ -288,6 +288,42 @@ const seedPrograms = [
     "state_id": "texas"
   },
   {
+    "id": "tx-eci",
+    "name": "Texas Early Childhood Intervention (ECI)",
+    "description": "Statewide program for families with children, birth up to age 3, with developmental delays, disabilities, or certain medical diagnoses.",
+    "who_it_is_for": "Texas children under age 3 showing signs of developmental delay, atypical development, or diagnosed medical conditions.",
+    "who_might_qualify": "Texas resident, age 0-36 months, with a documented medically diagnosed condition, auditory/visual impairment, or developmental delay of at least 25%.",
+    "official_source_url": "https://www.hhs.texas.gov/services/disability/early-childhood-intervention-services",
+    "category": "state",
+    "confidence_score": 5,
+    "last_verified_date": "2026-06-01",
+    "state_id": "texas"
+  },
+  {
+    "id": "tx-tea-sped",
+    "name": "Texas Education Agency Special Education Services",
+    "description": "Specially designed instruction and related services provided to eligible students with disabilities under the Individuals with Disabilities Education Act (IDEA).",
+    "who_it_is_for": "Texas students aged 3-21 who meet eligibility criteria in one or more disability categories and require special education services.",
+    "who_might_qualify": "Texas resident, diagnosed with a qualifying disability (e.g., autism, speech impairment, learning disability), showing educational need.",
+    "official_source_url": "https://tea.texas.gov/academics/special-student-populations/special-education",
+    "category": "state",
+    "confidence_score": 5,
+    "last_verified_date": "2026-06-01",
+    "state_id": "texas"
+  },
+  {
+    "id": "tx-able",
+    "name": "Texas ABLE Program",
+    "description": "Tax-advantaged savings program for Texans with disabilities, allowing them to save for qualified disability expenses without losing government benefits.",
+    "who_it_is_for": "Texans who developed a qualifying disability before age 26.",
+    "who_might_qualify": "Texas resident, disability onset before age 26, and either receives SSI/SSDI or has a physician's certificate of disability.",
+    "official_source_url": "https://www.texasable.org",
+    "category": "state",
+    "confidence_score": 5,
+    "last_verified_date": "2026-06-01",
+    "state_id": "texas"
+  },
+  {
     "id": "fl-cdc-plus",
     "name": "Florida Consumer Directed Care Plus (CDC+) Waiver",
     "description": "A consumer-directed option for iBudget Florida waiver clients that allows them to hire their own caregivers, including parents or relatives.",

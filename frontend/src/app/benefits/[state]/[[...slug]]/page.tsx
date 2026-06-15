@@ -22,213 +22,14 @@ import PrintButton from '@/components/print-button';
 import ShareButton from '@/components/share-button';
 import CountyMapClient from '@/app/benefits/components/county-map-client';
 import CaliforniaMap from '@/app/components/california-map';
-import stateProgramsMapRaw from '@/lib/state_programs_map.json';
-const stateProgramsMap = stateProgramsMapRaw as Record<string, any>;
-
-// Client Components
 import IhssMiniProduct from '@/app/benefits/components/ihss-mini-product';
+import { type StateConfig, stateConfigs, getDynamicStateConfig } from '@/lib/stateConfigs';
+import { StateCoverageBadge } from '@/components/state-coverage-badge';
+import { NON_CA_VERIFIED_COUNTIES } from '@/lib/verifiedCounties';
 
 type Props = {
   params: Promise<{ state: string; slug?: string[] }>;
 };
-
-export interface StateConfig {
-  name: string;
-  code: string;
-  catchmentName: string;
-  catchmentDesc: string;
-  waiverProgram: string;
-  personalCareProgram: string;
-  medicaidName: string;
-  educationAgencyLabel: string;
-  earlyInterventionLabel: string;
-  legalDisclaimer: string;
-  faqs: { q: string; a: (county: string, rc: string, sd: string, wage: number, payout: string, diagnosis: string) => string }[];
-  timelineDaysPlan: string;
-  timelineDaysMeeting: string;
-  timelinesCode: string;
-}
-
-export const stateConfigs: Record<string, StateConfig> = {
-  'california': {
-    name: 'California',
-    code: 'CA',
-    catchmentName: 'Regional Center',
-    catchmentDesc: 'Coordinates Lanterman Act eligibility, respite care packages, and developmental therapies.',
-    waiverProgram: 'HCBS DD Waiver',
-    personalCareProgram: 'IHSS Protective Supervision',
-    medicaidName: 'Medi-Cal',
-    educationAgencyLabel: 'Special Education Local Plan Areas (SELPAs)',
-    earlyInterventionLabel: 'California Early Start (Ages 0-3)',
-    legalDisclaimer: 'Lanterman Developmental Disabilities Services Act: California Welfare & Institutions (W&I) Code § 4600 et seq. assessments guidelines are enforced under W&I § 4646. In-Home Supportive Services (IHSS) Protective Supervision regulatory guidelines: California Department of Social Services (CDSS) Manual of Policies and Procedures (MPP) Section 30-757. Special education assessment timelines and Free Appropriate Public Education (FAPE): Federal Individuals with Disabilities Education Act (IDEA) 20 U.S.C. § 1400 et seq. and California Education Code § 56300 et seq. Timeline rules are cited under CA Ed Code § 56321.',
-    timelineDaysPlan: '15 calendar days',
-    timelineDaysMeeting: '60 calendar days',
-    timelinesCode: 'California Education Code § 56321',
-    faqs: [
-      {
-        q: 'How do I start the Regional Center intake process for [diagnosis] in [county] County?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `To access Lanterman Act services for ${diagnosis} in ${county} County, you must request an intake assessment from ${rc}. Under California Welfare & Institutions Code § 4648, the center must complete the initial intake within 15 days of your request and determine eligibility within 120 days. If eligible, your child will receive a designated service coordinator and access to funded respite care, social recreation slots, and behavior services.`
-      },
-      {
-        q: 'Does my child qualify for paid caregiver hours (IHSS) for [diagnosis] in [county] County?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Yes, if your child's ${diagnosis} results in severe cognitive or behavioral limitations—such as wandering, self-injury, or inability to perceive danger—they may qualify for IHSS Protective Supervision. This is a California program that pays you (the parent) to protect and supervise your child. In ${county} County, a child categorized as Severely Impaired can receive up to 283 hours per month, which at standard caregiver wages ($${wage.toFixed(2)}/hr) yields approximately $${payout} per month in tax-free income.`
-      },
-      {
-        q: 'What are my rights if the school district delays assessing my child with [diagnosis]?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `If you suspect your child has ${diagnosis} and requires special education, submit a formal assessment request in writing to ${sd}. Under California Education Code § 56321, the district has exactly 15 calendar days from receipt of your letter to provide an Assessment Plan. Once you sign and return that plan, they have 60 calendar days to complete all evaluations and hold the initial IEP meeting. Do not accept informal academic interventions as a substitute for a formal IEP evaluation.`
-      },
-      {
-        q: 'Can we get Medi-Cal and therapy funding for [diagnosis] if our household income is too high?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Absolutely. California offers the Regional Center Institutional Deeming waiver (also known as the HCBS DD Waiver) which completely bypasses parental income and asset limits. If your child is eligible for ${rc}, they can qualify for full-scope Medi-Cal based solely on their own income (which is $0), regardless of how much you earn. This covers co-pays, specialized pediatric therapies, and adaptive equipment at no cost.`
-      }
-    ]
-  },
-  'texas': {
-    name: 'Texas',
-    code: 'TX',
-    catchmentName: 'LIDDA',
-    catchmentDesc: 'Manages local intake, assessments, and interest lists for Texas Medicaid waivers.',
-    waiverProgram: 'HCS Waiver',
-    personalCareProgram: 'Medically Dependent Children\'s Program (MDCP)',
-    medicaidName: 'Texas Medicaid',
-    educationAgencyLabel: 'Regional Education Service Centers',
-    earlyInterventionLabel: 'Texas Early Childhood Intervention (ECI) (Ages 0-3)',
-    legalDisclaimer: 'Texas Administrative Code (TAC) Title 26, Part 1, Chapter 263 governs Home and Community-based Services. Texas Health and Safety Code Chapter 121 regulates local public health and developmental services. Special education assessment timelines are governed by the Texas Education Code (TEC) § 29.004, which mandates school districts complete evaluations within 45 school days of receiving written consent, and hold an ARD/IEP meeting within 30 calendar days of evaluation completion.',
-    timelineDaysPlan: '15 school days',
-    timelineDaysMeeting: '45 school days',
-    timelinesCode: 'Texas Education Code § 29.004',
-    faqs: [
-      {
-        q: 'How do I start the LIDDA intake process for [diagnosis] in [county] County?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `To access local developmental services for families in ${county} County, you must contact ${rc}. They will perform assessments and place your child on the HCS or TxHmL interest lists. Note that waitlists for these programs can be extremely long (often 10-15+ years), so it is critical to register as early as possible.`
-      },
-      {
-        q: 'Does my child qualify for paid caregiver hours (MDCP) for [diagnosis] in [county] County?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Yes, through Texas Medicaid waiver programs like MDCP (Medically Dependent Children's Program) or CLASS, you can select the Consumer Directed Services (CDS) option. This allows you to hire caregivers, including family members in some programs, to provide personal care services. Hourly wages are based on state program allocations, typically averaging around $${wage.toFixed(2)}/hr.`
-      },
-      {
-        q: 'What are my rights if the school district delays assessing my child with [diagnosis]?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Submit your evaluation request in writing to ${sd}. Under Texas Education Code § 29.004, the district has 15 school days to provide a consent form. Once consent is signed, they have 45 school days to complete the Full and Individual Initial Evaluation (FIIE) and 30 calendar days after the report to hold the ARD/IEP meeting.`
-      },
-      {
-        q: 'Can we get Texas Medicaid and therapy funding for [diagnosis] if our household income is too high?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Yes. By enrolling in a Texas Medicaid waiver program (such as HCS, CLASS, or MDCP), parental income and assets are completely bypassed. Eligibility is determined solely based on the child's financial resources, which ensures access to full Medicaid coverage, pediatric therapies, and private duty nursing.`
-      }
-    ]
-  },
-  'florida': {
-    name: 'Florida',
-    code: 'FL',
-    catchmentName: 'APD Regional Office',
-    catchmentDesc: 'Coordinates APD region intake, iBudget waivers, and local support plans.',
-    waiverProgram: 'iBudget Waiver',
-    personalCareProgram: 'Consumer Directed Care Plus (CDC+)',
-    medicaidName: 'Florida Medicaid',
-    educationAgencyLabel: 'Florida Diagnostic and Learning Resources System (FDLRS)',
-    earlyInterventionLabel: 'Florida Early Steps Program (Ages 0-3)',
-    legalDisclaimer: 'Florida Statutes Chapter 393 regulates developmental services and the APD. Rule 65G-4 of the Florida Administrative Code governs the iBudget waiver system. Special education evaluation timelines are governed by Florida State Board of Education Rule 6A-6.0331, which mandates evaluations be completed within 60 school days of receiving written parental consent.',
-    timelineDaysPlan: '30 days',
-    timelineDaysMeeting: '60 school days',
-    timelinesCode: 'Florida State Board of Education Rule 6A-6.0331',
-    faqs: [
-      {
-        q: 'How do I start the APD Regional Office intake process for [diagnosis] in [county] County?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `To access developmental services in ${county} County, you must apply to the ${rc}. You can submit your application via mail or hand delivery. If approved, your child will be placed on the iBudget waiver waitlist. Crisis applications can bypass the waitlist under specific life-safety criteria.`
-      },
-      {
-        q: 'Does my child qualify for paid caregiver hours (CDC+) for [diagnosis] in [county] County?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Yes, through Florida's CDC+ (Consumer Directed Care Plus) program, which is a self-directed option for individuals on the iBudget waiver. Under CDC+, you can hire a parent or family member as a personal care provider to help with daily living activities. Rates are determined by the consumer's monthly budget plan.`
-      },
-      {
-        q: 'What are my rights if the school district delays assessing my child with [diagnosis]?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Submit your request in writing to ${sd}. Under Florida rules, the district has 30 days to decide whether to evaluate. If they agree, they must obtain consent and complete evaluations within 60 school days. Once evaluations are complete, an eligibility meeting must be scheduled promptly.`
-      },
-      {
-        q: 'Can we get Florida Medicaid and therapy funding for [diagnosis] if our household income is too high?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Yes, if your child is enrolled in the iBudget waiver program, parental income and assets are not counted. The child is evaluated as a household of one, allowing them to qualify for full Florida Medicaid coverage and all associated pediatric therapies.`
-      }
-    ]
-  },
-  'new-york': {
-    name: 'New York',
-    code: 'NY',
-    catchmentName: 'OPWDD Front Door',
-    catchmentDesc: 'Coordinates OPWDD intake, Front Door sessions, and CCO care management.',
-    waiverProgram: 'OPWDD HCBS Waiver',
-    personalCareProgram: 'Consumer Directed Personal Assistance Program (CDPAP)',
-    medicaidName: 'New York Medicaid',
-    educationAgencyLabel: 'BOCES (Boards of Cooperative Educational Services)',
-    earlyInterventionLabel: 'New York Early Intervention Program (EIP) (Ages 0-3)',
-    legalDisclaimer: 'New York Mental Hygiene Law Article 13 governs OPWDD and services for developmental disabilities. Part 635 of Title 14 NYCRR regulates HCBS waiver services. New York State Education Law Article 89 and Part 200 of the Commissioner\'s Regulations govern special education assessment timelines, mandating evaluations be completed within 60 calendar days of receiving written parental consent.',
-    timelineDaysPlan: '10 school days',
-    timelineDaysMeeting: '60 calendar days',
-    timelinesCode: 'NYCRR Title 8, § 200.4',
-    faqs: [
-      {
-        q: 'How do I start the OPWDD Front Door intake process for [diagnosis] in [county] County?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `To start OPWDD services in ${county} County, you must contact ${rc} to begin the Front Door process. You must attend an OPWDD Front Door Information Session, submit clinical documentation of disability, and enroll with a Care Coordination Organization (CCO) to assign a care manager.`
-      },
-      {
-        q: 'Does my child qualify for paid caregiver hours (CDPAP) for [diagnosis] in [county] County?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Yes, through New York's CDPAP (Consumer Directed Personal Assistance Program). CDPAP allows Medicaid-eligible children to hire a parent or family member to provide personal care services. Wage rates are set by the designated fiscal intermediary managing the CDPAP payroll, typically starting around $${wage.toFixed(2)}/hr.`
-      },
-      {
-        q: 'What are my rights if the school district delays assessing my child with [diagnosis]?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Submit your request in writing to the CSE (Committee on Special Education) of ${sd}. Under New York regulations, the district has 10 school days to request your consent. Once written consent is received, they have exactly 60 calendar days to complete evaluations and hold the CSE meeting to determine eligibility.`
-      },
-      {
-        q: 'Can we get New York Medicaid and therapy funding for [diagnosis] if our household income is too high?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Yes, New York OPWDD offers the HCBS waiver parental deeming rule. Once your child is approved for the OPWDD waiver, your parental income and resources are waived, and eligibility is based solely on the child's resources. This grants the child full-scope NY Medicaid.`
-      }
-    ]
-  }
-};
-
-export function getDynamicStateConfig(stateId: string, stateName: string, stateCode: string): StateConfig {
-  const normalizedId = stateId.toLowerCase();
-  if (stateConfigs[normalizedId]) {
-    return stateConfigs[normalizedId];
-  }
-
-  const stateData = stateProgramsMap[stateCode.toUpperCase()] || {};
-  const devServicesName = stateData.developmental_services?.name || `${stateName} Developmental Services`;
-  const personalCareName = stateData.personal_care?.name || `${stateName} Personal Care Services`;
-  const hcbsWaiversName = stateData.hcbs_waivers?.name || `${stateName} HCBS Waivers`;
-
-  return {
-    name: stateName,
-    code: stateCode.toUpperCase(),
-    catchmentName: 'Developmental Services Agency',
-    catchmentDesc: `Coordinates developmental disability intakes, waivers, and local support plans for ${stateName}.`,
-    waiverProgram: hcbsWaiversName,
-    personalCareProgram: personalCareName,
-    medicaidName: `${stateName} Medicaid`,
-    educationAgencyLabel: 'Special Education Services Division',
-    earlyInterventionLabel: `${stateName} Early Intervention Program (Ages 0-3)`,
-    legalDisclaimer: `Federal Individuals with Disabilities Education Act (IDEA) 20 U.S.C. § 1400 et seq. and ${stateName} state regulations govern special education, clinical assessments, and Medicaid HCBS waivers in ${stateName}.`,
-    timelineDaysPlan: '15 calendar days',
-    timelineDaysMeeting: '60 calendar days',
-    timelinesCode: 'Federal IDEA Regulations & State Special Education Guidelines',
-    faqs: [
-      {
-        q: 'How do I start the Developmental Services Agency intake process for [diagnosis] in [county] County?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `To access developmental services for ${diagnosis} in ${county} County, you must request an intake assessment from ${rc || devServicesName}. This agency coordinates eligibility evaluations and connects families to respite care, developmental therapy, and community support.`
-      },
-      {
-        q: 'Does my child qualify for paid caregiver hours for [diagnosis] in [county] County?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Yes, through ${stateName}'s ${personalCareName} program (or self-directed Medicaid waiver options), you can hire caregivers or personal care assistants to help with daily living activities. Average wages are based on state program allocations, typically averaging around $${wage.toFixed(2)}/hr.`
-      },
-      {
-        q: 'What are my rights if the school district delays assessing my child with [diagnosis]?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Submit your request in writing to the CSE/Special Education department of ${sd}. Under federal IDEA guidelines, the school district must respond to assessment requests and complete evaluations within 60 calendar days of receiving written parental consent, followed by an IEP meeting to determine eligibility.`
-      },
-      {
-        q: 'Can we get Medicaid and therapy funding for [diagnosis] if our household income is too high?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Yes. By enrolling in the ${hcbsWaiversName} program, parental income and assets are completely bypassed. Eligibility is determined solely based on the child's own resources ($0), granting access to full Medicaid coverage, adaptive equipment, and therapy.`
-      }
-    ]
-  };
-}
 
 // Formatting helpers
 function formatParam(val: string): string {
@@ -277,14 +78,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const catchment = config.catchmentName;
   const personalCare = config.personalCareProgram;
 
-  const verifiedCounties = ['los-angeles', 'orange', 'sacramento', 'san-francisco', 'travis-tx', 'harris-tx', 'miami-dade-fl', 'kings-ny', 'queens-ny'];
+  const isIndexedState = ['california', 'texas', 'florida', 'pennsylvania'].includes(stateData.id);
+  const verifiedCounties = ['los-angeles', 'orange', 'sacramento', 'san-francisco', ...NON_CA_VERIFIED_COUNTIES];
   const verifiedDiagnoses = ['autism-spectrum-disorder', 'adhd', 'down-syndrome', 'speech-or-language-delay', 'cerebral-palsy', 'epilepsy'];
 
   if (slug.length === 0) {
     return {
       title: `${stateName} Special Education & Disability Guides & Resources`,
       description: `Select your ${stateName} county to access local developmental benefits, ${catchment} intakes, school district inclusion rates, and special needs advocates.`,
-      alternates: { canonical: `/benefits/${stateData.id}` }
+      alternates: { canonical: `/benefits/${stateData.id}` },
+      robots: isIndexedState ? undefined : { index: false, follow: true }
     };
   }
 
@@ -293,7 +96,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       return {
         title: `${stateName} Special Needs Government & Community Guides & Resources`,
         description: `Explore ${stateName} special needs public programs: ${catchment}, ${personalCare}, healthcare, and ABLE accounts.`,
-        alternates: { canonical: `/benefits/${stateData.id}/programs` }
+        alternates: { canonical: `/benefits/${stateData.id}/programs` },
+        robots: isIndexedState ? undefined : { index: false, follow: true }
       };
     }
     const isCounty = (await getCounties(stateData.id)).some(c => c.id === slug[0].toLowerCase());
@@ -308,7 +112,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       };
     } else {
       const diagnosisFormatted = formatParam(slug[0]);
-      const isIndexed = verifiedDiagnoses.includes(slug[0].toLowerCase());
+      const isIndexed = isIndexedState && verifiedDiagnoses.includes(slug[0].toLowerCase());
       return {
         title: `${diagnosisFormatted} Support Services by County in ${stateName} (2026)`,
         description: `Select a county in ${stateName} to discover specialized ${diagnosisFormatted} programs, ${catchment} support, local school accommodations, and parent advocacy groups.`,
@@ -325,7 +129,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       return {
         title: `${title} - ${stateName} Special Needs Program Guide (2026)`,
         description: `Complete guide to ${title} in ${stateName}. Check clinical eligibility rules, age limits, income guidelines, and related advocate services.`,
-        alternates: { canonical: `/benefits/${stateData.id}/program/${slug[1].toLowerCase()}` }
+        alternates: { canonical: `/benefits/${stateData.id}/program/${slug[1].toLowerCase()}` },
+        robots: isIndexedState ? undefined : { index: false, follow: true }
       };
     }
     const diagnosisFormatted = formatParam(slug[0]);
@@ -335,7 +140,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const isCounty = (await getCounties(stateData.id)).some(c => c.id === secondSlug);
     if (isCounty) {
       const countyFormatted = formatParam(secondSlug);
-      const isIndexed = verifiedDiagnoses.includes(slug[0].toLowerCase()) && verifiedCounties.includes(secondSlug);
+      const isIndexed = stateData.id === 'california' && verifiedDiagnoses.includes(slug[0].toLowerCase()) && (secondSlug === 'los-angeles' || secondSlug === 'orange');
       return {
         title: `${diagnosisFormatted} Benefits & Services in ${countyFormatted} County, ${stateCode} (2026)`,
         description: `Access ${stateName} state support, ${catchment} intake, waiver caregiver wages, and school IEP assistance for ${diagnosisFormatted} in ${countyFormatted} County.`,
@@ -705,8 +510,11 @@ export default async function BenefitsCatchAll({ params }: Props) {
           <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem', fontWeight: 800 }}>
             Guides & Resources: Local Disability Benefits
           </h1>
+          <div style={{ marginBottom: '1rem' }}>
+            <StateCoverageBadge stateId={stateData.id} stateName={stateName} />
+          </div>
           <p style={{ fontSize: '1.15rem', maxWidth: '800px', margin: '0 auto', color: 'var(--text-light)', lineHeight: '1.6' }}>
-            Select your county to browse localized guides for all 78 diagnoses. Discover {config.catchmentName} intake lines, local school district special education inclusion rates, and independent IEP advocates.
+            Select your county to browse localized guides for all 78 diagnoses. Discover {config.catchmentName} intake lines, {config.medicaidName} waiver options, local school district special education inclusion rates, and independent IEP advocates.
           </p>
         </div>
 

@@ -18,9 +18,7 @@ const TOP_25_CA_COUNTIES = [
   'monterey', 'placer', 'san-luis-obispo', 'santa-cruz', 'merced'
 ];
 
-const NON_CA_VERIFIED_COUNTIES = [
-  'travis-tx', 'harris-tx', 'miami-dade-fl', 'kings-ny', 'queens-ny'
-];
+import { NON_CA_VERIFIED_COUNTIES } from '@/lib/verifiedCounties';
 
 // Strict quality gate helper for CA counties
 function passesCountyQualityGate(details: any): boolean {
@@ -44,13 +42,13 @@ function passesCountyQualityGate(details: any): boolean {
   // 6. At least one school district exists
   const hasDistrict = details.schoolDistricts && details.schoolDistricts.length > 0;
   
-  // 7. At least one nonprofit organization exists
+  // 7. At least one nonprofit organization exists (Optional for rural counties)
   const hasNonprofit = details.localOrganizations && details.localOrganizations.length > 0;
 
   // 8. Trust/source metadata exists (verification_status and data_origin are not null on offices)
   const hasMetadata = details.countyOffices && details.countyOffices.every((o: any) => o.verification_status && o.data_origin);
 
-  return !!(hasRc && hasSelpa && hasIhss && hasMediCal && hasCcs && hasDistrict && hasNonprofit && hasMetadata);
+  return !!(hasRc && hasSelpa && hasIhss && hasMediCal && hasCcs && hasDistrict && hasMetadata);
 }
 
 export async function GET() {
@@ -68,16 +66,18 @@ export async function GET() {
     ];
   }
 
-  // Pre-load all county details
+  // Pre-load CA county details
   const countyDetailsMap = new Map();
   for (const c of allCounties) {
-    try {
-      const details = await getCountyDetails(c.id);
-      if (details) {
-        countyDetailsMap.set(c.id, details);
+    if (c.state_id === 'california') {
+      try {
+        const details = await getCountyDetails(c.id);
+        if (details) {
+          countyDetailsMap.set(c.id, details);
+        }
+      } catch (e) {
+        console.error(`Failed to fetch details for county ${c.id}:`, e);
       }
-    } catch (e) {
-      console.error(`Failed to fetch details for county ${c.id}:`, e);
     }
   }
 
@@ -169,6 +169,9 @@ export async function GET() {
       const stateId = county.state_id || 'california';
 
       diagnosesSlugs.forEach(diag => {
+        // Do not index Texas (or other non-California) county x diagnosis pages yet
+        if (stateId !== 'california') return;
+
         // Quality Gate: Check at least one source-backed program match exists
         const matchingPrograms = diagnosisProgramsMap.get(diag) || [];
         const hasProgramMatch = matchingPrograms.length > 0;

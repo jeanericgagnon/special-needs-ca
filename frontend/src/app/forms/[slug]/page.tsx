@@ -27,12 +27,14 @@ export async function generateMetadata({ params }: Props) {
       description: cluster.metaDescription,
       alternates: {
         canonical: `/forms/${slug}`
-      }
+      },
+      robots: { index: false, follow: true }
     };
   }
 
   return {
     title: 'Form Guide Not Found',
+    robots: { index: false, follow: true }
   };
 }
 
