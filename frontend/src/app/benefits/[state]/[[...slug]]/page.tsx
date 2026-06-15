@@ -78,7 +78,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const catchment = config.catchmentName;
   const personalCare = config.personalCareProgram;
 
-  const isIndexedState = ['california', 'texas', 'florida', 'pennsylvania'].includes(stateData.id);
+  const isIndexedState = ['california', 'texas', 'florida', 'pennsylvania', 'new-york', 'ohio', 'illinois', 'georgia'].includes(stateData.id);
   const verifiedCounties = ['los-angeles', 'orange', 'sacramento', 'san-francisco', ...NON_CA_VERIFIED_COUNTIES];
   const verifiedDiagnoses = ['autism-spectrum-disorder', 'adhd', 'down-syndrome', 'speech-or-language-delay', 'cerebral-palsy', 'epilepsy'];
 

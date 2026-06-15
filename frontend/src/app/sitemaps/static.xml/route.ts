@@ -34,7 +34,19 @@ export async function GET() {
     { loc: '/counties/florida', changefreq: 'weekly', priority: '0.85', lastmod: today },
     // Pennsylvania
     { loc: '/benefits/pennsylvania', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/pennsylvania', changefreq: 'weekly', priority: '0.85', lastmod: today }
+    { loc: '/counties/pennsylvania', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // New York
+    { loc: '/benefits/new-york', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/new-york', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Ohio
+    { loc: '/benefits/ohio', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/ohio', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Illinois
+    { loc: '/benefits/illinois', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/illinois', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Georgia
+    { loc: '/benefits/georgia', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/georgia', changefreq: 'weekly', priority: '0.85', lastmod: today }
   ];
 
   const xmlUrls = staticUrls.map(url => `  <url>

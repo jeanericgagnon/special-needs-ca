@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `/benefits/${stateId}/${p.diagnosis}/${p.county}`
     },
-    ...((!isHighFidelity && stateId === 'california') || stateId !== 'california' ? { robots: { index: false } } : {})
+    ...((stateId === 'california' && !isHighFidelity) || !['california', 'texas', 'florida', 'pennsylvania', 'new-york', 'ohio', 'illinois', 'georgia'].includes(stateId) ? { robots: { index: false } } : {})
   };
 }
 

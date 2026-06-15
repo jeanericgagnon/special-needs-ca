@@ -107,12 +107,11 @@ export async function GET() {
   });
 
   const coreDiagnoses = ['autism-spectrum-disorder', 'adhd', 'down-syndrome', 'speech-or-language-delay', 'cerebral-palsy', 'epilepsy'];
-  const diagnosesSlugs = DIAGNOSES.map(slugifyDiagnosis).filter(d => coreDiagnoses.includes(d));
+  const diagnosesSlugs = coreDiagnoses;
 
   // Pre-load programs matches map for fast checking
   const diagnosisProgramsMap = new Map();
-  for (const diag of DIAGNOSES) {
-    const slug = slugifyDiagnosis(diag);
+  for (const slug of coreDiagnoses) {
     try {
       const progs = await getProgramsForDiagnosis(slug);
       diagnosisProgramsMap.set(slug, progs || []);
@@ -170,7 +169,7 @@ export async function GET() {
 
       diagnosesSlugs.forEach(diag => {
         // Do not index Texas (or other non-California) county x diagnosis pages yet
-        if (stateId !== 'california') return;
+        if (!['california', 'texas', 'florida', 'pennsylvania', 'new-york', 'ohio', 'illinois', 'georgia'].includes(stateId)) return;
 
         // Quality Gate: Check at least one source-backed program match exists
         const matchingPrograms = diagnosisProgramsMap.get(diag) || [];

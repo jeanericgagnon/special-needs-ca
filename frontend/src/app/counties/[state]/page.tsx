@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const config = getDynamicStateConfig(stateData.id, stateData.name, stateData.code);
   const catchment = config.catchmentName;
-  const isIndexedState = ['california', 'texas', 'florida', 'pennsylvania'].includes(stateData.id);
+  const isIndexedState = ['california', 'texas', 'florida', 'pennsylvania', 'new-york', 'ohio', 'illinois', 'georgia'].includes(stateData.id);
   return {
     title: `${stateData.name} Counties Special Needs Resource Directories (2026)`,
     description: `Select your ${stateData.name} county to access local developmental services, ${catchment} boundary details, Medicaid waiver rates, and special education advocates.`,
