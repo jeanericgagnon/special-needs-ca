@@ -4,29 +4,28 @@ import { verifyToken } from '@/lib/auth';
 import { logoutAction } from './auth-actions';
 import Link from 'next/link';
 import { HeartHandshake, User, LayoutDashboard, Search, LogOut, BookOpen, MapPin } from 'lucide-react';
-import ThemeToggle from '@/components/theme-toggle';
 import "./globals.css";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://ablefull.org';
 
 export const metadata: Metadata = {
   title: {
-    default: "Special Needs Navigator — 50-State Disability Benefits Guide",
-    template: "%s | Special Needs Navigator"
+    default: "Ablefull — 50-State Disability Benefits Guide",
+    template: "%s | Ablefull"
   },
   description: "Find disability benefits, waiver programs, IEP advocacy, and early intervention resources for your child — across all 50 states.",
   metadataBase: new URL(SITE_URL),
   openGraph: {
-    title: "Special Needs Navigator",
+    title: "Ablefull",
     description: "Find disability benefits, waiver programs, IEP advocacy, and early intervention resources for your child — across all 50 states.",
     url: SITE_URL,
-    siteName: "Special Needs Navigator",
+    siteName: "Ablefull",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Special Needs Navigator",
+    title: "Ablefull",
     description: "Find disability benefits, waiver programs, IEP advocacy, and early intervention resources for your child — across all 50 states.",
   }
 };
@@ -49,12 +48,10 @@ export default async function RootLayout({
           <nav className="navbar-content">
             <Link href="/" className="nav-logo">
               <HeartHandshake size={24} color="var(--primary-color)" />
-              <span>Special Needs Navigator</span>
+              <span>Ablefull</span>
             </Link>
 
             <div className="nav-links">
-              <ThemeToggle />
-
               <Link href="/" className="nav-link">
                 <Search size={16} />
                 <span>Find Benefits</span>
@@ -101,7 +98,7 @@ export default async function RootLayout({
         {/* Global Footer */}
         <footer style={{ background: 'rgba(255, 255, 255, 0.4)', backdropFilter: 'blur(10px)', borderTop: '1px solid rgba(0,0,0,0.05)', padding: '2rem 1rem', marginTop: 'auto', textAlign: 'center', fontSize: '0.85rem', color: 'var(--text-light)' }}>
           <div style={{ maxWidth: '1000px', margin: '0 auto', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: '1rem' }}>
-            <p>&copy; 2026 Special Needs Navigator. All rights reserved.{' '}California is the only exhaustive launch-grade state; all 49 other states offer source-backed pilot coverage.</p>
+            <p>&copy; 2026 Ablefull. All rights reserved.{' '}California is the only exhaustive launch-grade state; all 49 other states offer source-backed pilot coverage.</p>
             <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>
               <Link href="/benefits/california" style={{ color: 'var(--text-light)', textDecoration: 'none', fontWeight: 600 }}>California</Link>
               <Link href="/benefits/texas" style={{ color: 'var(--text-light)', textDecoration: 'none', fontWeight: 600 }}>Texas</Link>

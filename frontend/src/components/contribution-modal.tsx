@@ -116,7 +116,7 @@ export default function ContributionModal({
               Suggest Correction
             </h3>
             <p style={{ fontSize: '0.88rem', color: 'var(--text-light)', marginBottom: '1.5rem', lineHeight: '1.4' }}>
-              Help keep the Special Needs Navigator accurate. Suggest corrections or additions for {targetName || 'this page'}.
+              Help keep Ablefull accurate. Suggest corrections or additions for {targetName || 'this page'}.
             </p>
 
             {status?.success ? (

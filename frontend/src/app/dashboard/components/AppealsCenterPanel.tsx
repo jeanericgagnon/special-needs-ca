@@ -895,8 +895,8 @@ ${parentName}`;
     printLabel: isSpanish ? 'Imprimir Carta' : 'Print Letter',
     disclaimerTitle: isSpanish ? 'Aviso Legal:' : 'Legal Disclaimer:',
     disclaimerText: isSpanish 
-      ? 'El Navegador de Necesidades Especiales de CA es una herramienta educativa. Este generador proporciona plantillas que hacen referencia a las regulaciones de California, pero no constituye asesoría legal formal. Revise y adjunte siempre los registros médicos de respaldo antes de enviar cartas a las agencias.'
-      : 'The CA Special Needs Navigator is an educational tool. This builder provides templates referencing California regulations but does not constitute formal legal counsel. Always review and attach supporting medical records before sending letters to agencies.'
+      ? 'Ablefull es una herramienta educativa. Este generador proporciona plantillas que hacen referencia a las regulaciones estatales, pero no constituye asesoría legal formal. Revise y adjunte siempre los registros médicos de respaldo antes de enviar cartas a las agencias.'
+      : 'Ablefull is an educational tool. This builder provides templates referencing state regulations but does not constitute formal legal counsel. Always review and attach supporting medical records before sending letters to agencies.'
   };
 
   return (

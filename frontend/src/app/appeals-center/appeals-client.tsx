@@ -1217,7 +1217,7 @@ ${parentName}`;
             }}>
               <AlertCircle size={20} color="#f59e0b" style={{ flexShrink: 0, marginTop: '2px' }} />
               <p style={{ fontSize: '0.8rem', color: '#b45309', margin: 0, lineHeight: 1.4 }}>
-                <strong>Legal Disclaimer:</strong> The CA Special Needs Navigator is an educational tool. This builder provides templates referencing California regulations but does not constitute formal legal counsel. Always review and attach supporting medical records before sending letters to agencies.
+                <strong>Legal Disclaimer:</strong> Ablefull is an educational tool. This builder provides templates referencing state regulations but does not constitute formal legal counsel. Always review and attach supporting medical records before sending letters to agencies.
               </p>
             </div>
 

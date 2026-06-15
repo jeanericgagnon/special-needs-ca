@@ -1,6 +1,6 @@
-# California Special Needs Navigator: Public Benefits & Resource Directory
+# Ablefull: 50-State Disability Benefits & Resource Directory
 
-A professional-grade, public benefits and resource directory with a free match finder designed to help California families and caregivers navigate complex state disability programs, special education inclusion frameworks, and local advocate support directories.
+A professional-grade, public benefits and resource directory with a free match finder designed to help families and caregivers navigate complex state disability programs, special education inclusion frameworks, and local advocate support directories across all 50 states.
 
 ---
 

@@ -1520,7 +1520,7 @@ I am requesting your completion of state forms SOC 821 (Protective Supervision) 
             </div>
 
             <div style={{ textAlign: 'center', fontSize: '10pt', color: '#555', borderTop: '1px solid #ccc', paddingTop: '1.5rem' }}>
-              Prepared on {new Date().toLocaleDateString()} via Special Needs CA Navigator
+              Prepared on {new Date().toLocaleDateString()} via Ablefull
             </div>
           </div>
 

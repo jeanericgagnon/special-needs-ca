@@ -52,7 +52,7 @@ export default function IepGoalsBuilder({ diagnosisName, accommodations, goals }
     const textParts = [
       `IEP Accommodations and SMART Goals Blueprint for ${childName}`,
       `Diagnosis: ${diagnosisName}`,
-      `Generated via California Special Needs Navigator`,
+      `Generated via Ablefull (ablefull.org)`,
       `==========================================`,
       `\nSELECTED ACCOMMODATIONS:`
     ];
@@ -278,7 +278,7 @@ export default function IepGoalsBuilder({ diagnosisName, accommodations, goals }
         <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
           <h2 style={{ fontSize: '1.8rem', margin: '0 0 0.5rem 0' }}>IEP Accommodations & SMART Goals Blueprint</h2>
           <p style={{ fontSize: '1rem', color: '#666', margin: 0 }}>Prepared for: <strong>{childName}</strong> | Diagnosis: <strong>{diagnosisName}</strong></p>
-          <span style={{ fontSize: '0.8rem', color: '#999' }}>Generated via California Special Needs Navigator</span>
+          <span style={{ fontSize: '0.8rem', color: '#999' }}>Generated via Ablefull (ablefull.org)</span>
         </div>
 
         <div style={{ marginBottom: '2rem' }}>

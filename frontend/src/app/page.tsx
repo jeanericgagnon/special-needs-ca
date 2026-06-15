@@ -9,8 +9,8 @@ import { DIAGNOSES } from '@/lib/diagnoses';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Special Needs California Navigator',
-  description: 'Navigate special needs benefits, IHSS protective supervision caregiver hours, Regional Center intakes, and school IEP services in California.',
+  title: 'Ablefull — 50-State Disability Benefits Guide',
+  description: 'Find disability benefits, waiver programs, IEP advocacy, and early intervention resources for your child — across all 50 states.',
   alternates: {
     canonical: '/'
   }
