@@ -23,7 +23,59 @@ const CONTEXT_TRANSLATIONS: Record<string, string> = {
 };
 
 export default function DisparityComparison({ isSpanish = false }: DisparityComparisonProps) {
-  const { countyDetails } = useChildProfile();
+  const { countyDetails, stateConfig } = useChildProfile();
+
+  if (!stateConfig) return null;
+
+  if (stateConfig.code !== 'CA') {
+    const tNonCa = {
+      title: isSpanish ? `Puntos de Referencia y Servicios en ${stateConfig.name}` : `${stateConfig.name} Local Agency & Waiver Benchmarks`,
+      agencyLabel: isSpanish ? 'Agencia Local de Coordinación' : 'Local Intake Coordination Agency',
+      waiverLabel: isSpanish ? 'Programa de Exención HCBS Principal' : 'Primary HCBS Waiver Program',
+      medicaidLabel: isSpanish ? 'Programa de Medicaid del Estado' : 'State Medicaid Program',
+      supportLabel: isSpanish ? 'Recurso de Apoyo Familiar' : 'Family Support Network',
+      disclaimer: isSpanish 
+        ? 'Las listas de interés y tiempos de espera para las exenciones de Medicaid varían significativamente según el condado y la disponibilidad de fondos estatales.'
+        : 'Waiver interest list wait times and provider availability vary significantly based on county resources and legislative appropriations.'
+    };
+
+    return (
+      <div className="glass-panel animate-fade-in" style={{ padding: '1.5rem', background: 'rgba(255,255,255,0.7)', display: 'flex', flexDirection: 'column', gap: '1.25rem', width: '100%', border: '1px solid rgba(var(--primary-rgb), 0.1)' }}>
+        <div>
+          <h4 style={{ fontSize: '1.1rem', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '0.5rem', borderBottom: '1px solid rgba(0,0,0,0.06)', paddingBottom: '0.5rem', color: 'var(--text-main)' }}>
+            <Landmark color="var(--primary-color)" size={18} />
+            {tNonCa.title}
+          </h4>
+          <p style={{ fontSize: '0.82rem', color: 'var(--text-light)', marginTop: '0.3rem', lineHeight: 1.4 }}>
+            {stateConfig.catchmentDesc}
+          </p>
+        </div>
+
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', fontSize: '0.85rem' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', padding: '0.6rem', background: 'rgba(0,0,0,0.02)', borderRadius: '8px' }}>
+            <span style={{ color: 'var(--text-light)' }}>{tNonCa.agencyLabel}:</span>
+            <strong style={{ color: 'var(--text-main)' }}>{stateConfig.catchmentName} ({stateConfig.localAgencyType})</strong>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', padding: '0.6rem', background: 'rgba(0,0,0,0.02)', borderRadius: '8px' }}>
+            <span style={{ color: 'var(--text-light)' }}>{tNonCa.waiverLabel}:</span>
+            <strong style={{ color: 'var(--primary-color)' }}>{stateConfig.waiverProgram}</strong>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', padding: '0.6rem', background: 'rgba(0,0,0,0.02)', borderRadius: '8px' }}>
+            <span style={{ color: 'var(--text-light)' }}>{tNonCa.medicaidLabel}:</span>
+            <strong style={{ color: 'var(--text-main)' }}>{stateConfig.medicaidName}</strong>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', padding: '0.6rem', background: 'rgba(0,0,0,0.02)', borderRadius: '8px' }}>
+            <span style={{ color: 'var(--text-light)' }}>{tNonCa.supportLabel}:</span>
+            <strong style={{ color: 'var(--text-main)' }}>{stateConfig.specialEducationSupport}</strong>
+          </div>
+        </div>
+
+        <div style={{ background: 'rgba(245, 158, 11, 0.05)', border: '1px dashed #f59e0b', padding: '0.85rem', borderRadius: '8px', fontSize: '0.78rem', color: '#b45309', lineHeight: 1.4 }}>
+          ⚠️ <strong>Waitlist Alert:</strong> {tNonCa.disclaimer}
+        </div>
+      </div>
+    );
+  }
 
   if (!countyDetails || !countyDetails.regionalCenters || countyDetails.regionalCenters.length === 0) {
     return null;

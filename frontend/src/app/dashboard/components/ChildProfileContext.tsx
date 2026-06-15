@@ -22,6 +22,7 @@ import type {
   RegionalCenter,
   Selpa
 } from '@/lib/db';
+import { stateConfigs, StateConfig } from '@/lib/stateConfigs';
 
 export type TabType = 'roadmap' | 'benefits' | 'iep' | 'dds' | 'ihss' | 'appeals' | 'actions' | 'county' | 'waivers' | 'knowledge' | 'waitlists' | 'iepprep' | 'transition' | 'support' | 'documents' | 'inbox' | 'share';
 export type LetterTemplateType = 'iep-request' | 'ihss-appeal' | 'rc-appeal' | 'ssi-reconsideration' | 'epsdt-therapy';
@@ -68,6 +69,7 @@ interface ChildProfileContextProps {
   setChildName: (name: string) => void;
   isSpanish: boolean;
   setIsSpanish: (val: boolean) => void;
+  stateConfig: StateConfig;
 }
 
 const ChildProfileContext = createContext<ChildProfileContextProps | undefined>(undefined);
@@ -123,6 +125,10 @@ export function ChildProfileProvider({
 
   // Find active child profile
   const currentChild = props.childrenList.find(c => c.id === selectedChildId) || props.childrenList[0] || null;
+
+  const childCounty = props.counties.find(c => c.id === currentChild?.county_id);
+  const childStateId = childCounty?.state_id || 'california';
+  const stateConfig = stateConfigs[childStateId] || stateConfigs['california'];
 
   // Hydrate custom prefill details
   useEffect(() => {
@@ -190,7 +196,8 @@ export function ChildProfileProvider({
         childName,
         setChildName,
         isSpanish,
-        setIsSpanish
+        setIsSpanish,
+        stateConfig
       }}
     >
       {children}

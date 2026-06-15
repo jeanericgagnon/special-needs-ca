@@ -17,8 +17,28 @@ interface IEPPrepPanelProps {
 }
 
 export default function IEPPrepPanel({ isSpanish = false }: IEPPrepPanelProps) {
-  const { currentChild, parentName, setParentName } = useChildProfile();
+  const { currentChild, parentName, setParentName, stateConfig } = useChildProfile();
   
+  const isCa = stateConfig?.code === 'CA';
+  const isTx = stateConfig?.code === 'TX';
+  const isFl = stateConfig?.code === 'FL';
+
+  const stateIepLaw = isCa 
+    ? 'California Education Code Section 56341.1(a)(1)' 
+    : isTx 
+    ? 'Texas Administrative Code Title 19 § 89.1050' 
+    : isFl 
+    ? 'Florida Administrative Code Rule 6A-6.03028' 
+    : `${stateConfig?.name || 'State'} Education Guidelines`;
+
+  const stateIepLawEs = isCa 
+    ? 'la Sección 56341.1(a)(1) del Código de Educación de California' 
+    : isTx 
+    ? 'el Título 19 § 89.1050 del Código Administrativo de Texas' 
+    : isFl 
+    ? 'la Regla 6A-6.03028 del Código Administrativo de Florida' 
+    : `las pautas de educación especial del estado de ${stateConfig?.name || 'su estado'}`;
+
   const loadedParentNameRef = React.useRef<string | null>(null);
 
   // Parent Statement Builder Form States
@@ -159,7 +179,7 @@ Padre/Tutor: ${parentName}
 
 Estimado Equipo del IEP:
 
-De acuerdo con el Código de Educación de California Sección 56341.1(a)(1) y la ley federal IDEA (20 U.S.C. § 1414(d)), el equipo del IEP debe considerar las preocupaciones de los padres para mejorar la educación de su hijo. Solicito que esta declaración se adjunte formalmente en su totalidad a los documentos de mi IEP para este ciclo escolar.
+De acuerdo con ${stateIepLawEs} y la ley federal IDEA (20 U.S.C. § 1414(d)), el equipo del IEP debe considerar las preocupaciones de los padres para mejorar la educación de su hijo. Solicito que esta declaración se adjunte formalmente en su totalidad a los documentos de mi IEP para este ciclo escolar.
 
 1. FORTALEZAS Y HABILIDADES DE ${childName.toUpperCase()}:
 ${strengths || 'No ingresado'}
@@ -187,7 +207,7 @@ Parent/Guardian: ${parentName}
 
 Dear IEP Team Members,
 
-Pursuant to California Education Code Section 56341.1(a)(1) and the federal Individuals with Disabilities Education Act (IDEA) (20 U.S.C. § 1414(d)(3)(A)(i)), the IEP team is legally mandated to consider the concerns of the parents for enhancing the education of their child. I request that this statement of concerns be attached in its entirety to the official IEP document.
+Pursuant to ${stateIepLaw} and the federal Individuals with Disabilities Education Act (IDEA) (20 U.S.C. § 1414(d)(3)(A)(i)), the IEP team is legally mandated to consider the concerns of the parents for enhancing the education of their child. I request that this statement of concerns be attached in its entirety to the official IEP document.
 
 1. ${childName.toUpperCase()}'S STRENGTHS & INCLUSION INTERESTS:
 ${strengths || 'Not specified'}
@@ -238,7 +258,7 @@ Parent/Guardian Signature`;
     builderTitle: isSpanish ? 'Generador de Declaración de Preocupaciones' : 'Parent Statement of Concerns Generator',
     builderSubtitle: isSpanish 
       ? 'La ley exige que el distrito considere estas preocupaciones. Rellene el formulario para generar una declaración sólida.'
-      : 'California law requires the IEP team to review parent concerns. Complete this form to draft a legally grounded statement.',
+      : `${stateConfig?.name || 'State'} law requires the IEP team to review parent concerns. Complete this form to draft a legally grounded statement.`,
     
     lblParentName: isSpanish ? 'Nombre del Padre/Tutor' : 'Parent/Guardian Name',
     lblStrengths: isSpanish ? 'Fortalezas de su Hijo (Intereses, habilidades, qué funciona)' : 'Child\'s Strengths & Interests (What they excel at, motivators)',
@@ -254,8 +274,8 @@ Parent/Guardian Signature`;
     copyBtn: isSpanish ? 'Copiar Declaración' : 'Copy Statement',
     printBtn: isSpanish ? 'Imprimir PDF' : 'Print Statement',
     statTip: isSpanish 
-      ? 'De acuerdo con el Código de Educación de California § 56341.1, el equipo del IEP debe considerar las preocupaciones de los padres. El uso de esta plantilla garantiza que sus aportes queden integrados permanentemente.'
-      : 'Statutory Safeguard: Under California Education Code § 56341.1, the IEP team MUST consider parent concerns. Attaching this document prevents school teams from omitting your input from the IEP notes.'
+      ? `De acuerdo con las pautas de ${stateConfig?.name || 'su estado'}, el equipo del IEP debe considerar las preocupaciones de los padres. El uso de esta plantilla garantiza que sus aportes queden integrados permanentemente.`
+      : `Statutory Safeguard: Under ${stateIepLaw}, the IEP team MUST consider parent concerns. Attaching this document prevents school teams from omitting your input from the IEP notes.`
   };
 
   return (

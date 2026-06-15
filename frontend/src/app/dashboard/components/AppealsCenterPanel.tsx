@@ -25,7 +25,8 @@ export default function AppealsCenterPanel({ isSpanish = false }: AppealsCenterP
     childName,
     setChildName,
     activeTemplate,
-    setActiveTemplate
+    setActiveTemplate,
+    stateConfig
   } = useChildProfile();
 
   const loadedProfileRef = useRef<{name: string, email: string, phone: string, address: string} | null>(null);
@@ -254,6 +255,15 @@ export default function AppealsCenterPanel({ isSpanish = false }: AppealsCenterP
   };
 
   // Compile letter draft dynamically
+  const parseDays = (daysStr: string | undefined, defaultDays: number) => {
+    if (!daysStr) return defaultDays;
+    const match = daysStr.match(/(\d+)/);
+    return match ? parseInt(match[1]) : defaultDays;
+  };
+
+  const planDays = parseDays(stateConfig?.timelineDaysPlan, 15);
+  const meetingDays = parseDays(stateConfig?.timelineDaysMeeting, 60);
+
   const compileAppealLetterText = (): string => {
     const todayStr = new Date().toLocaleDateString(isSpanish ? 'es-ES' : 'en-US', {
       year: 'numeric', month: 'long', day: 'numeric'
@@ -293,6 +303,40 @@ export default function AppealsCenterPanel({ isSpanish = false }: AppealsCenterP
             : 'Behavioral struggles and emotional regulation difficulties');
         }
 
+        let stateIepStatute = `el Código de Educación de California`;
+        let stateIepCitation = `la Sección 56321 del Código de Educación de California, le solicito que me proporcione un Plan de Evaluación dentro del plazo legalmente establecido de 15 días`;
+        let stateIepMeetingCitation = `el límite de 60 días naturales (Código de Educación de California § 56344)`;
+
+        let stateIepStatuteEn = `California Education Code`;
+        let stateIepCitationEn = `California Education Code Section 56321, please provide me with an Assessment Plan within the legally mandated 15-day timeline`;
+        let stateIepMeetingCitationEn = `the 60-day calendar limit (California Education Code § 56344)`;
+
+        if (stateConfig.code === 'TX') {
+          stateIepStatute = `el Código de Educación de Texas § 29.004`;
+          stateIepCitation = `el Código de Educación de Texas § 29.004, le solicito que proporcione el consentimiento para la evaluación dentro de los 15 días escolares`;
+          stateIepMeetingCitation = `el plazo de 45 días escolares para completar la evaluación y 30 días naturales para realizar la reunión del IEP (Texas Education Code § 29.004)`;
+
+          stateIepStatuteEn = `Texas Education Code § 29.004`;
+          stateIepCitationEn = `Texas Education Code § 29.004, please provide the assessment consent forms within the mandated 15 school days`;
+          stateIepMeetingCitationEn = `the mandated timeline of 45 school days to complete evaluations and 30 calendar days to hold the ARD/IEP meeting (Texas Education Code § 29.004)`;
+        } else if (stateConfig.code === 'FL') {
+          stateIepStatute = `las Reglas de Educación del Estado de Florida (FAC Rule 6A-6.0331)`;
+          stateIepCitation = `la FAC Rule 6A-6.0331, le solicito que proporcione el plan de evaluación dentro de los 30 días naturales`;
+          stateIepMeetingCitation = `el plazo de 60 días escolares para completar la evaluación (FAC Rule 6A-6.0331)`;
+
+          stateIepStatuteEn = `Florida Administrative Code Rule 6A-6.0331`;
+          stateIepCitationEn = `Florida Administrative Code Rule 6A-6.0331, please provide the assessment plan within the mandated 30 calendar days`;
+          stateIepMeetingCitationEn = `the mandated timeline of 60 school days to complete evaluations and hold the IEP meeting (FAC Rule 6A-6.0331)`;
+        } else if (stateConfig.code !== 'CA') {
+          stateIepStatute = `las pautas educativas del estado de ${stateConfig.name}`;
+          stateIepCitation = `las pautas estatales aplicables, le solicito que proporcione un plan de evaluación dentro del plazo legal de ${stateConfig.timelineDaysPlan || '15 días'}`;
+          stateIepMeetingCitation = `el plazo de ${stateConfig.timelineDaysMeeting || '60 días'} establecido para celebrar la reunión`;
+
+          stateIepStatuteEn = `${stateConfig.name} state education guidelines`;
+          stateIepCitationEn = `applicable state regulations, please provide the assessment plan within the mandated ${stateConfig.timelineDaysPlan || '15-day'} timeline`;
+          stateIepMeetingCitationEn = `the statutory limit of ${stateConfig.timelineDaysMeeting || '60 days'} to complete evaluations and hold the IEP meeting`;
+        }
+
         if (isSpanish) {
           return `Fecha: ${todayStr}
 
@@ -313,7 +357,7 @@ Escuela: ${schoolName}
 
 Estimado Director de Educación Especial y Equipo del IEP:
 
-Le escribo como padre/tutor de ${childName} para solicitar formalmente una evaluación educativa integral para determinar la elegibilidad para servicios de educación especial y servicios relacionados bajo la ley federal IDEA (Individuals with Disabilities Education Act) y el Código de Educación de California.
+Le escribo como padre/tutor de ${childName} para solicitar formalmente una evaluación educativa integral para determinar la elegibilidad para servicios de educación especial y servicios relacionados bajo la ley federal IDEA (Individuals with Disabilities Education Act) y ${stateIepStatute}.
 
 Sospecho que ${childName} tiene una discapacidad que afecta negativamente su capacidad para acceder al currículo de educación general. Específicamente, ${childName} presenta desafíos significativos en las siguientes áreas:
 ${concernsList.map(c => `- ${c}`).join('\n')}
@@ -321,9 +365,9 @@ ${concernsList.map(c => `- ${c}`).join('\n')}
 Detalles de respaldo sobre los desafíos observados en mi hijo:
 ${customIepText}
 
-De acuerdo con la Sección 56321 del Código de Educación de California, le solicito que me proporcione un Plan de Evaluación dentro del plazo legalmente establecido de 15 días a partir de la recepción de esta solicitud. Solicito que la evaluación cubra todas las áreas de sospecha de discapacidad, que pueden incluir evaluaciones psicoeducativas (cognitivas/académicas), de habla y lenguaje, terapia ocupacional (OT/motora fina), terapia física (PT/motora gruesa) y de comportamiento funcional (FBA).
+De acuerdo con ${stateIepCitation} a partir de la recepción de esta solicitud. Solicito que la evaluación cubra todas las áreas de sospecha de discapacidad, que pueden incluir evaluaciones psicoeducativas (cognitivas/académicas), de habla y lenguaje, terapia ocupacional (OT/motora fina), terapia física (PT/motora gruesa) y de comportamiento funcional (FBA).
 
-Espero recibir el Plan de Evaluación dentro de los 15 días estatutarios para que podamos programar la reunión inicial del IEP dentro del límite de 60 días naturales (Código de Educación de California § 56344) para colaborar en un programa educativo que se adapte a las necesidades de ${childName}.
+Espero recibir el plan de evaluación a tiempo para que podamos programar la reunión inicial del IEP dentro de ${stateIepMeetingCitation} para colaborar en un programa educativo que se adapte a las necesidades de ${childName}.
 
 Atentamente,
 
@@ -350,7 +394,7 @@ School: ${schoolName}
 
 Dear Director of Special Education and IEP Team,
 
-I am writing as the parent/caregiver of ${childName} to formally request a comprehensive educational assessment to determine eligibility for special education and related services under the Individuals with Disabilities Education Act (IDEA) and California Education Code. 
+I am writing as the parent/caregiver of ${childName} to formally request a comprehensive educational assessment to determine eligibility for special education and related services under the Individuals with Disabilities Education Act (IDEA) and ${stateIepStatuteEn}. 
 
 I suspect ${childName} has a disability that is negatively impacting their ability to access the general education curriculum. Specifically, ${childName} is exhibiting significant challenges in the following areas:
 ${concernsList.map(c => `- ${c}`).join('\n')}
@@ -358,9 +402,9 @@ ${concernsList.map(c => `- ${c}`).join('\n')}
 Supporting details regarding my child's observed challenges:
 ${customIepText}
 
-In accordance with California Education Code Section 56321, please provide me with an Assessment Plan within the legally mandated 15-day timeline from receipt of this request. I request that the assessment cover all areas of suspected disability, which may include Psychoeducational (Cognitive/Academic), Speech and Language, Occupational Therapy (OT/Fine Motor), Physical Therapy (PT/Gross Motor), and Functional Behavior (FBA) assessments.
+In accordance with ${stateIepCitationEn} from receipt of this request. I request that the assessment cover all areas of suspected disability, which may include Psychoeducational (Cognitive/Academic), Speech and Language, Occupational Therapy (OT/Fine Motor), Physical Therapy (PT/Gross Motor), and Functional Behavior (FBA) assessments.
 
-I look forward to receiving the Assessment Plan within the statutory 15 days so that we can schedule the initial IEP meeting within the 60-day calendar limit (California Education Code § 56344) to collaborate on an educational program that matches ${childName}'s needs.
+I look forward to receiving the Assessment Plan so that we can schedule the initial IEP meeting within ${stateIepMeetingCitationEn} to collaborate on an educational program that matches ${childName}'s needs.
 
 Sincerely,
 
@@ -398,6 +442,35 @@ ${parentName}`;
             : 'Severe lack of safety awareness around electrical outlets, open flames, or kitchen appliances');
         }
 
+        let stateAgencyAddress = `División de Audiencias Estatales
+Departamento de Servicios Sociales de California
+744 P Street, M.S. 21-97
+Sacramento, CA 95814`;
+        let stateAppealsCitation = `Sección 12300 del Código de Bienestar e Instituciones y la Sección 30-757.17 del Manual de Políticas y Procedimientos (MPP) del Departamento de Servicios Sociales de California, mi hijo califica para la Supervisión Proactiva (Protective Supervision) debido a un deterioro mental severo y una falta total de conciencia de seguridad`;
+        let stateAppealsCitationEn = `Welfare and Institutions Code Section 12300 and California Department of Social Services Manual of Policies and Procedures (MPP) Section 30-757.17, my child qualifies for Protective Supervision due to severe mental impairment and a complete lack of safety awareness`;
+
+        if (stateConfig.code === 'TX') {
+          stateAgencyAddress = `Texas Health and Human Services Commission (HHSC)
+Appeals Division
+P.O. Box 149030
+Austin, TX 78714-9030`;
+          stateAppealsCitation = `el Código Administrativo de Texas (TAC) Título 26, Parte 1 y las pautas del programa de Medicaid MDCP/CLASS, mi hijo requiere servicios continuos de cuidado personal y supervisión de seguridad bajo la opción de Servicios Dirigidos por el Consumidor (CDS)`;
+          stateAppealsCitationEn = `Texas Administrative Code (TAC) Title 26, Part 1, Chapter 263 and MDCP/CLASS Medicaid guidelines, my child qualifies for continuous personal care and safety supervision services under the Consumer Directed Services (CDS) option due to severe developmental limitations`;
+        } else if (stateConfig.code === 'FL') {
+          stateAgencyAddress = `Agency for Health Care Administration (AHCA)
+Medicaid Hearing Operations
+P.O. Box 14000
+Tallahassee, FL 32317-4000`;
+          stateAppealsCitation = `la Regla 59G-4 del Código Administrativo de Florida y las pautas de exención de APD iBudget / CDC+, mi hijo califica para servicios de cuidado personal y supervisión debido a necesidades críticas de seguridad`;
+          stateAppealsCitationEn = `Florida Administrative Code Rule 59G-4 and APD iBudget / CDC+ waiver guidelines, my child qualifies for personal care and safety oversight services due to severe cognitive and safety impairments`;
+        } else if (stateConfig.code !== 'CA') {
+          stateAgencyAddress = `State Medicaid Appeals Division
+Department of Health and Human Services
+[Ingrese la dirección de apelaciones de Medicaid de su estado]`;
+          stateAppealsCitation = `los reglamentos de Medicaid de ${stateConfig.name} y las pautas de servicios de cuidado personal, mi hijo califica para cobertura de cuidado personal y supervisión de seguridad`;
+          stateAppealsCitationEn = `${stateConfig.name} Medicaid regulations and personal care service guidelines, my child qualifies for personal care assistance and safety supervision due to developmental delays`;
+        }
+
         if (isSpanish) {
           return `Fecha: ${todayStr}
 
@@ -408,12 +481,9 @@ ${parentPhone}
 ${parentEmail}
 
 A:
-División de Audiencias Estatales
-Departamento de Servicios Sociales de California
-744 P Street, M.S. 21-97
-Sacramento, CA 95814
+${stateAgencyAddress}
 
-Asunto: Solicitud de Audiencia Imparcial / Apelación de Aviso de Acción de IHSS
+Asunto: Solicitud de Audiencia Imparcial / Apelación de ${stateConfig.personalCareProgram}
 Beneficiario: ${childName}
 Fecha de Nacimiento: ${childDob} (Edad: ${getChildAgeForAppeals()})
 Condado: ${ihssCounty}
@@ -421,19 +491,19 @@ Fecha del Aviso de Denegación/Reducción: ${ihssDenialDate}
 
 A quien corresponda:
 
-Le escribo para solicitar formalmente una Audiencia Imparcial para apelar el Aviso de Acción con fecha ${ihssDenialDate} con respecto a los beneficios de In-Home Supportive Services (IHSS) para mi hijo menor de edad, ${childName}. El condado ha denegado o reducido las horas de mi hijo bajo la categoría de Supervisión Proactiva (Protective Supervision).
+Le escribo para solicitar formalmente una Audiencia Imparcial para apelar el Aviso de Acción con fecha ${ihssDenialDate} con respecto a los beneficios de ${stateConfig.personalCareProgram} para mi hijo menor de edad, ${childName}. El programa ha denegado o reducido las horas para mi hijo.
 
-Impugno la determinación del condado. Bajo la Sección 12300 del Código de Bienestar e Instituciones y la Sección 30-757.17 del Manual de Políticas y Procedimientos (MPP) del Departamento de Servicios Sociales de California, mi hijo califica para la Supervisión Proactiva debido a un deterioro mental severo y una falta total de conciencia de seguridad.
+Impugno esta determinación. Bajo ${stateAppealsCitation}.
 
-${childName} presenta conductas peligrosas que requieren un monitoreo activo de seguridad las 24 horas del día, los 7 días de la semana, para evitar autolesiones graves o una muerte accidental. Específicamente, estas conductas incluyen:
+${childName} presenta conductas peligrosas que requieren un monitoreo activo de seguridad para evitar autolesiones graves o una muerte accidental. Específicamente, estas conductas incluyen:
 ${safetyList.map(s => `- ${s}`).join('\n')}
 
 Detalles clínicos de los peligros de seguridad y la necesidad de supervisión:
 ${customIhssText}
 
-Contrariamente a la evaluación del trabajador social, las conductas de mi hijo no son simples berrinches, ni es esta una supervisión estándar típica de un niño de su edad. Los retrasos en el desarrollo y cognitivos de mi hijo le impiden reconocer el peligro. Sin una supervisión protectora constante, mi hijo corre un riesgo crítico de sufrir lesiones.
+Contrariamente a la evaluación original, las conductas de mi hijo no son simples berrinches, ni es esta una supervisión estándar típica de un niño de su edad. Los retrasos en el desarrollo y cognitivos de mi hijo le impiden reconocer el peligro. Sin una supervisión constante, mi hijo corre un riesgo crítico de sufrir lesiones.
 
-Solicito una audiencia imparcial para presentar registros médicos, registros escolares y un registro de comportamiento de seguridad de 24 horas que confirme que mi hijo cumple con los criterios de protección de la sección MPP 30-757. Por favor, programe esta apelación y notifíqueme la fecha y el lugar.
+Solicito una audiencia imparcial para presentar registros médicos, registros escolares y un registro de comportamiento de seguridad que confirme que mi hijo cumple con los criterios de elegibilidad. Por favor, programe esta apelación y notifíqueme la fecha y el lugar.
 
 Atentamente,
 
@@ -450,12 +520,9 @@ ${parentPhone}
 ${parentEmail}
 
 A:
-State Hearings Division
-California Department of Social Services
-744 P Street, M.S. 21-97
-Sacramento, CA 95814
+${stateAgencyAddress}
 
-Re: Request for Fair Hearing / Appeal of IHSS Notice of Action
+Re: Request for Fair Hearing / Appeal of ${stateConfig.personalCareProgram} Notice of Action
 Recipient: ${childName}
 Date of Birth: ${childDob} (Age: ${getChildAgeForAppeals()})
 County: ${ihssCounty}
@@ -463,19 +530,19 @@ Date of Denial/Reduction Notice: ${ihssDenialDate}
 
 To Whom It May Concern,
 
-I am writing to formally request a Fair Hearing to appeal the Notice of Action dated ${ihssDenialDate} regarding In-Home Supportive Services (IHSS) benefits for my minor child, ${childName}. The county has denied or reduced hours for my child under the category of Protective Supervision.
+I am writing to formally request a Fair Hearing to appeal the Notice of Action dated ${ihssDenialDate} regarding ${stateConfig.personalCareProgram} benefits for my minor child, ${childName}. The program has denied or reduced hours for my child.
 
-I dispute the county's determination. Under Welfare and Institutions Code Section 12300 and California Department of Social Services Manual of Policies and Procedures (MPP) Section 30-757.17, my child qualifies for Protective Supervision due to severe mental impairment and a complete lack of safety awareness. 
+I dispute this determination. Under ${stateAppealsCitationEn}. 
 
-${childName} exhibits dangerous behaviors that require 24/7 active safety monitoring to prevent severe self-harm or accidental death. Specifically, these behaviors include:
+${childName} exhibits dangerous behaviors that require active safety monitoring to prevent severe self-harm or accidental death. Specifically, these behaviors include:
 ${safetyList.map(s => `- ${s}`).join('\n')}
 
 Clinical details of safety hazards and oversight demands:
 ${customIhssText}
 
-Contrary to the social worker's assessment, my child's behaviors are not simple tantrums, nor is this standard supervision typical of a child of this age. My child's developmental and cognitive delays prevent them from recognizing hazard. Without constant protective monitoring, my child is at critical risk of injury. 
+Contrary to the assessor's review, my child's behaviors are not simple tantrums, nor is this standard supervision typical of a child of this age. My child's developmental and cognitive delays prevent them from recognizing hazard. Without constant protective monitoring, my child is at critical risk of injury. 
 
-I request a fair hearing to present medical records, school logs, and a 24-hour safety behavior log confirming that my child meets MPP 30-757 protective criteria. Please schedule this appeal and notify me of the date and location.
+I request a fair hearing to present medical records, school logs, and a safety behavior log confirming that my child meets the criteria. Please schedule this appeal and notify me of the date and location.
 
 Sincerely,
 
@@ -518,6 +585,28 @@ ${parentName}`;
             : 'Self-Direction: Child cannot navigate safety parameters, has wandering behaviors, and lacks safety boundaries.');
         }
 
+        let rcTitleLabel = isSpanish ? 'Coordinador de Apelaciones de Admisión' : 'Intake Appeal Coordinator';
+        let stateRcAct = `la Ley de Servicios para Personas con Discapacidades del Desarrollo Lanterman`;
+        let stateRcCitation = `la Sección 4512 del Código de Bienestar e Instituciones de California. Esta condición se originó antes de los 18 años, se espera que continúe indefinidamente y constituye una discapacidad sustancial. Según el Código de Bienestar e Instituciones § 4512(l)`;
+        let stateRcCitationEn = `California Welfare and Institutions Code Section 4512. This condition originated before the age of 18, is expected to continue indefinitely, and constitutes a substantial disability. Under Welfare and Institutions Code § 4512(l)`;
+
+        if (stateConfig.code === 'TX') {
+          rcTitleLabel = isSpanish ? 'Coordinador de Apelaciones de LIDDA' : 'LIDDA Intake Appeal Coordinator';
+          stateRcAct = `las pautas de la Autoridad Local de Discapacidades Intelectuales y del Desarrollo (LIDDA) de Texas`;
+          stateRcCitation = `el Código de Salud y Seguridad de Texas § 533A.035. Esta condición causa limitaciones funcionales significativas en el desarrollo y califica para la colocación en la lista de interés de exenciones de Medicaid (HCS/TxHmL)`;
+          stateRcCitationEn = `Texas Health and Safety Code Section 533A.035. This condition originated before the age of 18, is expected to continue indefinitely, and constitutes a substantial developmental limitation qualifying for local LIDDA service coordination and waiver interest lists`;
+        } else if (stateConfig.code === 'FL') {
+          rcTitleLabel = isSpanish ? 'Coordinador de Apelaciones Regionales de APD' : 'APD Regional Appeals Coordinator';
+          stateRcAct = `el Capítulo 393 de los Estatutos de Florida y el Capítulo 65G del Código Administrativo de Florida`;
+          stateRcCitation = `el Capítulo 393 de los Estatutos de Florida. Esta condición se originó antes de los 18 años, constituye una discapacidad del desarrollo elegible para la exención iBudget de la APD`;
+          stateRcCitationEn = `Chapter 393, Florida Statutes. This condition originated before the age of 18, is expected to continue indefinitely, and constitutes a substantial handicap eligible for APD services and the iBudget waiver`;
+        } else if (stateConfig.code !== 'CA') {
+          rcTitleLabel = isSpanish ? `Coordinador de Apelaciones de ${stateConfig.catchmentName}` : `${stateConfig.catchmentName} Appeal Coordinator`;
+          stateRcAct = `las pautas de elegibilidad de la agencia de discapacidad de ${stateConfig.name}`;
+          stateRcCitation = `los reglamentos estatales aplicables. Esta condición constituye una limitación del desarrollo sustancial que requiere la coordinación de servicios de la agencia estatal`;
+          stateRcCitationEn = `applicable state regulations. This condition originated before the age of 18, is expected to continue indefinitely, and constitutes a substantial developmental limitation qualifying for state developmental services`;
+        }
+
         if (isSpanish) {
           return `Fecha: ${todayStr}
 
@@ -528,29 +617,27 @@ ${parentPhone}
 ${parentEmail}
 
 A:
-Coordinador de Apelaciones de Admisión
+${rcTitleLabel}
 ${regionalCenterName}
 
-Asunto: Apelación Formal de Denegación de Elegibilidad del Centro Regional
+Asunto: Apelación Formal de Denegación de Elegibilidad de ${stateConfig.catchmentName}
 Nombre del Niño: ${childName}
 Fecha de Nacimiento: ${childDob} (Edad: ${getChildAgeForAppeals()})
 Fecha del Aviso de Denegación: ${rcDenialDate}
 
 Estimado Coordinador de Apelaciones:
 
-Le escribo para apelar formalmente la determinación de denegación de elegibilidad con fecha ${rcDenialDate} con respecto a mi hijo, ${childName}, bajo la Ley de Servicios para Personas con Discapacidades del Desarrollo Lanterman. El Centro Regional ha determinado que mi hijo no califica como persona con una discapacidad del desarrollo.
+Le escribo para apelar formalmente la determinación de denegación de elegibilidad con fecha ${rcDenialDate} con respecto a mi hijo, ${childName}, bajo ${stateRcAct}. La agencia ha determinado que mi hijo no califica para servicios de desarrollo.
 
-Impugno esta conclusión. Mi hijo tiene un diagnóstico documentado de ${rcDiagnosis}, lo que constituye una discapacidad del desarrollo según la Sección 4512 del Código de Bienestar e Instituciones de California. Esta condición se originó antes de los 18 años, se espera que continúe indefinidamente y constituye una discapacidad sustancial.
-
-Según el Código de Bienestar e Instituciones § 4512(l), una discapacidad sustancial se define como limitaciones funcionales significativas en tres o más áreas de actividades de la vida diaria. ${childName} presenta limitaciones funcionales severas en las siguientes áreas:
+Impugno esta conclusión. Mi hijo tiene un diagnóstico documentado de ${rcDiagnosis}, lo que constituye una discapacidad según ${stateRcCitation}, mi hijo presenta limitaciones funcionales severas en las siguientes áreas:
 ${limitsList.map(l => `- ${l}`).join('\n')}
 
 Detalles de respaldo sobre las limitaciones de desarrollo de mi hijo:
 ${customRcText}
 
-Solicito una reunión informal con el director de admisiones del Centro Regional y, si es necesario, una Audiencia Imparcial formal para presentar expedientes de diagnóstico, evaluaciones psicológicas e informes del IEP que confirmen la elegibilidad de mi hijo.
+Solicito una reunión informal con el director de admisiones de la agencia y, si es necesario, una Audiencia Imparcial formal para presentar expedientes de diagnóstico, evaluaciones psicológicas e informes escolares que confirmen la elegibilidad de mi hijo.
 
-De acuerdo con las reglas de la Ley Lanterman, presento esta apelación dentro del plazo legal de 30 días a partir de la recepción de la notificación de denegación. Por favor, programe una revisión de apelación y póngase en contacto conmigo para concertar una conferencia informal.
+Presento esta apelación de manera oportuna dentro de los plazos legales. Por favor, programe una revisión de apelación y póngase en contacto conmigo para concertar una conferencia informal.
 
 Atentamente,
 
@@ -567,29 +654,27 @@ ${parentPhone}
 ${parentEmail}
 
 A:
-Intake Appeal Coordinator
+${rcTitleLabel}
 ${regionalCenterName}
 
-Re: Formal Appeal of Regional Center Eligibility Denial
+Re: Formal Appeal of ${stateConfig.catchmentName} Eligibility Denial
 Child Name: ${childName}
 Date of Birth: ${childDob} (Age: ${getChildAgeForAppeals()})
 Date of Denial Notice: ${rcDenialDate}
 
 Dear Appeal Coordinator,
 
-I am writing to formally appeal the determination of eligibility denial dated ${rcDenialDate} regarding my child, ${childName}, under the Lanterman Developmental Disabilities Services Act. The Regional Center has determined that my child does not qualify as developmentally disabled.
+I am writing to formally appeal the determination of eligibility denial dated ${rcDenialDate} regarding my child, ${childName}, under ${stateRcAct}. The agency has determined that my child does not qualify for developmental disability services.
 
-I dispute this finding. My child has a diagnosed condition of ${rcDiagnosis}, which constitutes a developmental disability under California Welfare and Institutions Code Section 4512. This condition originated before the age of 18, is expected to continue indefinitely, and constitutes a substantial disability.
-
-Under Welfare and Institutions Code § 4512(l), a substantial disability is defined as significant functional limitations in three or more areas of major life activity. ${childName} exhibits severe functional limitations in the following domains:
+I dispute this finding. My child has a diagnosed condition of ${rcDiagnosis}, which constitutes a disability under ${stateRcCitationEn}, ${childName} exhibits severe functional limitations in the following domains:
 ${limitsList.map(l => `- ${l}`).join('\n')}
 
 Supporting details regarding my child's developmental limitations:
 ${customRcText}
 
-I request an informal meeting with the Regional Center intake director, and if necessary, a formal Fair Hearing to present diagnostic records, psychological evaluations, and IEP reports confirming my child's eligibility. 
+I request an informal meeting with the intake director, and if necessary, a formal Fair Hearing to present diagnostic records, psychological evaluations, and school reports confirming my child's eligibility. 
 
-Under Lanterman Act rules, I submit this appeal within the statutory 30-day window from the receipt of the denial notice. Please schedule an appeal review and contact me to arrange an informal conference.
+I submit this appeal within the statutory appeal window from the receipt of the denial notice. Please schedule an appeal review and contact me to arrange an informal conference.
 
 Sincerely,
 
@@ -682,6 +767,44 @@ ${parentName}`;
       }
 
       case 'epsdt-therapy': {
+        let stateEpsdtLaw = `la ley del estado de California. Específicamente, bajo la Sección 1396d(r)(5) del Título 42 del U.S.C., el programa federal de Medicaid requiere que los estados proporcionen "servicios de detección, diagnóstico y tratamiento tempranos y periódicos" (EPSDT) para determinar enfermedades o afecciones físicas o mentales, y proporcionar "atención médica, servicios de diagnóstico, tratamiento y otras medidas necesarias... para corregir o mejorar defectos y enfermedades y afecciones físicas y mentales".`;
+        let stateEpsdtLawEn = `California state law. Specifically, under 42 U.S.C. Section 1396d(r)(5), the federal Medicaid program requires states to provide "early and periodic screening, diagnostic, and treatment services" (EPSDT) to determine physical or mental illnesses or conditions, and provide "necessary health care, diagnostic services, treatment, and other measures... to correct or improve defects and physical and mental illnesses and conditions."`;
+        
+        let stateAmeliorateCitation = `Bajo la Sección 51340 del Código de Regulaciones del Título 22 de California, los servicios deben autorizarse si son necesarios para corregir o "mejorar" (ameliorate) una condición del desarrollo. Mejorar incluye mantener el nivel de funcionamiento del niño o prevenir el deterioro.`;
+        let stateAmeliorateCitationEn = `Under California Title 22 Code of Regulations Section 51340, services must be authorized if they are necessary to correct or "ameliorate" a developmental condition. Ameliorate includes maintaining the child's level of functioning or preventing deterioration.`;
+
+        let stateRulesExpedited = `Bajo las reglas de planes de salud de California, solicito que esta queja se procese de manera urgente`;
+        let stateRulesExpeditedEn = `Under California health plan rules, I request that this grievance be processed on an expedited basis`;
+
+        if (stateConfig.code === 'TX') {
+          stateEpsdtLaw = `la ley del estado de Texas y las pautas de Texas Health Steps. Específicamente, bajo la Sección 1396d(r)(5) del Título 42 del U.S.C., el programa federal de Medicaid requiere la provisión de servicios EPSDT de tratamiento y diagnóstico.`;
+          stateEpsdtLawEn = `Texas state law and Texas Health Steps guidelines. Specifically, under 42 U.S.C. Section 1396d(r)(5), the federal Medicaid program requires states to provide necessary treatment under EPSDT.`;
+
+          stateAmeliorateCitation = `Bajo el Código Administrativo de Texas (TAC) Título 1, Parte 15, Capítulo 354, los servicios que corrigen o mejoran (ameliorate) discapacidades del desarrollo de un niño deben cubrirse de manera obligatoria bajo Medicaid.`;
+          stateAmeliorateCitationEn = `Under Texas Administrative Code (TAC) Title 1, Part 15, Chapter 354, services that correct or ameliorate developmental conditions of a child are mandatory benefits under Texas Medicaid.`;
+
+          stateRulesExpedited = `Bajo las pautas de Texas Medicaid, solicito que esta apelación se procese de manera urgente`;
+          stateRulesExpeditedEn = `Under Texas Medicaid guidelines, I request that this appeal be processed on an expedited basis`;
+        } else if (stateConfig.code === 'FL') {
+          stateEpsdtLaw = `la ley del estado de Florida. Específicamente, bajo la Sección 1396d(r)(5) del Título 42 del U.S.C., el programa federal de Medicaid requiere la provisión de servicios EPSDT.`;
+          stateEpsdtLawEn = `Florida state law. Specifically, under 42 U.S.C. Section 1396d(r)(5), the federal Medicaid program requires states to provide necessary therapy under EPSDT.`;
+
+          stateAmeliorateCitation = `Bajo la Regla 59G-4 del Código Administrativo de Florida, las terapias que corrigen o mejoran condiciones médicas y del desarrollo para beneficiarios menores de 21 años son cubiertas obligatoriamente.`;
+          stateAmeliorateCitationEn = `Under Florida Administrative Code Rule 59G-4, therapies that correct or ameliorate developmental and medical conditions for recipients under 21 are mandatory Medicaid benefits.`;
+
+          stateRulesExpedited = `Bajo las regulaciones de Florida Medicaid, solicito que esta queja se procese de manera urgente`;
+          stateRulesExpeditedEn = `Under Florida Medicaid regulations, I request that this grievance be processed on an expedited basis`;
+        } else if (stateConfig.code !== 'CA') {
+          stateEpsdtLaw = `la ley del estado de ${stateConfig.name}. Específicamente, bajo la Sección 1396d(r)(5) del Título 42 del U.S.C., el programa federal de Medicaid requiere la provisión de servicios EPSDT.`;
+          stateEpsdtLawEn = `${stateConfig.name} state law. Specifically, under 42 U.S.C. Section 1396d(r)(5), the federal Medicaid program requires states to provide necessary treatment under EPSDT.`;
+
+          stateAmeliorateCitation = `Bajo las pautas federales de Medicaid, los servicios que corrigen o mejoran (ameliorate) condiciones del desarrollo deben ser cubiertos.`;
+          stateAmeliorateCitationEn = `Under federal Medicaid guidelines, services that correct or ameliorate developmental conditions must be authorized to maintain functioning.`;
+
+          stateRulesExpedited = `Solicito que esta queja se procese de manera urgente`;
+          stateRulesExpeditedEn = `I request that this grievance be processed on an expedited basis`;
+        }
+
         if (isSpanish) {
           return `Fecha: ${todayStr}
 
@@ -706,9 +829,9 @@ A quien corresponda:
 
 Le escribo para apelar formalmente la denegación de cobertura para la terapia de ${therapyType} recomendada para mi hijo, ${childName}, por su médico tratante, el/la ${prescribingDoctor}. El plan ha denegado la cobertura citando: "${denialReason}".
 
-Impugno esta denegación bajo los mandatos federales de Medicaid EPSDT y la ley del estado de California. Específicamente, bajo la Sección 1396d(r)(5) del Título 42 del U.S.C., el programa federal de Medicaid requiere que los estados proporcionen "servicios de detección, diagnóstico y tratamiento tempranos y periódicos" (EPSDT) para determinar enfermedades o afecciones físicas o mentales, y proporcionar "atención médica, servicios de diagnóstico, tratamiento y otras medidas necesarias... para corregir o mejorar defectos y enfermedades y afecciones físicas y mentales".
+Impugno esta denegación bajo los mandatos federales de Medicaid EPSDT y ${stateEpsdtLaw}
 
-Bajo la Sección 51340 del Código de Regulaciones del Título 22 de California, los servicios deben autorizarse si son necesarios para corregir o "mejorar" (ameliorate) una condición del desarrollo. Mejorar incluye mantener el nivel de funcionamiento del niño o prevenir el deterioro.
+${stateAmeliorateCitation}
 
 Denegar la terapia clínica con el argumento de que "no es rehabilitadora" o que "excluye condiciones del desarrollo" es una violación directa del mandato federal EPSDT. Mi hijo requiere esta terapia según se especifica a continuación:
 
@@ -716,7 +839,7 @@ ${customTherapyText}
 
 He adjuntado una carta de necesidad médica de ${prescribingDoctor} que confirma que estos servicios son médicamente necesarios. Solicito que ${insurancePlanName} revoque de inmediato esta denegación y autorice las sesiones solicitadas.
 
-Bajo las reglas de planes de salud de California, solicito que esta queja se procese de manera urgente, ya que el retraso continuo en el desarrollo constituye un riesgo de pérdida funcional permanente.
+${stateRulesExpedited}, ya que el retraso continuo en el desarrollo constituye un riesgo de pérdida funcional permanente.
 
 Atentamente,
 
@@ -747,9 +870,9 @@ To Whom It May Concern,
 
 I am writing to formally appeal the denial of coverage for ${therapyType} recommended for my child, ${childName}, by their treating clinician, ${prescribingDoctor}. The plan has denied coverage citing: "${denialReason}".
 
-I dispute this denial under federal Medicaid EPSDT mandates and California state law. Specifically, under 42 U.S.C. Section 1396d(r)(5), the federal Medicaid program requires states to provide "early and periodic screening, diagnostic, and treatment services" (EPSDT) to determine physical or mental illnesses or conditions, and provide "necessary health care, diagnostic services, treatment, and other measures... to correct or improve defects and physical and mental illnesses and conditions."
+I dispute this denial under federal Medicaid EPSDT mandates and ${stateEpsdtLawEn}
 
-Under California Title 22 Code of Regulations Section 51340, services must be authorized if they are necessary to correct or "ameliorate" a developmental condition. Ameliorate includes maintaining the child's level of functioning or preventing deterioration. 
+${stateAmeliorateCitationEn}
 
 Denying clinical therapy on the grounds that it is "not rehabilitative" or that it "excludes developmental conditions" is a direct violation of the EPSDT federal mandate. My child requires this therapy as specified below:
 
@@ -757,7 +880,7 @@ ${customTherapyText}
 
 I have enclosed a letter of medical necessity from ${prescribingDoctor} confirming that these services are medically necessary. I request that ${insurancePlanName} immediately overturn this denial and authorize the requested sessions.
 
-Under California health plan rules, I request that this grievance be processed on an expedited basis as the ongoing delay in development constitutes a risk of permanent functional loss.
+${stateRulesExpeditedEn} as the ongoing delay in development constitutes a risk of permanent functional loss.
 
 Sincerely,
 
@@ -800,21 +923,21 @@ ${parentName}`;
     iepSocialConcerns: isSpanish ? 'Problemas Sociales' : 'Social Concerns',
     iepBehavioralConcerns: isSpanish ? 'Problemas de Comportamiento' : 'Behavioral Concerns',
     iepObservedChallenges: isSpanish ? 'Desafíos observados (Detalles específicos)' : 'Observed challenges (Specific Details)',
-    iepTimelineTitle: isSpanish ? 'Líneas de Tiempo Estatutarias del IEP en California' : 'Statutory California IEP Timelines',
+    iepTimelineTitle: isSpanish ? `Líneas de Tiempo Estatutarias del IEP en ${stateConfig.name}` : `Statutory ${stateConfig.name} IEP Timelines`,
     iepTimelineSub: isSpanish 
-      ? 'California impone límites legales estrictos a los distritos escolares. Seleccione la fecha de envío para calcular sus hitos:'
-      : 'California enforces strict legal limits on school districts. Select your request submission date to calculate your milestones:',
+      ? `${stateConfig.name} impone límites legales estrictos a los distritos escolares. Seleccione la fecha de envío para calcular sus hitos:`
+      : `${stateConfig.name} enforces strict legal limits on school districts. Select your request submission date to calculate your milestones:`,
     submissionDateLabel: isSpanish ? 'Fecha de Envío' : 'Submission Date',
-    iepStatCode: isSpanish ? 'Cita el Código de Educación de CA §§ 56321 y 56344' : 'Cites CA Education Code §§ 56321 & 56344',
-    iepTimeline1: isSpanish ? '1. Vencimiento del Plan de Evaluación (15 días):' : '1. Assessment Plan Due (15 Days):',
-    iepTimeline2: isSpanish ? '2. Devolver el Plan Firmado (15 días):' : '2. Return Signed Plan By (15 Days):',
-    iepTimeline3: isSpanish ? '3. Evaluaciones y Reunión Inicial del IEP (60 días):' : '3. Assessments & Initial IEP Meeting Held (60 Days):',
+    iepStatCode: isSpanish ? `Cita: ${stateConfig.timelinesCode}` : `Cites: ${stateConfig.timelinesCode}`,
+    iepTimeline1: isSpanish ? `1. Vencimiento del Plan de Evaluación (${planDays} días):` : `1. Assessment Plan Due (${stateConfig.timelineDaysPlan || '15 Days'}):`,
+    iepTimeline2: isSpanish ? `2. Devolver el Plan Firmado (${planDays} días):` : `2. Return Signed Plan By (${stateConfig.timelineDaysPlan || '15 Days'}):`,
+    iepTimeline3: isSpanish ? `3. Evaluaciones y Reunión Inicial del IEP (${meetingDays} días):` : `3. Assessments & Initial IEP Meeting Held (${stateConfig.timelineDaysMeeting || '60 Days'}):`,
 
     // IHSS params
-    ihssParamsTitle: isSpanish ? 'Parámetros de Apelación de IHSS' : 'IHSS Appeal Parameters',
+    ihssParamsTitle: isSpanish ? `Parámetros de Apelación de ${stateConfig.personalCareProgram}` : `${stateConfig.personalCareProgram} Appeal Parameters`,
     ihssParamsSub: isSpanish 
-      ? 'Seleccione los comportamientos y peligros de seguridad para impugnar la decisión de denegación de IHSS.'
-      : 'Select safety behaviors and safety hazards to contest the In-Home Supportive Services denial decision.',
+      ? `Seleccione los comportamientos y peligros de seguridad para impugnar la decisión de denegación de ${stateConfig.personalCareProgram}.`
+      : `Select safety behaviors and safety hazards to contest the ${stateConfig.personalCareProgram} denial decision.`,
     countyNameLabel: isSpanish ? 'Nombre del Condado' : 'County Name',
     noticeDateLabel: isSpanish ? 'Fecha del Aviso de Acción' : 'Notice of Action Date',
     ihssHazardsLabel: isSpanish ? 'Lista de verificación de peligros de seguridad:' : 'Safety Hazards checklist:',
@@ -824,19 +947,19 @@ ${parentName}`;
     ihssClimbing: isSpanish ? 'Escalada de Muebles / Caídas' : 'Furniture climbing/Falls',
     ihssElectrical: isSpanish ? 'Electrodomésticos / Seguridad contra Incendios' : 'Appliances / Fire Safety',
     ihssDescriptionLabel: isSpanish ? 'Descripción detallada de las necesidades de monitoreo de seguridad' : 'Detailed description of safety monitoring needs',
-    ihssTimelineTitle: isSpanish ? 'Líneas de Tiempo Estatutarias de Apelación de IHSS' : 'Statutory IHSS Appeal Timelines',
+    ihssTimelineTitle: isSpanish ? `Líneas de Tiempo de Apelación de ${stateConfig.personalCareProgram}` : `Statutory ${stateConfig.personalCareProgram} Appeal Timelines`,
     ihssTimelineSub: isSpanish 
-      ? 'Bajo el Código de Bienestar e Instituciones § 10951, debe presentar su solicitud de audiencia dentro de los **90 días naturales** posteriores a la fecha del Aviso de Acción.'
-      : 'Under Welfare & Institutions Code § 10951, you must file your fair hearing request within **90 calendar days** of the Notice of Action date.',
+      ? `Debe presentar su solicitud de audiencia dentro de los **90 días naturales** posteriores a la fecha del Aviso de Acción.`
+      : `You must file your fair hearing request within **90 calendar days** of the Notice of Action date.`,
     noaDateLabel: isSpanish ? 'Fecha del Aviso de Acción:' : 'Notice of Action Date:',
     filingDeadlineLabel: isSpanish ? 'Fecha Límite de Presentación:' : 'Filing Submission Deadline:',
 
     // RC params
-    rcParamsTitle: isSpanish ? 'Parámetros de Apelación del Centro Regional' : 'Regional Center Appeal Parameters',
+    rcParamsTitle: isSpanish ? `Parámetros de Apelación de ${stateConfig.catchmentName}` : `${stateConfig.catchmentName} Appeal Parameters`,
     rcParamsSub: isSpanish 
-      ? 'Cite las limitaciones fundamentales del desarrollo para apelar una decisión de denegación del Centro Regional.'
-      : 'Cite the core developmental limitations to appeal a Regional Center Lanterman Act eligibility decision.',
-    rcNameLabel: isSpanish ? 'Nombre del Centro Regional' : 'Regional Center Name',
+      ? `Cite las limitaciones fundamentales del desarrollo para apelar una decisión de denegación de ${stateConfig.catchmentName}.`
+      : `Cite the core developmental limitations to appeal a ${stateConfig.catchmentName} eligibility decision.`,
+    rcNameLabel: isSpanish ? `${stateConfig.catchmentName} Name` : `${stateConfig.catchmentName} Name`,
     rcDenialDateLabel: isSpanish ? 'Fecha del Aviso de Denegación' : 'Date of Denial Notice',
     rcDiagnosisLabel: isSpanish ? 'Diagnóstico Principal' : 'Primary Diagnosis',
     rcLimitationsLabel: isSpanish ? 'Limitaciones sustanciales (Seleccione 3+):' : 'Substantial limitations (Select 3+):',
@@ -847,10 +970,10 @@ ${parentName}`;
     rcSelfCare: isSpanish ? 'Cuidado Personal (ADLs)' : 'Self-Care (ADLs)',
     rcSelfDirection: isSpanish ? 'Autodirección / Seguridad' : 'Self-Direction / Safety',
     rcDescLabel: isSpanish ? 'Descripción detallada de las necesidades calificadas de desarrollo' : 'Detailed description of qualifying developmental needs',
-    rcTimelineTitle: isSpanish ? 'Líneas de Tiempo de Apelación de la Ley Lanterman' : 'Lanterman Act Appeal Timelines',
+    rcTimelineTitle: isSpanish ? `Líneas de Tiempo de Apelación de ${stateConfig.catchmentName}` : `${stateConfig.catchmentName} Appeal Timelines`,
     rcTimelineSub: isSpanish 
-      ? 'Bajo el Código de Bienestar e Instituciones § 4710.5, debe presentar su apelación dentro de los **30 días naturales** a partir del aviso de denegación.'
-      : 'Under Welfare & Institutions Code § 4710.5, you must submit your appeal within **30 calendar days** of the Regional Center eligibility denial notice.',
+      ? `Debe presentar su apelación dentro de los **30 días naturales** a partir del aviso de denegación.`
+      : `You must submit your appeal within **30 calendar days** of the eligibility denial notice.`,
 
     // SSI params
     ssiParamsTitle: isSpanish ? 'Parámetros de Reconsideración de SSI' : 'SSI Reconsideration Parameters',

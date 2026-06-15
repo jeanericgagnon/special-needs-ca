@@ -56,7 +56,7 @@ const DEFAULT_INCIDENTS: SafetyIncident[] = [
 ];
 
 export default function IHSSOvertimePanel() {
-  const { currentChild, parentName, setParentName, childName, setChildName } = useChildProfile();
+  const { currentChild, parentName, setParentName, childName, setChildName, stateConfig, isSpanish } = useChildProfile();
 
   const [ihssSubTab, setIhssSubTab] = useState<'journal' | 'estimator' | 'overtime'>('journal');
 
@@ -288,12 +288,14 @@ export default function IHSSOvertimePanel() {
   const isSeverelyImpaired = weeklyTotal >= 20;
 
   const compileCaseworkerHandout = () => {
-    return `IHSS ADVOCACY HANDOUT: CARE DEMANDS ASSESSMENT
+    const programUpper = (stateConfig.personalCareProgram || 'Personal Care').toUpperCase();
+    const stateUpper = (stateConfig.name || 'State').toUpperCase();
+    return `${programUpper} ADVOCACY HANDOUT: CARE DEMANDS ASSESSMENT
 Target Client: ${childName} (Age: ${currentChild.dob ? Math.floor((new Date().getTime() - new Date(currentChild.dob).getTime()) / 31557600000) : 'N/A'})
 Assessment Date: ${logDate}
 Reporter: ${parentName}
 
-1. FUNCTIONAL INDEX ASSESSMENT RANKS (CDSS GUIDELINES)
+1. FUNCTIONAL INDEX ASSESSMENT RANKS (${stateUpper} MEDICAID GUIDELINES)
 - Feeding assistance: Rank ${feedingRank} (${feedingHours} hours/week)
 - Bowel & Bladder: Rank ${bowelBladderRank} (${bowelHours} hours/week)
 - Bathing & Oral: Rank ${bathingOralRank} (${bathingHours} hours/week)
@@ -301,11 +303,11 @@ Reporter: ${parentName}
 - Ambulation & Transfers: Rank ${ambulationTransfersRank} (${ambulationHours} hours/week)
 
 Weekly Personal Care Subtotal: ${weeklyPersonalCare.toFixed(1)} Hours/Week
-Status: ${isSeverelyImpaired ? 'Severely Impaired (SI) - 20+ hours' : 'Non-Severely Impaired'}
+Status: ${isSeverelyImpaired ? 'Highly Impaired / High Needs (20+ hours)' : 'Standard Needs'}
 
 2. ADDITIONAL PARAMETERS
 - Paramedical Care Needs: ${hasParamedical ? 'Yes - ' + paramedicalHours + ' hrs/wk (' + paramedicalDesc + ')' : 'No'}
-- Protective Supervision Required: ${requiresSupervision ? 'Yes - Requires continuous safety oversight due to elopement/self-injury hazards' : 'No'}
+- Continuous Safety Oversight Required: ${requiresSupervision ? 'Yes - Requires continuous safety oversight due to elopement/self-injury hazards' : 'No'}
 
 3. PROJECTED MONTHLY AUTHORIZATION
 Estimated Monthly Hours: ${totalMonthlyHours} Hours
@@ -374,9 +376,11 @@ Calculated local hourly provider wage rate: $${ihssWage.toFixed(2)}/hour`;
           <div className="glass-panel no-print" style={{ background: 'rgba(var(--primary-rgb), 0.05)', border: '1px solid rgba(var(--primary-rgb), 0.2)', borderRadius: '24px', padding: '1.5rem', marginBottom: '2rem', display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
             <Info size={24} color="var(--primary-color)" style={{ flexShrink: 0, marginTop: '2px' }} />
             <div>
-              <strong style={{ display: 'block', marginBottom: '0.25rem', color: 'var(--text-main)' }}>Why is this log crucial?</strong>
+              <strong style={{ display: 'block', marginBottom: '0.25rem', color: 'var(--text-main)' }}>{isSpanish ? '¿Por qué es crucial este registro?' : 'Why is this log crucial?'}</strong>
               <p style={{ fontSize: '0.88rem', color: 'var(--text-light)', lineHeight: '1.5', margin: 0 }}>
-                Under California DSS regulations, minor children only qualify for Protective Supervision if parents prove the child needs **continuous safety monitoring** due to developmental impairments. Social workers expect to see a written, dated log detailing safety risk incidents and the immediate caregiver interventions that kept the child safe.
+                {isSpanish 
+                  ? `Bajo las regulaciones de ${stateConfig.medicaidName}, los niños menores califican para supervisión o atención personal si los padres demuestran que el niño necesita monitoreo continuo de seguridad debido a deficiencias en el desarrollo. Los evaluadores esperan ver un registro detallado de los incidentes y las intervenciones correspondientes.`
+                  : `Under ${stateConfig.name} ${stateConfig.personalCareProgram === 'IHSS Protective Supervision' ? 'DSS' : 'Medicaid'} regulations, minor children qualify for personal care/supervision hours if parents prove the child needs continuous monitoring or assistance due to developmental impairments. Assessors expect to see a written, dated log detailing safety risk incidents and caregiver interventions.`}
               </p>
             </div>
           </div>
@@ -528,7 +532,7 @@ Calculated local hourly provider wage rate: $${ihssWage.toFixed(2)}/hour`;
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 340px', gap: '2rem' }} className="iep-grid-layout">
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
             <div className="glass-panel" style={{ padding: '2rem' }}>
-              <h3 style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: '1rem' }}>CDSS Functional Index Assessment</h3>
+              <h3 style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: '1rem' }}>{isSpanish ? `Evaluación del Índice Funcional de ${stateConfig.name}` : `${stateConfig.name} Functional Index Assessment`}</h3>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
                 <div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.88rem' }}>
@@ -574,9 +578,9 @@ Calculated local hourly provider wage rate: $${ihssWage.toFixed(2)}/hour`;
               <div>
                 <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 600, fontSize: '0.88rem' }}>
                   <input type="checkbox" checked={requiresSupervision} onChange={(e) => setRequiresSupervision(e.target.checked)} />
-                  <span>Requires 24/7 Protective Supervision?</span>
+                  <span>{isSpanish ? `¿Requiere supervisión continua o seguridad las 24 horas?` : `Requires continuous care or supervision?`}</span>
                 </label>
-                <p style={{ fontSize: '0.75rem', color: 'var(--text-light)', margin: '0.2rem 0 0 1.25rem' }}>Adds 195 or 283 monthly hours depending on SI severity.</p>
+                <p style={{ fontSize: '0.75rem', color: 'var(--text-light)', margin: '0.2rem 0 0 1.25rem' }}>{isSpanish ? `Agrega horas mensuales de supervisión según la gravedad del caso.` : `Adds supervision/care hours depending on impairment severity.`}</p>
               </div>
 
               <div style={{ borderTop: '1px solid #eee', paddingTop: '1rem' }}>
@@ -636,9 +640,9 @@ Calculated local hourly provider wage rate: $${ihssWage.toFixed(2)}/hour`;
             </div>
 
             <div className="glass-panel" style={{ padding: '1.25rem', background: isSeverelyImpaired ? 'rgba(16, 185, 129, 0.02)' : 'rgba(245, 158, 11, 0.02)', border: `1px solid ${isSeverelyImpaired ? '#cbf7e1' : '#fef3c7'}` }}>
-              <span style={{ fontSize: '0.65rem', fontWeight: 700, color: isSeverelyImpaired ? '#10b981' : '#f59e0b', textTransform: 'uppercase' }}>{isSeverelyImpaired ? 'Severely Impaired' : 'Non-Severely Impaired'}</span>
-              <h4 style={{ fontSize: '0.88rem', fontWeight: 700, margin: '0.2rem 0' }}>SI Status Confirmed (20+ hrs)</h4>
-              <p style={{ margin: 0, fontSize: '0.75rem', color: 'var(--text-light)', lineHeight: 1.3 }}>{isSeverelyImpaired ? 'Qualifies for 283 max hours under Protective Supervision.' : 'Cap at 195 max hours under Protective Supervision.'}</p>
+              <span style={{ fontSize: '0.65rem', fontWeight: 700, color: isSeverelyImpaired ? '#10b981' : '#f59e0b', textTransform: 'uppercase' }}>{isSeverelyImpaired ? (isSpanish ? 'Impedimento Severo' : 'High Needs') : (isSpanish ? 'Impedimento No Severo' : 'Standard Needs')}</span>
+              <h4 style={{ fontSize: '0.88rem', fontWeight: 700, margin: '0.2rem 0' }}>{isSpanish ? 'Estado de Necesidad Confirmado (20+ hrs)' : 'High Needs Status Confirmed (20+ hrs)'}</h4>
+              <p style={{ margin: 0, fontSize: '0.75rem', color: 'var(--text-light)', lineHeight: 1.3 }}>{isSeverelyImpaired ? `Qualifies for maximum hours under ${stateConfig.personalCareProgram}.` : `Estimated base hours under ${stateConfig.personalCareProgram}.`}</p>
             </div>
             <button
               onClick={handleSaveSchedule}

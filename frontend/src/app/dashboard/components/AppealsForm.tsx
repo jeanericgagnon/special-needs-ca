@@ -2,7 +2,13 @@
 
 import React from 'react';
 import { Clock, Scale, ShieldCheck } from 'lucide-react';
-import { LetterTemplateType } from './ChildProfileContext';
+import { LetterTemplateType, useChildProfile } from './ChildProfileContext';
+
+const parseDays = (daysStr: string | undefined, defaultDays: number) => {
+  if (!daysStr) return defaultDays;
+  const match = daysStr.match(/(\d+)/);
+  return match ? parseInt(match[1]) : defaultDays;
+};
 
 interface IepConcerns {
   speech: boolean;
@@ -155,6 +161,10 @@ export default function AppealsForm({
   customTherapyText,
   setCustomTherapyText
 }: AppealsFormProps) {
+  const { stateConfig } = useChildProfile();
+  const planDays = parseDays(stateConfig?.timelineDaysPlan, 15);
+  const meetingDays = parseDays(stateConfig?.timelineDaysMeeting, 60);
+
   return (
     <div className="glass-panel" style={{ padding: '2rem' }}>
       {/* IEP Request Fields */}
@@ -284,15 +294,15 @@ export default function AppealsForm({
             <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.75rem', fontSize: '0.8rem', flexDirection: 'column' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px dashed var(--glass-border)', paddingBottom: '0.25rem' }}>
                 <span>{t.iepTimeline1}</span>
-                <strong style={{ color: 'var(--primary-color)' }}>{calculateDateOffset(iepSubmissionDate, 15)}</strong>
+                <strong style={{ color: 'var(--primary-color)' }}>{calculateDateOffset(iepSubmissionDate, planDays)}</strong>
               </div>
               <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px dashed var(--glass-border)', paddingBottom: '0.25rem' }}>
                 <span>{t.iepTimeline2}</span>
-                <strong>{calculateDateOffset(iepSubmissionDate, 30)}</strong>
+                <strong>{calculateDateOffset(iepSubmissionDate, planDays)}</strong>
               </div>
               <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                 <span>{t.iepTimeline3}</span>
-                <strong style={{ color: '#10b981' }}>{calculateDateOffset(iepSubmissionDate, 60)}</strong>
+                <strong style={{ color: '#10b981' }}>{calculateDateOffset(iepSubmissionDate, planDays + meetingDays)}</strong>
               </div>
             </div>
           </div>

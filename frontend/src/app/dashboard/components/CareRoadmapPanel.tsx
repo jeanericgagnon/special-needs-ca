@@ -41,7 +41,8 @@ export default function CareRoadmapPanel({ isSpanish = false }: CareRoadmapPanel
     parentName,
     setParentName,
     childName,
-    setChildName
+    setChildName,
+    stateConfig
   } = useChildProfile();
 
   // Resolve condition, need, and county details at top of render
@@ -106,7 +107,7 @@ Yo, ${parentName || '[Nombre del Padre]'}, declaro bajo pena de perjurio lo sigu
    - Comportamientos autolesivos durante frustraciones sensoriales (golpearse la cabeza contra la pared).
    - Incompetencia de seguridad general (intenta subir a mostradores altos de la cocina, tocar estufas calientes).
 
-Adjunto a esta declaración un Registro de Incidentes de seguridad y pido que estos hechos se consideren en la evaluación de la elegibilidad de In-Home Supportive Services (IHSS) y del Centro Regional.
+Adjunto a esta declaración un Registro de Incidentes de seguridad y pido que estos hechos se consideren en la evaluación de la elegibilidad de ${stateConfig?.personalCareProgram || 'In-Home Supportive Services (IHSS)'} y del ${stateConfig?.catchmentName || 'Centro Regional'}.
 
 Fecha: ${new Date().toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}
 Firma: __________________________________________________
@@ -116,7 +117,7 @@ Parent/Cuidador`;
 
 I, ${parentName || '[Parent/Guardian Name]'}, declare as follows:
 
-1. I am the parent and primary caregiver of ${childName || '[Child Name]'} (DOB: ${currentChild.dob || '[DOB]'}), who resides with me in ${countyName} County, California.
+1. I am the parent and primary caregiver of ${childName || '[Child Name]'} (DOB: ${currentChild.dob || '[DOB]'}), who resides with me in ${countyName} County, ${stateConfig?.name || 'California'}.
 2. ${childName} is diagnosed with: ${conditionsStr}.
 3. Due to severe mental impairment and cognitive delays, ${childName} has a complete lack of safety awareness and is unable to self-direct or recognize physical hazards. They require continuous 24/7 safety oversight and Protective Supervision to prevent severe bodily injury or accidental death.
 4. Specific dangerous behaviors requiring immediate caregiver physical intervention include:
@@ -125,7 +126,7 @@ I, ${parentName || '[Parent/Guardian Name]'}, declare as follows:
    - Self-injurious outbursts during sensory dysregulation (violent head-banging on hard flooring).
    - Severe fall and burn risks (scales kitchen counters to access high shelves, reaches for open flames/hot stovetops).
 
-Attached is a Safety Incident Log documenting these behaviors and intervention history. I request that these records be formally appended to my child's case file for IHSS and Regional Center assessment.
+Attached is a Safety Incident Log documenting these behaviors and intervention history. I request that these records be formally appended to my child's case file for ${stateConfig?.personalCareProgram || 'IHSS'} and ${stateConfig?.catchmentName || 'Regional Center'} assessment.
 
 Date: ${new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
 Signature: __________________________________________________
@@ -253,6 +254,7 @@ Parent/Primary Caregiver`;
   const rcStatus = getStatusLabel('regional-centers');
   const esStatus = getStatusLabel('early-start');
   const iepStatus = getStatusLabel('iep-special-education');
+  const isCa = stateConfig?.code === 'CA';
 
   // Priority 1: IHSS & Protective Supervision
   if (hasSafetyConcerns && (ihssStatus === 'untracked' || ihssStatus === 'not_applied')) {
@@ -260,28 +262,28 @@ Parent/Primary Caregiver`;
       id: 'ihss-safety',
       rank: 1,
       severity: 'critical' as const,
-      title: isSpanish ? 'Solicitar IHSS y Supervisión Protectora' : 'Apply for IHSS & Request Protective Supervision',
+      title: isSpanish ? `Solicitar ${stateConfig?.personalCareProgram || 'IHSS'} y Supervisión Protectora` : `Apply for ${stateConfig?.personalCareProgram || 'IHSS'} & Request Protective Supervision`,
       description: isSpanish 
-        ? `Basado en los riesgos de fuga/seguridad de ${childName} y el estado de IHSS, debe solicitar IHSS de inmediato. Inicie la bitácora de incidentes de comportamiento para documentar el peligro de 24 horas.`
-        : `Based on ${childName}'s safety hazards (elopement/self-injury) and untracked IHSS status, start an IHSS application immediately. Log behavioral safety incidents to prove need for 24/7 Protective Supervision.`,
-      actionLabel: isSpanish ? 'Ir a Registro de Seguridad IHSS' : 'Go to IHSS Safety Log',
+        ? `Basado en los riesgos de fuga/seguridad de ${childName} y el estado de ${stateConfig?.personalCareProgram || 'IHSS'}, debe solicitar ${stateConfig?.personalCareProgram || 'IHSS'} de inmediato. Inicie la bitácora de incidentes de comportamiento para documentar el peligro de 24 horas.`
+        : `Based on ${childName}'s safety hazards (elopement/self-injury) and untracked ${stateConfig?.personalCareProgram || 'IHSS'} status, start an application immediately. Log behavioral safety incidents to prove need for 24/7 Protective Supervision.`,
+      actionLabel: isSpanish ? 'Ir a Registro de Seguridad' : 'Go to Safety Log',
       targetTab: 'ihss' as TabType
     });
   }
 
   // Priority 2: Regional Center Intake (Lanterman vs Early Start)
   const isDevelopmentalDiagnoses = childConditions.some(c => c.regional_center_relevance === 1);
-  if (isDevelopmentalDiagnoses) {
+  if (isDevelopmentalDiagnoses && stateConfig) {
     if (childAge < 3 && (esStatus === 'untracked' || esStatus === 'not_applied')) {
       prioritiesList.push({
         id: 'rc-early-start',
         rank: 2,
         severity: 'high' as const,
-        title: isSpanish ? 'Iniciar Admisión en California Early Start' : 'Initiate California Early Start Intake',
+        title: isSpanish ? `Iniciar Admisión en ${stateConfig.earlyInterventionLabel}` : `Initiate ${stateConfig.earlyInterventionLabel} Intake`,
         description: isSpanish
-          ? `Dado que ${childName} es menor de 3 años y tiene diagnósticos relevantes, califica para la intervención temprana de Early Start. Contacte al centro regional para la evaluación.`
-          : `${childName} is under 3 years old with developmental risk factors. Request early intervention services under the California Early Start program via your local Regional Center.`,
-        actionLabel: isSpanish ? 'Ver Directorio del Centro Regional' : 'View Regional Center Directory',
+          ? `Dado que ${childName} es menor de 3 años y tiene diagnósticos relevantes, califica para la intervención temprana de ${stateConfig.earlyInterventionLabel}. Contacte a la oficina de ${stateConfig.catchmentName} para la evaluación.`
+          : `${childName} is under 3 years old with developmental risk factors. Request early intervention services under the ${stateConfig.earlyInterventionLabel} program via your local ${stateConfig.catchmentName}.`,
+        actionLabel: isSpanish ? `Ver Directorio de ${stateConfig.catchmentName}` : `View ${stateConfig.catchmentName} Directory`,
         targetTab: 'county' as TabType
       });
     } else if (childAge >= 3 && (rcStatus === 'untracked' || rcStatus === 'not_applied')) {
@@ -289,10 +291,10 @@ Parent/Primary Caregiver`;
         id: 'rc-lanterman',
         rank: 2,
         severity: 'high' as const,
-        title: isSpanish ? 'Establecer Admisión al Centro Regional (Ley Lanterman)' : 'Establish Regional Center Lanterman Intake',
+        title: isSpanish ? (isCa ? 'Establecer Admisión al Centro Regional (Ley Lanterman)' : `Establecer Admisión a ${stateConfig.catchmentName}`) : (isCa ? 'Establish Regional Center Lanterman Intake' : `Establish ${stateConfig.catchmentName} Intake`),
         description: isSpanish
-          ? `Su hijo tiene diagnósticos que califican según la Ley Lanterman (como autismo, parálisis cerebral, síndrome de Down o discapacidad intelectual). Inicie el proceso de admisión.`
-          : `Initiate a formal Lanterman Act eligibility assessment. Regional Center services fund respite, behavioral therapies, and critical waivers (such as Medi-Cal institutional deeming).`,
+          ? `Su hijo tiene diagnósticos que califican según las pautas de ${stateConfig.name} (como autismo, parálisis cerebral, síndrome de Down o discapacidad intelectual). Inicie el proceso de admisión.`
+          : `Initiate a formal ${stateConfig.catchmentName} eligibility assessment. ${stateConfig.catchmentName} services fund respite, behavioral therapies, and critical waivers (such as ${stateConfig.medicaidName} institutional deeming).`,
         actionLabel: isSpanish ? 'Ver Contacto de Admisión' : 'View Intake Contacts',
         targetTab: 'county' as TabType
       });
@@ -307,7 +309,7 @@ Parent/Primary Caregiver`;
       severity: 'high' as const,
       title: isSpanish ? 'Añadir Protocolos de Fuga al IEP Escolar' : 'Add Elopement Protocols to School IEP',
       description: isSpanish
-        ? `Asegúrese de que el IEP de ${childName} incluya metas específicas de seguridad, planes de deambulación y ayuda 1:1. Esto sirve como evidencia legal esencial para su caso de IHSS.`
+        ? `Asegúrese de que el IEP de ${childName} incluya metas específicas de seguridad, planes de deambulación y ayuda 1:1. Esto sirve como evidencia legal esencial para su caso de ${stateConfig?.personalCareProgram || 'IHSS'}.`
         : `Ensure ${childName}'s school IEP contains an active elopement prevention plan, safety goals, and 1:1 supervision protocols. This provides critical clinical evidence for county social workers.`,
       actionLabel: isSpanish ? 'Abrir Herramientas IEP' : 'Open IEP Prep Tools',
       targetTab: 'iepprep' as TabType
@@ -361,67 +363,67 @@ Parent/Primary Caregiver`;
   
   const getNextMessageScript = () => {
     const todayStr = new Date().toLocaleDateString(isSpanish ? 'es-ES' : 'en-US', { year: 'numeric', month: 'long', day: 'numeric' });
-    const rcName = countyDetails?.regionalCenters?.[0]?.name || (isSpanish ? 'Centro Regional local' : 'local Regional Center');
+    const rcName = countyDetails?.regionalCenters?.[0]?.name || stateConfig?.catchmentName || (isSpanish ? 'Agencia de Discapacidad local' : 'local Developmental Services Agency');
     const intakeContact = childAge < 3 
-      ? (countyDetails?.regionalCenters?.[0]?.early_start_contact || (isSpanish ? 'Coordinador de Early Start' : 'Early Start Coordinator'))
-      : (countyDetails?.regionalCenters?.[0]?.lanterman_intake_contact || (isSpanish ? 'Coordinador de Admisión de Lanterman' : 'Lanterman Intake Coordinator'));
+      ? (isCa ? (countyDetails?.regionalCenters?.[0]?.early_start_contact || (isSpanish ? 'Coordinador de Early Start' : 'Early Start Coordinator')) : (isSpanish ? 'Coordinador de Intervención Temprana' : 'Early Intervention Coordinator'))
+      : (isCa ? (countyDetails?.regionalCenters?.[0]?.lanterman_intake_contact || (isSpanish ? 'Coordinador de Admisión de Lanterman' : 'Lanterman Intake Coordinator')) : (isSpanish ? 'Coordinador de Admisión' : 'Intake Coordinator'));
 
     if (topPriority.id === 'ihss-safety') {
       if (messageType === 'email') {
         return isSpanish 
           ? `De: ${parentName || '[Su Nombre]'}
-Para: Oficina de IHSS del Condado de ${activeCounty?.name || '[Condado]'}
-Asunto: Solicitud de Evaluación de IHSS - ${childName} (F.Nac: ${currentChild.dob})
+Para: Oficina de ${stateConfig?.personalCareProgram || 'IHSS'} del Condado de ${activeCounty?.name || '[Condado]'}
+Asunto: Solicitud de Evaluación de ${stateConfig?.personalCareProgram || 'IHSS'} - ${childName} (F.Nac: ${currentChild.dob})
 
-Estimado Intake de IHSS:
+Estimado Intake de ${stateConfig?.personalCareProgram || 'IHSS'}:
 
-Por la presente solicito una evaluación inicial de Servicios de Apoyo en el Hogar (IHSS) para mi hijo, ${childName} (DOB: ${currentChild.dob}) en este día ${todayStr}. 
+Por la presente solicito una evaluación inicial de ${stateConfig?.personalCareProgram || 'Servicios de Apoyo en el Hogar (IHSS)'} para mi hijo, ${childName} (DOB: ${currentChild.dob}) en este día ${todayStr}. 
 
-Mi hijo tiene diagnósticos de ${childConditions.map(c => c.name).join(', ') || 'retrasos del desarrollo'} y exhibe una falta severa de conciencia de seguridad con comportamientos de riesgo continuo que requieren Supervisión Protectora las 24 horas (incluyendo fugas frecuentes y pica).
+Mi hijo tiene diagnósticos de ${childConditions.map(c => c.name).join(', ') || 'retrasos del desarrollo'} y exhibe una falta severa de conciencia de seguridad con comportamientos de riesgo continuo que requieren supervisión y cuidado (incluyendo fugas frecuentes y pica).
 
-Por favor, envíeme el formulario de solicitud de servicio (SOC 295) y los detalles del examen médico SOC 873.
+Por favor, envíeme el formulario de solicitud de servicio y los detalles de la certificación médica correspondiente.
 
 Atentamente,
 ${parentName || '[Su Nombre]'}
 Teléfono: [Su Teléfono]`
           : `From: ${parentName || '[Your Name]'}
-To: County of ${activeCounty?.name || '[County]'} IHSS Intake Office
-Subject: Initial IHSS Assessment Request - ${childName} (DOB: ${currentChild.dob})
+To: County of ${activeCounty?.name || '[County]'} ${stateConfig?.personalCareProgram || 'IHSS'} Intake Office
+Subject: Initial ${stateConfig?.personalCareProgram || 'IHSS'} Assessment Request - ${childName} (DOB: ${currentChild.dob})
 
-Dear IHSS Intake Coordinator,
+Dear Intake Coordinator,
 
-I am writing to formally request an In-Home Supportive Services (IHSS) program assessment for my minor child, ${childName} (DOB: ${currentChild.dob}) on this date of ${todayStr}. 
+I am writing to formally request a ${stateConfig?.personalCareProgram || 'In-Home Supportive Services (IHSS)'} program assessment for my minor child, ${childName} (DOB: ${currentChild.dob}) on this date of ${todayStr}. 
 
 Due to my child's developmental diagnoses of ${childConditions.map(c => c.name).join(', ') || 'developmental delays'}, they exhibit severe cognitive impairments and a complete lack of safety boundaries. Specifically, they require constant safety supervision due to risk behaviors (elopement and swallowing non-foods).
 
-Please send me the necessary application forms (SOC 295) and the SOC 873 medical certification form to initiate this request.
+Please send me the necessary application and medical certification forms to initiate this request.
 
 Sincerely,
 ${parentName || '[Your Name]'}
 Phone: [Your Phone Number]`;
       } else {
         return isSpanish
-          ? `Llamada telefónica a la Oficina de IHSS del Condado:
+          ? `Llamada telefónica a la Oficina de ${stateConfig?.personalCareProgram || 'IHSS'} del Condado:
 (Diga esto al operador de Admisión / Intake)
 
-"Hola, mi nombre es ${parentName || '[Su Nombre]'}. Estoy llamando para solicitar una evaluación de IHSS para mi hijo menor de edad, ${childName}. Nació el ${currentChild.dob || '[Fecha]'}. Mi hijo tiene un diagnóstico de ${childConditions[0]?.name || 'un retraso del desarrollo'} y tiene necesidades críticas de seguridad que requieren supervisión las 24 horas del día debido a comportamientos de fuga. ¿Podría transferirme con el oficial de admisión de IHSS o decirme cómo enviar la solicitud SOC 295?"`
-          : `Phone Call to County IHSS Intake Office:
+"Hola, mi nombre es ${parentName || '[Su Nombre]'}. Estoy llamando para solicitar una evaluación de ${stateConfig?.personalCareProgram || 'IHSS'} para mi hijo menor de edad, ${childName}. Nació el ${currentChild.dob || '[Fecha]'}. Mi hijo tiene un diagnóstico de ${childConditions[0]?.name || 'un retraso del desarrollo'} y tiene necesidades críticas de seguridad que requieren supervisión las 24 horas del día debido a comportamientos de fuga. ¿Podría transferirme con el oficial de admisión de ${stateConfig?.personalCareProgram || 'IHSS'} o decirme cómo enviar la solicitud?"`
+          : `Phone Call to County ${stateConfig?.personalCareProgram || 'IHSS'} Intake Office:
 (Read this script to the intake caseworker)
 
-"Hello, my name is ${parentName || '[Your Name]'}. I am calling to request an initial IHSS evaluation for my minor child, ${childName}. Their date of birth is ${currentChild.dob || '[DOB]'}. My child has a diagnosis of ${childConditions[0]?.name || 'developmental delay'} and has severe, high-risk safety needs requiring continuous oversight to prevent wandering. Who is the intake worker I can speak with to initiate this case?"`;
+"Hello, my name is ${parentName || '[Your Name]'}. I am calling to request an initial ${stateConfig?.personalCareProgram || 'IHSS'} evaluation for my minor child, ${childName}. Their date of birth is ${currentChild.dob || '[DOB]'}. My child has a diagnosis of ${childConditions[0]?.name || 'developmental delay'} and has severe, high-risk safety needs requiring continuous oversight to prevent wandering. Who is the intake worker I can speak with to initiate this case?"`;
       }
     } else if (topPriority.id === 'rc-early-start' || topPriority.id === 'rc-lanterman') {
       if (messageType === 'email') {
         return isSpanish
           ? `De: ${parentName || '[Su Nombre]'}
 Para: Admisión del ${rcName}
-Asunto: Solicitud de Evaluación de Ley Lanterman - ${childName} (F.Nac: ${currentChild.dob})
+Asunto: Solicitud de Evaluación de ${isCa ? 'Ley Lanterman' : stateConfig?.catchmentName || 'Admisión'} - ${childName} (F.Nac: ${currentChild.dob})
 
-Estimado Equipo de Admisión del Centro Regional:
+Estimado Equipo de Admisión:
 
-En este día ${todayStr}, solicito formalmente una evaluación de elegibilidad de Ley Lanterman para mi hijo, ${childName} (DOB: ${currentChild.dob}). 
+En este día ${todayStr}, solicito formalmente una evaluación de elegibilidad de ${isCa ? 'Ley Lanterman' : stateConfig?.catchmentName || 'Servicios'} para mi hijo, ${childName} (DOB: ${currentChild.dob}). 
 
-Mi hijo tiene un diagnóstico de ${childConditions.map(c => c.name).join(', ') || 'retraso de desarrollo'} y requiere servicios de coordinación de casos, respiro y apoyos de exención del centro regional. 
+Mi hijo tiene un diagnóstico de ${childConditions.map(c => c.name).join(', ') || 'retraso de desarrollo'} y requiere servicios de coordinación de casos, respiro y apoyos de exención de la agencia de discapacidad. 
 
 Por favor envíeme los formularios correspondientes y el oficial asignado para el proceso.
 
@@ -430,13 +432,13 @@ ${parentName || '[Su Nombre]'}
 Teléfono: [Su Teléfono]`
           : `From: ${parentName || '[Your Name]'}
 To: Intake Department, ${rcName}
-Subject: Lanterman Act Assessment Request - ${childName} (DOB: ${currentChild.dob})
+Subject: ${isCa ? 'Lanterman Act' : stateConfig?.catchmentName || 'Developmental Services'} Assessment Request - ${childName} (DOB: ${currentChild.dob})
 
-Dear Regional Center Intake Department,
+Dear Intake Department,
 
-I am writing to formally request a Lanterman Act eligibility evaluation for my child, ${childName} (DOB: ${currentChild.dob}) on this date ${todayStr}.
+I am writing to formally request a ${isCa ? 'Lanterman Act' : stateConfig?.catchmentName || 'Developmental Services'} eligibility evaluation for my child, ${childName} (DOB: ${currentChild.dob}) on this date ${todayStr}.
 
-My child is diagnosed with ${childConditions.map(c => c.name).join(', ') || 'developmental conditions'} and presents significant functional limitations in multiple domains (communication, safety, and self-care). We wish to establish Regional Center intake to coordinate respite hours and evaluate state Medicaid waivers.
+My child is diagnosed with ${childConditions.map(c => c.name).join(', ') || 'developmental conditions'} and presents significant functional limitations in multiple domains (communication, safety, and self-care). We wish to establish intake to coordinate respite hours and evaluate state Medicaid waivers.
 
 Please let me know the contact information for our assigned intake coordinator and what documents are required to begin.
 
@@ -445,14 +447,14 @@ ${parentName || '[Your Name]'}
 Phone: [Your Phone Number]`;
       } else {
         return isSpanish
-          ? `Llamada al Centro Regional (${rcName}):
+          ? `Llamada a ${rcName}:
 (Diga esto al departamento de admisiones)
 
-"Hola, mi nombre es ${parentName || '[Su Nombre]'}. Estoy llamando para solicitar una evaluación de admisión de la Ley Lanterman para mi hijo, ${childName}. Él tiene un diagnóstico de ${childConditions[0]?.name || 'un retraso del desarrollo'}. ¿Podría ponerme en contacto con el departamento de admisiones de la Ley Lanterman o con ${intakeContact} para iniciar el proceso?"`
-          : `Phone Call to Regional Center (${rcName}):
+"Hola, mi nombre es ${parentName || '[Su Nombre]'}. Estoy llamando para solicitar una evaluación de admisión de ${isCa ? 'la Ley Lanterman' : stateConfig?.catchmentName || 'servicios de discapacidad'} para mi hijo, ${childName}. Él tiene un diagnóstico de ${childConditions[0]?.name || 'un retraso del desarrollo'}. ¿Podría ponerme en contacto con el departamento de admisiones o con ${intakeContact} para iniciar el proceso?"`
+          : `Phone Call to ${rcName}:
 (Read this script to the receptionist or intake worker)
 
-"Hello, my name is ${parentName || '[Your Name]'}. I am calling to request a Lanterman Act eligibility intake and assessment for my child, ${childName}. They have a diagnosis of ${childConditions[0]?.name || 'developmental condition'} and we want to establish coordination of services. Can you connect me to ${intakeContact} in the Intake Unit please?"`;
+"Hello, my name is ${parentName || '[Your Name]'}. I am calling to request a ${isCa ? 'Lanterman Act' : stateConfig?.catchmentName || 'developmental eligibility'} intake and assessment for my child, ${childName}. They have a diagnosis of ${childConditions[0]?.name || 'developmental condition'} and we want to establish coordination of services. Can you connect me to ${intakeContact} in the Intake Unit please?"`;
       }
     } else if (topPriority.id === 'iep-safety') {
       if (messageType === 'email') {
@@ -463,7 +465,7 @@ Asunto: Solicitud de Reunión del IEP Escolar - Protocolos de Seguridad: ${child
 
 Estimado Equipo del IEP:
 
-Hoy ${todayStr}, solicito formalmente que se convoque a una reunión del IEP de manera oportuna para mi hijo, ${childName}, de conformidad con el Código de Educación de California. 
+Hoy ${todayStr}, solicito formalmente que se convoque a una reunión del IEP de manera oportuna para mi hijo, ${childName}, de conformidad con las leyes estatales aplicables de educación especial. 
 
 El propósito de la reunión es discutir y añadir protocolos específicos de prevención de fugas, metas de seguridad física y evaluación de apoyo de supervisión 1:1. Esto se debe a incidentes recientes fuera de la escuela y necesidades de seguridad de deambular que he documentado.
 
@@ -490,7 +492,7 @@ ${parentName || '[Your Name]'}`;
           ? `Llamada telefónica a la escuela o al distrito:
 "Hola, mi nombre es ${parentName || '[Su Nombre]'}. Soy el padre de ${childName}. Me gustaría hablar con el director de educación especial o el administrador de casos del IEP para solicitar formalmente una reunión del IEP para añadir un plan de seguridad contra fugas de emergencia para mi hijo. ¿Quién es la persona adecuada para enviarle este correo de solicitud por escrito?"`
           : `Phone Call to School Special Education Office:
-"Hello, my name is ${parentName || '[Your Name]'}. I am the parent of ${childName}. I need to request an IEP meeting to add safety accommodations and an elopement protocol for my child due to safety concerns. Who is the program specialist or program manager I should email to start the 30-day timeline for convening this meeting?"`;
+"Hello, my name is ${parentName || '[Your Name]'}. I am the parent of ${childName}. I need to request an IEP meeting to add safety accommodations and an elopement protocol for my child due to safety concerns. Who is the program specialist or program manager I should email to start the timeline for convening this meeting?"`;
       }
     } else {
       // Default / Inquiry Template
@@ -633,7 +635,7 @@ ${parentName || '[Your Name]'}`;
           {/* Program Status Badges Grid */}
           <div className="stat-grid-3 grid-col-lg-4">
             <div className="stat-box-small">
-              <span className="stat-box-label">IHSS</span>
+              <span className="stat-box-label">{stateConfig?.code === 'CA' ? 'IHSS' : stateConfig?.personalCareProgram || 'IHSS'}</span>
               <strong className="stat-box-val">
                 {ihssStatus === 'approved' ? '🟢 ' + (isSpanish ? 'Aprobado' : 'Approved') : 
                  ihssStatus === 'applied' ? '🔵 ' + (isSpanish ? 'Pendiente' : 'Pending') : 
@@ -641,8 +643,8 @@ ${parentName || '[Your Name]'}`;
               </strong>
             </div>
             <div className="stat-box-small">
-              <span className="stat-box-label">{isSpanish ? 'Centro Reg.' : 'Reg. Center'}</span>
-              <strong className="stat-box-val">
+              <span className="stat-box-label">{stateConfig?.code === 'CA' ? (isSpanish ? 'Centro Reg.' : 'Reg. Center') : stateConfig?.catchmentName || 'Agency'}</span>
+              <strong style={{ fontSize: '0.85rem' }} className="stat-box-val">
                 {rcStatus === 'approved' ? '🟢 ' + (isSpanish ? 'Aprobado' : 'Approved') : 
                  rcStatus === 'applied' ? '🔵 ' + (isSpanish ? 'Pendiente' : 'Pending') : 
                  rcStatus === 'denied' ? '🔴 ' + (isSpanish ? 'Denegado' : 'Denied') : '⚪ ' + (isSpanish ? 'Sin rastrear' : 'Untracked')}
@@ -1004,9 +1006,9 @@ ${parentName || '[Your Name]'}`;
           {/* Contact 1: Regional Center */}
           <div style={{ border: '1px solid var(--glass-border)', padding: '1.25rem', borderRadius: '16px', background: 'rgba(255,255,255,0.4)', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
             <span style={{ fontSize: '0.62rem', fontWeight: 700, color: 'var(--primary-color)', background: 'rgba(var(--primary-rgb), 0.1)', padding: '0.1rem 0.4rem', borderRadius: '4px', width: 'fit-content', textTransform: 'uppercase' }}>
-              {isSpanish ? 'Centro Regional' : 'Regional Center'}
+              {isCa ? (isSpanish ? 'Centro Regional' : 'Regional Center') : stateConfig?.catchmentName}
             </span>
-            {countyDetails?.regionalCenters?.map(rc => (
+            {(countyDetails?.regionalCenters && countyDetails.regionalCenters.length > 0) ? countyDetails.regionalCenters.map(rc => (
               <div key={rc.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
                 <strong style={{ fontSize: '0.9rem', color: 'var(--text-main)' }}>{rc.name}</strong>
                 <a href={rc.website} target="_blank" rel="noreferrer" style={{ fontSize: '0.78rem', color: 'var(--primary-color)', display: 'flex', alignItems: 'center', gap: '0.2rem', textDecoration: 'none' }}>
@@ -1016,15 +1018,23 @@ ${parentName || '[Your Name]'}`;
                   <Phone size={12} /> {isSpanish ? 'Admisión:' : 'Intake:'} {rc.intake_phone || rc.early_start_contact}
                 </div>
               </div>
-            )) || <p style={{ fontSize: '0.8rem', color: 'var(--text-light)', margin: 0 }}>{isSpanish ? 'No asignado' : 'Not assigned'}</p>}
+            )) : (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+                <strong style={{ fontSize: '0.9rem', color: 'var(--text-main)' }}>{stateConfig?.catchmentName}</strong>
+                <span style={{ fontSize: '0.78rem', color: 'var(--text-light)', display: 'block', lineHeight: 1.3 }}>{stateConfig?.catchmentDesc}</span>
+                <div style={{ fontSize: '0.78rem', color: 'var(--text-light)', fontWeight: 600 }}>
+                  {stateConfig?.ddAgency}
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Contact 2: IHSS County Office */}
           <div style={{ border: '1px solid var(--glass-border)', padding: '1.25rem', borderRadius: '16px', background: 'rgba(255,255,255,0.4)', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
             <span style={{ fontSize: '0.62rem', fontWeight: 700, color: '#d97706', background: 'rgba(245,158,11,0.1)', padding: '0.1rem 0.4rem', borderRadius: '4px', width: 'fit-content', textTransform: 'uppercase' }}>
-              {isSpanish ? 'Oficina IHSS' : 'County IHSS Office'}
+              {isCa ? (isSpanish ? 'Oficina IHSS' : 'County IHSS Office') : (isSpanish ? `Oficina de ${stateConfig?.personalCareProgram}` : `${stateConfig?.personalCareProgram} Office`)}
             </span>
-            {countyDetails?.countyOffices?.filter(o => o.program_id === 'ihss-for-children').slice(0, 1).map(office => (
+            {((countyDetails?.countyOffices?.filter(o => o.program_id === 'ihss-for-children') || []).length > 0) ? (countyDetails?.countyOffices || []).filter(o => o.program_id === 'ihss-for-children').slice(0, 1).map(office => (
               <div key={office.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
                 <strong style={{ fontSize: '0.9rem', color: 'var(--text-main)' }}>{office.office_name || (isSpanish ? 'Oficina del Seguro Social' : 'Social Services')}</strong>
                 <span style={{ fontSize: '0.78rem', color: 'var(--text-light)', display: 'block', lineHeight: 1.3 }}>{office.address}</span>
@@ -1032,7 +1042,15 @@ ${parentName || '[Your Name]'}`;
                   <Phone size={12} /> {office.phone}
                 </div>
               </div>
-            )) || <p style={{ fontSize: '0.8rem', color: 'var(--text-light)', margin: 0 }}>{isSpanish ? 'No disponible' : 'Not available'}</p>}
+            )) : (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+                <strong style={{ fontSize: '0.9rem', color: 'var(--text-main)' }}>{stateConfig?.personalCareProgram}</strong>
+                <span style={{ fontSize: '0.78rem', color: 'var(--text-light)', display: 'block', lineHeight: 1.3 }}>{stateConfig?.stateMedicaidAgency}</span>
+                <div style={{ fontSize: '0.78rem', color: 'var(--text-light)', fontWeight: 600 }}>
+                  {stateConfig?.medicaidName}
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Contact 3: School District Spec Ed */}
@@ -1264,8 +1282,8 @@ ${parentName || '[Your Name]'}`;
                     </h4>
                     <p style={{ fontSize: '0.78rem', color: 'var(--text-main)', lineHeight: 1.4, margin: 0 }}>
                       {isSpanish 
-                        ? 'Muchos médicos no comprenden el estándar legal de IHSS para menores. Este resumen proporciona pautas claras para rellenar los formularios estatales SOC 821 y SOC 873, enfatizando que el niño requiere de monitoreo continuo debido a discapacidades mentales cognitivas en lugar de necesidades de desarrollo típicas de su edad.'
-                        : 'Doctors frequently fill out physician forms incorrectly by stating a child needs typical age-appropriate care. This briefing sheet explicitly instructs the physician on how to detail safety demands under California DSS regulations (such as documenting cognitive non-self-direction).'}
+                        ? `Muchos médicos no comprenden el estándar legal de ${stateConfig?.personalCareProgram || 'IHSS'} para menores. Este resumen proporciona pautas claras para rellenar los formularios estatales, enfatizando que el niño requiere de monitoreo continuo debido a discapacidades mentales cognitivas en lugar de necesidades de desarrollo típicas de su edad.`
+                        : `Doctors frequently fill out physician forms incorrectly by stating a child needs typical age-appropriate care. This briefing sheet explicitly instructs the physician on how to detail safety demands under ${stateConfig?.name || 'California'} regulations (such as documenting cognitive non-self-direction).`}
                     </p>
                   </div>
 
@@ -1282,7 +1300,7 @@ Paciente: ${childName} (F.Nac: ${currentChild.dob})
 
 Estimado Doctor,
 
-Le solicito amablemente su ayuda para completar el formulario SOC 821 (Supervisión Protectora) o el formulario SOC 873 (Certificación Médica) de IHSS. Al evaluar a mi hijo, tenga en cuenta los siguientes estándares de DSS de California:
+Le solicito amablemente su ayuda para completar el formulario de certificación médica de ${stateConfig?.personalCareProgram || 'IHSS'}. Al evaluar a mi hijo, tenga en cuenta los siguientes estándares de ${stateConfig?.name || 'California'}:
 1. El estándar clave para menores es que el niño requiera significativamente más supervisión activa que un niño de desarrollo típico de su misma edad debido a una incapacidad mental o física severa.
 2. Por favor, especifique en sus notas si el niño es de "Dirección No Propia" (Non-Self-Directing), lo que significa que no puede anticipar los peligros de los autos, el fuego, o la ingestión de materiales tóxicos de forma independiente.
 3. Se adjunta nuestro registro de incidentes de seguridad que muestra las amenazas de lesiones prevenidas.`
@@ -1293,7 +1311,7 @@ Subject: Medical Certification Parameters for ${childName} (DOB: ${currentChild.
 
 Dear Doctor,
 
-I am requesting your completion of state forms SOC 821 (Protective Supervision) or SOC 873 (Medical Certification) for my child. Please note the clinical definitions mandated by the California Department of Social Services (DSS):
+I am requesting your completion of medical certification forms for ${stateConfig?.personalCareProgram || 'IHSS'} for my child. Please note the clinical definitions mandated by ${stateConfig?.name || 'California'} regulations:
 - Minor Standard: The child must require more active supervision than a typically developing child of the same age due to severe mental impairment.
 - Non-Self-Direction: The physician must verify if the child is "non-self-directing." This means they cannot independently recognize, evaluate, and avoid danger (e.g. running into traffic, eating dangerous objects).
 - Clinical details: Please document specific medical or behavioral indicators (such as Autism, Cerebral Palsy, or Down Syndrome cognitive constraints) that cause this deficit.`}
@@ -1394,7 +1412,7 @@ I am requesting your completion of state forms SOC 821 (Protective Supervision) 
                   <div style={{ background: '#fff', border: '1px solid #ddd', padding: '2rem', height: '400px', overflowY: 'scroll', fontSize: '0.78rem', fontFamily: 'serif' }}>
                     <div style={{ textAlign: 'center', borderBottom: '2px solid #000', paddingBottom: '1rem', marginBottom: '1.5rem' }}>
                       <h2 style={{ margin: 0, fontSize: '1.25rem', fontWeight: 700 }}>EVIDENCE HANDOUT PACKET</h2>
-                      <span style={{ textTransform: 'uppercase', fontSize: '0.62rem' }}>State of California Disability Services Supporting Records</span>
+                      <span style={{ textTransform: 'uppercase', fontSize: '0.62rem' }}>State of ${stateConfig?.name || 'California'} Disability Services Supporting Records</span>
                     </div>
 
                     <h3 style={{ borderBottom: '1px solid #eee', paddingBottom: '0.2rem' }}>SECTION 1: CAREGIVER DECLARATION</h3>
@@ -1405,8 +1423,8 @@ I am requesting your completion of state forms SOC 821 (Protective Supervision) 
                     <p style={{ fontWeight: 'bold' }}>To: {doctorName || 'Dr. [Physician Name]'}</p>
                     <p style={{ whiteSpace: 'pre-wrap' }}>
                       {isSpanish 
-                        ? `Le solicito amablemente su ayuda para completar el formulario SOC 821 (Supervisión Protectora) o el formulario SOC 873 (Certificación Médica) de IHSS. Al evaluar a mi hijo, tenga en cuenta que requiere significativamente más supervisión activa que un niño de desarrollo típico de su misma edad debido a una incapacidad mental o física severa.`
-                        : `Please review these instructions when completing Form SOC 821 (Protective Supervision) or SOC 873 (Medical Certification). Note that the child requires MORE supervision than a typically developing child of the same age due to mental impairment. They must indicate whether the child's behaviors are 'non-self-directing', meaning they cannot navigate hazards or self-correct in dangerous situations.`}
+                        ? `Le solicito amablemente su ayuda para completar el formulario de certificación médica de ${stateConfig?.personalCareProgram || 'IHSS'}. Al evaluar a mi hijo, tenga en cuenta que requiere significativamente más supervisión activa que un niño de desarrollo típico de su misma edad debido a una incapacidad mental o física severa.`
+                        : `Please review these instructions when completing the medical certification forms for ${stateConfig?.personalCareProgram || 'IHSS'}. Note that the child requires MORE supervision than a typically developing child of the same age due to mental impairment. They must indicate whether the child's behaviors are 'non-self-directing', meaning they cannot navigate hazards or self-correct in dangerous situations.`}
                     </p>
 
                     <div style={{ pageBreakBefore: 'always', marginTop: '2rem' }}></div>
@@ -1509,7 +1527,7 @@ I am requesting your completion of state forms SOC 821 (Protective Supervision) 
                   </tr>
                   <tr>
                     <td style={{ border: 'none', padding: '6px', fontWeight: 'bold' }}>Jurisdiction County:</td>
-                    <td style={{ border: 'none', padding: '6px' }}>{activeCounty?.name || 'California County'}</td>
+                    <td style={{ border: 'none', padding: '6px' }}>{activeCounty?.name ? `${activeCounty.name} County, ${stateConfig?.name}` : `${stateConfig?.name || 'California'} County`}</td>
                   </tr>
                   <tr>
                     <td style={{ border: 'none', padding: '6px', fontWeight: 'bold' }}>Conditions:</td>
@@ -1541,15 +1559,15 @@ I am requesting your completion of state forms SOC 821 (Protective Supervision) 
             </h2>
             <div style={{ marginTop: '1.5rem', fontSize: '11pt', lineHeight: 1.6 }}>
               <p><strong>To:</strong> {doctorName || 'Dr. [Physician Name]'}</p>
-              <p><strong>Subject:</strong> Form SOC 821 (Protective Supervision) / Form SOC 873 (Medical Certification) Guidelines</p>
+              <p><strong>Subject:</strong> {stateConfig?.personalCareProgram || 'IHSS'} Medical Certification Guidelines</p>
               <hr style={{ border: 'none', borderTop: '1px solid #ccc', margin: '1rem 0' }} />
               
               <p>Dear Doctor,</p>
               <p>
-                In order for the county to authorize protective hours for a minor child under California Welfare and Institutions Code Section 12300, the medical record must reflect the child&apos;s specific safety monitoring needs.
+                In order for the county to authorize protective hours for a minor child under ${stateConfig?.name || 'California'} Medicaid and personal care program regulations, the medical record must reflect the child&apos;s specific safety monitoring needs.
               </p>
               <p>
-                Please ensure that your medical records and state forms SOC 821 or SOC 873 address the following criteria:
+                Please ensure that your medical records and state medical certification forms address the following criteria:
               </p>
               <ol style={{ paddingLeft: '1.5rem' }}>
                 <li style={{ marginBottom: '0.75rem' }}>

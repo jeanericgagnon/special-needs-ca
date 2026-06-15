@@ -15,7 +15,8 @@ export default function WaiverVaultPanel() {
     setActiveTab, 
     parentName,
     setParentName, 
-    setChildName 
+    setChildName,
+    stateConfig
   } = useChildProfile();
 
   const [waiverList, setWaiverList] = useState<ChildWaiver[]>(savedWaivers);
@@ -80,32 +81,42 @@ export default function WaiverVaultPanel() {
 
   const handleSimulateOcr = () => {
     setUploadingWaiver(true);
+    const isTx = stateConfig?.code === 'TX';
+    const isFl = stateConfig?.code === 'FL';
+    const isCa = stateConfig?.code === 'CA';
+    const stateName = stateConfig?.name || 'California';
+    const catchment = stateConfig?.catchmentName || 'Regional Center';
+    const waiverProg = stateConfig?.waiverProgram || 'HCBS DD Waiver';
+    const medicaid = stateConfig?.medicaidName || 'Medi-Cal';
+    const ddAgencyName = stateConfig?.ddAgency || 'Department of Developmental Services';
+
     setTimeout(() => {
       setUploadingWaiver(false);
       if (waiverType === 'hcbs-dd-waiver') {
-        setWaiverName(currentChild.nickname + " - HCBS DD Waiver Authorization");
+        setWaiverName(`${currentChild.nickname} - ${waiverProg} Authorization`);
         setWaiverEffectiveDate("2026-06-01");
         setWaiverExpirationDate("2027-05-31");
         setWaiverHours(32);
-        setCustomOcrText("State of California - Department of Developmental Services\nHOME AND COMMUNITY-BASED SERVICES (HCBS) WAIVER PROGRAM\nIndividual Program Plan (IPP) Authorization Record\nClient Nickname: " + currentChild.nickname + "\nStatus: Active / Certified\nAuthorized Respite Hours: 32 Hours per Month\nVendor Service Code: 862 (Respite Care Agency)\nApproval Authority: Lanterman Regional Center\nAuthorized Period: 06/01/2026 to 05/31/2027");
+        setCustomOcrText(`State of ${stateName} - ${ddAgencyName}\nHOME AND COMMUNITY-BASED SERVICES WAIVER PROGRAM\nIndividual Support Plan Authorization Record\nClient Nickname: ${currentChild.nickname}\nStatus: Active / Certified\nAuthorized Respite Hours: 32 Hours per Month\nApproval Authority: ${catchment}\nAuthorized Period: 06/01/2026 to 05/31/2027`);
       } else if (waiverType === 'institutional-deeming') {
-        setWaiverName(currentChild.nickname + " - Medi-Cal Institutional Deeming Waiver");
+        setWaiverName(`${currentChild.nickname} - ${medicaid} Institutional Deeming Waiver`);
         setWaiverEffectiveDate("2026-03-15");
         setWaiverExpirationDate("2027-03-14");
         setWaiverHours(0);
-        setCustomOcrText("DHCS - California Department of Health Care Services\nMEDI-CAL HOME AND COMMUNITY-BASED SERVICES WAIVER\nINSTITUTIONAL DEEMING ELIGIBILITY WORK SHEET (SOC 812 / 813)\nClient Name: " + currentChild.nickname + "\nCounty Code: " + currentChild.county_id + "\nEligible Status: Waiver Group B Certification\nParental Income Deeming: EXEMPT (Deemed eligible based on child's disability status)\nValidity: 03/15/2026 - 03/14/2027");
+        setCustomOcrText(`State Medicaid Agency - ${stateName}\nHOME AND COMMUNITY-BASED SERVICES WAIVER\nINSTITUTIONAL DEEMING ELIGIBILITY WORK SHEET\nClient Name: ${currentChild.nickname}\nEligible Status: Waiver Group B Certification / Deeming Eligibility\nParental Income Deeming: EXEMPT (Deemed eligible based on child's disability status)\nValidity: 03/15/2026 - 03/14/2027`);
       } else if (waiverType === 'ccs-authorization') {
-        setWaiverName(currentChild.nickname + " - CCS Authorization Service Letter");
+        const progName = isCa ? 'California Children\'s Services (CCS)' : isTx ? 'Texas STAR Kids Pediatric Program' : isFl ? 'Florida Children\'s Medical Services (CMS)' : 'State Children\'s Services';
+        setWaiverName(`${currentChild.nickname} - ${progName} Authorization`);
         setWaiverEffectiveDate("2026-04-01");
         setWaiverExpirationDate("2026-09-30");
         setWaiverHours(48);
-        setCustomOcrText("California Children's Services (CCS) Program\nSERVICE AUTHORIZATION REQUEST (SAR) DECISION NOTICE\nRecipient Name: " + currentChild.nickname + "\nAuthorized Services: Occupational Therapy (12 sessions), Physical Therapy (36 hours)\nFacility Provider ID: CCS-PROV-9014\nAuthorized Dates: 04/01/2026 to 09/30/2026");
+        setCustomOcrText(`${progName} Program\nSERVICE AUTHORIZATION REQUEST DECISION NOTICE\nRecipient Name: ${currentChild.nickname}\nAuthorized Services: Occupational Therapy (12 sessions), Physical Therapy (36 hours)\nAuthorized Dates: 04/01/2026 to 09/30/2026`);
       } else {
-        setWaiverName(currentChild.nickname + " - Public Benefit Waiver Document");
+        setWaiverName(`${currentChild.nickname} - Public Benefit Waiver Document`);
         setWaiverEffectiveDate("2026-01-01");
         setWaiverExpirationDate("2026-12-31");
         setWaiverHours(0);
-        setCustomOcrText("Disability Advocacy Services of California\nRECORD OF DISABILITY CERTIFICATION / ACCOMMODATION PLAN\nName: " + currentChild.nickname + "\nAuthorized Benefits: County Respite Care Allowance\nPeriod: Calendar Year 2026");
+        setCustomOcrText(`Disability Advocacy Services of ${stateName}\nRECORD OF DISABILITY CERTIFICATION / ACCOMMODATION PLAN\nName: ${currentChild.nickname}\nAuthorized Benefits: State Respite Care Allowance\nPeriod: Calendar Year 2026`);
       }
       setOcrPreview(true);
     }, 2000);
@@ -140,9 +151,9 @@ export default function WaiverVaultPanel() {
               onChange={(e) => setWaiverType(e.target.value)}
               style={{ width: '100%', padding: '0.6rem', borderRadius: '8px', border: '1px solid rgba(0,0,0,0.1)', background: '#fff' }}
             >
-              <option value="hcbs-dd-waiver">HCBS DD Waiver (Regional Center)</option>
-              <option value="institutional-deeming">Medi-Cal Institutional Deeming Waiver (Waiver Group B)</option>
-              <option value="ccs-authorization">CCS Service Authorization Request (SAR)</option>
+              <option value="hcbs-dd-waiver">{stateConfig?.waiverProgram || 'HCBS DD Waiver'} ({stateConfig?.catchmentName || 'Regional Center'})</option>
+              <option value="institutional-deeming">{stateConfig?.medicaidName || 'Medi-Cal'} Institutional Deeming Waiver</option>
+              <option value="ccs-authorization">{stateConfig?.code === 'CA' ? 'CCS Service Authorization Request (SAR)' : stateConfig?.code === 'TX' ? 'STAR Kids Service Authorization' : stateConfig?.code === 'FL' ? 'CMS Plan Service Authorization' : 'Children\'s Services Service Authorization'}</option>
               <option value="other">Other Public Benefit / Authorization Document</option>
             </select>
           </div>
@@ -308,9 +319,9 @@ export default function WaiverVaultPanel() {
                           <strong style={{ fontSize: '0.9rem', color: 'var(--text-main)' }}>{waiver.document_name}</strong>
                           <div style={{ display: 'flex', gap: '0.4rem', marginTop: '0.2rem', flexWrap: 'wrap' }}>
                             <span style={{ fontSize: '0.68rem', padding: '0.1rem 0.4rem', borderRadius: '4px', background: 'rgba(var(--primary-rgb), 0.08)', color: 'var(--primary-color)', fontWeight: 600 }}>
-                              {waiver.waiver_type === 'hcbs-dd-waiver' ? 'HCBS DD Waiver' : 
+                              {waiver.waiver_type === 'hcbs-dd-waiver' ? (stateConfig?.waiverProgram || 'HCBS DD Waiver') : 
                                waiver.waiver_type === 'institutional-deeming' ? 'Institutional Deeming' :
-                               waiver.waiver_type === 'ccs-authorization' ? 'CCS Auth' : 'Benefit Document'}
+                               waiver.waiver_type === 'ccs-authorization' ? (stateConfig?.code === 'CA' ? 'CCS Auth' : stateConfig?.code === 'TX' ? 'STAR Kids' : stateConfig?.code === 'FL' ? 'CMS' : 'Children\'s Auth') : 'Benefit Document'}
                             </span>
                             {waiver.authorized_hours ? (
                               <span style={{ fontSize: '0.68rem', padding: '0.1rem 0.4rem', borderRadius: '4px', background: '#eefcf5', color: '#10b981', fontWeight: 600 }}>
@@ -383,7 +394,7 @@ export default function WaiverVaultPanel() {
           
           {/* Legal Disclaimer Footnote */}
           <div style={{ marginTop: '2rem', padding: '1.25rem', borderTop: '1px dashed rgba(0,0,0,0.08)', fontSize: '0.78rem', color: 'var(--text-light)', lineHeight: 1.4 }}>
-            <strong>Legal & Estimates Disclaimer:</strong> All estimated care hours, respite allocations, and eligibility statements are based on typical California program parameters and are not guaranteed. Actual program eligibility, parental income deeming exemptions, and care hour authorizations are determined solely by county social workers (for IHSS), regional center caseworkers (for HCBS/institutional deeming), and CCS administrators. This tool does not provide legal or medical advice.
+            <strong>Legal & Estimates Disclaimer:</strong> All estimated care hours, respite allocations, and eligibility statements are based on typical ${stateConfig?.name || 'state'} program parameters and are not guaranteed. Actual program eligibility, parental income deeming exemptions, and care hour authorizations are determined solely by county/state social workers (for ${stateConfig?.personalCareProgram || 'personal care'}), local agency caseworkers (for ${stateConfig?.waiverProgram || 'waiver'}/institutional deeming), and pediatric program administrators. This tool does not provide legal or medical advice.
           </div>
         </div>
       </div>

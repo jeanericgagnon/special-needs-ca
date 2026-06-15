@@ -32,7 +32,7 @@ interface RespiteCalculatorProps {
 }
 
 export default function RespiteCalculator({ isSpanish = false }: RespiteCalculatorProps) {
-  const { currentChild, savedRespiteData } = useChildProfile();
+  const { currentChild, savedRespiteData, stateConfig } = useChildProfile();
 
   const [sdpSubTab, setSdpSubTab] = useState<'respite' | 'sdp' | 'eligibility'>('respite');
 
@@ -273,10 +273,25 @@ export default function RespiteCalculator({ isSpanish = false }: RespiteCalculat
     behavior: behaviorScore
   });
 
-  const customSubject = `Request for IPP Review / Addition of In-Home Respite Services - ${currentChild.nickname}`;
-  const customBody = `Dear Coordinator,
+  const customSubject = isSpanish
+    ? `Solicitud de revisión del Plan de Servicios / Adición de Servicios de Respiro - ${currentChild.nickname}`
+    : `Request for Service Plan Review / Addition of In-Home Respite Services - ${currentChild.nickname}`;
 
-I hope this email finds you well. I am writing to formally request an Individual Program Plan (IPP) review meeting to request In-Home Respite Services (Service Code 862 / 896) for my child, ${currentChild.nickname} (DOB: ${currentChild.dob || 'N/A'}).
+  const customBody = isSpanish
+    ? `Estimado Coordinador,
+
+Espero que este correo se encuentre bien. Le escribo para solicitar formalmente una reunión de revisión de nuestro plan de servicios para solicitar Servicios de Respiro en el Hogar para mi hijo, ${currentChild.nickname} (Fecha de nacimiento: ${currentChild.dob || 'N/A'}).
+
+Durante los últimos meses, las demandas de cuidado de ${currentChild.nickname} han aumentado significativamente, superando con creces los requisitos de cuidado de un niño neurotípico de la misma edad:
+${justificationText}
+
+La adición de horas de Respiro en el Hogar es fundamental para prevenir el agotamiento del cuidador, mantener la estabilidad familiar y garantizar la seguridad de ${currentChild.nickname} en nuestro hogar. Con base en nuestros parámetros de cuidado calculados, solicitamos una asignación de ${respiteResults.suggestedHours}.
+
+Atentamente,
+Padre Cuidador`
+    : `Dear Coordinator,
+
+I hope this email finds you well. I am writing to formally request a service plan review meeting to request In-Home Respite Services for my child, ${currentChild.nickname} (DOB: ${currentChild.dob || 'N/A'}).
 
 Over the past several months, the care demands for ${currentChild.nickname} have increased significantly, far exceeding the care requirements of a neurotypical child of the same age:
 ${justificationText}
@@ -343,41 +358,57 @@ Caregiver Parent`;
     if (!isRcClient) {
       if (hasMedicalNeeds) {
         return {
-          path: 'Home & Community-Based Alternatives (HCBA) Waiver Pathway',
-          desc: 'Your child does not receive Regional Center services, but has complex medical/nursing needs. They are a strong candidate for the California HCBA Waiver (nursing level of care). This waiver completely bypasses parental income, giving the child full Medi-Cal.',
-          action: 'Contact a local HCBA Waiver agency (e.g. Libertana, Partners in Care) in your county to request an intake assessment.'
+          path: isSpanish ? `Vía del Programa de Exención de Alternativas en el Hogar` : `Home & Community-Based Waiver Pathway`,
+          desc: isSpanish
+            ? `Su hijo no recibe servicios de ${stateConfig.catchmentName}, pero tiene necesidades médicas/de enfermería complejas. Es un fuerte candidato para la Exención de base médica de ${stateConfig.name}. Esto evita por completo los límites de ingresos parentales.`
+            : `Your child does not receive ${stateConfig.catchmentName} services, but has complex medical/nursing needs. They are a strong candidate for ${stateConfig.name}'s medical-based waiver program. This waiver completely bypasses parental income, giving the child full ${stateConfig.medicaidName}.`,
+          action: isSpanish
+            ? `Comuníquese con una agencia local de exenciones de salud en su condado para solicitar una evaluación.`
+            : `Contact a local Medicaid waiver agency in your county to request an intake assessment.`
         };
       }
       return {
-        path: 'Regional Center (Lanterman Act) Intake Pathway',
-        desc: 'Institutional Deeming is primarily processed for active Regional Center clients. To qualify, your child must establish Lanterman Act eligibility.',
-        action: 'Request an intake assessment at your county\'s Regional Center.'
+        path: isSpanish ? `Vía de Admisión de ${stateConfig.catchmentName}` : `${stateConfig.catchmentName} Intake Pathway`,
+        desc: isSpanish
+          ? `La exención de ingresos parentales se procesa principalmente para clientes activos de ${stateConfig.catchmentName}.`
+          : `Parental income deeming waivers are primarily processed for active ${stateConfig.catchmentName} clients. To qualify, your child must establish eligibility.`,
+        action: isSpanish
+          ? `Solicite una evaluación de admisión en su ${stateConfig.catchmentName} local.`
+          : `Request an intake assessment at your local ${stateConfig.catchmentName}.`
       };
     }
 
     if (majorLimitations >= 3 && hasDiagnosis) {
       return {
-        path: 'Lanterman Medicaid HCBS Waiver (Institutional Deeming)',
-        desc: 'Based on your child\'s active Regional Center status and functional limitations in 3+ major life activities, they are highly eligible for the Lanterman Medicaid Waiver. Parental income is 100% bypassed, granting the child full Medi-Cal regardless of your family earnings.',
-        action: 'Email your Service Coordinator directly and request the Medicaid Waiver Deeming packet. Once approved, the child qualifies for full Medi-Cal with zero parent premium copays.'
+        path: isSpanish ? `Exención de Medicaid (Exención de Ingresos Parentales)` : `${stateConfig.name} Medicaid Waiver (Parental Deeming)`,
+        desc: isSpanish
+          ? `Según el estado activo de su hijo en ${stateConfig.catchmentName} y limitaciones funcionales, es altamente elegible para la exención de Medicaid de ${stateConfig.name}. Los ingresos parentales se omiten al 100%, otorgando al niño cobertura completa.`
+          : `Based on your child's active ${stateConfig.catchmentName} status and functional limitations, they are highly eligible for the ${stateConfig.name} Medicaid Waiver. Parental income is 100% bypassed, granting the child full ${stateConfig.medicaidName} regardless of your family earnings.`,
+        action: isSpanish
+          ? `Envíe un correo electrónico a su coordinador de servicios directamente y solicite el paquete de exención de Medicaid.`
+          : `Email your Service Coordinator directly and request the Medicaid Waiver Deeming packet. Once approved, the child qualifies for full ${stateConfig.medicaidName} with zero parent premium copays.`
       };
     }
 
     return {
-      path: 'Regional Center Reassessment Pathway',
-      desc: 'Institutional Deeming requires the client to meet Intermediate Care Facility (ICF-DD) criteria, which includes functional limitations in at least 3 of 7 major life activities (self-care, communication, learning, mobility, self-direction, capacity for independent living, economic self-sufficiency).',
-      action: 'Request an IPP meeting with your coordinator to discuss your child\'s escalating limitations in communication, self-care, or safety supervision.'
+      path: isSpanish ? `Vía de Reevaluación de ${stateConfig.catchmentName}` : `${stateConfig.catchmentName} Reassessment Pathway`,
+      desc: isSpanish
+        ? `La exención de ingresos parentales requiere que el cliente cumpla con los criterios de nivel de cuidado institucional o intermedio, lo que incluye limitaciones funcionales significativas.`
+        : `Medicaid deeming requires the client to meet specific care criteria, which includes significant functional limitations in major life activities.`,
+      action: isSpanish
+        ? `Solicite una reunión de planificación de servicios con su coordinador para discutir las limitaciones de su hijo.`
+        : `Request a service planning meeting with your coordinator to discuss your child's escalating limitations.`
     };
   };
 
   const compileDeemingLetter = () => {
-    return `Subject: Request for Medicaid Waiver (Institutional Deeming) Enrollment - ${currentChild.nickname}
+    return `Subject: Request for Medicaid Waiver (Parental Income Deeming) Enrollment - ${currentChild.nickname}
 
 Dear Coordinator,
 
-I hope this email finds you well. I am writing to request that the Regional Center initiate the process to enroll my child, ${currentChild.nickname} (DOB: ${currentChild.dob || 'N/A'}), in the Lanterman Medicaid Waiver (Institutional Deeming).
+I hope this email finds you well. I am writing to request that the agency initiate the process to enroll my child, ${currentChild.nickname} (DOB: ${currentChild.dob || 'N/A'}), in the ${stateConfig.name} Medicaid Waiver (Parental Deeming).
 
-As a Regional Center client, ${currentChild.nickname} exhibits significant functional limitations in three or more major life activities. Enrollment in this waiver is crucial for our family as it bypasses parental income limitations, granting ${currentChild.nickname} eligibility for Medi-Cal.
+As a client of ${stateConfig.catchmentName}, ${currentChild.nickname} exhibits significant functional limitations. Enrollment in this waiver is crucial for our family as it bypasses parental income limitations, granting ${currentChild.nickname} eligibility for ${stateConfig.medicaidName}.
 
 Thank you,
 Caregiver Parent`;
@@ -386,24 +417,36 @@ Caregiver Parent`;
   const getWealthRecommendation = () => {
     if (fundingSource === 'child-injury') {
       return {
-        title: 'First-Party Special Needs Trust (SNT) with optional CalABLE wrapper',
-        desc: 'Since funds belong directly to the child (e.g. lawsuit settlement or direct inheritance), a First-Party SNT is legally mandated to protect benefits. You can transfer up to $18,000 annually from the trust into a CalABLE account to facilitate tax-free daily spending without trustee signatures.',
-        recoveryNote: 'Note: First-Party SNTs require a Medicaid state-recovery provision upon the beneficiary\'s passing.'
+        title: isSpanish ? `Fideicomiso de Necesidades Especiales de Primer Tercero con envoltura opcional de ${stateConfig.ableProgram}` : `First-Party Special Needs Trust (SNT) with optional ${stateConfig.ableProgram} wrapper`,
+        desc: isSpanish
+          ? `Dado que los fondos pertenecen directamente al niño, se requiere legalmente un SNT de primer tercero para proteger los beneficios. Puede transferir hasta $18,000 anuales del fideicomiso a una cuenta ${stateConfig.ableProgram} para facilitar los gastos diarios libres de impuestos.`
+          : `Since funds belong directly to the child (e.g. lawsuit settlement or direct inheritance), a First-Party SNT is legally mandated to protect benefits. You can transfer up to $18,000 annually from the trust into an ${stateConfig.ableProgram} account to facilitate tax-free daily spending without trustee signatures.`,
+        recoveryNote: isSpanish
+          ? `Nota: Los SNT de primer tercero requieren una disposición de recuperación estatal de Medicaid tras el fallecimiento.`
+          : `Note: First-Party SNTs require a Medicaid state-recovery provision upon the beneficiary's passing.`
       };
     }
 
     if (expectedBalance === 'high' || fundingSource === 'inheritance') {
       return {
-        title: 'Third-Party Special Needs Trust (Master Trust) + CalABLE account combination',
-        desc: 'This is the gold-standard setup. For balances exceeding $100,000 or funds originating from extended family wills/wills, establish a Third-Party SNT. This protects the estate from Medicaid recovery. Supplement this by transferring funds into a CalABLE account for daily disability expenditures (QDEs) to maximize flexibility.',
-        recoveryNote: 'Third-Party SNTs have no Medicaid clawback provisions. Unused funds pass directly to secondary heirs.'
+        title: isSpanish ? `Combinación de Fideicomiso de Necesidades Especiales de Terceros + Cuenta ${stateConfig.ableProgram}` : `Third-Party Special Needs Trust + ${stateConfig.ableProgram} account combination`,
+        desc: isSpanish
+          ? `Para saldos que superen los $100,000 o fondos de testamentos familiares, establezca un SNT de terceros para proteger los activos de la recuperación de Medicaid, complementado con transferencias a una cuenta ${stateConfig.ableProgram} para gastos diarios.`
+          : `This is the gold-standard setup. For balances exceeding $100,000 or funds originating from family wills, establish a Third-Party SNT. This protects the estate from Medicaid recovery. Supplement this by transferring funds into an ${stateConfig.ableProgram} account for daily disability expenditures (QDEs) to maximize flexibility.`,
+        recoveryNote: isSpanish
+          ? `Los SNT de terceros no tienen disposiciones de recuperación de Medicaid.`
+          : `Third-Party SNTs have no Medicaid clawback provisions. Unused funds pass directly to secondary heirs.`
       };
     }
 
     return {
-      title: 'Direct CalABLE Account (Standalone)',
-      desc: 'For expected savings under $100,000 primarily funded by parents or wages, a CalABLE account is the most cost-effective and immediate tool. It takes 15 minutes to open online, carries minimal fees, and allows the child or parents to spend money directly using a debit card for Qualified Disability Expenses.',
-      recoveryNote: 'California has outlawed Medicaid estate recovery on CalABLE accounts for residents, making it highly safe.'
+      title: isSpanish ? `Cuenta Directa de ${stateConfig.ableProgram} (Independiente)` : `Direct ${stateConfig.ableProgram} Account (Standalone)`,
+      desc: isSpanish
+        ? `Para ahorros previstos menores de $100,000 financiado principalmente por los padres, una cuenta ${stateConfig.ableProgram} es la herramienta más rentable. Se abre en línea y permite gastar directamente para Gastos Calificados de Discapacidad (QDE).`
+        : `For expected savings under $100,000 primarily funded by parents or wages, an ${stateConfig.ableProgram} account is the most cost-effective and immediate tool. It takes 15 minutes to open online, carries minimal fees, and allows the child or parents to spend money directly using a debit card for Qualified Disability Expenses.`,
+      recoveryNote: isSpanish
+        ? `La mayoría de los estados no permiten la recuperación estatal de Medicaid en cuentas ABLE para residentes.`
+        : `Most states restrict or forbid Medicaid estate recovery on ABLE accounts for residents, making it highly safe.`
     };
   };
 
@@ -443,7 +486,7 @@ Caregiver Parent`;
             whiteSpace: 'nowrap'
           }}
         >
-          SDP Budget Planner
+          {stateConfig.code === 'CA' ? 'SDP' : 'Self-Direction'} Budget Planner
         </button>
         <button
           onClick={() => setSdpSubTab('eligibility')}
@@ -560,14 +603,14 @@ Caregiver Parent`;
           <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
             <div className="glass-panel" style={{ padding: '2rem' }}>
               <h2 style={{ fontSize: '1.3rem', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem', borderBottom: '1px solid rgba(0,0,0,0.06)', paddingBottom: '0.5rem' }}>
-                <Calculator size={20} color="var(--primary-color)" /> SDP Individual Budget Formulation
+                <Calculator size={20} color="var(--primary-color)" /> {stateConfig.code === 'CA' ? 'SDP' : 'Self-Direction'} Individual Budget Formulation
               </h2>
               
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 150px', gap: '1rem', alignItems: 'center' }}>
                   <div>
                     <strong style={{ display: 'block', fontSize: '0.9rem' }}>Prior 12-Month POS Expenditures</strong>
-                    <span style={{ fontSize: '0.78rem', color: 'var(--text-light)' }}>Total spent by Regional Center on services under traditional model.</span>
+                    <span style={{ fontSize: '0.78rem', color: 'var(--text-light)' }}>Total spent by {stateConfig.catchmentName} on services under traditional model.</span>
                   </div>
                   <input
                     type="number"
@@ -706,7 +749,7 @@ Caregiver Parent`;
             {/* proposed spending plan */}
             <div className="glass-panel" style={{ padding: '2rem' }}>
               <h2 style={{ fontSize: '1.3rem', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem', borderBottom: '1px solid rgba(0,0,0,0.06)', paddingBottom: '0.5rem' }}>
-                <Sparkles size={20} color="var(--primary-color)" /> Proposed SDP Spending Plan
+                <Sparkles size={20} color="var(--primary-color)" /> Proposed {stateConfig.code === 'CA' ? 'SDP' : 'Self-Direction'} Spending Plan
               </h2>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                 <div>
@@ -768,7 +811,7 @@ Caregiver Parent`;
               return (
                 <>
                   <div className="glass-panel" style={{ border: `2px solid ${isOverBudget ? '#ef4444' : 'var(--primary-color)'}`, padding: '1.25rem' }}>
-                    <span style={{ fontSize: '0.7rem', fontWeight: 700, color: isOverBudget ? '#ef4444' : 'var(--primary-color)', textTransform: 'uppercase' }}>SDP Budget Summary</span>
+                    <span style={{ fontSize: '0.7rem', fontWeight: 700, color: isOverBudget ? '#ef4444' : 'var(--primary-color)', textTransform: 'uppercase' }}>{stateConfig.code === 'CA' ? 'SDP' : 'Self-Direction'} Budget Summary</span>
                     <h3 style={{ fontSize: '1.15rem', fontWeight: 700, marginTop: '0.2rem', marginBottom: '0.75rem' }}>Target IB: ${calculatedIB.toLocaleString()}</h3>
                     
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.8rem', margin: '0.5rem 0 1rem 0' }}>
@@ -910,7 +953,7 @@ Caregiver Parent`;
                 <span style={{ color: exceedsSsiLimit ? '#ef4444' : '#10b981', fontWeight: 700 }}>{exceedsSsiLimit ? 'Exceeded ($2k limit)' : 'Safe'}</span>
               </div>
               <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                <span>CalABLE Protected:</span>
+                <span>{stateConfig.ableProgram} Protected:</span>
                 <span style={{ color: exceedsCalableSsiLimit ? '#f59e0b' : '#10b981', fontWeight: 700 }}>{exceedsCalableSsiLimit ? 'SSI Suspended' : 'Shielded'}</span>
               </div>
             </div>

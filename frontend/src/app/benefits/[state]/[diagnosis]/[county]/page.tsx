@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `/benefits/${stateId}/${p.diagnosis}/${p.county}`
     },
-    ...((stateId === 'california' && !isHighFidelity) || !['california', 'texas', 'florida', 'pennsylvania', 'new-york', 'ohio', 'illinois', 'georgia'].includes(stateId) ? { robots: { index: false } } : {})
+    ...((stateId === 'california' && !isHighFidelity) || !['california', 'texas', 'florida', 'pennsylvania', 'new-york', 'ohio', 'illinois', 'georgia', 'maryland', 'utah', 'new-mexico', 'oregon', 'washington', 'idaho', 'south-carolina', 'north-dakota', 'west-virginia', 'montana', 'colorado', 'louisiana', 'south-dakota', 'alabama', 'wisconsin', 'arkansas', 'oklahoma', 'north-carolina', 'mississippi', 'michigan', 'minnesota', 'indiana', 'nebraska', 'tennessee', 'virginia', 'arizona', 'alaska', 'connecticut', 'delaware', 'hawaii', 'iowa', 'kansas', 'kentucky', 'maine', 'massachusetts', 'missouri', 'nevada', 'new-hampshire', 'new-jersey', 'rhode-island', 'vermont', 'wyoming'].includes(stateId) ? { robots: { index: false } } : {})
   };
 }
 

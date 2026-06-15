@@ -13,7 +13,7 @@ interface CaregiverSupportPanelProps {
 }
 
 export default function CaregiverSupportPanel({ isSpanish = false }: CaregiverSupportPanelProps) {
-  const { currentChild } = useChildProfile();
+  const { currentChild, stateConfig } = useChildProfile();
   
   // Self-Care Log State (weekly checkmarks for Mon-Sun)
   const [selfCareDays, setSelfCareDays] = useState<Record<string, boolean>>({
@@ -54,7 +54,7 @@ export default function CaregiverSupportPanel({ isSpanish = false }: CaregiverSu
     saveSelfCareLogAction(currentChild.id, updated);
   };
 
-  if (!currentChild) return null;
+  if (!currentChild || !stateConfig) return null;
 
   // Calculate stress score (0 to 4)
   const stressScore = [q1, q2, q3, q4].filter(Boolean).length;
@@ -63,34 +63,94 @@ export default function CaregiverSupportPanel({ isSpanish = false }: CaregiverSu
     if (isSpanish) {
       if (stressScore === 0) return 'Estrés bajo. ¡Excelente! Siga cuidando de sí mismo.';
       if (stressScore <= 2) return 'Estrés moderado. Considere programar tiempo de descanso semanal y explorar el apoyo de pares.';
-      return 'Estrés alto detectado. Le recomendamos contactar a su Coordinador de Servicios de Centro Regional para solicitar "Horas de Respiro por Crisis" (Crisis Respite) o llamar a una línea de apoyo para cuidadores.';
+      return `Estrés alto detectado. Le recomendamos contactar a su Coordinador de Servicios de ${stateConfig.catchmentName} para solicitar respiro por crisis o llamar a una línea de apoyo para cuidadores.`;
     } else {
       if (stressScore === 0) return 'Low stress level. Great job prioritizing balance!';
       if (stressScore <= 2) return 'Moderate stress level. Consider setting aside weekly self-care hours and connecting with local support groups.';
-      return 'High caregiver burnout risk. We highly recommend asking your Regional Center Service Coordinator for "Crisis Respite" hours or contacting California support hotlines.';
+      return `High caregiver burnout risk. We highly recommend asking your ${stateConfig.catchmentName} Service Coordinator for crisis respite hours or contacting caregiver support hotlines.`;
     }
   };
+
+  const hotlines = [
+    {
+      title: isSpanish ? 'Línea de Crisis y Apoyo (988)' : '988 Suicide & Crisis Lifeline',
+      desc: isSpanish ? 'Llamada o mensaje de texto gratuito las 24 horas para apoyo confidencial.' : 'Call or text 988. Free, confidential support available 24/7.',
+      num: '988'
+    }
+  ];
+
+  if (stateConfig.code === 'CA') {
+    hotlines.push({
+      title: isSpanish ? 'Línea de Apoyo CalHOPE (Warmline)' : 'CalHOPE Support Warmline',
+      desc: isSpanish ? 'Apoyo emocional no urgente y recursos de salud mental: (833) 317-4673.' : 'Peer-run warmline offering emotional support and resource routing: (833) 317-4673.',
+      num: '(833) 317-4673'
+    });
+    hotlines.push({
+      title: isSpanish ? 'Línea para Padres de California' : 'California Parent Youth Helpline',
+      desc: isSpanish ? 'Asesoramiento gratuito para padres en tiempos de estrés: (855) 427-2736.' : 'Free, confidential support and counseling for parenting stress: (855) 427-2736.',
+      num: '(855) 427-2736'
+    });
+  } else if (stateConfig.code === 'TX') {
+    hotlines.push({
+      title: isSpanish ? 'Línea de Apoyo de Texas Parent to Parent' : 'Texas Parent to Parent Support Line',
+      desc: isSpanish ? 'Apoyo emocional y de recursos entre padres en Texas: (866) 896-2727.' : 'Texas parent-to-parent peer emotional support and routing: (866) 896-2727.',
+      num: '(866) 896-2727'
+    });
+    hotlines.push({
+      title: isSpanish ? 'Línea Nacional de Ayuda para Padres' : 'National Parent Helpline',
+      desc: isSpanish ? 'Línea de ayuda nacional de apoyo emocional para padres: (855) 427-2736.' : 'National helpline offering parent emotional support: (855) 427-2736.',
+      num: '(855) 427-2736'
+    });
+  } else if (stateConfig.code === 'FL') {
+    hotlines.push({
+      title: isSpanish ? 'Red de Familias con Discapacidades (FND)' : 'FND Family Support Line',
+      desc: isSpanish ? 'Apoyo familiar de Florida y red de recursos: (800) 825-5736.' : 'Florida exceptional family helpline and resource network: (800) 825-5736.',
+      num: '(800) 825-5736'
+    });
+    hotlines.push({
+      title: isSpanish ? 'Línea Nacional de Ayuda para Padres' : 'National Parent Helpline',
+      desc: isSpanish ? 'Línea de ayuda nacional de apoyo emocional para padres: (855) 427-2736.' : 'National helpline offering parent emotional support: (855) 427-2736.',
+      num: '(855) 427-2736'
+    });
+  } else {
+    hotlines.push({
+      title: isSpanish ? 'Línea de Ayuda NAMI' : 'NAMI HelpLine',
+      desc: isSpanish ? 'Alianza Nacional de Enfermedades Mentales: (800) 950-6264.' : 'National Alliance on Mental Illness support warmline: (800) 950-6264.',
+      num: '(800) 950-6264'
+    });
+    hotlines.push({
+      title: isSpanish ? 'Línea Nacional de Ayuda para Padres' : 'National Parent Helpline',
+      desc: isSpanish ? 'Apoyo emocional confidencial y gratuito para padres: (855) 427-2736.' : 'Free, confidential parent support and counseling line: (855) 427-2736.',
+      num: '(855) 427-2736'
+    });
+  }
 
   // Translations
   const t = {
     title: isSpanish ? 'Centro de Bienestar del Cuidador' : 'Caregiver Wellness & Support Hub',
     subtitle: isSpanish 
       ? 'El cuidado de un hijo con necesidades especiales puede generar agotamiento (burnout). Acceda a recursos de salud mental y registre su propio cuidado.'
-      : 'Prioritize your mental health. Track daily self-care goals, assess caregiver burnout risks, and connect directly with California support systems.',
+      : 'Prioritize your mental health. Track daily self-care goals, assess caregiver burnout risks, and connect directly with support networks.',
     
     directoriesTitle: isSpanish ? 'Directorios de Apoyo y Crisis' : 'Hotlines & Support Directories',
     hotline1: isSpanish ? 'Línea de Crisis y Apoyo (988)' : '988 Suicide & Crisis Lifeline',
     hotline1Desc: isSpanish ? 'Llamada o mensaje de texto gratuito las 24 horas para apoyo confidencial.' : 'Call or text 988. Free, confidential support available 24/7.',
-    hotline2: isSpanish ? 'Línea de Apoyo CalHOPE (Warmline)' : 'CalHOPE Support Warmline',
-    hotline2Desc: isSpanish ? 'Apoyo emocional no urgente y recursos de salud mental: (833) 317-4673.' : 'Peer-run warmline offering emotional support and resource routing: (833) 317-4673.',
-    hotline3: isSpanish ? 'Línea para Padres de California' : 'California Parent Youth Helpline',
-    hotline3Desc: isSpanish ? 'Asesoramiento gratuito para padres en tiempos de estrés: (855) 427-2736.' : 'Free, confidential support and counseling for parenting stress: (855) 427-2736.',
+    hotline2: isSpanish ? 'Línea de Apoyo de Pares' : 'Peer Support Warmline',
+    hotline2Desc: isSpanish ? 'Apoyo emocional no urgente y recursos locales.' : 'Warmline offering peer emotional support and resource routing.',
+    hotline3: isSpanish ? 'Línea de Ayuda para Padres' : 'Parent Support Helpline',
+    hotline3Desc: isSpanish ? 'Asesoramiento gratuito para padres en tiempos de estrés.' : 'Free, confidential support and counseling for parenting stress.',
 
-    respiteTitle: isSpanish ? 'Respiro por Crisis del Centro Regional' : 'Regional Center Crisis Respite',
+    respiteTitle: isSpanish ? `Respiro por Crisis de ${stateConfig.catchmentName}` : `${stateConfig.catchmentName} Crisis Respite`,
     respiteDesc: isSpanish 
-      ? 'Si enfrenta emergencias médicas o agotamiento extremo, tiene derecho a solicitar horas de Respiro por Crisis (Crisis Respite) a su Coordinador de Servicios de inmediato. No requiere una revisión anual del IPP.'
-      : 'Under Lanterman Act guidelines, if you face medical emergencies or extreme caregiver exhaustion, you have the right to request immediate "Crisis Respite" hours from your Service Coordinator.',
-    respiteCit: 'W&I Code § 4685',
+      ? `Si enfrenta emergencias médicas o agotamiento extremo, tiene derecho a solicitar horas de Respiro por Crisis (Crisis Respite) a su Coordinador de Servicios de ${stateConfig.catchmentName} de inmediato.`
+      : `Under ${stateConfig.name} guidelines, if you face medical emergencies or extreme caregiver exhaustion, you have the right to request immediate "Crisis Respite" hours from your ${stateConfig.catchmentName} Service Coordinator.`,
+    respiteCit: stateConfig.code === 'CA' 
+      ? 'California Welfare & Institutions Code § 4685' 
+      : stateConfig.code === 'TX' 
+      ? 'Texas Administrative Code Title 26 § 263.203' 
+      : stateConfig.code === 'FL' 
+      ? 'Florida Administrative Code Rule 65G-4.017' 
+      : 'State Medicaid Waiver Guidelines',
 
     selfcareTitle: isSpanish ? 'Registro Semanal de Autocuidado' : 'Weekly Self-Care Activity Log',
     selfcareSubtitle: isSpanish 
@@ -112,10 +172,10 @@ export default function CaregiverSupportPanel({ isSpanish = false }: CaregiverSu
     q1Text: isSpanish ? '¿Se siente abrumado o agotado físicamente la mayor parte del tiempo?' : 'Feel overwhelmed or physically exhausted most days?',
     q2Text: isSpanish ? '¿Tiene problemas para dormir debido a la ansiedad sobre las necesidades de su hijo?' : 'Experience sleep disruption due to worry over your child\'s schedule?',
     q3Text: isSpanish ? '¿Siente que carece de tiempo libre o está aislado socialmente?' : 'Feel isolated from social networks or short on leisure time?',
-    q4Text: isSpanish ? '¿Siente un estrés significativo al coordinar terapias, IEPs y citas?' : 'Suffer significant anxiety managing IEPs, IHSS paperwork, or medical audits?',
+    q4Text: isSpanish ? `¿Siente un estrés significativo al coordinar terapias, IEPs y papeleo de ${stateConfig.personalCareProgram}?` : `Suffer significant anxiety managing IEPs, ${stateConfig.personalCareProgram} paperwork, or medical audits?`,
     scoreTitle: isSpanish ? 'Nivel de Estrés:' : 'Burnout Risk Score:',
     scoreEx: isSpanish ? 'de 4 respuestas afirmativas' : 'of 4 positive answers',
-    fcaLink: isSpanish ? 'Visite Family Caregiver Alliance (CA)' : 'Explore Family Caregiver Alliance (CA)',
+    fcaLink: isSpanish ? 'Visite Family Caregiver Alliance' : 'Explore Family Caregiver Alliance',
     statTip: isSpanish 
       ? 'Consejo de salud mental: Los cuidadores de niños con discapacidades tienen un riesgo 3 veces mayor de sufrir depresión. Priorizar el autocuidado no es un lujo, es una necesidad clínica.'
       : 'Mental Health Guideline: Parent caregivers of children with intellectual or developmental delays experience chronic caregiver burden comparable to combat veterans. Securing respite is an essential health intervention.'
@@ -147,11 +207,7 @@ export default function CaregiverSupportPanel({ isSpanish = false }: CaregiverSu
 
           {/* Hotline List */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-            {[
-              { title: t.hotline1, desc: t.hotline1Desc, num: '988' },
-              { title: t.hotline2, desc: t.hotline2Desc, num: '(833) 317-4673' },
-              { title: t.hotline3, desc: t.hotline3Desc, num: '(855) 427-2736' }
-            ].map((hotline, idx) => (
+            {hotlines.map((hotline, idx) => (
               <div 
                 key={idx} 
                 style={{ 
@@ -191,7 +247,7 @@ export default function CaregiverSupportPanel({ isSpanish = false }: CaregiverSu
             </p>
             <div style={{ display: 'flex', gap: '0.3rem', alignItems: 'center', fontSize: '0.72rem', color: 'var(--primary-color)', fontWeight: 600, marginTop: '0.5rem' }}>
               <Landmark size={12} />
-              <span>California Welfare & Institutions Code § 4685</span>
+              <span>{t.respiteCit}</span>
             </div>
           </div>
 

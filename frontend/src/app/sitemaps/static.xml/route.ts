@@ -98,7 +98,85 @@ export async function GET() {
     { loc: '/counties/arkansas', changefreq: 'weekly', priority: '0.85', lastmod: today },
     // Oklahoma
     { loc: '/benefits/oklahoma', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/oklahoma', changefreq: 'weekly', priority: '0.85', lastmod: today }
+    { loc: '/counties/oklahoma', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Wave 4 states:
+    // North Carolina
+    { loc: '/benefits/north-carolina', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/north-carolina', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Mississippi
+    { loc: '/benefits/mississippi', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/mississippi', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Michigan
+    { loc: '/benefits/michigan', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/michigan', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Minnesota
+    { loc: '/benefits/minnesota', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/minnesota', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Wave 5 states:
+    // Indiana
+    { loc: '/benefits/indiana', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/indiana', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Nebraska
+    { loc: '/benefits/nebraska', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/nebraska', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Tennessee
+    { loc: '/benefits/tennessee', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/tennessee', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Virginia
+    { loc: '/benefits/virginia', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/virginia', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Wave 6 states:
+    // Arizona
+    { loc: '/benefits/arizona', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/arizona', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Alaska
+    { loc: '/benefits/alaska', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/alaska', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Connecticut
+    { loc: '/benefits/connecticut', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/connecticut', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Delaware
+    { loc: '/benefits/delaware', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/delaware', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Hawaii
+    { loc: '/benefits/hawaii', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/hawaii', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Iowa
+    { loc: '/benefits/iowa', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/iowa', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Kansas
+    { loc: '/benefits/kansas', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/kansas', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Kentucky
+    { loc: '/benefits/kentucky', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/kentucky', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Maine
+    { loc: '/benefits/maine', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/maine', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Massachusetts
+    { loc: '/benefits/massachusetts', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/massachusetts', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Missouri
+    { loc: '/benefits/missouri', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/missouri', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Nevada
+    { loc: '/benefits/nevada', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/nevada', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // New Hampshire
+    { loc: '/benefits/new-hampshire', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/new-hampshire', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // New Jersey
+    { loc: '/benefits/new-jersey', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/new-jersey', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Rhode Island
+    { loc: '/benefits/rhode-island', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/rhode-island', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Vermont
+    { loc: '/benefits/vermont', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/vermont', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Wyoming
+    { loc: '/benefits/wyoming', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/wyoming', changefreq: 'weekly', priority: '0.85', lastmod: today }
   ];
 
   const xmlUrls = staticUrls.map(url => `  <url>

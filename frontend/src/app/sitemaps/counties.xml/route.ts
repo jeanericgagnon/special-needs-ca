@@ -168,7 +168,7 @@ export async function GET() {
 
       diagnosesSlugs.forEach(diag => {
         // Do not index Texas (or other non-California) county x diagnosis pages yet
-        if (!['california', 'texas', 'florida', 'pennsylvania', 'new-york', 'ohio', 'illinois', 'georgia', 'maryland', 'utah', 'new-mexico', 'oregon', 'washington', 'idaho', 'south-carolina', 'north-dakota', 'west-virginia', 'montana', 'colorado', 'louisiana', 'south-dakota', 'alabama', 'wisconsin', 'arkansas', 'oklahoma'].includes(stateId)) return;
+        if (!['california', 'texas', 'florida', 'pennsylvania', 'new-york', 'ohio', 'illinois', 'georgia', 'maryland', 'utah', 'new-mexico', 'oregon', 'washington', 'idaho', 'south-carolina', 'north-dakota', 'west-virginia', 'montana', 'colorado', 'louisiana', 'south-dakota', 'alabama', 'wisconsin', 'arkansas', 'oklahoma', 'north-carolina', 'mississippi', 'michigan', 'minnesota', 'indiana', 'nebraska', 'tennessee', 'virginia', 'arizona', 'alaska', 'connecticut', 'delaware', 'hawaii', 'iowa', 'kansas', 'kentucky', 'maine', 'massachusetts', 'missouri', 'nevada', 'new-hampshire', 'new-jersey', 'rhode-island', 'vermont', 'wyoming'].includes(stateId)) return;
 
         // Quality Gate: Check at least one source-backed program match exists
         const matchingPrograms = diagnosisProgramsMap.get(diag) || [];

@@ -8,6 +8,7 @@ import {
 } from 'lucide-react';
 import { searchArticlesAction } from '../child-actions';
 import type { KnowledgeArticle } from '@/lib/db';
+import { useChildProfile } from './ChildProfileContext';
 
 interface GuideStep {
   title: string;
@@ -28,11 +29,28 @@ interface KnowledgeBasePanelProps {
 }
 
 export default function KnowledgeBasePanel({ isSpanish = false }: KnowledgeBasePanelProps) {
+  const { stateConfig } = useChildProfile();
   const [activeGuideId, setActiveGuideId] = useState<string | null>(null);
   const [expandedStep, setExpandedStep] = useState<number | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [articles, setArticles] = useState<KnowledgeArticle[]>([]);
   const [loading, setLoading] = useState(true);
+
+  const pandaName = stateConfig?.code === 'CA' 
+    ? 'Disability Rights California' 
+    : stateConfig?.code === 'TX' 
+    ? 'Disability Rights Texas' 
+    : stateConfig?.code === 'FL' 
+    ? 'Disability Rights Florida' 
+    : 'National Disability Rights Network';
+
+  const pandaUrl = stateConfig?.code === 'CA' 
+    ? 'https://www.disabilityrightsca.org' 
+    : stateConfig?.code === 'TX' 
+    ? 'https://www.disabilityrightstx.org' 
+    : stateConfig?.code === 'FL' 
+    ? 'https://www.disabilityrightsflorida.org' 
+    : 'https://www.ndrn.org';
 
   // Dynamic fetch & search from database
   useEffect(() => {
@@ -84,8 +102,8 @@ export default function KnowledgeBasePanel({ isSpanish = false }: KnowledgeBaseP
             </h3>
             <p style={{ color: 'var(--text-light)', fontSize: '0.9rem', marginBottom: '1.25rem' }}>
               {isSpanish 
-                ? 'Guías paso a paso para navegar los sistemas de apoyo para necesidades especiales en California, redactadas en un lenguaje claro y fundamentadas en la ley.'
-                : 'Step-by-step guides on navigating California\'s special needs support systems — written in plain language, backed by law.'}
+                ? `Guías paso a paso para navegar los sistemas de apoyo para necesidades especiales en ${stateConfig?.name || 'su estado'}, redactadas en un lenguaje claro y fundamentadas en la ley.`
+                : `Step-by-step guides on navigating ${stateConfig?.name || 'state'} special needs support systems — written in plain language, backed by law.`}
             </p>
 
             {/* Search */}
@@ -204,9 +222,9 @@ export default function KnowledgeBasePanel({ isSpanish = false }: KnowledgeBaseP
             <p style={{ fontSize: '0.8rem', color: 'var(--text-light)', margin: 0, lineHeight: 1.5 }}>
               <strong style={{ color: 'var(--text-main)' }}>{isSpanish ? 'Aviso Legal:' : 'Legal Disclaimer:'}</strong>{' '}
               {isSpanish 
-                ? 'Estas guías proporcionan información general sobre la educación especial de California y la ley de beneficios por discapacidad. No constituyen asesoría legal. Para su situación específica, consulte con un abogado de educación especial con licencia en California o con un defensor certificado. Los recursos legales gratuitos incluyen '
-                : 'These guides provide general information about California special education and disability benefits law. They do not constitute legal advice. For your specific situation, consult a licensed California special education attorney or Board Certified advocate. Free legal resources include '}
-              <a href="https://www.disabilityrightsca.org" target="_blank" rel="noopener noreferrer" style={{ color: '#6366f1' }}>Disability Rights California</a> {isSpanish ? ' y ' : ' and ' }
+                ? `Estas guías proporcionan información general sobre la educación especial de ${stateConfig?.name || 'su estado'} y la ley de beneficios por discapacidad. No constituyen asesoría legal. Para su situación específica, consulte con un abogado de educación especial con licencia o con un defensor certificado. Los recursos legales gratuitos incluyen `
+                : `These guides provide general information about ${stateConfig?.name || 'state'} special education and disability benefits law. They do not constitute legal advice. For your specific situation, consult a licensed special education attorney or advocate. Free legal resources include `}
+              <a href={pandaUrl} target="_blank" rel="noopener noreferrer" style={{ color: '#6366f1' }}>{pandaName}</a> {isSpanish ? ' y ' : ' and ' }
               <a href="https://www.copaa.org" target="_blank" rel="noopener noreferrer" style={{ color: '#6366f1' }}>COPAA</a>.
             </p>
           </div>
@@ -337,7 +355,7 @@ export default function KnowledgeBasePanel({ isSpanish = false }: KnowledgeBaseP
             </button>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.8rem', color: 'var(--text-light)' }}>
               <CheckCircle2 size={14} color="#10b981" />
-              {isSpanish ? 'Revisado de acuerdo con la ley de California a partir de 2025' : 'Reviewed against California law as of 2025'}
+              {isSpanish ? `Revisado de acuerdo con las pautas de ${stateConfig?.name || 'su estado'} a partir de 2025` : `Reviewed against ${stateConfig?.name || 'state'} guidelines as of 2025`}
             </div>
           </div>
         </div>

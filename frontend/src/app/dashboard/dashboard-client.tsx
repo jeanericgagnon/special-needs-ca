@@ -61,6 +61,7 @@ import InboxPanel from './components/InboxPanel';
 import ShareSettingsWidget from './components/ShareSettingsWidget';
 import { sanitizeText } from '@/lib/storage-helper';
 import { TrustBadge } from '@/app/counties/components/CorrectionFlow';
+import { stateConfigs } from '@/lib/stateConfigs';
 
 interface DashboardClientProps {
   counties: County[];
@@ -137,7 +138,8 @@ function DashboardInnerClient() {
     activeTab,
     setActiveTab,
     isSpanish,
-    setIsSpanish
+    setIsSpanish,
+    stateConfig
   } = useChildProfile();
 
   const [editingChild, setEditingChild] = useState<ChildProfile | null>(null);
@@ -235,6 +237,12 @@ function DashboardInnerClient() {
     return savedChecklist.some(c => c.document_name === docName && c.program_id === progId && c.is_collected === 1);
   };
 
+  const parseDays = (daysStr: string | undefined, defaultDays: number): number => {
+    if (!daysStr) return defaultDays;
+    const match = daysStr.match(/(\d+)/);
+    return match ? parseInt(match[1]) : defaultDays;
+  };
+
   const getMilestones = (): MilestoneInfo[] => {
     if (!submissionDate) return [];
     const sub = new Date(submissionDate + 'T00:00:00');
@@ -253,16 +261,23 @@ function DashboardInnerClient() {
     const today = new Date();
     today.setHours(0, 0, 0, 0);
 
+    const childCounty = counties.find(c => c.id === currentChild?.county_id);
+    const childStateId = childCounty?.state_id || 'california';
+    const stateConfig = stateConfigs[childStateId] || stateConfigs['california'];
+
     if (timelineTemplate === 'iep') {
-      const planDue = addDays(sub, 15);
+      const planDays = parseDays(stateConfig.timelineDaysPlan, 15);
+      const meetingDays = parseDays(stateConfig.timelineDaysMeeting, 60);
+
+      const planDue = addDays(sub, planDays);
       const daysToPlan = Math.ceil((planDue.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
       
       let meetingDue: Date;
       if (iepAssessmentSignedDate) {
         const signed = new Date(iepAssessmentSignedDate + 'T00:00:00');
-        meetingDue = addDays(signed, 60);
+        meetingDue = addDays(signed, meetingDays);
       } else {
-        meetingDue = addDays(sub, 75);
+        meetingDue = addDays(sub, planDays + meetingDays);
       }
       const daysToMeeting = Math.ceil((meetingDue.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
 
@@ -270,22 +285,22 @@ function DashboardInnerClient() {
         {
           id: 'iep-plan',
           title: 'Assessment Plan Provided by District',
-          citation: 'CA Ed Code § 56321',
+          citation: stateConfig.timelinesCode || 'IDEA Federal Guidelines',
           dueDate: formatDate(planDue),
           daysRemaining: daysToPlan,
           breachType: 'iep-15-day',
           stage: 1,
-          description: 'The school district must provide a proposed Assessment Plan to the parent within 15 calendar days of the initial written referral.'
+          description: `The school district must provide a proposed Assessment Plan to the parent within ${stateConfig.timelineDaysPlan || '15 calendar days'} of the initial written referral.`
         },
         {
           id: 'iep-meeting',
           title: 'IEP Assessment Complete & Meeting Held',
-          citation: 'CA Ed Code § 56344(a)',
+          citation: stateConfig.timelinesCode || 'IDEA Federal Guidelines',
           dueDate: formatDate(meetingDue),
           daysRemaining: daysToMeeting,
           breachType: 'iep-60-day',
           stage: 2,
-          description: 'The district must complete the assessments and hold the IEP team eligibility/placement meeting within 60 calendar days of receiving the signed Assessment Plan.'
+          description: `The district must complete the assessments and hold the IEP team eligibility/placement meeting within ${stateConfig.timelineDaysMeeting || '60 calendar days'} of receiving the signed Assessment Plan.`
         }
       ];
     } else if (timelineTemplate === 'rc') {
@@ -295,42 +310,47 @@ function DashboardInnerClient() {
       const eligibilityDue = addDays(sub, 120);
       const daysToElig = Math.ceil((eligibilityDue.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
 
+      const rcCitation1 = stateConfig.code === 'CA' ? 'Welfare & Institutions Code § 4642(a)' : stateConfig.code === 'TX' ? 'Texas Health & Safety Code § 533A.035' : 'State Guidelines';
+      const rcCitation2 = stateConfig.code === 'CA' ? 'Welfare & Institutions Code § 4642 & 4646' : stateConfig.code === 'TX' ? 'Texas Health & Safety Code § 533A.035' : 'State Guidelines';
+
       return [
         {
           id: 'rc-intake',
           title: 'Initial Intake Interview Completed',
-          citation: 'Welfare & Institutions Code § 4642(a)',
+          citation: rcCitation1,
           dueDate: formatDate(intakeDue),
           daysRemaining: daysToIntake,
           breachType: 'rc-15-day',
           stage: 1,
-          description: 'Regional Center intake and assessment services must be initiated/performed within 15 consecutive days of the initial request.'
+          description: `${stateConfig.catchmentName || 'Intake Agency'} intake and assessment services must be initiated within 15 consecutive days of the initial request.`
         },
         {
           id: 'rc-eligibility',
-          title: 'Eligibility Determined & IPP Held',
-          citation: 'Welfare & Institutions Code § 4642 & 4646',
+          title: 'Eligibility Determined & Service Plan Held',
+          citation: rcCitation2,
           dueDate: formatDate(eligibilityDue),
           daysRemaining: daysToElig,
           breachType: 'rc-120-day',
           stage: 2,
-          description: 'The Regional Center has a maximum of 120 days from the initial request to finalize eligibility determination and hold the IPP meeting.'
+          description: `The ${stateConfig.catchmentName || 'Intake Agency'} has a maximum of 120 days from the initial request to finalize eligibility determination and hold the service plan meeting.`
         }
       ];
     } else {
       const visitDue = addDays(sub, 30);
       const daysToVisit = Math.ceil((visitDue.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
 
+      const pcaCitation = stateConfig.code === 'CA' ? 'CDSS MPP § 30-759.2' : stateConfig.code === 'TX' ? 'Texas Medicaid PCS Guidelines' : stateConfig.code === 'FL' ? 'Florida Medicaid PCA Guidelines' : 'State Medicaid Rules';
+
       return [
         {
           id: 'ihss-decision',
-          title: 'County In-Home Assessment & Decision',
-          citation: 'CDSS MPP § 30-759.2',
+          title: `${stateConfig.personalCareProgram || 'Personal Care'} Assessment & Decision`,
+          citation: pcaCitation,
           dueDate: formatDate(visitDue),
           daysRemaining: daysToVisit,
           breachType: 'ihss-30-day',
           stage: 1,
-          description: 'The county welfare department has a maximum of 30 calendar days from the date of application (or SOC 873 medical form receipt) to perform the home visit and issue an eligibility determination.'
+          description: `The local social services or Medicaid department has a maximum of 30 calendar days from the date of application to perform the home visit and issue an eligibility determination for ${stateConfig.personalCareProgram || 'personal care services'}.`
         }
       ];
     }
@@ -346,6 +366,9 @@ function DashboardInnerClient() {
     const rcName = countyDetails?.regionalCenters?.[0]?.name || '[Regional Center Name]';
     const daysOverdue = Math.abs(milestone.daysRemaining);
 
+    const childStateId = childCounty?.state_id || 'california';
+    const stateConfig = stateConfigs[childStateId] || stateConfigs['california'];
+
     const formattedSubDate = submissionDate ? new Date(submissionDate + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : '[Submission Date]';
     const formattedDueDate = milestone.dueDate ? new Date(milestone.dueDate + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : '[Due Date]';
 
@@ -355,7 +378,7 @@ function DashboardInnerClient() {
 
 To: Director of Special Education / IEP Coordinator
 ${districtName}
-${countyName} County, CA
+${countyName} County, ${stateConfig.code || 'CA'}
 
 Date: ${todayStr}
 
@@ -363,7 +386,7 @@ Dear Special Education Administrator,
 
 I am writing to follow up on the written referral for a special education assessment for my child, ${currentChild.nickname} (DOB: ${dobStr}), which was submitted to the district on ${formattedSubDate}.
 
-Under California Education Code Section 56321, the school district is required to provide parents with a proposed Assessment Plan within 15 calendar days of receiving a written referral. 
+Under ${stateConfig.timelinesCode || 'state education guidelines'}, the school district is required to provide parents with a proposed Assessment Plan within ${stateConfig.timelineDaysPlan || '15 calendar days'} of receiving a written referral. 
 
 As of today, ${todayStr}, it has been ${daysOverdue} days since my request, and the statutory deadline of ${formattedDueDate} has passed. I have not yet received the proposed Assessment Plan.
 
@@ -381,7 +404,7 @@ Sincerely,
 
 To: IEP Coordinator / Case Manager
 ${districtName}
-${countyName} County, CA
+${countyName} County, ${stateConfig.code || 'CA'}
 
 Date: ${todayStr}
 
@@ -389,9 +412,9 @@ Dear IEP Coordinator,
 
 I am writing to formally request the immediate scheduling of an IEP meeting for my child, ${currentChild.nickname} (DOB: ${dobStr}).
 
-On ${formattedSignedDate}, I returned the signed Assessment Plan consenting to special education evaluations. According to California Education Code Section 56344(a), the school district must complete all assessments and hold an IEP team meeting to determine eligibility and placement within 60 calendar days of receiving the signed consent.
+On ${formattedSignedDate}, I returned the signed Assessment Plan consenting to special education evaluations. According to ${stateConfig.timelinesCode || 'state education guidelines'}, the school district must complete all assessments and hold an IEP team meeting to determine eligibility and placement within ${stateConfig.timelineDaysMeeting || '60 calendar days'} of receiving the signed consent.
 
-The 60-day statutory deadline was ${formattedDueDate}. Today is ${todayStr} (which is ${daysOverdue} days past the deadline), and an IEP meeting has not yet been scheduled or held.
+The statutory deadline was ${formattedDueDate}. Today is ${todayStr} (which is ${daysOverdue} days past the deadline), and an IEP meeting has not yet been scheduled or held.
 
 Please contact me immediately to schedule the IEP meeting.
 
@@ -402,7 +425,7 @@ Sincerely,
 [Parent Contact Info]`;
 
       case 'rc-15-day':
-        return `Subject: URGENT: Request for Intake Appointment - W&I Code § 4642 - ${currentChild.nickname}
+        return `Subject: URGENT: Request for Intake Appointment - ${stateConfig.catchmentName || 'Agency'} Services - ${currentChild.nickname}
 
 To: Intake Coordinator
 ${rcName}
@@ -411,9 +434,9 @@ Date: ${todayStr}
 
 Dear Intake Coordinator,
 
-I am writing to follow up on the request for Regional Center services for my child, ${currentChild.nickname} (DOB: ${dobStr}), submitted on ${formattedSubDate}.
+I am writing to follow up on the request for ${stateConfig.catchmentName || 'Agency'} services for my child, ${currentChild.nickname} (DOB: ${dobStr}), submitted on ${formattedSubDate}.
 
-Pursuant to California Welfare and Institutions Code Section 4642(a), intake and assessment services must be performed within 15 consecutive days of the initial request for services. 
+Pursuant to ${stateConfig.name} guidelines, intake and assessment services must be initiated within 15 days of the initial request for services. 
 
 The 15-day statutory deadline was ${formattedDueDate}. As of today, it has been ${daysOverdue} days since my request and the intake interview has not been completed.
 
@@ -426,22 +449,22 @@ Sincerely,
 [Parent Contact Info]`;
 
       case 'rc-120-day':
-        return `Subject: URGENT: Demand for Eligibility Decision and IPP - W&I Code § 4642 - ${currentChild.nickname}
+        return `Subject: URGENT: Demand for Eligibility Decision and Service Plan - ${stateConfig.catchmentName || 'Agency'} - ${currentChild.nickname}
 
 To: Executive Director / Case Manager Supervisor
 ${rcName}
 
 Date: ${todayStr}
 
-Dear Regional Center Director,
+Dear Director,
 
-I am writing to formally demand an eligibility determination and, if eligible, the immediate scheduling of an Individual Program Plan (IPP) meeting for my child, ${currentChild.nickname} (DOB: ${dobStr}).
+I am writing to formally demand an eligibility determination and, if eligible, the immediate scheduling of an initial services planning meeting for my child, ${currentChild.nickname} (DOB: ${dobStr}).
 
-My initial request for intake and eligibility determination was submitted to the Regional Center on ${formattedSubDate}. Under California Welfare and Institutions Code Sections 4642(a) and 4646, the Regional Center must determine eligibility and complete the IPP within 120 days of the initial request.
+My initial request for intake and eligibility determination was submitted on ${formattedSubDate}. Under ${stateConfig.name} guidelines, the ${stateConfig.catchmentName || 'Agency'} must determine eligibility and complete the initial service plan meeting within 120 days of the initial request.
 
-The 120-day statutory timeline expired on ${formattedDueDate}. Today is ${todayStr}, meaning the Regional Center is now ${daysOverdue} days out of compliance.
+The 120-day statutory timeline expired on ${formattedDueDate}. Today is ${todayStr}, meaning the agency is now ${daysOverdue} days out of compliance.
 
-Please contact me within 48 hours to confirm my child's eligibility status and schedule the IPP meeting.
+Please contact me within 48 hours to confirm my child's eligibility status and schedule the planning meeting.
 
 Sincerely,
 
@@ -450,18 +473,19 @@ Sincerely,
 [Parent Contact Info]`;
 
       case 'ihss-30-day':
-        return `Subject: URGENT: Demand for In-Home Assessment & Eligibility Decision - MPP § 30-759.2 - ${currentChild.nickname}
+        return `Subject: URGENT: Demand for In-Home Assessment & Eligibility Decision - ${stateConfig.personalCareProgram || 'Personal Care'} - ${currentChild.nickname}
 
-To: Social Services Supervisor
-County of ${countyName} Social Services Agency
+To: Program Supervisor
+County / Local Social Services Department
+${countyName} County, ${stateConfig.code || 'CA'}
 
 Date: ${todayStr}
 
-Dear IHSS Supervisor,
+Dear Supervisor,
 
-I am writing regarding the In-Home Supportive Services (IHSS) application for my child, ${currentChild.nickname} (DOB: ${dobStr}), submitted on ${formattedSubDate}.
+I am writing regarding the ${stateConfig.personalCareProgram || 'personal care services'} application for my child, ${currentChild.nickname} (DOB: ${dobStr}), submitted on ${formattedSubDate}.
 
-Under California Department of Social Services (CDSS) Manual of Policies and Procedures (MPP) Section 30-759.2, the county welfare department is required to perform the in-home assessment and issue a notice of action within 30 days of receiving the application or the completed medical certification.
+Under ${stateConfig.name} Medicaid regulations, the agency is required to perform the in-home assessment and issue an eligibility determination within 30 days of receiving the application.
 
 The 30-day regulatory deadline was ${formattedDueDate}. Today is ${todayStr}, and it has been ${daysOverdue} days since the request, but the assessment and eligibility determination have not been completed.
 
@@ -614,7 +638,7 @@ Sincerely,
               onClick={() => setActiveTab('dds')}
               style={{ background: 'none', border: 'none', borderBottom: activeTab === 'dds' ? '3px solid var(--primary-color)' : '3px solid transparent', padding: '1rem 0.5rem', fontSize: '1rem', fontWeight: 600, cursor: 'pointer', color: activeTab === 'dds' ? 'var(--primary-color)' : 'var(--text-light)', display: 'flex', alignItems: 'center', gap: '0.5rem', whiteSpace: 'nowrap' }}
             >
-              <Layers size={18} /> {isSpanish ? 'Respiro y DDS' : 'Respite & DDS'}
+              <Layers size={18} /> {isSpanish ? `Respiro y ${stateConfig.catchmentName === 'Regional Center' ? 'DDS' : stateConfig.catchmentName}` : `Respite & ${stateConfig.catchmentName === 'Regional Center' ? 'DDS' : stateConfig.catchmentName}`}
             </button>
             <button
               onClick={() => setActiveTab('actions')}
@@ -1089,15 +1113,15 @@ Sincerely,
                       Statutory Timeline & Milestone Tracker
                     </h3>
                     <p style={{ color: 'var(--text-light)', fontSize: '0.85rem', marginBottom: '1.5rem', lineHeight: 1.5 }}>
-                      Input the date you submitted formal requests to California agencies (IEP, Regional Center, or IHSS) to compute legally mandated response deadlines and download compliance letters.
+                      Input the date you submitted formal requests to {stateConfig.name} agencies (IEP, {stateConfig.catchmentName === 'Regional Center' ? 'Regional Center' : stateConfig.catchmentName}, or {stateConfig.personalCareProgram === 'IHSS Protective Supervision' ? 'IHSS' : stateConfig.personalCareProgram}) to compute legally mandated response deadlines and download compliance letters.
                     </p>
 
                     {/* Pathway Selection */}
                     <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.5rem', flexWrap: 'wrap' }}>
                       {[
-                        { id: 'iep' as const, label: 'School District IEP' },
-                        { id: 'rc' as const, label: 'Regional Center Lanterman' },
-                        { id: 'ihss' as const, label: 'County IHSS personal care' }
+                        { id: 'iep' as const, label: isSpanish ? 'IEP del Distrito Escolar' : 'School District IEP' },
+                        { id: 'rc' as const, label: isSpanish ? `${stateConfig.catchmentName}` : `${stateConfig.catchmentName} Services` },
+                        { id: 'ihss' as const, label: isSpanish ? `${stateConfig.personalCareProgram}` : `${stateConfig.personalCareProgram} Care` }
                       ].map(tab => (
                         <button
                           key={tab.id}
@@ -1129,9 +1153,9 @@ Sincerely,
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginBottom: '1.5rem' }}>
                       <div className="input-group" style={{ marginBottom: 0 }}>
                         <label style={{ fontSize: '0.75rem', fontWeight: 600, display: 'block', marginBottom: '0.3rem' }}>
-                          {timelineTemplate === 'iep' && 'IEP Referral Submission Date'}
-                          {timelineTemplate === 'rc' && 'Regional Center Request Date'}
-                          {timelineTemplate === 'ihss' && 'IHSS Application or SOC 873 Date'}
+                          {timelineTemplate === 'iep' && (isSpanish ? 'Fecha de Presentación del Referido IEP' : 'IEP Referral Submission Date')}
+                          {timelineTemplate === 'rc' && (isSpanish ? `Fecha de Solicitud de ${stateConfig.catchmentName}` : `${stateConfig.catchmentName} Request Date`)}
+                          {timelineTemplate === 'ihss' && (isSpanish ? `Fecha de Solicitud de ${stateConfig.personalCareProgram}` : `${stateConfig.personalCareProgram} Application Date`)}
                         </label>
                         <input
                           type="date"
