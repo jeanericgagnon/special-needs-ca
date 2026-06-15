@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import { SEO_CLUSTERS } from '@/lib/seo-data';
 
 export async function GET() {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://california-navigator.org';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ablefull.org';
   const today = '2026-05-31';
 
   const staticUrls = [
@@ -46,7 +46,59 @@ export async function GET() {
     { loc: '/counties/illinois', changefreq: 'weekly', priority: '0.85', lastmod: today },
     // Georgia
     { loc: '/benefits/georgia', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/georgia', changefreq: 'weekly', priority: '0.85', lastmod: today }
+    { loc: '/counties/georgia', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Maryland
+    { loc: '/benefits/maryland', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/maryland', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Utah
+    { loc: '/benefits/utah', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/utah', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // New Mexico
+    { loc: '/benefits/new-mexico', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/new-mexico', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Oregon
+    { loc: '/benefits/oregon', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/oregon', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Washington
+    { loc: '/benefits/washington', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/washington', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Idaho
+    { loc: '/benefits/idaho', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/idaho', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Wave 3 states:
+    // South Carolina
+    { loc: '/benefits/south-carolina', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/south-carolina', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // North Dakota
+    { loc: '/benefits/north-dakota', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/north-dakota', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // West Virginia
+    { loc: '/benefits/west-virginia', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/west-virginia', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Montana
+    { loc: '/benefits/montana', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/montana', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Colorado
+    { loc: '/benefits/colorado', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/colorado', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Louisiana
+    { loc: '/benefits/louisiana', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/louisiana', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // South Dakota
+    { loc: '/benefits/south-dakota', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/south-dakota', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Alabama
+    { loc: '/benefits/alabama', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/alabama', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Wisconsin
+    { loc: '/benefits/wisconsin', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/wisconsin', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Arkansas
+    { loc: '/benefits/arkansas', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/arkansas', changefreq: 'weekly', priority: '0.85', lastmod: today },
+    // Oklahoma
+    { loc: '/benefits/oklahoma', changefreq: 'weekly', priority: '0.9', lastmod: today },
+    { loc: '/counties/oklahoma', changefreq: 'weekly', priority: '0.85', lastmod: today }
   ];
 
   const xmlUrls = staticUrls.map(url => `  <url>

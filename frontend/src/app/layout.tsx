@@ -7,7 +7,7 @@ import { HeartHandshake, User, LayoutDashboard, Search, LogOut, BookOpen, MapPin
 import ThemeToggle from '@/components/theme-toggle';
 import "./globals.css";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://california-navigator.org';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://ablefull.org';
 
 export const metadata: Metadata = {
   title: {

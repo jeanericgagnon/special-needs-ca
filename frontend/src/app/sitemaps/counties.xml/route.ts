@@ -52,7 +52,7 @@ function passesCountyQualityGate(details: any): boolean {
 }
 
 export async function GET() {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://california-navigator.org';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ablefull.org';
   const today = '2026-06-08';
 
   let allCounties: County[] = [];
@@ -162,14 +162,13 @@ export async function GET() {
   // Only generated if SITEMAP_BATCH is 4 (county x diagnosis expansion)
   if (SITEMAP_BATCH >= 4) {
     counties.forEach(county => {
-      const countyDetails = countyDetailsMap.get(county.id);
-      if (!countyDetails) return;
-
       const stateId = county.state_id || 'california';
+      const countyDetails = countyDetailsMap.get(county.id);
+      if (stateId === 'california' && !countyDetails) return;
 
       diagnosesSlugs.forEach(diag => {
         // Do not index Texas (or other non-California) county x diagnosis pages yet
-        if (!['california', 'texas', 'florida', 'pennsylvania', 'new-york', 'ohio', 'illinois', 'georgia'].includes(stateId)) return;
+        if (!['california', 'texas', 'florida', 'pennsylvania', 'new-york', 'ohio', 'illinois', 'georgia', 'maryland', 'utah', 'new-mexico', 'oregon', 'washington', 'idaho', 'south-carolina', 'north-dakota', 'west-virginia', 'montana', 'colorado', 'louisiana', 'south-dakota', 'alabama', 'wisconsin', 'arkansas', 'oklahoma'].includes(stateId)) return;
 
         // Quality Gate: Check at least one source-backed program match exists
         const matchingPrograms = diagnosisProgramsMap.get(diag) || [];

@@ -110,7 +110,7 @@ test.describe('SEO Sitemap and Indexation E2E Tests', () => {
 
     // Canonical link
     const canonical = page.locator('link[rel="canonical"]');
-    await expect(canonical).toHaveAttribute('href', 'https://california-navigator.org/benefits/california/autism-spectrum-disorder/los-angeles');
+    await expect(canonical).toHaveAttribute('href', 'https://ablefull.org/benefits/california/autism-spectrum-disorder/los-angeles');
 
     // Freshness disclosure
     const freshness = page.locator('text=Verified Sources & Freshness Information');

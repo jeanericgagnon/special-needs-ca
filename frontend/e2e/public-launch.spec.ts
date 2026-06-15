@@ -11,7 +11,7 @@ test.describe('Public Launch Smoke Tests', () => {
 
     // Canonical check
     const canonical = page.locator('link[rel="canonical"]');
-    await expect(canonical).toHaveAttribute('href', 'https://california-navigator.org');
+    await expect(canonical).toHaveAttribute('href', 'https://ablefull.org');
   });
 
   test('/benefits redirects to /benefits/california', async ({ page }) => {
