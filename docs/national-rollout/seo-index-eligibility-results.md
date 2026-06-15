@@ -1,9 +1,5 @@
 # SEO Index Eligibility Results
 
-> [!WARNING]
-> SUPERSEDED — DO NOT USE FOR EXECUTION. This document contains deprecated/stale directives, county/state bounds, or metrics, and is superseded by the Zero-Churn Authoritative Truth Ledger.
-
-
 This document lists the indexation eligibility outcomes across all 50 states under the V3 quality gate controls.
 
 ---
