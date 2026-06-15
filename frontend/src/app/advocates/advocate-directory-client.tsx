@@ -402,7 +402,7 @@ Best regards,
         <span style={{ fontSize: '1.25rem', lineHeight: 1 }}>⚠️</span>
         <div>
           <strong>Important Directory Disclaimer:</strong> The listings in this directory are community-sourced or public listings. 
-          <strong> Inclusion does not constitute an endorsement, recommendation, or verification</strong> of credentials by the Special Needs Navigator team. 
+          <strong> Inclusion does not constitute an endorsement, recommendation, or verification</strong> of credentials by the Ablefull team. 
           Please independently verify credentials, references, and billing policies locally before hiring any professional advisor.
         </div>
       </div>

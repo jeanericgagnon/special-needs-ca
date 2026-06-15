@@ -83,7 +83,7 @@ export default function RegisterClient({ counties, diagnosesList, needsList }: R
         <Link href="/" style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
           <HeartHandshake size={36} color="var(--primary-color)" />
           <span style={{ fontSize: '1.5rem', fontWeight: 700, background: 'var(--accent-gradient)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-            CA Special Needs Navigator
+            Ablefull
           </span>
         </Link>
       </div>
