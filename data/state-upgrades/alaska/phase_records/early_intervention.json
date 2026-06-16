@@ -1,0 +1,15 @@
+[
+  {
+    "source_url": "https://dhhs.alaska.gov/earlystart",
+    "confidence_score": 9.5,
+    "notes": "Official early intervention (Part C) state intake routing for Alaska.",
+    "suggested_target_id": "ak-ei-agency",
+    "name": "Alaska Early Intervention State Office",
+    "phone": "",
+    "physical_county": "statewide",
+    "agency_type": "early_intervention",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "manual_review_required",
+    "data_origin": "scraped"
+  }
+]

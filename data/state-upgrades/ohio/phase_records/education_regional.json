@@ -1,0 +1,767 @@
+[
+  {
+    "source_url": "https://www.escco.org",
+    "confidence_score": 9.5,
+    "notes": "Official Educational Service Center for franklin region.",
+    "suggested_target_id": "oh-ed-esc-franklin",
+    "name": "Educational Service Center of Central Ohio",
+    "phone": "(614) 445-3750",
+    "counties_served": [
+      "franklin-oh"
+    ],
+    "physical_county": "franklin-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.escneo.org",
+    "confidence_score": 9.5,
+    "notes": "Official Educational Service Center for cuyahoga region.",
+    "suggested_target_id": "oh-ed-esc-cuyahoga",
+    "name": "ESC of Northeast Ohio",
+    "phone": "(216) 524-3000",
+    "counties_served": [
+      "cuyahoga-oh"
+    ],
+    "physical_county": "cuyahoga-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.hcesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Educational Service Center for hamilton region.",
+    "suggested_target_id": "oh-ed-esc-hamilton",
+    "name": "Hamilton County Educational Service Center",
+    "phone": "(513) 674-4200",
+    "counties_served": [
+      "hamilton-oh"
+    ],
+    "physical_county": "hamilton-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.summitesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Educational Service Center for summit region.",
+    "suggested_target_id": "oh-ed-esc-summit",
+    "name": "Summit County Educational Service Center",
+    "phone": "(330) 945-5600",
+    "counties_served": [
+      "summit-oh"
+    ],
+    "physical_county": "summit-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.mcesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Educational Service Center for montgomery region.",
+    "suggested_target_id": "oh-ed-esc-montgomery",
+    "name": "Montgomery County Educational Service Center",
+    "phone": "(937) 225-4598",
+    "counties_served": [
+      "montgomery-oh"
+    ],
+    "physical_county": "montgomery-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.esclew.org",
+    "confidence_score": 9.5,
+    "notes": "Official Educational Service Center for lucas region.",
+    "suggested_target_id": "oh-ed-esc-lucas",
+    "name": "Educational Service Center of Lake Erie West",
+    "phone": "(419) 245-4150",
+    "counties_served": [
+      "lucas-oh"
+    ],
+    "physical_county": "lucas-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.starkcountyesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Educational Service Center for stark region.",
+    "suggested_target_id": "oh-ed-esc-stark",
+    "name": "Stark County Educational Service Center",
+    "phone": "(330) 492-8136",
+    "counties_served": [
+      "stark-oh"
+    ],
+    "physical_county": "stark-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.allencountyesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Allen County ESC.",
+    "suggested_target_id": "oh-ed-esc-allen",
+    "name": "Allen County ESC",
+    "phone": "(419) 222-1836",
+    "counties_served": [
+      "allen-oh"
+    ],
+    "physical_county": "allen-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.athensmeigs.com",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Athens-Meigs ESC.",
+    "suggested_target_id": "oh-ed-esc-athens",
+    "name": "Athens-Meigs ESC",
+    "phone": "(740) 797-0064",
+    "counties_served": [
+      "athens-oh"
+    ],
+    "physical_county": "athens-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.auglaizeesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Auglaize County ESC.",
+    "suggested_target_id": "oh-ed-esc-auglaize",
+    "name": "Auglaize County ESC",
+    "phone": "(419) 739-6760",
+    "counties_served": [
+      "auglaize-oh"
+    ],
+    "physical_county": "auglaize-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.brown.k12.oh.us",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Brown County ESC.",
+    "suggested_target_id": "oh-ed-esc-brown",
+    "name": "Brown County ESC",
+    "phone": "(937) 378-6118",
+    "counties_served": [
+      "brown-oh"
+    ],
+    "physical_county": "brown-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.bcesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Butler County ESC.",
+    "suggested_target_id": "oh-ed-esc-butler",
+    "name": "Butler County ESC",
+    "phone": "(513) 887-3710",
+    "counties_served": [
+      "butler-oh"
+    ],
+    "physical_county": "butler-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.clarkesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Clark County ESC.",
+    "suggested_target_id": "oh-ed-esc-clark",
+    "name": "Clark County ESC",
+    "phone": "(937) 325-7671",
+    "counties_served": [
+      "clark-oh"
+    ],
+    "physical_county": "clark-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.ccesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Clermont County ESC.",
+    "suggested_target_id": "oh-ed-esc-clermont",
+    "name": "Clermont County ESC",
+    "phone": "(513) 735-8300",
+    "counties_served": [
+      "clermont-oh"
+    ],
+    "physical_county": "clermont-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.ccesc.k12.oh.us",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Columbiana County ESC.",
+    "suggested_target_id": "oh-ed-esc-columbiana",
+    "name": "Columbiana County ESC",
+    "phone": "(330) 424-9591",
+    "counties_served": [
+      "columbiana-oh"
+    ],
+    "physical_county": "columbiana-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.ecoesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for East Central Ohio ESC.",
+    "suggested_target_id": "oh-ed-esc-east-central",
+    "name": "East Central Ohio ESC",
+    "phone": "(330) 308-9939",
+    "counties_served": [
+      "tuscarawas-oh"
+    ],
+    "physical_county": "tuscarawas-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.esceasternohio.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for ESC of Eastern Ohio.",
+    "suggested_target_id": "oh-ed-esc-eastern-ohio",
+    "name": "ESC of Eastern Ohio",
+    "phone": "(330) 533-8755",
+    "counties_served": [
+      "mahoning-oh"
+    ],
+    "physical_county": "mahoning-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.fairfieldesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Fairfield County ESC.",
+    "suggested_target_id": "oh-ed-esc-fairfield",
+    "name": "Fairfield County ESC",
+    "phone": "(740) 653-3193",
+    "counties_served": [
+      "fairfield-oh"
+    ],
+    "physical_county": "fairfield-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.geaugaesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Geauga County ESC.",
+    "suggested_target_id": "oh-ed-esc-geauga",
+    "name": "Geauga County ESC",
+    "phone": "(440) 285-2226",
+    "counties_served": [
+      "geauga-oh"
+    ],
+    "physical_county": "geauga-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.greeneesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Greene County ESC.",
+    "suggested_target_id": "oh-ed-esc-greene",
+    "name": "Greene County ESC",
+    "phone": "(937) 376-7400",
+    "counties_served": [
+      "greene-oh"
+    ],
+    "physical_county": "greene-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.hancockesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Hancock County ESC.",
+    "suggested_target_id": "oh-ed-esc-hancock",
+    "name": "Hancock County ESC",
+    "phone": "(419) 422-7525",
+    "counties_served": [
+      "hancock-oh"
+    ],
+    "physical_county": "hancock-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.jcesc.k12.oh.us",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Jefferson County ESC.",
+    "suggested_target_id": "oh-ed-esc-jefferson",
+    "name": "Jefferson County ESC",
+    "phone": "(740) 283-3347",
+    "counties_served": [
+      "jefferson-oh"
+    ],
+    "physical_county": "jefferson-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.lawrenceesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Lawrence County ESC.",
+    "suggested_target_id": "oh-ed-esc-lawrence",
+    "name": "Lawrence County ESC",
+    "phone": "(740) 532-4223",
+    "counties_served": [
+      "lawrence-oh"
+    ],
+    "physical_county": "lawrence-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.lcesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Licking County ESC.",
+    "suggested_target_id": "oh-ed-esc-licking",
+    "name": "Licking County ESC",
+    "phone": "(740) 349-6084",
+    "counties_served": [
+      "licking-oh"
+    ],
+    "physical_county": "licking-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.mesc.k12.oh.us",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Logan County ESC.",
+    "suggested_target_id": "oh-ed-esc-logan",
+    "name": "Logan County ESC",
+    "phone": "(937) 599-5195",
+    "counties_served": [
+      "logan-oh"
+    ],
+    "physical_county": "logan-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.loraincountyesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Lorain County ESC.",
+    "suggested_target_id": "oh-ed-esc-lorain",
+    "name": "Lorain County ESC",
+    "phone": "(440) 324-5777",
+    "counties_served": [
+      "lorain-oh"
+    ],
+    "physical_county": "lorain-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.mcesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Madison-Champaign ESC.",
+    "suggested_target_id": "oh-ed-esc-madison-champaign",
+    "name": "Madison-Champaign ESC",
+    "phone": "(937) 484-1557",
+    "counties_served": [
+      "madison-oh"
+    ],
+    "physical_county": "madison-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.merceresc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Mercer County ESC.",
+    "suggested_target_id": "oh-ed-esc-mercer",
+    "name": "Mercer County ESC",
+    "phone": "(419) 586-2307",
+    "counties_served": [
+      "mercer-oh"
+    ],
+    "physical_county": "mercer-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.miami.k12.oh.us",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Miami County ESC.",
+    "suggested_target_id": "oh-ed-esc-miami",
+    "name": "Miami County ESC",
+    "phone": "(937) 339-5100",
+    "counties_served": [
+      "miami-oh"
+    ],
+    "physical_county": "miami-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.moesc.net",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Mid-Ohio ESC.",
+    "suggested_target_id": "oh-ed-esc-mid-ohio",
+    "name": "Mid-Ohio ESC",
+    "phone": "(419) 774-5520",
+    "counties_served": [
+      "richland-oh"
+    ],
+    "physical_county": "richland-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.mvesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Muskingum Valley ESC.",
+    "suggested_target_id": "oh-ed-esc-muskingum",
+    "name": "Muskingum Valley ESC",
+    "phone": "(740) 452-4518",
+    "counties_served": [
+      "muskingum-oh"
+    ],
+    "physical_county": "muskingum-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.ncoesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for North Central Ohio ESC.",
+    "suggested_target_id": "oh-ed-esc-north-central",
+    "name": "North Central Ohio ESC",
+    "phone": "(419) 447-2927",
+    "counties_served": [
+      "seneca-oh"
+    ],
+    "physical_county": "seneca-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.nwoesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Northwest Ohio ESC.",
+    "suggested_target_id": "oh-ed-esc-northwest",
+    "name": "Northwest Ohio ESC",
+    "phone": "(419) 267-3323",
+    "counties_served": [
+      "fulton-oh"
+    ],
+    "physical_county": "fulton-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.pickawayesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Pickaway County ESC.",
+    "suggested_target_id": "oh-ed-esc-pickaway",
+    "name": "Pickaway County ESC",
+    "phone": "(740) 474-7529",
+    "counties_served": [
+      "pickaway-oh"
+    ],
+    "physical_county": "pickaway-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.preblecountyesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Preble County ESC.",
+    "suggested_target_id": "oh-ed-esc-preble",
+    "name": "Preble County ESC",
+    "phone": "(937) 456-1187",
+    "counties_served": [
+      "preble-oh"
+    ],
+    "physical_county": "preble-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.putnamesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Putnam County ESC.",
+    "suggested_target_id": "oh-ed-esc-putnam",
+    "name": "Putnam County ESC",
+    "phone": "(419) 523-5953",
+    "counties_served": [
+      "putnam-oh"
+    ],
+    "physical_county": "putnam-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.soesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Southern Ohio ESC.",
+    "suggested_target_id": "oh-ed-esc-southern-ohio",
+    "name": "Southern Ohio ESC",
+    "phone": "(937) 382-6921",
+    "counties_served": [
+      "clinton-oh"
+    ],
+    "physical_county": "clinton-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.youresc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Tri-County ESC.",
+    "suggested_target_id": "oh-ed-esc-tri-county",
+    "name": "Tri-County ESC",
+    "phone": "(330) 345-6771",
+    "counties_served": [
+      "wayne-oh"
+    ],
+    "physical_county": "wayne-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.trumbull.k12.oh.us",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Trumbull County ESC.",
+    "suggested_target_id": "oh-ed-esc-trumbull",
+    "name": "Trumbull County ESC",
+    "phone": "(330) 505-2800",
+    "counties_served": [
+      "trumbull-oh"
+    ],
+    "physical_county": "trumbull-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.warrencountyesc.com",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Warren County ESC.",
+    "suggested_target_id": "oh-ed-esc-warren",
+    "name": "Warren County ESC",
+    "phone": "(513) 695-2900",
+    "counties_served": [
+      "warren-oh"
+    ],
+    "physical_county": "warren-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.wcesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Wood County ESC.",
+    "suggested_target_id": "oh-ed-esc-wood",
+    "name": "Wood County ESC",
+    "phone": "(419) 354-9010",
+    "counties_served": [
+      "wood-oh"
+    ],
+    "physical_county": "wood-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.ashtabulaesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Ashtabula County ESC.",
+    "suggested_target_id": "oh-ed-esc-ashtabula",
+    "name": "Ashtabula County ESC",
+    "phone": "(440) 576-9023",
+    "counties_served": [
+      "ashtabula-oh"
+    ],
+    "physical_county": "ashtabula-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.darkeesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Darke County ESC.",
+    "suggested_target_id": "oh-ed-esc-darke",
+    "name": "Darke County ESC",
+    "phone": "(937) 548-4915",
+    "counties_served": [
+      "darke-oh"
+    ],
+    "physical_county": "darke-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.gvesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Gallia-Vinton ESC.",
+    "suggested_target_id": "oh-ed-esc-gallia-vinton",
+    "name": "Gallia-Vinton ESC",
+    "phone": "(740) 245-0007",
+    "counties_served": [
+      "gallia-oh"
+    ],
+    "physical_county": "gallia-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.guernseycounty.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Guernsey County ESC.",
+    "suggested_target_id": "oh-ed-esc-guernsey",
+    "name": "Guernsey County ESC",
+    "phone": "(740) 439-3558",
+    "counties_served": [
+      "guernsey-oh"
+    ],
+    "physical_county": "guernsey-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.knoxesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Knox County ESC.",
+    "suggested_target_id": "oh-ed-esc-knox",
+    "name": "Knox County ESC",
+    "phone": "(740) 393-6767",
+    "counties_served": [
+      "knox-oh"
+    ],
+    "physical_county": "knox-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.medina-esc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Medina County ESC.",
+    "suggested_target_id": "oh-ed-esc-medina",
+    "name": "Medina County ESC",
+    "phone": "(330) 723-6393",
+    "counties_served": [
+      "medina-oh"
+    ],
+    "physical_county": "medina-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.rosscoe.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Ross County ESC.",
+    "suggested_target_id": "oh-ed-esc-ross",
+    "name": "Ross County ESC",
+    "phone": "(740) 702-3120",
+    "counties_served": [
+      "ross-oh"
+    ],
+    "physical_county": "ross-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.ncoesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Seneca County ESC.",
+    "suggested_target_id": "oh-ed-esc-seneca",
+    "name": "Seneca County ESC",
+    "phone": "(419) 447-2927",
+    "counties_served": [
+      "seneca-oh"
+    ],
+    "physical_county": "seneca-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.shelbycountyesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Shelby County ESC.",
+    "suggested_target_id": "oh-ed-esc-shelby",
+    "name": "Shelby County ESC",
+    "phone": "(937) 498-1354",
+    "counties_served": [
+      "shelby-oh"
+    ],
+    "physical_county": "shelby-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.unioncountyesc.org",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Educational Service Center for Union County ESC.",
+    "suggested_target_id": "oh-ed-esc-union",
+    "name": "Union County ESC",
+    "phone": "(937) 642-1001",
+    "counties_served": [
+      "union-oh"
+    ],
+    "physical_county": "union-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  }
+]

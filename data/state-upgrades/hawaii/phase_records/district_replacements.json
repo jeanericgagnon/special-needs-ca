@@ -1,0 +1,44 @@
+[
+  {
+    "source_url": "https://www.education.hawaii.gov",
+    "confidence_score": 9.5,
+    "notes": "Official special education director contact directory for Kalawao County School District Special Education.",
+    "suggested_target_id": "sd-kalawao-hi",
+    "name": "Kalawao County School District",
+    "phone": "",
+    "email": "",
+    "website": "",
+    "physical_county": "kalawao-hi",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "manual_review_required",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.education.hawaii.gov",
+    "confidence_score": 9.5,
+    "notes": "Official special education director contact directory for Kauai County School District Special Education.",
+    "suggested_target_id": "sd-kauai-hi",
+    "name": "Kauai County School District",
+    "phone": "",
+    "email": "",
+    "website": "",
+    "physical_county": "kauai-hi",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "manual_review_required",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.education.hawaii.gov",
+    "confidence_score": 9.5,
+    "notes": "Official special education director contact directory for Maui County School District Special Education.",
+    "suggested_target_id": "sd-maui-hi",
+    "name": "Maui County School District",
+    "phone": "",
+    "email": "",
+    "website": "",
+    "physical_county": "maui-hi",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "manual_review_required",
+    "data_origin": "scraped"
+  }
+]

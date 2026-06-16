@@ -1,0 +1,23 @@
+[
+  {
+    "name": "UM-NSU CARD (Miami)",
+    "entity_type": "resource_provider",
+    "source_url": "https://www.floridacard.org",
+    "service_area_type": "regional",
+    "counties_served": [
+      "miami-dade-fl",
+      "monroe-fl"
+    ],
+    "physical_county": "miami-dade-fl",
+    "target_staging_table": "staging_scraped_resource_providers",
+    "target_production_table": "resource_providers",
+    "notes": "CARD autism center.",
+    "evidence_level": "official_locator_derived",
+    "data_origin": "official_directory_extract",
+    "verification_status": "source_listed",
+    "confidence_score": 0.9,
+    "pull_method": "manual_source_curation",
+    "should_stage_later": true,
+    "should_promote_automatically": true
+  }
+]

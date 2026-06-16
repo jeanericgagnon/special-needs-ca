@@ -1,0 +1,64 @@
+-- Rollback Script for State: Montana | Phase: dd_idd
+-- Generated At: 2026-06-14T15:48:04.658Z
+
+BEGIN TRANSACTION;
+
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'yellowstone-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'wibaux-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'wheatland-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'valley-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'treasure-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'toole-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'teton-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'sweet-grass-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'stillwater-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'silver-bow-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'sheridan-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'sanders-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'rosebud-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'roosevelt-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'richland-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'ravalli-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'prairie-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'powell-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'powder-river-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'pondera-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'phillips-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'petroleum-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'park-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'musselshell-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'missoula-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'mineral-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'meagher-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'mccone-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'madison-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'lincoln-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'liberty-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'lewis-and-clark-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'lake-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'judith-basin-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'jefferson-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'hill-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'granite-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'golden-valley-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'glacier-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'garfield-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'gallatin-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'flathead-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'fergus-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'fallon-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'deer-lodge-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'dawson-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'daniels-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'custer-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'chouteau-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'cascade-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'carter-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'carbon-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'broadwater-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'blaine-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'big-horn-mt';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'mt-dd-agency' AND county_id = 'beaverhead-mt';
+UPDATE state_resource_agencies SET state_id = 'montana', agency_type = 'dd_office', name = 'Montana Developmental Disabilities Program', counties_served = 'beaverhead-mt,big-horn-mt,blaine-mt,broadwater-mt,carbon-mt,carter-mt,cascade-mt,chouteau-mt,custer-mt,daniels-mt,dawson-mt,deer-lodge-mt,fallon-mt,fergus-mt,flathead-mt,gallatin-mt,garfield-mt,glacier-mt,golden-valley-mt,granite-mt,hill-mt,jefferson-mt,judith-basin-mt,lake-mt,lewis-and-clark-mt,liberty-mt,lincoln-mt,madison-mt,mccone-mt,meagher-mt,mineral-mt,missoula-mt,musselshell-mt,park-mt,petroleum-mt,phillips-mt,pondera-mt,powder-river-mt,powell-mt,prairie-mt,ravalli-mt,richland-mt,roosevelt-mt,rosebud-mt,sanders-mt,sheridan-mt,silver-bow-mt,stillwater-mt,sweet-grass-mt,teton-mt,toole-mt,treasure-mt,valley-mt,wheatland-mt,wibaux-mt,yellowstone-mt', catchment_boundaries = 'Statewide coverage for all counties in Montana.', website = 'https://dphhs.mt.gov/dsd/ddp', intake_phone = '(800) 555-0100', early_intervention_contact = '(800) 555-0100', agency_intake_contact = '(800) 555-0100', eligibility_info_page = 'https://dphhs.mt.gov/dsd/ddp/eligibility', services_page = 'https://dphhs.mt.gov/dsd/ddp', appeals_info = 'Waiver decisions can be appealed within 30 days of notice.', frc_relationship = NULL, office_locations = 'Montana State Capitol Office', languages = 'English, Spanish', last_verified_date = '2026-06-12', source_urls = 'https://dphhs.mt.gov/dsd/ddp', source_url = 'https://dphhs.mt.gov/dsd/ddp', source_type = 'official', data_origin = 'curated_seed', verification_status = 'source_listed', last_scraped_at = '2026-06-13T02:29:27.558Z', confidence_score = 5, evidence_level = NULL WHERE id = 'mt-dd-agency';
+
+COMMIT;

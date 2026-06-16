@@ -1,0 +1,3652 @@
+{
+  "alabama": {
+    "name": "Alabama",
+    "code": "AL",
+    "counties_count": 67,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 67,
+        "verified_count": 0,
+        "manual_review_required_count": 67,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 67,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 67,
+        "verified_count": 0,
+        "manual_review_required_count": 67,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 67,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 201,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 201,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "alaska": {
+    "name": "Alaska",
+    "code": "AK",
+    "counties_count": 20,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 20,
+        "verified_count": 0,
+        "manual_review_required_count": 20,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 20,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 20,
+        "verified_count": 0,
+        "manual_review_required_count": 20,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 20,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 60,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 60,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "arizona": {
+    "name": "Arizona",
+    "code": "AZ",
+    "counties_count": 15,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 15,
+        "verified_count": 0,
+        "manual_review_required_count": 15,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 15,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 15,
+        "verified_count": 0,
+        "manual_review_required_count": 15,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 15,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 45,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 45,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "arkansas": {
+    "name": "Arkansas",
+    "code": "AR",
+    "counties_count": 75,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 75,
+        "verified_count": 0,
+        "manual_review_required_count": 75,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 75,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 75,
+        "verified_count": 0,
+        "manual_review_required_count": 75,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 75,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 225,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 225,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "california": {
+    "name": "California",
+    "code": "CA",
+    "counties_count": 58,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 174,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 174,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "school_districts": {
+        "total_count": 80,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 40,
+        "missing_source_count": 0,
+        "directory_routed_count": 80,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "dd_idd_waivers": {
+        "total_count": 21,
+        "verified_count": 21,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 0,
+        "local_contact_verified_count": 21,
+        "service_area_confidence": "High (90-100%)",
+        "frontend_usefulness": "Actionable Local Detail"
+      },
+      "regional_education": {
+        "total_count": 62,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 37,
+        "missing_source_count": 0,
+        "directory_routed_count": 62,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "nonprofit_organizations": {
+        "total_count": 77,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 42,
+        "missing_source_count": 0,
+        "directory_routed_count": 77,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "iep_advocates": {
+        "total_count": 580,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 580,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "colorado": {
+    "name": "Colorado",
+    "code": "CO",
+    "counties_count": 64,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 65,
+        "verified_count": 0,
+        "manual_review_required_count": 65,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 65,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 64,
+        "verified_count": 0,
+        "manual_review_required_count": 64,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 64,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 192,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 192,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "connecticut": {
+    "name": "Connecticut",
+    "code": "CT",
+    "counties_count": 8,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 8,
+        "verified_count": 0,
+        "manual_review_required_count": 8,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 8,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 8,
+        "verified_count": 0,
+        "manual_review_required_count": 8,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 8,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 24,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 24,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "delaware": {
+    "name": "Delaware",
+    "code": "DE",
+    "counties_count": 3,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 3,
+        "verified_count": 0,
+        "manual_review_required_count": 3,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 3,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 3,
+        "verified_count": 0,
+        "manual_review_required_count": 3,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 3,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 9,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 9,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "florida": {
+    "name": "Florida",
+    "code": "FL",
+    "counties_count": 67,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 69,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 69,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "school_districts": {
+        "total_count": 67,
+        "verified_count": 0,
+        "manual_review_required_count": 1,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 67,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "dd_idd_waivers": {
+        "total_count": 29,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 29,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "regional_education": {
+        "total_count": 19,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 19,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 235,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 235,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 31,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 31,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "georgia": {
+    "name": "Georgia",
+    "code": "GA",
+    "counties_count": 159,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 159,
+        "verified_count": 0,
+        "manual_review_required_count": 148,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 159,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 159,
+        "verified_count": 0,
+        "manual_review_required_count": 148,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 159,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 7,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 7,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "regional_education": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 338,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 338,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 24,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 24,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "hawaii": {
+    "name": "Hawaii",
+    "code": "HI",
+    "counties_count": 5,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 5,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 5,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 15,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 15,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "idaho": {
+    "name": "Idaho",
+    "code": "ID",
+    "counties_count": 44,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 44,
+        "verified_count": 0,
+        "manual_review_required_count": 44,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 44,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 44,
+        "verified_count": 0,
+        "manual_review_required_count": 44,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 44,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 132,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 132,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "illinois": {
+    "name": "Illinois",
+    "code": "IL",
+    "counties_count": 102,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 102,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 102,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "school_districts": {
+        "total_count": 102,
+        "verified_count": 0,
+        "manual_review_required_count": 89,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 102,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 40,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 40,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "regional_education": {
+        "total_count": 33,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 33,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 306,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 306,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 22,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 22,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "indiana": {
+    "name": "Indiana",
+    "code": "IN",
+    "counties_count": 92,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 92,
+        "verified_count": 0,
+        "manual_review_required_count": 92,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 92,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 92,
+        "verified_count": 0,
+        "manual_review_required_count": 92,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 92,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 276,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 276,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "iowa": {
+    "name": "Iowa",
+    "code": "IA",
+    "counties_count": 99,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 99,
+        "verified_count": 0,
+        "manual_review_required_count": 99,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 99,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 99,
+        "verified_count": 0,
+        "manual_review_required_count": 99,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 99,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 297,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 297,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "kansas": {
+    "name": "Kansas",
+    "code": "KS",
+    "counties_count": 105,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 105,
+        "verified_count": 0,
+        "manual_review_required_count": 105,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 105,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 105,
+        "verified_count": 0,
+        "manual_review_required_count": 105,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 105,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 315,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 315,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "kentucky": {
+    "name": "Kentucky",
+    "code": "KY",
+    "counties_count": 120,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 120,
+        "verified_count": 0,
+        "manual_review_required_count": 120,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 120,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 120,
+        "verified_count": 0,
+        "manual_review_required_count": 120,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 120,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 360,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 360,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "louisiana": {
+    "name": "Louisiana",
+    "code": "LA",
+    "counties_count": 64,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 64,
+        "verified_count": 0,
+        "manual_review_required_count": 64,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 64,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 64,
+        "verified_count": 0,
+        "manual_review_required_count": 64,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 64,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 192,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 192,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "maine": {
+    "name": "Maine",
+    "code": "ME",
+    "counties_count": 16,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 16,
+        "verified_count": 0,
+        "manual_review_required_count": 16,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 16,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 16,
+        "verified_count": 0,
+        "manual_review_required_count": 16,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 16,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 48,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 48,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "maryland": {
+    "name": "Maryland",
+    "code": "MD",
+    "counties_count": 24,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 24,
+        "verified_count": 0,
+        "manual_review_required_count": 24,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 24,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 24,
+        "verified_count": 0,
+        "manual_review_required_count": 24,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 24,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 72,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 72,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "massachusetts": {
+    "name": "Massachusetts",
+    "code": "MA",
+    "counties_count": 14,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 14,
+        "verified_count": 0,
+        "manual_review_required_count": 14,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 14,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 14,
+        "verified_count": 0,
+        "manual_review_required_count": 14,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 14,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 42,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 42,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "michigan": {
+    "name": "Michigan",
+    "code": "MI",
+    "counties_count": 83,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 83,
+        "verified_count": 0,
+        "manual_review_required_count": 83,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 83,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 83,
+        "verified_count": 0,
+        "manual_review_required_count": 83,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 83,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 249,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 249,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "minnesota": {
+    "name": "Minnesota",
+    "code": "MN",
+    "counties_count": 87,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 87,
+        "verified_count": 0,
+        "manual_review_required_count": 87,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 87,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 87,
+        "verified_count": 0,
+        "manual_review_required_count": 87,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 87,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 261,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 261,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "mississippi": {
+    "name": "Mississippi",
+    "code": "MS",
+    "counties_count": 82,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 82,
+        "verified_count": 0,
+        "manual_review_required_count": 82,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 82,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 82,
+        "verified_count": 0,
+        "manual_review_required_count": 82,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 82,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 246,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 246,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "missouri": {
+    "name": "Missouri",
+    "code": "MO",
+    "counties_count": 115,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 115,
+        "verified_count": 0,
+        "manual_review_required_count": 115,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 115,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 115,
+        "verified_count": 0,
+        "manual_review_required_count": 115,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 115,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 345,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 345,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "montana": {
+    "name": "Montana",
+    "code": "MT",
+    "counties_count": 56,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 56,
+        "verified_count": 0,
+        "manual_review_required_count": 56,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 56,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 56,
+        "verified_count": 0,
+        "manual_review_required_count": 56,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 56,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 168,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 168,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "nebraska": {
+    "name": "Nebraska",
+    "code": "NE",
+    "counties_count": 93,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 93,
+        "verified_count": 0,
+        "manual_review_required_count": 93,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 93,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 93,
+        "verified_count": 0,
+        "manual_review_required_count": 93,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 93,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 279,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 279,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "nevada": {
+    "name": "Nevada",
+    "code": "NV",
+    "counties_count": 17,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 17,
+        "verified_count": 0,
+        "manual_review_required_count": 17,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 17,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 17,
+        "verified_count": 0,
+        "manual_review_required_count": 17,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 17,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 51,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 51,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "new-hampshire": {
+    "name": "New Hampshire",
+    "code": "NH",
+    "counties_count": 10,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 10,
+        "verified_count": 0,
+        "manual_review_required_count": 10,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 10,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 10,
+        "verified_count": 0,
+        "manual_review_required_count": 10,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 10,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 30,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 30,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "new-jersey": {
+    "name": "New Jersey",
+    "code": "NJ",
+    "counties_count": 21,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 21,
+        "verified_count": 0,
+        "manual_review_required_count": 21,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 21,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 21,
+        "verified_count": 0,
+        "manual_review_required_count": 21,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 21,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 63,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 63,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "new-mexico": {
+    "name": "New Mexico",
+    "code": "NM",
+    "counties_count": 33,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 33,
+        "verified_count": 0,
+        "manual_review_required_count": 33,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 33,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 33,
+        "verified_count": 0,
+        "manual_review_required_count": 33,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 33,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 99,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 99,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "new-york": {
+    "name": "New York",
+    "code": "NY",
+    "counties_count": 62,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 62,
+        "verified_count": 0,
+        "manual_review_required_count": 12,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 62,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "school_districts": {
+        "total_count": 62,
+        "verified_count": 0,
+        "manual_review_required_count": 50,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 62,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 69,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 69,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "regional_education": {
+        "total_count": 38,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 38,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 0,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 0,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "0%",
+        "frontend_usefulness": "Poor"
+      },
+      "iep_advocates": {
+        "total_count": 26,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 26,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "north-carolina": {
+    "name": "North Carolina",
+    "code": "NC",
+    "counties_count": 100,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 100,
+        "verified_count": 0,
+        "manual_review_required_count": 100,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 100,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 100,
+        "verified_count": 0,
+        "manual_review_required_count": 100,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 100,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 300,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 300,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "north-dakota": {
+    "name": "North Dakota",
+    "code": "ND",
+    "counties_count": 53,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 53,
+        "verified_count": 0,
+        "manual_review_required_count": 53,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 53,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 53,
+        "verified_count": 0,
+        "manual_review_required_count": 53,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 53,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 159,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 159,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "ohio": {
+    "name": "Ohio",
+    "code": "OH",
+    "counties_count": 88,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 88,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 88,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "school_districts": {
+        "total_count": 176,
+        "verified_count": 0,
+        "manual_review_required_count": 166,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 176,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 176,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 176,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "regional_education": {
+        "total_count": 51,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 51,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 0,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 0,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "0%",
+        "frontend_usefulness": "Poor"
+      },
+      "iep_advocates": {
+        "total_count": 16,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 16,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "oklahoma": {
+    "name": "Oklahoma",
+    "code": "OK",
+    "counties_count": 77,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 77,
+        "verified_count": 0,
+        "manual_review_required_count": 77,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 77,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 77,
+        "verified_count": 0,
+        "manual_review_required_count": 77,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 77,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 231,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 231,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "oregon": {
+    "name": "Oregon",
+    "code": "OR",
+    "counties_count": 36,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 36,
+        "verified_count": 0,
+        "manual_review_required_count": 36,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 36,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 36,
+        "verified_count": 0,
+        "manual_review_required_count": 36,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 36,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 108,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 108,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "pennsylvania": {
+    "name": "Pennsylvania",
+    "code": "PA",
+    "counties_count": 67,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 67,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 67,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "school_districts": {
+        "total_count": 67,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 67,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "dd_idd_waivers": {
+        "total_count": 105,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 105,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "regional_education": {
+        "total_count": 37,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 37,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 8,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 8,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 18,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 18,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "rhode-island": {
+    "name": "Rhode Island",
+    "code": "RI",
+    "counties_count": 5,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 5,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 5,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 15,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 15,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "south-carolina": {
+    "name": "South Carolina",
+    "code": "SC",
+    "counties_count": 46,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 46,
+        "verified_count": 0,
+        "manual_review_required_count": 46,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 46,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 46,
+        "verified_count": 0,
+        "manual_review_required_count": 46,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 46,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 138,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 138,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "south-dakota": {
+    "name": "South Dakota",
+    "code": "SD",
+    "counties_count": 66,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 66,
+        "verified_count": 0,
+        "manual_review_required_count": 66,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 66,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 66,
+        "verified_count": 0,
+        "manual_review_required_count": 66,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 66,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 198,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 198,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "tennessee": {
+    "name": "Tennessee",
+    "code": "TN",
+    "counties_count": 95,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 95,
+        "verified_count": 0,
+        "manual_review_required_count": 95,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 95,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 95,
+        "verified_count": 0,
+        "manual_review_required_count": 95,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 95,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 285,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 285,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "texas": {
+    "name": "Texas",
+    "code": "TX",
+    "counties_count": 254,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 254,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 254,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "school_districts": {
+        "total_count": 264,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 264,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "dd_idd_waivers": {
+        "total_count": 78,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 78,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "regional_education": {
+        "total_count": 20,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 20,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 2129,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2129,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 19,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 19,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "utah": {
+    "name": "Utah",
+    "code": "UT",
+    "counties_count": 29,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 29,
+        "verified_count": 0,
+        "manual_review_required_count": 29,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 29,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 29,
+        "verified_count": 0,
+        "manual_review_required_count": 29,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 29,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 87,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 87,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "vermont": {
+    "name": "Vermont",
+    "code": "VT",
+    "counties_count": 14,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 14,
+        "verified_count": 0,
+        "manual_review_required_count": 14,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 14,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 14,
+        "verified_count": 0,
+        "manual_review_required_count": 14,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 14,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 42,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 42,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "virginia": {
+    "name": "Virginia",
+    "code": "VA",
+    "counties_count": 95,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 95,
+        "verified_count": 0,
+        "manual_review_required_count": 95,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 95,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 95,
+        "verified_count": 0,
+        "manual_review_required_count": 95,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 95,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 285,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 285,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "washington": {
+    "name": "Washington",
+    "code": "WA",
+    "counties_count": 39,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 39,
+        "verified_count": 0,
+        "manual_review_required_count": 39,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 39,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 39,
+        "verified_count": 0,
+        "manual_review_required_count": 39,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 39,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 117,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 117,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "west-virginia": {
+    "name": "West Virginia",
+    "code": "WV",
+    "counties_count": 55,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 55,
+        "verified_count": 0,
+        "manual_review_required_count": 55,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 55,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 55,
+        "verified_count": 0,
+        "manual_review_required_count": 55,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 55,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 165,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 165,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "wisconsin": {
+    "name": "Wisconsin",
+    "code": "WI",
+    "counties_count": 72,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 72,
+        "verified_count": 0,
+        "manual_review_required_count": 72,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 72,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 72,
+        "verified_count": 0,
+        "manual_review_required_count": 72,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 72,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 216,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 216,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  },
+  "wyoming": {
+    "name": "Wyoming",
+    "code": "WY",
+    "counties_count": 23,
+    "categories": {
+      "benefits_hhs": {
+        "total_count": 23,
+        "verified_count": 0,
+        "manual_review_required_count": 23,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 23,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "school_districts": {
+        "total_count": 23,
+        "verified_count": 0,
+        "manual_review_required_count": 23,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 23,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "dd_idd_waivers": {
+        "total_count": 2,
+        "verified_count": 0,
+        "manual_review_required_count": 2,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 2,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Low (40-60%)",
+        "frontend_usefulness": "Thin Boilerplate"
+      },
+      "regional_education": {
+        "total_count": 1,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 1,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "nonprofit_organizations": {
+        "total_count": 69,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 69,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      },
+      "iep_advocates": {
+        "total_count": 5,
+        "verified_count": 0,
+        "manual_review_required_count": 0,
+        "fallback_count": 0,
+        "missing_source_count": 0,
+        "directory_routed_count": 5,
+        "local_contact_verified_count": 0,
+        "service_area_confidence": "Medium (60-80%)",
+        "frontend_usefulness": "Useful State-Level"
+      }
+    }
+  }
+}

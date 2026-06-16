@@ -1,0 +1,61 @@
+-- Rollback Script for State: North Dakota | Phase: dd_idd
+-- Generated At: 2026-06-15T19:54:26.482Z
+
+BEGIN TRANSACTION;
+
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'williams-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'wells-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'ward-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'walsh-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'traill-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'towner-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'stutsman-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'steele-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'stark-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'slope-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'sioux-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'sheridan-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'sargent-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'rolette-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'richland-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'renville-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'ransom-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'ramsey-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'pierce-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'pembina-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'oliver-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'nelson-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'mountrail-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'morton-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'mercer-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'mclean-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'mckenzie-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'mcintosh-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'mchenry-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'logan-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'lamoure-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'kidder-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'hettinger-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'griggs-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'grant-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'grand-forks-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'golden-valley-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'foster-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'emmons-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'eddy-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'dunn-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'divide-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'dickey-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'cavalier-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'cass-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'burleigh-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'burke-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'bowman-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'bottineau-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'billings-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'benson-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'barnes-nd';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'nd-dd-agency' AND county_id = 'adams-nd';
+UPDATE state_resource_agencies SET state_id = 'north-dakota', agency_type = 'dd_intake', name = 'North Dakota Developmental Services Intake', counties_served = 'statewide', catchment_boundaries = 'statewide', website = 'https://dhhs.north-dakota.gov/dd', intake_phone = '', early_intervention_contact = '', agency_intake_contact = '', eligibility_info_page = '', services_page = '', appeals_info = '', frc_relationship = NULL, office_locations = NULL, languages = '', last_verified_date = '2026-06-14', source_urls = 'https://dhhs.north-dakota.gov/dd', source_url = 'https://dhhs.north-dakota.gov/dd', source_type = 'official_website', data_origin = 'scraped', verification_status = 'source_listed', last_scraped_at = NULL, confidence_score = 9.5, evidence_level = 'official_locator_derived' WHERE id = 'nd-dd-agency';
+
+COMMIT;

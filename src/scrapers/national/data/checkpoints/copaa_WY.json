@@ -1,0 +1,141 @@
+{
+  "scraper": "copaa",
+  "state": "WY",
+  "updatedAt": "2026-06-16T00:34:58.647Z",
+  "lastProcessedPage": 1,
+  "completed": false,
+  "metadata": {
+    "results": [
+      {
+        "id": "copaa-07391904d0cc6860032ea0fed65398332293f04a386ef659c26d5657b7404950",
+        "name": "Cecilia Brimmer",
+        "state": "WY",
+        "city": "Casper",
+        "phone": "307-2626347\n                                                    work",
+        "email": "ceciliabrimmer@proton.me",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": "CB Case Management LLC",
+        "organization_info": {
+          "id": "org-40c540a498ffc44ae0cb89bcb6662e7c16434e69a946f4cb887fbd19d7ce656d",
+          "name": "CB Case Management LLC",
+          "state": "WY",
+          "city": "Casper",
+          "phone": "307-2626347\n                                                    work",
+          "email": "ceciliabrimmer@proton.me",
+          "website": "https://connect.copaa.org",
+          "description": "CB Case Management LLC is an organization specializing in special education advocacy.",
+          "source": "copaa",
+          "scraped_at": "2026-06-16T00:34:35.967Z"
+        },
+        "description": "Cecilia Brimmer is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-16T00:34:35.969Z"
+      },
+      {
+        "id": "copaa-e4ef249a316469164fd5ea27770b880e81e997a7d1460c34e3e67cab0aa58363",
+        "name": "Robin Cooper",
+        "state": "WY",
+        "city": "Cheyenne",
+        "phone": "307-632-3614\n                                                    work",
+        "email": "rscooper@mac.com",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": "Robin Cooper",
+        "organization_info": {
+          "id": "org-5227db908e6b18c126d545323bea6657f7ae8dea48d4797a1bd958c00cf27399",
+          "name": "Robin Cooper",
+          "state": "WY",
+          "city": "Cheyenne",
+          "phone": "307-632-3614\n                                                    work",
+          "email": "rscooper@mac.com",
+          "website": "https://connect.copaa.org",
+          "description": "Robin Cooper is an organization specializing in special education advocacy.",
+          "source": "copaa",
+          "scraped_at": "2026-06-16T00:34:35.969Z"
+        },
+        "description": "Robin Cooper is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-16T00:34:35.969Z"
+      },
+      {
+        "id": "copaa-a40cce432188169b8fc2ddf92038de7004447028353dc60c3edeeb7a681217ae",
+        "name": "Sheila Hunsaker",
+        "state": "WY",
+        "city": "Star Valley",
+        "phone": "307-248-2888\n                                                    work",
+        "email": "shunsaker83111@gmail.com",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": "Specialized Support Solutions",
+        "organization_info": {
+          "id": "org-722ea0f096387cf49b76a0d1836c0c5c15683947f145e66997304ea0496de61e",
+          "name": "Specialized Support Solutions",
+          "state": "WY",
+          "city": "Star Valley",
+          "phone": "307-248-2888\n                                                    work",
+          "email": "shunsaker83111@gmail.com",
+          "website": "https://connect.copaa.org",
+          "description": "Specialized Support Solutions is an organization specializing in special education advocacy.",
+          "source": "copaa",
+          "scraped_at": "2026-06-16T00:34:35.969Z"
+        },
+        "description": "Sheila Hunsaker is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-16T00:34:35.969Z"
+      },
+      {
+        "id": "copaa-f03dfc2a64182b8c69f5f0de91122ee7c87d38506d84cc8bba2084788c63bb51",
+        "name": "Kim Rogers",
+        "state": "WY",
+        "city": "Pavillion",
+        "phone": "307-620-1798\n                                                    work",
+        "email": "kimprcross@outlook.com",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": "Aspen Advocacy, LLC",
+        "organization_info": {
+          "id": "org-377aa83db3cc4f611157c878a77fb7e2cc9333c62eb43d67d47735a69a9646a3",
+          "name": "Aspen Advocacy, LLC",
+          "state": "WY",
+          "city": "Pavillion",
+          "phone": "307-620-1798\n                                                    work",
+          "email": "kimprcross@outlook.com",
+          "website": "https://connect.copaa.org",
+          "description": "Aspen Advocacy, LLC is an organization specializing in special education advocacy.",
+          "source": "copaa",
+          "scraped_at": "2026-06-16T00:34:35.969Z"
+        },
+        "description": "Kim Rogers is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-16T00:34:35.969Z"
+      },
+      {
+        "id": "copaa-58eda0673d59630de56adb34cf36a85a494d36227de52c27b2f2ecfb74e23881",
+        "name": "Elle Sanderson",
+        "state": "WY",
+        "city": "Cheyenne",
+        "phone": "307-509-0057\n                                                    work",
+        "email": "Elle@risingstaradvocacy.com",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": "Rising Star Advocacy and Training L3C",
+        "organization_info": {
+          "id": "org-b0ba98580edfac7680676457f04572ea9e6608dfe59e9b0021b3909648b1cfe3",
+          "name": "Rising Star Advocacy and Training L3C",
+          "state": "WY",
+          "city": "Cheyenne",
+          "phone": "307-509-0057\n                                                    work",
+          "email": "Elle@risingstaradvocacy.com",
+          "website": "https://connect.copaa.org",
+          "description": "Rising Star Advocacy and Training L3C is an organization specializing in special education advocacy.",
+          "source": "copaa",
+          "scraped_at": "2026-06-16T00:34:35.969Z"
+        },
+        "description": "Elle Sanderson is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-16T00:34:35.970Z"
+      }
+    ]
+  }
+}

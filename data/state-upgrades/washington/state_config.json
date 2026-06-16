@@ -1,0 +1,43 @@
+{
+  "state_id": "washington",
+  "state_slug": "washington",
+  "state_name": "Washington",
+  "state_code": "WA",
+  "county_id_suffix": "-wa",
+  "program_id_prefix": "wa-",
+  "fallback_id_patterns": [
+    "%-wa-fallback"
+  ],
+  "expected_counties": 39,
+  "priority_counties": [],
+  "phase_sequence": [
+    "benefits_hhs",
+    "dd_idd",
+    "early_intervention",
+    "education_regional",
+    "district_replacements",
+    "clinics",
+    "forms_appeals_transition",
+    "trusted_nonprofits"
+  ],
+  "routing_labels": {
+    "medicaid_name": "Washington Medicaid",
+    "medicaid_agency": "Washington Department of Human Services",
+    "dd_agency": "Washington Developmental Services",
+    "dd_intake_label": "Intake Coordinator",
+    "early_intervention_label": "Early Intervention Coordinator",
+    "education_agency_label": "Regional Education Office",
+    "education_agency": "Washington Department of Education",
+    "special_education_support": "Special Education Support"
+  },
+  "validation_expectations": {
+    "benefits_hhs_count": 39,
+    "dd_idd_count": 0,
+    "early_intervention_count": 0,
+    "education_regional_count": 0,
+    "district_replacements_count": 0,
+    "clinics_count": 0,
+    "forms_appeals_transition_count": 0,
+    "trusted_nonprofits_count": 0
+  }
+}

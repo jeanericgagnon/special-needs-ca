@@ -1,0 +1,8 @@
+{
+  "state": "Florida",
+  "code": "FL",
+  "sources": {
+    "apd": "https://apd.myflorida.com",
+    "dcf": "https://www.myflfamilies.com"
+  }
+}

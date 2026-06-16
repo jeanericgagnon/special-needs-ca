@@ -1,0 +1,15 @@
+[
+  {
+    "source_url": "https://dph.georgia.gov/babies-cant-wait",
+    "confidence_score": 9.5,
+    "notes": "Official Georgia Early Intervention Babies Can't Wait state routing office.",
+    "suggested_target_id": "ga-ei-statewide",
+    "name": "Georgia Babies Can't Wait State Office",
+    "phone": "(888) 651-8224",
+    "physical_county": "statewide",
+    "agency_type": "early_intervention",
+    "evidence_level": "source_listed",
+    "verification_status": "source_listed",
+    "data_origin": "scraped"
+  }
+]

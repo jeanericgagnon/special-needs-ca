@@ -1,0 +1,78 @@
+{
+  "scraper": "copaa",
+  "state": "HI",
+  "updatedAt": "2026-06-15T23:24:32.367Z",
+  "lastProcessedPage": 1,
+  "completed": false,
+  "metadata": {
+    "results": [
+      {
+        "id": "copaa-9edf285fedbcc4323f8441941dfc59587e2f9e8d7935b7c99535b057113da845",
+        "name": "Puakielenani Pennington",
+        "state": "HI",
+        "city": "Kapolei",
+        "phone": "949-6404401\n                                                    work",
+        "email": "kielepennington@yahoo.com",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": null,
+        "organization_info": null,
+        "description": "Puakielenani Pennington is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-15T23:24:09.924Z"
+      },
+      {
+        "id": "copaa-ec306894afe20d1343b5788f4d9fbcd80a287ccd540a397f219d41333c9329ff",
+        "name": "Jennifer Sevick",
+        "state": "HI",
+        "city": "Kailua",
+        "phone": null,
+        "email": "jennifer@cmhrc.org",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": "Children's Mental Health Resource Center, Inc.",
+        "organization_info": {
+          "id": "org-a06ca7c6b161eb2455db3590fbb221ac58800565a28d2e85ee60cdc51ef0c653",
+          "name": "Children's Mental Health Resource Center, Inc.",
+          "state": "HI",
+          "city": "Kailua",
+          "phone": null,
+          "email": "jennifer@cmhrc.org",
+          "website": "https://connect.copaa.org",
+          "description": "Children's Mental Health Resource Center, Inc. is an organization specializing in special education advocacy.",
+          "source": "copaa",
+          "scraped_at": "2026-06-15T23:24:09.925Z"
+        },
+        "description": "Jennifer Sevick is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-15T23:24:09.925Z"
+      },
+      {
+        "id": "copaa-e8ddac5d8dd96396839e42dcf514407ab9dbdecd656ad2d9b43c0f7c4f6f54dc",
+        "name": "Carl Varady",
+        "state": "HI",
+        "city": "Honolulu",
+        "phone": null,
+        "email": "carl@varadylaw.com",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": "Carl M. Varady",
+        "organization_info": {
+          "id": "org-94c15cd9fe12cba36be2800481efd4a268e87e2d8cade9ef40ce692742755457",
+          "name": "Carl M. Varady",
+          "state": "HI",
+          "city": "Honolulu",
+          "phone": null,
+          "email": "carl@varadylaw.com",
+          "website": "https://connect.copaa.org",
+          "description": "Carl M. Varady is an organization specializing in special education advocacy.",
+          "source": "copaa",
+          "scraped_at": "2026-06-15T23:24:09.925Z"
+        },
+        "description": "Carl Varady is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-15T23:24:09.925Z"
+      }
+    ]
+  }
+}

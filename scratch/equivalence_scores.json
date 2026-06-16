@@ -1,0 +1,502 @@
+{
+  "alabama": {
+    "name": "Alabama",
+    "code": "AL",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "alaska": {
+    "name": "Alaska",
+    "code": "AK",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "arizona": {
+    "name": "Arizona",
+    "code": "AZ",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "arkansas": {
+    "name": "Arkansas",
+    "code": "AR",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "california": {
+    "name": "California",
+    "code": "CA",
+    "score": 90.0,
+    "local_routing_pts": 50.0,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 100,
+    "seo_pts": 100
+  },
+  "colorado": {
+    "name": "Colorado",
+    "code": "CO",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "connecticut": {
+    "name": "Connecticut",
+    "code": "CT",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "delaware": {
+    "name": "Delaware",
+    "code": "DE",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "florida": {
+    "name": "Florida",
+    "code": "FL",
+    "score": 37.75,
+    "local_routing_pts": 0.0,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 85,
+    "seo_pts": 0.0
+  },
+  "georgia": {
+    "name": "Georgia",
+    "code": "GA",
+    "score": 37.75,
+    "local_routing_pts": 0.0,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 85,
+    "seo_pts": 0.0
+  },
+  "hawaii": {
+    "name": "Hawaii",
+    "code": "HI",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "idaho": {
+    "name": "Idaho",
+    "code": "ID",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "illinois": {
+    "name": "Illinois",
+    "code": "IL",
+    "score": 37.75,
+    "local_routing_pts": 0.0,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 85,
+    "seo_pts": 0.0
+  },
+  "indiana": {
+    "name": "Indiana",
+    "code": "IN",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "iowa": {
+    "name": "Iowa",
+    "code": "IA",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "kansas": {
+    "name": "Kansas",
+    "code": "KS",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "kentucky": {
+    "name": "Kentucky",
+    "code": "KY",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "louisiana": {
+    "name": "Louisiana",
+    "code": "LA",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "maine": {
+    "name": "Maine",
+    "code": "ME",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "maryland": {
+    "name": "Maryland",
+    "code": "MD",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "massachusetts": {
+    "name": "Massachusetts",
+    "code": "MA",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "michigan": {
+    "name": "Michigan",
+    "code": "MI",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "minnesota": {
+    "name": "Minnesota",
+    "code": "MN",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "mississippi": {
+    "name": "Mississippi",
+    "code": "MS",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "missouri": {
+    "name": "Missouri",
+    "code": "MO",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "montana": {
+    "name": "Montana",
+    "code": "MT",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "nebraska": {
+    "name": "Nebraska",
+    "code": "NE",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "nevada": {
+    "name": "Nevada",
+    "code": "NV",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "new-hampshire": {
+    "name": "New Hampshire",
+    "code": "NH",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "new-jersey": {
+    "name": "New Jersey",
+    "code": "NJ",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "new-mexico": {
+    "name": "New Mexico",
+    "code": "NM",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "new-york": {
+    "name": "New York",
+    "code": "NY",
+    "score": 35.25,
+    "local_routing_pts": 0.0,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 90,
+    "service_area_pts": 85,
+    "seo_pts": 0.0
+  },
+  "north-carolina": {
+    "name": "North Carolina",
+    "code": "NC",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "north-dakota": {
+    "name": "North Dakota",
+    "code": "ND",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "ohio": {
+    "name": "Ohio",
+    "code": "OH",
+    "score": 35.25,
+    "local_routing_pts": 0.0,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 90,
+    "service_area_pts": 85,
+    "seo_pts": 0.0
+  },
+  "oklahoma": {
+    "name": "Oklahoma",
+    "code": "OK",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "oregon": {
+    "name": "Oregon",
+    "code": "OR",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "pennsylvania": {
+    "name": "Pennsylvania",
+    "code": "PA",
+    "score": 37.75,
+    "local_routing_pts": 0.0,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 85,
+    "seo_pts": 0.0
+  },
+  "rhode-island": {
+    "name": "Rhode Island",
+    "code": "RI",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "south-carolina": {
+    "name": "South Carolina",
+    "code": "SC",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "south-dakota": {
+    "name": "South Dakota",
+    "code": "SD",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "tennessee": {
+    "name": "Tennessee",
+    "code": "TN",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "texas": {
+    "name": "Texas",
+    "code": "TX",
+    "score": 37.75,
+    "local_routing_pts": 0.0,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 85,
+    "seo_pts": 0.0
+  },
+  "utah": {
+    "name": "Utah",
+    "code": "UT",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "vermont": {
+    "name": "Vermont",
+    "code": "VT",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "virginia": {
+    "name": "Virginia",
+    "code": "VA",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "washington": {
+    "name": "Washington",
+    "code": "WA",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "west-virginia": {
+    "name": "West Virginia",
+    "code": "WV",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "wisconsin": {
+    "name": "Wisconsin",
+    "code": "WI",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  },
+  "wyoming": {
+    "name": "Wyoming",
+    "code": "WY",
+    "score": 36.0,
+    "local_routing_pts": 20,
+    "record_quality_pts": 0.0,
+    "cat_completeness_pts": 100,
+    "service_area_pts": 40,
+    "seo_pts": 0.0
+  }
+}

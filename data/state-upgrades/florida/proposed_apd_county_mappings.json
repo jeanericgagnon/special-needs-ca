@@ -1,0 +1,337 @@
+[
+  {
+    "county_id": "franklin-fl",
+    "apd_office_id": "apd-field-office-2b",
+    "apd_office_name": "APD Northwest Region - Tallahassee (Field Office 2B)"
+  },
+  {
+    "county_id": "gadsden-fl",
+    "apd_office_id": "apd-field-office-2b",
+    "apd_office_name": "APD Northwest Region - Tallahassee (Field Office 2B)"
+  },
+  {
+    "county_id": "jefferson-fl",
+    "apd_office_id": "apd-field-office-2b",
+    "apd_office_name": "APD Northwest Region - Tallahassee (Field Office 2B)"
+  },
+  {
+    "county_id": "leon-fl",
+    "apd_office_id": "apd-field-office-2b",
+    "apd_office_name": "APD Northwest Region - Tallahassee (Field Office 2B)"
+  },
+  {
+    "county_id": "liberty-fl",
+    "apd_office_id": "apd-field-office-2b",
+    "apd_office_name": "APD Northwest Region - Tallahassee (Field Office 2B)"
+  },
+  {
+    "county_id": "wakulla-fl",
+    "apd_office_id": "apd-field-office-2b",
+    "apd_office_name": "APD Northwest Region - Tallahassee (Field Office 2B)"
+  },
+  {
+    "county_id": "escambia-fl",
+    "apd_office_id": "apd-field-office-1",
+    "apd_office_name": "APD Northwest Region - Pensacola (Field Office 1)"
+  },
+  {
+    "county_id": "okaloosa-fl",
+    "apd_office_id": "apd-field-office-1",
+    "apd_office_name": "APD Northwest Region - Pensacola (Field Office 1)"
+  },
+  {
+    "county_id": "santa-rosa-fl",
+    "apd_office_id": "apd-field-office-1",
+    "apd_office_name": "APD Northwest Region - Pensacola (Field Office 1)"
+  },
+  {
+    "county_id": "walton-fl",
+    "apd_office_id": "apd-field-office-1",
+    "apd_office_name": "APD Northwest Region - Pensacola (Field Office 1)"
+  },
+  {
+    "county_id": "bay-fl",
+    "apd_office_id": "apd-field-office-2a",
+    "apd_office_name": "APD Northwest Region - Panama City (Field Office 2A)"
+  },
+  {
+    "county_id": "calhoun-fl",
+    "apd_office_id": "apd-field-office-2a",
+    "apd_office_name": "APD Northwest Region - Panama City (Field Office 2A)"
+  },
+  {
+    "county_id": "gulf-fl",
+    "apd_office_id": "apd-field-office-2a",
+    "apd_office_name": "APD Northwest Region - Panama City (Field Office 2A)"
+  },
+  {
+    "county_id": "holmes-fl",
+    "apd_office_id": "apd-field-office-2a",
+    "apd_office_name": "APD Northwest Region - Panama City (Field Office 2A)"
+  },
+  {
+    "county_id": "jackson-fl",
+    "apd_office_id": "apd-field-office-2a",
+    "apd_office_name": "APD Northwest Region - Panama City (Field Office 2A)"
+  },
+  {
+    "county_id": "washington-fl",
+    "apd_office_id": "apd-field-office-2a",
+    "apd_office_name": "APD Northwest Region - Panama City (Field Office 2A)"
+  },
+  {
+    "county_id": "alachua-fl",
+    "apd_office_id": "apd-field-office-3",
+    "apd_office_name": "APD Northeast Region - Gainesville (Field Office 3)"
+  },
+  {
+    "county_id": "bradford-fl",
+    "apd_office_id": "apd-field-office-3",
+    "apd_office_name": "APD Northeast Region - Gainesville (Field Office 3)"
+  },
+  {
+    "county_id": "columbia-fl",
+    "apd_office_id": "apd-field-office-3",
+    "apd_office_name": "APD Northeast Region - Gainesville (Field Office 3)"
+  },
+  {
+    "county_id": "dixie-fl",
+    "apd_office_id": "apd-field-office-3",
+    "apd_office_name": "APD Northeast Region - Gainesville (Field Office 3)"
+  },
+  {
+    "county_id": "gilchrist-fl",
+    "apd_office_id": "apd-field-office-3",
+    "apd_office_name": "APD Northeast Region - Gainesville (Field Office 3)"
+  },
+  {
+    "county_id": "hamilton-fl",
+    "apd_office_id": "apd-field-office-3",
+    "apd_office_name": "APD Northeast Region - Gainesville (Field Office 3)"
+  },
+  {
+    "county_id": "lafayette-fl",
+    "apd_office_id": "apd-field-office-3",
+    "apd_office_name": "APD Northeast Region - Gainesville (Field Office 3)"
+  },
+  {
+    "county_id": "levy-fl",
+    "apd_office_id": "apd-field-office-3",
+    "apd_office_name": "APD Northeast Region - Gainesville (Field Office 3)"
+  },
+  {
+    "county_id": "madison-fl",
+    "apd_office_id": "apd-field-office-3",
+    "apd_office_name": "APD Northeast Region - Gainesville (Field Office 3)"
+  },
+  {
+    "county_id": "putnam-fl",
+    "apd_office_id": "apd-field-office-3",
+    "apd_office_name": "APD Northeast Region - Gainesville (Field Office 3)"
+  },
+  {
+    "county_id": "suwannee-fl",
+    "apd_office_id": "apd-field-office-3",
+    "apd_office_name": "APD Northeast Region - Gainesville (Field Office 3)"
+  },
+  {
+    "county_id": "taylor-fl",
+    "apd_office_id": "apd-field-office-3",
+    "apd_office_name": "APD Northeast Region - Gainesville (Field Office 3)"
+  },
+  {
+    "county_id": "union-fl",
+    "apd_office_id": "apd-field-office-3",
+    "apd_office_name": "APD Northeast Region - Gainesville (Field Office 3)"
+  },
+  {
+    "county_id": "baker-fl",
+    "apd_office_id": "apd-field-office-4",
+    "apd_office_name": "APD Northeast Region - Jacksonville (Field Office 4)"
+  },
+  {
+    "county_id": "clay-fl",
+    "apd_office_id": "apd-field-office-4",
+    "apd_office_name": "APD Northeast Region - Jacksonville (Field Office 4)"
+  },
+  {
+    "county_id": "duval-fl",
+    "apd_office_id": "apd-field-office-4",
+    "apd_office_name": "APD Northeast Region - Jacksonville (Field Office 4)"
+  },
+  {
+    "county_id": "nassau-fl",
+    "apd_office_id": "apd-field-office-4",
+    "apd_office_name": "APD Northeast Region - Jacksonville (Field Office 4)"
+  },
+  {
+    "county_id": "st-johns-fl",
+    "apd_office_id": "apd-field-office-4",
+    "apd_office_name": "APD Northeast Region - Jacksonville (Field Office 4)"
+  },
+  {
+    "county_id": "flagler-fl",
+    "apd_office_id": "apd-field-office-12",
+    "apd_office_name": "APD Northeast Region - Daytona Beach (Field Office 12)"
+  },
+  {
+    "county_id": "volusia-fl",
+    "apd_office_id": "apd-field-office-12",
+    "apd_office_name": "APD Northeast Region - Daytona Beach (Field Office 12)"
+  },
+  {
+    "county_id": "brevard-fl",
+    "apd_office_id": "apd-field-office-7",
+    "apd_office_name": "APD Central Region - Orlando (Field Office 7)"
+  },
+  {
+    "county_id": "orange-fl",
+    "apd_office_id": "apd-field-office-7",
+    "apd_office_name": "APD Central Region - Orlando (Field Office 7)"
+  },
+  {
+    "county_id": "osceola-fl",
+    "apd_office_id": "apd-field-office-7",
+    "apd_office_name": "APD Central Region - Orlando (Field Office 7)"
+  },
+  {
+    "county_id": "seminole-fl",
+    "apd_office_id": "apd-field-office-7",
+    "apd_office_name": "APD Central Region - Orlando (Field Office 7)"
+  },
+  {
+    "county_id": "citrus-fl",
+    "apd_office_id": "apd-field-office-13",
+    "apd_office_name": "APD Central Region - Wildwood (Field Office 13)"
+  },
+  {
+    "county_id": "hernando-fl",
+    "apd_office_id": "apd-field-office-13",
+    "apd_office_name": "APD Central Region - Wildwood (Field Office 13)"
+  },
+  {
+    "county_id": "lake-fl",
+    "apd_office_id": "apd-field-office-13",
+    "apd_office_name": "APD Central Region - Wildwood (Field Office 13)"
+  },
+  {
+    "county_id": "marion-fl",
+    "apd_office_id": "apd-field-office-13",
+    "apd_office_name": "APD Central Region - Wildwood (Field Office 13)"
+  },
+  {
+    "county_id": "sumter-fl",
+    "apd_office_id": "apd-field-office-13",
+    "apd_office_name": "APD Central Region - Wildwood (Field Office 13)"
+  },
+  {
+    "county_id": "hardee-fl",
+    "apd_office_id": "apd-field-office-14",
+    "apd_office_name": "APD Central Region - Lakeland (Field Office 14)"
+  },
+  {
+    "county_id": "highlands-fl",
+    "apd_office_id": "apd-field-office-14",
+    "apd_office_name": "APD Central Region - Lakeland (Field Office 14)"
+  },
+  {
+    "county_id": "polk-fl",
+    "apd_office_id": "apd-field-office-14",
+    "apd_office_name": "APD Central Region - Lakeland (Field Office 14)"
+  },
+  {
+    "county_id": "desoto-fl",
+    "apd_office_id": "apd-field-office-23",
+    "apd_office_name": "APD Suncoast Region - Tampa (Field Office 23)"
+  },
+  {
+    "county_id": "hillsborough-fl",
+    "apd_office_id": "apd-field-office-23",
+    "apd_office_name": "APD Suncoast Region - Tampa (Field Office 23)"
+  },
+  {
+    "county_id": "manatee-fl",
+    "apd_office_id": "apd-field-office-23",
+    "apd_office_name": "APD Suncoast Region - Tampa (Field Office 23)"
+  },
+  {
+    "county_id": "pasco-fl",
+    "apd_office_id": "apd-field-office-23",
+    "apd_office_name": "APD Suncoast Region - Tampa (Field Office 23)"
+  },
+  {
+    "county_id": "pinellas-fl",
+    "apd_office_id": "apd-field-office-23",
+    "apd_office_name": "APD Suncoast Region - Tampa (Field Office 23)"
+  },
+  {
+    "county_id": "sarasota-fl",
+    "apd_office_id": "apd-field-office-23",
+    "apd_office_name": "APD Suncoast Region - Tampa (Field Office 23)"
+  },
+  {
+    "county_id": "charlotte-fl",
+    "apd_office_id": "apd-field-office-8",
+    "apd_office_name": "APD Suncoast Region - Fort Myers (Field Office 8)"
+  },
+  {
+    "county_id": "collier-fl",
+    "apd_office_id": "apd-field-office-8",
+    "apd_office_name": "APD Suncoast Region - Fort Myers (Field Office 8)"
+  },
+  {
+    "county_id": "glades-fl",
+    "apd_office_id": "apd-field-office-8",
+    "apd_office_name": "APD Suncoast Region - Fort Myers (Field Office 8)"
+  },
+  {
+    "county_id": "hendry-fl",
+    "apd_office_id": "apd-field-office-8",
+    "apd_office_name": "APD Suncoast Region - Fort Myers (Field Office 8)"
+  },
+  {
+    "county_id": "lee-fl",
+    "apd_office_id": "apd-field-office-8",
+    "apd_office_name": "APD Suncoast Region - Fort Myers (Field Office 8)"
+  },
+  {
+    "county_id": "indian-river-fl",
+    "apd_office_id": "apd-field-office-9",
+    "apd_office_name": "APD Southeast Region - West Palm Beach (Field Office 9)"
+  },
+  {
+    "county_id": "martin-fl",
+    "apd_office_id": "apd-field-office-9",
+    "apd_office_name": "APD Southeast Region - West Palm Beach (Field Office 9)"
+  },
+  {
+    "county_id": "okeechobee-fl",
+    "apd_office_id": "apd-field-office-9",
+    "apd_office_name": "APD Southeast Region - West Palm Beach (Field Office 9)"
+  },
+  {
+    "county_id": "palm-beach-fl",
+    "apd_office_id": "apd-field-office-9",
+    "apd_office_name": "APD Southeast Region - West Palm Beach (Field Office 9)"
+  },
+  {
+    "county_id": "st-lucie-fl",
+    "apd_office_id": "apd-field-office-9",
+    "apd_office_name": "APD Southeast Region - West Palm Beach (Field Office 9)"
+  },
+  {
+    "county_id": "broward-fl",
+    "apd_office_id": "apd-field-office-10",
+    "apd_office_name": "APD Southeast Region - Fort Lauderdale (Field Office 10)"
+  },
+  {
+    "county_id": "miami-dade-fl",
+    "apd_office_id": "apd-field-office-11",
+    "apd_office_name": "APD Southern Region - Miami (Field Office 11)"
+  },
+  {
+    "county_id": "monroe-fl",
+    "apd_office_id": "apd-field-office-11",
+    "apd_office_name": "APD Southern Region - Miami (Field Office 11)"
+  }
+]

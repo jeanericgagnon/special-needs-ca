@@ -1,0 +1,23 @@
+{
+  "state_code": "NC",
+  "categories": [
+    {
+      "category": "benefits_hhs",
+      "routing_type": "county_based",
+      "source_url": "https://www.ncdhhs.gov/divisions/social-services/local-county-social-services-departments",
+      "lead_agency": "North Carolina Department of Health and Human Services (NCDHHS)"
+    },
+    {
+      "category": "dd_idd",
+      "routing_type": "regional_lme_mco",
+      "source_url": "https://www.ncdhhs.gov/providers/lme-mco-directory",
+      "lead_agency": "NCDHHS Division of MH/DD/SUS"
+    },
+    {
+      "category": "early_intervention",
+      "routing_type": "regional_cdsa",
+      "source_url": "https://www.ncdhhs.gov/divisions/mental-health-developmental-disabilities-and-substance-use-services/child-and-family-mental-health-developmental-disabilities-and-substance-use-services/early-intervention/childrens-developmental-services-agencies-cdsas",
+      "lead_agency": "North Carolina Infant-Toddler Program (ITP)"
+    }
+  ]
+}

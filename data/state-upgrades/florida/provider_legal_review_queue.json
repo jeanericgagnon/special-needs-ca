@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Florida Disability Law Group",
+    "entity_type": "iep_advocate",
+    "website": "https://www.floridadisabilitylaw.com",
+    "phone": "(407) 738-4866",
+    "physical_county": "orange-fl",
+    "focus_condition": "special_education_law",
+    "source_url": "https://www.floridadisabilitylaw.com",
+    "evidence_level": "official_locator_derived",
+    "data_origin": "provider_bar_directory",
+    "verification_status": "manual_review_required",
+    "confidence_score": 0.85,
+    "notes": "Aggregated special education legal advocacy group. Requires manual verification of bar status."
+  },
+  {
+    "name": "Autism & Behavior Therapy Center",
+    "entity_type": "resource_provider",
+    "website": "https://www.autismbehaviortherapy.com",
+    "phone": "(954) 555-0199",
+    "physical_county": "broward-fl",
+    "focus_condition": "autism_aba",
+    "source_url": "https://www.beaverhealth.com",
+    "evidence_level": "official_locator_derived",
+    "data_origin": "commercial_directory",
+    "verification_status": "manual_review_required",
+    "confidence_score": 0.75,
+    "notes": "Private ABA and speech therapy provider. Held back from staging due to directories risk rules."
+  }
+]

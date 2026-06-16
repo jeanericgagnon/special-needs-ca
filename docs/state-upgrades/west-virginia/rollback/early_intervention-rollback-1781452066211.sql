@@ -1,0 +1,63 @@
+-- Rollback Script for State: West Virginia | Phase: early_intervention
+-- Generated At: 2026-06-14T15:47:46.221Z
+
+BEGIN TRANSACTION;
+
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'wyoming-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'wood-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'wirt-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'wetzel-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'webster-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'wayne-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'upshur-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'tyler-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'tucker-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'taylor-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'summers-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'roane-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'ritchie-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'randolph-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'raleigh-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'putnam-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'preston-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'pocahontas-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'pleasants-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'pendleton-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'ohio-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'nicholas-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'morgan-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'monroe-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'monongalia-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'mingo-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'mineral-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'mercer-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'mcdowell-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'mason-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'marshall-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'marion-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'logan-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'lincoln-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'lewis-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'kanawha-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'jefferson-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'jackson-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'harrison-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'hardy-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'hancock-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'hampshire-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'greenbrier-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'grant-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'gilmer-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'fayette-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'doddridge-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'clay-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'calhoun-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'cabell-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'brooke-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'braxton-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'boone-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'berkeley-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-ei-agency' AND county_id = 'barbour-wv';
+DELETE FROM state_resource_agencies WHERE id = 'wv-ei-agency';
+
+COMMIT;

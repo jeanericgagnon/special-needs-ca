@@ -1,0 +1,12 @@
+{
+  "state_code": "NY",
+  "audit_date": "2026-06-13",
+  "metrics": {
+    "local_offices": {
+      "fallbacks": 50
+    },
+    "school_districts": {
+      "fallbacks": 50
+    }
+  }
+}

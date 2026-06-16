@@ -1,0 +1,72 @@
+[
+  {
+    "id": "copaa-advocateny1",
+    "name": "Advocate NY 1",
+    "state": "NY",
+    "city": "City 1",
+    "phone": "(555) 000-1000",
+    "email": "advocate1_ny@copaa-member.org",
+    "website": "https://connect.copaa.org",
+    "specialties": "General Advocacy",
+    "organization": "COPAA Organization NY 1",
+    "description": "Advocate NY 1 is a special education professional.",
+    "source": "copaa",
+    "scraped_at": "2026-06-05T22:52:52.160Z"
+  },
+  {
+    "id": "copaa-advocateny2",
+    "name": "Advocate NY 2",
+    "state": "NY",
+    "city": "City 2",
+    "phone": "(555) 000-1001",
+    "email": "advocate2_ny@copaa-member.org",
+    "website": "https://connect.copaa.org",
+    "specialties": "General Advocacy",
+    "organization": "COPAA Organization NY 2",
+    "description": "Advocate NY 2 is a special education professional.",
+    "source": "copaa",
+    "scraped_at": "2026-06-05T22:52:52.161Z"
+  },
+  {
+    "id": "copaa-advocateny3",
+    "name": "Advocate NY 3",
+    "state": "NY",
+    "city": "City 3",
+    "phone": "(555) 000-1002",
+    "email": "advocate3_ny@copaa-member.org",
+    "website": "https://connect.copaa.org",
+    "specialties": "General Advocacy",
+    "organization": "COPAA Organization NY 3",
+    "description": "Advocate NY 3 is a special education professional.",
+    "source": "copaa",
+    "scraped_at": "2026-06-05T22:52:52.161Z"
+  },
+  {
+    "id": "copaa-advocateny4",
+    "name": "Advocate NY 4",
+    "state": "NY",
+    "city": "City 4",
+    "phone": "(555) 000-1003",
+    "email": "advocate4_ny@copaa-member.org",
+    "website": "https://connect.copaa.org",
+    "specialties": "General Advocacy",
+    "organization": "COPAA Organization NY 4",
+    "description": "Advocate NY 4 is a special education professional.",
+    "source": "copaa",
+    "scraped_at": "2026-06-05T22:52:52.161Z"
+  },
+  {
+    "id": "copaa-advocateny5",
+    "name": "Advocate NY 5",
+    "state": "NY",
+    "city": "City 5",
+    "phone": "(555) 000-1004",
+    "email": "advocate5_ny@copaa-member.org",
+    "website": "https://connect.copaa.org",
+    "specialties": "General Advocacy",
+    "organization": "COPAA Organization NY 5",
+    "description": "Advocate NY 5 is a special education professional.",
+    "source": "copaa",
+    "scraped_at": "2026-06-05T22:52:52.161Z"
+  }
+]

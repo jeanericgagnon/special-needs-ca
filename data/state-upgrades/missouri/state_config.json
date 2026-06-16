@@ -1,0 +1,43 @@
+{
+  "state_id": "missouri",
+  "state_slug": "missouri",
+  "state_name": "Missouri",
+  "state_code": "MO",
+  "county_id_suffix": "-mo",
+  "program_id_prefix": "mo-",
+  "fallback_id_patterns": [
+    "%-mo-fallback"
+  ],
+  "expected_counties": 115,
+  "priority_counties": [],
+  "phase_sequence": [
+    "benefits_hhs",
+    "dd_idd",
+    "early_intervention",
+    "education_regional",
+    "district_replacements",
+    "clinics",
+    "forms_appeals_transition",
+    "trusted_nonprofits"
+  ],
+  "routing_labels": {
+    "medicaid_name": "Missouri Medicaid",
+    "medicaid_agency": "Missouri Department of Human Services",
+    "dd_agency": "Missouri Developmental Services",
+    "dd_intake_label": "Intake Coordinator",
+    "early_intervention_label": "Early Intervention Coordinator",
+    "education_agency_label": "Regional Education Office",
+    "education_agency": "Missouri Department of Education",
+    "special_education_support": "Special Education Support"
+  },
+  "validation_expectations": {
+    "benefits_hhs_count": 115,
+    "dd_idd_count": 0,
+    "early_intervention_count": 0,
+    "education_regional_count": 0,
+    "district_replacements_count": 0,
+    "clinics_count": 0,
+    "forms_appeals_transition_count": 0,
+    "trusted_nonprofits_count": 0
+  }
+}

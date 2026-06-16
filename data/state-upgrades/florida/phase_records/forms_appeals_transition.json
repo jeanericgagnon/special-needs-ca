@@ -1,0 +1,68 @@
+[
+  {
+    "slug": "dcf-fair-hearing-request",
+    "title": "Florida DCF Fair Hearing Request / Appeal Form",
+    "program": "fl-medicaid",
+    "source_url": "https://www.myflfamilies.com",
+    "official_download_url": "https://www.myflfamilies.com/sites/default/files/2022-12/fair-hearing-request-form.pdf",
+    "who_uses_it": "Medicaid or DCF benefit recipients requesting a fair hearing / appealing a decision.",
+    "who_signs_it": "Recipient, parent, guardian, or authorized representative.",
+    "where_to_send_it": "Florida DCF Office of Appeal Hearings, 2415 North Monroe St, Suite 400, Tallahassee, FL 32303-4190",
+    "extraction_notes": "Official DCF Fair Hearing request form for appealing Medicaid benefit denials."
+  },
+  {
+    "slug": "early-steps-referral-form",
+    "title": "Florida Early Steps Referral Form",
+    "program": "fl-early-steps",
+    "source_url": "https://www.floridahealth.gov",
+    "official_download_url": "https://www.floridahealth.gov/programs-and-services/childrens-health/early-steps/referral.html",
+    "who_uses_it": "Parents, pediatricians, or childcare providers referring a child under age 3 for early intervention.",
+    "who_signs_it": "Referring party (parent signature preferred but not required for initial referral).",
+    "where_to_send_it": "The Local Early Steps (LES) office serving the child's county.",
+    "extraction_notes": "Official Early Steps Part C developmental referral intake form."
+  },
+  {
+    "slug": "fldoe-ese-mediation-request",
+    "title": "FLDOE ESE Special Education Mediation Request Form",
+    "program": "fl-ese-districts",
+    "source_url": "https://www.fldoe.org",
+    "official_download_url": "https://www.fldoe.org/core/fileparse.php/7690/urlt/0070123-mediation-req.pdf",
+    "who_uses_it": "Parents or school districts requesting voluntary mediation to resolve special education disputes.",
+    "who_signs_it": "Both parent and school district representative.",
+    "where_to_send_it": "FLDOE Bureau of Exceptional Education and Student Services (BEESS), 325 W. Gaines St, Suite 614, Tallahassee, FL 32399-0400",
+    "extraction_notes": "Official Florida Department of Education ESE mediation dispute request form."
+  },
+  {
+    "slug": "fldoe-ese-state-complaint",
+    "title": "FLDOE ESE Formal State Complaint Form",
+    "program": "fl-ese-districts",
+    "source_url": "https://www.fldoe.org",
+    "official_download_url": "https://www.fldoe.org/core/fileparse.php/7690/urlt/0070122-state-comp.pdf",
+    "who_uses_it": "Parents filing a formal state complaint alleging a violation of IDEA or state special education law.",
+    "who_signs_it": "Filing parent or advocate.",
+    "where_to_send_it": "FLDOE BEESS, 325 W. Gaines St, Suite 614, Tallahassee, FL 32399-0400",
+    "extraction_notes": "Official Florida Department of Education formal ESE complaint filing template."
+  },
+  {
+    "slug": "vr-transition-services-application",
+    "title": "Florida Vocational Rehabilitation Pre-Employment Transition Services Application",
+    "program": "fl-vr-transition",
+    "source_url": "https://rehabworks.org",
+    "official_download_url": "https://rehabworks.org/docs/vr-transition-services-application.pdf",
+    "who_uses_it": "Students with disabilities ages 14-21 applying for Pre-Employment Transition Services (Pre-ETS).",
+    "who_signs_it": "Student and parent/guardian.",
+    "where_to_send_it": "Local Vocational Rehabilitation office serving the school or county.",
+    "extraction_notes": "Official FL VR application packet for youth transition services."
+  },
+  {
+    "slug": "able-united-enrollment-guide",
+    "title": "ABLE United Enrollment Guide and Application",
+    "program": "fl-able-united",
+    "source_url": "https://www.ableunited.com",
+    "official_download_url": "https://www.ableunited.com/docs/able-united-enrollment-guide.pdf",
+    "who_uses_it": "Eligible individuals with disabilities setting up a tax-advantaged savings and investment account.",
+    "who_signs_it": "Account owner or authorized legal representative.",
+    "where_to_send_it": "Submit online at ableunited.com or mail to ABLE United, PO Box 44005, Jacksonville, FL 32231-4005",
+    "extraction_notes": "Official Florida ABLE account paper application and program enrollment guidelines."
+  }
+]

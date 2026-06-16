@@ -1,0 +1,45 @@
+{
+  "state_id": "illinois",
+  "state_slug": "illinois",
+  "state_name": "Illinois",
+  "state_code": "IL",
+  "county_id_suffix": "-il",
+  "program_id_prefix": "il-",
+  "fallback_id_patterns": [
+    "%-il-fallback"
+  ],
+  "expected_counties": 102,
+  "priority_counties": [],
+  "phase_sequence": [
+    "benefits_hhs",
+    "dd_idd",
+    "early_intervention",
+    "education_regional",
+    "district_replacements",
+    "clinics",
+    "forms_appeals_transition",
+    "trusted_nonprofits",
+    "provider_legal_review"
+  ],
+  "routing_labels": {
+    "medicaid_name": "Illinois Medicaid",
+    "medicaid_agency": "Illinois Department of Human Services",
+    "dd_agency": "Illinois Developmental Services",
+    "dd_intake_label": "Regional Intake Office",
+    "early_intervention_label": "Early Intervention",
+    "education_agency_label": "Regional Education Center",
+    "education_agency": "Illinois Department of Education",
+    "special_education_support": "Special Education"
+  },
+  "validation_expectations": {
+    "benefits_hhs_count": 102,
+    "dd_idd_count": 7,
+    "early_intervention_count": 25,
+    "education_regional_count": 24,
+    "district_replacements_count": 102,
+    "clinics_count": 6,
+    "forms_appeals_transition_count": 5,
+    "trusted_nonprofits_count": 7,
+    "provider_legal_review_count": 2
+  }
+}

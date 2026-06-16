@@ -1,0 +1,43 @@
+{
+  "state_id": "delaware",
+  "state_slug": "delaware",
+  "state_name": "Delaware",
+  "state_code": "DE",
+  "county_id_suffix": "-de",
+  "program_id_prefix": "de-",
+  "fallback_id_patterns": [
+    "%-de-fallback"
+  ],
+  "expected_counties": 3,
+  "priority_counties": [],
+  "phase_sequence": [
+    "benefits_hhs",
+    "dd_idd",
+    "early_intervention",
+    "education_regional",
+    "district_replacements",
+    "clinics",
+    "forms_appeals_transition",
+    "trusted_nonprofits"
+  ],
+  "routing_labels": {
+    "medicaid_name": "Delaware Medicaid",
+    "medicaid_agency": "Delaware Department of Human Services",
+    "dd_agency": "Delaware Developmental Services",
+    "dd_intake_label": "Intake Coordinator",
+    "early_intervention_label": "Early Intervention Coordinator",
+    "education_agency_label": "Regional Education Office",
+    "education_agency": "Delaware Department of Education",
+    "special_education_support": "Special Education Support"
+  },
+  "validation_expectations": {
+    "benefits_hhs_count": 3,
+    "dd_idd_count": 0,
+    "early_intervention_count": 0,
+    "education_regional_count": 0,
+    "district_replacements_count": 0,
+    "clinics_count": 0,
+    "forms_appeals_transition_count": 0,
+    "trusted_nonprofits_count": 0
+  }
+}

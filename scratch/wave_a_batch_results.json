@@ -1,0 +1,114 @@
+[
+  {
+    "state": "pennsylvania",
+    "phase": "benefits_hhs",
+    "status": "SUCCESS",
+    "count": 67,
+    "notes": "Successfully staged and promoted 67 records."
+  },
+  {
+    "state": "pennsylvania",
+    "phase": "dd_idd",
+    "status": "SUCCESS",
+    "count": 67,
+    "notes": "Successfully staged and promoted 67 records."
+  },
+  {
+    "state": "pennsylvania",
+    "phase": "early_intervention",
+    "status": "SUCCESS",
+    "count": 67,
+    "notes": "Successfully staged and promoted 67 records."
+  },
+  {
+    "state": "pennsylvania",
+    "phase": "forms_appeals_transition",
+    "status": "SUCCESS",
+    "count": 1,
+    "notes": "Successfully staged and promoted 1 records."
+  },
+  {
+    "state": "illinois",
+    "phase": "benefits_hhs",
+    "status": "SUCCESS",
+    "count": 102,
+    "notes": "Successfully staged and promoted 102 records."
+  },
+  {
+    "state": "illinois",
+    "phase": "dd_idd",
+    "status": "SUCCESS",
+    "count": 102,
+    "notes": "Successfully staged and promoted 102 records."
+  },
+  {
+    "state": "illinois",
+    "phase": "early_intervention",
+    "status": "SUCCESS",
+    "count": 102,
+    "notes": "Successfully staged and promoted 102 records."
+  },
+  {
+    "state": "illinois",
+    "phase": "forms_appeals_transition",
+    "status": "SUCCESS",
+    "count": 1,
+    "notes": "Successfully staged and promoted 1 records."
+  },
+  {
+    "state": "georgia",
+    "phase": "benefits_hhs",
+    "status": "SUCCESS",
+    "count": 159,
+    "notes": "Successfully staged and promoted 159 records."
+  },
+  {
+    "state": "georgia",
+    "phase": "dd_idd",
+    "status": "SUCCESS",
+    "count": 159,
+    "notes": "Successfully staged and promoted 159 records."
+  },
+  {
+    "state": "georgia",
+    "phase": "early_intervention",
+    "status": "SUCCESS",
+    "count": 159,
+    "notes": "Successfully staged and promoted 159 records."
+  },
+  {
+    "state": "georgia",
+    "phase": "forms_appeals_transition",
+    "status": "SUCCESS",
+    "count": 1,
+    "notes": "Successfully staged and promoted 1 records."
+  },
+  {
+    "state": "north-carolina",
+    "phase": "benefits_hhs",
+    "status": "SUCCESS",
+    "count": 100,
+    "notes": "Successfully staged and promoted 100 records."
+  },
+  {
+    "state": "north-carolina",
+    "phase": "dd_idd",
+    "status": "SUCCESS",
+    "count": 100,
+    "notes": "Successfully staged and promoted 100 records."
+  },
+  {
+    "state": "north-carolina",
+    "phase": "early_intervention",
+    "status": "SUCCESS",
+    "count": 100,
+    "notes": "Successfully staged and promoted 100 records."
+  },
+  {
+    "state": "north-carolina",
+    "phase": "forms_appeals_transition",
+    "status": "SUCCESS",
+    "count": 1,
+    "notes": "Successfully staged and promoted 1 records."
+  }
+]

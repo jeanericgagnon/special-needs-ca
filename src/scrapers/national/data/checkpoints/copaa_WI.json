@@ -1,0 +1,119 @@
+{
+  "scraper": "copaa",
+  "state": "WI",
+  "updatedAt": "2026-06-16T00:33:27.389Z",
+  "lastProcessedPage": 1,
+  "completed": false,
+  "metadata": {
+    "results": [
+      {
+        "id": "copaa-a199775e174dad4664418d9c95791e8010306644110e3cfe8ff49ae06e55d26e",
+        "name": "Elisabeth Lambert",
+        "state": "WI",
+        "city": "Milwaukee",
+        "phone": "414-2326504\n                                                    work",
+        "email": "elisabeth@wisconsinELPH.org",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": "Wisconsin Education Law and Policy Hub",
+        "organization_info": {
+          "id": "org-f78d7b8a99f13d26f8afbe6c1776804704d35e927cde7aca36cb0bd6faaa65b2",
+          "name": "Wisconsin Education Law and Policy Hub",
+          "state": "WI",
+          "city": "Milwaukee",
+          "phone": "414-2326504\n                                                    work",
+          "email": "elisabeth@wisconsinELPH.org",
+          "website": "https://connect.copaa.org",
+          "description": "Wisconsin Education Law and Policy Hub is an organization specializing in special education advocacy.",
+          "source": "copaa",
+          "scraped_at": "2026-06-16T00:33:04.476Z"
+        },
+        "description": "Elisabeth Lambert is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-16T00:33:04.477Z"
+      },
+      {
+        "id": "copaa-62f5efbb30a516e4ef4be8f08bbb30fd7dbf013a80cc92d0c483212d1361a533",
+        "name": "Shayla Olson",
+        "state": "WI",
+        "city": "Westby",
+        "phone": "608-4068461\n                                                    work",
+        "email": "olsons@kickapoo-counseling.com",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": "Kickapoo Counseling",
+        "organization_info": {
+          "id": "org-34995b6e0fdf35ddb1b5ed43af7c1b43be174ad3d483f67f6cb944028942541e",
+          "name": "Kickapoo Counseling",
+          "state": "WI",
+          "city": "Westby",
+          "phone": "608-4068461\n                                                    work",
+          "email": "olsons@kickapoo-counseling.com",
+          "website": "https://connect.copaa.org",
+          "description": "Kickapoo Counseling is an organization specializing in special education advocacy.",
+          "source": "copaa",
+          "scraped_at": "2026-06-16T00:33:04.477Z"
+        },
+        "description": "Shayla Olson is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-16T00:33:04.477Z"
+      },
+      {
+        "id": "copaa-4ab9dfbd3cddeff694b1277a964b1b65210333c67211d6292bf9bf2b61cd4cd5",
+        "name": "Tiffany Schanno",
+        "state": "WI",
+        "city": "Sheboygan",
+        "phone": "920-9187024\n                                                    work",
+        "email": "tiffy0274@gmail.com",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": null,
+        "organization_info": null,
+        "description": "Tiffany Schanno is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-16T00:33:04.477Z"
+      },
+      {
+        "id": "copaa-772effb2fd4d63b5842457e7ab44a0eb12758b66cb334707d002a3909e2d012a",
+        "name": "Ally Seneczko",
+        "state": "WI",
+        "city": "Milwaukee",
+        "phone": null,
+        "email": null,
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": null,
+        "organization_info": null,
+        "description": "Ally Seneczko is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-16T00:33:04.477Z"
+      },
+      {
+        "id": "copaa-38196fe204c154c6d2e513207b876292af50d8499d623a5dabc886e4e936773e",
+        "name": "Sarah Whaley",
+        "state": "WI",
+        "city": "Milwaukee",
+        "phone": "414-2005723\n                                                    work",
+        "email": "whaley.spedadvocacy@gmail.com",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": "Whaley Special Education Advocacy",
+        "organization_info": {
+          "id": "org-d5d118cc3f6f9c0a48349dbe08d090bceb52949e700f2c85a6ba7a1e99f8e151",
+          "name": "Whaley Special Education Advocacy",
+          "state": "WI",
+          "city": "Milwaukee",
+          "phone": "414-2005723\n                                                    work",
+          "email": "whaley.spedadvocacy@gmail.com",
+          "website": "https://connect.copaa.org",
+          "description": "Whaley Special Education Advocacy is an organization specializing in special education advocacy.",
+          "source": "copaa",
+          "scraped_at": "2026-06-16T00:33:04.477Z"
+        },
+        "description": "Sarah Whaley is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-16T00:33:04.477Z"
+      }
+    ]
+  }
+}

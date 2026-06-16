@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Family Network on Disabilities (FND)",
+    "entity_type": "nonprofit_organization",
+    "source_url": "https://fndusa.org",
+    "service_area_type": "statewide",
+    "counties_served": [
+      "miami-dade-fl",
+      "broward-fl",
+      "palm-beach-fl",
+      "hillsborough-fl",
+      "orange-fl",
+      "pinellas-fl",
+      "duval-fl",
+      "lee-fl",
+      "polk-fl",
+      "brevard-fl",
+      "pasco-fl",
+      "seminole-fl",
+      "alachua-fl",
+      "leon-fl"
+    ],
+    "physical_county": "pinellas-fl",
+    "target_staging_table": "staging_scraped_nonprofit_organizations",
+    "target_production_table": "nonprofit_organizations",
+    "notes": "Florida's PTI network.",
+    "evidence_level": "official_locator_derived",
+    "data_origin": "official_directory_extract",
+    "verification_status": "source_listed",
+    "confidence_score": 0.9,
+    "pull_method": "manual_source_curation",
+    "should_stage_later": true,
+    "should_promote_automatically": true
+  }
+]

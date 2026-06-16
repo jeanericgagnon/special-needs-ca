@@ -1,0 +1,141 @@
+{
+  "scraper": "copaa",
+  "state": "WV",
+  "updatedAt": "2026-06-16T00:32:17.883Z",
+  "lastProcessedPage": 1,
+  "completed": false,
+  "metadata": {
+    "results": [
+      {
+        "id": "copaa-0e464c48467f2be0bb5b3230dd25ab46bbcf451ab41df4f592b9aceb8c693490",
+        "name": "Christy Black",
+        "state": "WV",
+        "city": "Charleston",
+        "phone": "304-3460847\n                                                    work",
+        "email": "cblack@drofwv.org",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": "Disability Rights of WV",
+        "organization_info": {
+          "id": "org-4ba94ca731b86ce36fd46af0350e7a74b95655c10144a0bfef5d2f8399b12ef6",
+          "name": "Disability Rights of WV",
+          "state": "WV",
+          "city": "Charleston",
+          "phone": "304-3460847\n                                                    work",
+          "email": "cblack@drofwv.org",
+          "website": "https://connect.copaa.org",
+          "description": "Disability Rights of WV is an organization specializing in special education advocacy.",
+          "source": "copaa",
+          "scraped_at": "2026-06-16T00:31:55.008Z"
+        },
+        "description": "Christy Black is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-16T00:31:55.009Z"
+      },
+      {
+        "id": "copaa-2a0392a05b98ab5fd6cea99e2cf5f03590ecb6dcf2440a8c20b70ae33aa9186b",
+        "name": "Taniua Hardy",
+        "state": "WV",
+        "city": "Charleston",
+        "phone": "800-950-5250\n                                                    work",
+        "email": "thardy@drofwv.org",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": "Disability Rights of West Virginia",
+        "organization_info": {
+          "id": "org-04e81ac1d206a651f77053af93a0ddac179c533ed52f2198d5c913d8c3ea3eea",
+          "name": "Disability Rights of West Virginia",
+          "state": "WV",
+          "city": "Charleston",
+          "phone": "800-950-5250\n                                                    work",
+          "email": "thardy@drofwv.org",
+          "website": "https://connect.copaa.org",
+          "description": "Disability Rights of West Virginia is an organization specializing in special education advocacy.",
+          "source": "copaa",
+          "scraped_at": "2026-06-16T00:31:55.009Z"
+        },
+        "description": "Taniua Hardy is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-16T00:31:55.009Z"
+      },
+      {
+        "id": "copaa-a1bd73e6b7fcb63fa2e5627a36f25292e7b0d68839f8db76de26a9f019908c29",
+        "name": "Brenda Lamkin",
+        "state": "WV",
+        "city": "Buckhannon",
+        "phone": "304-9979357\n                                                    work",
+        "email": "brendalwvpti@aol.com",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": "WV Parent Training and Information, Inc.",
+        "organization_info": {
+          "id": "org-08e2aee9231807e24bbb81508c330e1758f7050d1a8667653d9d16948e209605",
+          "name": "WV Parent Training and Information, Inc.",
+          "state": "WV",
+          "city": "Buckhannon",
+          "phone": "304-9979357\n                                                    work",
+          "email": "brendalwvpti@aol.com",
+          "website": "https://connect.copaa.org",
+          "description": "WV Parent Training and Information, Inc. is an organization specializing in special education advocacy.",
+          "source": "copaa",
+          "scraped_at": "2026-06-16T00:31:55.009Z"
+        },
+        "description": "Brenda Lamkin is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-16T00:31:55.009Z"
+      },
+      {
+        "id": "copaa-afae14e226529ea9f6f076a638c0e410edfeac2cf657ae3ed1b0dc2444589840",
+        "name": "Joanna Rostetter Bohn",
+        "state": "WV",
+        "city": "Harpers Ferry",
+        "phone": "808-3515223\n                                                    work",
+        "email": "joanna.bohn@gmail.com",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": "Fund for Equal Access to Education",
+        "organization_info": {
+          "id": "org-703d4b64fd139b0e474538f31bc828890466efedc90b7fb6ef525d90a885f581",
+          "name": "Fund for Equal Access to Education",
+          "state": "WV",
+          "city": "Harpers Ferry",
+          "phone": "808-3515223\n                                                    work",
+          "email": "joanna.bohn@gmail.com",
+          "website": "https://connect.copaa.org",
+          "description": "Fund for Equal Access to Education is an organization specializing in special education advocacy.",
+          "source": "copaa",
+          "scraped_at": "2026-06-16T00:31:55.009Z"
+        },
+        "description": "Joanna Rostetter Bohn is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-16T00:31:55.009Z"
+      },
+      {
+        "id": "copaa-d8619351244cd14d79ff75c6e79ff0bfba5fad55caac5c39d9844b28bb04b12d",
+        "name": "Nicholas Ward",
+        "state": "WV",
+        "city": "Charleston",
+        "phone": "800-9505250\n                                                    work",
+        "email": "nward@drofwv.org",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": "Disability Rights of West Virginia",
+        "organization_info": {
+          "id": "org-04e81ac1d206a651f77053af93a0ddac179c533ed52f2198d5c913d8c3ea3eea",
+          "name": "Disability Rights of West Virginia",
+          "state": "WV",
+          "city": "Charleston",
+          "phone": "800-9505250\n                                                    work",
+          "email": "nward@drofwv.org",
+          "website": "https://connect.copaa.org",
+          "description": "Disability Rights of West Virginia is an organization specializing in special education advocacy.",
+          "source": "copaa",
+          "scraped_at": "2026-06-16T00:31:55.009Z"
+        },
+        "description": "Nicholas Ward is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-16T00:31:55.009Z"
+      }
+    ]
+  }
+}

@@ -1,0 +1,2636 @@
+{
+  "timestamp": "2026-06-14T20:12:18.330Z",
+  "registryIntegrity": {
+    "duplicates": [],
+    "wrongSlugs": [],
+    "countyMismatch": [],
+    "crossStateCountyMappings": [
+      {
+        "countyId": "alameda",
+        "stateId": "california",
+        "suffix": "alameda"
+      },
+      {
+        "countyId": "alpine",
+        "stateId": "california",
+        "suffix": "alpine"
+      },
+      {
+        "countyId": "amador",
+        "stateId": "california",
+        "suffix": "amador"
+      },
+      {
+        "countyId": "butte",
+        "stateId": "california",
+        "suffix": "butte"
+      },
+      {
+        "countyId": "calaveras",
+        "stateId": "california",
+        "suffix": "calaveras"
+      },
+      {
+        "countyId": "colusa",
+        "stateId": "california",
+        "suffix": "colusa"
+      },
+      {
+        "countyId": "contra-costa",
+        "stateId": "california",
+        "suffix": "costa"
+      },
+      {
+        "countyId": "del-norte",
+        "stateId": "california",
+        "suffix": "norte"
+      },
+      {
+        "countyId": "el-dorado",
+        "stateId": "california",
+        "suffix": "dorado"
+      },
+      {
+        "countyId": "fresno",
+        "stateId": "california",
+        "suffix": "fresno"
+      },
+      {
+        "countyId": "glenn",
+        "stateId": "california",
+        "suffix": "glenn"
+      },
+      {
+        "countyId": "humboldt",
+        "stateId": "california",
+        "suffix": "humboldt"
+      },
+      {
+        "countyId": "imperial",
+        "stateId": "california",
+        "suffix": "imperial"
+      },
+      {
+        "countyId": "inyo",
+        "stateId": "california",
+        "suffix": "inyo"
+      },
+      {
+        "countyId": "kern",
+        "stateId": "california",
+        "suffix": "kern"
+      },
+      {
+        "countyId": "kings",
+        "stateId": "california",
+        "suffix": "kings"
+      },
+      {
+        "countyId": "lake",
+        "stateId": "california",
+        "suffix": "lake"
+      },
+      {
+        "countyId": "lassen",
+        "stateId": "california",
+        "suffix": "lassen"
+      },
+      {
+        "countyId": "los-angeles",
+        "stateId": "california",
+        "suffix": "angeles"
+      },
+      {
+        "countyId": "madera",
+        "stateId": "california",
+        "suffix": "madera"
+      },
+      {
+        "countyId": "marin",
+        "stateId": "california",
+        "suffix": "marin"
+      },
+      {
+        "countyId": "mariposa",
+        "stateId": "california",
+        "suffix": "mariposa"
+      },
+      {
+        "countyId": "mendocino",
+        "stateId": "california",
+        "suffix": "mendocino"
+      },
+      {
+        "countyId": "merced",
+        "stateId": "california",
+        "suffix": "merced"
+      },
+      {
+        "countyId": "modoc",
+        "stateId": "california",
+        "suffix": "modoc"
+      },
+      {
+        "countyId": "mono",
+        "stateId": "california",
+        "suffix": "mono"
+      },
+      {
+        "countyId": "monterey",
+        "stateId": "california",
+        "suffix": "monterey"
+      },
+      {
+        "countyId": "napa",
+        "stateId": "california",
+        "suffix": "napa"
+      },
+      {
+        "countyId": "nevada",
+        "stateId": "california",
+        "suffix": "nevada"
+      },
+      {
+        "countyId": "orange",
+        "stateId": "california",
+        "suffix": "orange"
+      },
+      {
+        "countyId": "placer",
+        "stateId": "california",
+        "suffix": "placer"
+      },
+      {
+        "countyId": "plumas",
+        "stateId": "california",
+        "suffix": "plumas"
+      },
+      {
+        "countyId": "riverside",
+        "stateId": "california",
+        "suffix": "riverside"
+      },
+      {
+        "countyId": "sacramento",
+        "stateId": "california",
+        "suffix": "sacramento"
+      },
+      {
+        "countyId": "san-benito",
+        "stateId": "california",
+        "suffix": "benito"
+      },
+      {
+        "countyId": "san-bernardino",
+        "stateId": "california",
+        "suffix": "bernardino"
+      },
+      {
+        "countyId": "san-diego",
+        "stateId": "california",
+        "suffix": "diego"
+      },
+      {
+        "countyId": "san-francisco",
+        "stateId": "california",
+        "suffix": "francisco"
+      },
+      {
+        "countyId": "san-joaquin",
+        "stateId": "california",
+        "suffix": "joaquin"
+      },
+      {
+        "countyId": "san-luis-obispo",
+        "stateId": "california",
+        "suffix": "obispo"
+      },
+      {
+        "countyId": "san-mateo",
+        "stateId": "california",
+        "suffix": "mateo"
+      },
+      {
+        "countyId": "santa-barbara",
+        "stateId": "california",
+        "suffix": "barbara"
+      },
+      {
+        "countyId": "santa-clara",
+        "stateId": "california",
+        "suffix": "clara"
+      },
+      {
+        "countyId": "santa-cruz",
+        "stateId": "california",
+        "suffix": "cruz"
+      },
+      {
+        "countyId": "shasta",
+        "stateId": "california",
+        "suffix": "shasta"
+      },
+      {
+        "countyId": "sierra",
+        "stateId": "california",
+        "suffix": "sierra"
+      },
+      {
+        "countyId": "siskiyou",
+        "stateId": "california",
+        "suffix": "siskiyou"
+      },
+      {
+        "countyId": "solano",
+        "stateId": "california",
+        "suffix": "solano"
+      },
+      {
+        "countyId": "sonoma",
+        "stateId": "california",
+        "suffix": "sonoma"
+      },
+      {
+        "countyId": "stanislaus",
+        "stateId": "california",
+        "suffix": "stanislaus"
+      },
+      {
+        "countyId": "sutter",
+        "stateId": "california",
+        "suffix": "sutter"
+      },
+      {
+        "countyId": "tehama",
+        "stateId": "california",
+        "suffix": "tehama"
+      },
+      {
+        "countyId": "trinity",
+        "stateId": "california",
+        "suffix": "trinity"
+      },
+      {
+        "countyId": "tulare",
+        "stateId": "california",
+        "suffix": "tulare"
+      },
+      {
+        "countyId": "tuolumne",
+        "stateId": "california",
+        "suffix": "tuolumne"
+      },
+      {
+        "countyId": "ventura",
+        "stateId": "california",
+        "suffix": "ventura"
+      },
+      {
+        "countyId": "yolo",
+        "stateId": "california",
+        "suffix": "yolo"
+      },
+      {
+        "countyId": "yuba",
+        "stateId": "california",
+        "suffix": "yuba"
+      }
+    ],
+    "wrongStateRecords": []
+  },
+  "stateMetrics": {
+    "alabama": {
+      "name": "Alabama",
+      "code": "AL",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 67,
+        "districts": 67,
+        "nonprofits": 201,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 338
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 67,
+        "districts": 67,
+        "nonprofits": 0,
+        "total": 134,
+        "percentage": 39.64497041420118,
+        "verifiedManual": [
+          {
+            "id": "sd-jefferson-al"
+          },
+          {
+            "id": "sd-madison-al"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 201,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 204
+      },
+      "providersCount": 0
+    },
+    "alaska": {
+      "name": "Alaska",
+      "code": "AK",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 20,
+        "districts": 20,
+        "nonprofits": 60,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 103
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 20,
+        "districts": 20,
+        "nonprofits": 0,
+        "total": 40,
+        "percentage": 38.83495145631068,
+        "verifiedManual": [
+          {
+            "id": "sd-anchorage-ak"
+          },
+          {
+            "id": "sd-matanuska-susitna-borough-ak"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 60,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 63
+      },
+      "providersCount": 0
+    },
+    "arizona": {
+      "name": "Arizona",
+      "code": "AZ",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 15,
+        "districts": 15,
+        "nonprofits": 45,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 78
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 15,
+        "districts": 15,
+        "nonprofits": 0,
+        "total": 30,
+        "percentage": 38.46153846153847,
+        "verifiedManual": [
+          {
+            "id": "sd-maricopa-az"
+          },
+          {
+            "id": "sd-pima-az"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 45,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 48
+      },
+      "providersCount": 0
+    },
+    "arkansas": {
+      "name": "Arkansas",
+      "code": "AR",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 75,
+        "districts": 75,
+        "nonprofits": 225,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 378
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 75,
+        "districts": 75,
+        "nonprofits": 0,
+        "total": 150,
+        "percentage": 39.682539682539684,
+        "verifiedManual": [
+          {
+            "id": "sd-benton-ar"
+          },
+          {
+            "id": "sd-pulaski-ar"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 225,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 228
+      },
+      "providersCount": 0
+    },
+    "california": {
+      "name": "California",
+      "code": "CA",
+      "claimedStatus": "COMPLETE",
+      "activeCounts": {
+        "offices": 174,
+        "districts": 80,
+        "nonprofits": 34,
+        "stateAgencies": 21,
+        "regEdu": 62,
+        "total": 371
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 40,
+        "nonprofits": 0,
+        "regEdu": 37,
+        "stateAgencies": 0,
+        "total": 77,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 0,
+        "districts": 40,
+        "nonprofits": 0,
+        "total": 40,
+        "percentage": 10.781671159029651,
+        "verifiedManual": []
+      },
+      "protected": {
+        "nonprofits": 34,
+        "districts": 40,
+        "regEdu": 25,
+        "total": 99
+      },
+      "providersCount": 0
+    },
+    "colorado": {
+      "name": "Colorado",
+      "code": "CO",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 65,
+        "districts": 64,
+        "nonprofits": 192,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 324
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 65,
+        "districts": 64,
+        "nonprofits": 0,
+        "total": 129,
+        "percentage": 39.81481481481482,
+        "verifiedManual": [
+          {
+            "id": "off-city-and-county-of-denver-co-medicaid"
+          },
+          {
+            "id": "sd-city-and-county-of-denver-co"
+          },
+          {
+            "id": "sd-el-paso-co"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 192,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 195
+      },
+      "providersCount": 0
+    },
+    "connecticut": {
+      "name": "Connecticut",
+      "code": "CT",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 8,
+        "districts": 8,
+        "nonprofits": 24,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 43
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 8,
+        "districts": 8,
+        "nonprofits": 0,
+        "total": 16,
+        "percentage": 37.2093023255814,
+        "verifiedManual": [
+          {
+            "id": "sd-fairfield-ct"
+          },
+          {
+            "id": "sd-hartford-ct"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 24,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 27
+      },
+      "providersCount": 0
+    },
+    "delaware": {
+      "name": "Delaware",
+      "code": "DE",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 3,
+        "districts": 3,
+        "nonprofits": 9,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 18
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 3,
+        "districts": 3,
+        "nonprofits": 0,
+        "total": 6,
+        "percentage": 33.33333333333333,
+        "verifiedManual": [
+          {
+            "id": "sd-new-castle-de"
+          },
+          {
+            "id": "sd-sussex-de"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 9,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 12
+      },
+      "providersCount": 0
+    },
+    "florida": {
+      "name": "Florida",
+      "code": "FL",
+      "claimedStatus": "COMPLETE",
+      "activeCounts": {
+        "offices": 69,
+        "districts": 67,
+        "nonprofits": 235,
+        "stateAgencies": 29,
+        "regEdu": 19,
+        "total": 419
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 0,
+        "districts": 1,
+        "nonprofits": 0,
+        "total": 1,
+        "percentage": 0.23866348448687352,
+        "verifiedManual": []
+      },
+      "protected": {
+        "nonprofits": 215,
+        "districts": 0,
+        "regEdu": 0,
+        "total": 215
+      },
+      "providersCount": 14
+    },
+    "georgia": {
+      "name": "Georgia",
+      "code": "GA",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 159,
+        "districts": 159,
+        "nonprofits": 338,
+        "stateAgencies": 7,
+        "regEdu": 5,
+        "total": 668
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 132,
+        "districts": 132,
+        "nonprofits": 0,
+        "total": 264,
+        "percentage": 39.52095808383233,
+        "verifiedManual": []
+      },
+      "protected": {
+        "nonprofits": 338,
+        "districts": 27,
+        "regEdu": 5,
+        "total": 370
+      },
+      "providersCount": 0
+    },
+    "hawaii": {
+      "name": "Hawaii",
+      "code": "HI",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 5,
+        "districts": 5,
+        "nonprofits": 15,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 28
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 5,
+        "districts": 5,
+        "nonprofits": 0,
+        "total": 10,
+        "percentage": 35.714285714285715,
+        "verifiedManual": [
+          {
+            "id": "sd-hawai-i-hi"
+          },
+          {
+            "id": "sd-honolulu-hi"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 15,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 18
+      },
+      "providersCount": 0
+    },
+    "idaho": {
+      "name": "Idaho",
+      "code": "ID",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 44,
+        "districts": 44,
+        "nonprofits": 132,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 223
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 44,
+        "districts": 44,
+        "nonprofits": 0,
+        "total": 88,
+        "percentage": 39.46188340807175,
+        "verifiedManual": [
+          {
+            "id": "sd-ada-id"
+          },
+          {
+            "id": "sd-canyon-id"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 132,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 135
+      },
+      "providersCount": 0
+    },
+    "illinois": {
+      "name": "Illinois",
+      "code": "IL",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 102,
+        "districts": 102,
+        "nonprofits": 306,
+        "stateAgencies": 40,
+        "regEdu": 33,
+        "total": 583
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 0,
+        "districts": 89,
+        "nonprofits": 0,
+        "total": 89,
+        "percentage": 15.265866209262436,
+        "verifiedManual": []
+      },
+      "protected": {
+        "nonprofits": 306,
+        "districts": 8,
+        "regEdu": 9,
+        "total": 323
+      },
+      "providersCount": 6
+    },
+    "indiana": {
+      "name": "Indiana",
+      "code": "IN",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 92,
+        "districts": 92,
+        "nonprofits": 276,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 463
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 92,
+        "districts": 92,
+        "nonprofits": 0,
+        "total": 184,
+        "percentage": 39.740820734341256,
+        "verifiedManual": [
+          {
+            "id": "sd-lake-in"
+          },
+          {
+            "id": "sd-marion-in"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 276,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 279
+      },
+      "providersCount": 0
+    },
+    "iowa": {
+      "name": "Iowa",
+      "code": "IA",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 99,
+        "districts": 99,
+        "nonprofits": 297,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 498
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 99,
+        "districts": 99,
+        "nonprofits": 0,
+        "total": 198,
+        "percentage": 39.75903614457831,
+        "verifiedManual": [
+          {
+            "id": "sd-linn-ia"
+          },
+          {
+            "id": "sd-polk-ia"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 297,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 300
+      },
+      "providersCount": 0
+    },
+    "kansas": {
+      "name": "Kansas",
+      "code": "KS",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 105,
+        "districts": 105,
+        "nonprofits": 315,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 528
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 105,
+        "districts": 105,
+        "nonprofits": 0,
+        "total": 210,
+        "percentage": 39.77272727272727,
+        "verifiedManual": [
+          {
+            "id": "sd-johnson-ks"
+          },
+          {
+            "id": "sd-sedgwick-ks"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 315,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 318
+      },
+      "providersCount": 0
+    },
+    "kentucky": {
+      "name": "Kentucky",
+      "code": "KY",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 120,
+        "districts": 120,
+        "nonprofits": 360,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 603
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 120,
+        "districts": 120,
+        "nonprofits": 0,
+        "total": 240,
+        "percentage": 39.800995024875625,
+        "verifiedManual": [
+          {
+            "id": "sd-fayette-ky"
+          },
+          {
+            "id": "sd-jefferson-ky"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 360,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 363
+      },
+      "providersCount": 0
+    },
+    "louisiana": {
+      "name": "Louisiana",
+      "code": "LA",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 64,
+        "districts": 64,
+        "nonprofits": 192,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 323
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 64,
+        "districts": 64,
+        "nonprofits": 0,
+        "total": 128,
+        "percentage": 39.628482972136226,
+        "verifiedManual": [
+          {
+            "id": "sd-east-baton-rouge-parish-la"
+          },
+          {
+            "id": "sd-jefferson-parish-la"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 192,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 195
+      },
+      "providersCount": 0
+    },
+    "maine": {
+      "name": "Maine",
+      "code": "ME",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 16,
+        "districts": 16,
+        "nonprofits": 48,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 83
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 16,
+        "districts": 16,
+        "nonprofits": 0,
+        "total": 32,
+        "percentage": 38.55421686746988,
+        "verifiedManual": [
+          {
+            "id": "sd-cumberland-me"
+          },
+          {
+            "id": "sd-york-me"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 48,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 51
+      },
+      "providersCount": 0
+    },
+    "maryland": {
+      "name": "Maryland",
+      "code": "MD",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 24,
+        "districts": 24,
+        "nonprofits": 72,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 123
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 24,
+        "districts": 24,
+        "nonprofits": 0,
+        "total": 48,
+        "percentage": 39.02439024390244,
+        "verifiedManual": [
+          {
+            "id": "sd-montgomery-md"
+          },
+          {
+            "id": "sd-prince-george-s-md"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 72,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 75
+      },
+      "providersCount": 0
+    },
+    "massachusetts": {
+      "name": "Massachusetts",
+      "code": "MA",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 14,
+        "districts": 14,
+        "nonprofits": 42,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 73
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 14,
+        "districts": 14,
+        "nonprofits": 0,
+        "total": 28,
+        "percentage": 38.35616438356164,
+        "verifiedManual": [
+          {
+            "id": "sd-middlesex-ma"
+          },
+          {
+            "id": "sd-worcester-ma"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 42,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 45
+      },
+      "providersCount": 0
+    },
+    "michigan": {
+      "name": "Michigan",
+      "code": "MI",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 83,
+        "districts": 83,
+        "nonprofits": 249,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 418
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 73,
+        "districts": 78,
+        "nonprofits": 0,
+        "total": 151,
+        "percentage": 36.124401913875595,
+        "verifiedManual": []
+      },
+      "protected": {
+        "nonprofits": 249,
+        "districts": 5,
+        "regEdu": 1,
+        "total": 255
+      },
+      "providersCount": 0
+    },
+    "minnesota": {
+      "name": "Minnesota",
+      "code": "MN",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 87,
+        "districts": 87,
+        "nonprofits": 261,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 438
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 87,
+        "districts": 87,
+        "nonprofits": 0,
+        "total": 174,
+        "percentage": 39.726027397260275,
+        "verifiedManual": [
+          {
+            "id": "sd-hennepin-mn"
+          },
+          {
+            "id": "sd-ramsey-mn"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 261,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 264
+      },
+      "providersCount": 0
+    },
+    "mississippi": {
+      "name": "Mississippi",
+      "code": "MS",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 82,
+        "districts": 82,
+        "nonprofits": 246,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 413
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 82,
+        "districts": 82,
+        "nonprofits": 0,
+        "total": 164,
+        "percentage": 39.70944309927361,
+        "verifiedManual": [
+          {
+            "id": "sd-harrison-ms"
+          },
+          {
+            "id": "sd-hinds-ms"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 246,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 249
+      },
+      "providersCount": 0
+    },
+    "missouri": {
+      "name": "Missouri",
+      "code": "MO",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 115,
+        "districts": 115,
+        "nonprofits": 345,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 578
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 115,
+        "districts": 115,
+        "nonprofits": 0,
+        "total": 230,
+        "percentage": 39.792387543252595,
+        "verifiedManual": [
+          {
+            "id": "sd-jackson-mo"
+          },
+          {
+            "id": "sd-saint-louis-mo"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 345,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 348
+      },
+      "providersCount": 0
+    },
+    "montana": {
+      "name": "Montana",
+      "code": "MT",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 56,
+        "districts": 56,
+        "nonprofits": 168,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 283
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 56,
+        "districts": 56,
+        "nonprofits": 0,
+        "total": 112,
+        "percentage": 39.57597173144876,
+        "verifiedManual": [
+          {
+            "id": "sd-gallatin-mt"
+          },
+          {
+            "id": "sd-yellowstone-mt"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 168,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 171
+      },
+      "providersCount": 0
+    },
+    "nebraska": {
+      "name": "Nebraska",
+      "code": "NE",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 93,
+        "districts": 93,
+        "nonprofits": 279,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 468
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 93,
+        "districts": 93,
+        "nonprofits": 0,
+        "total": 186,
+        "percentage": 39.743589743589745,
+        "verifiedManual": [
+          {
+            "id": "sd-douglas-ne"
+          },
+          {
+            "id": "sd-lancaster-ne"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 279,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 282
+      },
+      "providersCount": 0
+    },
+    "nevada": {
+      "name": "Nevada",
+      "code": "NV",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 17,
+        "districts": 17,
+        "nonprofits": 51,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 88
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 17,
+        "districts": 17,
+        "nonprofits": 0,
+        "total": 34,
+        "percentage": 38.63636363636363,
+        "verifiedManual": [
+          {
+            "id": "sd-clark-nv"
+          },
+          {
+            "id": "sd-washoe-nv"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 51,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 54
+      },
+      "providersCount": 0
+    },
+    "new-hampshire": {
+      "name": "New Hampshire",
+      "code": "NH",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 10,
+        "districts": 10,
+        "nonprofits": 30,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 53
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 10,
+        "districts": 10,
+        "nonprofits": 0,
+        "total": 20,
+        "percentage": 37.735849056603776,
+        "verifiedManual": [
+          {
+            "id": "sd-hillsborough-nh"
+          },
+          {
+            "id": "sd-rockingham-nh"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 30,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 33
+      },
+      "providersCount": 0
+    },
+    "new-jersey": {
+      "name": "New Jersey",
+      "code": "NJ",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 21,
+        "districts": 21,
+        "nonprofits": 63,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 108
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 21,
+        "districts": 21,
+        "nonprofits": 0,
+        "total": 42,
+        "percentage": 38.88888888888889,
+        "verifiedManual": [
+          {
+            "id": "sd-bergen-nj"
+          },
+          {
+            "id": "sd-middlesex-nj"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 63,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 66
+      },
+      "providersCount": 0
+    },
+    "new-mexico": {
+      "name": "New Mexico",
+      "code": "NM",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 33,
+        "districts": 33,
+        "nonprofits": 99,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 168
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 33,
+        "districts": 33,
+        "nonprofits": 0,
+        "total": 66,
+        "percentage": 39.285714285714285,
+        "verifiedManual": [
+          {
+            "id": "sd-bernalillo-nm"
+          },
+          {
+            "id": "sd-do-a-ana-nm"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 99,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 102
+      },
+      "providersCount": 0
+    },
+    "new-york": {
+      "name": "New York",
+      "code": "NY",
+      "claimedStatus": "COMPLETE",
+      "activeCounts": {
+        "offices": 62,
+        "districts": 62,
+        "nonprofits": 5,
+        "stateAgencies": 69,
+        "regEdu": 38,
+        "total": 236
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 0,
+        "districts": 40,
+        "nonprofits": 0,
+        "total": 40,
+        "percentage": 16.94915254237288,
+        "verifiedManual": []
+      },
+      "protected": {
+        "nonprofits": 5,
+        "districts": 22,
+        "regEdu": 8,
+        "total": 35
+      },
+      "providersCount": 0
+    },
+    "north-carolina": {
+      "name": "North Carolina",
+      "code": "NC",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 100,
+        "districts": 100,
+        "nonprofits": 300,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 503
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 90,
+        "districts": 96,
+        "nonprofits": 0,
+        "total": 186,
+        "percentage": 36.97813121272366,
+        "verifiedManual": []
+      },
+      "protected": {
+        "nonprofits": 300,
+        "districts": 4,
+        "regEdu": 1,
+        "total": 305
+      },
+      "providersCount": 0
+    },
+    "north-dakota": {
+      "name": "North Dakota",
+      "code": "ND",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 53,
+        "districts": 53,
+        "nonprofits": 159,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 268
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 53,
+        "districts": 53,
+        "nonprofits": 0,
+        "total": 106,
+        "percentage": 39.55223880597015,
+        "verifiedManual": [
+          {
+            "id": "sd-burleigh-nd"
+          },
+          {
+            "id": "sd-cass-nd"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 159,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 162
+      },
+      "providersCount": 0
+    },
+    "ohio": {
+      "name": "Ohio",
+      "code": "OH",
+      "claimedStatus": "COMPLETE",
+      "activeCounts": {
+        "offices": 88,
+        "districts": 176,
+        "nonprofits": 3,
+        "stateAgencies": 176,
+        "regEdu": 51,
+        "total": 494
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 0,
+        "districts": 166,
+        "nonprofits": 0,
+        "total": 166,
+        "percentage": 33.603238866396765,
+        "verifiedManual": []
+      },
+      "protected": {
+        "nonprofits": 3,
+        "districts": 7,
+        "regEdu": 7,
+        "total": 17
+      },
+      "providersCount": 0
+    },
+    "oklahoma": {
+      "name": "Oklahoma",
+      "code": "OK",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 77,
+        "districts": 77,
+        "nonprofits": 231,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 388
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 77,
+        "districts": 77,
+        "nonprofits": 0,
+        "total": 154,
+        "percentage": 39.69072164948454,
+        "verifiedManual": [
+          {
+            "id": "sd-oklahoma-ok"
+          },
+          {
+            "id": "sd-tulsa-ok"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 231,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 234
+      },
+      "providersCount": 0
+    },
+    "oregon": {
+      "name": "Oregon",
+      "code": "OR",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 36,
+        "districts": 36,
+        "nonprofits": 108,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 183
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 36,
+        "districts": 36,
+        "nonprofits": 0,
+        "total": 72,
+        "percentage": 39.34426229508197,
+        "verifiedManual": [
+          {
+            "id": "sd-multnomah-or"
+          },
+          {
+            "id": "sd-washington-or"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 108,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 111
+      },
+      "providersCount": 0
+    },
+    "pennsylvania": {
+      "name": "Pennsylvania",
+      "code": "PA",
+      "claimedStatus": "COMPLETE",
+      "activeCounts": {
+        "offices": 67,
+        "districts": 67,
+        "nonprofits": 8,
+        "stateAgencies": 105,
+        "regEdu": 37,
+        "total": 284
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "total": 0,
+        "percentage": 0,
+        "verifiedManual": []
+      },
+      "protected": {
+        "nonprofits": 0,
+        "districts": 8,
+        "regEdu": 8,
+        "total": 16
+      },
+      "providersCount": 7
+    },
+    "rhode-island": {
+      "name": "Rhode Island",
+      "code": "RI",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 5,
+        "districts": 5,
+        "nonprofits": 15,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 28
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 5,
+        "districts": 5,
+        "nonprofits": 0,
+        "total": 10,
+        "percentage": 35.714285714285715,
+        "verifiedManual": [
+          {
+            "id": "sd-kent-ri"
+          },
+          {
+            "id": "sd-providence-ri"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 15,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 18
+      },
+      "providersCount": 0
+    },
+    "south-carolina": {
+      "name": "South Carolina",
+      "code": "SC",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 46,
+        "districts": 46,
+        "nonprofits": 138,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 233
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 46,
+        "districts": 46,
+        "nonprofits": 0,
+        "total": 92,
+        "percentage": 39.48497854077253,
+        "verifiedManual": [
+          {
+            "id": "sd-greenville-sc"
+          },
+          {
+            "id": "sd-richland-sc"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 138,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 141
+      },
+      "providersCount": 0
+    },
+    "south-dakota": {
+      "name": "South Dakota",
+      "code": "SD",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 66,
+        "districts": 66,
+        "nonprofits": 198,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 333
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 66,
+        "districts": 66,
+        "nonprofits": 0,
+        "total": 132,
+        "percentage": 39.63963963963964,
+        "verifiedManual": [
+          {
+            "id": "sd-minnehaha-sd"
+          },
+          {
+            "id": "sd-pennington-sd"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 198,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 201
+      },
+      "providersCount": 0
+    },
+    "tennessee": {
+      "name": "Tennessee",
+      "code": "TN",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 95,
+        "districts": 95,
+        "nonprofits": 285,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 478
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 95,
+        "districts": 95,
+        "nonprofits": 0,
+        "total": 190,
+        "percentage": 39.74895397489539,
+        "verifiedManual": [
+          {
+            "id": "sd-davidson-tn"
+          },
+          {
+            "id": "sd-shelby-tn"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 285,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 288
+      },
+      "providersCount": 0
+    },
+    "texas": {
+      "name": "Texas",
+      "code": "TX",
+      "claimedStatus": "COMPLETE",
+      "activeCounts": {
+        "offices": 254,
+        "districts": 264,
+        "nonprofits": 2129,
+        "stateAgencies": 78,
+        "regEdu": 20,
+        "total": 2745
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "total": 0,
+        "percentage": 0,
+        "verifiedManual": []
+      },
+      "protected": {
+        "nonprofits": 1564,
+        "districts": 16,
+        "regEdu": 20,
+        "total": 1600
+      },
+      "providersCount": 9
+    },
+    "utah": {
+      "name": "Utah",
+      "code": "UT",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 29,
+        "districts": 29,
+        "nonprofits": 87,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 148
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 29,
+        "districts": 29,
+        "nonprofits": 0,
+        "total": 58,
+        "percentage": 39.189189189189186,
+        "verifiedManual": [
+          {
+            "id": "sd-salt-lake-ut"
+          },
+          {
+            "id": "sd-utah-ut"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 87,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 90
+      },
+      "providersCount": 0
+    },
+    "vermont": {
+      "name": "Vermont",
+      "code": "VT",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 14,
+        "districts": 14,
+        "nonprofits": 42,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 73
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 14,
+        "districts": 14,
+        "nonprofits": 0,
+        "total": 28,
+        "percentage": 38.35616438356164,
+        "verifiedManual": [
+          {
+            "id": "sd-chittenden-vt"
+          },
+          {
+            "id": "sd-rutland-vt"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 42,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 45
+      },
+      "providersCount": 0
+    },
+    "virginia": {
+      "name": "Virginia",
+      "code": "VA",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 95,
+        "districts": 95,
+        "nonprofits": 285,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 478
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 95,
+        "districts": 95,
+        "nonprofits": 0,
+        "total": 190,
+        "percentage": 39.74895397489539,
+        "verifiedManual": [
+          {
+            "id": "sd-fairfax-va"
+          },
+          {
+            "id": "sd-prince-william-va"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 285,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 288
+      },
+      "providersCount": 0
+    },
+    "washington": {
+      "name": "Washington",
+      "code": "WA",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 39,
+        "districts": 39,
+        "nonprofits": 117,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 198
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 39,
+        "districts": 39,
+        "nonprofits": 0,
+        "total": 78,
+        "percentage": 39.39393939393939,
+        "verifiedManual": [
+          {
+            "id": "sd-king-wa"
+          },
+          {
+            "id": "sd-pierce-wa"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 117,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 120
+      },
+      "providersCount": 0
+    },
+    "west-virginia": {
+      "name": "West Virginia",
+      "code": "WV",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 55,
+        "districts": 55,
+        "nonprofits": 165,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 278
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 55,
+        "districts": 55,
+        "nonprofits": 0,
+        "total": 110,
+        "percentage": 39.568345323741006,
+        "verifiedManual": [
+          {
+            "id": "sd-berkeley-wv"
+          },
+          {
+            "id": "sd-kanawha-wv"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 165,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 168
+      },
+      "providersCount": 0
+    },
+    "wisconsin": {
+      "name": "Wisconsin",
+      "code": "WI",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 72,
+        "districts": 72,
+        "nonprofits": 216,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 363
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 72,
+        "districts": 72,
+        "nonprofits": 0,
+        "total": 144,
+        "percentage": 39.66942148760331,
+        "verifiedManual": [
+          {
+            "id": "sd-dane-wi"
+          },
+          {
+            "id": "sd-milwaukee-wi"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 216,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 219
+      },
+      "providersCount": 0
+    },
+    "wyoming": {
+      "name": "Wyoming",
+      "code": "WY",
+      "claimedStatus": "PILOT-READY PARTIAL",
+      "activeCounts": {
+        "offices": 23,
+        "districts": 23,
+        "nonprofits": 69,
+        "stateAgencies": 2,
+        "regEdu": 1,
+        "total": 118
+      },
+      "fallbacks": {
+        "offices": 0,
+        "districts": 0,
+        "nonprofits": 0,
+        "regEdu": 0,
+        "stateAgencies": 0,
+        "total": 0,
+        "activeFallbackIds": []
+      },
+      "placeholders": {
+        "mockCount": 0,
+        "mockDetails": []
+      },
+      "manualReview": {
+        "offices": 23,
+        "districts": 23,
+        "nonprofits": 0,
+        "total": 46,
+        "percentage": 38.983050847457626,
+        "verifiedManual": [
+          {
+            "id": "sd-laramie-wy"
+          },
+          {
+            "id": "sd-natrona-wy"
+          }
+        ]
+      },
+      "protected": {
+        "nonprofits": 69,
+        "districts": 2,
+        "regEdu": 1,
+        "total": 72
+      },
+      "providersCount": 0
+    }
+  }
+}

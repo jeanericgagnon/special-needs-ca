@@ -1,0 +1,34 @@
+[
+  {
+    "id": "prov-columbus-sped-law-review",
+    "name": "Ohio Special Education Advocates & Legal Services",
+    "categories": "legal,advocacy",
+    "county_id": "franklin-oh",
+    "phone": "(614) 555-0188",
+    "email": "info@ohiospedlaw.com",
+    "address": "100 E Broad St, Columbus, OH 43215",
+    "source_url": "https://www.ohiospedlaw.com",
+    "source_type": "commercial_directory",
+    "data_origin": "scraped",
+    "verification_status": "pending_manual_review",
+    "confidence_score": 7.0,
+    "evidence_level": "source_listed",
+    "notes": "Private special education attorney. Excluded from auto-promotion."
+  },
+  {
+    "id": "prov-cleveland-aba-review",
+    "name": "Cleveland Autism Therapy & ABA Services",
+    "categories": "therapy,aba",
+    "county_id": "cuyahoga-oh",
+    "phone": "(216) 555-0177",
+    "email": "contact@clevelandaba.com",
+    "address": "2000 Ontario St, Cleveland, OH 44113",
+    "source_url": "https://www.clevelandaba.com",
+    "source_type": "commercial_directory",
+    "data_origin": "scraped",
+    "verification_status": "pending_manual_review",
+    "confidence_score": 6.8,
+    "evidence_level": "source_listed",
+    "notes": "Private ABA therapy center. Excluded from auto-promotion."
+  }
+]

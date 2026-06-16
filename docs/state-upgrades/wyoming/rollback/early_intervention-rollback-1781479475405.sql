@@ -1,0 +1,67 @@
+-- Rollback Script for State: Wyoming | Phase: early_intervention
+-- Generated At: 2026-06-14T23:24:35.420Z
+
+BEGIN TRANSACTION;
+
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-region-14' AND county_id = 'fremont-wy';
+DELETE FROM state_resource_agencies WHERE id = 'wy-ei-region-14';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-region-13' AND county_id = 'campbell-wy';
+DELETE FROM state_resource_agencies WHERE id = 'wy-ei-region-13';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-region-12' AND county_id = 'laramie-wy';
+DELETE FROM state_resource_agencies WHERE id = 'wy-ei-region-12';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-region-11' AND county_id = 'albany-wy';
+DELETE FROM state_resource_agencies WHERE id = 'wy-ei-region-11';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-region-10' AND county_id = 'niobrara-wy';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-region-10' AND county_id = 'goshen-wy';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-region-10' AND county_id = 'platte-wy';
+DELETE FROM state_resource_agencies WHERE id = 'wy-ei-region-10';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-region-9' AND county_id = 'natrona-wy';
+DELETE FROM state_resource_agencies WHERE id = 'wy-ei-region-9';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-region-8' AND county_id = 'carbon-wy';
+DELETE FROM state_resource_agencies WHERE id = 'wy-ei-region-8';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-region-7' AND county_id = 'sweetwater-wy';
+DELETE FROM state_resource_agencies WHERE id = 'wy-ei-region-7';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-region-6' AND county_id = 'fremont-wy';
+DELETE FROM state_resource_agencies WHERE id = 'wy-ei-region-6';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-region-5' AND county_id = 'lincoln-wy';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-region-5' AND county_id = 'uinta-wy';
+DELETE FROM state_resource_agencies WHERE id = 'wy-ei-region-5';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-region-4' AND county_id = 'teton-wy';
+DELETE FROM state_resource_agencies WHERE id = 'wy-ei-region-4';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-region-3' AND county_id = 'crook-wy';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-region-3' AND county_id = 'weston-wy';
+DELETE FROM state_resource_agencies WHERE id = 'wy-ei-region-3';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-region-2' AND county_id = 'johnson-wy';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-region-2' AND county_id = 'sheridan-wy';
+DELETE FROM state_resource_agencies WHERE id = 'wy-ei-region-2';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-region-1' AND county_id = 'washakie-wy';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-region-1' AND county_id = 'hot-springs-wy';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-region-1' AND county_id = 'big-horn-wy';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-region-1' AND county_id = 'park-wy';
+DELETE FROM state_resource_agencies WHERE id = 'wy-ei-region-1';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-agency' AND county_id = 'weston-wy';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-agency' AND county_id = 'washakie-wy';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-agency' AND county_id = 'uinta-wy';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-agency' AND county_id = 'teton-wy';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-agency' AND county_id = 'sweetwater-wy';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-agency' AND county_id = 'sublette-wy';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-agency' AND county_id = 'sheridan-wy';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-agency' AND county_id = 'platte-wy';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-agency' AND county_id = 'park-wy';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-agency' AND county_id = 'niobrara-wy';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-agency' AND county_id = 'natrona-wy';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-agency' AND county_id = 'lincoln-wy';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-agency' AND county_id = 'laramie-wy';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-agency' AND county_id = 'johnson-wy';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-agency' AND county_id = 'hot-springs-wy';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-agency' AND county_id = 'goshen-wy';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-agency' AND county_id = 'fremont-wy';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-agency' AND county_id = 'crook-wy';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-agency' AND county_id = 'converse-wy';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-agency' AND county_id = 'carbon-wy';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-agency' AND county_id = 'campbell-wy';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-agency' AND county_id = 'big-horn-wy';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wy-ei-agency' AND county_id = 'albany-wy';
+UPDATE state_resource_agencies SET state_id = 'wyoming', agency_type = 'early_intervention', name = 'Wyoming Early Intervention State Office', counties_served = 'statewide', catchment_boundaries = 'statewide', website = 'https://dhhs.wyoming.gov/earlystart', intake_phone = '', early_intervention_contact = '', agency_intake_contact = '', eligibility_info_page = '', services_page = '', appeals_info = '', frc_relationship = NULL, office_locations = NULL, languages = '', last_verified_date = '2026-06-14', source_urls = 'https://dhhs.wyoming.gov/earlystart', source_url = 'https://dhhs.wyoming.gov/earlystart', source_type = 'official_website', data_origin = 'scraped', verification_status = 'manual_review_required', last_scraped_at = NULL, confidence_score = 9.5, evidence_level = 'official_locator_derived' WHERE id = 'wy-ei-agency';
+
+COMMIT;

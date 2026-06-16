@@ -1,0 +1,83 @@
+{
+  "state_code": "NC",
+  "targets": [
+    {
+      "category": "benefits_hhs",
+      "url": "https://www.ncdhhs.gov/divisions/social-services/local-county-social-services-departments",
+      "name": "NCDHHS County DSS Directory",
+      "classification": "verified_official_source"
+    },
+    {
+      "category": "dd_idd",
+      "url": "https://www.ncdhhs.gov/providers/lme-mco-directory",
+      "name": "NCDHHS LME/MCO Directory",
+      "classification": "verified_official_source"
+    },
+    {
+      "category": "early_intervention",
+      "url": "https://www.ncdhhs.gov/divisions/mental-health-developmental-disabilities-and-substance-use-services/child-and-family-mental-health-developmental-disabilities-and-substance-use-services/early-intervention/childrens-developmental-services-agencies-cdsas",
+      "name": "NCDHHS CDSA Location Directory",
+      "classification": "verified_official_source"
+    },
+    {
+      "category": "education_regional",
+      "url": "https://www.dpi.nc.gov/districts-schools/classroom-resources/exceptional-children",
+      "name": "NCDPI Exceptional Children Division",
+      "classification": "verified_official_source"
+    },
+    {
+      "category": "school_districts",
+      "url": "https://www.dpi.nc.gov/districts-schools/district-operations/financial-and-business-services/demographics-and-enrollment/school-district-maps",
+      "name": "NCDPI School Districts Directory",
+      "classification": "verified_official_source"
+    },
+    {
+      "category": "able",
+      "url": "https://nc.savewithable.com",
+      "name": "NC ABLE Program",
+      "classification": "verified_official_source"
+    },
+    {
+      "category": "pti",
+      "url": "https://www.ecac-parentcenter.org",
+      "name": "Exceptional Children's Assistance Center",
+      "classification": "verified_trusted_nonprofit_source"
+    },
+    {
+      "category": "pa",
+      "url": "https://disabilityrightsnc.org",
+      "name": "Disability Rights North Carolina",
+      "classification": "verified_trusted_nonprofit_source"
+    },
+    {
+      "category": "arc",
+      "url": "https://www.arcnc.org",
+      "name": "The Arc of North Carolina",
+      "classification": "verified_trusted_nonprofit_source"
+    },
+    {
+      "category": "cil",
+      "url": "https://www.ncdhhs.gov/divisions/vocational-rehabilitation-services/independent-living-services",
+      "name": "NC Centers for Independent Living Directory",
+      "classification": "verified_official_source"
+    },
+    {
+      "category": "vr",
+      "url": "https://www.ncdhhs.gov/divisions/vocational-rehabilitation-services",
+      "name": "NC Vocational Rehabilitation Services",
+      "classification": "verified_official_source"
+    },
+    {
+      "category": "caregiver",
+      "url": "https://medicaid.ncdhhs.gov/providers/programs-and-services/long-term-services-and-supports/community-alternatives-program-children",
+      "name": "NC Medicaid CAP/C",
+      "classification": "verified_official_source"
+    },
+    {
+      "category": "clinics",
+      "url": "https://www.cidd.unc.edu",
+      "name": "UNC Carolina Institute for Developmental Disabilities",
+      "classification": "verified_institutional_source"
+    }
+  ]
+}

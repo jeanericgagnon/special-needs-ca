@@ -1,0 +1,12 @@
+{
+  "state_code": "GA",
+  "audit_date": "2026-06-14",
+  "metrics": {
+    "local_offices": {
+      "fallbacks": 148
+    },
+    "school_districts": {
+      "fallbacks": 148
+    }
+  }
+}

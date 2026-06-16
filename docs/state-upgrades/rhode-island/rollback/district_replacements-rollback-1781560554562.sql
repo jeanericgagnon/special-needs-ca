@@ -1,0 +1,10 @@
+-- Rollback Script for State: Rhode Island | Phase: district_replacements
+-- Generated At: 2026-06-15T21:55:54.579Z
+
+BEGIN TRANSACTION;
+
+UPDATE school_districts SET county_id = 'washington-ri', name = 'Washington County School District', spec_ed_contact_phone = '(401) 222-4600', spec_ed_contact_email = '', website = 'https://www.ride.ri.gov/StudentsFamilies/SpecialEducation.aspx', total_enrollment = NULL, special_ed_pct = NULL, inclusion_rate_pct = NULL, self_contained_rate_pct = NULL, source_url = 'https://www.ride.ri.gov/', source_type = 'official_directory', data_origin = 'scraped', verification_status = 'source_listed', last_verified_date = '2026-06-14', last_scraped_at = NULL, confidence_score = 0.85, evidence_level = 'official_locator_derived' WHERE id = 'sd-washington-ri';
+UPDATE school_districts SET county_id = 'newport-ri', name = 'Newport County School District', spec_ed_contact_phone = '(401) 222-4600', spec_ed_contact_email = '', website = 'https://www.ride.ri.gov/StudentsFamilies/SpecialEducation.aspx', total_enrollment = NULL, special_ed_pct = NULL, inclusion_rate_pct = NULL, self_contained_rate_pct = NULL, source_url = 'https://www.ride.ri.gov/', source_type = 'official_directory', data_origin = 'scraped', verification_status = 'source_listed', last_verified_date = '2026-06-14', last_scraped_at = NULL, confidence_score = 0.85, evidence_level = 'official_locator_derived' WHERE id = 'sd-newport-ri';
+UPDATE school_districts SET county_id = 'bristol-ri', name = 'Bristol County School District', spec_ed_contact_phone = '(401) 222-4600', spec_ed_contact_email = '', website = 'https://www.ride.ri.gov/StudentsFamilies/SpecialEducation.aspx', total_enrollment = NULL, special_ed_pct = NULL, inclusion_rate_pct = NULL, self_contained_rate_pct = NULL, source_url = 'https://www.ride.ri.gov/', source_type = 'official_directory', data_origin = 'scraped', verification_status = 'source_listed', last_verified_date = '2026-06-14', last_scraped_at = NULL, confidence_score = 0.85, evidence_level = 'official_locator_derived' WHERE id = 'sd-bristol-ri';
+
+COMMIT;

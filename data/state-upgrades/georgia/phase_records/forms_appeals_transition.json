@@ -1,0 +1,15 @@
+[
+  {
+    "source_url": "https://gateway.ga.gov",
+    "confidence_score": 9.5,
+    "notes": "State Medicaid and developmental appeals application portal.",
+    "suggested_target_id": "ga-forms-portal",
+    "name": "Georgia Benefits Application and Appeals Guide",
+    "phone": "(877) 423-4746",
+    "physical_county": "appling-ga",
+    "agency_type": "forms_portal",
+    "evidence_level": "source_listed",
+    "verification_status": "source_listed",
+    "data_origin": "scraped"
+  }
+]

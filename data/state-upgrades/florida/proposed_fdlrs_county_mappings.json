@@ -1,0 +1,337 @@
+[
+  {
+    "county_id": "lake-fl",
+    "fdlrs_center_id": "fdlrs-action",
+    "fdlrs_center_name": "FDLRS Action Associate Center"
+  },
+  {
+    "county_id": "orange-fl",
+    "fdlrs_center_id": "fdlrs-action",
+    "fdlrs_center_name": "FDLRS Action Associate Center"
+  },
+  {
+    "county_id": "osceola-fl",
+    "fdlrs_center_id": "fdlrs-action",
+    "fdlrs_center_name": "FDLRS Action Associate Center"
+  },
+  {
+    "county_id": "seminole-fl",
+    "fdlrs_center_id": "fdlrs-action",
+    "fdlrs_center_name": "FDLRS Action Associate Center"
+  },
+  {
+    "county_id": "sumter-fl",
+    "fdlrs_center_id": "fdlrs-action",
+    "fdlrs_center_name": "FDLRS Action Associate Center"
+  },
+  {
+    "county_id": "palm-beach-fl",
+    "fdlrs_center_id": "fdlrs-alpha",
+    "fdlrs_center_name": "FDLRS Alpha Associate Center"
+  },
+  {
+    "county_id": "broward-fl",
+    "fdlrs_center_id": "fdlrs-reach",
+    "fdlrs_center_name": "FDLRS Reach Associate Center"
+  },
+  {
+    "county_id": "clay-fl",
+    "fdlrs_center_id": "fdlrs-crown",
+    "fdlrs_center_name": "FDLRS Crown Associate Center"
+  },
+  {
+    "county_id": "duval-fl",
+    "fdlrs_center_id": "fdlrs-crown",
+    "fdlrs_center_name": "FDLRS Crown Associate Center"
+  },
+  {
+    "county_id": "nassau-fl",
+    "fdlrs_center_id": "fdlrs-crown",
+    "fdlrs_center_name": "FDLRS Crown Associate Center"
+  },
+  {
+    "county_id": "brevard-fl",
+    "fdlrs_center_id": "fdlrs-east",
+    "fdlrs_center_name": "FDLRS East Associate Center"
+  },
+  {
+    "county_id": "volusia-fl",
+    "fdlrs_center_id": "fdlrs-east",
+    "fdlrs_center_name": "FDLRS East Associate Center"
+  },
+  {
+    "county_id": "escambia-fl",
+    "fdlrs_center_id": "fdlrs-emerald-coast",
+    "fdlrs_center_name": "FDLRS Emerald Coast Associate Center"
+  },
+  {
+    "county_id": "okaloosa-fl",
+    "fdlrs_center_id": "fdlrs-emerald-coast",
+    "fdlrs_center_name": "FDLRS Emerald Coast Associate Center"
+  },
+  {
+    "county_id": "santa-rosa-fl",
+    "fdlrs_center_id": "fdlrs-emerald-coast",
+    "fdlrs_center_name": "FDLRS Emerald Coast Associate Center"
+  },
+  {
+    "county_id": "indian-river-fl",
+    "fdlrs_center_id": "fdlrs-galaxy",
+    "fdlrs_center_name": "FDLRS Galaxy Associate Center"
+  },
+  {
+    "county_id": "martin-fl",
+    "fdlrs_center_id": "fdlrs-galaxy",
+    "fdlrs_center_name": "FDLRS Galaxy Associate Center"
+  },
+  {
+    "county_id": "okeechobee-fl",
+    "fdlrs_center_id": "fdlrs-galaxy",
+    "fdlrs_center_name": "FDLRS Galaxy Associate Center"
+  },
+  {
+    "county_id": "st-lucie-fl",
+    "fdlrs_center_id": "fdlrs-galaxy",
+    "fdlrs_center_name": "FDLRS Galaxy Associate Center"
+  },
+  {
+    "county_id": "columbia-fl",
+    "fdlrs_center_id": "fdlrs-gateway",
+    "fdlrs_center_name": "FDLRS Gateway Associate Center"
+  },
+  {
+    "county_id": "hamilton-fl",
+    "fdlrs_center_id": "fdlrs-gateway",
+    "fdlrs_center_name": "FDLRS Gateway Associate Center"
+  },
+  {
+    "county_id": "lafayette-fl",
+    "fdlrs_center_id": "fdlrs-gateway",
+    "fdlrs_center_name": "FDLRS Gateway Associate Center"
+  },
+  {
+    "county_id": "madison-fl",
+    "fdlrs_center_id": "fdlrs-gateway",
+    "fdlrs_center_name": "FDLRS Gateway Associate Center"
+  },
+  {
+    "county_id": "suwannee-fl",
+    "fdlrs_center_id": "fdlrs-gateway",
+    "fdlrs_center_name": "FDLRS Gateway Associate Center"
+  },
+  {
+    "county_id": "hernando-fl",
+    "fdlrs_center_id": "fdlrs-gulfcoast",
+    "fdlrs_center_name": "FDLRS Gulfcoast Associate Center"
+  },
+  {
+    "county_id": "pasco-fl",
+    "fdlrs_center_id": "fdlrs-gulfcoast",
+    "fdlrs_center_name": "FDLRS Gulfcoast Associate Center"
+  },
+  {
+    "county_id": "pinellas-fl",
+    "fdlrs_center_id": "fdlrs-gulfcoast",
+    "fdlrs_center_name": "FDLRS Gulfcoast Associate Center"
+  },
+  {
+    "county_id": "desoto-fl",
+    "fdlrs_center_id": "fdlrs-heartland",
+    "fdlrs_center_name": "FDLRS Heartland Associate Center"
+  },
+  {
+    "county_id": "glades-fl",
+    "fdlrs_center_id": "fdlrs-heartland",
+    "fdlrs_center_name": "FDLRS Heartland Associate Center"
+  },
+  {
+    "county_id": "hendry-fl",
+    "fdlrs_center_id": "fdlrs-heartland",
+    "fdlrs_center_name": "FDLRS Heartland Associate Center"
+  },
+  {
+    "county_id": "highlands-fl",
+    "fdlrs_center_id": "fdlrs-heartland",
+    "fdlrs_center_name": "FDLRS Heartland Associate Center"
+  },
+  {
+    "county_id": "hillsborough-fl",
+    "fdlrs_center_id": "fdlrs-hillsborough",
+    "fdlrs_center_name": "FDLRS Hillsborough Associate Center"
+  },
+  {
+    "county_id": "collier-fl",
+    "fdlrs_center_id": "fdlrs-island-coast",
+    "fdlrs_center_name": "FDLRS Island Coast Associate Center"
+  },
+  {
+    "county_id": "lee-fl",
+    "fdlrs_center_id": "fdlrs-island-coast",
+    "fdlrs_center_name": "FDLRS Island Coast Associate Center"
+  },
+  {
+    "county_id": "gadsden-fl",
+    "fdlrs_center_id": "fdlrs-miccosukee",
+    "fdlrs_center_name": "FDLRS Miccosukee Associate Center"
+  },
+  {
+    "county_id": "jefferson-fl",
+    "fdlrs_center_id": "fdlrs-miccosukee",
+    "fdlrs_center_name": "FDLRS Miccosukee Associate Center"
+  },
+  {
+    "county_id": "leon-fl",
+    "fdlrs_center_id": "fdlrs-miccosukee",
+    "fdlrs_center_name": "FDLRS Miccosukee Associate Center"
+  },
+  {
+    "county_id": "taylor-fl",
+    "fdlrs_center_id": "fdlrs-miccosukee",
+    "fdlrs_center_name": "FDLRS Miccosukee Associate Center"
+  },
+  {
+    "county_id": "wakulla-fl",
+    "fdlrs_center_id": "fdlrs-miccosukee",
+    "fdlrs_center_name": "FDLRS Miccosukee Associate Center"
+  },
+  {
+    "county_id": "baker-fl",
+    "fdlrs_center_id": "fdlrs-nefec",
+    "fdlrs_center_name": "FDLRS NEFEC Associate Center"
+  },
+  {
+    "county_id": "bradford-fl",
+    "fdlrs_center_id": "fdlrs-nefec",
+    "fdlrs_center_name": "FDLRS NEFEC Associate Center"
+  },
+  {
+    "county_id": "flagler-fl",
+    "fdlrs_center_id": "fdlrs-nefec",
+    "fdlrs_center_name": "FDLRS NEFEC Associate Center"
+  },
+  {
+    "county_id": "putnam-fl",
+    "fdlrs_center_id": "fdlrs-nefec",
+    "fdlrs_center_name": "FDLRS NEFEC Associate Center"
+  },
+  {
+    "county_id": "st-johns-fl",
+    "fdlrs_center_id": "fdlrs-nefec",
+    "fdlrs_center_name": "FDLRS NEFEC Associate Center"
+  },
+  {
+    "county_id": "union-fl",
+    "fdlrs_center_id": "fdlrs-nefec",
+    "fdlrs_center_name": "FDLRS NEFEC Associate Center"
+  },
+  {
+    "county_id": "bay-fl",
+    "fdlrs_center_id": "fdlrs-paec",
+    "fdlrs_center_name": "FDLRS PAEC Associate Center"
+  },
+  {
+    "county_id": "calhoun-fl",
+    "fdlrs_center_id": "fdlrs-paec",
+    "fdlrs_center_name": "FDLRS PAEC Associate Center"
+  },
+  {
+    "county_id": "franklin-fl",
+    "fdlrs_center_id": "fdlrs-paec",
+    "fdlrs_center_name": "FDLRS PAEC Associate Center"
+  },
+  {
+    "county_id": "gulf-fl",
+    "fdlrs_center_id": "fdlrs-paec",
+    "fdlrs_center_name": "FDLRS PAEC Associate Center"
+  },
+  {
+    "county_id": "holmes-fl",
+    "fdlrs_center_id": "fdlrs-paec",
+    "fdlrs_center_name": "FDLRS PAEC Associate Center"
+  },
+  {
+    "county_id": "jackson-fl",
+    "fdlrs_center_id": "fdlrs-paec",
+    "fdlrs_center_name": "FDLRS PAEC Associate Center"
+  },
+  {
+    "county_id": "liberty-fl",
+    "fdlrs_center_id": "fdlrs-paec",
+    "fdlrs_center_name": "FDLRS PAEC Associate Center"
+  },
+  {
+    "county_id": "walton-fl",
+    "fdlrs_center_id": "fdlrs-paec",
+    "fdlrs_center_name": "FDLRS PAEC Associate Center"
+  },
+  {
+    "county_id": "washington-fl",
+    "fdlrs_center_id": "fdlrs-paec",
+    "fdlrs_center_name": "FDLRS PAEC Associate Center"
+  },
+  {
+    "county_id": "miami-dade-fl",
+    "fdlrs_center_id": "fdlrs-south",
+    "fdlrs_center_name": "FDLRS South Associate Center"
+  },
+  {
+    "county_id": "monroe-fl",
+    "fdlrs_center_id": "fdlrs-south",
+    "fdlrs_center_name": "FDLRS South Associate Center"
+  },
+  {
+    "county_id": "alachua-fl",
+    "fdlrs_center_id": "fdlrs-springs",
+    "fdlrs_center_name": "FDLRS Springs Associate Center"
+  },
+  {
+    "county_id": "citrus-fl",
+    "fdlrs_center_id": "fdlrs-springs",
+    "fdlrs_center_name": "FDLRS Springs Associate Center"
+  },
+  {
+    "county_id": "dixie-fl",
+    "fdlrs_center_id": "fdlrs-springs",
+    "fdlrs_center_name": "FDLRS Springs Associate Center"
+  },
+  {
+    "county_id": "gilchrist-fl",
+    "fdlrs_center_id": "fdlrs-springs",
+    "fdlrs_center_name": "FDLRS Springs Associate Center"
+  },
+  {
+    "county_id": "levy-fl",
+    "fdlrs_center_id": "fdlrs-springs",
+    "fdlrs_center_name": "FDLRS Springs Associate Center"
+  },
+  {
+    "county_id": "marion-fl",
+    "fdlrs_center_id": "fdlrs-springs",
+    "fdlrs_center_name": "FDLRS Springs Associate Center"
+  },
+  {
+    "county_id": "charlotte-fl",
+    "fdlrs_center_id": "fdlrs-suncoast",
+    "fdlrs_center_name": "FDLRS Suncoast Associate Center"
+  },
+  {
+    "county_id": "manatee-fl",
+    "fdlrs_center_id": "fdlrs-suncoast",
+    "fdlrs_center_name": "FDLRS Suncoast Associate Center"
+  },
+  {
+    "county_id": "sarasota-fl",
+    "fdlrs_center_id": "fdlrs-suncoast",
+    "fdlrs_center_name": "FDLRS Suncoast Associate Center"
+  },
+  {
+    "county_id": "polk-fl",
+    "fdlrs_center_id": "fdlrs-sunrise",
+    "fdlrs_center_name": "FDLRS Sunrise Associate Center"
+  },
+  {
+    "county_id": "hardee-fl",
+    "fdlrs_center_id": "fdlrs-sunrise",
+    "fdlrs_center_name": "FDLRS Sunrise Associate Center"
+  }
+]

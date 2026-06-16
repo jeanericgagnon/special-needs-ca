@@ -1,0 +1,342 @@
+[
+  {
+    "county_id": "escambia-fl",
+    "early_steps_office_id": "fl-earlysteps-western-panhandle",
+    "early_steps_office_name": "Western Panhandle Early Steps"
+  },
+  {
+    "county_id": "santa-rosa-fl",
+    "early_steps_office_id": "fl-earlysteps-western-panhandle",
+    "early_steps_office_name": "Western Panhandle Early Steps"
+  },
+  {
+    "county_id": "okaloosa-fl",
+    "early_steps_office_id": "fl-earlysteps-western-panhandle",
+    "early_steps_office_name": "Western Panhandle Early Steps"
+  },
+  {
+    "county_id": "walton-fl",
+    "early_steps_office_id": "fl-earlysteps-western-panhandle",
+    "early_steps_office_name": "Western Panhandle Early Steps"
+  },
+  {
+    "county_id": "leon-fl",
+    "early_steps_office_id": "fl-earlysteps-big-bend",
+    "early_steps_office_name": "Big Bend Early Steps"
+  },
+  {
+    "county_id": "gadsden-fl",
+    "early_steps_office_id": "fl-earlysteps-big-bend",
+    "early_steps_office_name": "Big Bend Early Steps"
+  },
+  {
+    "county_id": "jefferson-fl",
+    "early_steps_office_id": "fl-earlysteps-big-bend",
+    "early_steps_office_name": "Big Bend Early Steps"
+  },
+  {
+    "county_id": "madison-fl",
+    "early_steps_office_id": "fl-earlysteps-big-bend",
+    "early_steps_office_name": "Big Bend Early Steps"
+  },
+  {
+    "county_id": "taylor-fl",
+    "early_steps_office_id": "fl-earlysteps-big-bend",
+    "early_steps_office_name": "Big Bend Early Steps"
+  },
+  {
+    "county_id": "wakulla-fl",
+    "early_steps_office_id": "fl-earlysteps-big-bend",
+    "early_steps_office_name": "Big Bend Early Steps"
+  },
+  {
+    "county_id": "franklin-fl",
+    "early_steps_office_id": "fl-earlysteps-big-bend",
+    "early_steps_office_name": "Big Bend Early Steps"
+  },
+  {
+    "county_id": "liberty-fl",
+    "early_steps_office_id": "fl-earlysteps-big-bend",
+    "early_steps_office_name": "Big Bend Early Steps"
+  },
+  {
+    "county_id": "bay-fl",
+    "early_steps_office_id": "fl-earlysteps-big-bend",
+    "early_steps_office_name": "Big Bend Early Steps"
+  },
+  {
+    "county_id": "calhoun-fl",
+    "early_steps_office_id": "fl-earlysteps-big-bend",
+    "early_steps_office_name": "Big Bend Early Steps"
+  },
+  {
+    "county_id": "gulf-fl",
+    "early_steps_office_id": "fl-earlysteps-big-bend",
+    "early_steps_office_name": "Big Bend Early Steps"
+  },
+  {
+    "county_id": "holmes-fl",
+    "early_steps_office_id": "fl-earlysteps-big-bend",
+    "early_steps_office_name": "Big Bend Early Steps"
+  },
+  {
+    "county_id": "jackson-fl",
+    "early_steps_office_id": "fl-earlysteps-big-bend",
+    "early_steps_office_name": "Big Bend Early Steps"
+  },
+  {
+    "county_id": "washington-fl",
+    "early_steps_office_id": "fl-earlysteps-big-bend",
+    "early_steps_office_name": "Big Bend Early Steps"
+  },
+  {
+    "county_id": "baker-fl",
+    "early_steps_office_id": "fl-earlysteps-northeastern",
+    "early_steps_office_name": "Northeastern Early Steps"
+  },
+  {
+    "county_id": "bradford-fl",
+    "early_steps_office_id": "fl-earlysteps-northeastern",
+    "early_steps_office_name": "Northeastern Early Steps"
+  },
+  {
+    "county_id": "clay-fl",
+    "early_steps_office_id": "fl-earlysteps-northeastern",
+    "early_steps_office_name": "Northeastern Early Steps"
+  },
+  {
+    "county_id": "duval-fl",
+    "early_steps_office_id": "fl-earlysteps-northeastern",
+    "early_steps_office_name": "Northeastern Early Steps"
+  },
+  {
+    "county_id": "nassau-fl",
+    "early_steps_office_id": "fl-earlysteps-northeastern",
+    "early_steps_office_name": "Northeastern Early Steps"
+  },
+  {
+    "county_id": "st-johns-fl",
+    "early_steps_office_id": "fl-earlysteps-northeastern",
+    "early_steps_office_name": "Northeastern Early Steps"
+  },
+  {
+    "county_id": "alachua-fl",
+    "early_steps_office_id": "fl-earlysteps-north-central",
+    "early_steps_office_name": "North Central Early Steps"
+  },
+  {
+    "county_id": "columbia-fl",
+    "early_steps_office_id": "fl-earlysteps-north-central",
+    "early_steps_office_name": "North Central Early Steps"
+  },
+  {
+    "county_id": "dixie-fl",
+    "early_steps_office_id": "fl-earlysteps-north-central",
+    "early_steps_office_name": "North Central Early Steps"
+  },
+  {
+    "county_id": "gilchrist-fl",
+    "early_steps_office_id": "fl-earlysteps-north-central",
+    "early_steps_office_name": "North Central Early Steps"
+  },
+  {
+    "county_id": "hamilton-fl",
+    "early_steps_office_id": "fl-earlysteps-north-central",
+    "early_steps_office_name": "North Central Early Steps"
+  },
+  {
+    "county_id": "lafayette-fl",
+    "early_steps_office_id": "fl-earlysteps-north-central",
+    "early_steps_office_name": "North Central Early Steps"
+  },
+  {
+    "county_id": "levy-fl",
+    "early_steps_office_id": "fl-earlysteps-north-central",
+    "early_steps_office_name": "North Central Early Steps"
+  },
+  {
+    "county_id": "marion-fl",
+    "early_steps_office_id": "fl-earlysteps-north-central",
+    "early_steps_office_name": "North Central Early Steps"
+  },
+  {
+    "county_id": "suwannee-fl",
+    "early_steps_office_id": "fl-earlysteps-north-central",
+    "early_steps_office_name": "North Central Early Steps"
+  },
+  {
+    "county_id": "union-fl",
+    "early_steps_office_id": "fl-earlysteps-north-central",
+    "early_steps_office_name": "North Central Early Steps"
+  },
+  {
+    "county_id": "flagler-fl",
+    "early_steps_office_id": "fl-earlysteps-north-beaches",
+    "early_steps_office_name": "North Beaches Early Steps"
+  },
+  {
+    "county_id": "lake-fl",
+    "early_steps_office_id": "fl-earlysteps-north-beaches",
+    "early_steps_office_name": "North Beaches Early Steps"
+  },
+  {
+    "county_id": "putnam-fl",
+    "early_steps_office_id": "fl-earlysteps-north-beaches",
+    "early_steps_office_name": "North Beaches Early Steps"
+  },
+  {
+    "county_id": "sumter-fl",
+    "early_steps_office_id": "fl-earlysteps-north-beaches",
+    "early_steps_office_name": "North Beaches Early Steps"
+  },
+  {
+    "county_id": "volusia-fl",
+    "early_steps_office_id": "fl-earlysteps-north-beaches",
+    "early_steps_office_name": "North Beaches Early Steps"
+  },
+  {
+    "county_id": "orange-fl",
+    "early_steps_office_id": "fl-earlysteps-central",
+    "early_steps_office_name": "Central Florida Early Steps"
+  },
+  {
+    "county_id": "osceola-fl",
+    "early_steps_office_id": "fl-earlysteps-central",
+    "early_steps_office_name": "Central Florida Early Steps"
+  },
+  {
+    "county_id": "seminole-fl",
+    "early_steps_office_id": "fl-earlysteps-central",
+    "early_steps_office_name": "Central Florida Early Steps"
+  },
+  {
+    "county_id": "hillsborough-fl",
+    "early_steps_office_id": "fl-earlysteps-bay-area",
+    "early_steps_office_name": "Bay Area Early Steps"
+  },
+  {
+    "county_id": "polk-fl",
+    "early_steps_office_id": "fl-earlysteps-bay-area",
+    "early_steps_office_name": "Bay Area Early Steps"
+  },
+  {
+    "county_id": "citrus-fl",
+    "early_steps_office_id": "fl-earlysteps-west-central",
+    "early_steps_office_name": "West Central Early Steps"
+  },
+  {
+    "county_id": "hernando-fl",
+    "early_steps_office_id": "fl-earlysteps-west-central",
+    "early_steps_office_name": "West Central Early Steps"
+  },
+  {
+    "county_id": "pasco-fl",
+    "early_steps_office_id": "fl-earlysteps-west-central",
+    "early_steps_office_name": "West Central Early Steps"
+  },
+  {
+    "county_id": "pinellas-fl",
+    "early_steps_office_id": "fl-earlysteps-west-central",
+    "early_steps_office_name": "West Central Early Steps"
+  },
+  {
+    "county_id": "charlotte-fl",
+    "early_steps_office_id": "fl-earlysteps-gulf-central",
+    "early_steps_office_name": "Gulf Central Early Steps"
+  },
+  {
+    "county_id": "desoto-fl",
+    "early_steps_office_id": "fl-earlysteps-gulf-central",
+    "early_steps_office_name": "Gulf Central Early Steps"
+  },
+  {
+    "county_id": "hardee-fl",
+    "early_steps_office_id": "fl-earlysteps-gulf-central",
+    "early_steps_office_name": "Gulf Central Early Steps"
+  },
+  {
+    "county_id": "highlands-fl",
+    "early_steps_office_id": "fl-earlysteps-gulf-central",
+    "early_steps_office_name": "Gulf Central Early Steps"
+  },
+  {
+    "county_id": "manatee-fl",
+    "early_steps_office_id": "fl-earlysteps-gulf-central",
+    "early_steps_office_name": "Gulf Central Early Steps"
+  },
+  {
+    "county_id": "sarasota-fl",
+    "early_steps_office_id": "fl-earlysteps-gulf-central",
+    "early_steps_office_name": "Gulf Central Early Steps"
+  },
+  {
+    "county_id": "collier-fl",
+    "early_steps_office_id": "fl-earlysteps-southwest",
+    "early_steps_office_name": "Southwest Florida Early Steps"
+  },
+  {
+    "county_id": "lee-fl",
+    "early_steps_office_id": "fl-earlysteps-southwest",
+    "early_steps_office_name": "Southwest Florida Early Steps"
+  },
+  {
+    "county_id": "hendry-fl",
+    "early_steps_office_id": "fl-earlysteps-southwest",
+    "early_steps_office_name": "Southwest Florida Early Steps"
+  },
+  {
+    "county_id": "glades-fl",
+    "early_steps_office_id": "fl-earlysteps-southwest",
+    "early_steps_office_name": "Southwest Florida Early Steps"
+  },
+  {
+    "county_id": "broward-fl",
+    "early_steps_office_id": "fl-earlysteps-gold-coast",
+    "early_steps_office_name": "Gold Coast Early Steps"
+  },
+  {
+    "county_id": "miami-dade-fl",
+    "early_steps_office_id": "fl-earlysteps-north-dade",
+    "early_steps_office_name": "North Dade Early Steps"
+  },
+  {
+    "county_id": "miami-dade-fl",
+    "early_steps_office_id": "fl-earlysteps-southernmost",
+    "early_steps_office_name": "Southernmost Coast Early Steps"
+  },
+  {
+    "county_id": "monroe-fl",
+    "early_steps_office_id": "fl-earlysteps-southernmost",
+    "early_steps_office_name": "Southernmost Coast Early Steps"
+  },
+  {
+    "county_id": "brevard-fl",
+    "early_steps_office_id": "fl-earlysteps-space-coast",
+    "early_steps_office_name": "Space Coast Early Steps"
+  },
+  {
+    "county_id": "palm-beach-fl",
+    "early_steps_office_id": "fl-earlysteps-treasure-coast",
+    "early_steps_office_name": "Treasure Coast Early Steps"
+  },
+  {
+    "county_id": "martin-fl",
+    "early_steps_office_id": "fl-earlysteps-treasure-coast",
+    "early_steps_office_name": "Treasure Coast Early Steps"
+  },
+  {
+    "county_id": "st-lucie-fl",
+    "early_steps_office_id": "fl-earlysteps-treasure-coast",
+    "early_steps_office_name": "Treasure Coast Early Steps"
+  },
+  {
+    "county_id": "indian-river-fl",
+    "early_steps_office_id": "fl-earlysteps-treasure-coast",
+    "early_steps_office_name": "Treasure Coast Early Steps"
+  },
+  {
+    "county_id": "okeechobee-fl",
+    "early_steps_office_id": "fl-earlysteps-treasure-coast",
+    "early_steps_office_name": "Treasure Coast Early Steps"
+  }
+]

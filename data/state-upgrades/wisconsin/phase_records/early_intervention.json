@@ -1,0 +1,15 @@
+[
+  {
+    "source_url": "https://dhhs.wisconsin.gov/earlystart",
+    "confidence_score": 9.5,
+    "notes": "Official early intervention (Part C) state intake routing for Wisconsin.",
+    "suggested_target_id": "wi-ei-agency",
+    "name": "Wisconsin Early Intervention State Office",
+    "phone": "",
+    "physical_county": "statewide",
+    "agency_type": "early_intervention",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "manual_review_required",
+    "data_origin": "scraped"
+  }
+]

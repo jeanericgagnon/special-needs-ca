@@ -1,0 +1,72 @@
+[
+  {
+    "id": "copaa-advocatefl1",
+    "name": "Advocate FL 1",
+    "state": "FL",
+    "city": "City 1",
+    "phone": "(555) 000-1000",
+    "email": "advocate1_fl@copaa-member.org",
+    "website": "https://connect.copaa.org",
+    "specialties": "General Advocacy",
+    "organization": "COPAA Organization FL 1",
+    "description": "Advocate FL 1 is a special education professional.",
+    "source": "copaa",
+    "scraped_at": "2026-06-05T22:52:55.556Z"
+  },
+  {
+    "id": "copaa-advocatefl2",
+    "name": "Advocate FL 2",
+    "state": "FL",
+    "city": "City 2",
+    "phone": "(555) 000-1001",
+    "email": "advocate2_fl@copaa-member.org",
+    "website": "https://connect.copaa.org",
+    "specialties": "General Advocacy",
+    "organization": "COPAA Organization FL 2",
+    "description": "Advocate FL 2 is a special education professional.",
+    "source": "copaa",
+    "scraped_at": "2026-06-05T22:52:55.557Z"
+  },
+  {
+    "id": "copaa-advocatefl3",
+    "name": "Advocate FL 3",
+    "state": "FL",
+    "city": "City 3",
+    "phone": "(555) 000-1002",
+    "email": "advocate3_fl@copaa-member.org",
+    "website": "https://connect.copaa.org",
+    "specialties": "General Advocacy",
+    "organization": "COPAA Organization FL 3",
+    "description": "Advocate FL 3 is a special education professional.",
+    "source": "copaa",
+    "scraped_at": "2026-06-05T22:52:55.557Z"
+  },
+  {
+    "id": "copaa-advocatefl4",
+    "name": "Advocate FL 4",
+    "state": "FL",
+    "city": "City 4",
+    "phone": "(555) 000-1003",
+    "email": "advocate4_fl@copaa-member.org",
+    "website": "https://connect.copaa.org",
+    "specialties": "General Advocacy",
+    "organization": "COPAA Organization FL 4",
+    "description": "Advocate FL 4 is a special education professional.",
+    "source": "copaa",
+    "scraped_at": "2026-06-05T22:52:55.557Z"
+  },
+  {
+    "id": "copaa-advocatefl5",
+    "name": "Advocate FL 5",
+    "state": "FL",
+    "city": "City 5",
+    "phone": "(555) 000-1004",
+    "email": "advocate5_fl@copaa-member.org",
+    "website": "https://connect.copaa.org",
+    "specialties": "General Advocacy",
+    "organization": "COPAA Organization FL 5",
+    "description": "Advocate FL 5 is a special education professional.",
+    "source": "copaa",
+    "scraped_at": "2026-06-05T22:52:55.557Z"
+  }
+]

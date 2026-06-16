@@ -1,0 +1,72 @@
+[
+  {
+    "id": "yp-practitionerny1",
+    "name": "Practitioner NY 1",
+    "state": "NY",
+    "city": "",
+    "phone": "555) 111-2000",
+    "email": "advocate1.ny@wrightslaw-help.org",
+    "website": "http://www.practitioner1ny.org",
+    "specialties": "General Advocacy",
+    "organization": "Practitioner NY 1 Law Firm",
+    "description": "Practitioner NY 1 Special Education Attorney Phone: (555) 111-2000 Email: advocate1.ny [at] wrightslaw-help.org Web: www.practitioner1ny.org Description: Practitioner 1 provides expert help with IEP and 504 plans in NY.",
+    "source": "wrightslaw",
+    "scraped_at": "2026-06-05T22:52:41.870Z"
+  },
+  {
+    "id": "yp-practitionerny2",
+    "name": "Practitioner NY 2",
+    "state": "NY",
+    "city": "",
+    "phone": "555) 111-2001",
+    "email": "attorney2.ny@wrightslaw-help.org",
+    "website": "http://www.practitioner2ny.org",
+    "specialties": "General Advocacy",
+    "organization": "Practitioner NY 2 Law Firm",
+    "description": "Practitioner NY 2 Special Education Advocate Phone: (555) 111-2001 Email: attorney2.ny | at | wrightslaw-help.org Web: www.practitioner2ny.org Description: Practitioner 2 provides expert help with IEP and 504 plans in NY.",
+    "source": "wrightslaw",
+    "scraped_at": "2026-06-05T22:52:41.924Z"
+  },
+  {
+    "id": "yp-practitionerny3",
+    "name": "Practitioner NY 3",
+    "state": "NY",
+    "city": "",
+    "phone": "555) 111-2002",
+    "email": "advocate3.ny@wrightslaw-help.org",
+    "website": "http://www.practitioner3ny.org",
+    "specialties": "General Advocacy",
+    "organization": "Independent Practice",
+    "description": "Practitioner NY 3 Special Education Advocate Phone: (555) 111-2002 Email: advocate3.ny [at] wrightslaw-help.org Web: www.practitioner3ny.org Description: Practitioner 3 provides expert help with IEP and 504 plans in NY.",
+    "source": "wrightslaw",
+    "scraped_at": "2026-06-05T22:52:41.984Z"
+  },
+  {
+    "id": "yp-practitionerny4",
+    "name": "Practitioner NY 4",
+    "state": "NY",
+    "city": "",
+    "phone": "555) 111-2003",
+    "email": "attorney4.ny@wrightslaw-help.org",
+    "website": "http://www.practitioner4ny.org",
+    "specialties": "General Advocacy",
+    "organization": "Practitioner NY 4 Law Firm",
+    "description": "Practitioner NY 4 Special Education Attorney Phone: (555) 111-2003 Email: attorney4.ny | at | wrightslaw-help.org Web: www.practitioner4ny.org Description: Practitioner 4 provides expert help with IEP and 504 plans in NY.",
+    "source": "wrightslaw",
+    "scraped_at": "2026-06-05T22:52:42.045Z"
+  },
+  {
+    "id": "yp-practitionerny5",
+    "name": "Practitioner NY 5",
+    "state": "NY",
+    "city": "",
+    "phone": "555) 111-2004",
+    "email": "advocate5.ny@wrightslaw-help.org",
+    "website": "http://www.practitioner5ny.org",
+    "specialties": "General Advocacy",
+    "organization": "Independent Practice",
+    "description": "Practitioner NY 5 Special Education Advocate Phone: (555) 111-2004 Email: advocate5.ny [at] wrightslaw-help.org Web: www.practitioner5ny.org Description: Practitioner 5 provides expert help with IEP and 504 plans in NY.",
+    "source": "wrightslaw",
+    "scraped_at": "2026-06-05T22:52:42.101Z"
+  }
+]

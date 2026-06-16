@@ -1,0 +1,63 @@
+-- Rollback Script for State: West Virginia | Phase: dd_idd
+-- Generated At: 2026-06-14T15:47:45.871Z
+
+BEGIN TRANSACTION;
+
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'wyoming-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'wood-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'wirt-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'wetzel-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'webster-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'wayne-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'upshur-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'tyler-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'tucker-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'taylor-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'summers-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'roane-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'ritchie-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'randolph-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'raleigh-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'putnam-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'preston-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'pocahontas-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'pleasants-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'pendleton-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'ohio-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'nicholas-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'morgan-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'monroe-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'monongalia-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'mingo-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'mineral-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'mercer-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'mcdowell-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'mason-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'marshall-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'marion-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'logan-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'lincoln-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'lewis-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'kanawha-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'jefferson-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'jackson-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'harrison-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'hardy-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'hancock-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'hampshire-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'greenbrier-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'grant-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'gilmer-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'fayette-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'doddridge-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'clay-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'calhoun-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'cabell-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'brooke-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'braxton-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'boone-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'berkeley-wv';
+DELETE FROM regional_center_counties WHERE regional_center_id = 'wv-dd-agency' AND county_id = 'barbour-wv';
+UPDATE state_resource_agencies SET state_id = 'west-virginia', agency_type = 'dd_office', name = 'West Virginia Intellectual and Developmental Disabilities Division', counties_served = 'barbour-wv,berkeley-wv,boone-wv,braxton-wv,brooke-wv,cabell-wv,calhoun-wv,clay-wv,doddridge-wv,fayette-wv,gilmer-wv,grant-wv,greenbrier-wv,hampshire-wv,hancock-wv,hardy-wv,harrison-wv,jackson-wv,jefferson-wv,kanawha-wv,lewis-wv,lincoln-wv,logan-wv,marion-wv,marshall-wv,mason-wv,mcdowell-wv,mercer-wv,mineral-wv,mingo-wv,monongalia-wv,monroe-wv,morgan-wv,nicholas-wv,ohio-wv,pendleton-wv,pleasants-wv,pocahontas-wv,preston-wv,putnam-wv,raleigh-wv,randolph-wv,ritchie-wv,roane-wv,summers-wv,taylor-wv,tucker-wv,tyler-wv,upshur-wv,wayne-wv,webster-wv,wetzel-wv,wirt-wv,wood-wv,wyoming-wv', catchment_boundaries = 'Statewide coverage for all counties in West Virginia.', website = 'https://dhhr.wv.gov/bms', intake_phone = '(800) 555-0100', early_intervention_contact = '(800) 555-0100', agency_intake_contact = '(800) 555-0100', eligibility_info_page = 'https://dhhr.wv.gov/bms/eligibility', services_page = 'https://dhhr.wv.gov/bms', appeals_info = 'Waiver decisions can be appealed within 30 days of notice.', frc_relationship = NULL, office_locations = 'West Virginia State Capitol Office', languages = 'English, Spanish', last_verified_date = '2026-06-12', source_urls = 'https://dhhr.wv.gov/bms', source_url = 'https://dhhr.wv.gov/bms', source_type = 'official', data_origin = 'curated_seed', verification_status = 'source_listed', last_scraped_at = '2026-06-13T02:29:27.578Z', confidence_score = 5, evidence_level = NULL WHERE id = 'wv-dd-agency';
+
+COMMIT;

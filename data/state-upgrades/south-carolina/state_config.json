@@ -1,0 +1,43 @@
+{
+  "state_id": "south-carolina",
+  "state_slug": "south-carolina",
+  "state_name": "South Carolina",
+  "state_code": "SC",
+  "county_id_suffix": "-sc",
+  "program_id_prefix": "sc-",
+  "fallback_id_patterns": [
+    "%-sc-fallback"
+  ],
+  "expected_counties": 46,
+  "priority_counties": [],
+  "phase_sequence": [
+    "benefits_hhs",
+    "dd_idd",
+    "early_intervention",
+    "education_regional",
+    "district_replacements",
+    "clinics",
+    "forms_appeals_transition",
+    "trusted_nonprofits"
+  ],
+  "routing_labels": {
+    "medicaid_name": "South Carolina Medicaid",
+    "medicaid_agency": "South Carolina Department of Human Services",
+    "dd_agency": "South Carolina Developmental Services",
+    "dd_intake_label": "Intake Coordinator",
+    "early_intervention_label": "Early Intervention Coordinator",
+    "education_agency_label": "Regional Education Office",
+    "education_agency": "South Carolina Department of Education",
+    "special_education_support": "Special Education Support"
+  },
+  "validation_expectations": {
+    "benefits_hhs_count": 46,
+    "dd_idd_count": 0,
+    "early_intervention_count": 0,
+    "education_regional_count": 0,
+    "district_replacements_count": 0,
+    "clinics_count": 0,
+    "forms_appeals_transition_count": 0,
+    "trusted_nonprofits_count": 0
+  }
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "prov-nyc-sped-law-review",
+    "name": "NYC Special Education Law Associates",
+    "categories": "legal,advocacy",
+    "county_id": "new-york-ny",
+    "phone": "(212) 555-0199",
+    "email": "info@nycspedlaw.com",
+    "address": "500 Fifth Ave, New York, NY 10110",
+    "source_url": "https://www.nycspedlaw.com",
+    "source_type": "commercial_directory",
+    "data_origin": "scraped",
+    "verification_status": "pending_manual_review",
+    "confidence_score": 7.0,
+    "evidence_level": "source_listed",
+    "notes": "Private special education law firm. Excluded from auto-promotion."
+  },
+  {
+    "id": "prov-buffalo-aba-review",
+    "name": "Buffalo Behavioral Therapy & ABA Center",
+    "categories": "therapy,aba",
+    "county_id": "erie-ny",
+    "phone": "(716) 555-0144",
+    "email": "contact@buffalobehavioral.com",
+    "address": "1200 Delaware Ave, Buffalo, NY 14209",
+    "source_url": "https://www.buffalobehavioral.com",
+    "source_type": "commercial_directory",
+    "data_origin": "scraped",
+    "verification_status": "pending_manual_review",
+    "confidence_score": 6.5,
+    "evidence_level": "source_listed",
+    "notes": "Private commercial ABA therapy center. Excluded from auto-promotion."
+  },
+  {
+    "id": "prov-rochester-speech-review",
+    "name": "Rochester Pediatric Speech-Language Therapy Services",
+    "categories": "therapy,speech",
+    "county_id": "monroe-ny",
+    "phone": "(585) 555-0122",
+    "email": "intake@rochesterspeechtherapy.com",
+    "address": "250 Monroe Ave, Rochester, NY 14607",
+    "source_url": "https://www.rochesterspeechtherapy.com",
+    "source_type": "commercial_directory",
+    "data_origin": "scraped",
+    "verification_status": "pending_manual_review",
+    "confidence_score": 6.8,
+    "evidence_level": "source_listed",
+    "notes": "Private speech therapy provider. Excluded from auto-promotion."
+  }
+]

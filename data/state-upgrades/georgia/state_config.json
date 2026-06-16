@@ -1,0 +1,45 @@
+{
+  "state_id": "georgia",
+  "state_slug": "georgia",
+  "state_name": "Georgia",
+  "state_code": "GA",
+  "county_id_suffix": "-ga",
+  "program_id_prefix": "ga-",
+  "fallback_id_patterns": [
+    "%-ga-fallback"
+  ],
+  "expected_counties": 159,
+  "priority_counties": [],
+  "phase_sequence": [
+    "benefits_hhs",
+    "dd_idd",
+    "early_intervention",
+    "education_regional",
+    "district_replacements",
+    "clinics",
+    "forms_appeals_transition",
+    "trusted_nonprofits",
+    "provider_legal_review"
+  ],
+  "routing_labels": {
+    "medicaid_name": "Georgia Medicaid",
+    "medicaid_agency": "Georgia Department of Human Services",
+    "dd_agency": "Georgia Developmental Services",
+    "dd_intake_label": "Regional Intake Office",
+    "early_intervention_label": "Early Intervention",
+    "education_agency_label": "Regional Education Center",
+    "education_agency": "Georgia Department of Education",
+    "special_education_support": "Special Education"
+  },
+  "validation_expectations": {
+    "benefits_hhs_count": 159,
+    "dd_idd_count": 0,
+    "early_intervention_count": 0,
+    "education_regional_count": 0,
+    "district_replacements_count": 0,
+    "clinics_count": 0,
+    "forms_appeals_transition_count": 0,
+    "trusted_nonprofits_count": 0,
+    "provider_legal_review_count": 0
+  }
+}

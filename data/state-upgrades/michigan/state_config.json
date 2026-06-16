@@ -1,0 +1,43 @@
+{
+  "state_id": "michigan",
+  "state_slug": "michigan",
+  "state_name": "Michigan",
+  "state_code": "MI",
+  "county_id_suffix": "-mi",
+  "program_id_prefix": "mi-",
+  "fallback_id_patterns": [
+    "%-mi-fallback"
+  ],
+  "expected_counties": 83,
+  "priority_counties": [],
+  "phase_sequence": [
+    "benefits_hhs",
+    "dd_idd",
+    "early_intervention",
+    "education_regional",
+    "district_replacements",
+    "clinics",
+    "forms_appeals_transition",
+    "trusted_nonprofits"
+  ],
+  "routing_labels": {
+    "medicaid_name": "Michigan Medicaid",
+    "medicaid_agency": "Michigan Department of Human Services",
+    "dd_agency": "Michigan Developmental Services",
+    "dd_intake_label": "Intake Coordinator",
+    "early_intervention_label": "Early Intervention Coordinator",
+    "education_agency_label": "Regional Education Office",
+    "education_agency": "Michigan Department of Education",
+    "special_education_support": "Special Education Support"
+  },
+  "validation_expectations": {
+    "benefits_hhs_count": 83,
+    "dd_idd_count": 0,
+    "early_intervention_count": 0,
+    "education_regional_count": 0,
+    "district_replacements_count": 0,
+    "clinics_count": 0,
+    "forms_appeals_transition_count": 0,
+    "trusted_nonprofits_count": 0
+  }
+}

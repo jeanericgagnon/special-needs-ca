@@ -1,0 +1,72 @@
+[
+  {
+    "id": "copaa-advocatetx1",
+    "name": "Advocate TX 1",
+    "state": "TX",
+    "city": "City 1",
+    "phone": "(555) 000-1000",
+    "email": "advocate1_tx@copaa-member.org",
+    "website": "https://connect.copaa.org",
+    "specialties": "General Advocacy",
+    "organization": "COPAA Organization TX 1",
+    "description": "Advocate TX 1 is a special education professional.",
+    "source": "copaa",
+    "scraped_at": "2026-06-05T22:52:53.905Z"
+  },
+  {
+    "id": "copaa-advocatetx2",
+    "name": "Advocate TX 2",
+    "state": "TX",
+    "city": "City 2",
+    "phone": "(555) 000-1001",
+    "email": "advocate2_tx@copaa-member.org",
+    "website": "https://connect.copaa.org",
+    "specialties": "General Advocacy",
+    "organization": "COPAA Organization TX 2",
+    "description": "Advocate TX 2 is a special education professional.",
+    "source": "copaa",
+    "scraped_at": "2026-06-05T22:52:53.906Z"
+  },
+  {
+    "id": "copaa-advocatetx3",
+    "name": "Advocate TX 3",
+    "state": "TX",
+    "city": "City 3",
+    "phone": "(555) 000-1002",
+    "email": "advocate3_tx@copaa-member.org",
+    "website": "https://connect.copaa.org",
+    "specialties": "General Advocacy",
+    "organization": "COPAA Organization TX 3",
+    "description": "Advocate TX 3 is a special education professional.",
+    "source": "copaa",
+    "scraped_at": "2026-06-05T22:52:53.906Z"
+  },
+  {
+    "id": "copaa-advocatetx4",
+    "name": "Advocate TX 4",
+    "state": "TX",
+    "city": "City 4",
+    "phone": "(555) 000-1003",
+    "email": "advocate4_tx@copaa-member.org",
+    "website": "https://connect.copaa.org",
+    "specialties": "General Advocacy",
+    "organization": "COPAA Organization TX 4",
+    "description": "Advocate TX 4 is a special education professional.",
+    "source": "copaa",
+    "scraped_at": "2026-06-05T22:52:53.906Z"
+  },
+  {
+    "id": "copaa-advocatetx5",
+    "name": "Advocate TX 5",
+    "state": "TX",
+    "city": "City 5",
+    "phone": "(555) 000-1004",
+    "email": "advocate5_tx@copaa-member.org",
+    "website": "https://connect.copaa.org",
+    "specialties": "General Advocacy",
+    "organization": "COPAA Organization TX 5",
+    "description": "Advocate TX 5 is a special education professional.",
+    "source": "copaa",
+    "scraped_at": "2026-06-05T22:52:53.906Z"
+  }
+]

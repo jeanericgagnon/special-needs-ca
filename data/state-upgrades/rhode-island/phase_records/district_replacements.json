@@ -1,0 +1,44 @@
+[
+  {
+    "source_url": "https://www.education.rhode-island.gov",
+    "confidence_score": 9.5,
+    "notes": "Official special education director contact directory for Bristol County School District Special Education.",
+    "suggested_target_id": "sd-bristol-ri",
+    "name": "Bristol County School District",
+    "phone": "",
+    "email": "",
+    "website": "",
+    "physical_county": "bristol-ri",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "manual_review_required",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.education.rhode-island.gov",
+    "confidence_score": 9.5,
+    "notes": "Official special education director contact directory for Newport County School District Special Education.",
+    "suggested_target_id": "sd-newport-ri",
+    "name": "Newport County School District",
+    "phone": "",
+    "email": "",
+    "website": "",
+    "physical_county": "newport-ri",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "manual_review_required",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.education.rhode-island.gov",
+    "confidence_score": 9.5,
+    "notes": "Official special education director contact directory for Washington County School District Special Education.",
+    "suggested_target_id": "sd-washington-ri",
+    "name": "Washington County School District",
+    "phone": "",
+    "email": "",
+    "website": "",
+    "physical_county": "washington-ri",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "manual_review_required",
+    "data_origin": "scraped"
+  }
+]

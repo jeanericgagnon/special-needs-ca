@@ -1,0 +1,47 @@
+[
+  {
+    "source_url": "https://dhhs.delaware.gov/locations",
+    "confidence_score": 9.5,
+    "notes": "Official state social services benefits locator for Kent County.",
+    "suggested_target_id": "off-kent-de-medicaid",
+    "name": "Kent County storefront office",
+    "phone": "",
+    "email": "",
+    "physical_address": "",
+    "extracted_address": "",
+    "physical_county": "kent-de",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "manual_review_required",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://dhhs.delaware.gov/locations",
+    "confidence_score": 9.5,
+    "notes": "Official state social services benefits locator for New Castle County.",
+    "suggested_target_id": "off-new-castle-de-medicaid",
+    "name": "New Castle County storefront office",
+    "phone": "",
+    "email": "",
+    "physical_address": "",
+    "extracted_address": "",
+    "physical_county": "new-castle-de",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "manual_review_required",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://dhhs.delaware.gov/locations",
+    "confidence_score": 9.5,
+    "notes": "Official state social services benefits locator for Sussex County.",
+    "suggested_target_id": "off-sussex-de-medicaid",
+    "name": "Sussex County storefront office",
+    "phone": "",
+    "email": "",
+    "physical_address": "",
+    "extracted_address": "",
+    "physical_county": "sussex-de",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "manual_review_required",
+    "data_origin": "scraped"
+  }
+]

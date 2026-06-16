@@ -1,0 +1,55 @@
+{
+  "state_id": "new-york",
+  "state_slug": "new-york",
+  "state_name": "New York",
+  "state_code": "NY",
+  "county_id_suffix": "-ny",
+  "program_id_prefix": "ny-",
+  "fallback_id_patterns": [
+    "%-ny-fallback"
+  ],
+  "expected_counties": 62,
+  "priority_counties": [
+    "new-york-ny",
+    "kings-ny",
+    "queens-ny",
+    "bronx-ny",
+    "suffolk-ny",
+    "nassau-ny",
+    "westchester-ny",
+    "erie-ny",
+    "monroe-ny"
+  ],
+  "phase_sequence": [
+    "benefits_hhs",
+    "dd_idd",
+    "early_intervention",
+    "education_regional",
+    "district_replacements",
+    "clinics",
+    "forms_appeals_transition",
+    "trusted_nonprofits",
+    "provider_legal_review"
+  ],
+  "routing_labels": {
+    "medicaid_name": "New York Medicaid",
+    "medicaid_agency": "New York State Department of Health",
+    "dd_agency": "Office for People With Developmental Disabilities",
+    "dd_intake_label": "OPWDD Front Door",
+    "early_intervention_label": "Early Intervention Program",
+    "education_agency_label": "BOCES",
+    "education_agency": "New York State Education Department",
+    "special_education_support": "Special Education"
+  },
+  "validation_expectations": {
+    "benefits_hhs_count": 0,
+    "dd_idd_count": 0,
+    "early_intervention_count": 0,
+    "education_regional_count": 0,
+    "district_replacements_count": 0,
+    "clinics_count": 0,
+    "forms_appeals_transition_count": 0,
+    "trusted_nonprofits_count": 0,
+    "provider_legal_review_count": 0
+  }
+}

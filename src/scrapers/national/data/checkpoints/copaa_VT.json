@@ -1,0 +1,78 @@
+{
+  "scraper": "copaa",
+  "state": "VT",
+  "updatedAt": "2026-06-16T00:23:10.414Z",
+  "lastProcessedPage": 1,
+  "completed": false,
+  "metadata": {
+    "results": [
+      {
+        "id": "copaa-11b4ef0ce6fc74b44052be2e04db40e573de27cb43e737b126b518cb43271686",
+        "name": "Katie Ballard",
+        "state": "VT",
+        "city": "Essex",
+        "phone": "802-324-7931\n                                                    work",
+        "email": "Charbonk07@gmail.com",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": null,
+        "organization_info": null,
+        "description": "Katie Ballard is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-16T00:22:47.647Z"
+      },
+      {
+        "id": "copaa-1effc63a9c768176cdc6b91700afc8f9d76923fa08ff06abc76adfca13f11d5b",
+        "name": "Rebecca Hamilton",
+        "state": "VT",
+        "city": "Montpelier VT",
+        "phone": "203-5090483\n                                                    work",
+        "email": "RStirk@aol.com",
+        "website": "https://connect.copaa.org",
+        "specialties": "Learning Disabilities",
+        "organization": "Aspire Living and Learning",
+        "organization_info": {
+          "id": "org-03856e59f98a0aae24739912e80f0ace2ab9486b516365579a8c6a85f24fba61",
+          "name": "Aspire Living and Learning",
+          "state": "VT",
+          "city": "Montpelier VT",
+          "phone": "203-5090483\n                                                    work",
+          "email": "RStirk@aol.com",
+          "website": "https://connect.copaa.org",
+          "description": "Aspire Living and Learning is an organization specializing in special education advocacy.",
+          "source": "copaa",
+          "scraped_at": "2026-06-16T00:22:47.649Z"
+        },
+        "description": "Rebecca Hamilton is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-16T00:22:47.649Z"
+      },
+      {
+        "id": "copaa-10d0f88ce31d39ebc3566d91dd948f5a58d69b3ae29017e97b57d04410229284",
+        "name": "Beth Hammond",
+        "state": "VT",
+        "city": "Burlington",
+        "phone": "802-999-9860\n                                                    work",
+        "email": "bchammond@comcast.net",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": "Uplift Advocacy",
+        "organization_info": {
+          "id": "org-41ad8909e8a16025d4dfb7a32c6f9ee9a41727abf065d382bbb62b10b3ceaa91",
+          "name": "Uplift Advocacy",
+          "state": "VT",
+          "city": "Burlington",
+          "phone": "802-999-9860\n                                                    work",
+          "email": "bchammond@comcast.net",
+          "website": "https://connect.copaa.org",
+          "description": "Uplift Advocacy is an organization specializing in special education advocacy.",
+          "source": "copaa",
+          "scraped_at": "2026-06-16T00:22:47.649Z"
+        },
+        "description": "Beth Hammond is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-16T00:22:47.649Z"
+      }
+    ]
+  }
+}

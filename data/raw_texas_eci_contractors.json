@@ -1,0 +1,2702 @@
+[
+  {
+    "countyId": "anderson-tx",
+    "countyName": "Anderson",
+    "programName": "Community Healthcore",
+    "address": "107 Woodbine Place, Longview, TX 75601",
+    "referralPhone": "(903) 757-8194",
+    "fax": "(903) 921-1854",
+    "email": "eci.referrals@communityhealthcore.com",
+    "website": "http://communityhealthcore.com/services/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "andrews-tx",
+    "countyName": "Andrews",
+    "programName": "West Texas Centers",
+    "address": "1104 Henderson, Sweetwater, TX 79556",
+    "referralPhone": "(800) 852-2193",
+    "fax": "(325) 236-6112",
+    "email": "christie.shaw@wtcmhmr.org",
+    "website": "http://wtcmhmr.org/our-services/#little-lives"
+  },
+  {
+    "countyId": "angelina-tx",
+    "countyName": "Angelina",
+    "programName": "Burke Center",
+    "address": "Burke ECI Program, 2001 South Medford Drive, Lufkin, TX 75901",
+    "referralPhone": "(936) 634-4703",
+    "fax": "(936) 633-7613",
+    "email": "pam.phillips@myburke.org",
+    "website": "http://myburke.org/services/eci"
+  },
+  {
+    "countyId": "aransas-tx",
+    "countyName": "Aransas",
+    "programName": "Community Action Corporation of South Texas",
+    "address": "Project Ni&#241;os, 204 East First Street, Alice, TX 78332",
+    "referralPhone": "(361) 265-4502",
+    "fax": "(361) 364-9248",
+    "email": "hector.rios@cacost.org",
+    "website": "http://cacost.org/programs/early-childhood-intervention"
+  },
+  {
+    "countyId": "archer-tx",
+    "countyName": "Archer",
+    "programName": "Helen Farabee Centers",
+    "address": "1709 10th Street, Wichita Falls, TX 76301",
+    "referralPhone": "(940) 696-6200",
+    "fax": "(940) 696-6210",
+    "email": "flinnc@helenfarabee.org",
+    "website": "http://helenfarabee.org/eci-program"
+  },
+  {
+    "countyId": "armstrong-tx",
+    "countyName": "Armstrong",
+    "programName": "Region 16 Education Service Center",
+    "address": "5800 Bell Street, Amarillo, TX 79109",
+    "referralPhone": "(806) 677-5228",
+    "fax": "(806) 677-5227",
+    "email": "christina.flowers@esc16.net",
+    "website": "http://esc16.net"
+  },
+  {
+    "countyId": "atascosa-tx",
+    "countyName": "Atascosa",
+    "programName": "Camino Real Community Services",
+    "address": "Camino Real Community Services ECI Program, 19965 FM 3175 North, Lytle, TX 78052",
+    "referralPhone": "(210) 357-0300",
+    "fax": "(830) 709-5493",
+    "email": "yvetteh@caminorealcs.org",
+    "website": "http://caminorealcs.org/eci-services"
+  },
+  {
+    "countyId": "austin-tx",
+    "countyName": "Austin",
+    "programName": "Region 3 Education Service Center",
+    "address": "15555 US Hwy 77 North, Victoria, TX 77904",
+    "referralPhone": "(888) 909-3512",
+    "fax": "(361) 573-1594",
+    "email": "kmerritt@esc3.net",
+    "website": "http://esc3.net/welcome"
+  },
+  {
+    "countyId": "bailey-tx",
+    "countyName": "Bailey",
+    "programName": "Central Plains Center",
+    "address": "710 Quincy Street, Plainview, TX 79072",
+    "referralPhone": "(806) 291-4416",
+    "fax": "(806) 291-4419",
+    "email": "vanessag@clplains.org",
+    "website": "http://centralplains.org/eci"
+  },
+  {
+    "countyId": "bandera-tx",
+    "countyName": "Bandera",
+    "programName": "Camino Real Community Services",
+    "address": "Camino Real Community Services ECI Program, 19965 FM 3175 North, Lytle, TX 78052",
+    "referralPhone": "(210) 357-0300",
+    "fax": "(830) 709-5493",
+    "email": "yvetteh@caminorealcs.org",
+    "website": "http://caminorealcs.org/eci-services"
+  },
+  {
+    "countyId": "bastrop-tx",
+    "countyName": "Bastrop",
+    "programName": "Bluebonnet Trails Community Services",
+    "address": "1009 North Georgetown Street, Round Rock, TX 78664",
+    "referralPhone": "(844) 309-6385",
+    "fax": "(512) 853-6236",
+    "email": "shannon.struble@bbtrails.org; ecireferrals@bbtrails.org",
+    "website": "http://bbtrails.org/early-childhood-intervention-eci-services"
+  },
+  {
+    "countyId": "baylor-tx",
+    "countyName": "Baylor",
+    "programName": "Helen Farabee Centers",
+    "address": "1709 10th Street, Wichita Falls, TX 76301",
+    "referralPhone": "(940) 696-6200",
+    "fax": "(940) 696-6210",
+    "email": "flinnc@helenfarabee.org",
+    "website": "http://helenfarabee.org/eci-program"
+  },
+  {
+    "countyId": "bee-tx",
+    "countyName": "Bee",
+    "programName": "Camino Real Community Services",
+    "address": "Camino Real Community Services ECI Program, 19965 FM 3175 North, Lytle, TX 78052",
+    "referralPhone": "(210) 357-0300",
+    "fax": "(830) 709-5493",
+    "email": "yvetteh@caminorealcs.org",
+    "website": "http://caminorealcs.org/eci-services"
+  },
+  {
+    "countyId": "bell-tx",
+    "countyName": "Bell",
+    "programName": "Central Counties Services",
+    "address": "ECI Childteam, 1103 Mary Jane Street, Belton, TX 76513",
+    "referralPhone": "(254) 773-6787",
+    "fax": "(254) 770-0516",
+    "email": "referrals@childteam.org",
+    "website": "http://childteam.org"
+  },
+  {
+    "countyId": "bexar-tx",
+    "countyName": "Bexar",
+    "programName": "Easterseals Rehabilitation Center",
+    "address": "2203 Babcock Road, San Antonio, TX 78229",
+    "referralPhone": "(210) 614-3911",
+    "fax": "(210) 625-3162",
+    "email": "amanda.pepito@easterseals-satx.org",
+    "website": "http://sanantonio.easterseals.com/about-us/locations-programs"
+  },
+  {
+    "countyId": "bexar-tx",
+    "countyName": "Bexar",
+    "programName": "Brighton Center",
+    "address": "14207 Higgins Road, San Antonio, TX 78217",
+    "referralPhone": "(210) 826-4492",
+    "fax": "(210) 826-7887",
+    "email": "ecireferrals@brightonsa.org",
+    "website": "http://brightonsa.org/pediatric-therapy-services-0-3"
+  },
+  {
+    "countyId": "bexar-tx",
+    "countyName": "Bexar",
+    "programName": "Center for Health Care Services",
+    "address": "CHCS-ECI, 5802 South Presa Street, San Antonio, TX 78223",
+    "referralPhone": "(210) 261-3300",
+    "fax": "(210) 261-1951",
+    "email": "CHCS-ECI@chcsbc.org",
+    "website": "http://chcs-eci.org"
+  },
+  {
+    "countyId": "blanco-tx",
+    "countyName": "Blanco",
+    "programName": "Bluebonnet Trails Community Services",
+    "address": "1009 North Georgetown Street, Round Rock, TX 78664",
+    "referralPhone": "(844) 309-6385",
+    "fax": "(512) 853-6236",
+    "email": "shannon.struble@bbtrails.org; ecireferrals@bbtrails.org",
+    "website": "http://bbtrails.org/early-childhood-intervention-eci-services"
+  },
+  {
+    "countyId": "borden-tx",
+    "countyName": "Borden",
+    "programName": "West Texas Centers",
+    "address": "1104 Henderson, Sweetwater, TX 79556",
+    "referralPhone": "(800) 852-2193",
+    "fax": "(325) 236-6112",
+    "email": "christie.shaw@wtcmhmr.org",
+    "website": "http://wtcmhmr.org/our-services/#little-lives"
+  },
+  {
+    "countyId": "bosque-tx",
+    "countyName": "Bosque",
+    "programName": "Heart of Texas Behavioral Health Network",
+    "address": "Klaras Children&#39;s Center ECI, 6400 Imperial Drive, Waco, TX 76712",
+    "referralPhone": "(254) 297-7089",
+    "fax": "(254) 296-2932",
+    "email": "morgan.pettijohn@hotbhn.org",
+    "website": "http://hotbhn.org/services/early-childhood-intervention"
+  },
+  {
+    "countyId": "bowie-tx",
+    "countyName": "Bowie",
+    "programName": "Community Healthcore",
+    "address": "107 Woodbine Place, Longview, TX 75601",
+    "referralPhone": "(903) 757-8194",
+    "fax": "(903) 921-1854",
+    "email": "eci.referrals@communityhealthcore.com",
+    "website": "http://communityhealthcore.com/services/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "brazoria-tx",
+    "countyName": "Brazoria",
+    "programName": "BACH",
+    "address": "120 East Hospital Drive, Angleton, TX 77515",
+    "referralPhone": "(979) 849-2447",
+    "fax": "(979) 848-8337",
+    "email": "aheinlein@bacheci.org",
+    "website": "http://bachkids.org/eci-program-overview"
+  },
+  {
+    "countyId": "brazos-tx",
+    "countyName": "Brazos",
+    "programName": "Easterseals Greater Houston",
+    "address": "4888 Loop Central Drive, Suite 200, Houston, TX 77081",
+    "referralPhone": "(713) 838-9050",
+    "fax": "(713) 838-0926",
+    "email": "dday@eastersealshouston.org",
+    "website": "http://eastersealshouston.org/eci-infant-development-program"
+  },
+  {
+    "countyId": "brewster-tx",
+    "countyName": "Brewster",
+    "programName": "PermiaCare",
+    "address": "401 East Illinois, Suite 108, Midland, TX 79701",
+    "referralPhone": "(432) 570-3366",
+    "fax": "(432) 570-3319",
+    "email": "ECIReferrals@permiacare.org",
+    "website": "http://permiacare.org/early-childhood-intervention"
+  },
+  {
+    "countyId": "briscoe-tx",
+    "countyName": "Briscoe",
+    "programName": "Central Plains Center",
+    "address": "710 Quincy Street, Plainview, TX 79072",
+    "referralPhone": "(806) 291-4416",
+    "fax": "(806) 291-4419",
+    "email": "vanessag@clplains.org",
+    "website": "http://centralplains.org/eci"
+  },
+  {
+    "countyId": "brooks-tx",
+    "countyName": "Brooks",
+    "programName": "Community Action Corporation of South Texas",
+    "address": "Project Ni&#241;os, 204 East First Street, Alice, TX 78332",
+    "referralPhone": "(361) 265-4502",
+    "fax": "(361) 364-9248",
+    "email": "hector.rios@cacost.org",
+    "website": "http://cacost.org/programs/early-childhood-intervention"
+  },
+  {
+    "countyId": "brown-tx",
+    "countyName": "Brown",
+    "programName": "Center for Life Resources",
+    "address": "1101 7th Street, Brownwood, TX 76804",
+    "referralPhone": "(325) 643-1721",
+    "fax": "(325) 646-7627",
+    "email": "cindee.goodwin@cflr.us",
+    "website": "http://cflr.us/ns/2019/08/08/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "burleson-tx",
+    "countyName": "Burleson",
+    "programName": "Easterseals Greater Houston",
+    "address": "4888 Loop Central Drive, Suite 200, Houston, TX 77081",
+    "referralPhone": "(713) 838-9050",
+    "fax": "(713) 838-0926",
+    "email": "dday@eastersealshouston.org",
+    "website": "http://eastersealshouston.org/eci-infant-development-program"
+  },
+  {
+    "countyId": "burnet-tx",
+    "countyName": "Burnet",
+    "programName": "Bluebonnet Trails Community Services",
+    "address": "1009 North Georgetown Street, Round Rock, TX 78664",
+    "referralPhone": "(844) 309-6385",
+    "fax": "(512) 853-6236",
+    "email": "shannon.struble@bbtrails.org; ecireferrals@bbtrails.org",
+    "website": "http://bbtrails.org/early-childhood-intervention-eci-services"
+  },
+  {
+    "countyId": "caldwell-tx",
+    "countyName": "Caldwell",
+    "programName": "Bluebonnet Trails Community Services",
+    "address": "1009 North Georgetown Street, Round Rock, TX 78664",
+    "referralPhone": "(844) 309-6385",
+    "fax": "(512) 853-6236",
+    "email": "shannon.struble@bbtrails.org; ecireferrals@bbtrails.org",
+    "website": "http://bbtrails.org/early-childhood-intervention-eci-services"
+  },
+  {
+    "countyId": "calhoun-tx",
+    "countyName": "Calhoun",
+    "programName": "Region 3 Education Service Center",
+    "address": "15555 US Hwy 77 North, Victoria, TX 77904",
+    "referralPhone": "(888) 909-3512",
+    "fax": "(361) 573-1594",
+    "email": "kmerritt@esc3.net",
+    "website": "http://esc3.net/welcome"
+  },
+  {
+    "countyId": "callahan-tx",
+    "countyName": "Callahan",
+    "programName": "Betty Hardwick Center",
+    "address": "Betty Hardwick ECI, 765 Orange Street, Abilene, TX 79601",
+    "referralPhone": "(325) 627-0908",
+    "fax": "(325) 670-4831",
+    "email": "eci@bettyhardwick.org",
+    "website": "http://bettyhardwick.org/services/eci"
+  },
+  {
+    "countyId": "cameron-tx",
+    "countyName": "Cameron",
+    "programName": "Easterseals Rio Grande Valley",
+    "address": "1217 Houston Street, McAllen, TX 78501",
+    "referralPhone": "(956) 631-9171",
+    "fax": "(956) 631-9171",
+    "email": "referrals@easterseals-rgv.org",
+    "website": "http://tinyurl.com/EastersealsRGVECI"
+  },
+  {
+    "countyId": "cameron-tx",
+    "countyName": "Cameron",
+    "programName": "Region One Education Service Center",
+    "address": "1900 West Schunior, Edinburg, TX 78540",
+    "referralPhone": "(956) 984-6131",
+    "fax": "(956) 984-7648",
+    "email": "ecireferrals@esc1.net",
+    "website": "http://esc1.net/services/family/early-childhood-intervention"
+  },
+  {
+    "countyId": "camp-tx",
+    "countyName": "Camp",
+    "programName": "Lakes Regional Community Center",
+    "address": "4804 Wesley Street, Greenville, TX 75401",
+    "referralPhone": "(903) 454-0300",
+    "fax": "(903) 454-8635",
+    "email": "angelas@lakesregional.org",
+    "website": "http://lakesregional.org/early-childhood-intervention"
+  },
+  {
+    "countyId": "carson-tx",
+    "countyName": "Carson",
+    "programName": "Region 16 Education Service Center",
+    "address": "5800 Bell Street, Amarillo, TX 79109",
+    "referralPhone": "(806) 677-5228",
+    "fax": "(806) 677-5227",
+    "email": "christina.flowers@esc16.net",
+    "website": "http://esc16.net"
+  },
+  {
+    "countyId": "cass-tx",
+    "countyName": "Cass",
+    "programName": "Community Healthcore",
+    "address": "107 Woodbine Place, Longview, TX 75601",
+    "referralPhone": "(903) 757-8194",
+    "fax": "(903) 921-1854",
+    "email": "eci.referrals@communityhealthcore.com",
+    "website": "http://communityhealthcore.com/services/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "castro-tx",
+    "countyName": "Castro",
+    "programName": "Central Plains Center",
+    "address": "710 Quincy Street, Plainview, TX 79072",
+    "referralPhone": "(806) 291-4416",
+    "fax": "(806) 291-4419",
+    "email": "vanessag@clplains.org",
+    "website": "http://centralplains.org/eci"
+  },
+  {
+    "countyId": "chambers-tx",
+    "countyName": "Chambers",
+    "programName": "Bay Area Rehabilitation Center",
+    "address": "5313 Decker Drive, Baytown, TX 77520",
+    "referralPhone": "(281) 838-4477",
+    "fax": "(281) 838-4480",
+    "email": "jeannine.ferrill@bayarearehab.org",
+    "website": "http://bayarearehab.org/early-childhood-intervention"
+  },
+  {
+    "countyId": "chambers-tx",
+    "countyName": "Chambers",
+    "programName": "Spindletop Center",
+    "address": "First Steps ECI, 655 South Eighth Street, Beaumont, TX 77701",
+    "referralPhone": "(888) 837-8687",
+    "fax": "(409) 784-5418",
+    "email": "lora.waller@stctr.org",
+    "website": "http://spindletopcenter.org/early-childhood-intervention"
+  },
+  {
+    "countyId": "cherokee-tx",
+    "countyName": "Cherokee",
+    "programName": "Community Healthcore",
+    "address": "107 Woodbine Place, Longview, TX 75601",
+    "referralPhone": "(903) 757-8194",
+    "fax": "(903) 921-1854",
+    "email": "eci.referrals@communityhealthcore.com",
+    "website": "http://communityhealthcore.com/services/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "childress-tx",
+    "countyName": "Childress",
+    "programName": "Region 16 Education Service Center",
+    "address": "5800 Bell Street, Amarillo, TX 79109",
+    "referralPhone": "(806) 677-5228",
+    "fax": "(806) 677-5227",
+    "email": "christina.flowers@esc16.net",
+    "website": "http://esc16.net"
+  },
+  {
+    "countyId": "clay-tx",
+    "countyName": "Clay",
+    "programName": "Helen Farabee Centers",
+    "address": "1709 10th Street, Wichita Falls, TX 76301",
+    "referralPhone": "(940) 696-6200",
+    "fax": "(940) 696-6210",
+    "email": "flinnc@helenfarabee.org",
+    "website": "http://helenfarabee.org/eci-program"
+  },
+  {
+    "countyId": "cochran-tx",
+    "countyName": "Cochran",
+    "programName": "Lubbock Independent School District",
+    "address": "ECI DEBT, 1628 19th Street, Lubbock, TX 79401",
+    "referralPhone": "(806) 219-0500",
+    "fax": "(806) 766-1286",
+    "email": "bryan.sessom@lubbockisd.org",
+    "website": "http://lubbockisd.org/o/lisd/page/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "coke-tx",
+    "countyName": "Coke",
+    "programName": "Region 15 Education Service Center",
+    "address": "612 South Irene Street, San Angelo, TX 76903",
+    "referralPhone": "(325) 658-6571",
+    "fax": "(325) 653-0036",
+    "email": "tara.wiley@esc15.net",
+    "website": "http://esc15.net/parents/early-childhood-intervention"
+  },
+  {
+    "countyId": "coleman-tx",
+    "countyName": "Coleman",
+    "programName": "Center for Life Resources",
+    "address": "1101 7th Street, Brownwood, TX 76804",
+    "referralPhone": "(325) 643-1721",
+    "fax": "(325) 646-7627",
+    "email": "cindee.goodwin@cflr.us",
+    "website": "http://cflr.us/ns/2019/08/08/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "collin-tx",
+    "countyName": "Collin",
+    "programName": "LifePath Systems",
+    "address": "1515 Heritage Drive, McKinney, TX 75069",
+    "referralPhone": "(972) 562-0331",
+    "fax": "(972) 547-6801",
+    "email": "eci_referrals@lifepathsystems.org",
+    "website": "http://lifepathsystems.org/get-help/child-family-services/early-childhood-intervention"
+  },
+  {
+    "countyId": "collingsworth-tx",
+    "countyName": "Collingsworth",
+    "programName": "Region 16 Education Service Center",
+    "address": "5800 Bell Street, Amarillo, TX 79109",
+    "referralPhone": "(806) 677-5228",
+    "fax": "(806) 677-5227",
+    "email": "christina.flowers@esc16.net",
+    "website": "http://esc16.net"
+  },
+  {
+    "countyId": "colorado-tx",
+    "countyName": "Colorado",
+    "programName": "Region 3 Education Service Center",
+    "address": "15555 US Hwy 77 North, Victoria, TX 77904",
+    "referralPhone": "(888) 909-3512",
+    "fax": "(361) 573-1594",
+    "email": "kmerritt@esc3.net",
+    "website": "http://esc3.net/welcome"
+  },
+  {
+    "countyId": "comal-tx",
+    "countyName": "Comal",
+    "programName": "Camino Real Community Services",
+    "address": "Camino Real Community Services ECI Program, 19965 FM 3175 North, Lytle, TX 78052",
+    "referralPhone": "(210) 357-0300",
+    "fax": "(830) 709-5493",
+    "email": "yvetteh@caminorealcs.org",
+    "website": "http://caminorealcs.org/eci-services"
+  },
+  {
+    "countyId": "comanche-tx",
+    "countyName": "Comanche",
+    "programName": "Center for Life Resources",
+    "address": "1101 7th Street, Brownwood, TX 76804",
+    "referralPhone": "(325) 643-1721",
+    "fax": "(325) 646-7627",
+    "email": "cindee.goodwin@cflr.us",
+    "website": "http://cflr.us/ns/2019/08/08/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "concho-tx",
+    "countyName": "Concho",
+    "programName": "Region 15 Education Service Center",
+    "address": "612 South Irene Street, San Angelo, TX 76903",
+    "referralPhone": "(325) 658-6571",
+    "fax": "(325) 653-0036",
+    "email": "tara.wiley@esc15.net",
+    "website": "http://esc15.net/parents/early-childhood-intervention"
+  },
+  {
+    "countyId": "cooke-tx",
+    "countyName": "Cooke",
+    "programName": "MHMR of Tarrant County",
+    "address": "ECI of North Central Texas, 3840 Hulen Street, Suite 602, Fort Worth, TX 76107",
+    "referralPhone": "(817) 335-3022",
+    "fax": "(817) 569-4492",
+    "email": "anisha.philips@mhmrtc.org",
+    "website": "http://mhmrtarrant.org/ECI"
+  },
+  {
+    "countyId": "coryell-tx",
+    "countyName": "Coryell",
+    "programName": "Central Counties Services",
+    "address": "ECI Childteam, 1103 Mary Jane Street, Belton, TX 76513",
+    "referralPhone": "(254) 773-6787",
+    "fax": "(254) 770-0516",
+    "email": "referrals@childteam.org",
+    "website": "http://childteam.org"
+  },
+  {
+    "countyId": "cottle-tx",
+    "countyName": "Cottle",
+    "programName": "West Texas Centers",
+    "address": "1104 Henderson, Sweetwater, TX 79556",
+    "referralPhone": "(800) 852-2193",
+    "fax": "(325) 236-6112",
+    "email": "christie.shaw@wtcmhmr.org",
+    "website": "http://wtcmhmr.org/our-services/#little-lives"
+  },
+  {
+    "countyId": "crane-tx",
+    "countyName": "Crane",
+    "programName": "West Texas Centers",
+    "address": "1104 Henderson, Sweetwater, TX 79556",
+    "referralPhone": "(800) 852-2193",
+    "fax": "(325) 236-6112",
+    "email": "christie.shaw@wtcmhmr.org",
+    "website": "http://wtcmhmr.org/our-services/#little-lives"
+  },
+  {
+    "countyId": "crockett-tx",
+    "countyName": "Crockett",
+    "programName": "Region 15 Education Service Center",
+    "address": "612 South Irene Street, San Angelo, TX 76903",
+    "referralPhone": "(325) 658-6571",
+    "fax": "(325) 653-0036",
+    "email": "tara.wiley@esc15.net",
+    "website": "http://esc15.net/parents/early-childhood-intervention"
+  },
+  {
+    "countyId": "crosby-tx",
+    "countyName": "Crosby",
+    "programName": "Lubbock Independent School District",
+    "address": "ECI DEBT, 1628 19th Street, Lubbock, TX 79401",
+    "referralPhone": "(806) 219-0500",
+    "fax": "(806) 766-1286",
+    "email": "bryan.sessom@lubbockisd.org",
+    "website": "http://lubbockisd.org/o/lisd/page/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "culberson-tx",
+    "countyName": "Culberson",
+    "programName": "PermiaCare",
+    "address": "401 East Illinois, Suite 108, Midland, TX 79701",
+    "referralPhone": "(432) 570-3366",
+    "fax": "(432) 570-3319",
+    "email": "ECIReferrals@permiacare.org",
+    "website": "http://permiacare.org/early-childhood-intervention"
+  },
+  {
+    "countyId": "dallam-tx",
+    "countyName": "Dallam",
+    "programName": "Region 16 Education Service Center",
+    "address": "5800 Bell Street, Amarillo, TX 79109",
+    "referralPhone": "(806) 677-5228",
+    "fax": "(806) 677-5227",
+    "email": "christina.flowers@esc16.net",
+    "website": "http://esc16.net"
+  },
+  {
+    "countyId": "dallas-tx",
+    "countyName": "Dallas",
+    "programName": "Warren Center",
+    "address": "320 Custer Road, Richardson, TX 75080",
+    "referralPhone": "(972) 490-9055",
+    "fax": "(972) 490-9058",
+    "email": "referral@thewarrencenter.org",
+    "website": "http://thewarrencenter.org/our-services/early-childhood-intervention"
+  },
+  {
+    "countyId": "dallas-tx",
+    "countyName": "Dallas",
+    "programName": "Metrocare Services",
+    "address": "3230 Remond Drive, Dallas, TX 75211",
+    "referralPhone": "(214) 331-0109",
+    "fax": "(214) 333-7097",
+    "email": "ecireferral@metrocareservices.org",
+    "website": "http://metrocareservices.org/idd-services/early-childhood-intervention"
+  },
+  {
+    "countyId": "dawson-tx",
+    "countyName": "Dawson",
+    "programName": "Lubbock Independent School District",
+    "address": "ECI DEBT, 1628 19th Street, Lubbock, TX 79401",
+    "referralPhone": "(806) 219-0500",
+    "fax": "(806) 766-1286",
+    "email": "bryan.sessom@lubbockisd.org",
+    "website": "http://lubbockisd.org/o/lisd/page/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "deaf-smith-tx",
+    "countyName": "Deaf Smith",
+    "programName": "Region 16 Education Service Center",
+    "address": "5800 Bell Street, Amarillo, TX 79109",
+    "referralPhone": "(806) 677-5228",
+    "fax": "(806) 677-5227",
+    "email": "christina.flowers@esc16.net",
+    "website": "http://esc16.net"
+  },
+  {
+    "countyId": "delta-tx",
+    "countyName": "Delta",
+    "programName": "Lakes Regional Community Center",
+    "address": "4804 Wesley Street, Greenville, TX 75401",
+    "referralPhone": "(903) 454-0300",
+    "fax": "(903) 454-8635",
+    "email": "angelas@lakesregional.org",
+    "website": "http://lakesregional.org/early-childhood-intervention"
+  },
+  {
+    "countyId": "denton-tx",
+    "countyName": "Denton",
+    "programName": "MHMR of Tarrant County",
+    "address": "ECI of North Central Texas, 3840 Hulen Street, Suite 602, Fort Worth, TX 76107",
+    "referralPhone": "(817) 335-3022",
+    "fax": "(817) 569-4492",
+    "email": "anisha.philips@mhmrtc.org",
+    "website": "http://mhmrtarrant.org/ECI"
+  },
+  {
+    "countyId": "dewitt-tx",
+    "countyName": "Dewitt",
+    "programName": "Region 3 Education Service Center",
+    "address": "15555 US Hwy 77 North, Victoria, TX 77904",
+    "referralPhone": "(888) 909-3512",
+    "fax": "(361) 573-1594",
+    "email": "kmerritt@esc3.net",
+    "website": "http://esc3.net/welcome"
+  },
+  {
+    "countyId": "dickens-tx",
+    "countyName": "Dickens",
+    "programName": "Lubbock Independent School District",
+    "address": "ECI DEBT, 1628 19th Street, Lubbock, TX 79401",
+    "referralPhone": "(806) 219-0500",
+    "fax": "(806) 766-1286",
+    "email": "bryan.sessom@lubbockisd.org",
+    "website": "http://lubbockisd.org/o/lisd/page/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "dimmit-tx",
+    "countyName": "Dimmit",
+    "programName": "Camino Real Community Services",
+    "address": "Camino Real Community Services ECI Program, 19965 FM 3175 North, Lytle, TX 78052",
+    "referralPhone": "(210) 357-0300",
+    "fax": "(830) 709-5493",
+    "email": "yvetteh@caminorealcs.org",
+    "website": "http://caminorealcs.org/eci-services"
+  },
+  {
+    "countyId": "donley-tx",
+    "countyName": "Donley",
+    "programName": "Region 16 Education Service Center",
+    "address": "5800 Bell Street, Amarillo, TX 79109",
+    "referralPhone": "(806) 677-5228",
+    "fax": "(806) 677-5227",
+    "email": "christina.flowers@esc16.net",
+    "website": "http://esc16.net"
+  },
+  {
+    "countyId": "duval-tx",
+    "countyName": "Duval",
+    "programName": "Community Action Corporation of South Texas",
+    "address": "Project Ni&#241;os, 204 East First Street, Alice, TX 78332",
+    "referralPhone": "(361) 265-4502",
+    "fax": "(361) 364-9248",
+    "email": "hector.rios@cacost.org",
+    "website": "http://cacost.org/programs/early-childhood-intervention"
+  },
+  {
+    "countyId": "eastland-tx",
+    "countyName": "Eastland",
+    "programName": "Center for Life Resources",
+    "address": "1101 7th Street, Brownwood, TX 76804",
+    "referralPhone": "(325) 643-1721",
+    "fax": "(325) 646-7627",
+    "email": "cindee.goodwin@cflr.us",
+    "website": "http://cflr.us/ns/2019/08/08/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "ector-tx",
+    "countyName": "Ector",
+    "programName": "PermiaCare",
+    "address": "401 East Illinois, Suite 108, Midland, TX 79701",
+    "referralPhone": "(432) 570-3366",
+    "fax": "(432) 570-3319",
+    "email": "ECIReferrals@permiacare.org",
+    "website": "http://permiacare.org/early-childhood-intervention"
+  },
+  {
+    "countyId": "edwards-tx",
+    "countyName": "Edwards",
+    "programName": "Region 15 Education Service Center",
+    "address": "612 South Irene Street, San Angelo, TX 76903",
+    "referralPhone": "(325) 658-6571",
+    "fax": "(325) 653-0036",
+    "email": "tara.wiley@esc15.net",
+    "website": "http://esc15.net/parents/early-childhood-intervention"
+  },
+  {
+    "countyId": "el-paso-tx",
+    "countyName": "El Paso",
+    "programName": "PdN Children&#39;s",
+    "address": "1101 East Schuster Avenue, El Paso, TX 79902",
+    "referralPhone": "(915) 534-4324",
+    "fax": "(915) 496-0750",
+    "email": "carlos.gomez@pdnchildrens.org",
+    "website": "http://pdnchildrens.org/programs/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "el-paso-tx",
+    "countyName": "El Paso",
+    "programName": "Region 19 Education Service Center",
+    "address": "A Step Forward ECI, 6611 Boeing Drive, El Paso, TX 79925",
+    "referralPhone": "(915) 534-4324",
+    "fax": "(915) 496-0750",
+    "email": "smoreno2@esc19.net",
+    "website": "http://esc19.net/programs/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "ellis-tx",
+    "countyName": "Ellis",
+    "programName": "MHMR of Tarrant County",
+    "address": "ECI of North Central Texas, 3840 Hulen Street, Suite 602, Fort Worth, TX 76107",
+    "referralPhone": "(817) 335-3022",
+    "fax": "(817) 569-4492",
+    "email": "anisha.philips@mhmrtc.org",
+    "website": "http://mhmrtarrant.org/ECI"
+  },
+  {
+    "countyId": "erath-tx",
+    "countyName": "Erath",
+    "programName": "MHMR of Tarrant County",
+    "address": "ECI of North Central Texas, 3840 Hulen Street, Suite 602, Fort Worth, TX 76107",
+    "referralPhone": "(817) 335-3022",
+    "fax": "(817) 569-4492",
+    "email": "anisha.philips@mhmrtc.org",
+    "website": "http://mhmrtarrant.org/ECI"
+  },
+  {
+    "countyId": "falls-tx",
+    "countyName": "Falls",
+    "programName": "Heart of Texas Behavioral Health Network",
+    "address": "Klaras Children&#39;s Center ECI, 6400 Imperial Drive, Waco, TX 76712",
+    "referralPhone": "(254) 297-7089",
+    "fax": "(254) 296-2932",
+    "email": "morgan.pettijohn@hotbhn.org",
+    "website": "http://hotbhn.org/services/early-childhood-intervention"
+  },
+  {
+    "countyId": "fannin-tx",
+    "countyName": "Fannin",
+    "programName": "LifePath Systems",
+    "address": "1515 Heritage Drive, McKinney, TX 75069",
+    "referralPhone": "(972) 562-0331",
+    "fax": "(972) 547-6801",
+    "email": "eci_referrals@lifepathsystems.org",
+    "website": "http://lifepathsystems.org/get-help/child-family-services/early-childhood-intervention"
+  },
+  {
+    "countyId": "fayette-tx",
+    "countyName": "Fayette",
+    "programName": "Bluebonnet Trails Community Services",
+    "address": "1009 North Georgetown Street, Round Rock, TX 78664",
+    "referralPhone": "(844) 309-6385",
+    "fax": "(512) 853-6236",
+    "email": "shannon.struble@bbtrails.org; ecireferrals@bbtrails.org",
+    "website": "http://bbtrails.org/early-childhood-intervention-eci-services"
+  },
+  {
+    "countyId": "fisher-tx",
+    "countyName": "Fisher",
+    "programName": "West Texas Centers",
+    "address": "1104 Henderson, Sweetwater, TX 79556",
+    "referralPhone": "(800) 852-2193",
+    "fax": "(325) 236-6112",
+    "email": "christie.shaw@wtcmhmr.org",
+    "website": "http://wtcmhmr.org/our-services/#little-lives"
+  },
+  {
+    "countyId": "floyd-tx",
+    "countyName": "Floyd",
+    "programName": "Central Plains Center",
+    "address": "710 Quincy Street, Plainview, TX 79072",
+    "referralPhone": "(806) 291-4416",
+    "fax": "(806) 291-4419",
+    "email": "vanessag@clplains.org",
+    "website": "http://centralplains.org/eci"
+  },
+  {
+    "countyId": "foard-tx",
+    "countyName": "Foard",
+    "programName": "Helen Farabee Centers",
+    "address": "1709 10th Street, Wichita Falls, TX 76301",
+    "referralPhone": "(940) 696-6200",
+    "fax": "(940) 696-6210",
+    "email": "flinnc@helenfarabee.org",
+    "website": "http://helenfarabee.org/eci-program"
+  },
+  {
+    "countyId": "fort-bend-tx",
+    "countyName": "Fort Bend",
+    "programName": "BACH",
+    "address": "120 East Hospital Drive, Angleton, TX 77515",
+    "referralPhone": "(979) 849-2447",
+    "fax": "(979) 848-8337",
+    "email": "aheinlein@bacheci.org",
+    "website": "http://bachkids.org/eci-program-overview"
+  },
+  {
+    "countyId": "fort-bend-tx",
+    "countyName": "Fort Bend",
+    "programName": "Easterseals Greater Houston",
+    "address": "4888 Loop Central Drive, Suite 200, Houston, TX 77081",
+    "referralPhone": "(713) 838-9050",
+    "fax": "(713) 838-0926",
+    "email": "dday@eastersealshouston.org",
+    "website": "http://eastersealshouston.org/eci-infant-development-program"
+  },
+  {
+    "countyId": "fort-bend-tx",
+    "countyName": "Fort Bend",
+    "programName": "Katy Independent School District",
+    "address": "Katy ISD-ECI Project Tyke, 6361 South Stadium Lane, Katy, TX 77494",
+    "referralPhone": "(281) 237-6647",
+    "fax": "(281) 644-1846",
+    "email": "tremiadpolk@katyisd.org",
+    "website": "http://katyisd.org/eci-project-tyke"
+  },
+  {
+    "countyId": "fort-bend-tx",
+    "countyName": "Fort Bend",
+    "programName": "Texana Center",
+    "address": "Project GROW, 4910 Airport Avenue, Rosenberg, TX 77471",
+    "referralPhone": "(281) 238-1800",
+    "fax": "(281) 238-1859",
+    "email": "eci.referrals@texanacenter.com",
+    "website": "http://texanacenter.com/services/child-and-family-services/early-childhood-intervention"
+  },
+  {
+    "countyId": "franklin-tx",
+    "countyName": "Franklin",
+    "programName": "Lakes Regional Community Center",
+    "address": "4804 Wesley Street, Greenville, TX 75401",
+    "referralPhone": "(903) 454-0300",
+    "fax": "(903) 454-8635",
+    "email": "angelas@lakesregional.org",
+    "website": "http://lakesregional.org/early-childhood-intervention"
+  },
+  {
+    "countyId": "freestone-tx",
+    "countyName": "Freestone",
+    "programName": "Heart of Texas Behavioral Health Network",
+    "address": "Klaras Children&#39;s Center ECI, 6400 Imperial Drive, Waco, TX 76712",
+    "referralPhone": "(254) 297-7089",
+    "fax": "(254) 296-2932",
+    "email": "morgan.pettijohn@hotbhn.org",
+    "website": "http://hotbhn.org/services/early-childhood-intervention"
+  },
+  {
+    "countyId": "frio-tx",
+    "countyName": "Frio",
+    "programName": "Camino Real Community Services",
+    "address": "Camino Real Community Services ECI Program, 19965 FM 3175 North, Lytle, TX 78052",
+    "referralPhone": "(210) 357-0300",
+    "fax": "(830) 709-5493",
+    "email": "yvetteh@caminorealcs.org",
+    "website": "http://caminorealcs.org/eci-services"
+  },
+  {
+    "countyId": "gaines-tx",
+    "countyName": "Gaines",
+    "programName": "Lubbock Independent School District",
+    "address": "ECI DEBT, 1628 19th Street, Lubbock, TX 79401",
+    "referralPhone": "(806) 219-0500",
+    "fax": "(806) 766-1286",
+    "email": "bryan.sessom@lubbockisd.org",
+    "website": "http://lubbockisd.org/o/lisd/page/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "galveston-tx",
+    "countyName": "Galveston",
+    "programName": "Bay Area Rehabilitation Center",
+    "address": "5313 Decker Drive, Baytown, TX 77520",
+    "referralPhone": "(281) 838-4477",
+    "fax": "(281) 838-4480",
+    "email": "jeannine.ferrill@bayarearehab.org",
+    "website": "http://bayarearehab.org/early-childhood-intervention"
+  },
+  {
+    "countyId": "garza-tx",
+    "countyName": "Garza",
+    "programName": "Lubbock Independent School District",
+    "address": "ECI DEBT, 1628 19th Street, Lubbock, TX 79401",
+    "referralPhone": "(806) 219-0500",
+    "fax": "(806) 766-1286",
+    "email": "bryan.sessom@lubbockisd.org",
+    "website": "http://lubbockisd.org/o/lisd/page/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "gillespie-tx",
+    "countyName": "Gillespie",
+    "programName": "Center for Life Resources",
+    "address": "1101 7th Street, Brownwood, TX 76804",
+    "referralPhone": "(325) 643-1721",
+    "fax": "(325) 646-7627",
+    "email": "cindee.goodwin@cflr.us",
+    "website": "http://cflr.us/ns/2019/08/08/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "glasscock-tx",
+    "countyName": "Glasscock",
+    "programName": "West Texas Centers",
+    "address": "1104 Henderson, Sweetwater, TX 79556",
+    "referralPhone": "(800) 852-2193",
+    "fax": "(325) 236-6112",
+    "email": "christie.shaw@wtcmhmr.org",
+    "website": "http://wtcmhmr.org/our-services/#little-lives"
+  },
+  {
+    "countyId": "goliad-tx",
+    "countyName": "Goliad",
+    "programName": "Region 3 Education Service Center",
+    "address": "15555 US Hwy 77 North, Victoria, TX 77904",
+    "referralPhone": "(888) 909-3512",
+    "fax": "(361) 573-1594",
+    "email": "kmerritt@esc3.net",
+    "website": "http://esc3.net/welcome"
+  },
+  {
+    "countyId": "gonzales-tx",
+    "countyName": "Gonzales",
+    "programName": "Region 3 Education Service Center",
+    "address": "15555 US Hwy 77 North, Victoria, TX 77904",
+    "referralPhone": "(888) 909-3512",
+    "fax": "(361) 573-1594",
+    "email": "kmerritt@esc3.net",
+    "website": "http://esc3.net/welcome"
+  },
+  {
+    "countyId": "gray-tx",
+    "countyName": "Gray",
+    "programName": "Region 16 Education Service Center",
+    "address": "5800 Bell Street, Amarillo, TX 79109",
+    "referralPhone": "(806) 677-5228",
+    "fax": "(806) 677-5227",
+    "email": "christina.flowers@esc16.net",
+    "website": "http://esc16.net"
+  },
+  {
+    "countyId": "grayson-tx",
+    "countyName": "Grayson",
+    "programName": "LifePath Systems",
+    "address": "1515 Heritage Drive, McKinney, TX 75069",
+    "referralPhone": "(972) 562-0331",
+    "fax": "(972) 547-6801",
+    "email": "eci_referrals@lifepathsystems.org",
+    "website": "http://lifepathsystems.org/get-help/child-family-services/early-childhood-intervention"
+  },
+  {
+    "countyId": "gregg-tx",
+    "countyName": "Gregg",
+    "programName": "Community Healthcore",
+    "address": "107 Woodbine Place, Longview, TX 75601",
+    "referralPhone": "(903) 757-8194",
+    "fax": "(903) 921-1854",
+    "email": "eci.referrals@communityhealthcore.com",
+    "website": "http://communityhealthcore.com/services/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "grimes-tx",
+    "countyName": "Grimes",
+    "programName": "Easterseals Greater Houston",
+    "address": "4888 Loop Central Drive, Suite 200, Houston, TX 77081",
+    "referralPhone": "(713) 838-9050",
+    "fax": "(713) 838-0926",
+    "email": "dday@eastersealshouston.org",
+    "website": "http://eastersealshouston.org/eci-infant-development-program"
+  },
+  {
+    "countyId": "guadalupe-tx",
+    "countyName": "Guadalupe",
+    "programName": "Camino Real Community Services",
+    "address": "Camino Real Community Services ECI Program, 19965 FM 3175 North, Lytle, TX 78052",
+    "referralPhone": "(210) 357-0300",
+    "fax": "(830) 709-5493",
+    "email": "yvetteh@caminorealcs.org",
+    "website": "http://caminorealcs.org/eci-services"
+  },
+  {
+    "countyId": "hale-tx",
+    "countyName": "Hale",
+    "programName": "Central Plains Center",
+    "address": "710 Quincy Street, Plainview, TX 79072",
+    "referralPhone": "(806) 291-4416",
+    "fax": "(806) 291-4419",
+    "email": "vanessag@clplains.org",
+    "website": "http://centralplains.org/eci"
+  },
+  {
+    "countyId": "hall-tx",
+    "countyName": "Hall",
+    "programName": "Region 16 Education Service Center",
+    "address": "5800 Bell Street, Amarillo, TX 79109",
+    "referralPhone": "(806) 677-5228",
+    "fax": "(806) 677-5227",
+    "email": "christina.flowers@esc16.net",
+    "website": "http://esc16.net"
+  },
+  {
+    "countyId": "hamilton-tx",
+    "countyName": "Hamilton",
+    "programName": "Central Counties Services",
+    "address": "ECI Childteam, 1103 Mary Jane Street, Belton, TX 76513",
+    "referralPhone": "(254) 773-6787",
+    "fax": "(254) 770-0516",
+    "email": "referrals@childteam.org",
+    "website": "http://childteam.org"
+  },
+  {
+    "countyId": "hansford-tx",
+    "countyName": "Hansford",
+    "programName": "Region 16 Education Service Center",
+    "address": "5800 Bell Street, Amarillo, TX 79109",
+    "referralPhone": "(806) 677-5228",
+    "fax": "(806) 677-5227",
+    "email": "christina.flowers@esc16.net",
+    "website": "http://esc16.net"
+  },
+  {
+    "countyId": "hardeman-tx",
+    "countyName": "Hardeman",
+    "programName": "Helen Farabee Centers",
+    "address": "1709 10th Street, Wichita Falls, TX 76301",
+    "referralPhone": "(940) 696-6200",
+    "fax": "(940) 696-6210",
+    "email": "flinnc@helenfarabee.org",
+    "website": "http://helenfarabee.org/eci-program"
+  },
+  {
+    "countyId": "hardin-tx",
+    "countyName": "Hardin",
+    "programName": "Spindletop Center",
+    "address": "First Steps ECI, 655 South Eighth Street, Beaumont, TX 77701",
+    "referralPhone": "(888) 837-8687",
+    "fax": "(409) 784-5418",
+    "email": "lora.waller@stctr.org",
+    "website": "http://spindletopcenter.org/early-childhood-intervention"
+  },
+  {
+    "countyId": "harris-tx",
+    "countyName": "Harris",
+    "programName": "BACH",
+    "address": "120 East Hospital Drive, Angleton, TX 77515",
+    "referralPhone": "(979) 849-2447",
+    "fax": "(979) 848-8337",
+    "email": "aheinlein@bacheci.org",
+    "website": "http://bachkids.org/eci-program-overview"
+  },
+  {
+    "countyId": "harris-tx",
+    "countyName": "Harris",
+    "programName": "Bay Area Rehabilitation Center",
+    "address": "5313 Decker Drive, Baytown, TX 77520",
+    "referralPhone": "(281) 838-4477",
+    "fax": "(281) 838-4480",
+    "email": "jeannine.ferrill@bayarearehab.org",
+    "website": "http://bayarearehab.org/early-childhood-intervention"
+  },
+  {
+    "countyId": "harris-tx",
+    "countyName": "Harris",
+    "programName": "The Harris Center",
+    "address": "9401 Southwest Freeway Suite 1262, Houston, TX 77074",
+    "referralPhone": "(713) 970-4800",
+    "fax": "(713) 970-6060",
+    "email": "ecireferrals@theharriscenter.org",
+    "website": "http://theharriscenter.org/eci"
+  },
+  {
+    "countyId": "harris-tx",
+    "countyName": "Harris",
+    "programName": "Easterseals Greater Houston",
+    "address": "4888 Loop Central Drive, Suite 200, Houston, TX 77081",
+    "referralPhone": "(713) 838-9050",
+    "fax": "(713) 838-0926",
+    "email": "dday@eastersealshouston.org",
+    "website": "http://eastersealshouston.org/eci-infant-development-program"
+  },
+  {
+    "countyId": "harris-tx",
+    "countyName": "Harris",
+    "programName": "Katy Independent School District",
+    "address": "Katy ISD-ECI Project Tyke, 6361 South Stadium Lane, Katy, TX 77494",
+    "referralPhone": "(281) 237-6647",
+    "fax": "(281) 644-1846",
+    "email": "tremiadpolk@katyisd.org",
+    "website": "http://katyisd.org/eci-project-tyke"
+  },
+  {
+    "countyId": "harrison-tx",
+    "countyName": "Harrison",
+    "programName": "Community Healthcore",
+    "address": "107 Woodbine Place, Longview, TX 75601",
+    "referralPhone": "(903) 757-8194",
+    "fax": "(903) 921-1854",
+    "email": "eci.referrals@communityhealthcore.com",
+    "website": "http://communityhealthcore.com/services/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "hartley-tx",
+    "countyName": "Hartley",
+    "programName": "Region 16 Education Service Center",
+    "address": "5800 Bell Street, Amarillo, TX 79109",
+    "referralPhone": "(806) 677-5228",
+    "fax": "(806) 677-5227",
+    "email": "christina.flowers@esc16.net",
+    "website": "http://esc16.net"
+  },
+  {
+    "countyId": "haskell-tx",
+    "countyName": "Haskell",
+    "programName": "West Texas Centers",
+    "address": "1104 Henderson, Sweetwater, TX 79556",
+    "referralPhone": "(800) 852-2193",
+    "fax": "(325) 236-6112",
+    "email": "christie.shaw@wtcmhmr.org",
+    "website": "http://wtcmhmr.org/our-services/#little-lives"
+  },
+  {
+    "countyId": "hays-tx",
+    "countyName": "Hays",
+    "programName": "Any Baby Can",
+    "address": "Parent Child Program, 6207 Sheridan Avenue, Austin, TX 78723",
+    "referralPhone": "(512) 454-3743",
+    "fax": "(512) 334-4465",
+    "email": "guillermol@anybabycan.org",
+    "website": "http://anybabycan.org/services/early-childhood-intervention"
+  },
+  {
+    "countyId": "hemphill-tx",
+    "countyName": "Hemphill",
+    "programName": "Region 16 Education Service Center",
+    "address": "5800 Bell Street, Amarillo, TX 79109",
+    "referralPhone": "(806) 677-5228",
+    "fax": "(806) 677-5227",
+    "email": "christina.flowers@esc16.net",
+    "website": "http://esc16.net"
+  },
+  {
+    "countyId": "henderson-tx",
+    "countyName": "Henderson",
+    "programName": "Community Healthcore",
+    "address": "107 Woodbine Place, Longview, TX 75601",
+    "referralPhone": "(903) 757-8194",
+    "fax": "(903) 921-1854",
+    "email": "eci.referrals@communityhealthcore.com",
+    "website": "http://communityhealthcore.com/services/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "hidalgo-tx",
+    "countyName": "Hidalgo",
+    "programName": "Easterseals Rio Grande Valley",
+    "address": "1217 Houston Street, McAllen, TX 78501",
+    "referralPhone": "(956) 631-9171",
+    "fax": "(956) 631-9171",
+    "email": "referrals@easterseals-rgv.org",
+    "website": "http://tinyurl.com/EastersealsRGVECI"
+  },
+  {
+    "countyId": "hidalgo-tx",
+    "countyName": "Hidalgo",
+    "programName": "Region One Education Service Center",
+    "address": "1900 West Schunior, Edinburg, TX 78540",
+    "referralPhone": "(956) 984-6131",
+    "fax": "(956) 984-7648",
+    "email": "ecireferrals@esc1.net",
+    "website": "http://esc1.net/services/family/early-childhood-intervention"
+  },
+  {
+    "countyId": "hill-tx",
+    "countyName": "Hill",
+    "programName": "Heart of Texas Behavioral Health Network",
+    "address": "Klaras Children&#39;s Center ECI, 6400 Imperial Drive, Waco, TX 76712",
+    "referralPhone": "(254) 297-7089",
+    "fax": "(254) 296-2932",
+    "email": "morgan.pettijohn@hotbhn.org",
+    "website": "http://hotbhn.org/services/early-childhood-intervention"
+  },
+  {
+    "countyId": "hockley-tx",
+    "countyName": "Hockley",
+    "programName": "Lubbock Independent School District",
+    "address": "ECI DEBT, 1628 19th Street, Lubbock, TX 79401",
+    "referralPhone": "(806) 219-0500",
+    "fax": "(806) 766-1286",
+    "email": "bryan.sessom@lubbockisd.org",
+    "website": "http://lubbockisd.org/o/lisd/page/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "hood-tx",
+    "countyName": "Hood",
+    "programName": "MHMR of Tarrant County",
+    "address": "ECI of North Central Texas, 3840 Hulen Street, Suite 602, Fort Worth, TX 76107",
+    "referralPhone": "(817) 335-3022",
+    "fax": "(817) 569-4492",
+    "email": "anisha.philips@mhmrtc.org",
+    "website": "http://mhmrtarrant.org/ECI"
+  },
+  {
+    "countyId": "hopkins-tx",
+    "countyName": "Hopkins",
+    "programName": "Lakes Regional Community Center",
+    "address": "4804 Wesley Street, Greenville, TX 75401",
+    "referralPhone": "(903) 454-0300",
+    "fax": "(903) 454-8635",
+    "email": "angelas@lakesregional.org",
+    "website": "http://lakesregional.org/early-childhood-intervention"
+  },
+  {
+    "countyId": "houston-tx",
+    "countyName": "Houston",
+    "programName": "Burke Center",
+    "address": "Burke ECI Program, 2001 South Medford Drive, Lufkin, TX 75901",
+    "referralPhone": "(936) 634-4703",
+    "fax": "(936) 633-7613",
+    "email": "pam.phillips@myburke.org",
+    "website": "http://myburke.org/services/eci"
+  },
+  {
+    "countyId": "howard-tx",
+    "countyName": "Howard",
+    "programName": "West Texas Centers",
+    "address": "1104 Henderson, Sweetwater, TX 79556",
+    "referralPhone": "(800) 852-2193",
+    "fax": "(325) 236-6112",
+    "email": "christie.shaw@wtcmhmr.org",
+    "website": "http://wtcmhmr.org/our-services/#little-lives"
+  },
+  {
+    "countyId": "hudspeth-tx",
+    "countyName": "Hudspeth",
+    "programName": "Region 19 Education Service Center",
+    "address": "A Step Forward ECI, 6611 Boeing Drive, El Paso, TX 79925",
+    "referralPhone": "(915) 534-4324",
+    "fax": "(915) 496-0750",
+    "email": "smoreno2@esc19.net",
+    "website": "http://esc19.net/programs/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "hunt-tx",
+    "countyName": "Hunt",
+    "programName": "Lakes Regional Community Center",
+    "address": "4804 Wesley Street, Greenville, TX 75401",
+    "referralPhone": "(903) 454-0300",
+    "fax": "(903) 454-8635",
+    "email": "angelas@lakesregional.org",
+    "website": "http://lakesregional.org/early-childhood-intervention"
+  },
+  {
+    "countyId": "hutchinson-tx",
+    "countyName": "Hutchinson",
+    "programName": "Region 16 Education Service Center",
+    "address": "5800 Bell Street, Amarillo, TX 79109",
+    "referralPhone": "(806) 677-5228",
+    "fax": "(806) 677-5227",
+    "email": "christina.flowers@esc16.net",
+    "website": "http://esc16.net"
+  },
+  {
+    "countyId": "irion-tx",
+    "countyName": "Irion",
+    "programName": "Region 15 Education Service Center",
+    "address": "612 South Irene Street, San Angelo, TX 76903",
+    "referralPhone": "(325) 658-6571",
+    "fax": "(325) 653-0036",
+    "email": "tara.wiley@esc15.net",
+    "website": "http://esc15.net/parents/early-childhood-intervention"
+  },
+  {
+    "countyId": "jack-tx",
+    "countyName": "Jack",
+    "programName": "Helen Farabee Centers",
+    "address": "1709 10th Street, Wichita Falls, TX 76301",
+    "referralPhone": "(940) 696-6200",
+    "fax": "(940) 696-6210",
+    "email": "flinnc@helenfarabee.org",
+    "website": "http://helenfarabee.org/eci-program"
+  },
+  {
+    "countyId": "jackson-tx",
+    "countyName": "Jackson",
+    "programName": "Region 3 Education Service Center",
+    "address": "15555 US Hwy 77 North, Victoria, TX 77904",
+    "referralPhone": "(888) 909-3512",
+    "fax": "(361) 573-1594",
+    "email": "kmerritt@esc3.net",
+    "website": "http://esc3.net/welcome"
+  },
+  {
+    "countyId": "jasper-tx",
+    "countyName": "Jasper",
+    "programName": "Spindletop Center",
+    "address": "First Steps ECI, 655 South Eighth Street, Beaumont, TX 77701",
+    "referralPhone": "(888) 837-8687",
+    "fax": "(409) 784-5418",
+    "email": "lora.waller@stctr.org",
+    "website": "http://spindletopcenter.org/early-childhood-intervention"
+  },
+  {
+    "countyId": "jeff-davis-tx",
+    "countyName": "Jeff Davis",
+    "programName": "PermiaCare",
+    "address": "401 East Illinois, Suite 108, Midland, TX 79701",
+    "referralPhone": "(432) 570-3366",
+    "fax": "(432) 570-3319",
+    "email": "ECIReferrals@permiacare.org",
+    "website": "http://permiacare.org/early-childhood-intervention"
+  },
+  {
+    "countyId": "jefferson-tx",
+    "countyName": "Jefferson",
+    "programName": "Spindletop Center",
+    "address": "First Steps ECI, 655 South Eighth Street, Beaumont, TX 77701",
+    "referralPhone": "(888) 837-8687",
+    "fax": "(409) 784-5418",
+    "email": "lora.waller@stctr.org",
+    "website": "http://spindletopcenter.org/early-childhood-intervention"
+  },
+  {
+    "countyId": "jim-hogg-tx",
+    "countyName": "Jim Hogg",
+    "programName": "Community Action Corporation of South Texas",
+    "address": "Project Ni&#241;os, 204 East First Street, Alice, TX 78332",
+    "referralPhone": "(361) 265-4502",
+    "fax": "(361) 364-9248",
+    "email": "hector.rios@cacost.org",
+    "website": "http://cacost.org/programs/early-childhood-intervention"
+  },
+  {
+    "countyId": "jim-wells-tx",
+    "countyName": "Jim Wells",
+    "programName": "Community Action Corporation of South Texas",
+    "address": "Project Ni&#241;os, 204 East First Street, Alice, TX 78332",
+    "referralPhone": "(361) 265-4502",
+    "fax": "(361) 364-9248",
+    "email": "hector.rios@cacost.org",
+    "website": "http://cacost.org/programs/early-childhood-intervention"
+  },
+  {
+    "countyId": "johnson-tx",
+    "countyName": "Johnson",
+    "programName": "MHMR of Tarrant County",
+    "address": "ECI of North Central Texas, 3840 Hulen Street, Suite 602, Fort Worth, TX 76107",
+    "referralPhone": "(817) 335-3022",
+    "fax": "(817) 569-4492",
+    "email": "anisha.philips@mhmrtc.org",
+    "website": "http://mhmrtarrant.org/ECI"
+  },
+  {
+    "countyId": "jones-tx",
+    "countyName": "Jones",
+    "programName": "Betty Hardwick Center",
+    "address": "Betty Hardwick ECI, 765 Orange Street, Abilene, TX 79601",
+    "referralPhone": "(325) 627-0908",
+    "fax": "(325) 670-4831",
+    "email": "eci@bettyhardwick.org",
+    "website": "http://bettyhardwick.org/services/eci"
+  },
+  {
+    "countyId": "karnes-tx",
+    "countyName": "Karnes",
+    "programName": "Region 3 Education Service Center",
+    "address": "15555 US Hwy 77 North, Victoria, TX 77904",
+    "referralPhone": "(888) 909-3512",
+    "fax": "(361) 573-1594",
+    "email": "kmerritt@esc3.net",
+    "website": "http://esc3.net/welcome"
+  },
+  {
+    "countyId": "kaufman-tx",
+    "countyName": "Kaufman",
+    "programName": "LifePath Systems",
+    "address": "1515 Heritage Drive, McKinney, TX 75069",
+    "referralPhone": "(972) 562-0331",
+    "fax": "(972) 547-6801",
+    "email": "eci_referrals@lifepathsystems.org",
+    "website": "http://lifepathsystems.org/get-help/child-family-services/early-childhood-intervention"
+  },
+  {
+    "countyId": "kendall-tx",
+    "countyName": "Kendall",
+    "programName": "Center for Life Resources",
+    "address": "1101 7th Street, Brownwood, TX 76804",
+    "referralPhone": "(325) 643-1721",
+    "fax": "(325) 646-7627",
+    "email": "cindee.goodwin@cflr.us",
+    "website": "http://cflr.us/ns/2019/08/08/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "kenedy-tx",
+    "countyName": "Kenedy",
+    "programName": "Community Action Corporation of South Texas",
+    "address": "Project Ni&#241;os, 204 East First Street, Alice, TX 78332",
+    "referralPhone": "(361) 265-4502",
+    "fax": "(361) 364-9248",
+    "email": "hector.rios@cacost.org",
+    "website": "http://cacost.org/programs/early-childhood-intervention"
+  },
+  {
+    "countyId": "kent-tx",
+    "countyName": "Kent",
+    "programName": "Lubbock Independent School District",
+    "address": "ECI DEBT, 1628 19th Street, Lubbock, TX 79401",
+    "referralPhone": "(806) 219-0500",
+    "fax": "(806) 766-1286",
+    "email": "bryan.sessom@lubbockisd.org",
+    "website": "http://lubbockisd.org/o/lisd/page/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "kerr-tx",
+    "countyName": "Kerr",
+    "programName": "Center for Life Resources",
+    "address": "1101 7th Street, Brownwood, TX 76804",
+    "referralPhone": "(325) 643-1721",
+    "fax": "(325) 646-7627",
+    "email": "cindee.goodwin@cflr.us",
+    "website": "http://cflr.us/ns/2019/08/08/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "kimble-tx",
+    "countyName": "Kimble",
+    "programName": "Center for Life Resources",
+    "address": "1101 7th Street, Brownwood, TX 76804",
+    "referralPhone": "(325) 643-1721",
+    "fax": "(325) 646-7627",
+    "email": "cindee.goodwin@cflr.us",
+    "website": "http://cflr.us/ns/2019/08/08/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "king-tx",
+    "countyName": "King",
+    "programName": "West Texas Centers",
+    "address": "1104 Henderson, Sweetwater, TX 79556",
+    "referralPhone": "(800) 852-2193",
+    "fax": "(325) 236-6112",
+    "email": "christie.shaw@wtcmhmr.org",
+    "website": "http://wtcmhmr.org/our-services/#little-lives"
+  },
+  {
+    "countyId": "kinney-tx",
+    "countyName": "Kinney",
+    "programName": "Camino Real Community Services",
+    "address": "Camino Real Community Services ECI Program, 19965 FM 3175 North, Lytle, TX 78052",
+    "referralPhone": "(210) 357-0300",
+    "fax": "(830) 709-5493",
+    "email": "yvetteh@caminorealcs.org",
+    "website": "http://caminorealcs.org/eci-services"
+  },
+  {
+    "countyId": "kleberg-tx",
+    "countyName": "Kleberg",
+    "programName": "Community Action Corporation of South Texas",
+    "address": "Project Ni&#241;os, 204 East First Street, Alice, TX 78332",
+    "referralPhone": "(361) 265-4502",
+    "fax": "(361) 364-9248",
+    "email": "hector.rios@cacost.org",
+    "website": "http://cacost.org/programs/early-childhood-intervention"
+  },
+  {
+    "countyId": "knox-tx",
+    "countyName": "Knox",
+    "programName": "West Texas Centers",
+    "address": "1104 Henderson, Sweetwater, TX 79556",
+    "referralPhone": "(800) 852-2193",
+    "fax": "(325) 236-6112",
+    "email": "christie.shaw@wtcmhmr.org",
+    "website": "http://wtcmhmr.org/our-services/#little-lives"
+  },
+  {
+    "countyId": "la-salle-tx",
+    "countyName": "La Salle",
+    "programName": "Camino Real Community Services",
+    "address": "Camino Real Community Services ECI Program, 19965 FM 3175 North, Lytle, TX 78052",
+    "referralPhone": "(210) 357-0300",
+    "fax": "(830) 709-5493",
+    "email": "yvetteh@caminorealcs.org",
+    "website": "http://caminorealcs.org/eci-services"
+  },
+  {
+    "countyId": "lamar-tx",
+    "countyName": "Lamar",
+    "programName": "Lakes Regional Community Center",
+    "address": "4804 Wesley Street, Greenville, TX 75401",
+    "referralPhone": "(903) 454-0300",
+    "fax": "(903) 454-8635",
+    "email": "angelas@lakesregional.org",
+    "website": "http://lakesregional.org/early-childhood-intervention"
+  },
+  {
+    "countyId": "lamb-tx",
+    "countyName": "Lamb",
+    "programName": "Central Plains Center",
+    "address": "710 Quincy Street, Plainview, TX 79072",
+    "referralPhone": "(806) 291-4416",
+    "fax": "(806) 291-4419",
+    "email": "vanessag@clplains.org",
+    "website": "http://centralplains.org/eci"
+  },
+  {
+    "countyId": "lampasas-tx",
+    "countyName": "Lampasas",
+    "programName": "Central Counties Services",
+    "address": "ECI Childteam, 1103 Mary Jane Street, Belton, TX 76513",
+    "referralPhone": "(254) 773-6787",
+    "fax": "(254) 770-0516",
+    "email": "referrals@childteam.org",
+    "website": "http://childteam.org"
+  },
+  {
+    "countyId": "lavaca-tx",
+    "countyName": "Lavaca",
+    "programName": "Region 3 Education Service Center",
+    "address": "15555 US Hwy 77 North, Victoria, TX 77904",
+    "referralPhone": "(888) 909-3512",
+    "fax": "(361) 573-1594",
+    "email": "kmerritt@esc3.net",
+    "website": "http://esc3.net/welcome"
+  },
+  {
+    "countyId": "lee-tx",
+    "countyName": "Lee",
+    "programName": "Bluebonnet Trails Community Services",
+    "address": "1009 North Georgetown Street, Round Rock, TX 78664",
+    "referralPhone": "(844) 309-6385",
+    "fax": "(512) 853-6236",
+    "email": "shannon.struble@bbtrails.org; ecireferrals@bbtrails.org",
+    "website": "http://bbtrails.org/early-childhood-intervention-eci-services"
+  },
+  {
+    "countyId": "leon-tx",
+    "countyName": "Leon",
+    "programName": "Easterseals Greater Houston",
+    "address": "4888 Loop Central Drive, Suite 200, Houston, TX 77081",
+    "referralPhone": "(713) 838-9050",
+    "fax": "(713) 838-0926",
+    "email": "dday@eastersealshouston.org",
+    "website": "http://eastersealshouston.org/eci-infant-development-program"
+  },
+  {
+    "countyId": "liberty-tx",
+    "countyName": "Liberty",
+    "programName": "Easterseals Greater Houston",
+    "address": "4888 Loop Central Drive, Suite 200, Houston, TX 77081",
+    "referralPhone": "(713) 838-9050",
+    "fax": "(713) 838-0926",
+    "email": "dday@eastersealshouston.org",
+    "website": "http://eastersealshouston.org/eci-infant-development-program"
+  },
+  {
+    "countyId": "limestone-tx",
+    "countyName": "Limestone",
+    "programName": "Heart of Texas Behavioral Health Network",
+    "address": "Klaras Children&#39;s Center ECI, 6400 Imperial Drive, Waco, TX 76712",
+    "referralPhone": "(254) 297-7089",
+    "fax": "(254) 296-2932",
+    "email": "morgan.pettijohn@hotbhn.org",
+    "website": "http://hotbhn.org/services/early-childhood-intervention"
+  },
+  {
+    "countyId": "lipscomb-tx",
+    "countyName": "Lipscomb",
+    "programName": "Region 16 Education Service Center",
+    "address": "5800 Bell Street, Amarillo, TX 79109",
+    "referralPhone": "(806) 677-5228",
+    "fax": "(806) 677-5227",
+    "email": "christina.flowers@esc16.net",
+    "website": "http://esc16.net"
+  },
+  {
+    "countyId": "live-oak-tx",
+    "countyName": "Live Oak",
+    "programName": "Camino Real Community Services",
+    "address": "Camino Real Community Services ECI Program, 19965 FM 3175 North, Lytle, TX 78052",
+    "referralPhone": "(210) 357-0300",
+    "fax": "(830) 709-5493",
+    "email": "yvetteh@caminorealcs.org",
+    "website": "http://caminorealcs.org/eci-services"
+  },
+  {
+    "countyId": "llano-tx",
+    "countyName": "Llano",
+    "programName": "Bluebonnet Trails Community Services",
+    "address": "1009 North Georgetown Street, Round Rock, TX 78664",
+    "referralPhone": "(844) 309-6385",
+    "fax": "(512) 853-6236",
+    "email": "shannon.struble@bbtrails.org; ecireferrals@bbtrails.org",
+    "website": "http://bbtrails.org/early-childhood-intervention-eci-services"
+  },
+  {
+    "countyId": "loving-tx",
+    "countyName": "Loving",
+    "programName": "West Texas Centers",
+    "address": "1104 Henderson, Sweetwater, TX 79556",
+    "referralPhone": "(800) 852-2193",
+    "fax": "(325) 236-6112",
+    "email": "christie.shaw@wtcmhmr.org",
+    "website": "http://wtcmhmr.org/our-services/#little-lives"
+  },
+  {
+    "countyId": "lubbock-tx",
+    "countyName": "Lubbock",
+    "programName": "Lubbock Independent School District",
+    "address": "ECI DEBT, 1628 19th Street, Lubbock, TX 79401",
+    "referralPhone": "(806) 219-0500",
+    "fax": "(806) 766-1286",
+    "email": "bryan.sessom@lubbockisd.org",
+    "website": "http://lubbockisd.org/o/lisd/page/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "lynn-tx",
+    "countyName": "Lynn",
+    "programName": "Lubbock Independent School District",
+    "address": "ECI DEBT, 1628 19th Street, Lubbock, TX 79401",
+    "referralPhone": "(806) 219-0500",
+    "fax": "(806) 766-1286",
+    "email": "bryan.sessom@lubbockisd.org",
+    "website": "http://lubbockisd.org/o/lisd/page/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "madison-tx",
+    "countyName": "Madison",
+    "programName": "Easterseals Greater Houston",
+    "address": "4888 Loop Central Drive, Suite 200, Houston, TX 77081",
+    "referralPhone": "(713) 838-9050",
+    "fax": "(713) 838-0926",
+    "email": "dday@eastersealshouston.org",
+    "website": "http://eastersealshouston.org/eci-infant-development-program"
+  },
+  {
+    "countyId": "marion-tx",
+    "countyName": "Marion",
+    "programName": "Community Healthcore",
+    "address": "107 Woodbine Place, Longview, TX 75601",
+    "referralPhone": "(903) 757-8194",
+    "fax": "(903) 921-1854",
+    "email": "eci.referrals@communityhealthcore.com",
+    "website": "http://communityhealthcore.com/services/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "martin-tx",
+    "countyName": "Martin",
+    "programName": "West Texas Centers",
+    "address": "1104 Henderson, Sweetwater, TX 79556",
+    "referralPhone": "(800) 852-2193",
+    "fax": "(325) 236-6112",
+    "email": "christie.shaw@wtcmhmr.org",
+    "website": "http://wtcmhmr.org/our-services/#little-lives"
+  },
+  {
+    "countyId": "mason-tx",
+    "countyName": "Mason",
+    "programName": "Center for Life Resources",
+    "address": "1101 7th Street, Brownwood, TX 76804",
+    "referralPhone": "(325) 643-1721",
+    "fax": "(325) 646-7627",
+    "email": "cindee.goodwin@cflr.us",
+    "website": "http://cflr.us/ns/2019/08/08/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "matagorda-tx",
+    "countyName": "Matagorda",
+    "programName": "Region 3 Education Service Center",
+    "address": "15555 US Hwy 77 North, Victoria, TX 77904",
+    "referralPhone": "(888) 909-3512",
+    "fax": "(361) 573-1594",
+    "email": "kmerritt@esc3.net",
+    "website": "http://esc3.net/welcome"
+  },
+  {
+    "countyId": "maverick-tx",
+    "countyName": "Maverick",
+    "programName": "Camino Real Community Services",
+    "address": "Camino Real Community Services ECI Program, 19965 FM 3175 North, Lytle, TX 78052",
+    "referralPhone": "(210) 357-0300",
+    "fax": "(830) 709-5493",
+    "email": "yvetteh@caminorealcs.org",
+    "website": "http://caminorealcs.org/eci-services"
+  },
+  {
+    "countyId": "mcculloch-tx",
+    "countyName": "McCulloch",
+    "programName": "Center for Life Resources",
+    "address": "1101 7th Street, Brownwood, TX 76804",
+    "referralPhone": "(325) 643-1721",
+    "fax": "(325) 646-7627",
+    "email": "cindee.goodwin@cflr.us",
+    "website": "http://cflr.us/ns/2019/08/08/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "mclennan-tx",
+    "countyName": "McLennan",
+    "programName": "Heart of Texas Behavioral Health Network",
+    "address": "Klaras Children&#39;s Center ECI, 6400 Imperial Drive, Waco, TX 76712",
+    "referralPhone": "(254) 297-7089",
+    "fax": "(254) 296-2932",
+    "email": "morgan.pettijohn@hotbhn.org",
+    "website": "http://hotbhn.org/services/early-childhood-intervention"
+  },
+  {
+    "countyId": "mcmullen-tx",
+    "countyName": "McMullen",
+    "programName": "Camino Real Community Services",
+    "address": "Camino Real Community Services ECI Program, 19965 FM 3175 North, Lytle, TX 78052",
+    "referralPhone": "(210) 357-0300",
+    "fax": "(830) 709-5493",
+    "email": "yvetteh@caminorealcs.org",
+    "website": "http://caminorealcs.org/eci-services"
+  },
+  {
+    "countyId": "medina-tx",
+    "countyName": "Medina",
+    "programName": "Camino Real Community Services",
+    "address": "Camino Real Community Services ECI Program, 19965 FM 3175 North, Lytle, TX 78052",
+    "referralPhone": "(210) 357-0300",
+    "fax": "(830) 709-5493",
+    "email": "yvetteh@caminorealcs.org",
+    "website": "http://caminorealcs.org/eci-services"
+  },
+  {
+    "countyId": "menard-tx",
+    "countyName": "Menard",
+    "programName": "Center for Life Resources",
+    "address": "1101 7th Street, Brownwood, TX 76804",
+    "referralPhone": "(325) 643-1721",
+    "fax": "(325) 646-7627",
+    "email": "cindee.goodwin@cflr.us",
+    "website": "http://cflr.us/ns/2019/08/08/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "midland-tx",
+    "countyName": "Midland",
+    "programName": "PermiaCare",
+    "address": "401 East Illinois, Suite 108, Midland, TX 79701",
+    "referralPhone": "(432) 570-3366",
+    "fax": "(432) 570-3319",
+    "email": "ECIReferrals@permiacare.org",
+    "website": "http://permiacare.org/early-childhood-intervention"
+  },
+  {
+    "countyId": "milam-tx",
+    "countyName": "Milam",
+    "programName": "Central Counties Services",
+    "address": "ECI Childteam, 1103 Mary Jane Street, Belton, TX 76513",
+    "referralPhone": "(254) 773-6787",
+    "fax": "(254) 770-0516",
+    "email": "referrals@childteam.org",
+    "website": "http://childteam.org"
+  },
+  {
+    "countyId": "mills-tx",
+    "countyName": "Mills",
+    "programName": "Center for Life Resources",
+    "address": "1101 7th Street, Brownwood, TX 76804",
+    "referralPhone": "(325) 643-1721",
+    "fax": "(325) 646-7627",
+    "email": "cindee.goodwin@cflr.us",
+    "website": "http://cflr.us/ns/2019/08/08/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "mitchell-tx",
+    "countyName": "Mitchell",
+    "programName": "West Texas Centers",
+    "address": "1104 Henderson, Sweetwater, TX 79556",
+    "referralPhone": "(800) 852-2193",
+    "fax": "(325) 236-6112",
+    "email": "christie.shaw@wtcmhmr.org",
+    "website": "http://wtcmhmr.org/our-services/#little-lives"
+  },
+  {
+    "countyId": "montague-tx",
+    "countyName": "Montague",
+    "programName": "Helen Farabee Centers",
+    "address": "1709 10th Street, Wichita Falls, TX 76301",
+    "referralPhone": "(940) 696-6200",
+    "fax": "(940) 696-6210",
+    "email": "flinnc@helenfarabee.org",
+    "website": "http://helenfarabee.org/eci-program"
+  },
+  {
+    "countyId": "montgomery-tx",
+    "countyName": "Montgomery",
+    "programName": "Easterseals Greater Houston",
+    "address": "4888 Loop Central Drive, Suite 200, Houston, TX 77081",
+    "referralPhone": "(713) 838-9050",
+    "fax": "(713) 838-0926",
+    "email": "dday@eastersealshouston.org",
+    "website": "http://eastersealshouston.org/eci-infant-development-program"
+  },
+  {
+    "countyId": "moore-tx",
+    "countyName": "Moore",
+    "programName": "Region 16 Education Service Center",
+    "address": "5800 Bell Street, Amarillo, TX 79109",
+    "referralPhone": "(806) 677-5228",
+    "fax": "(806) 677-5227",
+    "email": "christina.flowers@esc16.net",
+    "website": "http://esc16.net"
+  },
+  {
+    "countyId": "morris-tx",
+    "countyName": "Morris",
+    "programName": "Lakes Regional Community Center",
+    "address": "4804 Wesley Street, Greenville, TX 75401",
+    "referralPhone": "(903) 454-0300",
+    "fax": "(903) 454-8635",
+    "email": "angelas@lakesregional.org",
+    "website": "http://lakesregional.org/early-childhood-intervention"
+  },
+  {
+    "countyId": "motley-tx",
+    "countyName": "Motley",
+    "programName": "Central Plains Center",
+    "address": "710 Quincy Street, Plainview, TX 79072",
+    "referralPhone": "(806) 291-4416",
+    "fax": "(806) 291-4419",
+    "email": "vanessag@clplains.org",
+    "website": "http://centralplains.org/eci"
+  },
+  {
+    "countyId": "nacogdoches-tx",
+    "countyName": "Nacogdoches",
+    "programName": "Burke Center",
+    "address": "Burke ECI Program, 2001 South Medford Drive, Lufkin, TX 75901",
+    "referralPhone": "(936) 634-4703",
+    "fax": "(936) 633-7613",
+    "email": "pam.phillips@myburke.org",
+    "website": "http://myburke.org/services/eci"
+  },
+  {
+    "countyId": "navarro-tx",
+    "countyName": "Navarro",
+    "programName": "MHMR of Tarrant County",
+    "address": "ECI of North Central Texas, 3840 Hulen Street, Suite 602, Fort Worth, TX 76107",
+    "referralPhone": "(817) 335-3022",
+    "fax": "(817) 569-4492",
+    "email": "anisha.philips@mhmrtc.org",
+    "website": "http://mhmrtarrant.org/ECI"
+  },
+  {
+    "countyId": "newton-tx",
+    "countyName": "Newton",
+    "programName": "Burke Center",
+    "address": "Burke ECI Program, 2001 South Medford Drive, Lufkin, TX 75901",
+    "referralPhone": "(936) 634-4703",
+    "fax": "(936) 633-7613",
+    "email": "pam.phillips@myburke.org",
+    "website": "http://myburke.org/services/eci"
+  },
+  {
+    "countyId": "nolan-tx",
+    "countyName": "Nolan",
+    "programName": "West Texas Centers",
+    "address": "1104 Henderson, Sweetwater, TX 79556",
+    "referralPhone": "(800) 852-2193",
+    "fax": "(325) 236-6112",
+    "email": "christie.shaw@wtcmhmr.org",
+    "website": "http://wtcmhmr.org/our-services/#little-lives"
+  },
+  {
+    "countyId": "nueces-tx",
+    "countyName": "Nueces",
+    "programName": "Community Action Corporation of South Texas",
+    "address": "Project Ni&#241;os, 204 East First Street, Alice, TX 78332",
+    "referralPhone": "(361) 265-4502",
+    "fax": "(361) 364-9248",
+    "email": "hector.rios@cacost.org",
+    "website": "http://cacost.org/programs/early-childhood-intervention"
+  },
+  {
+    "countyId": "ochiltree-tx",
+    "countyName": "Ochiltree",
+    "programName": "Region 16 Education Service Center",
+    "address": "5800 Bell Street, Amarillo, TX 79109",
+    "referralPhone": "(806) 677-5228",
+    "fax": "(806) 677-5227",
+    "email": "christina.flowers@esc16.net",
+    "website": "http://esc16.net"
+  },
+  {
+    "countyId": "oldham-tx",
+    "countyName": "Oldham",
+    "programName": "Region 16 Education Service Center",
+    "address": "5800 Bell Street, Amarillo, TX 79109",
+    "referralPhone": "(806) 677-5228",
+    "fax": "(806) 677-5227",
+    "email": "christina.flowers@esc16.net",
+    "website": "http://esc16.net"
+  },
+  {
+    "countyId": "orange-tx",
+    "countyName": "Orange",
+    "programName": "Spindletop Center",
+    "address": "First Steps ECI, 655 South Eighth Street, Beaumont, TX 77701",
+    "referralPhone": "(888) 837-8687",
+    "fax": "(409) 784-5418",
+    "email": "lora.waller@stctr.org",
+    "website": "http://spindletopcenter.org/early-childhood-intervention"
+  },
+  {
+    "countyId": "palo-pinto-tx",
+    "countyName": "Palo Pinto",
+    "programName": "MHMR of Tarrant County",
+    "address": "ECI of North Central Texas, 3840 Hulen Street, Suite 602, Fort Worth, TX 76107",
+    "referralPhone": "(817) 335-3022",
+    "fax": "(817) 569-4492",
+    "email": "anisha.philips@mhmrtc.org",
+    "website": "http://mhmrtarrant.org/ECI"
+  },
+  {
+    "countyId": "panola-tx",
+    "countyName": "Panola",
+    "programName": "Community Healthcore",
+    "address": "107 Woodbine Place, Longview, TX 75601",
+    "referralPhone": "(903) 757-8194",
+    "fax": "(903) 921-1854",
+    "email": "eci.referrals@communityhealthcore.com",
+    "website": "http://communityhealthcore.com/services/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "parker-tx",
+    "countyName": "Parker",
+    "programName": "MHMR of Tarrant County",
+    "address": "ECI of North Central Texas, 3840 Hulen Street, Suite 602, Fort Worth, TX 76107",
+    "referralPhone": "(817) 335-3022",
+    "fax": "(817) 569-4492",
+    "email": "anisha.philips@mhmrtc.org",
+    "website": "http://mhmrtarrant.org/ECI"
+  },
+  {
+    "countyId": "parmer-tx",
+    "countyName": "Parmer",
+    "programName": "Central Plains Center",
+    "address": "710 Quincy Street, Plainview, TX 79072",
+    "referralPhone": "(806) 291-4416",
+    "fax": "(806) 291-4419",
+    "email": "vanessag@clplains.org",
+    "website": "http://centralplains.org/eci"
+  },
+  {
+    "countyId": "pecos-tx",
+    "countyName": "Pecos",
+    "programName": "PermiaCare",
+    "address": "401 East Illinois, Suite 108, Midland, TX 79701",
+    "referralPhone": "(432) 570-3366",
+    "fax": "(432) 570-3319",
+    "email": "ECIReferrals@permiacare.org",
+    "website": "http://permiacare.org/early-childhood-intervention"
+  },
+  {
+    "countyId": "polk-tx",
+    "countyName": "Polk",
+    "programName": "Burke Center",
+    "address": "Burke ECI Program, 2001 South Medford Drive, Lufkin, TX 75901",
+    "referralPhone": "(936) 634-4703",
+    "fax": "(936) 633-7613",
+    "email": "pam.phillips@myburke.org",
+    "website": "http://myburke.org/services/eci"
+  },
+  {
+    "countyId": "potter-tx",
+    "countyName": "Potter",
+    "programName": "Texas Panhandle Centers",
+    "address": "901 Wallace Blvd, Amarillo, TX 79106",
+    "referralPhone": "(806) 358-8974",
+    "fax": "(806) 359-0506",
+    "email": "lindsay.garza@txpan.org",
+    "website": "http://texaspanhandlecenters.org/early-childhood-intervention"
+  },
+  {
+    "countyId": "presidio-tx",
+    "countyName": "Presidio",
+    "programName": "PermiaCare",
+    "address": "401 East Illinois, Suite 108, Midland, TX 79701",
+    "referralPhone": "(432) 570-3366",
+    "fax": "(432) 570-3319",
+    "email": "ECIReferrals@permiacare.org",
+    "website": "http://permiacare.org/early-childhood-intervention"
+  },
+  {
+    "countyId": "rains-tx",
+    "countyName": "Rains",
+    "programName": "Community Healthcore",
+    "address": "107 Woodbine Place, Longview, TX 75601",
+    "referralPhone": "(903) 757-8194",
+    "fax": "(903) 921-1854",
+    "email": "eci.referrals@communityhealthcore.com",
+    "website": "http://communityhealthcore.com/services/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "randall-tx",
+    "countyName": "Randall",
+    "programName": "Texas Panhandle Centers",
+    "address": "901 Wallace Blvd, Amarillo, TX 79106",
+    "referralPhone": "(806) 358-8974",
+    "fax": "(806) 359-0506",
+    "email": "lindsay.garza@txpan.org",
+    "website": "http://texaspanhandlecenters.org/early-childhood-intervention"
+  },
+  {
+    "countyId": "reagan-tx",
+    "countyName": "Reagan",
+    "programName": "West Texas Centers",
+    "address": "1104 Henderson, Sweetwater, TX 79556",
+    "referralPhone": "(800) 852-2193",
+    "fax": "(325) 236-6112",
+    "email": "christie.shaw@wtcmhmr.org",
+    "website": "http://wtcmhmr.org/our-services/#little-lives"
+  },
+  {
+    "countyId": "real-tx",
+    "countyName": "Real",
+    "programName": "Camino Real Community Services",
+    "address": "Camino Real Community Services ECI Program, 19965 FM 3175 North, Lytle, TX 78052",
+    "referralPhone": "(210) 357-0300",
+    "fax": "(830) 709-5493",
+    "email": "yvetteh@caminorealcs.org",
+    "website": "http://caminorealcs.org/eci-services"
+  },
+  {
+    "countyId": "red-river-tx",
+    "countyName": "Red River",
+    "programName": "Community Healthcore",
+    "address": "107 Woodbine Place, Longview, TX 75601",
+    "referralPhone": "(903) 757-8194",
+    "fax": "(903) 921-1854",
+    "email": "eci.referrals@communityhealthcore.com",
+    "website": "http://communityhealthcore.com/services/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "reeves-tx",
+    "countyName": "Reeves",
+    "programName": "West Texas Centers",
+    "address": "1104 Henderson, Sweetwater, TX 79556",
+    "referralPhone": "(800) 852-2193",
+    "fax": "(325) 236-6112",
+    "email": "christie.shaw@wtcmhmr.org",
+    "website": "http://wtcmhmr.org/our-services/#little-lives"
+  },
+  {
+    "countyId": "refugio-tx",
+    "countyName": "Refugio",
+    "programName": "Region 3 Education Service Center",
+    "address": "15555 US Hwy 77 North, Victoria, TX 77904",
+    "referralPhone": "(888) 909-3512",
+    "fax": "(361) 573-1594",
+    "email": "kmerritt@esc3.net",
+    "website": "http://esc3.net/welcome"
+  },
+  {
+    "countyId": "roberts-tx",
+    "countyName": "Roberts",
+    "programName": "Region 16 Education Service Center",
+    "address": "5800 Bell Street, Amarillo, TX 79109",
+    "referralPhone": "(806) 677-5228",
+    "fax": "(806) 677-5227",
+    "email": "christina.flowers@esc16.net",
+    "website": "http://esc16.net"
+  },
+  {
+    "countyId": "robertson-tx",
+    "countyName": "Robertson",
+    "programName": "Easterseals Greater Houston",
+    "address": "4888 Loop Central Drive, Suite 200, Houston, TX 77081",
+    "referralPhone": "(713) 838-9050",
+    "fax": "(713) 838-0926",
+    "email": "dday@eastersealshouston.org",
+    "website": "http://eastersealshouston.org/eci-infant-development-program"
+  },
+  {
+    "countyId": "rockwall-tx",
+    "countyName": "Rockwall",
+    "programName": "LifePath Systems",
+    "address": "1515 Heritage Drive, McKinney, TX 75069",
+    "referralPhone": "(972) 562-0331",
+    "fax": "(972) 547-6801",
+    "email": "eci_referrals@lifepathsystems.org",
+    "website": "http://lifepathsystems.org/get-help/child-family-services/early-childhood-intervention"
+  },
+  {
+    "countyId": "runnels-tx",
+    "countyName": "Runnels",
+    "programName": "Region 15 Education Service Center",
+    "address": "612 South Irene Street, San Angelo, TX 76903",
+    "referralPhone": "(325) 658-6571",
+    "fax": "(325) 653-0036",
+    "email": "tara.wiley@esc15.net",
+    "website": "http://esc15.net/parents/early-childhood-intervention"
+  },
+  {
+    "countyId": "rusk-tx",
+    "countyName": "Rusk",
+    "programName": "Community Healthcore",
+    "address": "107 Woodbine Place, Longview, TX 75601",
+    "referralPhone": "(903) 757-8194",
+    "fax": "(903) 921-1854",
+    "email": "eci.referrals@communityhealthcore.com",
+    "website": "http://communityhealthcore.com/services/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "sabine-tx",
+    "countyName": "Sabine",
+    "programName": "Burke Center",
+    "address": "Burke ECI Program, 2001 South Medford Drive, Lufkin, TX 75901",
+    "referralPhone": "(936) 634-4703",
+    "fax": "(936) 633-7613",
+    "email": "pam.phillips@myburke.org",
+    "website": "http://myburke.org/services/eci"
+  },
+  {
+    "countyId": "san-augustine-tx",
+    "countyName": "San Augustine",
+    "programName": "Burke Center",
+    "address": "Burke ECI Program, 2001 South Medford Drive, Lufkin, TX 75901",
+    "referralPhone": "(936) 634-4703",
+    "fax": "(936) 633-7613",
+    "email": "pam.phillips@myburke.org",
+    "website": "http://myburke.org/services/eci"
+  },
+  {
+    "countyId": "san-jacinto-tx",
+    "countyName": "San Jacinto",
+    "programName": "Burke Center",
+    "address": "Burke ECI Program, 2001 South Medford Drive, Lufkin, TX 75901",
+    "referralPhone": "(936) 634-4703",
+    "fax": "(936) 633-7613",
+    "email": "pam.phillips@myburke.org",
+    "website": "http://myburke.org/services/eci"
+  },
+  {
+    "countyId": "san-patricio-tx",
+    "countyName": "San Patricio",
+    "programName": "Community Action Corporation of South Texas",
+    "address": "Project Ni&#241;os, 204 East First Street, Alice, TX 78332",
+    "referralPhone": "(361) 265-4502",
+    "fax": "(361) 364-9248",
+    "email": "hector.rios@cacost.org",
+    "website": "http://cacost.org/programs/early-childhood-intervention"
+  },
+  {
+    "countyId": "san-saba-tx",
+    "countyName": "San Saba",
+    "programName": "Center for Life Resources",
+    "address": "1101 7th Street, Brownwood, TX 76804",
+    "referralPhone": "(325) 643-1721",
+    "fax": "(325) 646-7627",
+    "email": "cindee.goodwin@cflr.us",
+    "website": "http://cflr.us/ns/2019/08/08/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "schleicher-tx",
+    "countyName": "Schleicher",
+    "programName": "Region 15 Education Service Center",
+    "address": "612 South Irene Street, San Angelo, TX 76903",
+    "referralPhone": "(325) 658-6571",
+    "fax": "(325) 653-0036",
+    "email": "tara.wiley@esc15.net",
+    "website": "http://esc15.net/parents/early-childhood-intervention"
+  },
+  {
+    "countyId": "scurry-tx",
+    "countyName": "Scurry",
+    "programName": "West Texas Centers",
+    "address": "1104 Henderson, Sweetwater, TX 79556",
+    "referralPhone": "(800) 852-2193",
+    "fax": "(325) 236-6112",
+    "email": "christie.shaw@wtcmhmr.org",
+    "website": "http://wtcmhmr.org/our-services/#little-lives"
+  },
+  {
+    "countyId": "shackelford-tx",
+    "countyName": "Shackelford",
+    "programName": "Betty Hardwick Center",
+    "address": "Betty Hardwick ECI, 765 Orange Street, Abilene, TX 79601",
+    "referralPhone": "(325) 627-0908",
+    "fax": "(325) 670-4831",
+    "email": "eci@bettyhardwick.org",
+    "website": "http://bettyhardwick.org/services/eci"
+  },
+  {
+    "countyId": "shelby-tx",
+    "countyName": "Shelby",
+    "programName": "Burke Center",
+    "address": "Burke ECI Program, 2001 South Medford Drive, Lufkin, TX 75901",
+    "referralPhone": "(936) 634-4703",
+    "fax": "(936) 633-7613",
+    "email": "pam.phillips@myburke.org",
+    "website": "http://myburke.org/services/eci"
+  },
+  {
+    "countyId": "sherman-tx",
+    "countyName": "Sherman",
+    "programName": "Region 16 Education Service Center",
+    "address": "5800 Bell Street, Amarillo, TX 79109",
+    "referralPhone": "(806) 677-5228",
+    "fax": "(806) 677-5227",
+    "email": "christina.flowers@esc16.net",
+    "website": "http://esc16.net"
+  },
+  {
+    "countyId": "smith-tx",
+    "countyName": "Smith",
+    "programName": "Community Healthcore",
+    "address": "107 Woodbine Place, Longview, TX 75601",
+    "referralPhone": "(903) 757-8194",
+    "fax": "(903) 921-1854",
+    "email": "eci.referrals@communityhealthcore.com",
+    "website": "http://communityhealthcore.com/services/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "somervell-tx",
+    "countyName": "Somervell",
+    "programName": "MHMR of Tarrant County",
+    "address": "ECI of North Central Texas, 3840 Hulen Street, Suite 602, Fort Worth, TX 76107",
+    "referralPhone": "(817) 335-3022",
+    "fax": "(817) 569-4492",
+    "email": "anisha.philips@mhmrtc.org",
+    "website": "http://mhmrtarrant.org/ECI"
+  },
+  {
+    "countyId": "starr-tx",
+    "countyName": "Starr",
+    "programName": "Easterseals Rio Grande Valley",
+    "address": "1217 Houston Street, McAllen, TX 78501",
+    "referralPhone": "(956) 631-9171",
+    "fax": "(956) 631-9171",
+    "email": "referrals@easterseals-rgv.org",
+    "website": "http://tinyurl.com/EastersealsRGVECI"
+  },
+  {
+    "countyId": "stephens-tx",
+    "countyName": "Stephens",
+    "programName": "Betty Hardwick Center",
+    "address": "Betty Hardwick ECI, 765 Orange Street, Abilene, TX 79601",
+    "referralPhone": "(325) 627-0908",
+    "fax": "(325) 670-4831",
+    "email": "eci@bettyhardwick.org",
+    "website": "http://bettyhardwick.org/services/eci"
+  },
+  {
+    "countyId": "sterling-tx",
+    "countyName": "Sterling",
+    "programName": "Region 15 Education Service Center",
+    "address": "612 South Irene Street, San Angelo, TX 76903",
+    "referralPhone": "(325) 658-6571",
+    "fax": "(325) 653-0036",
+    "email": "tara.wiley@esc15.net",
+    "website": "http://esc15.net/parents/early-childhood-intervention"
+  },
+  {
+    "countyId": "stonewall-tx",
+    "countyName": "Stonewall",
+    "programName": "West Texas Centers",
+    "address": "1104 Henderson, Sweetwater, TX 79556",
+    "referralPhone": "(800) 852-2193",
+    "fax": "(325) 236-6112",
+    "email": "christie.shaw@wtcmhmr.org",
+    "website": "http://wtcmhmr.org/our-services/#little-lives"
+  },
+  {
+    "countyId": "sutton-tx",
+    "countyName": "Sutton",
+    "programName": "Region 15 Education Service Center",
+    "address": "612 South Irene Street, San Angelo, TX 76903",
+    "referralPhone": "(325) 658-6571",
+    "fax": "(325) 653-0036",
+    "email": "tara.wiley@esc15.net",
+    "website": "http://esc15.net/parents/early-childhood-intervention"
+  },
+  {
+    "countyId": "swisher-tx",
+    "countyName": "Swisher",
+    "programName": "Central Plains Center",
+    "address": "710 Quincy Street, Plainview, TX 79072",
+    "referralPhone": "(806) 291-4416",
+    "fax": "(806) 291-4419",
+    "email": "vanessag@clplains.org",
+    "website": "http://centralplains.org/eci"
+  },
+  {
+    "countyId": "tarrant-tx",
+    "countyName": "Tarrant",
+    "programName": "MHMR of Tarrant County",
+    "address": "ECI of North Central Texas, 3840 Hulen Street, Suite 602, Fort Worth, TX 76107",
+    "referralPhone": "(817) 335-3022",
+    "fax": "(817) 569-4492",
+    "email": "anisha.philips@mhmrtc.org",
+    "website": "http://mhmrtarrant.org/ECI"
+  },
+  {
+    "countyId": "taylor-tx",
+    "countyName": "Taylor",
+    "programName": "Betty Hardwick Center",
+    "address": "Betty Hardwick ECI, 765 Orange Street, Abilene, TX 79601",
+    "referralPhone": "(325) 627-0908",
+    "fax": "(325) 670-4831",
+    "email": "eci@bettyhardwick.org",
+    "website": "http://bettyhardwick.org/services/eci"
+  },
+  {
+    "countyId": "terrell-tx",
+    "countyName": "Terrell",
+    "programName": "West Texas Centers",
+    "address": "1104 Henderson, Sweetwater, TX 79556",
+    "referralPhone": "(800) 852-2193",
+    "fax": "(325) 236-6112",
+    "email": "christie.shaw@wtcmhmr.org",
+    "website": "http://wtcmhmr.org/our-services/#little-lives"
+  },
+  {
+    "countyId": "terry-tx",
+    "countyName": "Terry",
+    "programName": "Lubbock Independent School District",
+    "address": "ECI DEBT, 1628 19th Street, Lubbock, TX 79401",
+    "referralPhone": "(806) 219-0500",
+    "fax": "(806) 766-1286",
+    "email": "bryan.sessom@lubbockisd.org",
+    "website": "http://lubbockisd.org/o/lisd/page/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "throckmorton-tx",
+    "countyName": "Throckmorton",
+    "programName": "West Texas Centers",
+    "address": "1104 Henderson, Sweetwater, TX 79556",
+    "referralPhone": "(800) 852-2193",
+    "fax": "(325) 236-6112",
+    "email": "christie.shaw@wtcmhmr.org",
+    "website": "http://wtcmhmr.org/our-services/#little-lives"
+  },
+  {
+    "countyId": "titus-tx",
+    "countyName": "Titus",
+    "programName": "Lakes Regional Community Center",
+    "address": "4804 Wesley Street, Greenville, TX 75401",
+    "referralPhone": "(903) 454-0300",
+    "fax": "(903) 454-8635",
+    "email": "angelas@lakesregional.org",
+    "website": "http://lakesregional.org/early-childhood-intervention"
+  },
+  {
+    "countyId": "tom-green-tx",
+    "countyName": "Tom Green",
+    "programName": "Region 15 Education Service Center",
+    "address": "612 South Irene Street, San Angelo, TX 76903",
+    "referralPhone": "(325) 658-6571",
+    "fax": "(325) 653-0036",
+    "email": "tara.wiley@esc15.net",
+    "website": "http://esc15.net/parents/early-childhood-intervention"
+  },
+  {
+    "countyId": "travis-tx",
+    "countyName": "Travis",
+    "programName": "Easterseals Lonestar Central Texas",
+    "address": "Easterseals ECI, 8001 Centre Park Drive, Suite 130, Austin, TX 78754",
+    "referralPhone": "(512) 615-6898",
+    "fax": "(855) 212-9474",
+    "email": "ecireferrals@eslonestar.org",
+    "website": "http://eslonestar.org/educational-development-programs"
+  },
+  {
+    "countyId": "travis-tx",
+    "countyName": "Travis",
+    "programName": "Any Baby Can",
+    "address": "Parent Child Program, 6207 Sheridan Avenue, Austin, TX 78723",
+    "referralPhone": "(512) 454-3743",
+    "fax": "(512) 334-4465",
+    "email": "guillermol@anybabycan.org",
+    "website": "http://anybabycan.org/services/early-childhood-intervention"
+  },
+  {
+    "countyId": "trinity-tx",
+    "countyName": "Trinity",
+    "programName": "Burke Center",
+    "address": "Burke ECI Program, 2001 South Medford Drive, Lufkin, TX 75901",
+    "referralPhone": "(936) 634-4703",
+    "fax": "(936) 633-7613",
+    "email": "pam.phillips@myburke.org",
+    "website": "http://myburke.org/services/eci"
+  },
+  {
+    "countyId": "tyler-tx",
+    "countyName": "Tyler",
+    "programName": "Burke Center",
+    "address": "Burke ECI Program, 2001 South Medford Drive, Lufkin, TX 75901",
+    "referralPhone": "(936) 634-4703",
+    "fax": "(936) 633-7613",
+    "email": "pam.phillips@myburke.org",
+    "website": "http://myburke.org/services/eci"
+  },
+  {
+    "countyId": "upshur-tx",
+    "countyName": "Upshur",
+    "programName": "Community Healthcore",
+    "address": "107 Woodbine Place, Longview, TX 75601",
+    "referralPhone": "(903) 757-8194",
+    "fax": "(903) 921-1854",
+    "email": "eci.referrals@communityhealthcore.com",
+    "website": "http://communityhealthcore.com/services/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "upton-tx",
+    "countyName": "Upton",
+    "programName": "West Texas Centers",
+    "address": "1104 Henderson, Sweetwater, TX 79556",
+    "referralPhone": "(800) 852-2193",
+    "fax": "(325) 236-6112",
+    "email": "christie.shaw@wtcmhmr.org",
+    "website": "http://wtcmhmr.org/our-services/#little-lives"
+  },
+  {
+    "countyId": "uvalde-tx",
+    "countyName": "Uvalde",
+    "programName": "Camino Real Community Services",
+    "address": "Camino Real Community Services ECI Program, 19965 FM 3175 North, Lytle, TX 78052",
+    "referralPhone": "(210) 357-0300",
+    "fax": "(830) 709-5493",
+    "email": "yvetteh@caminorealcs.org",
+    "website": "http://caminorealcs.org/eci-services"
+  },
+  {
+    "countyId": "val-verde-tx",
+    "countyName": "Val Verde",
+    "programName": "Region 15 Education Service Center",
+    "address": "612 South Irene Street, San Angelo, TX 76903",
+    "referralPhone": "(325) 658-6571",
+    "fax": "(325) 653-0036",
+    "email": "tara.wiley@esc15.net",
+    "website": "http://esc15.net/parents/early-childhood-intervention"
+  },
+  {
+    "countyId": "van-zandt-tx",
+    "countyName": "Van Zandt",
+    "programName": "Community Healthcore",
+    "address": "107 Woodbine Place, Longview, TX 75601",
+    "referralPhone": "(903) 757-8194",
+    "fax": "(903) 921-1854",
+    "email": "eci.referrals@communityhealthcore.com",
+    "website": "http://communityhealthcore.com/services/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "victoria-tx",
+    "countyName": "Victoria",
+    "programName": "Region 3 Education Service Center",
+    "address": "15555 US Hwy 77 North, Victoria, TX 77904",
+    "referralPhone": "(888) 909-3512",
+    "fax": "(361) 573-1594",
+    "email": "kmerritt@esc3.net",
+    "website": "http://esc3.net/welcome"
+  },
+  {
+    "countyId": "walker-tx",
+    "countyName": "Walker",
+    "programName": "Easterseals Greater Houston",
+    "address": "4888 Loop Central Drive, Suite 200, Houston, TX 77081",
+    "referralPhone": "(713) 838-9050",
+    "fax": "(713) 838-0926",
+    "email": "dday@eastersealshouston.org",
+    "website": "http://eastersealshouston.org/eci-infant-development-program"
+  },
+  {
+    "countyId": "waller-tx",
+    "countyName": "Waller",
+    "programName": "Katy Independent School District",
+    "address": "Katy ISD-ECI Project Tyke, 6361 South Stadium Lane, Katy, TX 77494",
+    "referralPhone": "(281) 237-6647",
+    "fax": "(281) 644-1846",
+    "email": "tremiadpolk@katyisd.org",
+    "website": "http://katyisd.org/eci-project-tyke"
+  },
+  {
+    "countyId": "waller-tx",
+    "countyName": "Waller",
+    "programName": "Texana Center",
+    "address": "Project GROW, 4910 Airport Avenue, Rosenberg, TX 77471",
+    "referralPhone": "(281) 238-1800",
+    "fax": "(281) 238-1859",
+    "email": "eci.referrals@texanacenter.com",
+    "website": "http://texanacenter.com/services/child-and-family-services/early-childhood-intervention"
+  },
+  {
+    "countyId": "ward-tx",
+    "countyName": "Ward",
+    "programName": "West Texas Centers",
+    "address": "1104 Henderson, Sweetwater, TX 79556",
+    "referralPhone": "(800) 852-2193",
+    "fax": "(325) 236-6112",
+    "email": "christie.shaw@wtcmhmr.org",
+    "website": "http://wtcmhmr.org/our-services/#little-lives"
+  },
+  {
+    "countyId": "washington-tx",
+    "countyName": "Washington",
+    "programName": "Easterseals Greater Houston",
+    "address": "4888 Loop Central Drive, Suite 200, Houston, TX 77081",
+    "referralPhone": "(713) 838-9050",
+    "fax": "(713) 838-0926",
+    "email": "dday@eastersealshouston.org",
+    "website": "http://eastersealshouston.org/eci-infant-development-program"
+  },
+  {
+    "countyId": "webb-tx",
+    "countyName": "Webb",
+    "programName": "Community Action Corporation of South Texas",
+    "address": "Project Ni&#241;os, 204 East First Street, Alice, TX 78332",
+    "referralPhone": "(361) 265-4502",
+    "fax": "(361) 364-9248",
+    "email": "hector.rios@cacost.org",
+    "website": "http://cacost.org/programs/early-childhood-intervention"
+  },
+  {
+    "countyId": "wharton-tx",
+    "countyName": "Wharton",
+    "programName": "Region 3 Education Service Center",
+    "address": "15555 US Hwy 77 North, Victoria, TX 77904",
+    "referralPhone": "(888) 909-3512",
+    "fax": "(361) 573-1594",
+    "email": "kmerritt@esc3.net",
+    "website": "http://esc3.net/welcome"
+  },
+  {
+    "countyId": "wheeler-tx",
+    "countyName": "Wheeler",
+    "programName": "Region 16 Education Service Center",
+    "address": "5800 Bell Street, Amarillo, TX 79109",
+    "referralPhone": "(806) 677-5228",
+    "fax": "(806) 677-5227",
+    "email": "christina.flowers@esc16.net",
+    "website": "http://esc16.net"
+  },
+  {
+    "countyId": "wichita-tx",
+    "countyName": "Wichita",
+    "programName": "Helen Farabee Centers",
+    "address": "1709 10th Street, Wichita Falls, TX 76301",
+    "referralPhone": "(940) 696-6200",
+    "fax": "(940) 696-6210",
+    "email": "flinnc@helenfarabee.org",
+    "website": "http://helenfarabee.org/eci-program"
+  },
+  {
+    "countyId": "wilbarger-tx",
+    "countyName": "Wilbarger",
+    "programName": "Helen Farabee Centers",
+    "address": "1709 10th Street, Wichita Falls, TX 76301",
+    "referralPhone": "(940) 696-6200",
+    "fax": "(940) 696-6210",
+    "email": "flinnc@helenfarabee.org",
+    "website": "http://helenfarabee.org/eci-program"
+  },
+  {
+    "countyId": "willacy-tx",
+    "countyName": "Willacy",
+    "programName": "Easterseals Rio Grande Valley",
+    "address": "1217 Houston Street, McAllen, TX 78501",
+    "referralPhone": "(956) 631-9171",
+    "fax": "(956) 631-9171",
+    "email": "referrals@easterseals-rgv.org",
+    "website": "http://tinyurl.com/EastersealsRGVECI"
+  },
+  {
+    "countyId": "williamson-tx",
+    "countyName": "Williamson",
+    "programName": "Bluebonnet Trails Community Services",
+    "address": "1009 North Georgetown Street, Round Rock, TX 78664",
+    "referralPhone": "(844) 309-6385",
+    "fax": "(512) 853-6236",
+    "email": "shannon.struble@bbtrails.org; ecireferrals@bbtrails.org",
+    "website": "http://bbtrails.org/early-childhood-intervention-eci-services"
+  },
+  {
+    "countyId": "wilson-tx",
+    "countyName": "Wilson",
+    "programName": "Camino Real Community Services",
+    "address": "Camino Real Community Services ECI Program, 19965 FM 3175 North, Lytle, TX 78052",
+    "referralPhone": "(210) 357-0300",
+    "fax": "(830) 709-5493",
+    "email": "yvetteh@caminorealcs.org",
+    "website": "http://caminorealcs.org/eci-services"
+  },
+  {
+    "countyId": "winkler-tx",
+    "countyName": "Winkler",
+    "programName": "West Texas Centers",
+    "address": "1104 Henderson, Sweetwater, TX 79556",
+    "referralPhone": "(800) 852-2193",
+    "fax": "(325) 236-6112",
+    "email": "christie.shaw@wtcmhmr.org",
+    "website": "http://wtcmhmr.org/our-services/#little-lives"
+  },
+  {
+    "countyId": "wise-tx",
+    "countyName": "Wise",
+    "programName": "MHMR of Tarrant County",
+    "address": "ECI of North Central Texas, 3840 Hulen Street, Suite 602, Fort Worth, TX 76107",
+    "referralPhone": "(817) 335-3022",
+    "fax": "(817) 569-4492",
+    "email": "anisha.philips@mhmrtc.org",
+    "website": "http://mhmrtarrant.org/ECI"
+  },
+  {
+    "countyId": "wood-tx",
+    "countyName": "Wood",
+    "programName": "Community Healthcore",
+    "address": "107 Woodbine Place, Longview, TX 75601",
+    "referralPhone": "(903) 757-8194",
+    "fax": "(903) 921-1854",
+    "email": "eci.referrals@communityhealthcore.com",
+    "website": "http://communityhealthcore.com/services/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "yoakum-tx",
+    "countyName": "Yoakum",
+    "programName": "Lubbock Independent School District",
+    "address": "ECI DEBT, 1628 19th Street, Lubbock, TX 79401",
+    "referralPhone": "(806) 219-0500",
+    "fax": "(806) 766-1286",
+    "email": "bryan.sessom@lubbockisd.org",
+    "website": "http://lubbockisd.org/o/lisd/page/early-childhood-intervention-eci"
+  },
+  {
+    "countyId": "young-tx",
+    "countyName": "Young",
+    "programName": "Helen Farabee Centers",
+    "address": "1709 10th Street, Wichita Falls, TX 76301",
+    "referralPhone": "(940) 696-6200",
+    "fax": "(940) 696-6210",
+    "email": "flinnc@helenfarabee.org",
+    "website": "http://helenfarabee.org/eci-program"
+  },
+  {
+    "countyId": "zapata-tx",
+    "countyName": "Zapata",
+    "programName": "Community Action Corporation of South Texas",
+    "address": "Project Ni&#241;os, 204 East First Street, Alice, TX 78332",
+    "referralPhone": "(361) 265-4502",
+    "fax": "(361) 364-9248",
+    "email": "hector.rios@cacost.org",
+    "website": "http://cacost.org/programs/early-childhood-intervention"
+  },
+  {
+    "countyId": "zavala-tx",
+    "countyName": "Zavala",
+    "programName": "Camino Real Community Services",
+    "address": "Camino Real Community Services ECI Program, 19965 FM 3175 North, Lytle, TX 78052",
+    "referralPhone": "(210) 357-0300",
+    "fax": "(830) 709-5493",
+    "email": "yvetteh@caminorealcs.org",
+    "website": "http://caminorealcs.org/eci-services"
+  }
+]

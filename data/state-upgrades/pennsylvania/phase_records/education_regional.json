@@ -1,0 +1,505 @@
+[
+  {
+    "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+    "confidence_score": 0.95,
+    "notes": "Official Pennsylvania Intermediate Unit (IU) serving FAYETTE, GREENE, WASHINGTON counties. Provides Preschool Early Intervention and regional educational services.",
+    "suggested_target_id": "pa-iu-1",
+    "name": "Intermediate Unit 1",
+    "phone": "(724) 938-3241",
+    "physical_county": "washington-pa",
+    "counties_served": [
+      "fayette-pa",
+      "greene-pa",
+      "washington-pa"
+    ],
+    "agency_type": "iu",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+    "confidence_score": 0.95,
+    "notes": "Official Pennsylvania Intermediate Unit (IU) serving ALLEGHENY counties. Provides Preschool Early Intervention and regional educational services.",
+    "suggested_target_id": "pa-iu-2",
+    "name": "Pittsburgh-Mt. Oliver Intermediate Unit 2",
+    "phone": "(412) 529-4357",
+    "physical_county": "allegheny-pa",
+    "counties_served": [
+      "allegheny-pa"
+    ],
+    "agency_type": "iu",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+    "confidence_score": 0.95,
+    "notes": "Official Pennsylvania Intermediate Unit (IU) serving ALLEGHENY counties. Provides Preschool Early Intervention and regional educational services.",
+    "suggested_target_id": "pa-iu-3",
+    "name": "Allegheny Intermediate Unit 3",
+    "phone": "(412) 394-5700",
+    "physical_county": "allegheny-pa",
+    "counties_served": [
+      "allegheny-pa"
+    ],
+    "agency_type": "iu",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+    "confidence_score": 0.95,
+    "notes": "Official Pennsylvania Intermediate Unit (IU) serving BUTLER, LAWRENCE, MERCER counties. Provides Preschool Early Intervention and regional educational services.",
+    "suggested_target_id": "pa-iu-4",
+    "name": "Midwestern Intermediate Unit 4",
+    "phone": "(724) 458-6700",
+    "physical_county": "mercer-pa",
+    "counties_served": [
+      "butler-pa",
+      "lawrence-pa",
+      "mercer-pa"
+    ],
+    "agency_type": "iu",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+    "confidence_score": 0.95,
+    "notes": "Official Pennsylvania Intermediate Unit (IU) serving ERIE, CRAWFORD, WARREN counties. Provides Preschool Early Intervention and regional educational services.",
+    "suggested_target_id": "pa-iu-5",
+    "name": "Northwest Tri-County Intermediate Unit 5",
+    "phone": "(814) 734-5610",
+    "physical_county": "erie-pa",
+    "counties_served": [
+      "erie-pa",
+      "crawford-pa",
+      "warren-pa"
+    ],
+    "agency_type": "iu",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+    "confidence_score": 0.95,
+    "notes": "Official Pennsylvania Intermediate Unit (IU) serving CLARION, FOREST, JEFFERSON, VENANGO counties. Provides Preschool Early Intervention and regional educational services.",
+    "suggested_target_id": "pa-iu-6",
+    "name": "Riverview Intermediate Unit 6",
+    "phone": "(814) 226-4000",
+    "physical_county": "clarion-pa",
+    "counties_served": [
+      "clarion-pa",
+      "forest-pa",
+      "jefferson-pa",
+      "venango-pa"
+    ],
+    "agency_type": "iu",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+    "confidence_score": 0.95,
+    "notes": "Official Pennsylvania Intermediate Unit (IU) serving WESTMORELAND counties. Provides Preschool Early Intervention and regional educational services.",
+    "suggested_target_id": "pa-iu-7",
+    "name": "Westmoreland Intermediate Unit 7",
+    "phone": "(724) 836-2460",
+    "physical_county": "westmoreland-pa",
+    "counties_served": [
+      "westmoreland-pa"
+    ],
+    "agency_type": "iu",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+    "confidence_score": 0.95,
+    "notes": "Official Pennsylvania Intermediate Unit (IU) serving BEDFORD, BLAIR, CAMBRIA, SOMERSET counties. Provides Preschool Early Intervention and regional educational services.",
+    "suggested_target_id": "pa-iu-8",
+    "name": "Appalachia Intermediate Unit 8",
+    "phone": "(814) 940-0223",
+    "physical_county": "blair-pa",
+    "counties_served": [
+      "bedford-pa",
+      "blair-pa",
+      "cambria-pa",
+      "somerset-pa"
+    ],
+    "agency_type": "iu",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+    "confidence_score": 0.95,
+    "notes": "Official Pennsylvania Intermediate Unit (IU) serving CAMERON, ELK, MCKEAN, POTTER counties. Provides Preschool Early Intervention and regional educational services.",
+    "suggested_target_id": "pa-iu-9",
+    "name": "Seneca Highlands Intermediate Unit 9",
+    "phone": "(814) 887-5512",
+    "physical_county": "mckean-pa",
+    "counties_served": [
+      "cameron-pa",
+      "elk-pa",
+      "mckean-pa",
+      "potter-pa"
+    ],
+    "agency_type": "iu",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+    "confidence_score": 0.95,
+    "notes": "Official Pennsylvania Intermediate Unit (IU) serving CENTRE, CLEARFIELD, CLINTON counties. Provides Preschool Early Intervention and regional educational services.",
+    "suggested_target_id": "pa-iu-10",
+    "name": "Central Intermediate Unit 10",
+    "phone": "(814) 342-0884",
+    "physical_county": "centre-pa",
+    "counties_served": [
+      "centre-pa",
+      "clearfield-pa",
+      "clinton-pa"
+    ],
+    "agency_type": "iu",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+    "confidence_score": 0.95,
+    "notes": "Official Pennsylvania Intermediate Unit (IU) serving FULTON, HUNTINGDON, JUNIATA, MIFFLIN counties. Provides Preschool Early Intervention and regional educational services.",
+    "suggested_target_id": "pa-iu-11",
+    "name": "Tuscarora Intermediate Unit 11",
+    "phone": "(814) 542-2501",
+    "physical_county": "huntingdon-pa",
+    "counties_served": [
+      "fulton-pa",
+      "huntingdon-pa",
+      "juniata-pa",
+      "mifflin-pa"
+    ],
+    "agency_type": "iu",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+    "confidence_score": 0.95,
+    "notes": "Official Pennsylvania Intermediate Unit (IU) serving ADAMS, FRANKLIN, YORK counties. Provides Preschool Early Intervention and regional educational services.",
+    "suggested_target_id": "pa-iu-12",
+    "name": "Lincoln Intermediate Unit 12",
+    "phone": "(717 624-4616",
+    "physical_county": "adams-pa",
+    "counties_served": [
+      "adams-pa",
+      "franklin-pa",
+      "york-pa"
+    ],
+    "agency_type": "iu",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+    "confidence_score": 0.95,
+    "notes": "Official Pennsylvania Intermediate Unit (IU) serving LANCASTER, LEBANON counties. Provides Preschool Early Intervention and regional educational services.",
+    "suggested_target_id": "pa-iu-13",
+    "name": "Lancaster-Lebanon Intermediate Unit 13",
+    "phone": "(717) 606-1600",
+    "physical_county": "lancaster-pa",
+    "counties_served": [
+      "lancaster-pa",
+      "lebanon-pa"
+    ],
+    "agency_type": "iu",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+    "confidence_score": 0.95,
+    "notes": "Official Pennsylvania Intermediate Unit (IU) serving BERKS counties. Provides Preschool Early Intervention and regional educational services.",
+    "suggested_target_id": "pa-iu-14",
+    "name": "Berks County Intermediate Unit 14",
+    "phone": "(610) 987-2248",
+    "physical_county": "berks-pa",
+    "counties_served": [
+      "berks-pa"
+    ],
+    "agency_type": "iu",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+    "confidence_score": 0.95,
+    "notes": "Official Pennsylvania Intermediate Unit (IU) serving CUMBERLAND, DAUPHIN, PERRY counties. Provides Preschool Early Intervention and regional educational services.",
+    "suggested_target_id": "pa-iu-15",
+    "name": "Capital Area Intermediate Unit 15",
+    "phone": "(717) 732-8400",
+    "physical_county": "cumberland-pa",
+    "counties_served": [
+      "cumberland-pa",
+      "dauphin-pa",
+      "perry-pa"
+    ],
+    "agency_type": "iu",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+    "confidence_score": 0.95,
+    "notes": "Official Pennsylvania Intermediate Unit (IU) serving COLUMBIA, MONTOUR, NORTHUMBERLAND, SNYDER, UNION counties. Provides Preschool Early Intervention and regional educational services.",
+    "suggested_target_id": "pa-iu-16",
+    "name": "Central Susquehanna Intermediate Unit 16",
+    "phone": "(570) 523-1155",
+    "physical_county": "union-pa",
+    "counties_served": [
+      "columbia-pa",
+      "montour-pa",
+      "northumberland-pa",
+      "snyder-pa",
+      "union-pa"
+    ],
+    "agency_type": "iu",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+    "confidence_score": 0.95,
+    "notes": "Official Pennsylvania Intermediate Unit (IU) serving BRADFORD, LYCOMING, SULLIVAN, TIOGA counties. Provides Preschool Early Intervention and regional educational services.",
+    "suggested_target_id": "pa-iu-17",
+    "name": "BLaST Intermediate Unit 17",
+    "phone": "(570) 323-8561",
+    "physical_county": "lycoming-pa",
+    "counties_served": [
+      "bradford-pa",
+      "lycoming-pa",
+      "sullivan-pa",
+      "tioga-pa"
+    ],
+    "agency_type": "iu",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+    "confidence_score": 0.95,
+    "notes": "Official Pennsylvania Intermediate Unit (IU) serving LUZERNE, WYOMING counties. Provides Preschool Early Intervention and regional educational services.",
+    "suggested_target_id": "pa-iu-18",
+    "name": "Luzerne Intermediate Unit 18",
+    "phone": "(570) 718-4600",
+    "physical_county": "luzerne-pa",
+    "counties_served": [
+      "luzerne-pa",
+      "wyoming-pa"
+    ],
+    "agency_type": "iu",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+    "confidence_score": 0.95,
+    "notes": "Official Pennsylvania Intermediate Unit (IU) serving LACKAWANNA, SUSQUEHANNA, WAYNE counties. Provides Preschool Early Intervention and regional educational services.",
+    "suggested_target_id": "pa-iu-19",
+    "name": "Northeastern Educational Intermediate Unit 19",
+    "phone": "(570) 876-9200",
+    "physical_county": "lackawanna-pa",
+    "counties_served": [
+      "lackawanna-pa",
+      "susquehanna-pa",
+      "wayne-pa"
+    ],
+    "agency_type": "iu",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+    "confidence_score": 0.95,
+    "notes": "Official Pennsylvania Intermediate Unit (IU) serving MONROE, NORTHAMPTON, PIKE counties. Provides Preschool Early Intervention and regional educational services.",
+    "suggested_target_id": "pa-iu-20",
+    "name": "Colonial Intermediate Unit 20",
+    "phone": "(610) 252-5550",
+    "physical_county": "northampton-pa",
+    "counties_served": [
+      "monroe-pa",
+      "northampton-pa",
+      "pike-pa"
+    ],
+    "agency_type": "iu",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+    "confidence_score": 0.95,
+    "notes": "Official Pennsylvania Intermediate Unit (IU) serving CARBON, LEHIGH counties. Provides Preschool Early Intervention and regional educational services.",
+    "suggested_target_id": "pa-iu-21",
+    "name": "Carbon-Lehigh Intermediate Unit 21",
+    "phone": "(610) 769-4111",
+    "physical_county": "lehigh-pa",
+    "counties_served": [
+      "carbon-pa",
+      "lehigh-pa"
+    ],
+    "agency_type": "iu",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+    "confidence_score": 0.95,
+    "notes": "Official Pennsylvania Intermediate Unit (IU) serving BUCKS counties. Provides Preschool Early Intervention and regional educational services.",
+    "suggested_target_id": "pa-iu-22",
+    "name": "Bucks County Intermediate Unit 22",
+    "phone": "(215) 348-2940",
+    "physical_county": "bucks-pa",
+    "counties_served": [
+      "bucks-pa"
+    ],
+    "agency_type": "iu",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+    "confidence_score": 0.95,
+    "notes": "Official Pennsylvania Intermediate Unit (IU) serving MONTGOMERY counties. Provides Preschool Early Intervention and regional educational services.",
+    "suggested_target_id": "pa-iu-23",
+    "name": "Montgomery County Intermediate Unit 23",
+    "phone": "(610) 755-9400",
+    "physical_county": "montgomery-pa",
+    "counties_served": [
+      "montgomery-pa"
+    ],
+    "agency_type": "iu",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+    "confidence_score": 0.95,
+    "notes": "Official Pennsylvania Intermediate Unit (IU) serving CHESTER counties. Provides Preschool Early Intervention and regional educational services.",
+    "suggested_target_id": "pa-iu-24",
+    "name": "Chester County Intermediate Unit 24",
+    "phone": "(484) 237-5000",
+    "physical_county": "chester-pa",
+    "counties_served": [
+      "chester-pa"
+    ],
+    "agency_type": "iu",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+    "confidence_score": 0.95,
+    "notes": "Official Pennsylvania Intermediate Unit (IU) serving DELAWARE counties. Provides Preschool Early Intervention and regional educational services.",
+    "suggested_target_id": "pa-iu-25",
+    "name": "Delaware County Intermediate Unit 25",
+    "phone": "(610) 938-9000",
+    "physical_county": "delaware-pa",
+    "counties_served": [
+      "delaware-pa"
+    ],
+    "agency_type": "iu",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+    "confidence_score": 0.95,
+    "notes": "Official Pennsylvania Intermediate Unit (IU) serving PHILADELPHIA counties. Provides Preschool Early Intervention and regional educational services.",
+    "suggested_target_id": "pa-iu-26",
+    "name": "Philadelphia Intermediate Unit 26",
+    "phone": "(215) 400-4000",
+    "physical_county": "philadelphia-pa",
+    "counties_served": [
+      "philadelphia-pa"
+    ],
+    "agency_type": "iu",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+    "confidence_score": 0.95,
+    "notes": "Official Pennsylvania Intermediate Unit (IU) serving BEAVER counties. Provides Preschool Early Intervention and regional educational services.",
+    "suggested_target_id": "pa-iu-27",
+    "name": "Beaver Valley Intermediate Unit 27",
+    "phone": "(724) 774-7800",
+    "physical_county": "beaver-pa",
+    "counties_served": [
+      "beaver-pa"
+    ],
+    "agency_type": "iu",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+    "confidence_score": 0.95,
+    "notes": "Official Pennsylvania Intermediate Unit (IU) serving ARMSTRONG, INDIANA counties. Provides Preschool Early Intervention and regional educational services.",
+    "suggested_target_id": "pa-iu-28",
+    "name": "ARIN Intermediate Unit 28",
+    "phone": "(724) 463-5300",
+    "physical_county": "indiana-pa",
+    "counties_served": [
+      "armstrong-pa",
+      "indiana-pa"
+    ],
+    "agency_type": "iu",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+    "confidence_score": 0.95,
+    "notes": "Official Pennsylvania Intermediate Unit (IU) serving SCHUYLKILL counties. Provides Preschool Early Intervention and regional educational services.",
+    "suggested_target_id": "pa-iu-29",
+    "name": "Schuylkill Intermediate Unit 29",
+    "phone": "(570) 544-9131",
+    "physical_county": "schuylkill-pa",
+    "counties_served": [
+      "schuylkill-pa"
+    ],
+    "agency_type": "iu",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  }
+]

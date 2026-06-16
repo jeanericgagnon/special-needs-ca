@@ -1,0 +1,37 @@
+{
+  "scraper": "copaa",
+  "state": "SD",
+  "updatedAt": "2026-06-16T00:19:46.843Z",
+  "lastProcessedPage": 1,
+  "completed": false,
+  "metadata": {
+    "results": [
+      {
+        "id": "copaa-7f7eaf81ac1af726c929490b3899713af41986352a85ba964e9aa7b5a4ccce9b",
+        "name": "Jackie Waldie",
+        "state": "SD",
+        "city": "Rapid City",
+        "phone": "605-4313318\n                                                    work",
+        "email": "inspire1learning@gmail.com",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": "Inspire Education",
+        "organization_info": {
+          "id": "org-8a02f2533d54dac3095891bdedf0b35496681ed15dac3817580a9149e56e5c09",
+          "name": "Inspire Education",
+          "state": "SD",
+          "city": "Rapid City",
+          "phone": "605-4313318\n                                                    work",
+          "email": "inspire1learning@gmail.com",
+          "website": "https://connect.copaa.org",
+          "description": "Inspire Education is an organization specializing in special education advocacy.",
+          "source": "copaa",
+          "scraped_at": "2026-06-16T00:19:23.723Z"
+        },
+        "description": "Jackie Waldie is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-16T00:19:23.724Z"
+      }
+    ]
+  }
+}

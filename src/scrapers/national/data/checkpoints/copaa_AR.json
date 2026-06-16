@@ -1,0 +1,130 @@
+{
+  "scraper": "copaa",
+  "state": "AR",
+  "updatedAt": "2026-06-15T23:14:58.210Z",
+  "lastProcessedPage": 1,
+  "completed": false,
+  "metadata": {
+    "results": [
+      {
+        "id": "copaa-a0f6c9d7fe996a5ef0139a7ad4278be6e856cca5d044dacfd88e2fec8a3284a0",
+        "name": "Sara Avrams",
+        "state": "AR",
+        "city": "Lead Hill",
+        "phone": "870-6884085\n                                                    work",
+        "email": "sarazdreamz@outlook.com",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": "NA",
+        "organization_info": {
+          "id": "org-5ff865b8306d938769542ca8280ff128f91aa7004cc55e141e9ffd6b26c87e64",
+          "name": "NA",
+          "state": "AR",
+          "city": "Lead Hill",
+          "phone": "870-6884085\n                                                    work",
+          "email": "sarazdreamz@outlook.com",
+          "website": "https://connect.copaa.org",
+          "description": "NA is an organization specializing in special education advocacy.",
+          "source": "copaa",
+          "scraped_at": "2026-06-15T23:14:35.532Z"
+        },
+        "description": "Sara Avrams is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-15T23:14:35.533Z"
+      },
+      {
+        "id": "copaa-12ed87608689c7cc966c6d1c7628e7da4544468a802f9686a0c0159ac4e1428b",
+        "name": "Theresa Caldwell",
+        "state": "AR",
+        "city": "Little Rock",
+        "phone": "501-414-0434\n                                                    work",
+        "email": "tlcatty@gmail.com",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": "Caldwell Law Office",
+        "organization_info": {
+          "id": "org-1f5cf5c9559be740baab653406b4a9b5c1b55f6a76e4deae59260416e02a71b3",
+          "name": "Caldwell Law Office",
+          "state": "AR",
+          "city": "Little Rock",
+          "phone": "501-414-0434\n                                                    work",
+          "email": "tlcatty@gmail.com",
+          "website": "https://connect.copaa.org",
+          "description": "Caldwell Law Office is an organization specializing in special education advocacy.",
+          "source": "copaa",
+          "scraped_at": "2026-06-15T23:14:35.533Z"
+        },
+        "description": "Theresa Caldwell is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-15T23:14:35.533Z"
+      },
+      {
+        "id": "copaa-db7fc3e38032a2bd19e19d78b3b08ce76ca0c9146f20bcaec6d76b65cc423ba9",
+        "name": "Megan Cawlfield",
+        "state": "AR",
+        "city": "fayetteville",
+        "phone": "337-303-4863\n                                                    work",
+        "email": "mrsmegancfields@gmail.com",
+        "website": "https://connect.copaa.org",
+        "specialties": "Learning Disabilities",
+        "organization": "Virtual Milestone Academy",
+        "organization_info": {
+          "id": "org-6130e3dffd7a1862a99ca6a22d15b0f18ae6f5b927ec601c2b3b824dde29bc4d",
+          "name": "Virtual Milestone Academy",
+          "state": "AR",
+          "city": "fayetteville",
+          "phone": "337-303-4863\n                                                    work",
+          "email": "mrsmegancfields@gmail.com",
+          "website": "https://connect.copaa.org",
+          "description": "Virtual Milestone Academy is an organization specializing in special education advocacy.",
+          "source": "copaa",
+          "scraped_at": "2026-06-15T23:14:35.533Z"
+        },
+        "description": "Megan Cawlfield is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-15T23:14:35.533Z"
+      },
+      {
+        "id": "copaa-d458b2d5ee19c179e4130466fea1b1ca8cc674aebca3eacaac931b29aabecc79",
+        "name": "Stephanie Davis",
+        "state": "AR",
+        "city": "Sherwood",
+        "phone": "501-773-4658\n                                                    work",
+        "email": "steph.davis.m@gmail.com",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": "SRC Edvocates & Co., LLC",
+        "organization_info": {
+          "id": "org-a85ae36e9d25c36f91a49d36138ed3a3e875c01fa83f2ac965bd81e336af788b",
+          "name": "SRC Edvocates & Co., LLC",
+          "state": "AR",
+          "city": "Sherwood",
+          "phone": "501-773-4658\n                                                    work",
+          "email": "steph.davis.m@gmail.com",
+          "website": "https://connect.copaa.org",
+          "description": "SRC Edvocates & Co., LLC is an organization specializing in special education advocacy.",
+          "source": "copaa",
+          "scraped_at": "2026-06-15T23:14:35.533Z"
+        },
+        "description": "Stephanie Davis is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-15T23:14:35.533Z"
+      },
+      {
+        "id": "copaa-d03ead8b8db43d17880febb5a4583f6cdd000af1859df157396347e6794a5161",
+        "name": "Marilyn Debow",
+        "state": "AR",
+        "city": "Hot Springs",
+        "phone": "501-359-7828\n                                                    work",
+        "email": "marilyndebow@gmail.com",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": null,
+        "organization_info": null,
+        "description": "Marilyn Debow is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-15T23:14:35.533Z"
+      }
+    ]
+  }
+}

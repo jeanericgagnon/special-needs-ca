@@ -1,0 +1,55 @@
+[
+  {
+    "name": "iBudget Florida Waiver",
+    "entity_type": "program",
+    "program_id": "fl-ibudget-waiver",
+    "source_url": "https://apd.myflorida.com/ibudget/",
+    "physical_address": "4030 Esplanade Way, Tallahassee, FL 32399",
+    "physical_county": "leon-fl",
+    "counties_served": [
+      "all-fl"
+    ],
+    "service_area_type": "statewide",
+    "office_type": "program_administration",
+    "evidence_level": "statewide_routing_official",
+    "data_origin": "state_website",
+    "verification_status": "source_listed",
+    "confidence_score": 0.95,
+    "target_staging_table": "staging_scraped_programs",
+    "target_production_table": "programs",
+    "pull_method": "manual_source_curation",
+    "should_stage_later": true,
+    "should_promote_automatically": true,
+    "notes": "Home and Community-Based Services Medicaid Waiver for individuals with developmental disabilities."
+  },
+  {
+    "name": "Florida APD Waiver Waitlist / Interest List",
+    "entity_type": "program_waitlist",
+    "program_id": "fl-ibudget-waiver",
+    "source_url": "https://apd.myflorida.com/customers/application/",
+    "physical_address": "4030 Esplanade Way, Tallahassee, FL 32399",
+    "physical_county": "leon-fl",
+    "counties_served": [
+      "all-fl"
+    ],
+    "service_area_type": "statewide",
+    "office_type": "waitlist_registry",
+    "evidence_level": "official_report",
+    "data_origin": "state_website",
+    "verification_status": "source_listed",
+    "confidence_score": 0.95,
+    "target_staging_table": "staging_scraped_program_waitlists",
+    "target_production_table": "program_waitlists",
+    "pull_method": "manual_source_curation",
+    "should_stage_later": true,
+    "should_promote_automatically": true,
+    "duration_label": "Not officially stated",
+    "duration_months": -1,
+    "status": "active",
+    "estimate_source_url": "https://apd.myflorida.com/publications/reports/",
+    "estimate_source_type": "official_report",
+    "last_checked_at": "2026-06-13",
+    "description": "Pre-enrollment waitlist for the iBudget waiver. This is informational and subject to change.",
+    "notes": "Pre-enrollment waitlist for the iBudget waiver, currently containing over 22,000 individuals."
+  }
+]

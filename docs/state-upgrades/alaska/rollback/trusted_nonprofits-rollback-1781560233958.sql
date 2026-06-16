@@ -1,0 +1,67 @@
+-- Rollback Script for State: Alaska | Phase: trusted_nonprofits
+-- Generated At: 2026-06-15T21:50:33.979Z
+
+BEGIN TRANSACTION;
+
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-parent-yakutat-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-arc-yakutat-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-rights-yakutat-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-parent-wrangell-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-arc-wrangell-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-rights-wrangell-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-parent-unorganized-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-arc-unorganized-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-rights-unorganized-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-parent-skagway-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-arc-skagway-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-rights-skagway-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-parent-sitka-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-arc-sitka-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-rights-sitka-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-parent-petersburg-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-arc-petersburg-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-rights-petersburg-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-parent-northwest-arctic-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-arc-northwest-arctic-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-rights-northwest-arctic-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-parent-north-slope-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-arc-north-slope-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-rights-north-slope-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-parent-matanuska-susitna-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-arc-matanuska-susitna-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-rights-matanuska-susitna-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-parent-lake-and-peninsula-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-arc-lake-and-peninsula-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-rights-lake-and-peninsula-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-parent-kodiak-island-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-arc-kodiak-island-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-rights-kodiak-island-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-parent-ketchikan-gateway-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-arc-ketchikan-gateway-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-rights-ketchikan-gateway-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-parent-kenai-peninsula-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-arc-kenai-peninsula-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-rights-kenai-peninsula-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-parent-juneau-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-arc-juneau-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-rights-juneau-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-parent-haines-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-arc-haines-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-rights-haines-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-parent-fairbanks-north-star-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-arc-fairbanks-north-star-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-rights-fairbanks-north-star-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-parent-denali-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-arc-denali-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-rights-denali-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-parent-bristol-bay-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-arc-bristol-bay-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-rights-bristol-bay-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-parent-anchorage-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-arc-anchorage-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-rights-anchorage-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-parent-aleutians-east-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-arc-aleutians-east-borough-ak';
+DELETE FROM nonprofit_organizations WHERE id = 'al-np-rights-aleutians-east-borough-ak';
+
+COMMIT;

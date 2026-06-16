@@ -1,0 +1,424 @@
+[
+  {
+    "source_url": "https://www.roe1.net",
+    "confidence_score": 9.5,
+    "notes": "Official Regional Office of Education (ROE) or Intermediate Service Center (ISC) serving county catchments.",
+    "suggested_target_id": "il-roe-1",
+    "name": "Adams/Pike Regional Office of Education (ROE 1)",
+    "phone": "(217) 223-6300",
+    "agency_type": "roe",
+    "physical_county": "adams-il",
+    "counties_served": [
+      "adams-il",
+      "brown-il",
+      "cass-il",
+      "morgan-il",
+      "pike-il",
+      "scott-il"
+    ],
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.roe3.org",
+    "confidence_score": 9.5,
+    "notes": "Official Regional Office of Education (ROE) or Intermediate Service Center (ISC) serving county catchments.",
+    "suggested_target_id": "il-roe-3",
+    "name": "Bond/Christian/Effingham Regional Office of Education (ROE 3)",
+    "phone": "(217) 342-4369",
+    "agency_type": "roe",
+    "physical_county": "bond-il",
+    "counties_served": [
+      "bond-il",
+      "christian-il",
+      "effingham-il",
+      "fayette-il",
+      "montgomery-il"
+    ],
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.roe4.org",
+    "confidence_score": 9.5,
+    "notes": "Official Regional Office of Education (ROE) or Intermediate Service Center (ISC) serving county catchments.",
+    "suggested_target_id": "il-roe-4",
+    "name": "Boone/Winnebago Regional Office of Education (ROE 4)",
+    "phone": "(815) 636-3060",
+    "agency_type": "roe",
+    "physical_county": "boone-il",
+    "counties_served": [
+      "boone-il",
+      "winnebago-il"
+    ],
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.roe8.org",
+    "confidence_score": 9.5,
+    "notes": "Official Regional Office of Education (ROE) or Intermediate Service Center (ISC) serving county catchments.",
+    "suggested_target_id": "il-roe-8",
+    "name": "Carroll/Jo Daviess/Stephenson Regional Office of Education (ROE 8)",
+    "phone": "(815) 599-1408",
+    "agency_type": "roe",
+    "physical_county": "carroll-il",
+    "counties_served": [
+      "carroll-il",
+      "jo-daviess-il",
+      "stephenson-il"
+    ],
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.roe9.org",
+    "confidence_score": 9.5,
+    "notes": "Official Regional Office of Education (ROE) or Intermediate Service Center (ISC) serving county catchments.",
+    "suggested_target_id": "il-roe-9",
+    "name": "Champaign/Ford Regional Office of Education (ROE 9)",
+    "phone": "(217) 893-3219",
+    "agency_type": "roe",
+    "physical_county": "champaign-il",
+    "counties_served": [
+      "champaign-il",
+      "ford-il"
+    ],
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.roe17.org",
+    "confidence_score": 9.5,
+    "notes": "Official Regional Office of Education (ROE) or Intermediate Service Center (ISC) serving county catchments.",
+    "suggested_target_id": "il-roe-17",
+    "name": "DeWitt/Livingston/McLean Regional Office of Education (ROE 17)",
+    "phone": "(309) 888-5120",
+    "agency_type": "roe",
+    "physical_county": "dewitt-il",
+    "counties_served": [
+      "dewitt-il",
+      "livingston-il",
+      "logan-il",
+      "mclean-il",
+      "woodford-il"
+    ],
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.dupageROE.org",
+    "confidence_score": 9.5,
+    "notes": "Official Regional Office of Education (ROE) or Intermediate Service Center (ISC) serving county catchments.",
+    "suggested_target_id": "il-roe-19",
+    "name": "DuPage Regional Office of Education (ROE 19)",
+    "phone": "(630) 407-5800",
+    "agency_type": "roe",
+    "physical_county": "dupage-il",
+    "counties_served": [
+      "dupage-il"
+    ],
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.roe21.org",
+    "confidence_score": 9.5,
+    "notes": "Official Regional Office of Education (ROE) or Intermediate Service Center (ISC) serving county catchments.",
+    "suggested_target_id": "il-roe-21",
+    "name": "Franklin/Johnson/Massac Regional Office of Education (ROE 21)",
+    "phone": "(618) 438-9711",
+    "agency_type": "roe",
+    "physical_county": "franklin-il",
+    "counties_served": [
+      "franklin-il",
+      "johnson-il",
+      "massac-il",
+      "williamson-il"
+    ],
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.roe26.net",
+    "confidence_score": 9.5,
+    "notes": "Official Regional Office of Education (ROE) or Intermediate Service Center (ISC) serving county catchments.",
+    "suggested_target_id": "il-roe-26",
+    "name": "Hancock/McDonough Regional Office of Education (ROE 26)",
+    "phone": "(309) 575-3226",
+    "agency_type": "roe",
+    "physical_county": "hancock-il",
+    "counties_served": [
+      "hancock-il",
+      "mcdonough-il",
+      "fulton-il",
+      "schuyler-il"
+    ],
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.roe30.org",
+    "confidence_score": 9.5,
+    "notes": "Official Regional Office of Education (ROE) or Intermediate Service Center (ISC) serving county catchments.",
+    "suggested_target_id": "il-roe-30",
+    "name": "Alexander/Jackson/Perry Regional Office of Education (ROE 30)",
+    "phone": "(618) 687-4663",
+    "agency_type": "roe",
+    "physical_county": "alexander-il",
+    "counties_served": [
+      "alexander-il",
+      "jackson-il",
+      "perry-il",
+      "pulaski-il",
+      "union-il"
+    ],
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.kaneroe.org",
+    "confidence_score": 9.5,
+    "notes": "Official Regional Office of Education (ROE) or Intermediate Service Center (ISC) serving county catchments.",
+    "suggested_target_id": "il-roe-31",
+    "name": "Kane Regional Office of Education (ROE 31)",
+    "phone": "(630) 232-5955",
+    "agency_type": "roe",
+    "physical_county": "kane-il",
+    "counties_served": [
+      "kane-il"
+    ],
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.roe33.net",
+    "confidence_score": 9.5,
+    "notes": "Official Regional Office of Education (ROE) or Intermediate Service Center (ISC) serving county catchments.",
+    "suggested_target_id": "il-roe-33",
+    "name": "Henderson/Knox/Mercer/Warren Regional Office of Education (ROE 33)",
+    "phone": "(309) 345-3828",
+    "agency_type": "roe",
+    "physical_county": "henderson-il",
+    "counties_served": [
+      "henderson-il",
+      "knox-il",
+      "mercer-il",
+      "warren-il"
+    ],
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.lake.k12.il.us",
+    "confidence_score": 9.5,
+    "notes": "Official Regional Office of Education (ROE) or Intermediate Service Center (ISC) serving county catchments.",
+    "suggested_target_id": "il-roe-34",
+    "name": "Lake Regional Office of Education (ROE 34)",
+    "phone": "(847) 543-7833",
+    "agency_type": "roe",
+    "physical_county": "lake-il",
+    "counties_served": [
+      "lake-il"
+    ],
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.roe35.org",
+    "confidence_score": 9.5,
+    "notes": "Official Regional Office of Education (ROE) or Intermediate Service Center (ISC) serving county catchments.",
+    "suggested_target_id": "il-roe-35",
+    "name": "LaSalle/Marshall/Putnam Regional Office of Education (ROE 35)",
+    "phone": "(815) 434-0780",
+    "agency_type": "roe",
+    "physical_county": "lasalle-il",
+    "counties_served": [
+      "lasalle-il",
+      "marshall-il",
+      "putnam-il"
+    ],
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.roe40.com",
+    "confidence_score": 9.5,
+    "notes": "Official Regional Office of Education (ROE) or Intermediate Service Center (ISC) serving county catchments.",
+    "suggested_target_id": "il-roe-40",
+    "name": "Calhoun/Greene/Jersey Regional Office of Education (ROE 40)",
+    "phone": "(217) 854-4016",
+    "agency_type": "roe",
+    "physical_county": "calhoun-il",
+    "counties_served": [
+      "calhoun-il",
+      "greene-il",
+      "jersey-il",
+      "macoupin-il"
+    ],
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.madisoncountyil.gov",
+    "confidence_score": 9.5,
+    "notes": "Official Regional Office of Education (ROE) or Intermediate Service Center (ISC) serving county catchments.",
+    "suggested_target_id": "il-roe-41",
+    "name": "Madison Regional Office of Education (ROE 41)",
+    "phone": "(618) 296-4530",
+    "agency_type": "roe",
+    "physical_county": "madison-il",
+    "counties_served": [
+      "madison-il"
+    ],
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.roe47.org",
+    "confidence_score": 9.5,
+    "notes": "Official Regional Office of Education (ROE) or Intermediate Service Center (ISC) serving county catchments.",
+    "suggested_target_id": "il-roe-47",
+    "name": "Lee/Ogle/Whiteside Regional Office of Education (ROE 47)",
+    "phone": "(815) 625-1495",
+    "agency_type": "roe",
+    "physical_county": "lee-il",
+    "counties_served": [
+      "lee-il",
+      "ogle-il",
+      "whiteside-il"
+    ],
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.peoriacounty.org/roe",
+    "confidence_score": 9.5,
+    "notes": "Official Regional Office of Education (ROE) or Intermediate Service Center (ISC) serving county catchments.",
+    "suggested_target_id": "il-roe-48",
+    "name": "Peoria Regional Office of Education (ROE 48)",
+    "phone": "(309) 672-6906",
+    "agency_type": "roe",
+    "physical_county": "peoria-il",
+    "counties_served": [
+      "peoria-il"
+    ],
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.sclair.k12.il.us",
+    "confidence_score": 9.5,
+    "notes": "Official Regional Office of Education (ROE) or Intermediate Service Center (ISC) serving county catchments.",
+    "suggested_target_id": "il-roe-50",
+    "name": "St. Clair Regional Office of Education (ROE 50)",
+    "phone": "(618) 825-3900",
+    "agency_type": "roe",
+    "physical_county": "st-clair-il",
+    "counties_served": [
+      "st-clair-il"
+    ],
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.roe51.org",
+    "confidence_score": 9.5,
+    "notes": "Official Regional Office of Education (ROE) or Intermediate Service Center (ISC) serving county catchments.",
+    "suggested_target_id": "il-roe-51",
+    "name": "Sangamon/Menard Regional Office of Education (ROE 51)",
+    "phone": "(217) 753-6620",
+    "agency_type": "roe",
+    "physical_county": "sangamon-il",
+    "counties_served": [
+      "sangamon-il",
+      "menard-il"
+    ],
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.willroe.org",
+    "confidence_score": 9.5,
+    "notes": "Official Regional Office of Education (ROE) or Intermediate Service Center (ISC) serving county catchments.",
+    "suggested_target_id": "il-roe-56",
+    "name": "Will Regional Office of Education (ROE 56)",
+    "phone": "(815) 740-8360",
+    "agency_type": "roe",
+    "physical_county": "will-il",
+    "counties_served": [
+      "will-il"
+    ],
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.northcook.org",
+    "confidence_score": 9.5,
+    "notes": "Official Regional Office of Education (ROE) or Intermediate Service Center (ISC) serving county catchments.",
+    "suggested_target_id": "il-isc-1",
+    "name": "Intermediate Service Center (ISC) 1 - North Cook",
+    "phone": "(847) 824-8300",
+    "agency_type": "isc",
+    "physical_county": "cook-il",
+    "counties_served": [
+      "cook-il"
+    ],
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.westcook.org",
+    "confidence_score": 9.5,
+    "notes": "Official Regional Office of Education (ROE) or Intermediate Service Center (ISC) serving county catchments.",
+    "suggested_target_id": "il-isc-2",
+    "name": "Intermediate Service Center (ISC) 2 - West Cook",
+    "phone": "(708) 449-3330",
+    "agency_type": "isc",
+    "physical_county": "cook-il",
+    "counties_served": [
+      "cook-il"
+    ],
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.southcook.org",
+    "confidence_score": 9.5,
+    "notes": "Official Regional Office of Education (ROE) or Intermediate Service Center (ISC) serving county catchments.",
+    "suggested_target_id": "il-isc-3",
+    "name": "Intermediate Service Center (ISC) 3 - South Cook",
+    "phone": "(708) 754-6600",
+    "agency_type": "isc",
+    "physical_county": "cook-il",
+    "counties_served": [
+      "cook-il"
+    ],
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  }
+]

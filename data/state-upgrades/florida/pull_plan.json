@@ -1,0 +1,9 @@
+{
+  "state_code": "FL",
+  "targets": [
+    {
+      "name": "ACCESS centers",
+      "table": "county_offices"
+    }
+  ]
+}

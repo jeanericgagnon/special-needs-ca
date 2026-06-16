@@ -1,0 +1,43 @@
+{
+  "state_id": "kentucky",
+  "state_slug": "kentucky",
+  "state_name": "Kentucky",
+  "state_code": "KY",
+  "county_id_suffix": "-ky",
+  "program_id_prefix": "ky-",
+  "fallback_id_patterns": [
+    "%-ky-fallback"
+  ],
+  "expected_counties": 120,
+  "priority_counties": [],
+  "phase_sequence": [
+    "benefits_hhs",
+    "dd_idd",
+    "early_intervention",
+    "education_regional",
+    "district_replacements",
+    "clinics",
+    "forms_appeals_transition",
+    "trusted_nonprofits"
+  ],
+  "routing_labels": {
+    "medicaid_name": "Kentucky Medicaid",
+    "medicaid_agency": "Kentucky Department of Human Services",
+    "dd_agency": "Kentucky Developmental Services",
+    "dd_intake_label": "Intake Coordinator",
+    "early_intervention_label": "Early Intervention Coordinator",
+    "education_agency_label": "Regional Education Office",
+    "education_agency": "Kentucky Department of Education",
+    "special_education_support": "Special Education Support"
+  },
+  "validation_expectations": {
+    "benefits_hhs_count": 120,
+    "dd_idd_count": 0,
+    "early_intervention_count": 0,
+    "education_regional_count": 0,
+    "district_replacements_count": 0,
+    "clinics_count": 0,
+    "forms_appeals_transition_count": 0,
+    "trusted_nonprofits_count": 0
+  }
+}

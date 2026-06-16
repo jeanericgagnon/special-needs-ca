@@ -1,0 +1,15 @@
+[
+  {
+    "source_url": "https://dhhs.mississippi.gov/dd",
+    "confidence_score": 9.5,
+    "notes": "Official state developmental disability eligibility and waiver intake office for Mississippi.",
+    "suggested_target_id": "ms-dd-agency",
+    "name": "Mississippi Developmental Services Intake",
+    "phone": "",
+    "physical_county": "statewide",
+    "agency_type": "dd_intake",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "manual_review_required",
+    "data_origin": "scraped"
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "state_id": "pennsylvania",
+  "state_slug": "pennsylvania",
+  "state_name": "Pennsylvania",
+  "state_code": "PA",
+  "county_id_suffix": "-pa",
+  "program_id_prefix": "pa-",
+  "fallback_id_patterns": [
+    "%-pa-fallback"
+  ],
+  "expected_counties": 67,
+  "priority_counties": [],
+  "phase_sequence": [
+    "benefits_hhs",
+    "dd_idd",
+    "early_intervention",
+    "education_regional",
+    "district_replacements",
+    "clinics",
+    "forms_appeals_transition",
+    "trusted_nonprofits",
+    "provider_legal_review"
+  ],
+  "routing_labels": {
+    "medicaid_name": "Pennsylvania Medicaid",
+    "medicaid_agency": "Pennsylvania Department of Human Services",
+    "dd_agency": "Pennsylvania Developmental Services",
+    "dd_intake_label": "Regional Intake Office",
+    "early_intervention_label": "Early Intervention",
+    "education_agency_label": "Regional Education Center",
+    "education_agency": "Pennsylvania Department of Education",
+    "special_education_support": "Special Education"
+  },
+  "validation_expectations": {
+    "benefits_hhs_count": 67,
+    "dd_idd_count": 0,
+    "early_intervention_count": 0,
+    "education_regional_count": 0,
+    "district_replacements_count": 0,
+    "clinics_count": 0,
+    "forms_appeals_transition_count": 0,
+    "trusted_nonprofits_count": 0,
+    "provider_legal_review_count": 0
+  }
+}

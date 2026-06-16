@@ -1,0 +1,27 @@
+# Promotion Before/After Diff Report: Kentucky (district_replacements)
+Generated At: 2026-06-14T15:54:28.421Z
+
+## 1. Summary of Changes
+*   **Tables Touched:** staging_scraped_school_districts, school_districts
+*   **Rows Inserted:** 118
+*   **Rows Updated:** 0
+*   **Rows Deleted:** 118
+*   **Primary Keys Re-keyed:** sd-adair-ky-fallback -> sd-adair-ky, sd-allen-ky-fallback -> sd-allen-ky, sd-anderson-ky-fallback -> sd-anderson-ky, sd-ballard-ky-fallback -> sd-ballard-ky, sd-barren-ky-fallback -> sd-barren-ky, sd-bath-ky-fallback -> sd-bath-ky, sd-bell-ky-fallback -> sd-bell-ky, sd-boone-ky-fallback -> sd-boone-ky, sd-bourbon-ky-fallback -> sd-bourbon-ky, sd-boyd-ky-fallback -> sd-boyd-ky, sd-boyle-ky-fallback -> sd-boyle-ky, sd-bracken-ky-fallback -> sd-bracken-ky, sd-breathitt-ky-fallback -> sd-breathitt-ky, sd-breckinridge-ky-fallback -> sd-breckinridge-ky, sd-bullitt-ky-fallback -> sd-bullitt-ky, sd-butler-ky-fallback -> sd-butler-ky, sd-caldwell-ky-fallback -> sd-caldwell-ky, sd-calloway-ky-fallback -> sd-calloway-ky, sd-campbell-ky-fallback -> sd-campbell-ky, sd-carlisle-ky-fallback -> sd-carlisle-ky, sd-carroll-ky-fallback -> sd-carroll-ky, sd-carter-ky-fallback -> sd-carter-ky, sd-casey-ky-fallback -> sd-casey-ky, sd-christian-ky-fallback -> sd-christian-ky, sd-clark-ky-fallback -> sd-clark-ky, sd-clay-ky-fallback -> sd-clay-ky, sd-clinton-ky-fallback -> sd-clinton-ky, sd-crittenden-ky-fallback -> sd-crittenden-ky, sd-cumberland-ky-fallback -> sd-cumberland-ky, sd-daviess-ky-fallback -> sd-daviess-ky, sd-edmonson-ky-fallback -> sd-edmonson-ky, sd-elliott-ky-fallback -> sd-elliott-ky, sd-estill-ky-fallback -> sd-estill-ky, sd-fleming-ky-fallback -> sd-fleming-ky, sd-floyd-ky-fallback -> sd-floyd-ky, sd-franklin-ky-fallback -> sd-franklin-ky, sd-fulton-ky-fallback -> sd-fulton-ky, sd-gallatin-ky-fallback -> sd-gallatin-ky, sd-garrard-ky-fallback -> sd-garrard-ky, sd-grant-ky-fallback -> sd-grant-ky, sd-graves-ky-fallback -> sd-graves-ky, sd-grayson-ky-fallback -> sd-grayson-ky, sd-green-ky-fallback -> sd-green-ky, sd-greenup-ky-fallback -> sd-greenup-ky, sd-hancock-ky-fallback -> sd-hancock-ky, sd-hardin-ky-fallback -> sd-hardin-ky, sd-harlan-ky-fallback -> sd-harlan-ky, sd-harrison-ky-fallback -> sd-harrison-ky, sd-hart-ky-fallback -> sd-hart-ky, sd-henderson-ky-fallback -> sd-henderson-ky, sd-henry-ky-fallback -> sd-henry-ky, sd-hickman-ky-fallback -> sd-hickman-ky, sd-hopkins-ky-fallback -> sd-hopkins-ky, sd-jackson-ky-fallback -> sd-jackson-ky, sd-jessamine-ky-fallback -> sd-jessamine-ky, sd-johnson-ky-fallback -> sd-johnson-ky, sd-kenton-ky-fallback -> sd-kenton-ky, sd-knott-ky-fallback -> sd-knott-ky, sd-knox-ky-fallback -> sd-knox-ky, sd-larue-ky-fallback -> sd-larue-ky, sd-laurel-ky-fallback -> sd-laurel-ky, sd-lawrence-ky-fallback -> sd-lawrence-ky, sd-lee-ky-fallback -> sd-lee-ky, sd-leslie-ky-fallback -> sd-leslie-ky, sd-letcher-ky-fallback -> sd-letcher-ky, sd-lewis-ky-fallback -> sd-lewis-ky, sd-lincoln-ky-fallback -> sd-lincoln-ky, sd-livingston-ky-fallback -> sd-livingston-ky, sd-logan-ky-fallback -> sd-logan-ky, sd-lyon-ky-fallback -> sd-lyon-ky, sd-mccracken-ky-fallback -> sd-mccracken-ky, sd-mccreary-ky-fallback -> sd-mccreary-ky, sd-mclean-ky-fallback -> sd-mclean-ky, sd-madison-ky-fallback -> sd-madison-ky, sd-magoffin-ky-fallback -> sd-magoffin-ky, sd-marion-ky-fallback -> sd-marion-ky, sd-marshall-ky-fallback -> sd-marshall-ky, sd-martin-ky-fallback -> sd-martin-ky, sd-mason-ky-fallback -> sd-mason-ky, sd-meade-ky-fallback -> sd-meade-ky, sd-menifee-ky-fallback -> sd-menifee-ky, sd-mercer-ky-fallback -> sd-mercer-ky, sd-metcalfe-ky-fallback -> sd-metcalfe-ky, sd-monroe-ky-fallback -> sd-monroe-ky, sd-montgomery-ky-fallback -> sd-montgomery-ky, sd-morgan-ky-fallback -> sd-morgan-ky, sd-muhlenberg-ky-fallback -> sd-muhlenberg-ky, sd-nelson-ky-fallback -> sd-nelson-ky, sd-nicholas-ky-fallback -> sd-nicholas-ky, sd-ohio-ky-fallback -> sd-ohio-ky, sd-oldham-ky-fallback -> sd-oldham-ky, sd-owen-ky-fallback -> sd-owen-ky, sd-owsley-ky-fallback -> sd-owsley-ky, sd-pendleton-ky-fallback -> sd-pendleton-ky, sd-perry-ky-fallback -> sd-perry-ky, sd-pike-ky-fallback -> sd-pike-ky, sd-powell-ky-fallback -> sd-powell-ky, sd-pulaski-ky-fallback -> sd-pulaski-ky, sd-robertson-ky-fallback -> sd-robertson-ky, sd-rockcastle-ky-fallback -> sd-rockcastle-ky, sd-rowan-ky-fallback -> sd-rowan-ky, sd-russell-ky-fallback -> sd-russell-ky, sd-scott-ky-fallback -> sd-scott-ky, sd-shelby-ky-fallback -> sd-shelby-ky, sd-simpson-ky-fallback -> sd-simpson-ky, sd-spencer-ky-fallback -> sd-spencer-ky, sd-taylor-ky-fallback -> sd-taylor-ky, sd-todd-ky-fallback -> sd-todd-ky, sd-trigg-ky-fallback -> sd-trigg-ky, sd-trimble-ky-fallback -> sd-trimble-ky, sd-union-ky-fallback -> sd-union-ky, sd-warren-ky-fallback -> sd-warren-ky, sd-washington-ky-fallback -> sd-washington-ky, sd-wayne-ky-fallback -> sd-wayne-ky, sd-webster-ky-fallback -> sd-webster-ky, sd-whitley-ky-fallback -> sd-whitley-ky, sd-wolfe-ky-fallback -> sd-wolfe-ky, sd-woodford-ky-fallback -> sd-woodford-ky
+
+## 2. Provenance Distribution (Post-Promotion)
+### Evidence Levels
+- None
+
+### Data Origins
+- None
+
+### Verification Statuses
+- None
+
+## 3. Unrelated Table Mutation Check
+*   **Status:** ✅ PASS (Unrelated tables check verified zero mutations occurred outside the allowed schemas).
+
+## 4. Protected-Record Summary
+*   **Protected Records Before:** 178
+*   **Protected Records After:** 178
+*   **Unexpected Deletions Detected:** ✅ NO

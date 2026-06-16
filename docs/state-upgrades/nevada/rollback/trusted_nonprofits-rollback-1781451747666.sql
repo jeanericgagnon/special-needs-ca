@@ -1,0 +1,60 @@
+-- Rollback Script for State: Nevada | Phase: trusted_nonprofits
+-- Generated At: 2026-06-14T15:42:27.677Z
+
+BEGIN TRANSACTION;
+
+DELETE FROM nonprofit_organizations WHERE id = 'np-local-washoe-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'np-local-clark-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-arc-white-pine-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-arc-washoe-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-arc-storey-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-arc-pershing-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-arc-nye-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-arc-mineral-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-arc-lyon-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-arc-lincoln-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-arc-lander-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-arc-humboldt-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-arc-eureka-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-arc-esmeralda-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-arc-elko-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-arc-douglas-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-arc-clark-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-arc-churchill-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-arc-carson-city-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-parent-white-pine-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-parent-washoe-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-parent-storey-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-parent-pershing-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-parent-nye-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-parent-mineral-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-parent-lyon-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-parent-lincoln-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-parent-lander-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-parent-humboldt-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-parent-eureka-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-parent-esmeralda-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-parent-elko-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-parent-douglas-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-parent-clark-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-parent-churchill-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-parent-carson-city-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-rights-white-pine-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-rights-washoe-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-rights-storey-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-rights-pershing-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-rights-nye-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-rights-mineral-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-rights-lyon-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-rights-lincoln-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-rights-lander-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-rights-humboldt-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-rights-eureka-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-rights-esmeralda-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-rights-elko-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-rights-douglas-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-rights-clark-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-rights-churchill-nv';
+DELETE FROM nonprofit_organizations WHERE id = 'nv-np-rights-carson-city-nv';
+
+COMMIT;

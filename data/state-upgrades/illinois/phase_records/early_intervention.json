@@ -1,0 +1,497 @@
+[
+  {
+    "source_url": "https://www.dhs.state.il.us/page.aspx?item=31182",
+    "confidence_score": 9.5,
+    "notes": "Official Child and Family Connections (CFC) intake center serving regional early intervention.",
+    "suggested_target_id": "il-cfc-1",
+    "name": "CFC #1 - Youth Services Network",
+    "phone": "(815) 986-1947",
+    "agency_type": "cfc",
+    "physical_county": "boone-il,bureau-il,marshall-il,ogle-il,putnam-il,winnebago-il",
+    "counties_served": [
+      "boone-il",
+      "bureau-il",
+      "marshall-il",
+      "ogle-il",
+      "putnam-il",
+      "winnebago-il"
+    ],
+    "service_area_type": "regional",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.dhs.state.il.us/page.aspx?item=31182",
+    "confidence_score": 9.5,
+    "notes": "Official Child and Family Connections (CFC) intake center serving regional early intervention.",
+    "suggested_target_id": "il-cfc-2",
+    "name": "CFC #2 - Lake County Health Department",
+    "phone": "(847) 377-8900",
+    "agency_type": "cfc",
+    "physical_county": "lake-il",
+    "counties_served": [
+      "lake-il"
+    ],
+    "service_area_type": "regional",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.dhs.state.il.us/page.aspx?item=31182",
+    "confidence_score": 9.5,
+    "notes": "Official Child and Family Connections (CFC) intake center serving regional early intervention.",
+    "suggested_target_id": "il-cfc-3",
+    "name": "CFC #3 - Regional Office of Education 8",
+    "phone": "(815) 297-1041",
+    "agency_type": "cfc",
+    "physical_county": "carroll-il,dekalb-il,jo-daviess-il,lee-il,stephenson-il,whiteside-il",
+    "counties_served": [
+      "carroll-il",
+      "dekalb-il",
+      "jo-daviess-il",
+      "lee-il",
+      "stephenson-il",
+      "whiteside-il"
+    ],
+    "service_area_type": "regional",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.dhs.state.il.us/page.aspx?item=31182",
+    "confidence_score": 9.5,
+    "notes": "Official Child and Family Connections (CFC) intake center serving regional early intervention.",
+    "suggested_target_id": "il-cfc-4",
+    "name": "CFC #4 - DayOne Network",
+    "phone": "(630) 879-2277",
+    "agency_type": "cfc",
+    "physical_county": "kane-il,kendall-il",
+    "counties_served": [
+      "kane-il",
+      "kendall-il"
+    ],
+    "service_area_type": "regional",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.dhs.state.il.us/page.aspx?item=31182",
+    "confidence_score": 9.5,
+    "notes": "Official Child and Family Connections (CFC) intake center serving regional early intervention.",
+    "suggested_target_id": "il-cfc-5",
+    "name": "CFC #5 - Cook County (West)",
+    "phone": "(773) 867-4000",
+    "agency_type": "cfc",
+    "physical_county": "cook-il",
+    "counties_served": [
+      "cook-il"
+    ],
+    "service_area_type": "regional",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.dhs.state.il.us/page.aspx?item=31182",
+    "confidence_score": 9.5,
+    "notes": "Official Child and Family Connections (CFC) intake center serving regional early intervention.",
+    "suggested_target_id": "il-cfc-6",
+    "name": "CFC #6 - Clearbrook",
+    "phone": "(847) 385-5070",
+    "agency_type": "cfc",
+    "physical_county": "cook-il",
+    "counties_served": [
+      "cook-il"
+    ],
+    "service_area_type": "regional",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.dhs.state.il.us/page.aspx?item=31182",
+    "confidence_score": 9.5,
+    "notes": "Official Child and Family Connections (CFC) intake center serving regional early intervention.",
+    "suggested_target_id": "il-cfc-7",
+    "name": "CFC #7 - Cook County (Chicago North)",
+    "phone": "(312) 492-4200",
+    "agency_type": "cfc",
+    "physical_county": "cook-il",
+    "counties_served": [
+      "cook-il"
+    ],
+    "service_area_type": "regional",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.dhs.state.il.us/page.aspx?item=31182",
+    "confidence_score": 9.5,
+    "notes": "Official Child and Family Connections (CFC) intake center serving regional early intervention.",
+    "suggested_target_id": "il-cfc-8",
+    "name": "CFC #8 - Cook County (Chicago South)",
+    "phone": "(773) 867-4000",
+    "agency_type": "cfc",
+    "physical_county": "cook-il",
+    "counties_served": [
+      "cook-il"
+    ],
+    "service_area_type": "regional",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.dhs.state.il.us/page.aspx?item=31182",
+    "confidence_score": 9.5,
+    "notes": "Official Child and Family Connections (CFC) intake center serving regional early intervention.",
+    "suggested_target_id": "il-cfc-9",
+    "name": "CFC #9 - Cook County (Chicago Central)",
+    "phone": "(773) 753-5300",
+    "agency_type": "cfc",
+    "physical_county": "cook-il",
+    "counties_served": [
+      "cook-il"
+    ],
+    "service_area_type": "regional",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.dhs.state.il.us/page.aspx?item=31182",
+    "confidence_score": 9.5,
+    "notes": "Official Child and Family Connections (CFC) intake center serving regional early intervention.",
+    "suggested_target_id": "il-cfc-10",
+    "name": "CFC #10 - Cook County (Chicago Southwest)",
+    "phone": "(773) 602-4200",
+    "agency_type": "cfc",
+    "physical_county": "cook-il",
+    "counties_served": [
+      "cook-il"
+    ],
+    "service_area_type": "regional",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.dhs.state.il.us/page.aspx?item=31182",
+    "confidence_score": 9.5,
+    "notes": "Official Child and Family Connections (CFC) intake center serving regional early intervention.",
+    "suggested_target_id": "il-cfc-11",
+    "name": "CFC #11 - Cook County (Near West)",
+    "phone": "(708) 293-0100",
+    "agency_type": "cfc",
+    "physical_county": "cook-il",
+    "counties_served": [
+      "cook-il"
+    ],
+    "service_area_type": "regional",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.dhs.state.il.us/page.aspx?item=31182",
+    "confidence_score": 9.5,
+    "notes": "Official Child and Family Connections (CFC) intake center serving regional early intervention.",
+    "suggested_target_id": "il-cfc-12",
+    "name": "CFC #12 - Cook County (South Suburban)",
+    "phone": "(708) 499-2200",
+    "agency_type": "cfc",
+    "physical_county": "cook-il",
+    "counties_served": [
+      "cook-il"
+    ],
+    "service_area_type": "regional",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.dhs.state.il.us/page.aspx?item=31182",
+    "confidence_score": 9.5,
+    "notes": "Official Child and Family Connections (CFC) intake center serving regional early intervention.",
+    "suggested_target_id": "il-cfc-13",
+    "name": "CFC #13 - Henderson/Knox/McDonough/Warren",
+    "phone": "(309) 342-8144",
+    "agency_type": "cfc",
+    "physical_county": "henderson-il,knox-il,mcdonough-il,warren-il",
+    "counties_served": [
+      "henderson-il",
+      "knox-il",
+      "mcdonough-il",
+      "warren-il"
+    ],
+    "service_area_type": "regional",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.dhs.state.il.us/page.aspx?item=31182",
+    "confidence_score": 9.5,
+    "notes": "Official Child and Family Connections (CFC) intake center serving regional early intervention.",
+    "suggested_target_id": "il-cfc-14",
+    "name": "CFC #14 - Peoria/Stark/Tazewell/Woodford/Henry",
+    "phone": "(309) 672-6360",
+    "agency_type": "cfc",
+    "physical_county": "peoria-il,stark-il,tazewell-il,woodford-il,henry-il",
+    "counties_served": [
+      "peoria-il",
+      "stark-il",
+      "tazewell-il",
+      "woodford-il",
+      "henry-il"
+    ],
+    "service_area_type": "regional",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.dhs.state.il.us/page.aspx?item=31182",
+    "confidence_score": 9.5,
+    "notes": "Official Child and Family Connections (CFC) intake center serving regional early intervention.",
+    "suggested_target_id": "il-cfc-15",
+    "name": "CFC #15 - Will/Grundy/Kankakee/LaSalle",
+    "phone": "(815) 730-2615",
+    "agency_type": "cfc",
+    "physical_county": "will-il,grundy-il,kankakee-il,lasalle-il",
+    "counties_served": [
+      "will-il",
+      "grundy-il",
+      "kankakee-il",
+      "lasalle-il"
+    ],
+    "service_area_type": "regional",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.dhs.state.il.us/page.aspx?item=31182",
+    "confidence_score": 9.5,
+    "notes": "Official Child and Family Connections (CFC) intake center serving regional early intervention.",
+    "suggested_target_id": "il-cfc-16",
+    "name": "CFC #16 - Champaign/Ford/Iroquois/Vermilion/McLean/Livingston",
+    "phone": "(217) 693-7958",
+    "agency_type": "cfc",
+    "physical_county": "champaign-il,ford-il,iroquois-il,vermilion-il,mclean-il,livingston-il",
+    "counties_served": [
+      "champaign-il",
+      "ford-il",
+      "iroquois-il",
+      "vermilion-il",
+      "mclean-il",
+      "livingston-il"
+    ],
+    "service_area_type": "regional",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.dhs.state.il.us/page.aspx?item=31182",
+    "confidence_score": 9.5,
+    "notes": "Official Child and Family Connections (CFC) intake center serving regional early intervention.",
+    "suggested_target_id": "il-cfc-17",
+    "name": "CFC #17 - Adams/Pike/Brown/Hancock/Schuyler",
+    "phone": "(217) 222-4414",
+    "agency_type": "cfc",
+    "physical_county": "adams-il,pike-il,brown-il,hancock-il,schuyler-il",
+    "counties_served": [
+      "adams-il",
+      "pike-il",
+      "brown-il",
+      "hancock-il",
+      "schuyler-il"
+    ],
+    "service_area_type": "regional",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.dhs.state.il.us/page.aspx?item=31182",
+    "confidence_score": 9.5,
+    "notes": "Official Child and Family Connections (CFC) intake center serving regional early intervention.",
+    "suggested_target_id": "il-cfc-18",
+    "name": "CFC #18 - Sangamon/Logan/Menard/Christian/Montgomery/Macoupin",
+    "phone": "(217) 744-9000",
+    "agency_type": "cfc",
+    "physical_county": "sangamon-il,logan-il,menard-il,christian-il,montgomery-il,macoupin-il",
+    "counties_served": [
+      "sangamon-il",
+      "logan-il",
+      "menard-il",
+      "christian-il",
+      "montgomery-il",
+      "macoupin-il"
+    ],
+    "service_area_type": "regional",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.dhs.state.il.us/page.aspx?item=31182",
+    "confidence_score": 9.5,
+    "notes": "Official Child and Family Connections (CFC) intake center serving regional early intervention.",
+    "suggested_target_id": "il-cfc-19",
+    "name": "CFC #19 - Coles/Clark/Cumberland/Douglas/Edgar/Moultrie/Shelby",
+    "phone": "(217) 345-2188",
+    "agency_type": "cfc",
+    "physical_county": "coles-il,clark-il,cumberland-il,douglas-il,edgar-il,moultrie-il,shelby-il",
+    "counties_served": [
+      "coles-il",
+      "clark-il",
+      "cumberland-il",
+      "douglas-il",
+      "edgar-il",
+      "moultrie-il",
+      "shelby-il"
+    ],
+    "service_area_type": "regional",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.dhs.state.il.us/page.aspx?item=31182",
+    "confidence_score": 9.5,
+    "notes": "Official Child and Family Connections (CFC) intake center serving regional early intervention.",
+    "suggested_target_id": "il-cfc-20",
+    "name": "CFC #20 - Effingham/Clay/Crawford/Fayette/Jasper/Lawrence/Richland",
+    "phone": "(217) 342-2193",
+    "agency_type": "cfc",
+    "physical_county": "effingham-il,clay-il,crawford-il,fayette-il,jasper-il,lawrence-il,richland-il",
+    "counties_served": [
+      "effingham-il",
+      "clay-il",
+      "crawford-il",
+      "fayette-il",
+      "jasper-il",
+      "lawrence-il",
+      "richland-il"
+    ],
+    "service_area_type": "regional",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.dhs.state.il.us/page.aspx?item=31182",
+    "confidence_score": 9.5,
+    "notes": "Official Child and Family Connections (CFC) intake center serving regional early intervention.",
+    "suggested_target_id": "il-cfc-21",
+    "name": "CFC #21 - Madison/Monroe/Randolph/St. Clair",
+    "phone": "(618) 624-5005",
+    "agency_type": "cfc",
+    "physical_county": "madison-il,monroe-il,randolph-il,st-clair-il",
+    "counties_served": [
+      "madison-il",
+      "monroe-il",
+      "randolph-il",
+      "st-clair-il"
+    ],
+    "service_area_type": "regional",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.dhs.state.il.us/page.aspx?item=31182",
+    "confidence_score": 9.5,
+    "notes": "Official Child and Family Connections (CFC) intake center serving regional early intervention.",
+    "suggested_target_id": "il-cfc-22",
+    "name": "CFC #22 - Marion/Clinton/Washington/Franklin/Jefferson/Williamson",
+    "phone": "(618) 532-4919",
+    "agency_type": "cfc",
+    "physical_county": "marion-il,clinton-il,washington-il,franklin-il,jefferson-il,williamson-il",
+    "counties_served": [
+      "marion-il",
+      "clinton-il",
+      "washington-il",
+      "franklin-il",
+      "jefferson-il",
+      "williamson-il"
+    ],
+    "service_area_type": "regional",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.dhs.state.il.us/page.aspx?item=31182",
+    "confidence_score": 9.5,
+    "notes": "Official Child and Family Connections (CFC) intake center serving regional early intervention.",
+    "suggested_target_id": "il-cfc-23",
+    "name": "CFC #23 - Southern IL (East)",
+    "phone": "(618) 745-6352",
+    "agency_type": "cfc",
+    "physical_county": "alexander-il,pulaski-il,massac-il,johnson-il,pope-il,hardin-il,saline-il,gallatin-il",
+    "counties_served": [
+      "alexander-il",
+      "pulaski-il",
+      "massac-il",
+      "johnson-il",
+      "pope-il",
+      "hardin-il",
+      "saline-il",
+      "gallatin-il"
+    ],
+    "service_area_type": "regional",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.dhs.state.il.us/page.aspx?item=31182",
+    "confidence_score": 9.5,
+    "notes": "Official Child and Family Connections (CFC) intake center serving regional early intervention.",
+    "suggested_target_id": "il-cfc-24",
+    "name": "CFC #24 - Southern IL (West)",
+    "phone": "(618) 687-1733",
+    "agency_type": "cfc",
+    "physical_county": "alexander-il,hardin-il,jackson-il,johnson-il,massac-il,perry-il,pope-il,pulaski-il,union-il",
+    "counties_served": [
+      "alexander-il",
+      "hardin-il",
+      "jackson-il",
+      "johnson-il",
+      "massac-il",
+      "perry-il",
+      "pope-il",
+      "pulaski-il",
+      "union-il"
+    ],
+    "service_area_type": "regional",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.dhs.state.il.us/page.aspx?item=31182",
+    "confidence_score": 9.5,
+    "notes": "Official Child and Family Connections (CFC) intake center serving regional early intervention.",
+    "suggested_target_id": "il-cfc-25",
+    "name": "CFC #25 - DuPage County Health Department",
+    "phone": "(630) 530-1120",
+    "agency_type": "cfc",
+    "physical_county": "dupage-il",
+    "counties_served": [
+      "dupage-il"
+    ],
+    "service_area_type": "regional",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  }
+]

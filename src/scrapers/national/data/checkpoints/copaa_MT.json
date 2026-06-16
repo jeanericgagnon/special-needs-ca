@@ -1,0 +1,115 @@
+{
+  "scraper": "copaa",
+  "state": "MT",
+  "updatedAt": "2026-06-15T23:54:56.539Z",
+  "lastProcessedPage": 1,
+  "completed": false,
+  "metadata": {
+    "results": [
+      {
+        "id": "copaa-72616159862ad6b00891b2e41f9a9f0d4bd541566c8a8b9b3d47a1d5073023a8",
+        "name": "Patrick Bunnemeyer",
+        "state": "MT",
+        "city": "Libby",
+        "phone": "406-304-9760\n                                                    work",
+        "email": "pb@educationaltherapysolutions.com",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": "Educational Therapy Solutions, Inc.",
+        "organization_info": {
+          "id": "org-44c81f3b4567757922bc4d2c58e7c1e8f2c55d35c52dfab005162e4c7bc7163a",
+          "name": "Educational Therapy Solutions, Inc.",
+          "state": "MT",
+          "city": "Libby",
+          "phone": "406-304-9760\n                                                    work",
+          "email": "pb@educationaltherapysolutions.com",
+          "website": "https://connect.copaa.org",
+          "description": "Educational Therapy Solutions, Inc. is an organization specializing in special education advocacy.",
+          "source": "copaa",
+          "scraped_at": "2026-06-15T23:54:34.053Z"
+        },
+        "description": "Patrick Bunnemeyer is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-15T23:54:34.054Z"
+      },
+      {
+        "id": "copaa-c63c5d46e537f05b85856783b0a4543819c2d3ab0e9730fc8cd7bd55f9b71bca",
+        "name": "Christa Gabriel",
+        "state": "MT",
+        "city": "Helena",
+        "phone": "406-449-2344\n                                                    work",
+        "email": "christa@disabilityrightsmt.org",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": "Disability Rights Montana",
+        "organization_info": {
+          "id": "org-5314a671b71a2afbc23019d7159e1a20e17ebe9f84e81cdef4405c48761da305",
+          "name": "Disability Rights Montana",
+          "state": "MT",
+          "city": "Helena",
+          "phone": "406-449-2344\n                                                    work",
+          "email": "christa@disabilityrightsmt.org",
+          "website": "https://connect.copaa.org",
+          "description": "Disability Rights Montana is an organization specializing in special education advocacy.",
+          "source": "copaa",
+          "scraped_at": "2026-06-15T23:54:34.054Z"
+        },
+        "description": "Christa Gabriel is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-15T23:54:34.054Z"
+      },
+      {
+        "id": "copaa-5306a0ccfdf10d29f14b18898689ba9850a6f74af07a28a31a8fa460eb4ab1ae",
+        "name": "Tal Goldin",
+        "state": "MT",
+        "city": "Helena",
+        "phone": "406-449-2344\n                                                    work",
+        "email": "tal@disabilityrightsmt.org",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": "Disability Rights Montana",
+        "organization_info": {
+          "id": "org-5314a671b71a2afbc23019d7159e1a20e17ebe9f84e81cdef4405c48761da305",
+          "name": "Disability Rights Montana",
+          "state": "MT",
+          "city": "Helena",
+          "phone": "406-449-2344\n                                                    work",
+          "email": "tal@disabilityrightsmt.org",
+          "website": "https://connect.copaa.org",
+          "description": "Disability Rights Montana is an organization specializing in special education advocacy.",
+          "source": "copaa",
+          "scraped_at": "2026-06-15T23:54:34.054Z"
+        },
+        "description": "Tal Goldin is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-15T23:54:34.055Z"
+      },
+      {
+        "id": "copaa-2355c9a99603d3bf212e5c1374607f45dac7568fd69a405931d3fcdc83d4e837",
+        "name": "Michelle Weltman",
+        "state": "MT",
+        "city": "Helena",
+        "phone": "406-449-2344\n                                                    work",
+        "email": "mlweltman@gmail.com",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": "Disability Rights Montana",
+        "organization_info": {
+          "id": "org-5314a671b71a2afbc23019d7159e1a20e17ebe9f84e81cdef4405c48761da305",
+          "name": "Disability Rights Montana",
+          "state": "MT",
+          "city": "Helena",
+          "phone": "406-449-2344\n                                                    work",
+          "email": "mlweltman@gmail.com",
+          "website": "https://connect.copaa.org",
+          "description": "Disability Rights Montana is an organization specializing in special education advocacy.",
+          "source": "copaa",
+          "scraped_at": "2026-06-15T23:54:34.055Z"
+        },
+        "description": "Michelle Weltman is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-15T23:54:34.055Z"
+      }
+    ]
+  }
+}

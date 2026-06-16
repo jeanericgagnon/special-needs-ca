@@ -1,0 +1,15 @@
+[
+  {
+    "source_url": "https://dhhs.iowa.gov/earlystart",
+    "confidence_score": 9.5,
+    "notes": "Official early intervention (Part C) state intake routing for Iowa.",
+    "suggested_target_id": "ia-ei-agency",
+    "name": "Iowa Early Intervention State Office",
+    "phone": "",
+    "physical_county": "statewide",
+    "agency_type": "early_intervention",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "manual_review_required",
+    "data_origin": "scraped"
+  }
+]

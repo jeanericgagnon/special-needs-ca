@@ -1,0 +1,130 @@
+{
+  "scraper": "copaa",
+  "state": "MS",
+  "updatedAt": "2026-06-15T23:51:34.822Z",
+  "lastProcessedPage": 1,
+  "completed": false,
+  "metadata": {
+    "results": [
+      {
+        "id": "copaa-91edff37c114809278d612befa5f747f1c6e15d64635d55984f1c97e38dc68c0",
+        "name": "Nellie Alliston",
+        "state": "MS",
+        "city": "Hattiesburg",
+        "phone": "601-325-5978\n                                                    work",
+        "email": "nellie.alliston@usm.edu",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": "IDS",
+        "organization_info": {
+          "id": "org-02dafa3f6d00f656044d57249638bb3f8c40836897e1ad3c960c8da72da1c9a9",
+          "name": "IDS",
+          "state": "MS",
+          "city": "Hattiesburg",
+          "phone": "601-325-5978\n                                                    work",
+          "email": "nellie.alliston@usm.edu",
+          "website": "https://connect.copaa.org",
+          "description": "IDS is an organization specializing in special education advocacy.",
+          "source": "copaa",
+          "scraped_at": "2026-06-15T23:51:11.741Z"
+        },
+        "description": "Nellie Alliston is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-15T23:51:11.743Z"
+      },
+      {
+        "id": "copaa-76b0312e038a7b4f2ff2e799b3983803fe097873c522601a1bae0403d1af0d61",
+        "name": "Brandi Dabbs",
+        "state": "MS",
+        "city": "Baldwyn",
+        "phone": "662-2319222\n                                                    work",
+        "email": "cutiepatootie3@gmail.com",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": null,
+        "organization_info": null,
+        "description": "Brandi Dabbs is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-15T23:51:11.743Z"
+      },
+      {
+        "id": "copaa-955a2a10729d038bd52a8d7922649a7063b380fc9be07fc11d2924f898a50327",
+        "name": "Jacquelin Edwards",
+        "state": "MS",
+        "city": "Biloxi",
+        "phone": "956-515-7473\n                                                    work",
+        "email": "jacquelin.edwards1@gmail.com",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": "Edwards Casemanagement LLC",
+        "organization_info": {
+          "id": "org-ba4d14d2834ba9a43b9b15427a83c50f3bc0244e06d121675d6f2384bb91c883",
+          "name": "Edwards Casemanagement LLC",
+          "state": "MS",
+          "city": "Biloxi",
+          "phone": "956-515-7473\n                                                    work",
+          "email": "jacquelin.edwards1@gmail.com",
+          "website": "https://connect.copaa.org",
+          "description": "Edwards Casemanagement LLC is an organization specializing in special education advocacy.",
+          "source": "copaa",
+          "scraped_at": "2026-06-15T23:51:11.743Z"
+        },
+        "description": "Jacquelin Edwards is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-15T23:51:11.743Z"
+      },
+      {
+        "id": "copaa-3225dfef8c13fb1d8f9b51d1f649c8478532f2ca2fa18d8b601bf3fa51d933d2",
+        "name": "Kevin Frye",
+        "state": "MS",
+        "city": "Oxford",
+        "phone": "662-2590050\n                                                    work",
+        "email": "kwf@fryereeves.com",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": "SynGAP Research Fund",
+        "organization_info": {
+          "id": "org-a65a5514318a20b5f53bcf70651d43eca8898b630706330b8049730619a02361",
+          "name": "SynGAP Research Fund",
+          "state": "MS",
+          "city": "Oxford",
+          "phone": "662-2590050\n                                                    work",
+          "email": "kwf@fryereeves.com",
+          "website": "https://connect.copaa.org",
+          "description": "SynGAP Research Fund is an organization specializing in special education advocacy.",
+          "source": "copaa",
+          "scraped_at": "2026-06-15T23:51:11.743Z"
+        },
+        "description": "Kevin Frye is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-15T23:51:11.743Z"
+      },
+      {
+        "id": "copaa-684c57086cf97751c8df384044c55af1e937a3ab4c4c6f830c64a2cd23e8ac28",
+        "name": "Wendell Hutchinson",
+        "state": "MS",
+        "city": "Hattiesburg",
+        "phone": "601-408-6472\n                                                    work",
+        "email": "wendell@seasmississippi.com",
+        "website": "https://connect.copaa.org",
+        "specialties": "General Advocacy",
+        "organization": "Special Education Advocacy Services",
+        "organization_info": {
+          "id": "org-86250f5b29d0615ae69975bec9ebc6c944112a550946094ae9b4231f9fd51e75",
+          "name": "Special Education Advocacy Services",
+          "state": "MS",
+          "city": "Hattiesburg",
+          "phone": "601-408-6472\n                                                    work",
+          "email": "wendell@seasmississippi.com",
+          "website": "https://connect.copaa.org",
+          "description": "Special Education Advocacy Services is an organization specializing in special education advocacy.",
+          "source": "copaa",
+          "scraped_at": "2026-06-15T23:51:11.743Z"
+        },
+        "description": "Wendell Hutchinson is a special education professional.",
+        "source": "copaa",
+        "scraped_at": "2026-06-15T23:51:11.743Z"
+      }
+    ]
+  }
+}

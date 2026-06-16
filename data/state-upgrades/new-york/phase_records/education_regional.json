@@ -1,0 +1,597 @@
+[
+  {
+    "source_url": "https://www.schools.nyc.gov/learning/special-education",
+    "confidence_score": 9.5,
+    "notes": "NYC DOE Special Education Office",
+    "suggested_target_id": "ny-ed-boces-nyc",
+    "name": "NYC Public Schools - Committee on Special Education Office",
+    "phone": "(718) 935-2000",
+    "counties_served": [
+      "bronx-ny",
+      "kings-ny",
+      "new-york-ny",
+      "queens-ny",
+      "richmond-ny"
+    ],
+    "physical_county": "bronx-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.nassauboces.org",
+    "confidence_score": 9.5,
+    "notes": "Nassau County Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-nassau",
+    "name": "Nassau BOCES",
+    "phone": "(516) 396-2200",
+    "counties_served": [
+      "nassau-ny"
+    ],
+    "physical_county": "nassau-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.esboces.org",
+    "confidence_score": 9.5,
+    "notes": "Eastern Suffolk Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-suffolk",
+    "name": "Eastern Suffolk BOCES",
+    "phone": "(631) 687-3000",
+    "counties_served": [
+      "suffolk-ny"
+    ],
+    "physical_county": "suffolk-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.swboces.org",
+    "confidence_score": 9.5,
+    "notes": "Southern Westchester Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-westchester",
+    "name": "Southern Westchester BOCES",
+    "phone": "(914) 937-3820",
+    "counties_served": [
+      "westchester-ny"
+    ],
+    "physical_county": "westchester-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.e1b.org",
+    "confidence_score": 9.5,
+    "notes": "Erie 1 Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-erie",
+    "name": "Erie 1 BOCES",
+    "phone": "(716) 821-7000",
+    "counties_served": [
+      "erie-ny"
+    ],
+    "physical_county": "erie-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.monroe.edu",
+    "confidence_score": 9.5,
+    "notes": "Monroe 1 Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-monroe",
+    "name": "Monroe 1 BOCES",
+    "phone": "(585) 383-2200",
+    "counties_served": [
+      "monroe-ny"
+    ],
+    "physical_county": "monroe-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.ocmboces.org",
+    "confidence_score": 9.5,
+    "notes": "Onondaga-Cortland-Madison Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-onondaga",
+    "name": "OCM BOCES (Onondaga-Cortland-Madison)",
+    "phone": "(315) 433-2600",
+    "counties_served": [
+      "onondaga-ny",
+      "cortland-ny",
+      "madison-ny"
+    ],
+    "physical_county": "onondaga-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.capitalregionboces.org",
+    "confidence_score": 9.5,
+    "notes": "Capital Region Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-albany",
+    "name": "Capital Region BOCES",
+    "phone": "(518) 862-4900",
+    "counties_served": [
+      "albany-ny",
+      "schoharie-ny",
+      "schenectady-ny",
+      "saratoga-ny"
+    ],
+    "physical_county": "albany-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.btboces.org",
+    "confidence_score": 9.5,
+    "notes": "Broome-Tioga Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-broome-tioga",
+    "name": "Broome-Tioga BOCES",
+    "phone": "(607) 763-3300",
+    "counties_served": [
+      "broome-ny",
+      "tioga-ny"
+    ],
+    "physical_county": "broome-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.caboces.org",
+    "confidence_score": 9.5,
+    "notes": "Cattaraugus-Allegany Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-cattaraugus-allegany",
+    "name": "Cattaraugus-Allegany-Erie-Wyoming BOCES (CA BOCES)",
+    "phone": "(716) 376-8200",
+    "counties_served": [
+      "cattaraugus-ny",
+      "allegany-ny",
+      "wyoming-ny"
+    ],
+    "physical_county": "cattaraugus-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.cayboces.org",
+    "confidence_score": 9.5,
+    "notes": "Cayuga-Onondaga Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-cayuga-onondaga",
+    "name": "Cayuga-Onondaga BOCES",
+    "phone": "(315) 253-0361",
+    "counties_served": [
+      "cayuga-ny"
+    ],
+    "physical_county": "cayuga-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.cves.org",
+    "confidence_score": 9.5,
+    "notes": "Clinton-Essex-Warren-Washington Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-champlain-valley",
+    "name": "Champlain Valley Educational Services (CVES BOCES)",
+    "phone": "(518) 561-0100",
+    "counties_served": [
+      "clinton-ny",
+      "essex-ny"
+    ],
+    "physical_county": "clinton-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.dcmoboces.com",
+    "confidence_score": 9.5,
+    "notes": "Delaware-Chenango-Madison-Otsego Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-dcmo",
+    "name": "DCMO BOCES (Delaware-Chenango-Madison-Otsego)",
+    "phone": "(607) 335-1200",
+    "counties_served": [
+      "delaware-ny",
+      "chenango-ny",
+      "otsego-ny"
+    ],
+    "physical_county": "delaware-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.dutchesselearning.org",
+    "confidence_score": 9.5,
+    "notes": "Dutchess Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-dutchess",
+    "name": "Dutchess BOCES",
+    "phone": "(845) 486-4800",
+    "counties_served": [
+      "dutchess-ny"
+    ],
+    "physical_county": "dutchess-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.e2ccb.org",
+    "confidence_score": 9.5,
+    "notes": "Erie 2-Chautauqua-Cattaraugus Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-erie-2-chautauqua",
+    "name": "Erie 2-Chautauqua-Cattaraugus BOCES",
+    "phone": "(716) 549-4454",
+    "counties_served": [
+      "chautauqua-ny"
+    ],
+    "physical_county": "chautauqua-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.fehb.org",
+    "confidence_score": 9.5,
+    "notes": "Franklin-Essex-Hamilton Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-franklin-essex",
+    "name": "Franklin-Essex-Hamilton BOCES",
+    "phone": "(518) 483-6420",
+    "counties_served": [
+      "franklin-ny",
+      "hamilton-ny"
+    ],
+    "physical_county": "franklin-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.gvboces.org",
+    "confidence_score": 9.5,
+    "notes": "Genesee Valley Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-genesee-valley",
+    "name": "Genesee Valley BOCES",
+    "phone": "(585) 344-7700",
+    "counties_served": [
+      "genesee-ny",
+      "livingston-ny"
+    ],
+    "physical_county": "genesee-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.hfmboces.org",
+    "confidence_score": 9.5,
+    "notes": "Hamilton-Fulton-Montgomery Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-hfm",
+    "name": "HFM BOCES (Hamilton-Fulton-Montgomery)",
+    "phone": "(518) 736-4600",
+    "counties_served": [
+      "fulton-ny",
+      "montgomery-ny"
+    ],
+    "physical_county": "fulton-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.herkimer-boces.org",
+    "confidence_score": 9.5,
+    "notes": "Herkimer-Fulton-Hamilton-Otsego Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-herkimer",
+    "name": "Herkimer-Fulton-Hamilton-Otsego BOCES",
+    "phone": "(315) 867-2000",
+    "counties_served": [
+      "herkimer-ny"
+    ],
+    "physical_county": "herkimer-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.boces.com",
+    "confidence_score": 9.5,
+    "notes": "Jefferson-Lewis Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-jefferson-lewis",
+    "name": "Jefferson-Lewis-Hamilton-Herkimer-Oneida BOCES",
+    "phone": "(315) 779-7000",
+    "counties_served": [
+      "jefferson-ny",
+      "lewis-ny"
+    ],
+    "physical_county": "jefferson-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.moboces.org",
+    "confidence_score": 9.5,
+    "notes": "Madison-Oneida Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-madison-oneida",
+    "name": "Madison-Oneida BOCES",
+    "phone": "(315) 361-5500",
+    "counties_served": [
+      "madison-ny"
+    ],
+    "physical_county": "madison-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.monroe2boces.org",
+    "confidence_score": 9.5,
+    "notes": "Monroe 2-Orleans Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-monroe-2-orleans",
+    "name": "Monroe 2-Orleans BOCES",
+    "phone": "(585) 352-2400",
+    "counties_served": [
+      "orleans-ny"
+    ],
+    "physical_county": "orleans-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.oneida-boces.org",
+    "confidence_score": 9.5,
+    "notes": "Oneida-Herkimer-Madison Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-oneida-herkimer",
+    "name": "Oneida-Herkimer-Madison BOCES",
+    "phone": "(315) 793-8500",
+    "counties_served": [
+      "oneida-ny"
+    ],
+    "physical_county": "oneida-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.ouboces.org",
+    "confidence_score": 9.5,
+    "notes": "Orange-Ulster Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-orange-ulster",
+    "name": "Orange-Ulster BOCES",
+    "phone": "(845) 291-0100",
+    "counties_served": [
+      "orange-ny"
+    ],
+    "physical_county": "orange-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.onboces.org",
+    "confidence_score": 9.5,
+    "notes": "Orleans-Niagara Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-orleans-niagara",
+    "name": "Orleans-Niagara BOCES",
+    "phone": "(716) 731-6800",
+    "counties_served": [
+      "niagara-ny"
+    ],
+    "physical_county": "niagara-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.citiboces.org",
+    "confidence_score": 9.5,
+    "notes": "Oswego County Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-oswego",
+    "name": "Oswego County BOCES (CiTi BOCES)",
+    "phone": "(315) 963-4251",
+    "counties_served": [
+      "oswego-ny"
+    ],
+    "physical_county": "oswego-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.oncboces.org",
+    "confidence_score": 9.5,
+    "notes": "Otsego-Delaware-Schoharie-Greene Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-onc",
+    "name": "Otsego-Delaware-Schoharie-Greene BOCES (ONC BOCES)",
+    "phone": "(607) 588-6291",
+    "counties_served": [
+      "otsego-ny"
+    ],
+    "physical_county": "otsego-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.pnwboces.org",
+    "confidence_score": 9.5,
+    "notes": "Putnam-Northern Westchester Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-putnam-westchester",
+    "name": "Putnam-Northern Westchester BOCES",
+    "phone": "(914) 245-2700",
+    "counties_served": [
+      "putnam-ny"
+    ],
+    "physical_county": "putnam-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.questar.org",
+    "confidence_score": 9.5,
+    "notes": "Rensselaer-Columbia-Greene Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-questar-iii",
+    "name": "Questar III BOCES (Rensselaer-Columbia-Greene)",
+    "phone": "(518) 477-8771",
+    "counties_served": [
+      "rensselaer-ny",
+      "columbia-ny",
+      "greene-ny"
+    ],
+    "physical_county": "rensselaer-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.rocklandboces.org",
+    "confidence_score": 9.5,
+    "notes": "Rockland Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-rockland",
+    "name": "Rockland BOCES",
+    "phone": "(845) 627-4700",
+    "counties_served": [
+      "rockland-ny"
+    ],
+    "physical_county": "rockland-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.sllboces.org",
+    "confidence_score": 9.5,
+    "notes": "St. Lawrence-Lewis Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-st-lawrence",
+    "name": "St. Lawrence-Lewis BOCES",
+    "phone": "(315) 386-4504",
+    "counties_served": [
+      "st-lawrence-ny"
+    ],
+    "physical_county": "st-lawrence-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.gstboces.org",
+    "confidence_score": 9.5,
+    "notes": "Greater Southern Tier Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-greater-southern-tier",
+    "name": "Greater Southern Tier BOCES (GST BOCES)",
+    "phone": "(607) 739-3581",
+    "counties_served": [
+      "chemung-ny",
+      "schuyler-ny",
+      "steuben-ny"
+    ],
+    "physical_county": "chemung-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.scboces.org",
+    "confidence_score": 9.5,
+    "notes": "Sullivan County Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-sullivan",
+    "name": "Sullivan County BOCES",
+    "phone": "(845) 295-4000",
+    "counties_served": [
+      "sullivan-ny"
+    ],
+    "physical_county": "sullivan-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.tstboces.org",
+    "confidence_score": 9.5,
+    "notes": "Tompkins-Seneca-Tioga Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-tst",
+    "name": "Tompkins-Seneca-Tioga BOCES (TST BOCES)",
+    "phone": "(607) 257-1551",
+    "counties_served": [
+      "tompkins-ny",
+      "seneca-ny"
+    ],
+    "physical_county": "tompkins-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.ulsterboces.org",
+    "confidence_score": 9.5,
+    "notes": "Ulster Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-ulster",
+    "name": "Ulster BOCES",
+    "phone": "(845) 255-3040",
+    "counties_served": [
+      "ulster-ny"
+    ],
+    "physical_county": "ulster-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.wswheboces.org",
+    "confidence_score": 9.5,
+    "notes": "Washington-Saratoga-Warren-Hamilton-Essex Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-wswhe",
+    "name": "WSWHE BOCES (Washington-Saratoga-Warren-Hamilton-Essex)",
+    "phone": "(518) 581-3300",
+    "counties_served": [
+      "washington-ny",
+      "warren-ny"
+    ],
+    "physical_county": "washington-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.wflboces.org",
+    "confidence_score": 9.5,
+    "notes": "Wayne-Finger Lakes Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-wayne-finger-lakes",
+    "name": "Wayne-Finger Lakes BOCES",
+    "phone": "(315) 332-7200",
+    "counties_served": [
+      "wayne-ny"
+    ],
+    "physical_county": "wayne-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.wsboces.org",
+    "confidence_score": 9.5,
+    "notes": "Western Suffolk Board of Cooperative Educational Services",
+    "suggested_target_id": "ny-ed-boces-western-suffolk",
+    "name": "Western Suffolk BOCES",
+    "phone": "(631) 549-4900",
+    "counties_served": [
+      "suffolk-ny"
+    ],
+    "physical_county": "suffolk-ny",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  }
+]

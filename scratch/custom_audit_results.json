@@ -1,0 +1,2352 @@
+{
+  "alabama": {
+    "name": "Alabama",
+    "code": "AL",
+    "counties": 67,
+    "county_offices": {
+      "total": 67,
+      "fallback": 0,
+      "manual_review": 67,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 67,
+      "fallback": 0,
+      "manual_review": 67,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 201,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 201
+    },
+    "iep_advocates": {
+      "total": 138,
+      "fallback": 0,
+      "manual_review": 138,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "alaska": {
+    "name": "Alaska",
+    "code": "AK",
+    "counties": 20,
+    "county_offices": {
+      "total": 20,
+      "fallback": 0,
+      "manual_review": 20,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 20,
+      "fallback": 0,
+      "manual_review": 20,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 60,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 60
+    },
+    "iep_advocates": {
+      "total": 44,
+      "fallback": 0,
+      "manual_review": 44,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "arizona": {
+    "name": "Arizona",
+    "code": "AZ",
+    "counties": 15,
+    "county_offices": {
+      "total": 15,
+      "fallback": 0,
+      "manual_review": 15,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 15,
+      "fallback": 0,
+      "manual_review": 15,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 45,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 45
+    },
+    "iep_advocates": {
+      "total": 34,
+      "fallback": 0,
+      "manual_review": 34,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "arkansas": {
+    "name": "Arkansas",
+    "code": "AR",
+    "counties": 75,
+    "county_offices": {
+      "total": 75,
+      "fallback": 0,
+      "manual_review": 75,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 75,
+      "fallback": 0,
+      "manual_review": 75,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 225,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 225
+    },
+    "iep_advocates": {
+      "total": 154,
+      "fallback": 0,
+      "manual_review": 154,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "california": {
+    "name": "California",
+    "code": "CA",
+    "counties": 58,
+    "county_offices": {
+      "total": 174,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 174
+    },
+    "school_districts": {
+      "total": 80,
+      "fallback": 40,
+      "manual_review": 40,
+      "verified": 0,
+      "unverified": 40
+    },
+    "state_resource_agencies": {
+      "total": 21,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 21,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 62,
+      "fallback": 37,
+      "manual_review": 37,
+      "verified": 0,
+      "unverified": 25
+    },
+    "nonprofit_organizations": {
+      "total": 34,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 34
+    },
+    "iep_advocates": {
+      "total": 580,
+      "fallback": 0,
+      "manual_review": 580,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "colorado": {
+    "name": "Colorado",
+    "code": "CO",
+    "counties": 64,
+    "county_offices": {
+      "total": 65,
+      "fallback": 0,
+      "manual_review": 65,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 64,
+      "fallback": 0,
+      "manual_review": 64,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 192,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 192
+    },
+    "iep_advocates": {
+      "total": 132,
+      "fallback": 0,
+      "manual_review": 132,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "connecticut": {
+    "name": "Connecticut",
+    "code": "CT",
+    "counties": 8,
+    "county_offices": {
+      "total": 8,
+      "fallback": 0,
+      "manual_review": 8,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 8,
+      "fallback": 0,
+      "manual_review": 8,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 24,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 24
+    },
+    "iep_advocates": {
+      "total": 20,
+      "fallback": 0,
+      "manual_review": 20,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "delaware": {
+    "name": "Delaware",
+    "code": "DE",
+    "counties": 3,
+    "county_offices": {
+      "total": 3,
+      "fallback": 0,
+      "manual_review": 3,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 3,
+      "fallback": 0,
+      "manual_review": 3,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 9,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 9
+    },
+    "iep_advocates": {
+      "total": 10,
+      "fallback": 0,
+      "manual_review": 10,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "florida": {
+    "name": "Florida",
+    "code": "FL",
+    "counties": 67,
+    "county_offices": {
+      "total": 69,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 69
+    },
+    "school_districts": {
+      "total": 67,
+      "fallback": 0,
+      "manual_review": 1,
+      "verified": 0,
+      "unverified": 66
+    },
+    "state_resource_agencies": {
+      "total": 29,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 29
+    },
+    "regional_education_agencies": {
+      "total": 19,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 19
+    },
+    "nonprofit_organizations": {
+      "total": 235,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 235
+    },
+    "iep_advocates": {
+      "total": 177,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 177
+    }
+  },
+  "georgia": {
+    "name": "Georgia",
+    "code": "GA",
+    "counties": 159,
+    "county_offices": {
+      "total": 159,
+      "fallback": 0,
+      "manual_review": 142,
+      "verified": 15,
+      "unverified": 2
+    },
+    "school_districts": {
+      "total": 159,
+      "fallback": 0,
+      "manual_review": 142,
+      "verified": 15,
+      "unverified": 2
+    },
+    "state_resource_agencies": {
+      "total": 7,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 7
+    },
+    "regional_education_agencies": {
+      "total": 5,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 5
+    },
+    "nonprofit_organizations": {
+      "total": 338,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 338
+    },
+    "iep_advocates": {
+      "total": 340,
+      "fallback": 0,
+      "manual_review": 22,
+      "verified": 0,
+      "unverified": 318
+    }
+  },
+  "hawaii": {
+    "name": "Hawaii",
+    "code": "HI",
+    "counties": 5,
+    "county_offices": {
+      "total": 5,
+      "fallback": 0,
+      "manual_review": 5,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 5,
+      "fallback": 0,
+      "manual_review": 5,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 15,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 15
+    },
+    "iep_advocates": {
+      "total": 14,
+      "fallback": 0,
+      "manual_review": 14,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "idaho": {
+    "name": "Idaho",
+    "code": "ID",
+    "counties": 44,
+    "county_offices": {
+      "total": 44,
+      "fallback": 0,
+      "manual_review": 44,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 44,
+      "fallback": 0,
+      "manual_review": 44,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 132,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 132
+    },
+    "iep_advocates": {
+      "total": 92,
+      "fallback": 0,
+      "manual_review": 92,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "illinois": {
+    "name": "Illinois",
+    "code": "IL",
+    "counties": 102,
+    "county_offices": {
+      "total": 102,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 102
+    },
+    "school_districts": {
+      "total": 102,
+      "fallback": 0,
+      "manual_review": 89,
+      "verified": 8,
+      "unverified": 5
+    },
+    "state_resource_agencies": {
+      "total": 40,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 40
+    },
+    "regional_education_agencies": {
+      "total": 33,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 33
+    },
+    "nonprofit_organizations": {
+      "total": 306,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 306
+    },
+    "iep_advocates": {
+      "total": 224,
+      "fallback": 0,
+      "manual_review": 20,
+      "verified": 0,
+      "unverified": 204
+    }
+  },
+  "indiana": {
+    "name": "Indiana",
+    "code": "IN",
+    "counties": 92,
+    "county_offices": {
+      "total": 92,
+      "fallback": 0,
+      "manual_review": 92,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 92,
+      "fallback": 0,
+      "manual_review": 92,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 276,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 276
+    },
+    "iep_advocates": {
+      "total": 188,
+      "fallback": 0,
+      "manual_review": 188,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "iowa": {
+    "name": "Iowa",
+    "code": "IA",
+    "counties": 99,
+    "county_offices": {
+      "total": 99,
+      "fallback": 0,
+      "manual_review": 99,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 99,
+      "fallback": 0,
+      "manual_review": 99,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 297,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 297
+    },
+    "iep_advocates": {
+      "total": 202,
+      "fallback": 0,
+      "manual_review": 202,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "kansas": {
+    "name": "Kansas",
+    "code": "KS",
+    "counties": 105,
+    "county_offices": {
+      "total": 105,
+      "fallback": 0,
+      "manual_review": 105,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 105,
+      "fallback": 0,
+      "manual_review": 105,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 315,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 315
+    },
+    "iep_advocates": {
+      "total": 214,
+      "fallback": 0,
+      "manual_review": 214,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "kentucky": {
+    "name": "Kentucky",
+    "code": "KY",
+    "counties": 120,
+    "county_offices": {
+      "total": 120,
+      "fallback": 0,
+      "manual_review": 120,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 120,
+      "fallback": 0,
+      "manual_review": 120,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 360,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 360
+    },
+    "iep_advocates": {
+      "total": 244,
+      "fallback": 0,
+      "manual_review": 244,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "louisiana": {
+    "name": "Louisiana",
+    "code": "LA",
+    "counties": 64,
+    "county_offices": {
+      "total": 64,
+      "fallback": 0,
+      "manual_review": 64,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 64,
+      "fallback": 0,
+      "manual_review": 64,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 192,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 192
+    },
+    "iep_advocates": {
+      "total": 132,
+      "fallback": 0,
+      "manual_review": 132,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "maine": {
+    "name": "Maine",
+    "code": "ME",
+    "counties": 16,
+    "county_offices": {
+      "total": 16,
+      "fallback": 0,
+      "manual_review": 16,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 16,
+      "fallback": 0,
+      "manual_review": 16,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 48,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 48
+    },
+    "iep_advocates": {
+      "total": 36,
+      "fallback": 0,
+      "manual_review": 36,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "maryland": {
+    "name": "Maryland",
+    "code": "MD",
+    "counties": 24,
+    "county_offices": {
+      "total": 24,
+      "fallback": 0,
+      "manual_review": 24,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 24,
+      "fallback": 0,
+      "manual_review": 24,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 72,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 72
+    },
+    "iep_advocates": {
+      "total": 52,
+      "fallback": 0,
+      "manual_review": 52,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "massachusetts": {
+    "name": "Massachusetts",
+    "code": "MA",
+    "counties": 14,
+    "county_offices": {
+      "total": 14,
+      "fallback": 0,
+      "manual_review": 14,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 14,
+      "fallback": 0,
+      "manual_review": 14,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 42,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 42
+    },
+    "iep_advocates": {
+      "total": 32,
+      "fallback": 0,
+      "manual_review": 32,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "michigan": {
+    "name": "Michigan",
+    "code": "MI",
+    "counties": 83,
+    "county_offices": {
+      "total": 83,
+      "fallback": 0,
+      "manual_review": 73,
+      "verified": 10,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 83,
+      "fallback": 0,
+      "manual_review": 78,
+      "verified": 5,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 2,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 1,
+      "unverified": 0
+    },
+    "nonprofit_organizations": {
+      "total": 249,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 249,
+      "unverified": 0
+    },
+    "iep_advocates": {
+      "total": 170,
+      "fallback": 0,
+      "manual_review": 170,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "minnesota": {
+    "name": "Minnesota",
+    "code": "MN",
+    "counties": 87,
+    "county_offices": {
+      "total": 87,
+      "fallback": 0,
+      "manual_review": 87,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 87,
+      "fallback": 0,
+      "manual_review": 87,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 261,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 261
+    },
+    "iep_advocates": {
+      "total": 178,
+      "fallback": 0,
+      "manual_review": 178,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "mississippi": {
+    "name": "Mississippi",
+    "code": "MS",
+    "counties": 82,
+    "county_offices": {
+      "total": 82,
+      "fallback": 0,
+      "manual_review": 82,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 82,
+      "fallback": 0,
+      "manual_review": 82,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 246,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 246
+    },
+    "iep_advocates": {
+      "total": 168,
+      "fallback": 0,
+      "manual_review": 168,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "missouri": {
+    "name": "Missouri",
+    "code": "MO",
+    "counties": 115,
+    "county_offices": {
+      "total": 115,
+      "fallback": 0,
+      "manual_review": 115,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 115,
+      "fallback": 0,
+      "manual_review": 115,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 345,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 345
+    },
+    "iep_advocates": {
+      "total": 234,
+      "fallback": 0,
+      "manual_review": 234,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "montana": {
+    "name": "Montana",
+    "code": "MT",
+    "counties": 56,
+    "county_offices": {
+      "total": 56,
+      "fallback": 0,
+      "manual_review": 56,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 56,
+      "fallback": 0,
+      "manual_review": 56,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 168,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 168
+    },
+    "iep_advocates": {
+      "total": 116,
+      "fallback": 0,
+      "manual_review": 116,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "nebraska": {
+    "name": "Nebraska",
+    "code": "NE",
+    "counties": 93,
+    "county_offices": {
+      "total": 93,
+      "fallback": 0,
+      "manual_review": 93,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 93,
+      "fallback": 0,
+      "manual_review": 93,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 279,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 279
+    },
+    "iep_advocates": {
+      "total": 190,
+      "fallback": 0,
+      "manual_review": 190,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "nevada": {
+    "name": "Nevada",
+    "code": "NV",
+    "counties": 17,
+    "county_offices": {
+      "total": 17,
+      "fallback": 0,
+      "manual_review": 17,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 17,
+      "fallback": 0,
+      "manual_review": 17,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 51,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 51
+    },
+    "iep_advocates": {
+      "total": 38,
+      "fallback": 0,
+      "manual_review": 38,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "new-hampshire": {
+    "name": "New Hampshire",
+    "code": "NH",
+    "counties": 10,
+    "county_offices": {
+      "total": 10,
+      "fallback": 0,
+      "manual_review": 10,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 10,
+      "fallback": 0,
+      "manual_review": 10,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 30,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 30
+    },
+    "iep_advocates": {
+      "total": 24,
+      "fallback": 0,
+      "manual_review": 24,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "new-jersey": {
+    "name": "New Jersey",
+    "code": "NJ",
+    "counties": 21,
+    "county_offices": {
+      "total": 21,
+      "fallback": 0,
+      "manual_review": 21,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 21,
+      "fallback": 0,
+      "manual_review": 21,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 63,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 63
+    },
+    "iep_advocates": {
+      "total": 46,
+      "fallback": 0,
+      "manual_review": 46,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "new-mexico": {
+    "name": "New Mexico",
+    "code": "NM",
+    "counties": 33,
+    "county_offices": {
+      "total": 33,
+      "fallback": 0,
+      "manual_review": 33,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 33,
+      "fallback": 0,
+      "manual_review": 33,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 99,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 99
+    },
+    "iep_advocates": {
+      "total": 70,
+      "fallback": 0,
+      "manual_review": 70,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "new-york": {
+    "name": "New York",
+    "code": "NY",
+    "counties": 62,
+    "county_offices": {
+      "total": 62,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 12,
+      "unverified": 50
+    },
+    "school_districts": {
+      "total": 62,
+      "fallback": 0,
+      "manual_review": 40,
+      "verified": 10,
+      "unverified": 12
+    },
+    "state_resource_agencies": {
+      "total": 69,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 69
+    },
+    "regional_education_agencies": {
+      "total": 38,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 38
+    },
+    "nonprofit_organizations": {
+      "total": 5,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 5,
+      "unverified": 0
+    },
+    "iep_advocates": {
+      "total": 148,
+      "fallback": 0,
+      "manual_review": 24,
+      "verified": 0,
+      "unverified": 124
+    }
+  },
+  "north-carolina": {
+    "name": "North Carolina",
+    "code": "NC",
+    "counties": 100,
+    "county_offices": {
+      "total": 100,
+      "fallback": 0,
+      "manual_review": 90,
+      "verified": 10,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 100,
+      "fallback": 0,
+      "manual_review": 96,
+      "verified": 4,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 2,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 1,
+      "unverified": 0
+    },
+    "nonprofit_organizations": {
+      "total": 300,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 300,
+      "unverified": 0
+    },
+    "iep_advocates": {
+      "total": 204,
+      "fallback": 0,
+      "manual_review": 204,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "north-dakota": {
+    "name": "North Dakota",
+    "code": "ND",
+    "counties": 53,
+    "county_offices": {
+      "total": 53,
+      "fallback": 0,
+      "manual_review": 53,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 53,
+      "fallback": 0,
+      "manual_review": 53,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 159,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 159
+    },
+    "iep_advocates": {
+      "total": 110,
+      "fallback": 0,
+      "manual_review": 110,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "ohio": {
+    "name": "Ohio",
+    "code": "OH",
+    "counties": 88,
+    "county_offices": {
+      "total": 88,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 88
+    },
+    "school_districts": {
+      "total": 176,
+      "fallback": 0,
+      "manual_review": 166,
+      "verified": 6,
+      "unverified": 4
+    },
+    "state_resource_agencies": {
+      "total": 176,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 176
+    },
+    "regional_education_agencies": {
+      "total": 51,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 51
+    },
+    "nonprofit_organizations": {
+      "total": 3,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 3,
+      "unverified": 0
+    },
+    "iep_advocates": {
+      "total": 190,
+      "fallback": 0,
+      "manual_review": 14,
+      "verified": 0,
+      "unverified": 176
+    }
+  },
+  "oklahoma": {
+    "name": "Oklahoma",
+    "code": "OK",
+    "counties": 77,
+    "county_offices": {
+      "total": 77,
+      "fallback": 0,
+      "manual_review": 77,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 77,
+      "fallback": 0,
+      "manual_review": 77,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 231,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 231
+    },
+    "iep_advocates": {
+      "total": 158,
+      "fallback": 0,
+      "manual_review": 158,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "oregon": {
+    "name": "Oregon",
+    "code": "OR",
+    "counties": 36,
+    "county_offices": {
+      "total": 36,
+      "fallback": 0,
+      "manual_review": 36,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 36,
+      "fallback": 0,
+      "manual_review": 36,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 108,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 108
+    },
+    "iep_advocates": {
+      "total": 76,
+      "fallback": 0,
+      "manual_review": 76,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "pennsylvania": {
+    "name": "Pennsylvania",
+    "code": "PA",
+    "counties": 67,
+    "county_offices": {
+      "total": 67,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 67
+    },
+    "school_districts": {
+      "total": 67,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 67
+    },
+    "state_resource_agencies": {
+      "total": 105,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 105
+    },
+    "regional_education_agencies": {
+      "total": 37,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 37
+    },
+    "nonprofit_organizations": {
+      "total": 8,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 8
+    },
+    "iep_advocates": {
+      "total": 150,
+      "fallback": 0,
+      "manual_review": 16,
+      "verified": 0,
+      "unverified": 134
+    }
+  },
+  "rhode-island": {
+    "name": "Rhode Island",
+    "code": "RI",
+    "counties": 5,
+    "county_offices": {
+      "total": 5,
+      "fallback": 0,
+      "manual_review": 5,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 5,
+      "fallback": 0,
+      "manual_review": 5,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 15,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 15
+    },
+    "iep_advocates": {
+      "total": 14,
+      "fallback": 0,
+      "manual_review": 14,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "south-carolina": {
+    "name": "South Carolina",
+    "code": "SC",
+    "counties": 46,
+    "county_offices": {
+      "total": 46,
+      "fallback": 0,
+      "manual_review": 46,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 46,
+      "fallback": 0,
+      "manual_review": 46,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 138,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 138
+    },
+    "iep_advocates": {
+      "total": 96,
+      "fallback": 0,
+      "manual_review": 96,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "south-dakota": {
+    "name": "South Dakota",
+    "code": "SD",
+    "counties": 66,
+    "county_offices": {
+      "total": 66,
+      "fallback": 0,
+      "manual_review": 66,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 66,
+      "fallback": 0,
+      "manual_review": 66,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 198,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 198
+    },
+    "iep_advocates": {
+      "total": 136,
+      "fallback": 0,
+      "manual_review": 136,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "tennessee": {
+    "name": "Tennessee",
+    "code": "TN",
+    "counties": 95,
+    "county_offices": {
+      "total": 95,
+      "fallback": 0,
+      "manual_review": 95,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 95,
+      "fallback": 0,
+      "manual_review": 95,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 285,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 285
+    },
+    "iep_advocates": {
+      "total": 194,
+      "fallback": 0,
+      "manual_review": 194,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "texas": {
+    "name": "Texas",
+    "code": "TX",
+    "counties": 254,
+    "county_offices": {
+      "total": 254,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 254
+    },
+    "school_districts": {
+      "total": 264,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 264
+    },
+    "state_resource_agencies": {
+      "total": 78,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 78
+    },
+    "regional_education_agencies": {
+      "total": 20,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 20
+    },
+    "nonprofit_organizations": {
+      "total": 2129,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 2129
+    },
+    "iep_advocates": {
+      "total": 814,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 814
+    }
+  },
+  "utah": {
+    "name": "Utah",
+    "code": "UT",
+    "counties": 29,
+    "county_offices": {
+      "total": 29,
+      "fallback": 0,
+      "manual_review": 29,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 29,
+      "fallback": 0,
+      "manual_review": 29,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 87,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 87
+    },
+    "iep_advocates": {
+      "total": 62,
+      "fallback": 0,
+      "manual_review": 62,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "vermont": {
+    "name": "Vermont",
+    "code": "VT",
+    "counties": 14,
+    "county_offices": {
+      "total": 14,
+      "fallback": 0,
+      "manual_review": 14,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 14,
+      "fallback": 0,
+      "manual_review": 14,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 42,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 42
+    },
+    "iep_advocates": {
+      "total": 32,
+      "fallback": 0,
+      "manual_review": 32,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "virginia": {
+    "name": "Virginia",
+    "code": "VA",
+    "counties": 95,
+    "county_offices": {
+      "total": 95,
+      "fallback": 0,
+      "manual_review": 95,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 95,
+      "fallback": 0,
+      "manual_review": 95,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 285,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 285
+    },
+    "iep_advocates": {
+      "total": 194,
+      "fallback": 0,
+      "manual_review": 194,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "washington": {
+    "name": "Washington",
+    "code": "WA",
+    "counties": 39,
+    "county_offices": {
+      "total": 39,
+      "fallback": 0,
+      "manual_review": 39,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 39,
+      "fallback": 0,
+      "manual_review": 39,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 117,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 117
+    },
+    "iep_advocates": {
+      "total": 82,
+      "fallback": 0,
+      "manual_review": 82,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "west-virginia": {
+    "name": "West Virginia",
+    "code": "WV",
+    "counties": 55,
+    "county_offices": {
+      "total": 55,
+      "fallback": 0,
+      "manual_review": 55,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 55,
+      "fallback": 0,
+      "manual_review": 55,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 165,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 165
+    },
+    "iep_advocates": {
+      "total": 114,
+      "fallback": 0,
+      "manual_review": 114,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "wisconsin": {
+    "name": "Wisconsin",
+    "code": "WI",
+    "counties": 72,
+    "county_offices": {
+      "total": 72,
+      "fallback": 0,
+      "manual_review": 72,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 72,
+      "fallback": 0,
+      "manual_review": 72,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 216,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 216
+    },
+    "iep_advocates": {
+      "total": 148,
+      "fallback": 0,
+      "manual_review": 148,
+      "verified": 0,
+      "unverified": 0
+    }
+  },
+  "wyoming": {
+    "name": "Wyoming",
+    "code": "WY",
+    "counties": 23,
+    "county_offices": {
+      "total": 23,
+      "fallback": 0,
+      "manual_review": 23,
+      "verified": 0,
+      "unverified": 0
+    },
+    "school_districts": {
+      "total": 23,
+      "fallback": 0,
+      "manual_review": 23,
+      "verified": 0,
+      "unverified": 0
+    },
+    "state_resource_agencies": {
+      "total": 2,
+      "fallback": 0,
+      "manual_review": 2,
+      "verified": 0,
+      "unverified": 0
+    },
+    "regional_education_agencies": {
+      "total": 1,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 1
+    },
+    "nonprofit_organizations": {
+      "total": 69,
+      "fallback": 0,
+      "manual_review": 0,
+      "verified": 0,
+      "unverified": 69
+    },
+    "iep_advocates": {
+      "total": 50,
+      "fallback": 0,
+      "manual_review": 50,
+      "verified": 0,
+      "unverified": 0
+    }
+  }
+}

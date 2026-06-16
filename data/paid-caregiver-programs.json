@@ -1,0 +1,94 @@
+{
+  "programs": [
+    {
+      "state_id": "california",
+      "program_name": "In-Home Supportive Services (IHSS)",
+      "agency": "California Department of Social Services (CDSS)",
+      "parent_provider_allowed": true,
+      "self_direction_allowed": true,
+      "details": "Parents of minor children can be paid providers if they meet specific criteria, including the lack of alternative care options and the child requiring 24-hour supervision.",
+      "source_url": "https://www.cdss.ca.gov/in-home-supportive-services"
+    },
+    {
+      "state_id": "texas",
+      "program_name": "Consumer Directed Services (CDS)",
+      "agency": "Texas Health and Human Services Commission (HHSC)",
+      "parent_provider_allowed": true,
+      "self_direction_allowed": true,
+      "details": "Available under MDCP, CLASS, and HCS waivers. Parents of minor children can be paid providers for certain personal care services through the CDS option.",
+      "source_url": "https://www.hhs.texas.gov/doing-business-hhs/provider-portals/resources/consumer-directed-services-cds"
+    },
+    {
+      "state_id": "florida",
+      "program_name": "Consumer Directed Care Plus (CDC+)",
+      "agency": "Florida Agency for Persons with Disabilities (APD)",
+      "parent_provider_allowed": true,
+      "self_direction_allowed": true,
+      "details": "Under the iBudget waiver, the CDC+ option allows legally responsible parents of minor children to be hired as paid caregivers and respite providers.",
+      "source_url": "https://apd.myflorida.com/cdcplus/"
+    },
+    {
+      "state_id": "pennsylvania",
+      "program_name": "Participant Directed Services / Services My Way",
+      "agency": "Pennsylvania Department of Human Services (DHS)",
+      "parent_provider_allowed": true,
+      "self_direction_allowed": true,
+      "details": "Available under the Consolidated and Community Living waivers. Parents can hire themselves to provide respite and personal care if approved in the service plan.",
+      "source_url": "https://www.dhs.pa.gov/Services/Disabilities-Aging/Pages/Participant-Directed-Services.aspx"
+    },
+    {
+      "state_id": "new-york",
+      "program_name": "Consumer Directed Personal Assistance Program (CDPAP)",
+      "agency": "New York State Department of Health (DOH)",
+      "parent_provider_allowed": true,
+      "self_direction_allowed": true,
+      "details": "Parents of minor children (under 18) are prohibited from being their personal assistants. However, parents of adult children (18+) can be hired as CDPAP assistants.",
+      "source_url": "https://www.health.ny.gov/health_care/medicaid/redesign/cdpap.htm"
+    },
+    {
+      "state_id": "ohio",
+      "program_name": "Self-Directed Services (Participant Directed)",
+      "agency": "Ohio Department of Developmental Disabilities (DODD)",
+      "parent_provider_allowed": true,
+      "self_direction_allowed": true,
+      "details": "Available under the Individual Options (IO) and Level One waivers. Parents of minor children can be paid providers for personal care services up to 40 hours per week.",
+      "source_url": "https://dodd.ohio.gov/providers/billing/billing-rates/participant-directed-homemaker-personal-care"
+    },
+    {
+      "state_id": "illinois",
+      "program_name": "Home Services Program (HSP)",
+      "agency": "Illinois Department of Human Services (IDHS)",
+      "parent_provider_allowed": true,
+      "self_direction_allowed": true,
+      "details": "Parents of adult children can be paid caregivers. Parents of minor children are generally excluded unless extraordinary care requirements are met under specific waiver guidelines.",
+      "source_url": "https://www.dhs.state.il.us/page.aspx?item=29737"
+    },
+    {
+      "state_id": "georgia",
+      "program_name": "Georgia Pediatric Program (GAPP) & NOW/COMP",
+      "agency": "Georgia Department of Community Health (DCH)",
+      "parent_provider_allowed": true,
+      "self_direction_allowed": true,
+      "details": "Waivers allow family members to be hired for personal support services, but parents of minor children face strict eligibility reviews and must route through a licensed agency.",
+      "source_url": "https://dch.georgia.gov/georgia-pediatric-program-gapp"
+    },
+    {
+      "state_id": "north-carolina",
+      "program_name": "Community Alternatives Program for Children (CAP/C)",
+      "agency": "North Carolina Department of Health and Human Services (DHHS)",
+      "parent_provider_allowed": true,
+      "self_direction_allowed": true,
+      "details": "Parents of minor children can be paid as personal care assistants under CAP/C if they meet the strict criteria for 'extraordinary care' and pass clinical assessments.",
+      "source_url": "https://medicaid.ncdhhs.gov/providers/programs-and-services/long-term-care/community-alternatives-program-for-children"
+    },
+    {
+      "state_id": "michigan",
+      "program_name": "Choice Waiver & Habilitation Supports Waiver (HSW)",
+      "agency": "Michigan Department of Health and Human Services (MDHHS)",
+      "parent_provider_allowed": true,
+      "self_direction_allowed": true,
+      "details": "Allows self-direction and family hiring of personal care assistants. Parents of minor children can be hired under specific CMHSP local board approvals.",
+      "source_url": "https://www.michigan.gov/mdhhs/assistance-programs/medicaid/services/habil-supp-waiver"
+    }
+  ]
+}

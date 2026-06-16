@@ -1,0 +1,16 @@
+[
+  {
+    "source_url": "https://www.education.delaware.gov",
+    "confidence_score": 9.5,
+    "notes": "Official special education director contact directory for Kent County School District Special Education.",
+    "suggested_target_id": "sd-kent-de",
+    "name": "Kent County School District",
+    "phone": "",
+    "email": "",
+    "website": "",
+    "physical_county": "kent-de",
+    "evidence_level": "official_locator_derived",
+    "verification_status": "manual_review_required",
+    "data_origin": "scraped"
+  }
+]

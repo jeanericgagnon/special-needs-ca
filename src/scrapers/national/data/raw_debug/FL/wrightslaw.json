@@ -1,0 +1,72 @@
+[
+  {
+    "id": "yp-practitionerfl1",
+    "name": "Practitioner FL 1",
+    "state": "FL",
+    "city": "",
+    "phone": "555) 111-2000",
+    "email": "advocate1.fl@wrightslaw-help.org",
+    "website": "http://www.practitioner1fl.org",
+    "specialties": "General Advocacy",
+    "organization": "Practitioner FL 1 Law Firm",
+    "description": "Practitioner FL 1 Special Education Attorney Phone: (555) 111-2000 Email: advocate1.fl [at] wrightslaw-help.org Web: www.practitioner1fl.org Description: Practitioner 1 provides expert help with IEP and 504 plans in FL.",
+    "source": "wrightslaw",
+    "scraped_at": "2026-06-05T22:52:43.750Z"
+  },
+  {
+    "id": "yp-practitionerfl2",
+    "name": "Practitioner FL 2",
+    "state": "FL",
+    "city": "",
+    "phone": "555) 111-2001",
+    "email": "attorney2.fl@wrightslaw-help.org",
+    "website": "http://www.practitioner2fl.org",
+    "specialties": "General Advocacy",
+    "organization": "Practitioner FL 2 Law Firm",
+    "description": "Practitioner FL 2 Special Education Advocate Phone: (555) 111-2001 Email: attorney2.fl | at | wrightslaw-help.org Web: www.practitioner2fl.org Description: Practitioner 2 provides expert help with IEP and 504 plans in FL.",
+    "source": "wrightslaw",
+    "scraped_at": "2026-06-05T22:52:43.809Z"
+  },
+  {
+    "id": "yp-practitionerfl3",
+    "name": "Practitioner FL 3",
+    "state": "FL",
+    "city": "",
+    "phone": "555) 111-2002",
+    "email": "advocate3.fl@wrightslaw-help.org",
+    "website": "http://www.practitioner3fl.org",
+    "specialties": "General Advocacy",
+    "organization": "Independent Practice",
+    "description": "Practitioner FL 3 Special Education Advocate Phone: (555) 111-2002 Email: advocate3.fl [at] wrightslaw-help.org Web: www.practitioner3fl.org Description: Practitioner 3 provides expert help with IEP and 504 plans in FL.",
+    "source": "wrightslaw",
+    "scraped_at": "2026-06-05T22:52:43.867Z"
+  },
+  {
+    "id": "yp-practitionerfl4",
+    "name": "Practitioner FL 4",
+    "state": "FL",
+    "city": "",
+    "phone": "555) 111-2003",
+    "email": "attorney4.fl@wrightslaw-help.org",
+    "website": "http://www.practitioner4fl.org",
+    "specialties": "General Advocacy",
+    "organization": "Practitioner FL 4 Law Firm",
+    "description": "Practitioner FL 4 Special Education Attorney Phone: (555) 111-2003 Email: attorney4.fl | at | wrightslaw-help.org Web: www.practitioner4fl.org Description: Practitioner 4 provides expert help with IEP and 504 plans in FL.",
+    "source": "wrightslaw",
+    "scraped_at": "2026-06-05T22:52:43.921Z"
+  },
+  {
+    "id": "yp-practitionerfl5",
+    "name": "Practitioner FL 5",
+    "state": "FL",
+    "city": "",
+    "phone": "555) 111-2004",
+    "email": "advocate5.fl@wrightslaw-help.org",
+    "website": "http://www.practitioner5fl.org",
+    "specialties": "General Advocacy",
+    "organization": "Independent Practice",
+    "description": "Practitioner FL 5 Special Education Advocate Phone: (555) 111-2004 Email: advocate5.fl [at] wrightslaw-help.org Web: www.practitioner5fl.org Description: Practitioner 5 provides expert help with IEP and 504 plans in FL.",
+    "source": "wrightslaw",
+    "scraped_at": "2026-06-05T22:52:43.974Z"
+  }
+]

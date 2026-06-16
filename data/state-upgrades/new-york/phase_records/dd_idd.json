@@ -1,0 +1,93 @@
+[
+  {
+    "source_url": "https://opwdd.ny.gov/get-started/front-door",
+    "confidence_score": 9.5,
+    "notes": "OPWDD Region 1 Western NY Developmental Disabilities Regional Office.",
+    "suggested_target_id": "ny-ddro-western",
+    "name": "OPWDD Western NY Regional Office (Region 1)",
+    "phone": "(716) 517-2010",
+    "physical_county": "allegany-ny,cattaraugus-ny,chautauqua-ny,erie-ny,genesee-ny,niagara-ny,orleans-ny,wyoming-ny",
+    "agency_type": "ddro",
+    "evidence_level": "direct_official_page",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://opwdd.ny.gov/get-started/front-door",
+    "confidence_score": 9.5,
+    "notes": "OPWDD Region 1 Finger Lakes Developmental Disabilities Regional Office.",
+    "suggested_target_id": "ny-ddro-fingerlakes",
+    "name": "OPWDD Finger Lakes Regional Office (Region 1)",
+    "phone": "(585) 461-8508",
+    "physical_county": "chemung-ny,livingston-ny,monroe-ny,ontario-ny,schuyler-ny,seneca-ny,steuben-ny,wayne-ny,yates-ny",
+    "agency_type": "ddro",
+    "evidence_level": "direct_official_page",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://opwdd.ny.gov/get-started/front-door",
+    "confidence_score": 9.5,
+    "notes": "OPWDD Region 2 Central NY Developmental Disabilities Regional Office.",
+    "suggested_target_id": "ny-ddro-central",
+    "name": "OPWDD Central NY Regional Office (Region 2)",
+    "phone": "(607) 240-4900",
+    "physical_county": "broome-ny,cayuga-ny,chenango-ny,clinton-ny,cortland-ny,delaware-ny,essex-ny,franklin-ny,hamilton-ny,herkimer-ny,jefferson-ny,lewis-ny,madison-ny,oneida-ny,onondaga-ny,oswego-ny,otsego-ny,st-lawrence-ny,tioga-ny,tompkins-ny",
+    "agency_type": "ddro",
+    "evidence_level": "direct_official_page",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://opwdd.ny.gov/get-started/front-door",
+    "confidence_score": 9.5,
+    "notes": "OPWDD Region 3 Capital District Developmental Disabilities Regional Office.",
+    "suggested_target_id": "ny-ddro-capital",
+    "name": "OPWDD Capital District Regional Office (Region 3)",
+    "phone": "(518) 388-0431",
+    "physical_county": "albany-ny,fulton-ny,montgomery-ny,rensselaer-ny,saratoga-ny,schenectady-ny,schoharie-ny,warren-ny,washington-ny",
+    "agency_type": "ddro",
+    "evidence_level": "direct_official_page",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://opwdd.ny.gov/get-started/front-door",
+    "confidence_score": 9.5,
+    "notes": "OPWDD Region 3 Hudson Valley Developmental Disabilities Regional Office.",
+    "suggested_target_id": "ny-ddro-hudson",
+    "name": "OPWDD Hudson Valley Regional Office (Region 3)",
+    "phone": "(845) 947-6100",
+    "physical_county": "columbia-ny,dutchess-ny,greene-ny,orange-ny,putnam-ny,rockland-ny,sullivan-ny,ulster-ny,westchester-ny",
+    "agency_type": "ddro",
+    "evidence_level": "direct_official_page",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://opwdd.ny.gov/get-started/front-door",
+    "confidence_score": 9.5,
+    "notes": "OPWDD Region 4 NYC Developmental Disabilities Regional Office.",
+    "suggested_target_id": "ny-ddro-nyc",
+    "name": "OPWDD NYC Regional Office (Region 4)",
+    "phone": "(646) 766-3466",
+    "physical_county": "bronx-ny,kings-ny,new-york-ny,queens-ny,richmond-ny",
+    "agency_type": "ddro",
+    "evidence_level": "direct_official_page",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://opwdd.ny.gov/get-started/front-door",
+    "confidence_score": 9.5,
+    "notes": "OPWDD Region 5 Long Island Developmental Disabilities Regional Office.",
+    "suggested_target_id": "ny-ddro-longisland",
+    "name": "OPWDD Long Island Regional Office (Region 5)",
+    "phone": "(631) 434-6100",
+    "physical_county": "nassau-ny,suffolk-ny",
+    "agency_type": "ddro",
+    "evidence_level": "direct_official_page",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "id": "copaa-c1980e235deb4179420270dac090ea64e411c41869253cbac888f799c5f7cbf6",
+    "name": "Steven Aleman",
+    "state": "TX",
+    "city": "Austin",
+    "phone": null,
+    "email": "saleman@drtx.org",
+    "website": "https://connect.copaa.org",
+    "specialties": "General Advocacy",
+    "organization": "Disability Rights Texas",
+    "organization_info": {
+      "id": "org-e986ec1188e3f47a9d5b4914ea6142ce425d1fa25803f13b92e27cd650a23bef",
+      "name": "Disability Rights Texas",
+      "state": "TX",
+      "city": "Austin",
+      "phone": null,
+      "email": "saleman@drtx.org",
+      "website": "https://connect.copaa.org",
+      "description": "Disability Rights Texas is an organization specializing in special education advocacy.",
+      "source": "copaa",
+      "scraped_at": "2026-06-15T22:54:20.560Z"
+    },
+    "description": "Steven Aleman is a special education professional.",
+    "source": "copaa",
+    "scraped_at": "2026-06-15T22:54:20.561Z"
+  },
+  {
+    "id": "copaa-df9d87ab5a9d4a03afccad90fe7e07ccf83f978f04550b79d3ca25e4d4a0da25",
+    "name": "Cynammon Allen",
+    "state": "TX",
+    "city": "Dallas",
+    "phone": "214-612-6168\n                                                    work",
+    "email": "callen@burnsallenlaw.com",
+    "website": "https://connect.copaa.org",
+    "specialties": "General Advocacy",
+    "organization": "Burns Allen PLLC",
+    "organization_info": {
+      "id": "org-c2495f5437ed0950a653f190f05f14dc0246dbc6c4300ec0f27426a76c89fd05",
+      "name": "Burns Allen PLLC",
+      "state": "TX",
+      "city": "Dallas",
+      "phone": "214-612-6168\n                                                    work",
+      "email": "callen@burnsallenlaw.com",
+      "website": "https://connect.copaa.org",
+      "description": "Burns Allen PLLC is an organization specializing in special education advocacy.",
+      "source": "copaa",
+      "scraped_at": "2026-06-15T22:54:20.561Z"
+    },
+    "description": "Cynammon Allen is a special education professional.",
+    "source": "copaa",
+    "scraped_at": "2026-06-15T22:54:20.561Z"
+  }
+]

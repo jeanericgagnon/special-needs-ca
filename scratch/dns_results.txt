@@ -1,0 +1,96 @@
+Completed checking 249 unique domains.
+Failed domains count: 92
+
+Failing domains details:
+  State: ALABAMA | Name: Alabama Department of Education Special Ed | URL: https://www.alabama-education.gov
+  State: ALABAMA | Name: Alabama Parent Training Center | URL: https://www.apnsof.org
+  State: ALABAMA | Name: The Arc of Alabama | URL: https://www.thearcal.org
+  State: ALASKA | Name: The Arc of Alaska | URL: https://www.thearcalaska.org
+  State: ARIZONA | Name: Arizona Department of Education Special Ed | URL: https://education.arizona.gov
+  State: ARIZONA | Name: The Arc of Arizona | URL: https://www.thearcarizona.org
+  State: ARKANSAS | Name: Arkansas Department of Education Special Ed | URL: https://education.arkansas.gov
+  State: ARKANSAS | Name: The Arc of Arkansas | URL: https://www.thearcarkansas.org
+  State: COLORADO | Name: Colorado Department of Education Special Ed | URL: https://education.colorado.gov
+  State: COLORADO | Name: The Arc of Colorado | URL: https://www.thearccolorado.org
+  State: CONNECTICUT | Name: Connecticut County Metadata | URL: https://www.connecticut.gov
+  State: CONNECTICUT | Name: Connecticut Department of Education Special Ed | URL: https://education.connecticut.gov
+  State: CONNECTICUT | Name: The Arc of Connecticut | URL: https://www.thearcconnecticut.org
+  State: DELAWARE | Name: The Arc of Delaware | URL: https://www.thearcdelaware.org
+  State: FLORIDA | Name: Children's Medical Services (CMS) Plan | URL: https://www.cmsplan.floridahealth.gov
+  State: FLORIDA | Name: Florida Open Data Portal | URL: https://data.florida.gov
+  State: HAWAII | Name: Hawaii Department of Education Special Ed | URL: https://education.hawaii.gov
+  State: HAWAII | Name: The Arc of Hawaii | URL: https://www.thearchawaii.org
+  State: IDAHO | Name: Idaho Department of Education Special Ed | URL: https://education.idaho.gov
+  State: IDAHO | Name: The Arc of Idaho | URL: https://www.thearcidaho.org
+  State: ILLINOIS | Name: IL Association of Counties directory | URL: https://www.ilcounties.org
+  State: INDIANA | Name: Indiana Department of Education Special Ed | URL: https://education.indiana.gov
+  State: INDIANA | Name: The Arc of Indiana | URL: https://www.thearcindiana.org
+  State: IOWA | Name: Iowa Department of Education Special Ed | URL: https://education.iowa.gov
+  State: IOWA | Name: The Arc of Iowa | URL: https://www.thearciowa.org
+  State: KANSAS | Name: Kansas Department of Education Special Ed | URL: https://education.kansas.gov
+  State: KANSAS | Name: The Arc of Kansas | URL: https://www.thearckansas.org
+  State: KENTUCKY | Name: Kentucky Department of Education Special Ed | URL: https://education.kentucky.gov
+  State: KENTUCKY | Name: The Arc of Kentucky | URL: https://www.thearckentucky.org
+  State: LOUISIANA | Name: Louisiana Department of Education Special Ed | URL: https://education.louisiana.gov
+  State: LOUISIANA | Name: The Arc of Louisiana | URL: https://www.thearclouisiana.org
+  State: MAINE | Name: Maine Department of Education Special Ed | URL: https://education.maine.gov
+  State: MAINE | Name: The Arc of Maine | URL: https://www.thearcmaine.org
+  State: MARYLAND | Name: Maryland Department of Education Special Ed | URL: https://education.maryland.gov
+  State: MARYLAND | Name: The Arc of Maryland | URL: https://www.thearcmaryland.org
+  State: MASSACHUSETTS | Name: Massachusetts Department of Education Special Ed | URL: https://education.massachusetts.gov
+  State: MASSACHUSETTS | Name: The Arc of Massachusetts | URL: https://www.thearcmassachusetts.org
+  State: MICHIGAN | Name: Michigan Department of Education Special Ed | URL: https://education.michigan.gov
+  State: MICHIGAN | Name: The Arc of Michigan | URL: https://www.thearcmichigan.org
+  State: MISSISSIPPI | Name: Mississippi Department of Education Special Ed | URL: https://education.mississippi.gov
+  State: MISSISSIPPI | Name: The Arc of Mississippi | URL: https://www.thearcmississippi.org
+  State: MISSOURI | Name: Missouri Department of Education Special Ed | URL: https://education.missouri.gov
+  State: MISSOURI | Name: The Arc of Missouri | URL: https://www.thearcmissouri.org
+  State: MONTANA | Name: Montana Department of Education Special Ed | URL: https://education.montana.gov
+  State: MONTANA | Name: The Arc of Montana | URL: https://www.thearcmontana.org
+  State: NEBRASKA | Name: Nebraska Department of Education Special Ed | URL: https://education.nebraska.gov
+  State: NEBRASKA | Name: The Arc of Nebraska | URL: https://www.thearcnebraska.org
+  State: NEVADA | Name: Nevada Department of Education Special Ed | URL: https://education.nevada.gov
+  State: NEW-HAMPSHIRE | Name: New Hampshire County Metadata | URL: https://www.new-hampshire.gov
+  State: NEW-HAMPSHIRE | Name: New Hampshire Department of Education Special Ed | URL: https://education.new-hampshire.gov
+  State: NEW-HAMPSHIRE | Name: The Arc of New Hampshire | URL: https://www.thearcnew-hampshire.org
+  State: NEW-JERSEY | Name: New Jersey County Metadata | URL: https://www.new-jersey.gov
+  State: NEW-JERSEY | Name: New Jersey Department of Education Special Ed | URL: https://education.new-jersey.gov
+  State: NEW-JERSEY | Name: The Arc of New Jersey | URL: https://www.thearcnew-jersey.org
+  State: NEW-MEXICO | Name: New Mexico County Metadata | URL: https://www.new-mexico.gov
+  State: NEW-MEXICO | Name: New Mexico Department of Education Special Ed | URL: https://education.new-mexico.gov
+  State: NEW-MEXICO | Name: The Arc of New Mexico | URL: https://www.thearcnew-mexico.org
+  State: NEW-YORK | Name: NYS Association of Counties directory | URL: https://www.nyasoc.org
+  State: NEW-YORK | Name: Autism Society of Greater New York | URL: https://www.asgny.org
+  State: NORTH-CAROLINA | Name: North Carolina County Metadata | URL: https://www.north-carolina.gov
+  State: NORTH-CAROLINA | Name: North Carolina Department of Education Special Ed | URL: https://education.north-carolina.gov
+  State: NORTH-CAROLINA | Name: The Arc of North Carolina | URL: https://www.thearcnorth-carolina.org
+  State: NORTH-DAKOTA | Name: North Dakota Department of Education Special Ed | URL: https://education.north-dakota.gov
+  State: NORTH-DAKOTA | Name: The Arc of North Dakota | URL: https://www.thearcnorth-dakota.org
+  State: OKLAHOMA | Name: Oklahoma Department of Education Special Ed | URL: https://education.oklahoma.gov
+  State: OKLAHOMA | Name: The Arc of Oklahoma | URL: https://www.thearcoklahoma.org
+  State: RHODE-ISLAND | Name: Rhode Island County Metadata | URL: https://www.rhode-island.gov
+  State: RHODE-ISLAND | Name: Rhode Island Department of Education Special Ed | URL: https://education.rhode-island.gov
+  State: RHODE-ISLAND | Name: The Arc of Rhode Island | URL: https://www.thearcrhode-island.org
+  State: SOUTH-CAROLINA | Name: South Carolina County Metadata | URL: https://www.south-carolina.gov
+  State: SOUTH-CAROLINA | Name: South Carolina Department of Education Special Ed | URL: https://education.south-carolina.gov
+  State: SOUTH-CAROLINA | Name: The Arc of South Carolina | URL: https://www.thearcsouth-carolina.org
+  State: SOUTH-DAKOTA | Name: South Dakota County Metadata | URL: https://www.south-dakota.gov
+  State: SOUTH-DAKOTA | Name: South Dakota Department of Education Special Ed | URL: https://education.south-dakota.gov
+  State: SOUTH-DAKOTA | Name: The Arc of South Dakota | URL: https://www.thearcsouth-dakota.org
+  State: TENNESSEE | Name: Tennessee Department of Education Special Ed | URL: https://education.tennessee.gov
+  State: TENNESSEE | Name: The Arc of Tennessee | URL: https://www.thearctennessee.org
+  State: TEXAS | Name: The Arc of Texas | URL: https://www.thearctexas.org
+  State: TEXAS | Name: The Arc of the Capital Area | URL: https://www.thearcofcapitalarea.org
+  State: UTAH | Name: Utah Department of Education Special Ed | URL: https://education.utah.gov
+  State: UTAH | Name: The Arc of Utah | URL: https://www.thearcutah.org
+  State: VERMONT | Name: The Arc of Vermont | URL: https://www.thearcvermont.org
+  State: VIRGINIA | Name: The Arc of Virginia | URL: https://www.thearcvirginia.org
+  State: WASHINGTON | Name: Washington Department of Education Special Ed | URL: https://education.washington.gov
+  State: WASHINGTON | Name: The Arc of Washington | URL: https://www.thearcwashington.org
+  State: WEST-VIRGINIA | Name: West Virginia County Metadata | URL: https://www.west-virginia.gov
+  State: WEST-VIRGINIA | Name: West Virginia Department of Education Special Ed | URL: https://education.west-virginia.gov
+  State: WEST-VIRGINIA | Name: The Arc of West Virginia | URL: https://www.thearcwest-virginia.org
+  State: WISCONSIN | Name: Wisconsin Department of Education Special Ed | URL: https://education.wisconsin.gov
+  State: WISCONSIN | Name: The Arc of Wisconsin | URL: https://www.thearcwisconsin.org
+  State: WYOMING | Name: Wyoming Department of Education Special Ed | URL: https://education.wyoming.gov
+  State: WYOMING | Name: The Arc of Wyoming | URL: https://www.thearcwyoming.org

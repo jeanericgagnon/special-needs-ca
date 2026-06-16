@@ -1,0 +1,13 @@
+{
+  "state_code": "FL",
+  "samples": [
+    {
+      "county": "miami-dade-fl",
+      "office": "Miami storefront"
+    },
+    {
+      "county": "baker-fl",
+      "office": "Duval hub mapping"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "state_id": "florida",
+  "state_slug": "florida",
+  "state_name": "Florida",
+  "state_code": "FL",
+  "county_id_suffix": "-fl",
+  "program_id_prefix": "fl-",
+  "fallback_id_patterns": [
+    "%-fl-fallback"
+  ],
+  "expected_counties": 67,
+  "priority_counties": [
+    "miami-dade-fl",
+    "broward-fl",
+    "palm-beach-fl",
+    "hillsborough-fl",
+    "orange-fl",
+    "pinellas-fl",
+    "duval-fl",
+    "lee-fl",
+    "polk-fl",
+    "brevard-fl",
+    "pasco-fl",
+    "seminole-fl",
+    "alachua-fl",
+    "leon-fl"
+  ],
+  "phase_sequence": [
+    "benefits_hhs",
+    "dd_idd",
+    "early_intervention",
+    "education_regional",
+    "district_replacements",
+    "clinics",
+    "forms_appeals_transition",
+    "trusted_nonprofits",
+    "provider_legal_review"
+  ],
+  "routing_labels": {
+    "medicaid_name": "Florida Medicaid",
+    "medicaid_agency": "Florida Department of Children and Families",
+    "dd_agency": "Agency for Persons with Disabilities",
+    "dd_intake_label": "APD Office",
+    "early_intervention_label": "Early Steps Part C",
+    "education_agency_label": "FDLRS Associate Centers",
+    "education_agency": "Florida Department of Education",
+    "special_education_support": "ESE Services"
+  },
+  "validation_expectations": {
+    "benefits_hhs_count": 69,
+    "dd_idd_count": 16,
+    "early_intervention_count": 15,
+    "education_regional_count": 33,
+    "district_replacements_count": 53,
+    "clinics_count": 14,
+    "forms_appeals_transition_count": 6,
+    "trusted_nonprofits_count": 20,
+    "provider_legal_review_count": 2
+  }
+}

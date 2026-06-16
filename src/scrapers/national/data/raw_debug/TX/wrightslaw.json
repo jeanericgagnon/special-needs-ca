@@ -1,0 +1,72 @@
+[
+  {
+    "id": "yp-practitionertx1",
+    "name": "Practitioner TX 1",
+    "state": "TX",
+    "city": "",
+    "phone": "555) 111-2000",
+    "email": "advocate1.tx@wrightslaw-help.org",
+    "website": "http://www.practitioner1tx.org",
+    "specialties": "General Advocacy",
+    "organization": "Practitioner TX 1 Law Firm",
+    "description": "Practitioner TX 1 Special Education Attorney Phone: (555) 111-2000 Email: advocate1.tx [at] wrightslaw-help.org Web: www.practitioner1tx.org Description: Practitioner 1 provides expert help with IEP and 504 plans in TX.",
+    "source": "wrightslaw",
+    "scraped_at": "2026-06-05T22:52:46.459Z"
+  },
+  {
+    "id": "yp-practitionertx2",
+    "name": "Practitioner TX 2",
+    "state": "TX",
+    "city": "",
+    "phone": "555) 111-2001",
+    "email": "attorney2.tx@wrightslaw-help.org",
+    "website": "http://www.practitioner2tx.org",
+    "specialties": "General Advocacy",
+    "organization": "Practitioner TX 2 Law Firm",
+    "description": "Practitioner TX 2 Special Education Advocate Phone: (555) 111-2001 Email: attorney2.tx | at | wrightslaw-help.org Web: www.practitioner2tx.org Description: Practitioner 2 provides expert help with IEP and 504 plans in TX.",
+    "source": "wrightslaw",
+    "scraped_at": "2026-06-05T22:52:46.517Z"
+  },
+  {
+    "id": "yp-practitionertx3",
+    "name": "Practitioner TX 3",
+    "state": "TX",
+    "city": "",
+    "phone": "555) 111-2002",
+    "email": "advocate3.tx@wrightslaw-help.org",
+    "website": "http://www.practitioner3tx.org",
+    "specialties": "General Advocacy",
+    "organization": "Independent Practice",
+    "description": "Practitioner TX 3 Special Education Advocate Phone: (555) 111-2002 Email: advocate3.tx [at] wrightslaw-help.org Web: www.practitioner3tx.org Description: Practitioner 3 provides expert help with IEP and 504 plans in TX.",
+    "source": "wrightslaw",
+    "scraped_at": "2026-06-05T22:52:46.569Z"
+  },
+  {
+    "id": "yp-practitionertx4",
+    "name": "Practitioner TX 4",
+    "state": "TX",
+    "city": "",
+    "phone": "555) 111-2003",
+    "email": "attorney4.tx@wrightslaw-help.org",
+    "website": "http://www.practitioner4tx.org",
+    "specialties": "General Advocacy",
+    "organization": "Practitioner TX 4 Law Firm",
+    "description": "Practitioner TX 4 Special Education Attorney Phone: (555) 111-2003 Email: attorney4.tx | at | wrightslaw-help.org Web: www.practitioner4tx.org Description: Practitioner 4 provides expert help with IEP and 504 plans in TX.",
+    "source": "wrightslaw",
+    "scraped_at": "2026-06-05T22:52:46.622Z"
+  },
+  {
+    "id": "yp-practitionertx5",
+    "name": "Practitioner TX 5",
+    "state": "TX",
+    "city": "",
+    "phone": "555) 111-2004",
+    "email": "advocate5.tx@wrightslaw-help.org",
+    "website": "http://www.practitioner5tx.org",
+    "specialties": "General Advocacy",
+    "organization": "Independent Practice",
+    "description": "Practitioner TX 5 Special Education Advocate Phone: (555) 111-2004 Email: advocate5.tx [at] wrightslaw-help.org Web: www.practitioner5tx.org Description: Practitioner 5 provides expert help with IEP and 504 plans in TX.",
+    "source": "wrightslaw",
+    "scraped_at": "2026-06-05T22:52:46.676Z"
+  }
+]

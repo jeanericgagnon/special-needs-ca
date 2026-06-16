@@ -1,0 +1,43 @@
+{
+  "state_id": "maine",
+  "state_slug": "maine",
+  "state_name": "Maine",
+  "state_code": "ME",
+  "county_id_suffix": "-me",
+  "program_id_prefix": "me-",
+  "fallback_id_patterns": [
+    "%-me-fallback"
+  ],
+  "expected_counties": 16,
+  "priority_counties": [],
+  "phase_sequence": [
+    "benefits_hhs",
+    "dd_idd",
+    "early_intervention",
+    "education_regional",
+    "district_replacements",
+    "clinics",
+    "forms_appeals_transition",
+    "trusted_nonprofits"
+  ],
+  "routing_labels": {
+    "medicaid_name": "Maine Medicaid",
+    "medicaid_agency": "Maine Department of Human Services",
+    "dd_agency": "Maine Developmental Services",
+    "dd_intake_label": "Intake Coordinator",
+    "early_intervention_label": "Early Intervention Coordinator",
+    "education_agency_label": "Regional Education Office",
+    "education_agency": "Maine Department of Education",
+    "special_education_support": "Special Education Support"
+  },
+  "validation_expectations": {
+    "benefits_hhs_count": 16,
+    "dd_idd_count": 0,
+    "early_intervention_count": 0,
+    "education_regional_count": 0,
+    "district_replacements_count": 0,
+    "clinics_count": 0,
+    "forms_appeals_transition_count": 0,
+    "trusted_nonprofits_count": 0
+  }
+}

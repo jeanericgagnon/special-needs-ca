@@ -1,0 +1,9 @@
+{
+  "state_code": "FL",
+  "mappings": [
+    {
+      "category": "Local Offices",
+      "table": "county_offices"
+    }
+  ]
+}
