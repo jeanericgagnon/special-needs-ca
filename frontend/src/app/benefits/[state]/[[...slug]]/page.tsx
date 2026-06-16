@@ -303,8 +303,8 @@ export default async function BenefitsCatchAll({ params }: Props) {
       notFound();
     }
     
-    // Find related advocates serving this program's general specialties
-    const allAdvocates = await getIepAdvocates();
+    // Find related advocates serving this program's general specialties (filtered by state)
+    const allAdvocates = await getIepAdvocates(undefined, stateData.id);
     
     // Sort and filter advocates to show relevant professionals
     const relatedAdvocates = allAdvocates

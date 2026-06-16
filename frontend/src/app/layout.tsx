@@ -3,7 +3,7 @@ import { cookies } from 'next/headers';
 import { verifyToken } from '@/lib/auth';
 import { logoutAction } from './auth-actions';
 import Link from 'next/link';
-import { HeartHandshake, User, LayoutDashboard, Search, LogOut, BookOpen, MapPin } from 'lucide-react';
+import { HeartHandshake, User, LayoutDashboard, Search, LogOut, BookOpen, MapPin, Compass } from 'lucide-react';
 import "./globals.css";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://ablefull.org';
@@ -56,6 +56,12 @@ export default async function RootLayout({
                 <Search size={16} />
                 <span>Find Benefits</span>
               </Link>
+
+              <Link href="/find-help" className="nav-link">
+                <Compass size={16} />
+                <span>Find Help</span>
+              </Link>
+
 
               <Link href="/benefits/programs" className="nav-link">
                 <BookOpen size={16} />

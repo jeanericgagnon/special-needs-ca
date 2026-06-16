@@ -36,8 +36,8 @@ export default async function AdvocatesDirectoryPage({ searchParams }: Props) {
   // 1. Fetch counties for filter dropdown
   const counties = await getCounties('california');
 
-  // 2. Fetch advocates (filter by county if selected)
-  const advocates = await getIepAdvocates(selectedCounty);
+  // 2. Fetch advocates (filter by county if selected, defaulting to California statewide if not)
+  const advocates = await getIepAdvocates(selectedCounty, 'california');
   const verifiedAdvocates = advocates.filter(adv => adv.verification_status === 'verified');
 
   // Get name of selected county

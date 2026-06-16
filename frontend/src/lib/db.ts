@@ -3122,7 +3122,7 @@ export async function getProgramsByKeywords(age: number, diagnosis: string, keyw
   }
 }
 
-export async function getIepAdvocates(countyId?: string): Promise<IepAdvocate[]> {
+export async function getIepAdvocates(countyId?: string, stateId?: string): Promise<IepAdvocate[]> {
   try {
     if (countyId) {
       return await navigatorDb.prepare(`
@@ -3130,6 +3130,14 @@ export async function getIepAdvocates(countyId?: string): Promise<IepAdvocate[]>
         JOIN iep_advocate_counties ac ON a.id = ac.iep_advocate_id
         WHERE ac.county_id = ?
       `).all(countyId) as IepAdvocate[];
+    }
+    if (stateId) {
+      return await navigatorDb.prepare(`
+        SELECT DISTINCT a.* FROM iep_advocates a
+        JOIN iep_advocate_counties ac ON a.id = ac.iep_advocate_id
+        JOIN counties c ON ac.county_id = c.id
+        WHERE c.state_id = ?
+      `).all(stateId) as IepAdvocate[];
     }
     return await navigatorDb.prepare('SELECT * FROM iep_advocates').all() as IepAdvocate[];
   } catch (err) {
