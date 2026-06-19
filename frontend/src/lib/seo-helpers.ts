@@ -32,12 +32,14 @@ export function constructMetadata({
   image = '/images/og-default.png',
   canonicalUrl,
   noIndex = false,
+  robots,
 }: {
   title: string;
   description: string;
   image?: string;
   canonicalUrl: string;
   noIndex?: boolean;
+  robots?: { index: boolean; follow: boolean };
 }): Metadata {
   return {
     title,
@@ -68,7 +70,7 @@ export function constructMetadata({
       images: [image.startsWith('http') ? image : `${BASE_URL}${image}`],
       creator: '@AblefullOrg',
     },
-    ...(noIndex ? { robots: { index: false, follow: true } } : {}),
+    ...(robots ? { robots } : noIndex ? { robots: { index: false, follow: true } } : {}),
   };
 }
 

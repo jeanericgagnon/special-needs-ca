@@ -2189,7 +2189,7 @@ export function getDynamicStateConfig(stateId: string, stateName: string, stateC
   }
 
   // Generate a programmatic fallback config using state_programs_map.json
-  const mapData = (stateProgramsMap as any)[stateCode.toUpperCase()] || {};
+  const mapData = (stateProgramsMap as Record<string, Record<string, { name?: string }>>)[stateCode.toUpperCase()] || {};
   const devServicesName = mapData.developmental_services?.name || `${stateName} Developmental Services`;
   const personalCareName = mapData.personal_care?.name || `${stateName} Personal Care Services`;
   const hcbsWaiversName = mapData.hcbs_waivers?.name || `${stateName} HCBS Waivers`;

@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
-import { getCounties, getCountyDetails, getProgramsForDiagnosis, getAllStates, County } from '@/lib/db';
+import { getCounties, getCountyDetails, getProgramsForDiagnosis, getAllStates, getLocalProviders, County, ResourceProvider, Program } from '@/lib/db';
 import { DIAGNOSES, slugifyDiagnosis } from '@/lib/diagnoses';
+import { evaluateSeoPolicy, shouldIncludeInSitemap, assertNoPlaceholderData } from '@/lib/seo-policy';
+import { NON_CA_VERIFIED_COUNTIES } from '@/lib/verifiedCounties';
 
 // Sitemap expansion batch configuration
 // 1 = Top 10 CA counties, 2 = Top 25 CA counties, 3 = All 58 CA counties, 4 = All CA + county x diagnosis leaves
@@ -18,42 +20,9 @@ const TOP_25_CA_COUNTIES = [
   'monterey', 'placer', 'san-luis-obispo', 'santa-cruz', 'merced'
 ];
 
-import { NON_CA_VERIFIED_COUNTIES } from '@/lib/verifiedCounties';
-
-// Strict quality gate helper for CA counties
-function passesCountyQualityGate(details: any): boolean {
-  if (!details) return false;
-  
-  // 1. Regional Center mapping exists
-  const hasRc = details.regionalCenters && details.regionalCenters.length > 0;
-  
-  // 2. SELPA mapping exists
-  const hasSelpa = details.selpas && details.selpas.length > 0;
-  
-  // 3. IHSS office exists (program_id = 'ihss-for-children')
-  const hasIhss = details.countyOffices && details.countyOffices.some((o: any) => o.program_id === 'ihss-for-children');
-  
-  // 4. Medi-Cal office exists (program_id = 'medi-cal-for-kids-and-teens')
-  const hasMediCal = details.countyOffices && details.countyOffices.some((o: any) => o.program_id === 'medi-cal-for-kids-and-teens');
-  
-  // 5. CCS office exists (program_id = 'california-childrens-services')
-  const hasCcs = details.countyOffices && details.countyOffices.some((o: any) => o.program_id === 'california-childrens-services');
-  
-  // 6. At least one school district exists
-  const hasDistrict = details.schoolDistricts && details.schoolDistricts.length > 0;
-  
-  // 7. At least one nonprofit organization exists (Optional for rural counties)
-  const hasNonprofit = details.localOrganizations && details.localOrganizations.length > 0;
-
-  // 8. Trust/source metadata exists (verification_status and data_origin are not null on offices)
-  const hasMetadata = details.countyOffices && details.countyOffices.every((o: any) => o.verification_status && o.data_origin);
-
-  return !!(hasRc && hasSelpa && hasIhss && hasMediCal && hasCcs && hasDistrict && hasMetadata);
-}
-
 export async function GET() {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ablefull.org';
-  const today = '2026-06-08';
+  const today = '2026-06-19';
 
   let allCounties: County[] = [];
   try {
@@ -66,43 +35,52 @@ export async function GET() {
     ];
   }
 
-  // Pre-load CA county details
-  const countyDetailsMap = new Map();
+  // Pre-load county details & local providers
+  const countyDetailsMap = new Map<string, Awaited<ReturnType<typeof getCountyDetails>>>();
+  const countyProvidersMap = new Map<string, ResourceProvider[]>();
   for (const c of allCounties) {
-    if (c.state_id === 'california') {
-      try {
-        const details = await getCountyDetails(c.id);
-        if (details) {
-          countyDetailsMap.set(c.id, details);
-        }
-      } catch (e) {
-        console.error(`Failed to fetch details for county ${c.id}:`, e);
+    try {
+      const details = await getCountyDetails(c.id);
+      if (details) {
+        countyDetailsMap.set(c.id, details);
       }
+      const providers = await getLocalProviders(c.id);
+      countyProvidersMap.set(c.id, providers || []);
+    } catch (e) {
+      console.error(`Failed to fetch details/providers for county ${c.id}:`, e);
     }
   }
 
-  // Filter counties based on SITEMAP_BATCH configuration & Quality Gates
+  // Filter counties based on SITEMAP_BATCH configuration & centralized SEO policy
   const counties = allCounties.filter(c => {
-    const isCa = c.state_id === 'california';
-    
-    // Check if it's a verified non-CA county
-    if (!isCa) {
-      return NON_CA_VERIFIED_COUNTIES.includes(c.id);
-    }
-
-    // Apply strict quality gate for CA counties
+    const stateId = c.state_id || 'california';
     const details = countyDetailsMap.get(c.id);
-    const passesGate = passesCountyQualityGate(details);
-    if (!passesGate) return false;
+    const isCaCounty = stateId === 'california' && ['los-angeles', 'orange', 'sacramento', 'san-francisco'].includes(c.id);
+    const isNonCa = NON_CA_VERIFIED_COUNTIES.includes(c.id);
+    const hasRequiredContactInfo = !!(details?.countyOffices && details.countyOffices.length > 0);
+    const hasNoPlaceholderData = details ? assertNoPlaceholderData(JSON.stringify(details)) : false;
+
+    const policy = evaluateSeoPolicy({
+      routeType: 'county-hub',
+      stateId,
+      countyId: c.id,
+      entityCount: details?.schoolDistricts?.length || 0,
+      hasOfficialSource: !!details?.website,
+      lastVerifiedDate: details?.regionalCenters?.[0]?.last_verified_date || today,
+      confidenceScore: (isCaCounty || isNonCa) ? 0.9 : 0.4,
+      hasRequiredContactInfo,
+      hasNoPlaceholderData
+    });
+
+    if (!shouldIncludeInSitemap(policy)) return false;
 
     // Apply SITEMAP_BATCH filters
-    if (SITEMAP_BATCH === 1) {
+    if (SITEMAP_BATCH === 1 && stateId === 'california') {
       return TOP_10_CA_COUNTIES.includes(c.id);
-    } else if (SITEMAP_BATCH === 2) {
+    } else if (SITEMAP_BATCH === 2 && stateId === 'california') {
       return TOP_25_CA_COUNTIES.includes(c.id);
     }
     
-    // Batch 3 and 4 include all 58 CA counties that pass quality gates
     return true;
   });
 
@@ -110,7 +88,7 @@ export async function GET() {
   const diagnosesSlugs = coreDiagnoses;
 
   // Pre-load programs matches map for fast checking
-  const diagnosisProgramsMap = new Map();
+  const diagnosisProgramsMap = new Map<string, Program[]>();
   for (const slug of coreDiagnoses) {
     try {
       const progs = await getProgramsForDiagnosis(slug);
@@ -149,40 +127,62 @@ export async function GET() {
   // 2. Diagnosis directories (/benefits/[state]/[diagnosis])
   states.forEach(st => {
     diagnosesSlugs.forEach(diag => {
-      xmlUrls += `  <url>
+      const policy = evaluateSeoPolicy({
+        routeType: 'condition-hub',
+        stateId: st.id,
+        diagnosisId: diag,
+        confidenceScore: 0.9,
+        hasOfficialSource: true,
+        lastVerifiedDate: today,
+        hasNoPlaceholderData: true
+      });
+
+      if (shouldIncludeInSitemap(policy)) {
+        xmlUrls += `  <url>
     <loc>${baseUrl}/benefits/${st.id}/${diag}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>\n`;
+      }
     });
   });
 
   // 3. County x Diagnosis leaves (/benefits/[state]/[diagnosis]/[county])
-  // Only generated if SITEMAP_BATCH is 4 (county x diagnosis expansion)
   if (SITEMAP_BATCH >= 4) {
     counties.forEach(county => {
       const stateId = county.state_id || 'california';
       const countyDetails = countyDetailsMap.get(county.id);
+      const providers = countyProvidersMap.get(county.id) || [];
       if (stateId === 'california' && !countyDetails) return;
 
       diagnosesSlugs.forEach(diag => {
-        // Do not index Texas (or other non-California) county x diagnosis pages yet
-        if (!['california', 'texas', 'florida', 'pennsylvania', 'new-york', 'ohio', 'illinois', 'georgia', 'maryland', 'utah', 'new-mexico', 'oregon', 'washington', 'idaho', 'south-carolina', 'north-dakota', 'west-virginia', 'montana', 'colorado', 'louisiana', 'south-dakota', 'alabama', 'wisconsin', 'arkansas', 'oklahoma', 'north-carolina', 'mississippi', 'michigan', 'minnesota', 'indiana', 'nebraska', 'tennessee', 'virginia', 'arizona', 'alaska', 'connecticut', 'delaware', 'hawaii', 'iowa', 'kansas', 'kentucky', 'maine', 'massachusetts', 'missouri', 'nevada', 'new-hampshire', 'new-jersey', 'rhode-island', 'vermont', 'wyoming'].includes(stateId)) return;
-
         // Quality Gate: Check at least one source-backed program match exists
         const matchingPrograms = diagnosisProgramsMap.get(diag) || [];
         const hasProgramMatch = matchingPrograms.length > 0;
         if (!hasProgramMatch) return;
 
-        // Quality Gate: Check county passes quality gate (already verified in count loop above, but double check)
-        if (stateId === 'california' && !passesCountyQualityGate(countyDetails)) return;
+        const playgrounds = providers.filter((p) => p.categories === 'playground');
+        const clinics = providers.filter((p) => p.categories === 'therapy-clinic');
+        const groups = providers.filter((p) => p.categories === 'support-group');
+        const hasRealLocalAssets = (playgrounds.length > 0 || clinics.length > 0 || groups.length > 0) || (county.id === 'los-angeles' || county.id === 'orange');
+        const hasRequiredContactInfo = !!(countyDetails?.countyOffices && countyDetails.countyOffices.length > 0);
+        const hasNoPlaceholderData = countyDetails ? assertNoPlaceholderData(JSON.stringify(countyDetails)) : false;
 
-        // Gate: Only index CA county x diagnosis if they have enough unique content (los-angeles and orange)
-        if (stateId === 'california') {
-          const isHighFidelity = county.id === 'los-angeles' || county.id === 'orange';
-          if (!isHighFidelity) return;
-        }
+        const policy = evaluateSeoPolicy({
+          routeType: 'county-condition',
+          stateId,
+          countyId: county.id,
+          diagnosisId: diag,
+          hasRealLocalAssets,
+          hasRequiredContactInfo,
+          hasNoPlaceholderData,
+          confidenceScore: 0.9,
+          hasOfficialSource: true,
+          lastVerifiedDate: today
+        });
+
+        if (!shouldIncludeInSitemap(policy)) return;
 
         xmlUrls += `  <url>
       <loc>${baseUrl}/benefits/${stateId}/${diag}/${county.id}</loc>

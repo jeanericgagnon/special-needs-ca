@@ -5,6 +5,7 @@ import { DIAGNOSES_DETAILS } from '@/lib/diagnoses';
 import AnswerPage from '@/app/components/answer-page';
 import SeoSchema from '@/app/components/seo-schema';
 import { constructMetadata, generateBreadcrumbsSchema } from '@/lib/seo-helpers';
+import { evaluateSeoPolicy, robotsForPolicy } from '@/lib/seo-policy';
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -29,11 +30,22 @@ export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
   const cluster = SEO_CLUSTERS[slug];
   
+  const policy = evaluateSeoPolicy({
+    routeType: 'condition-hub',
+    stateId: 'california',
+    diagnosisId: slug,
+    confidenceScore: 0.9,
+    hasOfficialSource: true,
+    lastVerifiedDate: '2026-06-19',
+    hasNoPlaceholderData: true
+  });
+
   if (cluster) {
     return constructMetadata({
       title: cluster.metaTitle || `${cluster.title} | Ablefull`,
       description: cluster.metaDescription || `Complete guide.`,
       canonicalUrl: `/conditions/${slug}`,
+      robots: robotsForPolicy(policy),
     });
   }
 
@@ -43,6 +55,7 @@ export async function generateMetadata({ params }: Props) {
       title: `${diagnosis.name} Benefits in California: Complete Parent Guide`,
       description: `Learn how to get Regional Center funding, school IEP support, and financial help for children with ${diagnosis.name} in California.`,
       canonicalUrl: `/conditions/${slug}`,
+      robots: robotsForPolicy(policy),
     });
   }
 

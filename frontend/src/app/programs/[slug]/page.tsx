@@ -1,9 +1,10 @@
 import { notFound } from 'next/navigation';
 import { SEO_CLUSTERS } from '@/lib/seo-data';
-import { getCounties, getProgramBySlug, getAllPrograms, getStateByIdOrCode } from '@/lib/db';
+import { getCounties, getProgramBySlug, getAllPrograms, getStateByIdOrCode, navigatorDb, getProgramApplicationSteps, getProgramDocumentRequirements } from '@/lib/db';
 import AnswerPage from '@/app/components/answer-page';
 import SeoSchema from '@/app/components/seo-schema';
 import { constructMetadata, generateBreadcrumbsSchema } from '@/lib/seo-helpers';
+import { evaluateSeoPolicy, robotsForPolicy, assertNoPlaceholderData } from '@/lib/seo-policy';
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -36,26 +37,55 @@ export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
   const cluster = SEO_CLUSTERS[slug];
   
+  const program = await getProgramBySlug(slug);
+  let hasEligibilityRules = false;
+  let hasApplicationSteps = false;
+  let hasDocuments = false;
+  let hasNoPlaceholderData = true;
+  let confidenceScore = 0.5;
+  let stateId = 'california';
+
+  if (program) {
+    stateId = program.state_id || 'california';
+    const progIdStr = String(program.id);
+    const ruleCount = await navigatorDb.prepare('SELECT COUNT(*) as count FROM program_eligibility_rules WHERE program_id = ?').get(progIdStr) as { count: number } | undefined;
+    hasEligibilityRules = (ruleCount?.count || 0) > 0;
+    hasApplicationSteps = (await getProgramApplicationSteps(progIdStr)).length > 0;
+    hasDocuments = (await getProgramDocumentRequirements(progIdStr)).length > 0;
+    hasNoPlaceholderData = assertNoPlaceholderData(JSON.stringify(program));
+    confidenceScore = (program.confidence_score || 5.0) / 5.0;
+  }
+
+  const policy = evaluateSeoPolicy({
+    routeType: 'program-guide',
+    stateId,
+    programId: slug,
+    hasOfficialSource: !!program?.source_url,
+    lastVerifiedDate: program?.last_verified_date || '2026-06-19',
+    confidenceScore,
+    hasEligibilityRules,
+    hasApplicationSteps,
+    hasDocuments,
+    hasNoPlaceholderData
+  });
+
   if (cluster) {
-    const isIndexed = ['california', 'texas', 'florida'].includes(slug);
     return constructMetadata({
       title: cluster.metaTitle || `${cluster.title} | Ablefull`,
       description: cluster.metaDescription || `Eligibility and application guide.`,
       canonicalUrl: `/programs/${slug}`,
-      noIndex: !isIndexed,
+      robots: robotsForPolicy(policy),
     });
   }
 
-  const program = await getProgramBySlug(slug);
   if (program) {
     const stateData = program.state_id ? await getStateByIdOrCode(program.state_id) : null;
     const stateName = stateData ? stateData.name : 'California';
-    const isIndexed = ['california', 'texas', 'florida'].includes(program.state_id || '');
     return constructMetadata({
       title: `${program.program_name} | ${stateName} Eligibility & Application Guide`,
       description: `Learn about eligibility, income limits, and how to apply for ${program.program_name} in ${stateName}.`,
       canonicalUrl: `/programs/${slug}`,
-      noIndex: !isIndexed,
+      robots: robotsForPolicy(policy),
     });
   }
 

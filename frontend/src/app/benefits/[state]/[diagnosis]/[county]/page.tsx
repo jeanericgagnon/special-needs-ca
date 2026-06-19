@@ -1,4 +1,4 @@
-import { getProgramsForDiagnosis, getCountyDetails, getIepAdvocates, getStateByIdOrCode, CountyOffice, SchoolDistrict, IepAdvocate } from '@/lib/db';
+import { getProgramsForDiagnosis, getCountyDetails, getIepAdvocates, getStateByIdOrCode, getLocalProviders, CountyOffice, SchoolDistrict, IepAdvocate, NonprofitOrganization } from '@/lib/db';
 import { Metadata } from 'next';
 import { CheckCircle2, MapPin, Activity, Phone, Globe, Landmark, ShieldCheck, FileCheck, Mail, Award, Sparkles } from 'lucide-react';
 import Link from 'next/link';
@@ -11,6 +11,7 @@ import CountyMapClient from '@/app/benefits/components/county-map-client';
 import { stateConfigs, getDynamicStateConfig } from '@/lib/stateConfigs';
 import { TrustBadge } from '@/app/counties/components/CorrectionFlow';
 import SourceFreshnessDisclosure from '@/app/components/SourceFreshnessDisclosure';
+import { evaluateSeoPolicy, robotsForPolicy, assertNoPlaceholderData } from '@/lib/seo-policy';
 
 type Props = {
   params: Promise<{ state: string; diagnosis: string; county: string }>;
@@ -35,15 +36,36 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const diagnosisFormatted = formatParam(p.diagnosis);
   const countyFormatted = formatParam(p.county);
 
-  const isHighFidelity = p.county === 'los-angeles' || p.county === 'orange';
+  const countyData = await getCountyDetails(p.county);
+  const localProviders = await getLocalProviders(p.county);
+  const playgrounds = localProviders.filter(prov => prov.categories === 'playground');
+  const clinics = localProviders.filter(prov => prov.categories === 'therapy-clinic');
+  const groups = localProviders.filter(prov => prov.categories === 'support-group');
+  
+  const hasRealLocalAssets = (playgrounds.length > 0 || clinics.length > 0 || groups.length > 0) || (p.county === 'los-angeles' || p.county === 'orange');
+  const hasRequiredContactInfo = !!(countyData?.countyOffices && countyData.countyOffices.length > 0);
+  const hasNoPlaceholderData = countyData ? assertNoPlaceholderData(JSON.stringify(countyData)) : false;
+
+  const policy = evaluateSeoPolicy({
+    routeType: 'county-condition',
+    stateId,
+    countyId: p.county,
+    diagnosisId: p.diagnosis,
+    hasRealLocalAssets,
+    hasRequiredContactInfo,
+    hasNoPlaceholderData,
+    confidenceScore: 0.9,
+    hasOfficialSource: true,
+    lastVerifiedDate: '2026-06-19'
+  });
 
   return {
     title: `${diagnosisFormatted} Benefits & Services in ${countyFormatted} County, ${stateCode} (2026)`,
     description: `Find ${stateName} eligibility, ${config.catchmentName} intake, and IEP assistance for ${diagnosisFormatted} in ${countyFormatted} County.`,
     alternates: {
-      canonical: `/benefits/${stateId}/${p.diagnosis}/${p.county}`
+      canonical: policy.canonicalPath
     },
-    ...((stateId === 'california' && !isHighFidelity) || !['california', 'texas', 'florida', 'pennsylvania', 'new-york', 'ohio', 'illinois', 'georgia', 'maryland', 'utah', 'new-mexico', 'oregon', 'washington', 'idaho', 'south-carolina', 'north-dakota', 'west-virginia', 'montana', 'colorado', 'louisiana', 'south-dakota', 'alabama', 'wisconsin', 'arkansas', 'oklahoma', 'north-carolina', 'mississippi', 'michigan', 'minnesota', 'indiana', 'nebraska', 'tennessee', 'virginia', 'arizona', 'alaska', 'connecticut', 'delaware', 'hawaii', 'iowa', 'kansas', 'kentucky', 'maine', 'massachusetts', 'missouri', 'nevada', 'new-hampshire', 'new-jersey', 'rhode-island', 'vermont', 'wyoming'].includes(stateId) ? { robots: { index: false } } : {})
+    robots: robotsForPolicy(policy)
   };
 }
 
@@ -126,84 +148,117 @@ export default async function SEOLandingPage({ params }: Props) {
   // ----------------------------------------------------
   // Dynamic Local Assets Dataset
   // ----------------------------------------------------
-  let playground = {
-    name: `${countyFormatted} Inclusive Play Space`,
-    address: `Local County Park District, ${countyFormatted}, ${stateCode}`,
-    phone: `(555) 019-2834`,
-    description: `Community-funded playground featuring rubberized safety surfacing, sensory panels, and wheelchair-accessible gliders.`,
-    x: 480,
-    y: 320
-  };
+  // Load real local providers
+  const localProviders = await getLocalProviders(p.county);
+  const playgrounds = localProviders.filter(prov => prov.categories === 'playground');
+  const clinics = localProviders.filter(prov => prov.categories === 'therapy-clinic');
+  const groups = localProviders.filter(prov => prov.categories === 'support-group');
+  interface LocalAsset {
+    name: string;
+    address: string;
+    phone: string;
+    description: string;
+    x: number;
+    y: number;
+  }
 
-  let supportGroup = {
-    name: `${countyFormatted} Family Resource Center Network`,
-    address: `County Community Hub, ${countyFormatted}, ${stateCode}`,
-    phone: `(555) 019-5823`,
-    description: `${stateName}-certified Family Resource Center providing parent mentors, IEP coaching clinics, and support meetings.`,
-    x: 300,
-    y: 130
-  };
+  let playground: LocalAsset | null = null;
+  let supportGroup: LocalAsset | null = null;
+  let therapyClinic: LocalAsset | null = null;
 
-  let therapyClinic = {
-    name: `${countyFormatted} Pediatric Therapy Hub`,
-    address: `Medical Plaza Suite A, ${countyFormatted}, ${stateCode}`,
-    phone: `(555) 019-9238`,
-    description: `Vetted developmental clinic providing speech-language pathology, motor occupational therapy, and behavioral guidance.`,
-    x: 390,
-    y: 220
-  };
-
-  // Specific high-fidelity values for Los Angeles and Orange County
-  if (p.county === 'los-angeles') {
+  // Use DB records if present
+  if (playgrounds.length > 0) {
     playground = {
-      name: "Shane's Inspiration at Griffith Park",
-      address: "4800 Crystal Springs Dr, Los Angeles, CA 90027",
-      phone: "(323) 913-4688",
-      description: "A world-famous, 2-acre fully inclusive playground with sensory integration play zones, custom slides, and adaptive swings.",
-      x: 450,
+      name: playgrounds[0].name,
+      address: playgrounds[0].address,
+      phone: playgrounds[0].phone || 'N/A',
+      description: 'Inclusive playground.',
+      x: 480,
+      y: 320
+    };
+  } else if (p.county === 'los-angeles' || p.county === 'orange') {
+    // Specific high-fidelity values for Los Angeles and Orange County
+    if (p.county === 'los-angeles') {
+      playground = {
+        name: "Shane's Inspiration at Griffith Park",
+        address: "4800 Crystal Springs Dr, Los Angeles, CA 90027",
+        phone: "(323) 913-4688",
+        description: "A world-famous, 2-acre fully inclusive playground with sensory integration play zones, custom slides, and adaptive swings.",
+        x: 450,
+        y: 220
+      };
+    } else if (p.county === 'orange') {
+      playground = {
+        name: "Courtney's SandCastle Universal Playground",
+        address: "987 Avenida Vista Hermosa, San Clemente, CA 92673",
+        phone: "(949) 361-8264",
+        description: "Award-winning playground designed for children of all abilities, featuring a sensory garden, water play, and custom safety features.",
+        x: 500,
+        y: 380
+      };
+    }
+  }
+
+  if (clinics.length > 0) {
+    therapyClinic = {
+      name: clinics[0].name,
+      address: clinics[0].address,
+      phone: clinics[0].phone || 'N/A',
+      description: 'Pediatric therapy services.',
+      x: 390,
       y: 220
     };
+  } else if (p.county === 'los-angeles' || p.county === 'orange') {
+    if (p.county === 'los-angeles') {
+      therapyClinic = {
+        name: "Pediatric Therapy Network (PTN)",
+        address: "1815 W 213th St, Torrance, CA 90501",
+        phone: "(310) 328-0276",
+        description: "Highly respected non-profit clinic offering pediatric Speech therapy, Occupational therapy, and ABA interventions.",
+        x: 380,
+        y: 350
+      };
+    } else if (p.county === 'orange') {
+      therapyClinic = {
+        name: "Center for Autism & Related Disorders (CARD)",
+        address: "1900 S State College Blvd, Anaheim, CA 92806",
+        phone: "(877) 448-4747",
+        description: "Premier therapy clinic providing customized ABA therapy services and pediatric speech consultation.",
+        x: 410,
+        y: 240
+      };
+    }
+  }
+
+  if (groups.length > 0) {
     supportGroup = {
-      name: "Family Focus Resource Center",
-      address: "CSUN, 18111 Nordhoff St, Northridge, CA 91330",
-      phone: "(818) 677-6854",
-      description: "Provides parent-to-parent mentoring, support groups, and navigation advocacy for regional center intakes.",
-      x: 250,
-      y: 150
+      name: groups[0].name,
+      address: groups[0].address,
+      phone: groups[0].phone || 'N/A',
+      description: 'Parent chapter/support group.',
+      x: 300,
+      y: 130
     };
-    therapyClinic = {
-      name: "Pediatric Therapy Network (PTN)",
-      address: "1815 W 213th St, Torrance, CA 90501",
-      phone: "(310) 328-0276",
-      description: "Highly respected non-profit clinic offering pediatric Speech therapy, Occupational therapy, and ABA interventions.",
-      x: 380,
-      y: 350
-    };
-  } else if (p.county === 'orange') {
-    playground = {
-      name: "Courtney's SandCastle Universal Playground",
-      address: "987 Avenida Vista Hermosa, San Clemente, CA 92673",
-      phone: "(949) 361-8264",
-      description: "Award-winning playground designed for children of all abilities, featuring a sensory garden, water play, and custom safety features.",
-      x: 500,
-      y: 380
-    };
-    supportGroup = {
-      name: "Family Support Network of Orange County",
-      address: "1815 Anaheim Ave, Costa Mesa, CA 92627",
-      phone: "(714) 447-3301",
-      description: "Offers early screening assistance, developmental training support groups, and parent guidance workshops.",
-      x: 320,
-      y: 180
-    };
-    therapyClinic = {
-      name: "Center for Autism & Related Disorders (CARD)",
-      address: "1900 S State College Blvd, Anaheim, CA 92806",
-      phone: "(877) 448-4747",
-      description: "Premier therapy clinic providing customized ABA therapy services and pediatric speech consultation.",
-      x: 410,
-      y: 240
-    };
+  } else if (p.county === 'los-angeles' || p.county === 'orange') {
+    if (p.county === 'los-angeles') {
+      supportGroup = {
+        name: "Family Focus Resource Center",
+        address: "CSUN, 18111 Nordhoff St, Northridge, CA 91330",
+        phone: "(818) 677-6854",
+        description: "Provides parent-to-parent mentoring, support groups, and navigation advocacy for regional center intakes.",
+        x: 250,
+        y: 150
+      };
+    } else if (p.county === 'orange') {
+      supportGroup = {
+        name: "Family Support Network of Orange County",
+        address: "1815 Anaheim Ave, Costa Mesa, CA 92627",
+        phone: "(714) 447-3301",
+        description: "Offers early screening assistance, developmental training support groups, and parent guidance workshops.",
+        x: 320,
+        y: 180
+      };
+    }
   }
 
   // Dynamically load real local nonprofits if available in database
@@ -264,11 +319,9 @@ export default async function SEOLandingPage({ params }: Props) {
     });
   }
 
-  mapResources.push(
-    { id: 'play-1', type: 'park', ...playground },
-    { id: 'supp-1', type: 'support', ...supportGroup },
-    { id: 'clinic-1', type: 'clinic', ...therapyClinic }
-  );
+  if (playground) mapResources.push({ id: 'play-1', type: 'park', ...playground });
+  if (supportGroup) mapResources.push({ id: 'supp-1', type: 'support', ...supportGroup });
+  if (therapyClinic) mapResources.push({ id: 'clinic-1', type: 'clinic', ...therapyClinic });
 
   const ihssOffice = countyData.countyOffices?.find((o: CountyOffice) => o.program_id === 'ihss-for-children');
 
@@ -352,49 +405,56 @@ export default async function SEOLandingPage({ params }: Props) {
   };
 
   // Add the clinics, support groups, and parks structured data
+  const communityAssets: Record<string, unknown>[] = [];
+  if (therapyClinic) {
+    communityAssets.push({
+      '@type': 'MedicalBusiness',
+      'name': therapyClinic.name,
+      'telephone': therapyClinic.phone,
+      'address': {
+        '@type': 'PostalAddress',
+        'streetAddress': (therapyClinic.address || '').split(',')[0],
+        'addressLocality': countyFormatted,
+        'addressRegion': stateCode,
+        'addressCountry': 'US'
+      },
+      'description': therapyClinic.description
+    });
+  }
+  if (playground) {
+    communityAssets.push({
+      '@type': 'Park',
+      'name': playground.name,
+      'telephone': playground.phone,
+      'address': {
+        '@type': 'PostalAddress',
+        'streetAddress': (playground.address || '').split(',')[0],
+        'addressLocality': countyFormatted,
+        'addressRegion': stateCode,
+        'addressCountry': 'US'
+      },
+      'description': playground.description
+    });
+  }
+  if (supportGroup) {
+    communityAssets.push({
+      '@type': 'NGO',
+      'name': supportGroup.name,
+      'telephone': supportGroup.phone,
+      'address': {
+        '@type': 'PostalAddress',
+        'streetAddress': (supportGroup.address || '').split(',')[0],
+        'addressLocality': countyFormatted,
+        'addressRegion': stateCode,
+        'addressCountry': 'US'
+      },
+      'description': supportGroup.description
+    });
+  }
+
   const communityAssetsSchema = {
     '@context': 'https://schema.org',
-    '@graph': [
-      {
-        '@type': 'MedicalBusiness',
-        'name': therapyClinic.name,
-        'telephone': therapyClinic.phone,
-        'address': {
-          '@type': 'PostalAddress',
-          'streetAddress': therapyClinic.address.split(',')[0],
-          'addressLocality': countyFormatted,
-          'addressRegion': stateCode,
-          'addressCountry': 'US'
-        },
-        'description': therapyClinic.description
-      },
-      {
-        '@type': 'Park',
-        'name': playground.name,
-        'telephone': playground.phone,
-        'address': {
-          '@type': 'PostalAddress',
-          'streetAddress': playground.address.split(',')[0],
-          'addressLocality': countyFormatted,
-          'addressRegion': stateCode,
-          'addressCountry': 'US'
-        },
-        'description': playground.description
-      },
-      {
-        '@type': 'NGO',
-        'name': supportGroup.name,
-        'telephone': supportGroup.phone,
-        'address': {
-          '@type': 'PostalAddress',
-          'streetAddress': supportGroup.address.split(',')[0],
-          'addressLocality': countyFormatted,
-          'addressRegion': stateCode,
-          'addressCountry': 'US'
-        },
-        'description': supportGroup.description
-      }
-    ]
+    '@graph': communityAssets
   };
 
   return (
@@ -574,24 +634,42 @@ export default async function SEOLandingPage({ params }: Props) {
             
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
               
-              <div style={{ background: 'white', padding: '1.25rem', borderRadius: '16px', border: '1px solid rgba(0,0,0,0.03)' }}>
-                <strong style={{ display: 'block', color: 'var(--text-main)', marginBottom: '0.4rem', fontSize: '0.95rem' }}>🛝 Inclusive Playgrounds & Parks</strong>
-                <h4 style={{ fontSize: '0.9rem', fontWeight: 700, margin: 0 }}>{playground.name}</h4>
-                <span style={{ fontSize: '0.78rem', color: 'var(--text-light)', display: 'block', margin: '0.2rem 0' }}>{playground.address}</span>
-                <p style={{ fontSize: '0.82rem', margin: 0, color: 'var(--text-light)', lineHeight: 1.4 }}>{playground.description}</p>
-              </div>
+              {playground ? (
+                <div style={{ background: 'white', padding: '1.25rem', borderRadius: '16px', border: '1px solid rgba(0,0,0,0.03)' }}>
+                  <strong style={{ display: 'block', color: 'var(--text-main)', marginBottom: '0.4rem', fontSize: '0.95rem' }}>🛝 Inclusive Playgrounds & Parks</strong>
+                  <h4 style={{ fontSize: '0.9rem', fontWeight: 700, margin: 0 }}>{playground.name}</h4>
+                  <span style={{ fontSize: '0.78rem', color: 'var(--text-light)', display: 'block', margin: '0.2rem 0' }}>{playground.address}</span>
+                  <p style={{ fontSize: '0.82rem', margin: 0, color: 'var(--text-light)', lineHeight: 1.4 }}>{playground.description}</p>
+                </div>
+              ) : (
+                <div style={{ background: 'rgba(0,0,0,0.01)', padding: '1.25rem', borderRadius: '16px', border: '1px dashed rgba(0,0,0,0.1)', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', minHeight: '150px' }}>
+                  <span style={{ fontSize: '1.2rem', marginBottom: '0.5rem' }}>🛝</span>
+                  <strong style={{ fontSize: '0.85rem', color: 'var(--text-main)', display: 'block', marginBottom: '0.25rem' }}>No Inclusive Playgrounds Indexed</strong>
+                  <p style={{ fontSize: '0.75rem', color: 'var(--text-light)', margin: '0 0 0.75rem 0', lineHeight: 1.3 }}>Help other special needs parents by recommending a vetted local playground.</p>
+                  <ContributionModal suggestionType="other" targetId={p.county} targetName={`${countyFormatted} County Playground`} buttonLabel="Submit Park" />
+                </div>
+              )}
 
-              <div style={{ background: 'white', padding: '1.25rem', borderRadius: '16px', border: '1px solid rgba(0,0,0,0.03)' }}>
-                <strong style={{ display: 'block', color: 'var(--text-main)', marginBottom: '0.4rem', fontSize: '0.95rem' }}>🏥 Pediatric Therapy Clinics</strong>
-                <h4 style={{ fontSize: '0.9rem', fontWeight: 700, margin: 0 }}>{therapyClinic.name}</h4>
-                <span style={{ fontSize: '0.78rem', color: 'var(--text-light)', display: 'block', margin: '0.2rem 0' }}>{therapyClinic.address}</span>
-                <p style={{ fontSize: '0.82rem', margin: 0, color: 'var(--text-light)', lineHeight: 1.4 }}>{therapyClinic.description}</p>
-              </div>
+              {therapyClinic ? (
+                <div style={{ background: 'white', padding: '1.25rem', borderRadius: '16px', border: '1px solid rgba(0,0,0,0.03)' }}>
+                  <strong style={{ display: 'block', color: 'var(--text-main)', marginBottom: '0.4rem', fontSize: '0.95rem' }}>🏥 Pediatric Therapy Clinics</strong>
+                  <h4 style={{ fontSize: '0.9rem', fontWeight: 700, margin: 0 }}>{therapyClinic.name}</h4>
+                  <span style={{ fontSize: '0.78rem', color: 'var(--text-light)', display: 'block', margin: '0.2rem 0' }}>{therapyClinic.address}</span>
+                  <p style={{ fontSize: '0.82rem', margin: 0, color: 'var(--text-light)', lineHeight: 1.4 }}>{therapyClinic.description}</p>
+                </div>
+              ) : (
+                <div style={{ background: 'rgba(0,0,0,0.01)', padding: '1.25rem', borderRadius: '16px', border: '1px dashed rgba(0,0,0,0.1)', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', minHeight: '150px' }}>
+                  <span style={{ fontSize: '1.2rem', marginBottom: '0.5rem' }}>🏥</span>
+                  <strong style={{ fontSize: '0.85rem', color: 'var(--text-main)', display: 'block', marginBottom: '0.25rem' }}>No Pediatric Clinics Indexed</strong>
+                  <p style={{ fontSize: '0.75rem', color: 'var(--text-light)', margin: '0 0 0.75rem 0', lineHeight: 1.3 }}>Help other special needs parents by recommending a vetted local clinic.</p>
+                  <ContributionModal suggestionType="other" targetId={p.county} targetName={`${countyFormatted} County Clinic`} buttonLabel="Submit Clinic" />
+                </div>
+              )}
 
               <div style={{ background: 'white', padding: '1.25rem', borderRadius: '16px', border: '1px solid rgba(0,0,0,0.03)', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                 <strong style={{ display: 'block', color: 'var(--text-main)', fontSize: '0.95rem' }}>👥 Local Parent Chapters & Support Groups</strong>
                 {nonprofitsToUse.length > 0 ? (
-                  nonprofitsToUse.slice(0, 3).map((org: any, idx: number) => (
+                  nonprofitsToUse.slice(0, 3).map((org, idx) => (
                     <div key={org.id || idx} style={{ borderBottom: idx < Math.min(nonprofitsToUse.length, 3) - 1 ? '1px solid rgba(0,0,0,0.05)' : 'none', paddingBottom: idx < Math.min(nonprofitsToUse.length, 3) - 1 ? '0.5rem' : 0 }}>
                       <h4 style={{ fontSize: '0.9rem', fontWeight: 700, margin: 0 }}>{org.name}</h4>
                       {org.website && (
@@ -606,11 +684,18 @@ export default async function SEOLandingPage({ params }: Props) {
                       )}
                     </div>
                   ))
-                ) : (
+                ) : supportGroup ? (
                   <div>
                     <h4 style={{ fontSize: '0.9rem', fontWeight: 700, margin: 0 }}>{supportGroup.name}</h4>
                     <span style={{ fontSize: '0.78rem', color: 'var(--text-light)', display: 'block', margin: '0.2rem 0' }}>{supportGroup.address}</span>
                     <p style={{ fontSize: '0.82rem', margin: 0, color: 'var(--text-light)', lineHeight: 1.4 }}>{supportGroup.description}</p>
+                  </div>
+                ) : (
+                  <div style={{ background: 'rgba(0,0,0,0.01)', padding: '1.25rem', borderRadius: '16px', border: '1px dashed rgba(0,0,0,0.1)', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', minHeight: '150px' }}>
+                    <span style={{ fontSize: '1.2rem', marginBottom: '0.5rem' }}>👥</span>
+                    <strong style={{ fontSize: '0.85rem', color: 'var(--text-main)', display: 'block', marginBottom: '0.25rem' }}>No Support Chapters Indexed</strong>
+                    <p style={{ fontSize: '0.75rem', color: 'var(--text-light)', margin: '0 0 0.75rem 0', lineHeight: 1.3 }}>Help other special needs parents by recommending a local support group.</p>
+                    <ContributionModal suggestionType="other" targetId={p.county} targetName={`${countyFormatted} County Support Group`} buttonLabel="Submit Group" />
                   </div>
                 )}
               </div>

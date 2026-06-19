@@ -1,20 +1,22 @@
-/**
- * SEO and Content Helpers for County Detail Pages
- * Generates unique, high-utility titles, descriptions, and parent introduction copy.
- */
+import { County, CountyOffice, RegionalCenter } from './db';
+
+interface CountyDetailsInput extends County {
+  countyOffices?: CountyOffice[];
+  regionalCenters?: RegionalCenter[];
+}
 
 export function getCountyMetadata(
   stateId: string,
   stateName: string,
   stateCode: string,
-  countyDetails: any
+  countyDetails: CountyDetailsInput
 ) {
   const countyName = countyDetails.name;
   let title = `${countyName} County Special Needs Benefits & Resources (${stateCode})`;
   let description = `Find local service helpline numbers, school district offices, and catchment boundaries for ${countyName} County, ${stateName}.`;
 
   const verifiedOffice = countyDetails.countyOffices?.find(
-    (o: any) => o.verification_status === 'official_verified'
+    (o: CountyOffice) => o.verification_status === 'official_verified'
   )?.office_name;
 
   if (stateId === 'texas') {
@@ -47,7 +49,7 @@ export function getCountyIntroCopy(
   stateId: string,
   stateName: string,
   stateCode: string,
-  countyDetails: any,
+  countyDetails: CountyDetailsInput,
   countyWage: number,
   catchmentLabel: string,
   insuranceLabel: string

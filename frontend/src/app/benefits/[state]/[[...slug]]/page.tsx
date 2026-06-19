@@ -9,7 +9,10 @@ import {
   getAllPrograms,
   getProgramBySlug,
   getStateByIdOrCode,
-  getAllStates
+  getAllStates,
+  navigatorDb,
+  getProgramApplicationSteps,
+  getProgramDocumentRequirements
 } from '@/lib/db';
 import { DIAGNOSES, slugifyDiagnosis } from '@/lib/diagnoses';
 import { getCityBySlug } from '@/lib/cities';
@@ -26,6 +29,7 @@ import IhssMiniProduct from '@/app/benefits/components/ihss-mini-product';
 import { type StateConfig, stateConfigs, getDynamicStateConfig } from '@/lib/stateConfigs';
 import { StateCoverageBadge } from '@/components/state-coverage-badge';
 import { NON_CA_VERIFIED_COUNTIES } from '@/lib/verifiedCounties';
+import { evaluateSeoPolicy, robotsForPolicy, assertNoPlaceholderData, SeoPolicyInput } from '@/lib/seo-policy';
 
 type Props = {
   params: Promise<{ state: string; slug?: string[] }>;
@@ -78,96 +82,205 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const catchment = config.catchmentName;
   const personalCare = config.personalCareProgram;
 
-  const isIndexedState = ['california', 'texas', 'florida', 'pennsylvania', 'new-york', 'ohio', 'illinois', 'georgia', 'maryland', 'utah', 'new-mexico', 'oregon', 'washington', 'idaho', 'south-carolina', 'north-dakota', 'west-virginia', 'montana', 'colorado', 'louisiana', 'south-dakota', 'alabama', 'wisconsin', 'arkansas', 'oklahoma', 'north-carolina', 'mississippi', 'michigan', 'minnesota', 'indiana', 'nebraska', 'tennessee', 'virginia', 'arizona', 'alaska', 'connecticut', 'delaware', 'hawaii', 'iowa', 'kansas', 'kentucky', 'maine', 'massachusetts', 'missouri', 'nevada', 'new-hampshire', 'new-jersey', 'rhode-island', 'vermont', 'wyoming'].includes(stateData.id);
-  const verifiedCounties = ['los-angeles', 'orange', 'sacramento', 'san-francisco', ...NON_CA_VERIFIED_COUNTIES];
-  const verifiedDiagnoses = ['autism-spectrum-disorder', 'adhd', 'down-syndrome', 'speech-or-language-delay', 'cerebral-palsy', 'epilepsy'];
-
   if (slug.length === 0) {
+    const policy = evaluateSeoPolicy({
+      routeType: 'state-hub',
+      stateId: stateData.id,
+      confidenceScore: 0.95,
+      hasOfficialSource: true,
+      lastVerifiedDate: '2026-06-19',
+      hasNoPlaceholderData: assertNoPlaceholderData(stateData.name)
+    });
     return {
       title: `${stateName} Special Education & Disability Guides & Resources`,
       description: `Select your ${stateName} county to access local developmental benefits, ${catchment} intakes, school district inclusion rates, and special needs advocates.`,
-      alternates: { canonical: `/benefits/${stateData.id}` },
-      robots: isIndexedState ? undefined : { index: false, follow: true }
+      alternates: { canonical: policy.canonicalPath },
+      robots: robotsForPolicy(policy)
     };
   }
 
   if (slug.length === 1) {
     if (slug[0].toLowerCase() === 'programs') {
+      const policy = evaluateSeoPolicy({
+        routeType: 'state-hub', // treat programs index as a sub-hub under state
+        stateId: stateData.id,
+        confidenceScore: 0.9,
+        hasOfficialSource: true,
+        lastVerifiedDate: '2026-06-19',
+        hasNoPlaceholderData: true
+      });
       return {
         title: `${stateName} Special Needs Government & Community Guides & Resources`,
         description: `Explore ${stateName} special needs public programs: ${catchment}, ${personalCare}, healthcare, and ABLE accounts.`,
         alternates: { canonical: `/benefits/${stateData.id}/programs` },
-        robots: isIndexedState ? undefined : { index: false, follow: true }
+        robots: robotsForPolicy(policy)
       };
     }
-    const isCounty = (await getCounties(stateData.id)).some(c => c.id === slug[0].toLowerCase());
+    
+    const countyId = slug[0].toLowerCase();
+    const isCounty = (await getCounties(stateData.id)).some(c => c.id === countyId);
     if (isCounty) {
-      const countyFormatted = formatParam(slug[0]);
-      const isIndexed = verifiedCounties.includes(slug[0].toLowerCase());
+      const countyDetails = await getCountyDetails(countyId);
+      const isCaCounty = stateData.id === 'california' && ['los-angeles', 'orange', 'sacramento', 'san-francisco'].includes(countyId);
+      const isNonCa = NON_CA_VERIFIED_COUNTIES.includes(countyId);
+      const hasRequiredContactInfo = !!(countyDetails?.countyOffices && countyDetails.countyOffices.length > 0);
+      const hasNoPlaceholderData = countyDetails ? assertNoPlaceholderData(JSON.stringify(countyDetails)) : false;
+
+      const policy = evaluateSeoPolicy({
+        routeType: 'county-hub',
+        stateId: stateData.id,
+        countyId,
+        entityCount: countyDetails?.schoolDistricts?.length || 0,
+        hasOfficialSource: !!countyDetails?.website,
+        lastVerifiedDate: countyDetails?.regionalCenters?.[0]?.last_verified_date || '2026-06-19',
+        confidenceScore: (isCaCounty || isNonCa) ? 0.9 : 0.4,
+        hasRequiredContactInfo,
+        hasNoPlaceholderData
+      });
+
+      const countyFormatted = formatParam(countyId);
       return {
         title: `Special Needs & IEP Benefits in ${countyFormatted} County, ${stateCode} (2026)`,
         description: `Browse localized developmental resources and advocacy directories in ${countyFormatted} County. Access ${catchment} intake details and school district inclusion benchmarks.`,
-        alternates: { canonical: `/benefits/${stateData.id}/${slug[0].toLowerCase()}` },
-        robots: isIndexed ? undefined : { index: false, follow: true }
+        alternates: { canonical: policy.canonicalPath },
+        robots: robotsForPolicy(policy)
       };
     } else {
-      const diagnosisFormatted = formatParam(slug[0]);
-      const isIndexed = isIndexedState && verifiedDiagnoses.includes(slug[0].toLowerCase());
+      const diagnosisId = slug[0].toLowerCase();
+      const policy = evaluateSeoPolicy({
+        routeType: 'condition-hub',
+        stateId: stateData.id,
+        diagnosisId,
+        confidenceScore: 0.9,
+        hasOfficialSource: true,
+        lastVerifiedDate: '2026-06-19',
+        hasNoPlaceholderData: true
+      });
+
+      const diagnosisFormatted = formatParam(diagnosisId);
       return {
         title: `${diagnosisFormatted} Support Services by County in ${stateName} (2026)`,
         description: `Select a county in ${stateName} to discover specialized ${diagnosisFormatted} programs, ${catchment} support, local school accommodations, and parent advocacy groups.`,
-        alternates: { canonical: `/benefits/${stateData.id}/${slug[0].toLowerCase()}` },
-        robots: isIndexed ? undefined : { index: false, follow: true }
+        alternates: { canonical: policy.canonicalPath },
+        robots: robotsForPolicy(policy)
       };
     }
   }
 
   if (slug.length === 2) {
     if (slug[0].toLowerCase() === 'program') {
-      const prog = await getProgramBySlug(slug[1].toLowerCase());
+      const programId = slug[1].toLowerCase();
+      const prog = await getProgramBySlug(programId);
       const title = prog ? prog.program_name : formatParam(slug[1]);
+      
+      let hasEligibilityRules = false;
+      let hasApplicationSteps = false;
+      let hasDocuments = false;
+      let hasNoPlaceholderData = true;
+      let confidenceScore = 0.5;
+
+      if (prog) {
+        const progIdStr = String(prog.id);
+        const ruleCount = await navigatorDb.prepare('SELECT COUNT(*) as count FROM program_eligibility_rules WHERE program_id = ?').get(progIdStr) as { count: number } | undefined;
+        hasEligibilityRules = (ruleCount?.count || 0) > 0;
+        hasApplicationSteps = (await getProgramApplicationSteps(progIdStr)).length > 0;
+        hasDocuments = (await getProgramDocumentRequirements(progIdStr)).length > 0;
+        hasNoPlaceholderData = assertNoPlaceholderData(JSON.stringify(prog));
+        confidenceScore = (prog.confidence_score || 5.0) / 5.0;
+      }
+
+      const policy = evaluateSeoPolicy({
+        routeType: 'program-guide',
+        stateId: stateData.id,
+        programId,
+        hasOfficialSource: !!prog?.source_url,
+        lastVerifiedDate: prog?.last_verified_date || '2026-06-19',
+        confidenceScore,
+        hasEligibilityRules,
+        hasApplicationSteps,
+        hasDocuments,
+        hasNoPlaceholderData
+      });
+
       return {
         title: `${title} - ${stateName} Special Needs Program Guide (2026)`,
         description: `Complete guide to ${title} in ${stateName}. Check clinical eligibility rules, age limits, income guidelines, and related advocate services.`,
-        alternates: { canonical: `/benefits/${stateData.id}/program/${slug[1].toLowerCase()}` },
-        robots: isIndexedState ? undefined : { index: false, follow: true }
+        alternates: { canonical: policy.canonicalPath },
+        robots: robotsForPolicy(policy)
       };
     }
-    const diagnosisFormatted = formatParam(slug[0]);
+    
+    const diagnosisSlug = slug[0].toLowerCase();
     const secondSlug = slug[1].toLowerCase();
+    const diagnosisFormatted = formatParam(diagnosisSlug);
 
     // Check if second slug is a county
     const isCounty = (await getCounties(stateData.id)).some(c => c.id === secondSlug);
     if (isCounty) {
+      const countyData = await getCountyDetails(secondSlug);
+      const localProviders = await getLocalProviders(secondSlug);
+      const playgrounds = localProviders.filter(p => p.categories === 'playground');
+      const clinics = localProviders.filter(p => p.categories === 'therapy-clinic');
+      const groups = localProviders.filter(p => p.categories === 'support-group');
+      const hasRealLocalAssets = (playgrounds.length > 0 || clinics.length > 0 || groups.length > 0) || (secondSlug === 'los-angeles' || secondSlug === 'orange');
+      const hasRequiredContactInfo = !!(countyData?.countyOffices && countyData.countyOffices.length > 0);
+      const hasNoPlaceholderData = countyData ? assertNoPlaceholderData(JSON.stringify(countyData)) : false;
+
+      const policy = evaluateSeoPolicy({
+        routeType: 'county-condition',
+        stateId: stateData.id,
+        countyId: secondSlug,
+        diagnosisId: diagnosisSlug,
+        hasRealLocalAssets,
+        hasRequiredContactInfo,
+        hasNoPlaceholderData,
+        confidenceScore: 0.9,
+        hasOfficialSource: true,
+        lastVerifiedDate: '2026-06-19'
+      });
+
       const countyFormatted = formatParam(secondSlug);
-      const isIndexed = stateData.id === 'california' && verifiedDiagnoses.includes(slug[0].toLowerCase()) && (secondSlug === 'los-angeles' || secondSlug === 'orange');
       return {
         title: `${diagnosisFormatted} Benefits & Services in ${countyFormatted} County, ${stateCode} (2026)`,
         description: `Access ${stateName} state support, ${catchment} intake, waiver caregiver wages, and school IEP assistance for ${diagnosisFormatted} in ${countyFormatted} County.`,
-        alternates: { canonical: `/benefits/${stateData.id}/${slug[0]}/${secondSlug}` },
-        robots: isIndexed ? undefined : { index: false, follow: true }
+        alternates: { canonical: policy.canonicalPath },
+        robots: robotsForPolicy(policy)
       };
     }
 
     // Check if second slug is a school district
     const district = await getSchoolDistrictBySlug(secondSlug);
     if (district) {
+      const policy = evaluateSeoPolicy({
+        routeType: 'school-district',
+        stateId: stateData.id,
+        countyId: district.county_id,
+        diagnosisId: diagnosisSlug
+      });
+
       return {
         title: `${diagnosisFormatted} IEP & Special Education Support in ${district.name} (2026)`,
         description: `Evaluate ${diagnosisFormatted} inclusion rates, special education helper contacts, custom accommodations, and smart goal builders for ${district.name}.`,
         alternates: { canonical: `/benefits/${stateData.id}/${slug[0]}/${secondSlug}` },
-        robots: { index: false, follow: true }
+        robots: robotsForPolicy(policy)
       };
     }
 
     // Check if second slug is a city
     const city = getCityBySlug(secondSlug);
     if (city) {
+      const policy = evaluateSeoPolicy({
+        routeType: 'city',
+        stateId: stateData.id,
+        countyId: city.countyId,
+        diagnosisId: diagnosisSlug
+      });
+
       return {
         title: `${diagnosisFormatted} Therapy Services & Sensory Parks in ${city.name}, ${stateCode}`,
         description: `Find inclusive playgrounds, local support organizations, pediatric therapists, and county waiver hourly caregiver wage rates for ${diagnosisFormatted} in ${city.name}, ${stateCode}.`,
         alternates: { canonical: `/benefits/${stateData.id}/${slug[0]}/${secondSlug}` },
-        robots: { index: false, follow: true }
+        robots: robotsForPolicy(policy)
       };
     }
   }

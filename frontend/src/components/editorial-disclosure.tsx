@@ -2,18 +2,24 @@ import React from 'react';
 import { ShieldCheck, BookOpen, AlertCircle } from 'lucide-react';
 
 interface EditorialDisclosureProps {
+  verificationState?: 'official-verified' | 'human-reviewed' | 'crawler-verified' | 'unverified';
   agencyName?: string;
+  sourceUrl?: string;
+  lastVerifiedDate?: string | null;
   policyCitation?: string;
-  lastReviewedDate?: string;
   nextSteps?: string[];
 }
 
 export default function EditorialDisclosure({
-  agencyName = 'State Developmental Services',
+  verificationState = 'unverified',
+  agencyName,
+  sourceUrl,
+  lastVerifiedDate,
   policyCitation,
-  lastReviewedDate = 'June 2026',
   nextSteps,
 }: EditorialDisclosureProps) {
+  const isVerified = verificationState !== 'unverified';
+
   return (
     <div
       style={{
@@ -31,20 +37,46 @@ export default function EditorialDisclosure({
       }}
     >
       <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'flex-start' }}>
-        <ShieldCheck size={18} color="#0f766e" style={{ flexShrink: 0, marginTop: '2px' }} />
+        {isVerified ? (
+          <ShieldCheck size={18} color="#0f766e" style={{ flexShrink: 0, marginTop: '2px' }} />
+        ) : (
+          <AlertCircle size={18} color="#b45309" style={{ flexShrink: 0, marginTop: '2px' }} />
+        )}
         <div>
           <strong style={{ color: 'var(--text-main)', display: 'block', fontSize: '0.9rem' }}>
-            EEAT Verified Guide & Policy Citation
+            {isVerified ? 'Verified Guide & Policy Citation' : 'Verification Status Pending'}
           </strong>
           <span style={{ fontSize: '0.8rem', lineHeight: '1.4', display: 'block', marginTop: '0.25rem' }}>
-            Compiled and reviewed by special needs family experts. This guide is directly mapped to official{' '}
-            <strong style={{ color: 'var(--text-main)' }}>{agencyName}</strong> regulations{' '}
-            {policyCitation ? (
+            {verificationState === 'official-verified' && (
               <>
-                (including <code style={{ background: '#f1f5f9', padding: '0.1rem 0.3rem', borderRadius: '4px', fontFamily: 'monospace' }}>{policyCitation}</code>)
+                Source: {sourceUrl ? (
+                  <a href={sourceUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>
+                    {agencyName || 'Official Agency'}
+                  </a>
+                ) : (
+                  agencyName || 'Official Agency'
+                )}
+                {lastVerifiedDate ? ` • Last reviewed: ${lastVerifiedDate}` : ''}
+                {policyCitation ? ` (under citation: ${policyCitation})` : ''}.
               </>
-            ) : null}
-            . Last updated: <strong style={{ color: 'var(--text-main)' }}>{lastReviewedDate}</strong>.
+            )}
+            {verificationState === 'human-reviewed' && (
+              <>
+                Vetted and reviewed by parent support coordinators
+                {lastVerifiedDate ? ` on ${lastVerifiedDate}` : ''}.
+              </>
+            )}
+            {verificationState === 'crawler-verified' && (
+              <>
+                Automatically extracted from official portals
+                {lastVerifiedDate ? ` • Last updated: ${lastVerifiedDate}` : ''}.
+              </>
+            )}
+            {verificationState === 'unverified' && (
+              <>
+                Source verification pending. This page is excluded from search indexing until verification is complete.
+              </>
+            )}
           </span>
         </div>
       </div>

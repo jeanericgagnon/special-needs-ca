@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { FileText, FileSpreadsheet, Download, ExternalLink, ArrowRight, BookOpen, ShieldAlert } from 'lucide-react';
-import { SEO_CLUSTERS } from '@/lib/seo-data';
+import { SEO_CLUSTERS, SEOPageData } from '@/lib/seo-data';
 import { getCounties } from '@/lib/db';
 import { stateConfigs } from '@/lib/stateConfigs';
 
@@ -63,7 +63,7 @@ export default async function FormsIndexPage({ searchParams }: PageProps) {
   const stateName = getStateName(stateId);
 
   // Extract all forms in SEO_CLUSTERS
-  const formsMap = new Map<string, any>();
+  const formsMap = new Map<string, SEOPageData>();
   for (const [key, data] of Object.entries(SEO_CLUSTERS)) {
     if (data.category === 'forms') {
       formsMap.set(key, data);
@@ -82,10 +82,10 @@ export default async function FormsIndexPage({ searchParams }: PageProps) {
       };
     }
 
-    const downloadDoc = data.documentsToGather?.find((d: any) => d.downloadUrl);
+    const downloadDoc = data.documentsToGather?.find((d) => d.downloadUrl);
     const downloadUrl = downloadDoc?.downloadUrl;
     
-    const signerPt = data.tldrPoints?.find((p: any) => p.label.toLowerCase().includes('signer') || p.label.toLowerCase().includes('authorized'));
+    const signerPt = data.tldrPoints?.find((p) => p.label.toLowerCase().includes('signer') || p.label.toLowerCase().includes('authorized'));
     const signer = signerPt ? signerPt.value : 'Parent / Physician';
 
     return {
