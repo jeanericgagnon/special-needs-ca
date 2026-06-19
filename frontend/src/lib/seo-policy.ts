@@ -250,8 +250,8 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): SeoPolicyResult {
       break;
 
     case 'program-guide':
-      if (!input.hasApplicationSteps || !input.hasEligibilityRules) {
-        blockers.push('Program guide is missing required application steps or eligibility criteria');
+      if (!input.hasApplicationSteps || !input.hasEligibilityRules || !input.hasDocuments) {
+        blockers.push('Program guide is missing required application steps, eligibility criteria, or document checklist');
       }
       break;
 

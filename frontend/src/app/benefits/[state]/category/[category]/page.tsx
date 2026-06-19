@@ -64,7 +64,9 @@ export async function generateMetadata({ params }: Props) {
 
   return constructMetadata({
     title: `${categoryLabel} Programs in ${stateData.name} | Ablefull`,
-    description: `Browse verified guides, application procedures, and local resources for ${categoryLabel.toLowerCase()} programs in ${stateData.name}.`,
+    description: policy.index
+      ? `Browse verified guides, application procedures, and local resources for ${categoryLabel.toLowerCase()} programs in ${stateData.name}.`
+      : `Browse available program records for ${categoryLabel.toLowerCase()} in ${stateData.name}. Listings are pending official verification.`,
     canonicalUrl: `/benefits/${stateData.id}/category/${category}`,
     robots: robotsForPolicy(policy),
   });
@@ -106,6 +108,23 @@ export default async function BenefitCategoryPage({ params }: Props) {
 
   const stateConfig = getDynamicStateConfig(stateData.id, stateData.name, stateData.code);
   const programs = await getProgramsForCategory(stateData.id, category);
+
+  const dates = programs.map(p => p.last_verified_date).filter((d): d is string => !!d);
+  const lastVerifiedDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
+  const scores = programs.map(p => p.confidence_score).filter((s): s is number => s !== null && s !== undefined);
+  const confidenceScore = scores.length > 0 ? (scores.reduce((sum, s) => sum + s, 0) / scores.length) / 5.0 : null;
+  const hasOfficialSource = programs.length > 0 && programs.some(p => !!p.official_source_url);
+  const hasNoPlaceholderData = programs.every(p => assertNoPlaceholderData(JSON.stringify(p)));
+
+  const policy = evaluateSeoPolicy({
+    routeType: 'category-hub',
+    stateId: stateData.id,
+    entityCount: programs.length,
+    confidenceScore,
+    hasOfficialSource,
+    lastVerifiedDate,
+    hasNoPlaceholderData
+  });
 
   // Generate structured schemas
   const breadcrumbList = generateBreadcrumbsSchema([
@@ -151,7 +170,11 @@ export default async function BenefitCategoryPage({ params }: Props) {
           {categoryLabel} in {stateData.name}
         </h1>
         <p style={{ fontSize: '1rem', color: 'var(--text-light)', marginTop: '0.75rem', maxWidth: '850px', lineHeight: '1.6' }}>
-          Explore state-verified eligibility guidelines, pediatric diagnostic requirements, and application procedures for {categoryLabel.toLowerCase()} programs in {stateData.name}.
+          {policy.index ? (
+            `Explore state-verified eligibility guidelines, pediatric diagnostic requirements, and application procedures for ${categoryLabel.toLowerCase()} programs in ${stateData.name}.`
+          ) : (
+            `Browse available program records for this category. Pages are indexed only after official source verification and completeness checks pass.`
+          )}
         </p>
       </div>
 

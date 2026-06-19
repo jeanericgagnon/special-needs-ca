@@ -57,7 +57,13 @@ const BANNED_PATTERNS = [
   { pattern: /confidenceScore\s*:\s*0\.95/i, label: 'confidenceScore: 0.95' },
   { pattern: /official_verified\s+used\s+with\s+undefined\s+URL/i, label: 'official_verified used with undefined URL' },
   { pattern: /2026-06-01/i, label: '2026-06-01' },
-  { pattern: /2026-06-19/i, label: '2026-06-19' }
+  { pattern: /2026-06-19/i, label: '2026-06-19' },
+  { pattern: /\|\|\s*5\.0/, label: '|| 5.0 fallback' },
+  { pattern: /\|\|\s*1\.0/, label: '|| 1.0 fallback' },
+  { pattern: /confidence_score\s*\|\|\s*5(\.0)?/i, label: 'confidence_score || 5 fallback' },
+  { pattern: /source_url\s*\|\|\s*['"]https:\/\/www\.dhcs\.ca\.gov['"]/i, label: 'source_url DHCS fallback' },
+  { pattern: /officialSources:\s*\[\s*\{\s*name:\s*[`'"]\s*\$\{\s*stateName\s*\}\s*State\s+Program\s+Portal\s*[`'"],\s*url:\s*program\.source_url\s*\|\|/i, label: 'officialSources state portal fallback' },
+  { pattern: /(?:source_url|official_source_url)\s*\|\|\s*['"](?!\s*['"])[^'"]+['"]/i, label: 'source_url fallback to non-empty string literal' }
 ];
 
 function scanFilesForBannedPatterns() {
@@ -220,7 +226,9 @@ programs.forEach(prog => {
     programId: prog.id,
     hasOfficialSource: !!prog.official_source_url,
     lastVerifiedDate: prog.last_verified_date || null,
-    confidenceScore: Number(prog.confidence_score || 5.0) / 5.0,
+    confidenceScore: prog.confidence_score !== null && prog.confidence_score !== undefined
+      ? Number(prog.confidence_score) / 5.0
+      : null,
     hasEligibilityRules,
     hasApplicationSteps,
     hasDocuments,
@@ -232,6 +240,28 @@ programs.forEach(prog => {
     logSuccess(`Program guide indexable: ${url} (Score: ${policy.qualityScore})`);
     if (!hasNoPlaceholderData) {
       logError(`Indexable Program ${url} contains placeholder data!`);
+    }
+    
+    // Database-level assertions for indexable program pages
+    if (!prog.official_source_url) {
+      logError(`Indexable Program ${url} is missing official source URL!`);
+    } else if (prog.official_source_url === 'https://www.dhcs.ca.gov' || prog.official_source_url === 'https://dhcs.ca.gov') {
+      logError(`Indexable Program ${url} has a generic fallback official source URL!`);
+    }
+    if (!prog.last_verified_date) {
+      logError(`Indexable Program ${url} is missing last verified date!`);
+    }
+    if (prog.confidence_score === null || prog.confidence_score === undefined) {
+      logError(`Indexable Program ${url} is missing confidence score!`);
+    }
+    if (!hasEligibilityRules) {
+      logError(`Indexable Program ${url} is missing eligibility rules!`);
+    }
+    if (!hasApplicationSteps) {
+      logError(`Indexable Program ${url} is missing application steps!`);
+    }
+    if (!hasDocuments) {
+      logError(`Indexable Program ${url} is missing document requirements!`);
     }
   } else {
     logSuccess(`Program guide noindexed (correct): ${url} (Blockers: ${policy.blockers.join(', ')})`);

@@ -197,7 +197,7 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
               {data.title}
             </h1>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', fontSize: '0.82rem', color: 'var(--text-light)', borderBottom: '1px solid rgba(0,0,0,0.06)', paddingBottom: '1rem' }}>
-              <span>Verified Source: <strong style={{ color: 'var(--text-main)' }}>{data.officialSources[0]?.name || 'CA State Policy'}</strong></span>
+              <span>Verified Source: <strong style={{ color: 'var(--text-main)' }}>{data.officialSources && data.officialSources.length > 0 ? data.officialSources[0].name : 'Source verification pending'}</strong></span>
               {data.lastReviewedDate && (
                 <>
                   <span>•</span>

@@ -90,7 +90,7 @@ export async function GET() {
       let hasApplicationSteps = false;
       let hasDocuments = false;
       let hasNoPlaceholderData = true;
-      let confidenceScore = 0.5;
+      let confidenceScore: number | null = null;
       let stateId = 'california';
 
       if (prog) {
@@ -101,7 +101,9 @@ export async function GET() {
         hasApplicationSteps = (await getProgramApplicationSteps(progIdStr)).length > 0;
         hasDocuments = (await getProgramDocumentRequirements(progIdStr)).length > 0;
         hasNoPlaceholderData = assertNoPlaceholderData(JSON.stringify(prog));
-        confidenceScore = (prog.confidence_score || 5.0) / 5.0;
+        confidenceScore = prog.confidence_score !== null && prog.confidence_score !== undefined
+          ? Number(prog.confidence_score) / 5.0
+          : null;
       }
 
       const policy = evaluateSeoPolicy({

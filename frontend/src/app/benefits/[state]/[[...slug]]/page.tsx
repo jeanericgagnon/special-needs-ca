@@ -219,7 +219,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       let hasApplicationSteps = false;
       let hasDocuments = false;
       let hasNoPlaceholderData = true;
-      let confidenceScore = 0.5;
+      let confidenceScore: number | null = null;
 
       if (prog) {
         const progIdStr = String(prog.id);
@@ -228,7 +228,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         hasApplicationSteps = (await getProgramApplicationSteps(progIdStr)).length > 0;
         hasDocuments = (await getProgramDocumentRequirements(progIdStr)).length > 0;
         hasNoPlaceholderData = assertNoPlaceholderData(JSON.stringify(prog));
-        confidenceScore = (prog.confidence_score || 5.0) / 5.0;
+        confidenceScore = prog.confidence_score !== null && prog.confidence_score !== undefined ? Number(prog.confidence_score) / 5.0 : null;
       }
 
       const policy = evaluateSeoPolicy({

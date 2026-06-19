@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { SEO_CLUSTERS } from '@/lib/seo-data';
-import { getCounties, getProgramBySlug, getAllPrograms, getStateByIdOrCode, navigatorDb, getProgramApplicationSteps, getProgramDocumentRequirements } from '@/lib/db';
+import { getCounties, getProgramBySlug, getAllPrograms, getStateByIdOrCode, navigatorDb, getProgramApplicationSteps, getProgramDocumentRequirements, CountyOffice } from '@/lib/db';
 import AnswerPage from '@/app/components/answer-page';
 import SeoSchema from '@/app/components/seo-schema';
 import { constructMetadata, generateBreadcrumbsSchema } from '@/lib/seo-helpers';
@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: Props) {
   let hasApplicationSteps = false;
   let hasDocuments = false;
   let hasNoPlaceholderData = true;
-  let confidenceScore = 0.5;
+  let confidenceScore: number | null = null;
   let stateId = 'california';
 
   if (program) {
@@ -53,7 +53,9 @@ export async function generateMetadata({ params }: Props) {
     hasApplicationSteps = (await getProgramApplicationSteps(progIdStr)).length > 0;
     hasDocuments = (await getProgramDocumentRequirements(progIdStr)).length > 0;
     hasNoPlaceholderData = assertNoPlaceholderData(JSON.stringify(program));
-    confidenceScore = (program.confidence_score || 5.0) / 5.0;
+    confidenceScore = program.confidence_score !== null && program.confidence_score !== undefined
+      ? Number(program.confidence_score) / 5.0
+      : null;
   }
 
   const policy = evaluateSeoPolicy({
@@ -113,6 +115,35 @@ export default async function ProgramPage({ params }: Props) {
   const stateName = stateData ? stateData.name : 'California';
   const stateCode = stateData ? stateData.code : 'CA';
 
+  const progIdStr = String(program.id);
+  const dbSteps = await getProgramApplicationSteps(progIdStr);
+  const dbDocs = await getProgramDocumentRequirements(progIdStr);
+  const dbOffices = await navigatorDb.prepare('SELECT * FROM county_offices WHERE program_id = ?').all(progIdStr) as CountyOffice[];
+
+  const whatToDoFirst = dbSteps.length > 0
+    ? dbSteps.map(step => step.action_description)
+    : ['Verification/application steps pending. Details will be published once officially verified.'];
+
+  const documentsToGather = dbDocs.length > 0
+    ? dbDocs.map(doc => ({ name: doc.name, description: doc.description || '' }))
+    : [
+        { name: 'Required documents pending verification', description: 'Official document requirements will be populated upon verification.' }
+      ];
+
+  const whoToCall = dbOffices.length > 0
+    ? dbOffices.map(off => ({
+        name: off.office_name,
+        number: off.phone,
+        description: `Local office address: ${off.address}`
+      }))
+    : [
+        { name: 'Official contacts pending verification', description: 'Contact details will be populated once officially verified.' }
+      ];
+
+  const officialSources = program.source_url ? [
+    { name: `${stateName} State Program Portal`, url: program.source_url }
+  ] : [];
+
   // Construct dynamic SEOPageData on the fly
   const dynamicData = {
     slug: slug,
@@ -133,21 +164,9 @@ export default async function ProgramPage({ params }: Props) {
       `Meets the stated demographic criteria: ${program.target_demographic}.`,
       `Meets the specified conditions and diagnoses: ${program.diagnosis_required || 'Any documented disability'}.`
     ],
-    whatToDoFirst: [
-      'Locate your local county office or coordinator.',
-      'Gather medical proof of diagnosis.',
-      'Check current income deeming requirements.',
-      'Submit the initial application.'
-    ],
-    documentsToGather: [
-      { name: 'Pediatric medical certification', description: 'Confirming developmental diagnosis.' },
-      { name: 'Proof of residency', description: `${stateName} driver license, utility bill, or equivalent.` }
-    ],
-    whoToCall: stateName === 'California' ? [
-      { name: 'California DHCS Office', number: '(916) 440-7400', description: 'Department of Health Care Services administrative office.' }
-    ] : [
-      { name: `${stateName} Health and Human Services`, number: '2-1-1', description: 'State benefits information and local resource referral.' }
-    ],
+    whatToDoFirst,
+    documentsToGather,
+    whoToCall,
     whatToSay: `I am calling to check eligibility for my child for the ${program.program_name}.`,
     commonMistakes: [
       'Assuming you do not qualify before submitting an application.',
@@ -156,9 +175,7 @@ export default async function ProgramPage({ params }: Props) {
     relatedGuides: [
       { title: 'Guides & Resources Index', url: '/benefits' }
     ],
-    officialSources: [
-      { name: `${stateName} State Program Portal`, url: program.source_url || 'https://www.dhcs.ca.gov' }
-    ],
+    officialSources,
     lastReviewedDate: program.last_verified_date || null,
     callScriptTemplate: {
       intro: 'General Intake Call Script',
