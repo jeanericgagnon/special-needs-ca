@@ -1,11 +1,11 @@
 import { notFound } from 'next/navigation';
 import { SEO_CLUSTERS } from '@/lib/seo-data';
-import { getCounties } from '@/lib/db';
+import { getCounties, navigatorDb, DbProgram } from '@/lib/db';
 import { DIAGNOSES_DETAILS } from '@/lib/diagnoses';
 import AnswerPage from '@/app/components/answer-page';
 import SeoSchema from '@/app/components/seo-schema';
 import { constructMetadata, generateBreadcrumbsSchema } from '@/lib/seo-helpers';
-import { evaluateSeoPolicy, robotsForPolicy } from '@/lib/seo-policy';
+import { evaluateSeoPolicy, robotsForPolicy, assertNoPlaceholderData } from '@/lib/seo-policy';
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -30,14 +30,20 @@ export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
   const cluster = SEO_CLUSTERS[slug];
   
+  const statePrograms = await navigatorDb.prepare("SELECT * FROM programs WHERE state_id = 'california'").all() as DbProgram[];
+  const dates = statePrograms.map(p => p.last_verified_date).filter(Boolean) as string[];
+  const lastVerifiedDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
+  const scores = statePrograms.map(p => p.confidence_score).filter(s => s !== null && s !== undefined);
+  const confidenceScore = scores.length > 0 ? (scores.reduce((sum, s) => sum + s, 0) / scores.length) / 5.0 : null;
+
   const policy = evaluateSeoPolicy({
     routeType: 'condition-hub',
     stateId: 'california',
     diagnosisId: slug,
-    confidenceScore: 0.9,
-    hasOfficialSource: true,
-    lastVerifiedDate: '2026-06-19',
-    hasNoPlaceholderData: true
+    confidenceScore,
+    hasOfficialSource: statePrograms.length > 0 && statePrograms.some(p => !!p.official_source_url),
+    lastVerifiedDate,
+    hasNoPlaceholderData: statePrograms.every(p => assertNoPlaceholderData(JSON.stringify(p)))
   });
 
   if (cluster) {
@@ -124,7 +130,7 @@ export default async function ConditionPage({ params }: Props) {
       { name: 'California Department of Developmental Services', url: 'https://www.dds.ca.gov' },
       { name: 'California Department of Education', url: 'https://www.cde.ca.gov' }
     ],
-    lastReviewedDate: diag.last_verified_date || '2026-06-01',
+    lastReviewedDate: diag.last_verified_date || null,
     callScriptTemplate: {
       intro: 'Lanterman Intake Call Helper',
       script: `Hello, I am calling to request an intake assessment for my child, [Child Name], who has been diagnosed with ${diag.name}. They are [Age] years old. They have significant functional deficits, and I want to establish Regional Center support services.`,

@@ -17,7 +17,7 @@ export interface SEOPageData {
   commonMistakes: string[];
   relatedGuides: { title: string; url: string }[];
   officialSources: { name: string; url: string }[];
-  lastReviewedDate: string;
+  lastReviewedDate?: string | null;
   callScriptTemplate?: {
     intro: string;
     script: string;

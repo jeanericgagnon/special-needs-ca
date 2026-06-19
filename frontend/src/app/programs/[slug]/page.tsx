@@ -61,7 +61,7 @@ export async function generateMetadata({ params }: Props) {
     stateId,
     programId: slug,
     hasOfficialSource: !!program?.source_url,
-    lastVerifiedDate: program?.last_verified_date || '2026-06-19',
+    lastVerifiedDate: program?.last_verified_date || null,
     confidenceScore,
     hasEligibilityRules,
     hasApplicationSteps,
@@ -159,7 +159,7 @@ export default async function ProgramPage({ params }: Props) {
     officialSources: [
       { name: `${stateName} State Program Portal`, url: program.source_url || 'https://www.dhcs.ca.gov' }
     ],
-    lastReviewedDate: '2026-06-01',
+    lastReviewedDate: program.last_verified_date || null,
     callScriptTemplate: {
       intro: 'General Intake Call Script',
       script: `Hello, I am calling to apply for the ${program.program_name} on behalf of my child, [Child Name], who has [Diagnosis] and is [Age] years old. Please guide me through the intake and application steps.`,

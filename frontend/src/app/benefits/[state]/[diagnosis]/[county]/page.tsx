@@ -42,9 +42,33 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const clinics = localProviders.filter(prov => prov.categories === 'therapy-clinic');
   const groups = localProviders.filter(prov => prov.categories === 'support-group');
   
-  const hasRealLocalAssets = (playgrounds.length > 0 || clinics.length > 0 || groups.length > 0) || (p.county === 'los-angeles' || p.county === 'orange');
+  const hasRealLocalAssets = playgrounds.length > 0 || clinics.length > 0 || groups.length > 0;
   const hasRequiredContactInfo = !!(countyData?.countyOffices && countyData.countyOffices.length > 0);
   const hasNoPlaceholderData = countyData ? assertNoPlaceholderData(JSON.stringify(countyData)) : false;
+
+  const rcDates = (countyData?.regionalCenters || []).map(rc => rc.last_verified_date).filter(Boolean) as string[];
+  const sdDates = (countyData?.schoolDistricts || []).map(sd => sd.last_verified_date).filter(Boolean) as string[];
+  const coDates = (countyData?.countyOffices || []).map(co => co.last_verified_date).filter(Boolean) as string[];
+  const allDates = [...rcDates, ...sdDates, ...coDates];
+  const lastVerifiedDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
+
+  const rcScores = (countyData?.regionalCenters || []).map(rc => rc.confidence_score).filter(s => s !== null && s !== undefined);
+  const sdScores = (countyData?.schoolDistricts || []).map(sd => sd.confidence_score !== null && sd.confidence_score !== undefined ? sd.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
+  const coScores = (countyData?.countyOffices || []).map(co => co.confidence_score !== null && co.confidence_score !== undefined ? co.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
+  const allScores = [...rcScores, ...sdScores, ...coScores];
+  const confidenceScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
+
+  let hasOfficialSource = false;
+  if (countyData) {
+    if (countyData.website) {
+      hasOfficialSource = true;
+    }
+    if ((countyData.regionalCenters || []).some(rc => !!rc.source_url) ||
+        (countyData.schoolDistricts || []).some(sd => !!sd.source_url) ||
+        (countyData.countyOffices || []).some(co => !!co.source_url)) {
+      hasOfficialSource = true;
+    }
+  }
 
   const policy = evaluateSeoPolicy({
     routeType: 'county-condition',
@@ -54,9 +78,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     hasRealLocalAssets,
     hasRequiredContactInfo,
     hasNoPlaceholderData,
-    confidenceScore: 0.9,
-    hasOfficialSource: true,
-    lastVerifiedDate: '2026-06-19'
+    confidenceScore,
+    hasOfficialSource,
+    lastVerifiedDate
   });
 
   return {
@@ -128,23 +152,6 @@ export default async function SEOLandingPage({ params }: Props) {
     });
   }
 
-  // Add default state-level official source verification points if sources is empty or sparse
-  if (freshnessSources.length === 0) {
-    if (stateId === 'california') {
-      freshnessSources.push(
-        { name: 'California Department of Developmental Services', url: 'https://www.dds.ca.gov', lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' },
-        { name: 'California Department of Social Services', url: 'https://www.cdss.ca.gov', lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' },
-        { name: 'California Department of Health Care Services', url: 'https://www.dhcs.ca.gov', lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' }
-      );
-    } else {
-      freshnessSources.push(
-        { name: config.ddAgency, url: undefined, lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' },
-        { name: config.educationAgency, url: undefined, lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' },
-        { name: config.stateMedicaidAgency, url: undefined, lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' }
-      );
-    }
-  }
-
   // ----------------------------------------------------
   // Dynamic Local Assets Dataset
   // ----------------------------------------------------
@@ -176,27 +183,6 @@ export default async function SEOLandingPage({ params }: Props) {
       x: 480,
       y: 320
     };
-  } else if (p.county === 'los-angeles' || p.county === 'orange') {
-    // Specific high-fidelity values for Los Angeles and Orange County
-    if (p.county === 'los-angeles') {
-      playground = {
-        name: "Shane's Inspiration at Griffith Park",
-        address: "4800 Crystal Springs Dr, Los Angeles, CA 90027",
-        phone: "(323) 913-4688",
-        description: "A world-famous, 2-acre fully inclusive playground with sensory integration play zones, custom slides, and adaptive swings.",
-        x: 450,
-        y: 220
-      };
-    } else if (p.county === 'orange') {
-      playground = {
-        name: "Courtney's SandCastle Universal Playground",
-        address: "987 Avenida Vista Hermosa, San Clemente, CA 92673",
-        phone: "(949) 361-8264",
-        description: "Award-winning playground designed for children of all abilities, featuring a sensory garden, water play, and custom safety features.",
-        x: 500,
-        y: 380
-      };
-    }
   }
 
   if (clinics.length > 0) {
@@ -208,26 +194,6 @@ export default async function SEOLandingPage({ params }: Props) {
       x: 390,
       y: 220
     };
-  } else if (p.county === 'los-angeles' || p.county === 'orange') {
-    if (p.county === 'los-angeles') {
-      therapyClinic = {
-        name: "Pediatric Therapy Network (PTN)",
-        address: "1815 W 213th St, Torrance, CA 90501",
-        phone: "(310) 328-0276",
-        description: "Highly respected non-profit clinic offering pediatric Speech therapy, Occupational therapy, and ABA interventions.",
-        x: 380,
-        y: 350
-      };
-    } else if (p.county === 'orange') {
-      therapyClinic = {
-        name: "Center for Autism & Related Disorders (CARD)",
-        address: "1900 S State College Blvd, Anaheim, CA 92806",
-        phone: "(877) 448-4747",
-        description: "Premier therapy clinic providing customized ABA therapy services and pediatric speech consultation.",
-        x: 410,
-        y: 240
-      };
-    }
   }
 
   if (groups.length > 0) {
@@ -239,26 +205,6 @@ export default async function SEOLandingPage({ params }: Props) {
       x: 300,
       y: 130
     };
-  } else if (p.county === 'los-angeles' || p.county === 'orange') {
-    if (p.county === 'los-angeles') {
-      supportGroup = {
-        name: "Family Focus Resource Center",
-        address: "CSUN, 18111 Nordhoff St, Northridge, CA 91330",
-        phone: "(818) 677-6854",
-        description: "Provides parent-to-parent mentoring, support groups, and navigation advocacy for regional center intakes.",
-        x: 250,
-        y: 150
-      };
-    } else if (p.county === 'orange') {
-      supportGroup = {
-        name: "Family Support Network of Orange County",
-        address: "1815 Anaheim Ave, Costa Mesa, CA 92627",
-        phone: "(714) 447-3301",
-        description: "Offers early screening assistance, developmental training support groups, and parent guidance workshops.",
-        x: 320,
-        y: 180
-      };
-    }
   }
 
   // Dynamically load real local nonprofits if available in database

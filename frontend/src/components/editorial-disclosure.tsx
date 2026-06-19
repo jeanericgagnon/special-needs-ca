@@ -18,7 +18,19 @@ export default function EditorialDisclosure({
   policyCitation,
   nextSteps,
 }: EditorialDisclosureProps) {
-  const isVerified = verificationState !== 'unverified';
+  let finalVerificationState = verificationState;
+  
+  if (finalVerificationState === 'official-verified' && !sourceUrl) {
+    finalVerificationState = 'unverified';
+  }
+  if (finalVerificationState === 'human-reviewed' && !lastVerifiedDate) {
+    finalVerificationState = 'unverified';
+  }
+  if (finalVerificationState === 'crawler-verified' && !sourceUrl) {
+    finalVerificationState = 'unverified';
+  }
+
+  const isVerified = finalVerificationState !== 'unverified';
 
   return (
     <div
@@ -47,7 +59,7 @@ export default function EditorialDisclosure({
             {isVerified ? 'Verified Guide & Policy Citation' : 'Verification Status Pending'}
           </strong>
           <span style={{ fontSize: '0.8rem', lineHeight: '1.4', display: 'block', marginTop: '0.25rem' }}>
-            {verificationState === 'official-verified' && (
+            {finalVerificationState === 'official-verified' && (
               <>
                 Source: {sourceUrl ? (
                   <a href={sourceUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>
@@ -60,19 +72,22 @@ export default function EditorialDisclosure({
                 {policyCitation ? ` (under citation: ${policyCitation})` : ''}.
               </>
             )}
-            {verificationState === 'human-reviewed' && (
+            {finalVerificationState === 'human-reviewed' && (
               <>
-                Vetted and reviewed by parent support coordinators
-                {lastVerifiedDate ? ` on ${lastVerifiedDate}` : ''}.
+                Reviewed by Ablefull editorial workflow on {lastVerifiedDate}.
               </>
             )}
-            {verificationState === 'crawler-verified' && (
+            {finalVerificationState === 'crawler-verified' && (
               <>
-                Automatically extracted from official portals
+                Automatically extracted from {sourceUrl ? (
+                  <a href={sourceUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>
+                    official portals
+                  </a>
+                ) : 'official portals'}
                 {lastVerifiedDate ? ` • Last updated: ${lastVerifiedDate}` : ''}.
               </>
             )}
-            {verificationState === 'unverified' && (
+            {finalVerificationState === 'unverified' && (
               <>
                 Source verification pending. This page is excluded from search indexing until verification is complete.
               </>

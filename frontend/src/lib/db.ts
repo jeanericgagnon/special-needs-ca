@@ -2378,6 +2378,19 @@ export interface IepAdvocate {
   confidence_score?: number | null;
 }
 
+export interface DbProgram {
+  id: string;
+  name: string;
+  description: string | null;
+  who_it_is_for: string | null;
+  who_might_qualify: string | null;
+  official_source_url: string | null;
+  category: string | null;
+  last_verified_date: string | null;
+  state_id: string | null;
+  confidence_score: number | null;
+}
+
 export interface Program {
   id: number | string;
   source_url: string;

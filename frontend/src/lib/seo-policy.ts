@@ -10,6 +10,7 @@ export type RouteType =
   | 'county-condition'
   | 'school-district'
   | 'city'
+  | 'static-page'
   | 'unknown';
 
 export type SeoPolicyInput = {
@@ -90,6 +91,7 @@ export function canonicalForRoute(
     diagnosis?: string;
     program?: string;
     category?: string;
+    path?: string;
   }
 ): string {
   const state = params.state?.toLowerCase() || 'california';
@@ -113,6 +115,8 @@ export function canonicalForRoute(
       return `/benefits/${state}/compare`;
     case 'county-condition':
       return `/benefits/${state}/${diagnosis}/${county}`;
+    case 'static-page':
+      return params.path || '/';
     default:
       return '/benefits';
   }
@@ -155,14 +159,18 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): SeoPolicyResult {
     qualityScore += 15;
     reasons.push('Has official source URL (+15)');
   } else {
-    blockers.push('Missing official source URL');
+    if (input.routeType !== 'static-page') {
+      blockers.push('Missing official source URL');
+    }
   }
 
   if (input.lastVerifiedDate) {
     qualityScore += 10;
     reasons.push('Has freshness verification date (+10)');
   } else {
-    blockers.push('Missing verification date');
+    if (input.routeType !== 'static-page') {
+      blockers.push('Missing verification date');
+    }
   }
 
   if (input.confidenceScore !== undefined && input.confidenceScore !== null) {
@@ -173,7 +181,9 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): SeoPolicyResult {
       blockers.push(`Confidence score (${input.confidenceScore}) below 70% threshold`);
     }
   } else {
-    blockers.push('Missing confidence score');
+    if (input.routeType !== 'static-page') {
+      blockers.push('Missing confidence score');
+    }
   }
 
   if (input.hasEligibilityRules) {
@@ -202,15 +212,20 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): SeoPolicyResult {
     blockers.push('Contains placeholder data pattern (555 numbers, dummy text, etc.)');
   }
 
-  if (!stateId) {
-    blockers.push('Missing state ID context');
-  } else if (!isVerifiedState) {
-    blockers.push(`State '${stateId}' is not yet in the indexed state allowlist`);
+  if (input.routeType !== 'static-page') {
+    if (!stateId) {
+      blockers.push('Missing state ID context');
+    } else if (!isVerifiedState) {
+      blockers.push(`State '${stateId}' is not yet in the indexed state allowlist`);
+    }
   }
 
   const isCa = stateId === 'california';
 
   switch (input.routeType) {
+    case 'static-page':
+      break;
+
     case 'state-hub':
       if (isVerifiedState) {
         reasons.push('State hub passes allowlist check.');
@@ -280,10 +295,11 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): SeoPolicyResult {
     state: input.stateId,
     county: input.countyId,
     diagnosis: input.diagnosisId,
-    program: input.programId
+    program: input.programId,
+    path: input.routeType === 'static-page' ? input.stateId : undefined // We can pass path in stateId parameter if needed, but it is better to pass it in params.path or use it as fallback. Let's pass stateId as path for static-page or just let canonicalForRoute handle it.
   });
 
-  const shouldIndex = blockers.length === 0 && qualityScore >= 50;
+  const shouldIndex = blockers.length === 0 && (input.routeType === 'static-page' || qualityScore >= 50);
 
   return {
     index: shouldIndex,

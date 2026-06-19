@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { ArrowLeft, Landmark, Heart, ShieldAlert } from 'lucide-react';
 import SeoSchema from '@/app/components/seo-schema';
 import EditorialDisclosure from '@/components/editorial-disclosure';
-import { evaluateSeoPolicy, robotsForPolicy } from '@/lib/seo-policy';
+import { evaluateSeoPolicy, robotsForPolicy, assertNoPlaceholderData } from '@/lib/seo-policy';
 
 
 type Props = {
@@ -45,14 +45,21 @@ export async function generateMetadata({ params }: Props) {
 
   const programs = await getProgramsForCategory(stateData.id, category);
 
+  const dates = programs.map(p => p.last_verified_date).filter((d): d is string => !!d);
+  const lastVerifiedDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
+  const scores = programs.map(p => p.confidence_score).filter((s): s is number => s !== null && s !== undefined);
+  const confidenceScore = scores.length > 0 ? (scores.reduce((sum, s) => sum + s, 0) / scores.length) / 5.0 : null;
+  const hasOfficialSource = programs.length > 0 && programs.some(p => !!p.official_source_url);
+  const hasNoPlaceholderData = programs.every(p => assertNoPlaceholderData(JSON.stringify(p)));
+
   const policy = evaluateSeoPolicy({
     routeType: 'category-hub',
     stateId: stateData.id,
     entityCount: programs.length,
-    confidenceScore: 0.9,
-    hasOfficialSource: true,
-    lastVerifiedDate: '2026-06-19',
-    hasNoPlaceholderData: true
+    confidenceScore,
+    hasOfficialSource,
+    lastVerifiedDate,
+    hasNoPlaceholderData
   });
 
   return constructMetadata({
@@ -70,6 +77,8 @@ interface CategoryProgram {
   who_it_is_for: string | null;
   who_might_qualify: string | null;
   official_source_url?: string | null;
+  confidence_score?: number | null;
+  last_verified_date?: string | null;
 }
 
 // Fetch programs for a specific state and category
@@ -235,21 +244,30 @@ export default async function BenefitCategoryPage({ params }: Props) {
 
           {/* Evaluate policy for rendering EditorialDisclosure */}
           {(() => {
+            const dates = programs.map(p => p.last_verified_date).filter((d): d is string => !!d);
+            const lastVerifiedDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
+            const scores = programs.map(p => p.confidence_score).filter((s): s is number => s !== null && s !== undefined);
+            const confidenceScore = scores.length > 0 ? (scores.reduce((sum, s) => sum + s, 0) / scores.length) / 5.0 : null;
+            const hasOfficialSource = programs.length > 0 && programs.some(p => !!p.official_source_url);
+            const hasNoPlaceholderData = programs.every(p => assertNoPlaceholderData(JSON.stringify(p)));
+
             const policy = evaluateSeoPolicy({
               routeType: 'category-hub',
               stateId: stateData.id,
               entityCount: programs.length,
-              confidenceScore: 0.9,
-              hasOfficialSource: true,
-              lastVerifiedDate: '2026-06-19',
-              hasNoPlaceholderData: true
+              confidenceScore,
+              hasOfficialSource,
+              lastVerifiedDate,
+              hasNoPlaceholderData
             });
+            const sourceUrl = programs.find(p => !!p.official_source_url)?.official_source_url || undefined;
+            const verificationState = policy.index && sourceUrl ? 'official-verified' : 'unverified';
             return (
               <EditorialDisclosure
-                verificationState={policy.index ? 'official-verified' : 'unverified'}
+                verificationState={verificationState}
                 agencyName={stateConfig.ddAgency}
-                lastVerifiedDate={policy.index ? '2026-06-19' : null}
-                policyCitation={policy.index ? `${stateData.name} State Waiver Code` : undefined}
+                sourceUrl={sourceUrl}
+                lastVerifiedDate={policy.index ? lastVerifiedDate : null}
                 nextSteps={[
                   'Locate your county intake contacts using our directory search.',
                   'Schedule a screening assessment with the local office.',

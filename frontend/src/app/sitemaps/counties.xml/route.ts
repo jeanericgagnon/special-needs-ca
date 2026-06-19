@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server';
-import { getCounties, getCountyDetails, getProgramsForDiagnosis, getAllStates, getLocalProviders, County, ResourceProvider, Program } from '@/lib/db';
-import { DIAGNOSES, slugifyDiagnosis } from '@/lib/diagnoses';
-import { evaluateSeoPolicy, shouldIncludeInSitemap, assertNoPlaceholderData } from '@/lib/seo-policy';
+import { getCounties, getCountyDetails, getProgramsForDiagnosis, getAllStates, getLocalProviders, County, ResourceProvider, Program, navigatorDb, DbProgram } from '@/lib/db';
+import { evaluateSeoPolicy, shouldIncludeInSitemap, assertNoPlaceholderData, SeoPolicyResult } from '@/lib/seo-policy';
 import { NON_CA_VERIFIED_COUNTIES } from '@/lib/verifiedCounties';
 
 // Sitemap expansion batch configuration
@@ -22,7 +21,6 @@ const TOP_25_CA_COUNTIES = [
 
 export async function GET() {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ablefull.org';
-  const today = '2026-06-19';
 
   let allCounties: County[] = [];
   try {
@@ -51,28 +49,59 @@ export async function GET() {
     }
   }
 
-  // Filter counties based on SITEMAP_BATCH configuration & centralized SEO policy
-  const counties = allCounties.filter(c => {
+  const countiesPolicyMap = new Map<string, { policy: SeoPolicyResult, lastVerifiedDate: string | null }>();
+
+  // Pre-calculate county-hub policy for each county
+  for (const c of allCounties) {
     const stateId = c.state_id || 'california';
     const details = countyDetailsMap.get(c.id);
-    const isCaCounty = stateId === 'california' && ['los-angeles', 'orange', 'sacramento', 'san-francisco'].includes(c.id);
-    const isNonCa = NON_CA_VERIFIED_COUNTIES.includes(c.id);
     const hasRequiredContactInfo = !!(details?.countyOffices && details.countyOffices.length > 0);
     const hasNoPlaceholderData = details ? assertNoPlaceholderData(JSON.stringify(details)) : false;
+
+    let confidenceScore: number | null = null;
+    let lastVerifiedDate: string | null = null;
+    let hasOfficialSource = !!details?.website;
+
+    if (details) {
+      const rcDates = (details.regionalCenters || []).map(rc => rc.last_verified_date).filter(Boolean) as string[];
+      const sdDates = (details.schoolDistricts || []).map(sd => sd.last_verified_date).filter(Boolean) as string[];
+      const coDates = (details.countyOffices || []).map(co => co.last_verified_date).filter(Boolean) as string[];
+      const allDates = [...rcDates, ...sdDates, ...coDates];
+      lastVerifiedDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
+
+      const rcScores = (details.regionalCenters || []).map(rc => rc.confidence_score).filter(s => s !== null && s !== undefined);
+      const sdScores = (details.schoolDistricts || []).map(sd => sd.confidence_score !== null && sd.confidence_score !== undefined ? sd.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
+      const coScores = (details.countyOffices || []).map(co => co.confidence_score !== null && co.confidence_score !== undefined ? co.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
+      const allScores = [...rcScores, ...sdScores, ...coScores];
+      confidenceScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
+
+      if ((details.regionalCenters || []).some(rc => !!rc.source_url) ||
+          (details.schoolDistricts || []).some(sd => !!sd.source_url) ||
+          (details.countyOffices || []).some(co => !!co.source_url)) {
+        hasOfficialSource = true;
+      }
+    }
 
     const policy = evaluateSeoPolicy({
       routeType: 'county-hub',
       stateId,
       countyId: c.id,
       entityCount: details?.schoolDistricts?.length || 0,
-      hasOfficialSource: !!details?.website,
-      lastVerifiedDate: details?.regionalCenters?.[0]?.last_verified_date || today,
-      confidenceScore: (isCaCounty || isNonCa) ? 0.9 : 0.4,
+      hasOfficialSource,
+      lastVerifiedDate,
+      confidenceScore,
       hasRequiredContactInfo,
       hasNoPlaceholderData
     });
 
-    if (!shouldIncludeInSitemap(policy)) return false;
+    countiesPolicyMap.set(c.id, { policy, lastVerifiedDate });
+  }
+
+  // Filter counties based on SITEMAP_BATCH configuration & centralized SEO policy
+  const counties = allCounties.filter(c => {
+    const stateId = c.state_id || 'california';
+    const policyInfo = countiesPolicyMap.get(c.id);
+    if (!policyInfo || !shouldIncludeInSitemap(policyInfo.policy)) return false;
 
     // Apply SITEMAP_BATCH filters
     if (SITEMAP_BATCH === 1 && stateId === 'california') {
@@ -99,10 +128,10 @@ export async function GET() {
   }
 
   const states = await getAllStates();
-
+  
+  // Omit lastmod for benefits index since it is static
   let xmlUrls = `  <url>
     <loc>${baseUrl}/benefits</loc>
-    <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>\n`;
@@ -110,43 +139,52 @@ export async function GET() {
   // 1. County root directories (/benefits/[state]/[county])
   counties.forEach(county => {
     const stateId = county.state_id || 'california';
+    const policyInfo = countiesPolicyMap.get(county.id);
+    const lastmodTag = policyInfo?.lastVerifiedDate ? `\n    <lastmod>${policyInfo.lastVerifiedDate}</lastmod>` : '';
     xmlUrls += `  <url>
-    <loc>${baseUrl}/benefits/${stateId}/${county.id}</loc>
-    <lastmod>${today}</lastmod>
+    <loc>${baseUrl}/benefits/${stateId}/${county.id}</loc>${lastmodTag}
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>\n`;
     xmlUrls += `  <url>
-    <loc>${baseUrl}/counties/${stateId}/${county.id}</loc>
-    <lastmod>${today}</lastmod>
+    <loc>${baseUrl}/counties/${stateId}/${county.id}</loc>${lastmodTag}
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>\n`;
   });
 
   // 2. Diagnosis directories (/benefits/[state]/[diagnosis])
-  states.forEach(st => {
+  for (const st of states) {
+    let statePrograms: DbProgram[] = [];
+    try {
+      statePrograms = await navigatorDb.prepare('SELECT * FROM programs WHERE state_id = ?').all(st.id) as DbProgram[];
+    } catch {}
+    const dates = statePrograms.map(p => p.last_verified_date).filter(Boolean) as string[];
+    const minDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
+    const scores = statePrograms.map(p => p.confidence_score).filter(s => s !== null && s !== undefined);
+    const avgScore = scores.length > 0 ? (scores.reduce((sum, s) => sum + s, 0) / scores.length) / 5.0 : null;
+
     diagnosesSlugs.forEach(diag => {
       const policy = evaluateSeoPolicy({
         routeType: 'condition-hub',
         stateId: st.id,
         diagnosisId: diag,
-        confidenceScore: 0.9,
-        hasOfficialSource: true,
-        lastVerifiedDate: today,
-        hasNoPlaceholderData: true
+        confidenceScore: avgScore,
+        hasOfficialSource: statePrograms.length > 0 && statePrograms.some(p => !!p.official_source_url),
+        lastVerifiedDate: minDate,
+        hasNoPlaceholderData: statePrograms.every(p => assertNoPlaceholderData(JSON.stringify(p)))
       });
 
       if (shouldIncludeInSitemap(policy)) {
+        const lastmodTag = minDate ? `\n    <lastmod>${minDate}</lastmod>` : '';
         xmlUrls += `  <url>
-    <loc>${baseUrl}/benefits/${st.id}/${diag}</loc>
-    <lastmod>${today}</lastmod>
+    <loc>${baseUrl}/benefits/${st.id}/${diag}</loc>${lastmodTag}
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>\n`;
       }
     });
-  });
+  }
 
   // 3. County x Diagnosis leaves (/benefits/[state]/[diagnosis]/[county])
   if (SITEMAP_BATCH >= 4) {
@@ -165,9 +203,33 @@ export async function GET() {
         const playgrounds = providers.filter((p) => p.categories === 'playground');
         const clinics = providers.filter((p) => p.categories === 'therapy-clinic');
         const groups = providers.filter((p) => p.categories === 'support-group');
-        const hasRealLocalAssets = (playgrounds.length > 0 || clinics.length > 0 || groups.length > 0) || (county.id === 'los-angeles' || county.id === 'orange');
+        const hasRealLocalAssets = playgrounds.length > 0 || clinics.length > 0 || groups.length > 0;
         const hasRequiredContactInfo = !!(countyDetails?.countyOffices && countyDetails.countyOffices.length > 0);
         const hasNoPlaceholderData = countyDetails ? assertNoPlaceholderData(JSON.stringify(countyDetails)) : false;
+
+        let confidenceScore: number | null = null;
+        let lastVerifiedDate: string | null = null;
+        let hasOfficialSource = !!countyDetails?.website;
+
+        if (countyDetails) {
+          const rcDates = (countyDetails.regionalCenters || []).map(rc => rc.last_verified_date).filter(Boolean) as string[];
+          const sdDates = (countyDetails.schoolDistricts || []).map(sd => sd.last_verified_date).filter(Boolean) as string[];
+          const coDates = (countyDetails.countyOffices || []).map(co => co.last_verified_date).filter(Boolean) as string[];
+          const allDates = [...rcDates, ...sdDates, ...coDates];
+          lastVerifiedDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
+
+          const rcScores = (countyDetails.regionalCenters || []).map(rc => rc.confidence_score).filter(s => s !== null && s !== undefined);
+          const sdScores = (countyDetails.schoolDistricts || []).map(sd => sd.confidence_score !== null && sd.confidence_score !== undefined ? sd.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
+          const coScores = (countyDetails.countyOffices || []).map(co => co.confidence_score !== null && co.confidence_score !== undefined ? co.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
+          const allScores = [...rcScores, ...sdScores, ...coScores];
+          confidenceScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
+
+          if ((countyDetails.regionalCenters || []).some(rc => !!rc.source_url) ||
+              (countyDetails.schoolDistricts || []).some(sd => !!sd.source_url) ||
+              (countyDetails.countyOffices || []).some(co => !!co.source_url)) {
+            hasOfficialSource = true;
+          }
+        }
 
         const policy = evaluateSeoPolicy({
           routeType: 'county-condition',
@@ -177,16 +239,16 @@ export async function GET() {
           hasRealLocalAssets,
           hasRequiredContactInfo,
           hasNoPlaceholderData,
-          confidenceScore: 0.9,
-          hasOfficialSource: true,
-          lastVerifiedDate: today
+          confidenceScore,
+          hasOfficialSource,
+          lastVerifiedDate
         });
 
         if (!shouldIncludeInSitemap(policy)) return;
 
+        const lastmodTag = lastVerifiedDate ? `\n    <lastmod>${lastVerifiedDate}</lastmod>` : '';
         xmlUrls += `  <url>
-      <loc>${baseUrl}/benefits/${stateId}/${diag}/${county.id}</loc>
-      <lastmod>${today}</lastmod>
+      <loc>${baseUrl}/benefits/${stateId}/${diag}/${county.id}</loc>${lastmodTag}
       <changefreq>weekly</changefreq>
       <priority>0.7</priority>
     </url>\n`;

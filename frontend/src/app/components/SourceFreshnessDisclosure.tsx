@@ -13,7 +13,30 @@ interface SourceFreshnessDisclosureProps {
 }
 
 export default function SourceFreshnessDisclosure({ sources }: SourceFreshnessDisclosureProps) {
-  if (!sources || sources.length === 0) return null;
+  if (!sources || sources.length === 0) {
+    return (
+      <div 
+        className="glass-panel" 
+        style={{ 
+          marginTop: '3.5rem', 
+          padding: '1.5rem 2rem', 
+          background: 'linear-gradient(135deg, rgba(180, 83, 9, 0.02) 0%, rgba(180, 83, 9, 0.05) 100%)',
+          border: '1px solid rgba(180, 83, 9, 0.1)',
+          borderRadius: '20px',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '0.5rem'
+        }}
+      >
+        <h4 style={{ fontSize: '0.88rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em', color: '#b45309', margin: 0, display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+          <HelpCircle size={16} /> Source Verification Pending
+        </h4>
+        <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', margin: 0, lineHeight: 1.5 }}>
+          There are currently no verified official sources or database-backed freshness records linked to this directory path. This listing is pending verification and is not indexed for search engines.
+        </p>
+      </div>
+    );
+  }
 
   return (
     <div 

@@ -94,7 +94,7 @@ export default function WaiverVaultPanel() {
       setUploadingWaiver(false);
       if (waiverType === 'hcbs-dd-waiver') {
         setWaiverName(`${currentChild.nickname} - ${waiverProg} Authorization`);
-        setWaiverEffectiveDate("2026-06-01");
+        setWaiverEffectiveDate(new Date().getFullYear() + "-06-01");
         setWaiverExpirationDate("2027-05-31");
         setWaiverHours(32);
         setCustomOcrText(`State of ${stateName} - ${ddAgencyName}\nHOME AND COMMUNITY-BASED SERVICES WAIVER PROGRAM\nIndividual Support Plan Authorization Record\nClient Nickname: ${currentChild.nickname}\nStatus: Active / Certified\nAuthorized Respite Hours: 32 Hours per Month\nApproval Authority: ${catchment}\nAuthorized Period: 06/01/2026 to 05/31/2027`);

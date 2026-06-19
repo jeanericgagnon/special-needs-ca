@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { ArrowLeft, CheckCircle2, ShieldCheck, Scale, FileText } from 'lucide-react';
 import SeoSchema from '@/app/components/seo-schema';
 import EditorialDisclosure from '@/components/editorial-disclosure';
-import { evaluateSeoPolicy, robotsForPolicy } from '@/lib/seo-policy';
+import { evaluateSeoPolicy, robotsForPolicy, assertNoPlaceholderData } from '@/lib/seo-policy';
 
 
 type Props = {
@@ -26,14 +26,24 @@ export async function generateMetadata({ params }: Props) {
 
   const programs = await getProgramsForState(stateData.id);
 
+  const dates = programs.map(p => p.last_verified_date).filter((d): d is string => !!d);
+  const lastVerifiedDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
+  const scores = programs.map(p => p.confidence_score).filter((s): s is number => s !== null);
+  const confidenceScore = scores.length > 0 ? (scores.reduce((sum, s) => sum + s, 0) / scores.length) / 5.0 : null;
+
+  const hasOfficialSource = programs.length >= 2 && programs.filter(p => !!p.official_source_url).length >= 2;
+  const hasEligibilityRules = programs.filter(p => p.rules_count > 0).length >= 2;
+  const hasNoPlaceholderData = programs.every(p => assertNoPlaceholderData(JSON.stringify(p)));
+
   const policy = evaluateSeoPolicy({
     routeType: 'comparison',
     stateId: stateData.id,
     entityCount: programs.length,
-    confidenceScore: 0.9,
-    hasOfficialSource: true,
-    lastVerifiedDate: '2026-06-19',
-    hasNoPlaceholderData: true
+    confidenceScore,
+    hasOfficialSource,
+    lastVerifiedDate,
+    hasNoPlaceholderData,
+    hasEligibilityRules
   });
 
   return constructMetadata({
@@ -54,6 +64,9 @@ interface ProgramWithRules {
   official_source_url?: string | null;
   min_age: number;
   max_age: number;
+  last_verified_date: string | null;
+  confidence_score: number | null;
+  rules_count: number;
 }
 
 // Fetch programs for a specific state
@@ -68,10 +81,10 @@ async function getProgramsForState(stateId: string): Promise<ProgramWithRules[]>
     const programsWithRules: ProgramWithRules[] = [];
     for (const row of rows) {
       const rules = await navigatorDb.prepare(`
-        SELECT MIN(min_age_years) as min_age, MAX(max_age_years) as max_age
+        SELECT COUNT(*) as count, MIN(min_age_years) as min_age, MAX(max_age_years) as max_age
         FROM program_eligibility_rules
         WHERE program_id = ?
-      `).get(row.id as string | number) as { min_age: number | null; max_age: number | null } | undefined;
+      `).get(row.id as string | number) as { count: number; min_age: number | null; max_age: number | null } | undefined;
       
       programsWithRules.push({
         id: row.id as string | number,
@@ -79,10 +92,13 @@ async function getProgramsForState(stateId: string): Promise<ProgramWithRules[]>
         description: row.description as string | null,
         who_it_is_for: row.who_it_is_for as string | null,
         who_might_qualify: row.who_might_qualify as string | null,
-        income_limit: (row.income_limit || 'Medi-Cal standard / None') as string,
+        income_limit: (row.income_limit || 'None specified') as string,
         official_source_url: row.official_source_url as string | null,
         min_age: rules && rules.min_age !== null ? Number(rules.min_age) : 0,
         max_age: rules && rules.max_age !== null ? Number(rules.max_age) : 21,
+        last_verified_date: row.last_verified_date as string | null,
+        confidence_score: row.confidence_score !== undefined && row.confidence_score !== null ? Number(row.confidence_score) : null,
+        rules_count: rules?.count || 0,
       });
     }
     return programsWithRules;
@@ -185,6 +201,8 @@ export default async function StateComparisonPage({ params }: Props) {
                     <th style={{ padding: '0.75rem 0.5rem', fontWeight: 700 }}>Target Group</th>
                     <th style={{ padding: '0.75rem 0.5rem', fontWeight: 700 }}>Age Limit</th>
                     <th style={{ padding: '0.75rem 0.5rem', fontWeight: 700 }}>Income Rules</th>
+                    <th style={{ padding: '0.75rem 0.5rem', fontWeight: 700 }}>Official Source</th>
+                    <th style={{ padding: '0.75rem 0.5rem', fontWeight: 700 }}>Last Verified</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -197,7 +215,19 @@ export default async function StateComparisonPage({ params }: Props) {
                       </td>
                       <td style={{ padding: '1rem 0.5rem', color: 'var(--text-main)' }}>{prog.who_it_is_for || 'Any diagnosis'}</td>
                       <td style={{ padding: '1rem 0.5rem' }}>{prog.min_age} to {prog.max_age} yrs</td>
-                      <td style={{ padding: '1rem 0.5rem', color: 'var(--text-light)' }}>{prog.income_limit || 'Standard Medicaid rules'}</td>
+                      <td style={{ padding: '1rem 0.5rem', color: 'var(--text-light)' }}>{prog.income_limit || 'None specified'}</td>
+                      <td style={{ padding: '1rem 0.5rem' }}>
+                        {prog.official_source_url ? (
+                          <a href={prog.official_source_url} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>
+                            Link
+                          </a>
+                        ) : (
+                          'None'
+                        )}
+                      </td>
+                      <td style={{ padding: '1rem 0.5rem', color: 'var(--text-light)' }}>
+                        {prog.last_verified_date || 'Pending'}
+                      </td>
                     </tr>
                   ))}
                 </tbody>
@@ -207,21 +237,33 @@ export default async function StateComparisonPage({ params }: Props) {
 
           {/* Evaluate policy for rendering EditorialDisclosure */}
           {(() => {
+            const dates = programs.map(p => p.last_verified_date).filter((d): d is string => !!d);
+            const lastVerifiedDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
+            const scores = programs.map(p => p.confidence_score).filter((s): s is number => s !== null);
+            const confidenceScore = scores.length > 0 ? (scores.reduce((sum, s) => sum + s, 0) / scores.length) / 5.0 : null;
+
+            const hasOfficialSource = programs.length >= 2 && programs.filter(p => !!p.official_source_url).length >= 2;
+            const hasEligibilityRules = programs.filter(p => p.rules_count > 0).length >= 2;
+            const hasNoPlaceholderData = programs.every(p => assertNoPlaceholderData(JSON.stringify(p)));
+
             const policy = evaluateSeoPolicy({
               routeType: 'comparison',
               stateId: stateData.id,
               entityCount: programs.length,
-              confidenceScore: 0.9,
-              hasOfficialSource: true,
-              lastVerifiedDate: '2026-06-19',
-              hasNoPlaceholderData: true
+              confidenceScore,
+              hasOfficialSource,
+              lastVerifiedDate,
+              hasNoPlaceholderData,
+              hasEligibilityRules
             });
+            const sourceUrl = programs.find(p => !!p.official_source_url)?.official_source_url || undefined;
+            const verificationState = policy.index && sourceUrl ? 'official-verified' : 'unverified';
             return (
               <EditorialDisclosure
-                verificationState={policy.index ? 'official-verified' : 'unverified'}
+                verificationState={verificationState}
                 agencyName={stateConfig.ddAgency}
-                lastVerifiedDate={policy.index ? '2026-06-19' : null}
-                policyCitation={policy.index ? `${stateData.name} State Waiver Manuals` : undefined}
+                sourceUrl={sourceUrl}
+                lastVerifiedDate={policy.index ? lastVerifiedDate : null}
                 nextSteps={[
                   'Obtain a written pediatric developmental clinical evaluation.',
                   'Submit intake applications to the respective county agencies listed in our directories.',

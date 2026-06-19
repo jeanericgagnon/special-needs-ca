@@ -38,7 +38,7 @@ export default function AppealsCenterPanel({ isSpanish = false }: AppealsCenterP
   const [childDob, setChildDob] = useState('');
   const [coordinatorName, setCoordinatorName] = useState('');
 
-  const [iepSubmissionDate, setIepSubmissionDate] = useState('2026-06-01');
+  const [iepSubmissionDate, setIepSubmissionDate] = useState('');
 
   // Specific letter settings
   const [schoolDistrict, setSchoolDistrict] = useState('Los Angeles Unified School District (LAUSD)');

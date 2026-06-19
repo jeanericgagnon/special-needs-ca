@@ -1,57 +1,84 @@
 import { NextResponse } from 'next/server';
 import { SEO_CLUSTERS } from '@/lib/seo-data';
-import { getProgramBySlug, navigatorDb, getProgramApplicationSteps, getProgramDocumentRequirements } from '@/lib/db';
+import { getProgramBySlug, navigatorDb, getProgramApplicationSteps, getProgramDocumentRequirements, DbProgram } from '@/lib/db';
 import { evaluateSeoPolicy, shouldIncludeInSitemap, assertNoPlaceholderData } from '@/lib/seo-policy';
 
 export async function GET() {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ablefull.org';
-  const today = '2026-06-19';
+
+  const verifiedStatesList = ['california', 'texas', 'florida', 'pennsylvania', 'new-york', 'ohio', 'illinois'];
+  const stateProgramsMap: Record<string, DbProgram[]> = {};
+  for (const st of verifiedStatesList) {
+    try {
+      stateProgramsMap[st] = await navigatorDb.prepare('SELECT * FROM programs WHERE state_id = ?').all(st) as DbProgram[];
+    } catch {
+      stateProgramsMap[st] = [];
+    }
+  }
 
   const rawStaticUrls = [
-    { loc: '/', changefreq: 'monthly', priority: '1.0', lastmod: today, routeType: 'state-hub', stateId: 'california' },
-    { loc: '/benefits', changefreq: 'weekly', priority: '0.9', lastmod: today, routeType: 'state-hub', stateId: 'california' },
-    { loc: '/advocates', changefreq: 'weekly', priority: '0.7', lastmod: today, routeType: 'state-hub', stateId: 'california' },
-    { loc: '/forms', changefreq: 'weekly', priority: '0.8', lastmod: today, routeType: 'state-hub', stateId: 'california' },
+    { loc: '/', changefreq: 'monthly', priority: '1.0', routeType: 'static-page', stateId: '' },
+    { loc: '/benefits', changefreq: 'weekly', priority: '0.9', routeType: 'static-page', stateId: '' },
+    { loc: '/advocates', changefreq: 'weekly', priority: '0.7', routeType: 'static-page', stateId: '' },
+    { loc: '/forms', changefreq: 'weekly', priority: '0.8', routeType: 'static-page', stateId: '' },
     
     // State Hubs
-    { loc: '/benefits/california', changefreq: 'weekly', priority: '0.9', lastmod: today, routeType: 'state-hub', stateId: 'california' },
-    { loc: '/counties/california', changefreq: 'weekly', priority: '0.85', lastmod: today, routeType: 'state-hub', stateId: 'california' },
-    { loc: '/benefits/texas', changefreq: 'weekly', priority: '0.9', lastmod: today, routeType: 'state-hub', stateId: 'texas' },
-    { loc: '/counties/texas', changefreq: 'weekly', priority: '0.85', lastmod: today, routeType: 'state-hub', stateId: 'texas' },
-    { loc: '/benefits/florida', changefreq: 'weekly', priority: '0.9', lastmod: today, routeType: 'state-hub', stateId: 'florida' },
-    { loc: '/counties/florida', changefreq: 'weekly', priority: '0.85', lastmod: today, routeType: 'state-hub', stateId: 'florida' },
-    { loc: '/benefits/pennsylvania', changefreq: 'weekly', priority: '0.9', lastmod: today, routeType: 'state-hub', stateId: 'pennsylvania' },
-    { loc: '/counties/pennsylvania', changefreq: 'weekly', priority: '0.85', lastmod: today, routeType: 'state-hub', stateId: 'pennsylvania' },
-    { loc: '/benefits/new-york', changefreq: 'weekly', priority: '0.9', lastmod: today, routeType: 'state-hub', stateId: 'new-york' },
-    { loc: '/counties/new-york', changefreq: 'weekly', priority: '0.85', lastmod: today, routeType: 'state-hub', stateId: 'new-york' },
-    { loc: '/benefits/ohio', changefreq: 'weekly', priority: '0.9', lastmod: today, routeType: 'state-hub', stateId: 'ohio' },
-    { loc: '/counties/ohio', changefreq: 'weekly', priority: '0.85', lastmod: today, routeType: 'state-hub', stateId: 'ohio' },
-    { loc: '/benefits/illinois', changefreq: 'weekly', priority: '0.9', lastmod: today, routeType: 'state-hub', stateId: 'illinois' },
-    { loc: '/counties/illinois', changefreq: 'weekly', priority: '0.85', lastmod: today, routeType: 'state-hub', stateId: 'illinois' }
+    { loc: '/benefits/california', changefreq: 'weekly', priority: '0.9', routeType: 'state-hub', stateId: 'california' },
+    { loc: '/counties/california', changefreq: 'weekly', priority: '0.85', routeType: 'state-hub', stateId: 'california' },
+    { loc: '/benefits/texas', changefreq: 'weekly', priority: '0.9', routeType: 'state-hub', stateId: 'texas' },
+    { loc: '/counties/texas', changefreq: 'weekly', priority: '0.85', routeType: 'state-hub', stateId: 'texas' },
+    { loc: '/benefits/florida', changefreq: 'weekly', priority: '0.9', routeType: 'state-hub', stateId: 'florida' },
+    { loc: '/counties/florida', changefreq: 'weekly', priority: '0.85', routeType: 'state-hub', stateId: 'florida' },
+    { loc: '/benefits/pennsylvania', changefreq: 'weekly', priority: '0.9', routeType: 'state-hub', stateId: 'pennsylvania' },
+    { loc: '/counties/pennsylvania', changefreq: 'weekly', priority: '0.85', routeType: 'state-hub', stateId: 'pennsylvania' },
+    { loc: '/benefits/new-york', changefreq: 'weekly', priority: '0.9', routeType: 'state-hub', stateId: 'new-york' },
+    { loc: '/counties/new-york', changefreq: 'weekly', priority: '0.85', routeType: 'state-hub', stateId: 'new-york' },
+    { loc: '/benefits/ohio', changefreq: 'weekly', priority: '0.9', routeType: 'state-hub', stateId: 'ohio' },
+    { loc: '/counties/ohio', changefreq: 'weekly', priority: '0.85', routeType: 'state-hub', stateId: 'ohio' },
+    { loc: '/benefits/illinois', changefreq: 'weekly', priority: '0.9', routeType: 'state-hub', stateId: 'illinois' },
+    { loc: '/counties/illinois', changefreq: 'weekly', priority: '0.85', routeType: 'state-hub', stateId: 'illinois' }
   ];
 
   // We only include state hubs if they are verified states
   const filteredStaticUrls = [];
   for (const url of rawStaticUrls) {
-    const policy = evaluateSeoPolicy({
-      routeType: 'state-hub',
-      stateId: url.stateId,
-      confidenceScore: 0.95,
-      hasOfficialSource: true,
-      lastVerifiedDate: today,
-      hasNoPlaceholderData: true
-    });
-    if (shouldIncludeInSitemap(policy)) {
-      filteredStaticUrls.push(url);
+    if (url.routeType === 'static-page') {
+      const policy = evaluateSeoPolicy({
+        routeType: 'static-page',
+        hasNoPlaceholderData: true
+      });
+      if (shouldIncludeInSitemap(policy)) {
+        filteredStaticUrls.push({ ...url, lastmod: null });
+      }
+    } else {
+      const stateProgs = stateProgramsMap[url.stateId] || [];
+      const dates = stateProgs.map(p => p.last_verified_date).filter(Boolean) as string[];
+      const minDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
+      const scores = stateProgs.map(p => p.confidence_score).filter(s => s !== null && s !== undefined);
+      const avgScore = scores.length > 0 ? (scores.reduce((sum, s) => sum + s, 0) / scores.length) / 5.0 : null;
+
+      const policy = evaluateSeoPolicy({
+        routeType: 'state-hub',
+        stateId: url.stateId,
+        confidenceScore: avgScore,
+        hasOfficialSource: stateProgs.length > 0 && stateProgs.some(p => !!p.official_source_url),
+        lastVerifiedDate: minDate,
+        hasNoPlaceholderData: stateProgs.every(p => assertNoPlaceholderData(JSON.stringify(p)))
+      });
+      if (shouldIncludeInSitemap(policy)) {
+        filteredStaticUrls.push({ ...url, lastmod: minDate });
+      }
     }
   }
 
-  const xmlUrls = filteredStaticUrls.map(url => `  <url>
-    <loc>${baseUrl}${url.loc}</loc>
-    <lastmod>${url.lastmod}</lastmod>
+  const xmlUrls = filteredStaticUrls.map(url => {
+    const lastmodTag = url.lastmod ? `\n    <lastmod>${url.lastmod}</lastmod>` : '';
+    return `  <url>
+    <loc>${baseUrl}${url.loc}</loc>${lastmodTag}
     <changefreq>${url.changefreq}</changefreq>
     <priority>${url.priority}</priority>
-  </url>`).join('\n');
+  </url>`;
+  }).join('\n');
 
   // Filter dynamic programs & conditions cluster pages using evaluateSeoPolicy
   const clusterXmlUrls: string[] = [];
@@ -82,7 +109,7 @@ export async function GET() {
         stateId,
         programId: cluster.slug,
         hasOfficialSource: !!prog?.source_url,
-        lastVerifiedDate: prog?.last_verified_date || today,
+        lastVerifiedDate: prog?.last_verified_date || null,
         confidenceScore,
         hasEligibilityRules,
         hasApplicationSteps,
@@ -91,28 +118,34 @@ export async function GET() {
       });
 
       if (shouldIncludeInSitemap(policy)) {
+        const lastmodTag = prog?.last_verified_date ? `\n    <lastmod>${prog.last_verified_date}</lastmod>` : '';
         clusterXmlUrls.push(`  <url>
-    <loc>${baseUrl}/${cluster.category}/${cluster.slug}</loc>
-    <lastmod>${today}</lastmod>
+    <loc>${baseUrl}/${cluster.category}/${cluster.slug}</loc>${lastmodTag}
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>`);
       }
     } else if (cluster.category === 'conditions') {
+      const statePrograms = stateProgramsMap['california'] || [];
+      const dates = statePrograms.map(p => p.last_verified_date).filter(Boolean) as string[];
+      const minDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
+      const scores = statePrograms.map(p => p.confidence_score).filter(s => s !== null && s !== undefined);
+      const confidenceScore = scores.length > 0 ? (scores.reduce((sum, s) => sum + s, 0) / scores.length) / 5.0 : null;
+
       const policy = evaluateSeoPolicy({
         routeType: 'condition-hub',
         stateId: 'california',
         diagnosisId: cluster.slug,
-        confidenceScore: 0.9,
-        hasOfficialSource: true,
-        lastVerifiedDate: today,
-        hasNoPlaceholderData: true
+        confidenceScore,
+        hasOfficialSource: statePrograms.length > 0 && statePrograms.some(p => !!p.official_source_url),
+        lastVerifiedDate: minDate,
+        hasNoPlaceholderData: statePrograms.every(p => assertNoPlaceholderData(JSON.stringify(p)))
       });
 
       if (shouldIncludeInSitemap(policy)) {
+        const lastmodTag = minDate ? `\n    <lastmod>${minDate}</lastmod>` : '';
         clusterXmlUrls.push(`  <url>
-    <loc>${baseUrl}/${cluster.category}/${cluster.slug}</loc>
-    <lastmod>${today}</lastmod>
+    <loc>${baseUrl}/${cluster.category}/${cluster.slug}</loc>${lastmodTag}
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>`);

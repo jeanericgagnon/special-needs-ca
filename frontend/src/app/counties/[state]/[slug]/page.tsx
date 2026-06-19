@@ -1,11 +1,11 @@
 import { notFound } from 'next/navigation';
-import { getCountyDetails, getCounties, getStateByIdOrCode, getAllStates } from '@/lib/db';
+import { getCountyDetails, getCounties, getStateByIdOrCode, getAllStates, SchoolDistrict, CountyOffice } from '@/lib/db';
 import { MapPin, Phone, Landmark, Globe, ArrowLeft, BookOpen, ShieldCheck, Calculator } from 'lucide-react';
 import Link from 'next/link';
 import DirectoryReviews from '@/app/dashboard/components/DirectoryReviews';
 import SeoSchema from '@/app/components/seo-schema';
 import { TrustBadge } from '@/app/counties/components/CorrectionFlow';
-import SourceFreshnessDisclosure from '@/app/components/SourceFreshnessDisclosure';
+import SourceFreshnessDisclosure, { DisclosureSource } from '@/app/components/SourceFreshnessDisclosure';
 import { getDynamicStateConfig } from '@/lib/stateConfigs';
 import { NON_CA_VERIFIED_COUNTIES } from '@/lib/verifiedCounties';
 import { getCountyMetadata, getCountyIntroCopy } from '@/lib/countySeoHelpers';
@@ -97,6 +97,37 @@ export default async function CountyPage({ params }: Props) {
   const stateConfig = getDynamicStateConfig(stateData.id, stateData.name, stateData.code);
   const countiesList = (await getCounties(stateData.id)).map(c => ({ id: c.id, name: c.name }));
   const countyWage = countyDetails.ihss_wage_rate || 18.00;
+
+  const freshnessSources: DisclosureSource[] = [];
+  if (countyDetails.regionalCenters && countyDetails.regionalCenters.length > 0) {
+    const rc = countyDetails.regionalCenters[0];
+    freshnessSources.push({
+      name: rc.name,
+      url: rc.source_url || rc.website || undefined,
+      lastReviewedDate: rc.last_verified_date,
+      verificationStatus: rc.verification_status
+    });
+  }
+  if (countyDetails.schoolDistricts && countyDetails.schoolDistricts.length > 0) {
+    countyDetails.schoolDistricts.forEach((sd: SchoolDistrict) => {
+      freshnessSources.push({
+        name: sd.name,
+        url: sd.source_url || sd.website || undefined,
+        lastReviewedDate: sd.last_verified_date,
+        verificationStatus: sd.verification_status
+      });
+    });
+  }
+  if (countyDetails.countyOffices && countyDetails.countyOffices.length > 0) {
+    countyDetails.countyOffices.forEach((office: CountyOffice) => {
+      freshnessSources.push({
+        name: office.office_name,
+        url: office.source_url || office.website || undefined,
+        lastReviewedDate: office.last_verified_date,
+        verificationStatus: office.verification_status
+      });
+    });
+  }
 
   const countyName = countyDetails.name;
   const catchmentLabel = stateConfig.catchmentName;
@@ -481,17 +512,7 @@ export default async function CountyPage({ params }: Props) {
 
       </div>
 
-      <SourceFreshnessDisclosure sources={
-        stateData.id === 'california' ? [
-          { name: 'California Department of Developmental Services', url: 'https://www.dds.ca.gov', lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' },
-          { name: 'California Department of Social Services', url: 'https://www.cdss.ca.gov', lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' },
-          { name: 'California Department of Health Care Services', url: 'https://www.dhcs.ca.gov', lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' }
-        ] : [
-          { name: stateConfig.ddAgency, url: '#', lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' },
-          { name: stateConfig.stateMedicaidAgency, url: '#', lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' },
-          { name: stateConfig.educationAgency, url: '#', lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' }
-        ]
-      } />
+      <SourceFreshnessDisclosure sources={freshnessSources} />
 
     </main>
   );

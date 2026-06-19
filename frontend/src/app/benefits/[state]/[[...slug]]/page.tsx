@@ -12,7 +12,8 @@ import {
   getAllStates,
   navigatorDb,
   getProgramApplicationSteps,
-  getProgramDocumentRequirements
+  getProgramDocumentRequirements,
+  DbProgram
 } from '@/lib/db';
 import { DIAGNOSES, slugifyDiagnosis } from '@/lib/diagnoses';
 import { getCityBySlug } from '@/lib/cities';
@@ -82,14 +83,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const catchment = config.catchmentName;
   const personalCare = config.personalCareProgram;
 
+  const statePrograms = await navigatorDb.prepare('SELECT * FROM programs WHERE state_id = ?').all(stateData.id) as DbProgram[];
+
   if (slug.length === 0) {
+    const dates = statePrograms.map(p => p.last_verified_date).filter(Boolean) as string[];
+    const lastVerifiedDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
+    const scores = statePrograms.map(p => p.confidence_score).filter(s => s !== null && s !== undefined);
+    const confidenceScore = scores.length > 0 ? (scores.reduce((sum, s) => sum + s, 0) / scores.length) / 5.0 : null;
+
     const policy = evaluateSeoPolicy({
       routeType: 'state-hub',
       stateId: stateData.id,
-      confidenceScore: 0.95,
-      hasOfficialSource: true,
-      lastVerifiedDate: '2026-06-19',
-      hasNoPlaceholderData: assertNoPlaceholderData(stateData.name)
+      confidenceScore,
+      hasOfficialSource: statePrograms.length > 0 && statePrograms.some(p => !!p.official_source_url),
+      lastVerifiedDate,
+      hasNoPlaceholderData: assertNoPlaceholderData(stateData.name) && statePrograms.every(p => assertNoPlaceholderData(JSON.stringify(p)))
     });
     return {
       title: `${stateName} Special Education & Disability Guides & Resources`,
@@ -101,13 +109,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (slug.length === 1) {
     if (slug[0].toLowerCase() === 'programs') {
+      const dates = statePrograms.map(p => p.last_verified_date).filter(Boolean) as string[];
+      const lastVerifiedDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
+      const scores = statePrograms.map(p => p.confidence_score).filter(s => s !== null && s !== undefined);
+      const confidenceScore = scores.length > 0 ? (scores.reduce((sum, s) => sum + s, 0) / scores.length) / 5.0 : null;
+
       const policy = evaluateSeoPolicy({
         routeType: 'state-hub', // treat programs index as a sub-hub under state
         stateId: stateData.id,
-        confidenceScore: 0.9,
-        hasOfficialSource: true,
-        lastVerifiedDate: '2026-06-19',
-        hasNoPlaceholderData: true
+        confidenceScore,
+        hasOfficialSource: statePrograms.length > 0 && statePrograms.some(p => !!p.official_source_url),
+        lastVerifiedDate,
+        hasNoPlaceholderData: statePrograms.every(p => assertNoPlaceholderData(JSON.stringify(p)))
       });
       return {
         title: `${stateName} Special Needs Government & Community Guides & Resources`,
@@ -126,14 +139,38 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       const hasRequiredContactInfo = !!(countyDetails?.countyOffices && countyDetails.countyOffices.length > 0);
       const hasNoPlaceholderData = countyDetails ? assertNoPlaceholderData(JSON.stringify(countyDetails)) : false;
 
+      let confidenceScore: number | null = null;
+      let lastVerifiedDate: string | null = null;
+      let hasOfficialSource = !!countyDetails?.website;
+
+      if (countyDetails) {
+        const rcDates = (countyDetails.regionalCenters || []).map(rc => rc.last_verified_date).filter(Boolean) as string[];
+        const sdDates = (countyDetails.schoolDistricts || []).map(sd => sd.last_verified_date).filter(Boolean) as string[];
+        const coDates = (countyDetails.countyOffices || []).map(co => co.last_verified_date).filter(Boolean) as string[];
+        const allDates = [...rcDates, ...sdDates, ...coDates];
+        lastVerifiedDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
+
+        const rcScores = (countyDetails.regionalCenters || []).map(rc => rc.confidence_score).filter(s => s !== null && s !== undefined);
+        const sdScores = (countyDetails.schoolDistricts || []).map(sd => sd.confidence_score !== null && sd.confidence_score !== undefined ? sd.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
+        const coScores = (countyDetails.countyOffices || []).map(co => co.confidence_score !== null && co.confidence_score !== undefined ? co.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
+        const allScores = [...rcScores, ...sdScores, ...coScores];
+        confidenceScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
+
+        if ((countyDetails.regionalCenters || []).some(rc => !!rc.source_url) ||
+            (countyDetails.schoolDistricts || []).some(sd => !!sd.source_url) ||
+            (countyDetails.countyOffices || []).some(co => !!co.source_url)) {
+          hasOfficialSource = true;
+        }
+      }
+
       const policy = evaluateSeoPolicy({
         routeType: 'county-hub',
         stateId: stateData.id,
         countyId,
         entityCount: countyDetails?.schoolDistricts?.length || 0,
-        hasOfficialSource: !!countyDetails?.website,
-        lastVerifiedDate: countyDetails?.regionalCenters?.[0]?.last_verified_date || '2026-06-19',
-        confidenceScore: (isCaCounty || isNonCa) ? 0.9 : 0.4,
+        hasOfficialSource,
+        lastVerifiedDate,
+        confidenceScore,
         hasRequiredContactInfo,
         hasNoPlaceholderData
       });
@@ -147,14 +184,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       };
     } else {
       const diagnosisId = slug[0].toLowerCase();
+      const dates = statePrograms.map(p => p.last_verified_date).filter(Boolean) as string[];
+      const lastVerifiedDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
+      const scores = statePrograms.map(p => p.confidence_score).filter(s => s !== null && s !== undefined);
+      const confidenceScore = scores.length > 0 ? (scores.reduce((sum, s) => sum + s, 0) / scores.length) / 5.0 : null;
+
       const policy = evaluateSeoPolicy({
         routeType: 'condition-hub',
         stateId: stateData.id,
         diagnosisId,
-        confidenceScore: 0.9,
-        hasOfficialSource: true,
-        lastVerifiedDate: '2026-06-19',
-        hasNoPlaceholderData: true
+        confidenceScore,
+        hasOfficialSource: statePrograms.length > 0 && statePrograms.some(p => !!p.official_source_url),
+        lastVerifiedDate,
+        hasNoPlaceholderData: statePrograms.every(p => assertNoPlaceholderData(JSON.stringify(p)))
       });
 
       const diagnosisFormatted = formatParam(diagnosisId);
@@ -194,7 +236,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         stateId: stateData.id,
         programId,
         hasOfficialSource: !!prog?.source_url,
-        lastVerifiedDate: prog?.last_verified_date || '2026-06-19',
+        lastVerifiedDate: prog?.last_verified_date || null,
         confidenceScore,
         hasEligibilityRules,
         hasApplicationSteps,
@@ -222,9 +264,33 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       const playgrounds = localProviders.filter(p => p.categories === 'playground');
       const clinics = localProviders.filter(p => p.categories === 'therapy-clinic');
       const groups = localProviders.filter(p => p.categories === 'support-group');
-      const hasRealLocalAssets = (playgrounds.length > 0 || clinics.length > 0 || groups.length > 0) || (secondSlug === 'los-angeles' || secondSlug === 'orange');
+      const hasRealLocalAssets = playgrounds.length > 0 || clinics.length > 0 || groups.length > 0;
       const hasRequiredContactInfo = !!(countyData?.countyOffices && countyData.countyOffices.length > 0);
       const hasNoPlaceholderData = countyData ? assertNoPlaceholderData(JSON.stringify(countyData)) : false;
+
+      let confidenceScore: number | null = null;
+      let lastVerifiedDate: string | null = null;
+      let hasOfficialSource = !!countyData?.website;
+
+      if (countyData) {
+        const rcDates = (countyData.regionalCenters || []).map(rc => rc.last_verified_date).filter(Boolean) as string[];
+        const sdDates = (countyData.schoolDistricts || []).map(sd => sd.last_verified_date).filter(Boolean) as string[];
+        const coDates = (countyData.countyOffices || []).map(co => co.last_verified_date).filter(Boolean) as string[];
+        const allDates = [...rcDates, ...sdDates, ...coDates];
+        lastVerifiedDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
+
+        const rcScores = (countyData.regionalCenters || []).map(rc => rc.confidence_score).filter(s => s !== null && s !== undefined);
+        const sdScores = (countyData.schoolDistricts || []).map(sd => sd.confidence_score !== null && sd.confidence_score !== undefined ? sd.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
+        const coScores = (countyData.countyOffices || []).map(co => co.confidence_score !== null && co.confidence_score !== undefined ? co.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
+        const allScores = [...rcScores, ...sdScores, ...coScores];
+        confidenceScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
+
+        if ((countyData.regionalCenters || []).some(rc => !!rc.source_url) ||
+            (countyData.schoolDistricts || []).some(sd => !!sd.source_url) ||
+            (countyData.countyOffices || []).some(co => !!co.source_url)) {
+          hasOfficialSource = true;
+        }
+      }
 
       const policy = evaluateSeoPolicy({
         routeType: 'county-condition',
@@ -234,9 +300,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         hasRealLocalAssets,
         hasRequiredContactInfo,
         hasNoPlaceholderData,
-        confidenceScore: 0.9,
-        hasOfficialSource: true,
-        lastVerifiedDate: '2026-06-19'
+        confidenceScore,
+        hasOfficialSource,
+        lastVerifiedDate
       });
 
       const countyFormatted = formatParam(secondSlug);

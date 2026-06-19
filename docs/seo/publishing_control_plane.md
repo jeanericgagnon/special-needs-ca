@@ -40,15 +40,22 @@ All pages utilize semantic JSON-LD structures to align with Google Search Consol
 
 ## Quality Assurance Checker
 
-We utilize `scripts/qa-seo-checker.js` as an automated gate. It queries the navigator database directly, emulates the control plane, and checks:
-1.  No indexable page contains `555` phone numbers or placeholder patterns.
-2.  No empty categories or sparse comparisons are marked indexable.
-3.  No invalid JSON-LD formats or missing canonical tags.
+We utilize `scripts/qa-seo-checker.ts` as an automated gate. It queries the navigator database directly, imports the centralized SEO policy, and checks:
+1. All indexable/sitemap-eligible routes pass the central quality policy.
+2. No indexable page contains placeholder patterns or `555` numbers in database fields.
+3. No empty categories or sparse comparisons are marked indexable.
+4. Source code files do not contain banned hardcoded date fallbacks, mock confidence scores, or fake citations.
 
 To run the checker:
 ```bash
 npm run seo:qa
 ```
+
+### Known Limitations
+
+* **Database-Level QA**: The checker runs assertions on raw database records, which is not the same as verifying fully rendered pages.
+* **Source-Code Scans**: Source-level string scans check for banned patterns, but do not prove that final rendered pages are 100% clean of all thin content.
+* **Future Work**: Future improvements should include a crawler that crawls built HTML pages, parses metadata, and validates schema/JSON-LD structures in a staging environment.
 
 ---
 
@@ -56,5 +63,5 @@ npm run seo:qa
 
 To unlock indexation for additional counties and states:
 1.  **Verify Contacts**: Ensure county offices have valid, non-mock phone numbers and physical addresses in the `county_offices` table.
-2.  **Populate Local Assets**: Ingest real pediatric clinics, sensory parks, and parent support groups into the `local_providers` table.
+2.  **Populate Local Assets**: Ingest real pediatric clinics, sensory parks, and parent support groups into the `resource_providers` table.
 3.  **Audit Program Rules**: Ensure waiver programs have complete eligibility rules, step-by-step applications, and document lists in `program_eligibility_rules`, `program_application_steps`, and `program_document_requirements`.
