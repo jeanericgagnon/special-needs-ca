@@ -3,6 +3,8 @@ import { SEO_CLUSTERS } from '@/lib/seo-data';
 import { getCounties } from '@/lib/db';
 import { DIAGNOSES_DETAILS } from '@/lib/diagnoses';
 import AnswerPage from '@/app/components/answer-page';
+import SeoSchema from '@/app/components/seo-schema';
+import { constructMetadata, generateBreadcrumbsSchema } from '@/lib/seo-helpers';
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -26,19 +28,22 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
   const cluster = SEO_CLUSTERS[slug];
+  
   if (cluster) {
-    return {
-      title: cluster.metaTitle,
-      description: cluster.metaDescription,
-    };
+    return constructMetadata({
+      title: cluster.metaTitle || `${cluster.title} | Ablefull`,
+      description: cluster.metaDescription || `Complete guide.`,
+      canonicalUrl: `/conditions/${slug}`,
+    });
   }
 
   const diagnosis = DIAGNOSES_DETAILS.find(d => d.id === slug);
   if (diagnosis) {
-    return {
-      title: `${diagnosis.name} Benefits in California | Complete Guide`,
+    return constructMetadata({
+      title: `${diagnosis.name} Benefits in California: Complete Parent Guide`,
       description: `Learn how to get Regional Center funding, school IEP support, and financial help for children with ${diagnosis.name} in California.`,
-    };
+      canonicalUrl: `/conditions/${slug}`,
+    });
   }
 
   return {
@@ -123,5 +128,39 @@ export default async function ConditionPage({ params }: Props) {
     ]
   };
 
-  return <AnswerPage data={dynamicData} counties={counties} />;
+  // Generate structured schemas
+  const breadcrumbList = generateBreadcrumbsSchema([
+    { name: 'Home', item: '/' },
+    { name: 'Guides', item: '/benefits' },
+    { name: 'California', item: `/benefits/california` },
+    { name: diag.name, item: `/conditions/${slug}` }
+  ]);
+
+  const medicalConditionSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalCondition',
+    name: diag.name,
+    description: diag.parent_friendly_explanation,
+    possibleTreatment: [
+      {
+        '@type': 'MedicalTherapy',
+        name: 'Occupational Therapy'
+      },
+      {
+        '@type': 'MedicalTherapy',
+        name: 'Speech-Language Therapy'
+      },
+      {
+        '@type': 'MedicalTherapy',
+        name: 'Physical Therapy'
+      }
+    ]
+  };
+
+  return (
+    <>
+      <SeoSchema data={[breadcrumbList, medicalConditionSchema]} />
+      <AnswerPage data={dynamicData} counties={counties} />
+    </>
+  );
 }

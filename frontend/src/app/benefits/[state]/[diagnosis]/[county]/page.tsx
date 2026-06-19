@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `${diagnosisFormatted} Benefits & Services in ${countyFormatted} County, ${stateCode} (2026)`,
-    description: `Access ${stateName} state support, ${config.catchmentName} intake, ${config.personalCareProgram} caregiver wages, and school IEP assistance for ${diagnosisFormatted} in ${countyFormatted} County.`,
+    description: `Find ${stateName} eligibility, ${config.catchmentName} intake, and IEP assistance for ${diagnosisFormatted} in ${countyFormatted} County.`,
     alternates: {
       canonical: `/benefits/${stateId}/${p.diagnosis}/${p.county}`
     },
@@ -203,6 +203,24 @@ export default async function SEOLandingPage({ params }: Props) {
       description: "Premier therapy clinic providing customized ABA therapy services and pediatric speech consultation.",
       x: 410,
       y: 240
+    };
+  }
+
+  // Dynamically load real local nonprofits if available in database
+  const nonprofitsToUse = countyData.localOrganizations || [];
+  if (nonprofitsToUse.length > 0) {
+    const matchedNonprofit = nonprofitsToUse.find(org => 
+      org.focus_condition?.toLowerCase() === p.diagnosis.toLowerCase() ||
+      org.name.toLowerCase().includes(p.diagnosis.toLowerCase().replace(/-/g, ' '))
+    ) || nonprofitsToUse[0];
+
+    supportGroup = {
+      name: matchedNonprofit.name,
+      address: matchedNonprofit.website || `Serving ${countyFormatted} County, ${stateCode}`,
+      phone: matchedNonprofit.phone || '',
+      description: `Vetted parent training and resource network serving ${countyFormatted} County.`,
+      x: 300,
+      y: 130
     };
   }
 
@@ -570,11 +588,31 @@ export default async function SEOLandingPage({ params }: Props) {
                 <p style={{ fontSize: '0.82rem', margin: 0, color: 'var(--text-light)', lineHeight: 1.4 }}>{therapyClinic.description}</p>
               </div>
 
-              <div style={{ background: 'white', padding: '1.25rem', borderRadius: '16px', border: '1px solid rgba(0,0,0,0.03)' }}>
-                <strong style={{ display: 'block', color: 'var(--text-main)', marginBottom: '0.4rem', fontSize: '0.95rem' }}>👥 Local Parent Chapters & Support Groups</strong>
-                <h4 style={{ fontSize: '0.9rem', fontWeight: 700, margin: 0 }}>{supportGroup.name}</h4>
-                <span style={{ fontSize: '0.78rem', color: 'var(--text-light)', display: 'block', margin: '0.2rem 0' }}>{supportGroup.address}</span>
-                <p style={{ fontSize: '0.82rem', margin: 0, color: 'var(--text-light)', lineHeight: 1.4 }}>{supportGroup.description}</p>
+              <div style={{ background: 'white', padding: '1.25rem', borderRadius: '16px', border: '1px solid rgba(0,0,0,0.03)', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                <strong style={{ display: 'block', color: 'var(--text-main)', fontSize: '0.95rem' }}>👥 Local Parent Chapters & Support Groups</strong>
+                {nonprofitsToUse.length > 0 ? (
+                  nonprofitsToUse.slice(0, 3).map((org: any, idx: number) => (
+                    <div key={org.id || idx} style={{ borderBottom: idx < Math.min(nonprofitsToUse.length, 3) - 1 ? '1px solid rgba(0,0,0,0.05)' : 'none', paddingBottom: idx < Math.min(nonprofitsToUse.length, 3) - 1 ? '0.5rem' : 0 }}>
+                      <h4 style={{ fontSize: '0.9rem', fontWeight: 700, margin: 0 }}>{org.name}</h4>
+                      {org.website && (
+                        <a href={org.website} target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.75rem', color: 'var(--primary-color)', textDecoration: 'underline', display: 'block', margin: '0.1rem 0', wordBreak: 'break-all' }}>
+                          {org.website}
+                        </a>
+                      )}
+                      {org.phone && (
+                        <span style={{ fontSize: '0.75rem', color: 'var(--text-light)', display: 'block' }}>
+                          Phone: <a href={`tel:${org.phone}`} style={{ color: 'inherit', textDecoration: 'none' }}>{org.phone}</a>
+                        </span>
+                      )}
+                    </div>
+                  ))
+                ) : (
+                  <div>
+                    <h4 style={{ fontSize: '0.9rem', fontWeight: 700, margin: 0 }}>{supportGroup.name}</h4>
+                    <span style={{ fontSize: '0.78rem', color: 'var(--text-light)', display: 'block', margin: '0.2rem 0' }}>{supportGroup.address}</span>
+                    <p style={{ fontSize: '0.82rem', margin: 0, color: 'var(--text-light)', lineHeight: 1.4 }}>{supportGroup.description}</p>
+                  </div>
+                )}
               </div>
 
             </div>

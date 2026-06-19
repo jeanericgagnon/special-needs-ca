@@ -2,6 +2,8 @@ import { notFound } from 'next/navigation';
 import { SEO_CLUSTERS } from '@/lib/seo-data';
 import { getCounties, getProgramBySlug, getAllPrograms, getStateByIdOrCode } from '@/lib/db';
 import AnswerPage from '@/app/components/answer-page';
+import SeoSchema from '@/app/components/seo-schema';
+import { constructMetadata, generateBreadcrumbsSchema } from '@/lib/seo-helpers';
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -33,27 +35,28 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
   const cluster = SEO_CLUSTERS[slug];
+  
   if (cluster) {
-    return {
-      title: cluster.metaTitle,
-      description: cluster.metaDescription,
-      alternates: {
-        canonical: `/${cluster.category}/${slug}`
-      }
-    };
+    const isIndexed = ['california', 'texas', 'florida'].includes(slug);
+    return constructMetadata({
+      title: cluster.metaTitle || `${cluster.title} | Ablefull`,
+      description: cluster.metaDescription || `Eligibility and application guide.`,
+      canonicalUrl: `/programs/${slug}`,
+      noIndex: !isIndexed,
+    });
   }
 
   const program = await getProgramBySlug(slug);
   if (program) {
     const stateData = program.state_id ? await getStateByIdOrCode(program.state_id) : null;
     const stateName = stateData ? stateData.name : 'California';
-    return {
-      title: `${program.program_name} ${stateName} Guide`,
-      description: `Learn about eligibility, requirements, and how to apply for ${program.program_name} in ${stateName}.`,
-      alternates: {
-        canonical: `/programs/${slug}`
-      }
-    };
+    const isIndexed = ['california', 'texas', 'florida'].includes(program.state_id || '');
+    return constructMetadata({
+      title: `${program.program_name} | ${stateName} Eligibility & Application Guide`,
+      description: `Learn about eligibility, income limits, and how to apply for ${program.program_name} in ${stateName}.`,
+      canonicalUrl: `/programs/${slug}`,
+      noIndex: !isIndexed,
+    });
   }
 
   return {
@@ -143,5 +146,45 @@ export default async function ProgramPage({ params }: Props) {
     ]
   };
 
-  return <AnswerPage data={dynamicData} counties={counties} />;
+  // Generate structured schemas
+  const breadcrumbList = generateBreadcrumbsSchema([
+    { name: 'Home', item: '/' },
+    { name: 'Guides', item: '/benefits' },
+    { name: stateName, item: `/benefits/${program.state_id || 'california'}` },
+    { name: program.program_name, item: `/programs/${slug}` }
+  ]);
+
+  const govServiceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'GovernmentService',
+    name: program.program_name,
+    provider: {
+      '@type': 'GovernmentOrganization',
+      name: `${stateName} Developmental Services`
+    },
+    serviceAudience: program.target_demographic,
+    description: `Eligibility and application guide for ${program.program_name} in ${stateName}.`
+  };
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: `Who qualifies for ${program.program_name} in ${stateName}?`,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: `Children in ${stateName} with diagnoses matching ${program.diagnosis_required || 'developmental delays'} between the ages of ${program.age_limit_min} and ${program.age_limit_max} years.`
+        }
+      }
+    ]
+  };
+
+  return (
+    <>
+      <SeoSchema data={[breadcrumbList, govServiceSchema, faqSchema]} />
+      <AnswerPage data={dynamicData} counties={counties} />
+    </>
+  );
 }
