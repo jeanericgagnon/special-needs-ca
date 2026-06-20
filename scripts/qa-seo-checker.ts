@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import Database from 'better-sqlite3';
-import { evaluateSeoPolicy, assertNoPlaceholderData } from '../frontend/src/lib/seo-policy';
+import { evaluateSeoPolicy, assertNoPlaceholderData, mapShortDiagToDbId } from '../frontend/src/lib/seo-policy';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -339,7 +339,110 @@ counties.forEach(county => {
   });
 });
 
-// Run source scanner
+// 5. Condition Hub Pages
+console.log('\n--- Checking Condition Hub Pages ---');
+const conditions = db.prepare('SELECT * FROM conditions').all() as any[];
+
+conditions.forEach(cond => {
+  const condId = cond.id;
+  const condPrograms = db.prepare(`
+    SELECT DISTINCT p.* FROM programs p
+    JOIN program_eligibility_rules r ON p.id = r.program_id
+    WHERE r.required_condition = ? AND p.state_id = 'california'
+  `).all(condId) as any[];
+
+  const dates = condPrograms.map(p => p.last_verified_date).filter(Boolean);
+  if (cond.last_verified_date) {
+    dates.push(cond.last_verified_date);
+  }
+  const lastVerifiedDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
+
+  const scores = condPrograms.map(p => p.confidence_score).filter(s => s !== null && s !== undefined);
+  const confidenceScore = scores.length > 0 ? (scores.reduce((sum, s) => sum + s, 0) / scores.length) / 5.0 : null;
+
+  const hasOfficialSource = (cond.source_url ? (!cond.source_url.includes('ablefull.org') && !cond.source_url.includes('california-navigator.org')) : false) || condPrograms.some(p => !!p.official_source_url);
+
+  const policy = evaluateSeoPolicy({
+    routeType: 'condition-hub',
+    stateId: 'california',
+    diagnosisId: condId,
+    confidenceScore,
+    hasOfficialSource,
+    lastVerifiedDate,
+    hasNoPlaceholderData: condPrograms.every(p => assertNoPlaceholderData(JSON.stringify(p)))
+  });
+
+  const url = `/conditions/${condId}`;
+  if (policy.index) {
+    logSuccess(`Condition Hub indexable: ${url} (Score: ${policy.qualityScore})`);
+    if (!lastVerifiedDate) {
+      logError(`Indexable Condition ${url} is missing last verified date!`);
+    }
+    if (confidenceScore === null) {
+      logError(`Indexable Condition ${url} is missing confidence score!`);
+    }
+    if (!hasOfficialSource) {
+      logError(`Indexable Condition ${url} is missing official source!`);
+    }
+  } else {
+    logSuccess(`Condition Hub noindexed (correct): ${url} (Blockers: ${policy.blockers.join(', ')})`);
+  }
+});
+
+// 6. Schema Over-Emission Scanner
+function scanFilesForSchemaOverEmission() {
+  console.log('\n--- Scanning Source Files for Schema Over-Emission ---');
+  const srcDir = path.resolve(__dirname, '../frontend/src');
+  
+  function walkDir(dir: string, fileList: string[] = []): string[] {
+    const files = fs.readdirSync(dir);
+    for (const file of files) {
+      const filePath = path.join(dir, file);
+      const stat = fs.statSync(filePath);
+      if (stat.isDirectory()) {
+        walkDir(filePath, fileList);
+      } else if (filePath.endsWith('.ts') || filePath.endsWith('.tsx')) {
+        if (!filePath.includes('qa-seo-checker')) {
+          fileList.push(filePath);
+        }
+      }
+    }
+    return fileList;
+  }
+
+  const allFiles = walkDir(srcDir);
+  let overEmissionsFound = 0;
+  
+  const schemaKeywords = ['FAQPage', 'MedicalCondition', 'GovernmentService', 'ProfessionalService', 'Park'];
+
+  for (const file of allFiles) {
+    const content = fs.readFileSync(file, 'utf8');
+    const relativePath = path.relative(path.resolve(__dirname, '..'), file);
+    
+    const foundKeywords = schemaKeywords.filter(keyword => {
+      if (keyword === 'Park') {
+        return content.includes("'Park'") || content.includes('"Park"');
+      }
+      return content.includes(keyword);
+    });
+    if (foundKeywords.length > 0) {
+      const hasGating = content.includes('policy.index') || content.includes('isIndexable') || content.includes('verifiedAdvocates') || content.includes('QA-ALLOW-SCHEMA');
+      if (!hasGating) {
+        logError(`Potential schema over-emission in ${relativePath}: contains schema keywords [${foundKeywords.join(', ')}] but lacks gating check (policy.index, isIndexable).`);
+        overEmissionsFound++;
+      }
+    }
+  }
+
+  if (overEmissionsFound === 0) {
+    logSuccess('No schema over-emission vulnerabilities found in source code files.');
+  } else {
+    console.log(`\x1b[31m[FAIL]\x1b[0m Found ${overEmissionsFound} potential schema over-emission instances.`);
+  }
+}
+
+// Run scanners
+scanFilesForSchemaOverEmission();
 scanFilesForBannedPatterns();
 
 console.log('\n--- SEO QA Verification Summary ---');

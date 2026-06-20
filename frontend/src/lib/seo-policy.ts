@@ -311,3 +311,23 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): SeoPolicyResult {
     blockers
   };
 }
+
+export function mapShortDiagToDbId(shortId: string): string {
+  switch (shortId.toLowerCase()) {
+    case 'autism-spectrum-disorder':
+      return 'autism-spectrum-disorder-asd';
+    case 'adhd':
+      return 'attention-deficit-hyperactivity-disorder-adhd';
+    case 'down-syndrome':
+      return 'down-syndrome-trisomy-21';
+    case 'speech-or-language-delay':
+    case 'speech-and-language-delay':
+      return 'speech-and-language-delay';
+    case 'cerebral-palsy':
+      return 'cerebral-palsy-cp';
+    case 'epilepsy':
+      return 'epilepsy-seizure-disorder';
+    default:
+      return shortId.toLowerCase();
+  }
+}

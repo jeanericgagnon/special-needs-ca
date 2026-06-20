@@ -5,7 +5,7 @@ import { DIAGNOSES_DETAILS } from '@/lib/diagnoses';
 import AnswerPage from '@/app/components/answer-page';
 import SeoSchema from '@/app/components/seo-schema';
 import { constructMetadata, generateBreadcrumbsSchema } from '@/lib/seo-helpers';
-import { evaluateSeoPolicy, robotsForPolicy, assertNoPlaceholderData } from '@/lib/seo-policy';
+import { evaluateSeoPolicy, robotsForPolicy, assertNoPlaceholderData, mapShortDiagToDbId } from '@/lib/seo-policy';
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -30,20 +30,33 @@ export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
   const cluster = SEO_CLUSTERS[slug];
   
-  const statePrograms = await navigatorDb.prepare("SELECT * FROM programs WHERE state_id = 'california'").all() as DbProgram[];
-  const dates = statePrograms.map(p => p.last_verified_date).filter(Boolean) as string[];
+  const mappedId = mapShortDiagToDbId(slug);
+  const conditionRow = await navigatorDb.prepare('SELECT * FROM conditions WHERE id = ?').get(mappedId) as { last_verified_date?: string; source_url?: string } | undefined;
+  const condPrograms = await navigatorDb.prepare(`
+    SELECT DISTINCT p.* FROM programs p
+    JOIN program_eligibility_rules r ON p.id = r.program_id
+    WHERE r.required_condition = ? AND p.state_id = 'california'
+  `).all(mappedId) as DbProgram[];
+
+  const dates = condPrograms.map(p => p.last_verified_date).filter((d): d is string => !!d);
+  if (conditionRow?.last_verified_date) {
+    dates.push(conditionRow.last_verified_date);
+  }
   const lastVerifiedDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
-  const scores = statePrograms.map(p => p.confidence_score).filter(s => s !== null && s !== undefined);
+
+  const scores = condPrograms.map(p => p.confidence_score).filter((s): s is number => s !== null && s !== undefined);
   const confidenceScore = scores.length > 0 ? (scores.reduce((sum, s) => sum + s, 0) / scores.length) / 5.0 : null;
+
+  const hasOfficialSource = (conditionRow?.source_url ? (!conditionRow.source_url.includes('ablefull.org') && !conditionRow.source_url.includes('california-navigator.org')) : false) || condPrograms.some(p => !!p.official_source_url);
 
   const policy = evaluateSeoPolicy({
     routeType: 'condition-hub',
     stateId: 'california',
     diagnosisId: slug,
     confidenceScore,
-    hasOfficialSource: statePrograms.length > 0 && statePrograms.some(p => !!p.official_source_url),
+    hasOfficialSource,
     lastVerifiedDate,
-    hasNoPlaceholderData: statePrograms.every(p => assertNoPlaceholderData(JSON.stringify(p)))
+    hasNoPlaceholderData: condPrograms.every(p => assertNoPlaceholderData(JSON.stringify(p)))
   });
 
   if (cluster) {
@@ -92,7 +105,7 @@ export default async function ConditionPage({ params }: Props) {
     title: `${diag.name} Benefits in California: Complete Parent Guide`,
     metaTitle: `${diag.name} Benefits California | Lanterman Act & School Aid`,
     metaDescription: `Discover what public benefits, therapies, and school support plans your child is entitled to in California for ${diag.name}.`,
-    quickAnswer: `${diag.parent_friendly_explanation} In California, children with ${diag.name} can access specialized public benefits. This includes Individualized Education Programs (IEP) in public schools, Regional Center support under the Lanterman Act if developmental criteria are met, Medi-Cal, and Supplemental Security Income (SSI).`,
+    quickAnswer: `${diag.parent_friendly_explanation} In California, children with ${diag.name} may be eligible depending on criteria for specialized public benefits. This includes Individualized Education Programs (IEP) in public schools, Regional Center support under the Lanterman Act if developmental criteria are met, Medi-Cal, and Supplemental Security Income (SSI).`,
     tldrPoints: [
       { label: 'Regional Center Focus', value: diag.regional_center_relevance === 1 ? 'High Eligibility' : 'Conditional' },
       { label: 'School IEP Support', value: diag.iep_relevance === 1 ? 'Available' : 'Conditional' },
@@ -147,6 +160,36 @@ export default async function ConditionPage({ params }: Props) {
     ]
   };
 
+  // Evaluate policy in component body
+  const mappedId = mapShortDiagToDbId(slug);
+  const conditionRow = await navigatorDb.prepare('SELECT * FROM conditions WHERE id = ?').get(mappedId) as { last_verified_date?: string; source_url?: string } | undefined;
+  const condPrograms = await navigatorDb.prepare(`
+    SELECT DISTINCT p.* FROM programs p
+    JOIN program_eligibility_rules r ON p.id = r.program_id
+    WHERE r.required_condition = ? AND p.state_id = 'california'
+  `).all(mappedId) as DbProgram[];
+
+  const dates = condPrograms.map(p => p.last_verified_date).filter((d): d is string => !!d);
+  if (conditionRow?.last_verified_date) {
+    dates.push(conditionRow.last_verified_date);
+  }
+  const lastVerifiedDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
+
+  const scores = condPrograms.map(p => p.confidence_score).filter((s): s is number => s !== null && s !== undefined);
+  const confidenceScore = scores.length > 0 ? (scores.reduce((sum, s) => sum + s, 0) / scores.length) / 5.0 : null;
+
+  const hasOfficialSource = (conditionRow?.source_url ? (!conditionRow.source_url.includes('ablefull.org') && !conditionRow.source_url.includes('california-navigator.org')) : false) || condPrograms.some(p => !!p.official_source_url);
+
+  const policy = evaluateSeoPolicy({
+    routeType: 'condition-hub',
+    stateId: 'california',
+    diagnosisId: slug,
+    confidenceScore,
+    hasOfficialSource,
+    lastVerifiedDate,
+    hasNoPlaceholderData: condPrograms.every(p => assertNoPlaceholderData(JSON.stringify(p)))
+  });
+
   // Generate structured schemas
   const breadcrumbList = generateBreadcrumbsSchema([
     { name: 'Home', item: '/' },
@@ -178,7 +221,7 @@ export default async function ConditionPage({ params }: Props) {
 
   return (
     <>
-      <SeoSchema data={[breadcrumbList, medicalConditionSchema]} />
+      <SeoSchema data={policy.index ? [breadcrumbList, medicalConditionSchema] : [breadcrumbList]} />
       <AnswerPage data={dynamicData} counties={counties} />
     </>
   );

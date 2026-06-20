@@ -185,9 +185,11 @@ export default async function CountyPage({ params }: Props) {
     }
   };
 
+  const isIndexable = stateData.id === 'california' || NON_CA_VERIFIED_COUNTIES.includes(countyDetails.id);
+
   return (
     <main style={{ maxWidth: '1200px', margin: '0 auto', padding: '2rem 1.5rem' }}>
-      <SeoSchema data={[faqSchema, governmentOrganizationSchema]} />
+      <SeoSchema data={isIndexable ? [faqSchema, governmentOrganizationSchema] : []} />
       
       {/* Back button */}
       <div style={{ marginBottom: '1.5rem' }}>

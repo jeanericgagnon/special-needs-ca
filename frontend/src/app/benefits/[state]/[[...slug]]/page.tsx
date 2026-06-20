@@ -30,7 +30,7 @@ import IhssMiniProduct from '@/app/benefits/components/ihss-mini-product';
 import { type StateConfig, stateConfigs, getDynamicStateConfig } from '@/lib/stateConfigs';
 import { StateCoverageBadge } from '@/components/state-coverage-badge';
 import { NON_CA_VERIFIED_COUNTIES } from '@/lib/verifiedCounties';
-import { evaluateSeoPolicy, robotsForPolicy, assertNoPlaceholderData, SeoPolicyInput } from '@/lib/seo-policy';
+import { evaluateSeoPolicy, robotsForPolicy, assertNoPlaceholderData, SeoPolicyInput, mapShortDiagToDbId } from '@/lib/seo-policy';
 
 type Props = {
   params: Promise<{ state: string; slug?: string[] }>;
@@ -184,19 +184,33 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       };
     } else {
       const diagnosisId = slug[0].toLowerCase();
-      const dates = statePrograms.map(p => p.last_verified_date).filter(Boolean) as string[];
+      const mappedId = mapShortDiagToDbId(diagnosisId);
+      const conditionRow = await navigatorDb.prepare('SELECT * FROM conditions WHERE id = ?').get(mappedId) as { last_verified_date?: string; source_url?: string } | undefined;
+      const condPrograms = await navigatorDb.prepare(`
+        SELECT DISTINCT p.* FROM programs p
+        JOIN program_eligibility_rules r ON p.id = r.program_id
+        WHERE r.required_condition = ? AND p.state_id = ?
+      `).all(mappedId, stateData.id) as DbProgram[];
+
+      const dates = condPrograms.map(p => p.last_verified_date).filter(Boolean) as string[];
+      if (conditionRow?.last_verified_date) {
+        dates.push(conditionRow.last_verified_date);
+      }
       const lastVerifiedDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
-      const scores = statePrograms.map(p => p.confidence_score).filter(s => s !== null && s !== undefined);
+
+      const scores = condPrograms.map(p => p.confidence_score).filter((s): s is number => s !== null && s !== undefined);
       const confidenceScore = scores.length > 0 ? (scores.reduce((sum, s) => sum + s, 0) / scores.length) / 5.0 : null;
+
+      const hasOfficialSource = (conditionRow?.source_url ? (!conditionRow.source_url.includes('ablefull.org') && !conditionRow.source_url.includes('california-navigator.org')) : false) || condPrograms.some(p => !!p.official_source_url);
 
       const policy = evaluateSeoPolicy({
         routeType: 'condition-hub',
         stateId: stateData.id,
         diagnosisId,
         confidenceScore,
-        hasOfficialSource: statePrograms.length > 0 && statePrograms.some(p => !!p.official_source_url),
+        hasOfficialSource,
         lastVerifiedDate,
-        hasNoPlaceholderData: statePrograms.every(p => assertNoPlaceholderData(JSON.stringify(p)))
+        hasNoPlaceholderData: condPrograms.every(p => assertNoPlaceholderData(JSON.stringify(p)))
       });
 
       const diagnosisFormatted = formatParam(diagnosisId);
@@ -1289,34 +1303,95 @@ export default async function BenefitsCatchAll({ params }: Props) {
       });
     }
 
+    // Evaluate policy in component body
+    let policy;
+    if (scopeType === 'county') {
+      const hasRealLocalAssets = playgrounds.length > 0 || clinics.length > 0 || groups.length > 0;
+      const hasRequiredContactInfo = !!(countyData.countyOffices && countyData.countyOffices.length > 0);
+      const hasNoPlaceholderData = assertNoPlaceholderData(JSON.stringify(countyData));
+
+      let confidenceScore: number | null = null;
+      let lastVerifiedDate: string | null = null;
+      let hasOfficialSource = !!countyData.website;
+
+      const rcDates = (countyData.regionalCenters || []).map(rc => rc.last_verified_date).filter(Boolean) as string[];
+      const sdDates = (countyData.schoolDistricts || []).map(sd => sd.last_verified_date).filter(Boolean) as string[];
+      const coDates = (countyData.countyOffices || []).map(co => co.last_verified_date).filter(Boolean) as string[];
+      const allDates = [...rcDates, ...sdDates, ...coDates];
+      lastVerifiedDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
+
+      const rcScores = (countyData.regionalCenters || []).map(rc => rc.confidence_score).filter(s => s !== null && s !== undefined);
+      const sdScores = (countyData.schoolDistricts || []).map(sd => sd.confidence_score !== null && sd.confidence_score !== undefined ? sd.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
+      const coScores = (countyData.countyOffices || []).map(co => co.confidence_score !== null && co.confidence_score !== undefined ? co.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
+      const allScores = [...rcScores, ...sdScores, ...coScores];
+      confidenceScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
+
+      if ((countyData.regionalCenters || []).some(rc => !!rc.source_url) ||
+          (countyData.schoolDistricts || []).some(sd => !!sd.source_url) ||
+          (countyData.countyOffices || []).some(co => !!co.source_url)) {
+        hasOfficialSource = true;
+      }
+
+      policy = evaluateSeoPolicy({
+        routeType: 'county-condition',
+        stateId: stateData.id,
+        countyId,
+        diagnosisId: diagnosisSlug,
+        hasRealLocalAssets,
+        hasRequiredContactInfo,
+        hasNoPlaceholderData,
+        confidenceScore,
+        hasOfficialSource,
+        lastVerifiedDate
+      });
+    } else if (scopeType === 'district' && districtDetails) {
+      policy = evaluateSeoPolicy({
+        routeType: 'school-district',
+        stateId: stateData.id,
+        countyId: districtDetails.county_id,
+        diagnosisId: diagnosisSlug
+      });
+    } else {
+      policy = evaluateSeoPolicy({
+        routeType: 'city',
+        stateId: stateData.id,
+        countyId: city?.countyId || '',
+        diagnosisId: diagnosisSlug
+      });
+    }
+
     return (
       <main className="container animate-fade-in" style={{ paddingBottom: '5rem' }}>
         
         {/* Dynamic JSON-LD structured data injection */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalConditionSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schoolDistrictsSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewedBySchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(governmentServicesSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(advocatesSchema) }}
-        />
+        {policy.index && (
+          <>
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalConditionSchema) }}
+            />
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(schoolDistrictsSchema) }}
+            />
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewedBySchema) }}
+            />
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(governmentServicesSchema) }}
+            />
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(advocatesSchema) }}
+            />
+          </>
+        )}
 
         {/* E-E-A-T Review Stamp Banner */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'rgba(var(--primary-rgb), 0.03)', border: '1px solid rgba(var(--primary-rgb), 0.08)', padding: '0.75rem 1.5rem', borderRadius: '16px', marginBottom: '2.5rem', flexWrap: 'wrap', gap: '0.75rem' }} className="no-print">

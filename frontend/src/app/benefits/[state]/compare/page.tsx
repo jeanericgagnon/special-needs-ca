@@ -118,6 +118,27 @@ export default async function StateComparisonPage({ params }: Props) {
   const stateConfig = getDynamicStateConfig(stateData.id, stateData.name, stateData.code);
   const programs = await getProgramsForState(stateData.id);
 
+  // Evaluate policy in component body
+  const dates = programs.map(p => p.last_verified_date).filter((d): d is string => !!d);
+  const lastVerifiedDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
+  const scores = programs.map(p => p.confidence_score).filter((s): s is number => s !== null);
+  const confidenceScore = scores.length > 0 ? (scores.reduce((sum, s) => sum + s, 0) / scores.length) / 5.0 : null;
+
+  const hasOfficialSource = programs.length >= 2 && programs.filter(p => !!p.official_source_url).length >= 2;
+  const hasEligibilityRules = programs.filter(p => p.rules_count > 0).length >= 2;
+  const hasNoPlaceholderData = programs.every(p => assertNoPlaceholderData(JSON.stringify(p)));
+
+  const policy = evaluateSeoPolicy({
+    routeType: 'comparison',
+    stateId: stateData.id,
+    entityCount: programs.length,
+    confidenceScore,
+    hasOfficialSource,
+    lastVerifiedDate,
+    hasNoPlaceholderData,
+    hasEligibilityRules
+  });
+
   // Generate structured schemas
   const breadcrumbList = generateBreadcrumbsSchema([
     { name: 'Home', item: '/' },
@@ -143,7 +164,7 @@ export default async function StateComparisonPage({ params }: Props) {
 
   return (
     <main style={{ maxWidth: '1200px', margin: '0 auto', padding: '2rem 1.5rem' }}>
-      <SeoSchema data={[breadcrumbList, faqSchema]} />
+      <SeoSchema data={policy.index ? [breadcrumbList, faqSchema] : [breadcrumbList]} />
 
       <div style={{ marginBottom: '1.5rem' }}>
         <Link

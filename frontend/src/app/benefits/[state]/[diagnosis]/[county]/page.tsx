@@ -398,6 +398,43 @@ export default async function SEOLandingPage({ params }: Props) {
     });
   }
 
+  // Evaluate policy in component body
+  const hasRealLocalAssets = playgrounds.length > 0 || clinics.length > 0 || groups.length > 0;
+  const hasRequiredContactInfo = !!(countyData.countyOffices && countyData.countyOffices.length > 0);
+  const hasNoPlaceholderData = assertNoPlaceholderData(JSON.stringify(countyData));
+
+  const rcDates = (countyData.regionalCenters || []).map(rc => rc.last_verified_date).filter(Boolean) as string[];
+  const sdDates = (countyData.schoolDistricts || []).map(sd => sd.last_verified_date).filter(Boolean) as string[];
+  const coDates = (countyData.countyOffices || []).map(co => co.last_verified_date).filter(Boolean) as string[];
+  const allDates = [...rcDates, ...sdDates, ...coDates];
+  const lastVerifiedDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
+
+  const rcScores = (countyData.regionalCenters || []).map(rc => rc.confidence_score).filter(s => s !== null && s !== undefined);
+  const sdScores = (countyData.schoolDistricts || []).map(sd => sd.confidence_score !== null && sd.confidence_score !== undefined ? sd.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
+  const coScores = (countyData.countyOffices || []).map(co => co.confidence_score !== null && co.confidence_score !== undefined ? co.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
+  const allScores = [...rcScores, ...sdScores, ...coScores];
+  const confidenceScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
+
+  let hasOfficialSource = !!countyData.website;
+  if ((countyData.regionalCenters || []).some(rc => !!rc.source_url) ||
+      (countyData.schoolDistricts || []).some(sd => !!sd.source_url) ||
+      (countyData.countyOffices || []).some(co => !!co.source_url)) {
+    hasOfficialSource = true;
+  }
+
+  const policy = evaluateSeoPolicy({
+    routeType: 'county-condition',
+    stateId,
+    countyId: p.county,
+    diagnosisId: p.diagnosis,
+    hasRealLocalAssets,
+    hasRequiredContactInfo,
+    hasNoPlaceholderData,
+    confidenceScore,
+    hasOfficialSource,
+    lastVerifiedDate
+  });
+
   const communityAssetsSchema = {
     '@context': 'https://schema.org',
     '@graph': communityAssets
@@ -407,26 +444,30 @@ export default async function SEOLandingPage({ params }: Props) {
     <main className="container animate-fade-in" style={{ paddingBottom: '5rem' }}>
       
       {/* Dynamic JSON-LD Structured Data Injection */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalConditionSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schoolDistrictsSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localAdvocatesSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(communityAssetsSchema) }}
-      />
+      {policy.index && (
+        <>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalConditionSchema) }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(schoolDistrictsSchema) }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(localAdvocatesSchema) }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(communityAssetsSchema) }}
+          />
+        </>
+      )}
 
       {/* Hero Header */}
       <div style={{ textAlign: 'center', marginBottom: '3.5rem' }}>

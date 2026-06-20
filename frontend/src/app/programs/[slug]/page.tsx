@@ -193,6 +193,36 @@ export default async function ProgramPage({ params }: Props) {
     ]
   };
 
+  // Evaluate policy in component body
+  let hasEligibilityRules = false;
+  let hasApplicationSteps = false;
+  let hasDocuments = false;
+  let hasNoPlaceholderData = true;
+  let confidenceScore: number | null = null;
+  const stateId = program.state_id || 'california';
+
+  const ruleCount = await navigatorDb.prepare('SELECT COUNT(*) as count FROM program_eligibility_rules WHERE program_id = ?').get(progIdStr) as { count: number } | undefined;
+  hasEligibilityRules = (ruleCount?.count || 0) > 0;
+  hasApplicationSteps = (await getProgramApplicationSteps(progIdStr)).length > 0;
+  hasDocuments = (await getProgramDocumentRequirements(progIdStr)).length > 0;
+  hasNoPlaceholderData = assertNoPlaceholderData(JSON.stringify(program));
+  confidenceScore = program.confidence_score !== null && program.confidence_score !== undefined
+    ? Number(program.confidence_score) / 5.0
+    : null;
+
+  const policy = evaluateSeoPolicy({
+    routeType: 'program-guide',
+    stateId,
+    programId: slug,
+    hasOfficialSource: !!program?.source_url,
+    lastVerifiedDate: program?.last_verified_date || null,
+    confidenceScore,
+    hasEligibilityRules,
+    hasApplicationSteps,
+    hasDocuments,
+    hasNoPlaceholderData
+  });
+
   // Generate structured schemas
   const breadcrumbList = generateBreadcrumbsSchema([
     { name: 'Home', item: '/' },
@@ -230,7 +260,7 @@ export default async function ProgramPage({ params }: Props) {
 
   return (
     <>
-      <SeoSchema data={[breadcrumbList, govServiceSchema, faqSchema]} />
+      <SeoSchema data={policy.index ? [breadcrumbList, govServiceSchema, faqSchema] : [breadcrumbList]} />
       <AnswerPage data={dynamicData} counties={counties} />
     </>
   );
