@@ -63,7 +63,8 @@ const BANNED_PATTERNS = [
   { pattern: /confidence_score\s*\|\|\s*5(\.0)?/i, label: 'confidence_score || 5 fallback' },
   { pattern: /source_url\s*\|\|\s*['"]https:\/\/www\.dhcs\.ca\.gov['"]/i, label: 'source_url DHCS fallback' },
   { pattern: /officialSources:\s*\[\s*\{\s*name:\s*[`'"]\s*\$\{\s*stateName\s*\}\s*State\s+Program\s+Portal\s*[`'"],\s*url:\s*program\.source_url\s*\|\|/i, label: 'officialSources state portal fallback' },
-  { pattern: /(?:source_url|official_source_url)\s*\|\|\s*['"](?!\s*['"])[^'"]+['"]/i, label: 'source_url fallback to non-empty string literal' }
+  { pattern: /(?:source_url|official_source_url)\s*\|\|\s*['"](?!\s*['"])[^'"]+['"]/i, label: 'source_url fallback to non-empty string literal' },
+  { pattern: /officialSources\s*:\s*\[/i, label: 'hardcoded officialSources array' }
 ];
 
 function scanFilesForBannedPatterns() {

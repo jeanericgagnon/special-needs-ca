@@ -98,6 +98,51 @@ export default async function ConditionPage({ params }: Props) {
     notFound();
   }
 
+  const mappedId = mapShortDiagToDbId(slug);
+  const conditionRow = await navigatorDb.prepare('SELECT * FROM conditions WHERE id = ?').get(mappedId) as { last_verified_date?: string; source_url?: string } | undefined;
+  const condPrograms = await navigatorDb.prepare(`
+    SELECT DISTINCT p.* FROM programs p
+    JOIN program_eligibility_rules r ON p.id = r.program_id
+    WHERE r.required_condition = ? AND p.state_id = 'california'
+  `).all(mappedId) as DbProgram[];
+
+  const dates = condPrograms.map(p => p.last_verified_date).filter((d): d is string => !!d);
+  if (conditionRow?.last_verified_date) {
+    dates.push(conditionRow.last_verified_date);
+  }
+  const lastVerifiedDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
+
+  const scores = condPrograms.map(p => p.confidence_score).filter((s): s is number => s !== null && s !== undefined);
+  const confidenceScore = scores.length > 0 ? (scores.reduce((sum, s) => sum + s, 0) / scores.length) / 5.0 : null;
+
+  const hasOfficialSource = (conditionRow?.source_url ? (!conditionRow.source_url.includes('ablefull.org') && !conditionRow.source_url.includes('california-navigator.org')) : false) || condPrograms.some(p => !!p.official_source_url);
+
+  const policy = evaluateSeoPolicy({
+    routeType: 'condition-hub',
+    stateId: 'california',
+    diagnosisId: slug,
+    confidenceScore,
+    hasOfficialSource,
+    lastVerifiedDate,
+    hasNoPlaceholderData: condPrograms.every(p => assertNoPlaceholderData(JSON.stringify(p)))
+  });
+
+  const officialSources = [];
+  if (conditionRow?.source_url && !conditionRow.source_url.includes('ablefull.org') && !conditionRow.source_url.includes('california-navigator.org')) {
+    officialSources.push({
+      name: `${diag.name} Official Guidelines`,
+      url: conditionRow.source_url
+    });
+  }
+  condPrograms.forEach(p => {
+    if (p.official_source_url && !p.official_source_url.includes('ablefull.org')) {
+      officialSources.push({
+        name: `${p.program_name} Official Portal`,
+        url: p.official_source_url
+      });
+    }
+  });
+
   // Build a dynamic SEOPageData object based on the diagnosis details from diagnoses.ts
   const dynamicData = {
     slug: slug,
@@ -139,10 +184,7 @@ export default async function ConditionPage({ params }: Props) {
       { title: 'IEP Request Guide', url: '/situations/iep-evaluation-request' },
       { title: 'Guides & Resources Index', url: '/benefits' }
     ],
-    officialSources: [
-      { name: 'California Department of Developmental Services', url: 'https://www.dds.ca.gov' },
-      { name: 'California Department of Education', url: 'https://www.cde.ca.gov' }
-    ],
+    officialSources,
     lastReviewedDate: diag.last_verified_date || null,
     callScriptTemplate: {
       intro: 'Lanterman Intake Call Helper',
@@ -159,36 +201,6 @@ export default async function ConditionPage({ params }: Props) {
       }
     ]
   };
-
-  // Evaluate policy in component body
-  const mappedId = mapShortDiagToDbId(slug);
-  const conditionRow = await navigatorDb.prepare('SELECT * FROM conditions WHERE id = ?').get(mappedId) as { last_verified_date?: string; source_url?: string } | undefined;
-  const condPrograms = await navigatorDb.prepare(`
-    SELECT DISTINCT p.* FROM programs p
-    JOIN program_eligibility_rules r ON p.id = r.program_id
-    WHERE r.required_condition = ? AND p.state_id = 'california'
-  `).all(mappedId) as DbProgram[];
-
-  const dates = condPrograms.map(p => p.last_verified_date).filter((d): d is string => !!d);
-  if (conditionRow?.last_verified_date) {
-    dates.push(conditionRow.last_verified_date);
-  }
-  const lastVerifiedDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
-
-  const scores = condPrograms.map(p => p.confidence_score).filter((s): s is number => s !== null && s !== undefined);
-  const confidenceScore = scores.length > 0 ? (scores.reduce((sum, s) => sum + s, 0) / scores.length) / 5.0 : null;
-
-  const hasOfficialSource = (conditionRow?.source_url ? (!conditionRow.source_url.includes('ablefull.org') && !conditionRow.source_url.includes('california-navigator.org')) : false) || condPrograms.some(p => !!p.official_source_url);
-
-  const policy = evaluateSeoPolicy({
-    routeType: 'condition-hub',
-    stateId: 'california',
-    diagnosisId: slug,
-    confidenceScore,
-    hasOfficialSource,
-    lastVerifiedDate,
-    hasNoPlaceholderData: condPrograms.every(p => assertNoPlaceholderData(JSON.stringify(p)))
-  });
 
   // Generate structured schemas
   const breadcrumbList = generateBreadcrumbsSchema([
