@@ -14,7 +14,9 @@ import {
   getProgramApplicationSteps,
   getProgramDocumentRequirements,
   DbProgram,
-  getProgramWaitlists
+  getProgramWaitlists,
+  getWritingStyles,
+  WritingStyle
 } from '@/lib/db';
 import { DIAGNOSES, slugifyDiagnosis } from '@/lib/diagnoses';
 import { getCityBySlug } from '@/lib/cities';
@@ -84,7 +86,8 @@ function getSpunAdvocacyCopy(
   sdName: string,
   timelinesCode: string,
   timelineDaysPlan: string,
-  topDistricts: string
+  topDistricts: string,
+  selectedStyle?: WritingStyle | null
 ) {
   const seed = `${stateId}-${countyId}-${diagnosisFormatted}`;
   const idx = getDeterministicVariantIndex(seed, 4); // 4 variants
@@ -149,13 +152,18 @@ function getSpunAdvocacyCopy(
     }
   ];
 
+  const quote = selectedStyle ? {
+    quote: selectedStyle.sample_corpus,
+    author: `${selectedStyle.name}, ${selectedStyle.credentials.split('&')[0].trim()}`
+  } : parentQuotes[idx];
+
   return {
     intro: introVariants[idx],
     entitlement: entitlementVariants[idx],
     wages: wagesVariants[idx],
     iep: iepVariants[idx],
     ccs: ccsVariants[idx],
-    quote: parentQuotes[idx]
+    quote
   };
 }
 
@@ -1354,6 +1362,11 @@ export default async function BenefitsCatchAll({ params }: Props) {
       .slice(0, 3)
       .map(d => d.name)
       .join(', ');
+    const writingStyles = await getWritingStyles();
+    const styleSeed = `${stateData.id}-${countyId}-${diagnosisSlug}`;
+    const styleIdx = getDeterministicVariantIndex(styleSeed, writingStyles.length || 1);
+    const selectedStyle = writingStyles.length > 0 ? writingStyles[styleIdx] : null;
+
     const spun = getSpunAdvocacyCopy(
       stateData.id,
       stateName,
@@ -1367,7 +1380,8 @@ export default async function BenefitsCatchAll({ params }: Props) {
       sdName,
       config.timelinesCode,
       String(config.timelineDaysPlan),
-      topDistricts
+      topDistricts,
+      selectedStyle
     );
     const hasWage = countyData.ihss_wage_rate !== null && countyData.ihss_wage_rate !== undefined && countyData.ihss_wage_rate > 0;
     const displayWage = countyData.ihss_wage_rate || 0;
@@ -2218,6 +2232,29 @@ export default async function BenefitsCatchAll({ params }: Props) {
             ))}
           </div>
         </div>
+
+        {/* Copywriting Tone & Style Advisor Banner */}
+        {selectedStyle && (
+          <div className="glass-panel no-print" style={{ background: 'rgba(var(--primary-rgb), 0.01)', border: '1px solid rgba(var(--primary-rgb), 0.05)', padding: '1.5rem', borderRadius: '16px', marginBottom: '2.5rem', fontSize: '0.85rem' }}>
+            <h3 style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text-main)', margin: '0 0 0.5rem 0' }}>✍️ Guide Copywriting Tone & Style Advisor</h3>
+            <p style={{ color: 'var(--text-light)', margin: '0 0 0.75rem 0', lineHeight: '1.5' }}>
+              To ensure parent-friendly readability and expert compliance, this localized guide&apos;s copy is structured using the signature stylometric profile of <strong>{selectedStyle.name}</strong> ({selectedStyle.credentials}).
+            </p>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem', color: 'var(--text-light)' }}>
+              <div>
+                <strong>Emotional Tone:</strong> <span style={{ textTransform: 'capitalize' }}>{selectedStyle.emotional_tone.replace('-', ' ')}</span>
+              </div>
+              <div>
+                <strong>Avg. Sentence Length:</strong> {selectedStyle.avg_sentence_length} words
+              </div>
+              {selectedStyle.signature_phrases && (
+                <div>
+                  <strong>Signature Vocabulary:</strong> {JSON.parse(selectedStyle.signature_phrases).slice(0, 4).join(', ')}
+                </div>
+              )}
+            </div>
+          </div>
+        )}
 
         {/* Legal footnoting block for extreme E-E-A-T */}
         <div style={{ borderTop: '1px solid rgba(0,0,0,0.08)', paddingTop: '1.5rem', marginTop: '4rem', fontSize: '0.78rem', color: 'var(--text-light)', lineHeight: '1.4' }}>

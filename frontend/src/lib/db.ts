@@ -3159,6 +3159,27 @@ export async function getIepAdvocates(countyId?: string, stateId?: string): Prom
   }
 }
 
+export interface WritingStyle {
+  id: string;
+  name: string;
+  credentials: string;
+  source_url: string;
+  avg_sentence_length: number;
+  signature_phrases: string;
+  emotional_tone: string;
+  vocab_frequency: string;
+  sample_corpus: string;
+}
+
+export async function getWritingStyles(): Promise<WritingStyle[]> {
+  try {
+    return await navigatorDb.prepare('SELECT * FROM writing_styles').all() as WritingStyle[];
+  } catch (err) {
+    console.error('Failed to query writing styles:', err);
+    return [];
+  }
+}
+
 export async function getProgramWaitlists(): Promise<ProgramWaitlist[]> {
   try {
     return await navigatorDb.prepare('SELECT * FROM program_waitlists').all() as ProgramWaitlist[];
