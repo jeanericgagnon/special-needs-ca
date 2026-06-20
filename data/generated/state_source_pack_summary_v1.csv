@@ -1,0 +1,51 @@
+state,total_targets,critical_targets,official_state_targets,official_local_targets,federal_targets,directory_roots,needs_review,blocked_known,dd_targets,medicaid_targets,early_intervention_targets,education_targets,appeals_targets,local_directory_targets,adult_transition_targets,housing_transport_targets,gap_score,recommended_next_action
+New Mexico,60,37,2,0,53,1,18,39,1,14,8,22,10,2,2,0,189,needs_manual_review
+New Hampshire,69,46,11,0,53,5,20,43,4,15,9,24,10,4,2,0,176,needs_manual_review
+Illinois,67,44,12,0,47,6,15,39,4,19,8,22,10,3,1,0,172,needs_manual_review
+Nebraska,70,46,11,0,53,6,20,43,4,15,9,24,10,5,2,0,171,needs_manual_review
+Mississippi,85,51,22,3,54,5,24,45,13,21,12,22,11,6,1,0,170,needs_manual_review
+Florida,71,40,4,0,51,7,14,39,1,17,10,27,9,4,1,0,166,needs_manual_review
+Kansas,78,51,20,0,53,3,20,46,5,21,12,22,11,4,3,0,159,needs_manual_review
+Massachusetts,82,54,7,0,72,5,25,46,5,22,13,23,11,5,3,0,155,needs_manual_review
+Colorado,80,53,20,2,53,5,20,46,5,21,12,22,11,6,3,0,154,needs_manual_review
+Tennessee,78,50,19,0,53,5,20,45,5,20,12,23,11,5,2,0,154,needs_manual_review
+Arizona,80,53,22,0,53,4,21,46,5,21,12,23,11,4,3,0,153,needs_manual_review
+Hawaii,79,52,21,0,53,3,20,45,5,21,13,22,11,4,3,0,149,needs_manual_review
+West Virginia,79,51,20,0,53,4,20,45,5,21,12,22,11,5,3,0,149,needs_manual_review
+Connecticut,79,52,21,0,53,4,20,45,5,21,12,23,11,4,3,0,148,needs_manual_review
+Kentucky,80,53,22,0,53,5,20,45,5,21,12,24,11,4,3,0,148,needs_manual_review
+Maine,79,52,21,0,53,4,20,45,5,21,12,23,11,4,3,0,148,needs_manual_review
+Michigan,80,52,21,0,53,5,20,46,5,21,12,23,11,5,3,0,148,needs_manual_review
+Minnesota,82,55,23,1,53,6,20,46,5,21,12,26,11,4,3,0,148,needs_manual_review
+Montana,80,53,22,0,53,5,20,45,5,21,12,24,11,4,3,0,148,needs_manual_review
+North Dakota,80,53,22,0,53,5,20,45,5,21,12,24,11,4,3,0,148,needs_manual_review
+South Dakota,80,53,22,0,53,5,20,45,5,21,12,24,11,4,3,0,148,needs_manual_review
+Wisconsin,82,53,22,0,53,7,20,46,5,21,12,24,11,6,3,0,148,needs_manual_review
+Arkansas,83,56,24,1,53,6,21,43,6,22,12,24,11,5,3,0,147,needs_manual_review
+Idaho,80,53,21,1,53,5,21,43,5,21,12,23,11,5,3,0,147,needs_manual_review
+Louisiana,81,53,22,0,53,4,20,46,6,21,13,22,11,5,3,0,144,needs_manual_review
+Maryland,81,53,22,0,53,4,20,46,6,21,13,22,11,5,3,0,144,needs_manual_review
+New Jersey,83,55,24,0,53,4,20,43,7,22,13,22,11,5,3,0,144,needs_manual_review
+Missouri,81,54,23,0,53,5,20,45,5,21,13,24,11,4,3,0,143,needs_manual_review
+Rhode Island,80,53,22,0,53,4,20,45,5,21,13,23,11,4,3,0,143,needs_manual_review
+South Carolina,81,54,23,0,53,5,20,45,5,21,13,24,11,4,3,0,143,needs_manual_review
+Vermont,82,55,23,1,53,6,20,45,5,21,12,26,11,4,3,0,143,needs_manual_review
+Indiana,82,54,20,1,55,6,21,45,5,22,12,23,11,6,3,0,142,needs_manual_review
+Oklahoma,81,54,22,1,53,6,20,45,5,21,12,24,11,5,3,0,142,needs_manual_review
+Oregon,83,56,23,2,53,7,21,45,5,21,12,26,11,5,3,0,142,needs_manual_review
+Utah,81,54,22,1,53,6,20,45,5,21,12,24,11,5,3,0,142,needs_manual_review
+Wyoming,82,55,23,1,53,4,21,45,6,21,14,22,11,5,3,0,142,needs_manual_review
+Alaska,85,55,23,1,53,8,20,43,5,22,12,25,11,7,3,0,138,needs_manual_review
+Washington,103,75,20,21,53,28,40,45,5,21,12,22,11,29,3,0,138,needs_manual_review
+Iowa,86,57,24,2,53,9,22,45,5,22,13,24,11,8,3,0,137,needs_manual_review
+Nevada,83,56,22,3,53,7,21,45,5,21,13,23,11,7,3,0,137,needs_manual_review
+Georgia,84,57,26,2,47,6,12,39,11,23,12,19,10,6,3,0,134,needs_manual_review
+North Carolina,80,52,19,2,53,8,18,41,3,21,13,25,11,3,4,0,133,needs_manual_review
+Virginia,83,55,23,1,53,6,20,45,5,21,13,25,11,5,3,0,133,needs_manual_review
+Delaware,87,59,22,5,53,10,24,45,5,21,13,24,11,10,3,0,127,needs_manual_review
+Alabama,82,55,24,0,53,3,18,39,5,22,14,23,11,3,4,0,123,needs_manual_review
+Ohio,83,55,23,4,46,8,16,39,4,22,9,28,14,8,2,0,119,blocked_known_followup
+Pennsylvania,99,73,43,5,46,8,14,39,11,28,16,24,12,4,5,0,110,needs_manual_review
+New York,102,69,40,5,47,11,16,39,9,25,14,32,15,5,3,0,88,blocked_known_followup
+California,354,308,135,139,57,161,39,39,43,79,25,45,35,136,12,0,85,blocked_known_followup
+Texas,145,105,77,8,46,31,16,39,15,47,16,39,28,9,5,0,76,blocked_known_followup

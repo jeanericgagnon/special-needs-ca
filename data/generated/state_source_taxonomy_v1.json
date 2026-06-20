@@ -1,0 +1,1243 @@
+{
+  "version": "v1",
+  "generatedAt": "2026-06-20T23:13:08.484Z",
+  "generatedDate": "2026-06-20",
+  "workflowCategories": [
+    {
+      "categoryId": "dd_system",
+      "categoryLabel": "Developmental disability agency / regional system",
+      "criticalForLaunch": true,
+      "roles": [
+        {
+          "roleId": "main_dd_agency",
+          "roleLabel": "Main DD agency",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "portal"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_critical",
+          "notes": "Primary statewide DD or regional-center system root."
+        },
+        {
+          "roleId": "dd_eligibility",
+          "roleLabel": "DD eligibility",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf",
+            "portal"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_critical",
+          "notes": "Eligibility criteria, process, or screening pages."
+        },
+        {
+          "roleId": "dd_intake_application",
+          "roleLabel": "DD intake/application",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf",
+            "portal"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_critical",
+          "notes": "Application, intake, referral, or enrollment start pages."
+        },
+        {
+          "roleId": "dd_local_regional_office_directory",
+          "roleLabel": "DD local/regional office directory",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "directory_root",
+            "spreadsheet"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_critical",
+          "notes": "Regional center or local DD office directory."
+        },
+        {
+          "roleId": "dd_service_planning",
+          "roleLabel": "DD service planning",
+          "priority": "high",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "IPP, plan-development, or care-planning pages."
+        },
+        {
+          "roleId": "dd_waiver_programs",
+          "roleLabel": "DD waiver programs",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_critical",
+          "notes": "DD waiver overview or DD-specific waiver workflow pages."
+        },
+        {
+          "roleId": "dd_self_determination",
+          "roleLabel": "Self-direction/self-determination",
+          "priority": "high",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "Self-direction or self-determination program pages."
+        },
+        {
+          "roleId": "dd_crisis_emergency_services",
+          "roleLabel": "Crisis/emergency services",
+          "priority": "high",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "Crisis, emergency response, or urgent DD supports."
+        },
+        {
+          "roleId": "dd_appeals_complaints",
+          "roleLabel": "Appeals/complaints",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf",
+            "portal"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_critical",
+          "notes": "Complaints, hearings, appeals, or grievance routes."
+        },
+        {
+          "roleId": "dd_provider_directory",
+          "roleLabel": "DD provider directory",
+          "priority": "high",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "directory_root",
+            "spreadsheet",
+            "portal"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "Official provider roster or directory."
+        },
+        {
+          "roleId": "dd_service_standards_policies",
+          "roleLabel": "Service standards/policies",
+          "priority": "high",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "Policy manuals, service standards, or guidance."
+        }
+      ]
+    },
+    {
+      "categoryId": "medicaid_and_waivers",
+      "categoryLabel": "Medicaid / Medicaid waiver / EPSDT",
+      "criticalForLaunch": true,
+      "roles": [
+        {
+          "roleId": "medicaid_application",
+          "roleLabel": "Medicaid application",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "official_state",
+            "official_county",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf",
+            "portal"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_critical",
+          "notes": "Application or apply-now pages."
+        },
+        {
+          "roleId": "medicaid_eligibility",
+          "roleLabel": "Medicaid eligibility",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "official_state",
+            "official_county",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_critical",
+          "notes": "Eligibility requirements or qualifying rules."
+        },
+        {
+          "roleId": "childrens_medicaid_chip",
+          "roleLabel": "Children’s Medicaid/CHIP",
+          "priority": "high",
+          "allowedAuthorities": [
+            "official_state",
+            "official_federal"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf",
+            "portal"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "Child health or CHIP program pages."
+        },
+        {
+          "roleId": "epsdt_child_health_benefit",
+          "roleLabel": "EPSDT/child health benefit",
+          "priority": "high",
+          "allowedAuthorities": [
+            "official_state",
+            "official_federal"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "EPSDT benefit or child screening benefit pages."
+        },
+        {
+          "roleId": "personal_care_attendant_care",
+          "roleLabel": "Personal care/attendant care",
+          "priority": "high",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "Personal care or attendant care benefit pages."
+        },
+        {
+          "roleId": "hcbs_waivers",
+          "roleLabel": "HCBS waivers",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "official_state",
+            "official_federal"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf",
+            "portal"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_critical",
+          "notes": "HCBS waiver entry or authority pages."
+        },
+        {
+          "roleId": "managed_care_plan_directory",
+          "roleLabel": "Managed care plan directory",
+          "priority": "high",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "directory_root",
+            "portal"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "Official plan lookup or directory pages."
+        },
+        {
+          "roleId": "medicaid_grievances_appeals",
+          "roleLabel": "Grievances/appeals",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf",
+            "portal"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_critical",
+          "notes": "Managed-care or FFS appeal routes."
+        },
+        {
+          "roleId": "medicaid_fair_hearing",
+          "roleLabel": "Fair hearing",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf",
+            "portal"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_critical",
+          "notes": "Fair-hearing or hearing-request pages."
+        },
+        {
+          "roleId": "medicaid_aid_paid_pending",
+          "roleLabel": "Aid-paid-pending/continuation",
+          "priority": "high",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "Benefit-continuation or pending-aid guidance."
+        },
+        {
+          "roleId": "medicaid_renewals_redeterminations",
+          "roleLabel": "Renewals/redeterminations",
+          "priority": "high",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf",
+            "portal"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "Renewal, recertification, or redetermination pages."
+        }
+      ]
+    },
+    {
+      "categoryId": "early_intervention",
+      "categoryLabel": "Early intervention",
+      "criticalForLaunch": true,
+      "roles": [
+        {
+          "roleId": "ei_part_c_program",
+          "roleLabel": "Part C/birth-to-three program",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "portal"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_critical",
+          "notes": "State early intervention program root."
+        },
+        {
+          "roleId": "ei_referral_intake",
+          "roleLabel": "Referral/intake",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf",
+            "portal"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_critical",
+          "notes": "Referral or intake pages."
+        },
+        {
+          "roleId": "ei_eligibility",
+          "roleLabel": "Eligibility",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_critical",
+          "notes": "Eligibility criteria and referral thresholds."
+        },
+        {
+          "roleId": "ei_family_rights",
+          "roleLabel": "Family rights",
+          "priority": "high",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "Parent/family rights and safeguards."
+        },
+        {
+          "roleId": "ei_transition_age_three",
+          "roleLabel": "Transition at age three",
+          "priority": "high",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "Age-three transition guidance."
+        },
+        {
+          "roleId": "ei_local_office_directory",
+          "roleLabel": "Local EI office/directory",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "directory_root",
+            "spreadsheet"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_critical",
+          "notes": "Local EI office, referral point, or FRC directory."
+        },
+        {
+          "roleId": "ei_complaints_mediation_due_process",
+          "roleLabel": "Complaints/mediation/due process",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf",
+            "portal"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_critical",
+          "notes": "Complaint or due-process routes."
+        }
+      ]
+    },
+    {
+      "categoryId": "education_and_disputes",
+      "categoryLabel": "Education / IEP / Section 504",
+      "criticalForLaunch": true,
+      "roles": [
+        {
+          "roleId": "special_education_parent_rights",
+          "roleLabel": "State special education parent rights",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local",
+            "high_authority_nonprofit"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_critical",
+          "notes": "Parent rights or procedural safeguards."
+        },
+        {
+          "roleId": "iep_process",
+          "roleLabel": "IEP process",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local",
+            "high_authority_nonprofit"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_critical",
+          "notes": "IEP process or meeting guidance."
+        },
+        {
+          "roleId": "prior_written_notice",
+          "roleLabel": "Prior written notice",
+          "priority": "high",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "PWN or notice guidance."
+        },
+        {
+          "roleId": "evaluations_iee",
+          "roleLabel": "Evaluations/IEE",
+          "priority": "high",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "Evaluations and independent educational evaluations."
+        },
+        {
+          "roleId": "special_education_mediation",
+          "roleLabel": "Mediation",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf",
+            "portal"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_critical",
+          "notes": "Mediation program or request pages."
+        },
+        {
+          "roleId": "state_complaints",
+          "roleLabel": "State complaints",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf",
+            "portal"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_critical",
+          "notes": "State complaint guidance or filing pages."
+        },
+        {
+          "roleId": "special_education_due_process",
+          "roleLabel": "Due process",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf",
+            "portal"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_critical",
+          "notes": "Due-process hearing or filing routes."
+        },
+        {
+          "roleId": "school_district_directory",
+          "roleLabel": "School district directory",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "directory_root",
+            "spreadsheet"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_critical",
+          "notes": "State or local district directory."
+        },
+        {
+          "roleId": "regional_education_directory",
+          "roleLabel": "Regional education agencies/SELPAs/IUs/cooperatives",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "directory_root",
+            "spreadsheet"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_critical",
+          "notes": "Regional routing or SELPA pages."
+        },
+        {
+          "roleId": "parent_training_information_center",
+          "roleLabel": "Parent training and information centers",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "high_authority_nonprofit"
+          ],
+          "allowedBatchClasses": [
+            "html"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "PTI or parent-center resources."
+        },
+        {
+          "roleId": "section_504_guidance",
+          "roleLabel": "Section 504 guidance",
+          "priority": "high",
+          "allowedAuthorities": [
+            "official_state",
+            "official_federal",
+            "high_authority_nonprofit"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "Section 504 rights and dispute guidance."
+        }
+      ]
+    },
+    {
+      "categoryId": "state_benefit_supports",
+      "categoryLabel": "State benefit programs and disability-specific supports",
+      "criticalForLaunch": false,
+      "roles": [
+        {
+          "roleId": "medically_fragile_children_programs",
+          "roleLabel": "Medically fragile children programs",
+          "priority": "high",
+          "allowedAuthorities": [
+            "official_state"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "Complex-care or medically fragile child programs."
+        },
+        {
+          "roleId": "childrens_special_health_services",
+          "roleLabel": "Children’s special health services",
+          "priority": "high",
+          "allowedAuthorities": [
+            "official_state"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "Children’s special-health or CCS-like programs."
+        },
+        {
+          "roleId": "autism_programs",
+          "roleLabel": "Autism programs",
+          "priority": "high",
+          "allowedAuthorities": [
+            "official_state",
+            "high_authority_nonprofit"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "State autism program or benefit pages."
+        },
+        {
+          "roleId": "hearing_aid_programs",
+          "roleLabel": "Hearing aid programs",
+          "priority": "medium",
+          "allowedAuthorities": [
+            "official_state"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf",
+            "portal"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "Hearing aid coverage or subsidy programs."
+        },
+        {
+          "roleId": "respite_programs",
+          "roleLabel": "Respite programs",
+          "priority": "medium",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local",
+            "high_authority_nonprofit"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "Respite program or voucher pages."
+        },
+        {
+          "roleId": "family_support_programs",
+          "roleLabel": "Family support programs",
+          "priority": "medium",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "Family support or subsidy pages."
+        },
+        {
+          "roleId": "assistive_technology",
+          "roleLabel": "Assistive technology",
+          "priority": "medium",
+          "allowedAuthorities": [
+            "official_state",
+            "high_authority_nonprofit"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "AT lending, training, or acquisition pages."
+        },
+        {
+          "roleId": "durable_medical_equipment",
+          "roleLabel": "Durable medical equipment",
+          "priority": "medium",
+          "allowedAuthorities": [
+            "official_state",
+            "official_federal"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "DME or equipment guidance."
+        },
+        {
+          "roleId": "transportation_assistance",
+          "roleLabel": "Transportation assistance",
+          "priority": "medium",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "Transportation benefit or subsidy pages."
+        },
+        {
+          "roleId": "home_modification_programs",
+          "roleLabel": "Home modification programs",
+          "priority": "medium",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "Home-modification grants or benefits."
+        }
+      ]
+    },
+    {
+      "categoryId": "federal_state_crossover",
+      "categoryLabel": "Federal/state crossover",
+      "criticalForLaunch": true,
+      "roles": [
+        {
+          "roleId": "ssi_child_disability",
+          "roleLabel": "SSI child disability",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "official_federal"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf",
+            "portal"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_critical",
+          "notes": "Child SSI entry pages."
+        },
+        {
+          "roleId": "ssi_appeals",
+          "roleLabel": "SSI appeals",
+          "priority": "high",
+          "allowedAuthorities": [
+            "official_federal"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf",
+            "portal"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "SSI appeal routes."
+        },
+        {
+          "roleId": "age_18_redetermination",
+          "roleLabel": "Age-18 redetermination",
+          "priority": "high",
+          "allowedAuthorities": [
+            "official_federal"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "Age-18 SSI redetermination pages."
+        },
+        {
+          "roleId": "able_account_program",
+          "roleLabel": "ABLE account program",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "official_state",
+            "official_federal",
+            "high_authority_nonprofit"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf",
+            "portal"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "State or national ABLE entry pages."
+        },
+        {
+          "roleId": "vocational_rehabilitation",
+          "roleLabel": "Vocational rehabilitation",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "official_state",
+            "official_federal"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf",
+            "portal"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_critical",
+          "notes": "State VR pages."
+        },
+        {
+          "roleId": "pre_ets",
+          "roleLabel": "Pre-ETS",
+          "priority": "high",
+          "allowedAuthorities": [
+            "official_state",
+            "official_federal"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "Pre-employment transition services."
+        },
+        {
+          "roleId": "supported_employment",
+          "roleLabel": "Supported employment",
+          "priority": "high",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "Supported employment programs."
+        },
+        {
+          "roleId": "supported_decision_making",
+          "roleLabel": "Supported decision-making",
+          "priority": "high",
+          "allowedAuthorities": [
+            "official_state",
+            "high_authority_nonprofit"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "Supported decision-making guidance."
+        },
+        {
+          "roleId": "guardianship_conservatorship_alternatives",
+          "roleLabel": "Guardianship/conservatorship alternatives",
+          "priority": "high",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local",
+            "high_authority_nonprofit"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "Alternatives to guardianship/conservatorship."
+        },
+        {
+          "roleId": "special_needs_trusts_future_planning",
+          "roleLabel": "Special needs trusts/future planning",
+          "priority": "high",
+          "allowedAuthorities": [
+            "official_state",
+            "official_federal",
+            "high_authority_nonprofit"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "pdf"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "Future-planning, trusts, and planning guidance."
+        }
+      ]
+    },
+    {
+      "categoryId": "local_resource_directories",
+      "categoryLabel": "Local resource directories",
+      "criticalForLaunch": true,
+      "roles": [
+        {
+          "roleId": "county_human_services_offices",
+          "roleLabel": "County human services offices",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "official_county",
+            "official_local",
+            "official_state"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "directory_root",
+            "spreadsheet"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_critical",
+          "notes": "County human-services routing."
+        },
+        {
+          "roleId": "dd_regional_offices",
+          "roleLabel": "DD regional offices",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "directory_root",
+            "spreadsheet"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_critical",
+          "notes": "DD regional office directories."
+        },
+        {
+          "roleId": "medicaid_local_offices",
+          "roleLabel": "Medicaid local offices",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "official_state",
+            "official_county",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "directory_root",
+            "spreadsheet"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_critical",
+          "notes": "Medicaid office routing."
+        },
+        {
+          "roleId": "early_intervention_local_offices",
+          "roleLabel": "Early Intervention local offices",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "directory_root",
+            "spreadsheet"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_critical",
+          "notes": "EI local office directories."
+        },
+        {
+          "roleId": "school_districts_local",
+          "roleLabel": "School districts",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "directory_root",
+            "spreadsheet"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_critical",
+          "notes": "District directories used for routing."
+        },
+        {
+          "roleId": "parent_centers_pti",
+          "roleLabel": "Parent centers/PTIs",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "high_authority_nonprofit"
+          ],
+          "allowedBatchClasses": [
+            "html"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "Parent centers and PTI directories."
+        },
+        {
+          "roleId": "legal_aid_resources",
+          "roleLabel": "Legal aid",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "legal_aid"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "directory_root"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "Legal aid routing pages."
+        },
+        {
+          "roleId": "protection_advocacy_resources",
+          "roleLabel": "Disability rights/protection and advocacy",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "protection_advocacy"
+          ],
+          "allowedBatchClasses": [
+            "html"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "P&A or disability-rights pages."
+        },
+        {
+          "roleId": "respite_provider_directories",
+          "roleLabel": "Respite providers",
+          "priority": "medium",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local",
+            "high_authority_nonprofit"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "directory_root",
+            "spreadsheet"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "Respite provider listings."
+        },
+        {
+          "roleId": "therapy_provider_directories",
+          "roleLabel": "Therapy/provider directories",
+          "priority": "critical",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local",
+            "high_authority_nonprofit"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "directory_root",
+            "spreadsheet",
+            "portal"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "Therapy, clinic, or provider directories."
+        },
+        {
+          "roleId": "housing_resources",
+          "roleLabel": "Housing/disability housing resources",
+          "priority": "medium",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local",
+            "high_authority_nonprofit"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "directory_root"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "Housing resource directories."
+        },
+        {
+          "roleId": "transportation_paratransit_resources",
+          "roleLabel": "Transportation/paratransit resources",
+          "priority": "medium",
+          "allowedAuthorities": [
+            "official_state",
+            "official_local"
+          ],
+          "allowedBatchClasses": [
+            "html",
+            "directory_root"
+          ],
+          "minTargets": 1,
+          "countsTowardCompleteness": "counts_toward_supporting",
+          "notes": "Transportation or paratransit resources."
+        }
+      ]
+    }
+  ]
+}
