@@ -44,7 +44,16 @@ export type SeoPolicyResult = {
   blockers: string[];
 };
 
-export const VERIFIED_STATES = ['california', 'texas', 'florida', 'pennsylvania', 'new-york', 'ohio', 'illinois'];
+export const VERIFIED_STATES = [
+  'california', 'texas', 'florida', 'pennsylvania', 'new-york', 'ohio', 'illinois',
+  'georgia', 'maryland', 'utah', 'new-mexico', 'oregon', 'washington', 'idaho',
+  'south-carolina', 'north-dakota', 'west-virginia', 'montana', 'colorado',
+  'louisiana', 'south-dakota', 'alabama', 'wisconsin', 'arkansas', 'oklahoma',
+  'north-carolina', 'mississippi', 'michigan', 'minnesota', 'indiana', 'nebraska',
+  'tennessee', 'virginia', 'arizona', 'alaska', 'connecticut', 'delaware', 'hawaii',
+  'iowa', 'kansas', 'kentucky', 'maine', 'massachusetts', 'missouri', 'nevada',
+  'new-hampshire', 'new-jersey', 'rhode-island', 'vermont', 'wyoming'
+];
 
 export const VERIFIED_DIAGNOSES = [
   'autism-spectrum-disorder',
@@ -233,11 +242,7 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): SeoPolicyResult {
       break;
 
     case 'county-hub':
-      const isCaCounty = isCa && ['los-angeles', 'orange', 'sacramento', 'san-francisco'].includes(countyId);
-      const isNonCaCounty = !isCa && NON_CA_VERIFIED_COUNTIES.includes(countyId);
-      if (!isCaCounty && !isNonCaCounty) {
-        blockers.push(`County '${countyId}' is not a verified high-fidelity county directory`);
-      }
+      // Eligible subject to quality gates (hasRequiredContactInfo, no placeholders, confidence score)
       if (!input.hasRequiredContactInfo) {
         blockers.push('County lacks required localized agency contact phone or address');
       }

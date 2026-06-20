@@ -7,7 +7,7 @@ import SeoSchema from '@/app/components/seo-schema';
 import { TrustBadge } from '@/app/counties/components/CorrectionFlow';
 import SourceFreshnessDisclosure, { DisclosureSource } from '@/app/components/SourceFreshnessDisclosure';
 import { getDynamicStateConfig } from '@/lib/stateConfigs';
-import { NON_CA_VERIFIED_COUNTIES } from '@/lib/verifiedCounties';
+import { evaluateSeoPolicy, assertNoPlaceholderData } from '@/lib/seo-policy';
 import { getCountyMetadata, getCountyIntroCopy } from '@/lib/countySeoHelpers';
 
 function formatIntroCopy(text: string) {
@@ -54,7 +54,43 @@ export async function generateMetadata({ params }: Props) {
   const countyDetails = await getCountyDetails(slug);
   
   if (stateData && countyDetails && countyDetails.state_id === stateData.id) {
-    const isIndexable = stateData.id === 'california' || NON_CA_VERIFIED_COUNTIES.includes(countyDetails.id);
+    const hasRequiredContactInfo = !!(countyDetails.countyOffices && countyDetails.countyOffices.length > 0);
+    const hasNoPlaceholderData = assertNoPlaceholderData(JSON.stringify(countyDetails));
+
+    let confidenceScore: number | null = null;
+    let lastVerifiedDate: string | null = null;
+    let hasOfficialSource = !!countyDetails.website;
+
+    const rcDates = (countyDetails.regionalCenters || []).map(rc => rc.last_verified_date).filter(Boolean) as string[];
+    const sdDates = (countyDetails.schoolDistricts || []).map(sd => sd.last_verified_date).filter(Boolean) as string[];
+    const coDates = (countyDetails.countyOffices || []).map(co => co.last_verified_date).filter(Boolean) as string[];
+    const allDates = [...rcDates, ...sdDates, ...coDates];
+    lastVerifiedDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
+
+    const rcScores = (countyDetails.regionalCenters || []).map(rc => rc.confidence_score).filter(s => s !== null && s !== undefined);
+    const sdScores = (countyDetails.schoolDistricts || []).map(sd => sd.confidence_score !== null && sd.confidence_score !== undefined ? sd.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
+    const coScores = (countyDetails.countyOffices || []).map(co => co.confidence_score !== null && co.confidence_score !== undefined ? co.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
+    const allScores = [...rcScores, ...sdScores, ...coScores];
+    confidenceScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
+
+    if ((countyDetails.regionalCenters || []).some(rc => !!rc.source_url) ||
+        (countyDetails.schoolDistricts || []).some(sd => !!sd.source_url) ||
+        (countyDetails.countyOffices || []).some(co => !!co.source_url)) {
+      hasOfficialSource = true;
+    }
+
+    const policy = evaluateSeoPolicy({
+      routeType: 'county-hub',
+      stateId: stateData.id,
+      countyId: countyDetails.id,
+      entityCount: countyDetails.schoolDistricts?.length || 0,
+      hasOfficialSource,
+      lastVerifiedDate,
+      confidenceScore,
+      hasRequiredContactInfo,
+      hasNoPlaceholderData
+    });
+    const isIndexable = policy.index;
     const seo = getCountyMetadata(stateData.id, stateData.name, stateData.code, countyDetails);
     
     return {
@@ -185,7 +221,44 @@ export default async function CountyPage({ params }: Props) {
     }
   };
 
-  const isIndexable = stateData.id === 'california' || NON_CA_VERIFIED_COUNTIES.includes(countyDetails.id);
+  const hasRequiredContactInfo = !!(countyDetails.countyOffices && countyDetails.countyOffices.length > 0);
+  const hasNoPlaceholderData = assertNoPlaceholderData(JSON.stringify(countyDetails));
+
+  let confidenceScore: number | null = null;
+  let lastVerifiedDate: string | null = null;
+  let hasOfficialSource = !!countyDetails.website;
+
+  const rcDates = (countyDetails.regionalCenters || []).map(rc => rc.last_verified_date).filter(Boolean) as string[];
+  const sdDates = (countyDetails.schoolDistricts || []).map(sd => sd.last_verified_date).filter(Boolean) as string[];
+  const coDates = (countyDetails.countyOffices || []).map(co => co.last_verified_date).filter(Boolean) as string[];
+  const allDates = [...rcDates, ...sdDates, ...coDates];
+  lastVerifiedDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
+
+  const rcScores = (countyDetails.regionalCenters || []).map(rc => rc.confidence_score).filter(s => s !== null && s !== undefined);
+  const sdScores = (countyDetails.schoolDistricts || []).map(sd => sd.confidence_score !== null && sd.confidence_score !== undefined ? sd.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
+  const coScores = (countyDetails.countyOffices || []).map(co => co.confidence_score !== null && co.confidence_score !== undefined ? co.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
+  const allScores = [...rcScores, ...sdScores, ...coScores];
+  confidenceScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
+
+  if ((countyDetails.regionalCenters || []).some(rc => !!rc.source_url) ||
+      (countyDetails.schoolDistricts || []).some(sd => !!sd.source_url) ||
+      (countyDetails.countyOffices || []).some(co => !!co.source_url)) {
+    hasOfficialSource = true;
+  }
+
+  const policy = evaluateSeoPolicy({
+    routeType: 'county-hub',
+    stateId: stateData.id,
+    countyId: countyDetails.id,
+    entityCount: countyDetails.schoolDistricts?.length || 0,
+    hasOfficialSource,
+    lastVerifiedDate,
+    confidenceScore,
+    hasRequiredContactInfo,
+    hasNoPlaceholderData
+  });
+
+  const isIndexable = policy.index;
 
   return (
     <main style={{ maxWidth: '1200px', margin: '0 auto', padding: '2rem 1.5rem' }}>

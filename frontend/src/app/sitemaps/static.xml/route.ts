@@ -6,7 +6,16 @@ import { evaluateSeoPolicy, shouldIncludeInSitemap, assertNoPlaceholderData } fr
 export async function GET() {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ablefull.org';
 
-  const verifiedStatesList = ['california', 'texas', 'florida', 'pennsylvania', 'new-york', 'ohio', 'illinois'];
+  const verifiedStatesList = [
+    'california', 'texas', 'florida', 'pennsylvania', 'new-york', 'ohio', 'illinois',
+    'georgia', 'maryland', 'utah', 'new-mexico', 'oregon', 'washington', 'idaho',
+    'south-carolina', 'north-dakota', 'west-virginia', 'montana', 'colorado',
+    'louisiana', 'south-dakota', 'alabama', 'wisconsin', 'arkansas', 'oklahoma',
+    'north-carolina', 'mississippi', 'michigan', 'minnesota', 'indiana', 'nebraska',
+    'tennessee', 'virginia', 'arizona', 'alaska', 'connecticut', 'delaware', 'hawaii',
+    'iowa', 'kansas', 'kentucky', 'maine', 'massachusetts', 'missouri', 'nevada',
+    'new-hampshire', 'new-jersey', 'rhode-island', 'vermont', 'wyoming'
+  ];
   const stateProgramsMap: Record<string, DbProgram[]> = {};
   for (const st of verifiedStatesList) {
     try {
@@ -21,23 +30,25 @@ export async function GET() {
     { loc: '/benefits', changefreq: 'weekly', priority: '0.9', routeType: 'static-page', stateId: '' },
     { loc: '/advocates', changefreq: 'weekly', priority: '0.7', routeType: 'static-page', stateId: '' },
     { loc: '/forms', changefreq: 'weekly', priority: '0.8', routeType: 'static-page', stateId: '' },
-    
-    // State Hubs
-    { loc: '/benefits/california', changefreq: 'weekly', priority: '0.9', routeType: 'state-hub', stateId: 'california' },
-    { loc: '/counties/california', changefreq: 'weekly', priority: '0.85', routeType: 'state-hub', stateId: 'california' },
-    { loc: '/benefits/texas', changefreq: 'weekly', priority: '0.9', routeType: 'state-hub', stateId: 'texas' },
-    { loc: '/counties/texas', changefreq: 'weekly', priority: '0.85', routeType: 'state-hub', stateId: 'texas' },
-    { loc: '/benefits/florida', changefreq: 'weekly', priority: '0.9', routeType: 'state-hub', stateId: 'florida' },
-    { loc: '/counties/florida', changefreq: 'weekly', priority: '0.85', routeType: 'state-hub', stateId: 'florida' },
-    { loc: '/benefits/pennsylvania', changefreq: 'weekly', priority: '0.9', routeType: 'state-hub', stateId: 'pennsylvania' },
-    { loc: '/counties/pennsylvania', changefreq: 'weekly', priority: '0.85', routeType: 'state-hub', stateId: 'pennsylvania' },
-    { loc: '/benefits/new-york', changefreq: 'weekly', priority: '0.9', routeType: 'state-hub', stateId: 'new-york' },
-    { loc: '/counties/new-york', changefreq: 'weekly', priority: '0.85', routeType: 'state-hub', stateId: 'new-york' },
-    { loc: '/benefits/ohio', changefreq: 'weekly', priority: '0.9', routeType: 'state-hub', stateId: 'ohio' },
-    { loc: '/counties/ohio', changefreq: 'weekly', priority: '0.85', routeType: 'state-hub', stateId: 'ohio' },
-    { loc: '/benefits/illinois', changefreq: 'weekly', priority: '0.9', routeType: 'state-hub', stateId: 'illinois' },
-    { loc: '/counties/illinois', changefreq: 'weekly', priority: '0.85', routeType: 'state-hub', stateId: 'illinois' }
   ];
+
+  // Dynamically push all state hubs to rawStaticUrls
+  for (const st of verifiedStatesList) {
+    rawStaticUrls.push({
+      loc: `/benefits/${st}`,
+      changefreq: 'weekly',
+      priority: '0.9',
+      routeType: 'state-hub',
+      stateId: st
+    });
+    rawStaticUrls.push({
+      loc: `/counties/${st}`,
+      changefreq: 'weekly',
+      priority: '0.85',
+      routeType: 'state-hub',
+      stateId: st
+    });
+  }
 
   // We only include state hubs if they are verified states
   const filteredStaticUrls = [];
