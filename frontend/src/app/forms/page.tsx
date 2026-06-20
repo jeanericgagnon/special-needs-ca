@@ -4,6 +4,7 @@ import { FileText, FileSpreadsheet, Download, ExternalLink, ArrowRight, BookOpen
 import { SEO_CLUSTERS, SEOPageData } from '@/lib/seo-data';
 import { getCounties } from '@/lib/db';
 import { stateConfigs } from '@/lib/stateConfigs';
+import { SEO_STATE_ALLOWLIST } from '@/lib/seo-policy';
 
 type PageProps = {
   searchParams: Promise<{ state?: string }>;
@@ -625,7 +626,7 @@ export default async function FormsIndexPage({ searchParams }: PageProps) {
       
       {/* State Selector Bar */}
       <div style={{ display: 'flex', justifyContent: 'center', gap: '0.75rem', marginBottom: '2.5rem', flexWrap: 'wrap' }}>
-        {['california', 'texas', 'florida', 'new-york', 'pennsylvania', 'illinois', 'ohio', 'georgia', 'maryland', 'utah', 'new-mexico', 'oregon', 'washington', 'idaho', 'south-carolina', 'north-dakota', 'west-virginia', 'montana', 'colorado', 'louisiana', 'south-dakota', 'alabama', 'wisconsin', 'arkansas', 'oklahoma', 'north-carolina', 'mississippi', 'michigan', 'minnesota', 'indiana', 'nebraska', 'tennessee', 'virginia', 'arizona', 'alaska', 'connecticut', 'delaware', 'hawaii', 'iowa', 'kansas', 'kentucky', 'maine', 'massachusetts', 'missouri', 'nevada', 'new-hampshire', 'new-jersey', 'rhode-island', 'vermont', 'wyoming'].map((st) => (
+        {SEO_STATE_ALLOWLIST.map((st) => (
           <Link 
             key={st}
             href={`/forms?state=${st}`} 

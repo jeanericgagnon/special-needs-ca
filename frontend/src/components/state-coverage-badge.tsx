@@ -16,15 +16,13 @@
 
 import React from 'react';
 import { ShieldCheck, Sparkles } from 'lucide-react';
+import { SEO_STATE_ALLOWLIST } from '@/lib/seo-policy';
 
 // States with full exhaustive launch-grade coverage
 const EXHAUSTIVE_STATES = new Set(['california']);
 
-const PRIORITY_PILOT_STATES = new Set([
-  'texas', 'florida', 'new-york', 'pennsylvania', 'illinois', 'ohio', 'georgia',
-  'maryland', 'utah', 'new-mexico', 'oregon', 'washington', 'idaho',
-  'south-carolina', 'north-dakota', 'west-virginia', 'montana', 'colorado', 'louisiana', 'south-dakota', 'alabama', 'wisconsin', 'arkansas', 'oklahoma', 'north-carolina', 'mississippi', 'michigan', 'minnesota', 'indiana', 'nebraska', 'tennessee', 'virginia',
-  'arizona', 'alaska', 'connecticut', 'delaware', 'hawaii', 'iowa', 'kansas', 'kentucky', 'maine', 'massachusetts', 'missouri', 'nevada', 'new-hampshire', 'new-jersey', 'rhode-island', 'vermont', 'wyoming'
+const ACTUAL_PRIORITY_STATES = new Set([
+  'texas', 'florida', 'new-york', 'pennsylvania', 'illinois', 'ohio', 'georgia'
 ]);
 
 export type CoverageLevel = 'exhaustive' | 'pilot';
@@ -39,7 +37,7 @@ interface StateCoverageBadgeProps {
 }
 
 export function StateCoverageBadge({ stateId, stateName }: StateCoverageBadgeProps) {
-  const isPriority = PRIORITY_PILOT_STATES.has(stateId.toLowerCase());
+  const isPriority = ACTUAL_PRIORITY_STATES.has(stateId.toLowerCase());
   const isExhaustive = EXHAUSTIVE_STATES.has(stateId.toLowerCase());
 
   if (isExhaustive) {

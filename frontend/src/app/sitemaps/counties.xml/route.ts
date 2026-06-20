@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { getCounties, getCountyDetails, getProgramsForDiagnosis, getAllStates, getLocalProviders, County, ResourceProvider, Program, navigatorDb, DbProgram } from '@/lib/db';
-import { evaluateSeoPolicy, shouldIncludeInSitemap, assertNoPlaceholderData, SeoPolicyResult } from '@/lib/seo-policy';
+import { evaluateSeoPolicy, shouldIncludeInSitemap, assertNoPlaceholderData, SeoPolicyResult, normalizeConfidenceScore } from '@/lib/seo-policy';
 import { NON_CA_VERIFIED_COUNTIES } from '@/lib/verifiedCounties';
 
 // Sitemap expansion batch configuration
@@ -60,7 +60,7 @@ export async function GET() {
 
     let confidenceScore: number | null = null;
     let lastVerifiedDate: string | null = null;
-    let hasOfficialSource = !!details?.website;
+    let hasOfficialSource = false;
 
     if (details) {
       const rcDates = (details.regionalCenters || []).map(rc => rc.last_verified_date).filter(Boolean) as string[];
@@ -69,9 +69,9 @@ export async function GET() {
       const allDates = [...rcDates, ...sdDates, ...coDates];
       lastVerifiedDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
 
-      const rcScores = (details.regionalCenters || []).map(rc => rc.confidence_score).filter(s => s !== null && s !== undefined);
-      const sdScores = (details.schoolDistricts || []).map(sd => sd.confidence_score !== null && sd.confidence_score !== undefined ? sd.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
-      const coScores = (details.countyOffices || []).map(co => co.confidence_score !== null && co.confidence_score !== undefined ? co.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
+      const rcScores = (details.regionalCenters || []).map(rc => normalizeConfidenceScore(rc.confidence_score)).filter((s): s is number => s !== null);
+      const sdScores = (details.schoolDistricts || []).map(sd => normalizeConfidenceScore(sd.confidence_score)).filter((s): s is number => s !== null);
+      const coScores = (details.countyOffices || []).map(co => normalizeConfidenceScore(co.confidence_score)).filter((s): s is number => s !== null);
       const allScores = [...rcScores, ...sdScores, ...coScores];
       confidenceScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
 
@@ -161,8 +161,8 @@ export async function GET() {
     } catch {}
     const dates = statePrograms.map(p => p.last_verified_date).filter(Boolean) as string[];
     const minDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
-    const scores = statePrograms.map(p => p.confidence_score).filter(s => s !== null && s !== undefined);
-    const avgScore = scores.length > 0 ? (scores.reduce((sum, s) => sum + s, 0) / scores.length) / 5.0 : null;
+    const scores = statePrograms.map(p => normalizeConfidenceScore(p.confidence_score)).filter((s): s is number => s !== null);
+    const avgScore = scores.length > 0 ? scores.reduce((sum, s) => sum + s, 0) / scores.length : null;
 
     diagnosesSlugs.forEach(diag => {
       const policy = evaluateSeoPolicy({
@@ -209,7 +209,7 @@ export async function GET() {
 
         let confidenceScore: number | null = null;
         let lastVerifiedDate: string | null = null;
-        let hasOfficialSource = !!countyDetails?.website;
+        let hasOfficialSource = false;
 
         if (countyDetails) {
           const rcDates = (countyDetails.regionalCenters || []).map(rc => rc.last_verified_date).filter(Boolean) as string[];
@@ -218,9 +218,9 @@ export async function GET() {
           const allDates = [...rcDates, ...sdDates, ...coDates];
           lastVerifiedDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
 
-          const rcScores = (countyDetails.regionalCenters || []).map(rc => rc.confidence_score).filter(s => s !== null && s !== undefined);
-          const sdScores = (countyDetails.schoolDistricts || []).map(sd => sd.confidence_score !== null && sd.confidence_score !== undefined ? sd.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
-          const coScores = (countyDetails.countyOffices || []).map(co => co.confidence_score !== null && co.confidence_score !== undefined ? co.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
+          const rcScores = (countyDetails.regionalCenters || []).map(rc => normalizeConfidenceScore(rc.confidence_score)).filter((s): s is number => s !== null);
+          const sdScores = (countyDetails.schoolDistricts || []).map(sd => normalizeConfidenceScore(sd.confidence_score)).filter((s): s is number => s !== null);
+          const coScores = (countyDetails.countyOffices || []).map(co => normalizeConfidenceScore(co.confidence_score)).filter((s): s is number => s !== null);
           const allScores = [...rcScores, ...sdScores, ...coScores];
           confidenceScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
 

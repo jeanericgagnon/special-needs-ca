@@ -4,12 +4,13 @@ import React, { useState, useEffect } from 'react';
 import { 
   Copy, FileText, MapPin, Phone, Printer, 
   Sparkles, AlertCircle, FileCheck, HelpCircle, ArrowRight, 
-  Download, FileDown, CheckCircle2, ChevronRight
+  Download, FileDown, CheckCircle2, ChevronRight, Clock
 } from 'lucide-react';
 import Link from 'next/link';
 import { SEOPageData, SEO_CLUSTERS } from '@/lib/seo-data';
 import { fetchCountyDetailsAction } from '../actions';
 import SourceFreshnessDisclosure from './SourceFreshnessDisclosure';
+import type { ProgramWaitlist } from '@/lib/db';
 
 interface CountyDetailsType {
   id: string;
@@ -43,9 +44,10 @@ interface AnswerPageProps {
   data?: SEOPageData;
   slug?: string;
   counties: { id: string; name: string }[];
+  waitlistInfo?: ProgramWaitlist;
 }
 
-export default function AnswerPage({ data: propData, slug, counties }: AnswerPageProps) {
+export default function AnswerPage({ data: propData, slug, counties, waitlistInfo }: AnswerPageProps) {
   const data = propData || (slug ? SEO_CLUSTERS[slug] : null);
   if (!data) {
     throw new Error(`AnswerPage: data or slug must be provided. Slug: ${slug}`);
@@ -220,6 +222,85 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
               {data.quickAnswer}
             </p>
           </div>
+
+          {/* Waitlist Warning Card if active */}
+          {waitlistInfo && (waitlistInfo.duration_months > 0 || waitlistInfo.status === 'critical') && (
+            <div 
+              className="glass-panel alert-card animate-fade-in" 
+              style={{ 
+                background: waitlistInfo.status === 'critical' 
+                  ? 'linear-gradient(135deg, rgba(239, 68, 68, 0.05) 0%, rgba(239, 68, 68, 0.02) 100%)' 
+                  : 'linear-gradient(135deg, rgba(245, 158, 11, 0.05) 0%, rgba(245, 158, 11, 0.02) 100%)',
+                borderLeft: `4px solid ${waitlistInfo.status === 'critical' ? '#ef4444' : '#f59e0b'}`, 
+                padding: '1.5rem', 
+                borderRadius: '16px',
+                boxShadow: '0 4px 20px 0 rgba(0, 0, 0, 0.02)',
+                borderTop: '1px solid rgba(0,0,0,0.03)',
+                borderRight: '1px solid rgba(0,0,0,0.03)',
+                borderBottom: '1px solid rgba(0,0,0,0.03)',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '0.75rem'
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.5rem' }}>
+                <h3 style={{ 
+                  fontSize: '1.1rem', 
+                  fontWeight: 700, 
+                  margin: 0, 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  gap: '0.5rem', 
+                  color: waitlistInfo.status === 'critical' ? '#ef4444' : '#f59e0b',
+                  lineHeight: 1.2
+                }}>
+                  {waitlistInfo.status === 'critical' ? <AlertCircle size={18} /> : <Clock size={18} />}
+                  Enrollment Alert: Waitlist Active
+                </h3>
+                <span style={{ 
+                  fontSize: '0.8rem', 
+                  fontWeight: 700, 
+                  padding: '0.25rem 0.75rem', 
+                  borderRadius: '999px', 
+                  backgroundColor: waitlistInfo.status === 'critical' ? 'rgba(239, 68, 68, 0.1)' : 'rgba(245, 158, 11, 0.1)', 
+                  color: waitlistInfo.status === 'critical' ? '#ef4444' : '#f59e0b',
+                  border: `1px solid ${waitlistInfo.status === 'critical' ? 'rgba(239, 68, 68, 0.2)' : 'rgba(245, 158, 11, 0.2)'}`
+                }}>
+                  {waitlistInfo.duration_label}
+                </span>
+              </div>
+              
+              <p style={{ margin: 0, fontSize: '0.92rem', lineHeight: '1.5', color: 'var(--text-main)' }}>
+                {waitlistInfo.description}
+              </p>
+
+              {waitlistInfo.reserve_capacity_notice && (
+                <div 
+                  style={{ 
+                    marginTop: '0.25rem', 
+                    padding: '0.75rem 1rem', 
+                    borderRadius: '10px', 
+                    backgroundColor: 'rgba(255, 255, 255, 0.5)', 
+                    borderLeft: `3px solid ${waitlistInfo.status === 'critical' ? '#ef4444' : '#f59e0b'}`,
+                    display: 'flex',
+                    gap: '0.5rem',
+                    alignItems: 'flex-start'
+                  }}
+                >
+                  <span style={{ fontSize: '0.9rem', lineHeight: 1, marginTop: '1px' }}>💡</span>
+                  <div style={{ fontSize: '0.82rem', color: 'var(--text-main)', lineHeight: '1.4' }}>
+                    <strong>Priority/Bypass Criteria:</strong> {waitlistInfo.reserve_capacity_notice}
+                  </div>
+                </div>
+              )}
+              
+              {waitlistInfo.legal_deadline && (
+                <span style={{ fontSize: '0.75rem', color: 'var(--text-light)', fontStyle: 'italic', display: 'block', marginTop: '0.25rem' }}>
+                  ⚖️ Regulatory Limit: {waitlistInfo.legal_deadline}
+                </span>
+              )}
+            </div>
+          )}
 
           {/* Visual TL;DR card grid */}
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '1rem' }}>

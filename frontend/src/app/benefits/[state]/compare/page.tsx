@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { ArrowLeft, CheckCircle2, ShieldCheck, Scale, FileText } from 'lucide-react';
 import SeoSchema from '@/app/components/seo-schema';
 import EditorialDisclosure from '@/components/editorial-disclosure';
-import { evaluateSeoPolicy, robotsForPolicy, assertNoPlaceholderData } from '@/lib/seo-policy';
+import { evaluateSeoPolicy, robotsForPolicy, assertNoPlaceholderData, normalizeConfidenceScore } from '@/lib/seo-policy';
 
 
 type Props = {
@@ -28,8 +28,8 @@ export async function generateMetadata({ params }: Props) {
 
   const dates = programs.map(p => p.last_verified_date).filter((d): d is string => !!d);
   const lastVerifiedDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
-  const scores = programs.map(p => p.confidence_score).filter((s): s is number => s !== null);
-  const confidenceScore = scores.length > 0 ? (scores.reduce((sum, s) => sum + s, 0) / scores.length) / 5.0 : null;
+  const scores = programs.map(p => normalizeConfidenceScore(p.confidence_score)).filter((s): s is number => s !== null);
+  const confidenceScore = scores.length > 0 ? scores.reduce((sum, s) => sum + s, 0) / scores.length : null;
 
   const hasOfficialSource = programs.length >= 2 && programs.filter(p => !!p.official_source_url).length >= 2;
   const hasEligibilityRules = programs.filter(p => p.rules_count > 0).length >= 2;
@@ -121,8 +121,8 @@ export default async function StateComparisonPage({ params }: Props) {
   // Evaluate policy in component body
   const dates = programs.map(p => p.last_verified_date).filter((d): d is string => !!d);
   const lastVerifiedDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
-  const scores = programs.map(p => p.confidence_score).filter((s): s is number => s !== null);
-  const confidenceScore = scores.length > 0 ? (scores.reduce((sum, s) => sum + s, 0) / scores.length) / 5.0 : null;
+  const scores = programs.map(p => normalizeConfidenceScore(p.confidence_score)).filter((s): s is number => s !== null);
+  const confidenceScore = scores.length > 0 ? scores.reduce((sum, s) => sum + s, 0) / scores.length : null;
 
   const hasOfficialSource = programs.length >= 2 && programs.filter(p => !!p.official_source_url).length >= 2;
   const hasEligibilityRules = programs.filter(p => p.rules_count > 0).length >= 2;
@@ -215,7 +215,7 @@ export default async function StateComparisonPage({ params }: Props) {
             {programs.length === 0 ? (
               <p style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>No waiver programs indexed for {stateData.name} yet.</p>
             ) : (
-              <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', fontSize: '0.88rem' }}>
+              <table className="responsive-matrix-table" style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', fontSize: '0.88rem' }}>
                 <thead>
                   <tr style={{ borderBottom: '2px solid rgba(0,0,0,0.08)' }}>
                     <th style={{ padding: '0.75rem 0.5rem', fontWeight: 700 }}>Program Name</th>
@@ -229,15 +229,15 @@ export default async function StateComparisonPage({ params }: Props) {
                 <tbody>
                   {programs.map((prog) => (
                     <tr key={prog.id} style={{ borderBottom: '1px solid rgba(0,0,0,0.05)' }}>
-                      <td style={{ padding: '1rem 0.5rem', fontWeight: 600 }}>
+                      <td data-label="Program Name" style={{ padding: '1rem 0.5rem', fontWeight: 600 }}>
                         <Link href={`/benefits/${stateData.id}/program/${String(prog.id).toLowerCase()}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>
                           {prog.name}
                         </Link>
                       </td>
-                      <td style={{ padding: '1rem 0.5rem', color: 'var(--text-main)' }}>{prog.who_it_is_for || 'Any diagnosis'}</td>
-                      <td style={{ padding: '1rem 0.5rem' }}>{prog.min_age} to {prog.max_age} yrs</td>
-                      <td style={{ padding: '1rem 0.5rem', color: 'var(--text-light)' }}>{prog.income_limit || 'None specified'}</td>
-                      <td style={{ padding: '1rem 0.5rem' }}>
+                      <td data-label="Target Group" style={{ padding: '1rem 0.5rem', color: 'var(--text-main)' }}>{prog.who_it_is_for || 'Any diagnosis'}</td>
+                      <td data-label="Age Limit" style={{ padding: '1rem 0.5rem' }}>{prog.min_age} to {prog.max_age} yrs</td>
+                      <td data-label="Income Rules" style={{ padding: '1rem 0.5rem', color: 'var(--text-light)' }}>{prog.income_limit || 'None specified'}</td>
+                      <td data-label="Official Source" style={{ padding: '1rem 0.5rem' }}>
                         {prog.official_source_url ? (
                           <a href={prog.official_source_url} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>
                             Link
@@ -246,7 +246,7 @@ export default async function StateComparisonPage({ params }: Props) {
                           'None'
                         )}
                       </td>
-                      <td style={{ padding: '1rem 0.5rem', color: 'var(--text-light)' }}>
+                      <td data-label="Last Verified" style={{ padding: '1rem 0.5rem', color: 'var(--text-light)' }}>
                         {prog.last_verified_date || 'Pending'}
                       </td>
                     </tr>
@@ -260,8 +260,8 @@ export default async function StateComparisonPage({ params }: Props) {
           {(() => {
             const dates = programs.map(p => p.last_verified_date).filter((d): d is string => !!d);
             const lastVerifiedDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
-            const scores = programs.map(p => p.confidence_score).filter((s): s is number => s !== null);
-            const confidenceScore = scores.length > 0 ? (scores.reduce((sum, s) => sum + s, 0) / scores.length) / 5.0 : null;
+            const scores = programs.map(p => normalizeConfidenceScore(p.confidence_score)).filter((s): s is number => s !== null);
+            const confidenceScore = scores.length > 0 ? scores.reduce((sum, s) => sum + s, 0) / scores.length : null;
 
             const hasOfficialSource = programs.length >= 2 && programs.filter(p => !!p.official_source_url).length >= 2;
             const hasEligibilityRules = programs.filter(p => p.rules_count > 0).length >= 2;

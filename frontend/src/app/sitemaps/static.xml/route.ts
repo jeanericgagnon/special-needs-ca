@@ -1,23 +1,13 @@
 import { NextResponse } from 'next/server';
 import { SEO_CLUSTERS } from '@/lib/seo-data';
-import { getProgramBySlug, navigatorDb, getProgramApplicationSteps, getProgramDocumentRequirements, DbProgram } from '@/lib/db';
-import { evaluateSeoPolicy, shouldIncludeInSitemap, assertNoPlaceholderData } from '@/lib/seo-policy';
+import { getProgramBySlug, navigatorDb, getProgramApplicationSteps, getProgramDocumentRequirements, DbProgram, getCounties, getCountyDetails } from '@/lib/db';
+import { evaluateSeoPolicy, shouldIncludeInSitemap, assertNoPlaceholderData, SEO_STATE_ALLOWLIST, normalizeConfidenceScore } from '@/lib/seo-policy';
 
 export async function GET() {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ablefull.org';
 
-  const verifiedStatesList = [
-    'california', 'texas', 'florida', 'pennsylvania', 'new-york', 'ohio', 'illinois',
-    'georgia', 'maryland', 'utah', 'new-mexico', 'oregon', 'washington', 'idaho',
-    'south-carolina', 'north-dakota', 'west-virginia', 'montana', 'colorado',
-    'louisiana', 'south-dakota', 'alabama', 'wisconsin', 'arkansas', 'oklahoma',
-    'north-carolina', 'mississippi', 'michigan', 'minnesota', 'indiana', 'nebraska',
-    'tennessee', 'virginia', 'arizona', 'alaska', 'connecticut', 'delaware', 'hawaii',
-    'iowa', 'kansas', 'kentucky', 'maine', 'massachusetts', 'missouri', 'nevada',
-    'new-hampshire', 'new-jersey', 'rhode-island', 'vermont', 'wyoming'
-  ];
   const stateProgramsMap: Record<string, DbProgram[]> = {};
-  for (const st of verifiedStatesList) {
+  for (const st of SEO_STATE_ALLOWLIST) {
     try {
       stateProgramsMap[st] = await navigatorDb.prepare('SELECT * FROM programs WHERE state_id = ?').all(st) as DbProgram[];
     } catch {
@@ -33,7 +23,7 @@ export async function GET() {
   ];
 
   // Dynamically push all state hubs to rawStaticUrls
-  for (const st of verifiedStatesList) {
+  for (const st of SEO_STATE_ALLOWLIST) {
     rawStaticUrls.push({
       loc: `/benefits/${st}`,
       changefreq: 'weekly',
@@ -45,7 +35,7 @@ export async function GET() {
       loc: `/counties/${st}`,
       changefreq: 'weekly',
       priority: '0.85',
-      routeType: 'state-hub',
+      routeType: 'state-counties-hub',
       stateId: st
     });
   }
@@ -61,21 +51,104 @@ export async function GET() {
       if (shouldIncludeInSitemap(policy)) {
         filteredStaticUrls.push({ ...url, lastmod: null });
       }
-    } else {
+    } else if (url.routeType === 'state-hub') {
       const stateProgs = stateProgramsMap[url.stateId] || [];
       const dates = stateProgs.map(p => p.last_verified_date).filter(Boolean) as string[];
       const minDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
-      const scores = stateProgs.map(p => p.confidence_score).filter(s => s !== null && s !== undefined);
-      const avgScore = scores.length > 0 ? (scores.reduce((sum, s) => sum + s, 0) / scores.length) / 5.0 : null;
+      const scores = stateProgs.map(p => normalizeConfidenceScore(p.confidence_score)).filter((s): s is number => s !== null);
+      const avgScore = scores.length > 0 ? scores.reduce((sum, s) => sum + s, 0) / scores.length : null;
 
       const policy = evaluateSeoPolicy({
         routeType: 'state-hub',
         stateId: url.stateId,
+        entityCount: stateProgs.length,
         confidenceScore: avgScore,
         hasOfficialSource: stateProgs.length > 0 && stateProgs.some(p => !!p.official_source_url),
         lastVerifiedDate: minDate,
         hasNoPlaceholderData: stateProgs.every(p => assertNoPlaceholderData(JSON.stringify(p)))
       });
+      if (shouldIncludeInSitemap(policy)) {
+        filteredStaticUrls.push({ ...url, lastmod: minDate });
+      }
+    } else if (url.routeType === 'state-counties-hub') {
+      const counties = await getCounties(url.stateId);
+      
+      let hasRealLocalAssets = false;
+      let totalConfidence = 0;
+      let confidenceCount = 0;
+      let minDate: string | null = null;
+      let hasOfficialSource = false;
+
+      for (const c of counties) {
+        const details = await getCountyDetails(c.id);
+        if (!details) continue;
+
+        const offices = details.countyOffices || [];
+        const countyDistricts = details.schoolDistricts || [];
+        const rcs = details.regionalCenters || [];
+
+        const hasRequiredContactInfo = offices.length > 0;
+        const hasNoPlaceholderData = assertNoPlaceholderData(JSON.stringify(details));
+
+        const rcDates = rcs.map(rc => rc.last_verified_date).filter(Boolean) as string[];
+        const sdDates = countyDistricts.map(sd => sd.last_verified_date).filter(Boolean) as string[];
+        const coDates = offices.map(co => co.last_verified_date).filter(Boolean) as string[];
+        const allDates = [...rcDates, ...sdDates, ...coDates];
+        const lastVerDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
+
+        if (lastVerDate) {
+          if (!minDate || lastVerDate < minDate) {
+            minDate = lastVerDate;
+          }
+        }
+
+        const rcScores = rcs.map(rc => normalizeConfidenceScore(rc.confidence_score)).filter((s): s is number => s !== null);
+        const sdScores = countyDistricts.map(sd => normalizeConfidenceScore(sd.confidence_score)).filter((s): s is number => s !== null);
+        const coScores = offices.map(co => normalizeConfidenceScore(co.confidence_score)).filter((s): s is number => s !== null);
+        const allScores = [...rcScores, ...sdScores, ...coScores];
+        const confScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
+
+        if (confScore !== null) {
+          totalConfidence += confScore;
+          confidenceCount++;
+        }
+
+        let countyHasOfficialSource = false;
+        if (rcs.some(rc => !!rc.source_url) || countyDistricts.some(sd => !!sd.source_url) || offices.some(co => !!co.source_url)) {
+          countyHasOfficialSource = true;
+          hasOfficialSource = true;
+        }
+
+        const countyPolicy = evaluateSeoPolicy({
+          routeType: 'county-hub',
+          stateId: url.stateId,
+          countyId: c.id,
+          entityCount: countyDistricts.length,
+          hasOfficialSource: countyHasOfficialSource,
+          lastVerifiedDate: lastVerDate,
+          confidenceScore: confScore,
+          hasRequiredContactInfo,
+          hasNoPlaceholderData
+        });
+
+        if (countyPolicy.index) {
+          hasRealLocalAssets = true;
+        }
+      }
+
+      const avgConfidenceScore = confidenceCount > 0 ? totalConfidence / confidenceCount : null;
+
+      const policy = evaluateSeoPolicy({
+        routeType: 'state-counties-hub',
+        stateId: url.stateId,
+        entityCount: counties.length,
+        hasOfficialSource,
+        lastVerifiedDate: minDate,
+        confidenceScore: avgConfidenceScore,
+        hasRealLocalAssets,
+        hasNoPlaceholderData: counties.every(c => assertNoPlaceholderData(JSON.stringify(c)))
+      });
+
       if (shouldIncludeInSitemap(policy)) {
         filteredStaticUrls.push({ ...url, lastmod: minDate });
       }
@@ -100,7 +173,7 @@ export async function GET() {
       let hasEligibilityRules = false;
       let hasApplicationSteps = false;
       let hasDocuments = false;
-      let hasNoPlaceholderData = true;
+      const hasNoPlaceholderData = true;
       let confidenceScore: number | null = null;
       let stateId = 'california';
 
@@ -111,10 +184,7 @@ export async function GET() {
         hasEligibilityRules = (ruleCount?.count || 0) > 0;
         hasApplicationSteps = (await getProgramApplicationSteps(progIdStr)).length > 0;
         hasDocuments = (await getProgramDocumentRequirements(progIdStr)).length > 0;
-        hasNoPlaceholderData = assertNoPlaceholderData(JSON.stringify(prog));
-        confidenceScore = prog.confidence_score !== null && prog.confidence_score !== undefined
-          ? Number(prog.confidence_score) / 5.0
-          : null;
+        confidenceScore = normalizeConfidenceScore(prog.confidence_score);
       }
 
       const policy = evaluateSeoPolicy({
@@ -142,8 +212,8 @@ export async function GET() {
       const statePrograms = stateProgramsMap['california'] || [];
       const dates = statePrograms.map(p => p.last_verified_date).filter(Boolean) as string[];
       const minDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
-      const scores = statePrograms.map(p => p.confidence_score).filter(s => s !== null && s !== undefined);
-      const confidenceScore = scores.length > 0 ? (scores.reduce((sum, s) => sum + s, 0) / scores.length) / 5.0 : null;
+      const scores = statePrograms.map(p => normalizeConfidenceScore(p.confidence_score)).filter((s): s is number => s !== null);
+      const confidenceScore = scores.length > 0 ? scores.reduce((sum, s) => sum + s, 0) / scores.length : null;
 
       const policy = evaluateSeoPolicy({
         routeType: 'condition-hub',

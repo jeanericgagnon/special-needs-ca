@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import Database from 'better-sqlite3';
-import { evaluateSeoPolicy, assertNoPlaceholderData, mapShortDiagToDbId } from '../frontend/src/lib/seo-policy';
+import { evaluateSeoPolicy, assertNoPlaceholderData, mapShortDiagToDbId, normalizeConfidenceScore } from '../frontend/src/lib/seo-policy';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -64,7 +64,12 @@ const BANNED_PATTERNS = [
   { pattern: /source_url\s*\|\|\s*['"]https:\/\/www\.dhcs\.ca\.gov['"]/i, label: 'source_url DHCS fallback' },
   { pattern: /officialSources:\s*\[\s*\{\s*name:\s*[`'"]\s*\$\{\s*stateName\s*\}\s*State\s+Program\s+Portal\s*[`'"],\s*url:\s*program\.source_url\s*\|\|/i, label: 'officialSources state portal fallback' },
   { pattern: /(?:source_url|official_source_url)\s*\|\|\s*['"](?!\s*['"])[^'"]+['"]/i, label: 'source_url fallback to non-empty string literal' },
-  { pattern: /officialSources\s*:\s*\[/i, label: 'hardcoded officialSources array' }
+  { pattern: /officialSources\s*:\s*\[/i, label: 'hardcoded officialSources array' },
+  { pattern: /\|\|\s*18(\.00)?\b/i, label: '|| 18 wage fallback' },
+  { pattern: /\?\?\s*18(\.00)?\b/i, label: '?? 18 wage fallback' },
+  { pattern: /typically 15 to 30 days/i, label: 'generic IEP timeline claim' },
+  { pattern: /\bVERIFIED_STATES\b/i, label: 'legacy VERIFIED_STATES list' },
+  { pattern: /confidence_score\s*.*?\/.*?5(\.0)?\b/i, label: 'manual division of confidence score by 5' }
 ];
 
 function scanFilesForBannedPatterns() {
@@ -132,12 +137,13 @@ states.forEach(state => {
   const stateProgs = db.prepare('SELECT * FROM programs WHERE state_id = ?').all(state.id) as any[];
   const dates = stateProgs.map(p => p.last_verified_date).filter(Boolean);
   const minDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
-  const scores = stateProgs.map(p => p.confidence_score).filter(s => s !== null && s !== undefined);
-  const avgScore = scores.length > 0 ? (scores.reduce((sum, s) => sum + s, 0) / scores.length) / 5.0 : null;
+  const scores = stateProgs.map(p => normalizeConfidenceScore(p.confidence_score)).filter((s): s is number => s !== null);
+  const avgScore = scores.length > 0 ? scores.reduce((sum, s) => sum + s, 0) / scores.length : null;
 
   const policy = evaluateSeoPolicy({
     routeType: 'state-hub',
     stateId: state.id,
+    entityCount: stateProgs.length,
     confidenceScore: avgScore,
     hasOfficialSource: stateProgs.length > 0 && stateProgs.some(p => !!p.official_source_url),
     lastVerifiedDate: minDate,
@@ -149,6 +155,87 @@ states.forEach(state => {
     logSuccess(`State Hub indexable: ${url} (Score: ${policy.qualityScore})`);
   } else {
     logSuccess(`State Hub noindexed (correct): ${url} (Blockers: ${policy.blockers.join(', ')})`);
+  }
+});
+
+// 1.5 State Counties Hub Directory (/counties/[state])
+console.log('\n--- Checking State Counties Hub Directory Pages ---');
+states.forEach(state => {
+  const stateCounties = db.prepare('SELECT * FROM counties WHERE state_id = ?').all(state.id) as any[];
+  
+  let indexableCountiesCount = 0;
+  const countyDates: string[] = [];
+  const countyScores: number[] = [];
+  let stateHasOfficialSource = false;
+  
+  stateCounties.forEach(county => {
+    const offices = db.prepare('SELECT * FROM county_offices WHERE county_id = ?').all(county.id) as any[];
+    const countyDistricts = db.prepare('SELECT * FROM school_districts WHERE county_id = ?').all(county.id) as any[];
+    const details = db.prepare(`
+      SELECT rc.* FROM regional_centers rc
+      JOIN regional_center_counties rcc ON rc.id = rcc.regional_center_id
+      WHERE rcc.county_id = ?
+    `).all(county.id) as any[];
+    
+    const hasRequiredContactInfo = offices.length > 0;
+    const hasNoPlaceholderData = assertNoPlaceholderData(JSON.stringify(county)) && assertNoPlaceholderData(JSON.stringify(offices));
+    
+    const rcDates = details.map(rc => rc.last_verified_date).filter(Boolean);
+    const sdDates = countyDistricts.map(sd => sd.last_verified_date).filter(Boolean);
+    const coDates = offices.map(co => co.last_verified_date).filter(Boolean);
+    const allDates = [...rcDates, ...sdDates, ...coDates];
+    const lastVerifiedDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
+    if (lastVerifiedDate) countyDates.push(lastVerifiedDate);
+    
+    const rcScores = details.map(rc => normalizeConfidenceScore(rc.confidence_score)).filter((s): s is number => s !== null);
+    const sdScores = countyDistricts.map(sd => normalizeConfidenceScore(sd.confidence_score)).filter((s): s is number => s !== null);
+    const coScores = offices.map(co => normalizeConfidenceScore(co.confidence_score)).filter((s): s is number => s !== null);
+    const allScores = [...rcScores, ...sdScores, ...coScores];
+    const confidenceScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
+    if (confidenceScore !== null) countyScores.push(confidenceScore);
+    
+    let hasOfficialSource = false;
+    if (details.some(rc => !!rc.source_url) || countyDistricts.some(sd => !!sd.source_url) || offices.some(co => !!co.source_url)) {
+      hasOfficialSource = true;
+      stateHasOfficialSource = true;
+    }
+    
+    const cPolicy = evaluateSeoPolicy({
+      routeType: 'county-hub',
+      stateId: county.state_id,
+      countyId: county.id,
+      entityCount: countyDistricts.length,
+      hasOfficialSource,
+      lastVerifiedDate,
+      confidenceScore,
+      hasRequiredContactInfo,
+      hasNoPlaceholderData
+    });
+    
+    if (cPolicy.index) {
+      indexableCountiesCount++;
+    }
+  });
+  
+  const stateCountiesDate = countyDates.length > 0 ? countyDates.reduce((min, d) => d < min ? d : min, countyDates[0]) : null;
+  const stateCountiesScore = countyScores.length > 0 ? countyScores.reduce((sum, s) => sum + s, 0) / countyScores.length : null;
+  
+  const stateCountiesPolicy = evaluateSeoPolicy({
+    routeType: 'state-counties-hub',
+    stateId: state.id,
+    entityCount: stateCounties.length,
+    hasRealLocalAssets: indexableCountiesCount > 0,
+    hasOfficialSource: stateHasOfficialSource,
+    lastVerifiedDate: stateCountiesDate,
+    confidenceScore: stateCountiesScore,
+    hasNoPlaceholderData: assertNoPlaceholderData(state.name)
+  });
+  
+  const countiesDirUrl = `/counties/${state.id}`;
+  if (stateCountiesPolicy.index) {
+    logSuccess(`State Counties Hub indexable: ${countiesDirUrl} (Score: ${stateCountiesPolicy.qualityScore}, Indexable Counties: ${indexableCountiesCount})`);
+  } else {
+    logSuccess(`State Counties Hub noindexed (correct): ${countiesDirUrl} (Blockers: ${stateCountiesPolicy.blockers.join(', ')})`);
   }
 });
 
@@ -174,13 +261,13 @@ counties.forEach(county => {
   const allDates = [...rcDates, ...sdDates, ...coDates];
   const lastVerifiedDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
 
-  const rcScores = details.map(rc => rc.confidence_score).filter((s): s is number => s !== null && s !== undefined);
-  const sdScores = countyDistricts.map(sd => sd.confidence_score !== null && sd.confidence_score !== undefined ? sd.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
-  const coScores = offices.map(co => co.confidence_score !== null && co.confidence_score !== undefined ? co.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
+  const rcScores = details.map(rc => normalizeConfidenceScore(rc.confidence_score)).filter((s): s is number => s !== null);
+  const sdScores = countyDistricts.map(sd => normalizeConfidenceScore(sd.confidence_score)).filter((s): s is number => s !== null);
+  const coScores = offices.map(co => normalizeConfidenceScore(co.confidence_score)).filter((s): s is number => s !== null);
   const allScores = [...rcScores, ...sdScores, ...coScores];
   const confidenceScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
 
-  let hasOfficialSource = !!county.website || !!county.source_url;
+  let hasOfficialSource = false;
   if (details.some(rc => !!rc.source_url) || countyDistricts.some(sd => !!sd.source_url) || offices.some(co => !!co.source_url)) {
     hasOfficialSource = true;
   }
@@ -227,9 +314,7 @@ programs.forEach(prog => {
     programId: prog.id,
     hasOfficialSource: !!prog.official_source_url,
     lastVerifiedDate: prog.last_verified_date || null,
-    confidenceScore: prog.confidence_score !== null && prog.confidence_score !== undefined
-      ? Number(prog.confidence_score) / 5.0
-      : null,
+    confidenceScore: normalizeConfidenceScore(prog.confidence_score),
     hasEligibilityRules,
     hasApplicationSteps,
     hasDocuments,
@@ -301,13 +386,13 @@ counties.forEach(county => {
   const allDates = [...rcDates, ...sdDates, ...coDates];
   const lastVerifiedDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
 
-  const rcScores = details.map(rc => rc.confidence_score).filter((s): s is number => s !== null && s !== undefined);
-  const sdScores = countyDistricts.map(sd => sd.confidence_score !== null && sd.confidence_score !== undefined ? sd.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
-  const coScores = offices.map(co => co.confidence_score !== null && co.confidence_score !== undefined ? co.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
+  const rcScores = details.map(rc => normalizeConfidenceScore(rc.confidence_score)).filter((s): s is number => s !== null);
+  const sdScores = countyDistricts.map(sd => normalizeConfidenceScore(sd.confidence_score)).filter((s): s is number => s !== null);
+  const coScores = offices.map(co => normalizeConfidenceScore(co.confidence_score)).filter((s): s is number => s !== null);
   const allScores = [...rcScores, ...sdScores, ...coScores];
   const confidenceScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
 
-  let hasOfficialSource = !!county.website || !!county.source_url;
+  let hasOfficialSource = false;
   if (details.some(rc => !!rc.source_url) || countyDistricts.some(sd => !!sd.source_url) || offices.some(co => !!co.source_url)) {
     hasOfficialSource = true;
   }
@@ -358,8 +443,8 @@ conditions.forEach(cond => {
   }
   const lastVerifiedDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
 
-  const scores = condPrograms.map(p => p.confidence_score).filter(s => s !== null && s !== undefined);
-  const confidenceScore = scores.length > 0 ? (scores.reduce((sum, s) => sum + s, 0) / scores.length) / 5.0 : null;
+  const scores = condPrograms.map(p => normalizeConfidenceScore(p.confidence_score)).filter((s): s is number => s !== null);
+  const confidenceScore = scores.length > 0 ? scores.reduce((sum, s) => sum + s, 0) / scores.length : null;
 
   const hasOfficialSource = (cond.source_url ? (!cond.source_url.includes('ablefull.org') && !cond.source_url.includes('california-navigator.org')) : false) || condPrograms.some(p => !!p.official_source_url);
 
@@ -445,6 +530,43 @@ function scanFilesForSchemaOverEmission() {
 // Run scanners
 scanFilesForSchemaOverEmission();
 scanFilesForBannedPatterns();
+
+// 7. Pilot Environment Flag QA check
+console.log('\n--- Checking Pilot Environment Flag Gating ---');
+const originalEnvVal = process.env.SEO_ENABLE_ALL_STATES_PILOT;
+
+// Test default/closed state: pilot flag is false
+process.env.SEO_ENABLE_ALL_STATES_PILOT = 'false';
+const testStates = ['new-york', 'ohio', 'illinois', 'georgia'];
+let closedFails = 0;
+
+testStates.forEach(st => {
+  const policy = evaluateSeoPolicy({
+    routeType: 'state-hub',
+    stateId: st,
+    entityCount: 10,
+    confidenceScore: 0.95,
+    hasOfficialSource: true,
+    lastVerifiedDate: '2026-01-01',
+    hasNoPlaceholderData: true
+  });
+  
+  if (policy.index) {
+    logError(`Gating failure: state '${st}' is indexable even when SEO_ENABLE_ALL_STATES_PILOT is false.`);
+    closedFails++;
+  }
+});
+
+if (closedFails === 0) {
+  logSuccess('Default conservative gating is active (non-pilot states correctly noindexed when flag is disabled).');
+}
+
+// Restore original env value
+if (originalEnvVal !== undefined) {
+  process.env.SEO_ENABLE_ALL_STATES_PILOT = originalEnvVal;
+} else {
+  delete process.env.SEO_ENABLE_ALL_STATES_PILOT;
+}
 
 console.log('\n--- SEO QA Verification Summary ---');
 console.log(`Errors Found: ${errors}`);

@@ -13,7 +13,7 @@ interface IhssMiniProductProps {
   initialWage?: number;
   initialPhone?: string;
   initialAddress?: string;
-  countiesList?: { id: string; name: string }[];
+  countiesList?: { id: string; name: string; wage?: number; phone?: string; address?: string }[];
 }
 
 const STATIC_COUNTIES: Record<string, { phone: string; address: string; wage: number }> = {
@@ -43,7 +43,7 @@ export default function IhssMiniProduct({
   diagnosisName,
   initialCountyId = '',
   initialCountyName = '',
-  initialWage = 18.00,
+  initialWage = 0,
   initialPhone = '',
   initialAddress = '',
   countiesList = []
@@ -56,14 +56,24 @@ export default function IhssMiniProduct({
   
   // Resolve active county details
   const activeCountyId = initialCountyId || selectedCountyId;
+  const matchedCounty = countiesList.find(c => c.id === activeCountyId);
+  
   const activeCountyName = initialCountyName || 
-    (countiesList.find(c => c.id === activeCountyId)?.name || 
+    (matchedCounty?.name || 
      activeCountyId.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()));
 
-  const countyDetails = STATIC_COUNTIES[activeCountyId] || {
-    phone: initialPhone || '(888) 944-4477',
-    address: initialAddress || 'Local County DPSS Intake Office',
-    wage: initialWage || 18.00
+  const resolvedWage = (activeCountyId === initialCountyId)
+    ? (initialWage > 0 ? initialWage : 0)
+    : (matchedCounty?.wage || STATIC_COUNTIES[activeCountyId]?.wage || 0);
+
+  const countyDetails = {
+    phone: (activeCountyId === initialCountyId && initialPhone)
+      ? initialPhone
+      : (matchedCounty?.phone || STATIC_COUNTIES[activeCountyId]?.phone || '(888) 944-4477'),
+    address: (activeCountyId === initialCountyId && initialAddress)
+      ? initialAddress
+      : (matchedCounty?.address || STATIC_COUNTIES[activeCountyId]?.address || 'Local County DPSS Intake Office'),
+    wage: resolvedWage
   };
 
   // Safety Screener questionnaire states
@@ -126,7 +136,7 @@ export default function IhssMiniProduct({
 
   const likelihood = getLikelihood();
   const estimatedHours = Object.values(behaviors).filter(Boolean).length >= 2 ? 283 : (Object.values(behaviors).filter(Boolean).length === 1 ? 195 : 45);
-  const monthlyCompensation = estimatedHours * countyDetails.wage;
+  const monthlyCompensation = estimatedHours * resolvedWage;
 
   const handleCopyScript = (text: string) => {
     navigator.clipboard.writeText(text);
@@ -305,7 +315,15 @@ NOTES FOR HOME VISIT SOCIAL WORKER:
                 <p style={{ fontSize: '0.9rem', color: 'var(--text-main)', lineHeight: '1.5', margin: 0 }}>
                   <strong>Yes.</strong> Individuals with <strong>{diagnosisName}</strong> are legally eligible to receive paid In-Home Supportive Services (IHSS) Protective Supervision in California. 
                   This is a state program that pays parent caregivers to visually supervise children who lack safety awareness. 
-                  In <strong>{activeCountyName}</strong>, this is paid at a rate of <strong>${countyDetails.wage.toFixed(2)}/hour</strong>, yielding up to <strong>$${(283 * countyDetails.wage).toLocaleString(undefined, { maximumFractionDigits: 0 })} per month</strong> tax-free.
+                  {resolvedWage > 0 ? (
+                    <>
+                      In <strong>{activeCountyName}</strong>, this is paid at a rate of <strong>${resolvedWage.toFixed(2)}/hour</strong>, yielding up to <strong>${(283 * resolvedWage).toLocaleString(undefined, { maximumFractionDigits: 0 })} per month</strong> tax-free.
+                    </>
+                  ) : (
+                    <>
+                      In <strong>{activeCountyName}</strong>, this is paid at an hourly rate which is currently <strong>verification pending</strong>.
+                    </>
+                  )}
                 </p>
               </div>
 
@@ -427,7 +445,11 @@ NOTES FOR HOME VISIT SOCIAL WORKER:
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', color: 'var(--text-light)' }}>
                       <span>Estimated Compensation:</span>
-                      <strong style={{ color: '#10b981' }}>${monthlyCompensation.toLocaleString(undefined, { maximumFractionDigits: 0 })} / mo</strong>
+                      {resolvedWage > 0 ? (
+                        <strong style={{ color: '#10b981' }}>${monthlyCompensation.toLocaleString(undefined, { maximumFractionDigits: 0 })} / mo</strong>
+                      ) : (
+                        <strong style={{ color: 'var(--text-light)' }}>Verification pending</strong>
+                      )}
                     </div>
                   </div>
                 </div>

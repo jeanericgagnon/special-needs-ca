@@ -778,4 +778,53 @@ input[type="checkbox"] {
     padding: 1.25rem !important;
     border-radius: 16px !important;
   }
+
+  /* Responsive matrix table behavior */
+  .responsive-matrix-table, 
+  .responsive-matrix-table thead, 
+  .responsive-matrix-table tbody, 
+  .responsive-matrix-table th, 
+  .responsive-matrix-table td, 
+  .responsive-matrix-table tr {
+    display: block !important;
+  }
+
+  .responsive-matrix-table thead tr {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+  }
+
+  .responsive-matrix-table tr {
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    border-radius: 16px !important;
+    margin-bottom: 1.5rem !important;
+    background: var(--glass-bg) !important;
+    padding: 1rem !important;
+    box-shadow: var(--glass-shadow) !important;
+  }
+
+  .responsive-matrix-table td {
+    border: none !important;
+    position: relative !important;
+    padding-left: 50% !important;
+    text-align: right !important;
+    padding-top: 0.6rem !important;
+    padding-bottom: 0.6rem !important;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.05) !important;
+  }
+
+  .responsive-matrix-table td:last-child {
+    border-bottom: none !important;
+  }
+
+  .responsive-matrix-table td::before {
+    content: attr(data-label);
+    position: absolute !important;
+    left: 1rem !important;
+    width: 45% !important;
+    text-align: left !important;
+    font-weight: 700 !important;
+    color: var(--text-light) !important;
+  }
 }

@@ -1,14 +1,19 @@
-import { getCounties, getStateByIdOrCode } from '@/lib/db';
+import { getCounties, getStateByIdOrCode, getCountyDetails } from '@/lib/db';
 import { Metadata } from 'next';
 import { MapPin } from 'lucide-react';
 import { notFound } from 'next/navigation';
 import CountiesClient from './counties-client';
+import { getDynamicStateConfig } from '@/lib/stateConfigs';
+import {
+  evaluateSeoPolicy,
+  assertNoPlaceholderData,
+  normalizeConfidenceScore,
+  SEO_STATE_ALLOWLIST
+} from '@/lib/seo-policy';
 
 type Props = {
   params: Promise<{ state: string }>;
 };
-
-import { getDynamicStateConfig } from '@/lib/stateConfigs';
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const p = await params;
@@ -22,14 +27,95 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const config = getDynamicStateConfig(stateData.id, stateData.name, stateData.code);
   const catchment = config.catchmentName;
-  const isIndexedState = ['california', 'texas', 'florida', 'pennsylvania', 'new-york', 'ohio', 'illinois', 'georgia', 'maryland', 'utah', 'new-mexico', 'oregon', 'washington', 'idaho', 'south-carolina', 'north-dakota', 'west-virginia', 'montana', 'colorado', 'louisiana', 'south-dakota', 'alabama', 'wisconsin', 'arkansas', 'oklahoma', 'north-carolina', 'mississippi', 'michigan', 'minnesota', 'indiana', 'nebraska', 'tennessee', 'virginia', 'arizona', 'alaska', 'connecticut', 'delaware', 'hawaii', 'iowa', 'kansas', 'kentucky', 'maine', 'massachusetts', 'missouri', 'nevada', 'new-hampshire', 'new-jersey', 'rhode-island', 'vermont', 'wyoming'].includes(stateData.id);
+
+  // Evaluate the state-counties-hub policy
+  const counties = await getCounties(stateData.id);
+  
+  let hasRealLocalAssets = false;
+  let totalConfidence = 0;
+  let confidenceCount = 0;
+  let minDate: string | null = null;
+  let hasOfficialSource = false;
+
+  for (const c of counties) {
+    const details = await getCountyDetails(c.id);
+    if (!details) continue;
+
+    const offices = details.countyOffices || [];
+    const countyDistricts = details.schoolDistricts || [];
+    const rcs = details.regionalCenters || [];
+
+    const hasRequiredContactInfo = offices.length > 0;
+    const hasNoPlaceholderData = assertNoPlaceholderData(JSON.stringify(details));
+
+    const rcDates = rcs.map(rc => rc.last_verified_date).filter(Boolean) as string[];
+    const sdDates = countyDistricts.map(sd => sd.last_verified_date).filter(Boolean) as string[];
+    const coDates = offices.map(co => co.last_verified_date).filter(Boolean) as string[];
+    const allDates = [...rcDates, ...sdDates, ...coDates];
+    const lastVerDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
+
+    if (lastVerDate) {
+      if (!minDate || lastVerDate < minDate) {
+        minDate = lastVerDate;
+      }
+    }
+
+    const rcScores = rcs.map(rc => normalizeConfidenceScore(rc.confidence_score)).filter((s): s is number => s !== null);
+    const sdScores = countyDistricts.map(sd => normalizeConfidenceScore(sd.confidence_score)).filter((s): s is number => s !== null);
+    const coScores = offices.map(co => normalizeConfidenceScore(co.confidence_score)).filter((s): s is number => s !== null);
+    const allScores = [...rcScores, ...sdScores, ...coScores];
+    const confScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
+
+    if (confScore !== null) {
+      totalConfidence += confScore;
+      confidenceCount++;
+    }
+
+    let countyHasOfficialSource = false;
+    if (rcs.some(rc => !!rc.source_url) || countyDistricts.some(sd => !!sd.source_url) || offices.some(co => !!co.source_url)) {
+      countyHasOfficialSource = true;
+      hasOfficialSource = true;
+    }
+
+    const countyPolicy = evaluateSeoPolicy({
+      routeType: 'county-hub',
+      stateId: stateData.id,
+      countyId: c.id,
+      entityCount: countyDistricts.length,
+      hasOfficialSource: countyHasOfficialSource,
+      lastVerifiedDate: lastVerDate,
+      confidenceScore: confScore,
+      hasRequiredContactInfo,
+      hasNoPlaceholderData
+    });
+
+    if (countyPolicy.index) {
+      hasRealLocalAssets = true;
+    }
+  }
+
+  const avgConfidenceScore = confidenceCount > 0 ? totalConfidence / confidenceCount : null;
+
+  const policy = evaluateSeoPolicy({
+    routeType: 'state-counties-hub',
+    stateId: stateData.id,
+    entityCount: counties.length,
+    hasOfficialSource,
+    lastVerifiedDate: minDate,
+    confidenceScore: avgConfidenceScore,
+    hasRealLocalAssets,
+    hasNoPlaceholderData: counties.every(c => assertNoPlaceholderData(JSON.stringify(c)))
+  });
+
+  const isIndexable = policy.index;
+
   return {
     title: `${stateData.name} Counties Special Needs Resource Directories (2026)`,
     description: `Select your ${stateData.name} county to access local developmental services, ${catchment} boundary details, Medicaid waiver rates, and special education advocates.`,
     alternates: {
       canonical: `/counties/${stateData.id}`
     },
-    robots: isIndexedState ? undefined : { index: false, follow: true }
+    robots: isIndexable ? undefined : { index: false, follow: true }
   };
 }
 

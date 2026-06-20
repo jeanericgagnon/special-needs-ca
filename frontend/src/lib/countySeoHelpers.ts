@@ -50,46 +50,62 @@ export function getCountyIntroCopy(
   stateName: string,
   stateCode: string,
   countyDetails: CountyDetailsInput,
-  countyWage: number,
+  countyWage: number | null | undefined,
   catchmentLabel: string,
   insuranceLabel: string
 ) {
   const countyName = countyDetails.name;
+  const wage = countyWage && countyWage > 0 ? countyWage : 0;
   
   if (stateId === 'texas') {
     const eciContract = countyDetails.regionalCenters?.[0]?.name || 'a local ECI contractor';
+    const wageSentence = wage > 0 
+      ? `The current caregiver hourly wage for Medicaid-funded home care in ${countyName} is **$${wage.toFixed(2)}/hour**.`
+      : `The caregiver hourly wage for Medicaid-funded home care in ${countyName} is currently **verification pending**.`;
     return `For families navigating special needs in ${countyName} County, Texas, services are split by age and department:
 1. **Under Age 3 (Early Childhood Intervention):** Your local intake is managed by **${eciContract}**. This is a localized program coordinating physical, occupational, and speech therapies at home or daycare.
 2. **Age 3 and Older (LIDDA):** Your primary point of contact for developmental waivers (like HCS, CLASS, and TxHmL) is your Local Intellectual and Developmental Disability Authority (LIDDA). They coordinate long-term services and interest list placements.
-3. **Medicaid & Caregiver Wages:** General benefits and the MDCP program are administered by the Texas Health and Human Services Commission (HHSC). The current caregiver hourly wage for Medicaid-funded home care in ${countyName} is **$${countyWage.toFixed(2)}/hour**.
+3. **Medicaid & Caregiver Wages:** General benefits and the MDCP program are administered by the Texas Health and Human Services Commission (HHSC). ${wageSentence}
 4. **School Special Education:** School districts (listed below) coordinate local evaluations and Individualized Education Programs (IEPs) for school-aged children.`;
   }
 
   if (stateId === 'florida') {
     const apdName = countyDetails.regionalCenters?.[0]?.name || 'the local APD Area Office';
+    const wageSentence = wage > 0
+      ? `The caregiver/respite provider hourly rate under Florida waivers averages **$${wage.toFixed(2)}/hour** in this county.`
+      : `The caregiver/respite provider hourly rate under Florida waivers in this county is currently **verification pending**.`;
     return `Navigating disability benefits in ${countyName} County, Florida, involves several local and state pathways:
 1. **Developmental Waivers (APD):** Intakes for the iBudget and CDC+ home and community-based waivers are managed by **${apdName}**. You should contact them directly to apply and check your placement on the APD waitlist.
 2. **Early Intervention (Under 3):** Early Steps serves as the local coordinating body for infant and toddler developmental delays, offering in-home therapies and assessments.
-3. **General Benefits & Medicaid:** The Florida Department of Children and Families (DCF) county office handles eligibility determination for Medicaid health insurance. The caregiver/respite provider hourly rate under Florida waivers averages **$${countyWage.toFixed(2)}/hour** in this county.
+3. **General Benefits & Medicaid:** The Florida Department of Children and Families (DCF) county office handles eligibility determination for Medicaid health insurance. ${wageSentence}
 4. **Special Education:** School-aged children receive evaluations, therapies, and IEP planning directly through their county's school district student services department.`;
   }
 
   if (stateId === 'pennsylvania') {
     const officeName = countyDetails.countyOffices?.[0]?.office_name || 'the County MH/ID Office';
+    const wageSentence = wage > 0
+      ? `The caregiver/respite hourly rate in ${countyName} County averages **$${wage.toFixed(2)}/hour**.`
+      : `The caregiver/respite hourly rate in ${countyName} County is currently **verification pending**.`;
     return `For parents in ${countyName} County, Pennsylvania, the local developmental disability support structure consists of:
 1. **County MH/ID Intake (Primary Starting Point):** The **${officeName}** acts as the local hub for both early intervention services (ages 0-3) and county-administered intellectual disability funding and waiver intakes. 
 2. **Preschool & School-Age Special Education:** Early intervention for children ages 3-5 is coordinated by regional Intermediate Units (IUs). Once a child reaches kindergarten, special education and IEPs are managed by their local school district.
-3. **Medicaid & Home Care:** General Medicaid eligibility is handled by your local County Assistance Office (CAO). The caregiver/respite hourly rate in ${countyName} County averages **$${countyWage.toFixed(2)}/hour**.`;
+3. **Medicaid & Home Care:** General Medicaid eligibility is handled by your local County Assistance Office (CAO). ${wageSentence}`;
   }
 
   if (stateId === 'california') {
     const rcName = countyDetails.regionalCenters?.[0]?.name || 'your local Regional Center';
+    const wageSentence = wage > 0
+      ? `In ${countyName} County, the provider hourly wage is **$${wage.toFixed(2)}/hour**.`
+      : `In ${countyName} County, the provider hourly wage is currently **verification pending**.`;
     return `Families seeking disability services in ${countyName} County, California, have access to a structured local system:
 1. **Regional Center Coordination:** Intake for the Lanterman Act, Early Start (0-3), and the Self-Determination Program is managed by **${rcName}**. They serve as the single point of coordination for lifelong developmental services.
-2. **In-Home Support (IHSS):** The county Department of Social Services administers the IHSS program for personal care services. In ${countyName} County, the provider hourly wage is **$${countyWage.toFixed(2)}/hour**.
+2. **In-Home Support (IHSS):** The county Department of Social Services administers the IHSS program for personal care services. ${wageSentence}
 3. **Special Education boundaries:** School districts are grouped into Special Education Local Plan Areas (SELPAs) to share resources and coordinate regional services.`;
   }
 
   // Default fallback for other states
-  return `If you live in ${countyName} County, ${stateName}, your child has access to several layers of specialized support. Under local state rules, the Medicaid caregiver/respite wage rate is **$${countyWage.toFixed(2)}/hour**. Use the listings below to contact your local ${catchmentLabel} intake coordinator, find your local health and human services office, look up school district special education contacts, and browse verified community support resources.`;
+  const wageSentence = wage > 0
+    ? `Under local state rules, the Medicaid caregiver/respite wage rate is **$${wage.toFixed(2)}/hour**.`
+    : `Under local state rules, the Medicaid caregiver/respite wage rate is currently **verification pending**.`;
+  return `If you live in ${countyName} County, ${stateName}, your child has access to several layers of specialized support. ${wageSentence} Use the listings below to contact your local ${catchmentLabel} intake coordinator, find your local health and human services office, look up school district special education contacts, and browse verified community support resources.`;
 }

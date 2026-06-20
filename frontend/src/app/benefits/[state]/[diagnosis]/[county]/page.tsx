@@ -11,7 +11,7 @@ import CountyMapClient from '@/app/benefits/components/county-map-client';
 import { stateConfigs, getDynamicStateConfig } from '@/lib/stateConfigs';
 import { TrustBadge } from '@/app/counties/components/CorrectionFlow';
 import SourceFreshnessDisclosure from '@/app/components/SourceFreshnessDisclosure';
-import { evaluateSeoPolicy, robotsForPolicy, assertNoPlaceholderData } from '@/lib/seo-policy';
+import { evaluateSeoPolicy, robotsForPolicy, assertNoPlaceholderData, normalizeConfidenceScore } from '@/lib/seo-policy';
 
 type Props = {
   params: Promise<{ state: string; diagnosis: string; county: string }>;
@@ -52,17 +52,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const allDates = [...rcDates, ...sdDates, ...coDates];
   const lastVerifiedDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
 
-  const rcScores = (countyData?.regionalCenters || []).map(rc => rc.confidence_score).filter(s => s !== null && s !== undefined);
-  const sdScores = (countyData?.schoolDistricts || []).map(sd => sd.confidence_score !== null && sd.confidence_score !== undefined ? sd.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
-  const coScores = (countyData?.countyOffices || []).map(co => co.confidence_score !== null && co.confidence_score !== undefined ? co.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
+  const rcScores = (countyData?.regionalCenters || []).map(rc => normalizeConfidenceScore(rc.confidence_score)).filter((s): s is number => s !== null);
+  const sdScores = (countyData?.schoolDistricts || []).map(sd => normalizeConfidenceScore(sd.confidence_score)).filter((s): s is number => s !== null);
+  const coScores = (countyData?.countyOffices || []).map(co => normalizeConfidenceScore(co.confidence_score)).filter((s): s is number => s !== null);
   const allScores = [...rcScores, ...sdScores, ...coScores];
   const confidenceScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
 
   let hasOfficialSource = false;
   if (countyData) {
-    if (countyData.website) {
-      hasOfficialSource = true;
-    }
     if ((countyData.regionalCenters || []).some(rc => !!rc.source_url) ||
         (countyData.schoolDistricts || []).some(sd => !!sd.source_url) ||
         (countyData.countyOffices || []).some(co => !!co.source_url)) {
@@ -75,6 +72,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     stateId,
     countyId: p.county,
     diagnosisId: p.diagnosis,
+    entityCount: countyData?.schoolDistricts?.length || 0,
     hasRealLocalAssets,
     hasRequiredContactInfo,
     hasNoPlaceholderData,
@@ -409,13 +407,13 @@ export default async function SEOLandingPage({ params }: Props) {
   const allDates = [...rcDates, ...sdDates, ...coDates];
   const lastVerifiedDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
 
-  const rcScores = (countyData.regionalCenters || []).map(rc => rc.confidence_score).filter(s => s !== null && s !== undefined);
-  const sdScores = (countyData.schoolDistricts || []).map(sd => sd.confidence_score !== null && sd.confidence_score !== undefined ? sd.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
-  const coScores = (countyData.countyOffices || []).map(co => co.confidence_score !== null && co.confidence_score !== undefined ? co.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
+  const rcScores = (countyData.regionalCenters || []).map(rc => normalizeConfidenceScore(rc.confidence_score)).filter((s): s is number => s !== null);
+  const sdScores = (countyData.schoolDistricts || []).map(sd => normalizeConfidenceScore(sd.confidence_score)).filter((s): s is number => s !== null);
+  const coScores = (countyData.countyOffices || []).map(co => normalizeConfidenceScore(co.confidence_score)).filter((s): s is number => s !== null);
   const allScores = [...rcScores, ...sdScores, ...coScores];
   const confidenceScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
 
-  let hasOfficialSource = !!countyData.website;
+  let hasOfficialSource = false;
   if ((countyData.regionalCenters || []).some(rc => !!rc.source_url) ||
       (countyData.schoolDistricts || []).some(sd => !!sd.source_url) ||
       (countyData.countyOffices || []).some(co => !!co.source_url)) {
@@ -427,6 +425,7 @@ export default async function SEOLandingPage({ params }: Props) {
     stateId,
     countyId: p.county,
     diagnosisId: p.diagnosis,
+    entityCount: countyData.schoolDistricts?.length || 0,
     hasRealLocalAssets,
     hasRequiredContactInfo,
     hasNoPlaceholderData,

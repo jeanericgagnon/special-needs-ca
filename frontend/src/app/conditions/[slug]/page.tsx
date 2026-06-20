@@ -5,7 +5,7 @@ import { DIAGNOSES_DETAILS } from '@/lib/diagnoses';
 import AnswerPage from '@/app/components/answer-page';
 import SeoSchema from '@/app/components/seo-schema';
 import { constructMetadata, generateBreadcrumbsSchema } from '@/lib/seo-helpers';
-import { evaluateSeoPolicy, robotsForPolicy, assertNoPlaceholderData, mapShortDiagToDbId } from '@/lib/seo-policy';
+import { evaluateSeoPolicy, robotsForPolicy, assertNoPlaceholderData, mapShortDiagToDbId, normalizeConfidenceScore } from '@/lib/seo-policy';
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -44,8 +44,8 @@ export async function generateMetadata({ params }: Props) {
   }
   const lastVerifiedDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
 
-  const scores = condPrograms.map(p => p.confidence_score).filter((s): s is number => s !== null && s !== undefined);
-  const confidenceScore = scores.length > 0 ? (scores.reduce((sum, s) => sum + s, 0) / scores.length) / 5.0 : null;
+  const scores = condPrograms.map(p => normalizeConfidenceScore(p.confidence_score)).filter((s): s is number => s !== null);
+  const confidenceScore = scores.length > 0 ? scores.reduce((sum, s) => sum + s, 0) / scores.length : null;
 
   const hasOfficialSource = (conditionRow?.source_url ? (!conditionRow.source_url.includes('ablefull.org') && !conditionRow.source_url.includes('california-navigator.org')) : false) || condPrograms.some(p => !!p.official_source_url);
 
@@ -112,8 +112,8 @@ export default async function ConditionPage({ params }: Props) {
   }
   const lastVerifiedDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
 
-  const scores = condPrograms.map(p => p.confidence_score).filter((s): s is number => s !== null && s !== undefined);
-  const confidenceScore = scores.length > 0 ? (scores.reduce((sum, s) => sum + s, 0) / scores.length) / 5.0 : null;
+  const scores = condPrograms.map(p => normalizeConfidenceScore(p.confidence_score)).filter((s): s is number => s !== null);
+  const confidenceScore = scores.length > 0 ? scores.reduce((sum, s) => sum + s, 0) / scores.length : null;
 
   const hasOfficialSource = (conditionRow?.source_url ? (!conditionRow.source_url.includes('ablefull.org') && !conditionRow.source_url.includes('california-navigator.org')) : false) || condPrograms.some(p => !!p.official_source_url);
 

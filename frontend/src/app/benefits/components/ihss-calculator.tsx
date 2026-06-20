@@ -52,7 +52,7 @@ export default function IhssCalculator({ countyName, wageRate }: IhssCalculatorP
   };
 
   const totalHours = needsSupervision ? getSupervisionHours() : getBasicHours();
-  const estimatedWage = wageRate || 18.50;
+  const estimatedWage = wageRate > 0 ? wageRate : 0;
   const monthlyPayout = totalHours * estimatedWage;
 
   const handlePrint = () => {
@@ -73,7 +73,7 @@ export default function IhssCalculator({ countyName, wageRate }: IhssCalculatorP
       </div>
 
       <p style={{ fontSize: '0.9rem', color: 'var(--text-light)', marginBottom: '1.5rem', lineHeight: '1.5' }} className="no-print">
-        In California, the In-Home Supportive Services (IHSS) program pays parents to act as caregivers for kids with developmental needs. Estimate your family&apos;s hours and tax-free income based on <strong>{countyName} County&apos;s</strong> current wage of <strong>${estimatedWage.toFixed(2)}/hour</strong>.
+        In California, the In-Home Supportive Services (IHSS) program pays parents to act as caregivers for kids with developmental needs. Estimate your family&apos;s hours and tax-free income based on <strong>{countyName} County&apos;s</strong> current wage{estimatedWage > 0 ? ` of $${estimatedWage.toFixed(2)}/hour` : ' (verification pending)'}.
       </p>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
@@ -227,13 +227,19 @@ export default function IhssCalculator({ countyName, wageRate }: IhssCalculatorP
             <span style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--text-light)', fontWeight: 700 }}>
               Estimated Caregiver Income (Tax-Free)
             </span>
-            <div style={{ fontSize: '2.2rem', fontWeight: 800, color: '#10b981', margin: '0.5rem 0', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <DollarSign size={28} />
-              {monthlyPayout.toLocaleString(undefined, { maximumFractionDigits: 0 })}
-              <span style={{ fontSize: '1rem', color: 'var(--text-light)', fontWeight: 400 }}> / mo</span>
+            <div style={{ fontSize: '2.2rem', fontWeight: 800, color: estimatedWage > 0 ? '#10b981' : 'var(--text-light)', margin: '0.5rem 0', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              {estimatedWage > 0 ? (
+                <>
+                  <DollarSign size={28} />
+                  {monthlyPayout.toLocaleString(undefined, { maximumFractionDigits: 0 })}
+                  <span style={{ fontSize: '1rem', color: 'var(--text-light)', fontWeight: 400 }}> / mo</span>
+                </>
+              ) : (
+                <span style={{ fontSize: '1.5rem', color: 'var(--text-light)', fontWeight: 700 }}>Verification pending</span>
+              )}
             </div>
             <span style={{ fontSize: '0.75rem', color: 'var(--text-light)', fontStyle: 'italic', display: 'block', marginTop: '0.25rem' }}>
-              Based on {countyName} County wage of ${estimatedWage.toFixed(2)}/hr.
+              Based on {countyName} County wage{estimatedWage > 0 ? ` of $${estimatedWage.toFixed(2)}/hr` : ' (verification pending)'}.
             </span>
           </div>
 
@@ -252,7 +258,7 @@ export default function IhssCalculator({ countyName, wageRate }: IhssCalculatorP
       {/* Print representation */}
       <div className="print-only" style={{ display: 'none', borderTop: '2px solid #000', paddingTop: '1.5rem', marginTop: '2rem' }}>
         <h3 style={{ fontSize: '1.3rem', margin: '0 0 0.5rem 0' }}>In-Home Supportive Services (IHSS) Estimate Breakdown</h3>
-        <p style={{ fontSize: '0.9rem', color: '#666' }}>Location: <strong>{countyName} County, CA</strong> | Caregiver Wage: <strong>${estimatedWage.toFixed(2)}/hour</strong></p>
+        <p style={{ fontSize: '0.9rem', color: '#666' }}>Location: <strong>{countyName} County, CA</strong> | Caregiver Wage: <strong>{estimatedWage > 0 ? `$${estimatedWage.toFixed(2)}/hour` : 'Verification pending'}</strong></p>
         
         <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '1rem' }}>
           <thead>
@@ -291,9 +297,9 @@ export default function IhssCalculator({ countyName, wageRate }: IhssCalculatorP
               <td style={{ padding: '0.5rem' }}>Total Monthly Hours</td>
               <td style={{ padding: '0.5rem' }}>{totalHours} Hours</td>
             </tr>
-            <tr style={{ fontWeight: 'bold', color: '#10b981' }}>
+            <tr style={{ fontWeight: 'bold', color: estimatedWage > 0 ? '#10b981' : 'var(--text-light)' }}>
               <td style={{ padding: '0.5rem' }}>Estimated Tax-Free Income</td>
-              <td style={{ padding: '0.5rem' }}>${monthlyPayout.toLocaleString(undefined, { maximumFractionDigits: 2 })} / month</td>
+              <td style={{ padding: '0.5rem' }}>{estimatedWage > 0 ? `$${monthlyPayout.toLocaleString(undefined, { maximumFractionDigits: 2 })} / month` : 'Verification pending'}</td>
             </tr>
           </tbody>
         </table>

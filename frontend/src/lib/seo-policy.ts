@@ -3,6 +3,7 @@ import { NON_CA_VERIFIED_COUNTIES } from './verifiedCounties';
 export type RouteType =
   | 'state-hub'
   | 'county-hub'
+  | 'state-counties-hub'
   | 'condition-hub'
   | 'program-guide'
   | 'category-hub'
@@ -44,7 +45,7 @@ export type SeoPolicyResult = {
   blockers: string[];
 };
 
-export const VERIFIED_STATES = [
+export const SEO_STATE_ALLOWLIST = [
   'california', 'texas', 'florida', 'pennsylvania', 'new-york', 'ohio', 'illinois',
   'georgia', 'maryland', 'utah', 'new-mexico', 'oregon', 'washington', 'idaho',
   'south-carolina', 'north-dakota', 'west-virginia', 'montana', 'colorado',
@@ -54,6 +55,24 @@ export const VERIFIED_STATES = [
   'iowa', 'kansas', 'kentucky', 'maine', 'massachusetts', 'missouri', 'nevada',
   'new-hampshire', 'new-jersey', 'rhode-island', 'vermont', 'wyoming'
 ];
+
+export const CONSERVATIVE_PRODUCTION_STATES = ['california', 'texas', 'florida', 'pennsylvania'];
+
+export function getEligibleStates(): string[] {
+  const enableAll = process.env.SEO_ENABLE_ALL_STATES_PILOT === 'true';
+  return enableAll ? SEO_STATE_ALLOWLIST : CONSERVATIVE_PRODUCTION_STATES;
+}
+
+export function normalizeConfidenceScore(score: number | null | undefined): number | null {
+  if (score === null || score === undefined) return null;
+  if (score <= 1.0) {
+    return score;
+  }
+  if (score <= 5.0) {
+    return score / 5.0;
+  }
+  return score / 10.0;
+}
 
 export const VERIFIED_DIAGNOSES = [
   'autism-spectrum-disorder',
@@ -160,7 +179,8 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): SeoPolicyResult {
   const countyId = input.countyId?.toLowerCase() || '';
   const diagnosisId = input.diagnosisId?.toLowerCase() || '';
 
-  const isVerifiedState = VERIFIED_STATES.includes(stateId);
+  const eligibleStates = getEligibleStates();
+  const isEligibleState = eligibleStates.includes(stateId);
   const isVerifiedDiagnosis = VERIFIED_DIAGNOSES.includes(diagnosisId);
 
   // 1. Quality Score calculation
@@ -224,8 +244,8 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): SeoPolicyResult {
   if (input.routeType !== 'static-page') {
     if (!stateId) {
       blockers.push('Missing state ID context');
-    } else if (!isVerifiedState) {
-      blockers.push(`State '${stateId}' is not yet in the indexed state allowlist`);
+    } else if (!isEligibleState) {
+      blockers.push(`State '${stateId}' is not eligible for indexation under the current environment configuration`);
     }
   }
 
@@ -236,15 +256,53 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): SeoPolicyResult {
       break;
 
     case 'state-hub':
-      if (isVerifiedState) {
-        reasons.push('State hub passes allowlist check.');
+      if (input.entityCount === undefined || input.entityCount < 1) {
+        blockers.push('State hub has 0 programs');
+      }
+      if (!input.hasOfficialSource) {
+        blockers.push('State hub lacks official source URL');
+      }
+      if (!input.lastVerifiedDate) {
+        blockers.push('State hub lacks verification date');
+      }
+      if (input.confidenceScore === undefined || input.confidenceScore === null || input.confidenceScore < 0.7) {
+        blockers.push(`State hub confidence score (${input.confidenceScore ?? 'missing'}) below 70% threshold`);
+      }
+      break;
+
+    case 'state-counties-hub':
+      if (input.entityCount === undefined || input.entityCount < 1) {
+        blockers.push('State counties directory has 0 counties in database');
+      }
+      if (!input.hasRealLocalAssets) {
+        blockers.push('State has 0 indexable county hubs');
+      }
+      if (!input.hasOfficialSource) {
+        blockers.push('Missing official source URL for counties directory');
+      }
+      if (!input.lastVerifiedDate) {
+        blockers.push('Missing verification date for counties directory');
+      }
+      if (input.confidenceScore === undefined || input.confidenceScore === null || input.confidenceScore < 0.7) {
+        blockers.push(`Confidence score (${input.confidenceScore ?? 'missing'}) below 70% threshold`);
       }
       break;
 
     case 'county-hub':
-      // Eligible subject to quality gates (hasRequiredContactInfo, no placeholders, confidence score)
+      if (input.entityCount === undefined || input.entityCount < 1) {
+        blockers.push('County hub lacks school district records (entityCount < 1)');
+      }
       if (!input.hasRequiredContactInfo) {
         blockers.push('County lacks required localized agency contact phone or address');
+      }
+      if (!input.hasOfficialSource) {
+        blockers.push('County hub lacks claim-specific official source verification');
+      }
+      if (!input.lastVerifiedDate) {
+        blockers.push('County hub lacks verification date');
+      }
+      if (input.confidenceScore === undefined || input.confidenceScore === null || input.confidenceScore < 0.7) {
+        blockers.push(`County hub confidence score (${input.confidenceScore ?? 'missing'}) below 70% threshold`);
       }
       break;
 
@@ -282,6 +340,9 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): SeoPolicyResult {
       }
       if (!isVerifiedDiagnosis) {
         blockers.push(`Condition '${diagnosisId}' is not verified for county-condition hubs`);
+      }
+      if (input.entityCount === undefined || input.entityCount < 1) {
+        blockers.push('County lacks verified school districts (entityCount < 1)');
       }
       if (!input.hasRealLocalAssets) {
         blockers.push('Lacks real provider, support group, or clinic directories from database');

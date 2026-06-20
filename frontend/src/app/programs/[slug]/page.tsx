@@ -1,10 +1,10 @@
 import { notFound } from 'next/navigation';
 import { SEO_CLUSTERS } from '@/lib/seo-data';
-import { getCounties, getProgramBySlug, getAllPrograms, getStateByIdOrCode, navigatorDb, getProgramApplicationSteps, getProgramDocumentRequirements, CountyOffice } from '@/lib/db';
+import { getCounties, getProgramBySlug, getAllPrograms, getStateByIdOrCode, navigatorDb, getProgramApplicationSteps, getProgramDocumentRequirements, CountyOffice, getProgramWaitlists } from '@/lib/db';
 import AnswerPage from '@/app/components/answer-page';
 import SeoSchema from '@/app/components/seo-schema';
 import { constructMetadata, generateBreadcrumbsSchema } from '@/lib/seo-helpers';
-import { evaluateSeoPolicy, robotsForPolicy, assertNoPlaceholderData } from '@/lib/seo-policy';
+import { evaluateSeoPolicy, robotsForPolicy, assertNoPlaceholderData, normalizeConfidenceScore } from '@/lib/seo-policy';
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -53,9 +53,7 @@ export async function generateMetadata({ params }: Props) {
     hasApplicationSteps = (await getProgramApplicationSteps(progIdStr)).length > 0;
     hasDocuments = (await getProgramDocumentRequirements(progIdStr)).length > 0;
     hasNoPlaceholderData = assertNoPlaceholderData(JSON.stringify(program));
-    confidenceScore = program.confidence_score !== null && program.confidence_score !== undefined
-      ? Number(program.confidence_score) / 5.0
-      : null;
+    confidenceScore = normalizeConfidenceScore(program.confidence_score);
   }
 
   const policy = evaluateSeoPolicy({
@@ -100,13 +98,23 @@ export default async function ProgramPage({ params }: Props) {
   const { slug } = await params;
   const counties = (await getCounties()).map(c => ({ id: c.id, name: c.name }));
 
-  const cluster = SEO_CLUSTERS[slug];
-  if (cluster && cluster.category === 'programs') {
-    return <AnswerPage slug={slug} counties={counties} />;
-  }
-
+  const waitlists = await getProgramWaitlists();
+  
   // Fallback to DB query
   const program = await getProgramBySlug(slug);
+
+  const normalizedSlug = slug.toLowerCase().replace(/-for-children/g, '').replace(/california-childrens-services/g, 'ccs');
+  const waitlistInfo = waitlists.find(w => 
+    w.program_id === normalizedSlug || 
+    (program && w.program_id === String(program.id).toLowerCase()) || 
+    w.program_id === slug.toLowerCase()
+  );
+
+  const cluster = SEO_CLUSTERS[slug];
+  if (cluster && cluster.category === 'programs') {
+    return <AnswerPage slug={slug} counties={counties} waitlistInfo={waitlistInfo} />;
+  }
+
   if (!program) {
     notFound();
   }
@@ -206,9 +214,7 @@ export default async function ProgramPage({ params }: Props) {
   hasApplicationSteps = (await getProgramApplicationSteps(progIdStr)).length > 0;
   hasDocuments = (await getProgramDocumentRequirements(progIdStr)).length > 0;
   hasNoPlaceholderData = assertNoPlaceholderData(JSON.stringify(program));
-  confidenceScore = program.confidence_score !== null && program.confidence_score !== undefined
-    ? Number(program.confidence_score) / 5.0
-    : null;
+  confidenceScore = normalizeConfidenceScore(program.confidence_score);
 
   const policy = evaluateSeoPolicy({
     routeType: 'program-guide',
@@ -261,7 +267,7 @@ export default async function ProgramPage({ params }: Props) {
   return (
     <>
       <SeoSchema data={policy.index ? [breadcrumbList, govServiceSchema, faqSchema] : [breadcrumbList]} />
-      <AnswerPage data={dynamicData} counties={counties} />
+      <AnswerPage data={dynamicData} counties={counties} waitlistInfo={waitlistInfo} />
     </>
   );
 }

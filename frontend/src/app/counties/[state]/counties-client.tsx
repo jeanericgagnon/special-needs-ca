@@ -78,7 +78,8 @@ export default function CountiesClient({ counties, stateCode, stateName }: Count
           }}
         >
           {filteredCounties.map((county) => {
-            const countyWage = county.ihss_wage_rate || 18.00;
+            const countyWage = county.ihss_wage_rate;
+            const hasWage = countyWage !== null && countyWage !== undefined && countyWage > 0;
             return (
               <div 
                 key={county.id}
@@ -128,7 +129,9 @@ export default function CountiesClient({ counties, stateCode, stateName }: Count
                         <Calculator size={14} color="var(--primary-color)" />
                         {stateCode.toLowerCase() === 'ca' ? 'IHSS Wage Rate:' : 'Waiver Wage Rate:'}
                       </span>
-                      <strong style={{ color: '#10b981' }}>${countyWage.toFixed(2)}/hr</strong>
+                      <strong style={{ color: hasWage ? '#10b981' : 'var(--text-light)' }}>
+                        {hasWage ? `$${countyWage!.toFixed(2)}/hr` : 'Verification pending'}
+                      </strong>
                     </div>
                     {county.medi_cal_plans && (
                       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>

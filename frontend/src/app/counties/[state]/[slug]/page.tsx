@@ -7,8 +7,31 @@ import SeoSchema from '@/app/components/seo-schema';
 import { TrustBadge } from '@/app/counties/components/CorrectionFlow';
 import SourceFreshnessDisclosure, { DisclosureSource } from '@/app/components/SourceFreshnessDisclosure';
 import { getDynamicStateConfig } from '@/lib/stateConfigs';
-import { evaluateSeoPolicy, assertNoPlaceholderData } from '@/lib/seo-policy';
+import { evaluateSeoPolicy, assertNoPlaceholderData, normalizeConfidenceScore } from '@/lib/seo-policy';
 import { getCountyMetadata, getCountyIntroCopy } from '@/lib/countySeoHelpers';
+
+function getStateSpecificIepTimeline(stateId: string, countyName: string): string | null {
+  switch (stateId.toLowerCase()) {
+    case 'california':
+      return `Under California Education Code, school districts in ${countyName} have 15 calendar days to provide an Assessment Plan once a parent submits a written request. After the plan is signed, they have 60 calendar days to complete evaluations and hold the initial IEP meeting.`;
+    case 'texas':
+      return `Under Texas Education Code § 29.004, school districts in ${countyName} have 15 school days to provide a consent form. Once consent is signed, they have 45 school days to complete the Full and Individual Initial Evaluation (FIIE) and 30 calendar days after the report to hold the ARD/IEP meeting.`;
+    case 'florida':
+      return `Under Florida Rule 6A-6.0331, school districts in ${countyName} have 30 calendar days to either obtain your consent or refuse in writing. Once consent is signed, they have exactly 60 school days to complete the evaluations and hold the eligibility meeting.`;
+    case 'new-york':
+      return `Under New York State Commissioner's Regulations Part 200, school districts in ${countyName} must complete the evaluation within 60 calendar days of receiving parental consent, followed by an IEP meeting to determine eligibility.`;
+    case 'pennsylvania':
+      return `Under Pennsylvania Chapter 14 regulations, school districts in ${countyName} must complete the evaluation report (ER) and hold the IEP meeting within 60 calendar days of receiving your signed consent form.`;
+    case 'illinois':
+      return `Under Illinois State Board of Education rules, school districts in ${countyName} must determine if an evaluation is needed, obtain consent, and complete all evaluations and the IEP meeting within 60 school days of consent.`;
+    case 'ohio':
+      return `Under Ohio Administrative Code 3301-51-06, school districts in ${countyName} must complete the evaluation and hold the IEP eligibility meeting within 60 calendar days of receiving your signed consent.`;
+    case 'georgia':
+      return `Under Georgia Department of Education Rule 160-4-7-.04, school districts in ${countyName} must complete the evaluation and determine eligibility within 60 calendar days of receiving your signed consent.`;
+    default:
+      return null;
+  }
+}
 
 function formatIntroCopy(text: string) {
   return text.split('\n').map((line, i) => {
@@ -59,7 +82,7 @@ export async function generateMetadata({ params }: Props) {
 
     let confidenceScore: number | null = null;
     let lastVerifiedDate: string | null = null;
-    let hasOfficialSource = !!countyDetails.website;
+    let hasOfficialSource = false;
 
     const rcDates = (countyDetails.regionalCenters || []).map(rc => rc.last_verified_date).filter(Boolean) as string[];
     const sdDates = (countyDetails.schoolDistricts || []).map(sd => sd.last_verified_date).filter(Boolean) as string[];
@@ -67,9 +90,9 @@ export async function generateMetadata({ params }: Props) {
     const allDates = [...rcDates, ...sdDates, ...coDates];
     lastVerifiedDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
 
-    const rcScores = (countyDetails.regionalCenters || []).map(rc => rc.confidence_score).filter(s => s !== null && s !== undefined);
-    const sdScores = (countyDetails.schoolDistricts || []).map(sd => sd.confidence_score !== null && sd.confidence_score !== undefined ? sd.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
-    const coScores = (countyDetails.countyOffices || []).map(co => co.confidence_score !== null && co.confidence_score !== undefined ? co.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
+    const rcScores = (countyDetails.regionalCenters || []).map(rc => normalizeConfidenceScore(rc.confidence_score)).filter((s): s is number => s !== null);
+    const sdScores = (countyDetails.schoolDistricts || []).map(sd => normalizeConfidenceScore(sd.confidence_score)).filter((s): s is number => s !== null);
+    const coScores = (countyDetails.countyOffices || []).map(co => normalizeConfidenceScore(co.confidence_score)).filter((s): s is number => s !== null);
     const allScores = [...rcScores, ...sdScores, ...coScores];
     confidenceScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
 
@@ -132,7 +155,8 @@ export default async function CountyPage({ params }: Props) {
 
   const stateConfig = getDynamicStateConfig(stateData.id, stateData.name, stateData.code);
   const countiesList = (await getCounties(stateData.id)).map(c => ({ id: c.id, name: c.name }));
-  const countyWage = countyDetails.ihss_wage_rate || 18.00;
+  const countyWage = countyDetails.ihss_wage_rate;
+  const hasWage = countyWage !== null && countyWage !== undefined && countyWage > 0;
 
   const freshnessSources: DisclosureSource[] = [];
   if (countyDetails.regionalCenters && countyDetails.regionalCenters.length > 0) {
@@ -172,37 +196,41 @@ export default async function CountyPage({ params }: Props) {
   
   const rcName = countyDetails.regionalCenters?.[0]?.name || `Local ${catchmentLabel}`;
   
+  const faqMainEntity = [];
+  if (hasWage) {
+    faqMainEntity.push({
+      '@type': 'Question',
+      name: `What is the local ${stateData.id === 'california' ? 'IHSS' : 'Medicaid waiver'} hourly wage in ${countyName}?`,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: `The current ${stateData.id === 'california' ? 'In-Home Supportive Services (IHSS) provider' : 'Medicaid waiver provider'} wage in ${countyName} is $${countyWage!.toFixed(2)} per hour.`
+      }
+    });
+  }
+  faqMainEntity.push({
+    '@type': 'Question',
+    name: `Which ${catchmentLabel} serves families in ${countyName}?`,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: `Families in ${countyName} are served by ${rcName}, which manages developmental assessments, support resources, and service coordination.`
+    }
+  });
+  const iepTimelineText = getStateSpecificIepTimeline(stateData.id, countyName);
+  if (iepTimelineText) {
+    faqMainEntity.push({
+      '@type': 'Question',
+      name: `How long does the school district have to respond to an IEP assessment request in ${countyName}?`,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: iepTimelineText
+      }
+    });
+  }
+
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: [
-      {
-        '@type': 'Question',
-        name: `What is the local ${stateData.id === 'california' ? 'IHSS' : 'Medicaid waiver'} hourly wage in ${countyName}?`,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: `The current ${stateData.id === 'california' ? 'In-Home Supportive Services (IHSS) provider' : 'Medicaid waiver provider'} wage in ${countyName} is $${countyWage.toFixed(2)} per hour.`
-        }
-      },
-      {
-        '@type': 'Question',
-        name: `Which ${catchmentLabel} serves families in ${countyName}?`,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: `Families in ${countyName} are served by ${rcName}, which manages developmental assessments, support resources, and service coordination.`
-        }
-      },
-      {
-        '@type': 'Question',
-        name: `How long does the school district have to respond to an IEP assessment request in ${countyName}?`,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: stateData.id === 'california' 
-            ? `Under California Education Code, school districts in ${countyName} have 15 calendar days to provide an Assessment Plan once a parent submits a written request. After the plan is signed, they have 60 calendar days to complete evaluations and hold the initial IEP meeting.`
-            : `Under local state rules, school districts in ${countyName} must respond to a parent request for an IEP assessment within standard state timelines (typically 15 to 30 days depending on the state).`
-        }
-      }
-    ]
+    mainEntity: faqMainEntity
   };
 
   const governmentOrganizationSchema = {
@@ -226,7 +254,7 @@ export default async function CountyPage({ params }: Props) {
 
   let confidenceScore: number | null = null;
   let lastVerifiedDate: string | null = null;
-  let hasOfficialSource = !!countyDetails.website;
+  let hasOfficialSource = false;
 
   const rcDates = (countyDetails.regionalCenters || []).map(rc => rc.last_verified_date).filter(Boolean) as string[];
   const sdDates = (countyDetails.schoolDistricts || []).map(sd => sd.last_verified_date).filter(Boolean) as string[];
@@ -234,9 +262,9 @@ export default async function CountyPage({ params }: Props) {
   const allDates = [...rcDates, ...sdDates, ...coDates];
   lastVerifiedDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
 
-  const rcScores = (countyDetails.regionalCenters || []).map(rc => rc.confidence_score).filter(s => s !== null && s !== undefined);
-  const sdScores = (countyDetails.schoolDistricts || []).map(sd => sd.confidence_score !== null && sd.confidence_score !== undefined ? sd.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
-  const coScores = (countyDetails.countyOffices || []).map(co => co.confidence_score !== null && co.confidence_score !== undefined ? co.confidence_score / 5.0 : null).filter((s): s is number => s !== null);
+  const rcScores = (countyDetails.regionalCenters || []).map(rc => normalizeConfidenceScore(rc.confidence_score)).filter((s): s is number => s !== null);
+  const sdScores = (countyDetails.schoolDistricts || []).map(sd => normalizeConfidenceScore(sd.confidence_score)).filter((s): s is number => s !== null);
+  const coScores = (countyDetails.countyOffices || []).map(co => normalizeConfidenceScore(co.confidence_score)).filter((s): s is number => s !== null);
   const allScores = [...rcScores, ...sdScores, ...coScores];
   confidenceScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
 
@@ -531,7 +559,9 @@ export default async function CountyPage({ params }: Props) {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.85rem' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                 <span>{stateData.id === 'california' ? 'IHSS' : 'Waiver'} Wage Rate:</span>
-                <strong style={{ color: '#10b981' }}>${countyWage.toFixed(2)}/hr</strong>
+                <strong style={{ color: hasWage ? '#10b981' : 'var(--text-light)' }}>
+                  {hasWage ? `$${countyWage!.toFixed(2)}/hr` : 'Verification pending'}
+                </strong>
               </div>
               <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                 <span>Max Monthly Hours:</span>
@@ -539,7 +569,9 @@ export default async function CountyPage({ params }: Props) {
               </div>
               <div style={{ display: 'flex', justifyContent: 'space-between', borderTop: '1px solid #eee', paddingTop: '0.5rem', marginTop: '0.25rem' }}>
                 <span>Max Monthly Pay:</span>
-                <strong style={{ color: '#10b981' }}>${(283 * countyWage).toLocaleString(undefined, { maximumFractionDigits: 0 })}/mo</strong>
+                <strong style={{ color: hasWage ? '#10b981' : 'var(--text-light)' }}>
+                  {hasWage ? `$${(283 * countyWage!).toLocaleString(undefined, { maximumFractionDigits: 0 })}/mo` : 'Verification pending'}
+                </strong>
               </div>
             </div>
           </div>
