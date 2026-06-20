@@ -1,38 +1,64 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {
-  classifyOutcome,
-  fetchRecord,
-  processSourcePackRecords,
+  executeSourcePackRun,
   readJsonl,
-  summarizeRows,
-  writeJson,
-  writeJsonl,
 } from './ca-source-pack-lightweight-lib.mjs';
 
 const repoRoot = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const defaultSourceDir = path.join(repoRoot, 'data', 'source_packs', 'california');
 const defaultOutputDir = path.join(repoRoot, 'data', 'generated');
+const defaultRunsDir = path.join(repoRoot, 'data', 'source-acquisition-runs');
+
+function parseInteger(value, fallbackValue) {
+  if (value === undefined || value === '') return fallbackValue;
+  const parsed = Number(value);
+  if (!Number.isFinite(parsed) || parsed < 0) {
+    throw new Error(`Invalid numeric flag value: ${value}`);
+  }
+  return parsed;
+}
 
 function parseArgs(argv) {
   const parsed = {
+    runId: 'ca-source-pack-v1',
     sourceDir: defaultSourceDir,
     outputDir: defaultOutputDir,
+    runsDir: defaultRunsDir,
     delayMs: 400,
     retryDelayMs: 1000,
     requestTimeoutMs: 20000,
     bodyTimeoutMs: 20000,
+    maxResponseBytes: 2_000_000,
+    limit: 0,
+    offset: 0,
+    resume: false,
+    maxConcurrency: 4,
+    simulateCrashAfter: 0,
   };
+
   for (const arg of argv) {
     if (!arg.startsWith('--')) continue;
-    const [key, value = ''] = arg.slice(2).split('=');
-    if (key === 'source-dir') parsed.sourceDir = path.resolve(value);
-    if (key === 'output-dir') parsed.outputDir = path.resolve(value);
-    if (key === 'delay-ms') parsed.delayMs = Number(value);
-    if (key === 'retry-delay-ms') parsed.retryDelayMs = Number(value);
-    if (key === 'request-timeout-ms') parsed.requestTimeoutMs = Number(value);
-    if (key === 'body-timeout-ms') parsed.bodyTimeoutMs = Number(value);
+    const withoutPrefix = arg.slice(2);
+    const [key, rawValue] = withoutPrefix.includes('=') ? withoutPrefix.split(/=(.*)/s, 2) : [withoutPrefix, undefined];
+    const value = rawValue ?? '';
+
+    if (key === 'run-id') parsed.runId = value;
+    else if (key === 'source-dir') parsed.sourceDir = path.resolve(value);
+    else if (key === 'output-dir') parsed.outputDir = path.resolve(value);
+    else if (key === 'runs-dir') parsed.runsDir = path.resolve(value);
+    else if (key === 'delay-ms') parsed.delayMs = parseInteger(value, parsed.delayMs);
+    else if (key === 'retry-delay-ms') parsed.retryDelayMs = parseInteger(value, parsed.retryDelayMs);
+    else if (key === 'request-timeout-ms') parsed.requestTimeoutMs = parseInteger(value, parsed.requestTimeoutMs);
+    else if (key === 'body-timeout-ms') parsed.bodyTimeoutMs = parseInteger(value, parsed.bodyTimeoutMs);
+    else if (key === 'max-response-bytes') parsed.maxResponseBytes = parseInteger(value, parsed.maxResponseBytes);
+    else if (key === 'limit') parsed.limit = parseInteger(value, parsed.limit);
+    else if (key === 'offset') parsed.offset = parseInteger(value, parsed.offset);
+    else if (key === 'max-concurrency') parsed.maxConcurrency = Math.max(1, parseInteger(value, parsed.maxConcurrency));
+    else if (key === 'resume') parsed.resume = value === '' ? true : value !== 'false';
+    else if (key === 'simulate-crash-after') parsed.simulateCrashAfter = parseInteger(value, 0);
   }
+
   return parsed;
 }
 
@@ -52,35 +78,6 @@ function readCoverageCsv(filePath) {
   };
 }
 
-function buildOutputRow(record, result) {
-  return {
-    state: record.state,
-    entity_id: record.entity_id,
-    source_role: record.source_role,
-    authority: record.authority,
-    agency: record.agency,
-    original_status: record.status,
-    batch_class: record.batch_class,
-    provenance_url: record.provenance_url || '',
-    url: record.url,
-    final_url: result.finalUrl,
-    http_status: result.httpStatus,
-    content_type: result.contentType,
-    fetched_at: new Date().toISOString(),
-    fetch_status: classifyOutcome(record, result),
-    evidence_title: result.evidenceTitle,
-    evidence_h1: result.evidenceH1,
-    evidence_h2s: result.evidenceH2s,
-    text_sample: result.textSample,
-    parser_used: result.parserUsed,
-    error_code: result.errorCode || '',
-    error_message: result.errorMessage || '',
-    canonical_url: result.canonicalUrl || '',
-    outbound_official_links: result.outboundOfficialLinks || [],
-    discovered_leaf: result.discoveredLeaf,
-  };
-}
-
 async function main() {
   const args = parseArgs(process.argv.slice(2));
   const manifestPath = requiredFile(args.sourceDir, 'ca_source_pack_manifest_v2.json');
@@ -97,66 +94,61 @@ async function main() {
     ...readJsonl(directoryPackPath),
   ];
 
-  const { results, failures, blocked, uniqueFetchCount } = await processSourcePackRecords(
-    inputRows,
-    args,
-    buildOutputRow,
-    fetchRecord,
-  );
+  const runDir = path.join(args.runsDir, args.runId);
+  fs.mkdirSync(runDir, { recursive: true });
 
-  const summary = {
-    generated_at: new Date().toISOString(),
+  const { summary } = await executeSourcePackRun({
+    runId: args.runId,
+    inputRows,
+    repairLedger,
     sourceDir: args.sourceDir,
     outputDir: args.outputDir,
+    runDir,
+    args,
+  });
+
+  const enrichedSummary = {
+    ...summary,
     inputs: {
+      ...summary.inputs,
       officialPackPath,
       directoryPackPath,
       repairLedgerPath,
       coverageMatrixPath,
       manifestPath,
-      totalInputRows: inputRows.length,
       officialRows: manifest.files?.['ca_official_source_pack_v2.jsonl']?.records ?? 0,
       directoryRows: manifest.files?.['ca_directory_targets_v1.jsonl']?.records ?? 0,
       repairLedgerRows: repairLedger.length,
       coverageMatrixRows: coverageMatrix.rowCount,
     },
     manifest,
-    repairLedgerCounts: repairLedger.reduce((accumulator, row) => {
-      accumulator[row.ledger] = (accumulator[row.ledger] || 0) + 1;
-      return accumulator;
-    }, {}),
-    outputs: {
-      resultsPath: path.join(args.outputDir, 'ca_scrape_results_v1.jsonl'),
-      failuresPath: path.join(args.outputDir, 'ca_fetch_failures_v1.jsonl'),
-      blockedPath: path.join(args.outputDir, 'ca_blocked_targets_v1.jsonl'),
-      summaryPath: path.join(args.outputDir, 'ca_source_completion_summary_v1.json'),
-      resultCount: results.length,
-      failureCount: failures.length,
-      blockedCount: blocked.length,
-      categoryTotal: results.length + failures.length + blocked.length,
-      uniqueFetchCount,
-    },
-    counts: {
-      ...summarizeRows([...results, ...failures, ...blocked]),
+    runOptions: {
+      runId: args.runId,
+      limit: args.limit,
+      offset: args.offset,
+      resume: args.resume,
+      maxConcurrency: args.maxConcurrency,
+      maxResponseBytes: args.maxResponseBytes,
     },
   };
 
-  if (summary.outputs.categoryTotal !== inputRows.length) {
-    throw new Error(`Category mismatch: expected ${inputRows.length} outputs, found ${summary.outputs.categoryTotal}.`);
-  }
-
-  writeJsonl(summary.outputs.resultsPath, results);
-  writeJsonl(summary.outputs.failuresPath, failures);
-  writeJsonl(summary.outputs.blockedPath, blocked);
-  writeJson(summary.outputs.summaryPath, summary);
+  fs.writeFileSync(summary.outputs.summaryPath, `${JSON.stringify(enrichedSummary, null, 2)}\n`);
 
   console.log(JSON.stringify({
     ok: true,
+    runId: args.runId,
     totalInputRows: inputRows.length,
-    resultCount: results.length,
-    failureCount: failures.length,
-    blockedCount: blocked.length,
-    summaryPath: summary.outputs.summaryPath,
+    completedInputRows: enrichedSummary.inputs.completedInputRows,
+    remainingInputRows: enrichedSummary.inputs.remainingInputRows,
+    resultCount: enrichedSummary.outputs.resultCount,
+    failureCount: enrichedSummary.outputs.failureCount,
+    blockedCount: enrichedSummary.outputs.blockedCount,
+    repairCount: enrichedSummary.outputs.repairCount,
+    authorFirstCount: enrichedSummary.outputs.authorFirstCount,
+    discoveredCount: enrichedSummary.outputs.discoveredCount,
+    parseAdapterCount: enrichedSummary.outputs.parseAdapterCount,
+    summaryPath: enrichedSummary.outputs.summaryPath,
+    runDir,
   }, null, 2));
 }
 

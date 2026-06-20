@@ -1,0 +1,180 @@
+{
+  "generated_at": "2026-06-20T14:53:58.503Z",
+  "runId": "ca-v1",
+  "sourceDir": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source_packs/california",
+  "outputDir": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/generated",
+  "runDir": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/ca-v1",
+  "inputs": {
+    "totalInputRows": 209,
+    "completedInputRows": 209,
+    "remainingInputRows": 0,
+    "currentBatchSize": 9,
+    "selectedOffset": 0,
+    "selectedLimit": 25,
+    "officialPackPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source_packs/california/ca_official_source_pack_v2.jsonl",
+    "directoryPackPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source_packs/california/ca_directory_targets_v1.jsonl",
+    "repairLedgerPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source_packs/california/ca_source_repair_ledger_v2.jsonl",
+    "coverageMatrixPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source_packs/california/ca_source_coverage_matrix_v1.csv",
+    "manifestPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source_packs/california/ca_source_pack_manifest_v2.json",
+    "officialRows": 122,
+    "directoryRows": 87,
+    "repairLedgerRows": 11,
+    "coverageMatrixRows": 17
+  },
+  "outputs": {
+    "resultsPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/generated/ca_scrape_results_v1.jsonl",
+    "failuresPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/generated/ca_fetch_failures_v1.jsonl",
+    "blockedPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/generated/ca_blocked_targets_v1.jsonl",
+    "repairPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/generated/ca_repair_targets_v1.jsonl",
+    "authorFirstPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/generated/ca_author_first_targets_v1.jsonl",
+    "discoveredPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/generated/ca_discovered_target_queue_v1.jsonl",
+    "parseAdapterPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/ca-v1/followups/parse-ready-high-signal.json",
+    "summaryPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/generated/ca_source_completion_summary_v1.json",
+    "resultCount": 174,
+    "failureCount": 9,
+    "blockedCount": 26,
+    "repairCount": 4,
+    "authorFirstCount": 5,
+    "discoveredCount": 55,
+    "parseAdapterCount": 152,
+    "categoryTotal": 209,
+    "uniqueFetchCount": 201
+  },
+  "repairLedgerCounts": {
+    "repair": 4,
+    "blocked": 2,
+    "author_first": 5
+  },
+  "counts": {
+    "total": 209,
+    "byFetchStatus": {
+      "fetched": 152,
+      "fetched_unparsed": 21,
+      "failed": 9,
+      "blocked": 26,
+      "skipped_portal": 1
+    },
+    "byBatchClass": {
+      "html": 98,
+      "pdf": 19,
+      "portal": 2,
+      "spreadsheet": 2,
+      "document": 1,
+      "directory_root": 87
+    },
+    "byAuthority": {
+      "official_state": 110,
+      "official_state_portal": 2,
+      "official_federal": 7,
+      "official_state_program": 5,
+      "official_state_judiciary": 4,
+      "official_state_bar": 1,
+      "state_protection_and_advocacy_system": 1,
+      "official_county": 58,
+      "official_regional_center": 21
+    },
+    "byEntityIdPrefix": {
+      "ihss": 11,
+      "cdss": 2,
+      "soc": 5,
+      "state": 1,
+      "developmental": 1,
+      "regional": 6,
+      "early": 7,
+      "self": 8,
+      "dds": 3,
+      "supported": 3,
+      "adult": 1,
+      "dhcs": 8,
+      "medi": 14,
+      "benefitscal": 1,
+      "hcba": 3,
+      "hcbs": 2,
+      "wpcs": 1,
+      "ccs": 5,
+      "haccp": 5,
+      "childrens": 1,
+      "special": 7,
+      "iep": 1,
+      "selpa": 2,
+      "school": 5,
+      "section": 1,
+      "ssi": 2,
+      "social": 4,
+      "dor": 3,
+      "vocational": 3,
+      "pre": 2,
+      "independent": 3,
+      "calable": 5,
+      "conservatorship": 1,
+      "legal": 2,
+      "disability": 1,
+      "county": 58,
+      "alta": 1,
+      "central": 1,
+      "eastern": 1,
+      "far": 1,
+      "frank": 1,
+      "golden": 1,
+      "harbor": 1,
+      "inland": 1,
+      "kern": 1,
+      "north": 2,
+      "redwood": 1,
+      "san": 3,
+      "south": 1,
+      "tri": 1,
+      "valley": 1,
+      "westside": 1,
+      "parent": 1,
+      "managed": 1
+    }
+  },
+  "manifest": {
+    "schema_version": "2.0",
+    "jurisdiction": "California",
+    "generated_at": "2026-06-20",
+    "purpose": "Exact official-source targets for bounded, deterministic ingestion. Target verification is not equivalent to field-level content verification.",
+    "files": {
+      "ca_official_source_pack_v2.jsonl": {
+        "records": 122,
+        "description": "Core official program, form, rights, appeals, and transition targets."
+      },
+      "ca_directory_targets_v1.jsonl": {
+        "records": 87,
+        "description": "Exact local and statewide directory targets, including 58 counties and 21 Regional Centers."
+      },
+      "ca_source_repair_ledger_v2.jsonl": {
+        "records": 11,
+        "description": "Repair, author-first, and blocked items."
+      },
+      "ca_source_coverage_matrix_v1.csv": {
+        "records": 17,
+        "description": "Coverage matrix by information domain."
+      }
+    },
+    "core_status_counts": {
+      "verified_target": 111,
+      "official_link_fetch_pending": 8,
+      "blocked_fetch_challenge": 2,
+      "blocked_http_403": 1
+    },
+    "directory_status_counts": {
+      "official_directory_link": 87
+    },
+    "repair_ledger_counts": {
+      "repair": 4,
+      "blocked": 2,
+      "author_first": 5
+    },
+    "publication_rule": "No record or field is publication-ready until fetched evidence is parsed, cited at field level, validated, and accepted by the completeness gate."
+  },
+  "runOptions": {
+    "runId": "ca-v1",
+    "limit": 25,
+    "offset": 0,
+    "resume": true,
+    "maxConcurrency": 4,
+    "maxResponseBytes": 2000000
+  }
+}

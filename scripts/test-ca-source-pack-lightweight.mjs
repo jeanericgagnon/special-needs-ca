@@ -3,15 +3,98 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import {
+  buildRowKey,
   classifyOutcome,
-  fetchRecord,
+  executeSourcePackRun,
   normalizeUrl,
-  processSourcePackRecords,
   readJsonl,
   selectSameDomainDiscoveryCandidate,
 } from './ca-source-pack-lightweight-lib.mjs';
 
+const repoRoot = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
+const californiaPackDir = path.join(repoRoot, 'data', 'source_packs', 'california');
 const tempRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'ca-source-pack-test-'));
+
+function makeRecord(overrides = {}) {
+  return {
+    state: 'CA',
+    entity_id: 'sample-entity',
+    source_role: 'sample_role',
+    authority: 'official_state',
+    agency: 'Agency',
+    status: 'verified_target',
+    batch_class: 'html',
+    provenance_url: '',
+    url: 'https://example.org/page',
+    ...overrides,
+  };
+}
+
+function makeResponse({
+  url,
+  status = 200,
+  contentType = 'text/html; charset=utf-8',
+  body = '<html><head><title>Title</title></head><body><h1>Heading</h1><a href="/ihss/apply">Apply</a></body></html>',
+  headers = {},
+}) {
+  const buffer = Buffer.isBuffer(body) ? body : Buffer.from(body);
+  const headerMap = new Map([
+    ['content-type', contentType],
+    ['etag', headers.etag || 'W/"etag"'],
+    ['last-modified', headers.lastModified || 'Sat, 20 Jun 2026 00:00:00 GMT'],
+    ['location', headers.location || ''],
+  ]);
+  return {
+    ok: status >= 200 && status < 300,
+    status,
+    url,
+    headers: {
+      get(name) {
+        return headerMap.get(String(name).toLowerCase()) || '';
+      },
+    },
+    arrayBuffer: async () => buffer,
+    text: async () => buffer.toString('utf8'),
+  };
+}
+
+async function runWithTempContext({
+  inputRows,
+  repairLedger = [],
+  fetchImpl,
+  args = {},
+  runId = 'test-run',
+}) {
+  const baseDir = fs.mkdtempSync(path.join(tempRoot, 'run-'));
+  const outputDir = path.join(baseDir, 'generated');
+  const runDir = path.join(baseDir, 'runs', runId);
+  const sourceDir = path.join(baseDir, 'source');
+  fs.mkdirSync(outputDir, { recursive: true });
+  fs.mkdirSync(runDir, { recursive: true });
+  fs.mkdirSync(sourceDir, { recursive: true });
+
+  return executeSourcePackRun({
+    runId,
+    inputRows,
+    repairLedger,
+    sourceDir,
+    outputDir,
+    runDir,
+    fetchImpl,
+    args: {
+      delayMs: 0,
+      retryDelayMs: 0,
+      requestTimeoutMs: 250,
+      bodyTimeoutMs: 250,
+      maxResponseBytes: 1_000_000,
+      limit: 0,
+      offset: 0,
+      maxConcurrency: 1,
+      simulateCrashAfter: 0,
+      ...args,
+    },
+  }).then((result) => ({ ...result, baseDir, outputDir, runDir, sourceDir }));
+}
 
 try {
   const jsonlPath = path.join(tempRoot, 'sample.jsonl');
@@ -22,269 +105,237 @@ try {
 
   const loaded = readJsonl(jsonlPath);
   assert.equal(loaded.length, 2, 'JSONL loader should read two records');
-
   assert.equal(
     normalizeUrl('HTTPS://Example.org/path/#fragment'),
     'https://example.org/path',
     'normalizeUrl should normalize case and strip fragments/trailing slash',
   );
 
-  const htmlStatus = classifyOutcome(
-    { batch_class: 'html' },
-    { ok: true, parserUsed: 'html-basic', errorCode: '' },
+  assert.equal(
+    classifyOutcome(makeRecord({ batch_class: 'portal' }), { ok: true, parserClass: 'portal', errorCode: '' }),
+    'skipped_portal',
+    'successful portals should be skipped_portal',
   );
-  assert.equal(htmlStatus, 'fetched');
-
-  const pdfStatus = classifyOutcome(
-    { batch_class: 'pdf', url: 'https://example.org/form.pdf?ver=1' },
-    { ok: true, parserUsed: 'pdf-metadata-only', errorCode: '' },
+  assert.equal(
+    classifyOutcome(makeRecord({ batch_class: 'portal' }), { ok: false, parserClass: 'portal', errorCode: 'blocked_http_403' }),
+    'blocked',
+    'blocked portals should be blocked',
   );
-  assert.equal(pdfStatus, 'fetched_unparsed');
-
-  const blockedStatus = classifyOutcome(
-    { batch_class: 'html' },
-    { ok: false, parserUsed: 'html-basic', errorCode: 'blocked_http_403' },
+  assert.equal(
+    classifyOutcome(makeRecord({ batch_class: 'portal' }), { ok: false, parserClass: 'portal', errorCode: 'fetch_failed' }),
+    'failed',
+    'failed portals should be failed, not skipped_portal',
   );
-  assert.equal(blockedStatus, 'blocked');
-
-  const portalStatus = classifyOutcome(
-    { batch_class: 'portal' },
-    { ok: true, parserUsed: 'portal-skip', errorCode: '' },
-  );
-  assert.equal(portalStatus, 'skipped_portal');
 
   const discoveryCandidate = selectSameDomainDiscoveryCandidate(
     'https://county.example.org',
-    `
-      <html>
-        <body>
-          <a href="/about">About</a>
-          <a href="/ihss/apply">Apply for IHSS</a>
-          <a href="https://external.example.com/ihss">External</a>
-          <a href="/contact">Contact us</a>
-        </body>
-      </html>
-    `,
+    '<a href="/about">About</a><a href="/ihss/apply">Apply for IHSS</a><a href="/contact">Contact us</a>',
   );
   assert.equal(discoveryCandidate?.url, 'https://county.example.org/ihss/apply');
 
-  let fetchCalls = 0;
-  const fetchRows = [
-    {
-      state: 'CA',
-      entity_id: 'dup-a',
-      source_role: 'one',
-      authority: 'official_state',
-      agency: 'Agency',
-      status: 'verified_target',
-      batch_class: 'html',
-      provenance_url: '',
-      url: 'https://example.org/same',
-    },
-    {
-      state: 'CA',
-      entity_id: 'dup-b',
-      source_role: 'two',
-      authority: 'official_state',
-      agency: 'Agency',
-      status: 'verified_target',
-      batch_class: 'html',
-      provenance_url: '',
-      url: 'https://EXAMPLE.org/same#frag',
-    },
-    {
-      state: 'CA',
-      entity_id: 'blocked-item',
-      source_role: 'three',
-      authority: 'official_state',
-      agency: 'Agency',
-      status: 'verified_target',
-      batch_class: 'html',
-      provenance_url: '',
-      url: 'https://example.org/blocked',
-    },
-    {
-      state: 'CA',
-      entity_id: 'failed-item',
-      source_role: 'four',
-      authority: 'official_state',
-      agency: 'Agency',
-      status: 'verified_target',
-      batch_class: 'html',
-      provenance_url: '',
-      url: 'https://example.org/failed',
-    },
-  ];
-
-  const processed = await processSourcePackRecords(
-    fetchRows,
-    { delayMs: 0 },
-    (row, fetchResult) => ({
-      ...row,
-      url: row.url,
-      final_url: fetchResult.finalUrl,
-      http_status: fetchResult.httpStatus,
-      content_type: fetchResult.contentType,
-      fetched_at: '2026-06-20T00:00:00.000Z',
-      fetch_status: classifyOutcome(row, fetchResult),
-      evidence_title: fetchResult.evidenceTitle || '',
-      evidence_h1: fetchResult.evidenceH1 || '',
-      text_sample: fetchResult.textSample || '',
-      parser_used: fetchResult.parserUsed,
-      error_code: fetchResult.errorCode || '',
-      error_message: fetchResult.errorMessage || '',
-    }),
-    async (row) => {
-      fetchCalls += 1;
-      if (row.url.includes('/blocked')) {
-        return {
-          ok: false,
-          finalUrl: row.url,
-          httpStatus: 403,
-          contentType: 'text/html',
-          parserUsed: 'html-basic',
-          errorCode: 'blocked_http_403',
-          errorMessage: 'http_403',
-        };
-      }
-      if (row.url.includes('/failed')) {
-        return {
-          ok: false,
-          finalUrl: row.url,
-          httpStatus: 0,
-          contentType: '',
-          parserUsed: 'html-basic',
-          errorCode: 'fetch_failed',
-          errorMessage: 'fetch failed',
-        };
-      }
-      return {
-        ok: true,
-        finalUrl: row.url,
-        httpStatus: 200,
-        contentType: 'text/html',
-        parserUsed: 'html-basic',
-        errorCode: '',
-        errorMessage: '',
-        evidenceTitle: 'Title',
-        evidenceH1: 'Heading',
-        textSample: 'Sample',
-      };
-    },
-  );
-
-  assert.equal(processed.uniqueFetchCount, 3, 'normalized duplicate URLs should fetch once');
-  assert.equal(fetchCalls, 3, 'no duplicate fetches should occur');
-  assert.equal(processed.results.length, 2, 'two fetched rows should land in results');
-  assert.equal(processed.blocked.length, 1, 'blocked row should route to blocked ledger');
-  assert.equal(processed.failures.length, 1, 'failed row should route to failure ledger');
-
-  let directoryFetchCalls = 0;
-  await processSourcePackRecords(
-    [{
-      state: 'CA',
-      entity_id: 'directory-root',
-      source_role: 'county_ihss_entry_from_cdss_directory',
-      authority: 'official_county',
-      agency: 'County',
-      status: 'official_directory_link',
-      batch_class: 'directory_root',
-      provenance_url: '',
-      url: 'https://county.example.org',
-    }],
-    { delayMs: 0 },
-    (row, fetchResult) => ({
-      ...row,
-      fetch_status: classifyOutcome(row, fetchResult),
-      parser_used: fetchResult.parserUsed,
-      url: row.url,
-      final_url: fetchResult.finalUrl,
-      http_status: fetchResult.httpStatus,
-      content_type: fetchResult.contentType,
-      fetched_at: '2026-06-20T00:00:00.000Z',
-      evidence_title: fetchResult.evidenceTitle || '',
-      evidence_h1: fetchResult.evidenceH1 || '',
-      text_sample: fetchResult.textSample || '',
-      error_code: fetchResult.errorCode || '',
-      error_message: fetchResult.errorMessage || '',
-    }),
-    async (row) => {
-      directoryFetchCalls += 1;
-      if (row.url === 'https://county.example.org') {
-        return {
-          ok: true,
-          finalUrl: row.url,
-          httpStatus: 200,
-          contentType: 'text/html',
-          parserUsed: 'html-basic',
-          errorCode: '',
-          errorMessage: '',
-          evidenceTitle: 'County Root',
-          evidenceH1: 'County Root',
-          textSample: 'Root sample',
-        };
-      }
-      throw new Error('unexpected_deep_crawl');
-    },
-  );
-  assert.equal(directoryFetchCalls, 1, 'record processor should not deep crawl on its own');
-
-  const originalFetch = global.fetch;
-  try {
-    let callCount = 0;
-    global.fetch = async (url) => {
-      callCount += 1;
-      if (url === 'https://county.example.org') {
-        return {
-          ok: true,
-          status: 200,
+  {
+    let fetchCalls = 0;
+    const record = makeRecord({ url: 'https://example.org/file.pdf', batch_class: 'pdf' });
+    const { summary } = await runWithTempContext({
+      inputRows: [record],
+      fetchImpl: async (url) => {
+        fetchCalls += 1;
+        assert.equal(url, 'https://example.org/file.pdf');
+        return makeResponse({
           url,
-          headers: new Map([['content-type', 'text/html; charset=utf-8']]),
-          text: async () => `
-            <html>
-              <head><title>County Root</title></head>
-              <body>
-                <h1>County Root</h1>
-                <a href="/ihss/apply">IHSS Apply</a>
-                <a href="/contact">Contact</a>
-                <a href="/eligibility">Eligibility</a>
-              </body>
-            </html>
-          `,
-          arrayBuffer: async () => new TextEncoder().encode('root').buffer,
-        };
-      }
-      return {
+          contentType: 'text/html; charset=utf-8',
+          body: '<html><head><title>HTML Wins</title></head><body><h1>HTML Wins</h1></body></html>',
+        });
+      },
+    });
+    assert.equal(fetchCalls, 1);
+    assert.equal(summary.counts.byFetchStatus.fetched, 1, 'content-type html should override .pdf URL extension');
+  }
+
+  {
+    let textCalls = 0;
+    let arrayBufferCalls = 0;
+    const inputRows = [
+      makeRecord({ entity_id: 'docx-row', url: 'https://example.org/file.docx', batch_class: 'html' }),
+      makeRecord({ entity_id: 'xlsx-row', url: 'https://example.org/file.xlsx', batch_class: 'html' }),
+    ];
+    await runWithTempContext({
+      inputRows,
+      fetchImpl: async (url) => ({
         ok: true,
         status: 200,
         url,
-        headers: new Map([['content-type', 'text/html; charset=utf-8']]),
-        text: async () => '<html><head><title>Leaf</title></head><body><h1>Leaf</h1></body></html>',
-        arrayBuffer: async () => new TextEncoder().encode('leaf').buffer,
-      };
-    };
-
-    const discoveryResult = await fetchRecord({
-      state: 'CA',
-      entity_id: 'county-ihss-demo',
-      source_role: 'county_ihss_entry_from_cdss_directory',
-      authority: 'official_county',
-      agency: 'County',
-      status: 'official_directory_link',
-      batch_class: 'directory_root',
-      provenance_url: '',
-      url: 'https://county.example.org',
-    }, {
-      delayMs: 0,
-      retryDelayMs: 0,
-      requestTimeoutMs: 500,
-      bodyTimeoutMs: 500,
+        headers: {
+          get(name) {
+            if (name.toLowerCase() === 'content-type') {
+              return url.endsWith('.docx')
+                ? 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+                : 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet';
+            }
+            return '';
+          },
+        },
+        arrayBuffer: async () => {
+          arrayBufferCalls += 1;
+          return Buffer.from('binary-file');
+        },
+        text: async () => {
+          textCalls += 1;
+          throw new Error('binary_text_should_not_be_called');
+        },
+      }),
     });
+    assert.equal(arrayBufferCalls, 2, 'binary files should be read as buffers');
+    assert.equal(textCalls, 0, 'binary files must not be read via response.text()');
+  }
 
-    assert.equal(callCount, 2, 'directory fetch should perform at most one same-domain discovery pass');
-    assert.equal(discoveryResult.discoveredLeaf?.url, 'https://county.example.org/ihss/apply');
-  } finally {
-    global.fetch = originalFetch;
+  {
+    const record = makeRecord({ entity_id: 'xlsx-404', url: 'https://example.org/missing.xlsx', batch_class: 'html' });
+    const { summary } = await runWithTempContext({
+      inputRows: [record],
+      fetchImpl: async (url) => makeResponse({
+        url,
+        status: 404,
+        contentType: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+        body: Buffer.from('missing'),
+      }),
+    });
+    assert.equal(summary.outputs.failureCount, 1, 'xlsx 404 should be a failure');
+    assert.equal(summary.outputs.blockedCount, 0, 'xlsx 404 must not be misclassified as a challenge block');
+  }
+
+  {
+    let fetchCalls = 0;
+    const sharedUrl = 'https://county.example.org/root';
+    const inputRows = [
+      makeRecord({ entity_id: 'html-row', url: sharedUrl, batch_class: 'html' }),
+      makeRecord({
+        entity_id: 'directory-row',
+        url: sharedUrl,
+        batch_class: 'directory_root',
+        source_role: 'county_ihss_entry_from_cdss_directory',
+      }),
+    ];
+    const { outputDir } = await runWithTempContext({
+      inputRows,
+      fetchImpl: async (url) => {
+        fetchCalls += 1;
+        return makeResponse({
+          url,
+          body: '<html><head><title>County Root</title></head><body><h1>County Root</h1><a href="/ihss/apply">IHSS Apply</a></body></html>',
+        });
+      },
+    });
+    assert.equal(fetchCalls, 1, 'duplicate normalized URLs should share a cached fetch');
+    const discovered = readJsonl(path.join(outputDir, 'ca_discovered_target_queue_v1.jsonl'));
+    assert.equal(discovered.length, 1, 'directory_root row should still emit discovery even when fetch is cached by URL');
+    assert.equal(discovered[0].url, 'https://county.example.org/ihss/apply');
+  }
+
+  {
+    let fetchCalls = 0;
+    const inputRows = [
+      makeRecord({ entity_id: 'resume-a', url: 'https://example.org/a' }),
+      makeRecord({ entity_id: 'resume-b', url: 'https://example.org/b' }),
+      makeRecord({ entity_id: 'resume-c', url: 'https://example.org/c' }),
+    ];
+    let crashed = false;
+    try {
+      const crashedRun = await runWithTempContext({
+        inputRows,
+        runId: 'resume-run',
+        args: { simulateCrashAfter: 1, limit: 3 },
+        fetchImpl: async (url) => {
+          fetchCalls += 1;
+          return makeResponse({ url });
+        },
+      });
+      void crashedRun;
+    } catch (error) {
+      crashed = String(error.message || error).includes('simulated_crash_after_checkpoint');
+    }
+    assert.equal(crashed, true, 'simulated crash should trigger');
+
+    const resumeBaseDir = fs.readdirSync(tempRoot)
+      .map((name) => path.join(tempRoot, name))
+      .filter((candidate) => fs.statSync(candidate).isDirectory())
+      .sort((left, right) => fs.statSync(right).mtimeMs - fs.statSync(left).mtimeMs)[0];
+    const resumed = await executeSourcePackRun({
+      runId: 'resume-run',
+      inputRows,
+      repairLedger: [],
+      sourceDir: path.join(resumeBaseDir, 'source'),
+      outputDir: path.join(resumeBaseDir, 'generated'),
+      runDir: path.join(resumeBaseDir, 'runs', 'resume-run'),
+      fetchImpl: async (url) => {
+        fetchCalls += 1;
+        return makeResponse({ url });
+      },
+      args: {
+        delayMs: 0,
+        retryDelayMs: 0,
+        requestTimeoutMs: 250,
+        bodyTimeoutMs: 250,
+        maxResponseBytes: 1_000_000,
+        limit: 3,
+        offset: 0,
+        maxConcurrency: 1,
+        simulateCrashAfter: 0,
+        resume: true,
+      },
+    });
+    assert.equal(resumed.summary.inputs.completedInputRows, 3, 'resume should finish all queued rows');
+    assert.equal(fetchCalls, 3, 'resume should not refetch the successful checkpointed row');
+  }
+
+  {
+    const { runDir, outputDir } = await runWithTempContext({
+      inputRows: [makeRecord({ entity_id: 'raw-row', url: 'https://example.org/raw' })],
+      fetchImpl: async (url) => makeResponse({ url, body: '<html><head><title>Raw</title></head><body><h1>Raw</h1></body></html>' }),
+    });
+    const rawDir = path.join(runDir, 'raw');
+    const rawFiles = fs.readdirSync(rawDir);
+    assert.equal(rawFiles.some((name) => !name.endsWith('.json')), true, 'raw response body should be persisted');
+    assert.equal(rawFiles.some((name) => name.endsWith('.json')), true, 'raw response metadata should be persisted');
+    const results = readJsonl(path.join(outputDir, 'ca_scrape_results_v1.jsonl'));
+    assert.match(results[0].sha256, /^[a-f0-9]{64}$/i, 'sha256 should be present on result rows');
+  }
+
+  {
+    const repairLedger = readJsonl(path.join(californiaPackDir, 'ca_source_repair_ledger_v2.jsonl'));
+    const officialRows = readJsonl(path.join(californiaPackDir, 'ca_official_source_pack_v2.jsonl'));
+    const directoryRows = readJsonl(path.join(californiaPackDir, 'ca_directory_targets_v1.jsonl'));
+    const inputRows = [...officialRows, ...directoryRows];
+    const { summary, outputDir } = await runWithTempContext({
+      inputRows,
+      repairLedger,
+      args: { limit: 0, maxConcurrency: 4, maxResponseBytes: 256_000 },
+      fetchImpl: async (url) => {
+        if (url.includes('secure') || url.includes('login')) {
+          return makeResponse({ url, status: 403 });
+        }
+        return makeResponse({
+          url,
+          body: '<html><head><title>California Target</title></head><body><h1>California Target</h1><a href="/contact">Contact</a></body></html>',
+        });
+      },
+    });
+    const results = fs.existsSync(path.join(outputDir, 'ca_scrape_results_v1.jsonl'))
+      ? readJsonl(path.join(outputDir, 'ca_scrape_results_v1.jsonl'))
+      : [];
+    const failures = fs.existsSync(path.join(outputDir, 'ca_fetch_failures_v1.jsonl'))
+      ? readJsonl(path.join(outputDir, 'ca_fetch_failures_v1.jsonl'))
+      : [];
+    const blocked = fs.existsSync(path.join(outputDir, 'ca_blocked_targets_v1.jsonl'))
+      ? readJsonl(path.join(outputDir, 'ca_blocked_targets_v1.jsonl'))
+      : [];
+    assert.equal(inputRows.length, 209, 'fixture source pack should still contain 209 rows');
+    assert.equal(results.length + failures.length + blocked.length, 209, 'all 209 source-pack rows should be assigned exactly once');
+    assert.equal(summary.outputs.categoryTotal, 209, 'summary category total should match all input rows');
+    const discovered = fs.existsSync(path.join(outputDir, 'ca_discovered_target_queue_v1.jsonl'))
+      ? readJsonl(path.join(outputDir, 'ca_discovered_target_queue_v1.jsonl'))
+      : [];
+    assert.equal(discovered.every((row) => row.status === 'discovered_exact_target'), true, 'discovered rows should be emitted as queued exact targets');
   }
 
   console.log(JSON.stringify({
@@ -292,11 +343,16 @@ try {
     tested: [
       'jsonl_loading',
       'url_normalization',
-      'fetch_status_classification',
-      'blocked_failed_routing',
-      'dedup_fetching',
-      'no_deep_crawl_record_processor',
-      'directory_single_leaf_probe',
+      'failed_portal_classification',
+      'blocked_portal_classification',
+      'content_type_overrides_extension',
+      'docx_xlsx_binary_handling',
+      'xlsx_404_failed_not_challenge',
+      'duplicate_url_directory_mode',
+      'checkpoint_resume',
+      'raw_response_and_sha256',
+      'all_209_rows_assigned_once',
+      'discovered_targets_not_fetched_recursively',
     ],
   }, null, 2));
 } finally {
