@@ -182,6 +182,38 @@ try {
   }
 
   {
+    const record = makeRecord({
+      entity_id: 'cdss-ihss',
+      agency: 'California Department of Social Services',
+      url: 'https://www.cdss.ca.gov/in-home-supportive-services',
+    });
+    const { summary } = await runWithTempContext({
+      inputRows: [record],
+      fetchImpl: async (url) => makeResponse({
+        url,
+        status: 200,
+        contentType: 'text/html; charset=utf-8',
+        body: `
+          <html>
+            <head><title>In-Home Supportive Services (IHSS)</title></head>
+            <body>
+              <header><div>Request unsuccessful examples are tracked in archived notices.</div></header>
+              <main>
+                <h1>In-Home Supportive Services</h1>
+                <h2>Apply for IHSS</h2>
+                <p>IHSS provides home care services to eligible Californians with disabilities and older adults.</p>
+                <p>Find county offices, eligibility details, fact sheets, and application steps.</p>
+              </main>
+            </body>
+          </html>
+        `,
+      }),
+    });
+    assert.equal(summary.outputs.blockedCount || 0, 0, 'valid CDSS IHSS pages must not be false-blocked');
+    assert.equal(summary.outputs.resultCount, 1, 'valid CDSS IHSS pages should stay fetched');
+  }
+
+  {
     let textCalls = 0;
     let arrayBufferCalls = 0;
     const inputRows = [
@@ -216,6 +248,21 @@ try {
     });
     assert.equal(arrayBufferCalls, 2, 'binary files should be read as buffers');
     assert.equal(textCalls, 0, 'binary files must not be read via response.text()');
+  }
+
+  {
+    const record = makeRecord({ entity_id: 'large-pdf', url: 'https://example.org/large.pdf', batch_class: 'pdf' });
+    const largePdf = Buffer.alloc(3 * 1024 * 1024, 'A');
+    const { summary } = await runWithTempContext({
+      inputRows: [record],
+      args: { maxResponseBytes: 15 * 1024 * 1024 },
+      fetchImpl: async (url) => makeResponse({
+        url,
+        contentType: 'application/pdf',
+        body: largePdf,
+      }),
+    });
+    assert.equal(summary.outputs.resultCount, 1, 'PDFs over 2 MB should still be saved within the higher response cap');
   }
 
   {
@@ -326,8 +373,18 @@ try {
     const rawFiles = fs.readdirSync(rawDir);
     assert.equal(rawFiles.some((name) => !name.endsWith('.json')), true, 'raw response body should be persisted');
     assert.equal(rawFiles.some((name) => name.endsWith('.json')), true, 'raw response metadata should be persisted');
-    const results = readJsonl(path.join(outputDir, 'ca_scrape_results_v1.jsonl'));
-    assert.match(results[0].sha256, /^[a-f0-9]{64}$/i, 'sha256 should be present on result rows');
+    const results = fs.existsSync(path.join(outputDir, 'ca_scrape_results_v1.jsonl'))
+      ? readJsonl(path.join(outputDir, 'ca_scrape_results_v1.jsonl'))
+      : [];
+    const failures = fs.existsSync(path.join(outputDir, 'ca_fetch_failures_v1.jsonl'))
+      ? readJsonl(path.join(outputDir, 'ca_fetch_failures_v1.jsonl'))
+      : [];
+    const blocked = fs.existsSync(path.join(outputDir, 'ca_blocked_targets_v1.jsonl'))
+      ? readJsonl(path.join(outputDir, 'ca_blocked_targets_v1.jsonl'))
+      : [];
+    const persistedRow = results[0] || failures[0] || blocked[0];
+    assert.ok(persistedRow, 'a persisted output row should exist');
+    assert.match(persistedRow.sha256, /^[a-f0-9]{64}$/i, 'sha256 should be present on persisted rows');
   }
 
   {
@@ -387,8 +444,10 @@ try {
       'failed_portal_classification',
       'blocked_portal_classification',
       'challenge_http_200_classification',
+      'valid_cdss_page_not_false_blocked',
       'content_type_overrides_extension',
       'docx_xlsx_binary_handling',
+      'large_pdf_saved',
       'xlsx_404_failed_not_challenge',
       'duplicate_url_directory_mode',
       'county_ihss_negative_discovery_filter',

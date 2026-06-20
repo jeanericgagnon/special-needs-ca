@@ -1,0 +1,280 @@
+{
+  "runId": "ca-v3",
+  "californiaComplete": false,
+  "meaningfulEvidenceFetched": 139,
+  "documentsParsed": 19,
+  "validationPassed": 100,
+  "validationRejected": 34,
+  "stageReadyCount": 76,
+  "unsupportedStageCount": 24,
+  "blockedFollowupCount": 79,
+  "regionalCenterReviewedCount": 141,
+  "provenanceMissingCount": 0,
+  "familySummary": [
+    {
+      "family": "advocates_legal",
+      "parsed": 3,
+      "accepted": 2,
+      "rejected": 1,
+      "staged": 2,
+      "unsupported": 0,
+      "promoted": 0,
+      "reconciled": true
+    },
+    {
+      "family": "dd_routing",
+      "parsed": 30,
+      "accepted": 24,
+      "rejected": 6,
+      "staged": 24,
+      "unsupported": 0,
+      "promoted": 0,
+      "reconciled": true
+    },
+    {
+      "family": "education_routing",
+      "parsed": 10,
+      "accepted": 10,
+      "rejected": 0,
+      "staged": 10,
+      "unsupported": 0,
+      "promoted": 0,
+      "reconciled": true
+    },
+    {
+      "family": "forms_guides",
+      "parsed": 23,
+      "accepted": 22,
+      "rejected": 1,
+      "staged": 22,
+      "unsupported": 0,
+      "promoted": 0,
+      "reconciled": true
+    },
+    {
+      "family": "general_gap_fill",
+      "parsed": 24,
+      "accepted": 24,
+      "rejected": 0,
+      "staged": 0,
+      "unsupported": 24,
+      "promoted": 0,
+      "reconciled": true
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "parsed": 36,
+      "accepted": 10,
+      "rejected": 26,
+      "staged": 10,
+      "unsupported": 0,
+      "promoted": 0,
+      "reconciled": true
+    },
+    {
+      "family": "programs_benefits",
+      "parsed": 7,
+      "accepted": 7,
+      "rejected": 0,
+      "staged": 7,
+      "unsupported": 0,
+      "promoted": 0,
+      "reconciled": true
+    },
+    {
+      "family": "waivers",
+      "parsed": 1,
+      "accepted": 1,
+      "rejected": 0,
+      "staged": 1,
+      "unsupported": 0,
+      "promoted": 0,
+      "reconciled": true
+    }
+  ],
+  "rawCompletionSummary": {
+    "generated_at": "2026-06-20T20:20:56.705Z",
+    "runId": "ca-v3",
+    "sourceDir": "data/source_packs/california",
+    "outputDir": "data/generated",
+    "runDir": "data/source-acquisition-runs/ca-v3",
+    "inputs": {
+      "totalInputRows": 209,
+      "completedInputRows": 209,
+      "remainingInputRows": 0,
+      "currentBatchSize": 209,
+      "selectedOffset": 0,
+      "selectedLimit": 0,
+      "officialPackPath": "data/source_packs/california/ca_official_source_pack_v2.jsonl",
+      "directoryPackPath": "data/source_packs/california/ca_directory_targets_v1.jsonl",
+      "repairLedgerPath": "data/source_packs/california/ca_source_repair_ledger_v2.jsonl",
+      "coverageMatrixPath": "data/source_packs/california/ca_source_coverage_matrix_v1.csv",
+      "manifestPath": "data/source_packs/california/ca_source_pack_manifest_v2.json",
+      "officialRows": 122,
+      "directoryRows": 87,
+      "repairLedgerRows": 11,
+      "coverageMatrixRows": 17
+    },
+    "outputs": {
+      "resultsPath": "data/generated/ca_scrape_results_v1.jsonl",
+      "failuresPath": "data/generated/ca_fetch_failures_v1.jsonl",
+      "blockedPath": "data/generated/ca_blocked_targets_v1.jsonl",
+      "repairPath": "data/generated/ca_repair_targets_v1.jsonl",
+      "authorFirstPath": "data/generated/ca_author_first_targets_v1.jsonl",
+      "discoveredPath": "data/generated/ca_discovered_target_queue_v1.jsonl",
+      "discoveredReviewPath": "data/generated/ca_discovered_target_review_queue_v1.jsonl",
+      "browserAssistedPath": "data/source-acquisition-runs/ca-v3/followups/author-browser-assisted.json",
+      "parseAdapterPath": "data/source-acquisition-runs/ca-v3/followups/parse-ready-high-signal.json",
+      "summaryPath": "data/generated/ca_source_completion_summary_v1.json",
+      "resultCount": 139,
+      "failureCount": 10,
+      "blockedCount": 60,
+      "repairCount": 4,
+      "authorFirstCount": 5,
+      "discoveredCount": 33,
+      "browserAssistedCount": 30,
+      "parseAdapterCount": 134,
+      "categoryTotal": 209,
+      "uniqueFetchCount": 201
+    },
+    "repairLedgerCounts": {
+      "repair": 4,
+      "blocked": 2,
+      "author_first": 5
+    },
+    "counts": {
+      "total": 209,
+      "byFetchStatus": {
+        "fetched": 115,
+        "fetched_unparsed": 23,
+        "blocked": 60,
+        "skipped_portal": 1,
+        "failed": 10
+      },
+      "byBatchClass": {
+        "html": 98,
+        "pdf": 19,
+        "portal": 2,
+        "spreadsheet": 2,
+        "document": 1,
+        "directory_root": 87
+      },
+      "byAuthority": {
+        "official_state": 110,
+        "official_state_portal": 2,
+        "official_federal": 7,
+        "official_state_program": 5,
+        "official_state_judiciary": 4,
+        "official_state_bar": 1,
+        "state_protection_and_advocacy_system": 1,
+        "official_county": 58,
+        "official_regional_center": 21
+      },
+      "byEntityIdPrefix": {
+        "ihss": 11,
+        "cdss": 2,
+        "soc": 5,
+        "state": 1,
+        "developmental": 1,
+        "regional": 6,
+        "early": 7,
+        "self": 8,
+        "dds": 3,
+        "supported": 3,
+        "adult": 1,
+        "dhcs": 8,
+        "medi": 14,
+        "benefitscal": 1,
+        "hcba": 3,
+        "hcbs": 2,
+        "wpcs": 1,
+        "ccs": 5,
+        "haccp": 5,
+        "childrens": 1,
+        "special": 7,
+        "iep": 1,
+        "selpa": 2,
+        "school": 5,
+        "section": 1,
+        "ssi": 2,
+        "social": 4,
+        "dor": 3,
+        "vocational": 3,
+        "pre": 2,
+        "independent": 3,
+        "calable": 5,
+        "conservatorship": 1,
+        "legal": 2,
+        "disability": 1,
+        "county": 58,
+        "alta": 1,
+        "central": 1,
+        "eastern": 1,
+        "far": 1,
+        "frank": 1,
+        "golden": 1,
+        "harbor": 1,
+        "inland": 1,
+        "kern": 1,
+        "north": 2,
+        "redwood": 1,
+        "san": 3,
+        "south": 1,
+        "tri": 1,
+        "valley": 1,
+        "westside": 1,
+        "parent": 1,
+        "managed": 1
+      }
+    },
+    "manifest": {
+      "schema_version": "2.0",
+      "jurisdiction": "California",
+      "generated_at": "2026-06-20",
+      "purpose": "Exact official-source targets for bounded, deterministic ingestion. Target verification is not equivalent to field-level content verification.",
+      "files": {
+        "ca_official_source_pack_v2.jsonl": {
+          "records": 122,
+          "description": "Core official program, form, rights, appeals, and transition targets."
+        },
+        "ca_directory_targets_v1.jsonl": {
+          "records": 87,
+          "description": "Exact local and statewide directory targets, including 58 counties and 21 Regional Centers."
+        },
+        "ca_source_repair_ledger_v2.jsonl": {
+          "records": 11,
+          "description": "Repair, author-first, and blocked items."
+        },
+        "ca_source_coverage_matrix_v1.csv": {
+          "records": 17,
+          "description": "Coverage matrix by information domain."
+        }
+      },
+      "core_status_counts": {
+        "verified_target": 111,
+        "official_link_fetch_pending": 8,
+        "blocked_fetch_challenge": 2,
+        "blocked_http_403": 1
+      },
+      "directory_status_counts": {
+        "official_directory_link": 87
+      },
+      "repair_ledger_counts": {
+        "repair": 4,
+        "blocked": 2,
+        "author_first": 5
+      },
+      "publication_rule": "No record or field is publication-ready until fetched evidence is parsed, cited at field level, validated, and accepted by the completeness gate."
+    },
+    "runOptions": {
+      "runId": "ca-v3",
+      "limit": 0,
+      "offset": 0,
+      "resume": false,
+      "maxConcurrency": 4,
+      "maxResponseBytes": 15728640
+    }
+  },
+  "allAcceptedReconciled": true,
+  "unresolvedRecordsVisible": true
+}

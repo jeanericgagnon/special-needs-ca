@@ -604,7 +604,10 @@ export function summaryRecord(candidate) {
 }
 
 export function familyDirName(family) {
-  return slugify(family || 'unknown-family');
+  return String(family || 'unknown_family')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '_')
+    .replace(/^_+|_+$/g, '');
 }
 
 export function mergePreservedStagingFields(tableName, nextRow, existingRow) {

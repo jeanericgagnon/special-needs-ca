@@ -20,6 +20,31 @@ assert.equal(
 );
 
 assert.equal(
+  isFalseHttp200Challenge(
+    {
+      ...challengeRow,
+      byte_count: 32000,
+    },
+    `
+      <html>
+        <head><title>IHSS Overview</title></head>
+        <body>
+          <header>Maintenance history mentions request unsuccessful test cases.</header>
+          <main>
+            <h1>In-Home Supportive Services</h1>
+            <h2>Apply for IHSS</h2>
+            <p>IHSS provides services to eligible Californians and includes county intake information, fact sheets, and forms.</p>
+          </main>
+        </body>
+      </html>
+    `,
+    1,
+  ),
+  false,
+  'Valid IHSS pages should not be false-blocked when meaningful content is present',
+);
+
+assert.equal(
   isFalseHttp200Challenge(challengeRow, '<html><body></body></html>', 4),
   true,
   'Repeated suspicious 212-byte bodies should be blocked',
@@ -99,6 +124,7 @@ console.log(JSON.stringify({
   ok: true,
   tested: [
     'http_200_incapsula_blocked',
+    'valid_ihss_page_not_false_blocked',
     'repeated_212_hash_blocked',
     'blank_challenge_not_parse_ready',
     'ihss_jobs_rejected',

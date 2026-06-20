@@ -29,6 +29,21 @@ const CHALLENGE_MARKERS = [
   '/_incapsula_resource',
 ];
 
+const STRONG_CHALLENGE_PATTERNS = [
+  /incapsula incident id/i,
+  /request unsuccessful/i,
+  /attention required/i,
+  /verify (?:you are )?human/i,
+  /captcha/i,
+  /access denied/i,
+  /cloudflare/i,
+  /temporarily unavailable/i,
+];
+
+const KNOWN_CHALLENGE_SHELL_HASHES = new Set([
+  'd02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d',
+]);
+
 const COUNTY_IHSS_POSITIVE_PATTERNS = [
   /\bihss\b/i,
   /in-?home support(?:ive)? services?/i,
@@ -399,9 +414,20 @@ function isChallenge200Html(fetchEntry) {
   if (Number(fetchEntry?.httpStatus || 0) !== 200) return false;
   const lowerText = String(fetchEntry?.bodyText || '').toLowerCase();
   const evidence = extractHtmlEvidence(fetchEntry?.bodyText || '', fetchEntry?.finalUrl || fetchEntry?.url || '');
-  const missingStructure = !evidence.title && !evidence.h1 && looksBlankOrThinHtml(evidence.textSample);
-  if (isChallengeLike(lowerText)) return true;
-  if (missingStructure) return true;
+  const strippedText = stripTags(fetchEntry?.bodyText || '');
+  const hasMeaningfulStructure = Boolean(
+    (evidence.title && evidence.title.length >= 5)
+    || (evidence.h1 && evidence.h1.length >= 5)
+    || (evidence.h2s || []).some((item) => item && item.length >= 5)
+  );
+  const hasSubstantiveText = strippedText.length >= 250 || evidence.textSample.length >= 180;
+  const missingStructure = !hasMeaningfulStructure && looksBlankOrThinHtml(evidence.textSample);
+  const strongChallengeMarker = STRONG_CHALLENGE_PATTERNS.some((pattern) => pattern.test(lowerText));
+  const knownChallengeShell = KNOWN_CHALLENGE_SHELL_HASHES.has(String(fetchEntry?.contentHash || ''));
+
+  if (knownChallengeShell) return true;
+  if (strongChallengeMarker && !(hasMeaningfulStructure && hasSubstantiveText)) return true;
+  if (missingStructure && Number(fetchEntry?.byteCount || 0) <= 512) return true;
   return false;
 }
 
@@ -676,16 +702,22 @@ export function buildParseAdapterRow(record, outputRow) {
     sourceRole: record.source_role,
     sourceUrl: record.url,
     finalUrl: outputRow.final_url,
-    provenanceUrl: record.provenance_url || '',
+    provenanceUrl: record.provenance_url || outputRow.final_url || record.url,
     authority: record.authority,
     agency: record.agency,
     sourceName: `${record.agency} ${record.source_role}`.trim(),
     savedPath: outputRow.saved_path,
+    artifactPath: outputRow.saved_path
+      ? path.relative(process.cwd(), outputRow.saved_path).replace(/\\/g, '/')
+      : '',
     batchClass: record.batch_class,
     parserClass: outputRow.parser_class,
     contentType: outputRow.content_type,
     entityId: record.entity_id,
     originalStatus: record.status,
+    fetchedAt: outputRow.fetched_at,
+    sha256: outputRow.sha256,
+    byteCount: outputRow.byte_count,
   };
 }
 

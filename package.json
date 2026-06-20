@@ -66,6 +66,7 @@
     "run:source-acquisition-promote": "node scripts/run-source-acquisition-promote.mjs",
     "run:ca-source-pack-lightweight": "node scripts/run-ca-source-pack-lightweight.mjs",
     "run:ca-v1-data-quality-remediation": "node scripts/run-ca-v1-data-quality-remediation.mjs",
+    "run:ca-v3-post-stage-audit": "node scripts/run-ca-v3-post-stage-audit.mjs",
     "audit:ca-source-pack-post-stage": "node scripts/audit-ca-source-pack-post-stage.mjs",
     "run:forms-fallback-source-acquisition": "node scripts/run-forms-fallback-source-acquisition.mjs",
     "run:next-forms-fallback-step": "node scripts/run-next-forms-fallback-step.mjs",

@@ -645,12 +645,20 @@ export function parseCommonExtraction({ row, html }) {
   return {
     sourceUrl: row.sourceUrl,
     finalUrl: row.finalUrl || row.sourceUrl,
+    provenanceUrl: row.provenanceUrl || row.finalUrl || row.sourceUrl,
     stateId: row.stateId,
     gapFamily: row.gapFamily,
     targetTable: row.targetTable,
     sourceQueue: row.sourceQueue,
     sourceName: row.sourceName || '',
+    sourceRole: row.sourceRole || '',
+    authority: row.authority || '',
+    agency: row.agency || '',
     savedPath: row.savedPath,
+    artifactPath: row.artifactPath || '',
+    sha256: row.sha256 || '',
+    fetchedAt: row.fetchedAt || '',
+    byteCount: row.byteCount || 0,
     contentType: row.contentType,
     pageTitle: title,
     metaDescription: parseMetaDescription(html),
@@ -785,6 +793,8 @@ export function parseFamilyRecord(row, html) {
   const recordId = [
     row.stateId || 'unknown',
     row.gapFamily || 'unknown',
+    row.entityId || 'unknown',
+    row.sourceRole || 'unknown',
     path.basename(row.savedPath || '', path.extname(row.savedPath || '')),
   ].join('|');
 
@@ -806,6 +816,24 @@ export function parseFamilyRecord(row, html) {
   };
 }
 
+function missingRequiredProvenance(record) {
+  const required = [
+    ['sourceUrl', record.sourceUrl],
+    ['finalUrl', record.finalUrl],
+    ['provenanceUrl', record.provenanceUrl],
+    ['sourceRole', record.sourceRole],
+    ['authority', record.authority],
+    ['agency', record.agency],
+    ['savedPath', record.savedPath],
+    ['artifactPath', record.artifactPath],
+    ['sha256', record.sha256],
+    ['fetchedAt', record.fetchedAt],
+  ];
+  return required
+    .filter(([, value]) => !String(value || '').trim())
+    .map(([field]) => `missing_provenance_${field}`);
+}
+
 export function validateFamilyRecord(record) {
   const reasons = [];
   const addReason = (reason) => {
@@ -814,6 +842,7 @@ export function validateFamilyRecord(record) {
   if (!record.pageTitle && !record.h1s?.length) reasons.push('missing_title_and_heading');
   if (!record.finalUrl) reasons.push('missing_final_url');
   if (!record.savedPath) reasons.push('missing_saved_path');
+  for (const reason of missingRequiredProvenance(record)) addReason(reason);
 
   if (record.gapFamily === 'nonprofit_support') {
     const nonprofitName = record.familyExtraction.organizationName || record.h1s?.[0] || record.pageTitle || '';

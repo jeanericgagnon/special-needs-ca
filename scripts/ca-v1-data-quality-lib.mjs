@@ -14,6 +14,20 @@ export const CHALLENGE_MARKERS = [
   'incident id',
 ];
 
+const STRONG_CHALLENGE_PATTERNS = [
+  /incapsula incident id/i,
+  /request unsuccessful/i,
+  /attention required/i,
+  /verify (?:you are )?human/i,
+  /captcha/i,
+  /access denied/i,
+  /cloudflare/i,
+];
+
+const KNOWN_CHALLENGE_SHELL_HASHES = new Set([
+  'd02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d',
+]);
+
 const COUNTY_IHSS_POSITIVE_PATTERNS = [
   /\bihss\b/i,
   /in-?home support(?:ive)? services?/i,
@@ -106,6 +120,7 @@ export function extractHtmlSignals(html) {
   return {
     title: firstMatch(/<title[^>]*>([\s\S]*?)<\/title>/i, html),
     h1: firstMatch(/<h1[^>]*>([\s\S]*?)<\/h1>/i, html),
+    h2s: Array.from(String(html || '').matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/gi)).map((match) => stripHtml(match[1] || '')).filter(Boolean).slice(0, 5),
     textSample: stripHtml(html).slice(0, 400),
   };
 }
@@ -118,11 +133,18 @@ export function isChallengeText(text) {
 export function isFalseHttp200Challenge(row, html, repeatedHashCount = 0) {
   if (row.http_status !== 200 || row.parser_class !== 'html') return false;
   const signals = extractHtmlSignals(html);
-  const noMeaningfulContent = !signals.title && !signals.h1 && signals.textSample.length < 80;
+  const hasMeaningfulStructure = Boolean(
+    (signals.title && signals.title.length >= 5)
+    || (signals.h1 && signals.h1.length >= 5)
+    || (signals.h2s || []).some((item) => item.length >= 5)
+  );
+  const noMeaningfulContent = !hasMeaningfulStructure && signals.textSample.length < 80;
   const tinyBlankBody = Number(row.byte_count || 0) <= 400 && noMeaningfulContent;
-  const suspiciousText = isChallengeText(html) || isChallengeText(signals.title) || isChallengeText(signals.textSample);
+  const suspiciousText = STRONG_CHALLENGE_PATTERNS.some((pattern) => pattern.test(String(html || '')));
+  const meaningfulPage = hasMeaningfulStructure && signals.textSample.length >= 180;
   const repeatedSuspiciousHash = Number(row.byte_count || 0) <= 400 && repeatedHashCount >= 3;
-  return suspiciousText || tinyBlankBody || repeatedSuspiciousHash;
+  const knownChallengeShell = KNOWN_CHALLENGE_SHELL_HASHES.has(String(row.sha256 || ''));
+  return knownChallengeShell || (suspiciousText && !meaningfulPage) || tinyBlankBody || repeatedSuspiciousHash;
 }
 
 export function validateCountyIhssCandidate(candidate) {
@@ -198,4 +220,3 @@ export function classifyRepairLane(row, reason) {
   if (row.http_status === 0) return 'official_alternate_page';
   return 'corrected_canonical_url';
 }
-

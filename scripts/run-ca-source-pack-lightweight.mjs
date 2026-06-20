@@ -29,7 +29,7 @@ function parseArgs(argv) {
     retryDelayMs: 1000,
     requestTimeoutMs: 20000,
     bodyTimeoutMs: 20000,
-    maxResponseBytes: 10 * 1024 * 1024,
+    maxResponseBytes: 15 * 1024 * 1024,
     limit: 0,
     offset: 0,
     resume: false,
