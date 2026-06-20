@@ -126,12 +126,27 @@ try {
     'failed',
     'failed portals should be failed, not skipped_portal',
   );
+  assert.equal(
+    classifyOutcome(makeRecord(), { ok: true, parserClass: 'html', errorCode: 'blocked_fetch_challenge' }),
+    'blocked',
+    'challenge-like HTTP 200 pages should be blocked',
+  );
 
   const discoveryCandidate = selectSameDomainDiscoveryCandidate(
     'https://county.example.org',
     '<a href="/about">About</a><a href="/ihss/apply">Apply for IHSS</a><a href="/contact">Contact us</a>',
+    makeRecord({ batch_class: 'directory_root', source_role: 'county_ihss_entry_from_cdss_directory' }),
   );
   assert.equal(discoveryCandidate?.url, 'https://county.example.org/ihss/apply');
+  assert.equal(
+    selectSameDomainDiscoveryCandidate(
+      'https://county.example.org',
+      '<a href="/jobs">Apply for a Job</a><a href="/building">Building Applications</a>',
+      makeRecord({ batch_class: 'directory_root', source_role: 'county_ihss_entry_from_cdss_directory' }),
+    ),
+    null,
+    'county IHSS discovery should reject non-IHSS pages',
+  );
 
   {
     let fetchCalls = 0;
@@ -150,6 +165,20 @@ try {
     });
     assert.equal(fetchCalls, 1);
     assert.equal(summary.counts.byFetchStatus.fetched, 1, 'content-type html should override .pdf URL extension');
+  }
+
+  {
+    const record = makeRecord({ entity_id: 'challenge-200', url: 'https://example.org/challenge' });
+    const { summary } = await runWithTempContext({
+      inputRows: [record],
+      fetchImpl: async (url) => makeResponse({
+        url,
+        status: 200,
+        contentType: 'text/html; charset=utf-8',
+        body: '<html><body>Request unsuccessful. Incapsula incident ID.</body></html>',
+      }),
+    });
+    assert.equal(summary.outputs.blockedCount, 1, 'Incapsula-style 200 responses should be blocked');
   }
 
   {
@@ -314,6 +343,13 @@ try {
         if (url.includes('secure') || url.includes('login')) {
           return makeResponse({ url, status: 403 });
         }
+        if (/\.pdf(?:[?#].*)?$/i.test(url)) {
+          return makeResponse({
+            url,
+            contentType: 'application/pdf',
+            body: Buffer.from('%PDF-1.4 fake pdf body'),
+          });
+        }
         return makeResponse({
           url,
           body: '<html><head><title>California Target</title></head><body><h1>California Target</h1><a href="/contact">Contact</a></body></html>',
@@ -332,10 +368,15 @@ try {
     assert.equal(inputRows.length, 209, 'fixture source pack should still contain 209 rows');
     assert.equal(results.length + failures.length + blocked.length, 209, 'all 209 source-pack rows should be assigned exactly once');
     assert.equal(summary.outputs.categoryTotal, 209, 'summary category total should match all input rows');
+    assert.equal(summary.outputs.browserAssistedCount, 30, '30 false DHCS rows should move to the browser-assisted lane');
     const discovered = fs.existsSync(path.join(outputDir, 'ca_discovered_target_queue_v1.jsonl'))
       ? readJsonl(path.join(outputDir, 'ca_discovered_target_queue_v1.jsonl'))
       : [];
     assert.equal(discovered.every((row) => row.status === 'discovered_exact_target'), true, 'discovered rows should be emitted as queued exact targets');
+    const discoveredReview = fs.existsSync(path.join(outputDir, 'ca_discovered_target_review_queue_v1.jsonl'))
+      ? readJsonl(path.join(outputDir, 'ca_discovered_target_review_queue_v1.jsonl'))
+      : [];
+    assert.equal(discoveredReview.every((row) => row.review_status === 'human_review_required'), true, 'discovered targets should require human review');
   }
 
   console.log(JSON.stringify({
@@ -345,10 +386,12 @@ try {
       'url_normalization',
       'failed_portal_classification',
       'blocked_portal_classification',
+      'challenge_http_200_classification',
       'content_type_overrides_extension',
       'docx_xlsx_binary_handling',
       'xlsx_404_failed_not_challenge',
       'duplicate_url_directory_mode',
+      'county_ihss_negative_discovery_filter',
       'checkpoint_resume',
       'raw_response_and_sha256',
       'all_209_rows_assigned_once',

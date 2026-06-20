@@ -17,6 +17,37 @@ export const DIRECTORY_DISCOVERY_KEYWORDS = [
   'regional center',
 ];
 
+const CHALLENGE_MARKERS = [
+  'captcha',
+  'verify you are human',
+  'attention required',
+  'cloudflare',
+  'request unsuccessful',
+  'access denied',
+  'temporarily unavailable',
+  'incapsula',
+  '/_incapsula_resource',
+];
+
+const COUNTY_IHSS_POSITIVE_PATTERNS = [
+  /\bihss\b/i,
+  /in-?home support(?:ive)? services?/i,
+  /aging and adult services/i,
+  /adult services/i,
+  /disability assistance/i,
+  /provider enrollment/i,
+];
+
+const COUNTY_IHSS_NEGATIVE_PATTERNS = [
+  /\btax\b/i,
+  /employment|careers|job(s)?/i,
+  /building|safety|permit/i,
+  /election|poll worker|voting/i,
+  /environmental health/i,
+  /assessor|assessment appeals?/i,
+  /clerk[- ]recorder/i,
+];
+
 const HTML_CONTENT_TYPE_PATTERNS = [
   'text/html',
   'application/xhtml+xml',
@@ -204,7 +235,26 @@ function candidateScore(url, text) {
   ), 0);
 }
 
-export function selectSameDomainDiscoveryCandidate(baseUrl, html) {
+function isCountyIhssDirectoryRecord(record) {
+  return /county_ihss_entry_from_cdss_directory/i.test(`${record?.source_role || ''}`);
+}
+
+function scoreCandidateForRecord(record, resolved, text) {
+  if (isCountyIhssDirectoryRecord(record)) {
+    const haystack = `${resolved} ${text}`.toLowerCase();
+    const hasPositive = COUNTY_IHSS_POSITIVE_PATTERNS.some((pattern) => pattern.test(haystack));
+    const hasNegative = COUNTY_IHSS_NEGATIVE_PATTERNS.some((pattern) => pattern.test(haystack));
+    if (!hasPositive || hasNegative) return 0;
+    let score = 10;
+    if (/apply/i.test(haystack)) score += 3;
+    if (/provider/i.test(haystack)) score += 2;
+    if (/contact/i.test(haystack)) score += 1;
+    return score;
+  }
+  return candidateScore(resolved, text);
+}
+
+export function selectSameDomainDiscoveryCandidate(baseUrl, html, record = {}) {
   const baseDomain = domainFor(baseUrl);
   const candidates = [];
   const hrefPattern = /<a[^>]+href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;
@@ -215,7 +265,7 @@ export function selectSameDomainDiscoveryCandidate(baseUrl, html) {
     if (resolved) {
       const resolvedDomain = domainFor(resolved);
       if (resolvedDomain === baseDomain && normalizeUrl(resolved) !== normalizeUrl(baseUrl)) {
-        const score = candidateScore(resolved, text);
+        const score = scoreCandidateForRecord(record, resolved, text);
         if (score > 0) {
           candidates.push({ url: resolved, text, score });
         }
@@ -334,15 +384,25 @@ function shouldRetryResponse(status) {
 
 function isChallengeLike(text) {
   const haystack = String(text || '').toLowerCase();
-  return [
-    'captcha',
-    'verify you are human',
-    'attention required',
-    'cloudflare',
-    'request unsuccessful',
-    'access denied',
-    'temporarily unavailable',
-  ].some((marker) => haystack.includes(marker));
+  return CHALLENGE_MARKERS.some((marker) => haystack.includes(marker));
+}
+
+function looksBlankOrThinHtml(text) {
+  const stripped = String(text || '')
+    .replace(/\s+/g, ' ')
+    .trim();
+  return stripped.length < 80;
+}
+
+function isChallenge200Html(fetchEntry) {
+  if (fetchEntry?.parserClass !== 'html') return false;
+  if (Number(fetchEntry?.httpStatus || 0) !== 200) return false;
+  const lowerText = String(fetchEntry?.bodyText || '').toLowerCase();
+  const evidence = extractHtmlEvidence(fetchEntry?.bodyText || '', fetchEntry?.finalUrl || fetchEntry?.url || '');
+  const missingStructure = !evidence.title && !evidence.h1 && looksBlankOrThinHtml(evidence.textSample);
+  if (isChallengeLike(lowerText)) return true;
+  if (missingStructure) return true;
+  return false;
 }
 
 function decodeBodyToText(bodyBuffer) {
@@ -395,9 +455,13 @@ function serializeCacheEntry(cacheEntry) {
 }
 
 function restoreCacheEntry(cacheEntry) {
+  let bodyBuffer = null;
+  if (cacheEntry?.savedPath && fs.existsSync(cacheEntry.savedPath)) {
+    bodyBuffer = fs.readFileSync(cacheEntry.savedPath);
+  }
   return {
     ...cacheEntry,
-    bodyBuffer: null,
+    bodyBuffer,
   };
 }
 
@@ -488,6 +552,10 @@ export function buildBlockedErrorCode(record, fetchEntry) {
     return 'blocked_fetch_challenge';
   }
 
+  if (isChallenge200Html(fetchEntry)) {
+    return 'blocked_fetch_challenge';
+  }
+
   if (isChallengeLike(lowerText) && (status === 401 || status === 429)) {
     return 'blocked_fetch_challenge';
   }
@@ -525,12 +593,12 @@ export async function fetchWithStatusRetry(record, options = {}, fetchImpl = glo
       const bodyText = (result.parserClass === 'html' || result.parserClass === 'text')
         ? decodeBodyToText(result.bodyBuffer)
         : '';
-      const errorCode = !result.ok ? buildBlockedErrorCode(record, { ...result, bodyText }) : '';
+      const errorCode = buildBlockedErrorCode(record, { ...result, bodyText });
       lastResult = {
         ...result,
         bodyText,
         errorCode,
-        errorMessage: result.ok ? '' : `http_${result.httpStatus}`,
+        errorMessage: errorCode ? errorCode : result.ok ? '' : `http_${result.httpStatus}`,
       };
       if (shouldRetryResponse(result.httpStatus) && attempt < maxAttempts) {
         await wait(Number(options.retryDelayMs ?? 1000));
@@ -614,9 +682,31 @@ export function buildParseAdapterRow(record, outputRow) {
     sourceName: `${record.agency} ${record.source_role}`.trim(),
     savedPath: outputRow.saved_path,
     batchClass: record.batch_class,
+    parserClass: outputRow.parser_class,
+    contentType: outputRow.content_type,
     entityId: record.entity_id,
     originalStatus: record.status,
   };
+}
+
+function isCaliforniaDhcsAgency(record) {
+  return /department of health care services|dhcs/i.test(`${record.agency || ''} ${record.entity_id || ''} ${record.source_role || ''}`);
+}
+
+function isDhcsDirectParseRole(record) {
+  return new Set([
+    'fair_hearing_and_aid_paid_pending',
+    'fee_for_service_complaint',
+    'fee_for_service_appeal',
+  ]).has(String(record.source_role || ''));
+}
+
+function shouldRouteToBrowserAssistedAuthoring(record, row) {
+  if (!isCaliforniaDhcsAgency(record)) return false;
+  if (isDhcsDirectParseRole(record)) return false;
+  if (row.parser_class === 'pdf') return false;
+  if (row.fetch_status === 'skipped_portal') return false;
+  return ['fetched', 'fetched_unparsed', 'blocked', 'failed'].includes(row.fetch_status);
 }
 
 function buildDiscoveredTargetRow(record, candidate, outputRow) {
@@ -637,9 +727,15 @@ function buildDiscoveredTargetRow(record, candidate, outputRow) {
 }
 
 export function buildRecordOutcome(record, fetchEntry) {
-  const fetchStatus = classifyOutcome(record, fetchEntry);
+  const effectiveBodyText = fetchEntry.bodyText || (
+    fetchEntry.bodyBuffer && (fetchEntry.parserClass === 'html' || fetchEntry.parserClass === 'text')
+      ? decodeBodyToText(fetchEntry.bodyBuffer)
+      : ''
+  );
+  const effectiveErrorCode = fetchEntry.errorCode || buildBlockedErrorCode(record, { ...fetchEntry, bodyText: effectiveBodyText });
+  const fetchStatus = classifyOutcome(record, { ...fetchEntry, errorCode: effectiveErrorCode });
   const evidence = (fetchEntry.ok && fetchEntry.parserClass === 'html')
-    ? extractHtmlEvidence(fetchEntry.bodyText || '', fetchEntry.finalUrl || record.url)
+    ? extractHtmlEvidence(effectiveBodyText || '', fetchEntry.finalUrl || record.url)
     : {
       title: '',
       h1: '',
@@ -654,7 +750,7 @@ export function buildRecordOutcome(record, fetchEntry) {
     && fetchEntry.parserClass === 'html'
     && record.batch_class === 'directory_root'
   )
-    ? selectSameDomainDiscoveryCandidate(fetchEntry.finalUrl || record.url, fetchEntry.bodyText || '')
+    ? selectSameDomainDiscoveryCandidate(fetchEntry.finalUrl || record.url, effectiveBodyText || '', record)
     : null;
 
   return {
@@ -671,7 +767,7 @@ export function buildRecordOutcome(record, fetchEntry) {
       : fetchEntry.parserClass === 'portal'
         ? 'portal-skip'
         : `${fetchEntry.parserClass}-metadata-only`,
-    errorCode: fetchEntry.errorCode || '',
+    errorCode: effectiveErrorCode || '',
     errorMessage: fetchEntry.errorMessage || '',
     evidenceTitle: evidence.title,
     evidenceH1: evidence.h1,
@@ -766,8 +862,57 @@ function buildOutputsFromCompleted(completedRows, repairLedger) {
     }
   }
   const discoveredTargets = Array.from(discoveredMap.values());
-  const parseAdapterRows = completedRows
-    .filter((row) => row.fetch_status === 'fetched' && row.parser_class === 'html' && row.saved_path)
+  const parseAdapterCandidateRows = completedRows
+    .filter((row) => (
+      row.saved_path
+      && (
+        (row.fetch_status === 'fetched' && row.parser_class === 'html')
+        || (row.fetch_status === 'fetched_unparsed' && row.parser_class === 'pdf')
+      )
+    ));
+  const browserAssistedAuthoringRows = completedRows
+    .filter((row) => shouldRouteToBrowserAssistedAuthoring({
+      state: row.state,
+      entity_id: row.entity_id,
+      source_role: row.source_role,
+      authority: row.authority,
+      agency: row.agency,
+      status: row.original_status,
+      batch_class: row.batch_class,
+      provenance_url: row.provenance_url,
+      url: row.url,
+    }, row))
+    .map((row) => ({
+      runId: row.run_id,
+      state: row.state,
+      entity_id: row.entity_id,
+      source_role: row.source_role,
+      authority: row.authority,
+      agency: row.agency,
+      source_url: row.url,
+      final_url: row.final_url,
+      saved_path: row.saved_path,
+      parser_class: row.parser_class,
+      gap_family: inferGapFamily({
+        entity_id: row.entity_id,
+        source_role: row.source_role,
+        batch_class: row.batch_class,
+      }),
+      next_lane: 'author_browser_assisted',
+      reason: 'dhcs_index_or_directory_requires_author_browser_assisted_review',
+    }));
+  const parseAdapterRows = parseAdapterCandidateRows
+    .filter((row) => !shouldRouteToBrowserAssistedAuthoring({
+      state: row.state,
+      entity_id: row.entity_id,
+      source_role: row.source_role,
+      authority: row.authority,
+      agency: row.agency,
+      status: row.original_status,
+      batch_class: row.batch_class,
+      provenance_url: row.provenance_url,
+      url: row.url,
+    }, row))
     .map((row) => buildParseAdapterRow({
       state: row.state,
       entity_id: row.entity_id,
@@ -787,6 +932,7 @@ function buildOutputsFromCompleted(completedRows, repairLedger) {
     repairTargets,
     authorFirstTargets,
     discoveredTargets,
+    browserAssistedAuthoringRows,
     parseAdapterRows,
   };
 }
@@ -800,6 +946,12 @@ function writeCheckpointOutputs(runContext) {
   writeJsonl(runContext.outputPaths.repairPath, outputs.repairTargets);
   writeJsonl(runContext.outputPaths.authorFirstPath, outputs.authorFirstTargets);
   writeJsonl(runContext.outputPaths.discoveredPath, outputs.discoveredTargets);
+  writeJsonl(runContext.outputPaths.discoveredReviewPath, outputs.discoveredTargets.map((row) => ({
+    ...row,
+    review_status: 'human_review_required',
+    promotion_status: 'do_not_promote_without_review',
+  })));
+  writeJsonl(runContext.outputPaths.browserAssistedPath, outputs.browserAssistedAuthoringRows);
   writeJson(runContext.outputPaths.parseAdapterPath, outputs.parseAdapterRows);
 
   const summary = {
@@ -823,6 +975,8 @@ function writeCheckpointOutputs(runContext) {
       repairPath: runContext.outputPaths.repairPath,
       authorFirstPath: runContext.outputPaths.authorFirstPath,
       discoveredPath: runContext.outputPaths.discoveredPath,
+      discoveredReviewPath: runContext.outputPaths.discoveredReviewPath,
+      browserAssistedPath: runContext.outputPaths.browserAssistedPath,
       parseAdapterPath: runContext.outputPaths.parseAdapterPath,
       summaryPath: runContext.outputPaths.summaryPath,
       resultCount: outputs.results.length,
@@ -831,6 +985,7 @@ function writeCheckpointOutputs(runContext) {
       repairCount: outputs.repairTargets.length,
       authorFirstCount: outputs.authorFirstTargets.length,
       discoveredCount: outputs.discoveredTargets.length,
+      browserAssistedCount: outputs.browserAssistedAuthoringRows.length,
       parseAdapterCount: outputs.parseAdapterRows.length,
       categoryTotal: outputs.results.length + outputs.failures.length + outputs.blocked.length,
       uniqueFetchCount: Object.keys(runContext.urlCache).length,
@@ -911,6 +1066,8 @@ export async function executeSourcePackRun({
     repairPath: path.join(outputDir, 'ca_repair_targets_v1.jsonl'),
     authorFirstPath: path.join(outputDir, 'ca_author_first_targets_v1.jsonl'),
     discoveredPath: path.join(outputDir, 'ca_discovered_target_queue_v1.jsonl'),
+    discoveredReviewPath: path.join(outputDir, 'ca_discovered_target_review_queue_v1.jsonl'),
+    browserAssistedPath: path.join(followupsDir, 'author-browser-assisted.json'),
     summaryPath: path.join(outputDir, 'ca_source_completion_summary_v1.json'),
     parseAdapterPath: path.join(followupsDir, 'parse-ready-high-signal.json'),
   };

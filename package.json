@@ -65,6 +65,7 @@
     "run:source-acquisition-provider-support-followup": "node scripts/run-source-acquisition-provider-support-followup.mjs",
     "run:source-acquisition-promote": "node scripts/run-source-acquisition-promote.mjs",
     "run:ca-source-pack-lightweight": "node scripts/run-ca-source-pack-lightweight.mjs",
+    "audit:ca-source-pack-post-stage": "node scripts/audit-ca-source-pack-post-stage.mjs",
     "run:forms-fallback-source-acquisition": "node scripts/run-forms-fallback-source-acquisition.mjs",
     "run:next-forms-fallback-step": "node scripts/run-next-forms-fallback-step.mjs",
     "run:next-advocate-depth-step": "node scripts/run-next-advocate-depth-step.mjs",
