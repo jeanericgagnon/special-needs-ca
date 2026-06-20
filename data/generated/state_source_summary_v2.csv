@@ -1,0 +1,6 @@
+state,verified_state_specific_targets,verified_local_targets,unique_federal_targets_used,unresolved_critical_roles,semantic_rejection_count,http_failure_count,browser_only_count,exact_leaf_page_count,generic_root_count,duplicate_url_count,critical_roles_verified_pct
+New Mexico,0,0,5,47,69,42,0,0,0,0,0
+New Hampshire,1,0,5,46,53,63,0,0,1,0,2
+Illinois,8,0,5,37,111,3,0,7,1,3,18
+Nebraska,5,0,5,42,69,29,0,4,1,2,11
+Mississippi,4,0,5,42,79,30,0,4,0,1,9
