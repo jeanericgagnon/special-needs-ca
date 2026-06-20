@@ -1,0 +1,53 @@
+{
+  "generatedAt": "2026-06-18T19:52:28.102Z",
+  "mode": "apply",
+  "inputPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/knowledge-content-repair-decision-template-2026-06-18.json",
+  "summary": {
+    "inputRows": 7,
+    "resolvedRows": 0,
+    "deferredRows": 7,
+    "filesChanged": 2,
+    "skippedByReason": {}
+  },
+  "decisions": [
+    {
+      "id": "knowledge-medicaid-epsdt",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "id": "knowledge-nichd-cerebral-palsy",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "id": "knowledge-nichd-down-syndrome",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "id": "knowledge-parent-center-iep-overview",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "id": "knowledge-parent-center-section-504",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "id": "knowledge-nichd-autism",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "id": "knowledge-parent-center-transition-adult",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    }
+  ],
+  "outputs": {
+    "ledgerPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-state/knowledge-content-repair-ledger.json",
+    "resolutionPackPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source_packs/knowledge_content_repair_resolutions.json"
+  }
+}

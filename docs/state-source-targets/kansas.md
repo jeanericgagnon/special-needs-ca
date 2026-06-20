@@ -3,7 +3,7 @@
 This document outlines the authoritative crawler target domains, specific agencies, and extraction methods required to replace programmatic placeholders in Kansas with real, source-listed records.
 
 > [!NOTE]
-> **Category Scaffold Complete:** This state is currently mapped as a category-level scaffold (14 targets). Source-level expansion will follow in Wave 4.
+> **Provider Source Expansion Started:** This state was originally mapped as a category-level scaffold. Concrete first-party provider targets have now been added for the hospital / university clinic layer.
 
 ## 1. Domain Crawler Targets (Wave 4)
 
@@ -21,7 +21,8 @@ This document outlines the authoritative crawler target domains, specific agenci
 | **Special Education Attorneys Directory** | J. Provider and advocate directories / Attorney Directory | [copaa.org](https://www.copaa.org) | `playwright` | `iep_advocates` |
 | **Kansas Medicaid & Special Education Forms** | K. Forms and guides / Forms Library | [dhhs.kansas.gov](https://dhhs.kansas.gov/forms) | `pdf_extract` | `forms` |
 | **Kansas Vocational Rehabilitation Services** | L. Transition / adult services / Vocational Rehabilitation | [dhhs.kansas.gov](https://dhhs.kansas.gov/rehab) | `static_fetch` | `programs` |
-| **Kansas Children's Hospital Clinics** | M. Hospitals / university clinics / Hospitals | [childrenshospital.org](https://www.childrenshospital.org) | `manual_review` | `resource_providers` |
+| **Children's Mercy Kansas City** | M. Hospitals / university clinics / Hospitals | [childrensmercy.org](https://www.childrensmercy.org) | `static_fetch` | `resource_providers` |
+| **The University of Kansas Health System Pediatric Care** | M. Hospitals / university clinics / Hospital systems | [kansashealthsystem.com](https://www.kansashealthsystem.com) | `static_fetch` | `resource_providers` |
 | **Kansas Secretary of State Business Registry** | N. Data quality / verification sources / Open Data Portal | [kansas.gov](https://www.kansas.gov/business) | `playwright` | `sources` |
 
 ## 2. Detailed Category Targets
@@ -183,17 +184,30 @@ This document outlines the authoritative crawler target domains, specific agenci
 - **Last Checked:** 2026-06-13
 
 ### Category: M. Hospitals / university clinics (Hospitals)
-- **Source Name:** Kansas Children's Hospital Clinics
-- **Source URL:** [https://www.childrenshospital.org](https://www.childrenshospital.org)
-- **Domain:** `childrenshospital.org`
+- **Source Name:** Children's Mercy Kansas City
+- **Source URL:** [https://www.childrensmercy.org](https://www.childrensmercy.org)
+- **Domain:** `childrensmercy.org`
 - **Target Table:** `resource_providers`
 - **Expected Fields:** `name, phone, address`
-- **Crawl Method:** `manual_review`
+- **Crawl Method:** `static_fetch`
+- **Robots.txt Status:** `allowed`
+- **Terms Risk:** `low`
+- **Priority:** 1
+- **Notes:** Concrete first-party pediatric hospital target serving the Kansas City region and Kansas families.
+- **Last Checked:** 2026-06-17
+
+### Category: M. Hospitals / university clinics (Hospital systems)
+- **Source Name:** The University of Kansas Health System Pediatric Care
+- **Source URL:** [https://www.kansashealthsystem.com](https://www.kansashealthsystem.com)
+- **Domain:** `kansashealthsystem.com`
+- **Target Table:** `resource_providers`
+- **Expected Fields:** `name, phone, address`
+- **Crawl Method:** `static_fetch`
 - **Robots.txt Status:** `allowed`
 - **Terms Risk:** `low`
 - **Priority:** 2
-- **Notes:** Initial category-level scaffold source target for Kansas.
-- **Last Checked:** 2026-06-13
+- **Notes:** Concrete first-party academic health system target for Kansas pediatric specialty care.
+- **Last Checked:** 2026-06-17
 
 ### Category: N. Data quality / verification sources (Open Data Portal)
 - **Source Name:** Kansas Secretary of State Business Registry
@@ -207,4 +221,3 @@ This document outlines the authoritative crawler target domains, specific agenci
 - **Priority:** 2
 - **Notes:** Initial category-level scaffold source target for Kansas.
 - **Last Checked:** 2026-06-13
-

@@ -1,0 +1,28 @@
+{
+  "generatedAt": "2026-06-17T20:12:13.709Z",
+  "mode": "dry-run",
+  "stateFilter": null,
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 2,
+    "appliedStates": 1,
+    "filesChanged": 0,
+    "skippedByReason": {
+      "missing_reviewed_by": 1
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "north-carolina",
+      "sourceName": "North Carolina Regional Special Education Support",
+      "status": "dry_run_ready",
+      "targetUrl": "https://www.dpi.nc.gov/districts-schools/district-operations/financial-and-business-services/demographics-and-enrollment/school-district-maps"
+    },
+    {
+      "stateId": "florida",
+      "sourceName": "Florida Early Steps Local Directories",
+      "status": "skipped_missing_reviewed_by",
+      "targetUrl": ""
+    }
+  ]
+}

@@ -1,0 +1,400 @@
+{
+  "generatedAt": "2026-06-17",
+  "registryEntryCount": 1342,
+  "projected10kPages": 15968,
+  "topEntries": [
+    {
+      "id": "registry-parentcenterhub-org",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php",
+      "targetType": "network_directory",
+      "scrapeStrategy": "affiliate_discovery",
+      "sourcePageType": "general",
+      "rowCount": 4691,
+      "trustedMissingRows": 4691,
+      "stateIds": [
+        "alabama",
+        "alaska",
+        "arizona",
+        "arkansas",
+        "california",
+        "colorado",
+        "connecticut",
+        "delaware",
+        "florida",
+        "georgia",
+        "hawaii",
+        "idaho",
+        "illinois",
+        "indiana",
+        "iowa",
+        "kansas",
+        "kentucky",
+        "louisiana",
+        "maine",
+        "maryland",
+        "massachusetts",
+        "michigan",
+        "minnesota",
+        "mississippi",
+        "missouri",
+        "montana",
+        "nebraska",
+        "nevada",
+        "new-hampshire",
+        "new-jersey",
+        "new-mexico",
+        "new-york",
+        "north-carolina",
+        "north-dakota",
+        "ohio",
+        "oklahoma",
+        "oregon",
+        "pennsylvania",
+        "rhode-island",
+        "south-carolina",
+        "south-dakota",
+        "tennessee",
+        "texas",
+        "utah",
+        "vermont",
+        "virginia",
+        "washington",
+        "west-virginia",
+        "wisconsin",
+        "wyoming"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 10382
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-dallas-fort-worth",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-dallas-fort-worth",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 254,
+      "trustedMissingRows": 254,
+      "stateIds": [
+        "texas"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3508
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-dallas-fort-worth",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-dallas-fort-worth/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 254,
+      "trustedMissingRows": 254,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3508
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-greater-beaumont",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-greater-beaumont",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 254,
+      "trustedMissingRows": 254,
+      "stateIds": [
+        "texas"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3508
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-greater-beaumont",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-greater-beaumont/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 254,
+      "trustedMissingRows": 254,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3508
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-katy",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-katy",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 254,
+      "trustedMissingRows": 254,
+      "stateIds": [
+        "texas"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3508
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-katy",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-katy/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 254,
+      "trustedMissingRows": 254,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3508
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-the-gulf-coast",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-the-gulf-coast",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 254,
+      "trustedMissingRows": 254,
+      "stateIds": [
+        "texas"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3508
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-the-gulf-coast",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-the-gulf-coast/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 254,
+      "trustedMissingRows": 254,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3508
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-bryan-college-station",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-bryan-college-station",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 248,
+      "trustedMissingRows": 248,
+      "stateIds": [
+        "texas"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3496
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-bryan-college-station",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-bryan-college-station/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 248,
+      "trustedMissingRows": 248,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3496
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-san-antonio",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-san-antonio",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 248,
+      "trustedMissingRows": 248,
+      "stateIds": [
+        "texas"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3496
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-san-antonio",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-san-antonio/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 248,
+      "trustedMissingRows": 248,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3496
+    },
+    {
+      "id": "registry-texasautismsociety-org",
+      "familyKey": "texasautismsociety.org",
+      "host": "texasautismsociety.org",
+      "seedUrl": "https://www.texasautismsociety.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 509,
+      "trustedMissingRows": 509,
+      "stateIds": [
+        "texas"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3418
+    },
+    {
+      "id": "registry-txp2p-org",
+      "familyKey": "txp2p.org",
+      "host": "txp2p.org",
+      "seedUrl": "https://www.txp2p.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 508,
+      "trustedMissingRows": 508,
+      "stateIds": [
+        "texas"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3416
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-southwest-georgia",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-southwest-georgia",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 158,
+      "trustedMissingRows": 158,
+      "stateIds": [
+        "georgia"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3316
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-southwest-georgia",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-southwest-georgia/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 158,
+      "trustedMissingRows": 158,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3316
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-northeast-georgia",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-northeast-georgia",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 153,
+      "trustedMissingRows": 153,
+      "stateIds": [
+        "georgia"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3306
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-northeast-georgia",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-northeast-georgia/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 153,
+      "trustedMissingRows": 153,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3306
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-central-kentucky",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-central-kentucky",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 120,
+      "trustedMissingRows": 120,
+      "stateIds": [
+        "kentucky"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3240
+    }
+  ]
+}

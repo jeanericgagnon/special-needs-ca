@@ -1,0 +1,512 @@
+{
+  "generatedAt": "2026-06-20",
+  "family": "dd_routing",
+  "summary": {
+    "totalStates": 50,
+    "byResolutionState": {
+      "resolved": 50
+    }
+  },
+  "rows": [
+    {
+      "family": "dd_routing",
+      "stateId": "alabama",
+      "stateName": "Alabama",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "alaska",
+      "stateName": "Alaska",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "arizona",
+      "stateName": "Arizona",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "arkansas",
+      "stateName": "Arkansas",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "california",
+      "stateName": "California",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "colorado",
+      "stateName": "Colorado",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "connecticut",
+      "stateName": "Connecticut",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "delaware",
+      "stateName": "Delaware",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "florida",
+      "stateName": "Florida",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "georgia",
+      "stateName": "Georgia",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "hawaii",
+      "stateName": "Hawaii",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "idaho",
+      "stateName": "Idaho",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "illinois",
+      "stateName": "Illinois",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "indiana",
+      "stateName": "Indiana",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "iowa",
+      "stateName": "Iowa",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "kansas",
+      "stateName": "Kansas",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "kentucky",
+      "stateName": "Kentucky",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "louisiana",
+      "stateName": "Louisiana",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "maine",
+      "stateName": "Maine",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "maryland",
+      "stateName": "Maryland",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "massachusetts",
+      "stateName": "Massachusetts",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "michigan",
+      "stateName": "Michigan",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "minnesota",
+      "stateName": "Minnesota",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "mississippi",
+      "stateName": "Mississippi",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "missouri",
+      "stateName": "Missouri",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "montana",
+      "stateName": "Montana",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "nebraska",
+      "stateName": "Nebraska",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "nevada",
+      "stateName": "Nevada",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "new-hampshire",
+      "stateName": "New Hampshire",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "new-jersey",
+      "stateName": "New Jersey",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "new-mexico",
+      "stateName": "New Mexico",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "new-york",
+      "stateName": "New York",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "north-carolina",
+      "stateName": "North Carolina",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "north-dakota",
+      "stateName": "North Dakota",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "ohio",
+      "stateName": "Ohio",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "oklahoma",
+      "stateName": "Oklahoma",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "oregon",
+      "stateName": "Oregon",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "pennsylvania",
+      "stateName": "Pennsylvania",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "rhode-island",
+      "stateName": "Rhode Island",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "south-carolina",
+      "stateName": "South Carolina",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "south-dakota",
+      "stateName": "South Dakota",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "tennessee",
+      "stateName": "Tennessee",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "texas",
+      "stateName": "Texas",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "utah",
+      "stateName": "Utah",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "vermont",
+      "stateName": "Vermont",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "virginia",
+      "stateName": "Virginia",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "washington",
+      "stateName": "Washington",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "west-virginia",
+      "stateName": "West Virginia",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "wisconsin",
+      "stateName": "Wisconsin",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "dd_routing",
+      "stateId": "wyoming",
+      "stateName": "Wyoming",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Live DD routing row exists in state_resource_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    }
+  ]
+}

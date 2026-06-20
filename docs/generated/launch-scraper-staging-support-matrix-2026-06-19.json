@@ -1,0 +1,292 @@
+{
+  "generatedAt": "2026-06-19T23:21:11.406Z",
+  "generatedDate": "2026-06-19",
+  "purpose": "Launch-family staging support matrix so it is explicit which families can stage, where they stage, and why unsupported families stop.",
+  "supportedFamilyCount": 9,
+  "unsupportedFamilyCount": 0,
+  "rows": [
+    {
+      "family": "dd_routing",
+      "stageSupported": true,
+      "stagingTable": "staging_scraped_state_resource_agencies",
+      "targetTable": "state_resource_agencies",
+      "unsupportedReason": null,
+      "stageProceedRule": "accepted validated rows exist and the family has a supported staging target",
+      "stageStopRule": "no accepted rows remain or family target is unsupported for staging",
+      "recommendedRunMode": "full_lane_when_successful",
+      "compactAcceptanceSignals": [
+        "agency heading",
+        "phone or intake contact",
+        "services or eligibility link"
+      ],
+      "truthFieldsThatMustSurvive": [
+        "sourceUrl/finalUrl",
+        "stateId",
+        "pageTitle/textSample",
+        "familyExtraction.officeName"
+      ],
+      "stageSpecificFields": [
+        "extracted_name",
+        "agency_type",
+        "counties_served",
+        "catchment_boundaries",
+        "extracted_website",
+        "extracted_phone",
+        "early_intervention_contact",
+        "agency_intake_contact",
+        "eligibility_info_page",
+        "services_page",
+        "appeals_info"
+      ]
+    },
+    {
+      "family": "programs_benefits",
+      "stageSupported": true,
+      "stagingTable": "staging_scraped_programs",
+      "targetTable": "programs",
+      "unsupportedReason": null,
+      "stageProceedRule": "accepted validated rows exist and the family has a supported staging target",
+      "stageStopRule": "no accepted rows remain or family target is unsupported for staging",
+      "recommendedRunMode": "fetch_only_first",
+      "compactAcceptanceSignals": [
+        "program heading",
+        "apply or learn-more action link or phone",
+        "official source page"
+      ],
+      "truthFieldsThatMustSurvive": [
+        "sourceUrl/finalUrl",
+        "stateId",
+        "familyExtraction.programName",
+        "textSample or metaDescription"
+      ],
+      "stageSpecificFields": [
+        "extracted_name",
+        "description",
+        "who_it_is_for",
+        "who_might_qualify",
+        "official_source_url",
+        "category",
+        "program_type",
+        "extracted_phone",
+        "extracted_email",
+        "action_url"
+      ]
+    },
+    {
+      "family": "waivers",
+      "stageSupported": true,
+      "stagingTable": "staging_scraped_programs",
+      "targetTable": "programs",
+      "unsupportedReason": null,
+      "stageProceedRule": "accepted validated rows exist and the family has a supported staging target",
+      "stageStopRule": "no accepted rows remain or family target is unsupported for staging",
+      "recommendedRunMode": "full_lane_when_successful",
+      "compactAcceptanceSignals": [
+        "waiver name",
+        "application or eligibility step link",
+        "official source page"
+      ],
+      "truthFieldsThatMustSurvive": [
+        "sourceUrl/finalUrl",
+        "stateId",
+        "familyExtraction.programName",
+        "gapFamily-as-program_type"
+      ],
+      "stageSpecificFields": [
+        "extracted_name",
+        "description",
+        "who_it_is_for",
+        "who_might_qualify",
+        "official_source_url",
+        "category",
+        "program_type",
+        "extracted_phone",
+        "extracted_email",
+        "action_url"
+      ]
+    },
+    {
+      "family": "forms_guides",
+      "stageSupported": true,
+      "stagingTable": "staging_scraped_forms",
+      "targetTable": "forms_and_guides",
+      "unsupportedReason": null,
+      "stageProceedRule": "accepted validated rows exist and the family has a supported staging target",
+      "stageStopRule": "no accepted rows remain or family target is unsupported for staging",
+      "recommendedRunMode": "fetch_only_first",
+      "compactAcceptanceSignals": [
+        "official-like source URL",
+        "program or form title",
+        "download URL or library URL"
+      ],
+      "truthFieldsThatMustSurvive": [
+        "sourceUrl/finalUrl",
+        "stateId",
+        "familyExtraction.programName",
+        "familyExtraction.officialDownloadUrl"
+      ],
+      "stageSpecificFields": [
+        "slug",
+        "program",
+        "official_download_url",
+        "who_uses_it",
+        "who_signs_it",
+        "where_to_send_it",
+        "letter_script"
+      ]
+    },
+    {
+      "family": "program_waitlists",
+      "stageSupported": true,
+      "stagingTable": "staging_scraped_waitlists",
+      "targetTable": "program_waitlists",
+      "unsupportedReason": null,
+      "stageProceedRule": "skip until validate is allowed",
+      "stageStopRule": "skip",
+      "recommendedRunMode": "author_first_only",
+      "compactAcceptanceSignals": [
+        "program or waiver name",
+        "waitlist or interest-list language",
+        "official next-step link or phone"
+      ],
+      "truthFieldsThatMustSurvive": [
+        "sourceUrl/finalUrl",
+        "stateId",
+        "familyExtraction.programName",
+        "textSample or serviceSummary",
+        "validationReasons when rejected"
+      ],
+      "stageSpecificFields": [
+        "program_id",
+        "name",
+        "duration_label",
+        "duration_months",
+        "status",
+        "description",
+        "estimate_source_url",
+        "estimate_source_type",
+        "last_checked_at"
+      ]
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stageSupported": true,
+      "stagingTable": "staging_scraped_county_offices",
+      "targetTable": "county_offices",
+      "unsupportedReason": null,
+      "stageProceedRule": "accepted validated rows exist and the family has a supported staging target",
+      "stageStopRule": "no accepted rows remain or family target is unsupported for staging",
+      "recommendedRunMode": "fetch_only_first",
+      "compactAcceptanceSignals": [
+        "office name",
+        "office phone",
+        "street address"
+      ],
+      "truthFieldsThatMustSurvive": [
+        "sourceUrl/finalUrl",
+        "stateId",
+        "familyExtraction.officeName",
+        "familyExtraction.contactPhone",
+        "familyExtraction.contactAddress"
+      ],
+      "stageSpecificFields": [
+        "extracted_name",
+        "extracted_phone",
+        "extracted_email",
+        "extracted_address",
+        "extracted_website",
+        "program_id",
+        "evidence_level"
+      ]
+    },
+    {
+      "family": "education_routing",
+      "stageSupported": true,
+      "stagingTable": "staging_scraped_regional_education_agencies",
+      "targetTable": "regional_education_agencies",
+      "unsupportedReason": null,
+      "stageProceedRule": "accepted validated rows exist and the family has a supported staging target",
+      "stageStopRule": "no accepted rows remain or family target is unsupported for staging",
+      "recommendedRunMode": "full_lane_when_successful",
+      "compactAcceptanceSignals": [
+        "district or agency identity",
+        "credible official site",
+        "phone, email, or routing page link"
+      ],
+      "truthFieldsThatMustSurvive": [
+        "sourceUrl/finalUrl",
+        "stateId",
+        "targetTable",
+        "pageTitle/textSample",
+        "phones/emails when present"
+      ],
+      "stageSpecificFields": [
+        "extracted_name",
+        "agency_type or district contact fields",
+        "counties_served",
+        "extracted_website",
+        "evidence_level",
+        "extracted_phone or spec_ed_contact_phone",
+        "spec_ed_contact_email"
+      ]
+    },
+    {
+      "family": "providers_care",
+      "stageSupported": true,
+      "stagingTable": "staging_scraped_resource_providers",
+      "targetTable": "resource_providers",
+      "unsupportedReason": null,
+      "stageProceedRule": "accepted validated rows exist and the family has a supported staging target",
+      "stageStopRule": "no accepted rows remain or family target is unsupported for staging",
+      "recommendedRunMode": "fetch_only_first",
+      "compactAcceptanceSignals": [
+        "provider or clinic name",
+        "phone or email",
+        "address or explicit location signal"
+      ],
+      "truthFieldsThatMustSurvive": [
+        "sourceUrl/finalUrl",
+        "stateId",
+        "familyExtraction.organizationName",
+        "familyExtraction.contactPhone/contactEmail/contactAddress"
+      ],
+      "stageSpecificFields": [
+        "extracted_name",
+        "categories",
+        "extracted_phone",
+        "extracted_email",
+        "extracted_address",
+        "accepts_medi_cal"
+      ]
+    },
+    {
+      "family": "knowledge_content",
+      "stageSupported": true,
+      "stagingTable": "staging_scraped_knowledge_content",
+      "targetTable": "knowledge_content",
+      "unsupportedReason": null,
+      "stageProceedRule": "accepted validated rows exist and the family has a supported staging target",
+      "stageStopRule": "no accepted rows remain or family target is unsupported for staging",
+      "recommendedRunMode": "fetch_only_first",
+      "compactAcceptanceSignals": [
+        "trusted source URL",
+        "article title",
+        "summary text at least 80 characters"
+      ],
+      "truthFieldsThatMustSurvive": [
+        "sourceUrl/finalUrl",
+        "stateId",
+        "familyExtraction.articleTitle",
+        "familyExtraction.canonicalKnowledgeUrl",
+        "familyExtraction.summaryText"
+      ],
+      "stageSpecificFields": [
+        "slug",
+        "title",
+        "content_category",
+        "canonical_url",
+        "summary"
+      ]
+    }
+  ]
+}

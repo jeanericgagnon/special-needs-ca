@@ -13,7 +13,12 @@ export async function GET() {
     const navigatorDbPath = path.resolve(process.cwd(), 'ca_disability_navigator.db');
     const db = new Database(navigatorDbPath, { readonly: true });
     // Only select school districts that have some special ed stats or contacts
-    districts = db.prepare('SELECT * FROM school_districts WHERE spec_ed_contact_phone IS NOT NULL OR inclusion_rate_pct IS NOT NULL').all() as SchoolDistrict[];
+    districts = db.prepare(`
+      SELECT *
+      FROM school_districts
+      WHERE (spec_ed_contact_phone IS NOT NULL AND TRIM(spec_ed_contact_phone) != '')
+         OR inclusion_rate_pct IS NOT NULL
+    `).all() as SchoolDistrict[];
     db.close();
   } catch {
     console.error('Failed to query school districts for sitemap:');

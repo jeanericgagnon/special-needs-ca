@@ -1,0 +1,14 @@
+{
+  "queueId": "provider_secondary_discovery_queue",
+  "generatedAt": "2026-06-17",
+  "sourceArtifact": "docs/generated/provider-source-pack-plan-2026-06-17.json",
+  "purpose": "Deterministic queue of directory-style provider targets that may be useful for secondary discovery but are not safe primary provider pull targets.",
+  "summary": {
+    "totalRows": 0,
+    "statesWithSecondaryDiscoveryTargets": 0,
+    "byState": {},
+    "byDomain": {},
+    "byReadinessLane": {}
+  },
+  "rows": []
+}

@@ -1,0 +1,219 @@
+{
+  "generatedAt": "2026-06-18T19:41:17.160Z",
+  "generatedDate": "2026-06-18",
+  "sourceReviewPacketPath": "docs/generated/provider-pull-now-review-packet-2026-06-18.json",
+  "stateId": "tennessee",
+  "unresolvedRows": 6,
+  "byActionClass": {
+    "author_alternate_first_party_target": 3,
+    "replace_domain": 3
+  },
+  "byDecisionHint": {
+    "needs_manual_research": 6
+  },
+  "topConcreteTargets": [
+    {
+      "sourceName": "Monroe Carell Jr. Children's Hospital at Vanderbilt",
+      "sourceUrl": "https://www.childrenshospitalvanderbilt.org/",
+      "priority": 1
+    },
+    {
+      "sourceName": "Le Bonheur Children's Hospital",
+      "sourceUrl": "https://www.lebonheur.org/",
+      "priority": 1
+    },
+    {
+      "sourceName": "Children's Hospital at Erlanger",
+      "sourceUrl": "https://www.childrensaterlanger.org/",
+      "priority": 1
+    }
+  ],
+  "rows": [
+    {
+      "stateId": "tennessee",
+      "actionClass": "author_alternate_first_party_target",
+      "followupReason": "access_blocked_403",
+      "sourceUrl": "https://www.dollychildrens.org/",
+      "hostname": "www.dollychildrens.org",
+      "repeatCount": 12,
+      "decisionHint": "needs_manual_research",
+      "sameDomainCandidateCount": 0,
+      "sameDomainCandidates": [],
+      "topConcreteTargets": [
+        {
+          "sourceName": "Monroe Carell Jr. Children's Hospital at Vanderbilt",
+          "sourceUrl": "https://www.childrenshospitalvanderbilt.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Le Bonheur Children's Hospital",
+          "sourceUrl": "https://www.lebonheur.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Children's Hospital at Erlanger",
+          "sourceUrl": "https://www.childrensaterlanger.org/",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "stateId": "tennessee",
+      "actionClass": "author_alternate_first_party_target",
+      "followupReason": "access_blocked_403",
+      "sourceUrl": "https://www.dollychildrens.org/about-us/our-locations/dolly-parton-childrens-hospital-main-campus",
+      "hostname": "www.dollychildrens.org",
+      "repeatCount": 2,
+      "decisionHint": "needs_manual_research",
+      "sameDomainCandidateCount": 0,
+      "sameDomainCandidates": [],
+      "topConcreteTargets": [
+        {
+          "sourceName": "Monroe Carell Jr. Children's Hospital at Vanderbilt",
+          "sourceUrl": "https://www.childrenshospitalvanderbilt.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Le Bonheur Children's Hospital",
+          "sourceUrl": "https://www.lebonheur.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Children's Hospital at Erlanger",
+          "sourceUrl": "https://www.childrensaterlanger.org/",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "stateId": "tennessee",
+      "actionClass": "author_alternate_first_party_target",
+      "followupReason": "access_blocked_403",
+      "sourceUrl": "https://www.dollychildrens.org/medical-services/specialty-clinics",
+      "hostname": "www.dollychildrens.org",
+      "repeatCount": 2,
+      "decisionHint": "needs_manual_research",
+      "sameDomainCandidateCount": 0,
+      "sameDomainCandidates": [],
+      "topConcreteTargets": [
+        {
+          "sourceName": "Monroe Carell Jr. Children's Hospital at Vanderbilt",
+          "sourceUrl": "https://www.childrenshospitalvanderbilt.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Le Bonheur Children's Hospital",
+          "sourceUrl": "https://www.lebonheur.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Children's Hospital at Erlanger",
+          "sourceUrl": "https://www.childrensaterlanger.org/",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "stateId": "tennessee",
+      "actionClass": "replace_domain",
+      "followupReason": "dns_lookup_failed",
+      "sourceUrl": "https://www.childrensaterlanger.org/",
+      "hostname": "www.childrensaterlanger.org",
+      "repeatCount": 2,
+      "decisionHint": "needs_manual_research",
+      "sameDomainCandidateCount": 1,
+      "sameDomainCandidates": [
+        {
+          "sourceName": "Children's Hospital at Erlanger",
+          "sourceUrl": "https://www.childrensaterlanger.org/",
+          "priority": 1
+        }
+      ],
+      "topConcreteTargets": [
+        {
+          "sourceName": "Monroe Carell Jr. Children's Hospital at Vanderbilt",
+          "sourceUrl": "https://www.childrenshospitalvanderbilt.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Le Bonheur Children's Hospital",
+          "sourceUrl": "https://www.lebonheur.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Children's Hospital at Erlanger",
+          "sourceUrl": "https://www.childrensaterlanger.org/",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "stateId": "tennessee",
+      "actionClass": "replace_domain",
+      "followupReason": "dns_lookup_failed",
+      "sourceUrl": "https://www.childrenshospitalvanderbilt.org/",
+      "hostname": "www.childrenshospitalvanderbilt.org",
+      "repeatCount": 2,
+      "decisionHint": "needs_manual_research",
+      "sameDomainCandidateCount": 1,
+      "sameDomainCandidates": [
+        {
+          "sourceName": "Monroe Carell Jr. Children's Hospital at Vanderbilt",
+          "sourceUrl": "https://www.childrenshospitalvanderbilt.org/",
+          "priority": 1
+        }
+      ],
+      "topConcreteTargets": [
+        {
+          "sourceName": "Monroe Carell Jr. Children's Hospital at Vanderbilt",
+          "sourceUrl": "https://www.childrenshospitalvanderbilt.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Le Bonheur Children's Hospital",
+          "sourceUrl": "https://www.lebonheur.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Children's Hospital at Erlanger",
+          "sourceUrl": "https://www.childrensaterlanger.org/",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "stateId": "tennessee",
+      "actionClass": "replace_domain",
+      "followupReason": "dns_lookup_failed",
+      "sourceUrl": "https://www.lebonheur.org/",
+      "hostname": "www.lebonheur.org",
+      "repeatCount": 2,
+      "decisionHint": "needs_manual_research",
+      "sameDomainCandidateCount": 1,
+      "sameDomainCandidates": [
+        {
+          "sourceName": "Le Bonheur Children's Hospital",
+          "sourceUrl": "https://www.lebonheur.org/",
+          "priority": 1
+        }
+      ],
+      "topConcreteTargets": [
+        {
+          "sourceName": "Monroe Carell Jr. Children's Hospital at Vanderbilt",
+          "sourceUrl": "https://www.childrenshospitalvanderbilt.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Le Bonheur Children's Hospital",
+          "sourceUrl": "https://www.lebonheur.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Children's Hospital at Erlanger",
+          "sourceUrl": "https://www.childrensaterlanger.org/",
+          "priority": 1
+        }
+      ]
+    }
+  ]
+}

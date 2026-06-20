@@ -1,0 +1,298 @@
+{
+  "generatedAt": "2026-06-18",
+  "repoRoot": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca",
+  "dbPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/frontend/ca_disability_navigator.db",
+  "scopeMode": "data_only",
+  "inputs": {
+    "fullGapPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/full-information-gap-audit-2026-06-18.json",
+    "completionPlanPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/source-acquisition-completion-plan-2026-06-18.json",
+    "missingFamiliesPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/missing-source-families-2026-06-18.json",
+    "authoredTargetsPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/authored-missing-source-targets-2026-06-18.json",
+    "exhaustiveGapPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/exhaustive-gap-master-2026-06-18.json",
+    "informationInventoryPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/information-inventory-2026-06-18.json",
+    "masterLedgerPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/master-source-target-ledger-2026-06-18.json",
+    "trackABlockerRegistryPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/track-a-blocker-registry-2026-06-18.json",
+    "trackABurndownBacklogPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/track-a-burndown-backlog-2026-06-18.json"
+  },
+  "optimizationTarget": "lowest_token_usage_first",
+  "tracks": {
+    "informationExhaustiveness": {
+      "status": "explicitly_blocked",
+      "readyRows": 2532,
+      "authoredTargets": 380,
+      "missingFamilyCount": 0,
+      "actionableBlockerCount": 0,
+      "sourceRepairCount": 0,
+      "providerSourceRepairCount": 0,
+      "focusMode": "none",
+      "currentFamilyFocus": null,
+      "currentBlockerFocus": null,
+      "exhaustedBurnDownFamilies": [
+        {
+          "id": "providers_care",
+          "label": "Local providers, clinics, therapists, and care",
+          "gapFamily": "providers_care",
+          "readyCount": 41,
+          "latestWaveEvidence": {
+            "runId": "2026-06-18T22-27-56-935Z",
+            "manifestPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-18T22-27-56-935Z/manifest.json",
+            "mode": "live",
+            "selectedCount": 0,
+            "filters": {
+              "wave": null,
+              "status": "ready_lightweight",
+              "gap": "providers_care",
+              "queue": null,
+              "lane": "ready_target_scrape",
+              "state": null,
+              "limit": 1
+            }
+          },
+          "exhaustionEvidence": null
+        },
+        {
+          "id": "forms_guides",
+          "label": "Forms, guides, and exact official libraries",
+          "gapFamily": "forms_guides",
+          "readyCount": 102,
+          "latestWaveEvidence": {
+            "runId": "2026-06-18T22-04-48-203Z",
+            "manifestPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-18T22-04-48-203Z/manifest.json",
+            "mode": "live",
+            "selectedCount": 0,
+            "filters": {
+              "wave": null,
+              "status": "ready_lightweight",
+              "gap": "forms_guides",
+              "queue": null,
+              "lane": "ready_target_scrape",
+              "state": null,
+              "limit": 1
+            }
+          },
+          "exhaustionEvidence": null
+        },
+        {
+          "id": "advocates_legal",
+          "label": "Advocates and legal/IEP support",
+          "gapFamily": "advocates_legal",
+          "readyCount": 1548,
+          "latestWaveEvidence": {
+            "runId": "2026-06-18T04-47-02-783Z",
+            "manifestPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-18T04-47-02-783Z/manifest.json",
+            "mode": "live",
+            "selectedCount": 141,
+            "filters": {
+              "wave": null,
+              "status": "ready_lightweight",
+              "gap": "advocates_legal",
+              "queue": null,
+              "lane": "ready_target_scrape",
+              "state": null,
+              "limit": 250
+            }
+          },
+          "exhaustionEvidence": {
+            "reason": "consecutive_live_source_repair_only_runs",
+            "threshold": 3,
+            "runs": [
+              {
+                "runId": "2026-06-18T04-22-04-591Z",
+                "manifestPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-18T04-22-04-591Z/manifest.json",
+                "summaryPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-18T04-22-04-591Z/followups/followup-summary.json",
+                "selectedCount": 5,
+                "parseReadyCount": 0,
+                "sourceRepairCount": 5,
+                "blockedCount": 0,
+                "retryableCount": 0
+              },
+              {
+                "runId": "2026-06-18T04-11-52-369Z",
+                "manifestPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-18T04-11-52-369Z/manifest.json",
+                "summaryPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-18T04-11-52-369Z/followups/followup-summary.json",
+                "selectedCount": 5,
+                "parseReadyCount": 0,
+                "sourceRepairCount": 5,
+                "blockedCount": 0,
+                "retryableCount": 0
+              },
+              {
+                "runId": "2026-06-18T04-11-13-829Z",
+                "manifestPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-18T04-11-13-829Z/manifest.json",
+                "summaryPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-18T04-11-13-829Z/followups/followup-summary.json",
+                "selectedCount": 5,
+                "parseReadyCount": 0,
+                "sourceRepairCount": 5,
+                "blockedCount": 0,
+                "retryableCount": 0
+              }
+            ]
+          }
+        },
+        {
+          "id": "housing",
+          "label": "Housing help",
+          "gapFamily": "housing",
+          "readyCount": 1,
+          "latestWaveEvidence": {
+            "runId": "2026-06-18T04-28-00-512Z",
+            "manifestPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-18T04-28-00-512Z/manifest.json",
+            "mode": "dry-run",
+            "selectedCount": 0,
+            "filters": {
+              "wave": null,
+              "status": "ready_lightweight",
+              "gap": "housing",
+              "queue": null,
+              "lane": "ready_target_scrape",
+              "state": null,
+              "limit": 5
+            }
+          },
+          "exhaustionEvidence": null
+        }
+      ],
+      "familyClosureOrder": [],
+      "topLevelCommand": "npm run run:next-track-a-step",
+      "commandCadence": [
+        "npm run run:next-track-a-step",
+        "npm run audit:track-a-burndown-backlog",
+        "npm run audit:max-info-program"
+      ],
+      "canonicalArtifacts": [
+        "docs/generated/max-info-program-*.json|md",
+        "docs/generated/track-a-blocker-registry-*.json|md",
+        "docs/generated/track-a-burndown-backlog-*.json|md",
+        "docs/generated/source-acquisition-completion-plan-*.json|md",
+        "docs/generated/missing-source-families-*.json|md",
+        "docs/generated/full-information-gap-audit-*.json|md",
+        "docs/generated/authored-missing-source-targets-*.json|md|csv",
+        "data/source_packs/*",
+        "data/source-acquisition-runs/<run-id>/*"
+      ],
+      "blockers": [
+        {
+          "id": "provider_directory",
+          "label": "Local providers, clinics, therapists, and care",
+          "status": "critical_gap",
+          "gap": "This is the biggest information hole if the goal is all local help, especially to compete on care and treatment discovery.",
+          "artifactPath": "docs/generated/track-a-blocker-registry-2026-06-18.json"
+        },
+        {
+          "id": "advocate_directory_depth",
+          "label": "Advocates and legal/IEP support",
+          "status": "meaningful_but_not_exhaustive",
+          "gap": "Advocate count is decent, but truth-safe local coverage is not yet strong enough to call exhaustive.",
+          "artifactPath": "docs/generated/track-a-blocker-registry-2026-06-18.json"
+        },
+        {
+          "id": "directory_foundation_signals",
+          "label": "Findhelp-like metadata: availability, accessibility, intake, capacity",
+          "status": "partial",
+          "gap": "The schema exists, but live high-signal metadata is sparse, especially on nonprofits and advocates.",
+          "artifactPath": "docs/generated/track-a-blocker-registry-2026-06-18.json"
+        },
+        {
+          "id": "normalization_depth",
+          "label": "Canonical org -> program -> location normalization",
+          "status": "partial",
+          "gap": "Normalization exists, but service-location depth is still too thin to support a fully location-rich help product.",
+          "artifactPath": "docs/generated/track-a-blocker-registry-2026-06-18.json"
+        },
+        {
+          "id": "knowledge_content_depth",
+          "label": "Help content and explanatory knowledge",
+          "status": "critical_gap",
+          "gap": "The content layer is still far too small for the full family journey nationally, but staged knowledge growth is now present and measured.",
+          "artifactPath": "docs/generated/track-a-blocker-registry-2026-06-18.json"
+        }
+      ]
+    },
+    "runtimeOperationalReadiness": {
+      "status": "needs_implementation",
+      "operationalCount": 3,
+      "partialCount": 1,
+      "missingCount": 1,
+      "surfaces": [
+        {
+          "id": "family_case_core",
+          "label": "Family cases, child profiles, and case tracking",
+          "tables": [
+            "family_cases",
+            "child_profiles",
+            "case_program_statuses"
+          ],
+          "implementationReady": true,
+          "operatorReady": true,
+          "totalRows": 2,
+          "status": "operational",
+          "seededExemplarPresent": true
+        },
+        {
+          "id": "documents_reminders",
+          "label": "Documents and reminders",
+          "tables": [
+            "document_checklist_items",
+            "reminders"
+          ],
+          "implementationReady": true,
+          "operatorReady": false,
+          "totalRows": 0,
+          "status": "partial",
+          "seededExemplarPresent": false
+        },
+        {
+          "id": "collaboration_portal",
+          "label": "Collaboration threads and shared portal",
+          "tables": [
+            "consultation_threads",
+            "consultation_messages",
+            "shared_portal_tokens"
+          ],
+          "implementationReady": true,
+          "operatorReady": true,
+          "totalRows": 0,
+          "status": "operational",
+          "seededExemplarPresent": false
+        },
+        {
+          "id": "feedback_loops",
+          "label": "Coverage gaps and verification queue",
+          "tables": [
+            "coverage_gaps",
+            "verification_queue_items"
+          ],
+          "implementationReady": true,
+          "operatorReady": true,
+          "totalRows": 2,
+          "status": "operational",
+          "seededExemplarPresent": true
+        },
+        {
+          "id": "user_submissions",
+          "label": "User-submitted resources",
+          "tables": [
+            "user_submitted_resources"
+          ],
+          "implementationReady": false,
+          "operatorReady": false,
+          "totalRows": 0,
+          "status": "missing",
+          "seededExemplarPresent": false
+        }
+      ]
+    }
+  },
+  "nextCommands": [
+    "npm run run:next-track-a-step"
+  ],
+  "nextActions": [
+    "No authored source-family blockers remain; shift the loop to ready-target scrape and validation burn-down.",
+    "No source-repair blockers are currently recorded in the master ledger.",
+    "No backlog focus is currently selected.",
+    "Use docs/generated/track-a-blocker-registry-2026-06-18.json as the resumable blocker registry for the remaining non-runtime Track A gap classes.",
+    "Burn down priority lightweight families in the existing completion plan before nonprofit overflow.",
+    "Ignore UI, UX, and runtime-product work in this program; this control plane is data-only.",
+    "Regenerate this artifact after each data-family unlock or data burn-down pass."
+  ]
+}

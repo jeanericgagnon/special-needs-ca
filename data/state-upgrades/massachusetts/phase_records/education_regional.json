@@ -1,1 +1,31 @@
-[]
+[
+  {
+    "source_url": "https://www.doe.mass.edu/sped/",
+    "confidence_score": 9.5,
+    "notes": "Official statewide Massachusetts DESE special education support entrypoint covering all counties.",
+    "suggested_target_id": "ma-ed-dese-special-education",
+    "name": "Massachusetts Department of Elementary and Secondary Education Special Education",
+    "agency_type": "state-special-education-support",
+    "counties_served": [
+      "barnstable-ma",
+      "berkshire-ma",
+      "bristol-ma",
+      "dukes-ma",
+      "essex-ma",
+      "franklin-ma",
+      "hampden-ma",
+      "hampshire-ma",
+      "middlesex-ma",
+      "nantucket-ma",
+      "norfolk-ma",
+      "plymouth-ma",
+      "suffolk-ma",
+      "worcester-ma"
+    ],
+    "phone": "(781) 338-3700",
+    "website": "https://www.doe.mass.edu/sped/",
+    "evidence_level": "source_listed",
+    "verification_status": "verified",
+    "data_origin": "scraped"
+  }
+]

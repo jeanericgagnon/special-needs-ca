@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-06-18T02:02:43.248Z",
+  "mode": "apply",
+  "stateFilter": "oregon",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 4,
+    "appliedStates": 2,
+    "filesChanged": 1,
+    "skippedByReason": {
+      "skipped_followup": 2
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "oregon",
+      "sourceName": "Oregon Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "oregon",
+      "sourceName": "Oregon HCBS Waivers Page",
+      "status": "applied",
+      "targetUrl": "https://www.oregon.gov/odhs/dds/hcbs"
+    },
+    {
+      "stateId": "oregon",
+      "sourceName": "Oregon Developmental Services Directory",
+      "status": "applied",
+      "targetUrl": "https://www.oregon.gov/odhs/dds"
+    },
+    {
+      "stateId": "oregon",
+      "sourceName": "Oregon Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

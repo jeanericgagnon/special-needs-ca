@@ -1,0 +1,127 @@
+{
+  "generatedAt": "2026-06-18T21:46:28.638Z",
+  "generatedDate": "2026-06-18",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-18.json",
+  "stateId": "north-carolina",
+  "stateName": "North Carolina",
+  "executionPriority": 1,
+  "sourceTargetsPath": "data/source_targets/north-carolina.json",
+  "ledgerStatus": "",
+  "ledgerNote": "",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 1,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 3,
+  "placeholderProviderTargetCount": 0,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 0,
+  "neededLiveProviderRows": 2,
+  "authoringGapClass": "needs_refresh_or_deeper_targets",
+  "nextAction": "Refresh North Carolina provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+  "providerTargets": [
+    {
+      "sourceName": "Duke Children's Hospital & Health Center",
+      "sourceUrl": "https://www.dukehealth.org/hospitals/duke-childrens-hospital",
+      "domain": "dukehealth.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Concrete first-party pediatric hospital target replacing the placeholder North Carolina provider scaffold."
+    },
+    {
+      "sourceName": "Levine Children's Hospital",
+      "sourceUrl": "https://atriumhealth.org/medical-services/childrens-services/levine-childrens-hospital",
+      "domain": "atriumhealth.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Concrete first-party Charlotte-area pediatric hospital target for North Carolina provider buildout."
+    },
+    {
+      "sourceName": "WakeMed Children's Services",
+      "sourceUrl": "https://www.wakemed.org/care-and-services/childrens-services",
+      "domain": "wakemed.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Concrete first-party Raleigh-area pediatric care target for North Carolina provider buildout."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "North Carolina County Metadata",
+      "sourceUrl": "https://www.north-carolina.gov",
+      "domain": "north-carolina.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "NCDHHS County DSS Directory",
+      "sourceUrl": "https://www.ncdhhs.gov/divisions/social-services/local-county-social-services-departments",
+      "domain": "ncdhhs.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "NCDHHS LME/MCO Directory",
+      "sourceUrl": "https://www.ncdhhs.gov/providers/lme-mco-directory",
+      "domain": "ncdhhs.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "NC Medicaid CAP/C",
+      "sourceUrl": "https://medicaid.ncdhhs.gov/providers/programs-and-services/long-term-services-and-supports/community-alternatives-program-children",
+      "domain": "medicaid.ncdhhs.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "NCDHHS CDSA Location Directory",
+      "sourceUrl": "https://www.ncdhhs.gov/divisions/mental-health-developmental-disabilities-and-substance-use-services/child-and-family-mental-health-developmental-disabilities-and-substance-use-services/early-intervention/childrens-developmental-services-agencies-cdsas",
+      "domain": "ncdhhs.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "NCDPI Exceptional Children Division",
+      "sourceUrl": "https://www.dpi.nc.gov/districts-schools/classroom-resources/exceptional-children",
+      "domain": "dpi.nc.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "NCDPI School Districts Directory",
+      "sourceUrl": "https://www.dpi.nc.gov/districts-schools/district-operations/financial-and-business-services/demographics-and-enrollment/school-district-maps",
+      "domain": "dpi.nc.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "North Carolina Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of North Carolina",
+      "sourceUrl": "https://www.thearcnorth-carolina.org",
+      "domain": "thearcnorth-carolina.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "North Carolina Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.north-carolina.gov/forms",
+      "domain": "dhhs.north-carolina.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "NC Vocational Rehabilitation Services",
+      "sourceUrl": "https://www.ncdhhs.gov/divisions/vocational-rehabilitation-services",
+      "domain": "ncdhhs.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "North Carolina Secretary of State Business Registry",
+      "sourceUrl": "https://www.north-carolina.gov/business",
+      "domain": "north-carolina.gov"
+    }
+  ]
+}

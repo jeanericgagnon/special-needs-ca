@@ -1,0 +1,66 @@
+{
+  "generatedAt": "2026-06-18",
+  "inputs": {
+    "maxInfoPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/max-info-program-2026-06-18.json",
+    "completionPlanPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/source-acquisition-completion-plan-2026-06-18.json",
+    "trackABlockerRegistryPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/track-a-blocker-registry-2026-06-18.json"
+  },
+  "status": "blocked",
+  "focusMode": "none",
+  "currentFamilyFocus": null,
+  "currentBlockerFocus": null,
+  "queueSummary": {
+    "combinedReadyRows": 3964,
+    "missingFamilyCount": 0,
+    "currentFamilyReadyRows": 0
+  },
+  "canonicalLoop": [
+    "regenerate source-family artifacts",
+    "author one missing family pack",
+    "add exact targets to source packs and source targets",
+    "regenerate completion plan",
+    "run bounded fetch wave only for that family",
+    "run parse, validate, and stage for that family",
+    "regenerate max-info, full-gap, and completion-plan artifacts",
+    "decide next family from updated blocker list"
+  ],
+  "topLevelCommand": "npm run run:next-track-a-step",
+  "commandCadence": [
+    "npm run run:next-track-a-step",
+    "npm run audit:track-a-burndown-backlog",
+    "npm run audit:max-info-program"
+  ],
+  "activeBlockers": [
+    {
+      "id": "provider_directory",
+      "status": "critical_gap",
+      "entryCommand": "npm run run:next-provider-repair-batch",
+      "auditCommand": "npm run audit:provider-followup-repair-queue"
+    },
+    {
+      "id": "advocate_directory_depth",
+      "status": "meaningful_but_not_exhaustive",
+      "entryCommand": "npm run run:next-advocate-depth-step",
+      "auditCommand": "npm run audit:advocate-depth-queue"
+    },
+    {
+      "id": "directory_foundation_signals",
+      "status": "partial",
+      "entryCommand": "npm run run:next-directory-foundation-step",
+      "auditCommand": "npm run audit:directory-foundation-enrichment-queue"
+    },
+    {
+      "id": "normalization_depth",
+      "status": "partial",
+      "entryCommand": "npm run run:next-normalization-step",
+      "auditCommand": "npm run audit:normalization-gap-queue"
+    },
+    {
+      "id": "knowledge_content_depth",
+      "status": "critical_gap",
+      "entryCommand": "npm run run:next-knowledge-content-step",
+      "auditCommand": "npm run audit:knowledge-content-status-queue"
+    }
+  ],
+  "familyQueue": []
+}

@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "source_url": "https://www.sde.idaho.gov/sped/",
+    "confidence_score": 9.5,
+    "notes": "Official Idaho State Department of Education special education page used as the truthful statewide education support layer while weak county and district placeholders are removed.",
+    "suggested_target_id": "id-ed-sde-special-education",
+    "name": "Idaho State Department of Education Special Education",
+    "phone": "",
+    "counties_served": [
+      "ALL_IDAHO_COUNTIES"
+    ],
+    "physical_county": "ada-id",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  }
+]

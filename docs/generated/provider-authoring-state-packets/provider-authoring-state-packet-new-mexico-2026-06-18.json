@@ -1,0 +1,133 @@
+{
+  "generatedAt": "2026-06-18T19:15:34.735Z",
+  "generatedDate": "2026-06-18",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-18.json",
+  "stateId": "new-mexico",
+  "stateName": "New Mexico",
+  "executionPriority": 1,
+  "sourceTargetsPath": "data/source_targets/new-mexico.json",
+  "ledgerStatus": "complete",
+  "ledgerNote": "applied-three-concrete-first-party-provider-targets",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 1,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 0,
+  "placeholderProviderTargetCount": 1,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 3,
+  "nextAction": "Add at least 3 more concrete first-party provider targets for New Mexico and then regenerate provider source-pack artifacts.",
+  "providerTargets": [
+    {
+      "sourceName": "New Mexico Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for New Mexico."
+    },
+    {
+      "sourceName": "UNM Children's Hospital",
+      "sourceUrl": "https://unmhealth.org/childrens-hospital",
+      "domain": "unmhealth.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official UNM Children's Hospital source for statewide pediatric specialty and hospital care in New Mexico."
+    },
+    {
+      "sourceName": "University of New Mexico Hospital",
+      "sourceUrl": "https://unmhealth.org/locations/university-of-new-mexico-hospital.html",
+      "domain": "unmhealth.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official UNM Hospital source for flagship hospital, pediatric specialty access, and referral care in New Mexico."
+    },
+    {
+      "sourceName": "Presbyterian Hospital",
+      "sourceUrl": "https://www.phs.org/hospitals/presbyterian",
+      "domain": "phs.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Presbyterian Hospital source for hospital-based pediatric and specialty care in Albuquerque and statewide referral coverage."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "New Mexico County Metadata",
+      "sourceUrl": "https://www.new-mexico.gov",
+      "domain": "new-mexico.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "New Mexico Medicaid Portal",
+      "sourceUrl": "https://dhhs.new-mexico.gov",
+      "domain": "dhhs.new-mexico.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "New Mexico Developmental Services Directory",
+      "sourceUrl": "https://dhhs.new-mexico.gov/dd",
+      "domain": "dhhs.new-mexico.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "New Mexico HCBS Waivers Page",
+      "sourceUrl": "https://dhhs.new-mexico.gov/dd/waivers",
+      "domain": "dhhs.new-mexico.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "New Mexico Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.new-mexico.gov/earlyintervention",
+      "domain": "dhhs.new-mexico.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "New Mexico Department of Education Special Ed",
+      "sourceUrl": "https://education.new-mexico.gov",
+      "domain": "education.new-mexico.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "New Mexico Regional Special Education Support",
+      "sourceUrl": "https://education.new-mexico.gov/regional",
+      "domain": "education.new-mexico.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "New Mexico Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of New Mexico",
+      "sourceUrl": "https://www.thearcnew-mexico.org",
+      "domain": "thearcnew-mexico.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "New Mexico Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.new-mexico.gov/forms",
+      "domain": "dhhs.new-mexico.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "New Mexico Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.new-mexico.gov/rehab",
+      "domain": "dhhs.new-mexico.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "New Mexico Secretary of State Business Registry",
+      "sourceUrl": "https://www.new-mexico.gov/business",
+      "domain": "new-mexico.gov"
+    }
+  ]
+}

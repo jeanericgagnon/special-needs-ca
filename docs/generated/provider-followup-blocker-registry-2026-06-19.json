@@ -1,0 +1,5472 @@
+{
+  "generatedAt": "2026-06-19T00:54:35.053Z",
+  "generatedDate": "2026-06-19",
+  "summary": {
+    "totalRows": 157,
+    "totalRepeatedRows": 71,
+    "byBucketAll": {
+      "blocked": 50,
+      "source_repair": 92,
+      "retryable": 15
+    },
+    "byBucket": {
+      "blocked": 45,
+      "source_repair": 20,
+      "retryable": 6
+    },
+    "byReasonAll": {
+      "access_blocked_403": 41,
+      "stale_or_invalid_404": 85,
+      "network_timeout": 3,
+      "needs_review_unknown": 4,
+      "network_fetch_failed": 12,
+      "dns_lookup_failed": 7,
+      "sandbox_network_disabled": 5
+    },
+    "byReason": {
+      "access_blocked_403": 41,
+      "stale_or_invalid_404": 14,
+      "network_timeout": 3,
+      "needs_review_unknown": 4,
+      "network_fetch_failed": 3,
+      "dns_lookup_failed": 6
+    },
+    "distinctDomains": 41,
+    "latestRunIds": [
+      "2026-06-19T00-52-46-886Z",
+      "2026-06-19T00-03-58-926Z",
+      "2026-06-19T00-03-23-705Z",
+      "2026-06-18T18-01-54-225Z",
+      "2026-06-18T04-04-47-221Z",
+      "2026-06-18T04-03-06-159Z",
+      "2026-06-18T04-02-08-899Z",
+      "2026-06-18T03-59-52-969Z",
+      "2026-06-18T03-58-19-669Z",
+      "2026-06-18T03-57-17-974Z"
+    ]
+  },
+  "allRows": [
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.dollychildrens.org/",
+      "hostname": "www.dollychildrens.org",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-19T00-52-46-886Z",
+        "2026-06-19T00-03-58-926Z",
+        "2026-06-18T04-02-08-899Z",
+        "2026-06-18T03-59-52-969Z",
+        "2026-06-18T03-58-19-669Z",
+        "2026-06-18T03-57-17-974Z",
+        "2026-06-18T03-55-57-585Z",
+        "2026-06-18T03-55-22-620Z",
+        "2026-06-18T03-54-27-243Z",
+        "2026-06-18T03-53-13-164Z",
+        "2026-06-18T03-51-48-375Z",
+        "2026-06-18T03-49-50-130Z",
+        "2026-06-18T03-49-03-735Z",
+        "2026-06-18T03-35-00-610Z"
+      ],
+      "stateIds": [
+        "tennessee"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-18T03-35-00-610Z/pages/00001-tennessee-providers-care-dolly-parton-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-49-03-735Z/pages/00005-tennessee-providers-care-dolly-parton-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-49-50-130Z/pages/00005-tennessee-providers-care-dolly-parton-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-51-48-375Z/pages/00004-tennessee-providers-care-dolly-parton-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-53-13-164Z/pages/00004-tennessee-providers-care-dolly-parton-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-54-27-243Z/pages/00003-tennessee-providers-care-dolly-parton-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-55-22-620Z/pages/00003-tennessee-providers-care-dolly-parton-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-55-57-585Z/pages/00003-tennessee-providers-care-dolly-parton-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-57-17-974Z/pages/00003-tennessee-providers-care-dolly-parton-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-58-19-669Z/pages/00003-tennessee-providers-care-dolly-parton-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-59-52-969Z/pages/00002-tennessee-providers-care-dolly-parton-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T04-02-08-899Z/pages/00002-tennessee-providers-care-dolly-parton-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-19T00-03-58-926Z/pages/00004-tennessee-providers-care-dolly-parton-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-19T00-52-46-886Z/pages/00004-tennessee-providers-care-dolly-parton-children-s-hospital.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 14
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.chop.edu/locations/chop-care-center-king-prussia",
+      "hostname": "www.chop.edu",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-18T04-02-08-899Z",
+        "2026-06-18T03-59-52-969Z",
+        "2026-06-18T03-58-19-669Z",
+        "2026-06-18T03-57-17-974Z",
+        "2026-06-18T03-55-57-585Z",
+        "2026-06-18T03-55-22-620Z",
+        "2026-06-18T03-54-27-243Z",
+        "2026-06-18T03-53-13-164Z",
+        "2026-06-18T03-51-48-375Z",
+        "2026-06-18T03-49-50-130Z",
+        "2026-06-18T03-49-03-735Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "pennsylvania"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/02658-pennsylvania-providers-care-children-s-hospital-of-philadelphia-chop-specialty-care-center-king-of-prussia.html",
+        "data/source-acquisition-runs/2026-06-18T03-49-03-735Z/pages/00004-pennsylvania-providers-care-children-s-hospital-of-philadelphia-chop-specialty-care-center-king-of-prussia.html",
+        "data/source-acquisition-runs/2026-06-18T03-49-50-130Z/pages/00004-pennsylvania-providers-care-children-s-hospital-of-philadelphia-chop-specialty-care-center-king-of-prussia.html",
+        "data/source-acquisition-runs/2026-06-18T03-51-48-375Z/pages/00003-pennsylvania-providers-care-children-s-hospital-of-philadelphia-chop-specialty-care-center-king-of-prussia.html",
+        "data/source-acquisition-runs/2026-06-18T03-53-13-164Z/pages/00003-pennsylvania-providers-care-children-s-hospital-of-philadelphia-chop-specialty-care-center-king-of-prussia.html",
+        "data/source-acquisition-runs/2026-06-18T03-54-27-243Z/pages/00002-pennsylvania-providers-care-children-s-hospital-of-philadelphia-chop-specialty-care-center-king-of-prussia.html",
+        "data/source-acquisition-runs/2026-06-18T03-55-22-620Z/pages/00002-pennsylvania-providers-care-children-s-hospital-of-philadelphia-chop-specialty-care-center-king-of-prussia.html",
+        "data/source-acquisition-runs/2026-06-18T03-55-57-585Z/pages/00002-pennsylvania-providers-care-children-s-hospital-of-philadelphia-chop-specialty-care-center-king-of-prussia.html",
+        "data/source-acquisition-runs/2026-06-18T03-57-17-974Z/pages/00002-pennsylvania-providers-care-children-s-hospital-of-philadelphia-chop-specialty-care-center-king-of-prussia.html",
+        "data/source-acquisition-runs/2026-06-18T03-58-19-669Z/pages/00002-pennsylvania-providers-care-children-s-hospital-of-philadelphia-chop-specialty-care-center-king-of-prussia.html",
+        "data/source-acquisition-runs/2026-06-18T03-59-52-969Z/pages/00001-pennsylvania-providers-care-children-s-hospital-of-philadelphia-chop-specialty-care-center-king-of-prussia.html",
+        "data/source-acquisition-runs/2026-06-18T04-02-08-899Z/pages/00001-pennsylvania-providers-care-children-s-hospital-of-philadelphia-chop-specialty-care-center-king-of-prussia.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 12
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.childrensmn.org/locations",
+      "hostname": "www.childrensmn.org",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-19T00-52-46-886Z",
+        "2026-06-18T04-02-08-899Z",
+        "2026-06-18T03-59-52-969Z",
+        "2026-06-18T03-58-19-669Z",
+        "2026-06-18T03-55-57-585Z",
+        "2026-06-18T03-53-13-164Z",
+        "2026-06-18T03-49-50-130Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "minnesota"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/02655-minnesota-providers-care-children-s-minnesota-minneapolis-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-49-50-130Z/pages/00016-minnesota-providers-care-children-s-minnesota-minneapolis-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-53-13-164Z/pages/00011-minnesota-providers-care-children-s-minnesota-minneapolis-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-55-57-585Z/pages/00010-minnesota-providers-care-children-s-minnesota-minneapolis-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-58-19-669Z/pages/00010-minnesota-providers-care-children-s-minnesota-minneapolis-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-59-52-969Z/pages/00003-minnesota-providers-care-children-s-minnesota-minneapolis-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T04-02-08-899Z/pages/00003-minnesota-providers-care-children-s-minnesota-minneapolis-hospital.html",
+        "data/source-acquisition-runs/2026-06-19T00-52-46-886Z/pages/00008-minnesota-providers-care-children-s-minnesota-minneapolis-hospital.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 8
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.rileychildrens.org/",
+      "hostname": "www.rileychildrens.org",
+      "bucket": "retryable",
+      "followupReason": "network_timeout",
+      "runIds": [
+        "2026-06-19T00-52-46-886Z",
+        "2026-06-18T04-04-47-221Z",
+        "2026-06-18T04-03-06-159Z",
+        "2026-06-18T03-58-19-669Z",
+        "2026-06-18T03-55-57-585Z",
+        "2026-06-18T03-53-13-164Z",
+        "2026-06-18T03-10-54-735Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "indiana"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "The operation was aborted due to timeout",
+        "request_timed_out:TIMEOUT"
+      ],
+      "repeatCount": 8
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.chla.org/",
+      "hostname": "www.chla.org",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-18T04-02-08-899Z",
+        "2026-06-18T03-59-52-969Z",
+        "2026-06-18T03-58-19-669Z",
+        "2026-06-18T03-55-57-585Z",
+        "2026-06-18T03-53-13-164Z",
+        "2026-06-18T03-49-50-130Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "california"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/02657-california-providers-care-children-s-hospital-los-angeles.html",
+        "data/source-acquisition-runs/2026-06-18T03-49-50-130Z/pages/00017-california-providers-care-children-s-hospital-los-angeles.html",
+        "data/source-acquisition-runs/2026-06-18T03-53-13-164Z/pages/00012-california-providers-care-children-s-hospital-los-angeles.html",
+        "data/source-acquisition-runs/2026-06-18T03-55-57-585Z/pages/00011-california-providers-care-children-s-hospital-los-angeles.html",
+        "data/source-acquisition-runs/2026-06-18T03-58-19-669Z/pages/00011-california-providers-care-children-s-hospital-los-angeles.html",
+        "data/source-acquisition-runs/2026-06-18T03-59-52-969Z/pages/00004-california-providers-care-children-s-hospital-los-angeles.html",
+        "data/source-acquisition-runs/2026-06-18T04-02-08-899Z/pages/00004-california-providers-care-children-s-hospital-los-angeles.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 7
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.billingsclinic.com/contact-us",
+      "hostname": "www.billingsclinic.com",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-19T00-52-46-886Z",
+        "2026-06-18T02-30-42-579Z",
+        "2026-06-18T02-27-04-351Z",
+        "2026-06-18T02-25-52-149Z",
+        "2026-06-18T02-23-35-170Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "montana"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/02630-montana-providers-care-billings-clinic-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T02-23-35-170Z/pages/00023-montana-providers-care-billings-clinic-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T02-25-52-149Z/pages/00023-montana-providers-care-billings-clinic-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T02-27-04-351Z/pages/00023-montana-providers-care-billings-clinic-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T02-30-42-579Z/pages/00023-montana-providers-care-billings-clinic-hospital.html",
+        "data/source-acquisition-runs/2026-06-19T00-52-46-886Z/pages/00006-montana-providers-care-billings-clinic-hospital.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 6
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.hopkinsmedicine.org/johns-hopkins-childrens-center",
+      "hostname": "www.hopkinsmedicine.org",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-19T00-52-46-886Z",
+        "2026-06-18T03-58-19-669Z",
+        "2026-06-18T03-55-57-585Z",
+        "2026-06-18T03-53-13-164Z",
+        "2026-06-18T03-49-50-130Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "maryland"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/02784-maryland-providers-care-johns-hopkins-children-s-center.html",
+        "data/source-acquisition-runs/2026-06-18T03-49-50-130Z/pages/00024-maryland-providers-care-johns-hopkins-children-s-center.html",
+        "data/source-acquisition-runs/2026-06-18T03-53-13-164Z/pages/00017-maryland-providers-care-johns-hopkins-children-s-center.html",
+        "data/source-acquisition-runs/2026-06-18T03-55-57-585Z/pages/00016-maryland-providers-care-johns-hopkins-children-s-center.html",
+        "data/source-acquisition-runs/2026-06-18T03-58-19-669Z/pages/00016-maryland-providers-care-johns-hopkins-children-s-center.html",
+        "data/source-acquisition-runs/2026-06-19T00-52-46-886Z/pages/00009-maryland-providers-care-johns-hopkins-children-s-center.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 6
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.montefiore.org/rose-f-kennedy-center",
+      "hostname": "www.montefiore.org",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-19T00-52-46-886Z",
+        "2026-06-19T00-03-58-926Z",
+        "2026-06-18T02-49-01-327Z",
+        "2026-06-18T02-45-25-068Z",
+        "2026-06-18T02-18-57-741Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03309-new-york-providers-care-montefiore-rose-f-kennedy-center.html",
+        "data/source-acquisition-runs/2026-06-18T02-18-57-741Z/pages/00015-new-york-providers-care-montefiore-rose-f-kennedy-center.html",
+        "data/source-acquisition-runs/2026-06-18T02-45-25-068Z/pages/00018-new-york-providers-care-montefiore-rose-f-kennedy-center.html",
+        "data/source-acquisition-runs/2026-06-18T02-49-01-327Z/pages/00018-new-york-providers-care-montefiore-rose-f-kennedy-center.html",
+        "data/source-acquisition-runs/2026-06-19T00-03-58-926Z/pages/00005-new-york-providers-care-montefiore-rose-f-kennedy-center.html",
+        "data/source-acquisition-runs/2026-06-19T00-52-46-886Z/pages/00005-new-york-providers-care-montefiore-rose-f-kennedy-center.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 6
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.geisinger.org/patient-care/specialties-and-services/autism-and-developmental-medicine-institute",
+      "hostname": "www.geisinger.org",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-18T04-02-08-899Z",
+        "2026-06-18T03-58-19-669Z",
+        "2026-06-18T03-55-57-585Z",
+        "2026-06-18T03-53-13-164Z",
+        "2026-06-18T03-49-50-130Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "pennsylvania"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/02749-pennsylvania-providers-care-geisinger-autism-developmental-medicine-institute-admi.html",
+        "data/source-acquisition-runs/2026-06-18T03-49-50-130Z/pages/00022-pennsylvania-providers-care-geisinger-autism-developmental-medicine-institute-admi.html",
+        "data/source-acquisition-runs/2026-06-18T03-53-13-164Z/pages/00015-pennsylvania-providers-care-geisinger-autism-developmental-medicine-institute-admi.html",
+        "data/source-acquisition-runs/2026-06-18T03-55-57-585Z/pages/00014-pennsylvania-providers-care-geisinger-autism-developmental-medicine-institute-admi.html",
+        "data/source-acquisition-runs/2026-06-18T03-58-19-669Z/pages/00014-pennsylvania-providers-care-geisinger-autism-developmental-medicine-institute-admi.html",
+        "data/source-acquisition-runs/2026-06-18T04-02-08-899Z/pages/00005-pennsylvania-providers-care-geisinger-autism-developmental-medicine-institute-admi.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 6
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.chla.org/autism-and-developmental-medicine",
+      "hostname": "www.chla.org",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-19T00-52-46-886Z",
+        "2026-06-19T00-03-58-926Z",
+        "2026-06-18T02-49-01-327Z",
+        "2026-06-18T02-45-25-068Z",
+        "2026-06-18T02-18-57-741Z"
+      ],
+      "stateIds": [
+        "california"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-18T02-18-57-741Z/pages/00008-california-providers-care-children-s-hospital-los-angeles-boone-fetter-clinic.html",
+        "data/source-acquisition-runs/2026-06-18T02-45-25-068Z/pages/00010-california-providers-care-children-s-hospital-los-angeles-boone-fetter-clinic.html",
+        "data/source-acquisition-runs/2026-06-18T02-49-01-327Z/pages/00010-california-providers-care-children-s-hospital-los-angeles-boone-fetter-clinic.html",
+        "data/source-acquisition-runs/2026-06-19T00-03-58-926Z/pages/00003-california-providers-care-children-s-hospital-los-angeles-boone-fetter-clinic.html",
+        "data/source-acquisition-runs/2026-06-19T00-52-46-886Z/pages/00003-california-providers-care-children-s-hospital-los-angeles-boone-fetter-clinic.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 5
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.hopkinsallchildrens.org/",
+      "hostname": "www.hopkinsallchildrens.org",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-18T03-58-19-669Z",
+        "2026-06-18T03-55-57-585Z",
+        "2026-06-18T03-53-13-164Z",
+        "2026-06-18T03-49-50-130Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "florida"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/02783-florida-providers-care-johns-hopkins-all-children-s-hospital-developmental-medicine.html",
+        "data/source-acquisition-runs/2026-06-18T03-49-50-130Z/pages/00023-florida-providers-care-johns-hopkins-all-children-s-hospital-developmental-medicine.html",
+        "data/source-acquisition-runs/2026-06-18T03-53-13-164Z/pages/00016-florida-providers-care-johns-hopkins-all-children-s-hospital-developmental-medicine.html",
+        "data/source-acquisition-runs/2026-06-18T03-55-57-585Z/pages/00015-florida-providers-care-johns-hopkins-all-children-s-hospital-developmental-medicine.html",
+        "data/source-acquisition-runs/2026-06-18T03-58-19-669Z/pages/00015-florida-providers-care-johns-hopkins-all-children-s-hospital-developmental-medicine.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 5
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://iuhealth.org/",
+      "hostname": "iuhealth.org",
+      "bucket": "retryable",
+      "followupReason": "network_timeout",
+      "runIds": [
+        "2026-06-19T00-52-46-886Z",
+        "2026-06-19T00-03-58-926Z",
+        "2026-06-18T02-22-12-511Z",
+        "2026-06-18T02-18-57-741Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "indiana"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "The operation was aborted due to timeout",
+        "request_timed_out:TIMEOUT"
+      ],
+      "repeatCount": 5
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.anthc.org/what-we-do/alaska-native-medical-center/pediatrics",
+      "hostname": "anthc.org",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-18T02-30-42-579Z",
+        "2026-06-18T02-27-04-351Z",
+        "2026-06-18T02-25-52-149Z",
+        "2026-06-18T02-23-35-170Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "alaska"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/02617-alaska-providers-care-alaska-native-medical-center-pediatrics.html",
+        "data/source-acquisition-runs/2026-06-18T02-23-35-170Z/pages/00020-alaska-providers-care-alaska-native-medical-center-pediatrics.html",
+        "data/source-acquisition-runs/2026-06-18T02-25-52-149Z/pages/00020-alaska-providers-care-alaska-native-medical-center-pediatrics.html",
+        "data/source-acquisition-runs/2026-06-18T02-27-04-351Z/pages/00020-alaska-providers-care-alaska-native-medical-center-pediatrics.html",
+        "data/source-acquisition-runs/2026-06-18T02-30-42-579Z/pages/00020-alaska-providers-care-alaska-native-medical-center-pediatrics.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 5
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.mottchildren.org/",
+      "hostname": "www.mottchildren.org",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-18T03-58-19-669Z",
+        "2026-06-18T03-55-57-585Z",
+        "2026-06-18T03-53-13-164Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "michigan"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03420-michigan-providers-care-c-s-mott-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-53-13-164Z/pages/00019-michigan-providers-care-c-s-mott-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-55-57-585Z/pages/00018-michigan-providers-care-c-s-mott-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-58-19-669Z/pages/00018-michigan-providers-care-c-s-mott-children-s-hospital.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 4
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.ahs.uic.edu/",
+      "hostname": "www.ahs.uic.edu",
+      "bucket": "blocked",
+      "followupReason": "needs_review_unknown",
+      "runIds": [
+        "2026-06-19T00-52-46-886Z",
+        "2026-06-19T00-03-58-926Z",
+        "2026-06-18T02-49-01-327Z",
+        "2026-06-18T02-45-25-068Z"
+      ],
+      "stateIds": [
+        "illinois"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "fetch_failed:UNABLE_TO_VERIFY_LEAF_SIGNATURE"
+      ],
+      "repeatCount": 4
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.rileychildrens.org/contact-and-locations/riley-hospital-for-children-at-iu-health",
+      "hostname": "www.rileychildrens.org",
+      "bucket": "retryable",
+      "followupReason": "network_timeout",
+      "runIds": [
+        "2026-06-18T04-04-47-221Z",
+        "2026-06-18T04-03-06-159Z",
+        "2026-06-18T03-10-54-735Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "indiana"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "The operation was aborted due to timeout",
+        "request_timed_out:TIMEOUT"
+      ],
+      "repeatCount": 4
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.cookchildrens.org/services/child-development",
+      "hostname": "www.cookchildrens.org",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-18T02-49-01-327Z",
+        "2026-06-18T02-45-25-068Z",
+        "2026-06-18T02-18-57-741Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "texas"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03262-texas-providers-care-cook-children-s-child-development-center.html",
+        "data/source-acquisition-runs/2026-06-18T02-18-57-741Z/pages/00010-texas-providers-care-cook-children-s-child-development-center.html",
+        "data/source-acquisition-runs/2026-06-18T02-45-25-068Z/pages/00013-texas-providers-care-cook-children-s-child-development-center.html",
+        "data/source-acquisition-runs/2026-06-18T02-49-01-327Z/pages/00013-texas-providers-care-cook-children-s-child-development-center.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 4
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.nationwidechildrens.org/specialties/autism-center",
+      "hostname": "www.nationwidechildrens.org",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-18T02-49-01-327Z",
+        "2026-06-18T02-45-25-068Z",
+        "2026-06-18T02-18-57-741Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03311-ohio-providers-care-nationwide-children-s-hospital-center-for-autism.html",
+        "data/source-acquisition-runs/2026-06-18T02-18-57-741Z/pages/00016-ohio-providers-care-nationwide-children-s-hospital-center-for-autism.html",
+        "data/source-acquisition-runs/2026-06-18T02-45-25-068Z/pages/00019-ohio-providers-care-nationwide-children-s-hospital-center-for-autism.html",
+        "data/source-acquisition-runs/2026-06-18T02-49-01-327Z/pages/00019-ohio-providers-care-nationwide-children-s-hospital-center-for-autism.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 4
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.nicklauschildrens.org/locations/dan-marino-outpatient-center",
+      "hostname": "www.nicklauschildrens.org",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-18T02-49-01-327Z",
+        "2026-06-18T02-45-25-068Z",
+        "2026-06-18T02-18-57-741Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "florida"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03314-florida-providers-care-nicklaus-children-s-hospital-dan-marino-center.html",
+        "data/source-acquisition-runs/2026-06-18T02-18-57-741Z/pages/00017-florida-providers-care-nicklaus-children-s-hospital-dan-marino-center.html",
+        "data/source-acquisition-runs/2026-06-18T02-45-25-068Z/pages/00020-florida-providers-care-nicklaus-children-s-hospital-dan-marino-center.html",
+        "data/source-acquisition-runs/2026-06-18T02-49-01-327Z/pages/00020-florida-providers-care-nicklaus-children-s-hospital-dan-marino-center.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 4
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.pennstatehealth.org/services-treatments/developmental-pediatrics",
+      "hostname": "www.pennstatehealth.org",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-18T03-58-19-669Z",
+        "2026-06-18T03-55-57-585Z",
+        "2026-06-18T03-53-13-164Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "pennsylvania"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/02919-pennsylvania-providers-care-penn-state-health-children-s-hospital-developmental-pediatrics.html",
+        "data/source-acquisition-runs/2026-06-18T03-53-13-164Z/pages/00021-pennsylvania-providers-care-penn-state-health-children-s-hospital-developmental-pediatrics.html",
+        "data/source-acquisition-runs/2026-06-18T03-55-57-585Z/pages/00020-pennsylvania-providers-care-penn-state-health-children-s-hospital-developmental-pediatrics.html",
+        "data/source-acquisition-runs/2026-06-18T03-58-19-669Z/pages/00020-pennsylvania-providers-care-penn-state-health-children-s-hospital-developmental-pediatrics.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 4
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.stchristophershospital.com/services/developmental-pediatrics",
+      "hostname": "www.stchristophershospital.com",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-18T03-58-19-669Z",
+        "2026-06-18T03-55-57-585Z",
+        "2026-06-18T03-53-13-164Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "pennsylvania"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/02999-pennsylvania-providers-care-st-christopher-s-hospital-for-children-developmental-pediatrics.html",
+        "data/source-acquisition-runs/2026-06-18T03-53-13-164Z/pages/00024-pennsylvania-providers-care-st-christopher-s-hospital-for-children-developmental-pediatrics.html",
+        "data/source-acquisition-runs/2026-06-18T03-55-57-585Z/pages/00023-pennsylvania-providers-care-st-christopher-s-hospital-for-children-developmental-pediatrics.html",
+        "data/source-acquisition-runs/2026-06-18T03-58-19-669Z/pages/00023-pennsylvania-providers-care-st-christopher-s-hospital-for-children-developmental-pediatrics.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 4
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.texaschildrens.org/departments/autism-center",
+      "hostname": "www.texaschildrens.org",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-18T02-49-01-327Z",
+        "2026-06-18T02-45-25-068Z",
+        "2026-06-18T02-18-57-741Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "texas"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03327-texas-providers-care-texas-children-s-hospital-autism-center.html",
+        "data/source-acquisition-runs/2026-06-18T02-18-57-741Z/pages/00020-texas-providers-care-texas-children-s-hospital-autism-center.html",
+        "data/source-acquisition-runs/2026-06-18T02-45-25-068Z/pages/00023-texas-providers-care-texas-children-s-hospital-autism-center.html",
+        "data/source-acquisition-runs/2026-06-18T02-49-01-327Z/pages/00023-texas-providers-care-texas-children-s-hospital-autism-center.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 4
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.childrensdmc.org/",
+      "hostname": "www.childrensdmc.org",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-19T00-52-46-886Z",
+        "2026-06-18T03-15-20-096Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "michigan"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03376-michigan-providers-care-children-s-hospital-of-michigan.html",
+        "data/source-acquisition-runs/2026-06-18T03-15-20-096Z/pages/00001-michigan-providers-care-children-s-hospital-of-michigan.html",
+        "data/source-acquisition-runs/2026-06-19T00-52-46-886Z/pages/00007-michigan-providers-care-children-s-hospital-of-michigan.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 3
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.upstate.edu/gch",
+      "hostname": "www.upstate.edu",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-18T03-58-19-669Z",
+        "2026-06-18T03-55-57-585Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03431-new-york-providers-care-upstate-golisano-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-55-57-585Z/pages/00024-new-york-providers-care-upstate-golisano-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-58-19-669Z/pages/00024-new-york-providers-care-upstate-golisano-children-s-hospital.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 3
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.uth.edu/",
+      "hostname": "www.uth.edu",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-18T03-58-19-669Z",
+        "2026-06-18T03-55-57-585Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "texas"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03040-texas-providers-care-ut-health-houston-center-for-autism-and-developmental-disabilities.html",
+        "data/source-acquisition-runs/2026-06-18T03-55-57-585Z/pages/00025-texas-providers-care-ut-health-houston-center-for-autism-and-developmental-disabilities.html",
+        "data/source-acquisition-runs/2026-06-18T03-58-19-669Z/pages/00025-texas-providers-care-ut-health-houston-center-for-autism-and-developmental-disabilities.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 3
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://iuhealth.org/",
+      "hostname": "iuhealth.org",
+      "bucket": "blocked",
+      "followupReason": "needs_review_unknown",
+      "runIds": [
+        "2026-06-18T02-49-01-327Z",
+        "2026-06-18T02-45-25-068Z",
+        "2026-06-18T02-26-48-456Z"
+      ],
+      "stateIds": [
+        "indiana"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "request_timed_out:TIMEOUT"
+      ],
+      "repeatCount": 3
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://asac.psy.miami.edu/",
+      "hostname": "asac.psy.miami.edu",
+      "bucket": "retryable",
+      "followupReason": "network_fetch_failed",
+      "runIds": [
+        "2026-06-18T02-25-52-149Z",
+        "2026-06-18T02-23-35-170Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "florida"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "fetch failed"
+      ],
+      "repeatCount": 3
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://can.uflhealth.org/",
+      "hostname": "can.uflhealth.org",
+      "bucket": "retryable",
+      "followupReason": "network_fetch_failed",
+      "runIds": [
+        "2026-06-18T02-25-52-149Z",
+        "2026-06-18T02-23-35-170Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "florida"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "fetch failed"
+      ],
+      "repeatCount": 3
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.chp.edu/our-services/developmental-pediatrics",
+      "hostname": "www.chp.edu",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-18T02-49-01-327Z",
+        "2026-06-18T02-45-25-068Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "pennsylvania"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/02659-pennsylvania-providers-care-upmc-children-s-hospital-of-pittsburgh-child-development-unit.html",
+        "data/source-acquisition-runs/2026-06-18T02-45-25-068Z/pages/00012-pennsylvania-providers-care-upmc-children-s-hospital-of-pittsburgh-child-development-unit.html",
+        "data/source-acquisition-runs/2026-06-18T02-49-01-327Z/pages/00012-pennsylvania-providers-care-upmc-children-s-hospital-of-pittsburgh-child-development-unit.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 3
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.dollychildrens.org/about-us/our-locations/dolly-parton-childrens-hospital-main-campus",
+      "hostname": "www.dollychildrens.org",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-18T04-03-06-159Z",
+        "2026-06-18T03-35-00-610Z"
+      ],
+      "stateIds": [
+        "tennessee"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-18T03-35-00-610Z/pages/00002-tennessee-providers-care-dolly-parton-children-s-hospital-main-campus.html",
+        "data/source-acquisition-runs/2026-06-18T04-03-06-159Z/pages/00001-tennessee-providers-care-dolly-parton-children-s-hospital-main-campus.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.dollychildrens.org/medical-services/specialty-clinics",
+      "hostname": "www.dollychildrens.org",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-18T04-03-06-159Z",
+        "2026-06-18T03-35-00-610Z"
+      ],
+      "stateIds": [
+        "tennessee"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-18T03-35-00-610Z/pages/00003-tennessee-providers-care-dolly-parton-children-s-hospital-specialty-clinics.html",
+        "data/source-acquisition-runs/2026-06-18T04-03-06-159Z/pages/00004-tennessee-providers-care-dolly-parton-children-s-hospital-specialty-clinics.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-1",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-18T00-50-05-745Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03177-new-york-providers-care-newyork-specialized-clinic-roster-1.html",
+        "data/source-acquisition-runs/2026-06-18T00-50-05-745Z/pages/00005-new-york-providers-care-newyork-specialized-clinic-roster-1.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.spectrumhealth.org/locations/spectrum-health-hospitals-helen-devos-childrens-hospital",
+      "hostname": "www.spectrumhealth.org",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-18T03-15-20-096Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "michigan"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03425-michigan-providers-care-helen-devos-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-15-20-096Z/pages/00003-michigan-providers-care-helen-devos-children-s-hospital.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.uofmhealth.org/our-care/specialties-services/autism-spectrum-disorders-appointments",
+      "hostname": "www.uofmhealth.org",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-18T03-15-20-096Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "michigan"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03039-michigan-providers-care-university-of-michigan-health-autism-spectrum-disorders-clinic.html",
+        "data/source-acquisition-runs/2026-06-18T03-15-20-096Z/pages/00004-michigan-providers-care-university-of-michigan-health-autism-spectrum-disorders-clinic.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://asac.psy.miami.edu/",
+      "hostname": "asac.psy.miami.edu",
+      "bucket": "blocked",
+      "followupReason": "needs_review_unknown",
+      "runIds": [
+        "2026-06-18T02-30-42-579Z",
+        "2026-06-18T02-27-04-351Z"
+      ],
+      "stateIds": [
+        "florida"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "dns_lookup_failed:ENOTFOUND"
+      ],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://can.uflhealth.org/",
+      "hostname": "can.uflhealth.org",
+      "bucket": "blocked",
+      "followupReason": "needs_review_unknown",
+      "runIds": [
+        "2026-06-18T02-30-42-579Z",
+        "2026-06-18T02-27-04-351Z"
+      ],
+      "stateIds": [
+        "florida"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "dns_lookup_failed:ENOTFOUND"
+      ],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-1",
+      "hostname": "dch.georgia.gov",
+      "bucket": "retryable",
+      "followupReason": "network_fetch_failed",
+      "runIds": [
+        "2026-06-18T00-46-05-621Z",
+        "2026-06-18T00-45-09-758Z"
+      ],
+      "stateIds": [
+        "georgia"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "fetch failed"
+      ],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.childrensaterlanger.org/",
+      "hostname": "www.childrensaterlanger.org",
+      "bucket": "source_repair",
+      "followupReason": "dns_lookup_failed",
+      "runIds": [
+        "2026-06-18T03-32-14-326Z",
+        "2026-06-18T03-20-49-874Z"
+      ],
+      "stateIds": [
+        "tennessee"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "dns_lookup_failed:ENOTFOUND"
+      ],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.childrenshospitalvanderbilt.org/",
+      "hostname": "www.childrenshospitalvanderbilt.org",
+      "bucket": "source_repair",
+      "followupReason": "dns_lookup_failed",
+      "runIds": [
+        "2026-06-18T03-32-14-326Z",
+        "2026-06-18T03-20-49-874Z"
+      ],
+      "stateIds": [
+        "tennessee"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "dns_lookup_failed:ENOTFOUND"
+      ],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.lebonheur.org/",
+      "hostname": "www.lebonheur.org",
+      "bucket": "source_repair",
+      "followupReason": "dns_lookup_failed",
+      "runIds": [
+        "2026-06-18T03-32-14-326Z",
+        "2026-06-18T03-20-49-874Z"
+      ],
+      "stateIds": [
+        "tennessee"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "dns_lookup_failed:ENOTFOUND"
+      ],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.lsuhs.edu/",
+      "hostname": "www.lsuhs.edu",
+      "bucket": "source_repair",
+      "followupReason": "dns_lookup_failed",
+      "runIds": [
+        "2026-06-18T03-32-14-087Z",
+        "2026-06-18T03-18-18-042Z"
+      ],
+      "stateIds": [
+        "louisiana"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "dns_lookup_failed:ENOTFOUND"
+      ],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.manningchildrens.org/",
+      "hostname": "www.manningchildrens.org",
+      "bucket": "source_repair",
+      "followupReason": "dns_lookup_failed",
+      "runIds": [
+        "2026-06-18T03-32-14-087Z",
+        "2026-06-18T03-18-18-042Z"
+      ],
+      "stateIds": [
+        "louisiana"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "dns_lookup_failed:ENOTFOUND"
+      ],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.ochsner.org/",
+      "hostname": "www.ochsner.org",
+      "bucket": "source_repair",
+      "followupReason": "dns_lookup_failed",
+      "runIds": [
+        "2026-06-18T03-32-14-087Z",
+        "2026-06-18T03-18-18-042Z"
+      ],
+      "stateIds": [
+        "louisiana"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "dns_lookup_failed:ENOTFOUND"
+      ],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-1",
+      "hostname": "dch.georgia.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-18T00-50-05-745Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "georgia"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03074-georgia-providers-care-georgia-specialized-clinic-roster-1.html",
+        "data/source-acquisition-runs/2026-06-18T00-50-05-745Z/pages/00001-georgia-providers-care-georgia-specialized-clinic-roster-1.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://hfs.illinois.gov/specialized-roster-1",
+      "hostname": "hfs.illinois.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-18T00-50-05-745Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "illinois"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03096-illinois-providers-care-illinois-specialized-clinic-roster-1.html",
+        "data/source-acquisition-runs/2026-06-18T00-50-05-745Z/pages/00002-illinois-providers-care-illinois-specialized-clinic-roster-1.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://medicaid.ohio.gov/specialized-roster-1",
+      "hostname": "medicaid.ohio.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-18T00-50-05-745Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03119-ohio-providers-care-ohio-specialized-clinic-roster-1.html",
+        "data/source-acquisition-runs/2026-06-18T00-50-05-745Z/pages/00003-ohio-providers-care-ohio-specialized-clinic-roster-1.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.uvmhealth.org/medcenter/childrens-hospital",
+      "hostname": "www.uvmhealth.org",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-18T04-03-06-159Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "vermont"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03042-vermont-providers-care-university-of-vermont-medical-center.html",
+        "data/source-acquisition-runs/2026-06-18T04-03-06-159Z/pages/00003-vermont-providers-care-university-of-vermont-medical-center.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-10",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03178-new-york-providers-care-newyork-specialized-clinic-roster-10.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-11",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03179-new-york-providers-care-newyork-specialized-clinic-roster-11.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-12",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03180-new-york-providers-care-newyork-specialized-clinic-roster-12.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-13",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03181-new-york-providers-care-newyork-specialized-clinic-roster-13.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-14",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03182-new-york-providers-care-newyork-specialized-clinic-roster-14.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-15",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03183-new-york-providers-care-newyork-specialized-clinic-roster-15.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-16",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03184-new-york-providers-care-newyork-specialized-clinic-roster-16.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-17",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03185-new-york-providers-care-newyork-specialized-clinic-roster-17.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-18",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03186-new-york-providers-care-newyork-specialized-clinic-roster-18.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-19",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03187-new-york-providers-care-newyork-specialized-clinic-roster-19.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-2",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03188-new-york-providers-care-newyork-specialized-clinic-roster-2.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-20",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03189-new-york-providers-care-newyork-specialized-clinic-roster-20.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-21",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03190-new-york-providers-care-newyork-specialized-clinic-roster-21.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-22",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03191-new-york-providers-care-newyork-specialized-clinic-roster-22.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-23",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03192-new-york-providers-care-newyork-specialized-clinic-roster-23.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-24",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03193-new-york-providers-care-newyork-specialized-clinic-roster-24.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-25",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03194-new-york-providers-care-newyork-specialized-clinic-roster-25.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-3",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03195-new-york-providers-care-newyork-specialized-clinic-roster-3.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-4",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03196-new-york-providers-care-newyork-specialized-clinic-roster-4.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-5",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03197-new-york-providers-care-newyork-specialized-clinic-roster-5.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-6",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03198-new-york-providers-care-newyork-specialized-clinic-roster-6.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-7",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03199-new-york-providers-care-newyork-specialized-clinic-roster-7.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-8",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03200-new-york-providers-care-newyork-specialized-clinic-roster-8.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-9",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03201-new-york-providers-care-newyork-specialized-clinic-roster-9.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://iuhealth.org/",
+      "hostname": "iuhealth.org",
+      "bucket": "blocked",
+      "followupReason": "sandbox_network_disabled",
+      "runIds": [
+        "2026-06-19T00-03-23-705Z"
+      ],
+      "stateIds": [
+        "indiana"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "dns_lookup_failed:ENOTFOUND"
+      ],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.ahs.uic.edu/",
+      "hostname": "www.ahs.uic.edu",
+      "bucket": "blocked",
+      "followupReason": "sandbox_network_disabled",
+      "runIds": [
+        "2026-06-19T00-03-23-705Z"
+      ],
+      "stateIds": [
+        "illinois"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "dns_lookup_failed:ENOTFOUND"
+      ],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.chla.org/autism-and-developmental-medicine",
+      "hostname": "www.chla.org",
+      "bucket": "blocked",
+      "followupReason": "sandbox_network_disabled",
+      "runIds": [
+        "2026-06-19T00-03-23-705Z"
+      ],
+      "stateIds": [
+        "california"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "dns_lookup_failed:ENOTFOUND"
+      ],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.dollychildrens.org/",
+      "hostname": "www.dollychildrens.org",
+      "bucket": "blocked",
+      "followupReason": "sandbox_network_disabled",
+      "runIds": [
+        "2026-06-19T00-03-23-705Z"
+      ],
+      "stateIds": [
+        "tennessee"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "dns_lookup_failed:ENOTFOUND"
+      ],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.montefiore.org/rose-f-kennedy-center",
+      "hostname": "www.montefiore.org",
+      "bucket": "blocked",
+      "followupReason": "sandbox_network_disabled",
+      "runIds": [
+        "2026-06-19T00-03-23-705Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "dns_lookup_failed:ENOTFOUND"
+      ],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-10",
+      "hostname": "dch.georgia.gov",
+      "bucket": "retryable",
+      "followupReason": "network_fetch_failed",
+      "runIds": [
+        "2026-06-18T00-45-09-758Z"
+      ],
+      "stateIds": [
+        "georgia"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "fetch failed"
+      ],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-11",
+      "hostname": "dch.georgia.gov",
+      "bucket": "retryable",
+      "followupReason": "network_fetch_failed",
+      "runIds": [
+        "2026-06-18T00-45-09-758Z"
+      ],
+      "stateIds": [
+        "georgia"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "fetch failed"
+      ],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-12",
+      "hostname": "dch.georgia.gov",
+      "bucket": "retryable",
+      "followupReason": "network_fetch_failed",
+      "runIds": [
+        "2026-06-18T00-45-09-758Z"
+      ],
+      "stateIds": [
+        "georgia"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "fetch failed"
+      ],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-13",
+      "hostname": "dch.georgia.gov",
+      "bucket": "retryable",
+      "followupReason": "network_fetch_failed",
+      "runIds": [
+        "2026-06-18T00-45-09-758Z"
+      ],
+      "stateIds": [
+        "georgia"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "fetch failed"
+      ],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://hfs.illinois.gov/specialized-roster-1",
+      "hostname": "hfs.illinois.gov",
+      "bucket": "retryable",
+      "followupReason": "network_fetch_failed",
+      "runIds": [
+        "2026-06-18T00-46-05-621Z"
+      ],
+      "stateIds": [
+        "illinois"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "fetch failed"
+      ],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://medicaid.ohio.gov/specialized-roster-1",
+      "hostname": "medicaid.ohio.gov",
+      "bucket": "retryable",
+      "followupReason": "network_fetch_failed",
+      "runIds": [
+        "2026-06-18T00-46-05-621Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "fetch failed"
+      ],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.ahs.uic.edu/",
+      "hostname": "www.ahs.uic.edu",
+      "bucket": "retryable",
+      "followupReason": "network_fetch_failed",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "illinois"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "fetch failed"
+      ],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.dhs.pa.gov/specialized-roster-1",
+      "hostname": "www.dhs.pa.gov",
+      "bucket": "retryable",
+      "followupReason": "network_fetch_failed",
+      "runIds": [
+        "2026-06-18T00-46-05-621Z"
+      ],
+      "stateIds": [
+        "pennsylvania"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "fetch failed"
+      ],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-1",
+      "hostname": "www.health.ny.gov",
+      "bucket": "retryable",
+      "followupReason": "network_fetch_failed",
+      "runIds": [
+        "2026-06-18T00-46-05-621Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "fetch failed"
+      ],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://findahealthcenter.hrsa.gov/",
+      "hostname": "findahealthcenter.hrsa.gov",
+      "bucket": "source_repair",
+      "followupReason": "dns_lookup_failed",
+      "runIds": [
+        "2026-06-18T18-01-54-225Z"
+      ],
+      "stateIds": [
+        "national"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "dns_lookup_failed:ENOTFOUND"
+      ],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-10",
+      "hostname": "dch.georgia.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "georgia"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03075-georgia-providers-care-georgia-specialized-clinic-roster-10.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-11",
+      "hostname": "dch.georgia.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "georgia"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03076-georgia-providers-care-georgia-specialized-clinic-roster-11.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-12",
+      "hostname": "dch.georgia.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "georgia"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03077-georgia-providers-care-georgia-specialized-clinic-roster-12.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-13",
+      "hostname": "dch.georgia.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "georgia"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03078-georgia-providers-care-georgia-specialized-clinic-roster-13.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-14",
+      "hostname": "dch.georgia.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "georgia"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03079-georgia-providers-care-georgia-specialized-clinic-roster-14.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-15",
+      "hostname": "dch.georgia.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "georgia"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03080-georgia-providers-care-georgia-specialized-clinic-roster-15.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-16",
+      "hostname": "dch.georgia.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "georgia"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03081-georgia-providers-care-georgia-specialized-clinic-roster-16.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-17",
+      "hostname": "dch.georgia.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "georgia"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03082-georgia-providers-care-georgia-specialized-clinic-roster-17.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-18",
+      "hostname": "dch.georgia.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "georgia"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03083-georgia-providers-care-georgia-specialized-clinic-roster-18.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-19",
+      "hostname": "dch.georgia.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "georgia"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03084-georgia-providers-care-georgia-specialized-clinic-roster-19.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-2",
+      "hostname": "dch.georgia.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "georgia"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03085-georgia-providers-care-georgia-specialized-clinic-roster-2.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-20",
+      "hostname": "dch.georgia.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "georgia"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03086-georgia-providers-care-georgia-specialized-clinic-roster-20.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-21",
+      "hostname": "dch.georgia.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "georgia"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03087-georgia-providers-care-georgia-specialized-clinic-roster-21.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-3",
+      "hostname": "dch.georgia.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "georgia"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03088-georgia-providers-care-georgia-specialized-clinic-roster-3.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-4",
+      "hostname": "dch.georgia.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "georgia"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03089-georgia-providers-care-georgia-specialized-clinic-roster-4.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-5",
+      "hostname": "dch.georgia.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "georgia"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03090-georgia-providers-care-georgia-specialized-clinic-roster-5.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-6",
+      "hostname": "dch.georgia.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "georgia"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03091-georgia-providers-care-georgia-specialized-clinic-roster-6.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-7",
+      "hostname": "dch.georgia.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "georgia"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03092-georgia-providers-care-georgia-specialized-clinic-roster-7.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-8",
+      "hostname": "dch.georgia.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "georgia"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03093-georgia-providers-care-georgia-specialized-clinic-roster-8.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-9",
+      "hostname": "dch.georgia.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "georgia"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03094-georgia-providers-care-georgia-specialized-clinic-roster-9.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://hfs.illinois.gov/specialized-roster-10",
+      "hostname": "hfs.illinois.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "illinois"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03097-illinois-providers-care-illinois-specialized-clinic-roster-10.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://hfs.illinois.gov/specialized-roster-11",
+      "hostname": "hfs.illinois.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "illinois"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03098-illinois-providers-care-illinois-specialized-clinic-roster-11.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://hfs.illinois.gov/specialized-roster-12",
+      "hostname": "hfs.illinois.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "illinois"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03099-illinois-providers-care-illinois-specialized-clinic-roster-12.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://hfs.illinois.gov/specialized-roster-13",
+      "hostname": "hfs.illinois.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "illinois"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03100-illinois-providers-care-illinois-specialized-clinic-roster-13.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://hfs.illinois.gov/specialized-roster-14",
+      "hostname": "hfs.illinois.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "illinois"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03101-illinois-providers-care-illinois-specialized-clinic-roster-14.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://hfs.illinois.gov/specialized-roster-15",
+      "hostname": "hfs.illinois.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "illinois"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03102-illinois-providers-care-illinois-specialized-clinic-roster-15.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://hfs.illinois.gov/specialized-roster-16",
+      "hostname": "hfs.illinois.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "illinois"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03103-illinois-providers-care-illinois-specialized-clinic-roster-16.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://hfs.illinois.gov/specialized-roster-17",
+      "hostname": "hfs.illinois.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "illinois"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03104-illinois-providers-care-illinois-specialized-clinic-roster-17.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://hfs.illinois.gov/specialized-roster-18",
+      "hostname": "hfs.illinois.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "illinois"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03105-illinois-providers-care-illinois-specialized-clinic-roster-18.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://hfs.illinois.gov/specialized-roster-19",
+      "hostname": "hfs.illinois.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "illinois"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03106-illinois-providers-care-illinois-specialized-clinic-roster-19.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://hfs.illinois.gov/specialized-roster-2",
+      "hostname": "hfs.illinois.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "illinois"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03107-illinois-providers-care-illinois-specialized-clinic-roster-2.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://hfs.illinois.gov/specialized-roster-20",
+      "hostname": "hfs.illinois.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "illinois"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03108-illinois-providers-care-illinois-specialized-clinic-roster-20.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://hfs.illinois.gov/specialized-roster-21",
+      "hostname": "hfs.illinois.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "illinois"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03109-illinois-providers-care-illinois-specialized-clinic-roster-21.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://hfs.illinois.gov/specialized-roster-22",
+      "hostname": "hfs.illinois.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "illinois"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03110-illinois-providers-care-illinois-specialized-clinic-roster-22.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://hfs.illinois.gov/specialized-roster-23",
+      "hostname": "hfs.illinois.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "illinois"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03111-illinois-providers-care-illinois-specialized-clinic-roster-23.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://hfs.illinois.gov/specialized-roster-3",
+      "hostname": "hfs.illinois.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "illinois"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03112-illinois-providers-care-illinois-specialized-clinic-roster-3.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://hfs.illinois.gov/specialized-roster-4",
+      "hostname": "hfs.illinois.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "illinois"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03113-illinois-providers-care-illinois-specialized-clinic-roster-4.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://hfs.illinois.gov/specialized-roster-5",
+      "hostname": "hfs.illinois.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "illinois"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03114-illinois-providers-care-illinois-specialized-clinic-roster-5.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://hfs.illinois.gov/specialized-roster-6",
+      "hostname": "hfs.illinois.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "illinois"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03115-illinois-providers-care-illinois-specialized-clinic-roster-6.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://hfs.illinois.gov/specialized-roster-7",
+      "hostname": "hfs.illinois.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "illinois"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03116-illinois-providers-care-illinois-specialized-clinic-roster-7.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://hfs.illinois.gov/specialized-roster-8",
+      "hostname": "hfs.illinois.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "illinois"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03117-illinois-providers-care-illinois-specialized-clinic-roster-8.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://hfs.illinois.gov/specialized-roster-9",
+      "hostname": "hfs.illinois.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "illinois"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03118-illinois-providers-care-illinois-specialized-clinic-roster-9.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://medicaid.ohio.gov/specialized-roster-10",
+      "hostname": "medicaid.ohio.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03120-ohio-providers-care-ohio-specialized-clinic-roster-10.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://medicaid.ohio.gov/specialized-roster-11",
+      "hostname": "medicaid.ohio.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03121-ohio-providers-care-ohio-specialized-clinic-roster-11.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://medicaid.ohio.gov/specialized-roster-12",
+      "hostname": "medicaid.ohio.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03122-ohio-providers-care-ohio-specialized-clinic-roster-12.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://medicaid.ohio.gov/specialized-roster-13",
+      "hostname": "medicaid.ohio.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03123-ohio-providers-care-ohio-specialized-clinic-roster-13.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://medicaid.ohio.gov/specialized-roster-14",
+      "hostname": "medicaid.ohio.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03124-ohio-providers-care-ohio-specialized-clinic-roster-14.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://medicaid.ohio.gov/specialized-roster-15",
+      "hostname": "medicaid.ohio.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03125-ohio-providers-care-ohio-specialized-clinic-roster-15.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://medicaid.ohio.gov/specialized-roster-16",
+      "hostname": "medicaid.ohio.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03126-ohio-providers-care-ohio-specialized-clinic-roster-16.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://medicaid.ohio.gov/specialized-roster-17",
+      "hostname": "medicaid.ohio.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03127-ohio-providers-care-ohio-specialized-clinic-roster-17.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://medicaid.ohio.gov/specialized-roster-18",
+      "hostname": "medicaid.ohio.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03128-ohio-providers-care-ohio-specialized-clinic-roster-18.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://medicaid.ohio.gov/specialized-roster-19",
+      "hostname": "medicaid.ohio.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03129-ohio-providers-care-ohio-specialized-clinic-roster-19.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://medicaid.ohio.gov/specialized-roster-2",
+      "hostname": "medicaid.ohio.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03130-ohio-providers-care-ohio-specialized-clinic-roster-2.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://medicaid.ohio.gov/specialized-roster-20",
+      "hostname": "medicaid.ohio.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03131-ohio-providers-care-ohio-specialized-clinic-roster-20.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://medicaid.ohio.gov/specialized-roster-21",
+      "hostname": "medicaid.ohio.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03132-ohio-providers-care-ohio-specialized-clinic-roster-21.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://medicaid.ohio.gov/specialized-roster-22",
+      "hostname": "medicaid.ohio.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03133-ohio-providers-care-ohio-specialized-clinic-roster-22.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://medicaid.ohio.gov/specialized-roster-23",
+      "hostname": "medicaid.ohio.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03134-ohio-providers-care-ohio-specialized-clinic-roster-23.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://medicaid.ohio.gov/specialized-roster-24",
+      "hostname": "medicaid.ohio.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03135-ohio-providers-care-ohio-specialized-clinic-roster-24.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://medicaid.ohio.gov/specialized-roster-25",
+      "hostname": "medicaid.ohio.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03136-ohio-providers-care-ohio-specialized-clinic-roster-25.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://medicaid.ohio.gov/specialized-roster-26",
+      "hostname": "medicaid.ohio.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03137-ohio-providers-care-ohio-specialized-clinic-roster-26.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://medicaid.ohio.gov/specialized-roster-27",
+      "hostname": "medicaid.ohio.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03138-ohio-providers-care-ohio-specialized-clinic-roster-27.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://medicaid.ohio.gov/specialized-roster-28",
+      "hostname": "medicaid.ohio.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03139-ohio-providers-care-ohio-specialized-clinic-roster-28.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://medicaid.ohio.gov/specialized-roster-29",
+      "hostname": "medicaid.ohio.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03140-ohio-providers-care-ohio-specialized-clinic-roster-29.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://medicaid.ohio.gov/specialized-roster-3",
+      "hostname": "medicaid.ohio.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03141-ohio-providers-care-ohio-specialized-clinic-roster-3.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://medicaid.ohio.gov/specialized-roster-30",
+      "hostname": "medicaid.ohio.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03142-ohio-providers-care-ohio-specialized-clinic-roster-30.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://medicaid.ohio.gov/specialized-roster-4",
+      "hostname": "medicaid.ohio.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03143-ohio-providers-care-ohio-specialized-clinic-roster-4.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://medicaid.ohio.gov/specialized-roster-5",
+      "hostname": "medicaid.ohio.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03144-ohio-providers-care-ohio-specialized-clinic-roster-5.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://medicaid.ohio.gov/specialized-roster-6",
+      "hostname": "medicaid.ohio.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03145-ohio-providers-care-ohio-specialized-clinic-roster-6.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://medicaid.ohio.gov/specialized-roster-7",
+      "hostname": "medicaid.ohio.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03146-ohio-providers-care-ohio-specialized-clinic-roster-7.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://medicaid.ohio.gov/specialized-roster-8",
+      "hostname": "medicaid.ohio.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03147-ohio-providers-care-ohio-specialized-clinic-roster-8.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://medicaid.ohio.gov/specialized-roster-9",
+      "hostname": "medicaid.ohio.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03148-ohio-providers-care-ohio-specialized-clinic-roster-9.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    }
+  ],
+  "rows": [
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.dollychildrens.org/",
+      "hostname": "www.dollychildrens.org",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-19T00-52-46-886Z",
+        "2026-06-19T00-03-58-926Z",
+        "2026-06-18T04-02-08-899Z",
+        "2026-06-18T03-59-52-969Z",
+        "2026-06-18T03-58-19-669Z",
+        "2026-06-18T03-57-17-974Z",
+        "2026-06-18T03-55-57-585Z",
+        "2026-06-18T03-55-22-620Z",
+        "2026-06-18T03-54-27-243Z",
+        "2026-06-18T03-53-13-164Z",
+        "2026-06-18T03-51-48-375Z",
+        "2026-06-18T03-49-50-130Z",
+        "2026-06-18T03-49-03-735Z",
+        "2026-06-18T03-35-00-610Z"
+      ],
+      "stateIds": [
+        "tennessee"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-18T03-35-00-610Z/pages/00001-tennessee-providers-care-dolly-parton-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-49-03-735Z/pages/00005-tennessee-providers-care-dolly-parton-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-49-50-130Z/pages/00005-tennessee-providers-care-dolly-parton-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-51-48-375Z/pages/00004-tennessee-providers-care-dolly-parton-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-53-13-164Z/pages/00004-tennessee-providers-care-dolly-parton-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-54-27-243Z/pages/00003-tennessee-providers-care-dolly-parton-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-55-22-620Z/pages/00003-tennessee-providers-care-dolly-parton-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-55-57-585Z/pages/00003-tennessee-providers-care-dolly-parton-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-57-17-974Z/pages/00003-tennessee-providers-care-dolly-parton-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-58-19-669Z/pages/00003-tennessee-providers-care-dolly-parton-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-59-52-969Z/pages/00002-tennessee-providers-care-dolly-parton-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T04-02-08-899Z/pages/00002-tennessee-providers-care-dolly-parton-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-19T00-03-58-926Z/pages/00004-tennessee-providers-care-dolly-parton-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-19T00-52-46-886Z/pages/00004-tennessee-providers-care-dolly-parton-children-s-hospital.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 14
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.chop.edu/locations/chop-care-center-king-prussia",
+      "hostname": "www.chop.edu",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-18T04-02-08-899Z",
+        "2026-06-18T03-59-52-969Z",
+        "2026-06-18T03-58-19-669Z",
+        "2026-06-18T03-57-17-974Z",
+        "2026-06-18T03-55-57-585Z",
+        "2026-06-18T03-55-22-620Z",
+        "2026-06-18T03-54-27-243Z",
+        "2026-06-18T03-53-13-164Z",
+        "2026-06-18T03-51-48-375Z",
+        "2026-06-18T03-49-50-130Z",
+        "2026-06-18T03-49-03-735Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "pennsylvania"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/02658-pennsylvania-providers-care-children-s-hospital-of-philadelphia-chop-specialty-care-center-king-of-prussia.html",
+        "data/source-acquisition-runs/2026-06-18T03-49-03-735Z/pages/00004-pennsylvania-providers-care-children-s-hospital-of-philadelphia-chop-specialty-care-center-king-of-prussia.html",
+        "data/source-acquisition-runs/2026-06-18T03-49-50-130Z/pages/00004-pennsylvania-providers-care-children-s-hospital-of-philadelphia-chop-specialty-care-center-king-of-prussia.html",
+        "data/source-acquisition-runs/2026-06-18T03-51-48-375Z/pages/00003-pennsylvania-providers-care-children-s-hospital-of-philadelphia-chop-specialty-care-center-king-of-prussia.html",
+        "data/source-acquisition-runs/2026-06-18T03-53-13-164Z/pages/00003-pennsylvania-providers-care-children-s-hospital-of-philadelphia-chop-specialty-care-center-king-of-prussia.html",
+        "data/source-acquisition-runs/2026-06-18T03-54-27-243Z/pages/00002-pennsylvania-providers-care-children-s-hospital-of-philadelphia-chop-specialty-care-center-king-of-prussia.html",
+        "data/source-acquisition-runs/2026-06-18T03-55-22-620Z/pages/00002-pennsylvania-providers-care-children-s-hospital-of-philadelphia-chop-specialty-care-center-king-of-prussia.html",
+        "data/source-acquisition-runs/2026-06-18T03-55-57-585Z/pages/00002-pennsylvania-providers-care-children-s-hospital-of-philadelphia-chop-specialty-care-center-king-of-prussia.html",
+        "data/source-acquisition-runs/2026-06-18T03-57-17-974Z/pages/00002-pennsylvania-providers-care-children-s-hospital-of-philadelphia-chop-specialty-care-center-king-of-prussia.html",
+        "data/source-acquisition-runs/2026-06-18T03-58-19-669Z/pages/00002-pennsylvania-providers-care-children-s-hospital-of-philadelphia-chop-specialty-care-center-king-of-prussia.html",
+        "data/source-acquisition-runs/2026-06-18T03-59-52-969Z/pages/00001-pennsylvania-providers-care-children-s-hospital-of-philadelphia-chop-specialty-care-center-king-of-prussia.html",
+        "data/source-acquisition-runs/2026-06-18T04-02-08-899Z/pages/00001-pennsylvania-providers-care-children-s-hospital-of-philadelphia-chop-specialty-care-center-king-of-prussia.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 12
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.childrensmn.org/locations",
+      "hostname": "www.childrensmn.org",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-19T00-52-46-886Z",
+        "2026-06-18T04-02-08-899Z",
+        "2026-06-18T03-59-52-969Z",
+        "2026-06-18T03-58-19-669Z",
+        "2026-06-18T03-55-57-585Z",
+        "2026-06-18T03-53-13-164Z",
+        "2026-06-18T03-49-50-130Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "minnesota"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/02655-minnesota-providers-care-children-s-minnesota-minneapolis-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-49-50-130Z/pages/00016-minnesota-providers-care-children-s-minnesota-minneapolis-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-53-13-164Z/pages/00011-minnesota-providers-care-children-s-minnesota-minneapolis-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-55-57-585Z/pages/00010-minnesota-providers-care-children-s-minnesota-minneapolis-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-58-19-669Z/pages/00010-minnesota-providers-care-children-s-minnesota-minneapolis-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-59-52-969Z/pages/00003-minnesota-providers-care-children-s-minnesota-minneapolis-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T04-02-08-899Z/pages/00003-minnesota-providers-care-children-s-minnesota-minneapolis-hospital.html",
+        "data/source-acquisition-runs/2026-06-19T00-52-46-886Z/pages/00008-minnesota-providers-care-children-s-minnesota-minneapolis-hospital.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 8
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.rileychildrens.org/",
+      "hostname": "www.rileychildrens.org",
+      "bucket": "retryable",
+      "followupReason": "network_timeout",
+      "runIds": [
+        "2026-06-19T00-52-46-886Z",
+        "2026-06-18T04-04-47-221Z",
+        "2026-06-18T04-03-06-159Z",
+        "2026-06-18T03-58-19-669Z",
+        "2026-06-18T03-55-57-585Z",
+        "2026-06-18T03-53-13-164Z",
+        "2026-06-18T03-10-54-735Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "indiana"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "The operation was aborted due to timeout",
+        "request_timed_out:TIMEOUT"
+      ],
+      "repeatCount": 8
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.chla.org/",
+      "hostname": "www.chla.org",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-18T04-02-08-899Z",
+        "2026-06-18T03-59-52-969Z",
+        "2026-06-18T03-58-19-669Z",
+        "2026-06-18T03-55-57-585Z",
+        "2026-06-18T03-53-13-164Z",
+        "2026-06-18T03-49-50-130Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "california"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/02657-california-providers-care-children-s-hospital-los-angeles.html",
+        "data/source-acquisition-runs/2026-06-18T03-49-50-130Z/pages/00017-california-providers-care-children-s-hospital-los-angeles.html",
+        "data/source-acquisition-runs/2026-06-18T03-53-13-164Z/pages/00012-california-providers-care-children-s-hospital-los-angeles.html",
+        "data/source-acquisition-runs/2026-06-18T03-55-57-585Z/pages/00011-california-providers-care-children-s-hospital-los-angeles.html",
+        "data/source-acquisition-runs/2026-06-18T03-58-19-669Z/pages/00011-california-providers-care-children-s-hospital-los-angeles.html",
+        "data/source-acquisition-runs/2026-06-18T03-59-52-969Z/pages/00004-california-providers-care-children-s-hospital-los-angeles.html",
+        "data/source-acquisition-runs/2026-06-18T04-02-08-899Z/pages/00004-california-providers-care-children-s-hospital-los-angeles.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 7
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.billingsclinic.com/contact-us",
+      "hostname": "www.billingsclinic.com",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-19T00-52-46-886Z",
+        "2026-06-18T02-30-42-579Z",
+        "2026-06-18T02-27-04-351Z",
+        "2026-06-18T02-25-52-149Z",
+        "2026-06-18T02-23-35-170Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "montana"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/02630-montana-providers-care-billings-clinic-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T02-23-35-170Z/pages/00023-montana-providers-care-billings-clinic-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T02-25-52-149Z/pages/00023-montana-providers-care-billings-clinic-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T02-27-04-351Z/pages/00023-montana-providers-care-billings-clinic-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T02-30-42-579Z/pages/00023-montana-providers-care-billings-clinic-hospital.html",
+        "data/source-acquisition-runs/2026-06-19T00-52-46-886Z/pages/00006-montana-providers-care-billings-clinic-hospital.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 6
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.hopkinsmedicine.org/johns-hopkins-childrens-center",
+      "hostname": "www.hopkinsmedicine.org",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-19T00-52-46-886Z",
+        "2026-06-18T03-58-19-669Z",
+        "2026-06-18T03-55-57-585Z",
+        "2026-06-18T03-53-13-164Z",
+        "2026-06-18T03-49-50-130Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "maryland"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/02784-maryland-providers-care-johns-hopkins-children-s-center.html",
+        "data/source-acquisition-runs/2026-06-18T03-49-50-130Z/pages/00024-maryland-providers-care-johns-hopkins-children-s-center.html",
+        "data/source-acquisition-runs/2026-06-18T03-53-13-164Z/pages/00017-maryland-providers-care-johns-hopkins-children-s-center.html",
+        "data/source-acquisition-runs/2026-06-18T03-55-57-585Z/pages/00016-maryland-providers-care-johns-hopkins-children-s-center.html",
+        "data/source-acquisition-runs/2026-06-18T03-58-19-669Z/pages/00016-maryland-providers-care-johns-hopkins-children-s-center.html",
+        "data/source-acquisition-runs/2026-06-19T00-52-46-886Z/pages/00009-maryland-providers-care-johns-hopkins-children-s-center.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 6
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.montefiore.org/rose-f-kennedy-center",
+      "hostname": "www.montefiore.org",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-19T00-52-46-886Z",
+        "2026-06-19T00-03-58-926Z",
+        "2026-06-18T02-49-01-327Z",
+        "2026-06-18T02-45-25-068Z",
+        "2026-06-18T02-18-57-741Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03309-new-york-providers-care-montefiore-rose-f-kennedy-center.html",
+        "data/source-acquisition-runs/2026-06-18T02-18-57-741Z/pages/00015-new-york-providers-care-montefiore-rose-f-kennedy-center.html",
+        "data/source-acquisition-runs/2026-06-18T02-45-25-068Z/pages/00018-new-york-providers-care-montefiore-rose-f-kennedy-center.html",
+        "data/source-acquisition-runs/2026-06-18T02-49-01-327Z/pages/00018-new-york-providers-care-montefiore-rose-f-kennedy-center.html",
+        "data/source-acquisition-runs/2026-06-19T00-03-58-926Z/pages/00005-new-york-providers-care-montefiore-rose-f-kennedy-center.html",
+        "data/source-acquisition-runs/2026-06-19T00-52-46-886Z/pages/00005-new-york-providers-care-montefiore-rose-f-kennedy-center.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 6
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.geisinger.org/patient-care/specialties-and-services/autism-and-developmental-medicine-institute",
+      "hostname": "www.geisinger.org",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-18T04-02-08-899Z",
+        "2026-06-18T03-58-19-669Z",
+        "2026-06-18T03-55-57-585Z",
+        "2026-06-18T03-53-13-164Z",
+        "2026-06-18T03-49-50-130Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "pennsylvania"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/02749-pennsylvania-providers-care-geisinger-autism-developmental-medicine-institute-admi.html",
+        "data/source-acquisition-runs/2026-06-18T03-49-50-130Z/pages/00022-pennsylvania-providers-care-geisinger-autism-developmental-medicine-institute-admi.html",
+        "data/source-acquisition-runs/2026-06-18T03-53-13-164Z/pages/00015-pennsylvania-providers-care-geisinger-autism-developmental-medicine-institute-admi.html",
+        "data/source-acquisition-runs/2026-06-18T03-55-57-585Z/pages/00014-pennsylvania-providers-care-geisinger-autism-developmental-medicine-institute-admi.html",
+        "data/source-acquisition-runs/2026-06-18T03-58-19-669Z/pages/00014-pennsylvania-providers-care-geisinger-autism-developmental-medicine-institute-admi.html",
+        "data/source-acquisition-runs/2026-06-18T04-02-08-899Z/pages/00005-pennsylvania-providers-care-geisinger-autism-developmental-medicine-institute-admi.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 6
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.chla.org/autism-and-developmental-medicine",
+      "hostname": "www.chla.org",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-19T00-52-46-886Z",
+        "2026-06-19T00-03-58-926Z",
+        "2026-06-18T02-49-01-327Z",
+        "2026-06-18T02-45-25-068Z",
+        "2026-06-18T02-18-57-741Z"
+      ],
+      "stateIds": [
+        "california"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-18T02-18-57-741Z/pages/00008-california-providers-care-children-s-hospital-los-angeles-boone-fetter-clinic.html",
+        "data/source-acquisition-runs/2026-06-18T02-45-25-068Z/pages/00010-california-providers-care-children-s-hospital-los-angeles-boone-fetter-clinic.html",
+        "data/source-acquisition-runs/2026-06-18T02-49-01-327Z/pages/00010-california-providers-care-children-s-hospital-los-angeles-boone-fetter-clinic.html",
+        "data/source-acquisition-runs/2026-06-19T00-03-58-926Z/pages/00003-california-providers-care-children-s-hospital-los-angeles-boone-fetter-clinic.html",
+        "data/source-acquisition-runs/2026-06-19T00-52-46-886Z/pages/00003-california-providers-care-children-s-hospital-los-angeles-boone-fetter-clinic.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 5
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.hopkinsallchildrens.org/",
+      "hostname": "www.hopkinsallchildrens.org",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-18T03-58-19-669Z",
+        "2026-06-18T03-55-57-585Z",
+        "2026-06-18T03-53-13-164Z",
+        "2026-06-18T03-49-50-130Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "florida"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/02783-florida-providers-care-johns-hopkins-all-children-s-hospital-developmental-medicine.html",
+        "data/source-acquisition-runs/2026-06-18T03-49-50-130Z/pages/00023-florida-providers-care-johns-hopkins-all-children-s-hospital-developmental-medicine.html",
+        "data/source-acquisition-runs/2026-06-18T03-53-13-164Z/pages/00016-florida-providers-care-johns-hopkins-all-children-s-hospital-developmental-medicine.html",
+        "data/source-acquisition-runs/2026-06-18T03-55-57-585Z/pages/00015-florida-providers-care-johns-hopkins-all-children-s-hospital-developmental-medicine.html",
+        "data/source-acquisition-runs/2026-06-18T03-58-19-669Z/pages/00015-florida-providers-care-johns-hopkins-all-children-s-hospital-developmental-medicine.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 5
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://iuhealth.org/",
+      "hostname": "iuhealth.org",
+      "bucket": "retryable",
+      "followupReason": "network_timeout",
+      "runIds": [
+        "2026-06-19T00-52-46-886Z",
+        "2026-06-19T00-03-58-926Z",
+        "2026-06-18T02-22-12-511Z",
+        "2026-06-18T02-18-57-741Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "indiana"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "The operation was aborted due to timeout",
+        "request_timed_out:TIMEOUT"
+      ],
+      "repeatCount": 5
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.anthc.org/what-we-do/alaska-native-medical-center/pediatrics",
+      "hostname": "anthc.org",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-18T02-30-42-579Z",
+        "2026-06-18T02-27-04-351Z",
+        "2026-06-18T02-25-52-149Z",
+        "2026-06-18T02-23-35-170Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "alaska"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/02617-alaska-providers-care-alaska-native-medical-center-pediatrics.html",
+        "data/source-acquisition-runs/2026-06-18T02-23-35-170Z/pages/00020-alaska-providers-care-alaska-native-medical-center-pediatrics.html",
+        "data/source-acquisition-runs/2026-06-18T02-25-52-149Z/pages/00020-alaska-providers-care-alaska-native-medical-center-pediatrics.html",
+        "data/source-acquisition-runs/2026-06-18T02-27-04-351Z/pages/00020-alaska-providers-care-alaska-native-medical-center-pediatrics.html",
+        "data/source-acquisition-runs/2026-06-18T02-30-42-579Z/pages/00020-alaska-providers-care-alaska-native-medical-center-pediatrics.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 5
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.mottchildren.org/",
+      "hostname": "www.mottchildren.org",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-18T03-58-19-669Z",
+        "2026-06-18T03-55-57-585Z",
+        "2026-06-18T03-53-13-164Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "michigan"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03420-michigan-providers-care-c-s-mott-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-53-13-164Z/pages/00019-michigan-providers-care-c-s-mott-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-55-57-585Z/pages/00018-michigan-providers-care-c-s-mott-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-58-19-669Z/pages/00018-michigan-providers-care-c-s-mott-children-s-hospital.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 4
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.ahs.uic.edu/",
+      "hostname": "www.ahs.uic.edu",
+      "bucket": "blocked",
+      "followupReason": "needs_review_unknown",
+      "runIds": [
+        "2026-06-19T00-52-46-886Z",
+        "2026-06-19T00-03-58-926Z",
+        "2026-06-18T02-49-01-327Z",
+        "2026-06-18T02-45-25-068Z"
+      ],
+      "stateIds": [
+        "illinois"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "fetch_failed:UNABLE_TO_VERIFY_LEAF_SIGNATURE"
+      ],
+      "repeatCount": 4
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.rileychildrens.org/contact-and-locations/riley-hospital-for-children-at-iu-health",
+      "hostname": "www.rileychildrens.org",
+      "bucket": "retryable",
+      "followupReason": "network_timeout",
+      "runIds": [
+        "2026-06-18T04-04-47-221Z",
+        "2026-06-18T04-03-06-159Z",
+        "2026-06-18T03-10-54-735Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "indiana"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "The operation was aborted due to timeout",
+        "request_timed_out:TIMEOUT"
+      ],
+      "repeatCount": 4
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.cookchildrens.org/services/child-development",
+      "hostname": "www.cookchildrens.org",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-18T02-49-01-327Z",
+        "2026-06-18T02-45-25-068Z",
+        "2026-06-18T02-18-57-741Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "texas"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03262-texas-providers-care-cook-children-s-child-development-center.html",
+        "data/source-acquisition-runs/2026-06-18T02-18-57-741Z/pages/00010-texas-providers-care-cook-children-s-child-development-center.html",
+        "data/source-acquisition-runs/2026-06-18T02-45-25-068Z/pages/00013-texas-providers-care-cook-children-s-child-development-center.html",
+        "data/source-acquisition-runs/2026-06-18T02-49-01-327Z/pages/00013-texas-providers-care-cook-children-s-child-development-center.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 4
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.nationwidechildrens.org/specialties/autism-center",
+      "hostname": "www.nationwidechildrens.org",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-18T02-49-01-327Z",
+        "2026-06-18T02-45-25-068Z",
+        "2026-06-18T02-18-57-741Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03311-ohio-providers-care-nationwide-children-s-hospital-center-for-autism.html",
+        "data/source-acquisition-runs/2026-06-18T02-18-57-741Z/pages/00016-ohio-providers-care-nationwide-children-s-hospital-center-for-autism.html",
+        "data/source-acquisition-runs/2026-06-18T02-45-25-068Z/pages/00019-ohio-providers-care-nationwide-children-s-hospital-center-for-autism.html",
+        "data/source-acquisition-runs/2026-06-18T02-49-01-327Z/pages/00019-ohio-providers-care-nationwide-children-s-hospital-center-for-autism.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 4
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.nicklauschildrens.org/locations/dan-marino-outpatient-center",
+      "hostname": "www.nicklauschildrens.org",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-18T02-49-01-327Z",
+        "2026-06-18T02-45-25-068Z",
+        "2026-06-18T02-18-57-741Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "florida"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03314-florida-providers-care-nicklaus-children-s-hospital-dan-marino-center.html",
+        "data/source-acquisition-runs/2026-06-18T02-18-57-741Z/pages/00017-florida-providers-care-nicklaus-children-s-hospital-dan-marino-center.html",
+        "data/source-acquisition-runs/2026-06-18T02-45-25-068Z/pages/00020-florida-providers-care-nicklaus-children-s-hospital-dan-marino-center.html",
+        "data/source-acquisition-runs/2026-06-18T02-49-01-327Z/pages/00020-florida-providers-care-nicklaus-children-s-hospital-dan-marino-center.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 4
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.pennstatehealth.org/services-treatments/developmental-pediatrics",
+      "hostname": "www.pennstatehealth.org",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-18T03-58-19-669Z",
+        "2026-06-18T03-55-57-585Z",
+        "2026-06-18T03-53-13-164Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "pennsylvania"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/02919-pennsylvania-providers-care-penn-state-health-children-s-hospital-developmental-pediatrics.html",
+        "data/source-acquisition-runs/2026-06-18T03-53-13-164Z/pages/00021-pennsylvania-providers-care-penn-state-health-children-s-hospital-developmental-pediatrics.html",
+        "data/source-acquisition-runs/2026-06-18T03-55-57-585Z/pages/00020-pennsylvania-providers-care-penn-state-health-children-s-hospital-developmental-pediatrics.html",
+        "data/source-acquisition-runs/2026-06-18T03-58-19-669Z/pages/00020-pennsylvania-providers-care-penn-state-health-children-s-hospital-developmental-pediatrics.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 4
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.stchristophershospital.com/services/developmental-pediatrics",
+      "hostname": "www.stchristophershospital.com",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-18T03-58-19-669Z",
+        "2026-06-18T03-55-57-585Z",
+        "2026-06-18T03-53-13-164Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "pennsylvania"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/02999-pennsylvania-providers-care-st-christopher-s-hospital-for-children-developmental-pediatrics.html",
+        "data/source-acquisition-runs/2026-06-18T03-53-13-164Z/pages/00024-pennsylvania-providers-care-st-christopher-s-hospital-for-children-developmental-pediatrics.html",
+        "data/source-acquisition-runs/2026-06-18T03-55-57-585Z/pages/00023-pennsylvania-providers-care-st-christopher-s-hospital-for-children-developmental-pediatrics.html",
+        "data/source-acquisition-runs/2026-06-18T03-58-19-669Z/pages/00023-pennsylvania-providers-care-st-christopher-s-hospital-for-children-developmental-pediatrics.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 4
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.texaschildrens.org/departments/autism-center",
+      "hostname": "www.texaschildrens.org",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-18T02-49-01-327Z",
+        "2026-06-18T02-45-25-068Z",
+        "2026-06-18T02-18-57-741Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "texas"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03327-texas-providers-care-texas-children-s-hospital-autism-center.html",
+        "data/source-acquisition-runs/2026-06-18T02-18-57-741Z/pages/00020-texas-providers-care-texas-children-s-hospital-autism-center.html",
+        "data/source-acquisition-runs/2026-06-18T02-45-25-068Z/pages/00023-texas-providers-care-texas-children-s-hospital-autism-center.html",
+        "data/source-acquisition-runs/2026-06-18T02-49-01-327Z/pages/00023-texas-providers-care-texas-children-s-hospital-autism-center.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 4
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.childrensdmc.org/",
+      "hostname": "www.childrensdmc.org",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-19T00-52-46-886Z",
+        "2026-06-18T03-15-20-096Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "michigan"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03376-michigan-providers-care-children-s-hospital-of-michigan.html",
+        "data/source-acquisition-runs/2026-06-18T03-15-20-096Z/pages/00001-michigan-providers-care-children-s-hospital-of-michigan.html",
+        "data/source-acquisition-runs/2026-06-19T00-52-46-886Z/pages/00007-michigan-providers-care-children-s-hospital-of-michigan.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 3
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.upstate.edu/gch",
+      "hostname": "www.upstate.edu",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-18T03-58-19-669Z",
+        "2026-06-18T03-55-57-585Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03431-new-york-providers-care-upstate-golisano-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-55-57-585Z/pages/00024-new-york-providers-care-upstate-golisano-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-58-19-669Z/pages/00024-new-york-providers-care-upstate-golisano-children-s-hospital.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 3
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.uth.edu/",
+      "hostname": "www.uth.edu",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-18T03-58-19-669Z",
+        "2026-06-18T03-55-57-585Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "texas"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03040-texas-providers-care-ut-health-houston-center-for-autism-and-developmental-disabilities.html",
+        "data/source-acquisition-runs/2026-06-18T03-55-57-585Z/pages/00025-texas-providers-care-ut-health-houston-center-for-autism-and-developmental-disabilities.html",
+        "data/source-acquisition-runs/2026-06-18T03-58-19-669Z/pages/00025-texas-providers-care-ut-health-houston-center-for-autism-and-developmental-disabilities.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 3
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://iuhealth.org/",
+      "hostname": "iuhealth.org",
+      "bucket": "blocked",
+      "followupReason": "needs_review_unknown",
+      "runIds": [
+        "2026-06-18T02-49-01-327Z",
+        "2026-06-18T02-45-25-068Z",
+        "2026-06-18T02-26-48-456Z"
+      ],
+      "stateIds": [
+        "indiana"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "request_timed_out:TIMEOUT"
+      ],
+      "repeatCount": 3
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://asac.psy.miami.edu/",
+      "hostname": "asac.psy.miami.edu",
+      "bucket": "retryable",
+      "followupReason": "network_fetch_failed",
+      "runIds": [
+        "2026-06-18T02-25-52-149Z",
+        "2026-06-18T02-23-35-170Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "florida"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "fetch failed"
+      ],
+      "repeatCount": 3
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://can.uflhealth.org/",
+      "hostname": "can.uflhealth.org",
+      "bucket": "retryable",
+      "followupReason": "network_fetch_failed",
+      "runIds": [
+        "2026-06-18T02-25-52-149Z",
+        "2026-06-18T02-23-35-170Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "florida"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "fetch failed"
+      ],
+      "repeatCount": 3
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.chp.edu/our-services/developmental-pediatrics",
+      "hostname": "www.chp.edu",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-18T02-49-01-327Z",
+        "2026-06-18T02-45-25-068Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "pennsylvania"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/02659-pennsylvania-providers-care-upmc-children-s-hospital-of-pittsburgh-child-development-unit.html",
+        "data/source-acquisition-runs/2026-06-18T02-45-25-068Z/pages/00012-pennsylvania-providers-care-upmc-children-s-hospital-of-pittsburgh-child-development-unit.html",
+        "data/source-acquisition-runs/2026-06-18T02-49-01-327Z/pages/00012-pennsylvania-providers-care-upmc-children-s-hospital-of-pittsburgh-child-development-unit.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 3
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.dollychildrens.org/about-us/our-locations/dolly-parton-childrens-hospital-main-campus",
+      "hostname": "www.dollychildrens.org",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-18T04-03-06-159Z",
+        "2026-06-18T03-35-00-610Z"
+      ],
+      "stateIds": [
+        "tennessee"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-18T03-35-00-610Z/pages/00002-tennessee-providers-care-dolly-parton-children-s-hospital-main-campus.html",
+        "data/source-acquisition-runs/2026-06-18T04-03-06-159Z/pages/00001-tennessee-providers-care-dolly-parton-children-s-hospital-main-campus.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.dollychildrens.org/medical-services/specialty-clinics",
+      "hostname": "www.dollychildrens.org",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-18T04-03-06-159Z",
+        "2026-06-18T03-35-00-610Z"
+      ],
+      "stateIds": [
+        "tennessee"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-18T03-35-00-610Z/pages/00003-tennessee-providers-care-dolly-parton-children-s-hospital-specialty-clinics.html",
+        "data/source-acquisition-runs/2026-06-18T04-03-06-159Z/pages/00004-tennessee-providers-care-dolly-parton-children-s-hospital-specialty-clinics.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-1",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-18T00-50-05-745Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03177-new-york-providers-care-newyork-specialized-clinic-roster-1.html",
+        "data/source-acquisition-runs/2026-06-18T00-50-05-745Z/pages/00005-new-york-providers-care-newyork-specialized-clinic-roster-1.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.spectrumhealth.org/locations/spectrum-health-hospitals-helen-devos-childrens-hospital",
+      "hostname": "www.spectrumhealth.org",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-18T03-15-20-096Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "michigan"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03425-michigan-providers-care-helen-devos-children-s-hospital.html",
+        "data/source-acquisition-runs/2026-06-18T03-15-20-096Z/pages/00003-michigan-providers-care-helen-devos-children-s-hospital.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.uofmhealth.org/our-care/specialties-services/autism-spectrum-disorders-appointments",
+      "hostname": "www.uofmhealth.org",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-18T03-15-20-096Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "michigan"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03039-michigan-providers-care-university-of-michigan-health-autism-spectrum-disorders-clinic.html",
+        "data/source-acquisition-runs/2026-06-18T03-15-20-096Z/pages/00004-michigan-providers-care-university-of-michigan-health-autism-spectrum-disorders-clinic.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://asac.psy.miami.edu/",
+      "hostname": "asac.psy.miami.edu",
+      "bucket": "blocked",
+      "followupReason": "needs_review_unknown",
+      "runIds": [
+        "2026-06-18T02-30-42-579Z",
+        "2026-06-18T02-27-04-351Z"
+      ],
+      "stateIds": [
+        "florida"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "dns_lookup_failed:ENOTFOUND"
+      ],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://can.uflhealth.org/",
+      "hostname": "can.uflhealth.org",
+      "bucket": "blocked",
+      "followupReason": "needs_review_unknown",
+      "runIds": [
+        "2026-06-18T02-30-42-579Z",
+        "2026-06-18T02-27-04-351Z"
+      ],
+      "stateIds": [
+        "florida"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "dns_lookup_failed:ENOTFOUND"
+      ],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-1",
+      "hostname": "dch.georgia.gov",
+      "bucket": "retryable",
+      "followupReason": "network_fetch_failed",
+      "runIds": [
+        "2026-06-18T00-46-05-621Z",
+        "2026-06-18T00-45-09-758Z"
+      ],
+      "stateIds": [
+        "georgia"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "fetch failed"
+      ],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.childrensaterlanger.org/",
+      "hostname": "www.childrensaterlanger.org",
+      "bucket": "source_repair",
+      "followupReason": "dns_lookup_failed",
+      "runIds": [
+        "2026-06-18T03-32-14-326Z",
+        "2026-06-18T03-20-49-874Z"
+      ],
+      "stateIds": [
+        "tennessee"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "dns_lookup_failed:ENOTFOUND"
+      ],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.childrenshospitalvanderbilt.org/",
+      "hostname": "www.childrenshospitalvanderbilt.org",
+      "bucket": "source_repair",
+      "followupReason": "dns_lookup_failed",
+      "runIds": [
+        "2026-06-18T03-32-14-326Z",
+        "2026-06-18T03-20-49-874Z"
+      ],
+      "stateIds": [
+        "tennessee"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "dns_lookup_failed:ENOTFOUND"
+      ],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.lebonheur.org/",
+      "hostname": "www.lebonheur.org",
+      "bucket": "source_repair",
+      "followupReason": "dns_lookup_failed",
+      "runIds": [
+        "2026-06-18T03-32-14-326Z",
+        "2026-06-18T03-20-49-874Z"
+      ],
+      "stateIds": [
+        "tennessee"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "dns_lookup_failed:ENOTFOUND"
+      ],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.lsuhs.edu/",
+      "hostname": "www.lsuhs.edu",
+      "bucket": "source_repair",
+      "followupReason": "dns_lookup_failed",
+      "runIds": [
+        "2026-06-18T03-32-14-087Z",
+        "2026-06-18T03-18-18-042Z"
+      ],
+      "stateIds": [
+        "louisiana"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "dns_lookup_failed:ENOTFOUND"
+      ],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.manningchildrens.org/",
+      "hostname": "www.manningchildrens.org",
+      "bucket": "source_repair",
+      "followupReason": "dns_lookup_failed",
+      "runIds": [
+        "2026-06-18T03-32-14-087Z",
+        "2026-06-18T03-18-18-042Z"
+      ],
+      "stateIds": [
+        "louisiana"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "dns_lookup_failed:ENOTFOUND"
+      ],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.ochsner.org/",
+      "hostname": "www.ochsner.org",
+      "bucket": "source_repair",
+      "followupReason": "dns_lookup_failed",
+      "runIds": [
+        "2026-06-18T03-32-14-087Z",
+        "2026-06-18T03-18-18-042Z"
+      ],
+      "stateIds": [
+        "louisiana"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "dns_lookup_failed:ENOTFOUND"
+      ],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-1",
+      "hostname": "dch.georgia.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-18T00-50-05-745Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "georgia"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03074-georgia-providers-care-georgia-specialized-clinic-roster-1.html",
+        "data/source-acquisition-runs/2026-06-18T00-50-05-745Z/pages/00001-georgia-providers-care-georgia-specialized-clinic-roster-1.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://hfs.illinois.gov/specialized-roster-1",
+      "hostname": "hfs.illinois.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-18T00-50-05-745Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "illinois"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03096-illinois-providers-care-illinois-specialized-clinic-roster-1.html",
+        "data/source-acquisition-runs/2026-06-18T00-50-05-745Z/pages/00002-illinois-providers-care-illinois-specialized-clinic-roster-1.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://medicaid.ohio.gov/specialized-roster-1",
+      "hostname": "medicaid.ohio.gov",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-18T00-50-05-745Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "ohio"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03119-ohio-providers-care-ohio-specialized-clinic-roster-1.html",
+        "data/source-acquisition-runs/2026-06-18T00-50-05-745Z/pages/00003-ohio-providers-care-ohio-specialized-clinic-roster-1.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.uvmhealth.org/medcenter/childrens-hospital",
+      "hostname": "www.uvmhealth.org",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "runIds": [
+        "2026-06-18T04-03-06-159Z",
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "vermont"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03042-vermont-providers-care-university-of-vermont-medical-center.html",
+        "data/source-acquisition-runs/2026-06-18T04-03-06-159Z/pages/00003-vermont-providers-care-university-of-vermont-medical-center.html"
+      ],
+      "sampleStatusCodes": [
+        404
+      ],
+      "sampleErrors": [],
+      "repeatCount": 2
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-10",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03178-new-york-providers-care-newyork-specialized-clinic-roster-10.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-11",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03179-new-york-providers-care-newyork-specialized-clinic-roster-11.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-12",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03180-new-york-providers-care-newyork-specialized-clinic-roster-12.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-13",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03181-new-york-providers-care-newyork-specialized-clinic-roster-13.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-14",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03182-new-york-providers-care-newyork-specialized-clinic-roster-14.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-15",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03183-new-york-providers-care-newyork-specialized-clinic-roster-15.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-16",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03184-new-york-providers-care-newyork-specialized-clinic-roster-16.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-17",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03185-new-york-providers-care-newyork-specialized-clinic-roster-17.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-18",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03186-new-york-providers-care-newyork-specialized-clinic-roster-18.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-19",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03187-new-york-providers-care-newyork-specialized-clinic-roster-19.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-2",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03188-new-york-providers-care-newyork-specialized-clinic-roster-2.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-20",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03189-new-york-providers-care-newyork-specialized-clinic-roster-20.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-21",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03190-new-york-providers-care-newyork-specialized-clinic-roster-21.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-22",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03191-new-york-providers-care-newyork-specialized-clinic-roster-22.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-23",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03192-new-york-providers-care-newyork-specialized-clinic-roster-23.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-24",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03193-new-york-providers-care-newyork-specialized-clinic-roster-24.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-25",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03194-new-york-providers-care-newyork-specialized-clinic-roster-25.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-3",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03195-new-york-providers-care-newyork-specialized-clinic-roster-3.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-4",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03196-new-york-providers-care-newyork-specialized-clinic-roster-4.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-5",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03197-new-york-providers-care-newyork-specialized-clinic-roster-5.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-6",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03198-new-york-providers-care-newyork-specialized-clinic-roster-6.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-7",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03199-new-york-providers-care-newyork-specialized-clinic-roster-7.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-8",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03200-new-york-providers-care-newyork-specialized-clinic-roster-8.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "providers_care",
+      "targetTable": "resource_providers",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-9",
+      "hostname": "www.health.ny.gov",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "runIds": [
+        "2026-06-17T16-58-43-900Z"
+      ],
+      "stateIds": [
+        "new-york"
+      ],
+      "savedPaths": [
+        "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03201-new-york-providers-care-newyork-specialized-clinic-roster-9.html"
+      ],
+      "sampleStatusCodes": [
+        403
+      ],
+      "sampleErrors": [],
+      "repeatCount": 1
+    }
+  ]
+}

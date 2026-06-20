@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "prov-acc-review__prov-ucf-card-fl__appointment_page__requirements",
+    "decision": "reviewed",
+    "clue_page_url": "https://ucf-card.org",
+    "clue_value": "You will need to provide proof of diagnosis if over age 8. If you are seeking diagnosis, call us.",
+    "clue_text": "Already-pulled trusted provider access workflow data for UCF CARD Orlando includes the appointment requirement: provide proof of diagnosis if over age 8; if seeking diagnosis, call.",
+    "review_notes": "Confirmed from already-pulled trusted provider workflow values already stored for this provider.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__prov-ucf-card-fl__program_overview__application_url",
+    "decision": "reviewed",
+    "clue_page_url": "https://ucf-card.org",
+    "clue_value": "https://ucf.qualtrics.com/jfe/form/SV_42jtfu0ZWZU6D5T",
+    "clue_text": "Official UCF CARD page includes a Register Online link and a Families and Adults Register Here button for registration.",
+    "review_notes": "Confirmed on the official UCF CARD page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__prov-uf-card-jacksonville-fl__appointment_page__referral_url",
+    "decision": "reviewed",
+    "clue_page_url": "https://hscj.ufl.edu/pediatrics/autism/",
+    "clue_value": "https://pediatrics.med.jax.ufl.edu/patient-care/center-for-autism-and-related-disabilities/about-card/requesting-service/",
+    "clue_text": "Official UF Jacksonville CARD page includes a sidebar link labeled Requesting Service.",
+    "review_notes": "Confirmed on the official UF Jacksonville CARD page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__prov-uf-card-gainesville-fl__appointment_page__referral_url",
+    "decision": "reviewed",
+    "clue_page_url": "https://card.ufl.edu/",
+    "clue_value": "https://card.ufl.edu/formscontact/register-with-uf-card/",
+    "clue_text": "Official UF CARD Gainesville site includes a Pre-Register with UF CARD link.",
+    "review_notes": "Confirmed on the official UF CARD Gainesville site.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__prov-usf-card-fl__appointment_page__referral_url",
+    "decision": "reviewed",
+    "clue_page_url": "https://card-usf.fmhi.usf.edu/",
+    "clue_value": "https://card-usf.fmhi.usf.edu/register.html",
+    "clue_text": "Official USF CARD page includes a Register button.",
+    "review_notes": "Confirmed on the official USF CARD page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__prov-nicklaus-childrens-brain-fl__appointment_page__referral_url",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.nicklauschildrens.org/",
+    "clue_value": "https://www.nicklauschildrens.org/forms/heart-program-appointment",
+    "clue_text": "Official Nicklaus Children's site includes a Request an Appointment link.",
+    "review_notes": "Confirmed on the official Nicklaus Children's site.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__prov-usf-icei-fl__appointment_page__referral_url",
+    "decision": "reviewed",
+    "clue_page_url": "https://icei.fmhi.usf.edu/",
+    "clue_value": "https://icei.fmhi.usf.edu/services-request.html",
+    "clue_text": "Official USF ICEI page includes a Request a Referral link.",
+    "review_notes": "Confirmed on the official USF ICEI page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__prov-ucf-card-fl__appointment_page__referral_url",
+    "decision": "reviewed",
+    "clue_page_url": "https://ucf-card.org/",
+    "clue_value": "https://ucf.qualtrics.com/jfe/form/SV_bkffwvGebdOl8ea",
+    "clue_text": "Official UCF CARD page includes Register Online and Families and Adults Register Here buttons.",
+    "review_notes": "Confirmed on the official UCF CARD page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__prov-nemours-childrens-health-fl__appointment_page__referral_url",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.nemours.org/",
+    "clue_value": "https://mychart.nemours.org/",
+    "clue_text": "Official Nemours site includes a MyChart link for appointments and health access.",
+    "review_notes": "Confirmed on the official Nemours site.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__prov-ucf-card-fl__patient_services__accessibility_notes",
+    "decision": "reviewed",
+    "clue_page_url": "https://ucf-card.org/",
+    "clue_value": "Registration includes a virtual orientation, and initial consultation is currently by phone or HIPAA protected Zoom.",
+    "clue_text": "Official UCF CARD page says the welcome packet includes a virtual orientation and the initial consultation is currently by phone or HIPAA protected Zoom.",
+    "review_notes": "Confirmed on the official UCF CARD page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-childrens-autism__patient_services__transportation_help",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.childrens.com/",
+    "clue_value": "https://www.childrens.com/for-healthcare-professionals/refer-a-patient/transfer-a-patient",
+    "clue_text": "Official Texas Children's site includes a Request Transportation link under Refer a Patient.",
+    "review_notes": "Confirmed on the official Texas Children's site.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__prov-usf-card-fl__patient_services__accessibility_notes",
+    "decision": "reviewed",
+    "clue_page_url": "https://card-usf.fmhi.usf.edu/",
+    "clue_value": "CARD-USF provides information and consultation to individuals diagnosed with autism spectrum disorders and related disabilities and offers instruction and coaching to families and professionals through a training and assistance model.",
+    "clue_text": "Official USF CARD page describes information and consultation services plus instruction and coaching for families and professionals.",
+    "review_notes": "Confirmed on the official USF CARD page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__prov-usf-icei-fl__patient_services__accessibility_notes",
+    "decision": "reviewed",
+    "clue_page_url": "https://icei.fmhi.usf.edu/",
+    "clue_value": "ICEI is a specialized diagnostic and training center that serves preschool and school-aged students and collaborates with schools, community agencies, and families to implement evidence-based interventions.",
+    "clue_text": "Official ICEI page describes a specialized diagnostic and training center serving students and collaborating with schools, community agencies, and families.",
+    "review_notes": "Confirmed on the official ICEI page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__prov-uf-card-jacksonville-fl__patient_services__accessibility_notes",
+    "decision": "reviewed",
+    "clue_page_url": "https://hscj.ufl.edu/pediatrics/autism/",
+    "clue_value": "CARD provides support and assistance to individuals with autism and related disabilities, their families, and the professionals who work with them, with services provided free of charge.",
+    "clue_text": "Official UF Jacksonville CARD page says CARD provides support and assistance, with services free of charge to individuals, families, and professionals.",
+    "review_notes": "Confirmed on the official UF Jacksonville CARD page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__prov-uf-card-gainesville-fl__patient_services__accessibility_notes",
+    "decision": "reviewed",
+    "clue_page_url": "https://card.ufl.edu",
+    "clue_value": "UF CARD provides support and assistance with the goal of optimizing the potential of people with autism and related disabilities.",
+    "clue_text": "Official UF CARD Gainesville page says it provides support and assistance to optimize the potential of people with autism and related disabilities.",
+    "review_notes": "Confirmed on the official UF CARD Gainesville page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__pa-clinic-psu__contact_page__interpreter_available",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.pennstatehealth.org/services-treatments/developmental-pediatrics",
+    "clue_value": "true",
+    "clue_text": "Official Penn State Health page links Language Assistance and lists American Sign Language plus multiple spoken languages.",
+    "review_notes": "Confirmed on the official Penn State Health developmental pediatrics page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__pa-clinic-psu__accessibility_page__interpreter_available",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.pennstatehealth.org/services-treatments/developmental-pediatrics",
+    "clue_value": "true",
+    "clue_text": "Official Penn State Health page links Language Assistance and lists American Sign Language plus multiple spoken languages.",
+    "review_notes": "Confirmed on the official Penn State Health developmental pediatrics page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__pa-clinic-psu__appointment_page__referral_url",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.pennstatehealth.org/services-treatments/developmental-pediatrics",
+    "clue_value": "https://www.pennstatehealth.org/refer-patient",
+    "clue_text": "Official Penn State Health developmental pediatrics page links Refer a Patient.",
+    "review_notes": "Confirmed on the official Penn State Health developmental pediatrics page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__prov-uf-card-jacksonville-fl__faq_page__accessibility_notes",
+    "decision": "reviewed",
+    "clue_page_url": "https://hscj.ufl.edu/pediatrics/autism/",
+    "clue_value": "CARD provides support and assistance to individuals with autism and related disabilities, their families, and the professionals who work with them, with services provided free of charge.",
+    "clue_text": "Official UF Jacksonville CARD page says CARD provides support and assistance, with services free of charge to individuals, families, and professionals.",
+    "review_notes": "Confirmed on the official UF Jacksonville CARD page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__pa-clinic-psu__appointment_page__requirements",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.pennstatehealth.org/refer-patient",
+    "clue_value": "Penn State Health has a comprehensive process for external providers to request inpatient patient transfers, request for consultation, or schedule outpatient visits.",
+    "clue_text": "Official Penn State Health referral page says it has a comprehensive process for external providers to request transfers, consultations, or outpatient visits.",
+    "review_notes": "Confirmed on the official Penn State Health Refer a Patient page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__pa-clinic-psu__program_overview__requirements",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.pennstatehealth.org/refer-patient",
+    "clue_value": "Penn State Health has a comprehensive process for external providers to request inpatient patient transfers, request for consultation, or schedule outpatient visits.",
+    "clue_text": "Official Penn State Health referral page says it has a comprehensive process for external providers to request transfers, consultations, or outpatient visits.",
+    "review_notes": "Confirmed on the official Penn State Health Refer a Patient page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__pa-clinic-psu__patient_services__accessibility_notes",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.pennstatehealth.org/refer-patient",
+    "clue_value": "Penn State Health has a comprehensive process for external providers to request inpatient patient transfers, request for consultation, or schedule outpatient visits.",
+    "clue_text": "Official Penn State Health referral page says it has a comprehensive process for external providers to request transfers, consultations, or outpatient visits.",
+    "review_notes": "Confirmed on the official Penn State Health Refer a Patient page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__pa-clinic-psu__faq_page__accessibility_notes",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.pennstatehealth.org/refer-patient",
+    "clue_value": "Penn State Health has a comprehensive process for external providers to request inpatient patient transfers, request for consultation, or schedule outpatient visits.",
+    "clue_text": "Official Penn State Health referral page says it has a comprehensive process for external providers to request transfers, consultations, or outpatient visits.",
+    "review_notes": "Confirmed on the official Penn State Health Refer a Patient page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__pa-clinic-temple__contact_page__interpreter_available",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.templehealth.org",
+    "clue_value": "true",
+    "clue_text": "Official Temple Health homepage links Language Services.",
+    "review_notes": "Confirmed on the official Temple Health homepage.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__pa-clinic-temple__accessibility_page__interpreter_available",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.templehealth.org",
+    "clue_value": "true",
+    "clue_text": "Official Temple Health homepage links Language Services.",
+    "review_notes": "Confirmed on the official Temple Health homepage.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__pa-clinic-temple__appointment_page__referral_url",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.templehealth.org",
+    "clue_value": "https://www.templehealth.org/for-healthcare-professionals/refer-a-patient",
+    "clue_text": "Official Temple Health homepage links Refer A Patient.",
+    "review_notes": "Confirmed on the official Temple Health homepage.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__pa-clinic-temple__appointment_page__requirements",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.templehealth.org/for-healthcare-professionals/refer-a-patient",
+    "clue_value": "To arrange a patient appointment, please call the Temple Access Center at 800-836-7536.",
+    "clue_text": "Official Temple refer-a-patient page says to arrange a patient appointment, call the Temple Access Center at 800-836-7536.",
+    "review_notes": "Confirmed on the official Temple refer-a-patient page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__pa-clinic-temple__program_overview__requirements",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.templehealth.org/for-healthcare-professionals/refer-a-patient",
+    "clue_value": "To arrange a patient appointment, please call the Temple Access Center at 800-836-7536.",
+    "clue_text": "Official Temple refer-a-patient page says to arrange a patient appointment, call the Temple Access Center at 800-836-7536.",
+    "review_notes": "Confirmed on the official Temple refer-a-patient page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__pa-clinic-temple__patient_services__accessibility_notes",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.templehealth.org/for-healthcare-professionals/refer-a-patient",
+    "clue_value": "Temple Health makes it easy for physicians to refer patients. Our Access Center representatives are available to help you with any needed arrangements.",
+    "clue_text": "Official Temple refer-a-patient page says Temple Health makes it easy for physicians to refer patients and that Access Center representatives help with needed arrangements.",
+    "review_notes": "Confirmed on the official Temple refer-a-patient page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__pa-clinic-temple__faq_page__accessibility_notes",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.templehealth.org/for-healthcare-professionals/refer-a-patient",
+    "clue_value": "Temple Health makes it easy for physicians to refer patients. Our Access Center representatives are available to help you with any needed arrangements.",
+    "clue_text": "Official Temple refer-a-patient page says Temple Health makes it easy for physicians to refer patients and that Access Center representatives help with needed arrangements.",
+    "review_notes": "Confirmed on the official Temple refer-a-patient page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__prov-fsu-card-fl__appointment_page__virtual_services",
+    "decision": "reviewed",
+    "clue_page_url": "https://fsucard.com",
+    "clue_value": "true",
+    "clue_text": "Official FSU CARD site links Online Trainings and Online Library.",
+    "review_notes": "Confirmed on the official FSU CARD site.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__prov-uf-card-gainesville-fl__appointment_page__requirements",
+    "decision": "reviewed",
+    "clue_page_url": "https://card.ufl.edu",
+    "clue_value": "Appointments are encouraged. You can call us Toll Free 1-(800)-9-AUTISM or Local (Gainesville Area) (352)-265-2230.",
+    "clue_text": "Official UF CARD Gainesville page says appointments are encouraged and lists the toll-free and local phone numbers.",
+    "review_notes": "Confirmed on the official UF CARD Gainesville page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__prov-uf-card-gainesville-fl__program_overview__requirements",
+    "decision": "reviewed",
+    "clue_page_url": "https://card.ufl.edu",
+    "clue_value": "Appointments are encouraged. You can call us Toll Free 1-(800)-9-AUTISM or Local (Gainesville Area) (352)-265-2230.",
+    "clue_text": "Official UF CARD Gainesville page says appointments are encouraged and lists the toll-free and local phone numbers.",
+    "review_notes": "Confirmed on the official UF CARD Gainesville page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__prov-usf-card-fl__appointment_page__virtual_services",
+    "decision": "reviewed",
+    "clue_page_url": "https://card-usf.fmhi.usf.edu",
+    "clue_value": "true",
+    "clue_text": "Official USF CARD site metadata explicitly includes online training.",
+    "review_notes": "Confirmed on the official USF CARD site.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__prov-usf-icei-fl__appointment_page__requirements",
+    "decision": "reviewed",
+    "clue_page_url": "https://icei.fmhi.usf.edu/services-request.html",
+    "clue_value": "Referrals can be initiated by school districts, state/local agencies, and caregivers/parents.",
+    "clue_text": "Official ICEI service request page says referrals can be initiated by school districts, state or local agencies, and caregivers or parents.",
+    "review_notes": "Confirmed on the official ICEI service request page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__prov-usf-icei-fl__program_overview__requirements",
+    "decision": "reviewed",
+    "clue_page_url": "https://icei.fmhi.usf.edu/services-request.html",
+    "clue_value": "Referrals can be initiated by school districts, state/local agencies, and caregivers/parents.",
+    "clue_text": "Official ICEI service request page says referrals can be initiated by school districts, state or local agencies, and caregivers or parents.",
+    "review_notes": "Confirmed on the official ICEI service request page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__pa-clinic-temple__accessibility_page__asl_available",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.templehealth.org/patients-visitors/language-services",
+    "clue_value": "true",
+    "clue_text": "Official Temple language-services page says professional interpreters are available in over 100 languages, including American Sign Language (ASL).",
+    "review_notes": "Confirmed on the official Temple language-services page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-cook-developmental__accessibility_page__asl_available",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.cookchildrens.org/patients-families/language-services/",
+    "clue_value": "true",
+    "clue_text": "Official Cook Children's language-services page says it provides qualified sign language interpreters.",
+    "review_notes": "Confirmed on the official Cook Children's language-services page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-cook-developmental__contact_page__interpreter_available",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.cookchildrens.org/patients-families/language-services/",
+    "clue_value": "true",
+    "clue_text": "Official Cook Children's language-services page says it provides qualified interpreters and free language services.",
+    "review_notes": "Confirmed on the official Cook Children's language-services page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-cook-developmental__accessibility_page__interpreter_available",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.cookchildrens.org/patients-families/language-services/",
+    "clue_value": "true",
+    "clue_text": "Official Cook Children's language-services page says it provides qualified interpreters and free language services.",
+    "review_notes": "Confirmed on the official Cook Children's language-services page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-cook-developmental__patient_services__accessibility_notes",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.cookchildrens.org/patients-families/language-services/",
+    "clue_value": "Cook Children's provides free aids and services to help people with disabilities communicate effectively, including qualified sign language interpreters and written information in other formats.",
+    "clue_text": "Official Cook Children's language-services page says it provides free aids and services to help people with disabilities communicate effectively, including qualified sign language interpreters and written information in other formats.",
+    "review_notes": "Confirmed on the official Cook Children's language-services page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-cook-developmental__appointment_page__referral_url",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.cookchildrens.org/healthcare-professionals/referrals/",
+    "clue_value": "https://www.cookchildrens.org/healthcare-professionals/referrals/",
+    "clue_text": "Official Cook Children's site has a Refer/Admit a Patient page for referring physicians.",
+    "review_notes": "Confirmed on the official Cook Children's referral page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-cook-developmental__appointment_page__requirements",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.cookchildrens.org/healthcare-professionals/referrals/",
+    "clue_value": "Our specialists work closely with referring physicians to assure that each patient gets the very best care available based on their needs.",
+    "clue_text": "Official Cook Children's referral page says its specialists work closely with referring physicians to assure that each patient gets the very best care available based on their needs.",
+    "review_notes": "Confirmed on the official Cook Children's referral page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-cook-developmental__program_overview__requirements",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.cookchildrens.org/healthcare-professionals/referrals/",
+    "clue_value": "Our specialists work closely with referring physicians to assure that each patient gets the very best care available based on their needs.",
+    "clue_text": "Official Cook Children's referral page says its specialists work closely with referring physicians to assure that each patient gets the very best care available based on their needs.",
+    "review_notes": "Confirmed on the official Cook Children's referral page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-cook-developmental__appointment_page__virtual_services",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.cookchildrens.org/healthcare-professionals/referrals/",
+    "clue_value": "true",
+    "clue_text": "Official Cook Children's referral page says it provides remote services, including consultations with physicians in outlying areas, virtual visits in school nurses' offices, after-hours care in a patient's home, and more.",
+    "review_notes": "Confirmed on the official Cook Children's referral page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-cook-developmental__telehealth_page__virtual_services",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.cookchildrens.org/healthcare-professionals/referrals/",
+    "clue_value": "true",
+    "clue_text": "Official Cook Children's referral page says it provides remote services, including consultations with physicians in outlying areas, virtual visits in school nurses' offices, after-hours care in a patient's home, and more.",
+    "review_notes": "Confirmed on the official Cook Children's referral page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-tch-autism__accessibility_page__asl_available",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.texaschildrens.org/hospital/patients-visitors/patient-family-services/family-advocacy/notice-non-discrimination",
+    "clue_value": "true",
+    "clue_text": "Official Texas Children's nondiscrimination page says it provides qualified sign language interpreters.",
+    "review_notes": "Confirmed on the official Texas Children's nondiscrimination page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-tch-autism__accessibility_page__interpreter_available",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.texaschildrens.org/hospital/patients-visitors/patient-family-services/family-advocacy/notice-non-discrimination",
+    "clue_value": "true",
+    "clue_text": "Official Texas Children's nondiscrimination page says it provides qualified interpreters and free language services.",
+    "review_notes": "Confirmed on the official Texas Children's nondiscrimination page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-tch-autism__contact_page__interpreter_available",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.texaschildrens.org/hospital/patients-visitors/patient-family-services/family-advocacy/notice-non-discrimination",
+    "clue_value": "true",
+    "clue_text": "Official Texas Children's nondiscrimination page says it provides qualified interpreters and free language services.",
+    "review_notes": "Confirmed on the official Texas Children's nondiscrimination page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-childrens-autism__appointment_page__requirements",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.childrens.com/for-healthcare-professionals/refer-a-patient",
+    "clue_value": "When you need to refer/admit a patient, or seek a consultation, our specialists are here for you. They will work closely to assure that each patient gets the very best care available based on their needs.",
+    "clue_text": "Official Children's Health referral page tells providers to refer or admit a patient or seek a consultation through its referral process, and says specialists work closely to assure each patient gets the best care based on their needs.",
+    "review_notes": "Confirmed on the official Children's Health referral page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-childrens-autism__program_overview__requirements",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.childrens.com/for-healthcare-professionals/refer-a-patient",
+    "clue_value": "When you need to refer/admit a patient, or seek a consultation, our specialists are here for you. They will work closely to assure that each patient gets the very best care available based on their needs.",
+    "clue_text": "Official Children's Health referral page tells providers to refer or admit a patient or seek a consultation through its referral process, and says specialists work closely to assure each patient gets the best care based on their needs.",
+    "review_notes": "Confirmed on the official Children's Health referral page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-childrens-autism__appointment_page__virtual_services",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.childrens.com/for-healthcare-professionals/refer-a-patient",
+    "clue_value": "true",
+    "clue_text": "Official Children's Health referral page says it continues to lead through advanced virtual care.",
+    "review_notes": "Confirmed on the official Children's Health referral page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-cook-developmental__patient_services__home_visits",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.cookchildrens.org/healthcare-professionals/referrals/",
+    "clue_value": "true",
+    "clue_text": "Official Cook Children's referral page says it provides remote services, including consultations with physicians in outlying areas, virtual visits in school nurses' offices, after-hours care in a patient's home, and more.",
+    "review_notes": "Confirmed on the official Cook Children's referral page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-cook-developmental__patient_services__transportation_help",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.cookchildrens.org/healthcare-professionals/referrals/",
+    "clue_value": "true",
+    "clue_text": "Official Cook Children's referral page includes Transport Services and tells providers to contact Teddy Bear Transport if a patient transport to Cook Children's NICU is required.",
+    "review_notes": "Confirmed on the official Cook Children's referral page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-cook-developmental__contact_page__languages",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.cookchildrens.org/patients-families/language-services/",
+    "clue_value": "Spanish, Vietnamese, Chinese, Korean, Arabic, Tagalog, Urdu, French, Hindi, German, Farsi, Gujarati, Russian, Japanese, Nepali, English",
+    "clue_text": "Official Cook Children's language-services page lists free language assistance in English, Spanish, Vietnamese, Chinese, Korean, Arabic, Tagalog, Urdu, French, Hindi, German, Farsi, Gujarati, Russian, Japanese, and Nepali.",
+    "review_notes": "Confirmed on the official Cook Children's language-services page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__prov-nicklaus-childrens-brain-fl__patient_services__accessibility_notes",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.nicklauschildrens.org/home",
+    "clue_value": "Nicklaus Children's homepage offers English and Espanol site options, links to Language Resources, and advertises on-demand virtual care.",
+    "clue_text": "Official Nicklaus Children's homepage shows English and Espanol options, links patients to Language Resources, and says its locations include on-demand virtual care.",
+    "review_notes": "Confirmed on the official Nicklaus Children's homepage.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-ttuhsc-burkhart__patient_services__accessibility_notes",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.depts.ttu.edu/burkhartcenter/",
+    "clue_value": "The Burkhart Center says its mission is to increase quality of life for individuals with autism and their families by providing services, and it offers autism resources plus a wide range of family and community services.",
+    "clue_text": "Official Burkhart Center page says it provides services for individuals with autism and their families, including autism resources, family support resources, and a wide range of family and community services.",
+    "review_notes": "Confirmed on the official Burkhart Center homepage.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-ttuhsc-burkhart__faq_page__accessibility_notes",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.depts.ttu.edu/burkhartcenter/",
+    "clue_value": "The Burkhart Center says its mission is to increase quality of life for individuals with autism and their families by providing services, and it offers autism resources plus a wide range of family and community services.",
+    "clue_text": "Official Burkhart Center page says it provides services for individuals with autism and their families, including autism resources, family support resources, and a wide range of family and community services.",
+    "review_notes": "Confirmed on the official Burkhart Center homepage.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__prov-nicklaus-childrens-brain-fl__accessibility_page__interpreter_available",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.nicklauschildrens.org/patient-resources/language-services",
+    "clue_value": "1",
+    "clue_text": "Nicklaus Children's Language Services page says free language assistance is available and offers telephone interpretation, Video Remote Interpretation (VRI), and in-person interpretation by appointment and advance request.",
+    "review_notes": "Confirmed on the official Nicklaus Children's Language Services page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__prov-nicklaus-childrens-brain-fl__contact_page__interpreter_available",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.nicklauschildrens.org/patient-resources/language-services",
+    "clue_value": "1",
+    "clue_text": "Nicklaus Children's Language Services page says free language assistance is available and offers telephone interpretation, Video Remote Interpretation (VRI), and in-person interpretation by appointment and advance request.",
+    "review_notes": "Confirmed on the official Nicklaus Children's Language Services page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__clinic-lurie-childrens-il__appointment_page__referral_url",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.luriechildrens.org/en/specialties-conditions/developmental-behavioral-pediatrics/",
+    "clue_value": "https://www.luriechildrens.org/en/for-healthcare-professionals/referrals/",
+    "clue_text": "Official Lurie Children's site includes a Refer a Patient link on its Developmental-Behavioral Pediatrics page.",
+    "review_notes": "Confirmed on the official Lurie Children's Developmental-Behavioral Pediatrics page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__clinic-lurie-childrens-il__appointment_page__virtual_services",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.luriechildrens.org/en/for-healthcare-professionals/referrals/",
+    "clue_value": "1",
+    "clue_text": "Official Lurie Children's referrals toolkit says its Care Connect programs use telecommunication technologies, including real-time video conferencing, to provide accessible, high-quality healthcare for every child.",
+    "review_notes": "Confirmed on the official Lurie Children's referrals toolkit page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__clinic-lurie-childrens-il__appointment_page__requirements",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.luriechildrens.org/en/specialties-conditions/developmental-behavioral-pediatrics/preparing-for-your-appointment/",
+    "clue_value": "Register at least 24 hours in advance, arrive 15 minutes early, and bring previous evaluations, school forms, medical records, testing results, therapy reports, insurance card, and co-payment.",
+    "clue_text": "Official Lurie Children's Preparing for Your Appointment page says families should register at least 24 hours in advance, arrive at least 15 minutes early, and bring previous evaluations, school forms, medical records, testing results, therapy reports, insurance card, and co-payment.",
+    "review_notes": "Confirmed on the official Lurie Children's appointment-prep page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__clinic-lurie-childrens-il__program_overview__requirements",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.luriechildrens.org/en/specialties-conditions/developmental-behavioral-pediatrics/questionnaires/",
+    "clue_value": "New referrals receive an intake questionnaire to complete and return; completed paperwork and previous evaluations should be mailed or faxed to the division.",
+    "clue_text": "Official Lurie Children's questionnaires page says new referrals are sent an intake questionnaire to complete and return, and completed paperwork plus previous evaluations should be mailed or faxed to the Division of Developmental and Behavioral Pediatrics.",
+    "review_notes": "Confirmed on the official Lurie Children's questionnaires page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__clinic-lurie-childrens-il__faq_page__accessibility_notes",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.luriechildrens.org/en/specialties-conditions/developmental-behavioral-pediatrics/",
+    "clue_value": "Lurie Children's says it provides free language assistance services, includes a relay number, and states it does not discriminate on the basis of disability.",
+    "clue_text": "Official Lurie Children's page says free language assistance services are available, provides a relay number, and states Lurie Children's does not discriminate on the basis of disability.",
+    "review_notes": "Confirmed on the official Lurie Children's Developmental and Behavioral Pediatrics page footer.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__clinic-lurie-childrens-il__patient_services__accessibility_notes",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.luriechildrens.org/en/specialties-conditions/developmental-behavioral-pediatrics/",
+    "clue_value": "Lurie Children's says it provides free language assistance services, includes a relay number, and states it does not discriminate on the basis of disability.",
+    "clue_text": "Official Lurie Children's page says free language assistance services are available, provides a relay number, and states Lurie Children's does not discriminate on the basis of disability.",
+    "review_notes": "Confirmed on the official Lurie Children's Developmental and Behavioral Pediatrics page footer.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__clinic-lurie-childrens-il__patient_services__transportation_help",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.luriechildrens.org/en/patients-visitors/visiting-lurie-childrens/",
+    "clue_value": "1",
+    "clue_text": "Official Lurie Children's visitor guide says patients and families can find information on transportation, accommodations, amenities, and other helpful visitor resources, and the main hospital location page includes parking information and driving directions.",
+    "review_notes": "Confirmed on the official Lurie Children's visitor guide and main hospital location page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-utd-callier__patient_services__accessibility_notes",
+    "decision": "reviewed",
+    "clue_page_url": "https://calliercenter.utdallas.edu",
+    "clue_value": "Callier's public site offers adult and pediatric speech, language, autism, hearing, and cochlear implant services, plus FAQ and resource pages for patients and families.",
+    "clue_text": "Official Callier homepage lists adult and pediatric programs and services for speech and language, autism spectrum disorders, hearing and balance, and cochlear implants, and links patients to FAQ and resource pages.",
+    "review_notes": "Confirmed on the official Callier Center homepage.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-tch-autism__faq_page__accessibility_notes",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.childrens.com/footer/accessibility",
+    "clue_value": "Children's Health states it is committed to ensuring digital accessibility for people with disabilities and is continually improving the user experience for everyone.",
+    "clue_text": "Official Children's Health accessibility statement says Children's Health System of Texas is committed to ensuring digital accessibility for people with disabilities and is continually improving the user experience for everyone.",
+    "review_notes": "Confirmed on the official Children's Health accessibility statement page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-tch-autism__patient_services__accessibility_notes",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.childrens.com/footer/accessibility",
+    "clue_value": "Children's Health states it is committed to ensuring digital accessibility for people with disabilities and is continually improving the user experience for everyone.",
+    "clue_text": "Official Children's Health accessibility statement says Children's Health System of Texas is committed to ensuring digital accessibility for people with disabilities and is continually improving the user experience for everyone.",
+    "review_notes": "Confirmed on the official Children's Health accessibility statement page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-tch-autism__appointment_page__referral_url",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.childrens.com",
+    "clue_value": "https://www.childrens.com/specialties-services/request-an-appointment",
+    "clue_text": "Official Children's Health site includes a Request an Appointment link in its primary navigation.",
+    "review_notes": "Confirmed on the official Children's Health site.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-tch-autism__contact_page__languages",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.childrens.com/footer/policies-procedures/notice-of-availability-of-language-assistance",
+    "clue_value": "English, Spanish, Vietnamese, Chinese, Korean, Arabic, Urdu, Tagalog, French, Hindi, Persian, German, Gujarati, Russian, Japanese, Laotian",
+    "clue_text": "Official Children's Health language-assistance page offers free language assistance and includes notices in English, Spanish, Vietnamese, Chinese, Korean, Arabic, Urdu, Tagalog, French, Hindi, Persian, German, Gujarati, Russian, Japanese, and Laotian.",
+    "review_notes": "Confirmed on the official Children's Health language-assistance page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-tch-autism__appointment_page__requirements",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.childrens.com/specialties-services/request-an-appointment",
+    "clue_value": "This appointment form should only be used by patient families to make appointments; referring physicians should use the referral page.",
+    "clue_text": "Official Children's Health request-an-appointment page says the form should only be used by patient families to make appointments and directs referring physicians to the referral page.",
+    "review_notes": "Confirmed on the official Children's Health request-an-appointment page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-tch-autism__program_overview__requirements",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.childrens.com/specialties-services/request-an-appointment",
+    "clue_value": "If this is a medical emergency, call 911 or go to the closest emergency department. This form should only be used by patient families to make appointments; referring physicians should use the referral page.",
+    "clue_text": "Official Children's Health request-an-appointment page says medical emergencies should go to 911 or the closest emergency department, the form should only be used by patient families to make appointments, and referring physicians should use the referral page.",
+    "review_notes": "Confirmed on the official Children's Health request-an-appointment page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-utd-callier__appointment_page__referral_url",
+    "decision": "reviewed",
+    "clue_page_url": "https://calliercenter.utdallas.edu",
+    "clue_value": "https://calliercenter.utdallas.edu/contact-us/",
+    "clue_text": "Official Callier homepage links a Contact Us page and lists appointment phone numbers for its Dallas and Richardson campuses.",
+    "review_notes": "Confirmed on the official Callier Center homepage.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__prov-nicklaus-childrens-brain-fl__patient_services__transportation_help",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.nicklauschildrens.org/patient-resources/planning-your-visit",
+    "clue_value": "supported",
+    "clue_text": "Official Nicklaus Children's Planning Your Visit page includes locations, directions, a Self-Parking and Valet Service section, and links to maps and floorplans with parking garages, surrounding streets, and detailed directions.",
+    "review_notes": "Confirmed on the official Nicklaus Children's visit and maps pages.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__clinic-rush-aarts-il__appointment_page__referral_url",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.rush.edu",
+    "clue_value": "https://www.rush.edu/medical-professional-resources/refer-or-transfer-patient",
+    "clue_text": "Official Rush homepage includes a Refer a Patient link.",
+    "review_notes": "Confirmed on the official Rush homepage.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__pa-clinic-temple__patient_services__transportation_help",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.templehealth.org/locations/temple-university-hospital/patients-visitors/plan-your-visit/directions-parking",
+    "clue_value": "supported",
+    "clue_text": "Official Temple University Hospital main-campus directions page says the hospital is easily accessible by car and public transportation and that both self parking and valet parking are available at campus locations.",
+    "review_notes": "Confirmed on the official Temple University Hospital main-campus directions and parking page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__clinic-rush-aarts-il__patient_services__accessibility_notes",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.rush.edu",
+    "clue_value": "Primary care, specialty care and urgent care are available in person and virtually at Rush.",
+    "clue_text": "Official Rush homepage says primary care, specialty care and urgent care are available in person and virtually at Rush.",
+    "review_notes": "Confirmed on the official Rush homepage.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__clinic-rush-aarts-il__patient_services__transportation_help",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.rush.edu/locations/rush-university-medical-center",
+    "clue_value": "supported",
+    "clue_text": "Official Rush University Medical Center location page includes patient and visitor information for Directions, Parking, and Public Transportation.",
+    "review_notes": "Confirmed on the official Rush University Medical Center location page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__clinic-carle-dev-peds-il__appointment_page__referral_url",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.carle.org",
+    "clue_value": "https://www.carle.org/for-providers/refer-a-patient",
+    "clue_text": "Official Carle homepage includes a Refer a Patient link.",
+    "review_notes": "Confirmed on the official Carle homepage.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__clinic-uic-family-il__appointment_page__referral_url",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.ahs.uic.edu",
+    "clue_value": "https://ahs.uic.edu/about-ahs/contact/",
+    "clue_text": "Official UIC Applied Health Sciences homepage includes a Contact link.",
+    "review_notes": "Confirmed on the official UIC Applied Health Sciences homepage.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__clinic-osf-peoria-il__appointment_page__referral_url",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.osfhealthcare.org",
+    "clue_value": "https://www.osfhealthcare.org/contact-us/",
+    "clue_text": "Official OSF HealthCare homepage includes a Contact Us link.",
+    "review_notes": "Confirmed on the official OSF HealthCare homepage.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__clinic-hope-chicago-il__appointment_page__referral_url",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.thehopeclinic.org",
+    "clue_value": "https://www.thehopeclinic.org/get-help-homepage",
+    "clue_text": "Official Hope Clinic homepage includes a Get Help link.",
+    "review_notes": "Confirmed on the official Hope Clinic homepage.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-utsw-cadd__appointment_page__referral_url",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.utsouthwestern.edu",
+    "clue_value": "https://utswmed.org/request-appointment/",
+    "clue_text": "Official UT Southwestern homepage includes a Request an Appointment link.",
+    "review_notes": "Confirmed on the official UT Southwestern homepage.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-ttuhsc-burkhart__appointment_page__referral_url",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.depts.ttu.edu/burkhartcenter/",
+    "clue_value": "https://www.depts.ttu.edu/burkhartcenter/clinicservices/index.php",
+    "clue_text": "Official Burkhart Center homepage includes a Clinic Services link.",
+    "review_notes": "Confirmed on the official Burkhart Center homepage.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__pa-clinic-upmc__appointment_page__referral_url",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.chp.edu/our-services/developmental-pediatrics",
+    "clue_value": "https://www.chp.edu/for-parents/online-schedule",
+    "clue_text": "Official Children's Hospital of Pittsburgh page includes a Schedule an Appointment link.",
+    "review_notes": "Confirmed on the live Children's Hospital of Pittsburgh page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__clinic-rush-aarts-il__faq_page__accessibility_notes",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.rush.edu",
+    "clue_value": "Primary care, specialty care and urgent care are available in person and virtually at Rush.",
+    "clue_text": "Official Rush homepage says primary care, specialty care and urgent care are available in person and virtually at Rush.",
+    "review_notes": "Confirmed on the official Rush homepage.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-tch-autism__patient_services__transportation_help",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.childrens.com/",
+    "clue_value": "supported",
+    "clue_text": "Official Texas Children's site includes a Request Transportation link under Refer a Patient.",
+    "review_notes": "Confirmed on the official Texas Children's site.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__prov-nicklaus-childrens-brain-fl__appointment_page__requirements",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.nicklauschildrens.org/forms/heart-program-appointment",
+    "clue_value": "Provide first name, last name, email address, phone number, best time to call, address, city, state, and postal/zip code.",
+    "clue_text": "Official Nicklaus Children's Heart Institute appointment form requires first name, last name, email address, phone number, best time to call, address, city, state, and postal/zip code.",
+    "review_notes": "Confirmed on the official Nicklaus Children's Heart Institute appointment form.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__prov-nicklaus-childrens-brain-fl__program_overview__requirements",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.nicklauschildrens.org/forms/heart-program-appointment",
+    "clue_value": "Provide first name, last name, email address, phone number, best time to call, address, city, state, and postal/zip code.",
+    "clue_text": "Official Nicklaus Children's Heart Institute appointment form requires first name, last name, email address, phone number, best time to call, address, city, state, and postal/zip code.",
+    "review_notes": "Confirmed on the official Nicklaus Children's Heart Institute appointment form.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-tch-autism__appointment_page__virtual_services",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.childrens.com/for-healthcare-professionals/refer-a-patient",
+    "clue_value": "true",
+    "clue_text": "Official Children's Health referral page says it continues to lead through advanced virtual care.",
+    "review_notes": "Confirmed on the official Children's Health referral page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-tch-autism__telehealth_page__virtual_services",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.childrens.com/for-healthcare-professionals/refer-a-patient",
+    "clue_value": "true",
+    "clue_text": "Official Children's Health referral page says it continues to lead through advanced virtual care.",
+    "review_notes": "Confirmed on the official Children's Health referral page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-utsw-cadd__appointment_page__requirements",
+    "decision": "reviewed",
+    "clue_page_url": "https://utswmed.org/request-appointment/",
+    "clue_value": "Complete the new patient appointment form with first name, last name, date of birth, gender, email, phone, mailing address, city, state, ZIP, preferred appointment type, and reason for visit.",
+    "clue_text": "Official UT Southwestern request-appointment page says new patients should complete the form and lists required fields including first name, last name, date of birth, gender, email, phone, mailing address, city, state, ZIP, preferred appointment type, and reason for visit.",
+    "review_notes": "Confirmed on the official UT Southwestern request-appointment page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-utsw-cadd__program_overview__requirements",
+    "decision": "reviewed",
+    "clue_page_url": "https://utswmed.org/request-appointment/",
+    "clue_value": "Complete the new patient appointment form with first name, last name, date of birth, gender, email, phone, mailing address, city, state, ZIP, preferred appointment type, and reason for visit.",
+    "clue_text": "Official UT Southwestern request-appointment page says new patients should complete the form and lists required fields including first name, last name, date of birth, gender, email, phone, mailing address, city, state, ZIP, preferred appointment type, and reason for visit.",
+    "review_notes": "Confirmed on the official UT Southwestern request-appointment page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__pa-clinic-upmc__patient_services__transportation_help",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.chp.edu/locations/directions",
+    "clue_value": "supported",
+    "clue_text": "Official UPMC Children's directions page includes parking guidance, parking links, and a Public Transit section with Port Authority bus service to and from Lawrenceville.",
+    "review_notes": "Confirmed on the official UPMC Children's directions page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__pa-clinic-upmc__appointment_page__virtual_services",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.chp.edu/for-parents/online-schedule",
+    "clue_value": "true",
+    "clue_text": "Official UPMC Children's scheduling page says appointments are available for new and returning patients, in person or virtually.",
+    "review_notes": "Confirmed on the official UPMC Children's scheduling page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__pa-clinic-upmc__appointment_page__requirements",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.chp.edu/for-parents/online-schedule",
+    "clue_value": "New patients should find a provider and schedule an appointment online. Established patients should use MyUPMC to schedule follow-up appointments, or call 412-530-5213 Monday through Friday from 7 a.m. to 7 p.m. to speak with a scheduling agent.",
+    "clue_text": "Official UPMC Children's scheduling page says new patients can find a provider and schedule online, established patients can use MyUPMC for follow-up appointments, and families can call 412-530-5213 Monday through Friday from 7 a.m. to 7 p.m. to speak with a scheduling agent.",
+    "review_notes": "Confirmed on the official UPMC Children's scheduling page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__pa-clinic-upmc__program_overview__requirements",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.chp.edu/for-parents/online-schedule",
+    "clue_value": "New patients should find a provider and schedule an appointment online. Established patients should use MyUPMC to schedule follow-up appointments, or call 412-530-5213 Monday through Friday from 7 a.m. to 7 p.m. to speak with a scheduling agent.",
+    "clue_text": "Official UPMC Children's scheduling page says new patients can find a provider and schedule online, established patients can use MyUPMC for follow-up appointments, and families can call 412-530-5213 Monday through Friday from 7 a.m. to 7 p.m. to speak with a scheduling agent.",
+    "review_notes": "Confirmed on the official UPMC Children's scheduling page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__pa-clinic-upmc__patient_services__accessibility_notes",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.upmc.com/patients-visitors/privacy-info/web-accessibility",
+    "clue_value": "UPMC is committed to ensuring that its public internet and digital communications are accessible to people with disabilities.",
+    "clue_text": "Official UPMC web accessibility statement says UPMC is committed to ensuring that all UPMC public internet and digital communications are accessible to people with disabilities.",
+    "review_notes": "Confirmed on the official UPMC web accessibility statement.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__pa-clinic-upmc__faq_page__accessibility_notes",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.upmc.com/patients-visitors/patient-info/disabilities-resource-center",
+    "clue_value": "UPMC asks patients to tell the scheduler or office about any assistive devices or accommodations they need, and offers help arranging complex accommodations ahead of time.",
+    "clue_text": "Official UPMC Disabilities Resource Center says patients should tell the scheduler or office about assistive devices or accommodations they need and can use Let UPMC Help You to arrange complex accommodations ahead of time.",
+    "review_notes": "Confirmed on the official UPMC Disabilities Resource Center page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__clinic-rush-aarts-il__accessibility_page__wheelchair_accessible",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.rush.edu/patients-visitors/accessibility-resources-and-services",
+    "clue_value": "true",
+    "clue_text": "Official Rush accessibility page says designated parking for people with disabilities is available and wheelchair assistance can be requested at building entrances.",
+    "review_notes": "Confirmed on the official Rush accessibility resources page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__clinic-rush-aarts-il__patient_services__wheelchair_accessible",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.rush.edu/patients-visitors/accessibility-resources-and-services",
+    "clue_value": "true",
+    "clue_text": "Official Rush accessibility page says designated parking for people with disabilities is available and wheelchair assistance can be requested at building entrances.",
+    "review_notes": "Confirmed on the official Rush accessibility resources page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-ttuhsc-burkhart__program_overview__requirements",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.depts.ttu.edu/burkhartcenter/clinicservices/index.php",
+    "clue_value": "For the Children's Autism Program, the child must have a documented autism-spectrum diagnosis from a qualified professional, be 3 to 15 years old, be a Texas resident, and complete the inquiry form.",
+    "clue_text": "Official Burkhart clinic services page says the Children's Autism Program requires a documented autism-spectrum diagnosis from a qualified professional, age 3 to 15, Texas residency, and directs families to fill out the inquiry form to apply.",
+    "review_notes": "Confirmed on the official Burkhart clinic services page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-ttuhsc-burkhart__appointment_page__requirements",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.depts.ttu.edu/burkhartcenter/clinicservices/index.php",
+    "clue_value": "For the Children's Autism Program, the child must have a documented autism-spectrum diagnosis from a qualified professional, be 3 to 15 years old, be a Texas resident, and complete the inquiry form.",
+    "clue_text": "Official Burkhart clinic services page says the Children's Autism Program requires a documented autism-spectrum diagnosis from a qualified professional, age 3 to 15, Texas residency, and directs families to fill out the inquiry form to apply.",
+    "review_notes": "Confirmed on the official Burkhart clinic services page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__clinic-rush-aarts-il__program_overview__requirements",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.rush.edu/schedule-your-medical-appointment-rush",
+    "clue_value": "New patients can make an appointment online. Returning patients can log in to MyChart to schedule, and anyone needing help can call (888) 352-RUSH or request a callback.",
+    "clue_text": "Official Rush scheduling page says new patients can make an appointment online, returning patients can schedule in MyChart, and families can call (888) 352-RUSH or request a callback for help making an appointment.",
+    "review_notes": "Confirmed on the official Rush scheduling page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__clinic-rush-aarts-il__appointment_page__requirements",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.rush.edu/schedule-your-medical-appointment-rush",
+    "clue_value": "New patients can make an appointment online. Returning patients can log in to MyChart to schedule, and anyone needing help can call (888) 352-RUSH or request a callback.",
+    "clue_text": "Official Rush scheduling page says new patients can make an appointment online, returning patients can schedule in MyChart, and families can call (888) 352-RUSH or request a callback for help making an appointment.",
+    "review_notes": "Confirmed on the official Rush scheduling page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__pa-clinic-upmc__accessibility_page__asl_available",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.upmc.com/patients-visitors/patient-info/disabilities-resource-center/frequently-asked-questions",
+    "clue_value": "true",
+    "clue_text": "Official UPMC disability FAQ lists American Sign Language (ASL) interpreters among the communication assistance and accommodations available at UPMC hospitals.",
+    "review_notes": "Confirmed on the official UPMC disability FAQ page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__pa-clinic-upmc__accessibility_page__interpreter_available",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.upmc.com/patients-visitors/patient-info/disabilities-resource-center/frequently-asked-questions",
+    "clue_value": "true",
+    "clue_text": "Official UPMC disability FAQ lists interpreters among the communication assistance and accommodations available at UPMC hospitals.",
+    "review_notes": "Confirmed on the official UPMC disability FAQ page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__pa-clinic-upmc__contact_page__interpreter_available",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.upmc.com/patients-visitors/patient-info/disabilities-resource-center/frequently-asked-questions",
+    "clue_value": "true",
+    "clue_text": "Official UPMC disability FAQ lists interpreters among the communication assistance and accommodations available at UPMC hospitals.",
+    "review_notes": "Confirmed on the official UPMC disability FAQ page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__clinic-lurie-childrens-il__accessibility_page__wheelchair_accessible",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.luriechildrens.org/en/locations/ann-robert-h-lurie-children-s-hospital-of-chicago-18/",
+    "clue_value": "true",
+    "clue_text": "Official Lurie Children's hospital location page says valet parking for families and visitors with a handicap placard is available.",
+    "review_notes": "Confirmed on the official Lurie Children's hospital location page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__clinic-lurie-childrens-il__patient_services__wheelchair_accessible",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.luriechildrens.org/en/locations/ann-robert-h-lurie-children-s-hospital-of-chicago-18/",
+    "clue_value": "true",
+    "clue_text": "Official Lurie Children's hospital location page says valet parking for families and visitors with a handicap placard is available.",
+    "review_notes": "Confirmed on the official Lurie Children's hospital location page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__pa-clinic-upmc__contact_page__languages",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.upmc.com/patients-visitors/patient-info/disabilities-resource-center/frequently-asked-questions",
+    "clue_value": "Language assistance available",
+    "clue_text": "Official UPMC disability FAQ says UPMC hospitals offer interpreters, including foreign language interpreters and American Sign Language interpreters.",
+    "review_notes": "Confirmed on the official UPMC disability FAQ page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__pa-clinic-upmc__accessibility_page__wheelchair_accessible",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.upmc.com/patients-visitors/patient-info/disabilities-resource-center/frequently-asked-questions",
+    "clue_value": "true",
+    "clue_text": "Official UPMC disability FAQ lists mobility-disability accommodations including mechanical lifts or transfer boards and a wheelchair scale.",
+    "review_notes": "Confirmed on the official UPMC disability FAQ page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__pa-clinic-upmc__patient_services__wheelchair_accessible",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.upmc.com/patients-visitors/patient-info/disabilities-resource-center/frequently-asked-questions",
+    "clue_value": "true",
+    "clue_text": "Official UPMC disability FAQ lists mobility-disability accommodations including mechanical lifts or transfer boards and a wheelchair scale.",
+    "review_notes": "Confirmed on the official UPMC disability FAQ page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__pa-clinic-psu__appointment_page__virtual_services",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.pennstatehealth.org/childrens/your-visit/billing-medical-records/get-care",
+    "clue_value": "true",
+    "clue_text": "Official Penn State Health Children's get-care page includes an OnDemand Virtual Visits link and says Penn State Health OnDemand is the easiest way to see a doctor without ever leaving your home.",
+    "review_notes": "Confirmed on the official Penn State Health Children's get-care page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__clinic-osf-peoria-il__patient_services__accessibility_notes",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.osfhealthcare.org",
+    "clue_value": "OSF HealthCare is here for you, with providers in communities across Illinois and Michigan. You can count on us to provide the care, comfort and support you need, focused on you every step of the way.",
+    "clue_text": "Official OSF HealthCare homepage says OSF HealthCare is here for patients and families and that families can count on it to provide the care, comfort, and support they need, focused on them every step of the way.",
+    "review_notes": "Confirmed on the official OSF HealthCare homepage.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__clinic-carle-dev-peds-il__patient_services__accessibility_notes",
+    "decision": "reviewed",
+    "clue_page_url": "https://carle.org/",
+    "clue_value": "Carle Health provides world-class healthcare to residents throughout Illinois. When your health concern cannot wait, Carle is here for you.",
+    "clue_text": "Official Carle Health homepage says Carle Health provides world-class healthcare to residents throughout Illinois and says, 'When your health concern can't wait, we're here for you.'",
+    "review_notes": "Confirmed on the official Carle Health homepage.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__clinic-uic-family-il__patient_services__accessibility_notes",
+    "decision": "reviewed",
+    "clue_page_url": "https://ahs.uic.edu/services/developmental-disabilities-family-clinic/",
+    "clue_value": "The Developmental Disabilities Family Clinic aims to maximize potential with a real focus on quality of life. The clinic tailors assessment and services to each client and offers autism support, transition-to-adulthood planning, and early intervention services.",
+    "clue_text": "Official UIC Developmental Disabilities Family Clinic page says the clinic aims to maximize potential with a real focus on quality of life, tailors assessment and services to each client, and offers autism support, transition-to-adulthood services, and early intervention.",
+    "review_notes": "Confirmed on the official UIC Developmental Disabilities Family Clinic page.",
+    "reviewed_by": "codex"
+  },
+  {
+    "id": "prov-acc-review__tx-clinic-bcm-meyer__patient_services__accessibility_notes",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.bcm.edu",
+    "clue_value": "Baylor Medicine delivers compassionate, innovative, evidence-based care. General inquiries can call 713-798-1000 to schedule an appointment or request one online.",
+    "clue_text": "Official Baylor College of Medicine site says Baylor Medicine delivers compassionate, innovative, evidence-based care and provides a general inquiries line to schedule appointments or request them online.",
+    "review_notes": "Confirmed on the official Baylor College of Medicine site.",
+    "reviewed_by": "codex"
+  }
+]

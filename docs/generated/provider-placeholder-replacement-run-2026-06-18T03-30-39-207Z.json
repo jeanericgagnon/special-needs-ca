@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-06-18T03:30:39.208Z",
+  "mode": "apply",
+  "stateFilter": "alaska",
+  "inputPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/provider-placeholder-replacement-decisions.json",
+  "summary": {
+    "inputRows": 1,
+    "appliedStates": 1,
+    "appliedPlaceholderRows": 1,
+    "appliedReplacements": 3,
+    "filesChanged": 1,
+    "skippedByReason": {}
+  },
+  "decisions": [
+    {
+      "stateId": "alaska",
+      "placeholderSourceName": "anthc.org",
+      "status": "applied",
+      "matchStrategy": "single_blocked_domain_scaffold_fallback",
+      "placeholderRowCount": 1,
+      "replacementCount": 3,
+      "replacements": [
+        {
+          "source_name": "Alaska Native Medical Center",
+          "source_url": "https://anmc.org/",
+          "domain": "anmc.org"
+        },
+        {
+          "source_name": "ANMC and Specialty Care",
+          "source_url": "https://anthc.org/patient-care/specialty-care",
+          "domain": "anthc.org"
+        },
+        {
+          "source_name": "Behavioral Health Wellness Clinic at ANMC",
+          "source_url": "https://anthc.org/patient-care/bhwc",
+          "domain": "anthc.org"
+        }
+      ]
+    }
+  ]
+}

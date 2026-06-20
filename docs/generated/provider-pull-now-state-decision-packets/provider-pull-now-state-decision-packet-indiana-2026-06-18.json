@@ -1,0 +1,189 @@
+{
+  "generatedAt": "2026-06-18T05:49:35.105Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "indiana",
+  "sourceStatePacketPath": "docs/generated/provider-pull-now-state-packets/provider-pull-now-state-packet-indiana-2026-06-18.json",
+  "sourceDecisionFilePath": "data/provider-pull-now-decisions.json",
+  "summary": {
+    "totalRows": 4,
+    "unresolvedRows": 4,
+    "bySuggestedDecisionMode": {
+      "bounded_retry_once": 3,
+      "needs_manual_research": 1
+    }
+  },
+  "rows": [
+    {
+      "stateId": "indiana",
+      "actionClass": "bounded_retry_then_replace",
+      "followupReason": "network_timeout",
+      "sourceUrl": "https://www.rileychildrens.org/",
+      "hostname": "www.rileychildrens.org",
+      "repeatCount": 7,
+      "sameDomainCandidateCount": 1,
+      "sameDomainCandidates": [
+        {
+          "sourceName": "Riley Children's Health",
+          "sourceUrl": "https://www.rileychildrens.org/",
+          "priority": 1
+        }
+      ],
+      "topConcreteTargets": [
+        {
+          "sourceName": "Riley Children's Health",
+          "sourceUrl": "https://www.rileychildrens.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Peyton Manning Children's Hospital",
+          "sourceUrl": "https://healthcare.ascension.org/locations/indiana/inasc/pmch",
+          "priority": 1
+        },
+        {
+          "sourceName": "Indiana University Health Pediatric Care",
+          "sourceUrl": "https://iuhealth.org/",
+          "priority": 2
+        }
+      ],
+      "currentDecision": {
+        "decisionMode": "",
+        "reviewedSourceName": "",
+        "reviewedSourceUrl": "",
+        "retryNotes": "",
+        "reviewNotes": "",
+        "reviewedBy": ""
+      },
+      "suggestedDecisionMode": "bounded_retry_once",
+      "suggestedReason": "Retry-eligible row; allow one bounded retry only if no reviewed first-party replacement is available."
+    },
+    {
+      "stateId": "indiana",
+      "actionClass": "bounded_retry_then_replace",
+      "followupReason": "network_timeout",
+      "sourceUrl": "https://www.rileychildrens.org/contact-and-locations/riley-hospital-for-children-at-iu-health",
+      "hostname": "www.rileychildrens.org",
+      "repeatCount": 4,
+      "sameDomainCandidateCount": 1,
+      "sameDomainCandidates": [
+        {
+          "sourceName": "Riley Children's Health",
+          "sourceUrl": "https://www.rileychildrens.org/",
+          "priority": 1
+        }
+      ],
+      "topConcreteTargets": [
+        {
+          "sourceName": "Riley Children's Health",
+          "sourceUrl": "https://www.rileychildrens.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Peyton Manning Children's Hospital",
+          "sourceUrl": "https://healthcare.ascension.org/locations/indiana/inasc/pmch",
+          "priority": 1
+        },
+        {
+          "sourceName": "Indiana University Health Pediatric Care",
+          "sourceUrl": "https://iuhealth.org/",
+          "priority": 2
+        }
+      ],
+      "currentDecision": {
+        "decisionMode": "",
+        "reviewedSourceName": "",
+        "reviewedSourceUrl": "",
+        "retryNotes": "",
+        "reviewNotes": "",
+        "reviewedBy": ""
+      },
+      "suggestedDecisionMode": "bounded_retry_once",
+      "suggestedReason": "Retry-eligible row; allow one bounded retry only if no reviewed first-party replacement is available."
+    },
+    {
+      "stateId": "indiana",
+      "actionClass": "bounded_retry_then_replace",
+      "followupReason": "network_timeout",
+      "sourceUrl": "https://iuhealth.org/",
+      "hostname": "iuhealth.org",
+      "repeatCount": 3,
+      "sameDomainCandidateCount": 1,
+      "sameDomainCandidates": [
+        {
+          "sourceName": "Indiana University Health Pediatric Care",
+          "sourceUrl": "https://iuhealth.org/",
+          "priority": 2
+        }
+      ],
+      "topConcreteTargets": [
+        {
+          "sourceName": "Riley Children's Health",
+          "sourceUrl": "https://www.rileychildrens.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Peyton Manning Children's Hospital",
+          "sourceUrl": "https://healthcare.ascension.org/locations/indiana/inasc/pmch",
+          "priority": 1
+        },
+        {
+          "sourceName": "Indiana University Health Pediatric Care",
+          "sourceUrl": "https://iuhealth.org/",
+          "priority": 2
+        }
+      ],
+      "currentDecision": {
+        "decisionMode": "",
+        "reviewedSourceName": "",
+        "reviewedSourceUrl": "",
+        "retryNotes": "",
+        "reviewNotes": "",
+        "reviewedBy": ""
+      },
+      "suggestedDecisionMode": "bounded_retry_once",
+      "suggestedReason": "Retry-eligible row; allow one bounded retry only if no reviewed first-party replacement is available."
+    },
+    {
+      "stateId": "indiana",
+      "actionClass": "manual_review_or_replace",
+      "followupReason": "needs_review_unknown",
+      "sourceUrl": "https://iuhealth.org/",
+      "hostname": "iuhealth.org",
+      "repeatCount": 3,
+      "sameDomainCandidateCount": 1,
+      "sameDomainCandidates": [
+        {
+          "sourceName": "Indiana University Health Pediatric Care",
+          "sourceUrl": "https://iuhealth.org/",
+          "priority": 2
+        }
+      ],
+      "topConcreteTargets": [
+        {
+          "sourceName": "Riley Children's Health",
+          "sourceUrl": "https://www.rileychildrens.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Peyton Manning Children's Hospital",
+          "sourceUrl": "https://healthcare.ascension.org/locations/indiana/inasc/pmch",
+          "priority": 1
+        },
+        {
+          "sourceName": "Indiana University Health Pediatric Care",
+          "sourceUrl": "https://iuhealth.org/",
+          "priority": 2
+        }
+      ],
+      "currentDecision": {
+        "decisionMode": "",
+        "reviewedSourceName": "",
+        "reviewedSourceUrl": "",
+        "retryNotes": "",
+        "reviewNotes": "",
+        "reviewedBy": ""
+      },
+      "suggestedDecisionMode": "needs_manual_research",
+      "suggestedReason": "A same-domain candidate exists, but saved artifacts did not prove a safe, meaningfully different replacement URL."
+    }
+  ]
+}

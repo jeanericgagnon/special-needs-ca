@@ -1,0 +1,133 @@
+{
+  "generatedAt": "2026-06-18",
+  "sourceQueue": "docs/generated/knowledge-content-repair-queue-2026-06-18.json",
+  "entryCommand": "npm run audit:knowledge-content-repair-decision-template",
+  "applyCommand": "npm run fix:knowledge-content-repair-decisions -- --apply",
+  "auditCommand": "npm run audit:knowledge-content-repair-queue",
+  "commands": [
+    "npm run audit:knowledge-content-repair-decision-template",
+    "npm run fix:knowledge-content-repair-decisions -- --apply",
+    "npm run audit:knowledge-content-repair-queue"
+  ],
+  "instructions": {
+    "allowedDecisionModes": [
+      "replace_with_reviewed_exact_target",
+      "defer_blocked_source",
+      "skip_unresolved"
+    ],
+    "requiredTopLevelFields": [
+      "id",
+      "sourceUrl",
+      "decisionMode",
+      "reviewedBy"
+    ],
+    "replaceFields": [
+      "reviewedSourceName",
+      "reviewedSourceUrl"
+    ],
+    "optionalFields": [
+      "reviewNotes",
+      "reviewedSourceName",
+      "reviewedSourceUrl"
+    ],
+    "rules": [
+      "Resolve only rows already present in the knowledge-content repair queue.",
+      "Do not broaden beyond the listed blocked knowledge targets.",
+      "Use replace_with_reviewed_exact_target only when a truthful reviewed exact replacement source exists.",
+      "Use defer_blocked_source when the official source is blocked and no safe reviewed replacement has been confirmed.",
+      "Keep reviewedBy populated for every non-empty decision row."
+    ]
+  },
+  "rows": [
+    {
+      "id": "knowledge-chip-overview",
+      "sourceName": "CHIP Overview",
+      "sourceUrl": "https://www.medicaid.gov/chip",
+      "domain": "medicaid.gov",
+      "lastFollowupReason": "dns_lookup_failed",
+      "followupRunCount": 2,
+      "repairClass": "official_source_unreachable",
+      "recommendedDecisionMode": "replace_with_reviewed_exact_target",
+      "decisionMode": "defer_blocked_source",
+      "reviewedSourceName": "",
+      "reviewedSourceUrl": "",
+      "reviewNotes": "Bounded exact-target acquisition failed with dns_lookup_failed and no reviewed exact replacement is currently confirmed in saved artifacts.",
+      "reviewedBy": "codex"
+    },
+    {
+      "id": "knowledge-idea-child-find",
+      "sourceName": "IDEA Child Find",
+      "sourceUrl": "https://sites.ed.gov/idea/regs/b/d/300.111",
+      "domain": "sites.ed.gov",
+      "lastFollowupReason": "sandbox_network_disabled",
+      "followupRunCount": 1,
+      "repairClass": "blocked_source_unknown",
+      "recommendedDecisionMode": "skip_unresolved",
+      "decisionMode": "skip_unresolved",
+      "reviewedSourceName": "",
+      "reviewedSourceUrl": "",
+      "reviewNotes": "Bounded acquisition was blocked by sandbox_network_disabled in this environment; keep the target explicitly unresolved until a network-enabled run or reviewed replacement exists.",
+      "reviewedBy": "codex"
+    },
+    {
+      "id": "knowledge-idea-iep-review-revision",
+      "sourceName": "IDEA Development Review and Revision of IEP",
+      "sourceUrl": "https://sites.ed.gov/idea/regs/b/d/300.324",
+      "domain": "sites.ed.gov",
+      "lastFollowupReason": "sandbox_network_disabled",
+      "followupRunCount": 1,
+      "repairClass": "blocked_source_unknown",
+      "recommendedDecisionMode": "skip_unresolved",
+      "decisionMode": "skip_unresolved",
+      "reviewedSourceName": "",
+      "reviewedSourceUrl": "",
+      "reviewNotes": "Bounded acquisition was blocked by sandbox_network_disabled in this environment; keep the target explicitly unresolved until a network-enabled run or reviewed replacement exists.",
+      "reviewedBy": "codex"
+    },
+    {
+      "id": "knowledge-idea-evaluation-procedures",
+      "sourceName": "IDEA Evaluation Procedures",
+      "sourceUrl": "https://sites.ed.gov/idea/regs/b/d/300.304",
+      "domain": "sites.ed.gov",
+      "lastFollowupReason": "sandbox_network_disabled",
+      "followupRunCount": 1,
+      "repairClass": "blocked_source_unknown",
+      "recommendedDecisionMode": "skip_unresolved",
+      "decisionMode": "skip_unresolved",
+      "reviewedSourceName": "",
+      "reviewedSourceUrl": "",
+      "reviewNotes": "Bounded acquisition was blocked by sandbox_network_disabled in this environment; keep the target explicitly unresolved until a network-enabled run or reviewed replacement exists.",
+      "reviewedBy": "codex"
+    },
+    {
+      "id": "knowledge-idea-iep-team",
+      "sourceName": "IDEA IEP Team",
+      "sourceUrl": "https://sites.ed.gov/idea/regs/b/d/300.321",
+      "domain": "sites.ed.gov",
+      "lastFollowupReason": "sandbox_network_disabled",
+      "followupRunCount": 1,
+      "repairClass": "blocked_source_unknown",
+      "recommendedDecisionMode": "skip_unresolved",
+      "decisionMode": "skip_unresolved",
+      "reviewedSourceName": "",
+      "reviewedSourceUrl": "",
+      "reviewNotes": "Bounded acquisition was blocked by sandbox_network_disabled in this environment; keep the target explicitly unresolved until a network-enabled run or reviewed replacement exists.",
+      "reviewedBy": "codex"
+    },
+    {
+      "id": "knowledge-ssa-child-disability-starter-kit",
+      "sourceName": "SSA Child Disability Starter Kit",
+      "sourceUrl": "https://www.ssa.gov/disability/disability_starter_kits_child_eng.htm",
+      "domain": "ssa.gov",
+      "lastFollowupReason": "sandbox_network_disabled",
+      "followupRunCount": 1,
+      "repairClass": "blocked_source_unknown",
+      "recommendedDecisionMode": "skip_unresolved",
+      "decisionMode": "skip_unresolved",
+      "reviewedSourceName": "",
+      "reviewedSourceUrl": "",
+      "reviewNotes": "Bounded acquisition was blocked by sandbox_network_disabled in this environment; keep the target explicitly unresolved until a network-enabled run or reviewed replacement exists.",
+      "reviewedBy": "codex"
+    }
+  ]
+}

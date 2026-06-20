@@ -1,0 +1,28 @@
+{
+  "briefId": "provider_repair_authoring_brief",
+  "generatedAt": "2026-06-18T06:30:45.443Z",
+  "generatedDate": "2026-06-18",
+  "sourcePacketPath": "docs/generated/provider-repair-batch-packet-author-targets-first-illinois-2026-06-18.json",
+  "stateId": "illinois",
+  "purpose": "Deterministic authoring brief for unresolved provider repair rows that still need same-org first-party replacement URLs.",
+  "summary": {
+    "unresolvedRows": 1,
+    "rowsWithSavedEvidence": 0,
+    "rowsWithCandidateHints": 0
+  },
+  "rows": [
+    {
+      "stateId": "illinois",
+      "stateName": "Illinois",
+      "actionClass": "manual_review_or_replace",
+      "followupReason": "needs_review_unknown",
+      "sourceUrl": "https://www.ahs.uic.edu/",
+      "hostname": "www.ahs.uic.edu",
+      "repeatCount": 2,
+      "savedEvidencePath": "",
+      "savedEvidenceStatus": "missing_saved_html",
+      "candidateHints": [],
+      "nextAction": "Author a current same-org first-party replacement URL before the next provider fetch cycle."
+    }
+  ]
+}

@@ -204,21 +204,38 @@
     "last_checked_at": "2026-06-13"
   },
   {
-    "state": "AL",
-    "category": "M. Hospitals / university clinics",
-    "specific_subcategory": "Hospitals",
-    "source_name": "Alabama Children's Hospital Clinics",
-    "organization_type": "hospital",
-    "source_url": "https://www.childrensal.org",
+    "source_name": "Children's of Alabama",
+    "source_url": "https://www.childrensal.org/",
     "domain": "childrensal.org",
     "target_table": "resource_providers",
+    "category": "M. Hospitals / university clinics",
+    "specific_subcategory": "Hospitals",
+    "organization_type": "hospital",
     "expected_extraction_fields": "name, phone, address",
-    "crawl_method": "manual_review",
+    "crawl_method": "static_fetch",
+    "robots_status": "allowed",
+    "terms_risk": "low",
+    "priority": 1,
+    "notes": "Named first-party Alabama pediatric hospital target replacing generic placeholder.",
+    "last_checked_at": "2026-06-17",
+    "state": "AL"
+  },
+  {
+    "source_name": "UAB Medicine Pediatrics",
+    "source_url": "https://www.uabmedicine.org/",
+    "domain": "uabmedicine.org",
+    "target_table": "resource_providers",
+    "category": "M. Hospitals / university clinics",
+    "specific_subcategory": "University clinics",
+    "organization_type": "university_clinic",
+    "expected_extraction_fields": "name, phone, address",
+    "crawl_method": "static_fetch",
     "robots_status": "allowed",
     "terms_risk": "low",
     "priority": 2,
-    "notes": "Initial category-level scaffold source target for Alabama.",
-    "last_checked_at": "2026-06-13"
+    "notes": "First-party Alabama academic medical system target for pediatric and specialty clinic discovery.",
+    "last_checked_at": "2026-06-17",
+    "state": "AL"
   },
   {
     "state": "AL",
@@ -236,5 +253,22 @@
     "priority": 2,
     "notes": "Initial category-level scaffold source target for Alabama.",
     "last_checked_at": "2026-06-13"
+  },
+  {
+    "source_name": "Huntsville Hospital for Women & Children",
+    "source_url": "https://www.hhsys.org/",
+    "domain": "hhsys.org",
+    "target_table": "resource_providers",
+    "category": "M. Hospitals / university clinics",
+    "specific_subcategory": "Women and children hospital",
+    "organization_type": "hospital",
+    "expected_extraction_fields": "name, phone, address",
+    "crawl_method": "static_fetch",
+    "robots_status": "allowed",
+    "terms_risk": "low",
+    "priority": 2,
+    "notes": "Official health-system first-party target for Huntsville Hospital for Women & Children, added to deepen Alabama pediatric provider coverage beyond Birmingham anchors.",
+    "last_checked_at": "2026-06-19",
+    "state": "AL"
   }
 ]

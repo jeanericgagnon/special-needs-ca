@@ -1,0 +1,218 @@
+{
+  "generatedAt": "2026-06-18",
+  "criticalExhaustiveGaps": [
+    {
+      "id": "provider_directory",
+      "label": "Local providers, clinics, therapists, and care",
+      "currentState": "thin",
+      "evidence": "94 public provider rows and 23 staged provider rows across all 50 states.",
+      "exhaustiveGap": "This is the biggest information hole if the goal is all local help, especially to compete on care and treatment discovery.",
+      "status": "critical_gap"
+    },
+    {
+      "id": "advocate_directory_depth",
+      "label": "Advocates and legal/IEP support",
+      "currentState": "moderate",
+      "evidence": "2995 advocate rows, with California still blocked in strict gold because 58 counties lose advocate coverage after truth gating.",
+      "exhaustiveGap": "Advocate count is decent, but truth-safe local coverage is not yet strong enough to call exhaustive.",
+      "status": "meaningful_but_not_exhaustive"
+    },
+    {
+      "id": "directory_foundation_signals",
+      "label": "Findhelp-like metadata: availability, accessibility, intake, capacity",
+      "currentState": "modeled",
+      "evidence": "Provider accessibility booleans with true signal: accepts_medi_cal 27/94; interpreter_available 22/94; asl_available 12/94; wheelchair_accessible 5/94; virtual_services 18/94; in_person_services 60/94; home_visits 3/94; transportation_help 8/94 Nonprofit accessibility booleans with true signal: interpreter_available 0/29501; asl_available 0/29501; wheelchair_accessible 0/29501; virtual_services 1/29501; in_person_services 22/29501; home_visits 0/29501; transportation_help 0/29501 Advocate accessibility booleans with true signal: interpreter_available 0/2995; asl_available 0/2995; wheelchair_accessible 0/2995; virtual_services 2/2995; in_person_services 0/2995; home_visits 0/2995; transportation_help 0/2995",
+      "exhaustiveGap": "The schema exists, but live high-signal metadata is sparse, especially on nonprofits and advocates.",
+      "status": "partial"
+    },
+    {
+      "id": "normalization_depth",
+      "label": "Canonical org -> program -> location normalization",
+      "currentState": "present",
+      "evidence": "36891 organizations, 36891 org-program links, 83 service locations, 4314 office locations, 33130 virtual service areas.",
+      "exhaustiveGap": "Normalization exists, but service-location depth is still too thin to support a fully location-rich help product.",
+      "status": "partial"
+    },
+    {
+      "id": "knowledge_content_depth",
+      "label": "Help content and explanatory knowledge",
+      "currentState": "thin",
+      "evidence": "15 knowledge articles, 8 staged knowledge articles.",
+      "exhaustiveGap": "The content layer is still far too small for the full family journey nationally, but staged knowledge growth is now present and measured.",
+      "status": "critical_gap"
+    },
+    {
+      "id": "family_runtime",
+      "label": "Family workflow, case tracking, reminders, and documents",
+      "currentState": "demo_only",
+      "evidence": "5 total family-case-layer rows across 8 tables; most tables are empty.",
+      "exhaustiveGap": "The runtime workflow model exists but is not populated as a real product layer.",
+      "status": "not_started"
+    },
+    {
+      "id": "support_planning",
+      "label": "Support planning, collaboration, and care coordination",
+      "currentState": "empty",
+      "evidence": "0 total rows across planning/collaboration tables.",
+      "exhaustiveGap": "This entire product surface is still schema-only in practice.",
+      "status": "not_started"
+    },
+    {
+      "id": "feedback_loops",
+      "label": "User submissions, coverage gaps, verification queue",
+      "currentState": "minimal",
+      "evidence": "0 user submissions, 0 coverage gaps, 2 verification queue items.",
+      "exhaustiveGap": "Operational feedback loops are not built out enough to sustain exhaustive maintenance.",
+      "status": "critical_gap"
+    }
+  ],
+  "gapFamilyStats": [
+    {
+      "gapFamily": "nonprofit_support",
+      "total": 1396,
+      "ready": 1293,
+      "blocked": 0,
+      "discoveryOnly": 103,
+      "manualReview": 0,
+      "trustedMissingRows": 34009
+    },
+    {
+      "gapFamily": "providers_care",
+      "total": 92,
+      "ready": 61,
+      "blocked": 28,
+      "discoveryOnly": 0,
+      "manualReview": 3,
+      "trustedMissingRows": 0
+    },
+    {
+      "gapFamily": "programs_benefits",
+      "total": 83,
+      "ready": 47,
+      "blocked": 36,
+      "discoveryOnly": 0,
+      "manualReview": 0,
+      "trustedMissingRows": 0
+    },
+    {
+      "gapFamily": "parent_training_nonprofits",
+      "total": 67,
+      "ready": 25,
+      "blocked": 42,
+      "discoveryOnly": 0,
+      "manualReview": 0,
+      "trustedMissingRows": 0
+    },
+    {
+      "gapFamily": "condition_nonprofits",
+      "total": 61,
+      "ready": 18,
+      "blocked": 42,
+      "discoveryOnly": 0,
+      "manualReview": 1,
+      "trustedMissingRows": 0
+    },
+    {
+      "gapFamily": "geography_counties",
+      "total": 59,
+      "ready": 48,
+      "blocked": 11,
+      "discoveryOnly": 0,
+      "manualReview": 0,
+      "trustedMissingRows": 0
+    },
+    {
+      "gapFamily": "general_gap_fill",
+      "total": 58,
+      "ready": 58,
+      "blocked": 0,
+      "discoveryOnly": 0,
+      "manualReview": 0,
+      "trustedMissingRows": 0
+    },
+    {
+      "gapFamily": "transition_programs",
+      "total": 57,
+      "ready": 17,
+      "blocked": 40,
+      "discoveryOnly": 0,
+      "manualReview": 0,
+      "trustedMissingRows": 0
+    },
+    {
+      "gapFamily": "dd_routing",
+      "total": 55,
+      "ready": 54,
+      "blocked": 1,
+      "discoveryOnly": 0,
+      "manualReview": 0,
+      "trustedMissingRows": 0
+    },
+    {
+      "gapFamily": "waivers",
+      "total": 53,
+      "ready": 52,
+      "blocked": 1,
+      "discoveryOnly": 0,
+      "manualReview": 0,
+      "trustedMissingRows": 0
+    },
+    {
+      "gapFamily": "medicaid_hhs_offices",
+      "total": 50,
+      "ready": 10,
+      "blocked": 40,
+      "discoveryOnly": 0,
+      "manualReview": 0,
+      "trustedMissingRows": 0
+    },
+    {
+      "gapFamily": "early_intervention_programs",
+      "total": 50,
+      "ready": 10,
+      "blocked": 40,
+      "discoveryOnly": 0,
+      "manualReview": 0,
+      "trustedMissingRows": 0
+    },
+    {
+      "gapFamily": "education_routing",
+      "total": 50,
+      "ready": 15,
+      "blocked": 35,
+      "discoveryOnly": 0,
+      "manualReview": 0,
+      "trustedMissingRows": 0
+    },
+    {
+      "gapFamily": "source_registry",
+      "total": 49,
+      "ready": 39,
+      "blocked": 10,
+      "discoveryOnly": 0,
+      "manualReview": 0,
+      "trustedMissingRows": 0
+    },
+    {
+      "gapFamily": "advocates_legal",
+      "total": 44,
+      "ready": 1,
+      "blocked": 43,
+      "discoveryOnly": 0,
+      "manualReview": 0,
+      "trustedMissingRows": 0
+    },
+    {
+      "gapFamily": "forms_guides",
+      "total": 43,
+      "ready": 6,
+      "blocked": 37,
+      "discoveryOnly": 0,
+      "manualReview": 0,
+      "trustedMissingRows": 0
+    }
+  ],
+  "authoredFamilyBlockers": [],
+  "authoredFamilyBlockerCount": 0,
+  "families": []
+}

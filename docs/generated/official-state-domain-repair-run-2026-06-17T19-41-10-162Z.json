@@ -1,0 +1,2213 @@
+{
+  "generatedAt": "2026-06-17T19:41:10.163Z",
+  "mode": "dry-run",
+  "stateFilter": null,
+  "summary": {
+    "eligibleRepairRows": 0,
+    "appliedChanges": 0,
+    "filesChanged": 0,
+    "skippedAmbiguousRows": 314,
+    "skippedMissingRows": 0
+  },
+  "repairs": [],
+  "ambiguousRows": [
+    {
+      "stateId": "alabama",
+      "targetTable": "programs",
+      "sourceName": "Alabama Department of Education Special Ed",
+      "fakeSourceUrl": "https://www.alabama-education.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "alabama",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Alabama Regional Special Education Support",
+      "fakeSourceUrl": "https://www.alabama-education.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "alaska",
+      "targetTable": "county_offices",
+      "sourceName": "Alaska Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.alaska.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "alaska",
+      "targetTable": "forms",
+      "sourceName": "Alaska Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.alaska.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "alaska",
+      "targetTable": "programs",
+      "sourceName": "Alaska Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.alaska.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "alaska",
+      "targetTable": "programs",
+      "sourceName": "Alaska HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.alaska.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "alaska",
+      "targetTable": "programs",
+      "sourceName": "Alaska Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.alaska.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "alaska",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Alaska Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.alaska.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "arizona",
+      "targetTable": "county_offices",
+      "sourceName": "Arizona Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.arizona.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "arizona",
+      "targetTable": "forms",
+      "sourceName": "Arizona Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.arizona.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "arizona",
+      "targetTable": "programs",
+      "sourceName": "Arizona Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.arizona.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "arizona",
+      "targetTable": "programs",
+      "sourceName": "Arizona Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.arizona.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "arizona",
+      "targetTable": "programs",
+      "sourceName": "Arizona HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.arizona.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "arizona",
+      "targetTable": "programs",
+      "sourceName": "Arizona Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.arizona.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "arizona",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Arizona Regional Special Education Support",
+      "fakeSourceUrl": "https://education.arizona.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "arizona",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Arizona Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.arizona.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "arkansas",
+      "targetTable": "county_offices",
+      "sourceName": "Arkansas Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.arkansas.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "arkansas",
+      "targetTable": "forms",
+      "sourceName": "Arkansas Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.arkansas.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "arkansas",
+      "targetTable": "programs",
+      "sourceName": "Arkansas Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.arkansas.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "arkansas",
+      "targetTable": "programs",
+      "sourceName": "Arkansas Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.arkansas.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "arkansas",
+      "targetTable": "programs",
+      "sourceName": "Arkansas HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.arkansas.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "arkansas",
+      "targetTable": "programs",
+      "sourceName": "Arkansas Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.arkansas.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "arkansas",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Arkansas Regional Special Education Support",
+      "fakeSourceUrl": "https://education.arkansas.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "arkansas",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Arkansas Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.arkansas.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "colorado",
+      "targetTable": "county_offices",
+      "sourceName": "Colorado Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.colorado.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "colorado",
+      "targetTable": "forms",
+      "sourceName": "Colorado Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.colorado.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "colorado",
+      "targetTable": "programs",
+      "sourceName": "Colorado Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.colorado.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "colorado",
+      "targetTable": "programs",
+      "sourceName": "Colorado Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.colorado.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "colorado",
+      "targetTable": "programs",
+      "sourceName": "Colorado HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.colorado.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "colorado",
+      "targetTable": "programs",
+      "sourceName": "Colorado Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.colorado.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "colorado",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Colorado Regional Special Education Support",
+      "fakeSourceUrl": "https://education.colorado.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "colorado",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Colorado Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.colorado.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "connecticut",
+      "targetTable": "county_offices",
+      "sourceName": "Connecticut Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.connecticut.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "connecticut",
+      "targetTable": "forms",
+      "sourceName": "Connecticut Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.connecticut.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "connecticut",
+      "targetTable": "programs",
+      "sourceName": "Connecticut Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.connecticut.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "connecticut",
+      "targetTable": "programs",
+      "sourceName": "Connecticut Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.connecticut.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "connecticut",
+      "targetTable": "programs",
+      "sourceName": "Connecticut HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.connecticut.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "connecticut",
+      "targetTable": "programs",
+      "sourceName": "Connecticut Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.connecticut.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "connecticut",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Connecticut Regional Special Education Support",
+      "fakeSourceUrl": "https://education.connecticut.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "connecticut",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Connecticut Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.connecticut.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "delaware",
+      "targetTable": "county_offices",
+      "sourceName": "Delaware Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.delaware.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "delaware",
+      "targetTable": "forms",
+      "sourceName": "Delaware Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.delaware.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "delaware",
+      "targetTable": "programs",
+      "sourceName": "Delaware Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.delaware.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "delaware",
+      "targetTable": "programs",
+      "sourceName": "Delaware HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.delaware.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "delaware",
+      "targetTable": "programs",
+      "sourceName": "Delaware Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.delaware.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "delaware",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Delaware Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.delaware.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "florida",
+      "targetTable": "programs",
+      "sourceName": "Children's Medical Services (CMS) Plan",
+      "fakeSourceUrl": "https://www.cmsplan.floridahealth.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "florida",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Florida Early Steps Local Directories",
+      "fakeSourceUrl": "https://www.cmsplan.floridahealth.gov/earlysteps/directories",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "hawaii",
+      "targetTable": "county_offices",
+      "sourceName": "Hawaii Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.hawaii.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "hawaii",
+      "targetTable": "forms",
+      "sourceName": "Hawaii Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.hawaii.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "hawaii",
+      "targetTable": "programs",
+      "sourceName": "Hawaii Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.hawaii.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "hawaii",
+      "targetTable": "programs",
+      "sourceName": "Hawaii Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.hawaii.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "hawaii",
+      "targetTable": "programs",
+      "sourceName": "Hawaii HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.hawaii.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "hawaii",
+      "targetTable": "programs",
+      "sourceName": "Hawaii Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.hawaii.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "hawaii",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Hawaii Regional Special Education Support",
+      "fakeSourceUrl": "https://education.hawaii.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "hawaii",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Hawaii Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.hawaii.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "idaho",
+      "targetTable": "county_offices",
+      "sourceName": "Idaho Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.idaho.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "idaho",
+      "targetTable": "forms",
+      "sourceName": "Idaho Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.idaho.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "idaho",
+      "targetTable": "programs",
+      "sourceName": "Idaho Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.idaho.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "idaho",
+      "targetTable": "programs",
+      "sourceName": "Idaho Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.idaho.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "idaho",
+      "targetTable": "programs",
+      "sourceName": "Idaho HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.idaho.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "idaho",
+      "targetTable": "programs",
+      "sourceName": "Idaho Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.idaho.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "idaho",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Idaho Regional Special Education Support",
+      "fakeSourceUrl": "https://education.idaho.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "idaho",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Idaho Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.idaho.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "indiana",
+      "targetTable": "county_offices",
+      "sourceName": "Indiana Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.indiana.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "indiana",
+      "targetTable": "forms",
+      "sourceName": "Indiana Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.indiana.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "indiana",
+      "targetTable": "programs",
+      "sourceName": "Indiana Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.indiana.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "indiana",
+      "targetTable": "programs",
+      "sourceName": "Indiana Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.indiana.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "indiana",
+      "targetTable": "programs",
+      "sourceName": "Indiana HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.indiana.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "indiana",
+      "targetTable": "programs",
+      "sourceName": "Indiana Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.indiana.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "indiana",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Indiana Regional Special Education Support",
+      "fakeSourceUrl": "https://education.indiana.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "indiana",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Indiana Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.indiana.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "iowa",
+      "targetTable": "county_offices",
+      "sourceName": "Iowa Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.iowa.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "iowa",
+      "targetTable": "forms",
+      "sourceName": "Iowa Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.iowa.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "iowa",
+      "targetTable": "programs",
+      "sourceName": "Iowa Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.iowa.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "iowa",
+      "targetTable": "programs",
+      "sourceName": "Iowa Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.iowa.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "iowa",
+      "targetTable": "programs",
+      "sourceName": "Iowa HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.iowa.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "iowa",
+      "targetTable": "programs",
+      "sourceName": "Iowa Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.iowa.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "iowa",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Iowa Regional Special Education Support",
+      "fakeSourceUrl": "https://education.iowa.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "iowa",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Iowa Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.iowa.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "kansas",
+      "targetTable": "county_offices",
+      "sourceName": "Kansas Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.kansas.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "kansas",
+      "targetTable": "forms",
+      "sourceName": "Kansas Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.kansas.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "kansas",
+      "targetTable": "programs",
+      "sourceName": "Kansas Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.kansas.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "kansas",
+      "targetTable": "programs",
+      "sourceName": "Kansas Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.kansas.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "kansas",
+      "targetTable": "programs",
+      "sourceName": "Kansas HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.kansas.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "kansas",
+      "targetTable": "programs",
+      "sourceName": "Kansas Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.kansas.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "kansas",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Kansas Regional Special Education Support",
+      "fakeSourceUrl": "https://education.kansas.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "kansas",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Kansas Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.kansas.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "kentucky",
+      "targetTable": "county_offices",
+      "sourceName": "Kentucky Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.kentucky.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "kentucky",
+      "targetTable": "forms",
+      "sourceName": "Kentucky Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.kentucky.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "kentucky",
+      "targetTable": "programs",
+      "sourceName": "Kentucky Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.kentucky.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "kentucky",
+      "targetTable": "programs",
+      "sourceName": "Kentucky Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.kentucky.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "kentucky",
+      "targetTable": "programs",
+      "sourceName": "Kentucky HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.kentucky.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "kentucky",
+      "targetTable": "programs",
+      "sourceName": "Kentucky Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.kentucky.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "kentucky",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Kentucky Regional Special Education Support",
+      "fakeSourceUrl": "https://education.kentucky.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "kentucky",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Kentucky Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.kentucky.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "louisiana",
+      "targetTable": "county_offices",
+      "sourceName": "Louisiana Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.louisiana.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "louisiana",
+      "targetTable": "forms",
+      "sourceName": "Louisiana Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.louisiana.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "louisiana",
+      "targetTable": "programs",
+      "sourceName": "Louisiana Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.louisiana.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "louisiana",
+      "targetTable": "programs",
+      "sourceName": "Louisiana Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.louisiana.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "louisiana",
+      "targetTable": "programs",
+      "sourceName": "Louisiana HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.louisiana.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "louisiana",
+      "targetTable": "programs",
+      "sourceName": "Louisiana Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.louisiana.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "louisiana",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Louisiana Regional Special Education Support",
+      "fakeSourceUrl": "https://education.louisiana.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "louisiana",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Louisiana Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.louisiana.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "maine",
+      "targetTable": "county_offices",
+      "sourceName": "Maine Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.maine.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "maine",
+      "targetTable": "forms",
+      "sourceName": "Maine Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.maine.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "maine",
+      "targetTable": "programs",
+      "sourceName": "Maine Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.maine.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "maine",
+      "targetTable": "programs",
+      "sourceName": "Maine Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.maine.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "maine",
+      "targetTable": "programs",
+      "sourceName": "Maine HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.maine.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "maine",
+      "targetTable": "programs",
+      "sourceName": "Maine Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.maine.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "maine",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Maine Regional Special Education Support",
+      "fakeSourceUrl": "https://education.maine.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "maine",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Maine Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.maine.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "maryland",
+      "targetTable": "county_offices",
+      "sourceName": "Maryland Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.maryland.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "maryland",
+      "targetTable": "forms",
+      "sourceName": "Maryland Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.maryland.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "maryland",
+      "targetTable": "programs",
+      "sourceName": "Maryland Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.maryland.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "maryland",
+      "targetTable": "programs",
+      "sourceName": "Maryland Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.maryland.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "maryland",
+      "targetTable": "programs",
+      "sourceName": "Maryland HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.maryland.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "maryland",
+      "targetTable": "programs",
+      "sourceName": "Maryland Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.maryland.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "maryland",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Maryland Regional Special Education Support",
+      "fakeSourceUrl": "https://education.maryland.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "maryland",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Maryland Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.maryland.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "massachusetts",
+      "targetTable": "county_offices",
+      "sourceName": "Massachusetts Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.massachusetts.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "massachusetts",
+      "targetTable": "forms",
+      "sourceName": "Massachusetts Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.massachusetts.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "massachusetts",
+      "targetTable": "programs",
+      "sourceName": "Massachusetts Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.massachusetts.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "massachusetts",
+      "targetTable": "programs",
+      "sourceName": "Massachusetts Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.massachusetts.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "massachusetts",
+      "targetTable": "programs",
+      "sourceName": "Massachusetts HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.massachusetts.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "massachusetts",
+      "targetTable": "programs",
+      "sourceName": "Massachusetts Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.massachusetts.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "massachusetts",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Massachusetts Regional Special Education Support",
+      "fakeSourceUrl": "https://education.massachusetts.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "massachusetts",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Massachusetts Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.massachusetts.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "michigan",
+      "targetTable": "county_offices",
+      "sourceName": "Michigan Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.michigan.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "michigan",
+      "targetTable": "forms",
+      "sourceName": "Michigan Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.michigan.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "michigan",
+      "targetTable": "programs",
+      "sourceName": "Michigan Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.michigan.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "michigan",
+      "targetTable": "programs",
+      "sourceName": "Michigan Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.michigan.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "michigan",
+      "targetTable": "programs",
+      "sourceName": "Michigan HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.michigan.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "michigan",
+      "targetTable": "programs",
+      "sourceName": "Michigan Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.michigan.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "michigan",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Michigan Regional Special Education Support",
+      "fakeSourceUrl": "https://education.michigan.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "michigan",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Michigan Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.michigan.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "minnesota",
+      "targetTable": "county_offices",
+      "sourceName": "Minnesota Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.minnesota.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "minnesota",
+      "targetTable": "forms",
+      "sourceName": "Minnesota Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.minnesota.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "minnesota",
+      "targetTable": "programs",
+      "sourceName": "Minnesota Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.minnesota.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "minnesota",
+      "targetTable": "programs",
+      "sourceName": "Minnesota HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.minnesota.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "minnesota",
+      "targetTable": "programs",
+      "sourceName": "Minnesota Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.minnesota.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "minnesota",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Minnesota Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.minnesota.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "mississippi",
+      "targetTable": "county_offices",
+      "sourceName": "Mississippi Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.mississippi.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "mississippi",
+      "targetTable": "forms",
+      "sourceName": "Mississippi Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.mississippi.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "mississippi",
+      "targetTable": "programs",
+      "sourceName": "Mississippi Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.mississippi.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "mississippi",
+      "targetTable": "programs",
+      "sourceName": "Mississippi Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.mississippi.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "mississippi",
+      "targetTable": "programs",
+      "sourceName": "Mississippi HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.mississippi.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "mississippi",
+      "targetTable": "programs",
+      "sourceName": "Mississippi Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.mississippi.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "mississippi",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Mississippi Regional Special Education Support",
+      "fakeSourceUrl": "https://education.mississippi.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "mississippi",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Mississippi Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.mississippi.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "missouri",
+      "targetTable": "county_offices",
+      "sourceName": "Missouri Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.missouri.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "missouri",
+      "targetTable": "forms",
+      "sourceName": "Missouri Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.missouri.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "missouri",
+      "targetTable": "programs",
+      "sourceName": "Missouri Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.missouri.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "missouri",
+      "targetTable": "programs",
+      "sourceName": "Missouri Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.missouri.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "missouri",
+      "targetTable": "programs",
+      "sourceName": "Missouri HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.missouri.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "missouri",
+      "targetTable": "programs",
+      "sourceName": "Missouri Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.missouri.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "missouri",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Missouri Regional Special Education Support",
+      "fakeSourceUrl": "https://education.missouri.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "missouri",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Missouri Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.missouri.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "montana",
+      "targetTable": "county_offices",
+      "sourceName": "Montana Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.montana.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "montana",
+      "targetTable": "forms",
+      "sourceName": "Montana Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.montana.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "montana",
+      "targetTable": "programs",
+      "sourceName": "Montana Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.montana.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "montana",
+      "targetTable": "programs",
+      "sourceName": "Montana Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.montana.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "montana",
+      "targetTable": "programs",
+      "sourceName": "Montana HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.montana.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "montana",
+      "targetTable": "programs",
+      "sourceName": "Montana Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.montana.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "montana",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Montana Regional Special Education Support",
+      "fakeSourceUrl": "https://education.montana.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "montana",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Montana Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.montana.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "nebraska",
+      "targetTable": "county_offices",
+      "sourceName": "Nebraska Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.nebraska.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "nebraska",
+      "targetTable": "forms",
+      "sourceName": "Nebraska Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.nebraska.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "nebraska",
+      "targetTable": "programs",
+      "sourceName": "Nebraska Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.nebraska.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "nebraska",
+      "targetTable": "programs",
+      "sourceName": "Nebraska Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.nebraska.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "nebraska",
+      "targetTable": "programs",
+      "sourceName": "Nebraska HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.nebraska.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "nebraska",
+      "targetTable": "programs",
+      "sourceName": "Nebraska Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.nebraska.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "nebraska",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Nebraska Regional Special Education Support",
+      "fakeSourceUrl": "https://education.nebraska.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "nebraska",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Nebraska Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.nebraska.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "nevada",
+      "targetTable": "county_offices",
+      "sourceName": "Nevada Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.nevada.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "nevada",
+      "targetTable": "forms",
+      "sourceName": "Nevada Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.nevada.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "nevada",
+      "targetTable": "programs",
+      "sourceName": "Nevada Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.nevada.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "nevada",
+      "targetTable": "programs",
+      "sourceName": "Nevada Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.nevada.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "nevada",
+      "targetTable": "programs",
+      "sourceName": "Nevada HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.nevada.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "nevada",
+      "targetTable": "programs",
+      "sourceName": "Nevada Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.nevada.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "nevada",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Nevada Regional Special Education Support",
+      "fakeSourceUrl": "https://education.nevada.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "nevada",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Nevada Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.nevada.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "new-hampshire",
+      "targetTable": "county_offices",
+      "sourceName": "New Hampshire Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.new-hampshire.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "new-hampshire",
+      "targetTable": "forms",
+      "sourceName": "New Hampshire Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.new-hampshire.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "new-hampshire",
+      "targetTable": "programs",
+      "sourceName": "New Hampshire Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.new-hampshire.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "new-hampshire",
+      "targetTable": "programs",
+      "sourceName": "New Hampshire Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.new-hampshire.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "new-hampshire",
+      "targetTable": "programs",
+      "sourceName": "New Hampshire HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.new-hampshire.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "new-hampshire",
+      "targetTable": "programs",
+      "sourceName": "New Hampshire Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.new-hampshire.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "new-hampshire",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "New Hampshire Regional Special Education Support",
+      "fakeSourceUrl": "https://education.new-hampshire.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "new-hampshire",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "New Hampshire Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.new-hampshire.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "new-jersey",
+      "targetTable": "county_offices",
+      "sourceName": "New Jersey Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.new-jersey.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "new-jersey",
+      "targetTable": "forms",
+      "sourceName": "New Jersey Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.new-jersey.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "new-jersey",
+      "targetTable": "programs",
+      "sourceName": "New Jersey Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.new-jersey.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "new-jersey",
+      "targetTable": "programs",
+      "sourceName": "New Jersey Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.new-jersey.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "new-jersey",
+      "targetTable": "programs",
+      "sourceName": "New Jersey HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.new-jersey.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "new-jersey",
+      "targetTable": "programs",
+      "sourceName": "New Jersey Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.new-jersey.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "new-jersey",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "New Jersey Regional Special Education Support",
+      "fakeSourceUrl": "https://education.new-jersey.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "new-jersey",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "New Jersey Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.new-jersey.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "new-mexico",
+      "targetTable": "county_offices",
+      "sourceName": "New Mexico Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.new-mexico.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "new-mexico",
+      "targetTable": "forms",
+      "sourceName": "New Mexico Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.new-mexico.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "new-mexico",
+      "targetTable": "programs",
+      "sourceName": "New Mexico Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.new-mexico.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "new-mexico",
+      "targetTable": "programs",
+      "sourceName": "New Mexico Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.new-mexico.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "new-mexico",
+      "targetTable": "programs",
+      "sourceName": "New Mexico HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.new-mexico.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "new-mexico",
+      "targetTable": "programs",
+      "sourceName": "New Mexico Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.new-mexico.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "new-mexico",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "New Mexico Regional Special Education Support",
+      "fakeSourceUrl": "https://education.new-mexico.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "new-mexico",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "New Mexico Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.new-mexico.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "north-carolina",
+      "targetTable": "forms",
+      "sourceName": "North Carolina Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.north-carolina.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "north-carolina",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "North Carolina Regional Special Education Support",
+      "fakeSourceUrl": "https://education.north-carolina.gov/regional",
+      "mediumCandidateCount": 2
+    },
+    {
+      "stateId": "north-dakota",
+      "targetTable": "county_offices",
+      "sourceName": "North Dakota Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.north-dakota.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "north-dakota",
+      "targetTable": "forms",
+      "sourceName": "North Dakota Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.north-dakota.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "north-dakota",
+      "targetTable": "programs",
+      "sourceName": "North Dakota Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.north-dakota.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "north-dakota",
+      "targetTable": "programs",
+      "sourceName": "North Dakota Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.north-dakota.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "north-dakota",
+      "targetTable": "programs",
+      "sourceName": "North Dakota HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.north-dakota.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "north-dakota",
+      "targetTable": "programs",
+      "sourceName": "North Dakota Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.north-dakota.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "north-dakota",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "North Dakota Regional Special Education Support",
+      "fakeSourceUrl": "https://education.north-dakota.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "north-dakota",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "North Dakota Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.north-dakota.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "oklahoma",
+      "targetTable": "county_offices",
+      "sourceName": "Oklahoma Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.oklahoma.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "oklahoma",
+      "targetTable": "forms",
+      "sourceName": "Oklahoma Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.oklahoma.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "oklahoma",
+      "targetTable": "programs",
+      "sourceName": "Oklahoma Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.oklahoma.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "oklahoma",
+      "targetTable": "programs",
+      "sourceName": "Oklahoma Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.oklahoma.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "oklahoma",
+      "targetTable": "programs",
+      "sourceName": "Oklahoma HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.oklahoma.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "oklahoma",
+      "targetTable": "programs",
+      "sourceName": "Oklahoma Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.oklahoma.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "oklahoma",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Oklahoma Regional Special Education Support",
+      "fakeSourceUrl": "https://education.oklahoma.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "oklahoma",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Oklahoma Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.oklahoma.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "oregon",
+      "targetTable": "county_offices",
+      "sourceName": "Oregon Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.oregon.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "oregon",
+      "targetTable": "forms",
+      "sourceName": "Oregon Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.oregon.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "oregon",
+      "targetTable": "programs",
+      "sourceName": "Oregon Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.oregon.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "oregon",
+      "targetTable": "programs",
+      "sourceName": "Oregon HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.oregon.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "oregon",
+      "targetTable": "programs",
+      "sourceName": "Oregon Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.oregon.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "oregon",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Oregon Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.oregon.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "rhode-island",
+      "targetTable": "county_offices",
+      "sourceName": "Rhode Island Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.rhode-island.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "rhode-island",
+      "targetTable": "forms",
+      "sourceName": "Rhode Island Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.rhode-island.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "rhode-island",
+      "targetTable": "programs",
+      "sourceName": "Rhode Island Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.rhode-island.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "rhode-island",
+      "targetTable": "programs",
+      "sourceName": "Rhode Island Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.rhode-island.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "rhode-island",
+      "targetTable": "programs",
+      "sourceName": "Rhode Island HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.rhode-island.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "rhode-island",
+      "targetTable": "programs",
+      "sourceName": "Rhode Island Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.rhode-island.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "rhode-island",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Rhode Island Regional Special Education Support",
+      "fakeSourceUrl": "https://education.rhode-island.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "rhode-island",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Rhode Island Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.rhode-island.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "south-carolina",
+      "targetTable": "county_offices",
+      "sourceName": "South Carolina Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.south-carolina.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "south-carolina",
+      "targetTable": "forms",
+      "sourceName": "South Carolina Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.south-carolina.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "south-carolina",
+      "targetTable": "programs",
+      "sourceName": "South Carolina Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.south-carolina.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "south-carolina",
+      "targetTable": "programs",
+      "sourceName": "South Carolina Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.south-carolina.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "south-carolina",
+      "targetTable": "programs",
+      "sourceName": "South Carolina HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.south-carolina.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "south-carolina",
+      "targetTable": "programs",
+      "sourceName": "South Carolina Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.south-carolina.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "south-carolina",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "South Carolina Regional Special Education Support",
+      "fakeSourceUrl": "https://education.south-carolina.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "south-carolina",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "South Carolina Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.south-carolina.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "south-dakota",
+      "targetTable": "county_offices",
+      "sourceName": "South Dakota Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.south-dakota.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "south-dakota",
+      "targetTable": "forms",
+      "sourceName": "South Dakota Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.south-dakota.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "south-dakota",
+      "targetTable": "programs",
+      "sourceName": "South Dakota Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.south-dakota.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "south-dakota",
+      "targetTable": "programs",
+      "sourceName": "South Dakota Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.south-dakota.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "south-dakota",
+      "targetTable": "programs",
+      "sourceName": "South Dakota HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.south-dakota.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "south-dakota",
+      "targetTable": "programs",
+      "sourceName": "South Dakota Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.south-dakota.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "south-dakota",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "South Dakota Regional Special Education Support",
+      "fakeSourceUrl": "https://education.south-dakota.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "south-dakota",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "South Dakota Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.south-dakota.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "tennessee",
+      "targetTable": "county_offices",
+      "sourceName": "Tennessee Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.tennessee.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "tennessee",
+      "targetTable": "forms",
+      "sourceName": "Tennessee Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.tennessee.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "tennessee",
+      "targetTable": "programs",
+      "sourceName": "Tennessee Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.tennessee.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "tennessee",
+      "targetTable": "programs",
+      "sourceName": "Tennessee Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.tennessee.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "tennessee",
+      "targetTable": "programs",
+      "sourceName": "Tennessee HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.tennessee.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "tennessee",
+      "targetTable": "programs",
+      "sourceName": "Tennessee Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.tennessee.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "tennessee",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Tennessee Regional Special Education Support",
+      "fakeSourceUrl": "https://education.tennessee.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "tennessee",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Tennessee Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.tennessee.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "utah",
+      "targetTable": "county_offices",
+      "sourceName": "Utah Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.utah.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "utah",
+      "targetTable": "forms",
+      "sourceName": "Utah Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.utah.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "utah",
+      "targetTable": "programs",
+      "sourceName": "Utah Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.utah.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "utah",
+      "targetTable": "programs",
+      "sourceName": "Utah Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.utah.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "utah",
+      "targetTable": "programs",
+      "sourceName": "Utah HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.utah.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "utah",
+      "targetTable": "programs",
+      "sourceName": "Utah Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.utah.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "utah",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Utah Regional Special Education Support",
+      "fakeSourceUrl": "https://education.utah.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "utah",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Utah Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.utah.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "vermont",
+      "targetTable": "county_offices",
+      "sourceName": "Vermont Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.vermont.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "vermont",
+      "targetTable": "forms",
+      "sourceName": "Vermont Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.vermont.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "vermont",
+      "targetTable": "programs",
+      "sourceName": "Vermont Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.vermont.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "vermont",
+      "targetTable": "programs",
+      "sourceName": "Vermont HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.vermont.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "vermont",
+      "targetTable": "programs",
+      "sourceName": "Vermont Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.vermont.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "vermont",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Vermont Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.vermont.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "virginia",
+      "targetTable": "county_offices",
+      "sourceName": "Virginia Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.virginia.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "virginia",
+      "targetTable": "forms",
+      "sourceName": "Virginia Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.virginia.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "virginia",
+      "targetTable": "programs",
+      "sourceName": "Virginia Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.virginia.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "virginia",
+      "targetTable": "programs",
+      "sourceName": "Virginia HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.virginia.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "virginia",
+      "targetTable": "programs",
+      "sourceName": "Virginia Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.virginia.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "virginia",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Virginia Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.virginia.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "washington",
+      "targetTable": "county_offices",
+      "sourceName": "Washington Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.washington.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "washington",
+      "targetTable": "forms",
+      "sourceName": "Washington Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.washington.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "washington",
+      "targetTable": "programs",
+      "sourceName": "Washington Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.washington.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "washington",
+      "targetTable": "programs",
+      "sourceName": "Washington Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.washington.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "washington",
+      "targetTable": "programs",
+      "sourceName": "Washington HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.washington.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "washington",
+      "targetTable": "programs",
+      "sourceName": "Washington Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.washington.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "washington",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Washington Regional Special Education Support",
+      "fakeSourceUrl": "https://education.washington.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "washington",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Washington Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.washington.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "west-virginia",
+      "targetTable": "county_offices",
+      "sourceName": "West Virginia Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.west-virginia.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "west-virginia",
+      "targetTable": "forms",
+      "sourceName": "West Virginia Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.west-virginia.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "west-virginia",
+      "targetTable": "programs",
+      "sourceName": "West Virginia Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.west-virginia.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "west-virginia",
+      "targetTable": "programs",
+      "sourceName": "West Virginia Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.west-virginia.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "west-virginia",
+      "targetTable": "programs",
+      "sourceName": "West Virginia HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.west-virginia.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "west-virginia",
+      "targetTable": "programs",
+      "sourceName": "West Virginia Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.west-virginia.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "west-virginia",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "West Virginia Regional Special Education Support",
+      "fakeSourceUrl": "https://education.west-virginia.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "west-virginia",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "West Virginia Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.west-virginia.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "wisconsin",
+      "targetTable": "county_offices",
+      "sourceName": "Wisconsin Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.wisconsin.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "wisconsin",
+      "targetTable": "forms",
+      "sourceName": "Wisconsin Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.wisconsin.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "wisconsin",
+      "targetTable": "programs",
+      "sourceName": "Wisconsin Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.wisconsin.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "wisconsin",
+      "targetTable": "programs",
+      "sourceName": "Wisconsin Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.wisconsin.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "wisconsin",
+      "targetTable": "programs",
+      "sourceName": "Wisconsin HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.wisconsin.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "wisconsin",
+      "targetTable": "programs",
+      "sourceName": "Wisconsin Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.wisconsin.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "wisconsin",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Wisconsin Regional Special Education Support",
+      "fakeSourceUrl": "https://education.wisconsin.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "wisconsin",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Wisconsin Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.wisconsin.gov/dd",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "wyoming",
+      "targetTable": "county_offices",
+      "sourceName": "Wyoming Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.wyoming.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "wyoming",
+      "targetTable": "forms",
+      "sourceName": "Wyoming Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.wyoming.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "wyoming",
+      "targetTable": "programs",
+      "sourceName": "Wyoming Department of Education Special Ed",
+      "fakeSourceUrl": "https://education.wyoming.gov/",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "wyoming",
+      "targetTable": "programs",
+      "sourceName": "Wyoming Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.wyoming.gov/earlyintervention",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "wyoming",
+      "targetTable": "programs",
+      "sourceName": "Wyoming HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.wyoming.gov/dd/waivers",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "wyoming",
+      "targetTable": "programs",
+      "sourceName": "Wyoming Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.wyoming.gov/rehab",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "wyoming",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Wyoming Regional Special Education Support",
+      "fakeSourceUrl": "https://education.wyoming.gov/regional",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "wyoming",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Wyoming Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.wyoming.gov/dd",
+      "mediumCandidateCount": 0
+    }
+  ]
+}

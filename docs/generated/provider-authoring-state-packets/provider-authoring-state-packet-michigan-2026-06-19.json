@@ -1,0 +1,135 @@
+{
+  "generatedAt": "2026-06-19T18:22:13.895Z",
+  "generatedDate": "2026-06-19",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+  "stateId": "michigan",
+  "stateName": "Michigan",
+  "executionPriority": 20,
+  "sourceTargetsPath": "data/source_targets/michigan.json",
+  "ledgerStatus": "complete",
+  "ledgerNote": "applied-one-concrete-first-party-provider-target",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 1,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 4,
+  "placeholderProviderTargetCount": 0,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 0,
+  "neededLiveProviderRows": 2,
+  "authoringGapClass": "needs_refresh_or_deeper_targets",
+  "nextAction": "Refresh Michigan provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+  "providerTargets": [
+    {
+      "sourceName": "C.S. Mott Children's Hospital",
+      "sourceUrl": "https://www.mottchildren.org",
+      "domain": "mottchildren.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Concrete first-party pediatric hospital target for Michigan provider buildout."
+    },
+    {
+      "sourceName": "Children's Hospital of Michigan",
+      "sourceUrl": "https://www.childrensdmc.org",
+      "domain": "childrensdmc.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Concrete first-party pediatric hospital target for Detroit-area Michigan provider buildout."
+    },
+    {
+      "sourceName": "Helen DeVos Children's Hospital",
+      "sourceUrl": "https://www.spectrumhealth.org/locations/spectrum-health-hospitals-helen-devos-childrens-hospital",
+      "domain": "spectrumhealth.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Concrete first-party pediatric hospital target for west Michigan provider buildout."
+    },
+    {
+      "sourceName": "University of Michigan Health Autism Spectrum Disorders Clinic",
+      "sourceUrl": "https://www.uofmhealth.org/our-care/specialties-services/autism-spectrum-disorders-appointments",
+      "domain": "uofmhealth.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Saved first-party Michigan autism appointments page recovered from the archived provider fetch and aligned with the seeded University of Michigan autism clinic row."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Michigan County Metadata",
+      "sourceUrl": "https://www.michigan.gov",
+      "domain": "michigan.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Michigan Medicaid Portal",
+      "sourceUrl": "https://dhhs.michigan.gov",
+      "domain": "dhhs.michigan.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Michigan Department of Health and Human Services",
+      "sourceUrl": "https://www.michigan.gov/mdhhs",
+      "domain": "michigan.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Michigan HCBS Waivers",
+      "sourceUrl": "https://www.michigan.gov/mdhhs/hcbs",
+      "domain": "michigan.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Michigan Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.michigan.gov/earlyintervention",
+      "domain": "dhhs.michigan.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Michigan Department of Education Special Ed",
+      "sourceUrl": "https://education.michigan.gov",
+      "domain": "education.michigan.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Michigan Regional Special Education Support",
+      "sourceUrl": "https://education.michigan.gov/regional",
+      "domain": "education.michigan.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Michigan Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Michigan",
+      "sourceUrl": "https://www.thearcmichigan.org",
+      "domain": "thearcmichigan.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Michigan Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.michigan.gov/forms",
+      "domain": "dhhs.michigan.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Michigan Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.michigan.gov/rehab",
+      "domain": "dhhs.michigan.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Michigan Secretary of State Business Registry",
+      "sourceUrl": "https://www.michigan.gov/business",
+      "domain": "michigan.gov"
+    }
+  ]
+}

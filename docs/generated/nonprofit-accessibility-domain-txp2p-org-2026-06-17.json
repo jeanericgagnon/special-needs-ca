@@ -1,0 +1,2640 @@
+{
+  "evidencePath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/nonprofit-accessibility-domains/txp2p-org/2026-06-17T15-44-48-561Z/evidence.json",
+  "promotionPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/nonprofit-accessibility-domains/txp2p-org/2026-06-17T15-44-48-561Z/promotion-decisions.json",
+  "summaryPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/nonprofit-accessibility-domains/txp2p-org/2026-06-17T15-44-48-561Z/summary.json",
+  "mdReportPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/nonprofit-accessibility-domain-txp2p-org-2026-06-17.md",
+  "generatedAt": "2026-06-17",
+  "runStamp": "2026-06-17T15-44-48-561Z",
+  "domain": "txp2p.org",
+  "orgTerms": [
+    "Parent to Parent",
+    "Texas Family-to-Family Health Information Center",
+    "Texas Parent to Parent (Statewide Support)"
+  ],
+  "dryRun": true,
+  "safeStatus": "partially_safe_org_level_only",
+  "beforeDomainCounts": {
+    "total": 508,
+    "inPerson": 0,
+    "orgLevelPresence": 0,
+    "localInPersonEvidence": 0,
+    "trustedMissing": 508
+  },
+  "afterDomainCounts": {
+    "total": 508,
+    "inPerson": 0,
+    "orgLevelPresence": 0,
+    "localInPersonEvidence": 0,
+    "trustedMissing": 508
+  },
+  "candidateCount": 508,
+  "mutationCount": 0,
+  "skippedCount": 508,
+  "classificationCounts": {},
+  "evidenceLevelCounts": {},
+  "actionCounts": {},
+  "warnings": [
+    "statewide_many_county_service_area",
+    "many_to_one_evidence",
+    "bulk_org_level_review_threshold"
+  ],
+  "sampleRows": [],
+  "mutations": [],
+  "skipped": [
+    {
+      "id": "tx-np-p2p-anderson-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-andrews-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-angelina-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-aransas-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-archer-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-armstrong-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-atascosa-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-austin-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-bailey-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-bandera-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-bastrop-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-baylor-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-bee-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-bell-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-bexar-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-blanco-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-borden-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-bosque-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-bowie-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-brazoria-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-brazos-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-brewster-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-briscoe-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-brooks-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-brown-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-burleson-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-burnet-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-caldwell-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-calhoun-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-callahan-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-cameron-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-camp-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-carson-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-cass-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-castro-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-chambers-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-cherokee-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-childress-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-clay-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-cochran-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-coke-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-coleman-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-collin-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-collingsworth-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-colorado-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-comal-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-comanche-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-concho-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-cooke-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-coryell-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-cottle-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-crane-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-crockett-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-crosby-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-culberson-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-dallam-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-dallas-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-dawson-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-deaf-smith-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-delta-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-denton-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-dewitt-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-dickens-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-dimmit-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-donley-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-duval-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-eastland-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-ector-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-edwards-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-el-paso-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-ellis-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-erath-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-falls-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-fannin-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-fayette-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-fisher-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-floyd-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-foard-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-fort-bend-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-franklin-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-freestone-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-frio-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-gaines-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-galveston-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-garza-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-gillespie-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-glasscock-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-goliad-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-gonzales-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-gray-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-grayson-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-gregg-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-grimes-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-guadalupe-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-hale-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-hall-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-hamilton-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-hansford-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-hardeman-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-hardin-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-harris-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-harrison-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-hartley-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-haskell-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-hays-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-hemphill-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-henderson-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-hidalgo-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-hill-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-hockley-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-hood-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-hopkins-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-houston-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-howard-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-hudspeth-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-hunt-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-hutchinson-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-irion-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-jack-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-jackson-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-jasper-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-jeff-davis-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-jefferson-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-jim-hogg-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-jim-wells-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-johnson-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-jones-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-karnes-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-kaufman-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-kendall-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-kenedy-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-kent-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-kerr-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-kimble-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-king-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-kinney-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-kleberg-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-knox-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-la-salle-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-lamar-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-lamb-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-lampasas-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-lavaca-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-lee-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-leon-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-liberty-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-limestone-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-lipscomb-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-live-oak-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-llano-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-loving-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-lubbock-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-lynn-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-madison-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-marion-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-martin-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-mason-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-matagorda-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-maverick-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-mcculloch-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-mclennan-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-mcmullen-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-medina-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-menard-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-midland-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-milam-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-mills-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-mitchell-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-montague-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-montgomery-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-moore-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-morris-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-motley-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-nacogdoches-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-navarro-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-newton-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-nolan-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-nueces-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-ochiltree-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-oldham-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-orange-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-palo-pinto-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-panola-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-parker-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-parmer-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-pecos-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-polk-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-potter-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-presidio-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-rains-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-randall-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-reagan-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-real-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-red-river-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-reeves-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-refugio-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-roberts-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-robertson-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-rockwall-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-runnels-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-rusk-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-sabine-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-san-augustine-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-san-jacinto-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-san-patricio-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-san-saba-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-schleicher-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-scurry-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-shackelford-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-shelby-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-sherman-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-smith-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-somervell-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-starr-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-stephens-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-sterling-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-stonewall-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-sutton-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-swisher-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-tarrant-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-taylor-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-terrell-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-terry-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-throckmorton-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-titus-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-tom-green-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-travis-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-trinity-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-tyler-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-upshur-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-upton-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-uvalde-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-val-verde-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-van-zandt-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-victoria-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-walker-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-waller-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-ward-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-washington-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-webb-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-wharton-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-wheeler-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-wichita-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-wilbarger-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-willacy-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-williamson-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-wilson-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-winkler-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-wise-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-wood-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-yoakum-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-young-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-zapata-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-p2p-zavala-tx",
+      "name": "Texas Parent to Parent (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-anderson-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-andrews-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-angelina-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-aransas-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-archer-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-armstrong-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-atascosa-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-austin-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-bailey-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-bandera-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-bastrop-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-baylor-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-bee-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-bell-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-bexar-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-blanco-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-borden-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-bosque-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-bowie-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-brazoria-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-brazos-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-brewster-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-briscoe-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-brooks-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-brown-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-burleson-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-burnet-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-caldwell-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-calhoun-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-callahan-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-cameron-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-camp-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-carson-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-cass-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-castro-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-chambers-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-cherokee-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-childress-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-clay-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-cochran-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-coke-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-coleman-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-collin-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-collingsworth-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-colorado-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-comal-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-comanche-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-concho-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-cooke-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-coryell-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-cottle-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-crane-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-crockett-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-crosby-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-culberson-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-dallam-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-dallas-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-dawson-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-deaf-smith-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-delta-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-denton-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-dewitt-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-dickens-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-dimmit-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-donley-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-duval-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-eastland-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-ector-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-edwards-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-el-paso-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-ellis-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-erath-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-falls-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-fannin-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-fayette-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-fisher-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-floyd-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-foard-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-fort-bend-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-franklin-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-freestone-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-frio-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-gaines-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-galveston-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-garza-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-gillespie-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-glasscock-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-goliad-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-gonzales-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-gray-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-grayson-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-gregg-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-grimes-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-guadalupe-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-hale-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-hall-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-hamilton-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-hansford-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-hardeman-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-hardin-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-harris-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-harrison-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-hartley-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-haskell-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-hays-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-hemphill-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-henderson-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-hidalgo-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-hill-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-hockley-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-hood-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-hopkins-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-houston-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-howard-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-hudspeth-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-hunt-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-hutchinson-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-irion-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-jack-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-jackson-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-jasper-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-jeff-davis-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-jefferson-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-jim-hogg-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-jim-wells-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-johnson-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-jones-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-karnes-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-kaufman-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-kendall-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-kenedy-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-kent-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-kerr-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-kimble-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-king-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-kinney-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-kleberg-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-knox-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-la-salle-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-lamar-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-lamb-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-lampasas-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-lavaca-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-lee-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-leon-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-liberty-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-limestone-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-lipscomb-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-live-oak-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-llano-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-loving-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-lubbock-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-lynn-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-madison-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-marion-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-martin-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-mason-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-matagorda-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-maverick-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-mcculloch-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-mclennan-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-mcmullen-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-medina-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-menard-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-midland-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-milam-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-mills-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-mitchell-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-montague-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-montgomery-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-moore-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-morris-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-motley-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-nacogdoches-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-navarro-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-newton-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-nolan-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-nueces-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-ochiltree-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-oldham-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-orange-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-palo-pinto-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-panola-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-parker-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-parmer-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-pecos-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-polk-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-potter-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-presidio-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-rains-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-randall-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-reagan-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-real-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-red-river-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-reeves-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-refugio-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-roberts-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-robertson-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-rockwall-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-runnels-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-rusk-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-sabine-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-san-augustine-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-san-jacinto-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-san-patricio-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-san-saba-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-schleicher-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-scurry-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-shackelford-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-shelby-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-sherman-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-smith-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-somervell-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-starr-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-stephens-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-sterling-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-stonewall-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-sutton-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-swisher-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-tarrant-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-taylor-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-terrell-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-terry-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-throckmorton-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-titus-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-tom-green-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-travis-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-trinity-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-tyler-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-upshur-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-upton-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-uvalde-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-val-verde-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-van-zandt-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-victoria-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-walker-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-waller-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-ward-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-washington-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-webb-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-wharton-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-wheeler-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-wichita-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-wilbarger-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-willacy-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-williamson-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-wilson-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-winkler-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-wise-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-wood-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-yoakum-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-young-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-zapata-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-texas-family-to-family-health-information-center-zavala-tx",
+      "name": "Texas Family-to-Family Health Information Center",
+      "reason": "missing_validated_domain_evidence"
+    }
+  ],
+  "skipReasons": {
+    "missing_validated_domain_evidence": 508
+  },
+  "nextDomains": [
+    {
+      "domain": "thearc.org",
+      "missingRows": 12021
+    },
+    {
+      "domain": "parentcenterhub.org",
+      "missingRows": 4483
+    },
+    {
+      "domain": "texasautismsociety.org",
+      "missingRows": 509
+    },
+    {
+      "domain": "txp2p.org",
+      "missingRows": 508
+    },
+    {
+      "domain": "thearcoftexas.org",
+      "missingRows": 259
+    },
+    {
+      "domain": "disabilityrightstx.org",
+      "missingRows": 254
+    },
+    {
+      "domain": "navigatelifetexas.org",
+      "missingRows": 254
+    },
+    {
+      "domain": "prntexas.org",
+      "missingRows": 254
+    },
+    {
+      "domain": "autismqc.org",
+      "missingRows": 201
+    },
+    {
+      "domain": "p2pga.org",
+      "missingRows": 159
+    },
+    {
+      "domain": "arcofky.org",
+      "missingRows": 120
+    },
+    {
+      "domain": "asbg.org",
+      "missingRows": 120
+    }
+  ],
+  "rollbackSqlPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/nonprofit-accessibility-domains/txp2p-org/2026-06-17T15-44-48-561Z/rollback.sql",
+  "forwardSqlPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/nonprofit-accessibility-domains/txp2p-org/2026-06-17T15-44-48-561Z/forward.sql"
+}

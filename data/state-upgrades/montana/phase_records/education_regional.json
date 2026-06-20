@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "source_url": "https://opi.mt.gov/",
+    "confidence_score": 9.5,
+    "notes": "Official statewide Montana special education support entrypoint covering all counties.",
+    "suggested_target_id": "mt-ed-opi-special-education",
+    "name": "Montana Office of Public Instruction Special Education",
+    "phone": "(406) 444-5661",
+    "agency_type": "state-special-education-support",
+    "counties_served": [
+      "beaverhead-mt","big-horn-mt","blaine-mt","broadwater-mt","carbon-mt","carter-mt","cascade-mt","chouteau-mt","custer-mt","daniels-mt","dawson-mt","deer-lodge-mt","fallon-mt","fergus-mt","flathead-mt","gallatin-mt","garfield-mt","glacier-mt","golden-valley-mt","granite-mt","hill-mt","jefferson-mt","judith-basin-mt","lake-mt","lewis-and-clark-mt","liberty-mt","lincoln-mt","madison-mt","mccone-mt","meagher-mt","mineral-mt","missoula-mt","musselshell-mt","park-mt","petroleum-mt","phillips-mt","pondera-mt","powder-river-mt","powell-mt","prairie-mt","ravalli-mt","richland-mt","roosevelt-mt","rosebud-mt","sanders-mt","sheridan-mt","silver-bow-mt","stillwater-mt","sweet-grass-mt","teton-mt","toole-mt","treasure-mt","valley-mt","wheatland-mt","wibaux-mt","yellowstone-mt"
+    ],
+    "website": "https://opi.mt.gov/Educators/Teaching-Learning/Special-Education",
+    "evidence_level": "source_listed",
+    "verification_status": "verified",
+    "data_origin": "scraped"
+  }
+]

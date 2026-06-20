@@ -1,0 +1,135 @@
+{
+  "generatedAt": "2026-06-19T18:22:13.895Z",
+  "generatedDate": "2026-06-19",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+  "stateId": "maine",
+  "stateName": "Maine",
+  "executionPriority": 17,
+  "sourceTargetsPath": "data/source_targets/maine.json",
+  "ledgerStatus": "complete",
+  "ledgerNote": "added-three-concrete-first-party-provider-targets",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 1,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 3,
+  "placeholderProviderTargetCount": 1,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 0,
+  "neededLiveProviderRows": 2,
+  "authoringGapClass": "needs_refresh_or_deeper_targets",
+  "nextAction": "Refresh Maine provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+  "providerTargets": [
+    {
+      "sourceName": "Maine Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for Maine."
+    },
+    {
+      "sourceName": "Barbara Bush Children's",
+      "sourceUrl": "https://www.mainehealth.org/barbara-bush-childrens",
+      "domain": "mainehealth.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official MaineHealth Barbara Bush Children's page with pediatric service scope and direct contact/address details."
+    },
+    {
+      "sourceName": "MaineHealth Maine Medical Center Portland",
+      "sourceUrl": "https://www.mainehealth.org/maine-medical-center",
+      "domain": "mainehealth.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Maine Medical Center first-party hospital target supporting pediatric specialty and referral coverage in Maine."
+    },
+    {
+      "sourceName": "Behavioral Health at Spring Harbor",
+      "sourceUrl": "https://www.mainehealth.org/spring-harbor-hospital",
+      "domain": "mainehealth.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official MaineHealth behavioral health hospital target with child and adolescent services relevant to pediatric provider coverage."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Maine County Metadata",
+      "sourceUrl": "https://www.maine.gov",
+      "domain": "maine.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Maine Medicaid Portal",
+      "sourceUrl": "https://dhhs.maine.gov",
+      "domain": "dhhs.maine.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Maine Office of Aging and Disability Services",
+      "sourceUrl": "https://www.maine.gov/dhhs/oads",
+      "domain": "maine.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Maine HCBS Waivers",
+      "sourceUrl": "https://www.maine.gov/dhhs/oads/hcbs",
+      "domain": "maine.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Maine Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.maine.gov/earlyintervention",
+      "domain": "dhhs.maine.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Maine Department of Education Special Ed",
+      "sourceUrl": "https://education.maine.gov",
+      "domain": "education.maine.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Maine Regional Special Education Support",
+      "sourceUrl": "https://education.maine.gov/regional",
+      "domain": "education.maine.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Maine Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Maine",
+      "sourceUrl": "https://www.thearcmaine.org",
+      "domain": "thearcmaine.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Maine Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.maine.gov/forms",
+      "domain": "dhhs.maine.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Maine Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.maine.gov/rehab",
+      "domain": "dhhs.maine.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Maine Secretary of State Business Registry",
+      "sourceUrl": "https://www.maine.gov/business",
+      "domain": "maine.gov"
+    }
+  ]
+}

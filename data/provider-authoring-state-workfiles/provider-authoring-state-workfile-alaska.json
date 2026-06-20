@@ -1,0 +1,154 @@
+{
+  "generatedAt": "2026-06-18T21:37:10.242Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "alaska",
+  "stateName": "Alaska",
+  "sourcePacketPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-alaska-2026-06-18.json",
+  "sourceTargetsPath": "data/source_targets/alaska.json",
+  "instructions": {
+    "summary": "Fill only the missing first-party provider targets needed for this state. Do not broaden beyond provider_directory authoring.",
+    "completionRule": "A candidate row is ready only when sourceName, sourceUrl, domain, and reviewedBy are filled."
+  },
+  "summary": {
+    "neededConcreteTargets": 0,
+    "currentConcreteProviderTargetCount": 4,
+    "existingProviderTargetCount": 4,
+    "candidateSlotCount": 1,
+    "readyCandidateCount": 1,
+    "unresolvedCandidateCount": 0
+  },
+  "existingProviderTargets": [
+    {
+      "sourceName": "Alaska Native Medical Center",
+      "sourceUrl": "https://anmc.org/",
+      "domain": "anmc.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Named Alaska Native Medical Center first-party site recovered from the archived Alaska provider page saved in source-acquisition runs."
+    },
+    {
+      "sourceName": "ANMC and Specialty Care",
+      "sourceUrl": "https://anthc.org/patient-care/specialty-care",
+      "domain": "anthc.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "specialty_center",
+      "notes": "First-party ANTHC specialty care page linked from the archived Alaska provider page saved in source-acquisition runs."
+    },
+    {
+      "sourceName": "Behavioral Health Wellness Clinic at ANMC",
+      "sourceUrl": "https://anthc.org/patient-care/bhwc",
+      "domain": "anthc.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "specialty_center",
+      "notes": "First-party ANTHC behavioral health clinic page linked from the archived Alaska provider page saved in source-acquisition runs."
+    },
+    {
+      "sourceName": "Alaska Native Medical Center Pediatrics",
+      "sourceUrl": "https://www.anthc.org/what-we-do/alaska-native-medical-center/pediatrics",
+      "domain": "anthc.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Saved first-party ANMC pediatrics target already evidenced in repo provider seed artifacts with Anchorage address and phone."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Alaska County Metadata",
+      "sourceUrl": "https://www.alaska.gov",
+      "domain": "alaska.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Alaska Medicaid Portal",
+      "sourceUrl": "https://dhhs.alaska.gov",
+      "domain": "dhhs.alaska.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Alaska Division of Senior and Disabilities Services",
+      "sourceUrl": "https://dhss.alaska.gov/dsds/Pages/dd/default.aspx",
+      "domain": "dhss.alaska.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Alaska HCBS Waivers",
+      "sourceUrl": "https://dhss.alaska.gov/dsds/Pages/hcbw",
+      "domain": "dhss.alaska.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Alaska Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.alaska.gov/earlyintervention",
+      "domain": "dhhs.alaska.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Alaska Department of Education Special Ed",
+      "sourceUrl": "https://education.alaska.gov",
+      "domain": "education.alaska.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Alaska Regional Special Education Support",
+      "sourceUrl": "https://education.alaska.gov/regional",
+      "domain": "education.alaska.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Alaska Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Alaska",
+      "sourceUrl": "https://www.thearcalaska.org",
+      "domain": "thearcalaska.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Alaska Division of Senior and Disabilities Services",
+      "sourceUrl": "https://health.alaska.gov/dsds",
+      "domain": "health.alaska.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Alaska Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.alaska.gov/rehab",
+      "domain": "dhhs.alaska.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Alaska Secretary of State Business Registry",
+      "sourceUrl": "https://www.alaska.gov/business",
+      "domain": "alaska.gov"
+    }
+  ],
+  "candidateProviderTargets": [
+    {
+      "slotNumber": 1,
+      "stateId": "alaska",
+      "stateCode": "AK",
+      "sourceName": "Alaska Native Medical Center Pediatrics",
+      "sourceUrl": "https://www.anthc.org/what-we-do/alaska-native-medical-center/pediatrics/",
+      "domain": "anthc.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Hospital Pediatrics Page",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Saved first-party ANMC pediatrics target already evidenced in repo provider seed artifacts with Anchorage address and phone.",
+      "reviewedBy": "codex"
+    }
+  ]
+}

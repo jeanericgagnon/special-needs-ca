@@ -1,0 +1,45 @@
+{
+  "generatedAt": "2026-06-18T05:55:14.803Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "georgia",
+  "sourceDecisionFilePath": "data/provider-pull-now-decisions.json",
+  "sourceDecisionPacketPath": "docs/generated/provider-pull-now-state-decision-packets/provider-pull-now-state-decision-packet-georgia-2026-06-18.json",
+  "summary": {
+    "totalRows": 2,
+    "unresolvedRows": 2
+  },
+  "rows": [
+    {
+      "stateId": "georgia",
+      "actionClass": "bounded_retry_then_replace",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-1",
+      "hostname": "dch.georgia.gov",
+      "followupReason": "network_fetch_failed",
+      "repeatCount": 2,
+      "suggestedDecisionMode": "bounded_retry_once",
+      "suggestedReason": "Retry-eligible row; allow one bounded retry only if no reviewed first-party replacement is available.",
+      "decisionMode": "bounded_retry_once",
+      "reviewedSourceName": "",
+      "reviewedSourceUrl": "",
+      "retryNotes": "Retry-eligible row; allow one bounded retry only if no reviewed first-party replacement is available.",
+      "reviewNotes": "Retry-eligible row; allow one bounded retry only if no reviewed first-party replacement is available.",
+      "reviewedBy": "autofill:provider-pull-now-state-workfile"
+    },
+    {
+      "stateId": "georgia",
+      "actionClass": "replace_exact_url",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-1",
+      "hostname": "dch.georgia.gov",
+      "followupReason": "stale_or_invalid_404",
+      "repeatCount": 2,
+      "suggestedDecisionMode": "needs_manual_research",
+      "suggestedReason": "Saved artifacts do not yet prove a safe first-party replacement; keep this in manual research until one is confirmed.",
+      "decisionMode": "needs_manual_research",
+      "reviewedSourceName": "",
+      "reviewedSourceUrl": "",
+      "retryNotes": "",
+      "reviewNotes": "Saved artifacts do not yet prove a safe first-party replacement; keep this in manual research until one is confirmed.",
+      "reviewedBy": "autofill:provider-pull-now-state-workfile"
+    }
+  ]
+}

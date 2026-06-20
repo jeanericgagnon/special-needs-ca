@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-06-18T21:48:16.628Z",
+  "generatedDate": "2026-06-18",
+  "sourceArtifacts": {
+    "providerBuildoutPriorityPath": "docs/generated/provider-buildout-priority-plan-2026-06-18.json",
+    "providerSourcePackPlanPath": "docs/generated/provider-source-pack-plan-2026-06-18.json",
+    "sourceTargetsDir": "data/source_targets",
+    "providerAuthoringLedgerPath": "data/source-acquisition-state/provider-authoring-ledger.json"
+  },
+  "summary": {
+    "totalRows": 0,
+    "statesMissingSourceTargets": 0,
+    "statesBelowConcreteThreshold": 0,
+    "statesBelowLiveProviderThreshold": 0,
+    "completedStatesExcluded": 46,
+    "firstState": ""
+  },
+  "rows": []
+}

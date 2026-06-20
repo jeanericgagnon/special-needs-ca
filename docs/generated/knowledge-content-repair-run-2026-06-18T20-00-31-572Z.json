@@ -1,0 +1,38 @@
+{
+  "generatedAt": "2026-06-18T20:00:31.576Z",
+  "mode": "apply",
+  "inputPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/knowledge-content-repair-decision-template-2026-06-18.json",
+  "summary": {
+    "inputRows": 4,
+    "resolvedRows": 0,
+    "deferredRows": 4,
+    "filesChanged": 2,
+    "skippedByReason": {}
+  },
+  "decisions": [
+    {
+      "id": "knowledge-idea-iep-content",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "id": "knowledge-idea-initial-evaluations",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "id": "knowledge-idea-transition-services-definition",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "id": "knowledge-idea-procedural-safeguards-notice",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    }
+  ],
+  "outputs": {
+    "ledgerPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-state/knowledge-content-repair-ledger.json",
+    "resolutionPackPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source_packs/knowledge_content_repair_resolutions.json"
+  }
+}

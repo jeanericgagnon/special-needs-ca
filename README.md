@@ -41,29 +41,30 @@ This repository is structured as a monorepo containing a production Next.js fron
 
 ### 2. Development Setup
 
-To run the Next.js production frontend workspace locally:
+Bootstrap the local workspace once:
 ```bash
-# Navigate to the frontend directory
-cd frontend
+npm run setup:local
+```
 
-# Install dependencies
-npm install
+This will:
+- create `frontend/.env.local` with safe local defaults if it does not exist
+- link the checked-in SQLite databases from `frontend/` into the repo root so older scripts keep working
 
-# Configure environment variables
-# Create a .env.local file:
-# JWT_SECRET=your-random-secure-secret-string
-
-# Start the dev server
+To run the main Next.js frontend locally:
+```bash
+# from the repo root
 npm run dev
 ```
 Open [http://localhost:3000](http://localhost:3000) to view the application.
 
+The archived Vite prototype is still available separately with:
+```bash
+npm run dev:prototype
+```
+
 ### 3. Data Pipelines & Scrapers
 The crawling pipeline runs from the root workspace using Playwright:
 ```bash
-# Install root dependencies
-npm install
-
 # Run OAH due process advocates scraper
 npm run crawl:advocates
 
@@ -72,6 +73,22 @@ npm run crawl:wrightslaw
 ```
 
 ---
+
+## 🔧 Helpful Local Commands
+
+```bash
+# Main frontend build
+npm run build
+
+# Explicit frontend build
+npm run build:frontend
+
+# Archived Vite prototype build
+npm run build:prototype
+
+# Frontend E2E tests
+npm run test:e2e
+```
 
 ## 🛡️ Trust & Security Hardening
 

@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-06-18T03:32:02.709Z",
+  "mode": "apply",
+  "stateFilter": "louisiana",
+  "inputPath": "data/provider-placeholder-replacement-decisions.json",
+  "summary": {
+    "inputRows": 1,
+    "appliedStates": 1,
+    "appliedPlaceholderRows": 3,
+    "appliedReplacements": 2,
+    "filesChanged": 1,
+    "skippedByReason": {}
+  },
+  "decisions": [
+    {
+      "stateId": "louisiana",
+      "placeholderSourceName": "www.lsuhs.edu",
+      "status": "applied",
+      "matchStrategy": "exact_placeholder_url",
+      "placeholderRowCount": 3,
+      "replacementCount": 2,
+      "replacements": [
+        {
+          "source_name": "FMOL Health Children's Hospitals",
+          "source_url": "https://www.fmolhs.org/services/childrens-health/our-childrens-hospitals",
+          "domain": "fmolhs.org"
+        },
+        {
+          "source_name": "FMOL Health Children's Health Services",
+          "source_url": "https://www.fmolhs.org/services/childrens-health",
+          "domain": "fmolhs.org"
+        }
+      ]
+    }
+  ]
+}

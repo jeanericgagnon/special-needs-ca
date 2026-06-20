@@ -1,0 +1,2350 @@
+{
+  "generatedAt": "2026-06-17",
+  "inputPath": "data/nonprofit-link-registry-expansions/2026-06-17T16-21-32-468Z/summary.json",
+  "totalExpandedPages": 629,
+  "highSignalUniquePages": 319,
+  "byType": {
+    "affiliate": 295,
+    "services": 5,
+    "events": 1,
+    "about": 16,
+    "contact": 2
+  },
+  "topSeeds": [
+    {
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-st-charles-inc",
+      "count": 29
+    },
+    {
+      "seedUrl": "https://thearc.org/chapter/kentucky",
+      "count": 7
+    },
+    {
+      "seedUrl": "https://thearc.org/chapter/missouri",
+      "count": 5
+    },
+    {
+      "seedUrl": "https://thearc.org/chapter/hopewell-center",
+      "count": 4
+    },
+    {
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-omaha-at-the-ollie-webb-center",
+      "count": 4
+    },
+    {
+      "seedUrl": "https://thearc.org/chapter/achieva-resources-corporation-inc",
+      "count": 3
+    },
+    {
+      "seedUrl": "https://thearc.org/chapter/adec-inc",
+      "count": 3
+    },
+    {
+      "seedUrl": "https://thearc.org/chapter/arc-gateway",
+      "count": 3
+    },
+    {
+      "seedUrl": "https://thearc.org/chapter/arc-of-southwest-mississippi",
+      "count": 3
+    },
+    {
+      "seedUrl": "https://thearc.org/chapter/arc-of-southwestern-wisconsin-inc",
+      "count": 3
+    },
+    {
+      "seedUrl": "https://thearc.org/chapter/beauregard-arc",
+      "count": 3
+    },
+    {
+      "seedUrl": "https://thearc.org/chapter/blue-island-citizens-for-dd",
+      "count": 3
+    },
+    {
+      "seedUrl": "https://thearc.org/chapter/buffalo-river-services-inc",
+      "count": 3
+    },
+    {
+      "seedUrl": "https://thearc.org/chapter/gateway-services-inc",
+      "count": 3
+    },
+    {
+      "seedUrl": "https://thearc.org/chapter/hillcroft-services-inc",
+      "count": 3
+    },
+    {
+      "seedUrl": "https://thearc.org/chapter/lafayette-arc",
+      "count": 3
+    },
+    {
+      "seedUrl": "https://thearc.org/chapter/south-dakota",
+      "count": 3
+    },
+    {
+      "seedUrl": "https://thearc.org/chapter/st-john-arc",
+      "count": 3
+    },
+    {
+      "seedUrl": "https://thearc.org/chapter/st-martin-arc",
+      "count": 3
+    },
+    {
+      "seedUrl": "https://thearc.org/chapter/stone-belt-arc-inc",
+      "count": 3
+    },
+    {
+      "seedUrl": "https://thearc.org/chapter/tarc",
+      "count": 3
+    },
+    {
+      "seedUrl": "https://thearc.org/chapter/tarc-serving-people-with-disabilities-their-families",
+      "count": 3
+    },
+    {
+      "seedUrl": "https://thearc.org/chapter/terrebonne-arc",
+      "count": 3
+    },
+    {
+      "seedUrl": "https://thearc.org/chapter/the-arc-caddo-bossier",
+      "count": 3
+    },
+    {
+      "seedUrl": "https://thearc.org/chapter/the-arc-dearborn",
+      "count": 3
+    }
+  ],
+  "prioritizedPages": [
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-st-charles-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/about-us/contact-us",
+      "pageTypeGuess": "contact",
+      "priority": 6
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-st-charles-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/contact-us",
+      "pageTypeGuess": "contact",
+      "priority": 6
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-st-charles-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/policy-advocacy/direct-support-professionals",
+      "pageTypeGuess": "services",
+      "priority": 4
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-st-charles-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/resource/brown-v-d-c",
+      "pageTypeGuess": "services",
+      "priority": 4
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-st-charles-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/resource/hall-v-florida",
+      "pageTypeGuess": "services",
+      "priority": 4
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-st-charles-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/resource/hammvsmith",
+      "pageTypeGuess": "services",
+      "priority": 4
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-st-charles-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/resource/moore-v-texas",
+      "pageTypeGuess": "services",
+      "priority": 4
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-st-charles-inc",
+      "domain": "thearc.org",
+      "url": "http://thearc.org/about-us/board-staff/katy-neas",
+      "pageTypeGuess": "about",
+      "priority": 3
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-st-charles-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/about-us",
+      "pageTypeGuess": "about",
+      "priority": 3
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-st-charles-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/about-us/blog",
+      "pageTypeGuess": "about",
+      "priority": 3
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-st-charles-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/about-us/board-staff",
+      "pageTypeGuess": "about",
+      "priority": 3
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-st-charles-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/about-us/board-staff/evan-monod",
+      "pageTypeGuess": "about",
+      "priority": 3
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-st-charles-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/about-us/board-staff/katy-neas",
+      "pageTypeGuess": "about",
+      "priority": 3
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-st-charles-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/about-us/careers-at-the-arc",
+      "pageTypeGuess": "about",
+      "priority": 3
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-st-charles-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/about-us/events",
+      "pageTypeGuess": "about",
+      "priority": 3
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-st-charles-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/about-us/history",
+      "pageTypeGuess": "about",
+      "priority": 3
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-st-charles-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/about-us/mission-values",
+      "pageTypeGuess": "about",
+      "priority": 3
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-st-charles-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/about-us/our-strategic-framework",
+      "pageTypeGuess": "about",
+      "priority": 3
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-st-charles-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/about-us/press-center",
+      "pageTypeGuess": "about",
+      "priority": 3
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-st-charles-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/about-us/stories",
+      "pageTypeGuess": "about",
+      "priority": 3
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-st-charles-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/about-us/supporters",
+      "pageTypeGuess": "about",
+      "priority": 3
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-st-charles-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/about-us/webinars",
+      "pageTypeGuess": "about",
+      "priority": 3
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-st-charles-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/our-initiatives/criminal-justice/talk-about-sexual-violence",
+      "pageTypeGuess": "about",
+      "priority": 3
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-st-charles-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/policy-advocacy/employment-training-and-wages",
+      "pageTypeGuess": "events",
+      "priority": 2
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/achieva-resources-corporation-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/achieva-resources-corporation-inc",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/achieva-resources-corporation-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/achieva-resources-corporation-inc?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/achieva-resources-corporation-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/achieva-resources-corporation-inc/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/adec-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/adec-inc",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/adec-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/adec-inc?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/adec-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/adec-inc/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/advocacy-denver",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/advocacy-denver",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/advocacy-denver",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/advocacy-denver?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/arc-gateway",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/arc-gateway",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/arc-gateway",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/arc-gateway?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/arc-gateway",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/arc-gateway/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/arc-of-southwest-mississippi",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/arc-of-southwest-mississippi",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/arc-of-southwest-mississippi",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/arc-of-southwest-mississippi?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/arc-of-southwest-mississippi",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/arc-of-southwest-mississippi/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/arc-of-southwestern-wisconsin-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/arc-of-southwestern-wisconsin-inc",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/arc-of-southwestern-wisconsin-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/arc-of-southwestern-wisconsin-inc?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/arc-of-southwestern-wisconsin-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/arc-of-southwestern-wisconsin-inc/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/arkansas",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/arkansas",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/arkansas",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/arkansas?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/beauregard-arc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/beauregard-arc",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/beauregard-arc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/beauregard-arc?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/beauregard-arc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/beauregard-arc/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/blue-island-citizens-for-dd",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/blue-island-citizens-for-dd",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/blue-island-citizens-for-dd",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/blue-island-citizens-for-dd?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/blue-island-citizens-for-dd",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/blue-island-citizens-for-dd/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/buffalo-river-services-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/buffalo-river-services-inc",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/buffalo-river-services-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/buffalo-river-services-inc?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/buffalo-river-services-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/buffalo-river-services-inc/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/gateway-services-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/gateway-services-inc",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/gateway-services-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/gateway-services-inc?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/gateway-services-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/gateway-services-inc/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/south-dakota",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/grant-county-arc",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/hillcroft-services-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/hillcroft-services-inc",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/hillcroft-services-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/hillcroft-services-inc?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/hillcroft-services-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/hillcroft-services-inc/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/hopewell-center",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/hopewell-center",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/hopewell-center",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/hopewell-center?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/hopewell-center",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/hopewell-center/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/kentucky",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/kentucky",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/kentucky",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/kentucky?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/lafayette-arc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/lafayette-arc",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/lafayette-arc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/lafayette-arc?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/lafayette-arc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/lafayette-arc/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/larc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/larc",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/larc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/larc?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/missouri",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/missouri",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/missouri",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/missouri?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/new-horizons-the-arc-of-southeast-indiana",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/new-horizons-the-arc-of-southeast-indiana",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/new-horizons-the-arc-of-southeast-indiana",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/new-horizons-the-arc-of-southeast-indiana?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/peak-community-services-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/peak-community-services-inc",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/peak-community-services-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/peak-community-services-inc?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/sertoma-star-services",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/sertoma-star-services",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/sertoma-star-services",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/sertoma-star-services?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/south-dakota",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/south-dakota",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/south-dakota",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/south-dakota?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/space-coast",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/space-coast",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/space-coast",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/space-coast?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/st-john-arc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/st-john-arc",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/st-john-arc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/st-john-arc?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/st-john-arc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/st-john-arc/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/missouri",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/st-louis-arc",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/st-martin-arc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/st-martin-arc",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/st-martin-arc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/st-martin-arc?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/st-martin-arc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/st-martin-arc/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/stone-belt-arc-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/stone-belt-arc-inc",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/stone-belt-arc-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/stone-belt-arc-inc?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/stone-belt-arc-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/stone-belt-arc-inc/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/tarc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/tarc",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/tarc-serving-people-with-disabilities-their-families",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/tarc-serving-people-with-disabilities-their-families",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/tarc-serving-people-with-disabilities-their-families",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/tarc-serving-people-with-disabilities-their-families?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/tarc-serving-people-with-disabilities-their-families",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/tarc-serving-people-with-disabilities-their-families/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/tarc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/tarc?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/tarc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/tarc/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/terrebonne-arc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/terrebonne-arc",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/terrebonne-arc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/terrebonne-arc?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/terrebonne-arc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/terrebonne-arc/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-baton-rouge",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-baton-rouge",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-baton-rouge",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-baton-rouge?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-caddo-bossier",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-caddo-bossier",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-caddo-bossier",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-caddo-bossier?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-caddo-bossier",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-caddo-bossier/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-dearborn",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-dearborn",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-dearborn",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-dearborn?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-dearborn",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-dearborn/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-detroit",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-detroit",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-detroit",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-detroit?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-detroit",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-detroit/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-downriver",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-downriver",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-downriver",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-downriver?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-downriver",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-downriver/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-eastern-shore",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-eastern-shore",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-eastern-shore",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-eastern-shore?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-eastern-shore",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-eastern-shore/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-for-the-river-valley",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-for-the-river-valley",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-for-the-river-valley",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-for-the-river-valley?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-for-the-river-valley",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-for-the-river-valley/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-greensboro-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-greensboro-inc",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-greensboro-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-greensboro-inc?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-greensboro-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-greensboro-inc/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-grosse-pointe-harper-woods",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-grosse-pointe-harper-woods",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-grosse-pointe-harper-woods",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-grosse-pointe-harper-woods?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-grosse-pointe-harper-woods",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-grosse-pointe-harper-woods/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-iberville",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-iberville",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-iberville",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-iberville?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-iberville",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-iberville/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-jacksonville",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-jacksonville",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-jacksonville",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-jacksonville?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-jacksonville",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-jacksonville/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-nature-coast",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-nature-coast",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-nature-coast",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-nature-coast?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-nature-coast",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-nature-coast/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-north-florida",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-north-florida",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-north-florida",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-north-florida?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-north-florida",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-north-florida/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-northland",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-northland",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-northland",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-northland?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-northland",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-northland/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-acadiana",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-acadiana",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-acadiana",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-acadiana?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-acadiana",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-acadiana/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-aurora",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-aurora",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-aurora",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-aurora?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-aurora",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-aurora/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/kentucky",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-barren-county",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-bryan-college-station",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-bryan-college-station",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-bryan-college-station",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-bryan-college-station?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-bryan-college-station",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-bryan-college-station/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-central-alabama",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-central-alabama",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-central-alabama",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-central-alabama?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-central-alabama",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-central-alabama/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/kentucky",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-central-kentucky",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-central-kentucky",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-central-kentucky?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-central-kentucky",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-central-kentucky/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-central-michigan",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-central-michigan",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-central-michigan",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-central-michigan?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-central-michigan",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-central-michigan/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-central-nebraska",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-central-nebraska",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-central-nebraska",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-central-nebraska?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-central-nebraska",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-central-nebraska/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-central-plains",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-central-plains",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-central-plains",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-central-plains?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-central-plains",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-central-plains/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/missouri",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-clay-and-platte-counties-inc",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-dallas-fort-worth",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-dallas-fort-worth",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-dallas-fort-worth",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-dallas-fort-worth?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-east-ascension",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-east-ascension",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-east-ascension",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-east-ascension?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-east-ascension",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-east-ascension/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-evansville",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-evansville",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-evansville",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-evansville?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-evansville",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-evansville/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-greater-beaumont",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-greater-beaumont",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-greater-beaumont",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-greater-beaumont?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-greater-beaumont",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-greater-beaumont/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-greater-new-orleans",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-greater-new-orleans",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-greater-new-orleans",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-greater-new-orleans?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-greater-new-orleans",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-greater-new-orleans/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-greater-pittsburgh",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-greater-pittsburgh",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-greater-pittsburgh",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-greater-pittsburgh?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-greater-pittsburgh",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-greater-pittsburgh/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-greater-williamsburg",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-greater-williamsburg",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-greater-williamsburg",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-greater-williamsburg?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-greater-williamsburg",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-greater-williamsburg/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-hendericks-county-sycamore-services",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-hendericks-county-sycamore-services",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-hendericks-county-sycamore-services",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-hendericks-county-sycamore-services?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-hendericks-county-sycamore-services",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-hendericks-county-sycamore-services/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-high-point",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-high-point",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-high-point",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-high-point?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-high-point",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-high-point/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-katy",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-katy",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-katy",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-katy?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-katy",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-katy/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/kentucky",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-logan-county",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-mid-michigan",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-mid-michigan",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-mid-michigan",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-mid-michigan?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-mid-michigan",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-mid-michigan/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-mid-south",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-mid-south",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-mid-south",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-mid-south?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-mid-south",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-mid-south/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-morehouse",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-morehouse",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-morehouse",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-morehouse?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-morehouse",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-morehouse/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-new-river-valley",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-new-river-valley",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-new-river-valley",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-new-river-valley?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-norfolk",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-norfolk",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-norfolk",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-norfolk?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-norfolk",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-norfolk/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-north-central-virginia",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-north-central-virginia",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-north-central-virginia",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-north-central-virginia?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-north-central-virginia",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-north-central-virginia/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-northeast-colorado",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-northeast-colorado",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-northeast-colorado",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-northeast-colorado?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-northeast-georgia",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-northeast-georgia",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-northeast-georgia",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-northeast-georgia?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-northeast-georgia",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-northeast-georgia/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-northeastern-pennsylvania",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-northeastern-pennsylvania",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-northeastern-pennsylvania",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-northeastern-pennsylvania?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-northeastern-pennsylvania",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-northeastern-pennsylvania/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-northern-michigan",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-northern-michigan",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-northern-michigan",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-northern-michigan?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-northwest-mississippi",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-northwest-mississippi",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-northwest-mississippi",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-northwest-mississippi?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-omaha-at-the-ollie-webb-center",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-omaha-at-the-ollie-webb-center",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-omaha-at-the-ollie-webb-center",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-omaha-at-the-ollie-webb-center?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-omaha-at-the-ollie-webb-center",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-omaha-at-the-ollie-webb-center/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-ouachita-arco",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-ouachita-arco",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-ouachita-arco",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-ouachita-arco?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-ouachita-arco",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-ouachita-arco/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-san-antonio",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-san-antonio",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-san-antonio",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-san-antonio?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-san-antonio",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-san-antonio/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-solomon-valley",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-solomon-valley",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-solomon-valley",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-solomon-valley?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-solomon-valley",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-solomon-valley/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-south-florida",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-south-florida",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-south-florida",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-south-florida?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-south-florida",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-south-florida/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-southeast-mississippi",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-southeast-mississippi",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-southeast-mississippi",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-southeast-mississippi?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-southeast-mississippi",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-southeast-mississippi/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-southside",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-southside",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-southside",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-southside?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-southside",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-southside/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-southwest-alabama",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-southwest-alabama",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-southwest-alabama",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-southwest-alabama?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-southwest-alabama",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-southwest-alabama/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-southwest-colorado",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-southwest-colorado",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-southwest-colorado",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-southwest-colorado?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-southwest-colorado",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-southwest-colorado/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-southwest-florida",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-southwest-florida",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-southwest-florida",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-southwest-florida?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-southwest-florida",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-southwest-florida/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-southwest-indiana",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-southwest-indiana",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-southwest-indiana",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-southwest-indiana?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-southwest-indiana",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-southwest-indiana/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-st-charles-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-st-charles-inc",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-st-charles-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-st-charles-inc?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-st-charles-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-st-charles-inc/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-st-lucie-county-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-st-lucie-county-inc",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-st-lucie-county-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-st-lucie-county-inc?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-st-lucie-county-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-st-lucie-county-inc/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-the-chattahoochee-valley",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-the-chattahoochee-valley",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-the-chattahoochee-valley",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-the-chattahoochee-valley?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-the-chattahoochee-valley",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-the-chattahoochee-valley/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-the-great-smokies",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-the-great-smokies",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-the-great-smokies",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-the-great-smokies?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-the-great-smokies",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-the-great-smokies/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-the-gulf-coast",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-the-gulf-coast",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-the-gulf-coast-al",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-the-gulf-coast-al",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-the-gulf-coast-al",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-the-gulf-coast-al?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-the-gulf-coast",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-the-gulf-coast?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-the-gulf-coast",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-the-gulf-coast/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/missouri",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-the-lake",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-the-ozarks",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-the-ozarks",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-the-ozarks",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-the-ozarks?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-the-ozarks",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-the-ozarks/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-the-piedmont",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-the-piedmont",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-the-piedmont",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-the-piedmont?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-the-piedmont",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-the-piedmont/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-the-shoals",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-the-shoals",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-the-shoals",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-the-shoals?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-the-shoals",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-the-shoals/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-the-triangle",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-the-triangle",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-the-triangle",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-the-triangle?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-the-triangle",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-the-triangle/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/kentucky",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-of-warren-county",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-ridge-area",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-ridge-area",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-ridge-area",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-ridge-area?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-ridge-area",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-ridge-area/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-southwest-georgia",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-southwest-georgia",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-southwest-georgia",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-southwest-georgia?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-southwest-georgia",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-southwest-georgia/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-sunrise-of-central-florida",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-sunrise-of-central-florida",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-sunrise-of-central-florida",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-sunrise-of-central-florida?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-sunrise-of-central-florida",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-arc-sunrise-of-central-florida/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-hoosier-prairie-arc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-hoosier-prairie-arc",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-hoosier-prairie-arc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-hoosier-prairie-arc?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-hoosier-prairie-arc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-hoosier-prairie-arc/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/kentucky",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/the-point",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/ucp-seguin-of-greater-chicago",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/ucp-seguin-of-greater-chicago",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/ucp-seguin-of-greater-chicago",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/ucp-seguin-of-greater-chicago?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/ucp-seguin-of-greater-chicago",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/ucp-seguin-of-greater-chicago/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/ups-for-downs",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/ups-for-downs",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/ups-for-downs",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/ups-for-downs?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/ups-for-downs",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/ups-for-downs/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/versability-resources-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/versability-resources-inc",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/versability-resources-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/versability-resources-inc?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/versability-resources-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/versability-resources-inc/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/victory-living-programs-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/victory-living-programs-inc",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/victory-living-programs-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/victory-living-programs-inc?s=",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/victory-living-programs-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/chapter/victory-living-programs-inc/feed",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-st-charles-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/find-a-chapter",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-st-charles-inc",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/get-involved/become-chapter",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/hopewell-center",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthearc.org%2Fchapter%2Fhopewell-center%2F",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    },
+    {
+      "parentSeedUrl": "https://thearc.org/chapter/the-arc-of-omaha-at-the-ollie-webb-center",
+      "domain": "thearc.org",
+      "url": "https://thearc.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthearc.org%2Fchapter%2Fthe-arc-of-omaha-at-the-ollie-webb-center%2F",
+      "pageTypeGuess": "affiliate",
+      "priority": 1
+    }
+  ]
+}

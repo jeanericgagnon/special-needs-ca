@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-06-17T22:47:18.066Z",
+  "mode": "apply",
+  "stateFilter": "arizona",
+  "inputPath": "data/forms-fallback-manual-review-decisions.json",
+  "summary": {
+    "inputRows": 3,
+    "resolvedRows": 3,
+    "deferredRows": 0,
+    "filesChanged": 2,
+    "skippedByReason": {},
+    "byDecisionMode": {
+      "validate_existing_candidate": 3
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "arizona",
+      "rowKey": "arizona|application_or_eligibility_guide|https://des.az.gov/ddd",
+      "status": "applied",
+      "resolvedSourceUrl": "https://des.az.gov/ddd"
+    },
+    {
+      "stateId": "arizona",
+      "rowKey": "arizona|general_form_related_page|https://www.azahcccs.gov/",
+      "status": "applied",
+      "resolvedSourceUrl": "https://www.azahcccs.gov/"
+    },
+    {
+      "stateId": "arizona",
+      "rowKey": "arizona|application_or_eligibility_guide|https://www.azahcccs.gov/hcbs/eligibility",
+      "status": "applied",
+      "resolvedSourceUrl": "https://www.azahcccs.gov/hcbs/eligibility"
+    }
+  ],
+  "resolutionArtifacts": {
+    "queuePath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/forms-fallback-manual-review-queue-2026-06-17.json",
+    "resolutionLedgerPath": "data/source-acquisition-state/forms-fallback-manual-review-ledger.json",
+    "resolutionPackPath": "data/source_packs/forms_fallback_manual_resolutions.json"
+  }
+}

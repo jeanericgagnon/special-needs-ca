@@ -1,0 +1,35 @@
+{
+  "generatedAt": "2026-06-18T01:18:27.585Z",
+  "mode": "apply",
+  "stateFilter": "ohio",
+  "inputPath": "data/provider-placeholder-replacement-decisions.json",
+  "summary": {
+    "inputRows": 1,
+    "appliedStates": 1,
+    "appliedPlaceholderRows": 30,
+    "appliedReplacements": 2,
+    "filesChanged": 1,
+    "skippedByReason": {}
+  },
+  "decisions": [
+    {
+      "stateId": "ohio",
+      "placeholderSourceName": "OHIO Specialized Clinic Roster #1",
+      "status": "applied",
+      "placeholderRowCount": 30,
+      "replacementCount": 2,
+      "replacements": [
+        {
+          "source_name": "Nationwide Children's Hospital Center for Autism",
+          "source_url": "https://www.nationwidechildrens.org/specialties/autism-center",
+          "domain": "nationwidechildrens.org"
+        },
+        {
+          "source_name": "Nationwide Children's Hospital Center for Autism Spectrum Disorders",
+          "source_url": "https://www.nationwidechildrens.org/specialties/center-for-autism-spectrum-disorders",
+          "domain": "nationwidechildrens.org"
+        }
+      ]
+    }
+  ]
+}

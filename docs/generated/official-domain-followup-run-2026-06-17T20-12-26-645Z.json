@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-06-17T20:12:26.647Z",
+  "mode": "apply",
+  "stateFilter": "north-carolina",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 1,
+    "appliedStates": 1,
+    "filesChanged": 1,
+    "skippedByReason": {}
+  },
+  "decisions": [
+    {
+      "stateId": "north-carolina",
+      "sourceName": "North Carolina Regional Special Education Support",
+      "status": "applied",
+      "targetUrl": "https://www.dpi.nc.gov/districts-schools/district-operations/financial-and-business-services/demographics-and-enrollment/school-district-maps"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "generatedAt": "2026-06-18T05:54:16.662Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "new-york",
+  "sourceStatePacketPath": "docs/generated/provider-pull-now-state-packets/provider-pull-now-state-packet-new-york-2026-06-18.json",
+  "sourceDecisionFilePath": "data/provider-pull-now-decisions.json",
+  "summary": {
+    "totalRows": 3,
+    "unresolvedRows": 3,
+    "bySuggestedDecisionMode": {
+      "needs_manual_research": 3
+    }
+  },
+  "rows": [
+    {
+      "stateId": "new-york",
+      "actionClass": "author_alternate_first_party_target",
+      "followupReason": "access_blocked_403",
+      "sourceUrl": "https://www.montefiore.org/rose-f-kennedy-center",
+      "hostname": "www.montefiore.org",
+      "repeatCount": 4,
+      "sameDomainCandidateCount": 2,
+      "sameDomainCandidates": [
+        {
+          "sourceName": "Montefiore Rose F. Kennedy Center",
+          "sourceUrl": "https://www.montefiore.org/rose-f-kennedy-center",
+          "priority": 2
+        },
+        {
+          "sourceName": "Montefiore Rose F. Kennedy Center",
+          "sourceUrl": "https://www.montefiore.org/rose-f-kennedy-center",
+          "priority": 2
+        }
+      ],
+      "topConcreteTargets": [
+        {
+          "sourceName": "NYU Langone Hassenfeld Children's Hospital Center for Child Development",
+          "sourceUrl": "https://nyulangone.org/locations/hassenfeld-childrens-hospital",
+          "priority": 2
+        },
+        {
+          "sourceName": "Montefiore Rose F. Kennedy Center",
+          "sourceUrl": "https://www.montefiore.org/rose-f-kennedy-center",
+          "priority": 2
+        },
+        {
+          "sourceName": "Cohen Children's Medical Center",
+          "sourceUrl": "https://childrenshospital.northwell.edu/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Golisano Children's Hospital",
+          "sourceUrl": "https://www.urmc.rochester.edu/childrens-hospital",
+          "priority": 1
+        },
+        {
+          "sourceName": "Upstate Golisano Children's Hospital",
+          "sourceUrl": "https://www.upstate.edu/gch",
+          "priority": 1
+        }
+      ],
+      "currentDecision": {
+        "decisionMode": "",
+        "reviewedSourceName": "",
+        "reviewedSourceUrl": "",
+        "retryNotes": "",
+        "reviewNotes": "",
+        "reviewedBy": ""
+      },
+      "suggestedDecisionMode": "needs_manual_research",
+      "suggestedReason": "A same-domain candidate exists, but saved artifacts did not prove a safe, meaningfully different replacement URL."
+    },
+    {
+      "stateId": "new-york",
+      "actionClass": "author_alternate_first_party_target",
+      "followupReason": "access_blocked_403",
+      "sourceUrl": "https://www.upstate.edu/gch",
+      "hostname": "www.upstate.edu",
+      "repeatCount": 3,
+      "sameDomainCandidateCount": 1,
+      "sameDomainCandidates": [
+        {
+          "sourceName": "Upstate Golisano Children's Hospital",
+          "sourceUrl": "https://www.upstate.edu/gch",
+          "priority": 1
+        }
+      ],
+      "topConcreteTargets": [
+        {
+          "sourceName": "NYU Langone Hassenfeld Children's Hospital Center for Child Development",
+          "sourceUrl": "https://nyulangone.org/locations/hassenfeld-childrens-hospital",
+          "priority": 2
+        },
+        {
+          "sourceName": "Montefiore Rose F. Kennedy Center",
+          "sourceUrl": "https://www.montefiore.org/rose-f-kennedy-center",
+          "priority": 2
+        },
+        {
+          "sourceName": "Cohen Children's Medical Center",
+          "sourceUrl": "https://childrenshospital.northwell.edu/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Golisano Children's Hospital",
+          "sourceUrl": "https://www.urmc.rochester.edu/childrens-hospital",
+          "priority": 1
+        },
+        {
+          "sourceName": "Upstate Golisano Children's Hospital",
+          "sourceUrl": "https://www.upstate.edu/gch",
+          "priority": 1
+        }
+      ],
+      "currentDecision": {
+        "decisionMode": "",
+        "reviewedSourceName": "",
+        "reviewedSourceUrl": "",
+        "retryNotes": "",
+        "reviewNotes": "",
+        "reviewedBy": ""
+      },
+      "suggestedDecisionMode": "needs_manual_research",
+      "suggestedReason": "A same-domain candidate exists, but saved artifacts did not prove a safe, meaningfully different replacement URL."
+    },
+    {
+      "stateId": "new-york",
+      "actionClass": "author_alternate_first_party_target",
+      "followupReason": "access_blocked_403",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-1",
+      "hostname": "www.health.ny.gov",
+      "repeatCount": 2,
+      "sameDomainCandidateCount": 0,
+      "sameDomainCandidates": [],
+      "topConcreteTargets": [
+        {
+          "sourceName": "NYU Langone Hassenfeld Children's Hospital Center for Child Development",
+          "sourceUrl": "https://nyulangone.org/locations/hassenfeld-childrens-hospital",
+          "priority": 2
+        },
+        {
+          "sourceName": "Montefiore Rose F. Kennedy Center",
+          "sourceUrl": "https://www.montefiore.org/rose-f-kennedy-center",
+          "priority": 2
+        },
+        {
+          "sourceName": "Cohen Children's Medical Center",
+          "sourceUrl": "https://childrenshospital.northwell.edu/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Golisano Children's Hospital",
+          "sourceUrl": "https://www.urmc.rochester.edu/childrens-hospital",
+          "priority": 1
+        },
+        {
+          "sourceName": "Upstate Golisano Children's Hospital",
+          "sourceUrl": "https://www.upstate.edu/gch",
+          "priority": 1
+        }
+      ],
+      "currentDecision": {
+        "decisionMode": "",
+        "reviewedSourceName": "",
+        "reviewedSourceUrl": "",
+        "retryNotes": "",
+        "reviewNotes": "",
+        "reviewedBy": ""
+      },
+      "suggestedDecisionMode": "needs_manual_research",
+      "suggestedReason": "Saved artifacts do not yet prove a safe first-party replacement; keep this in manual research until one is confirmed."
+    }
+  ]
+}

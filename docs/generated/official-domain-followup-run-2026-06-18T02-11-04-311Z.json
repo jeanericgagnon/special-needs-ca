@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-06-18T02:11:04.320Z",
+  "mode": "apply",
+  "stateFilter": "virginia",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 4,
+    "appliedStates": 2,
+    "filesChanged": 1,
+    "skippedByReason": {
+      "skipped_followup": 2
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "virginia",
+      "sourceName": "Virginia Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "virginia",
+      "sourceName": "Virginia HCBS Waivers Page",
+      "status": "applied",
+      "targetUrl": "https://dbhds.virginia.gov/hcbs"
+    },
+    {
+      "stateId": "virginia",
+      "sourceName": "Virginia Developmental Services Directory",
+      "status": "applied",
+      "targetUrl": "https://dbhds.virginia.gov/"
+    },
+    {
+      "stateId": "virginia",
+      "sourceName": "Virginia Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

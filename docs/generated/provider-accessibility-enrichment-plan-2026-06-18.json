@@ -1,0 +1,1106 @@
+{
+  "generatedAt": "2026-06-18",
+  "dbPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/frontend/ca_disability_navigator.db",
+  "summary": {
+    "trustedPublicProviders": 94,
+    "providersWithAccessibility": 94,
+    "stagingClueTotals": {
+      "english": 0,
+      "spanish": 0,
+      "asl": 0,
+      "interpreter": 0,
+      "wheelchair": 0,
+      "transportation": 1,
+      "homeVisits": 0,
+      "telehealth": 0
+    },
+    "statesWithProviderRows": 50,
+    "statesNeedingSourcePull": 0
+  },
+  "states": [
+    {
+      "stateId": "florida",
+      "providerRows": 14,
+      "accessibilityRows": 14,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "floridacard.org",
+        "ucf-card.org",
+        "card-usf.fmhi.usf.edu",
+        "fau.edu",
+        "fsucard.com",
+        "card.ufl.edu"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "texas",
+      "providerRows": 10,
+      "accessibilityRows": 10,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "texaschildrens.org",
+        "cookchildrens.org",
+        "calliercenter.utdallas.edu",
+        "dellchildrens.net",
+        "uth.edu",
+        "utsouthwestern.edu"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "pennsylvania",
+      "providerRows": 7,
+      "accessibilityRows": 7,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "chop.edu",
+        "chp.edu",
+        "pennstatehealth.org",
+        "geisinger.org",
+        "stchristophershospital.com",
+        "templehealth.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "illinois",
+      "providerRows": 6,
+      "accessibilityRows": 6,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "luriechildrens.org",
+        "rush.edu",
+        "ahs.uic.edu",
+        "carle.org",
+        "osfhealthcare.org",
+        "thehopeclinic.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "nebraska",
+      "providerRows": 3,
+      "accessibilityRows": 3,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "childrensnebraska.org",
+        "unmc.edu"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "north-carolina",
+      "providerRows": 3,
+      "accessibilityRows": 3,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "med.unc.edu",
+        "wakemed.org",
+        "atriumhealth.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "california",
+      "providerRows": 2,
+      "accessibilityRows": 2,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "chla.org",
+        "health.ucdavis.edu"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "colorado",
+      "providerRows": 2,
+      "accessibilityRows": 2,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "childrenscolorado.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "iowa",
+      "providerRows": 2,
+      "accessibilityRows": 2,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "uihc.org",
+        "unitypoint.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "kentucky",
+      "providerRows": 2,
+      "accessibilityRows": 2,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "ukhealthcare.uky.edu",
+        "medicine.louisville.edu"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "louisiana",
+      "providerRows": 2,
+      "accessibilityRows": 2,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "manningchildrens.org",
+        "ochsner.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "rhode-island",
+      "providerRows": 2,
+      "accessibilityRows": 2,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "lifespan.org",
+        "brownhealth.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "washington",
+      "providerRows": 2,
+      "accessibilityRows": 2,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "seattlechildrens.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "alabama",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "childrensal.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "alaska",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "anthc.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "arizona",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "phoenixchildrens.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "arkansas",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "archildrens.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "connecticut",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "connecticutchildrens.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "delaware",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "nemours.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "georgia",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "marcus.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "hawaii",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "hawaiipacifichealth.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "idaho",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "stlukesonline.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "indiana",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "rileychildrens.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "kansas",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "kansashealthsystem.com"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "maine",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "mainehealth.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "maryland",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "hopkinsmedicine.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "massachusetts",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "massgeneral.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "michigan",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "uofmhealth.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "minnesota",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "childrensmn.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "mississippi",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "umc.edu"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "missouri",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "childrensmercy.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "montana",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "billingsclinic.com"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "nevada",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "umcsn.com"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "new-hampshire",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "elliothospital.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "new-jersey",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "rwjbh.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "new-mexico",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "unmhealth.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "new-york",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "childrenshospital.northwell.edu"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "north-dakota",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "sanfordhealth.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "ohio",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "nationwidechildrens.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "oklahoma",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "ouhealth.com"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "oregon",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "ohsu.edu"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "south-carolina",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "musckids.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "south-dakota",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "sanfordhealth.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "tennessee",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "childrenshospitalvanderbilt.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "utah",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "intermountainhealthcare.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "vermont",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "uvmhealth.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "virginia",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "chrichmond.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "west-virginia",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "wvumedicine.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "wisconsin",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "childrenswi.org"
+      ],
+      "needsSourcePull": false
+    },
+    {
+      "stateId": "wyoming",
+      "providerRows": 1,
+      "accessibilityRows": 1,
+      "accessibilityPct": 100,
+      "topHosts": [
+        "cheyenneregional.org"
+      ],
+      "needsSourcePull": false
+    }
+  ],
+  "lanes": {
+    "sourcePullStates": [],
+    "sustainStates": [
+      {
+        "stateId": "florida",
+        "providerRows": 14,
+        "accessibilityRows": 14,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "floridacard.org",
+          "ucf-card.org",
+          "card-usf.fmhi.usf.edu",
+          "fau.edu",
+          "fsucard.com",
+          "card.ufl.edu"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "texas",
+        "providerRows": 10,
+        "accessibilityRows": 10,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "texaschildrens.org",
+          "cookchildrens.org",
+          "calliercenter.utdallas.edu",
+          "dellchildrens.net",
+          "uth.edu",
+          "utsouthwestern.edu"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "pennsylvania",
+        "providerRows": 7,
+        "accessibilityRows": 7,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "chop.edu",
+          "chp.edu",
+          "pennstatehealth.org",
+          "geisinger.org",
+          "stchristophershospital.com",
+          "templehealth.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "illinois",
+        "providerRows": 6,
+        "accessibilityRows": 6,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "luriechildrens.org",
+          "rush.edu",
+          "ahs.uic.edu",
+          "carle.org",
+          "osfhealthcare.org",
+          "thehopeclinic.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "nebraska",
+        "providerRows": 3,
+        "accessibilityRows": 3,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "childrensnebraska.org",
+          "unmc.edu"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "north-carolina",
+        "providerRows": 3,
+        "accessibilityRows": 3,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "med.unc.edu",
+          "wakemed.org",
+          "atriumhealth.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "california",
+        "providerRows": 2,
+        "accessibilityRows": 2,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "chla.org",
+          "health.ucdavis.edu"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "colorado",
+        "providerRows": 2,
+        "accessibilityRows": 2,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "childrenscolorado.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "iowa",
+        "providerRows": 2,
+        "accessibilityRows": 2,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "uihc.org",
+          "unitypoint.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "kentucky",
+        "providerRows": 2,
+        "accessibilityRows": 2,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "ukhealthcare.uky.edu",
+          "medicine.louisville.edu"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "louisiana",
+        "providerRows": 2,
+        "accessibilityRows": 2,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "manningchildrens.org",
+          "ochsner.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "rhode-island",
+        "providerRows": 2,
+        "accessibilityRows": 2,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "lifespan.org",
+          "brownhealth.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "washington",
+        "providerRows": 2,
+        "accessibilityRows": 2,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "seattlechildrens.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "alabama",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "childrensal.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "alaska",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "anthc.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "arizona",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "phoenixchildrens.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "arkansas",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "archildrens.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "connecticut",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "connecticutchildrens.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "delaware",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "nemours.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "georgia",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "marcus.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "hawaii",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "hawaiipacifichealth.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "idaho",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "stlukesonline.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "indiana",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "rileychildrens.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "kansas",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "kansashealthsystem.com"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "maine",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "mainehealth.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "maryland",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "hopkinsmedicine.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "massachusetts",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "massgeneral.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "michigan",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "uofmhealth.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "minnesota",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "childrensmn.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "mississippi",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "umc.edu"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "missouri",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "childrensmercy.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "montana",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "billingsclinic.com"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "nevada",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "umcsn.com"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "new-hampshire",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "elliothospital.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "new-jersey",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "rwjbh.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "new-mexico",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "unmhealth.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "new-york",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "childrenshospital.northwell.edu"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "north-dakota",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "sanfordhealth.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "ohio",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "nationwidechildrens.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "oklahoma",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "ouhealth.com"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "oregon",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "ohsu.edu"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "south-carolina",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "musckids.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "south-dakota",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "sanfordhealth.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "tennessee",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "childrenshospitalvanderbilt.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "utah",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "intermountainhealthcare.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "vermont",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "uvmhealth.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "virginia",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "chrichmond.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "west-virginia",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "wvumedicine.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "wisconsin",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "childrenswi.org"
+        ],
+        "needsSourcePull": false
+      },
+      {
+        "stateId": "wyoming",
+        "providerRows": 1,
+        "accessibilityRows": 1,
+        "accessibilityPct": 100,
+        "topHosts": [
+          "cheyenneregional.org"
+        ],
+        "needsSourcePull": false
+      }
+    ]
+  },
+  "recommendedSequence": [
+    {
+      "step": 1,
+      "label": "Do not attempt provider accessibility backfill from checked-in staging",
+      "reason": "The checked-in provider staging rows currently show zero explicit language or accessibility clues, so any automated backfill would be invented rather than source-backed."
+    },
+    {
+      "step": 2,
+      "label": "Run fresh provider source pulls for states that already have trusted provider rows",
+      "reason": "These states are closest to producing a useful accessibility-rich live sample without broad new expansion.",
+      "targetStates": []
+    },
+    {
+      "step": 3,
+      "label": "Prefer first-party provider pages that explicitly mention languages, telehealth, interpreter access, or transportation help",
+      "reason": "This is the smallest safe path to truthful accessibility enrichment."
+    },
+    {
+      "step": 4,
+      "label": "Re-run accessibility and sample audits after each state pull",
+      "reason": "The goal is to earn at least one accessibility-rich provider sample per active provider state cluster, not to bulk-fill uncertain booleans."
+    }
+  ]
+}

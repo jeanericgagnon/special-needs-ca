@@ -1,0 +1,57 @@
+{
+  "generatedAt": "2026-06-18T19:42:57.312Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "tennessee",
+  "sourceWorkfilePath": "data/provider-pull-now-state-workfiles/provider-pull-now-state-workfile-tennessee.json",
+  "summary": {
+    "totalRows": 6,
+    "filledRows": 0,
+    "unresolvedRows": 6,
+    "completionPercent": 0,
+    "bySuggestedDecisionMode": {
+      "needs_manual_research": 6
+    },
+    "byActionClass": {
+      "author_alternate_first_party_target": 3,
+      "replace_domain": 3
+    }
+  },
+  "nextWork": [
+    {
+      "actionClass": "author_alternate_first_party_target",
+      "suggestedDecisionMode": "needs_manual_research",
+      "sourceUrl": "https://www.dollychildrens.org/",
+      "repeatCount": 12
+    },
+    {
+      "actionClass": "author_alternate_first_party_target",
+      "suggestedDecisionMode": "needs_manual_research",
+      "sourceUrl": "https://www.dollychildrens.org/about-us/our-locations/dolly-parton-childrens-hospital-main-campus",
+      "repeatCount": 2
+    },
+    {
+      "actionClass": "author_alternate_first_party_target",
+      "suggestedDecisionMode": "needs_manual_research",
+      "sourceUrl": "https://www.dollychildrens.org/medical-services/specialty-clinics",
+      "repeatCount": 2
+    },
+    {
+      "actionClass": "replace_domain",
+      "suggestedDecisionMode": "needs_manual_research",
+      "sourceUrl": "https://www.childrensaterlanger.org/",
+      "repeatCount": 2
+    },
+    {
+      "actionClass": "replace_domain",
+      "suggestedDecisionMode": "needs_manual_research",
+      "sourceUrl": "https://www.childrenshospitalvanderbilt.org/",
+      "repeatCount": 2
+    },
+    {
+      "actionClass": "replace_domain",
+      "suggestedDecisionMode": "needs_manual_research",
+      "sourceUrl": "https://www.lebonheur.org/",
+      "repeatCount": 2
+    }
+  ]
+}

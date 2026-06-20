@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-06-18T02:14:32.986Z",
+  "mode": "apply",
+  "stateFilter": "wisconsin",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 4,
+    "appliedStates": 2,
+    "filesChanged": 1,
+    "skippedByReason": {
+      "skipped_followup": 2
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "wisconsin",
+      "sourceName": "Wisconsin Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "wisconsin",
+      "sourceName": "Wisconsin HCBS Waivers Page",
+      "status": "applied",
+      "targetUrl": "https://www.dhs.wisconsin.gov/familycare"
+    },
+    {
+      "stateId": "wisconsin",
+      "sourceName": "Wisconsin Developmental Services Directory",
+      "status": "applied",
+      "targetUrl": "https://www.dhs.wisconsin.gov/disabilities/index.htm"
+    },
+    {
+      "stateId": "wisconsin",
+      "sourceName": "Wisconsin Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

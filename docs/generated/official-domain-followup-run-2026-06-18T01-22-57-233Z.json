@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-06-18T01:22:57.235Z",
+  "mode": "apply",
+  "stateFilter": "alaska",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 3,
+    "appliedStates": 2,
+    "filesChanged": 1,
+    "skippedByReason": {
+      "skipped_followup": 1
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "alaska",
+      "sourceName": "Alaska HCBS Waivers Page",
+      "status": "applied",
+      "targetUrl": "https://dhss.alaska.gov/dsds/Pages/hcbw"
+    },
+    {
+      "stateId": "alaska",
+      "sourceName": "Alaska Developmental Services Directory",
+      "status": "applied",
+      "targetUrl": "https://dhss.alaska.gov/dsds/Pages/dd/default.aspx"
+    },
+    {
+      "stateId": "alaska",
+      "sourceName": "Alaska Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

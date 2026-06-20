@@ -1,0 +1,72 @@
+{
+  "generatedAt": "2026-06-18T03:57:19.770Z",
+  "mode": "apply",
+  "stateFilter": null,
+  "inputPath": "docs/generated/provider-manual-review-queue-2026-06-18.json",
+  "dbPath": "ca_disability_navigator.db",
+  "summary": {
+    "inputRows": 7,
+    "appliedRows": 7,
+    "filesChanged": 2,
+    "appliedByBlocker": {
+      "missing_address_and_county": 5,
+      "county_unresolved": 2
+    },
+    "skippedByReason": {},
+    "appliedByReviewStatus": {
+      "blocked_missing_address_and_county": 5,
+      "blocked_missing_county_resolution": 2
+    }
+  },
+  "decisions": [
+    {
+      "rowId": 724,
+      "stateId": "florida",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 728,
+      "stateId": "florida",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_county_resolution",
+      "blockerKey": "county_unresolved"
+    },
+    {
+      "rowId": 732,
+      "stateId": "florida",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 730,
+      "stateId": "kentucky",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 726,
+      "stateId": "missouri",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 733,
+      "stateId": "new-jersey",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 729,
+      "stateId": "south-carolina",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_county_resolution",
+      "blockerKey": "county_unresolved"
+    }
+  ]
+}

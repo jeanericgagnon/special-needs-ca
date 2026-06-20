@@ -1,0 +1,186 @@
+{
+  "generatedAt": "2026-06-16",
+  "dbPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/frontend/ca_disability_navigator.db",
+  "tables": [
+    {
+      "table": "resource_providers",
+      "label": "Resource Providers",
+      "publicCandidateCount": 39,
+      "naive": {
+        "sampleIds": [
+          "pa-clinic-chop",
+          "pa-clinic-upmc",
+          "pa-clinic-psu"
+        ],
+        "states": [
+          "pennsylvania",
+          "pennsylvania",
+          "pennsylvania"
+        ],
+        "families": [
+          "chop.edu",
+          "chp.edu",
+          "pennstatehealth.org"
+        ],
+        "hosts": [
+          "chop.edu",
+          "chp.edu",
+          "pennstatehealth.org"
+        ],
+        "distinctStates": 1,
+        "distinctFamilies": 3,
+        "distinctHosts": 3
+      },
+      "diverse": {
+        "sampleIds": [
+          "pa-clinic-chop",
+          "oh-clinic-nch-autism",
+          "ga-clinic-marcus-autism"
+        ],
+        "states": [
+          "pennsylvania",
+          "ohio",
+          "georgia"
+        ],
+        "families": [
+          "chop.edu",
+          "nationwidechildrens.org",
+          "marcus.org"
+        ],
+        "hosts": [
+          "chop.edu",
+          "nationwidechildrens.org",
+          "marcus.org"
+        ],
+        "distinctStates": 3,
+        "distinctFamilies": 3,
+        "distinctHosts": 3
+      },
+      "improved": {
+        "states": 2,
+        "families": 0,
+        "hosts": 0
+      }
+    },
+    {
+      "table": "nonprofit_organizations",
+      "label": "Nonprofit Organizations",
+      "publicCandidateCount": 29499,
+      "naive": {
+        "sampleIds": [
+          "np-arc-la",
+          "np-arc-sf",
+          "np-arc-sd"
+        ],
+        "states": [
+          "california",
+          "california",
+          "california"
+        ],
+        "families": [
+          "umbrella:the-arc",
+          "umbrella:the-arc",
+          "umbrella:the-arc"
+        ],
+        "hosts": [
+          "thearcla.org",
+          "thearcsf.org",
+          "arc-sd.com"
+        ],
+        "distinctStates": 1,
+        "distinctFamilies": 1,
+        "distinctHosts": 3
+      },
+      "diverse": {
+        "sampleIds": [
+          "np-arc-la",
+          "tx-np-autism-anderson-tx",
+          "fl-np-arc-jax-duval-fl"
+        ],
+        "states": [
+          "california",
+          "texas",
+          "florida"
+        ],
+        "families": [
+          "umbrella:the-arc",
+          "umbrella:autism-society",
+          "arcjacksonville.org"
+        ],
+        "hosts": [
+          "thearcla.org",
+          "texasautismsociety.org",
+          "arcjacksonville.org"
+        ],
+        "distinctStates": 3,
+        "distinctFamilies": 3,
+        "distinctHosts": 3
+      },
+      "improved": {
+        "states": 2,
+        "families": 2,
+        "hosts": 0
+      }
+    },
+    {
+      "table": "iep_advocates",
+      "label": "IEP Advocates",
+      "publicCandidateCount": 2993,
+      "naive": {
+        "sampleIds": [
+          "tx-advocate-seal",
+          "tx-advocate-cuddy",
+          "tx-advocate-whittier"
+        ],
+        "states": [
+          "tx",
+          "tx",
+          "tx"
+        ],
+        "families": [
+          "karenseal.com",
+          "cuddylawfirm.com",
+          "whittierlawgroup.com"
+        ],
+        "hosts": [
+          "karenseal.com",
+          "cuddylawfirm.com",
+          "whittierlawgroup.com"
+        ],
+        "distinctStates": 1,
+        "distinctFamilies": 3,
+        "distinctHosts": 3
+      },
+      "diverse": {
+        "sampleIds": [
+          "tx-advocate-seal",
+          "fl-advocate-drf",
+          "ny-adv-legal-statewide"
+        ],
+        "states": [
+          "tx",
+          "fl",
+          "ny"
+        ],
+        "families": [
+          "karenseal.com",
+          "umbrella:disability-rights",
+          "drny.org"
+        ],
+        "hosts": [
+          "karenseal.com",
+          "disabilityrightsflorida.org",
+          "drny.org"
+        ],
+        "distinctStates": 3,
+        "distinctFamilies": 3,
+        "distinctHosts": 3
+      },
+      "improved": {
+        "states": 2,
+        "families": 0,
+        "hosts": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,266 @@
+{
+  "auditId": "low_token_control_plane",
+  "generatedAt": "2026-06-19T02:39:14.115Z",
+  "generatedDate": "2026-06-19",
+  "regression": {
+    "ok": true,
+    "exitCode": 0,
+    "stdout": "low token workflow regression tests passed",
+    "stderr": ""
+  },
+  "lanes": {
+    "officialFollowup": {
+      "status": "idle_or_cleared",
+      "queuePath": "docs/generated/official-domain-followup-queue-2026-06-19.json",
+      "pendingQueueRows": 0,
+      "pendingStates": [],
+      "activeDecisionFilePath": "data/official-domain-followup-decisions.json",
+      "activeDecisionRows": 187,
+      "action": {
+        "blocker": "no_live_official_followup_rows",
+        "nextAction": "No official-domain follow-up review is pending.",
+        "recommendedCommands": []
+      }
+    },
+    "providerPullNow": {
+      "status": "idle_or_cleared",
+      "queuePath": "docs/generated/provider-followup-repair-queue-2026-06-19.json",
+      "pendingQueueRows": 0,
+      "pendingDecisionRows": 0,
+      "executionBacklogPath": "docs/generated/provider-repair-execution-backlog-2026-06-19.json",
+      "executionBacklogRows": 0,
+      "runbookPath": "docs/generated/provider-pull-now-runbook-2026-06-19.json",
+      "runbookSummary": {
+        "pullNowRowCount": 0,
+        "pullNowStateCount": 0,
+        "byActionClass": {},
+        "firstActionClass": null
+      },
+      "decisionTemplatePath": "docs/generated/provider-pull-now-decision-template-2026-06-19.json",
+      "decisionTemplateRows": 0,
+      "manualFillQueuePath": "docs/generated/provider-pull-now-manual-fill-queue-2026-06-19.json",
+      "manualFillQueueRows": 0,
+      "manualFillQueueSummary": {
+        "unresolvedRows": 0,
+        "byActionClass": {},
+        "byDecisionHint": {},
+        "byState": {}
+      },
+      "decisionProgressPath": "docs/generated/provider-pull-now-decision-progress-2026-06-19.json",
+      "decisionProgressSummary": {
+        "totalRows": 0,
+        "filledRows": 0,
+        "unresolvedRows": 0,
+        "staleRows": 0,
+        "completionPercent": 0,
+        "byActionClass": {},
+        "byState": {},
+        "byDecisionMode": {},
+        "templateRows": 0,
+        "manualFillQueueRows": 0
+      },
+      "reviewPacketPath": "docs/generated/provider-pull-now-review-packet-2026-06-19.json",
+      "reviewPacketSummary": {
+        "unresolvedRows": 0,
+        "filledRows": 0,
+        "completionPercent": 0,
+        "statePacketCount": 0,
+        "firstState": null
+      },
+      "statePacketsPath": "docs/generated/provider-pull-now-state-packets-2026-06-19.json",
+      "statePacketsSummary": {
+        "statePacketCount": 0,
+        "totalUnresolvedRows": 0,
+        "firstState": null
+      },
+      "firstStatePacketPath": "",
+      "firstStateDecisionPacketPath": "docs/generated/provider-pull-now-state-decision-packets/provider-pull-now-state-decision-packet--2026-06-19.json",
+      "firstStateWorkfilePath": "data/provider-pull-now-state-workfiles/provider-pull-now-state-workfile-.json",
+      "firstStateWorkfileStatusPath": "docs/generated/provider-pull-now-state-workfile-status--2026-06-19.json",
+      "firstStateReviewLoopPath": "docs/generated/provider-pull-now-state-review-loop--2026-06-19.json",
+      "activeDecisionFilePath": "data/provider-pull-now-decisions.json",
+      "activeDecisionRows": 0,
+      "staleDecisionRows": 0,
+      "resolutionLedgerPath": "data/source-acquisition-state/provider-pull-now-resolution-ledger.json",
+      "resolutionLedgerRows": 20,
+      "action": {
+        "blocker": "none",
+        "nextAction": "Provider pull-now lane is clear; no action needed.",
+        "firstActionClass": "",
+        "recommendedCommands": []
+      }
+    },
+    "providerRepairBacklog": {
+      "status": "idle_or_cleared",
+      "queuePath": "docs/generated/provider-followup-repair-queue-2026-06-19.json",
+      "pendingQueueRows": 0,
+      "executionBacklogPath": "docs/generated/provider-repair-execution-backlog-2026-06-19.json",
+      "executionBacklogRows": 0,
+      "firstExecutionLane": "",
+      "action": {
+        "blocker": "none",
+        "nextAction": "Provider repair backlog is clear; no exact provider repair work is queued.",
+        "recommendedCommands": []
+      }
+    },
+    "formsFallback": {
+      "status": "idle_or_cleared",
+      "queuePath": "docs/generated/forms-fallback-scrape-queue-2026-06-19.json",
+      "queueRows": 116,
+      "excludedFederalOnlyStates": [
+        "nebraska",
+        "new-hampshire",
+        "new-mexico"
+      ],
+      "latestRepairRunPath": "docs/generated/forms-library-repair-run-2026-06-18T00-34-23-254Z.json",
+      "latestFallbackRunPath": "data/source-acquisition-runs/2026-06-19T00-11-20-678Z/forms-fallback-summary.json",
+      "completionLedgerPath": "data/source-acquisition-state/forms-fallback-completion-ledger.json",
+      "manualReviewQueuePath": "docs/generated/forms-fallback-manual-review-queue-2026-06-19.json",
+      "manualReviewQueueSummary": {
+        "totalRows": 0,
+        "byState": {},
+        "byCandidateType": {},
+        "byFailureReason": {}
+      },
+      "manualReviewDecisionTemplatePath": "docs/generated/forms-fallback-manual-review-decision-template-2026-06-19.json",
+      "manualReviewDecisionTemplateRows": 0,
+      "activeManualReviewDecisionFilePath": "data/forms-fallback-manual-review-decisions.json",
+      "activeManualReviewDecisionRows": 139,
+      "manualReviewResolutionLedgerPath": "data/source-acquisition-state/forms-fallback-manual-review-ledger.json",
+      "manualReviewResolutionLedgerRows": 139,
+      "manualReviewAudit": {
+        "ok": true,
+        "exitCode": 0,
+        "stdout": "{\n  \"generatedAt\": \"2026-06-19T02:39:14.062Z\",\n  \"summary\": {\n    \"totalRows\": 0,\n    \"byState\": {},\n    \"byCandidateType\": {},\n    \"byFailureReason\": {}\n  },\n  \"artifacts\": {\n    \"json\": \"/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/forms-fallback-manual-review-queue-2026-06-19.json\",\n    \"md\": \"/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/forms-fallback-manual-review-queue-2026-06-19.md\"\n  }\n}",
+        "stderr": ""
+      },
+      "stateLedgerPath": "docs/generated/forms-fallback-state-ledger-2026-06-19.json",
+      "stateLedgerSummary": {
+        "totalStates": 34,
+        "byStatus": {
+          "completed": 34
+        },
+        "nextState": ""
+      },
+      "stateLedgerAudit": {
+        "ok": true,
+        "exitCode": 0,
+        "stdout": "{\n  \"generatedAt\": \"2026-06-19T02:39:14.105Z\",\n  \"summary\": {\n    \"totalStates\": 34,\n    \"byStatus\": {\n      \"completed\": 34\n    },\n    \"nextState\": \"\"\n  },\n  \"artifacts\": {\n    \"json\": \"/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/forms-fallback-state-ledger-2026-06-19.json\",\n    \"md\": \"/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/forms-fallback-state-ledger-2026-06-19.md\"\n  }\n}",
+        "stderr": ""
+      },
+      "latestFallbackRunSummary": {
+        "runId": "2026-06-19T00-11-20-678Z",
+        "mode": "live",
+        "selectedCount": 1,
+        "warningCount": 0,
+        "filters": {
+          "state": "iowa",
+          "candidateType": null,
+          "limitRequested": 3,
+          "limitApplied": 1
+        },
+        "warnings": []
+      },
+      "exactRepairRows": 0,
+      "nonRepairableRows": 37,
+      "nonRepairableByReason": {
+        "state_specific_form_fallback_only": 34,
+        "federal_only_form_fallback": 3
+      },
+      "action": {
+        "blocker": "federal_only_forms_states_remaining",
+        "nextAction": "No state-specific forms fallback rows remain; only federal-only fallback states still need better first-party discovery.",
+        "federalOnlyStates": [
+          "nebraska",
+          "new-hampshire",
+          "new-mexico"
+        ],
+        "exactRepairRows": 0,
+        "manualReviewQueueRows": 0,
+        "manualReviewDecisionRows": 139,
+        "manualReviewResolvedRows": 0,
+        "pendingManualReviewRows": 0,
+        "firstBatchStates": [
+          "arizona",
+          "colorado",
+          "connecticut",
+          "delaware",
+          "hawaii"
+        ],
+        "exercisedStates": [
+          "alaska",
+          "arizona",
+          "arkansas",
+          "colorado",
+          "connecticut",
+          "delaware",
+          "hawaii",
+          "idaho",
+          "indiana",
+          "iowa",
+          "kansas",
+          "kentucky",
+          "louisiana",
+          "maine",
+          "maryland",
+          "massachusetts",
+          "michigan",
+          "minnesota",
+          "mississippi",
+          "missouri",
+          "montana",
+          "nevada",
+          "north-carolina",
+          "north-dakota",
+          "oklahoma",
+          "oregon",
+          "rhode-island",
+          "south-carolina",
+          "south-dakota",
+          "tennessee",
+          "utah",
+          "vermont",
+          "virginia",
+          "washington",
+          "west-virginia",
+          "wisconsin",
+          "wyoming"
+        ],
+        "nextBatchStates": [],
+        "recommendedCommands": [
+          "npm run audit:forms-source-pack"
+        ]
+      }
+    },
+    "providerFollowupBlockers": {
+      "status": "explicit_repeated_blockers_recorded",
+      "registryPath": "docs/generated/provider-followup-blocker-registry-2026-06-19.json",
+      "repeatedRows": 71,
+      "byBucket": {
+        "blocked": 45,
+        "source_repair": 20,
+        "retryable": 6
+      },
+      "byReason": {
+        "access_blocked_403": 41,
+        "stale_or_invalid_404": 14,
+        "network_timeout": 3,
+        "needs_review_unknown": 4,
+        "network_fetch_failed": 3,
+        "dns_lookup_failed": 6
+      },
+      "latestRunIds": [
+        "2026-06-19T00-52-46-886Z",
+        "2026-06-19T00-03-58-926Z",
+        "2026-06-19T00-03-23-705Z",
+        "2026-06-18T18-01-54-225Z",
+        "2026-06-18T04-04-47-221Z",
+        "2026-06-18T04-03-06-159Z",
+        "2026-06-18T04-02-08-899Z",
+        "2026-06-18T03-59-52-969Z",
+        "2026-06-18T03-58-19-669Z",
+        "2026-06-18T03-57-17-974Z"
+      ]
+    }
+  }
+}

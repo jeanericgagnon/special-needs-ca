@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-06-19",
+  "family": "programs_benefits",
+  "summary": {
+    "rowCount": 1,
+    "byResolutionState": {
+      "cleared": 1
+    }
+  },
+  "rows": [
+    {
+      "family": "programs_benefits",
+      "blockerId": "programs_launch_promotion_contract",
+      "resolutionState": "cleared",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Ready program queue is closed; only deterministic truth-policy checks remain.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    }
+  ]
+}

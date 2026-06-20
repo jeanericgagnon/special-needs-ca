@@ -1,0 +1,38 @@
+{
+  "generatedAt": "2026-06-18T20:20:20.878Z",
+  "mode": "apply",
+  "inputPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/knowledge-content-repair-decision-template-2026-06-18.json",
+  "summary": {
+    "inputRows": 4,
+    "resolvedRows": 0,
+    "deferredRows": 4,
+    "filesChanged": 2,
+    "skippedByReason": {}
+  },
+  "decisions": [
+    {
+      "id": "knowledge-acl-supported-decision-making",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "id": "knowledge-acl-lifespan-respite",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "id": "knowledge-cdc-adhd-symptoms",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "id": "knowledge-cdc-adhd-treatment",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    }
+  ],
+  "outputs": {
+    "ledgerPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-state/knowledge-content-repair-ledger.json",
+    "resolutionPackPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source_packs/knowledge_content_repair_resolutions.json"
+  }
+}

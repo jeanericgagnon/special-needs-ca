@@ -1,0 +1,187 @@
+{
+  "generatedAt": "2026-06-19T23:21:13.043Z",
+  "generatedDate": "2026-06-19",
+  "purpose": "Meta-audit for launch scraper specification artifacts so the full spec stack can be checked with one command.",
+  "artifactPaths": {
+    "launch-scrape-link-inventory": "docs/generated/launch-scrape-link-inventory-2026-06-19.json",
+    "launch-scraper-contract": "docs/generated/launch-scraper-contract-2026-06-19.json",
+    "launch-scraper-field-contract": "docs/generated/launch-scraper-field-contract-2026-06-19.json",
+    "launch-scraper-fixture-matrix": "docs/generated/launch-scraper-fixture-matrix-2026-06-19.json",
+    "launch-scraper-false-positive-taxonomy": "docs/generated/launch-scraper-false-positive-taxonomy-2026-06-19.json",
+    "launch-scraper-queue-false-positive-risk": "docs/generated/launch-scraper-queue-false-positive-risk-2026-06-19.json",
+    "launch-scraper-lifecycle-contract": "docs/generated/launch-scraper-lifecycle-contract-2026-06-19.json",
+    "launch-scraper-staging-support-matrix": "docs/generated/launch-scraper-staging-support-matrix-2026-06-19.json",
+    "launch-scraper-readiness-board": "docs/generated/launch-scraper-readiness-board-2026-06-19.json",
+    "launch-scraper-gap-registry": "docs/generated/launch-scraper-gap-registry-2026-06-19.json",
+    "launch-scraper-negative-fixture-plan": "docs/generated/launch-scraper-negative-fixture-plan-2026-06-19.json",
+    "launch-scraper-negative-fixture-capture-packet": "docs/generated/launch-scraper-negative-fixture-capture-packet-2026-06-19.json",
+    "launch-scraper-negative-fixture-closure-status": "docs/generated/launch-scraper-negative-fixture-closure-status-2026-06-19.json",
+    "launch-scraper-runbook": "docs/generated/launch-scraper-runbook-2026-06-19.json",
+    "launch-scraper-artifact-contract": "docs/generated/launch-scraper-artifact-contract-2026-06-19.json",
+    "launch-scraper-provenance-contract": "docs/generated/launch-scraper-provenance-contract-2026-06-19.json",
+    "launch-scraper-queue-governance": "docs/generated/launch-scraper-queue-governance-2026-06-19.json",
+    "launch-scraper-qa-pack": "docs/generated/launch-scraper-qa-pack-2026-06-19.json",
+    "launch-scraper-fixture-coverage-audit": "docs/generated/launch-scraper-fixture-coverage-audit-2026-06-19.json"
+  },
+  "canonicalFamilies": [
+    "dd_routing",
+    "education_routing",
+    "forms_guides",
+    "knowledge_content",
+    "medicaid_hhs_offices",
+    "program_waitlists",
+    "programs_benefits",
+    "providers_care",
+    "waivers"
+  ],
+  "checks": [
+    {
+      "id": "artifact_presence",
+      "passed": true,
+      "detail": "requiredArtifacts=19"
+    },
+    {
+      "id": "canonical_family_count",
+      "passed": true,
+      "detail": "canonicalFamilyCount=9"
+    },
+    {
+      "id": "field_contract_family_match",
+      "passed": true,
+      "detail": "fieldFamilies=dd_routing,education_routing,forms_guides,knowledge_content,medicaid_hhs_offices,program_waitlists,programs_benefits,providers_care,waivers"
+    },
+    {
+      "id": "fixture_matrix_family_match",
+      "passed": true,
+      "detail": "fixtureFamilies=dd_routing,education_routing,forms_guides,knowledge_content,medicaid_hhs_offices,program_waitlists,programs_benefits,providers_care,waivers"
+    },
+    {
+      "id": "false_positive_taxonomy_covers_launch_families",
+      "passed": true,
+      "detail": "falsePositiveFamilies=dd_routing,education_routing,knowledge_content,medicaid_hhs_offices,program_waitlists,programs_benefits,providers_care,waivers"
+    },
+    {
+      "id": "lifecycle_contract_family_match",
+      "passed": true,
+      "detail": "lifecycleFamilies=dd_routing,education_routing,forms_guides,knowledge_content,medicaid_hhs_offices,program_waitlists,programs_benefits,providers_care,waivers"
+    },
+    {
+      "id": "staging_support_family_match",
+      "passed": true,
+      "detail": "stagingFamilies=dd_routing,education_routing,forms_guides,knowledge_content,medicaid_hhs_offices,program_waitlists,programs_benefits,providers_care,waivers"
+    },
+    {
+      "id": "readiness_board_family_match",
+      "passed": true,
+      "detail": "readinessFamilies=dd_routing,education_routing,forms_guides,knowledge_content,medicaid_hhs_offices,program_waitlists,programs_benefits,providers_care,waivers"
+    },
+    {
+      "id": "gap_registry_subset_valid",
+      "passed": true,
+      "detail": "gapFamilies="
+    },
+    {
+      "id": "runbook_family_match",
+      "passed": true,
+      "detail": "runbookFamilies=dd_routing,education_routing,forms_guides,knowledge_content,medicaid_hhs_offices,program_waitlists,programs_benefits,providers_care,waivers"
+    },
+    {
+      "id": "provenance_family_match",
+      "passed": true,
+      "detail": "provenanceFamilies=dd_routing,education_routing,forms_guides,knowledge_content,medicaid_hhs_offices,program_waitlists,programs_benefits,providers_care,waivers"
+    },
+    {
+      "id": "qa_pack_family_match",
+      "passed": true,
+      "detail": "qaFamilies=dd_routing,education_routing,forms_guides,knowledge_content,medicaid_hhs_offices,program_waitlists,programs_benefits,providers_care,waivers"
+    },
+    {
+      "id": "queue_governance_has_ready_lane",
+      "passed": true,
+      "detail": "ready_target_scrape present"
+    },
+    {
+      "id": "artifact_contract_has_resume_guarantees",
+      "passed": true,
+      "detail": "resumeGuarantees=6"
+    },
+    {
+      "id": "inventory_has_launch_rows",
+      "passed": true,
+      "detail": "launchCriticalUniqueUrls=3747"
+    },
+    {
+      "id": "inventory_ready_matches_governance_count",
+      "passed": true,
+      "detail": "inventoryReady=551; governanceReady=551"
+    },
+    {
+      "id": "qa_pack_has_real_cases",
+      "passed": true,
+      "detail": "acceptedFamilies=9; rejectedFamilies=9"
+    },
+    {
+      "id": "false_positive_taxonomy_has_real_examples",
+      "passed": true,
+      "detail": "classesWithExamples=4"
+    },
+    {
+      "id": "queue_false_positive_risk_has_launch_rows",
+      "passed": true,
+      "detail": "queueRiskRows=900"
+    },
+    {
+      "id": "queue_false_positive_risk_flags_live_refresh_placeholder_domains",
+      "passed": true,
+      "detail": "placeholderLiveRefreshRows=136"
+    },
+    {
+      "id": "queue_false_positive_risk_keeps_placeholder_domains_out_of_ready_scrape",
+      "passed": true,
+      "detail": "placeholderReadyRows=0"
+    },
+    {
+      "id": "readiness_board_matches_fixture_coverage",
+      "passed": true,
+      "detail": "dd_routing:accepted_and_rejected/accepted_and_rejected; education_routing:accepted_and_rejected/accepted_and_rejected; forms_guides:accepted_and_rejected/accepted_and_rejected; knowledge_content:accepted_and_rejected/accepted_and_rejected; medicaid_hhs_offices:accepted_and_rejected/accepted_and_rejected; program_waitlists:accepted_and_rejected/accepted_and_rejected; programs_benefits:accepted_and_rejected/accepted_and_rejected; providers_care:accepted_and_rejected/accepted_and_rejected; waivers:accepted_and_rejected/accepted_and_rejected"
+    },
+    {
+      "id": "negative_fixture_packet_matches_plan",
+      "passed": true,
+      "detail": "planRows=0; captureRows=0"
+    },
+    {
+      "id": "negative_fixture_packet_has_commands",
+      "passed": true,
+      "detail": "rowsWithCommands=0"
+    },
+    {
+      "id": "negative_fixture_closure_tracks_open_rows",
+      "passed": true,
+      "detail": "openCount=0; plannedRows=0"
+    },
+    {
+      "id": "lifecycle_contract_has_resume_guarantees",
+      "passed": true,
+      "detail": "resumeGuarantees=6"
+    },
+    {
+      "id": "staging_support_has_full_launch_family_coverage",
+      "passed": true,
+      "detail": "unsupportedFamilyCount=0"
+    },
+    {
+      "id": "readiness_board_flags_known_spec_gaps",
+      "passed": true,
+      "detail": "no launch family retains the old rejected-fixture or waitlist staging spec gaps"
+    },
+    {
+      "id": "gap_registry_row_count_matches_known_gaps",
+      "passed": true,
+      "detail": "gapRegistryRows=0"
+    }
+  ],
+  "passedCheckCount": 29,
+  "failedCheckCount": 0,
+  "overallPassed": true
+}

@@ -6,6 +6,13 @@ import path from 'path';
 import crypto from 'crypto';
 import fs from 'fs';
 import { DIAGNOSES_DETAILS } from './diagnoses';
+import {
+  getDirectoryFieldCoverage,
+  hasDirectoryAccessibilitySignal,
+  hasDirectoryAvailabilitySignal,
+  hasDirectoryClaimGroundworkSignal,
+  hasDirectoryNextStepSignal,
+} from './directoryFoundation';
 
 // Helper to locate DB file dynamically in serverless environments
 function findDbPath(dbName: string): string {
@@ -176,7 +183,7 @@ function ensureCrawlerDb() {
     crawlerDbInstance = new Database(crawlerDbPath, { readonly: true, timeout: 5000 });
     try {
       crawlerDbInstance.pragma('journal_mode = WAL');
-    } catch (e) {
+    } catch {
       // Ignore if readonly connection cannot enable WAL
     }
   }
@@ -189,7 +196,7 @@ function ensureNavigatorDb() {
     navigatorDbInstance = new Database(navigatorDbPath, { readonly, timeout: 5000 });
     try {
       navigatorDbInstance.pragma('journal_mode = WAL');
-    } catch (e) {
+    } catch {
       // Ignore if readonly connection cannot enable WAL
     }
     if (!readonly) {
@@ -466,7 +473,54 @@ async function runPgMigrations(pool: Pool) {
       email TEXT,
       address TEXT,
       accepts_medi_cal INTEGER,
-      regional_center_vendor_ids TEXT
+      regional_center_vendor_ids TEXT,
+      service_tags TEXT,
+      serving_tags TEXT,
+      availability_status TEXT,
+      accepting_new_clients INTEGER,
+      waitlist_status TEXT,
+      capacity_notes TEXT,
+      funding_status TEXT,
+      checked_at TEXT,
+      source_name TEXT,
+      source_last_updated TEXT,
+      next_step_type TEXT,
+      next_step_label TEXT,
+      next_step_url TEXT,
+      next_step_phone TEXT,
+      next_step_email TEXT,
+      next_step_instructions TEXT,
+      requirements TEXT,
+      application_url TEXT,
+      referral_url TEXT,
+      walk_in_available INTEGER,
+      appointment_required INTEGER,
+      languages TEXT,
+      interpreter_available INTEGER,
+      asl_available INTEGER,
+      wheelchair_accessible INTEGER,
+      virtual_services INTEGER,
+      in_person_services INTEGER,
+      home_visits INTEGER,
+      transportation_help INTEGER,
+      accessibility_notes TEXT,
+      accessibility_evidence_level TEXT,
+      accessibility_source_address TEXT,
+      manual_review_required INTEGER DEFAULT 0,
+      data_quality_notes TEXT,
+      unsupported_claim_flags TEXT,
+      claim_status TEXT,
+      claimed_by TEXT,
+      verified_affiliation INTEGER DEFAULT 0,
+      claim_email TEXT,
+      source_url TEXT,
+      source_type TEXT,
+      data_origin TEXT,
+      verification_status TEXT,
+      last_verified_at TEXT,
+      last_verified_date TEXT,
+      last_scraped_at TEXT,
+      confidence_score REAL
     );
     CREATE TABLE IF NOT EXISTS nonprofit_organizations (
       id TEXT PRIMARY KEY,
@@ -474,7 +528,52 @@ async function runPgMigrations(pool: Pool) {
       name TEXT NOT NULL,
       website TEXT NOT NULL,
       phone TEXT NOT NULL,
-      focus_condition TEXT NOT NULL
+      focus_condition TEXT NOT NULL,
+      service_tags TEXT,
+      serving_tags TEXT,
+      availability_status TEXT,
+      accepting_new_clients INTEGER,
+      waitlist_status TEXT,
+      capacity_notes TEXT,
+      funding_status TEXT,
+      checked_at TEXT,
+      source_name TEXT,
+      source_last_updated TEXT,
+      next_step_type TEXT,
+      next_step_label TEXT,
+      next_step_url TEXT,
+      next_step_phone TEXT,
+      next_step_email TEXT,
+      next_step_instructions TEXT,
+      requirements TEXT,
+      application_url TEXT,
+      referral_url TEXT,
+      walk_in_available INTEGER,
+      appointment_required INTEGER,
+      languages TEXT,
+      interpreter_available INTEGER,
+      asl_available INTEGER,
+      wheelchair_accessible INTEGER,
+      virtual_services INTEGER,
+      in_person_services INTEGER,
+      home_visits INTEGER,
+      transportation_help INTEGER,
+      accessibility_notes TEXT,
+      manual_review_required INTEGER DEFAULT 0,
+      data_quality_notes TEXT,
+      unsupported_claim_flags TEXT,
+      claim_status TEXT,
+      claimed_by TEXT,
+      verified_affiliation INTEGER DEFAULT 0,
+      claim_email TEXT,
+      source_url TEXT,
+      source_type TEXT,
+      data_origin TEXT,
+      verification_status TEXT,
+      last_verified_at TEXT,
+      last_verified_date TEXT,
+      last_scraped_at TEXT,
+      confidence_score REAL
     );
     CREATE TABLE IF NOT EXISTS sources (
       id TEXT PRIMARY KEY,
@@ -503,6 +602,42 @@ async function runPgMigrations(pool: Pool) {
       regional_center_vendorized INTEGER DEFAULT 0,
       organization_affiliation TEXT,
       description TEXT,
+      service_tags TEXT,
+      serving_tags TEXT,
+      availability_status TEXT,
+      accepting_new_clients INTEGER,
+      waitlist_status TEXT,
+      capacity_notes TEXT,
+      funding_status TEXT,
+      checked_at TEXT,
+      source_name TEXT,
+      source_last_updated TEXT,
+      next_step_type TEXT,
+      next_step_label TEXT,
+      next_step_url TEXT,
+      next_step_phone TEXT,
+      next_step_email TEXT,
+      next_step_instructions TEXT,
+      requirements TEXT,
+      application_url TEXT,
+      referral_url TEXT,
+      walk_in_available INTEGER,
+      appointment_required INTEGER,
+      interpreter_available INTEGER,
+      asl_available INTEGER,
+      wheelchair_accessible INTEGER,
+      virtual_services INTEGER,
+      in_person_services INTEGER,
+      home_visits INTEGER,
+      transportation_help INTEGER,
+      accessibility_notes TEXT,
+      manual_review_required INTEGER DEFAULT 0,
+      data_quality_notes TEXT,
+      unsupported_claim_flags TEXT,
+      claim_status TEXT,
+      claimed_by TEXT,
+      verified_affiliation INTEGER DEFAULT 0,
+      claim_email TEXT,
       verification_status TEXT DEFAULT 'unverified',
       source_url TEXT,
       source_type TEXT,
@@ -535,9 +670,49 @@ async function runPgMigrations(pool: Pool) {
     ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS source_type TEXT;
     ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS data_origin TEXT;
     ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS verification_status TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS last_verified_at TEXT;
     ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS last_verified_date TEXT;
     ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS last_scraped_at TEXT;
     ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS confidence_score REAL;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS service_tags TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS serving_tags TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS availability_status TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS accepting_new_clients INTEGER;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS waitlist_status TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS capacity_notes TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS funding_status TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS checked_at TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS source_name TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS source_last_updated TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS next_step_type TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS next_step_label TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS next_step_url TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS next_step_phone TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS next_step_email TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS next_step_instructions TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS requirements TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS application_url TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS referral_url TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS walk_in_available INTEGER;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS appointment_required INTEGER;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS languages TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS interpreter_available INTEGER;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS asl_available INTEGER;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS wheelchair_accessible INTEGER;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS virtual_services INTEGER;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS in_person_services INTEGER;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS home_visits INTEGER;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS transportation_help INTEGER;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS accessibility_notes TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS accessibility_evidence_level TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS accessibility_source_address TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS manual_review_required INTEGER DEFAULT 0;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS data_quality_notes TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS unsupported_claim_flags TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS claim_status TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS claimed_by TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS verified_affiliation INTEGER DEFAULT 0;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS claim_email TEXT;
 
     ALTER TABLE regional_education_agencies ADD COLUMN IF NOT EXISTS source_url TEXT;
     ALTER TABLE regional_education_agencies ADD COLUMN IF NOT EXISTS source_type TEXT;
@@ -557,14 +732,88 @@ async function runPgMigrations(pool: Pool) {
     ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS data_origin TEXT;
     ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS last_verified_date TEXT;
     ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS confidence_score REAL;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS service_tags TEXT;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS serving_tags TEXT;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS availability_status TEXT;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS accepting_new_clients INTEGER;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS waitlist_status TEXT;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS capacity_notes TEXT;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS funding_status TEXT;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS checked_at TEXT;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS source_name TEXT;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS source_last_updated TEXT;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS next_step_type TEXT;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS next_step_label TEXT;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS next_step_url TEXT;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS next_step_phone TEXT;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS next_step_email TEXT;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS next_step_instructions TEXT;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS requirements TEXT;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS application_url TEXT;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS referral_url TEXT;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS walk_in_available INTEGER;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS appointment_required INTEGER;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS interpreter_available INTEGER;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS asl_available INTEGER;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS wheelchair_accessible INTEGER;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS virtual_services INTEGER;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS in_person_services INTEGER;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS home_visits INTEGER;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS transportation_help INTEGER;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS accessibility_notes TEXT;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS manual_review_required INTEGER DEFAULT 0;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS data_quality_notes TEXT;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS unsupported_claim_flags TEXT;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS claim_status TEXT;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS claimed_by TEXT;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS verified_affiliation INTEGER DEFAULT 0;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS claim_email TEXT;
 
     ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS source_url TEXT;
     ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS source_type TEXT;
     ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS data_origin TEXT;
     ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS verification_status TEXT;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS last_verified_at TEXT;
     ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS last_verified_date TEXT;
     ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS last_scraped_at TEXT;
     ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS confidence_score REAL;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS service_tags TEXT;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS serving_tags TEXT;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS availability_status TEXT;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS accepting_new_clients INTEGER;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS waitlist_status TEXT;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS capacity_notes TEXT;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS funding_status TEXT;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS checked_at TEXT;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS source_name TEXT;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS source_last_updated TEXT;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS next_step_type TEXT;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS next_step_label TEXT;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS next_step_url TEXT;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS next_step_phone TEXT;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS next_step_email TEXT;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS next_step_instructions TEXT;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS requirements TEXT;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS application_url TEXT;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS referral_url TEXT;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS walk_in_available INTEGER;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS appointment_required INTEGER;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS languages TEXT;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS interpreter_available INTEGER;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS asl_available INTEGER;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS wheelchair_accessible INTEGER;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS virtual_services INTEGER;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS in_person_services INTEGER;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS home_visits INTEGER;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS transportation_help INTEGER;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS accessibility_notes TEXT;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS manual_review_required INTEGER DEFAULT 0;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS data_quality_notes TEXT;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS unsupported_claim_flags TEXT;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS claim_status TEXT;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS claimed_by TEXT;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS verified_affiliation INTEGER DEFAULT 0;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS claim_email TEXT;
 
     ALTER TABLE programs ADD COLUMN IF NOT EXISTS source_url TEXT;
     ALTER TABLE programs ADD COLUMN IF NOT EXISTS source_type TEXT;
@@ -625,6 +874,107 @@ async function runPgMigrations(pool: Pool) {
       income_limit TEXT,
       diagnosis_required TEXT,
       county_specific TEXT
+    );
+    CREATE TABLE IF NOT EXISTS organizations (
+      id TEXT PRIMARY KEY,
+      name TEXT NOT NULL,
+      organization_type TEXT NOT NULL,
+      parent_organization_id TEXT,
+      website TEXT,
+      intake_phone TEXT,
+      intake_email TEXT,
+      source_url TEXT,
+      source_type TEXT,
+      data_origin TEXT,
+      verification_status TEXT,
+      last_verified_date TEXT,
+      last_scraped_at TEXT,
+      confidence_score REAL,
+      notes TEXT
+    );
+    CREATE TABLE IF NOT EXISTS organization_program_links (
+      id TEXT PRIMARY KEY,
+      organization_id TEXT NOT NULL,
+      program_id TEXT,
+      listing_type TEXT NOT NULL,
+      title TEXT NOT NULL,
+      intake_model TEXT,
+      service_summary TEXT,
+      eligibility_summary TEXT,
+      source_url TEXT,
+      source_type TEXT,
+      data_origin TEXT,
+      verification_status TEXT,
+      last_verified_date TEXT,
+      last_scraped_at TEXT,
+      confidence_score REAL
+    );
+    CREATE TABLE IF NOT EXISTS service_locations (
+      id TEXT PRIMARY KEY,
+      organization_id TEXT NOT NULL,
+      location_name TEXT NOT NULL,
+      location_type TEXT NOT NULL,
+      address TEXT,
+      city TEXT,
+      state_id TEXT,
+      postal_code TEXT,
+      county_id TEXT,
+      phone TEXT,
+      email TEXT,
+      website TEXT,
+      appointment_url TEXT,
+      hours_text TEXT,
+      source_url TEXT,
+      source_type TEXT,
+      data_origin TEXT,
+      verification_status TEXT,
+      last_verified_date TEXT,
+      last_scraped_at TEXT,
+      confidence_score REAL
+    );
+    CREATE TABLE IF NOT EXISTS office_locations (
+      id TEXT PRIMARY KEY,
+      organization_id TEXT NOT NULL,
+      office_name TEXT NOT NULL,
+      office_type TEXT NOT NULL,
+      address TEXT,
+      city TEXT,
+      state_id TEXT,
+      postal_code TEXT,
+      county_id TEXT,
+      intake_phone TEXT,
+      intake_email TEXT,
+      website TEXT,
+      hours_text TEXT,
+      source_url TEXT,
+      source_type TEXT,
+      data_origin TEXT,
+      verification_status TEXT,
+      last_verified_date TEXT,
+      last_scraped_at TEXT,
+      confidence_score REAL
+    );
+    CREATE TABLE IF NOT EXISTS virtual_service_areas (
+      id TEXT PRIMARY KEY,
+      organization_id TEXT NOT NULL,
+      program_link_id TEXT,
+      area_type TEXT NOT NULL,
+      area_name TEXT NOT NULL,
+      state_id TEXT,
+      coverage_notes TEXT,
+      intake_model TEXT,
+      source_url TEXT,
+      source_type TEXT,
+      data_origin TEXT,
+      verification_status TEXT,
+      last_verified_date TEXT,
+      last_scraped_at TEXT,
+      confidence_score REAL
+    );
+    CREATE TABLE IF NOT EXISTS virtual_service_area_counties (
+      virtual_service_area_id TEXT,
+      county_id TEXT,
+      PRIMARY KEY (virtual_service_area_id, county_id)
     );
     CREATE TABLE IF NOT EXISTS child_profiles (
       id TEXT PRIMARY KEY,
@@ -911,6 +1261,12 @@ async function syncSqliteToPg(pool: Pool) {
     { name: 'regional_center_counties', crawler: false },
     { name: 'selpa_counties', crawler: false },
     { name: 'iep_advocate_counties', crawler: false },
+    { name: 'organizations', crawler: false },
+    { name: 'organization_program_links', crawler: false },
+    { name: 'service_locations', crawler: false },
+    { name: 'office_locations', crawler: false },
+    { name: 'virtual_service_areas', crawler: false },
+    { name: 'virtual_service_area_counties', crawler: false },
     { name: 'structured_programs', crawler: true },
     { name: 'child_clinical_documents', crawler: false },
     { name: 'consultation_threads', crawler: false },
@@ -1123,6 +1479,107 @@ function runMigrations(db: Database.Database) {
       reserve_capacity_notice TEXT,
       legal_deadline TEXT,
       last_scraped_at TEXT NOT NULL
+    );
+    CREATE TABLE IF NOT EXISTS organizations (
+      id TEXT PRIMARY KEY,
+      name TEXT NOT NULL,
+      organization_type TEXT NOT NULL,
+      parent_organization_id TEXT,
+      website TEXT,
+      intake_phone TEXT,
+      intake_email TEXT,
+      source_url TEXT,
+      source_type TEXT,
+      data_origin TEXT,
+      verification_status TEXT,
+      last_verified_date TEXT,
+      last_scraped_at TEXT,
+      confidence_score REAL,
+      notes TEXT
+    );
+    CREATE TABLE IF NOT EXISTS organization_program_links (
+      id TEXT PRIMARY KEY,
+      organization_id TEXT NOT NULL,
+      program_id TEXT,
+      listing_type TEXT NOT NULL,
+      title TEXT NOT NULL,
+      intake_model TEXT,
+      service_summary TEXT,
+      eligibility_summary TEXT,
+      source_url TEXT,
+      source_type TEXT,
+      data_origin TEXT,
+      verification_status TEXT,
+      last_verified_date TEXT,
+      last_scraped_at TEXT,
+      confidence_score REAL
+    );
+    CREATE TABLE IF NOT EXISTS service_locations (
+      id TEXT PRIMARY KEY,
+      organization_id TEXT NOT NULL,
+      location_name TEXT NOT NULL,
+      location_type TEXT NOT NULL,
+      address TEXT,
+      city TEXT,
+      state_id TEXT,
+      postal_code TEXT,
+      county_id TEXT,
+      phone TEXT,
+      email TEXT,
+      website TEXT,
+      appointment_url TEXT,
+      hours_text TEXT,
+      source_url TEXT,
+      source_type TEXT,
+      data_origin TEXT,
+      verification_status TEXT,
+      last_verified_date TEXT,
+      last_scraped_at TEXT,
+      confidence_score REAL
+    );
+    CREATE TABLE IF NOT EXISTS office_locations (
+      id TEXT PRIMARY KEY,
+      organization_id TEXT NOT NULL,
+      office_name TEXT NOT NULL,
+      office_type TEXT NOT NULL,
+      address TEXT,
+      city TEXT,
+      state_id TEXT,
+      postal_code TEXT,
+      county_id TEXT,
+      intake_phone TEXT,
+      intake_email TEXT,
+      website TEXT,
+      hours_text TEXT,
+      source_url TEXT,
+      source_type TEXT,
+      data_origin TEXT,
+      verification_status TEXT,
+      last_verified_date TEXT,
+      last_scraped_at TEXT,
+      confidence_score REAL
+    );
+    CREATE TABLE IF NOT EXISTS virtual_service_areas (
+      id TEXT PRIMARY KEY,
+      organization_id TEXT NOT NULL,
+      program_link_id TEXT,
+      area_type TEXT NOT NULL,
+      area_name TEXT NOT NULL,
+      state_id TEXT,
+      coverage_notes TEXT,
+      intake_model TEXT,
+      source_url TEXT,
+      source_type TEXT,
+      data_origin TEXT,
+      verification_status TEXT,
+      last_verified_date TEXT,
+      last_scraped_at TEXT,
+      confidence_score REAL
+    );
+    CREATE TABLE IF NOT EXISTS virtual_service_area_counties (
+      virtual_service_area_id TEXT,
+      county_id TEXT,
+      PRIMARY KEY (virtual_service_area_id, county_id)
     );
   `);
 
@@ -2173,6 +2630,7 @@ export interface Selpa {
   source_type?: string | null;
   data_origin?: string | null;
   verification_status?: string | null;
+  last_verified_at?: string | null;
   last_verified_date?: string | null;
   last_scraped_at?: string | null;
   confidence_score?: number | null;
@@ -2191,6 +2649,7 @@ export interface CountyOffice {
   source_type?: string | null;
   data_origin?: string | null;
   verification_status?: string | null;
+  last_verified_at?: string | null;
   last_verified_date?: string | null;
   last_scraped_at?: string | null;
   confidence_score?: number | null;
@@ -2223,6 +2682,43 @@ export interface NonprofitOrganization {
   website: string;
   phone: string;
   focus_condition: string;
+  service_tags?: string | null;
+  serving_tags?: string | null;
+  availability_status?: string | null;
+  accepting_new_clients?: number | null;
+  waitlist_status?: string | null;
+  capacity_notes?: string | null;
+  funding_status?: string | null;
+  checked_at?: string | null;
+  source_name?: string | null;
+  source_last_updated?: string | null;
+  next_step_type?: string | null;
+  next_step_label?: string | null;
+  next_step_url?: string | null;
+  next_step_phone?: string | null;
+  next_step_email?: string | null;
+  next_step_instructions?: string | null;
+  requirements?: string | null;
+  application_url?: string | null;
+  referral_url?: string | null;
+  walk_in_available?: number | null;
+  appointment_required?: number | null;
+  languages?: string | null;
+  interpreter_available?: number | null;
+  asl_available?: number | null;
+  wheelchair_accessible?: number | null;
+  virtual_services?: number | null;
+  in_person_services?: number | null;
+  home_visits?: number | null;
+  transportation_help?: number | null;
+  accessibility_notes?: string | null;
+  manual_review_required?: number | null;
+  data_quality_notes?: string | null;
+  unsupported_claim_flags?: string | null;
+  claim_status?: string | null;
+  claimed_by?: string | null;
+  verified_affiliation?: number | null;
+  claim_email?: string | null;
   source_url?: string | null;
   source_type?: string | null;
   data_origin?: string | null;
@@ -2284,6 +2780,43 @@ export interface ResourceProvider {
   address: string;
   accepts_medi_cal: number;
   regional_center_vendor_ids: string | null;
+  service_tags?: string | null;
+  serving_tags?: string | null;
+  availability_status?: string | null;
+  accepting_new_clients?: number | null;
+  waitlist_status?: string | null;
+  capacity_notes?: string | null;
+  funding_status?: string | null;
+  checked_at?: string | null;
+  source_name?: string | null;
+  source_last_updated?: string | null;
+  next_step_type?: string | null;
+  next_step_label?: string | null;
+  next_step_url?: string | null;
+  next_step_phone?: string | null;
+  next_step_email?: string | null;
+  next_step_instructions?: string | null;
+  requirements?: string | null;
+  application_url?: string | null;
+  referral_url?: string | null;
+  walk_in_available?: number | null;
+  appointment_required?: number | null;
+  languages?: string | null;
+  interpreter_available?: number | null;
+  asl_available?: number | null;
+  wheelchair_accessible?: number | null;
+  virtual_services?: number | null;
+  in_person_services?: number | null;
+  home_visits?: number | null;
+  transportation_help?: number | null;
+  accessibility_notes?: string | null;
+  manual_review_required?: number | null;
+  data_quality_notes?: string | null;
+  unsupported_claim_flags?: string | null;
+  claim_status?: string | null;
+  claimed_by?: string | null;
+  verified_affiliation?: number | null;
+  claim_email?: string | null;
   source_url?: string | null;
   source_type?: string | null;
   data_origin?: string | null;
@@ -2368,6 +2901,42 @@ export interface IepAdvocate {
   regional_center_vendorized?: number;
   organization_affiliation?: string | null;
   description?: string | null;
+  service_tags?: string | null;
+  serving_tags?: string | null;
+  availability_status?: string | null;
+  accepting_new_clients?: number | null;
+  waitlist_status?: string | null;
+  capacity_notes?: string | null;
+  funding_status?: string | null;
+  checked_at?: string | null;
+  source_name?: string | null;
+  source_last_updated?: string | null;
+  next_step_type?: string | null;
+  next_step_label?: string | null;
+  next_step_url?: string | null;
+  next_step_phone?: string | null;
+  next_step_email?: string | null;
+  next_step_instructions?: string | null;
+  requirements?: string | null;
+  application_url?: string | null;
+  referral_url?: string | null;
+  walk_in_available?: number | null;
+  appointment_required?: number | null;
+  interpreter_available?: number | null;
+  asl_available?: number | null;
+  wheelchair_accessible?: number | null;
+  virtual_services?: number | null;
+  in_person_services?: number | null;
+  home_visits?: number | null;
+  transportation_help?: number | null;
+  accessibility_notes?: string | null;
+  manual_review_required?: number | null;
+  data_quality_notes?: string | null;
+  unsupported_claim_flags?: string | null;
+  claim_status?: string | null;
+  claimed_by?: string | null;
+  verified_affiliation?: number | null;
+  claim_email?: string | null;
   verification_status?: string | null;
   source_url?: string | null;
   source_type?: string | null;
@@ -3351,6 +3920,273 @@ export async function getLocalProviders(countyId: string): Promise<ResourceProvi
   }
 }
 
+export interface DirectoryFoundationSnapshot {
+  totals: {
+    providers: number;
+    nonprofits: number;
+    advocates: number;
+  };
+  structuredCoverage: {
+    availability: number;
+    nextSteps: number;
+    tags: number;
+    accessibility: number;
+    claimGroundwork: number;
+  };
+  trustFlags: {
+    manualReviewRequired: number;
+    unsupportedClaimsFlagged: number;
+    recordsMissingSourceUrl: number;
+    trustedRowsMissingAccessibility: number;
+  };
+  samples: {
+    providers: ResourceProvider[];
+    nonprofits: NonprofitOrganization[];
+    advocates: IepAdvocate[];
+  };
+}
+
+export async function getDirectoryFoundationSnapshot(): Promise<DirectoryFoundationSnapshot> {
+  try {
+    const providersAll = await navigatorDb.prepare(`
+      SELECT resource_providers.*, counties.state_id
+      FROM resource_providers
+      LEFT JOIN counties ON counties.id = resource_providers.county_id
+    `).all() as Array<ResourceProvider & { state_id?: string | null }>;
+    const nonprofitsAll = await navigatorDb.prepare(`
+      SELECT nonprofit_organizations.*, counties.state_id
+      FROM nonprofit_organizations
+      LEFT JOIN counties ON counties.id = nonprofit_organizations.county_id
+    `).all() as Array<NonprofitOrganization & { state_id?: string | null }>;
+    const advocatesAll = await navigatorDb.prepare('SELECT * FROM iep_advocates').all() as IepAdvocate[];
+
+    const summarize = (rows: Array<Record<string, any>>, languageField: 'languages' | 'languages_spoken' = 'languages') => {
+      return rows.reduce((acc, row) => {
+        const hasSourceUrl = typeof row.source_url === 'string' && row.source_url.trim().length > 0;
+        const trustedPublic = Boolean(
+          hasSourceUrl &&
+          row.verification_status &&
+          ['official_verified', 'verified', 'human_verified', 'source_listed'].includes(row.verification_status)
+        );
+        if (hasDirectoryAvailabilitySignal(row)) {
+          acc.availability += 1;
+        }
+        if (hasDirectoryNextStepSignal(row)) {
+          acc.nextSteps += 1;
+        }
+        if (row.service_tags || row.serving_tags) acc.tags += 1;
+        const hasAccessibility = hasDirectoryAccessibilitySignal({
+          ...row,
+          languages_spoken: languageField === 'languages_spoken' ? row[languageField] : row.languages_spoken,
+        });
+        if (hasAccessibility) {
+          acc.accessibility += 1;
+        }
+        if (trustedPublic && !hasAccessibility) acc.trustedRowsMissingAccessibility += 1;
+        if (hasDirectoryClaimGroundworkSignal(row)) acc.claimGroundwork += 1;
+        if (row.manual_review_required === 1) acc.manualReviewRequired += 1;
+        if (typeof row.unsupported_claim_flags === 'string' && row.unsupported_claim_flags.trim()) acc.unsupportedClaims += 1;
+        if (!hasSourceUrl) acc.missingSourceUrl += 1;
+        return acc;
+      }, {
+        availability: 0,
+        nextSteps: 0,
+        tags: 0,
+        accessibility: 0,
+        claimGroundwork: 0,
+        manualReviewRequired: 0,
+        unsupportedClaims: 0,
+        missingSourceUrl: 0,
+        trustedRowsMissingAccessibility: 0,
+      });
+    };
+
+    const providerSummary = summarize(providersAll);
+    const nonprofitSummary = summarize(nonprofitsAll);
+    const advocateSummary = summarize(advocatesAll, 'languages_spoken');
+
+    const isPublicSample = (row: { source_url?: string | null; verification_status?: string | null }) =>
+      Boolean(
+        row.source_url &&
+        row.source_url.trim() &&
+        row.verification_status &&
+        ['official_verified', 'verified', 'human_verified', 'source_listed'].includes(row.verification_status)
+      );
+
+    const getStructuredRichnessScore = (row: Record<string, any>, languageField: 'languages' | 'languages_spoken' = 'languages') => {
+      const coverage = getDirectoryFieldCoverage({
+        ...row,
+        languages_spoken: languageField === 'languages_spoken' ? row[languageField] : row.languages_spoken,
+      });
+
+      return [
+        coverage.hasAvailability,
+        coverage.hasNextStep,
+        coverage.hasTags,
+        coverage.hasAccessibility,
+        coverage.hasClaimGroundwork,
+      ].filter(Boolean).length;
+    };
+
+    const byFreshness = (a: { last_verified_date?: string | null; last_verified_at?: string | null; checked_at?: string | null; last_scraped_at?: string | null }, b: { last_verified_date?: string | null; last_verified_at?: string | null; checked_at?: string | null; last_scraped_at?: string | null }) => {
+      const aStamp = a.last_verified_date || a.last_verified_at || a.checked_at || a.last_scraped_at || '';
+      const bStamp = b.last_verified_date || b.last_verified_at || b.checked_at || b.last_scraped_at || '';
+      return bStamp.localeCompare(aStamp);
+    };
+
+    const byCoverageThenFreshness = (languageField: 'languages' | 'languages_spoken' = 'languages') => (a: Record<string, any>, b: Record<string, any>) => {
+      const scoreDiff = getStructuredRichnessScore(b, languageField) - getStructuredRichnessScore(a, languageField);
+      if (scoreDiff !== 0) return scoreDiff;
+      const accessibilityDiff =
+        Number(hasDirectoryAccessibilitySignal({
+          ...b,
+          languages_spoken: languageField === 'languages_spoken' ? b[languageField] : b.languages_spoken,
+        })) -
+        Number(hasDirectoryAccessibilitySignal({
+          ...a,
+          languages_spoken: languageField === 'languages_spoken' ? a[languageField] : a.languages_spoken,
+        }));
+      if (accessibilityDiff !== 0) return accessibilityDiff;
+      return byFreshness(a, b);
+    };
+
+    const getStateKey = (row: Record<string, any>) => {
+      if (typeof row.state_id === 'string' && row.state_id.trim()) {
+        return row.state_id.trim().toLowerCase();
+      }
+      if (typeof row.county_id === 'string' && row.county_id.includes('-')) {
+        const countySegments = row.county_id.toLowerCase().split('-').filter(Boolean);
+        const tail = countySegments[countySegments.length - 1];
+        if (tail && tail.length === 2) return tail;
+      }
+      if (typeof row.id === 'string') {
+        const segments = row.id.toLowerCase().split('-').filter(Boolean);
+        if (segments[0] && segments[0].length === 2) return segments[0];
+        if (segments[1] && segments[1].length === 2) return segments[1];
+      }
+      return null;
+    };
+
+    const getHostKey = (url?: string | null) => {
+      if (!url || !url.trim()) return null;
+      try {
+        return new URL(url).hostname.replace(/^www\./, '').toLowerCase();
+      } catch {
+        return null;
+      }
+    };
+
+    const getFamilyKey = (row: Record<string, any>) => {
+      const normalizedName = String(row.name || '')
+        .toLowerCase()
+        .replace(/[^a-z0-9\s]/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+
+      if (normalizedName.startsWith('the arc of ') || normalizedName.startsWith('arc of ') || normalizedName === 'the arc') {
+        return 'umbrella:the-arc';
+      }
+      if (normalizedName.startsWith('parent to parent') || normalizedName.startsWith('p2p')) {
+        return 'umbrella:parent-to-parent';
+      }
+      if (normalizedName.startsWith('disability rights ')) {
+        return 'umbrella:disability-rights';
+      }
+      if (normalizedName.startsWith('autism society')) {
+        return 'umbrella:autism-society';
+      }
+
+      const hostKey = getHostKey(row.source_url) || getHostKey(row.website);
+      if (hostKey) return hostKey;
+
+      const reducedName = normalizedName
+        .replace(/\b(the|of|for|and|center|services|support|special|education|disability|developmental|children|child|hospital)\b/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+
+      return reducedName.split(' ').slice(0, 3).join(' ') || String(row.id || '');
+    };
+
+    const selectDiverseSamples = <T extends Record<string, any>>(
+      rows: T[],
+      languageField: 'languages' | 'languages_spoken' = 'languages'
+    ): T[] => {
+      const sorted = [...rows].sort(byCoverageThenFreshness(languageField));
+      const selected: T[] = [];
+      const selectedIds = new Set<string>();
+
+      const familySeen = new Set<string>();
+      const stateSeen = new Set<string>();
+
+      const passes = [
+        (row: Record<string, any>) => {
+          const familyKey = getFamilyKey(row);
+          const stateKey = getStateKey(row);
+          return !familySeen.has(familyKey) && (!stateKey || !stateSeen.has(stateKey));
+        },
+        (row: Record<string, any>) => {
+          const familyKey = getFamilyKey(row);
+          return !familySeen.has(familyKey);
+        },
+        () => true,
+      ];
+
+      for (const allowRow of passes) {
+        for (const row of sorted) {
+          if (selected.length >= 3) break;
+          if (selectedIds.has(row.id) || !allowRow(row)) continue;
+          selected.push(row);
+          selectedIds.add(row.id);
+          familySeen.add(getFamilyKey(row));
+          const stateKey = getStateKey(row);
+          if (stateKey) stateSeen.add(stateKey);
+        }
+        if (selected.length >= 3) break;
+      }
+
+      return selected;
+    };
+
+    const providers = selectDiverseSamples(providersAll.filter(isPublicSample));
+    const nonprofits = selectDiverseSamples(nonprofitsAll.filter(isPublicSample));
+    const advocates = selectDiverseSamples(advocatesAll.filter(isPublicSample), 'languages_spoken');
+
+    return {
+      totals: {
+        providers: providersAll.length,
+        nonprofits: nonprofitsAll.length,
+        advocates: advocatesAll.length,
+      },
+      structuredCoverage: {
+        availability: Number(providerSummary.availability + nonprofitSummary.availability + advocateSummary.availability),
+        nextSteps: Number(providerSummary.nextSteps + nonprofitSummary.nextSteps + advocateSummary.nextSteps),
+        tags: Number((providerSummary.tags || 0) + (nonprofitSummary.tags || 0) + (advocateSummary.tags || 0)),
+        accessibility: Number(providerSummary.accessibility + nonprofitSummary.accessibility + advocateSummary.accessibility),
+        claimGroundwork: Number(providerSummary.claimGroundwork + nonprofitSummary.claimGroundwork + advocateSummary.claimGroundwork),
+      },
+      trustFlags: {
+        manualReviewRequired: Number(providerSummary.manualReviewRequired + nonprofitSummary.manualReviewRequired + advocateSummary.manualReviewRequired),
+        unsupportedClaimsFlagged: Number(providerSummary.unsupportedClaims + nonprofitSummary.unsupportedClaims + advocateSummary.unsupportedClaims),
+        recordsMissingSourceUrl: Number(providerSummary.missingSourceUrl + nonprofitSummary.missingSourceUrl + advocateSummary.missingSourceUrl),
+        trustedRowsMissingAccessibility: Number(providerSummary.trustedRowsMissingAccessibility + nonprofitSummary.trustedRowsMissingAccessibility + advocateSummary.trustedRowsMissingAccessibility),
+      },
+      samples: {
+        providers,
+        nonprofits,
+        advocates,
+      },
+    };
+  } catch (err) {
+    console.error('Failed to build directory foundation snapshot:', err);
+    return {
+      totals: { providers: 0, nonprofits: 0, advocates: 0 },
+      structuredCoverage: { availability: 0, nextSteps: 0, tags: 0, accessibility: 0, claimGroundwork: 0 },
+      trustFlags: { manualReviewRequired: 0, unsupportedClaimsFlagged: 0, recordsMissingSourceUrl: 0, trustedRowsMissingAccessibility: 0 },
+      samples: { providers: [], nonprofits: [], advocates: [] },
+    };
+  }
+}
+
 // ----------------------------------------------------
 // 7. Child Safety Logs & Parent Declarations Persistence
 // ----------------------------------------------------
@@ -4003,7 +4839,12 @@ export async function searchKnowledgeArticles(query: string): Promise<KnowledgeA
 // Helper sitemap fetch districts
 export async function getSchoolDistrictsForSitemap(): Promise<SchoolDistrict[]> {
   try {
-    return await navigatorDb.prepare('SELECT * FROM school_districts WHERE spec_ed_contact_phone IS NOT NULL OR inclusion_rate_pct IS NOT NULL').all() as SchoolDistrict[];
+    return await navigatorDb.prepare(`
+      SELECT *
+      FROM school_districts
+      WHERE (spec_ed_contact_phone IS NOT NULL AND TRIM(spec_ed_contact_phone) != '')
+         OR inclusion_rate_pct IS NOT NULL
+    `).all() as SchoolDistrict[];
   } catch {
     return [];
   }

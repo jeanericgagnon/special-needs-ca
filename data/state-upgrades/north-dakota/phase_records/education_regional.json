@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "source_url": "https://www.nd.gov/",
+    "confidence_score": 9.5,
+    "notes": "Official statewide North Dakota special education support entrypoint covering all counties.",
+    "suggested_target_id": "nd-ed-dpi-special-education",
+    "name": "North Dakota Department of Public Instruction Special Education",
+    "phone": "(701) 328-2277",
+    "agency_type": "state-special-education-support",
+    "counties_served": [
+      "adams-nd","barnes-nd","benson-nd","billings-nd","bottineau-nd","bowman-nd","burke-nd","burleigh-nd","cass-nd","cavalier-nd","dickey-nd","divide-nd","dunn-nd","eddy-nd","emmons-nd","foster-nd","golden-valley-nd","grand-forks-nd","grant-nd","griggs-nd","hettinger-nd","kidder-nd","lamoure-nd","logan-nd","mchenry-nd","mcintosh-nd","mckenzie-nd","mclean-nd","mercer-nd","morton-nd","mountrail-nd","nelson-nd","oliver-nd","pembina-nd","pierce-nd","ramsey-nd","ransom-nd","renville-nd","richland-nd","rolette-nd","sargent-nd","sheridan-nd","sioux-nd","slope-nd","stark-nd","steele-nd","stutsman-nd","towner-nd","traill-nd","walsh-nd","ward-nd","wells-nd","williams-nd"
+    ],
+    "website": "https://www.nd.gov/dpi/districtsschools/special-education",
+    "evidence_level": "source_listed",
+    "verification_status": "verified",
+    "data_origin": "scraped"
+  }
+]

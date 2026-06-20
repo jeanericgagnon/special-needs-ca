@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-06-18T01:49:38.095Z",
+  "mode": "apply",
+  "stateFilter": "mississippi",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 4,
+    "appliedStates": 0,
+    "filesChanged": 0,
+    "skippedByReason": {
+      "skipped_followup": 2,
+      "missing_source_row": 2
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "mississippi",
+      "sourceName": "Mississippi Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "mississippi",
+      "sourceName": "Mississippi HCBS Waivers Page",
+      "status": "skipped_missing_source_row",
+      "targetUrl": "https://www.dmh.ms.gov/hcbs"
+    },
+    {
+      "stateId": "mississippi",
+      "sourceName": "Mississippi Developmental Services Directory",
+      "status": "skipped_missing_source_row",
+      "targetUrl": "https://www.dmh.ms.gov/intellectual-developmental-disabilities"
+    },
+    {
+      "stateId": "mississippi",
+      "sourceName": "Mississippi Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

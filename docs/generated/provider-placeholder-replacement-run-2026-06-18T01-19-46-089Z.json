@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-06-18T01:19:46.091Z",
+  "mode": "apply",
+  "stateFilter": "pennsylvania",
+  "inputPath": "data/provider-placeholder-replacement-decisions.json",
+  "summary": {
+    "inputRows": 1,
+    "appliedStates": 1,
+    "appliedPlaceholderRows": 23,
+    "appliedReplacements": 3,
+    "filesChanged": 1,
+    "skippedByReason": {}
+  },
+  "decisions": [
+    {
+      "stateId": "pennsylvania",
+      "placeholderSourceName": "PENNSYLVANIA Specialized Clinic Roster #1",
+      "status": "applied",
+      "placeholderRowCount": 23,
+      "replacementCount": 3,
+      "replacements": [
+        {
+          "source_name": "Children's Hospital of Philadelphia (CHOP) Developmental Pediatrics",
+          "source_url": "https://www.chop.edu/centers-programs/developmental-and-behavioral-pediatrics",
+          "domain": "chop.edu"
+        },
+        {
+          "source_name": "Children's Hospital of Philadelphia (CHOP) Specialty Care Center King of Prussia",
+          "source_url": "https://www.chop.edu/locations/chop-care-center-king-prussia",
+          "domain": "chop.edu"
+        },
+        {
+          "source_name": "UPMC Children's Hospital of Pittsburgh - Child Development Unit",
+          "source_url": "https://www.chp.edu/our-services/developmental-pediatrics",
+          "domain": "chp.edu"
+        }
+      ]
+    }
+  ]
+}

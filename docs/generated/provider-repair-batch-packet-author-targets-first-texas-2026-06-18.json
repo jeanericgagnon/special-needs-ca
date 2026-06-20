@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-06-18T06:24:18.409Z",
+  "generatedDate": "2026-06-18",
+  "packetKey": "author-targets-first-texas",
+  "selection": {
+    "readinessLane": "author-targets-first",
+    "stateId": "texas",
+    "limit": 5,
+    "selectionMode": "explicit_state_filter"
+  },
+  "sourceArtifacts": {
+    "providerFollowupRepairQueuePath": "docs/generated/provider-followup-repair-queue-2026-06-18.json",
+    "providerRepairExecutionBacklogPath": "docs/generated/provider-repair-execution-backlog-2026-06-18.json",
+    "providerSourcePackPlanPath": "docs/generated/provider-source-pack-plan-2026-06-18.json",
+    "sourceTargetsPath": ""
+  },
+  "summary": {
+    "selectedRows": 0,
+    "scopedLaneRows": 0,
+    "selectedStateIds": [],
+    "selectedHostnames": [],
+    "byActionClass": {},
+    "byReason": {}
+  },
+  "stateContext": null,
+  "selectedRows": [],
+  "recommendedCommands": [
+    "npm run audit:provider-repair-batch-packet -- --lane=author-targets-first --state=texas --limit=5",
+    "npm run audit:provider-followup-repair-queue",
+    "npm run audit:provider-repair-execution-backlog",
+    "npm run audit:provider-source-pack"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-06-18T02:15:42.222Z",
+  "mode": "apply",
+  "stateFilter": "wyoming",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 4,
+    "appliedStates": 2,
+    "filesChanged": 1,
+    "skippedByReason": {
+      "skipped_followup": 2
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "wyoming",
+      "sourceName": "Wyoming Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "wyoming",
+      "sourceName": "Wyoming HCBS Waivers Page",
+      "status": "applied",
+      "targetUrl": "https://health.wyo.gov/behavioralhealth/dd/hcbs"
+    },
+    {
+      "stateId": "wyoming",
+      "sourceName": "Wyoming Developmental Services Directory",
+      "status": "applied",
+      "targetUrl": "https://health.wyo.gov/behavioralhealth/dd"
+    },
+    {
+      "stateId": "wyoming",
+      "sourceName": "Wyoming Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

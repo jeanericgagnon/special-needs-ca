@@ -1,0 +1,190 @@
+{
+  "generatedAt": "2026-06-18T19:07:23.700Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "mississippi",
+  "stateName": "Mississippi",
+  "sourcePacketPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-mississippi-2026-06-18.json",
+  "sourceTargetsPath": "data/source_targets/mississippi.json",
+  "instructions": {
+    "summary": "Fill only the missing first-party provider targets needed for this state. Do not broaden beyond provider_directory authoring.",
+    "completionRule": "A candidate row is ready only when sourceName, sourceUrl, domain, and reviewedBy are filled."
+  },
+  "summary": {
+    "neededConcreteTargets": 3,
+    "currentConcreteProviderTargetCount": 0,
+    "existingProviderTargetCount": 4,
+    "candidateSlotCount": 3,
+    "readyCandidateCount": 3,
+    "unresolvedCandidateCount": 0
+  },
+  "existingProviderTargets": [
+    {
+      "sourceName": "Mississippi Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for Mississippi."
+    },
+    {
+      "sourceName": "Children's of Mississippi",
+      "sourceUrl": "https://www.umc.edu/childrens",
+      "domain": "umc.edu",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official University of Mississippi Medical Center pediatric hospital source for statewide children's specialty care."
+    },
+    {
+      "sourceName": "Blair E. Batson Hospital for Children",
+      "sourceUrl": "https://www.umc.edu/Healthcare/Childrens-Of-Mississippi/Blair-E-Batson-Hospital-for-Children.html",
+      "domain": "umc.edu",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Batson hospital page within UMMC describing Mississippi's flagship pediatric hospital and clinical access."
+    },
+    {
+      "sourceName": "University of Mississippi Medical Center Department of Pediatrics",
+      "sourceUrl": "https://www.umc.edu/som/Departments%20and%20Offices/SOM%20Departments/Pediatrics",
+      "domain": "umc.edu",
+      "crawlMethod": "static_fetch",
+      "organizationType": "university_clinic",
+      "notes": "Official UMMC pediatrics department source for pediatric specialty services, faculty clinics, and hospital-linked care."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Mississippi County Metadata",
+      "sourceUrl": "https://www.mississippi.gov",
+      "domain": "mississippi.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Mississippi Medicaid Portal",
+      "sourceUrl": "https://dhhs.mississippi.gov",
+      "domain": "dhhs.mississippi.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Mississippi Department of Mental Health",
+      "sourceUrl": "https://www.dmh.ms.gov/intellectual-developmental-disabilities",
+      "domain": "dmh.ms.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Mississippi HCBS Waivers",
+      "sourceUrl": "https://www.dmh.ms.gov/hcbs",
+      "domain": "dmh.ms.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Mississippi Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.mississippi.gov/earlyintervention",
+      "domain": "dhhs.mississippi.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Mississippi Department of Education Special Ed",
+      "sourceUrl": "https://education.mississippi.gov",
+      "domain": "education.mississippi.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Mississippi Regional Special Education Support",
+      "sourceUrl": "https://education.mississippi.gov/regional",
+      "domain": "education.mississippi.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Mississippi Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Mississippi",
+      "sourceUrl": "https://www.thearcmississippi.org",
+      "domain": "thearcmississippi.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Mississippi Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.mississippi.gov/forms",
+      "domain": "dhhs.mississippi.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Mississippi Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.mississippi.gov/rehab",
+      "domain": "dhhs.mississippi.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Mississippi Secretary of State Business Registry",
+      "sourceUrl": "https://www.mississippi.gov/business",
+      "domain": "mississippi.gov"
+    }
+  ],
+  "candidateProviderTargets": [
+    {
+      "slotNumber": 1,
+      "stateId": "mississippi",
+      "stateCode": "MS",
+      "sourceName": "Children's of Mississippi",
+      "sourceUrl": "https://www.umc.edu/childrens/",
+      "domain": "umc.edu",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Children's hospital",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official University of Mississippi Medical Center pediatric hospital source for statewide children's specialty care.",
+      "reviewedBy": "codex"
+    },
+    {
+      "slotNumber": 2,
+      "stateId": "mississippi",
+      "stateCode": "MS",
+      "sourceName": "Blair E. Batson Hospital for Children",
+      "sourceUrl": "https://www.umc.edu/Healthcare/Childrens-Of-Mississippi/Blair-E-Batson-Hospital-for-Children.html",
+      "domain": "umc.edu",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Children's hospital",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official Batson hospital page within UMMC describing Mississippi's flagship pediatric hospital and clinical access.",
+      "reviewedBy": "codex"
+    },
+    {
+      "slotNumber": 3,
+      "stateId": "mississippi",
+      "stateCode": "MS",
+      "sourceName": "University of Mississippi Medical Center Department of Pediatrics",
+      "sourceUrl": "https://www.umc.edu/som/Departments%20and%20Offices/SOM%20Departments/Pediatrics/",
+      "domain": "umc.edu",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Academic pediatrics department",
+      "organizationType": "university_clinic",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official UMMC pediatrics department source for pediatric specialty services, faculty clinics, and hospital-linked care.",
+      "reviewedBy": "codex"
+    }
+  ]
+}

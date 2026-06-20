@@ -116,3 +116,24 @@ test.describe('County Page Detail E2E Tests (Mobile Viewport)', () => {
     }
   });
 });
+
+test.describe('County Index Search Analytics', () => {
+  test('state county search emits search, no-results, and dead-end events', async ({ page }) => {
+    await page.goto('/counties/california');
+
+    const searchInput = page.locator('input[placeholder*="Type county name"]');
+    await searchInput.fill('zzznomatchcounty');
+
+    await expect(page.locator('text=No counties match your search query')).toBeVisible();
+    await page.waitForTimeout(500);
+
+    const analyticsEvents = await page.evaluate(() => {
+      return (window as Window & { __ABLEFULL_DIRECTORY_ANALYTICS__?: Array<{ event: string; searchQuery?: string; resultCount?: number }> })
+        .__ABLEFULL_DIRECTORY_ANALYTICS__ || [];
+    });
+
+    expect(analyticsEvents.some((event) => event.event === 'directory_search' && event.searchQuery === 'zzznomatchcounty')).toBeTruthy();
+    expect(analyticsEvents.some((event) => event.event === 'directory_no_results' && event.resultCount === 0)).toBeTruthy();
+    expect(analyticsEvents.some((event) => event.event === 'directory_dead_end' && event.resultCount === 0)).toBeTruthy();
+  });
+});

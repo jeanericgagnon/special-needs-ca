@@ -3,12 +3,13 @@ import { getCountyDetails, getCounties, getStateByIdOrCode, getAllStates } from 
 import { MapPin, Phone, Landmark, Globe, ArrowLeft, BookOpen, ShieldCheck, Calculator } from 'lucide-react';
 import Link from 'next/link';
 import DirectoryReviews from '@/app/dashboard/components/DirectoryReviews';
+import DirectoryFoundationPanel from '@/app/components/directory-foundation-panel';
 import SeoSchema from '@/app/components/seo-schema';
 import { TrustBadge } from '@/app/counties/components/CorrectionFlow';
 import SourceFreshnessDisclosure from '@/app/components/SourceFreshnessDisclosure';
 import { getDynamicStateConfig } from '@/lib/stateConfigs';
-import { NON_CA_VERIFIED_COUNTIES } from '@/lib/verifiedCounties';
 import { getCountyMetadata, getCountyIntroCopy } from '@/lib/countySeoHelpers';
+import { getCountyTruthEligibility, isPublicDirectoryRecordEligible, isPublicRecordEligible } from '@/lib/publicTruth';
 
 function formatIntroCopy(text: string) {
   return text.split('\n').map((line, i) => {
@@ -54,7 +55,7 @@ export async function generateMetadata({ params }: Props) {
   const countyDetails = await getCountyDetails(slug);
   
   if (stateData && countyDetails && countyDetails.state_id === stateData.id) {
-    const isIndexable = stateData.id === 'california' || NON_CA_VERIFIED_COUNTIES.includes(countyDetails.id);
+    const truth = getCountyTruthEligibility(stateData.id, countyDetails);
     const seo = getCountyMetadata(stateData.id, stateData.name, stateData.code, countyDetails);
     
     return {
@@ -63,7 +64,7 @@ export async function generateMetadata({ params }: Props) {
       alternates: {
         canonical: `/counties/${stateData.id}/${countyDetails.id}`
       },
-      robots: isIndexable ? undefined : { index: false, follow: true }
+      robots: truth.indexSafe ? undefined : { index: false, follow: true }
     };
   }
 
@@ -97,13 +98,18 @@ export default async function CountyPage({ params }: Props) {
   const stateConfig = getDynamicStateConfig(stateData.id, stateData.name, stateData.code);
   const countiesList = (await getCounties(stateData.id)).map(c => ({ id: c.id, name: c.name }));
   const countyWage = countyDetails.ihss_wage_rate || 18.00;
+  const eligibleRegionalCenters = (countyDetails.regionalCenters || []).filter(isPublicRecordEligible);
+  const eligibleCountyOffices = (countyDetails.countyOffices || []).filter(isPublicRecordEligible);
+  const eligibleSchoolDistricts = (countyDetails.schoolDistricts || []).filter(isPublicRecordEligible);
+  const eligibleSelpas = (countyDetails.selpas || []).filter(isPublicRecordEligible);
+  const eligibleLocalOrganizations = (countyDetails.localOrganizations || []).filter(isPublicDirectoryRecordEligible);
 
   const countyName = countyDetails.name;
   const catchmentLabel = stateConfig.catchmentName;
   const educationLabel = stateConfig.educationAgencyLabel;
   const insuranceLabel = stateConfig.medicaidName;
   
-  const rcName = countyDetails.regionalCenters?.[0]?.name || `Local ${catchmentLabel}`;
+  const rcName = eligibleRegionalCenters[0]?.name || `Local ${catchmentLabel}`;
   
   const faqSchema = {
     '@context': 'https://schema.org',
@@ -192,9 +198,9 @@ export default async function CountyPage({ params }: Props) {
             <h2 style={{ fontSize: '1.3rem', fontWeight: 800, color: 'var(--text-main)', marginBottom: '1.25rem', borderBottom: '1px solid rgba(0,0,0,0.06)', paddingBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
               <Landmark color="var(--primary-color)" size={20} /> {catchmentLabel} Coverage
             </h2>
-            {countyDetails.regionalCenters && countyDetails.regionalCenters.length > 0 ? (
+            {eligibleRegionalCenters.length > 0 ? (
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-                {countyDetails.regionalCenters.map((rc) => (
+                {eligibleRegionalCenters.map((rc) => (
                   <div key={rc.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.9rem' }}>
                     <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--text-main)', margin: 0 }}>{rc.name}</h3>
                     <p style={{ color: 'var(--text-light)', margin: 0 }}><strong>Catchment Boundary:</strong> {rc.catchment_boundaries}</p>
@@ -255,15 +261,9 @@ export default async function CountyPage({ params }: Props) {
             <p style={{ fontSize: '0.9rem', color: 'var(--text-light)', marginBottom: '1.25rem', marginTop: '-0.5rem', lineHeight: '1.5' }}>
               Local administrative offices managing eligibility, applications, and intake support for {insuranceLabel} and county-level social services.
             </p>
-            {countyDetails.countyOffices && countyDetails.countyOffices.length > 0 ? (
+            {eligibleCountyOffices.length > 0 ? (
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-                {countyDetails.countyOffices.map((office) => {
-                  const isEmptyManualReview = office.verification_status === 'manual_review_required' &&
-                    !office.phone &&
-                    !office.email &&
-                    !office.website &&
-                    !office.address;
-                  if (isEmptyManualReview) return null;
+                {eligibleCountyOffices.map((office) => {
                   return (
                     <div key={office.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', fontSize: '0.9rem', borderBottom: '1px solid #f0f0f0', paddingBottom: '1rem' }}>
                       <h3 style={{ fontSize: '1.05rem', fontWeight: 700, color: 'var(--text-main)', margin: 0 }}>{office.office_name}</h3>
@@ -303,14 +303,9 @@ export default async function CountyPage({ params }: Props) {
             {/* School Districts */}
             <div style={{ marginBottom: '1.5rem' }}>
               <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '0.75rem' }}>Local School Districts</h3>
-              {countyDetails.schoolDistricts && countyDetails.schoolDistricts.length > 0 ? (
+              {eligibleSchoolDistricts.length > 0 ? (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                  {countyDetails.schoolDistricts.map((dist) => {
-                    const isEmptyManualReview = dist.verification_status === 'manual_review_required' &&
-                      !dist.spec_ed_contact_phone &&
-                      !dist.spec_ed_contact_email &&
-                      !dist.website;
-                    if (isEmptyManualReview) return null;
+                  {eligibleSchoolDistricts.map((dist) => {
                     return (
                       <div key={dist.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', background: '#fafafa', padding: '0.75rem 1rem', borderRadius: '8px', border: '1px solid #eee', fontSize: '0.85rem' }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem' }}>
@@ -341,9 +336,9 @@ export default async function CountyPage({ params }: Props) {
             {/* SELPAs / Education Boards */}
             <div style={{ marginBottom: '1.5rem' }}>
               <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '0.75rem' }}>{educationLabel}</h3>
-              {countyDetails.selpas && countyDetails.selpas.length > 0 ? (
+              {eligibleSelpas.length > 0 ? (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                  {countyDetails.selpas.map((selpa) => (
+                  {eligibleSelpas.map((selpa) => (
                     <div key={selpa.id} style={{ fontSize: '0.85rem', display: 'flex', flexDirection: 'column', gap: '0.4rem', borderBottom: '1px solid #f0f0f0', paddingBottom: '0.75rem' }}>
                       <strong style={{ color: 'var(--text-main)' }}>{selpa.name}</strong>
                       <span style={{ color: 'var(--text-light)' }}>Counties Served: {selpa.counties_served}</span>
@@ -371,40 +366,19 @@ export default async function CountyPage({ params }: Props) {
             {/* Local Nonprofits & Support Organizations */}
             <div>
               <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '0.75rem' }}>Nonprofit Support & Local Resources</h3>
-              {countyDetails.localOrganizations && countyDetails.localOrganizations.length > 0 ? (
+              {eligibleLocalOrganizations.length > 0 ? (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                  {countyDetails.localOrganizations.map((org) => {
-                    const isEmptyManualReview = org.verification_status === 'manual_review_required' &&
-                      !org.phone &&
-                      !org.website;
-                    if (isEmptyManualReview) return null;
-                    return (
-                      <div key={org.id} style={{ fontSize: '0.85rem', display: 'flex', flexDirection: 'column', gap: '0.4rem', padding: '0.75rem', background: '#fafafa', borderRadius: '8px', border: '1px solid #eee' }}>
-                        <strong style={{ color: 'var(--text-main)' }}>{org.name}</strong>
-                        {org.focus_condition && org.focus_condition !== 'any' && (
-                          <span style={{ fontSize: '0.75rem', color: 'var(--primary-color)', fontWeight: 600 }}>
-                            Focus: {org.focus_condition.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}
-                          </span>
-                        )}
-                        {org.phone && (
-                          <span><strong>Phone:</strong> <a href={`tel:${org.phone}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{org.phone}</a></span>
-                        )}
-                        {org.website && (
-                          <a href={org.website} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)', textDecoration: 'underline', marginTop: '0.1rem', display: 'inline-flex', alignItems: 'center', gap: '0.2rem' }}>
-                            <Globe size={12} /> Visit Support Site
-                          </a>
-                        )}
-                        <TrustBadge
-                          status={org.verification_status}
-                          lastVerifiedDate={org.last_verified_date}
-                          sourceUrl={org.source_url || org.website}
-                          entityId={org.id}
-                          entityName={org.name}
-                          entityType="nonprofit"
-                        />
-                      </div>
-                    );
-                  })}
+                  {eligibleLocalOrganizations.map((org) => (
+                    <DirectoryFoundationPanel
+                      key={org.id}
+                      entityType="nonprofit"
+                      heading="Support organization"
+                      record={org}
+                      pageType="county"
+                      stateId={stateData.id}
+                      countyId={countyDetails.id}
+                    />
+                  ))}
                 </div>
               ) : (
                 <p style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>No local support organizations listed in DB.</p>

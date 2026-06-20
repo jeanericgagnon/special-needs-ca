@@ -1,0 +1,28 @@
+{
+  "generatedAt": "2026-06-19T02:48:54.905Z",
+  "mode": "apply",
+  "stateFilter": null,
+  "inputPath": "docs/generated/provider-manual-review-queue-2026-06-19.json",
+  "dbPath": "ca_disability_navigator.db",
+  "summary": {
+    "inputRows": 1,
+    "appliedRows": 1,
+    "filesChanged": 2,
+    "appliedByBlocker": {
+      "county_equivalent_missing_from_repo": 1
+    },
+    "skippedByReason": {},
+    "appliedByReviewStatus": {
+      "blocked_county_equivalent_missing_from_repo": 1
+    }
+  },
+  "decisions": [
+    {
+      "rowId": 765,
+      "stateId": "virginia",
+      "status": "applied",
+      "reviewStatus": "blocked_county_equivalent_missing_from_repo",
+      "blockerKey": "county_equivalent_missing_from_repo"
+    }
+  ]
+}

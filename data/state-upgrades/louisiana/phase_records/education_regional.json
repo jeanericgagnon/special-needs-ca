@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "source_url": "https://www.louisianabelieves.com/academics/special-education",
+    "confidence_score": 9.5,
+    "notes": "Official Louisiana Department of Education special education page used as the truthful statewide education support layer while weak county and district placeholders are removed.",
+    "suggested_target_id": "la-ed-louisiana-believes-special-education",
+    "name": "Louisiana Department of Education Special Education",
+    "phone": "",
+    "counties_served": [
+      "ALL_LOUISIANA_COUNTIES"
+    ],
+    "physical_county": "east-baton-rouge-parish-la",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  }
+]

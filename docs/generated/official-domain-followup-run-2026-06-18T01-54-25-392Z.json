@@ -1,0 +1,65 @@
+{
+  "generatedAt": "2026-06-18T01:54:25.394Z",
+  "mode": "apply",
+  "stateFilter": "nevada",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 8,
+    "appliedStates": 0,
+    "filesChanged": 0,
+    "skippedByReason": {
+      "skipped_followup": 4,
+      "missing_source_row": 4
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "nevada",
+      "sourceName": "Nevada Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "nevada",
+      "sourceName": "Nevada HCBS Waivers Page",
+      "status": "skipped_missing_source_row",
+      "targetUrl": "https://adsd.nv.gov/hcbs"
+    },
+    {
+      "stateId": "nevada",
+      "sourceName": "Nevada Developmental Services Directory",
+      "status": "skipped_missing_source_row",
+      "targetUrl": "https://adsd.nv.gov/Programs/Intellectual/Intellectual"
+    },
+    {
+      "stateId": "nevada",
+      "sourceName": "Nevada Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "nevada",
+      "sourceName": "Nevada Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "nevada",
+      "sourceName": "Nevada HCBS Waivers Page",
+      "status": "skipped_missing_source_row",
+      "targetUrl": "https://adsd.nv.gov/hcbs"
+    },
+    {
+      "stateId": "nevada",
+      "sourceName": "Nevada Developmental Services Directory",
+      "status": "skipped_missing_source_row",
+      "targetUrl": "https://adsd.nv.gov/Programs/Intellectual/Intellectual"
+    },
+    {
+      "stateId": "nevada",
+      "sourceName": "Nevada Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

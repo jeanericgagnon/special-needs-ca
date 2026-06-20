@@ -1,0 +1,35 @@
+{
+  "generatedAt": "2026-06-18T01:11:08.507Z",
+  "mode": "apply",
+  "stateFilter": "georgia",
+  "inputPath": "data/provider-placeholder-replacement-decisions.json",
+  "summary": {
+    "inputRows": 1,
+    "appliedStates": 1,
+    "appliedPlaceholderRows": 21,
+    "appliedReplacements": 2,
+    "filesChanged": 1,
+    "skippedByReason": {}
+  },
+  "decisions": [
+    {
+      "stateId": "georgia",
+      "placeholderSourceName": "GEORGIA Specialized Clinic Roster #1",
+      "status": "applied",
+      "placeholderRowCount": 21,
+      "replacementCount": 2,
+      "replacements": [
+        {
+          "source_name": "CHOA Marcus Autism Center",
+          "source_url": "https://www.marcus.org/",
+          "domain": "marcus.org"
+        },
+        {
+          "source_name": "Marcus Autism Center Contact Us",
+          "source_url": "https://www.marcus.org/contact-us",
+          "domain": "marcus.org"
+        }
+      ]
+    }
+  ]
+}

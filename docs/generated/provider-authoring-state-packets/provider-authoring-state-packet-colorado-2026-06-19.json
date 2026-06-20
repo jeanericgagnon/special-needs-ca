@@ -1,0 +1,127 @@
+{
+  "generatedAt": "2026-06-19T18:22:13.858Z",
+  "generatedDate": "2026-06-19",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+  "stateId": "colorado",
+  "stateName": "Colorado",
+  "executionPriority": 6,
+  "sourceTargetsPath": "data/source_targets/colorado.json",
+  "ledgerStatus": "complete",
+  "ledgerNote": "added-one-concrete-first-party-provider-target",
+  "publicSafeProviders": 2,
+  "totalProviderRows": 2,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 3,
+  "placeholderProviderTargetCount": 0,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 0,
+  "neededLiveProviderRows": 1,
+  "authoringGapClass": "needs_refresh_or_deeper_targets",
+  "nextAction": "Refresh Colorado provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+  "providerTargets": [
+    {
+      "sourceName": "Children's Hospital Colorado",
+      "sourceUrl": "https://www.childrenscolorado.org",
+      "domain": "childrenscolorado.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Concrete first-party pediatric hospital target for Colorado provider buildout."
+    },
+    {
+      "sourceName": "JFK Partners",
+      "sourceUrl": "https://medschool.cuanschutz.edu/jfk-partners",
+      "domain": "medschool.cuanschutz.edu",
+      "crawlMethod": "static_fetch",
+      "organizationType": "university_clinic",
+      "notes": "Concrete first-party university developmental disabilities clinic target for Colorado."
+    },
+    {
+      "sourceName": "Denver Health",
+      "sourceUrl": "https://www.denverhealth.org/",
+      "domain": "denverhealth.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Denver Health first-party health-system target to deepen Colorado provider coverage with a major academic public hospital source."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Colorado County Metadata",
+      "sourceUrl": "https://www.colorado.gov",
+      "domain": "colorado.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Colorado Medicaid Portal",
+      "sourceUrl": "https://dhhs.colorado.gov",
+      "domain": "dhhs.colorado.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Colorado Division for Developmental Disabilities",
+      "sourceUrl": "https://hcpf.colorado.gov/developmental-disabilities",
+      "domain": "hcpf.colorado.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Colorado HCBS Waivers",
+      "sourceUrl": "https://hcpf.colorado.gov/hcbs",
+      "domain": "hcpf.colorado.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Colorado Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.colorado.gov/earlyintervention",
+      "domain": "dhhs.colorado.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Colorado Department of Education Special Ed",
+      "sourceUrl": "https://education.colorado.gov",
+      "domain": "education.colorado.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Colorado Regional Special Education Support",
+      "sourceUrl": "https://education.colorado.gov/regional",
+      "domain": "education.colorado.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Colorado Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Colorado",
+      "sourceUrl": "https://www.thearccolorado.org",
+      "domain": "thearccolorado.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Colorado Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.colorado.gov/forms",
+      "domain": "dhhs.colorado.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Colorado Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.colorado.gov/rehab",
+      "domain": "dhhs.colorado.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Colorado Secretary of State Business Registry",
+      "sourceUrl": "https://www.colorado.gov/business",
+      "domain": "colorado.gov"
+    }
+  ]
+}

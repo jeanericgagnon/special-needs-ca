@@ -1,0 +1,166 @@
+{
+  "generatedAt": "2026-06-18T18:52:00.404Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "hawaii",
+  "stateName": "Hawaii",
+  "sourcePacketPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-hawaii-2026-06-18.json",
+  "sourceTargetsPath": "data/source_targets/hawaii.json",
+  "instructions": {
+    "summary": "Fill only the missing first-party provider targets needed for this state. Do not broaden beyond provider_directory authoring.",
+    "completionRule": "A candidate row is ready only when sourceName, sourceUrl, domain, and reviewedBy are filled."
+  },
+  "summary": {
+    "neededConcreteTargets": 3,
+    "currentConcreteProviderTargetCount": 0,
+    "existingProviderTargetCount": 1,
+    "candidateSlotCount": 3,
+    "readyCandidateCount": 0,
+    "unresolvedCandidateCount": 3
+  },
+  "existingProviderTargets": [
+    {
+      "sourceName": "Hawaii Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for Hawaii."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Hawaii County Metadata",
+      "sourceUrl": "https://www.hawaii.gov",
+      "domain": "hawaii.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Hawaii Medicaid Portal",
+      "sourceUrl": "https://dhhs.hawaii.gov",
+      "domain": "dhhs.hawaii.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Hawaii Developmental Disabilities Division",
+      "sourceUrl": "https://health.hawaii.gov/ddd",
+      "domain": "health.hawaii.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Hawaii HCBS Waivers",
+      "sourceUrl": "https://health.hawaii.gov/ddd/hcbs",
+      "domain": "health.hawaii.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Hawaii Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.hawaii.gov/earlyintervention",
+      "domain": "dhhs.hawaii.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Hawaii Department of Education Special Ed",
+      "sourceUrl": "https://education.hawaii.gov",
+      "domain": "education.hawaii.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Hawaii Regional Special Education Support",
+      "sourceUrl": "https://education.hawaii.gov/regional",
+      "domain": "education.hawaii.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Hawaii Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Hawaii",
+      "sourceUrl": "https://www.thearchawaii.org",
+      "domain": "thearchawaii.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Hawaii Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.hawaii.gov/forms",
+      "domain": "dhhs.hawaii.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Hawaii Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.hawaii.gov/rehab",
+      "domain": "dhhs.hawaii.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Hawaii Secretary of State Business Registry",
+      "sourceUrl": "https://www.hawaii.gov/business",
+      "domain": "hawaii.gov"
+    }
+  ],
+  "candidateProviderTargets": [
+    {
+      "slotNumber": 1,
+      "stateId": "hawaii",
+      "stateCode": "HI",
+      "sourceName": "Kapiolani Medical Center for Women & Children",
+      "sourceUrl": "https://www.hawaiipacifichealth.org/kapiolani/",
+      "domain": "hawaiipacifichealth.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Children's hospital",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official Hawaii Pacific Health pediatric hospital target for Hawaii provider coverage.",
+      "reviewedBy": "codex"
+    },
+    {
+      "slotNumber": 2,
+      "stateId": "hawaii",
+      "stateCode": "HI",
+      "sourceName": "Shriners Children's Hawaiʻi",
+      "sourceUrl": "https://www.shrinerschildrens.org/en/locations/hawaii",
+      "domain": "shrinerschildrens.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Specialty pediatric hospital",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official Shriners Children's Hawaii specialty pediatric care location with address and appointment contact on the first-party page.",
+      "reviewedBy": "codex"
+    },
+    {
+      "slotNumber": 3,
+      "stateId": "hawaii",
+      "stateCode": "HI",
+      "sourceName": "University of Hawaiʻi John A. Burns School of Medicine Department of Pediatrics",
+      "sourceUrl": "https://www.hawaii.edu/medicine/pediatrics/",
+      "domain": "hawaii.edu",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "University pediatrics department",
+      "organizationType": "university_clinic",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official University of Hawaii pediatrics department source tied to state pediatric training and partner clinical network.",
+      "reviewedBy": "codex"
+    }
+  ]
+}

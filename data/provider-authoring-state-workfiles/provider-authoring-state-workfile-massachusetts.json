@@ -1,0 +1,182 @@
+{
+  "generatedAt": "2026-06-18T19:04:22.142Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "massachusetts",
+  "stateName": "Massachusetts",
+  "sourcePacketPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-massachusetts-2026-06-18.json",
+  "sourceTargetsPath": "data/source_targets/massachusetts.json",
+  "instructions": {
+    "summary": "Fill only the missing first-party provider targets needed for this state. Do not broaden beyond provider_directory authoring.",
+    "completionRule": "A candidate row is ready only when sourceName, sourceUrl, domain, and reviewedBy are filled."
+  },
+  "summary": {
+    "neededConcreteTargets": 3,
+    "currentConcreteProviderTargetCount": 0,
+    "existingProviderTargetCount": 3,
+    "candidateSlotCount": 3,
+    "readyCandidateCount": 3,
+    "unresolvedCandidateCount": 0
+  },
+  "existingProviderTargets": [
+    {
+      "sourceName": "Boston Children's Hospital",
+      "sourceUrl": "https://www.childrenshospital.org/",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Boston Children's Hospital first-party pediatric hospital target for statewide specialty and referral coverage."
+    },
+    {
+      "sourceName": "Mass General Brigham for Children",
+      "sourceUrl": "https://www.massgeneral.org/children",
+      "domain": "massgeneral.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Mass General Brigham for Children page with pediatric services, hospital address, and referral access."
+    },
+    {
+      "sourceName": "UMass Memorial Children's Medical Center",
+      "sourceUrl": "https://www.ummhealth.org/umass-memorial-childrens-medical-center",
+      "domain": "ummhealth.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official UMass Memorial children's medical center target for central Massachusetts pediatric hospital coverage."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Massachusetts County Metadata",
+      "sourceUrl": "https://www.massachusetts.gov",
+      "domain": "massachusetts.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Massachusetts Medicaid Portal",
+      "sourceUrl": "https://dhhs.massachusetts.gov",
+      "domain": "dhhs.massachusetts.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Massachusetts Department of Developmental Services",
+      "sourceUrl": "https://www.mass.gov/dds",
+      "domain": "mass.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Massachusetts HCBS Waivers",
+      "sourceUrl": "https://www.mass.gov/dds/hcbs",
+      "domain": "mass.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Massachusetts Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.massachusetts.gov/earlyintervention",
+      "domain": "dhhs.massachusetts.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Massachusetts Department of Education Special Ed",
+      "sourceUrl": "https://education.massachusetts.gov",
+      "domain": "education.massachusetts.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Massachusetts Regional Special Education Support",
+      "sourceUrl": "https://education.massachusetts.gov/regional",
+      "domain": "education.massachusetts.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Massachusetts Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Massachusetts",
+      "sourceUrl": "https://www.thearcmassachusetts.org",
+      "domain": "thearcmassachusetts.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Massachusetts Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.massachusetts.gov/forms",
+      "domain": "dhhs.massachusetts.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Massachusetts Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.massachusetts.gov/rehab",
+      "domain": "dhhs.massachusetts.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Massachusetts Secretary of State Business Registry",
+      "sourceUrl": "https://www.massachusetts.gov/business",
+      "domain": "massachusetts.gov"
+    }
+  ],
+  "candidateProviderTargets": [
+    {
+      "slotNumber": 1,
+      "stateId": "massachusetts",
+      "stateCode": "MA",
+      "sourceName": "Boston Children's Hospital",
+      "sourceUrl": "https://www.childrenshospital.org/",
+      "domain": "childrenshospital.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Children's hospital",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official Boston Children's Hospital first-party pediatric hospital target for statewide specialty and referral coverage.",
+      "reviewedBy": "codex"
+    },
+    {
+      "slotNumber": 2,
+      "stateId": "massachusetts",
+      "stateCode": "MA",
+      "sourceName": "Mass General Brigham for Children",
+      "sourceUrl": "https://www.massgeneral.org/children",
+      "domain": "massgeneral.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Children's hospital",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official Mass General Brigham for Children page with pediatric services, hospital address, and referral access.",
+      "reviewedBy": "codex"
+    },
+    {
+      "slotNumber": 3,
+      "stateId": "massachusetts",
+      "stateCode": "MA",
+      "sourceName": "UMass Memorial Children's Medical Center",
+      "sourceUrl": "https://www.ummhealth.org/umass-memorial-childrens-medical-center",
+      "domain": "ummhealth.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Children's medical center",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official UMass Memorial children's medical center target for central Massachusetts pediatric hospital coverage.",
+      "reviewedBy": "codex"
+    }
+  ]
+}

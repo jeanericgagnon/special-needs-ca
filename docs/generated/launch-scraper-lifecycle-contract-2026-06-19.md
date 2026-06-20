@@ -1,0 +1,429 @@
+# Launch Scraper Lifecycle Contract
+
+Generated: 2026-06-19T23:21:11.193Z
+
+Canonical lifecycle and state-machine contract for launch scraper families so queue entry, fetch, followups, parse, validate, and stage transitions are explicit.
+
+## Resume Safety Guarantees
+
+- Every stage writes its artifacts inside a single runId directory.
+- Downstream stages discover the latest runId by disk or accept an explicit --run-id.
+- Parse waits for followup-selected inputs to exist before proceeding.
+- Validate waits for parsed root or family records to exist before proceeding.
+- Stage waits for validated root or accepted records to exist before proceeding.
+- Dry-run staging still writes summary artifacts even when accepted input is empty.
+
+## dd_routing
+
+- startQueueClass: ready_target_scrape
+- recommendedRunMode: full_lane_when_successful
+- lifecycleStages:
+  - queue_entry
+    - requiredClass: ready_target_scrape
+    - proceedWhen: family has exact ready targets in ready_target_scrape
+    - stopWhen: ready lane is exhausted or stopRule fires
+  - fetch
+    - allowed: true
+    - proceedWhen: run writes required fetch artifacts: manifest.json, summary.json, results.csv, report.md, pages/
+    - stopWhen: Stop the family wave when any stop condition appears: ready_lane_exhausted, repeated_blocked_pattern, repair_needed_before_more_fetches.
+  - followups
+    - allowed: true
+    - proceedWhen: followup summary classifies results into parse_ready_high_signal, parse_ready_suspect, retryable, blocked, or source_repair
+    - stopWhen: blocked/source_repair dominates or no parse-ready rows remain
+  - parse
+    - allowed: true
+    - proceedWhen: parse_ready_high_signal rows exist for the family
+    - stopWhen: no parse-ready rows for family or parser emits only schema-error/empty output
+  - validate
+    - allowed: true
+    - proceedWhen: parsed records exist for the family and validator can apply family acceptance gates
+    - stopWhen: accepted count is zero or rejection pattern implies author_first/repair_first/defer_blocked_source
+  - stage
+    - allowed: true
+    - proceedWhen: accepted validated rows exist and the family has a supported staging target
+    - stopWhen: no accepted rows remain or family target is unsupported for staging
+  - queue_refresh
+    - allowed: true
+    - proceedWhen: family lane cycle ends and refreshed queue truth is needed
+    - stopWhen: updated queue class and blockers are written to disk
+- fallbackTransitions:
+  - ifNoReadyTargets: ready_target_scrape
+  - ifRepeatedBrokenSources: repair_first
+  - ifRepeatedBlockedSources: defer_blocked_source
+  - ifNeedsOperatorDecision: manual_review
+  - ifQuarantined: do_not_scrape_quarantined
+- requiredArtifactsByStage:
+  - fetch: manifest.json, summary.json, results.csv, report.md, pages/
+  - followups: followups/parse-ready.json, followups/parse-ready-high-signal.json, followups/retryable-failures.json, followups/blocked-failures.json, followups/source-repair.json, followups/followup-summary.json
+  - parse: parsed/dd_routing/records.ndjson, parsed/dd_routing/summary.json, parsed/dd_routing/schema-errors.json
+  - validate: validated/dd_routing/accepted.ndjson, validated/dd_routing/rejected.ndjson, validated/dd_routing/rejection-reasons.json
+  - stage: staged/dd_routing/promotion-candidates.ndjson, staged/dd_routing/unsupported-candidates.ndjson, staged/dd_routing/promotion-summary.json
+
+## programs_benefits
+
+- startQueueClass: ready_target_scrape
+- recommendedRunMode: fetch_only_first
+- lifecycleStages:
+  - queue_entry
+    - requiredClass: ready_target_scrape
+    - proceedWhen: family has exact ready targets in ready_target_scrape
+    - stopWhen: ready lane is exhausted or stopRule fires
+  - fetch
+    - allowed: true
+    - proceedWhen: run writes required fetch artifacts: manifest.json, summary.json, results.csv, report.md, pages/
+    - stopWhen: Stop the family wave when any stop condition appears: ready_lane_exhausted, generic_program_pages_dominate.
+  - followups
+    - allowed: true
+    - proceedWhen: followup summary classifies results into parse_ready_high_signal, parse_ready_suspect, retryable, blocked, or source_repair
+    - stopWhen: blocked/source_repair dominates or no parse-ready rows remain
+  - parse
+    - allowed: true
+    - proceedWhen: parse_ready_high_signal rows exist for the family
+    - stopWhen: no parse-ready rows for family or parser emits only schema-error/empty output
+  - validate
+    - allowed: true
+    - proceedWhen: parsed records exist for the family and validator can apply family acceptance gates
+    - stopWhen: accepted count is zero or rejection pattern implies author_first/repair_first/defer_blocked_source
+  - stage
+    - allowed: true
+    - proceedWhen: accepted validated rows exist and the family has a supported staging target
+    - stopWhen: no accepted rows remain or family target is unsupported for staging
+  - queue_refresh
+    - allowed: true
+    - proceedWhen: family lane cycle ends and refreshed queue truth is needed
+    - stopWhen: updated queue class and blockers are written to disk
+- fallbackTransitions:
+  - ifNoReadyTargets: promotion_only
+  - ifRepeatedBrokenSources: repair_first
+  - ifRepeatedBlockedSources: defer_blocked_source
+  - ifNeedsOperatorDecision: manual_review
+  - ifQuarantined: do_not_scrape_quarantined
+- requiredArtifactsByStage:
+  - fetch: manifest.json, summary.json, results.csv, report.md, pages/
+  - followups: followups/parse-ready.json, followups/parse-ready-high-signal.json, followups/retryable-failures.json, followups/blocked-failures.json, followups/source-repair.json, followups/followup-summary.json
+  - parse: parsed/programs_benefits/records.ndjson, parsed/programs_benefits/summary.json, parsed/programs_benefits/schema-errors.json
+  - validate: validated/programs_benefits/accepted.ndjson, validated/programs_benefits/rejected.ndjson, validated/programs_benefits/rejection-reasons.json
+  - stage: staged/programs_benefits/promotion-candidates.ndjson, staged/programs_benefits/unsupported-candidates.ndjson, staged/programs_benefits/promotion-summary.json
+
+## waivers
+
+- startQueueClass: ready_target_scrape
+- recommendedRunMode: full_lane_when_successful
+- lifecycleStages:
+  - queue_entry
+    - requiredClass: ready_target_scrape
+    - proceedWhen: family has exact ready targets in ready_target_scrape
+    - stopWhen: ready lane is exhausted or stopRule fires
+  - fetch
+    - allowed: true
+    - proceedWhen: run writes required fetch artifacts: manifest.json, summary.json, results.csv, report.md, pages/
+    - stopWhen: Stop the family wave when any stop condition appears: ready_lane_exhausted, needs_repair_replacements.
+  - followups
+    - allowed: true
+    - proceedWhen: followup summary classifies results into parse_ready_high_signal, parse_ready_suspect, retryable, blocked, or source_repair
+    - stopWhen: blocked/source_repair dominates or no parse-ready rows remain
+  - parse
+    - allowed: true
+    - proceedWhen: parse_ready_high_signal rows exist for the family
+    - stopWhen: no parse-ready rows for family or parser emits only schema-error/empty output
+  - validate
+    - allowed: true
+    - proceedWhen: parsed records exist for the family and validator can apply family acceptance gates
+    - stopWhen: accepted count is zero or rejection pattern implies author_first/repair_first/defer_blocked_source
+  - stage
+    - allowed: true
+    - proceedWhen: accepted validated rows exist and the family has a supported staging target
+    - stopWhen: no accepted rows remain or family target is unsupported for staging
+  - queue_refresh
+    - allowed: true
+    - proceedWhen: family lane cycle ends and refreshed queue truth is needed
+    - stopWhen: updated queue class and blockers are written to disk
+- fallbackTransitions:
+  - ifNoReadyTargets: author_first
+  - ifRepeatedBrokenSources: repair_first
+  - ifRepeatedBlockedSources: defer_blocked_source
+  - ifNeedsOperatorDecision: manual_review
+  - ifQuarantined: do_not_scrape_quarantined
+- requiredArtifactsByStage:
+  - fetch: manifest.json, summary.json, results.csv, report.md, pages/
+  - followups: followups/parse-ready.json, followups/parse-ready-high-signal.json, followups/retryable-failures.json, followups/blocked-failures.json, followups/source-repair.json, followups/followup-summary.json
+  - parse: parsed/waivers/records.ndjson, parsed/waivers/summary.json, parsed/waivers/schema-errors.json
+  - validate: validated/waivers/accepted.ndjson, validated/waivers/rejected.ndjson, validated/waivers/rejection-reasons.json
+  - stage: staged/waivers/promotion-candidates.ndjson, staged/waivers/unsupported-candidates.ndjson, staged/waivers/promotion-summary.json
+
+## forms_guides
+
+- startQueueClass: ready_target_scrape
+- recommendedRunMode: fetch_only_first
+- lifecycleStages:
+  - queue_entry
+    - requiredClass: ready_target_scrape
+    - proceedWhen: family has exact ready targets in ready_target_scrape
+    - stopWhen: ready lane is exhausted or stopRule fires
+  - fetch
+    - allowed: true
+    - proceedWhen: run writes required fetch artifacts: manifest.json, summary.json, results.csv, report.md, pages/
+    - stopWhen: Stop the family wave when any stop condition appears: ready_lane_exhausted, pdf_batch_failure_spike.
+  - followups
+    - allowed: true
+    - proceedWhen: followup summary classifies results into parse_ready_high_signal, parse_ready_suspect, retryable, blocked, or source_repair
+    - stopWhen: blocked/source_repair dominates or no parse-ready rows remain
+  - parse
+    - allowed: true
+    - proceedWhen: parse_ready_high_signal rows exist for the family
+    - stopWhen: no parse-ready rows for family or parser emits only schema-error/empty output
+  - validate
+    - allowed: true
+    - proceedWhen: parsed records exist for the family and validator can apply family acceptance gates
+    - stopWhen: accepted count is zero or rejection pattern implies author_first/repair_first/defer_blocked_source
+  - stage
+    - allowed: true
+    - proceedWhen: accepted validated rows exist and the family has a supported staging target
+    - stopWhen: no accepted rows remain or family target is unsupported for staging
+  - queue_refresh
+    - allowed: true
+    - proceedWhen: family lane cycle ends and refreshed queue truth is needed
+    - stopWhen: updated queue class and blockers are written to disk
+- fallbackTransitions:
+  - ifNoReadyTargets: author_first
+  - ifRepeatedBrokenSources: repair_first
+  - ifRepeatedBlockedSources: defer_blocked_source
+  - ifNeedsOperatorDecision: manual_review
+  - ifQuarantined: do_not_scrape_quarantined
+- requiredArtifactsByStage:
+  - fetch: manifest.json, summary.json, results.csv, report.md, pages/
+  - followups: followups/parse-ready.json, followups/parse-ready-high-signal.json, followups/retryable-failures.json, followups/blocked-failures.json, followups/source-repair.json, followups/followup-summary.json
+  - parse: parsed/forms_guides/records.ndjson, parsed/forms_guides/summary.json, parsed/forms_guides/schema-errors.json
+  - validate: validated/forms_guides/accepted.ndjson, validated/forms_guides/rejected.ndjson, validated/forms_guides/rejection-reasons.json
+  - stage: staged/forms_guides/promotion-candidates.ndjson, staged/forms_guides/unsupported-candidates.ndjson, staged/forms_guides/promotion-summary.json
+
+## program_waitlists
+
+- startQueueClass: author_first
+- recommendedRunMode: author_first_only
+- lifecycleStages:
+  - queue_entry
+    - requiredClass: author_first
+    - proceedWhen: family has been refreshed into a runnable exact-target state
+    - stopWhen: family remains in author_first and cannot consume fetch volume yet
+  - fetch
+    - allowed: false
+    - proceedWhen: not allowed until queue class becomes ready_target_scrape
+    - stopWhen: Stop immediately if no exact ready targets are visible; do queue/authoring refresh instead of fetching.
+  - followups
+    - allowed: false
+    - proceedWhen: not allowed until fetch runs
+    - stopWhen: not allowed until fetch runs
+  - parse
+    - allowed: false
+    - proceedWhen: skip until family becomes parse-eligible
+    - stopWhen: skip
+  - validate
+    - allowed: false
+    - proceedWhen: skip until parse is allowed
+    - stopWhen: skip
+  - stage
+    - allowed: false
+    - proceedWhen: skip until validate is allowed
+    - stopWhen: skip
+  - queue_refresh
+    - allowed: true
+    - proceedWhen: family lane cycle ends and refreshed queue truth is needed
+    - stopWhen: updated queue class and blockers are written to disk
+- fallbackTransitions:
+  - ifNoReadyTargets: author_first
+  - ifRepeatedBrokenSources: repair_first
+  - ifRepeatedBlockedSources: defer_blocked_source
+  - ifNeedsOperatorDecision: manual_review
+  - ifQuarantined: do_not_scrape_quarantined
+- requiredArtifactsByStage:
+  - fetch: manifest.json, summary.json, results.csv, report.md, pages/
+  - followups: followups/parse-ready.json, followups/parse-ready-high-signal.json, followups/retryable-failures.json, followups/blocked-failures.json, followups/source-repair.json, followups/followup-summary.json
+  - parse: parsed/program_waitlists/records.ndjson, parsed/program_waitlists/summary.json, parsed/program_waitlists/schema-errors.json
+  - validate: validated/program_waitlists/accepted.ndjson, validated/program_waitlists/rejected.ndjson, validated/program_waitlists/rejection-reasons.json
+  - stage: staged/program_waitlists/promotion-candidates.ndjson, staged/program_waitlists/unsupported-candidates.ndjson, staged/program_waitlists/promotion-summary.json
+
+## medicaid_hhs_offices
+
+- startQueueClass: ready_target_scrape
+- recommendedRunMode: fetch_only_first
+- lifecycleStages:
+  - queue_entry
+    - requiredClass: ready_target_scrape
+    - proceedWhen: family has exact ready targets in ready_target_scrape
+    - stopWhen: ready lane is exhausted or stopRule fires
+  - fetch
+    - allowed: true
+    - proceedWhen: run writes required fetch artifacts: manifest.json, summary.json, results.csv, report.md, pages/
+    - stopWhen: Stop the family wave when any stop condition appears: ready_lane_exhausted, malformed_hostname_cluster, repair_first_backlog_growth.
+  - followups
+    - allowed: true
+    - proceedWhen: followup summary classifies results into parse_ready_high_signal, parse_ready_suspect, retryable, blocked, or source_repair
+    - stopWhen: blocked/source_repair dominates or no parse-ready rows remain
+  - parse
+    - allowed: true
+    - proceedWhen: parse_ready_high_signal rows exist for the family
+    - stopWhen: no parse-ready rows for family or parser emits only schema-error/empty output
+  - validate
+    - allowed: true
+    - proceedWhen: parsed records exist for the family and validator can apply family acceptance gates
+    - stopWhen: accepted count is zero or rejection pattern implies author_first/repair_first/defer_blocked_source
+  - stage
+    - allowed: true
+    - proceedWhen: accepted validated rows exist and the family has a supported staging target
+    - stopWhen: no accepted rows remain or family target is unsupported for staging
+  - queue_refresh
+    - allowed: true
+    - proceedWhen: family lane cycle ends and refreshed queue truth is needed
+    - stopWhen: updated queue class and blockers are written to disk
+- fallbackTransitions:
+  - ifNoReadyTargets: repair_first
+  - ifRepeatedBrokenSources: repair_first
+  - ifRepeatedBlockedSources: defer_blocked_source
+  - ifNeedsOperatorDecision: manual_review
+  - ifQuarantined: do_not_scrape_quarantined
+- requiredArtifactsByStage:
+  - fetch: manifest.json, summary.json, results.csv, report.md, pages/
+  - followups: followups/parse-ready.json, followups/parse-ready-high-signal.json, followups/retryable-failures.json, followups/blocked-failures.json, followups/source-repair.json, followups/followup-summary.json
+  - parse: parsed/medicaid_hhs_offices/records.ndjson, parsed/medicaid_hhs_offices/summary.json, parsed/medicaid_hhs_offices/schema-errors.json
+  - validate: validated/medicaid_hhs_offices/accepted.ndjson, validated/medicaid_hhs_offices/rejected.ndjson, validated/medicaid_hhs_offices/rejection-reasons.json
+  - stage: staged/medicaid_hhs_offices/promotion-candidates.ndjson, staged/medicaid_hhs_offices/unsupported-candidates.ndjson, staged/medicaid_hhs_offices/promotion-summary.json
+
+## education_routing
+
+- startQueueClass: ready_target_scrape
+- recommendedRunMode: full_lane_when_successful
+- lifecycleStages:
+  - queue_entry
+    - requiredClass: ready_target_scrape
+    - proceedWhen: family has exact ready targets in ready_target_scrape
+    - stopWhen: ready lane is exhausted or stopRule fires
+  - fetch
+    - allowed: true
+    - proceedWhen: run writes required fetch artifacts: manifest.json, summary.json, results.csv, report.md, pages/
+    - stopWhen: Stop the family wave when any stop condition appears: ready_lane_exhausted, 3_state_gap_needs_explicit_block_or_fallback.
+  - followups
+    - allowed: true
+    - proceedWhen: followup summary classifies results into parse_ready_high_signal, parse_ready_suspect, retryable, blocked, or source_repair
+    - stopWhen: blocked/source_repair dominates or no parse-ready rows remain
+  - parse
+    - allowed: true
+    - proceedWhen: parse_ready_high_signal rows exist for the family
+    - stopWhen: no parse-ready rows for family or parser emits only schema-error/empty output
+  - validate
+    - allowed: true
+    - proceedWhen: parsed records exist for the family and validator can apply family acceptance gates
+    - stopWhen: accepted count is zero or rejection pattern implies author_first/repair_first/defer_blocked_source
+  - stage
+    - allowed: false
+    - proceedWhen: accepted validated rows exist and the family has a supported staging target
+    - stopWhen: no accepted rows remain or family target is unsupported for staging
+  - queue_refresh
+    - allowed: true
+    - proceedWhen: family lane cycle ends and refreshed queue truth is needed
+    - stopWhen: updated queue class and blockers are written to disk
+- fallbackTransitions:
+  - ifNoReadyTargets: author_first
+  - ifRepeatedBrokenSources: repair_first
+  - ifRepeatedBlockedSources: defer_blocked_source
+  - ifNeedsOperatorDecision: manual_review
+  - ifQuarantined: do_not_scrape_quarantined
+- requiredArtifactsByStage:
+  - fetch: manifest.json, summary.json, results.csv, report.md, pages/
+  - followups: followups/parse-ready.json, followups/parse-ready-high-signal.json, followups/retryable-failures.json, followups/blocked-failures.json, followups/source-repair.json, followups/followup-summary.json
+  - parse: parsed/education_routing/records.ndjson, parsed/education_routing/summary.json, parsed/education_routing/schema-errors.json
+  - validate: validated/education_routing/accepted.ndjson, validated/education_routing/rejected.ndjson, validated/education_routing/rejection-reasons.json
+  - stage: staged/education_routing/promotion-candidates.ndjson, staged/education_routing/unsupported-candidates.ndjson, staged/education_routing/promotion-summary.json
+
+## providers_care
+
+- startQueueClass: ready_target_scrape
+- recommendedRunMode: fetch_only_first
+- lifecycleStages:
+  - queue_entry
+    - requiredClass: ready_target_scrape
+    - proceedWhen: family has exact ready targets in ready_target_scrape
+    - stopWhen: ready lane is exhausted or stopRule fires
+  - fetch
+    - allowed: true
+    - proceedWhen: run writes required fetch artifacts: manifest.json, summary.json, results.csv, report.md, pages/
+    - stopWhen: Stop the family wave when any stop condition appears: ready_lane_exhausted, state_anchor_coverage_stalls, author_first_provider_packets_needed.
+  - followups
+    - allowed: true
+    - proceedWhen: followup summary classifies results into parse_ready_high_signal, parse_ready_suspect, retryable, blocked, or source_repair
+    - stopWhen: blocked/source_repair dominates or no parse-ready rows remain
+  - parse
+    - allowed: true
+    - proceedWhen: parse_ready_high_signal rows exist for the family
+    - stopWhen: no parse-ready rows for family or parser emits only schema-error/empty output
+  - validate
+    - allowed: true
+    - proceedWhen: parsed records exist for the family and validator can apply family acceptance gates
+    - stopWhen: accepted count is zero or rejection pattern implies author_first/repair_first/defer_blocked_source
+  - stage
+    - allowed: true
+    - proceedWhen: accepted validated rows exist and the family has a supported staging target
+    - stopWhen: no accepted rows remain or family target is unsupported for staging
+  - queue_refresh
+    - allowed: true
+    - proceedWhen: family lane cycle ends and refreshed queue truth is needed
+    - stopWhen: updated queue class and blockers are written to disk
+- fallbackTransitions:
+  - ifNoReadyTargets: author_first
+  - ifRepeatedBrokenSources: repair_first
+  - ifRepeatedBlockedSources: defer_blocked_source
+  - ifNeedsOperatorDecision: manual_review
+  - ifQuarantined: do_not_scrape_quarantined
+- requiredArtifactsByStage:
+  - fetch: manifest.json, summary.json, results.csv, report.md, pages/
+  - followups: followups/parse-ready.json, followups/parse-ready-high-signal.json, followups/retryable-failures.json, followups/blocked-failures.json, followups/source-repair.json, followups/followup-summary.json
+  - parse: parsed/providers_care/records.ndjson, parsed/providers_care/summary.json, parsed/providers_care/schema-errors.json
+  - validate: validated/providers_care/accepted.ndjson, validated/providers_care/rejected.ndjson, validated/providers_care/rejection-reasons.json
+  - stage: staged/providers_care/promotion-candidates.ndjson, staged/providers_care/unsupported-candidates.ndjson, staged/providers_care/promotion-summary.json
+
+## knowledge_content
+
+- startQueueClass: ready_target_scrape
+- recommendedRunMode: fetch_only_first
+- lifecycleStages:
+  - queue_entry
+    - requiredClass: ready_target_scrape
+    - proceedWhen: family has exact ready targets in ready_target_scrape
+    - stopWhen: ready lane is exhausted or stopRule fires
+  - fetch
+    - allowed: true
+    - proceedWhen: run writes required fetch artifacts: manifest.json, summary.json, results.csv, report.md, pages/
+    - stopWhen: Stop the family wave when any stop condition appears: ready_lane_exhausted, deferred_blocked_source_replacements_required.
+  - followups
+    - allowed: true
+    - proceedWhen: followup summary classifies results into parse_ready_high_signal, parse_ready_suspect, retryable, blocked, or source_repair
+    - stopWhen: blocked/source_repair dominates or no parse-ready rows remain
+  - parse
+    - allowed: true
+    - proceedWhen: parse_ready_high_signal rows exist for the family
+    - stopWhen: no parse-ready rows for family or parser emits only schema-error/empty output
+  - validate
+    - allowed: true
+    - proceedWhen: parsed records exist for the family and validator can apply family acceptance gates
+    - stopWhen: accepted count is zero or rejection pattern implies author_first/repair_first/defer_blocked_source
+  - stage
+    - allowed: false
+    - proceedWhen: accepted validated rows exist and the family has a supported staging target
+    - stopWhen: no accepted rows remain or family target is unsupported for staging
+  - queue_refresh
+    - allowed: true
+    - proceedWhen: family lane cycle ends and refreshed queue truth is needed
+    - stopWhen: updated queue class and blockers are written to disk
+- fallbackTransitions:
+  - ifNoReadyTargets: defer_blocked_source
+  - ifRepeatedBrokenSources: repair_first
+  - ifRepeatedBlockedSources: defer_blocked_source
+  - ifNeedsOperatorDecision: manual_review
+  - ifQuarantined: do_not_scrape_quarantined
+- requiredArtifactsByStage:
+  - fetch: manifest.json, summary.json, results.csv, report.md, pages/
+  - followups: followups/parse-ready.json, followups/parse-ready-high-signal.json, followups/retryable-failures.json, followups/blocked-failures.json, followups/source-repair.json, followups/followup-summary.json
+  - parse: parsed/knowledge_content/records.ndjson, parsed/knowledge_content/summary.json, parsed/knowledge_content/schema-errors.json
+  - validate: validated/knowledge_content/accepted.ndjson, validated/knowledge_content/rejected.ndjson, validated/knowledge_content/rejection-reasons.json
+  - stage: staged/knowledge_content/promotion-candidates.ndjson, staged/knowledge_content/unsupported-candidates.ndjson, staged/knowledge_content/promotion-summary.json
+

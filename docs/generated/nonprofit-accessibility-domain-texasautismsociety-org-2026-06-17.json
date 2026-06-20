@@ -1,0 +1,2644 @@
+{
+  "evidencePath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/nonprofit-accessibility-domains/texasautismsociety-org/2026-06-17T15-44-35-817Z/evidence.json",
+  "promotionPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/nonprofit-accessibility-domains/texasautismsociety-org/2026-06-17T15-44-35-817Z/promotion-decisions.json",
+  "summaryPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/nonprofit-accessibility-domains/texasautismsociety-org/2026-06-17T15-44-35-817Z/summary.json",
+  "mdReportPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/nonprofit-accessibility-domain-texasautismsociety-org-2026-06-17.md",
+  "generatedAt": "2026-06-17",
+  "runStamp": "2026-06-17T15-44-35-817Z",
+  "domain": "texasautismsociety.org",
+  "orgTerms": [
+    "Autism Society of El Paso",
+    "Autism Society of Texas (Statewide Support)",
+    "Autism Society Texas"
+  ],
+  "dryRun": true,
+  "safeStatus": "safe",
+  "beforeDomainCounts": {
+    "total": 509,
+    "inPerson": 0,
+    "orgLevelPresence": 0,
+    "localInPersonEvidence": 0,
+    "trustedMissing": 509
+  },
+  "afterDomainCounts": {
+    "total": 509,
+    "inPerson": 0,
+    "orgLevelPresence": 0,
+    "localInPersonEvidence": 0,
+    "trustedMissing": 509
+  },
+  "candidateCount": 509,
+  "mutationCount": 0,
+  "skippedCount": 509,
+  "classificationCounts": {},
+  "evidenceLevelCounts": {},
+  "actionCounts": {},
+  "warnings": [
+    "many_to_one_evidence",
+    "bulk_org_level_review_threshold"
+  ],
+  "sampleRows": [],
+  "mutations": [],
+  "skipped": [
+    {
+      "id": "texas-anderson-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-andrews-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-angelina-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-aransas-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-archer-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-armstrong-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-atascosa-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-austin-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-bailey-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-bandera-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-bastrop-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-baylor-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-bee-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-bell-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-bexar-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-blanco-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-borden-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-bosque-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-bowie-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-brazoria-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-brazos-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-brewster-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-briscoe-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-brooks-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-brown-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-burleson-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-burnet-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-caldwell-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-calhoun-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-callahan-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-cameron-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-camp-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-carson-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-cass-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-castro-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-chambers-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-cherokee-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-childress-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-clay-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-cochran-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-coke-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-coleman-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-collin-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-collingsworth-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-colorado-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-comal-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-comanche-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-concho-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-cooke-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-coryell-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-cottle-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-crane-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-crockett-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-crosby-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-culberson-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-dallam-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-dallas-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-dawson-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-deaf-smith-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-delta-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-denton-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-dewitt-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-dickens-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-dimmit-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-donley-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-duval-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-eastland-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-ector-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-edwards-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-el-paso-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-ellis-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-erath-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-falls-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-fannin-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-fayette-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-fisher-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-floyd-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-foard-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-fort-bend-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-franklin-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-freestone-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-frio-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-gaines-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-galveston-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-garza-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-gillespie-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-glasscock-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-goliad-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-gonzales-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-gray-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-grayson-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-gregg-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-grimes-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-guadalupe-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-hale-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-hall-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-hamilton-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-hansford-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-hardeman-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-hardin-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-harris-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-harrison-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-hartley-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-haskell-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-hays-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-hemphill-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-henderson-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-hidalgo-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-hill-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-hockley-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-hood-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-hopkins-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-houston-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-howard-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-hudspeth-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-hunt-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-hutchinson-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-irion-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-jack-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-jackson-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-jasper-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-jeff-davis-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-jefferson-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-jim-hogg-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-jim-wells-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-johnson-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-jones-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-karnes-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-kaufman-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-kendall-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-kenedy-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-kent-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-kerr-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-kimble-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-king-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-kinney-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-kleberg-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-knox-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-la-salle-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-lamar-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-lamb-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-lampasas-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-lavaca-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-lee-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-leon-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-liberty-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-limestone-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-lipscomb-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-live-oak-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-llano-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-loving-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-lubbock-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-lynn-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-madison-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-marion-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-martin-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-mason-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-matagorda-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-maverick-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-mcculloch-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-mclennan-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-mcmullen-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-medina-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-menard-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-midland-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-milam-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-mills-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-mitchell-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-montague-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-montgomery-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-moore-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-morris-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-motley-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-nacogdoches-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-navarro-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-newton-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-nolan-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-nueces-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-ochiltree-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-oldham-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-orange-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-palo-pinto-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-panola-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-parker-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-parmer-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-pecos-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-polk-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-potter-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-presidio-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-rains-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-randall-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-reagan-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-real-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-red-river-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-reeves-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-refugio-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-roberts-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-robertson-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-rockwall-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-runnels-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-rusk-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-sabine-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-san-augustine-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-san-jacinto-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-san-patricio-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-san-saba-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-schleicher-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-scurry-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-shackelford-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-shelby-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-sherman-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-smith-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-somervell-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-starr-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-stephens-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-sterling-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-stonewall-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-sutton-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-swisher-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-tarrant-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-taylor-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-terrell-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-terry-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-throckmorton-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-titus-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-tom-green-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-travis-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-trinity-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-tyler-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-upshur-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-upton-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-uvalde-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-val-verde-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-van-zandt-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-victoria-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-walker-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-waller-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-ward-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-washington-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-webb-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-wharton-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-wheeler-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-wichita-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-wilbarger-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-willacy-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-williamson-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-wilson-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-winkler-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-wise-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-wood-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-yoakum-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-young-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-zapata-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "texas-zavala-tx-autism-society-texas-np",
+      "name": "Autism Society Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-as-el-paso-el-paso-tx",
+      "name": "Autism Society of El Paso",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-anderson-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-andrews-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-angelina-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-aransas-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-archer-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-armstrong-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-atascosa-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-austin-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-bailey-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-bandera-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-bastrop-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-baylor-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-bee-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-bell-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-bexar-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-blanco-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-borden-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-bosque-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-bowie-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-brazoria-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-brazos-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-brewster-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-briscoe-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-brooks-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-brown-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-burleson-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-burnet-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-caldwell-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-calhoun-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-callahan-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-cameron-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-camp-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-carson-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-cass-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-castro-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-chambers-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-cherokee-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-childress-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-clay-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-cochran-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-coke-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-coleman-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-collin-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-collingsworth-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-colorado-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-comal-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-comanche-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-concho-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-cooke-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-coryell-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-cottle-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-crane-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-crockett-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-crosby-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-culberson-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-dallam-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-dallas-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-dawson-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-deaf-smith-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-delta-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-denton-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-dewitt-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-dickens-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-dimmit-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-donley-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-duval-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-eastland-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-ector-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-edwards-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-el-paso-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-ellis-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-erath-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-falls-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-fannin-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-fayette-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-fisher-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-floyd-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-foard-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-fort-bend-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-franklin-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-freestone-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-frio-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-gaines-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-galveston-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-garza-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-gillespie-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-glasscock-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-goliad-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-gonzales-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-gray-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-grayson-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-gregg-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-grimes-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-guadalupe-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-hale-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-hall-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-hamilton-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-hansford-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-hardeman-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-hardin-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-harris-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-harrison-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-hartley-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-haskell-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-hays-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-hemphill-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-henderson-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-hidalgo-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-hill-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-hockley-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-hood-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-hopkins-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-houston-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-howard-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-hudspeth-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-hunt-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-hutchinson-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-irion-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-jack-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-jackson-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-jasper-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-jeff-davis-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-jefferson-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-jim-hogg-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-jim-wells-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-johnson-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-jones-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-karnes-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-kaufman-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-kendall-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-kenedy-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-kent-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-kerr-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-kimble-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-king-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-kinney-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-kleberg-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-knox-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-la-salle-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-lamar-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-lamb-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-lampasas-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-lavaca-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-lee-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-leon-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-liberty-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-limestone-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-lipscomb-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-live-oak-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-llano-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-loving-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-lubbock-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-lynn-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-madison-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-marion-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-martin-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-mason-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-matagorda-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-maverick-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-mcculloch-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-mclennan-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-mcmullen-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-medina-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-menard-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-midland-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-milam-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-mills-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-mitchell-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-montague-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-montgomery-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-moore-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-morris-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-motley-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-nacogdoches-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-navarro-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-newton-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-nolan-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-nueces-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-ochiltree-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-oldham-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-orange-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-palo-pinto-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-panola-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-parker-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-parmer-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-pecos-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-polk-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-potter-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-presidio-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-rains-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-randall-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-reagan-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-real-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-red-river-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-reeves-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-refugio-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-roberts-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-robertson-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-rockwall-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-runnels-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-rusk-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-sabine-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-san-augustine-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-san-jacinto-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-san-patricio-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-san-saba-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-schleicher-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-scurry-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-shackelford-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-shelby-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-sherman-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-smith-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-somervell-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-starr-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-stephens-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-sterling-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-stonewall-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-sutton-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-swisher-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-tarrant-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-taylor-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-terrell-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-terry-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-throckmorton-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-titus-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-tom-green-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-travis-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-trinity-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-tyler-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-upshur-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-upton-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-uvalde-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-val-verde-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-van-zandt-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-victoria-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-walker-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-waller-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-ward-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-washington-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-webb-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-wharton-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-wheeler-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-wichita-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-wilbarger-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-willacy-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-williamson-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-wilson-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-winkler-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-wise-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-wood-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-yoakum-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-young-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-zapata-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-autism-zavala-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    }
+  ],
+  "skipReasons": {
+    "missing_validated_domain_evidence": 509
+  },
+  "nextDomains": [
+    {
+      "domain": "thearc.org",
+      "missingRows": 12021
+    },
+    {
+      "domain": "parentcenterhub.org",
+      "missingRows": 4483
+    },
+    {
+      "domain": "texasautismsociety.org",
+      "missingRows": 509
+    },
+    {
+      "domain": "txp2p.org",
+      "missingRows": 508
+    },
+    {
+      "domain": "thearcoftexas.org",
+      "missingRows": 259
+    },
+    {
+      "domain": "disabilityrightstx.org",
+      "missingRows": 254
+    },
+    {
+      "domain": "navigatelifetexas.org",
+      "missingRows": 254
+    },
+    {
+      "domain": "prntexas.org",
+      "missingRows": 254
+    },
+    {
+      "domain": "autismqc.org",
+      "missingRows": 201
+    },
+    {
+      "domain": "p2pga.org",
+      "missingRows": 159
+    },
+    {
+      "domain": "arcofky.org",
+      "missingRows": 120
+    },
+    {
+      "domain": "asbg.org",
+      "missingRows": 120
+    }
+  ],
+  "rollbackSqlPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/nonprofit-accessibility-domains/texasautismsociety-org/2026-06-17T15-44-35-817Z/rollback.sql",
+  "forwardSqlPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/nonprofit-accessibility-domains/texasautismsociety-org/2026-06-17T15-44-35-817Z/forward.sql"
+}

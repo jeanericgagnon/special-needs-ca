@@ -1,0 +1,60 @@
+{
+  "generatedAt": "2026-06-19T00:18:19.508Z",
+  "mode": "dry-run",
+  "stateFilter": "alaska",
+  "summary": {
+    "eligibleRepairRows": 0,
+    "appliedChanges": 0,
+    "filesChanged": 0,
+    "skippedAmbiguousRows": 5,
+    "skippedAmbiguousByMode": {
+      "first_party_root_hint_only": 1,
+      "no_candidate_yet": 2,
+      "exact_candidate_available": 2
+    },
+    "skippedMissingRows": 0
+  },
+  "repairs": [],
+  "ambiguousRows": [
+    {
+      "stateId": "alaska",
+      "targetTable": "county_offices",
+      "sourceName": "Alaska Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.alaska.gov/",
+      "replacementMode": "first_party_root_hint_only",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "alaska",
+      "targetTable": "programs",
+      "sourceName": "Alaska Early Intervention / Part C",
+      "fakeSourceUrl": "https://dhhs.alaska.gov/earlyintervention",
+      "replacementMode": "no_candidate_yet",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "alaska",
+      "targetTable": "programs",
+      "sourceName": "Alaska HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.alaska.gov/dd/waivers",
+      "replacementMode": "exact_candidate_available",
+      "mediumCandidateCount": 2
+    },
+    {
+      "stateId": "alaska",
+      "targetTable": "programs",
+      "sourceName": "Alaska Vocational Rehabilitation Services",
+      "fakeSourceUrl": "https://dhhs.alaska.gov/rehab",
+      "replacementMode": "no_candidate_yet",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "alaska",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Alaska Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.alaska.gov/dd",
+      "replacementMode": "exact_candidate_available",
+      "mediumCandidateCount": 2
+    }
+  ]
+}

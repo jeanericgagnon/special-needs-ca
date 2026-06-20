@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-06-18T18:10:59.890Z",
+  "generatedDate": "2026-06-18",
+  "sourceArtifacts": {
+    "executionBacklogPath": "docs/generated/provider-repair-execution-backlog-2026-06-18.json",
+    "repairQueuePath": "docs/generated/provider-followup-repair-queue-2026-06-18.json",
+    "sourcePackPlanPath": "docs/generated/provider-source-pack-plan-2026-06-18.json"
+  },
+  "purpose": "Compact operator runbook for the provider_directory pull-now repair lane so the next cycle can start without re-reading full provider artifacts.",
+  "summary": {
+    "pullNowRowCount": 0,
+    "pullNowStateCount": 0,
+    "byActionClass": {},
+    "firstActionClass": null
+  },
+  "preflight": [
+    "Run npm run audit:provider-followup-repair-queue",
+    "Run npm run audit:provider-repair-execution-backlog",
+    "Run npm run audit:provider-pull-now-runbook",
+    "Do not expand beyond pull-now rows in this cycle."
+  ],
+  "commandCadence": [
+    "npm run audit:provider-followup-repair-queue",
+    "npm run audit:provider-repair-execution-backlog",
+    "npm run audit:provider-source-pack",
+    "npm run run:source-acquisition-wave -- --mode=live --lane=ready_target_scrape --gap=providers_care --limit=25",
+    "npm run run:source-acquisition-followups -- --run-id=<run-id>",
+    "npm run run:source-acquisition-parse -- --run-id=<run-id> --family=providers_care",
+    "npm run run:source-acquisition-validate -- --run-id=<run-id> --family=providers_care",
+    "npm run run:source-acquisition-stage -- --run-id=<run-id> --family=providers_care --mode=dry-run"
+  ],
+  "slices": [],
+  "stateSlices": []
+}

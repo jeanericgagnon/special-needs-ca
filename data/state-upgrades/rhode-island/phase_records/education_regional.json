@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "source_url": "https://www.ride.ri.gov/StudentsFamilies/SpecialEducation.aspx",
+    "confidence_score": 9.5,
+    "notes": "Official Rhode Island Department of Education Special Education page used as the truthful statewide education support layer while weak county and district placeholders are removed.",
+    "suggested_target_id": "ri-ed-ride-special-education",
+    "name": "Rhode Island Department of Education Special Education",
+    "phone": "",
+    "counties_served": [
+      "ALL_RHODE_ISLAND_COUNTIES"
+    ],
+    "physical_county": "providence-ri",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  }
+]

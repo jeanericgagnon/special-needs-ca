@@ -1,0 +1,109 @@
+{
+  "generatedAt": "2026-06-18T19:00:49.613Z",
+  "generatedDate": "2026-06-18",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-18.json",
+  "stateId": "maryland",
+  "stateName": "Maryland",
+  "executionPriority": 1,
+  "sourceTargetsPath": "data/source_targets/maryland.json",
+  "ledgerStatus": "",
+  "ledgerNote": "",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 1,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 0,
+  "placeholderProviderTargetCount": 1,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 3,
+  "nextAction": "Add at least 3 more concrete first-party provider targets for Maryland and then regenerate provider source-pack artifacts.",
+  "providerTargets": [
+    {
+      "sourceName": "Maryland Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for Maryland."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Maryland County Metadata",
+      "sourceUrl": "https://www.maryland.gov",
+      "domain": "maryland.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Maryland Medicaid Portal",
+      "sourceUrl": "https://dhhs.maryland.gov",
+      "domain": "dhhs.maryland.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Maryland Developmental Disabilities Administration",
+      "sourceUrl": "https://dda.health.maryland.gov/",
+      "domain": "dda.health.maryland.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Maryland HCBS Waivers",
+      "sourceUrl": "https://dda.health.maryland.gov/hcbs",
+      "domain": "dda.health.maryland.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Maryland Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.maryland.gov/earlyintervention",
+      "domain": "dhhs.maryland.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Maryland Department of Education Special Ed",
+      "sourceUrl": "https://education.maryland.gov",
+      "domain": "education.maryland.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Maryland Regional Special Education Support",
+      "sourceUrl": "https://education.maryland.gov/regional",
+      "domain": "education.maryland.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Maryland Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Maryland",
+      "sourceUrl": "https://www.thearcmaryland.org",
+      "domain": "thearcmaryland.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Maryland Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.maryland.gov/forms",
+      "domain": "dhhs.maryland.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Maryland Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.maryland.gov/rehab",
+      "domain": "dhhs.maryland.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Maryland Secretary of State Business Registry",
+      "sourceUrl": "https://www.maryland.gov/business",
+      "domain": "maryland.gov"
+    }
+  ]
+}

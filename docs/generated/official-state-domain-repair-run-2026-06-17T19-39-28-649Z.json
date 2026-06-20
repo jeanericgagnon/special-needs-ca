@@ -1,0 +1,180 @@
+{
+  "generatedAt": "2026-06-17T19:39:28.650Z",
+  "mode": "dry-run",
+  "stateFilter": "north-carolina",
+  "summary": {
+    "eligibleRepairRows": 6,
+    "appliedChanges": 0,
+    "filesChanged": 0,
+    "skippedAmbiguousRows": 2,
+    "skippedMissingRows": 0
+  },
+  "repairs": [
+    {
+      "stateId": "north-carolina",
+      "targetTable": "county_offices",
+      "sourceName": "North Carolina Medicaid Portal",
+      "before": {
+        "sourceUrl": "https://dhhs.north-carolina.gov",
+        "sourceName": "North Carolina Medicaid Portal",
+        "domain": "dhhs.north-carolina.gov",
+        "notes": "Initial category-level scaffold source target for North Carolina."
+      },
+      "after": {
+        "sourceUrl": "https://www.ncdhhs.gov/divisions/social-services/local-county-social-services-departments",
+        "sourceName": "NCDHHS County DSS Directory",
+        "domain": "ncdhhs.gov",
+        "notes": "Initial category-level scaffold source target for North Carolina. Official domain repair candidate applied 2026-06-17 from https://dhhs.north-carolina.gov/ to https://www.ncdhhs.gov/divisions/social-services/local-county-social-services-departments."
+      },
+      "candidate": {
+        "origin": "state_upgrade_source_targets",
+        "name": "NCDHHS County DSS Directory",
+        "url": "https://www.ncdhhs.gov/divisions/social-services/local-county-social-services-departments",
+        "matchType": "state_upgrade_hint",
+        "confidence": "medium"
+      },
+      "status": "dry_run_ready"
+    },
+    {
+      "stateId": "north-carolina",
+      "targetTable": "programs",
+      "sourceName": "North Carolina Department of Education Special Ed",
+      "before": {
+        "sourceUrl": "https://education.north-carolina.gov",
+        "sourceName": "North Carolina Department of Education Special Ed",
+        "domain": "education.north-carolina.gov",
+        "notes": "Initial category-level scaffold source target for North Carolina."
+      },
+      "after": {
+        "sourceUrl": "https://www.dpi.nc.gov/districts-schools/classroom-resources/exceptional-children",
+        "sourceName": "NCDPI Exceptional Children Division",
+        "domain": "dpi.nc.gov",
+        "notes": "Initial category-level scaffold source target for North Carolina. Official domain repair candidate applied 2026-06-17 from https://education.north-carolina.gov/ to https://www.dpi.nc.gov/districts-schools/classroom-resources/exceptional-children."
+      },
+      "candidate": {
+        "origin": "state_upgrade_source_targets",
+        "name": "NCDPI Exceptional Children Division",
+        "url": "https://www.dpi.nc.gov/districts-schools/classroom-resources/exceptional-children",
+        "matchType": "state_upgrade_hint",
+        "confidence": "medium"
+      },
+      "status": "dry_run_ready"
+    },
+    {
+      "stateId": "north-carolina",
+      "targetTable": "programs",
+      "sourceName": "North Carolina Early Intervention / Part C",
+      "before": {
+        "sourceUrl": "https://dhhs.north-carolina.gov/earlyintervention",
+        "sourceName": "North Carolina Early Intervention / Part C",
+        "domain": "dhhs.north-carolina.gov",
+        "notes": "Initial category-level scaffold source target for North Carolina."
+      },
+      "after": {
+        "sourceUrl": "https://www.ncdhhs.gov/divisions/mental-health-developmental-disabilities-and-substance-use-services/child-and-family-mental-health-developmental-disabilities-and-substance-use-services/early-intervention/childrens-developmental-services-agencies-cdsas",
+        "sourceName": "NCDHHS CDSA Location Directory",
+        "domain": "ncdhhs.gov",
+        "notes": "Initial category-level scaffold source target for North Carolina. Official domain repair candidate applied 2026-06-17 from https://dhhs.north-carolina.gov/earlyintervention to https://www.ncdhhs.gov/divisions/mental-health-developmental-disabilities-and-substance-use-services/child-and-family-mental-health-developmental-disabilities-and-substance-use-services/early-intervention/childrens-developmental-services-agencies-cdsas."
+      },
+      "candidate": {
+        "origin": "state_upgrade_source_targets",
+        "name": "NCDHHS CDSA Location Directory",
+        "url": "https://www.ncdhhs.gov/divisions/mental-health-developmental-disabilities-and-substance-use-services/child-and-family-mental-health-developmental-disabilities-and-substance-use-services/early-intervention/childrens-developmental-services-agencies-cdsas",
+        "matchType": "state_upgrade_hint",
+        "confidence": "medium"
+      },
+      "status": "dry_run_ready"
+    },
+    {
+      "stateId": "north-carolina",
+      "targetTable": "programs",
+      "sourceName": "North Carolina HCBS Waivers Page",
+      "before": {
+        "sourceUrl": "https://dhhs.north-carolina.gov/dd/waivers",
+        "sourceName": "North Carolina HCBS Waivers Page",
+        "domain": "dhhs.north-carolina.gov",
+        "notes": "Initial category-level scaffold source target for North Carolina."
+      },
+      "after": {
+        "sourceUrl": "https://medicaid.ncdhhs.gov/providers/programs-and-services/long-term-services-and-supports/community-alternatives-program-children",
+        "sourceName": "NC Medicaid CAP/C",
+        "domain": "medicaid.ncdhhs.gov",
+        "notes": "Initial category-level scaffold source target for North Carolina. Official domain repair candidate applied 2026-06-17 from https://dhhs.north-carolina.gov/dd/waivers to https://medicaid.ncdhhs.gov/providers/programs-and-services/long-term-services-and-supports/community-alternatives-program-children."
+      },
+      "candidate": {
+        "origin": "state_upgrade_source_targets",
+        "name": "NC Medicaid CAP/C",
+        "url": "https://medicaid.ncdhhs.gov/providers/programs-and-services/long-term-services-and-supports/community-alternatives-program-children",
+        "matchType": "state_upgrade_hint",
+        "confidence": "medium"
+      },
+      "status": "dry_run_ready"
+    },
+    {
+      "stateId": "north-carolina",
+      "targetTable": "programs",
+      "sourceName": "North Carolina Vocational Rehabilitation Services",
+      "before": {
+        "sourceUrl": "https://dhhs.north-carolina.gov/rehab",
+        "sourceName": "North Carolina Vocational Rehabilitation Services",
+        "domain": "dhhs.north-carolina.gov",
+        "notes": "Initial category-level scaffold source target for North Carolina."
+      },
+      "after": {
+        "sourceUrl": "https://www.ncdhhs.gov/divisions/vocational-rehabilitation-services",
+        "sourceName": "NC Vocational Rehabilitation Services",
+        "domain": "ncdhhs.gov",
+        "notes": "Initial category-level scaffold source target for North Carolina. Official domain repair candidate applied 2026-06-17 from https://dhhs.north-carolina.gov/rehab to https://www.ncdhhs.gov/divisions/vocational-rehabilitation-services."
+      },
+      "candidate": {
+        "origin": "state_upgrade_source_targets",
+        "name": "NC Vocational Rehabilitation Services",
+        "url": "https://www.ncdhhs.gov/divisions/vocational-rehabilitation-services",
+        "matchType": "state_upgrade_hint",
+        "confidence": "medium"
+      },
+      "status": "dry_run_ready"
+    },
+    {
+      "stateId": "north-carolina",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "North Carolina Developmental Services Directory",
+      "before": {
+        "sourceUrl": "https://dhhs.north-carolina.gov/dd",
+        "sourceName": "North Carolina Developmental Services Directory",
+        "domain": "dhhs.north-carolina.gov",
+        "notes": "Initial category-level scaffold source target for North Carolina."
+      },
+      "after": {
+        "sourceUrl": "https://www.ncdhhs.gov/providers/lme-mco-directory",
+        "sourceName": "NCDHHS LME/MCO Directory",
+        "domain": "ncdhhs.gov",
+        "notes": "Initial category-level scaffold source target for North Carolina. Official domain repair candidate applied 2026-06-17 from https://dhhs.north-carolina.gov/dd to https://www.ncdhhs.gov/providers/lme-mco-directory."
+      },
+      "candidate": {
+        "origin": "state_upgrade_source_targets",
+        "name": "NCDHHS LME/MCO Directory",
+        "url": "https://www.ncdhhs.gov/providers/lme-mco-directory",
+        "matchType": "state_upgrade_hint",
+        "confidence": "medium"
+      },
+      "status": "dry_run_ready"
+    }
+  ],
+  "ambiguousRows": [
+    {
+      "stateId": "north-carolina",
+      "targetTable": "forms",
+      "sourceName": "North Carolina Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.north-carolina.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "north-carolina",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "North Carolina Regional Special Education Support",
+      "fakeSourceUrl": "https://education.north-carolina.gov/regional",
+      "mediumCandidateCount": 2
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "generatedAt": "2026-06-18T21:45:02.892Z",
+  "generatedDate": "2026-06-18",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-18.json",
+  "stateId": "nebraska",
+  "stateName": "Nebraska",
+  "executionPriority": 1,
+  "sourceTargetsPath": "data/source_targets/nebraska.json",
+  "ledgerStatus": "",
+  "ledgerNote": "",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 2,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 3,
+  "placeholderProviderTargetCount": 0,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 0,
+  "neededLiveProviderRows": 2,
+  "authoringGapClass": "needs_refresh_or_deeper_targets",
+  "nextAction": "Refresh Nebraska provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+  "providerTargets": [
+    {
+      "sourceName": "Children's Nebraska",
+      "sourceUrl": "https://www.childrensnebraska.org",
+      "domain": "childrensnebraska.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Concrete first-party pediatric hospital target for Nebraska provider buildout."
+    },
+    {
+      "sourceName": "Munroe-Meyer Institute",
+      "sourceUrl": "https://www.unmc.edu/mmi",
+      "domain": "unmc.edu",
+      "crawlMethod": "static_fetch",
+      "organizationType": "university_clinic",
+      "notes": "Concrete first-party university developmental disability clinic target for Nebraska."
+    },
+    {
+      "sourceName": "Boys Town National Research Hospital",
+      "sourceUrl": "https://www.boystownhospital.org",
+      "domain": "boystownhospital.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Concrete first-party pediatric and developmental care target added to lift Nebraska into pull-now provider readiness."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Nebraska County Metadata",
+      "sourceUrl": "https://www.nebraska.gov",
+      "domain": "nebraska.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Nebraska Medicaid Portal",
+      "sourceUrl": "https://dhhs.nebraska.gov",
+      "domain": "dhhs.nebraska.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Nebraska Division of Developmental Disabilities",
+      "sourceUrl": "https://dhhs.ne.gov/Pages/DD",
+      "domain": "dhhs.ne.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Nebraska HCBS Waivers",
+      "sourceUrl": "https://dhhs.ne.gov/Pages/DD-Waivers.aspx",
+      "domain": "dhhs.ne.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Nebraska Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.nebraska.gov/earlyintervention",
+      "domain": "dhhs.nebraska.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Nebraska Department of Education Special Ed",
+      "sourceUrl": "https://education.nebraska.gov",
+      "domain": "education.nebraska.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Nebraska Regional Special Education Support",
+      "sourceUrl": "https://education.nebraska.gov/regional",
+      "domain": "education.nebraska.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Nebraska Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Nebraska",
+      "sourceUrl": "https://www.thearcnebraska.org",
+      "domain": "thearcnebraska.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Nebraska Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.nebraska.gov/forms",
+      "domain": "dhhs.nebraska.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Nebraska Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.nebraska.gov/rehab",
+      "domain": "dhhs.nebraska.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Nebraska Secretary of State Business Registry",
+      "sourceUrl": "https://www.nebraska.gov/business",
+      "domain": "nebraska.gov"
+    }
+  ]
+}

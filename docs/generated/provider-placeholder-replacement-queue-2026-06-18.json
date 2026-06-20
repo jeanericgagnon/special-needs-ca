@@ -1,0 +1,20 @@
+{
+  "queueId": "provider_placeholder_replacement_queue",
+  "generatedAt": "2026-06-18",
+  "sourceArtifacts": {
+    "providerSourcePack": "docs/generated/provider-source-pack-plan-2026-06-18.json",
+    "masterSourceTargetLedger": "docs/generated/master-source-target-ledger-2026-06-18.json",
+    "providerFollowupBlockerRegistry": "docs/generated/provider-followup-blocker-registry-2026-06-18.json"
+  },
+  "purpose": "Deterministic queue of provider placeholder targets that must be replaced with named first-party sources before safe provider expansion.",
+  "summary": {
+    "totalRows": 0,
+    "statesNeedingPlaceholderReplacement": 0,
+    "byState": {},
+    "byDomain": {},
+    "byReadinessLane": {},
+    "bySourceOrigin": {},
+    "byFollowupType": {}
+  },
+  "rows": []
+}

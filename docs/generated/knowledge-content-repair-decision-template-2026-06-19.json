@@ -1,0 +1,73 @@
+{
+  "generatedAt": "2026-06-19",
+  "sourceQueue": "docs/generated/knowledge-content-repair-queue-2026-06-19.json",
+  "entryCommand": "npm run audit:knowledge-content-repair-decision-template",
+  "applyCommand": "npm run fix:knowledge-content-repair-decisions -- --apply",
+  "auditCommand": "npm run audit:knowledge-content-repair-queue",
+  "commands": [
+    "npm run audit:knowledge-content-repair-decision-template",
+    "npm run fix:knowledge-content-repair-decisions -- --apply",
+    "npm run audit:knowledge-content-repair-queue"
+  ],
+  "instructions": {
+    "allowedDecisionModes": [
+      "replace_with_reviewed_exact_target",
+      "defer_blocked_source",
+      "skip_unresolved"
+    ],
+    "requiredTopLevelFields": [
+      "id",
+      "sourceUrl",
+      "decisionMode",
+      "reviewedBy"
+    ],
+    "replaceFields": [
+      "reviewedSourceName",
+      "reviewedSourceUrl"
+    ],
+    "optionalFields": [
+      "reviewNotes",
+      "reviewedSourceName",
+      "reviewedSourceUrl"
+    ],
+    "rules": [
+      "Resolve only rows already present in the knowledge-content repair queue.",
+      "Do not broaden beyond the listed blocked knowledge targets.",
+      "Use replace_with_reviewed_exact_target only when a truthful reviewed exact replacement source exists.",
+      "Use defer_blocked_source when the official source is blocked and no safe reviewed replacement has been confirmed.",
+      "Keep reviewedBy populated for every non-empty decision row."
+    ]
+  },
+  "rows": [
+    {
+      "id": "knowledge-idea-child-find",
+      "sourceName": "IDEA Child Find",
+      "sourceUrl": "https://sites.ed.gov/idea/regs/b/d/300.111",
+      "domain": "sites.ed.gov",
+      "lastFollowupReason": "stale_or_invalid_404",
+      "followupRunCount": 4,
+      "repairClass": "official_source_stale_or_removed",
+      "recommendedDecisionMode": "defer_blocked_source",
+      "decisionMode": "defer_blocked_source",
+      "reviewedSourceName": "",
+      "reviewedSourceUrl": "",
+      "reviewNotes": "Auto-applied deterministic dead-source defer from repair queue.",
+      "reviewedBy": "codex"
+    },
+    {
+      "id": "knowledge-ssa-child-disability-starter-kit",
+      "sourceName": "SSA Child Disability Starter Kit",
+      "sourceUrl": "https://www.ssa.gov/disability/disability_starter_kits_child_eng.htm",
+      "domain": "ssa.gov",
+      "lastFollowupReason": "access_blocked_403",
+      "followupRunCount": 3,
+      "repairClass": "official_source_access_blocked",
+      "recommendedDecisionMode": "defer_blocked_source",
+      "decisionMode": "defer_blocked_source",
+      "reviewedSourceName": "",
+      "reviewedSourceUrl": "",
+      "reviewNotes": "Auto-applied deterministic dead-source defer from repair queue.",
+      "reviewedBy": "codex"
+    }
+  ]
+}

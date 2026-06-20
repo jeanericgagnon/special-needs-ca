@@ -1,0 +1,135 @@
+{
+  "generatedAt": "2026-06-19T18:22:13.859Z",
+  "generatedDate": "2026-06-19",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+  "stateId": "delaware",
+  "stateName": "Delaware",
+  "executionPriority": 8,
+  "sourceTargetsPath": "data/source_targets/delaware.json",
+  "ledgerStatus": "complete",
+  "ledgerNote": "added-three-concrete-first-party-provider-targets",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 1,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 3,
+  "placeholderProviderTargetCount": 1,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 0,
+  "neededLiveProviderRows": 2,
+  "authoringGapClass": "needs_refresh_or_deeper_targets",
+  "nextAction": "Refresh Delaware provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+  "providerTargets": [
+    {
+      "sourceName": "Delaware Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for Delaware."
+    },
+    {
+      "sourceName": "Nemours Children's Hospital, Delaware",
+      "sourceUrl": "https://www.nemours.org/",
+      "domain": "nemours.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Nemours first-party pediatric hospital target for Delaware, replacing the generic placeholder domain with the named children's system source."
+    },
+    {
+      "sourceName": "ChristianaCare",
+      "sourceUrl": "https://christianacare.org/",
+      "domain": "christianacare.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official ChristianaCare first-party health-system target for Delaware pediatric and family-facing hospital coverage."
+    },
+    {
+      "sourceName": "Bayhealth Medical Center",
+      "sourceUrl": "https://www.bayhealth.org/",
+      "domain": "bayhealth.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Bayhealth first-party hospital system target for central and southern Delaware provider coverage."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Delaware County Metadata",
+      "sourceUrl": "https://www.delaware.gov",
+      "domain": "delaware.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Delaware Medicaid Portal",
+      "sourceUrl": "https://dhhs.delaware.gov",
+      "domain": "dhhs.delaware.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Delaware Division of Developmental Disabilities Services",
+      "sourceUrl": "https://dhss.delaware.gov/ddds",
+      "domain": "dhss.delaware.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Delaware HCBS Waivers",
+      "sourceUrl": "https://dhss.delaware.gov/ddds/hcbs",
+      "domain": "dhss.delaware.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Delaware Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.delaware.gov/earlyintervention",
+      "domain": "dhhs.delaware.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Delaware Department of Education Special Ed",
+      "sourceUrl": "https://education.delaware.gov",
+      "domain": "education.delaware.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Delaware Regional Special Education Support",
+      "sourceUrl": "https://education.delaware.gov/regional",
+      "domain": "education.delaware.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Delaware Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Delaware",
+      "sourceUrl": "https://www.thearcdelaware.org",
+      "domain": "thearcdelaware.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Delaware Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.delaware.gov/forms",
+      "domain": "dhhs.delaware.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Delaware Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.delaware.gov/rehab",
+      "domain": "dhhs.delaware.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Delaware Secretary of State Business Registry",
+      "sourceUrl": "https://www.delaware.gov/business",
+      "domain": "delaware.gov"
+    }
+  ]
+}

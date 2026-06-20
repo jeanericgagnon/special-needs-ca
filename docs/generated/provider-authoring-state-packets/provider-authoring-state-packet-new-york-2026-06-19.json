@@ -1,0 +1,283 @@
+{
+  "generatedAt": "2026-06-19T18:22:13.898Z",
+  "generatedDate": "2026-06-19",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+  "stateId": "new-york",
+  "stateName": "New York",
+  "executionPriority": 30,
+  "sourceTargetsPath": "data/source_targets/new-york.json",
+  "ledgerStatus": "complete",
+  "ledgerNote": "applied-one-concrete-first-party-provider-target",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 1,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 9,
+  "placeholderProviderTargetCount": 0,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 0,
+  "neededLiveProviderRows": 2,
+  "authoringGapClass": "needs_refresh_or_deeper_targets",
+  "nextAction": "Refresh New York provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+  "providerTargets": [
+    {
+      "sourceName": "NYU Langone Hassenfeld Children's Hospital Center for Child Development",
+      "sourceUrl": "https://nyulangone.org/locations/hassenfeld-childrens-hospital",
+      "domain": "nyulangone.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "official_state",
+      "notes": "Developmental pediatric program."
+    },
+    {
+      "sourceName": "Montefiore Rose F. Kennedy Center",
+      "sourceUrl": "https://www.montefiore.org/rose-f-kennedy-center",
+      "domain": "montefiore.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Pediatric autism and developmental clinic."
+    },
+    {
+      "sourceName": "Cohen Children's Medical Center",
+      "sourceUrl": "https://childrenshospital.northwell.edu",
+      "domain": "childrenshospital.northwell.edu",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Concrete first-party pediatric hospital target for Long Island and downstate New York coverage."
+    },
+    {
+      "sourceName": "Golisano Children's Hospital",
+      "sourceUrl": "https://www.urmc.rochester.edu/childrens-hospital",
+      "domain": "urmc.rochester.edu",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Concrete first-party pediatric hospital target for western New York provider buildout."
+    },
+    {
+      "sourceName": "Upstate Golisano Children's Hospital",
+      "sourceUrl": "https://www.upstate.edu/gch",
+      "domain": "upstate.edu",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Concrete first-party pediatric hospital target for central New York provider buildout."
+    },
+    {
+      "sourceName": "NYU Langone Hassenfeld Children's Hospital Center for Child Development",
+      "sourceUrl": "https://nyulangone.org/locations/hassenfeld-childrens-hospital",
+      "domain": "nyulangone.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "New York first-party pediatric hospital target from the master source target ledger."
+    },
+    {
+      "sourceName": "Montefiore Rose F. Kennedy Center",
+      "sourceUrl": "https://www.montefiore.org/rose-f-kennedy-center",
+      "domain": "montefiore.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "New York first-party developmental clinic target from the master source target ledger."
+    },
+    {
+      "sourceName": "Cohen Children's Medical Center",
+      "sourceUrl": "https://childrenshospital.northwell.edu/",
+      "domain": "childrenshospital.northwell.edu",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "New York first-party pediatric hospital target for downstate coverage."
+    },
+    {
+      "sourceName": "Cohen Children's Medical Center Departments and Services",
+      "sourceUrl": "https://childrenshospital.northwell.edu/departments-services",
+      "domain": "childrenshospital.northwell.edu",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Saved first-party specialty-services path recovered from the archived Cohen Children's provider page."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "New York Counties Wikipedia List",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_counties_in_New_York",
+      "domain": "en.wikipedia.org"
+    },
+    {
+      "targetTable": "counties",
+      "sourceName": "NYS Association of Counties directory",
+      "sourceUrl": "https://www.nyasoc.org",
+      "domain": "nyasoc.org"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "NYS Department of Health Medicaid Homepage",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid/",
+      "domain": "health.ny.gov"
+    },
+    {
+      "targetTable": "program_application_steps",
+      "sourceName": "NY State of Health Marketplace",
+      "sourceUrl": "https://nystateofhealth.ny.gov",
+      "domain": "nystateofhealth.ny.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "NYS Local Social Services Districts (LDSS)",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid/ldss.htm",
+      "domain": "health.ny.gov"
+    },
+    {
+      "targetTable": "program_appeal_info",
+      "sourceName": "NYS OTDA Fair Hearings",
+      "sourceUrl": "https://otda.ny.gov/hearings/",
+      "domain": "otda.ny.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "NYS Consumer Directed Personal Assistance Program (CDPAP)",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid/program/longterm/cdpap.htm",
+      "domain": "health.ny.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "NYS OPWDD Homepage",
+      "sourceUrl": "https://opwdd.ny.gov",
+      "domain": "opwdd.ny.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "OPWDD Front Door Directory (DDRO)",
+      "sourceUrl": "https://opwdd.ny.gov/get-started/front-door",
+      "domain": "opwdd.ny.gov"
+    },
+    {
+      "targetTable": "program_eligibility_rules",
+      "sourceName": "OPWDD Eligibility Guidelines",
+      "sourceUrl": "https://opwdd.ny.gov/eligibility",
+      "domain": "opwdd.ny.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "OPWDD Family Support Services",
+      "sourceUrl": "https://opwdd.ny.gov/types-services/respite-care-and-family-support",
+      "domain": "opwdd.ny.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "OPWDD Self-Direction Services",
+      "sourceUrl": "https://opwdd.ny.gov/types-services/self-direction",
+      "domain": "opwdd.ny.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "OPWDD Home and Community-Based Services Waiver",
+      "sourceUrl": "https://opwdd.ny.gov/providers/home-and-community-based-services-hcbs-waiver",
+      "domain": "opwdd.ny.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "NYS Early Intervention Program",
+      "sourceUrl": "https://www.health.ny.gov/community/infants_children/early_intervention/",
+      "domain": "health.ny.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "NYS EI County Directory",
+      "sourceUrl": "https://www.health.ny.gov/community/infants_children/early_intervention/county_directory.htm",
+      "domain": "health.ny.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "NYS Education Department Special Education",
+      "sourceUrl": "http://www.p12.nysed.gov/specialed/",
+      "domain": "p12.nysed.gov"
+    },
+    {
+      "targetTable": "program_document_requirements",
+      "sourceName": "NYSED Procedural Safeguards Notice",
+      "sourceUrl": "http://www.p12.nysed.gov/specialed/publications/policy/prosafeg.htm",
+      "domain": "p12.nysed.gov"
+    },
+    {
+      "targetTable": "program_appeal_info",
+      "sourceName": "NYSED Special Education State Complaints",
+      "sourceUrl": "http://www.p12.nysed.gov/specialed/qualityassurance/complaint.htm",
+      "domain": "p12.nysed.gov"
+    },
+    {
+      "targetTable": "program_appeal_info",
+      "sourceName": "NYSED Due Process Hearings",
+      "sourceUrl": "http://www.p12.nysed.gov/specialed/dueprocess/dueprocesshome.html",
+      "domain": "p12.nysed.gov"
+    },
+    {
+      "targetTable": "program_appeal_info",
+      "sourceName": "NYSED Mediation Program",
+      "sourceUrl": "http://www.p12.nysed.gov/specialed/dueprocess/mediation.html",
+      "domain": "p12.nysed.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "NYS BOCES Directory",
+      "sourceUrl": "https://www.boces.org",
+      "domain": "boces.org"
+    },
+    {
+      "targetTable": "school_districts",
+      "sourceName": "NYS school district profiles",
+      "sourceUrl": "https://data.nysed.gov",
+      "domain": "data.nysed.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "IncludeNYC Parent Training Center",
+      "sourceUrl": "https://www.includenyc.org",
+      "domain": "includenyc.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Parent Network of WNY",
+      "sourceUrl": "https://parentnetworkwny.org",
+      "domain": "parentnetworkwny.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Disability Rights New York (DRNY)",
+      "sourceUrl": "https://www.disabilityrightsny.org",
+      "domain": "disabilityrightsny.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc New York",
+      "sourceUrl": "https://www.thearcny.org",
+      "domain": "thearcny.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Autism Society of Greater New York",
+      "sourceUrl": "https://www.asgny.org",
+      "domain": "asgny.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Advocates for Children of New York (ACNY)",
+      "sourceUrl": "https://www.advocatesforchildren.org",
+      "domain": "advocatesforchildren.org"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "NYS ACCES-VR",
+      "sourceUrl": "http://www.acces.nysed.gov/vr/",
+      "domain": "acces.nysed.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "NY ABLE",
+      "sourceUrl": "https://www.mynyable.org",
+      "domain": "mynyable.org"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "New York Open Data Portal",
+      "sourceUrl": "https://data.ny.gov",
+      "domain": "data.ny.gov"
+    }
+  ]
+}

@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "source_url": "https://www.mdek12.org/",
+    "confidence_score": 9.5,
+    "notes": "Official statewide Mississippi special education support entrypoint covering all counties.",
+    "suggested_target_id": "ms-ed-mde-special-education",
+    "name": "Mississippi Department of Education Office of Special Education",
+    "phone": "(601) 359-3498",
+    "agency_type": "state-special-education-support",
+    "counties_served": [
+      "adams-ms","alcorn-ms","amite-ms","attala-ms","benton-ms","bolivar-ms","calhoun-ms","carroll-ms","chickasaw-ms","choctaw-ms","claiborne-ms","clarke-ms","clay-ms","coahoma-ms","copiah-ms","covington-ms","desoto-ms","forrest-ms","franklin-ms","george-ms","greene-ms","grenada-ms","hancock-ms","harrison-ms","hinds-ms","holmes-ms","humphreys-ms","issaquena-ms","itawamba-ms","jackson-ms","jasper-ms","jefferson-davis-ms","jefferson-ms","jones-ms","kemper-ms","lafayette-ms","lamar-ms","lauderdale-ms","lawrence-ms","leake-ms","lee-ms","leflore-ms","lincoln-ms","lowndes-ms","madison-ms","marion-ms","marshall-ms","monroe-ms","montgomery-ms","neshoba-ms","newton-ms","noxubee-ms","oktibbeha-ms","panola-ms","pearl-river-ms","perry-ms","pike-ms","pontotoc-ms","prentiss-ms","quitman-ms","rankin-ms","scott-ms","sharkey-ms","simpson-ms","smith-ms","stone-ms","sunflower-ms","tallahatchie-ms","tate-ms","tippah-ms","tishomingo-ms","tunica-ms","union-ms","walthall-ms","warren-ms","washington-ms","wayne-ms","webster-ms","wilkinson-ms","winston-ms","yalobusha-ms","yazoo-ms"
+    ],
+    "website": "https://www.mdek12.org/OSE",
+    "evidence_level": "source_listed",
+    "verification_status": "verified",
+    "data_origin": "scraped"
+  }
+]

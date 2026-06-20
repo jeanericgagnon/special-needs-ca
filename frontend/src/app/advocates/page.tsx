@@ -1,4 +1,5 @@
 import { getCounties, getIepAdvocates } from '@/lib/db';
+import { isPublicDirectoryRecordEligible } from '@/lib/publicTruth';
 import { Metadata } from 'next';
 import { Search } from 'lucide-react';
 import Link from 'next/link';
@@ -37,7 +38,7 @@ export default async function AdvocatesDirectoryPage({ searchParams }: Props) {
   const counties = await getCounties('california');
 
   // 2. Fetch advocates (filter by county if selected, defaulting to California statewide if not)
-  const advocates = await getIepAdvocates(selectedCounty, 'california');
+  const advocates = (await getIepAdvocates(selectedCounty, 'california')).filter(isPublicDirectoryRecordEligible);
   const verifiedAdvocates = advocates.filter(adv => adv.verification_status === 'verified');
 
   // Get name of selected county
@@ -54,7 +55,7 @@ export default async function AdvocatesDirectoryPage({ searchParams }: Props) {
           California IEP Advocates Directory
         </h1>
         <p style={{ fontSize: '1.15rem', maxWidth: '800px', margin: '0 auto', color: 'var(--text-light)', lineHeight: '1.6' }}>
-          Vetted special education advisors, consultants, and legal advocates who help families secure accommodation services, IEP goals, and inclusion placements.
+          Source-backed special education advisors, consultants, and legal advocates who help families secure accommodation services, IEP goals, and inclusion placements.
         </p>
       </div>
 
@@ -141,7 +142,7 @@ export default async function AdvocatesDirectoryPage({ searchParams }: Props) {
       </div>
 
       {/* Directory Cards Grid with search/sort client */}
-      <AdvocateDirectoryClient initialAdvocates={advocates} />
+      <AdvocateDirectoryClient initialAdvocates={advocates} selectedCounty={selectedCounty} />
 
       {/* JSON-LD ProfessionalService Schema Markup for Local SEO */}
       {verifiedAdvocates.length > 0 && (

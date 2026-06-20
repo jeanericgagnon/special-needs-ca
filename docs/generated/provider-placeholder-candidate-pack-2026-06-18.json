@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-06-18T03:33:10.546Z",
+  "inputs": {
+    "masterLedgerPath": "docs/generated/master-source-target-ledger-2026-06-18.json",
+    "stateLedgerPath": "docs/generated/provider-placeholder-state-ledger-2026-06-18.json",
+    "dbDiscoveredPath": "docs/generated/db-discovered-source-targets-2026-06-18.json"
+  },
+  "summary": {
+    "totalStates": 0,
+    "statesWithSuggestedReplacements": 0,
+    "nextState": ""
+  },
+  "states": []
+}

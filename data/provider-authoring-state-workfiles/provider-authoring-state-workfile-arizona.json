@@ -1,0 +1,166 @@
+{
+  "generatedAt": "2026-06-18T18:41:31.705Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "arizona",
+  "stateName": "Arizona",
+  "sourcePacketPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-arizona-2026-06-18.json",
+  "sourceTargetsPath": "data/source_targets/arizona.json",
+  "instructions": {
+    "summary": "Fill only the missing first-party provider targets needed for this state. Do not broaden beyond provider_directory authoring.",
+    "completionRule": "A candidate row is ready only when sourceName, sourceUrl, domain, and reviewedBy are filled."
+  },
+  "summary": {
+    "neededConcreteTargets": 3,
+    "currentConcreteProviderTargetCount": 0,
+    "existingProviderTargetCount": 1,
+    "candidateSlotCount": 3,
+    "readyCandidateCount": 3,
+    "unresolvedCandidateCount": 0
+  },
+  "existingProviderTargets": [
+    {
+      "sourceName": "Arizona Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for Arizona."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Arizona County Metadata",
+      "sourceUrl": "https://www.arizona.gov",
+      "domain": "arizona.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Arizona Medicaid Portal",
+      "sourceUrl": "https://dhhs.arizona.gov",
+      "domain": "dhhs.arizona.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Arizona Division of Developmental Disabilities",
+      "sourceUrl": "https://des.az.gov/ddd",
+      "domain": "des.az.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Arizona HCBS Waivers",
+      "sourceUrl": "https://www.azahcccs.gov/hcbs",
+      "domain": "azahcccs.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Arizona Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.arizona.gov/earlyintervention",
+      "domain": "dhhs.arizona.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Arizona Department of Education Special Ed",
+      "sourceUrl": "https://education.arizona.gov",
+      "domain": "education.arizona.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Arizona Regional Special Education Support",
+      "sourceUrl": "https://education.arizona.gov/regional",
+      "domain": "education.arizona.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Arizona Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Arizona",
+      "sourceUrl": "https://www.thearcarizona.org",
+      "domain": "thearcarizona.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Arizona Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.arizona.gov/forms",
+      "domain": "dhhs.arizona.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Arizona Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.arizona.gov/rehab",
+      "domain": "dhhs.arizona.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Arizona Secretary of State Business Registry",
+      "sourceUrl": "https://www.arizona.gov/business",
+      "domain": "arizona.gov"
+    }
+  ],
+  "candidateProviderTargets": [
+    {
+      "slotNumber": 1,
+      "stateId": "arizona",
+      "stateCode": "AZ",
+      "sourceName": "Phoenix Children's",
+      "sourceUrl": "https://www.phoenixchildrens.org/",
+      "domain": "phoenixchildrens.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Children's hospital",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official Arizona pediatric hospital system target replacing generic placeholder coverage with a named first-party children's hospital source.",
+      "reviewedBy": "codex"
+    },
+    {
+      "slotNumber": 2,
+      "stateId": "arizona",
+      "stateCode": "AZ",
+      "sourceName": "Banner Children's at Desert",
+      "sourceUrl": "https://www.bannerhealth.com/locations/mesa/banner-desert-medical-center",
+      "domain": "bannerhealth.com",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Children's hospital",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official Banner first-party campus page for Banner Children's at Desert on the Mesa Banner Desert campus.",
+      "reviewedBy": "codex"
+    },
+    {
+      "slotNumber": 3,
+      "stateId": "arizona",
+      "stateCode": "AZ",
+      "sourceName": "TMC for Children",
+      "sourceUrl": "https://www.tmcaz.com/",
+      "domain": "tmcaz.com",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Children's hospital",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official Tucson Medical Center first-party target for pediatric hospital and children's services coverage in southern Arizona.",
+      "reviewedBy": "codex"
+    }
+  ]
+}

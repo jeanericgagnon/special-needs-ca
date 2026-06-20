@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-06-18",
+  "sourceQueue": "docs/generated/california-advocate-recovery-queue-2026-06-18.json",
+  "entryCommand": "npm run audit:california-advocate-recovery-decision-template",
+  "applyCommand": "npm run fix:california-advocate-recovery-decisions -- --apply",
+  "auditCommand": "npm run audit:california-advocate-recovery",
+  "commands": [
+    "npm run audit:california-advocate-recovery-decision-template",
+    "npm run fix:california-advocate-recovery-decisions -- --apply",
+    "npm run audit:california-advocate-recovery"
+  ],
+  "instructions": {
+    "allowedDecisionModes": [
+      "attach_reviewed_county_source",
+      "defer_county_until_real_source",
+      "skip_unresolved"
+    ],
+    "requiredTopLevelFields": [
+      "countyId",
+      "decisionMode",
+      "reviewedBy"
+    ],
+    "attachFields": [
+      "reviewedSourceName",
+      "reviewedSourceUrl"
+    ],
+    "optionalFields": [
+      "reviewedSourceName",
+      "reviewedSourceUrl",
+      "reviewNotes"
+    ]
+  },
+  "rows": []
+}

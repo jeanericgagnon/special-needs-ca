@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-06-18T19:19:56.899Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "ohio",
+  "sourceWorkfilePath": "data/provider-authoring-state-workfiles/provider-authoring-state-workfile-ohio.json",
+  "summary": {
+    "neededConcreteTargets": 2,
+    "candidateSlotCount": 2,
+    "readyCandidateCount": 2,
+    "unresolvedCandidateCount": 0,
+    "completionPercent": 100
+  },
+  "nextWork": []
+}

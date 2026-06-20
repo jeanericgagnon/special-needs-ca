@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-06-17T23:13:47.039Z",
+  "mode": "apply",
+  "stateFilter": "wyoming",
+  "inputPath": "data/forms-fallback-manual-review-decisions.json",
+  "summary": {
+    "inputRows": 3,
+    "resolvedRows": 3,
+    "deferredRows": 0,
+    "filesChanged": 2,
+    "skippedByReason": {},
+    "byDecisionMode": {
+      "validate_existing_candidate": 2,
+      "replace_with_reviewed_candidate": 1
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "wyoming",
+      "rowKey": "wyoming|application_or_eligibility_guide|https://health.wyo.gov/behavioralhealth/dd",
+      "status": "applied",
+      "resolvedSourceUrl": "https://health.wyo.gov/behavioralhealth/dd"
+    },
+    {
+      "stateId": "wyoming",
+      "rowKey": "wyoming|application_or_eligibility_guide|https://health.wyo.gov/behavioralhealth/dd/hcbs/eligibility",
+      "status": "applied",
+      "resolvedSourceUrl": "https://health.wyo.gov/behavioralhealth/dd"
+    },
+    {
+      "stateId": "wyoming",
+      "rowKey": "wyoming|general_form_related_page|https://health.wyo.gov/healthcarefin",
+      "status": "applied",
+      "resolvedSourceUrl": "https://health.wyo.gov/healthcarefin"
+    }
+  ],
+  "resolutionArtifacts": {
+    "queuePath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/forms-fallback-manual-review-queue-2026-06-17.json",
+    "resolutionLedgerPath": "data/source-acquisition-state/forms-fallback-manual-review-ledger.json",
+    "resolutionPackPath": "data/source_packs/forms_fallback_manual_resolutions.json"
+  }
+}

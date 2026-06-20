@@ -1,0 +1,11 @@
+[
+  {
+    "id": "prov-acc-review__clinic-hope-chicago-il__faq_page__accessibility_notes",
+    "decision": "reviewed",
+    "clue_page_url": "https://www.thehopeclinic.org/medical-care",
+    "clue_value": "Specialists throughout the area donate their time and services to Hope patients to provide care to our patients onsite and in their offices.",
+    "clue_text": "Specialists throughout the area donate their time and services to Hope patients to provide care to our patients onsite and in their offices.",
+    "review_notes": "Confirmed on the official Hope Clinic medical care page.",
+    "reviewed_by": "codex"
+  }
+]

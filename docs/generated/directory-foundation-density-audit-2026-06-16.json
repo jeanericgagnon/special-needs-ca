@@ -1,0 +1,1016 @@
+{
+  "generatedAt": "2026-06-16",
+  "dbPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/frontend/ca_disability_navigator.db",
+  "tables": [
+    {
+      "tableName": "resource_providers",
+      "label": "Resource Providers",
+      "total": 39,
+      "groups": {
+        "tags": {
+          "presentFields": [
+            "service_tags",
+            "serving_tags"
+          ],
+          "missingFields": [],
+          "recordsWithSignal": 39,
+          "pctWithSignal": 100
+        },
+        "availability": {
+          "presentFields": [
+            "availability_status",
+            "accepting_new_clients",
+            "waitlist_status",
+            "capacity_notes",
+            "funding_status",
+            "checked_at"
+          ],
+          "missingFields": [],
+          "recordsWithSignal": 33,
+          "pctWithSignal": 84.6
+        },
+        "nextSteps": {
+          "presentFields": [
+            "next_step_type",
+            "next_step_label",
+            "next_step_url",
+            "next_step_phone",
+            "next_step_email",
+            "next_step_instructions",
+            "application_url",
+            "referral_url"
+          ],
+          "missingFields": [],
+          "recordsWithSignal": 39,
+          "pctWithSignal": 100
+        },
+        "accessibility": {
+          "presentFields": [
+            "languages",
+            "interpreter_available",
+            "asl_available",
+            "wheelchair_accessible",
+            "virtual_services",
+            "in_person_services",
+            "home_visits",
+            "transportation_help",
+            "accessibility_notes"
+          ],
+          "missingFields": [
+            "languages_spoken"
+          ],
+          "recordsWithSignal": 0,
+          "pctWithSignal": 0
+        },
+        "claimGroundwork": {
+          "presentFields": [
+            "claim_status",
+            "claimed_by",
+            "verified_affiliation",
+            "claim_email"
+          ],
+          "missingFields": [],
+          "recordsWithSignal": 39,
+          "pctWithSignal": 100
+        },
+        "trustFreshness": {
+          "presentFields": [
+            "source_url",
+            "verification_status",
+            "source_name",
+            "source_last_updated",
+            "checked_at",
+            "last_verified_at",
+            "last_verified_date",
+            "last_scraped_at"
+          ],
+          "missingFields": [],
+          "recordsWithSignal": 39,
+          "pctWithSignal": 100
+        }
+      },
+      "states": [
+        {
+          "stateId": "florida",
+          "stateName": "Florida",
+          "total": 14,
+          "tagRows": 14,
+          "nextStepRows": 14,
+          "availabilityRows": 14,
+          "freshnessRows": 14,
+          "tagPct": 100,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "texas",
+          "stateName": "Texas",
+          "total": 9,
+          "tagRows": 9,
+          "nextStepRows": 9,
+          "availabilityRows": 9,
+          "freshnessRows": 9,
+          "tagPct": 100,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "pennsylvania",
+          "stateName": "Pennsylvania",
+          "total": 7,
+          "tagRows": 7,
+          "nextStepRows": 7,
+          "availabilityRows": 7,
+          "freshnessRows": 7,
+          "tagPct": 100,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "illinois",
+          "stateName": "Illinois",
+          "total": 6,
+          "tagRows": 6,
+          "nextStepRows": 6,
+          "availabilityRows": 0,
+          "freshnessRows": 6,
+          "tagPct": 100,
+          "nextStepPct": 100,
+          "availabilityPct": 0,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "georgia",
+          "stateName": "Georgia",
+          "total": 1,
+          "tagRows": 1,
+          "nextStepRows": 1,
+          "availabilityRows": 1,
+          "freshnessRows": 1,
+          "tagPct": 100,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "north-carolina",
+          "stateName": "North Carolina",
+          "total": 1,
+          "tagRows": 1,
+          "nextStepRows": 1,
+          "availabilityRows": 1,
+          "freshnessRows": 1,
+          "tagPct": 100,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "ohio",
+          "stateName": "Ohio",
+          "total": 1,
+          "tagRows": 1,
+          "nextStepRows": 1,
+          "availabilityRows": 1,
+          "freshnessRows": 1,
+          "tagPct": 100,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        }
+      ]
+    },
+    {
+      "tableName": "nonprofit_organizations",
+      "label": "Nonprofit Organizations",
+      "total": 29499,
+      "groups": {
+        "tags": {
+          "presentFields": [
+            "service_tags",
+            "serving_tags"
+          ],
+          "missingFields": [],
+          "recordsWithSignal": 18617,
+          "pctWithSignal": 63.1
+        },
+        "availability": {
+          "presentFields": [
+            "availability_status",
+            "accepting_new_clients",
+            "waitlist_status",
+            "capacity_notes",
+            "funding_status",
+            "checked_at"
+          ],
+          "missingFields": [],
+          "recordsWithSignal": 29492,
+          "pctWithSignal": 100
+        },
+        "nextSteps": {
+          "presentFields": [
+            "next_step_type",
+            "next_step_label",
+            "next_step_url",
+            "next_step_phone",
+            "next_step_email",
+            "next_step_instructions",
+            "application_url",
+            "referral_url"
+          ],
+          "missingFields": [],
+          "recordsWithSignal": 29499,
+          "pctWithSignal": 100
+        },
+        "accessibility": {
+          "presentFields": [
+            "languages",
+            "interpreter_available",
+            "asl_available",
+            "wheelchair_accessible",
+            "virtual_services",
+            "in_person_services",
+            "home_visits",
+            "transportation_help",
+            "accessibility_notes"
+          ],
+          "missingFields": [
+            "languages_spoken"
+          ],
+          "recordsWithSignal": 0,
+          "pctWithSignal": 0
+        },
+        "claimGroundwork": {
+          "presentFields": [
+            "claim_status",
+            "claimed_by",
+            "verified_affiliation",
+            "claim_email"
+          ],
+          "missingFields": [],
+          "recordsWithSignal": 29499,
+          "pctWithSignal": 100
+        },
+        "trustFreshness": {
+          "presentFields": [
+            "source_url",
+            "verification_status",
+            "source_name",
+            "source_last_updated",
+            "checked_at",
+            "last_verified_at",
+            "last_verified_date",
+            "last_scraped_at"
+          ],
+          "missingFields": [],
+          "recordsWithSignal": 29499,
+          "pctWithSignal": 100
+        }
+      },
+      "states": [
+        {
+          "stateId": "texas",
+          "stateName": "Texas",
+          "total": 4505,
+          "tagRows": 2353,
+          "nextStepRows": 4505,
+          "availabilityRows": 4505,
+          "freshnessRows": 4505,
+          "tagPct": 52.2,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "louisiana",
+          "stateName": "Louisiana",
+          "total": 1664,
+          "tagRows": 1408,
+          "nextStepRows": 1664,
+          "availabilityRows": 1664,
+          "freshnessRows": 1664,
+          "tagPct": 84.6,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "indiana",
+          "stateName": "Indiana",
+          "total": 1507,
+          "tagRows": 1231,
+          "nextStepRows": 1507,
+          "availabilityRows": 1507,
+          "freshnessRows": 1507,
+          "tagPct": 81.7,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "new-york",
+          "stateName": "New York",
+          "total": 1403,
+          "tagRows": 905,
+          "nextStepRows": 1403,
+          "availabilityRows": 1403,
+          "freshnessRows": 1403,
+          "tagPct": 64.5,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "virginia",
+          "stateName": "Virginia",
+          "total": 1157,
+          "tagRows": 868,
+          "nextStepRows": 1157,
+          "availabilityRows": 1157,
+          "freshnessRows": 1157,
+          "tagPct": 75,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "florida",
+          "stateName": "Florida",
+          "total": 1125,
+          "tagRows": 922,
+          "nextStepRows": 1125,
+          "availabilityRows": 1125,
+          "freshnessRows": 1125,
+          "tagPct": 82,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "michigan",
+          "stateName": "Michigan",
+          "total": 1015,
+          "tagRows": 766,
+          "nextStepRows": 1015,
+          "availabilityRows": 1015,
+          "freshnessRows": 1015,
+          "tagPct": 75.5,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "kentucky",
+          "stateName": "Kentucky",
+          "total": 962,
+          "tagRows": 602,
+          "nextStepRows": 962,
+          "availabilityRows": 962,
+          "freshnessRows": 962,
+          "tagPct": 62.6,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "illinois",
+          "stateName": "Illinois",
+          "total": 929,
+          "tagRows": 828,
+          "nextStepRows": 929,
+          "availabilityRows": 922,
+          "freshnessRows": 929,
+          "tagPct": 89.1,
+          "nextStepPct": 100,
+          "availabilityPct": 99.2,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "california",
+          "stateName": "California",
+          "total": 871,
+          "tagRows": 378,
+          "nextStepRows": 871,
+          "availabilityRows": 871,
+          "freshnessRows": 871,
+          "tagPct": 43.4,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "tennessee",
+          "stateName": "Tennessee",
+          "total": 866,
+          "tagRows": 486,
+          "nextStepRows": 866,
+          "availabilityRows": 866,
+          "freshnessRows": 866,
+          "tagPct": 56.1,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "north-carolina",
+          "stateName": "North Carolina",
+          "total": 823,
+          "tagRows": 515,
+          "nextStepRows": 823,
+          "availabilityRows": 823,
+          "freshnessRows": 823,
+          "tagPct": 62.6,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "georgia",
+          "stateName": "Georgia",
+          "total": 812,
+          "tagRows": 653,
+          "nextStepRows": 812,
+          "availabilityRows": 812,
+          "freshnessRows": 812,
+          "tagPct": 80.4,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "nebraska",
+          "stateName": "Nebraska",
+          "total": 751,
+          "tagRows": 472,
+          "nextStepRows": 751,
+          "availabilityRows": 751,
+          "freshnessRows": 751,
+          "tagPct": 62.8,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "kansas",
+          "stateName": "Kansas",
+          "total": 738,
+          "tagRows": 423,
+          "nextStepRows": 738,
+          "availabilityRows": 738,
+          "freshnessRows": 738,
+          "tagPct": 57.3,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "colorado",
+          "stateName": "Colorado",
+          "total": 721,
+          "tagRows": 524,
+          "nextStepRows": 721,
+          "availabilityRows": 721,
+          "freshnessRows": 721,
+          "tagPct": 72.7,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "missouri",
+          "stateName": "Missouri",
+          "total": 694,
+          "tagRows": 349,
+          "nextStepRows": 694,
+          "availabilityRows": 694,
+          "freshnessRows": 694,
+          "tagPct": 50.3,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "alabama",
+          "stateName": "Alabama",
+          "total": 630,
+          "tagRows": 429,
+          "nextStepRows": 630,
+          "availabilityRows": 630,
+          "freshnessRows": 630,
+          "tagPct": 68.1,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "ohio",
+          "stateName": "Ohio",
+          "total": 619,
+          "tagRows": 531,
+          "nextStepRows": 619,
+          "availabilityRows": 619,
+          "freshnessRows": 619,
+          "tagPct": 85.8,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "iowa",
+          "stateName": "Iowa",
+          "total": 601,
+          "tagRows": 304,
+          "nextStepRows": 601,
+          "availabilityRows": 601,
+          "freshnessRows": 601,
+          "tagPct": 50.6,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "mississippi",
+          "stateName": "Mississippi",
+          "total": 575,
+          "tagRows": 329,
+          "nextStepRows": 575,
+          "availabilityRows": 575,
+          "freshnessRows": 575,
+          "tagPct": 57.2,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "minnesota",
+          "stateName": "Minnesota",
+          "total": 522,
+          "tagRows": 261,
+          "nextStepRows": 522,
+          "availabilityRows": 522,
+          "freshnessRows": 522,
+          "tagPct": 50,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "wisconsin",
+          "stateName": "Wisconsin",
+          "total": 511,
+          "tagRows": 223,
+          "nextStepRows": 511,
+          "availabilityRows": 511,
+          "freshnessRows": 511,
+          "tagPct": 43.6,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "arkansas",
+          "stateName": "Arkansas",
+          "total": 450,
+          "tagRows": 225,
+          "nextStepRows": 450,
+          "availabilityRows": 450,
+          "freshnessRows": 450,
+          "tagPct": 50,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "pennsylvania",
+          "stateName": "Pennsylvania",
+          "total": 449,
+          "tagRows": 380,
+          "nextStepRows": 449,
+          "availabilityRows": 449,
+          "freshnessRows": 449,
+          "tagPct": 84.6,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "south-dakota",
+          "stateName": "South Dakota",
+          "total": 396,
+          "tagRows": 198,
+          "nextStepRows": 396,
+          "availabilityRows": 396,
+          "freshnessRows": 396,
+          "tagPct": 50,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "oklahoma",
+          "stateName": "Oklahoma",
+          "total": 385,
+          "tagRows": 77,
+          "nextStepRows": 385,
+          "availabilityRows": 385,
+          "freshnessRows": 385,
+          "tagPct": 20,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "west-virginia",
+          "stateName": "West Virginia",
+          "total": 332,
+          "tagRows": 167,
+          "nextStepRows": 332,
+          "availabilityRows": 332,
+          "freshnessRows": 332,
+          "tagPct": 50.3,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "north-dakota",
+          "stateName": "North Dakota",
+          "total": 322,
+          "tagRows": 163,
+          "nextStepRows": 322,
+          "availabilityRows": 322,
+          "freshnessRows": 322,
+          "tagPct": 50.6,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "south-carolina",
+          "stateName": "South Carolina",
+          "total": 283,
+          "tagRows": 142,
+          "nextStepRows": 283,
+          "availabilityRows": 283,
+          "freshnessRows": 283,
+          "tagPct": 50.2,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "montana",
+          "stateName": "Montana",
+          "total": 281,
+          "tagRows": 113,
+          "nextStepRows": 281,
+          "availabilityRows": 281,
+          "freshnessRows": 281,
+          "tagPct": 40.2,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "oregon",
+          "stateName": "Oregon",
+          "total": 259,
+          "tagRows": 115,
+          "nextStepRows": 259,
+          "availabilityRows": 259,
+          "freshnessRows": 259,
+          "tagPct": 44.4,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "massachusetts",
+          "stateName": "Massachusetts",
+          "total": 244,
+          "tagRows": 202,
+          "nextStepRows": 244,
+          "availabilityRows": 244,
+          "freshnessRows": 244,
+          "tagPct": 82.8,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "idaho",
+          "stateName": "Idaho",
+          "total": 220,
+          "tagRows": 88,
+          "nextStepRows": 220,
+          "availabilityRows": 220,
+          "freshnessRows": 220,
+          "tagPct": 40,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "washington",
+          "stateName": "Washington",
+          "total": 202,
+          "tagRows": 123,
+          "nextStepRows": 202,
+          "availabilityRows": 202,
+          "freshnessRows": 202,
+          "tagPct": 60.9,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "maryland",
+          "stateName": "Maryland",
+          "total": 200,
+          "tagRows": 128,
+          "nextStepRows": 200,
+          "availabilityRows": 200,
+          "freshnessRows": 200,
+          "tagPct": 64,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "new-mexico",
+          "stateName": "New Mexico",
+          "total": 199,
+          "tagRows": 67,
+          "nextStepRows": 199,
+          "availabilityRows": 199,
+          "freshnessRows": 199,
+          "tagPct": 33.7,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "arizona",
+          "stateName": "Arizona",
+          "total": 182,
+          "tagRows": 122,
+          "nextStepRows": 182,
+          "availabilityRows": 182,
+          "freshnessRows": 182,
+          "tagPct": 67,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "utah",
+          "stateName": "Utah",
+          "total": 174,
+          "tagRows": 87,
+          "nextStepRows": 174,
+          "availabilityRows": 174,
+          "freshnessRows": 174,
+          "tagPct": 50,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "new-jersey",
+          "stateName": "New Jersey",
+          "total": 147,
+          "tagRows": 83,
+          "nextStepRows": 147,
+          "availabilityRows": 147,
+          "freshnessRows": 147,
+          "tagPct": 56.5,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "connecticut",
+          "stateName": "Connecticut",
+          "total": 130,
+          "tagRows": 98,
+          "nextStepRows": 130,
+          "availabilityRows": 130,
+          "freshnessRows": 130,
+          "tagPct": 75.4,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "alaska",
+          "stateName": "Alaska",
+          "total": 120,
+          "tagRows": 40,
+          "nextStepRows": 120,
+          "availabilityRows": 120,
+          "freshnessRows": 120,
+          "tagPct": 33.3,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "wyoming",
+          "stateName": "Wyoming",
+          "total": 117,
+          "tagRows": 48,
+          "nextStepRows": 117,
+          "availabilityRows": 117,
+          "freshnessRows": 117,
+          "tagPct": 41,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "nevada",
+          "stateName": "Nevada",
+          "total": 102,
+          "tagRows": 51,
+          "nextStepRows": 102,
+          "availabilityRows": 102,
+          "freshnessRows": 102,
+          "tagPct": 50,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "maine",
+          "stateName": "Maine",
+          "total": 96,
+          "tagRows": 48,
+          "nextStepRows": 96,
+          "availabilityRows": 96,
+          "freshnessRows": 96,
+          "tagPct": 50,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "vermont",
+          "stateName": "Vermont",
+          "total": 70,
+          "tagRows": 28,
+          "nextStepRows": 70,
+          "availabilityRows": 70,
+          "freshnessRows": 70,
+          "tagPct": 40,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "new-hampshire",
+          "stateName": "New Hampshire",
+          "total": 50,
+          "tagRows": 20,
+          "nextStepRows": 50,
+          "availabilityRows": 50,
+          "freshnessRows": 50,
+          "tagPct": 40,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "hawaii",
+          "stateName": "Hawaii",
+          "total": 41,
+          "tagRows": 21,
+          "nextStepRows": 41,
+          "availabilityRows": 41,
+          "freshnessRows": 41,
+          "tagPct": 51.2,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "rhode-island",
+          "stateName": "Rhode Island",
+          "total": 35,
+          "tagRows": 20,
+          "nextStepRows": 35,
+          "availabilityRows": 35,
+          "freshnessRows": 35,
+          "tagPct": 57.1,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        },
+        {
+          "stateId": "delaware",
+          "stateName": "Delaware",
+          "total": 12,
+          "tagRows": 3,
+          "nextStepRows": 12,
+          "availabilityRows": 12,
+          "freshnessRows": 12,
+          "tagPct": 25,
+          "nextStepPct": 100,
+          "availabilityPct": 100,
+          "freshnessPct": 100
+        }
+      ]
+    },
+    {
+      "tableName": "iep_advocates",
+      "label": "IEP Advocates",
+      "total": 3573,
+      "groups": {
+        "tags": {
+          "presentFields": [
+            "service_tags",
+            "serving_tags"
+          ],
+          "missingFields": [],
+          "recordsWithSignal": 3573,
+          "pctWithSignal": 100
+        },
+        "availability": {
+          "presentFields": [
+            "availability_status",
+            "accepting_new_clients",
+            "waitlist_status",
+            "capacity_notes",
+            "funding_status",
+            "checked_at"
+          ],
+          "missingFields": [],
+          "recordsWithSignal": 3573,
+          "pctWithSignal": 100
+        },
+        "nextSteps": {
+          "presentFields": [
+            "next_step_type",
+            "next_step_label",
+            "next_step_url",
+            "next_step_phone",
+            "next_step_email",
+            "next_step_instructions",
+            "application_url",
+            "referral_url"
+          ],
+          "missingFields": [],
+          "recordsWithSignal": 3573,
+          "pctWithSignal": 100
+        },
+        "accessibility": {
+          "presentFields": [
+            "languages_spoken",
+            "interpreter_available",
+            "asl_available",
+            "wheelchair_accessible",
+            "virtual_services",
+            "in_person_services",
+            "home_visits",
+            "transportation_help",
+            "accessibility_notes"
+          ],
+          "missingFields": [
+            "languages"
+          ],
+          "recordsWithSignal": 3573,
+          "pctWithSignal": 100
+        },
+        "claimGroundwork": {
+          "presentFields": [
+            "claim_status",
+            "claimed_by",
+            "verified_affiliation",
+            "claim_email"
+          ],
+          "missingFields": [],
+          "recordsWithSignal": 3573,
+          "pctWithSignal": 100
+        },
+        "trustFreshness": {
+          "presentFields": [
+            "source_url",
+            "verification_status",
+            "source_name",
+            "source_last_updated",
+            "checked_at",
+            "last_verified_at",
+            "last_verified_date",
+            "last_scraped_at"
+          ],
+          "missingFields": [],
+          "recordsWithSignal": 3573,
+          "pctWithSignal": 100
+        }
+      },
+      "states": []
+    }
+  ]
+}

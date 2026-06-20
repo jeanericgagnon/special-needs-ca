@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-06-18T19:28:04.586Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "vermont",
+  "sourceWorkfilePath": "data/provider-authoring-state-workfiles/provider-authoring-state-workfile-vermont.json",
+  "summary": {
+    "neededConcreteTargets": 3,
+    "candidateSlotCount": 3,
+    "readyCandidateCount": 0,
+    "unresolvedCandidateCount": 3,
+    "completionPercent": 0
+  },
+  "nextWork": [
+    {
+      "slotNumber": 1,
+      "sourceName": "",
+      "sourceUrl": "",
+      "organizationType": ""
+    },
+    {
+      "slotNumber": 2,
+      "sourceName": "",
+      "sourceUrl": "",
+      "organizationType": ""
+    },
+    {
+      "slotNumber": 3,
+      "sourceName": "",
+      "sourceUrl": "",
+      "organizationType": ""
+    }
+  ]
+}

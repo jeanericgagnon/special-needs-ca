@@ -1,0 +1,54 @@
+{
+  "briefId": "provider_repair_authoring_brief",
+  "generatedAt": "2026-06-18T06:26:41.960Z",
+  "generatedDate": "2026-06-18",
+  "sourcePacketPath": "docs/generated/provider-repair-batch-packet-pull-now-tennessee-2026-06-18.json",
+  "stateId": "tennessee",
+  "purpose": "Deterministic authoring brief for unresolved provider repair rows that still need same-org first-party replacement URLs.",
+  "summary": {
+    "unresolvedRows": 3,
+    "rowsWithSavedEvidence": 3,
+    "rowsWithCandidateHints": 0
+  },
+  "rows": [
+    {
+      "stateId": "tennessee",
+      "stateName": "Tennessee",
+      "actionClass": "author_alternate_first_party_target",
+      "followupReason": "access_blocked_403",
+      "sourceUrl": "https://www.dollychildrens.org/",
+      "hostname": "www.dollychildrens.org",
+      "repeatCount": 12,
+      "savedEvidencePath": "data/source-acquisition-runs/2026-06-18T03-35-00-610Z/pages/00001-tennessee-providers-care-dolly-parton-children-s-hospital.html",
+      "savedEvidenceStatus": "saved_html_present",
+      "candidateHints": [],
+      "nextAction": "Author a current same-org first-party replacement URL before the next provider fetch cycle."
+    },
+    {
+      "stateId": "tennessee",
+      "stateName": "Tennessee",
+      "actionClass": "author_alternate_first_party_target",
+      "followupReason": "access_blocked_403",
+      "sourceUrl": "https://www.dollychildrens.org/about-us/our-locations/dolly-parton-childrens-hospital-main-campus",
+      "hostname": "www.dollychildrens.org",
+      "repeatCount": 2,
+      "savedEvidencePath": "data/source-acquisition-runs/2026-06-18T03-35-00-610Z/pages/00002-tennessee-providers-care-dolly-parton-children-s-hospital-main-campus.html",
+      "savedEvidenceStatus": "saved_html_present",
+      "candidateHints": [],
+      "nextAction": "Author a current same-org first-party replacement URL before the next provider fetch cycle."
+    },
+    {
+      "stateId": "tennessee",
+      "stateName": "Tennessee",
+      "actionClass": "author_alternate_first_party_target",
+      "followupReason": "access_blocked_403",
+      "sourceUrl": "https://www.dollychildrens.org/medical-services/specialty-clinics",
+      "hostname": "www.dollychildrens.org",
+      "repeatCount": 2,
+      "savedEvidencePath": "data/source-acquisition-runs/2026-06-18T03-35-00-610Z/pages/00003-tennessee-providers-care-dolly-parton-children-s-hospital-specialty-clinics.html",
+      "savedEvidenceStatus": "saved_html_present",
+      "candidateHints": [],
+      "nextAction": "Author a current same-org first-party replacement URL before the next provider fetch cycle."
+    }
+  ]
+}

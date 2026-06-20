@@ -1,0 +1,145 @@
+{
+  "generatedAt": "2026-06-18T05:52:08.763Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "louisiana",
+  "sourceStatePacketPath": "docs/generated/provider-pull-now-state-packets/provider-pull-now-state-packet-louisiana-2026-06-18.json",
+  "sourceDecisionFilePath": "data/provider-pull-now-decisions.json",
+  "summary": {
+    "totalRows": 3,
+    "unresolvedRows": 3,
+    "bySuggestedDecisionMode": {
+      "needs_manual_research": 3
+    }
+  },
+  "rows": [
+    {
+      "stateId": "louisiana",
+      "actionClass": "replace_domain",
+      "followupReason": "dns_lookup_failed",
+      "sourceUrl": "https://www.lsuhs.edu/",
+      "hostname": "www.lsuhs.edu",
+      "repeatCount": 2,
+      "sameDomainCandidateCount": 1,
+      "sameDomainCandidates": [
+        {
+          "sourceName": "LSU Health Shreveport Children's Center",
+          "sourceUrl": "https://www.lsuhs.edu/",
+          "priority": 2
+        }
+      ],
+      "topConcreteTargets": [
+        {
+          "sourceName": "Manning Family Children's",
+          "sourceUrl": "https://www.manningchildrens.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Ochsner Hospital for Children",
+          "sourceUrl": "https://www.ochsner.org/",
+          "priority": 2
+        },
+        {
+          "sourceName": "LSU Health Shreveport Children's Center",
+          "sourceUrl": "https://www.lsuhs.edu/",
+          "priority": 2
+        }
+      ],
+      "currentDecision": {
+        "decisionMode": "",
+        "reviewedSourceName": "",
+        "reviewedSourceUrl": "",
+        "retryNotes": "",
+        "reviewNotes": "",
+        "reviewedBy": ""
+      },
+      "suggestedDecisionMode": "needs_manual_research",
+      "suggestedReason": "A same-domain candidate exists, but saved artifacts did not prove a safe, meaningfully different replacement URL."
+    },
+    {
+      "stateId": "louisiana",
+      "actionClass": "replace_domain",
+      "followupReason": "dns_lookup_failed",
+      "sourceUrl": "https://www.manningchildrens.org/",
+      "hostname": "www.manningchildrens.org",
+      "repeatCount": 2,
+      "sameDomainCandidateCount": 1,
+      "sameDomainCandidates": [
+        {
+          "sourceName": "Manning Family Children's",
+          "sourceUrl": "https://www.manningchildrens.org/",
+          "priority": 1
+        }
+      ],
+      "topConcreteTargets": [
+        {
+          "sourceName": "Manning Family Children's",
+          "sourceUrl": "https://www.manningchildrens.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Ochsner Hospital for Children",
+          "sourceUrl": "https://www.ochsner.org/",
+          "priority": 2
+        },
+        {
+          "sourceName": "LSU Health Shreveport Children's Center",
+          "sourceUrl": "https://www.lsuhs.edu/",
+          "priority": 2
+        }
+      ],
+      "currentDecision": {
+        "decisionMode": "",
+        "reviewedSourceName": "",
+        "reviewedSourceUrl": "",
+        "retryNotes": "",
+        "reviewNotes": "",
+        "reviewedBy": ""
+      },
+      "suggestedDecisionMode": "needs_manual_research",
+      "suggestedReason": "A same-domain candidate exists, but saved artifacts did not prove a safe, meaningfully different replacement URL."
+    },
+    {
+      "stateId": "louisiana",
+      "actionClass": "replace_domain",
+      "followupReason": "dns_lookup_failed",
+      "sourceUrl": "https://www.ochsner.org/",
+      "hostname": "www.ochsner.org",
+      "repeatCount": 2,
+      "sameDomainCandidateCount": 1,
+      "sameDomainCandidates": [
+        {
+          "sourceName": "Ochsner Hospital for Children",
+          "sourceUrl": "https://www.ochsner.org/",
+          "priority": 2
+        }
+      ],
+      "topConcreteTargets": [
+        {
+          "sourceName": "Manning Family Children's",
+          "sourceUrl": "https://www.manningchildrens.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Ochsner Hospital for Children",
+          "sourceUrl": "https://www.ochsner.org/",
+          "priority": 2
+        },
+        {
+          "sourceName": "LSU Health Shreveport Children's Center",
+          "sourceUrl": "https://www.lsuhs.edu/",
+          "priority": 2
+        }
+      ],
+      "currentDecision": {
+        "decisionMode": "",
+        "reviewedSourceName": "",
+        "reviewedSourceUrl": "",
+        "retryNotes": "",
+        "reviewNotes": "",
+        "reviewedBy": ""
+      },
+      "suggestedDecisionMode": "needs_manual_research",
+      "suggestedReason": "A same-domain candidate exists, but saved artifacts did not prove a safe, meaningfully different replacement URL."
+    }
+  ]
+}

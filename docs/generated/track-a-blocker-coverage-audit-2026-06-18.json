@@ -1,0 +1,75 @@
+{
+  "generatedAt": "2026-06-18T14:50:13.655Z",
+  "generatedDate": "2026-06-18",
+  "sourceArtifacts": {
+    "completionPlanPath": "docs/generated/source-acquisition-completion-plan-2026-06-18.json",
+    "maxInfoPath": "docs/generated/max-info-program-2026-06-18.json",
+    "blockerRegistryPath": "docs/generated/track-a-blocker-registry-2026-06-18.json",
+    "missingFamiliesPath": "docs/generated/missing-source-families-2026-06-18.json"
+  },
+  "summary": {
+    "missingSourceFamilyCount": 0,
+    "stillNeedToAuthorCount": 0,
+    "blockerCount": 5,
+    "blockerRowsCoveredByRegistry": 5,
+    "blockerRowsWithCommands": 5,
+    "unknownBlockerCount": 0
+  },
+  "blockerRows": [
+    {
+      "id": "provider_directory",
+      "status": "critical_gap",
+      "coveredByRegistry": true,
+      "artifactCount": 4,
+      "hasNextAction": true,
+      "hasEntryCommand": true,
+      "hasAuditCommand": true,
+      "hasCommands": true,
+      "hasMetrics": true
+    },
+    {
+      "id": "advocate_directory_depth",
+      "status": "meaningful_but_not_exhaustive",
+      "coveredByRegistry": true,
+      "artifactCount": 4,
+      "hasNextAction": true,
+      "hasEntryCommand": true,
+      "hasAuditCommand": true,
+      "hasCommands": true,
+      "hasMetrics": true
+    },
+    {
+      "id": "directory_foundation_signals",
+      "status": "partial",
+      "coveredByRegistry": true,
+      "artifactCount": 4,
+      "hasNextAction": true,
+      "hasEntryCommand": true,
+      "hasAuditCommand": true,
+      "hasCommands": true,
+      "hasMetrics": true
+    },
+    {
+      "id": "normalization_depth",
+      "status": "partial",
+      "coveredByRegistry": true,
+      "artifactCount": 3,
+      "hasNextAction": true,
+      "hasEntryCommand": true,
+      "hasAuditCommand": true,
+      "hasCommands": true,
+      "hasMetrics": true
+    },
+    {
+      "id": "knowledge_content_depth",
+      "status": "critical_gap",
+      "coveredByRegistry": true,
+      "artifactCount": 3,
+      "hasNextAction": true,
+      "hasEntryCommand": true,
+      "hasAuditCommand": true,
+      "hasCommands": true,
+      "hasMetrics": true
+    }
+  ]
+}

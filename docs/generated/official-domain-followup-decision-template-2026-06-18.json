@@ -1,0 +1,3776 @@
+{
+  "generatedAt": "2026-06-18",
+  "sourceQueue": "docs/generated/official-domain-followup-queue-2026-06-18.json",
+  "sourcePack": "data/source_packs/official_state_domain_repairs.json",
+  "instructions": {
+    "allowedDecisionModes": [
+      "choose_exact_candidate",
+      "verify_first_party_root_hint",
+      "skip_followup"
+    ],
+    "requiredTopLevelFields": [
+      "stateId",
+      "targetTable",
+      "sourceName",
+      "fakeSourceUrl",
+      "decisionMode",
+      "reviewedBy"
+    ],
+    "chooseExactCandidateFields": [
+      "chosenCandidateUrl"
+    ],
+    "verifyFirstPartyRootHintFields": [
+      "verifiedReplacementUrl",
+      "verifiedReplacementName"
+    ],
+    "skipFields": [
+      "reviewNotes"
+    ],
+    "rules": [
+      "Use choose_exact_candidate only when selecting a single medium-confidence official URL from the provided candidate list.",
+      "Use verify_first_party_root_hint only when the root-hint domain has been reviewed and judged safe for the specific lane.",
+      "Do not invent new replacement URLs outside the row candidate context unless they are added deliberately in a later repair pass.",
+      "Do not apply any follow-up row without reviewedBy and a decisionMode."
+    ]
+  },
+  "rows": [
+    {
+      "stateId": "iowa",
+      "targetTable": "forms",
+      "lane": "forms_library",
+      "sourceName": "Iowa Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.iowa.gov/forms",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official forms, downloads, or publications library.",
+      "replacementCandidates": [
+        {
+          "name": "Iowa Ei Referral Guide",
+          "url": "https://hhs.iowa.gov/",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "Iowa Medicaid",
+          "url": "https://hhs.iowa.gov/medicaid",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "iowa",
+      "targetTable": "programs",
+      "lane": "waiver_program",
+      "sourceName": "Iowa HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.iowa.gov/dd/waivers",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official waiver program page on a first-party state agency domain.",
+      "replacementCandidates": [
+        {
+          "name": "Iowa HCBS Waivers",
+          "url": "https://hhs.iowa.gov/hcbs",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Iowa HCBS Waivers",
+          "url": "https://hhs.iowa.gov/hcbs/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "iowa",
+      "targetTable": "state_resource_agencies",
+      "lane": "dd_state_directory",
+      "sourceName": "Iowa Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.iowa.gov/dd",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official DD/IDD intake or regional office directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Iowa Department of Health and Human Services",
+          "url": "https://hhs.iowa.gov/",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Iowa Department of Health and Human Services",
+          "url": "https://hhs.iowa.gov/developmental-disabilities",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "kansas",
+      "targetTable": "forms",
+      "lane": "forms_library",
+      "sourceName": "Kansas Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.kansas.gov/forms",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official forms, downloads, or publications library.",
+      "replacementCandidates": [
+        {
+          "name": "Kansas Medicaid App Guide",
+          "url": "https://www.kancare.ks.gov/",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "Kansas Ei Referral Guide",
+          "url": "https://www.kdads.ks.gov/",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "Kansas Dd Intake Request Guide",
+          "url": "https://www.kdads.ks.gov/hcbs/eligibility",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "kansas",
+      "targetTable": "programs",
+      "lane": "waiver_program",
+      "sourceName": "Kansas HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.kansas.gov/dd/waivers",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official waiver program page on a first-party state agency domain.",
+      "replacementCandidates": [
+        {
+          "name": "Kansas HCBS Waivers",
+          "url": "https://www.kdads.ks.gov/hcbs",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Kansas HCBS Waivers",
+          "url": "https://www.kdads.ks.gov/hcbs/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "kansas",
+      "targetTable": "state_resource_agencies",
+      "lane": "dd_state_directory",
+      "sourceName": "Kansas Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.kansas.gov/dd",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official DD/IDD intake or regional office directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Kansas Department for Aging and Disability Services",
+          "url": "https://www.kdads.ks.gov/",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Kansas Department for Aging and Disability Services",
+          "url": "https://www.kdads.ks.gov/developmental-disabilities",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "kentucky",
+      "targetTable": "forms",
+      "lane": "forms_library",
+      "sourceName": "Kentucky Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.kentucky.gov/forms",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official forms, downloads, or publications library.",
+      "replacementCandidates": [
+        {
+          "name": "Kentucky Department for Medicaid Services",
+          "url": "https://dbhdid.ky.gov/",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "Kentucky Dd Intake Request Guide",
+          "url": "https://dbhdid.ky.gov/hcbs/eligibility",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "kentucky",
+      "targetTable": "programs",
+      "lane": "waiver_program",
+      "sourceName": "Kentucky HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.kentucky.gov/dd/waivers",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official waiver program page on a first-party state agency domain.",
+      "replacementCandidates": [
+        {
+          "name": "Kentucky HCBS Waivers",
+          "url": "https://dbhdid.ky.gov/hcbs",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Kentucky HCBS Waivers",
+          "url": "https://dbhdid.ky.gov/hcbs/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "kentucky",
+      "targetTable": "state_resource_agencies",
+      "lane": "dd_state_directory",
+      "sourceName": "Kentucky Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.kentucky.gov/dd",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official DD/IDD intake or regional office directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Kentucky Department for Behavioral Health, Developmental and Intellectual Disabilities",
+          "url": "https://dbhdid.ky.gov/",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Kentucky Department for Behavioral Health, Developmental and Intellectual Disabilities",
+          "url": "https://dbhdid.ky.gov/ddid",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "louisiana",
+      "targetTable": "forms",
+      "lane": "forms_library",
+      "sourceName": "Louisiana Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.louisiana.gov/forms",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official forms, downloads, or publications library.",
+      "replacementCandidates": [
+        {
+          "name": "Louisiana Medicaid App Guide",
+          "url": "https://ldh.la.gov/medicaid",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "Louisiana Ei Referral Guide",
+          "url": "https://ldh.la.gov/ocdd",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "Louisiana Office for Citizens with Developmental Disabilities",
+          "url": "https://ldh.la.gov/microsite/11",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "louisiana",
+      "targetTable": "programs",
+      "lane": "waiver_program",
+      "sourceName": "Louisiana HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.louisiana.gov/dd/waivers",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official waiver program page on a first-party state agency domain.",
+      "replacementCandidates": [
+        {
+          "name": "Louisiana HCBS Waivers",
+          "url": "https://ldh.la.gov/ocdd/hcbs",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Louisiana HCBS Waivers",
+          "url": "https://ldh.la.gov/ocdd/hcbs/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "louisiana",
+      "targetTable": "state_resource_agencies",
+      "lane": "dd_state_directory",
+      "sourceName": "Louisiana Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.louisiana.gov/dd",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official DD/IDD intake or regional office directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Louisiana Office for Citizens with Developmental Disabilities",
+          "url": "https://ldh.la.gov/ocdd",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Louisiana Office for Citizens with Developmental Disabilities",
+          "url": "https://ldh.la.gov/ocdd/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "maine",
+      "targetTable": "forms",
+      "lane": "forms_library",
+      "sourceName": "Maine Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.maine.gov/forms",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official forms, downloads, or publications library.",
+      "replacementCandidates": [
+        {
+          "name": "Maine Ei Referral Guide",
+          "url": "https://www.maine.gov/dhhs/oads",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "Maine Medicaid App Guide",
+          "url": "https://www.maine.gov/dhhs/oms",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "maine",
+      "targetTable": "programs",
+      "lane": "waiver_program",
+      "sourceName": "Maine HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.maine.gov/dd/waivers",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official waiver program page on a first-party state agency domain.",
+      "replacementCandidates": [
+        {
+          "name": "Maine HCBS Waivers",
+          "url": "https://www.maine.gov/dhhs/oads/hcbs",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Maine HCBS Waivers",
+          "url": "https://www.maine.gov/dhhs/oads/hcbs/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "maine",
+      "targetTable": "state_resource_agencies",
+      "lane": "dd_state_directory",
+      "sourceName": "Maine Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.maine.gov/dd",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official DD/IDD intake or regional office directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Maine Office of Aging and Disability Services",
+          "url": "https://www.maine.gov/dhhs/oads",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Maine Office of Aging and Disability Services",
+          "url": "https://www.maine.gov/dhhs/oads/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "maryland",
+      "targetTable": "forms",
+      "lane": "forms_library",
+      "sourceName": "Maryland Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.maryland.gov/forms",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official forms, downloads, or publications library.",
+      "replacementCandidates": [
+        {
+          "name": "Maryland Ei Referral Guide",
+          "url": "https://dda.health.maryland.gov/",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "Maryland Developmental Disabilities Administration",
+          "url": "https://health.maryland.gov/dda/Pages/Home.aspx",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "Maryland Medicaid App Guide",
+          "url": "https://health.maryland.gov/",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "maryland",
+      "targetTable": "programs",
+      "lane": "waiver_program",
+      "sourceName": "Maryland HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.maryland.gov/dd/waivers",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official waiver program page on a first-party state agency domain.",
+      "replacementCandidates": [
+        {
+          "name": "Maryland HCBS Waivers",
+          "url": "https://dda.health.maryland.gov/hcbs",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Maryland HCBS Waivers",
+          "url": "https://dda.health.maryland.gov/hcbs/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "maryland",
+      "targetTable": "state_resource_agencies",
+      "lane": "dd_state_directory",
+      "sourceName": "Maryland Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.maryland.gov/dd",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official DD/IDD intake or regional office directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Maryland Developmental Disabilities Administration",
+          "url": "https://dda.health.maryland.gov/",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Maryland Developmental Disabilities Administration",
+          "url": "https://dda.health.maryland.gov/Pages/Eligibility.aspx",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "massachusetts",
+      "targetTable": "forms",
+      "lane": "forms_library",
+      "sourceName": "Massachusetts Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.massachusetts.gov/forms",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official forms, downloads, or publications library.",
+      "replacementCandidates": [
+        {
+          "name": "Massachusetts Ei Referral Guide",
+          "url": "https://www.mass.gov/dds",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "Massachusetts Department of Developmental Services",
+          "url": "https://www.mass.gov/orgs/department-of-developmental-services",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "Massachusetts Medicaid App Guide",
+          "url": "https://www.mass.gov/masshealth",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "massachusetts",
+      "targetTable": "programs",
+      "lane": "waiver_program",
+      "sourceName": "Massachusetts HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.massachusetts.gov/dd/waivers",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official waiver program page on a first-party state agency domain.",
+      "replacementCandidates": [
+        {
+          "name": "Massachusetts HCBS Waivers",
+          "url": "https://www.mass.gov/dds/hcbs",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Massachusetts HCBS Waivers",
+          "url": "https://www.mass.gov/dds/hcbs/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "massachusetts",
+      "targetTable": "state_resource_agencies",
+      "lane": "dd_state_directory",
+      "sourceName": "Massachusetts Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.massachusetts.gov/dd",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official DD/IDD intake or regional office directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Massachusetts Department of Developmental Services",
+          "url": "https://www.mass.gov/dds",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Massachusetts Department of Developmental Services",
+          "url": "https://www.mass.gov/dds-eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "michigan",
+      "targetTable": "forms",
+      "lane": "forms_library",
+      "sourceName": "Michigan Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.michigan.gov/forms",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official forms, downloads, or publications library.",
+      "replacementCandidates": [
+        {
+          "name": "Michigan Ei Referral Guide",
+          "url": "https://www.michigan.gov/mdhhs",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "Michigan Dd Intake Request Guide",
+          "url": "https://www.michigan.gov/mdhhs/hcbs/eligibility",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "Michigan Medicaid App Guide",
+          "url": "https://www.michigan.gov/medicaid",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "michigan",
+      "targetTable": "programs",
+      "lane": "waiver_program",
+      "sourceName": "Michigan HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.michigan.gov/dd/waivers",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official waiver program page on a first-party state agency domain.",
+      "replacementCandidates": [
+        {
+          "name": "Michigan HCBS Waivers",
+          "url": "https://www.michigan.gov/mdhhs/hcbs",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Michigan HCBS Waivers",
+          "url": "https://www.michigan.gov/mdhhs/hcbs/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "michigan",
+      "targetTable": "state_resource_agencies",
+      "lane": "dd_state_directory",
+      "sourceName": "Michigan Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.michigan.gov/dd",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official DD/IDD intake or regional office directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Michigan Department of Health and Human Services",
+          "url": "https://www.michigan.gov/mdhhs",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Michigan Department of Health and Human Services",
+          "url": "https://www.michigan.gov/mdhhs/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "minnesota",
+      "targetTable": "forms",
+      "lane": "forms_library",
+      "sourceName": "Minnesota Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.minnesota.gov/forms",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official forms, downloads, or publications library.",
+      "replacementCandidates": [
+        {
+          "name": "Minnesota Ei Referral Guide",
+          "url": "https://mn.gov/dhs",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "Minnesota Medicaid App Guide",
+          "url": "https://mn.gov/dhs/pca",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "Minnesota Dd Intake Request Guide",
+          "url": "https://mn.gov/dhs/waivers/eligibility",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "minnesota",
+      "targetTable": "programs",
+      "lane": "waiver_program",
+      "sourceName": "Minnesota HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.minnesota.gov/dd/waivers",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official waiver program page on a first-party state agency domain.",
+      "replacementCandidates": [
+        {
+          "name": "Minnesota HCBS Waivers",
+          "url": "https://mn.gov/dhs/waivers",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Minnesota HCBS Waivers",
+          "url": "https://mn.gov/dhs/waivers/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "minnesota",
+      "targetTable": "state_resource_agencies",
+      "lane": "dd_state_directory",
+      "sourceName": "Minnesota Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.minnesota.gov/dd",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official DD/IDD intake or regional office directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Minnesota Department of Human Services",
+          "url": "https://mn.gov/dhs",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Minnesota Department of Human Services",
+          "url": "https://mn.gov/dhs/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "mississippi",
+      "targetTable": "forms",
+      "lane": "forms_library",
+      "sourceName": "Mississippi Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.mississippi.gov/forms",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official forms, downloads, or publications library.",
+      "replacementCandidates": [
+        {
+          "name": "Mississippi Medicaid App Guide",
+          "url": "https://medicaid.ms.gov/",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "Mississippi Ei Referral Guide",
+          "url": "https://www.dmh.ms.gov/",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "mississippi",
+      "targetTable": "programs",
+      "lane": "waiver_program",
+      "sourceName": "Mississippi HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.mississippi.gov/dd/waivers",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official waiver program page on a first-party state agency domain.",
+      "replacementCandidates": [
+        {
+          "name": "Mississippi HCBS Waivers",
+          "url": "https://www.dmh.ms.gov/hcbs",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Mississippi HCBS Waivers",
+          "url": "https://www.dmh.ms.gov/hcbs/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "mississippi",
+      "targetTable": "state_resource_agencies",
+      "lane": "dd_state_directory",
+      "sourceName": "Mississippi Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.mississippi.gov/dd",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official DD/IDD intake or regional office directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Mississippi Department of Mental Health",
+          "url": "https://www.dmh.ms.gov/",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Mississippi Department of Mental Health",
+          "url": "https://www.dmh.ms.gov/intellectual-developmental-disabilities",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "missouri",
+      "targetTable": "forms",
+      "lane": "forms_library",
+      "sourceName": "Missouri Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.missouri.gov/forms",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official forms, downloads, or publications library.",
+      "replacementCandidates": [
+        {
+          "name": "Missouri Ei Referral Guide",
+          "url": "https://dmh.mo.gov/dev-disabilities",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "Missouri Medicaid App Guide",
+          "url": "https://mydss.mo.gov/",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "missouri",
+      "targetTable": "programs",
+      "lane": "waiver_program",
+      "sourceName": "Missouri HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.missouri.gov/dd/waivers",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official waiver program page on a first-party state agency domain.",
+      "replacementCandidates": [
+        {
+          "name": "Missouri HCBS Waivers",
+          "url": "https://dmh.mo.gov/dev-disabilities/hcbs",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Missouri HCBS Waivers",
+          "url": "https://dmh.mo.gov/dev-disabilities/hcbs/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "missouri",
+      "targetTable": "state_resource_agencies",
+      "lane": "dd_state_directory",
+      "sourceName": "Missouri Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.missouri.gov/dd",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official DD/IDD intake or regional office directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Missouri Division of Developmental Disabilities",
+          "url": "https://dmh.mo.gov/dev-disabilities",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Missouri Division of Developmental Disabilities",
+          "url": "https://dmh.mo.gov/dev-disabilities/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "montana",
+      "targetTable": "forms",
+      "lane": "forms_library",
+      "sourceName": "Montana Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.montana.gov/forms",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official forms, downloads, or publications library.",
+      "replacementCandidates": [
+        {
+          "name": "Montana Medicaid App Guide",
+          "url": "https://dphhs.mt.gov/brd/medicaid",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "Montana Ei Referral Guide",
+          "url": "https://dphhs.mt.gov/dsd/ddp",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "montana",
+      "targetTable": "programs",
+      "lane": "waiver_program",
+      "sourceName": "Montana HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.montana.gov/dd/waivers",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official waiver program page on a first-party state agency domain.",
+      "replacementCandidates": [
+        {
+          "name": "Montana HCBS Waivers",
+          "url": "https://dphhs.mt.gov/dsd/ddp/hcbs",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Montana HCBS Waivers",
+          "url": "https://dphhs.mt.gov/dsd/ddp/hcbs/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "montana",
+      "targetTable": "state_resource_agencies",
+      "lane": "dd_state_directory",
+      "sourceName": "Montana Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.montana.gov/dd",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official DD/IDD intake or regional office directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Montana Developmental Disabilities Program",
+          "url": "https://dphhs.mt.gov/dsd/ddp",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Montana Developmental Disabilities Program",
+          "url": "https://dphhs.mt.gov/dsd/ddp/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "nebraska",
+      "targetTable": "programs",
+      "lane": "waiver_program",
+      "sourceName": "Nebraska HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.nebraska.gov/dd/waivers",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official waiver program page on a first-party state agency domain.",
+      "replacementCandidates": [
+        {
+          "name": "Nebraska HCBS Waivers",
+          "url": "https://dhhs.ne.gov/Pages/DD-Waivers.aspx",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Nebraska HCBS Waivers",
+          "url": "https://dhhs.ne.gov/Pages/DD-Waivers-Eligibility.aspx",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "nebraska",
+      "targetTable": "state_resource_agencies",
+      "lane": "dd_state_directory",
+      "sourceName": "Nebraska Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.nebraska.gov/dd",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official DD/IDD intake or regional office directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Nebraska Division of Developmental Disabilities",
+          "url": "https://dhhs.ne.gov/Pages/DD",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Nebraska Division of Developmental Disabilities",
+          "url": "https://dhhs.ne.gov/Pages/DD-Eligibility.aspx",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "nevada",
+      "targetTable": "forms",
+      "lane": "forms_library",
+      "sourceName": "Nevada Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.nevada.gov/forms",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official forms, downloads, or publications library.",
+      "replacementCandidates": [
+        {
+          "name": "Nevada Ei Referral Guide",
+          "url": "https://adsd.nv.gov/",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "Nevada Medicaid App Guide",
+          "url": "https://dhcfp.nv.gov/",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "nevada",
+      "targetTable": "programs",
+      "lane": "waiver_program",
+      "sourceName": "Nevada HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.nevada.gov/dd/waivers",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official waiver program page on a first-party state agency domain.",
+      "replacementCandidates": [
+        {
+          "name": "Nevada HCBS Waivers",
+          "url": "https://adsd.nv.gov/hcbs",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Nevada HCBS Waivers",
+          "url": "https://adsd.nv.gov/hcbs/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "nevada",
+      "targetTable": "state_resource_agencies",
+      "lane": "dd_state_directory",
+      "sourceName": "Nevada Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.nevada.gov/dd",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official DD/IDD intake or regional office directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Nevada Aging and Disability Services Division",
+          "url": "https://adsd.nv.gov/",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Nevada Aging and Disability Services Division",
+          "url": "https://adsd.nv.gov/Programs/Intellectual/Intellectual",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "new-hampshire",
+      "targetTable": "programs",
+      "lane": "waiver_program",
+      "sourceName": "New Hampshire HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.new-hampshire.gov/dd/waivers",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official waiver program page on a first-party state agency domain.",
+      "replacementCandidates": [
+        {
+          "name": "New Hampshire HCBS Waivers",
+          "url": "https://www.dhhs.nh.gov/bds/hcbs",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "New Hampshire HCBS Waivers",
+          "url": "https://www.dhhs.nh.gov/bds/hcbs/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "new-hampshire",
+      "targetTable": "state_resource_agencies",
+      "lane": "dd_state_directory",
+      "sourceName": "New Hampshire Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.new-hampshire.gov/dd",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official DD/IDD intake or regional office directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "New Hampshire Bureau of Developmental Services",
+          "url": "https://www.dhhs.nh.gov/bds",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "New Hampshire Bureau of Developmental Services",
+          "url": "https://www.dhhs.nh.gov/bds/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "new-jersey",
+      "targetTable": "programs",
+      "lane": "waiver_program",
+      "sourceName": "New Jersey HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.new-jersey.gov/dd/waivers",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official waiver program page on a first-party state agency domain.",
+      "replacementCandidates": [
+        {
+          "name": "New Jersey HCBS Waivers",
+          "url": "https://www.nj.gov/humanservices/ddd/hcbs",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "New Jersey HCBS Waivers",
+          "url": "https://www.nj.gov/humanservices/ddd/hcbs/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "new-jersey",
+      "targetTable": "state_resource_agencies",
+      "lane": "dd_state_directory",
+      "sourceName": "New Jersey Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.new-jersey.gov/dd",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official DD/IDD intake or regional office directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "New Jersey Division of Developmental Disabilities",
+          "url": "https://www.nj.gov/humanservices/ddd",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "New Jersey Division of Developmental Disabilities",
+          "url": "https://www.nj.gov/humanservices/ddd/services/apply",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "north-carolina",
+      "targetTable": "forms",
+      "lane": "forms_library",
+      "sourceName": "North Carolina Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.north-carolina.gov/forms",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official forms, downloads, or publications library.",
+      "replacementCandidates": [
+        {
+          "name": "North Carolina Medicaid App Guide",
+          "url": "https://medicaid.ncdhhs.gov/",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "North Carolina Ei Referral Guide",
+          "url": "https://www.ncdhhs.gov/divisions/mhddsas",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "north-dakota",
+      "targetTable": "forms",
+      "lane": "forms_library",
+      "sourceName": "North Dakota Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.north-dakota.gov/forms",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official forms, downloads, or publications library.",
+      "replacementCandidates": [
+        {
+          "name": "North Dakota Ei Referral Guide",
+          "url": "https://www.hhs.nd.gov/dd",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "North Dakota Medicaid App Guide",
+          "url": "https://www.hhs.nd.gov/medicaid",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "north-dakota",
+      "targetTable": "programs",
+      "lane": "waiver_program",
+      "sourceName": "North Dakota HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.north-dakota.gov/dd/waivers",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official waiver program page on a first-party state agency domain.",
+      "replacementCandidates": [
+        {
+          "name": "North Dakota HCBS Waivers",
+          "url": "https://www.hhs.nd.gov/dd/hcbs",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "North Dakota HCBS Waivers",
+          "url": "https://www.hhs.nd.gov/dd/hcbs/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "north-dakota",
+      "targetTable": "state_resource_agencies",
+      "lane": "dd_state_directory",
+      "sourceName": "North Dakota Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.north-dakota.gov/dd",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official DD/IDD intake or regional office directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "North Dakota Developmental Disabilities Division",
+          "url": "https://www.hhs.nd.gov/dd",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "North Dakota Developmental Disabilities Division",
+          "url": "https://www.hhs.nd.gov/dd/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "oklahoma",
+      "targetTable": "forms",
+      "lane": "forms_library",
+      "sourceName": "Oklahoma Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.oklahoma.gov/forms",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official forms, downloads, or publications library.",
+      "replacementCandidates": [
+        {
+          "name": "Oklahoma Medicaid App Guide",
+          "url": "https://oklahoma.gov/ohca",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "Oklahoma Ei Referral Guide",
+          "url": "https://oklahoma.gov/okdhs/services/dds",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "oklahoma",
+      "targetTable": "programs",
+      "lane": "waiver_program",
+      "sourceName": "Oklahoma HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.oklahoma.gov/dd/waivers",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official waiver program page on a first-party state agency domain.",
+      "replacementCandidates": [
+        {
+          "name": "Oklahoma HCBS Waivers",
+          "url": "https://oklahoma.gov/okdhs/services/dds/hcbs",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Oklahoma HCBS Waivers",
+          "url": "https://oklahoma.gov/okdhs/services/dds/hcbs/eligibility.html",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "oklahoma",
+      "targetTable": "state_resource_agencies",
+      "lane": "dd_state_directory",
+      "sourceName": "Oklahoma Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.oklahoma.gov/dd",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official DD/IDD intake or regional office directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Oklahoma Developmental Disabilities Services",
+          "url": "https://oklahoma.gov/okdhs/services/dds",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Oklahoma Developmental Disabilities Services",
+          "url": "https://oklahoma.gov/okdhs/services/dds/eligibility.html",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "oregon",
+      "targetTable": "forms",
+      "lane": "forms_library",
+      "sourceName": "Oregon Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.oregon.gov/forms",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official forms, downloads, or publications library.",
+      "replacementCandidates": [
+        {
+          "name": "Oregon Ei Referral Guide",
+          "url": "https://www.oregon.gov/odhs/dds",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "Oregon Medicaid App Guide",
+          "url": "https://www.oregon.gov/oha",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "oregon",
+      "targetTable": "programs",
+      "lane": "waiver_program",
+      "sourceName": "Oregon HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.oregon.gov/dd/waivers",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official waiver program page on a first-party state agency domain.",
+      "replacementCandidates": [
+        {
+          "name": "Oregon HCBS Waivers",
+          "url": "https://www.oregon.gov/odhs/dds/hcbs",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Oregon HCBS Waivers",
+          "url": "https://www.oregon.gov/odhs/dds/hcbs/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "oregon",
+      "targetTable": "state_resource_agencies",
+      "lane": "dd_state_directory",
+      "sourceName": "Oregon Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.oregon.gov/dd",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official DD/IDD intake or regional office directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Oregon Developmental Disability Services",
+          "url": "https://www.oregon.gov/odhs/dds",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Oregon Developmental Disability Services",
+          "url": "https://www.oregon.gov/odhs/dds/pages/eligibility.aspx",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "rhode-island",
+      "targetTable": "forms",
+      "lane": "forms_library",
+      "sourceName": "Rhode Island Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.rhode-island.gov/forms",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official forms, downloads, or publications library.",
+      "replacementCandidates": [
+        {
+          "name": "Rhode Island Ei Referral Guide",
+          "url": "https://bhddh.ri.gov/developmental-disabilities",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "Rhode Island Medicaid App Guide",
+          "url": "https://eohhs.ri.gov/",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "rhode-island",
+      "targetTable": "programs",
+      "lane": "waiver_program",
+      "sourceName": "Rhode Island HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.rhode-island.gov/dd/waivers",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official waiver program page on a first-party state agency domain.",
+      "replacementCandidates": [
+        {
+          "name": "Rhode Island HCBS Waivers",
+          "url": "https://bhddh.ri.gov/developmental-disabilities/hcbs",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Rhode Island HCBS Waivers",
+          "url": "https://bhddh.ri.gov/developmental-disabilities/hcbs/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "rhode-island",
+      "targetTable": "state_resource_agencies",
+      "lane": "dd_state_directory",
+      "sourceName": "Rhode Island Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.rhode-island.gov/dd",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official DD/IDD intake or regional office directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Rhode Island Division of Developmental Disabilities",
+          "url": "https://bhddh.ri.gov/developmental-disabilities",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Rhode Island Division of Developmental Disabilities",
+          "url": "https://bhddh.ri.gov/developmental-disabilities/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "south-carolina",
+      "targetTable": "forms",
+      "lane": "forms_library",
+      "sourceName": "South Carolina Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.south-carolina.gov/forms",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official forms, downloads, or publications library.",
+      "replacementCandidates": [
+        {
+          "name": "South Carolina Ei Referral Guide",
+          "url": "https://ddsn.sc.gov/",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "South Carolina Medicaid App Guide",
+          "url": "https://www.scdhhs.gov/",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "south-carolina",
+      "targetTable": "programs",
+      "lane": "waiver_program",
+      "sourceName": "South Carolina HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.south-carolina.gov/dd/waivers",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official waiver program page on a first-party state agency domain.",
+      "replacementCandidates": [
+        {
+          "name": "South Carolina HCBS Waivers",
+          "url": "https://ddsn.sc.gov/hcbs",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "South Carolina HCBS Waivers",
+          "url": "https://ddsn.sc.gov/hcbs/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "south-carolina",
+      "targetTable": "state_resource_agencies",
+      "lane": "dd_state_directory",
+      "sourceName": "South Carolina Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.south-carolina.gov/dd",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official DD/IDD intake or regional office directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "South Carolina Department of Disabilities and Special Needs",
+          "url": "https://ddsn.sc.gov/",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "South Carolina Department of Disabilities and Special Needs",
+          "url": "https://ddsn.sc.gov/consumers/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "south-dakota",
+      "targetTable": "forms",
+      "lane": "forms_library",
+      "sourceName": "South Dakota Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.south-dakota.gov/forms",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official forms, downloads, or publications library.",
+      "replacementCandidates": [
+        {
+          "name": "South Dakota Ei Referral Guide",
+          "url": "https://dhs.sd.gov/dd",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "South Dakota Medicaid App Guide",
+          "url": "https://dss.sd.gov/medicaid",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "south-dakota",
+      "targetTable": "programs",
+      "lane": "waiver_program",
+      "sourceName": "South Dakota HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.south-dakota.gov/dd/waivers",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official waiver program page on a first-party state agency domain.",
+      "replacementCandidates": [
+        {
+          "name": "South Dakota HCBS Waivers",
+          "url": "https://dhs.sd.gov/dd/hcbs",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "South Dakota HCBS Waivers",
+          "url": "https://dhs.sd.gov/dd/hcbs/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "south-dakota",
+      "targetTable": "state_resource_agencies",
+      "lane": "dd_state_directory",
+      "sourceName": "South Dakota Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.south-dakota.gov/dd",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official DD/IDD intake or regional office directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "South Dakota Division of Developmental Disabilities",
+          "url": "https://dhs.sd.gov/dd",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "South Dakota Division of Developmental Disabilities",
+          "url": "https://dhs.sd.gov/dd/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "tennessee",
+      "targetTable": "forms",
+      "lane": "forms_library",
+      "sourceName": "Tennessee Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.tennessee.gov/forms",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official forms, downloads, or publications library.",
+      "replacementCandidates": [
+        {
+          "name": "Tennessee Ei Referral Guide",
+          "url": "https://www.tn.gov/didd",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "Tennessee Medicaid App Guide",
+          "url": "https://www.tn.gov/tenncare",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "tennessee",
+      "targetTable": "programs",
+      "lane": "waiver_program",
+      "sourceName": "Tennessee HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.tennessee.gov/dd/waivers",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official waiver program page on a first-party state agency domain.",
+      "replacementCandidates": [
+        {
+          "name": "Tennessee HCBS Waivers",
+          "url": "https://www.tn.gov/didd/hcbs",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Tennessee HCBS Waivers",
+          "url": "https://www.tn.gov/didd/hcbs/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "tennessee",
+      "targetTable": "state_resource_agencies",
+      "lane": "dd_state_directory",
+      "sourceName": "Tennessee Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.tennessee.gov/dd",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official DD/IDD intake or regional office directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Tennessee Department of Intellectual and Developmental Disabilities",
+          "url": "https://www.tn.gov/didd",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Tennessee Department of Intellectual and Developmental Disabilities",
+          "url": "https://www.tn.gov/didd/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "utah",
+      "targetTable": "forms",
+      "lane": "forms_library",
+      "sourceName": "Utah Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.utah.gov/forms",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official forms, downloads, or publications library.",
+      "replacementCandidates": [
+        {
+          "name": "Utah Ei Referral Guide",
+          "url": "https://dspd.utah.gov/",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "Utah Medicaid App Guide",
+          "url": "https://medicaid.utah.gov/",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "utah",
+      "targetTable": "programs",
+      "lane": "waiver_program",
+      "sourceName": "Utah HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.utah.gov/dd/waivers",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official waiver program page on a first-party state agency domain.",
+      "replacementCandidates": [
+        {
+          "name": "Utah HCBS Waivers",
+          "url": "https://dspd.utah.gov/hcbs",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Utah HCBS Waivers",
+          "url": "https://dspd.utah.gov/hcbs/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "utah",
+      "targetTable": "state_resource_agencies",
+      "lane": "dd_state_directory",
+      "sourceName": "Utah Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.utah.gov/dd",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official DD/IDD intake or regional office directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Utah Division of Services for People with Disabilities",
+          "url": "https://dspd.utah.gov/",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Utah Division of Services for People with Disabilities",
+          "url": "https://dspd.utah.gov/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "vermont",
+      "targetTable": "forms",
+      "lane": "forms_library",
+      "sourceName": "Vermont Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.vermont.gov/forms",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official forms, downloads, or publications library.",
+      "replacementCandidates": [
+        {
+          "name": "Vermont Ei Referral Guide",
+          "url": "https://ddsd.vermont.gov/",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "Vermont Medicaid App Guide",
+          "url": "https://dvha.vermont.gov/",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "vermont",
+      "targetTable": "programs",
+      "lane": "waiver_program",
+      "sourceName": "Vermont HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.vermont.gov/dd/waivers",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official waiver program page on a first-party state agency domain.",
+      "replacementCandidates": [
+        {
+          "name": "Vermont HCBS Waivers",
+          "url": "https://ddsd.vermont.gov/hcbs",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Vermont HCBS Waivers",
+          "url": "https://ddsd.vermont.gov/hcbs/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "vermont",
+      "targetTable": "state_resource_agencies",
+      "lane": "dd_state_directory",
+      "sourceName": "Vermont Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.vermont.gov/dd",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official DD/IDD intake or regional office directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Vermont Developmental Disabilities Services Division",
+          "url": "https://ddsd.vermont.gov/",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Vermont Developmental Disabilities Services Division",
+          "url": "https://ddsd.vermont.gov/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "virginia",
+      "targetTable": "forms",
+      "lane": "forms_library",
+      "sourceName": "Virginia Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.virginia.gov/forms",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official forms, downloads, or publications library.",
+      "replacementCandidates": [
+        {
+          "name": "Virginia Ei Referral Guide",
+          "url": "https://dbhds.virginia.gov/",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "Virginia Medicaid App Guide",
+          "url": "https://www.dmas.virginia.gov/",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "virginia",
+      "targetTable": "programs",
+      "lane": "waiver_program",
+      "sourceName": "Virginia HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.virginia.gov/dd/waivers",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official waiver program page on a first-party state agency domain.",
+      "replacementCandidates": [
+        {
+          "name": "Virginia HCBS Waivers",
+          "url": "https://dbhds.virginia.gov/hcbs",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Virginia HCBS Waivers",
+          "url": "https://dbhds.virginia.gov/hcbs/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "virginia",
+      "targetTable": "state_resource_agencies",
+      "lane": "dd_state_directory",
+      "sourceName": "Virginia Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.virginia.gov/dd",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official DD/IDD intake or regional office directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Virginia Department of Behavioral Health and Developmental Services",
+          "url": "https://dbhds.virginia.gov/",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Virginia Department of Behavioral Health and Developmental Services",
+          "url": "https://dbhds.virginia.gov/developmental-services",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "washington",
+      "targetTable": "forms",
+      "lane": "forms_library",
+      "sourceName": "Washington Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.washington.gov/forms",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official forms, downloads, or publications library.",
+      "replacementCandidates": [
+        {
+          "name": "Washington Ei Referral Guide",
+          "url": "https://www.dshs.wa.gov/dda",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "Washington Medicaid App Guide",
+          "url": "https://www.hca.wa.gov/",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "washington",
+      "targetTable": "programs",
+      "lane": "waiver_program",
+      "sourceName": "Washington HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.washington.gov/dd/waivers",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official waiver program page on a first-party state agency domain.",
+      "replacementCandidates": [
+        {
+          "name": "Washington HCBS Waivers",
+          "url": "https://www.dshs.wa.gov/dda/hcbs",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Washington HCBS Waivers",
+          "url": "https://www.dshs.wa.gov/dda/hcbs/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "washington",
+      "targetTable": "state_resource_agencies",
+      "lane": "dd_state_directory",
+      "sourceName": "Washington Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.washington.gov/dd",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official DD/IDD intake or regional office directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Washington Developmental Disabilities Administration",
+          "url": "https://www.dshs.wa.gov/dda",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Washington Developmental Disabilities Administration",
+          "url": "https://www.dshs.wa.gov/dda/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "west-virginia",
+      "targetTable": "forms",
+      "lane": "forms_library",
+      "sourceName": "West Virginia Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.west-virginia.gov/forms",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official forms, downloads, or publications library.",
+      "replacementCandidates": [
+        {
+          "name": "West Virginia Medicaid App Guide",
+          "url": "https://dhhr.wv.gov/",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "West Virginia Ei Referral Guide",
+          "url": "https://dhhr.wv.gov/bms",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "west-virginia",
+      "targetTable": "programs",
+      "lane": "waiver_program",
+      "sourceName": "West Virginia HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.west-virginia.gov/dd/waivers",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official waiver program page on a first-party state agency domain.",
+      "replacementCandidates": [
+        {
+          "name": "West Virginia HCBS Waivers",
+          "url": "https://dhhr.wv.gov/bms/hcbs",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "West Virginia HCBS Waivers",
+          "url": "https://dhhr.wv.gov/bms/hcbs/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "west-virginia",
+      "targetTable": "state_resource_agencies",
+      "lane": "dd_state_directory",
+      "sourceName": "West Virginia Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.west-virginia.gov/dd",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official DD/IDD intake or regional office directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "West Virginia Intellectual and Developmental Disabilities Division",
+          "url": "https://dhhr.wv.gov/bms",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "West Virginia Intellectual and Developmental Disabilities Division",
+          "url": "https://dhhr.wv.gov/bms/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "wisconsin",
+      "targetTable": "forms",
+      "lane": "forms_library",
+      "sourceName": "Wisconsin Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.wisconsin.gov/forms",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official forms, downloads, or publications library.",
+      "replacementCandidates": [
+        {
+          "name": "Wisconsin Ei Referral Guide",
+          "url": "https://www.dhs.wisconsin.gov/",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "Wisconsin Dd Intake Request Guide",
+          "url": "https://www.dhs.wisconsin.gov/familycare/eligibility.htm",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "Wisconsin Medicaid App Guide",
+          "url": "https://www.dhs.wisconsin.gov/medicaid",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "wisconsin",
+      "targetTable": "programs",
+      "lane": "waiver_program",
+      "sourceName": "Wisconsin HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.wisconsin.gov/dd/waivers",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official waiver program page on a first-party state agency domain.",
+      "replacementCandidates": [
+        {
+          "name": "Wisconsin Family Care HCBS Waiver",
+          "url": "https://www.dhs.wisconsin.gov/familycare",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Wisconsin Family Care HCBS Waiver",
+          "url": "https://www.dhs.wisconsin.gov/familycare/eligibility.htm",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "wisconsin",
+      "targetTable": "state_resource_agencies",
+      "lane": "dd_state_directory",
+      "sourceName": "Wisconsin Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.wisconsin.gov/dd",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official DD/IDD intake or regional office directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Wisconsin Department of Health Services",
+          "url": "https://www.dhs.wisconsin.gov/",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Wisconsin Department of Health Services",
+          "url": "https://www.dhs.wisconsin.gov/disabilities/index.htm",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "wyoming",
+      "targetTable": "forms",
+      "lane": "forms_library",
+      "sourceName": "Wyoming Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.wyoming.gov/forms",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official forms, downloads, or publications library.",
+      "replacementCandidates": [
+        {
+          "name": "Wyoming Ei Referral Guide",
+          "url": "https://health.wyo.gov/behavioralhealth/dd",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        },
+        {
+          "name": "Wyoming Medicaid App Guide",
+          "url": "https://health.wyo.gov/healthcarefin",
+          "confidence": "medium",
+          "origin": "forms_fallback_manual_resolution",
+          "matchType": "forms_fallback_manual_resolution"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "wyoming",
+      "targetTable": "programs",
+      "lane": "waiver_program",
+      "sourceName": "Wyoming HCBS Waivers Page",
+      "fakeSourceUrl": "https://dhhs.wyoming.gov/dd/waivers",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official waiver program page on a first-party state agency domain.",
+      "replacementCandidates": [
+        {
+          "name": "Wyoming HCBS Waivers",
+          "url": "https://health.wyo.gov/behavioralhealth/dd/hcbs",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Wyoming HCBS Waivers",
+          "url": "https://health.wyo.gov/behavioralhealth/dd/hcbs/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "wyoming",
+      "targetTable": "state_resource_agencies",
+      "lane": "dd_state_directory",
+      "sourceName": "Wyoming Developmental Services Directory",
+      "fakeSourceUrl": "https://dhhs.wyoming.gov/dd",
+      "followupType": "multiple_medium_candidates_review",
+      "desiredEvidence": "Verified official DD/IDD intake or regional office directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Wyoming Developmental Disabilities Division",
+          "url": "https://health.wyo.gov/behavioralhealth/dd",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Wyoming Developmental Disabilities Division",
+          "url": "https://health.wyo.gov/behavioralhealth/dd/eligibility",
+          "confidence": "medium",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "iowa",
+      "targetTable": "county_offices",
+      "lane": "medicaid_county_directory",
+      "sourceName": "Iowa Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.iowa.gov/",
+      "followupType": "first_party_root_hint_verification",
+      "desiredEvidence": "Verified official county or regional Medicaid / social services directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Iowa Medicaid Personal Care",
+          "url": "https://hhs.iowa.gov/ime",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Iowa Medicaid Personal Care",
+          "url": "https://hhs.iowa.gov/ime/eligibility",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "kansas",
+      "targetTable": "county_offices",
+      "lane": "medicaid_county_directory",
+      "sourceName": "Kansas Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.kansas.gov/",
+      "followupType": "first_party_root_hint_verification",
+      "desiredEvidence": "Verified official county or regional Medicaid / social services directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Kansas Medicaid Personal Care",
+          "url": "https://www.kancare.ks.gov/",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Kansas Medicaid Personal Care",
+          "url": "https://www.kancare.ks.gov/eligibility",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "kentucky",
+      "targetTable": "county_offices",
+      "lane": "medicaid_county_directory",
+      "sourceName": "Kentucky Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.kentucky.gov/",
+      "followupType": "first_party_root_hint_verification",
+      "desiredEvidence": "Verified official county or regional Medicaid / social services directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Kentucky Medicaid Personal Care",
+          "url": "https://chfs.ky.gov/dms",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Kentucky Medicaid Personal Care",
+          "url": "https://chfs.ky.gov/dms/eligibility",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "louisiana",
+      "targetTable": "county_offices",
+      "lane": "medicaid_county_directory",
+      "sourceName": "Louisiana Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.louisiana.gov/",
+      "followupType": "first_party_root_hint_verification",
+      "desiredEvidence": "Verified official county or regional Medicaid / social services directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Louisiana Medicaid Personal Care",
+          "url": "https://ldh.la.gov/medicaid",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Louisiana Medicaid Personal Care",
+          "url": "https://ldh.la.gov/medicaid/eligibility",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "maine",
+      "targetTable": "county_offices",
+      "lane": "medicaid_county_directory",
+      "sourceName": "Maine Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.maine.gov/",
+      "followupType": "first_party_root_hint_verification",
+      "desiredEvidence": "Verified official county or regional Medicaid / social services directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "MaineCare Personal Care Services",
+          "url": "https://www.maine.gov/dhhs/oms",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "MaineCare Personal Care Services",
+          "url": "https://www.maine.gov/dhhs/oms/eligibility",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "maryland",
+      "targetTable": "county_offices",
+      "lane": "medicaid_county_directory",
+      "sourceName": "Maryland Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.maryland.gov/",
+      "followupType": "first_party_root_hint_verification",
+      "desiredEvidence": "Verified official county or regional Medicaid / social services directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Maryland Medicaid Personal Care",
+          "url": "https://health.maryland.gov/",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Maryland Medicaid Personal Care",
+          "url": "https://health.maryland.gov/eligibility",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "massachusetts",
+      "targetTable": "county_offices",
+      "lane": "medicaid_county_directory",
+      "sourceName": "Massachusetts Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.massachusetts.gov/",
+      "followupType": "first_party_root_hint_verification",
+      "desiredEvidence": "Verified official county or regional Medicaid / social services directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "MassHealth Personal Care Attendant Program",
+          "url": "https://www.mass.gov/masshealth",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "MassHealth Personal Care Attendant Program",
+          "url": "https://www.mass.gov/masshealth-eligibility",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "michigan",
+      "targetTable": "county_offices",
+      "lane": "medicaid_county_directory",
+      "sourceName": "Michigan Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.michigan.gov/",
+      "followupType": "first_party_root_hint_verification",
+      "desiredEvidence": "Verified official county or regional Medicaid / social services directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Michigan Medicaid Personal Care",
+          "url": "https://www.michigan.gov/medicaid",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Michigan Medicaid Personal Care",
+          "url": "https://www.michigan.gov/medicaid/eligibility",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "minnesota",
+      "targetTable": "county_offices",
+      "lane": "medicaid_county_directory",
+      "sourceName": "Minnesota Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.minnesota.gov/",
+      "followupType": "first_party_root_hint_verification",
+      "desiredEvidence": "Verified official county or regional Medicaid / social services directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Minnesota Personal Care Assistance",
+          "url": "https://mn.gov/dhs/pca",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Minnesota Personal Care Assistance",
+          "url": "https://mn.gov/dhs/pca/eligibility",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "mississippi",
+      "targetTable": "county_offices",
+      "lane": "medicaid_county_directory",
+      "sourceName": "Mississippi Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.mississippi.gov/",
+      "followupType": "first_party_root_hint_verification",
+      "desiredEvidence": "Verified official county or regional Medicaid / social services directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Mississippi Medicaid Personal Care",
+          "url": "https://medicaid.ms.gov/",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Mississippi Medicaid Personal Care",
+          "url": "https://medicaid.ms.gov/eligibility",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "missouri",
+      "targetTable": "county_offices",
+      "lane": "medicaid_county_directory",
+      "sourceName": "Missouri Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.missouri.gov/",
+      "followupType": "first_party_root_hint_verification",
+      "desiredEvidence": "Verified official county or regional Medicaid / social services directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Missouri Medicaid Personal Care",
+          "url": "https://mydss.mo.gov/",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Missouri Medicaid Personal Care",
+          "url": "https://mydss.mo.gov/medicaid",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "montana",
+      "targetTable": "county_offices",
+      "lane": "medicaid_county_directory",
+      "sourceName": "Montana Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.montana.gov/",
+      "followupType": "first_party_root_hint_verification",
+      "desiredEvidence": "Verified official county or regional Medicaid / social services directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Montana Medicaid Personal Care",
+          "url": "https://dphhs.mt.gov/brd/medicaid",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Montana Medicaid Personal Care",
+          "url": "https://dphhs.mt.gov/brd/medicaid/eligibility",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "nebraska",
+      "targetTable": "county_offices",
+      "lane": "medicaid_county_directory",
+      "sourceName": "Nebraska Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.nebraska.gov/",
+      "followupType": "first_party_root_hint_verification",
+      "desiredEvidence": "Verified official county or regional Medicaid / social services directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Nebraska Medicaid Personal Care",
+          "url": "https://dhhs.ne.gov/medicaid",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Nebraska Medicaid Personal Care",
+          "url": "https://dhhs.ne.gov/medicaid/eligibility",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "nevada",
+      "targetTable": "county_offices",
+      "lane": "medicaid_county_directory",
+      "sourceName": "Nevada Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.nevada.gov/",
+      "followupType": "first_party_root_hint_verification",
+      "desiredEvidence": "Verified official county or regional Medicaid / social services directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Nevada Medicaid Personal Care",
+          "url": "https://dhcfp.nv.gov/",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Nevada Medicaid Personal Care",
+          "url": "https://dhcfp.nv.gov/eligibility",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "new-hampshire",
+      "targetTable": "county_offices",
+      "lane": "medicaid_county_directory",
+      "sourceName": "New Hampshire Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.new-hampshire.gov/",
+      "followupType": "first_party_root_hint_verification",
+      "desiredEvidence": "Verified official county or regional Medicaid / social services directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "New Hampshire Medicaid Personal Care",
+          "url": "https://www.dhhs.nh.gov/medicaid",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "New Hampshire Medicaid Personal Care",
+          "url": "https://www.dhhs.nh.gov/medicaid/eligibility",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "new-jersey",
+      "targetTable": "county_offices",
+      "lane": "medicaid_county_directory",
+      "sourceName": "New Jersey Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.new-jersey.gov/",
+      "followupType": "first_party_root_hint_verification",
+      "desiredEvidence": "Verified official county or regional Medicaid / social services directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "New Jersey Personal Care Assistant Program",
+          "url": "https://www.nj.gov/humanservices/dmahs",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "New Jersey Personal Care Assistant Program",
+          "url": "https://www.nj.gov/humanservices/dmahs/eligibility",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "new-mexico",
+      "targetTable": "county_offices",
+      "lane": "medicaid_county_directory",
+      "sourceName": "New Mexico Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.new-mexico.gov/",
+      "followupType": "first_party_root_hint_verification",
+      "desiredEvidence": "Verified official county or regional Medicaid / social services directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "New Mexico Medicaid Personal Care",
+          "url": "https://www.hsd.state.nm.us/mad",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "New Mexico Medicaid Personal Care",
+          "url": "https://www.hsd.state.nm.us/mad/eligibility",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "north-dakota",
+      "targetTable": "county_offices",
+      "lane": "medicaid_county_directory",
+      "sourceName": "North Dakota Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.north-dakota.gov/",
+      "followupType": "first_party_root_hint_verification",
+      "desiredEvidence": "Verified official county or regional Medicaid / social services directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "North Dakota Medicaid Personal Care",
+          "url": "https://www.hhs.nd.gov/medicaid",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "North Dakota Medicaid Personal Care",
+          "url": "https://www.hhs.nd.gov/medicaid/eligibility",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "oklahoma",
+      "targetTable": "county_offices",
+      "lane": "medicaid_county_directory",
+      "sourceName": "Oklahoma Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.oklahoma.gov/",
+      "followupType": "first_party_root_hint_verification",
+      "desiredEvidence": "Verified official county or regional Medicaid / social services directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Oklahoma SoonerCare Personal Care",
+          "url": "https://oklahoma.gov/ohca",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Oklahoma SoonerCare Personal Care",
+          "url": "https://oklahoma.gov/ohca/eligibility.html",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "oregon",
+      "targetTable": "county_offices",
+      "lane": "medicaid_county_directory",
+      "sourceName": "Oregon Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.oregon.gov/",
+      "followupType": "first_party_root_hint_verification",
+      "desiredEvidence": "Verified official county or regional Medicaid / social services directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Oregon Medicaid Personal Care",
+          "url": "https://www.oregon.gov/oha",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Oregon Medicaid Personal Care",
+          "url": "https://www.oregon.gov/oha/eligibility",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "rhode-island",
+      "targetTable": "county_offices",
+      "lane": "medicaid_county_directory",
+      "sourceName": "Rhode Island Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.rhode-island.gov/",
+      "followupType": "first_party_root_hint_verification",
+      "desiredEvidence": "Verified official county or regional Medicaid / social services directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Rhode Island Medicaid Personal Care",
+          "url": "https://eohhs.ri.gov/",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Rhode Island Medicaid Personal Care",
+          "url": "https://eohhs.ri.gov/eligibility",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "south-carolina",
+      "targetTable": "county_offices",
+      "lane": "medicaid_county_directory",
+      "sourceName": "South Carolina Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.south-carolina.gov/",
+      "followupType": "first_party_root_hint_verification",
+      "desiredEvidence": "Verified official county or regional Medicaid / social services directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "South Carolina Medicaid Personal Care",
+          "url": "https://www.scdhhs.gov/",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "South Carolina Medicaid Personal Care",
+          "url": "https://www.scdhhs.gov/eligibility",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "south-dakota",
+      "targetTable": "county_offices",
+      "lane": "medicaid_county_directory",
+      "sourceName": "South Dakota Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.south-dakota.gov/",
+      "followupType": "first_party_root_hint_verification",
+      "desiredEvidence": "Verified official county or regional Medicaid / social services directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "South Dakota Medicaid Personal Care",
+          "url": "https://dss.sd.gov/medicaid",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "South Dakota Medicaid Personal Care",
+          "url": "https://dss.sd.gov/medicaid/eligibility",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "tennessee",
+      "targetTable": "county_offices",
+      "lane": "medicaid_county_directory",
+      "sourceName": "Tennessee Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.tennessee.gov/",
+      "followupType": "first_party_root_hint_verification",
+      "desiredEvidence": "Verified official county or regional Medicaid / social services directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Tennessee Medicaid Personal Care",
+          "url": "https://www.tn.gov/tenncare",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Tennessee Medicaid Personal Care",
+          "url": "https://www.tn.gov/tenncare/eligibility",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "utah",
+      "targetTable": "county_offices",
+      "lane": "medicaid_county_directory",
+      "sourceName": "Utah Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.utah.gov/",
+      "followupType": "first_party_root_hint_verification",
+      "desiredEvidence": "Verified official county or regional Medicaid / social services directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Utah Medicaid Personal Care",
+          "url": "https://medicaid.utah.gov/",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Utah Medicaid Personal Care",
+          "url": "https://medicaid.utah.gov/eligibility",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "vermont",
+      "targetTable": "county_offices",
+      "lane": "medicaid_county_directory",
+      "sourceName": "Vermont Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.vermont.gov/",
+      "followupType": "first_party_root_hint_verification",
+      "desiredEvidence": "Verified official county or regional Medicaid / social services directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Vermont Medicaid Personal Care",
+          "url": "https://dvha.vermont.gov/",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Vermont Medicaid Personal Care",
+          "url": "https://dvha.vermont.gov/eligibility",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "virginia",
+      "targetTable": "county_offices",
+      "lane": "medicaid_county_directory",
+      "sourceName": "Virginia Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.virginia.gov/",
+      "followupType": "first_party_root_hint_verification",
+      "desiredEvidence": "Verified official county or regional Medicaid / social services directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Virginia Medicaid Personal Care",
+          "url": "https://www.dmas.virginia.gov/",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Virginia Medicaid Personal Care",
+          "url": "https://www.dmas.virginia.gov/eligibility",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "washington",
+      "targetTable": "county_offices",
+      "lane": "medicaid_county_directory",
+      "sourceName": "Washington Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.washington.gov/",
+      "followupType": "first_party_root_hint_verification",
+      "desiredEvidence": "Verified official county or regional Medicaid / social services directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Washington Medicaid Personal Care",
+          "url": "https://www.hca.wa.gov/",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Washington Medicaid Personal Care",
+          "url": "https://www.hca.wa.gov/eligibility",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "west-virginia",
+      "targetTable": "county_offices",
+      "lane": "medicaid_county_directory",
+      "sourceName": "West Virginia Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.west-virginia.gov/",
+      "followupType": "first_party_root_hint_verification",
+      "desiredEvidence": "Verified official county or regional Medicaid / social services directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "West Virginia Medicaid Personal Care",
+          "url": "https://dhhr.wv.gov/",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "West Virginia Medicaid Personal Care",
+          "url": "https://dhhr.wv.gov/eligibility",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "wisconsin",
+      "targetTable": "county_offices",
+      "lane": "medicaid_county_directory",
+      "sourceName": "Wisconsin Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.wisconsin.gov/",
+      "followupType": "first_party_root_hint_verification",
+      "desiredEvidence": "Verified official county or regional Medicaid / social services directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Wisconsin Medicaid Personal Care",
+          "url": "https://www.dhs.wisconsin.gov/medicaid",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Wisconsin Medicaid Personal Care",
+          "url": "https://www.dhs.wisconsin.gov/medicaid/eligibility",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    },
+    {
+      "stateId": "wyoming",
+      "targetTable": "county_offices",
+      "lane": "medicaid_county_directory",
+      "sourceName": "Wyoming Medicaid Portal",
+      "fakeSourceUrl": "https://dhhs.wyoming.gov/",
+      "followupType": "first_party_root_hint_verification",
+      "desiredEvidence": "Verified official county or regional Medicaid / social services directory URL.",
+      "replacementCandidates": [
+        {
+          "name": "Wyoming Medicaid Personal Care",
+          "url": "https://health.wyo.gov/healthcarefin",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        },
+        {
+          "name": "Wyoming Medicaid Personal Care",
+          "url": "https://health.wyo.gov/healthcarefin/eligibility",
+          "confidence": "low",
+          "origin": "state_programs_map",
+          "matchType": "state_programs_map"
+        }
+      ],
+      "decisionMode": "",
+      "chosenCandidateUrl": "",
+      "verifiedReplacementUrl": "",
+      "verifiedReplacementName": "",
+      "reviewNotes": "",
+      "reviewedBy": ""
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-06-18T05:55:39.243Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "georgia",
+  "sourceWorkfilePath": "data/provider-pull-now-state-workfiles/provider-pull-now-state-workfile-georgia.json",
+  "summary": {
+    "totalRows": 2,
+    "filledRows": 2,
+    "unresolvedRows": 0,
+    "issueRows": 0,
+    "mergeReady": true
+  },
+  "issues": []
+}

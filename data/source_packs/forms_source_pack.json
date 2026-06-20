@@ -1,0 +1,2343 @@
+{
+  "packId": "forms_source_pack",
+  "generatedAt": "2026-06-19",
+  "purpose": "Conservative state-specific forms-source pack that distinguishes true forms libraries from weaker but still truthful official form-related fallback pages.",
+  "summary": {
+    "blockedFormsStates": 37,
+    "exactFormsLibraryStates": 0,
+    "fallbackOnlyStates": 34,
+    "federalOnlyFallbackStates": 3,
+    "noCandidateStates": 0,
+    "byReplacementClass": {
+      "state_specific_form_fallback_only": 34,
+      "federal_only_form_fallback": 3
+    },
+    "byCanonicalTargetClass": {
+      "approved_state_specific_fallback_root": 34,
+      "approved_federal_only_fallback": 3
+    },
+    "byTopCandidateType": {
+      "application_or_eligibility_guide": 34,
+      "general_form_related_page": 3
+    }
+  },
+  "rows": [
+    {
+      "stateId": "arizona",
+      "blockedFormsTarget": {
+        "sourceName": "Arizona Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.arizona.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "arizona",
+          "sourceName": "Arizona Ei Referral Guide",
+          "sourceUrl": "https://des.az.gov/ddd",
+          "domain": "des.az.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. des.az.gov/ddd is still an official Arizona DES URL, but direct fetches are challenge-blocked. The blocked forms placeholder domain dhhs.arizona.gov does not resolve, so the existing official DES fallback is the safer source.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "arizona",
+          "sourceName": "Arizona Dd Intake Request Guide",
+          "sourceUrl": "https://www.azahcccs.gov/hcbs/eligibility",
+          "domain": "azahcccs.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The fallback candidate is on the official azahcccs.gov domain, which is live, while the blocked forms placeholder domain dhhs.arizona.gov did not resolve.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "arizona",
+          "sourceName": "Arizona Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "arizona",
+          "sourceName": "Arizona Medicaid App Guide",
+          "sourceUrl": "https://www.azahcccs.gov/",
+          "domain": "azahcccs.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. azahcccs.gov returned HTTP 200 while the blocked forms placeholder domain dhhs.arizona.gov did not resolve, so the existing official AHCCCS fallback is the safer source.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        }
+      ],
+      "candidateCount": 4
+    },
+    {
+      "stateId": "colorado",
+      "blockedFormsTarget": {
+        "sourceName": "Colorado Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.colorado.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "colorado",
+          "sourceName": "Colorado Ei Referral Guide",
+          "sourceUrl": "https://hcpf.colorado.gov/developmental-disabilities",
+          "domain": "hcpf.colorado.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued fallback remains on the official hcpf.colorado.gov domain. Header checks returned consistent CloudFront 403 responses across the queued official URLs, which indicates edge blocking rather than a dead or mismatched source. This is safer than the blocked forms placeholder domain dhhs.colorado.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "colorado",
+          "sourceName": "Colorado Dd Intake Request Guide",
+          "sourceUrl": "https://hcpf.colorado.gov/hcbs/eligibility",
+          "domain": "hcpf.colorado.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued fallback remains on the official hcpf.colorado.gov domain. Header checks returned consistent CloudFront 403 responses across the queued official URLs, which indicates edge blocking rather than a dead or mismatched source. This is safer than the blocked forms placeholder domain dhhs.colorado.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "colorado",
+          "sourceName": "Colorado Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "colorado",
+          "sourceName": "Colorado Medicaid App Guide",
+          "sourceUrl": "https://hcpf.colorado.gov/pcs",
+          "domain": "hcpf.colorado.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued fallback remains on the official hcpf.colorado.gov domain. Header checks returned consistent CloudFront 403 responses across the queued official URLs, which indicates edge blocking rather than a dead or mismatched source. This is safer than the blocked forms placeholder domain dhhs.colorado.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        }
+      ],
+      "candidateCount": 4
+    },
+    {
+      "stateId": "connecticut",
+      "blockedFormsTarget": {
+        "sourceName": "Connecticut Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.connecticut.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "connecticut",
+          "sourceName": "Connecticut Dd Intake Request Guide",
+          "sourceUrl": "https://portal.ct.gov/dds/hcbs/eligibility",
+          "domain": "portal.ct.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 3,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "connecticut",
+          "sourceName": "Connecticut Ei Referral Guide",
+          "sourceUrl": "https://portal.ct.gov/dds",
+          "domain": "portal.ct.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. portal.ct.gov/dds returned HTTP 200 on the official Connecticut portal domain, which is safer than the blocked forms placeholder domain dhhs.connecticut.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "connecticut",
+          "sourceName": "Connecticut Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "connecticut",
+          "sourceName": "Connecticut Department of Developmental Services",
+          "sourceUrl": "https://portal.ct.gov/dds",
+          "domain": "portal.ct.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued HCBS eligibility fallback URL returned HTTP 404, while the official portal.ct.gov/dds page returned HTTP 200. Using the live DDS root is safer than the blocked forms placeholder domain dhhs.connecticut.gov.",
+          "origin": "forms_fallback_manual_resolution:replace_with_reviewed_candidate"
+        },
+        {
+          "stateId": "connecticut",
+          "sourceName": "Connecticut Medicaid App Guide",
+          "sourceUrl": "https://portal.ct.gov/dss",
+          "domain": "portal.ct.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. portal.ct.gov/dss returned HTTP 200 on the official Connecticut portal domain, which is safer than the blocked forms placeholder domain dhhs.connecticut.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        }
+      ],
+      "candidateCount": 5
+    },
+    {
+      "stateId": "delaware",
+      "blockedFormsTarget": {
+        "sourceName": "Delaware Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.delaware.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "delaware",
+          "sourceName": "Delaware Ei Referral Guide",
+          "sourceUrl": "https://dhss.delaware.gov/ddds",
+          "domain": "dhss.delaware.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. dhss.delaware.gov/ddds resolved cleanly to the canonical live first-party DDS root, which is safer than the blocked forms placeholder domain dhhs.delaware.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "delaware",
+          "sourceName": "Delaware Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "delaware",
+          "sourceName": "Delaware Division of Developmental Disabilities Services",
+          "sourceUrl": "https://dhss.delaware.gov/ddds",
+          "domain": "dhss.delaware.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued HCBS eligibility fallback URL returned HTTP 404, while the live first-party DDS root resolved cleanly. Using the live DDS root is safer than the blocked forms placeholder domain dhhs.delaware.gov.",
+          "origin": "forms_fallback_manual_resolution:replace_with_reviewed_candidate"
+        },
+        {
+          "stateId": "delaware",
+          "sourceName": "Delaware Medicaid App Guide",
+          "sourceUrl": "https://dhss.delaware.gov/dmma",
+          "domain": "dhss.delaware.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. dhss.delaware.gov/dmma resolved cleanly to the canonical live first-party Medicaid root, which is safer than the blocked forms placeholder domain dhhs.delaware.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        }
+      ],
+      "candidateCount": 4
+    },
+    {
+      "stateId": "hawaii",
+      "blockedFormsTarget": {
+        "sourceName": "Hawaii Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.hawaii.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "hawaii",
+          "sourceName": "Hawaii Ei Referral Guide",
+          "sourceUrl": "https://health.hawaii.gov/ddd",
+          "domain": "health.hawaii.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. health.hawaii.gov/ddd resolved cleanly to the canonical live first-party DDD root, which is safer than the blocked forms placeholder domain dhhs.hawaii.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "hawaii",
+          "sourceName": "Hawaii Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "hawaii",
+          "sourceName": "Hawaii Developmental Disabilities Division",
+          "sourceUrl": "https://health.hawaii.gov/ddd",
+          "domain": "health.hawaii.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued HCBS eligibility fallback URL returned HTTP 404, while the live first-party DDD root resolved cleanly. Using the live DDD root is safer than the blocked forms placeholder domain dhhs.hawaii.gov.",
+          "origin": "forms_fallback_manual_resolution:replace_with_reviewed_candidate"
+        },
+        {
+          "stateId": "hawaii",
+          "sourceName": "Hawaii Medicaid App Guide",
+          "sourceUrl": "https://medquest.hawaii.gov/",
+          "domain": "medquest.hawaii.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. medquest.hawaii.gov returned HTTP 200 as a live first-party Medicaid root, which is safer than the blocked forms placeholder domain dhhs.hawaii.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        }
+      ],
+      "candidateCount": 4
+    },
+    {
+      "stateId": "indiana",
+      "blockedFormsTarget": {
+        "sourceName": "Indiana Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.indiana.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "indiana",
+          "sourceName": "Indiana Dd Intake Request Guide",
+          "sourceUrl": "https://www.in.gov/fssa/ddrs/hcbs/eligibility",
+          "domain": "in.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 3,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "indiana",
+          "sourceName": "Indiana Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "indiana",
+          "sourceName": "Indiana Bureau of Disabilities Services",
+          "sourceUrl": "http://www.in.gov/fssa/ddars",
+          "domain": "in.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued DDRS fallback URL canonically redirects to the live first-party DDARS root, which is safer than the blocked forms placeholder domain dhhs.indiana.gov.",
+          "origin": "forms_fallback_manual_resolution:replace_with_reviewed_candidate"
+        },
+        {
+          "stateId": "indiana",
+          "sourceName": "Indiana Medicaid App Guide",
+          "sourceUrl": "https://www.in.gov/medicaid",
+          "domain": "in.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. www.in.gov/medicaid returned HTTP 200 as a live first-party Medicaid root, which is safer than the blocked forms placeholder domain dhhs.indiana.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        }
+      ],
+      "candidateCount": 4
+    },
+    {
+      "stateId": "iowa",
+      "blockedFormsTarget": {
+        "sourceName": "Iowa Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.iowa.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "iowa",
+          "sourceName": "Iowa Ei Referral Guide",
+          "sourceUrl": "https://hhs.iowa.gov/",
+          "domain": "hhs.iowa.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. hhs.iowa.gov returned HTTP 200 as a live first-party official root, which is safer than the blocked forms placeholder domain dhhs.iowa.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "iowa",
+          "sourceName": "Iowa Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "iowa",
+          "sourceName": "Iowa Health and Human Services",
+          "sourceUrl": "https://hhs.iowa.gov/",
+          "domain": "hhs.iowa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued HCBS eligibility fallback URL returned HTTP 404, while the live first-party Iowa HHS root returned HTTP 200. Using the live root is safer than the blocked forms placeholder domain dhhs.iowa.gov.",
+          "origin": "forms_fallback_manual_resolution:replace_with_reviewed_candidate"
+        },
+        {
+          "stateId": "iowa",
+          "sourceName": "Iowa Medicaid",
+          "sourceUrl": "https://hhs.iowa.gov/medicaid",
+          "domain": "hhs.iowa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued IME fallback URL returned HTTP 404, while the live first-party Iowa Medicaid root returned HTTP 200. Using the live Medicaid root is safer than the blocked forms placeholder domain dhhs.iowa.gov.",
+          "origin": "forms_fallback_manual_resolution:replace_with_reviewed_candidate"
+        }
+      ],
+      "candidateCount": 4
+    },
+    {
+      "stateId": "kansas",
+      "blockedFormsTarget": {
+        "sourceName": "Kansas Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.kansas.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "kansas",
+          "sourceName": "Kansas Ei Referral Guide",
+          "sourceUrl": "https://www.kdads.ks.gov/",
+          "domain": "kdads.ks.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued fallback remains on the official kdads.ks.gov domain. Header checks returned a consistent Akamai 403 edge block rather than a dead or mismatched source, which is safer than the blocked forms placeholder domain dhhs.kansas.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "kansas",
+          "sourceName": "Kansas Dd Intake Request Guide",
+          "sourceUrl": "https://www.kdads.ks.gov/hcbs/eligibility",
+          "domain": "kdads.ks.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued fallback remains on the official kdads.ks.gov domain. Header checks returned a consistent Akamai 403 edge block rather than a dead or mismatched source, which is safer than the blocked forms placeholder domain dhhs.kansas.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "kansas",
+          "sourceName": "Kansas Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "kansas",
+          "sourceName": "Kansas Medicaid App Guide",
+          "sourceUrl": "https://www.kancare.ks.gov/",
+          "domain": "kancare.ks.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued Medicaid fallback remains on the official kancare.ks.gov domain. Header checks returned a consistent Akamai 403 edge block rather than a dead or mismatched source, which is safer than the blocked forms placeholder domain dhhs.kansas.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        }
+      ],
+      "candidateCount": 4
+    },
+    {
+      "stateId": "kentucky",
+      "blockedFormsTarget": {
+        "sourceName": "Kentucky Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.kentucky.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "kentucky",
+          "sourceName": "Kentucky Ei Referral Guide",
+          "sourceUrl": "https://dbhdid.ky.gov/",
+          "domain": "dbhdid.ky.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. dbhdid.ky.gov returned HTTP 200 as a live first-party official root, which is safer than the blocked forms placeholder domain dhhs.kentucky.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "kentucky",
+          "sourceName": "Kentucky Dd Intake Request Guide",
+          "sourceUrl": "https://dbhdid.ky.gov/hcbs/eligibility",
+          "domain": "dbhdid.ky.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. dbhdid.ky.gov/hcbs/eligibility returned HTTP 200 as a live first-party official page, which is safer than the blocked forms placeholder domain dhhs.kentucky.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "kentucky",
+          "sourceName": "Kentucky Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "kentucky",
+          "sourceName": "Kentucky Department for Medicaid Services",
+          "sourceUrl": "https://dbhdid.ky.gov/",
+          "domain": "dbhdid.ky.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued Medicaid fallback URL returned HTTP 404, while the live first-party DBHDID root returned HTTP 200. Using the live root is safer than the blocked forms placeholder domain dhhs.kentucky.gov.",
+          "origin": "forms_fallback_manual_resolution:replace_with_reviewed_candidate"
+        }
+      ],
+      "candidateCount": 4
+    },
+    {
+      "stateId": "louisiana",
+      "blockedFormsTarget": {
+        "sourceName": "Louisiana Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.louisiana.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "louisiana",
+          "sourceName": "Louisiana Dd Intake Request Guide",
+          "sourceUrl": "https://ldh.la.gov/ocdd/hcbs/eligibility",
+          "domain": "ldh.la.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 3,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "louisiana",
+          "sourceName": "Louisiana Ei Referral Guide",
+          "sourceUrl": "https://ldh.la.gov/ocdd",
+          "domain": "ldh.la.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. ldh.la.gov/ocdd resolved to a live first-party OCDD microsite, which is safer than the blocked forms placeholder domain dhhs.louisiana.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "louisiana",
+          "sourceName": "Louisiana Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "louisiana",
+          "sourceName": "Louisiana Medicaid App Guide",
+          "sourceUrl": "https://ldh.la.gov/medicaid",
+          "domain": "ldh.la.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. ldh.la.gov/medicaid returned HTTP 200 as a live first-party Medicaid page, which is safer than the blocked forms placeholder domain dhhs.louisiana.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "louisiana",
+          "sourceName": "Louisiana Office for Citizens with Developmental Disabilities",
+          "sourceUrl": "https://ldh.la.gov/microsite/11",
+          "domain": "ldh.la.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued HCBS eligibility fallback URL returned HTTP 404, while the OCDD fallback URL resolved to the live first-party microsite root. Using the live OCDD root is safer than the blocked forms placeholder domain dhhs.louisiana.gov.",
+          "origin": "forms_fallback_manual_resolution:replace_with_reviewed_candidate"
+        }
+      ],
+      "candidateCount": 5
+    },
+    {
+      "stateId": "maine",
+      "blockedFormsTarget": {
+        "sourceName": "Maine Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.maine.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "maine",
+          "sourceName": "Maine Dd Intake Request Guide",
+          "sourceUrl": "https://www.maine.gov/dhhs/oads/hcbs/eligibility",
+          "domain": "maine.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 3,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "maine",
+          "sourceName": "Maine Ei Referral Guide",
+          "sourceUrl": "https://www.maine.gov/dhhs/oads",
+          "domain": "maine.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. www.maine.gov/dhhs/oads returned HTTP 200 as a live first-party official page, which is safer than the blocked forms placeholder domain dhhs.maine.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "maine",
+          "sourceName": "Maine Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "maine",
+          "sourceName": "Maine Office of Aging and Disability Services",
+          "sourceUrl": "https://www.maine.gov/dhhs/oads",
+          "domain": "maine.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued HCBS eligibility fallback URL returned HTTP 404, while the live first-party OADS page returned HTTP 200. Using the live OADS page is safer than the blocked forms placeholder domain dhhs.maine.gov.",
+          "origin": "forms_fallback_manual_resolution:replace_with_reviewed_candidate"
+        },
+        {
+          "stateId": "maine",
+          "sourceName": "Maine Medicaid App Guide",
+          "sourceUrl": "https://www.maine.gov/dhhs/oms",
+          "domain": "maine.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. www.maine.gov/dhhs/oms returned HTTP 200 as a live first-party Medicaid page, which is safer than the blocked forms placeholder domain dhhs.maine.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        }
+      ],
+      "candidateCount": 5
+    },
+    {
+      "stateId": "maryland",
+      "blockedFormsTarget": {
+        "sourceName": "Maryland Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.maryland.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "maryland",
+          "sourceName": "Maryland Ei Referral Guide",
+          "sourceUrl": "https://dda.health.maryland.gov/",
+          "domain": "dda.health.maryland.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued DDA fallback resolved cleanly through the official health.maryland.gov/dda path to a live first-party DDA home page, which is safer than the blocked forms placeholder domain dhhs.maryland.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "maryland",
+          "sourceName": "Maryland Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "maryland",
+          "sourceName": "Maryland Medicaid App Guide",
+          "sourceUrl": "https://health.maryland.gov/",
+          "domain": "health.maryland.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. health.maryland.gov resolved to a live first-party state health site, which is safer than the blocked forms placeholder domain dhhs.maryland.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "maryland",
+          "sourceName": "Maryland Developmental Disabilities Administration",
+          "sourceUrl": "https://health.maryland.gov/dda/Pages/Home.aspx",
+          "domain": "health.maryland.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued DDA HCBS eligibility path redirected into a dead page and returned HTTP 404, while the live first-party DDA home page resolved cleanly. Using the live DDA page is safer than the blocked forms placeholder domain dhhs.maryland.gov.",
+          "origin": "forms_fallback_manual_resolution:replace_with_reviewed_candidate"
+        }
+      ],
+      "candidateCount": 4
+    },
+    {
+      "stateId": "massachusetts",
+      "blockedFormsTarget": {
+        "sourceName": "Massachusetts Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.massachusetts.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "massachusetts",
+          "sourceName": "Massachusetts Dd Intake Request Guide",
+          "sourceUrl": "https://www.mass.gov/dds/hcbs/eligibility",
+          "domain": "mass.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 3,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "massachusetts",
+          "sourceName": "Massachusetts Ei Referral Guide",
+          "sourceUrl": "https://www.mass.gov/dds",
+          "domain": "mass.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued DDS fallback canonically redirects through live Mass.gov DDS paths into the official DDS org page chain, which is safer than the blocked forms placeholder domain dhhs.massachusetts.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "massachusetts",
+          "sourceName": "Massachusetts Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "massachusetts",
+          "sourceName": "Massachusetts Medicaid App Guide",
+          "sourceUrl": "https://www.mass.gov/masshealth",
+          "domain": "mass.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. www.mass.gov/masshealth resolved to a live first-party MassHealth page, which is safer than the blocked forms placeholder domain dhhs.massachusetts.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "massachusetts",
+          "sourceName": "Massachusetts Department of Developmental Services",
+          "sourceUrl": "https://www.mass.gov/orgs/department-of-developmental-services",
+          "domain": "mass.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued DDS HCBS eligibility path returned HTTP 404, while the queued DDS root canonically redirects into the live Mass.gov DDS org page chain. Using the live DDS org page is safer than the blocked forms placeholder domain dhhs.massachusetts.gov.",
+          "origin": "forms_fallback_manual_resolution:replace_with_reviewed_candidate"
+        }
+      ],
+      "candidateCount": 5
+    },
+    {
+      "stateId": "michigan",
+      "blockedFormsTarget": {
+        "sourceName": "Michigan Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.michigan.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "michigan",
+          "sourceName": "Michigan Ei Referral Guide",
+          "sourceUrl": "https://www.michigan.gov/mdhhs",
+          "domain": "michigan.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued fallback remains on the official michigan.gov domain. Header checks returned a consistent Akamai 403 edge block rather than a dead or mismatched source, which is safer than the blocked forms placeholder domain dhhs.michigan.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "michigan",
+          "sourceName": "Michigan Dd Intake Request Guide",
+          "sourceUrl": "https://www.michigan.gov/mdhhs/hcbs/eligibility",
+          "domain": "michigan.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued fallback remains on the official michigan.gov domain. Header checks returned a consistent Akamai 403 edge block rather than a dead or mismatched source, which is safer than the blocked forms placeholder domain dhhs.michigan.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "michigan",
+          "sourceName": "Michigan Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "michigan",
+          "sourceName": "Michigan Medicaid App Guide",
+          "sourceUrl": "https://www.michigan.gov/medicaid",
+          "domain": "michigan.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued fallback remains on the official michigan.gov domain. Header checks returned a consistent Akamai 403 edge block rather than a dead or mismatched source, which is safer than the blocked forms placeholder domain dhhs.michigan.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        }
+      ],
+      "candidateCount": 4
+    },
+    {
+      "stateId": "minnesota",
+      "blockedFormsTarget": {
+        "sourceName": "Minnesota Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.minnesota.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "minnesota",
+          "sourceName": "Minnesota Ei Referral Guide",
+          "sourceUrl": "https://mn.gov/dhs",
+          "domain": "mn.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued fallback remains on the official mn.gov domain. Header checks redirected into a live first-party anti-bot validation flow rather than a dead or mismatched source, which is safer than the blocked forms placeholder domain dhhs.minnesota.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "minnesota",
+          "sourceName": "Minnesota Dd Intake Request Guide",
+          "sourceUrl": "https://mn.gov/dhs/waivers/eligibility",
+          "domain": "mn.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued fallback remains on the official mn.gov domain. Header checks redirected into a live first-party anti-bot validation flow rather than a dead or mismatched source, which is safer than the blocked forms placeholder domain dhhs.minnesota.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "minnesota",
+          "sourceName": "Minnesota Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "minnesota",
+          "sourceName": "Minnesota Medicaid App Guide",
+          "sourceUrl": "https://mn.gov/dhs/pca",
+          "domain": "mn.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued fallback remains on the official mn.gov domain. Header checks redirected into a live first-party anti-bot validation flow rather than a dead or mismatched source, which is safer than the blocked forms placeholder domain dhhs.minnesota.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        }
+      ],
+      "candidateCount": 4
+    },
+    {
+      "stateId": "mississippi",
+      "blockedFormsTarget": {
+        "sourceName": "Mississippi Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.mississippi.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "mississippi",
+          "sourceName": "Mississippi Dd Intake Request Guide",
+          "sourceUrl": "https://www.dmh.ms.gov/hcbs/eligibility",
+          "domain": "dmh.ms.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 3,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "mississippi",
+          "sourceName": "Mississippi Ei Referral Guide",
+          "sourceUrl": "https://www.dmh.ms.gov/",
+          "domain": "dmh.ms.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. www.dmh.ms.gov returned HTTP 200 as a live first-party official page, which is safer than the blocked forms placeholder domain dhhs.mississippi.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "mississippi",
+          "sourceName": "Mississippi Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "mississippi",
+          "sourceName": "Mississippi Medicaid App Guide",
+          "sourceUrl": "https://medicaid.ms.gov/",
+          "domain": "medicaid.ms.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. medicaid.ms.gov returned HTTP 200 as a live first-party Medicaid page, which is safer than the blocked forms placeholder domain dhhs.mississippi.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "mississippi",
+          "sourceName": "Mississippi Department of Mental Health",
+          "sourceUrl": "https://www.dmh.ms.gov/",
+          "domain": "dmh.ms.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued HCBS eligibility fallback URL returned HTTP 404, while the live first-party DMH root returned HTTP 200. Using the live DMH root is safer than the blocked forms placeholder domain dhhs.mississippi.gov.",
+          "origin": "forms_fallback_manual_resolution:replace_with_reviewed_candidate"
+        }
+      ],
+      "candidateCount": 5
+    },
+    {
+      "stateId": "missouri",
+      "blockedFormsTarget": {
+        "sourceName": "Missouri Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.missouri.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "missouri",
+          "sourceName": "Missouri Ei Referral Guide",
+          "sourceUrl": "https://dmh.mo.gov/dev-disabilities",
+          "domain": "dmh.mo.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued official DMH developmental disabilities page is the safer first-party fallback source than the blocked forms placeholder domain dhhs.missouri.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "missouri",
+          "sourceName": "Missouri Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "missouri",
+          "sourceName": "Missouri Department of Mental Health Developmental Disabilities",
+          "sourceUrl": "https://dmh.mo.gov/dev-disabilities",
+          "domain": "dmh.mo.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued HCBS eligibility path is not the safe fallback target, so the live first-party DMH developmental disabilities page is used instead of the blocked forms placeholder domain dhhs.missouri.gov.",
+          "origin": "forms_fallback_manual_resolution:replace_with_reviewed_candidate"
+        },
+        {
+          "stateId": "missouri",
+          "sourceName": "Missouri Medicaid App Guide",
+          "sourceUrl": "https://mydss.mo.gov/",
+          "domain": "mydss.mo.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued mydss.mo.gov page is the safer first-party Medicaid-related fallback source than the blocked forms placeholder domain dhhs.missouri.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        }
+      ],
+      "candidateCount": 4
+    },
+    {
+      "stateId": "montana",
+      "blockedFormsTarget": {
+        "sourceName": "Montana Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.montana.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "montana",
+          "sourceName": "Montana Ei Referral Guide",
+          "sourceUrl": "https://dphhs.mt.gov/dsd/ddp",
+          "domain": "dphhs.mt.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued DPHHS Developmental Disabilities Program page is the safer first-party fallback source than the blocked forms placeholder domain dhhs.montana.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "montana",
+          "sourceName": "Montana Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "montana",
+          "sourceName": "Montana Medicaid App Guide",
+          "sourceUrl": "https://dphhs.mt.gov/brd/medicaid",
+          "domain": "dphhs.mt.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued DPHHS Medicaid page is the safer first-party fallback source than the blocked forms placeholder domain dhhs.montana.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "montana",
+          "sourceName": "Montana Developmental Disabilities Program",
+          "sourceUrl": "https://dphhs.mt.gov/dsd/ddp",
+          "domain": "dphhs.mt.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued HCBS eligibility path is not the safe fallback target, so the live first-party DPHHS Developmental Disabilities Program page is used instead of the blocked forms placeholder domain dhhs.montana.gov.",
+          "origin": "forms_fallback_manual_resolution:replace_with_reviewed_candidate"
+        }
+      ],
+      "candidateCount": 4
+    },
+    {
+      "stateId": "nebraska",
+      "blockedFormsTarget": {
+        "sourceName": "Nebraska Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.nebraska.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "federal_only_form_fallback",
+      "canonicalTargetClass": "approved_federal_only_fallback",
+      "topCandidates": [
+        {
+          "stateId": "nebraska",
+          "sourceName": "Nebraska Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        }
+      ],
+      "candidateCount": 1
+    },
+    {
+      "stateId": "nevada",
+      "blockedFormsTarget": {
+        "sourceName": "Nevada Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.nevada.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "nevada",
+          "sourceName": "Nevada Ei Referral Guide",
+          "sourceUrl": "https://adsd.nv.gov/",
+          "domain": "adsd.nv.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued ADSD page is the safer first-party fallback source than the blocked forms placeholder domain dhhs.nevada.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "nevada",
+          "sourceName": "Nevada Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "nevada",
+          "sourceName": "Nevada Aging and Disability Services Division",
+          "sourceUrl": "https://adsd.nv.gov/",
+          "domain": "adsd.nv.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued HCBS eligibility path is not the safe fallback target, so the live first-party ADSD page is used instead of the blocked forms placeholder domain dhhs.nevada.gov.",
+          "origin": "forms_fallback_manual_resolution:replace_with_reviewed_candidate"
+        },
+        {
+          "stateId": "nevada",
+          "sourceName": "Nevada Medicaid App Guide",
+          "sourceUrl": "https://dhcfp.nv.gov/",
+          "domain": "dhcfp.nv.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued DHCFP page is the safer first-party Medicaid-related fallback source than the blocked forms placeholder domain dhhs.nevada.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        }
+      ],
+      "candidateCount": 4
+    },
+    {
+      "stateId": "new-hampshire",
+      "blockedFormsTarget": {
+        "sourceName": "New Hampshire Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.new-hampshire.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "federal_only_form_fallback",
+      "canonicalTargetClass": "approved_federal_only_fallback",
+      "topCandidates": [
+        {
+          "stateId": "new-hampshire",
+          "sourceName": "New Hampshire Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        }
+      ],
+      "candidateCount": 1
+    },
+    {
+      "stateId": "new-mexico",
+      "blockedFormsTarget": {
+        "sourceName": "New Mexico Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.new-mexico.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "federal_only_form_fallback",
+      "canonicalTargetClass": "approved_federal_only_fallback",
+      "topCandidates": [
+        {
+          "stateId": "new-mexico",
+          "sourceName": "New Mexico Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        }
+      ],
+      "candidateCount": 1
+    },
+    {
+      "stateId": "north-carolina",
+      "blockedFormsTarget": {
+        "sourceName": "North Carolina Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.north-carolina.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "north-carolina",
+          "sourceName": "North Carolina Dd Intake Request Guide",
+          "sourceUrl": "https://www.ncdhhs.gov/innovations/eligibility",
+          "domain": "ncdhhs.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 3,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "north-carolina",
+          "sourceName": "North Carolina Ei Referral Guide",
+          "sourceUrl": "https://www.ncdhhs.gov/divisions/mhddsas",
+          "domain": "ncdhhs.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued NCDHHS division page is the safer first-party fallback source than the blocked forms placeholder domain dhhs.north-carolina.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "north-carolina",
+          "sourceName": "North Carolina Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "north-carolina",
+          "sourceName": "North Carolina Medicaid App Guide",
+          "sourceUrl": "https://medicaid.ncdhhs.gov/",
+          "domain": "medicaid.ncdhhs.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued Medicaid page is the safer first-party fallback source than the blocked forms placeholder domain dhhs.north-carolina.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "north-carolina",
+          "sourceName": "North Carolina Division of Mental Health, Developmental Disabilities, and Substance Use Services",
+          "sourceUrl": "https://www.ncdhhs.gov/divisions/mhddsas",
+          "domain": "ncdhhs.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued innovations eligibility path is not the safe fallback target, so the live first-party NCDHHS division page is used instead of the blocked forms placeholder domain dhhs.north-carolina.gov.",
+          "origin": "forms_fallback_manual_resolution:replace_with_reviewed_candidate"
+        }
+      ],
+      "candidateCount": 5
+    },
+    {
+      "stateId": "north-dakota",
+      "blockedFormsTarget": {
+        "sourceName": "North Dakota Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.north-dakota.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "north-dakota",
+          "sourceName": "North Dakota Dd Intake Request Guide",
+          "sourceUrl": "https://www.hhs.nd.gov/dd/hcbs/eligibility",
+          "domain": "hhs.nd.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 3,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "north-dakota",
+          "sourceName": "North Dakota Ei Referral Guide",
+          "sourceUrl": "https://www.hhs.nd.gov/dd",
+          "domain": "hhs.nd.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued HHS developmental disabilities page is the safer first-party fallback source than the blocked forms placeholder domain dhhs.north-dakota.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "north-dakota",
+          "sourceName": "North Dakota Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "north-dakota",
+          "sourceName": "North Dakota Developmental Disabilities",
+          "sourceUrl": "https://www.hhs.nd.gov/dd",
+          "domain": "hhs.nd.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued HCBS eligibility path is not the safe fallback target, so the live first-party HHS developmental disabilities page is used instead of the blocked forms placeholder domain dhhs.north-dakota.gov.",
+          "origin": "forms_fallback_manual_resolution:replace_with_reviewed_candidate"
+        },
+        {
+          "stateId": "north-dakota",
+          "sourceName": "North Dakota Medicaid App Guide",
+          "sourceUrl": "https://www.hhs.nd.gov/medicaid",
+          "domain": "hhs.nd.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued HHS Medicaid page is the safer first-party fallback source than the blocked forms placeholder domain dhhs.north-dakota.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        }
+      ],
+      "candidateCount": 5
+    },
+    {
+      "stateId": "oklahoma",
+      "blockedFormsTarget": {
+        "sourceName": "Oklahoma Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.oklahoma.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "oklahoma",
+          "sourceName": "Oklahoma Dd Intake Request Guide",
+          "sourceUrl": "https://oklahoma.gov/okdhs/services/dds/hcbs/eligibility.html",
+          "domain": "oklahoma.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 3,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "oklahoma",
+          "sourceName": "Oklahoma Ei Referral Guide",
+          "sourceUrl": "https://oklahoma.gov/okdhs/services/dds",
+          "domain": "oklahoma.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued OKDHS DDS page is the safer first-party fallback source than the blocked forms placeholder domain dhhs.oklahoma.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "oklahoma",
+          "sourceName": "Oklahoma Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "oklahoma",
+          "sourceName": "Oklahoma Medicaid App Guide",
+          "sourceUrl": "https://oklahoma.gov/ohca",
+          "domain": "oklahoma.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued OHCA page is the safer first-party Medicaid-related fallback source than the blocked forms placeholder domain dhhs.oklahoma.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "oklahoma",
+          "sourceName": "Oklahoma Human Services Developmental Disabilities Services",
+          "sourceUrl": "https://oklahoma.gov/okdhs/services/dds",
+          "domain": "oklahoma.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued HCBS eligibility path is not the safe fallback target, so the live first-party OKDHS DDS page is used instead of the blocked forms placeholder domain dhhs.oklahoma.gov.",
+          "origin": "forms_fallback_manual_resolution:replace_with_reviewed_candidate"
+        }
+      ],
+      "candidateCount": 5
+    },
+    {
+      "stateId": "oregon",
+      "blockedFormsTarget": {
+        "sourceName": "Oregon Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.oregon.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "oregon",
+          "sourceName": "Oregon Dd Intake Request Guide",
+          "sourceUrl": "https://www.oregon.gov/odhs/dds/hcbs/eligibility",
+          "domain": "oregon.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 3,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "oregon",
+          "sourceName": "Oregon Ei Referral Guide",
+          "sourceUrl": "https://www.oregon.gov/odhs/dds",
+          "domain": "oregon.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued ODHS DDS page is the safer first-party fallback source than the blocked forms placeholder domain dhhs.oregon.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "oregon",
+          "sourceName": "Oregon Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "oregon",
+          "sourceName": "Oregon Department of Human Services Developmental Disabilities Services",
+          "sourceUrl": "https://www.oregon.gov/odhs/dds",
+          "domain": "oregon.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued HCBS eligibility path is not the safe fallback target, so the live first-party ODHS DDS page is used instead of the blocked forms placeholder domain dhhs.oregon.gov.",
+          "origin": "forms_fallback_manual_resolution:replace_with_reviewed_candidate"
+        },
+        {
+          "stateId": "oregon",
+          "sourceName": "Oregon Medicaid App Guide",
+          "sourceUrl": "https://www.oregon.gov/oha",
+          "domain": "oregon.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued OHA page is the safer first-party Medicaid-related fallback source than the blocked forms placeholder domain dhhs.oregon.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        }
+      ],
+      "candidateCount": 5
+    },
+    {
+      "stateId": "rhode-island",
+      "blockedFormsTarget": {
+        "sourceName": "Rhode Island Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.rhode-island.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "rhode-island",
+          "sourceName": "Rhode Island Ei Referral Guide",
+          "sourceUrl": "https://bhddh.ri.gov/developmental-disabilities",
+          "domain": "bhddh.ri.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued BHDDH developmental disabilities page is the safer first-party fallback source than the blocked forms placeholder domain dhhs.rhode-island.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "rhode-island",
+          "sourceName": "Rhode Island Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "rhode-island",
+          "sourceName": "Rhode Island Department of Behavioral Healthcare, Developmental Disabilities and Hospitals",
+          "sourceUrl": "https://bhddh.ri.gov/developmental-disabilities",
+          "domain": "bhddh.ri.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued HCBS eligibility path is not the safe fallback target, so the live first-party BHDDH developmental disabilities page is used instead of the blocked forms placeholder domain dhhs.rhode-island.gov.",
+          "origin": "forms_fallback_manual_resolution:replace_with_reviewed_candidate"
+        },
+        {
+          "stateId": "rhode-island",
+          "sourceName": "Rhode Island Medicaid App Guide",
+          "sourceUrl": "https://eohhs.ri.gov/",
+          "domain": "eohhs.ri.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued EOHHS page is the safer first-party Medicaid-related fallback source than the blocked forms placeholder domain dhhs.rhode-island.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        }
+      ],
+      "candidateCount": 4
+    },
+    {
+      "stateId": "south-carolina",
+      "blockedFormsTarget": {
+        "sourceName": "South Carolina Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.south-carolina.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "south-carolina",
+          "sourceName": "South Carolina Ei Referral Guide",
+          "sourceUrl": "https://ddsn.sc.gov/",
+          "domain": "ddsn.sc.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued DDSN page is the safer first-party fallback source than the blocked forms placeholder domain dhhs.south-carolina.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "south-carolina",
+          "sourceName": "South Carolina Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "south-carolina",
+          "sourceName": "South Carolina Department of Disabilities and Special Needs",
+          "sourceUrl": "https://ddsn.sc.gov/",
+          "domain": "ddsn.sc.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued HCBS eligibility path is not the safe fallback target, so the live first-party DDSN page is used instead of the blocked forms placeholder domain dhhs.south-carolina.gov.",
+          "origin": "forms_fallback_manual_resolution:replace_with_reviewed_candidate"
+        },
+        {
+          "stateId": "south-carolina",
+          "sourceName": "South Carolina Medicaid App Guide",
+          "sourceUrl": "https://www.scdhhs.gov/",
+          "domain": "scdhhs.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued SCDHHS page is the safer first-party Medicaid-related fallback source than the blocked forms placeholder domain dhhs.south-carolina.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        }
+      ],
+      "candidateCount": 4
+    },
+    {
+      "stateId": "south-dakota",
+      "blockedFormsTarget": {
+        "sourceName": "South Dakota Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.south-dakota.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "south-dakota",
+          "sourceName": "South Dakota Dd Intake Request Guide",
+          "sourceUrl": "https://dhs.sd.gov/dd/hcbs/eligibility",
+          "domain": "dhs.sd.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 3,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "south-dakota",
+          "sourceName": "South Dakota Ei Referral Guide",
+          "sourceUrl": "https://dhs.sd.gov/dd",
+          "domain": "dhs.sd.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued DHS developmental disabilities page is the safer first-party fallback source than the blocked forms placeholder domain dhhs.south-dakota.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "south-dakota",
+          "sourceName": "South Dakota Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "south-dakota",
+          "sourceName": "South Dakota Developmental Disabilities",
+          "sourceUrl": "https://dhs.sd.gov/dd",
+          "domain": "dhs.sd.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued HCBS eligibility path is not the safe fallback target, so the live first-party DHS developmental disabilities page is used instead of the blocked forms placeholder domain dhhs.south-dakota.gov.",
+          "origin": "forms_fallback_manual_resolution:replace_with_reviewed_candidate"
+        },
+        {
+          "stateId": "south-dakota",
+          "sourceName": "South Dakota Medicaid App Guide",
+          "sourceUrl": "https://dss.sd.gov/medicaid",
+          "domain": "dss.sd.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued DSS Medicaid page is the safer first-party Medicaid-related fallback source than the blocked forms placeholder domain dhhs.south-dakota.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        }
+      ],
+      "candidateCount": 5
+    },
+    {
+      "stateId": "tennessee",
+      "blockedFormsTarget": {
+        "sourceName": "Tennessee Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.tennessee.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "tennessee",
+          "sourceName": "Tennessee Dd Intake Request Guide",
+          "sourceUrl": "https://www.tn.gov/didd/hcbs/eligibility",
+          "domain": "tn.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 3,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "tennessee",
+          "sourceName": "Tennessee Ei Referral Guide",
+          "sourceUrl": "https://www.tn.gov/didd",
+          "domain": "tn.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued DIDD page is the safer first-party fallback source than the blocked forms placeholder domain dhhs.tennessee.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "tennessee",
+          "sourceName": "Tennessee Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "tennessee",
+          "sourceName": "Tennessee Department of Intellectual and Developmental Disabilities",
+          "sourceUrl": "https://www.tn.gov/didd",
+          "domain": "tn.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued HCBS eligibility path is not the safe fallback target, so the live first-party DIDD page is used instead of the blocked forms placeholder domain dhhs.tennessee.gov.",
+          "origin": "forms_fallback_manual_resolution:replace_with_reviewed_candidate"
+        },
+        {
+          "stateId": "tennessee",
+          "sourceName": "Tennessee Medicaid App Guide",
+          "sourceUrl": "https://www.tn.gov/tenncare",
+          "domain": "tn.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued TennCare page is the safer first-party Medicaid-related fallback source than the blocked forms placeholder domain dhhs.tennessee.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        }
+      ],
+      "candidateCount": 5
+    },
+    {
+      "stateId": "utah",
+      "blockedFormsTarget": {
+        "sourceName": "Utah Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.utah.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "utah",
+          "sourceName": "Utah Dd Intake Request Guide",
+          "sourceUrl": "https://dspd.utah.gov/hcbs/eligibility",
+          "domain": "dspd.utah.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 3,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "utah",
+          "sourceName": "Utah Ei Referral Guide",
+          "sourceUrl": "https://dspd.utah.gov/",
+          "domain": "dspd.utah.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued DSPD page is the safer first-party fallback source than the blocked forms placeholder domain dhhs.utah.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "utah",
+          "sourceName": "Utah Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "utah",
+          "sourceName": "Utah Division of Services for People with Disabilities",
+          "sourceUrl": "https://dspd.utah.gov/",
+          "domain": "dspd.utah.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued HCBS eligibility path is not the safe fallback target, so the live first-party DSPD page is used instead of the blocked forms placeholder domain dhhs.utah.gov.",
+          "origin": "forms_fallback_manual_resolution:replace_with_reviewed_candidate"
+        },
+        {
+          "stateId": "utah",
+          "sourceName": "Utah Medicaid App Guide",
+          "sourceUrl": "https://medicaid.utah.gov/",
+          "domain": "medicaid.utah.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued Utah Medicaid page is the safer first-party Medicaid-related fallback source than the blocked forms placeholder domain dhhs.utah.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        }
+      ],
+      "candidateCount": 5
+    },
+    {
+      "stateId": "vermont",
+      "blockedFormsTarget": {
+        "sourceName": "Vermont Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.vermont.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "vermont",
+          "sourceName": "Vermont Dd Intake Request Guide",
+          "sourceUrl": "https://ddsd.vermont.gov/hcbs/eligibility",
+          "domain": "ddsd.vermont.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 3,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "vermont",
+          "sourceName": "Vermont Ei Referral Guide",
+          "sourceUrl": "https://ddsd.vermont.gov/",
+          "domain": "ddsd.vermont.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued DDSD page is the safer first-party fallback source than the blocked forms placeholder domain dhhs.vermont.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "vermont",
+          "sourceName": "Vermont Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "vermont",
+          "sourceName": "Vermont Developmental Disabilities Services Division",
+          "sourceUrl": "https://ddsd.vermont.gov/",
+          "domain": "ddsd.vermont.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued HCBS eligibility path is not the safe fallback target, so the live first-party DDSD page is used instead of the blocked forms placeholder domain dhhs.vermont.gov.",
+          "origin": "forms_fallback_manual_resolution:replace_with_reviewed_candidate"
+        },
+        {
+          "stateId": "vermont",
+          "sourceName": "Vermont Medicaid App Guide",
+          "sourceUrl": "https://dvha.vermont.gov/",
+          "domain": "dvha.vermont.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued DVHA page is the safer first-party Medicaid-related fallback source than the blocked forms placeholder domain dhhs.vermont.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        }
+      ],
+      "candidateCount": 5
+    },
+    {
+      "stateId": "virginia",
+      "blockedFormsTarget": {
+        "sourceName": "Virginia Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.virginia.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "virginia",
+          "sourceName": "Virginia Ei Referral Guide",
+          "sourceUrl": "https://dbhds.virginia.gov/",
+          "domain": "dbhds.virginia.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued DBHDS page is the safer first-party fallback source than the blocked forms placeholder domain dhhs.virginia.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "virginia",
+          "sourceName": "Virginia Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "virginia",
+          "sourceName": "Virginia Department of Behavioral Health and Developmental Services",
+          "sourceUrl": "https://dbhds.virginia.gov/",
+          "domain": "dbhds.virginia.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued HCBS eligibility path is not the safe fallback target, so the live first-party DBHDS page is used instead of the blocked forms placeholder domain dhhs.virginia.gov.",
+          "origin": "forms_fallback_manual_resolution:replace_with_reviewed_candidate"
+        },
+        {
+          "stateId": "virginia",
+          "sourceName": "Virginia Medicaid App Guide",
+          "sourceUrl": "https://www.dmas.virginia.gov/",
+          "domain": "dmas.virginia.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued DMAS page is the safer first-party Medicaid-related fallback source than the blocked forms placeholder domain dhhs.virginia.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        }
+      ],
+      "candidateCount": 4
+    },
+    {
+      "stateId": "washington",
+      "blockedFormsTarget": {
+        "sourceName": "Washington Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.washington.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "washington",
+          "sourceName": "Washington Dd Intake Request Guide",
+          "sourceUrl": "https://www.dshs.wa.gov/dda/hcbs/eligibility",
+          "domain": "dshs.wa.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 3,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "washington",
+          "sourceName": "Washington Ei Referral Guide",
+          "sourceUrl": "https://www.dshs.wa.gov/dda",
+          "domain": "dshs.wa.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued DDA page is the safer first-party fallback source than the blocked forms placeholder domain dhhs.washington.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "washington",
+          "sourceName": "Washington Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "washington",
+          "sourceName": "Washington Developmental Disabilities Administration",
+          "sourceUrl": "https://www.dshs.wa.gov/dda",
+          "domain": "dshs.wa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued HCBS eligibility path is not the safe fallback target, so the live first-party DDA page is used instead of the blocked forms placeholder domain dhhs.washington.gov.",
+          "origin": "forms_fallback_manual_resolution:replace_with_reviewed_candidate"
+        },
+        {
+          "stateId": "washington",
+          "sourceName": "Washington Medicaid App Guide",
+          "sourceUrl": "https://www.hca.wa.gov/",
+          "domain": "hca.wa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued HCA page is the safer first-party Medicaid-related fallback source than the blocked forms placeholder domain dhhs.washington.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        }
+      ],
+      "candidateCount": 5
+    },
+    {
+      "stateId": "west-virginia",
+      "blockedFormsTarget": {
+        "sourceName": "West Virginia Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.west-virginia.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "west-virginia",
+          "sourceName": "West Virginia Ei Referral Guide",
+          "sourceUrl": "https://dhhr.wv.gov/bms",
+          "domain": "dhhr.wv.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued BMS page is the safer first-party fallback source than the blocked forms placeholder domain dhhs.west-virginia.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "west-virginia",
+          "sourceName": "West Virginia Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "west-virginia",
+          "sourceName": "West Virginia Medicaid App Guide",
+          "sourceUrl": "https://dhhr.wv.gov/",
+          "domain": "dhhr.wv.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued DHHR page is the safer first-party Medicaid-related fallback source than the blocked forms placeholder domain dhhs.west-virginia.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "west-virginia",
+          "sourceName": "West Virginia Bureau for Medical Services",
+          "sourceUrl": "https://dhhr.wv.gov/bms",
+          "domain": "dhhr.wv.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued HCBS eligibility path is not the safe fallback target, so the live first-party BMS page is used instead of the blocked forms placeholder domain dhhs.west-virginia.gov.",
+          "origin": "forms_fallback_manual_resolution:replace_with_reviewed_candidate"
+        }
+      ],
+      "candidateCount": 4
+    },
+    {
+      "stateId": "wisconsin",
+      "blockedFormsTarget": {
+        "sourceName": "Wisconsin Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.wisconsin.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "wisconsin",
+          "sourceName": "Wisconsin Ei Referral Guide",
+          "sourceUrl": "https://www.dhs.wisconsin.gov/",
+          "domain": "dhs.wisconsin.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued Wisconsin DHS page is the safer first-party fallback source than the blocked forms placeholder domain dhhs.wisconsin.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "wisconsin",
+          "sourceName": "Wisconsin Dd Intake Request Guide",
+          "sourceUrl": "https://www.dhs.wisconsin.gov/familycare/eligibility.htm",
+          "domain": "dhs.wisconsin.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued Family Care eligibility page is the safer first-party fallback source than the blocked forms placeholder domain dhhs.wisconsin.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "wisconsin",
+          "sourceName": "Wisconsin Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "wisconsin",
+          "sourceName": "Wisconsin Medicaid App Guide",
+          "sourceUrl": "https://www.dhs.wisconsin.gov/medicaid",
+          "domain": "dhs.wisconsin.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued Wisconsin Medicaid page is the safer first-party Medicaid-related fallback source than the blocked forms placeholder domain dhhs.wisconsin.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        }
+      ],
+      "candidateCount": 4
+    },
+    {
+      "stateId": "wyoming",
+      "blockedFormsTarget": {
+        "sourceName": "Wyoming Medicaid & Special Education Forms",
+        "sourceUrl": "https://dhhs.wyoming.gov/forms",
+        "quarantineReason": "Programmatically generated fake domain"
+      },
+      "replacementClass": "state_specific_form_fallback_only",
+      "canonicalTargetClass": "approved_state_specific_fallback_root",
+      "topCandidates": [
+        {
+          "stateId": "wyoming",
+          "sourceName": "Wyoming Ei Referral Guide",
+          "sourceUrl": "https://health.wyo.gov/behavioralhealth/dd",
+          "domain": "health.wyo.gov",
+          "candidateType": "application_or_eligibility_guide",
+          "priority": 2,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued Wyoming developmental disabilities page is the safer first-party fallback source than the blocked forms placeholder domain dhhs.wyoming.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        },
+        {
+          "stateId": "wyoming",
+          "sourceName": "Wyoming Ssi Checklist Guide",
+          "sourceUrl": "https://www.ssa.gov/",
+          "domain": "ssa.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 1,
+          "verificationStatus": "verified",
+          "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+          "origin": "db_existing_sources"
+        },
+        {
+          "stateId": "wyoming",
+          "sourceName": "Wyoming Developmental Disabilities",
+          "sourceUrl": "https://health.wyo.gov/behavioralhealth/dd",
+          "domain": "health.wyo.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued HCBS eligibility path is not the safe fallback target, so the live first-party Wyoming developmental disabilities page is used instead of the blocked forms placeholder domain dhhs.wyoming.gov.",
+          "origin": "forms_fallback_manual_resolution:replace_with_reviewed_candidate"
+        },
+        {
+          "stateId": "wyoming",
+          "sourceName": "Wyoming Medicaid App Guide",
+          "sourceUrl": "https://health.wyo.gov/healthcarefin",
+          "domain": "health.wyo.gov",
+          "candidateType": "general_form_related_page",
+          "priority": 1,
+          "recordCount": 0,
+          "verificationStatus": "reviewed",
+          "whyNeeded": "Reviewed 2026-06-17. The queued Wyoming Healthcare Financing page is the safer first-party Medicaid-related fallback source than the blocked forms placeholder domain dhhs.wyoming.gov.",
+          "origin": "forms_fallback_manual_resolution:validate_existing_candidate"
+        }
+      ],
+      "candidateCount": 4
+    }
+  ]
+}

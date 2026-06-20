@@ -1,0 +1,1368 @@
+{
+  "evidencePath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/nonprofit-accessibility-domains/disabilityrightstx-org/2026-06-17T15-45-53-865Z/evidence.json",
+  "promotionPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/nonprofit-accessibility-domains/disabilityrightstx-org/2026-06-17T15-45-53-865Z/promotion-decisions.json",
+  "summaryPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/nonprofit-accessibility-domains/disabilityrightstx-org/2026-06-17T15-45-53-865Z/summary.json",
+  "mdReportPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/nonprofit-accessibility-domain-disabilityrightstx-org-2026-06-17.md",
+  "generatedAt": "2026-06-17",
+  "runStamp": "2026-06-17T15-45-53-865Z",
+  "domain": "disabilityrightstx.org",
+  "orgTerms": [
+    "Disability Rights Texas (Statewide Support)"
+  ],
+  "dryRun": true,
+  "safeStatus": "partially_safe_org_level_only",
+  "beforeDomainCounts": {
+    "total": 254,
+    "inPerson": 0,
+    "orgLevelPresence": 0,
+    "localInPersonEvidence": 0,
+    "trustedMissing": 254
+  },
+  "afterDomainCounts": {
+    "total": 254,
+    "inPerson": 0,
+    "orgLevelPresence": 0,
+    "localInPersonEvidence": 0,
+    "trustedMissing": 254
+  },
+  "candidateCount": 254,
+  "mutationCount": 0,
+  "skippedCount": 254,
+  "classificationCounts": {},
+  "evidenceLevelCounts": {},
+  "actionCounts": {},
+  "warnings": [
+    "statewide_many_county_service_area",
+    "many_to_one_evidence",
+    "bulk_org_level_review_threshold"
+  ],
+  "sampleRows": [],
+  "mutations": [],
+  "skipped": [
+    {
+      "id": "tx-np-drtx-anderson-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-andrews-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-angelina-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-aransas-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-archer-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-armstrong-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-atascosa-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-austin-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-bailey-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-bandera-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-bastrop-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-baylor-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-bee-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-bell-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-bexar-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-blanco-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-borden-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-bosque-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-bowie-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-brazoria-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-brazos-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-brewster-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-briscoe-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-brooks-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-brown-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-burleson-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-burnet-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-caldwell-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-calhoun-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-callahan-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-cameron-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-camp-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-carson-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-cass-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-castro-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-chambers-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-cherokee-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-childress-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-clay-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-cochran-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-coke-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-coleman-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-collin-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-collingsworth-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-colorado-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-comal-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-comanche-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-concho-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-cooke-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-coryell-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-cottle-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-crane-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-crockett-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-crosby-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-culberson-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-dallam-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-dallas-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-dawson-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-deaf-smith-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-delta-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-denton-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-dewitt-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-dickens-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-dimmit-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-donley-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-duval-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-eastland-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-ector-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-edwards-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-el-paso-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-ellis-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-erath-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-falls-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-fannin-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-fayette-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-fisher-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-floyd-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-foard-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-fort-bend-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-franklin-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-freestone-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-frio-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-gaines-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-galveston-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-garza-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-gillespie-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-glasscock-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-goliad-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-gonzales-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-gray-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-grayson-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-gregg-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-grimes-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-guadalupe-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-hale-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-hall-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-hamilton-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-hansford-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-hardeman-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-hardin-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-harris-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-harrison-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-hartley-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-haskell-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-hays-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-hemphill-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-henderson-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-hidalgo-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-hill-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-hockley-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-hood-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-hopkins-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-houston-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-howard-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-hudspeth-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-hunt-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-hutchinson-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-irion-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-jack-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-jackson-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-jasper-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-jeff-davis-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-jefferson-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-jim-hogg-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-jim-wells-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-johnson-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-jones-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-karnes-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-kaufman-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-kendall-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-kenedy-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-kent-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-kerr-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-kimble-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-king-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-kinney-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-kleberg-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-knox-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-la-salle-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-lamar-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-lamb-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-lampasas-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-lavaca-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-lee-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-leon-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-liberty-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-limestone-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-lipscomb-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-live-oak-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-llano-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-loving-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-lubbock-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-lynn-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-madison-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-marion-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-martin-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-mason-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-matagorda-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-maverick-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-mcculloch-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-mclennan-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-mcmullen-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-medina-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-menard-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-midland-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-milam-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-mills-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-mitchell-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-montague-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-montgomery-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-moore-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-morris-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-motley-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-nacogdoches-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-navarro-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-newton-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-nolan-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-nueces-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-ochiltree-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-oldham-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-orange-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-palo-pinto-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-panola-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-parker-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-parmer-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-pecos-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-polk-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-potter-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-presidio-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-rains-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-randall-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-reagan-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-real-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-red-river-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-reeves-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-refugio-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-roberts-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-robertson-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-rockwall-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-runnels-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-rusk-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-sabine-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-san-augustine-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-san-jacinto-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-san-patricio-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-san-saba-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-schleicher-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-scurry-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-shackelford-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-shelby-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-sherman-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-smith-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-somervell-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-starr-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-stephens-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-sterling-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-stonewall-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-sutton-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-swisher-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-tarrant-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-taylor-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-terrell-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-terry-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-throckmorton-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-titus-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-tom-green-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-travis-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-trinity-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-tyler-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-upshur-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-upton-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-uvalde-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-val-verde-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-van-zandt-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-victoria-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-walker-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-waller-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-ward-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-washington-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-webb-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-wharton-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-wheeler-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-wichita-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-wilbarger-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-willacy-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-williamson-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-wilson-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-winkler-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-wise-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-wood-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-yoakum-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-young-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-zapata-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-drtx-zavala-tx",
+      "name": "Disability Rights Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    }
+  ],
+  "skipReasons": {
+    "missing_validated_domain_evidence": 254
+  },
+  "nextDomains": [
+    {
+      "domain": "thearc.org",
+      "missingRows": 12021
+    },
+    {
+      "domain": "parentcenterhub.org",
+      "missingRows": 4483
+    },
+    {
+      "domain": "texasautismsociety.org",
+      "missingRows": 509
+    },
+    {
+      "domain": "txp2p.org",
+      "missingRows": 508
+    },
+    {
+      "domain": "thearcoftexas.org",
+      "missingRows": 259
+    },
+    {
+      "domain": "disabilityrightstx.org",
+      "missingRows": 254
+    },
+    {
+      "domain": "navigatelifetexas.org",
+      "missingRows": 254
+    },
+    {
+      "domain": "prntexas.org",
+      "missingRows": 254
+    },
+    {
+      "domain": "autismqc.org",
+      "missingRows": 201
+    },
+    {
+      "domain": "p2pga.org",
+      "missingRows": 159
+    },
+    {
+      "domain": "arcofky.org",
+      "missingRows": 120
+    },
+    {
+      "domain": "asbg.org",
+      "missingRows": 120
+    }
+  ],
+  "rollbackSqlPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/nonprofit-accessibility-domains/disabilityrightstx-org/2026-06-17T15-45-53-865Z/rollback.sql",
+  "forwardSqlPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/nonprofit-accessibility-domains/disabilityrightstx-org/2026-06-17T15-45-53-865Z/forward.sql"
+}

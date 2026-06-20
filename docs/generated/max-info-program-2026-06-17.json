@@ -1,0 +1,176 @@
+{
+  "generatedAt": "2026-06-17",
+  "repoRoot": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca",
+  "dbPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/frontend/ca_disability_navigator.db",
+  "inputs": {
+    "fullGapPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/full-information-gap-audit-2026-06-17.json",
+    "completionPlanPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/source-acquisition-completion-plan-2026-06-17.json",
+    "missingFamiliesPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/missing-source-families-2026-06-17.json",
+    "authoredTargetsPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/authored-missing-source-targets-2026-06-17.json",
+    "exhaustiveGapPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/exhaustive-gap-master-2026-06-17.json",
+    "informationInventoryPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/information-inventory-2026-06-17.json"
+  },
+  "optimizationTarget": "lowest_token_usage_first",
+  "tracks": {
+    "informationExhaustiveness": {
+      "status": "blocked",
+      "readyRows": 4005,
+      "authoredTargets": 212,
+      "missingFamilyCount": 5,
+      "blockers": [
+        {
+          "id": "advocate_first_party_sources",
+          "label": "First-party advocate and legal-support sources",
+          "status": "high",
+          "gap": "Current advocate/legal targets are overwhelmingly quarantined COPAA-style directories and need replacement with first-party or official sources."
+        },
+        {
+          "id": "forms_exact_urls",
+          "label": "Exact forms libraries for most states",
+          "status": "high",
+          "gap": "Only 1 forms source is currently scrape-ready; most state form targets are blocked by fake-domain patterns or still too weak."
+        },
+        {
+          "id": "official_state_domains_repair",
+          "label": "Repair generated fake official domains",
+          "status": "critical",
+          "gap": "Many state office, DD, waiver, early intervention, and form targets are blocked because the repo currently has generated fake official domains."
+        },
+        {
+          "id": "provider_exact_targets",
+          "label": "More named first-party provider targets",
+          "status": "critical",
+          "gap": "Provider coverage is still the biggest visible info gap even after the ready provider URLs are scraped."
+        },
+        {
+          "id": "knowledge_content_sources",
+          "label": "Knowledge article source families",
+          "status": "medium",
+          "gap": "The product needs many more explanatory content inputs, but the current target inventory is mostly directory/routing oriented."
+        },
+        {
+          "id": "provider_directory",
+          "label": "Local providers, clinics, therapists, and care",
+          "status": "critical_gap",
+          "gap": "This is the biggest information hole if the goal is all local help, especially to compete on care and treatment discovery."
+        },
+        {
+          "id": "advocate_directory_depth",
+          "label": "Advocates and legal/IEP support",
+          "status": "meaningful_but_not_exhaustive",
+          "gap": "Advocate count is decent, but truth-safe local coverage is not yet strong enough to call exhaustive."
+        },
+        {
+          "id": "directory_foundation_signals",
+          "label": "Findhelp-like metadata: availability, accessibility, intake, capacity",
+          "status": "partial",
+          "gap": "The schema exists, but live high-signal metadata is sparse, especially on nonprofits and advocates."
+        },
+        {
+          "id": "normalization_depth",
+          "label": "Canonical org -> program -> location normalization",
+          "status": "partial",
+          "gap": "Normalization exists, but service-location depth is still too thin to support a fully location-rich help product."
+        },
+        {
+          "id": "knowledge_taxonomy",
+          "label": "Conditions, functional needs, age bands, insurance types",
+          "status": "partial",
+          "gap": "Conditions and needs are strong, but age-band and insurance reference tables are still empty."
+        },
+        {
+          "id": "knowledge_content_depth",
+          "label": "Help content and explanatory knowledge",
+          "status": "critical_gap",
+          "gap": "The content layer is far too small for a product that aims to cover the full family journey nationally."
+        },
+        {
+          "id": "feedback_loops",
+          "label": "User submissions, coverage gaps, verification queue",
+          "status": "critical_gap",
+          "gap": "Operational feedback loops are not built out enough to sustain exhaustive maintenance."
+        }
+      ]
+    },
+    "runtimeOperationalReadiness": {
+      "status": "needs_implementation",
+      "operationalCount": 3,
+      "partialCount": 1,
+      "missingCount": 1,
+      "surfaces": [
+        {
+          "id": "family_case_core",
+          "label": "Family cases, child profiles, and case tracking",
+          "tables": [
+            "family_cases",
+            "child_profiles",
+            "case_program_statuses"
+          ],
+          "implementationReady": true,
+          "operatorReady": true,
+          "totalRows": 2,
+          "status": "operational",
+          "seededExemplarPresent": true
+        },
+        {
+          "id": "documents_reminders",
+          "label": "Documents and reminders",
+          "tables": [
+            "document_checklist_items",
+            "reminders"
+          ],
+          "implementationReady": true,
+          "operatorReady": false,
+          "totalRows": 0,
+          "status": "partial",
+          "seededExemplarPresent": false
+        },
+        {
+          "id": "collaboration_portal",
+          "label": "Collaboration threads and shared portal",
+          "tables": [
+            "consultation_threads",
+            "consultation_messages",
+            "shared_portal_tokens"
+          ],
+          "implementationReady": true,
+          "operatorReady": true,
+          "totalRows": 0,
+          "status": "operational",
+          "seededExemplarPresent": false
+        },
+        {
+          "id": "feedback_loops",
+          "label": "Coverage gaps and verification queue",
+          "tables": [
+            "coverage_gaps",
+            "verification_queue_items"
+          ],
+          "implementationReady": true,
+          "operatorReady": true,
+          "totalRows": 2,
+          "status": "operational",
+          "seededExemplarPresent": true
+        },
+        {
+          "id": "user_submissions",
+          "label": "User-submitted resources",
+          "tables": [
+            "user_submitted_resources"
+          ],
+          "implementationReady": false,
+          "operatorReady": false,
+          "totalRows": 0,
+          "status": "missing",
+          "seededExemplarPresent": false
+        }
+      ]
+    }
+  },
+  "nextActions": [
+    "Finish the remaining authored source families before broadening any scrape wave.",
+    "Burn down priority lightweight families in the existing completion plan before nonprofit overflow.",
+    "Keep runtime layers operational and seeded, but do not fabricate broad user-generated data.",
+    "Regenerate this artifact after each source-family unlock or runtime-surface implementation pass."
+  ]
+}

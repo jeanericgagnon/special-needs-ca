@@ -1,0 +1,28 @@
+{
+  "generatedAt": "2026-06-18T02:16:37.188Z",
+  "mode": "apply",
+  "stateFilter": "new-mexico",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 2,
+    "appliedStates": 0,
+    "filesChanged": 0,
+    "skippedByReason": {
+      "skipped_followup": 2
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "new-mexico",
+      "sourceName": "New Mexico Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "new-mexico",
+      "sourceName": "New Mexico Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

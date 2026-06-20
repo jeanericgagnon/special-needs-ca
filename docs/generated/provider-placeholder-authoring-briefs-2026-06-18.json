@@ -1,0 +1,11 @@
+{
+  "briefId": "provider_placeholder_authoring_briefs",
+  "generatedAt": "2026-06-18",
+  "sourceQueue": "docs/generated/provider-placeholder-replacement-queue-2026-06-18.json",
+  "purpose": "Deterministic authoring briefs for replacing placeholder provider targets with stronger first-party hospital, university clinic, and specialty-center sources.",
+  "summary": {
+    "totalBriefs": 0,
+    "byState": {}
+  },
+  "briefs": []
+}

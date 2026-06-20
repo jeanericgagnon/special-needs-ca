@@ -1,1 +1,27 @@
-[]
+[
+  {
+    "source_url": "https://www.education.nh.gov/",
+    "confidence_score": 9.5,
+    "notes": "Official statewide New Hampshire DOE special education support entrypoint covering all counties.",
+    "suggested_target_id": "nh-ed-doe-special-education",
+    "name": "New Hampshire Department of Education Bureau of Special Education",
+    "phone": "(603) 271-3741",
+    "agency_type": "state-special-education-support",
+    "counties_served": [
+      "belknap-nh",
+      "carroll-nh",
+      "cheshire-nh",
+      "co-s-nh",
+      "grafton-nh",
+      "hillsborough-nh",
+      "merrimack-nh",
+      "rockingham-nh",
+      "strafford-nh",
+      "sullivan-nh"
+    ],
+    "website": "https://www.education.nh.gov/who-we-are/division-of-learner-support/bureau-of-special-education",
+    "evidence_level": "source_listed",
+    "verification_status": "verified",
+    "data_origin": "scraped"
+  }
+]

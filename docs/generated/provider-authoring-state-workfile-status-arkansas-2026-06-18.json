@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-06-18T18:45:35.332Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "arkansas",
+  "sourceWorkfilePath": "data/provider-authoring-state-workfiles/provider-authoring-state-workfile-arkansas.json",
+  "summary": {
+    "neededConcreteTargets": 3,
+    "candidateSlotCount": 3,
+    "readyCandidateCount": 3,
+    "unresolvedCandidateCount": 0,
+    "completionPercent": 100
+  },
+  "nextWork": []
+}

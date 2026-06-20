@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-06-18T01:30:51.264Z",
+  "mode": "apply",
+  "stateFilter": "delaware",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 4,
+    "appliedStates": 2,
+    "filesChanged": 1,
+    "skippedByReason": {
+      "skipped_followup": 2
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "delaware",
+      "sourceName": "Delaware Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "delaware",
+      "sourceName": "Delaware HCBS Waivers Page",
+      "status": "applied",
+      "targetUrl": "https://dhss.delaware.gov/ddds/hcbs"
+    },
+    {
+      "stateId": "delaware",
+      "sourceName": "Delaware Developmental Services Directory",
+      "status": "applied",
+      "targetUrl": "https://dhss.delaware.gov/ddds"
+    },
+    {
+      "stateId": "delaware",
+      "sourceName": "Delaware Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

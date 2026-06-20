@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-06-18T02:13:19.712Z",
+  "mode": "apply",
+  "stateFilter": "west-virginia",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 4,
+    "appliedStates": 2,
+    "filesChanged": 1,
+    "skippedByReason": {
+      "skipped_followup": 2
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "west-virginia",
+      "sourceName": "West Virginia Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "west-virginia",
+      "sourceName": "West Virginia HCBS Waivers Page",
+      "status": "applied",
+      "targetUrl": "https://dhhr.wv.gov/bms/hcbs"
+    },
+    {
+      "stateId": "west-virginia",
+      "sourceName": "West Virginia Developmental Services Directory",
+      "status": "applied",
+      "targetUrl": "https://dhhr.wv.gov/bms"
+    },
+    {
+      "stateId": "west-virginia",
+      "sourceName": "West Virginia Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

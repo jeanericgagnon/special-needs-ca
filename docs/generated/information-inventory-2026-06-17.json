@@ -1,0 +1,2670 @@
+{
+  "generatedAt": "2026-06-17",
+  "dbPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/frontend/ca_disability_navigator.db",
+  "summary": {
+    "layerCount": 13,
+    "indexableStateCount": 50,
+    "verifiedDiagnosisCount": 6,
+    "serviceTagCount": 22,
+    "servingTagCount": 12
+  },
+  "informationTypes": [
+    {
+      "id": "geography_coverage",
+      "label": "Geography and Coverage",
+      "subtypeCount": 6,
+      "subtypes": [
+        "states",
+        "counties",
+        "regional center county coverage",
+        "regional education county coverage",
+        "advocate county coverage",
+        "virtual service area county coverage"
+      ]
+    },
+    {
+      "id": "programs_benefits",
+      "label": "Programs, Benefits, and Application Knowledge",
+      "subtypeCount": 6,
+      "subtypes": [
+        "program definitions",
+        "eligibility rules",
+        "required and optional documents",
+        "application steps",
+        "appeal rules",
+        "waitlists and interest lists"
+      ]
+    },
+    {
+      "id": "public_routing_education",
+      "label": "Public Administrative and Education Routing",
+      "subtypeCount": 4,
+      "subtypes": [
+        "county offices",
+        "state DD or IDD routing agencies",
+        "regional education agencies",
+        "school districts"
+      ]
+    },
+    {
+      "id": "local_directories",
+      "label": "Local Directory Layers",
+      "subtypeCount": 3,
+      "subtypes": [
+        "resource providers",
+        "nonprofit organizations",
+        "IEP advocates"
+      ]
+    },
+    {
+      "id": "directory_foundation",
+      "label": "Directory Foundation Metadata",
+      "subtypeCount": 7,
+      "subtypes": [
+        "service taxonomy",
+        "audience taxonomy",
+        "availability and capacity",
+        "next-step and intake",
+        "languages and accessibility",
+        "claim groundwork",
+        "trust and freshness"
+      ]
+    },
+    {
+      "id": "normalization",
+      "label": "Normalization Foundation",
+      "subtypeCount": 5,
+      "subtypes": [
+        "canonical organizations",
+        "organization to program links",
+        "service locations",
+        "office locations",
+        "virtual service areas"
+      ]
+    },
+    {
+      "id": "disability_knowledge",
+      "label": "Disability Knowledge and Reference Layer",
+      "subtypeCount": 4,
+      "subtypes": [
+        "conditions",
+        "functional needs",
+        "age bands",
+        "insurance types"
+      ]
+    },
+    {
+      "id": "family_case",
+      "label": "Family and Navigator-Adjacent Workflow Data",
+      "subtypeCount": 8,
+      "subtypes": [
+        "family cases",
+        "child profiles",
+        "child condition mappings",
+        "child need mappings",
+        "program tracking",
+        "document tracking",
+        "reminders",
+        "waiver vault"
+      ]
+    },
+    {
+      "id": "support_planning_collaboration",
+      "label": "Family Support, Planning, and Collaboration",
+      "subtypeCount": 11,
+      "subtypes": [
+        "safety incidents",
+        "parent declarations",
+        "caregiver profiles",
+        "transition tasks",
+        "caregiver self-care logs",
+        "child coordinators",
+        "clinical documents",
+        "consultation threads and messages",
+        "shared portal tokens",
+        "IEP accommodations and goals",
+        "respite assessments"
+      ]
+    },
+    {
+      "id": "knowledge_content",
+      "label": "Knowledge Content",
+      "subtypeCount": 1,
+      "subtypes": [
+        "bilingual structured knowledge articles"
+      ]
+    },
+    {
+      "id": "sources_review_ops",
+      "label": "Source, Review, and Operations Layers",
+      "subtypeCount": 5,
+      "subtypes": [
+        "source registry",
+        "source verifications",
+        "user-submitted resources",
+        "coverage gaps",
+        "verification queue"
+      ]
+    },
+    {
+      "id": "staging_promotion",
+      "label": "Staging and Promotion Layers",
+      "subtypeCount": 14,
+      "subtypes": [
+        "source targets",
+        "scraped county offices",
+        "scraped state resource agencies",
+        "scraped regional education agencies",
+        "scraped school districts",
+        "scraped nonprofits",
+        "scraped advocates",
+        "scraped resource providers",
+        "scraped forms",
+        "scraped help resources",
+        "scraped knowledge content",
+        "scraped waitlists",
+        "scraped sources",
+        "promotion audit"
+      ]
+    },
+    {
+      "id": "public_truth",
+      "label": "Truth and Public Eligibility Contract",
+      "subtypeCount": 5,
+      "subtypes": [
+        "source-backed trust metadata",
+        "public-safe render eligibility",
+        "index-safe gating",
+        "verified diagnosis allowlist",
+        "indexable state allowlist"
+      ]
+    }
+  ],
+  "layers": [
+    {
+      "id": "geography_coverage",
+      "label": "Geography and Coverage",
+      "tables": [
+        {
+          "name": "states",
+          "rowCount": 50,
+          "columns": [
+            "id",
+            "name",
+            "code"
+          ]
+        },
+        {
+          "name": "counties",
+          "rowCount": 3094,
+          "columns": [
+            "id",
+            "state_id",
+            "name",
+            "website",
+            "ihss_wage_rate",
+            "medi_cal_plans"
+          ]
+        },
+        {
+          "name": "regional_center_counties",
+          "rowCount": 6320,
+          "columns": [
+            "regional_center_id",
+            "county_id"
+          ]
+        },
+        {
+          "name": "selpa_counties",
+          "rowCount": 833,
+          "columns": [
+            "selpa_id",
+            "county_id"
+          ]
+        },
+        {
+          "name": "iep_advocate_counties",
+          "rowCount": 21178,
+          "columns": [
+            "iep_advocate_id",
+            "county_id"
+          ]
+        },
+        {
+          "name": "virtual_service_area_counties",
+          "rowCount": 52258,
+          "columns": [
+            "virtual_service_area_id",
+            "county_id"
+          ]
+        }
+      ],
+      "subtypes": [
+        "states",
+        "counties",
+        "regional center county coverage",
+        "regional education county coverage",
+        "advocate county coverage",
+        "virtual service area county coverage"
+      ],
+      "controlledValues": {},
+      "notes": [
+        "Coverage junctions prevent fake county-local duplication."
+      ]
+    },
+    {
+      "id": "programs_benefits",
+      "label": "Programs, Benefits, and Application Knowledge",
+      "tables": [
+        {
+          "name": "programs",
+          "rowCount": 507,
+          "columns": [
+            "id",
+            "name",
+            "description",
+            "who_it_is_for",
+            "who_might_qualify",
+            "official_source_url",
+            "category",
+            "confidence_score",
+            "last_verified_date",
+            "state_id",
+            "source_url",
+            "source_type",
+            "data_origin",
+            "verification_status",
+            "last_scraped_at",
+            "program_type"
+          ]
+        },
+        {
+          "name": "program_eligibility_rules",
+          "rowCount": 303,
+          "columns": [
+            "id",
+            "program_id",
+            "min_age_years",
+            "max_age_years",
+            "required_condition",
+            "required_need",
+            "insurance_status",
+            "school_status",
+            "trigger_reason"
+          ]
+        },
+        {
+          "name": "program_document_requirements",
+          "rowCount": 502,
+          "columns": [
+            "id",
+            "program_id",
+            "name",
+            "description",
+            "is_mandatory"
+          ]
+        },
+        {
+          "name": "program_application_steps",
+          "rowCount": 992,
+          "columns": [
+            "id",
+            "program_id",
+            "step_number",
+            "title",
+            "action_description",
+            "apply_url_or_contact"
+          ]
+        },
+        {
+          "name": "program_appeal_info",
+          "rowCount": 451,
+          "columns": [
+            "program_id",
+            "deadline_days",
+            "appeal_steps",
+            "denial_reasons",
+            "appeal_form_name",
+            "official_appeal_source_url"
+          ]
+        },
+        {
+          "name": "program_waitlists",
+          "rowCount": 165,
+          "columns": [
+            "id",
+            "program_id",
+            "name",
+            "duration_label",
+            "duration_months",
+            "status",
+            "description",
+            "reserve_capacity_notice",
+            "legal_deadline",
+            "last_scraped_at",
+            "estimate_source_url",
+            "estimate_source_type",
+            "last_checked_at"
+          ]
+        }
+      ],
+      "subtypes": [
+        "program definitions",
+        "eligibility rules",
+        "required and optional documents",
+        "application steps",
+        "appeal rules",
+        "waitlists and interest lists"
+      ],
+      "controlledValues": {
+        "programCategories": [
+          "federal",
+          "state"
+        ],
+        "insuranceStatuses": [
+          "any"
+        ],
+        "schoolStatuses": [
+          "any"
+        ]
+      },
+      "notes": []
+    },
+    {
+      "id": "public_routing_education",
+      "label": "Public Administrative and Education Routing",
+      "tables": [
+        {
+          "name": "county_offices",
+          "rowCount": 3678,
+          "columns": [
+            "id",
+            "county_id",
+            "program_id",
+            "office_name",
+            "address",
+            "phone",
+            "email",
+            "website",
+            "source_url",
+            "source_type",
+            "data_origin",
+            "verification_status",
+            "last_verified_date",
+            "last_scraped_at",
+            "confidence_score",
+            "evidence_level"
+          ]
+        },
+        {
+          "name": "state_resource_agencies",
+          "rowCount": 636,
+          "columns": [
+            "id",
+            "state_id",
+            "agency_type",
+            "name",
+            "counties_served",
+            "catchment_boundaries",
+            "website",
+            "intake_phone",
+            "early_intervention_contact",
+            "agency_intake_contact",
+            "eligibility_info_page",
+            "services_page",
+            "appeals_info",
+            "frc_relationship",
+            "office_locations",
+            "languages",
+            "last_verified_date",
+            "source_urls",
+            "source_url",
+            "source_type",
+            "data_origin",
+            "verification_status",
+            "last_scraped_at",
+            "confidence_score",
+            "evidence_level"
+          ]
+        },
+        {
+          "name": "regional_education_agencies",
+          "rowCount": 313,
+          "columns": [
+            "id",
+            "state_id",
+            "agency_type",
+            "name",
+            "counties_served",
+            "website",
+            "source_url",
+            "source_type",
+            "data_origin",
+            "verification_status",
+            "last_verified_date",
+            "last_scraped_at",
+            "confidence_score",
+            "evidence_level"
+          ]
+        },
+        {
+          "name": "school_districts",
+          "rowCount": 3117,
+          "columns": [
+            "id",
+            "county_id",
+            "name",
+            "spec_ed_contact_phone",
+            "spec_ed_contact_email",
+            "website",
+            "total_enrollment",
+            "special_ed_pct",
+            "inclusion_rate_pct",
+            "self_contained_rate_pct",
+            "source_url",
+            "source_type",
+            "data_origin",
+            "verification_status",
+            "last_verified_date",
+            "last_scraped_at",
+            "confidence_score",
+            "evidence_level"
+          ]
+        }
+      ],
+      "subtypes": [
+        "county offices",
+        "state DD or IDD routing agencies",
+        "regional education agencies",
+        "school districts"
+      ],
+      "controlledValues": {
+        "countyOfficePrograms": [
+          "ak-medicaid",
+          "al-medicaid",
+          "ar-medicaid",
+          "az-medicaid",
+          "california-childrens-services",
+          "co-medicaid",
+          "ct-medicaid",
+          "de-medicaid",
+          "fl-medicaid",
+          "fl-medicaid-dcf",
+          "ga-medicaid",
+          "hi-medicaid",
+          "ia-medicaid",
+          "id-medicaid",
+          "ihss-for-children",
+          "il-medicaid",
+          "in-medicaid",
+          "ks-medicaid",
+          "ky-medicaid",
+          "la-medicaid",
+          "ma-medicaid",
+          "md-medicaid",
+          "me-medicaid",
+          "medi-cal-for-kids-and-teens",
+          "mi-medicaid",
+          "mn-medicaid",
+          "mo-medicaid",
+          "ms-medicaid",
+          "mt-medicaid",
+          "nc-medicaid",
+          "nd-medicaid",
+          "ne-medicaid",
+          "nh-medicaid",
+          "nj-medicaid",
+          "nm-medicaid",
+          "nv-medicaid",
+          "ny-medicaid",
+          "oh-medicaid",
+          "ok-medicaid",
+          "or-medicaid",
+          "pa-medicaid",
+          "ri-medicaid",
+          "sc-medicaid",
+          "sd-medicaid",
+          "tn-medicaid",
+          "tx-mdcp",
+          "tx-medicaid",
+          "ut-medicaid",
+          "va-medicaid",
+          "vt-medicaid",
+          "wa-medicaid",
+          "wi-medicaid",
+          "wv-medicaid",
+          "wy-medicaid"
+        ],
+        "stateAgencyTypes": [
+          "apd_office",
+          "cbdd",
+          "cfc",
+          "county_ae",
+          "dbhdd_office",
+          "dd_intake",
+          "ddro",
+          "developmental_services_agency",
+          "early_intervention",
+          "early_steps",
+          "eci",
+          "isc",
+          "lidda",
+          "regional_center"
+        ],
+        "regionalEducationAgencyTypes": [
+          "boces",
+          "cfc",
+          "county-technical-district",
+          "esc",
+          "isc",
+          "iu",
+          "resa",
+          "roe",
+          "selpa",
+          "special-services-district",
+          "state-special-education-support"
+        ]
+      },
+      "notes": []
+    },
+    {
+      "id": "local_directories",
+      "label": "Local Directory Layers",
+      "tables": [
+        {
+          "name": "resource_providers",
+          "rowCount": 83,
+          "columns": [
+            "id",
+            "name",
+            "categories",
+            "county_id",
+            "phone",
+            "email",
+            "address",
+            "accepts_medi_cal",
+            "regional_center_vendor_ids",
+            "source_url",
+            "source_type",
+            "data_origin",
+            "verification_status",
+            "last_verified_date",
+            "last_scraped_at",
+            "confidence_score",
+            "evidence_level",
+            "service_tags",
+            "serving_tags",
+            "availability_status",
+            "accepting_new_clients",
+            "waitlist_status",
+            "capacity_notes",
+            "funding_status",
+            "checked_at",
+            "source_name",
+            "source_last_updated",
+            "next_step_type",
+            "next_step_label",
+            "next_step_url",
+            "next_step_phone",
+            "next_step_email",
+            "next_step_instructions",
+            "requirements",
+            "application_url",
+            "referral_url",
+            "walk_in_available",
+            "appointment_required",
+            "languages",
+            "interpreter_available",
+            "asl_available",
+            "wheelchair_accessible",
+            "virtual_services",
+            "in_person_services",
+            "home_visits",
+            "transportation_help",
+            "accessibility_notes",
+            "manual_review_required",
+            "data_quality_notes",
+            "unsupported_claim_flags",
+            "claim_status",
+            "claimed_by",
+            "verified_affiliation",
+            "claim_email",
+            "last_verified_at"
+          ]
+        },
+        {
+          "name": "nonprofit_organizations",
+          "rowCount": 29501,
+          "columns": [
+            "id",
+            "name",
+            "county_id",
+            "website",
+            "phone",
+            "focus_condition",
+            "source_url",
+            "source_type",
+            "data_origin",
+            "verification_status",
+            "last_verified_date",
+            "last_scraped_at",
+            "confidence_score",
+            "evidence_level",
+            "service_tags",
+            "serving_tags",
+            "availability_status",
+            "accepting_new_clients",
+            "waitlist_status",
+            "capacity_notes",
+            "funding_status",
+            "checked_at",
+            "source_name",
+            "source_last_updated",
+            "next_step_type",
+            "next_step_label",
+            "next_step_url",
+            "next_step_phone",
+            "next_step_email",
+            "next_step_instructions",
+            "requirements",
+            "application_url",
+            "referral_url",
+            "walk_in_available",
+            "appointment_required",
+            "languages",
+            "interpreter_available",
+            "asl_available",
+            "wheelchair_accessible",
+            "virtual_services",
+            "in_person_services",
+            "home_visits",
+            "transportation_help",
+            "accessibility_notes",
+            "manual_review_required",
+            "data_quality_notes",
+            "unsupported_claim_flags",
+            "claim_status",
+            "claimed_by",
+            "verified_affiliation",
+            "claim_email",
+            "last_verified_at",
+            "accessibility_evidence_level",
+            "accessibility_source_address"
+          ]
+        },
+        {
+          "name": "iep_advocates",
+          "rowCount": 2995,
+          "columns": [
+            "id",
+            "name",
+            "credentials",
+            "experience_years",
+            "price_rate",
+            "counties_served",
+            "languages_spoken",
+            "phone",
+            "email",
+            "website",
+            "specialties",
+            "regional_center_vendorized",
+            "organization_affiliation",
+            "description",
+            "verification_status",
+            "source_url",
+            "source_type",
+            "last_scraped_at",
+            "last_verified_at",
+            "data_origin",
+            "last_verified_date",
+            "confidence_score",
+            "evidence_level",
+            "service_tags",
+            "serving_tags",
+            "availability_status",
+            "accepting_new_clients",
+            "waitlist_status",
+            "capacity_notes",
+            "funding_status",
+            "checked_at",
+            "source_name",
+            "source_last_updated",
+            "next_step_type",
+            "next_step_label",
+            "next_step_url",
+            "next_step_phone",
+            "next_step_email",
+            "next_step_instructions",
+            "requirements",
+            "application_url",
+            "referral_url",
+            "walk_in_available",
+            "appointment_required",
+            "interpreter_available",
+            "asl_available",
+            "wheelchair_accessible",
+            "virtual_services",
+            "in_person_services",
+            "home_visits",
+            "transportation_help",
+            "accessibility_notes",
+            "manual_review_required",
+            "data_quality_notes",
+            "unsupported_claim_flags",
+            "claim_status",
+            "claimed_by",
+            "verified_affiliation",
+            "claim_email"
+          ]
+        }
+      ],
+      "subtypes": [
+        "resource providers",
+        "nonprofit organizations",
+        "IEP advocates"
+      ],
+      "controlledValues": {
+        "providerCategories": [
+          "Autism",
+          "autism_clinic",
+          "card_center",
+          "Clinical",
+          "Developmental",
+          "developmental_clinic",
+          "developmental_pediatrics",
+          "diagnostic_center",
+          "Education",
+          "Hospital",
+          "Pediatrics",
+          "Speech",
+          "Therapy"
+        ],
+        "nonprofitFocusConditions": [
+          "adhd",
+          "All Disabilities",
+          "any",
+          "autism",
+          "Autism Spectrum Disorder",
+          "autism-spectrum-disorder",
+          "cerebral-palsy",
+          "developmental_disabilities",
+          "developmental-delay",
+          "down_syndrome",
+          "down-syndrome",
+          "dyslexia",
+          "epilepsy",
+          "hearing-loss-deafness",
+          "Intellectual and Developmental Disabilities",
+          "intellectual_developmental_disability",
+          "intellectual-disability",
+          "nonprofit_support"
+        ],
+        "advocateSpecialties": [
+          "504",
+          "504 Plan",
+          "ABA Clinic",
+          "ADHD",
+          "ARD",
+          "ARD Advocacy",
+          "Autism",
+          "Autism Therapy",
+          "Behavioral Needs",
+          "CSE Assistance",
+          "DBHDD Appeals",
+          "Disability Rights",
+          "DODD Appeals",
+          "Down Syndrome",
+          "Due Process",
+          "Early Start",
+          "Early Steps",
+          "ECI Support",
+          "ESE Advocacy",
+          "ESE Attorney",
+          "ESE Dispute Resolution",
+          "ESE Law",
+          "Family Support",
+          "FDLRS Liaison",
+          "GAPP Navigation",
+          "General Advocacy",
+          "Hearing Loss",
+          "Help Me Grow Routing",
+          "HSP Appeals",
+          "iBudget",
+          "iBudget Appeal",
+          "IDD Advocacy",
+          "IEP",
+          "IEP Advocate",
+          "IEP Consultant",
+          "IHSS",
+          "ISBE Appeals",
+          "K-12 Education",
+          "Learning Disabilities",
+          "Legal Aid",
+          "Local Resources",
+          "Medi-Cal",
+          "Occupational therapy",
+          "ODP Appeals",
+          "ODP Resource Routing",
+          "OPWDD Appeals",
+          "Parent Coach",
+          "Parent Navigation",
+          "Pediatric Therapies",
+          "Physical therapy",
+          "Protection & Advocacy",
+          "Referrals",
+          "Regional Center",
+          "Special Ed Law",
+          "Special Education",
+          "Special Education Attorney",
+          "Special Education Law",
+          "Speech & Language",
+          "Speech therapy",
+          "Support Groups",
+          "Vision Impairment"
+        ]
+      },
+      "notes": []
+    },
+    {
+      "id": "directory_foundation",
+      "label": "Directory Foundation Metadata",
+      "tables": [
+        {
+          "name": "resource_providers",
+          "rowCount": 83,
+          "columns": [
+            "id",
+            "name",
+            "categories",
+            "county_id",
+            "phone",
+            "email",
+            "address",
+            "accepts_medi_cal",
+            "regional_center_vendor_ids",
+            "source_url",
+            "source_type",
+            "data_origin",
+            "verification_status",
+            "last_verified_date",
+            "last_scraped_at",
+            "confidence_score",
+            "evidence_level",
+            "service_tags",
+            "serving_tags",
+            "availability_status",
+            "accepting_new_clients",
+            "waitlist_status",
+            "capacity_notes",
+            "funding_status",
+            "checked_at",
+            "source_name",
+            "source_last_updated",
+            "next_step_type",
+            "next_step_label",
+            "next_step_url",
+            "next_step_phone",
+            "next_step_email",
+            "next_step_instructions",
+            "requirements",
+            "application_url",
+            "referral_url",
+            "walk_in_available",
+            "appointment_required",
+            "languages",
+            "interpreter_available",
+            "asl_available",
+            "wheelchair_accessible",
+            "virtual_services",
+            "in_person_services",
+            "home_visits",
+            "transportation_help",
+            "accessibility_notes",
+            "manual_review_required",
+            "data_quality_notes",
+            "unsupported_claim_flags",
+            "claim_status",
+            "claimed_by",
+            "verified_affiliation",
+            "claim_email",
+            "last_verified_at"
+          ]
+        },
+        {
+          "name": "nonprofit_organizations",
+          "rowCount": 29501,
+          "columns": [
+            "id",
+            "name",
+            "county_id",
+            "website",
+            "phone",
+            "focus_condition",
+            "source_url",
+            "source_type",
+            "data_origin",
+            "verification_status",
+            "last_verified_date",
+            "last_scraped_at",
+            "confidence_score",
+            "evidence_level",
+            "service_tags",
+            "serving_tags",
+            "availability_status",
+            "accepting_new_clients",
+            "waitlist_status",
+            "capacity_notes",
+            "funding_status",
+            "checked_at",
+            "source_name",
+            "source_last_updated",
+            "next_step_type",
+            "next_step_label",
+            "next_step_url",
+            "next_step_phone",
+            "next_step_email",
+            "next_step_instructions",
+            "requirements",
+            "application_url",
+            "referral_url",
+            "walk_in_available",
+            "appointment_required",
+            "languages",
+            "interpreter_available",
+            "asl_available",
+            "wheelchair_accessible",
+            "virtual_services",
+            "in_person_services",
+            "home_visits",
+            "transportation_help",
+            "accessibility_notes",
+            "manual_review_required",
+            "data_quality_notes",
+            "unsupported_claim_flags",
+            "claim_status",
+            "claimed_by",
+            "verified_affiliation",
+            "claim_email",
+            "last_verified_at",
+            "accessibility_evidence_level",
+            "accessibility_source_address"
+          ]
+        },
+        {
+          "name": "iep_advocates",
+          "rowCount": 2995,
+          "columns": [
+            "id",
+            "name",
+            "credentials",
+            "experience_years",
+            "price_rate",
+            "counties_served",
+            "languages_spoken",
+            "phone",
+            "email",
+            "website",
+            "specialties",
+            "regional_center_vendorized",
+            "organization_affiliation",
+            "description",
+            "verification_status",
+            "source_url",
+            "source_type",
+            "last_scraped_at",
+            "last_verified_at",
+            "data_origin",
+            "last_verified_date",
+            "confidence_score",
+            "evidence_level",
+            "service_tags",
+            "serving_tags",
+            "availability_status",
+            "accepting_new_clients",
+            "waitlist_status",
+            "capacity_notes",
+            "funding_status",
+            "checked_at",
+            "source_name",
+            "source_last_updated",
+            "next_step_type",
+            "next_step_label",
+            "next_step_url",
+            "next_step_phone",
+            "next_step_email",
+            "next_step_instructions",
+            "requirements",
+            "application_url",
+            "referral_url",
+            "walk_in_available",
+            "appointment_required",
+            "interpreter_available",
+            "asl_available",
+            "wheelchair_accessible",
+            "virtual_services",
+            "in_person_services",
+            "home_visits",
+            "transportation_help",
+            "accessibility_notes",
+            "manual_review_required",
+            "data_quality_notes",
+            "unsupported_claim_flags",
+            "claim_status",
+            "claimed_by",
+            "verified_affiliation",
+            "claim_email"
+          ]
+        }
+      ],
+      "subtypes": [
+        "service taxonomy",
+        "audience taxonomy",
+        "availability and capacity",
+        "next-step and intake",
+        "languages and accessibility",
+        "claim groundwork",
+        "trust and freshness"
+      ],
+      "controlledValues": {
+        "serviceTags": [
+          "food",
+          "housing",
+          "home_mods",
+          "utilities",
+          "supplies",
+          "transport",
+          "therapy",
+          "behavioral_health",
+          "benefits",
+          "grants",
+          "respite",
+          "in_home_support",
+          "caregiving",
+          "early_intervention",
+          "special_education",
+          "iep_advocacy",
+          "vocational_rehab",
+          "transition",
+          "guardianship",
+          "trusts",
+          "legal_aid",
+          "appeals"
+        ],
+        "servingTags": [
+          "down_syndrome",
+          "autism",
+          "idd_dd",
+          "early_childhood",
+          "school_age",
+          "transition_age",
+          "parents_caregivers",
+          "medicaid_waiver_families",
+          "iep_families",
+          "non_english_speakers",
+          "rural_families",
+          "low_income_families"
+        ],
+        "availabilityStatuses": [
+          "available",
+          "limited",
+          "near_capacity",
+          "waitlist",
+          "full",
+          "out_of_funding",
+          "temporarily_closed",
+          "unknown"
+        ],
+        "nextStepTypes": [
+          "call",
+          "email",
+          "apply_online",
+          "referral",
+          "schedule",
+          "walk_in",
+          "download_form",
+          "contact_form",
+          "see_instructions",
+          "unknown"
+        ],
+        "fundingStatuses": [
+          "funded",
+          "grant_funded",
+          "insurance_only",
+          "medicaid_only",
+          "private_pay",
+          "scholarships_available",
+          "out_of_funding",
+          "unknown"
+        ],
+        "claimStatuses": [
+          "unclaimed",
+          "pending_review",
+          "claimed",
+          "verified_affiliation",
+          "changes_submitted",
+          "changes_approved"
+        ],
+        "publicVerificationStatuses": [
+          "official_verified",
+          "verified",
+          "human_verified",
+          "source_listed"
+        ]
+      },
+      "notes": [
+        "Provider accessibility booleans with true signal: accepts_medi_cal 27/83; interpreter_available 22/83; asl_available 12/83; wheelchair_accessible 5/83; virtual_services 18/83; in_person_services 60/83; home_visits 3/83; transportation_help 8/83",
+        "Nonprofit accessibility booleans with true signal: interpreter_available 0/29501; asl_available 0/29501; wheelchair_accessible 0/29501; virtual_services 1/29501; in_person_services 22/29501; home_visits 0/29501; transportation_help 0/29501",
+        "Advocate accessibility booleans with true signal: interpreter_available 0/2995; asl_available 0/2995; wheelchair_accessible 0/2995; virtual_services 2/2995; in_person_services 0/2995; home_visits 0/2995; transportation_help 0/2995"
+      ]
+    },
+    {
+      "id": "normalization",
+      "label": "Normalization Foundation",
+      "tables": [
+        {
+          "name": "organizations",
+          "rowCount": 36891,
+          "columns": [
+            "id",
+            "name",
+            "organization_type",
+            "parent_organization_id",
+            "website",
+            "intake_phone",
+            "intake_email",
+            "source_url",
+            "source_type",
+            "data_origin",
+            "verification_status",
+            "last_verified_date",
+            "last_scraped_at",
+            "confidence_score",
+            "notes"
+          ]
+        },
+        {
+          "name": "organization_program_links",
+          "rowCount": 36891,
+          "columns": [
+            "id",
+            "organization_id",
+            "program_id",
+            "listing_type",
+            "title",
+            "intake_model",
+            "service_summary",
+            "eligibility_summary",
+            "source_url",
+            "source_type",
+            "data_origin",
+            "verification_status",
+            "last_verified_date",
+            "last_scraped_at",
+            "confidence_score"
+          ]
+        },
+        {
+          "name": "service_locations",
+          "rowCount": 83,
+          "columns": [
+            "id",
+            "organization_id",
+            "location_name",
+            "location_type",
+            "address",
+            "city",
+            "state_id",
+            "postal_code",
+            "county_id",
+            "phone",
+            "email",
+            "website",
+            "appointment_url",
+            "hours_text",
+            "source_url",
+            "source_type",
+            "data_origin",
+            "verification_status",
+            "last_verified_date",
+            "last_scraped_at",
+            "confidence_score"
+          ]
+        },
+        {
+          "name": "office_locations",
+          "rowCount": 4314,
+          "columns": [
+            "id",
+            "organization_id",
+            "office_name",
+            "office_type",
+            "address",
+            "city",
+            "state_id",
+            "postal_code",
+            "county_id",
+            "intake_phone",
+            "intake_email",
+            "website",
+            "hours_text",
+            "source_url",
+            "source_type",
+            "data_origin",
+            "verification_status",
+            "last_verified_date",
+            "last_scraped_at",
+            "confidence_score"
+          ]
+        },
+        {
+          "name": "virtual_service_areas",
+          "rowCount": 33130,
+          "columns": [
+            "id",
+            "organization_id",
+            "program_link_id",
+            "area_type",
+            "area_name",
+            "state_id",
+            "coverage_notes",
+            "intake_model",
+            "source_url",
+            "source_type",
+            "data_origin",
+            "verification_status",
+            "last_verified_date",
+            "last_scraped_at",
+            "confidence_score"
+          ]
+        }
+      ],
+      "subtypes": [
+        "canonical organizations",
+        "organization to program links",
+        "service locations",
+        "office locations",
+        "virtual service areas"
+      ],
+      "controlledValues": {
+        "organizationTypes": [
+          "advocacy_org",
+          "nonprofit",
+          "provider_org",
+          "public_agency"
+        ],
+        "listingTypes": [
+          "directory_service",
+          "education_support",
+          "public_office"
+        ],
+        "officeTypes": [
+          "county",
+          "intake",
+          "regional"
+        ],
+        "virtualAreaTypes": [
+          "catchment",
+          "county_group",
+          "statewide"
+        ]
+      },
+      "notes": [
+        "This is a landing zone for future org -> program -> location normalization, not yet the main public rendering layer."
+      ]
+    },
+    {
+      "id": "disability_knowledge",
+      "label": "Disability Knowledge and Reference Layer",
+      "tables": [
+        {
+          "name": "conditions",
+          "rowCount": 78,
+          "columns": [
+            "id",
+            "name",
+            "aliases",
+            "parent_friendly_explanation",
+            "regional_center_relevance",
+            "iep_relevance",
+            "ccs_relevance",
+            "ssi_relevance",
+            "cal_able_relevance",
+            "age_specific_notes",
+            "source_url",
+            "last_verified_date"
+          ]
+        },
+        {
+          "name": "functional_needs",
+          "rowCount": 18,
+          "columns": [
+            "id",
+            "name",
+            "category",
+            "description",
+            "program_triggers"
+          ]
+        },
+        {
+          "name": "age_bands",
+          "rowCount": 0,
+          "columns": [
+            "id",
+            "label",
+            "description"
+          ]
+        },
+        {
+          "name": "insurance_types",
+          "rowCount": 0,
+          "columns": [
+            "id",
+            "label"
+          ]
+        }
+      ],
+      "subtypes": [
+        "conditions",
+        "functional needs",
+        "age bands",
+        "insurance types"
+      ],
+      "controlledValues": {
+        "conditionNames": [
+          "Aicardi Syndrome",
+          "Angelman Syndrome",
+          "Apraxia of Speech",
+          "Arthrogryposis Multiplex Congenita",
+          "Attention Deficit Hyperactivity Disorder (ADHD)",
+          "Auditory Dyslexia",
+          "Auditory Processing Disorder (APD)",
+          "Autism Spectrum Disorder (ASD)",
+          "Cerebral Palsy (CP)",
+          "Chronic Kidney Disease (CKD)",
+          "Congenital Heart Disease (CHD)",
+          "Cortical Visual Impairment (CVI)",
+          "Cri-du-Chat Syndrome",
+          "Cystic Fibrosis (CF)",
+          "Deaf-Blindness",
+          "Developmental Coordination Disorder (Dyspraxia)",
+          "Developmental Delay (CA Education Code)",
+          "DiGeorge Syndrome (22q11.2 deletion)",
+          "Down Syndrome (Trisomy 21)",
+          "Dravet Syndrome",
+          "Dyscalculia",
+          "Dysgraphia",
+          "Dyslexia",
+          "Emotional Disturbance (ED)",
+          "Epilepsy / Seizure Disorder",
+          "Executive Function Disorder",
+          "Fragile X Syndrome",
+          "Gastrostomy (G-tube) Dependency",
+          "Global Developmental Delay (GDD)",
+          "Hearing Loss / Deafness",
+          "Hydrocephalus",
+          "Intellectual Disability (ID)",
+          "Juvenile Idiopathic Arthritis (JIA)",
+          "Klinefelter Syndrome (XXY)",
+          "Landau-Kleffner Syndrome",
+          "Lennox-Gastaut Syndrome",
+          "Microcephaly",
+          "Mitochondrial Disease",
+          "Multiple Disabilities",
+          "Muscular Dystrophy (Becker)",
+          "Muscular Dystrophy (Duchenne)",
+          "Neurofibromatosis Type 1 (NF1)",
+          "Neurofibromatosis Type 2 (NF2)",
+          "Nonverbal Learning Disability (NVLD)",
+          "Noonan Syndrome",
+          "Oppositional Defiant Disorder (ODD)",
+          "Optic Nerve Hypoplasia (ONH)",
+          "Orthopedic Impairment",
+          "Other Health Impairment (OHI)",
+          "Pediatric Cancer / Leukemia",
+          "Pervasive Developmental Disorder (PDD-NOS)",
+          "Prader-Willi Syndrome",
+          "Rabin-Kopp Syndrome",
+          "Rasmussen Encephalitis",
+          "Reactive Attachment Disorder (RAD)",
+          "Retinopathy of Prematurity (ROP)",
+          "Rett Syndrome",
+          "Sensory Processing Disorder (SPD)",
+          "Severe Hemophilia",
+          "Severe Persistent Asthma",
+          "Short Bowel Syndrome",
+          "Sickle Cell Disease",
+          "Social Communication Disorder",
+          "Specific Learning Disability (SLD)",
+          "Speech and Language Delay",
+          "Spina Bifida",
+          "Spinal Muscular Atrophy (SMA)",
+          "Tourette Syndrome",
+          "Tracheostomy Dependency",
+          "Traumatic Brain Injury (TBI)",
+          "Trisomy 13 (Patau Syndrome)",
+          "Trisomy 18 (Edwards Syndrome)",
+          "Turner Syndrome",
+          "Type 1 Diabetes",
+          "Usher Syndrome",
+          "Ventilator Dependency",
+          "Visual Impairment / Blindness",
+          "Williams Syndrome"
+        ],
+        "functionalNeedCategories": [
+          "behavioral",
+          "communication",
+          "daily-living",
+          "education",
+          "medical",
+          "mobility",
+          "planning"
+        ],
+        "insuranceTypeLabels": []
+      },
+      "notes": []
+    },
+    {
+      "id": "family_case",
+      "label": "Family and Navigator-Adjacent Workflow Data",
+      "tables": [
+        {
+          "name": "family_cases",
+          "rowCount": 1,
+          "columns": [
+            "id",
+            "email",
+            "created_at"
+          ]
+        },
+        {
+          "name": "child_profiles",
+          "rowCount": 1,
+          "columns": [
+            "id",
+            "case_id",
+            "nickname",
+            "dob",
+            "county_id",
+            "zip_code",
+            "insurance_type",
+            "school_status",
+            "language_preference",
+            "caregiver_notes"
+          ]
+        },
+        {
+          "name": "child_profile_conditions",
+          "rowCount": 1,
+          "columns": [
+            "child_id",
+            "condition_id"
+          ]
+        },
+        {
+          "name": "child_profile_needs",
+          "rowCount": 2,
+          "columns": [
+            "child_id",
+            "need_id"
+          ]
+        },
+        {
+          "name": "case_program_statuses",
+          "rowCount": 0,
+          "columns": [
+            "id",
+            "child_id",
+            "program_id",
+            "status",
+            "updated_at"
+          ]
+        },
+        {
+          "name": "document_checklist_items",
+          "rowCount": 0,
+          "columns": [
+            "id",
+            "child_id",
+            "document_name",
+            "is_collected",
+            "program_id",
+            "file_mock_url"
+          ]
+        },
+        {
+          "name": "reminders",
+          "rowCount": 0,
+          "columns": [
+            "id",
+            "child_id",
+            "program_id",
+            "title",
+            "due_date",
+            "is_completed"
+          ]
+        },
+        {
+          "name": "child_waivers",
+          "rowCount": 0,
+          "columns": [
+            "id",
+            "child_id",
+            "waiver_type",
+            "document_name",
+            "file_path",
+            "effective_date",
+            "expiration_date",
+            "authorized_hours",
+            "parsed_content",
+            "created_at"
+          ]
+        }
+      ],
+      "subtypes": [
+        "family cases",
+        "child profiles",
+        "child condition mappings",
+        "child need mappings",
+        "program tracking",
+        "document tracking",
+        "reminders",
+        "waiver vault"
+      ],
+      "controlledValues": {
+        "caseProgramStatuses": []
+      },
+      "notes": []
+    },
+    {
+      "id": "support_planning_collaboration",
+      "label": "Family Support, Planning, and Collaboration",
+      "tables": [
+        {
+          "name": "safety_incidents",
+          "rowCount": 0,
+          "columns": [
+            "id",
+            "child_id",
+            "time",
+            "category",
+            "risk_level",
+            "details",
+            "intervention"
+          ]
+        },
+        {
+          "name": "parent_declarations",
+          "rowCount": 0,
+          "columns": [
+            "child_id",
+            "declaration_text",
+            "doctor_name"
+          ]
+        },
+        {
+          "name": "caregiver_profiles",
+          "rowCount": 0,
+          "columns": [
+            "user_id",
+            "name",
+            "email",
+            "phone",
+            "address"
+          ]
+        },
+        {
+          "name": "child_transition_tasks",
+          "rowCount": 0,
+          "columns": [
+            "child_id",
+            "task_id"
+          ]
+        },
+        {
+          "name": "caregiver_selfcare_logs",
+          "rowCount": 0,
+          "columns": [
+            "child_id",
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri",
+            "sat",
+            "sun"
+          ]
+        },
+        {
+          "name": "child_coordinators",
+          "rowCount": 0,
+          "columns": [
+            "child_id",
+            "coordinator_name"
+          ]
+        },
+        {
+          "name": "child_clinical_documents",
+          "rowCount": 0,
+          "columns": [
+            "id",
+            "child_id",
+            "file_name",
+            "document_type",
+            "parsed_data_json",
+            "uploaded_at",
+            "status"
+          ]
+        },
+        {
+          "name": "consultation_threads",
+          "rowCount": 0,
+          "columns": [
+            "id",
+            "child_id",
+            "advocate_id",
+            "status",
+            "created_at"
+          ]
+        },
+        {
+          "name": "consultation_messages",
+          "rowCount": 0,
+          "columns": [
+            "id",
+            "thread_id",
+            "sender_role",
+            "message_text",
+            "attachments_json",
+            "created_at"
+          ]
+        },
+        {
+          "name": "shared_portal_tokens",
+          "rowCount": 0,
+          "columns": [
+            "id",
+            "child_id",
+            "token",
+            "expires_at",
+            "access_scope",
+            "created_at"
+          ]
+        },
+        {
+          "name": "child_iep_accommodations",
+          "rowCount": 0,
+          "columns": [
+            "id",
+            "child_id",
+            "accommodation_id"
+          ]
+        },
+        {
+          "name": "child_iep_goals",
+          "rowCount": 0,
+          "columns": [
+            "id",
+            "child_id",
+            "goal_template_id",
+            "custom_text",
+            "tokens_json"
+          ]
+        },
+        {
+          "name": "child_respite_assessments",
+          "rowCount": 0,
+          "columns": [
+            "child_id",
+            "safety_score",
+            "sleep_score",
+            "medical_score",
+            "behavior_score",
+            "updated_at"
+          ]
+        }
+      ],
+      "subtypes": [
+        "safety incidents",
+        "parent declarations",
+        "caregiver profiles",
+        "transition tasks",
+        "caregiver self-care logs",
+        "child coordinators",
+        "clinical documents",
+        "consultation threads and messages",
+        "shared portal tokens",
+        "IEP accommodations and goals",
+        "respite assessments"
+      ],
+      "controlledValues": {},
+      "notes": []
+    },
+    {
+      "id": "knowledge_content",
+      "label": "Knowledge Content",
+      "tables": [
+        {
+          "name": "knowledge_articles",
+          "rowCount": 15,
+          "columns": [
+            "id",
+            "category",
+            "title",
+            "subtitle",
+            "title_es",
+            "subtitle_es",
+            "read_time",
+            "read_time_es",
+            "difficulty",
+            "color",
+            "steps_json",
+            "steps_json_es"
+          ]
+        }
+      ],
+      "subtypes": [
+        "bilingual structured knowledge articles"
+      ],
+      "controlledValues": {
+        "knowledgeArticleCategories": [
+          "Appeals",
+          "IEP",
+          "IEP & School Rights",
+          "IHSS",
+          "Medi-Cal & Waivers",
+          "Regional Center",
+          "Savings & Benefits",
+          "SDP",
+          "Therapy & Medical",
+          "Transition to Adulthood"
+        ],
+        "verifiedDiagnosisSlugs": [
+          "autism-spectrum-disorder",
+          "adhd",
+          "down-syndrome",
+          "speech-or-language-delay",
+          "cerebral-palsy",
+          "epilepsy"
+        ]
+      },
+      "notes": []
+    },
+    {
+      "id": "sources_review_ops",
+      "label": "Source, Review, and Operations Layers",
+      "tables": [
+        {
+          "name": "sources",
+          "rowCount": 30,
+          "columns": [
+            "id",
+            "program_id",
+            "url",
+            "type",
+            "confidence_rating",
+            "source_url",
+            "source_type",
+            "data_origin",
+            "verification_status",
+            "last_verified_date",
+            "last_scraped_at",
+            "confidence_score"
+          ]
+        },
+        {
+          "name": "source_verifications",
+          "rowCount": 18,
+          "columns": [
+            "id",
+            "source_id",
+            "verified_by",
+            "verified_date",
+            "notes",
+            "source_url",
+            "source_type",
+            "data_origin",
+            "verification_status",
+            "last_verified_date",
+            "last_scraped_at",
+            "confidence_score"
+          ]
+        },
+        {
+          "name": "user_submitted_resources",
+          "rowCount": 0,
+          "columns": [
+            "id",
+            "provider_name",
+            "category",
+            "county_id",
+            "phone",
+            "website",
+            "status",
+            "submitted_at"
+          ]
+        },
+        {
+          "name": "coverage_gaps",
+          "rowCount": 0,
+          "columns": [
+            "id",
+            "county_id",
+            "gap_category",
+            "description",
+            "severity"
+          ]
+        },
+        {
+          "name": "verification_queue_items",
+          "rowCount": 2,
+          "columns": [
+            "id",
+            "record_type",
+            "record_id",
+            "record_name",
+            "reason",
+            "verification_level"
+          ]
+        }
+      ],
+      "subtypes": [
+        "source registry",
+        "source verifications",
+        "user-submitted resources",
+        "coverage gaps",
+        "verification queue"
+      ],
+      "controlledValues": {
+        "sourceTypes": [
+          "official"
+        ],
+        "userSubmissionStatuses": [],
+        "coverageGapSeverities": [],
+        "verificationLevels": [
+          "1"
+        ]
+      },
+      "notes": []
+    },
+    {
+      "id": "staging_promotion",
+      "label": "Staging and Promotion Layers",
+      "tables": [
+        {
+          "name": "staging_source_targets",
+          "rowCount": 0,
+          "columns": [
+            "id",
+            "state_id",
+            "category",
+            "source_name",
+            "organization_type",
+            "source_url",
+            "domain",
+            "target_tables",
+            "expected_fields",
+            "crawl_method",
+            "robots_txt_status",
+            "terms_risk",
+            "priority",
+            "update_frequency_estimate",
+            "notes",
+            "last_checked_at"
+          ]
+        },
+        {
+          "name": "staging_scraped_county_offices",
+          "rowCount": 3050,
+          "columns": [
+            "id",
+            "source_url",
+            "source_name",
+            "source_type",
+            "scraped_at",
+            "state_id",
+            "county_id",
+            "confidence_score",
+            "extraction_notes",
+            "raw_text_excerpt",
+            "suggested_target_table",
+            "suggested_target_id",
+            "duplicate_candidate_id",
+            "review_status",
+            "extracted_name",
+            "extracted_phone",
+            "extracted_email",
+            "extracted_address",
+            "extracted_website",
+            "program_id",
+            "evidence_level"
+          ]
+        },
+        {
+          "name": "staging_scraped_state_resource_agencies",
+          "rowCount": 448,
+          "columns": [
+            "id",
+            "source_url",
+            "source_name",
+            "source_type",
+            "scraped_at",
+            "state_id",
+            "county_id",
+            "confidence_score",
+            "extraction_notes",
+            "raw_text_excerpt",
+            "suggested_target_table",
+            "suggested_target_id",
+            "duplicate_candidate_id",
+            "review_status",
+            "extracted_name",
+            "agency_type",
+            "counties_served",
+            "catchment_boundaries",
+            "extracted_website",
+            "extracted_phone",
+            "early_intervention_contact",
+            "agency_intake_contact",
+            "eligibility_info_page",
+            "services_page",
+            "appeals_info",
+            "evidence_level"
+          ]
+        },
+        {
+          "name": "staging_scraped_regional_education_agencies",
+          "rowCount": 161,
+          "columns": [
+            "id",
+            "source_url",
+            "source_name",
+            "source_type",
+            "scraped_at",
+            "state_id",
+            "county_id",
+            "confidence_score",
+            "extraction_notes",
+            "raw_text_excerpt",
+            "suggested_target_table",
+            "suggested_target_id",
+            "duplicate_candidate_id",
+            "review_status",
+            "extracted_name",
+            "agency_type",
+            "counties_served",
+            "extracted_website",
+            "evidence_level",
+            "extracted_phone"
+          ]
+        },
+        {
+          "name": "staging_scraped_school_districts",
+          "rowCount": 2874,
+          "columns": [
+            "id",
+            "source_url",
+            "source_name",
+            "source_type",
+            "scraped_at",
+            "state_id",
+            "county_id",
+            "confidence_score",
+            "extraction_notes",
+            "raw_text_excerpt",
+            "suggested_target_table",
+            "suggested_target_id",
+            "duplicate_candidate_id",
+            "review_status",
+            "extracted_name",
+            "spec_ed_contact_phone",
+            "spec_ed_contact_email",
+            "extracted_website",
+            "total_enrollment",
+            "evidence_level"
+          ]
+        },
+        {
+          "name": "staging_scraped_nonprofit_organizations",
+          "rowCount": 21597,
+          "columns": [
+            "id",
+            "source_url",
+            "source_name",
+            "source_type",
+            "scraped_at",
+            "state_id",
+            "county_id",
+            "confidence_score",
+            "extraction_notes",
+            "raw_text_excerpt",
+            "suggested_target_table",
+            "suggested_target_id",
+            "duplicate_candidate_id",
+            "review_status",
+            "extracted_name",
+            "extracted_website",
+            "extracted_phone",
+            "focus_condition",
+            "evidence_level"
+          ]
+        },
+        {
+          "name": "staging_scraped_iep_advocates",
+          "rowCount": 4452,
+          "columns": [
+            "id",
+            "source_url",
+            "source_name",
+            "source_type",
+            "scraped_at",
+            "state_id",
+            "county_id",
+            "confidence_score",
+            "extraction_notes",
+            "raw_text_excerpt",
+            "suggested_target_table",
+            "suggested_target_id",
+            "duplicate_candidate_id",
+            "review_status",
+            "extracted_name",
+            "credentials",
+            "experience_years",
+            "price_rate",
+            "counties_served",
+            "languages_spoken",
+            "extracted_phone",
+            "extracted_email",
+            "extracted_website",
+            "specialties",
+            "description",
+            "evidence_level"
+          ]
+        },
+        {
+          "name": "staging_scraped_resource_providers",
+          "rowCount": 102,
+          "columns": [
+            "id",
+            "source_url",
+            "source_name",
+            "source_type",
+            "scraped_at",
+            "state_id",
+            "county_id",
+            "confidence_score",
+            "extraction_notes",
+            "raw_text_excerpt",
+            "suggested_target_table",
+            "suggested_target_id",
+            "duplicate_candidate_id",
+            "review_status",
+            "extracted_name",
+            "categories",
+            "extracted_phone",
+            "extracted_email",
+            "extracted_address",
+            "accepts_medi_cal",
+            "evidence_level"
+          ]
+        },
+        {
+          "name": "staging_scraped_forms",
+          "rowCount": 133,
+          "columns": [
+            "id",
+            "source_url",
+            "source_name",
+            "source_type",
+            "scraped_at",
+            "state_id",
+            "county_id",
+            "confidence_score",
+            "extraction_notes",
+            "raw_text_excerpt",
+            "suggested_target_table",
+            "suggested_target_id",
+            "duplicate_candidate_id",
+            "review_status",
+            "slug",
+            "program",
+            "official_download_url",
+            "who_uses_it",
+            "who_signs_it",
+            "where_to_send_it",
+            "letter_script"
+          ]
+        },
+        {
+          "name": "staging_scraped_help_resources",
+          "rowCount": 0,
+          "columns": [
+            "id",
+            "source_url",
+            "source_name",
+            "source_type",
+            "scraped_at",
+            "state_id",
+            "county_id",
+            "confidence_score",
+            "extraction_notes",
+            "raw_text_excerpt",
+            "suggested_target_table",
+            "suggested_target_id",
+            "duplicate_candidate_id",
+            "review_status",
+            "extracted_name",
+            "gap_family",
+            "help_type",
+            "extracted_website",
+            "extracted_phone",
+            "extracted_email",
+            "extracted_address",
+            "action_url",
+            "service_summary"
+          ]
+        },
+        {
+          "name": "staging_scraped_knowledge_content",
+          "rowCount": 0,
+          "columns": [
+            "id",
+            "source_url",
+            "source_name",
+            "source_type",
+            "scraped_at",
+            "state_id",
+            "county_id",
+            "confidence_score",
+            "extraction_notes",
+            "raw_text_excerpt",
+            "suggested_target_table",
+            "suggested_target_id",
+            "duplicate_candidate_id",
+            "review_status",
+            "slug",
+            "title",
+            "content_category",
+            "canonical_url",
+            "summary"
+          ]
+        },
+        {
+          "name": "staging_scraped_waitlists",
+          "rowCount": 7,
+          "columns": [
+            "id",
+            "source_url",
+            "source_name",
+            "source_type",
+            "scraped_at",
+            "state_id",
+            "county_id",
+            "confidence_score",
+            "extraction_notes",
+            "raw_text_excerpt",
+            "suggested_target_table",
+            "suggested_target_id",
+            "duplicate_candidate_id",
+            "review_status",
+            "program_id",
+            "name",
+            "duration_label",
+            "duration_months",
+            "status",
+            "description",
+            "estimate_source_url",
+            "estimate_source_type",
+            "last_checked_at"
+          ]
+        },
+        {
+          "name": "staging_scraped_sources",
+          "rowCount": 13,
+          "columns": [
+            "id",
+            "source_url",
+            "source_name",
+            "source_type",
+            "scraped_at",
+            "state_id",
+            "county_id",
+            "confidence_score",
+            "extraction_notes",
+            "raw_text_excerpt",
+            "suggested_target_table",
+            "suggested_target_id",
+            "duplicate_candidate_id",
+            "review_status",
+            "program_id",
+            "url",
+            "type",
+            "confidence_rating"
+          ]
+        },
+        {
+          "name": "staging_promotion_audit",
+          "rowCount": 22416,
+          "columns": [
+            "id",
+            "staging_table",
+            "staging_record_id",
+            "target_table",
+            "target_record_id",
+            "promoted_at",
+            "source_url",
+            "old_value",
+            "new_value",
+            "reason"
+          ]
+        }
+      ],
+      "subtypes": [
+        "source targets",
+        "scraped county offices",
+        "scraped state resource agencies",
+        "scraped regional education agencies",
+        "scraped school districts",
+        "scraped nonprofits",
+        "scraped advocates",
+        "scraped resource providers",
+        "scraped forms",
+        "scraped help resources",
+        "scraped knowledge content",
+        "scraped waitlists",
+        "scraped sources",
+        "promotion audit"
+      ],
+      "controlledValues": {},
+      "notes": []
+    },
+    {
+      "id": "public_truth",
+      "label": "Truth and Public Eligibility Contract",
+      "tables": [
+        {
+          "name": "resource_providers",
+          "rowCount": 83,
+          "columns": [
+            "id",
+            "name",
+            "categories",
+            "county_id",
+            "phone",
+            "email",
+            "address",
+            "accepts_medi_cal",
+            "regional_center_vendor_ids",
+            "source_url",
+            "source_type",
+            "data_origin",
+            "verification_status",
+            "last_verified_date",
+            "last_scraped_at",
+            "confidence_score",
+            "evidence_level",
+            "service_tags",
+            "serving_tags",
+            "availability_status",
+            "accepting_new_clients",
+            "waitlist_status",
+            "capacity_notes",
+            "funding_status",
+            "checked_at",
+            "source_name",
+            "source_last_updated",
+            "next_step_type",
+            "next_step_label",
+            "next_step_url",
+            "next_step_phone",
+            "next_step_email",
+            "next_step_instructions",
+            "requirements",
+            "application_url",
+            "referral_url",
+            "walk_in_available",
+            "appointment_required",
+            "languages",
+            "interpreter_available",
+            "asl_available",
+            "wheelchair_accessible",
+            "virtual_services",
+            "in_person_services",
+            "home_visits",
+            "transportation_help",
+            "accessibility_notes",
+            "manual_review_required",
+            "data_quality_notes",
+            "unsupported_claim_flags",
+            "claim_status",
+            "claimed_by",
+            "verified_affiliation",
+            "claim_email",
+            "last_verified_at"
+          ]
+        },
+        {
+          "name": "nonprofit_organizations",
+          "rowCount": 29501,
+          "columns": [
+            "id",
+            "name",
+            "county_id",
+            "website",
+            "phone",
+            "focus_condition",
+            "source_url",
+            "source_type",
+            "data_origin",
+            "verification_status",
+            "last_verified_date",
+            "last_scraped_at",
+            "confidence_score",
+            "evidence_level",
+            "service_tags",
+            "serving_tags",
+            "availability_status",
+            "accepting_new_clients",
+            "waitlist_status",
+            "capacity_notes",
+            "funding_status",
+            "checked_at",
+            "source_name",
+            "source_last_updated",
+            "next_step_type",
+            "next_step_label",
+            "next_step_url",
+            "next_step_phone",
+            "next_step_email",
+            "next_step_instructions",
+            "requirements",
+            "application_url",
+            "referral_url",
+            "walk_in_available",
+            "appointment_required",
+            "languages",
+            "interpreter_available",
+            "asl_available",
+            "wheelchair_accessible",
+            "virtual_services",
+            "in_person_services",
+            "home_visits",
+            "transportation_help",
+            "accessibility_notes",
+            "manual_review_required",
+            "data_quality_notes",
+            "unsupported_claim_flags",
+            "claim_status",
+            "claimed_by",
+            "verified_affiliation",
+            "claim_email",
+            "last_verified_at",
+            "accessibility_evidence_level",
+            "accessibility_source_address"
+          ]
+        },
+        {
+          "name": "iep_advocates",
+          "rowCount": 2995,
+          "columns": [
+            "id",
+            "name",
+            "credentials",
+            "experience_years",
+            "price_rate",
+            "counties_served",
+            "languages_spoken",
+            "phone",
+            "email",
+            "website",
+            "specialties",
+            "regional_center_vendorized",
+            "organization_affiliation",
+            "description",
+            "verification_status",
+            "source_url",
+            "source_type",
+            "last_scraped_at",
+            "last_verified_at",
+            "data_origin",
+            "last_verified_date",
+            "confidence_score",
+            "evidence_level",
+            "service_tags",
+            "serving_tags",
+            "availability_status",
+            "accepting_new_clients",
+            "waitlist_status",
+            "capacity_notes",
+            "funding_status",
+            "checked_at",
+            "source_name",
+            "source_last_updated",
+            "next_step_type",
+            "next_step_label",
+            "next_step_url",
+            "next_step_phone",
+            "next_step_email",
+            "next_step_instructions",
+            "requirements",
+            "application_url",
+            "referral_url",
+            "walk_in_available",
+            "appointment_required",
+            "interpreter_available",
+            "asl_available",
+            "wheelchair_accessible",
+            "virtual_services",
+            "in_person_services",
+            "home_visits",
+            "transportation_help",
+            "accessibility_notes",
+            "manual_review_required",
+            "data_quality_notes",
+            "unsupported_claim_flags",
+            "claim_status",
+            "claimed_by",
+            "verified_affiliation",
+            "claim_email"
+          ]
+        },
+        {
+          "name": "county_offices",
+          "rowCount": 3678,
+          "columns": [
+            "id",
+            "county_id",
+            "program_id",
+            "office_name",
+            "address",
+            "phone",
+            "email",
+            "website",
+            "source_url",
+            "source_type",
+            "data_origin",
+            "verification_status",
+            "last_verified_date",
+            "last_scraped_at",
+            "confidence_score",
+            "evidence_level"
+          ]
+        },
+        {
+          "name": "state_resource_agencies",
+          "rowCount": 636,
+          "columns": [
+            "id",
+            "state_id",
+            "agency_type",
+            "name",
+            "counties_served",
+            "catchment_boundaries",
+            "website",
+            "intake_phone",
+            "early_intervention_contact",
+            "agency_intake_contact",
+            "eligibility_info_page",
+            "services_page",
+            "appeals_info",
+            "frc_relationship",
+            "office_locations",
+            "languages",
+            "last_verified_date",
+            "source_urls",
+            "source_url",
+            "source_type",
+            "data_origin",
+            "verification_status",
+            "last_scraped_at",
+            "confidence_score",
+            "evidence_level"
+          ]
+        },
+        {
+          "name": "regional_education_agencies",
+          "rowCount": 313,
+          "columns": [
+            "id",
+            "state_id",
+            "agency_type",
+            "name",
+            "counties_served",
+            "website",
+            "source_url",
+            "source_type",
+            "data_origin",
+            "verification_status",
+            "last_verified_date",
+            "last_scraped_at",
+            "confidence_score",
+            "evidence_level"
+          ]
+        },
+        {
+          "name": "school_districts",
+          "rowCount": 3117,
+          "columns": [
+            "id",
+            "county_id",
+            "name",
+            "spec_ed_contact_phone",
+            "spec_ed_contact_email",
+            "website",
+            "total_enrollment",
+            "special_ed_pct",
+            "inclusion_rate_pct",
+            "self_contained_rate_pct",
+            "source_url",
+            "source_type",
+            "data_origin",
+            "verification_status",
+            "last_verified_date",
+            "last_scraped_at",
+            "confidence_score",
+            "evidence_level"
+          ]
+        },
+        {
+          "name": "programs",
+          "rowCount": 507,
+          "columns": [
+            "id",
+            "name",
+            "description",
+            "who_it_is_for",
+            "who_might_qualify",
+            "official_source_url",
+            "category",
+            "confidence_score",
+            "last_verified_date",
+            "state_id",
+            "source_url",
+            "source_type",
+            "data_origin",
+            "verification_status",
+            "last_scraped_at",
+            "program_type"
+          ]
+        }
+      ],
+      "subtypes": [
+        "source-backed trust metadata",
+        "public-safe render eligibility",
+        "index-safe gating",
+        "verified diagnosis allowlist",
+        "indexable state allowlist"
+      ],
+      "controlledValues": {
+        "indexableStates": [
+          "california",
+          "texas",
+          "florida",
+          "pennsylvania",
+          "new-york",
+          "ohio",
+          "illinois",
+          "georgia",
+          "maryland",
+          "utah",
+          "new-mexico",
+          "oregon",
+          "washington",
+          "idaho",
+          "south-carolina",
+          "north-dakota",
+          "west-virginia",
+          "montana",
+          "colorado",
+          "louisiana",
+          "south-dakota",
+          "alabama",
+          "wisconsin",
+          "arkansas",
+          "oklahoma",
+          "north-carolina",
+          "mississippi",
+          "michigan",
+          "minnesota",
+          "indiana",
+          "nebraska",
+          "tennessee",
+          "virginia",
+          "arizona",
+          "alaska",
+          "connecticut",
+          "delaware",
+          "hawaii",
+          "iowa",
+          "kansas",
+          "kentucky",
+          "maine",
+          "massachusetts",
+          "missouri",
+          "nevada",
+          "new-hampshire",
+          "new-jersey",
+          "rhode-island",
+          "vermont",
+          "wyoming"
+        ],
+        "publicVerificationStatuses": [
+          "official_verified",
+          "verified",
+          "human_verified",
+          "source_listed"
+        ],
+        "verifiedDiagnosisSlugs": [
+          "autism-spectrum-disorder",
+          "adhd",
+          "down-syndrome",
+          "speech-or-language-delay",
+          "cerebral-palsy",
+          "epilepsy"
+        ]
+      },
+      "notes": [
+        "Public eligibility requires acceptable verification status, non-synthetic source URL, and contact signal."
+      ]
+    }
+  ]
+}

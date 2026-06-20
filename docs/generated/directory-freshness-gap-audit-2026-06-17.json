@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-06-17",
+  "dbPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/frontend/ca_disability_navigator.db",
+  "tables": [
+    {
+      "table": "resource_providers",
+      "label": "Resource Providers",
+      "total": 83,
+      "publicEligible": 83,
+      "gapRows": 0,
+      "gapPctOfPublicEligible": 0,
+      "states": [],
+      "rows": []
+    },
+    {
+      "table": "nonprofit_organizations",
+      "label": "Nonprofit Organizations",
+      "total": 29499,
+      "publicEligible": 29499,
+      "gapRows": 0,
+      "gapPctOfPublicEligible": 0,
+      "states": [],
+      "rows": []
+    },
+    {
+      "table": "iep_advocates",
+      "label": "IEP Advocates",
+      "total": 2995,
+      "publicEligible": 2995,
+      "gapRows": 0,
+      "gapPctOfPublicEligible": 0,
+      "states": [],
+      "rows": []
+    }
+  ]
+}

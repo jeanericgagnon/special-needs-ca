@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "source_url": "https://doe.nv.gov/Special_Education/",
+    "confidence_score": 9.5,
+    "notes": "Official Nevada Department of Education Special Education page used as the truthful statewide education support layer while weak county and district placeholders are removed.",
+    "suggested_target_id": "nv-ed-nde-special-education",
+    "name": "Nevada Department of Education Special Education",
+    "phone": "",
+    "counties_served": [
+      "ALL_NEVADA_COUNTIES"
+    ],
+    "physical_county": "clark-nv",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  }
+]

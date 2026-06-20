@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-06-17T20:08:11.069Z",
+  "mode": "apply",
+  "stateFilter": "iowa",
+  "inputPath": "data/provider-placeholder-replacement-decisions.json",
+  "summary": {
+    "inputRows": 1,
+    "appliedStates": 1,
+    "appliedReplacements": 2,
+    "filesChanged": 1,
+    "skippedByReason": {}
+  },
+  "decisions": [
+    {
+      "stateId": "iowa",
+      "placeholderSourceName": "Iowa Children's Hospital Clinics",
+      "status": "applied",
+      "replacementCount": 2,
+      "replacements": [
+        {
+          "source_name": "University of Iowa Stead Family Children's Hospital",
+          "source_url": "http://www.uichildrens.org/",
+          "domain": "uichildrens.org"
+        },
+        {
+          "source_name": "Blank Children's Hospital",
+          "source_url": "https://www.unitypoint.org/desmoines/iowa-methodist-medical-center.aspx",
+          "domain": "unitypoint.org"
+        }
+      ]
+    }
+  ]
+}

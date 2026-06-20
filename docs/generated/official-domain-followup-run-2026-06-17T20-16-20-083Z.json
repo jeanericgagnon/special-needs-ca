@@ -1,0 +1,22 @@
+{
+  "generatedAt": "2026-06-17T20:16:20.084Z",
+  "mode": "dry-run",
+  "stateFilter": null,
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 1,
+    "appliedStates": 0,
+    "filesChanged": 0,
+    "skippedByReason": {
+      "missing_reviewed_by": 1
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "florida",
+      "sourceName": "Florida Early Steps Local Directories",
+      "status": "skipped_missing_reviewed_by",
+      "targetUrl": ""
+    }
+  ]
+}

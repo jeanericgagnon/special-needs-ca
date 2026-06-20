@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-06-18T19:42:04.156Z",
+  "generatedDate": "2026-06-18",
+  "sourceArtifacts": {
+    "decisionFilePath": "data/provider-pull-now-decisions.json",
+    "sourcePackPlanPath": "docs/generated/provider-source-pack-plan-2026-06-18.json"
+  },
+  "summary": {
+    "unresolvedRows": 0,
+    "byActionClass": {},
+    "byDecisionHint": {},
+    "byState": {}
+  },
+  "rows": []
+}

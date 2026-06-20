@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-06-18T21:47:23.500Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "tennessee",
+  "sourceWorkfilePath": "data/provider-authoring-state-workfiles/provider-authoring-state-workfile-tennessee.json",
+  "summary": {
+    "neededConcreteTargets": 0,
+    "candidateSlotCount": 1,
+    "readyCandidateCount": 1,
+    "unresolvedCandidateCount": 0,
+    "completionPercent": 100
+  },
+  "nextWork": []
+}

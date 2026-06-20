@@ -1,0 +1,35 @@
+{
+  "generatedAt": "2026-06-17T20:03:44.478Z",
+  "mode": "dry-run",
+  "stateFilter": null,
+  "inputPath": "docs/generated/provider-placeholder-replacement-decision-template-2026-06-17.json",
+  "summary": {
+    "inputRows": 3,
+    "appliedStates": 0,
+    "appliedReplacements": 0,
+    "filesChanged": 0,
+    "skippedByReason": {
+      "missing_reviewed_by": 3
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "alabama",
+      "placeholderSourceName": "Alabama Children's Hospital Clinics",
+      "status": "skipped_missing_reviewed_by",
+      "replacementCount": 0
+    },
+    {
+      "stateId": "iowa",
+      "placeholderSourceName": "Iowa Children's Hospital Clinics",
+      "status": "skipped_missing_reviewed_by",
+      "replacementCount": 0
+    },
+    {
+      "stateId": "missouri",
+      "placeholderSourceName": "Missouri Children's Hospital Clinics",
+      "status": "skipped_missing_reviewed_by",
+      "replacementCount": 0
+    }
+  ]
+}

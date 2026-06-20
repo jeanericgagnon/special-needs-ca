@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-06-18T01:52:55.653Z",
+  "mode": "apply",
+  "stateFilter": "nebraska",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 3,
+    "appliedStates": 2,
+    "filesChanged": 1,
+    "skippedByReason": {
+      "skipped_followup": 1
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "nebraska",
+      "sourceName": "Nebraska HCBS Waivers Page",
+      "status": "applied",
+      "targetUrl": "https://dhhs.ne.gov/Pages/DD-Waivers.aspx"
+    },
+    {
+      "stateId": "nebraska",
+      "sourceName": "Nebraska Developmental Services Directory",
+      "status": "applied",
+      "targetUrl": "https://dhhs.ne.gov/Pages/DD"
+    },
+    {
+      "stateId": "nebraska",
+      "sourceName": "Nebraska Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-06-18T01:26:59.163Z",
+  "mode": "apply",
+  "stateFilter": "colorado",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 4,
+    "appliedStates": 2,
+    "filesChanged": 1,
+    "skippedByReason": {
+      "skipped_followup": 2
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "colorado",
+      "sourceName": "Colorado Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "colorado",
+      "sourceName": "Colorado HCBS Waivers Page",
+      "status": "applied",
+      "targetUrl": "https://hcpf.colorado.gov/hcbs"
+    },
+    {
+      "stateId": "colorado",
+      "sourceName": "Colorado Developmental Services Directory",
+      "status": "applied",
+      "targetUrl": "https://hcpf.colorado.gov/developmental-disabilities"
+    },
+    {
+      "stateId": "colorado",
+      "sourceName": "Colorado Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

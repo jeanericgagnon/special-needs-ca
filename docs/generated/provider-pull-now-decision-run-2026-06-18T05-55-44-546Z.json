@@ -1,0 +1,30 @@
+{
+  "generatedAt": "2026-06-18T05:55:44.548Z",
+  "mode": "apply",
+  "stateFilter": "georgia",
+  "inputPath": "data/provider-pull-now-decisions.json",
+  "summary": {
+    "inputRows": 2,
+    "resolvedRows": 0,
+    "deferredRows": 2,
+    "filesChanged": 2,
+    "skippedByReason": {},
+    "byDecisionMode": {
+      "needs_manual_research": 2
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "georgia",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-1",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "georgia",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-1",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    }
+  ]
+}

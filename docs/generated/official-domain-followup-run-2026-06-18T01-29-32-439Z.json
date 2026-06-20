@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-06-18T01:29:32.441Z",
+  "mode": "apply",
+  "stateFilter": "connecticut",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 4,
+    "appliedStates": 2,
+    "filesChanged": 1,
+    "skippedByReason": {
+      "skipped_followup": 2
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "connecticut",
+      "sourceName": "Connecticut Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "connecticut",
+      "sourceName": "Connecticut HCBS Waivers Page",
+      "status": "applied",
+      "targetUrl": "https://portal.ct.gov/dds/hcbs"
+    },
+    {
+      "stateId": "connecticut",
+      "sourceName": "Connecticut Developmental Services Directory",
+      "status": "applied",
+      "targetUrl": "https://portal.ct.gov/dds"
+    },
+    {
+      "stateId": "connecticut",
+      "sourceName": "Connecticut Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

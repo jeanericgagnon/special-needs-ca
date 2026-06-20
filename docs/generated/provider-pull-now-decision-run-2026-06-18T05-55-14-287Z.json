@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-06-18T05:55:14.290Z",
+  "mode": "apply",
+  "stateFilter": "new-york",
+  "inputPath": "data/provider-pull-now-decisions.json",
+  "summary": {
+    "inputRows": 3,
+    "resolvedRows": 0,
+    "deferredRows": 3,
+    "filesChanged": 2,
+    "skippedByReason": {},
+    "byDecisionMode": {
+      "needs_manual_research": 3
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "new-york",
+      "sourceUrl": "https://www.montefiore.org/rose-f-kennedy-center",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "new-york",
+      "sourceUrl": "https://www.upstate.edu/gch",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "new-york",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-1",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    }
+  ]
+}

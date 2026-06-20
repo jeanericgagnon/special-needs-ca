@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "source_url": "https://www.bergen.org/bcss",
+    "confidence_score": 9.5,
+    "notes": "Official Bergen County Special Services School District site for county special needs programs in Bergen County.",
+    "suggested_target_id": "nj-ed-bcss",
+    "name": "Bergen County Special Services School District",
+    "phone": "(201) 343-6000",
+    "counties_served": [
+      "bergen-nj"
+    ],
+    "physical_county": "bergen-nj",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://hcstonline.org/",
+    "confidence_score": 9.5,
+    "notes": "Official Hudson County Schools of Technology district site for Hudson County public career and technical education.",
+    "suggested_target_id": "nj-ed-hcst",
+    "name": "Hudson County Schools of Technology",
+    "phone": "(201) 662-6700",
+    "counties_served": [
+      "hudson-nj"
+    ],
+    "physical_county": "hudson-nj",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  }
+]

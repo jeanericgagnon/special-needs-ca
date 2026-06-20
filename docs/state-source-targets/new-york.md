@@ -39,6 +39,9 @@ This document outlines the authoritative crawler target domains, specific agenci
 | **Advocates for Children of New York (ACNY)** | H. Parent training / disability rights / legal aid / Legal Aid Directory | [advocatesforchildren.org](https://www.advocatesforchildren.org) | `static_fetch` | `nonprofit_organizations` |
 | **NYU Langone Hassenfeld Children's Hospital Center for Child Development** | M. Hospitals / university clinics / Hospital Clinic Pages | [nyulangone.org](https://nyulangone.org/locations/hassenfeld-childrens-hospital) | `static_fetch` | `resource_providers` |
 | **Montefiore Rose F. Kennedy Center** | M. Hospitals / university clinics / Hospital Clinic Pages | [montefiore.org](https://www.montefiore.org/rose-f-kennedy-center) | `static_fetch` | `resource_providers` |
+| **Cohen Children's Medical Center** | M. Hospitals / university clinics / Hospitals | [childrenshospital.northwell.edu](https://childrenshospital.northwell.edu) | `static_fetch` | `resource_providers` |
+| **Golisano Children's Hospital** | M. Hospitals / university clinics / Hospitals | [urmc.rochester.edu](https://www.urmc.rochester.edu/childrens-hospital) | `static_fetch` | `resource_providers` |
+| **Upstate Golisano Children's Hospital** | M. Hospitals / university clinics / Hospitals | [upstate.edu](https://www.upstate.edu/gch) | `static_fetch` | `resource_providers` |
 | **NYS ACCES-VR** | L. Transition / adult services / Vocational Rehabilitation | [acces.nysed.gov](http://www.acces.nysed.gov/vr/) | `static_fetch` | `programs` |
 | **NY ABLE** | L. Transition / adult services / ABLE Program Page | [mynyable.org](https://www.mynyable.org) | `static_fetch` | `programs` |
 | **New York Open Data Portal** | N. Data quality / verification sources / Open Data Portal | [data.ny.gov](https://data.ny.gov) | `static_fetch` | `sources` |
@@ -460,6 +463,45 @@ This document outlines the authoritative crawler target domains, specific agenci
 - **Notes:** Pediatric autism and developmental clinic.
 - **Last Checked:** 2026-06-13
 
+### Category: M. Hospitals / university clinics (Hospitals)
+- **Source Name:** Cohen Children's Medical Center
+- **Source URL:** [https://childrenshospital.northwell.edu](https://childrenshospital.northwell.edu)
+- **Domain:** `childrenshospital.northwell.edu`
+- **Target Table:** `resource_providers`
+- **Expected Fields:** `name, address, phone`
+- **Crawl Method:** `static_fetch`
+- **Robots.txt Status:** `allowed`
+- **Terms Risk:** `low`
+- **Priority:** 1
+- **Notes:** Concrete first-party pediatric hospital target for Long Island and downstate New York coverage.
+- **Last Checked:** 2026-06-17
+
+### Category: M. Hospitals / university clinics (Hospitals)
+- **Source Name:** Golisano Children's Hospital
+- **Source URL:** [https://www.urmc.rochester.edu/childrens-hospital](https://www.urmc.rochester.edu/childrens-hospital)
+- **Domain:** `urmc.rochester.edu`
+- **Target Table:** `resource_providers`
+- **Expected Fields:** `name, address, phone`
+- **Crawl Method:** `static_fetch`
+- **Robots.txt Status:** `allowed`
+- **Terms Risk:** `low`
+- **Priority:** 1
+- **Notes:** Concrete first-party pediatric hospital target for western New York provider buildout.
+- **Last Checked:** 2026-06-17
+
+### Category: M. Hospitals / university clinics (Hospitals)
+- **Source Name:** Upstate Golisano Children's Hospital
+- **Source URL:** [https://www.upstate.edu/gch](https://www.upstate.edu/gch)
+- **Domain:** `upstate.edu`
+- **Target Table:** `resource_providers`
+- **Expected Fields:** `name, address, phone`
+- **Crawl Method:** `static_fetch`
+- **Robots.txt Status:** `allowed`
+- **Terms Risk:** `low`
+- **Priority:** 1
+- **Notes:** Concrete first-party pediatric hospital target for central New York provider buildout.
+- **Last Checked:** 2026-06-17
+
 ### Category: L. Transition / adult services (Vocational Rehabilitation)
 - **Source Name:** NYS ACCES-VR
 - **Source URL:** [http://www.acces.nysed.gov/vr/](http://www.acces.nysed.gov/vr/)
@@ -823,4 +865,3 @@ This document outlines the authoritative crawler target domains, specific agenci
 - **Priority:** 3
 - **Notes:** Evidence-based clinical directory roster target for NEWYORK.
 - **Last Checked:** 2026-06-13
-

@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-06-18T21:48:07.823Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "virginia",
+  "sourceWorkfilePath": "data/provider-authoring-state-workfiles/provider-authoring-state-workfile-virginia.json",
+  "summary": {
+    "neededConcreteTargets": 0,
+    "candidateSlotCount": 1,
+    "readyCandidateCount": 1,
+    "unresolvedCandidateCount": 0,
+    "completionPercent": 100
+  },
+  "nextWork": []
+}

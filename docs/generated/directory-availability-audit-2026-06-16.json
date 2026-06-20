@@ -1,0 +1,54 @@
+{
+  "generatedAt": "2026-06-16",
+  "dbPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/frontend/ca_disability_navigator.db",
+  "tables": [
+    {
+      "table": "resource_providers",
+      "label": "Resource Providers",
+      "total": 39,
+      "trustedChecked": 33,
+      "explicitUnknown": 33,
+      "concreteAvailability": 0,
+      "acceptingNew": 0,
+      "waitlist": 0,
+      "capacityNotes": 0,
+      "fundingStatus": 0,
+      "missingAvailabilityDespiteChecked": 0,
+      "explicitUnknownPct": 84.6,
+      "concreteAvailabilityPct": 0,
+      "trustedCheckedPct": 84.6
+    },
+    {
+      "table": "nonprofit_organizations",
+      "label": "Nonprofit Organizations",
+      "total": 29499,
+      "trustedChecked": 29492,
+      "explicitUnknown": 29492,
+      "concreteAvailability": 0,
+      "acceptingNew": 0,
+      "waitlist": 0,
+      "capacityNotes": 0,
+      "fundingStatus": 0,
+      "missingAvailabilityDespiteChecked": 0,
+      "explicitUnknownPct": 100,
+      "concreteAvailabilityPct": 0,
+      "trustedCheckedPct": 100
+    },
+    {
+      "table": "iep_advocates",
+      "label": "IEP Advocates",
+      "total": 3573,
+      "trustedChecked": 2993,
+      "explicitUnknown": 2993,
+      "concreteAvailability": 0,
+      "acceptingNew": 0,
+      "waitlist": 0,
+      "capacityNotes": 0,
+      "fundingStatus": 0,
+      "missingAvailabilityDespiteChecked": 0,
+      "explicitUnknownPct": 83.8,
+      "concreteAvailabilityPct": 0,
+      "trustedCheckedPct": 83.8
+    }
+  ]
+}

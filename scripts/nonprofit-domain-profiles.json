@@ -1,0 +1,30 @@
+{
+  "thegao.org": {
+    "orgTerms": [
+      "Georgia Advocacy Office",
+      "(GAO)"
+    ],
+    "defaultMode": "dry-run"
+  },
+  "thearc.org": {
+    "orgTerms": [
+      "The Arc"
+    ],
+    "defaultMode": "dry-run",
+    "notes": "Likely aggregator/network. Review report before any allow flag."
+  },
+  "parentcenterhub.org": {
+    "orgTerms": [
+      "Parent Center",
+      "Parent Center Hub"
+    ],
+    "defaultMode": "dry-run",
+    "notes": "Likely aggregator/network. Do not live-promote without special review."
+  },
+  "txp2p.org": {
+    "orgTerms": [
+      "Parent to Parent"
+    ],
+    "defaultMode": "dry-run"
+  }
+}

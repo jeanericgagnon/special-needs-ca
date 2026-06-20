@@ -1,0 +1,56 @@
+{
+  "generatedAt": "2026-06-18T20:45:17.854Z",
+  "generatedDate": "2026-06-18",
+  "packetKey": "author-targets-first-maryland",
+  "selection": {
+    "readinessLane": "author-targets-first",
+    "stateId": "maryland",
+    "limit": 5,
+    "selectionMode": "explicit_state_filter"
+  },
+  "sourceArtifacts": {
+    "providerFollowupRepairQueuePath": "docs/generated/provider-followup-repair-queue-2026-06-18.json",
+    "providerRepairExecutionBacklogPath": "docs/generated/provider-repair-execution-backlog-2026-06-18.json",
+    "providerSourcePackPlanPath": "docs/generated/provider-source-pack-plan-2026-06-18.json",
+    "sourceTargetsPath": ""
+  },
+  "summary": {
+    "selectedRows": 1,
+    "scopedLaneRows": 1,
+    "selectedStateIds": [
+      "maryland"
+    ],
+    "selectedHostnames": [
+      "www.hopkinsmedicine.org"
+    ],
+    "byActionClass": {
+      "author_alternate_first_party_target": 1
+    },
+    "byReason": {
+      "access_blocked_403": 1
+    }
+  },
+  "stateContext": null,
+  "selectedRows": [
+    {
+      "stateId": "maryland",
+      "readinessLane": "author-targets-first",
+      "bucket": "blocked",
+      "followupReason": "access_blocked_403",
+      "actionClass": "author_alternate_first_party_target",
+      "recommendedAction": "Do not keep retrying the blocked page in lightweight mode; author an alternate first-party provider page or a safer clinic/location page on the same org.",
+      "sourceUrl": "https://www.hopkinsmedicine.org/johns-hopkins-childrens-center",
+      "hostname": "www.hopkinsmedicine.org",
+      "repeatCount": 5,
+      "sampleStatusCodes": "403",
+      "runCount": 5,
+      "topSavedPath": "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/02784-maryland-providers-care-johns-hopkins-children-s-center.html"
+    }
+  ],
+  "recommendedCommands": [
+    "npm run audit:provider-repair-batch-packet -- --lane=author-targets-first --state=maryland --limit=5",
+    "npm run audit:provider-followup-repair-queue",
+    "npm run audit:provider-repair-execution-backlog",
+    "npm run audit:provider-source-pack"
+  ]
+}

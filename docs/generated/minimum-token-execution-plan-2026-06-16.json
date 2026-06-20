@@ -1,0 +1,217 @@
+{
+  "generatedAt": "2026-06-16",
+  "sources": {
+    "fullInformationGap": "docs/generated/full-information-gap-audit-2026-06-16.json",
+    "informationCompleteness": "docs/generated/information-completeness-audit-2026-06-16.json",
+    "informationConfidence": "docs/generated/information-confidence-audit-2026-06-16.json",
+    "providerBuildout": "docs/generated/provider-buildout-priority-plan-2026-06-16.json",
+    "goldProgram": "docs/generated/gold-program-2026-06-16.json"
+  },
+  "summary": {
+    "objective": "Reach all-info expectations with minimum token spend while staying truthful.",
+    "biggestGap": "public-safe provider coverage",
+    "providerMissingStates": 46,
+    "strictGoldBlockedStates": 1,
+    "substantialLayers": 4,
+    "partialLayers": 4,
+    "modeledOnlyLayers": 2,
+    "demoOnlyLayers": 1
+  },
+  "principles": [
+    "Use one repeatable promotion pattern per blocker family before touching the next family.",
+    "Prefer work that unlocks multiple states with one extraction or promotion rule.",
+    "Do not spend tokens deepening layers that are already broad while provider coverage is still near-empty nationally.",
+    "Fill small controlled reference tables immediately when they are schema-modeled but empty.",
+    "Defer architecture-heavy backfills until they improve truthful public output, not just internal elegance."
+  ],
+  "executionOrder": [
+    {
+      "rank": 1,
+      "id": "provider-wave-a",
+      "label": "Provider Wave A expansion",
+      "tokenEfficiency": "high",
+      "automationFit": "high"
+    },
+    {
+      "rank": 2,
+      "id": "california-advocate-remediation",
+      "label": "California advocate truth remediation",
+      "tokenEfficiency": "high",
+      "automationFit": "medium"
+    },
+    {
+      "rank": 3,
+      "id": "provider-wave-b",
+      "label": "Provider Wave B expansion",
+      "tokenEfficiency": "high",
+      "automationFit": "high"
+    },
+    {
+      "rank": 4,
+      "id": "reference-table-seeding",
+      "label": "Reference table seeding for age bands and insurance types",
+      "tokenEfficiency": "high",
+      "automationFit": "high"
+    },
+    {
+      "rank": 5,
+      "id": "knowledge-depth-expansion",
+      "label": "Knowledge article depth expansion",
+      "tokenEfficiency": "medium",
+      "automationFit": "medium"
+    },
+    {
+      "rank": 6,
+      "id": "normalization-backfill",
+      "label": "Normalization backfill",
+      "tokenEfficiency": "low",
+      "automationFit": "medium"
+    }
+  ],
+  "workstreams": [
+    {
+      "id": "provider-wave-a",
+      "label": "Provider Wave A expansion",
+      "whyNow": "This is the single biggest visible information gap and the best leverage path because three states are otherwise already green in the stricter info audits.",
+      "tokenEfficiency": "high",
+      "automationFit": "high",
+      "states": [
+        "Ohio",
+        "Georgia",
+        "North Carolina"
+      ],
+      "blockersCleared": [
+        "no_public_safe_provider_layer_detected"
+      ],
+      "evidence": [
+        "46 states still lack any public-safe provider layer.",
+        "3 Wave A states already sit at 88.9 info completeness and 91.7 confidence with provider as the only blocker family.",
+        "36 checked-in provider rows exist across only 4/50 states."
+      ],
+      "cheapestWhy": "It reuses the existing state-upgrade pipeline and source-target structure without reopening the much larger program, office, or nonprofit layers.",
+      "concreteSteps": [
+        "Seed a minimal truthful provider set in Ohio, Georgia, and North Carolina from existing official institutional targets already present in the repo.",
+        "Promote only hospital or university developmental clinic rows that already meet source-url, contact-signal, and trust requirements.",
+        "Re-run provider truth, info completeness, and info confidence audits after each state."
+      ]
+    },
+    {
+      "id": "california-advocate-remediation",
+      "label": "California advocate truth remediation",
+      "whyNow": "California is the only strict-gold blocker and still masks the true local-directory story if left unresolved.",
+      "tokenEfficiency": "high",
+      "automationFit": "medium",
+      "states": [
+        "California"
+      ],
+      "blockersCleared": [
+        "advocate_truth_gap",
+        "no_public_safe_advocate_layer_detected"
+      ],
+      "evidence": [
+        "1 state remains blocked from strict gold.",
+        "58 California counties lose all advocate coverage after truth gating.",
+        "580 synthetic-pattern advocate rows were quarantined."
+      ],
+      "cheapestWhy": "It focuses on the only strict-gold blocker instead of broad national enrichment.",
+      "concreteSteps": [
+        "Replace quarantined California advocate coverage with real source-backed advocates before adding any synthetic-looking fallback.",
+        "Keep provider expansion separate so California does not appear healthier than it is while advocate truth remains broken."
+      ]
+    },
+    {
+      "id": "provider-wave-b",
+      "label": "Provider Wave B expansion",
+      "whyNow": "Once Wave A proves the seed pattern, the next five states give the fastest additional national lift.",
+      "tokenEfficiency": "high",
+      "automationFit": "high",
+      "states": [
+        "Michigan",
+        "New Jersey",
+        "Virginia",
+        "Washington",
+        "Massachusetts"
+      ],
+      "blockersCleared": [
+        "no_public_safe_provider_layer_detected"
+      ],
+      "evidence": [
+        "5 states are already grouped as the next zero-row provider wave in the checked-in provider plan.",
+        "45 states still have zero provider rows."
+      ],
+      "cheapestWhy": "It extends the same proven provider ingestion pattern rather than inventing a second enrichment strategy.",
+      "concreteSteps": [
+        "Reuse the Wave A promotion pattern for Michigan, New Jersey, Virginia, Washington, and Massachusetts.",
+        "Prefer one to three official institutional clinics per state before broader provider expansion."
+      ]
+    },
+    {
+      "id": "reference-table-seeding",
+      "label": "Reference table seeding for age bands and insurance types",
+      "whyNow": "These are modeled but empty, and filling them is low-risk, cheap, and closes obvious schema-to-data gaps.",
+      "tokenEfficiency": "high",
+      "automationFit": "high",
+      "states": [],
+      "blockersCleared": [
+        "empty_reference_tables"
+      ],
+      "evidence": [
+        "0 age bands in checked-in DB.",
+        "0 insurance types in checked-in DB."
+      ],
+      "cheapestWhy": "This is tiny controlled data with no public-truth ambiguity.",
+      "concreteSteps": [
+        "Seed canonical age bands and insurance types from the schema comments and existing product vocabulary.",
+        "Add an audit check so these reference tables cannot regress back to empty."
+      ]
+    },
+    {
+      "id": "knowledge-depth-expansion",
+      "label": "Knowledge article depth expansion",
+      "whyNow": "Knowledge content is one of the clearest “we do not yet have all info” gaps after providers.",
+      "tokenEfficiency": "medium",
+      "automationFit": "medium",
+      "states": [],
+      "blockersCleared": [
+        "thin_knowledge_content"
+      ],
+      "evidence": [
+        "15 knowledge articles exist today.",
+        "partial status in the strict full-information audit."
+      ],
+      "cheapestWhy": "Content can be expanded around existing diagnosis, waiver, school, and transition journeys without changing the core data model.",
+      "concreteSteps": [
+        "Add article plans by journey cluster: diagnosis basics, school rights, waiver entry, respite, transition, appeals.",
+        "Only publish article pages that are backed by existing structured program and source data."
+      ]
+    },
+    {
+      "id": "normalization-backfill",
+      "label": "Normalization backfill",
+      "whyNow": "This matters for long-term architecture, but it is not the cheapest near-term move for public information depth.",
+      "tokenEfficiency": "low",
+      "automationFit": "medium",
+      "states": [],
+      "blockersCleared": [
+        "modeled_only_normalization"
+      ],
+      "evidence": [
+        "0 organizations",
+        "0 organization-program links",
+        "0 service locations",
+        "0 office locations",
+        "0 virtual service areas"
+      ],
+      "cheapestWhy": "This is deliberately deferred because it has architectural value but limited immediate public-surface payoff compared with provider depth.",
+      "concreteSteps": [
+        "Backfill normalization tables only from rows that already have trustworthy organization, program, and location identity.",
+        "Do not force a migration of the public renderer before the normalized tables hold real data."
+      ]
+    }
+  ],
+  "stopDoing": [
+    "Do not treat truth-safe or structurally complete as proof that all information depth already exists.",
+    "Do not spend human review on low-value ambiguous listings before the provider layer exists in the target state.",
+    "Do not backfill normalization tables with guessed org or location joins."
+  ]
+}

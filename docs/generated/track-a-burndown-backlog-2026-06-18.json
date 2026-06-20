@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-06-18T22:29:36.093Z",
+  "generatedDate": "2026-06-18",
+  "sourceArtifacts": {
+    "blockerRegistryPath": "docs/generated/track-a-blocker-registry-2026-06-18.json",
+    "providerQueuePath": "docs/generated/provider-followup-repair-queue-2026-06-18.json",
+    "providerAuthoringBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-18.json",
+    "knowledgeQueuePath": "docs/generated/knowledge-content-status-queue-2026-06-18.json",
+    "advocateQueuePath": "docs/generated/advocate-depth-queue-2026-06-18.json",
+    "normalizationQueuePath": "docs/generated/normalization-gap-queue-2026-06-18.json",
+    "foundationQueuePath": "docs/generated/directory-foundation-enrichment-queue-2026-06-18.json"
+  },
+  "summary": {
+    "blockerCount": 0,
+    "criticalCount": 0,
+    "firstPriorityBlocker": null
+  },
+  "backlog": []
+}

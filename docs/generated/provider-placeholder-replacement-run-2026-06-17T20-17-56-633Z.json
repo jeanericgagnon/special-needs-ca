@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-06-17T20:17:56.634Z",
+  "mode": "dry-run",
+  "stateFilter": null,
+  "inputPath": "data/provider-placeholder-replacement-decisions.json",
+  "summary": {
+    "inputRows": 0,
+    "appliedStates": 0,
+    "appliedReplacements": 0,
+    "filesChanged": 0,
+    "skippedByReason": {}
+  },
+  "decisions": []
+}

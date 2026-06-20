@@ -1,0 +1,151 @@
+{
+  "generatedAt": "2026-06-18T05:07:38.532Z",
+  "mode": "apply",
+  "stateFilter": null,
+  "inputPath": "data/provider-pull-now-decisions.json",
+  "summary": {
+    "inputRows": 22,
+    "autofilledRows": 0,
+    "skippedRows": 22,
+    "skippedByReason": {
+      "no_same_domain_candidate": 6,
+      "retry_rows_not_autofilled": 4,
+      "candidate_url_not_meaningfully_different": 11,
+      "ambiguous_same_domain_candidates": 1
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "tennessee",
+      "sourceUrl": "https://www.dollychildrens.org/",
+      "status": "skipped",
+      "reason": "no_same_domain_candidate"
+    },
+    {
+      "stateId": "indiana",
+      "sourceUrl": "https://www.rileychildrens.org/",
+      "status": "skipped",
+      "reason": "retry_rows_not_autofilled"
+    },
+    {
+      "stateId": "michigan",
+      "sourceUrl": "https://www.mottchildren.org/",
+      "status": "skipped",
+      "reason": "candidate_url_not_meaningfully_different"
+    },
+    {
+      "stateId": "new-york",
+      "sourceUrl": "https://www.montefiore.org/rose-f-kennedy-center",
+      "status": "skipped",
+      "reason": "ambiguous_same_domain_candidates"
+    },
+    {
+      "stateId": "indiana",
+      "sourceUrl": "https://www.rileychildrens.org/contact-and-locations/riley-hospital-for-children-at-iu-health",
+      "status": "skipped",
+      "reason": "retry_rows_not_autofilled"
+    },
+    {
+      "stateId": "new-york",
+      "sourceUrl": "https://www.upstate.edu/gch",
+      "status": "skipped",
+      "reason": "candidate_url_not_meaningfully_different"
+    },
+    {
+      "stateId": "indiana",
+      "sourceUrl": "https://iuhealth.org/",
+      "status": "skipped",
+      "reason": "retry_rows_not_autofilled"
+    },
+    {
+      "stateId": "indiana",
+      "sourceUrl": "https://iuhealth.org/",
+      "status": "skipped",
+      "reason": "candidate_url_not_meaningfully_different"
+    },
+    {
+      "stateId": "michigan",
+      "sourceUrl": "https://www.childrensdmc.org/",
+      "status": "skipped",
+      "reason": "candidate_url_not_meaningfully_different"
+    },
+    {
+      "stateId": "michigan",
+      "sourceUrl": "https://www.spectrumhealth.org/locations/spectrum-health-hospitals-helen-devos-childrens-hospital",
+      "status": "skipped",
+      "reason": "candidate_url_not_meaningfully_different"
+    },
+    {
+      "stateId": "michigan",
+      "sourceUrl": "https://www.uofmhealth.org/our-care/specialties-services/autism-spectrum-disorders-appointments",
+      "status": "skipped",
+      "reason": "no_same_domain_candidate"
+    },
+    {
+      "stateId": "new-york",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-1",
+      "status": "skipped",
+      "reason": "no_same_domain_candidate"
+    },
+    {
+      "stateId": "tennessee",
+      "sourceUrl": "https://www.dollychildrens.org/about-us/our-locations/dolly-parton-childrens-hospital-main-campus",
+      "status": "skipped",
+      "reason": "no_same_domain_candidate"
+    },
+    {
+      "stateId": "tennessee",
+      "sourceUrl": "https://www.dollychildrens.org/medical-services/specialty-clinics",
+      "status": "skipped",
+      "reason": "no_same_domain_candidate"
+    },
+    {
+      "stateId": "georgia",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-1",
+      "status": "skipped",
+      "reason": "retry_rows_not_autofilled"
+    },
+    {
+      "stateId": "louisiana",
+      "sourceUrl": "https://www.lsuhs.edu/",
+      "status": "skipped",
+      "reason": "candidate_url_not_meaningfully_different"
+    },
+    {
+      "stateId": "louisiana",
+      "sourceUrl": "https://www.manningchildrens.org/",
+      "status": "skipped",
+      "reason": "candidate_url_not_meaningfully_different"
+    },
+    {
+      "stateId": "louisiana",
+      "sourceUrl": "https://www.ochsner.org/",
+      "status": "skipped",
+      "reason": "candidate_url_not_meaningfully_different"
+    },
+    {
+      "stateId": "tennessee",
+      "sourceUrl": "https://www.childrensaterlanger.org/",
+      "status": "skipped",
+      "reason": "candidate_url_not_meaningfully_different"
+    },
+    {
+      "stateId": "tennessee",
+      "sourceUrl": "https://www.childrenshospitalvanderbilt.org/",
+      "status": "skipped",
+      "reason": "candidate_url_not_meaningfully_different"
+    },
+    {
+      "stateId": "tennessee",
+      "sourceUrl": "https://www.lebonheur.org/",
+      "status": "skipped",
+      "reason": "candidate_url_not_meaningfully_different"
+    },
+    {
+      "stateId": "georgia",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-1",
+      "status": "skipped",
+      "reason": "no_same_domain_candidate"
+    }
+  ]
+}

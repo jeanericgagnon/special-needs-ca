@@ -1,0 +1,166 @@
+{
+  "generatedAt": "2026-06-18T19:18:49.963Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "oklahoma",
+  "stateName": "Oklahoma",
+  "sourcePacketPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-oklahoma-2026-06-18.json",
+  "sourceTargetsPath": "data/source_targets/oklahoma.json",
+  "instructions": {
+    "summary": "Fill only the missing first-party provider targets needed for this state. Do not broaden beyond provider_directory authoring.",
+    "completionRule": "A candidate row is ready only when sourceName, sourceUrl, domain, and reviewedBy are filled."
+  },
+  "summary": {
+    "neededConcreteTargets": 3,
+    "currentConcreteProviderTargetCount": 0,
+    "existingProviderTargetCount": 1,
+    "candidateSlotCount": 3,
+    "readyCandidateCount": 0,
+    "unresolvedCandidateCount": 3
+  },
+  "existingProviderTargets": [
+    {
+      "sourceName": "Oklahoma Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for Oklahoma."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Oklahoma County Metadata",
+      "sourceUrl": "https://www.oklahoma.gov",
+      "domain": "oklahoma.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Oklahoma Medicaid Portal",
+      "sourceUrl": "https://dhhs.oklahoma.gov",
+      "domain": "dhhs.oklahoma.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Oklahoma Developmental Disabilities Services",
+      "sourceUrl": "https://oklahoma.gov/okdhs/services/dds",
+      "domain": "oklahoma.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Oklahoma HCBS Waivers",
+      "sourceUrl": "https://oklahoma.gov/okdhs/services/dds/hcbs",
+      "domain": "oklahoma.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Oklahoma Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.oklahoma.gov/earlyintervention",
+      "domain": "dhhs.oklahoma.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Oklahoma Department of Education Special Ed",
+      "sourceUrl": "https://education.oklahoma.gov",
+      "domain": "education.oklahoma.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Oklahoma Regional Special Education Support",
+      "sourceUrl": "https://education.oklahoma.gov/regional",
+      "domain": "education.oklahoma.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Oklahoma Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Oklahoma",
+      "sourceUrl": "https://www.thearcoklahoma.org",
+      "domain": "thearcoklahoma.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Oklahoma Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.oklahoma.gov/forms",
+      "domain": "dhhs.oklahoma.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Oklahoma Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.oklahoma.gov/rehab",
+      "domain": "dhhs.oklahoma.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Oklahoma Secretary of State Business Registry",
+      "sourceUrl": "https://www.oklahoma.gov/business",
+      "domain": "oklahoma.gov"
+    }
+  ],
+  "candidateProviderTargets": [
+    {
+      "slotNumber": 1,
+      "stateId": "oklahoma",
+      "stateCode": "OK",
+      "sourceName": "Oklahoma Children's OU Health",
+      "sourceUrl": "https://www.ouhealth.com/oklahoma-childrens/",
+      "domain": "ouhealth.com",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Children's hospital",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official Oklahoma Children's OU Health source for statewide pediatric hospital and specialty care.",
+      "reviewedBy": "codex"
+    },
+    {
+      "slotNumber": 2,
+      "stateId": "oklahoma",
+      "stateCode": "OK",
+      "sourceName": "INTEGRIS Health",
+      "sourceUrl": "https://integrishealth.org/",
+      "domain": "integrishealth.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Regional hospital system",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official INTEGRIS Health source for Oklahoma hospital-based pediatric and specialty referral coverage.",
+      "reviewedBy": "codex"
+    },
+    {
+      "slotNumber": 3,
+      "stateId": "oklahoma",
+      "stateCode": "OK",
+      "sourceName": "Saint Francis Health System",
+      "sourceUrl": "https://www.saintfrancis.com/",
+      "domain": "saintfrancis.com",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Regional hospital system",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official Saint Francis Health System source for Tulsa-area pediatric hospital and specialty referral coverage.",
+      "reviewedBy": "codex"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "generatedAt": "2026-06-18T02:10:22.270Z",
+  "mode": "apply",
+  "stateFilter": "vermont",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 8,
+    "appliedStates": 0,
+    "filesChanged": 0,
+    "skippedByReason": {
+      "skipped_followup": 4,
+      "missing_source_row": 4
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "vermont",
+      "sourceName": "Vermont Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "vermont",
+      "sourceName": "Vermont HCBS Waivers Page",
+      "status": "skipped_missing_source_row",
+      "targetUrl": "https://ddsd.vermont.gov/hcbs"
+    },
+    {
+      "stateId": "vermont",
+      "sourceName": "Vermont Developmental Services Directory",
+      "status": "skipped_missing_source_row",
+      "targetUrl": "https://ddsd.vermont.gov/"
+    },
+    {
+      "stateId": "vermont",
+      "sourceName": "Vermont Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "vermont",
+      "sourceName": "Vermont Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "vermont",
+      "sourceName": "Vermont HCBS Waivers Page",
+      "status": "skipped_missing_source_row",
+      "targetUrl": "https://ddsd.vermont.gov/hcbs"
+    },
+    {
+      "stateId": "vermont",
+      "sourceName": "Vermont Developmental Services Directory",
+      "status": "skipped_missing_source_row",
+      "targetUrl": "https://ddsd.vermont.gov/"
+    },
+    {
+      "stateId": "vermont",
+      "sourceName": "Vermont Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

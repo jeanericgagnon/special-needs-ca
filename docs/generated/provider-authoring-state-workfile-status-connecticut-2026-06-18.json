@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-06-18T18:49:45.466Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "connecticut",
+  "sourceWorkfilePath": "data/provider-authoring-state-workfiles/provider-authoring-state-workfile-connecticut.json",
+  "summary": {
+    "neededConcreteTargets": 3,
+    "candidateSlotCount": 3,
+    "readyCandidateCount": 3,
+    "unresolvedCandidateCount": 0,
+    "completionPercent": 100
+  },
+  "nextWork": []
+}

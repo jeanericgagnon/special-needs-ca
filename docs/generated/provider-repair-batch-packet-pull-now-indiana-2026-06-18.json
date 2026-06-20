@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-06-18T06:33:04.495Z",
+  "generatedDate": "2026-06-18",
+  "packetKey": "pull-now-indiana",
+  "selection": {
+    "readinessLane": "pull-now",
+    "stateId": "indiana",
+    "limit": 5,
+    "selectionMode": "explicit_state_filter"
+  },
+  "sourceArtifacts": {
+    "providerFollowupRepairQueuePath": "docs/generated/provider-followup-repair-queue-2026-06-18.json",
+    "providerRepairExecutionBacklogPath": "docs/generated/provider-repair-execution-backlog-2026-06-18.json",
+    "providerSourcePackPlanPath": "docs/generated/provider-source-pack-plan-2026-06-18.json",
+    "sourceTargetsPath": "data/source_targets/indiana.json"
+  },
+  "summary": {
+    "selectedRows": 0,
+    "scopedLaneRows": 0,
+    "selectedStateIds": [],
+    "selectedHostnames": [],
+    "byActionClass": {},
+    "byReason": {}
+  },
+  "stateContext": {
+    "stateId": "indiana",
+    "readinessLane": "pull-now",
+    "providerTargetCount": 3,
+    "concreteProviderTargetCount": 3,
+    "placeholderProviderTargetCount": 0,
+    "nextMove": "Start first-party pulls from the concrete clinic and hospital targets already in source_targets."
+  },
+  "selectedRows": [],
+  "recommendedCommands": [
+    "npm run audit:provider-repair-batch-packet -- --lane=pull-now --state=indiana --limit=5",
+    "npm run audit:provider-followup-repair-queue",
+    "npm run audit:provider-repair-execution-backlog",
+    "npm run audit:provider-source-pack"
+  ]
+}

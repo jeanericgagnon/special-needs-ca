@@ -1,0 +1,22 @@
+{
+  "generatedAt": "2026-06-18T19:41:34.365Z",
+  "generatedDate": "2026-06-18",
+  "sourceArtifacts": {
+    "decisionFilePath": "data/provider-pull-now-decisions.json",
+    "decisionTemplatePath": "docs/generated/provider-pull-now-decision-template-2026-06-18.json",
+    "manualFillQueuePath": "docs/generated/provider-pull-now-manual-fill-queue-2026-06-18.json"
+  },
+  "summary": {
+    "totalRows": 0,
+    "filledRows": 0,
+    "unresolvedRows": 0,
+    "staleRows": 0,
+    "completionPercent": 0,
+    "byActionClass": {},
+    "byState": {},
+    "byDecisionMode": {},
+    "templateRows": 0,
+    "manualFillQueueRows": 0
+  },
+  "nextWork": []
+}

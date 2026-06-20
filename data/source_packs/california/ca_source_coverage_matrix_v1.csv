@@ -1,0 +1,18 @@
+domain,core_targets,directory_targets,coverage_status,status_breakdown,remaining_ledger_items,notes
+IHSS,16,0,covered_with_follow_up,"{""verified_target"":15,""official_link_fetch_pending"":1}",ihss-regulations,"Core program, forms, protective supervision, reassessment, hearing, and 58 CDSS-listed county targets."
+Regional Center / Lanterman / IPP,5,2,covered_with_follow_up,"{""verified_target"":5,""official_directory_link"":2}",regional-center-local-policies,"State eligibility, IPP, appeals, DDS directory, and 21 Regional Center roots."
+Self-Determination Program,8,0,source_targets_ready,"{""verified_target"":8}",,"Overview, orientation, directives, FAQ, FMS, facilitators, tools, and budget directive."
+Early Start and age-three transition,6,1,source_targets_ready,"{""verified_target"":6,""official_directory_link"":1}",,"Eligibility/referral, parent rights, complaints, transition, packet, and FRC/intake directory."
+Medi-Cal eligibility and application,14,1,covered_with_follow_up,"{""verified_target"":11,""official_link_fetch_pending"":3,""official_directory_link"":1}",medi-cal-renewal,"Application, eligibility, county offices, child scope, and plan directory."
+Medi-Cal complaints and appeals,7,0,source_targets_ready,"{""verified_target"":4,""official_link_fetch_pending"":3}",,"Fair hearing, managed-care and FFS complaint/appeal targets."
+HCBA / HCBS / WPCS,8,0,source_targets_ready,"{""verified_target"":7,""official_link_fetch_pending"":1}",,"Waiver overview, application, grievances, hearings, and personal care."
+California Children's Services,6,1,source_targets_ready,"{""verified_target"":5,""official_link_fetch_pending"":1,""official_directory_link"":1}",,"Program, medical eligibility, county offices, application, and appeals."
+Hearing Aid Coverage for Children,5,0,covered_with_follow_up,"{""verified_target"":4,""official_link_fetch_pending"":1}",haccp-appeals,"Program, eligibility, apply/renew, portal, and application."
+SSI for children,6,0,covered_with_follow_up,"{""verified_target"":6}",ssi-benefit-continuation,"Child eligibility, starter kit, age-18 redetermination, appeals, and forms."
+Special education rights and disputes,9,0,covered_with_blocked_targets,"{""verified_target"":8,""blocked_http_403"":1}",special-education-due-process,"Procedural rights, IEP, complaints, due process endpoint, accessibility, and Section 504."
+Local education and parent support,7,1,covered_with_blocked_targets,"{""verified_target"":5,""blocked_fetch_challenge"":2,""official_directory_link"":1}",school-district-data,"SELPA, school/district, PTI/FEC, and family-involvement sources."
+Vocational rehabilitation / Pre-ETS,8,0,source_targets_ready,"{""verified_target"":8}",,"Eligibility, application, student services, offices, and disputes."
+Independent living / housing-adjacent support,3,1,source_targets_ready,"{""verified_target"":2,""official_link_fetch_pending"":1,""official_directory_link"":1}",,Independent Living Centers and DDS Supported Living.
+Adult transition and employment,3,0,source_targets_ready,"{""verified_target"":3}",,Youth transition and employment-service sources.
+CalABLE and future planning,8,0,source_targets_ready,"{""verified_target"":8}",,"ABLE, supported decision-making, conservatorship alternatives, and support directories."
+Legal help,3,0,source_targets_ready,"{""verified_target"":3}",,"California Courts, State Bar, and Disability Rights California routing."

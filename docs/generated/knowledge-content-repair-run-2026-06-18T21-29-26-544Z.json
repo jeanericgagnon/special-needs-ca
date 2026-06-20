@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-06-18T21:29:26.546Z",
+  "mode": "apply",
+  "inputPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/knowledge-content-repair-decision-template-2026-06-18.json",
+  "summary": {
+    "inputRows": 1,
+    "resolvedRows": 0,
+    "deferredRows": 0,
+    "filesChanged": 2,
+    "skippedByReason": {
+      "row_not_in_live_repair_queue": 1
+    }
+  },
+  "decisions": [
+    {
+      "id": "knowledge-cdc-act-early-milestones-in-action",
+      "status": "skipped_row_not_in_live_repair_queue",
+      "resolvedSourceUrl": ""
+    }
+  ],
+  "outputs": {
+    "ledgerPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-state/knowledge-content-repair-ledger.json",
+    "resolutionPackPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source_packs/knowledge_content_repair_resolutions.json"
+  }
+}

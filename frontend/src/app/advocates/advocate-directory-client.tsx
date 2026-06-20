@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useDeferredValue, useEffect, useRef, useState } from 'react';
 import { 
   Phone, Mail, Globe, MapPin, Award, Search, 
   SlidersHorizontal, Star, ChevronDown, ChevronUp, Send 
@@ -9,6 +9,8 @@ import CopyButton from '@/components/copy-button';
 import ContributionModal from '@/components/contribution-modal';
 import { TrustBadge } from '@/app/counties/components/CorrectionFlow';
 import SourceFreshnessDisclosure from '@/app/components/SourceFreshnessDisclosure';
+import DirectoryReviews from '@/app/dashboard/components/DirectoryReviews';
+import { trackDirectoryAnalyticsEvent } from '@/lib/directoryAnalytics';
 
 interface Advocate {
   id: string;
@@ -31,39 +33,10 @@ interface Advocate {
 
 interface AdvocateDirectoryClientProps {
   initialAdvocates: Advocate[];
+  selectedCounty?: string;
 }
 
-interface Review {
-  author: string;
-  rating: number;
-  text: string;
-  date: string;
-}
-
-const ADVOCATE_REVIEWS: Record<string, Review[]> = {
-  'adv-sarah': [
-    { author: 'Emily R. (Caregiver)', rating: 5, text: 'Sarah was incredible. She helped us secure a 1:1 behavioral aide for my autistic son in LAUSD in just one meeting. Highly recommended!', date: '2026-03-12' },
-    { author: 'Marcus V. (Parent)', rating: 5, text: 'Very knowledgeable about IEP timelines and safety goals. She helped rewrite our goals so they are actually measurable.', date: '2026-05-01' }
-  ],
-  'adv-marisol': [
-    { author: 'Sofia H. (Mother)', rating: 5, text: 'Marisol habla español y nos ayudó muchísimo con el IEP de mi hija. Consiguió terapia de lenguaje adicional.', date: '2026-04-18' },
-    { author: 'David K. (Caregiver)', rating: 4, text: 'Excellent coach. Helped me understand my rights under the Lanterman Act and prepare for the IEP transition.', date: '2026-02-28' }
-  ],
-  'adv-david': [
-    { author: 'Jian W. (Parent)', rating: 5, text: 'David’s legal knowledge was key. When the school district tried to cut OT hours, he cited the administrative codes and got it reversed.', date: '2026-05-20' },
-    { author: 'Brenda L. (Caregiver)', rating: 5, text: 'Outstanding advocate for dyslexia accommodations. Secured assistive technology and 1.5x writing time.', date: '2026-01-15' }
-  ],
-  'adv-elena': [
-    { author: 'Katarina S. (Caregiver)', rating: 5, text: 'Elena knows both Regional Centers and IEPs. She helped us coordinate Respite care and school speech services together.', date: '2026-04-05' },
-    { author: 'James D. (Parent)', rating: 5, text: 'Helped us navigate Sacramento City Unified. Very responsive and affordable coach.', date: '2026-05-14' }
-  ],
-  'adv-katelyn': [
-    { author: 'Ryan T. (Parent)', rating: 5, text: 'As a BCBA, Katelyn was perfect for dealing with our child’s school behavior plan. Safe, structured, and focused.', date: '2026-03-24' },
-    { author: 'Elena G. (Caregiver)', rating: 5, text: 'Helped us get behavior therapist hours at school. Very detailed and supportive throughout the process.', date: '2026-05-09' }
-  ]
-};
-
-export default function AdvocateDirectoryClient({ initialAdvocates }: AdvocateDirectoryClientProps) {
+export default function AdvocateDirectoryClient({ initialAdvocates, selectedCounty = '' }: AdvocateDirectoryClientProps) {
   const [searchQuery, setSearchQuery] = useState('');
   const [sortBy, setSortBy] = useState<'experience' | 'price_asc' | 'price_desc' | 'default'>('default');
   
@@ -73,9 +46,10 @@ export default function AdvocateDirectoryClient({ initialAdvocates }: AdvocateDi
   const [selectedAffiliation, setSelectedAffiliation] = useState('');
 
   // Accordion toggle states
-  const [expandedReviewsId, setExpandedReviewsId] = useState<string | null>(null);
   const [expandedIntakeId, setExpandedIntakeId] = useState<string | null>(null);
   const [expandedDescIds, setExpandedDescIds] = useState<Record<string, boolean>>({});
+  const deferredSearchQuery = useDeferredValue(searchQuery);
+  const hasMountedRef = useRef(false);
 
   const toggleDescription = (id: string) => {
     setExpandedDescIds(prev => ({ ...prev, [id]: !prev[id] }));
@@ -176,6 +150,58 @@ export default function AdvocateDirectoryClient({ initialAdvocates }: AdvocateDi
     return 0;
   });
 
+  useEffect(() => {
+    const hasActiveFilters =
+      deferredSearchQuery.trim().length > 0 ||
+      selectedSpecialties.length > 0 ||
+      vendorizedOnly ||
+      Boolean(selectedAffiliation) ||
+      Boolean(selectedCounty);
+
+    if (!hasMountedRef.current) {
+      hasMountedRef.current = true;
+      if (!hasActiveFilters) return;
+    }
+
+    const timeout = window.setTimeout(() => {
+      const basePayload = {
+        stateId: 'california',
+        countyId: selectedCounty || undefined,
+        pageType: 'advocates' as const,
+        searchQuery: deferredSearchQuery.trim() || undefined,
+        resultCount: sortedAdvocates.length,
+      };
+
+      trackDirectoryAnalyticsEvent({
+        event: 'directory_search',
+        ...basePayload,
+      });
+
+      if (sortedAdvocates.length === 0) {
+        trackDirectoryAnalyticsEvent({
+          event: 'directory_no_results',
+          ...basePayload,
+        });
+
+        if (hasActiveFilters) {
+          trackDirectoryAnalyticsEvent({
+            event: 'directory_dead_end',
+            ...basePayload,
+          });
+        }
+      }
+    }, 350);
+
+    return () => window.clearTimeout(timeout);
+  }, [
+    deferredSearchQuery,
+    selectedAffiliation,
+    selectedCounty,
+    selectedSpecialties,
+    sortedAdvocates.length,
+    vendorizedOnly,
+  ]);
+
   // Intake email compiler
   const compileIntakeEmail = (advName: string) => {
     return `Dear ${advName},
@@ -197,7 +223,15 @@ Best regards,
 [Your Phone Number]`;
   };
 
-  const handleEmailTrigger = (email: string, advName: string) => {
+  const handleEmailTrigger = (advId: string, email: string, advName: string) => {
+    trackDirectoryAnalyticsEvent({
+      event: 'directory_email_click',
+      recordId: advId,
+      recordType: 'advocate',
+      stateId: 'california',
+      countyId: selectedCounty || undefined,
+      pageType: 'advocates',
+    });
     const subject = `IEP Advocacy Consultation Request - ${intakeChildName}`;
     const body = compileIntakeEmail(advName);
     window.location.assign(`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`);
@@ -424,14 +458,7 @@ Best regards,
       ) : (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
           {sortedAdvocates.map(adv => {
-            const reviews = ADVOCATE_REVIEWS[adv.id] || [];
-            const isReviewsExpanded = expandedReviewsId === adv.id;
             const isIntakeExpanded = expandedIntakeId === adv.id;
-            
-            // Calculate rating average
-            const avgRating = reviews.length > 0 
-              ? (reviews.reduce((acc, curr) => acc + curr.rating, 0) / reviews.length).toFixed(1) 
-              : '5.0';
 
             return (
               <div 
@@ -473,10 +500,6 @@ Best regards,
                         <span style={{ fontWeight: 600, color: 'var(--primary-color)' }}>{adv.credentials}</span>
                         <span>•</span>
                         <span><strong>{adv.experience_years} years</strong> experience</span>
-                        <span>•</span>
-                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.25rem', color: '#f59e0b', fontWeight: 600 }}>
-                          <Star size={12} fill="#f59e0b" /> {avgRating} ({reviews.length} reviews)
-                        </span>
                       </div>
                     </div>
                   </div>
@@ -640,12 +663,38 @@ Best regards,
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem', color: 'var(--text-light)', fontSize: '0.85rem' }}>
                       <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
                         <Phone size={12} style={{ flexShrink: 0 }} /> 
-                        <a href={`tel:${adv.phone}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{adv.phone}</a>
+                        <a
+                          href={`tel:${adv.phone}`}
+                          style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}
+                          onClick={() => trackDirectoryAnalyticsEvent({
+                            event: 'directory_phone_click',
+                            recordId: adv.id,
+                            recordType: 'advocate',
+                            stateId: 'california',
+                            countyId: selectedCounty || undefined,
+                            pageType: 'advocates',
+                          })}
+                        >
+                          {adv.phone}
+                        </a>
                         <CopyButton text={adv.phone} size={11} />
                       </span>
                       <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
                         <Mail size={12} style={{ flexShrink: 0 }} /> 
-                        <a href={`mailto:${adv.email}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{adv.email}</a>
+                        <a
+                          href={`mailto:${adv.email}`}
+                          style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}
+                          onClick={() => trackDirectoryAnalyticsEvent({
+                            event: 'directory_email_click',
+                            recordId: adv.id,
+                            recordType: 'advocate',
+                            stateId: 'california',
+                            countyId: selectedCounty || undefined,
+                            pageType: 'advocates',
+                          })}
+                        >
+                          {adv.email}
+                        </a>
                         <CopyButton text={adv.email} size={11} />
                       </span>
                     </div>
@@ -656,29 +705,7 @@ Best regards,
                 <div style={{ display: 'flex', gap: '1rem', borderTop: '1px solid rgba(0,0,0,0.04)', paddingTop: '1rem', flexWrap: 'wrap' }}>
                   <button
                     onClick={() => {
-                      setExpandedReviewsId(isReviewsExpanded ? null : adv.id);
-                      setExpandedIntakeId(null);
-                    }}
-                    style={{
-                      background: 'none',
-                      border: 'none',
-                      cursor: 'pointer',
-                      fontSize: '0.85rem',
-                      fontWeight: 600,
-                      color: 'var(--text-light)',
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '0.3rem'
-                    }}
-                  >
-                    <span>Read Parent Reviews ({reviews.length})</span>
-                    {isReviewsExpanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
-                  </button>
-
-                  <button
-                    onClick={() => {
                       setExpandedIntakeId(isIntakeExpanded ? null : adv.id);
-                      setExpandedReviewsId(null);
                     }}
                     style={{
                       background: 'none',
@@ -700,6 +727,14 @@ Best regards,
                     href={adv.website} 
                     target="_blank" 
                     rel="noopener noreferrer" 
+                    onClick={() => trackDirectoryAnalyticsEvent({
+                      event: 'directory_resource_click',
+                      recordId: adv.id,
+                      recordType: 'advocate',
+                      stateId: 'california',
+                      countyId: selectedCounty || undefined,
+                      pageType: 'advocates',
+                    })}
                     style={{ 
                       fontSize: '0.85rem', 
                       color: 'var(--primary-color)', 
@@ -715,29 +750,12 @@ Best regards,
                   </a>
                 </div>
 
-                {/* 4. Parent Reviews Section */}
-                {isReviewsExpanded && (
-                  <div style={{ background: 'rgba(0,0,0,0.01)', border: '1px solid rgba(0,0,0,0.03)', borderRadius: '12px', padding: '1.25rem', display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: '0.5rem' }}>
-                    {reviews.length === 0 ? (
-                      <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', fontStyle: 'italic', margin: 0 }}>No written reviews registered for this advisor yet.</p>
-                    ) : (
-                      reviews.map((rev, idx) => (
-                        <div key={idx} style={{ borderBottom: idx < reviews.length - 1 ? '1px solid rgba(0,0,0,0.04)' : 'none', paddingBottom: idx < reviews.length - 1 ? '0.75rem' : 0 }}>
-                          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.3rem' }}>
-                            <strong style={{ fontSize: '0.88rem' }}>{rev.author}</strong>
-                            <div style={{ display: 'flex', gap: '0.1rem', color: '#f59e0b' }}>
-                              {Array.from({ length: rev.rating }).map((_, i) => (
-                                <Star key={i} size={11} fill="#f59e0b" stroke="none" />
-                              ))}
-                            </div>
-                          </div>
-                          <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', margin: '0.2rem 0', lineHeight: 1.4 }}>&quot;{rev.text}&quot;</p>
-                          <span style={{ display: 'block', fontSize: '0.72rem', color: 'var(--text-light)' }}>Verified care review: {rev.date}</span>
-                        </div>
-                      ))
-                    )}
-                  </div>
-                )}
+                <DirectoryReviews
+                  entityType="advocate"
+                  entityId={adv.id}
+                  entityName={adv.name}
+                  countyId={adv.counties_served.split(',')[0]?.trim() || 'california'}
+                />
 
                 {/* 5. Intake Request Form Builder */}
                 {isIntakeExpanded && (
@@ -781,7 +799,7 @@ Best regards,
                         <div style={{ display: 'flex', gap: '0.4rem', alignItems: 'center' }}>
                           <CopyButton text={compileIntakeEmail(adv.name)} size={14} />
                           <button
-                            onClick={() => handleEmailTrigger(adv.email, adv.name)}
+                            onClick={() => handleEmailTrigger(adv.id, adv.email, adv.name)}
                             style={{
                               background: 'var(--primary-color)',
                               border: 'none',

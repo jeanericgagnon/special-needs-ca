@@ -1,0 +1,282 @@
+{
+  "generatedAt": "2026-06-18T18:38:47.488Z",
+  "updatedAt": "2026-06-18T21:48:07.875Z",
+  "rows": [
+    {
+      "stateId": "alabama",
+      "status": "complete",
+      "note": "added-third-concrete-first-party-provider-target",
+      "updatedAt": "2026-06-18T18:38:47.488Z"
+    },
+    {
+      "stateId": "arizona",
+      "status": "complete",
+      "note": "added-three-concrete-first-party-provider-targets",
+      "updatedAt": "2026-06-18T18:41:31.530Z"
+    },
+    {
+      "stateId": "arkansas",
+      "status": "complete",
+      "note": "added-three-concrete-first-party-provider-targets",
+      "updatedAt": "2026-06-18T18:45:42.116Z"
+    },
+    {
+      "stateId": "colorado",
+      "status": "complete",
+      "note": "added-one-concrete-first-party-provider-target",
+      "updatedAt": "2026-06-18T18:47:53.721Z"
+    },
+    {
+      "stateId": "connecticut",
+      "status": "complete",
+      "note": "added-three-concrete-first-party-provider-targets",
+      "updatedAt": "2026-06-18T18:49:57.311Z"
+    },
+    {
+      "stateId": "delaware",
+      "status": "complete",
+      "note": "added-three-concrete-first-party-provider-targets",
+      "updatedAt": "2026-06-18T18:51:48.135Z"
+    },
+    {
+      "stateId": "hawaii",
+      "status": "complete",
+      "note": "added-three-concrete-first-party-provider-targets",
+      "updatedAt": "2026-06-18T18:54:37.497Z"
+    },
+    {
+      "stateId": "idaho",
+      "status": "complete",
+      "note": "added-three-concrete-first-party-provider-targets",
+      "updatedAt": "2026-06-18T18:55:52.359Z"
+    },
+    {
+      "stateId": "iowa",
+      "status": "complete",
+      "note": "added-one-concrete-first-party-provider-target",
+      "updatedAt": "2026-06-18T18:57:24.302Z"
+    },
+    {
+      "stateId": "kansas",
+      "status": "complete",
+      "note": "added-one-concrete-first-party-provider-target",
+      "updatedAt": "2026-06-18T18:58:50.881Z"
+    },
+    {
+      "stateId": "maine",
+      "status": "complete",
+      "note": "added-three-concrete-first-party-provider-targets",
+      "updatedAt": "2026-06-18T19:00:40.500Z"
+    },
+    {
+      "stateId": "maryland",
+      "status": "complete",
+      "note": "added-three-concrete-first-party-provider-targets",
+      "updatedAt": "2026-06-18T19:02:24.463Z"
+    },
+    {
+      "stateId": "massachusetts",
+      "status": "complete",
+      "note": "added-three-concrete-first-party-provider-targets",
+      "updatedAt": "2026-06-18T19:04:12.250Z"
+    },
+    {
+      "stateId": "minnesota",
+      "status": "complete",
+      "note": "added-three-concrete-first-party-provider-targets",
+      "updatedAt": "2026-06-18T19:05:58.321Z"
+    },
+    {
+      "stateId": "mississippi",
+      "status": "complete",
+      "note": "applied-three-concrete-first-party-provider-targets",
+      "updatedAt": "2026-06-18T19:08:13.704Z"
+    },
+    {
+      "stateId": "montana",
+      "status": "complete",
+      "note": "applied-three-concrete-first-party-provider-targets",
+      "updatedAt": "2026-06-18T19:09:18.474Z"
+    },
+    {
+      "stateId": "nevada",
+      "status": "complete",
+      "note": "applied-three-concrete-first-party-provider-targets",
+      "updatedAt": "2026-06-18T19:10:56.849Z"
+    },
+    {
+      "stateId": "new-hampshire",
+      "status": "complete",
+      "note": "applied-three-concrete-first-party-provider-targets",
+      "updatedAt": "2026-06-18T19:12:25.982Z"
+    },
+    {
+      "stateId": "new-jersey",
+      "status": "complete",
+      "note": "applied-three-concrete-first-party-provider-targets",
+      "updatedAt": "2026-06-18T19:14:25.310Z"
+    },
+    {
+      "stateId": "new-mexico",
+      "status": "complete",
+      "note": "applied-three-concrete-first-party-provider-targets",
+      "updatedAt": "2026-06-18T19:15:27.537Z"
+    },
+    {
+      "stateId": "north-dakota",
+      "status": "complete",
+      "note": "added-three-concrete-first-party-provider-targets",
+      "updatedAt": "2026-06-18T19:17:44.164Z"
+    },
+    {
+      "stateId": "ohio",
+      "status": "complete",
+      "note": "added-two-concrete-first-party-provider-targets",
+      "updatedAt": "2026-06-18T19:19:56.794Z"
+    },
+    {
+      "stateId": "oklahoma",
+      "status": "complete",
+      "note": "added-three-concrete-first-party-provider-targets",
+      "updatedAt": "2026-06-18T19:20:01.715Z"
+    },
+    {
+      "stateId": "oregon",
+      "status": "complete",
+      "note": "added-three-concrete-first-party-provider-targets",
+      "updatedAt": "2026-06-18T19:22:20.255Z"
+    },
+    {
+      "stateId": "rhode-island",
+      "status": "complete",
+      "note": "added-three-concrete-first-party-provider-targets",
+      "updatedAt": "2026-06-18T19:23:00.747Z"
+    },
+    {
+      "stateId": "south-carolina",
+      "status": "complete",
+      "note": "added-three-concrete-first-party-provider-targets",
+      "updatedAt": "2026-06-18T19:26:05.020Z"
+    },
+    {
+      "stateId": "south-dakota",
+      "status": "complete",
+      "note": "added-three-concrete-first-party-provider-targets",
+      "updatedAt": "2026-06-18T19:25:45.907Z"
+    },
+    {
+      "stateId": "utah",
+      "status": "complete",
+      "note": "added-three-concrete-first-party-provider-targets",
+      "updatedAt": "2026-06-18T19:28:36.871Z"
+    },
+    {
+      "stateId": "vermont",
+      "status": "complete",
+      "note": "added-three-concrete-first-party-provider-targets",
+      "updatedAt": "2026-06-18T19:28:33.498Z"
+    },
+    {
+      "stateId": "washington",
+      "status": "complete",
+      "note": "added-three-concrete-first-party-provider-targets",
+      "updatedAt": "2026-06-18T19:30:09.805Z"
+    },
+    {
+      "stateId": "west-virginia",
+      "status": "complete",
+      "note": "added-three-concrete-first-party-provider-targets",
+      "updatedAt": "2026-06-18T19:31:27.408Z"
+    },
+    {
+      "stateId": "wisconsin",
+      "status": "complete",
+      "note": "added-three-concrete-first-party-provider-targets",
+      "updatedAt": "2026-06-18T19:33:38.876Z"
+    },
+    {
+      "stateId": "wyoming",
+      "status": "complete",
+      "note": "added-three-concrete-first-party-provider-targets",
+      "updatedAt": "2026-06-18T19:36:26.040Z"
+    },
+    {
+      "stateId": "alaska",
+      "status": "complete",
+      "note": "applied-one-concrete-first-party-provider-target",
+      "updatedAt": "2026-06-18T21:37:27.419Z"
+    },
+    {
+      "stateId": "california",
+      "status": "complete",
+      "note": "applied-one-concrete-first-party-provider-target",
+      "updatedAt": "2026-06-18T21:38:26.134Z"
+    },
+    {
+      "stateId": "georgia",
+      "status": "complete",
+      "note": "applied-one-concrete-first-party-provider-target",
+      "updatedAt": "2026-06-18T21:39:36.655Z"
+    },
+    {
+      "stateId": "indiana",
+      "status": "complete",
+      "note": "applied-one-concrete-first-party-provider-target",
+      "updatedAt": "2026-06-18T21:40:27.743Z"
+    },
+    {
+      "stateId": "kentucky",
+      "status": "complete",
+      "note": "applied-one-concrete-first-party-provider-target",
+      "updatedAt": "2026-06-18T21:41:04.612Z"
+    },
+    {
+      "stateId": "louisiana",
+      "status": "complete",
+      "note": "applied-one-concrete-first-party-provider-target",
+      "updatedAt": "2026-06-18T21:43:10.918Z"
+    },
+    {
+      "stateId": "michigan",
+      "status": "complete",
+      "note": "applied-one-concrete-first-party-provider-target",
+      "updatedAt": "2026-06-18T21:43:50.783Z"
+    },
+    {
+      "stateId": "missouri",
+      "status": "complete",
+      "note": "applied-one-concrete-first-party-provider-target",
+      "updatedAt": "2026-06-18T21:44:47.162Z"
+    },
+    {
+      "stateId": "nebraska",
+      "status": "complete",
+      "note": "applied-one-concrete-first-party-provider-target",
+      "updatedAt": "2026-06-18T21:45:36.275Z"
+    },
+    {
+      "stateId": "new-york",
+      "status": "complete",
+      "note": "applied-one-concrete-first-party-provider-target",
+      "updatedAt": "2026-06-18T21:46:20.213Z"
+    },
+    {
+      "stateId": "north-carolina",
+      "status": "complete",
+      "note": "applied-one-concrete-first-party-provider-target",
+      "updatedAt": "2026-06-18T21:46:51.983Z"
+    },
+    {
+      "stateId": "tennessee",
+      "status": "complete",
+      "note": "applied-one-concrete-first-party-provider-target",
+      "updatedAt": "2026-06-18T21:47:23.614Z"
+    },
+    {
+      "stateId": "virginia",
+      "status": "complete",
+      "note": "applied-one-concrete-first-party-provider-target",
+      "updatedAt": "2026-06-18T21:48:07.875Z"
+    }
+  ]
+}

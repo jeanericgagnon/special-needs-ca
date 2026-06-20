@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "source_url": "https://portal.ct.gov/sde/special-education",
+    "confidence_score": 9.5,
+    "notes": "Official Connecticut State Department of Education special education page used as the truthful statewide education support layer while weak county and district placeholders are removed.",
+    "suggested_target_id": "ct-ed-sde-special-education",
+    "name": "Connecticut State Department of Education Special Education",
+    "phone": "",
+    "counties_served": [
+      "ALL_CONNECTICUT_COUNTIES"
+    ],
+    "physical_county": "hartford-ct",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  }
+]

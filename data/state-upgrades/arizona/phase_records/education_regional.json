@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "source_url": "https://www.azed.gov/specialeducation",
+    "confidence_score": 9.5,
+    "notes": "Official Arizona Department of Education special education page used as the truthful statewide education support layer while weak county and district placeholders are removed.",
+    "suggested_target_id": "az-ed-ade-special-education",
+    "name": "Arizona Department of Education Special Education",
+    "phone": "",
+    "counties_served": [
+      "ALL_ARIZONA_COUNTIES"
+    ],
+    "physical_county": "maricopa-az",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  }
+]

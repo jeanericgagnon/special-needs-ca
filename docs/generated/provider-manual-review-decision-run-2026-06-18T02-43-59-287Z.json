@@ -1,0 +1,348 @@
+{
+  "generatedAt": "2026-06-18T02:43:59.291Z",
+  "mode": "apply",
+  "stateFilter": null,
+  "inputPath": "data/provider-manual-review-decisions.json",
+  "dbPath": "ca_disability_navigator.db",
+  "summary": {
+    "inputRows": 47,
+    "appliedRows": 0,
+    "filesChanged": 2,
+    "appliedByBlocker": {},
+    "skippedByReason": {
+      "row_not_in_live_manual_review_queue": 47
+    },
+    "appliedByReviewStatus": {}
+  },
+  "decisions": [
+    {
+      "rowId": 429,
+      "stateId": "alabama",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_county_resolution",
+      "blockerKey": "county_unresolved"
+    },
+    {
+      "rowId": 428,
+      "stateId": "california",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 421,
+      "stateId": "colorado",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 71,
+      "stateId": "florida",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 384,
+      "stateId": "florida",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 420,
+      "stateId": "florida",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 423,
+      "stateId": "florida",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 118,
+      "stateId": "georgia",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 374,
+      "stateId": "hawaii",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_generic_provider_name",
+      "blockerKey": "generic_name_with_county"
+    },
+    {
+      "rowId": 75,
+      "stateId": "illinois",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 365,
+      "stateId": "illinois",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 377,
+      "stateId": "illinois",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_generic_provider_name",
+      "blockerKey": "generic_name_with_county"
+    },
+    {
+      "rowId": 387,
+      "stateId": "illinois",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 392,
+      "stateId": "illinois",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_state_county_mismatch",
+      "blockerKey": "state_county_mismatch"
+    },
+    {
+      "rowId": 123,
+      "stateId": "indiana",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 430,
+      "stateId": "iowa",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_county_resolution",
+      "blockerKey": "county_unresolved"
+    },
+    {
+      "rowId": 375,
+      "stateId": "kansas",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_county_resolution",
+      "blockerKey": "county_unresolved"
+    },
+    {
+      "rowId": 425,
+      "stateId": "kansas",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 124,
+      "stateId": "kentucky",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 407,
+      "stateId": "kentucky",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 116,
+      "stateId": "louisiana",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 416,
+      "stateId": "louisiana",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_county_resolution",
+      "blockerKey": "county_unresolved"
+    },
+    {
+      "rowId": 427,
+      "stateId": "louisiana",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 380,
+      "stateId": "massachusetts",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 432,
+      "stateId": "missouri",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 431,
+      "stateId": "nebraska",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 388,
+      "stateId": "new-jersey",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 406,
+      "stateId": "new-york",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 417,
+      "stateId": "new-york",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 422,
+      "stateId": "new-york",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 390,
+      "stateId": "north-dakota",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 386,
+      "stateId": "oklahoma",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_county_resolution",
+      "blockerKey": "county_unresolved"
+    },
+    {
+      "rowId": 385,
+      "stateId": "oregon",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 82,
+      "stateId": "pennsylvania",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 108,
+      "stateId": "pennsylvania",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 424,
+      "stateId": "pennsylvania",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 389,
+      "stateId": "south-dakota",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 408,
+      "stateId": "tennessee",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_generic_provider_name",
+      "blockerKey": "generic_name_with_county"
+    },
+    {
+      "rowId": 415,
+      "stateId": "tennessee",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_generic_provider_name",
+      "blockerKey": "generic_name_with_county"
+    },
+    {
+      "rowId": 58,
+      "stateId": "texas",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 371,
+      "stateId": "texas",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_county_resolution",
+      "blockerKey": "county_unresolved"
+    },
+    {
+      "rowId": 394,
+      "stateId": "texas",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 494,
+      "stateId": "texas",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_unclassified_manual_review_with_county",
+      "blockerKey": "unclassified_manual_review_with_county"
+    },
+    {
+      "rowId": 405,
+      "stateId": "virginia",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_county_resolution",
+      "blockerKey": "county_unresolved"
+    },
+    {
+      "rowId": 413,
+      "stateId": "virginia",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_county_resolution",
+      "blockerKey": "county_unresolved"
+    },
+    {
+      "rowId": 414,
+      "stateId": "virginia",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_county_resolution",
+      "blockerKey": "county_unresolved"
+    },
+    {
+      "rowId": 35,
+      "stateId": "wisconsin",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    }
+  ]
+}

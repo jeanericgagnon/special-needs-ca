@@ -1,0 +1,190 @@
+{
+  "generatedAt": "2026-06-18T19:13:52.565Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "new-jersey",
+  "stateName": "New Jersey",
+  "sourcePacketPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-new-jersey-2026-06-18.json",
+  "sourceTargetsPath": "data/source_targets/new-jersey.json",
+  "instructions": {
+    "summary": "Fill only the missing first-party provider targets needed for this state. Do not broaden beyond provider_directory authoring.",
+    "completionRule": "A candidate row is ready only when sourceName, sourceUrl, domain, and reviewedBy are filled."
+  },
+  "summary": {
+    "neededConcreteTargets": 3,
+    "currentConcreteProviderTargetCount": 0,
+    "existingProviderTargetCount": 4,
+    "candidateSlotCount": 3,
+    "readyCandidateCount": 3,
+    "unresolvedCandidateCount": 0
+  },
+  "existingProviderTargets": [
+    {
+      "sourceName": "New Jersey Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for New Jersey."
+    },
+    {
+      "sourceName": "Joseph M. Sanzari Children's Hospital",
+      "sourceUrl": "https://www.hackensackmeridianhealth.org/en/locations/joseph-m-sanzari-childrens-hospital",
+      "domain": "hackensackmeridianhealth.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Hackensack Meridian children's hospital source for northern New Jersey pediatric specialty care."
+    },
+    {
+      "sourceName": "Bristol-Myers Squibb Children's Hospital",
+      "sourceUrl": "https://www.rwjbh.org/bristol-myers-squibb-childrens-hospital-at-rwjuh",
+      "domain": "rwjbh.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official RWJBarnabas children's hospital source for central New Jersey pediatric hospital and trauma care."
+    },
+    {
+      "sourceName": "Children's Hospital of New Jersey at Newark Beth Israel",
+      "sourceUrl": "https://www.rwjbh.org/childrens-hospital-of-nj-at-newark-beth-israel",
+      "domain": "rwjbh.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official RWJBarnabas children's hospital source for pediatric inpatient and emergency care in northern New Jersey."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "New Jersey County Metadata",
+      "sourceUrl": "https://www.new-jersey.gov",
+      "domain": "new-jersey.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "New Jersey Medicaid Portal",
+      "sourceUrl": "https://dhhs.new-jersey.gov",
+      "domain": "dhhs.new-jersey.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "New Jersey Division of Developmental Disabilities",
+      "sourceUrl": "https://www.nj.gov/humanservices/ddd",
+      "domain": "nj.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "New Jersey HCBS Waivers",
+      "sourceUrl": "https://www.nj.gov/humanservices/ddd/hcbs",
+      "domain": "nj.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "New Jersey Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.new-jersey.gov/earlyintervention",
+      "domain": "dhhs.new-jersey.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "New Jersey Department of Education Special Ed",
+      "sourceUrl": "https://education.new-jersey.gov",
+      "domain": "education.new-jersey.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "New Jersey Regional Special Education Support",
+      "sourceUrl": "https://education.new-jersey.gov/regional",
+      "domain": "education.new-jersey.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "New Jersey Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of New Jersey",
+      "sourceUrl": "https://www.thearcnew-jersey.org",
+      "domain": "thearcnew-jersey.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "New Jersey DDD Eligibility Application & Appeals Guide",
+      "sourceUrl": "https://www.nj.gov/humanservices/ddd/forms",
+      "domain": "nj.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "New Jersey Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.new-jersey.gov/rehab",
+      "domain": "dhhs.new-jersey.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "New Jersey Secretary of State Business Registry",
+      "sourceUrl": "https://www.new-jersey.gov/business",
+      "domain": "new-jersey.gov"
+    }
+  ],
+  "candidateProviderTargets": [
+    {
+      "slotNumber": 1,
+      "stateId": "new-jersey",
+      "stateCode": "NJ",
+      "sourceName": "Joseph M. Sanzari Children's Hospital",
+      "sourceUrl": "https://www.hackensackmeridianhealth.org/en/locations/joseph-m-sanzari-childrens-hospital",
+      "domain": "hackensackmeridianhealth.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Children's hospital",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official Hackensack Meridian children's hospital source for northern New Jersey pediatric specialty care.",
+      "reviewedBy": "codex"
+    },
+    {
+      "slotNumber": 2,
+      "stateId": "new-jersey",
+      "stateCode": "NJ",
+      "sourceName": "Bristol-Myers Squibb Children's Hospital",
+      "sourceUrl": "https://www.rwjbh.org/bristol-myers-squibb-childrens-hospital-at-rwjuh/",
+      "domain": "rwjbh.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Children's hospital",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official RWJBarnabas children's hospital source for central New Jersey pediatric hospital and trauma care.",
+      "reviewedBy": "codex"
+    },
+    {
+      "slotNumber": 3,
+      "stateId": "new-jersey",
+      "stateCode": "NJ",
+      "sourceName": "Children's Hospital of New Jersey at Newark Beth Israel",
+      "sourceUrl": "https://www.rwjbh.org/childrens-hospital-of-nj-at-newark-beth-israel/",
+      "domain": "rwjbh.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Children's hospital",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official RWJBarnabas children's hospital source for pediatric inpatient and emergency care in northern New Jersey.",
+      "reviewedBy": "codex"
+    }
+  ]
+}

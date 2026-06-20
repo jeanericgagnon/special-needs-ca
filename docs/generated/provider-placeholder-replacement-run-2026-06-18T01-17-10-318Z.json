@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-06-18T01:17:10.325Z",
+  "mode": "apply",
+  "stateFilter": "new-york",
+  "inputPath": "data/provider-placeholder-replacement-decisions.json",
+  "summary": {
+    "inputRows": 1,
+    "appliedStates": 1,
+    "appliedPlaceholderRows": 25,
+    "appliedReplacements": 3,
+    "filesChanged": 1,
+    "skippedByReason": {}
+  },
+  "decisions": [
+    {
+      "stateId": "new-york",
+      "placeholderSourceName": "NEWYORK Specialized Clinic Roster #1",
+      "status": "applied",
+      "placeholderRowCount": 25,
+      "replacementCount": 3,
+      "replacements": [
+        {
+          "source_name": "NYU Langone Hassenfeld Children's Hospital Center for Child Development",
+          "source_url": "https://nyulangone.org/locations/hassenfeld-childrens-hospital",
+          "domain": "nyulangone.org"
+        },
+        {
+          "source_name": "Montefiore Rose F. Kennedy Center",
+          "source_url": "https://www.montefiore.org/rose-f-kennedy-center",
+          "domain": "montefiore.org"
+        },
+        {
+          "source_name": "Cohen Children's Medical Center",
+          "source_url": "https://childrenshospital.northwell.edu/",
+          "domain": "childrenshospital.northwell.edu"
+        }
+      ]
+    }
+  ]
+}

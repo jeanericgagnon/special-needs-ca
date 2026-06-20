@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2026-06-17T19:54:01.846Z",
+  "mode": "dry-run",
+  "stateFilter": "north-carolina",
+  "summary": {
+    "eligibleRepairRows": 0,
+    "appliedChanges": 0,
+    "filesChanged": 0,
+    "skippedAmbiguousRows": 2,
+    "skippedMissingRows": 0
+  },
+  "repairs": [],
+  "ambiguousRows": [
+    {
+      "stateId": "north-carolina",
+      "targetTable": "forms",
+      "sourceName": "North Carolina Medicaid & Special Education Forms",
+      "fakeSourceUrl": "https://dhhs.north-carolina.gov/forms",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "north-carolina",
+      "targetTable": "regional_education_agencies",
+      "sourceName": "North Carolina Regional Special Education Support",
+      "fakeSourceUrl": "https://education.north-carolina.gov/regional",
+      "mediumCandidateCount": 2
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-06-18T02:47:23.764Z",
+  "mode": "apply",
+  "stateFilter": null,
+  "inputPath": "docs/generated/provider-manual-review-queue-2026-06-18.json",
+  "dbPath": "ca_disability_navigator.db",
+  "summary": {
+    "inputRows": 0,
+    "appliedRows": 0,
+    "filesChanged": 2,
+    "appliedByBlocker": {},
+    "skippedByReason": {},
+    "appliedByReviewStatus": {}
+  },
+  "decisions": []
+}

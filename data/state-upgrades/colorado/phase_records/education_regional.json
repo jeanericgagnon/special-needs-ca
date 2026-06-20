@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "source_url": "https://www.cde.state.co.us/cdesped",
+    "confidence_score": 9.5,
+    "notes": "Official Colorado Department of Education special education page used as the truthful statewide education support layer while weak county and district placeholders are removed.",
+    "suggested_target_id": "co-ed-cde-special-education",
+    "name": "Colorado Department of Education Special Education",
+    "phone": "",
+    "counties_served": [
+      "ALL_COLORADO_COUNTIES"
+    ],
+    "physical_county": "city-and-county-of-denver-co",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  }
+]

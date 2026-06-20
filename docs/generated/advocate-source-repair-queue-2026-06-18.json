@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-06-18T15:10:14.636Z",
+  "generatedDate": "2026-06-18",
+  "sourceRegistry": "docs/generated/advocate-followup-blocker-registry-2026-06-18.json",
+  "sourceLedger": "data/source-acquisition-state/advocate-source-repair-ledger.json",
+  "purpose": "Deterministic repair queue for repeated advocate source failures.",
+  "summary": {
+    "totalRows": 0,
+    "resolvedRowsExcluded": 832,
+    "byRepairClass": {},
+    "byFollowupReason": {}
+  },
+  "rows": []
+}

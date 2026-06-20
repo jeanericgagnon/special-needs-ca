@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-06-18",
+  "dbPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/frontend/ca_disability_navigator.db",
+  "sourceLedger": null,
+  "summary": {
+    "countiesBlocked": 0,
+    "resolvedCountiesExcluded": 0,
+    "priorityCountiesBlocked": 0,
+    "secondaryCountiesBlocked": 0,
+    "totalRows": 0,
+    "syntheticPatternRows": 0
+  },
+  "counties": []
+}

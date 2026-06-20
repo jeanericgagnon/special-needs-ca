@@ -1,0 +1,74 @@
+{
+  "generatedAt": "2026-06-18",
+  "dbPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/frontend/ca_disability_navigator.db",
+  "clueDefinitions": [
+    {
+      "id": "english",
+      "label": "English"
+    },
+    {
+      "id": "spanish",
+      "label": "Spanish"
+    },
+    {
+      "id": "asl",
+      "label": "ASL"
+    },
+    {
+      "id": "interpreter",
+      "label": "Interpreter"
+    },
+    {
+      "id": "wheelchair",
+      "label": "Wheelchair"
+    },
+    {
+      "id": "transportation",
+      "label": "Transportation"
+    },
+    {
+      "id": "home_visits",
+      "label": "Home Visits"
+    },
+    {
+      "id": "telehealth",
+      "label": "Telehealth"
+    }
+  ],
+  "tables": [
+    {
+      "label": "Nonprofit Organizations",
+      "stagingTable": "staging_scraped_nonprofit_organizations",
+      "targetTable": "nonprofit_organizations",
+      "totalCandidates": 0,
+      "clueTotals": {
+        "english": 0,
+        "spanish": 0,
+        "asl": 0,
+        "interpreter": 0,
+        "wheelchair": 0,
+        "transportation": 0,
+        "home_visits": 0,
+        "telehealth": 0
+      },
+      "candidates": []
+    },
+    {
+      "label": "Resource Providers",
+      "stagingTable": "staging_scraped_resource_providers",
+      "targetTable": "resource_providers",
+      "totalCandidates": 0,
+      "clueTotals": {
+        "english": 0,
+        "spanish": 0,
+        "asl": 0,
+        "interpreter": 0,
+        "wheelchair": 0,
+        "transportation": 0,
+        "home_visits": 0,
+        "telehealth": 0
+      },
+      "candidates": []
+    }
+  ]
+}

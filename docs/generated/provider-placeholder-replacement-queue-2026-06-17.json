@@ -1,0 +1,14 @@
+{
+  "queueId": "provider_placeholder_replacement_queue",
+  "generatedAt": "2026-06-17",
+  "sourceArtifact": "docs/generated/provider-source-pack-plan-2026-06-17.json",
+  "purpose": "Deterministic queue of provider placeholder targets that must be replaced with named first-party sources before safe provider expansion.",
+  "summary": {
+    "totalRows": 0,
+    "statesNeedingPlaceholderReplacement": 0,
+    "byState": {},
+    "byDomain": {},
+    "byReadinessLane": {}
+  },
+  "rows": []
+}

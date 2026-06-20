@@ -1,0 +1,65 @@
+{
+  "generatedAt": "2026-06-18T02:03:58.937Z",
+  "mode": "apply",
+  "stateFilter": "rhode-island",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 8,
+    "appliedStates": 2,
+    "filesChanged": 1,
+    "skippedByReason": {
+      "skipped_followup": 4,
+      "missing_source_row": 2
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "rhode-island",
+      "sourceName": "Rhode Island Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "rhode-island",
+      "sourceName": "Rhode Island HCBS Waivers Page",
+      "status": "applied",
+      "targetUrl": "https://bhddh.ri.gov/developmental-disabilities/hcbs"
+    },
+    {
+      "stateId": "rhode-island",
+      "sourceName": "Rhode Island Developmental Services Directory",
+      "status": "applied",
+      "targetUrl": "https://bhddh.ri.gov/developmental-disabilities"
+    },
+    {
+      "stateId": "rhode-island",
+      "sourceName": "Rhode Island Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "rhode-island",
+      "sourceName": "Rhode Island Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "rhode-island",
+      "sourceName": "Rhode Island HCBS Waivers Page",
+      "status": "skipped_missing_source_row",
+      "targetUrl": "https://bhddh.ri.gov/developmental-disabilities/hcbs"
+    },
+    {
+      "stateId": "rhode-island",
+      "sourceName": "Rhode Island Developmental Services Directory",
+      "status": "skipped_missing_source_row",
+      "targetUrl": "https://bhddh.ri.gov/developmental-disabilities"
+    },
+    {
+      "stateId": "rhode-island",
+      "sourceName": "Rhode Island Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

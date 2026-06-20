@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-06-18T19:09:03.861Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "montana",
+  "sourceWorkfilePath": "data/provider-authoring-state-workfiles/provider-authoring-state-workfile-montana.json",
+  "summary": {
+    "neededConcreteTargets": 3,
+    "candidateSlotCount": 3,
+    "readyCandidateCount": 3,
+    "unresolvedCandidateCount": 0,
+    "completionPercent": 100
+  },
+  "nextWork": []
+}

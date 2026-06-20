@@ -1,0 +1,298 @@
+{
+  "generatedAt": "2026-06-19T23:21:10.567Z",
+  "generatedDate": "2026-06-19",
+  "sampleRunId": "2026-06-19T02-33-19-909Z",
+  "sampleRunDir": "data/source-acquisition-runs/2026-06-19T02-33-19-909Z",
+  "purpose": "Machine-readable contract for source-acquisition run artifacts, required files, manifest/summary fields, and resume-safe downstream behavior.",
+  "runDirectoryLayout": {
+    "requiredTopLevel": [
+      "manifest.json",
+      "summary.json",
+      "results.csv",
+      "report.md",
+      "pages/"
+    ],
+    "optionalDownstreamRoots": [
+      "followups/",
+      "parsed/",
+      "validated/",
+      "staged/"
+    ],
+    "sampleFiles": [
+      "followups/blocked-failures.csv",
+      "followups/blocked-failures.json",
+      "followups/followup-summary.json",
+      "followups/followup-summary.md",
+      "followups/parse-ready-high-signal.csv",
+      "followups/parse-ready-high-signal.json",
+      "followups/parse-ready-suspect.csv",
+      "followups/parse-ready-suspect.json",
+      "followups/parse-ready.csv",
+      "followups/parse-ready.json",
+      "followups/retryable-failures.csv",
+      "followups/retryable-failures.json",
+      "followups/source-repair.csv",
+      "followups/source-repair.json",
+      "manifest.json",
+      "pages/00001-national-knowledge-content-idea-child-find.html",
+      "parsed/index-summary.json",
+      "report.md",
+      "results.csv",
+      "staged/knowledge-content/promotion-candidates.ndjson",
+      "staged/knowledge-content/promotion-summary.json",
+      "staged/knowledge-content/promotion-summary.md",
+      "staged/knowledge-content/unsupported-candidates.ndjson",
+      "summary.json",
+      "validated/index-summary.json"
+    ]
+  },
+  "fetchStage": {
+    "requiredFiles": [
+      "manifest.json",
+      "summary.json",
+      "results.csv",
+      "report.md",
+      "pages/"
+    ],
+    "manifestRequiredFields": [
+      "generatedAt",
+      "runId",
+      "mode",
+      "filters",
+      "runtime",
+      "selectionGuards",
+      "selectedCount",
+      "rows",
+      "results"
+    ],
+    "manifestRowFields": [
+      "stateId",
+      "targetTable",
+      "gapFamily",
+      "sourceQueue",
+      "sourceUrl",
+      "finalUrl",
+      "status",
+      "ok",
+      "contentType",
+      "savedPath",
+      "attempt",
+      "error",
+      "errorCode",
+      "errorDetail"
+    ],
+    "summaryRequiredFields": [
+      "generatedAt",
+      "runId",
+      "mode",
+      "selectedCount",
+      "succeeded",
+      "failed",
+      "concurrency",
+      "rateLimitMs",
+      "summaryPath",
+      "manifestPath",
+      "resultsCsvPath",
+      "reportPath",
+      "pagesDir"
+    ],
+    "sampleManifestFields": [
+      "generatedAt",
+      "runId",
+      "mode",
+      "filters",
+      "runtime",
+      "selectionGuards",
+      "selectedCount",
+      "rows",
+      "results"
+    ],
+    "sampleSummaryFields": [
+      "generatedAt",
+      "runId",
+      "mode",
+      "selectedCount",
+      "succeeded",
+      "failed",
+      "concurrency",
+      "rateLimitMs",
+      "summaryPath",
+      "manifestPath",
+      "resultsCsvPath",
+      "reportPath",
+      "pagesDir"
+    ]
+  },
+  "followupStage": {
+    "requiredFiles": [
+      "followups/parse-ready.json",
+      "followups/parse-ready.csv",
+      "followups/parse-ready-high-signal.json",
+      "followups/parse-ready-high-signal.csv",
+      "followups/parse-ready-suspect.json",
+      "followups/parse-ready-suspect.csv",
+      "followups/retryable-failures.json",
+      "followups/retryable-failures.csv",
+      "followups/blocked-failures.json",
+      "followups/blocked-failures.csv",
+      "followups/source-repair.json",
+      "followups/source-repair.csv",
+      "followups/followup-summary.json",
+      "followups/followup-summary.md"
+    ],
+    "summaryRequiredFields": [
+      "runId",
+      "selectedCount",
+      "resultCount",
+      "parseReadyCount",
+      "parseReadyHighSignalCount",
+      "parseReadySuspectCount",
+      "retryableCount",
+      "blockedCount",
+      "sourceRepairCount",
+      "artifacts"
+    ],
+    "sampleSummaryFields": [
+      "runId",
+      "selectedCount",
+      "resultCount",
+      "parseReadyCount",
+      "parseReadyHighSignalCount",
+      "parseReadySuspectCount",
+      "retryableCount",
+      "blockedCount",
+      "sourceRepairCount",
+      "topParseReadyHighSignalDomains",
+      "topParseReadySuspectDomains",
+      "topParseReadyDomains",
+      "topRetryableDomains",
+      "topBlockedDomains",
+      "topSourceRepairDomains",
+      "topRetryReasons",
+      "topBlockedReasons",
+      "topSourceRepairReasons",
+      "artifacts"
+    ]
+  },
+  "parsedStage": {
+    "requiredPerFamilyFiles": [
+      "records.ndjson",
+      "summary.json",
+      "summary.md",
+      "schema-errors.json",
+      "samples.json"
+    ],
+    "requiredIndexFile": "parsed/index-summary.json",
+    "indexRequiredFields": [
+      "runId",
+      "bucket",
+      "family",
+      "familyCount",
+      "families"
+    ],
+    "familySummaryRequiredFields": [
+      "runId",
+      "family",
+      "bucket",
+      "inputPath",
+      "selectedCount",
+      "parsedCount",
+      "schemaErrorCount",
+      "parseStatuses",
+      "topHostnames",
+      "samplesPath",
+      "recordsPath"
+    ],
+    "sampleIndexFields": [
+      "runId",
+      "bucket",
+      "family",
+      "familyCount",
+      "families"
+    ]
+  },
+  "validatedStage": {
+    "requiredPerFamilyFiles": [
+      "accepted.ndjson",
+      "rejected.ndjson",
+      "rejection-reasons.json",
+      "summary.json",
+      "summary.md"
+    ],
+    "requiredIndexFile": "validated/index-summary.json",
+    "indexRequiredFields": [
+      "runId",
+      "family",
+      "familyCount",
+      "families"
+    ],
+    "familySummaryRequiredFields": [
+      "runId",
+      "family",
+      "parsedCount",
+      "acceptedCount",
+      "rejectedCount",
+      "acceptanceRate",
+      "rejectionReasons"
+    ],
+    "sampleIndexFields": [
+      "runId",
+      "family",
+      "familyCount",
+      "families"
+    ]
+  },
+  "stagedStage": {
+    "requiredPerFamilyFiles": [
+      "promotion-candidates.ndjson",
+      "unsupported-candidates.ndjson",
+      "promotion-summary.json",
+      "promotion-summary.md"
+    ],
+    "requiredIndexFiles": [
+      "staged/index-summary.json",
+      "staged/index-summary.md"
+    ],
+    "indexRequiredFields": [
+      "runId",
+      "mode",
+      "familyFilter",
+      "familyCount",
+      "dbPath",
+      "dbStats",
+      "families"
+    ],
+    "familySummaryRequiredFields": [
+      "runId",
+      "family",
+      "mode",
+      "acceptedInputCount",
+      "supportedCount",
+      "unsupportedCount",
+      "supportedByTable",
+      "unsupportedReasons"
+    ],
+    "sampleIndexFields": []
+  },
+  "resumeSafetyContract": {
+    "guarantees": [
+      "Every stage writes its artifacts inside a single runId directory.",
+      "Downstream stages discover the latest runId by disk or accept an explicit --run-id.",
+      "Parse waits for followup-selected inputs to exist before proceeding.",
+      "Validate waits for parsed root or family records to exist before proceeding.",
+      "Stage waits for validated root or accepted records to exist before proceeding.",
+      "Dry-run staging still writes summary artifacts even when accepted input is empty."
+    ],
+    "operatorRules": [
+      "Never overwrite another run directory; a new fetch wave must create a new runId.",
+      "A run is safe to stop after fetch because manifest/results/pages remain on disk.",
+      "A run is safe to stop after followups because parse-ready and failure buckets remain on disk.",
+      "A downstream rerun should use --run-id when operator intent is to continue a specific run.",
+      "Family-specific reruns are safe because parsed, validated, and staged outputs are namespaced by family."
+    ],
+    "knownLimitations": [
+      "There is no single fetch resume command that appends into an existing runId; resume means continue downstream from saved artifacts or start a new fetch run.",
+      "Program waitlists require conservative program_id inference during staging apply, so unmatched rows stay unstaged instead of being guessed."
+    ]
+  }
+}

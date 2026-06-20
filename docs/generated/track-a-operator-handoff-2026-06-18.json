@@ -1,0 +1,122 @@
+{
+  "generatedAt": "2026-06-18T20:37:43.934Z",
+  "generatedDate": "2026-06-18",
+  "sourceArtifacts": {
+    "backlogPath": "docs/generated/track-a-burndown-backlog-2026-06-18.json",
+    "coveragePath": "docs/generated/track-a-blocker-coverage-audit-2026-06-18.json",
+    "blockerRegistryPath": "docs/generated/track-a-blocker-registry-2026-06-18.json",
+    "maxInfoPath": "docs/generated/max-info-program-2026-06-18.json"
+  },
+  "summary": {
+    "missingSourceFamilyCount": 0,
+    "unknownBlockerCount": 0,
+    "blockerCount": 5,
+    "firstPriorityBlocker": "provider_directory"
+  },
+  "topLevelCommand": "npm run run:next-track-a-step",
+  "commandCadence": [
+    "npm run run:next-track-a-step",
+    "npm run run:next-provider-depth-step",
+    "npm run audit:source-acquisition-completion-plan",
+    "npm run audit:track-a-burndown-backlog",
+    "npm run audit:max-info-program"
+  ],
+  "handoffRows": [
+    {
+      "executionPriority": 1,
+      "blockerId": "provider_directory",
+      "family": "providers_care",
+      "status": "critical_gap",
+      "queueArtifact": "docs/generated/provider-followup-repair-queue-2026-06-18.json",
+      "executionArtifact": "docs/generated/provider-followup-repair-queue-2026-06-18.json",
+      "supportingArtifacts": [
+        "docs/generated/provider-authoring-state-packets-2026-06-18.json"
+      ],
+      "queueCount": 1,
+      "nextAction": "Provider repair backlog is active; resolve the next blocked first-party provider target before more provider scraping or authoring.",
+      "successCondition": "Provider depth is no longer the thinnest major national information layer and every remaining provider gap is explicitly queued, staged, rejected, blocked, or deferred.",
+      "entryCommand": "npm run run:next-provider-depth-step",
+      "auditCommand": "npm run audit:source-acquisition-completion-plan",
+      "commands": [
+        "npm run run:next-provider-depth-step",
+        "npm run audit:source-acquisition-completion-plan"
+      ]
+    },
+    {
+      "executionPriority": 2,
+      "blockerId": "knowledge_content_depth",
+      "family": "knowledge_content",
+      "status": "critical_gap",
+      "queueArtifact": "docs/generated/knowledge-content-status-queue-2026-06-18.json",
+      "executionArtifact": "docs/generated/knowledge-content-status-queue-2026-06-18.json",
+      "supportingArtifacts": [
+        "docs/generated/authored-missing-source-targets-2026-06-18.json",
+        "docs/generated/knowledge-content-status-queue-2026-06-18.json",
+        "knowledge-target:knowledge-medicaid-school-based-services"
+      ],
+      "queueCount": 4,
+      "nextAction": "Run the bounded knowledge_content wave for this exact source target.",
+      "successCondition": "No unknown journey-content gaps remain; every exact knowledge target is promoted, duplicate, deferred, blocked, staged, or rejected with saved evidence.",
+      "entryCommand": "npm run run:next-knowledge-content-step",
+      "auditCommand": "npm run audit:knowledge-content-status-queue",
+      "commands": [
+        "npm run run:next-knowledge-content-step",
+        "npm run audit:knowledge-content-status-queue"
+      ]
+    },
+    {
+      "executionPriority": 3,
+      "blockerId": "advocate_directory_depth",
+      "family": "advocates_legal",
+      "status": "meaningful_but_not_exhaustive",
+      "queueArtifact": "docs/generated/advocate-depth-queue-2026-06-18.json",
+      "executionArtifact": "docs/generated/advocate-depth-queue-2026-06-18.json",
+      "supportingArtifacts": [],
+      "queueCount": 0,
+      "nextAction": "Advocate depth queue is empty.",
+      "successCondition": "Truth-safe advocate and legal-support depth is no longer a top blocker and every remaining advocate gap is explicitly queued, staged, rejected, blocked, or deferred.",
+      "entryCommand": "npm run run:next-advocate-depth-step",
+      "auditCommand": "npm run audit:advocate-depth-queue",
+      "commands": [
+        "npm run run:next-advocate-depth-step",
+        "npm run audit:advocate-depth-queue"
+      ]
+    },
+    {
+      "executionPriority": 4,
+      "blockerId": "directory_foundation_signals",
+      "family": "providers_care",
+      "status": "partial",
+      "queueArtifact": "docs/generated/directory-foundation-enrichment-queue-2026-06-18.json",
+      "executionArtifact": "docs/generated/directory-foundation-enrichment-queue-2026-06-18.json",
+      "supportingArtifacts": [],
+      "queueCount": 0,
+      "nextAction": "Directory foundation enrichment queue is empty.",
+      "successCondition": "Meaningful live accessibility, intake, modality, and availability signals exist where explicitly source-backed across providers, nonprofits, and advocates.",
+      "entryCommand": "npm run run:next-directory-foundation-step",
+      "auditCommand": "npm run audit:directory-foundation-enrichment-queue",
+      "commands": [
+        "npm run run:next-directory-foundation-step",
+        "npm run audit:directory-foundation-enrichment-queue"
+      ]
+    },
+    {
+      "executionPriority": 5,
+      "blockerId": "normalization_depth",
+      "family": "providers_care",
+      "status": "partial",
+      "queueArtifact": "docs/generated/normalization-gap-queue-2026-06-18.json",
+      "executionArtifact": "docs/generated/normalization-gap-queue-2026-06-18.json",
+      "supportingArtifacts": [],
+      "queueCount": 0,
+      "nextAction": "Run the normalization helper and audit the saved gap queue before deepening locations.",
+      "successCondition": "Location-rich discovery no longer depends on weak org-level assumptions and all remaining normalization gaps are explicit and evidence-bound.",
+      "entryCommand": "npm run run:next-normalization-step",
+      "auditCommand": "npm run audit:normalization-gap-queue",
+      "commands": [
+        "npm run run:next-normalization-step",
+        "npm run audit:normalization-gap-queue"
+      ]
+    }
+  ]
+}

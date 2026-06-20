@@ -1,0 +1,79 @@
+{
+  "generatedAt": "2026-06-18T04:15:01.645Z",
+  "mode": "apply",
+  "inputPath": "docs/generated/advocate-manual-review-queue-2026-06-18.json",
+  "dbPath": "ca_disability_navigator.db",
+  "summary": {
+    "inputRows": 8,
+    "appliedRows": 8,
+    "appliedByBlocker": {
+      "multistate_advocate_without_county": 3,
+      "missing_advocate_county_resolution": 3,
+      "generic_advocate_name": 2
+    },
+    "skippedByReason": {},
+    "appliedByReviewStatus": {
+      "blocked_multistate_advocate_without_county": 3,
+      "blocked_missing_advocate_county_resolution": 3,
+      "blocked_generic_advocate_name": 2
+    }
+  },
+  "decisions": [
+    {
+      "rowId": 4991,
+      "stateId": "multi-state",
+      "status": "applied",
+      "reviewStatus": "blocked_multistate_advocate_without_county",
+      "blockerKey": "multistate_advocate_without_county"
+    },
+    {
+      "rowId": 4992,
+      "stateId": "texas",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_advocate_county_resolution",
+      "blockerKey": "missing_advocate_county_resolution"
+    },
+    {
+      "rowId": 4993,
+      "stateId": "new-jersey",
+      "status": "applied",
+      "reviewStatus": "blocked_generic_advocate_name",
+      "blockerKey": "generic_advocate_name"
+    },
+    {
+      "rowId": 4994,
+      "stateId": "arizona",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_advocate_county_resolution",
+      "blockerKey": "missing_advocate_county_resolution"
+    },
+    {
+      "rowId": 4995,
+      "stateId": "multi-state",
+      "status": "applied",
+      "reviewStatus": "blocked_multistate_advocate_without_county",
+      "blockerKey": "multistate_advocate_without_county"
+    },
+    {
+      "rowId": 4996,
+      "stateId": "multi-state",
+      "status": "applied",
+      "reviewStatus": "blocked_generic_advocate_name",
+      "blockerKey": "generic_advocate_name"
+    },
+    {
+      "rowId": 4997,
+      "stateId": "louisiana",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_advocate_county_resolution",
+      "blockerKey": "missing_advocate_county_resolution"
+    },
+    {
+      "rowId": 4998,
+      "stateId": "multi-state",
+      "status": "applied",
+      "reviewStatus": "blocked_multistate_advocate_without_county",
+      "blockerKey": "multistate_advocate_without_county"
+    }
+  ]
+}

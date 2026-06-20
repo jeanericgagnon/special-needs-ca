@@ -1,0 +1,354 @@
+{
+  "generatedAt": "2026-06-19T23:21:09.836Z",
+  "generatedDate": "2026-06-19",
+  "purpose": "False-positive taxonomy for launch scraper families so blocked/error shells, generic agency pages, and weak directory captures are handled consistently across validator, queue, and QA surfaces.",
+  "classCount": 4,
+  "rows": [
+    {
+      "taxonomyClass": "blocked_error_shell",
+      "appliesToFamilies": [
+        "education_routing",
+        "knowledge_content",
+        "programs_benefits",
+        "waivers",
+        "program_waitlists"
+      ],
+      "detectionSignals": [
+        "pageTitle or heading contains Access Denied, Page Not Found, 404, 403, or Forbidden",
+        "text sample contains request-blocked or permission-denied language",
+        "page identity is generic error text rather than a real program, routing body, or article title"
+      ],
+      "validatorOutcomes": [
+        "missing_basic_signal",
+        "missing_action_signal",
+        "knowledge_summary_too_thin"
+      ],
+      "queueDisposition": "defer_blocked_source",
+      "nextLane": "repair_first",
+      "rationale": "Blocked or error shells should never count as successful fetch depth, even when they technically contain a link or browser chrome.",
+      "exampleFamilies": [
+        "education_routing",
+        "knowledge_content"
+      ],
+      "queueAllowedNextLanes": [
+        "defer_blocked_source",
+        "author_first",
+        "repair_first"
+      ],
+      "examples": [
+        {
+          "family": "education_routing",
+          "sourceUrl": "https://www.fldoe.org/schools/school-choice/k-12-schools/",
+          "pageTitle": "Access Denied",
+          "validationReasons": [
+            "missing_basic_signal"
+          ],
+          "savedPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-19T00-42-52-835Z/pages/00004-florida-education-routing-florida-school-district-directory.html",
+          "expectedNegativeFixtures": [
+            {
+              "description": "Thin education page with no phone, no email, and no usable routing link.",
+              "expectedRejectionReasons": [
+                "missing_basic_signal"
+              ]
+            }
+          ]
+        },
+        {
+          "family": "knowledge_content",
+          "sourceUrl": "https://www.ssa.gov/benefits/disability/apply-child.html",
+          "pageTitle": "Access Denied",
+          "validationReasons": [
+            "knowledge_summary_too_thin"
+          ],
+          "savedPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-18T03-38-52-430Z/pages/00005-national-knowledge-content-ssa-apply-for-child-disability-benefits.html",
+          "expectedNegativeFixtures": [
+            {
+              "description": "Guidance page from non-trusted or weak source domain.",
+              "expectedRejectionReasons": [
+                "knowledge_requires_high_trust_source"
+              ]
+            },
+            {
+              "description": "Trusted article page with no extractable title.",
+              "expectedRejectionReasons": [
+                "missing_knowledge_title"
+              ]
+            },
+            {
+              "description": "Trusted article page whose extracted summary is too thin.",
+              "expectedRejectionReasons": [
+                "knowledge_summary_too_thin"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "taxonomyClass": "generic_program_shell",
+      "appliesToFamilies": [
+        "programs_benefits",
+        "waivers",
+        "program_waitlists"
+      ],
+      "detectionSignals": [
+        "page names a department or agency shell rather than a distinct program or waiver",
+        "no explicit action path survives except generic site navigation",
+        "program identity depends on page chrome instead of content-specific headings or steps"
+      ],
+      "validatorOutcomes": [
+        "missing_program_name",
+        "missing_action_signal"
+      ],
+      "queueDisposition": "promotion_only",
+      "nextLane": "author_first",
+      "rationale": "Generic agency shells create false program coverage and should be replaced with exact actionable program targets.",
+      "exampleFamilies": [
+        "programs_benefits",
+        "waivers",
+        "program_waitlists"
+      ],
+      "queueAllowedNextLanes": [],
+      "examples": [
+        {
+          "family": "programs_benefits",
+          "sourceUrl": "https://dbhdid.ky.gov/",
+          "pageTitle": "Department for Behavioral Health, Developmental and Intellectual Disabilities",
+          "validationReasons": [
+            "missing_action_signal"
+          ],
+          "savedPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-18T23-22-47-034Z/pages/00001-kentucky-programs-benefits-kentucky-self-direction-services.html",
+          "expectedNegativeFixtures": [
+            {
+              "description": "Generic agency page that never names a distinct program.",
+              "expectedRejectionReasons": [
+                "missing_program_name"
+              ]
+            },
+            {
+              "description": "Program explainer without apply link, outbound action path, or phone.",
+              "expectedRejectionReasons": [
+                "missing_action_signal"
+              ]
+            }
+          ]
+        },
+        {
+          "family": "waivers",
+          "sourceUrl": "https://dbhdid.ky.gov/hcbs",
+          "pageTitle": "Department for Behavioral Health, Developmental and Intellectual Disabilities",
+          "validationReasons": [
+            "missing_action_signal"
+          ],
+          "savedPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-19T00-59-54-445Z/pages/00001-kentucky-waivers-kentucky-hcbs-waivers.html",
+          "expectedNegativeFixtures": [
+            {
+              "description": "Generic Medicaid page with no distinct waiver identity.",
+              "expectedRejectionReasons": [
+                "missing_program_name"
+              ]
+            },
+            {
+              "description": "Waiver summary page with no application/contact step.",
+              "expectedRejectionReasons": [
+                "missing_action_signal"
+              ]
+            }
+          ]
+        },
+        {
+          "family": "program_waitlists",
+          "sourceUrl": "https://dbhdid.ky.gov/",
+          "pageTitle": "Department for Behavioral Health, Developmental and Intellectual Disabilities",
+          "validationReasons": [
+            "missing_action_signal"
+          ],
+          "savedPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-19T01-05-07-122Z/pages/00002-kentucky-program-waitlists-kentucky-self-direction-services-enrollment-queue.html",
+          "expectedNegativeFixtures": [
+            {
+              "description": "Program page with no named program or waiver identity.",
+              "expectedRejectionReasons": [
+                "missing_program_name"
+              ]
+            },
+            {
+              "description": "Waitlist mention inferred from generic program copy without explicit action signal.",
+              "expectedRejectionReasons": [
+                "missing_action_signal"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "taxonomyClass": "contactless_directory_shell",
+      "appliesToFamilies": [
+        "education_routing",
+        "medicaid_hhs_offices",
+        "dd_routing",
+        "providers_care"
+      ],
+      "detectionSignals": [
+        "no phone, no email, and no credible routing or office path on the captured page",
+        "directory or locator shell exists, but the saved page never resolves to a concrete office, district, or provider contact",
+        "entity name can be extracted, but actionable contact/location evidence is missing"
+      ],
+      "validatorOutcomes": [
+        "missing_basic_signal",
+        "missing_office_phone",
+        "missing_office_address",
+        "missing_provider_contact_signal",
+        "missing_dd_contact_signal"
+      ],
+      "queueDisposition": "repair_first",
+      "nextLane": "author_first",
+      "rationale": "A shell directory without contact evidence should trigger more exact targeting or repair, not count as live searchable help.",
+      "exampleFamilies": [
+        "education_routing",
+        "medicaid_hhs_offices",
+        "providers_care"
+      ],
+      "queueAllowedNextLanes": [
+        "repair_first",
+        "ready_target_scrape",
+        "do_not_scrape_quarantined"
+      ],
+      "examples": [
+        {
+          "family": "education_routing",
+          "sourceUrl": "https://www.fldoe.org/schools/school-choice/k-12-schools/",
+          "pageTitle": "Access Denied",
+          "validationReasons": [
+            "missing_basic_signal"
+          ],
+          "savedPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-19T00-42-52-835Z/pages/00004-florida-education-routing-florida-school-district-directory.html",
+          "expectedNegativeFixtures": [
+            {
+              "description": "Thin education page with no phone, no email, and no usable routing link.",
+              "expectedRejectionReasons": [
+                "missing_basic_signal"
+              ]
+            }
+          ]
+        },
+        {
+          "family": "medicaid_hhs_offices",
+          "sourceUrl": "https://www.dhs.state.il.us/page.aspx?module=12",
+          "pageTitle": "IDHS: Office Locator",
+          "validationReasons": [
+            "missing_office_address"
+          ],
+          "savedPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-19T01-15-57-999Z/pages/00002-illinois-medicaid-hhs-offices-idhs-family-community-resource-centers-fcrc-locator.html",
+          "expectedNegativeFixtures": [
+            {
+              "description": "County office page that fails to expose an office name.",
+              "expectedRejectionReasons": [
+                "missing_office_name"
+              ]
+            },
+            {
+              "description": "Office page with no phone.",
+              "expectedRejectionReasons": [
+                "missing_office_phone"
+              ]
+            },
+            {
+              "description": "Office page with no physical address.",
+              "expectedRejectionReasons": [
+                "missing_office_address"
+              ]
+            }
+          ]
+        },
+        {
+          "family": "providers_care",
+          "sourceUrl": "https://www.marcus.org/care-and-services/medical-services",
+          "pageTitle": "Medical Services | Marcus Autism Center",
+          "validationReasons": [
+            "missing_provider_contact_signal"
+          ],
+          "savedPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-19T01-34-25-789Z/pages/00006-georgia-providers-care-marcus-autism-center-medical-services.html",
+          "expectedNegativeFixtures": [
+            {
+              "description": "Provider shell page that never names the clinic or program.",
+              "expectedRejectionReasons": [
+                "missing_provider_name"
+              ]
+            },
+            {
+              "description": "Named provider page with no phone, email, address, or other public contact signal.",
+              "expectedRejectionReasons": [
+                "missing_provider_contact_signal"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "taxonomyClass": "thin_or_untrusted_knowledge_shell",
+      "appliesToFamilies": [
+        "knowledge_content"
+      ],
+      "detectionSignals": [
+        "summary is too thin to be useful after boilerplate removal",
+        "source is not official or not on the high-trust allowlist",
+        "article title is present, but the captured page is effectively blocked boilerplate or generic legal text with no journey value"
+      ],
+      "validatorOutcomes": [
+        "knowledge_requires_high_trust_source",
+        "missing_knowledge_title",
+        "knowledge_summary_too_thin"
+      ],
+      "queueDisposition": "defer_blocked_source",
+      "nextLane": "author_first",
+      "rationale": "Knowledge pages should be promoted only when the public article is trustworthy and materially useful, not merely crawlable.",
+      "exampleFamilies": [
+        "knowledge_content"
+      ],
+      "queueAllowedNextLanes": [
+        "defer_blocked_source",
+        "author_first",
+        "repair_first"
+      ],
+      "examples": [
+        {
+          "family": "knowledge_content",
+          "sourceUrl": "https://www.ssa.gov/benefits/disability/apply-child.html",
+          "pageTitle": "Access Denied",
+          "validationReasons": [
+            "knowledge_summary_too_thin"
+          ],
+          "savedPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-18T03-38-52-430Z/pages/00005-national-knowledge-content-ssa-apply-for-child-disability-benefits.html",
+          "expectedNegativeFixtures": [
+            {
+              "description": "Guidance page from non-trusted or weak source domain.",
+              "expectedRejectionReasons": [
+                "knowledge_requires_high_trust_source"
+              ]
+            },
+            {
+              "description": "Trusted article page with no extractable title.",
+              "expectedRejectionReasons": [
+                "missing_knowledge_title"
+              ]
+            },
+            {
+              "description": "Trusted article page whose extracted summary is too thin.",
+              "expectedRejectionReasons": [
+                "knowledge_summary_too_thin"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "invariants": [
+    "A blocked or error shell must never count as successful family coverage.",
+    "A generic agency shell must not be promoted as a program or waiver just because it has navigation links.",
+    "A contactless directory shell must move into repair/authoring rather than counting as local office or provider depth.",
+    "A thin or untrusted knowledge shell must stay out of public article coverage until a reviewed replacement exists."
+  ]
+}

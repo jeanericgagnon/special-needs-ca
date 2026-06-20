@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-06-18T03:28:26.811Z",
+  "mode": "dry-run",
+  "stateFilter": "alaska",
+  "inputPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/provider-placeholder-replacement-decisions.json",
+  "summary": {
+    "inputRows": 1,
+    "appliedStates": 0,
+    "appliedPlaceholderRows": 0,
+    "appliedReplacements": 0,
+    "filesChanged": 0,
+    "skippedByReason": {
+      "missing_placeholder_row": 1
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "alaska",
+      "placeholderSourceName": "anthc.org",
+      "status": "skipped_missing_placeholder_row",
+      "replacementCount": 3
+    }
+  ]
+}

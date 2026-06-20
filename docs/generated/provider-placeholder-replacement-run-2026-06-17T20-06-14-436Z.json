@@ -1,0 +1,38 @@
+{
+  "generatedAt": "2026-06-17T20:06:14.438Z",
+  "mode": "apply",
+  "stateFilter": "missouri",
+  "inputPath": "data/provider-placeholder-replacement-decisions.json",
+  "summary": {
+    "inputRows": 1,
+    "appliedStates": 1,
+    "appliedReplacements": 3,
+    "filesChanged": 1,
+    "skippedByReason": {}
+  },
+  "decisions": [
+    {
+      "stateId": "missouri",
+      "placeholderSourceName": "Missouri Children's Hospital Clinics",
+      "status": "applied",
+      "replacementCount": 3,
+      "replacements": [
+        {
+          "source_name": "St. Louis Children's Hospital",
+          "source_url": "https://www.stlouischildrens.org/",
+          "domain": "stlouischildrens.org"
+        },
+        {
+          "source_name": "Children's Mercy Kansas City",
+          "source_url": "https://www.childrensmercy.org/",
+          "domain": "childrensmercy.org"
+        },
+        {
+          "source_name": "SSM Health Cardinal Glennon Children's Hospital",
+          "source_url": "http://www.cardinalglennon.com/",
+          "domain": "cardinalglennon.com"
+        }
+      ]
+    }
+  ]
+}

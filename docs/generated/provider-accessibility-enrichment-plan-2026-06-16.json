@@ -1,0 +1,238 @@
+{
+  "generatedAt": "2026-06-16",
+  "dbPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/frontend/ca_disability_navigator.db",
+  "summary": {
+    "trustedPublicProviders": 39,
+    "providersWithAccessibility": 0,
+    "stagingClueTotals": {
+      "english": 0,
+      "spanish": 0,
+      "asl": 0,
+      "interpreter": 0,
+      "wheelchair": 0,
+      "transportation": 0,
+      "homeVisits": 0,
+      "telehealth": 0
+    },
+    "statesWithProviderRows": 7,
+    "statesNeedingSourcePull": 7
+  },
+  "states": [
+    {
+      "stateId": "florida",
+      "providerRows": 14,
+      "accessibilityRows": 0,
+      "accessibilityPct": 0,
+      "topHosts": [
+        "floridacard.org",
+        "ucf-card.org",
+        "card-usf.fmhi.usf.edu",
+        "fau.edu",
+        "fsucard.com",
+        "card.ufl.edu"
+      ],
+      "needsSourcePull": true
+    },
+    {
+      "stateId": "texas",
+      "providerRows": 9,
+      "accessibilityRows": 0,
+      "accessibilityPct": 0,
+      "topHosts": [
+        "texaschildrens.org",
+        "cookchildrens.org",
+        "calliercenter.utdallas.edu",
+        "dellchildrens.net",
+        "uth.edu",
+        "utsouthwestern.edu"
+      ],
+      "needsSourcePull": true
+    },
+    {
+      "stateId": "pennsylvania",
+      "providerRows": 7,
+      "accessibilityRows": 0,
+      "accessibilityPct": 0,
+      "topHosts": [
+        "chop.edu",
+        "chp.edu",
+        "pennstatehealth.org",
+        "geisinger.org",
+        "stchristophershospital.com",
+        "templehealth.org"
+      ],
+      "needsSourcePull": true
+    },
+    {
+      "stateId": "illinois",
+      "providerRows": 6,
+      "accessibilityRows": 0,
+      "accessibilityPct": 0,
+      "topHosts": [
+        "luriechildrens.org",
+        "rush.edu",
+        "ahs.uic.edu",
+        "carle.org",
+        "osfhealthcare.org",
+        "thehopeclinic.org"
+      ],
+      "needsSourcePull": true
+    },
+    {
+      "stateId": "georgia",
+      "providerRows": 1,
+      "accessibilityRows": 0,
+      "accessibilityPct": 0,
+      "topHosts": [
+        "marcus.org"
+      ],
+      "needsSourcePull": true
+    },
+    {
+      "stateId": "north-carolina",
+      "providerRows": 1,
+      "accessibilityRows": 0,
+      "accessibilityPct": 0,
+      "topHosts": [
+        "med.unc.edu"
+      ],
+      "needsSourcePull": true
+    },
+    {
+      "stateId": "ohio",
+      "providerRows": 1,
+      "accessibilityRows": 0,
+      "accessibilityPct": 0,
+      "topHosts": [
+        "nationwidechildrens.org"
+      ],
+      "needsSourcePull": true
+    }
+  ],
+  "lanes": {
+    "sourcePullStates": [
+      {
+        "stateId": "florida",
+        "providerRows": 14,
+        "accessibilityRows": 0,
+        "accessibilityPct": 0,
+        "topHosts": [
+          "floridacard.org",
+          "ucf-card.org",
+          "card-usf.fmhi.usf.edu",
+          "fau.edu",
+          "fsucard.com",
+          "card.ufl.edu"
+        ],
+        "needsSourcePull": true
+      },
+      {
+        "stateId": "texas",
+        "providerRows": 9,
+        "accessibilityRows": 0,
+        "accessibilityPct": 0,
+        "topHosts": [
+          "texaschildrens.org",
+          "cookchildrens.org",
+          "calliercenter.utdallas.edu",
+          "dellchildrens.net",
+          "uth.edu",
+          "utsouthwestern.edu"
+        ],
+        "needsSourcePull": true
+      },
+      {
+        "stateId": "pennsylvania",
+        "providerRows": 7,
+        "accessibilityRows": 0,
+        "accessibilityPct": 0,
+        "topHosts": [
+          "chop.edu",
+          "chp.edu",
+          "pennstatehealth.org",
+          "geisinger.org",
+          "stchristophershospital.com",
+          "templehealth.org"
+        ],
+        "needsSourcePull": true
+      },
+      {
+        "stateId": "illinois",
+        "providerRows": 6,
+        "accessibilityRows": 0,
+        "accessibilityPct": 0,
+        "topHosts": [
+          "luriechildrens.org",
+          "rush.edu",
+          "ahs.uic.edu",
+          "carle.org",
+          "osfhealthcare.org",
+          "thehopeclinic.org"
+        ],
+        "needsSourcePull": true
+      },
+      {
+        "stateId": "georgia",
+        "providerRows": 1,
+        "accessibilityRows": 0,
+        "accessibilityPct": 0,
+        "topHosts": [
+          "marcus.org"
+        ],
+        "needsSourcePull": true
+      },
+      {
+        "stateId": "north-carolina",
+        "providerRows": 1,
+        "accessibilityRows": 0,
+        "accessibilityPct": 0,
+        "topHosts": [
+          "med.unc.edu"
+        ],
+        "needsSourcePull": true
+      },
+      {
+        "stateId": "ohio",
+        "providerRows": 1,
+        "accessibilityRows": 0,
+        "accessibilityPct": 0,
+        "topHosts": [
+          "nationwidechildrens.org"
+        ],
+        "needsSourcePull": true
+      }
+    ],
+    "sustainStates": []
+  },
+  "recommendedSequence": [
+    {
+      "step": 1,
+      "label": "Do not attempt provider accessibility backfill from checked-in staging",
+      "reason": "The checked-in provider staging rows currently show zero explicit language or accessibility clues, so any automated backfill would be invented rather than source-backed."
+    },
+    {
+      "step": 2,
+      "label": "Run fresh provider source pulls for states that already have trusted provider rows",
+      "reason": "These states are closest to producing a useful accessibility-rich live sample without broad new expansion.",
+      "targetStates": [
+        "florida",
+        "texas",
+        "pennsylvania",
+        "illinois",
+        "georgia",
+        "north-carolina",
+        "ohio"
+      ]
+    },
+    {
+      "step": 3,
+      "label": "Prefer first-party provider pages that explicitly mention languages, telehealth, interpreter access, or transportation help",
+      "reason": "This is the smallest safe path to truthful accessibility enrichment."
+    },
+    {
+      "step": 4,
+      "label": "Re-run accessibility and sample audits after each state pull",
+      "reason": "The goal is to earn at least one accessibility-rich provider sample per active provider state cluster, not to bulk-fill uncertain booleans."
+    }
+  ]
+}

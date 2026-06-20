@@ -1,0 +1,4180 @@
+{
+  "generatedAt": "2026-06-18T15:09:31.236Z",
+  "mode": "apply",
+  "inputPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/advocate-source-repair-decision-template-2026-06-18.json",
+  "summary": {
+    "inputRows": 832,
+    "resolvedRows": 0,
+    "deferredRows": 826,
+    "filesChanged": 2,
+    "skippedByReason": {
+      "row_not_in_live_repair_queue": 6
+    }
+  },
+  "decisions": [
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://nynp.net/",
+      "status": "skipped_row_not_in_live_repair_queue",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "blocked|needs_review_unknown|http://www.wct-law.com/",
+      "status": "skipped_row_not_in_live_repair_queue",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "retryable|network_timeout|http://ideanet.doe.state.in.us/legal/welcome.html",
+      "status": "skipped_row_not_in_live_repair_queue",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://educationservicesspecialist.com/",
+      "status": "skipped_row_not_in_live_repair_queue",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://ieprescue.com/",
+      "status": "skipped_row_not_in_live_repair_queue",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://rbgiddinglaw.com/",
+      "status": "skipped_row_not_in_live_repair_queue",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.reachingpotentials.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.reismancarolla.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "blocked|needs_review_unknown|http://www.advocacyla.org/",
+      "status": "applied_deferred_blocked_source",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "blocked|needs_review_unknown|http://www.flspedlaw.com/",
+      "status": "applied_deferred_blocked_source",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "retryable|server_500|http://www.carlazeiteraba.com/",
+      "status": "applied_deferred_blocked_source",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|stale_or_invalid_404|http://studentsrights.com/",
+      "status": "applied_deferred_blocked_source",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://3-tier.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://4peaksconsulting.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://aadd.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://abc123achieve.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://abc4lifesuccess.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://abcnh.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://abehavioralconsult.tripod.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://ablelaw.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://academicsuccessadvocates.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://accesstoadvocacy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://acfeinc.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://achildadvocacyplace.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://achildspathback.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://adamsesq.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://adarightstrust.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://adayinourshoes.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://addcoachingforlife.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://adhdmoodandbehaviorcenter.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://adhdservices.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://advocate4kids.blogspot.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://advocatesforchildren.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://advocatesforspecialeducation.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://advocatesofnorthernarizona.weebly/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://advocatetipoftheday.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://alberoadvocacy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://alexandereducationalservices.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://allergywordsconsulting.com/vpweb",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://alphabetsoupspeech.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://alternativeteaching.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://alvarezadvocacy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://amdgchildavocates.vpweb.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://angelacrestherapy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://angelsinautism.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://annparadislaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://appliedbehavioralconsulting.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://appliedbehavioralstrategies.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://applinspecialeducation.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://arcofpueblo.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://aristidelaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://arkelderlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://arsoptons4you.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://askauntalex.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://asktheadvocate.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://atkinsonreading.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://attentionfix.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://attorneyatlaw.hackensacknj.co/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://attorneywilliamjtuck.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://attyhemdal.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://attykarengreene.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://atwoodgameros.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://autismadvisorsandadvocates.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://autismadvocator.blogspot.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://autismandeducationaldiagnostics.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://autismanswersla.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://autismcenterofnebraska.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://autismcommunitynetworkofelpaso.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://autismfamilyservices.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://autismunbound.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://awesomeautistics.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://awlawohio.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://axtelltexaslaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://bachfamilylaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://badgerarakaki.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://barbaraeastonlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://baystatespecialeducationadvocacy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://bcntlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://beachestherapy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://beaconvalleyliteracy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://beckymiltonadvocacy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://behavioralandeducationalconsultants.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://behavioraldiscoveries.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://behavioralevolution.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://behavioralgrowingtree.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://behaviorinterventions.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://belzlaw.comcastbiz.net/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://bensonadvocates.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://berdugolaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://berger-edlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://berlinerspecialedlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://berneylaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://bfdeducationalservices.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://bonnierobb.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://bouzarilaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://bramconsultants.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://brighthorizonsadvocacy.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://broadwaylaw.us/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://bussettlegal.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://bzymeklaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://callahanfusco.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://capecodadvocate.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://caresresources.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://carilevinlcsw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://carterinternationalconsulting.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://cashbacknow.us/id76.html",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://cawn-krantz.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://cedartree.clinic/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://centerforfamilyinvolvement.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://chalkdustinc.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://chayaposnerlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://childandfamilypsychological.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://childfocusedsolutionsct.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://childrenslawgroup.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://circle47.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://circleoffriendsadvocacy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://cirkielaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://cjllaw.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://clearidea.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://clix.to/open",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://coastaleducationadvocacy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://college-finder.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://concerningeducation.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://confidentsolutions.wordpress.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://consoloharbison.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://cooperedlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://corneliuslaw.specialneedsplanners.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://creativeadvocacysolutions.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://crossmanconsulting.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://cuddylawfirm.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://custerllc.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://d2educationalservices.bravehost.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://daillc.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://daphnecorder.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://davidshawatty.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://debvybconsulting.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://decrescenzolaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://dehancockconsultancy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://depts.washington.edu/fadu",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://derekbeaulieu.homestead.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://dfalksteinphdllc.webs.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://disabilitycaremanagement.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://djbyrnelaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://dmvadvocate.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://doctorsusanadler.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://dominalawny.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://donaldhamme.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://downsdesignsdreams.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://drbarberphd.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://drcynthiahays.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://drdougleber.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://drjuliemorrison.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://drmontagnolo.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://drmyronharvey.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://drsatwood.googlepages.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://dsil.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://duhonadvocacy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://dynamicedsolutions.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://dyslexiaservntx.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://dyslexiastlouis.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://eacllc.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://eakinbehaviorconsultva.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://ed-resources.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://ed21cs.com/advocacy-for-parents",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://edelmancareers.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://edequityohio.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://edspecialists.net/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://educateusadvocacy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://education-advocacy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://education.state.mn.us/mde/accountability_programs/compliance_and_assistance/special_education_due_process_hearings",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://educationaladvocacyandconsulting.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://educationalalternativesllc.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://educationalconsultingservices.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://educationandjuvenilelaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://educationchampion.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://educationdps.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://educationlaw.co/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://educationteamallies.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://eduforspecialneeds.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://eiwelcome.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://elderadvisorslaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://elements4successchildadvocacy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://ellenjhutt.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://empoweredpathwaysed.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://empowertogrow.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://estateplanstrategies.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://everychildcanread.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://exceptionaladvocacyservices.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://exceptionallearnersconsulting.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://facebook.com/voiceadvocacycenter",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://fairfieldcountylearning.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://familyaddventures.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://familyanddivorcesolutions.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://familyfriendeducationservices.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://familylaw.wilentz.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://fasarizona.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://fickeducation.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://fivestareducationadvocacygroup.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://flagfamilylaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://footstepsofchange.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://forthepeople.com/traumatic_brain_injury.htm",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://frekingandbetz.com/attorneys/john-p-concannon",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://frompencilstopointer.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://fullpotential4life.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://gac.state.il.us/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://galined.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://gekimlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://gersteingrayson.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://glawpartners.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://globalnaturopath.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://goldadvocacy.net/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://goldcuvlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://groups.msn.com/havingfunwithautism",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://groups.yahoo.com/group/ga-advocatesnetwork",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://groups.yahoo.com/group/mcneeds",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://groups.yahoo.com/group/sped_psg",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://gtldnet.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://hall-law-firm.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://hammanlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://hawkadvocates.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://hearmesc.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://heartadvocates.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://heatherboylanphd.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://hennessey-edwards.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://herbitsky.weebly.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://hlsls.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://home.ptd.net/~rjd/pas",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://hope4txk.org/educational-advocacy",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://hopespringsadvocate.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://horizonsacademy.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://horniglaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://houstonida.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://https//www.lianebass.com",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://husiclaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://hyattlawsc.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://idarmb.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://iep504.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://iepadvantage.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://iepadvocates.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://iepmi.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://inclusiveexpectations.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://inclusivelearning.us/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://independentevaluatorct.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://individualizedresourcesandconsulting.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://indyangellsbehavior.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://insightsadvocacy.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://interactivekidsllc.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://ivielawgroupnv.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://janiceleporepsyd.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://jdadvocacy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://jenniferruoff.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://jennifersommerness.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://jerrytanenbaum.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://jerseycitylawfirm.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://jimwilsonlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://joelipinskiattorney.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://josephrabblaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://jsdsa.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://juliecarterlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://juliemayerbehavioralconsulting.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://justiceafse.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://jwcallananlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://kaneeducationlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://kathyeverett.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://katicalaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://kcslegal.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://kearneydoherty.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://keepingitspeciallysimple.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://kilbylaw.net/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://kistlereduconsultant.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://krlawfirm.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://kskinnerlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://ksweducationalconcepts.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://kyrasmithlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://lafchicago.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://lagmann.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://lalegacylaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://lathenslaw.net/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://lawbakshi.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://lawofficemjj.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://lawv.net/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://ldaofwny.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://lduboisadvocacy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://learninginthelivingroom.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://learningsocially.net/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://legalaidnc.org/acs",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://lewisjohs.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://liebenthal-levine.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://linkedin.com/in/emily-katz-williamson-m-ed-cags-89645b28",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://linkedin.com/in/marcusferrolaw",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://linkedin.com/lindalburdick",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://linksprc.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://linzerlawyer.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://lisaeisenberg.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://literacyconsult.net/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://literacylearningct.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://llawsonlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://loristephensllc.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://loughlinlatimer.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://louisapsych.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://lowelegalservices.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://lowstressparenting.wixsite.com/relationsrestored",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://lsem.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://lyndablock-advocacy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://lzream.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://maddoxspecialeducationadvocacy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://maiephelpandeduconsultant.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://mallmalisow.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://manesweinberg.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://marcielipsitt.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://marylandeducationlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://maspecialedlawyer.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://mcbloomlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://mcedac.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://meaningfulspedadvocacy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://meetup.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://members.aol.com/_ht_a/jamlady10/bizcard",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://members.aol.com/bmavin/stein.htm",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://meyettegreenlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://mgoldberglaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://michaelsmithma.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://midwestevaluationservices.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://mindshaperslp.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://missionempower.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://mnspecialeducation.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://monarchadvocacyltd.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://monarcheducationalconsulting.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://morrisgreenllc.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://mrhodey.processingskills.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://msd.dese.mo.gov/rcd",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://msek.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://msjanestutoring.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://mswdlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://mydisabilityresource.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://myeducationadvocate.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://myeducationaladvocate.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://mywebpages.comcast.net/ljheller",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://navigationed.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://ncbegin.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://neaccy.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://nelsonadvocacy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://nelsoneducationalconsulting.net/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://nesca-newton.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://neuhaus.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://neuroinclusiveminds.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://new-hope-advocacy.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://new.shiningstartherapy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://newchaptersconsulting.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://newteachersuccess.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://newyorkwills.net/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://nhadvocate.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://nhahealth.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://ninthstreetlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://njspecialedadvocate.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://northeasteducationadvocacy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://nwses.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://okohlawfirm.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://okspecialsolutions.blogspot.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://olrs.ohio.gov/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://oneilconsult.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://onevoiceforachild.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://opendoors-sped.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://options4lifeservices.bravehost.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://oraldeafed.org/schools/neworleans",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://otinmotionnh.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://ottoeducationalconsulting.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://pacesupport.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://palmettoelderlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://paralegalprocessserving.weebly.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://parentsattorney.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://parkercounsel.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://partnersinlearningllc.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://pathwayssea.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://pauletteselman.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://peacefuladvocate.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://peakgifted2e.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://penngrouptx.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://peterhoffmanlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://planningandcoaching.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://potenzalaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://precisionpediatricops.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://prizeteacher.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://protectedtomorrows.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://proudd.webs.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://pskfirm.com/practice-areas/education-law",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://psychologicalsolutionscenter.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://psychotherapy-mediation.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://puebloadvocacyspedservices.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://purdylawoffice.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://reshapiro.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://resourceeducationsolutions.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://rfhlegal.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://richardganulin.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://richeducationalconsulting.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://rofflaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://rosenspecialedlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://ross-jones-law.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://rostonlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://royalacademyeducation.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://rweltylaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://sankeylaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://saramaybouerphd.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://sccollegeplanners.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://schinaglelaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://schoolkidslawyer.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://schoollawcenter.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://sclegal.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://sdwconsults.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://seconny.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://sensoryeducation.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://serc.okstate.edu/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://sharoncuffcounseling.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://siekmanlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://sites.google.com/site/accesedconsulting",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://sites.google.com/site/peapsci",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://sites.google.com/view/educational-advocateconsultant/home",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://skipnews4you.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://smartideagroup.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://smartiepantsacademy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://smith-attorney.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://soareduservices.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://southsideeducationadvocates.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://specedadvocate.net/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://specedattorney.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://special-ed-advocate-frisco.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://special-education-advocate.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://specialedlaw.blogs.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://specialedlawfirm.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://specialeducationadvocacy.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://specialeducationlawattorney.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://specialeducationlawyerny.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://specialeducationsupport.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://specialneeds-law.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://specialneedsadvocacy.wordpress.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://specialneedsfamilyplanning.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://specialsolutions4specialneeds.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://spectrumwarriorsorg.godaddysites.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://sped-advocate.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://spedad.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://spedadvocateshtx.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://spedlawcenter.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://spedlegalfund.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://spedvocate.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://spedvocate.simdif.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://spellandread.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://spns.cc/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://srddlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://ssadisability.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://stambaughlawfirm.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://stcroixtrailblazers.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://stepbystepconsulting.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://stephanieplainpotter.com/j-solutions",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://stepsconsulting.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://stiskinlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://stoloff-law.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://stonesullivanlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://stridesofexcellence.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://stronglinktherapyservices.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://studentadvocacy.net/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://studentequitysolutions.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://studentfirstconsulting.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://successforkidswithhearingloss.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://susanclarklawgroup.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://susanhudkins.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://susanmagaziner.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://susanmarks-advocates.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://tackleadvocacy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://tahomaspecialneedsgroup.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://teriancellottiphd.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://texasdadvocate.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://theacademicadvocate.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://theadvocacyalliance.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://thecomcollab.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://theconnectedelephant.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://thectcplan.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://thecuriousedge.net/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://theeducationaladvocatellc.godaddysites.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://theeducationlawyer.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://theeducationnavigator.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://theginsburglawfirm.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://theideappl.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://theiepadvocate.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://theiepconnection.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://thelinkto.com/parentmentor",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://therapeutic-recreation.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://thespeechcenter.net/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://thewholechilddbp.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://thewholeperson.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://thinkingcenter.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://thrivebehavioralservices.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://tludwiglaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://tmkconsulting.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://topielvea.net/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://trspecialedlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://tutoringduluth.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://uniquestepsllc.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://unsickerlaw.typepad.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://uradvocate4childrenidea504.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://uvap.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://velezlegalservices.vpweb.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://verbalbehaviorhouston.vpweb.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://visioneerskc.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://vosburgheducationalconsulting.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://vp-medical.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://wallacelawoffice.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://warrioradvocatellc.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://waynerock.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://web.mac.com/drufondu",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://web.me.com/muttmeistr/kallisoneducationalconsulting/welcome.html",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://weinmanlawoffice.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://wendymarlowephd.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://wesleyspectrum.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://whattodoaboutcvi.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://winterlawpa.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://wiscarsonlawpc.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://withinulifecoaching.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.1wp.com/go/lisahrollins",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.4structures.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.4thespectrum.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.66law.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.aactnow.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.aajjp.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.aba-ok.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.aba-therapy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.abaconsultation.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.abbeybutcher.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.abceasttennessee.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.abilitiesdiva.weebly.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.abledadvocacy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.ablg.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.aboveallelseservices.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.acaciacenter.net/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.academicassessments.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.academicconsultingservices.net/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.academiclearningsolutions.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.accesseducationmi.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.accessii.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.accesstoeducation.net/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.acciinc.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.ace411.zoomshare.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.aces4you.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.aceseducationservices.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.acespalmbeach.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.acestutoring.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.achievelearning.net/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.acsadvocacy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.actutor.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.adamsadhdconsult.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.addadvocate.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.addcoach.info/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.addconsults.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.adhd-hope.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.adifferentlyabled.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.adlaureamllc.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.adornbeautycenterspa.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.advancedbehavioralsolutions.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.advancedcasemanagement.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.advocacybehaviorconsulting.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.advocacybuilders.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.advocacyforkids.net/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.advocacyforless.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.advocacyhv.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.advocacyinc.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.advocacynj.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.advocacysolutionsct.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.advocate4ed.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.advocate4mychild.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.advocate4specialed.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.advocate4sped.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.advocateforautism.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.advocatesforaccess.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.advocatesfv.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.advocatingmom.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.aecadvocacy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.aeioustudents.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.aerkis.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.aetcinc.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.ahappyhenderson.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.aina-ri.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.akaconsultingportland.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.alabamaspecialeducationlawyer.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.alder-robb.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.alianzalatinawi.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.all4kidsuccess.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.allaboutachievement.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.allchildrenwilllearn.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.allencounselingassociates.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.alliedlawgroup.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.alternativeautismsolutions.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.alternatives4teens.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.amabehavioralconsulting.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.amcohenlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.amorrisonlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.amsecsllc.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.andersonbehavioralconsulting.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.andrea-alvarez.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.anewrayofhope.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.angelfire.com/co4/chrisjonas",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.anitashenkman.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.anna-christina-advocacy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.anncrowleylaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.anotherlook.doctor/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.apn.150m.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.aporterlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.apositivenote.com/lorinneikirk.aspx",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.appelyost.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.applepsych.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.applied-behavior-analysis.net/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.appliedbehavioralstrategies.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.appliedgifteded.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.aquidneckiep.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.arcind.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.arcmass.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.arcoffortbend.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.arcofmonmouth.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.arcsc.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.arcservices.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.arcweldcounty.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.arizonaspecedadvocates.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.arkansaslaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.ascendlearningcenter.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.asd-doc.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.asdconsult.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.asdcounseling.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.asdfocus.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.asdk12.org/step",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.asdpuzzle.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.asgno.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.ashburnpsych.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.ashootingstarllc.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.askadvocate.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.askthebehavioranalyst.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.aspacetogrow.org/maria",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.aspecialneedsplan.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.aspectstlc.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.aspergerseducation.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.aspirecenterforlearning.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.asralbehavioralconsulting.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.athenseducatonal.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.atlantalearningconcepts.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.atlantapsychological.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.atpoo.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.atriskalternatives.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.attorneybarboza.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.attorneybrianwhite.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.attorneyforspecialneeds.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.aubreylaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.audiology-speech.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.auesomeachievers.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.augustalevylearningcenter.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.austlaw.biz/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.autism-answer.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.autism-aspeger-associates.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.autism-resources.net/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.autismadvocatefoundation.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.autismbehavioralconsulting.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.autismbehavioranalyst.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.autismbehaviorconsulting.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.autismconsultants-nh.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.autismoutreach.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.autismsolutions.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.autismspeaks.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.autismva.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.autisticadults.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.avidlearning.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.avvo.com/attorneys/44646-oh-todd-kotler-613168.html",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.azdisabilityattorney.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.azed.gov/ess/pinspals",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.azedconsultants.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.azhv.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.azparentadvocate.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.azspecialeducationlawyers.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.balancedperspective.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.ballewlawoffice.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.balloueducation.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.barbaraavilaconsulting.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.barbarabornsteinphd.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.barbaraebenstein.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.bargergaines.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.barrylewinlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.bartonedconsulting.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.basicsupport.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.bassgreen.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.bcc-asa.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.bcmnyc.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.bcs-florida.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.bdshelps.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.bdsra.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.beaconadvocates.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.beaconeducationalgroup.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.beaconeducationalsolutions.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.beautifulmindsinc.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.beautifulmindsofprinceton.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.begleylawyer.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.behaveconnect.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.behavior-analysis.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.behavioralcompassgroup.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.behavioralrescue.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.behaviorchanges.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.behaviorexcellence.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.behaviorexchange.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.behaviorsolutionsnj.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.behaviorsupport.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.behsolutions.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.believeicanacademy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.belkowitzlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.bellsouth.net/p/pwp-slcreferrals",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.benjaminnadig.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.bergerlearning.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.besteducationalconsultant.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.betterlearningnh.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.betteroutcomesforasd.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.betterschoolresults.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.bettyjgoldmanesq.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.beyondexpectationsconsulting.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.beyondlimitsmd.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.beyondspecialeducation.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.bfitzgeraldlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.blfhf.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.bloomspark.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.bluelightabaconsultants.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.blueseaeducation.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.bokmanlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.boostlearningenrichment.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.bostonaba.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.bostoneducationalspecialists.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.boweandassociates.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.bradleygoldsmithlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.braguelaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.brainlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.braintraining.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.brandnerlawfirm.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.brandtshermaninjury.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.brettdassociates.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.brettestevens.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.bridges-advocacy.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.brightbeginningsnh.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.brightfutureslearning.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.brightfuturesllc-co.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.brightmindstutoringnc.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.brownleylaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.brylanadvocates.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.burnhamwiesner.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.butterfliesforchange.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.butterflyconsulting.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.butterflyeffects.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.byyoursideadvocacy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.cabiatn.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.cadenzamusictherapy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.caffrylaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.cahillassociateslaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.calboslaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.calljr.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.cameron.edu/%7eshoppe",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.capabilitiesforlife.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.card.ufl.edu/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.cardinalhill.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.carehack.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.caretosharenj.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.carrielallstonllc.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.caryloberman.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.castadvocacy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.cbeckerlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.cch-law.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.ccsnma.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.cdc-law.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.cds.hawaii.edu/projects/myvoice",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.celebratesnp.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.cfcrights.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.charlesweinerlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.charquadelaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.chattanoogaautismcenter.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.cherrytreenp.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.chicagochildrensclinic.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.childadvocacyllc.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.childandfamilyarttherapycenter.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.childandfamilydevelopment.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.childedlaw.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.childfirstadvocates.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.childrenneedheroes.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.childrenslawky.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.childrensrightsinc.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.chrisedmundslawoffice.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.christycares.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.chsc.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.chudnof-eder.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.cincinnatieducationlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.cindyharney.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.circleoffriendsadvocacy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.circlesbcs.net/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.cirkielaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.communityadvocates.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.corchnoylaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.cuddylawfirm.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.davefrankel.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.doe.k12.ga.us/doe/legalservices/rules.asp",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.fhfofgno.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.idea504advocacy.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.jwadvocates.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.k12.wa.us/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.lawtexs.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.learningassoc.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.lsnv.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.margaretkay.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.masonconsult.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.mcandrewslaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.mckinleyryan.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.memspan.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.mychildwins.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.njlawfirm.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.reinforcementunlimited.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.rivkinlaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.shawlawgrouppllc.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.special-ed-law.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.specialeducationlawfirm.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.specialkidscompany.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.successadvantage.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.texasspecialeducationattorney.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.therightschool.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.thesnpcenter.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.tkennedylaw.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.traynorlawfirm.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.wct-law.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|http://www.youngmindsgrow.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|https://ilenemiller.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|https://sites.ed.gov/idea/idea-files/osep-memo-and-qa-on-dispute-resolution",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|https://specialsupportservices.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|https://www.actionbehavior.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|https://www.bals.org/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|https://www.hartliebhorste.com/",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|https://www.ndrn.org/about/ndrn-member-agencies",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    },
+    {
+      "repairKey": "source_repair|dns_lookup_failed|https://www.parentcenterhub.org/find-your-center",
+      "status": "applied_skipped_unresolved",
+      "reviewedSourceUrl": ""
+    }
+  ],
+  "outputs": {
+    "ledgerPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-state/advocate-source-repair-ledger.json",
+    "resolutionPackPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source_packs/advocate_source_repair_resolutions.json"
+  }
+}

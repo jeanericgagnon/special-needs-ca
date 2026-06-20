@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "source_url": "https://www.alabamaachieves.org/",
+    "confidence_score": 9.5,
+    "notes": "Official statewide Alabama special education support entrypoint covering all counties.",
+    "suggested_target_id": "al-ed-alsde-special-education",
+    "name": "Alabama State Department of Education Special Education",
+    "phone": "(334) 694-4782",
+    "agency_type": "state-special-education-support",
+    "counties_served": [
+      "autauga-al","baldwin-al","barbour-al","bibb-al","blount-al","bullock-al","butler-al","calhoun-al","chambers-al","cherokee-al","chilton-al","choctaw-al","clarke-al","clay-al","cleburne-al","coffee-al","colbert-al","conecuh-al","coosa-al","covington-al","crenshaw-al","cullman-al","dale-al","dallas-al","dekalb-al","elmore-al","escambia-al","etowah-al","fayette-al","franklin-al","geneva-al","greene-al","hale-al","henry-al","houston-al","jackson-al","jefferson-al","lamar-al","lauderdale-al","lawrence-al","lee-al","limestone-al","lowndes-al","macon-al","madison-al","marengo-al","marion-al","marshall-al","mobile-al","monroe-al","montgomery-al","morgan-al","perry-al","pickens-al","pike-al","randolph-al","russell-al","shelby-al","st-clair-al","sumter-al","talladega-al","tallapoosa-al","tuscaloosa-al","walker-al","washington-al","wilcox-al","winston-al"
+    ],
+    "website": "https://www.alabamaachieves.org/special-education/",
+    "evidence_level": "source_listed",
+    "verification_status": "verified",
+    "data_origin": "scraped"
+  }
+]

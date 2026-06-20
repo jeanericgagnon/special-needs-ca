@@ -1,0 +1,887 @@
+{
+  "generatedAt": "2026-06-16",
+  "sources": {
+    "informationCompleteness": "docs/generated/information-completeness-audit-2026-06-16.json",
+    "informationConfidence": "docs/generated/information-confidence-audit-2026-06-16.json",
+    "truthRegistry": "docs/generated/truth-registry-2026-06-16.json",
+    "wavePlan": "docs/state-upgrade-wave-plan.md",
+    "readinessReport": "docs/national-rollout-readiness-after-texas-florida.md"
+  },
+  "summary": {
+    "publicSafeProviderReadyStates": 7,
+    "remediationStates": 1,
+    "validationStates": 0,
+    "zeroRowStates": 42
+  },
+  "lanes": {
+    "remediation": [
+      {
+        "stateId": "california",
+        "stateName": "California",
+        "score": 77.8,
+        "overallConfidence": 83.3,
+        "totalProviderRows": 0,
+        "publicSafeProviders": 0,
+        "providerTruthScore": 0,
+        "publicSafeNonprofits": 871,
+        "advocatePublicSafeCount": 0,
+        "advocateCoverageLossCounties": 58,
+        "truthRegistryStatus": "public_safe_but_blocked",
+        "blockers": [
+          "no_public_safe_provider_layer_detected",
+          "no_public_safe_advocate_layer_detected",
+          "advocate_truth_gap"
+        ]
+      }
+    ],
+    "validation": [],
+    "sustain": [
+      {
+        "stateId": "florida",
+        "stateName": "Florida",
+        "score": 100,
+        "overallConfidence": 100,
+        "totalProviderRows": 14,
+        "publicSafeProviders": 14,
+        "providerTruthScore": 100,
+        "publicSafeNonprofits": 1125,
+        "advocatePublicSafeCount": 1313,
+        "advocateCoverageLossCounties": 0,
+        "truthRegistryStatus": "gold",
+        "blockers": []
+      },
+      {
+        "stateId": "texas",
+        "stateName": "Texas",
+        "score": 100,
+        "overallConfidence": 100,
+        "totalProviderRows": 9,
+        "publicSafeProviders": 9,
+        "providerTruthScore": 100,
+        "publicSafeNonprofits": 4505,
+        "advocatePublicSafeCount": 3551,
+        "advocateCoverageLossCounties": 0,
+        "truthRegistryStatus": "gold",
+        "blockers": []
+      },
+      {
+        "stateId": "pennsylvania",
+        "stateName": "Pennsylvania",
+        "score": 100,
+        "overallConfidence": 100,
+        "totalProviderRows": 7,
+        "publicSafeProviders": 7,
+        "providerTruthScore": 100,
+        "publicSafeNonprofits": 449,
+        "advocatePublicSafeCount": 973,
+        "advocateCoverageLossCounties": 0,
+        "truthRegistryStatus": "gold",
+        "blockers": []
+      },
+      {
+        "stateId": "illinois",
+        "stateName": "Illinois",
+        "score": 100,
+        "overallConfidence": 100,
+        "totalProviderRows": 6,
+        "publicSafeProviders": 6,
+        "providerTruthScore": 100,
+        "publicSafeNonprofits": 929,
+        "advocatePublicSafeCount": 1269,
+        "advocateCoverageLossCounties": 0,
+        "truthRegistryStatus": "gold",
+        "blockers": []
+      },
+      {
+        "stateId": "georgia",
+        "stateName": "Georgia",
+        "score": 100,
+        "overallConfidence": 100,
+        "totalProviderRows": 1,
+        "publicSafeProviders": 1,
+        "providerTruthScore": 100,
+        "publicSafeNonprofits": 812,
+        "advocatePublicSafeCount": 2184,
+        "advocateCoverageLossCounties": 0,
+        "truthRegistryStatus": "gold",
+        "blockers": []
+      },
+      {
+        "stateId": "north-carolina",
+        "stateName": "North Carolina",
+        "score": 100,
+        "overallConfidence": 100,
+        "totalProviderRows": 1,
+        "publicSafeProviders": 1,
+        "providerTruthScore": 100,
+        "publicSafeNonprofits": 823,
+        "advocatePublicSafeCount": 864,
+        "advocateCoverageLossCounties": 0,
+        "truthRegistryStatus": "gold",
+        "blockers": []
+      },
+      {
+        "stateId": "ohio",
+        "stateName": "Ohio",
+        "score": 100,
+        "overallConfidence": 100,
+        "totalProviderRows": 1,
+        "publicSafeProviders": 1,
+        "providerTruthScore": 100,
+        "publicSafeNonprofits": 619,
+        "advocatePublicSafeCount": 1061,
+        "advocateCoverageLossCounties": 0,
+        "truthRegistryStatus": "gold",
+        "blockers": []
+      }
+    ],
+    "zeroRowByWave": [
+      {
+        "waveId": "Wave A",
+        "entries": []
+      },
+      {
+        "waveId": "Wave B",
+        "entries": [
+          {
+            "stateId": "michigan",
+            "stateName": "Michigan",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 1015,
+            "advocatePublicSafeCount": 641,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave B"
+          },
+          {
+            "stateId": "new-jersey",
+            "stateName": "New Jersey",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 147,
+            "advocatePublicSafeCount": 545,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave B"
+          },
+          {
+            "stateId": "virginia",
+            "stateName": "Virginia",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 1157,
+            "advocatePublicSafeCount": 1435,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave B"
+          },
+          {
+            "stateId": "washington",
+            "stateName": "Washington",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 202,
+            "advocatePublicSafeCount": 343,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave B"
+          },
+          {
+            "stateId": "massachusetts",
+            "stateName": "Massachusetts",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 244,
+            "advocatePublicSafeCount": 314,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave B"
+          }
+        ]
+      },
+      {
+        "waveId": "Wave C",
+        "entries": [
+          {
+            "stateId": "wisconsin",
+            "stateName": "Wisconsin",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 511,
+            "advocatePublicSafeCount": 172,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave C"
+          },
+          {
+            "stateId": "minnesota",
+            "stateName": "Minnesota",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 522,
+            "advocatePublicSafeCount": 373,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave C"
+          },
+          {
+            "stateId": "missouri",
+            "stateName": "Missouri",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 694,
+            "advocatePublicSafeCount": 967,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave C"
+          },
+          {
+            "stateId": "south-carolina",
+            "stateName": "South Carolina",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 283,
+            "advocatePublicSafeCount": 127,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave C"
+          },
+          {
+            "stateId": "alabama",
+            "stateName": "Alabama",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 630,
+            "advocatePublicSafeCount": 33,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave C"
+          },
+          {
+            "stateId": "kentucky",
+            "stateName": "Kentucky",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 962,
+            "advocatePublicSafeCount": 261,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave C"
+          },
+          {
+            "stateId": "oregon",
+            "stateName": "Oregon",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 259,
+            "advocatePublicSafeCount": 146,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave C"
+          },
+          {
+            "stateId": "oklahoma",
+            "stateName": "Oklahoma",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 385,
+            "advocatePublicSafeCount": 32,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave C"
+          },
+          {
+            "stateId": "utah",
+            "stateName": "Utah",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 174,
+            "advocatePublicSafeCount": 92,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave C"
+          },
+          {
+            "stateId": "nevada",
+            "stateName": "Nevada",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 102,
+            "advocatePublicSafeCount": 27,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave C"
+          },
+          {
+            "stateId": "iowa",
+            "stateName": "Iowa",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 601,
+            "advocatePublicSafeCount": 210,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave C"
+          },
+          {
+            "stateId": "kansas",
+            "stateName": "Kansas",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 738,
+            "advocatePublicSafeCount": 432,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave C"
+          },
+          {
+            "stateId": "arkansas",
+            "stateName": "Arkansas",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 450,
+            "advocatePublicSafeCount": 19,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave C"
+          },
+          {
+            "stateId": "connecticut",
+            "stateName": "Connecticut",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 130,
+            "advocatePublicSafeCount": 160,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave C"
+          },
+          {
+            "stateId": "mississippi",
+            "stateName": "Mississippi",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 575,
+            "advocatePublicSafeCount": 8,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave C"
+          }
+        ]
+      },
+      {
+        "waveId": "Wave D",
+        "entries": [
+          {
+            "stateId": "new-mexico",
+            "stateName": "New Mexico",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 199,
+            "advocatePublicSafeCount": 117,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave D"
+          },
+          {
+            "stateId": "nebraska",
+            "stateName": "Nebraska",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 751,
+            "advocatePublicSafeCount": 100,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave D"
+          },
+          {
+            "stateId": "west-virginia",
+            "stateName": "West Virginia",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 332,
+            "advocatePublicSafeCount": 14,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave D"
+          },
+          {
+            "stateId": "idaho",
+            "stateName": "Idaho",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 220,
+            "advocatePublicSafeCount": 186,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave D"
+          },
+          {
+            "stateId": "hawaii",
+            "stateName": "Hawaii",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 41,
+            "advocatePublicSafeCount": 28,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave D"
+          },
+          {
+            "stateId": "maine",
+            "stateName": "Maine",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 96,
+            "advocatePublicSafeCount": 22,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave D"
+          },
+          {
+            "stateId": "new-hampshire",
+            "stateName": "New Hampshire",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 50,
+            "advocatePublicSafeCount": 93,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave D"
+          },
+          {
+            "stateId": "rhode-island",
+            "stateName": "Rhode Island",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 35,
+            "advocatePublicSafeCount": 34,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave D"
+          },
+          {
+            "stateId": "montana",
+            "stateName": "Montana",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 281,
+            "advocatePublicSafeCount": 60,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave D"
+          },
+          {
+            "stateId": "delaware",
+            "stateName": "Delaware",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 12,
+            "advocatePublicSafeCount": 13,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave D"
+          },
+          {
+            "stateId": "south-dakota",
+            "stateName": "South Dakota",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 396,
+            "advocatePublicSafeCount": 2,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave D"
+          },
+          {
+            "stateId": "north-dakota",
+            "stateName": "North Dakota",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 322,
+            "advocatePublicSafeCount": 64,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave D"
+          },
+          {
+            "stateId": "alaska",
+            "stateName": "Alaska",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 120,
+            "advocatePublicSafeCount": 8,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave D"
+          },
+          {
+            "stateId": "wyoming",
+            "stateName": "Wyoming",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 117,
+            "advocatePublicSafeCount": 27,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave D"
+          },
+          {
+            "stateId": "vermont",
+            "stateName": "Vermont",
+            "score": 88.9,
+            "overallConfidence": 91.7,
+            "totalProviderRows": 0,
+            "publicSafeProviders": 0,
+            "providerTruthScore": 0,
+            "publicSafeNonprofits": 70,
+            "advocatePublicSafeCount": 18,
+            "advocateCoverageLossCounties": 0,
+            "truthRegistryStatus": "gold",
+            "blockers": [
+              "no_public_safe_provider_layer_detected"
+            ],
+            "waveId": "Wave D"
+          }
+        ]
+      }
+    ],
+    "zeroRowUnassigned": [
+      {
+        "stateId": "arizona",
+        "stateName": "Arizona",
+        "score": 88.9,
+        "overallConfidence": 91.7,
+        "totalProviderRows": 0,
+        "publicSafeProviders": 0,
+        "providerTruthScore": 0,
+        "publicSafeNonprofits": 182,
+        "advocatePublicSafeCount": 113,
+        "advocateCoverageLossCounties": 0,
+        "truthRegistryStatus": "gold",
+        "blockers": [
+          "no_public_safe_provider_layer_detected"
+        ]
+      },
+      {
+        "stateId": "colorado",
+        "stateName": "Colorado",
+        "score": 88.9,
+        "overallConfidence": 91.7,
+        "totalProviderRows": 0,
+        "publicSafeProviders": 0,
+        "providerTruthScore": 0,
+        "publicSafeNonprofits": 721,
+        "advocatePublicSafeCount": 564,
+        "advocateCoverageLossCounties": 0,
+        "truthRegistryStatus": "gold",
+        "blockers": [
+          "no_public_safe_provider_layer_detected"
+        ]
+      },
+      {
+        "stateId": "indiana",
+        "stateName": "Indiana",
+        "score": 88.9,
+        "overallConfidence": 91.7,
+        "totalProviderRows": 0,
+        "publicSafeProviders": 0,
+        "providerTruthScore": 0,
+        "publicSafeNonprofits": 1507,
+        "advocatePublicSafeCount": 397,
+        "advocateCoverageLossCounties": 0,
+        "truthRegistryStatus": "gold",
+        "blockers": [
+          "no_public_safe_provider_layer_detected"
+        ]
+      },
+      {
+        "stateId": "louisiana",
+        "stateName": "Louisiana",
+        "score": 88.9,
+        "overallConfidence": 91.7,
+        "totalProviderRows": 0,
+        "publicSafeProviders": 0,
+        "providerTruthScore": 0,
+        "publicSafeNonprofits": 1664,
+        "advocatePublicSafeCount": 96,
+        "advocateCoverageLossCounties": 0,
+        "truthRegistryStatus": "gold",
+        "blockers": [
+          "no_public_safe_provider_layer_detected"
+        ]
+      },
+      {
+        "stateId": "maryland",
+        "stateName": "Maryland",
+        "score": 88.9,
+        "overallConfidence": 91.7,
+        "totalProviderRows": 0,
+        "publicSafeProviders": 0,
+        "providerTruthScore": 0,
+        "publicSafeNonprofits": 200,
+        "advocatePublicSafeCount": 307,
+        "advocateCoverageLossCounties": 0,
+        "truthRegistryStatus": "gold",
+        "blockers": [
+          "no_public_safe_provider_layer_detected"
+        ]
+      },
+      {
+        "stateId": "new-york",
+        "stateName": "New York",
+        "score": 88.9,
+        "overallConfidence": 91.7,
+        "totalProviderRows": 0,
+        "publicSafeProviders": 0,
+        "providerTruthScore": 0,
+        "publicSafeNonprofits": 1403,
+        "advocatePublicSafeCount": 1116,
+        "advocateCoverageLossCounties": 0,
+        "truthRegistryStatus": "gold",
+        "blockers": [
+          "no_public_safe_provider_layer_detected"
+        ]
+      },
+      {
+        "stateId": "tennessee",
+        "stateName": "Tennessee",
+        "score": 88.9,
+        "overallConfidence": 91.7,
+        "totalProviderRows": 0,
+        "publicSafeProviders": 0,
+        "providerTruthScore": 0,
+        "publicSafeNonprofits": 866,
+        "advocatePublicSafeCount": 131,
+        "advocateCoverageLossCounties": 0,
+        "truthRegistryStatus": "gold",
+        "blockers": [
+          "no_public_safe_provider_layer_detected"
+        ]
+      }
+    ],
+    "readinessZeroRowCandidates": [
+      {
+        "stateId": "new-york",
+        "stateName": "New York",
+        "score": 88.9,
+        "overallConfidence": 91.7,
+        "totalProviderRows": 0,
+        "publicSafeProviders": 0,
+        "providerTruthScore": 0,
+        "publicSafeNonprofits": 1403,
+        "advocatePublicSafeCount": 1116,
+        "advocateCoverageLossCounties": 0,
+        "truthRegistryStatus": "gold",
+        "blockers": [
+          "no_public_safe_provider_layer_detected"
+        ]
+      }
+    ]
+  }
+}

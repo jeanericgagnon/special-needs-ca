@@ -1,0 +1,77 @@
+{
+  "generatedAt": "2026-06-18T05:51:44.677Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "michigan",
+  "sourceDecisionFilePath": "data/provider-pull-now-decisions.json",
+  "sourceDecisionPacketPath": "docs/generated/provider-pull-now-state-decision-packets/provider-pull-now-state-decision-packet-michigan-2026-06-18.json",
+  "summary": {
+    "totalRows": 4,
+    "unresolvedRows": 4
+  },
+  "rows": [
+    {
+      "stateId": "michigan",
+      "actionClass": "author_alternate_first_party_target",
+      "sourceUrl": "https://www.mottchildren.org/",
+      "hostname": "www.mottchildren.org",
+      "followupReason": "access_blocked_403",
+      "repeatCount": 4,
+      "suggestedDecisionMode": "needs_manual_research",
+      "suggestedReason": "A same-domain candidate exists, but saved artifacts did not prove a safe, meaningfully different replacement URL.",
+      "decisionMode": "needs_manual_research",
+      "reviewedSourceName": "",
+      "reviewedSourceUrl": "",
+      "retryNotes": "",
+      "reviewNotes": "A same-domain candidate exists, but saved artifacts did not prove a safe, meaningfully different replacement URL.",
+      "reviewedBy": "autofill:provider-pull-now-state-workfile"
+    },
+    {
+      "stateId": "michigan",
+      "actionClass": "author_alternate_first_party_target",
+      "sourceUrl": "https://www.childrensdmc.org/",
+      "hostname": "www.childrensdmc.org",
+      "followupReason": "access_blocked_403",
+      "repeatCount": 2,
+      "suggestedDecisionMode": "needs_manual_research",
+      "suggestedReason": "A same-domain candidate exists, but saved artifacts did not prove a safe, meaningfully different replacement URL.",
+      "decisionMode": "needs_manual_research",
+      "reviewedSourceName": "",
+      "reviewedSourceUrl": "",
+      "retryNotes": "",
+      "reviewNotes": "A same-domain candidate exists, but saved artifacts did not prove a safe, meaningfully different replacement URL.",
+      "reviewedBy": "autofill:provider-pull-now-state-workfile"
+    },
+    {
+      "stateId": "michigan",
+      "actionClass": "author_alternate_first_party_target",
+      "sourceUrl": "https://www.spectrumhealth.org/locations/spectrum-health-hospitals-helen-devos-childrens-hospital",
+      "hostname": "www.spectrumhealth.org",
+      "followupReason": "access_blocked_403",
+      "repeatCount": 2,
+      "suggestedDecisionMode": "needs_manual_research",
+      "suggestedReason": "A same-domain candidate exists, but saved artifacts did not prove a safe, meaningfully different replacement URL.",
+      "decisionMode": "needs_manual_research",
+      "reviewedSourceName": "",
+      "reviewedSourceUrl": "",
+      "retryNotes": "",
+      "reviewNotes": "A same-domain candidate exists, but saved artifacts did not prove a safe, meaningfully different replacement URL.",
+      "reviewedBy": "autofill:provider-pull-now-state-workfile"
+    },
+    {
+      "stateId": "michigan",
+      "actionClass": "author_alternate_first_party_target",
+      "sourceUrl": "https://www.uofmhealth.org/our-care/specialties-services/autism-spectrum-disorders-appointments",
+      "hostname": "www.uofmhealth.org",
+      "followupReason": "access_blocked_403",
+      "repeatCount": 2,
+      "suggestedDecisionMode": "needs_manual_research",
+      "suggestedReason": "Saved artifacts do not yet prove a safe first-party replacement; keep this in manual research until one is confirmed.",
+      "decisionMode": "needs_manual_research",
+      "reviewedSourceName": "",
+      "reviewedSourceUrl": "",
+      "retryNotes": "",
+      "reviewNotes": "Saved artifacts do not yet prove a safe first-party replacement; keep this in manual research until one is confirmed.",
+      "reviewedBy": "autofill:provider-pull-now-state-workfile"
+    }
+  ]
+}

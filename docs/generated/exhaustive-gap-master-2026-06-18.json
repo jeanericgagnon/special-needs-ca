@@ -1,0 +1,440 @@
+{
+  "generatedAt": "2026-06-18",
+  "inputs": {
+    "inventoryPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/information-inventory-2026-06-18.json",
+    "fullGapPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/full-information-gap-audit-2026-06-18.json",
+    "completenessPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/information-completeness-audit-2026-06-18.json",
+    "confidencePath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/information-confidence-audit-2026-06-17.json",
+    "truthRegistryPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/truth-registry-2026-06-17.json"
+  },
+  "executiveTruth": {
+    "currentModeledCompletenessStates": 50,
+    "currentHighConfidenceStates": 50,
+    "strictGoldStates": 49,
+    "publicSafeButBlockedStates": 1,
+    "blockedStateIds": [
+      "california"
+    ],
+    "coreConclusion": "The repo is broadly complete on its current modeled 50-state public-truth bar, but it is not yet exhaustive across all information types the product model implies."
+  },
+  "summary": {
+    "nationalGapCount": 12,
+    "missingSourceFamilyCount": 0,
+    "actionableBlockerCount": 0,
+    "unknownGapCount": 0,
+    "allInScopeFamiliesAccountedFor": false
+  },
+  "currentInventory": {
+    "majorLayers": 13,
+    "informationTypes": [
+      {
+        "id": "geography_coverage",
+        "label": "Geography and Coverage",
+        "subtypeCount": 6,
+        "subtypes": [
+          "states",
+          "counties",
+          "regional center county coverage",
+          "regional education county coverage",
+          "advocate county coverage",
+          "virtual service area county coverage"
+        ]
+      },
+      {
+        "id": "programs_benefits",
+        "label": "Programs, Benefits, and Application Knowledge",
+        "subtypeCount": 6,
+        "subtypes": [
+          "program definitions",
+          "eligibility rules",
+          "required and optional documents",
+          "application steps",
+          "appeal rules",
+          "waitlists and interest lists"
+        ]
+      },
+      {
+        "id": "public_routing_education",
+        "label": "Public Administrative and Education Routing",
+        "subtypeCount": 4,
+        "subtypes": [
+          "county offices",
+          "state DD or IDD routing agencies",
+          "regional education agencies",
+          "school districts"
+        ]
+      },
+      {
+        "id": "local_directories",
+        "label": "Local Directory Layers",
+        "subtypeCount": 3,
+        "subtypes": [
+          "resource providers",
+          "nonprofit organizations",
+          "IEP advocates"
+        ]
+      },
+      {
+        "id": "directory_foundation",
+        "label": "Directory Foundation Metadata",
+        "subtypeCount": 7,
+        "subtypes": [
+          "service taxonomy",
+          "audience taxonomy",
+          "availability and capacity",
+          "next-step and intake",
+          "languages and accessibility",
+          "claim groundwork",
+          "trust and freshness"
+        ]
+      },
+      {
+        "id": "normalization",
+        "label": "Normalization Foundation",
+        "subtypeCount": 5,
+        "subtypes": [
+          "canonical organizations",
+          "organization to program links",
+          "service locations",
+          "office locations",
+          "virtual service areas"
+        ]
+      },
+      {
+        "id": "disability_knowledge",
+        "label": "Disability Knowledge and Reference Layer",
+        "subtypeCount": 4,
+        "subtypes": [
+          "conditions",
+          "functional needs",
+          "age bands",
+          "insurance types"
+        ]
+      },
+      {
+        "id": "family_case",
+        "label": "Family and Navigator-Adjacent Workflow Data",
+        "subtypeCount": 8,
+        "subtypes": [
+          "family cases",
+          "child profiles",
+          "child condition mappings",
+          "child need mappings",
+          "program tracking",
+          "document tracking",
+          "reminders",
+          "waiver vault"
+        ]
+      },
+      {
+        "id": "support_planning_collaboration",
+        "label": "Family Support, Planning, and Collaboration",
+        "subtypeCount": 11,
+        "subtypes": [
+          "safety incidents",
+          "parent declarations",
+          "caregiver profiles",
+          "transition tasks",
+          "caregiver self-care logs",
+          "child coordinators",
+          "clinical documents",
+          "consultation threads and messages",
+          "shared portal tokens",
+          "IEP accommodations and goals",
+          "respite assessments"
+        ]
+      },
+      {
+        "id": "knowledge_content",
+        "label": "Knowledge Content",
+        "subtypeCount": 1,
+        "subtypes": [
+          "bilingual structured knowledge articles"
+        ]
+      },
+      {
+        "id": "sources_review_ops",
+        "label": "Source, Review, and Operations Layers",
+        "subtypeCount": 5,
+        "subtypes": [
+          "source registry",
+          "source verifications",
+          "user-submitted resources",
+          "coverage gaps",
+          "verification queue"
+        ]
+      },
+      {
+        "id": "staging_promotion",
+        "label": "Staging and Promotion Layers",
+        "subtypeCount": 14,
+        "subtypes": [
+          "source targets",
+          "scraped county offices",
+          "scraped state resource agencies",
+          "scraped regional education agencies",
+          "scraped school districts",
+          "scraped nonprofits",
+          "scraped advocates",
+          "scraped resource providers",
+          "scraped forms",
+          "scraped help resources",
+          "scraped knowledge content",
+          "scraped waitlists",
+          "scraped sources",
+          "promotion audit"
+        ]
+      },
+      {
+        "id": "public_truth",
+        "label": "Truth and Public Eligibility Contract",
+        "subtypeCount": 5,
+        "subtypes": [
+          "source-backed trust metadata",
+          "public-safe render eligibility",
+          "index-safe gating",
+          "verified diagnosis allowlist",
+          "indexable state allowlist"
+        ]
+      }
+    ]
+  },
+  "nationalGapMatrix": [
+    {
+      "id": "program_depth",
+      "label": "Programs, forms, appeals, and waitlists",
+      "currentState": "broad",
+      "evidence": "507 programs, 992 steps, 451 appeals, 165 waitlists across 50 states.",
+      "exhaustiveGap": "Waitlist depth is materially shallower than the rest of the program layer.",
+      "status": "broad_but_not_exhaustive"
+    },
+    {
+      "id": "routing_depth",
+      "label": "DD routing, county offices, and education routing",
+      "currentState": "broad",
+      "evidence": "3678 county offices, 636 state routing agencies, 313 regional education agencies, 3117 school districts.",
+      "exhaustiveGap": "Routing exists nationally, but regional education depth is still not fully even across all states and counties.",
+      "status": "broad_but_not_exhaustive"
+    },
+    {
+      "id": "provider_directory",
+      "label": "Local providers, clinics, therapists, and care",
+      "currentState": "thin",
+      "evidence": "94 public provider rows and 23 staged provider rows across all 50 states.",
+      "exhaustiveGap": "This is the biggest information hole if the goal is all local help, especially to compete on care and treatment discovery.",
+      "status": "critical_gap"
+    },
+    {
+      "id": "nonprofit_directory_depth",
+      "label": "Nonprofit coverage quality and local utility",
+      "currentState": "broad",
+      "evidence": "29501 nonprofit rows across 50 states.",
+      "exhaustiveGap": "Coverage is broad, but accessibility, capacity, and local in-person truth signals are still sparse.",
+      "status": "broad_but_not_exhaustive"
+    },
+    {
+      "id": "advocate_directory_depth",
+      "label": "Advocates and legal/IEP support",
+      "currentState": "moderate",
+      "evidence": "2995 advocate rows, with California still blocked in strict gold because 58 counties lose advocate coverage after truth gating.",
+      "exhaustiveGap": "Advocate count is decent, but truth-safe local coverage is not yet strong enough to call exhaustive.",
+      "status": "meaningful_but_not_exhaustive"
+    },
+    {
+      "id": "directory_foundation_signals",
+      "label": "Findhelp-like metadata: availability, accessibility, intake, capacity",
+      "currentState": "modeled",
+      "evidence": "Provider accessibility booleans with true signal: accepts_medi_cal 27/94; interpreter_available 22/94; asl_available 12/94; wheelchair_accessible 5/94; virtual_services 18/94; in_person_services 60/94; home_visits 3/94; transportation_help 8/94 Nonprofit accessibility booleans with true signal: interpreter_available 0/29501; asl_available 0/29501; wheelchair_accessible 0/29501; virtual_services 1/29501; in_person_services 22/29501; home_visits 0/29501; transportation_help 0/29501 Advocate accessibility booleans with true signal: interpreter_available 0/2995; asl_available 0/2995; wheelchair_accessible 0/2995; virtual_services 2/2995; in_person_services 0/2995; home_visits 0/2995; transportation_help 0/2995",
+      "exhaustiveGap": "The schema exists, but live high-signal metadata is sparse, especially on nonprofits and advocates.",
+      "status": "partial"
+    },
+    {
+      "id": "normalization_depth",
+      "label": "Canonical org -> program -> location normalization",
+      "currentState": "present",
+      "evidence": "36891 organizations, 36891 org-program links, 83 service locations, 4314 office locations, 33130 virtual service areas.",
+      "exhaustiveGap": "Normalization exists, but service-location depth is still too thin to support a fully location-rich help product.",
+      "status": "partial"
+    },
+    {
+      "id": "knowledge_taxonomy",
+      "label": "Conditions, functional needs, age bands, insurance types",
+      "currentState": "mixed",
+      "evidence": "78 conditions, 18 functional needs, 7 age bands, 4 insurance types.",
+      "exhaustiveGap": "Conditions, needs, age bands, and insurance reference tables are all present, though broader knowledge depth is still driven by the article layer.",
+      "status": "broad"
+    },
+    {
+      "id": "knowledge_content_depth",
+      "label": "Help content and explanatory knowledge",
+      "currentState": "thin",
+      "evidence": "15 knowledge articles, 8 staged knowledge articles.",
+      "exhaustiveGap": "The content layer is still far too small for the full family journey nationally, but staged knowledge growth is now present and measured.",
+      "status": "critical_gap"
+    },
+    {
+      "id": "family_runtime",
+      "label": "Family workflow, case tracking, reminders, and documents",
+      "currentState": "demo_only",
+      "evidence": "5 total family-case-layer rows across 8 tables; most tables are empty.",
+      "exhaustiveGap": "The runtime workflow model exists but is not populated as a real product layer.",
+      "status": "not_started"
+    },
+    {
+      "id": "support_planning",
+      "label": "Support planning, collaboration, and care coordination",
+      "currentState": "empty",
+      "evidence": "0 total rows across planning/collaboration tables.",
+      "exhaustiveGap": "This entire product surface is still schema-only in practice.",
+      "status": "not_started"
+    },
+    {
+      "id": "feedback_loops",
+      "label": "User submissions, coverage gaps, verification queue",
+      "currentState": "minimal",
+      "evidence": "0 user submissions, 0 coverage gaps, 2 verification queue items.",
+      "exhaustiveGap": "Operational feedback loops are not built out enough to sustain exhaustive maintenance.",
+      "status": "critical_gap"
+    }
+  ],
+  "fullGapLayers": [
+    {
+      "id": "program_benefits",
+      "label": "Programs, waivers, appeals, forms, and waitlists",
+      "currentAuditStatus": "substantial",
+      "exhaustiveStatus": "broad_but_not_exhaustive",
+      "evidence": [
+        "507 programs across 50/50 states",
+        "303 eligibility rules",
+        "502 document requirements",
+        "992 application steps",
+        "451 appeal records",
+        "165 waitlist records"
+      ],
+      "gap": "Program foundation is strong, but waitlist depth is still smaller than the rest of the program layer."
+    },
+    {
+      "id": "public_routing_education",
+      "label": "County offices, DD routing, and education routing",
+      "currentAuditStatus": "partial",
+      "exhaustiveStatus": "partial",
+      "evidence": [
+        "3678 county offices across 50/50 states",
+        "636 state routing agencies across 50/50 states",
+        "313 regional education agencies across 47/50 states",
+        "3117 school districts across 50/50 states"
+      ],
+      "gap": "Routing layers are broadly populated, but density and local depth still vary by state and county."
+    },
+    {
+      "id": "local_nonprofits",
+      "label": "Local nonprofit support organizations",
+      "currentAuditStatus": "substantial",
+      "exhaustiveStatus": "broad_but_not_exhaustive",
+      "evidence": [
+        "29501 nonprofit listings across 50/50 states"
+      ],
+      "gap": "Nonprofit coverage is broad, but foundation metadata like accessibility and live capacity is still sparse."
+    },
+    {
+      "id": "local_advocates",
+      "label": "IEP advocates and advocacy support",
+      "currentAuditStatus": "thin",
+      "exhaustiveStatus": "thin",
+      "evidence": [
+        "2995 advocate listings"
+      ],
+      "gap": "Advocate count is strong, but truth quality and public eligibility still need to stay under active audit."
+    },
+    {
+      "id": "local_providers",
+      "label": "Clinics, therapists, and local providers",
+      "currentAuditStatus": "partial",
+      "exhaustiveStatus": "partial",
+      "evidence": [
+        "94 provider listings across 50/50 states",
+        "120 staged provider rows waiting in provider staging"
+      ],
+      "gap": "Provider coverage is the clearest national information gap. This layer exists, but it is nowhere near all-state depth."
+    },
+    {
+      "id": "directory_foundation_metadata",
+      "label": "Findhelp-like metadata on directory listings",
+      "currentAuditStatus": "partial",
+      "exhaustiveStatus": "partial",
+      "evidence": [
+        "Schema support exists for tags, availability, next steps, accessibility, claims, and trust fields on providers, nonprofits, and advocates.",
+        "Those fields sit on 32590 directory rows total."
+      ],
+      "gap": "The metadata model exists, but live availability, accessibility, and capacity signals are still sparse on the checked-in DB."
+    },
+    {
+      "id": "normalization_org_program_location",
+      "label": "Organization -> program -> location normalization",
+      "currentAuditStatus": "thin",
+      "exhaustiveStatus": "thin",
+      "evidence": [
+        "36902 organizations",
+        "36902 organization-program links",
+        "94 service locations",
+        "4314 office locations",
+        "33130 virtual service areas"
+      ],
+      "gap": "This migration landing zone is modeled in schema but not yet populated in the checked-in DB."
+    },
+    {
+      "id": "conditions_needs_reference",
+      "label": "Conditions, functional needs, and reference knowledge",
+      "currentAuditStatus": "substantial",
+      "exhaustiveStatus": "broad_but_not_exhaustive",
+      "evidence": [
+        "78 conditions",
+        "18 functional needs",
+        "7 age bands",
+        "4 insurance types"
+      ],
+      "gap": "No major structural gap detected in this layer."
+    },
+    {
+      "id": "knowledge_content",
+      "label": "Knowledge articles and guidance content",
+      "currentAuditStatus": "partial",
+      "exhaustiveStatus": "partial",
+      "evidence": [
+        "23 knowledge articles",
+        "8 staged knowledge articles"
+      ],
+      "gap": "Knowledge content exists and staged growth is underway, but live article volume is still small relative to the breadth of the rest of the information model."
+    },
+    {
+      "id": "family_case_runtime",
+      "label": "Family, case, and navigator-adjacent workflow data",
+      "currentAuditStatus": "demo_only",
+      "exhaustiveStatus": "demo_only",
+      "evidence": [
+        "1 family cases",
+        "1 child profiles",
+        "0 case program status rows"
+      ],
+      "gap": "The schema supports family/case workflows, but the checked-in DB mostly shows demo-level or empty runtime data."
+    },
+    {
+      "id": "user_feedback_ops",
+      "label": "User submissions, coverage gaps, and feedback loops",
+      "currentAuditStatus": "modeled_only",
+      "exhaustiveStatus": "modeled_only",
+      "evidence": [
+        "0 user-submitted resources",
+        "0 coverage gap records"
+      ],
+      "gap": "These operational loops are modeled but not populated in the checked-in DB snapshot."
+    }
+  ],
+  "immediateTruths": [
+    "50/50 modeled completeness does not mean all information categories are deeply built out.",
+    "49/50 strict gold means one state is still blocked even on the stricter public-truth bar.",
+    "Provider coverage and knowledge-content depth are still the largest visible product information gaps.",
+    "Directory metadata exists in schema, but most nonprofit and advocate rows still lack rich accessibility and capacity signals.",
+    "Several workflow and support layers are still mostly empty despite having schema support."
+  ]
+}

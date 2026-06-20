@@ -1,0 +1,5889 @@
+{
+  "generatedAt": "2026-06-17",
+  "registryEntryCount": 352,
+  "projected10kPages": 5916,
+  "entries": [
+    {
+      "id": "registry-parentcenterhub-org",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php",
+      "targetType": "network_directory",
+      "scrapeStrategy": "affiliate_discovery",
+      "sourcePageType": "general",
+      "rowCount": 4691,
+      "trustedMissingRows": 4691,
+      "stateIds": [
+        "alabama",
+        "alaska",
+        "arizona",
+        "arkansas",
+        "california",
+        "colorado",
+        "connecticut",
+        "delaware",
+        "florida",
+        "georgia",
+        "hawaii",
+        "idaho",
+        "illinois",
+        "indiana",
+        "iowa",
+        "kansas",
+        "kentucky",
+        "louisiana",
+        "maine",
+        "maryland",
+        "massachusetts",
+        "michigan",
+        "minnesota",
+        "mississippi",
+        "missouri",
+        "montana",
+        "nebraska",
+        "nevada",
+        "new-hampshire",
+        "new-jersey",
+        "new-mexico",
+        "new-york",
+        "north-carolina",
+        "north-dakota",
+        "ohio",
+        "oklahoma",
+        "oregon",
+        "pennsylvania",
+        "rhode-island",
+        "south-carolina",
+        "south-dakota",
+        "tennessee",
+        "texas",
+        "utah",
+        "vermont",
+        "virginia",
+        "washington",
+        "west-virginia",
+        "wisconsin",
+        "wyoming"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 10382
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-dallas-fort-worth",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-dallas-fort-worth",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 254,
+      "trustedMissingRows": 254,
+      "stateIds": [
+        "texas"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3508
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-dallas-fort-worth",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-dallas-fort-worth/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 254,
+      "trustedMissingRows": 254,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3508
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-greater-beaumont",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-greater-beaumont",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 254,
+      "trustedMissingRows": 254,
+      "stateIds": [
+        "texas"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3508
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-greater-beaumont",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-greater-beaumont/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 254,
+      "trustedMissingRows": 254,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3508
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-katy",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-katy",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 254,
+      "trustedMissingRows": 254,
+      "stateIds": [
+        "texas"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3508
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-katy",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-katy/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 254,
+      "trustedMissingRows": 254,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3508
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-the-gulf-coast",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-the-gulf-coast",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 254,
+      "trustedMissingRows": 254,
+      "stateIds": [
+        "texas"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3508
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-the-gulf-coast",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-the-gulf-coast/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 254,
+      "trustedMissingRows": 254,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3508
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-bryan-college-station",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-bryan-college-station",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 248,
+      "trustedMissingRows": 248,
+      "stateIds": [
+        "texas"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3496
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-bryan-college-station",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-bryan-college-station/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 248,
+      "trustedMissingRows": 248,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3496
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-san-antonio",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-san-antonio",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 248,
+      "trustedMissingRows": 248,
+      "stateIds": [
+        "texas"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3496
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-san-antonio",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-san-antonio/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 248,
+      "trustedMissingRows": 248,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3496
+    },
+    {
+      "id": "registry-texasautismsociety-org",
+      "familyKey": "texasautismsociety.org",
+      "host": "texasautismsociety.org",
+      "seedUrl": "https://www.texasautismsociety.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 509,
+      "trustedMissingRows": 509,
+      "stateIds": [
+        "texas"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3418
+    },
+    {
+      "id": "registry-txp2p-org",
+      "familyKey": "txp2p.org",
+      "host": "txp2p.org",
+      "seedUrl": "https://www.txp2p.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 508,
+      "trustedMissingRows": 508,
+      "stateIds": [
+        "texas"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3416
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-southwest-georgia",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-southwest-georgia",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 158,
+      "trustedMissingRows": 158,
+      "stateIds": [
+        "georgia"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3316
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-southwest-georgia",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-southwest-georgia/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 158,
+      "trustedMissingRows": 158,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3316
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-northeast-georgia",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-northeast-georgia",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 153,
+      "trustedMissingRows": 153,
+      "stateIds": [
+        "georgia"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3306
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-northeast-georgia",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-northeast-georgia/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 153,
+      "trustedMissingRows": 153,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3306
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-central-kentucky",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-central-kentucky",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 120,
+      "trustedMissingRows": 120,
+      "stateIds": [
+        "kentucky"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3240
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-central-kentucky",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-central-kentucky/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 120,
+      "trustedMissingRows": 120,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3240
+    },
+    {
+      "id": "registry-thearc-org-chapter-kentucky",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/kentucky",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 119,
+      "trustedMissingRows": 119,
+      "stateIds": [
+        "kentucky"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3238
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-kentucky",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/kentucky/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 119,
+      "trustedMissingRows": 119,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3238
+    },
+    {
+      "id": "registry-thearc-org-chapter-missouri",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/missouri",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 115,
+      "trustedMissingRows": 115,
+      "stateIds": [
+        "missouri"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3230
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-missouri",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/missouri/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 115,
+      "trustedMissingRows": 115,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3230
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-the-ozarks",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-the-ozarks",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 115,
+      "trustedMissingRows": 115,
+      "stateIds": [
+        "missouri"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3230
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-the-ozarks",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-the-ozarks/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 115,
+      "trustedMissingRows": 115,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3230
+    },
+    {
+      "id": "registry-thearc-org-chapter-tarc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/tarc",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 105,
+      "trustedMissingRows": 105,
+      "stateIds": [
+        "kansas"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3210
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-tarc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/tarc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 105,
+      "trustedMissingRows": 105,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3210
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-central-plains",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-central-plains",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 105,
+      "trustedMissingRows": 105,
+      "stateIds": [
+        "kansas"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3210
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-central-plains",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-central-plains/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 105,
+      "trustedMissingRows": 105,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3210
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-solomon-valley",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-solomon-valley",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 103,
+      "trustedMissingRows": 103,
+      "stateIds": [
+        "kansas"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3206
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-solomon-valley",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-solomon-valley/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 103,
+      "trustedMissingRows": 103,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3206
+    },
+    {
+      "id": "registry-thearc-org-chapter-blue-island-citizens-for-dd",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/blue-island-citizens-for-dd",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 102,
+      "trustedMissingRows": 102,
+      "stateIds": [
+        "illinois"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3204
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-blue-island-citizens-for-dd",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/blue-island-citizens-for-dd/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 102,
+      "trustedMissingRows": 102,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3204
+    },
+    {
+      "id": "registry-thearc-org-chapter-gateway-services-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/gateway-services-inc",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 102,
+      "trustedMissingRows": 102,
+      "stateIds": [
+        "illinois"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3204
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-gateway-services-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/gateway-services-inc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 102,
+      "trustedMissingRows": 102,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3204
+    },
+    {
+      "id": "registry-thearc-org-chapter-larc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/larc",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 102,
+      "trustedMissingRows": 102,
+      "stateIds": [
+        "illinois"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3204
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-larc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/larc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 102,
+      "trustedMissingRows": 102,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3204
+    },
+    {
+      "id": "registry-thearc-org-chapter-sertoma-star-services",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/sertoma-star-services",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 102,
+      "trustedMissingRows": 102,
+      "stateIds": [
+        "illinois"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3204
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-sertoma-star-services",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/sertoma-star-services/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 102,
+      "trustedMissingRows": 102,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3204
+    },
+    {
+      "id": "registry-thearc-org-chapter-ucp-seguin-of-greater-chicago",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/ucp-seguin-of-greater-chicago",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 102,
+      "trustedMissingRows": 102,
+      "stateIds": [
+        "illinois"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3204
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-ucp-seguin-of-greater-chicago",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/ucp-seguin-of-greater-chicago/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 102,
+      "trustedMissingRows": 102,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3204
+    },
+    {
+      "id": "registry-thearc-org-chapter-ups-for-downs",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/ups-for-downs",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 102,
+      "trustedMissingRows": 102,
+      "stateIds": [
+        "illinois"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3204
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-ups-for-downs",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/ups-for-downs/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 102,
+      "trustedMissingRows": 102,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3204
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-greensboro-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-greensboro-inc",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 100,
+      "trustedMissingRows": 100,
+      "stateIds": [
+        "north-carolina"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3200
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-greensboro-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-greensboro-inc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 100,
+      "trustedMissingRows": 100,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3200
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-high-point",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-high-point",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 100,
+      "trustedMissingRows": 100,
+      "stateIds": [
+        "north-carolina"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3200
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-high-point",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-high-point/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 100,
+      "trustedMissingRows": 100,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3200
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-the-triangle",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-the-triangle",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 100,
+      "trustedMissingRows": 100,
+      "stateIds": [
+        "north-carolina"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3200
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-the-triangle",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-the-triangle/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 100,
+      "trustedMissingRows": 100,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3200
+    },
+    {
+      "id": "registry-thearc-org-chapter-buffalo-river-services-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/buffalo-river-services-inc",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 95,
+      "trustedMissingRows": 95,
+      "stateIds": [
+        "tennessee"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3190
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-buffalo-river-services-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/buffalo-river-services-inc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 95,
+      "trustedMissingRows": 95,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3190
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-eastern-shore",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-eastern-shore",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 95,
+      "trustedMissingRows": 95,
+      "stateIds": [
+        "virginia"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3190
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-eastern-shore",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-eastern-shore/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 95,
+      "trustedMissingRows": 95,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3190
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-greater-williamsburg",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-greater-williamsburg",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 95,
+      "trustedMissingRows": 95,
+      "stateIds": [
+        "virginia"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3190
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-greater-williamsburg",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-greater-williamsburg/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 95,
+      "trustedMissingRows": 95,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3190
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-mid-south",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-mid-south",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 95,
+      "trustedMissingRows": 95,
+      "stateIds": [
+        "tennessee"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3190
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-mid-south",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-mid-south/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 95,
+      "trustedMissingRows": 95,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3190
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-new-river-valley",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-new-river-valley",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 95,
+      "trustedMissingRows": 95,
+      "stateIds": [
+        "virginia"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3190
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-new-river-valley",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-new-river-valley/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 95,
+      "trustedMissingRows": 95,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3190
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-north-central-virginia",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-north-central-virginia",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 95,
+      "trustedMissingRows": 95,
+      "stateIds": [
+        "virginia"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3190
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-north-central-virginia",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-north-central-virginia/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 95,
+      "trustedMissingRows": 95,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3190
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-southside",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-southside",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 95,
+      "trustedMissingRows": 95,
+      "stateIds": [
+        "virginia"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3190
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-southside",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-southside/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 95,
+      "trustedMissingRows": 95,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3190
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-the-great-smokies",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-the-great-smokies",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 95,
+      "trustedMissingRows": 95,
+      "stateIds": [
+        "tennessee"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3190
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-the-great-smokies",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-the-great-smokies/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 95,
+      "trustedMissingRows": 95,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3190
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-the-piedmont",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-the-piedmont",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 95,
+      "trustedMissingRows": 95,
+      "stateIds": [
+        "virginia"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3190
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-the-piedmont",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-the-piedmont/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 95,
+      "trustedMissingRows": 95,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3190
+    },
+    {
+      "id": "registry-thearc-org-chapter-versability-resources-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/versability-resources-inc",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 95,
+      "trustedMissingRows": 95,
+      "stateIds": [
+        "virginia"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3190
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-versability-resources-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/versability-resources-inc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 95,
+      "trustedMissingRows": 95,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3190
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-central-nebraska",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-central-nebraska",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 93,
+      "trustedMissingRows": 93,
+      "stateIds": [
+        "nebraska"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3186
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-central-nebraska",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-central-nebraska/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 93,
+      "trustedMissingRows": 93,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3186
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-norfolk",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-norfolk",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 93,
+      "trustedMissingRows": 93,
+      "stateIds": [
+        "nebraska"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3186
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-norfolk",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-norfolk/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 93,
+      "trustedMissingRows": 93,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3186
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-omaha-at-the-ollie-webb-center",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-omaha-at-the-ollie-webb-center",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 93,
+      "trustedMissingRows": 93,
+      "stateIds": [
+        "nebraska"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3186
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-omaha-at-the-ollie-webb-center",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-omaha-at-the-ollie-webb-center/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 93,
+      "trustedMissingRows": 93,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3186
+    },
+    {
+      "id": "registry-thearc-org-chapter-achieva-resources-corporation-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/achieva-resources-corporation-inc",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 92,
+      "trustedMissingRows": 92,
+      "stateIds": [
+        "indiana"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3184
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-achieva-resources-corporation-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/achieva-resources-corporation-inc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 92,
+      "trustedMissingRows": 92,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3184
+    },
+    {
+      "id": "registry-thearc-org-chapter-adec-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/adec-inc",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 92,
+      "trustedMissingRows": 92,
+      "stateIds": [
+        "indiana"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3184
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-adec-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/adec-inc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 92,
+      "trustedMissingRows": 92,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3184
+    },
+    {
+      "id": "registry-thearc-org-chapter-hillcroft-services-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/hillcroft-services-inc",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 92,
+      "trustedMissingRows": 92,
+      "stateIds": [
+        "indiana"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3184
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-hillcroft-services-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/hillcroft-services-inc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 92,
+      "trustedMissingRows": 92,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3184
+    },
+    {
+      "id": "registry-thearc-org-chapter-hopewell-center",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/hopewell-center",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 92,
+      "trustedMissingRows": 92,
+      "stateIds": [
+        "indiana"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3184
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-hopewell-center",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/hopewell-center/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 92,
+      "trustedMissingRows": 92,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3184
+    },
+    {
+      "id": "registry-thearc-org-chapter-new-horizons-the-arc-of-southeast-indiana",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/new-horizons-the-arc-of-southeast-indiana",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 92,
+      "trustedMissingRows": 92,
+      "stateIds": [
+        "indiana"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3184
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-new-horizons-the-arc-of-southeast-indiana",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/new-horizons-the-arc-of-southeast-indiana/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 92,
+      "trustedMissingRows": 92,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3184
+    },
+    {
+      "id": "registry-thearc-org-chapter-peak-community-services-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/peak-community-services-inc",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 92,
+      "trustedMissingRows": 92,
+      "stateIds": [
+        "indiana"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3184
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-peak-community-services-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/peak-community-services-inc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 92,
+      "trustedMissingRows": 92,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3184
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-evansville",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-evansville",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 92,
+      "trustedMissingRows": 92,
+      "stateIds": [
+        "indiana"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3184
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-evansville",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-evansville/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 92,
+      "trustedMissingRows": 92,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3184
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-hendericks-county-sycamore-services",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-hendericks-county-sycamore-services",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 92,
+      "trustedMissingRows": 92,
+      "stateIds": [
+        "indiana"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3184
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-hendericks-county-sycamore-services",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-hendericks-county-sycamore-services/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 92,
+      "trustedMissingRows": 92,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3184
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-southwest-indiana",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-southwest-indiana",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 92,
+      "trustedMissingRows": 92,
+      "stateIds": [
+        "indiana"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3184
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-southwest-indiana",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-southwest-indiana/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 92,
+      "trustedMissingRows": 92,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3184
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-hoosier-prairie-arc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-hoosier-prairie-arc",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 92,
+      "trustedMissingRows": 92,
+      "stateIds": [
+        "indiana"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3184
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-hoosier-prairie-arc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-hoosier-prairie-arc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 92,
+      "trustedMissingRows": 92,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3184
+    },
+    {
+      "id": "registry-thearc-org-chapter-stone-belt-arc-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/stone-belt-arc-inc",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 91,
+      "trustedMissingRows": 91,
+      "stateIds": [
+        "indiana"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 3182
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-stone-belt-arc-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/stone-belt-arc-inc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 91,
+      "trustedMissingRows": 91,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3182
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-northland",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-northland/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 87,
+      "trustedMissingRows": 87,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3174
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-dearborn",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-dearborn/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 83,
+      "trustedMissingRows": 83,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3166
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-detroit",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-detroit/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 83,
+      "trustedMissingRows": 83,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3166
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-downriver",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-downriver/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 83,
+      "trustedMissingRows": 83,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3166
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-grosse-pointe-harper-woods",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-grosse-pointe-harper-woods/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 83,
+      "trustedMissingRows": 83,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3166
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-central-michigan",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-central-michigan/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 83,
+      "trustedMissingRows": 83,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3166
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-mid-michigan",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-mid-michigan/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 83,
+      "trustedMissingRows": 83,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3166
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-northern-michigan",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-northern-michigan/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 82,
+      "trustedMissingRows": 82,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3164
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-northwest-mississippi",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-northwest-mississippi/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 82,
+      "trustedMissingRows": 82,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3164
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-southeast-mississippi",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-southeast-mississippi/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 82,
+      "trustedMissingRows": 82,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3164
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-arc-of-southwest-mississippi",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/arc-of-southwest-mississippi/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 81,
+      "trustedMissingRows": 81,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3162
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-arkansas",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/arkansas/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 75,
+      "trustedMissingRows": 75,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3150
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-for-the-river-valley",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-for-the-river-valley/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 75,
+      "trustedMissingRows": 75,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3150
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-arc-of-southwestern-wisconsin-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/arc-of-southwestern-wisconsin-inc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 70,
+      "trustedMissingRows": 70,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3140
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-arc-gateway",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/arc-gateway/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 67,
+      "trustedMissingRows": 67,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3134
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-nature-coast",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-nature-coast/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 67,
+      "trustedMissingRows": 67,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3134
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-north-florida",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-north-florida/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 67,
+      "trustedMissingRows": 67,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3134
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-central-alabama",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-central-alabama/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 67,
+      "trustedMissingRows": 67,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3134
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-greater-pittsburgh",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-greater-pittsburgh/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 67,
+      "trustedMissingRows": 67,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3134
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-northeastern-pennsylvania",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-northeastern-pennsylvania/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 67,
+      "trustedMissingRows": 67,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3134
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-southwest-alabama",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-southwest-alabama/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 67,
+      "trustedMissingRows": 67,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3134
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-southwest-florida",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-southwest-florida/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 67,
+      "trustedMissingRows": 67,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3134
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-st-lucie-county-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-st-lucie-county-inc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 67,
+      "trustedMissingRows": 67,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3134
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-the-chattahoochee-valley",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-the-chattahoochee-valley/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 67,
+      "trustedMissingRows": 67,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3134
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-the-gulf-coast-al",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-the-gulf-coast-al/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 67,
+      "trustedMissingRows": 67,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3134
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-the-shoals",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-the-shoals/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 67,
+      "trustedMissingRows": 67,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3134
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-ridge-area",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-ridge-area/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 67,
+      "trustedMissingRows": 67,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3134
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-sunrise-of-central-florida",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-sunrise-of-central-florida/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 67,
+      "trustedMissingRows": 67,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3134
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-victory-living-programs-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/victory-living-programs-inc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 67,
+      "trustedMissingRows": 67,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3134
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-space-coast",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/space-coast/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 66,
+      "trustedMissingRows": 66,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3132
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-jacksonville",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-jacksonville/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 66,
+      "trustedMissingRows": 66,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3132
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-south-florida",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-south-florida/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 66,
+      "trustedMissingRows": 66,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3132
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-south-dakota",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/south-dakota/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 65,
+      "trustedMissingRows": 65,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3130
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-advocacy-denver",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/advocacy-denver/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 64,
+      "trustedMissingRows": 64,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3128
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-beauregard-arc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/beauregard-arc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 64,
+      "trustedMissingRows": 64,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3128
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-lafayette-arc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/lafayette-arc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 64,
+      "trustedMissingRows": 64,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3128
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-st-john-arc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/st-john-arc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 64,
+      "trustedMissingRows": 64,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3128
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-st-martin-arc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/st-martin-arc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 64,
+      "trustedMissingRows": 64,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3128
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-tarc-serving-people-with-disabilities-their-families",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/tarc-serving-people-with-disabilities-their-families/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 64,
+      "trustedMissingRows": 64,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3128
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-terrebonne-arc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/terrebonne-arc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 64,
+      "trustedMissingRows": 64,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3128
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-baton-rouge",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-baton-rouge/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 64,
+      "trustedMissingRows": 64,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3128
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-caddo-bossier",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-caddo-bossier/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 64,
+      "trustedMissingRows": 64,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3128
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-iberville",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-iberville/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 64,
+      "trustedMissingRows": 64,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3128
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-acadiana",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-acadiana/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 64,
+      "trustedMissingRows": 64,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3128
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-aurora",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-aurora/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 64,
+      "trustedMissingRows": 64,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3128
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-east-ascension",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-east-ascension/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 64,
+      "trustedMissingRows": 64,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3128
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-greater-new-orleans",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-greater-new-orleans/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 64,
+      "trustedMissingRows": 64,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3128
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-morehouse",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-morehouse/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 64,
+      "trustedMissingRows": 64,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3128
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-northeast-colorado",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-northeast-colorado/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 64,
+      "trustedMissingRows": 64,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3128
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-ouachita-arco",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-ouachita-arco/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 64,
+      "trustedMissingRows": 64,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3128
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-southwest-colorado",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-southwest-colorado/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 64,
+      "trustedMissingRows": 64,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3128
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-st-charles-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-st-charles-inc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 64,
+      "trustedMissingRows": 64,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3128
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-the-central-mountains",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-the-central-mountains/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 64,
+      "trustedMissingRows": 64,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3128
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-the-pikes-peak-region",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-the-pikes-peak-region/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 64,
+      "trustedMissingRows": 64,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3128
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-rapides",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-rapides/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 64,
+      "trustedMissingRows": 64,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3128
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-achieve",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/achieve/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 62,
+      "trustedMissingRows": 62,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3124
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-coarc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/coarc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 62,
+      "trustedMissingRows": 62,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3124
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-intandem",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/intandem/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 62,
+      "trustedMissingRows": 62,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3124
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-liberty-arc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/liberty-arc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 62,
+      "trustedMissingRows": 62,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3124
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-mountain-lake-services",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/mountain-lake-services/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 62,
+      "trustedMissingRows": 62,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3124
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-mozaic",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/mozaic/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 62,
+      "trustedMissingRows": 62,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3124
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-rome-develooment-center",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/rome-develooment-center/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 62,
+      "trustedMissingRows": 62,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3124
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-adirondack-chapter",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-adirondack-chapter/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 62,
+      "trustedMissingRows": 62,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3124
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-community-league",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-community-league/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 62,
+      "trustedMissingRows": 62,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3124
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-glow",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-glow/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 62,
+      "trustedMissingRows": 62,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3124
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-greater-hudson-valley",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-greater-hudson-valley/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 62,
+      "trustedMissingRows": 62,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3124
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-lexington",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-lexington/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 62,
+      "trustedMissingRows": 62,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3124
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-rehabilitation-center",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-rehabilitation-center/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 62,
+      "trustedMissingRows": 62,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3124
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-resource-center",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-resource-center/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "services",
+      "rowCount": 62,
+      "trustedMissingRows": 62,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3124
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-arc-south-bay",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/arc-south-bay/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 58,
+      "trustedMissingRows": 58,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3116
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-arc-taft",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/arc-taft/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 58,
+      "trustedMissingRows": 58,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3116
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-barc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/barc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 58,
+      "trustedMissingRows": 58,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3116
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-desert-arc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/desert-arc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 58,
+      "trustedMissingRows": 58,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3116
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-the-east-bay",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-the-east-bay/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 58,
+      "trustedMissingRows": 58,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3116
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-montana",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/montana/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 56,
+      "trustedMissingRows": 56,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3112
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-the-three-rivers",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-the-three-rivers/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 55,
+      "trustedMissingRows": 55,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3110
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-bismarck",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-bismarck/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 53,
+      "trustedMissingRows": 53,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3106
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-dickinson-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-dickinson-inc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 53,
+      "trustedMissingRows": 53,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3106
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-the-piedmont-tri-county",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-the-piedmont-tri-county/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 46,
+      "trustedMissingRows": 46,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3092
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-tri-cities",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-tri-cities/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 39,
+      "trustedMissingRows": 39,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3078
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-portland-metro",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-portland-metro/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 36,
+      "trustedMissingRows": 36,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3072
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-utah",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/utah/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 29,
+      "trustedMissingRows": 29,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3058
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-walk-with-autism-ltd",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/walk-with-autism-ltd/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 29,
+      "trustedMissingRows": 29,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3058
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-northern-chesapeake-region",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-northern-chesapeake-region/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 24,
+      "trustedMissingRows": 24,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3048
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-prince-georges-county",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-prince-georges-county/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 24,
+      "trustedMissingRows": 24,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3048
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-wyoming",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/wyoming/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 23,
+      "trustedMissingRows": 23,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3046
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-scarc-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/scarc-inc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 21,
+      "trustedMissingRows": 21,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3042
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-alaska",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/alaska/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 20,
+      "trustedMissingRows": 20,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3040
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-building-positive-lifestyles",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/building-positive-lifestyles/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 17,
+      "trustedMissingRows": 17,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3034
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-las-vegas",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-las-vegas/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 17,
+      "trustedMissingRows": 17,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3034
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-maine",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/maine/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 16,
+      "trustedMissingRows": 16,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3032
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-chandler-gilbert-arc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/chandler-gilbert-arc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 15,
+      "trustedMissingRows": 15,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3030
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-douglas-arc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/douglas-arc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 15,
+      "trustedMissingRows": 15,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3030
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-tempe",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-tempe/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 15,
+      "trustedMissingRows": 15,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3030
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-tucson-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-tucson-inc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 15,
+      "trustedMissingRows": 15,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3030
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-community-connections-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/community-connections-inc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 14,
+      "trustedMissingRows": 14,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3028
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-lifelinks-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/lifelinks-inc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 14,
+      "trustedMissingRows": 14,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3028
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-minute-man-arc-for-human-services",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/minute-man-arc-for-human-services/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 14,
+      "trustedMissingRows": 14,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3028
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-northeast-arc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/northeast-arc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 14,
+      "trustedMissingRows": 14,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3028
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-opportunities-for-inclusion",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/opportunities-for-inclusion/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 14,
+      "trustedMissingRows": 14,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3028
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-brockton-area",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-brockton-area/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 14,
+      "trustedMissingRows": 14,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3028
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-east-middlesex",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-east-middlesex/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 14,
+      "trustedMissingRows": 14,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3028
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-greater-haverhill-newburyport",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-greater-haverhill-newburyport/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 14,
+      "trustedMissingRows": 14,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3028
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-opportunity",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-opportunity/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 14,
+      "trustedMissingRows": 14,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3028
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-south-norfolk-county",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-south-norfolk-county/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 14,
+      "trustedMissingRows": 14,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3028
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-the-south-shore",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-the-south-shore/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 14,
+      "trustedMissingRows": 14,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3028
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-charles-river-center",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-charles-river-center/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 14,
+      "trustedMissingRows": 14,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3028
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-vermont",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/vermont/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 14,
+      "trustedMissingRows": 14,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3028
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-yes-the-arc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/yes-the-arc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 12,
+      "trustedMissingRows": 12,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3024
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-concord-regional-arc-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/concord-regional-arc-inc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 10,
+      "trustedMissingRows": 10,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3020
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-ccarc-lnc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/ccarc-lnc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 8,
+      "trustedMissingRows": 8,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3016
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-lumibility",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/lumibility/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 8,
+      "trustedMissingRows": 8,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3016
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-marc-inc-of-manchester",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/marc-inc-of-manchester/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 8,
+      "trustedMissingRows": 8,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3016
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-midstate-arc-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/midstate-arc-inc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 8,
+      "trustedMissingRows": 8,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3016
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-sarah-seneca-residential-services",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/sarah-seneca-residential-services/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 8,
+      "trustedMissingRows": 8,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3016
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-sarah-tuxis-residential-services-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/sarah-tuxis-residential-services-inc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 8,
+      "trustedMissingRows": 8,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3016
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-star-inc-lighting-the-way",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/star-inc-lighting-the-way/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 8,
+      "trustedMissingRows": 8,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3016
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-new-london-county",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-new-london-county/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 8,
+      "trustedMissingRows": 8,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3016
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-southington-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-southington-inc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 8,
+      "trustedMissingRows": 8,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3016
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-the-farmington-valley",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-the-farmington-valley/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 8,
+      "trustedMissingRows": 8,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3016
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-waterbury",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-waterbury/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 8,
+      "trustedMissingRows": 8,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3016
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-blackstone-valley",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-blackstone-valley/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 5,
+      "trustedMissingRows": 5,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3010
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-hawaii-island",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-hawaii-island/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 5,
+      "trustedMissingRows": 5,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3010
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-hilo",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-hilo/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 5,
+      "trustedMissingRows": 5,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3010
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-rhode-island",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-rhode-island/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 5,
+      "trustedMissingRows": 5,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3010
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-jefferson-clear-creek-gilpin-counties",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-jefferson-clear-creek-gilpin-counties/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 3,
+      "trustedMissingRows": 3,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3006
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-arapahoe-douglas",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-arapahoe-douglas/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 3,
+      "trustedMissingRows": 3,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3006
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-fayette-lamar-marengo-counties-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-fayette-lamar-marengo-counties-inc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 3,
+      "trustedMissingRows": 3,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3006
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-winnebago-boone-ogle",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-winnebago-boone-ogle/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 3,
+      "trustedMissingRows": 3,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3006
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-arc-of-franklin-fulton",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/arc-of-franklin-fulton/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 2,
+      "trustedMissingRows": 2,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3004
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-awe-arc-autauga-and-western-elmore-counties",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/awe-arc-autauga-and-western-elmore-counties/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 2,
+      "trustedMissingRows": 2,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3004
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-daviess-martin-rehabilitation-services",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/daviess-martin-rehabilitation-services/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 2,
+      "trustedMissingRows": 2,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3004
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-marshall-starke-development-center",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/marshall-starke-development-center/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 2,
+      "trustedMissingRows": 2,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3004
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-allegany-steuben",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-allegany-steuben/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 2,
+      "trustedMissingRows": 2,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3004
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-cherokee-clay-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-cherokee-clay-inc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 2,
+      "trustedMissingRows": 2,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3004
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-genesee-orleans",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-genesee-orleans/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 2,
+      "trustedMissingRows": 2,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3004
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-jefferson-st-lawrence",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-jefferson-st-lawrence/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 2,
+      "trustedMissingRows": 2,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3004
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-lancaster-lebanon",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-lancaster-lebanon/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 2,
+      "trustedMissingRows": 2,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3004
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-los-angeles-and-orange-counties",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-los-angeles-and-orange-counties/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 2,
+      "trustedMissingRows": 2,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3004
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-madison-cortland",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-madison-cortland/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 2,
+      "trustedMissingRows": 2,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3004
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-adams-clay",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-adams-clay/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 2,
+      "trustedMissingRows": 2,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3004
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-amador-and-calaveras",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-amador-and-calaveras/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 2,
+      "trustedMissingRows": 2,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3004
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-bergen-and-passaic-counties-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-bergen-and-passaic-counties-inc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 2,
+      "trustedMissingRows": 2,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3004
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-chemung-schuyler",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-chemung-schuyler/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 2,
+      "trustedMissingRows": 2,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3004
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-clarion-and-venango-counties",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-clarion-and-venango-counties/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 2,
+      "trustedMissingRows": 2,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3004
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-clay-and-platte-counties-inc",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-clay-and-platte-counties-inc/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 2,
+      "trustedMissingRows": 2,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3004
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-coffee-and-moore-counties",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-coffee-and-moore-counties/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 2,
+      "trustedMissingRows": 2,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3004
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-cumberland-perry-counties",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-cumberland-perry-counties/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 2,
+      "trustedMissingRows": 2,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3004
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-fresno-and-madera-counties",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-fresno-and-madera-counties/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 2,
+      "trustedMissingRows": 2,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3004
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-lehigh-northampton-counties",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-lehigh-northampton-counties/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 2,
+      "trustedMissingRows": 2,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3004
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-thomas-grady-center",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-thomas-grady-center/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 2,
+      "trustedMissingRows": 2,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3004
+    },
+    {
+      "id": "registry-https-thearc-org-chapter-the-arc-of-vigo-county",
+      "familyKey": "thearc.org",
+      "host": "thearc.org",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-vigo-county/",
+      "targetType": "affiliate_chapter",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "affiliate",
+      "rowCount": 2,
+      "trustedMissingRows": 2,
+      "stateIds": [],
+      "sources": [
+        "db_chapter_url"
+      ],
+      "priorityScore": 3004
+    },
+    {
+      "id": "registry-thearcoftexas-org",
+      "familyKey": "thearcoftexas.org",
+      "host": "thearcoftexas.org",
+      "seedUrl": "https://thearcoftexas.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 259,
+      "trustedMissingRows": 259,
+      "stateIds": [
+        "texas"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2918
+    },
+    {
+      "id": "registry-prntexas-org",
+      "familyKey": "prntexas.org",
+      "host": "prntexas.org",
+      "seedUrl": "https://prntexas.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 254,
+      "trustedMissingRows": 254,
+      "stateIds": [
+        "texas"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2908
+    },
+    {
+      "id": "registry-disabilityrightstx-org",
+      "familyKey": "disabilityrightstx.org",
+      "host": "disabilityrightstx.org",
+      "seedUrl": "https://www.disabilityrightstx.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 254,
+      "trustedMissingRows": 254,
+      "stateIds": [
+        "texas"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2908
+    },
+    {
+      "id": "registry-navigatelifetexas-org",
+      "familyKey": "navigatelifetexas.org",
+      "host": "navigatelifetexas.org",
+      "seedUrl": "https://www.navigatelifetexas.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 254,
+      "trustedMissingRows": 254,
+      "stateIds": [
+        "texas"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2908
+    },
+    {
+      "id": "registry-https-oklahomaparentscenter-org-trainings",
+      "familyKey": "parentcenterhub.org",
+      "host": "oklahomaparentscenter.org",
+      "seedUrl": "https://oklahomaparentscenter.org/trainings/",
+      "targetType": "affiliate_site",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "general",
+      "rowCount": 0,
+      "trustedMissingRows": 0,
+      "stateIds": [],
+      "sources": [
+        "state_listing_outbound_link"
+      ],
+      "priorityScore": 2800
+    },
+    {
+      "id": "registry-https-raisecenter-org-rsa-parent-centers",
+      "familyKey": "parentcenterhub.org",
+      "host": "raisecenter.org",
+      "seedUrl": "https://raisecenter.org/rsa-parent-centers/",
+      "targetType": "affiliate_site",
+      "scrapeStrategy": "site_path",
+      "sourcePageType": "general",
+      "rowCount": 0,
+      "trustedMissingRows": 0,
+      "stateIds": [],
+      "sources": [
+        "state_listing_outbound_link"
+      ],
+      "priorityScore": 2800
+    },
+    {
+      "id": "registry-p2pga-org",
+      "familyKey": "p2pga.org",
+      "host": "p2pga.org",
+      "seedUrl": "https://www.p2pga.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 159,
+      "trustedMissingRows": 159,
+      "stateIds": [
+        "georgia"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2718
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-44",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=44",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 595,
+      "trustedMissingRows": 595,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 2690
+    },
+    {
+      "id": "registry-ask-lou-org",
+      "familyKey": "ask-lou.org",
+      "host": "ask-lou.org",
+      "seedUrl": "http://www.ask-lou.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 120,
+      "trustedMissingRows": 120,
+      "stateIds": [
+        "kentucky"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2640
+    },
+    {
+      "id": "registry-kypa-net",
+      "familyKey": "kypa.net",
+      "host": "kypa.net",
+      "seedUrl": "http://www.kypa.net/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 120,
+      "trustedMissingRows": 120,
+      "stateIds": [
+        "kentucky"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2640
+    },
+    {
+      "id": "registry-arcofky-org",
+      "familyKey": "arcofky.org",
+      "host": "arcofky.org",
+      "seedUrl": "https://arcofky.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 120,
+      "trustedMissingRows": 120,
+      "stateIds": [
+        "kentucky"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2640
+    },
+    {
+      "id": "registry-asbg-org",
+      "familyKey": "asbg.org",
+      "host": "asbg.org",
+      "seedUrl": "https://asbg.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 120,
+      "trustedMissingRows": 120,
+      "stateIds": [
+        "kentucky"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2640
+    },
+    {
+      "id": "registry-kyspin-com",
+      "familyKey": "kyspin.com",
+      "host": "kyspin.com",
+      "seedUrl": "https://kyspin.com/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 120,
+      "trustedMissingRows": 120,
+      "stateIds": [
+        "kentucky"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2640
+    },
+    {
+      "id": "registry-moadvocacy-org",
+      "familyKey": "moadvocacy.org",
+      "host": "moadvocacy.org",
+      "seedUrl": "http://www.moadvocacy.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 115,
+      "trustedMissingRows": 115,
+      "stateIds": [
+        "missouri"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2630
+    },
+    {
+      "id": "registry-ptimpact-org",
+      "familyKey": "ptimpact.org",
+      "host": "ptimpact.org",
+      "seedUrl": "https://ptimpact.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 115,
+      "trustedMissingRows": 115,
+      "stateIds": [
+        "missouri"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2630
+    },
+    {
+      "id": "registry-thearcofmo-org",
+      "familyKey": "thearcofmo.org",
+      "host": "thearcofmo.org",
+      "seedUrl": "https://thearcofmo.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 115,
+      "trustedMissingRows": 115,
+      "stateIds": [
+        "missouri"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2630
+    },
+    {
+      "id": "registry-legalaidtx-org",
+      "familyKey": "legalaidtx.org",
+      "host": "legalaidtx.org",
+      "seedUrl": "https://legalaidtx.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 114,
+      "trustedMissingRows": 114,
+      "stateIds": [
+        "texas"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2628
+    },
+    {
+      "id": "registry-drckansas-org",
+      "familyKey": "drckansas.org",
+      "host": "drckansas.org",
+      "seedUrl": "http://drckansas.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 105,
+      "trustedMissingRows": 105,
+      "stateIds": [
+        "kansas"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2610
+    },
+    {
+      "id": "registry-familiestogetherinc-org",
+      "familyKey": "familiestogetherinc.org",
+      "host": "familiestogetherinc.org",
+      "seedUrl": "https://familiestogetherinc.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 105,
+      "trustedMissingRows": 105,
+      "stateIds": [
+        "kansas"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2610
+    },
+    {
+      "id": "registry-thearcofkansas-org",
+      "familyKey": "thearcofkansas.org",
+      "host": "thearcofkansas.org",
+      "seedUrl": "https://thearcofkansas.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 105,
+      "trustedMissingRows": 105,
+      "stateIds": [
+        "kansas"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2610
+    },
+    {
+      "id": "registry-autismsocietysi-org",
+      "familyKey": "autismsocietysi.org",
+      "host": "autismsocietysi.org",
+      "seedUrl": "http://www.autismsocietysi.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 102,
+      "trustedMissingRows": 102,
+      "stateIds": [
+        "illinois"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2604
+    },
+    {
+      "id": "registry-cap-state-nc-us",
+      "familyKey": "cap.state.nc.us",
+      "host": "cap.state.nc.us",
+      "seedUrl": "http://cap.state.nc.us/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 100,
+      "trustedMissingRows": 100,
+      "stateIds": [
+        "north-carolina"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2600
+    },
+    {
+      "id": "registry-autismsociety-nc-org",
+      "familyKey": "autismsociety-nc.org",
+      "host": "autismsociety-nc.org",
+      "seedUrl": "http://www.autismsociety-nc.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 100,
+      "trustedMissingRows": 100,
+      "stateIds": [
+        "north-carolina"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2600
+    },
+    {
+      "id": "registry-arcnc-org",
+      "familyKey": "arcnc.org",
+      "host": "arcnc.org",
+      "seedUrl": "https://arcnc.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 100,
+      "trustedMissingRows": 100,
+      "stateIds": [
+        "north-carolina"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2600
+    },
+    {
+      "id": "registry-ecac-parentcenter-org",
+      "familyKey": "ecac-parentcenter.org",
+      "host": "ecac-parentcenter.org",
+      "seedUrl": "https://ecac-parentcenter.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 100,
+      "trustedMissingRows": 100,
+      "stateIds": [
+        "north-carolina"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2600
+    },
+    {
+      "id": "registry-askresource-org",
+      "familyKey": "askresource.org",
+      "host": "askresource.org",
+      "seedUrl": "https://askresource.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 99,
+      "trustedMissingRows": 99,
+      "stateIds": [
+        "iowa"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2598
+    },
+    {
+      "id": "registry-autismia-com",
+      "familyKey": "autismia.com",
+      "host": "autismia.com",
+      "seedUrl": "https://autismia.com/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 99,
+      "trustedMissingRows": 99,
+      "stateIds": [
+        "iowa"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2598
+    },
+    {
+      "id": "registry-humanrights-iowa-gov",
+      "familyKey": "humanrights.iowa.gov",
+      "host": "humanrights.iowa.gov",
+      "seedUrl": "https://humanrights.iowa.gov/cas/pd/client-assistance-program",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "services",
+      "rowCount": 99,
+      "trustedMissingRows": 99,
+      "stateIds": [
+        "iowa"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2598
+    },
+    {
+      "id": "registry-thearcofiowa-org",
+      "familyKey": "thearcofiowa.org",
+      "host": "thearcofiowa.org",
+      "seedUrl": "https://thearcofiowa.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 99,
+      "trustedMissingRows": 99,
+      "stateIds": [
+        "iowa"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2598
+    },
+    {
+      "id": "registry-asaetc-org",
+      "familyKey": "asaetc.org",
+      "host": "asaetc.org",
+      "seedUrl": "http://www.asaetc.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 95,
+      "trustedMissingRows": 95,
+      "stateIds": [
+        "tennessee"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2590
+    },
+    {
+      "id": "registry-peatc-org",
+      "familyKey": "peatc.org",
+      "host": "peatc.org",
+      "seedUrl": "https://peatc.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 95,
+      "trustedMissingRows": 95,
+      "stateIds": [
+        "virginia"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2590
+    },
+    {
+      "id": "registry-thearcofva-org",
+      "familyKey": "thearcofva.org",
+      "host": "thearcofva.org",
+      "seedUrl": "https://thearcofva.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 95,
+      "trustedMissingRows": 95,
+      "stateIds": [
+        "virginia"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2590
+    },
+    {
+      "id": "registry-thearctn-org",
+      "familyKey": "thearctn.org",
+      "host": "thearctn.org",
+      "seedUrl": "https://thearctn.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 95,
+      "trustedMissingRows": 95,
+      "stateIds": [
+        "tennessee"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2590
+    },
+    {
+      "id": "registry-tnstep-org",
+      "familyKey": "tnstep.org",
+      "host": "tnstep.org",
+      "seedUrl": "https://tnstep.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 95,
+      "trustedMissingRows": 95,
+      "stateIds": [
+        "tennessee"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2590
+    },
+    {
+      "id": "registry-disabilityrightstn-org",
+      "familyKey": "disabilityrightstn.org",
+      "host": "disabilityrightstn.org",
+      "seedUrl": "https://www.disabilityrightstn.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 95,
+      "trustedMissingRows": 95,
+      "stateIds": [
+        "tennessee"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2590
+    },
+    {
+      "id": "registry-dlcv-org",
+      "familyKey": "dlcv.org",
+      "host": "dlcv.org",
+      "seedUrl": "https://www.dlcv.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 95,
+      "trustedMissingRows": 95,
+      "stateIds": [
+        "virginia"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2590
+    },
+    {
+      "id": "registry-tidewaterasa-org",
+      "familyKey": "tidewaterasa.org",
+      "host": "tidewaterasa.org",
+      "seedUrl": "https://www.tidewaterasa.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 95,
+      "trustedMissingRows": 95,
+      "stateIds": [
+        "virginia"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2590
+    },
+    {
+      "id": "registry-autismnebraska-org",
+      "familyKey": "autismnebraska.org",
+      "host": "autismnebraska.org",
+      "seedUrl": "http://www.autismnebraska.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 93,
+      "trustedMissingRows": 93,
+      "stateIds": [
+        "nebraska"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2586
+    },
+    {
+      "id": "registry-cap-nebraska-gov",
+      "familyKey": "cap.nebraska.gov",
+      "host": "cap.nebraska.gov",
+      "seedUrl": "http://www.cap.nebraska.gov/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 93,
+      "trustedMissingRows": 93,
+      "stateIds": [
+        "nebraska"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2586
+    },
+    {
+      "id": "registry-arc-nebraska-org",
+      "familyKey": "arc-nebraska.org",
+      "host": "arc-nebraska.org",
+      "seedUrl": "https://arc-nebraska.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 93,
+      "trustedMissingRows": 93,
+      "stateIds": [
+        "nebraska"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2586
+    },
+    {
+      "id": "registry-pti-nebraska-org",
+      "familyKey": "pti-nebraska.org",
+      "host": "pti-nebraska.org",
+      "seedUrl": "https://pti-nebraska.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 93,
+      "trustedMissingRows": 93,
+      "stateIds": [
+        "nebraska"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2586
+    },
+    {
+      "id": "registry-autismsocietyofindiana-org",
+      "familyKey": "autismsocietyofindiana.org",
+      "host": "autismsocietyofindiana.org",
+      "seedUrl": "http://www.autismsocietyofindiana.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 92,
+      "trustedMissingRows": 92,
+      "stateIds": [
+        "indiana"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2584
+    },
+    {
+      "id": "registry-arcind-org",
+      "familyKey": "arcind.org",
+      "host": "arcind.org",
+      "seedUrl": "https://arcind.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 92,
+      "trustedMissingRows": 92,
+      "stateIds": [
+        "indiana"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2584
+    },
+    {
+      "id": "registry-insource-org",
+      "familyKey": "insource.org",
+      "host": "insource.org",
+      "seedUrl": "https://insource.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 92,
+      "trustedMissingRows": 92,
+      "stateIds": [
+        "indiana"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2584
+    },
+    {
+      "id": "registry-in-gov",
+      "familyKey": "in.gov",
+      "host": "in.gov",
+      "seedUrl": "https://www.in.gov/idr",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 92,
+      "trustedMissingRows": 92,
+      "stateIds": [
+        "indiana"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2584
+    },
+    {
+      "id": "registry-autismsocietyofdayton-org",
+      "familyKey": "autismsocietyofdayton.org",
+      "host": "autismsocietyofdayton.org",
+      "seedUrl": "http://www.autismsocietyofdayton.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 88,
+      "trustedMissingRows": 88,
+      "stateIds": [
+        "ohio"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2576
+    },
+    {
+      "id": "registry-asno-org",
+      "familyKey": "asno.org",
+      "host": "asno.org",
+      "seedUrl": "https://asno.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 88,
+      "trustedMissingRows": 88,
+      "stateIds": [
+        "ohio"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2576
+    },
+    {
+      "id": "registry-autismakron-org",
+      "familyKey": "autismakron.org",
+      "host": "autismakron.org",
+      "seedUrl": "https://autismakron.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 88,
+      "trustedMissingRows": 88,
+      "stateIds": [
+        "ohio"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2576
+    },
+    {
+      "id": "registry-autismohio-org",
+      "familyKey": "autismohio.org",
+      "host": "autismohio.org",
+      "seedUrl": "https://autismohio.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 88,
+      "trustedMissingRows": 88,
+      "stateIds": [
+        "ohio"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2576
+    },
+    {
+      "id": "registry-asgc-org",
+      "familyKey": "asgc.org",
+      "host": "asgc.org",
+      "seedUrl": "https://www.asgc.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 88,
+      "trustedMissingRows": 88,
+      "stateIds": [
+        "ohio"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2576
+    },
+    {
+      "id": "registry-autismcentralohio-org",
+      "familyKey": "autismcentralohio.org",
+      "host": "autismcentralohio.org",
+      "seedUrl": "https://www.autismcentralohio.org/",
+      "targetType": "statewide_service_org",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 88,
+      "trustedMissingRows": 88,
+      "stateIds": [
+        "ohio"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2576
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-33",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=33",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 498,
+      "trustedMissingRows": 498,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 2496
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-5",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=5",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 468,
+      "trustedMissingRows": 468,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 2436
+    },
+    {
+      "id": "registry-autismqc-org",
+      "familyKey": "autismqc.org",
+      "host": "autismqc.org",
+      "seedUrl": "http://www.autismqc.org/",
+      "targetType": "single_site",
+      "scrapeStrategy": "domain",
+      "sourcePageType": "general",
+      "rowCount": 201,
+      "trustedMissingRows": 201,
+      "stateIds": [
+        "illinois",
+        "iowa"
+      ],
+      "sources": [
+        "scrape_queue"
+      ],
+      "priorityScore": 2402
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-43",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=43",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 190,
+      "trustedMissingRows": 190,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1880
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-11",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=11",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 159,
+      "trustedMissingRows": 159,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1818
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-37",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=37",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 154,
+      "trustedMissingRows": 154,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1808
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-50",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=50",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 144,
+      "trustedMissingRows": 144,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1788
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-19",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=19",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 128,
+      "trustedMissingRows": 128,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1756
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-18",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=18",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 120,
+      "trustedMissingRows": 120,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1740
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-26",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=26",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 115,
+      "trustedMissingRows": 115,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1730
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-34",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=34",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 108,
+      "trustedMissingRows": 108,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1716
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-17",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=17",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 105,
+      "trustedMissingRows": 105,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1710
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-14",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=14",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 101,
+      "trustedMissingRows": 101,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1702
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-16",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=16",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 99,
+      "trustedMissingRows": 99,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1698
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-47",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=47",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 99,
+      "trustedMissingRows": 99,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1698
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-28",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=28",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 93,
+      "trustedMissingRows": 93,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1686
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-15",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=15",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 92,
+      "trustedMissingRows": 92,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1684
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-36",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=36",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 88,
+      "trustedMissingRows": 88,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1676
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-24",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=24",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 87,
+      "trustedMissingRows": 87,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1674
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-23",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=23",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 83,
+      "trustedMissingRows": 83,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1666
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-25",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=25",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 82,
+      "trustedMissingRows": 82,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1664
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-4",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=4",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 75,
+      "trustedMissingRows": 75,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1650
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-38",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=38",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 72,
+      "trustedMissingRows": 72,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1644
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-39",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=39",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 69,
+      "trustedMissingRows": 69,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1638
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-6",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=6",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 69,
+      "trustedMissingRows": 69,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1638
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-10",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=10",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 68,
+      "trustedMissingRows": 68,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1636
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-1",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=1",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 67,
+      "trustedMissingRows": 67,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1634
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-32",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=32",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 66,
+      "trustedMissingRows": 66,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1632
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-42",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=42",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 66,
+      "trustedMissingRows": 66,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1632
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-27",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=27",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 56,
+      "trustedMissingRows": 56,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1612
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-49",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=49",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 55,
+      "trustedMissingRows": 55,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1610
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-35",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=35",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 53,
+      "trustedMissingRows": 53,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1606
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-41",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=41",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 49,
+      "trustedMissingRows": 49,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1598
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-13",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=13",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 44,
+      "trustedMissingRows": 44,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1588
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-2",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=2",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 40,
+      "trustedMissingRows": 40,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1580
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-3",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=3",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 30,
+      "trustedMissingRows": 30,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1560
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-45",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=45",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 29,
+      "trustedMissingRows": 29,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1558
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-21",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=21",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 24,
+      "trustedMissingRows": 24,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1548
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-51",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=51",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 23,
+      "trustedMissingRows": 23,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1546
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-31",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=31",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 22,
+      "trustedMissingRows": 22,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1544
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-29",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=29",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 17,
+      "trustedMissingRows": 17,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1534
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-20",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=20",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 16,
+      "trustedMissingRows": 16,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1532
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-7",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=7",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 16,
+      "trustedMissingRows": 16,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1532
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-22",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=22",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 14,
+      "trustedMissingRows": 14,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1528
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-46",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=46",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 14,
+      "trustedMissingRows": 14,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1528
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-12",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=12",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 10,
+      "trustedMissingRows": 10,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1520
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-30",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=30",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 10,
+      "trustedMissingRows": 10,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1520
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-40",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=40",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 5,
+      "trustedMissingRows": 5,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1510
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-8",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=8",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 3,
+      "trustedMissingRows": 3,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1506
+    },
+    {
+      "id": "registry-https-www-parentcenterhub-org-index-php-map-id-0-usterritorieshtml5map-get-state-info-48",
+      "familyKey": "parentcenterhub.org",
+      "host": "parentcenterhub.org",
+      "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=48",
+      "targetType": "state_listing_page",
+      "scrapeStrategy": "listing_miner",
+      "sourcePageType": "directory",
+      "rowCount": 1,
+      "trustedMissingRows": 1,
+      "stateIds": [],
+      "sources": [
+        "db_state_listing_url"
+      ],
+      "priorityScore": 1502
+    }
+  ]
+}

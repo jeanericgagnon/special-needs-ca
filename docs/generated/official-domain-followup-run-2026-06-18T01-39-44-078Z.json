@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-06-18T01:39:44.080Z",
+  "mode": "apply",
+  "stateFilter": "iowa",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 4,
+    "appliedStates": 2,
+    "filesChanged": 1,
+    "skippedByReason": {
+      "skipped_followup": 2
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "iowa",
+      "sourceName": "Iowa Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "iowa",
+      "sourceName": "Iowa HCBS Waivers Page",
+      "status": "applied",
+      "targetUrl": "https://hhs.iowa.gov/hcbs"
+    },
+    {
+      "stateId": "iowa",
+      "sourceName": "Iowa Developmental Services Directory",
+      "status": "applied",
+      "targetUrl": "https://hhs.iowa.gov/developmental-disabilities"
+    },
+    {
+      "stateId": "iowa",
+      "sourceName": "Iowa Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "generatedAt": "2026-06-18T19:41:17.163Z",
+  "generatedDate": "2026-06-18",
+  "sourceReviewPacketPath": "docs/generated/provider-pull-now-review-packet-2026-06-18.json",
+  "stateId": "new-york",
+  "unresolvedRows": 3,
+  "byActionClass": {
+    "author_alternate_first_party_target": 3
+  },
+  "byDecisionHint": {
+    "needs_manual_research": 3
+  },
+  "topConcreteTargets": [
+    {
+      "sourceName": "NYU Langone Hassenfeld Children's Hospital Center for Child Development",
+      "sourceUrl": "https://nyulangone.org/locations/hassenfeld-childrens-hospital",
+      "priority": 2
+    },
+    {
+      "sourceName": "Montefiore Rose F. Kennedy Center",
+      "sourceUrl": "https://www.montefiore.org/rose-f-kennedy-center",
+      "priority": 2
+    },
+    {
+      "sourceName": "Cohen Children's Medical Center",
+      "sourceUrl": "https://childrenshospital.northwell.edu/",
+      "priority": 1
+    },
+    {
+      "sourceName": "Golisano Children's Hospital",
+      "sourceUrl": "https://www.urmc.rochester.edu/childrens-hospital",
+      "priority": 1
+    },
+    {
+      "sourceName": "Upstate Golisano Children's Hospital",
+      "sourceUrl": "https://www.upstate.edu/gch",
+      "priority": 1
+    }
+  ],
+  "rows": [
+    {
+      "stateId": "new-york",
+      "actionClass": "author_alternate_first_party_target",
+      "followupReason": "access_blocked_403",
+      "sourceUrl": "https://www.montefiore.org/rose-f-kennedy-center",
+      "hostname": "www.montefiore.org",
+      "repeatCount": 4,
+      "decisionHint": "needs_manual_research",
+      "sameDomainCandidateCount": 2,
+      "sameDomainCandidates": [
+        {
+          "sourceName": "Montefiore Rose F. Kennedy Center",
+          "sourceUrl": "https://www.montefiore.org/rose-f-kennedy-center",
+          "priority": 2
+        },
+        {
+          "sourceName": "Montefiore Rose F. Kennedy Center",
+          "sourceUrl": "https://www.montefiore.org/rose-f-kennedy-center",
+          "priority": 2
+        }
+      ],
+      "topConcreteTargets": [
+        {
+          "sourceName": "NYU Langone Hassenfeld Children's Hospital Center for Child Development",
+          "sourceUrl": "https://nyulangone.org/locations/hassenfeld-childrens-hospital",
+          "priority": 2
+        },
+        {
+          "sourceName": "Montefiore Rose F. Kennedy Center",
+          "sourceUrl": "https://www.montefiore.org/rose-f-kennedy-center",
+          "priority": 2
+        },
+        {
+          "sourceName": "Cohen Children's Medical Center",
+          "sourceUrl": "https://childrenshospital.northwell.edu/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Golisano Children's Hospital",
+          "sourceUrl": "https://www.urmc.rochester.edu/childrens-hospital",
+          "priority": 1
+        },
+        {
+          "sourceName": "Upstate Golisano Children's Hospital",
+          "sourceUrl": "https://www.upstate.edu/gch",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "stateId": "new-york",
+      "actionClass": "author_alternate_first_party_target",
+      "followupReason": "access_blocked_403",
+      "sourceUrl": "https://www.upstate.edu/gch",
+      "hostname": "www.upstate.edu",
+      "repeatCount": 3,
+      "decisionHint": "needs_manual_research",
+      "sameDomainCandidateCount": 1,
+      "sameDomainCandidates": [
+        {
+          "sourceName": "Upstate Golisano Children's Hospital",
+          "sourceUrl": "https://www.upstate.edu/gch",
+          "priority": 1
+        }
+      ],
+      "topConcreteTargets": [
+        {
+          "sourceName": "NYU Langone Hassenfeld Children's Hospital Center for Child Development",
+          "sourceUrl": "https://nyulangone.org/locations/hassenfeld-childrens-hospital",
+          "priority": 2
+        },
+        {
+          "sourceName": "Montefiore Rose F. Kennedy Center",
+          "sourceUrl": "https://www.montefiore.org/rose-f-kennedy-center",
+          "priority": 2
+        },
+        {
+          "sourceName": "Cohen Children's Medical Center",
+          "sourceUrl": "https://childrenshospital.northwell.edu/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Golisano Children's Hospital",
+          "sourceUrl": "https://www.urmc.rochester.edu/childrens-hospital",
+          "priority": 1
+        },
+        {
+          "sourceName": "Upstate Golisano Children's Hospital",
+          "sourceUrl": "https://www.upstate.edu/gch",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "stateId": "new-york",
+      "actionClass": "author_alternate_first_party_target",
+      "followupReason": "access_blocked_403",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-1",
+      "hostname": "www.health.ny.gov",
+      "repeatCount": 2,
+      "decisionHint": "needs_manual_research",
+      "sameDomainCandidateCount": 0,
+      "sameDomainCandidates": [],
+      "topConcreteTargets": [
+        {
+          "sourceName": "NYU Langone Hassenfeld Children's Hospital Center for Child Development",
+          "sourceUrl": "https://nyulangone.org/locations/hassenfeld-childrens-hospital",
+          "priority": 2
+        },
+        {
+          "sourceName": "Montefiore Rose F. Kennedy Center",
+          "sourceUrl": "https://www.montefiore.org/rose-f-kennedy-center",
+          "priority": 2
+        },
+        {
+          "sourceName": "Cohen Children's Medical Center",
+          "sourceUrl": "https://childrenshospital.northwell.edu/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Golisano Children's Hospital",
+          "sourceUrl": "https://www.urmc.rochester.edu/childrens-hospital",
+          "priority": 1
+        },
+        {
+          "sourceName": "Upstate Golisano Children's Hospital",
+          "sourceUrl": "https://www.upstate.edu/gch",
+          "priority": 1
+        }
+      ]
+    }
+  ]
+}

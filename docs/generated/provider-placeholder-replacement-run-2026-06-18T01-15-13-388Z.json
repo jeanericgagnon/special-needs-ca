@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-06-18T01:15:13.391Z",
+  "mode": "apply",
+  "stateFilter": "illinois",
+  "inputPath": "data/provider-placeholder-replacement-decisions.json",
+  "summary": {
+    "inputRows": 1,
+    "appliedStates": 1,
+    "appliedPlaceholderRows": 23,
+    "appliedReplacements": 3,
+    "filesChanged": 1,
+    "skippedByReason": {}
+  },
+  "decisions": [
+    {
+      "stateId": "illinois",
+      "placeholderSourceName": "ILLINOIS Specialized Clinic Roster #1",
+      "status": "applied",
+      "placeholderRowCount": 23,
+      "replacementCount": 3,
+      "replacements": [
+        {
+          "source_name": "Ann & Robert H. Lurie Children's Hospital Developmental Pediatrics",
+          "source_url": "https://www.luriechildrens.org/en/specialties-conditions/developmental-behavioral-pediatrics",
+          "domain": "luriechildrens.org"
+        },
+        {
+          "source_name": "UIC Family Clinic / Developmental Disabilities Family Clinic",
+          "source_url": "https://www.ahs.uic.edu/",
+          "domain": "ahs.uic.edu"
+        },
+        {
+          "source_name": "Carle Foundation Hospital Developmental Pediatrics",
+          "source_url": "https://www.carle.org/",
+          "domain": "carle.org"
+        }
+      ]
+    }
+  ]
+}

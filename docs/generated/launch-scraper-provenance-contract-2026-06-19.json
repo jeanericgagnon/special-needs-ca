@@ -1,0 +1,269 @@
+{
+  "generatedAt": "2026-06-19T23:21:10.770Z",
+  "generatedDate": "2026-06-19",
+  "purpose": "Field-survival contract for launch scraper provenance so source-backed truth metadata survives fetch -> parse -> validate -> stage.",
+  "commonFlow": {
+    "fetchStageFields": [
+      "sourceUrl",
+      "finalUrl",
+      "stateId",
+      "gapFamily",
+      "targetTable",
+      "sourceQueue",
+      "sourceName",
+      "savedPath",
+      "contentType"
+    ],
+    "parsedStageFields": [
+      "recordId",
+      "parserId",
+      "parsedAt",
+      "sourceUrl",
+      "finalUrl",
+      "stateId",
+      "gapFamily",
+      "targetTable",
+      "sourceQueue",
+      "sourceName",
+      "savedPath",
+      "contentType",
+      "canonicalUrl",
+      "pageTitle",
+      "metaDescription",
+      "textSample",
+      "familyExtraction",
+      "parseStatus"
+    ],
+    "validatedStageFields": [
+      "validationStatus",
+      "validationReasons"
+    ],
+    "stagedCommonFields": [
+      "source_url",
+      "source_name",
+      "source_type",
+      "scraped_at",
+      "state_id",
+      "county_id",
+      "confidence_score",
+      "extraction_notes",
+      "raw_text_excerpt",
+      "suggested_target_table",
+      "suggested_target_id",
+      "duplicate_candidate_id",
+      "review_status"
+    ]
+  },
+  "familyCount": 9,
+  "familyContracts": [
+    {
+      "family": "dd_routing",
+      "stagingTable": "staging_scraped_state_resource_agencies",
+      "sourceIdentityRule": "Use finalUrl when present, otherwise sourceUrl, and persist it as source_url.",
+      "stateRule": "parsed stateId must survive into staged state_id.",
+      "truthFieldsThatMustSurvive": [
+        "sourceUrl/finalUrl",
+        "stateId",
+        "pageTitle/textSample",
+        "familyExtraction.officeName"
+      ],
+      "stageSpecificFields": [
+        "extracted_name",
+        "agency_type",
+        "counties_served",
+        "catchment_boundaries",
+        "extracted_website",
+        "extracted_phone",
+        "early_intervention_contact",
+        "agency_intake_contact",
+        "eligibility_info_page",
+        "services_page",
+        "appeals_info"
+      ]
+    },
+    {
+      "family": "programs_benefits",
+      "stagingTable": "staging_scraped_programs",
+      "sourceIdentityRule": "Use finalUrl when present, otherwise sourceUrl, and duplicate it into official_source_url.",
+      "stateRule": "parsed stateId must survive into staged state_id.",
+      "truthFieldsThatMustSurvive": [
+        "sourceUrl/finalUrl",
+        "stateId",
+        "familyExtraction.programName",
+        "textSample or metaDescription"
+      ],
+      "stageSpecificFields": [
+        "extracted_name",
+        "description",
+        "who_it_is_for",
+        "who_might_qualify",
+        "official_source_url",
+        "category",
+        "program_type",
+        "extracted_phone",
+        "extracted_email",
+        "action_url"
+      ]
+    },
+    {
+      "family": "waivers",
+      "stagingTable": "staging_scraped_programs",
+      "sourceIdentityRule": "Use finalUrl when present, otherwise sourceUrl, and duplicate it into official_source_url.",
+      "stateRule": "parsed stateId must survive into staged state_id.",
+      "truthFieldsThatMustSurvive": [
+        "sourceUrl/finalUrl",
+        "stateId",
+        "familyExtraction.programName",
+        "gapFamily-as-program_type"
+      ],
+      "stageSpecificFields": [
+        "extracted_name",
+        "description",
+        "who_it_is_for",
+        "who_might_qualify",
+        "official_source_url",
+        "category",
+        "program_type",
+        "extracted_phone",
+        "extracted_email",
+        "action_url"
+      ]
+    },
+    {
+      "family": "program_waitlists",
+      "stagingTable": "staging_scraped_waitlists",
+      "sourceIdentityRule": "Use finalUrl when present, otherwise sourceUrl, and keep it as both source_url and estimate_source_url for waitlist provenance.",
+      "stateRule": "parsed stateId must survive into staged state_id and program_id inference must not overwrite state provenance.",
+      "truthFieldsThatMustSurvive": [
+        "sourceUrl/finalUrl",
+        "stateId",
+        "familyExtraction.programName",
+        "textSample or serviceSummary",
+        "validationReasons when rejected"
+      ],
+      "stageSpecificFields": [
+        "program_id",
+        "name",
+        "duration_label",
+        "duration_months",
+        "status",
+        "description",
+        "estimate_source_url",
+        "estimate_source_type",
+        "last_checked_at"
+      ]
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stagingTable": "staging_scraped_county_offices",
+      "sourceIdentityRule": "Use finalUrl when present, otherwise sourceUrl, and persist it as source_url.",
+      "stateRule": "parsed stateId must survive into staged state_id.",
+      "truthFieldsThatMustSurvive": [
+        "sourceUrl/finalUrl",
+        "stateId",
+        "familyExtraction.officeName",
+        "familyExtraction.contactPhone",
+        "familyExtraction.contactAddress"
+      ],
+      "stageSpecificFields": [
+        "extracted_name",
+        "extracted_phone",
+        "extracted_email",
+        "extracted_address",
+        "extracted_website",
+        "program_id",
+        "evidence_level"
+      ]
+    },
+    {
+      "family": "education_routing",
+      "stagingTable": "staging_scraped_regional_education_agencies or staging_scraped_school_districts",
+      "sourceIdentityRule": "Use finalUrl when present, otherwise sourceUrl, and persist it as source_url.",
+      "stateRule": "parsed stateId must survive into staged state_id for either education table.",
+      "truthFieldsThatMustSurvive": [
+        "sourceUrl/finalUrl",
+        "stateId",
+        "targetTable",
+        "pageTitle/textSample",
+        "phones/emails when present"
+      ],
+      "stageSpecificFields": [
+        "extracted_name",
+        "agency_type or district contact fields",
+        "counties_served",
+        "extracted_website",
+        "evidence_level",
+        "extracted_phone or spec_ed_contact_phone",
+        "spec_ed_contact_email"
+      ]
+    },
+    {
+      "family": "providers_care",
+      "stagingTable": "staging_scraped_resource_providers",
+      "sourceIdentityRule": "Use finalUrl when present, otherwise sourceUrl, and persist it as source_url.",
+      "stateRule": "parsed stateId must survive into staged state_id.",
+      "truthFieldsThatMustSurvive": [
+        "sourceUrl/finalUrl",
+        "stateId",
+        "familyExtraction.organizationName",
+        "familyExtraction.contactPhone/contactEmail/contactAddress"
+      ],
+      "stageSpecificFields": [
+        "extracted_name",
+        "categories",
+        "extracted_phone",
+        "extracted_email",
+        "extracted_address",
+        "accepts_medi_cal"
+      ]
+    },
+    {
+      "family": "forms_guides",
+      "stagingTable": "staging_scraped_forms",
+      "sourceIdentityRule": "Use finalUrl when present, otherwise sourceUrl, and keep officialDownloadUrl separately as official_download_url.",
+      "stateRule": "parsed stateId must survive into staged state_id.",
+      "truthFieldsThatMustSurvive": [
+        "sourceUrl/finalUrl",
+        "stateId",
+        "familyExtraction.programName",
+        "familyExtraction.officialDownloadUrl"
+      ],
+      "stageSpecificFields": [
+        "slug",
+        "program",
+        "official_download_url",
+        "who_uses_it",
+        "who_signs_it",
+        "where_to_send_it",
+        "letter_script"
+      ]
+    },
+    {
+      "family": "knowledge_content",
+      "stagingTable": "staging_scraped_knowledge_content",
+      "sourceIdentityRule": "Use finalUrl when present, otherwise sourceUrl, and keep canonicalKnowledgeUrl separately as canonical_url.",
+      "stateRule": "parsed stateId must survive into staged state_id.",
+      "truthFieldsThatMustSurvive": [
+        "sourceUrl/finalUrl",
+        "stateId",
+        "familyExtraction.articleTitle",
+        "familyExtraction.canonicalKnowledgeUrl",
+        "familyExtraction.summaryText"
+      ],
+      "stageSpecificFields": [
+        "slug",
+        "title",
+        "content_category",
+        "canonical_url",
+        "summary"
+      ]
+    }
+  ],
+  "invariants": [
+    "Every parsed record must keep sourceUrl, finalUrl, stateId, gapFamily, targetTable, and savedPath.",
+    "Every validated record must preserve the full parsed record and add validationStatus plus validationReasons.",
+    "Every staged row must keep a traceable source_url, source_name, source_type, scraped_at, state_id, confidence_score, extraction_notes, and raw_text_excerpt.",
+    "finalUrl may replace sourceUrl as the staged source_url, but provenance must remain traceable to the fetched page.",
+    "Every launch family now has a direct staging-table mapping, even when downstream promotion remains family-specific."
+  ]
+}

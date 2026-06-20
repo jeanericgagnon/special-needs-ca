@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-06-17T22:31:48.550Z",
+  "mode": "apply",
+  "stateFilter": "florida",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 1,
+    "appliedStates": 1,
+    "filesChanged": 1,
+    "skippedByReason": {}
+  },
+  "decisions": [
+    {
+      "stateId": "florida",
+      "sourceName": "Florida Early Steps Local Directories",
+      "status": "applied",
+      "targetUrl": "https://www.floridaearlysteps.com/"
+    }
+  ]
+}

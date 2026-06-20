@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-06-18T01:44:59.301Z",
+  "mode": "apply",
+  "stateFilter": "maryland",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 4,
+    "appliedStates": 2,
+    "filesChanged": 1,
+    "skippedByReason": {
+      "skipped_followup": 2
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "maryland",
+      "sourceName": "Maryland Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "maryland",
+      "sourceName": "Maryland HCBS Waivers Page",
+      "status": "applied",
+      "targetUrl": "https://dda.health.maryland.gov/hcbs"
+    },
+    {
+      "stateId": "maryland",
+      "sourceName": "Maryland Developmental Services Directory",
+      "status": "applied",
+      "targetUrl": "https://dda.health.maryland.gov/"
+    },
+    {
+      "stateId": "maryland",
+      "sourceName": "Maryland Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

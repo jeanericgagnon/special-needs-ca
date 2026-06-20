@@ -1,0 +1,248 @@
+{
+  "generatedAt": "2026-06-18T21:37:49.368Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "california",
+  "stateName": "California",
+  "sourcePacketPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-california-2026-06-18.json",
+  "sourceTargetsPath": "data/source_targets/california.json",
+  "instructions": {
+    "summary": "Fill only the missing first-party provider targets needed for this state. Do not broaden beyond provider_directory authoring.",
+    "completionRule": "A candidate row is ready only when sourceName, sourceUrl, domain, and reviewedBy are filled."
+  },
+  "summary": {
+    "neededConcreteTargets": 0,
+    "currentConcreteProviderTargetCount": 3,
+    "existingProviderTargetCount": 3,
+    "candidateSlotCount": 1,
+    "readyCandidateCount": 0,
+    "unresolvedCandidateCount": 1
+  },
+  "existingProviderTargets": [
+    {
+      "sourceName": "UC Davis MIND Institute",
+      "sourceUrl": "https://health.ucdavis.edu/mindinstitute/",
+      "domain": "health.ucdavis.edu",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "California developmental and autism specialty provider source."
+    },
+    {
+      "sourceName": "Children's Hospital Los Angeles Boone Fetter Clinic",
+      "sourceUrl": "https://www.chla.org/autism-and-developmental-medicine",
+      "domain": "chla.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Children's developmental medicine and autism specialty services."
+    },
+    {
+      "sourceName": "Stanford Children's Health Autism Services",
+      "sourceUrl": "https://www.stanfordchildrens.org/en/services/autism/",
+      "domain": "stanfordchildrens.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "California autism and developmental care provider source."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "California Counties Wikipedia List",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_counties_in_California",
+      "domain": "en.wikipedia.org"
+    },
+    {
+      "targetTable": "counties",
+      "sourceName": "California State Association of Counties Directory",
+      "sourceUrl": "https://www.counties.org/counties",
+      "domain": "counties.org"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "California DHCS Medi-Cal Homepage",
+      "sourceUrl": "https://www.dhcs.ca.gov/services/medi-cal/Pages/default.aspx",
+      "domain": "dhcs.ca.gov"
+    },
+    {
+      "targetTable": "program_application_steps",
+      "sourceName": "BenefitsCal",
+      "sourceUrl": "https://www.benefitscal.com/",
+      "domain": "benefitscal.com"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "BenefitsCal County Offices",
+      "sourceUrl": "https://www.benefitscal.com/Help/HCPortal/en/county-offices.html",
+      "domain": "benefitscal.com"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Covered California",
+      "sourceUrl": "https://www.coveredca.com/",
+      "domain": "coveredca.com"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "California Children's Services",
+      "sourceUrl": "https://www.dhcs.ca.gov/services/ccs/Pages/default.aspx",
+      "domain": "dhcs.ca.gov"
+    },
+    {
+      "targetTable": "program_appeal_info",
+      "sourceName": "California Department of Social Services State Hearings",
+      "sourceUrl": "https://www.cdss.ca.gov/hearing-requests",
+      "domain": "cdss.ca.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "California DDS Homepage",
+      "sourceUrl": "https://www.dds.ca.gov/",
+      "domain": "dds.ca.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "California DDS Regional Centers",
+      "sourceUrl": "https://www.dds.ca.gov/rc/listings/",
+      "domain": "dds.ca.gov"
+    },
+    {
+      "targetTable": "program_eligibility_rules",
+      "sourceName": "California DDS Eligibility",
+      "sourceUrl": "https://www.dds.ca.gov/general/eligibility/",
+      "domain": "dds.ca.gov"
+    },
+    {
+      "targetTable": "program_application_steps",
+      "sourceName": "California DDS Apply for Services",
+      "sourceUrl": "https://www.dds.ca.gov/services/apply-for-services/",
+      "domain": "dds.ca.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "California DDS Family Support Services",
+      "sourceUrl": "https://www.dds.ca.gov/services/family-support-services/",
+      "domain": "dds.ca.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "California HCBS Waiver Programs",
+      "sourceUrl": "https://www.dhcs.ca.gov/services/Pages/Home-and-Community-Based-(HCB)-Alternatives-Waiver.aspx",
+      "domain": "dhcs.ca.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "California Early Start",
+      "sourceUrl": "https://www.dds.ca.gov/services/early-start/",
+      "domain": "dds.ca.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "California Family Resource Centers Network",
+      "sourceUrl": "https://www.dds.ca.gov/rc/frcn/",
+      "domain": "dds.ca.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "California Department of Education Special Education",
+      "sourceUrl": "https://www.cde.ca.gov/sp/se/",
+      "domain": "cde.ca.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "California SELPA Directory",
+      "sourceUrl": "https://www.cde.ca.gov/sp/se/as/caselpas.asp",
+      "domain": "cde.ca.gov"
+    },
+    {
+      "targetTable": "program_document_requirements",
+      "sourceName": "California Procedural Safeguards Referral Service",
+      "sourceUrl": "https://www.cde.ca.gov/sp/se/qa/pssummary.asp",
+      "domain": "cde.ca.gov"
+    },
+    {
+      "targetTable": "program_appeal_info",
+      "sourceName": "California CDE Special Education Complaint Process",
+      "sourceUrl": "https://www.cde.ca.gov/sp/se/qa/cmplntproc.asp",
+      "domain": "cde.ca.gov"
+    },
+    {
+      "targetTable": "program_appeal_info",
+      "sourceName": "California OAH Special Education Division",
+      "sourceUrl": "https://www.dgs.ca.gov/OAH/Case-Types/Special-Education",
+      "domain": "dgs.ca.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Disability Rights California",
+      "sourceUrl": "https://www.disabilityrightsca.org/",
+      "domain": "disabilityrightsca.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Matrix Parent Network and Resource Center",
+      "sourceUrl": "https://www.matrixparents.org/",
+      "domain": "matrixparents.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "LawHelpCA",
+      "sourceUrl": "https://www.lawhelpca.org/",
+      "domain": "lawhelpca.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of California",
+      "sourceUrl": "https://thearcca.org/",
+      "domain": "thearcca.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Office of Clients' Rights Advocacy",
+      "sourceUrl": "https://www.disabilityrightsca.org/what-we-do/programs/office-of-clients-rights-advocacy-ocra",
+      "domain": "disabilityrightsca.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "California DHCS Forms and Publications",
+      "sourceUrl": "https://www.dhcs.ca.gov/formsandpubs/Pages/default.aspx",
+      "domain": "dhcs.ca.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "California Department of Rehabilitation",
+      "sourceUrl": "https://www.dor.ca.gov/",
+      "domain": "dor.ca.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "CalABLE",
+      "sourceUrl": "https://calable.ca.gov/",
+      "domain": "calable.ca.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "California Open Data Portal",
+      "sourceUrl": "https://data.ca.gov/",
+      "domain": "data.ca.gov"
+    }
+  ],
+  "candidateProviderTargets": [
+    {
+      "slotNumber": 1,
+      "stateId": "california",
+      "stateCode": "CA",
+      "sourceName": "Children's Hospital Los Angeles",
+      "sourceUrl": "https://www.chla.org/",
+      "domain": "chla.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Children's Hospital Main Campus",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Saved first-party CHLA homepage target already evidenced in repo seed artifacts with main campus address and phone.",
+      "reviewedBy": "codex"
+    }
+  ]
+}

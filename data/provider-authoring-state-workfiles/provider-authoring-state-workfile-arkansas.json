@@ -1,0 +1,166 @@
+{
+  "generatedAt": "2026-06-18T18:45:35.275Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "arkansas",
+  "stateName": "Arkansas",
+  "sourcePacketPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-arkansas-2026-06-18.json",
+  "sourceTargetsPath": "data/source_targets/arkansas.json",
+  "instructions": {
+    "summary": "Fill only the missing first-party provider targets needed for this state. Do not broaden beyond provider_directory authoring.",
+    "completionRule": "A candidate row is ready only when sourceName, sourceUrl, domain, and reviewedBy are filled."
+  },
+  "summary": {
+    "neededConcreteTargets": 3,
+    "currentConcreteProviderTargetCount": 0,
+    "existingProviderTargetCount": 1,
+    "candidateSlotCount": 3,
+    "readyCandidateCount": 3,
+    "unresolvedCandidateCount": 0
+  },
+  "existingProviderTargets": [
+    {
+      "sourceName": "Arkansas Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for Arkansas."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Arkansas County Metadata",
+      "sourceUrl": "https://www.arkansas.gov",
+      "domain": "arkansas.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Arkansas Medicaid Portal",
+      "sourceUrl": "https://dhhs.arkansas.gov",
+      "domain": "dhhs.arkansas.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Arkansas Division of Developmental Disabilities Services",
+      "sourceUrl": "https://humanservices.arkansas.gov/dds",
+      "domain": "humanservices.arkansas.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Arkansas HCBS Waivers",
+      "sourceUrl": "https://humanservices.arkansas.gov/hcbs",
+      "domain": "humanservices.arkansas.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Arkansas Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.arkansas.gov/earlyintervention",
+      "domain": "dhhs.arkansas.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Arkansas Department of Education Special Ed",
+      "sourceUrl": "https://education.arkansas.gov",
+      "domain": "education.arkansas.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Arkansas Regional Special Education Support",
+      "sourceUrl": "https://education.arkansas.gov/regional",
+      "domain": "education.arkansas.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Arkansas Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Arkansas",
+      "sourceUrl": "https://www.thearcarkansas.org",
+      "domain": "thearcarkansas.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Arkansas Division of Developmental Disabilities Services",
+      "sourceUrl": "https://humanservices.arkansas.gov/wp-content/uploads/DDS.docx",
+      "domain": "humanservices.arkansas.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Arkansas Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.arkansas.gov/rehab",
+      "domain": "dhhs.arkansas.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Arkansas Secretary of State Business Registry",
+      "sourceUrl": "https://www.arkansas.gov/business",
+      "domain": "arkansas.gov"
+    }
+  ],
+  "candidateProviderTargets": [
+    {
+      "slotNumber": 1,
+      "stateId": "arkansas",
+      "stateCode": "AR",
+      "sourceName": "Arkansas Children's Hospital",
+      "sourceUrl": "https://www.archildrens.org/",
+      "domain": "archildrens.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Children's hospital",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official Arkansas Children's first-party hospital target replacing the generic placeholder domain with the named pediatric hospital source.",
+      "reviewedBy": "codex"
+    },
+    {
+      "slotNumber": 2,
+      "stateId": "arkansas",
+      "stateCode": "AR",
+      "sourceName": "UAMS Health",
+      "sourceUrl": "https://www.uamshealth.com/",
+      "domain": "uamshealth.com",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Academic medical center",
+      "organizationType": "university_clinic",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official first-party UAMS clinical system target for statewide pediatric and specialty clinic coverage in Arkansas.",
+      "reviewedBy": "codex"
+    },
+    {
+      "slotNumber": 3,
+      "stateId": "arkansas",
+      "stateCode": "AR",
+      "sourceName": "Mercy Hospital Northwest Arkansas",
+      "sourceUrl": "https://www.mercy.net/",
+      "domain": "mercy.net",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Regional hospital system",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official Mercy first-party system target covering Arkansas operations, including Northwest Arkansas hospital services.",
+      "reviewedBy": "codex"
+    }
+  ]
+}

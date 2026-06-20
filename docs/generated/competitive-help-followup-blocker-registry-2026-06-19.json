@@ -1,0 +1,246 @@
+{
+  "generatedAt": "2026-06-19T00:59:45.105Z",
+  "generatedDate": "2026-06-19",
+  "summary": {
+    "totalRows": 5,
+    "totalActionableRows": 5,
+    "byGapFamilyAll": {
+      "care_independent_living": 1,
+      "goods_supplies": 1,
+      "housing": 1,
+      "jobs_vocational": 1,
+      "legal_aid": 1
+    },
+    "byGapFamily": {
+      "care_independent_living": 1,
+      "goods_supplies": 1,
+      "housing": 1,
+      "jobs_vocational": 1,
+      "legal_aid": 1
+    },
+    "byBucketAll": {
+      "source_repair": 5
+    },
+    "byBucket": {
+      "source_repair": 5
+    },
+    "byReasonAll": {
+      "dns_lookup_failed": 5
+    },
+    "byReason": {
+      "dns_lookup_failed": 5
+    },
+    "distinctDomains": 5,
+    "latestRunIds": [
+      "2026-06-18T04-19-52-405Z",
+      "2026-06-18T04-18-48-306Z",
+      "2026-06-18T04-17-46-835Z",
+      "2026-06-18T04-16-58-295Z",
+      "2026-06-18T04-14-37-347Z"
+    ]
+  },
+  "allRows": [
+    {
+      "gapFamily": "care_independent_living",
+      "targetTable": "nonprofit_organizations",
+      "sourceUrl": "https://www.ilru.org/projects/cil-net/cil-center-and-association-directory",
+      "hostname": "www.ilru.org",
+      "bucket": "source_repair",
+      "followupReason": "dns_lookup_failed",
+      "runIds": [
+        "2026-06-18T04-18-48-306Z"
+      ],
+      "stateIds": [
+        "national"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "dns_lookup_failed:ENOTFOUND"
+      ],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "goods_supplies",
+      "targetTable": "nonprofit_organizations",
+      "sourceUrl": "https://at3center.net/state-at-programs",
+      "hostname": "at3center.net",
+      "bucket": "source_repair",
+      "followupReason": "dns_lookup_failed",
+      "runIds": [
+        "2026-06-18T04-16-58-295Z"
+      ],
+      "stateIds": [
+        "national"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "dns_lookup_failed:ENOTFOUND"
+      ],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "housing",
+      "targetTable": "nonprofit_organizations",
+      "sourceUrl": "https://www.hud.gov/program_offices/public_indian_housing/pha/contacts",
+      "hostname": "www.hud.gov",
+      "bucket": "source_repair",
+      "followupReason": "dns_lookup_failed",
+      "runIds": [
+        "2026-06-18T04-14-37-347Z"
+      ],
+      "stateIds": [
+        "national"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "dns_lookup_failed:ENOTFOUND"
+      ],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "jobs_vocational",
+      "targetTable": "programs",
+      "sourceUrl": "https://rsa.ed.gov/about/states",
+      "hostname": "rsa.ed.gov",
+      "bucket": "source_repair",
+      "followupReason": "dns_lookup_failed",
+      "runIds": [
+        "2026-06-18T04-17-46-835Z"
+      ],
+      "stateIds": [
+        "national"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "dns_lookup_failed:ENOTFOUND"
+      ],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "legal_aid",
+      "targetTable": "nonprofit_organizations",
+      "sourceUrl": "https://www.lsc.gov/about-lsc/what-legal-aid/get-legal-help",
+      "hostname": "www.lsc.gov",
+      "bucket": "source_repair",
+      "followupReason": "dns_lookup_failed",
+      "runIds": [
+        "2026-06-18T04-19-52-405Z"
+      ],
+      "stateIds": [
+        "national"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "dns_lookup_failed:ENOTFOUND"
+      ],
+      "repeatCount": 1
+    }
+  ],
+  "rows": [
+    {
+      "gapFamily": "care_independent_living",
+      "targetTable": "nonprofit_organizations",
+      "sourceUrl": "https://www.ilru.org/projects/cil-net/cil-center-and-association-directory",
+      "hostname": "www.ilru.org",
+      "bucket": "source_repair",
+      "followupReason": "dns_lookup_failed",
+      "runIds": [
+        "2026-06-18T04-18-48-306Z"
+      ],
+      "stateIds": [
+        "national"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "dns_lookup_failed:ENOTFOUND"
+      ],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "goods_supplies",
+      "targetTable": "nonprofit_organizations",
+      "sourceUrl": "https://at3center.net/state-at-programs",
+      "hostname": "at3center.net",
+      "bucket": "source_repair",
+      "followupReason": "dns_lookup_failed",
+      "runIds": [
+        "2026-06-18T04-16-58-295Z"
+      ],
+      "stateIds": [
+        "national"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "dns_lookup_failed:ENOTFOUND"
+      ],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "housing",
+      "targetTable": "nonprofit_organizations",
+      "sourceUrl": "https://www.hud.gov/program_offices/public_indian_housing/pha/contacts",
+      "hostname": "www.hud.gov",
+      "bucket": "source_repair",
+      "followupReason": "dns_lookup_failed",
+      "runIds": [
+        "2026-06-18T04-14-37-347Z"
+      ],
+      "stateIds": [
+        "national"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "dns_lookup_failed:ENOTFOUND"
+      ],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "jobs_vocational",
+      "targetTable": "programs",
+      "sourceUrl": "https://rsa.ed.gov/about/states",
+      "hostname": "rsa.ed.gov",
+      "bucket": "source_repair",
+      "followupReason": "dns_lookup_failed",
+      "runIds": [
+        "2026-06-18T04-17-46-835Z"
+      ],
+      "stateIds": [
+        "national"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "dns_lookup_failed:ENOTFOUND"
+      ],
+      "repeatCount": 1
+    },
+    {
+      "gapFamily": "legal_aid",
+      "targetTable": "nonprofit_organizations",
+      "sourceUrl": "https://www.lsc.gov/about-lsc/what-legal-aid/get-legal-help",
+      "hostname": "www.lsc.gov",
+      "bucket": "source_repair",
+      "followupReason": "dns_lookup_failed",
+      "runIds": [
+        "2026-06-18T04-19-52-405Z"
+      ],
+      "stateIds": [
+        "national"
+      ],
+      "savedPaths": [],
+      "sampleStatusCodes": [],
+      "sampleErrors": [
+        "dns_lookup_failed:ENOTFOUND"
+      ],
+      "repeatCount": 1
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "briefId": "provider_repair_authoring_brief",
+  "generatedAt": "2026-06-18T06:27:12.470Z",
+  "generatedDate": "2026-06-18",
+  "sourcePacketPath": "docs/generated/provider-repair-batch-packet-pull-now-michigan-2026-06-18.json",
+  "stateId": "michigan",
+  "purpose": "Deterministic authoring brief for unresolved provider repair rows that still need same-org first-party replacement URLs.",
+  "summary": {
+    "unresolvedRows": 3,
+    "rowsWithSavedEvidence": 3,
+    "rowsWithCandidateHints": 0
+  },
+  "rows": [
+    {
+      "stateId": "michigan",
+      "stateName": "Michigan",
+      "actionClass": "author_alternate_first_party_target",
+      "followupReason": "access_blocked_403",
+      "sourceUrl": "https://www.mottchildren.org/",
+      "hostname": "www.mottchildren.org",
+      "repeatCount": 4,
+      "savedEvidencePath": "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03420-michigan-providers-care-c-s-mott-children-s-hospital.html",
+      "savedEvidenceStatus": "saved_html_present",
+      "candidateHints": [],
+      "nextAction": "Author a current same-org first-party replacement URL before the next provider fetch cycle."
+    },
+    {
+      "stateId": "michigan",
+      "stateName": "Michigan",
+      "actionClass": "author_alternate_first_party_target",
+      "followupReason": "access_blocked_403",
+      "sourceUrl": "https://www.childrensdmc.org/",
+      "hostname": "www.childrensdmc.org",
+      "repeatCount": 2,
+      "savedEvidencePath": "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03376-michigan-providers-care-children-s-hospital-of-michigan.html",
+      "savedEvidenceStatus": "saved_html_present",
+      "candidateHints": [],
+      "nextAction": "Author a current same-org first-party replacement URL before the next provider fetch cycle."
+    },
+    {
+      "stateId": "michigan",
+      "stateName": "Michigan",
+      "actionClass": "author_alternate_first_party_target",
+      "followupReason": "access_blocked_403",
+      "sourceUrl": "https://www.spectrumhealth.org/locations/spectrum-health-hospitals-helen-devos-childrens-hospital",
+      "hostname": "www.spectrumhealth.org",
+      "repeatCount": 2,
+      "savedEvidencePath": "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03425-michigan-providers-care-helen-devos-children-s-hospital.html",
+      "savedEvidenceStatus": "saved_html_present",
+      "candidateHints": [],
+      "nextAction": "Author a current same-org first-party replacement URL before the next provider fetch cycle."
+    }
+  ]
+}

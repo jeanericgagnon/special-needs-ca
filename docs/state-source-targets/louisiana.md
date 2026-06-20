@@ -3,7 +3,7 @@
 This document outlines the authoritative crawler target domains, specific agencies, and extraction methods required to replace programmatic placeholders in Louisiana with real, source-listed records.
 
 > [!NOTE]
-> **Category Scaffold Complete:** This state is currently mapped as a category-level scaffold (14 targets). Source-level expansion will follow in Wave 4.
+> **Provider Source Expansion Started:** This state was originally mapped as a category-level scaffold. Concrete first-party provider targets have now been added for the hospital / university clinic layer.
 
 ## 1. Domain Crawler Targets (Wave 4)
 
@@ -21,7 +21,9 @@ This document outlines the authoritative crawler target domains, specific agenci
 | **Special Education Attorneys Directory** | J. Provider and advocate directories / Attorney Directory | [copaa.org](https://www.copaa.org) | `playwright` | `iep_advocates` |
 | **Louisiana Medicaid & Special Education Forms** | K. Forms and guides / Forms Library | [dhhs.louisiana.gov](https://dhhs.louisiana.gov/forms) | `pdf_extract` | `forms` |
 | **Louisiana Vocational Rehabilitation Services** | L. Transition / adult services / Vocational Rehabilitation | [dhhs.louisiana.gov](https://dhhs.louisiana.gov/rehab) | `static_fetch` | `programs` |
-| **Louisiana Children's Hospital Clinics** | M. Hospitals / university clinics / Hospitals | [childrenshospital.org](https://www.childrenshospital.org) | `manual_review` | `resource_providers` |
+| **Manning Family Children's** | M. Hospitals / university clinics / Hospitals | [manningchildrens.org](https://www.manningchildrens.org) | `static_fetch` | `resource_providers` |
+| **Ochsner Hospital for Children** | M. Hospitals / university clinics / Hospitals | [ochsner.org](https://www.ochsner.org) | `static_fetch` | `resource_providers` |
+| **LSU Health Shreveport Children's Center** | M. Hospitals / university clinics / University clinics | [lsuhs.edu](https://www.lsuhs.edu) | `static_fetch` | `resource_providers` |
 | **Louisiana Secretary of State Business Registry** | N. Data quality / verification sources / Open Data Portal | [louisiana.gov](https://www.louisiana.gov/business) | `playwright` | `sources` |
 
 ## 2. Detailed Category Targets
@@ -183,17 +185,41 @@ This document outlines the authoritative crawler target domains, specific agenci
 - **Last Checked:** 2026-06-13
 
 ### Category: M. Hospitals / university clinics (Hospitals)
-- **Source Name:** Louisiana Children's Hospital Clinics
-- **Source URL:** [https://www.childrenshospital.org](https://www.childrenshospital.org)
-- **Domain:** `childrenshospital.org`
+- **Source Name:** Manning Family Children's
+- **Source URL:** [https://www.manningchildrens.org](https://www.manningchildrens.org)
+- **Domain:** `manningchildrens.org`
 - **Target Table:** `resource_providers`
 - **Expected Fields:** `name, phone, address`
-- **Crawl Method:** `manual_review`
+- **Crawl Method:** `static_fetch`
+- **Robots.txt Status:** `allowed`
+- **Terms Risk:** `low`
+- **Priority:** 1
+- **Notes:** Concrete first-party pediatric hospital target for Louisiana provider buildout.
+- **Last Checked:** 2026-06-17
+
+- **Source Name:** Ochsner Hospital for Children
+- **Source URL:** [https://www.ochsner.org](https://www.ochsner.org)
+- **Domain:** `ochsner.org`
+- **Target Table:** `resource_providers`
+- **Expected Fields:** `name, phone, address`
+- **Crawl Method:** `static_fetch`
 - **Robots.txt Status:** `allowed`
 - **Terms Risk:** `low`
 - **Priority:** 2
-- **Notes:** Initial category-level scaffold source target for Louisiana.
-- **Last Checked:** 2026-06-13
+- **Notes:** Concrete first-party Louisiana pediatric hospital system target to replace generic placeholder coverage.
+- **Last Checked:** 2026-06-17
+
+- **Source Name:** LSU Health Shreveport Children's Center
+- **Source URL:** [https://www.lsuhs.edu](https://www.lsuhs.edu)
+- **Domain:** `lsuhs.edu`
+- **Target Table:** `resource_providers`
+- **Expected Fields:** `name, phone, address`
+- **Crawl Method:** `static_fetch`
+- **Robots.txt Status:** `allowed`
+- **Terms Risk:** `low`
+- **Priority:** 2
+- **Notes:** Concrete first-party Louisiana academic pediatric clinic target for northern-state coverage.
+- **Last Checked:** 2026-06-17
 
 ### Category: N. Data quality / verification sources (Open Data Portal)
 - **Source Name:** Louisiana Secretary of State Business Registry
@@ -207,4 +233,3 @@ This document outlines the authoritative crawler target domains, specific agenci
 - **Priority:** 2
 - **Notes:** Initial category-level scaffold source target for Louisiana.
 - **Last Checked:** 2026-06-13
-

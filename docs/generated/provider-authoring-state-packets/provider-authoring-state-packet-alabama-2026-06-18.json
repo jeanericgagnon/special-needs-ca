@@ -1,0 +1,125 @@
+{
+  "generatedAt": "2026-06-18T18:38:36.067Z",
+  "generatedDate": "2026-06-18",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-18.json",
+  "stateId": "alabama",
+  "stateName": "Alabama",
+  "executionPriority": 1,
+  "sourceTargetsPath": "data/source_targets/alabama.json",
+  "ledgerStatus": "",
+  "ledgerNote": "",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 1,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 2,
+  "placeholderProviderTargetCount": 0,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 1,
+  "nextAction": "Add at least 1 more concrete first-party provider targets for Alabama and then regenerate provider source-pack artifacts.",
+  "providerTargets": [
+    {
+      "sourceName": "Children's of Alabama",
+      "sourceUrl": "https://www.childrensal.org/",
+      "domain": "childrensal.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Named first-party Alabama pediatric hospital target replacing generic placeholder."
+    },
+    {
+      "sourceName": "UAB Medicine Pediatrics",
+      "sourceUrl": "https://www.uabmedicine.org/",
+      "domain": "uabmedicine.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "university_clinic",
+      "notes": "First-party Alabama academic medical system target for pediatric and specialty clinic discovery."
+    },
+    {
+      "sourceName": "Huntsville Hospital for Women & Children",
+      "sourceUrl": "https://www.hhsys.org/",
+      "domain": "hhsys.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official health-system first-party target for Huntsville Hospital for Women & Children, added to deepen Alabama pediatric provider coverage beyond Birmingham anchors."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Alabama County Metadata",
+      "sourceUrl": "https://www.alabama.gov",
+      "domain": "alabama.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Alabama Medicaid Portal",
+      "sourceUrl": "https://medicaid.alabama.gov",
+      "domain": "medicaid.alabama.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Alabama Developmental Services Directory",
+      "sourceUrl": "https://mh.alabama.gov",
+      "domain": "mh.alabama.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Alabama HCBS Waivers Page",
+      "sourceUrl": "https://mh.alabama.gov/waivers",
+      "domain": "mh.alabama.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Alabama Early Intervention / Part C",
+      "sourceUrl": "https://www.rehab.alabama.gov/services/ei",
+      "domain": "rehab.alabama.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Alabama Department of Education Special Ed",
+      "sourceUrl": "https://www.alabama-education.gov",
+      "domain": "alabama-education.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Alabama Regional Special Education Support",
+      "sourceUrl": "https://www.alabama-education.gov/regional",
+      "domain": "alabama-education.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Alabama Parent Training Center",
+      "sourceUrl": "https://www.apnsof.org",
+      "domain": "apnsof.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Alabama",
+      "sourceUrl": "https://www.thearcal.org",
+      "domain": "thearcal.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Alabama Medicaid & Special Education Forms",
+      "sourceUrl": "https://medicaid.alabama.gov/forms",
+      "domain": "medicaid.alabama.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Alabama Vocational Rehabilitation Services",
+      "sourceUrl": "https://medicaid.alabama.gov/rehab",
+      "domain": "medicaid.alabama.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Alabama Secretary of State Business Registry",
+      "sourceUrl": "https://www.alabama.gov/business",
+      "domain": "alabama.gov"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-06-19",
+  "dbPath": "ca_disability_navigator.db",
+  "sourceAcquisitionRunsDir": "data/source-acquisition-runs",
+  "summary": {
+    "totalRows": 0,
+    "distinctStates": 0,
+    "rowsWithEvidenceArtifacts": 0,
+    "byBlockerKey": {},
+    "byReviewStatus": {},
+    "byEvidenceReason": {},
+    "byStateId": {}
+  },
+  "rows": []
+}

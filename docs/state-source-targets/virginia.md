@@ -3,7 +3,7 @@
 This document outlines the authoritative crawler target domains, specific agencies, and extraction methods required to replace programmatic placeholders in Virginia with real, source-listed records.
 
 > [!NOTE]
-> **Category Scaffold Complete:** This state is currently mapped as a category-level scaffold (14 targets). Source-level expansion will follow in Wave 2.
+> **Provider Source Expansion Started:** This state was originally mapped as a category-level scaffold. Concrete first-party provider targets have now been added for the hospital / university clinic layer.
 
 ## 1. Domain Crawler Targets (Wave 2)
 
@@ -21,7 +21,9 @@ This document outlines the authoritative crawler target domains, specific agenci
 | **Special Education Attorneys Directory** | J. Provider and advocate directories / Attorney Directory | [copaa.org](https://www.copaa.org) | `playwright` | `iep_advocates` |
 | **Virginia Medicaid & Special Education Forms** | K. Forms and guides / Forms Library | [dhhs.virginia.gov](https://dhhs.virginia.gov/forms) | `pdf_extract` | `forms` |
 | **Virginia Vocational Rehabilitation Services** | L. Transition / adult services / Vocational Rehabilitation | [dhhs.virginia.gov](https://dhhs.virginia.gov/rehab) | `static_fetch` | `programs` |
-| **Virginia Children's Hospital Clinics** | M. Hospitals / university clinics / Hospitals | [childrenshospital.org](https://www.childrenshospital.org) | `manual_review` | `resource_providers` |
+| **Children's Hospital of Richmond at VCU** | M. Hospitals / university clinics / Hospitals | [chrichmond.org](https://www.chrichmond.org) | `static_fetch` | `resource_providers` |
+| **UVA Health Children's** | M. Hospitals / university clinics / Hospitals | [childrens.uvahealth.com](https://childrens.uvahealth.com) | `static_fetch` | `resource_providers` |
+| **Children's Hospital of The King's Daughters** | M. Hospitals / university clinics / Hospitals | [chkd.org](https://www.chkd.org) | `static_fetch` | `resource_providers` |
 | **Virginia Secretary of State Business Registry** | N. Data quality / verification sources / Open Data Portal | [virginia.gov](https://www.virginia.gov/business) | `playwright` | `sources` |
 
 ## 2. Detailed Category Targets
@@ -183,17 +185,41 @@ This document outlines the authoritative crawler target domains, specific agenci
 - **Last Checked:** 2026-06-13
 
 ### Category: M. Hospitals / university clinics (Hospitals)
-- **Source Name:** Virginia Children's Hospital Clinics
-- **Source URL:** [https://www.childrenshospital.org](https://www.childrenshospital.org)
-- **Domain:** `childrenshospital.org`
+- **Source Name:** Children's Hospital of Richmond at VCU
+- **Source URL:** [https://www.chrichmond.org](https://www.chrichmond.org)
+- **Domain:** `chrichmond.org`
 - **Target Table:** `resource_providers`
 - **Expected Fields:** `name, phone, address`
-- **Crawl Method:** `manual_review`
+- **Crawl Method:** `static_fetch`
 - **Robots.txt Status:** `allowed`
 - **Terms Risk:** `low`
-- **Priority:** 2
-- **Notes:** Initial category-level scaffold source target for Virginia.
-- **Last Checked:** 2026-06-13
+- **Priority:** 1
+- **Notes:** Concrete first-party pediatric hospital target for eastern Virginia provider buildout.
+- **Last Checked:** 2026-06-17
+
+- **Source Name:** UVA Health Children's
+- **Source URL:** [https://childrens.uvahealth.com](https://childrens.uvahealth.com)
+- **Domain:** `childrens.uvahealth.com`
+- **Target Table:** `resource_providers`
+- **Expected Fields:** `name, phone, address`
+- **Crawl Method:** `static_fetch`
+- **Robots.txt Status:** `allowed`
+- **Terms Risk:** `low`
+- **Priority:** 1
+- **Notes:** Concrete first-party pediatric hospital target for central Virginia provider buildout.
+- **Last Checked:** 2026-06-17
+
+- **Source Name:** Children's Hospital of The King's Daughters
+- **Source URL:** [https://www.chkd.org](https://www.chkd.org)
+- **Domain:** `chkd.org`
+- **Target Table:** `resource_providers`
+- **Expected Fields:** `name, phone, address`
+- **Crawl Method:** `static_fetch`
+- **Robots.txt Status:** `allowed`
+- **Terms Risk:** `low`
+- **Priority:** 1
+- **Notes:** Concrete first-party pediatric hospital target for Hampton Roads and coastal Virginia.
+- **Last Checked:** 2026-06-17
 
 ### Category: N. Data quality / verification sources (Open Data Portal)
 - **Source Name:** Virginia Secretary of State Business Registry
@@ -207,4 +233,3 @@ This document outlines the authoritative crawler target domains, specific agenci
 - **Priority:** 2
 - **Notes:** Initial category-level scaffold source target for Virginia.
 - **Last Checked:** 2026-06-13
-

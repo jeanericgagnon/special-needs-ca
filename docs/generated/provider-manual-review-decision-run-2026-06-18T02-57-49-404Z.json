@@ -1,0 +1,116 @@
+{
+  "generatedAt": "2026-06-18T02:57:49.408Z",
+  "mode": "apply",
+  "stateFilter": null,
+  "inputPath": "docs/generated/provider-manual-review-queue-2026-06-18.json",
+  "dbPath": "ca_disability_navigator.db",
+  "summary": {
+    "inputRows": 13,
+    "appliedRows": 13,
+    "filesChanged": 2,
+    "appliedByBlocker": {
+      "generic_name_with_county": 1,
+      "missing_address_and_county": 11,
+      "county_geocode_no_match": 1
+    },
+    "skippedByReason": {},
+    "appliedByReviewStatus": {
+      "blocked_generic_provider_name": 1,
+      "blocked_missing_address_and_county": 11,
+      "blocked_county_geocode_no_match": 1
+    }
+  },
+  "decisions": [
+    {
+      "rowId": 557,
+      "stateId": "alabama",
+      "status": "applied",
+      "reviewStatus": "blocked_generic_provider_name",
+      "blockerKey": "generic_name_with_county"
+    },
+    {
+      "rowId": 556,
+      "stateId": "california",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 547,
+      "stateId": "colorado",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 546,
+      "stateId": "florida",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 549,
+      "stateId": "florida",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 550,
+      "stateId": "illinois",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 552,
+      "stateId": "kansas",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 555,
+      "stateId": "louisiana",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 560,
+      "stateId": "missouri",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 548,
+      "stateId": "new-york",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 565,
+      "stateId": "new-york",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 551,
+      "stateId": "pennsylvania",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 564,
+      "stateId": "virginia",
+      "status": "applied",
+      "reviewStatus": "blocked_county_geocode_no_match",
+      "blockerKey": "county_geocode_no_match"
+    }
+  ]
+}

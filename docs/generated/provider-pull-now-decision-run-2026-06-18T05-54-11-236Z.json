@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-06-18T05:54:11.238Z",
+  "mode": "apply",
+  "stateFilter": "louisiana",
+  "inputPath": "data/provider-pull-now-decisions.json",
+  "summary": {
+    "inputRows": 3,
+    "resolvedRows": 0,
+    "deferredRows": 3,
+    "filesChanged": 2,
+    "skippedByReason": {},
+    "byDecisionMode": {
+      "needs_manual_research": 3
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "louisiana",
+      "sourceUrl": "https://www.lsuhs.edu/",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "louisiana",
+      "sourceUrl": "https://www.manningchildrens.org/",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "louisiana",
+      "sourceUrl": "https://www.ochsner.org/",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    }
+  ]
+}

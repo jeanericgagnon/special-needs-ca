@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-06-17T22:49:51.559Z",
+  "mode": "apply",
+  "stateFilter": "connecticut",
+  "inputPath": "data/forms-fallback-manual-review-decisions.json",
+  "summary": {
+    "inputRows": 3,
+    "resolvedRows": 3,
+    "deferredRows": 0,
+    "filesChanged": 2,
+    "skippedByReason": {},
+    "byDecisionMode": {
+      "validate_existing_candidate": 2,
+      "replace_with_reviewed_candidate": 1
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "connecticut",
+      "rowKey": "connecticut|application_or_eligibility_guide|https://portal.ct.gov/dds",
+      "status": "applied",
+      "resolvedSourceUrl": "https://portal.ct.gov/dds"
+    },
+    {
+      "stateId": "connecticut",
+      "rowKey": "connecticut|application_or_eligibility_guide|https://portal.ct.gov/dds/hcbs/eligibility",
+      "status": "applied",
+      "resolvedSourceUrl": "https://portal.ct.gov/dds"
+    },
+    {
+      "stateId": "connecticut",
+      "rowKey": "connecticut|general_form_related_page|https://portal.ct.gov/dss",
+      "status": "applied",
+      "resolvedSourceUrl": "https://portal.ct.gov/dss"
+    }
+  ],
+  "resolutionArtifacts": {
+    "queuePath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/forms-fallback-manual-review-queue-2026-06-17.json",
+    "resolutionLedgerPath": "data/source-acquisition-state/forms-fallback-manual-review-ledger.json",
+    "resolutionPackPath": "data/source_packs/forms_fallback_manual_resolutions.json"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-06-18T02:07:34.832Z",
+  "mode": "apply",
+  "stateFilter": "tennessee",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 4,
+    "appliedStates": 2,
+    "filesChanged": 1,
+    "skippedByReason": {
+      "skipped_followup": 2
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "tennessee",
+      "sourceName": "Tennessee Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "tennessee",
+      "sourceName": "Tennessee HCBS Waivers Page",
+      "status": "applied",
+      "targetUrl": "https://www.tn.gov/didd/hcbs"
+    },
+    {
+      "stateId": "tennessee",
+      "sourceName": "Tennessee Developmental Services Directory",
+      "status": "applied",
+      "targetUrl": "https://www.tn.gov/didd"
+    },
+    {
+      "stateId": "tennessee",
+      "sourceName": "Tennessee Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

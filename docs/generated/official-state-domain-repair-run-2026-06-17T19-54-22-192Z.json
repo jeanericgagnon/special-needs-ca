@@ -1,0 +1,35 @@
+{
+  "generatedAt": "2026-06-17T19:54:22.193Z",
+  "mode": "dry-run",
+  "stateFilter": "florida",
+  "summary": {
+    "eligibleRepairRows": 0,
+    "appliedChanges": 0,
+    "filesChanged": 0,
+    "skippedAmbiguousRows": 2,
+    "skippedAmbiguousByMode": {
+      "no_candidate_yet": 1,
+      "first_party_root_hint_only": 1
+    },
+    "skippedMissingRows": 0
+  },
+  "repairs": [],
+  "ambiguousRows": [
+    {
+      "stateId": "florida",
+      "targetTable": "programs",
+      "sourceName": "Children's Medical Services (CMS) Plan",
+      "fakeSourceUrl": "https://www.cmsplan.floridahealth.gov/",
+      "replacementMode": "no_candidate_yet",
+      "mediumCandidateCount": 0
+    },
+    {
+      "stateId": "florida",
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Florida Early Steps Local Directories",
+      "fakeSourceUrl": "https://www.cmsplan.floridahealth.gov/earlysteps/directories",
+      "replacementMode": "first_party_root_hint_only",
+      "mediumCandidateCount": 0
+    }
+  ]
+}

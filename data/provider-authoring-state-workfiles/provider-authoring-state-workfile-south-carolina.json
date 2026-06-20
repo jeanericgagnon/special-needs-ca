@@ -1,0 +1,166 @@
+{
+  "generatedAt": "2026-06-18T19:24:00.587Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "south-carolina",
+  "stateName": "South Carolina",
+  "sourcePacketPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-south-carolina-2026-06-18.json",
+  "sourceTargetsPath": "data/source_targets/south-carolina.json",
+  "instructions": {
+    "summary": "Fill only the missing first-party provider targets needed for this state. Do not broaden beyond provider_directory authoring.",
+    "completionRule": "A candidate row is ready only when sourceName, sourceUrl, domain, and reviewedBy are filled."
+  },
+  "summary": {
+    "neededConcreteTargets": 3,
+    "currentConcreteProviderTargetCount": 0,
+    "existingProviderTargetCount": 1,
+    "candidateSlotCount": 3,
+    "readyCandidateCount": 0,
+    "unresolvedCandidateCount": 3
+  },
+  "existingProviderTargets": [
+    {
+      "sourceName": "South Carolina Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for South Carolina."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "South Carolina County Metadata",
+      "sourceUrl": "https://www.south-carolina.gov",
+      "domain": "south-carolina.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "South Carolina Medicaid Portal",
+      "sourceUrl": "https://dhhs.south-carolina.gov",
+      "domain": "dhhs.south-carolina.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "South Carolina Department of Disabilities and Special Needs",
+      "sourceUrl": "https://ddsn.sc.gov/",
+      "domain": "ddsn.sc.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "South Carolina HCBS Waivers",
+      "sourceUrl": "https://ddsn.sc.gov/hcbs",
+      "domain": "ddsn.sc.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "South Carolina Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.south-carolina.gov/earlyintervention",
+      "domain": "dhhs.south-carolina.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "South Carolina Department of Education Special Ed",
+      "sourceUrl": "https://education.south-carolina.gov",
+      "domain": "education.south-carolina.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "South Carolina Regional Special Education Support",
+      "sourceUrl": "https://education.south-carolina.gov/regional",
+      "domain": "education.south-carolina.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "South Carolina Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of South Carolina",
+      "sourceUrl": "https://www.thearcsouth-carolina.org",
+      "domain": "thearcsouth-carolina.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "South Carolina Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.south-carolina.gov/forms",
+      "domain": "dhhs.south-carolina.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "South Carolina Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.south-carolina.gov/rehab",
+      "domain": "dhhs.south-carolina.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "South Carolina Secretary of State Business Registry",
+      "sourceUrl": "https://www.south-carolina.gov/business",
+      "domain": "south-carolina.gov"
+    }
+  ],
+  "candidateProviderTargets": [
+    {
+      "slotNumber": 1,
+      "stateId": "south-carolina",
+      "stateCode": "SC",
+      "sourceName": "MUSC Shawn Jenkins Children's Hospital",
+      "sourceUrl": "https://musckids.org/",
+      "domain": "musckids.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Children's hospital",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official MUSC children's hospital source for statewide pediatric specialty and hospital care in South Carolina.",
+      "reviewedBy": "codex"
+    },
+    {
+      "slotNumber": 2,
+      "stateId": "south-carolina",
+      "stateCode": "SC",
+      "sourceName": "Prisma Health Richland Hospital",
+      "sourceUrl": "https://prismahealth.org/locations/hospitals/richland-hospital",
+      "domain": "prismahealth.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Regional hospital",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official Prisma Health Richland Hospital source for pediatric referral and hospital-based specialty care in the Midlands.",
+      "reviewedBy": "codex"
+    },
+    {
+      "slotNumber": 3,
+      "stateId": "south-carolina",
+      "stateCode": "SC",
+      "sourceName": "Prisma Health Greenville Memorial Hospital",
+      "sourceUrl": "https://prismahealth.org/locations/hospitals/greenville-memorial-hospital",
+      "domain": "prismahealth.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Academic medical center",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official Greenville Memorial Hospital source for Upstate pediatric referral and hospital-based specialty care.",
+      "reviewedBy": "codex"
+    }
+  ]
+}

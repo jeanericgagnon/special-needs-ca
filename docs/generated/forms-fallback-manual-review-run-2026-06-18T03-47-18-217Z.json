@@ -1,0 +1,859 @@
+{
+  "generatedAt": "2026-06-18T03:47:18.224Z",
+  "mode": "apply",
+  "stateFilter": null,
+  "inputPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/forms-fallback-manual-review-decisions.json",
+  "summary": {
+    "inputRows": 139,
+    "resolvedRows": 0,
+    "deferredRows": 28,
+    "filesChanged": 2,
+    "skippedByReason": {
+      "row_not_in_live_manual_review_queue": 111
+    },
+    "byDecisionMode": {
+      "needs_manual_research": 28
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "alaska",
+      "rowKey": "alaska|application_or_eligibility_guide|https://dhss.alaska.gov/dsds",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "alaska",
+      "rowKey": "alaska|application_or_eligibility_guide|https://dhss.alaska.gov/dsds/Pages/hcbw/eligibility.aspx",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "alaska",
+      "rowKey": "alaska|general_form_related_page|https://dhss.alaska.gov/dsds/Pages/pcs",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "arizona",
+      "rowKey": "arizona|application_or_eligibility_guide|https://des.az.gov/ddd",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "arizona",
+      "rowKey": "arizona|general_form_related_page|https://www.azahcccs.gov/",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "arizona",
+      "rowKey": "arizona|application_or_eligibility_guide|https://www.azahcccs.gov/hcbs/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "arkansas",
+      "rowKey": "arkansas|application_or_eligibility_guide|https://humanservices.arkansas.gov/dds",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "arkansas",
+      "rowKey": "arkansas|application_or_eligibility_guide|https://humanservices.arkansas.gov/hcbs/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "arkansas",
+      "rowKey": "arkansas|general_form_related_page|https://humanservices.arkansas.gov/medicaid",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "colorado",
+      "rowKey": "colorado|application_or_eligibility_guide|https://hcpf.colorado.gov/developmental-disabilities",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "colorado",
+      "rowKey": "colorado|application_or_eligibility_guide|https://hcpf.colorado.gov/hcbs/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "colorado",
+      "rowKey": "colorado|general_form_related_page|https://hcpf.colorado.gov/pcs",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "connecticut",
+      "rowKey": "connecticut|application_or_eligibility_guide|https://portal.ct.gov/dds",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "connecticut",
+      "rowKey": "connecticut|application_or_eligibility_guide|https://portal.ct.gov/dds/hcbs/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "connecticut",
+      "rowKey": "connecticut|general_form_related_page|https://portal.ct.gov/dss",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "delaware",
+      "rowKey": "delaware|application_or_eligibility_guide|https://dhss.delaware.gov/ddds",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "delaware",
+      "rowKey": "delaware|application_or_eligibility_guide|https://dhss.delaware.gov/ddds/hcbs/eligibility.html",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "delaware",
+      "rowKey": "delaware|general_form_related_page|https://dhss.delaware.gov/dmma",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "hawaii",
+      "rowKey": "hawaii|application_or_eligibility_guide|https://health.hawaii.gov/ddd",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "hawaii",
+      "rowKey": "hawaii|application_or_eligibility_guide|https://health.hawaii.gov/ddd/hcbs/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "hawaii",
+      "rowKey": "hawaii|general_form_related_page|https://medquest.hawaii.gov/",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "idaho",
+      "rowKey": "idaho|application_or_eligibility_guide|https://healthandwelfare.idaho.gov/",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "idaho",
+      "rowKey": "idaho|application_or_eligibility_guide|https://healthandwelfare.idaho.gov/hcbs/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "idaho",
+      "rowKey": "idaho|general_form_related_page|https://healthandwelfare.idaho.gov/medicaid",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "indiana",
+      "rowKey": "indiana|application_or_eligibility_guide|https://www.in.gov/fssa/ddrs",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "indiana",
+      "rowKey": "indiana|application_or_eligibility_guide|https://www.in.gov/fssa/ddrs/hcbs/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "indiana",
+      "rowKey": "indiana|general_form_related_page|https://www.in.gov/medicaid",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "iowa",
+      "rowKey": "iowa|application_or_eligibility_guide|https://hhs.iowa.gov/",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "iowa",
+      "rowKey": "iowa|application_or_eligibility_guide|https://hhs.iowa.gov/hcbs/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "iowa",
+      "rowKey": "iowa|general_form_related_page|https://hhs.iowa.gov/ime",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "kansas",
+      "rowKey": "kansas|general_form_related_page|https://www.kancare.ks.gov/",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "kansas",
+      "rowKey": "kansas|application_or_eligibility_guide|https://www.kdads.ks.gov/",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "kansas",
+      "rowKey": "kansas|application_or_eligibility_guide|https://www.kdads.ks.gov/hcbs/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "kentucky",
+      "rowKey": "kentucky|general_form_related_page|https://chfs.ky.gov/dms",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "kentucky",
+      "rowKey": "kentucky|application_or_eligibility_guide|https://dbhdid.ky.gov/",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "kentucky",
+      "rowKey": "kentucky|application_or_eligibility_guide|https://dbhdid.ky.gov/hcbs/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "louisiana",
+      "rowKey": "louisiana|general_form_related_page|https://ldh.la.gov/medicaid",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "louisiana",
+      "rowKey": "louisiana|application_or_eligibility_guide|https://ldh.la.gov/ocdd",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "louisiana",
+      "rowKey": "louisiana|application_or_eligibility_guide|https://ldh.la.gov/ocdd/hcbs/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "maine",
+      "rowKey": "maine|application_or_eligibility_guide|https://www.maine.gov/dhhs/oads",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "maine",
+      "rowKey": "maine|application_or_eligibility_guide|https://www.maine.gov/dhhs/oads/hcbs/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "maine",
+      "rowKey": "maine|general_form_related_page|https://www.maine.gov/dhhs/oms",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "maryland",
+      "rowKey": "maryland|application_or_eligibility_guide|https://dda.health.maryland.gov/",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "maryland",
+      "rowKey": "maryland|application_or_eligibility_guide|https://dda.health.maryland.gov/hcbs/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "maryland",
+      "rowKey": "maryland|general_form_related_page|https://health.maryland.gov/",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "massachusetts",
+      "rowKey": "massachusetts|application_or_eligibility_guide|https://www.mass.gov/dds",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "massachusetts",
+      "rowKey": "massachusetts|application_or_eligibility_guide|https://www.mass.gov/dds/hcbs/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "massachusetts",
+      "rowKey": "massachusetts|general_form_related_page|https://www.mass.gov/masshealth",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "michigan",
+      "rowKey": "michigan|application_or_eligibility_guide|https://www.michigan.gov/mdhhs",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "michigan",
+      "rowKey": "michigan|application_or_eligibility_guide|https://www.michigan.gov/mdhhs/hcbs/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "michigan",
+      "rowKey": "michigan|general_form_related_page|https://www.michigan.gov/medicaid",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "minnesota",
+      "rowKey": "minnesota|application_or_eligibility_guide|https://mn.gov/dhs",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "minnesota",
+      "rowKey": "minnesota|general_form_related_page|https://mn.gov/dhs/pca",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "minnesota",
+      "rowKey": "minnesota|application_or_eligibility_guide|https://mn.gov/dhs/waivers/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "mississippi",
+      "rowKey": "mississippi|general_form_related_page|https://medicaid.ms.gov/",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "mississippi",
+      "rowKey": "mississippi|application_or_eligibility_guide|https://www.dmh.ms.gov/",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "mississippi",
+      "rowKey": "mississippi|application_or_eligibility_guide|https://www.dmh.ms.gov/hcbs/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "missouri",
+      "rowKey": "missouri|application_or_eligibility_guide|https://dmh.mo.gov/dev-disabilities",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "missouri",
+      "rowKey": "missouri|application_or_eligibility_guide|https://dmh.mo.gov/dev-disabilities/hcbs/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "missouri",
+      "rowKey": "missouri|general_form_related_page|https://mydss.mo.gov/",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "montana",
+      "rowKey": "montana|general_form_related_page|https://dphhs.mt.gov/brd/medicaid",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "montana",
+      "rowKey": "montana|application_or_eligibility_guide|https://dphhs.mt.gov/dsd/ddp",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "montana",
+      "rowKey": "montana|application_or_eligibility_guide|https://dphhs.mt.gov/dsd/ddp/hcbs/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "nevada",
+      "rowKey": "nevada|application_or_eligibility_guide|https://adsd.nv.gov/",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "nevada",
+      "rowKey": "nevada|application_or_eligibility_guide|https://adsd.nv.gov/hcbs/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "nevada",
+      "rowKey": "nevada|general_form_related_page|https://dhcfp.nv.gov/",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "north-carolina",
+      "rowKey": "north-carolina|general_form_related_page|https://medicaid.ncdhhs.gov/",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "north-carolina",
+      "rowKey": "north-carolina|application_or_eligibility_guide|https://www.ncdhhs.gov/divisions/mhddsas",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "north-carolina",
+      "rowKey": "north-carolina|application_or_eligibility_guide|https://www.ncdhhs.gov/innovations/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "north-dakota",
+      "rowKey": "north-dakota|application_or_eligibility_guide|https://www.hhs.nd.gov/dd",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "north-dakota",
+      "rowKey": "north-dakota|application_or_eligibility_guide|https://www.hhs.nd.gov/dd/hcbs/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "north-dakota",
+      "rowKey": "north-dakota|general_form_related_page|https://www.hhs.nd.gov/medicaid",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "oklahoma",
+      "rowKey": "oklahoma|general_form_related_page|https://oklahoma.gov/ohca",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "oklahoma",
+      "rowKey": "oklahoma|application_or_eligibility_guide|https://oklahoma.gov/okdhs/services/dds",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "oklahoma",
+      "rowKey": "oklahoma|application_or_eligibility_guide|https://oklahoma.gov/okdhs/services/dds/hcbs/eligibility.html",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "oregon",
+      "rowKey": "oregon|application_or_eligibility_guide|https://www.oregon.gov/odhs/dds",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "oregon",
+      "rowKey": "oregon|application_or_eligibility_guide|https://www.oregon.gov/odhs/dds/hcbs/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "oregon",
+      "rowKey": "oregon|general_form_related_page|https://www.oregon.gov/oha",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "rhode-island",
+      "rowKey": "rhode-island|application_or_eligibility_guide|https://bhddh.ri.gov/developmental-disabilities",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "rhode-island",
+      "rowKey": "rhode-island|application_or_eligibility_guide|https://bhddh.ri.gov/developmental-disabilities/hcbs/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "rhode-island",
+      "rowKey": "rhode-island|general_form_related_page|https://eohhs.ri.gov/",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "south-carolina",
+      "rowKey": "south-carolina|application_or_eligibility_guide|https://ddsn.sc.gov/",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "south-carolina",
+      "rowKey": "south-carolina|application_or_eligibility_guide|https://ddsn.sc.gov/hcbs/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "south-carolina",
+      "rowKey": "south-carolina|general_form_related_page|https://www.scdhhs.gov/",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "south-dakota",
+      "rowKey": "south-dakota|application_or_eligibility_guide|https://dhs.sd.gov/dd",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "south-dakota",
+      "rowKey": "south-dakota|application_or_eligibility_guide|https://dhs.sd.gov/dd/hcbs/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "south-dakota",
+      "rowKey": "south-dakota|general_form_related_page|https://dss.sd.gov/medicaid",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "tennessee",
+      "rowKey": "tennessee|application_or_eligibility_guide|https://www.tn.gov/didd",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "tennessee",
+      "rowKey": "tennessee|application_or_eligibility_guide|https://www.tn.gov/didd/hcbs/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "tennessee",
+      "rowKey": "tennessee|general_form_related_page|https://www.tn.gov/tenncare",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "utah",
+      "rowKey": "utah|application_or_eligibility_guide|https://dspd.utah.gov/",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "utah",
+      "rowKey": "utah|application_or_eligibility_guide|https://dspd.utah.gov/hcbs/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "utah",
+      "rowKey": "utah|general_form_related_page|https://medicaid.utah.gov/",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "vermont",
+      "rowKey": "vermont|application_or_eligibility_guide|https://ddsd.vermont.gov/",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "vermont",
+      "rowKey": "vermont|application_or_eligibility_guide|https://ddsd.vermont.gov/hcbs/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "vermont",
+      "rowKey": "vermont|general_form_related_page|https://dvha.vermont.gov/",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "virginia",
+      "rowKey": "virginia|application_or_eligibility_guide|https://dbhds.virginia.gov/",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "virginia",
+      "rowKey": "virginia|application_or_eligibility_guide|https://dbhds.virginia.gov/hcbs/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "virginia",
+      "rowKey": "virginia|general_form_related_page|https://www.dmas.virginia.gov/",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "washington",
+      "rowKey": "washington|application_or_eligibility_guide|https://www.dshs.wa.gov/dda",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "washington",
+      "rowKey": "washington|application_or_eligibility_guide|https://www.dshs.wa.gov/dda/hcbs/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "washington",
+      "rowKey": "washington|general_form_related_page|https://www.hca.wa.gov/",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "west-virginia",
+      "rowKey": "west-virginia|general_form_related_page|https://dhhr.wv.gov/",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "west-virginia",
+      "rowKey": "west-virginia|application_or_eligibility_guide|https://dhhr.wv.gov/bms",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "west-virginia",
+      "rowKey": "west-virginia|application_or_eligibility_guide|https://dhhr.wv.gov/bms/hcbs/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "wisconsin",
+      "rowKey": "wisconsin|application_or_eligibility_guide|https://www.dhs.wisconsin.gov/",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "wisconsin",
+      "rowKey": "wisconsin|application_or_eligibility_guide|https://www.dhs.wisconsin.gov/familycare/eligibility.htm",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "wisconsin",
+      "rowKey": "wisconsin|general_form_related_page|https://www.dhs.wisconsin.gov/medicaid",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "wyoming",
+      "rowKey": "wyoming|application_or_eligibility_guide|https://health.wyo.gov/behavioralhealth/dd",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "wyoming",
+      "rowKey": "wyoming|application_or_eligibility_guide|https://health.wyo.gov/behavioralhealth/dd/hcbs/eligibility",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "wyoming",
+      "rowKey": "wyoming|general_form_related_page|https://health.wyo.gov/healthcarefin",
+      "status": "skipped_row_not_in_live_manual_review_queue",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "connecticut",
+      "rowKey": "connecticut|general_form_related_page|https://portal.ct.gov/dds",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "delaware",
+      "rowKey": "delaware|general_form_related_page|https://dhss.delaware.gov/ddds",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "hawaii",
+      "rowKey": "hawaii|general_form_related_page|https://health.hawaii.gov/ddd",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "indiana",
+      "rowKey": "indiana|general_form_related_page|http://www.in.gov/fssa/ddars",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "iowa",
+      "rowKey": "iowa|general_form_related_page|https://hhs.iowa.gov/",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "kentucky",
+      "rowKey": "kentucky|general_form_related_page|https://dbhdid.ky.gov/",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "louisiana",
+      "rowKey": "louisiana|general_form_related_page|https://ldh.la.gov/microsite/11",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "maine",
+      "rowKey": "maine|general_form_related_page|https://www.maine.gov/dhhs/oads",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "maryland",
+      "rowKey": "maryland|general_form_related_page|https://health.maryland.gov/dda/Pages/Home.aspx",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "massachusetts",
+      "rowKey": "massachusetts|general_form_related_page|https://www.mass.gov/orgs/department-of-developmental-services",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "mississippi",
+      "rowKey": "mississippi|general_form_related_page|https://www.dmh.ms.gov/",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "missouri",
+      "rowKey": "missouri|general_form_related_page|https://dmh.mo.gov/dev-disabilities",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "montana",
+      "rowKey": "montana|general_form_related_page|https://dphhs.mt.gov/dsd/ddp",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "nevada",
+      "rowKey": "nevada|general_form_related_page|https://adsd.nv.gov/",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "north-carolina",
+      "rowKey": "north-carolina|general_form_related_page|https://www.ncdhhs.gov/divisions/mhddsas",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "north-dakota",
+      "rowKey": "north-dakota|general_form_related_page|https://www.hhs.nd.gov/dd",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "oklahoma",
+      "rowKey": "oklahoma|general_form_related_page|https://oklahoma.gov/okdhs/services/dds",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "oregon",
+      "rowKey": "oregon|general_form_related_page|https://www.oregon.gov/odhs/dds",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "rhode-island",
+      "rowKey": "rhode-island|general_form_related_page|https://bhddh.ri.gov/developmental-disabilities",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "south-carolina",
+      "rowKey": "south-carolina|general_form_related_page|https://ddsn.sc.gov/",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "south-dakota",
+      "rowKey": "south-dakota|general_form_related_page|https://dhs.sd.gov/dd",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "tennessee",
+      "rowKey": "tennessee|general_form_related_page|https://www.tn.gov/didd",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "utah",
+      "rowKey": "utah|general_form_related_page|https://dspd.utah.gov/",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "vermont",
+      "rowKey": "vermont|general_form_related_page|https://ddsd.vermont.gov/",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "virginia",
+      "rowKey": "virginia|general_form_related_page|https://dbhds.virginia.gov/",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "washington",
+      "rowKey": "washington|general_form_related_page|https://www.dshs.wa.gov/dda",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "west-virginia",
+      "rowKey": "west-virginia|general_form_related_page|https://dhhr.wv.gov/bms",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "wyoming",
+      "rowKey": "wyoming|general_form_related_page|https://health.wyo.gov/behavioralhealth/dd",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    }
+  ],
+  "resolutionArtifacts": {
+    "queuePath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/forms-fallback-manual-review-queue-2026-06-18.json",
+    "resolutionLedgerPath": "data/source-acquisition-state/forms-fallback-manual-review-ledger.json",
+    "resolutionPackPath": "data/source_packs/forms_fallback_manual_resolutions.json"
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "generatedAt": "2026-06-17",
+  "dbPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/frontend/ca_disability_navigator.db",
+  "metrics": {
+    "states": 50,
+    "counties": 3094,
+    "programs": 507,
+    "eligibilityRules": 303,
+    "documentRequirements": 502,
+    "applicationSteps": 992,
+    "appeals": 451,
+    "waitlists": 165,
+    "countyOffices": 3678,
+    "stateResourceAgencies": 636,
+    "regionalEducationAgencies": 313,
+    "schoolDistricts": 3117,
+    "resourceProviders": 83,
+    "nonprofits": 29501,
+    "advocates": 2995,
+    "conditions": 78,
+    "functionalNeeds": 18,
+    "ageBands": 0,
+    "insuranceTypes": 0,
+    "knowledgeArticles": 15,
+    "familyCases": 1,
+    "childProfiles": 1,
+    "caseProgramStatuses": 0,
+    "organizations": 36891,
+    "organizationProgramLinks": 36891,
+    "serviceLocations": 83,
+    "officeLocations": 4314,
+    "virtualServiceAreas": 33130,
+    "userSubmittedResources": 0,
+    "coverageGaps": 0,
+    "verificationQueueItems": 2,
+    "stagingProviders": 102,
+    "reminders": 0,
+    "documentChecklistItems": 0,
+    "consultationThreads": 0,
+    "consultationMessages": 0,
+    "sharedPortalTokens": 0
+  },
+  "stateCoverage": {
+    "programs": 50,
+    "countyOffices": 50,
+    "stateResourceAgencies": 50,
+    "regionalEducationAgencies": 47,
+    "schoolDistricts": 50,
+    "resourceProviders": 50,
+    "nonprofits": 50
+  },
+  "summary": {
+    "substantial": 3,
+    "partial": 4,
+    "thin": 2,
+    "demoOnly": 1,
+    "modeledOnly": 1
+  },
+  "trackSummary": {
+    "informationTrack": {
+      "complete": false,
+      "blockers": [
+        "provider_depth_thin",
+        "knowledge_content_thin",
+        "waitlist_depth_shallow",
+        "education_routing_not_all_states"
+      ]
+    },
+    "runtimeTrack": {
+      "operationalReady": true,
+      "blockers": [
+        "user_submissions_empty",
+        "coverage_gaps_empty",
+        "case_program_tracking_demo_only"
+      ]
+    }
+  },
+  "layers": [
+    {
+      "id": "program_benefits",
+      "label": "Programs, waivers, appeals, forms, and waitlists",
+      "status": "substantial",
+      "evidence": [
+        "507 programs across 50/50 states",
+        "303 eligibility rules",
+        "502 document requirements",
+        "992 application steps",
+        "451 appeal records",
+        "165 waitlist records"
+      ],
+      "gap": "Program foundation is strong, but waitlist depth is still smaller than the rest of the program layer."
+    },
+    {
+      "id": "public_routing_education",
+      "label": "County offices, DD routing, and education routing",
+      "status": "partial",
+      "evidence": [
+        "3678 county offices across 50/50 states",
+        "636 state routing agencies across 50/50 states",
+        "313 regional education agencies across 47/50 states",
+        "3117 school districts across 50/50 states"
+      ],
+      "gap": "Routing layers are broadly populated, but density and local depth still vary by state and county."
+    },
+    {
+      "id": "local_nonprofits",
+      "label": "Local nonprofit support organizations",
+      "status": "substantial",
+      "evidence": [
+        "29501 nonprofit listings across 50/50 states"
+      ],
+      "gap": "Nonprofit coverage is broad, but foundation metadata like accessibility and live capacity is still sparse."
+    },
+    {
+      "id": "local_advocates",
+      "label": "IEP advocates and advocacy support",
+      "status": "thin",
+      "evidence": [
+        "2995 advocate listings"
+      ],
+      "gap": "Advocate count is strong, but truth quality and public eligibility still need to stay under active audit."
+    },
+    {
+      "id": "local_providers",
+      "label": "Clinics, therapists, and local providers",
+      "status": "partial",
+      "evidence": [
+        "83 provider listings across 50/50 states",
+        "102 staged provider rows waiting in provider staging"
+      ],
+      "gap": "Provider coverage is the clearest national information gap. This layer exists, but it is nowhere near all-state depth."
+    },
+    {
+      "id": "directory_foundation_metadata",
+      "label": "Findhelp-like metadata on directory listings",
+      "status": "partial",
+      "evidence": [
+        "Schema support exists for tags, availability, next steps, accessibility, claims, and trust fields on providers, nonprofits, and advocates.",
+        "Those fields sit on 32579 directory rows total."
+      ],
+      "gap": "The metadata model exists, but live availability, accessibility, and capacity signals are still sparse on the checked-in DB."
+    },
+    {
+      "id": "normalization_org_program_location",
+      "label": "Organization -> program -> location normalization",
+      "status": "thin",
+      "evidence": [
+        "36891 organizations",
+        "36891 organization-program links",
+        "83 service locations",
+        "4314 office locations",
+        "33130 virtual service areas"
+      ],
+      "gap": "This migration landing zone is modeled in schema but not yet populated in the checked-in DB."
+    },
+    {
+      "id": "conditions_needs_reference",
+      "label": "Conditions, functional needs, and reference knowledge",
+      "status": "substantial",
+      "evidence": [
+        "78 conditions",
+        "18 functional needs",
+        "0 age bands",
+        "0 insurance types"
+      ],
+      "gap": "Core condition and need knowledge is populated, but some supporting reference tables are still empty in the checked-in DB."
+    },
+    {
+      "id": "knowledge_content",
+      "label": "Knowledge articles and guidance content",
+      "status": "partial",
+      "evidence": [
+        "15 knowledge articles"
+      ],
+      "gap": "Knowledge content exists, but article volume is still small relative to the breadth of the rest of the information model."
+    },
+    {
+      "id": "family_case_runtime",
+      "label": "Family, case, and navigator-adjacent workflow data",
+      "status": "demo_only",
+      "evidence": [
+        "1 family cases",
+        "1 child profiles",
+        "0 case program status rows"
+      ],
+      "gap": "The schema supports family/case workflows, but the checked-in DB mostly shows demo-level or empty runtime data."
+    },
+    {
+      "id": "user_feedback_ops",
+      "label": "User submissions, coverage gaps, and feedback loops",
+      "status": "modeled_only",
+      "evidence": [
+        "0 user-submitted resources",
+        "0 coverage gap records"
+      ],
+      "gap": "These operational loops are modeled but not populated in the checked-in DB snapshot."
+    }
+  ],
+  "conclusion": {
+    "hasAllInformation": false,
+    "reason": "The repo has strong national program, routing, nonprofit, advocate, and condition foundations, but provider coverage, normalization, knowledge depth, and workflow/runtime layers are still thin or empty in the checked-in DB.",
+    "informationTrackComplete": false,
+    "runtimeTrackOperationalReady": true
+  }
+}

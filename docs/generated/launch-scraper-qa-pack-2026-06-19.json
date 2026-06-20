@@ -1,0 +1,443 @@
+{
+  "generatedAt": "2026-06-19T23:21:11.632Z",
+  "generatedDate": "2026-06-19",
+  "purpose": "Real-artifact QA pack for launch scraper families using saved accepted and rejected records from source-acquisition runs.",
+  "familyCount": 9,
+  "familyQaPacks": [
+    {
+      "family": "dd_routing",
+      "acceptedCase": {
+        "runId": "2026-06-19T01-46-07-185Z",
+        "validationStatus": "accepted",
+        "recordId": "florida|dd_routing|00005-florida-dd-routing-florida-early-steps-program",
+        "sourceUrl": "https://www.floridaearlysteps.com/",
+        "finalUrl": "https://floridaearlysteps.com/",
+        "savedPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-19T01-46-07-185Z/pages/00005-florida-dd-routing-florida-early-steps-program.html",
+        "stateId": "florida",
+        "pageTitle": "Home - FDOH Early Steps",
+        "canonicalUrl": "https://floridaearlysteps.com/",
+        "parseStatus": "parsed",
+        "validationReasons": [],
+        "familyExtractionPreview": {
+          "recordType": "dd_routing_page",
+          "officeName": "Every child develops at their own pace. Early Steps helps them along the way.",
+          "contactPhone": "(800) 218-0001",
+          "publicContactSignalCount": 1
+        }
+      },
+      "rejectedCase": {
+        "runId": "2026-06-19T01-46-07-185Z",
+        "validationStatus": "rejected",
+        "recordId": "new-jersey|dd_routing|00001-new-jersey-dd-routing-new-jersey-division-of-developmental-disabilities",
+        "sourceUrl": "https://www.nj.gov/humanservices/ddd",
+        "finalUrl": "https://www.nj.gov/humanservices/ddd/",
+        "savedPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-19T01-46-07-185Z/pages/00001-new-jersey-dd-routing-new-jersey-division-of-developmental-disabilities.html",
+        "stateId": "new-jersey",
+        "pageTitle": "Division of Developmental Disabilities Home",
+        "canonicalUrl": "https://www.nj.gov/humanservices/ddd/",
+        "parseStatus": "parsed",
+        "validationReasons": [
+          "missing_dd_contact_signal"
+        ],
+        "familyExtractionPreview": {
+          "recordType": "dd_routing_page",
+          "officeName": "Official Site of The State of New Jersey",
+          "publicContactSignalCount": 0
+        }
+      },
+      "hasRealAcceptedCase": true,
+      "hasRealRejectedCase": true,
+      "qaReady": true,
+      "recommendedAssertions": [
+        "accepted case should preserve sourceUrl/finalUrl/stateId and expected family extraction",
+        "rejected case should preserve validationReasons exactly as saved on disk"
+      ]
+    },
+    {
+      "family": "programs_benefits",
+      "acceptedCase": {
+        "runId": "2026-06-18T23-18-00-538Z",
+        "validationStatus": "accepted",
+        "recordId": "california|programs_benefits|00014-california-programs-benefits-covered-california",
+        "sourceUrl": "https://www.coveredca.com/",
+        "finalUrl": "https://www.coveredca.com/",
+        "savedPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-18T23-18-00-538Z/pages/00014-california-programs-benefits-covered-california.html",
+        "stateId": "california",
+        "pageTitle": "Covered California™ | The Official Site of California&#39;s Health Insurance Marketplace",
+        "canonicalUrl": "https://www.coveredca.com/",
+        "parseStatus": "parsed",
+        "validationReasons": [],
+        "familyExtractionPreview": {
+          "recordType": "program_information_page",
+          "programName": "We’ve got your plan.  And your back.",
+          "contactPhone": "(800) 300-1506"
+        }
+      },
+      "rejectedCase": {
+        "runId": "2026-06-18T23-22-47-034Z",
+        "validationStatus": "rejected",
+        "recordId": "kentucky|programs_benefits|00001-kentucky-programs-benefits-kentucky-self-direction-services",
+        "sourceUrl": "https://dbhdid.ky.gov/",
+        "finalUrl": "https://dbhdid.ky.gov/",
+        "savedPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-18T23-22-47-034Z/pages/00001-kentucky-programs-benefits-kentucky-self-direction-services.html",
+        "stateId": "kentucky",
+        "pageTitle": "Department for Behavioral Health, Developmental and Intellectual Disabilities",
+        "canonicalUrl": "https://dbhdid.ky.gov/",
+        "parseStatus": "parsed",
+        "validationReasons": [
+          "missing_action_signal"
+        ],
+        "familyExtractionPreview": {
+          "recordType": "program_information_page",
+          "programName": "Department for Behavioral Health, Developmental and Intellectual Disabilities"
+        }
+      },
+      "hasRealAcceptedCase": true,
+      "hasRealRejectedCase": true,
+      "qaReady": true,
+      "recommendedAssertions": [
+        "accepted case should preserve sourceUrl/finalUrl/stateId and expected family extraction",
+        "rejected case should preserve validationReasons exactly as saved on disk"
+      ]
+    },
+    {
+      "family": "waivers",
+      "acceptedCase": {
+        "runId": "2026-06-18T23-21-16-378Z",
+        "validationStatus": "accepted",
+        "recordId": "missouri|waivers|00013-missouri-waivers-missouri-hcbs-waivers",
+        "sourceUrl": "https://dmh.mo.gov/dev-disabilities/hcbs",
+        "finalUrl": "https://dmh.mo.gov/dev-disabilities/hcbs",
+        "savedPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-18T23-21-16-378Z/pages/00013-missouri-waivers-missouri-hcbs-waivers.html",
+        "stateId": "missouri",
+        "pageTitle": "HCBS Transition Plan | dmh.mo.gov",
+        "canonicalUrl": "https://dmh.mo.gov/dev-disabilities/hcbs",
+        "parseStatus": "parsed",
+        "validationReasons": [],
+        "familyExtractionPreview": {
+          "recordType": "program_information_page",
+          "programName": "HCBS Transition Plan"
+        }
+      },
+      "rejectedCase": {
+        "runId": "2026-06-19T00-59-54-445Z",
+        "validationStatus": "rejected",
+        "recordId": "kentucky|waivers|00001-kentucky-waivers-kentucky-hcbs-waivers",
+        "sourceUrl": "https://dbhdid.ky.gov/hcbs",
+        "finalUrl": "https://dbhdid.ky.gov/hcbs",
+        "savedPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-19T00-59-54-445Z/pages/00001-kentucky-waivers-kentucky-hcbs-waivers.html",
+        "stateId": "kentucky",
+        "pageTitle": "Department for Behavioral Health, Developmental and Intellectual Disabilities",
+        "canonicalUrl": "https://dbhdid.ky.gov/hcbs",
+        "parseStatus": "parsed",
+        "validationReasons": [
+          "missing_action_signal"
+        ],
+        "familyExtractionPreview": {
+          "recordType": "program_information_page",
+          "programName": "Department for Behavioral Health, Developmental and Intellectual Disabilities"
+        }
+      },
+      "hasRealAcceptedCase": true,
+      "hasRealRejectedCase": true,
+      "qaReady": true,
+      "recommendedAssertions": [
+        "accepted case should preserve sourceUrl/finalUrl/stateId and expected family extraction",
+        "rejected case should preserve validationReasons exactly as saved on disk"
+      ]
+    },
+    {
+      "family": "forms_guides",
+      "acceptedCase": {
+        "runId": "2026-06-18T22-50-55-042Z",
+        "validationStatus": "accepted",
+        "recordId": "illinois|forms_guides|00009-illinois-forms-guides-illinois-all-kids-app-guide",
+        "sourceUrl": "https://www.illinois.gov/hfs/MedicalPrograms/AllKids/Pages/default.aspx",
+        "finalUrl": "https://hfs.illinois.gov/",
+        "savedPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-18T22-50-55-042Z/pages/00009-illinois-forms-guides-illinois-all-kids-app-guide.html",
+        "stateId": "illinois",
+        "pageTitle": "Illinois Healthcare and Family Services",
+        "canonicalUrl": "https://hfs.illinois.gov",
+        "parseStatus": "parsed",
+        "validationReasons": [],
+        "familyExtractionPreview": {
+          "recordType": "forms_guide_page",
+          "programName": "Illinois HFS - Medicaid and Child Support",
+          "officialDownloadUrl": "https://hfs.illinois.gov/",
+          "publicContactSignalCount": 0
+        }
+      },
+      "rejectedCase": {
+        "runId": "2026-06-18T22-58-57-693Z",
+        "validationStatus": "rejected",
+        "recordId": "california|forms_guides|00001-california-forms-guides-california-medi-cal-application-single-streamlined-form",
+        "sourceUrl": "https://www.dhcs.ca.gov/services/medi-cal/pages/apply_for_medi-cal.aspx",
+        "finalUrl": "https://www.dhcs.ca.gov/services/medi-cal/pages/apply_for_medi-cal.aspx",
+        "savedPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-18T22-58-57-693Z/pages/00001-california-forms-guides-california-medi-cal-application-single-streamlined-form.html",
+        "stateId": "california",
+        "pageTitle": "",
+        "canonicalUrl": "https://www.dhcs.ca.gov/services/medi-cal/pages/apply_for_medi-cal.aspx",
+        "parseStatus": "parsed",
+        "validationReasons": [
+          "missing_title_and_heading",
+          "missing_form_program_name"
+        ],
+        "familyExtractionPreview": {
+          "recordType": "forms_guide_page",
+          "officialDownloadUrl": "https://www.dhcs.ca.gov/services/medi-cal/pages/apply_for_medi-cal.aspx",
+          "publicContactSignalCount": 0
+        }
+      },
+      "hasRealAcceptedCase": true,
+      "hasRealRejectedCase": true,
+      "qaReady": true,
+      "recommendedAssertions": [
+        "accepted case should preserve sourceUrl/finalUrl/stateId and expected family extraction",
+        "rejected case should preserve validationReasons exactly as saved on disk"
+      ]
+    },
+    {
+      "family": "program_waitlists",
+      "acceptedCase": {
+        "runId": "2026-06-19T00-16-10-127Z",
+        "validationStatus": "accepted",
+        "recordId": "pennsylvania|program_waitlists|00002-pennsylvania-program-waitlists-odp-community-living-waiver-enrollment-queue",
+        "sourceUrl": "https://www.dhs.pa.gov/Services/Disabilities-Aging/Pages/ODP-Waivers.aspx",
+        "finalUrl": "https://www.pa.gov/agencies/dhs",
+        "savedPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-19T00-16-10-127Z/pages/00002-pennsylvania-program-waitlists-odp-community-living-waiver-enrollment-queue.html",
+        "stateId": "pennsylvania",
+        "pageTitle": "Department of Human Services | Department of Human Services | Commonwealth of Pennsylvania",
+        "canonicalUrl": "https://www.pa.gov/agencies/dhs",
+        "parseStatus": "parsed",
+        "validationReasons": [],
+        "familyExtractionPreview": {
+          "recordType": "program_information_page",
+          "programName": "Department of Human Services (DHS)"
+        }
+      },
+      "rejectedCase": {
+        "runId": "2026-06-19T01-05-07-122Z",
+        "validationStatus": "rejected",
+        "recordId": "kentucky|program_waitlists|00002-kentucky-program-waitlists-kentucky-self-direction-services-enrollment-queue",
+        "sourceUrl": "https://dbhdid.ky.gov/",
+        "finalUrl": "https://dbhdid.ky.gov/",
+        "savedPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-19T01-05-07-122Z/pages/00002-kentucky-program-waitlists-kentucky-self-direction-services-enrollment-queue.html",
+        "stateId": "kentucky",
+        "pageTitle": "Department for Behavioral Health, Developmental and Intellectual Disabilities",
+        "canonicalUrl": "https://dbhdid.ky.gov/",
+        "parseStatus": "parsed",
+        "validationReasons": [
+          "missing_action_signal"
+        ],
+        "familyExtractionPreview": {
+          "recordType": "program_information_page",
+          "programName": "Department for Behavioral Health, Developmental and Intellectual Disabilities"
+        }
+      },
+      "hasRealAcceptedCase": true,
+      "hasRealRejectedCase": true,
+      "qaReady": true,
+      "recommendedAssertions": [
+        "accepted case should preserve sourceUrl/finalUrl/stateId and expected family extraction",
+        "rejected case should preserve validationReasons exactly as saved on disk"
+      ]
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "acceptedCase": {
+        "runId": "2026-06-19T01-12-06-353Z",
+        "validationStatus": "accepted",
+        "recordId": "georgia|medicaid_hhs_offices|00003-georgia-medicaid-hhs-offices-georgia-division-of-family-and-children-services-dfcs-county-directory",
+        "sourceUrl": "https://dfcs.georgia.gov/locations",
+        "finalUrl": "https://dfcs.georgia.gov/locations",
+        "savedPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-19T01-12-06-353Z/pages/00003-georgia-medicaid-hhs-offices-georgia-division-of-family-and-children-services-dfcs-county-directory.html",
+        "stateId": "georgia",
+        "pageTitle": "Find a Location",
+        "canonicalUrl": "https://dfcs.georgia.gov/locations",
+        "parseStatus": "parsed",
+        "validationReasons": [],
+        "familyExtractionPreview": {
+          "recordType": "county_office_page",
+          "officeName": "Find a Location",
+          "contactPhone": "(877) 423-4746",
+          "contactAddress": "1160 West Parker Street, Baxley , GA 31513",
+          "publicContactSignalCount": 2
+        }
+      },
+      "rejectedCase": {
+        "runId": "2026-06-19T01-15-57-999Z",
+        "validationStatus": "rejected",
+        "recordId": "illinois|medicaid_hhs_offices|00002-illinois-medicaid-hhs-offices-idhs-family-community-resource-centers-fcrc-locator",
+        "sourceUrl": "https://www.dhs.state.il.us/page.aspx?module=12",
+        "finalUrl": "https://www.dhs.state.il.us/page.aspx?module=12",
+        "savedPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-19T01-15-57-999Z/pages/00002-illinois-medicaid-hhs-offices-idhs-family-community-resource-centers-fcrc-locator.html",
+        "stateId": "illinois",
+        "pageTitle": "IDHS: Office Locator",
+        "canonicalUrl": "https://www.dhs.state.il.us/page.aspx?module=12",
+        "parseStatus": "parsed",
+        "validationReasons": [
+          "missing_office_address"
+        ],
+        "familyExtractionPreview": {
+          "recordType": "county_office_page",
+          "officeName": "Office Locator",
+          "contactPhone": "(800) 843-6154",
+          "publicContactSignalCount": 1
+        }
+      },
+      "hasRealAcceptedCase": true,
+      "hasRealRejectedCase": true,
+      "qaReady": true,
+      "recommendedAssertions": [
+        "accepted case should preserve sourceUrl/finalUrl/stateId and expected family extraction",
+        "rejected case should preserve validationReasons exactly as saved on disk"
+      ]
+    },
+    {
+      "family": "education_routing",
+      "acceptedCase": {
+        "runId": "2026-06-19T00-41-49-096Z",
+        "validationStatus": "accepted",
+        "recordId": "new-york|education_routing|00001-new-york-education-routing-nys-school-district-profiles",
+        "sourceUrl": "https://data.nysed.gov/",
+        "finalUrl": "https://data.nysed.gov/",
+        "savedPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-19T00-41-49-096Z/pages/00001-new-york-education-routing-nys-school-district-profiles.html",
+        "stateId": "new-york",
+        "pageTitle": "NYSED Data Site",
+        "canonicalUrl": "https://data.nysed.gov/",
+        "parseStatus": "needs_review",
+        "validationReasons": [],
+        "familyExtractionPreview": {
+          "recordType": "generic_page",
+          "organizationName": "NYSED Data Site",
+          "publicContactSignalCount": 0
+        }
+      },
+      "rejectedCase": {
+        "runId": "curated_saved_page_replay",
+        "validationStatus": "rejected",
+        "recordId": "florida|education_routing|00004-florida-education-routing-florida-school-district-directory",
+        "sourceUrl": "https://www.fldoe.org/schools/school-choice/k-12-schools/",
+        "finalUrl": "https://www.fldoe.org/schools/school-choice/k-12-schools/",
+        "savedPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-19T00-42-52-835Z/pages/00004-florida-education-routing-florida-school-district-directory.html",
+        "stateId": "florida",
+        "pageTitle": "Access Denied",
+        "canonicalUrl": "https://www.fldoe.org/schools/school-choice/k-12-schools/",
+        "parseStatus": "parsed",
+        "validationReasons": [
+          "missing_basic_signal"
+        ],
+        "familyExtractionPreview": {
+          "recordType": "generic_page",
+          "organizationName": "Access Denied",
+          "publicContactSignalCount": 0
+        }
+      },
+      "hasRealAcceptedCase": true,
+      "hasRealRejectedCase": true,
+      "qaReady": true,
+      "recommendedAssertions": [
+        "accepted case should preserve sourceUrl/finalUrl/stateId and expected family extraction",
+        "rejected case should preserve validationReasons exactly as saved on disk"
+      ]
+    },
+    {
+      "family": "providers_care",
+      "acceptedCase": {
+        "runId": "2026-06-19T01-34-25-789Z",
+        "validationStatus": "accepted",
+        "recordId": "new-york|providers_care|00001-new-york-providers-care-cohen-children-s-medical-center-departments-and-services",
+        "sourceUrl": "https://childrenshospital.northwell.edu/departments-services",
+        "finalUrl": "https://childrenshospital.northwell.edu/departments-services",
+        "savedPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-19T01-34-25-789Z/pages/00001-new-york-providers-care-cohen-children-s-medical-center-departments-and-services.html",
+        "stateId": "new-york",
+        "pageTitle": "Departments &amp; services - Cohen Children&#039;s | Northwell Health",
+        "canonicalUrl": "https://pediatrics.northwell.edu/departments-services",
+        "parseStatus": "parsed",
+        "validationReasons": [],
+        "familyExtractionPreview": {
+          "recordType": "provider_page",
+          "organizationName": "Cohen Children&#039;s",
+          "contactPhone": "(833) 259-2367",
+          "contactAddress": "269-01 76th Avenue, New Hyde Park, NY 11040",
+          "publicContactSignalCount": 2
+        }
+      },
+      "rejectedCase": {
+        "runId": "2026-06-19T01-34-25-789Z",
+        "validationStatus": "rejected",
+        "recordId": "georgia|providers_care|00006-georgia-providers-care-marcus-autism-center-medical-services",
+        "sourceUrl": "https://www.marcus.org/care-and-services/medical-services",
+        "finalUrl": "https://www.marcus.org/care-and-services/medical-services",
+        "savedPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-19T01-34-25-789Z/pages/00006-georgia-providers-care-marcus-autism-center-medical-services.html",
+        "stateId": "georgia",
+        "pageTitle": "Medical Services | Marcus Autism Center",
+        "canonicalUrl": "https://www.marcus.org/care-and-services/medical-services",
+        "parseStatus": "parsed",
+        "validationReasons": [
+          "missing_provider_contact_signal"
+        ],
+        "familyExtractionPreview": {
+          "recordType": "provider_page",
+          "organizationName": "Providing highly specialized care for the various medical needs of children with autism",
+          "publicContactSignalCount": 0
+        }
+      },
+      "hasRealAcceptedCase": true,
+      "hasRealRejectedCase": true,
+      "qaReady": true,
+      "recommendedAssertions": [
+        "accepted case should preserve sourceUrl/finalUrl/stateId and expected family extraction",
+        "rejected case should preserve validationReasons exactly as saved on disk"
+      ]
+    },
+    {
+      "family": "knowledge_content",
+      "acceptedCase": {
+        "runId": "2026-06-19T01-39-53-513Z",
+        "validationStatus": "accepted",
+        "recordId": "national|knowledge_content|00003-national-knowledge-content-idea-evaluation-procedures",
+        "sourceUrl": "https://sites.ed.gov/idea/regs/b/d/300.304",
+        "finalUrl": "https://sites.ed.gov/idea/regs/b/d/300.304",
+        "savedPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-19T01-39-53-513Z/pages/00003-national-knowledge-content-idea-evaluation-procedures.html",
+        "stateId": "national",
+        "pageTitle": "Sec. 300.304 Evaluation procedures - Individuals with Disabilities Education Act",
+        "canonicalUrl": "https://sites.ed.gov/idea/regs/b/d/300.304",
+        "parseStatus": "parsed",
+        "validationReasons": [],
+        "familyExtractionPreview": {
+          "recordType": "knowledge_content_page",
+          "articleTitle": "Sec. 300.304 Evaluation procedures",
+          "canonicalKnowledgeUrl": "https://sites.ed.gov/idea/regs/b/d/300.304"
+        }
+      },
+      "rejectedCase": {
+        "runId": "curated_saved_page_replay",
+        "validationStatus": "rejected",
+        "recordId": "national|knowledge_content|00005-national-knowledge-content-ssa-apply-for-child-disability-benefits",
+        "sourceUrl": "https://www.ssa.gov/benefits/disability/apply-child.html",
+        "finalUrl": "https://www.ssa.gov/benefits/disability/apply-child.html",
+        "savedPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/2026-06-18T03-38-52-430Z/pages/00005-national-knowledge-content-ssa-apply-for-child-disability-benefits.html",
+        "stateId": "national",
+        "pageTitle": "Access Denied",
+        "canonicalUrl": "https://www.ssa.gov/benefits/disability/apply-child.html",
+        "parseStatus": "parsed",
+        "validationReasons": [
+          "knowledge_summary_too_thin"
+        ],
+        "familyExtractionPreview": {
+          "recordType": "knowledge_content_page",
+          "articleTitle": "Access Denied",
+          "canonicalKnowledgeUrl": "https://www.ssa.gov/benefits/disability/apply-child.html"
+        }
+      },
+      "hasRealAcceptedCase": true,
+      "hasRealRejectedCase": true,
+      "qaReady": true,
+      "recommendedAssertions": [
+        "accepted case should preserve sourceUrl/finalUrl/stateId and expected family extraction",
+        "rejected case should preserve validationReasons exactly as saved on disk"
+      ]
+    }
+  ]
+}

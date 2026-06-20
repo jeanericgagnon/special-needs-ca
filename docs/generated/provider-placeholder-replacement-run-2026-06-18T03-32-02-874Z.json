@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-06-18T03:32:02.878Z",
+  "mode": "apply",
+  "stateFilter": "tennessee",
+  "inputPath": "data/provider-placeholder-replacement-decisions.json",
+  "summary": {
+    "inputRows": 1,
+    "appliedStates": 1,
+    "appliedPlaceholderRows": 3,
+    "appliedReplacements": 3,
+    "filesChanged": 1,
+    "skippedByReason": {}
+  },
+  "decisions": [
+    {
+      "stateId": "tennessee",
+      "placeholderSourceName": "www.childrensaterlanger.org",
+      "status": "applied",
+      "matchStrategy": "exact_placeholder_url",
+      "placeholderRowCount": 3,
+      "replacementCount": 3,
+      "replacements": [
+        {
+          "source_name": "Dolly Parton Children's Hospital",
+          "source_url": "https://www.dollychildrens.org/",
+          "domain": "dollychildrens.org"
+        },
+        {
+          "source_name": "Dolly Parton Children's Hospital Specialty Clinics",
+          "source_url": "https://www.dollychildrens.org/medical-services/specialty-clinics",
+          "domain": "dollychildrens.org"
+        },
+        {
+          "source_name": "Dolly Parton Children's Hospital Main Campus",
+          "source_url": "https://www.dollychildrens.org/about-us/our-locations/dolly-parton-childrens-hospital-main-campus",
+          "domain": "dollychildrens.org"
+        }
+      ]
+    }
+  ]
+}

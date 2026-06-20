@@ -1,0 +1,135 @@
+{
+  "generatedAt": "2026-06-19T18:22:13.861Z",
+  "generatedDate": "2026-06-19",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+  "stateId": "indiana",
+  "stateName": "Indiana",
+  "executionPriority": 12,
+  "sourceTargetsPath": "data/source_targets/indiana.json",
+  "ledgerStatus": "complete",
+  "ledgerNote": "applied-one-concrete-first-party-provider-target",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 1,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 4,
+  "placeholderProviderTargetCount": 0,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 0,
+  "neededLiveProviderRows": 2,
+  "authoringGapClass": "needs_refresh_or_deeper_targets",
+  "nextAction": "Refresh Indiana provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+  "providerTargets": [
+    {
+      "sourceName": "Riley Children's Health",
+      "sourceUrl": "https://www.rileychildrens.org",
+      "domain": "rileychildrens.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Concrete first-party pediatric hospital target for Indiana provider buildout."
+    },
+    {
+      "sourceName": "Peyton Manning Children's Hospital",
+      "sourceUrl": "https://healthcare.ascension.org/locations/indiana/inasc/pmch",
+      "domain": "healthcare.ascension.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Concrete first-party Indiana pediatric hospital target verified on Ascension's public children’s site."
+    },
+    {
+      "sourceName": "Indiana University Health Pediatric Care",
+      "sourceUrl": "https://iuhealth.org",
+      "domain": "iuhealth.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital_system",
+      "notes": "Concrete first-party statewide pediatric care system target for Indiana."
+    },
+    {
+      "sourceName": "Peyton Manning Children's Hospital Pediatric Neurology",
+      "sourceUrl": "https://healthcare.ascension.org/locations/indiana/inasc/pmch/departments-and-services/departments/pediatric-neurology",
+      "domain": "healthcare.ascension.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Saved first-party Peyton Manning Children's Hospital specialty department URL recovered from the archived Indiana hospital page."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Indiana County Metadata",
+      "sourceUrl": "https://www.indiana.gov",
+      "domain": "indiana.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Indiana Medicaid Portal",
+      "sourceUrl": "https://dhhs.indiana.gov",
+      "domain": "dhhs.indiana.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Indiana Division of Disability and Rehabilitative Services",
+      "sourceUrl": "https://www.in.gov/fssa/ddrs",
+      "domain": "in.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Indiana HCBS Waivers",
+      "sourceUrl": "https://www.in.gov/fssa/ddrs/hcbs",
+      "domain": "in.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Indiana Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.indiana.gov/earlyintervention",
+      "domain": "dhhs.indiana.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Indiana Department of Education Special Ed",
+      "sourceUrl": "https://education.indiana.gov",
+      "domain": "education.indiana.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Indiana Regional Special Education Support",
+      "sourceUrl": "https://education.indiana.gov/regional",
+      "domain": "education.indiana.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Indiana Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Indiana",
+      "sourceUrl": "https://www.thearcindiana.org",
+      "domain": "thearcindiana.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Indiana Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.indiana.gov/forms",
+      "domain": "dhhs.indiana.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Indiana Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.indiana.gov/rehab",
+      "domain": "dhhs.indiana.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Indiana Secretary of State Business Registry",
+      "sourceUrl": "https://www.indiana.gov/business",
+      "domain": "indiana.gov"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "generatedAt": "2026-06-18T05:48:44.427Z",
+  "mode": "apply",
+  "stateFilter": "tennessee",
+  "inputPath": "data/provider-pull-now-decisions.json",
+  "summary": {
+    "inputRows": 6,
+    "resolvedRows": 0,
+    "deferredRows": 0,
+    "filesChanged": 2,
+    "skippedByReason": {
+      "missing_reviewed_by": 6
+    },
+    "byDecisionMode": {}
+  },
+  "decisions": [
+    {
+      "stateId": "tennessee",
+      "sourceUrl": "https://www.dollychildrens.org/",
+      "status": "skipped_missing_reviewed_by",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "tennessee",
+      "sourceUrl": "https://www.dollychildrens.org/about-us/our-locations/dolly-parton-childrens-hospital-main-campus",
+      "status": "skipped_missing_reviewed_by",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "tennessee",
+      "sourceUrl": "https://www.dollychildrens.org/medical-services/specialty-clinics",
+      "status": "skipped_missing_reviewed_by",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "tennessee",
+      "sourceUrl": "https://www.childrensaterlanger.org/",
+      "status": "skipped_missing_reviewed_by",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "tennessee",
+      "sourceUrl": "https://www.childrenshospitalvanderbilt.org/",
+      "status": "skipped_missing_reviewed_by",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "tennessee",
+      "sourceUrl": "https://www.lebonheur.org/",
+      "status": "skipped_missing_reviewed_by",
+      "resolvedSourceUrl": ""
+    }
+  ]
+}

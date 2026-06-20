@@ -1,0 +1,65 @@
+{
+  "generatedAt": "2026-06-18T02:05:39.348Z",
+  "mode": "apply",
+  "stateFilter": "south-carolina",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 8,
+    "appliedStates": 0,
+    "filesChanged": 0,
+    "skippedByReason": {
+      "skipped_followup": 4,
+      "missing_source_row": 4
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "south-carolina",
+      "sourceName": "South Carolina Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "south-carolina",
+      "sourceName": "South Carolina HCBS Waivers Page",
+      "status": "skipped_missing_source_row",
+      "targetUrl": "https://ddsn.sc.gov/hcbs"
+    },
+    {
+      "stateId": "south-carolina",
+      "sourceName": "South Carolina Developmental Services Directory",
+      "status": "skipped_missing_source_row",
+      "targetUrl": "https://ddsn.sc.gov/"
+    },
+    {
+      "stateId": "south-carolina",
+      "sourceName": "South Carolina Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "south-carolina",
+      "sourceName": "South Carolina Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "south-carolina",
+      "sourceName": "South Carolina HCBS Waivers Page",
+      "status": "skipped_missing_source_row",
+      "targetUrl": "https://ddsn.sc.gov/hcbs"
+    },
+    {
+      "stateId": "south-carolina",
+      "sourceName": "South Carolina Developmental Services Directory",
+      "status": "skipped_missing_source_row",
+      "targetUrl": "https://ddsn.sc.gov/"
+    },
+    {
+      "stateId": "south-carolina",
+      "sourceName": "South Carolina Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

@@ -1,1 +1,46 @@
-[]
+[
+  {
+    "source_url": "https://schools.utah.gov/",
+    "confidence_score": 9.5,
+    "notes": "Official statewide Utah State Board of Education special education support entrypoint covering all counties.",
+    "suggested_target_id": "ut-ed-usbe-special-education",
+    "name": "Utah State Board of Education Special Education",
+    "phone": "(801) 538-7587",
+    "agency_type": "state-special-education-support",
+    "counties_served": [
+      "beaver-ut",
+      "box-elder-ut",
+      "cache-ut",
+      "carbon-ut",
+      "daggett-ut",
+      "davis-ut",
+      "duchesne-ut",
+      "emery-ut",
+      "garfield-ut",
+      "grand-ut",
+      "iron-ut",
+      "juab-ut",
+      "kane-ut",
+      "millard-ut",
+      "morgan-ut",
+      "piute-ut",
+      "rich-ut",
+      "salt-lake-ut",
+      "san-juan-ut",
+      "sanpete-ut",
+      "sevier-ut",
+      "summit-ut",
+      "tooele-ut",
+      "uintah-ut",
+      "utah-ut",
+      "wasatch-ut",
+      "washington-ut",
+      "wayne-ut",
+      "weber-ut"
+    ],
+    "website": "https://schools.utah.gov/specialeducation",
+    "evidence_level": "source_listed",
+    "verification_status": "verified",
+    "data_origin": "scraped"
+  }
+]

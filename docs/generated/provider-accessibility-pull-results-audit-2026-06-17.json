@@ -1,0 +1,88 @@
+{
+  "generatedAt": "2026-06-17",
+  "dbPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/frontend/ca_disability_navigator.db",
+  "hasResultsTable": true,
+  "focusStates": [
+    "florida",
+    "texas",
+    "pennsylvania",
+    "illinois"
+  ],
+  "summary": {
+    "providerCount": 36,
+    "resultCount": 599,
+    "statusCounts": {
+      "promoted": 342,
+      "rejected": 257
+    },
+    "fieldCounts": {
+      "accessibility_notes": 55,
+      "application_url": 36,
+      "asl_available": 36,
+      "home_visits": 36,
+      "in_person_services": 36,
+      "interpreter_available": 72,
+      "languages": 36,
+      "next_step_type": 36,
+      "referral_url": 36,
+      "requirements": 72,
+      "transportation_help": 36,
+      "virtual_services": 40,
+      "wheelchair_accessible": 72
+    }
+  },
+  "states": [
+    {
+      "stateId": "florida",
+      "providerCount": 14,
+      "resultCount": 225,
+      "queuedCount": 0,
+      "reviewReadyCount": 0,
+      "promotedCount": 107,
+      "rejectedCount": 118,
+      "providersWithoutResults": [],
+      "providersWithPartialResults": [],
+      "reviewReady": [],
+      "queued": []
+    },
+    {
+      "stateId": "texas",
+      "providerCount": 9,
+      "resultCount": 153,
+      "queuedCount": 0,
+      "reviewReadyCount": 0,
+      "promotedCount": 91,
+      "rejectedCount": 62,
+      "providersWithoutResults": [],
+      "providersWithPartialResults": [],
+      "reviewReady": [],
+      "queued": []
+    },
+    {
+      "stateId": "pennsylvania",
+      "providerCount": 7,
+      "resultCount": 119,
+      "queuedCount": 0,
+      "reviewReadyCount": 0,
+      "promotedCount": 79,
+      "rejectedCount": 40,
+      "providersWithoutResults": [],
+      "providersWithPartialResults": [],
+      "reviewReady": [],
+      "queued": []
+    },
+    {
+      "stateId": "illinois",
+      "providerCount": 6,
+      "resultCount": 102,
+      "queuedCount": 0,
+      "reviewReadyCount": 0,
+      "promotedCount": 65,
+      "rejectedCount": 37,
+      "providersWithoutResults": [],
+      "providersWithPartialResults": [],
+      "reviewReady": [],
+      "queued": []
+    }
+  ]
+}

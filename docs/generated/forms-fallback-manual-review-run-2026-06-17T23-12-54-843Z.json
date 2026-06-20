@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-06-17T23:12:54.845Z",
+  "mode": "apply",
+  "stateFilter": "wisconsin",
+  "inputPath": "data/forms-fallback-manual-review-decisions.json",
+  "summary": {
+    "inputRows": 3,
+    "resolvedRows": 3,
+    "deferredRows": 0,
+    "filesChanged": 2,
+    "skippedByReason": {},
+    "byDecisionMode": {
+      "validate_existing_candidate": 3
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "wisconsin",
+      "rowKey": "wisconsin|application_or_eligibility_guide|https://www.dhs.wisconsin.gov/",
+      "status": "applied",
+      "resolvedSourceUrl": "https://www.dhs.wisconsin.gov/"
+    },
+    {
+      "stateId": "wisconsin",
+      "rowKey": "wisconsin|application_or_eligibility_guide|https://www.dhs.wisconsin.gov/familycare/eligibility.htm",
+      "status": "applied",
+      "resolvedSourceUrl": "https://www.dhs.wisconsin.gov/familycare/eligibility.htm"
+    },
+    {
+      "stateId": "wisconsin",
+      "rowKey": "wisconsin|general_form_related_page|https://www.dhs.wisconsin.gov/medicaid",
+      "status": "applied",
+      "resolvedSourceUrl": "https://www.dhs.wisconsin.gov/medicaid"
+    }
+  ],
+  "resolutionArtifacts": {
+    "queuePath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/forms-fallback-manual-review-queue-2026-06-17.json",
+    "resolutionLedgerPath": "data/source-acquisition-state/forms-fallback-manual-review-ledger.json",
+    "resolutionPackPath": "data/source_packs/forms_fallback_manual_resolutions.json"
+  }
+}

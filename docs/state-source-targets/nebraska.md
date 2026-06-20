@@ -3,7 +3,7 @@
 This document outlines the authoritative crawler target domains, specific agencies, and extraction methods required to replace programmatic placeholders in Nebraska with real, source-listed records.
 
 > [!NOTE]
-> **Category Scaffold Complete:** This state is currently mapped as a category-level scaffold (14 targets). Source-level expansion will follow in Wave 4.
+> **Provider Source Expansion Started:** This state was originally mapped as a category-level scaffold. Concrete first-party provider targets have now been added for the hospital / university clinic layer.
 
 ## 1. Domain Crawler Targets (Wave 4)
 
@@ -21,7 +21,8 @@ This document outlines the authoritative crawler target domains, specific agenci
 | **Special Education Attorneys Directory** | J. Provider and advocate directories / Attorney Directory | [copaa.org](https://www.copaa.org) | `playwright` | `iep_advocates` |
 | **Nebraska Medicaid & Special Education Forms** | K. Forms and guides / Forms Library | [dhhs.nebraska.gov](https://dhhs.nebraska.gov/forms) | `pdf_extract` | `forms` |
 | **Nebraska Vocational Rehabilitation Services** | L. Transition / adult services / Vocational Rehabilitation | [dhhs.nebraska.gov](https://dhhs.nebraska.gov/rehab) | `static_fetch` | `programs` |
-| **Nebraska Children's Hospital Clinics** | M. Hospitals / university clinics / Hospitals | [childrenshospital.org](https://www.childrenshospital.org) | `manual_review` | `resource_providers` |
+| **Children's Nebraska** | M. Hospitals / university clinics / Hospitals | [childrensnebraska.org](https://www.childrensnebraska.org) | `static_fetch` | `resource_providers` |
+| **Munroe-Meyer Institute** | M. Hospitals / university clinics / University clinics | [unmc.edu](https://www.unmc.edu/mmi) | `static_fetch` | `resource_providers` |
 | **Nebraska Secretary of State Business Registry** | N. Data quality / verification sources / Open Data Portal | [nebraska.gov](https://www.nebraska.gov/business) | `playwright` | `sources` |
 
 ## 2. Detailed Category Targets
@@ -183,17 +184,30 @@ This document outlines the authoritative crawler target domains, specific agenci
 - **Last Checked:** 2026-06-13
 
 ### Category: M. Hospitals / university clinics (Hospitals)
-- **Source Name:** Nebraska Children's Hospital Clinics
-- **Source URL:** [https://www.childrenshospital.org](https://www.childrenshospital.org)
-- **Domain:** `childrenshospital.org`
+- **Source Name:** Children's Nebraska
+- **Source URL:** [https://www.childrensnebraska.org](https://www.childrensnebraska.org)
+- **Domain:** `childrensnebraska.org`
 - **Target Table:** `resource_providers`
 - **Expected Fields:** `name, phone, address`
-- **Crawl Method:** `manual_review`
+- **Crawl Method:** `static_fetch`
+- **Robots.txt Status:** `allowed`
+- **Terms Risk:** `low`
+- **Priority:** 1
+- **Notes:** Concrete first-party pediatric hospital target for Nebraska provider buildout.
+- **Last Checked:** 2026-06-17
+
+### Category: M. Hospitals / university clinics (University clinics)
+- **Source Name:** Munroe-Meyer Institute
+- **Source URL:** [https://www.unmc.edu/mmi](https://www.unmc.edu/mmi)
+- **Domain:** `unmc.edu`
+- **Target Table:** `resource_providers`
+- **Expected Fields:** `name, phone, address`
+- **Crawl Method:** `static_fetch`
 - **Robots.txt Status:** `allowed`
 - **Terms Risk:** `low`
 - **Priority:** 2
-- **Notes:** Initial category-level scaffold source target for Nebraska.
-- **Last Checked:** 2026-06-13
+- **Notes:** Concrete first-party university developmental disability clinic target for Nebraska.
+- **Last Checked:** 2026-06-17
 
 ### Category: N. Data quality / verification sources (Open Data Portal)
 - **Source Name:** Nebraska Secretary of State Business Registry
@@ -207,4 +221,3 @@ This document outlines the authoritative crawler target domains, specific agenci
 - **Priority:** 2
 - **Notes:** Initial category-level scaffold source target for Nebraska.
 - **Last Checked:** 2026-06-13
-

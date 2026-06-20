@@ -1,0 +1,37 @@
+{
+  "generatedAt": "2026-06-17",
+  "sourceQueue": "docs/generated/official-domain-followup-queue-2026-06-17.json",
+  "sourcePack": "data/source_packs/official_state_domain_repairs.json",
+  "instructions": {
+    "allowedDecisionModes": [
+      "choose_exact_candidate",
+      "verify_first_party_root_hint",
+      "skip_followup"
+    ],
+    "requiredTopLevelFields": [
+      "stateId",
+      "targetTable",
+      "sourceName",
+      "fakeSourceUrl",
+      "decisionMode",
+      "reviewedBy"
+    ],
+    "chooseExactCandidateFields": [
+      "chosenCandidateUrl"
+    ],
+    "verifyFirstPartyRootHintFields": [
+      "verifiedReplacementUrl",
+      "verifiedReplacementName"
+    ],
+    "skipFields": [
+      "reviewNotes"
+    ],
+    "rules": [
+      "Use choose_exact_candidate only when selecting a single medium-confidence official URL from the provided candidate list.",
+      "Use verify_first_party_root_hint only when the root-hint domain has been reviewed and judged safe for the specific lane.",
+      "Do not invent new replacement URLs outside the row candidate context unless they are added deliberately in a later repair pass.",
+      "Do not apply any follow-up row without reviewedBy and a decisionMode."
+    ]
+  },
+  "rows": []
+}

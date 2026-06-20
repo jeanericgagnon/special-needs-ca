@@ -1,0 +1,109 @@
+{
+  "generatedAt": "2026-06-18T19:29:25.168Z",
+  "generatedDate": "2026-06-18",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-18.json",
+  "stateId": "washington",
+  "stateName": "Washington",
+  "executionPriority": 1,
+  "sourceTargetsPath": "data/source_targets/washington.json",
+  "ledgerStatus": "",
+  "ledgerNote": "",
+  "publicSafeProviders": 2,
+  "totalProviderRows": 2,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 0,
+  "placeholderProviderTargetCount": 1,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 3,
+  "nextAction": "Add at least 3 more concrete first-party provider targets for Washington and then regenerate provider source-pack artifacts.",
+  "providerTargets": [
+    {
+      "sourceName": "Washington Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for Washington."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Washington County Metadata",
+      "sourceUrl": "https://www.washington.gov",
+      "domain": "washington.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Washington Medicaid Portal",
+      "sourceUrl": "https://dhhs.washington.gov",
+      "domain": "dhhs.washington.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Washington Developmental Disabilities Administration",
+      "sourceUrl": "https://www.dshs.wa.gov/dda",
+      "domain": "dshs.wa.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Washington HCBS Waivers",
+      "sourceUrl": "https://www.dshs.wa.gov/dda/hcbs",
+      "domain": "dshs.wa.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Washington Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.washington.gov/earlyintervention",
+      "domain": "dhhs.washington.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Washington Department of Education Special Ed",
+      "sourceUrl": "https://education.washington.gov",
+      "domain": "education.washington.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Washington Regional Special Education Support",
+      "sourceUrl": "https://education.washington.gov/regional",
+      "domain": "education.washington.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Washington Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Washington",
+      "sourceUrl": "https://www.thearcwashington.org",
+      "domain": "thearcwashington.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Washington Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.washington.gov/forms",
+      "domain": "dhhs.washington.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Washington Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.washington.gov/rehab",
+      "domain": "dhhs.washington.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Washington Secretary of State Business Registry",
+      "sourceUrl": "https://www.washington.gov/business",
+      "domain": "washington.gov"
+    }
+  ]
+}

@@ -572,7 +572,10 @@
     "name": "Wayne-Finger Lakes BOCES",
     "phone": "(315) 332-7200",
     "counties_served": [
-      "wayne-ny"
+      "ontario-ny",
+      "seneca-ny",
+      "wayne-ny",
+      "yates-ny"
     ],
     "physical_county": "wayne-ny",
     "evidence_level": "source_listed",

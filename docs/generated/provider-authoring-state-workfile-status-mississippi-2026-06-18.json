@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-06-18T19:07:23.761Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "mississippi",
+  "sourceWorkfilePath": "data/provider-authoring-state-workfiles/provider-authoring-state-workfile-mississippi.json",
+  "summary": {
+    "neededConcreteTargets": 3,
+    "candidateSlotCount": 3,
+    "readyCandidateCount": 3,
+    "unresolvedCandidateCount": 0,
+    "completionPercent": 100
+  },
+  "nextWork": []
+}

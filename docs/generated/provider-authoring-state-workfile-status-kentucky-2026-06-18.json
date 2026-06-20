@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-06-18T21:41:04.630Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "kentucky",
+  "sourceWorkfilePath": "data/provider-authoring-state-workfiles/provider-authoring-state-workfile-kentucky.json",
+  "summary": {
+    "neededConcreteTargets": 0,
+    "candidateSlotCount": 1,
+    "readyCandidateCount": 1,
+    "unresolvedCandidateCount": 0,
+    "completionPercent": 100
+  },
+  "nextWork": []
+}

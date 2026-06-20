@@ -3,7 +3,7 @@
 This document outlines the authoritative crawler target domains, specific agencies, and extraction methods required to replace programmatic placeholders in Colorado with real, source-listed records.
 
 > [!NOTE]
-> **Category Scaffold Complete:** This state is currently mapped as a category-level scaffold (14 targets). Source-level expansion will follow in Wave 2.
+> **Provider Source Expansion Started:** This state was originally mapped as a category-level scaffold. Concrete first-party provider targets have now been added for the hospital / university clinic layer.
 
 ## 1. Domain Crawler Targets (Wave 2)
 
@@ -21,7 +21,8 @@ This document outlines the authoritative crawler target domains, specific agenci
 | **Special Education Attorneys Directory** | J. Provider and advocate directories / Attorney Directory | [copaa.org](https://www.copaa.org) | `playwright` | `iep_advocates` |
 | **Colorado Medicaid & Special Education Forms** | K. Forms and guides / Forms Library | [dhhs.colorado.gov](https://dhhs.colorado.gov/forms) | `pdf_extract` | `forms` |
 | **Colorado Vocational Rehabilitation Services** | L. Transition / adult services / Vocational Rehabilitation | [dhhs.colorado.gov](https://dhhs.colorado.gov/rehab) | `static_fetch` | `programs` |
-| **Colorado Children's Hospital Clinics** | M. Hospitals / university clinics / Hospitals | [childrenshospital.org](https://www.childrenshospital.org) | `manual_review` | `resource_providers` |
+| **Children's Hospital Colorado** | M. Hospitals / university clinics / Hospitals | [childrenscolorado.org](https://www.childrenscolorado.org) | `static_fetch` | `resource_providers` |
+| **JFK Partners** | M. Hospitals / university clinics / University clinics | [medschool.cuanschutz.edu](https://medschool.cuanschutz.edu/jfk-partners) | `static_fetch` | `resource_providers` |
 | **Colorado Secretary of State Business Registry** | N. Data quality / verification sources / Open Data Portal | [colorado.gov](https://www.colorado.gov/business) | `playwright` | `sources` |
 
 ## 2. Detailed Category Targets
@@ -183,17 +184,30 @@ This document outlines the authoritative crawler target domains, specific agenci
 - **Last Checked:** 2026-06-13
 
 ### Category: M. Hospitals / university clinics (Hospitals)
-- **Source Name:** Colorado Children's Hospital Clinics
-- **Source URL:** [https://www.childrenshospital.org](https://www.childrenshospital.org)
-- **Domain:** `childrenshospital.org`
+- **Source Name:** Children's Hospital Colorado
+- **Source URL:** [https://www.childrenscolorado.org](https://www.childrenscolorado.org)
+- **Domain:** `childrenscolorado.org`
 - **Target Table:** `resource_providers`
 - **Expected Fields:** `name, phone, address`
-- **Crawl Method:** `manual_review`
+- **Crawl Method:** `static_fetch`
+- **Robots.txt Status:** `allowed`
+- **Terms Risk:** `low`
+- **Priority:** 1
+- **Notes:** Concrete first-party pediatric hospital target for Colorado provider buildout.
+- **Last Checked:** 2026-06-17
+
+### Category: M. Hospitals / university clinics (University clinics)
+- **Source Name:** JFK Partners
+- **Source URL:** [https://medschool.cuanschutz.edu/jfk-partners](https://medschool.cuanschutz.edu/jfk-partners)
+- **Domain:** `medschool.cuanschutz.edu`
+- **Target Table:** `resource_providers`
+- **Expected Fields:** `name, phone, address`
+- **Crawl Method:** `static_fetch`
 - **Robots.txt Status:** `allowed`
 - **Terms Risk:** `low`
 - **Priority:** 2
-- **Notes:** Initial category-level scaffold source target for Colorado.
-- **Last Checked:** 2026-06-13
+- **Notes:** Concrete first-party university developmental disabilities clinic target for Colorado.
+- **Last Checked:** 2026-06-17
 
 ### Category: N. Data quality / verification sources (Open Data Portal)
 - **Source Name:** Colorado Secretary of State Business Registry
@@ -207,4 +221,3 @@ This document outlines the authoritative crawler target domains, specific agenci
 - **Priority:** 2
 - **Notes:** Initial category-level scaffold source target for Colorado.
 - **Last Checked:** 2026-06-13
-

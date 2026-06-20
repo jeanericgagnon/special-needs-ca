@@ -1,0 +1,45 @@
+{
+  "generatedAt": "2026-06-17",
+  "mode": "dry-run",
+  "attemptedTargets": 6,
+  "succeeded": 0,
+  "failed": 6,
+  "results": [
+    {
+      "ok": false,
+      "domain": "texasautismsociety.org",
+      "key": "texasautismsociety.org",
+      "error": "Unexpected token '>', \"\n> beautifu\"... is not valid JSON"
+    },
+    {
+      "ok": false,
+      "domain": "txp2p.org",
+      "key": "txp2p.org",
+      "error": "Unexpected token '>', \"\n> beautifu\"... is not valid JSON"
+    },
+    {
+      "ok": false,
+      "domain": "thearcoftexas.org",
+      "key": "thearcoftexas.org",
+      "error": "Unexpected token '>', \"\n> beautifu\"... is not valid JSON"
+    },
+    {
+      "ok": false,
+      "domain": "disabilityrightstx.org",
+      "key": "disabilityrightstx.org",
+      "error": "Unexpected token '>', \"\n> beautifu\"... is not valid JSON"
+    },
+    {
+      "ok": false,
+      "domain": "navigatelifetexas.org",
+      "key": "navigatelifetexas.org",
+      "error": "Unexpected token '>', \"\n> beautifu\"... is not valid JSON"
+    },
+    {
+      "ok": false,
+      "domain": "prntexas.org",
+      "key": "prntexas.org",
+      "error": "Unexpected token '>', \"\n> beautifu\"... is not valid JSON"
+    }
+  ]
+}

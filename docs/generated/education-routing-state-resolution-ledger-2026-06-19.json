@@ -1,0 +1,513 @@
+{
+  "generatedAt": "2026-06-19",
+  "family": "education_routing",
+  "summary": {
+    "totalStates": 50,
+    "byResolutionState": {
+      "explicitly_blocked": 3,
+      "regional_path_present": 47
+    }
+  },
+  "rows": [
+    {
+      "family": "education_routing",
+      "stateId": "alabama",
+      "stateName": "Alabama",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "alaska",
+      "stateName": "Alaska",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "arizona",
+      "stateName": "Arizona",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "arkansas",
+      "stateName": "Arkansas",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "california",
+      "stateName": "California",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "colorado",
+      "stateName": "Colorado",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "connecticut",
+      "stateName": "Connecticut",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "delaware",
+      "stateName": "Delaware",
+      "resolutionState": "explicitly_blocked",
+      "terminalResolutionState": "coverage_below_threshold_with_explicit_artifact",
+      "currentEvidence": "No live regional education routing row exists and no district fallback evidence is captured in current control-plane artifacts.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "florida",
+      "stateName": "Florida",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "georgia",
+      "stateName": "Georgia",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "hawaii",
+      "stateName": "Hawaii",
+      "resolutionState": "explicitly_blocked",
+      "terminalResolutionState": "coverage_below_threshold_with_explicit_artifact",
+      "currentEvidence": "No live regional education routing row exists and no district fallback evidence is captured in current control-plane artifacts.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "idaho",
+      "stateName": "Idaho",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "illinois",
+      "stateName": "Illinois",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "indiana",
+      "stateName": "Indiana",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "iowa",
+      "stateName": "Iowa",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "kansas",
+      "stateName": "Kansas",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "kentucky",
+      "stateName": "Kentucky",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "louisiana",
+      "stateName": "Louisiana",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "maine",
+      "stateName": "Maine",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "maryland",
+      "stateName": "Maryland",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "massachusetts",
+      "stateName": "Massachusetts",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "michigan",
+      "stateName": "Michigan",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "minnesota",
+      "stateName": "Minnesota",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "mississippi",
+      "stateName": "Mississippi",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "missouri",
+      "stateName": "Missouri",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "montana",
+      "stateName": "Montana",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "nebraska",
+      "stateName": "Nebraska",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "nevada",
+      "stateName": "Nevada",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "new-hampshire",
+      "stateName": "New Hampshire",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "new-jersey",
+      "stateName": "New Jersey",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "new-mexico",
+      "stateName": "New Mexico",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "new-york",
+      "stateName": "New York",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "north-carolina",
+      "stateName": "North Carolina",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "north-dakota",
+      "stateName": "North Dakota",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "ohio",
+      "stateName": "Ohio",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "oklahoma",
+      "stateName": "Oklahoma",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "oregon",
+      "stateName": "Oregon",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "pennsylvania",
+      "stateName": "Pennsylvania",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "rhode-island",
+      "stateName": "Rhode Island",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "south-carolina",
+      "stateName": "South Carolina",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "south-dakota",
+      "stateName": "South Dakota",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "tennessee",
+      "stateName": "Tennessee",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "texas",
+      "stateName": "Texas",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "utah",
+      "stateName": "Utah",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "vermont",
+      "stateName": "Vermont",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "virginia",
+      "stateName": "Virginia",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "washington",
+      "stateName": "Washington",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "west-virginia",
+      "stateName": "West Virginia",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "wisconsin",
+      "stateName": "Wisconsin",
+      "resolutionState": "regional_path_present",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "Regional education routing row exists in live regional_education_agencies.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "education_routing",
+      "stateId": "wyoming",
+      "stateName": "Wyoming",
+      "resolutionState": "explicitly_blocked",
+      "terminalResolutionState": "coverage_below_threshold_with_explicit_artifact",
+      "currentEvidence": "No live regional education routing row exists and no district fallback evidence is captured in current control-plane artifacts.",
+      "nextArtifact": "docs/generated/source-acquisition-completion-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    }
+  ]
+}

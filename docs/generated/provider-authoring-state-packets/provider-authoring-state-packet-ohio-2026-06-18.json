@@ -1,0 +1,145 @@
+{
+  "generatedAt": "2026-06-18T19:17:57.717Z",
+  "generatedDate": "2026-06-18",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-18.json",
+  "stateId": "ohio",
+  "stateName": "Ohio",
+  "executionPriority": 1,
+  "sourceTargetsPath": "data/source_targets/ohio.json",
+  "ledgerStatus": "",
+  "ledgerNote": "",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 1,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 1,
+  "placeholderProviderTargetCount": 0,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 2,
+  "nextAction": "Add at least 2 more concrete first-party provider targets for Ohio and then regenerate provider source-pack artifacts.",
+  "providerTargets": [
+    {
+      "sourceName": "Nationwide Children's Hospital Center for Autism Spectrum Disorders",
+      "sourceUrl": "https://www.nationwidechildrens.org/specialties/center-for-autism-spectrum-disorders",
+      "domain": "nationwidechildrens.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Ohio first-party autism program source saved in db-discovered provider targets."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Ohio Counties Wikipedia List",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_counties_in_Ohio",
+      "domain": "en.wikipedia.org"
+    },
+    {
+      "targetTable": "counties",
+      "sourceName": "Ohio Association of Counties directory",
+      "sourceUrl": "https://www.ccao.org",
+      "domain": "ccao.org"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Ohio Department of Medicaid Homepage",
+      "sourceUrl": "https://medicaid.ohio.gov",
+      "domain": "medicaid.ohio.gov"
+    },
+    {
+      "targetTable": "program_application_steps",
+      "sourceName": "Ohio Benefits Portal",
+      "sourceUrl": "https://benefits.ohio.gov",
+      "domain": "benefits.ohio.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Ohio County Department of Job and Family Services (CDJFS) directory",
+      "sourceUrl": "https://jfs.ohio.gov/county/county_directory.pdf",
+      "domain": "jfs.ohio.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Ohio DODD Homepage",
+      "sourceUrl": "https://dodd.ohio.gov",
+      "domain": "dodd.ohio.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Ohio County Boards of DD directory",
+      "sourceUrl": "https://dodd.ohio.gov/your-county-board/county-boards-map",
+      "domain": "dodd.ohio.gov"
+    },
+    {
+      "targetTable": "program_waitlists",
+      "sourceName": "Ohio DODD Waiting List Resources",
+      "sourceUrl": "https://dodd.ohio.gov/your-county-board/waiting-list-resources",
+      "domain": "dodd.ohio.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Ohio Individual Options (IO) Waiver",
+      "sourceUrl": "https://dodd.ohio.gov/individual-families/waivers/individual-options-waiver",
+      "domain": "dodd.ohio.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Ohio Early Intervention Program",
+      "sourceUrl": "https://ohioearlyintervention.org",
+      "domain": "ohioearlyintervention.org"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Ohio Department of Education Special Ed Home",
+      "sourceUrl": "https://education.ohio.gov/Topics/Special-Education",
+      "domain": "education.ohio.gov"
+    },
+    {
+      "targetTable": "program_document_requirements",
+      "sourceName": "ODE dispute resolution safeguards",
+      "sourceUrl": "https://education.ohio.gov/Topics/Special-Education/Dispute-Resolution/Procedural-Safeguards",
+      "domain": "education.ohio.gov"
+    },
+    {
+      "targetTable": "program_appeal_info",
+      "sourceName": "ODE Special Education Complaints",
+      "sourceUrl": "https://education.ohio.gov/Topics/Special-Education/Dispute-Resolution/State-Complaints",
+      "domain": "education.ohio.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Ohio Coalition for the Education of Children with Disabilities (OCECD)",
+      "sourceUrl": "https://www.ocecd.org",
+      "domain": "ocecd.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Disability Rights Ohio",
+      "sourceUrl": "https://www.disabilityrightsohio.org",
+      "domain": "disabilityrightsohio.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Ohio",
+      "sourceUrl": "https://www.thearcofohio.org",
+      "domain": "thearcofohio.org"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Opportunities for Ohioans with Disabilities (OOD)",
+      "sourceUrl": "https://ood.ohio.gov",
+      "domain": "ood.ohio.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Ohio Stable Account",
+      "sourceUrl": "https://www.stableaccount.com",
+      "domain": "stableaccount.com"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Ohio Open Data Portal",
+      "sourceUrl": "https://data.ohio.gov",
+      "domain": "data.ohio.gov"
+    }
+  ]
+}

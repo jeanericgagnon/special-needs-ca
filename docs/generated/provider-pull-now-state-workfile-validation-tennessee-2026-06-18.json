@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-06-18T19:42:57.386Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "tennessee",
+  "sourceWorkfilePath": "data/provider-pull-now-state-workfiles/provider-pull-now-state-workfile-tennessee.json",
+  "summary": {
+    "totalRows": 6,
+    "filledRows": 0,
+    "unresolvedRows": 6,
+    "issueRows": 0,
+    "mergeReady": false
+  },
+  "issues": []
+}

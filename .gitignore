@@ -25,10 +25,20 @@ dist-ssr
 
 # SQLite Databases
 *.db
+*.db-shm
+*.db-wal
 !frontend/ca_disability_crawler.db
-!frontend/ca_disability_navigator.db
 
 .vercel
 
 # Crawler Storage Cache
 storage/
+
+# Transient scrape/run artifacts
+data/source-acquisition-runs/
+data/source-acquisition-autopilot-runs/
+data/nonprofit-accessibility-domains/
+data/nonprofit-affiliate-discovery/
+data/nonprofit-link-registry-expansions/
+data/production.sqlite
+scripts/tmp/

@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-06-19",
+  "sourceQueuePath": "docs/generated/provider-manual-review-queue-2026-06-19.json",
+  "rows": [
+    {
+      "rowId": 765,
+      "stateId": "virginia",
+      "countyId": "",
+      "extractedName": "Programs, Clinics, and Centers",
+      "sourceUrl": "https://www.chkd.org/our-care/programs-clinics-and-centers",
+      "hostname": "chkd.org",
+      "extractedAddress": "601 Children’s Lane, Norfolk, VA 23507",
+      "extractedPhone": "(757) 668-7000",
+      "extractedEmail": "",
+      "evidenceLevel": "",
+      "confidenceScore": 0.86,
+      "evidenceReason": "county_equivalent_missing_from_repo",
+      "evidenceRunId": "2026-06-19T01-34-25-789Z",
+      "evidenceArtifactPath": "data/source-acquisition-runs/2026-06-19T01-34-25-789Z/provider-county-geocode/skipped.json",
+      "blockerKey": "county_equivalent_missing_from_repo",
+      "reviewStatus": "blocked_county_equivalent_missing_from_repo",
+      "reason": "Provider address resolved to a county-equivalent geography that is not modeled in the repo, so local county promotion remains gated.",
+      "decisionMode": "apply_blocker",
+      "reviewedBy": "codex"
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "generatedAt": "2026-06-18T19:23:03.968Z",
+  "generatedDate": "2026-06-18",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-18.json",
+  "stateId": "rhode-island",
+  "stateName": "Rhode Island",
+  "executionPriority": 1,
+  "sourceTargetsPath": "data/source_targets/rhode-island.json",
+  "ledgerStatus": "complete",
+  "ledgerNote": "added-three-concrete-first-party-provider-targets",
+  "publicSafeProviders": 2,
+  "totalProviderRows": 2,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 0,
+  "placeholderProviderTargetCount": 1,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 3,
+  "nextAction": "Add at least 3 more concrete first-party provider targets for Rhode Island and then regenerate provider source-pack artifacts.",
+  "providerTargets": [
+    {
+      "sourceName": "Rhode Island Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for Rhode Island."
+    },
+    {
+      "sourceName": "Hasbro Children's",
+      "sourceUrl": "https://www.brownhealth.org/locations/hasbro-childrens",
+      "domain": "brownhealth.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Hasbro Children's source for statewide pediatric hospital and specialty care in Rhode Island."
+    },
+    {
+      "sourceName": "Bradley Hospital",
+      "sourceUrl": "https://www.bradleyhospital.org/",
+      "domain": "bradleyhospital.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Bradley Hospital source for pediatric behavioral and neuropsychiatric care in Rhode Island."
+    },
+    {
+      "sourceName": "Rhode Island Hospital",
+      "sourceUrl": "https://www.brownhealth.org/locations/rhode-island-hospital",
+      "domain": "brownhealth.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Rhode Island Hospital source for pediatric referral and hospital-based specialty care through Hasbro Children's."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Rhode Island County Metadata",
+      "sourceUrl": "https://www.rhode-island.gov",
+      "domain": "rhode-island.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Rhode Island Medicaid Portal",
+      "sourceUrl": "https://dhhs.rhode-island.gov",
+      "domain": "dhhs.rhode-island.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Rhode Island Division of Developmental Disabilities",
+      "sourceUrl": "https://bhddh.ri.gov/developmental-disabilities",
+      "domain": "bhddh.ri.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Rhode Island HCBS Waivers",
+      "sourceUrl": "https://bhddh.ri.gov/developmental-disabilities/hcbs",
+      "domain": "bhddh.ri.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Rhode Island Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.rhode-island.gov/earlyintervention",
+      "domain": "dhhs.rhode-island.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Rhode Island Department of Education Special Ed",
+      "sourceUrl": "https://education.rhode-island.gov",
+      "domain": "education.rhode-island.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Rhode Island Regional Special Education Support",
+      "sourceUrl": "https://education.rhode-island.gov/regional",
+      "domain": "education.rhode-island.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Rhode Island Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Rhode Island",
+      "sourceUrl": "https://www.thearcrhode-island.org",
+      "domain": "thearcrhode-island.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Rhode Island Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.rhode-island.gov/forms",
+      "domain": "dhhs.rhode-island.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Rhode Island Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.rhode-island.gov/rehab",
+      "domain": "dhhs.rhode-island.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Rhode Island Secretary of State Business Registry",
+      "sourceUrl": "https://www.rhode-island.gov/business",
+      "domain": "rhode-island.gov"
+    }
+  ]
+}

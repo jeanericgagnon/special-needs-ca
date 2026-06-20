@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-06-19T01:30:29.173Z",
+  "generatedDate": "2026-06-19",
+  "sourceArtifacts": {
+    "manualFillQueuePath": "docs/generated/provider-pull-now-manual-fill-queue-2026-06-19.json",
+    "decisionProgressPath": "docs/generated/provider-pull-now-decision-progress-2026-06-19.json"
+  },
+  "summary": {
+    "unresolvedRows": 0,
+    "filledRows": 0,
+    "completionPercent": 0,
+    "statePacketCount": 0,
+    "firstState": null
+  },
+  "statePackets": []
+}

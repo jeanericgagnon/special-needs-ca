@@ -1,0 +1,753 @@
+{
+  "generatedAt": "2026-06-16",
+  "dbPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/frontend/ca_disability_navigator.db",
+  "summary": {
+    "totalTables": 3,
+    "tablesMatchingIdeal": 3,
+    "tablesWithHiddenSelections": 0,
+    "tablesWithSkippedRenderableRows": 0
+  },
+  "tables": [
+    {
+      "table": "resource_providers",
+      "label": "Resource Providers",
+      "kind": "Provider",
+      "totalRows": 39,
+      "publicCandidateCount": 39,
+      "renderablePublicCandidateCount": 39,
+      "selectedPreRenderCount": 3,
+      "renderedSelectionCount": 3,
+      "renderedMatchesIdeal": true,
+      "blockers": {
+        "hiddenSelectedCount": 0,
+        "richerRenderableRowsSkippedCount": 0
+      },
+      "selectedPreRender": [
+        {
+          "id": "pa-clinic-chop",
+          "name": "Children's Hospital of Philadelphia (CHOP) Center for Autism Research & Developmental Pediatrics",
+          "verificationStatus": "source_listed",
+          "richnessScore": 4,
+          "freshnessStamp": "2026-06-16",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": true,
+            "hasNextStep": true,
+            "hasTags": true,
+            "hasAccessibility": false,
+            "hasClaimGroundwork": true
+          },
+          "availabilityStatus": "unknown",
+          "nextStepType": "call",
+          "serviceTags": [
+            "therapy",
+            "special_education"
+          ],
+          "servingTags": [
+            "autism"
+          ],
+          "languageValue": null,
+          "sourceUrl": "https://www.chop.edu/centers-programs/developmental-and-behavioral-pediatrics"
+        },
+        {
+          "id": "oh-clinic-nch-autism",
+          "name": "Nationwide Children's Hospital Center for Autism Spectrum Disorders",
+          "verificationStatus": "source_listed",
+          "richnessScore": 4,
+          "freshnessStamp": "2026-06-16",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": true,
+            "hasNextStep": true,
+            "hasTags": true,
+            "hasAccessibility": false,
+            "hasClaimGroundwork": true
+          },
+          "availabilityStatus": "unknown",
+          "nextStepType": "call",
+          "serviceTags": [
+            "therapy"
+          ],
+          "servingTags": [
+            "autism"
+          ],
+          "languageValue": null,
+          "sourceUrl": "https://www.nationwidechildrens.org/specialties/center-for-autism-spectrum-disorders"
+        },
+        {
+          "id": "ga-clinic-marcus-autism",
+          "name": "Marcus Autism Center",
+          "verificationStatus": "source_listed",
+          "richnessScore": 4,
+          "freshnessStamp": "2026-06-16",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": true,
+            "hasNextStep": true,
+            "hasTags": true,
+            "hasAccessibility": false,
+            "hasClaimGroundwork": true
+          },
+          "availabilityStatus": "unknown",
+          "nextStepType": "call",
+          "serviceTags": [
+            "therapy"
+          ],
+          "servingTags": [
+            "autism"
+          ],
+          "languageValue": null,
+          "sourceUrl": "https://www.marcus.org/contact-us"
+        }
+      ],
+      "renderedSelection": [
+        {
+          "id": "pa-clinic-chop",
+          "name": "Children's Hospital of Philadelphia (CHOP) Center for Autism Research & Developmental Pediatrics",
+          "verificationStatus": "source_listed",
+          "richnessScore": 4,
+          "freshnessStamp": "2026-06-16",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": true,
+            "hasNextStep": true,
+            "hasTags": true,
+            "hasAccessibility": false,
+            "hasClaimGroundwork": true
+          },
+          "availabilityStatus": "unknown",
+          "nextStepType": "call",
+          "serviceTags": [
+            "therapy",
+            "special_education"
+          ],
+          "servingTags": [
+            "autism"
+          ],
+          "languageValue": null,
+          "sourceUrl": "https://www.chop.edu/centers-programs/developmental-and-behavioral-pediatrics"
+        },
+        {
+          "id": "oh-clinic-nch-autism",
+          "name": "Nationwide Children's Hospital Center for Autism Spectrum Disorders",
+          "verificationStatus": "source_listed",
+          "richnessScore": 4,
+          "freshnessStamp": "2026-06-16",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": true,
+            "hasNextStep": true,
+            "hasTags": true,
+            "hasAccessibility": false,
+            "hasClaimGroundwork": true
+          },
+          "availabilityStatus": "unknown",
+          "nextStepType": "call",
+          "serviceTags": [
+            "therapy"
+          ],
+          "servingTags": [
+            "autism"
+          ],
+          "languageValue": null,
+          "sourceUrl": "https://www.nationwidechildrens.org/specialties/center-for-autism-spectrum-disorders"
+        },
+        {
+          "id": "ga-clinic-marcus-autism",
+          "name": "Marcus Autism Center",
+          "verificationStatus": "source_listed",
+          "richnessScore": 4,
+          "freshnessStamp": "2026-06-16",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": true,
+            "hasNextStep": true,
+            "hasTags": true,
+            "hasAccessibility": false,
+            "hasClaimGroundwork": true
+          },
+          "availabilityStatus": "unknown",
+          "nextStepType": "call",
+          "serviceTags": [
+            "therapy"
+          ],
+          "servingTags": [
+            "autism"
+          ],
+          "languageValue": null,
+          "sourceUrl": "https://www.marcus.org/contact-us"
+        }
+      ],
+      "idealRenderableSelection": [
+        {
+          "id": "pa-clinic-chop",
+          "name": "Children's Hospital of Philadelphia (CHOP) Center for Autism Research & Developmental Pediatrics",
+          "verificationStatus": "source_listed",
+          "richnessScore": 4,
+          "freshnessStamp": "2026-06-16",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": true,
+            "hasNextStep": true,
+            "hasTags": true,
+            "hasAccessibility": false,
+            "hasClaimGroundwork": true
+          },
+          "availabilityStatus": "unknown",
+          "nextStepType": "call",
+          "serviceTags": [
+            "therapy",
+            "special_education"
+          ],
+          "servingTags": [
+            "autism"
+          ],
+          "languageValue": null,
+          "sourceUrl": "https://www.chop.edu/centers-programs/developmental-and-behavioral-pediatrics"
+        },
+        {
+          "id": "oh-clinic-nch-autism",
+          "name": "Nationwide Children's Hospital Center for Autism Spectrum Disorders",
+          "verificationStatus": "source_listed",
+          "richnessScore": 4,
+          "freshnessStamp": "2026-06-16",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": true,
+            "hasNextStep": true,
+            "hasTags": true,
+            "hasAccessibility": false,
+            "hasClaimGroundwork": true
+          },
+          "availabilityStatus": "unknown",
+          "nextStepType": "call",
+          "serviceTags": [
+            "therapy"
+          ],
+          "servingTags": [
+            "autism"
+          ],
+          "languageValue": null,
+          "sourceUrl": "https://www.nationwidechildrens.org/specialties/center-for-autism-spectrum-disorders"
+        },
+        {
+          "id": "ga-clinic-marcus-autism",
+          "name": "Marcus Autism Center",
+          "verificationStatus": "source_listed",
+          "richnessScore": 4,
+          "freshnessStamp": "2026-06-16",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": true,
+            "hasNextStep": true,
+            "hasTags": true,
+            "hasAccessibility": false,
+            "hasClaimGroundwork": true
+          },
+          "availabilityStatus": "unknown",
+          "nextStepType": "call",
+          "serviceTags": [
+            "therapy"
+          ],
+          "servingTags": [
+            "autism"
+          ],
+          "languageValue": null,
+          "sourceUrl": "https://www.marcus.org/contact-us"
+        }
+      ],
+      "hiddenSelected": [],
+      "richerRenderableRowsOutsideRendered": []
+    },
+    {
+      "table": "nonprofit_organizations",
+      "label": "Nonprofit Organizations",
+      "kind": "Nonprofit",
+      "totalRows": 29499,
+      "publicCandidateCount": 29499,
+      "renderablePublicCandidateCount": 29499,
+      "selectedPreRenderCount": 3,
+      "renderedSelectionCount": 3,
+      "renderedMatchesIdeal": true,
+      "blockers": {
+        "hiddenSelectedCount": 0,
+        "richerRenderableRowsSkippedCount": 0
+      },
+      "selectedPreRender": [
+        {
+          "id": "new-york-new-york-ny-parent-network-of-western-new-york-cprc-np",
+          "name": "Parent Network of Western New York – CPRC",
+          "verificationStatus": "verified",
+          "richnessScore": 4,
+          "freshnessStamp": "2026-06-16",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": true,
+            "hasNextStep": true,
+            "hasTags": false,
+            "hasAccessibility": true,
+            "hasClaimGroundwork": true
+          },
+          "availabilityStatus": "unknown",
+          "nextStepType": "call",
+          "serviceTags": [],
+          "servingTags": [],
+          "languageValue": "English, Spanish",
+          "sourceUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=33"
+        },
+        {
+          "id": "np-arc-la",
+          "name": "The Arc of Los Angeles",
+          "verificationStatus": "verified",
+          "richnessScore": 4,
+          "freshnessStamp": "2026-06-16",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": true,
+            "hasNextStep": true,
+            "hasTags": true,
+            "hasAccessibility": false,
+            "hasClaimGroundwork": true
+          },
+          "availabilityStatus": "unknown",
+          "nextStepType": "call",
+          "serviceTags": [],
+          "servingTags": [
+            "idd_dd"
+          ],
+          "languageValue": null,
+          "sourceUrl": "https://thearcla.org"
+        },
+        {
+          "id": "tx-np-autism-anderson-tx",
+          "name": "Autism Society of Texas (Statewide Support)",
+          "verificationStatus": "verified",
+          "richnessScore": 4,
+          "freshnessStamp": "2026-06-16",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": true,
+            "hasNextStep": true,
+            "hasTags": true,
+            "hasAccessibility": false,
+            "hasClaimGroundwork": true
+          },
+          "availabilityStatus": "unknown",
+          "nextStepType": "call",
+          "serviceTags": [],
+          "servingTags": [
+            "autism"
+          ],
+          "languageValue": null,
+          "sourceUrl": "https://www.texasautismsociety.org"
+        }
+      ],
+      "renderedSelection": [
+        {
+          "id": "new-york-new-york-ny-parent-network-of-western-new-york-cprc-np",
+          "name": "Parent Network of Western New York – CPRC",
+          "verificationStatus": "verified",
+          "richnessScore": 4,
+          "freshnessStamp": "2026-06-16",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": true,
+            "hasNextStep": true,
+            "hasTags": false,
+            "hasAccessibility": true,
+            "hasClaimGroundwork": true
+          },
+          "availabilityStatus": "unknown",
+          "nextStepType": "call",
+          "serviceTags": [],
+          "servingTags": [],
+          "languageValue": "English, Spanish",
+          "sourceUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=33"
+        },
+        {
+          "id": "np-arc-la",
+          "name": "The Arc of Los Angeles",
+          "verificationStatus": "verified",
+          "richnessScore": 4,
+          "freshnessStamp": "2026-06-16",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": true,
+            "hasNextStep": true,
+            "hasTags": true,
+            "hasAccessibility": false,
+            "hasClaimGroundwork": true
+          },
+          "availabilityStatus": "unknown",
+          "nextStepType": "call",
+          "serviceTags": [],
+          "servingTags": [
+            "idd_dd"
+          ],
+          "languageValue": null,
+          "sourceUrl": "https://thearcla.org"
+        },
+        {
+          "id": "tx-np-autism-anderson-tx",
+          "name": "Autism Society of Texas (Statewide Support)",
+          "verificationStatus": "verified",
+          "richnessScore": 4,
+          "freshnessStamp": "2026-06-16",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": true,
+            "hasNextStep": true,
+            "hasTags": true,
+            "hasAccessibility": false,
+            "hasClaimGroundwork": true
+          },
+          "availabilityStatus": "unknown",
+          "nextStepType": "call",
+          "serviceTags": [],
+          "servingTags": [
+            "autism"
+          ],
+          "languageValue": null,
+          "sourceUrl": "https://www.texasautismsociety.org"
+        }
+      ],
+      "idealRenderableSelection": [
+        {
+          "id": "new-york-new-york-ny-parent-network-of-western-new-york-cprc-np",
+          "name": "Parent Network of Western New York – CPRC",
+          "verificationStatus": "verified",
+          "richnessScore": 4,
+          "freshnessStamp": "2026-06-16",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": true,
+            "hasNextStep": true,
+            "hasTags": false,
+            "hasAccessibility": true,
+            "hasClaimGroundwork": true
+          },
+          "availabilityStatus": "unknown",
+          "nextStepType": "call",
+          "serviceTags": [],
+          "servingTags": [],
+          "languageValue": "English, Spanish",
+          "sourceUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=33"
+        },
+        {
+          "id": "np-arc-la",
+          "name": "The Arc of Los Angeles",
+          "verificationStatus": "verified",
+          "richnessScore": 4,
+          "freshnessStamp": "2026-06-16",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": true,
+            "hasNextStep": true,
+            "hasTags": true,
+            "hasAccessibility": false,
+            "hasClaimGroundwork": true
+          },
+          "availabilityStatus": "unknown",
+          "nextStepType": "call",
+          "serviceTags": [],
+          "servingTags": [
+            "idd_dd"
+          ],
+          "languageValue": null,
+          "sourceUrl": "https://thearcla.org"
+        },
+        {
+          "id": "tx-np-autism-anderson-tx",
+          "name": "Autism Society of Texas (Statewide Support)",
+          "verificationStatus": "verified",
+          "richnessScore": 4,
+          "freshnessStamp": "2026-06-16",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": true,
+            "hasNextStep": true,
+            "hasTags": true,
+            "hasAccessibility": false,
+            "hasClaimGroundwork": true
+          },
+          "availabilityStatus": "unknown",
+          "nextStepType": "call",
+          "serviceTags": [],
+          "servingTags": [
+            "autism"
+          ],
+          "languageValue": null,
+          "sourceUrl": "https://www.texasautismsociety.org"
+        }
+      ],
+      "hiddenSelected": [],
+      "richerRenderableRowsOutsideRendered": []
+    },
+    {
+      "table": "iep_advocates",
+      "label": "IEP Advocates",
+      "kind": "Advocate",
+      "totalRows": 3573,
+      "publicCandidateCount": 2993,
+      "renderablePublicCandidateCount": 2993,
+      "selectedPreRenderCount": 3,
+      "renderedSelectionCount": 3,
+      "renderedMatchesIdeal": true,
+      "blockers": {
+        "hiddenSelectedCount": 0,
+        "richerRenderableRowsSkippedCount": 0
+      },
+      "selectedPreRender": [
+        {
+          "id": "tx-advocate-seal",
+          "name": "Law Office of Karen Dalglish Seal",
+          "verificationStatus": "official_verified",
+          "richnessScore": 5,
+          "freshnessStamp": "2026-06-16",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": true,
+            "hasNextStep": true,
+            "hasTags": true,
+            "hasAccessibility": true,
+            "hasClaimGroundwork": true
+          },
+          "availabilityStatus": "unknown",
+          "nextStepType": "email",
+          "serviceTags": [
+            "iep_advocacy",
+            "special_education"
+          ],
+          "servingTags": [],
+          "languageValue": "English, Spanish",
+          "sourceUrl": "https://www.karenseal.com"
+        },
+        {
+          "id": "fl-advocate-drf",
+          "name": "Disability Rights Florida (Statewide)",
+          "verificationStatus": "official_verified",
+          "richnessScore": 5,
+          "freshnessStamp": "2026-06-16",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": true,
+            "hasNextStep": true,
+            "hasTags": true,
+            "hasAccessibility": true,
+            "hasClaimGroundwork": true
+          },
+          "availabilityStatus": "unknown",
+          "nextStepType": "email",
+          "serviceTags": [
+            "iep_advocacy",
+            "special_education"
+          ],
+          "servingTags": [],
+          "languageValue": "English, Spanish, Creole",
+          "sourceUrl": "https://www.disabilityrightsflorida.org"
+        },
+        {
+          "id": "ny-adv-legal-statewide",
+          "name": "NYS Protection & Advocacy System (DRNY)",
+          "verificationStatus": "official_verified",
+          "richnessScore": 5,
+          "freshnessStamp": "2026-06-16",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": true,
+            "hasNextStep": true,
+            "hasTags": true,
+            "hasAccessibility": true,
+            "hasClaimGroundwork": true
+          },
+          "availabilityStatus": "unknown",
+          "nextStepType": "email",
+          "serviceTags": [
+            "iep_advocacy",
+            "special_education"
+          ],
+          "servingTags": [],
+          "languageValue": "English, Spanish",
+          "sourceUrl": "https://www.drny.org"
+        }
+      ],
+      "renderedSelection": [
+        {
+          "id": "tx-advocate-seal",
+          "name": "Law Office of Karen Dalglish Seal",
+          "verificationStatus": "official_verified",
+          "richnessScore": 5,
+          "freshnessStamp": "2026-06-16",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": true,
+            "hasNextStep": true,
+            "hasTags": true,
+            "hasAccessibility": true,
+            "hasClaimGroundwork": true
+          },
+          "availabilityStatus": "unknown",
+          "nextStepType": "email",
+          "serviceTags": [
+            "iep_advocacy",
+            "special_education"
+          ],
+          "servingTags": [],
+          "languageValue": "English, Spanish",
+          "sourceUrl": "https://www.karenseal.com"
+        },
+        {
+          "id": "fl-advocate-drf",
+          "name": "Disability Rights Florida (Statewide)",
+          "verificationStatus": "official_verified",
+          "richnessScore": 5,
+          "freshnessStamp": "2026-06-16",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": true,
+            "hasNextStep": true,
+            "hasTags": true,
+            "hasAccessibility": true,
+            "hasClaimGroundwork": true
+          },
+          "availabilityStatus": "unknown",
+          "nextStepType": "email",
+          "serviceTags": [
+            "iep_advocacy",
+            "special_education"
+          ],
+          "servingTags": [],
+          "languageValue": "English, Spanish, Creole",
+          "sourceUrl": "https://www.disabilityrightsflorida.org"
+        },
+        {
+          "id": "ny-adv-legal-statewide",
+          "name": "NYS Protection & Advocacy System (DRNY)",
+          "verificationStatus": "official_verified",
+          "richnessScore": 5,
+          "freshnessStamp": "2026-06-16",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": true,
+            "hasNextStep": true,
+            "hasTags": true,
+            "hasAccessibility": true,
+            "hasClaimGroundwork": true
+          },
+          "availabilityStatus": "unknown",
+          "nextStepType": "email",
+          "serviceTags": [
+            "iep_advocacy",
+            "special_education"
+          ],
+          "servingTags": [],
+          "languageValue": "English, Spanish",
+          "sourceUrl": "https://www.drny.org"
+        }
+      ],
+      "idealRenderableSelection": [
+        {
+          "id": "tx-advocate-seal",
+          "name": "Law Office of Karen Dalglish Seal",
+          "verificationStatus": "official_verified",
+          "richnessScore": 5,
+          "freshnessStamp": "2026-06-16",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": true,
+            "hasNextStep": true,
+            "hasTags": true,
+            "hasAccessibility": true,
+            "hasClaimGroundwork": true
+          },
+          "availabilityStatus": "unknown",
+          "nextStepType": "email",
+          "serviceTags": [
+            "iep_advocacy",
+            "special_education"
+          ],
+          "servingTags": [],
+          "languageValue": "English, Spanish",
+          "sourceUrl": "https://www.karenseal.com"
+        },
+        {
+          "id": "fl-advocate-drf",
+          "name": "Disability Rights Florida (Statewide)",
+          "verificationStatus": "official_verified",
+          "richnessScore": 5,
+          "freshnessStamp": "2026-06-16",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": true,
+            "hasNextStep": true,
+            "hasTags": true,
+            "hasAccessibility": true,
+            "hasClaimGroundwork": true
+          },
+          "availabilityStatus": "unknown",
+          "nextStepType": "email",
+          "serviceTags": [
+            "iep_advocacy",
+            "special_education"
+          ],
+          "servingTags": [],
+          "languageValue": "English, Spanish, Creole",
+          "sourceUrl": "https://www.disabilityrightsflorida.org"
+        },
+        {
+          "id": "ny-adv-legal-statewide",
+          "name": "NYS Protection & Advocacy System (DRNY)",
+          "verificationStatus": "official_verified",
+          "richnessScore": 5,
+          "freshnessStamp": "2026-06-16",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": true,
+            "hasNextStep": true,
+            "hasTags": true,
+            "hasAccessibility": true,
+            "hasClaimGroundwork": true
+          },
+          "availabilityStatus": "unknown",
+          "nextStepType": "email",
+          "serviceTags": [
+            "iep_advocacy",
+            "special_education"
+          ],
+          "servingTags": [],
+          "languageValue": "English, Spanish",
+          "sourceUrl": "https://www.drny.org"
+        }
+      ],
+      "hiddenSelected": [],
+      "richerRenderableRowsOutsideRendered": []
+    }
+  ]
+}

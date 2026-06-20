@@ -1,0 +1,135 @@
+{
+  "generatedAt": "2026-06-19T18:22:13.900Z",
+  "generatedDate": "2026-06-19",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+  "stateId": "south-dakota",
+  "stateName": "South Dakota",
+  "executionPriority": 38,
+  "sourceTargetsPath": "data/source_targets/south-dakota.json",
+  "ledgerStatus": "complete",
+  "ledgerNote": "added-three-concrete-first-party-provider-targets",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 1,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 3,
+  "placeholderProviderTargetCount": 1,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 0,
+  "neededLiveProviderRows": 2,
+  "authoringGapClass": "needs_refresh_or_deeper_targets",
+  "nextAction": "Refresh South Dakota provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+  "providerTargets": [
+    {
+      "sourceName": "South Dakota Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for South Dakota."
+    },
+    {
+      "sourceName": "Sanford Children's Hospital",
+      "sourceUrl": "https://www.sanfordhealth.org/",
+      "domain": "sanfordhealth.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Sanford Health source for Sanford Children's Hospital and statewide pediatric specialty care in South Dakota."
+    },
+    {
+      "sourceName": "Avera McKennan Hospital & University Health Center",
+      "sourceUrl": "https://www.avera.org/",
+      "domain": "avera.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Avera Health source for hospital-based pediatric and specialty referral care centered in Sioux Falls."
+    },
+    {
+      "sourceName": "Monument Health",
+      "sourceUrl": "https://monument.health/",
+      "domain": "monument.health",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Monument Health source for western South Dakota pediatric and hospital-based specialty care."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "South Dakota County Metadata",
+      "sourceUrl": "https://www.south-dakota.gov",
+      "domain": "south-dakota.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "South Dakota Medicaid Portal",
+      "sourceUrl": "https://dhhs.south-dakota.gov",
+      "domain": "dhhs.south-dakota.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "South Dakota Division of Developmental Disabilities",
+      "sourceUrl": "https://dhs.sd.gov/dd",
+      "domain": "dhs.sd.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "South Dakota HCBS Waivers",
+      "sourceUrl": "https://dhs.sd.gov/dd/hcbs",
+      "domain": "dhs.sd.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "South Dakota Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.south-dakota.gov/earlyintervention",
+      "domain": "dhhs.south-dakota.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "South Dakota Department of Education Special Ed",
+      "sourceUrl": "https://education.south-dakota.gov",
+      "domain": "education.south-dakota.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "South Dakota Regional Special Education Support",
+      "sourceUrl": "https://education.south-dakota.gov/regional",
+      "domain": "education.south-dakota.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "South Dakota Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of South Dakota",
+      "sourceUrl": "https://www.thearcsouth-dakota.org",
+      "domain": "thearcsouth-dakota.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "South Dakota Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.south-dakota.gov/forms",
+      "domain": "dhhs.south-dakota.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "South Dakota Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.south-dakota.gov/rehab",
+      "domain": "dhhs.south-dakota.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "South Dakota Secretary of State Business Registry",
+      "sourceUrl": "https://www.south-dakota.gov/business",
+      "domain": "south-dakota.gov"
+    }
+  ]
+}

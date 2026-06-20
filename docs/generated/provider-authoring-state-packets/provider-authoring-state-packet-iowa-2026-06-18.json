@@ -1,0 +1,117 @@
+{
+  "generatedAt": "2026-06-18T18:56:25.539Z",
+  "generatedDate": "2026-06-18",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-18.json",
+  "stateId": "iowa",
+  "stateName": "Iowa",
+  "executionPriority": 1,
+  "sourceTargetsPath": "data/source_targets/iowa.json",
+  "ledgerStatus": "",
+  "ledgerNote": "",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 1,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 2,
+  "placeholderProviderTargetCount": 0,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 1,
+  "nextAction": "Add at least 1 more concrete first-party provider targets for Iowa and then regenerate provider source-pack artifacts.",
+  "providerTargets": [
+    {
+      "sourceName": "University of Iowa Stead Family Children's Hospital",
+      "sourceUrl": "http://www.uichildrens.org/",
+      "domain": "uichildrens.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Named first-party Iowa children's hospital target replacing generic placeholder."
+    },
+    {
+      "sourceName": "Blank Children's Hospital",
+      "sourceUrl": "https://www.unitypoint.org/desmoines/iowa-methodist-medical-center.aspx",
+      "domain": "unitypoint.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "First-party Iowa pediatric hospital system target within UnityPoint's Iowa Methodist campus."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Iowa County Metadata",
+      "sourceUrl": "https://www.iowa.gov",
+      "domain": "iowa.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Iowa Medicaid Portal",
+      "sourceUrl": "https://dhhs.iowa.gov",
+      "domain": "dhhs.iowa.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Iowa Department of Health and Human Services",
+      "sourceUrl": "https://hhs.iowa.gov/developmental-disabilities",
+      "domain": "hhs.iowa.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Iowa HCBS Waivers",
+      "sourceUrl": "https://hhs.iowa.gov/hcbs",
+      "domain": "hhs.iowa.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Iowa Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.iowa.gov/earlyintervention",
+      "domain": "dhhs.iowa.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Iowa Department of Education Special Ed",
+      "sourceUrl": "https://education.iowa.gov",
+      "domain": "education.iowa.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Iowa Regional Special Education Support",
+      "sourceUrl": "https://education.iowa.gov/regional",
+      "domain": "education.iowa.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Iowa Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Iowa",
+      "sourceUrl": "https://www.thearciowa.org",
+      "domain": "thearciowa.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Iowa Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.iowa.gov/forms",
+      "domain": "dhhs.iowa.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Iowa Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.iowa.gov/rehab",
+      "domain": "dhhs.iowa.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Iowa Secretary of State Business Registry",
+      "sourceUrl": "https://www.iowa.gov/business",
+      "domain": "iowa.gov"
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "generatedAt": "2026-06-18T19:08:55.726Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "montana",
+  "stateName": "Montana",
+  "sourcePacketPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-montana-2026-06-18.json",
+  "sourceTargetsPath": "data/source_targets/montana.json",
+  "instructions": {
+    "summary": "Fill only the missing first-party provider targets needed for this state. Do not broaden beyond provider_directory authoring.",
+    "completionRule": "A candidate row is ready only when sourceName, sourceUrl, domain, and reviewedBy are filled."
+  },
+  "summary": {
+    "neededConcreteTargets": 3,
+    "currentConcreteProviderTargetCount": 0,
+    "existingProviderTargetCount": 4,
+    "candidateSlotCount": 3,
+    "readyCandidateCount": 3,
+    "unresolvedCandidateCount": 0
+  },
+  "existingProviderTargets": [
+    {
+      "sourceName": "Montana Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for Montana."
+    },
+    {
+      "sourceName": "Billings Clinic",
+      "sourceUrl": "https://www.billingsclinic.com/",
+      "domain": "billingsclinic.com",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Billings Clinic source for statewide pediatric specialty and referral hospital coverage in Montana."
+    },
+    {
+      "sourceName": "Providence St. Patrick Hospital",
+      "sourceUrl": "https://montana.providence.org/locations-directory/s/st-patrick-hospital",
+      "domain": "montana.providence.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Providence St. Patrick Hospital source for western Montana hospital and pediatric referral coverage."
+    },
+    {
+      "sourceName": "Benefis Health System",
+      "sourceUrl": "https://www.benefis.org/",
+      "domain": "benefis.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Benefis Health System source for central Montana hospital and pediatric specialty coverage."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Montana County Metadata",
+      "sourceUrl": "https://www.montana.gov",
+      "domain": "montana.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Montana Medicaid Portal",
+      "sourceUrl": "https://dhhs.montana.gov",
+      "domain": "dhhs.montana.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Montana Developmental Disabilities Program",
+      "sourceUrl": "https://dphhs.mt.gov/dsd/ddp",
+      "domain": "dphhs.mt.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Montana HCBS Waivers",
+      "sourceUrl": "https://dphhs.mt.gov/dsd/ddp/hcbs",
+      "domain": "dphhs.mt.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Montana Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.montana.gov/earlyintervention",
+      "domain": "dhhs.montana.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Montana Department of Education Special Ed",
+      "sourceUrl": "https://education.montana.gov",
+      "domain": "education.montana.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Montana Regional Special Education Support",
+      "sourceUrl": "https://education.montana.gov/regional",
+      "domain": "education.montana.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Montana Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Montana",
+      "sourceUrl": "https://www.thearcmontana.org",
+      "domain": "thearcmontana.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Montana Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.montana.gov/forms",
+      "domain": "dhhs.montana.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Montana Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.montana.gov/rehab",
+      "domain": "dhhs.montana.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Montana Secretary of State Business Registry",
+      "sourceUrl": "https://www.montana.gov/business",
+      "domain": "montana.gov"
+    }
+  ],
+  "candidateProviderTargets": [
+    {
+      "slotNumber": 1,
+      "stateId": "montana",
+      "stateCode": "MT",
+      "sourceName": "Billings Clinic",
+      "sourceUrl": "https://www.billingsclinic.com/",
+      "domain": "billingsclinic.com",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Regional medical center",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official Billings Clinic source for statewide pediatric specialty and referral hospital coverage in Montana.",
+      "reviewedBy": "codex"
+    },
+    {
+      "slotNumber": 2,
+      "stateId": "montana",
+      "stateCode": "MT",
+      "sourceName": "Providence St. Patrick Hospital",
+      "sourceUrl": "https://montana.providence.org/locations-directory/s/st-patrick-hospital",
+      "domain": "montana.providence.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Regional hospital",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official Providence St. Patrick Hospital source for western Montana hospital and pediatric referral coverage.",
+      "reviewedBy": "codex"
+    },
+    {
+      "slotNumber": 3,
+      "stateId": "montana",
+      "stateCode": "MT",
+      "sourceName": "Benefis Health System",
+      "sourceUrl": "https://www.benefis.org/",
+      "domain": "benefis.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Regional health system",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official Benefis Health System source for central Montana hospital and pediatric specialty coverage.",
+      "reviewedBy": "codex"
+    }
+  ]
+}

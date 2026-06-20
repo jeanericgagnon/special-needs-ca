@@ -1,0 +1,65 @@
+{
+  "generatedAt": "2026-06-18T01:46:23.880Z",
+  "mode": "apply",
+  "stateFilter": "massachusetts",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 8,
+    "appliedStates": 0,
+    "filesChanged": 0,
+    "skippedByReason": {
+      "skipped_followup": 4,
+      "missing_source_row": 4
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "massachusetts",
+      "sourceName": "Massachusetts Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "massachusetts",
+      "sourceName": "Massachusetts HCBS Waivers Page",
+      "status": "skipped_missing_source_row",
+      "targetUrl": "https://www.mass.gov/dds/hcbs"
+    },
+    {
+      "stateId": "massachusetts",
+      "sourceName": "Massachusetts Developmental Services Directory",
+      "status": "skipped_missing_source_row",
+      "targetUrl": "https://www.mass.gov/dds"
+    },
+    {
+      "stateId": "massachusetts",
+      "sourceName": "Massachusetts Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "massachusetts",
+      "sourceName": "Massachusetts Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "massachusetts",
+      "sourceName": "Massachusetts HCBS Waivers Page",
+      "status": "skipped_missing_source_row",
+      "targetUrl": "https://www.mass.gov/dds/hcbs"
+    },
+    {
+      "stateId": "massachusetts",
+      "sourceName": "Massachusetts Developmental Services Directory",
+      "status": "skipped_missing_source_row",
+      "targetUrl": "https://www.mass.gov/dds"
+    },
+    {
+      "stateId": "massachusetts",
+      "sourceName": "Massachusetts Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+[
+  {
+    "id": "prov-acc-review__tx-clinic-utd-callier__program_overview__application_url",
+    "decision": "reviewed",
+    "clue_page_url": "https://calliercenter.utdallas.edu/child-development/child-development-program-overview/",
+    "clue_value": "https://calliercenter.utdallas.edu/contact-us/",
+    "clue_text": "Contact Us",
+    "review_notes": "Confirmed on the official Callier child development page.",
+    "reviewed_by": "codex"
+  }
+]

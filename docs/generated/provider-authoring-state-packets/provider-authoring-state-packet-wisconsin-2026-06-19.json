@@ -1,0 +1,151 @@
+{
+  "generatedAt": "2026-06-19T18:22:13.901Z",
+  "generatedDate": "2026-06-19",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+  "stateId": "wisconsin",
+  "stateName": "Wisconsin",
+  "executionPriority": 45,
+  "sourceTargetsPath": "data/source_targets/wisconsin.json",
+  "ledgerStatus": "complete",
+  "ledgerNote": "added-three-concrete-first-party-provider-targets",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 1,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 5,
+  "placeholderProviderTargetCount": 1,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 0,
+  "neededLiveProviderRows": 2,
+  "authoringGapClass": "needs_refresh_or_deeper_targets",
+  "nextAction": "Refresh Wisconsin provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+  "providerTargets": [
+    {
+      "sourceName": "Wisconsin Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for Wisconsin."
+    },
+    {
+      "sourceName": "Children's Wisconsin",
+      "sourceUrl": "https://childrenswi.org/",
+      "domain": "childrenswi.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Children's Wisconsin source for statewide pediatric hospital and specialty care in Wisconsin."
+    },
+    {
+      "sourceName": "UW Health Kids",
+      "sourceUrl": "https://www.uwhealth.org/kids",
+      "domain": "uwhealth.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official UW Health Kids source for American Family Children's Hospital pediatric specialty and referral care in Wisconsin."
+    },
+    {
+      "sourceName": "Marshfield Clinic Pediatrics",
+      "sourceUrl": "https://www.marshfieldchildrens.org/",
+      "domain": "marshfieldchildrens.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Marshfield Clinic pediatrics source for pediatric specialty and Marshfield Children's Hospital access across Wisconsin."
+    },
+    {
+      "sourceName": "American Family Children's Hospital",
+      "sourceUrl": "https://www.uwhealth.org/services/kids",
+      "domain": "uwhealth.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official UW Health children's hospital source for American Family Children's Hospital pediatric specialty and referral care in Wisconsin."
+    },
+    {
+      "sourceName": "Marshfield Clinic Pediatrics",
+      "sourceUrl": "https://www.marshfieldclinic.org/medical-services/pediatrics",
+      "domain": "marshfieldclinic.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Marshfield Clinic pediatrics source for pediatric specialty and Marshfield Children's Hospital access across Wisconsin."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Wisconsin County Metadata",
+      "sourceUrl": "https://www.wisconsin.gov",
+      "domain": "wisconsin.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Wisconsin Medicaid Portal",
+      "sourceUrl": "https://dhhs.wisconsin.gov",
+      "domain": "dhhs.wisconsin.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Wisconsin Department of Health Services",
+      "sourceUrl": "https://www.dhs.wisconsin.gov/disabilities/index.htm",
+      "domain": "dhs.wisconsin.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Wisconsin Family Care HCBS Waiver",
+      "sourceUrl": "https://www.dhs.wisconsin.gov/familycare",
+      "domain": "dhs.wisconsin.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Wisconsin Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.wisconsin.gov/earlyintervention",
+      "domain": "dhhs.wisconsin.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Wisconsin Department of Education Special Ed",
+      "sourceUrl": "https://education.wisconsin.gov",
+      "domain": "education.wisconsin.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Wisconsin Regional Special Education Support",
+      "sourceUrl": "https://education.wisconsin.gov/regional",
+      "domain": "education.wisconsin.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Wisconsin Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Wisconsin",
+      "sourceUrl": "https://www.thearcwisconsin.org",
+      "domain": "thearcwisconsin.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Wisconsin Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.wisconsin.gov/forms",
+      "domain": "dhhs.wisconsin.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Wisconsin Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.wisconsin.gov/rehab",
+      "domain": "dhhs.wisconsin.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Wisconsin Secretary of State Business Registry",
+      "sourceUrl": "https://www.wisconsin.gov/business",
+      "domain": "wisconsin.gov"
+    }
+  ]
+}

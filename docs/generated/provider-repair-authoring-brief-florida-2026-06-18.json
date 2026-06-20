@@ -1,0 +1,37 @@
+{
+  "briefId": "provider_repair_authoring_brief",
+  "generatedAt": "2026-06-18T06:17:53.050Z",
+  "generatedDate": "2026-06-18",
+  "sourcePacketPath": "docs/generated/provider-repair-batch-packet-author-targets-first-florida-2026-06-18.json",
+  "stateId": "florida",
+  "purpose": "Deterministic authoring brief for unresolved provider repair rows that still need same-org first-party replacement URLs.",
+  "summary": {
+    "unresolvedRows": 1,
+    "rowsWithSavedEvidence": 1,
+    "rowsWithCandidateHints": 1
+  },
+  "rows": [
+    {
+      "stateId": "florida",
+      "stateName": "Florida",
+      "actionClass": "replace_exact_url",
+      "followupReason": "stale_or_invalid_404",
+      "sourceUrl": "https://www.nicklauschildrens.org/locations/dan-marino-outpatient-center",
+      "hostname": "www.nicklauschildrens.org",
+      "repeatCount": 4,
+      "savedEvidencePath": "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03314-florida-providers-care-nicklaus-children-s-hospital-dan-marino-center.html",
+      "savedEvidenceStatus": "saved_html_present",
+      "candidateHints": [
+        "https://www.nicklauschildrens.org/contact-us",
+        "https://www.nicklauschildrens.org/medical-services",
+        "https://www.nicklauschildrens.org/medical-services/cancer-institute",
+        "https://www.nicklauschildrens.org/medical-services/pediatric-cardiology",
+        "https://www.nicklauschildrens.org/medical-services/neuroscience-institute",
+        "https://www.nicklauschildrens.org/medical-services/orthopedics",
+        "https://www.nicklauschildrens.org/medical-services/cancer-institute/conditions-we-treat",
+        "https://www.nicklauschildrens.org/medical-services/cancer-institute/programs"
+      ],
+      "nextAction": "Author a current same-org first-party replacement URL before the next provider fetch cycle."
+    }
+  ]
+}

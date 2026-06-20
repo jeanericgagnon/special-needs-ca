@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "source_url": "https://education.alaska.gov/sped",
+    "confidence_score": 9.5,
+    "notes": "Official Alaska Department of Education special education page used as the truthful statewide education support layer while weak county and district placeholders are removed.",
+    "suggested_target_id": "ak-ed-doe-special-education",
+    "name": "Alaska Department of Education Special Education",
+    "phone": "",
+    "counties_served": [
+      "ALL_ALASKA_COUNTIES"
+    ],
+    "physical_county": "anchorage-ak",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  }
+]

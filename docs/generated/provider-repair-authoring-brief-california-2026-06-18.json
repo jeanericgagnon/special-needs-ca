@@ -1,0 +1,28 @@
+{
+  "briefId": "provider_repair_authoring_brief",
+  "generatedAt": "2026-06-18T06:29:45.060Z",
+  "generatedDate": "2026-06-18",
+  "sourcePacketPath": "docs/generated/provider-repair-batch-packet-author-targets-first-california-2026-06-18.json",
+  "stateId": "california",
+  "purpose": "Deterministic authoring brief for unresolved provider repair rows that still need same-org first-party replacement URLs.",
+  "summary": {
+    "unresolvedRows": 1,
+    "rowsWithSavedEvidence": 1,
+    "rowsWithCandidateHints": 0
+  },
+  "rows": [
+    {
+      "stateId": "california",
+      "stateName": "California",
+      "actionClass": "author_alternate_first_party_target",
+      "followupReason": "access_blocked_403",
+      "sourceUrl": "https://www.chla.org/autism-and-developmental-medicine",
+      "hostname": "www.chla.org",
+      "repeatCount": 3,
+      "savedEvidencePath": "data/source-acquisition-runs/2026-06-18T02-18-57-741Z/pages/00008-california-providers-care-children-s-hospital-los-angeles-boone-fetter-clinic.html",
+      "savedEvidenceStatus": "saved_html_present",
+      "candidateHints": [],
+      "nextAction": "Author a current same-org first-party replacement URL before the next provider fetch cycle."
+    }
+  ]
+}

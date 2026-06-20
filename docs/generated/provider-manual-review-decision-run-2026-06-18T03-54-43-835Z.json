@@ -1,0 +1,86 @@
+{
+  "generatedAt": "2026-06-18T03:54:43.840Z",
+  "mode": "apply",
+  "stateFilter": null,
+  "inputPath": "docs/generated/provider-manual-review-queue-2026-06-18.json",
+  "dbPath": "ca_disability_navigator.db",
+  "summary": {
+    "inputRows": 9,
+    "appliedRows": 9,
+    "filesChanged": 2,
+    "appliedByBlocker": {
+      "county_unresolved": 3,
+      "missing_address_and_county": 6
+    },
+    "skippedByReason": {},
+    "appliedByReviewStatus": {
+      "blocked_missing_county_resolution": 3,
+      "blocked_missing_address_and_county": 6
+    }
+  },
+  "decisions": [
+    {
+      "rowId": 703,
+      "stateId": "alaska",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_county_resolution",
+      "blockerKey": "county_unresolved"
+    },
+    {
+      "rowId": 704,
+      "stateId": "florida",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 708,
+      "stateId": "florida",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_county_resolution",
+      "blockerKey": "county_unresolved"
+    },
+    {
+      "rowId": 712,
+      "stateId": "florida",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 710,
+      "stateId": "kentucky",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 706,
+      "stateId": "missouri",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 714,
+      "stateId": "missouri",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 713,
+      "stateId": "new-jersey",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 709,
+      "stateId": "south-carolina",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_county_resolution",
+      "blockerKey": "county_unresolved"
+    }
+  ]
+}

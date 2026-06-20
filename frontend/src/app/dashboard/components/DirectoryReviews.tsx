@@ -18,7 +18,7 @@ interface Review {
 }
 
 interface DirectoryReviewsProps {
-  entityType: 'school_district' | 'regional_center' | 'county_office' | 'nonprofit';
+  entityType: 'school_district' | 'regional_center' | 'county_office' | 'nonprofit' | 'advocate';
   entityId: string;
   entityName: string;
   countyId: string;

@@ -1,0 +1,146 @@
+{
+  "generatedAt": "2026-06-18T21:43:58.130Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "missouri",
+  "stateName": "Missouri",
+  "sourcePacketPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-missouri-2026-06-18.json",
+  "sourceTargetsPath": "data/source_targets/missouri.json",
+  "instructions": {
+    "summary": "Fill only the missing first-party provider targets needed for this state. Do not broaden beyond provider_directory authoring.",
+    "completionRule": "A candidate row is ready only when sourceName, sourceUrl, domain, and reviewedBy are filled."
+  },
+  "summary": {
+    "neededConcreteTargets": 0,
+    "currentConcreteProviderTargetCount": 3,
+    "existingProviderTargetCount": 3,
+    "candidateSlotCount": 1,
+    "readyCandidateCount": 0,
+    "unresolvedCandidateCount": 1
+  },
+  "existingProviderTargets": [
+    {
+      "sourceName": "St. Louis Children's Hospital",
+      "sourceUrl": "https://www.stlouischildrens.org/",
+      "domain": "stlouischildrens.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Named first-party Missouri pediatric hospital target replacing generic placeholder."
+    },
+    {
+      "sourceName": "Children's Mercy Kansas City",
+      "sourceUrl": "https://www.childrensmercy.org/",
+      "domain": "childrensmercy.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Named first-party Missouri pediatric hospital target serving the Kansas City region."
+    },
+    {
+      "sourceName": "SSM Health Cardinal Glennon Children's Hospital",
+      "sourceUrl": "http://www.cardinalglennon.com/",
+      "domain": "cardinalglennon.com",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Named first-party Missouri pediatric specialty hospital target in St. Louis."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Missouri County Metadata",
+      "sourceUrl": "https://www.missouri.gov",
+      "domain": "missouri.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Missouri Medicaid Portal",
+      "sourceUrl": "https://dhhs.missouri.gov",
+      "domain": "dhhs.missouri.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Missouri Division of Developmental Disabilities",
+      "sourceUrl": "https://dmh.mo.gov/dev-disabilities",
+      "domain": "dmh.mo.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Missouri HCBS Waivers",
+      "sourceUrl": "https://dmh.mo.gov/dev-disabilities/hcbs",
+      "domain": "dmh.mo.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Missouri Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.missouri.gov/earlyintervention",
+      "domain": "dhhs.missouri.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Missouri Department of Education Special Ed",
+      "sourceUrl": "https://education.missouri.gov",
+      "domain": "education.missouri.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Missouri Regional Special Education Support",
+      "sourceUrl": "https://education.missouri.gov/regional",
+      "domain": "education.missouri.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Missouri Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Missouri",
+      "sourceUrl": "https://www.thearcmissouri.org",
+      "domain": "thearcmissouri.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Missouri Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.missouri.gov/forms",
+      "domain": "dhhs.missouri.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Missouri Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.missouri.gov/rehab",
+      "domain": "dhhs.missouri.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Missouri Secretary of State Business Registry",
+      "sourceUrl": "https://www.missouri.gov/business",
+      "domain": "missouri.gov"
+    }
+  ],
+  "candidateProviderTargets": [
+    {
+      "slotNumber": 1,
+      "stateId": "missouri",
+      "stateCode": "MO",
+      "sourceName": "SSM Health Cardinal Glennon Developmental Pediatrics",
+      "sourceUrl": "https://www.ssmhealth.com/cardinal-glennon/services/developmental-pediatrics",
+      "domain": "ssmhealth.com",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Developmental pediatrics",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Saved first-party developmental pediatrics path recovered from the archived Cardinal Glennon provider page.",
+      "reviewedBy": "codex"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "generatedAt": "2026-06-18",
+  "sourceQueue": "docs/generated/forms-fallback-manual-review-queue-2026-06-18.json",
+  "instructions": {
+    "allowedDecisionModes": [
+      "validate_existing_candidate",
+      "replace_with_reviewed_candidate",
+      "needs_manual_research",
+      "skip_unresolved"
+    ],
+    "requiredTopLevelFields": [
+      "rowKey",
+      "stateId",
+      "sourceUrl",
+      "decisionMode",
+      "reviewedBy"
+    ],
+    "validateExistingCandidateFields": [],
+    "replaceWithReviewedCandidateFields": [
+      "reviewedSourceUrl",
+      "reviewedSourceName"
+    ],
+    "optionalFields": [
+      "reviewNotes",
+      "reviewedSourceName",
+      "reviewedSourceUrl"
+    ],
+    "rules": [
+      "Resolve only rows already present in the manual review queue.",
+      "Do not broaden beyond the selected queued record.",
+      "Use validate_existing_candidate only when the original candidate URL was manually confirmed as the truthful official fallback source.",
+      "Use replace_with_reviewed_candidate only when a better official state-specific fallback source was found and reviewed.",
+      "Use needs_manual_research when the row still lacks a safe resolution inside the bounded review pass.",
+      "Keep reviewedBy populated for every non-empty decision row."
+    ]
+  },
+  "rows": []
+}

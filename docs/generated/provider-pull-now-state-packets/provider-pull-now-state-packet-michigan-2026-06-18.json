@@ -1,0 +1,162 @@
+{
+  "generatedAt": "2026-06-18T19:41:17.162Z",
+  "generatedDate": "2026-06-18",
+  "sourceReviewPacketPath": "docs/generated/provider-pull-now-review-packet-2026-06-18.json",
+  "stateId": "michigan",
+  "unresolvedRows": 4,
+  "byActionClass": {
+    "author_alternate_first_party_target": 4
+  },
+  "byDecisionHint": {
+    "needs_manual_research": 4
+  },
+  "topConcreteTargets": [
+    {
+      "sourceName": "C.S. Mott Children's Hospital",
+      "sourceUrl": "https://www.mottchildren.org/",
+      "priority": 1
+    },
+    {
+      "sourceName": "Children's Hospital of Michigan",
+      "sourceUrl": "https://www.childrensdmc.org/",
+      "priority": 1
+    },
+    {
+      "sourceName": "Helen DeVos Children's Hospital",
+      "sourceUrl": "https://www.spectrumhealth.org/locations/spectrum-health-hospitals-helen-devos-childrens-hospital",
+      "priority": 1
+    }
+  ],
+  "rows": [
+    {
+      "stateId": "michigan",
+      "actionClass": "author_alternate_first_party_target",
+      "followupReason": "access_blocked_403",
+      "sourceUrl": "https://www.mottchildren.org/",
+      "hostname": "www.mottchildren.org",
+      "repeatCount": 4,
+      "decisionHint": "needs_manual_research",
+      "sameDomainCandidateCount": 1,
+      "sameDomainCandidates": [
+        {
+          "sourceName": "C.S. Mott Children's Hospital",
+          "sourceUrl": "https://www.mottchildren.org/",
+          "priority": 1
+        }
+      ],
+      "topConcreteTargets": [
+        {
+          "sourceName": "C.S. Mott Children's Hospital",
+          "sourceUrl": "https://www.mottchildren.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Children's Hospital of Michigan",
+          "sourceUrl": "https://www.childrensdmc.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Helen DeVos Children's Hospital",
+          "sourceUrl": "https://www.spectrumhealth.org/locations/spectrum-health-hospitals-helen-devos-childrens-hospital",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "stateId": "michigan",
+      "actionClass": "author_alternate_first_party_target",
+      "followupReason": "access_blocked_403",
+      "sourceUrl": "https://www.childrensdmc.org/",
+      "hostname": "www.childrensdmc.org",
+      "repeatCount": 2,
+      "decisionHint": "needs_manual_research",
+      "sameDomainCandidateCount": 1,
+      "sameDomainCandidates": [
+        {
+          "sourceName": "Children's Hospital of Michigan",
+          "sourceUrl": "https://www.childrensdmc.org/",
+          "priority": 1
+        }
+      ],
+      "topConcreteTargets": [
+        {
+          "sourceName": "C.S. Mott Children's Hospital",
+          "sourceUrl": "https://www.mottchildren.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Children's Hospital of Michigan",
+          "sourceUrl": "https://www.childrensdmc.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Helen DeVos Children's Hospital",
+          "sourceUrl": "https://www.spectrumhealth.org/locations/spectrum-health-hospitals-helen-devos-childrens-hospital",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "stateId": "michigan",
+      "actionClass": "author_alternate_first_party_target",
+      "followupReason": "access_blocked_403",
+      "sourceUrl": "https://www.spectrumhealth.org/locations/spectrum-health-hospitals-helen-devos-childrens-hospital",
+      "hostname": "www.spectrumhealth.org",
+      "repeatCount": 2,
+      "decisionHint": "needs_manual_research",
+      "sameDomainCandidateCount": 1,
+      "sameDomainCandidates": [
+        {
+          "sourceName": "Helen DeVos Children's Hospital",
+          "sourceUrl": "https://www.spectrumhealth.org/locations/spectrum-health-hospitals-helen-devos-childrens-hospital",
+          "priority": 1
+        }
+      ],
+      "topConcreteTargets": [
+        {
+          "sourceName": "C.S. Mott Children's Hospital",
+          "sourceUrl": "https://www.mottchildren.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Children's Hospital of Michigan",
+          "sourceUrl": "https://www.childrensdmc.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Helen DeVos Children's Hospital",
+          "sourceUrl": "https://www.spectrumhealth.org/locations/spectrum-health-hospitals-helen-devos-childrens-hospital",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "stateId": "michigan",
+      "actionClass": "author_alternate_first_party_target",
+      "followupReason": "access_blocked_403",
+      "sourceUrl": "https://www.uofmhealth.org/our-care/specialties-services/autism-spectrum-disorders-appointments",
+      "hostname": "www.uofmhealth.org",
+      "repeatCount": 2,
+      "decisionHint": "needs_manual_research",
+      "sameDomainCandidateCount": 0,
+      "sameDomainCandidates": [],
+      "topConcreteTargets": [
+        {
+          "sourceName": "C.S. Mott Children's Hospital",
+          "sourceUrl": "https://www.mottchildren.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Children's Hospital of Michigan",
+          "sourceUrl": "https://www.childrensdmc.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Helen DeVos Children's Hospital",
+          "sourceUrl": "https://www.spectrumhealth.org/locations/spectrum-health-hospitals-helen-devos-childrens-hospital",
+          "priority": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "generatedAt": "2026-06-19T18:22:13.900Z",
+  "generatedDate": "2026-06-19",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+  "stateId": "vermont",
+  "stateName": "Vermont",
+  "executionPriority": 41,
+  "sourceTargetsPath": "data/source_targets/vermont.json",
+  "ledgerStatus": "complete",
+  "ledgerNote": "added-three-concrete-first-party-provider-targets",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 1,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 3,
+  "placeholderProviderTargetCount": 1,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 0,
+  "neededLiveProviderRows": 2,
+  "authoringGapClass": "needs_refresh_or_deeper_targets",
+  "nextAction": "Refresh Vermont provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+  "providerTargets": [
+    {
+      "sourceName": "Vermont Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for Vermont."
+    },
+    {
+      "sourceName": "The University of Vermont Children's Hospital",
+      "sourceUrl": "https://www.uvmhealth.org/medcenter/departments-and-programs/childrens-hospital",
+      "domain": "uvmhealth.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official UVM Children's Hospital source for statewide pediatric hospital and specialty care in Vermont."
+    },
+    {
+      "sourceName": "The University of Vermont Medical Center",
+      "sourceUrl": "https://www.uvmhealth.org/medcenter",
+      "domain": "uvmhealth.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official UVM Medical Center source for pediatric referral and academic specialty care in Vermont."
+    },
+    {
+      "sourceName": "Dartmouth Hitchcock Medical Center",
+      "sourceUrl": "https://www.dartmouth-hitchcock.org/",
+      "domain": "dartmouth-hitchcock.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Dartmouth Hitchcock source for regional pediatric referral coverage serving Vermont families in northern New England."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Vermont County Metadata",
+      "sourceUrl": "https://www.vermont.gov",
+      "domain": "vermont.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Vermont Medicaid Portal",
+      "sourceUrl": "https://dhhs.vermont.gov",
+      "domain": "dhhs.vermont.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Vermont Developmental Disabilities Services Division",
+      "sourceUrl": "https://ddsd.vermont.gov/",
+      "domain": "ddsd.vermont.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Vermont HCBS Waivers",
+      "sourceUrl": "https://ddsd.vermont.gov/hcbs",
+      "domain": "ddsd.vermont.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Vermont Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.vermont.gov/earlyintervention",
+      "domain": "dhhs.vermont.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Vermont Department of Education Special Ed",
+      "sourceUrl": "https://education.vermont.gov",
+      "domain": "education.vermont.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Vermont Regional Special Education Support",
+      "sourceUrl": "https://education.vermont.gov/regional",
+      "domain": "education.vermont.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Vermont Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Vermont",
+      "sourceUrl": "https://www.thearcvermont.org",
+      "domain": "thearcvermont.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Vermont Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.vermont.gov/forms",
+      "domain": "dhhs.vermont.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Vermont Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.vermont.gov/rehab",
+      "domain": "dhhs.vermont.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Vermont Secretary of State Business Registry",
+      "sourceUrl": "https://www.vermont.gov/business",
+      "domain": "vermont.gov"
+    }
+  ]
+}

@@ -1,1 +1,31 @@
-[]
+[
+  {
+    "source_url": "https://education.vermont.gov/",
+    "confidence_score": 9.5,
+    "notes": "Official statewide Vermont Agency of Education special education support entrypoint covering all counties.",
+    "suggested_target_id": "vt-ed-aoe-special-education",
+    "name": "Vermont Agency of Education Special Education",
+    "phone": "(802) 828-1130",
+    "agency_type": "state-special-education-support",
+    "counties_served": [
+      "addison-vt",
+      "bennington-vt",
+      "caledonia-vt",
+      "chittenden-vt",
+      "essex-vt",
+      "franklin-vt",
+      "grand-isle-vt",
+      "lamoille-vt",
+      "orange-vt",
+      "orleans-vt",
+      "rutland-vt",
+      "washington-vt",
+      "windham-vt",
+      "windsor-vt"
+    ],
+    "website": "https://education.vermont.gov/student-support/special-education",
+    "evidence_level": "source_listed",
+    "verification_status": "verified",
+    "data_origin": "scraped"
+  }
+]

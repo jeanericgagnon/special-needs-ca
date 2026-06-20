@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-06-18T01:37:00.872Z",
+  "mode": "apply",
+  "stateFilter": "indiana",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 4,
+    "appliedStates": 2,
+    "filesChanged": 1,
+    "skippedByReason": {
+      "skipped_followup": 2
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "indiana",
+      "sourceName": "Indiana Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "indiana",
+      "sourceName": "Indiana HCBS Waivers Page",
+      "status": "applied",
+      "targetUrl": "https://www.in.gov/fssa/ddrs/hcbs"
+    },
+    {
+      "stateId": "indiana",
+      "sourceName": "Indiana Developmental Services Directory",
+      "status": "applied",
+      "targetUrl": "https://www.in.gov/fssa/ddrs"
+    },
+    {
+      "stateId": "indiana",
+      "sourceName": "Indiana Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

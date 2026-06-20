@@ -1,0 +1,91 @@
+{
+  "generatedAt": "2026-06-18T05:55:14.660Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "georgia",
+  "sourceStatePacketPath": "docs/generated/provider-pull-now-state-packets/provider-pull-now-state-packet-georgia-2026-06-18.json",
+  "sourceDecisionFilePath": "data/provider-pull-now-decisions.json",
+  "summary": {
+    "totalRows": 2,
+    "unresolvedRows": 2,
+    "bySuggestedDecisionMode": {
+      "bounded_retry_once": 1,
+      "needs_manual_research": 1
+    }
+  },
+  "rows": [
+    {
+      "stateId": "georgia",
+      "actionClass": "bounded_retry_then_replace",
+      "followupReason": "network_fetch_failed",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-1",
+      "hostname": "dch.georgia.gov",
+      "repeatCount": 2,
+      "sameDomainCandidateCount": 0,
+      "sameDomainCandidates": [],
+      "topConcreteTargets": [
+        {
+          "sourceName": "CHOA Marcus Autism Center",
+          "sourceUrl": "https://www.marcus.org/",
+          "priority": 2
+        },
+        {
+          "sourceName": "CHOA Marcus Autism Center",
+          "sourceUrl": "https://www.marcus.org/",
+          "priority": 2
+        },
+        {
+          "sourceName": "Marcus Autism Center Contact Us",
+          "sourceUrl": "https://www.marcus.org/contact-us",
+          "priority": 2
+        }
+      ],
+      "currentDecision": {
+        "decisionMode": "",
+        "reviewedSourceName": "",
+        "reviewedSourceUrl": "",
+        "retryNotes": "",
+        "reviewNotes": "",
+        "reviewedBy": ""
+      },
+      "suggestedDecisionMode": "bounded_retry_once",
+      "suggestedReason": "Retry-eligible row; allow one bounded retry only if no reviewed first-party replacement is available."
+    },
+    {
+      "stateId": "georgia",
+      "actionClass": "replace_exact_url",
+      "followupReason": "stale_or_invalid_404",
+      "sourceUrl": "https://dch.georgia.gov/specialized-roster-1",
+      "hostname": "dch.georgia.gov",
+      "repeatCount": 2,
+      "sameDomainCandidateCount": 0,
+      "sameDomainCandidates": [],
+      "topConcreteTargets": [
+        {
+          "sourceName": "CHOA Marcus Autism Center",
+          "sourceUrl": "https://www.marcus.org/",
+          "priority": 2
+        },
+        {
+          "sourceName": "CHOA Marcus Autism Center",
+          "sourceUrl": "https://www.marcus.org/",
+          "priority": 2
+        },
+        {
+          "sourceName": "Marcus Autism Center Contact Us",
+          "sourceUrl": "https://www.marcus.org/contact-us",
+          "priority": 2
+        }
+      ],
+      "currentDecision": {
+        "decisionMode": "",
+        "reviewedSourceName": "",
+        "reviewedSourceUrl": "",
+        "retryNotes": "",
+        "reviewNotes": "",
+        "reviewedBy": ""
+      },
+      "suggestedDecisionMode": "needs_manual_research",
+      "suggestedReason": "Saved artifacts do not yet prove a safe first-party replacement; keep this in manual research until one is confirmed."
+    }
+  ]
+}

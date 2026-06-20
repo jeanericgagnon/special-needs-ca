@@ -1,0 +1,46 @@
+{
+  "generatedAt": "2026-06-19",
+  "sourceRunbook": "docs/generated/provider-pull-now-runbook-2026-06-19.json",
+  "sourceQueue": "docs/generated/provider-followup-repair-queue-2026-06-18.json",
+  "instructions": {
+    "allowedDecisionModes": [
+      "replace_with_reviewed_first_party_target",
+      "bounded_retry_once",
+      "needs_manual_research",
+      "skip_unresolved"
+    ],
+    "requiredTopLevelFields": [
+      "stateId",
+      "actionClass",
+      "sourceUrl",
+      "decisionMode",
+      "reviewedBy"
+    ],
+    "replaceFields": [
+      "reviewedSourceName",
+      "reviewedSourceUrl"
+    ],
+    "retryFields": [
+      "retryNotes"
+    ],
+    "optionalFields": [
+      "reviewNotes",
+      "reviewedSourceName",
+      "reviewedSourceUrl",
+      "retryNotes"
+    ],
+    "rules": [
+      "Resolve only pull-now provider rows already present in the source queue.",
+      "Do not broaden beyond the listed provider repair rows.",
+      "Use replace_with_reviewed_first_party_target when you have a truthful first-party clinic, hospital, or program page to replace the blocked target.",
+      "Use bounded_retry_once only for rows already classified as bounded_retry_then_replace.",
+      "Use needs_manual_research when a safe replacement could not be confirmed within the bounded pass.",
+      "Keep reviewedBy populated for every decision row."
+    ]
+  },
+  "rows": [],
+  "summary": {
+    "pullNowRowCount": 0,
+    "firstActionClass": null
+  }
+}

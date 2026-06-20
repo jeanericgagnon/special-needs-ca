@@ -1,0 +1,89 @@
+{
+  "evidencePath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/nonprofit-accessibility-domains/navigatelifetexas-org/2026-06-17T15-47-25-591Z/evidence.json",
+  "promotionPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/nonprofit-accessibility-domains/navigatelifetexas-org/2026-06-17T15-47-25-591Z/promotion-decisions.json",
+  "summaryPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/nonprofit-accessibility-domains/navigatelifetexas-org/2026-06-17T15-47-25-591Z/summary.json",
+  "mdReportPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/nonprofit-accessibility-domain-navigatelifetexas-org-2026-06-17.md",
+  "generatedAt": "2026-06-17",
+  "runStamp": "2026-06-17T15-47-25-591Z",
+  "domain": "navigatelifetexas.org",
+  "orgTerms": [],
+  "dryRun": true,
+  "safeStatus": "safe",
+  "beforeDomainCounts": {
+    "total": 254,
+    "inPerson": 0,
+    "orgLevelPresence": 0,
+    "localInPersonEvidence": 0,
+    "trustedMissing": 254
+  },
+  "afterDomainCounts": {
+    "total": 254,
+    "inPerson": 0,
+    "orgLevelPresence": 0,
+    "localInPersonEvidence": 0,
+    "trustedMissing": 254
+  },
+  "candidateCount": 0,
+  "mutationCount": 0,
+  "skippedCount": 0,
+  "classificationCounts": {},
+  "evidenceLevelCounts": {},
+  "actionCounts": {},
+  "warnings": [],
+  "sampleRows": [],
+  "mutations": [],
+  "skipped": [],
+  "skipReasons": {},
+  "nextDomains": [
+    {
+      "domain": "thearc.org",
+      "missingRows": 12021
+    },
+    {
+      "domain": "parentcenterhub.org",
+      "missingRows": 4483
+    },
+    {
+      "domain": "texasautismsociety.org",
+      "missingRows": 509
+    },
+    {
+      "domain": "txp2p.org",
+      "missingRows": 508
+    },
+    {
+      "domain": "thearcoftexas.org",
+      "missingRows": 259
+    },
+    {
+      "domain": "disabilityrightstx.org",
+      "missingRows": 254
+    },
+    {
+      "domain": "navigatelifetexas.org",
+      "missingRows": 254
+    },
+    {
+      "domain": "prntexas.org",
+      "missingRows": 254
+    },
+    {
+      "domain": "autismqc.org",
+      "missingRows": 201
+    },
+    {
+      "domain": "p2pga.org",
+      "missingRows": 159
+    },
+    {
+      "domain": "arcofky.org",
+      "missingRows": 120
+    },
+    {
+      "domain": "asbg.org",
+      "missingRows": 120
+    }
+  ],
+  "rollbackSqlPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/nonprofit-accessibility-domains/navigatelifetexas-org/2026-06-17T15-47-25-591Z/rollback.sql",
+  "forwardSqlPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/nonprofit-accessibility-domains/navigatelifetexas-org/2026-06-17T15-47-25-591Z/forward.sql"
+}

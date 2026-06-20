@@ -1,0 +1,247 @@
+{
+  "generatedAt": "2026-06-17",
+  "nonprofitGapSummary": {
+    "trustedPublicRows": 29499,
+    "trustedMissingAllAccessibility": 29108,
+    "localInPersonEvidenceRows": 0,
+    "orgLevelPhysicalPresenceRows": 159,
+    "languagesRows": 211
+  },
+  "registrySummary": {
+    "registryEntryCount": 843,
+    "projectedCandidatePages": 13540,
+    "targetTypeCounts": {
+      "network_directory": 3,
+      "affiliate_chapter": 499,
+      "statewide_service_org": 110,
+      "affiliate_site": 2,
+      "state_listing_page": 50,
+      "single_site": 173,
+      "site_path": 6
+    }
+  },
+  "sampleExpansionSummary": {
+    "expandedTargets": 12,
+    "uniqueDiscoveredPageCount": 167,
+    "pageTypeCounts": {
+      "affiliate": 19,
+      "general": 107,
+      "news": 17,
+      "services": 5,
+      "events": 1,
+      "about": 16,
+      "contact": 2
+    }
+  },
+  "prioritizedPlan": [
+    {
+      "priority": 1,
+      "id": "nonprofit_local_in_person",
+      "title": "Nonprofit local in-person evidence",
+      "blockerRows": 29108,
+      "currentCoverage": 0,
+      "desiredOutcome": "Confirm county- or location-safe in-person coverage for nonprofit rows when local first-party evidence exists.",
+      "targetTypes": [
+        "affiliate_chapter",
+        "affiliate_site",
+        "site_path"
+      ],
+      "pageTypes": [
+        "contact",
+        "location",
+        "about",
+        "services"
+      ],
+      "sourceFamilies": [
+        "thearc.org/chapter/the-arc-of-dallas-fort-worth",
+        "thearc.org/chapter/the-arc-of-the-gulf-coast",
+        "thearc.org/chapter/the-arc-of-katy",
+        "thearc.org/chapter/the-arc-of-greater-beaumont",
+        "thearc.org/chapter/the-arc-of-san-antonio",
+        "thearc.org/chapter/the-arc-of-bryan-college-station",
+        "autismqc.org",
+        "thearc.org/chapter/the-arc-southwest-georgia",
+        "thearc.org/chapter/the-arc-of-northeast-georgia",
+        "thearc.org/chapter/the-arc-of-central-kentucky",
+        "thearc.org/chapter/kentucky",
+        "thearc.org/chapter/the-arc-of-the-ozarks"
+      ],
+      "estimatedTargets": 150,
+      "estimatedPages": 3000,
+      "matchingRegistryTargets": 507,
+      "topPageTypeSignals": [
+        {
+          "pageType": "contact",
+          "observedInSampleExpansion": 2
+        },
+        {
+          "pageType": "location",
+          "observedInSampleExpansion": 0
+        },
+        {
+          "pageType": "about",
+          "observedInSampleExpansion": 16
+        },
+        {
+          "pageType": "services",
+          "observedInSampleExpansion": 5
+        }
+      ]
+    },
+    {
+      "priority": 2,
+      "id": "nonprofit_org_level_presence",
+      "title": "Nonprofit org-level physical presence",
+      "blockerRows": 28949,
+      "currentCoverage": 159,
+      "desiredOutcome": "Record safe org-level office or statewide service-area evidence without implying local office coverage.",
+      "targetTypes": [
+        "statewide_service_org",
+        "single_site"
+      ],
+      "pageTypes": [
+        "contact",
+        "about",
+        "services",
+        "events"
+      ],
+      "sourceFamilies": [
+        "texasautismsociety.org",
+        "txp2p.org",
+        "thearcoftexas.org",
+        "disabilityrightstx.org",
+        "navigatelifetexas.org",
+        "prntexas.org",
+        "autismqc.org",
+        "p2pga.org",
+        "arcofky.org",
+        "asbg.org",
+        "ask-lou.org",
+        "kypa.net"
+      ],
+      "estimatedTargets": 80,
+      "estimatedPages": 1800,
+      "matchingRegistryTargets": 283,
+      "topPageTypeSignals": [
+        {
+          "pageType": "contact",
+          "observedInSampleExpansion": 2
+        },
+        {
+          "pageType": "about",
+          "observedInSampleExpansion": 16
+        },
+        {
+          "pageType": "services",
+          "observedInSampleExpansion": 5
+        },
+        {
+          "pageType": "events",
+          "observedInSampleExpansion": 1
+        }
+      ]
+    },
+    {
+      "priority": 3,
+      "id": "nonprofit_affiliate_discovery",
+      "title": "Affiliate discovery for umbrella domains",
+      "blockerRows": 9389,
+      "currentCoverage": 499,
+      "desiredOutcome": "Convert umbrella and state-listing domains into real affiliate or chapter scrape targets before deep extraction.",
+      "targetTypes": [
+        "network_directory",
+        "state_listing_page"
+      ],
+      "pageTypes": [
+        "directory",
+        "affiliate",
+        "general"
+      ],
+      "sourceFamilies": [
+        "parentcenterhub.org",
+        "thearc.org",
+        "dcdcthearc.org"
+      ],
+      "estimatedTargets": 60,
+      "estimatedPages": 600,
+      "matchingRegistryTargets": 53,
+      "topPageTypeSignals": [
+        {
+          "pageType": "directory",
+          "observedInSampleExpansion": 0
+        },
+        {
+          "pageType": "affiliate",
+          "observedInSampleExpansion": 19
+        },
+        {
+          "pageType": "general",
+          "observedInSampleExpansion": 107
+        }
+      ]
+    },
+    {
+      "priority": 4,
+      "id": "nonprofit_page_extraction_depth",
+      "title": "High-signal page extraction depth",
+      "blockerRows": 13540,
+      "currentCoverage": 167,
+      "desiredOutcome": "Expand enough candidate pages to feed deterministic extractors for contact, services, about, location, and event evidence.",
+      "targetTypes": [
+        "affiliate_chapter",
+        "affiliate_site",
+        "statewide_service_org",
+        "single_site"
+      ],
+      "pageTypes": [
+        "contact",
+        "about",
+        "services",
+        "location",
+        "events"
+      ],
+      "sourceFamilies": [
+        "https://thearc.org/chapter/the-arc-of-dallas-fort-worth",
+        "https://thearc.org/chapter/the-arc-of-greater-beaumont",
+        "https://thearc.org/chapter/the-arc-of-katy",
+        "https://thearc.org/chapter/the-arc-of-the-gulf-coast",
+        "https://thearc.org/chapter/the-arc-of-bryan-college-station",
+        "https://thearc.org/chapter/the-arc-of-san-antonio",
+        "https://www.texasautismsociety.org/",
+        "https://www.txp2p.org/",
+        "https://thearc.org/chapter/the-arc-southwest-georgia",
+        "https://thearc.org/chapter/the-arc-of-northeast-georgia",
+        "https://thearc.org/chapter/the-arc-of-central-kentucky",
+        "https://thearc.org/chapter/kentucky",
+        "https://thearc.org/chapter/missouri",
+        "https://thearc.org/chapter/the-arc-of-the-ozarks",
+        "https://thearc.org/chapter/tarc"
+      ],
+      "estimatedTargets": 400,
+      "estimatedPages": 10000,
+      "matchingRegistryTargets": 784,
+      "topPageTypeSignals": [
+        {
+          "pageType": "contact",
+          "observedInSampleExpansion": 2
+        },
+        {
+          "pageType": "about",
+          "observedInSampleExpansion": 16
+        },
+        {
+          "pageType": "services",
+          "observedInSampleExpansion": 5
+        },
+        {
+          "pageType": "location",
+          "observedInSampleExpansion": 0
+        },
+        {
+          "pageType": "events",
+          "observedInSampleExpansion": 1
+        }
+      ]
+    }
+  ]
+}

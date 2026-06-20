@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-06-18T01:33:03.353Z",
+  "mode": "apply",
+  "stateFilter": "hawaii",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 4,
+    "appliedStates": 2,
+    "filesChanged": 1,
+    "skippedByReason": {
+      "skipped_followup": 2
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "hawaii",
+      "sourceName": "Hawaii Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "hawaii",
+      "sourceName": "Hawaii HCBS Waivers Page",
+      "status": "applied",
+      "targetUrl": "https://health.hawaii.gov/ddd/hcbs"
+    },
+    {
+      "stateId": "hawaii",
+      "sourceName": "Hawaii Developmental Services Directory",
+      "status": "applied",
+      "targetUrl": "https://health.hawaii.gov/ddd"
+    },
+    {
+      "stateId": "hawaii",
+      "sourceName": "Hawaii Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

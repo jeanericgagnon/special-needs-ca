@@ -1,0 +1,166 @@
+{
+  "generatedAt": "2026-06-18T19:34:29.531Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "wyoming",
+  "stateName": "Wyoming",
+  "sourcePacketPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-wyoming-2026-06-18.json",
+  "sourceTargetsPath": "data/source_targets/wyoming.json",
+  "instructions": {
+    "summary": "Fill only the missing first-party provider targets needed for this state. Do not broaden beyond provider_directory authoring.",
+    "completionRule": "A candidate row is ready only when sourceName, sourceUrl, domain, and reviewedBy are filled."
+  },
+  "summary": {
+    "neededConcreteTargets": 3,
+    "currentConcreteProviderTargetCount": 0,
+    "existingProviderTargetCount": 1,
+    "candidateSlotCount": 3,
+    "readyCandidateCount": 0,
+    "unresolvedCandidateCount": 3
+  },
+  "existingProviderTargets": [
+    {
+      "sourceName": "Wyoming Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for Wyoming."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Wyoming County Metadata",
+      "sourceUrl": "https://www.wyoming.gov",
+      "domain": "wyoming.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Wyoming Medicaid Portal",
+      "sourceUrl": "https://dhhs.wyoming.gov",
+      "domain": "dhhs.wyoming.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Wyoming Developmental Disabilities Division",
+      "sourceUrl": "https://health.wyo.gov/behavioralhealth/dd",
+      "domain": "health.wyo.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Wyoming HCBS Waivers",
+      "sourceUrl": "https://health.wyo.gov/behavioralhealth/dd/hcbs",
+      "domain": "health.wyo.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Wyoming Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.wyoming.gov/earlyintervention",
+      "domain": "dhhs.wyoming.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Wyoming Department of Education Special Ed",
+      "sourceUrl": "https://education.wyoming.gov",
+      "domain": "education.wyoming.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Wyoming Regional Special Education Support",
+      "sourceUrl": "https://education.wyoming.gov/regional",
+      "domain": "education.wyoming.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Wyoming Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Wyoming",
+      "sourceUrl": "https://www.thearcwyoming.org",
+      "domain": "thearcwyoming.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Wyoming Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.wyoming.gov/forms",
+      "domain": "dhhs.wyoming.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Wyoming Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.wyoming.gov/rehab",
+      "domain": "dhhs.wyoming.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Wyoming Secretary of State Business Registry",
+      "sourceUrl": "https://www.wyoming.gov/business",
+      "domain": "wyoming.gov"
+    }
+  ],
+  "candidateProviderTargets": [
+    {
+      "slotNumber": 1,
+      "stateId": "wyoming",
+      "stateCode": "WY",
+      "sourceName": "Banner Wyoming Medical Center",
+      "sourceUrl": "https://www.bannerhealth.com/locations/casper/wyoming-medical-center",
+      "domain": "bannerhealth.com",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Regional hospital",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official Banner Wyoming Medical Center source for statewide pediatric and specialty referral care in Casper.",
+      "reviewedBy": "codex"
+    },
+    {
+      "slotNumber": 2,
+      "stateId": "wyoming",
+      "stateCode": "WY",
+      "sourceName": "Cheyenne Regional Pediatrics",
+      "sourceUrl": "https://www.cheyenneregional.org/service/women-and-childrens-services/pediatrics/",
+      "domain": "cheyenneregional.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Pediatrics service line",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official Cheyenne Regional pediatrics source for in-state pediatric care and referrals in southeastern Wyoming.",
+      "reviewedBy": "codex"
+    },
+    {
+      "slotNumber": 3,
+      "stateId": "wyoming",
+      "stateCode": "WY",
+      "sourceName": "Evanston Regional Hospital",
+      "sourceUrl": "https://evanstonregionalhospital.com",
+      "domain": "evanstonregionalhospital.com",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Regional hospital",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official Evanston Regional Hospital source for pediatric and specialty access serving western Wyoming.",
+      "reviewedBy": "codex"
+    }
+  ]
+}

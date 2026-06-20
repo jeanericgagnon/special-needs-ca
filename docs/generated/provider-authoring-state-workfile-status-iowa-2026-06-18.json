@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-06-18T18:57:38.348Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "iowa",
+  "sourceWorkfilePath": "data/provider-authoring-state-workfiles/provider-authoring-state-workfile-iowa.json",
+  "summary": {
+    "neededConcreteTargets": 1,
+    "candidateSlotCount": 1,
+    "readyCandidateCount": 1,
+    "unresolvedCandidateCount": 0,
+    "completionPercent": 100
+  },
+  "nextWork": []
+}

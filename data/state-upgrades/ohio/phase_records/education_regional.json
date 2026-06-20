@@ -390,16 +390,17 @@
     "data_origin": "scraped"
   },
   {
-    "source_url": "https://www.mcesc.org",
+    "source_url": "https://www.mccesc.org",
     "confidence_score": 9.5,
-    "notes": "Official Ohio Educational Service Center for Madison-Champaign ESC.",
+    "notes": "Official Madison-Champaign ESC site and OESCA roster show Champaign and Madison county presence.",
     "suggested_target_id": "oh-ed-esc-madison-champaign",
-    "name": "Madison-Champaign ESC",
+    "name": "Madison-Champaign Educational Service Center",
     "phone": "(937) 484-1557",
     "counties_served": [
+      "champaign-oh",
       "madison-oh"
     ],
-    "physical_county": "madison-oh",
+    "physical_county": "champaign-oh",
     "evidence_level": "source_listed",
     "verification_status": "pending_review",
     "data_origin": "scraped"
@@ -555,13 +556,15 @@
     "data_origin": "scraped"
   },
   {
-    "source_url": "https://www.youresc.org",
+    "source_url": "https://www.youresc.k12.oh.us",
     "confidence_score": 9.5,
-    "notes": "Official Ohio Educational Service Center for Tri-County ESC.",
+    "notes": "Official Tri-County ESC site states the agency serves Ashland, Holmes, and Wayne counties.",
     "suggested_target_id": "oh-ed-esc-tri-county",
     "name": "Tri-County ESC",
     "phone": "(330) 345-6771",
     "counties_served": [
+      "ashland-oh",
+      "holmes-oh",
       "wayne-oh"
     ],
     "physical_county": "wayne-oh",
@@ -655,6 +658,22 @@
       "gallia-oh"
     ],
     "physical_county": "gallia-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.scoesc.org/districts",
+    "confidence_score": 9.5,
+    "notes": "Official South Central Ohio Educational Service Center member districts in Jackson and Scioto counties.",
+    "suggested_target_id": "oh-ed-scoesc",
+    "name": "South Central Ohio Educational Service Center",
+    "phone": "(740) 354-7761",
+    "counties_served": [
+      "jackson-oh",
+      "scioto-oh"
+    ],
+    "physical_county": "scioto-oh",
     "evidence_level": "source_listed",
     "verification_status": "pending_review",
     "data_origin": "scraped"
@@ -760,6 +779,96 @@
       "union-oh"
     ],
     "physical_county": "union-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.mresc.org/districts-we-serve/",
+    "confidence_score": 9.5,
+    "notes": "Official Midwest Regional ESC districts page lists Hardin County member districts and county groupings.",
+    "suggested_target_id": "oh-ed-midwest-regional",
+    "name": "Midwest Regional ESC",
+    "phone": "(937) 498-1354",
+    "counties_served": [
+      "hardin-oh",
+      "logan-oh",
+      "miami-oh",
+      "shelby-oh"
+    ],
+    "physical_county": "hardin-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts",
+    "confidence_score": 9.5,
+    "notes": "Official North Point member districts page lists districts across Erie, Huron, Ottawa, and Sandusky counties.",
+    "suggested_target_id": "oh-ed-north-point",
+    "name": "North Point Educational Service Center",
+    "phone": "(419) 627-3900",
+    "counties_served": [
+      "erie-oh",
+      "huron-oh",
+      "ottawa-oh",
+      "sandusky-oh"
+    ],
+    "physical_county": "erie-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.ovesc.org/",
+    "confidence_score": 9.5,
+    "notes": "Official Ohio Valley ESC site states it supports districts across Washington, Monroe, Morgan, Noble, Perry, Athens, Belmont, and Guernsey counties.",
+    "suggested_target_id": "oh-ed-ohio-valley",
+    "name": "Ohio Valley Educational Service Center",
+    "phone": "(740) 373-6669",
+    "counties_served": [
+      "athens-oh",
+      "belmont-oh",
+      "guernsey-oh",
+      "monroe-oh",
+      "morgan-oh",
+      "noble-oh",
+      "perry-oh",
+      "washington-oh"
+    ],
+    "physical_county": "washington-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.rpesd.org/",
+    "confidence_score": 9.5,
+    "notes": "Official Ross Pike ESD site states it serves two counties and lists both Ross County and Pike County offices.",
+    "suggested_target_id": "oh-ed-ross-pike-esd",
+    "name": "Ross Pike ESD",
+    "phone": "(740) 289-4171",
+    "counties_served": [
+      "pike-oh",
+      "ross-oh"
+    ],
+    "physical_county": "pike-oh",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  },
+  {
+    "source_url": "https://www.wbesc.org/our-schools",
+    "confidence_score": 9.5,
+    "notes": "Official Western Buckeye ESC site states it serves Paulding and Van Wert counties and lists school systems for both counties.",
+    "suggested_target_id": "oh-ed-western-buckeye",
+    "name": "Western Buckeye ESC",
+    "phone": "(419) 399-4711",
+    "counties_served": [
+      "paulding-oh",
+      "van-wert-oh"
+    ],
+    "physical_county": "paulding-oh",
     "evidence_level": "source_listed",
     "verification_status": "pending_review",
     "data_origin": "scraped"

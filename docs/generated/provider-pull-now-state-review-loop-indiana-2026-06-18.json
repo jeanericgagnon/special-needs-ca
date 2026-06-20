@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-06-18T05:51:12.389Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "indiana",
+  "artifacts": {
+    "statePacketPath": "docs/generated/provider-pull-now-state-packets/provider-pull-now-state-packet-indiana-2026-06-18.json",
+    "decisionPacketPath": "docs/generated/provider-pull-now-state-decision-packets/provider-pull-now-state-decision-packet-indiana-2026-06-18.json",
+    "workfileStatusPath": "docs/generated/provider-pull-now-state-workfile-status-indiana-2026-06-18.json",
+    "workfileValidationPath": "docs/generated/provider-pull-now-state-workfile-validation-indiana-2026-06-18.json"
+  },
+  "summary": {
+    "statePacketUnresolvedRows": 4,
+    "workfileUnresolvedRows": 0,
+    "workfileCompletionPercent": 100,
+    "validationIssueRows": 0,
+    "mergeReady": true
+  },
+  "commands": {
+    "packet": "npm run run:next-provider-pull-now-state-packet",
+    "workfileStatus": "npm run audit:provider-pull-now-state-workfile-status -- --state=indiana",
+    "workfileSync": "npm run fix:provider-pull-now-state-workfile -- --state=indiana",
+    "workfileValidation": "npm run audit:provider-pull-now-state-workfile-validation -- --state=indiana",
+    "workfileMerge": "npm run fix:provider-pull-now-state-workfile-decisions -- --state=indiana --apply",
+    "apply": "node scripts/apply-provider-pull-now-decisions.mjs --apply"
+  }
+}

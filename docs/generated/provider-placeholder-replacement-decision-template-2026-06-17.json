@@ -1,0 +1,31 @@
+{
+  "generatedAt": "2026-06-17",
+  "sourceBriefs": "docs/generated/provider-placeholder-authoring-briefs-2026-06-17.json",
+  "instructions": {
+    "allowedMode": [
+      "replace_placeholder_with_authored_targets"
+    ],
+    "requiredTopLevelFields": [
+      "stateId",
+      "placeholderSourceUrl",
+      "decisionMode",
+      "reviewedBy",
+      "replacements"
+    ],
+    "requiredReplacementFields": [
+      "source_name",
+      "source_url",
+      "organization_type",
+      "crawl_method",
+      "notes"
+    ],
+    "rules": [
+      "Provide 2-5 named first-party provider replacements per state.",
+      "Use target_table=resource_providers for all replacements.",
+      "Do not keep generic or national placeholder domains.",
+      "Do not use aggregator or directory pages as direct replacements.",
+      "Use first-party hospital, university clinic, or specialty center pages whenever possible."
+    ]
+  },
+  "rows": []
+}

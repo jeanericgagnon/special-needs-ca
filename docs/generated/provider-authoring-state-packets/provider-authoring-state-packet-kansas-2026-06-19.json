@@ -1,0 +1,127 @@
+{
+  "generatedAt": "2026-06-19T18:22:13.894Z",
+  "generatedDate": "2026-06-19",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+  "stateId": "kansas",
+  "stateName": "Kansas",
+  "executionPriority": 14,
+  "sourceTargetsPath": "data/source_targets/kansas.json",
+  "ledgerStatus": "complete",
+  "ledgerNote": "added-one-concrete-first-party-provider-target",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 1,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 3,
+  "placeholderProviderTargetCount": 0,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 0,
+  "neededLiveProviderRows": 2,
+  "authoringGapClass": "needs_refresh_or_deeper_targets",
+  "nextAction": "Refresh Kansas provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+  "providerTargets": [
+    {
+      "sourceName": "Children's Mercy Kansas City",
+      "sourceUrl": "https://www.childrensmercy.org",
+      "domain": "childrensmercy.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Concrete first-party pediatric hospital target serving the Kansas City region and Kansas families."
+    },
+    {
+      "sourceName": "The University of Kansas Health System Pediatric Care",
+      "sourceUrl": "https://www.kansashealthsystem.com",
+      "domain": "kansashealthsystem.com",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital_system",
+      "notes": "Concrete first-party academic health system target for Kansas pediatric specialty care."
+    },
+    {
+      "sourceName": "Wesley Children's Hospital",
+      "sourceUrl": "https://www.wesleymc.com/specialties/pediatrics",
+      "domain": "wesleymc.com",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Wesley pediatric care page describing Wesley Children's Hospital in Wichita, pediatric specialties, and on-page contact/location details."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Kansas County Metadata",
+      "sourceUrl": "https://www.kansas.gov",
+      "domain": "kansas.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Kansas Medicaid Portal",
+      "sourceUrl": "https://dhhs.kansas.gov",
+      "domain": "dhhs.kansas.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Kansas Department for Aging and Disability Services",
+      "sourceUrl": "https://www.kdads.ks.gov/developmental-disabilities",
+      "domain": "kdads.ks.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Kansas HCBS Waivers",
+      "sourceUrl": "https://www.kdads.ks.gov/hcbs",
+      "domain": "kdads.ks.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Kansas Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.kansas.gov/earlyintervention",
+      "domain": "dhhs.kansas.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Kansas Department of Education Special Ed",
+      "sourceUrl": "https://education.kansas.gov",
+      "domain": "education.kansas.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Kansas Regional Special Education Support",
+      "sourceUrl": "https://education.kansas.gov/regional",
+      "domain": "education.kansas.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Kansas Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Kansas",
+      "sourceUrl": "https://www.thearckansas.org",
+      "domain": "thearckansas.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Kansas Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.kansas.gov/forms",
+      "domain": "dhhs.kansas.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Kansas Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.kansas.gov/rehab",
+      "domain": "dhhs.kansas.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Kansas Secretary of State Business Registry",
+      "sourceUrl": "https://www.kansas.gov/business",
+      "domain": "kansas.gov"
+    }
+  ]
+}

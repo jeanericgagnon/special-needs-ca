@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "source_url": "https://www.education.ne.gov/",
+    "confidence_score": 9.5,
+    "notes": "Official statewide Nebraska special education support entrypoint covering all counties.",
+    "suggested_target_id": "ne-ed-nde-special-education",
+    "name": "Nebraska Department of Education Special Education",
+    "phone": "(402) 471-2471",
+    "agency_type": "state-special-education-support",
+    "counties_served": [
+      "adams-ne","antelope-ne","arthur-ne","banner-ne","blaine-ne","boone-ne","box-butte-ne","boyd-ne","brown-ne","buffalo-ne","burt-ne","butler-ne","cass-ne","cedar-ne","chase-ne","cherry-ne","cheyenne-ne","clay-ne","colfax-ne","cuming-ne","custer-ne","dakota-ne","dawes-ne","dawson-ne","deuel-ne","dixon-ne","dodge-ne","douglas-ne","dundy-ne","fillmore-ne","franklin-ne","frontier-ne","furnas-ne","gage-ne","garden-ne","garfield-ne","gosper-ne","grant-ne","greeley-ne","hall-ne","hamilton-ne","harlan-ne","hayes-ne","hitchcock-ne","holt-ne","hooker-ne","howard-ne","jefferson-ne","johnson-ne","kearney-ne","keith-ne","keya-paha-ne","kimball-ne","knox-ne","lancaster-ne","lincoln-ne","logan-ne","loup-ne","madison-ne","mcpherson-ne","merrick-ne","morrill-ne","nance-ne","nemaha-ne","nuckolls-ne","otoe-ne","pawnee-ne","perkins-ne","phelps-ne","pierce-ne","platte-ne","polk-ne","red-willow-ne","richardson-ne","rock-ne","saline-ne","sarpy-ne","saunders-ne","scotts-bluff-ne","seward-ne","sheridan-ne","sherman-ne","sioux-ne","stanton-ne","thayer-ne","thomas-ne","thurston-ne","valley-ne","washington-ne","wayne-ne","webster-ne","wheeler-ne","york-ne"
+    ],
+    "website": "https://www.education.ne.gov/sped/",
+    "evidence_level": "source_listed",
+    "verification_status": "verified",
+    "data_origin": "scraped"
+  }
+]

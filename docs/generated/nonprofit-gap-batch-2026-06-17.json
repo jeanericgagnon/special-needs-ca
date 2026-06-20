@@ -1,0 +1,78 @@
+{
+  "generatedAt": "2026-06-17",
+  "goal": "nonprofit_local_in_person",
+  "mode": "dry-run",
+  "filters": {
+    "domain": "thearc.org",
+    "limitTargets": 5,
+    "maxPagesPerTarget": 8,
+    "allowHighRisk": false
+  },
+  "targetTypes": [
+    "affiliate_chapter",
+    "affiliate_site",
+    "site_path"
+  ],
+  "projectedPages": 40,
+  "blockedForRisk": 0,
+  "candidateCount": 5,
+  "candidates": [
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-dallas-fort-worth",
+      "targetType": "affiliate_chapter",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-dallas-fort-worth",
+      "host": "thearc.org",
+      "familyKey": "thearc.org",
+      "trustedMissingRows": 254,
+      "rowCount": 254,
+      "riskLevel": "unknown",
+      "scrapeStrategy": "site_path"
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-greater-beaumont",
+      "targetType": "affiliate_chapter",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-greater-beaumont",
+      "host": "thearc.org",
+      "familyKey": "thearc.org",
+      "trustedMissingRows": 254,
+      "rowCount": 254,
+      "riskLevel": "unknown",
+      "scrapeStrategy": "site_path"
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-katy",
+      "targetType": "affiliate_chapter",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-katy",
+      "host": "thearc.org",
+      "familyKey": "thearc.org",
+      "trustedMissingRows": 254,
+      "rowCount": 254,
+      "riskLevel": "unknown",
+      "scrapeStrategy": "site_path"
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-the-gulf-coast",
+      "targetType": "affiliate_chapter",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-the-gulf-coast",
+      "host": "thearc.org",
+      "familyKey": "thearc.org",
+      "trustedMissingRows": 254,
+      "rowCount": 254,
+      "riskLevel": "unknown",
+      "scrapeStrategy": "site_path"
+    },
+    {
+      "id": "registry-thearc-org-chapter-the-arc-of-bryan-college-station",
+      "targetType": "affiliate_chapter",
+      "seedUrl": "https://thearc.org/chapter/the-arc-of-bryan-college-station",
+      "host": "thearc.org",
+      "familyKey": "thearc.org",
+      "trustedMissingRows": 248,
+      "rowCount": 248,
+      "riskLevel": "unknown",
+      "scrapeStrategy": "site_path"
+    }
+  ],
+  "expansion": null,
+  "highSignal": null
+}

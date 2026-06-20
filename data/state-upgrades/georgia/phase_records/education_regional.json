@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "source_url": "https://www.gadoe.org/Curriculum-Instruction-and-Assessment/Special-Education-Services/Pages/default.aspx",
+    "confidence_score": 9.5,
+    "notes": "Official Georgia Department of Education Special Education Services page used as the truthful statewide education support layer while non-local district placeholders are removed.",
+    "suggested_target_id": "ga-ed-gadoe-special-education",
+    "name": "Georgia Department of Education Special Education Services",
+    "phone": "",
+    "counties_served": [
+      "ALL_GEORGIA_COUNTIES"
+    ],
+    "physical_county": "fulton-ga",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  }
+]

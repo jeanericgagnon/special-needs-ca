@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-06-17T23:12:18.621Z",
+  "mode": "apply",
+  "stateFilter": "west-virginia",
+  "inputPath": "data/forms-fallback-manual-review-decisions.json",
+  "summary": {
+    "inputRows": 3,
+    "resolvedRows": 3,
+    "deferredRows": 0,
+    "filesChanged": 2,
+    "skippedByReason": {},
+    "byDecisionMode": {
+      "validate_existing_candidate": 2,
+      "replace_with_reviewed_candidate": 1
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "west-virginia",
+      "rowKey": "west-virginia|general_form_related_page|https://dhhr.wv.gov/",
+      "status": "applied",
+      "resolvedSourceUrl": "https://dhhr.wv.gov/"
+    },
+    {
+      "stateId": "west-virginia",
+      "rowKey": "west-virginia|application_or_eligibility_guide|https://dhhr.wv.gov/bms",
+      "status": "applied",
+      "resolvedSourceUrl": "https://dhhr.wv.gov/bms"
+    },
+    {
+      "stateId": "west-virginia",
+      "rowKey": "west-virginia|application_or_eligibility_guide|https://dhhr.wv.gov/bms/hcbs/eligibility",
+      "status": "applied",
+      "resolvedSourceUrl": "https://dhhr.wv.gov/bms"
+    }
+  ],
+  "resolutionArtifacts": {
+    "queuePath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/forms-fallback-manual-review-queue-2026-06-17.json",
+    "resolutionLedgerPath": "data/source-acquisition-state/forms-fallback-manual-review-ledger.json",
+    "resolutionPackPath": "data/source_packs/forms_fallback_manual_resolutions.json"
+  }
+}

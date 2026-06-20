@@ -1,0 +1,88 @@
+{
+  "generatedAt": "2026-06-19T23:21:11.854Z",
+  "generatedDate": "2026-06-19",
+  "purpose": "Coverage audit for launch scraper real-fixture replay so weak family verification depth is explicit.",
+  "familyCount": 9,
+  "summary": {
+    "acceptedAndRejectedFamilies": 9,
+    "acceptedOnlyFamilies": 0,
+    "rejectedOnlyFamilies": 0,
+    "noRealCaseFamilies": 0,
+    "missingRejectedFamilies": [],
+    "missingAcceptedFamilies": []
+  },
+  "rows": [
+    {
+      "family": "dd_routing",
+      "hasRealAcceptedCase": true,
+      "hasRealRejectedCase": true,
+      "coverageClass": "accepted_and_rejected",
+      "replayReady": true,
+      "gap": ""
+    },
+    {
+      "family": "programs_benefits",
+      "hasRealAcceptedCase": true,
+      "hasRealRejectedCase": true,
+      "coverageClass": "accepted_and_rejected",
+      "replayReady": true,
+      "gap": ""
+    },
+    {
+      "family": "waivers",
+      "hasRealAcceptedCase": true,
+      "hasRealRejectedCase": true,
+      "coverageClass": "accepted_and_rejected",
+      "replayReady": true,
+      "gap": ""
+    },
+    {
+      "family": "forms_guides",
+      "hasRealAcceptedCase": true,
+      "hasRealRejectedCase": true,
+      "coverageClass": "accepted_and_rejected",
+      "replayReady": true,
+      "gap": ""
+    },
+    {
+      "family": "program_waitlists",
+      "hasRealAcceptedCase": true,
+      "hasRealRejectedCase": true,
+      "coverageClass": "accepted_and_rejected",
+      "replayReady": true,
+      "gap": ""
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "hasRealAcceptedCase": true,
+      "hasRealRejectedCase": true,
+      "coverageClass": "accepted_and_rejected",
+      "replayReady": true,
+      "gap": ""
+    },
+    {
+      "family": "education_routing",
+      "hasRealAcceptedCase": true,
+      "hasRealRejectedCase": true,
+      "coverageClass": "accepted_and_rejected",
+      "replayReady": true,
+      "gap": ""
+    },
+    {
+      "family": "providers_care",
+      "hasRealAcceptedCase": true,
+      "hasRealRejectedCase": true,
+      "coverageClass": "accepted_and_rejected",
+      "replayReady": true,
+      "gap": ""
+    },
+    {
+      "family": "knowledge_content",
+      "hasRealAcceptedCase": true,
+      "hasRealRejectedCase": true,
+      "coverageClass": "accepted_and_rejected",
+      "replayReady": true,
+      "gap": ""
+    }
+  ]
+}

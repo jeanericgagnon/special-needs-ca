@@ -1,0 +1,232 @@
+{
+  "generatedAt": "2026-06-18T22:01:29.269Z",
+  "generatedDate": "2026-06-18",
+  "scopeMode": "data_only",
+  "summary": {
+    "blockerCount": 5,
+    "criticalCount": 2,
+    "actionableCount": 0,
+    "explicitOnly": true
+  },
+  "inputs": {
+    "exhaustiveGapPath": "docs/generated/exhaustive-gap-master-2026-06-18.json",
+    "informationInventoryPath": "docs/generated/information-inventory-2026-06-18.json",
+    "providerRegistryPath": "docs/generated/provider-followup-blocker-registry-2026-06-18.json",
+    "advocateRegistryPath": "docs/generated/advocate-followup-blocker-registry-2026-06-18.json",
+    "competitiveRegistryPath": "docs/generated/competitive-help-followup-blocker-registry-2026-06-18.json"
+  },
+  "blockers": [
+    {
+      "id": "provider_directory",
+      "label": "Local providers, clinics, therapists, and care",
+      "status": "critical_gap",
+      "currentState": "thin",
+      "summary": "This is the biggest information hole if the goal is all local help, especially to compete on care and treatment discovery.",
+      "evidence": "94 public provider rows and 23 staged provider rows across all 50 states.",
+      "metrics": {
+        "liveProviders": 94,
+        "stagedProviders": 112,
+        "repeatedFollowupRows": 47,
+        "repeatedFollowupDomains": 41,
+        "repairQueueRows": 0,
+        "repairQueueDistinctUrls": 0,
+        "authoringBacklogRows": 0,
+        "authoringFirstState": "",
+        "topRepeatedReasons": [
+          {
+            "label": "access_blocked_403",
+            "count": 17
+          },
+          {
+            "label": "stale_or_invalid_404",
+            "count": 14
+          },
+          {
+            "label": "dns_lookup_failed",
+            "count": 6
+          },
+          {
+            "label": "needs_review_unknown",
+            "count": 4
+          },
+          {
+            "label": "network_fetch_failed",
+            "count": 3
+          }
+        ]
+      },
+      "actionableFromDisk": false,
+      "sourceArtifacts": [
+        "docs/generated/exhaustive-gap-master-2026-06-18.json",
+        "docs/generated/provider-followup-blocker-registry-2026-06-18.json",
+        "docs/generated/provider-followup-repair-queue-2026-06-18.json",
+        "docs/generated/provider-authoring-backlog-2026-06-18.json",
+        "docs/generated/information-inventory-2026-06-18.json"
+      ],
+      "nextOperatorAction": "No live provider repair or authoring queue remains; keep this blocker class explicitly blocked by saved coverage evidence until a future audit yields new exact targets.",
+      "successCondition": "Provider depth is no longer the thinnest major national information layer and every remaining provider gap is explicitly queued, staged, rejected, blocked, or deferred.",
+      "entryCommand": "npm run run:next-provider-depth-step",
+      "auditCommand": "npm run audit:source-acquisition-completion-plan",
+      "commands": [
+        "npm run run:next-provider-depth-step",
+        "npm run audit:source-acquisition-completion-plan"
+      ]
+    },
+    {
+      "id": "advocate_directory_depth",
+      "label": "Advocates and legal/IEP support",
+      "status": "meaningful_but_not_exhaustive",
+      "currentState": "moderate",
+      "summary": "Advocate count is decent, but truth-safe local coverage is not yet strong enough to call exhaustive.",
+      "evidence": "2995 advocate rows, with California still blocked in strict gold because 58 counties lose advocate coverage after truth gating.",
+      "metrics": {
+        "liveAdvocates": 2995,
+        "stagedAdvocates": 4452,
+        "actionableFollowupRows": 832,
+        "distinctBlockedDomains": 1319,
+        "advocateDepthQueueRows": 0,
+        "californiaTruthRecoveryCounties": 0,
+        "topActionableReasons": [
+          {
+            "label": "dns_lookup_failed",
+            "count": 826
+          },
+          {
+            "label": "needs_review_unknown",
+            "count": 3
+          },
+          {
+            "label": "network_timeout",
+            "count": 1
+          },
+          {
+            "label": "server_500",
+            "count": 1
+          },
+          {
+            "label": "stale_or_invalid_404",
+            "count": 1
+          }
+        ]
+      },
+      "actionableFromDisk": false,
+      "sourceArtifacts": [
+        "docs/generated/exhaustive-gap-master-2026-06-18.json",
+        "docs/generated/advocate-followup-blocker-registry-2026-06-18.json",
+        "docs/generated/advocate-depth-queue-2026-06-18.json",
+        "docs/generated/information-inventory-2026-06-18.json"
+      ],
+      "nextOperatorAction": "No live advocate depth queue remains; keep this blocker class explicitly blocked by saved coverage evidence until a future audit yields new exact targets.",
+      "successCondition": "Truth-safe advocate and legal-support depth is no longer a top blocker and every remaining advocate gap is explicitly queued, staged, rejected, blocked, or deferred.",
+      "entryCommand": "npm run run:next-advocate-depth-step",
+      "auditCommand": "npm run audit:advocate-depth-queue",
+      "commands": [
+        "npm run run:next-advocate-depth-step",
+        "npm run audit:advocate-depth-queue"
+      ]
+    },
+    {
+      "id": "directory_foundation_signals",
+      "label": "Findhelp-like metadata: availability, accessibility, intake, capacity",
+      "status": "partial",
+      "currentState": "modeled",
+      "summary": "The schema exists, but live high-signal metadata is sparse, especially on nonprofits and advocates.",
+      "evidence": "Provider accessibility booleans with true signal: accepts_medi_cal 27/94; interpreter_available 22/94; asl_available 12/94; wheelchair_accessible 5/94; virtual_services 18/94; in_person_services 60/94; home_visits 3/94; transportation_help 8/94 Nonprofit accessibility booleans with true signal: interpreter_available 0/29501; asl_available 0/29501; wheelchair_accessible 0/29501; virtual_services 1/29501; in_person_services 22/29501; home_visits 0/29501; transportation_help 0/29501 Advocate accessibility booleans with true signal: interpreter_available 0/2995; asl_available 0/2995; wheelchair_accessible 0/2995; virtual_services 2/2995; in_person_services 0/2995; home_visits 0/2995; transportation_help 0/2995",
+      "metrics": {
+        "liveProviders": 94,
+        "liveNonprofits": 29501,
+        "liveAdvocates": 2995,
+        "enrichmentQueueRows": 0,
+        "providerSourcePullStates": 0,
+        "nonprofitCandidateRows": 0,
+        "providerCandidateRows": 0
+      },
+      "actionableFromDisk": false,
+      "sourceArtifacts": [
+        "docs/generated/exhaustive-gap-master-2026-06-18.json",
+        "docs/generated/information-inventory-2026-06-18.json",
+        "docs/generated/directory-foundation-enrichment-queue-2026-06-18.json",
+        "docs/generated/competitive-help-followup-blocker-registry-2026-06-18.json"
+      ],
+      "nextOperatorAction": "No live directory-foundation enrichment queue remains; keep this blocker class explicitly blocked by saved low-signal coverage evidence.",
+      "successCondition": "Meaningful live accessibility, intake, modality, and availability signals exist where explicitly source-backed across providers, nonprofits, and advocates.",
+      "entryCommand": "npm run run:next-directory-foundation-step",
+      "auditCommand": "npm run audit:directory-foundation-enrichment-queue",
+      "commands": [
+        "npm run run:next-directory-foundation-step",
+        "npm run audit:directory-foundation-enrichment-queue"
+      ]
+    },
+    {
+      "id": "normalization_depth",
+      "label": "Canonical org -> program -> location normalization",
+      "status": "partial",
+      "currentState": "present",
+      "summary": "Normalization exists, but service-location depth is still too thin to support a fully location-rich help product.",
+      "evidence": "36891 organizations, 36891 org-program links, 83 service locations, 4314 office locations, 33130 virtual service areas.",
+      "metrics": {
+        "organizations": 36891,
+        "orgProgramLinks": 36891,
+        "serviceLocations": 83,
+        "officeLocations": 4314,
+        "virtualServiceAreas": 33130,
+        "normalizationQueueRows": 0,
+        "providerServiceLocationGapRows": 0
+      },
+      "actionableFromDisk": false,
+      "sourceArtifacts": [
+        "docs/generated/exhaustive-gap-master-2026-06-18.json",
+        "docs/generated/information-inventory-2026-06-18.json",
+        "docs/generated/normalization-gap-queue-2026-06-18.json"
+      ],
+      "nextOperatorAction": "No live normalization gap queue remains; keep this blocker class explicitly blocked by saved thin-location evidence until a future audit yields exact rows.",
+      "successCondition": "Location-rich discovery no longer depends on weak org-level assumptions and all remaining normalization gaps are explicit and evidence-bound.",
+      "entryCommand": "npm run run:next-normalization-step",
+      "auditCommand": "npm run audit:normalization-gap-queue",
+      "commands": [
+        "npm run run:next-normalization-step",
+        "npm run audit:normalization-gap-queue"
+      ]
+    },
+    {
+      "id": "knowledge_content_depth",
+      "label": "Help content and explanatory knowledge",
+      "status": "critical_gap",
+      "currentState": "thin",
+      "summary": "The content layer is still far too small for the full family journey nationally, but staged knowledge growth is now present and measured.",
+      "evidence": "15 knowledge articles, 8 staged knowledge articles.",
+      "metrics": {
+        "liveKnowledgeArticles": 15,
+        "stagedKnowledgeArticles": 8,
+        "acceptedKnowledgeRows": 33,
+        "acceptedKnowledgeUrls": 8,
+        "repeatedFollowupRows": 18,
+        "repeatedFollowupUrls": 18,
+        "promotionInspected": 16,
+        "promotionDuplicates": 14,
+        "promotionPromoted": 2,
+        "promotionManualReview": 0,
+        "exactTargetQueueRows": 0,
+        "exactTargetDuplicateRows": 6,
+        "exactTargetPendingRows": 0,
+        "authoredKnowledgeTargets": 68,
+        "knowledgeMissingFamilyOpen": 0
+      },
+      "actionableFromDisk": false,
+      "sourceArtifacts": [
+        "docs/generated/exhaustive-gap-master-2026-06-18.json",
+        "docs/generated/information-inventory-2026-06-18.json",
+        "docs/generated/authored-missing-source-targets-2026-06-18.json",
+        "docs/generated/knowledge-content-status-queue-2026-06-18.json"
+      ],
+      "nextOperatorAction": "No live knowledge queue or missing knowledge source family remains; keep this blocker class explicitly blocked by saved thin-coverage evidence until a future audit yields new exact topics.",
+      "successCondition": "No unknown journey-content gaps remain; every exact knowledge target is promoted, duplicate, deferred, blocked, staged, or rejected with saved evidence.",
+      "entryCommand": "npm run run:next-knowledge-content-step",
+      "auditCommand": "npm run audit:knowledge-content-status-queue",
+      "commands": [
+        "npm run run:next-knowledge-content-step",
+        "npm run audit:knowledge-content-status-queue"
+      ]
+    }
+  ]
+}

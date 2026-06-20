@@ -1,0 +1,471 @@
+{
+  "generatedAt": "2026-06-19T18:22:13.902Z",
+  "generatedDate": "2026-06-19",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+  "summary": {
+    "statePacketCount": 46,
+    "firstState": "alabama"
+  },
+  "packets": [
+    {
+      "stateId": "alabama",
+      "stateName": "Alabama",
+      "executionPriority": 1,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-alabama-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-alabama-2026-06-19.md"
+    },
+    {
+      "stateId": "alaska",
+      "stateName": "Alaska",
+      "executionPriority": 2,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-alaska-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-alaska-2026-06-19.md"
+    },
+    {
+      "stateId": "arizona",
+      "stateName": "Arizona",
+      "executionPriority": 3,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-arizona-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-arizona-2026-06-19.md"
+    },
+    {
+      "stateId": "arkansas",
+      "stateName": "Arkansas",
+      "executionPriority": 4,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-arkansas-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-arkansas-2026-06-19.md"
+    },
+    {
+      "stateId": "california",
+      "stateName": "California",
+      "executionPriority": 5,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 1,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-california-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-california-2026-06-19.md"
+    },
+    {
+      "stateId": "colorado",
+      "stateName": "Colorado",
+      "executionPriority": 6,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 1,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-colorado-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-colorado-2026-06-19.md"
+    },
+    {
+      "stateId": "connecticut",
+      "stateName": "Connecticut",
+      "executionPriority": 7,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-connecticut-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-connecticut-2026-06-19.md"
+    },
+    {
+      "stateId": "delaware",
+      "stateName": "Delaware",
+      "executionPriority": 8,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-delaware-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-delaware-2026-06-19.md"
+    },
+    {
+      "stateId": "georgia",
+      "stateName": "Georgia",
+      "executionPriority": 9,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-georgia-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-georgia-2026-06-19.md"
+    },
+    {
+      "stateId": "hawaii",
+      "stateName": "Hawaii",
+      "executionPriority": 10,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-hawaii-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-hawaii-2026-06-19.md"
+    },
+    {
+      "stateId": "idaho",
+      "stateName": "Idaho",
+      "executionPriority": 11,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-idaho-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-idaho-2026-06-19.md"
+    },
+    {
+      "stateId": "indiana",
+      "stateName": "Indiana",
+      "executionPriority": 12,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-indiana-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-indiana-2026-06-19.md"
+    },
+    {
+      "stateId": "iowa",
+      "stateName": "Iowa",
+      "executionPriority": 13,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-iowa-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-iowa-2026-06-19.md"
+    },
+    {
+      "stateId": "kansas",
+      "stateName": "Kansas",
+      "executionPriority": 14,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-kansas-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-kansas-2026-06-19.md"
+    },
+    {
+      "stateId": "kentucky",
+      "stateName": "Kentucky",
+      "executionPriority": 15,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-kentucky-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-kentucky-2026-06-19.md"
+    },
+    {
+      "stateId": "louisiana",
+      "stateName": "Louisiana",
+      "executionPriority": 16,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 1,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-louisiana-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-louisiana-2026-06-19.md"
+    },
+    {
+      "stateId": "maine",
+      "stateName": "Maine",
+      "executionPriority": 17,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-maine-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-maine-2026-06-19.md"
+    },
+    {
+      "stateId": "maryland",
+      "stateName": "Maryland",
+      "executionPriority": 18,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-maryland-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-maryland-2026-06-19.md"
+    },
+    {
+      "stateId": "massachusetts",
+      "stateName": "Massachusetts",
+      "executionPriority": 19,
+      "neededConcreteTargets": 1,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "missing_concrete_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-massachusetts-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-massachusetts-2026-06-19.md"
+    },
+    {
+      "stateId": "michigan",
+      "stateName": "Michigan",
+      "executionPriority": 20,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-michigan-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-michigan-2026-06-19.md"
+    },
+    {
+      "stateId": "minnesota",
+      "stateName": "Minnesota",
+      "executionPriority": 21,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-minnesota-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-minnesota-2026-06-19.md"
+    },
+    {
+      "stateId": "mississippi",
+      "stateName": "Mississippi",
+      "executionPriority": 22,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-mississippi-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-mississippi-2026-06-19.md"
+    },
+    {
+      "stateId": "missouri",
+      "stateName": "Missouri",
+      "executionPriority": 23,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-missouri-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-missouri-2026-06-19.md"
+    },
+    {
+      "stateId": "montana",
+      "stateName": "Montana",
+      "executionPriority": 24,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-montana-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-montana-2026-06-19.md"
+    },
+    {
+      "stateId": "nebraska",
+      "stateName": "Nebraska",
+      "executionPriority": 25,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-nebraska-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-nebraska-2026-06-19.md"
+    },
+    {
+      "stateId": "nevada",
+      "stateName": "Nevada",
+      "executionPriority": 26,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-nevada-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-nevada-2026-06-19.md"
+    },
+    {
+      "stateId": "new-hampshire",
+      "stateName": "New Hampshire",
+      "executionPriority": 27,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-new-hampshire-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-new-hampshire-2026-06-19.md"
+    },
+    {
+      "stateId": "new-jersey",
+      "stateName": "New Jersey",
+      "executionPriority": 28,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-new-jersey-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-new-jersey-2026-06-19.md"
+    },
+    {
+      "stateId": "new-mexico",
+      "stateName": "New Mexico",
+      "executionPriority": 29,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-new-mexico-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-new-mexico-2026-06-19.md"
+    },
+    {
+      "stateId": "new-york",
+      "stateName": "New York",
+      "executionPriority": 30,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-new-york-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-new-york-2026-06-19.md"
+    },
+    {
+      "stateId": "north-carolina",
+      "stateName": "North Carolina",
+      "executionPriority": 31,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-north-carolina-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-north-carolina-2026-06-19.md"
+    },
+    {
+      "stateId": "north-dakota",
+      "stateName": "North Dakota",
+      "executionPriority": 32,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-north-dakota-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-north-dakota-2026-06-19.md"
+    },
+    {
+      "stateId": "ohio",
+      "stateName": "Ohio",
+      "executionPriority": 33,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-ohio-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-ohio-2026-06-19.md"
+    },
+    {
+      "stateId": "oklahoma",
+      "stateName": "Oklahoma",
+      "executionPriority": 34,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-oklahoma-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-oklahoma-2026-06-19.md"
+    },
+    {
+      "stateId": "oregon",
+      "stateName": "Oregon",
+      "executionPriority": 35,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-oregon-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-oregon-2026-06-19.md"
+    },
+    {
+      "stateId": "rhode-island",
+      "stateName": "Rhode Island",
+      "executionPriority": 36,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 1,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-rhode-island-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-rhode-island-2026-06-19.md"
+    },
+    {
+      "stateId": "south-carolina",
+      "stateName": "South Carolina",
+      "executionPriority": 37,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-south-carolina-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-south-carolina-2026-06-19.md"
+    },
+    {
+      "stateId": "south-dakota",
+      "stateName": "South Dakota",
+      "executionPriority": 38,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-south-dakota-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-south-dakota-2026-06-19.md"
+    },
+    {
+      "stateId": "tennessee",
+      "stateName": "Tennessee",
+      "executionPriority": 39,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-tennessee-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-tennessee-2026-06-19.md"
+    },
+    {
+      "stateId": "utah",
+      "stateName": "Utah",
+      "executionPriority": 40,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-utah-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-utah-2026-06-19.md"
+    },
+    {
+      "stateId": "vermont",
+      "stateName": "Vermont",
+      "executionPriority": 41,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-vermont-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-vermont-2026-06-19.md"
+    },
+    {
+      "stateId": "virginia",
+      "stateName": "Virginia",
+      "executionPriority": 42,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-virginia-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-virginia-2026-06-19.md"
+    },
+    {
+      "stateId": "washington",
+      "stateName": "Washington",
+      "executionPriority": 43,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 1,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-washington-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-washington-2026-06-19.md"
+    },
+    {
+      "stateId": "west-virginia",
+      "stateName": "West Virginia",
+      "executionPriority": 44,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-west-virginia-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-west-virginia-2026-06-19.md"
+    },
+    {
+      "stateId": "wisconsin",
+      "stateName": "Wisconsin",
+      "executionPriority": 45,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-wisconsin-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-wisconsin-2026-06-19.md"
+    },
+    {
+      "stateId": "wyoming",
+      "stateName": "Wyoming",
+      "executionPriority": 46,
+      "neededConcreteTargets": 0,
+      "neededLiveProviderRows": 2,
+      "authoringGapClass": "needs_refresh_or_deeper_targets",
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-wyoming-2026-06-19.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-wyoming-2026-06-19.md"
+    }
+  ]
+}

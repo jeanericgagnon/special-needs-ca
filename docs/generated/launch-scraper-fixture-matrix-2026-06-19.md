@@ -1,0 +1,199 @@
+# Launch Scraper Fixture Matrix
+
+Generated: 2026-06-19
+
+This artifact defines the minimum passing page shape and the expected failing page shapes for each launch-critical scraper family.
+
+## dd_routing
+
+- recordType: dd_routing_page
+- parserFunction: extractDdRouting
+- currentReadyTargetScrape: 12
+- currentReadyByLane: {"ready_js_heavy":6,"ready_lightweight":6}
+- positiveFixture:
+  - description: Official state DD intake page with agency name, intake phone, and services or eligibility link.
+  - minimumPageSignals: agency heading, phone or intake contact, services or eligibility link
+  - expectedAcceptedFields: officeName, contactPhone, publicContactSignalCount, services_page
+  - stagingExpectation: staging_scraped_state_resource_agencies candidate written with extracted_name and routing links
+- negativeFixtures:
+  - description: Agency page shell without agency name extraction.
+    - expectedRejectionReasons: missing_office_name
+  - description: Agency overview with no phone, email, or intake contact signal.
+    - expectedRejectionReasons: missing_dd_contact_signal
+- acceptanceRules: officeName required, publicContactSignalCount > 0 required
+- rejectionReasons: missing_office_name, missing_dd_contact_signal
+- stagingTable: staging_scraped_state_resource_agencies
+- stagedFields: extracted_name, agency_type, counties_served, catchment_boundaries, extracted_website, extracted_phone, early_intervention_contact, agency_intake_contact, eligibility_info_page, services_page, appeals_info
+
+## programs_benefits
+
+- recordType: program_information_page
+- parserFunction: extractPrograms
+- currentReadyTargetScrape: 30
+- currentReadyByLane: {"ready_lightweight":30}
+- positiveFixture:
+  - description: Official program page with program name plus apply/contact action path.
+  - minimumPageSignals: program heading, apply or learn-more action link or phone, official source page
+  - expectedAcceptedFields: programName, callToActionLinks or contactPhone, outboundLinkCount
+  - stagingExpectation: staging_scraped_programs candidate written with extracted_name, description, and action_url
+- negativeFixtures:
+  - description: Generic agency page that never names a distinct program.
+    - expectedRejectionReasons: missing_program_name
+  - description: Program explainer without apply link, outbound action path, or phone.
+    - expectedRejectionReasons: missing_action_signal
+- acceptanceRules: programName required, links or phones required as action signal
+- rejectionReasons: missing_program_name, missing_action_signal
+- stagingTable: staging_scraped_programs
+- stagedFields: extracted_name, description, who_it_is_for, who_might_qualify, official_source_url, category, program_type, extracted_phone, extracted_email, action_url
+
+## waivers
+
+- recordType: program_information_page
+- parserFunction: extractPrograms
+- currentReadyTargetScrape: 13
+- currentReadyByLane: {"ready_lightweight":13}
+- positiveFixture:
+  - description: Official HCBS or DD waiver page with explicit waiver identity and action path.
+  - minimumPageSignals: waiver name, application or eligibility step link, official source page
+  - expectedAcceptedFields: programName, callToActionLinks or contactPhone, outboundLinkCount
+  - stagingExpectation: staging_scraped_programs candidate written with waiver-linked extracted_name and action_url
+- negativeFixtures:
+  - description: Generic Medicaid page with no distinct waiver identity.
+    - expectedRejectionReasons: missing_program_name
+  - description: Waiver summary page with no application/contact step.
+    - expectedRejectionReasons: missing_action_signal
+- acceptanceRules: programName required, links or phones required as action signal
+- rejectionReasons: missing_program_name, missing_action_signal
+- stagingTable: staging_scraped_programs
+- stagedFields: extracted_name, description, who_it_is_for, who_might_qualify, official_source_url, category, program_type, extracted_phone, extracted_email, action_url
+
+## program_waitlists
+
+- recordType: program_information_page
+- parserFunction: extractPrograms
+- currentReadyTargetScrape: 0
+- currentReadyByLane: {}
+- positiveFixture:
+  - description: Official waitlist or interest-list page tied to a named program and explicit next-step contact or link.
+  - minimumPageSignals: program or waiver name, waitlist or interest-list language, official next-step link or phone
+  - expectedAcceptedFields: programName, callToActionLinks or contactPhone
+  - stagingExpectation: staging_scraped_waitlists candidate written with inferred program_id plus waitlist provenance fields
+- negativeFixtures:
+  - description: Program page with no named program or waiver identity.
+    - expectedRejectionReasons: missing_program_name
+  - description: Waitlist mention inferred from generic program copy without explicit action signal.
+    - expectedRejectionReasons: missing_action_signal
+- acceptanceRules: programName required, links or phones required as action signal, waitlist identity still requires downstream family-specific interpretation
+- rejectionReasons: missing_program_name, missing_action_signal
+- stagingTable: staging_scraped_waitlists
+- stagedFields: program_id, name, duration_label, duration_months, status, description, estimate_source_url, estimate_source_type, last_checked_at
+
+## medicaid_hhs_offices
+
+- recordType: county_office_page
+- parserFunction: extractCountyOffice
+- currentReadyTargetScrape: 131
+- currentReadyByLane: {"ready_js_heavy":9,"ready_lightweight":121,"ready_pdf":1}
+- positiveFixture:
+  - description: Official county office page with office name, phone, and postal address.
+  - minimumPageSignals: office name, office phone, street address
+  - expectedAcceptedFields: officeName, contactPhone, contactAddress, publicContactSignalCount
+  - stagingExpectation: staging_scraped_county_offices candidate written with extracted_name, phone, and address
+- negativeFixtures:
+  - description: County office page that fails to expose an office name.
+    - expectedRejectionReasons: missing_office_name
+  - description: Office page with no phone.
+    - expectedRejectionReasons: missing_office_phone
+  - description: Office page with no physical address.
+    - expectedRejectionReasons: missing_office_address
+- acceptanceRules: officeName required, contactPhone required, contactAddress required
+- rejectionReasons: missing_office_name, missing_office_phone, missing_office_address
+- stagingTable: staging_scraped_county_offices
+- stagedFields: extracted_name, extracted_phone, extracted_email, extracted_address, extracted_website, program_id, evidence_level
+
+## education_routing
+
+- recordType: generic_page_with_education_staging_mapping
+- parserFunction: parseCommonExtraction + targetTable-aware staging
+- currentReadyTargetScrape: 15
+- currentReadyByLane: {"ready_js_heavy":10,"ready_lightweight":5}
+- positiveFixture:
+  - description: Official regional or district education routing page with credible site and phone or explicit routing path.
+  - minimumPageSignals: district or agency identity, credible official site, phone, email, or routing page link
+  - expectedAcceptedFields: pageTitle, phones or emails or links
+  - stagingExpectation: target-table-aware staging to regional or district staging table based on queue target
+- negativeFixtures:
+  - description: Thin education page with no phone, no email, and no usable routing link.
+    - expectedRejectionReasons: missing_basic_signal
+- acceptanceRules: credible website or phone path required, regional agencies stage to regional table, school districts stage to district table
+- rejectionReasons: missing_basic_signal
+- stagingTable: staging_scraped_regional_education_agencies or staging_scraped_school_districts
+- stagedFields: extracted_name, agency_type, counties_served, extracted_website, evidence_level, extracted_phone, spec_ed_contact_phone, spec_ed_contact_email
+
+## providers_care
+
+- recordType: provider_page
+- parserFunction: extractProviders
+- currentReadyTargetScrape: 65
+- currentReadyByLane: {"ready_js_heavy":1,"ready_lightweight":64}
+- positiveFixture:
+  - description: First-party clinic or program page with named provider service, contact signal, and location evidence.
+  - minimumPageSignals: provider or clinic name, phone or email, address or explicit location signal
+  - expectedAcceptedFields: organizationName, contactPhone or contactEmail, contactAddress or location signal, publicContactSignalCount
+  - stagingExpectation: staging_scraped_resource_providers candidate written with extracted_name, categories, and contact fields
+- negativeFixtures:
+  - description: Provider shell page that never names the clinic or program.
+    - expectedRejectionReasons: missing_provider_name
+  - description: Named provider page with no phone, email, address, or other public contact signal.
+    - expectedRejectionReasons: missing_provider_contact_signal
+- acceptanceRules: organizationName required, publicContactSignalCount > 0 required
+- rejectionReasons: missing_provider_name, missing_provider_contact_signal
+- stagingTable: staging_scraped_resource_providers
+- stagedFields: extracted_name, categories, extracted_phone, extracted_email, extracted_address, accepts_medi_cal
+
+## forms_guides
+
+- recordType: forms_page
+- parserFunction: extractForms
+- currentReadyTargetScrape: 220
+- currentReadyByLane: {"ready_pdf":220}
+- positiveFixture:
+  - description: Official form page or official library root with program context and downloadable form or library URL.
+  - minimumPageSignals: official-like source URL, program or form title, download URL or library URL
+  - expectedAcceptedFields: programName, officialDownloadUrl, documentLikeLinks
+  - stagingExpectation: staging_scraped_forms candidate written with program, official_download_url, and usage fields
+- negativeFixtures:
+  - description: Unofficial mirror or placeholder domain page.
+    - expectedRejectionReasons: forms_requires_official_source
+  - description: Official form library page with no form/program context extractable.
+    - expectedRejectionReasons: missing_form_program_name
+  - description: Official page with no download URL and no approved library target.
+    - expectedRejectionReasons: missing_official_download_or_library_url
+- acceptanceRules: official-like final/source URL required, programName required, officialDownloadUrl required
+- rejectionReasons: forms_requires_official_source, missing_form_program_name, missing_official_download_or_library_url
+- stagingTable: staging_scraped_forms
+- stagedFields: slug, program, official_download_url, who_uses_it, who_signs_it, where_to_send_it, letter_script
+
+## knowledge_content
+
+- recordType: knowledge_content_page
+- parserFunction: extractKnowledgeContent
+- currentReadyTargetScrape: 65
+- currentReadyByLane: {"ready_lightweight":65}
+- positiveFixture:
+  - description: Trusted official or mission-aligned guidance page with article title and meaningful summary text.
+  - minimumPageSignals: trusted source URL, article title, summary text at least 80 characters
+  - expectedAcceptedFields: articleTitle, canonicalKnowledgeUrl, summaryText, contentCategory
+  - stagingExpectation: staging_scraped_knowledge_content candidate written with slug, title, canonical_url, and summary
+- negativeFixtures:
+  - description: Guidance page from non-trusted or weak source domain.
+    - expectedRejectionReasons: knowledge_requires_high_trust_source
+  - description: Trusted article page with no extractable title.
+    - expectedRejectionReasons: missing_knowledge_title
+  - description: Trusted article page whose extracted summary is too thin.
+    - expectedRejectionReasons: knowledge_summary_too_thin
+- acceptanceRules: trusted knowledge source required, articleTitle required, summaryText length >= 80 required
+- rejectionReasons: knowledge_requires_high_trust_source, missing_knowledge_title, knowledge_summary_too_thin
+- stagingTable: staging_scraped_knowledge_content
+- stagedFields: slug, title, content_category, canonical_url, summary
+

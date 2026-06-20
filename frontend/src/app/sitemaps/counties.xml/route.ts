@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { getCounties, getCountyDetails, getProgramsForDiagnosis, getAllStates, County } from '@/lib/db';
 import { DIAGNOSES, slugifyDiagnosis } from '@/lib/diagnoses';
+import { getCountyDiagnosisTruthEligibility, getCountyTruthEligibility, isIndexableState } from '@/lib/publicTruth';
 
 // Sitemap expansion batch configuration
 // 1 = Top 10 CA counties, 2 = Top 25 CA counties, 3 = All 58 CA counties, 4 = All CA + county x diagnosis leaves
@@ -18,39 +19,6 @@ const TOP_25_CA_COUNTIES = [
   'monterey', 'placer', 'san-luis-obispo', 'santa-cruz', 'merced'
 ];
 
-import { NON_CA_VERIFIED_COUNTIES } from '@/lib/verifiedCounties';
-
-// Strict quality gate helper for CA counties
-function passesCountyQualityGate(details: any): boolean {
-  if (!details) return false;
-  
-  // 1. Regional Center mapping exists
-  const hasRc = details.regionalCenters && details.regionalCenters.length > 0;
-  
-  // 2. SELPA mapping exists
-  const hasSelpa = details.selpas && details.selpas.length > 0;
-  
-  // 3. IHSS office exists (program_id = 'ihss-for-children')
-  const hasIhss = details.countyOffices && details.countyOffices.some((o: any) => o.program_id === 'ihss-for-children');
-  
-  // 4. Medi-Cal office exists (program_id = 'medi-cal-for-kids-and-teens')
-  const hasMediCal = details.countyOffices && details.countyOffices.some((o: any) => o.program_id === 'medi-cal-for-kids-and-teens');
-  
-  // 5. CCS office exists (program_id = 'california-childrens-services')
-  const hasCcs = details.countyOffices && details.countyOffices.some((o: any) => o.program_id === 'california-childrens-services');
-  
-  // 6. At least one school district exists
-  const hasDistrict = details.schoolDistricts && details.schoolDistricts.length > 0;
-  
-  // 7. At least one nonprofit organization exists (Optional for rural counties)
-  const hasNonprofit = details.localOrganizations && details.localOrganizations.length > 0;
-
-  // 8. Trust/source metadata exists (verification_status and data_origin are not null on offices)
-  const hasMetadata = details.countyOffices && details.countyOffices.every((o: any) => o.verification_status && o.data_origin);
-
-  return !!(hasRc && hasSelpa && hasIhss && hasMediCal && hasCcs && hasDistrict && hasMetadata);
-}
-
 export async function GET() {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ablefull.org';
   const today = '2026-06-08';
@@ -66,18 +34,16 @@ export async function GET() {
     ];
   }
 
-  // Pre-load CA county details
+  // Pre-load county details for truth gating
   const countyDetailsMap = new Map();
   for (const c of allCounties) {
-    if (c.state_id === 'california') {
-      try {
-        const details = await getCountyDetails(c.id);
-        if (details) {
-          countyDetailsMap.set(c.id, details);
-        }
-      } catch (e) {
-        console.error(`Failed to fetch details for county ${c.id}:`, e);
+    try {
+      const details = await getCountyDetails(c.id);
+      if (details) {
+        countyDetailsMap.set(c.id, details);
       }
+    } catch (e) {
+      console.error(`Failed to fetch details for county ${c.id}:`, e);
     }
   }
 
@@ -86,14 +52,9 @@ export async function GET() {
     const isCa = c.state_id === 'california';
     
     // Check if it's a verified non-CA county
-    if (!isCa) {
-      return NON_CA_VERIFIED_COUNTIES.includes(c.id);
-    }
-
-    // Apply strict quality gate for CA counties
     const details = countyDetailsMap.get(c.id);
-    const passesGate = passesCountyQualityGate(details);
-    if (!passesGate) return false;
+    const truth = getCountyTruthEligibility(c.state_id || 'california', details);
+    if (!truth.indexSafe) return false;
 
     // Apply SITEMAP_BATCH filters
     if (SITEMAP_BATCH === 1) {
@@ -168,21 +129,15 @@ export async function GET() {
 
       diagnosesSlugs.forEach(diag => {
         // Do not index Texas (or other non-California) county x diagnosis pages yet
-        if (!['california', 'texas', 'florida', 'pennsylvania', 'new-york', 'ohio', 'illinois', 'georgia', 'maryland', 'utah', 'new-mexico', 'oregon', 'washington', 'idaho', 'south-carolina', 'north-dakota', 'west-virginia', 'montana', 'colorado', 'louisiana', 'south-dakota', 'alabama', 'wisconsin', 'arkansas', 'oklahoma', 'north-carolina', 'mississippi', 'michigan', 'minnesota', 'indiana', 'nebraska', 'tennessee', 'virginia', 'arizona', 'alaska', 'connecticut', 'delaware', 'hawaii', 'iowa', 'kansas', 'kentucky', 'maine', 'massachusetts', 'missouri', 'nevada', 'new-hampshire', 'new-jersey', 'rhode-island', 'vermont', 'wyoming'].includes(stateId)) return;
+        if (!isIndexableState(stateId)) return;
 
         // Quality Gate: Check at least one source-backed program match exists
         const matchingPrograms = diagnosisProgramsMap.get(diag) || [];
         const hasProgramMatch = matchingPrograms.length > 0;
         if (!hasProgramMatch) return;
 
-        // Quality Gate: Check county passes quality gate (already verified in count loop above, but double check)
-        if (stateId === 'california' && !passesCountyQualityGate(countyDetails)) return;
-
-        // Gate: Only index CA county x diagnosis if they have enough unique content (los-angeles and orange)
-        if (stateId === 'california') {
-          const isHighFidelity = county.id === 'los-angeles' || county.id === 'orange';
-          if (!isHighFidelity) return;
-        }
+        const truth = getCountyDiagnosisTruthEligibility(stateId, diag, county.id, countyDetails);
+        if (!truth.indexSafe) return;
 
         xmlUrls += `  <url>
       <loc>${baseUrl}/benefits/${stateId}/${diag}/${county.id}</loc>

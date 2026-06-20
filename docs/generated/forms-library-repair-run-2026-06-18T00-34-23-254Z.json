@@ -1,0 +1,270 @@
+{
+  "generatedAt": "2026-06-18T00:34:23.257Z",
+  "mode": "apply",
+  "stateFilter": null,
+  "summary": {
+    "eligibleRepairRows": 1,
+    "appliedChanges": 1,
+    "filesChanged": 1,
+    "nonRepairableRows": 37,
+    "nonRepairableByReason": {
+      "state_specific_fallback_only": 34,
+      "federal_only_fallback": 3
+    },
+    "skippedMissingRows": 0
+  },
+  "repairs": [
+    {
+      "stateId": "arkansas",
+      "before": {
+        "sourceUrl": "https://dhhs.arkansas.gov/forms",
+        "sourceName": "Arkansas Medicaid & Special Education Forms",
+        "domain": "dhhs.arkansas.gov",
+        "notes": "Initial category-level scaffold source target for Arkansas."
+      },
+      "after": {
+        "sourceUrl": "https://humanservices.arkansas.gov/wp-content/uploads/DDS.docx",
+        "sourceName": "Arkansas Division of Developmental Disabilities Services",
+        "domain": "humanservices.arkansas.gov",
+        "notes": "Initial category-level scaffold source target for Arkansas. Forms library repair applied 2026-06-18 from https://dhhs.arkansas.gov/forms to https://humanservices.arkansas.gov/wp-content/uploads/DDS.docx."
+      },
+      "candidate": {
+        "stateId": "arkansas",
+        "sourceName": "Arkansas Division of Developmental Disabilities Services",
+        "sourceUrl": "https://humanservices.arkansas.gov/wp-content/uploads/DDS.docx",
+        "domain": "humanservices.arkansas.gov",
+        "candidateType": "exact_forms_library",
+        "priority": 4,
+        "recordCount": 0,
+        "verificationStatus": "reviewed",
+        "whyNeeded": "Reviewed 2026-06-17. The existing DDS fallback URL now 301 redirects to a live first-party DDS document on humanservices.arkansas.gov, which is safer than the blocked forms placeholder domain dhhs.arkansas.gov.",
+        "origin": "forms_fallback_manual_resolution:replace_with_reviewed_candidate"
+      },
+      "status": "applied"
+    }
+  ],
+  "nonRepairableRows": [
+    {
+      "stateId": "arizona",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.arizona.gov/forms"
+    },
+    {
+      "stateId": "colorado",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.colorado.gov/forms"
+    },
+    {
+      "stateId": "connecticut",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.connecticut.gov/forms"
+    },
+    {
+      "stateId": "delaware",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.delaware.gov/forms"
+    },
+    {
+      "stateId": "hawaii",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.hawaii.gov/forms"
+    },
+    {
+      "stateId": "indiana",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.indiana.gov/forms"
+    },
+    {
+      "stateId": "iowa",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.iowa.gov/forms"
+    },
+    {
+      "stateId": "kansas",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.kansas.gov/forms"
+    },
+    {
+      "stateId": "kentucky",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.kentucky.gov/forms"
+    },
+    {
+      "stateId": "louisiana",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.louisiana.gov/forms"
+    },
+    {
+      "stateId": "maine",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.maine.gov/forms"
+    },
+    {
+      "stateId": "maryland",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.maryland.gov/forms"
+    },
+    {
+      "stateId": "massachusetts",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.massachusetts.gov/forms"
+    },
+    {
+      "stateId": "michigan",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.michigan.gov/forms"
+    },
+    {
+      "stateId": "minnesota",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.minnesota.gov/forms"
+    },
+    {
+      "stateId": "mississippi",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.mississippi.gov/forms"
+    },
+    {
+      "stateId": "missouri",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.missouri.gov/forms"
+    },
+    {
+      "stateId": "montana",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.montana.gov/forms"
+    },
+    {
+      "stateId": "nebraska",
+      "replacementClass": "federal_only_form_fallback",
+      "nonRepairableReason": "federal_only_fallback",
+      "blockedSourceUrl": "https://dhhs.nebraska.gov/forms"
+    },
+    {
+      "stateId": "nevada",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.nevada.gov/forms"
+    },
+    {
+      "stateId": "new-hampshire",
+      "replacementClass": "federal_only_form_fallback",
+      "nonRepairableReason": "federal_only_fallback",
+      "blockedSourceUrl": "https://dhhs.new-hampshire.gov/forms"
+    },
+    {
+      "stateId": "new-mexico",
+      "replacementClass": "federal_only_form_fallback",
+      "nonRepairableReason": "federal_only_fallback",
+      "blockedSourceUrl": "https://dhhs.new-mexico.gov/forms"
+    },
+    {
+      "stateId": "north-carolina",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.north-carolina.gov/forms"
+    },
+    {
+      "stateId": "north-dakota",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.north-dakota.gov/forms"
+    },
+    {
+      "stateId": "oklahoma",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.oklahoma.gov/forms"
+    },
+    {
+      "stateId": "oregon",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.oregon.gov/forms"
+    },
+    {
+      "stateId": "rhode-island",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.rhode-island.gov/forms"
+    },
+    {
+      "stateId": "south-carolina",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.south-carolina.gov/forms"
+    },
+    {
+      "stateId": "south-dakota",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.south-dakota.gov/forms"
+    },
+    {
+      "stateId": "tennessee",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.tennessee.gov/forms"
+    },
+    {
+      "stateId": "utah",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.utah.gov/forms"
+    },
+    {
+      "stateId": "vermont",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.vermont.gov/forms"
+    },
+    {
+      "stateId": "virginia",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.virginia.gov/forms"
+    },
+    {
+      "stateId": "washington",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.washington.gov/forms"
+    },
+    {
+      "stateId": "west-virginia",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.west-virginia.gov/forms"
+    },
+    {
+      "stateId": "wisconsin",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.wisconsin.gov/forms"
+    },
+    {
+      "stateId": "wyoming",
+      "replacementClass": "state_specific_form_fallback_only",
+      "nonRepairableReason": "state_specific_fallback_only",
+      "blockedSourceUrl": "https://dhhs.wyoming.gov/forms"
+    }
+  ]
+}

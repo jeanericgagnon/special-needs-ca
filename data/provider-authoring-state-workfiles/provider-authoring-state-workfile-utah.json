@@ -1,0 +1,166 @@
+{
+  "generatedAt": "2026-06-18T19:26:54.887Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "utah",
+  "stateName": "Utah",
+  "sourcePacketPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-utah-2026-06-18.json",
+  "sourceTargetsPath": "data/source_targets/utah.json",
+  "instructions": {
+    "summary": "Fill only the missing first-party provider targets needed for this state. Do not broaden beyond provider_directory authoring.",
+    "completionRule": "A candidate row is ready only when sourceName, sourceUrl, domain, and reviewedBy are filled."
+  },
+  "summary": {
+    "neededConcreteTargets": 3,
+    "currentConcreteProviderTargetCount": 0,
+    "existingProviderTargetCount": 1,
+    "candidateSlotCount": 3,
+    "readyCandidateCount": 0,
+    "unresolvedCandidateCount": 3
+  },
+  "existingProviderTargets": [
+    {
+      "sourceName": "Utah Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for Utah."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Utah County Metadata",
+      "sourceUrl": "https://www.utah.gov",
+      "domain": "utah.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Utah Medicaid Portal",
+      "sourceUrl": "https://dhhs.utah.gov",
+      "domain": "dhhs.utah.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Utah Division of Services for People with Disabilities",
+      "sourceUrl": "https://dspd.utah.gov/",
+      "domain": "dspd.utah.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Utah HCBS Waivers",
+      "sourceUrl": "https://dspd.utah.gov/hcbs",
+      "domain": "dspd.utah.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Utah Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.utah.gov/earlyintervention",
+      "domain": "dhhs.utah.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Utah Department of Education Special Ed",
+      "sourceUrl": "https://education.utah.gov",
+      "domain": "education.utah.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Utah Regional Special Education Support",
+      "sourceUrl": "https://education.utah.gov/regional",
+      "domain": "education.utah.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Utah Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Utah",
+      "sourceUrl": "https://www.thearcutah.org",
+      "domain": "thearcutah.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Utah Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.utah.gov/forms",
+      "domain": "dhhs.utah.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Utah Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.utah.gov/rehab",
+      "domain": "dhhs.utah.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Utah Secretary of State Business Registry",
+      "sourceUrl": "https://www.utah.gov/business",
+      "domain": "utah.gov"
+    }
+  ],
+  "candidateProviderTargets": [
+    {
+      "slotNumber": 1,
+      "stateId": "utah",
+      "stateCode": "UT",
+      "sourceName": "Primary Children's Hospital - Salt Lake City",
+      "sourceUrl": "https://intermountainhealthcare.org/locations/primary-childrens-salt-lake-city",
+      "domain": "intermountainhealthcare.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Children's hospital",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official Primary Children's Salt Lake City hospital source for statewide pediatric hospital and specialty care in Utah.",
+      "reviewedBy": "codex"
+    },
+    {
+      "slotNumber": 2,
+      "stateId": "utah",
+      "stateCode": "UT",
+      "sourceName": "University of Utah Hospital",
+      "sourceUrl": "https://healthcare.utah.edu/locations/hospital",
+      "domain": "healthcare.utah.edu",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Academic medical center",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official University of Utah Hospital source for pediatric referral and academic specialty care connected to Primary Children's.",
+      "reviewedBy": "codex"
+    },
+    {
+      "slotNumber": 3,
+      "stateId": "utah",
+      "stateCode": "UT",
+      "sourceName": "Primary Children's Hospital - Lehi",
+      "sourceUrl": "https://intermountainhealthcare.org/locations/primary-childrens-lehi",
+      "domain": "intermountainhealthcare.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Children's hospital",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official Primary Children's Lehi hospital source for pediatric specialty and hospital care in Utah County.",
+      "reviewedBy": "codex"
+    }
+  ]
+}

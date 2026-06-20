@@ -101,6 +101,7 @@ CREATE TABLE IF NOT EXISTS county_offices (
     source_type TEXT,
     data_origin TEXT,
     verification_status TEXT,
+    last_verified_at TEXT,
     last_verified_date TEXT,
     last_scraped_at TEXT,
     confidence_score REAL,
@@ -213,6 +214,7 @@ CREATE TABLE IF NOT EXISTS school_districts (
     source_type TEXT,
     data_origin TEXT,
     verification_status TEXT,
+    last_verified_at TEXT,
     last_verified_date TEXT,
     last_scraped_at TEXT,
     confidence_score REAL,
@@ -230,6 +232,45 @@ CREATE TABLE IF NOT EXISTS resource_providers (
     address TEXT NOT NULL,
     accepts_medi_cal INTEGER NOT NULL DEFAULT 1,
     regional_center_vendor_ids TEXT NOT NULL, -- Comma-separated list
+    service_tags TEXT,
+    serving_tags TEXT,
+    availability_status TEXT,
+    accepting_new_clients INTEGER,
+    waitlist_status TEXT,
+    capacity_notes TEXT,
+    funding_status TEXT,
+    checked_at TEXT,
+    source_name TEXT,
+    source_last_updated TEXT,
+    next_step_type TEXT,
+    next_step_label TEXT,
+    next_step_url TEXT,
+    next_step_phone TEXT,
+    next_step_email TEXT,
+    next_step_instructions TEXT,
+    requirements TEXT,
+    application_url TEXT,
+    referral_url TEXT,
+    walk_in_available INTEGER,
+    appointment_required INTEGER,
+    languages TEXT,
+    interpreter_available INTEGER,
+    asl_available INTEGER,
+    wheelchair_accessible INTEGER,
+    virtual_services INTEGER,
+    in_person_services INTEGER,
+    home_visits INTEGER,
+    transportation_help INTEGER,
+    accessibility_notes TEXT,
+    accessibility_evidence_level TEXT,
+    accessibility_source_address TEXT,
+    manual_review_required INTEGER DEFAULT 0,
+    data_quality_notes TEXT,
+    unsupported_claim_flags TEXT,
+    claim_status TEXT,
+    claimed_by TEXT,
+    verified_affiliation INTEGER DEFAULT 0,
+    claim_email TEXT,
     source_url TEXT,
     source_type TEXT,
     data_origin TEXT,
@@ -248,6 +289,43 @@ CREATE TABLE IF NOT EXISTS nonprofit_organizations (
     website TEXT NOT NULL,
     phone TEXT NOT NULL,
     focus_condition TEXT NOT NULL,
+    service_tags TEXT,
+    serving_tags TEXT,
+    availability_status TEXT,
+    accepting_new_clients INTEGER,
+    waitlist_status TEXT,
+    capacity_notes TEXT,
+    funding_status TEXT,
+    checked_at TEXT,
+    source_name TEXT,
+    source_last_updated TEXT,
+    next_step_type TEXT,
+    next_step_label TEXT,
+    next_step_url TEXT,
+    next_step_phone TEXT,
+    next_step_email TEXT,
+    next_step_instructions TEXT,
+    requirements TEXT,
+    application_url TEXT,
+    referral_url TEXT,
+    walk_in_available INTEGER,
+    appointment_required INTEGER,
+    languages TEXT,
+    interpreter_available INTEGER,
+    asl_available INTEGER,
+    wheelchair_accessible INTEGER,
+    virtual_services INTEGER,
+    in_person_services INTEGER,
+    home_visits INTEGER,
+    transportation_help INTEGER,
+    accessibility_notes TEXT,
+    manual_review_required INTEGER DEFAULT 0,
+    data_quality_notes TEXT,
+    unsupported_claim_flags TEXT,
+    claim_status TEXT,
+    claimed_by TEXT,
+    verified_affiliation INTEGER DEFAULT 0,
+    claim_email TEXT,
     source_url TEXT,
     source_type TEXT,
     data_origin TEXT,
@@ -440,6 +518,35 @@ CREATE TABLE IF NOT EXISTS verification_queue_items (
     verification_level INTEGER NOT NULL DEFAULT 5 -- Level 1-6 scale
 );
 
+-- 26b. provider_accessibility_pull_results
+CREATE TABLE IF NOT EXISTS provider_accessibility_pull_results (
+    id TEXT PRIMARY KEY,
+    provider_id TEXT NOT NULL,
+    county_id TEXT,
+    state_id TEXT NOT NULL,
+    source_url TEXT NOT NULL,
+    source_host TEXT NOT NULL,
+    clue_page_url TEXT,
+    clue_page_type TEXT, -- 'contact_page' | 'appointment_page' | 'patient_services' | 'faq_page' | 'telehealth_page' | 'accessibility_page' | 'program_overview'
+    clue_field TEXT NOT NULL, -- 'languages' | 'interpreter_available' | 'asl_available' | 'wheelchair_accessible' | 'virtual_services' | 'in_person_services' | 'home_visits' | 'transportation_help' | 'accessibility_notes' | 'next_step_type' | 'requirements' | 'application_url' | 'referral_url'
+    clue_value TEXT,
+    clue_text TEXT,
+    clue_status TEXT NOT NULL DEFAULT 'queued', -- 'queued' | 'reviewed' | 'promoted' | 'rejected'
+    promotion_target_column TEXT,
+    review_notes TEXT,
+    reviewed_by TEXT,
+    reviewed_at TEXT,
+    promoted_at TEXT,
+    created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (provider_id) REFERENCES resource_providers(id) ON DELETE CASCADE,
+    FOREIGN KEY (county_id) REFERENCES counties(id) ON DELETE SET NULL,
+    FOREIGN KEY (state_id) REFERENCES states(id) ON DELETE CASCADE
+);
+CREATE INDEX IF NOT EXISTS idx_provider_accessibility_pull_results_provider ON provider_accessibility_pull_results(provider_id);
+CREATE INDEX IF NOT EXISTS idx_provider_accessibility_pull_results_status ON provider_accessibility_pull_results(clue_status);
+CREATE INDEX IF NOT EXISTS idx_provider_accessibility_pull_results_state ON provider_accessibility_pull_results(state_id);
+
 -- 27. iep_advocates
 CREATE TABLE IF NOT EXISTS iep_advocates (
     id TEXT PRIMARY KEY,
@@ -456,6 +563,42 @@ CREATE TABLE IF NOT EXISTS iep_advocates (
     regional_center_vendorized INTEGER DEFAULT 0,
     organization_affiliation TEXT,
     description TEXT,
+    service_tags TEXT,
+    serving_tags TEXT,
+    availability_status TEXT,
+    accepting_new_clients INTEGER,
+    waitlist_status TEXT,
+    capacity_notes TEXT,
+    funding_status TEXT,
+    checked_at TEXT,
+    source_name TEXT,
+    source_last_updated TEXT,
+    next_step_type TEXT,
+    next_step_label TEXT,
+    next_step_url TEXT,
+    next_step_phone TEXT,
+    next_step_email TEXT,
+    next_step_instructions TEXT,
+    requirements TEXT,
+    application_url TEXT,
+    referral_url TEXT,
+    walk_in_available INTEGER,
+    appointment_required INTEGER,
+    interpreter_available INTEGER,
+    asl_available INTEGER,
+    wheelchair_accessible INTEGER,
+    virtual_services INTEGER,
+    in_person_services INTEGER,
+    home_visits INTEGER,
+    transportation_help INTEGER,
+    accessibility_notes TEXT,
+    manual_review_required INTEGER DEFAULT 0,
+    data_quality_notes TEXT,
+    unsupported_claim_flags TEXT,
+    claim_status TEXT,
+    claimed_by TEXT,
+    verified_affiliation INTEGER DEFAULT 0,
+    claim_email TEXT,
     verification_status TEXT DEFAULT 'unverified',
     source_url TEXT,
     source_type TEXT,
@@ -520,7 +663,129 @@ CREATE TABLE IF NOT EXISTS iep_advocate_counties (
     FOREIGN KEY (county_id) REFERENCES counties(id) ON DELETE CASCADE
 );
 
--- 32. safety_incidents
+-- 32. organizations
+CREATE TABLE IF NOT EXISTS organizations (
+    id TEXT PRIMARY KEY,
+    name TEXT NOT NULL,
+    organization_type TEXT NOT NULL, -- 'provider_org' | 'nonprofit' | 'advocacy_org' | 'public_agency' | 'school_system' | 'multi_service_org'
+    parent_organization_id TEXT,
+    website TEXT,
+    intake_phone TEXT,
+    intake_email TEXT,
+    source_url TEXT,
+    source_type TEXT,
+    data_origin TEXT,
+    verification_status TEXT,
+    last_verified_date TEXT,
+    last_scraped_at TEXT,
+    confidence_score REAL,
+    notes TEXT,
+    FOREIGN KEY (parent_organization_id) REFERENCES organizations(id) ON DELETE SET NULL
+);
+
+-- 33. organization_program_links
+CREATE TABLE IF NOT EXISTS organization_program_links (
+    id TEXT PRIMARY KEY,
+    organization_id TEXT NOT NULL,
+    program_id TEXT,
+    listing_type TEXT NOT NULL, -- 'directory_service' | 'official_program' | 'public_office' | 'education_support'
+    title TEXT NOT NULL,
+    intake_model TEXT, -- 'call' | 'email' | 'apply_online' | 'referral' | 'schedule' | 'walk_in' | 'mixed' | 'unknown'
+    service_summary TEXT,
+    eligibility_summary TEXT,
+    source_url TEXT,
+    source_type TEXT,
+    data_origin TEXT,
+    verification_status TEXT,
+    last_verified_date TEXT,
+    last_scraped_at TEXT,
+    confidence_score REAL,
+    FOREIGN KEY (organization_id) REFERENCES organizations(id) ON DELETE CASCADE,
+    FOREIGN KEY (program_id) REFERENCES programs(id) ON DELETE SET NULL
+);
+
+-- 34. service_locations
+CREATE TABLE IF NOT EXISTS service_locations (
+    id TEXT PRIMARY KEY,
+    organization_id TEXT NOT NULL,
+    location_name TEXT NOT NULL,
+    location_type TEXT NOT NULL, -- 'clinic' | 'campus' | 'community_site' | 'home_based' | 'mobile' | 'other'
+    address TEXT,
+    city TEXT,
+    state_id TEXT REFERENCES states(id),
+    postal_code TEXT,
+    county_id TEXT REFERENCES counties(id),
+    phone TEXT,
+    email TEXT,
+    website TEXT,
+    appointment_url TEXT,
+    hours_text TEXT,
+    source_url TEXT,
+    source_type TEXT,
+    data_origin TEXT,
+    verification_status TEXT,
+    last_verified_date TEXT,
+    last_scraped_at TEXT,
+    confidence_score REAL,
+    FOREIGN KEY (organization_id) REFERENCES organizations(id) ON DELETE CASCADE
+);
+
+-- 35. office_locations
+CREATE TABLE IF NOT EXISTS office_locations (
+    id TEXT PRIMARY KEY,
+    organization_id TEXT NOT NULL,
+    office_name TEXT NOT NULL,
+    office_type TEXT NOT NULL, -- 'intake' | 'regional' | 'county' | 'administrative' | 'appeals' | 'education'
+    address TEXT,
+    city TEXT,
+    state_id TEXT REFERENCES states(id),
+    postal_code TEXT,
+    county_id TEXT REFERENCES counties(id),
+    intake_phone TEXT,
+    intake_email TEXT,
+    website TEXT,
+    hours_text TEXT,
+    source_url TEXT,
+    source_type TEXT,
+    data_origin TEXT,
+    verification_status TEXT,
+    last_verified_date TEXT,
+    last_scraped_at TEXT,
+    confidence_score REAL,
+    FOREIGN KEY (organization_id) REFERENCES organizations(id) ON DELETE CASCADE
+);
+
+-- 36. virtual_service_areas
+CREATE TABLE IF NOT EXISTS virtual_service_areas (
+    id TEXT PRIMARY KEY,
+    organization_id TEXT NOT NULL,
+    program_link_id TEXT,
+    area_type TEXT NOT NULL, -- 'statewide' | 'county_group' | 'catchment' | 'metro' | 'virtual_only'
+    area_name TEXT NOT NULL,
+    state_id TEXT REFERENCES states(id),
+    coverage_notes TEXT,
+    intake_model TEXT,
+    source_url TEXT,
+    source_type TEXT,
+    data_origin TEXT,
+    verification_status TEXT,
+    last_verified_date TEXT,
+    last_scraped_at TEXT,
+    confidence_score REAL,
+    FOREIGN KEY (organization_id) REFERENCES organizations(id) ON DELETE CASCADE,
+    FOREIGN KEY (program_link_id) REFERENCES organization_program_links(id) ON DELETE SET NULL
+);
+
+-- 37. virtual_service_area_counties
+CREATE TABLE IF NOT EXISTS virtual_service_area_counties (
+    virtual_service_area_id TEXT,
+    county_id TEXT,
+    PRIMARY KEY (virtual_service_area_id, county_id),
+    FOREIGN KEY (virtual_service_area_id) REFERENCES virtual_service_areas(id) ON DELETE CASCADE,
+    FOREIGN KEY (county_id) REFERENCES counties(id) ON DELETE CASCADE
+);
+
+-- 38. safety_incidents
 CREATE TABLE IF NOT EXISTS safety_incidents (
     id TEXT PRIMARY KEY,
     child_id TEXT NOT NULL,
@@ -532,7 +797,7 @@ CREATE TABLE IF NOT EXISTS safety_incidents (
     FOREIGN KEY (child_id) REFERENCES child_profiles(id) ON DELETE CASCADE
 );
 
--- 33. parent_declarations
+-- 39. parent_declarations
 CREATE TABLE IF NOT EXISTS parent_declarations (
     child_id TEXT PRIMARY KEY,
     declaration_text TEXT,
@@ -540,7 +805,7 @@ CREATE TABLE IF NOT EXISTS parent_declarations (
     FOREIGN KEY (child_id) REFERENCES child_profiles(id) ON DELETE CASCADE
 );
 
--- 34. caregiver_profiles
+-- 40. caregiver_profiles
 CREATE TABLE IF NOT EXISTS caregiver_profiles (
     user_id TEXT PRIMARY KEY,
     name TEXT,
@@ -550,7 +815,7 @@ CREATE TABLE IF NOT EXISTS caregiver_profiles (
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
 
--- 35. child_transition_tasks
+-- 41. child_transition_tasks
 CREATE TABLE IF NOT EXISTS child_transition_tasks (
     child_id TEXT,
     task_id TEXT,
@@ -558,7 +823,7 @@ CREATE TABLE IF NOT EXISTS child_transition_tasks (
     FOREIGN KEY (child_id) REFERENCES child_profiles(id) ON DELETE CASCADE
 );
 
--- 36. caregiver_selfcare_logs
+-- 42. caregiver_selfcare_logs
 CREATE TABLE IF NOT EXISTS caregiver_selfcare_logs (
     child_id TEXT PRIMARY KEY,
     mon INTEGER DEFAULT 0,
@@ -571,14 +836,14 @@ CREATE TABLE IF NOT EXISTS caregiver_selfcare_logs (
     FOREIGN KEY (child_id) REFERENCES child_profiles(id) ON DELETE CASCADE
 );
 
--- 37. child_coordinators
+-- 43. child_coordinators
 CREATE TABLE IF NOT EXISTS child_coordinators (
     child_id TEXT PRIMARY KEY,
     coordinator_name TEXT,
     FOREIGN KEY (child_id) REFERENCES child_profiles(id) ON DELETE CASCADE
 );
 
--- 38. child_clinical_documents
+-- 44. child_clinical_documents
 CREATE TABLE IF NOT EXISTS child_clinical_documents (
     id TEXT PRIMARY KEY,
     child_id TEXT NOT NULL,
@@ -590,7 +855,7 @@ CREATE TABLE IF NOT EXISTS child_clinical_documents (
     FOREIGN KEY (child_id) REFERENCES child_profiles(id) ON DELETE CASCADE
 );
 
--- 39. consultation_threads
+-- 45. consultation_threads
 CREATE TABLE IF NOT EXISTS consultation_threads (
     id TEXT PRIMARY KEY,
     child_id TEXT NOT NULL,
@@ -601,7 +866,7 @@ CREATE TABLE IF NOT EXISTS consultation_threads (
     FOREIGN KEY (advocate_id) REFERENCES iep_advocates(id) ON DELETE CASCADE
 );
 
--- 40. consultation_messages
+-- 46. consultation_messages
 CREATE TABLE IF NOT EXISTS consultation_messages (
     id TEXT PRIMARY KEY,
     thread_id TEXT NOT NULL,
@@ -612,7 +877,7 @@ CREATE TABLE IF NOT EXISTS consultation_messages (
     FOREIGN KEY (thread_id) REFERENCES consultation_threads(id) ON DELETE CASCADE
 );
 
--- 41. shared_portal_tokens
+-- 47. shared_portal_tokens
 CREATE TABLE IF NOT EXISTS shared_portal_tokens (
     id TEXT PRIMARY KEY,
     child_id TEXT NOT NULL,
@@ -623,7 +888,7 @@ CREATE TABLE IF NOT EXISTS shared_portal_tokens (
     FOREIGN KEY (child_id) REFERENCES child_profiles(id) ON DELETE CASCADE
 );
 
--- 42. program_waitlists
+-- 48. program_waitlists
 CREATE TABLE IF NOT EXISTS program_waitlists (
     id TEXT PRIMARY KEY,
     program_id TEXT NOT NULL,
@@ -637,7 +902,7 @@ CREATE TABLE IF NOT EXISTS program_waitlists (
     last_scraped_at TEXT NOT NULL
 );
 
--- 43. knowledge_articles
+-- 49. knowledge_articles
 CREATE TABLE IF NOT EXISTS knowledge_articles (
     id TEXT PRIMARY KEY,
     category TEXT NOT NULL,
@@ -653,7 +918,7 @@ CREATE TABLE IF NOT EXISTS knowledge_articles (
     steps_json_es TEXT NOT NULL
 );
 
--- 44. child_iep_accommodations
+-- 50. child_iep_accommodations
 CREATE TABLE IF NOT EXISTS child_iep_accommodations (
     id TEXT PRIMARY KEY,
     child_id TEXT NOT NULL,
@@ -661,7 +926,7 @@ CREATE TABLE IF NOT EXISTS child_iep_accommodations (
     FOREIGN KEY (child_id) REFERENCES child_profiles(id) ON DELETE CASCADE
 );
 
--- 45. child_iep_goals
+-- 51. child_iep_goals
 CREATE TABLE IF NOT EXISTS child_iep_goals (
     id TEXT PRIMARY KEY,
     child_id TEXT NOT NULL,
@@ -671,7 +936,7 @@ CREATE TABLE IF NOT EXISTS child_iep_goals (
     FOREIGN KEY (child_id) REFERENCES child_profiles(id) ON DELETE CASCADE
 );
 
--- 46. child_respite_assessments
+-- 52. child_respite_assessments
 CREATE TABLE IF NOT EXISTS child_respite_assessments (
     child_id TEXT PRIMARY KEY,
     safety_score INTEGER NOT NULL,
@@ -682,7 +947,7 @@ CREATE TABLE IF NOT EXISTS child_respite_assessments (
     FOREIGN KEY (child_id) REFERENCES child_profiles(id) ON DELETE CASCADE
 );
 
--- 47. staging_source_targets
+-- 53. staging_source_targets
 CREATE TABLE IF NOT EXISTS staging_source_targets (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     state_id TEXT NOT NULL,
@@ -702,7 +967,7 @@ CREATE TABLE IF NOT EXISTS staging_source_targets (
     last_checked_at TEXT
 );
 
--- 48. staging_scraped_county_offices
+-- 54. staging_scraped_county_offices
 CREATE TABLE IF NOT EXISTS staging_scraped_county_offices (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     source_url TEXT NOT NULL,
@@ -726,7 +991,7 @@ CREATE TABLE IF NOT EXISTS staging_scraped_county_offices (
     program_id TEXT NOT NULL
 );
 
--- 49. staging_scraped_state_resource_agencies
+-- 55. staging_scraped_state_resource_agencies
 CREATE TABLE IF NOT EXISTS staging_scraped_state_resource_agencies (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     source_url TEXT NOT NULL,
@@ -755,7 +1020,7 @@ CREATE TABLE IF NOT EXISTS staging_scraped_state_resource_agencies (
     appeals_info TEXT NOT NULL
 );
 
--- 50. staging_scraped_regional_education_agencies
+-- 56. staging_scraped_regional_education_agencies
 CREATE TABLE IF NOT EXISTS staging_scraped_regional_education_agencies (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     source_url TEXT NOT NULL,
@@ -777,7 +1042,7 @@ CREATE TABLE IF NOT EXISTS staging_scraped_regional_education_agencies (
     extracted_website TEXT NOT NULL
 );
 
--- 51. staging_scraped_school_districts
+-- 57. staging_scraped_school_districts
 CREATE TABLE IF NOT EXISTS staging_scraped_school_districts (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     source_url TEXT NOT NULL,
@@ -800,7 +1065,7 @@ CREATE TABLE IF NOT EXISTS staging_scraped_school_districts (
     total_enrollment INTEGER
 );
 
--- 52. staging_scraped_nonprofit_organizations
+-- 58. staging_scraped_nonprofit_organizations
 CREATE TABLE IF NOT EXISTS staging_scraped_nonprofit_organizations (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     source_url TEXT NOT NULL,
@@ -822,7 +1087,7 @@ CREATE TABLE IF NOT EXISTS staging_scraped_nonprofit_organizations (
     focus_condition TEXT NOT NULL
 );
 
--- 53. staging_scraped_iep_advocates
+-- 59. staging_scraped_iep_advocates
 CREATE TABLE IF NOT EXISTS staging_scraped_iep_advocates (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     source_url TEXT NOT NULL,
@@ -851,7 +1116,7 @@ CREATE TABLE IF NOT EXISTS staging_scraped_iep_advocates (
     description TEXT
 );
 
--- 54. staging_scraped_resource_providers
+-- 60. staging_scraped_resource_providers
 CREATE TABLE IF NOT EXISTS staging_scraped_resource_providers (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     source_url TEXT NOT NULL,
@@ -875,7 +1140,7 @@ CREATE TABLE IF NOT EXISTS staging_scraped_resource_providers (
     accepts_medi_cal INTEGER
 );
 
--- 55. staging_scraped_forms
+-- 61. staging_scraped_forms
 CREATE TABLE IF NOT EXISTS staging_scraped_forms (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     source_url TEXT NOT NULL,
@@ -900,7 +1165,56 @@ CREATE TABLE IF NOT EXISTS staging_scraped_forms (
     letter_script TEXT
 );
 
--- 56. staging_scraped_waitlists
+-- 62. staging_scraped_waitlists
+CREATE TABLE IF NOT EXISTS staging_scraped_help_resources (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    source_url TEXT NOT NULL,
+    source_name TEXT,
+    source_type TEXT,
+    scraped_at TEXT NOT NULL,
+    state_id TEXT NOT NULL,
+    county_id TEXT,
+    confidence_score REAL,
+    extraction_notes TEXT,
+    raw_text_excerpt TEXT,
+    suggested_target_table TEXT,
+    suggested_target_id TEXT,
+    duplicate_candidate_id TEXT,
+    review_status TEXT DEFAULT 'pending_review',
+    extracted_name TEXT NOT NULL,
+    gap_family TEXT NOT NULL,
+    help_type TEXT NOT NULL,
+    extracted_website TEXT,
+    extracted_phone TEXT,
+    extracted_email TEXT,
+    extracted_address TEXT,
+    action_url TEXT NOT NULL,
+    service_summary TEXT
+);
+
+CREATE TABLE IF NOT EXISTS staging_scraped_knowledge_content (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    source_url TEXT NOT NULL,
+    source_name TEXT,
+    source_type TEXT,
+    scraped_at TEXT NOT NULL,
+    state_id TEXT NOT NULL,
+    county_id TEXT,
+    confidence_score REAL,
+    extraction_notes TEXT,
+    raw_text_excerpt TEXT,
+    suggested_target_table TEXT,
+    suggested_target_id TEXT,
+    duplicate_candidate_id TEXT,
+    review_status TEXT DEFAULT 'pending_review',
+    slug TEXT NOT NULL,
+    title TEXT NOT NULL,
+    content_category TEXT NOT NULL,
+    canonical_url TEXT NOT NULL,
+    summary TEXT
+);
+
+-- 62. staging_scraped_waitlists
 CREATE TABLE IF NOT EXISTS staging_scraped_waitlists (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     source_url TEXT NOT NULL,
@@ -924,7 +1238,7 @@ CREATE TABLE IF NOT EXISTS staging_scraped_waitlists (
     description TEXT NOT NULL
 );
 
--- 57. staging_scraped_sources
+-- 63. staging_scraped_sources
 CREATE TABLE IF NOT EXISTS staging_scraped_sources (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     source_url TEXT NOT NULL,
@@ -946,7 +1260,7 @@ CREATE TABLE IF NOT EXISTS staging_scraped_sources (
     confidence_rating TEXT NOT NULL
 );
 
--- 58. staging_promotion_audit
+-- 64. staging_promotion_audit
 CREATE TABLE IF NOT EXISTS staging_promotion_audit (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     staging_table TEXT NOT NULL,
@@ -959,5 +1273,3 @@ CREATE TABLE IF NOT EXISTS staging_promotion_audit (
     new_value TEXT,
     reason TEXT NOT NULL
 );
-
-

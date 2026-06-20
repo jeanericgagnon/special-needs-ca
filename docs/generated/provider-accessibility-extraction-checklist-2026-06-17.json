@@ -1,0 +1,3465 @@
+{
+  "generatedAt": "2026-06-17",
+  "dbPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/frontend/ca_disability_navigator.db",
+  "states": [
+    {
+      "stateId": "florida",
+      "providerCount": 14,
+      "buckets": [
+        {
+          "id": "accessibility_page",
+          "label": "Accessibility / Interpreter / Language Access",
+          "prompts": [
+            "check official accessibility or interpreter pages for language access, ASL, wheelchair, and patient-access statements",
+            "only promote accessibility claims if they plausibly apply to the clinic or appointment flow"
+          ],
+          "providers": [
+            {
+              "id": "prov-all-childrens-hospital-fl",
+              "name": "Johns Hopkins All Children's Hospital Developmental Medicine",
+              "sourceUrl": "https://www.hopkinsallchildrens.org",
+              "sourceHost": "hopkinsallchildrens.org",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-fau-card-fl",
+              "name": "FAU CARD (Boca Raton)",
+              "sourceUrl": "https://www.fau.edu/education/centersandprograms/card/",
+              "sourceHost": "fau.edu",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-fsu-card-fl",
+              "name": "FSU CARD (Tallahassee)",
+              "sourceUrl": "https://fsucard.com",
+              "sourceHost": "fsucard.com",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-fsu-mdc-fl",
+              "name": "FSU Multidisciplinary Center",
+              "sourceUrl": "https://mdc.fsu.edu",
+              "sourceHost": "mdc.fsu.edu",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-nemours-childrens-health-fl",
+              "name": "Nemours Children's Health Developmental Medicine (Orlando)",
+              "sourceUrl": "https://www.nemours.org",
+              "sourceHost": "nemours.org",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-nicklaus-childrens-brain-fl",
+              "name": "Nicklaus Children's Brain Institute",
+              "sourceUrl": "https://www.nicklauschildrens.org",
+              "sourceHost": "nicklauschildrens.org",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-ucf-card-fl",
+              "name": "UCF CARD (Orlando)",
+              "sourceUrl": "https://ucf-card.org",
+              "sourceHost": "ucf-card.org",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-uf-card-gainesville-fl",
+              "name": "UF CARD Gainesville",
+              "sourceUrl": "https://card.ufl.edu",
+              "sourceHost": "card.ufl.edu",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-uf-card-jacksonville-fl",
+              "name": "UF CARD Jacksonville",
+              "sourceUrl": "https://hscj.ufl.edu/pediatrics/autism/",
+              "sourceHost": "hscj.ufl.edu",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-uf-health-can-fl",
+              "name": "UF Health Center for Autism and Neurodevelopment (CAN)",
+              "sourceUrl": "https://can.uflhealth.org/",
+              "sourceHost": "can.uflhealth.org",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-um-asac-fl",
+              "name": "UM Autism Spectrum Assessment Clinic (ASAC)",
+              "sourceUrl": "https://asac.psy.miami.edu",
+              "sourceHost": "asac.psy.miami.edu",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-um-nsu-card-fl",
+              "name": "UM-NSU CARD (Coral Gables)",
+              "sourceUrl": "https://www.floridacard.org",
+              "sourceHost": "floridacard.org",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-usf-card-fl",
+              "name": "USF CARD (Tampa)",
+              "sourceUrl": "https://card-usf.fmhi.usf.edu",
+              "sourceHost": "card-usf.fmhi.usf.edu",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-usf-icei-fl",
+              "name": "USF Interdisciplinary Center for Evaluation and Intervention",
+              "sourceUrl": "https://icei.fmhi.usf.edu",
+              "sourceHost": "icei.fmhi.usf.edu",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "appointment_page",
+          "label": "Appointment / Scheduling Page",
+          "prompts": [
+            "check scheduling and referral pages for interpreter requests, telehealth, and visit-format notes",
+            "look for appointment-required, referral-required, or virtual-visit wording"
+          ],
+          "providers": [
+            {
+              "id": "prov-all-childrens-hospital-fl",
+              "name": "Johns Hopkins All Children's Hospital Developmental Medicine",
+              "sourceUrl": "https://www.hopkinsallchildrens.org",
+              "sourceHost": "hopkinsallchildrens.org",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-fau-card-fl",
+              "name": "FAU CARD (Boca Raton)",
+              "sourceUrl": "https://www.fau.edu/education/centersandprograms/card/",
+              "sourceHost": "fau.edu",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-fsu-card-fl",
+              "name": "FSU CARD (Tallahassee)",
+              "sourceUrl": "https://fsucard.com",
+              "sourceHost": "fsucard.com",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-fsu-mdc-fl",
+              "name": "FSU Multidisciplinary Center",
+              "sourceUrl": "https://mdc.fsu.edu",
+              "sourceHost": "mdc.fsu.edu",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-nemours-childrens-health-fl",
+              "name": "Nemours Children's Health Developmental Medicine (Orlando)",
+              "sourceUrl": "https://www.nemours.org",
+              "sourceHost": "nemours.org",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-nicklaus-childrens-brain-fl",
+              "name": "Nicklaus Children's Brain Institute",
+              "sourceUrl": "https://www.nicklauschildrens.org",
+              "sourceHost": "nicklauschildrens.org",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-ucf-card-fl",
+              "name": "UCF CARD (Orlando)",
+              "sourceUrl": "https://ucf-card.org",
+              "sourceHost": "ucf-card.org",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-uf-card-gainesville-fl",
+              "name": "UF CARD Gainesville",
+              "sourceUrl": "https://card.ufl.edu",
+              "sourceHost": "card.ufl.edu",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-uf-card-jacksonville-fl",
+              "name": "UF CARD Jacksonville",
+              "sourceUrl": "https://hscj.ufl.edu/pediatrics/autism/",
+              "sourceHost": "hscj.ufl.edu",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-uf-health-can-fl",
+              "name": "UF Health Center for Autism and Neurodevelopment (CAN)",
+              "sourceUrl": "https://can.uflhealth.org/",
+              "sourceHost": "can.uflhealth.org",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-um-asac-fl",
+              "name": "UM Autism Spectrum Assessment Clinic (ASAC)",
+              "sourceUrl": "https://asac.psy.miami.edu",
+              "sourceHost": "asac.psy.miami.edu",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-um-nsu-card-fl",
+              "name": "UM-NSU CARD (Coral Gables)",
+              "sourceUrl": "https://www.floridacard.org",
+              "sourceHost": "floridacard.org",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-usf-card-fl",
+              "name": "USF CARD (Tampa)",
+              "sourceUrl": "https://card-usf.fmhi.usf.edu",
+              "sourceHost": "card-usf.fmhi.usf.edu",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-usf-icei-fl",
+              "name": "USF Interdisciplinary Center for Evaluation and Intervention",
+              "sourceUrl": "https://icei.fmhi.usf.edu",
+              "sourceHost": "icei.fmhi.usf.edu",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "contact_page",
+          "label": "Contact Page",
+          "prompts": [
+            "check for direct language listings, multilingual phone lines, interpreter wording, and contact-form language choices",
+            "capture only explicit language or interpreter claims"
+          ],
+          "providers": [
+            {
+              "id": "prov-all-childrens-hospital-fl",
+              "name": "Johns Hopkins All Children's Hospital Developmental Medicine",
+              "sourceUrl": "https://www.hopkinsallchildrens.org",
+              "sourceHost": "hopkinsallchildrens.org",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-fau-card-fl",
+              "name": "FAU CARD (Boca Raton)",
+              "sourceUrl": "https://www.fau.edu/education/centersandprograms/card/",
+              "sourceHost": "fau.edu",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-fsu-card-fl",
+              "name": "FSU CARD (Tallahassee)",
+              "sourceUrl": "https://fsucard.com",
+              "sourceHost": "fsucard.com",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-fsu-mdc-fl",
+              "name": "FSU Multidisciplinary Center",
+              "sourceUrl": "https://mdc.fsu.edu",
+              "sourceHost": "mdc.fsu.edu",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-nemours-childrens-health-fl",
+              "name": "Nemours Children's Health Developmental Medicine (Orlando)",
+              "sourceUrl": "https://www.nemours.org",
+              "sourceHost": "nemours.org",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-nicklaus-childrens-brain-fl",
+              "name": "Nicklaus Children's Brain Institute",
+              "sourceUrl": "https://www.nicklauschildrens.org",
+              "sourceHost": "nicklauschildrens.org",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-ucf-card-fl",
+              "name": "UCF CARD (Orlando)",
+              "sourceUrl": "https://ucf-card.org",
+              "sourceHost": "ucf-card.org",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-uf-card-gainesville-fl",
+              "name": "UF CARD Gainesville",
+              "sourceUrl": "https://card.ufl.edu",
+              "sourceHost": "card.ufl.edu",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-uf-card-jacksonville-fl",
+              "name": "UF CARD Jacksonville",
+              "sourceUrl": "https://hscj.ufl.edu/pediatrics/autism/",
+              "sourceHost": "hscj.ufl.edu",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-uf-health-can-fl",
+              "name": "UF Health Center for Autism and Neurodevelopment (CAN)",
+              "sourceUrl": "https://can.uflhealth.org/",
+              "sourceHost": "can.uflhealth.org",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-um-asac-fl",
+              "name": "UM Autism Spectrum Assessment Clinic (ASAC)",
+              "sourceUrl": "https://asac.psy.miami.edu",
+              "sourceHost": "asac.psy.miami.edu",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-um-nsu-card-fl",
+              "name": "UM-NSU CARD (Coral Gables)",
+              "sourceUrl": "https://www.floridacard.org",
+              "sourceHost": "floridacard.org",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-usf-card-fl",
+              "name": "USF CARD (Tampa)",
+              "sourceUrl": "https://card-usf.fmhi.usf.edu",
+              "sourceHost": "card-usf.fmhi.usf.edu",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-usf-icei-fl",
+              "name": "USF Interdisciplinary Center for Evaluation and Intervention",
+              "sourceUrl": "https://icei.fmhi.usf.edu",
+              "sourceHost": "icei.fmhi.usf.edu",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "faq_page",
+          "label": "FAQ / Family Support",
+          "prompts": [
+            "check FAQ or family-support sections for telehealth, language, or support-service wording",
+            "avoid inferring clinic accessibility from generic mission copy"
+          ],
+          "providers": [
+            {
+              "id": "prov-uf-card-jacksonville-fl",
+              "name": "UF CARD Jacksonville",
+              "sourceUrl": "https://hscj.ufl.edu/pediatrics/autism/",
+              "sourceHost": "hscj.ufl.edu",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "patient_services",
+          "label": "Patient Services / Patient Info",
+          "prompts": [
+            "check patient-services or patient-info pages for transportation, interpreter, accessibility, and family-support notes",
+            "look for hospital-wide language access programs that clearly apply to clinic visits"
+          ],
+          "providers": [
+            {
+              "id": "prov-all-childrens-hospital-fl",
+              "name": "Johns Hopkins All Children's Hospital Developmental Medicine",
+              "sourceUrl": "https://www.hopkinsallchildrens.org",
+              "sourceHost": "hopkinsallchildrens.org",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-fau-card-fl",
+              "name": "FAU CARD (Boca Raton)",
+              "sourceUrl": "https://www.fau.edu/education/centersandprograms/card/",
+              "sourceHost": "fau.edu",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-fsu-card-fl",
+              "name": "FSU CARD (Tallahassee)",
+              "sourceUrl": "https://fsucard.com",
+              "sourceHost": "fsucard.com",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-fsu-mdc-fl",
+              "name": "FSU Multidisciplinary Center",
+              "sourceUrl": "https://mdc.fsu.edu",
+              "sourceHost": "mdc.fsu.edu",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-nemours-childrens-health-fl",
+              "name": "Nemours Children's Health Developmental Medicine (Orlando)",
+              "sourceUrl": "https://www.nemours.org",
+              "sourceHost": "nemours.org",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-nicklaus-childrens-brain-fl",
+              "name": "Nicklaus Children's Brain Institute",
+              "sourceUrl": "https://www.nicklauschildrens.org",
+              "sourceHost": "nicklauschildrens.org",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-ucf-card-fl",
+              "name": "UCF CARD (Orlando)",
+              "sourceUrl": "https://ucf-card.org",
+              "sourceHost": "ucf-card.org",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-uf-card-gainesville-fl",
+              "name": "UF CARD Gainesville",
+              "sourceUrl": "https://card.ufl.edu",
+              "sourceHost": "card.ufl.edu",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-uf-card-jacksonville-fl",
+              "name": "UF CARD Jacksonville",
+              "sourceUrl": "https://hscj.ufl.edu/pediatrics/autism/",
+              "sourceHost": "hscj.ufl.edu",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-uf-health-can-fl",
+              "name": "UF Health Center for Autism and Neurodevelopment (CAN)",
+              "sourceUrl": "https://can.uflhealth.org/",
+              "sourceHost": "can.uflhealth.org",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-um-asac-fl",
+              "name": "UM Autism Spectrum Assessment Clinic (ASAC)",
+              "sourceUrl": "https://asac.psy.miami.edu",
+              "sourceHost": "asac.psy.miami.edu",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-um-nsu-card-fl",
+              "name": "UM-NSU CARD (Coral Gables)",
+              "sourceUrl": "https://www.floridacard.org",
+              "sourceHost": "floridacard.org",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-usf-card-fl",
+              "name": "USF CARD (Tampa)",
+              "sourceUrl": "https://card-usf.fmhi.usf.edu",
+              "sourceHost": "card-usf.fmhi.usf.edu",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-usf-icei-fl",
+              "name": "USF Interdisciplinary Center for Evaluation and Intervention",
+              "sourceUrl": "https://icei.fmhi.usf.edu",
+              "sourceHost": "icei.fmhi.usf.edu",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "program_overview",
+          "label": "Program Overview",
+          "prompts": [
+            "check the main program page for language, referral, or family-support wording near intake and eligibility",
+            "capture explicit support details, not implied audience fit"
+          ],
+          "providers": [
+            {
+              "id": "prov-all-childrens-hospital-fl",
+              "name": "Johns Hopkins All Children's Hospital Developmental Medicine",
+              "sourceUrl": "https://www.hopkinsallchildrens.org",
+              "sourceHost": "hopkinsallchildrens.org",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-fau-card-fl",
+              "name": "FAU CARD (Boca Raton)",
+              "sourceUrl": "https://www.fau.edu/education/centersandprograms/card/",
+              "sourceHost": "fau.edu",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-fsu-card-fl",
+              "name": "FSU CARD (Tallahassee)",
+              "sourceUrl": "https://fsucard.com",
+              "sourceHost": "fsucard.com",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-fsu-mdc-fl",
+              "name": "FSU Multidisciplinary Center",
+              "sourceUrl": "https://mdc.fsu.edu",
+              "sourceHost": "mdc.fsu.edu",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-nemours-childrens-health-fl",
+              "name": "Nemours Children's Health Developmental Medicine (Orlando)",
+              "sourceUrl": "https://www.nemours.org",
+              "sourceHost": "nemours.org",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-nicklaus-childrens-brain-fl",
+              "name": "Nicklaus Children's Brain Institute",
+              "sourceUrl": "https://www.nicklauschildrens.org",
+              "sourceHost": "nicklauschildrens.org",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-ucf-card-fl",
+              "name": "UCF CARD (Orlando)",
+              "sourceUrl": "https://ucf-card.org",
+              "sourceHost": "ucf-card.org",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-uf-card-gainesville-fl",
+              "name": "UF CARD Gainesville",
+              "sourceUrl": "https://card.ufl.edu",
+              "sourceHost": "card.ufl.edu",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-uf-card-jacksonville-fl",
+              "name": "UF CARD Jacksonville",
+              "sourceUrl": "https://hscj.ufl.edu/pediatrics/autism/",
+              "sourceHost": "hscj.ufl.edu",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-uf-health-can-fl",
+              "name": "UF Health Center for Autism and Neurodevelopment (CAN)",
+              "sourceUrl": "https://can.uflhealth.org/",
+              "sourceHost": "can.uflhealth.org",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-um-asac-fl",
+              "name": "UM Autism Spectrum Assessment Clinic (ASAC)",
+              "sourceUrl": "https://asac.psy.miami.edu",
+              "sourceHost": "asac.psy.miami.edu",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-um-nsu-card-fl",
+              "name": "UM-NSU CARD (Coral Gables)",
+              "sourceUrl": "https://www.floridacard.org",
+              "sourceHost": "floridacard.org",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-usf-card-fl",
+              "name": "USF CARD (Tampa)",
+              "sourceUrl": "https://card-usf.fmhi.usf.edu",
+              "sourceHost": "card-usf.fmhi.usf.edu",
+              "categories": "developmental_clinic,card_center,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "prov-usf-icei-fl",
+              "name": "USF Interdisciplinary Center for Evaluation and Intervention",
+              "sourceUrl": "https://icei.fmhi.usf.edu",
+              "sourceHost": "icei.fmhi.usf.edu",
+              "categories": "developmental_clinic,diagnostic_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateId": "texas",
+      "providerCount": 9,
+      "buckets": [
+        {
+          "id": "accessibility_page",
+          "label": "Accessibility / Interpreter / Language Access",
+          "prompts": [
+            "check official accessibility or interpreter pages for language access, ASL, wheelchair, and patient-access statements",
+            "only promote accessibility claims if they plausibly apply to the clinic or appointment flow"
+          ],
+          "providers": [
+            {
+              "id": "tx-clinic-bcm-meyer",
+              "name": "Baylor College of Medicine Meyer Center for Developmental Pediatrics",
+              "sourceUrl": "https://www.bcm.edu",
+              "sourceHost": "bcm.edu",
+              "categories": "Clinical,Developmental",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-childrens-autism",
+              "name": "Children's Health - Autism and Developmental Disabilities Clinic",
+              "sourceUrl": "https://www.childrens.com",
+              "sourceHost": "childrens.com",
+              "categories": "Clinical,Autism",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-cook-developmental",
+              "name": "Cook Children's Child Development Center",
+              "sourceUrl": "https://www.cookchildrens.org/services/child-development/",
+              "sourceHost": "cookchildrens.org",
+              "categories": "Clinical,Therapy,Developmental",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "telehealth_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-dell-child-study",
+              "name": "Dell Children's Texas Child Study Center",
+              "sourceUrl": "https://www.dellchildrens.net",
+              "sourceHost": "dellchildrens.net",
+              "categories": "Clinical,Therapy,Developmental",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "telehealth_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-tch-autism",
+              "name": "Texas Children's Hospital Autism Center / Meyer Center",
+              "sourceUrl": "https://www.texaschildrens.org/departments/autism-center",
+              "sourceHost": "texaschildrens.org",
+              "categories": "Clinical,Therapy,Autism",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "telehealth_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-ttuhsc-burkhart",
+              "name": "TTUHSC Burkhart Center for Autism Education & Research",
+              "sourceUrl": "https://www.depts.ttu.edu/burkhartcenter/",
+              "sourceHost": "depts.ttu.edu",
+              "categories": "Clinical,Autism,Education",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-utd-callier",
+              "name": "UT Dallas Callier Center for Communication Disorders",
+              "sourceUrl": "https://calliercenter.utdallas.edu",
+              "sourceHost": "calliercenter.utdallas.edu",
+              "categories": "Clinical,Therapy,Speech",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "telehealth_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-uth-autism",
+              "name": "UT Health Houston Center for Autism and Developmental Disabilities",
+              "sourceUrl": "https://www.uth.edu",
+              "sourceHost": "uth.edu",
+              "categories": "Clinical,Autism",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-utsw-cadd",
+              "name": "UT Southwestern Center for Autism and Developmental Disabilities (CADD)",
+              "sourceUrl": "https://www.utsouthwestern.edu",
+              "sourceHost": "utsouthwestern.edu",
+              "categories": "Clinical,Autism,Developmental",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "appointment_page",
+          "label": "Appointment / Scheduling Page",
+          "prompts": [
+            "check scheduling and referral pages for interpreter requests, telehealth, and visit-format notes",
+            "look for appointment-required, referral-required, or virtual-visit wording"
+          ],
+          "providers": [
+            {
+              "id": "tx-clinic-bcm-meyer",
+              "name": "Baylor College of Medicine Meyer Center for Developmental Pediatrics",
+              "sourceUrl": "https://www.bcm.edu",
+              "sourceHost": "bcm.edu",
+              "categories": "Clinical,Developmental",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-childrens-autism",
+              "name": "Children's Health - Autism and Developmental Disabilities Clinic",
+              "sourceUrl": "https://www.childrens.com",
+              "sourceHost": "childrens.com",
+              "categories": "Clinical,Autism",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-cook-developmental",
+              "name": "Cook Children's Child Development Center",
+              "sourceUrl": "https://www.cookchildrens.org/services/child-development/",
+              "sourceHost": "cookchildrens.org",
+              "categories": "Clinical,Therapy,Developmental",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "telehealth_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-dell-child-study",
+              "name": "Dell Children's Texas Child Study Center",
+              "sourceUrl": "https://www.dellchildrens.net",
+              "sourceHost": "dellchildrens.net",
+              "categories": "Clinical,Therapy,Developmental",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "telehealth_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-tch-autism",
+              "name": "Texas Children's Hospital Autism Center / Meyer Center",
+              "sourceUrl": "https://www.texaschildrens.org/departments/autism-center",
+              "sourceHost": "texaschildrens.org",
+              "categories": "Clinical,Therapy,Autism",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "telehealth_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-ttuhsc-burkhart",
+              "name": "TTUHSC Burkhart Center for Autism Education & Research",
+              "sourceUrl": "https://www.depts.ttu.edu/burkhartcenter/",
+              "sourceHost": "depts.ttu.edu",
+              "categories": "Clinical,Autism,Education",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-utd-callier",
+              "name": "UT Dallas Callier Center for Communication Disorders",
+              "sourceUrl": "https://calliercenter.utdallas.edu",
+              "sourceHost": "calliercenter.utdallas.edu",
+              "categories": "Clinical,Therapy,Speech",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "telehealth_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-uth-autism",
+              "name": "UT Health Houston Center for Autism and Developmental Disabilities",
+              "sourceUrl": "https://www.uth.edu",
+              "sourceHost": "uth.edu",
+              "categories": "Clinical,Autism",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-utsw-cadd",
+              "name": "UT Southwestern Center for Autism and Developmental Disabilities (CADD)",
+              "sourceUrl": "https://www.utsouthwestern.edu",
+              "sourceHost": "utsouthwestern.edu",
+              "categories": "Clinical,Autism,Developmental",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "contact_page",
+          "label": "Contact Page",
+          "prompts": [
+            "check for direct language listings, multilingual phone lines, interpreter wording, and contact-form language choices",
+            "capture only explicit language or interpreter claims"
+          ],
+          "providers": [
+            {
+              "id": "tx-clinic-bcm-meyer",
+              "name": "Baylor College of Medicine Meyer Center for Developmental Pediatrics",
+              "sourceUrl": "https://www.bcm.edu",
+              "sourceHost": "bcm.edu",
+              "categories": "Clinical,Developmental",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-childrens-autism",
+              "name": "Children's Health - Autism and Developmental Disabilities Clinic",
+              "sourceUrl": "https://www.childrens.com",
+              "sourceHost": "childrens.com",
+              "categories": "Clinical,Autism",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-cook-developmental",
+              "name": "Cook Children's Child Development Center",
+              "sourceUrl": "https://www.cookchildrens.org/services/child-development/",
+              "sourceHost": "cookchildrens.org",
+              "categories": "Clinical,Therapy,Developmental",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "telehealth_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-dell-child-study",
+              "name": "Dell Children's Texas Child Study Center",
+              "sourceUrl": "https://www.dellchildrens.net",
+              "sourceHost": "dellchildrens.net",
+              "categories": "Clinical,Therapy,Developmental",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "telehealth_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-tch-autism",
+              "name": "Texas Children's Hospital Autism Center / Meyer Center",
+              "sourceUrl": "https://www.texaschildrens.org/departments/autism-center",
+              "sourceHost": "texaschildrens.org",
+              "categories": "Clinical,Therapy,Autism",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "telehealth_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-ttuhsc-burkhart",
+              "name": "TTUHSC Burkhart Center for Autism Education & Research",
+              "sourceUrl": "https://www.depts.ttu.edu/burkhartcenter/",
+              "sourceHost": "depts.ttu.edu",
+              "categories": "Clinical,Autism,Education",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-utd-callier",
+              "name": "UT Dallas Callier Center for Communication Disorders",
+              "sourceUrl": "https://calliercenter.utdallas.edu",
+              "sourceHost": "calliercenter.utdallas.edu",
+              "categories": "Clinical,Therapy,Speech",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "telehealth_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-uth-autism",
+              "name": "UT Health Houston Center for Autism and Developmental Disabilities",
+              "sourceUrl": "https://www.uth.edu",
+              "sourceHost": "uth.edu",
+              "categories": "Clinical,Autism",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-utsw-cadd",
+              "name": "UT Southwestern Center for Autism and Developmental Disabilities (CADD)",
+              "sourceUrl": "https://www.utsouthwestern.edu",
+              "sourceHost": "utsouthwestern.edu",
+              "categories": "Clinical,Autism,Developmental",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "faq_page",
+          "label": "FAQ / Family Support",
+          "prompts": [
+            "check FAQ or family-support sections for telehealth, language, or support-service wording",
+            "avoid inferring clinic accessibility from generic mission copy"
+          ],
+          "providers": [
+            {
+              "id": "tx-clinic-childrens-autism",
+              "name": "Children's Health - Autism and Developmental Disabilities Clinic",
+              "sourceUrl": "https://www.childrens.com",
+              "sourceHost": "childrens.com",
+              "categories": "Clinical,Autism",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-tch-autism",
+              "name": "Texas Children's Hospital Autism Center / Meyer Center",
+              "sourceUrl": "https://www.texaschildrens.org/departments/autism-center",
+              "sourceHost": "texaschildrens.org",
+              "categories": "Clinical,Therapy,Autism",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "telehealth_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-ttuhsc-burkhart",
+              "name": "TTUHSC Burkhart Center for Autism Education & Research",
+              "sourceUrl": "https://www.depts.ttu.edu/burkhartcenter/",
+              "sourceHost": "depts.ttu.edu",
+              "categories": "Clinical,Autism,Education",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-uth-autism",
+              "name": "UT Health Houston Center for Autism and Developmental Disabilities",
+              "sourceUrl": "https://www.uth.edu",
+              "sourceHost": "uth.edu",
+              "categories": "Clinical,Autism",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-utsw-cadd",
+              "name": "UT Southwestern Center for Autism and Developmental Disabilities (CADD)",
+              "sourceUrl": "https://www.utsouthwestern.edu",
+              "sourceHost": "utsouthwestern.edu",
+              "categories": "Clinical,Autism,Developmental",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "patient_services",
+          "label": "Patient Services / Patient Info",
+          "prompts": [
+            "check patient-services or patient-info pages for transportation, interpreter, accessibility, and family-support notes",
+            "look for hospital-wide language access programs that clearly apply to clinic visits"
+          ],
+          "providers": [
+            {
+              "id": "tx-clinic-bcm-meyer",
+              "name": "Baylor College of Medicine Meyer Center for Developmental Pediatrics",
+              "sourceUrl": "https://www.bcm.edu",
+              "sourceHost": "bcm.edu",
+              "categories": "Clinical,Developmental",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-childrens-autism",
+              "name": "Children's Health - Autism and Developmental Disabilities Clinic",
+              "sourceUrl": "https://www.childrens.com",
+              "sourceHost": "childrens.com",
+              "categories": "Clinical,Autism",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-cook-developmental",
+              "name": "Cook Children's Child Development Center",
+              "sourceUrl": "https://www.cookchildrens.org/services/child-development/",
+              "sourceHost": "cookchildrens.org",
+              "categories": "Clinical,Therapy,Developmental",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "telehealth_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-dell-child-study",
+              "name": "Dell Children's Texas Child Study Center",
+              "sourceUrl": "https://www.dellchildrens.net",
+              "sourceHost": "dellchildrens.net",
+              "categories": "Clinical,Therapy,Developmental",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "telehealth_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-tch-autism",
+              "name": "Texas Children's Hospital Autism Center / Meyer Center",
+              "sourceUrl": "https://www.texaschildrens.org/departments/autism-center",
+              "sourceHost": "texaschildrens.org",
+              "categories": "Clinical,Therapy,Autism",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "telehealth_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-ttuhsc-burkhart",
+              "name": "TTUHSC Burkhart Center for Autism Education & Research",
+              "sourceUrl": "https://www.depts.ttu.edu/burkhartcenter/",
+              "sourceHost": "depts.ttu.edu",
+              "categories": "Clinical,Autism,Education",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-utd-callier",
+              "name": "UT Dallas Callier Center for Communication Disorders",
+              "sourceUrl": "https://calliercenter.utdallas.edu",
+              "sourceHost": "calliercenter.utdallas.edu",
+              "categories": "Clinical,Therapy,Speech",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "telehealth_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-uth-autism",
+              "name": "UT Health Houston Center for Autism and Developmental Disabilities",
+              "sourceUrl": "https://www.uth.edu",
+              "sourceHost": "uth.edu",
+              "categories": "Clinical,Autism",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-utsw-cadd",
+              "name": "UT Southwestern Center for Autism and Developmental Disabilities (CADD)",
+              "sourceUrl": "https://www.utsouthwestern.edu",
+              "sourceHost": "utsouthwestern.edu",
+              "categories": "Clinical,Autism,Developmental",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "program_overview",
+          "label": "Program Overview",
+          "prompts": [
+            "check the main program page for language, referral, or family-support wording near intake and eligibility",
+            "capture explicit support details, not implied audience fit"
+          ],
+          "providers": [
+            {
+              "id": "tx-clinic-bcm-meyer",
+              "name": "Baylor College of Medicine Meyer Center for Developmental Pediatrics",
+              "sourceUrl": "https://www.bcm.edu",
+              "sourceHost": "bcm.edu",
+              "categories": "Clinical,Developmental",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-childrens-autism",
+              "name": "Children's Health - Autism and Developmental Disabilities Clinic",
+              "sourceUrl": "https://www.childrens.com",
+              "sourceHost": "childrens.com",
+              "categories": "Clinical,Autism",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-cook-developmental",
+              "name": "Cook Children's Child Development Center",
+              "sourceUrl": "https://www.cookchildrens.org/services/child-development/",
+              "sourceHost": "cookchildrens.org",
+              "categories": "Clinical,Therapy,Developmental",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "telehealth_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-dell-child-study",
+              "name": "Dell Children's Texas Child Study Center",
+              "sourceUrl": "https://www.dellchildrens.net",
+              "sourceHost": "dellchildrens.net",
+              "categories": "Clinical,Therapy,Developmental",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "telehealth_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-tch-autism",
+              "name": "Texas Children's Hospital Autism Center / Meyer Center",
+              "sourceUrl": "https://www.texaschildrens.org/departments/autism-center",
+              "sourceHost": "texaschildrens.org",
+              "categories": "Clinical,Therapy,Autism",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "telehealth_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-ttuhsc-burkhart",
+              "name": "TTUHSC Burkhart Center for Autism Education & Research",
+              "sourceUrl": "https://www.depts.ttu.edu/burkhartcenter/",
+              "sourceHost": "depts.ttu.edu",
+              "categories": "Clinical,Autism,Education",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-utd-callier",
+              "name": "UT Dallas Callier Center for Communication Disorders",
+              "sourceUrl": "https://calliercenter.utdallas.edu",
+              "sourceHost": "calliercenter.utdallas.edu",
+              "categories": "Clinical,Therapy,Speech",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "telehealth_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-uth-autism",
+              "name": "UT Health Houston Center for Autism and Developmental Disabilities",
+              "sourceUrl": "https://www.uth.edu",
+              "sourceHost": "uth.edu",
+              "categories": "Clinical,Autism",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-utsw-cadd",
+              "name": "UT Southwestern Center for Autism and Developmental Disabilities (CADD)",
+              "sourceUrl": "https://www.utsouthwestern.edu",
+              "sourceHost": "utsouthwestern.edu",
+              "categories": "Clinical,Autism,Developmental",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "telehealth_page",
+          "label": "Telehealth / Virtual Care",
+          "prompts": [
+            "look for explicit telehealth, virtual visit, or remote therapy wording",
+            "capture only clear service-delivery modality statements"
+          ],
+          "providers": [
+            {
+              "id": "tx-clinic-cook-developmental",
+              "name": "Cook Children's Child Development Center",
+              "sourceUrl": "https://www.cookchildrens.org/services/child-development/",
+              "sourceHost": "cookchildrens.org",
+              "categories": "Clinical,Therapy,Developmental",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "telehealth_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-dell-child-study",
+              "name": "Dell Children's Texas Child Study Center",
+              "sourceUrl": "https://www.dellchildrens.net",
+              "sourceHost": "dellchildrens.net",
+              "categories": "Clinical,Therapy,Developmental",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "telehealth_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-tch-autism",
+              "name": "Texas Children's Hospital Autism Center / Meyer Center",
+              "sourceUrl": "https://www.texaschildrens.org/departments/autism-center",
+              "sourceHost": "texaschildrens.org",
+              "categories": "Clinical,Therapy,Autism",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "telehealth_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "tx-clinic-utd-callier",
+              "name": "UT Dallas Callier Center for Communication Disorders",
+              "sourceUrl": "https://calliercenter.utdallas.edu",
+              "sourceHost": "calliercenter.utdallas.edu",
+              "categories": "Clinical,Therapy,Speech",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "telehealth_page"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateId": "pennsylvania",
+      "providerCount": 7,
+      "buckets": [
+        {
+          "id": "accessibility_page",
+          "label": "Accessibility / Interpreter / Language Access",
+          "prompts": [
+            "check official accessibility or interpreter pages for language access, ASL, wheelchair, and patient-access statements",
+            "only promote accessibility claims if they plausibly apply to the clinic or appointment flow"
+          ],
+          "providers": [
+            {
+              "id": "pa-clinic-chop",
+              "name": "Children's Hospital of Philadelphia (CHOP) Center for Autism Research & Developmental Pediatrics",
+              "sourceUrl": "https://www.chop.edu/centers-programs/developmental-and-behavioral-pediatrics",
+              "sourceHost": "chop.edu",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-chop-kop",
+              "name": "Children's Hospital of Philadelphia (CHOP) Specialty Care Center King of Prussia",
+              "sourceUrl": "https://www.chop.edu/locations/chop-care-center-king-prussia",
+              "sourceHost": "chop.edu",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-geisinger",
+              "name": "Geisinger Autism & Developmental Medicine Institute (ADMI)",
+              "sourceUrl": "https://www.geisinger.org/patient-care/specialties-and-services/autism-and-developmental-medicine-institute",
+              "sourceHost": "geisinger.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-psu",
+              "name": "Penn State Health Children's Hospital - Developmental Pediatrics",
+              "sourceUrl": "https://www.pennstatehealth.org/services-treatments/developmental-pediatrics",
+              "sourceHost": "pennstatehealth.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-st-christophers",
+              "name": "St. Christopher's Hospital for Children - Developmental Pediatrics",
+              "sourceUrl": "https://www.stchristophershospital.com/services/developmental-pediatrics",
+              "sourceHost": "stchristophershospital.com",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-temple",
+              "name": "Temple Health / Temple University Hospital Pediatric Developmental Services",
+              "sourceUrl": "https://www.templehealth.org",
+              "sourceHost": "templehealth.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-upmc",
+              "name": "UPMC Children's Hospital of Pittsburgh - Child Development Unit",
+              "sourceUrl": "https://www.chp.edu/our-services/developmental-pediatrics",
+              "sourceHost": "chp.edu",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "appointment_page",
+          "label": "Appointment / Scheduling Page",
+          "prompts": [
+            "check scheduling and referral pages for interpreter requests, telehealth, and visit-format notes",
+            "look for appointment-required, referral-required, or virtual-visit wording"
+          ],
+          "providers": [
+            {
+              "id": "pa-clinic-chop",
+              "name": "Children's Hospital of Philadelphia (CHOP) Center for Autism Research & Developmental Pediatrics",
+              "sourceUrl": "https://www.chop.edu/centers-programs/developmental-and-behavioral-pediatrics",
+              "sourceHost": "chop.edu",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-chop-kop",
+              "name": "Children's Hospital of Philadelphia (CHOP) Specialty Care Center King of Prussia",
+              "sourceUrl": "https://www.chop.edu/locations/chop-care-center-king-prussia",
+              "sourceHost": "chop.edu",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-geisinger",
+              "name": "Geisinger Autism & Developmental Medicine Institute (ADMI)",
+              "sourceUrl": "https://www.geisinger.org/patient-care/specialties-and-services/autism-and-developmental-medicine-institute",
+              "sourceHost": "geisinger.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-psu",
+              "name": "Penn State Health Children's Hospital - Developmental Pediatrics",
+              "sourceUrl": "https://www.pennstatehealth.org/services-treatments/developmental-pediatrics",
+              "sourceHost": "pennstatehealth.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-st-christophers",
+              "name": "St. Christopher's Hospital for Children - Developmental Pediatrics",
+              "sourceUrl": "https://www.stchristophershospital.com/services/developmental-pediatrics",
+              "sourceHost": "stchristophershospital.com",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-temple",
+              "name": "Temple Health / Temple University Hospital Pediatric Developmental Services",
+              "sourceUrl": "https://www.templehealth.org",
+              "sourceHost": "templehealth.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-upmc",
+              "name": "UPMC Children's Hospital of Pittsburgh - Child Development Unit",
+              "sourceUrl": "https://www.chp.edu/our-services/developmental-pediatrics",
+              "sourceHost": "chp.edu",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "contact_page",
+          "label": "Contact Page",
+          "prompts": [
+            "check for direct language listings, multilingual phone lines, interpreter wording, and contact-form language choices",
+            "capture only explicit language or interpreter claims"
+          ],
+          "providers": [
+            {
+              "id": "pa-clinic-chop",
+              "name": "Children's Hospital of Philadelphia (CHOP) Center for Autism Research & Developmental Pediatrics",
+              "sourceUrl": "https://www.chop.edu/centers-programs/developmental-and-behavioral-pediatrics",
+              "sourceHost": "chop.edu",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-chop-kop",
+              "name": "Children's Hospital of Philadelphia (CHOP) Specialty Care Center King of Prussia",
+              "sourceUrl": "https://www.chop.edu/locations/chop-care-center-king-prussia",
+              "sourceHost": "chop.edu",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-geisinger",
+              "name": "Geisinger Autism & Developmental Medicine Institute (ADMI)",
+              "sourceUrl": "https://www.geisinger.org/patient-care/specialties-and-services/autism-and-developmental-medicine-institute",
+              "sourceHost": "geisinger.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-psu",
+              "name": "Penn State Health Children's Hospital - Developmental Pediatrics",
+              "sourceUrl": "https://www.pennstatehealth.org/services-treatments/developmental-pediatrics",
+              "sourceHost": "pennstatehealth.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-st-christophers",
+              "name": "St. Christopher's Hospital for Children - Developmental Pediatrics",
+              "sourceUrl": "https://www.stchristophershospital.com/services/developmental-pediatrics",
+              "sourceHost": "stchristophershospital.com",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-temple",
+              "name": "Temple Health / Temple University Hospital Pediatric Developmental Services",
+              "sourceUrl": "https://www.templehealth.org",
+              "sourceHost": "templehealth.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-upmc",
+              "name": "UPMC Children's Hospital of Pittsburgh - Child Development Unit",
+              "sourceUrl": "https://www.chp.edu/our-services/developmental-pediatrics",
+              "sourceHost": "chp.edu",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "faq_page",
+          "label": "FAQ / Family Support",
+          "prompts": [
+            "check FAQ or family-support sections for telehealth, language, or support-service wording",
+            "avoid inferring clinic accessibility from generic mission copy"
+          ],
+          "providers": [
+            {
+              "id": "pa-clinic-chop",
+              "name": "Children's Hospital of Philadelphia (CHOP) Center for Autism Research & Developmental Pediatrics",
+              "sourceUrl": "https://www.chop.edu/centers-programs/developmental-and-behavioral-pediatrics",
+              "sourceHost": "chop.edu",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-chop-kop",
+              "name": "Children's Hospital of Philadelphia (CHOP) Specialty Care Center King of Prussia",
+              "sourceUrl": "https://www.chop.edu/locations/chop-care-center-king-prussia",
+              "sourceHost": "chop.edu",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-geisinger",
+              "name": "Geisinger Autism & Developmental Medicine Institute (ADMI)",
+              "sourceUrl": "https://www.geisinger.org/patient-care/specialties-and-services/autism-and-developmental-medicine-institute",
+              "sourceHost": "geisinger.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-psu",
+              "name": "Penn State Health Children's Hospital - Developmental Pediatrics",
+              "sourceUrl": "https://www.pennstatehealth.org/services-treatments/developmental-pediatrics",
+              "sourceHost": "pennstatehealth.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-st-christophers",
+              "name": "St. Christopher's Hospital for Children - Developmental Pediatrics",
+              "sourceUrl": "https://www.stchristophershospital.com/services/developmental-pediatrics",
+              "sourceHost": "stchristophershospital.com",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-temple",
+              "name": "Temple Health / Temple University Hospital Pediatric Developmental Services",
+              "sourceUrl": "https://www.templehealth.org",
+              "sourceHost": "templehealth.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-upmc",
+              "name": "UPMC Children's Hospital of Pittsburgh - Child Development Unit",
+              "sourceUrl": "https://www.chp.edu/our-services/developmental-pediatrics",
+              "sourceHost": "chp.edu",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "patient_services",
+          "label": "Patient Services / Patient Info",
+          "prompts": [
+            "check patient-services or patient-info pages for transportation, interpreter, accessibility, and family-support notes",
+            "look for hospital-wide language access programs that clearly apply to clinic visits"
+          ],
+          "providers": [
+            {
+              "id": "pa-clinic-chop",
+              "name": "Children's Hospital of Philadelphia (CHOP) Center for Autism Research & Developmental Pediatrics",
+              "sourceUrl": "https://www.chop.edu/centers-programs/developmental-and-behavioral-pediatrics",
+              "sourceHost": "chop.edu",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-chop-kop",
+              "name": "Children's Hospital of Philadelphia (CHOP) Specialty Care Center King of Prussia",
+              "sourceUrl": "https://www.chop.edu/locations/chop-care-center-king-prussia",
+              "sourceHost": "chop.edu",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-geisinger",
+              "name": "Geisinger Autism & Developmental Medicine Institute (ADMI)",
+              "sourceUrl": "https://www.geisinger.org/patient-care/specialties-and-services/autism-and-developmental-medicine-institute",
+              "sourceHost": "geisinger.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-psu",
+              "name": "Penn State Health Children's Hospital - Developmental Pediatrics",
+              "sourceUrl": "https://www.pennstatehealth.org/services-treatments/developmental-pediatrics",
+              "sourceHost": "pennstatehealth.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-st-christophers",
+              "name": "St. Christopher's Hospital for Children - Developmental Pediatrics",
+              "sourceUrl": "https://www.stchristophershospital.com/services/developmental-pediatrics",
+              "sourceHost": "stchristophershospital.com",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-temple",
+              "name": "Temple Health / Temple University Hospital Pediatric Developmental Services",
+              "sourceUrl": "https://www.templehealth.org",
+              "sourceHost": "templehealth.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-upmc",
+              "name": "UPMC Children's Hospital of Pittsburgh - Child Development Unit",
+              "sourceUrl": "https://www.chp.edu/our-services/developmental-pediatrics",
+              "sourceHost": "chp.edu",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "program_overview",
+          "label": "Program Overview",
+          "prompts": [
+            "check the main program page for language, referral, or family-support wording near intake and eligibility",
+            "capture explicit support details, not implied audience fit"
+          ],
+          "providers": [
+            {
+              "id": "pa-clinic-chop",
+              "name": "Children's Hospital of Philadelphia (CHOP) Center for Autism Research & Developmental Pediatrics",
+              "sourceUrl": "https://www.chop.edu/centers-programs/developmental-and-behavioral-pediatrics",
+              "sourceHost": "chop.edu",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-chop-kop",
+              "name": "Children's Hospital of Philadelphia (CHOP) Specialty Care Center King of Prussia",
+              "sourceUrl": "https://www.chop.edu/locations/chop-care-center-king-prussia",
+              "sourceHost": "chop.edu",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-geisinger",
+              "name": "Geisinger Autism & Developmental Medicine Institute (ADMI)",
+              "sourceUrl": "https://www.geisinger.org/patient-care/specialties-and-services/autism-and-developmental-medicine-institute",
+              "sourceHost": "geisinger.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-psu",
+              "name": "Penn State Health Children's Hospital - Developmental Pediatrics",
+              "sourceUrl": "https://www.pennstatehealth.org/services-treatments/developmental-pediatrics",
+              "sourceHost": "pennstatehealth.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-st-christophers",
+              "name": "St. Christopher's Hospital for Children - Developmental Pediatrics",
+              "sourceUrl": "https://www.stchristophershospital.com/services/developmental-pediatrics",
+              "sourceHost": "stchristophershospital.com",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-temple",
+              "name": "Temple Health / Temple University Hospital Pediatric Developmental Services",
+              "sourceUrl": "https://www.templehealth.org",
+              "sourceHost": "templehealth.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            },
+            {
+              "id": "pa-clinic-upmc",
+              "name": "UPMC Children's Hospital of Pittsburgh - Child Development Unit",
+              "sourceUrl": "https://www.chp.edu/our-services/developmental-pediatrics",
+              "sourceHost": "chp.edu",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "call",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "appointment_page",
+                "faq_page"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stateId": "illinois",
+      "providerCount": 6,
+      "buckets": [
+        {
+          "id": "accessibility_page",
+          "label": "Accessibility / Interpreter / Language Access",
+          "prompts": [
+            "check official accessibility or interpreter pages for language access, ASL, wheelchair, and patient-access statements",
+            "only promote accessibility claims if they plausibly apply to the clinic or appointment flow"
+          ],
+          "providers": [
+            {
+              "id": "clinic-carle-dev-peds-il",
+              "name": "Carle Foundation Hospital Developmental Pediatrics",
+              "sourceUrl": "https://www.carle.org",
+              "sourceHost": "carle.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "clinic-hope-chicago-il",
+              "name": "The Hope Clinic - Developmental Services",
+              "sourceUrl": "https://www.thehopeclinic.org",
+              "sourceHost": "thehopeclinic.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "clinic-lurie-childrens-il",
+              "name": "Lurie Children's Hospital Autism Program",
+              "sourceUrl": "https://www.luriechildrens.org",
+              "sourceHost": "luriechildrens.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "clinic-osf-peoria-il",
+              "name": "OSF HealthCare Children's Hospital of Illinois - Child Development Center",
+              "sourceUrl": "https://www.osfhealthcare.org",
+              "sourceHost": "osfhealthcare.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "clinic-rush-aarts-il",
+              "name": "Rush University Medical Center - Autism Assessment, Research, and Treatment Services (AARTS)",
+              "sourceUrl": "https://www.rush.edu",
+              "sourceHost": "rush.edu",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "clinic-uic-family-il",
+              "name": "UIC Family Clinic / Developmental Disabilities Family Clinic",
+              "sourceUrl": "https://www.ahs.uic.edu",
+              "sourceHost": "ahs.uic.edu",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "appointment_page",
+          "label": "Appointment / Scheduling Page",
+          "prompts": [
+            "check scheduling and referral pages for interpreter requests, telehealth, and visit-format notes",
+            "look for appointment-required, referral-required, or virtual-visit wording"
+          ],
+          "providers": [
+            {
+              "id": "clinic-carle-dev-peds-il",
+              "name": "Carle Foundation Hospital Developmental Pediatrics",
+              "sourceUrl": "https://www.carle.org",
+              "sourceHost": "carle.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "clinic-hope-chicago-il",
+              "name": "The Hope Clinic - Developmental Services",
+              "sourceUrl": "https://www.thehopeclinic.org",
+              "sourceHost": "thehopeclinic.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "clinic-lurie-childrens-il",
+              "name": "Lurie Children's Hospital Autism Program",
+              "sourceUrl": "https://www.luriechildrens.org",
+              "sourceHost": "luriechildrens.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "clinic-osf-peoria-il",
+              "name": "OSF HealthCare Children's Hospital of Illinois - Child Development Center",
+              "sourceUrl": "https://www.osfhealthcare.org",
+              "sourceHost": "osfhealthcare.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "clinic-rush-aarts-il",
+              "name": "Rush University Medical Center - Autism Assessment, Research, and Treatment Services (AARTS)",
+              "sourceUrl": "https://www.rush.edu",
+              "sourceHost": "rush.edu",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "clinic-uic-family-il",
+              "name": "UIC Family Clinic / Developmental Disabilities Family Clinic",
+              "sourceUrl": "https://www.ahs.uic.edu",
+              "sourceHost": "ahs.uic.edu",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "contact_page",
+          "label": "Contact Page",
+          "prompts": [
+            "check for direct language listings, multilingual phone lines, interpreter wording, and contact-form language choices",
+            "capture only explicit language or interpreter claims"
+          ],
+          "providers": [
+            {
+              "id": "clinic-carle-dev-peds-il",
+              "name": "Carle Foundation Hospital Developmental Pediatrics",
+              "sourceUrl": "https://www.carle.org",
+              "sourceHost": "carle.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "clinic-hope-chicago-il",
+              "name": "The Hope Clinic - Developmental Services",
+              "sourceUrl": "https://www.thehopeclinic.org",
+              "sourceHost": "thehopeclinic.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "clinic-lurie-childrens-il",
+              "name": "Lurie Children's Hospital Autism Program",
+              "sourceUrl": "https://www.luriechildrens.org",
+              "sourceHost": "luriechildrens.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "clinic-osf-peoria-il",
+              "name": "OSF HealthCare Children's Hospital of Illinois - Child Development Center",
+              "sourceUrl": "https://www.osfhealthcare.org",
+              "sourceHost": "osfhealthcare.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "clinic-rush-aarts-il",
+              "name": "Rush University Medical Center - Autism Assessment, Research, and Treatment Services (AARTS)",
+              "sourceUrl": "https://www.rush.edu",
+              "sourceHost": "rush.edu",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "clinic-uic-family-il",
+              "name": "UIC Family Clinic / Developmental Disabilities Family Clinic",
+              "sourceUrl": "https://www.ahs.uic.edu",
+              "sourceHost": "ahs.uic.edu",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "faq_page",
+          "label": "FAQ / Family Support",
+          "prompts": [
+            "check FAQ or family-support sections for telehealth, language, or support-service wording",
+            "avoid inferring clinic accessibility from generic mission copy"
+          ],
+          "providers": [
+            {
+              "id": "clinic-carle-dev-peds-il",
+              "name": "Carle Foundation Hospital Developmental Pediatrics",
+              "sourceUrl": "https://www.carle.org",
+              "sourceHost": "carle.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "clinic-hope-chicago-il",
+              "name": "The Hope Clinic - Developmental Services",
+              "sourceUrl": "https://www.thehopeclinic.org",
+              "sourceHost": "thehopeclinic.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "clinic-lurie-childrens-il",
+              "name": "Lurie Children's Hospital Autism Program",
+              "sourceUrl": "https://www.luriechildrens.org",
+              "sourceHost": "luriechildrens.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "clinic-osf-peoria-il",
+              "name": "OSF HealthCare Children's Hospital of Illinois - Child Development Center",
+              "sourceUrl": "https://www.osfhealthcare.org",
+              "sourceHost": "osfhealthcare.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "clinic-rush-aarts-il",
+              "name": "Rush University Medical Center - Autism Assessment, Research, and Treatment Services (AARTS)",
+              "sourceUrl": "https://www.rush.edu",
+              "sourceHost": "rush.edu",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "clinic-uic-family-il",
+              "name": "UIC Family Clinic / Developmental Disabilities Family Clinic",
+              "sourceUrl": "https://www.ahs.uic.edu",
+              "sourceHost": "ahs.uic.edu",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "patient_services",
+          "label": "Patient Services / Patient Info",
+          "prompts": [
+            "check patient-services or patient-info pages for transportation, interpreter, accessibility, and family-support notes",
+            "look for hospital-wide language access programs that clearly apply to clinic visits"
+          ],
+          "providers": [
+            {
+              "id": "clinic-carle-dev-peds-il",
+              "name": "Carle Foundation Hospital Developmental Pediatrics",
+              "sourceUrl": "https://www.carle.org",
+              "sourceHost": "carle.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "clinic-hope-chicago-il",
+              "name": "The Hope Clinic - Developmental Services",
+              "sourceUrl": "https://www.thehopeclinic.org",
+              "sourceHost": "thehopeclinic.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "clinic-lurie-childrens-il",
+              "name": "Lurie Children's Hospital Autism Program",
+              "sourceUrl": "https://www.luriechildrens.org",
+              "sourceHost": "luriechildrens.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "clinic-osf-peoria-il",
+              "name": "OSF HealthCare Children's Hospital of Illinois - Child Development Center",
+              "sourceUrl": "https://www.osfhealthcare.org",
+              "sourceHost": "osfhealthcare.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "clinic-rush-aarts-il",
+              "name": "Rush University Medical Center - Autism Assessment, Research, and Treatment Services (AARTS)",
+              "sourceUrl": "https://www.rush.edu",
+              "sourceHost": "rush.edu",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "clinic-uic-family-il",
+              "name": "UIC Family Clinic / Developmental Disabilities Family Clinic",
+              "sourceUrl": "https://www.ahs.uic.edu",
+              "sourceHost": "ahs.uic.edu",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "program_overview",
+          "label": "Program Overview",
+          "prompts": [
+            "check the main program page for language, referral, or family-support wording near intake and eligibility",
+            "capture explicit support details, not implied audience fit"
+          ],
+          "providers": [
+            {
+              "id": "clinic-carle-dev-peds-il",
+              "name": "Carle Foundation Hospital Developmental Pediatrics",
+              "sourceUrl": "https://www.carle.org",
+              "sourceHost": "carle.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "clinic-hope-chicago-il",
+              "name": "The Hope Clinic - Developmental Services",
+              "sourceUrl": "https://www.thehopeclinic.org",
+              "sourceHost": "thehopeclinic.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "clinic-lurie-childrens-il",
+              "name": "Lurie Children's Hospital Autism Program",
+              "sourceUrl": "https://www.luriechildrens.org",
+              "sourceHost": "luriechildrens.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "clinic-osf-peoria-il",
+              "name": "OSF HealthCare Children's Hospital of Illinois - Child Development Center",
+              "sourceUrl": "https://www.osfhealthcare.org",
+              "sourceHost": "osfhealthcare.org",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "clinic-rush-aarts-il",
+              "name": "Rush University Medical Center - Autism Assessment, Research, and Treatment Services (AARTS)",
+              "sourceUrl": "https://www.rush.edu",
+              "sourceHost": "rush.edu",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            },
+            {
+              "id": "clinic-uic-family-il",
+              "name": "UIC Family Clinic / Developmental Disabilities Family Clinic",
+              "sourceUrl": "https://www.ahs.uic.edu",
+              "sourceHost": "ahs.uic.edu",
+              "categories": "developmental_pediatrics,autism_clinic,card_center",
+              "nextStepType": "email",
+              "buckets": [
+                "contact_page",
+                "patient_services",
+                "program_overview",
+                "accessibility_page",
+                "faq_page",
+                "appointment_page"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

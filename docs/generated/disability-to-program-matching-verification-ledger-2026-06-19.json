@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-06-19",
+  "family": "disability_to_program_matching",
+  "summary": {
+    "rowCount": 1,
+    "byResolutionState": {
+      "dependency_verification_only": 1
+    }
+  },
+  "rows": [
+    {
+      "family": "disability_to_program_matching",
+      "blockerId": "matching_dependency_verification",
+      "resolutionState": "dependency_verification_only",
+      "terminalResolutionState": "promotion_only",
+      "currentEvidence": "Reference tables are present; only post-closure dependency verification remains.",
+      "nextArtifact": "docs/generated/launch-critical-data-acquisition-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:launch-critical-data-plan"
+    }
+  ]
+}

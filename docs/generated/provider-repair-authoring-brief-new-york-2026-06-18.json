@@ -1,0 +1,41 @@
+{
+  "briefId": "provider_repair_authoring_brief",
+  "generatedAt": "2026-06-18T06:28:22.687Z",
+  "generatedDate": "2026-06-18",
+  "sourcePacketPath": "docs/generated/provider-repair-batch-packet-pull-now-new-york-2026-06-18.json",
+  "stateId": "new-york",
+  "purpose": "Deterministic authoring brief for unresolved provider repair rows that still need same-org first-party replacement URLs.",
+  "summary": {
+    "unresolvedRows": 2,
+    "rowsWithSavedEvidence": 2,
+    "rowsWithCandidateHints": 0
+  },
+  "rows": [
+    {
+      "stateId": "new-york",
+      "stateName": "New York",
+      "actionClass": "author_alternate_first_party_target",
+      "followupReason": "access_blocked_403",
+      "sourceUrl": "https://www.montefiore.org/rose-f-kennedy-center",
+      "hostname": "www.montefiore.org",
+      "repeatCount": 4,
+      "savedEvidencePath": "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03309-new-york-providers-care-montefiore-rose-f-kennedy-center.html",
+      "savedEvidenceStatus": "saved_html_present",
+      "candidateHints": [],
+      "nextAction": "Author a current same-org first-party replacement URL before the next provider fetch cycle."
+    },
+    {
+      "stateId": "new-york",
+      "stateName": "New York",
+      "actionClass": "author_alternate_first_party_target",
+      "followupReason": "access_blocked_403",
+      "sourceUrl": "https://www.upstate.edu/gch",
+      "hostname": "www.upstate.edu",
+      "repeatCount": 3,
+      "savedEvidencePath": "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03431-new-york-providers-care-upstate-golisano-children-s-hospital.html",
+      "savedEvidenceStatus": "saved_html_present",
+      "candidateHints": [],
+      "nextAction": "Author a current same-org first-party replacement URL before the next provider fetch cycle."
+    }
+  ]
+}

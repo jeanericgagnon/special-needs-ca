@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useDeferredValue, useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { 
   Wand2, 
@@ -12,13 +12,49 @@ import {
   PiggyBank, 
   FileText, 
   MapPin, 
+  Search,
   ArrowRight,
-  Compass
+  Compass,
+  CheckCircle2,
+  Shield,
+  Languages,
+  ClipboardList,
+  Bookmark,
+  Trash2
 } from 'lucide-react';
 import { stateConfigs } from '@/lib/stateConfigs';
+import { DirectoryFoundationSnapshot } from '@/lib/db';
+import {
+  getDirectoryFieldCoverage,
+  getDirectoryAvailabilityDisplayLabel,
+  getStalenessLabel,
+  hasDirectorySampleAccessibilitySummary,
+  hasDirectorySampleNextStepSummary,
+  isRenderableDirectoryFoundationRecord,
+  parseDirectoryList,
+} from '@/lib/directoryFoundation';
+import { getSavedDirectoryResources, removeSavedDirectoryResource, type SavedDirectoryResource } from '@/lib/savedResources';
+import { trackDirectoryAnalyticsEvent } from '@/lib/directoryAnalytics';
 
-export default function FindHelpClient() {
+type FindHelpClientProps = {
+  foundationSnapshot: DirectoryFoundationSnapshot;
+};
+
+function formatTag(tag: string) {
+  return tag
+    .replace(/_/g, ' ')
+    .replace(/-/g, ' ')
+    .replace(/\b\w/g, (letter) => letter.toUpperCase());
+}
+
+export default function FindHelpClient({ foundationSnapshot }: FindHelpClientProps) {
   const [stateId, setStateId] = useState('california');
+  const [hubSearchQuery, setHubSearchQuery] = useState('');
+  const [savedResources, setSavedResources] = useState<SavedDirectoryResource[]>(() => (
+    typeof window === 'undefined' ? [] : getSavedDirectoryResources()
+  ));
+  const deferredHubSearchQuery = useDeferredValue(hubSearchQuery);
+  const hasMountedSearchRef = useRef(false);
 
   const statesList = Object.keys(stateConfigs).map(key => ({
     id: key,
@@ -130,6 +166,90 @@ export default function FindHelpClient() {
     }
   ];
 
+  const sampleRecords = [
+    ...foundationSnapshot.samples.providers.map((record) => ({ kind: 'Provider', record })),
+    ...foundationSnapshot.samples.nonprofits.map((record) => ({ kind: 'Nonprofit', record })),
+    ...foundationSnapshot.samples.advocates.map((record) => ({ kind: 'Advocate', record })),
+  ].filter(({ record }) => isRenderableDirectoryFoundationRecord(record));
+
+  const trimmedHubSearchQuery = deferredHubSearchQuery.trim().toLowerCase();
+  const filteredTools = tools.filter((tool) => {
+    if (!trimmedHubSearchQuery) return true;
+    return [
+      tool.title,
+      tool.category,
+      tool.description,
+      tool.actionText,
+    ].some((value) => value.toLowerCase().includes(trimmedHubSearchQuery));
+  });
+
+  const filteredSampleRecords = sampleRecords.filter(({ kind, record }) => {
+    if (!trimmedHubSearchQuery) return true;
+
+    const serviceTags = parseDirectoryList(record.service_tags).join(' ');
+    const servingTags = parseDirectoryList(record.serving_tags).join(' ');
+    const languages = 'languages' in record ? record.languages : ('languages_spoken' in record ? record.languages_spoken : '');
+
+    return [
+      kind,
+      record.name,
+      record.next_step_label,
+      record.next_step_type,
+      record.accessibility_notes,
+      serviceTags,
+      servingTags,
+      languages,
+    ]
+      .filter(Boolean)
+      .some((value) => String(value).toLowerCase().includes(trimmedHubSearchQuery));
+  });
+
+  const hubSearchResultCount = filteredTools.length + filteredSampleRecords.length;
+
+  useEffect(() => {
+    if (!hasMountedSearchRef.current) {
+      hasMountedSearchRef.current = true;
+      if (!trimmedHubSearchQuery) return;
+    }
+
+    const timeout = window.setTimeout(() => {
+      trackDirectoryAnalyticsEvent({
+        event: 'directory_search',
+        stateId,
+        pageType: 'find_help',
+        searchQuery: trimmedHubSearchQuery || undefined,
+        resultCount: hubSearchResultCount,
+      });
+
+      if (hubSearchResultCount === 0) {
+        trackDirectoryAnalyticsEvent({
+          event: 'directory_no_results',
+          stateId,
+          pageType: 'find_help',
+          searchQuery: trimmedHubSearchQuery || undefined,
+          resultCount: 0,
+        });
+
+        if (trimmedHubSearchQuery) {
+          trackDirectoryAnalyticsEvent({
+            event: 'directory_dead_end',
+            stateId,
+            pageType: 'find_help',
+            searchQuery: trimmedHubSearchQuery,
+            resultCount: 0,
+          });
+        }
+      }
+    }, 350);
+
+    return () => window.clearTimeout(timeout);
+  }, [hubSearchResultCount, stateId, trimmedHubSearchQuery]);
+
+  const handleRemoveSavedResource = (resource: SavedDirectoryResource) => {
+    removeSavedDirectoryResource(resource.id, resource.recordType);
+    setSavedResources(getSavedDirectoryResources());
+  };
+
   return (
     <main style={{ maxWidth: '1200px', margin: '0 auto', padding: '3rem 1.5rem', minHeight: '80vh' }}>
       
@@ -145,6 +265,91 @@ export default function FindHelpClient() {
         <p style={{ fontSize: '1.25rem', color: 'var(--text-light)', maxWidth: '750px', margin: '0 auto', lineHeight: '1.6' }}>
           Avoid denials, calculate timelines, and search national advocate lists. Personalize descriptions and local directories using the state selector below.
         </p>
+      </div>
+
+      <div
+        className="glass-panel"
+        style={{
+          padding: '1.75rem 2rem',
+          borderRadius: '24px',
+          marginBottom: '2rem',
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
+          gap: '1rem'
+        }}
+      >
+        <div>
+          <div style={{ fontSize: '0.78rem', textTransform: 'uppercase', letterSpacing: '0.06em', color: 'var(--text-light)', marginBottom: '0.35rem' }}>Directory Records</div>
+          <div style={{ fontSize: '1.7rem', fontWeight: 800 }}>{(foundationSnapshot.totals.providers + foundationSnapshot.totals.nonprofits + foundationSnapshot.totals.advocates).toLocaleString()}</div>
+          <div style={{ fontSize: '0.9rem', color: 'var(--text-light)' }}>providers, nonprofits, and advocates in the current model</div>
+        </div>
+        <div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.95rem', fontWeight: 700 }}><CheckCircle2 size={16} color="var(--primary-color)" /> Availability</div>
+          <div style={{ fontSize: '1.45rem', fontWeight: 800, marginTop: '0.2rem' }}>{foundationSnapshot.structuredCoverage.availability.toLocaleString()}</div>
+          <div style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>records carrying availability, waitlist, funding, or checked freshness signals</div>
+        </div>
+        <div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.95rem', fontWeight: 700 }}><ClipboardList size={16} color="var(--primary-color)" /> Next Steps</div>
+          <div style={{ fontSize: '1.45rem', fontWeight: 800, marginTop: '0.2rem' }}>{foundationSnapshot.structuredCoverage.nextSteps.toLocaleString()}</div>
+          <div style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>records with intake or action routing fields</div>
+        </div>
+        <div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.95rem', fontWeight: 700 }}><Languages size={16} color="var(--primary-color)" /> Accessibility</div>
+          <div style={{ fontSize: '1.45rem', fontWeight: 800, marginTop: '0.2rem' }}>{foundationSnapshot.structuredCoverage.accessibility.toLocaleString()}</div>
+          <div style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>records with language, modality, or access notes</div>
+        </div>
+        <div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.95rem', fontWeight: 700 }}><Shield size={16} color="var(--primary-color)" /> Access Gaps</div>
+          <div style={{ fontSize: '1.45rem', fontWeight: 800, marginTop: '0.2rem' }}>{foundationSnapshot.trustFlags.trustedRowsMissingAccessibility.toLocaleString()}</div>
+          <div style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>trusted public rows still missing all accessibility signals</div>
+        </div>
+        <div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.95rem', fontWeight: 700 }}><Shield size={16} color="var(--primary-color)" /> Trust Flags</div>
+          <div style={{ fontSize: '1.45rem', fontWeight: 800, marginTop: '0.2rem' }}>{foundationSnapshot.trustFlags.manualReviewRequired.toLocaleString()}</div>
+          <div style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>records explicitly marked for manual review</div>
+        </div>
+      </div>
+
+      <div
+        className="glass-panel"
+        style={{
+          padding: '1.2rem 1.35rem',
+          borderRadius: '20px',
+          marginBottom: '2rem',
+          display: 'flex',
+          flexWrap: 'wrap',
+          alignItems: 'center',
+          gap: '1rem',
+        }}
+      >
+        <div style={{ minWidth: '180px' }}>
+          <div style={{ fontSize: '0.82rem', textTransform: 'uppercase', letterSpacing: '0.06em', color: 'var(--text-light)', marginBottom: '0.3rem' }}>
+            Search This Hub
+          </div>
+          <div style={{ fontSize: '0.92rem', color: 'var(--text-light)', lineHeight: 1.55 }}>
+            Filter parent tools and live directory samples without touching private data.
+          </div>
+        </div>
+        <div style={{ flex: 1, minWidth: '260px', position: 'relative' }}>
+          <Search size={18} color="var(--text-light)" style={{ position: 'absolute', left: '0.95rem', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none' }} />
+          <input
+            type="text"
+            value={hubSearchQuery}
+            onChange={(e) => setHubSearchQuery(e.target.value)}
+            placeholder="Search tools, supports, tags, and sample resources"
+            style={{
+              width: '100%',
+              padding: '0.8rem 1rem 0.8rem 2.7rem',
+              borderRadius: '12px',
+              fontSize: '0.95rem',
+              border: '1px solid rgba(0, 0, 0, 0.08)',
+              background: 'white',
+            }}
+          />
+        </div>
+        <div style={{ fontSize: '0.85rem', color: 'var(--text-light)', minWidth: '140px', textAlign: 'right' }}>
+          {hubSearchResultCount.toLocaleString()} visible matches
+        </div>
       </div>
 
       {/* Glassmorphic State Selector Section */}
@@ -192,6 +397,249 @@ export default function FindHelpClient() {
         </div>
       </div>
 
+      <section style={{ marginBottom: '3.25rem' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', gap: '1rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
+          <div>
+            <h2 style={{ fontSize: '1.5rem', fontWeight: 800, margin: 0 }}>Saved Resources</h2>
+            <p style={{ fontSize: '0.95rem', color: 'var(--text-light)', margin: '0.45rem 0 0 0', maxWidth: '760px', lineHeight: 1.6 }}>
+              Resources saved from public directory cards stay in this browser only. No child profile or private case data is attached to this list.
+            </p>
+          </div>
+          <div style={{ fontSize: '0.82rem', color: 'var(--text-light)' }}>
+            {savedResources.length.toLocaleString()} saved locally
+          </div>
+        </div>
+
+        <div
+          className="glass-panel"
+          style={{
+            padding: '0.95rem 1.1rem',
+            borderRadius: '18px',
+            marginBottom: '1rem',
+            display: 'flex',
+            flexWrap: 'wrap',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            gap: '0.85rem',
+          }}
+        >
+          <div style={{ fontSize: '0.88rem', color: 'var(--text-light)', lineHeight: 1.55 }}>
+            <strong style={{ color: 'var(--text-main)' }}>Saved from county and diagnosis pages:</strong> use the
+            {' '}<span style={{ color: 'var(--text-main)', fontWeight: 600 }}>Save resource</span>{' '}
+            button on public directory cards, then come back here for quick return visits.
+          </div>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.6rem' }}>
+            <Link
+              href={`/counties/${stateId}`}
+              style={{
+                textDecoration: 'none',
+                fontSize: '0.8rem',
+                fontWeight: 700,
+                color: 'var(--primary-color)',
+                background: 'rgba(59, 130, 246, 0.08)',
+                border: '1px solid rgba(59, 130, 246, 0.14)',
+                borderRadius: '999px',
+                padding: '0.45rem 0.75rem',
+              }}
+            >
+              Browse county pages
+            </Link>
+            <Link
+              href={`/benefits/${stateId}`}
+              style={{
+                textDecoration: 'none',
+                fontSize: '0.8rem',
+                fontWeight: 700,
+                color: 'var(--primary-color)',
+                background: 'rgba(59, 130, 246, 0.08)',
+                border: '1px solid rgba(59, 130, 246, 0.14)',
+                borderRadius: '999px',
+                padding: '0.45rem 0.75rem',
+              }}
+            >
+              Browse diagnosis pages
+            </Link>
+          </div>
+        </div>
+
+        {savedResources.length === 0 ? (
+          <div className="glass-panel" style={{ padding: '1.25rem', borderRadius: '20px', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+            <Bookmark size={18} color="var(--text-light)" />
+            <span style={{ fontSize: '0.92rem', color: 'var(--text-light)', lineHeight: 1.6 }}>
+              Save a provider, nonprofit, or advocate from a county or diagnosis directory card and it will show up here for quick return visits.
+            </span>
+          </div>
+        ) : (
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem' }}>
+            {savedResources.map((resource) => (
+              <article
+                key={`${resource.recordType}-${resource.id}`}
+                className="glass-panel"
+                style={{ padding: '1.1rem 1.15rem', borderRadius: '20px', display: 'flex', flexDirection: 'column', gap: '0.7rem' }}
+              >
+                <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem', alignItems: 'flex-start' }}>
+                  <div>
+                    <div style={{ fontSize: '0.72rem', fontWeight: 700, color: 'var(--primary-color)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                      {formatTag(resource.recordType)}
+                    </div>
+                    <h3 style={{ fontSize: '1rem', fontWeight: 800, margin: '0.2rem 0 0 0' }}>{resource.name}</h3>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => handleRemoveSavedResource(resource)}
+                    style={{
+                      border: '1px solid rgba(220, 38, 38, 0.14)',
+                      background: 'rgba(255,255,255,0.96)',
+                      color: '#b91c1c',
+                      borderRadius: '999px',
+                      padding: '0.32rem 0.55rem',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '0.35rem',
+                      fontSize: '0.72rem',
+                      fontWeight: 600,
+                      cursor: 'pointer',
+                    }}
+                  >
+                    <Trash2 size={12} /> Remove
+                  </button>
+                </div>
+
+                <div style={{ fontSize: '0.82rem', color: 'var(--text-light)', lineHeight: 1.55 }}>
+                  {resource.stateId && <div><strong style={{ color: 'var(--text-main)' }}>State:</strong> {formatTag(resource.stateId)}</div>}
+                  {resource.countyId && <div><strong style={{ color: 'var(--text-main)' }}>County:</strong> {formatTag(resource.countyId)}</div>}
+                  {resource.verificationStatus && <div><strong style={{ color: 'var(--text-main)' }}>Trust:</strong> {formatTag(resource.verificationStatus)}</div>}
+                </div>
+
+                {(resource.phone || resource.email || resource.website || resource.sourceUrl) && (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem', fontSize: '0.82rem' }}>
+                    {resource.phone && <span>{resource.phone}</span>}
+                    {resource.email && <span>{resource.email}</span>}
+                    {resource.originPath && (
+                      <Link href={resource.originPath} style={{ color: 'var(--primary-color)', textDecoration: 'underline', fontWeight: 600 }}>
+                        Back to this page
+                      </Link>
+                    )}
+                    {resource.website && (
+                      <a href={resource.website} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>
+                        Visit website
+                      </a>
+                    )}
+                    {!resource.website && !resource.originPath && resource.sourceUrl && (
+                      <a href={resource.sourceUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>
+                        View source
+                      </a>
+                    )}
+                  </div>
+                )}
+
+                <div style={{ fontSize: '0.74rem', color: 'var(--text-light)' }}>
+                  Saved {new Date(resource.savedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+                </div>
+              </article>
+            ))}
+          </div>
+        )}
+      </section>
+
+      <section style={{ marginBottom: '3.25rem' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', gap: '1rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
+          <div>
+            <h2 style={{ fontSize: '1.5rem', fontWeight: 800, margin: 0 }}>Live Directory Foundation</h2>
+            <p style={{ fontSize: '0.95rem', color: 'var(--text-light)', margin: '0.45rem 0 0 0', maxWidth: '760px', lineHeight: 1.6 }}>
+              This section only shows structured fields that already exist on sourced records. Empty, unsupported, or synthetic fields stay hidden.
+            </p>
+          </div>
+          <div style={{ fontSize: '0.82rem', color: 'var(--text-light)' }}>
+            Missing source URLs: {foundationSnapshot.trustFlags.recordsMissingSourceUrl.toLocaleString()} | Unsupported claim flags: {foundationSnapshot.trustFlags.unsupportedClaimsFlagged.toLocaleString()} | Trusted rows missing accessibility: {foundationSnapshot.trustFlags.trustedRowsMissingAccessibility.toLocaleString()}
+          </div>
+        </div>
+
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1rem' }}>
+          {filteredSampleRecords.length === 0 && (
+            <div className="glass-panel" style={{ padding: '1.25rem', borderRadius: '20px' }}>
+              <strong style={{ display: 'block', marginBottom: '0.4rem' }}>
+                {trimmedHubSearchQuery ? 'No live directory samples match this search yet' : 'No public-safe structured samples yet'}
+              </strong>
+              <span style={{ fontSize: '0.9rem', color: 'var(--text-light)', lineHeight: 1.6 }}>
+                {trimmedHubSearchQuery
+                  ? 'Try a broader term like respite, autism, education, or advocacy to surface matching structured examples.'
+                  : 'The model now supports availability, intake, tags, accessibility, and claim groundwork. This section stays sparse until sourced records carry those fields.'}
+              </span>
+            </div>
+          )}
+          {filteredSampleRecords.map(({ kind, record }) => {
+            const coverage = getDirectoryFieldCoverage(record);
+            const serviceTags = parseDirectoryList(record.service_tags).slice(0, 4);
+            const servingTags = parseDirectoryList(record.serving_tags).slice(0, 3);
+            const lastChecked = getStalenessLabel(record);
+            const languages = 'languages' in record ? record.languages : ('languages_spoken' in record ? record.languages_spoken : null);
+            const availabilityLabel = getDirectoryAvailabilityDisplayLabel(record);
+            const showNextStepSummary = hasDirectorySampleNextStepSummary(record);
+            const showAccessibilitySummary = hasDirectorySampleAccessibilitySummary(record);
+
+            return (
+              <article
+                key={`${kind}-${record.id}`}
+                className="glass-panel"
+                style={{ padding: '1.25rem', borderRadius: '20px', display: 'flex', flexDirection: 'column', gap: '0.85rem' }}
+              >
+                <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem', alignItems: 'flex-start' }}>
+                  <div>
+                    <div style={{ fontSize: '0.72rem', fontWeight: 700, color: 'var(--primary-color)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>{kind}</div>
+                    <h3 style={{ fontSize: '1.05rem', fontWeight: 800, margin: '0.2rem 0 0 0' }}>{record.name}</h3>
+                  </div>
+                  {availabilityLabel && (
+                    <span style={{ fontSize: '0.75rem', fontWeight: 700, padding: '0.3rem 0.55rem', borderRadius: '999px', background: 'rgba(15, 118, 110, 0.08)', color: '#0f766e' }}>
+                      {availabilityLabel}
+                    </span>
+                  )}
+                </div>
+
+                {serviceTags.length > 0 && (
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
+                    {serviceTags.map((tag) => (
+                      <span key={tag} style={{ fontSize: '0.74rem', padding: '0.25rem 0.45rem', borderRadius: '999px', background: 'rgba(59, 130, 246, 0.08)', color: '#2563eb' }}>
+                        {formatTag(tag)}
+                      </span>
+                    ))}
+                  </div>
+                )}
+
+                {servingTags.length > 0 && (
+                  <div style={{ fontSize: '0.82rem', color: 'var(--text-light)', lineHeight: 1.5 }}>
+                    <strong style={{ color: 'var(--text-main)' }}>Serves:</strong> {servingTags.map(formatTag).join(', ')}
+                  </div>
+                )}
+
+                {showNextStepSummary && (
+                  <div style={{ fontSize: '0.82rem', lineHeight: 1.55 }}>
+                    <strong>Next step:</strong>{' '}
+                    {record.next_step_label || (record.next_step_type ? formatTag(record.next_step_type) : null)}
+                    {record.next_step_phone ? ` • ${record.next_step_phone}` : ''}
+                    {record.next_step_email ? ` • ${record.next_step_email}` : ''}
+                  </div>
+                )}
+
+                {showAccessibilitySummary && (
+                  <div style={{ fontSize: '0.82rem', color: 'var(--text-light)', lineHeight: 1.55 }}>
+                    {languages && <div><strong style={{ color: 'var(--text-main)' }}>Languages:</strong> {languages}</div>}
+                    {record.accessibility_notes && <div><strong style={{ color: 'var(--text-main)' }}>Access:</strong> {record.accessibility_notes}</div>}
+                  </div>
+                )}
+
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.6rem', fontSize: '0.78rem', color: 'var(--text-light)' }}>
+                  {coverage.hasAvailability && <span>Availability tracked</span>}
+                  {coverage.hasTags && <span>Tagged</span>}
+                  {coverage.hasClaimGroundwork && <span>Claim groundwork present</span>}
+                  {lastChecked && <span>Freshness: {lastChecked}</span>}
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      </section>
+
       {/* Grid of Dynamic Cards */}
       <div 
         style={{ 
@@ -200,7 +648,14 @@ export default function FindHelpClient() {
           gap: '2rem' 
         }}
       >
-        {tools.map((tool, idx) => {
+        {filteredTools.length === 0 ? (
+          <div className="glass-panel" style={{ padding: '1.5rem', borderRadius: '24px' }}>
+            <strong style={{ display: 'block', marginBottom: '0.45rem' }}>No tools match that hub search</strong>
+            <span style={{ fontSize: '0.92rem', color: 'var(--text-light)', lineHeight: 1.6 }}>
+              Try a broader keyword like waiver, IEP, forms, county, behavior, or trust.
+            </span>
+          </div>
+        ) : filteredTools.map((tool, idx) => {
           const badge = getCategoryStyles(tool.category);
           return (
             <div 

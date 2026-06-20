@@ -1,0 +1,1192 @@
+{
+  "evidencePath": "/var/folders/s7/yzsmwnmx2yvfm_3t_ysn8rrw0000gn/T/ablefull-nonprofit-acc-17NQnF/artifacts/thegao-org/2026-06-17T16-21-32-974Z/evidence.json",
+  "promotionPath": "/var/folders/s7/yzsmwnmx2yvfm_3t_ysn8rrw0000gn/T/ablefull-nonprofit-acc-17NQnF/artifacts/thegao-org/2026-06-17T16-21-32-974Z/promotion-decisions.json",
+  "summaryPath": "/var/folders/s7/yzsmwnmx2yvfm_3t_ysn8rrw0000gn/T/ablefull-nonprofit-acc-17NQnF/artifacts/thegao-org/2026-06-17T16-21-32-974Z/summary.json",
+  "mdReportPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/nonprofit-accessibility-domain-thegao-org-2099-01-01.md",
+  "generatedAt": "2099-01-01",
+  "runStamp": "2026-06-17T16-21-32-974Z",
+  "domain": "thegao.org",
+  "orgTerms": [
+    "Georgia Advocacy Office",
+    "(GAO)"
+  ],
+  "dryRun": false,
+  "safeStatus": "partially_safe_org_level_only",
+  "beforeDomainCounts": {
+    "total": 159,
+    "inPerson": 0,
+    "orgLevelPresence": 159,
+    "localInPersonEvidence": 0,
+    "trustedMissing": 0
+  },
+  "afterDomainCounts": {
+    "total": 159,
+    "inPerson": 0,
+    "orgLevelPresence": 159,
+    "localInPersonEvidence": 0,
+    "trustedMissing": 0
+  },
+  "candidateCount": 159,
+  "mutationCount": 0,
+  "skippedCount": 159,
+  "classificationCounts": {
+    "county_service_area_record": 159
+  },
+  "evidenceLevelCounts": {
+    "statewide_service_area": 159
+  },
+  "actionCounts": {
+    "bulk_org_level_promotion": 159
+  },
+  "warnings": [
+    "statewide_many_county_service_area",
+    "many_to_one_evidence",
+    "bulk_org_level_review_threshold",
+    "address_count_tiny_relative_to_row_count"
+  ],
+  "sampleRows": [
+    {
+      "id": "ga-np-gao-appling-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "county_id": "appling-ga",
+      "county_name": "Appling County",
+      "state_id": "georgia",
+      "rowType": "county_service_area_record",
+      "evidenceLevel": "statewide_service_area",
+      "action": "bulk_org_level_promotion",
+      "warnings": [
+        "many_to_one_evidence",
+        "county_rows_share_one_org_address"
+      ],
+      "before": {
+        "in_person_services": 0,
+        "accessibility_notes": "Organization lists a physical office at 1 W Ct Square #625, Decatur, GA 30030 and appears to serve families statewide; this does not confirm an in-person office in Appling County.",
+        "accessibility_evidence_level": "statewide_service_area",
+        "accessibility_source_address": "1 W Ct Square #625, Decatur, GA 30030"
+      },
+      "after": {
+        "accessibility_notes": "Organization lists a physical office at 1 W Ct Square #625, Decatur, GA 30030 and appears to serve families statewide; this does not confirm an in-person office in Appling County.",
+        "data_quality_notes": "nonprofit_accessibility_batch evidence=first_party_address confidence=high fetched_at=2026-06-17T15:06:29.853Z source_url=https://thegao.org/ nonprofit_accessibility_batch_v2 evidence=first_party_address level=statewide_service_area row_type=county_service_area_record confidence=high fetched_at=2026-06-17T15:27:02.299Z source_url=https://thegao.org/ warnings=many_to_one_evidence|county_rows_share_one_org_address bulk_org_level_promotion nonprofit_accessibility_batch_v2 evidence=first_party_address level=statewide_service_area row_type=county_service_area_record confidence=high fetched_at=2026-06-17T16:21:33.008Z source_url=https://thegao.org/ warnings=many_to_one_evidence|county_rows_share_one_org_address bulk_org_level_promotion",
+        "checked_at": "2026-06-17T16:21:33.008Z",
+        "accessibility_evidence_level": "statewide_service_area",
+        "accessibility_source_address": "1 W Ct Square #625, Decatur, GA 30030",
+        "in_person_services": 0
+      },
+      "publicSafeWording": "Organization lists a physical office at 1 W Ct Square #625, Decatur, GA 30030 and appears to serve families statewide; this does not confirm an in-person office in Appling County."
+    },
+    {
+      "id": "ga-np-gao-atkinson-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "county_id": "atkinson-ga",
+      "county_name": "Atkinson County",
+      "state_id": "georgia",
+      "rowType": "county_service_area_record",
+      "evidenceLevel": "statewide_service_area",
+      "action": "bulk_org_level_promotion",
+      "warnings": [
+        "many_to_one_evidence",
+        "county_rows_share_one_org_address"
+      ],
+      "before": {
+        "in_person_services": 0,
+        "accessibility_notes": "Organization lists a physical office at 1 W Ct Square #625, Decatur, GA 30030 and appears to serve families statewide; this does not confirm an in-person office in Atkinson County.",
+        "accessibility_evidence_level": "statewide_service_area",
+        "accessibility_source_address": "1 W Ct Square #625, Decatur, GA 30030"
+      },
+      "after": {
+        "accessibility_notes": "Organization lists a physical office at 1 W Ct Square #625, Decatur, GA 30030 and appears to serve families statewide; this does not confirm an in-person office in Atkinson County.",
+        "data_quality_notes": "nonprofit_accessibility_batch evidence=first_party_address confidence=high fetched_at=2026-06-17T15:06:29.853Z source_url=https://thegao.org/ nonprofit_accessibility_batch_v2 evidence=first_party_address level=statewide_service_area row_type=county_service_area_record confidence=high fetched_at=2026-06-17T15:27:02.299Z source_url=https://thegao.org/ warnings=many_to_one_evidence|county_rows_share_one_org_address bulk_org_level_promotion nonprofit_accessibility_batch_v2 evidence=first_party_address level=statewide_service_area row_type=county_service_area_record confidence=high fetched_at=2026-06-17T16:21:33.008Z source_url=https://thegao.org/ warnings=many_to_one_evidence|county_rows_share_one_org_address bulk_org_level_promotion",
+        "checked_at": "2026-06-17T16:21:33.008Z",
+        "accessibility_evidence_level": "statewide_service_area",
+        "accessibility_source_address": "1 W Ct Square #625, Decatur, GA 30030",
+        "in_person_services": 0
+      },
+      "publicSafeWording": "Organization lists a physical office at 1 W Ct Square #625, Decatur, GA 30030 and appears to serve families statewide; this does not confirm an in-person office in Atkinson County."
+    },
+    {
+      "id": "ga-np-gao-bacon-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "county_id": "bacon-ga",
+      "county_name": "Bacon County",
+      "state_id": "georgia",
+      "rowType": "county_service_area_record",
+      "evidenceLevel": "statewide_service_area",
+      "action": "bulk_org_level_promotion",
+      "warnings": [
+        "many_to_one_evidence",
+        "county_rows_share_one_org_address"
+      ],
+      "before": {
+        "in_person_services": 0,
+        "accessibility_notes": "Organization lists a physical office at 1 W Ct Square #625, Decatur, GA 30030 and appears to serve families statewide; this does not confirm an in-person office in Bacon County.",
+        "accessibility_evidence_level": "statewide_service_area",
+        "accessibility_source_address": "1 W Ct Square #625, Decatur, GA 30030"
+      },
+      "after": {
+        "accessibility_notes": "Organization lists a physical office at 1 W Ct Square #625, Decatur, GA 30030 and appears to serve families statewide; this does not confirm an in-person office in Bacon County.",
+        "data_quality_notes": "nonprofit_accessibility_batch evidence=first_party_address confidence=high fetched_at=2026-06-17T15:06:29.853Z source_url=https://thegao.org/ nonprofit_accessibility_batch_v2 evidence=first_party_address level=statewide_service_area row_type=county_service_area_record confidence=high fetched_at=2026-06-17T15:27:02.299Z source_url=https://thegao.org/ warnings=many_to_one_evidence|county_rows_share_one_org_address bulk_org_level_promotion nonprofit_accessibility_batch_v2 evidence=first_party_address level=statewide_service_area row_type=county_service_area_record confidence=high fetched_at=2026-06-17T16:21:33.008Z source_url=https://thegao.org/ warnings=many_to_one_evidence|county_rows_share_one_org_address bulk_org_level_promotion",
+        "checked_at": "2026-06-17T16:21:33.008Z",
+        "accessibility_evidence_level": "statewide_service_area",
+        "accessibility_source_address": "1 W Ct Square #625, Decatur, GA 30030",
+        "in_person_services": 0
+      },
+      "publicSafeWording": "Organization lists a physical office at 1 W Ct Square #625, Decatur, GA 30030 and appears to serve families statewide; this does not confirm an in-person office in Bacon County."
+    },
+    {
+      "id": "ga-np-gao-baker-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "county_id": "baker-ga",
+      "county_name": "Baker County",
+      "state_id": "georgia",
+      "rowType": "county_service_area_record",
+      "evidenceLevel": "statewide_service_area",
+      "action": "bulk_org_level_promotion",
+      "warnings": [
+        "many_to_one_evidence",
+        "county_rows_share_one_org_address"
+      ],
+      "before": {
+        "in_person_services": 0,
+        "accessibility_notes": "Organization lists a physical office at 1 W Ct Square #625, Decatur, GA 30030 and appears to serve families statewide; this does not confirm an in-person office in Baker County.",
+        "accessibility_evidence_level": "statewide_service_area",
+        "accessibility_source_address": "1 W Ct Square #625, Decatur, GA 30030"
+      },
+      "after": {
+        "accessibility_notes": "Organization lists a physical office at 1 W Ct Square #625, Decatur, GA 30030 and appears to serve families statewide; this does not confirm an in-person office in Baker County.",
+        "data_quality_notes": "nonprofit_accessibility_batch evidence=first_party_address confidence=high fetched_at=2026-06-17T15:06:29.853Z source_url=https://thegao.org/ nonprofit_accessibility_batch_v2 evidence=first_party_address level=statewide_service_area row_type=county_service_area_record confidence=high fetched_at=2026-06-17T15:27:02.299Z source_url=https://thegao.org/ warnings=many_to_one_evidence|county_rows_share_one_org_address bulk_org_level_promotion nonprofit_accessibility_batch_v2 evidence=first_party_address level=statewide_service_area row_type=county_service_area_record confidence=high fetched_at=2026-06-17T16:21:33.008Z source_url=https://thegao.org/ warnings=many_to_one_evidence|county_rows_share_one_org_address bulk_org_level_promotion",
+        "checked_at": "2026-06-17T16:21:33.008Z",
+        "accessibility_evidence_level": "statewide_service_area",
+        "accessibility_source_address": "1 W Ct Square #625, Decatur, GA 30030",
+        "in_person_services": 0
+      },
+      "publicSafeWording": "Organization lists a physical office at 1 W Ct Square #625, Decatur, GA 30030 and appears to serve families statewide; this does not confirm an in-person office in Baker County."
+    },
+    {
+      "id": "ga-np-gao-baldwin-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "county_id": "baldwin-ga",
+      "county_name": "Baldwin County",
+      "state_id": "georgia",
+      "rowType": "county_service_area_record",
+      "evidenceLevel": "statewide_service_area",
+      "action": "bulk_org_level_promotion",
+      "warnings": [
+        "many_to_one_evidence",
+        "county_rows_share_one_org_address"
+      ],
+      "before": {
+        "in_person_services": 0,
+        "accessibility_notes": "Organization lists a physical office at 1 W Ct Square #625, Decatur, GA 30030 and appears to serve families statewide; this does not confirm an in-person office in Baldwin County.",
+        "accessibility_evidence_level": "statewide_service_area",
+        "accessibility_source_address": "1 W Ct Square #625, Decatur, GA 30030"
+      },
+      "after": {
+        "accessibility_notes": "Organization lists a physical office at 1 W Ct Square #625, Decatur, GA 30030 and appears to serve families statewide; this does not confirm an in-person office in Baldwin County.",
+        "data_quality_notes": "nonprofit_accessibility_batch evidence=first_party_address confidence=high fetched_at=2026-06-17T15:06:29.853Z source_url=https://thegao.org/ nonprofit_accessibility_batch_v2 evidence=first_party_address level=statewide_service_area row_type=county_service_area_record confidence=high fetched_at=2026-06-17T15:27:02.299Z source_url=https://thegao.org/ warnings=many_to_one_evidence|county_rows_share_one_org_address bulk_org_level_promotion nonprofit_accessibility_batch_v2 evidence=first_party_address level=statewide_service_area row_type=county_service_area_record confidence=high fetched_at=2026-06-17T16:21:33.008Z source_url=https://thegao.org/ warnings=many_to_one_evidence|county_rows_share_one_org_address bulk_org_level_promotion",
+        "checked_at": "2026-06-17T16:21:33.008Z",
+        "accessibility_evidence_level": "statewide_service_area",
+        "accessibility_source_address": "1 W Ct Square #625, Decatur, GA 30030",
+        "in_person_services": 0
+      },
+      "publicSafeWording": "Organization lists a physical office at 1 W Ct Square #625, Decatur, GA 30030 and appears to serve families statewide; this does not confirm an in-person office in Baldwin County."
+    },
+    {
+      "id": "ga-np-gao-banks-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "county_id": "banks-ga",
+      "county_name": "Banks County",
+      "state_id": "georgia",
+      "rowType": "county_service_area_record",
+      "evidenceLevel": "statewide_service_area",
+      "action": "bulk_org_level_promotion",
+      "warnings": [
+        "many_to_one_evidence",
+        "county_rows_share_one_org_address"
+      ],
+      "before": {
+        "in_person_services": 0,
+        "accessibility_notes": "Organization lists a physical office at 1 W Ct Square #625, Decatur, GA 30030 and appears to serve families statewide; this does not confirm an in-person office in Banks County.",
+        "accessibility_evidence_level": "statewide_service_area",
+        "accessibility_source_address": "1 W Ct Square #625, Decatur, GA 30030"
+      },
+      "after": {
+        "accessibility_notes": "Organization lists a physical office at 1 W Ct Square #625, Decatur, GA 30030 and appears to serve families statewide; this does not confirm an in-person office in Banks County.",
+        "data_quality_notes": "nonprofit_accessibility_batch evidence=first_party_address confidence=high fetched_at=2026-06-17T15:06:29.853Z source_url=https://thegao.org/ nonprofit_accessibility_batch_v2 evidence=first_party_address level=statewide_service_area row_type=county_service_area_record confidence=high fetched_at=2026-06-17T15:27:02.299Z source_url=https://thegao.org/ warnings=many_to_one_evidence|county_rows_share_one_org_address bulk_org_level_promotion nonprofit_accessibility_batch_v2 evidence=first_party_address level=statewide_service_area row_type=county_service_area_record confidence=high fetched_at=2026-06-17T16:21:33.008Z source_url=https://thegao.org/ warnings=many_to_one_evidence|county_rows_share_one_org_address bulk_org_level_promotion",
+        "checked_at": "2026-06-17T16:21:33.008Z",
+        "accessibility_evidence_level": "statewide_service_area",
+        "accessibility_source_address": "1 W Ct Square #625, Decatur, GA 30030",
+        "in_person_services": 0
+      },
+      "publicSafeWording": "Organization lists a physical office at 1 W Ct Square #625, Decatur, GA 30030 and appears to serve families statewide; this does not confirm an in-person office in Banks County."
+    },
+    {
+      "id": "ga-np-gao-barrow-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "county_id": "barrow-ga",
+      "county_name": "Barrow County",
+      "state_id": "georgia",
+      "rowType": "county_service_area_record",
+      "evidenceLevel": "statewide_service_area",
+      "action": "bulk_org_level_promotion",
+      "warnings": [
+        "many_to_one_evidence",
+        "county_rows_share_one_org_address"
+      ],
+      "before": {
+        "in_person_services": 0,
+        "accessibility_notes": "Organization lists a physical office at 1 W Ct Square #625, Decatur, GA 30030 and appears to serve families statewide; this does not confirm an in-person office in Barrow County.",
+        "accessibility_evidence_level": "statewide_service_area",
+        "accessibility_source_address": "1 W Ct Square #625, Decatur, GA 30030"
+      },
+      "after": {
+        "accessibility_notes": "Organization lists a physical office at 1 W Ct Square #625, Decatur, GA 30030 and appears to serve families statewide; this does not confirm an in-person office in Barrow County.",
+        "data_quality_notes": "nonprofit_accessibility_batch evidence=first_party_address confidence=high fetched_at=2026-06-17T15:06:29.853Z source_url=https://thegao.org/ nonprofit_accessibility_batch_v2 evidence=first_party_address level=statewide_service_area row_type=county_service_area_record confidence=high fetched_at=2026-06-17T15:27:02.299Z source_url=https://thegao.org/ warnings=many_to_one_evidence|county_rows_share_one_org_address bulk_org_level_promotion nonprofit_accessibility_batch_v2 evidence=first_party_address level=statewide_service_area row_type=county_service_area_record confidence=high fetched_at=2026-06-17T16:21:33.008Z source_url=https://thegao.org/ warnings=many_to_one_evidence|county_rows_share_one_org_address bulk_org_level_promotion",
+        "checked_at": "2026-06-17T16:21:33.008Z",
+        "accessibility_evidence_level": "statewide_service_area",
+        "accessibility_source_address": "1 W Ct Square #625, Decatur, GA 30030",
+        "in_person_services": 0
+      },
+      "publicSafeWording": "Organization lists a physical office at 1 W Ct Square #625, Decatur, GA 30030 and appears to serve families statewide; this does not confirm an in-person office in Barrow County."
+    },
+    {
+      "id": "ga-np-gao-bartow-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "county_id": "bartow-ga",
+      "county_name": "Bartow County",
+      "state_id": "georgia",
+      "rowType": "county_service_area_record",
+      "evidenceLevel": "statewide_service_area",
+      "action": "bulk_org_level_promotion",
+      "warnings": [
+        "many_to_one_evidence",
+        "county_rows_share_one_org_address"
+      ],
+      "before": {
+        "in_person_services": 0,
+        "accessibility_notes": "Organization lists a physical office at 1 W Ct Square #625, Decatur, GA 30030 and appears to serve families statewide; this does not confirm an in-person office in Bartow County.",
+        "accessibility_evidence_level": "statewide_service_area",
+        "accessibility_source_address": "1 W Ct Square #625, Decatur, GA 30030"
+      },
+      "after": {
+        "accessibility_notes": "Organization lists a physical office at 1 W Ct Square #625, Decatur, GA 30030 and appears to serve families statewide; this does not confirm an in-person office in Bartow County.",
+        "data_quality_notes": "nonprofit_accessibility_batch evidence=first_party_address confidence=high fetched_at=2026-06-17T15:06:29.853Z source_url=https://thegao.org/ nonprofit_accessibility_batch_v2 evidence=first_party_address level=statewide_service_area row_type=county_service_area_record confidence=high fetched_at=2026-06-17T15:27:02.299Z source_url=https://thegao.org/ warnings=many_to_one_evidence|county_rows_share_one_org_address bulk_org_level_promotion nonprofit_accessibility_batch_v2 evidence=first_party_address level=statewide_service_area row_type=county_service_area_record confidence=high fetched_at=2026-06-17T16:21:33.008Z source_url=https://thegao.org/ warnings=many_to_one_evidence|county_rows_share_one_org_address bulk_org_level_promotion",
+        "checked_at": "2026-06-17T16:21:33.008Z",
+        "accessibility_evidence_level": "statewide_service_area",
+        "accessibility_source_address": "1 W Ct Square #625, Decatur, GA 30030",
+        "in_person_services": 0
+      },
+      "publicSafeWording": "Organization lists a physical office at 1 W Ct Square #625, Decatur, GA 30030 and appears to serve families statewide; this does not confirm an in-person office in Bartow County."
+    },
+    {
+      "id": "ga-np-gao-ben-hill-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "county_id": "ben-hill-ga",
+      "county_name": "Ben Hill County",
+      "state_id": "georgia",
+      "rowType": "county_service_area_record",
+      "evidenceLevel": "statewide_service_area",
+      "action": "bulk_org_level_promotion",
+      "warnings": [
+        "many_to_one_evidence",
+        "county_rows_share_one_org_address"
+      ],
+      "before": {
+        "in_person_services": 0,
+        "accessibility_notes": "Organization lists a physical office at 1 W Ct Square #625, Decatur, GA 30030 and appears to serve families statewide; this does not confirm an in-person office in Ben Hill County.",
+        "accessibility_evidence_level": "statewide_service_area",
+        "accessibility_source_address": "1 W Ct Square #625, Decatur, GA 30030"
+      },
+      "after": {
+        "accessibility_notes": "Organization lists a physical office at 1 W Ct Square #625, Decatur, GA 30030 and appears to serve families statewide; this does not confirm an in-person office in Ben Hill County.",
+        "data_quality_notes": "nonprofit_accessibility_batch evidence=first_party_address confidence=high fetched_at=2026-06-17T15:06:29.853Z source_url=https://thegao.org/ nonprofit_accessibility_batch_v2 evidence=first_party_address level=statewide_service_area row_type=county_service_area_record confidence=high fetched_at=2026-06-17T15:27:02.299Z source_url=https://thegao.org/ warnings=many_to_one_evidence|county_rows_share_one_org_address bulk_org_level_promotion nonprofit_accessibility_batch_v2 evidence=first_party_address level=statewide_service_area row_type=county_service_area_record confidence=high fetched_at=2026-06-17T16:21:33.008Z source_url=https://thegao.org/ warnings=many_to_one_evidence|county_rows_share_one_org_address bulk_org_level_promotion",
+        "checked_at": "2026-06-17T16:21:33.008Z",
+        "accessibility_evidence_level": "statewide_service_area",
+        "accessibility_source_address": "1 W Ct Square #625, Decatur, GA 30030",
+        "in_person_services": 0
+      },
+      "publicSafeWording": "Organization lists a physical office at 1 W Ct Square #625, Decatur, GA 30030 and appears to serve families statewide; this does not confirm an in-person office in Ben Hill County."
+    },
+    {
+      "id": "ga-np-gao-berrien-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "county_id": "berrien-ga",
+      "county_name": "Berrien County",
+      "state_id": "georgia",
+      "rowType": "county_service_area_record",
+      "evidenceLevel": "statewide_service_area",
+      "action": "bulk_org_level_promotion",
+      "warnings": [
+        "many_to_one_evidence",
+        "county_rows_share_one_org_address"
+      ],
+      "before": {
+        "in_person_services": 0,
+        "accessibility_notes": "Organization lists a physical office at 1 W Ct Square #625, Decatur, GA 30030 and appears to serve families statewide; this does not confirm an in-person office in Berrien County.",
+        "accessibility_evidence_level": "statewide_service_area",
+        "accessibility_source_address": "1 W Ct Square #625, Decatur, GA 30030"
+      },
+      "after": {
+        "accessibility_notes": "Organization lists a physical office at 1 W Ct Square #625, Decatur, GA 30030 and appears to serve families statewide; this does not confirm an in-person office in Berrien County.",
+        "data_quality_notes": "nonprofit_accessibility_batch evidence=first_party_address confidence=high fetched_at=2026-06-17T15:06:29.853Z source_url=https://thegao.org/ nonprofit_accessibility_batch_v2 evidence=first_party_address level=statewide_service_area row_type=county_service_area_record confidence=high fetched_at=2026-06-17T15:27:02.299Z source_url=https://thegao.org/ warnings=many_to_one_evidence|county_rows_share_one_org_address bulk_org_level_promotion nonprofit_accessibility_batch_v2 evidence=first_party_address level=statewide_service_area row_type=county_service_area_record confidence=high fetched_at=2026-06-17T16:21:33.008Z source_url=https://thegao.org/ warnings=many_to_one_evidence|county_rows_share_one_org_address bulk_org_level_promotion",
+        "checked_at": "2026-06-17T16:21:33.008Z",
+        "accessibility_evidence_level": "statewide_service_area",
+        "accessibility_source_address": "1 W Ct Square #625, Decatur, GA 30030",
+        "in_person_services": 0
+      },
+      "publicSafeWording": "Organization lists a physical office at 1 W Ct Square #625, Decatur, GA 30030 and appears to serve families statewide; this does not confirm an in-person office in Berrien County."
+    }
+  ],
+  "mutations": [],
+  "skipped": [
+    {
+      "id": "ga-np-gao-appling-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-atkinson-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-bacon-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-baker-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-baldwin-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-banks-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-barrow-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-bartow-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-ben-hill-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-berrien-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-bibb-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-bleckley-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-brantley-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-brooks-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-bryan-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-bulloch-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-burke-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-butts-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-calhoun-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-camden-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-candler-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-carroll-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-catoosa-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-charlton-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-chatham-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-chattahoochee-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-chattooga-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-cherokee-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-clarke-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-clay-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-clayton-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-clinch-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-cobb-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-coffee-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-colquitt-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-columbia-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-cook-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-coweta-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-crawford-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-crisp-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-dade-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-dawson-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-decatur-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-dekalb-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-dodge-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-dooly-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-dougherty-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-douglas-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-early-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-echols-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-effingham-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-elbert-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-emanuel-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-evans-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-fannin-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-fayette-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-floyd-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-forsyth-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-franklin-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-fulton-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-gilmer-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-glascock-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-glynn-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-gordon-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-grady-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-greene-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-gwinnett-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-habersham-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-hall-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-hancock-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-haralson-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-harris-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-hart-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-heard-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-henry-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-houston-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-irwin-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-jackson-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-jasper-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-jeff-davis-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-jefferson-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-jenkins-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-johnson-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-jones-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-lamar-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-lanier-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-laurens-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-lee-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-liberty-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-lincoln-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-long-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-lowndes-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-lumpkin-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-macon-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-madison-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-marion-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-mcduffie-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-mcintosh-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-meriwether-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-miller-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-mitchell-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-monroe-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-montgomery-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-morgan-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-murray-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-muscogee-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-newton-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-oconee-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-oglethorpe-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-paulding-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-peach-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-pickens-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-pierce-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-pike-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-polk-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-pulaski-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-putnam-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-quitman-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-rabun-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-randolph-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-richmond-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-rockdale-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-schley-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-screven-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-seminole-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-spalding-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-stephens-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-stewart-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-sumter-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-talbot-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-taliaferro-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-tattnall-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-taylor-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-telfair-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-terrell-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-thomas-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-tift-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-toombs-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-towns-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-treutlen-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-troup-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-turner-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-twiggs-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-union-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-upson-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-walker-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-walton-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-ware-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-warren-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-washington-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-wayne-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-webster-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-wheeler-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-white-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-whitfield-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-wilcox-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-wilkes-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-wilkinson-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    },
+    {
+      "id": "ga-np-gao-worth-ga",
+      "name": "Georgia Advocacy Office (GAO) - Statewide Support",
+      "reason": "already_in_safe_state"
+    }
+  ],
+  "skipReasons": {
+    "already_in_safe_state": 159
+  },
+  "nextDomains": [
+    {
+      "domain": "thearc.org",
+      "missingRows": 12021
+    },
+    {
+      "domain": "parentcenterhub.org",
+      "missingRows": 4483
+    },
+    {
+      "domain": "texasautismsociety.org",
+      "missingRows": 509
+    },
+    {
+      "domain": "txp2p.org",
+      "missingRows": 508
+    },
+    {
+      "domain": "thearcoftexas.org",
+      "missingRows": 259
+    },
+    {
+      "domain": "disabilityrightstx.org",
+      "missingRows": 254
+    },
+    {
+      "domain": "navigatelifetexas.org",
+      "missingRows": 254
+    },
+    {
+      "domain": "prntexas.org",
+      "missingRows": 254
+    },
+    {
+      "domain": "autismqc.org",
+      "missingRows": 201
+    },
+    {
+      "domain": "p2pga.org",
+      "missingRows": 159
+    },
+    {
+      "domain": "arcofky.org",
+      "missingRows": 120
+    },
+    {
+      "domain": "asbg.org",
+      "missingRows": 120
+    }
+  ],
+  "rollbackSqlPath": "/var/folders/s7/yzsmwnmx2yvfm_3t_ysn8rrw0000gn/T/ablefull-nonprofit-acc-17NQnF/artifacts/thegao-org/2026-06-17T16-21-32-974Z/rollback.sql",
+  "forwardSqlPath": "/var/folders/s7/yzsmwnmx2yvfm_3t_ysn8rrw0000gn/T/ablefull-nonprofit-acc-17NQnF/artifacts/thegao-org/2026-06-17T16-21-32-974Z/forward.sql"
+}

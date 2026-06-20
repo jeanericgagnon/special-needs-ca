@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-06-18T04:18:06.097Z",
+  "mode": "apply",
+  "inputPath": "docs/generated/advocate-manual-review-queue-2026-06-18.json",
+  "dbPath": "ca_disability_navigator.db",
+  "summary": {
+    "inputRows": 0,
+    "appliedRows": 0,
+    "appliedByBlocker": {},
+    "skippedByReason": {},
+    "appliedByReviewStatus": {}
+  },
+  "decisions": []
+}

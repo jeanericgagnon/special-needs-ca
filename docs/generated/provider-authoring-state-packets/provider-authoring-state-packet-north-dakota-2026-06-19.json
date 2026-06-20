@@ -1,0 +1,135 @@
+{
+  "generatedAt": "2026-06-19T18:22:13.898Z",
+  "generatedDate": "2026-06-19",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+  "stateId": "north-dakota",
+  "stateName": "North Dakota",
+  "executionPriority": 32,
+  "sourceTargetsPath": "data/source_targets/north-dakota.json",
+  "ledgerStatus": "complete",
+  "ledgerNote": "added-three-concrete-first-party-provider-targets",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 1,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 3,
+  "placeholderProviderTargetCount": 1,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 0,
+  "neededLiveProviderRows": 2,
+  "authoringGapClass": "needs_refresh_or_deeper_targets",
+  "nextAction": "Refresh North Dakota provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+  "providerTargets": [
+    {
+      "sourceName": "North Dakota Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for North Dakota."
+    },
+    {
+      "sourceName": "Sanford Medical Center Fargo",
+      "sourceUrl": "https://www.sanfordhealth.org/locations/sanford-medical-center-fargo",
+      "domain": "sanfordhealth.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Sanford Fargo hospital source for pediatric specialty and hospital referral coverage in eastern North Dakota."
+    },
+    {
+      "sourceName": "Altru Hospital",
+      "sourceUrl": "https://www.altru.org/location/altru-hospital",
+      "domain": "altru.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Altru Hospital source for pediatric and hospital-based specialty coverage in northeastern North Dakota."
+    },
+    {
+      "sourceName": "Essentia Health-Fargo",
+      "sourceUrl": "https://www.essentiahealth.org/find-facility/profile/essentia-health-fargo",
+      "domain": "essentiahealth.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Essentia Fargo hospital source for cross-border pediatric and specialty care used by eastern North Dakota families."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "North Dakota County Metadata",
+      "sourceUrl": "https://www.north-dakota.gov",
+      "domain": "north-dakota.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "North Dakota Medicaid Portal",
+      "sourceUrl": "https://dhhs.north-dakota.gov",
+      "domain": "dhhs.north-dakota.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "North Dakota Developmental Disabilities Division",
+      "sourceUrl": "https://www.hhs.nd.gov/dd",
+      "domain": "hhs.nd.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "North Dakota HCBS Waivers",
+      "sourceUrl": "https://www.hhs.nd.gov/dd/hcbs",
+      "domain": "hhs.nd.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "North Dakota Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.north-dakota.gov/earlyintervention",
+      "domain": "dhhs.north-dakota.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "North Dakota Department of Education Special Ed",
+      "sourceUrl": "https://education.north-dakota.gov",
+      "domain": "education.north-dakota.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "North Dakota Regional Special Education Support",
+      "sourceUrl": "https://education.north-dakota.gov/regional",
+      "domain": "education.north-dakota.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "North Dakota Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of North Dakota",
+      "sourceUrl": "https://www.thearcnorth-dakota.org",
+      "domain": "thearcnorth-dakota.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "North Dakota Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.north-dakota.gov/forms",
+      "domain": "dhhs.north-dakota.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "North Dakota Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.north-dakota.gov/rehab",
+      "domain": "dhhs.north-dakota.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "North Dakota Secretary of State Business Registry",
+      "sourceUrl": "https://www.north-dakota.gov/business",
+      "domain": "north-dakota.gov"
+    }
+  ]
+}

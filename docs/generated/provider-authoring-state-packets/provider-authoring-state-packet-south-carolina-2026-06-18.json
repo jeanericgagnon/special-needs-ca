@@ -1,0 +1,109 @@
+{
+  "generatedAt": "2026-06-18T19:24:00.528Z",
+  "generatedDate": "2026-06-18",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-18.json",
+  "stateId": "south-carolina",
+  "stateName": "South Carolina",
+  "executionPriority": 1,
+  "sourceTargetsPath": "data/source_targets/south-carolina.json",
+  "ledgerStatus": "",
+  "ledgerNote": "",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 1,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 0,
+  "placeholderProviderTargetCount": 1,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 3,
+  "nextAction": "Add at least 3 more concrete first-party provider targets for South Carolina and then regenerate provider source-pack artifacts.",
+  "providerTargets": [
+    {
+      "sourceName": "South Carolina Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for South Carolina."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "South Carolina County Metadata",
+      "sourceUrl": "https://www.south-carolina.gov",
+      "domain": "south-carolina.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "South Carolina Medicaid Portal",
+      "sourceUrl": "https://dhhs.south-carolina.gov",
+      "domain": "dhhs.south-carolina.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "South Carolina Department of Disabilities and Special Needs",
+      "sourceUrl": "https://ddsn.sc.gov/",
+      "domain": "ddsn.sc.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "South Carolina HCBS Waivers",
+      "sourceUrl": "https://ddsn.sc.gov/hcbs",
+      "domain": "ddsn.sc.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "South Carolina Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.south-carolina.gov/earlyintervention",
+      "domain": "dhhs.south-carolina.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "South Carolina Department of Education Special Ed",
+      "sourceUrl": "https://education.south-carolina.gov",
+      "domain": "education.south-carolina.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "South Carolina Regional Special Education Support",
+      "sourceUrl": "https://education.south-carolina.gov/regional",
+      "domain": "education.south-carolina.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "South Carolina Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of South Carolina",
+      "sourceUrl": "https://www.thearcsouth-carolina.org",
+      "domain": "thearcsouth-carolina.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "South Carolina Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.south-carolina.gov/forms",
+      "domain": "dhhs.south-carolina.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "South Carolina Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.south-carolina.gov/rehab",
+      "domain": "dhhs.south-carolina.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "South Carolina Secretary of State Business Registry",
+      "sourceUrl": "https://www.south-carolina.gov/business",
+      "domain": "south-carolina.gov"
+    }
+  ]
+}

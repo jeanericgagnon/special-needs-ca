@@ -1,0 +1,135 @@
+{
+  "generatedAt": "2026-06-19T18:22:13.895Z",
+  "generatedDate": "2026-06-19",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+  "stateId": "minnesota",
+  "stateName": "Minnesota",
+  "executionPriority": 21,
+  "sourceTargetsPath": "data/source_targets/minnesota.json",
+  "ledgerStatus": "complete",
+  "ledgerNote": "added-three-concrete-first-party-provider-targets",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 1,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 3,
+  "placeholderProviderTargetCount": 1,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 0,
+  "neededLiveProviderRows": 2,
+  "authoringGapClass": "needs_refresh_or_deeper_targets",
+  "nextAction": "Refresh Minnesota provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+  "providerTargets": [
+    {
+      "sourceName": "Minnesota Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for Minnesota."
+    },
+    {
+      "sourceName": "Children's Minnesota",
+      "sourceUrl": "https://www.childrensmn.org/",
+      "domain": "childrensmn.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Children's Minnesota pediatric hospital system source for Minneapolis, St. Paul, and statewide specialty coverage."
+    },
+    {
+      "sourceName": "M Health Fairview University of Minnesota Masonic Children's Hospital",
+      "sourceUrl": "https://www.mhealth.org/childrens",
+      "domain": "mhealth.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official M Health Fairview children's hospital source for University of Minnesota pediatric specialty and transplant care."
+    },
+    {
+      "sourceName": "Gillette Children's",
+      "sourceUrl": "https://www.gillettechildrens.org/",
+      "domain": "gillettechildrens.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Gillette Children's source for complex pediatric specialty, rehabilitation, and disability-focused care in Minnesota."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Minnesota County Metadata",
+      "sourceUrl": "https://www.minnesota.gov",
+      "domain": "minnesota.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Minnesota Medicaid Portal",
+      "sourceUrl": "https://dhhs.minnesota.gov",
+      "domain": "dhhs.minnesota.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Minnesota Department of Human Services",
+      "sourceUrl": "https://mn.gov/dhs",
+      "domain": "mn.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Minnesota HCBS Waivers",
+      "sourceUrl": "https://mn.gov/dhs/waivers",
+      "domain": "mn.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Minnesota Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.minnesota.gov/earlyintervention",
+      "domain": "dhhs.minnesota.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Minnesota Department of Education Special Ed",
+      "sourceUrl": "https://education.minnesota.gov",
+      "domain": "education.minnesota.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Minnesota Regional Special Education Support",
+      "sourceUrl": "https://education.minnesota.gov/regional",
+      "domain": "education.minnesota.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Minnesota Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Minnesota",
+      "sourceUrl": "https://www.thearcminnesota.org",
+      "domain": "thearcminnesota.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Minnesota Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.minnesota.gov/forms",
+      "domain": "dhhs.minnesota.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Minnesota Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.minnesota.gov/rehab",
+      "domain": "dhhs.minnesota.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Minnesota Secretary of State Business Registry",
+      "sourceUrl": "https://www.minnesota.gov/business",
+      "domain": "minnesota.gov"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-06-17T22:48:19.100Z",
+  "mode": "apply",
+  "stateFilter": "arkansas",
+  "inputPath": "data/forms-fallback-manual-review-decisions.json",
+  "summary": {
+    "inputRows": 3,
+    "resolvedRows": 3,
+    "deferredRows": 0,
+    "filesChanged": 2,
+    "skippedByReason": {},
+    "byDecisionMode": {
+      "replace_with_reviewed_candidate": 3
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "arkansas",
+      "rowKey": "arkansas|application_or_eligibility_guide|https://humanservices.arkansas.gov/dds",
+      "status": "applied",
+      "resolvedSourceUrl": "https://humanservices.arkansas.gov/wp-content/uploads/DDS.docx"
+    },
+    {
+      "stateId": "arkansas",
+      "rowKey": "arkansas|application_or_eligibility_guide|https://humanservices.arkansas.gov/hcbs/eligibility",
+      "status": "applied",
+      "resolvedSourceUrl": "https://humanservices.arkansas.gov/"
+    },
+    {
+      "stateId": "arkansas",
+      "rowKey": "arkansas|general_form_related_page|https://humanservices.arkansas.gov/medicaid",
+      "status": "applied",
+      "resolvedSourceUrl": "https://humanservices.arkansas.gov/"
+    }
+  ],
+  "resolutionArtifacts": {
+    "queuePath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/forms-fallback-manual-review-queue-2026-06-17.json",
+    "resolutionLedgerPath": "data/source-acquisition-state/forms-fallback-manual-review-ledger.json",
+    "resolutionPackPath": "data/source_packs/forms_fallback_manual_resolutions.json"
+  }
+}

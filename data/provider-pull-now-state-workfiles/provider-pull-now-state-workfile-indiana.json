@@ -1,0 +1,77 @@
+{
+  "generatedAt": "2026-06-18T05:49:35.261Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "indiana",
+  "sourceDecisionFilePath": "data/provider-pull-now-decisions.json",
+  "sourceDecisionPacketPath": "docs/generated/provider-pull-now-state-decision-packets/provider-pull-now-state-decision-packet-indiana-2026-06-18.json",
+  "summary": {
+    "totalRows": 4,
+    "unresolvedRows": 4
+  },
+  "rows": [
+    {
+      "stateId": "indiana",
+      "actionClass": "bounded_retry_then_replace",
+      "sourceUrl": "https://www.rileychildrens.org/",
+      "hostname": "www.rileychildrens.org",
+      "followupReason": "network_timeout",
+      "repeatCount": 7,
+      "suggestedDecisionMode": "bounded_retry_once",
+      "suggestedReason": "Retry-eligible row; allow one bounded retry only if no reviewed first-party replacement is available.",
+      "decisionMode": "bounded_retry_once",
+      "reviewedSourceName": "",
+      "reviewedSourceUrl": "",
+      "retryNotes": "Retry-eligible row; allow one bounded retry only if no reviewed first-party replacement is available.",
+      "reviewNotes": "Retry-eligible row; allow one bounded retry only if no reviewed first-party replacement is available.",
+      "reviewedBy": "autofill:provider-pull-now-state-workfile"
+    },
+    {
+      "stateId": "indiana",
+      "actionClass": "bounded_retry_then_replace",
+      "sourceUrl": "https://www.rileychildrens.org/contact-and-locations/riley-hospital-for-children-at-iu-health",
+      "hostname": "www.rileychildrens.org",
+      "followupReason": "network_timeout",
+      "repeatCount": 4,
+      "suggestedDecisionMode": "bounded_retry_once",
+      "suggestedReason": "Retry-eligible row; allow one bounded retry only if no reviewed first-party replacement is available.",
+      "decisionMode": "bounded_retry_once",
+      "reviewedSourceName": "",
+      "reviewedSourceUrl": "",
+      "retryNotes": "Retry-eligible row; allow one bounded retry only if no reviewed first-party replacement is available.",
+      "reviewNotes": "Retry-eligible row; allow one bounded retry only if no reviewed first-party replacement is available.",
+      "reviewedBy": "autofill:provider-pull-now-state-workfile"
+    },
+    {
+      "stateId": "indiana",
+      "actionClass": "bounded_retry_then_replace",
+      "sourceUrl": "https://iuhealth.org/",
+      "hostname": "iuhealth.org",
+      "followupReason": "network_timeout",
+      "repeatCount": 3,
+      "suggestedDecisionMode": "bounded_retry_once",
+      "suggestedReason": "Retry-eligible row; allow one bounded retry only if no reviewed first-party replacement is available.",
+      "decisionMode": "bounded_retry_once",
+      "reviewedSourceName": "",
+      "reviewedSourceUrl": "",
+      "retryNotes": "Retry-eligible row; allow one bounded retry only if no reviewed first-party replacement is available.",
+      "reviewNotes": "Retry-eligible row; allow one bounded retry only if no reviewed first-party replacement is available.",
+      "reviewedBy": "autofill:provider-pull-now-state-workfile"
+    },
+    {
+      "stateId": "indiana",
+      "actionClass": "manual_review_or_replace",
+      "sourceUrl": "https://iuhealth.org/",
+      "hostname": "iuhealth.org",
+      "followupReason": "needs_review_unknown",
+      "repeatCount": 3,
+      "suggestedDecisionMode": "needs_manual_research",
+      "suggestedReason": "A same-domain candidate exists, but saved artifacts did not prove a safe, meaningfully different replacement URL.",
+      "decisionMode": "needs_manual_research",
+      "reviewedSourceName": "",
+      "reviewedSourceUrl": "",
+      "retryNotes": "",
+      "reviewNotes": "A same-domain candidate exists, but saved artifacts did not prove a safe, meaningfully different replacement URL.",
+      "reviewedBy": "autofill:provider-pull-now-state-workfile"
+    }
+  ]
+}

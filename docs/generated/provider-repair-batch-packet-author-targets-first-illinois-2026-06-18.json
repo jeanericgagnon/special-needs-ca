@@ -1,0 +1,56 @@
+{
+  "generatedAt": "2026-06-18T06:30:45.408Z",
+  "generatedDate": "2026-06-18",
+  "packetKey": "author-targets-first-illinois",
+  "selection": {
+    "readinessLane": "author-targets-first",
+    "stateId": "illinois",
+    "limit": 5,
+    "selectionMode": "explicit_state_filter"
+  },
+  "sourceArtifacts": {
+    "providerFollowupRepairQueuePath": "docs/generated/provider-followup-repair-queue-2026-06-18.json",
+    "providerRepairExecutionBacklogPath": "docs/generated/provider-repair-execution-backlog-2026-06-18.json",
+    "providerSourcePackPlanPath": "docs/generated/provider-source-pack-plan-2026-06-18.json",
+    "sourceTargetsPath": ""
+  },
+  "summary": {
+    "selectedRows": 1,
+    "scopedLaneRows": 1,
+    "selectedStateIds": [
+      "illinois"
+    ],
+    "selectedHostnames": [
+      "www.ahs.uic.edu"
+    ],
+    "byActionClass": {
+      "manual_review_or_replace": 1
+    },
+    "byReason": {
+      "needs_review_unknown": 1
+    }
+  },
+  "stateContext": null,
+  "selectedRows": [
+    {
+      "stateId": "illinois",
+      "readinessLane": "author-targets-first",
+      "bucket": "blocked",
+      "followupReason": "needs_review_unknown",
+      "actionClass": "manual_review_or_replace",
+      "recommendedAction": "Route this provider blocker to deterministic source repair and do not spend more lightweight fetch volume until the source target is replaced or repaired.",
+      "sourceUrl": "https://www.ahs.uic.edu/",
+      "hostname": "www.ahs.uic.edu",
+      "repeatCount": 2,
+      "sampleStatusCodes": "",
+      "runCount": 2,
+      "topSavedPath": ""
+    }
+  ],
+  "recommendedCommands": [
+    "npm run audit:provider-repair-batch-packet -- --lane=author-targets-first --state=illinois --limit=5",
+    "npm run audit:provider-followup-repair-queue",
+    "npm run audit:provider-repair-execution-backlog",
+    "npm run audit:provider-source-pack"
+  ]
+}

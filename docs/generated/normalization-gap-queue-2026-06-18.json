@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-06-18T21:51:01.325Z",
+  "generatedDate": "2026-06-18",
+  "dbPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/frontend/ca_disability_navigator.db",
+  "sourceArtifacts": {
+    "blockerRegistryPath": "docs/generated/track-a-blocker-registry-2026-06-18.json"
+  },
+  "purpose": "Deterministic normalization gap queue showing where provider service locations are still thin and where non-provider organization types should remain semantics-safe until better evidence exists.",
+  "summary": {
+    "totalRows": 0,
+    "byLane": {},
+    "byOrganizationType": {},
+    "blockerStatus": "partial"
+  },
+  "rows": []
+}

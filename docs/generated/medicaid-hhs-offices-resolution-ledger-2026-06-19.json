@@ -1,0 +1,513 @@
+{
+  "generatedAt": "2026-06-19",
+  "family": "medicaid_hhs_offices",
+  "summary": {
+    "totalStates": 50,
+    "byResolutionState": {
+      "repair_first": 40,
+      "resolved": 10
+    }
+  },
+  "rows": [
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "alabama",
+      "stateName": "Alabama",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "No medicaid_county_directory repair row remains for this state in the official repair pack.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "alaska",
+      "stateName": "Alaska",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "arizona",
+      "stateName": "Arizona",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "arkansas",
+      "stateName": "Arkansas",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "california",
+      "stateName": "California",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "No medicaid_county_directory repair row remains for this state in the official repair pack.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "colorado",
+      "stateName": "Colorado",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "connecticut",
+      "stateName": "Connecticut",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "delaware",
+      "stateName": "Delaware",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "florida",
+      "stateName": "Florida",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "No medicaid_county_directory repair row remains for this state in the official repair pack.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "georgia",
+      "stateName": "Georgia",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "No medicaid_county_directory repair row remains for this state in the official repair pack.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "hawaii",
+      "stateName": "Hawaii",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "idaho",
+      "stateName": "Idaho",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "illinois",
+      "stateName": "Illinois",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "No medicaid_county_directory repair row remains for this state in the official repair pack.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "indiana",
+      "stateName": "Indiana",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "iowa",
+      "stateName": "Iowa",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "kansas",
+      "stateName": "Kansas",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "kentucky",
+      "stateName": "Kentucky",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "louisiana",
+      "stateName": "Louisiana",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "maine",
+      "stateName": "Maine",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "maryland",
+      "stateName": "Maryland",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "massachusetts",
+      "stateName": "Massachusetts",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "michigan",
+      "stateName": "Michigan",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "minnesota",
+      "stateName": "Minnesota",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "mississippi",
+      "stateName": "Mississippi",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "missouri",
+      "stateName": "Missouri",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "montana",
+      "stateName": "Montana",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "nebraska",
+      "stateName": "Nebraska",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "nevada",
+      "stateName": "Nevada",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "new-hampshire",
+      "stateName": "New Hampshire",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "new-jersey",
+      "stateName": "New Jersey",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "new-mexico",
+      "stateName": "New Mexico",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "new-york",
+      "stateName": "New York",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "No medicaid_county_directory repair row remains for this state in the official repair pack.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "north-carolina",
+      "stateName": "North Carolina",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "No medicaid_county_directory repair row remains for this state in the official repair pack.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "north-dakota",
+      "stateName": "North Dakota",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "ohio",
+      "stateName": "Ohio",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "No medicaid_county_directory repair row remains for this state in the official repair pack.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "oklahoma",
+      "stateName": "Oklahoma",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "oregon",
+      "stateName": "Oregon",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "pennsylvania",
+      "stateName": "Pennsylvania",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "No medicaid_county_directory repair row remains for this state in the official repair pack.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "rhode-island",
+      "stateName": "Rhode Island",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "south-carolina",
+      "stateName": "South Carolina",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "south-dakota",
+      "stateName": "South Dakota",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "tennessee",
+      "stateName": "Tennessee",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "texas",
+      "stateName": "Texas",
+      "resolutionState": "resolved",
+      "terminalResolutionState": "cleared",
+      "currentEvidence": "No medicaid_county_directory repair row remains for this state in the official repair pack.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "utah",
+      "stateName": "Utah",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "vermont",
+      "stateName": "Vermont",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "virginia",
+      "stateName": "Virginia",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "washington",
+      "stateName": "Washington",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "west-virginia",
+      "stateName": "West Virginia",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "wisconsin",
+      "stateName": "Wisconsin",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "stateId": "wyoming",
+      "stateName": "Wyoming",
+      "resolutionState": "repair_first",
+      "terminalResolutionState": "repair_first",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan"
+    }
+  ]
+}

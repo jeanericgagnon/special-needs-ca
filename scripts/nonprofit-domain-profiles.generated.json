@@ -1,0 +1,170 @@
+{
+  "parentcenterhub.org": {
+    "orgTerms": [
+      "* The USA has Parent Centers with three jurisdictions in the Pacific Basin (American Samoa, Guam, and the Northern Mariana Islands), two in the Caribbean (Puerto Rico and the U.S. Virgin Islands), and three independent nations in the Pacific Basin/”Freely Associated States” (the Republic of Palau, the Republic of the Marshall Islands (RMI), and the Federated States of Micronesia—comprised of Yap, Pohnpei, Chuuk and Kosrae). The Territories and outlying areas of the Pacific Basin are served by Region D; Puerto Rico and the US Virgin Islands are served by Region A.",
+      "113 Austin Street, Greeneville, TN 37745",
+      "Access For Special Kids Resource Center (ASK) – PTI",
+      "Advocates for Children of New York – PTI"
+    ],
+    "defaultMode": "dry-run",
+    "notes": "network_directory; strategy=affiliate_discovery; risk=high"
+  },
+  "texasautismsociety.org": {
+    "orgTerms": [
+      "Autism Society of El Paso",
+      "Autism Society of Texas (Statewide Support)",
+      "Autism Society Texas"
+    ],
+    "defaultMode": "dry-run",
+    "notes": "statewide_service_org; strategy=domain; risk=medium"
+  },
+  "txp2p.org": {
+    "orgTerms": [
+      "Texas Family-to-Family Health Information Center",
+      "Texas Parent to Parent (Statewide Support)"
+    ],
+    "defaultMode": "dry-run",
+    "notes": "statewide_service_org; strategy=domain; risk=medium"
+  },
+  "thearcoftexas.org": {
+    "orgTerms": [
+      "The Arc of Northeast Texas",
+      "The Arc of Texas (Statewide Support)"
+    ],
+    "defaultMode": "dry-run",
+    "notes": "statewide_service_org; strategy=domain; risk=medium"
+  },
+  "disabilityrightstx.org": {
+    "orgTerms": [
+      "Disability Rights Texas (Statewide Support)"
+    ],
+    "defaultMode": "dry-run",
+    "notes": "statewide_service_org; strategy=domain; risk=medium"
+  },
+  "navigatelifetexas.org": {
+    "orgTerms": [
+      "Navigate Life Texas (Statewide Support)"
+    ],
+    "defaultMode": "dry-run",
+    "notes": "statewide_service_org; strategy=domain; risk=medium"
+  },
+  "prntexas.org": {
+    "orgTerms": [
+      "Partners Resource Network (Statewide Support)"
+    ],
+    "defaultMode": "dry-run",
+    "notes": "statewide_service_org; strategy=domain; risk=medium"
+  },
+  "thearc.org": {
+    "orgTerms": [
+      "UCP Seguin of Greater Chicago"
+    ],
+    "defaultMode": "dry-run",
+    "notes": "affiliate_chapter; strategy=site_path; risk=medium"
+  },
+  "autismqc.org": {
+    "orgTerms": [
+      "Autism Society the Quad Cities"
+    ],
+    "defaultMode": "dry-run",
+    "notes": "single_site; strategy=domain; risk=medium"
+  },
+  "p2pga.org": {
+    "orgTerms": [
+      "Parent to Parent of Georgia"
+    ],
+    "defaultMode": "dry-run",
+    "notes": "statewide_service_org; strategy=domain; risk=medium"
+  },
+  "arcofky.org": {
+    "orgTerms": [
+      "The Arc of Kentucky"
+    ],
+    "defaultMode": "dry-run",
+    "notes": "statewide_service_org; strategy=domain; risk=medium"
+  },
+  "asbg.org": {
+    "orgTerms": [
+      "Autism Society Bluegrass"
+    ],
+    "defaultMode": "dry-run",
+    "notes": "statewide_service_org; strategy=domain; risk=medium"
+  },
+  "ask-lou.org": {
+    "orgTerms": [
+      "Autism Society Kentuckiana"
+    ],
+    "defaultMode": "dry-run",
+    "notes": "statewide_service_org; strategy=domain; risk=medium"
+  },
+  "kypa.net": {
+    "orgTerms": [
+      "Kentucky Protection and Advocacy"
+    ],
+    "defaultMode": "dry-run",
+    "notes": "statewide_service_org; strategy=domain; risk=medium"
+  },
+  "kyspin.com": {
+    "orgTerms": [
+      "KY-SPIN"
+    ],
+    "defaultMode": "dry-run",
+    "notes": "statewide_service_org; strategy=domain; risk=medium"
+  },
+  "moadvocacy.org": {
+    "orgTerms": [
+      "Missouri Protection and Advocacy Services"
+    ],
+    "defaultMode": "dry-run",
+    "notes": "statewide_service_org; strategy=domain; risk=medium"
+  },
+  "ptimpact.org": {
+    "orgTerms": [
+      "Missouri Parents Act (MPACT)"
+    ],
+    "defaultMode": "dry-run",
+    "notes": "statewide_service_org; strategy=domain; risk=medium"
+  },
+  "thearcofmo.org": {
+    "orgTerms": [
+      "The Arc of Missouri"
+    ],
+    "defaultMode": "dry-run",
+    "notes": "statewide_service_org; strategy=domain; risk=medium"
+  },
+  "legalaidtx.org": {
+    "orgTerms": [
+      "Legal Aid of Northwest Texas"
+    ],
+    "defaultMode": "dry-run",
+    "notes": "statewide_service_org; strategy=domain; risk=medium"
+  },
+  "drckansas.org": {
+    "orgTerms": [
+      "Disability Rights Center of Kansas"
+    ],
+    "defaultMode": "dry-run",
+    "notes": "statewide_service_org; strategy=domain; risk=medium"
+  },
+  "familiestogetherinc.org": {
+    "orgTerms": [
+      "Families Together, Inc."
+    ],
+    "defaultMode": "dry-run",
+    "notes": "statewide_service_org; strategy=domain; risk=medium"
+  },
+  "thearcofkansas.org": {
+    "orgTerms": [
+      "The Arc of Kansas"
+    ],
+    "defaultMode": "dry-run",
+    "notes": "statewide_service_org; strategy=domain; risk=medium"
+  },
+  "autismsocietysi.org": {
+    "orgTerms": [
+      "Autism Society Southern Illinois"
+    ],
+    "defaultMode": "dry-run",
+    "notes": "statewide_service_org; strategy=domain; risk=medium"
+  }
+}

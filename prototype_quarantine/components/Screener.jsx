@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { runMatchingEngine } from '../engine/matchingEngine';
-import { conditions, functionalNeeds, counties } from '../data/seedData';
+import { runMatchingEngine } from '../../src/engine/matchingEngine.js';
+import { conditions, functionalNeeds, counties } from '../../src/data/seedData.js';
 import { ArrowRight, ArrowLeft, CheckCircle, Sparkles, UserPlus, FileText } from 'lucide-react';
 
 export default function Screener({ onRegisterProfile, setCurrentTab }) {

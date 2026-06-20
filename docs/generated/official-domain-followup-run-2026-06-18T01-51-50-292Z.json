@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-06-18T01:51:50.295Z",
+  "mode": "apply",
+  "stateFilter": "montana",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 4,
+    "appliedStates": 2,
+    "filesChanged": 1,
+    "skippedByReason": {
+      "skipped_followup": 2
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "montana",
+      "sourceName": "Montana Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "montana",
+      "sourceName": "Montana HCBS Waivers Page",
+      "status": "applied",
+      "targetUrl": "https://dphhs.mt.gov/dsd/ddp/hcbs"
+    },
+    {
+      "stateId": "montana",
+      "sourceName": "Montana Developmental Services Directory",
+      "status": "applied",
+      "targetUrl": "https://dphhs.mt.gov/dsd/ddp"
+    },
+    {
+      "stateId": "montana",
+      "sourceName": "Montana Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

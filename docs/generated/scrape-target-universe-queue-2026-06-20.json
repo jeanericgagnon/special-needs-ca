@@ -1,0 +1,147 @@
+{
+  "generatedAt": "2026-06-20",
+  "source": "docs/generated/scrape-target-universe-2026-06-20.json",
+  "summary": {
+    "universeReadyUniqueRows": 3564,
+    "combinedReadyUniqueRows": 7,
+    "excludedResolvedRows": 3557,
+    "resolvedFromRuns": {
+      "accepted": 2840,
+      "rejected": 1348,
+      "sourceRepair": 2742,
+      "terminalBlocked": 477
+    },
+    "combinedByGapFamily": {
+      "nonprofit_support": 2,
+      "advocates_legal": 2,
+      "condition_nonprofits": 1,
+      "general_gap_fill": 1,
+      "providers_care": 1
+    },
+    "combinedByStatus": {
+      "ready_js_heavy": 1,
+      "ready_lightweight": 6
+    },
+    "combinedByQueue": {
+      "scrape_target_universe": 7
+    },
+    "combinedByExecutionLane": {
+      "ready_target_scrape": 7
+    }
+  },
+  "queueWaves": [],
+  "combinedReadyRows": [
+    {
+      "stateId": "nevada",
+      "targetTable": "nonprofit_organizations",
+      "gapFamily": "nonprofit_support",
+      "sourceQueue": "scrape_target_universe",
+      "sourceName": "thearcnevada.org",
+      "sourceUrl": "https://thearcnevada.org/",
+      "ledgerStatus": "ready_js_heavy",
+      "executionLane": "ready_target_scrape",
+      "familyPriority": 2034,
+      "executionPriority": 2034,
+      "crawlMethod": "playwright",
+      "sourceArtifact": "docs/generated/master-source-target-ledger-2026-06-19.json",
+      "whyNeeded": "Needed to deepen local nonprofit help coverage.",
+      "currentEvidence": ""
+    },
+    {
+      "stateId": "multi-state",
+      "targetTable": "iep_advocates",
+      "gapFamily": "advocates_legal",
+      "sourceQueue": "scrape_target_universe",
+      "sourceName": "Indiana Education Law Website",
+      "sourceUrl": "http://ideanet.doe.state.in.us/legal/welcome.html",
+      "ledgerStatus": "ready_lightweight",
+      "executionLane": "ready_target_scrape",
+      "familyPriority": 0,
+      "executionPriority": 0,
+      "crawlMethod": "static_fetch",
+      "sourceArtifact": "docs/generated/db-discovered-source-targets-2026-06-18.json",
+      "whyNeeded": "Existing DB source URL for iep_advocates; scrape to extract deeper fields and validate freshness.",
+      "currentEvidence": ""
+    },
+    {
+      "stateId": "multi-state",
+      "targetTable": "iep_advocates",
+      "gapFamily": "advocates_legal",
+      "sourceQueue": "scrape_target_universe",
+      "sourceName": "Carla Zeiter, Autism/ABA Consultant",
+      "sourceUrl": "http://www.carlazeiteraba.com/",
+      "ledgerStatus": "ready_lightweight",
+      "executionLane": "ready_target_scrape",
+      "familyPriority": 0,
+      "executionPriority": 0,
+      "crawlMethod": "static_fetch",
+      "sourceArtifact": "docs/generated/db-discovered-source-targets-2026-06-18.json",
+      "whyNeeded": "Existing DB source URL for iep_advocates; scrape to extract deeper fields and validate freshness.",
+      "currentEvidence": ""
+    },
+    {
+      "stateId": "nevada",
+      "targetTable": "nonprofit_organizations",
+      "gapFamily": "condition_nonprofits",
+      "sourceQueue": "scrape_target_universe",
+      "sourceName": "The Arc of Nevada",
+      "sourceUrl": "https://www.thearcnevada.org/",
+      "ledgerStatus": "ready_lightweight",
+      "executionLane": "ready_target_scrape",
+      "familyPriority": 2,
+      "executionPriority": 2,
+      "crawlMethod": "static_fetch",
+      "sourceArtifact": "docs/generated/master-source-target-ledger-2026-06-19.json",
+      "whyNeeded": "Needed to expand trustworthy condition-specific nonprofit support.",
+      "currentEvidence": ""
+    },
+    {
+      "stateId": "florida",
+      "targetTable": "program_document_requirements",
+      "gapFamily": "general_gap_fill",
+      "sourceQueue": "scrape_target_universe",
+      "sourceName": "Florida CDC+ Forms & Rules",
+      "sourceUrl": "https://apd.myflorida.com/cdcplus/forms-rules.htm",
+      "ledgerStatus": "ready_lightweight",
+      "executionLane": "ready_target_scrape",
+      "familyPriority": 2,
+      "executionPriority": 2,
+      "crawlMethod": "static_fetch",
+      "sourceArtifact": "docs/generated/launch-scrape-link-inventory-2026-06-20.json, docs/generated/master-source-target-ledger-2026-06-19.json",
+      "whyNeeded": "Needed to close a current repo information gap.",
+      "currentEvidence": ""
+    },
+    {
+      "stateId": "texas",
+      "targetTable": "nonprofit_organizations",
+      "gapFamily": "nonprofit_support",
+      "sourceQueue": "scrape_target_universe",
+      "sourceName": "facebook.com",
+      "sourceUrl": "https://www.facebook.com/rgvdsa",
+      "ledgerStatus": "ready_lightweight",
+      "executionLane": "ready_target_scrape",
+      "familyPriority": 2208,
+      "executionPriority": 2208,
+      "crawlMethod": "static_fetch",
+      "sourceArtifact": "docs/generated/master-source-target-ledger-2026-06-19.json",
+      "whyNeeded": "Needed to deepen local nonprofit help coverage.",
+      "currentEvidence": ""
+    },
+    {
+      "stateId": "indiana",
+      "targetTable": "resource_providers",
+      "gapFamily": "providers_care",
+      "sourceQueue": "scrape_target_universe",
+      "sourceName": "Riley Hospital for Children",
+      "sourceUrl": "https://www.rileychildrens.org/contact-and-locations/riley-hospital-for-children-at-iu-health",
+      "ledgerStatus": "ready_lightweight",
+      "executionLane": "ready_target_scrape",
+      "familyPriority": 0,
+      "executionPriority": 0,
+      "crawlMethod": "static_fetch",
+      "sourceArtifact": "docs/generated/db-discovered-source-targets-2026-06-18.json, docs/generated/launch-scrape-link-inventory-2026-06-20.json",
+      "whyNeeded": "Existing DB source URL for resource_providers; scrape to extract deeper fields and validate freshness.",
+      "currentEvidence": ""
+    }
+  ]
+}

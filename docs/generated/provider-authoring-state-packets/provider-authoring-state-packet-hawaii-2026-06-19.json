@@ -1,0 +1,135 @@
+{
+  "generatedAt": "2026-06-19T18:22:13.860Z",
+  "generatedDate": "2026-06-19",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+  "stateId": "hawaii",
+  "stateName": "Hawaii",
+  "executionPriority": 10,
+  "sourceTargetsPath": "data/source_targets/hawaii.json",
+  "ledgerStatus": "complete",
+  "ledgerNote": "added-three-concrete-first-party-provider-targets",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 1,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 3,
+  "placeholderProviderTargetCount": 1,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 0,
+  "neededLiveProviderRows": 2,
+  "authoringGapClass": "needs_refresh_or_deeper_targets",
+  "nextAction": "Refresh Hawaii provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+  "providerTargets": [
+    {
+      "sourceName": "Hawaii Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for Hawaii."
+    },
+    {
+      "sourceName": "Kapiolani Medical Center for Women & Children",
+      "sourceUrl": "https://www.hawaiipacifichealth.org/kapiolani",
+      "domain": "hawaiipacifichealth.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Hawaii Pacific Health pediatric hospital target for Hawaii provider coverage."
+    },
+    {
+      "sourceName": "Shriners Children's Hawaiʻi",
+      "sourceUrl": "https://www.shrinerschildrens.org/en/locations/hawaii",
+      "domain": "shrinerschildrens.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Shriners Children's Hawaii specialty pediatric care location with address and appointment contact on the first-party page."
+    },
+    {
+      "sourceName": "University of Hawaiʻi John A. Burns School of Medicine Department of Pediatrics",
+      "sourceUrl": "https://www.hawaii.edu/medicine/pediatrics",
+      "domain": "hawaii.edu",
+      "crawlMethod": "static_fetch",
+      "organizationType": "university_clinic",
+      "notes": "Official University of Hawaii pediatrics department source tied to state pediatric training and partner clinical network."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Hawaii County Metadata",
+      "sourceUrl": "https://www.hawaii.gov",
+      "domain": "hawaii.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Hawaii Medicaid Portal",
+      "sourceUrl": "https://dhhs.hawaii.gov",
+      "domain": "dhhs.hawaii.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Hawaii Developmental Disabilities Division",
+      "sourceUrl": "https://health.hawaii.gov/ddd",
+      "domain": "health.hawaii.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Hawaii HCBS Waivers",
+      "sourceUrl": "https://health.hawaii.gov/ddd/hcbs",
+      "domain": "health.hawaii.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Hawaii Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.hawaii.gov/earlyintervention",
+      "domain": "dhhs.hawaii.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Hawaii Department of Education Special Ed",
+      "sourceUrl": "https://education.hawaii.gov",
+      "domain": "education.hawaii.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Hawaii Regional Special Education Support",
+      "sourceUrl": "https://education.hawaii.gov/regional",
+      "domain": "education.hawaii.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Hawaii Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Hawaii",
+      "sourceUrl": "https://www.thearchawaii.org",
+      "domain": "thearchawaii.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Hawaii Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.hawaii.gov/forms",
+      "domain": "dhhs.hawaii.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Hawaii Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.hawaii.gov/rehab",
+      "domain": "dhhs.hawaii.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Hawaii Secretary of State Business Registry",
+      "sourceUrl": "https://www.hawaii.gov/business",
+      "domain": "hawaii.gov"
+    }
+  ]
+}

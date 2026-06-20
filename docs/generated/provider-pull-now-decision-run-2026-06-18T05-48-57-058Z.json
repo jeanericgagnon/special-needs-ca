@@ -1,0 +1,54 @@
+{
+  "generatedAt": "2026-06-18T05:48:57.061Z",
+  "mode": "apply",
+  "stateFilter": "tennessee",
+  "inputPath": "data/provider-pull-now-decisions.json",
+  "summary": {
+    "inputRows": 6,
+    "resolvedRows": 0,
+    "deferredRows": 6,
+    "filesChanged": 2,
+    "skippedByReason": {},
+    "byDecisionMode": {
+      "needs_manual_research": 6
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "tennessee",
+      "sourceUrl": "https://www.dollychildrens.org/",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "tennessee",
+      "sourceUrl": "https://www.dollychildrens.org/about-us/our-locations/dolly-parton-childrens-hospital-main-campus",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "tennessee",
+      "sourceUrl": "https://www.dollychildrens.org/medical-services/specialty-clinics",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "tennessee",
+      "sourceUrl": "https://www.childrensaterlanger.org/",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "tennessee",
+      "sourceUrl": "https://www.childrenshospitalvanderbilt.org/",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "tennessee",
+      "sourceUrl": "https://www.lebonheur.org/",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    }
+  ]
+}

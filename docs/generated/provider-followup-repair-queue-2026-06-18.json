@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-06-18T20:48:53.557Z",
+  "generatedDate": "2026-06-18",
+  "sourceArtifacts": {
+    "blockerRegistryPath": "docs/generated/provider-followup-blocker-registry-2026-06-18.json",
+    "trackABlockerRegistryPath": "docs/generated/track-a-blocker-registry-2026-06-18.json",
+    "sourcePackPlanPath": "docs/generated/provider-source-pack-plan-2026-06-18.json",
+    "providerRepairAuthoringBriefCount": 14,
+    "providerPullNowResolutionLedgerCount": 20
+  },
+  "purpose": "Deterministic provider source-repair queue derived from saved repeated blocker evidence so the next operator can repair exact provider targets without broad re-scans.",
+  "summary": {
+    "totalRows": 0,
+    "distinctSourceUrls": 0,
+    "distinctStates": 0,
+    "byActionClass": {},
+    "byReason": {},
+    "byBucket": {},
+    "byReadinessLane": {},
+    "providerBlockerStatus": "critical_gap"
+  },
+  "rows": []
+}

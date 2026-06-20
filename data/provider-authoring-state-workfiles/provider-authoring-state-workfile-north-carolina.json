@@ -1,0 +1,146 @@
+{
+  "generatedAt": "2026-06-18T21:46:28.700Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "north-carolina",
+  "stateName": "North Carolina",
+  "sourcePacketPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-north-carolina-2026-06-18.json",
+  "sourceTargetsPath": "data/source_targets/north-carolina.json",
+  "instructions": {
+    "summary": "Fill only the missing first-party provider targets needed for this state. Do not broaden beyond provider_directory authoring.",
+    "completionRule": "A candidate row is ready only when sourceName, sourceUrl, domain, and reviewedBy are filled."
+  },
+  "summary": {
+    "neededConcreteTargets": 0,
+    "currentConcreteProviderTargetCount": 3,
+    "existingProviderTargetCount": 3,
+    "candidateSlotCount": 1,
+    "readyCandidateCount": 0,
+    "unresolvedCandidateCount": 1
+  },
+  "existingProviderTargets": [
+    {
+      "sourceName": "Duke Children's Hospital & Health Center",
+      "sourceUrl": "https://www.dukehealth.org/hospitals/duke-childrens-hospital",
+      "domain": "dukehealth.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Concrete first-party pediatric hospital target replacing the placeholder North Carolina provider scaffold."
+    },
+    {
+      "sourceName": "Levine Children's Hospital",
+      "sourceUrl": "https://atriumhealth.org/medical-services/childrens-services/levine-childrens-hospital",
+      "domain": "atriumhealth.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Concrete first-party Charlotte-area pediatric hospital target for North Carolina provider buildout."
+    },
+    {
+      "sourceName": "WakeMed Children's Services",
+      "sourceUrl": "https://www.wakemed.org/care-and-services/childrens-services",
+      "domain": "wakemed.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Concrete first-party Raleigh-area pediatric care target for North Carolina provider buildout."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "North Carolina County Metadata",
+      "sourceUrl": "https://www.north-carolina.gov",
+      "domain": "north-carolina.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "NCDHHS County DSS Directory",
+      "sourceUrl": "https://www.ncdhhs.gov/divisions/social-services/local-county-social-services-departments",
+      "domain": "ncdhhs.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "NCDHHS LME/MCO Directory",
+      "sourceUrl": "https://www.ncdhhs.gov/providers/lme-mco-directory",
+      "domain": "ncdhhs.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "NC Medicaid CAP/C",
+      "sourceUrl": "https://medicaid.ncdhhs.gov/providers/programs-and-services/long-term-services-and-supports/community-alternatives-program-children",
+      "domain": "medicaid.ncdhhs.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "NCDHHS CDSA Location Directory",
+      "sourceUrl": "https://www.ncdhhs.gov/divisions/mental-health-developmental-disabilities-and-substance-use-services/child-and-family-mental-health-developmental-disabilities-and-substance-use-services/early-intervention/childrens-developmental-services-agencies-cdsas",
+      "domain": "ncdhhs.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "NCDPI Exceptional Children Division",
+      "sourceUrl": "https://www.dpi.nc.gov/districts-schools/classroom-resources/exceptional-children",
+      "domain": "dpi.nc.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "NCDPI School Districts Directory",
+      "sourceUrl": "https://www.dpi.nc.gov/districts-schools/district-operations/financial-and-business-services/demographics-and-enrollment/school-district-maps",
+      "domain": "dpi.nc.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "North Carolina Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of North Carolina",
+      "sourceUrl": "https://www.thearcnorth-carolina.org",
+      "domain": "thearcnorth-carolina.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "North Carolina Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.north-carolina.gov/forms",
+      "domain": "dhhs.north-carolina.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "NC Vocational Rehabilitation Services",
+      "sourceUrl": "https://www.ncdhhs.gov/divisions/vocational-rehabilitation-services",
+      "domain": "ncdhhs.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "North Carolina Secretary of State Business Registry",
+      "sourceUrl": "https://www.north-carolina.gov/business",
+      "domain": "north-carolina.gov"
+    }
+  ],
+  "candidateProviderTargets": [
+    {
+      "slotNumber": 1,
+      "stateId": "north-carolina",
+      "stateCode": "NC",
+      "sourceName": "UNC Carolina Institute for Developmental Disabilities",
+      "sourceUrl": "https://cidd.unc.edu/",
+      "domain": "cidd.unc.edu",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Developmental disabilities institute",
+      "organizationType": "university_clinic",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Saved first-party UNC developmental disabilities institute target recovered from the archived North Carolina provider run.",
+      "reviewedBy": "codex"
+    }
+  ]
+}

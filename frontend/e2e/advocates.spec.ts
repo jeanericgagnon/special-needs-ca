@@ -60,4 +60,23 @@ test.describe('Advocates Directory E2E Tests', () => {
     const modalHeader = page.locator('h3:has-text("Suggest Correction")');
     await expect(modalHeader).toBeVisible();
   });
+
+  test('search analytics emit search, no-results, and dead-end events for empty advocate results', async ({ page }) => {
+    await page.goto('/advocates');
+
+    const searchInput = page.locator('input[placeholder*="Search advocates"]');
+    await searchInput.fill('zzznomatchadvocate');
+
+    await expect(page.locator('text=No advocates match your search criteria')).toBeVisible();
+    await page.waitForTimeout(500);
+
+    const analyticsEvents = await page.evaluate(() => {
+      return (window as Window & { __ABLEFULL_DIRECTORY_ANALYTICS__?: Array<{ event: string; searchQuery?: string; resultCount?: number }> })
+        .__ABLEFULL_DIRECTORY_ANALYTICS__ || [];
+    });
+
+    expect(analyticsEvents.some((event) => event.event === 'directory_search' && event.searchQuery === 'zzznomatchadvocate')).toBeTruthy();
+    expect(analyticsEvents.some((event) => event.event === 'directory_no_results' && event.resultCount === 0)).toBeTruthy();
+    expect(analyticsEvents.some((event) => event.event === 'directory_dead_end' && event.resultCount === 0)).toBeTruthy();
+  });
 });

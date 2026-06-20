@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-06-18T21:46:20.163Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "new-york",
+  "sourceWorkfilePath": "data/provider-authoring-state-workfiles/provider-authoring-state-workfile-new-york.json",
+  "summary": {
+    "neededConcreteTargets": 0,
+    "candidateSlotCount": 1,
+    "readyCandidateCount": 1,
+    "unresolvedCandidateCount": 0,
+    "completionPercent": 100
+  },
+  "nextWork": []
+}

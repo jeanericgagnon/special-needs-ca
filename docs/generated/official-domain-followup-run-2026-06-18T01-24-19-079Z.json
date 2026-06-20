@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-06-18T01:24:19.081Z",
+  "mode": "apply",
+  "stateFilter": "arizona",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 4,
+    "appliedStates": 2,
+    "filesChanged": 1,
+    "skippedByReason": {
+      "skipped_followup": 2
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "arizona",
+      "sourceName": "Arizona Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "arizona",
+      "sourceName": "Arizona HCBS Waivers Page",
+      "status": "applied",
+      "targetUrl": "https://www.azahcccs.gov/hcbs"
+    },
+    {
+      "stateId": "arizona",
+      "sourceName": "Arizona Developmental Services Directory",
+      "status": "applied",
+      "targetUrl": "https://des.az.gov/ddd"
+    },
+    {
+      "stateId": "arizona",
+      "sourceName": "Arizona Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

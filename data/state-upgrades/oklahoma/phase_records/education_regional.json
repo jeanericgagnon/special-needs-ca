@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "source_url": "https://sde.ok.gov/",
+    "confidence_score": 9.5,
+    "notes": "Official statewide Oklahoma special education support entrypoint covering all counties.",
+    "suggested_target_id": "ok-ed-osde-special-education",
+    "name": "Oklahoma State Department of Education Special Education",
+    "phone": "(405) 521-3351",
+    "agency_type": "state-special-education-support",
+    "counties_served": [
+      "adair-ok","alfalfa-ok","atoka-ok","beaver-ok","beckham-ok","blaine-ok","bryan-ok","caddo-ok","canadian-ok","carter-ok","cherokee-ok","choctaw-ok","cimarron-ok","cleveland-ok","coal-ok","comanche-ok","cotton-ok","craig-ok","creek-ok","custer-ok","delaware-ok","dewey-ok","ellis-ok","garfield-ok","garvin-ok","grady-ok","grant-ok","greer-ok","harmon-ok","harper-ok","haskell-ok","hughes-ok","jackson-ok","jefferson-ok","johnston-ok","kay-ok","kingfisher-ok","kiowa-ok","latimer-ok","leflore-ok","lincoln-ok","logan-ok","love-ok","major-ok","marshall-ok","mayes-ok","mcclain-ok","mccurtain-ok","mcintosh-ok","murray-ok","muskogee-ok","noble-ok","nowata-ok","okfuskee-ok","oklahoma-ok","okmulgee-ok","osage-ok","ottawa-ok","pawnee-ok","payne-ok","pittsburg-ok","pontotoc-ok","pottawatomie-ok","pushmataha-ok","roger-mills-ok","rogers-ok","seminole-ok","sequoyah-ok","stephens-ok","texas-ok","tillman-ok","tulsa-ok","wagoner-ok","washington-ok","washita-ok","woods-ok","woodward-ok"
+    ],
+    "website": "https://sde.ok.gov/special-education",
+    "evidence_level": "source_listed",
+    "verification_status": "verified",
+    "data_origin": "scraped"
+  }
+]

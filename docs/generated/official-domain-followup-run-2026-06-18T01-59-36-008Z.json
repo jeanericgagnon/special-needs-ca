@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-06-18T01:59:36.010Z",
+  "mode": "apply",
+  "stateFilter": "north-dakota",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 4,
+    "appliedStates": 0,
+    "filesChanged": 0,
+    "skippedByReason": {
+      "skipped_followup": 2,
+      "missing_source_row": 2
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "north-dakota",
+      "sourceName": "North Dakota Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "north-dakota",
+      "sourceName": "North Dakota HCBS Waivers Page",
+      "status": "skipped_missing_source_row",
+      "targetUrl": "https://www.hhs.nd.gov/dd/hcbs"
+    },
+    {
+      "stateId": "north-dakota",
+      "sourceName": "North Dakota Developmental Services Directory",
+      "status": "skipped_missing_source_row",
+      "targetUrl": "https://www.hhs.nd.gov/dd"
+    },
+    {
+      "stateId": "north-dakota",
+      "sourceName": "North Dakota Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

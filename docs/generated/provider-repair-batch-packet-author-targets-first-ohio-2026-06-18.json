@@ -1,0 +1,56 @@
+{
+  "generatedAt": "2026-06-18T06:18:37.709Z",
+  "generatedDate": "2026-06-18",
+  "packetKey": "author-targets-first-ohio",
+  "selection": {
+    "readinessLane": "author-targets-first",
+    "stateId": "ohio",
+    "limit": 5,
+    "selectionMode": "explicit_state_filter"
+  },
+  "sourceArtifacts": {
+    "providerFollowupRepairQueuePath": "docs/generated/provider-followup-repair-queue-2026-06-18.json",
+    "providerRepairExecutionBacklogPath": "docs/generated/provider-repair-execution-backlog-2026-06-18.json",
+    "providerSourcePackPlanPath": "docs/generated/provider-source-pack-plan-2026-06-18.json",
+    "sourceTargetsPath": ""
+  },
+  "summary": {
+    "selectedRows": 1,
+    "scopedLaneRows": 1,
+    "selectedStateIds": [
+      "ohio"
+    ],
+    "selectedHostnames": [
+      "www.nationwidechildrens.org"
+    ],
+    "byActionClass": {
+      "replace_exact_url": 1
+    },
+    "byReason": {
+      "stale_or_invalid_404": 1
+    }
+  },
+  "stateContext": null,
+  "selectedRows": [
+    {
+      "stateId": "ohio",
+      "readinessLane": "author-targets-first",
+      "bucket": "source_repair",
+      "followupReason": "stale_or_invalid_404",
+      "actionClass": "replace_exact_url",
+      "recommendedAction": "Replace the dead provider URL with a current first-party clinic, hospital, or program page on the same trusted organization when possible.",
+      "sourceUrl": "https://www.nationwidechildrens.org/specialties/autism-center",
+      "hostname": "www.nationwidechildrens.org",
+      "repeatCount": 4,
+      "sampleStatusCodes": "404",
+      "runCount": 4,
+      "topSavedPath": "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/03311-ohio-providers-care-nationwide-children-s-hospital-center-for-autism.html"
+    }
+  ],
+  "recommendedCommands": [
+    "npm run audit:provider-repair-batch-packet -- --lane=author-targets-first --state=ohio --limit=5",
+    "npm run audit:provider-followup-repair-queue",
+    "npm run audit:provider-repair-execution-backlog",
+    "npm run audit:provider-source-pack"
+  ]
+}

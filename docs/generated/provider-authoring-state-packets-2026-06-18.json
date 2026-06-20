@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-06-18T21:47:31.419Z",
+  "generatedDate": "2026-06-18",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-18.json",
+  "summary": {
+    "statePacketCount": 1,
+    "firstState": "virginia"
+  },
+  "packets": [
+    {
+      "stateId": "virginia",
+      "stateName": "Virginia",
+      "executionPriority": 1,
+      "neededConcreteTargets": 0,
+      "jsonPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-virginia-2026-06-18.json",
+      "markdownPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-virginia-2026-06-18.md"
+    }
+  ]
+}

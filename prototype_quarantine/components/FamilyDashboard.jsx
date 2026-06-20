@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { runMatchingEngine, calculateAge } from '../engine/matchingEngine';
-import { programs, conditions, functionalNeeds, counties, resourceProviders } from '../data/seedData';
+import { runMatchingEngine, calculateAge } from '../../src/engine/matchingEngine.js';
+import { programs, conditions, functionalNeeds, counties, resourceProviders } from '../../src/data/seedData.js';
 import { 
   User, CheckSquare, Calendar, PhoneCall, MapPin, 
   Sparkles, FileText, CheckCircle2, AlertTriangle, Plus, Trash2, ArrowUpRight, UploadCloud 

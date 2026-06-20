@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-06-17T23:03:37.967Z",
+  "mode": "apply",
+  "stateFilter": "montana",
+  "inputPath": "data/forms-fallback-manual-review-decisions.json",
+  "summary": {
+    "inputRows": 3,
+    "resolvedRows": 3,
+    "deferredRows": 0,
+    "filesChanged": 2,
+    "skippedByReason": {},
+    "byDecisionMode": {
+      "validate_existing_candidate": 2,
+      "replace_with_reviewed_candidate": 1
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "montana",
+      "rowKey": "montana|general_form_related_page|https://dphhs.mt.gov/brd/medicaid",
+      "status": "applied",
+      "resolvedSourceUrl": "https://dphhs.mt.gov/brd/medicaid"
+    },
+    {
+      "stateId": "montana",
+      "rowKey": "montana|application_or_eligibility_guide|https://dphhs.mt.gov/dsd/ddp",
+      "status": "applied",
+      "resolvedSourceUrl": "https://dphhs.mt.gov/dsd/ddp"
+    },
+    {
+      "stateId": "montana",
+      "rowKey": "montana|application_or_eligibility_guide|https://dphhs.mt.gov/dsd/ddp/hcbs/eligibility",
+      "status": "applied",
+      "resolvedSourceUrl": "https://dphhs.mt.gov/dsd/ddp"
+    }
+  ],
+  "resolutionArtifacts": {
+    "queuePath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/forms-fallback-manual-review-queue-2026-06-17.json",
+    "resolutionLedgerPath": "data/source-acquisition-state/forms-fallback-manual-review-ledger.json",
+    "resolutionPackPath": "data/source_packs/forms_fallback_manual_resolutions.json"
+  }
+}

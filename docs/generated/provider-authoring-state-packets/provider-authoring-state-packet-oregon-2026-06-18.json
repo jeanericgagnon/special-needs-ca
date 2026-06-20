@@ -1,0 +1,109 @@
+{
+  "generatedAt": "2026-06-18T19:20:43.086Z",
+  "generatedDate": "2026-06-18",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-18.json",
+  "stateId": "oregon",
+  "stateName": "Oregon",
+  "executionPriority": 1,
+  "sourceTargetsPath": "data/source_targets/oregon.json",
+  "ledgerStatus": "",
+  "ledgerNote": "",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 1,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 0,
+  "placeholderProviderTargetCount": 1,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 3,
+  "nextAction": "Add at least 3 more concrete first-party provider targets for Oregon and then regenerate provider source-pack artifacts.",
+  "providerTargets": [
+    {
+      "sourceName": "Oregon Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for Oregon."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Oregon County Metadata",
+      "sourceUrl": "https://www.oregon.gov",
+      "domain": "oregon.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Oregon Medicaid Portal",
+      "sourceUrl": "https://dhhs.oregon.gov",
+      "domain": "dhhs.oregon.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Oregon Developmental Disability Services",
+      "sourceUrl": "https://www.oregon.gov/odhs/dds",
+      "domain": "oregon.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Oregon HCBS Waivers",
+      "sourceUrl": "https://www.oregon.gov/odhs/dds/hcbs",
+      "domain": "oregon.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Oregon Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.oregon.gov/earlyintervention",
+      "domain": "dhhs.oregon.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Oregon Department of Education Special Ed",
+      "sourceUrl": "https://education.oregon.gov",
+      "domain": "education.oregon.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Oregon Regional Special Education Support",
+      "sourceUrl": "https://education.oregon.gov/regional",
+      "domain": "education.oregon.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Oregon Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Oregon",
+      "sourceUrl": "https://www.thearcoregon.org",
+      "domain": "thearcoregon.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Oregon Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.oregon.gov/forms",
+      "domain": "dhhs.oregon.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Oregon Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.oregon.gov/rehab",
+      "domain": "dhhs.oregon.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Oregon Secretary of State Business Registry",
+      "sourceUrl": "https://www.oregon.gov/business",
+      "domain": "oregon.gov"
+    }
+  ]
+}

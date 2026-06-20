@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-06-18T21:50:52.542Z",
+  "generatedDate": "2026-06-18",
+  "sourceArtifacts": {
+    "accessibilityAuditPath": "docs/generated/directory-accessibility-audit-2026-06-18.json",
+    "accessibilityCandidatesPath": "docs/generated/directory-accessibility-candidates-2026-06-18.json",
+    "providerPlanPath": "docs/generated/provider-accessibility-enrichment-plan-2026-06-18.json",
+    "blockerRegistryPath": "docs/generated/track-a-blocker-registry-2026-06-18.json"
+  },
+  "purpose": "Deterministic enrichment queue for directory foundation signals, split into bounded provider source-pull lanes and explicit candidate-review lanes.",
+  "summary": {
+    "totalRows": 0,
+    "byLane": {},
+    "byTargetTable": {},
+    "blockerStatus": "partial",
+    "providerSourcePullStates": 0,
+    "nonprofitCandidateRows": 0,
+    "providerCandidateRows": 0
+  },
+  "rows": []
+}

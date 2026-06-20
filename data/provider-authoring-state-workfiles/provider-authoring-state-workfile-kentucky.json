@@ -1,0 +1,146 @@
+{
+  "generatedAt": "2026-06-18T21:40:43.552Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "kentucky",
+  "stateName": "Kentucky",
+  "sourcePacketPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-kentucky-2026-06-18.json",
+  "sourceTargetsPath": "data/source_targets/kentucky.json",
+  "instructions": {
+    "summary": "Fill only the missing first-party provider targets needed for this state. Do not broaden beyond provider_directory authoring.",
+    "completionRule": "A candidate row is ready only when sourceName, sourceUrl, domain, and reviewedBy are filled."
+  },
+  "summary": {
+    "neededConcreteTargets": 0,
+    "currentConcreteProviderTargetCount": 3,
+    "existingProviderTargetCount": 3,
+    "candidateSlotCount": 1,
+    "readyCandidateCount": 0,
+    "unresolvedCandidateCount": 1
+  },
+  "existingProviderTargets": [
+    {
+      "sourceName": "Norton Children's Hospital",
+      "sourceUrl": "https://nortonchildrens.com",
+      "domain": "nortonchildrens.com",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Concrete first-party pediatric hospital target for Kentucky provider buildout."
+    },
+    {
+      "sourceName": "Kentucky Children's Hospital",
+      "sourceUrl": "https://ukhealthcare.com",
+      "domain": "ukhealthcare.com",
+      "crawlMethod": "static_fetch",
+      "organizationType": "university_clinic",
+      "notes": "Concrete first-party academic pediatric care target for Kentucky."
+    },
+    {
+      "sourceName": "University of Louisville Pediatrics",
+      "sourceUrl": "https://medicine.louisville.edu/academics-programs/academic-departments/pediatrics",
+      "domain": "medicine.louisville.edu",
+      "crawlMethod": "static_fetch",
+      "organizationType": "university_clinic",
+      "notes": "Concrete first-party academic pediatrics target added to lift Kentucky into pull-now provider readiness."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Kentucky County Metadata",
+      "sourceUrl": "https://www.kentucky.gov",
+      "domain": "kentucky.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Kentucky Medicaid Portal",
+      "sourceUrl": "https://dhhs.kentucky.gov",
+      "domain": "dhhs.kentucky.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Kentucky Department for Behavioral Health, Developmental and Intellectual Disabilities",
+      "sourceUrl": "https://dbhdid.ky.gov/ddid",
+      "domain": "dbhdid.ky.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Kentucky HCBS Waivers",
+      "sourceUrl": "https://dbhdid.ky.gov/hcbs",
+      "domain": "dbhdid.ky.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Kentucky Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.kentucky.gov/earlyintervention",
+      "domain": "dhhs.kentucky.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Kentucky Department of Education Special Ed",
+      "sourceUrl": "https://education.kentucky.gov",
+      "domain": "education.kentucky.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Kentucky Regional Special Education Support",
+      "sourceUrl": "https://education.kentucky.gov/regional",
+      "domain": "education.kentucky.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Kentucky Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Kentucky",
+      "sourceUrl": "https://www.thearckentucky.org",
+      "domain": "thearckentucky.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Kentucky Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.kentucky.gov/forms",
+      "domain": "dhhs.kentucky.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Kentucky Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.kentucky.gov/rehab",
+      "domain": "dhhs.kentucky.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Kentucky Secretary of State Business Registry",
+      "sourceUrl": "https://www.kentucky.gov/business",
+      "domain": "kentucky.gov"
+    }
+  ],
+  "candidateProviderTargets": [
+    {
+      "slotNumber": 1,
+      "stateId": "kentucky",
+      "stateCode": "KY",
+      "sourceName": "Golisano Children's at UK",
+      "sourceUrl": "https://ukhealthcare.com/kentucky-childrens-hospital/golisano-childrens-uk",
+      "domain": "ukhealthcare.com",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Children's Hospital Program Page",
+      "organizationType": "university_clinic",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Saved first-party Kentucky Children's Hospital subpage already evidenced in archived provider run artifacts.",
+      "reviewedBy": "codex"
+    }
+  ]
+}

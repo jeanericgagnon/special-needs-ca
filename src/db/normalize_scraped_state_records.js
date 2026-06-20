@@ -79,6 +79,8 @@ const stagingTables = [
   'staging_scraped_iep_advocates',
   'staging_scraped_resource_providers',
   'staging_scraped_forms',
+  'staging_scraped_help_resources',
+  'staging_scraped_knowledge_content',
   'staging_scraped_waitlists',
   'staging_scraped_sources'
 ];
@@ -119,6 +121,15 @@ for (const table of stagingTables) {
     }
     if ('source_url' in record) {
       record.source_url = normalizeUrl(record.source_url);
+    }
+    if ('official_download_url' in record) {
+      record.official_download_url = normalizeUrl(record.official_download_url);
+    }
+    if ('action_url' in record) {
+      record.action_url = normalizeUrl(record.action_url);
+    }
+    if ('canonical_url' in record) {
+      record.canonical_url = normalizeUrl(record.canonical_url);
     }
     if ('county_id' in record && record.county_id) {
       // Cross-reference county with counties table

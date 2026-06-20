@@ -1,0 +1,166 @@
+{
+  "generatedAt": "2026-06-18T18:56:13.419Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "idaho",
+  "stateName": "Idaho",
+  "sourcePacketPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-idaho-2026-06-18.json",
+  "sourceTargetsPath": "data/source_targets/idaho.json",
+  "instructions": {
+    "summary": "Fill only the missing first-party provider targets needed for this state. Do not broaden beyond provider_directory authoring.",
+    "completionRule": "A candidate row is ready only when sourceName, sourceUrl, domain, and reviewedBy are filled."
+  },
+  "summary": {
+    "neededConcreteTargets": 3,
+    "currentConcreteProviderTargetCount": 0,
+    "existingProviderTargetCount": 1,
+    "candidateSlotCount": 3,
+    "readyCandidateCount": 3,
+    "unresolvedCandidateCount": 0
+  },
+  "existingProviderTargets": [
+    {
+      "sourceName": "Idaho Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for Idaho."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Idaho County Metadata",
+      "sourceUrl": "https://www.idaho.gov",
+      "domain": "idaho.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Idaho Medicaid Portal",
+      "sourceUrl": "https://dhhs.idaho.gov",
+      "domain": "dhhs.idaho.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Idaho Department of Health and Welfare",
+      "sourceUrl": "https://healthandwelfare.idaho.gov/developmental-disabilities",
+      "domain": "healthandwelfare.idaho.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Idaho HCBS Waivers",
+      "sourceUrl": "https://healthandwelfare.idaho.gov/hcbs",
+      "domain": "healthandwelfare.idaho.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Idaho Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.idaho.gov/earlyintervention",
+      "domain": "dhhs.idaho.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Idaho Department of Education Special Ed",
+      "sourceUrl": "https://education.idaho.gov",
+      "domain": "education.idaho.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Idaho Regional Special Education Support",
+      "sourceUrl": "https://education.idaho.gov/regional",
+      "domain": "education.idaho.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Idaho Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Idaho",
+      "sourceUrl": "https://www.thearcidaho.org",
+      "domain": "thearcidaho.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Idaho Ei Referral Guide",
+      "sourceUrl": "https://healthandwelfare.idaho.gov/",
+      "domain": "healthandwelfare.idaho.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Idaho Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.idaho.gov/rehab",
+      "domain": "dhhs.idaho.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Idaho Secretary of State Business Registry",
+      "sourceUrl": "https://www.idaho.gov/business",
+      "domain": "idaho.gov"
+    }
+  ],
+  "candidateProviderTargets": [
+    {
+      "slotNumber": 1,
+      "stateId": "idaho",
+      "stateCode": "ID",
+      "sourceName": "St. Luke's Children's",
+      "sourceUrl": "https://www.stlukesonline.org/",
+      "domain": "stlukesonline.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Children's health system",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official St. Luke's first-party health system target for Idaho pediatric and specialty provider coverage.",
+      "reviewedBy": "codex"
+    },
+    {
+      "slotNumber": 2,
+      "stateId": "idaho",
+      "stateCode": "ID",
+      "sourceName": "Saint Alphonsus Regional Medical Center",
+      "sourceUrl": "https://www.saintalphonsus.org/",
+      "domain": "saintalphonsus.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Regional hospital system",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official Saint Alphonsus first-party hospital system target for southwest Idaho provider coverage.",
+      "reviewedBy": "codex"
+    },
+    {
+      "slotNumber": 3,
+      "stateId": "idaho",
+      "stateCode": "ID",
+      "sourceName": "Portneuf Medical Center",
+      "sourceUrl": "https://www.portneuf.org/",
+      "domain": "portneuf.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Regional medical center",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official Portneuf first-party medical center target for southeast Idaho hospital and clinic coverage.",
+      "reviewedBy": "codex"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "generatedAt": "2026-06-19T18:22:13.901Z",
+  "generatedDate": "2026-06-19",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+  "stateId": "virginia",
+  "stateName": "Virginia",
+  "executionPriority": 42,
+  "sourceTargetsPath": "data/source_targets/virginia.json",
+  "ledgerStatus": "complete",
+  "ledgerNote": "applied-one-concrete-first-party-provider-target",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 1,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 4,
+  "placeholderProviderTargetCount": 0,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 0,
+  "neededLiveProviderRows": 2,
+  "authoringGapClass": "needs_refresh_or_deeper_targets",
+  "nextAction": "Refresh Virginia provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+  "providerTargets": [
+    {
+      "sourceName": "Children's Hospital of Richmond at VCU",
+      "sourceUrl": "https://www.chrichmond.org",
+      "domain": "chrichmond.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Concrete first-party pediatric hospital target for eastern Virginia provider buildout."
+    },
+    {
+      "sourceName": "UVA Health Children's",
+      "sourceUrl": "https://childrens.uvahealth.com",
+      "domain": "childrens.uvahealth.com",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Concrete first-party pediatric hospital target for central Virginia provider buildout."
+    },
+    {
+      "sourceName": "Children's Hospital of The King's Daughters",
+      "sourceUrl": "https://www.chkd.org",
+      "domain": "chkd.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Concrete first-party pediatric hospital target for Hampton Roads and coastal Virginia."
+    },
+    {
+      "sourceName": "Children's Hospital of The King's Daughters Programs, Clinics, and Centers",
+      "sourceUrl": "https://www.chkd.org/our-care/programs-clinics-and-centers",
+      "domain": "chkd.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Saved first-party specialty programs path recovered from the archived CHKD provider page."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Virginia County Metadata",
+      "sourceUrl": "https://www.virginia.gov",
+      "domain": "virginia.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Virginia Medicaid Portal",
+      "sourceUrl": "https://dhhs.virginia.gov",
+      "domain": "dhhs.virginia.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Virginia Department of Behavioral Health and Developmental Services",
+      "sourceUrl": "https://dbhds.virginia.gov/",
+      "domain": "dbhds.virginia.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Virginia HCBS Waivers",
+      "sourceUrl": "https://dbhds.virginia.gov/hcbs",
+      "domain": "dbhds.virginia.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Virginia Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.virginia.gov/earlyintervention",
+      "domain": "dhhs.virginia.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Virginia Department of Education Special Ed",
+      "sourceUrl": "https://education.virginia.gov",
+      "domain": "education.virginia.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Virginia Regional Special Education Support",
+      "sourceUrl": "https://education.virginia.gov/regional",
+      "domain": "education.virginia.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Virginia Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Virginia",
+      "sourceUrl": "https://www.thearcvirginia.org",
+      "domain": "thearcvirginia.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Virginia Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.virginia.gov/forms",
+      "domain": "dhhs.virginia.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Virginia Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.virginia.gov/rehab",
+      "domain": "dhhs.virginia.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Virginia Secretary of State Business Registry",
+      "sourceUrl": "https://www.virginia.gov/business",
+      "domain": "virginia.gov"
+    }
+  ]
+}

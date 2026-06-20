@@ -1,0 +1,151 @@
+{
+  "generatedAt": "2026-06-19T18:22:13.900Z",
+  "generatedDate": "2026-06-19",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+  "stateId": "utah",
+  "stateName": "Utah",
+  "executionPriority": 40,
+  "sourceTargetsPath": "data/source_targets/utah.json",
+  "ledgerStatus": "complete",
+  "ledgerNote": "added-three-concrete-first-party-provider-targets",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 1,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 5,
+  "placeholderProviderTargetCount": 1,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 0,
+  "neededLiveProviderRows": 2,
+  "authoringGapClass": "needs_refresh_or_deeper_targets",
+  "nextAction": "Refresh Utah provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+  "providerTargets": [
+    {
+      "sourceName": "Utah Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for Utah."
+    },
+    {
+      "sourceName": "Primary Children's Hospital",
+      "sourceUrl": "https://primarychildrens.org/",
+      "domain": "primarychildrens.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Primary Children's Hospital source for statewide pediatric hospital and specialty care in Utah."
+    },
+    {
+      "sourceName": "University of Utah Hospital",
+      "sourceUrl": "https://healthcare.utah.edu/locations/hospital",
+      "domain": "healthcare.utah.edu",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official University of Utah Hospital source for pediatric referral and academic specialty care connected to Primary Children's."
+    },
+    {
+      "sourceName": "Intermountain Health",
+      "sourceUrl": "https://intermountainhealthcare.org/",
+      "domain": "intermountainhealthcare.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Intermountain Health source for Utah pediatric specialty and hospital network coverage anchored by Primary Children's."
+    },
+    {
+      "sourceName": "Primary Children's Hospital - Salt Lake City",
+      "sourceUrl": "https://intermountainhealthcare.org/locations/primary-childrens-salt-lake-city",
+      "domain": "intermountainhealthcare.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Primary Children's Salt Lake City hospital source for statewide pediatric hospital and specialty care in Utah."
+    },
+    {
+      "sourceName": "Primary Children's Hospital - Lehi",
+      "sourceUrl": "https://intermountainhealthcare.org/locations/primary-childrens-lehi",
+      "domain": "intermountainhealthcare.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Primary Children's Lehi hospital source for pediatric specialty and hospital care in Utah County."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Utah County Metadata",
+      "sourceUrl": "https://www.utah.gov",
+      "domain": "utah.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Utah Medicaid Portal",
+      "sourceUrl": "https://dhhs.utah.gov",
+      "domain": "dhhs.utah.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Utah Division of Services for People with Disabilities",
+      "sourceUrl": "https://dspd.utah.gov/",
+      "domain": "dspd.utah.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Utah HCBS Waivers",
+      "sourceUrl": "https://dspd.utah.gov/hcbs",
+      "domain": "dspd.utah.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Utah Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.utah.gov/earlyintervention",
+      "domain": "dhhs.utah.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Utah Department of Education Special Ed",
+      "sourceUrl": "https://education.utah.gov",
+      "domain": "education.utah.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Utah Regional Special Education Support",
+      "sourceUrl": "https://education.utah.gov/regional",
+      "domain": "education.utah.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Utah Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Utah",
+      "sourceUrl": "https://www.thearcutah.org",
+      "domain": "thearcutah.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Utah Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.utah.gov/forms",
+      "domain": "dhhs.utah.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Utah Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.utah.gov/rehab",
+      "domain": "dhhs.utah.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Utah Secretary of State Business Registry",
+      "sourceUrl": "https://www.utah.gov/business",
+      "domain": "utah.gov"
+    }
+  ]
+}

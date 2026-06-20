@@ -1,0 +1,138 @@
+{
+  "generatedAt": "2026-06-18T18:46:43.784Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "colorado",
+  "stateName": "Colorado",
+  "sourcePacketPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-colorado-2026-06-18.json",
+  "sourceTargetsPath": "data/source_targets/colorado.json",
+  "instructions": {
+    "summary": "Fill only the missing first-party provider targets needed for this state. Do not broaden beyond provider_directory authoring.",
+    "completionRule": "A candidate row is ready only when sourceName, sourceUrl, domain, and reviewedBy are filled."
+  },
+  "summary": {
+    "neededConcreteTargets": 1,
+    "currentConcreteProviderTargetCount": 2,
+    "existingProviderTargetCount": 2,
+    "candidateSlotCount": 1,
+    "readyCandidateCount": 0,
+    "unresolvedCandidateCount": 1
+  },
+  "existingProviderTargets": [
+    {
+      "sourceName": "Children's Hospital Colorado",
+      "sourceUrl": "https://www.childrenscolorado.org",
+      "domain": "childrenscolorado.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Concrete first-party pediatric hospital target for Colorado provider buildout."
+    },
+    {
+      "sourceName": "JFK Partners",
+      "sourceUrl": "https://medschool.cuanschutz.edu/jfk-partners",
+      "domain": "medschool.cuanschutz.edu",
+      "crawlMethod": "static_fetch",
+      "organizationType": "university_clinic",
+      "notes": "Concrete first-party university developmental disabilities clinic target for Colorado."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Colorado County Metadata",
+      "sourceUrl": "https://www.colorado.gov",
+      "domain": "colorado.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Colorado Medicaid Portal",
+      "sourceUrl": "https://dhhs.colorado.gov",
+      "domain": "dhhs.colorado.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Colorado Division for Developmental Disabilities",
+      "sourceUrl": "https://hcpf.colorado.gov/developmental-disabilities",
+      "domain": "hcpf.colorado.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Colorado HCBS Waivers",
+      "sourceUrl": "https://hcpf.colorado.gov/hcbs",
+      "domain": "hcpf.colorado.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Colorado Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.colorado.gov/earlyintervention",
+      "domain": "dhhs.colorado.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Colorado Department of Education Special Ed",
+      "sourceUrl": "https://education.colorado.gov",
+      "domain": "education.colorado.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Colorado Regional Special Education Support",
+      "sourceUrl": "https://education.colorado.gov/regional",
+      "domain": "education.colorado.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Colorado Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Colorado",
+      "sourceUrl": "https://www.thearccolorado.org",
+      "domain": "thearccolorado.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Colorado Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.colorado.gov/forms",
+      "domain": "dhhs.colorado.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Colorado Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.colorado.gov/rehab",
+      "domain": "dhhs.colorado.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Colorado Secretary of State Business Registry",
+      "sourceUrl": "https://www.colorado.gov/business",
+      "domain": "colorado.gov"
+    }
+  ],
+  "candidateProviderTargets": [
+    {
+      "slotNumber": 1,
+      "stateId": "colorado",
+      "stateCode": "CO",
+      "sourceName": "Denver Health",
+      "sourceUrl": "https://www.denverhealth.org/",
+      "domain": "denverhealth.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Academic medical center",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official Denver Health first-party health-system target to deepen Colorado provider coverage with a major academic public hospital source.",
+      "reviewedBy": "codex"
+    }
+  ]
+}

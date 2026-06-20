@@ -1,0 +1,135 @@
+{
+  "generatedAt": "2026-06-19T18:22:13.858Z",
+  "generatedDate": "2026-06-19",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+  "stateId": "connecticut",
+  "stateName": "Connecticut",
+  "executionPriority": 7,
+  "sourceTargetsPath": "data/source_targets/connecticut.json",
+  "ledgerStatus": "complete",
+  "ledgerNote": "added-three-concrete-first-party-provider-targets",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 1,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 3,
+  "placeholderProviderTargetCount": 1,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 0,
+  "neededLiveProviderRows": 2,
+  "authoringGapClass": "needs_refresh_or_deeper_targets",
+  "nextAction": "Refresh Connecticut provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+  "providerTargets": [
+    {
+      "sourceName": "Connecticut Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for Connecticut."
+    },
+    {
+      "sourceName": "Connecticut Children's",
+      "sourceUrl": "https://www.connecticutchildrens.org/",
+      "domain": "connecticutchildrens.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Connecticut Children's first-party hospital target replacing the generic placeholder domain with the named pediatric system source."
+    },
+    {
+      "sourceName": "Yale New Haven Children's Hospital",
+      "sourceUrl": "https://www.ynhh.org/childrens-hospital",
+      "domain": "ynhh.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Yale New Haven Children's first-party pediatric hospital target for statewide specialty coverage in Connecticut."
+    },
+    {
+      "sourceName": "UConn Health",
+      "sourceUrl": "https://health.uconn.edu/",
+      "domain": "health.uconn.edu",
+      "crawlMethod": "static_fetch",
+      "organizationType": "university_clinic",
+      "notes": "Official UConn Health first-party academic medical system target to deepen pediatric and specialty clinic coverage in Connecticut."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Connecticut County Metadata",
+      "sourceUrl": "https://www.connecticut.gov",
+      "domain": "connecticut.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Connecticut Medicaid Portal",
+      "sourceUrl": "https://dhhs.connecticut.gov",
+      "domain": "dhhs.connecticut.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Connecticut Department of Developmental Services",
+      "sourceUrl": "https://portal.ct.gov/dds",
+      "domain": "portal.ct.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Connecticut HCBS Waivers",
+      "sourceUrl": "https://portal.ct.gov/dds/hcbs",
+      "domain": "portal.ct.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Connecticut Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.connecticut.gov/earlyintervention",
+      "domain": "dhhs.connecticut.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Connecticut Department of Education Special Ed",
+      "sourceUrl": "https://education.connecticut.gov",
+      "domain": "education.connecticut.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Connecticut Regional Special Education Support",
+      "sourceUrl": "https://education.connecticut.gov/regional",
+      "domain": "education.connecticut.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Connecticut Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Connecticut",
+      "sourceUrl": "https://www.thearcconnecticut.org",
+      "domain": "thearcconnecticut.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Connecticut Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.connecticut.gov/forms",
+      "domain": "dhhs.connecticut.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Connecticut Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.connecticut.gov/rehab",
+      "domain": "dhhs.connecticut.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Connecticut Secretary of State Business Registry",
+      "sourceUrl": "https://www.connecticut.gov/business",
+      "domain": "connecticut.gov"
+    }
+  ]
+}

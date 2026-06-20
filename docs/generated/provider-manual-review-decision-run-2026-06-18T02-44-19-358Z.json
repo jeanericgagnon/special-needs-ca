@@ -1,0 +1,95 @@
+{
+  "generatedAt": "2026-06-18T02:44:19.363Z",
+  "mode": "apply",
+  "stateFilter": null,
+  "inputPath": "docs/generated/provider-manual-review-queue-2026-06-18.json",
+  "dbPath": "ca_disability_navigator.db",
+  "summary": {
+    "inputRows": 10,
+    "appliedRows": 10,
+    "filesChanged": 2,
+    "appliedByBlocker": {
+      "county_geocode_no_match": 5,
+      "missing_address_and_county": 4,
+      "malformed_address_for_county_resolution": 1
+    },
+    "skippedByReason": {},
+    "appliedByReviewStatus": {
+      "blocked_county_geocode_no_match": 5,
+      "blocked_missing_address_and_county": 4,
+      "blocked_malformed_address_for_county_resolution": 1
+    }
+  },
+  "decisions": [
+    {
+      "rowId": 499,
+      "stateId": "florida",
+      "status": "applied",
+      "reviewStatus": "blocked_county_geocode_no_match",
+      "blockerKey": "county_geocode_no_match"
+    },
+    {
+      "rowId": 500,
+      "stateId": "florida",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 506,
+      "stateId": "florida",
+      "status": "applied",
+      "reviewStatus": "blocked_county_geocode_no_match",
+      "blockerKey": "county_geocode_no_match"
+    },
+    {
+      "rowId": 509,
+      "stateId": "nevada",
+      "status": "applied",
+      "reviewStatus": "blocked_county_geocode_no_match",
+      "blockerKey": "county_geocode_no_match"
+    },
+    {
+      "rowId": 503,
+      "stateId": "south-carolina",
+      "status": "applied",
+      "reviewStatus": "blocked_county_geocode_no_match",
+      "blockerKey": "county_geocode_no_match"
+    },
+    {
+      "rowId": 513,
+      "stateId": "texas",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 515,
+      "stateId": "texas",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 501,
+      "stateId": "utah",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_address_and_county",
+      "blockerKey": "missing_address_and_county"
+    },
+    {
+      "rowId": 511,
+      "stateId": "west-virginia",
+      "status": "applied",
+      "reviewStatus": "blocked_malformed_address_for_county_resolution",
+      "blockerKey": "malformed_address_for_county_resolution"
+    },
+    {
+      "rowId": 514,
+      "stateId": "wyoming",
+      "status": "applied",
+      "reviewStatus": "blocked_county_geocode_no_match",
+      "blockerKey": "county_geocode_no_match"
+    }
+  ]
+}

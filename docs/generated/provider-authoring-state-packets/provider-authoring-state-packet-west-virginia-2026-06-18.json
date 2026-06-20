@@ -1,0 +1,109 @@
+{
+  "generatedAt": "2026-06-18T19:30:58.150Z",
+  "generatedDate": "2026-06-18",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-18.json",
+  "stateId": "west-virginia",
+  "stateName": "West Virginia",
+  "executionPriority": 1,
+  "sourceTargetsPath": "data/source_targets/west-virginia.json",
+  "ledgerStatus": "",
+  "ledgerNote": "",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 1,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 0,
+  "placeholderProviderTargetCount": 1,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 3,
+  "nextAction": "Add at least 3 more concrete first-party provider targets for West Virginia and then regenerate provider source-pack artifacts.",
+  "providerTargets": [
+    {
+      "sourceName": "West Virginia Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for West Virginia."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "West Virginia County Metadata",
+      "sourceUrl": "https://www.west-virginia.gov",
+      "domain": "west-virginia.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "West Virginia Medicaid Portal",
+      "sourceUrl": "https://dhhs.west-virginia.gov",
+      "domain": "dhhs.west-virginia.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "West Virginia Intellectual and Developmental Disabilities Division",
+      "sourceUrl": "https://dhhr.wv.gov/bms",
+      "domain": "dhhr.wv.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "West Virginia HCBS Waivers",
+      "sourceUrl": "https://dhhr.wv.gov/bms/hcbs",
+      "domain": "dhhr.wv.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "West Virginia Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.west-virginia.gov/earlyintervention",
+      "domain": "dhhs.west-virginia.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "West Virginia Department of Education Special Ed",
+      "sourceUrl": "https://education.west-virginia.gov",
+      "domain": "education.west-virginia.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "West Virginia Regional Special Education Support",
+      "sourceUrl": "https://education.west-virginia.gov/regional",
+      "domain": "education.west-virginia.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "West Virginia Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of West Virginia",
+      "sourceUrl": "https://www.thearcwest-virginia.org",
+      "domain": "thearcwest-virginia.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "West Virginia Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.west-virginia.gov/forms",
+      "domain": "dhhs.west-virginia.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "West Virginia Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.west-virginia.gov/rehab",
+      "domain": "dhhs.west-virginia.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "West Virginia Secretary of State Business Registry",
+      "sourceUrl": "https://www.west-virginia.gov/business",
+      "domain": "west-virginia.gov"
+    }
+  ]
+}

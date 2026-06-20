@@ -1,0 +1,48 @@
+{
+  "generatedAt": "2026-06-18T21:57:51.242Z",
+  "mode": "apply",
+  "inputPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/knowledge-content-repair-decision-template-2026-06-18.json",
+  "summary": {
+    "inputRows": 6,
+    "resolvedRows": 0,
+    "deferredRows": 6,
+    "filesChanged": 2,
+    "skippedByReason": {}
+  },
+  "decisions": [
+    {
+      "id": "knowledge-chip-overview",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "id": "knowledge-idea-child-find",
+      "status": "applied_skipped",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "id": "knowledge-idea-iep-review-revision",
+      "status": "applied_skipped",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "id": "knowledge-idea-evaluation-procedures",
+      "status": "applied_skipped",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "id": "knowledge-idea-iep-team",
+      "status": "applied_skipped",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "id": "knowledge-ssa-child-disability-starter-kit",
+      "status": "applied_skipped",
+      "resolvedSourceUrl": ""
+    }
+  ],
+  "outputs": {
+    "ledgerPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-state/knowledge-content-repair-ledger.json",
+    "resolutionPackPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source_packs/knowledge_content_repair_resolutions.json"
+  }
+}

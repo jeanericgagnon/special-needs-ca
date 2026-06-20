@@ -1,0 +1,88 @@
+{
+  "generatedAt": "2026-06-18T03:19:14.755Z",
+  "mode": "apply",
+  "inputPath": "docs/generated/advocate-manual-review-queue-2026-06-18.json",
+  "dbPath": "ca_disability_navigator.db",
+  "summary": {
+    "inputRows": 9,
+    "appliedRows": 9,
+    "appliedByBlocker": {
+      "national_guidance_not_local_advocate": 1,
+      "national_directory_requires_state_slice": 1,
+      "missing_advocate_county_resolution": 3,
+      "multistate_advocate_without_county": 4
+    },
+    "skippedByReason": {},
+    "appliedByReviewStatus": {
+      "blocked_national_advocate_guidance": 1,
+      "blocked_national_directory_state_slice_required": 1,
+      "blocked_missing_advocate_county_resolution": 3,
+      "blocked_multistate_advocate_without_county": 4
+    }
+  },
+  "decisions": [
+    {
+      "rowId": 4962,
+      "stateId": "national",
+      "status": "applied",
+      "reviewStatus": "blocked_national_advocate_guidance",
+      "blockerKey": "national_guidance_not_local_advocate"
+    },
+    {
+      "rowId": 4963,
+      "stateId": "national",
+      "status": "applied",
+      "reviewStatus": "blocked_national_directory_state_slice_required",
+      "blockerKey": "national_directory_requires_state_slice"
+    },
+    {
+      "rowId": 4964,
+      "stateId": "new-jersey",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_advocate_county_resolution",
+      "blockerKey": "missing_advocate_county_resolution"
+    },
+    {
+      "rowId": 4965,
+      "stateId": "multi-state",
+      "status": "applied",
+      "reviewStatus": "blocked_multistate_advocate_without_county",
+      "blockerKey": "multistate_advocate_without_county"
+    },
+    {
+      "rowId": 4966,
+      "stateId": "multi-state",
+      "status": "applied",
+      "reviewStatus": "blocked_multistate_advocate_without_county",
+      "blockerKey": "multistate_advocate_without_county"
+    },
+    {
+      "rowId": 4967,
+      "stateId": "multi-state",
+      "status": "applied",
+      "reviewStatus": "blocked_multistate_advocate_without_county",
+      "blockerKey": "multistate_advocate_without_county"
+    },
+    {
+      "rowId": 4968,
+      "stateId": "maryland",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_advocate_county_resolution",
+      "blockerKey": "missing_advocate_county_resolution"
+    },
+    {
+      "rowId": 4969,
+      "stateId": "multi-state",
+      "status": "applied",
+      "reviewStatus": "blocked_multistate_advocate_without_county",
+      "blockerKey": "multistate_advocate_without_county"
+    },
+    {
+      "rowId": 4970,
+      "stateId": "texas",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_advocate_county_resolution",
+      "blockerKey": "missing_advocate_county_resolution"
+    }
+  ]
+}

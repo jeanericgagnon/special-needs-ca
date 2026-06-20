@@ -221,6 +221,81 @@ CREATE TABLE IF NOT EXISTS staging_scraped_forms (
     letter_script TEXT
 );
 
+CREATE TABLE IF NOT EXISTS staging_scraped_programs (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    source_url TEXT NOT NULL,
+    source_name TEXT,
+    source_type TEXT,
+    scraped_at TEXT NOT NULL,
+    state_id TEXT NOT NULL,
+    county_id TEXT,
+    confidence_score REAL,
+    extraction_notes TEXT,
+    raw_text_excerpt TEXT,
+    suggested_target_table TEXT,
+    suggested_target_id TEXT,
+    duplicate_candidate_id TEXT,
+    review_status TEXT DEFAULT 'pending_review',
+    extracted_name TEXT NOT NULL,
+    description TEXT,
+    who_it_is_for TEXT,
+    who_might_qualify TEXT,
+    official_source_url TEXT NOT NULL,
+    category TEXT NOT NULL,
+    program_type TEXT NOT NULL,
+    extracted_phone TEXT,
+    extracted_email TEXT,
+    action_url TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS staging_scraped_help_resources (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    source_url TEXT NOT NULL,
+    source_name TEXT,
+    source_type TEXT,
+    scraped_at TEXT NOT NULL,
+    state_id TEXT NOT NULL,
+    county_id TEXT,
+    confidence_score REAL,
+    extraction_notes TEXT,
+    raw_text_excerpt TEXT,
+    suggested_target_table TEXT,
+    suggested_target_id TEXT,
+    duplicate_candidate_id TEXT,
+    review_status TEXT DEFAULT 'pending_review',
+    extracted_name TEXT NOT NULL,
+    gap_family TEXT NOT NULL,
+    help_type TEXT NOT NULL,
+    extracted_website TEXT,
+    extracted_phone TEXT,
+    extracted_email TEXT,
+    extracted_address TEXT,
+    action_url TEXT NOT NULL,
+    service_summary TEXT
+);
+
+CREATE TABLE IF NOT EXISTS staging_scraped_knowledge_content (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    source_url TEXT NOT NULL,
+    source_name TEXT,
+    source_type TEXT,
+    scraped_at TEXT NOT NULL,
+    state_id TEXT NOT NULL,
+    county_id TEXT,
+    confidence_score REAL,
+    extraction_notes TEXT,
+    raw_text_excerpt TEXT,
+    suggested_target_table TEXT,
+    suggested_target_id TEXT,
+    duplicate_candidate_id TEXT,
+    review_status TEXT DEFAULT 'pending_review',
+    slug TEXT NOT NULL,
+    title TEXT NOT NULL,
+    content_category TEXT NOT NULL,
+    canonical_url TEXT NOT NULL,
+    summary TEXT
+);
+
 CREATE TABLE IF NOT EXISTS staging_scraped_waitlists (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     source_url TEXT NOT NULL,

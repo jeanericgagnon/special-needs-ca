@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-06-18T01:42:46.824Z",
+  "mode": "apply",
+  "stateFilter": "louisiana",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 4,
+    "appliedStates": 2,
+    "filesChanged": 1,
+    "skippedByReason": {
+      "skipped_followup": 2
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "louisiana",
+      "sourceName": "Louisiana Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "louisiana",
+      "sourceName": "Louisiana HCBS Waivers Page",
+      "status": "applied",
+      "targetUrl": "https://ldh.la.gov/ocdd/hcbs"
+    },
+    {
+      "stateId": "louisiana",
+      "sourceName": "Louisiana Developmental Services Directory",
+      "status": "applied",
+      "targetUrl": "https://ldh.la.gov/ocdd"
+    },
+    {
+      "stateId": "louisiana",
+      "sourceName": "Louisiana Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

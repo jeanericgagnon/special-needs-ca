@@ -1,6 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 import FindHelpClient from './find-help-client';
+import { getDirectoryFoundationSnapshot } from '@/lib/db';
 
 export const metadata: Metadata = {
   title: 'Parent Support & Special Needs Tools Hub | Ablefull',
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function FindHelpPage() {
-  return <FindHelpClient />;
+export default async function FindHelpPage() {
+  const foundationSnapshot = await getDirectoryFoundationSnapshot();
+  return <FindHelpClient foundationSnapshot={foundationSnapshot} />;
 }

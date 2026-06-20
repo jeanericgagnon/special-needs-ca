@@ -1,0 +1,109 @@
+{
+  "generatedAt": "2026-06-18T18:40:09.435Z",
+  "generatedDate": "2026-06-18",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-18.json",
+  "stateId": "arizona",
+  "stateName": "Arizona",
+  "executionPriority": 1,
+  "sourceTargetsPath": "data/source_targets/arizona.json",
+  "ledgerStatus": "",
+  "ledgerNote": "",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 1,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 0,
+  "placeholderProviderTargetCount": 1,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 3,
+  "nextAction": "Add at least 3 more concrete first-party provider targets for Arizona and then regenerate provider source-pack artifacts.",
+  "providerTargets": [
+    {
+      "sourceName": "Arizona Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for Arizona."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Arizona County Metadata",
+      "sourceUrl": "https://www.arizona.gov",
+      "domain": "arizona.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Arizona Medicaid Portal",
+      "sourceUrl": "https://dhhs.arizona.gov",
+      "domain": "dhhs.arizona.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Arizona Division of Developmental Disabilities",
+      "sourceUrl": "https://des.az.gov/ddd",
+      "domain": "des.az.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Arizona HCBS Waivers",
+      "sourceUrl": "https://www.azahcccs.gov/hcbs",
+      "domain": "azahcccs.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Arizona Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.arizona.gov/earlyintervention",
+      "domain": "dhhs.arizona.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Arizona Department of Education Special Ed",
+      "sourceUrl": "https://education.arizona.gov",
+      "domain": "education.arizona.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Arizona Regional Special Education Support",
+      "sourceUrl": "https://education.arizona.gov/regional",
+      "domain": "education.arizona.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Arizona Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Arizona",
+      "sourceUrl": "https://www.thearcarizona.org",
+      "domain": "thearcarizona.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Arizona Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.arizona.gov/forms",
+      "domain": "dhhs.arizona.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Arizona Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.arizona.gov/rehab",
+      "domain": "dhhs.arizona.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Arizona Secretary of State Business Registry",
+      "sourceUrl": "https://www.arizona.gov/business",
+      "domain": "arizona.gov"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-06-18T05:51:11.886Z",
+  "mode": "apply",
+  "stateFilter": "indiana",
+  "inputPath": "data/provider-pull-now-decisions.json",
+  "summary": {
+    "inputRows": 4,
+    "resolvedRows": 0,
+    "deferredRows": 4,
+    "filesChanged": 2,
+    "skippedByReason": {},
+    "byDecisionMode": {
+      "bounded_retry_once": 2,
+      "needs_manual_research": 2
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "indiana",
+      "sourceUrl": "https://www.rileychildrens.org/",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "indiana",
+      "sourceUrl": "https://www.rileychildrens.org/contact-and-locations/riley-hospital-for-children-at-iu-health",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "indiana",
+      "sourceUrl": "https://iuhealth.org/",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "indiana",
+      "sourceUrl": "https://iuhealth.org/",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "generatedAt": "2026-06-18T21:38:26.275Z",
+  "generatedDate": "2026-06-18",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-18.json",
+  "stateId": "georgia",
+  "stateName": "Georgia",
+  "executionPriority": 1,
+  "sourceTargetsPath": "data/source_targets/georgia.json",
+  "ledgerStatus": "",
+  "ledgerNote": "",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 1,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 3,
+  "placeholderProviderTargetCount": 0,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 0,
+  "neededLiveProviderRows": 2,
+  "authoringGapClass": "needs_refresh_or_deeper_targets",
+  "nextAction": "Refresh Georgia provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+  "providerTargets": [
+    {
+      "sourceName": "CHOA Marcus Autism Center",
+      "sourceUrl": "https://www.marcus.org",
+      "domain": "marcus.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "official_state",
+      "notes": "Marcus autism research and clinic."
+    },
+    {
+      "sourceName": "CHOA Marcus Autism Center",
+      "sourceUrl": "https://www.marcus.org/",
+      "domain": "marcus.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Georgia first-party autism clinic target already present in state source targets."
+    },
+    {
+      "sourceName": "Marcus Autism Center Contact Us",
+      "sourceUrl": "https://www.marcus.org/contact-us",
+      "domain": "marcus.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Georgia first-party contact page already present in DB-discovered provider sources."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Georgia Counties Wikipedia List",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_counties_in_Georgia",
+      "domain": "en.wikipedia.org"
+    },
+    {
+      "targetTable": "counties",
+      "sourceName": "Georgia Association of County Commissioners directory",
+      "sourceUrl": "https://www.accg.org",
+      "domain": "accg.org"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Georgia DCH Medicaid Homepage",
+      "sourceUrl": "https://dch.georgia.gov",
+      "domain": "dch.georgia.gov"
+    },
+    {
+      "targetTable": "program_application_steps",
+      "sourceName": "Georgia Gateway Portal",
+      "sourceUrl": "https://gateway.ga.gov",
+      "domain": "gateway.ga.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Georgia Division of Family and Children Services (DFCS) county directory",
+      "sourceUrl": "https://dfcs.georgia.gov/locations",
+      "domain": "dfcs.georgia.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Georgia DBHDD Homepage",
+      "sourceUrl": "https://dbhdd.georgia.gov",
+      "domain": "dbhdd.georgia.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Georgia DBHDD Regional Offices Directory",
+      "sourceUrl": "https://dbhdd.georgia.gov/locations/regional-offices",
+      "domain": "dbhdd.georgia.gov"
+    },
+    {
+      "targetTable": "program_waitlists",
+      "sourceName": "Georgia DBHDD Planning List overview",
+      "sourceUrl": "https://dbhdd.georgia.gov/developmental-disabilities/dd-planning-list",
+      "domain": "dbhdd.georgia.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Georgia NOW Waiver Program",
+      "sourceUrl": "https://dbhdd.georgia.gov/comp-now-waivers",
+      "domain": "dbhdd.georgia.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Georgia Babies Can't Wait Program",
+      "sourceUrl": "https://dph.georgia.gov/babies-cant-wait",
+      "domain": "dph.georgia.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Georgia DOE Special Education Home",
+      "sourceUrl": "https://www.gadoe.org/Curriculum-Instruction-and-Assessment/Special-Education-Services/Pages/default.aspx",
+      "domain": "gadoe.org"
+    },
+    {
+      "targetTable": "program_document_requirements",
+      "sourceName": "GaDOE Special Education Parent Rights",
+      "sourceUrl": "https://www.gadoe.org/Curriculum-Instruction-and-Assessment/Special-Education-Services/Pages/Parent-Rights.aspx",
+      "domain": "gadoe.org"
+    },
+    {
+      "targetTable": "program_appeal_info",
+      "sourceName": "GaDOE State Dispute Resolution",
+      "sourceUrl": "https://www.gadoe.org/Curriculum-Instruction-and-Assessment/Special-Education-Services/Pages/Dispute-Resolution.aspx",
+      "domain": "gadoe.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Parent to Parent of Georgia (P2P)",
+      "sourceUrl": "https://www.parenttoparentofga.org",
+      "domain": "parenttoparentofga.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Georgia Advocacy Office",
+      "sourceUrl": "https://thegao.org",
+      "domain": "thegao.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Georgia",
+      "sourceUrl": "https://www.thearcofgeorgia.org",
+      "domain": "thearcofgeorgia.org"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Georgia Vocational Rehabilitation Agency (GVRA)",
+      "sourceUrl": "https://gvs.georgia.gov",
+      "domain": "gvs.georgia.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Georgia STABLE",
+      "sourceUrl": "https://georgiastable.com",
+      "domain": "georgiastable.com"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Georgia Open Data Portal",
+      "sourceUrl": "https://data.georgia.gov",
+      "domain": "data.georgia.gov"
+    }
+  ]
+}

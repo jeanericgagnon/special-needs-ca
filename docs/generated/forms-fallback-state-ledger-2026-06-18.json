@@ -1,0 +1,454 @@
+{
+  "generatedAt": "2026-06-18T22:23:05.730Z",
+  "summary": {
+    "totalStates": 34,
+    "byStatus": {
+      "completed": 34
+    },
+    "nextState": ""
+  },
+  "rows": [
+    {
+      "stateId": "arizona",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 3,
+      "previewedRows": 0,
+      "completedRows": 3,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "colorado",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 3,
+      "previewedRows": 0,
+      "completedRows": 3,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "connecticut",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 4,
+      "previewedRows": 0,
+      "completedRows": 4,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "delaware",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 4,
+      "previewedRows": 0,
+      "completedRows": 4,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "hawaii",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 4,
+      "previewedRows": 0,
+      "completedRows": 4,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "indiana",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 4,
+      "previewedRows": 0,
+      "completedRows": 4,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "iowa",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 4,
+      "previewedRows": 0,
+      "completedRows": 4,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "kansas",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 3,
+      "previewedRows": 0,
+      "completedRows": 3,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "kentucky",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 4,
+      "previewedRows": 0,
+      "completedRows": 4,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "louisiana",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 4,
+      "previewedRows": 0,
+      "completedRows": 4,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "maine",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 4,
+      "previewedRows": 0,
+      "completedRows": 4,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "maryland",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 4,
+      "previewedRows": 0,
+      "completedRows": 4,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "massachusetts",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 4,
+      "previewedRows": 0,
+      "completedRows": 4,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "michigan",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 3,
+      "previewedRows": 0,
+      "completedRows": 3,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "minnesota",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 3,
+      "previewedRows": 0,
+      "completedRows": 3,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "mississippi",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 4,
+      "previewedRows": 0,
+      "completedRows": 4,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "missouri",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 4,
+      "previewedRows": 0,
+      "completedRows": 4,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "montana",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 4,
+      "previewedRows": 0,
+      "completedRows": 4,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "nevada",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 4,
+      "previewedRows": 0,
+      "completedRows": 4,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "north-carolina",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 4,
+      "previewedRows": 0,
+      "completedRows": 4,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "north-dakota",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 4,
+      "previewedRows": 0,
+      "completedRows": 4,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "oklahoma",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 4,
+      "previewedRows": 0,
+      "completedRows": 4,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "oregon",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 4,
+      "previewedRows": 0,
+      "completedRows": 4,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "rhode-island",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 4,
+      "previewedRows": 0,
+      "completedRows": 4,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "south-carolina",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 4,
+      "previewedRows": 0,
+      "completedRows": 4,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "south-dakota",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 4,
+      "previewedRows": 0,
+      "completedRows": 4,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "tennessee",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 4,
+      "previewedRows": 0,
+      "completedRows": 4,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "utah",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 4,
+      "previewedRows": 0,
+      "completedRows": 4,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "vermont",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 4,
+      "previewedRows": 0,
+      "completedRows": 4,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "virginia",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 4,
+      "previewedRows": 0,
+      "completedRows": 4,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "washington",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 4,
+      "previewedRows": 0,
+      "completedRows": 4,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "west-virginia",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 4,
+      "previewedRows": 0,
+      "completedRows": 4,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "wisconsin",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 3,
+      "previewedRows": 0,
+      "completedRows": 3,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    },
+    {
+      "stateId": "wyoming",
+      "status": "completed",
+      "nextMode": "none",
+      "queueRows": 4,
+      "previewedRows": 0,
+      "completedRows": 4,
+      "manualReviewRows": 0,
+      "candidateTypes": [
+        "application_or_eligibility_guide",
+        "general_form_related_page"
+      ]
+    }
+  ]
+}

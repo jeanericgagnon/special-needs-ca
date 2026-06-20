@@ -1,0 +1,402 @@
+{
+  "generatedAt": "2026-06-16",
+  "summary": {
+    "goldStates": 49,
+    "publicSafeStates": 50,
+    "indexSafeStates": 50,
+    "blockedStates": 1,
+    "registryMismatchStates": 1
+  },
+  "families": [
+    {
+      "id": "missing-waitlists",
+      "label": "Missing Core Waitlists",
+      "categories": [
+        "waitlists"
+      ],
+      "workType": "config-and-db",
+      "automationLeverage": 100,
+      "manualReview": "none",
+      "action": "Fill state-config-defined waitlists in batch before any local enrichment.",
+      "stateCount": 0,
+      "states": []
+    },
+    {
+      "id": "dd-null-trust",
+      "label": "DD Routing Null Trust Metadata",
+      "categories": [
+        "trustMetadata"
+      ],
+      "workType": "trust-normalization",
+      "automationLeverage": 95,
+      "manualReview": "none",
+      "action": "Backfill null DD verification_status and data_origin fields with source-backed normalization.",
+      "stateCount": 0,
+      "states": []
+    },
+    {
+      "id": "office-coverage",
+      "label": "Incomplete Office Coverage",
+      "categories": [
+        "localOffices"
+      ],
+      "workType": "crawler-promotion",
+      "automationLeverage": 92,
+      "manualReview": "low",
+      "action": "Batch-promote Medicaid/HHS office layers by state office structure and county coverage gaps.",
+      "stateCount": 0,
+      "states": []
+    },
+    {
+      "id": "education-coverage",
+      "label": "Incomplete Education Coverage",
+      "categories": [
+        "education"
+      ],
+      "workType": "crawler-promotion",
+      "automationLeverage": 88,
+      "manualReview": "low",
+      "action": "Fill missing district or regional education coverage through state education directory extraction.",
+      "stateCount": 0,
+      "states": []
+    },
+    {
+      "id": "dd-source-listed",
+      "label": "DD Routing Still Source-Listed",
+      "categories": [
+        "ddRouting"
+      ],
+      "workType": "trust-promotion",
+      "automationLeverage": 85,
+      "manualReview": "low",
+      "action": "Promote DD routing trust from source_listed toward verified using official agency sources.",
+      "stateCount": 0,
+      "states": []
+    },
+    {
+      "id": "dd-manual-review",
+      "label": "DD Routing Still Manual Review",
+      "categories": [
+        "ddRouting"
+      ],
+      "workType": "trust-normalization",
+      "automationLeverage": 84,
+      "manualReview": "medium",
+      "action": "Replace or normalize DD routing rows that still require manual review before a state can be gold.",
+      "stateCount": 0,
+      "states": []
+    },
+    {
+      "id": "office-source-listed",
+      "label": "Office Layer Still Source-Listed",
+      "categories": [
+        "localOffices"
+      ],
+      "workType": "trust-promotion",
+      "automationLeverage": 82,
+      "manualReview": "low",
+      "action": "Raise office trust depth only after coverage is complete and public-safe.",
+      "stateCount": 0,
+      "states": []
+    },
+    {
+      "id": "office-manual-review",
+      "label": "Office Layer Still Manual Review",
+      "categories": [
+        "localOffices"
+      ],
+      "workType": "trust-normalization",
+      "automationLeverage": 80,
+      "manualReview": "medium",
+      "action": "Hide, replace, or confirm office rows that still require manual review before gold promotion.",
+      "stateCount": 0,
+      "states": []
+    },
+    {
+      "id": "education-source-listed",
+      "label": "Education Layer Still Source-Listed",
+      "categories": [
+        "education"
+      ],
+      "workType": "trust-promotion",
+      "automationLeverage": 78,
+      "manualReview": "medium",
+      "action": "Upgrade education rows from source_listed to verified with district-level contact validation.",
+      "stateCount": 0,
+      "states": []
+    },
+    {
+      "id": "county-diagnosis-priority-gap",
+      "label": "Priority County-Diagnosis Rollout Gap",
+      "categories": [
+        "countyDiagnosis"
+      ],
+      "workType": "seo-promotion",
+      "automationLeverage": 76,
+      "manualReview": "low",
+      "action": "Promote the remaining state-config priority county-diagnosis pages that already satisfy the truth-first bar.",
+      "stateCount": 0,
+      "states": []
+    },
+    {
+      "id": "education-manual-review",
+      "label": "Education Layer Still Manual Review",
+      "categories": [
+        "education"
+      ],
+      "workType": "contact-validation",
+      "automationLeverage": 74,
+      "manualReview": "medium",
+      "action": "Fill or validate district and regional education contacts that still require manual review.",
+      "stateCount": 0,
+      "states": []
+    },
+    {
+      "id": "advocate-source-listed",
+      "label": "Advocate Layer Still Source-Listed",
+      "categories": [
+        "advocates"
+      ],
+      "workType": "trust-normalization",
+      "automationLeverage": 72,
+      "manualReview": "medium",
+      "action": "Demote synthetic advocate/provider rows and promote only source-backed public advocates with direct contact signal.",
+      "stateCount": 0,
+      "states": []
+    },
+    {
+      "id": "advocate-truth-gap",
+      "label": "Advocate Truth Coverage Gap",
+      "categories": [
+        "advocates",
+        "publicTruth"
+      ],
+      "workType": "source-replacement",
+      "automationLeverage": 70,
+      "manualReview": "medium",
+      "action": "Replace quarantined advocate coverage with real source-backed local advocates before public gold promotion.",
+      "stateCount": 1,
+      "states": [
+        "california"
+      ]
+    },
+    {
+      "id": "advocate-manual-review",
+      "label": "Advocate Layer Still Manual Review",
+      "categories": [
+        "advocates"
+      ],
+      "workType": "credential-validation",
+      "automationLeverage": 68,
+      "manualReview": "medium",
+      "action": "Keep advocate/provider rows hidden until a real source, direct contact, and credential signal support public use.",
+      "stateCount": 0,
+      "states": []
+    },
+    {
+      "id": "nonprofit-source-listed",
+      "label": "Nonprofit Layer Still Source-Listed",
+      "categories": [
+        "nonprofits"
+      ],
+      "workType": "legitimacy-review",
+      "automationLeverage": 60,
+      "manualReview": "medium",
+      "action": "Keep only useful local nonprofits and generate legitimacy review queues for ambiguous orgs.",
+      "stateCount": 0,
+      "states": []
+    },
+    {
+      "id": "nonprofit-manual-review",
+      "label": "Nonprofit Layer Still Manual Review",
+      "categories": [
+        "nonprofits"
+      ],
+      "workType": "legitimacy-review",
+      "automationLeverage": 58,
+      "manualReview": "high",
+      "action": "Hide or review nonprofit rows that still lack enough trust to support gold output.",
+      "stateCount": 0,
+      "states": []
+    }
+  ],
+  "waves": [
+    {
+      "id": "wave-0",
+      "label": "Global Preconditions",
+      "focus": "Run the shared, highest-leverage fixes that unblock many states at once.",
+      "stateIds": [],
+      "familyIds": [
+        "missing-waitlists",
+        "dd-null-trust"
+      ]
+    },
+    {
+      "id": "wave-1",
+      "label": "Coverage Completion Wave",
+      "focus": "Finish office and education county coverage before deeper trust promotions.",
+      "stateIds": [],
+      "familyIds": [
+        "office-coverage",
+        "education-coverage"
+      ]
+    },
+    {
+      "id": "wave-2",
+      "label": "High-Readiness Depth Wave",
+      "focus": "Push the most advanced public-safe states to gold with the fewest extra tokens.",
+      "stateIds": [
+        "california"
+      ],
+      "familyIds": [
+        "dd-source-listed",
+        "dd-manual-review",
+        "office-source-listed",
+        "office-manual-review",
+        "education-source-listed",
+        "education-manual-review",
+        "nonprofit-source-listed",
+        "nonprofit-manual-review",
+        "advocate-source-listed",
+        "advocate-manual-review",
+        "county-diagnosis-priority-gap",
+        "advocate-truth-gap"
+      ]
+    },
+    {
+      "id": "wave-3",
+      "label": "Remaining Depth Wave",
+      "focus": "Apply the same trust-depth and nonprofit legitimacy playbook to the rest once coverage is done.",
+      "stateIds": [],
+      "familyIds": [
+        "dd-source-listed",
+        "dd-manual-review",
+        "office-source-listed",
+        "office-manual-review",
+        "education-source-listed",
+        "education-manual-review",
+        "nonprofit-source-listed",
+        "nonprofit-manual-review",
+        "advocate-source-listed",
+        "advocate-manual-review",
+        "county-diagnosis-priority-gap",
+        "advocate-truth-gap"
+      ]
+    }
+  ],
+  "priorityStates": [
+    {
+      "id": "california",
+      "name": "California",
+      "publicSafe": true,
+      "indexSafe": true,
+      "goldEligible": false,
+      "legacyGoldEligible": true,
+      "registryStatus": "public_safe_but_blocked",
+      "registryBlockerIds": [
+        "advocate-truth-gap"
+      ],
+      "registryCountyDiagnosisMissingPriorityCounties": 0,
+      "registryAdvocateCoverageLossCounties": 58,
+      "waitlists": {
+        "expected": [
+          "ihss-for-children",
+          "regional-centers",
+          "early-start",
+          "self-determination-program",
+          "medi-cal-for-kids-and-teens",
+          "california-childrens-services",
+          "hearing-aid-coverage",
+          "ssi-for-children",
+          "calable",
+          "iep-special-education",
+          "hcba"
+        ],
+        "present": [
+          "hcba",
+          "regional-centers",
+          "ihss-for-children",
+          "ssi-for-children",
+          "california-childrens-services",
+          "early-start",
+          "self-determination-program",
+          "medi-cal-for-kids-and-teens",
+          "hearing-aid-coverage",
+          "calable",
+          "iep-special-education"
+        ],
+        "missing": []
+      },
+      "records": {
+        "ddRouting": {
+          "total": 21,
+          "fallback": 0,
+          "verified": 21,
+          "source_listed": 0,
+          "manual_review_required": 0,
+          "null_status": 0,
+          "unverified": 0,
+          "missingPublicSignal": 0,
+          "weightedDepth": 100
+        },
+        "localOffices": {
+          "total": 174,
+          "fallback": 0,
+          "verified": 174,
+          "source_listed": 0,
+          "manual_review_required": 0,
+          "null_status": 0,
+          "unverified": 0,
+          "missingPublicSignal": 0,
+          "weightedDepth": 100
+        },
+        "education": {
+          "total": 142,
+          "fallback": 0,
+          "verified": 142,
+          "source_listed": 0,
+          "manual_review_required": 0,
+          "null_status": 0,
+          "unverified": 0,
+          "missingPublicSignal": 0,
+          "weightedDepth": 100
+        },
+        "nonprofits": {
+          "total": 871,
+          "fallback": 0,
+          "verified": 871,
+          "source_listed": 0,
+          "manual_review_required": 0,
+          "null_status": 0,
+          "unverified": 0,
+          "missingPublicSignal": 0,
+          "weightedDepth": 100
+        },
+        "advocates": {
+          "total": 580,
+          "fallback": 0,
+          "verified": 580,
+          "source_listed": 0,
+          "manual_review_required": 0,
+          "null_status": 0,
+          "unverified": 0,
+          "missingPublicSignal": 0,
+          "weightedDepth": 100
+        }
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockerIds": [
+        "advocate-truth-gap"
+      ],
+      "blockerCount": 1,
+      "readiness": 100
+    }
+  ]
+}

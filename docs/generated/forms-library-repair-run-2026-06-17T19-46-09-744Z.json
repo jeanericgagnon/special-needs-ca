@@ -1,0 +1,215 @@
+{
+  "generatedAt": "2026-06-17T19:46:09.745Z",
+  "mode": "dry-run",
+  "stateFilter": null,
+  "summary": {
+    "eligibleRepairRows": 0,
+    "appliedChanges": 0,
+    "filesChanged": 0,
+    "skippedAmbiguousRows": 40,
+    "skippedMissingRows": 0
+  },
+  "repairs": [],
+  "ambiguousRows": [
+    {
+      "stateId": "alaska",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.alaska.gov/forms"
+    },
+    {
+      "stateId": "arizona",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.arizona.gov/forms"
+    },
+    {
+      "stateId": "arkansas",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.arkansas.gov/forms"
+    },
+    {
+      "stateId": "colorado",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.colorado.gov/forms"
+    },
+    {
+      "stateId": "connecticut",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.connecticut.gov/forms"
+    },
+    {
+      "stateId": "delaware",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.delaware.gov/forms"
+    },
+    {
+      "stateId": "hawaii",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.hawaii.gov/forms"
+    },
+    {
+      "stateId": "idaho",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.idaho.gov/forms"
+    },
+    {
+      "stateId": "indiana",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.indiana.gov/forms"
+    },
+    {
+      "stateId": "iowa",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.iowa.gov/forms"
+    },
+    {
+      "stateId": "kansas",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.kansas.gov/forms"
+    },
+    {
+      "stateId": "kentucky",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.kentucky.gov/forms"
+    },
+    {
+      "stateId": "louisiana",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.louisiana.gov/forms"
+    },
+    {
+      "stateId": "maine",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.maine.gov/forms"
+    },
+    {
+      "stateId": "maryland",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.maryland.gov/forms"
+    },
+    {
+      "stateId": "massachusetts",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.massachusetts.gov/forms"
+    },
+    {
+      "stateId": "michigan",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.michigan.gov/forms"
+    },
+    {
+      "stateId": "minnesota",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.minnesota.gov/forms"
+    },
+    {
+      "stateId": "mississippi",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.mississippi.gov/forms"
+    },
+    {
+      "stateId": "missouri",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.missouri.gov/forms"
+    },
+    {
+      "stateId": "montana",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.montana.gov/forms"
+    },
+    {
+      "stateId": "nebraska",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.nebraska.gov/forms"
+    },
+    {
+      "stateId": "nevada",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.nevada.gov/forms"
+    },
+    {
+      "stateId": "new-hampshire",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.new-hampshire.gov/forms"
+    },
+    {
+      "stateId": "new-mexico",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.new-mexico.gov/forms"
+    },
+    {
+      "stateId": "north-carolina",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.north-carolina.gov/forms"
+    },
+    {
+      "stateId": "north-dakota",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.north-dakota.gov/forms"
+    },
+    {
+      "stateId": "oklahoma",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.oklahoma.gov/forms"
+    },
+    {
+      "stateId": "oregon",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.oregon.gov/forms"
+    },
+    {
+      "stateId": "rhode-island",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.rhode-island.gov/forms"
+    },
+    {
+      "stateId": "south-carolina",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.south-carolina.gov/forms"
+    },
+    {
+      "stateId": "south-dakota",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.south-dakota.gov/forms"
+    },
+    {
+      "stateId": "tennessee",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.tennessee.gov/forms"
+    },
+    {
+      "stateId": "utah",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.utah.gov/forms"
+    },
+    {
+      "stateId": "vermont",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.vermont.gov/forms"
+    },
+    {
+      "stateId": "virginia",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.virginia.gov/forms"
+    },
+    {
+      "stateId": "washington",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.washington.gov/forms"
+    },
+    {
+      "stateId": "west-virginia",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.west-virginia.gov/forms"
+    },
+    {
+      "stateId": "wisconsin",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.wisconsin.gov/forms"
+    },
+    {
+      "stateId": "wyoming",
+      "replacementClass": "state_specific_form_fallback_only",
+      "blockedSourceUrl": "https://dhhs.wyoming.gov/forms"
+    }
+  ]
+}

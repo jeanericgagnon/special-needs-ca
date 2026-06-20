@@ -1,0 +1,59 @@
+{
+  "generatedAt": "2026-06-17T20:07:56.220Z",
+  "mode": "dry-run",
+  "stateFilter": null,
+  "inputPath": "data/provider-placeholder-replacement-decisions.json",
+  "summary": {
+    "inputRows": 3,
+    "appliedStates": 2,
+    "appliedReplacements": 4,
+    "filesChanged": 0,
+    "skippedByReason": {
+      "missing_placeholder_row": 1
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "alabama",
+      "placeholderSourceName": "Alabama Children's Hospital Clinics",
+      "status": "dry_run_ready",
+      "replacementCount": 2,
+      "replacements": [
+        {
+          "source_name": "Children's of Alabama",
+          "source_url": "https://www.childrensal.org/",
+          "domain": "childrensal.org"
+        },
+        {
+          "source_name": "UAB Medicine Pediatrics",
+          "source_url": "https://www.uabmedicine.org/",
+          "domain": "uabmedicine.org"
+        }
+      ]
+    },
+    {
+      "stateId": "iowa",
+      "placeholderSourceName": "Iowa Children's Hospital Clinics",
+      "status": "dry_run_ready",
+      "replacementCount": 2,
+      "replacements": [
+        {
+          "source_name": "University of Iowa Stead Family Children's Hospital",
+          "source_url": "http://www.uichildrens.org/",
+          "domain": "uichildrens.org"
+        },
+        {
+          "source_name": "Blank Children's Hospital",
+          "source_url": "https://www.unitypoint.org/desmoines/iowa-methodist-medical-center.aspx",
+          "domain": "unitypoint.org"
+        }
+      ]
+    },
+    {
+      "stateId": "missouri",
+      "placeholderSourceName": "Missouri Children's Hospital Clinics",
+      "status": "skipped_missing_placeholder_row",
+      "replacementCount": 3
+    }
+  ]
+}

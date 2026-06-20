@@ -1,1 +1,33 @@
-[]
+[
+  {
+    "source_url": "https://www.maine.gov/doe/learning/specialed",
+    "confidence_score": 9.5,
+    "notes": "Official statewide Maine DOE special education support entrypoint covering all counties.",
+    "suggested_target_id": "me-ed-doe-special-education",
+    "name": "Maine Department of Education Special Services and Inclusive Education",
+    "agency_type": "state-special-education-support",
+    "counties_served": [
+      "androscoggin-me",
+      "aroostook-me",
+      "cumberland-me",
+      "franklin-me",
+      "hancock-me",
+      "kennebec-me",
+      "knox-me",
+      "lincoln-me",
+      "oxford-me",
+      "penobscot-me",
+      "piscataquis-me",
+      "sagadahoc-me",
+      "somerset-me",
+      "waldo-me",
+      "washington-me",
+      "york-me"
+    ],
+    "phone": "(207) 624-6713",
+    "website": "https://www.maine.gov/doe/learning/specialed",
+    "evidence_level": "source_listed",
+    "verification_status": "verified",
+    "data_origin": "scraped"
+  }
+]

@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "source_url": "https://marylandpublicschools.org/programs/SpecialEducation/",
+    "confidence_score": 9.5,
+    "notes": "Official Maryland State Department of Education Special Education page used as the truthful statewide education support layer while weak county and district placeholders are removed.",
+    "suggested_target_id": "md-ed-msde-special-education",
+    "name": "Maryland State Department of Education Special Education",
+    "phone": "",
+    "counties_served": [
+      "ALL_MARYLAND_COUNTIES"
+    ],
+    "physical_county": "montgomery-md",
+    "evidence_level": "source_listed",
+    "verification_status": "pending_review",
+    "data_origin": "scraped"
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "generatedAt": "2026-06-18T05:54:16.822Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "new-york",
+  "sourceDecisionFilePath": "data/provider-pull-now-decisions.json",
+  "sourceDecisionPacketPath": "docs/generated/provider-pull-now-state-decision-packets/provider-pull-now-state-decision-packet-new-york-2026-06-18.json",
+  "summary": {
+    "totalRows": 3,
+    "unresolvedRows": 3
+  },
+  "rows": [
+    {
+      "stateId": "new-york",
+      "actionClass": "author_alternate_first_party_target",
+      "sourceUrl": "https://www.montefiore.org/rose-f-kennedy-center",
+      "hostname": "www.montefiore.org",
+      "followupReason": "access_blocked_403",
+      "repeatCount": 4,
+      "suggestedDecisionMode": "needs_manual_research",
+      "suggestedReason": "A same-domain candidate exists, but saved artifacts did not prove a safe, meaningfully different replacement URL.",
+      "decisionMode": "needs_manual_research",
+      "reviewedSourceName": "",
+      "reviewedSourceUrl": "",
+      "retryNotes": "",
+      "reviewNotes": "A same-domain candidate exists, but saved artifacts did not prove a safe, meaningfully different replacement URL.",
+      "reviewedBy": "autofill:provider-pull-now-state-workfile"
+    },
+    {
+      "stateId": "new-york",
+      "actionClass": "author_alternate_first_party_target",
+      "sourceUrl": "https://www.upstate.edu/gch",
+      "hostname": "www.upstate.edu",
+      "followupReason": "access_blocked_403",
+      "repeatCount": 3,
+      "suggestedDecisionMode": "needs_manual_research",
+      "suggestedReason": "A same-domain candidate exists, but saved artifacts did not prove a safe, meaningfully different replacement URL.",
+      "decisionMode": "needs_manual_research",
+      "reviewedSourceName": "",
+      "reviewedSourceUrl": "",
+      "retryNotes": "",
+      "reviewNotes": "A same-domain candidate exists, but saved artifacts did not prove a safe, meaningfully different replacement URL.",
+      "reviewedBy": "autofill:provider-pull-now-state-workfile"
+    },
+    {
+      "stateId": "new-york",
+      "actionClass": "author_alternate_first_party_target",
+      "sourceUrl": "https://www.health.ny.gov/health_care/medicaid//specialized-roster-1",
+      "hostname": "www.health.ny.gov",
+      "followupReason": "access_blocked_403",
+      "repeatCount": 2,
+      "suggestedDecisionMode": "needs_manual_research",
+      "suggestedReason": "Saved artifacts do not yet prove a safe first-party replacement; keep this in manual research until one is confirmed.",
+      "decisionMode": "needs_manual_research",
+      "reviewedSourceName": "",
+      "reviewedSourceUrl": "",
+      "retryNotes": "",
+      "reviewNotes": "Saved artifacts do not yet prove a safe first-party replacement; keep this in manual research until one is confirmed.",
+      "reviewedBy": "autofill:provider-pull-now-state-workfile"
+    }
+  ]
+}

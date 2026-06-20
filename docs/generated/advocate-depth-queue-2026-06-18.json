@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-06-18T21:51:09.704Z",
+  "generatedDate": "2026-06-18",
+  "sourceArtifacts": {
+    "blockerRegistryPath": "docs/generated/track-a-blocker-registry-2026-06-18.json",
+    "advocateRepairQueuePath": "docs/generated/advocate-source-repair-queue-2026-06-18.json",
+    "californiaRecoveryPath": "docs/generated/california-advocate-recovery-queue-2026-06-18.json"
+  },
+  "purpose": "Deterministic advocate depth queue combining California truth-recovery counties and repeated advocate source-repair blockers.",
+  "summary": {
+    "totalRows": 0,
+    "byLane": {},
+    "byReason": {},
+    "blockerStatus": "meaningful_but_not_exhaustive",
+    "californiaCountiesBlocked": 0,
+    "advocateRepeatedSourceRows": 0
+  },
+  "rows": []
+}

@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-06-17T19:45:20.359Z",
+  "mode": "apply",
+  "stateFilter": "new-jersey",
+  "summary": {
+    "eligibleRepairRows": 1,
+    "appliedChanges": 1,
+    "filesChanged": 1,
+    "skippedAmbiguousRows": 0,
+    "skippedMissingRows": 0
+  },
+  "repairs": [
+    {
+      "stateId": "new-jersey",
+      "before": {
+        "sourceUrl": "https://dhhs.new-jersey.gov/forms",
+        "sourceName": "New Jersey Medicaid & Special Education Forms",
+        "domain": "dhhs.new-jersey.gov",
+        "notes": "Initial category-level scaffold source target for New Jersey."
+      },
+      "after": {
+        "sourceUrl": "https://www.nj.gov/humanservices/ddd/forms",
+        "sourceName": "New Jersey DDD Eligibility Application & Appeals Guide",
+        "domain": "nj.gov",
+        "notes": "Initial category-level scaffold source target for New Jersey. Forms library repair applied 2026-06-17 from https://dhhs.new-jersey.gov/forms to https://www.nj.gov/humanservices/ddd/forms."
+      },
+      "candidate": {
+        "stateId": "new-jersey",
+        "sourceName": "New Jersey DDD Eligibility Application & Appeals Guide",
+        "sourceUrl": "https://www.nj.gov/humanservices/ddd/forms",
+        "domain": "nj.gov",
+        "candidateType": "exact_forms_library",
+        "priority": 4,
+        "recordCount": 1,
+        "verificationStatus": "verified",
+        "whyNeeded": "Existing DB source URL for forms; scrape to extract deeper fields and validate freshness.",
+        "origin": "db_existing_sources"
+      },
+      "status": "applied"
+    }
+  ],
+  "ambiguousRows": []
+}

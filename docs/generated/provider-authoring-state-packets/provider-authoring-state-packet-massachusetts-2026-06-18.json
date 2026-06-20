@@ -1,0 +1,125 @@
+{
+  "generatedAt": "2026-06-18T19:04:21.923Z",
+  "generatedDate": "2026-06-18",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-18.json",
+  "stateId": "massachusetts",
+  "stateName": "Massachusetts",
+  "executionPriority": 1,
+  "sourceTargetsPath": "data/source_targets/massachusetts.json",
+  "ledgerStatus": "complete",
+  "ledgerNote": "added-three-concrete-first-party-provider-targets",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 1,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 0,
+  "placeholderProviderTargetCount": 1,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 3,
+  "nextAction": "Add at least 3 more concrete first-party provider targets for Massachusetts and then regenerate provider source-pack artifacts.",
+  "providerTargets": [
+    {
+      "sourceName": "Boston Children's Hospital",
+      "sourceUrl": "https://www.childrenshospital.org/",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Boston Children's Hospital first-party pediatric hospital target for statewide specialty and referral coverage."
+    },
+    {
+      "sourceName": "Mass General Brigham for Children",
+      "sourceUrl": "https://www.massgeneral.org/children",
+      "domain": "massgeneral.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Mass General Brigham for Children page with pediatric services, hospital address, and referral access."
+    },
+    {
+      "sourceName": "UMass Memorial Children's Medical Center",
+      "sourceUrl": "https://www.ummhealth.org/umass-memorial-childrens-medical-center",
+      "domain": "ummhealth.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official UMass Memorial children's medical center target for central Massachusetts pediatric hospital coverage."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Massachusetts County Metadata",
+      "sourceUrl": "https://www.massachusetts.gov",
+      "domain": "massachusetts.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Massachusetts Medicaid Portal",
+      "sourceUrl": "https://dhhs.massachusetts.gov",
+      "domain": "dhhs.massachusetts.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Massachusetts Department of Developmental Services",
+      "sourceUrl": "https://www.mass.gov/dds",
+      "domain": "mass.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Massachusetts HCBS Waivers",
+      "sourceUrl": "https://www.mass.gov/dds/hcbs",
+      "domain": "mass.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Massachusetts Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.massachusetts.gov/earlyintervention",
+      "domain": "dhhs.massachusetts.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Massachusetts Department of Education Special Ed",
+      "sourceUrl": "https://education.massachusetts.gov",
+      "domain": "education.massachusetts.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Massachusetts Regional Special Education Support",
+      "sourceUrl": "https://education.massachusetts.gov/regional",
+      "domain": "education.massachusetts.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Massachusetts Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Massachusetts",
+      "sourceUrl": "https://www.thearcmassachusetts.org",
+      "domain": "thearcmassachusetts.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Massachusetts Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.massachusetts.gov/forms",
+      "domain": "dhhs.massachusetts.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Massachusetts Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.massachusetts.gov/rehab",
+      "domain": "dhhs.massachusetts.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Massachusetts Secretary of State Business Registry",
+      "sourceUrl": "https://www.massachusetts.gov/business",
+      "domain": "massachusetts.gov"
+    }
+  ]
+}

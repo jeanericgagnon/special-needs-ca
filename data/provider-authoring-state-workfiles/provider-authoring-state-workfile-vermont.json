@@ -1,0 +1,166 @@
+{
+  "generatedAt": "2026-06-18T19:28:04.542Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "vermont",
+  "stateName": "Vermont",
+  "sourcePacketPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-vermont-2026-06-18.json",
+  "sourceTargetsPath": "data/source_targets/vermont.json",
+  "instructions": {
+    "summary": "Fill only the missing first-party provider targets needed for this state. Do not broaden beyond provider_directory authoring.",
+    "completionRule": "A candidate row is ready only when sourceName, sourceUrl, domain, and reviewedBy are filled."
+  },
+  "summary": {
+    "neededConcreteTargets": 3,
+    "currentConcreteProviderTargetCount": 0,
+    "existingProviderTargetCount": 1,
+    "candidateSlotCount": 3,
+    "readyCandidateCount": 0,
+    "unresolvedCandidateCount": 3
+  },
+  "existingProviderTargets": [
+    {
+      "sourceName": "Vermont Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for Vermont."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Vermont County Metadata",
+      "sourceUrl": "https://www.vermont.gov",
+      "domain": "vermont.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Vermont Medicaid Portal",
+      "sourceUrl": "https://dhhs.vermont.gov",
+      "domain": "dhhs.vermont.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Vermont Developmental Disabilities Services Division",
+      "sourceUrl": "https://ddsd.vermont.gov/",
+      "domain": "ddsd.vermont.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Vermont HCBS Waivers",
+      "sourceUrl": "https://ddsd.vermont.gov/hcbs",
+      "domain": "ddsd.vermont.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Vermont Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.vermont.gov/earlyintervention",
+      "domain": "dhhs.vermont.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Vermont Department of Education Special Ed",
+      "sourceUrl": "https://education.vermont.gov",
+      "domain": "education.vermont.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Vermont Regional Special Education Support",
+      "sourceUrl": "https://education.vermont.gov/regional",
+      "domain": "education.vermont.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Vermont Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Vermont",
+      "sourceUrl": "https://www.thearcvermont.org",
+      "domain": "thearcvermont.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Vermont Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.vermont.gov/forms",
+      "domain": "dhhs.vermont.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Vermont Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.vermont.gov/rehab",
+      "domain": "dhhs.vermont.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Vermont Secretary of State Business Registry",
+      "sourceUrl": "https://www.vermont.gov/business",
+      "domain": "vermont.gov"
+    }
+  ],
+  "candidateProviderTargets": [
+    {
+      "slotNumber": 1,
+      "stateId": "vermont",
+      "stateCode": "VT",
+      "sourceName": "The University of Vermont Children's Hospital",
+      "sourceUrl": "https://www.uvmhealth.org/medcenter/departments-and-programs/childrens-hospital",
+      "domain": "uvmhealth.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Children's hospital",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official UVM Children's Hospital source for statewide pediatric hospital and specialty care in Vermont.",
+      "reviewedBy": "codex"
+    },
+    {
+      "slotNumber": 2,
+      "stateId": "vermont",
+      "stateCode": "VT",
+      "sourceName": "The University of Vermont Medical Center",
+      "sourceUrl": "https://www.uvmhealth.org/medcenter",
+      "domain": "uvmhealth.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Academic medical center",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official UVM Medical Center source for pediatric referral and academic specialty care in Vermont.",
+      "reviewedBy": "codex"
+    },
+    {
+      "slotNumber": 3,
+      "stateId": "vermont",
+      "stateCode": "VT",
+      "sourceName": "Dartmouth Hitchcock Medical Center",
+      "sourceUrl": "https://www.dartmouth-hitchcock.org/",
+      "domain": "dartmouth-hitchcock.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Academic medical center",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official Dartmouth Hitchcock source for regional pediatric referral coverage serving Vermont families in northern New England.",
+      "reviewedBy": "codex"
+    }
+  ]
+}

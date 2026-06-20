@@ -1,0 +1,53 @@
+{
+  "generatedAt": "2026-06-18T01:56:50.896Z",
+  "mode": "apply",
+  "stateFilter": "new-jersey",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 6,
+    "appliedStates": 0,
+    "filesChanged": 0,
+    "skippedByReason": {
+      "missing_source_row": 4,
+      "skipped_followup": 2
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "new-jersey",
+      "sourceName": "New Jersey HCBS Waivers Page",
+      "status": "skipped_missing_source_row",
+      "targetUrl": "https://www.nj.gov/humanservices/ddd/hcbs"
+    },
+    {
+      "stateId": "new-jersey",
+      "sourceName": "New Jersey Developmental Services Directory",
+      "status": "skipped_missing_source_row",
+      "targetUrl": "https://www.nj.gov/humanservices/ddd"
+    },
+    {
+      "stateId": "new-jersey",
+      "sourceName": "New Jersey Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "new-jersey",
+      "sourceName": "New Jersey HCBS Waivers Page",
+      "status": "skipped_missing_source_row",
+      "targetUrl": "https://www.nj.gov/humanservices/ddd/hcbs"
+    },
+    {
+      "stateId": "new-jersey",
+      "sourceName": "New Jersey Developmental Services Directory",
+      "status": "skipped_missing_source_row",
+      "targetUrl": "https://www.nj.gov/humanservices/ddd"
+    },
+    {
+      "stateId": "new-jersey",
+      "sourceName": "New Jersey Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

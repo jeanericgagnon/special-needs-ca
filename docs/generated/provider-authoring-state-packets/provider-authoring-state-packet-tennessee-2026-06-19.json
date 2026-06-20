@@ -1,0 +1,159 @@
+{
+  "generatedAt": "2026-06-19T18:22:13.900Z",
+  "generatedDate": "2026-06-19",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+  "stateId": "tennessee",
+  "stateName": "Tennessee",
+  "executionPriority": 39,
+  "sourceTargetsPath": "data/source_targets/tennessee.json",
+  "ledgerStatus": "complete",
+  "ledgerNote": "applied-one-concrete-first-party-provider-target",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 1,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 7,
+  "placeholderProviderTargetCount": 0,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 0,
+  "neededLiveProviderRows": 2,
+  "authoringGapClass": "needs_refresh_or_deeper_targets",
+  "nextAction": "Refresh Tennessee provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+  "providerTargets": [
+    {
+      "sourceName": "Dolly Parton Children's Hospital",
+      "sourceUrl": "https://www.dollychildrens.org/",
+      "domain": "dollychildrens.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Verified first-party Tennessee children's hospital homepage for Knoxville regional pediatric coverage."
+    },
+    {
+      "sourceName": "Dolly Parton Children's Hospital Specialty Clinics",
+      "sourceUrl": "https://www.dollychildrens.org/medical-services/specialty-clinics",
+      "domain": "dollychildrens.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Verified first-party Tennessee specialty clinic page with clinic contact numbers and ongoing pediatric treatment programs."
+    },
+    {
+      "sourceName": "Dolly Parton Children's Hospital Main Campus",
+      "sourceUrl": "https://www.dollychildrens.org/about-us/our-locations/dolly-parton-childrens-hospital-main-campus",
+      "domain": "dollychildrens.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Verified first-party Tennessee main campus page with Knoxville address and contact details."
+    },
+    {
+      "sourceName": "Dolly Parton Children's Hospital",
+      "sourceUrl": "https://www.dollychildrens.org/",
+      "domain": "dollychildrens.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Verified first-party Tennessee children's hospital homepage for Knoxville regional pediatric coverage."
+    },
+    {
+      "sourceName": "Dolly Parton Children's Hospital Specialty Clinics",
+      "sourceUrl": "https://www.dollychildrens.org/medical-services/specialty-clinics/",
+      "domain": "dollychildrens.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Verified first-party Tennessee specialty clinic page with ongoing pediatric treatment programs and clinic contact numbers."
+    },
+    {
+      "sourceName": "Dolly Parton Children's Hospital Main Campus",
+      "sourceUrl": "https://www.dollychildrens.org/about-us/our-locations/dolly-parton-childrens-hospital-main-campus/",
+      "domain": "dollychildrens.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Verified first-party Tennessee main campus page with address and contact details for Knoxville pediatric hospital access."
+    },
+    {
+      "sourceName": "Monroe Carell Jr. Children's Hospital at Vanderbilt",
+      "sourceUrl": "https://www.childrenshospitalvanderbilt.org/",
+      "domain": "childrenshospitalvanderbilt.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Saved first-party Vanderbilt children's hospital target recovered from the archived Tennessee provider run."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Tennessee County Metadata",
+      "sourceUrl": "https://www.tennessee.gov",
+      "domain": "tennessee.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Tennessee Medicaid Portal",
+      "sourceUrl": "https://dhhs.tennessee.gov",
+      "domain": "dhhs.tennessee.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Tennessee Department of Intellectual and Developmental Disabilities",
+      "sourceUrl": "https://www.tn.gov/didd",
+      "domain": "tn.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Tennessee HCBS Waivers",
+      "sourceUrl": "https://www.tn.gov/didd/hcbs",
+      "domain": "tn.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Tennessee Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.tennessee.gov/earlyintervention",
+      "domain": "dhhs.tennessee.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Tennessee Department of Education Special Ed",
+      "sourceUrl": "https://education.tennessee.gov",
+      "domain": "education.tennessee.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Tennessee Regional Special Education Support",
+      "sourceUrl": "https://education.tennessee.gov/regional",
+      "domain": "education.tennessee.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Tennessee Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Tennessee",
+      "sourceUrl": "https://www.thearctennessee.org",
+      "domain": "thearctennessee.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Tennessee Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.tennessee.gov/forms",
+      "domain": "dhhs.tennessee.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Tennessee Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.tennessee.gov/rehab",
+      "domain": "dhhs.tennessee.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Tennessee Secretary of State Business Registry",
+      "sourceUrl": "https://www.tennessee.gov/business",
+      "domain": "tennessee.gov"
+    }
+  ]
+}

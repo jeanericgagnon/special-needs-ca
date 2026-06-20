@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-06-18T01:47:16.198Z",
+  "mode": "apply",
+  "stateFilter": "michigan",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 4,
+    "appliedStates": 0,
+    "filesChanged": 0,
+    "skippedByReason": {
+      "skipped_followup": 2,
+      "missing_source_row": 2
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "michigan",
+      "sourceName": "Michigan Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "michigan",
+      "sourceName": "Michigan HCBS Waivers Page",
+      "status": "skipped_missing_source_row",
+      "targetUrl": "https://www.michigan.gov/mdhhs/hcbs"
+    },
+    {
+      "stateId": "michigan",
+      "sourceName": "Michigan Developmental Services Directory",
+      "status": "skipped_missing_source_row",
+      "targetUrl": "https://www.michigan.gov/mdhhs"
+    },
+    {
+      "stateId": "michigan",
+      "sourceName": "Michigan Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

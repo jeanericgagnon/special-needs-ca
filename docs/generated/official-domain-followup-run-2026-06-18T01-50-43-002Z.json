@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-06-18T01:50:43.004Z",
+  "mode": "apply",
+  "stateFilter": "missouri",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 4,
+    "appliedStates": 2,
+    "filesChanged": 1,
+    "skippedByReason": {
+      "skipped_followup": 2
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "missouri",
+      "sourceName": "Missouri Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "missouri",
+      "sourceName": "Missouri HCBS Waivers Page",
+      "status": "applied",
+      "targetUrl": "https://dmh.mo.gov/dev-disabilities/hcbs"
+    },
+    {
+      "stateId": "missouri",
+      "sourceName": "Missouri Developmental Services Directory",
+      "status": "applied",
+      "targetUrl": "https://dmh.mo.gov/dev-disabilities"
+    },
+    {
+      "stateId": "missouri",
+      "sourceName": "Missouri Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": "2.0",
+  "jurisdiction": "California",
+  "generated_at": "2026-06-20",
+  "purpose": "Exact official-source targets for bounded, deterministic ingestion. Target verification is not equivalent to field-level content verification.",
+  "files": {
+    "ca_official_source_pack_v2.jsonl": {
+      "records": 122,
+      "description": "Core official program, form, rights, appeals, and transition targets."
+    },
+    "ca_directory_targets_v1.jsonl": {
+      "records": 87,
+      "description": "Exact local and statewide directory targets, including 58 counties and 21 Regional Centers."
+    },
+    "ca_source_repair_ledger_v2.jsonl": {
+      "records": 11,
+      "description": "Repair, author-first, and blocked items."
+    },
+    "ca_source_coverage_matrix_v1.csv": {
+      "records": 17,
+      "description": "Coverage matrix by information domain."
+    }
+  },
+  "core_status_counts": {
+    "verified_target": 111,
+    "official_link_fetch_pending": 8,
+    "blocked_fetch_challenge": 2,
+    "blocked_http_403": 1
+  },
+  "directory_status_counts": {
+    "official_directory_link": 87
+  },
+  "repair_ledger_counts": {
+    "repair": 4,
+    "blocked": 2,
+    "author_first": 5
+  },
+  "publication_rule": "No record or field is publication-ready until fetched evidence is parsed, cited at field level, validated, and accepted by the completeness gate."
+}

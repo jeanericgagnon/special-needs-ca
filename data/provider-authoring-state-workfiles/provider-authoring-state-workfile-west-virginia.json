@@ -1,0 +1,166 @@
+{
+  "generatedAt": "2026-06-18T19:30:58.209Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "west-virginia",
+  "stateName": "West Virginia",
+  "sourcePacketPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-west-virginia-2026-06-18.json",
+  "sourceTargetsPath": "data/source_targets/west-virginia.json",
+  "instructions": {
+    "summary": "Fill only the missing first-party provider targets needed for this state. Do not broaden beyond provider_directory authoring.",
+    "completionRule": "A candidate row is ready only when sourceName, sourceUrl, domain, and reviewedBy are filled."
+  },
+  "summary": {
+    "neededConcreteTargets": 3,
+    "currentConcreteProviderTargetCount": 0,
+    "existingProviderTargetCount": 1,
+    "candidateSlotCount": 3,
+    "readyCandidateCount": 0,
+    "unresolvedCandidateCount": 3
+  },
+  "existingProviderTargets": [
+    {
+      "sourceName": "West Virginia Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for West Virginia."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "West Virginia County Metadata",
+      "sourceUrl": "https://www.west-virginia.gov",
+      "domain": "west-virginia.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "West Virginia Medicaid Portal",
+      "sourceUrl": "https://dhhs.west-virginia.gov",
+      "domain": "dhhs.west-virginia.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "West Virginia Intellectual and Developmental Disabilities Division",
+      "sourceUrl": "https://dhhr.wv.gov/bms",
+      "domain": "dhhr.wv.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "West Virginia HCBS Waivers",
+      "sourceUrl": "https://dhhr.wv.gov/bms/hcbs",
+      "domain": "dhhr.wv.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "West Virginia Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.west-virginia.gov/earlyintervention",
+      "domain": "dhhs.west-virginia.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "West Virginia Department of Education Special Ed",
+      "sourceUrl": "https://education.west-virginia.gov",
+      "domain": "education.west-virginia.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "West Virginia Regional Special Education Support",
+      "sourceUrl": "https://education.west-virginia.gov/regional",
+      "domain": "education.west-virginia.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "West Virginia Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of West Virginia",
+      "sourceUrl": "https://www.thearcwest-virginia.org",
+      "domain": "thearcwest-virginia.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "West Virginia Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.west-virginia.gov/forms",
+      "domain": "dhhs.west-virginia.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "West Virginia Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.west-virginia.gov/rehab",
+      "domain": "dhhs.west-virginia.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "West Virginia Secretary of State Business Registry",
+      "sourceUrl": "https://www.west-virginia.gov/business",
+      "domain": "west-virginia.gov"
+    }
+  ],
+  "candidateProviderTargets": [
+    {
+      "slotNumber": 1,
+      "stateId": "west-virginia",
+      "stateCode": "WV",
+      "sourceName": "WVU Medicine Children's",
+      "sourceUrl": "https://childrens.wvumedicine.org/",
+      "domain": "wvumedicine.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Children's hospital",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official WVU Medicine Children's source for statewide pediatric hospital and specialty care in West Virginia.",
+      "reviewedBy": "codex"
+    },
+    {
+      "slotNumber": 2,
+      "stateId": "west-virginia",
+      "stateCode": "WV",
+      "sourceName": "Hoops Family Children's Hospital",
+      "sourceUrl": "https://cabellhuntington.org/",
+      "domain": "cabellhuntington.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Children's hospital",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official Cabell Huntington source for Hoops Family Children's Hospital pediatric and specialty care in southern West Virginia.",
+      "reviewedBy": "codex"
+    },
+    {
+      "slotNumber": 3,
+      "stateId": "west-virginia",
+      "stateCode": "WV",
+      "sourceName": "CAMC Women and Children's Hospital",
+      "sourceUrl": "https://camc.org/",
+      "domain": "camc.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Children's hospital",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official CAMC source for pediatric and hospital-based specialty care in central West Virginia.",
+      "reviewedBy": "codex"
+    }
+  ]
+}

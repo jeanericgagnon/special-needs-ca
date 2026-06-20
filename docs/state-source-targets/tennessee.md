@@ -3,7 +3,7 @@
 This document outlines the authoritative crawler target domains, specific agencies, and extraction methods required to replace programmatic placeholders in Tennessee with real, source-listed records.
 
 > [!NOTE]
-> **Category Scaffold Complete:** This state is currently mapped as a category-level scaffold (14 targets). Source-level expansion will follow in Wave 2.
+> **Provider Source Expansion Started:** This state was originally mapped as a category-level scaffold. Concrete first-party provider targets have now been added for the hospital / university clinic layer.
 
 ## 1. Domain Crawler Targets (Wave 2)
 
@@ -21,7 +21,9 @@ This document outlines the authoritative crawler target domains, specific agenci
 | **Special Education Attorneys Directory** | J. Provider and advocate directories / Attorney Directory | [copaa.org](https://www.copaa.org) | `playwright` | `iep_advocates` |
 | **Tennessee Medicaid & Special Education Forms** | K. Forms and guides / Forms Library | [dhhs.tennessee.gov](https://dhhs.tennessee.gov/forms) | `pdf_extract` | `forms` |
 | **Tennessee Vocational Rehabilitation Services** | L. Transition / adult services / Vocational Rehabilitation | [dhhs.tennessee.gov](https://dhhs.tennessee.gov/rehab) | `static_fetch` | `programs` |
-| **Tennessee Children's Hospital Clinics** | M. Hospitals / university clinics / Hospitals | [childrenshospital.org](https://www.childrenshospital.org) | `manual_review` | `resource_providers` |
+| **Monroe Carell Jr. Children's Hospital at Vanderbilt** | M. Hospitals / university clinics / Hospitals | [childrenshospitalvanderbilt.org](https://www.childrenshospitalvanderbilt.org) | `static_fetch` | `resource_providers` |
+| **Le Bonheur Children's Hospital** | M. Hospitals / university clinics / Hospitals | [lebonheur.org](https://www.lebonheur.org) | `static_fetch` | `resource_providers` |
+| **Children's Hospital at Erlanger** | M. Hospitals / university clinics / Hospitals | [childrensaterlanger.org](https://www.childrensaterlanger.org) | `static_fetch` | `resource_providers` |
 | **Tennessee Secretary of State Business Registry** | N. Data quality / verification sources / Open Data Portal | [tennessee.gov](https://www.tennessee.gov/business) | `playwright` | `sources` |
 
 ## 2. Detailed Category Targets
@@ -183,17 +185,43 @@ This document outlines the authoritative crawler target domains, specific agenci
 - **Last Checked:** 2026-06-13
 
 ### Category: M. Hospitals / university clinics (Hospitals)
-- **Source Name:** Tennessee Children's Hospital Clinics
-- **Source URL:** [https://www.childrenshospital.org](https://www.childrenshospital.org)
-- **Domain:** `childrenshospital.org`
+- **Source Name:** Monroe Carell Jr. Children's Hospital at Vanderbilt
+- **Source URL:** [https://www.childrenshospitalvanderbilt.org](https://www.childrenshospitalvanderbilt.org)
+- **Domain:** `childrenshospitalvanderbilt.org`
 - **Target Table:** `resource_providers`
 - **Expected Fields:** `name, phone, address`
-- **Crawl Method:** `manual_review`
+- **Crawl Method:** `static_fetch`
 - **Robots.txt Status:** `allowed`
 - **Terms Risk:** `low`
-- **Priority:** 2
-- **Notes:** Initial category-level scaffold source target for Tennessee.
-- **Last Checked:** 2026-06-13
+- **Priority:** 1
+- **Notes:** Concrete first-party pediatric hospital target for middle Tennessee provider buildout.
+- **Last Checked:** 2026-06-17
+
+### Category: M. Hospitals / university clinics (Hospitals)
+- **Source Name:** Le Bonheur Children's Hospital
+- **Source URL:** [https://www.lebonheur.org](https://www.lebonheur.org)
+- **Domain:** `lebonheur.org`
+- **Target Table:** `resource_providers`
+- **Expected Fields:** `name, phone, address`
+- **Crawl Method:** `static_fetch`
+- **Robots.txt Status:** `allowed`
+- **Terms Risk:** `low`
+- **Priority:** 1
+- **Notes:** Concrete first-party pediatric hospital target for west Tennessee provider buildout.
+- **Last Checked:** 2026-06-17
+
+### Category: M. Hospitals / university clinics (Hospitals)
+- **Source Name:** Children's Hospital at Erlanger
+- **Source URL:** [https://www.childrensaterlanger.org](https://www.childrensaterlanger.org)
+- **Domain:** `childrensaterlanger.org`
+- **Target Table:** `resource_providers`
+- **Expected Fields:** `name, phone, address`
+- **Crawl Method:** `static_fetch`
+- **Robots.txt Status:** `allowed`
+- **Terms Risk:** `low`
+- **Priority:** 1
+- **Notes:** Concrete first-party pediatric hospital target for east Tennessee provider buildout.
+- **Last Checked:** 2026-06-17
 
 ### Category: N. Data quality / verification sources (Open Data Portal)
 - **Source Name:** Tennessee Secretary of State Business Registry
@@ -207,4 +235,3 @@ This document outlines the authoritative crawler target domains, specific agenci
 - **Priority:** 2
 - **Notes:** Initial category-level scaffold source target for Tennessee.
 - **Last Checked:** 2026-06-13
-

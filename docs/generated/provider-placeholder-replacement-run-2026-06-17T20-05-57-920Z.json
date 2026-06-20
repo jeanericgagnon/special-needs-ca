@@ -1,0 +1,52 @@
+{
+  "generatedAt": "2026-06-17T20:05:57.921Z",
+  "mode": "dry-run",
+  "stateFilter": null,
+  "inputPath": "data/provider-placeholder-replacement-decisions.json",
+  "summary": {
+    "inputRows": 3,
+    "appliedStates": 1,
+    "appliedReplacements": 3,
+    "filesChanged": 0,
+    "skippedByReason": {
+      "missing_reviewed_by": 2
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "alabama",
+      "placeholderSourceName": "Alabama Children's Hospital Clinics",
+      "status": "skipped_missing_reviewed_by",
+      "replacementCount": 0
+    },
+    {
+      "stateId": "iowa",
+      "placeholderSourceName": "Iowa Children's Hospital Clinics",
+      "status": "skipped_missing_reviewed_by",
+      "replacementCount": 0
+    },
+    {
+      "stateId": "missouri",
+      "placeholderSourceName": "Missouri Children's Hospital Clinics",
+      "status": "dry_run_ready",
+      "replacementCount": 3,
+      "replacements": [
+        {
+          "source_name": "St. Louis Children's Hospital",
+          "source_url": "https://www.stlouischildrens.org/",
+          "domain": "stlouischildrens.org"
+        },
+        {
+          "source_name": "Children's Mercy Kansas City",
+          "source_url": "https://www.childrensmercy.org/",
+          "domain": "childrensmercy.org"
+        },
+        {
+          "source_name": "SSM Health Cardinal Glennon Children's Hospital",
+          "source_url": "http://www.cardinalglennon.com/",
+          "domain": "cardinalglennon.com"
+        }
+      ]
+    }
+  ]
+}

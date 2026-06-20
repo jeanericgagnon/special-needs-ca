@@ -21,11 +21,12 @@ import ContributionModal from '@/components/contribution-modal';
 import PrintButton from '@/components/print-button';
 import ShareButton from '@/components/share-button';
 import CountyMapClient from '@/app/benefits/components/county-map-client';
+import DirectoryFoundationPanel from '@/app/components/directory-foundation-panel';
 import CaliforniaMap from '@/app/components/california-map';
 import IhssMiniProduct from '@/app/benefits/components/ihss-mini-product';
 import { type StateConfig, stateConfigs, getDynamicStateConfig } from '@/lib/stateConfigs';
 import { StateCoverageBadge } from '@/components/state-coverage-badge';
-import { NON_CA_VERIFIED_COUNTIES } from '@/lib/verifiedCounties';
+import { getCountyDiagnosisTruthEligibility, getCountyTruthEligibility, isIndexableState, isPublicDirectoryRecordEligible, isPublicRecordEligible, VERIFIED_DIAGNOSIS_SLUGS } from '@/lib/publicTruth';
 
 type Props = {
   params: Promise<{ state: string; slug?: string[] }>;
@@ -78,9 +79,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const catchment = config.catchmentName;
   const personalCare = config.personalCareProgram;
 
-  const isIndexedState = ['california', 'texas', 'florida', 'pennsylvania', 'new-york', 'ohio', 'illinois', 'georgia', 'maryland', 'utah', 'new-mexico', 'oregon', 'washington', 'idaho', 'south-carolina', 'north-dakota', 'west-virginia', 'montana', 'colorado', 'louisiana', 'south-dakota', 'alabama', 'wisconsin', 'arkansas', 'oklahoma', 'north-carolina', 'mississippi', 'michigan', 'minnesota', 'indiana', 'nebraska', 'tennessee', 'virginia', 'arizona', 'alaska', 'connecticut', 'delaware', 'hawaii', 'iowa', 'kansas', 'kentucky', 'maine', 'massachusetts', 'missouri', 'nevada', 'new-hampshire', 'new-jersey', 'rhode-island', 'vermont', 'wyoming'].includes(stateData.id);
-  const verifiedCounties = ['los-angeles', 'orange', 'sacramento', 'san-francisco', ...NON_CA_VERIFIED_COUNTIES];
-  const verifiedDiagnoses = ['autism-spectrum-disorder', 'adhd', 'down-syndrome', 'speech-or-language-delay', 'cerebral-palsy', 'epilepsy'];
+  const isIndexedState = isIndexableState(stateData.id);
 
   if (slug.length === 0) {
     return {
@@ -103,16 +102,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const isCounty = (await getCounties(stateData.id)).some(c => c.id === slug[0].toLowerCase());
     if (isCounty) {
       const countyFormatted = formatParam(slug[0]);
-      const isIndexed = verifiedCounties.includes(slug[0].toLowerCase());
+      const countyDetails = await getCountyDetails(slug[0].toLowerCase());
+      const truth = getCountyTruthEligibility(stateData.id, countyDetails);
       return {
         title: `Special Needs & IEP Benefits in ${countyFormatted} County, ${stateCode} (2026)`,
         description: `Browse localized developmental resources and advocacy directories in ${countyFormatted} County. Access ${catchment} intake details and school district inclusion benchmarks.`,
         alternates: { canonical: `/benefits/${stateData.id}/${slug[0].toLowerCase()}` },
-        robots: isIndexed ? undefined : { index: false, follow: true }
+        robots: truth.indexSafe ? undefined : { index: false, follow: true }
       };
     } else {
       const diagnosisFormatted = formatParam(slug[0]);
-      const isIndexed = isIndexedState && verifiedDiagnoses.includes(slug[0].toLowerCase());
+      const isIndexed = isIndexedState && VERIFIED_DIAGNOSIS_SLUGS.includes(slug[0].toLowerCase() as (typeof VERIFIED_DIAGNOSIS_SLUGS)[number]);
       return {
         title: `${diagnosisFormatted} Support Services by County in ${stateName} (2026)`,
         description: `Select a county in ${stateName} to discover specialized ${diagnosisFormatted} programs, ${catchment} support, local school accommodations, and parent advocacy groups.`,
@@ -140,12 +140,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const isCounty = (await getCounties(stateData.id)).some(c => c.id === secondSlug);
     if (isCounty) {
       const countyFormatted = formatParam(secondSlug);
-      const isIndexed = stateData.id === 'california' && verifiedDiagnoses.includes(slug[0].toLowerCase()) && (secondSlug === 'los-angeles' || secondSlug === 'orange');
+      const countyDetails = await getCountyDetails(secondSlug);
+      const truth = getCountyDiagnosisTruthEligibility(stateData.id, slug[0].toLowerCase(), secondSlug, countyDetails);
       return {
         title: `${diagnosisFormatted} Benefits & Services in ${countyFormatted} County, ${stateCode} (2026)`,
         description: `Access ${stateName} state support, ${catchment} intake, waiver caregiver wages, and school IEP assistance for ${diagnosisFormatted} in ${countyFormatted} County.`,
         alternates: { canonical: `/benefits/${stateData.id}/${slug[0]}/${secondSlug}` },
-        robots: isIndexed ? undefined : { index: false, follow: true }
+        robots: truth.indexSafe ? undefined : { index: false, follow: true }
       };
     }
 
@@ -174,7 +175,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `${stateName} Disability & Special Needs Benefits | Ablefull`,
-    description: `Vetted resources for developmental disabilities and special education in ${stateName}.`
+    description: `Source-backed resources for developmental disabilities and special education in ${stateName}.`
   };
 }
 
@@ -304,7 +305,7 @@ export default async function BenefitsCatchAll({ params }: Props) {
     }
     
     // Find related advocates serving this program's general specialties (filtered by state)
-    const allAdvocates = await getIepAdvocates(undefined, stateData.id);
+    const allAdvocates = (await getIepAdvocates(undefined, stateData.id)).filter(isPublicDirectoryRecordEligible);
     
     // Sort and filter advocates to show relevant professionals
     const relatedAdvocates = allAdvocates
@@ -606,6 +607,8 @@ export default async function BenefitsCatchAll({ params }: Props) {
 
     if (countyData) {
       const countyFormatted = formatParam(countyId);
+      const eligibleRegionalCenters = (countyData.regionalCenters || []).filter(isPublicRecordEligible);
+      const eligibleSchoolDistricts = (countyData.schoolDistricts || []).filter(isPublicRecordEligible);
       const directoryLinks = DIAGNOSES.map(d => ({
         name: d,
         slug: slugifyDiagnosis(d)
@@ -654,7 +657,7 @@ export default async function BenefitsCatchAll({ params }: Props) {
                 <Landmark size={15} /> {config.catchmentName} Agency
               </h2>
               <strong style={{ fontSize: '1.05rem', display: 'block', marginBottom: '0.2rem', color: 'var(--text-main)' }}>
-                {countyData.regionalCenters?.[0]?.name || `${stateName} ${config.catchmentName} Agency`}
+                {eligibleRegionalCenters[0]?.name || `${stateName} ${config.catchmentName} Agency`}
               </strong>
               <span style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>
                 {config.catchmentDesc}
@@ -666,7 +669,7 @@ export default async function BenefitsCatchAll({ params }: Props) {
                 <MapPin size={15} /> Local school boards
               </h2>
               <strong style={{ fontSize: '1.05rem', display: 'block', marginBottom: '0.2rem', color: 'var(--text-main)' }}>
-                {countyData.schoolDistricts?.[0]?.name || 'Local Public School Districts'}
+                {eligibleSchoolDistricts[0]?.name || 'Local Public School Districts'}
               </strong>
               <span style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>
                 Manages IEP accommodations, SDC placements, and inclusion evaluation timelines.
@@ -878,18 +881,23 @@ export default async function BenefitsCatchAll({ params }: Props) {
       notFound();
     }
 
+    const eligibleRegionalCenters = (countyData.regionalCenters || []).filter(isPublicRecordEligible);
+    const eligibleSchoolDistricts = (countyData.schoolDistricts || []).filter(isPublicRecordEligible);
+    const eligibleCountyOffices = (countyData.countyOffices || []).filter(isPublicRecordEligible);
+    const eligibleSelpas = (countyData.selpas || []).filter(isPublicRecordEligible);
+
     const countiesList = await getCounties(stateData.id);
-    const ihssOffice = countyData.countyOffices?.find((o) => o.program_id === 'ihss-for-children');
+    const ihssOffice = eligibleCountyOffices.find((o) => o.program_id === 'ihss-for-children');
     const ihssPhone = ihssOffice?.phone || '';
     const ihssAddress = ihssOffice?.address || '';
 
     // Fetch AI-extracted programs from the crawler database matching this diagnosis
     const crawlerPrograms = await getProgramsForDiagnosis(diagnosisSlug);
 
-    const countySelpa = countyData.selpas?.[0];
+    const countySelpa = eligibleSelpas[0];
 
     // Load local advocates
-    const rawLocalAdvocates = await getIepAdvocates(countyId);
+    const rawLocalAdvocates = (await getIepAdvocates(countyId)).filter(isPublicDirectoryRecordEligible);
 
     // Sort local advocates to prioritize specialists matching the child's diagnosis
     const localAdvocates = [...rawLocalAdvocates].sort((a, b) => {
@@ -935,14 +943,40 @@ export default async function BenefitsCatchAll({ params }: Props) {
     });
 
     // Gather local resources from database
-    const localProviders = await getLocalProviders(countyId);
+    const localProviders = (await getLocalProviders(countyId)).filter(isPublicDirectoryRecordEligible);
     
     const playgrounds = localProviders.filter(p => p.categories === 'playground');
     const clinics = localProviders.filter(p => p.categories === 'therapy-clinic');
     const groups = localProviders.filter(p => p.categories === 'support-group');
+    const freshnessSources = [
+      ...eligibleRegionalCenters,
+      ...eligibleSchoolDistricts,
+      ...eligibleCountyOffices,
+      ...eligibleSelpas,
+      ...localAdvocates,
+      ...localProviders,
+    ].filter((record) => {
+      const freshnessRecord = record as {
+        source_url?: string | null;
+        last_verified_date?: string | null;
+        last_verified_at?: string | null;
+        source_last_updated?: string | null;
+        checked_at?: string | null;
+        last_scraped_at?: string | null;
+      };
 
-    const rcName = countyData.regionalCenters?.[0]?.name || 'the local Regional Center';
-    const sdName = districtDetails ? districtDetails.name : (countyData.schoolDistricts?.[0]?.name || 'your local school district');
+      return Boolean(
+        freshnessRecord.source_url ||
+        freshnessRecord.last_verified_date ||
+        freshnessRecord.last_verified_at ||
+        freshnessRecord.source_last_updated ||
+        freshnessRecord.checked_at ||
+        freshnessRecord.last_scraped_at
+      );
+    });
+
+    const rcName = eligibleRegionalCenters[0]?.name || 'the local Regional Center';
+    const sdName = districtDetails ? districtDetails.name : (eligibleSchoolDistricts[0]?.name || 'your local school district');
     const displayWage = countyData.ihss_wage_rate || 18.00;
     const estHours = 283;
     const monthlyPayout = (estHours * displayWage).toLocaleString(undefined, { maximumFractionDigits: 0 });
@@ -987,7 +1021,7 @@ export default async function BenefitsCatchAll({ params }: Props) {
 
     const schoolDistrictsSchema = {
       '@context': 'https://schema.org',
-      '@graph': (countyData.schoolDistricts || []).map((sd) => ({
+      '@graph': eligibleSchoolDistricts.map((sd) => ({
         '@type': 'EducationalOrganization',
         'name': sd.name,
         'telephone': sd.spec_ed_contact_phone,
@@ -1001,26 +1035,6 @@ export default async function BenefitsCatchAll({ params }: Props) {
         },
         'description': `${sd.name} Special Education department in ${countyFormatted} County. Inclusion rate: ${sd.inclusion_rate_pct}%. SDC self-contained rate: ${sd.self_contained_rate_pct}%.`
       }))
-    };
-
-    // Vetted advocate review stamp schema mapping
-    const mainReviewer = localAdvocates[0] || {
-      name: "Sarah Jenkins, M.S.Ed.",
-      credentials: "Board Certified Advocate (COPAA)",
-      website: "https://calspedadvocacy.com"
-    };
-
-    const reviewedBySchema = {
-      '@context': 'https://schema.org',
-      '@type': 'WebPage',
-      'name': pageTitle,
-      'reviewedBy': {
-        '@type': 'Person',
-        'name': mainReviewer.name,
-        'jobTitle': 'Special Education Advocate',
-        'sameAs': mainReviewer.website,
-        'description': `Verified Special Education Consultant and IEP IEP Advocate certified under COPAA rules.`
-      }
     };
 
     const governmentServicesSchema = {
@@ -1070,7 +1084,7 @@ export default async function BenefitsCatchAll({ params }: Props) {
           'addressRegion': stateCode,
           'addressCountry': 'US'
         },
-        'description': `${adv.name} is a vetted Special Education IEP Advocate and Special Needs Consultant, credentials: ${adv.credentials}. specialties: ${adv.specialties || 'IEP, Regional Center, Appeals'}.`
+        'description': `${adv.name} is a special education IEP advocate serving ${countyFormatted} County. Credentials: ${adv.credentials}. Specialties: ${adv.specialties || 'IEP, Regional Center, Appeals'}.`
       }))
     };
 
@@ -1085,25 +1099,25 @@ export default async function BenefitsCatchAll({ params }: Props) {
       x: number;
       y: number;
     }[] = [];
-    if (countyData.regionalCenters && countyData.regionalCenters.length > 0) {
+    if (eligibleRegionalCenters.length > 0) {
       mapResources.push({
         id: 'rc-1',
         type: 'regional-center',
-        name: countyData.regionalCenters[0].name,
+        name: eligibleRegionalCenters[0].name,
         address: `Intake Desk, ${countyFormatted}, ${stateCode}`,
-        phone: countyData.regionalCenters[0].intake_phone,
-        description: `${stateName} developmental agency coordinating respite, therapy funding, and developmental support: ${countyData.regionalCenters[0].catchment_boundaries}`,
+        phone: eligibleRegionalCenters[0].intake_phone,
+        description: `${stateName} developmental agency coordinating respite, therapy funding, and developmental support: ${eligibleRegionalCenters[0].catchment_boundaries}`,
         x: 210,
         y: 260
       });
     }
-    if (countyData.schoolDistricts && countyData.schoolDistricts.length > 0) {
+    if (eligibleSchoolDistricts.length > 0) {
       mapResources.push({
         id: 'sd-1',
         type: 'school-board',
-        name: countyData.schoolDistricts[0].name,
+        name: eligibleSchoolDistricts[0].name,
         address: `Special Education Department, ${countyFormatted}, ${stateCode}`,
-        phone: countyData.schoolDistricts[0].spec_ed_contact_phone || '',
+        phone: eligibleSchoolDistricts[0].spec_ed_contact_phone || '',
         description: `Special education district coordinator responsible for IEP evaluations, placement, and inclusion LRE classrooms.`,
         x: 580,
         y: 120
@@ -1128,10 +1142,6 @@ export default async function BenefitsCatchAll({ params }: Props) {
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewedBySchema) }}
-        />
-        <script
-          type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(governmentServicesSchema) }}
         />
         <script
@@ -1139,14 +1149,14 @@ export default async function BenefitsCatchAll({ params }: Props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(advocatesSchema) }}
         />
 
-        {/* E-E-A-T Review Stamp Banner */}
+        {/* Source-backed Trust Banner */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'rgba(var(--primary-rgb), 0.03)', border: '1px solid rgba(var(--primary-rgb), 0.08)', padding: '0.75rem 1.5rem', borderRadius: '16px', marginBottom: '2.5rem', flexWrap: 'wrap', gap: '0.75rem' }} className="no-print">
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.82rem', color: 'var(--text-main)' }}>
             <Award size={16} color="var(--primary-color)" />
-            <span>Vetted parent guide reviewed by: <strong style={{ color: 'var(--primary-color)' }}>{mainReviewer.name}</strong>, {mainReviewer.credentials}</span>
+            <span>Source-backed county guide. Public local listings render only when a source URL, contact signal, and acceptable verification state exist.</span>
           </div>
           <span style={{ fontSize: '0.75rem', color: 'var(--text-light)' }}>
-            Last Reviewed: <strong>June 2026</strong> | Compliant with {stateCode} Education & Developmental Disability Regulations
+            Freshness sources on page: <strong>{freshnessSources.length}</strong> | County/index gating follows the shared truth eligibility rules
           </span>
         </div>
 
@@ -1245,7 +1255,7 @@ export default async function BenefitsCatchAll({ params }: Props) {
             <div style={{ padding: '1.25rem', background: 'rgba(var(--primary-rgb), 0.02)', borderRadius: '16px', border: '1px solid rgba(0,0,0,0.03)', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
               <h3 style={{ fontSize: '1.1rem', color: 'var(--primary-color)', margin: 0, fontWeight: 700 }}>1. {config.catchmentName} Entitlements</h3>
               <p style={{ fontSize: '0.88rem', color: 'var(--text-light)', lineHeight: '1.5', margin: 0 }}>
-                Call {countyData.regionalCenters?.[0]?.name || `your local ${config.catchmentName}`} intake department immediately. Under state developmental disability regulations, eligibility is a legal right, not a lottery. <strong>Pro tip:</strong> Collect all pediatrician letters and baby milestones showing developmental delay before your intake call. You must show substantial disability in at least three functional categories to qualify.
+                Call {eligibleRegionalCenters[0]?.name || `your local ${config.catchmentName}`} intake department immediately. Under state developmental disability regulations, eligibility is a legal right, not a lottery. <strong>Pro tip:</strong> Collect all pediatrician letters and baby milestones showing developmental delay before your intake call. You must show substantial disability in at least three functional categories to qualify.
               </p>
             </div>
 
@@ -1280,7 +1290,7 @@ export default async function BenefitsCatchAll({ params }: Props) {
           <div className="glass-panel" style={{ background: 'rgba(255, 255, 255, 0.95)', border: '1px solid rgba(var(--primary-rgb), 0.12)', padding: '2rem', borderRadius: '24px', marginBottom: '4rem' }}>
             <h2 style={{ fontSize: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.25rem', color: 'var(--text-main)' }}>
               <ShieldCheck color="var(--primary-color)" size={24} />
-              Vetted Government & Community Support Programs for {diagnosisFormatted}
+              Source-Backed Government & Community Support Programs for {diagnosisFormatted}
             </h2>
             <p style={{ fontSize: '0.98rem', color: 'var(--text-light)', lineHeight: '1.6', marginBottom: '1.5rem' }}>
               Based on crawled state agency rules, the following programs specify qualifying eligibility rules matching <strong>{diagnosisFormatted}</strong>:
@@ -1346,28 +1356,28 @@ export default async function BenefitsCatchAll({ params }: Props) {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', marginTop: '1.5rem' }}>
             
             {/* Regional Center details */}
-            {countyData.regionalCenters && countyData.regionalCenters.length > 0 && (
+            {eligibleRegionalCenters.length > 0 && (
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', fontSize: '0.9rem' }}>
                 <strong style={{ fontSize: '1rem', display: 'flex', alignItems: 'center', gap: '0.4rem', color: 'var(--primary-color)' }}>
                   <Landmark size={16} /> {config.catchmentName}
                 </strong>
-                <strong>{countyData.regionalCenters[0].name}</strong>
-                <p style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>{countyData.regionalCenters[0].catchment_boundaries}</p>
+                <strong>{eligibleRegionalCenters[0].name}</strong>
+                <p style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>{eligibleRegionalCenters[0].catchment_boundaries}</p>
                 <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
                   <Phone size={14} style={{ flexShrink: 0 }} /> 
                   Intake: 
-                  <a href={`tel:${countyData.regionalCenters[0].intake_phone}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{countyData.regionalCenters[0].intake_phone}</a>
+                  <a href={`tel:${eligibleRegionalCenters[0].intake_phone}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{eligibleRegionalCenters[0].intake_phone}</a>
                 </span>
               </div>
             )}
 
             {/* School board directory list */}
-            {countyData.schoolDistricts && countyData.schoolDistricts.length > 0 && (
+            {eligibleSchoolDistricts.length > 0 && (
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', fontSize: '0.9rem' }}>
                 <strong style={{ fontSize: '1rem', display: 'flex', alignItems: 'center', gap: '0.4rem', color: 'var(--primary-color)' }}>
                   <ShieldCheck size={16} /> Special Ed & Inclusion Stats
                 </strong>
-                {countyData.schoolDistricts.map((districtRow) => (
+                {eligibleSchoolDistricts.map((districtRow) => (
                   <div key={districtRow.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', borderBottom: '1px solid rgba(0,0,0,0.05)', paddingBottom: '1rem' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '1rem' }}>
                       <strong style={{ fontSize: '0.95rem' }}>{districtRow.name}</strong>
@@ -1444,61 +1454,43 @@ export default async function BenefitsCatchAll({ params }: Props) {
           <div style={{ borderTop: '1px solid rgba(0,0,0,0.06)', marginTop: '2.5rem', paddingTop: '2rem' }}>
             <h3 style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: '1.25rem', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
               <Sparkles size={16} color="var(--primary-color)" />
-              Vetted local support networks and resources
+              Local support networks and resources
             </h3>
             
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
-              {/* Playgrounds */}
-              {playgrounds.length > 0 ? (
-                <div style={{ background: 'white', padding: '1.25rem', borderRadius: '16px', border: '1px solid rgba(0,0,0,0.03)' }}>
-                  <strong style={{ display: 'block', color: 'var(--text-main)', marginBottom: '0.4rem', fontSize: '0.95rem' }}>🛝 Inclusive Playgrounds & Parks</strong>
-                  <h4 style={{ fontSize: '0.9rem', fontWeight: 700, margin: 0 }}>{playgrounds[0].name}</h4>
-                  <span style={{ fontSize: '0.78rem', color: 'var(--text-light)', display: 'block', margin: '0.2rem 0' }}>{playgrounds[0].address}</span>
-                  <p style={{ fontSize: '0.82rem', margin: 0, color: 'var(--text-light)', lineHeight: 1.4 }}>📞 Phone: {playgrounds[0].phone || 'N/A'}</p>
-                </div>
-              ) : (
-                <div style={{ background: 'rgba(0,0,0,0.01)', padding: '1.25rem', borderRadius: '16px', border: '1px dashed rgba(0,0,0,0.1)', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', minHeight: '150px' }}>
-                  <span style={{ fontSize: '1.2rem', marginBottom: '0.5rem' }}>🛝</span>
-                  <strong style={{ fontSize: '0.85rem', color: 'var(--text-main)', display: 'block', marginBottom: '0.25rem' }}>No Inclusive Playgrounds Indexed</strong>
-                  <p style={{ fontSize: '0.75rem', color: 'var(--text-light)', margin: '0 0 0.75rem 0', lineHeight: 1.3 }}>Help other special needs parents by recommending a vetted local playground.</p>
-                  <ContributionModal suggestionType="other" targetId={countyId} targetName={`${countyFormatted} County Playground`} buttonLabel="Submit Park" />
-                </div>
-              )}
-
-              {/* Clinics */}
-              {clinics.length > 0 ? (
-                <div style={{ background: 'white', padding: '1.25rem', borderRadius: '16px', border: '1px solid rgba(0,0,0,0.03)' }}>
-                  <strong style={{ display: 'block', color: 'var(--text-main)', marginBottom: '0.4rem', fontSize: '0.95rem' }}>🏥 Pediatric Therapy Clinics</strong>
-                  <h4 style={{ fontSize: '0.9rem', fontWeight: 700, margin: 0 }}>{clinics[0].name}</h4>
-                  <span style={{ fontSize: '0.78rem', color: 'var(--text-light)', display: 'block', margin: '0.2rem 0' }}>{clinics[0].address}</span>
-                  <p style={{ fontSize: '0.82rem', margin: 0, color: 'var(--text-light)', lineHeight: 1.4 }}>📞 Phone: {clinics[0].phone || 'N/A'}{clinics[0].accepts_medi_cal ? ' • Accepts Medi-Cal' : ''}</p>
-                </div>
-              ) : (
-                <div style={{ background: 'rgba(0,0,0,0.01)', padding: '1.25rem', borderRadius: '16px', border: '1px dashed rgba(0,0,0,0.1)', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', minHeight: '150px' }}>
-                  <span style={{ fontSize: '1.2rem', marginBottom: '0.5rem' }}>🏥</span>
-                  <strong style={{ fontSize: '0.85rem', color: 'var(--text-main)', display: 'block', marginBottom: '0.25rem' }}>No Pediatric Clinics Indexed</strong>
-                  <p style={{ fontSize: '0.75rem', color: 'var(--text-light)', margin: '0 0 0.75rem 0', lineHeight: 1.3 }}>Help other special needs parents by recommending a vetted local clinic.</p>
-                  <ContributionModal suggestionType="other" targetId={countyId} targetName={`${countyFormatted} County Clinic`} buttonLabel="Submit Clinic" />
-                </div>
-              )}
-
-              {/* Support Groups */}
-              {groups.length > 0 ? (
-                <div style={{ background: 'white', padding: '1.25rem', borderRadius: '16px', border: '1px solid rgba(0,0,0,0.03)' }}>
-                  <strong style={{ display: 'block', color: 'var(--text-main)', marginBottom: '0.4rem', fontSize: '0.95rem' }}>👥 Local Support Chapters</strong>
-                  <h4 style={{ fontSize: '0.9rem', fontWeight: 700, margin: 0 }}>{groups[0].name}</h4>
-                  <span style={{ fontSize: '0.78rem', color: 'var(--text-light)', display: 'block', margin: '0.2rem 0' }}>{groups[0].address}</span>
-                  <p style={{ fontSize: '0.82rem', margin: 0, color: 'var(--text-light)', lineHeight: 1.4 }}>📞 Phone: {groups[0].phone || 'N/A'}{groups[0].email ? ` • ${groups[0].email}` : ''}</p>
-                </div>
-              ) : (
-                <div style={{ background: 'rgba(0,0,0,0.01)', padding: '1.25rem', borderRadius: '16px', border: '1px dashed rgba(0,0,0,0.1)', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', minHeight: '150px' }}>
-                  <span style={{ fontSize: '1.2rem', marginBottom: '0.5rem' }}>👥</span>
-                  <strong style={{ fontSize: '0.85rem', color: 'var(--text-main)', display: 'block', marginBottom: '0.25rem' }}>No Support Chapters Indexed</strong>
-                  <p style={{ fontSize: '0.75rem', color: 'var(--text-light)', margin: '0 0 0.75rem 0', lineHeight: 1.3 }}>Help other special needs parents by recommending a local support group.</p>
-                  <ContributionModal suggestionType="other" targetId={countyId} targetName={`${countyFormatted} County Support Group`} buttonLabel="Submit Group" />
-                </div>
-              )}
-            </div>
+            {(playgrounds.length > 0 || clinics.length > 0 || groups.length > 0) && (
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+                {playgrounds[0] && (
+                  <DirectoryFoundationPanel
+                    entityType="provider"
+                    heading="Inclusive Playgrounds & Parks"
+                    record={playgrounds[0]}
+                    pageType="county_diagnosis"
+                    stateId={stateData.id}
+                    countyId={countyId}
+                  />
+                )}
+                {clinics[0] && (
+                  <DirectoryFoundationPanel
+                    entityType="provider"
+                    heading="Pediatric Therapy Clinics"
+                    record={clinics[0]}
+                    pageType="county_diagnosis"
+                    stateId={stateData.id}
+                    countyId={countyId}
+                  />
+                )}
+                {groups[0] && (
+                  <DirectoryFoundationPanel
+                    entityType="provider"
+                    heading="Local Support Chapters"
+                    record={groups[0]}
+                    pageType="county_diagnosis"
+                    stateId={stateData.id}
+                    countyId={countyId}
+                  />
+                )}
+              </div>
+            )}
           </div>
         </div>
 
@@ -1560,7 +1552,7 @@ export default async function BenefitsCatchAll({ params }: Props) {
                   ⚖️ Special Education Attorney Safeguards
                 </h3>
                 <p style={{ fontSize: '0.9rem', color: 'var(--text-light)', lineHeight: '1.6', margin: 0 }}>
-                  If the school district violates statutory timelines or denies appropriate service placements, you have the right to consult a **Special Education Attorney**. In {stateName}, if you prevail in a due process hearing, the school district is legally required to reimburse your reasonable attorney&apos;s fees. Vetted special education lawyers can represent you in mediation, due process filings, and state complaints.
+                  If the school district violates statutory timelines or denies appropriate service placements, you have the right to consult a **Special Education Attorney**. In {stateName}, if you prevail in a due process hearing, the school district is legally required to reimburse your reasonable attorney&apos;s fees. Source-backed special education lawyers or advocates may represent you in mediation, due process filings, and state complaints.
                 </p>
               </div>
             </div>
@@ -1574,10 +1566,10 @@ export default async function BenefitsCatchAll({ params }: Props) {
           <div className="glass-panel" style={{ background: 'rgba(var(--primary-rgb), 0.02)', marginBottom: '4rem' }}>
             <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', marginBottom: '1.25rem' }}>
               <Award color="var(--primary-color)" size={24} />
-              <h2 style={{ fontSize: '1.4rem', margin: 0 }}>Vetted IEP Advocates serving {countyFormatted} County</h2>
+              <h2 style={{ fontSize: '1.4rem', margin: 0 }}>Local IEP Advocates serving {countyFormatted} County</h2>
             </div>
             <p style={{ fontSize: '0.92rem', color: 'var(--text-light)', marginBottom: '1.5rem' }}>
-              Special education advisors and legal advocates serving families in {countyFormatted} County. Advocates help caregivers request assessments, attend IEP meetings, and review placements.
+              Special education advisors and legal advocates serving families in {countyFormatted} County. Advocate listings below are limited to public records that pass the shared truth eligibility checks.
             </p>
             
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
@@ -1616,62 +1608,16 @@ export default async function BenefitsCatchAll({ params }: Props) {
                 })();
 
                 return (
-                  <div 
-                    key={adv.id} 
-                    style={{ 
-                      background: 'white', 
-                      padding: '1.25rem', 
-                      borderRadius: '16px', 
-                      border: '1px solid rgba(0,0,0,0.04)',
-                      boxShadow: '0 2px 12px rgba(0,0,0,0.01)',
-                      display: 'flex',
-                      flexDirection: 'column',
-                      justifyContent: 'space-between'
-                    }}
-                  >
-                    <div>
-                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '1rem' }}>
-                        <strong style={{ display: 'block', fontSize: '1.05rem', color: 'var(--text-main)', marginBottom: '0.2rem' }}>
-                          {adv.name}
-                        </strong>
-                        <ContributionModal suggestionType="advocate" targetId={adv.id} targetName={adv.name} buttonLabel="Update" />
-                      </div>
-                      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.35rem', alignItems: 'center', marginBottom: '0.5rem' }}>
-                        <span style={{ fontSize: '0.8rem', color: 'var(--primary-color)', fontWeight: 600 }}>
-                          {adv.credentials}
-                        </span>
-                        {isSpecialist && (
-                          <span style={{ 
-                            background: 'rgba(16, 185, 129, 0.08)', 
-                            color: '#10b981', 
-                            fontSize: '0.72rem', 
-                            fontWeight: 700, 
-                            padding: '0.1rem 0.4rem', 
-                            borderRadius: '4px', 
-                            border: '1px solid rgba(16, 185, 129, 0.15)'
-                          }}>
-                            ✓ {diagnosisFormatted} Specialist
-                          </span>
-                        )}
-                      </div>
-                      <div style={{ fontSize: '0.82rem', color: 'var(--text-light)', display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
-                        <span><strong>Experience:</strong> {adv.experience_years} years</span>
-                        <span><strong>Rate:</strong> {adv.price_rate}</span>
-                        <span><strong>Languages:</strong> {adv.languages_spoken}</span>
-                      </div>
-                    </div>
-                    
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', fontSize: '0.85rem', borderTop: '1px solid rgba(0,0,0,0.04)', paddingTop: '0.75rem', marginTop: '0.75rem' }}>
-                      <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
-                        <Phone size={12} style={{ flexShrink: 0 }} /> 
-                        <a href={`tel:${adv.phone}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{adv.phone}</a>
-                      </span>
-                      <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
-                        <Mail size={12} style={{ flexShrink: 0 }} /> 
-                        <a href={`mailto:${adv.email}`} style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>{adv.email}</a>
-                      </span>
-                    </div>
-                  </div>
+                  <DirectoryFoundationPanel
+                    key={adv.id}
+                    entityType="advocate"
+                    heading={isSpecialist ? `${diagnosisFormatted} specialist` : 'Special education advocate'}
+                    record={adv}
+                    subtitle={adv.specialties || null}
+                    pageType="county_diagnosis"
+                    stateId={stateData.id}
+                    countyId={countyId}
+                  />
                 );
               })}
             </div>

@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-06-18T01:35:59.361Z",
+  "mode": "apply",
+  "stateFilter": "idaho",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 3,
+    "appliedStates": 2,
+    "filesChanged": 1,
+    "skippedByReason": {
+      "skipped_followup": 1
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "idaho",
+      "sourceName": "Idaho HCBS Waivers Page",
+      "status": "applied",
+      "targetUrl": "https://healthandwelfare.idaho.gov/hcbs"
+    },
+    {
+      "stateId": "idaho",
+      "sourceName": "Idaho Developmental Services Directory",
+      "status": "applied",
+      "targetUrl": "https://healthandwelfare.idaho.gov/developmental-disabilities"
+    },
+    {
+      "stateId": "idaho",
+      "sourceName": "Idaho Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

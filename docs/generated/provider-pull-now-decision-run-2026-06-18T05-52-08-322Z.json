@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-06-18T05:52:08.325Z",
+  "mode": "apply",
+  "stateFilter": "michigan",
+  "inputPath": "data/provider-pull-now-decisions.json",
+  "summary": {
+    "inputRows": 4,
+    "resolvedRows": 0,
+    "deferredRows": 4,
+    "filesChanged": 2,
+    "skippedByReason": {},
+    "byDecisionMode": {
+      "needs_manual_research": 4
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "michigan",
+      "sourceUrl": "https://www.mottchildren.org/",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "michigan",
+      "sourceUrl": "https://www.childrensdmc.org/",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "michigan",
+      "sourceUrl": "https://www.spectrumhealth.org/locations/spectrum-health-hospitals-helen-devos-childrens-hospital",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    },
+    {
+      "stateId": "michigan",
+      "sourceUrl": "https://www.uofmhealth.org/our-care/specialties-services/autism-spectrum-disorders-appointments",
+      "status": "applied_deferred",
+      "resolvedSourceUrl": ""
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-06-18T19:26:05.092Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "south-carolina",
+  "sourceWorkfilePath": "data/provider-authoring-state-workfiles/provider-authoring-state-workfile-south-carolina.json",
+  "summary": {
+    "neededConcreteTargets": 3,
+    "candidateSlotCount": 3,
+    "readyCandidateCount": 3,
+    "unresolvedCandidateCount": 0,
+    "completionPercent": 100
+  },
+  "nextWork": []
+}

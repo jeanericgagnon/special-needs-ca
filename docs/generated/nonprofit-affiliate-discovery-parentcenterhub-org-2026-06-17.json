@@ -1,0 +1,478 @@
+{
+  "generatedAt": "2026-06-17",
+  "domain": "parentcenterhub.org",
+  "seedUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=44",
+  "dbAffiliateCount": 50,
+  "discoveredLinkCount": 2,
+  "mergedAffiliateCount": 52,
+  "affiliates": [
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=44",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 595,
+      "nameCount": 5,
+      "countyCount": 254
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=33",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 498,
+      "nameCount": 9,
+      "countyCount": 62
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=5",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 468,
+      "nameCount": 11,
+      "countyCount": 58
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=43",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 190,
+      "nameCount": 2,
+      "countyCount": 95
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=11",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 159,
+      "nameCount": 1,
+      "countyCount": 159
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=37",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 154,
+      "nameCount": 2,
+      "countyCount": 77
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=50",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 144,
+      "nameCount": 2,
+      "countyCount": 72
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=19",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 128,
+      "nameCount": 2,
+      "countyCount": 64
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=18",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 120,
+      "nameCount": 1,
+      "countyCount": 120
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=26",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 115,
+      "nameCount": 1,
+      "countyCount": 115
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=34",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 108,
+      "nameCount": 3,
+      "countyCount": 100
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=17",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 105,
+      "nameCount": 1,
+      "countyCount": 105
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=14",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 101,
+      "nameCount": 1,
+      "countyCount": 101
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=16",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 99,
+      "nameCount": 1,
+      "countyCount": 99
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=47",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 99,
+      "nameCount": 2,
+      "countyCount": 95
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=28",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 93,
+      "nameCount": 1,
+      "countyCount": 93
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=15",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 92,
+      "nameCount": 1,
+      "countyCount": 92
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=36",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 88,
+      "nameCount": 1,
+      "countyCount": 88
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=24",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 87,
+      "nameCount": 1,
+      "countyCount": 87
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=23",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 83,
+      "nameCount": 1,
+      "countyCount": 83
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=25",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 82,
+      "nameCount": 1,
+      "countyCount": 82
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=4",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 75,
+      "nameCount": 1,
+      "countyCount": 75
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=38",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 72,
+      "nameCount": 2,
+      "countyCount": 36
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=39",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 69,
+      "nameCount": 3,
+      "countyCount": 67
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=6",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 69,
+      "nameCount": 2,
+      "countyCount": 64
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=10",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 68,
+      "nameCount": 4,
+      "countyCount": 67
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=1",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 67,
+      "nameCount": 1,
+      "countyCount": 67
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=32",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 66,
+      "nameCount": 2,
+      "countyCount": 33
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=42",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 66,
+      "nameCount": 1,
+      "countyCount": 66
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=27",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 56,
+      "nameCount": 1,
+      "countyCount": 56
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=49",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 55,
+      "nameCount": 1,
+      "countyCount": 55
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=35",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 53,
+      "nameCount": 1,
+      "countyCount": 53
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=41",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 49,
+      "nameCount": 2,
+      "countyCount": 46
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=13",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 44,
+      "nameCount": 1,
+      "countyCount": 44
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=2",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 40,
+      "nameCount": 2,
+      "countyCount": 20
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=3",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 30,
+      "nameCount": 2,
+      "countyCount": 15
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=45",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 29,
+      "nameCount": 1,
+      "countyCount": 29
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=21",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 24,
+      "nameCount": 1,
+      "countyCount": 24
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=51",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 23,
+      "nameCount": 1,
+      "countyCount": 23
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=31",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 22,
+      "nameCount": 2,
+      "countyCount": 21
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=29",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 17,
+      "nameCount": 1,
+      "countyCount": 17
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=20",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 16,
+      "nameCount": 1,
+      "countyCount": 16
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=7",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 16,
+      "nameCount": 2,
+      "countyCount": 8
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=22",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 14,
+      "nameCount": 1,
+      "countyCount": 14
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=46",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 14,
+      "nameCount": 1,
+      "countyCount": 14
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=12",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 10,
+      "nameCount": 2,
+      "countyCount": 5
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=30",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 10,
+      "nameCount": 1,
+      "countyCount": 10
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=40",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 5,
+      "nameCount": 1,
+      "countyCount": 5
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=8",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 3,
+      "nameCount": 1,
+      "countyCount": 3
+    },
+    {
+      "affiliateUrl": "https://www.parentcenterhub.org/index.php?map_id=0&usterritorieshtml5map_get_state_info=48",
+      "discoverySources": [
+        "db_state_listing_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://oklahomaparentscenter.org/trainings",
+      "discoverySources": [
+        "state_listing_outbound_link"
+      ],
+      "rowCount": 0,
+      "nameCount": 0,
+      "countyCount": 0
+    },
+    {
+      "affiliateUrl": "https://raisecenter.org/rsa-parent-centers",
+      "discoverySources": [
+        "state_listing_outbound_link"
+      ],
+      "rowCount": 0,
+      "nameCount": 0,
+      "countyCount": 0
+    }
+  ]
+}

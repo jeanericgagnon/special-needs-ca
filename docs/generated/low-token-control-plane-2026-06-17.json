@@ -1,0 +1,167 @@
+{
+  "auditId": "low_token_control_plane",
+  "generatedAt": "2026-06-17T22:39:02.103Z",
+  "generatedDate": "2026-06-17",
+  "regression": {
+    "ok": true,
+    "exitCode": 0,
+    "stdout": "low token workflow regression tests passed",
+    "stderr": ""
+  },
+  "lanes": {
+    "officialFollowup": {
+      "status": "idle_or_cleared",
+      "queuePath": "docs/generated/official-domain-followup-queue-2026-06-17.json",
+      "pendingQueueRows": 0,
+      "pendingStates": [],
+      "activeDecisionFilePath": "data/official-domain-followup-decisions.json",
+      "activeDecisionRows": 1,
+      "action": {
+        "blocker": "no_live_official_followup_rows",
+        "nextAction": "No official-domain follow-up review is pending.",
+        "recommendedCommands": []
+      }
+    },
+    "providerPlaceholder": {
+      "status": "idle_or_cleared",
+      "queuePath": "docs/generated/provider-placeholder-replacement-queue-2026-06-17.json",
+      "pendingQueueRows": 0,
+      "authoringBriefsPath": "docs/generated/provider-placeholder-authoring-briefs-2026-06-17.json",
+      "authoringBriefRows": 0,
+      "decisionTemplatePath": "docs/generated/provider-placeholder-replacement-decision-template-2026-06-17.json",
+      "decisionTemplateRows": 0,
+      "activeDecisionFilePath": "data/provider-placeholder-replacement-decisions.json",
+      "activeDecisionRows": 0,
+      "action": {
+        "blocker": "none",
+        "nextAction": "Provider placeholder lane is clear; no action needed.",
+        "recommendedCommands": []
+      }
+    },
+    "formsFallback": {
+      "status": "needs_manual_review_resolution",
+      "queuePath": "docs/generated/forms-fallback-scrape-queue-2026-06-17.json",
+      "queueRows": 111,
+      "excludedFederalOnlyStates": [
+        "nebraska",
+        "new-hampshire",
+        "new-mexico"
+      ],
+      "latestRepairRunPath": "docs/generated/forms-library-repair-run-2026-06-17T20-19-29-738Z.json",
+      "latestFallbackRunPath": "data/source-acquisition-runs/2026-06-17T22-29-30-688Z/forms-fallback-summary.json",
+      "completionLedgerPath": "data/source-acquisition-state/forms-fallback-completion-ledger.json",
+      "manualReviewQueuePath": "docs/generated/forms-fallback-manual-review-queue-2026-06-17.json",
+      "manualReviewQueueSummary": {
+        "totalRows": 111,
+        "byState": {
+          "alaska": 3,
+          "arizona": 3,
+          "arkansas": 3,
+          "colorado": 3,
+          "connecticut": 3,
+          "delaware": 3,
+          "hawaii": 3,
+          "idaho": 3,
+          "indiana": 3,
+          "iowa": 3,
+          "kansas": 3,
+          "kentucky": 3,
+          "louisiana": 3,
+          "maine": 3,
+          "maryland": 3,
+          "massachusetts": 3,
+          "michigan": 3,
+          "minnesota": 3,
+          "mississippi": 3,
+          "missouri": 3,
+          "montana": 3,
+          "nevada": 3,
+          "north-carolina": 3,
+          "north-dakota": 3,
+          "oklahoma": 3,
+          "oregon": 3,
+          "rhode-island": 3,
+          "south-carolina": 3,
+          "south-dakota": 3,
+          "tennessee": 3,
+          "utah": 3,
+          "vermont": 3,
+          "virginia": 3,
+          "washington": 3,
+          "west-virginia": 3,
+          "wisconsin": 3,
+          "wyoming": 3
+        },
+        "byCandidateType": {
+          "application_or_eligibility_guide": 74,
+          "general_form_related_page": 37
+        },
+        "byFailureReason": {
+          "url_budget_exhausted_with_fetch_errors": 111
+        }
+      },
+      "manualReviewDecisionTemplatePath": "docs/generated/forms-fallback-manual-review-decision-template-2026-06-17.json",
+      "manualReviewDecisionTemplateRows": 111,
+      "activeManualReviewDecisionFilePath": "data/forms-fallback-manual-review-decisions.json",
+      "activeManualReviewDecisionRows": 0,
+      "manualReviewResolutionLedgerPath": "data/source-acquisition-state/forms-fallback-manual-review-ledger.json",
+      "manualReviewResolutionLedgerRows": 0,
+      "manualReviewAudit": {
+        "ok": true,
+        "exitCode": 0,
+        "stdout": "{\n  \"generatedAt\": \"2026-06-17T22:39:02.055Z\",\n  \"summary\": {\n    \"totalRows\": 111,\n    \"byState\": {\n      \"alaska\": 3,\n      \"arizona\": 3,\n      \"arkansas\": 3,\n      \"colorado\": 3,\n      \"connecticut\": 3,\n      \"delaware\": 3,\n      \"hawaii\": 3,\n      \"idaho\": 3,\n      \"indiana\": 3,\n      \"iowa\": 3,\n      \"kansas\": 3,\n      \"kentucky\": 3,\n      \"louisiana\": 3,\n      \"maine\": 3,\n      \"maryland\": 3,\n      \"massachusetts\": 3,\n      \"michigan\": 3,\n      \"minnesota\": 3,\n      \"mississippi\": 3,\n      \"missouri\": 3,\n      \"montana\": 3,\n      \"nevada\": 3,\n      \"north-carolina\": 3,\n      \"north-dakota\": 3,\n      \"oklahoma\": 3,\n      \"oregon\": 3,\n      \"rhode-island\": 3,\n      \"south-carolina\": 3,\n      \"south-dakota\": 3,\n      \"tennessee\": 3,\n      \"utah\": 3,\n      \"vermont\": 3,\n      \"virginia\": 3,\n      \"washington\": 3,\n      \"west-virginia\": 3,\n      \"wisconsin\": 3,\n      \"wyoming\": 3\n    },\n    \"byCandidateType\": {\n      \"application_or_eligibility_guide\": 74,\n      \"general_form_related_page\": 37\n    },\n    \"byFailureReason\": {\n      \"url_budget_exhausted_with_fetch_errors\": 111\n    }\n  },\n  \"artifacts\": {\n    \"json\": \"/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/forms-fallback-manual-review-queue-2026-06-17.json\",\n    \"md\": \"/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/forms-fallback-manual-review-queue-2026-06-17.md\"\n  }\n}",
+        "stderr": ""
+      },
+      "stateLedgerPath": "docs/generated/forms-fallback-state-ledger-2026-06-17.json",
+      "stateLedgerSummary": {
+        "totalStates": 37,
+        "byStatus": {
+          "completed_manual_review": 37
+        },
+        "nextState": ""
+      },
+      "stateLedgerAudit": {
+        "ok": true,
+        "exitCode": 0,
+        "stdout": "{\n  \"generatedAt\": \"2026-06-17T22:39:02.098Z\",\n  \"summary\": {\n    \"totalStates\": 37,\n    \"byStatus\": {\n      \"completed_manual_review\": 37\n    },\n    \"nextState\": \"\"\n  },\n  \"artifacts\": {\n    \"json\": \"/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/forms-fallback-state-ledger-2026-06-17.json\",\n    \"md\": \"/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/forms-fallback-state-ledger-2026-06-17.md\"\n  }\n}",
+        "stderr": ""
+      },
+      "latestFallbackRunSummary": {
+        "runId": "2026-06-17T22-29-30-688Z",
+        "mode": "live",
+        "selectedCount": 3,
+        "warningCount": 0,
+        "filters": {
+          "state": "wyoming",
+          "candidateType": null,
+          "limitRequested": 5,
+          "limitApplied": 3
+        },
+        "warnings": []
+      },
+      "exactRepairRows": 0,
+      "nonRepairableRows": 40,
+      "nonRepairableByReason": {
+        "state_specific_fallback_only": 37,
+        "federal_only_fallback": 3
+      },
+      "action": {
+        "blocker": "forms_fallback_manual_review_resolution_pending",
+        "nextAction": "The bounded scrape lane is exhausted. Resolve queued forms-fallback manual-review rows through the decision template and apply workflow instead of re-scraping.",
+        "federalOnlyStates": [
+          "nebraska",
+          "new-hampshire",
+          "new-mexico"
+        ],
+        "manualReviewQueueRows": 111,
+        "manualReviewDecisionRows": 0,
+        "manualReviewResolvedRows": 0,
+        "pendingManualReviewRows": 111,
+        "recommendedCommands": [
+          "npm run audit:forms-fallback-manual-review-decision-template",
+          "npm run fix:forms-fallback-manual-review-decisions -- --input=data/forms-fallback-manual-review-decisions.json --state=<state>"
+        ]
+      }
+    }
+  }
+}

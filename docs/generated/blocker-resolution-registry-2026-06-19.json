@@ -1,0 +1,911 @@
+{
+  "generatedAt": "2026-06-19",
+  "artifactPurpose": "List every actionable unresolved launch blocker row/state/topic after explicit blocker resolution classification.",
+  "summary": {
+    "totalRows": 89,
+    "byFamily": {
+      "disability_to_program_matching": 1,
+      "knowledge_content": 2,
+      "medicaid_hhs_offices": 40,
+      "providers_care": 46
+    },
+    "byBlockerClass": {
+      "author_first": 46,
+      "defer_blocked_source": 2,
+      "promotion_only": 1,
+      "repair_first": 40
+    }
+  },
+  "rows": [
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "alabama",
+      "topic": "",
+      "currentEvidence": "Refresh Alabama provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "alaska",
+      "topic": "",
+      "currentEvidence": "Refresh Alaska provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "arizona",
+      "topic": "",
+      "currentEvidence": "Refresh Arizona provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "arkansas",
+      "topic": "",
+      "currentEvidence": "Refresh Arkansas provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "california",
+      "topic": "",
+      "currentEvidence": "Refresh California provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "colorado",
+      "topic": "",
+      "currentEvidence": "Refresh Colorado provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "connecticut",
+      "topic": "",
+      "currentEvidence": "Refresh Connecticut provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "delaware",
+      "topic": "",
+      "currentEvidence": "Refresh Delaware provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "georgia",
+      "topic": "",
+      "currentEvidence": "Refresh Georgia provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "hawaii",
+      "topic": "",
+      "currentEvidence": "Refresh Hawaii provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "idaho",
+      "topic": "",
+      "currentEvidence": "Refresh Idaho provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "indiana",
+      "topic": "",
+      "currentEvidence": "Refresh Indiana provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "iowa",
+      "topic": "",
+      "currentEvidence": "Refresh Iowa provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "kansas",
+      "topic": "",
+      "currentEvidence": "Refresh Kansas provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "kentucky",
+      "topic": "",
+      "currentEvidence": "Refresh Kentucky provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "louisiana",
+      "topic": "",
+      "currentEvidence": "Refresh Louisiana provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "maine",
+      "topic": "",
+      "currentEvidence": "Refresh Maine provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "maryland",
+      "topic": "",
+      "currentEvidence": "Refresh Maryland provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "massachusetts",
+      "topic": "",
+      "currentEvidence": "Add at least 1 more concrete first-party provider targets for Massachusetts and then regenerate provider source-pack artifacts.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "michigan",
+      "topic": "",
+      "currentEvidence": "Refresh Michigan provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "minnesota",
+      "topic": "",
+      "currentEvidence": "Refresh Minnesota provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "mississippi",
+      "topic": "",
+      "currentEvidence": "Refresh Mississippi provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "missouri",
+      "topic": "",
+      "currentEvidence": "Refresh Missouri provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "montana",
+      "topic": "",
+      "currentEvidence": "Refresh Montana provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "nebraska",
+      "topic": "",
+      "currentEvidence": "Refresh Nebraska provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "nevada",
+      "topic": "",
+      "currentEvidence": "Refresh Nevada provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "new-hampshire",
+      "topic": "",
+      "currentEvidence": "Refresh New Hampshire provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "new-jersey",
+      "topic": "",
+      "currentEvidence": "Refresh New Jersey provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "new-mexico",
+      "topic": "",
+      "currentEvidence": "Refresh New Mexico provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "new-york",
+      "topic": "",
+      "currentEvidence": "Refresh New York provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "north-carolina",
+      "topic": "",
+      "currentEvidence": "Refresh North Carolina provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "north-dakota",
+      "topic": "",
+      "currentEvidence": "Refresh North Dakota provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "ohio",
+      "topic": "",
+      "currentEvidence": "Refresh Ohio provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "oklahoma",
+      "topic": "",
+      "currentEvidence": "Refresh Oklahoma provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "oregon",
+      "topic": "",
+      "currentEvidence": "Refresh Oregon provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "rhode-island",
+      "topic": "",
+      "currentEvidence": "Refresh Rhode Island provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "south-carolina",
+      "topic": "",
+      "currentEvidence": "Refresh South Carolina provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "south-dakota",
+      "topic": "",
+      "currentEvidence": "Refresh South Dakota provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "tennessee",
+      "topic": "",
+      "currentEvidence": "Refresh Tennessee provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "utah",
+      "topic": "",
+      "currentEvidence": "Refresh Utah provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "vermont",
+      "topic": "",
+      "currentEvidence": "Refresh Vermont provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "virginia",
+      "topic": "",
+      "currentEvidence": "Refresh Virginia provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "washington",
+      "topic": "",
+      "currentEvidence": "Refresh Washington provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "west-virginia",
+      "topic": "",
+      "currentEvidence": "Refresh West Virginia provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "wisconsin",
+      "topic": "",
+      "currentEvidence": "Refresh Wisconsin provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "providers_care",
+      "blockerClass": "author_first",
+      "stateId": "wyoming",
+      "topic": "",
+      "currentEvidence": "Refresh Wyoming provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+      "nextArtifact": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+      "nextCommand": "npm run audit:provider-authoring-state-packets",
+      "terminalResolutionState": "author_first"
+    },
+    {
+      "family": "knowledge_content",
+      "blockerClass": "defer_blocked_source",
+      "stateId": "",
+      "topic": "school_rights",
+      "currentEvidence": "10 tracked targets currently mapped to this launch topic bucket.",
+      "nextArtifact": "docs/generated/knowledge-content-status-queue-2026-06-19.json",
+      "nextCommand": "npm run audit:knowledge-content-status-queue",
+      "terminalResolutionState": "defer_blocked_source"
+    },
+    {
+      "family": "knowledge_content",
+      "blockerClass": "defer_blocked_source",
+      "stateId": "",
+      "topic": "transition",
+      "currentEvidence": "4 tracked targets currently mapped to this launch topic bucket.",
+      "nextArtifact": "docs/generated/knowledge-content-status-queue-2026-06-19.json",
+      "nextCommand": "npm run audit:knowledge-content-status-queue",
+      "terminalResolutionState": "defer_blocked_source"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "alaska",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "arizona",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "arkansas",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "colorado",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "connecticut",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "delaware",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "hawaii",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "idaho",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "indiana",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "iowa",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "kansas",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "kentucky",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "louisiana",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "maine",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "maryland",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "massachusetts",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "michigan",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "minnesota",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "mississippi",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "missouri",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "montana",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "nebraska",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "nevada",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "new-hampshire",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "new-jersey",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "new-mexico",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "north-dakota",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "oklahoma",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "oregon",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "rhode-island",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "south-carolina",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "south-dakota",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "tennessee",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "utah",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "vermont",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "virginia",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "washington",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "west-virginia",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "wisconsin",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "blockerClass": "repair_first",
+      "stateId": "wyoming",
+      "topic": "",
+      "currentEvidence": "Official state domain repair pack still contains a medicaid_county_directory replacement row for this state.",
+      "nextArtifact": "data/source_packs/official_state_domain_repairs.json",
+      "nextCommand": "npm run audit:source-acquisition-completion-plan",
+      "terminalResolutionState": "repair_first"
+    },
+    {
+      "family": "disability_to_program_matching",
+      "blockerClass": "promotion_only",
+      "stateId": "",
+      "topic": "matching_dependency_verification",
+      "currentEvidence": "Reference tables are present; only post-closure dependency verification remains.",
+      "nextArtifact": "docs/generated/launch-critical-data-acquisition-plan-2026-06-19.json",
+      "nextCommand": "npm run audit:launch-critical-data-plan",
+      "terminalResolutionState": "promotion_only"
+    }
+  ]
+}

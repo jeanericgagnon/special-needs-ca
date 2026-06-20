@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-06-18T02:01:20.625Z",
+  "mode": "apply",
+  "stateFilter": "oklahoma",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 4,
+    "appliedStates": 2,
+    "filesChanged": 1,
+    "skippedByReason": {
+      "skipped_followup": 2
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "oklahoma",
+      "sourceName": "Oklahoma Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "oklahoma",
+      "sourceName": "Oklahoma HCBS Waivers Page",
+      "status": "applied",
+      "targetUrl": "https://oklahoma.gov/okdhs/services/dds/hcbs"
+    },
+    {
+      "stateId": "oklahoma",
+      "sourceName": "Oklahoma Developmental Services Directory",
+      "status": "applied",
+      "targetUrl": "https://oklahoma.gov/okdhs/services/dds"
+    },
+    {
+      "stateId": "oklahoma",
+      "sourceName": "Oklahoma Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

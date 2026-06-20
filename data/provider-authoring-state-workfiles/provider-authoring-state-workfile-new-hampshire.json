@@ -1,0 +1,166 @@
+{
+  "generatedAt": "2026-06-18T19:12:18.799Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "new-hampshire",
+  "stateName": "New Hampshire",
+  "sourcePacketPath": "docs/generated/provider-authoring-state-packets/provider-authoring-state-packet-new-hampshire-2026-06-18.json",
+  "sourceTargetsPath": "data/source_targets/new-hampshire.json",
+  "instructions": {
+    "summary": "Fill only the missing first-party provider targets needed for this state. Do not broaden beyond provider_directory authoring.",
+    "completionRule": "A candidate row is ready only when sourceName, sourceUrl, domain, and reviewedBy are filled."
+  },
+  "summary": {
+    "neededConcreteTargets": 3,
+    "currentConcreteProviderTargetCount": 0,
+    "existingProviderTargetCount": 1,
+    "candidateSlotCount": 3,
+    "readyCandidateCount": 3,
+    "unresolvedCandidateCount": 0
+  },
+  "existingProviderTargets": [
+    {
+      "sourceName": "New Hampshire Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for New Hampshire."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "New Hampshire County Metadata",
+      "sourceUrl": "https://www.new-hampshire.gov",
+      "domain": "new-hampshire.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "New Hampshire Medicaid Portal",
+      "sourceUrl": "https://dhhs.new-hampshire.gov",
+      "domain": "dhhs.new-hampshire.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "New Hampshire Bureau of Developmental Services",
+      "sourceUrl": "https://www.dhhs.nh.gov/bds",
+      "domain": "dhhs.nh.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "New Hampshire HCBS Waivers",
+      "sourceUrl": "https://www.dhhs.nh.gov/bds/hcbs",
+      "domain": "dhhs.nh.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "New Hampshire Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.new-hampshire.gov/earlyintervention",
+      "domain": "dhhs.new-hampshire.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "New Hampshire Department of Education Special Ed",
+      "sourceUrl": "https://education.new-hampshire.gov",
+      "domain": "education.new-hampshire.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "New Hampshire Regional Special Education Support",
+      "sourceUrl": "https://education.new-hampshire.gov/regional",
+      "domain": "education.new-hampshire.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "New Hampshire Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of New Hampshire",
+      "sourceUrl": "https://www.thearcnew-hampshire.org",
+      "domain": "thearcnew-hampshire.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "New Hampshire Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.new-hampshire.gov/forms",
+      "domain": "dhhs.new-hampshire.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "New Hampshire Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.new-hampshire.gov/rehab",
+      "domain": "dhhs.new-hampshire.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "New Hampshire Secretary of State Business Registry",
+      "sourceUrl": "https://www.new-hampshire.gov/business",
+      "domain": "new-hampshire.gov"
+    }
+  ],
+  "candidateProviderTargets": [
+    {
+      "slotNumber": 1,
+      "stateId": "new-hampshire",
+      "stateCode": "NH",
+      "sourceName": "The Children's Hospital at Dartmouth Hitchcock Medical Center",
+      "sourceUrl": "https://childrens.dartmouth-health.org/",
+      "domain": "childrens.dartmouth-health.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Children's hospital",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "First-party CHaD pediatric hospital target for statewide specialty and hospital care in New Hampshire.",
+      "reviewedBy": "codex"
+    },
+    {
+      "slotNumber": 2,
+      "stateId": "new-hampshire",
+      "stateCode": "NH",
+      "sourceName": "Elliot Hospital",
+      "sourceUrl": "https://www.elliothospital.org/",
+      "domain": "elliothospital.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Regional hospital",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official Elliot Hospital source with pediatric emergency and pediatric services for southern New Hampshire.",
+      "reviewedBy": "codex"
+    },
+    {
+      "slotNumber": 3,
+      "stateId": "new-hampshire",
+      "stateCode": "NH",
+      "sourceName": "Catholic Medical Center",
+      "sourceUrl": "https://www.catholicmedicalcenter.org/",
+      "domain": "catholicmedicalcenter.org",
+      "category": "M. Hospitals / university clinics",
+      "specificSubcategory": "Regional medical center",
+      "organizationType": "hospital",
+      "expectedExtractionFields": "name, phone, address",
+      "crawlMethod": "static_fetch",
+      "robotsStatus": "allowed",
+      "termsRisk": "low",
+      "priority": 2,
+      "notes": "Official Catholic Medical Center source for hospital-based pediatric and maternity-adjacent care in southern New Hampshire.",
+      "reviewedBy": "codex"
+    }
+  ]
+}

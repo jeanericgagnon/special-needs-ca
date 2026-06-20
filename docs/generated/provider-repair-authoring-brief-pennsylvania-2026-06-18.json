@@ -1,0 +1,37 @@
+{
+  "briefId": "provider_repair_authoring_brief",
+  "generatedAt": "2026-06-18T06:14:32.216Z",
+  "generatedDate": "2026-06-18",
+  "sourcePacketPath": "docs/generated/provider-repair-batch-packet-author-targets-first-pennsylvania-2026-06-18.json",
+  "stateId": "pennsylvania",
+  "purpose": "Deterministic authoring brief for unresolved provider repair rows that still need same-org first-party replacement URLs.",
+  "summary": {
+    "unresolvedRows": 1,
+    "rowsWithSavedEvidence": 1,
+    "rowsWithCandidateHints": 1
+  },
+  "rows": [
+    {
+      "stateId": "pennsylvania",
+      "stateName": "Pennsylvania",
+      "actionClass": "replace_exact_url",
+      "followupReason": "stale_or_invalid_404",
+      "sourceUrl": "https://www.chp.edu/our-services/developmental-pediatrics",
+      "hostname": "www.chp.edu",
+      "repeatCount": 3,
+      "savedEvidencePath": "data/source-acquisition-runs/2026-06-17T16-58-43-900Z/pages/02659-pennsylvania-providers-care-upmc-children-s-hospital-of-pittsburgh-child-development-unit.html",
+      "savedEvidenceStatus": "page_not_found",
+      "candidateHints": [
+        "https://www.chp.edu/international-services",
+        "https://www.chp.edu/for-parents/resources/welcome-center",
+        "https://www.chp.edu/locations/directions",
+        "https://www.chp.edu/for-parents/resources/contact-a-patient",
+        "https://www.chp.edu/for-parents/support-services/family-support-services",
+        "https://www.chp.edu/for-parents/before-your-childs-visit/during-visit/getting-around",
+        "https://www.chp.edu/our-services/infectious-diseases/covid-19",
+        "https://www.chp.edu/for-parents/support-services/patient-program-praise"
+      ],
+      "nextAction": "Author a current same-org first-party replacement URL before the next provider fetch cycle."
+    }
+  ]
+}

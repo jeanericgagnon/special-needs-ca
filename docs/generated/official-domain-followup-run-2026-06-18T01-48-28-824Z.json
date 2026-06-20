@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-06-18T01:48:28.826Z",
+  "mode": "apply",
+  "stateFilter": "minnesota",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 4,
+    "appliedStates": 2,
+    "filesChanged": 1,
+    "skippedByReason": {
+      "skipped_followup": 2
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "minnesota",
+      "sourceName": "Minnesota Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "minnesota",
+      "sourceName": "Minnesota HCBS Waivers Page",
+      "status": "applied",
+      "targetUrl": "https://mn.gov/dhs/waivers"
+    },
+    {
+      "stateId": "minnesota",
+      "sourceName": "Minnesota Developmental Services Directory",
+      "status": "applied",
+      "targetUrl": "https://mn.gov/dhs"
+    },
+    {
+      "stateId": "minnesota",
+      "sourceName": "Minnesota Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "generatedAt": "2026-06-18T21:41:05.152Z",
+  "generatedDate": "2026-06-18",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-18.json",
+  "stateId": "louisiana",
+  "stateName": "Louisiana",
+  "executionPriority": 1,
+  "sourceTargetsPath": "data/source_targets/louisiana.json",
+  "ledgerStatus": "",
+  "ledgerNote": "",
+  "publicSafeProviders": 2,
+  "totalProviderRows": 2,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 4,
+  "placeholderProviderTargetCount": 0,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 0,
+  "neededLiveProviderRows": 1,
+  "authoringGapClass": "needs_refresh_or_deeper_targets",
+  "nextAction": "Refresh Louisiana provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+  "providerTargets": [
+    {
+      "sourceName": "FMOL Health Children's Hospitals",
+      "sourceUrl": "https://www.fmolhs.org/services/childrens-health/our-childrens-hospitals",
+      "domain": "fmolhs.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital_network",
+      "notes": "Verified first-party Louisiana children's hospitals page covering Baton Rouge, Lafayette, and Monroe pediatric hospital locations."
+    },
+    {
+      "sourceName": "FMOL Health Children's Health Services",
+      "sourceUrl": "https://www.fmolhs.org/services/childrens-health",
+      "domain": "fmolhs.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital_network",
+      "notes": "Verified first-party Louisiana pediatric network page with statewide specialties, provider access, and location links."
+    },
+    {
+      "sourceName": "FMOL Health Children's Hospitals",
+      "sourceUrl": "https://www.fmolhs.org/services/childrens-health/our-childrens-hospitals",
+      "domain": "fmolhs.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital_network",
+      "notes": "Verified first-party Louisiana children's hospitals page covering Baton Rouge, Lafayette, and Monroe pediatric hospital locations."
+    },
+    {
+      "sourceName": "FMOL Health Children's Health Services",
+      "sourceUrl": "https://www.fmolhs.org/services/childrens-health",
+      "domain": "fmolhs.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital_network",
+      "notes": "Verified first-party Louisiana pediatric network page with statewide children's specialties, locations, and contact paths."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Louisiana County Metadata",
+      "sourceUrl": "https://www.louisiana.gov",
+      "domain": "louisiana.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Louisiana Medicaid Portal",
+      "sourceUrl": "https://dhhs.louisiana.gov",
+      "domain": "dhhs.louisiana.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Louisiana Office for Citizens with Developmental Disabilities",
+      "sourceUrl": "https://ldh.la.gov/ocdd",
+      "domain": "ldh.la.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Louisiana HCBS Waivers",
+      "sourceUrl": "https://ldh.la.gov/ocdd/hcbs",
+      "domain": "ldh.la.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Louisiana Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.louisiana.gov/earlyintervention",
+      "domain": "dhhs.louisiana.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Louisiana Department of Education Special Ed",
+      "sourceUrl": "https://education.louisiana.gov",
+      "domain": "education.louisiana.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Louisiana Regional Special Education Support",
+      "sourceUrl": "https://education.louisiana.gov/regional",
+      "domain": "education.louisiana.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Louisiana Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Louisiana",
+      "sourceUrl": "https://www.thearclouisiana.org",
+      "domain": "thearclouisiana.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Louisiana Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.louisiana.gov/forms",
+      "domain": "dhhs.louisiana.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Louisiana Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.louisiana.gov/rehab",
+      "domain": "dhhs.louisiana.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Louisiana Secretary of State Business Registry",
+      "sourceUrl": "https://www.louisiana.gov/business",
+      "domain": "louisiana.gov"
+    }
+  ]
+}

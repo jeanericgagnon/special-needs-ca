@@ -1,0 +1,1612 @@
+{
+  "generatedAt": "2026-06-16",
+  "sources": {
+    "currentTruth": "docs/generated/current-truth-audit-2026-06-16.json",
+    "countyDiagnosisRollout": "docs/generated/county-diagnosis-rollout-2026-06-16.json",
+    "advocateTruthCleanup": "docs/generated/advocate-truth-cleanup-audit-2026-06-16.json"
+  },
+  "summary": {
+    "strictGoldStates": 49,
+    "publicSafeButBlockedStates": 1,
+    "blockedStates": 0,
+    "legacyGoldStates": 50,
+    "registryMismatchStates": 1
+  },
+  "topBlockedStates": [
+    {
+      "id": "california",
+      "name": "California",
+      "code": "CA",
+      "status": "public_safe_but_blocked",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": false,
+      "readiness": 100,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 58,
+        "quarantinedAdvocates": 580,
+        "syntheticAdvocates": 580,
+        "publicSafeAdvocates": 0
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": [
+        {
+          "id": "advocate-truth-gap",
+          "message": "58 counties lose all advocate coverage after truth gating.",
+          "source": "advocate-truth-cleanup"
+        }
+      ]
+    }
+  ],
+  "states": [
+    {
+      "id": "arizona",
+      "name": "Arizona",
+      "code": "AZ",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 100,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 113
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "connecticut",
+      "name": "Connecticut",
+      "code": "CT",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 100,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 160
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "delaware",
+      "name": "Delaware",
+      "code": "DE",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 100,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 13
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "florida",
+      "name": "Florida",
+      "code": "FL",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 100,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 1313
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "hawaii",
+      "name": "Hawaii",
+      "code": "HI",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 100,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 28
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "illinois",
+      "name": "Illinois",
+      "code": "IL",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 100,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 1269
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "maryland",
+      "name": "Maryland",
+      "code": "MD",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 100,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 307
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "massachusetts",
+      "name": "Massachusetts",
+      "code": "MA",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 100,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 314
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "new-hampshire",
+      "name": "New Hampshire",
+      "code": "NH",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 100,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 93
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "new-jersey",
+      "name": "New Jersey",
+      "code": "NJ",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 100,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 545
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "new-york",
+      "name": "New York",
+      "code": "NY",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 100,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 1116
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "ohio",
+      "name": "Ohio",
+      "code": "OH",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 100,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 1061
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "oregon",
+      "name": "Oregon",
+      "code": "OR",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 100,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 146
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "pennsylvania",
+      "name": "Pennsylvania",
+      "code": "PA",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 100,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 973
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "rhode-island",
+      "name": "Rhode Island",
+      "code": "RI",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 100,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 34
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "virginia",
+      "name": "Virginia",
+      "code": "VA",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 100,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 1435
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "washington",
+      "name": "Washington",
+      "code": "WA",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 100,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 343
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "colorado",
+      "name": "Colorado",
+      "code": "CO",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 99.8,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 564
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "texas",
+      "name": "Texas",
+      "code": "TX",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 99.6,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 3551
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "georgia",
+      "name": "Georgia",
+      "code": "GA",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 99.4,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 2184
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "michigan",
+      "name": "Michigan",
+      "code": "MI",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 99.4,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 641
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "south-carolina",
+      "name": "South Carolina",
+      "code": "SC",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 99.4,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 127
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "north-carolina",
+      "name": "North Carolina",
+      "code": "NC",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 99.1,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 864
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "new-mexico",
+      "name": "New Mexico",
+      "code": "NM",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 98.8,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 117
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "louisiana",
+      "name": "Louisiana",
+      "code": "LA",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 98.4,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 96
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "missouri",
+      "name": "Missouri",
+      "code": "MO",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 98.3,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 967
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "tennessee",
+      "name": "Tennessee",
+      "code": "TN",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 98,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 131
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "wisconsin",
+      "name": "Wisconsin",
+      "code": "WI",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 98,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 172
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "indiana",
+      "name": "Indiana",
+      "code": "IN",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 97.9,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 397
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "minnesota",
+      "name": "Minnesota",
+      "code": "MN",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 97.8,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 373
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "idaho",
+      "name": "Idaho",
+      "code": "ID",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 97.7,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 186
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "utah",
+      "name": "Utah",
+      "code": "UT",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 97.6,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 92
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "north-dakota",
+      "name": "North Dakota",
+      "code": "ND",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 97.4,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 64
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "wyoming",
+      "name": "Wyoming",
+      "code": "WY",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 97.4,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 27
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "kentucky",
+      "name": "Kentucky",
+      "code": "KY",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 97.3,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 261
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "kansas",
+      "name": "Kansas",
+      "code": "KS",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 97.2,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 432
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "iowa",
+      "name": "Iowa",
+      "code": "IA",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 97.1,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 210
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "montana",
+      "name": "Montana",
+      "code": "MT",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 97,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 60
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "nebraska",
+      "name": "Nebraska",
+      "code": "NE",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 97,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 100
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "maine",
+      "name": "Maine",
+      "code": "ME",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 96.7,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 22
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 43.8,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "vermont",
+      "name": "Vermont",
+      "code": "VT",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 95.8,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 18
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 28.6,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "nevada",
+      "name": "Nevada",
+      "code": "NV",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 95.2,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 27
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 17.6,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "oklahoma",
+      "name": "Oklahoma",
+      "code": "OK",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 93,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 32
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 14.3,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "west-virginia",
+      "name": "West Virginia",
+      "code": "WV",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 92.8,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 14
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 18.2,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "alabama",
+      "name": "Alabama",
+      "code": "AL",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 92.6,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 33
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 1.5,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "alaska",
+      "name": "Alaska",
+      "code": "AK",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 92.5,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 8
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 5,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "arkansas",
+      "name": "Arkansas",
+      "code": "AR",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 92.4,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 19
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 12,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "mississippi",
+      "name": "Mississippi",
+      "code": "MS",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 91.7,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 8
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 9.8,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "south-dakota",
+      "name": "South Dakota",
+      "code": "SD",
+      "status": "gold",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": true,
+      "readiness": 91,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 2
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 1.5,
+        "waitlists": 100
+      },
+      "blockers": []
+    },
+    {
+      "id": "california",
+      "name": "California",
+      "code": "CA",
+      "status": "public_safe_but_blocked",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": true,
+      "strictGoldEligible": false,
+      "readiness": 100,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 58,
+        "quarantinedAdvocates": 580,
+        "syntheticAdvocates": 580,
+        "publicSafeAdvocates": 0
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 100,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 100
+      },
+      "blockers": [
+        {
+          "id": "advocate-truth-gap",
+          "message": "58 counties lose all advocate coverage after truth gating.",
+          "source": "advocate-truth-cleanup"
+        }
+      ]
+    }
+  ]
+}

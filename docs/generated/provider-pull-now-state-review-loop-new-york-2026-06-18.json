@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-06-18T05:54:48.476Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "new-york",
+  "artifacts": {
+    "statePacketPath": "docs/generated/provider-pull-now-state-packets/provider-pull-now-state-packet-new-york-2026-06-18.json",
+    "decisionPacketPath": "docs/generated/provider-pull-now-state-decision-packets/provider-pull-now-state-decision-packet-new-york-2026-06-18.json",
+    "workfileStatusPath": "docs/generated/provider-pull-now-state-workfile-status-new-york-2026-06-18.json",
+    "workfileValidationPath": "docs/generated/provider-pull-now-state-workfile-validation-new-york-2026-06-18.json"
+  },
+  "summary": {
+    "statePacketUnresolvedRows": 3,
+    "workfileUnresolvedRows": 0,
+    "workfileCompletionPercent": 100,
+    "validationIssueRows": 0,
+    "mergeReady": true
+  },
+  "commands": {
+    "packet": "npm run run:next-provider-pull-now-state-packet",
+    "workfileStatus": "npm run audit:provider-pull-now-state-workfile-status -- --state=new-york",
+    "workfileSync": "npm run fix:provider-pull-now-state-workfile -- --state=new-york",
+    "workfileValidation": "npm run audit:provider-pull-now-state-workfile-validation -- --state=new-york",
+    "workfileMerge": "npm run fix:provider-pull-now-state-workfile-decisions -- --state=new-york --apply",
+    "apply": "node scripts/apply-provider-pull-now-decisions.mjs --apply"
+  }
+}

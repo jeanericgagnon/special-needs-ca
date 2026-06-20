@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-06-19T02:37:29.796Z",
+  "generatedDate": "2026-06-19",
+  "sourceQueue": "docs/generated/knowledge-content-status-queue-2026-06-19.json",
+  "sourceLedger": "data/source-acquisition-state/knowledge-content-repair-ledger.json",
+  "purpose": "Deterministic repair queue for blocked knowledge-content exact targets.",
+  "summary": {
+    "totalRows": 0,
+    "resolvedRowsExcluded": 2,
+    "byRepairClass": {},
+    "byFollowupReason": {}
+  },
+  "rows": []
+}

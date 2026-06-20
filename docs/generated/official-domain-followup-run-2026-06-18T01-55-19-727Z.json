@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-06-18T01:55:19.729Z",
+  "mode": "apply",
+  "stateFilter": "new-hampshire",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 3,
+    "appliedStates": 2,
+    "filesChanged": 1,
+    "skippedByReason": {
+      "skipped_followup": 1
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "new-hampshire",
+      "sourceName": "New Hampshire HCBS Waivers Page",
+      "status": "applied",
+      "targetUrl": "https://www.dhhs.nh.gov/bds/hcbs"
+    },
+    {
+      "stateId": "new-hampshire",
+      "sourceName": "New Hampshire Developmental Services Directory",
+      "status": "applied",
+      "targetUrl": "https://www.dhhs.nh.gov/bds"
+    },
+    {
+      "stateId": "new-hampshire",
+      "sourceName": "New Hampshire Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

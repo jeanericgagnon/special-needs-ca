@@ -1,0 +1,109 @@
+{
+  "generatedAt": "2026-06-18T18:52:00.192Z",
+  "generatedDate": "2026-06-18",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-18.json",
+  "stateId": "hawaii",
+  "stateName": "Hawaii",
+  "executionPriority": 1,
+  "sourceTargetsPath": "data/source_targets/hawaii.json",
+  "ledgerStatus": "",
+  "ledgerNote": "",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 1,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 0,
+  "placeholderProviderTargetCount": 1,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 3,
+  "nextAction": "Add at least 3 more concrete first-party provider targets for Hawaii and then regenerate provider source-pack artifacts.",
+  "providerTargets": [
+    {
+      "sourceName": "Hawaii Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for Hawaii."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Hawaii County Metadata",
+      "sourceUrl": "https://www.hawaii.gov",
+      "domain": "hawaii.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Hawaii Medicaid Portal",
+      "sourceUrl": "https://dhhs.hawaii.gov",
+      "domain": "dhhs.hawaii.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Hawaii Developmental Disabilities Division",
+      "sourceUrl": "https://health.hawaii.gov/ddd",
+      "domain": "health.hawaii.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Hawaii HCBS Waivers",
+      "sourceUrl": "https://health.hawaii.gov/ddd/hcbs",
+      "domain": "health.hawaii.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Hawaii Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.hawaii.gov/earlyintervention",
+      "domain": "dhhs.hawaii.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Hawaii Department of Education Special Ed",
+      "sourceUrl": "https://education.hawaii.gov",
+      "domain": "education.hawaii.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Hawaii Regional Special Education Support",
+      "sourceUrl": "https://education.hawaii.gov/regional",
+      "domain": "education.hawaii.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Hawaii Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Hawaii",
+      "sourceUrl": "https://www.thearchawaii.org",
+      "domain": "thearchawaii.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Hawaii Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.hawaii.gov/forms",
+      "domain": "dhhs.hawaii.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Hawaii Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.hawaii.gov/rehab",
+      "domain": "dhhs.hawaii.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Hawaii Secretary of State Business Registry",
+      "sourceUrl": "https://www.hawaii.gov/business",
+      "domain": "hawaii.gov"
+    }
+  ]
+}

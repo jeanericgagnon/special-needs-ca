@@ -1,0 +1,135 @@
+{
+  "generatedAt": "2026-06-19T18:22:13.896Z",
+  "generatedDate": "2026-06-19",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+  "stateId": "montana",
+  "stateName": "Montana",
+  "executionPriority": 24,
+  "sourceTargetsPath": "data/source_targets/montana.json",
+  "ledgerStatus": "complete",
+  "ledgerNote": "applied-three-concrete-first-party-provider-targets",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 1,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 3,
+  "placeholderProviderTargetCount": 1,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 0,
+  "neededLiveProviderRows": 2,
+  "authoringGapClass": "needs_refresh_or_deeper_targets",
+  "nextAction": "Refresh Montana provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+  "providerTargets": [
+    {
+      "sourceName": "Montana Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for Montana."
+    },
+    {
+      "sourceName": "Billings Clinic",
+      "sourceUrl": "https://www.billingsclinic.com/",
+      "domain": "billingsclinic.com",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Billings Clinic source for statewide pediatric specialty and referral hospital coverage in Montana."
+    },
+    {
+      "sourceName": "Providence St. Patrick Hospital",
+      "sourceUrl": "https://montana.providence.org/locations-directory/s/st-patrick-hospital",
+      "domain": "montana.providence.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Providence St. Patrick Hospital source for western Montana hospital and pediatric referral coverage."
+    },
+    {
+      "sourceName": "Benefis Health System",
+      "sourceUrl": "https://www.benefis.org/",
+      "domain": "benefis.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Benefis Health System source for central Montana hospital and pediatric specialty coverage."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Montana County Metadata",
+      "sourceUrl": "https://www.montana.gov",
+      "domain": "montana.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Montana Medicaid Portal",
+      "sourceUrl": "https://dhhs.montana.gov",
+      "domain": "dhhs.montana.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Montana Developmental Disabilities Program",
+      "sourceUrl": "https://dphhs.mt.gov/dsd/ddp",
+      "domain": "dphhs.mt.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Montana HCBS Waivers",
+      "sourceUrl": "https://dphhs.mt.gov/dsd/ddp/hcbs",
+      "domain": "dphhs.mt.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Montana Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.montana.gov/earlyintervention",
+      "domain": "dhhs.montana.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Montana Department of Education Special Ed",
+      "sourceUrl": "https://education.montana.gov",
+      "domain": "education.montana.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Montana Regional Special Education Support",
+      "sourceUrl": "https://education.montana.gov/regional",
+      "domain": "education.montana.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Montana Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Montana",
+      "sourceUrl": "https://www.thearcmontana.org",
+      "domain": "thearcmontana.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Montana Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.montana.gov/forms",
+      "domain": "dhhs.montana.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Montana Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.montana.gov/rehab",
+      "domain": "dhhs.montana.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Montana Secretary of State Business Registry",
+      "sourceUrl": "https://www.montana.gov/business",
+      "domain": "montana.gov"
+    }
+  ]
+}

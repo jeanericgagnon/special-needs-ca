@@ -1,0 +1,1211 @@
+{
+  "generatedAt": "2026-06-18",
+  "dbPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/frontend/ca_disability_navigator.db",
+  "focusStates": [
+    {
+      "stateId": "florida",
+      "providerRowCount": 14,
+      "providerHosts": [
+        "hopkinsallchildrens.org",
+        "fau.edu",
+        "fsucard.com",
+        "mdc.fsu.edu",
+        "nemours.org",
+        "nicklauschildrens.org",
+        "ucf-card.org",
+        "card.ufl.edu",
+        "hscj.ufl.edu",
+        "can.uflhealth.org",
+        "asac.psy.miami.edu",
+        "floridacard.org",
+        "card-usf.fmhi.usf.edu",
+        "icei.fmhi.usf.edu"
+      ],
+      "directTargetMatches": [
+        {
+          "targetName": "Nicklaus Children's Hospital Dan Marino Center",
+          "category": "M. Hospitals / university clinics / Hospital Clinic Pages",
+          "sourceDomain": "nicklauschildrens.org",
+          "sourceUrl": "https://www.nicklauschildrens.org/locations/dan-marino-outpatient-center",
+          "crawlMethod": "static_fetch"
+        }
+      ],
+      "hospitalTargets": [
+        {
+          "targetName": "Nicklaus Children's Hospital Dan Marino Center",
+          "category": "M. Hospitals / university clinics / Hospital Clinic Pages",
+          "sourceDomain": "nicklauschildrens.org",
+          "sourceUrl": "https://www.nicklauschildrens.org/locations/dan-marino-outpatient-center",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "UF Health Jacksonville Pediatric Development",
+          "category": "M. Hospitals / university clinics / Hospital Clinic Pages",
+          "sourceDomain": "ufhealthjax.org",
+          "sourceUrl": "https://ufhealthjax.org/pediatrics/developmental.aspx",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "UM Mailman Center for Child Development",
+          "category": "M. Hospitals / university clinics / University Autism Clinic",
+          "sourceDomain": "med.miami.edu",
+          "sourceUrl": "https://med.miami.edu/centers-and-institutes/mailman-center",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "FLORIDA Specialized Clinic Roster #1",
+          "category": "J. Provider and advocate directories / Roster Source 1",
+          "sourceDomain": "ahca.myflorida.com",
+          "sourceUrl": "https://ahca.myflorida.com/specialized-roster-1",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "FLORIDA Specialized Clinic Roster #2",
+          "category": "J. Provider and advocate directories / Roster Source 2",
+          "sourceDomain": "ahca.myflorida.com",
+          "sourceUrl": "https://ahca.myflorida.com/specialized-roster-2",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "FLORIDA Specialized Clinic Roster #3",
+          "category": "J. Provider and advocate directories / Roster Source 3",
+          "sourceDomain": "ahca.myflorida.com",
+          "sourceUrl": "https://ahca.myflorida.com/specialized-roster-3",
+          "crawlMethod": "static_fetch"
+        }
+      ],
+      "rosterTargets": [
+        {
+          "targetName": "FLORIDA Specialized Clinic Roster #1",
+          "category": "J. Provider and advocate directories / Roster Source 1",
+          "sourceDomain": "ahca.myflorida.com",
+          "sourceUrl": "https://ahca.myflorida.com/specialized-roster-1",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "FLORIDA Specialized Clinic Roster #2",
+          "category": "J. Provider and advocate directories / Roster Source 2",
+          "sourceDomain": "ahca.myflorida.com",
+          "sourceUrl": "https://ahca.myflorida.com/specialized-roster-2",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "FLORIDA Specialized Clinic Roster #3",
+          "category": "J. Provider and advocate directories / Roster Source 3",
+          "sourceDomain": "ahca.myflorida.com",
+          "sourceUrl": "https://ahca.myflorida.com/specialized-roster-3",
+          "crawlMethod": "static_fetch"
+        }
+      ],
+      "providers": [
+        {
+          "id": "prov-all-childrens-hospital-fl",
+          "name": "Johns Hopkins All Children's Hospital Developmental Medicine",
+          "county_id": "pinellas-fl",
+          "state_id": "florida",
+          "source_url": "https://www.hopkinsallchildrens.org",
+          "phone": "(727) 898-7451",
+          "categories": "developmental_clinic,diagnostic_center",
+          "next_step_type": "call",
+          "checked_at": "2026-06-13",
+          "last_verified_date": "2026-06-13",
+          "sourceHost": "hopkinsallchildrens.org",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "developmental pediatrics pages often expose referral requirements, interpreter access, and scheduling instructions on patient pages",
+            "call-first providers often surface interpreter or patient-access phone guidance near scheduling or appointment pages"
+          ]
+        },
+        {
+          "id": "prov-fau-card-fl",
+          "name": "FAU CARD (Boca Raton)",
+          "county_id": "palm-beach-fl",
+          "state_id": "florida",
+          "source_url": "https://www.fau.edu/education/centersandprograms/card/",
+          "phone": "(561) 297-2023",
+          "categories": "developmental_clinic,card_center,diagnostic_center",
+          "next_step_type": "email",
+          "checked_at": "2026-06-13",
+          "last_verified_date": "2026-06-13",
+          "sourceHost": "fau.edu",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "developmental pediatrics pages often expose referral requirements, interpreter access, and scheduling instructions on patient pages",
+            "email-first providers are good candidates for language/contact-form accessibility cues on their contact pages"
+          ]
+        },
+        {
+          "id": "prov-fsu-card-fl",
+          "name": "FSU CARD (Tallahassee)",
+          "county_id": "leon-fl",
+          "state_id": "florida",
+          "source_url": "https://fsucard.com",
+          "phone": "(850) 644-4367",
+          "categories": "developmental_clinic,card_center,diagnostic_center",
+          "next_step_type": "email",
+          "checked_at": "2026-06-13",
+          "last_verified_date": "2026-06-13",
+          "sourceHost": "fsucard.com",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "developmental pediatrics pages often expose referral requirements, interpreter access, and scheduling instructions on patient pages",
+            "email-first providers are good candidates for language/contact-form accessibility cues on their contact pages"
+          ]
+        },
+        {
+          "id": "prov-fsu-mdc-fl",
+          "name": "FSU Multidisciplinary Center",
+          "county_id": "leon-fl",
+          "state_id": "florida",
+          "source_url": "https://mdc.fsu.edu",
+          "phone": "(850) 644-2222",
+          "categories": "developmental_clinic,diagnostic_center",
+          "next_step_type": "email",
+          "checked_at": "2026-06-13",
+          "last_verified_date": "2026-06-13",
+          "sourceHost": "mdc.fsu.edu",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "developmental pediatrics pages often expose referral requirements, interpreter access, and scheduling instructions on patient pages",
+            "email-first providers are good candidates for language/contact-form accessibility cues on their contact pages"
+          ]
+        },
+        {
+          "id": "prov-nemours-childrens-health-fl",
+          "name": "Nemours Children's Health Developmental Medicine (Orlando)",
+          "county_id": "orange-fl",
+          "state_id": "florida",
+          "source_url": "https://www.nemours.org",
+          "phone": "(407) 567-4000",
+          "categories": "developmental_clinic,diagnostic_center",
+          "next_step_type": "call",
+          "checked_at": "2026-06-17 11:33:23",
+          "last_verified_date": "2026-06-13",
+          "sourceHost": "nemours.org",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "developmental pediatrics pages often expose referral requirements, interpreter access, and scheduling instructions on patient pages",
+            "call-first providers often surface interpreter or patient-access phone guidance near scheduling or appointment pages"
+          ]
+        },
+        {
+          "id": "prov-nicklaus-childrens-brain-fl",
+          "name": "Nicklaus Children's Brain Institute",
+          "county_id": "miami-dade-fl",
+          "state_id": "florida",
+          "source_url": "https://www.nicklauschildrens.org",
+          "phone": "(305) 666-6511",
+          "categories": "developmental_clinic,diagnostic_center",
+          "next_step_type": "call",
+          "checked_at": "2026-06-13",
+          "last_verified_date": "2026-06-13",
+          "sourceHost": "nicklauschildrens.org",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "developmental pediatrics pages often expose referral requirements, interpreter access, and scheduling instructions on patient pages",
+            "call-first providers often surface interpreter or patient-access phone guidance near scheduling or appointment pages"
+          ]
+        },
+        {
+          "id": "prov-ucf-card-fl",
+          "name": "UCF CARD (Orlando)",
+          "county_id": "orange-fl",
+          "state_id": "florida",
+          "source_url": "https://ucf-card.org",
+          "phone": "(407) 823-6001",
+          "categories": "developmental_clinic,card_center,diagnostic_center",
+          "next_step_type": "email",
+          "checked_at": "2026-06-13",
+          "last_verified_date": "2026-06-13",
+          "sourceHost": "ucf-card.org",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "developmental pediatrics pages often expose referral requirements, interpreter access, and scheduling instructions on patient pages",
+            "email-first providers are good candidates for language/contact-form accessibility cues on their contact pages"
+          ]
+        },
+        {
+          "id": "prov-uf-card-gainesville-fl",
+          "name": "UF CARD Gainesville",
+          "county_id": "alachua-fl",
+          "state_id": "florida",
+          "source_url": "https://card.ufl.edu",
+          "phone": "(352) 265-2230",
+          "categories": "developmental_clinic,card_center,diagnostic_center",
+          "next_step_type": "email",
+          "checked_at": "2026-06-13",
+          "last_verified_date": "2026-06-13",
+          "sourceHost": "card.ufl.edu",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "developmental pediatrics pages often expose referral requirements, interpreter access, and scheduling instructions on patient pages",
+            "email-first providers are good candidates for language/contact-form accessibility cues on their contact pages"
+          ]
+        },
+        {
+          "id": "prov-uf-card-jacksonville-fl",
+          "name": "UF CARD Jacksonville",
+          "county_id": "duval-fl",
+          "state_id": "florida",
+          "source_url": "https://hscj.ufl.edu/pediatrics/autism/",
+          "phone": "(904) 737-5239",
+          "categories": "developmental_clinic,card_center,diagnostic_center",
+          "next_step_type": "email",
+          "checked_at": "2026-06-13",
+          "last_verified_date": "2026-06-13",
+          "sourceHost": "hscj.ufl.edu",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "autism center pages often expose telehealth, family support, and multilingual intake details on program overview or contact pages",
+            "developmental pediatrics pages often expose referral requirements, interpreter access, and scheduling instructions on patient pages",
+            "email-first providers are good candidates for language/contact-form accessibility cues on their contact pages"
+          ]
+        },
+        {
+          "id": "prov-uf-health-can-fl",
+          "name": "UF Health Center for Autism and Neurodevelopment (CAN)",
+          "county_id": "alachua-fl",
+          "state_id": "florida",
+          "source_url": "https://can.uflhealth.org/",
+          "phone": "(352) 733-1030",
+          "categories": "developmental_clinic,diagnostic_center",
+          "next_step_type": "email",
+          "checked_at": "2026-06-13",
+          "last_verified_date": "2026-06-13",
+          "sourceHost": "can.uflhealth.org",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "developmental pediatrics pages often expose referral requirements, interpreter access, and scheduling instructions on patient pages",
+            "email-first providers are good candidates for language/contact-form accessibility cues on their contact pages"
+          ]
+        },
+        {
+          "id": "prov-um-asac-fl",
+          "name": "UM Autism Spectrum Assessment Clinic (ASAC)",
+          "county_id": "miami-dade-fl",
+          "state_id": "florida",
+          "source_url": "https://asac.psy.miami.edu",
+          "phone": "(305) 284-6140",
+          "categories": "developmental_clinic,diagnostic_center",
+          "next_step_type": "email",
+          "checked_at": "2026-06-13",
+          "last_verified_date": "2026-06-13",
+          "sourceHost": "asac.psy.miami.edu",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "developmental pediatrics pages often expose referral requirements, interpreter access, and scheduling instructions on patient pages",
+            "email-first providers are good candidates for language/contact-form accessibility cues on their contact pages"
+          ]
+        },
+        {
+          "id": "prov-um-nsu-card-fl",
+          "name": "UM-NSU CARD (Coral Gables)",
+          "county_id": "miami-dade-fl",
+          "state_id": "florida",
+          "source_url": "https://www.floridacard.org",
+          "phone": "(305) 284-6563",
+          "categories": "developmental_clinic,card_center,diagnostic_center",
+          "next_step_type": "email",
+          "checked_at": "2026-06-13",
+          "last_verified_date": "2026-06-13",
+          "sourceHost": "floridacard.org",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "developmental pediatrics pages often expose referral requirements, interpreter access, and scheduling instructions on patient pages",
+            "email-first providers are good candidates for language/contact-form accessibility cues on their contact pages"
+          ]
+        },
+        {
+          "id": "prov-usf-card-fl",
+          "name": "USF CARD (Tampa)",
+          "county_id": "hillsborough-fl",
+          "state_id": "florida",
+          "source_url": "https://card-usf.fmhi.usf.edu",
+          "phone": "(813) 974-2532",
+          "categories": "developmental_clinic,card_center,diagnostic_center",
+          "next_step_type": "email",
+          "checked_at": "2026-06-13",
+          "last_verified_date": "2026-06-13",
+          "sourceHost": "card-usf.fmhi.usf.edu",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "developmental pediatrics pages often expose referral requirements, interpreter access, and scheduling instructions on patient pages",
+            "email-first providers are good candidates for language/contact-form accessibility cues on their contact pages"
+          ]
+        },
+        {
+          "id": "prov-usf-icei-fl",
+          "name": "USF Interdisciplinary Center for Evaluation and Intervention",
+          "county_id": "hillsborough-fl",
+          "state_id": "florida",
+          "source_url": "https://icei.fmhi.usf.edu",
+          "phone": "(813) 974-0968",
+          "categories": "developmental_clinic,diagnostic_center",
+          "next_step_type": "email",
+          "checked_at": "2026-06-13",
+          "last_verified_date": "2026-06-13",
+          "sourceHost": "icei.fmhi.usf.edu",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "developmental pediatrics pages often expose referral requirements, interpreter access, and scheduling instructions on patient pages",
+            "email-first providers are good candidates for language/contact-form accessibility cues on their contact pages"
+          ]
+        }
+      ]
+    },
+    {
+      "stateId": "texas",
+      "providerRowCount": 10,
+      "providerHosts": [
+        "calliercenter.utdallas.edu",
+        "bcm.edu",
+        "childrens.com",
+        "cookchildrens.org",
+        "dellchildrens.net",
+        "texaschildrens.org",
+        "depts.ttu.edu",
+        "uth.edu",
+        "utsouthwestern.edu"
+      ],
+      "directTargetMatches": [
+        {
+          "targetName": "Texas Children's Hospital Autism Center",
+          "category": "M. Hospitals / university clinics / Hospital Clinic Pages",
+          "sourceDomain": "texaschildrens.org",
+          "sourceUrl": "https://www.texaschildrens.org/departments/autism-center",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "Cook Children's Child Development Center",
+          "category": "M. Hospitals / university clinics / Hospital Clinic Pages",
+          "sourceDomain": "cookchildrens.org",
+          "sourceUrl": "https://www.cookchildrens.org/services/child-development/",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "UT Dallas Callier Center for Communication Disorders",
+          "category": "M. Hospitals / university clinics / University Autism Clinic",
+          "sourceDomain": "calliercenter.utdallas.edu",
+          "sourceUrl": "https://calliercenter.utdallas.edu",
+          "crawlMethod": "static_fetch"
+        }
+      ],
+      "hospitalTargets": [
+        {
+          "targetName": "Texas Children's Hospital Autism Center",
+          "category": "M. Hospitals / university clinics / Hospital Clinic Pages",
+          "sourceDomain": "texaschildrens.org",
+          "sourceUrl": "https://www.texaschildrens.org/departments/autism-center",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "Cook Children's Child Development Center",
+          "category": "M. Hospitals / university clinics / Hospital Clinic Pages",
+          "sourceDomain": "cookchildrens.org",
+          "sourceUrl": "https://www.cookchildrens.org/services/child-development/",
+          "crawlMethod": "static_fetch"
+        }
+      ],
+      "rosterTargets": [],
+      "providers": [
+        {
+          "id": "texas-dallas-tx-callier-center-for-communication-disorders-rp",
+          "name": "Callier Center for Communication Disorders",
+          "county_id": "dallas-tx",
+          "state_id": "texas",
+          "source_url": "https://calliercenter.utdallas.edu/",
+          "phone": "(972) 883-3000",
+          "categories": "providers_care",
+          "next_step_type": "contact_provider",
+          "checked_at": null,
+          "last_verified_date": "2026-06-18",
+          "sourceHost": "calliercenter.utdallas.edu",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion"
+          ]
+        },
+        {
+          "id": "tx-clinic-bcm-meyer",
+          "name": "Baylor College of Medicine Meyer Center for Developmental Pediatrics",
+          "county_id": "harris-tx",
+          "state_id": "texas",
+          "source_url": "https://www.bcm.edu",
+          "phone": "(832) 822-3400",
+          "categories": "Clinical,Developmental",
+          "next_step_type": "call",
+          "checked_at": "2026-06-17 11:31:11",
+          "last_verified_date": "2026-06-13",
+          "sourceHost": "bcm.edu",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "developmental pediatrics pages often expose referral requirements, interpreter access, and scheduling instructions on patient pages",
+            "call-first providers often surface interpreter or patient-access phone guidance near scheduling or appointment pages"
+          ]
+        },
+        {
+          "id": "tx-clinic-childrens-autism",
+          "name": "Children's Health - Autism and Developmental Disabilities Clinic",
+          "county_id": "dallas-tx",
+          "state_id": "texas",
+          "source_url": "https://www.childrens.com",
+          "phone": "(844) 424-4537",
+          "categories": "Clinical,Autism",
+          "next_step_type": "call",
+          "checked_at": "2026-06-13",
+          "last_verified_date": "2026-06-13",
+          "sourceHost": "childrens.com",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "autism center pages often expose telehealth, family support, and multilingual intake details on program overview or contact pages",
+            "call-first providers often surface interpreter or patient-access phone guidance near scheduling or appointment pages"
+          ]
+        },
+        {
+          "id": "tx-clinic-cook-developmental",
+          "name": "Cook Children's Child Development Center",
+          "county_id": "tarrant-tx",
+          "state_id": "texas",
+          "source_url": "https://www.cookchildrens.org/services/child-development/",
+          "phone": "(682) 885-4000",
+          "categories": "Clinical,Therapy,Developmental",
+          "next_step_type": "call",
+          "checked_at": "2026-06-13",
+          "last_verified_date": "2026-06-13",
+          "sourceHost": "cookchildrens.org",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "developmental pediatrics pages often expose referral requirements, interpreter access, and scheduling instructions on patient pages",
+            "call-first providers often surface interpreter or patient-access phone guidance near scheduling or appointment pages"
+          ]
+        },
+        {
+          "id": "tx-clinic-dell-child-study",
+          "name": "Dell Children's Texas Child Study Center",
+          "county_id": "travis-tx",
+          "state_id": "texas",
+          "source_url": "https://www.dellchildrens.net",
+          "phone": "(512) 324-3315",
+          "categories": "Clinical,Therapy,Developmental",
+          "next_step_type": "call",
+          "checked_at": "2026-06-17 11:26:20",
+          "last_verified_date": "2026-06-13",
+          "sourceHost": "dellchildrens.net",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "developmental pediatrics pages often expose referral requirements, interpreter access, and scheduling instructions on patient pages",
+            "call-first providers often surface interpreter or patient-access phone guidance near scheduling or appointment pages"
+          ]
+        },
+        {
+          "id": "tx-clinic-tch-autism",
+          "name": "Texas Children's Hospital Autism Center / Meyer Center",
+          "county_id": "harris-tx",
+          "state_id": "texas",
+          "source_url": "https://www.texaschildrens.org/departments/autism-center",
+          "phone": "(832) 822-3400",
+          "categories": "Clinical,Therapy,Autism",
+          "next_step_type": "call",
+          "checked_at": "2026-06-13",
+          "last_verified_date": "2026-06-13",
+          "sourceHost": "texaschildrens.org",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "autism center pages often expose telehealth, family support, and multilingual intake details on program overview or contact pages",
+            "call-first providers often surface interpreter or patient-access phone guidance near scheduling or appointment pages"
+          ]
+        },
+        {
+          "id": "tx-clinic-ttuhsc-burkhart",
+          "name": "TTUHSC Burkhart Center for Autism Education & Research",
+          "county_id": "lubbock-tx",
+          "state_id": "texas",
+          "source_url": "https://www.depts.ttu.edu/burkhartcenter/",
+          "phone": "(806) 742-4561",
+          "categories": "Clinical,Autism,Education",
+          "next_step_type": "call",
+          "checked_at": "2026-06-13",
+          "last_verified_date": "2026-06-13",
+          "sourceHost": "depts.ttu.edu",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "autism center pages often expose telehealth, family support, and multilingual intake details on program overview or contact pages",
+            "call-first providers often surface interpreter or patient-access phone guidance near scheduling or appointment pages"
+          ]
+        },
+        {
+          "id": "tx-clinic-utd-callier",
+          "name": "UT Dallas Callier Center for Communication Disorders",
+          "county_id": "dallas-tx",
+          "state_id": "texas",
+          "source_url": "https://calliercenter.utdallas.edu",
+          "phone": "(214) 905-3000",
+          "categories": "Clinical,Therapy,Speech",
+          "next_step_type": "call",
+          "checked_at": "2026-06-17 11:12:15",
+          "last_verified_date": "2026-06-13",
+          "sourceHost": "calliercenter.utdallas.edu",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "speech/communication clinics often publish teletherapy or interpreter details on intake or services pages",
+            "call-first providers often surface interpreter or patient-access phone guidance near scheduling or appointment pages"
+          ]
+        },
+        {
+          "id": "tx-clinic-uth-autism",
+          "name": "UT Health Houston Center for Autism and Developmental Disabilities",
+          "county_id": "harris-tx",
+          "state_id": "texas",
+          "source_url": "https://www.uth.edu",
+          "phone": "(713) 486-2700",
+          "categories": "Clinical,Autism",
+          "next_step_type": "call",
+          "checked_at": "2026-06-13",
+          "last_verified_date": "2026-06-13",
+          "sourceHost": "uth.edu",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "autism center pages often expose telehealth, family support, and multilingual intake details on program overview or contact pages",
+            "call-first providers often surface interpreter or patient-access phone guidance near scheduling or appointment pages"
+          ]
+        },
+        {
+          "id": "tx-clinic-utsw-cadd",
+          "name": "UT Southwestern Center for Autism and Developmental Disabilities (CADD)",
+          "county_id": "dallas-tx",
+          "state_id": "texas",
+          "source_url": "https://www.utsouthwestern.edu",
+          "phone": "(214) 648-3111",
+          "categories": "Clinical,Autism,Developmental",
+          "next_step_type": "call",
+          "checked_at": "2026-06-17 11:17:28",
+          "last_verified_date": "2026-06-13",
+          "sourceHost": "utsouthwestern.edu",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "autism center pages often expose telehealth, family support, and multilingual intake details on program overview or contact pages",
+            "developmental pediatrics pages often expose referral requirements, interpreter access, and scheduling instructions on patient pages",
+            "call-first providers often surface interpreter or patient-access phone guidance near scheduling or appointment pages"
+          ]
+        }
+      ]
+    },
+    {
+      "stateId": "pennsylvania",
+      "providerRowCount": 7,
+      "providerHosts": [
+        "chop.edu",
+        "geisinger.org",
+        "pennstatehealth.org",
+        "stchristophershospital.com",
+        "templehealth.org",
+        "chp.edu"
+      ],
+      "directTargetMatches": [
+        {
+          "targetName": "Children's Hospital of Philadelphia (CHOP) Developmental Pediatrics",
+          "category": "M. Hospitals / university clinics / Hospital Clinic Pages",
+          "sourceDomain": "chop.edu",
+          "sourceUrl": "https://www.chop.edu/centers-programs/developmental-and-behavioral-pediatrics",
+          "crawlMethod": "static_fetch"
+        }
+      ],
+      "hospitalTargets": [
+        {
+          "targetName": "Children's Hospital of Philadelphia (CHOP) Developmental Pediatrics",
+          "category": "M. Hospitals / university clinics / Hospital Clinic Pages",
+          "sourceDomain": "chop.edu",
+          "sourceUrl": "https://www.chop.edu/centers-programs/developmental-and-behavioral-pediatrics",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "PENNSYLVANIA Specialized Clinic Roster #1",
+          "category": "J. Provider and advocate directories / Roster Source 1",
+          "sourceDomain": "dhs.pa.gov",
+          "sourceUrl": "https://www.dhs.pa.gov/specialized-roster-1",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "PENNSYLVANIA Specialized Clinic Roster #2",
+          "category": "J. Provider and advocate directories / Roster Source 2",
+          "sourceDomain": "dhs.pa.gov",
+          "sourceUrl": "https://www.dhs.pa.gov/specialized-roster-2",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "PENNSYLVANIA Specialized Clinic Roster #3",
+          "category": "J. Provider and advocate directories / Roster Source 3",
+          "sourceDomain": "dhs.pa.gov",
+          "sourceUrl": "https://www.dhs.pa.gov/specialized-roster-3",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "PENNSYLVANIA Specialized Clinic Roster #4",
+          "category": "J. Provider and advocate directories / Roster Source 4",
+          "sourceDomain": "dhs.pa.gov",
+          "sourceUrl": "https://www.dhs.pa.gov/specialized-roster-4",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "PENNSYLVANIA Specialized Clinic Roster #5",
+          "category": "J. Provider and advocate directories / Roster Source 5",
+          "sourceDomain": "dhs.pa.gov",
+          "sourceUrl": "https://www.dhs.pa.gov/specialized-roster-5",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "PENNSYLVANIA Specialized Clinic Roster #6",
+          "category": "J. Provider and advocate directories / Roster Source 6",
+          "sourceDomain": "dhs.pa.gov",
+          "sourceUrl": "https://www.dhs.pa.gov/specialized-roster-6",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "PENNSYLVANIA Specialized Clinic Roster #7",
+          "category": "J. Provider and advocate directories / Roster Source 7",
+          "sourceDomain": "dhs.pa.gov",
+          "sourceUrl": "https://www.dhs.pa.gov/specialized-roster-7",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "PENNSYLVANIA Specialized Clinic Roster #8",
+          "category": "J. Provider and advocate directories / Roster Source 8",
+          "sourceDomain": "dhs.pa.gov",
+          "sourceUrl": "https://www.dhs.pa.gov/specialized-roster-8",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "PENNSYLVANIA Specialized Clinic Roster #9",
+          "category": "J. Provider and advocate directories / Roster Source 9",
+          "sourceDomain": "dhs.pa.gov",
+          "sourceUrl": "https://www.dhs.pa.gov/specialized-roster-9",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "PENNSYLVANIA Specialized Clinic Roster #10",
+          "category": "J. Provider and advocate directories / Roster Source 10",
+          "sourceDomain": "dhs.pa.gov",
+          "sourceUrl": "https://www.dhs.pa.gov/specialized-roster-10",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "PENNSYLVANIA Specialized Clinic Roster #11",
+          "category": "J. Provider and advocate directories / Roster Source 11",
+          "sourceDomain": "dhs.pa.gov",
+          "sourceUrl": "https://www.dhs.pa.gov/specialized-roster-11",
+          "crawlMethod": "static_fetch"
+        }
+      ],
+      "rosterTargets": [
+        {
+          "targetName": "PENNSYLVANIA Specialized Clinic Roster #1",
+          "category": "J. Provider and advocate directories / Roster Source 1",
+          "sourceDomain": "dhs.pa.gov",
+          "sourceUrl": "https://www.dhs.pa.gov/specialized-roster-1",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "PENNSYLVANIA Specialized Clinic Roster #2",
+          "category": "J. Provider and advocate directories / Roster Source 2",
+          "sourceDomain": "dhs.pa.gov",
+          "sourceUrl": "https://www.dhs.pa.gov/specialized-roster-2",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "PENNSYLVANIA Specialized Clinic Roster #3",
+          "category": "J. Provider and advocate directories / Roster Source 3",
+          "sourceDomain": "dhs.pa.gov",
+          "sourceUrl": "https://www.dhs.pa.gov/specialized-roster-3",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "PENNSYLVANIA Specialized Clinic Roster #4",
+          "category": "J. Provider and advocate directories / Roster Source 4",
+          "sourceDomain": "dhs.pa.gov",
+          "sourceUrl": "https://www.dhs.pa.gov/specialized-roster-4",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "PENNSYLVANIA Specialized Clinic Roster #5",
+          "category": "J. Provider and advocate directories / Roster Source 5",
+          "sourceDomain": "dhs.pa.gov",
+          "sourceUrl": "https://www.dhs.pa.gov/specialized-roster-5",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "PENNSYLVANIA Specialized Clinic Roster #6",
+          "category": "J. Provider and advocate directories / Roster Source 6",
+          "sourceDomain": "dhs.pa.gov",
+          "sourceUrl": "https://www.dhs.pa.gov/specialized-roster-6",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "PENNSYLVANIA Specialized Clinic Roster #7",
+          "category": "J. Provider and advocate directories / Roster Source 7",
+          "sourceDomain": "dhs.pa.gov",
+          "sourceUrl": "https://www.dhs.pa.gov/specialized-roster-7",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "PENNSYLVANIA Specialized Clinic Roster #8",
+          "category": "J. Provider and advocate directories / Roster Source 8",
+          "sourceDomain": "dhs.pa.gov",
+          "sourceUrl": "https://www.dhs.pa.gov/specialized-roster-8",
+          "crawlMethod": "static_fetch"
+        }
+      ],
+      "providers": [
+        {
+          "id": "pa-clinic-chop",
+          "name": "Children's Hospital of Philadelphia (CHOP) Center for Autism Research & Developmental Pediatrics",
+          "county_id": "philadelphia-pa",
+          "state_id": "pennsylvania",
+          "source_url": "https://www.chop.edu/centers-programs/developmental-and-behavioral-pediatrics",
+          "phone": "215-590-7500",
+          "categories": "developmental_pediatrics,autism_clinic,card_center",
+          "next_step_type": "call",
+          "checked_at": "2026-06-16T21:50:18.110Z",
+          "last_verified_date": "2026-06-16",
+          "sourceHost": "chop.edu",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "autism center pages often expose telehealth, family support, and multilingual intake details on program overview or contact pages",
+            "developmental pediatrics pages often expose referral requirements, interpreter access, and scheduling instructions on patient pages",
+            "call-first providers often surface interpreter or patient-access phone guidance near scheduling or appointment pages"
+          ]
+        },
+        {
+          "id": "pa-clinic-chop-kop",
+          "name": "Children's Hospital of Philadelphia (CHOP) Specialty Care Center King of Prussia",
+          "county_id": "montgomery-pa",
+          "state_id": "pennsylvania",
+          "source_url": "https://www.chop.edu/locations/chop-care-center-king-prussia",
+          "phone": "610-337-3232",
+          "categories": "developmental_pediatrics,autism_clinic,card_center",
+          "next_step_type": "call",
+          "checked_at": "2026-06-16T21:50:18.110Z",
+          "last_verified_date": "2026-06-16",
+          "sourceHost": "chop.edu",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "autism center pages often expose telehealth, family support, and multilingual intake details on program overview or contact pages",
+            "developmental pediatrics pages often expose referral requirements, interpreter access, and scheduling instructions on patient pages",
+            "call-first providers often surface interpreter or patient-access phone guidance near scheduling or appointment pages"
+          ]
+        },
+        {
+          "id": "pa-clinic-geisinger",
+          "name": "Geisinger Autism & Developmental Medicine Institute (ADMI)",
+          "county_id": "union-pa",
+          "state_id": "pennsylvania",
+          "source_url": "https://www.geisinger.org/patient-care/specialties-and-services/autism-and-developmental-medicine-institute",
+          "phone": "570-522-9430",
+          "categories": "developmental_pediatrics,autism_clinic,card_center",
+          "next_step_type": "call",
+          "checked_at": "2026-06-16T21:50:18.110Z",
+          "last_verified_date": "2026-06-16",
+          "sourceHost": "geisinger.org",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "autism center pages often expose telehealth, family support, and multilingual intake details on program overview or contact pages",
+            "developmental pediatrics pages often expose referral requirements, interpreter access, and scheduling instructions on patient pages",
+            "call-first providers often surface interpreter or patient-access phone guidance near scheduling or appointment pages"
+          ]
+        },
+        {
+          "id": "pa-clinic-psu",
+          "name": "Penn State Health Children's Hospital - Developmental Pediatrics",
+          "county_id": "dauphin-pa",
+          "state_id": "pennsylvania",
+          "source_url": "https://www.pennstatehealth.org/services-treatments/developmental-pediatrics",
+          "phone": "717-531-1033",
+          "categories": "developmental_pediatrics,autism_clinic,card_center",
+          "next_step_type": "call",
+          "checked_at": "2026-06-16T21:50:18.110Z",
+          "last_verified_date": "2026-06-16",
+          "sourceHost": "pennstatehealth.org",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "autism center pages often expose telehealth, family support, and multilingual intake details on program overview or contact pages",
+            "developmental pediatrics pages often expose referral requirements, interpreter access, and scheduling instructions on patient pages",
+            "call-first providers often surface interpreter or patient-access phone guidance near scheduling or appointment pages"
+          ]
+        },
+        {
+          "id": "pa-clinic-st-christophers",
+          "name": "St. Christopher's Hospital for Children - Developmental Pediatrics",
+          "county_id": "philadelphia-pa",
+          "state_id": "pennsylvania",
+          "source_url": "https://www.stchristophershospital.com/services/developmental-pediatrics",
+          "phone": "215-427-5531",
+          "categories": "developmental_pediatrics,autism_clinic,card_center",
+          "next_step_type": "call",
+          "checked_at": "2026-06-16T21:50:18.110Z",
+          "last_verified_date": "2026-06-16",
+          "sourceHost": "stchristophershospital.com",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "autism center pages often expose telehealth, family support, and multilingual intake details on program overview or contact pages",
+            "developmental pediatrics pages often expose referral requirements, interpreter access, and scheduling instructions on patient pages",
+            "call-first providers often surface interpreter or patient-access phone guidance near scheduling or appointment pages"
+          ]
+        },
+        {
+          "id": "pa-clinic-temple",
+          "name": "Temple Health / Temple University Hospital Pediatric Developmental Services",
+          "county_id": "philadelphia-pa",
+          "state_id": "pennsylvania",
+          "source_url": "https://www.templehealth.org",
+          "phone": "215-707-4000",
+          "categories": "developmental_pediatrics,autism_clinic,card_center",
+          "next_step_type": "call",
+          "checked_at": "2026-06-16T21:50:18.110Z",
+          "last_verified_date": "2026-06-16",
+          "sourceHost": "templehealth.org",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "autism center pages often expose telehealth, family support, and multilingual intake details on program overview or contact pages",
+            "developmental pediatrics pages often expose referral requirements, interpreter access, and scheduling instructions on patient pages",
+            "call-first providers often surface interpreter or patient-access phone guidance near scheduling or appointment pages"
+          ]
+        },
+        {
+          "id": "pa-clinic-upmc",
+          "name": "UPMC Children's Hospital of Pittsburgh - Child Development Unit",
+          "county_id": "allegheny-pa",
+          "state_id": "pennsylvania",
+          "source_url": "https://www.chp.edu/our-services/developmental-pediatrics",
+          "phone": "412-692-5560",
+          "categories": "developmental_pediatrics,autism_clinic,card_center",
+          "next_step_type": "call",
+          "checked_at": "2026-06-16T21:50:18.110Z",
+          "last_verified_date": "2026-06-16",
+          "sourceHost": "chp.edu",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "autism center pages often expose telehealth, family support, and multilingual intake details on program overview or contact pages",
+            "developmental pediatrics pages often expose referral requirements, interpreter access, and scheduling instructions on patient pages",
+            "call-first providers often surface interpreter or patient-access phone guidance near scheduling or appointment pages"
+          ]
+        }
+      ]
+    },
+    {
+      "stateId": "illinois",
+      "providerRowCount": 6,
+      "providerHosts": [
+        "carle.org",
+        "thehopeclinic.org",
+        "luriechildrens.org",
+        "osfhealthcare.org",
+        "rush.edu",
+        "ahs.uic.edu"
+      ],
+      "directTargetMatches": [
+        {
+          "targetName": "Ann & Robert H. Lurie Children's Hospital Developmental Pediatrics",
+          "category": "M. Hospitals / university clinics / Hospital Clinic Pages",
+          "sourceDomain": "luriechildrens.org",
+          "sourceUrl": "https://www.luriechildrens.org/en/specialties-conditions/developmental-behavioral-pediatrics/",
+          "crawlMethod": "static_fetch"
+        }
+      ],
+      "hospitalTargets": [
+        {
+          "targetName": "Ann & Robert H. Lurie Children's Hospital Developmental Pediatrics",
+          "category": "M. Hospitals / university clinics / Hospital Clinic Pages",
+          "sourceDomain": "luriechildrens.org",
+          "sourceUrl": "https://www.luriechildrens.org/en/specialties-conditions/developmental-behavioral-pediatrics/",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "ILLINOIS Specialized Clinic Roster #1",
+          "category": "J. Provider and advocate directories / Roster Source 1",
+          "sourceDomain": "hfs.illinois.gov",
+          "sourceUrl": "https://hfs.illinois.gov/specialized-roster-1",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "ILLINOIS Specialized Clinic Roster #2",
+          "category": "J. Provider and advocate directories / Roster Source 2",
+          "sourceDomain": "hfs.illinois.gov",
+          "sourceUrl": "https://hfs.illinois.gov/specialized-roster-2",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "ILLINOIS Specialized Clinic Roster #3",
+          "category": "J. Provider and advocate directories / Roster Source 3",
+          "sourceDomain": "hfs.illinois.gov",
+          "sourceUrl": "https://hfs.illinois.gov/specialized-roster-3",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "ILLINOIS Specialized Clinic Roster #4",
+          "category": "J. Provider and advocate directories / Roster Source 4",
+          "sourceDomain": "hfs.illinois.gov",
+          "sourceUrl": "https://hfs.illinois.gov/specialized-roster-4",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "ILLINOIS Specialized Clinic Roster #5",
+          "category": "J. Provider and advocate directories / Roster Source 5",
+          "sourceDomain": "hfs.illinois.gov",
+          "sourceUrl": "https://hfs.illinois.gov/specialized-roster-5",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "ILLINOIS Specialized Clinic Roster #6",
+          "category": "J. Provider and advocate directories / Roster Source 6",
+          "sourceDomain": "hfs.illinois.gov",
+          "sourceUrl": "https://hfs.illinois.gov/specialized-roster-6",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "ILLINOIS Specialized Clinic Roster #7",
+          "category": "J. Provider and advocate directories / Roster Source 7",
+          "sourceDomain": "hfs.illinois.gov",
+          "sourceUrl": "https://hfs.illinois.gov/specialized-roster-7",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "ILLINOIS Specialized Clinic Roster #8",
+          "category": "J. Provider and advocate directories / Roster Source 8",
+          "sourceDomain": "hfs.illinois.gov",
+          "sourceUrl": "https://hfs.illinois.gov/specialized-roster-8",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "ILLINOIS Specialized Clinic Roster #9",
+          "category": "J. Provider and advocate directories / Roster Source 9",
+          "sourceDomain": "hfs.illinois.gov",
+          "sourceUrl": "https://hfs.illinois.gov/specialized-roster-9",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "ILLINOIS Specialized Clinic Roster #10",
+          "category": "J. Provider and advocate directories / Roster Source 10",
+          "sourceDomain": "hfs.illinois.gov",
+          "sourceUrl": "https://hfs.illinois.gov/specialized-roster-10",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "ILLINOIS Specialized Clinic Roster #11",
+          "category": "J. Provider and advocate directories / Roster Source 11",
+          "sourceDomain": "hfs.illinois.gov",
+          "sourceUrl": "https://hfs.illinois.gov/specialized-roster-11",
+          "crawlMethod": "static_fetch"
+        }
+      ],
+      "rosterTargets": [
+        {
+          "targetName": "ILLINOIS Specialized Clinic Roster #1",
+          "category": "J. Provider and advocate directories / Roster Source 1",
+          "sourceDomain": "hfs.illinois.gov",
+          "sourceUrl": "https://hfs.illinois.gov/specialized-roster-1",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "ILLINOIS Specialized Clinic Roster #2",
+          "category": "J. Provider and advocate directories / Roster Source 2",
+          "sourceDomain": "hfs.illinois.gov",
+          "sourceUrl": "https://hfs.illinois.gov/specialized-roster-2",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "ILLINOIS Specialized Clinic Roster #3",
+          "category": "J. Provider and advocate directories / Roster Source 3",
+          "sourceDomain": "hfs.illinois.gov",
+          "sourceUrl": "https://hfs.illinois.gov/specialized-roster-3",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "ILLINOIS Specialized Clinic Roster #4",
+          "category": "J. Provider and advocate directories / Roster Source 4",
+          "sourceDomain": "hfs.illinois.gov",
+          "sourceUrl": "https://hfs.illinois.gov/specialized-roster-4",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "ILLINOIS Specialized Clinic Roster #5",
+          "category": "J. Provider and advocate directories / Roster Source 5",
+          "sourceDomain": "hfs.illinois.gov",
+          "sourceUrl": "https://hfs.illinois.gov/specialized-roster-5",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "ILLINOIS Specialized Clinic Roster #6",
+          "category": "J. Provider and advocate directories / Roster Source 6",
+          "sourceDomain": "hfs.illinois.gov",
+          "sourceUrl": "https://hfs.illinois.gov/specialized-roster-6",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "ILLINOIS Specialized Clinic Roster #7",
+          "category": "J. Provider and advocate directories / Roster Source 7",
+          "sourceDomain": "hfs.illinois.gov",
+          "sourceUrl": "https://hfs.illinois.gov/specialized-roster-7",
+          "crawlMethod": "static_fetch"
+        },
+        {
+          "targetName": "ILLINOIS Specialized Clinic Roster #8",
+          "category": "J. Provider and advocate directories / Roster Source 8",
+          "sourceDomain": "hfs.illinois.gov",
+          "sourceUrl": "https://hfs.illinois.gov/specialized-roster-8",
+          "crawlMethod": "static_fetch"
+        }
+      ],
+      "providers": [
+        {
+          "id": "clinic-carle-dev-peds-il",
+          "name": "Carle Foundation Hospital Developmental Pediatrics",
+          "county_id": "champaign-il",
+          "state_id": "illinois",
+          "source_url": "https://www.carle.org",
+          "phone": "(217) 383-3311",
+          "categories": "developmental_pediatrics,autism_clinic,card_center",
+          "next_step_type": "email",
+          "checked_at": "2026-06-15T16:53:47.643Z",
+          "last_verified_date": null,
+          "sourceHost": "carle.org",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "autism center pages often expose telehealth, family support, and multilingual intake details on program overview or contact pages",
+            "developmental pediatrics pages often expose referral requirements, interpreter access, and scheduling instructions on patient pages",
+            "email-first providers are good candidates for language/contact-form accessibility cues on their contact pages"
+          ]
+        },
+        {
+          "id": "clinic-hope-chicago-il",
+          "name": "The Hope Clinic - Developmental Services",
+          "county_id": "cook-il",
+          "state_id": "illinois",
+          "source_url": "https://www.thehopeclinic.org",
+          "phone": "(312) 243-8400",
+          "categories": "developmental_pediatrics,autism_clinic,card_center",
+          "next_step_type": "email",
+          "checked_at": "2026-06-15T16:53:47.643Z",
+          "last_verified_date": null,
+          "sourceHost": "thehopeclinic.org",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "autism center pages often expose telehealth, family support, and multilingual intake details on program overview or contact pages",
+            "developmental pediatrics pages often expose referral requirements, interpreter access, and scheduling instructions on patient pages",
+            "email-first providers are good candidates for language/contact-form accessibility cues on their contact pages"
+          ]
+        },
+        {
+          "id": "clinic-lurie-childrens-il",
+          "name": "Lurie Children's Hospital Autism Program",
+          "county_id": "cook-il",
+          "state_id": "illinois",
+          "source_url": "https://www.luriechildrens.org",
+          "phone": "(312) 227-4000",
+          "categories": "developmental_pediatrics,autism_clinic,card_center",
+          "next_step_type": "email",
+          "checked_at": "2026-06-15T16:53:47.643Z",
+          "last_verified_date": null,
+          "sourceHost": "luriechildrens.org",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "autism center pages often expose telehealth, family support, and multilingual intake details on program overview or contact pages",
+            "developmental pediatrics pages often expose referral requirements, interpreter access, and scheduling instructions on patient pages",
+            "email-first providers are good candidates for language/contact-form accessibility cues on their contact pages"
+          ]
+        },
+        {
+          "id": "clinic-osf-peoria-il",
+          "name": "OSF HealthCare Children's Hospital of Illinois - Child Development Center",
+          "county_id": "peoria-il",
+          "state_id": "illinois",
+          "source_url": "https://www.osfhealthcare.org",
+          "phone": "(309) 624-8400",
+          "categories": "developmental_pediatrics,autism_clinic,card_center",
+          "next_step_type": "email",
+          "checked_at": "2026-06-15T16:53:47.643Z",
+          "last_verified_date": null,
+          "sourceHost": "osfhealthcare.org",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "autism center pages often expose telehealth, family support, and multilingual intake details on program overview or contact pages",
+            "developmental pediatrics pages often expose referral requirements, interpreter access, and scheduling instructions on patient pages",
+            "email-first providers are good candidates for language/contact-form accessibility cues on their contact pages"
+          ]
+        },
+        {
+          "id": "clinic-rush-aarts-il",
+          "name": "Rush University Medical Center - Autism Assessment, Research, and Treatment Services (AARTS)",
+          "county_id": "cook-il",
+          "state_id": "illinois",
+          "source_url": "https://www.rush.edu",
+          "phone": "(312) 942-8245",
+          "categories": "developmental_pediatrics,autism_clinic,card_center",
+          "next_step_type": "email",
+          "checked_at": "2026-06-15T16:53:47.643Z",
+          "last_verified_date": null,
+          "sourceHost": "rush.edu",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "autism center pages often expose telehealth, family support, and multilingual intake details on program overview or contact pages",
+            "developmental pediatrics pages often expose referral requirements, interpreter access, and scheduling instructions on patient pages",
+            "email-first providers are good candidates for language/contact-form accessibility cues on their contact pages"
+          ]
+        },
+        {
+          "id": "clinic-uic-family-il",
+          "name": "UIC Family Clinic / Developmental Disabilities Family Clinic",
+          "county_id": "cook-il",
+          "state_id": "illinois",
+          "source_url": "https://www.ahs.uic.edu",
+          "phone": "(312) 413-1490",
+          "categories": "developmental_pediatrics,autism_clinic,card_center",
+          "next_step_type": "email",
+          "checked_at": "2026-06-17 11:37:16",
+          "last_verified_date": null,
+          "sourceHost": "ahs.uic.edu",
+          "extractionHints": [
+            "look for explicit languages, interpreter, ASL, telehealth, virtual visit, transportation, or accessibility wording on the first-party page",
+            "check contact, patient-services, appointment, FAQ, and accessibility sections before considering deeper crawl expansion",
+            "autism center pages often expose telehealth, family support, and multilingual intake details on program overview or contact pages",
+            "developmental pediatrics pages often expose referral requirements, interpreter access, and scheduling instructions on patient pages",
+            "email-first providers are good candidates for language/contact-form accessibility cues on their contact pages"
+          ]
+        }
+      ]
+    }
+  ]
+}

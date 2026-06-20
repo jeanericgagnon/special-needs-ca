@@ -1,0 +1,22 @@
+{
+  "generatedAt": "2026-06-18T01:58:33.809Z",
+  "mode": "apply",
+  "stateFilter": "north-carolina",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 1,
+    "appliedStates": 0,
+    "filesChanged": 0,
+    "skippedByReason": {
+      "skipped_followup": 1
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "north-carolina",
+      "sourceName": "North Carolina Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

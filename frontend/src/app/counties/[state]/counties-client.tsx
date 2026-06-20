@@ -1,9 +1,10 @@
 'use client';
 
-import { useState } from 'react';
+import { useDeferredValue, useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { Search, MapPin, Calculator, Landmark, ArrowRight } from 'lucide-react';
 import type { County } from '@/lib/db';
+import { trackDirectoryAnalyticsEvent } from '@/lib/directoryAnalytics';
 
 interface CountiesClientProps {
   counties: County[];
@@ -13,10 +14,53 @@ interface CountiesClientProps {
 
 export default function CountiesClient({ counties, stateCode, stateName }: CountiesClientProps) {
   const [searchQuery, setSearchQuery] = useState('');
+  const deferredSearchQuery = useDeferredValue(searchQuery);
+  const hasMountedRef = useRef(false);
 
   const filteredCounties = counties.filter(county =>
     county.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
+
+  useEffect(() => {
+    const trimmedQuery = deferredSearchQuery.trim();
+
+    if (!hasMountedRef.current) {
+      hasMountedRef.current = true;
+      if (!trimmedQuery) return;
+    }
+
+    const timeout = window.setTimeout(() => {
+      trackDirectoryAnalyticsEvent({
+        event: 'directory_search',
+        stateId: stateCode.toLowerCase(),
+        pageType: 'county',
+        searchQuery: trimmedQuery || undefined,
+        resultCount: filteredCounties.length,
+      });
+
+      if (filteredCounties.length === 0) {
+        trackDirectoryAnalyticsEvent({
+          event: 'directory_no_results',
+          stateId: stateCode.toLowerCase(),
+          pageType: 'county',
+          searchQuery: trimmedQuery || undefined,
+          resultCount: 0,
+        });
+
+        if (trimmedQuery) {
+          trackDirectoryAnalyticsEvent({
+            event: 'directory_dead_end',
+            stateId: stateCode.toLowerCase(),
+            pageType: 'county',
+            searchQuery: trimmedQuery,
+            resultCount: 0,
+          });
+        }
+      }
+    }, 350);
+
+    return () => window.clearTimeout(timeout);
+  }, [deferredSearchQuery, filteredCounties.length, stateCode]);
 
   return (
     <div>
@@ -158,6 +202,13 @@ export default function CountiesClient({ counties, stateCode, stateName }: Count
                       flex: 1, 
                       textDecoration: 'none' 
                     }}
+                    onClick={() => trackDirectoryAnalyticsEvent({
+                      event: 'directory_resource_click',
+                      stateId: stateCode.toLowerCase(),
+                      countyId: county.id,
+                      pageType: 'county',
+                      recordId: county.id,
+                    })}
                   >
                     <button 
                       className="btn-primary" 
@@ -181,6 +232,13 @@ export default function CountiesClient({ counties, stateCode, stateName }: Count
                       flex: 1, 
                       textDecoration: 'none' 
                     }}
+                    onClick={() => trackDirectoryAnalyticsEvent({
+                      event: 'directory_next_step_click',
+                      stateId: stateCode.toLowerCase(),
+                      countyId: county.id,
+                      pageType: 'county',
+                      recordId: county.id,
+                    })}
                   >
                     <button 
                       className="btn-primary" 

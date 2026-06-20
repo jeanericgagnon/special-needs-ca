@@ -1,0 +1,109 @@
+{
+  "generatedAt": "2026-06-18T19:25:15.243Z",
+  "generatedDate": "2026-06-18",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-18.json",
+  "stateId": "south-dakota",
+  "stateName": "South Dakota",
+  "executionPriority": 1,
+  "sourceTargetsPath": "data/source_targets/south-dakota.json",
+  "ledgerStatus": "",
+  "ledgerNote": "",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 1,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 0,
+  "placeholderProviderTargetCount": 1,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 3,
+  "nextAction": "Add at least 3 more concrete first-party provider targets for South Dakota and then regenerate provider source-pack artifacts.",
+  "providerTargets": [
+    {
+      "sourceName": "South Dakota Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for South Dakota."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "South Dakota County Metadata",
+      "sourceUrl": "https://www.south-dakota.gov",
+      "domain": "south-dakota.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "South Dakota Medicaid Portal",
+      "sourceUrl": "https://dhhs.south-dakota.gov",
+      "domain": "dhhs.south-dakota.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "South Dakota Division of Developmental Disabilities",
+      "sourceUrl": "https://dhs.sd.gov/dd",
+      "domain": "dhs.sd.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "South Dakota HCBS Waivers",
+      "sourceUrl": "https://dhs.sd.gov/dd/hcbs",
+      "domain": "dhs.sd.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "South Dakota Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.south-dakota.gov/earlyintervention",
+      "domain": "dhhs.south-dakota.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "South Dakota Department of Education Special Ed",
+      "sourceUrl": "https://education.south-dakota.gov",
+      "domain": "education.south-dakota.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "South Dakota Regional Special Education Support",
+      "sourceUrl": "https://education.south-dakota.gov/regional",
+      "domain": "education.south-dakota.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "South Dakota Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of South Dakota",
+      "sourceUrl": "https://www.thearcsouth-dakota.org",
+      "domain": "thearcsouth-dakota.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "South Dakota Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.south-dakota.gov/forms",
+      "domain": "dhhs.south-dakota.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "South Dakota Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.south-dakota.gov/rehab",
+      "domain": "dhhs.south-dakota.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "South Dakota Secretary of State Business Registry",
+      "sourceUrl": "https://www.south-dakota.gov/business",
+      "domain": "south-dakota.gov"
+    }
+  ]
+}

@@ -1,0 +1,1394 @@
+{
+  "evidencePath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/nonprofit-accessibility-domains/thearcoftexas-org/2026-06-17T15-45-42-007Z/evidence.json",
+  "promotionPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/nonprofit-accessibility-domains/thearcoftexas-org/2026-06-17T15-45-42-007Z/promotion-decisions.json",
+  "summaryPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/nonprofit-accessibility-domains/thearcoftexas-org/2026-06-17T15-45-42-007Z/summary.json",
+  "mdReportPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/nonprofit-accessibility-domain-thearcoftexas-org-2026-06-17.md",
+  "generatedAt": "2026-06-17",
+  "runStamp": "2026-06-17T15-45-42-007Z",
+  "domain": "thearcoftexas.org",
+  "orgTerms": [
+    "The Arc of Northeast Texas",
+    "The Arc of Texas (Statewide Support)"
+  ],
+  "dryRun": true,
+  "safeStatus": "safe",
+  "beforeDomainCounts": {
+    "total": 259,
+    "inPerson": 0,
+    "orgLevelPresence": 0,
+    "localInPersonEvidence": 0,
+    "trustedMissing": 259
+  },
+  "afterDomainCounts": {
+    "total": 259,
+    "inPerson": 0,
+    "orgLevelPresence": 0,
+    "localInPersonEvidence": 0,
+    "trustedMissing": 259
+  },
+  "candidateCount": 259,
+  "mutationCount": 0,
+  "skippedCount": 259,
+  "classificationCounts": {},
+  "evidenceLevelCounts": {},
+  "actionCounts": {},
+  "warnings": [
+    "aggregator_or_network_domain",
+    "many_to_one_evidence",
+    "bulk_org_level_review_threshold"
+  ],
+  "sampleRows": [],
+  "mutations": [],
+  "skipped": [
+    {
+      "id": "tx-np-arc-anderson-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-andrews-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-angelina-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-aransas-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-archer-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-armstrong-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-atascosa-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-austin-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-bailey-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-bandera-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-bastrop-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-baylor-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-bee-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-bell-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-bexar-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-blanco-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-borden-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-bosque-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-bowie-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-brazoria-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-brazos-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-brewster-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-briscoe-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-brooks-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-brown-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-burleson-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-burnet-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-caldwell-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-calhoun-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-callahan-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-cameron-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-camp-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-carson-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-cass-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-castro-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-chambers-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-cherokee-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-childress-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-clay-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-cochran-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-coke-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-coleman-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-collin-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-collingsworth-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-colorado-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-comal-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-comanche-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-concho-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-cooke-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-coryell-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-cottle-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-crane-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-crockett-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-crosby-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-culberson-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-dallam-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-dallas-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-dawson-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-deaf-smith-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-delta-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-denton-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-dewitt-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-dickens-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-dimmit-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-donley-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-duval-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-eastland-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-ector-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-edwards-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-el-paso-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-ellis-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-erath-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-falls-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-fannin-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-fayette-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-fisher-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-floyd-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-foard-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-fort-bend-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-franklin-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-freestone-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-frio-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-gaines-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-galveston-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-garza-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-gillespie-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-glasscock-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-goliad-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-gonzales-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-gray-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-grayson-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-gregg-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-grimes-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-guadalupe-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-hale-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-hall-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-hamilton-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-hansford-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-hardeman-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-hardin-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-harris-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-harrison-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-hartley-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-haskell-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-hays-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-hemphill-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-henderson-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-hidalgo-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-hill-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-hockley-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-hood-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-hopkins-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-houston-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-howard-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-hudspeth-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-hunt-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-hutchinson-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-irion-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-jack-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-jackson-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-jasper-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-jeff-davis-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-jefferson-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-jim-hogg-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-jim-wells-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-johnson-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-jones-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-karnes-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-kaufman-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-kendall-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-kenedy-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-kent-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-kerr-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-kimble-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-king-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-kinney-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-kleberg-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-knox-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-la-salle-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-lamar-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-lamb-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-lampasas-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-lavaca-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-lee-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-leon-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-liberty-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-limestone-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-lipscomb-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-live-oak-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-llano-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-loving-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-lubbock-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-lynn-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-madison-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-marion-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-martin-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-mason-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-matagorda-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-maverick-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-mcculloch-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-mclennan-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-mcmullen-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-medina-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-menard-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-midland-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-milam-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-mills-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-mitchell-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-montague-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-montgomery-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-moore-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-morris-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-motley-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-nacogdoches-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-navarro-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-newton-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-nolan-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-nueces-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-ochiltree-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-oldham-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-orange-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-palo-pinto-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-panola-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-parker-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-parmer-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-pecos-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-polk-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-potter-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-presidio-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-rains-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-randall-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-reagan-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-real-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-red-river-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-reeves-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-refugio-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-roberts-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-robertson-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-rockwall-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-runnels-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-rusk-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-sabine-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-san-augustine-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-san-jacinto-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-san-patricio-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-san-saba-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-schleicher-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-scurry-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-shackelford-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-shelby-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-sherman-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-smith-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-somervell-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-starr-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-stephens-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-sterling-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-stonewall-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-sutton-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-swisher-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-tarrant-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-taylor-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-terrell-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-terry-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-throckmorton-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-titus-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-tom-green-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-travis-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-trinity-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-tyler-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-upshur-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-upton-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-uvalde-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-val-verde-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-van-zandt-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-victoria-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-walker-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-waller-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-ward-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-washington-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-webb-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-wharton-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-wheeler-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-wichita-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-wilbarger-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-willacy-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-williamson-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-wilson-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-winkler-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-wise-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-wood-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-yoakum-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-young-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-zapata-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-arc-zavala-tx",
+      "name": "The Arc of Texas (Statewide Support)",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-the-arc-of-northeast-texas-bowie-tx",
+      "name": "The Arc of Northeast Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-the-arc-of-northeast-texas-camp-tx",
+      "name": "The Arc of Northeast Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-the-arc-of-northeast-texas-cass-tx",
+      "name": "The Arc of Northeast Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-the-arc-of-northeast-texas-morris-tx",
+      "name": "The Arc of Northeast Texas",
+      "reason": "missing_validated_domain_evidence"
+    },
+    {
+      "id": "tx-np-the-arc-of-northeast-texas-titus-tx",
+      "name": "The Arc of Northeast Texas",
+      "reason": "missing_validated_domain_evidence"
+    }
+  ],
+  "skipReasons": {
+    "missing_validated_domain_evidence": 259
+  },
+  "nextDomains": [
+    {
+      "domain": "thearc.org",
+      "missingRows": 12021
+    },
+    {
+      "domain": "parentcenterhub.org",
+      "missingRows": 4483
+    },
+    {
+      "domain": "texasautismsociety.org",
+      "missingRows": 509
+    },
+    {
+      "domain": "txp2p.org",
+      "missingRows": 508
+    },
+    {
+      "domain": "thearcoftexas.org",
+      "missingRows": 259
+    },
+    {
+      "domain": "disabilityrightstx.org",
+      "missingRows": 254
+    },
+    {
+      "domain": "navigatelifetexas.org",
+      "missingRows": 254
+    },
+    {
+      "domain": "prntexas.org",
+      "missingRows": 254
+    },
+    {
+      "domain": "autismqc.org",
+      "missingRows": 201
+    },
+    {
+      "domain": "p2pga.org",
+      "missingRows": 159
+    },
+    {
+      "domain": "arcofky.org",
+      "missingRows": 120
+    },
+    {
+      "domain": "asbg.org",
+      "missingRows": 120
+    }
+  ],
+  "rollbackSqlPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/nonprofit-accessibility-domains/thearcoftexas-org/2026-06-17T15-45-42-007Z/rollback.sql",
+  "forwardSqlPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/nonprofit-accessibility-domains/thearcoftexas-org/2026-06-17T15-45-42-007Z/forward.sql"
+}

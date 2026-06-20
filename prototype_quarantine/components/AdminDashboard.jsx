@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { initialVerificationQueue, coverageGaps } from '../data/seedData';
+import { initialVerificationQueue, coverageGaps } from '../../src/data/seedData.js';
 import { 
   ShieldCheck, AlertTriangle, RefreshCw, Layers, 
   MapPin, CheckCircle, Trash2, Heart, PlusCircle, Bookmark 

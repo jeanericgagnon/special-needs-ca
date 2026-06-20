@@ -1,0 +1,182 @@
+{
+  "generatedAt": "2026-06-18T05:51:44.517Z",
+  "generatedDate": "2026-06-18",
+  "stateId": "michigan",
+  "sourceStatePacketPath": "docs/generated/provider-pull-now-state-packets/provider-pull-now-state-packet-michigan-2026-06-18.json",
+  "sourceDecisionFilePath": "data/provider-pull-now-decisions.json",
+  "summary": {
+    "totalRows": 4,
+    "unresolvedRows": 4,
+    "bySuggestedDecisionMode": {
+      "needs_manual_research": 4
+    }
+  },
+  "rows": [
+    {
+      "stateId": "michigan",
+      "actionClass": "author_alternate_first_party_target",
+      "followupReason": "access_blocked_403",
+      "sourceUrl": "https://www.mottchildren.org/",
+      "hostname": "www.mottchildren.org",
+      "repeatCount": 4,
+      "sameDomainCandidateCount": 1,
+      "sameDomainCandidates": [
+        {
+          "sourceName": "C.S. Mott Children's Hospital",
+          "sourceUrl": "https://www.mottchildren.org/",
+          "priority": 1
+        }
+      ],
+      "topConcreteTargets": [
+        {
+          "sourceName": "C.S. Mott Children's Hospital",
+          "sourceUrl": "https://www.mottchildren.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Children's Hospital of Michigan",
+          "sourceUrl": "https://www.childrensdmc.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Helen DeVos Children's Hospital",
+          "sourceUrl": "https://www.spectrumhealth.org/locations/spectrum-health-hospitals-helen-devos-childrens-hospital",
+          "priority": 1
+        }
+      ],
+      "currentDecision": {
+        "decisionMode": "",
+        "reviewedSourceName": "",
+        "reviewedSourceUrl": "",
+        "retryNotes": "",
+        "reviewNotes": "",
+        "reviewedBy": ""
+      },
+      "suggestedDecisionMode": "needs_manual_research",
+      "suggestedReason": "A same-domain candidate exists, but saved artifacts did not prove a safe, meaningfully different replacement URL."
+    },
+    {
+      "stateId": "michigan",
+      "actionClass": "author_alternate_first_party_target",
+      "followupReason": "access_blocked_403",
+      "sourceUrl": "https://www.childrensdmc.org/",
+      "hostname": "www.childrensdmc.org",
+      "repeatCount": 2,
+      "sameDomainCandidateCount": 1,
+      "sameDomainCandidates": [
+        {
+          "sourceName": "Children's Hospital of Michigan",
+          "sourceUrl": "https://www.childrensdmc.org/",
+          "priority": 1
+        }
+      ],
+      "topConcreteTargets": [
+        {
+          "sourceName": "C.S. Mott Children's Hospital",
+          "sourceUrl": "https://www.mottchildren.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Children's Hospital of Michigan",
+          "sourceUrl": "https://www.childrensdmc.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Helen DeVos Children's Hospital",
+          "sourceUrl": "https://www.spectrumhealth.org/locations/spectrum-health-hospitals-helen-devos-childrens-hospital",
+          "priority": 1
+        }
+      ],
+      "currentDecision": {
+        "decisionMode": "",
+        "reviewedSourceName": "",
+        "reviewedSourceUrl": "",
+        "retryNotes": "",
+        "reviewNotes": "",
+        "reviewedBy": ""
+      },
+      "suggestedDecisionMode": "needs_manual_research",
+      "suggestedReason": "A same-domain candidate exists, but saved artifacts did not prove a safe, meaningfully different replacement URL."
+    },
+    {
+      "stateId": "michigan",
+      "actionClass": "author_alternate_first_party_target",
+      "followupReason": "access_blocked_403",
+      "sourceUrl": "https://www.spectrumhealth.org/locations/spectrum-health-hospitals-helen-devos-childrens-hospital",
+      "hostname": "www.spectrumhealth.org",
+      "repeatCount": 2,
+      "sameDomainCandidateCount": 1,
+      "sameDomainCandidates": [
+        {
+          "sourceName": "Helen DeVos Children's Hospital",
+          "sourceUrl": "https://www.spectrumhealth.org/locations/spectrum-health-hospitals-helen-devos-childrens-hospital",
+          "priority": 1
+        }
+      ],
+      "topConcreteTargets": [
+        {
+          "sourceName": "C.S. Mott Children's Hospital",
+          "sourceUrl": "https://www.mottchildren.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Children's Hospital of Michigan",
+          "sourceUrl": "https://www.childrensdmc.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Helen DeVos Children's Hospital",
+          "sourceUrl": "https://www.spectrumhealth.org/locations/spectrum-health-hospitals-helen-devos-childrens-hospital",
+          "priority": 1
+        }
+      ],
+      "currentDecision": {
+        "decisionMode": "",
+        "reviewedSourceName": "",
+        "reviewedSourceUrl": "",
+        "retryNotes": "",
+        "reviewNotes": "",
+        "reviewedBy": ""
+      },
+      "suggestedDecisionMode": "needs_manual_research",
+      "suggestedReason": "A same-domain candidate exists, but saved artifacts did not prove a safe, meaningfully different replacement URL."
+    },
+    {
+      "stateId": "michigan",
+      "actionClass": "author_alternate_first_party_target",
+      "followupReason": "access_blocked_403",
+      "sourceUrl": "https://www.uofmhealth.org/our-care/specialties-services/autism-spectrum-disorders-appointments",
+      "hostname": "www.uofmhealth.org",
+      "repeatCount": 2,
+      "sameDomainCandidateCount": 0,
+      "sameDomainCandidates": [],
+      "topConcreteTargets": [
+        {
+          "sourceName": "C.S. Mott Children's Hospital",
+          "sourceUrl": "https://www.mottchildren.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Children's Hospital of Michigan",
+          "sourceUrl": "https://www.childrensdmc.org/",
+          "priority": 1
+        },
+        {
+          "sourceName": "Helen DeVos Children's Hospital",
+          "sourceUrl": "https://www.spectrumhealth.org/locations/spectrum-health-hospitals-helen-devos-childrens-hospital",
+          "priority": 1
+        }
+      ],
+      "currentDecision": {
+        "decisionMode": "",
+        "reviewedSourceName": "",
+        "reviewedSourceUrl": "",
+        "retryNotes": "",
+        "reviewNotes": "",
+        "reviewedBy": ""
+      },
+      "suggestedDecisionMode": "needs_manual_research",
+      "suggestedReason": "Saved artifacts do not yet prove a safe first-party replacement; keep this in manual research until one is confirmed."
+    }
+  ]
+}

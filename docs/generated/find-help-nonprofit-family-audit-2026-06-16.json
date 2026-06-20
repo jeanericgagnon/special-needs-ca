@@ -1,0 +1,119 @@
+{
+  "generatedAt": "2026-06-16",
+  "dbPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/frontend/ca_disability_navigator.db",
+  "publicCandidateCount": 29499,
+  "topFamilies": [
+    {
+      "family": "umbrella:the-arc",
+      "count": 8959
+    },
+    {
+      "family": "thearc.org",
+      "count": 5590
+    },
+    {
+      "family": "parentcenterhub.org",
+      "count": 4473
+    },
+    {
+      "family": "umbrella:autism-society",
+      "count": 3588
+    },
+    {
+      "family": "umbrella:disability-rights",
+      "count": 1279
+    },
+    {
+      "family": "txp2p.org",
+      "count": 508
+    },
+    {
+      "family": "umbrella:parent-to-parent",
+      "count": 341
+    },
+    {
+      "family": "navigatelifetexas.org",
+      "count": 254
+    },
+    {
+      "family": "prntexas.org",
+      "count": 254
+    },
+    {
+      "family": "thegao.org",
+      "count": 159
+    },
+    {
+      "family": "kypa.net",
+      "count": 120
+    },
+    {
+      "family": "kyspin.com",
+      "count": 120
+    },
+    {
+      "family": "moadvocacy.org",
+      "count": 115
+    },
+    {
+      "family": "ptimpact.org",
+      "count": 115
+    },
+    {
+      "family": "legalaidtx.org",
+      "count": 114
+    }
+  ],
+  "naiveSelection": [
+    {
+      "id": "np-arc-la",
+      "name": "The Arc of Los Angeles",
+      "family": "umbrella:the-arc",
+      "state": "california",
+      "richnessScore": 4,
+      "freshness": "2026-06-16"
+    },
+    {
+      "id": "np-arc-sf",
+      "name": "The Arc of San Francisco",
+      "family": "umbrella:the-arc",
+      "state": "california",
+      "richnessScore": 4,
+      "freshness": "2026-06-16"
+    },
+    {
+      "id": "np-arc-sd",
+      "name": "The Arc of San Diego",
+      "family": "umbrella:the-arc",
+      "state": "california",
+      "richnessScore": 4,
+      "freshness": "2026-06-16"
+    }
+  ],
+  "diverseSelection": [
+    {
+      "id": "np-arc-la",
+      "name": "The Arc of Los Angeles",
+      "family": "umbrella:the-arc",
+      "state": "california",
+      "richnessScore": 4,
+      "freshness": "2026-06-16"
+    },
+    {
+      "id": "tx-np-autism-anderson-tx",
+      "name": "Autism Society of Texas (Statewide Support)",
+      "family": "umbrella:autism-society",
+      "state": "texas",
+      "richnessScore": 4,
+      "freshness": "2026-06-16"
+    },
+    {
+      "id": "fl-np-arc-jax-duval-fl",
+      "name": "The Arc Jacksonville",
+      "family": "arcjacksonville.org",
+      "state": "florida",
+      "richnessScore": 4,
+      "freshness": "2026-06-16"
+    }
+  ]
+}

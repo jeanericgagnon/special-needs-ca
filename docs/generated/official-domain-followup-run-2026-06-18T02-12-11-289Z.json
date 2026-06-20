@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-06-18T02:12:11.294Z",
+  "mode": "apply",
+  "stateFilter": "washington",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 4,
+    "appliedStates": 2,
+    "filesChanged": 1,
+    "skippedByReason": {
+      "skipped_followup": 2
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "washington",
+      "sourceName": "Washington Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "washington",
+      "sourceName": "Washington HCBS Waivers Page",
+      "status": "applied",
+      "targetUrl": "https://www.dshs.wa.gov/dda/hcbs"
+    },
+    {
+      "stateId": "washington",
+      "sourceName": "Washington Developmental Services Directory",
+      "status": "applied",
+      "targetUrl": "https://www.dshs.wa.gov/dda"
+    },
+    {
+      "stateId": "washington",
+      "sourceName": "Washington Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

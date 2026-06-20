@@ -1,0 +1,107 @@
+{
+  "generatedAt": "2026-06-18T04:21:57.447Z",
+  "mode": "apply",
+  "inputPath": "docs/generated/advocate-manual-review-queue-2026-06-18.json",
+  "dbPath": "ca_disability_navigator.db",
+  "summary": {
+    "inputRows": 12,
+    "appliedRows": 12,
+    "appliedByBlocker": {
+      "multistate_advocate_without_county": 6,
+      "missing_advocate_county_resolution": 4,
+      "generic_advocate_name": 2
+    },
+    "skippedByReason": {},
+    "appliedByReviewStatus": {
+      "blocked_multistate_advocate_without_county": 6,
+      "blocked_missing_advocate_county_resolution": 4,
+      "blocked_generic_advocate_name": 2
+    }
+  },
+  "decisions": [
+    {
+      "rowId": 5009,
+      "stateId": "multi-state",
+      "status": "applied",
+      "reviewStatus": "blocked_multistate_advocate_without_county",
+      "blockerKey": "multistate_advocate_without_county"
+    },
+    {
+      "rowId": 5010,
+      "stateId": "texas",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_advocate_county_resolution",
+      "blockerKey": "missing_advocate_county_resolution"
+    },
+    {
+      "rowId": 5011,
+      "stateId": "new-jersey",
+      "status": "applied",
+      "reviewStatus": "blocked_generic_advocate_name",
+      "blockerKey": "generic_advocate_name"
+    },
+    {
+      "rowId": 5012,
+      "stateId": "arizona",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_advocate_county_resolution",
+      "blockerKey": "missing_advocate_county_resolution"
+    },
+    {
+      "rowId": 5013,
+      "stateId": "multi-state",
+      "status": "applied",
+      "reviewStatus": "blocked_multistate_advocate_without_county",
+      "blockerKey": "multistate_advocate_without_county"
+    },
+    {
+      "rowId": 5014,
+      "stateId": "multi-state",
+      "status": "applied",
+      "reviewStatus": "blocked_generic_advocate_name",
+      "blockerKey": "generic_advocate_name"
+    },
+    {
+      "rowId": 5015,
+      "stateId": "louisiana",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_advocate_county_resolution",
+      "blockerKey": "missing_advocate_county_resolution"
+    },
+    {
+      "rowId": 5016,
+      "stateId": "multi-state",
+      "status": "applied",
+      "reviewStatus": "blocked_multistate_advocate_without_county",
+      "blockerKey": "multistate_advocate_without_county"
+    },
+    {
+      "rowId": 5017,
+      "stateId": "multi-state",
+      "status": "applied",
+      "reviewStatus": "blocked_multistate_advocate_without_county",
+      "blockerKey": "multistate_advocate_without_county"
+    },
+    {
+      "rowId": 5018,
+      "stateId": "multi-state",
+      "status": "applied",
+      "reviewStatus": "blocked_multistate_advocate_without_county",
+      "blockerKey": "multistate_advocate_without_county"
+    },
+    {
+      "rowId": 5019,
+      "stateId": "multi-state",
+      "status": "applied",
+      "reviewStatus": "blocked_multistate_advocate_without_county",
+      "blockerKey": "multistate_advocate_without_county"
+    },
+    {
+      "rowId": 5020,
+      "stateId": "pennsylvania",
+      "status": "applied",
+      "reviewStatus": "blocked_missing_advocate_county_resolution",
+      "blockerKey": "missing_advocate_county_resolution"
+    }
+  ]
+}

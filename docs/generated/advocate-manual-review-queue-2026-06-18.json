@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-06-18",
+  "runId": "2026-06-18T04-22-48-063Z",
+  "dbPath": "ca_disability_navigator.db",
+  "sourceCandidatesPath": "data/source-acquisition-runs/2026-06-18T04-22-48-063Z/staged/advocates-legal/promotion-candidates.ndjson",
+  "summary": {
+    "totalRows": 0,
+    "distinctStates": 0,
+    "byBlockerKey": {},
+    "byReviewStatus": {},
+    "byStateId": {}
+  },
+  "rows": []
+}

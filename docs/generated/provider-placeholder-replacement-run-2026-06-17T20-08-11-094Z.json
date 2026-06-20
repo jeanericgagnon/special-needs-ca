@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-06-17T20:08:11.095Z",
+  "mode": "apply",
+  "stateFilter": "alabama",
+  "inputPath": "data/provider-placeholder-replacement-decisions.json",
+  "summary": {
+    "inputRows": 1,
+    "appliedStates": 1,
+    "appliedReplacements": 2,
+    "filesChanged": 1,
+    "skippedByReason": {}
+  },
+  "decisions": [
+    {
+      "stateId": "alabama",
+      "placeholderSourceName": "Alabama Children's Hospital Clinics",
+      "status": "applied",
+      "replacementCount": 2,
+      "replacements": [
+        {
+          "source_name": "Children's of Alabama",
+          "source_url": "https://www.childrensal.org/",
+          "domain": "childrensal.org"
+        },
+        {
+          "source_name": "UAB Medicine Pediatrics",
+          "source_url": "https://www.uabmedicine.org/",
+          "domain": "uabmedicine.org"
+        }
+      ]
+    }
+  ]
+}

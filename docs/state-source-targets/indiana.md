@@ -3,7 +3,7 @@
 This document outlines the authoritative crawler target domains, specific agencies, and extraction methods required to replace programmatic placeholders in Indiana with real, source-listed records.
 
 > [!NOTE]
-> **Category Scaffold Complete:** This state is currently mapped as a category-level scaffold (14 targets). Source-level expansion will follow in Wave 2.
+> **Provider Source Expansion Started:** This state was originally mapped as a category-level scaffold. Concrete first-party provider targets have now been added for the hospital / university clinic layer.
 
 ## 1. Domain Crawler Targets (Wave 2)
 
@@ -21,7 +21,9 @@ This document outlines the authoritative crawler target domains, specific agenci
 | **Special Education Attorneys Directory** | J. Provider and advocate directories / Attorney Directory | [copaa.org](https://www.copaa.org) | `playwright` | `iep_advocates` |
 | **Indiana Medicaid & Special Education Forms** | K. Forms and guides / Forms Library | [dhhs.indiana.gov](https://dhhs.indiana.gov/forms) | `pdf_extract` | `forms` |
 | **Indiana Vocational Rehabilitation Services** | L. Transition / adult services / Vocational Rehabilitation | [dhhs.indiana.gov](https://dhhs.indiana.gov/rehab) | `static_fetch` | `programs` |
-| **Indiana Children's Hospital Clinics** | M. Hospitals / university clinics / Hospitals | [childrenshospital.org](https://www.childrenshospital.org) | `manual_review` | `resource_providers` |
+| **Riley Children's Health** | M. Hospitals / university clinics / Hospitals | [rileychildrens.org](https://www.rileychildrens.org) | `static_fetch` | `resource_providers` |
+| **Peyton Manning Children's Hospital** | M. Hospitals / university clinics / Hospitals | [healthcare.ascension.org](https://healthcare.ascension.org/locations/indiana/inasc/pmch) | `static_fetch` | `resource_providers` |
+| **Indiana University Health Pediatric Care** | M. Hospitals / university clinics / Hospital systems | [iuhealth.org](https://iuhealth.org) | `static_fetch` | `resource_providers` |
 | **Indiana Secretary of State Business Registry** | N. Data quality / verification sources / Open Data Portal | [indiana.gov](https://www.indiana.gov/business) | `playwright` | `sources` |
 
 ## 2. Detailed Category Targets
@@ -183,17 +185,41 @@ This document outlines the authoritative crawler target domains, specific agenci
 - **Last Checked:** 2026-06-13
 
 ### Category: M. Hospitals / university clinics (Hospitals)
-- **Source Name:** Indiana Children's Hospital Clinics
-- **Source URL:** [https://www.childrenshospital.org](https://www.childrenshospital.org)
-- **Domain:** `childrenshospital.org`
+- **Source Name:** Riley Children's Health
+- **Source URL:** [https://www.rileychildrens.org](https://www.rileychildrens.org)
+- **Domain:** `rileychildrens.org`
 - **Target Table:** `resource_providers`
 - **Expected Fields:** `name, phone, address`
-- **Crawl Method:** `manual_review`
+- **Crawl Method:** `static_fetch`
+- **Robots.txt Status:** `allowed`
+- **Terms Risk:** `low`
+- **Priority:** 1
+- **Notes:** Concrete first-party pediatric hospital target for Indiana provider buildout.
+- **Last Checked:** 2026-06-17
+
+- **Source Name:** Peyton Manning Children's Hospital
+- **Source URL:** [https://healthcare.ascension.org/locations/indiana/inasc/pmch](https://healthcare.ascension.org/locations/indiana/inasc/pmch)
+- **Domain:** `healthcare.ascension.org`
+- **Target Table:** `resource_providers`
+- **Expected Fields:** `name, phone, address`
+- **Crawl Method:** `static_fetch`
+- **Robots.txt Status:** `allowed`
+- **Terms Risk:** `low`
+- **Priority:** 1
+- **Notes:** Concrete first-party Indiana pediatric hospital target verified on Ascension's public children’s site.
+- **Last Checked:** 2026-06-17
+
+- **Source Name:** Indiana University Health Pediatric Care
+- **Source URL:** [https://iuhealth.org](https://iuhealth.org)
+- **Domain:** `iuhealth.org`
+- **Target Table:** `resource_providers`
+- **Expected Fields:** `name, phone, address`
+- **Crawl Method:** `static_fetch`
 - **Robots.txt Status:** `allowed`
 - **Terms Risk:** `low`
 - **Priority:** 2
-- **Notes:** Initial category-level scaffold source target for Indiana.
-- **Last Checked:** 2026-06-13
+- **Notes:** Concrete first-party statewide pediatric care system target for Indiana.
+- **Last Checked:** 2026-06-17
 
 ### Category: N. Data quality / verification sources (Open Data Portal)
 - **Source Name:** Indiana Secretary of State Business Registry
@@ -207,4 +233,3 @@ This document outlines the authoritative crawler target domains, specific agenci
 - **Priority:** 2
 - **Notes:** Initial category-level scaffold source target for Indiana.
 - **Last Checked:** 2026-06-13
-

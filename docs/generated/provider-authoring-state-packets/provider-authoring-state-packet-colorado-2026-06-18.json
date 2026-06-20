@@ -1,0 +1,117 @@
+{
+  "generatedAt": "2026-06-18T18:45:47.956Z",
+  "generatedDate": "2026-06-18",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-18.json",
+  "stateId": "colorado",
+  "stateName": "Colorado",
+  "executionPriority": 1,
+  "sourceTargetsPath": "data/source_targets/colorado.json",
+  "ledgerStatus": "",
+  "ledgerNote": "",
+  "publicSafeProviders": 2,
+  "totalProviderRows": 2,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 2,
+  "placeholderProviderTargetCount": 0,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 1,
+  "nextAction": "Add at least 1 more concrete first-party provider targets for Colorado and then regenerate provider source-pack artifacts.",
+  "providerTargets": [
+    {
+      "sourceName": "Children's Hospital Colorado",
+      "sourceUrl": "https://www.childrenscolorado.org",
+      "domain": "childrenscolorado.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Concrete first-party pediatric hospital target for Colorado provider buildout."
+    },
+    {
+      "sourceName": "JFK Partners",
+      "sourceUrl": "https://medschool.cuanschutz.edu/jfk-partners",
+      "domain": "medschool.cuanschutz.edu",
+      "crawlMethod": "static_fetch",
+      "organizationType": "university_clinic",
+      "notes": "Concrete first-party university developmental disabilities clinic target for Colorado."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Colorado County Metadata",
+      "sourceUrl": "https://www.colorado.gov",
+      "domain": "colorado.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Colorado Medicaid Portal",
+      "sourceUrl": "https://dhhs.colorado.gov",
+      "domain": "dhhs.colorado.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Colorado Division for Developmental Disabilities",
+      "sourceUrl": "https://hcpf.colorado.gov/developmental-disabilities",
+      "domain": "hcpf.colorado.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Colorado HCBS Waivers",
+      "sourceUrl": "https://hcpf.colorado.gov/hcbs",
+      "domain": "hcpf.colorado.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Colorado Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.colorado.gov/earlyintervention",
+      "domain": "dhhs.colorado.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Colorado Department of Education Special Ed",
+      "sourceUrl": "https://education.colorado.gov",
+      "domain": "education.colorado.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Colorado Regional Special Education Support",
+      "sourceUrl": "https://education.colorado.gov/regional",
+      "domain": "education.colorado.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Colorado Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Colorado",
+      "sourceUrl": "https://www.thearccolorado.org",
+      "domain": "thearccolorado.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Colorado Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.colorado.gov/forms",
+      "domain": "dhhs.colorado.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Colorado Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.colorado.gov/rehab",
+      "domain": "dhhs.colorado.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Colorado Secretary of State Business Registry",
+      "sourceUrl": "https://www.colorado.gov/business",
+      "domain": "colorado.gov"
+    }
+  ]
+}

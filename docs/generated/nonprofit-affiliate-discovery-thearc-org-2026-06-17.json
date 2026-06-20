@@ -1,0 +1,4501 @@
+{
+  "generatedAt": "2026-06-17",
+  "domain": "thearc.org",
+  "seedUrl": "https://thearc.org/find-a-chapter/",
+  "dbAffiliateCount": 499,
+  "discoveredLinkCount": 0,
+  "mergedAffiliateCount": 499,
+  "affiliates": [
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-dallas-fort-worth/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 254,
+      "nameCount": 1,
+      "countyCount": 254
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-greater-beaumont/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 254,
+      "nameCount": 1,
+      "countyCount": 254
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-katy/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 254,
+      "nameCount": 1,
+      "countyCount": 254
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-the-gulf-coast/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 254,
+      "nameCount": 1,
+      "countyCount": 254
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-bryan-college-station/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 248,
+      "nameCount": 1,
+      "countyCount": 248
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-san-antonio/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 248,
+      "nameCount": 1,
+      "countyCount": 248
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-southwest-georgia/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 158,
+      "nameCount": 1,
+      "countyCount": 158
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-northeast-georgia/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 153,
+      "nameCount": 1,
+      "countyCount": 153
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-central-kentucky/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 120,
+      "nameCount": 1,
+      "countyCount": 120
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/kentucky/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 119,
+      "nameCount": 1,
+      "countyCount": 119
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/missouri/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 115,
+      "nameCount": 1,
+      "countyCount": 115
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-the-ozarks/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 115,
+      "nameCount": 1,
+      "countyCount": 115
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/tarc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 105,
+      "nameCount": 1,
+      "countyCount": 105
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-central-plains/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 105,
+      "nameCount": 1,
+      "countyCount": 105
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-solomon-valley/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 103,
+      "nameCount": 1,
+      "countyCount": 103
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/blue-island-citizens-for-dd/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 102,
+      "nameCount": 1,
+      "countyCount": 102
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/gateway-services-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 102,
+      "nameCount": 1,
+      "countyCount": 102
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/larc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 102,
+      "nameCount": 1,
+      "countyCount": 102
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/sertoma-star-services/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 102,
+      "nameCount": 1,
+      "countyCount": 102
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/ucp-seguin-of-greater-chicago/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 102,
+      "nameCount": 1,
+      "countyCount": 102
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/ups-for-downs/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 102,
+      "nameCount": 1,
+      "countyCount": 102
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-greensboro-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 100,
+      "nameCount": 1,
+      "countyCount": 100
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-high-point/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 100,
+      "nameCount": 1,
+      "countyCount": 100
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-the-triangle/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 100,
+      "nameCount": 1,
+      "countyCount": 100
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/buffalo-river-services-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 95,
+      "nameCount": 1,
+      "countyCount": 95
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-eastern-shore/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 95,
+      "nameCount": 1,
+      "countyCount": 95
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-greater-williamsburg/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 95,
+      "nameCount": 1,
+      "countyCount": 95
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-mid-south/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 95,
+      "nameCount": 1,
+      "countyCount": 95
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-new-river-valley/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 95,
+      "nameCount": 1,
+      "countyCount": 95
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-north-central-virginia/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 95,
+      "nameCount": 1,
+      "countyCount": 95
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-southside/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 95,
+      "nameCount": 1,
+      "countyCount": 95
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-the-great-smokies/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 95,
+      "nameCount": 1,
+      "countyCount": 95
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-the-piedmont/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 95,
+      "nameCount": 1,
+      "countyCount": 95
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/versability-resources-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 95,
+      "nameCount": 1,
+      "countyCount": 95
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-central-nebraska/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 93,
+      "nameCount": 1,
+      "countyCount": 93
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-norfolk/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 93,
+      "nameCount": 1,
+      "countyCount": 93
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-omaha-at-the-ollie-webb-center/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 93,
+      "nameCount": 1,
+      "countyCount": 93
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/achieva-resources-corporation-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 92,
+      "nameCount": 1,
+      "countyCount": 92
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/adec-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 92,
+      "nameCount": 1,
+      "countyCount": 92
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/hillcroft-services-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 92,
+      "nameCount": 1,
+      "countyCount": 92
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/hopewell-center/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 92,
+      "nameCount": 1,
+      "countyCount": 92
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/new-horizons-the-arc-of-southeast-indiana/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 92,
+      "nameCount": 1,
+      "countyCount": 92
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/peak-community-services-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 92,
+      "nameCount": 1,
+      "countyCount": 92
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-evansville/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 92,
+      "nameCount": 1,
+      "countyCount": 92
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-hendericks-county-sycamore-services/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 92,
+      "nameCount": 1,
+      "countyCount": 92
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-southwest-indiana/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 92,
+      "nameCount": 1,
+      "countyCount": 92
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-hoosier-prairie-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 92,
+      "nameCount": 1,
+      "countyCount": 92
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/stone-belt-arc-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 91,
+      "nameCount": 1,
+      "countyCount": 91
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-northland/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 87,
+      "nameCount": 1,
+      "countyCount": 87
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-dearborn/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 83,
+      "nameCount": 1,
+      "countyCount": 83
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-detroit/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 83,
+      "nameCount": 1,
+      "countyCount": 83
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-downriver/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 83,
+      "nameCount": 1,
+      "countyCount": 83
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-grosse-pointe-harper-woods/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 83,
+      "nameCount": 1,
+      "countyCount": 83
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-central-michigan/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 83,
+      "nameCount": 1,
+      "countyCount": 83
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-mid-michigan/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 83,
+      "nameCount": 1,
+      "countyCount": 83
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-northern-michigan/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 82,
+      "nameCount": 1,
+      "countyCount": 82
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-northwest-mississippi/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 82,
+      "nameCount": 1,
+      "countyCount": 82
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-southeast-mississippi/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 82,
+      "nameCount": 1,
+      "countyCount": 82
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/arc-of-southwest-mississippi/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 81,
+      "nameCount": 1,
+      "countyCount": 81
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/arkansas/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 75,
+      "nameCount": 1,
+      "countyCount": 75
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-for-the-river-valley/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 75,
+      "nameCount": 1,
+      "countyCount": 75
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/arc-of-southwestern-wisconsin-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 70,
+      "nameCount": 1,
+      "countyCount": 70
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/arc-gateway/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 67,
+      "nameCount": 1,
+      "countyCount": 67
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-nature-coast/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 67,
+      "nameCount": 1,
+      "countyCount": 67
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-north-florida/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 67,
+      "nameCount": 1,
+      "countyCount": 67
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-central-alabama/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 67,
+      "nameCount": 1,
+      "countyCount": 67
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-greater-pittsburgh/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 67,
+      "nameCount": 1,
+      "countyCount": 67
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-northeastern-pennsylvania/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 67,
+      "nameCount": 1,
+      "countyCount": 67
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-southwest-alabama/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 67,
+      "nameCount": 1,
+      "countyCount": 67
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-southwest-florida/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 67,
+      "nameCount": 1,
+      "countyCount": 67
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-st-lucie-county-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 67,
+      "nameCount": 1,
+      "countyCount": 67
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-the-chattahoochee-valley/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 67,
+      "nameCount": 1,
+      "countyCount": 67
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-the-gulf-coast-al/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 67,
+      "nameCount": 1,
+      "countyCount": 67
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-the-shoals/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 67,
+      "nameCount": 1,
+      "countyCount": 67
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-ridge-area/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 67,
+      "nameCount": 1,
+      "countyCount": 67
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-sunrise-of-central-florida/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 67,
+      "nameCount": 1,
+      "countyCount": 67
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/victory-living-programs-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 67,
+      "nameCount": 1,
+      "countyCount": 67
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/space-coast/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 66,
+      "nameCount": 1,
+      "countyCount": 66
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-jacksonville/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 66,
+      "nameCount": 1,
+      "countyCount": 66
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-south-florida/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 66,
+      "nameCount": 1,
+      "countyCount": 66
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/south-dakota/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 65,
+      "nameCount": 1,
+      "countyCount": 65
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/advocacy-denver/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 64,
+      "nameCount": 1,
+      "countyCount": 64
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/beauregard-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 64,
+      "nameCount": 1,
+      "countyCount": 64
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/lafayette-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 64,
+      "nameCount": 1,
+      "countyCount": 64
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/st-john-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 64,
+      "nameCount": 1,
+      "countyCount": 64
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/st-martin-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 64,
+      "nameCount": 1,
+      "countyCount": 64
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/tarc-serving-people-with-disabilities-their-families/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 64,
+      "nameCount": 1,
+      "countyCount": 64
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/terrebonne-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 64,
+      "nameCount": 1,
+      "countyCount": 64
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-baton-rouge/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 64,
+      "nameCount": 1,
+      "countyCount": 64
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-caddo-bossier/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 64,
+      "nameCount": 1,
+      "countyCount": 64
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-iberville/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 64,
+      "nameCount": 1,
+      "countyCount": 64
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-acadiana/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 64,
+      "nameCount": 1,
+      "countyCount": 64
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-aurora/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 64,
+      "nameCount": 1,
+      "countyCount": 64
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-east-ascension/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 64,
+      "nameCount": 1,
+      "countyCount": 64
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-greater-new-orleans/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 64,
+      "nameCount": 1,
+      "countyCount": 64
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-morehouse/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 64,
+      "nameCount": 1,
+      "countyCount": 64
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-northeast-colorado/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 64,
+      "nameCount": 1,
+      "countyCount": 64
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-ouachita-arco/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 64,
+      "nameCount": 1,
+      "countyCount": 64
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-southwest-colorado/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 64,
+      "nameCount": 1,
+      "countyCount": 64
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-st-charles-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 64,
+      "nameCount": 1,
+      "countyCount": 64
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-the-central-mountains/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 64,
+      "nameCount": 1,
+      "countyCount": 64
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-the-pikes-peak-region/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 64,
+      "nameCount": 1,
+      "countyCount": 64
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-rapides/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 64,
+      "nameCount": 1,
+      "countyCount": 64
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/achieve/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 62,
+      "nameCount": 1,
+      "countyCount": 62
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/coarc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 62,
+      "nameCount": 1,
+      "countyCount": 62
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/intandem/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 62,
+      "nameCount": 1,
+      "countyCount": 62
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/liberty-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 62,
+      "nameCount": 1,
+      "countyCount": 62
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/mountain-lake-services/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 62,
+      "nameCount": 1,
+      "countyCount": 62
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/mozaic/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 62,
+      "nameCount": 1,
+      "countyCount": 62
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/rome-develooment-center/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 62,
+      "nameCount": 1,
+      "countyCount": 62
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-adirondack-chapter/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 62,
+      "nameCount": 1,
+      "countyCount": 62
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-community-league/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 62,
+      "nameCount": 1,
+      "countyCount": 62
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-glow/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 62,
+      "nameCount": 1,
+      "countyCount": 62
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-greater-hudson-valley/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 62,
+      "nameCount": 1,
+      "countyCount": 62
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-lexington/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 62,
+      "nameCount": 1,
+      "countyCount": 62
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-rehabilitation-center/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 62,
+      "nameCount": 1,
+      "countyCount": 62
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-resource-center/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 62,
+      "nameCount": 1,
+      "countyCount": 62
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/arc-south-bay/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 58,
+      "nameCount": 1,
+      "countyCount": 58
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/arc-taft/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 58,
+      "nameCount": 1,
+      "countyCount": 58
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/barc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 58,
+      "nameCount": 1,
+      "countyCount": 58
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/desert-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 58,
+      "nameCount": 1,
+      "countyCount": 58
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-the-east-bay/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 58,
+      "nameCount": 1,
+      "countyCount": 58
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/montana/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 56,
+      "nameCount": 1,
+      "countyCount": 56
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-the-three-rivers/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 55,
+      "nameCount": 1,
+      "countyCount": 55
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-bismarck/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 53,
+      "nameCount": 1,
+      "countyCount": 53
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-dickinson-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 53,
+      "nameCount": 1,
+      "countyCount": 53
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-the-piedmont-tri-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 46,
+      "nameCount": 1,
+      "countyCount": 46
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-tri-cities/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 39,
+      "nameCount": 1,
+      "countyCount": 39
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-portland-metro/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 36,
+      "nameCount": 1,
+      "countyCount": 36
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/utah/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 29,
+      "nameCount": 1,
+      "countyCount": 29
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/walk-with-autism-ltd/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 29,
+      "nameCount": 1,
+      "countyCount": 29
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-northern-chesapeake-region/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 24,
+      "nameCount": 1,
+      "countyCount": 24
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-prince-georges-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 24,
+      "nameCount": 1,
+      "countyCount": 24
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/wyoming/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 23,
+      "nameCount": 1,
+      "countyCount": 23
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/scarc-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 21,
+      "nameCount": 1,
+      "countyCount": 21
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/alaska/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 20,
+      "nameCount": 1,
+      "countyCount": 20
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/building-positive-lifestyles/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 17,
+      "nameCount": 1,
+      "countyCount": 17
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-las-vegas/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 17,
+      "nameCount": 1,
+      "countyCount": 17
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/maine/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 16,
+      "nameCount": 1,
+      "countyCount": 16
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/chandler-gilbert-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 15,
+      "nameCount": 1,
+      "countyCount": 15
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/douglas-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 15,
+      "nameCount": 1,
+      "countyCount": 15
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-tempe/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 15,
+      "nameCount": 1,
+      "countyCount": 15
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-tucson-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 15,
+      "nameCount": 1,
+      "countyCount": 15
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/community-connections-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 14,
+      "nameCount": 1,
+      "countyCount": 14
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/lifelinks-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 14,
+      "nameCount": 1,
+      "countyCount": 14
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/minute-man-arc-for-human-services/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 14,
+      "nameCount": 1,
+      "countyCount": 14
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/northeast-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 14,
+      "nameCount": 1,
+      "countyCount": 14
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/opportunities-for-inclusion/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 14,
+      "nameCount": 1,
+      "countyCount": 14
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-brockton-area/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 14,
+      "nameCount": 1,
+      "countyCount": 14
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-east-middlesex/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 14,
+      "nameCount": 1,
+      "countyCount": 14
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-greater-haverhill-newburyport/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 14,
+      "nameCount": 1,
+      "countyCount": 14
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-opportunity/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 14,
+      "nameCount": 1,
+      "countyCount": 14
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-south-norfolk-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 14,
+      "nameCount": 1,
+      "countyCount": 14
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-the-south-shore/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 14,
+      "nameCount": 1,
+      "countyCount": 14
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-charles-river-center/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 14,
+      "nameCount": 1,
+      "countyCount": 14
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/vermont/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 14,
+      "nameCount": 1,
+      "countyCount": 14
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/yes-the-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 12,
+      "nameCount": 1,
+      "countyCount": 12
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/concord-regional-arc-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 10,
+      "nameCount": 1,
+      "countyCount": 10
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/ccarc-lnc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 8,
+      "nameCount": 1,
+      "countyCount": 8
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/lumibility/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 8,
+      "nameCount": 1,
+      "countyCount": 8
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/marc-inc-of-manchester/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 8,
+      "nameCount": 1,
+      "countyCount": 8
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/midstate-arc-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 8,
+      "nameCount": 1,
+      "countyCount": 8
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/sarah-seneca-residential-services/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 8,
+      "nameCount": 1,
+      "countyCount": 8
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/sarah-tuxis-residential-services-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 8,
+      "nameCount": 1,
+      "countyCount": 8
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/star-inc-lighting-the-way/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 8,
+      "nameCount": 1,
+      "countyCount": 8
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-new-london-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 8,
+      "nameCount": 1,
+      "countyCount": 8
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-southington-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 8,
+      "nameCount": 1,
+      "countyCount": 8
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-the-farmington-valley/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 8,
+      "nameCount": 1,
+      "countyCount": 8
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-waterbury/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 8,
+      "nameCount": 1,
+      "countyCount": 8
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-blackstone-valley/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 5,
+      "nameCount": 1,
+      "countyCount": 5
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-hawaii-island/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 5,
+      "nameCount": 1,
+      "countyCount": 5
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-hilo/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 5,
+      "nameCount": 1,
+      "countyCount": 5
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-rhode-island/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 5,
+      "nameCount": 1,
+      "countyCount": 5
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-jefferson-clear-creek-gilpin-counties/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 3,
+      "nameCount": 1,
+      "countyCount": 3
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-arapahoe-douglas/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 3,
+      "nameCount": 1,
+      "countyCount": 3
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-fayette-lamar-marengo-counties-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 3,
+      "nameCount": 1,
+      "countyCount": 3
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-winnebago-boone-ogle/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 3,
+      "nameCount": 1,
+      "countyCount": 3
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/arc-of-franklin-fulton/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 2,
+      "nameCount": 1,
+      "countyCount": 2
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/awe-arc-autauga-and-western-elmore-counties/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 2,
+      "nameCount": 1,
+      "countyCount": 2
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/daviess-martin-rehabilitation-services/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 2,
+      "nameCount": 1,
+      "countyCount": 2
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/marshall-starke-development-center/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 2,
+      "nameCount": 1,
+      "countyCount": 2
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-allegany-steuben/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 2,
+      "nameCount": 1,
+      "countyCount": 2
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-cherokee-clay-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 2,
+      "nameCount": 1,
+      "countyCount": 2
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-genesee-orleans/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 2,
+      "nameCount": 1,
+      "countyCount": 2
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-jefferson-st-lawrence/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 2,
+      "nameCount": 1,
+      "countyCount": 2
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-lancaster-lebanon/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 2,
+      "nameCount": 1,
+      "countyCount": 2
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-los-angeles-and-orange-counties/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 2,
+      "nameCount": 1,
+      "countyCount": 2
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-madison-cortland/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 2,
+      "nameCount": 1,
+      "countyCount": 2
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-adams-clay/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 2,
+      "nameCount": 1,
+      "countyCount": 2
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-amador-and-calaveras/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 2,
+      "nameCount": 1,
+      "countyCount": 2
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-bergen-and-passaic-counties-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 2,
+      "nameCount": 1,
+      "countyCount": 2
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-chemung-schuyler/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 2,
+      "nameCount": 1,
+      "countyCount": 2
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-clarion-and-venango-counties/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 2,
+      "nameCount": 1,
+      "countyCount": 2
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-clay-and-platte-counties-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 2,
+      "nameCount": 1,
+      "countyCount": 2
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-coffee-and-moore-counties/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 2,
+      "nameCount": 1,
+      "countyCount": 2
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-cumberland-perry-counties/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 2,
+      "nameCount": 1,
+      "countyCount": 2
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-fresno-and-madera-counties/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 2,
+      "nameCount": 1,
+      "countyCount": 2
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-lehigh-northampton-counties/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 2,
+      "nameCount": 1,
+      "countyCount": 2
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-thomas-grady-center/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 2,
+      "nameCount": 1,
+      "countyCount": 2
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-vigo-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 2,
+      "nameCount": 1,
+      "countyCount": 2
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-washington-holmes-counties-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 2,
+      "nameCount": 1,
+      "countyCount": 2
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-york-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 2,
+      "nameCount": 1,
+      "countyCount": 2
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-oneida-lewis-chapter/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 2,
+      "nameCount": 1,
+      "countyCount": 2
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-united-arc-of-franklin-hampshire-counties/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 2,
+      "nameCount": 1,
+      "countyCount": 2
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/winston-marion-county-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 2,
+      "nameCount": 1,
+      "countyCount": 2
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/abilitypoint/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/advocacy-and-resource-center/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/advocacy-resource-center-marion-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/ahrc-nassau/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/ahrc-new-york-city/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/ahrc-suffolk/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/alpha-resource-center-of-santa-barbara/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/anderson-county-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/arc-baldwin-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/arc-broward-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/arc-desoto/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/arc-gogebic-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/arc-herkimer/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/arc-manistee/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/arc-of-cambria-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/arc-of-greater-new-haven-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/arc-of-oswego-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/arc-of-washington-county-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/athens-limestone-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/bayberry-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/berkshire-county-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/bi-county-services/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/clinton-county-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/community-assisted-supported-living-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/developmental-services-of-dickson-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/easter-seals-arc-of-northeast-indiana/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/fountain-county-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/gateway-services-johnson-county-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/grant-county-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/greene-county-area-rehabilitation-center/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/jackson-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/knox-county-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/lincoln-county-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/little-missouri-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/logan-community-resources/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/marshall-county-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/middlesex-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/mohave-county-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/montgomery-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/northeastern-pinal-county-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/ontario-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/posey-county-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/randolph-county-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/richland-county-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/santa-cruz-county-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/saratoga-bridges/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/schenectady-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/soar365/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/south-talladega-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/st-louis-arc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/sullivan-county-area-rehabilitation-center/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/sweet-owen-industries-arc-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-alamance-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-alliance/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-anderson-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-baltimore/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-big-bend/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-carroll-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-community-advocates/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-cumberland-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-dane-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-davidson-county-greater-nashville/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-delaware-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-eau-claire/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-el-paso/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-erie-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-gloucester/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-greater-columbia-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-green-county-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-imperial-valley/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-jackson-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-kent-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-livingston/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-macon/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-mercer-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-mesa-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-mid-hudson/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-monroe/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-montgomery-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-morris/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-muskegon/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-nassau/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-newaygo-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-noble-county-foundations-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-ocean-county-chapter/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-adams-county-2/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-adams-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-allegan-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-allen-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-armstrong-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-atlantic-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-augusta/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-barnes-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-barren-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-bartholomew-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-bay-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-beaufort-county-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-benton-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-blair-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-bradford-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-bristol-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-brown-county-2/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-brown-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-buffalo-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-buncombe-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-burlington/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-butler-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-butte-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-calhoun-cleburne-counties/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-calhoun-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-camden/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-cape-may-county-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-carroll-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-cass-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-cedar-valley/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-central-virginia/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-centre-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-charlotte-county-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-chester-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-clarke-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-colfax-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-cowlitz-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-crawford-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-cullman-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-cumberland-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-cumberland-valley/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-davidson-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-dearborn-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-decatur-county-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-dekalb-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-dodge-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-douglas-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-east-central-iowa/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-eastern-elmore-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-erie-county-2/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-essex-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-fayette-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-fond-du-lac-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-forsyth-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-fort-bend-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-frederick-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-gaston-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-geneva-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-gillespie-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-grays-harbor/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-greater-boone-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-greater-plymouth-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-greater-prince-william-insight-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-greene-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-gregg-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-hamilton-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-hancock-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-hanover-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-harnett-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-harris-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-harrison-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-harrisonburg-and-rockingham/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-haywood-county-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-horry-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-howard-county-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-hudson-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-hunterdon-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-indian-river-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-indiana-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-iroquois-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-jackson-county-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-jackson-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-jefferson-county-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-jefferson-nearby-counties/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-jennings-couny/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-king-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-lagrange-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-lane-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-laramie-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-larimer-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-lawrence-county-2/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-lawrence-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-levy-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-liberty-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-lincoln-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-lincoln/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-litchfield-county-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-loudoun-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-madison-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-maricopa-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-martin-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-matagorda-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-maui/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-mclennan-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-mercer-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-mid-columbia/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-midland/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-monmouth/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-moore-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-morgan-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-natrona-county-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-north-talladega-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-northeast-mississippi/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-northern-shenandoah-valley/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-northern-virginia/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-northwest-wayne-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-oakland-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-oconee-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-onondaga/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-ottawa-county-2/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-panola-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-pearl-river-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-philadelphia/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-placer-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-platte-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-pueblo/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-putnam-county-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-racine-county-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-rensselaer-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-riverside/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-roanoke/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-robeson-county-nc-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-rush-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-rutherford-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-salem-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-saline-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-san-joaquin/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-san-juan-county-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-schuylkill-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-seward/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-shelby-county-2/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-shelby-county-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-shelby-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-smith-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-snohomish-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-somerset-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-southeast-iowa/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-southern-maryland/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-southern-worcester-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-spencer-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-spokane/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-spring-branch-memorial/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-st-clair-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-story-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-surry-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-the-bay/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-the-capital-area/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-the-emerald-coast/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-the-glades/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-the-hill-country/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-the-lake/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-the-low-country/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-the-mid-ohio-valley/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-the-midlands/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-the-quad-cities-area/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-the-st-johns-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-tillamook-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-tippecanoe-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-tuscaloosa-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-umatilla-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-union-county-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-ventura-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-volusia-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-wabash-county-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-walker-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-warren-county-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-warren-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-washington-county-2/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-wayne-county-2/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-wayne-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-western-wayne-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-wharton/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-whatcom-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-williamson-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-wilson-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-woodbury-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-of-yuma-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-otsego/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-person-county-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-rockland/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-san-francisco/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-services-of-macomb-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-solano/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-st-clair-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-susquehanna-valley/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-tampa-bay/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-upper-valley-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-warren-county-chapter/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-washington-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-wayne/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-westchester/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-western-montana/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-arc-wichita-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-association-for-community-living-in-boulder-county/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-mon-arc-of-monroe-inc/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-noble-arc-of-greater-indianapolis/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/the-point/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/wabash-center/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    },
+    {
+      "affiliateUrl": "https://thearc.org/chapter/washtenaw-association-for-community-advocacy/",
+      "discoverySources": [
+        "db_chapter_url"
+      ],
+      "rowCount": 1,
+      "nameCount": 1,
+      "countyCount": 1
+    }
+  ]
+}

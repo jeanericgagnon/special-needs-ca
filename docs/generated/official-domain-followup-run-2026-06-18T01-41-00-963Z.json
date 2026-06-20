@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-06-18T01:41:00.964Z",
+  "mode": "apply",
+  "stateFilter": "kansas",
+  "inputPath": "data/official-domain-followup-decisions.json",
+  "summary": {
+    "inputRows": 4,
+    "appliedStates": 0,
+    "filesChanged": 0,
+    "skippedByReason": {
+      "skipped_followup": 2,
+      "missing_source_row": 2
+    }
+  },
+  "decisions": [
+    {
+      "stateId": "kansas",
+      "sourceName": "Kansas Medicaid & Special Education Forms",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    },
+    {
+      "stateId": "kansas",
+      "sourceName": "Kansas HCBS Waivers Page",
+      "status": "skipped_missing_source_row",
+      "targetUrl": "https://www.kdads.ks.gov/hcbs"
+    },
+    {
+      "stateId": "kansas",
+      "sourceName": "Kansas Developmental Services Directory",
+      "status": "skipped_missing_source_row",
+      "targetUrl": "https://www.kdads.ks.gov/developmental-disabilities"
+    },
+    {
+      "stateId": "kansas",
+      "sourceName": "Kansas Medicaid Portal",
+      "status": "skipped_followup",
+      "targetUrl": ""
+    }
+  ]
+}

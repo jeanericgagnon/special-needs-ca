@@ -1,0 +1,14 @@
+{
+  "queueId": "official_domain_followup_queue",
+  "generatedAt": "2026-06-19",
+  "sourcePack": "data/source_packs/official_state_domain_repairs.json",
+  "decisionFile": "data/official-domain-followup-decisions.json",
+  "purpose": "Compact review queue for semi-actionable official-domain repair rows that are not safe to auto-apply yet but are strong enough to justify targeted follow-up.",
+  "summary": {
+    "totalRows": 0,
+    "byFollowupType": {},
+    "byState": {},
+    "byLane": {}
+  },
+  "rows": []
+}

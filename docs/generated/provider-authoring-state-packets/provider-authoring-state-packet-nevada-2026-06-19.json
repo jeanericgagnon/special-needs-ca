@@ -1,0 +1,135 @@
+{
+  "generatedAt": "2026-06-19T18:22:13.897Z",
+  "generatedDate": "2026-06-19",
+  "sourceBacklogPath": "docs/generated/provider-authoring-backlog-2026-06-19.json",
+  "stateId": "nevada",
+  "stateName": "Nevada",
+  "executionPriority": 26,
+  "sourceTargetsPath": "data/source_targets/nevada.json",
+  "ledgerStatus": "complete",
+  "ledgerNote": "applied-three-concrete-first-party-provider-targets",
+  "publicSafeProviders": 1,
+  "totalProviderRows": 1,
+  "providerTruthScore": 100,
+  "concreteProviderTargetCount": 3,
+  "placeholderProviderTargetCount": 1,
+  "directoryProviderTargetCount": 0,
+  "neededConcreteTargets": 0,
+  "neededLiveProviderRows": 2,
+  "authoringGapClass": "needs_refresh_or_deeper_targets",
+  "nextAction": "Refresh Nevada provider targets and add deeper first-party sources until at least 3 public-safe provider rows exist.",
+  "providerTargets": [
+    {
+      "sourceName": "Nevada Children's Hospital Clinics",
+      "sourceUrl": "https://www.childrenshospital.org",
+      "domain": "childrenshospital.org",
+      "crawlMethod": "manual_review",
+      "organizationType": "hospital",
+      "notes": "Initial category-level scaffold source target for Nevada."
+    },
+    {
+      "sourceName": "Renown Children's Hospital",
+      "sourceUrl": "https://www.renown.org/Childrens-Hospital",
+      "domain": "renown.org",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Renown children's hospital source for northern Nevada pediatric specialty and hospital care."
+    },
+    {
+      "sourceName": "Sunrise Children's Hospital",
+      "sourceUrl": "https://sunrisehospital.com/specialties/childrens-hospital",
+      "domain": "sunrisehospital.com",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official Sunrise pediatric hospital source for southern Nevada and Las Vegas pediatric specialty care."
+    },
+    {
+      "sourceName": "Children's Hospital of Nevada at UMC",
+      "sourceUrl": "https://www.umcsn.com/Services/Childrens-Hospital-of-Nevada",
+      "domain": "umcsn.com",
+      "crawlMethod": "static_fetch",
+      "organizationType": "hospital",
+      "notes": "Official UMC children's hospital source for pediatric trauma and hospital care in Nevada."
+    }
+  ],
+  "supportTargets": [
+    {
+      "targetTable": "counties",
+      "sourceName": "Nevada County Metadata",
+      "sourceUrl": "https://www.nevada.gov",
+      "domain": "nevada.gov"
+    },
+    {
+      "targetTable": "county_offices",
+      "sourceName": "Nevada Medicaid Portal",
+      "sourceUrl": "https://dhhs.nevada.gov",
+      "domain": "dhhs.nevada.gov"
+    },
+    {
+      "targetTable": "state_resource_agencies",
+      "sourceName": "Nevada Aging and Disability Services Division",
+      "sourceUrl": "https://adsd.nv.gov/Programs/Intellectual/Intellectual",
+      "domain": "adsd.nv.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Nevada HCBS Waivers",
+      "sourceUrl": "https://adsd.nv.gov/hcbs",
+      "domain": "adsd.nv.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Nevada Early Intervention / Part C",
+      "sourceUrl": "https://dhhs.nevada.gov/earlyintervention",
+      "domain": "dhhs.nevada.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Nevada Department of Education Special Ed",
+      "sourceUrl": "https://education.nevada.gov",
+      "domain": "education.nevada.gov"
+    },
+    {
+      "targetTable": "regional_education_agencies",
+      "sourceName": "Nevada Regional Special Education Support",
+      "sourceUrl": "https://education.nevada.gov/regional",
+      "domain": "education.nevada.gov"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "Nevada Parent Training Center",
+      "sourceUrl": "https://www.parentcenterhub.org",
+      "domain": "parentcenterhub.org"
+    },
+    {
+      "targetTable": "nonprofit_organizations",
+      "sourceName": "The Arc of Nevada",
+      "sourceUrl": "https://www.thearcnevada.org",
+      "domain": "thearcnevada.org"
+    },
+    {
+      "targetTable": "iep_advocates",
+      "sourceName": "Special Education Attorneys Directory",
+      "sourceUrl": "https://www.copaa.org",
+      "domain": "copaa.org"
+    },
+    {
+      "targetTable": "forms",
+      "sourceName": "Nevada Medicaid & Special Education Forms",
+      "sourceUrl": "https://dhhs.nevada.gov/forms",
+      "domain": "dhhs.nevada.gov"
+    },
+    {
+      "targetTable": "programs",
+      "sourceName": "Nevada Vocational Rehabilitation Services",
+      "sourceUrl": "https://dhhs.nevada.gov/rehab",
+      "domain": "dhhs.nevada.gov"
+    },
+    {
+      "targetTable": "sources",
+      "sourceName": "Nevada Secretary of State Business Registry",
+      "sourceUrl": "https://www.nevada.gov/business",
+      "domain": "nevada.gov"
+    }
+  ]
+}
