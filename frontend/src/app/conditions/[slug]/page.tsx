@@ -137,7 +137,7 @@ export default async function ConditionPage({ params }: Props) {
   condPrograms.forEach(p => {
     if (p.official_source_url && !p.official_source_url.includes('ablefull.org')) {
       officialSources.push({
-        name: `${p.program_name} Official Portal`,
+        name: `${p.name} Official Portal`,
         url: p.official_source_url
       });
     }
