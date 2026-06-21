@@ -36,7 +36,7 @@
 - early_intervention_part_c: verified_state_grade; samples=1; first=https://dph.georgia.gov/babies-cant-wait
 - special_education_idea_part_b: verified_state_grade; samples=3; first=https://www.csraresa.org
 - district_or_county_education_routing: blocked_exact_leaf_repair_exhausted; samples=5; first=https://www.cherokeek12.net/divisions/curriculum-instruction/special-educationsection-504
-- vocational_rehabilitation_pre_ets: verified_state_grade; samples=0
+- vocational_rehabilitation_pre_ets: verified_state_grade; samples=1; first=https://gvs.georgia.gov/
 - protection_and_advocacy: verified_state_grade; samples=3; first=https://thegao.org
 - parent_training_information_center: verified_state_grade; samples=3; first=https://www.p2pga.org
 - legal_aid: missing_verified_source; samples=0

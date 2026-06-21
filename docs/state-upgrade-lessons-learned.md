@@ -196,3 +196,7 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### One Unresolved Regional Root Can Truthfully Block Multiple Counties At Once
 *   **Problem:** Pennsylvania’s final education gap was not three independent county mysteries. Lackawanna, Susquehanna, and Wayne counties all depended on the same unresolved Northeastern Educational Intermediate Unit 19 root after the bounded exact-leaf packet was exhausted.
 *   **Lesson:** When multiple counties collapse to one unresolved official regional root, ledger the blocker at the shared-root level and final-block the state if no reviewed exact leaf exists. Do not keep a state in `PARTIAL` just because the residual count is small.
+
+### Zero-Sample Verified Families Must Be Rehydrated Or Downgraded
+*   **Problem:** Georgia carried `vocational_rehabilitation_pre_ets` as `verified_state_grade` while the packet’s verified-source row had `sample_count = 0`, which made the all-state audit look stronger than the state evidence ledger actually showed.
+*   **Lesson:** A family cannot stay `verified_state_grade` with an empty sample chain. When the DB already contains a reviewed verified row, rehydrate the packet from that concrete evidence; otherwise downgrade the family until a real verified sample exists on disk.

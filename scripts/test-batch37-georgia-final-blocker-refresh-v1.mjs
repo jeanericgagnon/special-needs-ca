@@ -52,6 +52,11 @@ assert.equal(failureRows.find((row) => row.family === 'legal_aid').failure_code,
 assert.deepEqual(nextRows.map((row) => row.family), ['developmental_disability_idd_authority', 'district_or_county_education_routing', 'legal_aid'], 'Georgia next actions must collapse to the three real remaining blockers.');
 assert.equal(verifiedRows.find((row) => row.family === 'protection_and_advocacy').family_status, 'verified_state_grade', 'Georgia verified sources must upgrade P&A.');
 assert.equal(verifiedRows.find((row) => row.family === 'parent_training_information_center').family_status, 'verified_state_grade', 'Georgia verified sources must upgrade PTI.');
+const vr = verifiedRows.find((row) => row.family === 'vocational_rehabilitation_pre_ets');
+assert.equal(vr.family_status, 'verified_state_grade', 'Georgia VR must remain verified.');
+assert.equal(vr.sample_count, 1, 'Georgia VR must carry one verified GVRA sample rather than a zero-sample verified row.');
+assert.equal(vr.samples[0].source_url, 'https://gvs.georgia.gov/', 'Georgia VR must point to the verified GVRA official source.');
+assert.ok(report.includes('vocational_rehabilitation_pre_ets: verified_state_grade; samples=1; first=https://gvs.georgia.gov/'), 'Georgia report must show the GVRA sample in verified sources.');
 assert.ok(report.includes('Georgia final blocker decision'), 'Georgia report must include the final blocker decision section.');
 
 console.log('test-batch37-georgia-final-blocker-refresh-v1: ok');

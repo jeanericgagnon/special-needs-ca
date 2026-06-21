@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import Database from 'better-sqlite3';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -25,6 +26,8 @@ const OUTPUTS = {
   summary: path.join(generatedDir, 'batch37_georgia_final_blocker_refresh_summary_v1.json'),
   report: path.join(docsGeneratedDir, 'batch37-georgia-final-blocker-refresh-report-v1.md'),
 };
+
+const DB_PATH = path.join(repoRoot, 'ca_disability_navigator.db');
 
 const STATEWIDE_UPGRADES = {
   protection_and_advocacy: {
@@ -55,6 +58,30 @@ function writeJson(filePath, value) {
 function writeJsonl(filePath, rows) {
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
   fs.writeFileSync(filePath, rows.map((row) => JSON.stringify(row)).join('\n') + (rows.length ? '\n' : ''));
+}
+
+function loadGeorgiaVrProgramSample() {
+  const db = new Database(DB_PATH, { readonly: true });
+  try {
+    return db.prepare(`
+      SELECT id, name, source_url, official_source_url, verification_status
+      FROM programs
+      WHERE state_id = 'georgia'
+        AND verification_status IN ('verified', 'official_verified')
+        AND (
+          source_url LIKE '%gvs.georgia.gov%'
+          OR official_source_url LIKE '%gvs.georgia.gov%'
+          OR name LIKE '%Vocational%'
+          OR name LIKE '%Transition%'
+        )
+      ORDER BY
+        CASE verification_status WHEN 'official_verified' THEN 0 ELSE 1 END,
+        id ASC
+      LIMIT 1
+    `).get();
+  } finally {
+    db.close();
+  }
 }
 
 function recalcSummary(summary, gapRows, failureRows, verifiedRows) {
@@ -140,8 +167,9 @@ export function generateBatch37GeorgiaFinalBlockerRefreshV1() {
     row?.stateId === 'georgia'
     && row?.gapFamily === 'legal_aid',
   );
+  const georgiaVrProgramSample = loadGeorgiaVrProgramSample();
   const legalAidPlanningUrl = legalAidTarget?.evidenceUrl || legalAidTarget?.sourceUrl || legalAidTarget?.source_url || null;
-  if (!educationVerified || !ddVerified || !legalAidTarget || !legalAidPlanningUrl) {
+  if (!educationVerified || !ddVerified || !legalAidTarget || !legalAidPlanningUrl || !georgiaVrProgramSample) {
     throw new Error('Georgia blocker refresh requires education, DD, and legal-aid planning evidence.');
   }
 
@@ -219,6 +247,23 @@ export function generateBatch37GeorgiaFinalBlockerRefreshV1() {
         evidence_strength: row.family === 'legal_aid' ? 'missing' : 'weak',
         blocker_code: failure?.failure_code || row.blocker_code,
         blocker_evidence: failure?.evidence || row.blocker_evidence,
+      };
+    }
+    if (row.family === 'vocational_rehabilitation_pre_ets' && row.sample_count === 0) {
+      return {
+        ...row,
+        family_status: 'verified_state_grade',
+        evidence_strength: 'strong',
+        sample_count: 1,
+        samples: [
+          {
+            sample_name: georgiaVrProgramSample.name,
+            source_url: georgiaVrProgramSample.official_source_url || georgiaVrProgramSample.source_url,
+            verification_status: georgiaVrProgramSample.verification_status,
+            source_type: 'official',
+            source_table: 'programs',
+          },
+        ],
       };
     }
     return row;
