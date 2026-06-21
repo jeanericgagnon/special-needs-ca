@@ -1,0 +1,25 @@
+{"at":"2026-06-21T01:58:35.463Z","step":"start","message":"Starting Texas completion lane v1"}
+{"at":"2026-06-21T01:58:35.761Z","step":"starting_counts","startingCounts":{"counties":254,"county_offices":416,"routing_agencies":78,"programs":12,"forms_guides":26,"school_districts":255,"nonprofits":4505,"providers":10,"waitlists":8,"verified_records":5305,"manual_review_records":0,"allowlist_indexing_policy_rows":254,"existing_texas_audit_artifacts":17,"source_records":{"sourcePackRows":145,"sourcePackStatusCounts":{"verified_target":73,"target_candidate":17,"needs_review":16,"blocked_known":39},"seedTargetRows":54}}}
+{"at":"2026-06-21T01:58:35.761Z","step":"california_baseline","baselineCounts":{"counties":58,"county_offices":174,"routing_agencies":21,"programs":10,"forms_guides":22,"school_districts":80,"nonprofits":871,"providers":2,"verified_programs":10,"verified_offices":174,"verified_agencies":21,"verified_forms":22}}
+{"at":"2026-06-21T01:58:36.009Z","step":"manifest_review","role_id":"tx_hhs_lidda_authority","source_family":"tx_hhs_lidda_authority_page","review_status":"reviewed_fetch_ok"}
+{"at":"2026-06-21T01:58:36.403Z","step":"manifest_review","role_id":"tx_hhs_lidda_directory","source_family":"tx_hhs_lidda_directory","review_status":"reviewed_fetch_ok"}
+{"at":"2026-06-21T01:58:36.462Z","step":"manifest_review","role_id":"tx_hhs_eci_services","source_family":"tx_hhs_eci_services_page","review_status":"reviewed_fetch_ok"}
+{"at":"2026-06-21T01:58:37.194Z","step":"manifest_review","role_id":"tx_hhs_eci_search","source_family":"tx_hhs_eci_program_search","review_status":"reviewed_fetch_ok"}
+{"at":"2026-06-21T01:58:38.004Z","step":"manifest_review","role_id":"tx_hhs_medicaid_benefits","source_family":"tx_hhs_benefits_medicaid","review_status":"reviewed_fetch_ok"}
+{"at":"2026-06-21T01:58:38.055Z","step":"manifest_review","role_id":"tx_hhs_starkids","source_family":"tx_hhs_star_kids","review_status":"reviewed_fetch_ok"}
+{"at":"2026-06-21T01:58:38.104Z","step":"manifest_review","role_id":"tx_hhs_mdcp","source_family":"tx_hhs_mdcp","review_status":"reviewed_fetch_ok"}
+{"at":"2026-06-21T01:58:38.144Z","step":"manifest_review","role_id":"tx_hhs_waiver_interest","source_family":"tx_hhs_waiver_interest_list","review_status":"reviewed_fetch_ok"}
+{"at":"2026-06-21T01:58:38.243Z","step":"manifest_review","role_id":"tx_hhs_fair_hearing","source_family":"tx_hhs_fair_hearing_managed_care_appeal","review_status":"reviewed_fetch_ok"}
+{"at":"2026-06-21T01:58:38.660Z","step":"manifest_review","role_id":"tx_tea_family_resources","source_family":"tx_tea_special_education_family_resources","review_status":"reviewed_fetch_ok"}
+{"at":"2026-06-21T01:58:38.763Z","step":"manifest_review","role_id":"tx_tea_complaints","source_family":"tx_tea_special_education_complaints","review_status":"reviewed_fetch_ok"}
+{"at":"2026-06-21T01:58:38.855Z","step":"manifest_review","role_id":"tx_tea_due_process","source_family":"tx_tea_special_education_due_process","review_status":"reviewed_fetch_ok"}
+{"at":"2026-06-21T01:58:39.353Z","step":"manifest_review","role_id":"tx_askted","source_family":"tx_askted_district_school_esc_directory","review_status":"reviewed_fetch_ok"}
+{"at":"2026-06-21T01:58:39.616Z","step":"manifest_review","role_id":"tx_drtx","source_family":"tx_disability_rights_texas","review_status":"reviewed_fetch_ok"}
+{"at":"2026-06-21T01:58:41.737Z","step":"manifest_review","role_id":"tx_prn","source_family":"tx_partners_resource_network","review_status":"reviewed_fetch_ok"}
+{"at":"2026-06-21T01:58:42.031Z","step":"manifest_review","role_id":"tx_able","source_family":"tx_texas_able","review_status":"reviewed_fetch_ok"}
+{"at":"2026-06-21T01:58:42.476Z","step":"manifest_review","role_id":"tx_spedtex","source_family":"tx_spedtex","review_status":"reviewed_fetch_ok"}
+{"at":"2026-06-21T01:58:57.080Z","step":"manifest_review","role_id":"tx_navigate_life","source_family":"tx_navigate_life_texas","review_status":"reviewed_fetch_ok"}
+{"at":"2026-06-21T01:58:57.190Z","step":"manifest_review","role_id":"tx_project_first","source_family":"tx_texas_project_first","review_status":"reviewed_fetch_failed"}
+{"at":"2026-06-21T01:58:57.431Z","step":"manifest_review","role_id":"tx_autism_society","source_family":"tx_autism_society_of_texas","review_status":"reviewed_fetch_ok"}
+{"at":"2026-06-21T01:58:57.472Z","step":"harvest_complete","liddaRows":39,"eciRows":39,"districtRows":255,"officeRows":254}
+{"at":"2026-06-21T01:58:57.472Z","step":"county_gate","pass":254,"partial":0,"blocked":0}

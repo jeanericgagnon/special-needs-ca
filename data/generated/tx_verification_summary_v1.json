@@ -1,0 +1,3824 @@
+{
+  "state": "texas",
+  "generated_at": "2026-06-21T01:58:57.465Z",
+  "total_counties": 254,
+  "pass_counties": 254,
+  "partial_counties": 0,
+  "blocked_counties": 0,
+  "manifest_status_counts": {
+    "reviewed_fetch_ok": 22,
+    "reviewed_fetch_failed": 1
+  },
+  "counties": [
+    {
+      "county_slug": "anderson-tx",
+      "county_name": "Anderson County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "andrews-tx",
+      "county_name": "Andrews County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "angelina-tx",
+      "county_name": "Angelina County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "aransas-tx",
+      "county_name": "Aransas County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "archer-tx",
+      "county_name": "Archer County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "armstrong-tx",
+      "county_name": "Armstrong County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "atascosa-tx",
+      "county_name": "Atascosa County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "austin-tx",
+      "county_name": "Austin County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "bailey-tx",
+      "county_name": "Bailey County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "bandera-tx",
+      "county_name": "Bandera County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "bastrop-tx",
+      "county_name": "Bastrop County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "baylor-tx",
+      "county_name": "Baylor County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "bee-tx",
+      "county_name": "Bee County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "bell-tx",
+      "county_name": "Bell County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "bexar-tx",
+      "county_name": "Bexar County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "blanco-tx",
+      "county_name": "Blanco County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "borden-tx",
+      "county_name": "Borden County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "bosque-tx",
+      "county_name": "Bosque County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "bowie-tx",
+      "county_name": "Bowie County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "brazoria-tx",
+      "county_name": "Brazoria County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "brazos-tx",
+      "county_name": "Brazos County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "brewster-tx",
+      "county_name": "Brewster County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "briscoe-tx",
+      "county_name": "Briscoe County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "brooks-tx",
+      "county_name": "Brooks County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "brown-tx",
+      "county_name": "Brown County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "burleson-tx",
+      "county_name": "Burleson County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "burnet-tx",
+      "county_name": "Burnet County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "caldwell-tx",
+      "county_name": "Caldwell County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "calhoun-tx",
+      "county_name": "Calhoun County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "callahan-tx",
+      "county_name": "Callahan County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "cameron-tx",
+      "county_name": "Cameron County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "camp-tx",
+      "county_name": "Camp County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "carson-tx",
+      "county_name": "Carson County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "cass-tx",
+      "county_name": "Cass County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "castro-tx",
+      "county_name": "Castro County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "chambers-tx",
+      "county_name": "Chambers County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "cherokee-tx",
+      "county_name": "Cherokee County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "childress-tx",
+      "county_name": "Childress County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "clay-tx",
+      "county_name": "Clay County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "cochran-tx",
+      "county_name": "Cochran County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "coke-tx",
+      "county_name": "Coke County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "coleman-tx",
+      "county_name": "Coleman County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "collin-tx",
+      "county_name": "Collin County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "collingsworth-tx",
+      "county_name": "Collingsworth County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "colorado-tx",
+      "county_name": "Colorado County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "comal-tx",
+      "county_name": "Comal County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "comanche-tx",
+      "county_name": "Comanche County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "concho-tx",
+      "county_name": "Concho County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "cooke-tx",
+      "county_name": "Cooke County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "coryell-tx",
+      "county_name": "Coryell County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "cottle-tx",
+      "county_name": "Cottle County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "crane-tx",
+      "county_name": "Crane County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "crockett-tx",
+      "county_name": "Crockett County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "crosby-tx",
+      "county_name": "Crosby County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "culberson-tx",
+      "county_name": "Culberson County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "dallam-tx",
+      "county_name": "Dallam County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "dallas-tx",
+      "county_name": "Dallas County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "dawson-tx",
+      "county_name": "Dawson County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "dewitt-tx",
+      "county_name": "DeWitt County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "deaf-smith-tx",
+      "county_name": "Deaf Smith County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "delta-tx",
+      "county_name": "Delta County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "denton-tx",
+      "county_name": "Denton County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "dickens-tx",
+      "county_name": "Dickens County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "dimmit-tx",
+      "county_name": "Dimmit County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "donley-tx",
+      "county_name": "Donley County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "duval-tx",
+      "county_name": "Duval County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "eastland-tx",
+      "county_name": "Eastland County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "ector-tx",
+      "county_name": "Ector County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "edwards-tx",
+      "county_name": "Edwards County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "el-paso-tx",
+      "county_name": "El Paso County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "ellis-tx",
+      "county_name": "Ellis County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "erath-tx",
+      "county_name": "Erath County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "falls-tx",
+      "county_name": "Falls County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "fannin-tx",
+      "county_name": "Fannin County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "fayette-tx",
+      "county_name": "Fayette County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "fisher-tx",
+      "county_name": "Fisher County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "floyd-tx",
+      "county_name": "Floyd County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "foard-tx",
+      "county_name": "Foard County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "fort-bend-tx",
+      "county_name": "Fort Bend County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "franklin-tx",
+      "county_name": "Franklin County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "freestone-tx",
+      "county_name": "Freestone County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "frio-tx",
+      "county_name": "Frio County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "gaines-tx",
+      "county_name": "Gaines County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "galveston-tx",
+      "county_name": "Galveston County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "garza-tx",
+      "county_name": "Garza County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "gillespie-tx",
+      "county_name": "Gillespie County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "glasscock-tx",
+      "county_name": "Glasscock County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "goliad-tx",
+      "county_name": "Goliad County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "gonzales-tx",
+      "county_name": "Gonzales County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "gray-tx",
+      "county_name": "Gray County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "grayson-tx",
+      "county_name": "Grayson County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "gregg-tx",
+      "county_name": "Gregg County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "grimes-tx",
+      "county_name": "Grimes County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "guadalupe-tx",
+      "county_name": "Guadalupe County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "hale-tx",
+      "county_name": "Hale County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "hall-tx",
+      "county_name": "Hall County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "hamilton-tx",
+      "county_name": "Hamilton County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "hansford-tx",
+      "county_name": "Hansford County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "hardeman-tx",
+      "county_name": "Hardeman County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "hardin-tx",
+      "county_name": "Hardin County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "harris-tx",
+      "county_name": "Harris County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "harrison-tx",
+      "county_name": "Harrison County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "hartley-tx",
+      "county_name": "Hartley County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "haskell-tx",
+      "county_name": "Haskell County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "hays-tx",
+      "county_name": "Hays County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "hemphill-tx",
+      "county_name": "Hemphill County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "henderson-tx",
+      "county_name": "Henderson County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "hidalgo-tx",
+      "county_name": "Hidalgo County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "hill-tx",
+      "county_name": "Hill County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "hockley-tx",
+      "county_name": "Hockley County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "hood-tx",
+      "county_name": "Hood County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "hopkins-tx",
+      "county_name": "Hopkins County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "houston-tx",
+      "county_name": "Houston County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "howard-tx",
+      "county_name": "Howard County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "hudspeth-tx",
+      "county_name": "Hudspeth County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "hunt-tx",
+      "county_name": "Hunt County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "hutchinson-tx",
+      "county_name": "Hutchinson County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "irion-tx",
+      "county_name": "Irion County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "jack-tx",
+      "county_name": "Jack County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "jackson-tx",
+      "county_name": "Jackson County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "jasper-tx",
+      "county_name": "Jasper County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "jeff-davis-tx",
+      "county_name": "Jeff Davis County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "jefferson-tx",
+      "county_name": "Jefferson County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "jim-hogg-tx",
+      "county_name": "Jim Hogg County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "jim-wells-tx",
+      "county_name": "Jim Wells County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "johnson-tx",
+      "county_name": "Johnson County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "jones-tx",
+      "county_name": "Jones County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "karnes-tx",
+      "county_name": "Karnes County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "kaufman-tx",
+      "county_name": "Kaufman County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "kendall-tx",
+      "county_name": "Kendall County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "kenedy-tx",
+      "county_name": "Kenedy County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "kent-tx",
+      "county_name": "Kent County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "kerr-tx",
+      "county_name": "Kerr County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "kimble-tx",
+      "county_name": "Kimble County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "king-tx",
+      "county_name": "King County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "kinney-tx",
+      "county_name": "Kinney County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "kleberg-tx",
+      "county_name": "Kleberg County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "knox-tx",
+      "county_name": "Knox County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "la-salle-tx",
+      "county_name": "La Salle County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "lamar-tx",
+      "county_name": "Lamar County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "lamb-tx",
+      "county_name": "Lamb County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "lampasas-tx",
+      "county_name": "Lampasas County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "lavaca-tx",
+      "county_name": "Lavaca County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "lee-tx",
+      "county_name": "Lee County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "leon-tx",
+      "county_name": "Leon County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "liberty-tx",
+      "county_name": "Liberty County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "limestone-tx",
+      "county_name": "Limestone County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "lipscomb-tx",
+      "county_name": "Lipscomb County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "live-oak-tx",
+      "county_name": "Live Oak County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "llano-tx",
+      "county_name": "Llano County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "loving-tx",
+      "county_name": "Loving County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "lubbock-tx",
+      "county_name": "Lubbock County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "lynn-tx",
+      "county_name": "Lynn County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "madison-tx",
+      "county_name": "Madison County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "marion-tx",
+      "county_name": "Marion County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "martin-tx",
+      "county_name": "Martin County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "mason-tx",
+      "county_name": "Mason County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "matagorda-tx",
+      "county_name": "Matagorda County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "maverick-tx",
+      "county_name": "Maverick County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "mcculloch-tx",
+      "county_name": "McCulloch County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "mclennan-tx",
+      "county_name": "McLennan County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "mcmullen-tx",
+      "county_name": "McMullen County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "medina-tx",
+      "county_name": "Medina County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "menard-tx",
+      "county_name": "Menard County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "midland-tx",
+      "county_name": "Midland County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "milam-tx",
+      "county_name": "Milam County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "mills-tx",
+      "county_name": "Mills County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "mitchell-tx",
+      "county_name": "Mitchell County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "montague-tx",
+      "county_name": "Montague County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "montgomery-tx",
+      "county_name": "Montgomery County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "moore-tx",
+      "county_name": "Moore County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "morris-tx",
+      "county_name": "Morris County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "motley-tx",
+      "county_name": "Motley County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "nacogdoches-tx",
+      "county_name": "Nacogdoches County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "navarro-tx",
+      "county_name": "Navarro County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "newton-tx",
+      "county_name": "Newton County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "nolan-tx",
+      "county_name": "Nolan County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "nueces-tx",
+      "county_name": "Nueces County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "ochiltree-tx",
+      "county_name": "Ochiltree County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "oldham-tx",
+      "county_name": "Oldham County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "orange-tx",
+      "county_name": "Orange County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "palo-pinto-tx",
+      "county_name": "Palo Pinto County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "panola-tx",
+      "county_name": "Panola County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "parker-tx",
+      "county_name": "Parker County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "parmer-tx",
+      "county_name": "Parmer County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "pecos-tx",
+      "county_name": "Pecos County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "polk-tx",
+      "county_name": "Polk County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "potter-tx",
+      "county_name": "Potter County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "presidio-tx",
+      "county_name": "Presidio County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "rains-tx",
+      "county_name": "Rains County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "randall-tx",
+      "county_name": "Randall County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "reagan-tx",
+      "county_name": "Reagan County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "real-tx",
+      "county_name": "Real County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "red-river-tx",
+      "county_name": "Red River County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "reeves-tx",
+      "county_name": "Reeves County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "refugio-tx",
+      "county_name": "Refugio County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "roberts-tx",
+      "county_name": "Roberts County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "robertson-tx",
+      "county_name": "Robertson County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "rockwall-tx",
+      "county_name": "Rockwall County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "runnels-tx",
+      "county_name": "Runnels County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "rusk-tx",
+      "county_name": "Rusk County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "sabine-tx",
+      "county_name": "Sabine County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "san-augustine-tx",
+      "county_name": "San Augustine County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "san-jacinto-tx",
+      "county_name": "San Jacinto County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "san-patricio-tx",
+      "county_name": "San Patricio County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "san-saba-tx",
+      "county_name": "San Saba County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "schleicher-tx",
+      "county_name": "Schleicher County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "scurry-tx",
+      "county_name": "Scurry County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "shackelford-tx",
+      "county_name": "Shackelford County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "shelby-tx",
+      "county_name": "Shelby County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "sherman-tx",
+      "county_name": "Sherman County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "smith-tx",
+      "county_name": "Smith County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "somervell-tx",
+      "county_name": "Somervell County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "starr-tx",
+      "county_name": "Starr County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "stephens-tx",
+      "county_name": "Stephens County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "sterling-tx",
+      "county_name": "Sterling County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "stonewall-tx",
+      "county_name": "Stonewall County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "sutton-tx",
+      "county_name": "Sutton County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "swisher-tx",
+      "county_name": "Swisher County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "tarrant-tx",
+      "county_name": "Tarrant County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "taylor-tx",
+      "county_name": "Taylor County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "terrell-tx",
+      "county_name": "Terrell County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "terry-tx",
+      "county_name": "Terry County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "throckmorton-tx",
+      "county_name": "Throckmorton County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "titus-tx",
+      "county_name": "Titus County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "tom-green-tx",
+      "county_name": "Tom Green County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "travis-tx",
+      "county_name": "Travis County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "trinity-tx",
+      "county_name": "Trinity County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "tyler-tx",
+      "county_name": "Tyler County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "upshur-tx",
+      "county_name": "Upshur County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "upton-tx",
+      "county_name": "Upton County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "uvalde-tx",
+      "county_name": "Uvalde County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "val-verde-tx",
+      "county_name": "Val Verde County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "van-zandt-tx",
+      "county_name": "Van Zandt County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "victoria-tx",
+      "county_name": "Victoria County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "walker-tx",
+      "county_name": "Walker County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "waller-tx",
+      "county_name": "Waller County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "ward-tx",
+      "county_name": "Ward County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "washington-tx",
+      "county_name": "Washington County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "webb-tx",
+      "county_name": "Webb County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "wharton-tx",
+      "county_name": "Wharton County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "wheeler-tx",
+      "county_name": "Wheeler County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "wichita-tx",
+      "county_name": "Wichita County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "wilbarger-tx",
+      "county_name": "Wilbarger County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "willacy-tx",
+      "county_name": "Willacy County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "williamson-tx",
+      "county_name": "Williamson County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "wilson-tx",
+      "county_name": "Wilson County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "winkler-tx",
+      "county_name": "Winkler County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "wise-tx",
+      "county_name": "Wise County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "wood-tx",
+      "county_name": "Wood County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "yoakum-tx",
+      "county_name": "Yoakum County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "young-tx",
+      "county_name": "Young County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "zapata-tx",
+      "county_name": "Zapata County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    },
+    {
+      "county_slug": "zavala-tx",
+      "county_name": "Zavala County",
+      "gate_status": "PASS",
+      "missing_roles": [],
+      "source_urls": [
+        "https://apps.hhs.texas.gov/contact/la.cfm",
+        "https://citysearch.hhsc.state.tx.us",
+        "https://www.hhs.texas.gov/services/health/medicaid-chip",
+        "https://tea.texas.gov/AskTED",
+        "https://disabilityrightstx.org/en/home/",
+        "https://prntexas.org/",
+        "https://www.texasable.org/"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-06-21T01:58:57.465Z",
+  "starting_counts": {
+    "counties": 254,
+    "county_offices": 416,
+    "routing_agencies": 78,
+    "programs": 12,
+    "forms_guides": 26,
+    "school_districts": 255,
+    "nonprofits": 4505,
+    "providers": 10,
+    "waitlists": 8,
+    "verified_records": 5305,
+    "manual_review_records": 0,
+    "allowlist_indexing_policy_rows": 254,
+    "existing_texas_audit_artifacts": 17,
+    "source_records": {
+      "sourcePackRows": 145,
+      "sourcePackStatusCounts": {
+        "verified_target": 73,
+        "target_candidate": 17,
+        "needs_review": 16,
+        "blocked_known": 39
+      },
+      "seedTargetRows": 54
+    }
+  },
+  "california_baseline": {
+    "counties": 58,
+    "county_offices": 174,
+    "routing_agencies": 21,
+    "programs": 10,
+    "forms_guides": 22,
+    "school_districts": 80,
+    "nonprofits": 871,
+    "providers": 2,
+    "verified_programs": 10,
+    "verified_offices": 174,
+    "verified_agencies": 21,
+    "verified_forms": 22
+  },
+  "texas_gap_summary": {
+    "county_gap": -196,
+    "program_gap": -2,
+    "forms_gap": -4,
+    "provider_gap": -8,
+    "routing_gap": -57,
+    "counties_pass": 254,
+    "counties_partial": 0,
+    "counties_blocked": 0,
+    "manifest_fetch_ok": 22
+  }
+}

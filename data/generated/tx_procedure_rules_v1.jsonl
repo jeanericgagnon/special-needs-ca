@@ -1,0 +1,9 @@
+{"state":"texas","order":1,"rule":"official skeleton before enrichment","created_at":"2026-06-21T01:58:35.464Z"}
+{"state":"texas","order":2,"rule":"reviewed manifest beats historical repo hints","created_at":"2026-06-21T01:58:35.464Z"}
+{"state":"texas","order":3,"rule":"search result does not equal verified source","created_at":"2026-06-21T01:58:35.464Z"}
+{"state":"texas","order":4,"rule":"commercial/provider rows are candidates by default","created_at":"2026-06-21T01:58:35.464Z"}
+{"state":"texas","order":5,"rule":"no indexing until county gate passes","created_at":"2026-06-21T01:58:35.464Z"}
+{"state":"texas","order":6,"rule":"every verified field needs source URL, final URL, fetched date, evidence snippet, and verification status","created_at":"2026-06-21T01:58:35.464Z"}
+{"state":"texas","order":7,"rule":"every run must update the run log, gap matrix, failure ledger, procedure rules, and next action queue","created_at":"2026-06-21T01:58:35.464Z"}
+{"state":"texas","order":8,"rule":"source-specific harvesters beat generic crawlers","created_at":"2026-06-21T01:58:35.464Z"}
+{"state":"texas","order":9,"rule":"directory pages should be parsed into structured county joins","created_at":"2026-06-21T01:58:35.464Z"}
