@@ -200,3 +200,7 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Zero-Sample Verified Families Must Be Rehydrated Or Downgraded
 *   **Problem:** Georgia carried `vocational_rehabilitation_pre_ets` as `verified_state_grade` while the packet’s verified-source row had `sample_count = 0`, which made the all-state audit look stronger than the state evidence ledger actually showed.
 *   **Lesson:** A family cannot stay `verified_state_grade` with an empty sample chain. When the DB already contains a reviewed verified row, rehydrate the packet from that concrete evidence; otherwise downgrade the family until a real verified sample exists on disk.
+
+### Statewide Support Truth Can Survive A Local Staging Rejection
+*   **Problem:** Ohio’s Disability Rights Ohio page had already been accepted as first-party parsed evidence, but the staging lane still routed it to manual review because the nonprofit promotion path expected a county ID. That local-table constraint made the statewide P&A family look falsely missing in the packet.
+*   **Lesson:** When a reviewed first-party artifact clearly proves a statewide support family, do not let a county-level staging requirement erase that truth from the California-grade packet. Use the accepted artifact directly for packet evidence, and keep the local-table issue separate from the statewide gate.
