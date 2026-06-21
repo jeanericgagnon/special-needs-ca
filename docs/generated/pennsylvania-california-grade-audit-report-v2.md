@@ -67,3 +67,10 @@
 - No new exact leaf targets verified in Batch 20.
 
 - Pennsylvania remains PARTIAL and not index-safe until every critical family passes county-grade proof.
+
+## Batch 22 Pennsylvania exact repair
+
+- county_local_disability_resources: official county MH/ID offices page verified county office coverage across 67/67 Pennsylvania counties.
+- district_or_county_education_routing: verified district-owned exact leaves -> https://www.pghschools.org/academics/pse-special-education/pse-special-education, https://readingsdpa.sites.thrillshare.com/o/rsd/page/special-education, https://readingsdpa.sites.thrillshare.com/o/rsd/page/student-services, https://www.pennsburysd.org/departments/student_services
+
+- Pennsylvania remains PARTIAL and not index-safe until every critical family passes county-grade proof.

@@ -1,0 +1,10 @@
+{
+  "batch": "batch_22_pennsylvania_exact_repair_v1",
+  "generated_at": "2026-06-21T18:13:28.215Z",
+  "state": "pennsylvania",
+  "classification": "PARTIAL",
+  "index_safe": false,
+  "county_local_disability_resources_repaired": true,
+  "district_exact_leaves_verified": 4,
+  "texas_preserved_complete": true
+}

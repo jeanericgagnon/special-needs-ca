@@ -152,3 +152,7 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Structured County Coverage Can Upgrade One Official Leaf To Statewide County-Grade
 *   **Problem:** Some statewide repair leaves stay partial because they only prove one district or one local office, while others genuinely carry statewide county coverage in structured HTML that should not be left trapped in a generic partial bucket.
 *   **Lesson:** Promote a family from exact-leaf partial to verified state-grade only when the official leaf itself enumerates county coverage explicitly, such as `Counties Served` lists or a county-office table. If the county mapping is interactive-only, hidden behind scripts, or absent from the fetched HTML, keep the family partial and ledger the blocker rather than inferring coverage.
+
+### Live Official Paths Must Replace Legacy Packet URLs Before Rejection
+*   **Problem:** Pennsylvania’s old `dhs.pa.gov` packet hints looked dead because they now resolve to generic agency shells, even though the live `pa.gov` contact pages still expose the exact county MH/ID and CAO resources we need.
+*   **Lesson:** When a packet URL redirects to a generic agency landing, do one bounded live-path repair on the same official domain before classifying the family as blocked. If the live replacement page preserves the exact role in the title and fetched body, repair the packet and continue; do not treat the stale legacy path itself as proof that the source family is gone.
