@@ -1,0 +1,42 @@
+{
+  "batch": "batch_6_procedure_hardening_states_v1",
+  "generated_at": "2026-06-21T16:55:00.922Z",
+  "states": [
+    {
+      "state": "arkansas",
+      "classification": "UNSTARTED",
+      "index_safe": false,
+      "completeness_pct": 58,
+      "primary_gap_reason": "generic_or_statewide_evidence_used_where_local_required",
+      "critical_gap_families": [
+        "district_or_county_education_routing",
+        "county_local_disability_resources"
+      ]
+    },
+    {
+      "state": "oklahoma",
+      "classification": "UNSTARTED",
+      "index_safe": false,
+      "completeness_pct": 58,
+      "primary_gap_reason": "generic_or_statewide_evidence_used_where_local_required",
+      "critical_gap_families": [
+        "district_or_county_education_routing",
+        "county_local_disability_resources"
+      ]
+    },
+    {
+      "state": "wisconsin",
+      "classification": "UNSTARTED",
+      "index_safe": false,
+      "completeness_pct": 58,
+      "primary_gap_reason": "generic_or_statewide_evidence_used_where_local_required",
+      "critical_gap_families": [
+        "district_or_county_education_routing",
+        "county_local_disability_resources"
+      ]
+    }
+  ],
+  "complete_states": [],
+  "generated_all_state_v3": false,
+  "texas_preserved_complete": true
+}
