@@ -35,6 +35,18 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
   const [additionalText, setAdditionalText] = useState<string>('');
   const [loading, setLoading] = useState(false);
   const [analysis, setAnalysis] = useState<AnalysisResult | null>(null);
+  const [hydrated, setHydrated] = useState(false);
+
+  useEffect(() => {
+    const savedState = localStorage.getItem('selected_state');
+    const timer = setTimeout(() => {
+      if (savedState) {
+        setStateId(savedState);
+      }
+      setHydrated(true);
+    }, 0);
+    return () => clearTimeout(timer);
+  }, []);
 
   // Dynamic Refiner states
   const [insuranceExcludesHearing, setInsuranceExcludesHearing] = useState<boolean | null>(null);
@@ -436,10 +448,12 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
               <label htmlFor="state">State</label>
               <select 
                 id="state" 
-                value={stateId}
+                value={hydrated ? stateId : 'california'}
                 onChange={(e) => {
-                  setStateId(e.target.value);
+                  const val = e.target.value;
+                  setStateId(val);
                   setCountyId('');
+                  localStorage.setItem('selected_state', val);
                 }}
                 required
               >
@@ -881,6 +895,11 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
                       onChange={(e) => {
                         const val = e.target.value;
                         setCountyId(val);
+                        const matched = counties.find(c => c.id === val);
+                        if (matched?.state_id) {
+                          setStateId(matched.state_id);
+                          localStorage.setItem('selected_state', matched.state_id);
+                        }
                         triggerScreenerSubmit(true, { age: parseInt(age) || 0, countyId: val, diagnosis });
                       }}
                       style={{ padding: '0.5rem 0.75rem', fontSize: '0.9rem', borderRadius: '8px', background: 'white' }}
