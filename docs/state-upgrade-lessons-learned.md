@@ -197,6 +197,10 @@ This document captures key technical, data modeling, and procedural lessons lear
 *   **Problem:** Pennsylvania’s final education gap was not three independent county mysteries. Lackawanna, Susquehanna, and Wayne counties all depended on the same unresolved Northeastern Educational Intermediate Unit 19 root after the bounded exact-leaf packet was exhausted.
 *   **Lesson:** When multiple counties collapse to one unresolved official regional root, ledger the blocker at the shared-root level and final-block the state if no reviewed exact leaf exists. Do not keep a state in `PARTIAL` just because the residual count is small.
 
+### District-Owned County Leaves Can Clear A Stale Shared Regional Blocker
+*   **Problem:** Pennsylvania’s IU19 blocker looked final only because the packet had stopped at the unresolved regional root, while live district-owned leaves still existed in the three affected counties on Scranton, Susquehanna Community, and Wallenpaupack domains.
+*   **Lesson:** Before preserving a shared-root blocker, run one bounded district-owned repair pass across the affected counties themselves. If reviewed county-specific district leaves exist, upgrade the family from those exact leaves and retire the stale regional-root blocker instead of keeping the whole state blocked.
+
 ### Official Replatform Redirects Must Refresh The Reviewed Authority Domain
 *   **Problem:** New Mexico’s low-token role queue rejected live official HCA pages as `wrong_domain_after_fetch` because the reviewed allowlist and packet still expected the retired `nmhealth.org` or `hsd.state.nm.us` roots, even when the official source had moved to `hca.nm.gov`.
 *   **Lesson:** When a reviewed official state source redirects to a new cabinet or replatform domain on the same state authority, refresh the packet’s reviewed authority domain before calling the role rejected. A stale allowlist is a packet bug, not proof that the official family is gone.

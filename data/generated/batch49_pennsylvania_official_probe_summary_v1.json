@@ -1,0 +1,43 @@
+{
+  "lackawannaDistrict": {
+    "county": "Lackawanna County",
+    "district": "Scranton City School District",
+    "url": "https://www.scrsd.org/departments/special-education",
+    "finalUrl": "https://www.scrsd.org/departments/special-education",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned title \"Special Education - Scranton City School District\" on a district-owned Scranton domain, replacing the stale shared IU19 fallback for Lackawanna County."
+  },
+  "susquehannaDistrict": {
+    "county": "Susquehanna County",
+    "district": "Susquehanna Community School District",
+    "url": "https://www.scschools.org/special-ed/child-find",
+    "finalUrl": "https://www.scschools.org/special-ed/child-find",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned title and H1 \"Child Find\" on the district-owned Susquehanna Community School District domain, with Special Ed navigation and county-grade routing evidence."
+  },
+  "wayneDistrict": {
+    "county": "Wayne County",
+    "district": "Wallenpaupack Area School District",
+    "url": "https://www.wallenpaupack.org/departments/special-education",
+    "finalUrl": "https://www.wallenpaupack.org/departments/special-education",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned title \"Special Education - Wallenpaupack Area Sd\" on the district-owned Wallenpaupack domain, replacing the stale shared IU19 fallback for Wayne County."
+  },
+  "legalAidHome": {
+    "url": "https://www.phlp.org/en/",
+    "finalUrl": "https://www.phlp.org/en/",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned first-party title \"Pennsylvania Health Law Project | Helping People in Need Get the Healthcare They Deserve\" and body text \"We help Pennsylvanians in need get the healthcare they deserve.\""
+  },
+  "legalAidHelp": {
+    "url": "https://www.phlp.org/en/get-legal-help",
+    "finalUrl": "https://www.phlp.org/en/get-legal-help",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned title \"Get Legal Help - Pennsylvania Health Law Project\", H1 \"Get Help from PHLP\", and a statewide helpline 1-800-274-3258 on a first-party Pennsylvania legal-aid page."
+  }
+}
