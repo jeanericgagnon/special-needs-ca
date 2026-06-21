@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T20:36:36.083Z",
+  "generatedAt": "2026-06-21T20:43:20.942Z",
   "stateCount": 50,
   "classifications": {
     "UNSTARTED": 42,
@@ -661,11 +661,11 @@
       "legacyManualReviewRate": 38.69,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 159,
-      "strongCriticalFamilies": 7,
+      "strongCriticalFamilies": 9,
       "weakCriticalFamilies": 3,
-      "missingCriticalFamilies": 2,
+      "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 58,
+      "completenessPct": 75,
       "dbMetrics": {
         "state_id": "georgia",
         "state_code": "GA",
@@ -701,14 +701,14 @@
       "familyStatuses": {
         "medicaid_state_health_coverage": "verified_state_grade",
         "medicaid_waiver_hcbs_disability_services": "verified_state_grade",
-        "developmental_disability_idd_authority": "exact_leaf_targets_verified_partial",
+        "developmental_disability_idd_authority": "blocked_official_county_table_blank",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "exact_leaf_targets_verified_partial",
+        "district_or_county_education_routing": "blocked_exact_leaf_repair_exhausted",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
-        "protection_and_advocacy": "missing",
-        "parent_training_information_center": "inventory_only",
-        "legal_aid": "missing",
+        "protection_and_advocacy": "verified_state_grade",
+        "parent_training_information_center": "verified_state_grade",
+        "legal_aid": "missing_verified_source",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_state_grade"

@@ -172,3 +172,7 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Exhausted Exact-Leaf Packets Should End In Explicit Blocked State, Not Fake Fast-Finish Partial
 *   **Problem:** A state can linger in `PARTIAL` even after its bounded official packet roots have already been exhausted, which creates the illusion that another rerun of the same reviewed roots might still finish county-grade coverage.
 *   **Lesson:** Once the reviewed exact-leaf packet has been exhausted and the remaining blocker is either a missing official locator or unauthored county/district leaves beyond the bounded packet roots, reclassify the state as `BLOCKED` with explicit terminal blockers. Do not keep it in a fast-finish bucket unless a new exact official target set actually exists.
+
+### Discovery-Exhaustion Planning Does Not Count As Verified Statewide Support Evidence
+*   **Problem:** A state can carry planning artifacts or source-discovery exhaustion notes claiming that PTI, P&A, or legal-aid coverage is “mapped,” while the packet still lacks a reviewed verified-source row for that family.
+*   **Lesson:** Discovery reports and authored target plans are planning evidence only. Upgrade a statewide support family only when the packet already contains a reviewed first-party or authoritative verified source; otherwise keep it blocked or missing, even if the planning layer says the category is covered.
