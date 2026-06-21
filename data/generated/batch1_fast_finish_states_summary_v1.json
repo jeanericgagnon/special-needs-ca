@@ -1,0 +1,46 @@
+{
+  "batch": "batch_1_fast_finish_states_v1",
+  "generated_at": "2026-06-21T16:37:13.538Z",
+  "states": [
+    {
+      "state": "california",
+      "classification": "PARTIAL",
+      "index_safe": false,
+      "completeness_pct": 42,
+      "primary_gap_reason": "generic_or_statewide_evidence_used_where_local_required",
+      "critical_gap_families": [
+        "early_intervention_part_c",
+        "district_or_county_education_routing",
+        "county_local_disability_resources"
+      ]
+    },
+    {
+      "state": "pennsylvania",
+      "classification": "PARTIAL",
+      "index_safe": false,
+      "completeness_pct": 50,
+      "primary_gap_reason": "legacy_index_exposed_without_california_grade_reaudit",
+      "critical_gap_families": [
+        "launch_gate",
+        "district_or_county_education_routing",
+        "county_local_disability_resources"
+      ]
+    },
+    {
+      "state": "florida",
+      "classification": "PARTIAL",
+      "index_safe": false,
+      "completeness_pct": 33,
+      "primary_gap_reason": "legacy_index_exposed_without_california_grade_reaudit",
+      "critical_gap_families": [
+        "launch_gate",
+        "developmental_disability_idd_authority",
+        "district_or_county_education_routing",
+        "county_local_disability_resources"
+      ]
+    }
+  ],
+  "complete_states": [],
+  "generated_all_state_v3": false,
+  "texas_preserved_complete": true
+}
