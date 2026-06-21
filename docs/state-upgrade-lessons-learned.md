@@ -144,3 +144,7 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Root-Domain Review Packets Should Precede County-Grade Leaf Authoring
 *   **Problem:** The hardest post-packet blocker is often not a missing state program page but a known generic root like a regional-center homepage, APD region root, DODD root, or district homepage that still lacks a reviewed county/district leaf target.
 *   **Lesson:** Before reopening scraping, package each county-grade family into a deterministic root-domain review packet with exact-target goals, sample source URLs, and required leaf terms. This makes manual or semi-automated authoring reproducible and prevents repeating broad discovery for the same domains.
+
+### Statewide Agency Landings Must Fail Closed In County-Grade Leaf Repair
+*   **Problem:** Bounded same-domain discovery can still surface attractive but misleading statewide pages like `/agencies/dhs` or generic application pages that mention services without actually proving county office or district routing.
+*   **Lesson:** County-grade leaf repair must reject statewide agency landings unless the title, headings, and URL itself prove local office, district, regional, or locator semantics. Contact-only or apply-only state pages are progress hints, not county-grade proof.

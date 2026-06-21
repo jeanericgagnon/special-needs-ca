@@ -1,0 +1,54 @@
+{
+  "batch": "batch_20_leaf_target_verification_v1",
+  "generated_at": "2026-06-21T17:42:48.646Z",
+  "states": [
+    {
+      "state": "california",
+      "classification": "PARTIAL",
+      "index_safe": false,
+      "verified_leaf_targets": 3,
+      "repaired_families": [
+        "district_or_county_education_routing"
+      ]
+    },
+    {
+      "state": "pennsylvania",
+      "classification": "PARTIAL",
+      "index_safe": false,
+      "verified_leaf_targets": 0,
+      "repaired_families": []
+    },
+    {
+      "state": "florida",
+      "classification": "PARTIAL",
+      "index_safe": false,
+      "verified_leaf_targets": 4,
+      "repaired_families": [
+        "developmental_disability_idd_authority",
+        "district_or_county_education_routing"
+      ]
+    },
+    {
+      "state": "georgia",
+      "classification": "BLOCKED",
+      "index_safe": false,
+      "verified_leaf_targets": 4,
+      "repaired_families": [
+        "developmental_disability_idd_authority",
+        "county_local_disability_resources"
+      ]
+    },
+    {
+      "state": "ohio",
+      "classification": "BLOCKED",
+      "index_safe": false,
+      "verified_leaf_targets": 3,
+      "repaired_families": [
+        "district_or_county_education_routing"
+      ]
+    }
+  ],
+  "total_verified_leaf_targets": 14,
+  "total_blocked_leaf_targets": 32,
+  "texas_preserved_complete": true
+}

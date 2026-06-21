@@ -65,3 +65,10 @@
 ## Completion decision
 
 - Florida remains PARTIAL and not index-safe because one or more critical families are still legacy, inventory-only, or missing.
+
+## Batch 20 exact leaf verification
+
+- developmental_disability_idd_authority: verified exact leaf targets -> https://apd.myflorida.com/region/
+- district_or_county_education_routing: verified exact leaf targets -> https://www.bakerk12.org/departments/exceptional-student-education-student-services/exceptional-student-education-student-services, https://www.bakerk12.org/departments/exceptional-student-education-student-services/student-services-resources, https://www.bakerk12.org/departments/exceptional-student-education-student-services/staff
+
+- Florida remains PARTIAL and not index-safe until every critical family passes county-grade proof.

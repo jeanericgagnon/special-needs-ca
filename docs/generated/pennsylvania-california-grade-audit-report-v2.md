@@ -61,3 +61,9 @@
 ## Completion decision
 
 - Pennsylvania remains PARTIAL and not index-safe because one or more critical families are still legacy, inventory-only, or missing.
+
+## Batch 20 exact leaf verification
+
+- No new exact leaf targets verified in Batch 20.
+
+- Pennsylvania remains PARTIAL and not index-safe until every critical family passes county-grade proof.

@@ -59,3 +59,9 @@
 ## Completion decision
 
 - Ohio remains BLOCKED and not index-safe because one or more critical families are still legacy, inventory-only, or missing.
+
+## Batch 20 exact leaf verification
+
+- district_or_county_education_routing: verified exact leaf targets -> https://www.soesc.org/StaffDirectory.aspx, https://www.allencountyesc.org/StaffDirectory.aspx, https://www.allencountyesc.org/SpecialEducation.aspx
+
+- Ohio remains BLOCKED and not index-safe until every critical family passes county-grade proof.

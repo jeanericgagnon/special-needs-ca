@@ -59,3 +59,10 @@
 ## Completion decision
 
 - Georgia remains BLOCKED and not index-safe because one or more critical families are still legacy, inventory-only, or missing.
+
+## Batch 20 exact leaf verification
+
+- developmental_disability_idd_authority: verified exact leaf targets -> https://dbhdd.georgia.gov/regional-field-office-county, https://dbhdd.georgia.gov/regional-field-offices, https://dbhdd.georgia.gov/contacts/east-central-regional-hospital-mental-health-campus
+- county_local_disability_resources: verified exact leaf targets -> https://dfcs.georgia.gov/locations
+
+- Georgia remains BLOCKED and not index-safe until every critical family passes county-grade proof.

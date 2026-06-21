@@ -61,3 +61,9 @@
 ## Completion decision
 
 - California remains PARTIAL and not index-safe because one or more critical families are still legacy, inventory-only, or missing.
+
+## Batch 20 exact leaf verification
+
+- district_or_county_education_routing: verified exact leaf targets -> https://www.ousd.org/enroll/enroll-at-ousd/enroll-your-student-tk-12/how-it-works-placement-priorities-special-programs-resources/special-education, https://www.ousd.org/our-schools/school-directory, https://www.ousd.org/enroll/enroll-at-ousd/ece/contact-ece-schools-office
+
+- California remains PARTIAL and not index-safe until every critical family passes county-grade proof.
