@@ -1,0 +1,68 @@
+{
+  "batch": "batch_19_county_district_leaf_authoring_v1",
+  "generated_at": "2026-06-21T17:25:41.745Z",
+  "states": [
+    {
+      "state": "california",
+      "packet_count": 3,
+      "families": [
+        "early_intervention_part_c",
+        "district_or_county_education_routing",
+        "county_local_disability_resources"
+      ],
+      "root_domain_count": 13
+    },
+    {
+      "state": "pennsylvania",
+      "packet_count": 2,
+      "families": [
+        "district_or_county_education_routing",
+        "county_local_disability_resources"
+      ],
+      "root_domain_count": 6
+    },
+    {
+      "state": "florida",
+      "packet_count": 3,
+      "families": [
+        "developmental_disability_idd_authority",
+        "district_or_county_education_routing",
+        "county_local_disability_resources"
+      ],
+      "root_domain_count": 10
+    },
+    {
+      "state": "georgia",
+      "packet_count": 3,
+      "families": [
+        "developmental_disability_idd_authority",
+        "district_or_county_education_routing",
+        "county_local_disability_resources"
+      ],
+      "root_domain_count": 4
+    },
+    {
+      "state": "ohio",
+      "packet_count": 2,
+      "families": [
+        "district_or_county_education_routing",
+        "county_local_disability_resources"
+      ],
+      "root_domain_count": 9
+    }
+  ],
+  "familyCounts": {
+    "early_intervention_part_c": 1,
+    "district_or_county_education_routing": 5,
+    "county_local_disability_resources": 5,
+    "developmental_disability_idd_authority": 2
+  },
+  "rootDomainCounts": {
+    "california": 13,
+    "pennsylvania": 6,
+    "florida": 10,
+    "georgia": 4,
+    "ohio": 9
+  },
+  "texas_preserved_complete": true
+}

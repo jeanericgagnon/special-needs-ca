@@ -1,0 +1,102 @@
+{
+  "state": "georgia",
+  "state_code": "GA",
+  "family": "district_or_county_education_routing",
+  "repair_lane": "county_district_leaf_repair",
+  "purpose": "Deterministic authoring packet for replacing generic or statewide evidence with county/district exact leaf targets.",
+  "current_problem_metrics": {
+    "dbFieldAgencyLabelCount": 12,
+    "federalMismatchCount": 44,
+    "genericRootCount": 13
+  },
+  "exact_target_goals": [
+    "special education contact page",
+    "IEP or exceptional student services page",
+    "parent rights or procedural safeguards",
+    "district directory or county routing page"
+  ],
+  "exact_target_terms": [
+    "special education",
+    "student services",
+    "exceptional",
+    "ESE",
+    "IEP",
+    "parent rights",
+    "procedural safeguards",
+    "directory"
+  ],
+  "representative_sources": [
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Georgia Department of Education Special Education Services (Appling County County fallback)",
+      "source_url": "https://www.gadoe.org/Curriculum-Instruction-and-Assessment/Special-Education-Services/Pages/default.aspx",
+      "source_domain": "gadoe.org",
+      "source_root": "https://www.gadoe.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Georgia Department of Education Special Education Services (Atkinson County County fallback)",
+      "source_url": "https://www.gadoe.org/Curriculum-Instruction-and-Assessment/Special-Education-Services/Pages/default.aspx",
+      "source_domain": "gadoe.org",
+      "source_root": "https://www.gadoe.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Georgia Department of Education Special Education Services (Bacon County County fallback)",
+      "source_url": "https://www.gadoe.org/Curriculum-Instruction-and-Assessment/Special-Education-Services/Pages/default.aspx",
+      "source_domain": "gadoe.org",
+      "source_root": "https://www.gadoe.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Georgia Department of Education Special Education Services (Baker County County fallback)",
+      "source_url": "https://www.gadoe.org/Curriculum-Instruction-and-Assessment/Special-Education-Services/Pages/default.aspx",
+      "source_domain": "gadoe.org",
+      "source_root": "https://www.gadoe.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Georgia Department of Education Special Education Services (Baldwin County County fallback)",
+      "source_url": "https://www.gadoe.org/Curriculum-Instruction-and-Assessment/Special-Education-Services/Pages/default.aspx",
+      "source_domain": "gadoe.org",
+      "source_root": "https://www.gadoe.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Georgia Department of Education Special Education Services (Banks County County fallback)",
+      "source_url": "https://www.gadoe.org/Curriculum-Instruction-and-Assessment/Special-Education-Services/Pages/default.aspx",
+      "source_domain": "gadoe.org",
+      "source_root": "https://www.gadoe.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Georgia Department of Education Special Education Services (Barrow County County fallback)",
+      "source_url": "https://www.gadoe.org/Curriculum-Instruction-and-Assessment/Special-Education-Services/Pages/default.aspx",
+      "source_domain": "gadoe.org",
+      "source_root": "https://www.gadoe.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Georgia Department of Education Special Education Services (Bartow County County fallback)",
+      "source_url": "https://www.gadoe.org/Curriculum-Instruction-and-Assessment/Special-Education-Services/Pages/default.aspx",
+      "source_domain": "gadoe.org",
+      "source_root": "https://www.gadoe.org/",
+      "verification_status": "verified"
+    }
+  ],
+  "root_domains_to_review": [
+    {
+      "source_root": "https://www.gadoe.org/",
+      "source_domain": "gadoe.org",
+      "sample_entity_name": "Georgia Department of Education Special Education Services (Appling County County fallback)"
+    }
+  ],
+  "packet_complete_when": "At least one reviewed district/county/local exact target is authored for each affected critical family without relying on a generic root or statewide-only page."
+}

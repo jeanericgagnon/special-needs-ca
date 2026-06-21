@@ -1,0 +1,117 @@
+{
+  "state": "pennsylvania",
+  "state_code": "PA",
+  "family": "district_or_county_education_routing",
+  "repair_lane": "county_district_leaf_repair",
+  "purpose": "Deterministic authoring packet for replacing generic or statewide evidence with county/district exact leaf targets.",
+  "current_problem_metrics": {
+    "dbFieldAgencyLabelCount": 14,
+    "federalMismatchCount": 43,
+    "genericRootCount": 15
+  },
+  "exact_target_goals": [
+    "special education contact page",
+    "IEP or exceptional student services page",
+    "parent rights or procedural safeguards",
+    "district directory or county routing page"
+  ],
+  "exact_target_terms": [
+    "special education",
+    "student services",
+    "exceptional",
+    "ESE",
+    "IEP",
+    "parent rights",
+    "procedural safeguards",
+    "directory"
+  ],
+  "representative_sources": [
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Lincoln Intermediate Unit 12 (Adams County County fallback)",
+      "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+      "source_domain": "education.pa.gov",
+      "source_root": "https://www.education.pa.gov/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Pittsburgh Public Schools - Special Education Division",
+      "source_url": "https://www.pghschools.org",
+      "source_domain": "pghschools.org",
+      "source_root": "https://www.pghschools.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "ARIN Intermediate Unit 28 (Armstrong County County fallback)",
+      "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+      "source_domain": "education.pa.gov",
+      "source_root": "https://www.education.pa.gov/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Beaver Valley Intermediate Unit 27 (Beaver County County fallback)",
+      "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+      "source_domain": "education.pa.gov",
+      "source_root": "https://www.education.pa.gov/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Appalachia Intermediate Unit 8 (Bedford County County fallback)",
+      "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+      "source_domain": "education.pa.gov",
+      "source_root": "https://www.education.pa.gov/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Reading School District - Special Education Department",
+      "source_url": "https://www.readingsd.org/",
+      "source_domain": "readingsd.org",
+      "source_root": "https://www.readingsd.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Appalachia Intermediate Unit 8 (Blair County County fallback)",
+      "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+      "source_domain": "education.pa.gov",
+      "source_root": "https://www.education.pa.gov/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "BLaST Intermediate Unit 17 (Bradford County County fallback)",
+      "source_url": "https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx",
+      "source_domain": "education.pa.gov",
+      "source_root": "https://www.education.pa.gov/",
+      "verification_status": "verified"
+    }
+  ],
+  "root_domains_to_review": [
+    {
+      "source_root": "https://www.education.pa.gov/",
+      "source_domain": "education.pa.gov",
+      "sample_entity_name": "Lincoln Intermediate Unit 12 (Adams County County fallback)"
+    },
+    {
+      "source_root": "https://www.pghschools.org/",
+      "source_domain": "pghschools.org",
+      "sample_entity_name": "Pittsburgh Public Schools - Special Education Division"
+    },
+    {
+      "source_root": "https://www.readingsd.org/",
+      "source_domain": "readingsd.org",
+      "sample_entity_name": "Reading School District - Special Education Department"
+    },
+    {
+      "source_root": "https://www.pennsburysd.org/",
+      "source_domain": "pennsburysd.org",
+      "sample_entity_name": "Pennsbury School District - Special Education Department"
+    }
+  ],
+  "packet_complete_when": "At least one reviewed district/county/local exact target is authored for each affected critical family without relying on a generic root or statewide-only page."
+}

@@ -1,0 +1,122 @@
+{
+  "state": "california",
+  "state_code": "CA",
+  "family": "county_local_disability_resources",
+  "repair_lane": "county_district_leaf_repair",
+  "purpose": "Deterministic authoring packet for replacing generic or statewide evidence with county/district exact leaf targets.",
+  "current_problem_metrics": {
+    "dbFieldAgencyLabelCount": 18,
+    "federalMismatchCount": 53,
+    "genericRootCount": 178
+  },
+  "exact_target_goals": [
+    "county office contact page",
+    "application or services page",
+    "office locator or local directory",
+    "eligibility or intake page"
+  ],
+  "exact_target_terms": [
+    "office",
+    "contact",
+    "services",
+    "apply",
+    "eligibility",
+    "directory",
+    "location",
+    "phone"
+  ],
+  "representative_sources": [
+    {
+      "entity_kind": "county_offices",
+      "entity_name": "Alameda County Health Department - CCS Program",
+      "source_url": "https://www.alamedacounty.ca.gov/public-health/ccs",
+      "source_domain": "alamedacounty.ca.gov",
+      "source_root": "https://www.alamedacounty.ca.gov/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "county_offices",
+      "entity_name": "Alameda County Social Services - IHSS Division",
+      "source_url": "https://www.alamedacounty.ca.gov/ihss",
+      "source_domain": "alamedacounty.ca.gov",
+      "source_root": "https://www.alamedacounty.ca.gov/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "county_offices",
+      "entity_name": "Alameda County Social Services - Medi-Cal Intake",
+      "source_url": "https://www.benefitscal.com",
+      "source_domain": "benefitscal.com",
+      "source_root": "https://www.benefitscal.com/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "county_offices",
+      "entity_name": "Alpine County Health Department - CCS Program",
+      "source_url": "https://www.alpinecounty.ca.gov/public-health/ccs",
+      "source_domain": "alpinecounty.ca.gov",
+      "source_root": "https://www.alpinecounty.ca.gov/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "county_offices",
+      "entity_name": "Alpine County Social Services - IHSS Division",
+      "source_url": "https://www.alpinecounty.ca.gov/ihss",
+      "source_domain": "alpinecounty.ca.gov",
+      "source_root": "https://www.alpinecounty.ca.gov/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "county_offices",
+      "entity_name": "Alpine County Social Services - Medi-Cal Intake",
+      "source_url": "https://www.benefitscal.com",
+      "source_domain": "benefitscal.com",
+      "source_root": "https://www.benefitscal.com/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "county_offices",
+      "entity_name": "Amador County Health Department - CCS Program",
+      "source_url": "https://www.amadorcounty.ca.gov/public-health/ccs",
+      "source_domain": "amadorcounty.ca.gov",
+      "source_root": "https://www.amadorcounty.ca.gov/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "county_offices",
+      "entity_name": "Amador County Social Services - IHSS Division",
+      "source_url": "https://www.amadorcounty.ca.gov/ihss",
+      "source_domain": "amadorcounty.ca.gov",
+      "source_root": "https://www.amadorcounty.ca.gov/",
+      "verification_status": "verified"
+    }
+  ],
+  "root_domains_to_review": [
+    {
+      "source_root": "https://www.alamedacounty.ca.gov/",
+      "source_domain": "alamedacounty.ca.gov",
+      "sample_entity_name": "Alameda County Health Department - CCS Program"
+    },
+    {
+      "source_root": "https://www.benefitscal.com/",
+      "source_domain": "benefitscal.com",
+      "sample_entity_name": "Alameda County Social Services - Medi-Cal Intake"
+    },
+    {
+      "source_root": "https://www.alpinecounty.ca.gov/",
+      "source_domain": "alpinecounty.ca.gov",
+      "sample_entity_name": "Alpine County Health Department - CCS Program"
+    },
+    {
+      "source_root": "https://www.amadorcounty.ca.gov/",
+      "source_domain": "amadorcounty.ca.gov",
+      "sample_entity_name": "Amador County Health Department - CCS Program"
+    },
+    {
+      "source_root": "https://www.buttecounty.ca.gov/",
+      "source_domain": "buttecounty.ca.gov",
+      "sample_entity_name": "Butte County Health Department - CCS Program"
+    }
+  ],
+  "packet_complete_when": "At least one reviewed district/county/local exact target is authored for each affected critical family without relying on a generic root or statewide-only page."
+}

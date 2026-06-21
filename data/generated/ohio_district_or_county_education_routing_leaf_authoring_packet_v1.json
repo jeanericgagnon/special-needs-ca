@@ -1,0 +1,137 @@
+{
+  "state": "ohio",
+  "state_code": "OH",
+  "family": "district_or_county_education_routing",
+  "repair_lane": "county_district_leaf_repair",
+  "purpose": "Deterministic authoring packet for replacing generic or statewide evidence with county/district exact leaf targets.",
+  "current_problem_metrics": {
+    "dbFieldAgencyLabelCount": 5,
+    "federalMismatchCount": 43,
+    "genericRootCount": 14
+  },
+  "exact_target_goals": [
+    "special education contact page",
+    "IEP or exceptional student services page",
+    "parent rights or procedural safeguards",
+    "district directory or county routing page"
+  ],
+  "exact_target_terms": [
+    "special education",
+    "student services",
+    "exceptional",
+    "ESE",
+    "IEP",
+    "parent rights",
+    "procedural safeguards",
+    "directory"
+  ],
+  "representative_sources": [
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Southern Ohio ESC (Adams County County fallback)",
+      "source_url": "https://www.soesc.org",
+      "source_domain": "soesc.org",
+      "source_root": "https://www.soesc.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Allen County ESC (Allen County County fallback)",
+      "source_url": "https://www.allencountyesc.org",
+      "source_domain": "allencountyesc.org",
+      "source_root": "https://www.allencountyesc.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Tri-County ESC (Ashland County County fallback)",
+      "source_url": "https://www.youresc.k12.oh.us",
+      "source_domain": "youresc.k12.oh.us",
+      "source_root": "https://www.youresc.k12.oh.us/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Ashtabula County ESC (Ashtabula County County fallback)",
+      "source_url": "https://www.ashtabulaesc.org",
+      "source_domain": "ashtabulaesc.org",
+      "source_root": "https://www.ashtabulaesc.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Athens-Meigs ESC (Athens County County fallback)",
+      "source_url": "https://www.athensmeigs.com",
+      "source_domain": "athensmeigs.com",
+      "source_root": "https://www.athensmeigs.com/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Auglaize County ESC (Auglaize County County fallback)",
+      "source_url": "https://www.auglaizeesc.org",
+      "source_domain": "auglaizeesc.org",
+      "source_root": "https://www.auglaizeesc.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "East Central Ohio ESC (Belmont County County fallback)",
+      "source_url": "https://www.ecoesc.org",
+      "source_domain": "ecoesc.org",
+      "source_root": "https://www.ecoesc.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Brown County ESC (Brown County County fallback)",
+      "source_url": "https://www.brown.k12.oh.us",
+      "source_domain": "brown.k12.oh.us",
+      "source_root": "https://www.brown.k12.oh.us/",
+      "verification_status": "verified"
+    }
+  ],
+  "root_domains_to_review": [
+    {
+      "source_root": "https://www.soesc.org/",
+      "source_domain": "soesc.org",
+      "sample_entity_name": "Southern Ohio ESC (Adams County County fallback)"
+    },
+    {
+      "source_root": "https://www.allencountyesc.org/",
+      "source_domain": "allencountyesc.org",
+      "sample_entity_name": "Allen County ESC (Allen County County fallback)"
+    },
+    {
+      "source_root": "https://www.youresc.k12.oh.us/",
+      "source_domain": "youresc.k12.oh.us",
+      "sample_entity_name": "Tri-County ESC (Ashland County County fallback)"
+    },
+    {
+      "source_root": "https://www.ashtabulaesc.org/",
+      "source_domain": "ashtabulaesc.org",
+      "sample_entity_name": "Ashtabula County ESC (Ashtabula County County fallback)"
+    },
+    {
+      "source_root": "https://www.athensmeigs.com/",
+      "source_domain": "athensmeigs.com",
+      "sample_entity_name": "Athens-Meigs ESC (Athens County County fallback)"
+    },
+    {
+      "source_root": "https://www.auglaizeesc.org/",
+      "source_domain": "auglaizeesc.org",
+      "sample_entity_name": "Auglaize County ESC (Auglaize County County fallback)"
+    },
+    {
+      "source_root": "https://www.ecoesc.org/",
+      "source_domain": "ecoesc.org",
+      "sample_entity_name": "East Central Ohio ESC (Belmont County County fallback)"
+    },
+    {
+      "source_root": "https://www.brown.k12.oh.us/",
+      "source_domain": "brown.k12.oh.us",
+      "sample_entity_name": "Brown County ESC (Brown County County fallback)"
+    }
+  ],
+  "packet_complete_when": "At least one reviewed district/county/local exact target is authored for each affected critical family without relying on a generic root or statewide-only page."
+}

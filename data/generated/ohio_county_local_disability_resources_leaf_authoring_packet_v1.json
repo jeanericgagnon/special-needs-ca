@@ -1,0 +1,102 @@
+{
+  "state": "ohio",
+  "state_code": "OH",
+  "family": "county_local_disability_resources",
+  "repair_lane": "county_district_leaf_repair",
+  "purpose": "Deterministic authoring packet for replacing generic or statewide evidence with county/district exact leaf targets.",
+  "current_problem_metrics": {
+    "dbFieldAgencyLabelCount": 5,
+    "federalMismatchCount": 43,
+    "genericRootCount": 14
+  },
+  "exact_target_goals": [
+    "county office contact page",
+    "application or services page",
+    "office locator or local directory",
+    "eligibility or intake page"
+  ],
+  "exact_target_terms": [
+    "office",
+    "contact",
+    "services",
+    "apply",
+    "eligibility",
+    "directory",
+    "location",
+    "phone"
+  ],
+  "representative_sources": [
+    {
+      "entity_kind": "county_offices",
+      "entity_name": "Adams County Department of Job and Family Services",
+      "source_url": "https://doi.org/10.7910/DVN/AVRHMI",
+      "source_domain": "doi.org",
+      "source_root": "https://doi.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "county_offices",
+      "entity_name": "Allen County Department of Job and Family Services",
+      "source_url": "https://doi.org/10.7910/DVN/AVRHMI",
+      "source_domain": "doi.org",
+      "source_root": "https://doi.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "county_offices",
+      "entity_name": "Ashland County Department of Job and Family Services",
+      "source_url": "https://doi.org/10.7910/DVN/AVRHMI",
+      "source_domain": "doi.org",
+      "source_root": "https://doi.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "county_offices",
+      "entity_name": "Ashtabula County Department of Job and Family Services",
+      "source_url": "https://doi.org/10.7910/DVN/AVRHMI",
+      "source_domain": "doi.org",
+      "source_root": "https://doi.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "county_offices",
+      "entity_name": "Athens County Department of Job and Family Services",
+      "source_url": "https://doi.org/10.7910/DVN/AVRHMI",
+      "source_domain": "doi.org",
+      "source_root": "https://doi.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "county_offices",
+      "entity_name": "Auglaize County Department of Job and Family Services",
+      "source_url": "https://doi.org/10.7910/DVN/AVRHMI",
+      "source_domain": "doi.org",
+      "source_root": "https://doi.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "county_offices",
+      "entity_name": "Belmont County Department of Job and Family Services",
+      "source_url": "https://doi.org/10.7910/DVN/AVRHMI",
+      "source_domain": "doi.org",
+      "source_root": "https://doi.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "county_offices",
+      "entity_name": "Brown County Department of Job and Family Services",
+      "source_url": "https://doi.org/10.7910/DVN/AVRHMI",
+      "source_domain": "doi.org",
+      "source_root": "https://doi.org/",
+      "verification_status": "verified"
+    }
+  ],
+  "root_domains_to_review": [
+    {
+      "source_root": "https://doi.org/",
+      "source_domain": "doi.org",
+      "sample_entity_name": "Adams County Department of Job and Family Services"
+    }
+  ],
+  "packet_complete_when": "At least one reviewed district/county/local exact target is authored for each affected critical family without relying on a generic root or statewide-only page."
+}

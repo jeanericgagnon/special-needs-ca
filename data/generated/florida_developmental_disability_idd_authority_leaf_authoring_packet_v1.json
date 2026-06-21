@@ -1,0 +1,104 @@
+{
+  "state": "florida",
+  "state_code": "FL",
+  "family": "developmental_disability_idd_authority",
+  "repair_lane": "county_district_leaf_repair",
+  "purpose": "Deterministic authoring packet for replacing generic or statewide evidence with county/district exact leaf targets.",
+  "current_problem_metrics": {
+    "dbFieldAgencyLabelCount": 2,
+    "federalMismatchCount": 48,
+    "genericRootCount": 12
+  },
+  "exact_target_goals": [
+    "eligibility",
+    "intake or application",
+    "county or regional catchment page",
+    "office contact page",
+    "appeals or complaints path"
+  ],
+  "exact_target_terms": [
+    "eligibility",
+    "apply",
+    "intake",
+    "office",
+    "contact",
+    "county",
+    "regional",
+    "appeal",
+    "complaint"
+  ],
+  "representative_sources": [
+    {
+      "entity_kind": "apd_office",
+      "entity_name": "APD Central Region - Lakeland (Field Office 14)",
+      "source_url": "https://apd.myflorida.com/region/",
+      "source_domain": "apd.myflorida.com",
+      "source_root": "https://apd.myflorida.com/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "apd_office",
+      "entity_name": "APD Central Region - Orlando (Field Office 7)",
+      "source_url": "https://apd.myflorida.com/region/",
+      "source_domain": "apd.myflorida.com",
+      "source_root": "https://apd.myflorida.com/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "apd_office",
+      "entity_name": "APD Central Region - Wildwood (Field Office 13)",
+      "source_url": "https://apd.myflorida.com/region/",
+      "source_domain": "apd.myflorida.com",
+      "source_root": "https://apd.myflorida.com/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "apd_office",
+      "entity_name": "APD Northeast Region - Daytona Beach (Field Office 12)",
+      "source_url": "https://apd.myflorida.com/region/",
+      "source_domain": "apd.myflorida.com",
+      "source_root": "https://apd.myflorida.com/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "apd_office",
+      "entity_name": "APD Northeast Region - Gainesville (Field Office 3)",
+      "source_url": "https://apd.myflorida.com/region/",
+      "source_domain": "apd.myflorida.com",
+      "source_root": "https://apd.myflorida.com/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "apd_office",
+      "entity_name": "APD Northeast Region - Jacksonville (Field Office 4)",
+      "source_url": "https://apd.myflorida.com/region/",
+      "source_domain": "apd.myflorida.com",
+      "source_root": "https://apd.myflorida.com/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "apd_office",
+      "entity_name": "APD Northwest Region - Panama City (Field Office 2A)",
+      "source_url": "https://apd.myflorida.com/region/",
+      "source_domain": "apd.myflorida.com",
+      "source_root": "https://apd.myflorida.com/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "apd_office",
+      "entity_name": "APD Northwest Region - Pensacola (Field Office 1)",
+      "source_url": "https://apd.myflorida.com/region/",
+      "source_domain": "apd.myflorida.com",
+      "source_root": "https://apd.myflorida.com/",
+      "verification_status": "verified"
+    }
+  ],
+  "root_domains_to_review": [
+    {
+      "source_root": "https://apd.myflorida.com/",
+      "source_domain": "apd.myflorida.com",
+      "sample_entity_name": "APD Central Region - Lakeland (Field Office 14)"
+    }
+  ],
+  "packet_complete_when": "At least one reviewed district/county/local exact target is authored for each affected critical family without relying on a generic root or statewide-only page."
+}

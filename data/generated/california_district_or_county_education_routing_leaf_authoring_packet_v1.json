@@ -1,0 +1,137 @@
+{
+  "state": "california",
+  "state_code": "CA",
+  "family": "district_or_county_education_routing",
+  "repair_lane": "county_district_leaf_repair",
+  "purpose": "Deterministic authoring packet for replacing generic or statewide evidence with county/district exact leaf targets.",
+  "current_problem_metrics": {
+    "dbFieldAgencyLabelCount": 18,
+    "federalMismatchCount": 53,
+    "genericRootCount": 178
+  },
+  "exact_target_goals": [
+    "special education contact page",
+    "IEP or exceptional student services page",
+    "parent rights or procedural safeguards",
+    "district directory or county routing page"
+  ],
+  "exact_target_terms": [
+    "special education",
+    "student services",
+    "exceptional",
+    "ESE",
+    "IEP",
+    "parent rights",
+    "procedural safeguards",
+    "directory"
+  ],
+  "representative_sources": [
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Oakland Unified School District (OUSD)",
+      "source_url": "https://ousd.org",
+      "source_domain": "ousd.org",
+      "source_root": "https://ousd.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Fremont Unified School District",
+      "source_url": "https://www.fremont.k12.ca.us",
+      "source_domain": "fremont.k12.ca.us",
+      "source_root": "https://www.fremont.k12.ca.us/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Berkeley Unified School District",
+      "source_url": "https://www.berkeleyschools.net",
+      "source_domain": "berkeleyschools.net",
+      "source_root": "https://www.berkeleyschools.net/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Alpine County SELPA (Alpine County County fallback)",
+      "source_url": "https://www.alpinecoe.org/selpa",
+      "source_domain": "alpinecoe.org",
+      "source_root": "https://www.alpinecoe.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Amador County SELPA (Amador County County fallback)",
+      "source_url": "https://www.amadorcoe.org/selpa",
+      "source_domain": "amadorcoe.org",
+      "source_root": "https://www.amadorcoe.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Butte County SELPA (Butte County County fallback)",
+      "source_url": "https://www.buttecoe.org/selpa",
+      "source_domain": "buttecoe.org",
+      "source_root": "https://www.buttecoe.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Calaveras County SELPA (Calaveras County County fallback)",
+      "source_url": "https://www.calaverascoe.org/selpa",
+      "source_domain": "calaverascoe.org",
+      "source_root": "https://www.calaverascoe.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Colusa County SELPA (Colusa County County fallback)",
+      "source_url": "https://www.colusacoe.org/selpa",
+      "source_domain": "colusacoe.org",
+      "source_root": "https://www.colusacoe.org/",
+      "verification_status": "verified"
+    }
+  ],
+  "root_domains_to_review": [
+    {
+      "source_root": "https://ousd.org/",
+      "source_domain": "ousd.org",
+      "sample_entity_name": "Oakland Unified School District (OUSD)"
+    },
+    {
+      "source_root": "https://www.fremont.k12.ca.us/",
+      "source_domain": "fremont.k12.ca.us",
+      "sample_entity_name": "Fremont Unified School District"
+    },
+    {
+      "source_root": "https://www.berkeleyschools.net/",
+      "source_domain": "berkeleyschools.net",
+      "sample_entity_name": "Berkeley Unified School District"
+    },
+    {
+      "source_root": "https://www.alpinecoe.org/",
+      "source_domain": "alpinecoe.org",
+      "sample_entity_name": "Alpine County SELPA (Alpine County County fallback)"
+    },
+    {
+      "source_root": "https://www.amadorcoe.org/",
+      "source_domain": "amadorcoe.org",
+      "sample_entity_name": "Amador County SELPA (Amador County County fallback)"
+    },
+    {
+      "source_root": "https://www.buttecoe.org/",
+      "source_domain": "buttecoe.org",
+      "sample_entity_name": "Butte County SELPA (Butte County County fallback)"
+    },
+    {
+      "source_root": "https://www.calaverascoe.org/",
+      "source_domain": "calaverascoe.org",
+      "sample_entity_name": "Calaveras County SELPA (Calaveras County County fallback)"
+    },
+    {
+      "source_root": "https://www.colusacoe.org/",
+      "source_domain": "colusacoe.org",
+      "sample_entity_name": "Colusa County SELPA (Colusa County County fallback)"
+    }
+  ],
+  "packet_complete_when": "At least one reviewed district/county/local exact target is authored for each affected critical family without relying on a generic root or statewide-only page."
+}

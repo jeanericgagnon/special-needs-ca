@@ -1,0 +1,88 @@
+{
+  "state": "georgia",
+  "state_code": "GA",
+  "family": "developmental_disability_idd_authority",
+  "repair_lane": "county_district_leaf_repair",
+  "purpose": "Deterministic authoring packet for replacing generic or statewide evidence with county/district exact leaf targets.",
+  "current_problem_metrics": {
+    "dbFieldAgencyLabelCount": 12,
+    "federalMismatchCount": 44,
+    "genericRootCount": 13
+  },
+  "exact_target_goals": [
+    "eligibility",
+    "intake or application",
+    "county or regional catchment page",
+    "office contact page",
+    "appeals or complaints path"
+  ],
+  "exact_target_terms": [
+    "eligibility",
+    "apply",
+    "intake",
+    "office",
+    "contact",
+    "county",
+    "regional",
+    "appeal",
+    "complaint"
+  ],
+  "representative_sources": [
+    {
+      "entity_kind": "dbhdd_office",
+      "entity_name": "DBHDD Region 1 Field Office",
+      "source_url": "https://dbhdd.georgia.gov/region-1-field-office",
+      "source_domain": "dbhdd.georgia.gov",
+      "source_root": "https://dbhdd.georgia.gov/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "dbhdd_office",
+      "entity_name": "DBHDD Region 2 Field Office",
+      "source_url": "https://dbhdd.georgia.gov/region-2-field-office",
+      "source_domain": "dbhdd.georgia.gov",
+      "source_root": "https://dbhdd.georgia.gov/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "dbhdd_office",
+      "entity_name": "DBHDD Region 3 Field Office",
+      "source_url": "https://dbhdd.georgia.gov/region-3-field-office",
+      "source_domain": "dbhdd.georgia.gov",
+      "source_root": "https://dbhdd.georgia.gov/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "dbhdd_office",
+      "entity_name": "DBHDD Region 4 Field Office",
+      "source_url": "https://dbhdd.georgia.gov/region-4-field-office",
+      "source_domain": "dbhdd.georgia.gov",
+      "source_root": "https://dbhdd.georgia.gov/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "dbhdd_office",
+      "entity_name": "DBHDD Region 5 Field Office",
+      "source_url": "https://dbhdd.georgia.gov/region-5-field-office",
+      "source_domain": "dbhdd.georgia.gov",
+      "source_root": "https://dbhdd.georgia.gov/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "dbhdd_office",
+      "entity_name": "DBHDD Region 6 Field Office",
+      "source_url": "https://dbhdd.georgia.gov/region-6-field-office",
+      "source_domain": "dbhdd.georgia.gov",
+      "source_root": "https://dbhdd.georgia.gov/",
+      "verification_status": "verified"
+    }
+  ],
+  "root_domains_to_review": [
+    {
+      "source_root": "https://dbhdd.georgia.gov/",
+      "source_domain": "dbhdd.georgia.gov",
+      "sample_entity_name": "DBHDD Region 1 Field Office"
+    }
+  ],
+  "packet_complete_when": "At least one reviewed district/county/local exact target is authored for each affected critical family without relying on a generic root or statewide-only page."
+}

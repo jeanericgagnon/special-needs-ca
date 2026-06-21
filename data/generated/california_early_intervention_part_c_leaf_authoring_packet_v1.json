@@ -1,0 +1,32 @@
+{
+  "state": "california",
+  "state_code": "CA",
+  "family": "early_intervention_part_c",
+  "repair_lane": "county_district_leaf_repair",
+  "purpose": "Deterministic authoring packet for replacing generic or statewide evidence with county/district exact leaf targets.",
+  "current_problem_metrics": {
+    "dbFieldAgencyLabelCount": 18,
+    "federalMismatchCount": 53,
+    "genericRootCount": 178
+  },
+  "exact_target_goals": [
+    "referral",
+    "intake",
+    "eligibility",
+    "local office directory",
+    "family rights or dispute path"
+  ],
+  "exact_target_terms": [
+    "referral",
+    "intake",
+    "eligibility",
+    "contact",
+    "county",
+    "provider",
+    "family rights",
+    "complaint"
+  ],
+  "representative_sources": [],
+  "root_domains_to_review": [],
+  "packet_complete_when": "At least one reviewed district/county/local exact target is authored for each affected critical family without relying on a generic root or statewide-only page."
+}

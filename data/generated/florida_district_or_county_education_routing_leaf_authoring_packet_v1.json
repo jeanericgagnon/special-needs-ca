@@ -1,0 +1,137 @@
+{
+  "state": "florida",
+  "state_code": "FL",
+  "family": "district_or_county_education_routing",
+  "repair_lane": "county_district_leaf_repair",
+  "purpose": "Deterministic authoring packet for replacing generic or statewide evidence with county/district exact leaf targets.",
+  "current_problem_metrics": {
+    "dbFieldAgencyLabelCount": 2,
+    "federalMismatchCount": 48,
+    "genericRootCount": 12
+  },
+  "exact_target_goals": [
+    "special education contact page",
+    "IEP or exceptional student services page",
+    "parent rights or procedural safeguards",
+    "district directory or county routing page"
+  ],
+  "exact_target_terms": [
+    "special education",
+    "student services",
+    "exceptional",
+    "ESE",
+    "IEP",
+    "parent rights",
+    "procedural safeguards",
+    "directory"
+  ],
+  "representative_sources": [
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Alachua County Public Schools - Exceptional Student Education",
+      "source_url": "https://www.fldoe.org/academics/exceptional-student-edu/",
+      "source_domain": "fldoe.org",
+      "source_root": "https://www.fldoe.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Baker County School District (Exceptional Student Education)",
+      "source_url": "https://www.bakerk12.org/Domain/33",
+      "source_domain": "bakerk12.org",
+      "source_root": "https://www.bakerk12.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Bay County School District (Exceptional Student Education)",
+      "source_url": "https://www.bay.k12.fl.us/exceptional-student-education",
+      "source_domain": "bay.k12.fl.us",
+      "source_root": "https://www.bay.k12.fl.us/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Bradford County School District (Exceptional Student Education)",
+      "source_url": "https://www.bradfordschools.org/page/exceptional-student-education",
+      "source_domain": "bradfordschools.org",
+      "source_root": "https://www.bradfordschools.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Brevard Public Schools - Exceptional Student Education",
+      "source_url": "https://www.fldoe.org/academics/exceptional-student-edu/",
+      "source_domain": "fldoe.org",
+      "source_root": "https://www.fldoe.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Broward County Public Schools - Exceptional Student Education",
+      "source_url": "https://www.fldoe.org/academics/exceptional-student-edu/",
+      "source_domain": "fldoe.org",
+      "source_root": "https://www.fldoe.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Calhoun County School District (Exceptional Student Education)",
+      "source_url": "https://www.fldoe.org/academics/exceptional-student-edu/staff/directory.stml",
+      "source_domain": "fldoe.org",
+      "source_root": "https://www.fldoe.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "school_districts",
+      "entity_name": "Charlotte County School District (Exceptional Student Education)",
+      "source_url": "https://www.yourcharlotteschools.net/Domain/132",
+      "source_domain": "yourcharlotteschools.net",
+      "source_root": "https://www.yourcharlotteschools.net/",
+      "verification_status": "verified"
+    }
+  ],
+  "root_domains_to_review": [
+    {
+      "source_root": "https://www.fldoe.org/",
+      "source_domain": "fldoe.org",
+      "sample_entity_name": "Alachua County Public Schools - Exceptional Student Education"
+    },
+    {
+      "source_root": "https://www.bakerk12.org/",
+      "source_domain": "bakerk12.org",
+      "sample_entity_name": "Baker County School District (Exceptional Student Education)"
+    },
+    {
+      "source_root": "https://www.bay.k12.fl.us/",
+      "source_domain": "bay.k12.fl.us",
+      "sample_entity_name": "Bay County School District (Exceptional Student Education)"
+    },
+    {
+      "source_root": "https://www.bradfordschools.org/",
+      "source_domain": "bradfordschools.org",
+      "sample_entity_name": "Bradford County School District (Exceptional Student Education)"
+    },
+    {
+      "source_root": "https://www.yourcharlotteschools.net/",
+      "source_domain": "yourcharlotteschools.net",
+      "sample_entity_name": "Charlotte County School District (Exceptional Student Education)"
+    },
+    {
+      "source_root": "https://www.citrusschools.org/",
+      "source_domain": "citrusschools.org",
+      "sample_entity_name": "Citrus County School District (Exceptional Student Education)"
+    },
+    {
+      "source_root": "https://www.myoneclay.net/",
+      "source_domain": "myoneclay.net",
+      "sample_entity_name": "Clay County School District (Exceptional Student Education)"
+    },
+    {
+      "source_root": "https://www.collierschools.com/",
+      "source_domain": "collierschools.com",
+      "sample_entity_name": "Collier County School District (Exceptional Student Education)"
+    }
+  ],
+  "packet_complete_when": "At least one reviewed district/county/local exact target is authored for each affected critical family without relying on a generic root or statewide-only page."
+}

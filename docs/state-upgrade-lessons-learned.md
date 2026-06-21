@@ -140,3 +140,7 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Shared Failure Classes Should Be Repaired As Cohorts
 *   **Problem:** After packet coverage is complete, the next five high-priority states often share the same blocker pattern: county or district leaf pages are still generic-root or statewide-only, while statewide support families are either inventory-only or missing.
 *   **Lesson:** Build repair cohorts by shared failure class, not by the original packet-generation batch label. This keeps the next operator focused on one repair method at a time, makes lessons portable across states, and avoids re-planning the same county-grade problem state by state.
+
+### Root-Domain Review Packets Should Precede County-Grade Leaf Authoring
+*   **Problem:** The hardest post-packet blocker is often not a missing state program page but a known generic root like a regional-center homepage, APD region root, DODD root, or district homepage that still lacks a reviewed county/district leaf target.
+*   **Lesson:** Before reopening scraping, package each county-grade family into a deterministic root-domain review packet with exact-target goals, sample source URLs, and required leaf terms. This makes manual or semi-automated authoring reproducible and prevents repeating broad discovery for the same domains.

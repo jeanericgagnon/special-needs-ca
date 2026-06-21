@@ -1,0 +1,107 @@
+{
+  "state": "georgia",
+  "state_code": "GA",
+  "family": "county_local_disability_resources",
+  "repair_lane": "county_district_leaf_repair",
+  "purpose": "Deterministic authoring packet for replacing generic or statewide evidence with county/district exact leaf targets.",
+  "current_problem_metrics": {
+    "dbFieldAgencyLabelCount": 12,
+    "federalMismatchCount": 44,
+    "genericRootCount": 13
+  },
+  "exact_target_goals": [
+    "county office contact page",
+    "application or services page",
+    "office locator or local directory",
+    "eligibility or intake page"
+  ],
+  "exact_target_terms": [
+    "office",
+    "contact",
+    "services",
+    "apply",
+    "eligibility",
+    "directory",
+    "location",
+    "phone"
+  ],
+  "representative_sources": [
+    {
+      "entity_kind": "county_offices",
+      "entity_name": "Appling County DFCS Office",
+      "source_url": "https://doi.org/10.7910/DVN/AVRHMI",
+      "source_domain": "doi.org",
+      "source_root": "https://doi.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "county_offices",
+      "entity_name": "Atkinson County DFCS Office",
+      "source_url": "https://doi.org/10.7910/DVN/AVRHMI",
+      "source_domain": "doi.org",
+      "source_root": "https://doi.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "county_offices",
+      "entity_name": "Bacon County DFCS Office",
+      "source_url": "https://doi.org/10.7910/DVN/AVRHMI",
+      "source_domain": "doi.org",
+      "source_root": "https://doi.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "county_offices",
+      "entity_name": "Baker County DFCS Office",
+      "source_url": "https://doi.org/10.7910/DVN/AVRHMI",
+      "source_domain": "doi.org",
+      "source_root": "https://doi.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "county_offices",
+      "entity_name": "Baldwin County DFCS Office",
+      "source_url": "https://doi.org/10.7910/DVN/AVRHMI",
+      "source_domain": "doi.org",
+      "source_root": "https://doi.org/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "county_offices",
+      "entity_name": "Banks County County DFCS Office",
+      "source_url": "https://dfcs.georgia.gov/locations",
+      "source_domain": "dfcs.georgia.gov",
+      "source_root": "https://dfcs.georgia.gov/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "county_offices",
+      "entity_name": "Barrow County County DFCS Office",
+      "source_url": "https://dfcs.georgia.gov/locations",
+      "source_domain": "dfcs.georgia.gov",
+      "source_root": "https://dfcs.georgia.gov/",
+      "verification_status": "verified"
+    },
+    {
+      "entity_kind": "county_offices",
+      "entity_name": "Bartow County DFCS Office",
+      "source_url": "https://doi.org/10.7910/DVN/AVRHMI",
+      "source_domain": "doi.org",
+      "source_root": "https://doi.org/",
+      "verification_status": "verified"
+    }
+  ],
+  "root_domains_to_review": [
+    {
+      "source_root": "https://doi.org/",
+      "source_domain": "doi.org",
+      "sample_entity_name": "Appling County DFCS Office"
+    },
+    {
+      "source_root": "https://dfcs.georgia.gov/",
+      "source_domain": "dfcs.georgia.gov",
+      "sample_entity_name": "Banks County County DFCS Office"
+    }
+  ],
+  "packet_complete_when": "At least one reviewed district/county/local exact target is authored for each affected critical family without relying on a generic root or statewide-only page."
+}
