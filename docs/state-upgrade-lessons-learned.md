@@ -112,3 +112,7 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Small-County District Routing Requires Full County Candidate Exhaustion
 *   **Problem:** Stopping at the first district candidate leaves rural counties under-repaired because the first AskTED district homepage often lacks a usable special-education page while another district in the same county has one.
 *   **Lesson:** For final county-grade education repair, the runner must try every AskTED district candidate in the county until one direct district-grade source verifies or the bounded budget is exhausted. “First district failed” is not a truthful county-level stopping rule.
+
+### Navigation Text Can Create False District-Page Rejections
+*   **Problem:** Texas v7 found valid district-owned pages for `Special Populations`, `Dyslexia`, and related special-education surfaces that were initially rejected because the validator saw unrelated navigation words like `board`, `athletics`, and `calendar`.
+*   **Lesson:** For California-grade district routing, governance-page rejection logic must inspect the page’s evidence header surface first: URL path, title, and headings. Full-body navigation text is too noisy to decide whether a page is truly a governance page or a valid special-education route.

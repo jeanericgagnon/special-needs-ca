@@ -78,6 +78,16 @@ Controlled search fallback helped v6 repair a few additional Texas counties, but
 - every query is logged to the failure or evidence artifact,
 - and failure to find a result closes as `search_fallback_exhausted` instead of silently widening scope.
 
+### 12. Forbidden-term guards must inspect evidence headers, not full navigation-heavy bodies
+
+Texas v7 showed that legitimate district pages such as `Special Populations`, `Dyslexia`, and `SpedTex` can be falsely rejected when the validator scans the full page body and picks up unrelated navigation terms like `board`, `athletics`, or `calendar`. Guardrails that reject governance or generic pages should key off the evidence header surface:
+
+- URL path
+- page title
+- H1/H2 headings
+
+not the entire navigation-heavy body text.
+
 ## Per-Run Practice
 
 After each significant wave:
