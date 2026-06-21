@@ -1,0 +1,2 @@
+{"action":"Parse direct district-grade Texas education routes for remaining counties","why":"244 counties still rely on ESC/TEA fallback rather than live district-grade evidence."}
+{"action":"Keep Texas county pages gated and noindex","why":"Texas is not California-grade under the stricter district-grade bar."}
