@@ -1350,7 +1350,7 @@ export default async function BenefitsCatchAll({ params }: Props) {
     let countiesList: { id: string; name: string; wage?: number; phone?: string; address?: string }[] = [];
     if (stateData.id === 'california') {
       const allCaOffices = await navigatorDb.prepare(`
-        SELECT county_id, phone, address FROM county_offices WHERE program_id = 'ihss'
+        SELECT county_id, phone, address FROM county_offices WHERE program_id = 'ihss-for-children'
       `).all() as { county_id: string; phone: string; address: string }[];
 
       countiesList = rawCountiesList.map(c => {
