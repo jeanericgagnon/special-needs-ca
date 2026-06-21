@@ -1,0 +1,155 @@
+{
+  "state": "New Mexico",
+  "generated_at": "2026-06-21T00:33:20.355Z",
+  "total_missing_roles": 31,
+  "verified_roles": 0,
+  "unresolved_roles": 31,
+  "candidates_discovered": 38,
+  "candidates_sent_to_scraper": 38,
+  "scrape_jobs_used": 38,
+  "verified_urls": 0,
+  "rejected_urls": 23,
+  "blocked_urls": 15,
+  "average_candidates_per_role": 1.23,
+  "average_scrape_jobs_per_verified_role": 38,
+  "newly_discovered_urls": 6,
+  "existed_in_old_repo": {
+    "candidates": 32,
+    "verified": 0,
+    "rejected": 17
+  },
+  "per_domain_job_counts": {
+    "nmhealth.org": 18,
+    "hsd.state.nm.us": 7,
+    "webnew.ped.state.nm.us": 6,
+    "parentcenterhub.org": 3,
+    "ablenrc.org": 3,
+    "ssa.gov": 1
+  },
+  "terminal_states": [
+    {
+      "role_id": "main_dd_agency",
+      "terminal_state": "rejected"
+    },
+    {
+      "role_id": "dd_eligibility",
+      "terminal_state": "rejected"
+    },
+    {
+      "role_id": "dd_intake_application",
+      "terminal_state": "rejected"
+    },
+    {
+      "role_id": "dd_local_regional_office_directory",
+      "terminal_state": "blocked"
+    },
+    {
+      "role_id": "dd_waiver_programs",
+      "terminal_state": "rejected"
+    },
+    {
+      "role_id": "dd_appeals_complaints",
+      "terminal_state": "rejected"
+    },
+    {
+      "role_id": "medicaid_application",
+      "terminal_state": "blocked"
+    },
+    {
+      "role_id": "medicaid_eligibility",
+      "terminal_state": "blocked"
+    },
+    {
+      "role_id": "personal_care_attendant_care",
+      "terminal_state": "blocked"
+    },
+    {
+      "role_id": "hcbs_waivers",
+      "terminal_state": "blocked"
+    },
+    {
+      "role_id": "medicaid_grievances_appeals",
+      "terminal_state": "blocked"
+    },
+    {
+      "role_id": "medicaid_fair_hearing",
+      "terminal_state": "blocked"
+    },
+    {
+      "role_id": "medicaid_renewals_redeterminations",
+      "terminal_state": "blocked"
+    },
+    {
+      "role_id": "ei_part_c_program",
+      "terminal_state": "unresolved"
+    },
+    {
+      "role_id": "ei_referral_intake",
+      "terminal_state": "unresolved"
+    },
+    {
+      "role_id": "ei_eligibility",
+      "terminal_state": "unresolved"
+    },
+    {
+      "role_id": "ei_local_office_directory",
+      "terminal_state": "unresolved"
+    },
+    {
+      "role_id": "ei_family_rights",
+      "terminal_state": "unresolved"
+    },
+    {
+      "role_id": "ei_complaints_mediation_due_process",
+      "terminal_state": "unresolved"
+    },
+    {
+      "role_id": "special_education_parent_rights",
+      "terminal_state": "blocked"
+    },
+    {
+      "role_id": "state_complaints",
+      "terminal_state": "blocked"
+    },
+    {
+      "role_id": "special_education_mediation",
+      "terminal_state": "blocked"
+    },
+    {
+      "role_id": "special_education_due_process",
+      "terminal_state": "blocked"
+    },
+    {
+      "role_id": "school_district_directory",
+      "terminal_state": "blocked"
+    },
+    {
+      "role_id": "parent_training_information_center",
+      "terminal_state": "rejected"
+    },
+    {
+      "role_id": "protection_advocacy_resources",
+      "terminal_state": "unresolved"
+    },
+    {
+      "role_id": "legal_aid_resources",
+      "terminal_state": "unresolved"
+    },
+    {
+      "role_id": "vocational_rehabilitation",
+      "terminal_state": "unresolved"
+    },
+    {
+      "role_id": "pre_ets",
+      "terminal_state": "unresolved"
+    },
+    {
+      "role_id": "able_account_program",
+      "terminal_state": "rejected"
+    },
+    {
+      "role_id": "ssi_child_disability",
+      "terminal_state": "blocked"
+    }
+  ]
+}
