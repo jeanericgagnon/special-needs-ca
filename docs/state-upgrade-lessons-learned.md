@@ -160,3 +160,7 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Portal And Community-Partner Replacements Cannot Substitute For County-Grade Local Office Proof
 *   **Problem:** Florida’s legacy ACCESS local service-center map now returns `404`, and bounded same-domain repair on the official DCF site only exposes a statewide customer-service center plus community-partner search, not a real county-grade office locator.
 *   **Lesson:** When an official county-office locator disappears, do not silently replace it with a portal login, statewide call center, or community-partner directory. Keep the county-local family blocked until the official site again exposes county-grade office or locator evidence.
+
+### Stale Launch-Gate Exposure Flags Should Clear Once A State Packet Is Reaudited
+*   **Problem:** Some states carry a `legacy_index_exposed_without_california_grade_reaudit` blocker long after a state packet has been rerun and the state is already explicitly `index_safe=false`; that leaves a stale procedural blocker sitting ahead of the real critical family.
+*   **Lesson:** Clear the launch-gate blocker only after a fresh state repair pass rewrites the packet summary, preserves `index_safe=false`, and leaves a concrete current critical-family blocker in place. This removes fake progress swings without loosening the California-grade gate.

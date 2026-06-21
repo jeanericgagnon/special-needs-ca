@@ -1,0 +1,11 @@
+{
+  "batch": "batch_28_pennsylvania_repair_v1",
+  "generated_at": "2026-06-21T19:05:51.744Z",
+  "state": "pennsylvania",
+  "classification": "PARTIAL",
+  "index_safe": false,
+  "incorrectly_index_safe": false,
+  "district_exact_leaves_verified": 5,
+  "launch_gate_cleared": true,
+  "texas_preserved_complete": true
+}

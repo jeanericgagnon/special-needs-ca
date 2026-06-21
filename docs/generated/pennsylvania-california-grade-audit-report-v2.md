@@ -74,3 +74,10 @@
 - district_or_county_education_routing: verified district-owned exact leaves -> https://www.pghschools.org/academics/pse-special-education/pse-special-education, https://readingsdpa.sites.thrillshare.com/o/rsd/page/special-education, https://readingsdpa.sites.thrillshare.com/o/rsd/page/student-services, https://www.pennsburysd.org/departments/student_services
 
 - Pennsylvania remains PARTIAL and not index-safe until every critical family passes county-grade proof.
+
+## Batch 28 Pennsylvania launch-gate refresh
+
+- district_or_county_education_routing: refreshed live district-owned exact leaves -> https://www.pghschools.org/academics/pse-special-education/pse-special-education, https://readingsdpa.sites.thrillshare.com/o/rsd/page/special-education, https://readingsdpa.sites.thrillshare.com/o/rsd/page/student-services, https://www.pennsburysd.org/departments/special_education, https://www.pennsburysd.org/departments/student_services
+- launch_gate: cleared as stale packet metadata because Pennsylvania is now explicitly reaudited and remains truthfully gated by current district-grade evidence, not by a legacy exposed/index-safe flag.
+
+- Pennsylvania remains PARTIAL and not index-safe until every critical family reaches California-grade proof.
