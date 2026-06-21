@@ -158,3 +158,13 @@ Run fast, isolated data integrity checks immediately (do not run Playwright test
 4. **Non-Zero Audit Exits**: Standard state audit scripts exit with code `1` when fallbacks/warnings exist, which is expected during a partial state upgrade. The runner's `runFastAudits()` helper should log these non-zero exits as notes rather than crashing the pipeline execution.
 5. **Suffix Extraction Safety**: When stripping state suffixes from county identifiers (e.g. removing `-co` from `city-and-county-of-broomfield-co`) to determine canonical record IDs, use precise trailing substring extraction (e.g., `lastIndexOf` or length subtraction) rather than a global/first-occurrence `replace()`. This prevents malformed IDs like `city-andunty` caused by matching subwords (like `co` in `county`).
 6. **Sequential Playwright Execution**: When running the full integrated E2E test suite in sandbox environments, execute Playwright sequentially using the `--workers=1` flag. Running tests fully in parallel on resource-limited sandboxes causes CPU starvation, SQLite database lock contention, and network request aborts (like `net::ERR_ABORTED`).
+
+## 7. Packet-Coverage Exit Rule
+
+Once every state has a California-grade packet artifact, queue expansion is over.
+
+From that point forward:
+1. Do not create more broad packet-coverage batches.
+2. Use the existing state packet artifacts as the repair control plane.
+3. Prioritize repairs by failure class and truth risk, not by which state is easiest to add another report for.
+4. Treat packet coverage as an operations milestone, not as a completeness milestone.

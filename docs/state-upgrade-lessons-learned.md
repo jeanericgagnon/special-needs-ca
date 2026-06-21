@@ -132,3 +132,7 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### District-Owned Parent Resource Hubs Can Count Only With Explicit Special-Education Assets
 *   **Problem:** Some final residual districts do not maintain a standalone `special-education` page but do publish a district-owned parent hub with the real routing materials embedded as resource links.
 *   **Lesson:** A district-owned parent resource page may satisfy California-grade education routing only when the fetched body explicitly lists multiple special-education assets such as `Special Education Guides`, `Section 504`, `Dyslexia Handbook`, `Parent's Guide to the ARD Process`, `Notice of Procedural Safeguards`, or an equivalent district-facing complaint/referral resource. Generic parent hubs still fail closed.
+
+### Full Packet Coverage Must Trigger Failure-Class Repair Mode
+*   **Problem:** Once every non-complete state has a packet artifact, continuing to create more queue-expansion passes burns time without moving any state closer to `COMPLETE/index_safe`.
+*   **Lesson:** After all states have packet coverage, stop expanding the queue and switch to failure-class repair mode. Use the generated state packet artifacts as the only control plane for deciding which family-specific repair lane should run next.

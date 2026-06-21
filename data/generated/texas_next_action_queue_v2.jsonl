@@ -1,0 +1,1 @@
+{"state":"texas","state_code":"TX","priority_rank":1,"family":"maintenance","severity":"info","failure_code":"complete_maintain_truth_only","next_action":"Preserve Texas as COMPLETE/index_safe and rerun only maintenance truth audits unless new evidence regresses.","evidence":"Texas v10 remains 254/0/0 and all_state_california_grade_audit_v2 marks Texas COMPLETE."}
