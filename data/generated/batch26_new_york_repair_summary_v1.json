@@ -1,0 +1,10 @@
+{
+  "batch": "batch_26_new_york_repair_v1",
+  "generated_at": "2026-06-21T18:51:47.744Z",
+  "state": "new-york",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "district_exact_leaves_verified": 3,
+  "county_local_blocker_code": "official_county_directory_returns_http_403",
+  "texas_preserved_complete": true
+}

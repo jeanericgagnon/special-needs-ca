@@ -59,3 +59,10 @@
 ## Completion decision
 
 - New York remains BLOCKED and not index-safe because one or more critical families are still legacy, inventory-only, or missing.
+
+## Batch 26 New York repair
+
+- district_or_county_education_routing: verified BOCES-owned exact leaves -> https://caboces.org/education/exceptional-education/, https://www.capitalregionboces.org/special-education-2/, https://www.btboces.org/OurServices.aspx
+- county_local_disability_resources: Official New York LDSS county directory returned HTTP 403 at https://www.health.ny.gov/health_care/medicaid/ldss.htm during bounded live verification.
+
+- New York remains BLOCKED and not index-safe until every critical family reaches California-grade proof.

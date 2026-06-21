@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T18:46:35.459Z",
+  "generatedAt": "2026-06-21T18:52:20.050Z",
   "stateCount": 50,
   "classifications": {
     "UNSTARTED": 42,
@@ -2276,7 +2276,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_2_repair_blocked_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "official_county_directory_returns_http_403"
     },
     {
       "stateId": "north-carolina",
