@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { 
   Phone, Mail, Globe, MapPin, Award, Search, 
   SlidersHorizontal, Star, ChevronDown, ChevronUp, Send 
@@ -9,6 +9,7 @@ import CopyButton from '@/components/copy-button';
 import ContributionModal from '@/components/contribution-modal';
 import { TrustBadge } from '@/app/counties/components/CorrectionFlow';
 import SourceFreshnessDisclosure from '@/app/components/SourceFreshnessDisclosure';
+import { stateConfigs } from '@/lib/stateConfigs';
 
 interface Advocate {
   id: string;
@@ -31,6 +32,7 @@ interface Advocate {
 
 interface AdvocateDirectoryClientProps {
   initialAdvocates: Advocate[];
+  stateId: string;
 }
 
 interface Review {
@@ -63,7 +65,7 @@ const ADVOCATE_REVIEWS: Record<string, Review[]> = {
   ]
 };
 
-export default function AdvocateDirectoryClient({ initialAdvocates }: AdvocateDirectoryClientProps) {
+export default function AdvocateDirectoryClient({ initialAdvocates, stateId }: AdvocateDirectoryClientProps) {
   const [searchQuery, setSearchQuery] = useState('');
   const [sortBy, setSortBy] = useState<'experience' | 'price_asc' | 'price_desc' | 'default'>('default');
   
@@ -86,6 +88,39 @@ export default function AdvocateDirectoryClient({ initialAdvocates }: AdvocateDi
   const [intakeChildAge, setIntakeChildAge] = useState('6');
   const [intakeDistrict, setIntakeDistrict] = useState('Los Angeles Unified');
   const [intakeGoal, setIntakeGoal] = useState('Request 1:1 behavioral aide safety supervision');
+
+  useEffect(() => {
+    const savedName = localStorage.getItem('iep_student_name') || localStorage.getItem('child_name') || localStorage.getItem('funding_child_name') || localStorage.getItem('ca_special_needs_safety_child');
+    const savedDob = localStorage.getItem('child_dob') || localStorage.getItem('funding_child_dob');
+    
+    const timer = setTimeout(() => {
+      if (savedName) setIntakeChildName(savedName);
+      if (savedDob) {
+        const birthDate = new Date(savedDob);
+        const today = new Date();
+        let ageYears = today.getFullYear() - birthDate.getFullYear();
+        const m = today.getMonth() - birthDate.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+          ageYears--;
+        }
+        if (!isNaN(ageYears) && ageYears >= 0) {
+          setIntakeChildAge(ageYears.toString());
+        }
+      }
+    }, 0);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const stateConfig = stateConfigs[stateId] || stateConfigs['california'];
+
+  const sources = [
+    { name: `${stateConfig.name} COPAA Advocate Listings`, url: 'https://www.copaa.org', verificationStatus: 'unverified' as const },
+    ...(stateConfig.parentTrainingResources || []).map(r => ({
+      name: r.name,
+      url: r.url,
+      verificationStatus: 'unverified' as const
+    }))
+  ];
 
   // Available specialties for filtering
   const ALL_SPECIALTIES = [
@@ -813,10 +848,7 @@ Best regards,
         </div>
       )}
 
-      <SourceFreshnessDisclosure sources={[
-        { name: 'California COPAA Advocate Listings', url: 'https://www.copaa.org', verificationStatus: 'unverified' },
-        { name: 'California Office of Administrative Hearings Directory', url: 'https://www.dgs.ca.gov/OAH', verificationStatus: 'unverified' }
-      ]} />
+      <SourceFreshnessDisclosure sources={sources} />
     </div>
   );
 }

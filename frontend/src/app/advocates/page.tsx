@@ -1,20 +1,23 @@
-import { getCounties, getIepAdvocates } from '@/lib/db';
+import { getCounties, getIepAdvocates, getStateByIdOrCode } from '@/lib/db';
 import { Metadata } from 'next';
 import { Search } from 'lucide-react';
 import Link from 'next/link';
 import AdvocateDirectoryClient from './advocate-directory-client';
-
+import { stateConfigs } from '@/lib/stateConfigs';
 
 type Props = {
-  searchParams: Promise<{ county?: string }>;
+  searchParams: Promise<{ county?: string; state?: string }>;
 };
 
 // Generate high-relevance SEO tags for the advocates directory page
 export async function generateMetadata({ searchParams }: Props): Promise<Metadata> {
   const sp = await searchParams;
+  const stateId = sp.state || 'california';
+  const stateData = await getStateByIdOrCode(stateId);
+  const stateName = stateData?.name || 'California';
   const countyName = sp.county 
     ? sp.county.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) + ' County' 
-    : 'California';
+    : stateName;
 
   return {
     title: `IEP Advocates & Special Ed Advisors in ${countyName} (2026)`,
@@ -32,12 +35,17 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
 export default async function AdvocatesDirectoryPage({ searchParams }: Props) {
   const sp = await searchParams;
   const selectedCounty = sp.county || '';
+  const stateId = sp.state || 'california';
+
+  const stateData = await getStateByIdOrCode(stateId);
+  const stateName = stateData?.name || 'California';
+  const stateCode = stateData?.code || 'CA';
 
   // 1. Fetch counties for filter dropdown
-  const counties = await getCounties('california');
+  const counties = await getCounties(stateId);
 
-  // 2. Fetch advocates (filter by county if selected, defaulting to California statewide if not)
-  const advocates = await getIepAdvocates(selectedCounty, 'california');
+  // 2. Fetch advocates (filter by county if selected, defaulting to state statewide if not)
+  const advocates = await getIepAdvocates(selectedCounty, stateId);
   const verifiedAdvocates = advocates.filter(adv => adv.verification_status === 'verified');
 
   // Get name of selected county
@@ -51,7 +59,7 @@ export default async function AdvocatesDirectoryPage({ searchParams }: Props) {
       {/* Hero Header */}
       <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
         <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>
-          California IEP Advocates Directory
+          {stateName} IEP Advocates Directory
         </h1>
         <p style={{ fontSize: '1.15rem', maxWidth: '800px', margin: '0 auto', color: 'var(--text-light)', lineHeight: '1.6' }}>
           Vetted special education advisors, consultants, and legal advocates who help families secure accommodation services, IEP goals, and inclusion placements.
@@ -72,7 +80,29 @@ export default async function AdvocatesDirectoryPage({ searchParams }: Props) {
         <form method="GET" action="/advocates" style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem', alignItems: 'center' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-main)', fontWeight: 600, fontSize: '0.95rem' }}>
             <Search size={18} color="var(--primary-color)" />
-            Filter by County Served:
+            Filter Directory:
+          </div>
+
+          {/* State selector */}
+          <div style={{ flex: '1', minWidth: '200px' }}>
+            <select 
+              name="state" 
+              defaultValue={stateId}
+              {...{ onchange: "const c = this.form.querySelector('[name=county]'); if (c) c.value = ''; this.form.submit();" }}
+              style={{ 
+                padding: '0.75rem 1rem', 
+                borderRadius: '10px', 
+                fontSize: '0.95rem',
+                border: '1px solid rgba(0, 0, 0, 0.08)',
+                width: '100%'
+              }}
+            >
+              {Object.keys(stateConfigs).map(key => (
+                <option key={key} value={key}>
+                  {stateConfigs[key].name}
+                </option>
+              ))}
+            </select>
           </div>
           
           <div style={{ flex: '1', minWidth: '200px' }}>
@@ -80,16 +110,16 @@ export default async function AdvocatesDirectoryPage({ searchParams }: Props) {
               name="county" 
               defaultValue={selectedCounty}
               // Automatically submit when changed to avoid extra clicks
-              // We use simple inline JS to submit the parent form on change
               {...{ onchange: 'this.form.submit()' }}
               style={{ 
                 padding: '0.75rem 1rem', 
                 borderRadius: '10px', 
                 fontSize: '0.95rem',
-                border: '1px solid rgba(0, 0, 0, 0.08)'
+                border: '1px solid rgba(0, 0, 0, 0.08)',
+                width: '100%'
               }}
             >
-              <option value="">-- All California Counties --</option>
+              <option value="">-- All {stateName} Counties --</option>
               {counties.map(c => (
                 <option key={c.id} value={c.id}>
                   {c.name}
@@ -119,7 +149,7 @@ export default async function AdvocatesDirectoryPage({ searchParams }: Props) {
         <h2 style={{ fontSize: '1.25rem', fontWeight: 600, margin: 0 }}>
           {selectedCountyName 
             ? `Advocates Serving ${selectedCountyName}` 
-            : 'All Registered California Advocates'}
+            : `All Registered ${stateName} Advocates`}
           <span style={{ fontSize: '0.95rem', color: 'var(--text-light)', fontWeight: 400, marginLeft: '0.75rem' }}>
             ({advocates.length} results)
           </span>
@@ -127,7 +157,7 @@ export default async function AdvocatesDirectoryPage({ searchParams }: Props) {
 
         {selectedCounty && (
           <Link 
-            href="/advocates" 
+            href={`/advocates?state=${stateId}`} 
             style={{ 
               fontSize: '0.85rem', 
               color: 'var(--primary-color)', 
@@ -141,7 +171,7 @@ export default async function AdvocatesDirectoryPage({ searchParams }: Props) {
       </div>
 
       {/* Directory Cards Grid with search/sort client */}
-      <AdvocateDirectoryClient initialAdvocates={advocates} />
+      <AdvocateDirectoryClient initialAdvocates={advocates} stateId={stateId} />
 
       {/* JSON-LD ProfessionalService Schema Markup for Local SEO */}
       {verifiedAdvocates.length > 0 && (
@@ -159,8 +189,8 @@ export default async function AdvocatesDirectoryPage({ searchParams }: Props) {
                 "url": adv.website,
                 "address": {
                   "@type": "PostalAddress",
-                  "addressLocality": adv.counties_served.split(',')[0]?.trim().replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) || "California",
-                  "addressRegion": "CA",
+                  "addressLocality": adv.counties_served.split(',')[0]?.trim().replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) || stateName,
+                  "addressRegion": stateCode.toUpperCase(),
                   "addressCountry": "US"
                 },
                 "description": `${adv.name} is a professional special education IEP advocate with ${adv.experience_years} years of experience. Credentials: ${adv.credentials}. Hourly rate info: ${adv.price_rate}. Languages: ${adv.languages_spoken}.`,
