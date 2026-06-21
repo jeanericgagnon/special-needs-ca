@@ -56,6 +56,7 @@ export default function BehaviorLogClient() {
   const [activeTab, setActiveTab] = useState<'journal' | 'estimator' | 'overtime'>('journal');
   const [incidents, setIncidents] = useState<SafetyIncident[]>([]);
   const [hydrated, setHydrated] = useState(false);
+  const [selectedState, setSelectedState] = useState<string>('california');
   
   // New Incident Form States
   const [time, setTime] = useState('08:00 AM');
@@ -114,6 +115,9 @@ export default function BehaviorLogClient() {
       const savedDate = localStorage.getItem('ca_special_needs_safety_date');
       if (savedDate) setLogDate(savedDate);
       else setLogDate(new Date().toISOString().split('T')[0]);
+
+      const savedState = localStorage.getItem('selected_state');
+      if (savedState) setSelectedState(savedState);
 
       // Estimator LocalStorage Load
       const savedFeeding = localStorage.getItem('ihss_feeding_rank');
@@ -227,6 +231,92 @@ export default function BehaviorLogClient() {
     }
   }, [logDate, hydrated]);
 
+  // State-specific helper functions
+  const getProgramName = () => {
+    switch (selectedState) {
+      case 'texas': return 'MDCP / PCS / HCS';
+      case 'florida': return 'Medicaid Personal Care / iBudget';
+      case 'new-york': return 'CDPAP / PCS';
+      case 'pennsylvania': return 'DHS Personal Care / ODP';
+      case 'california':
+      default: return 'IHSS';
+    }
+  };
+
+  const getDepartmentName = () => {
+    switch (selectedState) {
+      case 'texas': return 'Texas HHSC';
+      case 'florida': return 'Florida AHCA / APD';
+      case 'new-york': return 'New York DOH';
+      case 'pennsylvania': return 'Pennsylvania DHS';
+      case 'california':
+      default: return 'CDSS';
+    }
+  };
+
+  const getSupervisionName = () => {
+    switch (selectedState) {
+      case 'california': return 'Protective Supervision';
+      case 'texas': return 'Safety Supervision';
+      case 'florida': return 'Supervised Personal Care';
+      case 'new-york': return 'Continuous Supervision';
+      case 'pennsylvania': return 'Safety Monitoring';
+      default: return 'Protective Supervision / Safety Monitoring';
+    }
+  };
+
+  const getOvertimeRules = () => {
+    switch (selectedState) {
+      case 'texas':
+        return {
+          capText: '40 hours/week standard cap (overtime requires HHSC authorization)',
+          limit: 40,
+          cite: 'Texas HHSC Provider Rules'
+        };
+      case 'florida':
+        return {
+          capText: '40 hours/week standard cap (APD waiver provider guidelines)',
+          limit: 40,
+          cite: 'Florida Medicaid Provider Guidelines'
+        };
+      case 'new-york':
+        return {
+          capText: '40 hours/week standard cap (DOH home care guidelines)',
+          limit: 40,
+          cite: 'NYS DOH Provider Rules'
+        };
+      case 'pennsylvania':
+        return {
+          capText: '40 hours/week standard cap (DHS / ODP waiver rules)',
+          limit: 40,
+          cite: 'PA DHS Provider Rules'
+        };
+      case 'california':
+      default:
+        return {
+          capText: recipientCount > 1 ? '66 hours/week (Multi-Recipient Cap)' : '70 hours/week (Single Recipient Exemption Limit)',
+          limit: recipientCount > 1 ? 66 : 70,
+          cite: 'W&I Code § 12301.15'
+        };
+    }
+  };
+
+  const updateSelectedState = (val: string) => {
+    setSelectedState(val);
+    localStorage.setItem('selected_state', val);
+    const defaultWages: Record<string, number> = {
+      california: 18.00,
+      texas: 12.50,
+      florida: 15.00,
+      'new-york': 17.50,
+      pennsylvania: 14.50,
+      other: 13.50
+    };
+    if (defaultWages[val]) {
+      updateIhssWage(defaultWages[val]);
+    }
+  };
+
   // Update helpers that persist to localStorage
   const updateFeedingRank = (val: number) => { setFeedingRank(val); localStorage.setItem('ihss_feeding_rank', val.toString()); };
   const updateBowelRank = (val: number) => { setBowelBladderRank(val); localStorage.setItem('ihss_bowel_rank', val.toString()); };
@@ -288,7 +378,7 @@ export default function BehaviorLogClient() {
   const monthlyPersonalCareHours = Math.round(totalWeeklyPersonalCare * 4.33 * 10) / 10;
   
   let protectiveSupervisionHours = 0;
-  if (requiresSupervision) {
+  if (requiresSupervision && selectedState === 'california') {
     protectiveSupervisionHours = isSeverelyImpaired ? 283 : 195;
   }
 
@@ -296,12 +386,12 @@ export default function BehaviorLogClient() {
   const estimatedMonthlyPayout = Math.round(totalMonthlyHours * ihssWage * 100) / 100;
 
   const compileCaseworkerHandout = () => {
-    return `IHSS FUNCTIONAL INDEX & SAFETY ADVOCACY HANDOUT
+    return `${getProgramName().toUpperCase()} FUNCTIONAL INDEX & SAFETY ADVOCACY HANDOUT
 Recipient Name: ${childName}
 Parent / Caregiver: ${parentName}
 Date of Evaluation: ${new Date(logDate + 'T00:00:00').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
 
-This document summarizes the caregiver's daily assistance needs and functional index rankings compiled in preparation for the county social worker's in-home assessment.
+This document summarizes the caregiver's daily assistance needs and functional index rankings compiled in preparation for the local ${getDepartmentName()}'s in-home assessment.
 
 ESTIMATED FUNCTIONAL SCORES & TIMES:
 - Feeding: Rank ${feedingRank} (${feedingHours} hours/week)
@@ -312,13 +402,13 @@ ESTIMATED FUNCTIONAL SCORES & TIMES:
 ${hasParamedical ? `- Paramedical Care: ${paramedicalHours} hours/week (${paramedicalDesc})\n` : ''}
 TOTAL ESTIMATED PERSONAL CARE SERVICES: ${totalWeeklyPersonalCare.toFixed(2)} Hours/Week (${monthlyPersonalCareHours.toFixed(1)} Hours/Month)
 
-SEVERELY IMPAIRED (SI) CLASSIFICATION:
-Under CDSS MPP Section 30-701(s)(1), a recipient is classified as "Severely Impaired" if they require 20 or more hours per week of personal care services and paramedical care.
-- Result: ${isSeverelyImpaired ? 'SEVERELY IMPAIRED STATUS MET' : 'NON-SEVERELY IMPAIRED STATUS'} (Total hours: ${totalWeeklyPersonalCare.toFixed(2)} hours/week)
+STATE REGULATIONS & ASSESSMENTS:
+${selectedState === 'california' ? 'Under CDSS MPP Section 30-701(s)(1), a recipient is classified as "Severely Impaired" if they require 20 or more hours per week of personal care services and paramedical care.' : 'Under state Medicaid guidelines, personal care and safety monitoring hours are authorized based on functional needs assessment criteria.'}
+- Result: ${selectedState === 'california' ? (isSeverelyImpaired ? 'SEVERELY IMPAIRED STATUS MET' : 'NON-SEVERELY IMPAIRED STATUS') : 'FUNCTIONAL ASSESSMENT SUPPORTED'} (Total personal care: ${totalWeeklyPersonalCare.toFixed(2)} hours/week)
 
-PROTECTIVE SUPERVISION REQUIREMENT:
-${requiresSupervision ? `The recipient exhibits severe cognitive and developmental impairments that prevent danger awareness, presenting constant safety risks (elopement, pica, head-banging). 24/7 Protective Supervision is requested.
-- Allocation: ${isSeverelyImpaired ? '283 Hours/Month (Severely Impaired Limit)' : '195 Hours/Month (Non-Severely Impaired Limit)'}` : 'Protective supervision not requested.'}`;
+${getSupervisionName().toUpperCase()} REQUIREMENT:
+${requiresSupervision ? `The recipient exhibits severe cognitive and developmental impairments that prevent danger awareness, presenting constant safety risks (elopement, pica, self-injury). 24/7 safety monitoring is requested.
+- ${selectedState === 'california' ? `Allocation: ${isSeverelyImpaired ? '283 Hours/Month (Severely Impaired Limit)' : '195 Hours/Month (Non-Severely Impaired Limit)'}` : 'Allocation: Safety and supervision hours requested based on individual functional assessment and documented safety monitoring needs.'}` : `${getSupervisionName()} not requested.`}`;
   };
 
   const compileOvertimeReport = () => {
@@ -330,8 +420,8 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
     if (recipientCount >= 2) totalWeeklyAuth += weekly2;
     if (recipientCount >= 3) totalWeeklyAuth += weekly3;
 
-    const limit = recipientCount > 1 ? 66 : 70;
-    const isOverCap = totalWeeklyAuth > limit;
+    const ruleObj = getOvertimeRules();
+    const isOverCap = totalWeeklyAuth > ruleObj.limit;
     
     const regularHours = Math.min(40, totalWeeklyAuth);
     const overtimeHours = Math.max(0, totalWeeklyAuth - 40);
@@ -344,7 +434,7 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
     const totalMonthlyPay = totalWeeklyPay * 4.33;
 
     const parts = [
-      "IHSS MULTI-RECIPIENT SCHEDULE & OVERTIME COMPLIANCE REPORT",
+      `${getProgramName().toUpperCase()} MULTI-RECIPIENT SCHEDULE & OVERTIME COMPLIANCE REPORT`,
       "Provider Name: " + parentName,
       "Log Date: " + new Date(logDate + 'T00:00:00').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }),
       "Hourly Wage: $" + ihssWage.toFixed(2) + "/hour",
@@ -355,8 +445,8 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
       recipientCount >= 3 ? "- Recipient 3: " + monthlyHours3 + " hours/month (~" + weekly3 + " hours/week)" : "",
       "TOTAL WEEKLY AUTHORIZED HOURS: " + totalWeeklyAuth.toFixed(1) + " hours/week",
       "",
-      "II. COMPLIANCE STATUS & CAPS (W&I Code § 12301.15)",
-      "- Provider Cap Rule: " + (recipientCount > 1 ? '66 hours/week (Multi-Recipient Cap)' : '70 hours/week (Single Recipient Exemption Limit)'),
+      `II. COMPLIANCE STATUS & CAPS (${ruleObj.cite})`,
+      "- Provider Cap Rule: " + ruleObj.capText,
       "- Combined Weekly Workweek: " + totalWeeklyAuth.toFixed(1) + " hours/week",
       "- Compliance Status: " + (isOverCap ? 'WARNING: EXCEEDS WEEKLY WORK CAP' : 'COMPLIANT (Within work cap bounds)'),
       "- Authorized Weekly Travel Time: " + weeklyTravelHours + " hours/week (Max allowed: 7 hours/week)",
@@ -368,7 +458,7 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
       "TOTAL PROJECTED WEEKLY INCOME: $" + totalWeeklyPay.toLocaleString(undefined, { minimumFractionDigits: 2 }),
       "TOTAL PROJECTED MONTHLY INCOME (4.33 conversion): $" + totalMonthlyPay.toLocaleString(undefined, { minimumFractionDigits: 2 }) + " (Tax-Free)",
       "",
-      "This workweek schedule is compiled in accordance with CDSS Welfare & Institutions Code Section 12301.15 rules to prevent workweek violations while maximizing authorized recipient hours."
+      "This workweek schedule is compiled in accordance with " + (selectedState === 'california' ? 'CDSS Welfare & Institutions Code Section 12301.15 rules' : 'state Medicaid provider regulations') + " to prevent workweek violations while maximizing authorized recipient hours."
     ];
 
     return parts.filter(p => p !== "").join("\n");
@@ -380,9 +470,9 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
       {/* Header */}
       <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
         <ShieldAlert size={48} color="var(--primary-color)" style={{ margin: '0 auto 1rem' }} />
-        <h1>IHSS 24-Hour Behavior & Safety Log</h1>
+        <h1>{getProgramName()} 24-Hour Behavior & Safety Log</h1>
         <p style={{ fontSize: '1.1rem', maxWidth: '650px', margin: '0 auto', color: 'var(--text-light)' }}>
-          Document elopement, self-harm, pica, and climbing incidents. Present this printable safety journal to your county social worker to substantiate the need for 24/7 Protective Supervision.
+          Document elopement, self-harm, pica, and climbing incidents. Present this printable safety journal to your county social worker to substantiate the need for 24/7 {getSupervisionName()}.
         </p>
       </div>
 
@@ -427,7 +517,7 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
           }}
         >
           <Clock size={18} />
-          IHSS Task Hours Estimator
+          {getProgramName()} Task Hours Estimator
         </button>
 
         <button
@@ -448,7 +538,7 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
           }}
         >
           <Clock size={18} />
-          IHSS Overtime Scheduler
+          {getProgramName()} Overtime Scheduler
         </button>
       </div>
 
@@ -470,7 +560,19 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
             <div>
               <strong style={{ display: 'block', marginBottom: '0.25rem', color: 'var(--text-main)' }}>Why is this log crucial?</strong>
               <p style={{ fontSize: '0.88rem', color: 'var(--text-light)', lineHeight: '1.5', margin: 0 }}>
-                Under California DSS regulations, minor children only qualify for Protective Supervision if parents prove the child needs **continuous safety monitoring** due to developmental impairments. Standard pediatric delays are insufficient. Social workers expect to see a written, dated log detailing safety risk incidents and the immediate caregiver interventions that kept the child safe.
+                {selectedState === 'california' ? (
+                  'Under California DSS regulations, minor children only qualify for Protective Supervision if parents prove the child needs **continuous safety monitoring** due to developmental impairments. Standard pediatric delays are insufficient. Social workers expect to see a written, dated log detailing safety risk incidents and the immediate caregiver interventions that kept the child safe.'
+                ) : selectedState === 'texas' ? (
+                  'Under Texas HHSC guidelines, pediatric personal care hours and safety monitoring require documentation of **caregiver interventions** and safety risks. CAS caseworkers review safety logs to determine the necessity of enhanced supervision hours.'
+                ) : selectedState === 'florida' ? (
+                  'Under Florida AHCA and APD iBudget waiver guidelines, personal care assistance hours require documenting specific behavioral safety risks (elopement, pica, self-injury) to justify authorization of supervision services.'
+                ) : selectedState === 'new-york' ? (
+                  'Under New York DOH regulations, CDPAP and personal care services require clinical evidence and structured logs demonstrating the child\'s need for continuous safety supervision to prevent injury.'
+                ) : selectedState === 'pennsylvania' ? (
+                  'Under Pennsylvania DHS guidelines, Medical Assistance personal care services require detailing physical interventions and safety monitoring needs due to developmental/behavioral risks.'
+                ) : (
+                  'Under state Medicaid guidelines, personal care and supervision services require structured logs demonstrating active caregiver interventions to manage safety hazards and behavioral risks.'
+                )}
               </p>
             </div>
           </div>
@@ -486,6 +588,31 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
                   Log Information
                 </h3>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                  <div className="input-group" style={{ marginBottom: 0 }}>
+                    <label style={{ fontSize: '0.8rem' }}>State Jurisdiction</label>
+                    <select
+                      value={selectedState}
+                      onChange={(e) => updateSelectedState(e.target.value)}
+                      style={{ 
+                        padding: '0.5rem 0.75rem', 
+                        fontSize: '0.85rem',
+                        width: '100%',
+                        borderRadius: '8px',
+                        border: '1px solid rgba(0,0,0,0.12)',
+                        background: 'white',
+                        color: 'var(--text-main)',
+                        fontWeight: 500,
+                        cursor: 'pointer'
+                      }}
+                    >
+                      <option value="california">California</option>
+                      <option value="texas">Texas</option>
+                      <option value="florida">Florida</option>
+                      <option value="new-york">New York</option>
+                      <option value="pennsylvania">Pennsylvania</option>
+                      <option value="other">Other State / General</option>
+                    </select>
+                  </div>
                   <div className="input-group" style={{ marginBottom: 0 }}>
                     <label style={{ fontSize: '0.8rem' }}>Child&apos;s Name</label>
                     <input 
@@ -950,10 +1077,10 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
                       checked={requiresSupervision}
                       onChange={(e) => updateRequiresSupervision(e.target.checked)}
                     />
-                    <span>Requires 24/7 Protective Supervision?</span>
+                    <span>Requires 24/7 {getSupervisionName()}?</span>
                   </label>
                   <p style={{ fontSize: '0.78rem', color: 'var(--text-light)', marginLeft: '1.5rem', marginTop: '0.2rem', lineHeight: 1.4 }}>
-                    Check if your child has severe cognitive impairments and displays wandering/elopement hazards or self-injury risks, requiring continuous parent oversight. Adds 195 or 283 hours.
+                    Check if your child has severe cognitive impairments and displays wandering/elopement hazards or self-injury risks, requiring continuous parent oversight. {selectedState === 'california' ? 'Adds 195 or 283 hours.' : 'Adds supervision monitoring hours based on state functional limits.'}
                   </p>
                 </div>
 
@@ -1000,16 +1127,16 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
                 {/* County Wage Settings */}
                 <div style={{ borderTop: '1px solid rgba(0,0,0,0.04)', paddingTop: '1rem', display: 'grid', gridTemplateColumns: '1fr 120px', gap: '1rem', alignItems: 'flex-end' }}>
                   <div style={{ fontSize: '0.8rem', color: 'var(--text-light)', lineHeight: 1.4 }}>
-                    <strong>IHSS County Minimum Wage:</strong> Change this to match your county&apos;s hourly provider wage (ranges from $16.50 to $20.00/hour across California).
+                    <strong>{getProgramName()} Hourly Wage:</strong> Change this to match your area&apos;s hourly provider wage {selectedState === 'california' ? '(ranges from $16.50 to $20.00/hour across California)' : ''}.
                   </div>
                   <div className="input-group" style={{ marginBottom: 0 }}>
                     <label style={{ fontSize: '0.75rem' }}>Wage / Hour ($)</label>
                     <input
                       type="number"
                       step="0.05"
-                      min="16"
+                      min="0"
                       value={ihssWage}
-                      onChange={(e) => updateIhssWage(Math.max(0, parseFloat(e.target.value) || 16))}
+                      onChange={(e) => updateIhssWage(Math.max(0, parseFloat(e.target.value) || 0))}
                       style={{ padding: '0.4rem 0.6rem', fontSize: '0.8rem' }}
                     />
                   </div>
@@ -1094,24 +1221,27 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
                 display: 'inline-block',
                 marginBottom: '0.5rem'
               }}>
-                {isSeverelyImpaired ? 'Severely Impaired' : 'Non-Severely Impaired'}
+                {selectedState === 'california' ? (isSeverelyImpaired ? 'Severely Impaired' : 'Non-Severely Impaired') : 'Assessment Tier'}
               </span>
               <h4 style={{ fontSize: '0.95rem', fontWeight: 700, margin: 0 }}>
-                {isSeverelyImpaired ? 'SI Status Confirmed (20+ hrs)' : 'Standard Status (<20 hrs)'}
+                {selectedState === 'california' ? (isSeverelyImpaired ? 'SI Status Confirmed (20+ hrs)' : 'Standard Status (<20 hrs)') : 'Estimated Personal Care Level'}
               </h4>
               <p style={{ fontSize: '0.8rem', lineHeight: 1.4, color: 'var(--text-light)', marginTop: '0.4rem', margin: 0 }}>
-                {isSeverelyImpaired 
-                  ? 'Since your weekly personal care services total 20+ hours, you are classified as Severely Impaired. If you qualify for Protective Supervision, you will receive the maximum 283 hours/month allocation.'
-                  : 'Your weekly personal care hours total less than the 20-hour threshold. If you qualify for Protective Supervision, your total allocation will cap at 195 hours/month.'
-                }
+                {selectedState === 'california' ? (
+                  isSeverelyImpaired 
+                    ? 'Since your weekly personal care services total 20+ hours, you are classified as Severely Impaired. If you qualify for Protective Supervision, you will receive the maximum 283 hours/month allocation.'
+                    : 'Your weekly personal care hours total less than the 20-hour threshold. If you qualify for Protective Supervision, your total allocation will cap at 195 hours/month.'
+                ) : (
+                  'Your monthly personal care hours are estimated based on your functional needs. Safety and supervision hours are determined on an individual caseworker evaluation.'
+                )}
               </p>
             </div>
 
             {/* Statutory CDSS Tip */}
             <div className="glass-panel" style={{ padding: '1.25rem', fontSize: '0.85rem' }}>
-              <h4 style={{ fontWeight: 700, marginBottom: '0.5rem' }}>💡 CDSS Assessment Rule</h4>
+              <h4 style={{ fontWeight: 700, marginBottom: '0.5rem' }}>💡 {selectedState === 'california' ? 'CDSS' : getDepartmentName()} Assessment Rule</h4>
               <p style={{ lineHeight: '1.4', color: 'var(--text-light)' }}>
-                Under CDSS Manual of Policies and Procedures (MPP) Section 30-761, hours must be authorized based on the child&apos;s **individual need** for services. Bring this printout to your assessment to guide the worker.
+                Under {selectedState === 'california' ? 'CDSS Manual of Policies and Procedures (MPP) Section 30-761' : 'state Medicaid program regulations'}, hours must be authorized based on the child&apos;s **individual need** for services. Bring this printout to your assessment to guide the worker.
               </p>
             </div>
 
@@ -1139,7 +1269,7 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 180px', gap: '1rem', alignItems: 'center' }}>
                   <div>
                     <strong style={{ display: 'block', fontSize: '0.9rem' }}>Recipients in Household</strong>
-                    <span style={{ fontSize: '0.78rem', color: 'var(--text-light)' }}>Number of family members receiving IHSS hours.</span>
+                    <span style={{ fontSize: '0.78rem', color: 'var(--text-light)' }}>Number of family members receiving {getProgramName()} hours.</span>
                   </div>
                   <select
                     value={recipientCount}
@@ -1411,8 +1541,9 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
               let totalWeeklyAuth = weekly1;
               if (recipientCount >= 2) totalWeeklyAuth += weekly2;
               if (recipientCount >= 3) totalWeeklyAuth += weekly3;
-
-              const limit = recipientCount > 1 ? 66 : 70;
+              
+              const ruleObj = getOvertimeRules();
+              const limit = ruleObj.limit;
               const isOverCap = totalWeeklyAuth > limit;
               
               const regularHours = Math.min(40, totalWeeklyAuth);
@@ -1472,7 +1603,11 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
                       <div>
                         <strong style={{ display: 'block', fontSize: '0.85rem', color: '#b91c1c', marginBottom: '0.2rem' }}>Weekly Cap Exceeded!</strong>
                         <p style={{ fontSize: '0.78rem', color: '#b91c1c', margin: 0, lineHeight: 1.4 }}>
-                          Under Welfare & Institutions Code § 12301.15, providers working for multiple recipients are strictly capped at <strong>66 hours per week</strong>. Working beyond this cap will trigger program violations. Split recipient hours with another provider in the household.
+                          {selectedState === 'california' ? (
+                            `Under Welfare & Institutions Code § 12301.15, providers working for multiple recipients are strictly capped at 66 hours per week. Working beyond this cap will trigger program violations. Split recipient hours with another provider in the household.`
+                          ) : (
+                            `Under ${ruleObj.cite}, providers are capped at ${limit} hours per week. Working beyond this cap may require program authorization or trigger compliance reviews.`
+                          )}
                         </p>
                       </div>
                     </div>
@@ -1485,7 +1620,11 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
                       <div>
                         <strong style={{ display: 'block', fontSize: '0.85rem', color: '#d97706', marginBottom: '0.2rem' }}>Travel Cap Warning</strong>
                         <p style={{ fontSize: '0.78rem', color: '#d97706', margin: 0, lineHeight: 1.4 }}>
-                          Welfare & Institutions Code § 12301.16 caps authorized travel time between clients at <strong>7 hours per week</strong>. Make sure your travel time claim is authorized by your caseworker.
+                          {selectedState === 'california' ? (
+                            `Welfare & Institutions Code § 12301.16 caps authorized travel time between clients at 7 hours per week. Make sure your travel time claim is authorized by your caseworker.`
+                          ) : (
+                            `State provider regulations cap authorized travel time between clients at 7 hours per week. Ensure your travel hours are authorized by your caseworker.`
+                          )}
                         </p>
                       </div>
                     </div>
@@ -1498,7 +1637,7 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
             <div className="glass-panel" style={{ padding: '1.25rem', fontSize: '0.85rem' }}>
               <h4 style={{ fontWeight: 700, marginBottom: '0.5rem' }}>🚗 Travel Time & Overtime Rules</h4>
               <p style={{ lineHeight: '1.4', color: 'var(--text-light)', margin: 0 }}>
-                Under CDSS rules, if you drive directly from one recipient&apos;s house to another on the same day to perform services, you are entitled to travel time pay. Travel hours are paid at your regular hourly wage, and do not trigger overtime deductions or eat into your 66-hour provider work cap.
+                Under {selectedState === 'california' ? 'CDSS rules' : 'state Medicaid guidelines'}, if you drive directly from one recipient&apos;s house to another on the same day to perform services, you are entitled to travel time pay. Travel hours are paid at your regular hourly wage, and do not trigger overtime deductions or eat into your {selectedState === 'california' ? '66-hour provider work cap' : 'standard provider workweek cap'}.
               </p>
             </div>
 
@@ -1583,7 +1722,7 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
         </div>
 
         <p style={{ fontSize: '7pt', color: '#64748b', marginTop: '2.5rem', fontStyle: 'italic', margin: 0 }}>
-          Notice: This behavior log is constructed in support of IHSS Protective Supervision assessment criteria under CDSS MPP Section 30-757.17. Any recorded incident represents an active intervention required to prevent physical injury or property hazard.
+          Notice: This behavior log is constructed in support of {selectedState === 'california' ? 'IHSS Protective Supervision assessment criteria under CDSS MPP Section 30-757.17' : `${getProgramName()} safety monitoring and supervision guidelines under ${getDepartmentName()} rules`}. Any recorded incident represents an active intervention required to prevent physical injury or property hazard.
         </p>
       </div>
 

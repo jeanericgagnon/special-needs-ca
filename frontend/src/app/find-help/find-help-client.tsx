@@ -19,6 +19,23 @@ import { stateConfigs } from '@/lib/stateConfigs';
 
 export default function FindHelpClient() {
   const [stateId, setStateId] = useState('california');
+  const [hydrated, setHydrated] = useState(false);
+
+  React.useEffect(() => {
+    const savedState = localStorage.getItem('selected_state');
+    const timer = setTimeout(() => {
+      if (savedState) {
+        setStateId(savedState);
+      }
+      setHydrated(true);
+    }, 0);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const handleStateChange = (val: string) => {
+    setStateId(val);
+    localStorage.setItem('selected_state', val);
+  };
 
   const statesList = Object.keys(stateConfigs).map(key => ({
     id: key,
@@ -170,8 +187,8 @@ export default function FindHelpClient() {
         
         <div style={{ width: '100%', maxWidth: '300px' }}>
           <select 
-            value={stateId} 
-            onChange={(e) => setStateId(e.target.value)}
+            value={hydrated ? stateId : 'california'} 
+            onChange={(e) => handleStateChange(e.target.value)}
             style={{
               padding: '0.75rem 1.25rem',
               fontSize: '1rem',
