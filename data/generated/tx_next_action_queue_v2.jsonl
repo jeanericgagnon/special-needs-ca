@@ -1,0 +1,4 @@
+{"priority":"P0","role_id":"tx_hhs_lidda_directory","next_action":"repair_or_replace_broken_lidda_directory_source","why":"All 39 v1 LIDDA rows were downgraded because the official evidence snippet was File Not Found.","affected_rows":39}
+{"priority":"P0","role_id":"tx_askted","next_action":"build_parsed_county_or_district_mapping_from_official_tea_source","why":"All current education rows rely on a generic AskTED portal final URL without parsed county or district evidence.","affected_rows":255}
+{"priority":"P0","role_id":"tx_county_gate","next_action":"keep_texas_counties_noindex_until_hardened_roles_verify","why":"Blocked counties after hardening: 254.","affected_rows":254}
+{"priority":"P1","role_id":"tx_project_first","next_action":"browser_assisted_followup_for_403_source","why":"Texas Project First remained fetch-blocked with HTTP 403 in v1 and should not be treated as down.","affected_rows":1}

@@ -1,5 +1,14 @@
 # Texas Completion Procedure And Results v1
 
+## v2 correction notice
+
+The original v1 Texas completion lane over-claimed county PASS status.
+
+- v1 reported: PASS 254, PARTIAL 0, BLOCKED 0
+- v2 hardened result: PASS 0, PARTIAL 0, BLOCKED 254
+- The main defect was a weak gate that accepted generic or broken evidence as county proof.
+- In particular, LIDDA rows carrying "File Not Found" snippets and generic AskTED portal rows still contributed to PASS.
+- v2 is the truthful correction and should be treated as authoritative for Texas gating.
 ## 1. Executive summary
 
 Texas was re-run as a manifest-first, source-of-truth completion lane. This pass did not use broad autopilot scraping. It reviewed a bounded Texas manifest, re-expressed the existing Texas official backbone into machine-readable county-gated artifacts, and logged every failure or unresolved issue.

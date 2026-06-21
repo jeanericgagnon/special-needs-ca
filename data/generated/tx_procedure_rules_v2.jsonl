@@ -1,0 +1,8 @@
+{"state":"texas","rule":"v1 over-claimed texas pass status because the county gate accepted generic or broken evidence","created_at":"2026-06-21T02:19:46.883Z"}
+{"state":"texas","rule":"a row cannot be verified when title, h1, or evidence snippet contains a broken-page marker","created_at":"2026-06-21T02:19:46.883Z"}
+{"state":"texas","rule":"statewide routes may support counties but cannot by themselves produce a county PASS","created_at":"2026-06-21T02:19:46.883Z"}
+{"state":"texas","rule":"county PASS requires county-specific or source-derived mapping for LIDDA, ECI, education routing, and HHS routing","created_at":"2026-06-21T02:19:46.883Z"}
+{"state":"texas","rule":"generic AskTED portal roots do not verify county education routing without parsed county or district mapping","created_at":"2026-06-21T02:19:46.883Z"}
+{"state":"texas","rule":"broken official directory pages must downgrade dependent county rows even if fallback names exist in the database","created_at":"2026-06-21T02:19:46.883Z"}
+{"state":"texas","rule":"failure-ledger critical findings must affect county gate outcomes","created_at":"2026-06-21T02:19:46.883Z"}
+{"state":"texas","rule":"truth beats coverage; downgrade when evidence is generic, broken, or not county-specific","created_at":"2026-06-21T02:19:46.883Z"}

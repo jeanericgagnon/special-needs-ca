@@ -1,0 +1,50 @@
+{
+  "state": "texas",
+  "generated_at": "2026-06-21T02:19:46.876Z",
+  "v1": {
+    "pass_counties": 254,
+    "partial_counties": 0,
+    "blocked_counties": 0
+  },
+  "v2": {
+    "pass_counties": 0,
+    "partial_counties": 0,
+    "blocked_counties": 254
+  },
+  "audited_row_counts": {
+    "lidda_rows": 39,
+    "eci_rows": 39,
+    "hhs_rows": 254,
+    "education_rows": 255,
+    "county_rows": 254
+  },
+  "audit_findings": {
+    "verified_rows_marked_v1": 587,
+    "verified_rows_with_broken_evidence": 39,
+    "lidda_file_not_found_rows": 39,
+    "generic_home_or_search_verified_rows": 587,
+    "pass_counties_with_broken_evidence": 254,
+    "pass_counties_using_generic_askted_only": 254,
+    "failures_logged_but_not_affecting_v1_gate": 167
+  },
+  "downgraded_rows_by_category": {
+    "downgrade_lidda": 39,
+    "downgrade_education": 255,
+    "downgrade_county_gate": 254
+  },
+  "top_failure_categories": {
+    "source_fetch_failed": 1,
+    "wrong_domain": 162,
+    "duplicate_entity": 4,
+    "downgrade_lidda": 39,
+    "downgrade_education": 255,
+    "downgrade_county_gate": 254
+  },
+  "tests_that_allowed_bad_result": [
+    "v1 PASS assertion required only a LIDDA string, not valid county-specific evidence",
+    "v1 tests never failed on broken evidence markers like \"File Not Found\"",
+    "v1 tests never required parsed county or district mapping for education routing",
+    "v1 tests never forced failure-ledger critical rows to downgrade county gate status"
+  ],
+  "index_safe": false
+}
