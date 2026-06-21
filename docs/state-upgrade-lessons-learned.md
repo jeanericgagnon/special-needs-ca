@@ -216,3 +216,7 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Explicit First-Party Designation Text Can Resolve Statewide Support Families
 *   **Problem:** Some state packets leave PTI, P&A, or similar statewide support families as `missing` or `inventory_only` even when a reviewed first-party artifact already states the exact statewide designation on the homepage or About surface.
 *   **Lesson:** When a reviewed first-party page explicitly says it is the federally designated PTI, the statewide protection-and-advocacy organization, or another exact statewide support authority, upgrade the family from that designation text directly. Do not keep the family blocked just because the old packet lacked a clean sample chain.
+
+### Official Interactive Locators Do Not Count As County-Grade Proof Until Their County Data Is Reviewed
+*   **Problem:** Nebraska exposed a live official county-office chain through a `Public Assistance Offices` page that linked to a GIS Experience Builder locator, but the fetched locator only rendered a generic `Experience` shell and did not preserve county rows or structured office evidence in the reviewed artifact chain.
+*   **Lesson:** A live official locator link is not county-grade proof by itself. Upgrade county-local routing only when the reviewed HTML, document, or extracted data preserves concrete county offices, counties served, or structured local routing evidence. Interactive locator shells stay blocked until the county data itself is reviewed.

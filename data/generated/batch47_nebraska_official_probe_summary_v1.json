@@ -1,0 +1,114 @@
+{
+  "dhhsRoot": {
+    "url": "https://dhhs.ne.gov/Pages/default.aspx",
+    "finalUrl": "https://dhhs.ne.gov/Pages/default.aspx",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned the real Nebraska DHHS SharePoint root and exposed role-aligned links for Public Assistance Offices, Medicaid Eligibility, and Developmental Disabilities."
+  },
+  "medicaidEligibility": {
+    "url": "https://dhhs.ne.gov/Pages/Medicaid-Eligibility.aspx",
+    "finalUrl": "https://dhhs.ne.gov/Pages/Medicaid-Eligibility.aspx",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned title \"Medicaid Eligibility\" with body text \"There are Many Ways to Apply for Medicaid\" and links to iServe, disability coverage guidance, and the Medicaid provider directory."
+  },
+  "medicaidGeneral": {
+    "url": "https://dhhs.ne.gov/Pages/General-Medicaid-Information.aspx",
+    "finalUrl": "https://dhhs.ne.gov/Pages/General-Medicaid-Information.aspx",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned title \"Medicaid General Information and Overview\" with statewide benefits, contact, regulations, and state-plan context."
+  },
+  "ddRoot": {
+    "url": "https://dhhs.ne.gov/Pages/Developmental-Disabilities.aspx",
+    "finalUrl": "https://dhhs.ne.gov/Pages/Developmental-Disabilities.aspx",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned title and H1 \"Division of Developmental Disabilities\" and preserved DD-specific appeal hooks including \"Request for Fair Hearing Form\" and the DD appeals email target."
+  },
+  "ddEligibility": {
+    "url": "https://dhhs.ne.gov/Pages/DD-Eligibility.aspx",
+    "finalUrl": "https://dhhs.ne.gov/Pages/DD-Eligibility.aspx",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned title \"Eligibility for Medicaid HCBS Waiver Services,\" replacing the dead `dhhs.nebraska.gov/dd/waivers` packet sample with a live Nebraska DHHS waiver-eligibility leaf."
+  },
+  "publicAssistanceOffices": {
+    "url": "https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx",
+    "finalUrl": "https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned title \"Public Assistance Offices\" and linked the official Nebraska Public Office Location Lookup, but the fetched page did not itself preserve county office rows."
+  },
+  "officeLookup": {
+    "url": "https://gis.ne.gov/portal/apps/experiencebuilder/experience/?id=76a6ec0ec7c449448c95d00f59002457",
+    "finalUrl": "https://gis.ne.gov/portal/apps/experiencebuilder/experience/?id=76a6ec0ec7c449448c95d00f59002457",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe to the official Nebraska Public Office Location Lookup only rendered the generic title \"Experience\" and did not preserve county-grade office data in the reviewed HTML artifact."
+  },
+  "edn": {
+    "url": "https://edn.ne.gov/cms/",
+    "finalUrl": "https://edn.ne.gov/cms/",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned title \"Home | Nebraska Early Development Network\" and H1 \"The Nebraska Early Development Network\" with visible Early Intervention, Who is Eligible, Services Coordination, Make a Referral, and Planning Region Teams navigation."
+  },
+  "ndeSpecialEducation": {
+    "url": "https://www.education.ne.gov/sped/",
+    "finalUrl": "https://www.education.ne.gov/sped/",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned title and H1 \"Special Education\" on the Nebraska Department of Education site, replacing the old generic home-page packet sample."
+  },
+  "ndeComplaint": {
+    "url": "https://www.education.ne.gov/sped/state-complaint/",
+    "finalUrl": "https://www.education.ne.gov/sped/state-complaint/",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned the exact Nebraska Department of Education \"State Complaint\" leaf."
+  },
+  "ndeMediation": {
+    "url": "https://www.education.ne.gov/sped/mediation/",
+    "finalUrl": "https://www.education.ne.gov/sped/mediation/",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned the exact Nebraska Department of Education \"Mediation\" leaf."
+  },
+  "ndeDueProcess": {
+    "url": "https://www.education.ne.gov/sped/due-process/",
+    "finalUrl": "https://www.education.ne.gov/sped/due-process/",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned the exact Nebraska Department of Education \"Due Process\" leaf."
+  },
+  "vr": {
+    "url": "https://vr.nebraska.gov/",
+    "finalUrl": "https://vr.nebraska.gov/",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned title \"Nebraska VR | Welcome\" with statewide vocational-rehabilitation content including Vocational Rehabilitation Rules, State Rehabilitation Council, and formal review determinations."
+  },
+  "protectionAndAdvocacy": {
+    "url": "https://www.disabilityrightsnebraska.org/",
+    "finalUrl": "https://www.disabilityrightsnebraska.org/",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned first-party text stating \"Disability Rights Nebraska is the Protection and Advocacy system for people with disabilities in our state.\""
+  },
+  "pti": {
+    "url": "https://pti-nebraska.org/about/",
+    "finalUrl": "https://pti-nebraska.org/about/",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned first-party text stating \"PTI Nebraska has served as Nebraska’s Parent Training and Information Center since 2001\" and \"Nebraska has one federally funded Parent Center.\""
+  },
+  "legalAid": {
+    "url": "https://legalaidofnebraska.org/",
+    "finalUrl": "https://legalaidofnebraska.org/",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned H1 \"Who We Are and What We Do\" with first-party text that Legal Aid of Nebraska exists to provide quality civil legal aid to Nebraskans who have nowhere else to turn."
+  }
+}

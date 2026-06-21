@@ -1,0 +1,138 @@
+{
+  "generated_at": "2026-06-21T23:59:00.000Z",
+  "state": "nebraska",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 83,
+  "upgraded_families": [
+    "medicaid_state_health_coverage",
+    "medicaid_waiver_hcbs_disability_services",
+    "developmental_disability_idd_authority",
+    "early_intervention_part_c",
+    "special_education_idea_part_b",
+    "vocational_rehabilitation_pre_ets",
+    "protection_and_advocacy",
+    "parent_training_information_center",
+    "legal_aid"
+  ],
+  "blocked_families": [
+    "district_or_county_education_routing",
+    "county_local_disability_resources"
+  ],
+  "evidence_checks": {
+    "dhhsRoot": {
+      "url": "https://dhhs.ne.gov/Pages/default.aspx",
+      "finalUrl": "https://dhhs.ne.gov/Pages/default.aspx",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "evidence": "Reviewed 2026-06-21 live probe returned the real Nebraska DHHS SharePoint root and exposed role-aligned links for Public Assistance Offices, Medicaid Eligibility, and Developmental Disabilities."
+    },
+    "medicaidEligibility": {
+      "url": "https://dhhs.ne.gov/Pages/Medicaid-Eligibility.aspx",
+      "finalUrl": "https://dhhs.ne.gov/Pages/Medicaid-Eligibility.aspx",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "evidence": "Reviewed 2026-06-21 live probe returned title \"Medicaid Eligibility\" with body text \"There are Many Ways to Apply for Medicaid\" and links to iServe, disability coverage guidance, and the Medicaid provider directory."
+    },
+    "ddRoot": {
+      "url": "https://dhhs.ne.gov/Pages/Developmental-Disabilities.aspx",
+      "finalUrl": "https://dhhs.ne.gov/Pages/Developmental-Disabilities.aspx",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "evidence": "Reviewed 2026-06-21 live probe returned title and H1 \"Division of Developmental Disabilities\" and preserved DD-specific appeal hooks including \"Request for Fair Hearing Form\" and the DD appeals email target."
+    },
+    "ddEligibility": {
+      "url": "https://dhhs.ne.gov/Pages/DD-Eligibility.aspx",
+      "finalUrl": "https://dhhs.ne.gov/Pages/DD-Eligibility.aspx",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "evidence": "Reviewed 2026-06-21 live probe returned title \"Eligibility for Medicaid HCBS Waiver Services,\" replacing the dead `dhhs.nebraska.gov/dd/waivers` packet sample with a live Nebraska DHHS waiver-eligibility leaf."
+    },
+    "edn": {
+      "url": "https://edn.ne.gov/cms/",
+      "finalUrl": "https://edn.ne.gov/cms/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "evidence": "Reviewed 2026-06-21 live probe returned title \"Home | Nebraska Early Development Network\" and H1 \"The Nebraska Early Development Network\" with visible Early Intervention, Who is Eligible, Services Coordination, Make a Referral, and Planning Region Teams navigation."
+    },
+    "ndeSpecialEducation": {
+      "url": "https://www.education.ne.gov/sped/",
+      "finalUrl": "https://www.education.ne.gov/sped/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "evidence": "Reviewed 2026-06-21 live probe returned title and H1 \"Special Education\" on the Nebraska Department of Education site, replacing the old generic home-page packet sample."
+    },
+    "vr": {
+      "url": "https://vr.nebraska.gov/",
+      "finalUrl": "https://vr.nebraska.gov/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "evidence": "Reviewed 2026-06-21 live probe returned title \"Nebraska VR | Welcome\" with statewide vocational-rehabilitation content including Vocational Rehabilitation Rules, State Rehabilitation Council, and formal review determinations."
+    },
+    "protectionAndAdvocacy": {
+      "url": "https://www.disabilityrightsnebraska.org/",
+      "finalUrl": "https://www.disabilityrightsnebraska.org/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "evidence": "Reviewed 2026-06-21 live probe returned first-party text stating \"Disability Rights Nebraska is the Protection and Advocacy system for people with disabilities in our state.\""
+    },
+    "pti": {
+      "url": "https://pti-nebraska.org/about/",
+      "finalUrl": "https://pti-nebraska.org/about/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "evidence": "Reviewed 2026-06-21 live probe returned first-party text stating \"PTI Nebraska has served as Nebraska’s Parent Training and Information Center since 2001\" and \"Nebraska has one federally funded Parent Center.\""
+    },
+    "legalAid": {
+      "url": "https://legalaidofnebraska.org/",
+      "finalUrl": "https://legalaidofnebraska.org/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "evidence": "Reviewed 2026-06-21 live probe returned H1 \"Who We Are and What We Do\" with first-party text that Legal Aid of Nebraska exists to provide quality civil legal aid to Nebraskans who have nowhere else to turn."
+    },
+    "publicAssistanceOffices": {
+      "url": "https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx",
+      "finalUrl": "https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "evidence": "Reviewed 2026-06-21 live probe returned title \"Public Assistance Offices\" and linked the official Nebraska Public Office Location Lookup, but the fetched page did not itself preserve county office rows."
+    },
+    "officeLookup": {
+      "url": "https://gis.ne.gov/portal/apps/experiencebuilder/experience/?id=76a6ec0ec7c449448c95d00f59002457",
+      "finalUrl": "https://gis.ne.gov/portal/apps/experiencebuilder/experience/?id=76a6ec0ec7c449448c95d00f59002457",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "evidence": "Reviewed 2026-06-21 live probe to the official Nebraska Public Office Location Lookup only rendered the generic title \"Experience\" and did not preserve county-grade office data in the reviewed HTML artifact."
+    }
+  },
+  "gap_status_by_family": {
+    "medicaid_state_health_coverage": "verified_state_grade",
+    "medicaid_waiver_hcbs_disability_services": "verified_state_grade",
+    "developmental_disability_idd_authority": "verified_state_grade",
+    "early_intervention_part_c": "verified_state_grade",
+    "special_education_idea_part_b": "verified_state_grade",
+    "district_or_county_education_routing": "blocked_exact_district_or_county_leafs_unverified",
+    "vocational_rehabilitation_pre_ets": "verified_state_grade",
+    "protection_and_advocacy": "verified_state_grade",
+    "parent_training_information_center": "verified_state_grade",
+    "legal_aid": "verified_state_grade",
+    "able_program": "verified_state_grade",
+    "ssi_ssa_federal_reference": "verified_state_grade",
+    "county_local_disability_resources": "blocked_official_interactive_locator_not_reviewed_county_grade"
+  },
+  "verified_sample_counts": {
+    "medicaid_state_health_coverage": 2,
+    "medicaid_waiver_hcbs_disability_services": 1,
+    "developmental_disability_idd_authority": 2,
+    "early_intervention_part_c": 1,
+    "special_education_idea_part_b": 4,
+    "district_or_county_education_routing": 4,
+    "vocational_rehabilitation_pre_ets": 1,
+    "protection_and_advocacy": 1,
+    "parent_training_information_center": 1,
+    "legal_aid": 1,
+    "able_program": 1,
+    "ssi_ssa_federal_reference": 1,
+    "county_local_disability_resources": 2
+  }
+}
