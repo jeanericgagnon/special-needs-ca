@@ -184,3 +184,7 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Unrelated Packet Samples Must Not Masquerade As The Designated Statewide Support Family
 *   **Problem:** New York’s packet carried verified nonprofit samples for P&A and PTI slots, but the sample rows pointed to unrelated advocacy organizations and regional parent centers instead of the designated statewide authorities DRNY and Parent Network of WNY.
 *   **Lesson:** A statewide support family only upgrades when the reviewed packet evidence actually matches the designated first-party statewide source. Nearby advocacy or parent-support organizations may be useful, but they cannot satisfy the P&A or PTI gate by association.
+
+### Regional PTI Coverage Cannot Be Promoted As Statewide PTI Completion
+*   **Problem:** Illinois had a real reviewed PTI source on disk, but the fetched evidence was explicitly scoped to downstate Illinois while the designated statewide PTI target was a different organization.
+*   **Lesson:** A reviewed PTI source only upgrades the statewide PTI family when its service scope actually matches the statewide gate. Regional or downstate-only PTI coverage is useful evidence, but it must remain blocked or partial until the designated statewide PTI source is reviewed and verified.

@@ -7,19 +7,17 @@
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 102,
-  "completeness_pct": 58,
-  "strong_critical_families": 7,
-  "weak_critical_families": 2,
-  "missing_critical_families": 3,
+  "completeness_pct": 75,
+  "strong_critical_families": 9,
+  "weak_critical_families": 3,
+  "missing_critical_families": 0,
   "total_critical_families": 12,
   "primary_gap_reason": "county_grade_coverage_still_incomplete_after_exact_target_verification",
-  "recommended_batch": "batch_3_procedure_hardening",
+  "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "district_or_county_education_routing"
   ],
   "major_gap_families": [
-    "vocational_rehabilitation_pre_ets",
-    "protection_and_advocacy",
     "parent_training_information_center",
     "legal_aid"
   ],
@@ -29,6 +27,7 @@
     "developmental_disability_idd_authority",
     "special_education_idea_part_b",
     "district_or_county_education_routing",
+    "vocational_rehabilitation_pre_ets",
     "protection_and_advocacy",
     "parent_training_information_center",
     "able_program",
@@ -40,5 +39,28 @@
     "Preserve noindex until all critical families are verified",
     "District-grade routing must use direct local or district-owned evidence, not generic or statewide fallback",
     "Legacy/inventory-only evidence does not satisfy California-grade completeness"
+  ],
+  "final_blockers": [
+    {
+      "family": "district_or_county_education_routing",
+      "severity": "critical",
+      "failure_code": "bounded_roe_leaf_packet_exhausted_before_county_grade_coverage",
+      "evidence": "Verified exact leaves remain limited to 3 reviewed ROE-owned pages; this does not truthfully prove district-grade routing statewide.",
+      "next_action": "hold_blocked_until_new_exact_district_targets_are_authored"
+    },
+    {
+      "family": "parent_training_information_center",
+      "severity": "major",
+      "failure_code": "reviewed_pti_sample_is_regional_not_statewide_designated_source",
+      "evidence": "Reviewed PTI evidence currently points to https://www.fmptic.org, which is documented as serving downstate Illinois rather than proving the designated statewide PTI target https://www.frcd.org.",
+      "next_action": "hold_blocked_until_reviewed_statewide_illinois_pti_source_is_verified"
+    },
+    {
+      "family": "legal_aid",
+      "severity": "major",
+      "failure_code": "authored_lsc_target_not_yet_replaced_with_reviewed_illinois_source",
+      "evidence": "Illinois legal-aid planning currently stops at the authored authoritative target https://www.lsc.gov/about-lsc/what-legal-aid/get-legal-help; no reviewed Illinois legal-aid evidence has been fetched and verified from saved artifacts.",
+      "next_action": "hold_blocked_until_reviewed_illinois_legal_aid_source_is_verified"
+    }
   ]
 }

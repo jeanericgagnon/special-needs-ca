@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T21:13:54.567Z",
+  "generatedAt": "2026-06-21T21:17:45.146Z",
   "stateCount": 50,
   "classifications": {
     "UNSTARTED": 42,
@@ -871,11 +871,11 @@
       "legacyManualReviewRate": 0.38,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 102,
-      "strongCriticalFamilies": 7,
-      "weakCriticalFamilies": 2,
-      "missingCriticalFamilies": 3,
+      "strongCriticalFamilies": 9,
+      "weakCriticalFamilies": 3,
+      "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 58,
+      "completenessPct": 75,
       "dbMetrics": {
         "state_id": "illinois",
         "state_code": "IL",
@@ -924,11 +924,11 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "exact_leaf_targets_verified_partial",
-        "vocational_rehabilitation_pre_ets": "missing",
-        "protection_and_advocacy": "missing",
-        "parent_training_information_center": "inventory_only",
-        "legal_aid": "missing",
+        "district_or_county_education_routing": "blocked_exact_leaf_repair_exhausted",
+        "vocational_rehabilitation_pre_ets": "verified_state_grade",
+        "protection_and_advocacy": "verified_state_grade",
+        "parent_training_information_center": "regional_only_reviewed_source",
+        "legal_aid": "missing_verified_source",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_state_grade"
@@ -936,7 +936,7 @@
       "packetGenerated": true,
       "packetBatch": "batch_3_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "county_grade_coverage_still_incomplete_after_exact_target_verification",
-      "packetRecommendedBatch": "batch_3_procedure_hardening"
+      "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {
       "stateId": "indiana",
