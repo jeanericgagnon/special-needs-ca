@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T18:52:20.050Z",
+  "generatedAt": "2026-06-21T18:56:40.813Z",
   "stateCount": 50,
   "classifications": {
     "UNSTARTED": 42,
@@ -861,11 +861,11 @@
       "legacyManualReviewRate": 0.38,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 102,
-      "strongCriticalFamilies": 6,
-      "weakCriticalFamilies": 3,
+      "strongCriticalFamilies": 7,
+      "weakCriticalFamilies": 2,
       "missingCriticalFamilies": 3,
       "totalCriticalFamilies": 12,
-      "completenessPct": 50,
+      "completenessPct": 58,
       "dbMetrics": {
         "state_id": "illinois",
         "state_code": "IL",
@@ -925,7 +925,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_3_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "county_grade_coverage_still_incomplete_after_exact_target_verification"
     },
     {
       "stateId": "indiana",

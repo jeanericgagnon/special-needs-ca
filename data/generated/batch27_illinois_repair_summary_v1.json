@@ -1,0 +1,10 @@
+{
+  "batch": "batch_27_illinois_repair_v1",
+  "generated_at": "2026-06-21T18:56:21.138Z",
+  "state": "illinois",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "district_exact_leaves_verified": 3,
+  "county_local_blocker_code": null,
+  "texas_preserved_complete": true
+}

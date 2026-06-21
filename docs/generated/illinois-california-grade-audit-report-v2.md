@@ -59,3 +59,10 @@
 ## Completion decision
 
 - Illinois remains BLOCKED and not index-safe because one or more critical families are still legacy, inventory-only, or missing.
+
+## Batch 27 Illinois repair
+
+- district_or_county_education_routing: verified ROE-owned exact leaves -> https://www.roe1.net/about-us/contact-us/, https://www.roe1.net/services/, https://www.roe3.org/about/roe-staff
+- county_local_disability_resources: Official Illinois county office routing now points to the live IDHS Office Locator at https://www.dhs.state.il.us/page.aspx?module=12.
+
+- Illinois remains BLOCKED and not index-safe until every critical family reaches California-grade proof.

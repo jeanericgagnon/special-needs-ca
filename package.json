@@ -333,6 +333,8 @@
     "test:batch25-ohio-education-county-repair-v1": "node scripts/test-batch25-ohio-education-county-repair-v1.mjs",
     "run:batch26-new-york-education-county-repair-v1": "node scripts/run-batch26-new-york-education-county-repair-v1.mjs",
     "test:batch26-new-york-education-county-repair-v1": "node scripts/test-batch26-new-york-education-county-repair-v1.mjs",
+    "run:batch27-illinois-education-county-repair-v1": "node scripts/run-batch27-illinois-education-county-repair-v1.mjs",
+    "test:batch27-illinois-education-county-repair-v1": "node scripts/test-batch27-illinois-education-county-repair-v1.mjs",
     "test:source-acquisition-autopilot": "node scripts/test-source-acquisition-autopilot.mjs",
     "test:source-acquisition-wave-diversity": "node scripts/test-source-acquisition-wave-diversity.mjs",
     "test:source-acquisition-completion-plan": "node scripts/test-source-acquisition-completion-plan.mjs",
