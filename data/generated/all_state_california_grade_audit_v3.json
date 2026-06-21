@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T20:20:06.601Z",
+  "generatedAt": "2026-06-21T20:29:41.328Z",
   "stateCount": 50,
   "classifications": {
     "UNSTARTED": 42,
@@ -583,11 +583,11 @@
       "legacyManualReviewRate": 0,
       "legacyAllowlistedCountyCount": 14,
       "countyCount": 67,
-      "strongCriticalFamilies": 6,
-      "weakCriticalFamilies": 4,
-      "missingCriticalFamilies": 2,
+      "strongCriticalFamilies": 10,
+      "weakCriticalFamilies": 2,
+      "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 50,
+      "completenessPct": 83,
       "dbMetrics": {
         "state_id": "florida",
         "state_code": "FL",
@@ -627,10 +627,10 @@
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
         "district_or_county_education_routing": "exact_leaf_targets_verified_partial",
-        "vocational_rehabilitation_pre_ets": "inventory_only",
-        "protection_and_advocacy": "missing",
-        "parent_training_information_center": "inventory_only",
-        "legal_aid": "missing",
+        "vocational_rehabilitation_pre_ets": "verified_state_grade",
+        "protection_and_advocacy": "verified_state_grade",
+        "parent_training_information_center": "verified_state_grade",
+        "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "legacy_state_grade"

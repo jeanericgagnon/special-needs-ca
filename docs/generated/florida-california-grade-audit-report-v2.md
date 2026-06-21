@@ -1,96 +1,54 @@
-# Florida California-Grade Batch 1 Report v1
+# Florida California-Grade Audit Report v2
 
 - classification: PARTIAL
 - index_safe: false
-- completeness_pct: 33
+- completeness_pct: 83
 - county_count: 67
-- primary_gap_reason: legacy_index_exposed_without_california_grade_reaudit
+- primary_gap_reason: county_grade_coverage_still_incomplete_after_exact_target_verification
 
 ## Family status
 
 - medicaid_state_health_coverage: verified_state_grade (statewide evidence is present at the required authority level)
 - medicaid_waiver_hcbs_disability_services: verified_state_grade (statewide evidence is present at the required authority level)
-- developmental_disability_idd_authority: legacy_state_grade (statewide or structural evidence exists, but not California-grade proof)
+- developmental_disability_idd_authority: verified_state_grade (Official APD regional offices page lists counties served across 67/67 Florida counties.)
 - early_intervention_part_c: verified_state_grade (statewide evidence is present at the required authority level)
-- special_education_idea_part_b: legacy_state_grade (statewide or structural evidence exists, but not California-grade proof)
-- district_or_county_education_routing: legacy_state_grade (statewide or structural evidence exists, but not California-grade proof)
-- vocational_rehabilitation_pre_ets: inventory_only (only legacy inventory hints or weak role matches exist)
-- protection_and_advocacy: missing (no credible current evidence)
-- parent_training_information_center: inventory_only (only legacy inventory hints or weak role matches exist)
-- legal_aid: missing (no credible current evidence)
+- special_education_idea_part_b: verified_state_grade (Official FDLRS directory exposes statewide associate center routing with 26 reviewed center links on the live official page.)
+- district_or_county_education_routing: exact_leaf_targets_verified_partial (Reviewed district-owned education exact leaves verified (12) across multiple Florida district domains, but county-grade coverage still requires broader district mapping.)
+- vocational_rehabilitation_pre_ets: verified_state_grade (Official statewide Florida Vocational Rehabilitation transition and Pre-ETS source is present and verified.)
+- protection_and_advocacy: verified_state_grade (Disability Rights Florida is already present as a verified first-party statewide P&A source.)
+- parent_training_information_center: verified_state_grade (Family Network on Disabilities is already present as a verified first-party statewide PTI source.)
+- legal_aid: verified_state_grade (Reviewed first-party Florida legal aid sources are present in the Florida source pack and verified discovery artifacts.)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: legacy_state_grade (statewide or structural evidence exists, but not California-grade proof)
+- county_local_disability_resources: legacy_state_grade (The legacy ACCESS local service center map now 404s, and bounded same-domain live recheck still exposes only community-partner search plus a statewide customer service center, not a county-grade official locator.)
 
 ## Failure ledger
 
-- launch_gate: legacy_index_exposed_without_california_grade_reaudit :: Legacy state report still labels Florida eligible/exposed, but California-grade audit has not re-proved county-grade gates.
-- developmental_disability_idd_authority: generic_or_statewide_evidence_used_where_local_required :: 2 inventory rows use DB-field agency labels; 48 inventory rows show federal/state mismatch; 12 generic roots need leaf verification
-- special_education_idea_part_b: legacy_or_inventory_only_evidence :: 2 inventory rows use DB-field agency labels; 48 inventory rows show federal/state mismatch; 12 generic roots need leaf verification
-- district_or_county_education_routing: generic_or_statewide_evidence_used_where_local_required :: 2 inventory rows use DB-field agency labels; 48 inventory rows show federal/state mismatch; 12 generic roots need leaf verification
-- vocational_rehabilitation_pre_ets: legacy_or_inventory_only_evidence :: 2 inventory rows use DB-field agency labels; 48 inventory rows show federal/state mismatch; 12 generic roots need leaf verification
-- protection_and_advocacy: missing_required_source_family :: Protection and advocacy has no strong California-grade evidence for Florida.
-- parent_training_information_center: legacy_or_inventory_only_evidence :: 2 inventory rows use DB-field agency labels; 48 inventory rows show federal/state mismatch; 12 generic roots need leaf verification
-- legal_aid: missing_required_source_family :: Legal aid has no strong California-grade evidence for Florida.
-- county_local_disability_resources: generic_or_statewide_evidence_used_where_local_required :: 2 inventory rows use DB-field agency labels; 48 inventory rows show federal/state mismatch; 12 generic roots need leaf verification
+- district_or_county_education_routing: county_grade_coverage_still_incomplete_after_exact_target_verification :: Verified exact leaf targets: https://www.bakerk12.org/departments/exceptional-student-education-student-services/exceptional-student-education-student-services, https://www.bakerk12.org/departments/exceptional-student-education-student-services/student-services-resources, https://www.bakerk12.org/departments/exceptional-student-education-student-services/staff, https://www.bay.k12.fl.us/page/ese/, https://www.bay.k12.fl.us/page/special-education-programs/, https://www.bradfordschools.org/departments/exceptional-student-education, https://www.yourcharlotteschools.net/72951_3, https://www.collierschools.com/students-families/ese, https://www.collierschools.com/students-families/ese/parent-resources, https://www.citrusschools.org/exceptional-student-education-2, https://www.oneclay.net/page/exceptional-student-education/, https://www.oneclay.net/page/ese-parent-services/
+- county_local_disability_resources: official_local_service_center_locator_missing_after_same_domain_repair :: The legacy ACCESS local service center map now 404s, and bounded same-domain live recheck still exposes only community-partner search plus a statewide customer service center, not a county-grade official locator.
 
 ## Verified source samples
 
 - medicaid_state_health_coverage: verified_state_grade; samples=3; first=https://www.floridahealth.gov/individual-family-health/child-infant-youth/special-health-care-needs/cms/
 - medicaid_waiver_hcbs_disability_services: verified_state_grade; samples=3; first=https://apd.myflorida.com/cdcplus/
-- developmental_disability_idd_authority: legacy_state_grade; samples=3; first=https://apd.myflorida.com/region/
+- developmental_disability_idd_authority: verified_state_grade; samples=6; first=https://apd.myflorida.com/region/northwest
 - early_intervention_part_c: verified_state_grade; samples=3; first=https://www.floridaearlysteps.com
-- special_education_idea_part_b: legacy_state_grade; samples=3; first=https://www.fdlrs.org
-- district_or_county_education_routing: legacy_state_grade; samples=3; first=https://www.fldoe.org/academics/exceptional-student-edu/
-- vocational_rehabilitation_pre_ets: inventory_only; samples=1; first=https://www.rehabworks.org/student-youth/
-- protection_and_advocacy: missing; samples=3; first=https://thearc.org/chapter/advocacy-resource-center-marion-inc/
-- parent_training_information_center: inventory_only; samples=3; first=https://fndusa.org
-- legal_aid: missing; samples=0
+- special_education_idea_part_b: verified_state_grade; samples=26; first=https://www.fdlrs.org/
+- district_or_county_education_routing: exact_leaf_targets_verified_partial; samples=12; first=https://www.bakerk12.org/departments/exceptional-student-education-student-services/exceptional-student-education-student-services
+- vocational_rehabilitation_pre_ets: verified_state_grade; samples=1; first=https://www.rehabworks.org/student-youth/
+- protection_and_advocacy: verified_state_grade; samples=4; first=https://www.disabilityrightsflorida.org
+- parent_training_information_center: verified_state_grade; samples=2; first=https://fndusa.org
+- legal_aid: verified_state_grade; samples=2; first=https://bals.org
 - able_program: verified_state_grade; samples=1; first=https://www.ableunited.com/
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov/benefits/disability/apply-child.html
 - county_local_disability_resources: legacy_state_grade; samples=3; first=https://myaccess.myflfamilies.com
 
 ## Next actions
 
-- [critical] launch_gate: keep_noindex_and_run_state_repair_lane
-- [critical] developmental_disability_idd_authority: author_county_or_district_exact_targets
-- [major] special_education_idea_part_b: author_verified_state_manifest
-- [critical] district_or_county_education_routing: author_county_or_district_exact_targets
-- [major] vocational_rehabilitation_pre_ets: author_verified_state_manifest
-- [major] protection_and_advocacy: author_or_verify_statewide_source_family
-- [major] parent_training_information_center: author_verified_state_manifest
-- [major] legal_aid: author_or_verify_statewide_source_family
-- [critical] county_local_disability_resources: author_county_or_district_exact_targets
+- [critical] district_or_county_education_routing: expand_verified_leaf_targets_into_county_or_district_mapping
+- [critical] county_local_disability_resources: keep_blocked_until_official_county_service_center_locator_is_recovered
 
-## Completion decision
+## Batch 35 Florida statewide-family truth refresh
 
-- Florida remains PARTIAL and not index-safe because one or more critical families are still legacy, inventory-only, or missing.
-
-## Batch 20 exact leaf verification
-
-- developmental_disability_idd_authority: verified exact leaf targets -> https://apd.myflorida.com/region/
-- district_or_county_education_routing: verified exact leaf targets -> https://www.bakerk12.org/departments/exceptional-student-education-student-services/exceptional-student-education-student-services, https://www.bakerk12.org/departments/exceptional-student-education-student-services/student-services-resources, https://www.bakerk12.org/departments/exceptional-student-education-student-services/staff
-
-- Florida remains PARTIAL and not index-safe until every critical family passes county-grade proof.
-
-## Batch 21 statewide mapping repair
-
-- developmental_disability_idd_authority: Official APD regional offices page lists counties served across 67/67 Florida counties.
-
-- Florida remains gated unless every critical family reaches California-grade proof.
-
-## Batch 23 Florida exact repair
-
-- special_education_idea_part_b: official FDLRS directory repaired to verified state-grade via https://www.fdlrs.org/contact-us with 26 reviewed center links.
-- district_or_county_education_routing: verified district-owned exact leaves -> https://www.bakerk12.org/departments/exceptional-student-education-student-services/exceptional-student-education-student-services, https://www.bakerk12.org/departments/exceptional-student-education-student-services/student-services-resources, https://www.bakerk12.org/departments/exceptional-student-education-student-services/staff, https://www.bay.k12.fl.us/page/ese/, https://www.bay.k12.fl.us/page/special-education-programs/, https://www.bradfordschools.org/departments/exceptional-student-education, https://www.yourcharlotteschools.net/72951_3, https://www.collierschools.com/students-families/ese, https://www.collierschools.com/students-families/ese/parent-resources, https://www.citrusschools.org/exceptional-student-education-2, https://www.oneclay.net/page/exceptional-student-education/, https://www.oneclay.net/page/ese-parent-services/
-- county_local_disability_resources: remained blocked after bounded same-domain repair; The legacy ACCESS local service center map now 404s, and bounded same-domain repair only surfaced community-partner search and a statewide customer service center, not a county-grade official locator.
-
-- Florida remains PARTIAL and not index-safe until every critical family reaches California-grade proof.
-
-## Batch 29 Florida launch-gate and county-local refresh
-
-- county_local_disability_resources: The legacy ACCESS local service center map now 404s, and bounded same-domain live recheck still exposes only community-partner search plus a statewide customer service center, not a county-grade official locator.
-- launch_gate: cleared as stale packet metadata because Florida now explicitly remains gated by current county-local and district-routing evidence, not by a legacy exposed/index-safe flag.
-- No new reusable lesson was promoted from Batch 29; the existing county-local replacement lesson remains authoritative.
-
-- Florida remains PARTIAL and not index-safe until every critical family reaches California-grade proof.
+- Upgraded only the statewide Florida families already proven by first-party sources on disk.
+- County-grade education routing and county-local disability resources remain the real unresolved Florida blockers.
