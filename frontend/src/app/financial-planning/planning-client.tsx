@@ -9,9 +9,12 @@ import {
 import CopyButton from '@/components/copy-button';
 import PrintButton from '@/components/print-button';
 import { getCaregiverProfileAction } from '../dashboard/child-actions';
+import { stateConfigs } from '@/lib/stateConfigs';
 
 export default function PlanningClient() {
   const [activeTab, setActiveTab] = useState<'shield' | 'deeming'>('shield');
+  const [selectedState, setSelectedState] = useState<string>('california');
+  const [hydrated, setHydrated] = useState(false);
 
   // Profile Cache States
   const [parentName, setParentName] = useState('Sarah Jenkins');
@@ -22,6 +25,14 @@ export default function PlanningClient() {
 
   // Load from profile cache on mount
   useEffect(() => {
+    const savedState = localStorage.getItem('selected_state');
+    const timer = setTimeout(() => {
+      if (savedState) {
+        setSelectedState(savedState);
+      }
+      setHydrated(true);
+    }, 0);
+
     Promise.resolve().then(() => {
       // 1. First fetch database values
       getCaregiverProfileAction()
@@ -52,7 +63,16 @@ export default function PlanningClient() {
       if (savedChildDob) setChildDob(savedChildDob);
       if (savedCoordName) setCoordinatorName(savedCoordName);
     });
+
+    return () => clearTimeout(timer);
   }, []);
+
+  const stateConfig = stateConfigs[selectedState] || stateConfigs['california'];
+
+  const updateSelectedState = (val: string) => {
+    setSelectedState(val);
+    localStorage.setItem('selected_state', val);
+  };
 
   // ----- TAB 1: ASSET SHIELD SIMULATOR STATES -----
   const [savingsAmount, setSavingsAmount] = useState(15000);
@@ -74,26 +94,32 @@ export default function PlanningClient() {
 
   // Asset recommendation logic
   const getRecommendation = () => {
+    const able = stateConfig.ableProgram || 'ABLE Account';
+    const medicaid = stateConfig.medicaidName || 'Medicaid';
+    const stateName = stateConfig.name || 'California';
+
     if (fundingSource === 'child-injury') {
       return {
-        title: 'First-Party Special Needs Trust (SNT) with optional CalABLE wrapper',
-        desc: 'Since funds belong directly to the child (e.g. lawsuit settlement or direct inheritance), a First-Party SNT is legally mandated to protect benefits. You can transfer up to $18,000 annually from the trust into a CalABLE account to facilitate tax-free daily spending without trustee signatures.',
+        title: `First-Party Special Needs Trust (SNT) with optional ${able} wrapper`,
+        desc: `Since funds belong directly to the child (e.g. lawsuit settlement or direct inheritance), a First-Party SNT is legally mandated to protect benefits. You can transfer up to $18,000 annually from the trust into a ${able} account to facilitate tax-free daily spending without trustee signatures.`,
         recoveryNote: 'Note: First-Party SNTs require a Medicaid state-recovery provision upon the beneficiary\'s passing.'
       };
     }
 
     if (expectedBalance === 'high' || fundingSource === 'inheritance') {
       return {
-        title: 'Third-Party Special Needs Trust (Master Trust) + CalABLE account combination',
-        desc: 'This is the gold-standard setup. For balances exceeding $100,000 or funds originating from extended family wills/wills, establish a Third-Party SNT. This protects the estate from Medicaid recovery. Supplement this by transferring funds into a CalABLE account for daily disability expenditures (QDEs) to maximize flexibility.',
+        title: `Third-Party Special Needs Trust (Master Trust) + ${able} account combination`,
+        desc: `This is the gold-standard setup. For balances exceeding $100,000 or funds originating from extended family wills/wills, establish a Third-Party SNT. This protects the estate from Medicaid recovery. Supplement this by transferring funds into a ${able} account for daily disability expenditures (QDEs) to maximize flexibility.`,
         recoveryNote: 'Third-Party SNTs have no Medicaid clawback provisions. Unused funds pass directly to secondary heirs.'
       };
     }
 
     return {
-      title: 'Direct CalABLE Account (Standalone)',
-      desc: 'For expected savings under $100,000 primarily funded by parents or wages, a CalABLE account is the most cost-effective and immediate tool. It takes 15 minutes to open online, carries minimal fees, and allows the child or parents to spend money directly using a debit card for Qualified Disability Expenses.',
-      recoveryNote: 'California has outlawed Medicaid estate recovery on CalABLE accounts for residents, making it highly safe.'
+      title: `Direct ${able} Account (Standalone)`,
+      desc: `For expected savings under $100,000 primarily funded by parents or wages, a ${able} account is the most cost-effective and immediate tool. It takes 15 minutes to open online, carries minimal fees, and allows the child or parents to spend money directly using a debit card for Qualified Disability Expenses.`,
+      recoveryNote: selectedState === 'california'
+        ? 'California has outlawed Medicaid estate recovery on CalABLE accounts for residents, making it highly safe.'
+        : `Many states protect ${able} accounts from Medicaid recovery, but rules vary. Consult ${stateConfig.stateMedicaidAgency || 'your state Medicaid agency'} guidelines.`
     };
   };
 
@@ -140,6 +166,43 @@ export default function PlanningClient() {
 
   // Deeming Screener recommendation logic
   const getDeemingRecommendation = () => {
+    const catchment = stateConfig.catchmentName || 'Developmental Services Agency';
+    const waiver = stateConfig.waiverProgram || 'HCBS Waiver';
+    const medicaid = stateConfig.medicaidName || 'Medicaid';
+    const stateName = stateConfig.name || 'California';
+
+    if (selectedState !== 'california') {
+      if (!isRcClient) {
+        if (hasMedicalNeeds) {
+          return {
+            path: 'Home & Community-Based Services (HCBS) Waiver Pathway',
+            desc: `Your child does not receive services from ${catchment}, but has complex medical/nursing needs. They may be a strong candidate for an HCBS Medical/Nursing Waiver. This waiver bypasses parental income, granting the child full ${medicaid}.`,
+            action: `Contact ${stateConfig.stateMedicaidAgency || 'your state Medicaid agency'} to request an intake assessment for medical/nursing level of care waivers.`
+          };
+        }
+        return {
+          path: `${catchment} Intake Pathway`,
+          desc: `Medicaid Waiver eligibility is primarily processed for clients of ${catchment}. To qualify, your child must first undergo an intake assessment to establish eligibility.`,
+          action: `Request an intake assessment at the local **${stateConfig.ddAgency || 'developmental services agency'}** to initiate services.`
+        };
+      }
+
+      if (majorLimitations >= 3 && hasDiagnosis) {
+        return {
+          path: `${waiver} (Institutional Deeming)`,
+          desc: `Based on your child's active ${catchment} status and functional limitations in 3+ major life activities, they are highly eligible for the ${waiver} waiver. Parental income is 100% bypassed, granting the child full ${medicaid} regardless of family earnings.`,
+          action: `Email your Service Coordinator or Caseworker directly and request the ${waiver} application packet. Once approved, the child qualifies for full ${medicaid} with no deeming of parental income.`
+        };
+      }
+
+      return {
+        path: `${catchment} Reassessment Pathway`,
+        desc: `Institutional Deeming waiver eligibility requires the client to meet specific developmental level of care criteria, which generally includes functional limitations in at least 3 of 7 major life activities (self-care, communication, learning, mobility, self-direction, capacity for independent living, economic self-sufficiency).`,
+        action: `Request a meeting with your coordinator or caseworker to discuss your child's limitations in communication, self-care, or safety supervision.`
+      };
+    }
+
+    // Default California logic
     if (!isRcClient) {
       if (hasMedicalNeeds) {
         return {
@@ -173,17 +236,28 @@ export default function PlanningClient() {
   const deemingRec = getDeemingRecommendation();
 
   const compileDeemingLetter = () => {
+    const waiver = selectedState === 'california' 
+      ? 'Lanterman Medicaid Waiver (Institutional Deeming)'
+      : `${stateConfig.waiverProgram} (Institutional Deeming)`;
+
+    const agency = stateConfig.catchmentName || 'Developmental Services Agency';
+    const medicaid = stateConfig.medicaidName || 'Medicaid';
+
+    const citationText = selectedState === 'california'
+      ? 'Under federal and California DHCS guidelines, these limitations satisfy the ICF-DD level of care required for the HCBS Waiver.'
+      : `Under federal guidelines and ${stateConfig.ddAgency || 'state'} rules, these limitations satisfy the developmental level of care required for the ${stateConfig.waiverProgram || 'HCBS Waiver'}.`;
+
     return `Subject: Request for Medicaid Waiver (Institutional Deeming) Enrollment - ${childName}
 
 Dear ${coordinatorName || 'Service Coordinator'},
 
-I hope this email finds you well. I am writing to request that the Regional Center initiate the process to enroll my child, ${childName} (DOB: ${childDob}), in the Lanterman Medicaid Waiver (Institutional Deeming).
+I hope this email finds you well. I am writing to request that ${agency} initiate the process to enroll my child, ${childName} (DOB: ${childDob}), in the ${waiver}.
 
-As a Regional Center client, ${childName} exhibits significant functional limitations in three or more major life activities (specifically in areas including self-care, self-direction, communication, and learning). Under federal and California DHCS guidelines, these limitations satisfy the ICF-DD level of care required for the HCBS Waiver.
+As a client of ${agency}, ${childName} exhibits significant functional limitations in three or more major life activities (specifically in areas including self-care, self-direction, communication, and learning). ${citationText}
 
-Enrollment in this waiver is crucial for our family as it bypasses parental income limitations, granting ${childName} eligibility for Medi-Cal. This will enable access to essential medical services, behavioral therapies, and equipment necessary for support in our home.
+Enrollment in this waiver is crucial for our family as it bypasses parental income limitations, granting ${childName} eligibility for ${medicaid}. This will enable access to essential medical services, behavioral therapies, and equipment necessary for support in our home.
 
-Please let me know what documentation is required to submit the Medicaid Waiver Deeming packet.
+Please let me know what documentation is required to submit the Medicaid Waiver application packet.
 
 Thank you,
 ${parentName}
@@ -194,12 +268,39 @@ ${parentPhone}`;
     <main className="container animate-fade-in" style={{ paddingBottom: '5rem', maxWidth: '1150px' }}>
       
       {/* Header */}
-      <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
-        <Coins size={48} color="var(--primary-color)" style={{ margin: '0 auto 1rem' }} />
-        <h1>California Special Needs Financial & Benefit Planner</h1>
-        <p style={{ fontSize: '1.1rem', maxWidth: '650px', margin: '0 auto', color: 'var(--text-light)' }}>
-          Protect your child&apos;s Medi-Cal and SSI eligibility. Simulate asset limits, analyze California Family Cost Fees, and screen for Institutional Deeming income bypasses.
+      <div style={{ textAlign: 'center', marginBottom: '2.5rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <Coins size={48} color="var(--primary-color)" style={{ marginBottom: '1rem' }} />
+        <h1>{selectedState === 'california' ? 'California' : stateConfig.name} Special Needs Financial & Benefit Planner</h1>
+        <p style={{ fontSize: '1.1rem', maxWidth: '650px', margin: '0 auto 1.5rem', color: 'var(--text-light)' }}>
+          Protect your child&apos;s {stateConfig.medicaidName || 'Medicaid'} and SSI eligibility. Simulate asset limits, analyze cost sharing fees, and screen for Institutional Deeming income bypasses.
         </p>
+
+        {/* State selector dropdown */}
+        <div style={{ width: '100%', maxWidth: '300px', margin: '0 auto' }} className="no-print">
+          <select
+            value={hydrated ? selectedState : 'california'}
+            onChange={(e) => updateSelectedState(e.target.value)}
+            style={{
+              width: '100%',
+              padding: '0.65rem 1.25rem',
+              fontSize: '0.95rem',
+              fontWeight: 600,
+              borderRadius: '12px',
+              border: '1px solid var(--glass-border)',
+              background: 'white',
+              boxShadow: '0 4px 12px rgba(0, 0, 0, 0.05)',
+              cursor: 'pointer',
+              outline: 'none',
+              textAlign: 'center'
+            }}
+          >
+            {Object.keys(stateConfigs).map((key) => (
+              <option key={key} value={key}>
+                {stateConfigs[key].name}
+              </option>
+            ))}
+          </select>
+        </div>
       </div>
 
       {/* Tabs Switcher */}
@@ -222,8 +323,8 @@ ${parentPhone}`;
             transition: 'all 0.2s ease'
           }}
         >
-          <Coins size={18} />
-          Asset Shield Simulator (CalABLE/SNT)
+          <Scale size={18} />
+          Asset Shield Simulator ({stateConfig.ableProgram || 'ABLE'}/SNT)
         </button>
 
         <button
@@ -245,7 +346,7 @@ ${parentPhone}`;
           }}
         >
           <Scale size={18} />
-          Medi-Cal Deeming & Family Fees
+          {stateConfig.medicaidName || 'Medicaid'} Deeming & {selectedState === 'california' ? 'Family Fees' : 'Cost Sharing'}
         </button>
       </div>
 
@@ -259,7 +360,7 @@ ${parentPhone}`;
             </h2>
             
             <p style={{ fontSize: '0.9rem', color: 'var(--text-light)', lineHeight: '1.5', marginBottom: '2rem' }}>
-              California Medicaid (Medi-Cal) and SSI impose a strict **$2,000 asset limit** on individuals. Exceeding this cap disqualifies your child from medical services and monthly checks. Slide the bar to simulate your planned savings and see the shielding impact of CalABLE and SNTs.
+              {stateConfig.name || 'California'} Medicaid ({stateConfig.medicaidName || 'Medi-Cal'}) and SSI impose a strict **$2,000 asset limit** on individuals. Exceeding this cap disqualifies your child from medical services and monthly checks. Slide the bar to simulate your planned savings and see the shielding impact of {stateConfig.ableProgram || 'ABLE'} accounts and SNTs.
             </p>
 
             {/* Slider control */}
@@ -282,7 +383,7 @@ ${parentPhone}`;
                 <span>$500</span>
                 <span>$2,000 (Standard Limit)</span>
                 <span>$50,000</span>
-                <span>$100,000 (SSI CalABLE Limit)</span>
+                <span>$100,000 (SSI {stateConfig.ableProgram || 'ABLE'} Limit)</span>
                 <span>$150,000+</span>
               </div>
             </div>
@@ -325,7 +426,7 @@ ${parentPhone}`;
                   <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'flex-start', background: 'rgba(239, 68, 68, 0.05)', padding: '0.85rem', borderRadius: '10px' }}>
                     <AlertTriangle size={18} color="#ef4444" style={{ flexShrink: 0, marginTop: '2px' }} />
                     <div style={{ fontSize: '0.78rem', color: '#b91c1c', lineHeight: 1.4 }}>
-                      <strong>Benefit Disqualification!</strong> Your child exceeds the $2,000 limit by <strong>${(savingsAmount - 2000).toLocaleString()}</strong>. They will lose Medi-Cal eligibility and monthly SSI payments.
+                      <strong>Benefit Disqualification!</strong> Your child exceeds the $2,000 limit by <strong>${(savingsAmount - 2000).toLocaleString()}</strong>. They will lose {stateConfig.medicaidName || 'Medicaid'} eligibility and monthly SSI payments.
                     </div>
                   </div>
                 ) : (
@@ -350,7 +451,7 @@ ${parentPhone}`;
               }}>
                 <div>
                   <div style={{ display: 'flex', justifySelf: 'space-between', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem' }}>
-                    <span style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)' }}>CalABLE or Special Needs Trust</span>
+                    <span style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)' }}>{stateConfig.ableProgram || 'ABLE'} or Special Needs Trust</span>
                     <span style={{ fontSize: '0.75rem', padding: '0.2rem 0.5rem', borderRadius: '4px', background: 'rgba(var(--primary-rgb), 0.1)', color: 'var(--primary-color)', fontWeight: 700 }}>Asset Shielded</span>
                   </div>
                   
@@ -373,14 +474,14 @@ ${parentPhone}`;
                   <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'flex-start', background: 'rgba(245, 158, 11, 0.05)', padding: '0.85rem', borderRadius: '10px' }}>
                     <AlertTriangle size={18} color="#f59e0b" style={{ flexShrink: 0, marginTop: '2px' }} />
                     <div style={{ fontSize: '0.78rem', color: '#b45309', lineHeight: 1.4 }}>
-                      <strong>SSI Suspended, Medi-Cal Safe.</strong> CalABLE shields up to $100,000 for SSI. The excess limits will temporarily suspend SSI checks, but **Medi-Cal remains 100% active**. (Use SNT to shield over $100k).
+                      <strong>SSI Suspended, {stateConfig.medicaidName || 'Medicaid'} Safe.</strong> {stateConfig.ableProgram || 'ABLE'} shields up to $100,000 for SSI. The excess limits will temporarily suspend SSI checks, but **{stateConfig.medicaidName || 'Medicaid'} remains 100% active**. (Use SNT to shield over $100k).
                     </div>
                   </div>
                 ) : (
                   <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'flex-start', background: 'rgba(16, 185, 129, 0.05)', padding: '0.85rem', borderRadius: '10px' }}>
                     <Shield size={18} color="#10b981" style={{ flexShrink: 0, marginTop: '2px' }} />
                     <div style={{ fontSize: '0.78rem', color: '#15803d', lineHeight: 1.4 }}>
-                      <strong>100% Shielded.</strong> Under California CalABLE/SNT code guidelines, these assets are completely ignored. Benefits remain fully protected.
+                      <strong>100% Shielded.</strong> Under {stateConfig.name || 'California'} {stateConfig.ableProgram || 'ABLE'}/SNT guidelines, these assets are completely ignored. Benefits remain fully protected.
                     </div>
                   </div>
                 )}
@@ -549,13 +650,13 @@ ${parentPhone}`;
                   {/* Directory 1: CalABLE */}
                   <div style={{ borderBottom: '1px solid rgba(0,0,0,0.05)', paddingBottom: '1.25rem' }}>
                     <h4 style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '0.4rem', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
-                      <Sparkles size={14} color="var(--primary-color)" /> CalABLE Account Setup Details
+                      <Sparkles size={14} color="var(--primary-color)" /> {stateConfig.ableProgram || 'ABLE'} Account Setup Details
                     </h4>
                     <ul style={{ paddingLeft: '1rem', fontSize: '0.82rem', color: 'var(--text-light)', display: 'flex', flexDirection: 'column', gap: '0.25rem', lineHeight: 1.4 }}>
                       <li><strong>Contribution Cap:</strong> Up to $18,000 annually (or more if the child is employed under ABLE to Work rules).</li>
                       <li><strong>Tax Shield:</strong> Earnings grow 100% tax-free when used for Qualified Disability Expenses (QDE).</li>
                       <li><strong>What is a QDE?</strong> Extremely broad: housing, groceries, transit, therapies, assistive tech, tuition, and funeral costs.</li>
-                      <li><strong>How to open:</strong> Open directly at <a href="https://calable.ca.gov" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)', fontWeight: 600 }}>calable.ca.gov</a> with a minimum $25 deposit.</li>
+                      <li><strong>How to open:</strong> Open directly online via your state&apos;s official {stateConfig.ableProgram || 'ABLE'} portal{selectedState === 'california' && <> at <a href="https://calable.ca.gov" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)', fontWeight: 600 }}>calable.ca.gov</a></>} with a minimum deposit.</li>
                     </ul>
                   </div>
 
@@ -565,9 +666,9 @@ ${parentPhone}`;
                       <Scale size={14} color="var(--primary-color)" /> Third-Party Special Needs Trust Guidelines
                     </h4>
                     <ul style={{ paddingLeft: '1rem', fontSize: '0.82rem', color: 'var(--text-light)', display: 'flex', flexDirection: 'column', gap: '0.25rem', lineHeight: 1.4 }}>
-                      <li><strong>No Savings Limit:</strong> Can hold millions of dollars without affecting SSI or Medi-Cal.</li>
+                      <li><strong>No Savings Limit:</strong> Can hold millions of dollars without affecting SSI or {stateConfig.medicaidName || 'Medicaid'}.</li>
                       <li><strong>Asset Sourcing:</strong> Must be funded by **family assets** (parents&apos; estate, grandparents&apos; will, life insurance). Never fund with the child&apos;s own wages/direct gifts.</li>
-                      <li><strong>Medicaid Reclamation:</strong> Completely immune to state Medi-Cal estate reclamation rules.</li>
+                      <li><strong>Medicaid Reclamation:</strong> Completely immune to state {stateConfig.medicaidName || 'Medicaid'} estate reclamation rules.</li>
                       <li><strong>Trustee Oversight:</strong> Requires appointing a trustee (family member or corporate) to sign off on distributions. Trustee pays vendors directly; funds cannot go directly to the child.</li>
                     </ul>
                   </div>
@@ -591,10 +692,10 @@ ${parentPhone}`;
             {/* A. Institutional Deeming Checklist */}
             <div className="glass-panel" style={{ padding: '2rem' }}>
               <h2 style={{ fontSize: '1.3rem', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem', borderBottom: '1px solid rgba(0,0,0,0.06)', paddingBottom: '0.5rem' }}>
-                <Shield size={20} color="var(--primary-color)" /> Medi-Cal Institutional Deeming Screener
+                <Shield size={20} color="var(--primary-color)" /> {stateConfig.medicaidName || 'Medicaid'} Institutional Deeming Screener
               </h2>
               <p style={{ fontSize: '0.88rem', color: 'var(--text-light)', lineHeight: '1.5', marginBottom: '1.5rem' }}>
-                Institutional Deeming completely bypasses parent income, allowing children with severe developmental delays or medical needs to qualify for full Medi-Cal. Answer the screening questions below:
+                Institutional Deeming completely bypasses parent income, allowing children with severe developmental delays or medical needs to qualify for full {stateConfig.medicaidName || 'Medicaid'}. Answer the screening questions below:
               </p>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
@@ -606,7 +707,7 @@ ${parentPhone}`;
                     checked={isRcClient}
                     onChange={(e) => setIsRcClient(e.target.checked)}
                   />
-                  <span>Is your child currently a client of a California Regional Center?</span>
+                  <span>Is your child currently a client of {selectedState === 'california' ? 'a California Regional Center' : stateConfig.catchmentName || 'a state developmental services agency'}?</span>
                 </label>
 
                 {/* Q2 */}
@@ -660,64 +761,77 @@ ${parentPhone}`;
                     checked={childMediCal}
                     onChange={(e) => setChildMediCal(e.target.checked)}
                   />
-                  <span>Does your child already have active Medi-Cal?</span>
+                  <span>Does your child already have active {stateConfig.medicaidName || 'Medicaid'}?</span>
                 </label>
 
               </div>
             </div>
 
             {/* B. Family Cost Participation & Program Fees Calculator */}
-            <div className="glass-panel" style={{ padding: '2rem' }}>
-              <h2 style={{ fontSize: '1.3rem', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem', borderBottom: '1px solid rgba(0,0,0,0.06)', paddingBottom: '0.5rem' }}>
-                <Coins size={20} color="var(--primary-color)" /> Regional Center Family Fee (FCPP/AFPF) Calculator
-              </h2>
-              <p style={{ fontSize: '0.88rem', color: 'var(--text-light)', lineHeight: '1.5', marginBottom: '1.5rem' }}>
-                California charges families above **400% of the Federal Poverty Level (FPL)** cost-sharing fees for Respite/Camp (FCPP) or an annual $150 program fee (AFPF), unless the child has Medi-Cal. Calculate your fee obligation:
-              </p>
+            {selectedState === 'california' ? (
+              <div className="glass-panel" style={{ padding: '2rem' }}>
+                <h2 style={{ fontSize: '1.3rem', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem', borderBottom: '1px solid rgba(0,0,0,0.06)', paddingBottom: '0.5rem' }}>
+                  <Coins size={20} color="var(--primary-color)" /> Regional Center Family Fee (FCPP/AFPF) Calculator
+                </h2>
+                <p style={{ fontSize: '0.88rem', color: 'var(--text-light)', lineHeight: '1.5', marginBottom: '1.5rem' }}>
+                  California charges families above **400% of the Federal Poverty Level (FPL)** cost-sharing fees for Respite/Camp (FCPP) or an annual $150 program fee (AFPF), unless the child has Medi-Cal. Calculate your fee obligation:
+                </p>
 
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1.25rem' }}>
-                
-                <div className="input-group" style={{ marginBottom: 0 }}>
-                  <label htmlFor="family-size" style={{ fontSize: '0.82rem' }}>Family size (House size)</label>
-                  <input
-                    id="family-size"
-                    type="number"
-                    min="1"
-                    max="10"
-                    value={familySize}
-                    onChange={(e) => setFamilySize(Math.max(1, parseInt(e.target.value) || 1))}
-                    style={{ padding: '0.5rem 0.75rem', fontSize: '0.85rem' }}
-                  />
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1.25rem' }}>
+                  
+                  <div className="input-group" style={{ marginBottom: 0 }}>
+                    <label htmlFor="family-size" style={{ fontSize: '0.82rem' }}>Family size (House size)</label>
+                    <input
+                      id="family-size"
+                      type="number"
+                      min="1"
+                      max="10"
+                      value={familySize}
+                      onChange={(e) => setFamilySize(Math.max(1, parseInt(e.target.value) || 1))}
+                      style={{ padding: '0.5rem 0.75rem', fontSize: '0.85rem' }}
+                    />
+                  </div>
+
+                  <div className="input-group" style={{ marginBottom: 0 }}>
+                    <label htmlFor="gross-income" style={{ fontSize: '0.82rem' }}>Gross annual income</label>
+                    <input
+                      id="gross-income"
+                      type="number"
+                      min="0"
+                      step="5000"
+                      value={grossIncome}
+                      onChange={(e) => setGrossIncome(Math.max(0, parseInt(e.target.value) || 0))}
+                      style={{ padding: '0.5rem 0.75rem', fontSize: '0.85rem' }}
+                    />
+                  </div>
+
+                  <div className="input-group" style={{ marginBottom: 0 }}>
+                    <label htmlFor="rc-children" style={{ fontSize: '0.82rem' }}>Children receiving RC services</label>
+                    <input
+                      id="rc-children"
+                      type="number"
+                      min="1"
+                      max="5"
+                      value={rcChildren}
+                      onChange={(e) => setRcChildren(Math.max(1, parseInt(e.target.value) || 1))}
+                      style={{ padding: '0.5rem 0.75rem', fontSize: '0.85rem' }}
+                    />
+                  </div>
+
                 </div>
-
-                <div className="input-group" style={{ marginBottom: 0 }}>
-                  <label htmlFor="gross-income" style={{ fontSize: '0.82rem' }}>Gross annual income</label>
-                  <input
-                    id="gross-income"
-                    type="number"
-                    min="0"
-                    step="5000"
-                    value={grossIncome}
-                    onChange={(e) => setGrossIncome(Math.max(0, parseInt(e.target.value) || 0))}
-                    style={{ padding: '0.5rem 0.75rem', fontSize: '0.85rem' }}
-                  />
-                </div>
-
-                <div className="input-group" style={{ marginBottom: 0 }}>
-                  <label htmlFor="rc-children" style={{ fontSize: '0.82rem' }}>Children receiving RC services</label>
-                  <input
-                    id="rc-children"
-                    type="number"
-                    min="1"
-                    max="5"
-                    value={rcChildren}
-                    onChange={(e) => setRcChildren(Math.max(1, parseInt(e.target.value) || 1))}
-                    style={{ padding: '0.5rem 0.75rem', fontSize: '0.85rem' }}
-                  />
-                </div>
-
               </div>
-            </div>
+            ) : (
+              <div className="glass-panel" style={{ padding: '2rem' }}>
+                <h2 style={{ fontSize: '1.3rem', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem', borderBottom: '1px solid rgba(0,0,0,0.06)', paddingBottom: '0.5rem' }}>
+                  <Coins size={20} color="var(--primary-color)" /> {stateConfig.name || 'State'} Medicaid Cost Sharing & Premiums
+                </h2>
+                <p style={{ fontSize: '0.88rem', color: 'var(--text-light)', lineHeight: '1.5', margin: 0 }}>
+                  Under federal guidelines, HCBS waivers (Medicaid waivers) are designed to provide services to individuals in their homes rather than institutions. While institutional deeming ignores parental income for *eligibility*, some states utilize a small premium fee system based on parental income to offset costs.
+                  <br /><br />
+                  For {stateConfig.name || 'your state'}, contact the **{stateConfig.ddAgency || 'developmental services agency'}** or **{stateConfig.stateMedicaidAgency || 'Medicaid agency'}** to inquire if your child&apos;s matched waivers ({stateConfig.waiverProgram || 'HCBS Waivers'}) have any cost-sharing requirements.
+                </p>
+              </div>
+            )}
 
             {/* C. Appeal Coordinator Letter Builder */}
             {isRcClient && majorLimitations >= 3 && (
@@ -734,7 +848,7 @@ ${parentPhone}`;
                 </div>
 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', background: 'rgba(0,0,0,0.02)', padding: '1.25rem', borderRadius: '12px', border: '1px solid rgba(0,0,0,0.05)', fontSize: '0.88rem', color: 'var(--text-main)', lineHeight: '1.5' }}>
-                  <div><strong>Subject:</strong> Request for Medicaid Waiver (Institutional Deeming) Enrollment</div>
+                  <div><strong>Subject:</strong> Request for {stateConfig.medicaidName || 'Medicaid'} Waiver (Institutional Deeming) Enrollment</div>
                   <div style={{ whiteSpace: 'pre-wrap', fontStyle: 'italic', fontSize: '0.82rem', color: '#555' }}>
                     {compileDeemingLetter().split('\n\n').slice(1).join('\n\n')}
                   </div>
@@ -766,54 +880,79 @@ ${parentPhone}`;
             </div>
 
             {/* B. Co-Pay Output */}
-            <div className="glass-panel" style={{ padding: '1.5rem' }}>
-              <span style={{ fontSize: '0.72rem', fontWeight: 700, textTransform: 'uppercase', color: 'var(--text-light)', letterSpacing: '0.04em' }}>
-                Fee Assessment
-              </span>
-              <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginTop: '0.25rem', marginBottom: '0.75rem' }}>
-                RC Fee Share Status
-              </h3>
+            {selectedState === 'california' ? (
+              <div className="glass-panel" style={{ padding: '1.5rem' }}>
+                <span style={{ fontSize: '0.72rem', fontWeight: 700, textTransform: 'uppercase', color: 'var(--text-light)', letterSpacing: '0.04em' }}>
+                  Fee Assessment
+                </span>
+                <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginTop: '0.25rem', marginBottom: '0.75rem' }}>
+                  RC Fee Share Status
+                </h3>
 
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.82rem' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid rgba(0,0,0,0.05)', paddingBottom: '0.25rem' }}>
-                  <span>Income FPL Ratio:</span>
-                  <strong>{fplInfo.fplRatio}% FPL</strong>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.82rem' }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid rgba(0,0,0,0.05)', paddingBottom: '0.25rem' }}>
+                    <span>Income FPL Ratio:</span>
+                    <strong>{fplInfo.fplRatio}% FPL</strong>
+                  </div>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid rgba(0,0,0,0.05)', paddingBottom: '0.25rem' }}>
+                    <span>400% FPL Cap:</span>
+                    <strong>${fplInfo.threshold400.toLocaleString()}/yr</strong>
+                  </div>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid rgba(0,0,0,0.05)', paddingBottom: '0.25rem' }}>
+                    <span>Annual Fee (AFPF):</span>
+                    <strong style={{ color: fplInfo.afpfFee > 0 ? '#f59e0b' : '#10b981' }}>
+                      {fplInfo.afpfFee > 0 ? `$${fplInfo.afpfFee}/yr` : '$0 (Exempt)'}
+                    </strong>
+                  </div>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '0.25rem' }}>
+                    <span>Respite Co-Pay (FCPP):</span>
+                    <strong style={{ color: fplInfo.copayPct > 0 ? '#f59e0b' : '#10b981' }}>
+                      {fplInfo.copayPct}% Co-pay
+                    </strong>
+                  </div>
                 </div>
-                <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid rgba(0,0,0,0.05)', paddingBottom: '0.25rem' }}>
-                  <span>400% FPL Cap:</span>
-                  <strong>${fplInfo.threshold400.toLocaleString()}/yr</strong>
-                </div>
-                <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid rgba(0,0,0,0.05)', paddingBottom: '0.25rem' }}>
-                  <span>Annual Fee (AFPF):</span>
-                  <strong style={{ color: fplInfo.afpfFee > 0 ? '#f59e0b' : '#10b981' }}>
-                    {fplInfo.afpfFee > 0 ? `$${fplInfo.afpfFee}/yr` : '$0 (Exempt)'}
-                  </strong>
-                </div>
-                <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '0.25rem' }}>
-                  <span>Respite Co-Pay (FCPP):</span>
-                  <strong style={{ color: fplInfo.copayPct > 0 ? '#f59e0b' : '#10b981' }}>
-                    {fplInfo.copayPct}% Co-pay
-                  </strong>
-                </div>
+
+                {fplInfo.isFullyExempt && (
+                  <div style={{ marginTop: '0.75rem', background: 'rgba(16, 185, 129, 0.05)', padding: '0.5rem 0.75rem', borderRadius: '8px', fontSize: '0.75rem', color: '#15803d', display: 'flex', gap: '0.2rem', alignItems: 'center' }}>
+                    <CheckCircle2 size={12} />
+                    <span>Your income is under the cap or child has Medi-Cal. You pay <strong>$0</strong>.</span>
+                  </div>
+                )}
               </div>
-
-              {fplInfo.isFullyExempt && (
-                <div style={{ marginTop: '0.75rem', background: 'rgba(16, 185, 129, 0.05)', padding: '0.5rem 0.75rem', borderRadius: '8px', fontSize: '0.75rem', color: '#15803d', display: 'flex', gap: '0.2rem', alignItems: 'center' }}>
-                  <CheckCircle2 size={12} />
-                  <span>Your income is under the cap or child has Medi-Cal. You pay <strong>$0</strong>.</span>
-                </div>
-              )}
-            </div>
+            ) : (
+              <div className="glass-panel" style={{ padding: '1.5rem' }}>
+                <span style={{ fontSize: '0.72rem', fontWeight: 700, textTransform: 'uppercase', color: 'var(--text-light)', letterSpacing: '0.04em' }}>
+                  Waiver Cost Sharing
+                </span>
+                <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginTop: '0.25rem', marginBottom: '0.75rem' }}>
+                  {stateConfig.name} Medicaid Cost Sharing
+                </h3>
+                <p style={{ fontSize: '0.8rem', lineHeight: '1.4', color: 'var(--text-light)', margin: 0 }}>
+                  For children qualifying via Institutional Deeming (Medicaid waivers), parental income is completely bypassed for eligibility. Most states do not impose sliding-scale premium fees, though some programs (such as TEFRA / Katie Beckett waivers in certain jurisdictions) may include modest monthly premiums based on household income. Contact {stateConfig.stateMedicaidAgency || 'your state Medicaid agency'} to confirm any specific premium guidelines.
+                </p>
+              </div>
+            )}
 
             {/* C. Legal Tip */}
-            <div className="glass-panel" style={{ padding: '1.25rem', fontSize: '0.85rem' }}>
-              <h4 style={{ fontWeight: 700, marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
-                💡 Medi-Cal Co-Pay Shield
-              </h4>
-              <p style={{ lineHeight: '1.4', color: 'var(--text-light)' }}>
-                Under Welfare & Institutions Code § 4783(c), the Family Cost Participation Program co-payments **do not apply** to families of children who have active Medi-Cal. Enrolling in the Institutional Deeming Waiver shields you from all respite co-payments!
-              </p>
-            </div>
+            {selectedState === 'california' ? (
+              <div className="glass-panel" style={{ padding: '1.25rem', fontSize: '0.85rem' }}>
+                <h4 style={{ fontWeight: 700, marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
+                  💡 Medi-Cal Co-Pay Shield
+                </h4>
+                <p style={{ lineHeight: '1.4', color: 'var(--text-light)' }}>
+                  Under Welfare & Institutions Code § 4783(c), the Family Cost Participation Program co-payments **do not apply** to families of children who have active Medi-Cal. Enrolling in the Institutional Deeming Waiver shields you from all respite co-payments!
+                </p>
+              </div>
+            ) : (
+              <div className="glass-panel" style={{ padding: '1.25rem', fontSize: '0.85rem' }}>
+                <h4 style={{ fontWeight: 700, marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
+                  💡 {stateConfig.medicaidName || 'Medicaid'} Waiver Benefit
+                </h4>
+                <p style={{ lineHeight: '1.4', color: 'var(--text-light)', margin: 0 }}>
+                  Enrolling in the {stateConfig.waiverProgram || 'HCBS Medicaid Waiver'} gives your child access to full Medicaid coverage. This acts as a secondary insurance, covering co-pays, deductibles, specialized therapies, diapers, and respite care that private insurances may deny.
+                </p>
+              </div>
+            )}
 
           </div>
 
