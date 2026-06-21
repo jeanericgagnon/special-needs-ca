@@ -16,9 +16,12 @@ import { IEP_ACCOMMODATIONS, SMART_GOAL_TEMPLATES, SMARTGoalTemplate } from '@/l
 import CopyButton from '@/components/copy-button';
 import PrintButton from '@/components/print-button';
 import ShareButton from '@/components/share-button';
+import { stateConfigs } from '@/lib/stateConfigs';
 
 export default function IepGoalsClient() {
   const [activeTab, setActiveTab] = useState<'goals' | 'statement'>('goals');
+  const [selectedState, setSelectedState] = useState<string>('california');
+  const [hydrated, setHydrated] = useState(false);
 
   // Parent Input Statement States
   const [strengths, setStrengths] = useState('Liam has a wonderful sense of humor, loves building with blocks, and is highly motivated by visual rewards.');
@@ -47,6 +50,7 @@ export default function IepGoalsClient() {
     const savedAccs = localStorage.getItem('iep_selected_accommodations');
     const savedGoals = localStorage.getItem('iep_selected_goals');
     const savedName = localStorage.getItem('iep_student_name') || localStorage.getItem('child_name') || localStorage.getItem('funding_child_name') || localStorage.getItem('ca_special_needs_safety_child');
+    const savedState = localStorage.getItem('selected_state');
     
     const savedStrengths = localStorage.getItem('iep_parent_strengths');
     const savedAcademic = localStorage.getItem('iep_parent_academic');
@@ -58,14 +62,23 @@ export default function IepGoalsClient() {
       if (savedAccs) setSelectedAccommodations(JSON.parse(savedAccs));
       if (savedGoals) setSelectedGoals(JSON.parse(savedGoals));
       if (savedName) setStudentName(savedName);
+      if (savedState) setSelectedState(savedState);
       if (savedStrengths) setStrengths(savedStrengths);
       if (savedAcademic) setAcademicConcerns(savedAcademic);
       if (savedSensory) setSensoryConcerns(savedSensory);
       if (savedSocial) setSocialConcerns(savedSocial);
       if (savedVision) setParentVision(savedVision);
+      setHydrated(true);
     }, 0);
     return () => clearTimeout(timer);
   }, []);
+
+  const stateConfig = stateConfigs[selectedState] || stateConfigs['california'];
+
+  const updateSelectedState = (val: string) => {
+    setSelectedState(val);
+    localStorage.setItem('selected_state', val);
+  };
 
   const updateStrengths = (val: string) => { setStrengths(val); localStorage.setItem('iep_parent_strengths', val); };
   const updateAcademic = (val: string) => { setAcademicConcerns(val); localStorage.setItem('iep_parent_academic', val); };
@@ -143,14 +156,20 @@ export default function IepGoalsClient() {
       year: 'numeric', month: 'long', day: 'numeric'
     });
 
+    const isCA = stateConfig.code === 'CA';
+    const stateUpper = stateConfig.name.toUpperCase();
+    const citationText = isCA
+      ? "Under California Education Code Section 56341.1(a)(1), the IEP team is legally mandated to consider the concerns of the parent for enhancing the education of their child. The parent has the absolute right to have their input statement incorporated in full under Section A (Parent Concerns) of the student's IEP document."
+      : `Under federal IDEA law (20 U.S.C. § 1414(d)(3)(A)(ii)) and corresponding ${stateConfig.name} education regulations, the IEP team is legally mandated to consider the concerns of the parent for enhancing the education of their child. The parent has the right to have their input statement incorporated in full under the Parent Concerns section of the student's IEP document.`;
+
     return `PARENT CONCERNS & INPUT STATEMENT FOR THE IEP
 Student Name: ${studentName}
 Date: ${todayStr}
 Submitted By: Parent / Legal Guardian
 
 --------------------------------------------------
-LEGAL CITATION REFERENCE (CALIFORNIA):
-Under California Education Code Section 56341.1(a)(1), the IEP team is legally mandated to consider the concerns of the parent for enhancing the education of their child. The parent has the absolute right to have their input statement incorporated in full under Section A (Parent Concerns) of the student&apos;s IEP document.
+LEGAL CITATION REFERENCE (${stateUpper}):
+${citationText}
 --------------------------------------------------
 
 1. STUDENT STRENGTHS, MOTIVATORS & PERSONAL INTERESTS:
@@ -165,7 +184,7 @@ ${sensoryConcerns || 'Not specified.'}
 4. SOCIAL, EMOTIONAL & PLAY SKILLS:
 ${socialConcerns || 'Not specified.'}
 
-5. PARENTAL VISION FOR STUDENT&apos;S FUTURE & PROGRESS CRITERIA:
+5. PARENTAL VISION FOR STUDENT'S FUTURE & PROGRESS CRITERIA:
 ${parentVision || 'Not specified.'}
 
 Submitted respectfully by,
@@ -242,14 +261,41 @@ Parent / Legal Guardian`;
     <main className="container animate-fade-in" style={{ paddingBottom: '6rem' }}>
       
       {/* Header Banner */}
-      <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
-        <h1 style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+      <div style={{ textAlign: 'center', marginBottom: '2.5rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <h1 style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '0.5rem' }}>
           <Sparkles size={36} color="var(--primary-color)" style={{ verticalAlign: 'middle' }} />
-          IEP Collaboration & Concerns Portal
+          {hydrated ? stateConfig.name : 'California'} IEP Collaboration & Concerns Portal
         </h1>
-        <p style={{ maxWidth: '700px', margin: '1rem auto 0 auto', fontSize: '1.1rem' }}>
+        <p style={{ maxWidth: '700px', margin: '0 auto 1.5rem auto', fontSize: '1.1rem', color: 'var(--text-light)' }}>
           Equip yourself for your next IEP meeting. Generate measurable SMART goals, choose classroom accommodations, or draft a formal Parent Input Statement.
         </p>
+
+        {/* State selector dropdown */}
+        <div style={{ width: '100%', maxWidth: '300px', margin: '0 auto' }} className="no-print">
+          <select
+            value={hydrated ? selectedState : 'california'}
+            onChange={(e) => updateSelectedState(e.target.value)}
+            style={{
+              width: '100%',
+              padding: '0.65rem 1.25rem',
+              fontSize: '0.95rem',
+              fontWeight: 600,
+              borderRadius: '12px',
+              border: '1px solid var(--glass-border)',
+              background: 'white',
+              boxShadow: '0 4px 12px rgba(0, 0, 0, 0.05)',
+              cursor: 'pointer',
+              outline: 'none',
+              textAlign: 'center'
+            }}
+          >
+            {Object.keys(stateConfigs).map((key) => (
+              <option key={key} value={key}>
+                {stateConfigs[key].name}
+              </option>
+            ))}
+          </select>
+        </div>
       </div>
 
       {/* Tabs Switcher */}
@@ -636,10 +682,18 @@ Parent / Legal Guardian`;
             {/* Quick Informational Tip Card */}
             <div className="glass-panel" style={{ padding: '1.25rem', fontSize: '0.85rem' }}>
               <h4 style={{ fontWeight: 700, marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
-                💡 California Parent Tip
+                💡 {stateConfig.name} Parent Tip
               </h4>
               <p style={{ lineHeight: '1.4', color: 'var(--text-light)' }}>
-                Under CA Education Code § 56341.1, you have the legal right to request an IEP team meeting at any time. Once requested in writing, the school has exactly <strong>30 calendar days</strong> (not counting school vacations over 5 days) to hold the meeting.
+                {stateConfig.code === 'CA' ? (
+                  <>
+                    Under CA Education Code § 56341.1, you have the legal right to request an IEP team meeting at any time. Once requested in writing, the school has exactly <strong>30 calendar days</strong> (not counting school vacations over 5 days) to hold the meeting.
+                  </>
+                ) : (
+                  <>
+                    Under federal law and {stateConfig.timelinesCode || `${stateConfig.name} special education guidelines`}, you have the legal right to request an IEP team meeting. Once submitted in writing, school districts generally must hold the meeting in a timely manner (typically within <strong>30 calendar days</strong>).
+                  </>
+                )}
               </p>
             </div>
 
@@ -657,7 +711,7 @@ Parent / Legal Guardian`;
                 Draft Parent Input Concerns
               </h2>
               <p style={{ fontSize: '0.9rem', color: 'var(--text-light)', marginBottom: '1.5rem', lineHeight: '1.5' }}>
-                Drafting your parent concerns in advance ensures they are incorporated in full in Section A (Parent Concerns) of the student&apos;s IEP document. Under California Ed Code § 56341.1, the IEP team must legally consider your input.
+                Drafting your parent concerns in advance ensures they are incorporated in full in the Parent Concerns section of the student&apos;s IEP document. Under {stateConfig.code === 'CA' ? 'California Ed Code § 56341.1' : `federal IDEA guidelines and ${stateConfig.name} law`}, the IEP team must legally consider your input.
               </p>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
@@ -781,14 +835,14 @@ Parent / Legal Guardian`;
               </div>
 
               <div style={{ background: 'rgba(0,0,0,0.02)', padding: '0.75rem', borderRadius: '8px', border: '1px dashed rgba(0,0,0,0.08)', fontSize: '0.78rem', color: 'var(--text-light)', lineHeight: '1.4' }}>
-                <strong>How to use:</strong> Hand the printed report to your coordinator at the start of the IEP meeting and request: &quot;Please append this statement to Section A of my child&apos;s IEP under Parent Concerns.&quot;
+                <strong>How to use:</strong> Hand the printed report to your coordinator at the start of the IEP meeting and request: &quot;Please append this statement to the Parent Concerns section of my child&apos;s IEP.&quot;
               </div>
             </div>
 
             {/* Legal Tip */}
             <div className="glass-panel" style={{ padding: '1.25rem', fontSize: '0.85rem' }}>
               <h4 style={{ fontWeight: 700, marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
-                💡 California Ed Code Tip
+                💡 {stateConfig.name} Ed Code Tip
               </h4>
               <p style={{ lineHeight: '1.4', color: 'var(--text-light)' }}>
                 You have the absolute right to have your comments documented exactly as written. The school district cannot censor, edit, or summarize your written concerns.
