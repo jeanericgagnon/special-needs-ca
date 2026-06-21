@@ -88,6 +88,15 @@ Texas v7 showed that legitimate district pages such as `Special Populations`, `D
 
 not the entire navigation-heavy body text.
 
+### 13. Residual county repair should mine district sitemaps before reopening search fallback
+
+Texas v8 showed that the remaining district-grade education gaps often already had exact district-owned targets published in `sitemap.xml` even when homepage links and bounded path guesses missed them. For a small residual county set, the next truthful low-token step is:
+
+- fetch the district homepage once,
+- fetch the district sitemap once,
+- author the exact special-education, dyslexia, 504, special-programs, or district-document targets surfaced there,
+- and only then decide whether search fallback is still justified.
+
 ## Per-Run Practice
 
 After each significant wave:

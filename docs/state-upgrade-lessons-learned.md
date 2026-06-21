@@ -116,3 +116,7 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Navigation Text Can Create False District-Page Rejections
 *   **Problem:** Texas v7 found valid district-owned pages for `Special Populations`, `Dyslexia`, and related special-education surfaces that were initially rejected because the validator saw unrelated navigation words like `board`, `athletics`, and `calendar`.
 *   **Lesson:** For California-grade district routing, governance-page rejection logic must inspect the page’s evidence header surface first: URL path, title, and headings. Full-body navigation text is too noisy to decide whether a page is truly a governance page or a valid special-education route.
+
+### Sitemap-First Manual Repair Beats Another Search Loop
+*   **Problem:** By Texas v8, the remaining county failures were no longer caused by missing district sites so much as by exact district-owned targets being hidden one layer deeper than homepage heuristics and path guesses could reach.
+*   **Lesson:** In the final county-repair lane, fetch the district sitemap and author exact district-owned targets from it before reopening any search fallback. District sitemaps frequently expose the real `special-education`, `special-programs`, `dyslexia`, `504`, or document endpoints that make the county pass truthfully without another broad crawl.
