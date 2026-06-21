@@ -1,0 +1,9 @@
+{
+  "batch": "batch_31_ohio_repair_v1",
+  "generated_at": "2026-06-21T19:19:31.241Z",
+  "state": "ohio",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "county_local_blocker_code": "official_county_directory_targets_unresolved_after_bounded_live_check",
+  "texas_preserved_complete": true
+}

@@ -72,3 +72,11 @@
 - county_local_disability_resources: Bounded official county directory targets failed: https://jfs.ohio.gov/county/county_directory.pdf => 404; https://jfs.ohio.gov/county/ => 404; https://jfs.ohio.gov/County/County_Directory.stm => 404; https://odjfs.ohio.gov/ => fetch failed; https://jobandfamilyservices.ohio.gov/ => fetch failed
 
 - Ohio remains BLOCKED and not index-safe until every critical family reaches California-grade proof.
+
+## Batch 31 Ohio county blocker refresh
+
+- county_local_disability_resources: Bounded official county directory targets failed: https://jfs.ohio.gov/county/county_directory.pdf => 404; https://jfs.ohio.gov/county/ => 404; https://jfs.ohio.gov/County/County_Directory.stm => 404; https://odjfs.ohio.gov/ => fetch failed; https://jobandfamilyservices.ohio.gov/ => fetch failed; https://jobandfamilyservices.ohio.gov/wps/portal/gov/jfs/ => fetch failed; https://odjfs.ohio.gov/wps/portal/gov/odjfs/ => fetch failed; https://jobandfamilyservices.ohio.gov/county-agencies => fetch failed; https://jfs.ohio.gov/wps/portal/gov/jfs/county-agencies => 404
+- district_or_county_education_routing: queue wording refreshed to keep the live exact-leaf expansion lane as the active next action.
+- No new reusable lesson was promoted from Batch 31; the existing dead-official-directory and fail-closed county-local lessons remain authoritative.
+
+- Ohio remains BLOCKED and not index-safe until every critical family reaches California-grade proof.
