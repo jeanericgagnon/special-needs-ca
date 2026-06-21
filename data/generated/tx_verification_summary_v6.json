@@ -1,0 +1,175 @@
+{
+  "state": "texas",
+  "generated_at": "2026-06-21T04:09:50.740Z",
+  "v5": {
+    "pass_counties": 216,
+    "partial_counties": 38,
+    "blocked_counties": 0
+  },
+  "v6": {
+    "pass_counties": 224,
+    "partial_counties": 30,
+    "blocked_counties": 0
+  },
+  "attempted_partial_counties": 38,
+  "repaired_to_pass": 8,
+  "still_partial": 30,
+  "partial_reasons": [
+    {
+      "county_slug": "andrews-tx",
+      "reason": "weak_student_services_only",
+      "category": "weak_student_services_only"
+    },
+    {
+      "county_slug": "aransas-tx",
+      "reason": "search_fallback_exhausted",
+      "category": "search_fallback_exhausted"
+    },
+    {
+      "county_slug": "coke-tx",
+      "reason": "search_fallback_exhausted",
+      "category": "search_fallback_exhausted"
+    },
+    {
+      "county_slug": "collingsworth-tx",
+      "reason": "search_fallback_exhausted",
+      "category": "search_fallback_exhausted"
+    },
+    {
+      "county_slug": "concho-tx",
+      "reason": "search_fallback_exhausted",
+      "category": "search_fallback_exhausted"
+    },
+    {
+      "county_slug": "crockett-tx",
+      "reason": "search_fallback_exhausted",
+      "category": "search_fallback_exhausted"
+    },
+    {
+      "county_slug": "dallam-tx",
+      "reason": "search_fallback_exhausted",
+      "category": "search_fallback_exhausted"
+    },
+    {
+      "county_slug": "delta-tx",
+      "reason": "search_fallback_exhausted",
+      "category": "search_fallback_exhausted"
+    },
+    {
+      "county_slug": "donley-tx",
+      "reason": "search_fallback_exhausted",
+      "category": "search_fallback_exhausted"
+    },
+    {
+      "county_slug": "duval-tx",
+      "reason": "search_fallback_exhausted",
+      "category": "search_fallback_exhausted"
+    },
+    {
+      "county_slug": "floyd-tx",
+      "reason": "search_fallback_exhausted",
+      "category": "search_fallback_exhausted"
+    },
+    {
+      "county_slug": "franklin-tx",
+      "reason": "search_fallback_exhausted",
+      "category": "search_fallback_exhausted"
+    },
+    {
+      "county_slug": "gaines-tx",
+      "reason": "search_fallback_exhausted",
+      "category": "search_fallback_exhausted"
+    },
+    {
+      "county_slug": "hamilton-tx",
+      "reason": "search_fallback_exhausted",
+      "category": "search_fallback_exhausted"
+    },
+    {
+      "county_slug": "hansford-tx",
+      "reason": "search_fallback_exhausted",
+      "category": "search_fallback_exhausted"
+    },
+    {
+      "county_slug": "jim-wells-tx",
+      "reason": "search_fallback_exhausted",
+      "category": "search_fallback_exhausted"
+    },
+    {
+      "county_slug": "king-tx",
+      "reason": "search_fallback_exhausted",
+      "category": "search_fallback_exhausted"
+    },
+    {
+      "county_slug": "la-salle-tx",
+      "reason": "district_homepage_broken",
+      "category": "district_homepage_broken"
+    },
+    {
+      "county_slug": "llano-tx",
+      "reason": "search_fallback_exhausted",
+      "category": "search_fallback_exhausted"
+    },
+    {
+      "county_slug": "loving-tx",
+      "reason": "district_homepage_broken",
+      "category": "district_homepage_broken"
+    },
+    {
+      "county_slug": "maverick-tx",
+      "reason": "district_homepage_broken",
+      "category": "district_homepage_broken"
+    },
+    {
+      "county_slug": "mcmullen-tx",
+      "reason": "search_fallback_exhausted",
+      "category": "search_fallback_exhausted"
+    },
+    {
+      "county_slug": "menard-tx",
+      "reason": "search_fallback_exhausted",
+      "category": "search_fallback_exhausted"
+    },
+    {
+      "county_slug": "moore-tx",
+      "reason": "search_fallback_exhausted",
+      "category": "search_fallback_exhausted"
+    },
+    {
+      "county_slug": "pecos-tx",
+      "reason": "search_fallback_exhausted",
+      "category": "search_fallback_exhausted"
+    },
+    {
+      "county_slug": "sabine-tx",
+      "reason": "search_fallback_exhausted",
+      "category": "search_fallback_exhausted"
+    },
+    {
+      "county_slug": "shackelford-tx",
+      "reason": "district_homepage_broken",
+      "category": "district_homepage_broken"
+    },
+    {
+      "county_slug": "stonewall-tx",
+      "reason": "search_fallback_exhausted",
+      "category": "search_fallback_exhausted"
+    },
+    {
+      "county_slug": "washington-tx",
+      "reason": "search_fallback_exhausted",
+      "category": "search_fallback_exhausted"
+    },
+    {
+      "county_slug": "winkler-tx",
+      "reason": "search_fallback_exhausted",
+      "category": "search_fallback_exhausted"
+    }
+  ],
+  "top_failure_categories": {
+    "weak_student_services_only": 1,
+    "search_fallback_exhausted": 25,
+    "district_homepage_broken": 4
+  },
+  "index_safe": false
+}
