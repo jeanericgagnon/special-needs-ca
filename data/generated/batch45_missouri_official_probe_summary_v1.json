@@ -1,0 +1,86 @@
+{
+  "medicaidHealthcare": {
+    "url": "https://mydss.mo.gov/healthcare",
+    "finalUrl": "https://mydss.mo.gov/healthcare",
+    "status": 200,
+    "contentType": "text/html; charset=UTF-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned the exact Missouri DSS Healthcare leaf with title \"Healthcare | mydss.mo.gov\" and H1 \"Healthcare.\""
+  },
+  "medicaidRenewals": {
+    "url": "https://mydss.mo.gov/renew",
+    "finalUrl": "https://mydss.mo.gov/renew",
+    "status": 200,
+    "contentType": "text/html; charset=UTF-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned the exact Missouri DSS renewals leaf with title \"Medicaid Annual Renewals | mydss.mo.gov\" and H1 \"Medicaid Annual Renewals.\""
+  },
+  "ddEligibility": {
+    "url": "https://dmh.mo.gov/dev-disabilities/regional-offices/eligibility",
+    "finalUrl": "https://dmh.mo.gov/dev-disabilities/regional-offices/eligibility",
+    "status": 200,
+    "contentType": "text/html; charset=UTF-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned the exact Missouri DMH eligibility leaf with title \"Eligibility Determination | dmh.mo.gov\" and H1 \"Eligibility Determination.\""
+  },
+  "ddWaiverEnrollment": {
+    "url": "https://dmh.mo.gov/dev-disabilities/waiver-enrollment",
+    "finalUrl": "https://dmh.mo.gov/dev-disabilities/waiver-enrollment",
+    "status": 200,
+    "contentType": "text/html; charset=UTF-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned the exact Missouri DMH waiver leaf with title \"HCBS Waiver Enrollment Information | dmh.mo.gov\" and H1 \"HCBS Waiver Enrollment Information.\""
+  },
+  "ddWaiverPrograms": {
+    "url": "https://dmh.mo.gov/dev-disabilities/programs/waiver",
+    "finalUrl": "https://dmh.mo.gov/dev-disabilities/programs/waiver",
+    "status": 200,
+    "contentType": "text/html; charset=UTF-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned the exact Missouri DMH waiver program leaf with title \"Home & Community Based Waivers | dmh.mo.gov\" and H1 \"Home & Community Based Waivers.\""
+  },
+  "ddRegionalOffices": {
+    "url": "https://dmh.mo.gov/dev-disabilities/regional-offices",
+    "finalUrl": "https://dmh.mo.gov/dev-disabilities/regional-offices",
+    "status": 200,
+    "contentType": "text/html; charset=UTF-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned the exact Missouri DMH regional-office map with H1 \"Map of Regional Offices\" and fetched body text \"For Regional Information Select a County\", plus office names in the rendered HTML."
+  },
+  "specialEducation": {
+    "url": "https://dese.mo.gov/special-education",
+    "finalUrl": "https://dese.mo.gov/special-education",
+    "status": 200,
+    "contentType": "text/html; charset=UTF-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned the exact DESE special-education leaf with title \"The Office of Special Education | Missouri Department of Elementary and Secondary Education\" and H1 \"The Office of Special Education.\""
+  },
+  "vrEmploymentServices": {
+    "url": "https://dmh.mo.gov/about/employment-services",
+    "finalUrl": "https://dmh.mo.gov/about/employment-services",
+    "status": 200,
+    "contentType": "text/html; charset=UTF-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned \"Employment Services | dmh.mo.gov\", but this is a generic DMH employment-services page and does not prove statewide vocational rehabilitation or Pre-ETS routing."
+  },
+  "legacyDdRoot": {
+    "url": "https://dhhs.missouri.gov/dd",
+    "finalUrl": "",
+    "status": 0,
+    "contentType": "",
+    "evidence": "Reviewed 2026-06-21 live probe failed DNS resolution for dhhs.missouri.gov/dd, so the old packet DD root is dead."
+  },
+  "legacyEarlyInterventionRoot": {
+    "url": "https://dhhs.missouri.gov/earlystart",
+    "finalUrl": "",
+    "status": 0,
+    "contentType": "",
+    "evidence": "Reviewed 2026-06-21 live probe failed DNS resolution for dhhs.missouri.gov/earlystart, so the old packet early-intervention root is dead."
+  },
+  "ptiBlocked": {
+    "url": "https://ptimpact.org/",
+    "finalUrl": "https://www.missouriparentsact.org/",
+    "status": 403,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-20 low-token fetch followed ptimpact.org to missouriparentsact.org and received HTTP 403, so the exact statewide PTI candidate could not be verified from fetched first-party evidence."
+  },
+  "desePartCGuess": {
+    "url": "https://dese.mo.gov/childhood/first-steps",
+    "finalUrl": "https://dese.mo.gov/childhood/first-steps",
+    "status": 404,
+    "contentType": "text/html; charset=UTF-8",
+    "evidence": "Reviewed 2026-06-21 bounded DESE repair pass did not surface a reviewed Part C / First Steps leaf, and the guessed DESE First Steps path returned HTTP 404."
+  }
+}
