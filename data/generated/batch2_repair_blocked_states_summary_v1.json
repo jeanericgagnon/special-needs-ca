@@ -1,0 +1,43 @@
+{
+  "batch": "batch_2_repair_blocked_states_v1",
+  "generated_at": "2026-06-21T16:45:34.229Z",
+  "states": [
+    {
+      "state": "georgia",
+      "classification": "BLOCKED",
+      "index_safe": false,
+      "completeness_pct": 50,
+      "primary_gap_reason": "generic_or_statewide_evidence_used_where_local_required",
+      "critical_gap_families": [
+        "developmental_disability_idd_authority",
+        "district_or_county_education_routing",
+        "county_local_disability_resources"
+      ]
+    },
+    {
+      "state": "ohio",
+      "classification": "BLOCKED",
+      "index_safe": false,
+      "completeness_pct": 50,
+      "primary_gap_reason": "generic_or_statewide_evidence_used_where_local_required",
+      "critical_gap_families": [
+        "district_or_county_education_routing",
+        "county_local_disability_resources"
+      ]
+    },
+    {
+      "state": "new-york",
+      "classification": "BLOCKED",
+      "index_safe": false,
+      "completeness_pct": 50,
+      "primary_gap_reason": "generic_or_statewide_evidence_used_where_local_required",
+      "critical_gap_families": [
+        "district_or_county_education_routing",
+        "county_local_disability_resources"
+      ]
+    }
+  ],
+  "complete_states": [],
+  "generated_all_state_v3": false,
+  "texas_preserved_complete": true
+}
