@@ -7,15 +7,14 @@
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 67,
-  "completeness_pct": 83,
-  "strong_critical_families": 10,
-  "weak_critical_families": 2,
+  "completeness_pct": 91,
+  "strong_critical_families": 11,
+  "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "bounded_official_leaf_packets_exhausted_without_county_grade_closure",
+  "primary_gap_reason": "official_family_resource_center_locator_partial_county_coverage",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
-    "district_or_county_education_routing",
     "county_local_disability_resources"
   ],
   "major_gap_families": [],
@@ -42,16 +41,11 @@
   ],
   "final_blockers": [
     {
-      "family": "district_or_county_education_routing",
-      "failure_code": "bounded_official_district_leaf_packet_exhausted_before_county_grade_coverage",
-      "evidence": "Verified exact leaf targets remain limited to 12 reviewed district-owned leaves across 8 bounded Florida packet roots (fldoe.org, bakerk12.org, bay.k12.fl.us, bradfordschools.org, yourcharlotteschools.net, citrusschools.org, myoneclay.net, collierschools.com); this does not truthfully prove county-grade district routing statewide.",
-      "next_action": "hold_blocked_until_new_exact_district_targets_are_authored"
-    },
-    {
       "family": "county_local_disability_resources",
-      "failure_code": "official_local_service_center_locator_missing_after_same_domain_repair",
-      "evidence": "The legacy ACCESS local service center map now 404s, and bounded same-domain repair only surfaced community-partner search and a statewide customer service center, not a county-grade official locator.",
-      "next_action": "hold_blocked_until_official_county_locator_is_restored_or_new_official_root_is_authored"
+      "severity": "critical",
+      "failure_code": "official_family_resource_center_locator_partial_county_coverage",
+      "evidence": "The live official Family Resource Center locator and providers.csv now replace the dead legacy ACCESS map, but they only preserve reviewed county-grade office coverage for 34 of Florida’s 67 counties.",
+      "next_action": "hold_blocked_until_remaining_33_counties_gain_reviewed_official_family_resource_center_or_equivalent_office_rows"
     }
   ]
 }

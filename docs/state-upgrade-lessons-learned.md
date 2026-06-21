@@ -201,6 +201,10 @@ This document captures key technical, data modeling, and procedural lessons lear
 *   **Problem:** Pennsylvania’s IU19 blocker looked final only because the packet had stopped at the unresolved regional root, while live district-owned leaves still existed in the three affected counties on Scranton, Susquehanna Community, and Wallenpaupack domains.
 *   **Lesson:** Before preserving a shared-root blocker, run one bounded district-owned repair pass across the affected counties themselves. If reviewed county-specific district leaves exist, upgrade the family from those exact leaves and retire the stale regional-root blocker instead of keeping the whole state blocked.
 
+### Replatformed Official Map Pages Can Hide Structured Data Feeds
+*   **Problem:** Florida’s legacy ACCESS local-office map was dead, but the replatformed DCF benefits page still linked to a live official Family Resource Center experience whose county storefront data lived in a same-domain `providers.csv` feed rather than in the old static map URL.
+*   **Lesson:** When an official locator page dies, inspect the live replacement page source for same-domain CSV, JSON, or county accordion data before preserving a missing-locator blocker. Replatformed official experiences may still carry truthful structured coverage even when the legacy root is gone.
+
 ### Official Replatform Redirects Must Refresh The Reviewed Authority Domain
 *   **Problem:** New Mexico’s low-token role queue rejected live official HCA pages as `wrong_domain_after_fetch` because the reviewed allowlist and packet still expected the retired `nmhealth.org` or `hsd.state.nm.us` roots, even when the official source had moved to `hca.nm.gov`.
 *   **Lesson:** When a reviewed official state source redirects to a new cabinet or replatform domain on the same state authority, refresh the packet’s reviewed authority domain before calling the role rejected. A stale allowlist is a packet bug, not proof that the official family is gone.

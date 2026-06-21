@@ -1,0 +1,89 @@
+{
+  "state": "florida",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 91,
+  "upgraded_families": [
+    "district_or_county_education_routing"
+  ],
+  "remaining_blockers": [
+    "county_local_disability_resources"
+  ],
+  "evidence_checks": {
+    "districtRouting": {
+      "directoryUrl": "https://www.fdlrs.org/contact-us",
+      "finalUrl": "https://www.fdlrs.org/contact-us",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "countyCoverageCount": 67,
+      "countyCoverageEvidence": "Reviewed 2026-06-21 live probe returned official FDLRS county sections with associate-center routing and the statement that FDLRS supports families and educators in every county and school district in Florida.",
+      "countySamples": [
+        {
+          "county": "Miami-Dade",
+          "center": "FDLRS South",
+          "centerUrl": "https://www.fdlrssouth.org/"
+        },
+        {
+          "county": "Baker",
+          "center": "FDLRS NEFEC",
+          "centerUrl": "https://www.fdlrsnefec.org/"
+        },
+        {
+          "county": "Escambia",
+          "center": "FDLRS Emerald Coast",
+          "centerUrl": "https://www.fdlrsemeraldcoast.org/"
+        },
+        {
+          "county": "Hillsborough",
+          "center": "FDLRS county-mapped routing preserved on the live statewide FDLRS contact page",
+          "centerUrl": "https://www.fdlrs.org/contact-us"
+        }
+      ]
+    },
+    "countyLocal": {
+      "landingUrl": "https://www.myflfamilies.com/food-cash-and-medical",
+      "landingFinalUrl": "https://www.myflfamilies.com/food-cash-and-medical",
+      "landingStatus": 200,
+      "landingEvidence": "Reviewed 2026-06-21 live probe returned the replatformed DCF Food, Cash, and Medical page with a direct official \"Find Local Offices\" link to the Family Resource Center domain.",
+      "locatorUrl": "https://familyresourcecenter.myflfamilies.com/",
+      "locatorFinalUrl": "https://familyresourcecenter.myflfamilies.com/",
+      "locatorStatus": 200,
+      "locatorContentType": "text/html; charset=utf-8",
+      "csvUrl": "https://familyresourcecenter.myflfamilies.com/providers.csv",
+      "csvFinalUrl": "https://familyresourcecenter.myflfamilies.com/providers.csv",
+      "csvStatus": 200,
+      "csvContentType": "application/vnd.ms-excel",
+      "csvRowCount": 39,
+      "countyCoverageCount": 34,
+      "uncoveredCountyCount": 33,
+      "countyCoverageEvidence": "The official Family Resource Center page and same-domain providers.csv preserve structured storefront coverage for 34 Florida counties, but 33 counties still lack reviewed official county-grade office rows in the fetched artifact chain.",
+      "countySamples": [
+        {
+          "county": "Alachua",
+          "office": "Gainesville Service Center",
+          "address": "1000 NE 16th Avenue, Building J, Gainesville, FL 32601"
+        },
+        {
+          "county": "Bay",
+          "office": "Bay County Service Center",
+          "address": "2505 West 15th Street, Panama City, FL 32401"
+        },
+        {
+          "county": "Brevard",
+          "office": "Brevard County ACCESS Application Center",
+          "address": "375 Commerce Parkway, Suite 102, Rockledge, FL 32955"
+        }
+      ],
+      "uncoveredCountySamples": [
+        "Baker",
+        "Bradford",
+        "Calhoun",
+        "Charlotte",
+        "Clay",
+        "DeSoto",
+        "Dixie",
+        "Flagler"
+      ]
+    }
+  }
+}
