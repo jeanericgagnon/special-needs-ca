@@ -97,6 +97,24 @@ Texas v8 showed that the remaining district-grade education gaps often already h
 - author the exact special-education, dyslexia, 504, special-programs, or district-document targets surfaced there,
 - and only then decide whether search fallback is still justified.
 
+### 14. District-owned Google Sites can count, but only with fetched ownership and role evidence
+
+Texas v9 showed that some districts publish their special-services workflow on `sites.google.com/<district-domain>/...`. These can count as district-grade only when both are true:
+
+- the fetched final URL embeds the district-controlled domain, and
+- the fetched page text explicitly proves special-education ownership or routing such as `Child Find`, `Department of Special Services`, `Director of Special Education`, or equivalent parent-facing referral language.
+
+URL plausibility alone is not enough.
+
+### 15. District PDFs need OCR or manual text extraction before they can pass
+
+Texas v9 also showed that some final residual counties only expose district-grade special-education evidence inside scanned PDFs. A district-owned PDF cannot pass merely because the URL looks right or the binary fetch succeeds. The lane must preserve:
+
+- document hash,
+- extracted text or manual-review text,
+- page number when possible,
+- and an evidence snippet showing the special-education contact, referral path, or parent-facing rights text.
+
 ## Per-Run Practice
 
 After each significant wave:

@@ -120,3 +120,11 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Sitemap-First Manual Repair Beats Another Search Loop
 *   **Problem:** By Texas v8, the remaining county failures were no longer caused by missing district sites so much as by exact district-owned targets being hidden one layer deeper than homepage heuristics and path guesses could reach.
 *   **Lesson:** In the final county-repair lane, fetch the district sitemap and author exact district-owned targets from it before reopening any search fallback. District sitemaps frequently expose the real `special-education`, `special-programs`, `dyslexia`, `504`, or document endpoints that make the county pass truthfully without another broad crawl.
+
+### District-Owned Google Sites Need Ownership Plus Content Proof
+*   **Problem:** Some Texas districts publish valid special-services workflows on Google Sites, but a Google host alone is not enough to prove district ownership or routing quality.
+*   **Lesson:** Accept a Google Site for California-grade county routing only when the fetched final URL embeds the district-controlled domain and the fetched text explicitly proves district-owned special-education routing, such as `Child Find`, `Department of Special Services`, or a named special-education contact.
+
+### Scanned District Documents Need OCR Before Promotion
+*   **Problem:** The last residual counties can hide valid special-education routing inside district-owned scanned PDFs, which look promising but are still unproven until the text is extracted.
+*   **Lesson:** Treat district documents as partial until OCR or a deterministic manual-text review preserves the special-education snippet, contact evidence, and document hash. Binary fetch success alone is not California-grade proof.
