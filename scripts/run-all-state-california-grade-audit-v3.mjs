@@ -429,6 +429,7 @@ function generateAllStateCaliforniaGradeAuditV3() {
       packetGenerated: true,
       packetBatch: summary.batch,
       packetPrimaryGapReason: summary.primary_gap_reason,
+      packetRecommendedBatch: summary.recommended_batch,
       familyStatuses: familyStatuses || stateRow.familyStatuses,
     };
   });
@@ -449,6 +450,7 @@ function generateAllStateCaliforniaGradeAuditV3() {
       missing_critical_families: stateV3?.missingCriticalFamilies ?? row.missing_critical_families,
       weak_critical_families: stateV3?.weakCriticalFamilies ?? row.weak_critical_families,
       primary_gap_reason: stateV3?.packetPrimaryGapReason || summaryByState.get(row.state)?.primary_gap_reason || row.primary_gap_reason,
+      recommended_batch: stateV3?.packetRecommendedBatch || summaryByState.get(row.state)?.recommended_batch || row.recommended_batch,
       state_packet_generated: summaryByState.has(row.state),
       repair_lane: (stateV3?.classification || row.classification) === 'COMPLETE' ? 'maintain_truth_only' : 'repair_from_state_packet',
     };

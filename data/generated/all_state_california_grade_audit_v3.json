@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-21T20:29:41.328Z",
+  "generatedAt": "2026-06-21T20:36:36.083Z",
   "stateCount": 50,
   "classifications": {
     "UNSTARTED": 42,
-    "PARTIAL": 3,
-    "BLOCKED": 4,
+    "PARTIAL": 2,
+    "BLOCKED": 5,
     "COMPLETE": 1
   },
   "indexSafeCount": 1,
@@ -85,7 +85,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_7_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "alaska",
@@ -154,7 +155,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_13_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "arizona",
@@ -223,7 +225,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_16_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "arkansas",
@@ -292,7 +295,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_6_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "california",
@@ -361,7 +365,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_1_fast_finish_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_1_fast_finish"
     },
     {
       "stateId": "colorado",
@@ -430,7 +435,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_11_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "connecticut",
@@ -499,7 +505,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_15_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "delaware",
@@ -568,13 +575,14 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_14_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "legacy_or_inventory_only_evidence"
+      "packetPrimaryGapReason": "legacy_or_inventory_only_evidence",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "florida",
       "stateCode": "FL",
       "stateName": "Florida",
-      "classification": "PARTIAL",
+      "classification": "BLOCKED",
       "indexSafe": false,
       "incorrectlyIndexSafe": false,
       "legacyStatusLabel": "READY_FOR_ALLOWLIST",
@@ -626,18 +634,19 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "exact_leaf_targets_verified_partial",
+        "district_or_county_education_routing": "blocked_exact_leaf_repair_exhausted",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "legacy_state_grade"
+        "county_local_disability_resources": "blocked_missing_official_locator"
       },
       "packetGenerated": true,
       "packetBatch": "batch_1_fast_finish_states_v1",
-      "packetPrimaryGapReason": "county_grade_coverage_still_incomplete_after_exact_target_verification"
+      "packetPrimaryGapReason": "bounded_official_leaf_packets_exhausted_without_county_grade_closure",
+      "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {
       "stateId": "georgia",
@@ -706,7 +715,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_2_repair_blocked_states_v1",
-      "packetPrimaryGapReason": "official_county_lookup_table_has_empty_county_cells"
+      "packetPrimaryGapReason": "official_county_lookup_table_has_empty_county_cells",
+      "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {
       "stateId": "hawaii",
@@ -775,7 +785,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_15_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "legacy_or_inventory_only_evidence"
+      "packetPrimaryGapReason": "legacy_or_inventory_only_evidence",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "idaho",
@@ -844,7 +855,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_10_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "illinois",
@@ -923,7 +935,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_3_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "county_grade_coverage_still_incomplete_after_exact_target_verification"
+      "packetPrimaryGapReason": "county_grade_coverage_still_incomplete_after_exact_target_verification",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "indiana",
@@ -992,7 +1005,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_8_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "iowa",
@@ -1061,7 +1075,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_5_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "kansas",
@@ -1130,7 +1145,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_4_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "kentucky",
@@ -1199,7 +1215,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_3_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "louisiana",
@@ -1268,7 +1285,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_7_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "maine",
@@ -1337,7 +1355,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_13_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "maryland",
@@ -1406,7 +1425,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_12_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "massachusetts",
@@ -1475,7 +1495,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_16_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "michigan",
@@ -1544,7 +1565,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_11_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "minnesota",
@@ -1613,7 +1635,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_5_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "mississippi",
@@ -1692,7 +1715,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_5_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "missouri",
@@ -1761,7 +1785,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_4_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "montana",
@@ -1830,7 +1855,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_9_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "nebraska",
@@ -1909,7 +1935,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_4_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "nevada",
@@ -1978,7 +2005,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_13_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "new-hampshire",
@@ -2057,7 +2085,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_12_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "new-jersey",
@@ -2126,7 +2155,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_17_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "new-mexico",
@@ -2205,7 +2235,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_3_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "new-york",
@@ -2274,7 +2305,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_2_repair_blocked_states_v1",
-      "packetPrimaryGapReason": "official_county_directory_returns_http_403"
+      "packetPrimaryGapReason": "official_county_directory_returns_http_403",
+      "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {
       "stateId": "north-carolina",
@@ -2343,7 +2375,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_10_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "north-dakota",
@@ -2412,7 +2445,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_9_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "ohio",
@@ -2481,7 +2515,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_2_repair_blocked_states_v1",
-      "packetPrimaryGapReason": "official_county_directory_targets_unresolved_after_bounded_live_check"
+      "packetPrimaryGapReason": "official_county_directory_targets_unresolved_after_bounded_live_check",
+      "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {
       "stateId": "oklahoma",
@@ -2550,7 +2585,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_6_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "oregon",
@@ -2619,7 +2655,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_11_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "pennsylvania",
@@ -2688,7 +2725,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_1_fast_finish_states_v1",
-      "packetPrimaryGapReason": "remaining_counties_lack_exact_iu_or_district_education_leaf_after_bounded_official_repair"
+      "packetPrimaryGapReason": "remaining_counties_lack_exact_iu_or_district_education_leaf_after_bounded_official_repair",
+      "packetRecommendedBatch": "batch_1_fast_finish"
     },
     {
       "stateId": "rhode-island",
@@ -2757,7 +2795,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_16_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "south-carolina",
@@ -2826,7 +2865,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_10_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "south-dakota",
@@ -2895,7 +2935,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_7_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "tennessee",
@@ -2964,7 +3005,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_8_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "texas",
@@ -3033,7 +3075,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "texas_complete_state_packet_v1",
-      "packetPrimaryGapReason": "none"
+      "packetPrimaryGapReason": "none",
+      "packetRecommendedBatch": "complete_maintain"
     },
     {
       "stateId": "utah",
@@ -3102,7 +3145,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_12_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "vermont",
@@ -3171,7 +3215,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_14_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "virginia",
@@ -3240,7 +3285,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_8_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "washington",
@@ -3309,7 +3355,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_15_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "west-virginia",
@@ -3378,7 +3425,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_9_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "wisconsin",
@@ -3447,7 +3495,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_6_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "wyoming",
@@ -3516,7 +3565,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_14_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "legacy_or_inventory_only_evidence"
+      "packetPrimaryGapReason": "legacy_or_inventory_only_evidence",
+      "packetRecommendedBatch": "batch_3_procedure_hardening"
     }
   ],
   "packetCoverageCount": 50,

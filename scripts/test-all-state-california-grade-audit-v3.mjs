@@ -82,6 +82,7 @@ for (const summary of packetSummaries) {
   assert.equal(priorityState.missing_critical_families, summary.missing_critical_families, `${summary.state} priority missing critical count must match packet summary`);
   assert.equal(priorityState.weak_critical_families, summary.weak_critical_families, `${summary.state} priority weak critical count must match packet summary`);
   assert.equal(priorityState.primary_gap_reason, summary.primary_gap_reason, `${summary.state} priority primary gap reason must match packet summary`);
+  assert.equal(priorityState.recommended_batch, summary.recommended_batch, `${summary.state} priority recommended_batch must match packet summary`);
 }
 
 const derivedIncorrectlyIndexSafeStates = auditV3.states.filter((state) => state.incorrectlyIndexSafe).map((state) => state.stateId);

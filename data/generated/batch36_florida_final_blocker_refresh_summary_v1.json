@@ -1,0 +1,12 @@
+{
+  "batch": "batch_36_florida_final_blocker_refresh_v1",
+  "generated_at": "2026-06-21T20:35:50.274Z",
+  "state": "florida",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 83,
+  "education_leaf_count": 12,
+  "education_root_count": 8,
+  "county_local_blocker_code": "official_local_service_center_locator_missing_after_same_domain_repair",
+  "final_blocker_count": 2
+}
