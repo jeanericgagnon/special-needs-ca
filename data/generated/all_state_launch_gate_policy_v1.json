@@ -1,0 +1,28 @@
+{
+  "ruleVersion": "all-state-california-grade-v1",
+  "passRequires": [
+    "official source URL",
+    "final URL after redirects",
+    "fetched_at timestamp",
+    "authority level",
+    "evidence snippet",
+    "evidence terms found",
+    "source type",
+    "confidence reason",
+    "verification rule version"
+  ],
+  "rejectAlways": [
+    "generic national page when state-specific source required",
+    "statewide page where county/district evidence required",
+    "county/district page with no role-specific evidence",
+    "search results",
+    "social media as final source",
+    "dead page",
+    "unparsed pdf",
+    "stale redirect without authority chain",
+    "weak keyword-only match",
+    "generic homepage",
+    "old repo hint that conflicts with current official source"
+  ],
+  "indexSafetyRule": "index_safe may only be true when every critical family is complete and county/district-grade requirements are satisfied."
+}
