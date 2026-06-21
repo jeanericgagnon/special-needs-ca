@@ -3,7 +3,7 @@
   "state_code": "PA",
   "state_name": "Pennsylvania",
   "batch": "batch_1_fast_finish_states_v1",
-  "classification": "PARTIAL",
+  "classification": "BLOCKED",
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 67,
@@ -12,8 +12,8 @@
   "weak_critical_families": 1,
   "missing_critical_families": 1,
   "total_critical_families": 12,
-  "primary_gap_reason": "remaining_counties_lack_exact_iu_or_district_education_leaf_after_bounded_official_repair",
-  "recommended_batch": "batch_1_fast_finish",
+  "primary_gap_reason": "exact_leaf_packet_exhausted_for_iu19_and_no_reviewed_statewide_legal_aid_source",
+  "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "district_or_county_education_routing"
   ],
@@ -39,5 +39,21 @@
     "Preserve noindex until all critical families are verified",
     "District-grade routing must use direct local or district-owned evidence, not generic or statewide fallback",
     "Legacy/inventory-only evidence does not satisfy California-grade completeness"
+  ],
+  "final_blockers": [
+    {
+      "family": "district_or_county_education_routing",
+      "severity": "critical",
+      "failure_code": "iu19_root_unresolved_after_bounded_exact_leaf_repair",
+      "evidence": "Verified official IU/district exact leaves cover 64/67 counties. Remaining unresolved counties Lackawanna, Susquehanna, and Wayne all depend on the same unresolved Northeastern Educational Intermediate Unit 19 root after bounded official repair.",
+      "next_action": "hold_blocked_until_reviewed_iu19_exact_leaf_is_verified"
+    },
+    {
+      "family": "legal_aid",
+      "severity": "major",
+      "failure_code": "authored_lsc_target_not_yet_replaced_with_reviewed_pennsylvania_source",
+      "evidence": "Pennsylvania legal-aid planning currently stops at the authored authoritative target https://www.lsc.gov/about-lsc/what-legal-aid/get-legal-help; no reviewed Pennsylvania statewide legal-aid source has been fetched and verified from saved artifacts.",
+      "next_action": "hold_blocked_until_reviewed_pennsylvania_legal_aid_source_is_verified"
+    }
   ]
 }

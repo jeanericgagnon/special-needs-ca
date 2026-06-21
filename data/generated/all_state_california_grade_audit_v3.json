@@ -1,10 +1,9 @@
 {
-  "generatedAt": "2026-06-21T21:27:23.191Z",
+  "generatedAt": "2026-06-21T21:31:03.874Z",
   "stateCount": 50,
   "classifications": {
     "UNSTARTED": 42,
-    "BLOCKED": 6,
-    "PARTIAL": 1,
+    "BLOCKED": 7,
     "COMPLETE": 1
   },
   "indexSafeCount": 1,
@@ -2660,7 +2659,7 @@
       "stateId": "pennsylvania",
       "stateCode": "PA",
       "stateName": "Pennsylvania",
-      "classification": "PARTIAL",
+      "classification": "BLOCKED",
       "indexSafe": false,
       "incorrectlyIndexSafe": false,
       "legacyStatusLabel": "READY_FOR_ALLOWLIST",
@@ -2712,19 +2711,19 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "exact_leaf_targets_verified_partial",
+        "district_or_county_education_routing": "blocked_exact_leaf_repair_exhausted",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
-        "legal_aid": "missing",
+        "legal_aid": "missing_verified_source",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_state_grade"
       },
       "packetGenerated": true,
       "packetBatch": "batch_1_fast_finish_states_v1",
-      "packetPrimaryGapReason": "remaining_counties_lack_exact_iu_or_district_education_leaf_after_bounded_official_repair",
-      "packetRecommendedBatch": "batch_1_fast_finish"
+      "packetPrimaryGapReason": "exact_leaf_packet_exhausted_for_iu19_and_no_reviewed_statewide_legal_aid_source",
+      "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {
       "stateId": "rhode-island",

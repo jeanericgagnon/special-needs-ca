@@ -192,3 +192,7 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Reviewed Source-Pack Evidence Should Repair Stale State Packets Before New Discovery
 *   **Problem:** California’s packet still marked Early Start, VR, P&A, and legal-aid families as weak or missing even though reviewed first-party fetch evidence for those families already existed on disk in the California source-pack outputs.
 *   **Lesson:** Before authoring new targets or reopening discovery, reconcile the state packet against reviewed source-pack fetch artifacts. If authoritative first-party evidence is already fetched and role-aligned, upgrade the packet from that evidence first and reserve new discovery only for the families that still remain blocked after reconciliation.
+
+### One Unresolved Regional Root Can Truthfully Block Multiple Counties At Once
+*   **Problem:** Pennsylvania’s final education gap was not three independent county mysteries. Lackawanna, Susquehanna, and Wayne counties all depended on the same unresolved Northeastern Educational Intermediate Unit 19 root after the bounded exact-leaf packet was exhausted.
+*   **Lesson:** When multiple counties collapse to one unresolved official regional root, ledger the blocker at the shared-root level and final-block the state if no reviewed exact leaf exists. Do not keep a state in `PARTIAL` just because the residual count is small.

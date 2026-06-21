@@ -1,0 +1,25 @@
+{
+  "state": "pennsylvania",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 83,
+  "remaining_blockers": [
+    {
+      "family": "district_or_county_education_routing",
+      "severity": "critical",
+      "failure_code": "iu19_root_unresolved_after_bounded_exact_leaf_repair"
+    },
+    {
+      "family": "legal_aid",
+      "severity": "major",
+      "failure_code": "authored_lsc_target_not_yet_replaced_with_reviewed_pennsylvania_source"
+    }
+  ],
+  "facts": {
+    "educationCoveredCount": 64,
+    "iu19Root": "https://www.neiu19.org/",
+    "legalAidPlannedUrl": "https://www.lsc.gov/about-lsc/what-legal-aid/get-legal-help",
+    "ptiUrl": "https://www.pealcenter.org",
+    "paUrl": "https://www.disabilityrightspa.org"
+  }
+}
