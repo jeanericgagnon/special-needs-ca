@@ -9,8 +9,8 @@
   "county_count": 62,
   "completeness_pct": 50,
   "strong_critical_families": 6,
-  "weak_critical_families": 4,
-  "missing_critical_families": 2,
+  "weak_critical_families": 6,
+  "missing_critical_families": 0,
   "total_critical_families": 12,
   "primary_gap_reason": "official_county_directory_returns_http_403",
   "recommended_batch": "batch_2_repair_blocked",
@@ -42,5 +42,49 @@
     "Preserve noindex until all critical families are verified",
     "District-grade routing must use direct local or district-owned evidence, not generic or statewide fallback",
     "Legacy/inventory-only evidence does not satisfy California-grade completeness"
+  ],
+  "final_blockers": [
+    {
+      "family": "county_local_disability_resources",
+      "severity": "critical",
+      "failure_code": "live_official_ldss_directory_403_without_replacement_locator",
+      "evidence": "Official New York LDSS county directory returned HTTP 403 at https://www.health.ny.gov/health_care/medicaid/ldss.htm during bounded live verification, and no replacement live county-grade official locator is attached to the packet.",
+      "next_action": "hold_blocked_until_live_official_ldss_directory_or_county_owned_locator_is_verified"
+    },
+    {
+      "family": "district_or_county_education_routing",
+      "severity": "critical",
+      "failure_code": "bounded_boces_leaf_packet_exhausted_before_county_grade_coverage",
+      "evidence": "Verified exact leaves remain limited to 3 reviewed BOCES-owned pages; this does not truthfully prove district-grade routing statewide.",
+      "next_action": "hold_blocked_until_new_exact_district_targets_are_authored"
+    },
+    {
+      "family": "vocational_rehabilitation_pre_ets",
+      "severity": "major",
+      "failure_code": "official_acces_vr_target_not_yet_reviewed_verified",
+      "evidence": "Planning target http://www.acces.nysed.gov/vr/ exists, but no reviewed verified ACCES-VR leaf has been fetched into the packet evidence chain.",
+      "next_action": "hold_blocked_until_reviewed_acces_vr_leaf_is_verified"
+    },
+    {
+      "family": "protection_and_advocacy",
+      "severity": "major",
+      "failure_code": "reviewed_drny_source_missing",
+      "evidence": "Planning target https://www.disabilityrightsny.org exists, but no reviewed verified Disability Rights New York source is attached to the packet.",
+      "next_action": "hold_blocked_until_reviewed_drny_source_is_verified"
+    },
+    {
+      "family": "parent_training_information_center",
+      "severity": "major",
+      "failure_code": "reviewed_new_york_pti_source_missing",
+      "evidence": "Planning target https://parentnetworkwny.org exists, but no reviewed verified PTI source is attached to the packet.",
+      "next_action": "hold_blocked_until_reviewed_new_york_pti_source_is_verified"
+    },
+    {
+      "family": "legal_aid",
+      "severity": "major",
+      "failure_code": "authored_lsc_target_not_yet_replaced_with_reviewed_new_york_source",
+      "evidence": "New York legal-aid planning currently stops at the authored authoritative target https://www.lsc.gov/about-lsc/what-legal-aid/get-legal-help; no reviewed New York legal-aid evidence has been fetched and verified from saved artifacts.",
+      "next_action": "hold_blocked_until_reviewed_new_york_legal_aid_source_is_verified"
+    }
   ]
 }

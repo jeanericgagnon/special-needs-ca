@@ -1,0 +1,11 @@
+{
+  "batch": "batch_39_new-york_final_blocker_refresh_v1",
+  "generated_at": "2026-06-21T21:13:54.250Z",
+  "state": "new-york",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 50,
+  "education_leaf_count": 3,
+  "final_blocker_count": 6,
+  "county_directory_url": "https://www.health.ny.gov/health_care/medicaid/ldss.htm"
+}

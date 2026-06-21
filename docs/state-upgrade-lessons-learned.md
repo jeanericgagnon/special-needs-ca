@@ -180,3 +180,7 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Third-Party Data Mirrors Cannot Substitute For Live Official County Directories
 *   **Problem:** Ohio’s county-local packet looked partially covered because legacy county-office rows pointed to a DOI-hosted dataset mirror after the official Ohio JFS county directory and locator roots went dead.
 *   **Lesson:** A third-party archive, open-data mirror, or DOI dataset may preserve research context, but it cannot satisfy California-grade county-local routing once the official county directory fails. County-grade local office proof must come from a live official county directory, locator, or county-owned office page.
+
+### Unrelated Packet Samples Must Not Masquerade As The Designated Statewide Support Family
+*   **Problem:** New York’s packet carried verified nonprofit samples for P&A and PTI slots, but the sample rows pointed to unrelated advocacy organizations and regional parent centers instead of the designated statewide authorities DRNY and Parent Network of WNY.
+*   **Lesson:** A statewide support family only upgrades when the reviewed packet evidence actually matches the designated first-party statewide source. Nearby advocacy or parent-support organizations may be useful, but they cannot satisfy the P&A or PTI gate by association.
