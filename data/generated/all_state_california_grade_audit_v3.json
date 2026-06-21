@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-21T22:01:05.139Z",
+  "generatedAt": "2026-06-21T22:20:34.690Z",
   "stateCount": 50,
   "classifications": {
-    "UNSTARTED": 42,
-    "BLOCKED": 7,
+    "UNSTARTED": 41,
+    "BLOCKED": 8,
     "COMPLETE": 1
   },
   "indexSafeCount": 1,
@@ -2159,7 +2159,7 @@
       "stateId": "new-mexico",
       "stateCode": "NM",
       "stateName": "New Mexico",
-      "classification": "UNSTARTED",
+      "classification": "BLOCKED",
       "indexSafe": false,
       "incorrectlyIndexSafe": false,
       "legacyStatusLabel": "KEEP_GATED (Skeleton)",
@@ -2168,11 +2168,11 @@
       "legacyManualReviewRate": 57.56,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 33,
-      "strongCriticalFamilies": 6,
+      "strongCriticalFamilies": 5,
       "weakCriticalFamilies": 4,
-      "missingCriticalFamilies": 2,
+      "missingCriticalFamilies": 3,
       "totalCriticalFamilies": 12,
-      "completenessPct": 50,
+      "completenessPct": 41,
       "dbMetrics": {
         "state_id": "new-mexico",
         "state_code": "NM",
@@ -2216,24 +2216,24 @@
         "criticalRolesVerifiedPct": 0
       },
       "familyStatuses": {
-        "medicaid_state_health_coverage": "verified_state_grade",
+        "medicaid_state_health_coverage": "blocked_live_medicaid_replacement_not_yet_reviewed",
         "medicaid_waiver_hcbs_disability_services": "verified_state_grade",
         "developmental_disability_idd_authority": "verified_state_grade",
-        "early_intervention_part_c": "verified_state_grade",
+        "early_intervention_part_c": "missing_reviewed_role_aligned_part_c_source",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "legacy_state_grade",
-        "vocational_rehabilitation_pre_ets": "inventory_only",
-        "protection_and_advocacy": "missing",
-        "parent_training_information_center": "inventory_only",
-        "legal_aid": "missing",
+        "district_or_county_education_routing": "blocked_exact_district_or_county_leafs_unverified",
+        "vocational_rehabilitation_pre_ets": "missing_reviewed_vr_or_pre_ets_source",
+        "protection_and_advocacy": "verified_state_grade",
+        "parent_training_information_center": "blocked_reviewed_parent_support_source_lacks_explicit_pti_designation",
+        "legal_aid": "missing_reviewed_statewide_legal_aid_source",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "legacy_state_grade"
+        "county_local_disability_resources": "blocked_generic_or_third_party_local_directory_only"
       },
       "packetGenerated": true,
       "packetBatch": "batch_3_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
-      "packetRecommendedBatch": "batch_3_procedure_hardening"
+      "packetPrimaryGapReason": "stale_state_packet_sources_rejected_and_county_grade_leaf_proof_still_missing",
+      "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {
       "stateId": "new-york",

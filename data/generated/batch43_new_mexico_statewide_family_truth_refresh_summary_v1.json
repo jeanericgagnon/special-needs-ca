@@ -1,0 +1,67 @@
+{
+  "state": "new-mexico",
+  "classification": "BLOCKED",
+  "completeness_pct": 41,
+  "strong_critical_families": 5,
+  "weak_critical_families": 4,
+  "missing_critical_families": 3,
+  "updated_families": [
+    {
+      "family": "medicaid_state_health_coverage",
+      "family_status": "blocked_live_medicaid_replacement_not_yet_reviewed",
+      "sample_count": 0
+    },
+    {
+      "family": "medicaid_waiver_hcbs_disability_services",
+      "family_status": "verified_state_grade",
+      "sample_count": 1
+    },
+    {
+      "family": "developmental_disability_idd_authority",
+      "family_status": "verified_state_grade",
+      "sample_count": 1
+    },
+    {
+      "family": "early_intervention_part_c",
+      "family_status": "missing_reviewed_role_aligned_part_c_source",
+      "sample_count": 0
+    },
+    {
+      "family": "special_education_idea_part_b",
+      "family_status": "verified_state_grade",
+      "sample_count": 1
+    },
+    {
+      "family": "district_or_county_education_routing",
+      "family_status": "blocked_exact_district_or_county_leafs_unverified",
+      "sample_count": 0
+    },
+    {
+      "family": "protection_and_advocacy",
+      "family_status": "verified_state_grade",
+      "sample_count": 1
+    },
+    {
+      "family": "parent_training_information_center",
+      "family_status": "blocked_reviewed_parent_support_source_lacks_explicit_pti_designation",
+      "sample_count": 1
+    },
+    {
+      "family": "able_program",
+      "family_status": "verified_state_grade",
+      "sample_count": 1
+    },
+    {
+      "family": "ssi_ssa_federal_reference",
+      "family_status": "verified_state_grade",
+      "sample_count": 1
+    }
+  ],
+  "evidence_checks": {
+    "drnmAcceptedRecordId": "new-mexico|nonprofit_support|00005-new-mexico-nonprofit-support-drnm-org",
+    "drnmAcceptedFinalUrl": "https://drnm.org/",
+    "medicaid404Url": "https://www.hsd.state.nm.us/mad",
+    "pedTimeoutUrl": "https://webnew.ped.state.nm.us/bureaus/special-education/",
+    "ddRedirectUrl": "https://www.hca.nm.gov/developmental-disabilities-supports-division/"
+  }
+}
