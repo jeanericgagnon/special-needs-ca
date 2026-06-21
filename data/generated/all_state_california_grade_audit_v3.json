@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T17:54:47.970Z",
+  "generatedAt": "2026-06-21T18:26:52.276Z",
   "stateCount": 50,
   "classifications": {
     "UNSTARTED": 42,
@@ -585,11 +585,11 @@
       "legacyManualReviewRate": 0,
       "legacyAllowlistedCountyCount": 14,
       "countyCount": 67,
-      "strongCriticalFamilies": 5,
-      "weakCriticalFamilies": 5,
+      "strongCriticalFamilies": 6,
+      "weakCriticalFamilies": 4,
       "missingCriticalFamilies": 2,
       "totalCriticalFamilies": 12,
-      "completenessPct": 41,
+      "completenessPct": 50,
       "dbMetrics": {
         "state_id": "florida",
         "state_code": "FL",
@@ -2636,11 +2636,11 @@
       "legacyManualReviewRate": 14.72,
       "legacyAllowlistedCountyCount": 8,
       "countyCount": 67,
-      "strongCriticalFamilies": 6,
-      "weakCriticalFamilies": 4,
+      "strongCriticalFamilies": 7,
+      "weakCriticalFamilies": 3,
       "missingCriticalFamilies": 2,
       "totalCriticalFamilies": 12,
-      "completenessPct": 50,
+      "completenessPct": 58,
       "dbMetrics": {
         "state_id": "pennsylvania",
         "state_code": "PA",

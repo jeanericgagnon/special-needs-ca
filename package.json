@@ -325,6 +325,8 @@
     "test:batch21-statewide-mapping-repair-v1": "node scripts/test-batch21-statewide-mapping-repair-v1.mjs",
     "run:batch22-pennsylvania-exact-repair-v1": "node scripts/run-batch22-pennsylvania-exact-repair-v1.mjs",
     "test:batch22-pennsylvania-exact-repair-v1": "node scripts/test-batch22-pennsylvania-exact-repair-v1.mjs",
+    "run:batch23-florida-exact-repair-v1": "node scripts/run-batch23-florida-exact-repair-v1.mjs",
+    "test:batch23-florida-exact-repair-v1": "node scripts/test-batch23-florida-exact-repair-v1.mjs",
     "test:source-acquisition-autopilot": "node scripts/test-source-acquisition-autopilot.mjs",
     "test:source-acquisition-wave-diversity": "node scripts/test-source-acquisition-wave-diversity.mjs",
     "test:source-acquisition-completion-plan": "node scripts/test-source-acquisition-completion-plan.mjs",

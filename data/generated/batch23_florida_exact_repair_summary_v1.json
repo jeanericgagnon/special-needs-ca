@@ -1,0 +1,11 @@
+{
+  "batch": "batch_23_florida_exact_repair_v1",
+  "generated_at": "2026-06-21T18:25:34.939Z",
+  "state": "florida",
+  "classification": "PARTIAL",
+  "index_safe": false,
+  "special_education_repaired": true,
+  "district_exact_leaves_verified": 12,
+  "county_local_disability_resources_repaired": false,
+  "texas_preserved_complete": true
+}

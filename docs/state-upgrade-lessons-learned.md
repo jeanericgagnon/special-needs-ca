@@ -156,3 +156,7 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Live Official Paths Must Replace Legacy Packet URLs Before Rejection
 *   **Problem:** Pennsylvania’s old `dhs.pa.gov` packet hints looked dead because they now resolve to generic agency shells, even though the live `pa.gov` contact pages still expose the exact county MH/ID and CAO resources we need.
 *   **Lesson:** When a packet URL redirects to a generic agency landing, do one bounded live-path repair on the same official domain before classifying the family as blocked. If the live replacement page preserves the exact role in the title and fetched body, repair the packet and continue; do not treat the stale legacy path itself as proof that the source family is gone.
+
+### Portal And Community-Partner Replacements Cannot Substitute For County-Grade Local Office Proof
+*   **Problem:** Florida’s legacy ACCESS local service-center map now returns `404`, and bounded same-domain repair on the official DCF site only exposes a statewide customer-service center plus community-partner search, not a real county-grade office locator.
+*   **Lesson:** When an official county-office locator disappears, do not silently replace it with a portal login, statewide call center, or community-partner directory. Keep the county-local family blocked until the official site again exposes county-grade office or locator evidence.

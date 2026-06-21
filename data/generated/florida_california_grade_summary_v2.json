@@ -7,9 +7,9 @@
   "index_safe": false,
   "incorrectly_index_safe": true,
   "county_count": 67,
-  "completeness_pct": 41,
-  "strong_critical_families": 5,
-  "weak_critical_families": 5,
+  "completeness_pct": 50,
+  "strong_critical_families": 6,
+  "weak_critical_families": 4,
   "missing_critical_families": 2,
   "total_critical_families": 12,
   "primary_gap_reason": "legacy_index_exposed_without_california_grade_reaudit",
@@ -20,7 +20,6 @@
     "county_local_disability_resources"
   ],
   "major_gap_families": [
-    "special_education_idea_part_b",
     "vocational_rehabilitation_pre_ets",
     "protection_and_advocacy",
     "parent_training_information_center",

@@ -428,11 +428,21 @@ function generateAllStateCaliforniaGradeAuditV3() {
     classifications[row.classification] = (classifications[row.classification] || 0) + 1;
   }
 
-  const priorityV3 = priorityV2.map((row) => ({
-    ...row,
-    state_packet_generated: summaryByState.has(row.state),
-    repair_lane: row.classification === 'COMPLETE' ? 'maintain_truth_only' : 'repair_from_state_packet',
-  }));
+  const stateV3ById = new Map(statesV3.map((row) => [row.stateId, row]));
+  const priorityV3 = priorityV2.map((row) => {
+    const stateV3 = stateV3ById.get(row.state);
+    return {
+      ...row,
+      classification: stateV3?.classification || row.classification,
+      index_safe: stateV3?.indexSafe ?? row.index_safe,
+      completeness_pct: stateV3?.completenessPct ?? row.completeness_pct,
+      missing_critical_families: stateV3?.missingCriticalFamilies ?? row.missing_critical_families,
+      weak_critical_families: stateV3?.weakCriticalFamilies ?? row.weak_critical_families,
+      primary_gap_reason: summaryByState.get(row.state)?.primary_gap_reason || row.primary_gap_reason,
+      state_packet_generated: summaryByState.has(row.state),
+      repair_lane: (stateV3?.classification || row.classification) === 'COMPLETE' ? 'maintain_truth_only' : 'repair_from_state_packet',
+    };
+  });
 
   const auditV3 = {
     ...auditV2,

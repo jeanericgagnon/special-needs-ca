@@ -78,3 +78,11 @@
 - developmental_disability_idd_authority: Official APD regional offices page lists counties served across 67/67 Florida counties.
 
 - Florida remains gated unless every critical family reaches California-grade proof.
+
+## Batch 23 Florida exact repair
+
+- special_education_idea_part_b: official FDLRS directory repaired to verified state-grade via https://www.fdlrs.org/contact-us with 26 reviewed center links.
+- district_or_county_education_routing: verified district-owned exact leaves -> https://www.bakerk12.org/departments/exceptional-student-education-student-services/exceptional-student-education-student-services, https://www.bakerk12.org/departments/exceptional-student-education-student-services/student-services-resources, https://www.bakerk12.org/departments/exceptional-student-education-student-services/staff, https://www.bay.k12.fl.us/page/ese/, https://www.bay.k12.fl.us/page/special-education-programs/, https://www.bradfordschools.org/departments/exceptional-student-education, https://www.yourcharlotteschools.net/72951_3, https://www.collierschools.com/students-families/ese, https://www.collierschools.com/students-families/ese/parent-resources, https://www.citrusschools.org/exceptional-student-education-2, https://www.oneclay.net/page/exceptional-student-education/, https://www.oneclay.net/page/ese-parent-services/
+- county_local_disability_resources: remained blocked after bounded same-domain repair; The legacy ACCESS local service center map now 404s, and bounded same-domain repair only surfaced community-partner search and a statewide customer service center, not a county-grade official locator.
+
+- Florida remains PARTIAL and not index-safe until every critical family reaches California-grade proof.
