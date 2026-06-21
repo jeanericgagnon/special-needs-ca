@@ -3030,7 +3030,7 @@ export async function getProgramAppealInfo(programId: string): Promise<ProgramAp
   return await navigatorDb.prepare('SELECT * FROM program_appeal_info WHERE program_id = ?').get(programId) as ProgramAppealInfo | undefined;
 }
 
-export async function getMatchedCorePrograms(age: number, conditionIds: string[], needIds: string[]): Promise<CoreProgramMatch[]> {
+export async function getMatchedCorePrograms(age: number, conditionIds: string[], needIds: string[], stateId?: string): Promise<CoreProgramMatch[]> {
   let querySql = `
     SELECT r.*, p.name, p.description, p.who_it_is_for, p.who_might_qualify, p.official_source_url, p.category, p.last_verified_date
     FROM program_eligibility_rules r
@@ -3039,6 +3039,11 @@ export async function getMatchedCorePrograms(age: number, conditionIds: string[]
   `;
   
   const params: (string | number)[] = [age, age];
+
+  if (stateId) {
+    querySql += ` AND (p.state_id = ? OR p.state_id IS NULL)`;
+    params.push(stateId);
+  }
 
   if (conditionIds.length > 0) {
     const placeholders = conditionIds.map(() => '?').join(',');

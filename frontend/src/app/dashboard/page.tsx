@@ -93,11 +93,16 @@ export default async function DashboardPage({ searchParams }: PageProps) {
   if (currentChild) {
     const age = getAgeInYears(currentChild.dob);
     
+    // Resolve county details first to get stateId
+    countyDetails = await getCountyDetails(currentChild.county_id) || null;
+    const stateId = countyDetails?.state_id || 'california';
+
     // Dynamic matching queries
     matchedPrograms = await getMatchedCorePrograms(
       age, 
       currentChild.conditionIds || [], 
-      currentChild.functionalNeedIds || []
+      currentChild.functionalNeedIds || [],
+      stateId
     );
 
     // crawler database matching (use first matched condition name or default)
@@ -112,8 +117,7 @@ export default async function DashboardPage({ searchParams }: PageProps) {
     savedChecklist = await getChecklistItems(currentChild.id);
     savedReminders = await getReminders(currentChild.id);
 
-    // Routing resources
-    countyDetails = await getCountyDetails(currentChild.county_id) || null;
+    // Routing resources (already resolved early for matching queries)
     
     // IEP & Respite child specific configurations
     savedIepData = await getChildIepData(currentChild.id);

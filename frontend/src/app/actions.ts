@@ -278,7 +278,7 @@ export async function analyzeOnboarding(
   const uniqueKeywords = Array.from(new Set(words)).slice(0, 5);
 
   // 4. Query Core Relational Database Matches
-  const coreMatches = await getMatchedCorePrograms(age, detectedConditionIds, detectedNeedIds);
+  const coreMatches = await getMatchedCorePrograms(age, detectedConditionIds, detectedNeedIds, stateId);
 
   // 5. Query Crawler Database Rules Matches (combining age, diagnosis, and extracted text keywords)
   const crawlerMatches = await getProgramsByKeywords(age, diagnosis, uniqueKeywords);
