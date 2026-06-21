@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import Database from 'better-sqlite3';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -24,6 +25,26 @@ const OUTPUTS = {
   report: path.join(docsGeneratedDir, 'batch39-new-york-final-blocker-refresh-report-v1.md'),
 };
 
+const DB_PATH = path.join(repoRoot, 'ca_disability_navigator.db');
+const NEW_YORK_PARENT_TRAINING_ACCEPTED_PATH = path.join(
+  repoRoot,
+  'data',
+  'source-acquisition-runs',
+  '2026-06-17T16-58-43-900Z',
+  'validated',
+  'parent_training_nonprofits',
+  'accepted.ndjson',
+);
+const NEW_YORK_PARENT_NETWORK_PARSED_SAMPLES_PATH = path.join(
+  repoRoot,
+  'data',
+  'source-acquisition-runs',
+  '2026-06-19T23-40-07-308Z',
+  'parsed',
+  'nonprofit_support',
+  'samples.json',
+);
+
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
 }
@@ -44,6 +65,41 @@ function writeJson(filePath, value) {
 function writeJsonl(filePath, rows) {
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
   fs.writeFileSync(filePath, rows.map((row) => JSON.stringify(row)).join('\n') + (rows.length ? '\n' : ''));
+}
+
+function loadNewYorkVrProgramSample() {
+  const db = new Database(DB_PATH, { readonly: true });
+  try {
+    return db.prepare(`
+      SELECT id, name, source_url, official_source_url, verification_status
+      FROM programs
+      WHERE state_id = 'new-york'
+        AND verification_status IN ('verified', 'official_verified')
+        AND (
+          source_url LIKE '%nysed.gov/career-development-and-studies/adult-career-and-continuing-education-services%'
+          OR official_source_url LIKE '%nysed.gov/career-development-and-studies/adult-career-and-continuing-education-services%'
+          OR name LIKE '%ACCES-VR%'
+          OR name LIKE '%Vocational%'
+          OR name LIKE '%Transition%'
+        )
+      ORDER BY
+        CASE verification_status WHEN 'official_verified' THEN 0 ELSE 1 END,
+        id ASC
+      LIMIT 1
+    `).get();
+  } finally {
+    db.close();
+  }
+}
+
+function loadNewYorkPaAcceptedArtifact() {
+  const rows = readJsonl(NEW_YORK_PARENT_TRAINING_ACCEPTED_PATH);
+  return rows.find((row) => String(row.sourceUrl || '').includes('disabilityrightsny.org'));
+}
+
+function loadNewYorkPtiRegionalSample() {
+  const rows = readJson(NEW_YORK_PARENT_NETWORK_PARSED_SAMPLES_PATH);
+  return rows.find((row) => String(row.sourceUrl || '').includes('parentnetworkwny.org'));
 }
 
 function recalcSummary(summary, gapRows, failureRows, verifiedRows) {
@@ -106,11 +162,10 @@ function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows,
     '',
     `- County-local disability resources remain blocked because the official New York LDSS county directory at ${facts.countyDirectoryUrl} returned HTTP 403 during bounded live verification, and no replacement live county-grade official locator is attached to the packet evidence chain.`,
     `- District or county education routing remains blocked because only ${facts.educationLeafCount} reviewed BOCES-owned exact leaves have been verified; that is not enough to truthfully prove district-grade routing across all ${summary.county_count} New York counties without reopening broader district authoring.`,
-    `- Vocational rehabilitation / Pre-ETS remains below California-grade because the repo currently has only the planning target for ACCES-VR (${facts.vrUrl}), not a reviewed verified-source row in the packet evidence chain.`,
-    `- Protection and advocacy remains below California-grade because the repo currently has only the planning target for Disability Rights New York (${facts.paUrl}), while the existing packet samples point to unrelated advocacy organizations rather than a reviewed DRNY source.`,
-    `- Parent training information center remains below California-grade because the repo currently has only the planning target for Parent Network of WNY (${facts.ptiUrl}), not a reviewed packet-grade PTI source that can justify statewide support.`,
+    `- Parent training information center remains below California-grade because the reviewed Parent Network of WNY evidence at ${facts.ptiUrl} is still explicitly scoped to Western New York support, not a truthful statewide PTI route.`,
     `- Legal aid remains below California-grade because New York currently stops at the authored LSC planning target (${facts.legalAidUrl}), not a reviewed New York legal-aid source.`,
-    '- New York is therefore truthfully final-blocked and not index-safe until a live official county-office directory or county-owned locator is verified, district-grade education leaves expand beyond the current bounded BOCES set, and the statewide support families are upgraded from planning-only to reviewed verified evidence.',
+    '- ACCES-VR and Disability Rights New York were upgraded out of the blocker list because reviewed verified evidence already existed on disk and now anchors those statewide support families truthfully.',
+    '- New York is therefore truthfully final-blocked and not index-safe until a live official county-office directory or county-owned locator is verified, district-grade education leaves expand beyond the current bounded BOCES set, a statewide PTI route is proven beyond Western New York scope, and a reviewed New York legal-aid source is added.',
   ].join('\n') + '\n';
 }
 
@@ -130,8 +185,11 @@ export function generateBatch39NewYorkFinalBlockerRefreshV1() {
   const countyTarget = sourceTargets.find((row) => row.source_name === 'NYS Local Social Services Districts (LDSS)');
   const authoredRows = authoredTargets.targets || authoredTargets.rows || authoredTargets;
   const legalAidTarget = authoredRows.find((row) => row?.stateId === 'new-york' && row?.gapFamily === 'legal_aid');
+  const vrProgramSample = loadNewYorkVrProgramSample();
+  const paAcceptedArtifact = loadNewYorkPaAcceptedArtifact();
+  const ptiRegionalSample = loadNewYorkPtiRegionalSample();
 
-  if (!educationVerified || !countyVerified || !vrTarget || !ptiTarget || !paTarget || !countyTarget || !legalAidTarget) {
+  if (!educationVerified || !countyVerified || !vrTarget || !ptiTarget || !paTarget || !countyTarget || !legalAidTarget || !vrProgramSample || !paAcceptedArtifact || !ptiRegionalSample) {
     throw new Error('New York final blocker refresh requires source targets plus county and education packet evidence.');
   }
 
@@ -153,22 +211,22 @@ export function generateBatch39NewYorkFinalBlockerRefreshV1() {
     if (row.family === 'vocational_rehabilitation_pre_ets') {
       return {
         ...row,
-        family_status: 'planning_target_only',
-        status_reason: `Only the planning target ${vrTarget.source_url} is present; no reviewed verified ACCES-VR source is attached to the packet.`,
+        family_status: 'verified_state_grade',
+        status_reason: 'Reviewed verified ACCES-VR program evidence already exists in the New York program spine and satisfies the statewide VR / Pre-ETS gate.',
       };
     }
     if (row.family === 'protection_and_advocacy') {
       return {
         ...row,
-        family_status: 'missing_verified_source',
-        status_reason: `Only the planning target ${paTarget.source_url} is present; current packet samples are not reviewed Disability Rights New York evidence.`,
+        family_status: 'verified_state_grade',
+        status_reason: 'Accepted first-party Disability Rights New York evidence is already present on disk and satisfies the statewide P&A gate.',
       };
     }
     if (row.family === 'parent_training_information_center') {
       return {
         ...row,
-        family_status: 'planning_target_only',
-        status_reason: `Only the planning target ${ptiTarget.source_url} is present; no reviewed verified PTI source is attached to the packet.`,
+        family_status: 'blocked_reviewed_regional_source_not_statewide',
+        status_reason: 'Reviewed Parent Network of WNY evidence is present, but the saved first-party page limits its reach to Western New York rather than a truthful statewide PTI route.',
       };
     }
     if (row.family === 'legal_aid') {
@@ -181,7 +239,9 @@ export function generateBatch39NewYorkFinalBlockerRefreshV1() {
     return row;
   });
 
-  const updatedFailureRows = failureRows.map((row) => {
+  const updatedFailureRows = failureRows
+    .filter((row) => !['vocational_rehabilitation_pre_ets', 'protection_and_advocacy'].includes(row.family))
+    .map((row) => {
     if (row.family === 'district_or_county_education_routing') {
       return {
         ...row,
@@ -198,28 +258,12 @@ export function generateBatch39NewYorkFinalBlockerRefreshV1() {
         next_action: 'hold_blocked_until_live_official_ldss_directory_or_county_owned_locator_is_verified',
       };
     }
-    if (row.family === 'vocational_rehabilitation_pre_ets') {
-      return {
-        ...row,
-        failure_code: 'official_acces_vr_target_not_yet_reviewed_verified',
-        evidence: `Planning target ${vrTarget.source_url} exists, but no reviewed verified ACCES-VR leaf has been fetched into the packet evidence chain.`,
-        next_action: 'hold_blocked_until_reviewed_acces_vr_leaf_is_verified',
-      };
-    }
-    if (row.family === 'protection_and_advocacy') {
-      return {
-        ...row,
-        failure_code: 'reviewed_drny_source_missing',
-        evidence: `Planning target ${paTarget.source_url} exists, but no reviewed verified Disability Rights New York source is attached to the packet.`,
-        next_action: 'hold_blocked_until_reviewed_drny_source_is_verified',
-      };
-    }
     if (row.family === 'parent_training_information_center') {
       return {
         ...row,
-        failure_code: 'reviewed_new_york_pti_source_missing',
-        evidence: `Planning target ${ptiTarget.source_url} exists, but no reviewed verified PTI source is attached to the packet.`,
-        next_action: 'hold_blocked_until_reviewed_new_york_pti_source_is_verified',
+        failure_code: 'reviewed_western_new_york_pti_source_not_statewide',
+        evidence: `Reviewed Parent Network of WNY evidence from ${ptiTarget.source_url} says the organization reaches families across WNY per year, which does not truthfully satisfy the statewide PTI gate.`,
+        next_action: 'hold_blocked_until_reviewed_statewide_new_york_pti_source_or_statewide_scope_proof_is_verified',
       };
     }
     if (row.family === 'legal_aid') {
@@ -235,6 +279,64 @@ export function generateBatch39NewYorkFinalBlockerRefreshV1() {
 
   const failureByFamily = new Map(updatedFailureRows.map((row) => [row.family, row]));
   const updatedVerifiedRows = verifiedRows.map((row) => {
+    if (row.family === 'vocational_rehabilitation_pre_ets') {
+      return {
+        ...row,
+        family_status: 'verified_state_grade',
+        evidence_strength: 'strong',
+        sample_count: 1,
+        blocker_code: null,
+        blocker_evidence: null,
+        samples: [
+          {
+            sample_name: vrProgramSample.name,
+            source_url: vrProgramSample.official_source_url || vrProgramSample.source_url,
+            verification_status: vrProgramSample.verification_status,
+            source_type: 'official',
+            source_table: 'programs',
+          },
+        ],
+      };
+    }
+    if (row.family === 'protection_and_advocacy') {
+      return {
+        ...row,
+        family_status: 'verified_state_grade',
+        evidence_strength: 'strong',
+        sample_count: 1,
+        blocker_code: null,
+        blocker_evidence: null,
+        samples: [
+          {
+            sample_name: 'Disability Rights New York',
+            source_url: paAcceptedArtifact.finalUrl || paAcceptedArtifact.sourceUrl,
+            verification_status: 'accepted_first_party',
+            source_type: 'accepted_first_party_artifact',
+            source_table: 'source_acquisition_validated',
+          },
+        ],
+      };
+    }
+    if (row.family === 'parent_training_information_center') {
+      const failure = failureByFamily.get(row.family);
+      return {
+        ...row,
+        family_status: 'blocked_reviewed_regional_source_not_statewide',
+        evidence_strength: 'weak',
+        sample_count: 1,
+        blocker_code: failure.failure_code,
+        blocker_evidence: failure.evidence,
+        samples: [
+          {
+            sample_name: 'Parent Network of WNY',
+            source_url: ptiRegionalSample.finalUrl || ptiRegionalSample.sourceUrl,
+            verification_status: 'reviewed_first_party_regional',
+            source_type: 'parsed_first_party_artifact',
+            source_table: 'source_acquisition_parsed',
+          },
+        ],
+      };
+    }
     if (failureByFamily.has(row.family)) {
       const failure = failureByFamily.get(row.family);
       const familyStatus = updatedGapRows.find((gapRow) => gapRow.family === row.family)?.family_status || row.family_status;
@@ -274,36 +376,16 @@ export function generateBatch39NewYorkFinalBlockerRefreshV1() {
       state: 'new-york',
       state_code: 'NY',
       priority_rank: 3,
-      family: 'vocational_rehabilitation_pre_ets',
-      severity: 'major',
-      failure_code: 'official_acces_vr_target_not_yet_reviewed_verified',
-      next_action: 'hold_blocked_until_reviewed_acces_vr_leaf_is_verified',
-      evidence: failureByFamily.get('vocational_rehabilitation_pre_ets')?.evidence,
-    },
-    {
-      state: 'new-york',
-      state_code: 'NY',
-      priority_rank: 4,
-      family: 'protection_and_advocacy',
-      severity: 'major',
-      failure_code: 'reviewed_drny_source_missing',
-      next_action: 'hold_blocked_until_reviewed_drny_source_is_verified',
-      evidence: failureByFamily.get('protection_and_advocacy')?.evidence,
-    },
-    {
-      state: 'new-york',
-      state_code: 'NY',
-      priority_rank: 5,
       family: 'parent_training_information_center',
       severity: 'major',
-      failure_code: 'reviewed_new_york_pti_source_missing',
-      next_action: 'hold_blocked_until_reviewed_new_york_pti_source_is_verified',
+      failure_code: 'reviewed_western_new_york_pti_source_not_statewide',
+      next_action: 'hold_blocked_until_reviewed_statewide_new_york_pti_source_or_statewide_scope_proof_is_verified',
       evidence: failureByFamily.get('parent_training_information_center')?.evidence,
     },
     {
       state: 'new-york',
       state_code: 'NY',
-      priority_rank: 6,
+      priority_rank: 4,
       family: 'legal_aid',
       severity: 'major',
       failure_code: 'authored_lsc_target_not_yet_replaced_with_reviewed_new_york_source',
@@ -318,7 +400,7 @@ export function generateBatch39NewYorkFinalBlockerRefreshV1() {
     educationLeafCount: educationVerified.sample_count,
     vrUrl: vrTarget.source_url,
     paUrl: paTarget.source_url,
-    ptiUrl: ptiTarget.source_url,
+    ptiUrl: ptiRegionalSample.finalUrl || ptiTarget.source_url,
     legalAidUrl: legalAidTarget.sourceUrl,
   };
   const updatedReport = buildStateReport(updatedSummary, updatedGapRows, updatedFailureRows, updatedVerifiedRows, updatedNextRows, facts);
@@ -352,7 +434,8 @@ export function generateBatch39NewYorkFinalBlockerRefreshV1() {
     `- index_safe: ${updatedSummary.index_safe ? 'true' : 'false'}`,
     `- education_leaf_count: ${educationVerified.sample_count}`,
     `- county_directory_url: ${countyTarget.source_url}`,
-    '- New York remains blocked until a live official LDSS county directory or county-owned locator is verified, district-grade education leaves expand beyond the current bounded BOCES set, and statewide support families move from planning-only to reviewed verified evidence.',
+    '- ACCES-VR and Disability Rights New York were upgraded from reviewed evidence already on disk.',
+    '- New York remains blocked until a live official LDSS county directory or county-owned locator is verified, district-grade education leaves expand beyond the current bounded BOCES set, a statewide PTI route is proven beyond Western New York scope, and a reviewed New York legal-aid source is added.',
   ].join('\n') + '\n');
 
   return batchSummary;
