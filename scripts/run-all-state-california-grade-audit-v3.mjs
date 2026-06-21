@@ -438,7 +438,7 @@ function generateAllStateCaliforniaGradeAuditV3() {
       completeness_pct: stateV3?.completenessPct ?? row.completeness_pct,
       missing_critical_families: stateV3?.missingCriticalFamilies ?? row.missing_critical_families,
       weak_critical_families: stateV3?.weakCriticalFamilies ?? row.weak_critical_families,
-      primary_gap_reason: summaryByState.get(row.state)?.primary_gap_reason || row.primary_gap_reason,
+      primary_gap_reason: stateV3?.packetPrimaryGapReason || summaryByState.get(row.state)?.primary_gap_reason || row.primary_gap_reason,
       state_packet_generated: summaryByState.has(row.state),
       repair_lane: (stateV3?.classification || row.classification) === 'COMPLETE' ? 'maintain_truth_only' : 'repair_from_state_packet',
     };

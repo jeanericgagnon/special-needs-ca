@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T18:39:37.071Z",
+  "generatedAt": "2026-06-21T18:46:35.459Z",
   "stateCount": 50,
   "classifications": {
     "UNSTARTED": 42,
@@ -2483,7 +2483,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_2_repair_blocked_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "official_county_directory_targets_unresolved_after_bounded_live_check"
     },
     {
       "stateId": "oklahoma",

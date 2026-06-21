@@ -65,3 +65,10 @@
 - district_or_county_education_routing: verified exact leaf targets -> https://www.soesc.org/StaffDirectory.aspx, https://www.allencountyesc.org/StaffDirectory.aspx, https://www.allencountyesc.org/SpecialEducation.aspx
 
 - Ohio remains BLOCKED and not index-safe until every critical family passes county-grade proof.
+
+## Batch 25 Ohio repair
+
+- district_or_county_education_routing: verified ESC-owned exact leaves -> https://www.youresc.k12.oh.us/special-education-student-services/, https://www.youresc.k12.oh.us/staff-directory/, https://www.ashtabulaesc.org/services-1, https://www.athensmeigs.com/departments/special-education, https://www.athensmeigs.com/services/student-services, https://www.ecoesc.org/specialeducation/
+- county_local_disability_resources: Bounded official county directory targets failed: https://jfs.ohio.gov/county/county_directory.pdf => 404; https://jfs.ohio.gov/county/ => 404; https://jfs.ohio.gov/County/County_Directory.stm => 404; https://odjfs.ohio.gov/ => fetch failed; https://jobandfamilyservices.ohio.gov/ => fetch failed
+
+- Ohio remains BLOCKED and not index-safe until every critical family reaches California-grade proof.
