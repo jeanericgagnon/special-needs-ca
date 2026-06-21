@@ -1,0 +1,42 @@
+{
+  "state": "california",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 75,
+  "strong_critical_families": 9,
+  "weak_critical_families": 2,
+  "missing_critical_families": 1,
+  "upgraded_families": [
+    "early_intervention_part_c",
+    "vocational_rehabilitation_pre_ets",
+    "protection_and_advocacy",
+    "legal_aid"
+  ],
+  "remaining_blockers": [
+    {
+      "family": "district_or_county_education_routing",
+      "severity": "critical",
+      "failure_code": "bounded_exact_leaf_packet_exhausted_before_statewide_district_grade_coverage"
+    },
+    {
+      "family": "county_local_disability_resources",
+      "severity": "critical",
+      "failure_code": "reviewed_county_examples_do_not_prove_statewide_county_grade_office_coverage"
+    },
+    {
+      "family": "parent_training_information_center",
+      "severity": "major",
+      "failure_code": "designated_statewide_pti_target_not_reviewed_or_verified"
+    }
+  ],
+  "facts": {
+    "earlyStartUrl": "https://www.dds.ca.gov/services/early-start/family-resource-center/regional-center-early-start-intake-and-family-resource-centers/",
+    "earlyStartCountyHeadingCount": 67,
+    "vrUrl": "https://www.dor.ca.gov/Home/StudentServices",
+    "paUrl": "https://www.disabilityrightsca.org/get-help",
+    "legalAidJudiciaryUrl": "https://selfhelp.courts.ca.gov/get-free-or-low-cost-legal-help",
+    "legalAidBarUrl": "https://www.calbar.ca.gov/public/legal-resources/free-legal-help",
+    "ptiDesignatedUrl": "https://www.matrixparents.org/",
+    "educationLeafCount": 3
+  }
+}

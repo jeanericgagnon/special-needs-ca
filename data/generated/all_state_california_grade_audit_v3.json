@@ -1,16 +1,14 @@
 {
-  "generatedAt": "2026-06-21T21:17:45.146Z",
+  "generatedAt": "2026-06-21T21:27:23.191Z",
   "stateCount": 50,
   "classifications": {
     "UNSTARTED": 42,
-    "PARTIAL": 2,
-    "BLOCKED": 5,
+    "BLOCKED": 6,
+    "PARTIAL": 1,
     "COMPLETE": 1
   },
   "indexSafeCount": 1,
-  "incorrectlyIndexSafeStates": [
-    "california"
-  ],
+  "incorrectlyIndexSafeStates": [],
   "pilotStates": [
     "texas",
     "illinois",
@@ -302,20 +300,20 @@
       "stateId": "california",
       "stateCode": "CA",
       "stateName": "California",
-      "classification": "PARTIAL",
+      "classification": "BLOCKED",
       "indexSafe": false,
-      "incorrectlyIndexSafe": true,
+      "incorrectlyIndexSafe": false,
       "legacyStatusLabel": "COMPLETE_WITH_LEGACY_EXCEPTION",
       "legacyGateScore": 26.7,
       "legacyRawDepthScore": 29.3,
       "legacyManualReviewRate": 70.65,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 58,
-      "strongCriticalFamilies": 5,
-      "weakCriticalFamilies": 5,
-      "missingCriticalFamilies": 2,
+      "strongCriticalFamilies": 9,
+      "weakCriticalFamilies": 2,
+      "missingCriticalFamilies": 1,
       "totalCriticalFamilies": 12,
-      "completenessPct": 42,
+      "completenessPct": 75,
       "dbMetrics": {
         "state_id": "california",
         "state_code": "CA",
@@ -352,21 +350,21 @@
         "medicaid_state_health_coverage": "verified_state_grade",
         "medicaid_waiver_hcbs_disability_services": "verified_state_grade",
         "developmental_disability_idd_authority": "verified_state_grade",
-        "early_intervention_part_c": "legacy_state_grade",
+        "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "exact_leaf_targets_verified_partial",
-        "vocational_rehabilitation_pre_ets": "inventory_only",
-        "protection_and_advocacy": "missing",
-        "parent_training_information_center": "inventory_only",
-        "legal_aid": "missing",
+        "district_or_county_education_routing": "blocked_exact_leaf_repair_exhausted",
+        "vocational_rehabilitation_pre_ets": "verified_state_grade",
+        "protection_and_advocacy": "verified_state_grade",
+        "parent_training_information_center": "missing_verified_statewide_source",
+        "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "legacy_state_grade"
+        "county_local_disability_resources": "blocked_exact_leaf_repair_exhausted"
       },
       "packetGenerated": true,
       "packetBatch": "batch_1_fast_finish_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
-      "packetRecommendedBatch": "batch_1_fast_finish"
+      "packetPrimaryGapReason": "county_grade_leaf_packets_exhausted_and_statewide_pti_source_still_unverified",
+      "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {
       "stateId": "colorado",

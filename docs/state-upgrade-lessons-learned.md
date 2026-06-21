@@ -188,3 +188,7 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Regional PTI Coverage Cannot Be Promoted As Statewide PTI Completion
 *   **Problem:** Illinois had a real reviewed PTI source on disk, but the fetched evidence was explicitly scoped to downstate Illinois while the designated statewide PTI target was a different organization.
 *   **Lesson:** A reviewed PTI source only upgrades the statewide PTI family when its service scope actually matches the statewide gate. Regional or downstate-only PTI coverage is useful evidence, but it must remain blocked or partial until the designated statewide PTI source is reviewed and verified.
+
+### Reviewed Source-Pack Evidence Should Repair Stale State Packets Before New Discovery
+*   **Problem:** California’s packet still marked Early Start, VR, P&A, and legal-aid families as weak or missing even though reviewed first-party fetch evidence for those families already existed on disk in the California source-pack outputs.
+*   **Lesson:** Before authoring new targets or reopening discovery, reconcile the state packet against reviewed source-pack fetch artifacts. If authoritative first-party evidence is already fetched and role-aligned, upgrade the packet from that evidence first and reserve new discovery only for the families that still remain blocked after reconciliation.
