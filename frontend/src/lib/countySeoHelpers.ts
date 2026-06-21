@@ -1,8 +1,9 @@
-import { County, CountyOffice, RegionalCenter } from './db';
+import { County, CountyOffice, RegionalCenter, SchoolDistrict } from './db';
 
 interface CountyDetailsInput extends County {
   countyOffices?: CountyOffice[];
   regionalCenters?: RegionalCenter[];
+  schoolDistricts?: SchoolDistrict[];
 }
 
 export function getCountyMetadata(
@@ -69,6 +70,11 @@ export function getCountyIntroCopy(
   const seed = countyDetails.id || countyName;
   const variationIndex = getDeterministicIndex(seed, 3);
 
+  const schoolDistNames = countyDetails.schoolDistricts
+    ? countyDetails.schoolDistricts.slice(0, 2).map(sd => sd.name)
+    : [];
+  const schoolDistText = schoolDistNames.length > 0 ? schoolDistNames.join(' and ') : 'local public schools';
+
   if (stateId === 'texas') {
     const eciContract = countyDetails.regionalCenters?.[0]?.name || 'a local ECI contractor';
     
@@ -90,19 +96,19 @@ export function getCountyIntroCopy(
 1. **Under Age 3 (Early Childhood Intervention):** Your local intake is managed by **${eciContract}**. This is a localized program coordinating physical, occupational, and speech therapies at home or daycare.
 2. **Age 3 and Older (LIDDA):** Your primary point of contact for developmental waivers (like HCS, CLASS, and TxHmL) is your Local Intellectual and Developmental Disability Authority (LIDDA). They coordinate long-term services and interest list placements.
 3. **Medicaid & Caregiver Wages:** General benefits and the MDCP program are administered by the Texas Health and Human Services Commission (HHSC). ${wageSentence0}
-4. **School Special Education:** School districts (listed below) coordinate local evaluations and Individualized Education Programs (IEPs) for school-aged children.`,
+4. **School Special Education:** School districts—such as ${schoolDistText} (listed below)—coordinate local evaluations and Individualized Education Programs (IEPs) for school-aged children.`,
 
       `Navigating the developmental and special needs support systems in ${countyName} County, Texas, requires understanding how programs are divided:
 1. **Early Childhood Intervention (Under 3):** Localized therapies (physical, occupational, speech) are coordinated by **${eciContract}** for infants and toddlers in their natural environments.
 2. **LIDDA Services (Ages 3+):** Your Local Intellectual and Developmental Disability Authority (LIDDA) acts as the local hub for long-term Medicaid waiver interest lists, including HCS, CLASS, and TxHmL.
 3. **Medicaid & Caregiver Wages:** HHSC handles general healthcare eligibility and home-based service administration. ${wageSentence1}
-4. **Special Education Programs:** Local school districts (listed below) evaluate children and develop Individualized Education Programs (IEPs) for school-aged students.`,
+4. **Special Education Programs:** Local school districts (including ${schoolDistText}) evaluate children and develop Individualized Education Programs (IEPs) for school-aged students.`,
 
       `If you are raising a child with special needs in ${countyName} County, Texas, your local support structure is organized around several key departments:
 1. **Infants & Toddlers (Early Start/ECI):** Therapeutic coordination for children under 3 is managed by **${eciContract}** to address developmental delays early.
 2. **Long-Term Developmental Supports (LIDDA):** To apply for state waivers like HCS, TxHmL, or CLASS, you must contact your Local Intellectual and Developmental Disability Authority (LIDDA) to begin the intake process.
 3. **Medicaid Administration:** Caregiver support and medical coverage fall under the Texas Health and Human Services Commission (HHSC). ${wageSentence2}
-4. **School-Age IEP Services:** Public school districts within the county are responsible for providing specialized academic instruction and accommodations.`
+4. **School-Age IEP Services:** Public school districts within the county, such as ${schoolDistText}, are responsible for providing specialized academic instruction and accommodations.`
     ];
 
     return variations[variationIndex];
@@ -129,19 +135,19 @@ export function getCountyIntroCopy(
 1. **Developmental Waivers (APD):** Intakes for the iBudget and CDC+ home and community-based waivers are managed by **${apdName}**. You should contact them directly to apply and check your placement on the APD waitlist.
 2. **Early Intervention (Under 3):** Early Steps serves as the local coordinating body for infant and toddler developmental delays, offering in-home therapies and assessments.
 3. **General Benefits & Medicaid:** The Florida Department of Children and Families (DCF) county office handles eligibility determination for Medicaid health insurance. ${wageSentence0}
-4. **Special Education:** School-aged children receive evaluations, therapies, and IEP planning directly through their county's school district student services department.`,
+4. **Special Education:** School-aged children receive evaluations, therapies, and IEP planning directly through their county's school district student services department (serving schools like ${schoolDistText}).`,
 
       `Families seeking disability and developmental support in ${countyName} County, Florida, must coordinate across multiple agencies:
 1. **Agency for Persons with Disabilities (APD):** The local contact for home and community-based services (iBudget/CDC+ waivers) is **${apdName}**. Reach out to them to start the application and check waitlist status.
 2. **Early Steps (Ages 0-3):** Infants and toddlers experiencing developmental delays are served by the local Early Steps provider, who coordinates early intervention assessments.
 3. **Medicaid Eligibility:** DCF processes general benefits and Medicaid health insurance applications. ${wageSentence1}
-4. **IEP & School Services:** The local county school district coordinates evaluations, accommodations, and specialized instruction for eligible students.`,
+4. **IEP & School Services:** The local county school district (which manages schools like ${schoolDistText}) coordinates evaluations, accommodations, and specialized instruction for eligible students.`,
 
       `If you live in ${countyName} County, Florida, and are coordinating care for a child with special needs, these are the key agencies to contact:
 1. **APD Waiver Intake:** Long-term Medicaid waivers like iBudget are administered locally by **${apdName}**, where you can submit applications and track your waitlist position.
 2. **Infant & Toddler Early Intervention:** The Early Steps program coordinates speech, occupational, and physical therapies for children under age three.
 3. **Health Coverage & Assistance:** The Florida Department of Children and Families (DCF) determines eligibility for Medicaid. ${wageSentence2}
-4. **School-Age Special Education:** Local school districts (listed below) are responsible for evaluating students and implementing Individualized Education Programs (IEPs).`
+4. **School-Age Special Education:** Local school districts (listed below, including ${schoolDistText}) are responsible for evaluating students and implementing Individualized Education Programs (IEPs).`
     ];
 
     return variations[variationIndex];
@@ -166,17 +172,17 @@ export function getCountyIntroCopy(
     const variations = [
       `For parents in ${countyName} County, Pennsylvania, the local developmental disability support structure consists of:
 1. **County MH/ID Intake (Primary Starting Point):** The **${officeName}** acts as the local hub for both early intervention services (ages 0-3) and county-administered intellectual disability funding and waiver intakes. 
-2. **Preschool & School-Age Special Education:** Early intervention for children ages 3-5 is coordinated by regional Intermediate Units (IUs). Once a child reaches kindergarten, special education and IEPs are managed by their local school district.
+2. **Preschool & School-Age Special Education:** Early intervention for children ages 3-5 is coordinated by regional Intermediate Units (IUs). Once a child reaches kindergarten, special education and IEPs are managed by their local school district (including school districts like ${schoolDistText}).
 3. **Medicaid & Home Care:** General Medicaid eligibility is handled by your local County Assistance Office (CAO). ${wageSentence0}`,
 
       `Navigating the special needs system in ${countyName} County, Pennsylvania, involves several core public resources:
 1. **County Intellectual Disabilities (MH/ID) Office:** Your primary point of entry for developmental waivers and birth-to-three early intervention is **${officeName}**.
-2. **Schooling & Intermediate Units (IUs):** Intermediate Units handle early intervention for preschool-aged children (3-5), while local school districts manage IEP services for kindergarten through graduation.
+2. **Schooling & Intermediate Units (IUs):** Intermediate Units handle early intervention for preschool-aged children (3-5), while local school districts (such as ${schoolDistText}) manage IEP services for kindergarten through graduation.
 3. **Medicaid & Caregiver Support:** Your County Assistance Office (CAO) handles applications for Medical Assistance (Medicaid). ${wageSentence1}`,
 
       `If you are raising a child with developmental delays or special needs in ${countyName} County, Pennsylvania, here is how services are organized:
 1. **MH/ID County Administration:** Call **${officeName}** to request intake for intellectual disability services, waiver programs, and early intervention for infants.
-2. **Educational Support & IEPs:** Preschool services are coordinated by the regional Intermediate Unit, and school-aged special education is handled directly by local school districts.
+2. **Educational Support & IEPs:** Preschool services are coordinated by the regional Intermediate Unit, and school-aged special education is handled directly by local school districts (including ${schoolDistText}).
 3. **Medicaid Benefits:** The County Assistance Office (CAO) manages eligibility for state health insurance benefits. ${wageSentence2}`
     ];
 
@@ -203,17 +209,17 @@ export function getCountyIntroCopy(
       `Families seeking disability services in ${countyName} County, California, have access to a structured local system:
 1. **Regional Center Coordination:** Intake for the Lanterman Act, Early Start (0-3), and the Self-Determination Program is managed by **${rcName}**. They serve as the single point of coordination for lifelong developmental services.
 2. **In-Home Support (IHSS):** The county Department of Social Services administers the IHSS program for personal care services. ${wageSentence0}
-3. **Special Education boundaries:** School districts are grouped into Special Education Local Plan Areas (SELPAs) to share resources and coordinate regional services.`,
+3. **Special Education boundaries:** School districts—such as ${schoolDistText}—are grouped into Special Education Local Plan Areas (SELPAs) to share resources and coordinate regional services.`,
 
       `For special needs families in ${countyName} County, California, local resources are divided into three primary agencies:
 1. **Regional Centers:** Your local office is **${rcName}**, coordinating developmental services, Early Start (ages 0-2), and Lanterman Act eligibility.
 2. **In-Home Supportive Services (IHSS):** The Department of Public Social Services handles IHSS caregiver programs. ${wageSentence1}
-3. **SELPA & School Districts:** Special education is organized through local Special Education Local Plan Areas (SELPAs) to coordinate services across school districts.`,
+3. **SELPA & School Districts:** Special education is organized through local Special Education Local Plan Areas (SELPAs) to coordinate services across school districts like ${schoolDistText}.`,
 
       `Navigating developmental and educational benefits in ${countyName} County, California, involves coordinating with these primary local entities:
 1. **Developmental Services Intake:** **${rcName}** manages regional coordination for Lanterman services, Self-Determination, and Early Start.
 2. **Caregiver Wages & IHSS:** In-home care hours are administered by the county Department of Social Services. ${wageSentence2}
-3. **Special Education (SELPA):** Local school districts coordinate assessments and IEP planning within regional SELPA configurations.`
+3. **Special Education (SELPA):** Local school districts (including ${schoolDistText}) coordinate assessments and IEP planning within regional SELPA configurations.`
     ];
 
     return variations[variationIndex];
@@ -233,11 +239,11 @@ export function getCountyIntroCopy(
     : `The caregiver pay scale under home-based Medicaid waivers is currently **verification pending**.`;
 
   const variations = [
-    `If you live in ${countyName} County, ${stateName}, your child has access to several layers of specialized support. ${wageSentence0} Use the listings below to contact your local ${catchmentLabel} intake coordinator, find your local health and human services office, look up school district special education contacts, and browse verified community support resources.`,
+    `If you live in ${countyName} County, ${stateName}, your child has access to several layers of specialized support. ${wageSentence0} Use the listings below to contact your local ${catchmentLabel} intake coordinator, find your local health and human services office, look up school district special education contacts (such as ${schoolDistText}), and browse verified community support resources.`,
     
-    `Families residing in ${countyName} County, ${stateName}, can access multiple local resources and programs for children with special needs. ${wageSentence1} Browse the details below to reach your local ${catchmentLabel} coordinator, contact health and human services, connect with local school district special education offices, and find community support networks.`,
+    `Browse the details below to reach your local ${catchmentLabel} coordinator, contact health and human services, connect with local school district special education offices (including ${schoolDistText}), and find community support networks.`,
     
-    `Navigating disability resources in ${countyName} County, ${stateName}, is simplified by contacting the correct local offices. ${wageSentence2} The listings below provide coordinate information for your local ${catchmentLabel} intake team, health and welfare administration, school district special education departments, and verified nonprofit support groups.`
+    `Navigating disability resources in ${countyName} County, ${stateName}, is simplified by contacting the correct local offices. ${wageSentence2} The listings below provide coordinate information for your local ${catchmentLabel} intake team, health and welfare administration, school district special education departments (serving ${schoolDistText}), and verified nonprofit support groups.`
   ];
 
   return variations[variationIndex];
