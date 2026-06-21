@@ -115,6 +115,19 @@ Texas v9 also showed that some final residual counties only expose district-grad
 - page number when possible,
 - and an evidence snippet showing the special-education contact, referral path, or parent-facing rights text.
 
+### 16. District-owned parent resource pages can pass, but only with explicit special-education assets on the page
+
+Texas v10 showed that some residual districts do not publish a dedicated `special-education` slug, but they do publish a district-owned parent resource page that explicitly lists special-education materials such as:
+
+- `Special Education Guides`
+- `Section 504`
+- `Dyslexia Handbook` or district dyslexia flyer
+- `Parent's Guide to the ARD Process`
+- `Notice of Procedural Safeguards`
+- `Public Complaint Form`
+
+These pages may satisfy California-grade district routing only when the fetched body itself proves multiple special-education assets. A generic parent page with calendars, lunch menus, or supply lists still fails closed.
+
 ## Per-Run Practice
 
 After each significant wave:

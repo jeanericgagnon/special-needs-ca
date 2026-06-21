@@ -128,3 +128,7 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Scanned District Documents Need OCR Before Promotion
 *   **Problem:** The last residual counties can hide valid special-education routing inside district-owned scanned PDFs, which look promising but are still unproven until the text is extracted.
 *   **Lesson:** Treat district documents as partial until OCR or a deterministic manual-text review preserves the special-education snippet, contact evidence, and document hash. Binary fetch success alone is not California-grade proof.
+
+### District-Owned Parent Resource Hubs Can Count Only With Explicit Special-Education Assets
+*   **Problem:** Some final residual districts do not maintain a standalone `special-education` page but do publish a district-owned parent hub with the real routing materials embedded as resource links.
+*   **Lesson:** A district-owned parent resource page may satisfy California-grade education routing only when the fetched body explicitly lists multiple special-education assets such as `Special Education Guides`, `Section 504`, `Dyslexia Handbook`, `Parent's Guide to the ARD Process`, `Notice of Procedural Safeguards`, or an equivalent district-facing complaint/referral resource. Generic parent hubs still fail closed.

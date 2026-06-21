@@ -107,6 +107,10 @@ No category may be written to production until it has completed staging, validat
 *   **Environment Check:** Ensure the Playwright test runner executes within the `frontend` subdirectory and passes the `DB_ENCRYPTION_KEY` environment variable.
 *   **GSC Gate:** New states must remain configured as `noindex` until wave-wide launch validation is completed.
 
+### District-Grade Education Final-Mile Rule
+*   **Rule:** In the final county-repair lane, a district-owned parent resource page may satisfy district-grade education only when the fetched page itself explicitly lists multiple special-education assets, such as `Special Education Guides`, `Section 504`, `Dyslexia Handbook`, `Parent's Guide to the ARD Process`, `Notice of Procedural Safeguards`, or equivalent complaint/referral materials.
+*   **Fail-Closed Reminder:** Generic `For Parents` pages with only calendars, lunch menus, or supply links remain non-qualifying even when they live on the correct district domain.
+
 ### Phase 5: Public Production Launch
 *   **Goal:** Deploy to Vercel, verify live environment variables, run live smoke tests against the public production domain, and request indexation.
 *   **Outputs:** `docs/launch/[state]-live-production-verification-report.md`.
