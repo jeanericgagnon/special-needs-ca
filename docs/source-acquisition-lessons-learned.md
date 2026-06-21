@@ -40,6 +40,31 @@ Platform redirects, parked domains, social profiles, and account pages should be
 
 Without separate parse and validation artifacts, we lose the ability to rerun one stage without redoing the entire acquisition wave.
 
+### 7. Bounded fetchers still need controlled concurrency
+
+Texas v5 showed that a fully serial low-token lane can be truthful but too slow to finish when many official district sites are dead, slow, or weak. Keep the exact-target contract and per-record fetch caps, but allow small controlled concurrency plus URL-level caching so dead hosts do not consume the whole run wall clock.
+
+### 8. Seed URLs and verified evidence URLs are different artifacts
+
+Discovery seeds like AskTED homepages are useful queue inputs, but they must not overwrite the actual evidence URL that passed validation. The acquisition layer should preserve:
+
+- seed/discovery URL
+- verified source URL
+- final fetched URL
+
+That separation prevents stale discovery roots from being mistaken for proof.
+
+### 9. Domain correctness is necessary but not sufficient
+
+A page living on the correct official or district domain does not make it safe automatically. Acquisition summaries should carry enough evidence for validators to reject:
+
+- board/trustee pages
+- policy pages
+- calendar/employment/athletics pages
+- generic district homepages
+
+even when the host itself is legitimate.
+
 ## Per-Run Practice
 
 After each significant wave:

@@ -86,3 +86,18 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Rendered HTML noindex Checks
 *   **Problem:** Smoke tests that only check metadata configuration files can miss runtime hydration errors that prevent `noindex` tags from rendering.
 *   **Lesson:** Playwright E2E smoke tests must parse the final, fully rendered HTML document to assert the literal presence of `<meta name="robots" content="noindex, follow" />`.
+
+### District-Grade Education Proof Must Reject Word-Fragment False Positives
+*   **Problem:** Texas v5 initially promoted many counties because `ARD` matching was too loose and fired inside unrelated words like `board`, allowing trustee and governance pages to pass as special-education evidence.
+*   **Lesson:** District-grade education validation must use role-aware term patterns with word boundaries and strong/weak evidence classes. Governance, calendar, athletics, employment, agenda, and board-policy pages must be explicit hard rejects even when they live on a real district domain.
+
+### AskTED Homepage Provenance Cannot Substitute for Verified District Evidence
+*   **Problem:** AskTED district homepage URLs were sometimes stale, district-owned subdomains changed over time, and the verified special-education page lived on a different but still district-controlled host.
+*   **Lesson:** Preserve two distinct truths in the artifact chain:
+    1.  the AskTED district seed URL used for candidate discovery, and
+    2.  the actual verified evidence URL/domain that satisfied the district-grade gate.
+    PASS counties must be justified by the fetched district evidence page itself, not by the generic AskTED seed or a stale homepage field.
+
+### California-Grade PASS Requires Direct District Evidence, Not Regional Fallback
+*   **Problem:** ESC pages, TEA generic pages, and other regional fallback sources can provide helpful routing, but they overstate county completion if treated as district-grade proof.
+*   **Lesson:** For California-grade education completion, a county only passes when an official district-owned page proves special-education routing directly. ESC or statewide fallback may keep a county operationally useful, but it remains PARTIAL and non-index-safe until direct district-grade evidence exists.

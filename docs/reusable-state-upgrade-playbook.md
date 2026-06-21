@@ -83,6 +83,7 @@ No category may be written to production until it has completed staging, validat
 #### Phase 2D: School Districts & Regional Education Support
 *   **Goal:** Resolve special education contact directories and ESE structures.
 *   **Staging:** Map regional education support agencies (e.g., FDLRS Associate Centers) and ESE school districts.
+*   **District-Grade Gate:** For California-grade completion, regional or statewide education fallbacks do not satisfy county PASS status. A county passes this phase only when a district-owned page proves special-education routing directly; board/trustee pages, generic homepages, and ESC fallback pages must fail closed.
 *   **Re-keying Safety Check:** Run a dependency reference audit before renaming fallback district primary keys (e.g. `sd-{county}-{state}-fallback` to `sd-{county}-{state}`) to ensure no foreign keys reference the old ID.
 *   **Outputs:** `docs/state-upgrades/[state]/07-fdlrs-ese.md` (or equivalent), `docs/scraping-vs-seeding/[state]-fdlrs-ese-upgrade-proposal.md`.
 
@@ -148,4 +149,3 @@ Run fast, isolated data integrity checks immediately (do not run Playwright test
 4. **Non-Zero Audit Exits**: Standard state audit scripts exit with code `1` when fallbacks/warnings exist, which is expected during a partial state upgrade. The runner's `runFastAudits()` helper should log these non-zero exits as notes rather than crashing the pipeline execution.
 5. **Suffix Extraction Safety**: When stripping state suffixes from county identifiers (e.g. removing `-co` from `city-and-county-of-broomfield-co`) to determine canonical record IDs, use precise trailing substring extraction (e.g., `lastIndexOf` or length subtraction) rather than a global/first-occurrence `replace()`. This prevents malformed IDs like `city-andunty` caused by matching subwords (like `co` in `county`).
 6. **Sequential Playwright Execution**: When running the full integrated E2E test suite in sandbox environments, execute Playwright sequentially using the `--workers=1` flag. Running tests fully in parallel on resource-limited sandboxes causes CPU starvation, SQLite database lock contention, and network request aborts (like `net::ERR_ABORTED`).
-
