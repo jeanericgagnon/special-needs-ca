@@ -1,0 +1,107 @@
+{
+  "hhsRoot": {
+    "url": "https://hhs.iowa.gov/",
+    "finalUrl": "https://hhs.iowa.gov/",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned the real Iowa HHS root and exposed role-aligned links for Medicaid, Disability Services, Early Intervention & Support, and HHS Office Locations."
+  },
+  "medicaid": {
+    "url": "https://hhs.iowa.gov/medicaid",
+    "finalUrl": "https://hhs.iowa.gov/medicaid",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned title and H1 \"Medicaid\" with direct links for Apply for Medicaid, Eligibility, Appeal a Decision, and local HHS office routing."
+  },
+  "medicaidApply": {
+    "url": "https://hhs.iowa.gov/medicaid/apply-medicaid",
+    "finalUrl": "https://hhs.iowa.gov/medicaid/apply-medicaid",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned title and H1 \"Apply for Medicaid\" with direct eligibility, disability determination, income guideline, and waiver-program links."
+  },
+  "waiver": {
+    "url": "https://hhs.iowa.gov/medicaid/services-care/home-and-community-based-services",
+    "finalUrl": "https://hhs.iowa.gov/medicaid/services-care/home-and-community-based-services",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned title and H1 \"Home and Community-Based Services,\" replacing the dead legacy HCBS eligibility packet leaf with a live Iowa HHS waiver root."
+  },
+  "disabilityServices": {
+    "url": "https://hhs.iowa.gov/family-community/disability-services",
+    "finalUrl": "https://hhs.iowa.gov/family-community/disability-services",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned title and H1 \"Disability Services\" with direct state HHS disability-services routing and links for applying and appeals."
+  },
+  "earlyIntervention": {
+    "url": "https://hhs.iowa.gov/programs/programs-and-services/early-intervention-and-support",
+    "finalUrl": "https://hhs.iowa.gov/programs/programs-and-services/early-intervention-and-support",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned title and H1 \"Early Intervention & Support\" with official Iowa HHS early-intervention routing and a first-party link out to Early ACCESS."
+  },
+  "officeLocations": {
+    "url": "https://hhs.iowa.gov/hhs-office-locations",
+    "finalUrl": "https://hhs.iowa.gov/hhs-office-locations",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned title and H1 \"HHS Office Locations\" and preserved hundreds of county office entries directly in reviewed HTML, including county names and per-county office links."
+  },
+  "education": {
+    "url": "https://educate.iowa.gov/pk-12/special-education",
+    "finalUrl": "https://educate.iowa.gov/pk-12/special-education",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned title and H1 \"Special Education\" on the replatformed Iowa Department of Education domain and linked School District Maps plus Dispute Resolution."
+  },
+  "disputeResolution": {
+    "url": "https://educate.iowa.gov/pk-12/special-education/dispute-resolution",
+    "finalUrl": "https://educate.iowa.gov/pk-12/special-education/dispute-resolution",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned title and H1 \"Dispute Resolution\" and described dispute pathways among parents, school staff, and Area Education Agency staff."
+  },
+  "districtMaps": {
+    "url": "https://educate.iowa.gov/pk-12/district-maps",
+    "finalUrl": "https://educate.iowa.gov/pk-12/district-maps",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned title and H1 \"School District Maps\" with public district-boundary map links, but it did not itself preserve district-owned special-education routing leaves."
+  },
+  "aeaPerformance": {
+    "url": "https://educate.iowa.gov/pk-12/aea-performance-accountability",
+    "finalUrl": "https://educate.iowa.gov/pk-12/aea-performance-accountability",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned title and H1 \"AEA Performance & Accountability\" with AEA documents and performance materials, but not county-grade special-education routing leaves."
+  },
+  "vocationalRehab": {
+    "url": "https://ivrs.iowa.gov/",
+    "finalUrl": "https://workforce.iowa.gov/vr",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe to the legacy IVRS root redirected to the live Iowa Workforce Development VR page titled \"Vocational Rehabilitation (VR) Services.\""
+  },
+  "protectionAndAdvocacy": {
+    "url": "https://disabilityrightsiowa.org/",
+    "finalUrl": "https://disabilityrightsiowa.org/",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned the first-party title \"Disability Rights Iowa | Legal Protection and Advocacy.\""
+  },
+  "pti": {
+    "url": "https://www.askresource.org/about",
+    "finalUrl": "https://www.askresource.org/about",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned the first-party ASK Resource Center About page, but no explicit PTI / Parent Training and Information Center designation text was preserved in the reviewed body."
+  },
+  "legalAid": {
+    "url": "https://www.iowalegalaid.org/",
+    "finalUrl": "https://iowalegalaid.org/",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned title \"Iowa Legal Aid | Free Legal Help for Low-Income Iowans.\""
+  }
+}
