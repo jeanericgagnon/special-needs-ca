@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-20T19:37:49.560Z",
-  "runId": "ca-v2",
+  "generated_at": "2026-06-20T20:20:56.705Z",
+  "runId": "ca-v3",
   "sourceDir": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source_packs/california",
   "outputDir": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/generated",
-  "runDir": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/ca-v2",
+  "runDir": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/ca-v3",
   "inputs": {
     "totalInputRows": 209,
     "completedInputRows": 209,
     "remainingInputRows": 0,
-    "currentBatchSize": 0,
+    "currentBatchSize": 209,
     "selectedOffset": 0,
     "selectedLimit": 0,
     "officialPackPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source_packs/california/ca_official_source_pack_v2.jsonl",
@@ -29,17 +29,17 @@
     "authorFirstPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/generated/ca_author_first_targets_v1.jsonl",
     "discoveredPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/generated/ca_discovered_target_queue_v1.jsonl",
     "discoveredReviewPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/generated/ca_discovered_target_review_queue_v1.jsonl",
-    "browserAssistedPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/ca-v2/followups/author-browser-assisted.json",
-    "parseAdapterPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/ca-v2/followups/parse-ready-high-signal.json",
+    "browserAssistedPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/ca-v3/followups/author-browser-assisted.json",
+    "parseAdapterPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/source-acquisition-runs/ca-v3/followups/parse-ready-high-signal.json",
     "summaryPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/generated/ca_source_completion_summary_v1.json",
-    "resultCount": 78,
-    "failureCount": 8,
-    "blockedCount": 123,
+    "resultCount": 139,
+    "failureCount": 10,
+    "blockedCount": 60,
     "repairCount": 4,
     "authorFirstCount": 5,
-    "discoveredCount": 36,
+    "discoveredCount": 33,
     "browserAssistedCount": 30,
-    "parseAdapterCount": 73,
+    "parseAdapterCount": 134,
     "categoryTotal": 209,
     "uniqueFetchCount": 201
   },
@@ -51,11 +51,11 @@
   "counts": {
     "total": 209,
     "byFetchStatus": {
-      "blocked": 123,
+      "fetched": 115,
       "fetched_unparsed": 23,
+      "blocked": 60,
       "skipped_portal": 1,
-      "fetched": 54,
-      "failed": 8
+      "failed": 10
     },
     "byBatchClass": {
       "html": 98,
@@ -173,11 +173,11 @@
     "publication_rule": "No record or field is publication-ready until fetched evidence is parsed, cited at field level, validated, and accepted by the completeness gate."
   },
   "runOptions": {
-    "runId": "ca-v2",
+    "runId": "ca-v3",
     "limit": 0,
     "offset": 0,
-    "resume": true,
+    "resume": false,
     "maxConcurrency": 4,
-    "maxResponseBytes": 10485760
+    "maxResponseBytes": 15728640
   }
 }

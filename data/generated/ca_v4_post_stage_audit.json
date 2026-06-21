@@ -1,0 +1,251 @@
+{
+  "runId": "ca-v3",
+  "parsedRecordCount": 134,
+  "validationResultCount": 134,
+  "stageReadyCount": 13,
+  "enrichmentRequiredCount": 55,
+  "unsupportedCount": 65,
+  "rejectedCount": 1,
+  "promotedCount": 0,
+  "correctEntityTypeCount": 134,
+  "requiredFieldCompletenessAverage": 0.39,
+  "fieldEvidenceCoverageAverage": 0.36,
+  "familyAudits": [
+    {
+      "family": "advocates_legal",
+      "total": 3,
+      "stageReadyCount": 0,
+      "enrichmentRequiredCount": 0,
+      "unsupportedCount": 3,
+      "rejectedCount": 0,
+      "promotedCount": 0,
+      "averageRequiredFieldCompleteness": 0,
+      "averageFieldEvidenceCoverage": 0,
+      "unsupportedDefaultedFieldCount": 0,
+      "entityTypes": {
+        "directory": 2,
+        "advocate_organization": 1
+      },
+      "destinationTables": {
+        "legal_help_resources": 2,
+        "referral_resources": 1
+      },
+      "classificationReasons": {
+        "general_legal_help_directory": 2,
+        "statewide_rights_org_not_iep_advocate": 1
+      }
+    },
+    {
+      "family": "dd_routing",
+      "total": 30,
+      "stageReadyCount": 5,
+      "enrichmentRequiredCount": 13,
+      "unsupportedCount": 11,
+      "rejectedCount": 1,
+      "promotedCount": 0,
+      "averageRequiredFieldCompleteness": 0.48,
+      "averageFieldEvidenceCoverage": 0.35,
+      "unsupportedDefaultedFieldCount": 27,
+      "entityTypes": {
+        "policy_or_informational_page": 8,
+        "directory": 3,
+        "agency": 19
+      },
+      "destinationTables": {
+        "unknown": 11,
+        "state_resource_agencies": 19
+      },
+      "classificationReasons": {
+        "dds_policy_or_info_page_not_agency_entity": 8,
+        "regional_center_or_family_resource_directory": 3,
+        "regional_center_root_page": 19
+      }
+    },
+    {
+      "family": "education_routing",
+      "total": 10,
+      "stageReadyCount": 0,
+      "enrichmentRequiredCount": 0,
+      "unsupportedCount": 10,
+      "rejectedCount": 0,
+      "promotedCount": 0,
+      "averageRequiredFieldCompleteness": 0,
+      "averageFieldEvidenceCoverage": 0,
+      "unsupportedDefaultedFieldCount": 0,
+      "entityTypes": {
+        "policy_or_informational_page": 4,
+        "directory": 4,
+        "contact_page": 1,
+        "appeal_procedure": 1
+      },
+      "destinationTables": {
+        "unknown": 10
+      },
+      "classificationReasons": {
+        "education_policy_or_appeal_page": 5,
+        "education_directory_index_page": 4,
+        "education_contact_like_page": 1
+      }
+    },
+    {
+      "family": "forms_guides",
+      "total": 23,
+      "stageReadyCount": 1,
+      "enrichmentRequiredCount": 12,
+      "unsupportedCount": 10,
+      "rejectedCount": 0,
+      "promotedCount": 0,
+      "averageRequiredFieldCompleteness": 0.32,
+      "averageFieldEvidenceCoverage": 0.33,
+      "unsupportedDefaultedFieldCount": 39,
+      "entityTypes": {
+        "directory": 3,
+        "form": 13,
+        "policy_or_informational_page": 7
+      },
+      "destinationTables": {
+        "unknown": 10,
+        "forms_and_guides": 13
+      },
+      "classificationReasons": {
+        "forms_catalog_or_guidance_not_exact_form": 10,
+        "exact_form_pdf_or_form_like_source_role": 13
+      }
+    },
+    {
+      "family": "general_gap_fill",
+      "total": 24,
+      "stageReadyCount": 4,
+      "enrichmentRequiredCount": 11,
+      "unsupportedCount": 9,
+      "rejectedCount": 0,
+      "promotedCount": 0,
+      "averageRequiredFieldCompleteness": 0.51,
+      "averageFieldEvidenceCoverage": 0.51,
+      "unsupportedDefaultedFieldCount": 11,
+      "entityTypes": {
+        "program": 15,
+        "directory": 5,
+        "policy_or_informational_page": 4
+      },
+      "destinationTables": {
+        "programs": 15,
+        "unknown": 9
+      },
+      "classificationReasons": {
+        "program_action_signals_present": 15,
+        "directory_page_not_program": 5,
+        "policy_or_guidance_page_not_program": 4
+      }
+    },
+    {
+      "family": "medicaid_hhs_offices",
+      "total": 36,
+      "stageReadyCount": 2,
+      "enrichmentRequiredCount": 19,
+      "unsupportedCount": 15,
+      "rejectedCount": 0,
+      "promotedCount": 0,
+      "averageRequiredFieldCompleteness": 0.49,
+      "averageFieldEvidenceCoverage": 0.49,
+      "unsupportedDefaultedFieldCount": 14,
+      "entityTypes": {
+        "office": 2,
+        "directory": 15,
+        "contact_page": 19
+      },
+      "destinationTables": {
+        "county_offices": 21,
+        "unknown": 15
+      },
+      "classificationReasons": {
+        "local_office_contact_signals_present": 2,
+        "generic_county_homepage_not_office": 14,
+        "county_service_page_needs_office_extraction": 19,
+        "non_county_office_directory_source": 1
+      }
+    },
+    {
+      "family": "programs_benefits",
+      "total": 7,
+      "stageReadyCount": 0,
+      "enrichmentRequiredCount": 0,
+      "unsupportedCount": 7,
+      "rejectedCount": 0,
+      "promotedCount": 0,
+      "averageRequiredFieldCompleteness": 0,
+      "averageFieldEvidenceCoverage": 0,
+      "unsupportedDefaultedFieldCount": 0,
+      "entityTypes": {
+        "appeal_procedure": 6,
+        "directory": 1
+      },
+      "destinationTables": {
+        "unknown": 7
+      },
+      "classificationReasons": {
+        "appeal_or_hearing_process_page": 6,
+        "directory_page_not_program": 1
+      }
+    },
+    {
+      "family": "waivers",
+      "total": 1,
+      "stageReadyCount": 1,
+      "enrichmentRequiredCount": 0,
+      "unsupportedCount": 0,
+      "rejectedCount": 0,
+      "promotedCount": 0,
+      "averageRequiredFieldCompleteness": 1,
+      "averageFieldEvidenceCoverage": 1,
+      "unsupportedDefaultedFieldCount": 0,
+      "entityTypes": {
+        "program": 1
+      },
+      "destinationTables": {
+        "programs": 1
+      },
+      "classificationReasons": {
+        "program_action_signals_present": 1
+      }
+    }
+  ],
+  "semanticStatusCounts": {
+    "unsupported": 65,
+    "stage_ready": 13,
+    "enrichment_required": 55,
+    "rejected": 1
+  },
+  "destinationTableCounts": {
+    "legal_help_resources": 2,
+    "referral_resources": 1,
+    "unknown": 62,
+    "state_resource_agencies": 19,
+    "forms_and_guides": 13,
+    "programs": 16,
+    "county_offices": 21
+  },
+  "entityTypeCounts": {
+    "directory": 33,
+    "advocate_organization": 1,
+    "policy_or_informational_page": 23,
+    "agency": 19,
+    "contact_page": 20,
+    "appeal_procedure": 7,
+    "form": 13,
+    "program": 16,
+    "office": 2
+  },
+  "currentPercentStageReady": 9.7,
+  "californiaComplete": false,
+  "completionReason": "Meaningful parsed records still require enrichment or remain unsupported/rejected; no promotion performed in ca-v4.",
+  "artifacts": {
+    "validation": "data/generated/ca_v4_validation_results.jsonl",
+    "stageReady": "data/generated/ca_v4_stage_ready.jsonl",
+    "enrichmentRequired": "data/generated/ca_v4_enrichment_required.jsonl",
+    "rejected": "data/generated/ca_v4_rejected.jsonl",
+    "fieldEvidence": "data/generated/ca_v4_field_evidence.jsonl",
+    "auditJson": "data/generated/ca_v4_post_stage_audit.json",
+    "auditMd": "data/generated/ca_v4_post_stage_audit.md"
+  }
+}
