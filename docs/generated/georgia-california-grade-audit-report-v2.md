@@ -79,3 +79,11 @@
 - developmental_disability_idd_authority: remained blocked after bounded live re-check; official county table exposed 159 region rows but 159/159 county cells were blank in static HTML.
 
 - Georgia remains BLOCKED and not index-safe until every critical family reaches California-grade proof.
+
+## Batch 30 Georgia DD blocker refresh
+
+- developmental_disability_idd_authority: Official DBHDD county table renders 159 region rows but 159/159 county cells are blank in static HTML, and the obvious same-domain region field-office leaves return 2 HTTP 403 responses, so county-to-region coverage remains unprovable from current official evidence.
+- same-domain DBHDD region leaf recheck: https://dbhdd.georgia.gov/region-1-field-office -> 403; https://dbhdd.georgia.gov/region-2-field-office -> 403; https://dbhdd.georgia.gov/regional-field-offices -> 200
+- No new reusable lesson was promoted from Batch 30; the existing fail-closed county-grade lessons still cover this pattern.
+
+- Georgia remains BLOCKED and not index-safe until every critical family reaches California-grade proof.
