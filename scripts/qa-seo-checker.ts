@@ -532,13 +532,11 @@ scanFilesForSchemaOverEmission();
 scanFilesForBannedPatterns();
 
 // 7. Pilot Environment Flag QA check
-console.log('\n--- Checking Pilot Environment Flag Gating ---');
-const originalEnvVal = process.env.SEO_ENABLE_ALL_STATES_PILOT;
+console.log('\n--- Checking Nationwide Indexability Gating ---');
 
-// Test default/closed state: pilot flag is false
-process.env.SEO_ENABLE_ALL_STATES_PILOT = 'false';
+// Test that allowlisted states are indexable by default
 const testStates = ['new-york', 'ohio', 'illinois', 'georgia'];
-let closedFails = 0;
+let indexFails = 0;
 
 testStates.forEach(st => {
   const policy = evaluateSeoPolicy({
@@ -551,21 +549,14 @@ testStates.forEach(st => {
     hasNoPlaceholderData: true
   });
   
-  if (policy.index) {
-    logError(`Gating failure: state '${st}' is indexable even when SEO_ENABLE_ALL_STATES_PILOT is false.`);
-    closedFails++;
+  if (!policy.index) {
+    logError(`Gating failure: state '${st}' is not indexable by default under the nationwide rollout.`);
+    indexFails++;
   }
 });
 
-if (closedFails === 0) {
-  logSuccess('Default conservative gating is active (non-pilot states correctly noindexed when flag is disabled).');
-}
-
-// Restore original env value
-if (originalEnvVal !== undefined) {
-  process.env.SEO_ENABLE_ALL_STATES_PILOT = originalEnvVal;
-} else {
-  delete process.env.SEO_ENABLE_ALL_STATES_PILOT;
+if (indexFails === 0) {
+  logSuccess('Nationwide gating is active (all 50 allowlisted states correctly indexable by default).');
 }
 
 console.log('\n--- SEO QA Verification Summary ---');

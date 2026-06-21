@@ -59,8 +59,7 @@ export const SEO_STATE_ALLOWLIST = [
 export const CONSERVATIVE_PRODUCTION_STATES = ['california', 'texas', 'florida', 'pennsylvania'];
 
 export function getEligibleStates(): string[] {
-  const enableAll = process.env.SEO_ENABLE_ALL_STATES_PILOT === 'true';
-  return enableAll ? SEO_STATE_ALLOWLIST : CONSERVATIVE_PRODUCTION_STATES;
+  return SEO_STATE_ALLOWLIST;
 }
 
 export function normalizeConfidenceScore(score: number | null | undefined): number | null {
