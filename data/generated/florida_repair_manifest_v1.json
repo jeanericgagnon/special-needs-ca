@@ -1,0 +1,30 @@
+{
+  "state": "florida",
+  "state_code": "FL",
+  "state_name": "Florida",
+  "batch": "batch_18_failure_class_repair_states_v1",
+  "classification": "PARTIAL",
+  "index_safe": false,
+  "completeness_pct": 33,
+  "repair_queue_count": 9,
+  "critical_repair_count": 4,
+  "primary_repair_lane": "launch_gate_hold",
+  "lane_counts": {
+    "launch_gate_hold": 1,
+    "county_district_leaf_repair": 3,
+    "state_manifest_repair": 3,
+    "statewide_family_repair": 2
+  },
+  "critical_families": [
+    "launch_gate",
+    "developmental_disability_idd_authority",
+    "district_or_county_education_routing",
+    "county_local_disability_resources"
+  ],
+  "ready_for_completion_claim": false,
+  "texas_v10_rule_basis": [
+    "Preserve noindex until all critical families are verified",
+    "District-grade routing must use direct local or district-owned evidence, not generic or statewide fallback",
+    "Legacy/inventory-only evidence does not satisfy California-grade completeness"
+  ]
+}

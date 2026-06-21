@@ -136,3 +136,7 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Full Packet Coverage Must Trigger Failure-Class Repair Mode
 *   **Problem:** Once every non-complete state has a packet artifact, continuing to create more queue-expansion passes burns time without moving any state closer to `COMPLETE/index_safe`.
 *   **Lesson:** After all states have packet coverage, stop expanding the queue and switch to failure-class repair mode. Use the generated state packet artifacts as the only control plane for deciding which family-specific repair lane should run next.
+
+### Shared Failure Classes Should Be Repaired As Cohorts
+*   **Problem:** After packet coverage is complete, the next five high-priority states often share the same blocker pattern: county or district leaf pages are still generic-root or statewide-only, while statewide support families are either inventory-only or missing.
+*   **Lesson:** Build repair cohorts by shared failure class, not by the original packet-generation batch label. This keeps the next operator focused on one repair method at a time, makes lessons portable across states, and avoids re-planning the same county-grade problem state by state.
