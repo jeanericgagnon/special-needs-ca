@@ -205,6 +205,10 @@ This document captures key technical, data modeling, and procedural lessons lear
 *   **Problem:** Florida’s legacy ACCESS local-office map was dead, but the replatformed DCF benefits page still linked to a live official Family Resource Center experience whose county storefront data lived in a same-domain `providers.csv` feed rather than in the old static map URL.
 *   **Lesson:** When an official locator page dies, inspect the live replacement page source for same-domain CSV, JSON, or county accordion data before preserving a missing-locator blocker. Replatformed official experiences may still carry truthful structured coverage even when the legacy root is gone.
 
+### Complementary First-Party Legal-Aid Sources Can Satisfy One Statewide Support Family
+*   **Problem:** Georgia looked blocked on legal aid because no single reviewed source on disk covered the whole state, even though Georgia Legal Services Program and Atlanta Legal Aid together cleanly split the state by service area on first-party pages.
+*   **Lesson:** A statewide support family can be upgraded from multiple reviewed first-party sources when each source explicitly states its service area and the combined coverage closes the statewide gap without overlap-by-assumption. Preserve the split in the evidence chain instead of forcing a fake single-source statewide claim.
+
 ### Official Replatform Redirects Must Refresh The Reviewed Authority Domain
 *   **Problem:** New Mexico’s low-token role queue rejected live official HCA pages as `wrong_domain_after_fetch` because the reviewed allowlist and packet still expected the retired `nmhealth.org` or `hsd.state.nm.us` roots, even when the official source had moved to `hca.nm.gov`.
 *   **Lesson:** When a reviewed official state source redirects to a new cabinet or replatform domain on the same state authority, refresh the packet’s reviewed authority domain before calling the role rejected. A stale allowlist is a packet bug, not proof that the official family is gone.

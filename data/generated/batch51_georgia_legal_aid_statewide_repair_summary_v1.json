@@ -1,0 +1,16 @@
+{
+  "batch": "batch_51_georgia_legal_aid_statewide_repair_v1",
+  "generated_at": "2026-06-21T23:55:22.261Z",
+  "state": "georgia",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 83,
+  "legal_aid_sources": [
+    "https://www.glsp.org/need-help/",
+    "https://atlantalegalaid.org/home/"
+  ],
+  "remaining_failure_families": [
+    "developmental_disability_idd_authority",
+    "district_or_county_education_routing"
+  ]
+}
