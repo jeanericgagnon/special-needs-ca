@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T20:43:20.942Z",
+  "generatedAt": "2026-06-21T21:10:09.267Z",
   "stateCount": 50,
   "classifications": {
     "UNSTARTED": 42,
@@ -2462,8 +2462,8 @@
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 88,
       "strongCriticalFamilies": 6,
-      "weakCriticalFamilies": 4,
-      "missingCriticalFamilies": 2,
+      "weakCriticalFamilies": 6,
+      "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
       "completenessPct": 50,
       "dbMetrics": {
@@ -2504,14 +2504,14 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "exact_leaf_targets_verified_partial",
-        "vocational_rehabilitation_pre_ets": "inventory_only",
-        "protection_and_advocacy": "missing",
-        "parent_training_information_center": "inventory_only",
-        "legal_aid": "missing",
+        "district_or_county_education_routing": "blocked_exact_leaf_repair_exhausted",
+        "vocational_rehabilitation_pre_ets": "planning_target_only",
+        "protection_and_advocacy": "missing_verified_source",
+        "parent_training_information_center": "planning_target_only",
+        "legal_aid": "missing_verified_source",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "legacy_state_grade"
+        "county_local_disability_resources": "blocked_missing_live_official_county_directory"
       },
       "packetGenerated": true,
       "packetBatch": "batch_2_repair_blocked_states_v1",

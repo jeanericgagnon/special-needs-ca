@@ -1,10 +1,10 @@
-# Ohio California-Grade Batch 2 Report v1
+# Ohio California-Grade Audit Report v2
 
 - classification: BLOCKED
 - index_safe: false
 - completeness_pct: 50
 - county_count: 88
-- primary_gap_reason: generic_or_statewide_evidence_used_where_local_required
+- primary_gap_reason: official_county_directory_targets_unresolved_after_bounded_live_check
 
 ## Family status
 
@@ -13,23 +13,23 @@
 - developmental_disability_idd_authority: verified_state_grade (statewide evidence is present at the required authority level)
 - early_intervention_part_c: verified_state_grade (statewide evidence is present at the required authority level)
 - special_education_idea_part_b: verified_state_grade (statewide evidence is present at the required authority level)
-- district_or_county_education_routing: legacy_state_grade (statewide or structural evidence exists, but not California-grade proof)
-- vocational_rehabilitation_pre_ets: inventory_only (only legacy inventory hints or weak role matches exist)
-- protection_and_advocacy: missing (no credible current evidence)
-- parent_training_information_center: inventory_only (only legacy inventory hints or weak role matches exist)
-- legal_aid: missing (no credible current evidence)
+- district_or_county_education_routing: blocked_exact_leaf_repair_exhausted (Reviewed ESC-owned education exact leaves verified (6) across 8 bounded Ohio packet roots, but district-grade coverage still cannot be proven for all 88 counties from the authored exact targets.)
+- vocational_rehabilitation_pre_ets: planning_target_only (Only the planning target https://ood.ohio.gov is present; no reviewed verified OOD leaf has been fetched into the packet evidence chain.)
+- protection_and_advocacy: missing_verified_source (Only the planning target https://www.disabilityrightsohio.org is present; no reviewed verified Disability Rights Ohio source is attached to the packet.)
+- parent_training_information_center: planning_target_only (Only the planning target https://www.ocecd.org is present; no reviewed verified OCECD source is attached to the packet.)
+- legal_aid: missing_verified_source (Only the authored LSC planning target https://www.lsc.gov/about-lsc/what-legal-aid/get-legal-help is present; no reviewed Ohio legal-aid source has been verified into the packet.)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: legacy_state_grade (statewide or structural evidence exists, but not California-grade proof)
+- county_local_disability_resources: blocked_missing_live_official_county_directory (Bounded live Ohio JFS county-directory roots all failed or returned 404, and the remaining DOI-hosted dataset mirror is planning evidence only rather than live official county-grade office proof.)
 
 ## Failure ledger
 
-- district_or_county_education_routing: generic_or_statewide_evidence_used_where_local_required :: 5 inventory rows use DB-field agency labels; 43 inventory rows show federal/state mismatch; 14 generic roots need leaf verification
-- vocational_rehabilitation_pre_ets: legacy_or_inventory_only_evidence :: 5 inventory rows use DB-field agency labels; 43 inventory rows show federal/state mismatch; 14 generic roots need leaf verification
-- protection_and_advocacy: missing_required_source_family :: Protection and advocacy has no strong California-grade evidence for Ohio.
-- parent_training_information_center: legacy_or_inventory_only_evidence :: 5 inventory rows use DB-field agency labels; 43 inventory rows show federal/state mismatch; 14 generic roots need leaf verification
-- legal_aid: missing_required_source_family :: Legal aid has no strong California-grade evidence for Ohio.
-- county_local_disability_resources: generic_or_statewide_evidence_used_where_local_required :: 5 inventory rows use DB-field agency labels; 43 inventory rows show federal/state mismatch; 14 generic roots need leaf verification
+- county_local_disability_resources: official_county_directory_failed_and_only_non_official_dataset_remains :: Bounded live Ohio JFS county-directory targets failed or returned 404, and the only remaining county-local packet root is the non-official DOI dataset https://doi.org/.
+- district_or_county_education_routing: bounded_esc_leaf_packet_exhausted_before_county_grade_coverage :: Verified exact leaves remain limited to 6 reviewed ESC-owned pages across 8 bounded Ohio packet roots (soesc.org, allencountyesc.org, youresc.k12.oh.us, ashtabulaesc.org, athensmeigs.com, auglaizeesc.org, ecoesc.org, brown.k12.oh.us); this does not truthfully prove district-grade routing statewide.
+- vocational_rehabilitation_pre_ets: official_ood_target_not_yet_reviewed_verified :: Planning target https://ood.ohio.gov exists, but no reviewed verified OOD leaf has been fetched into the packet evidence chain.
+- protection_and_advocacy: reviewed_disability_rights_ohio_source_missing :: Planning target https://www.disabilityrightsohio.org exists, but no reviewed verified Disability Rights Ohio source is attached to the packet.
+- parent_training_information_center: reviewed_ocecd_source_missing :: Planning target https://www.ocecd.org exists, but no reviewed verified OCECD source is attached to the packet.
+- legal_aid: authored_lsc_target_not_yet_replaced_with_reviewed_ohio_source :: Ohio legal-aid planning currently stops at the authored authoritative target https://www.lsc.gov/about-lsc/what-legal-aid/get-legal-help; no reviewed Ohio legal-aid evidence has been fetched and verified from saved artifacts.
 
 ## Verified source samples
 
@@ -38,45 +38,30 @@
 - developmental_disability_idd_authority: verified_state_grade; samples=3; first=https://dodd.ohio.gov/
 - early_intervention_part_c: verified_state_grade; samples=3; first=https://ohioearlyintervention.org/
 - special_education_idea_part_b: verified_state_grade; samples=3; first=https://www.allencountyesc.org
-- district_or_county_education_routing: legacy_state_grade; samples=3; first=https://www.akron.k12.oh.us
-- vocational_rehabilitation_pre_ets: inventory_only; samples=0
-- protection_and_advocacy: missing; samples=0
-- parent_training_information_center: inventory_only; samples=0
-- legal_aid: missing; samples=0
+- district_or_county_education_routing: blocked_exact_leaf_repair_exhausted; samples=6; first=https://www.youresc.k12.oh.us/special-education-student-services/
+- vocational_rehabilitation_pre_ets: planning_target_only; samples=0
+- protection_and_advocacy: missing_verified_source; samples=0
+- parent_training_information_center: planning_target_only; samples=0
+- legal_aid: missing_verified_source; samples=0
 - able_program: verified_state_grade; samples=1; first=https://www.stableaccount.com/
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov/benefits/disability/apply-child.html
-- county_local_disability_resources: legacy_state_grade; samples=3; first=https://doi.org/10.7910/DVN/AVRHMI
+- county_local_disability_resources: blocked_missing_live_official_county_directory; samples=3; first=https://doi.org/10.7910/DVN/AVRHMI
 
 ## Next actions
 
-- [critical] district_or_county_education_routing: author_county_or_district_exact_targets
-- [major] vocational_rehabilitation_pre_ets: author_verified_state_manifest
-- [major] protection_and_advocacy: author_or_verify_statewide_source_family
-- [major] parent_training_information_center: author_verified_state_manifest
-- [major] legal_aid: author_or_verify_statewide_source_family
-- [critical] county_local_disability_resources: author_county_or_district_exact_targets
+- [critical] county_local_disability_resources: hold_blocked_until_live_official_county_directory_or_locator_is_verified
+- [critical] district_or_county_education_routing: hold_blocked_until_new_exact_district_targets_are_authored
+- [major] vocational_rehabilitation_pre_ets: hold_blocked_until_reviewed_ood_leaf_is_verified
+- [major] protection_and_advocacy: hold_blocked_until_reviewed_disability_rights_ohio_source_is_verified
+- [major] parent_training_information_center: hold_blocked_until_reviewed_ocecd_source_is_verified
+- [major] legal_aid: hold_blocked_until_reviewed_ohio_legal_aid_source_is_verified
 
-## Completion decision
+## Ohio final blocker decision
 
-- Ohio remains BLOCKED and not index-safe because one or more critical families are still legacy, inventory-only, or missing.
-
-## Batch 20 exact leaf verification
-
-- district_or_county_education_routing: verified exact leaf targets -> https://www.soesc.org/StaffDirectory.aspx, https://www.allencountyesc.org/StaffDirectory.aspx, https://www.allencountyesc.org/SpecialEducation.aspx
-
-- Ohio remains BLOCKED and not index-safe until every critical family passes county-grade proof.
-
-## Batch 25 Ohio repair
-
-- district_or_county_education_routing: verified ESC-owned exact leaves -> https://www.youresc.k12.oh.us/special-education-student-services/, https://www.youresc.k12.oh.us/staff-directory/, https://www.ashtabulaesc.org/services-1, https://www.athensmeigs.com/departments/special-education, https://www.athensmeigs.com/services/student-services, https://www.ecoesc.org/specialeducation/
-- county_local_disability_resources: Bounded official county directory targets failed: https://jfs.ohio.gov/county/county_directory.pdf => 404; https://jfs.ohio.gov/county/ => 404; https://jfs.ohio.gov/County/County_Directory.stm => 404; https://odjfs.ohio.gov/ => fetch failed; https://jobandfamilyservices.ohio.gov/ => fetch failed
-
-- Ohio remains BLOCKED and not index-safe until every critical family reaches California-grade proof.
-
-## Batch 31 Ohio county blocker refresh
-
-- county_local_disability_resources: Bounded official county directory targets failed: https://jfs.ohio.gov/county/county_directory.pdf => 404; https://jfs.ohio.gov/county/ => 404; https://jfs.ohio.gov/County/County_Directory.stm => 404; https://odjfs.ohio.gov/ => fetch failed; https://jobandfamilyservices.ohio.gov/ => fetch failed; https://jobandfamilyservices.ohio.gov/wps/portal/gov/jfs/ => fetch failed; https://odjfs.ohio.gov/wps/portal/gov/odjfs/ => fetch failed; https://jobandfamilyservices.ohio.gov/county-agencies => fetch failed; https://jfs.ohio.gov/wps/portal/gov/jfs/county-agencies => 404
-- district_or_county_education_routing: queue wording refreshed to keep the live exact-leaf expansion lane as the active next action.
-- No new reusable lesson was promoted from Batch 31; the existing dead-official-directory and fail-closed county-local lessons remain authoritative.
-
-- Ohio remains BLOCKED and not index-safe until every critical family reaches California-grade proof.
+- County-local disability resources remain blocked because the bounded live Ohio JFS county-directory roots all failed or returned 404, and the remaining fallback packet evidence is only a DOI-hosted dataset mirror (https://doi.org/), not live official county-grade office proof.
+- District or county education routing remains blocked because only 6 reviewed ESC-owned exact leaves across 8 bounded Ohio packet roots have been verified; that is not enough to truthfully prove district-grade routing across all 88 Ohio counties without reopening broader district authoring.
+- Vocational rehabilitation / Pre-ETS remains below California-grade because the repo currently has only a planning target for Opportunities for Ohioans with Disabilities (https://ood.ohio.gov), not a reviewed verified-source row in the packet evidence chain.
+- Protection and advocacy remains below California-grade because the repo currently has only the planning target for Disability Rights Ohio (https://www.disabilityrightsohio.org), not reviewed packet-grade evidence.
+- Parent training information center remains below California-grade because the repo currently has only the planning target for OCECD (https://www.ocecd.org), not reviewed packet-grade evidence.
+- Legal aid remains below California-grade because the repo currently stops at an authored LSC planning target (https://www.lsc.gov/about-lsc/what-legal-aid/get-legal-help), not a reviewed Ohio legal-aid source.
+- Ohio is therefore truthfully final-blocked and not index-safe until new exact official county-office or district leaf targets are authored and the statewide support families are upgraded from planning-only to reviewed verified evidence.

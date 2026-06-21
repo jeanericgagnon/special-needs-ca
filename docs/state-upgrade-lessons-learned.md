@@ -176,3 +176,7 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Discovery-Exhaustion Planning Does Not Count As Verified Statewide Support Evidence
 *   **Problem:** A state can carry planning artifacts or source-discovery exhaustion notes claiming that PTI, P&A, or legal-aid coverage is “mapped,” while the packet still lacks a reviewed verified-source row for that family.
 *   **Lesson:** Discovery reports and authored target plans are planning evidence only. Upgrade a statewide support family only when the packet already contains a reviewed first-party or authoritative verified source; otherwise keep it blocked or missing, even if the planning layer says the category is covered.
+
+### Third-Party Data Mirrors Cannot Substitute For Live Official County Directories
+*   **Problem:** Ohio’s county-local packet looked partially covered because legacy county-office rows pointed to a DOI-hosted dataset mirror after the official Ohio JFS county directory and locator roots went dead.
+*   **Lesson:** A third-party archive, open-data mirror, or DOI dataset may preserve research context, but it cannot satisfy California-grade county-local routing once the official county directory fails. County-grade local office proof must come from a live official county directory, locator, or county-owned office page.
