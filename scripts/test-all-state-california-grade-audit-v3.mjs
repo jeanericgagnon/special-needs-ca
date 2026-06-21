@@ -56,6 +56,45 @@ assert.ok(priorityV3.every((row) => row.state_packet_generated === true), 'Every
 assert.ok(priorityV3.some((row) => row.state === 'texas' && row.repair_lane === 'maintain_truth_only'), 'Texas must move to maintain_truth_only in v3');
 assert.ok(priorityV3.some((row) => row.state === 'new-jersey' && row.repair_lane === 'repair_from_state_packet'), 'Non-complete states must use repair_from_state_packet in v3');
 
+const packetSummaries = fs.readdirSync(path.join(repoRoot, 'data', 'generated'))
+  .filter((file) => file.endsWith('_california_grade_summary_v2.json'))
+  .map((file) => readJson(path.join('data', 'generated', file)));
+const auditStateById = new Map(auditV3.states.map((row) => [row.stateId, row]));
+const priorityStateById = new Map(priorityV3.map((row) => [row.state, row]));
+for (const summary of packetSummaries) {
+  const auditState = auditStateById.get(summary.state);
+  const priorityState = priorityStateById.get(summary.state);
+  assert.ok(auditState, `Audit v3 must include packet state ${summary.state}`);
+  assert.ok(priorityState, `Priority v3 must include packet state ${summary.state}`);
+  assert.equal(auditState.classification, summary.classification, `${summary.state} audit classification must match packet summary`);
+  assert.equal(auditState.indexSafe, summary.index_safe, `${summary.state} audit index_safe must match packet summary`);
+  assert.equal(auditState.incorrectlyIndexSafe, summary.incorrectly_index_safe, `${summary.state} audit incorrectlyIndexSafe must match packet summary`);
+  assert.equal(auditState.completenessPct, summary.completeness_pct, `${summary.state} audit completeness_pct must match packet summary`);
+  assert.equal(auditState.strongCriticalFamilies, summary.strong_critical_families, `${summary.state} audit strong critical count must match packet summary`);
+  assert.equal(auditState.weakCriticalFamilies, summary.weak_critical_families, `${summary.state} audit weak critical count must match packet summary`);
+  assert.equal(auditState.missingCriticalFamilies, summary.missing_critical_families, `${summary.state} audit missing critical count must match packet summary`);
+  assert.equal(auditState.packetPrimaryGapReason, summary.primary_gap_reason, `${summary.state} audit primary gap reason must match packet summary`);
+
+  assert.equal(priorityState.classification, summary.classification, `${summary.state} priority classification must match packet summary`);
+  assert.equal(priorityState.index_safe, summary.index_safe, `${summary.state} priority index_safe must match packet summary`);
+  assert.equal(priorityState.completeness_pct, summary.completeness_pct, `${summary.state} priority completeness_pct must match packet summary`);
+  assert.equal(priorityState.missing_critical_families, summary.missing_critical_families, `${summary.state} priority missing critical count must match packet summary`);
+  assert.equal(priorityState.weak_critical_families, summary.weak_critical_families, `${summary.state} priority weak critical count must match packet summary`);
+  assert.equal(priorityState.primary_gap_reason, summary.primary_gap_reason, `${summary.state} priority primary gap reason must match packet summary`);
+}
+
+const derivedIncorrectlyIndexSafeStates = auditV3.states.filter((state) => state.incorrectlyIndexSafe).map((state) => state.stateId);
+assert.deepEqual(
+  auditV3.incorrectlyIndexSafeStates,
+  derivedIncorrectlyIndexSafeStates,
+  'Top-level incorrectlyIndexSafeStates must be recomputed from v3 packet-backed state rows',
+);
+assert.equal(
+  auditV3.incorrectlyIndexSafeStates.includes('pennsylvania'),
+  readJson('data/generated/pennsylvania_california_grade_summary_v2.json').incorrectly_index_safe,
+  'Pennsylvania top-level incorrectly-index-safe status must match its packet summary',
+);
+
 assert.ok(reportV3.includes('packet_coverage_count: 50'), 'v3 report must state full packet coverage');
 assert.ok(reportV3.includes('packet_missing_states: none'), 'v3 report must state no missing packet states');
 assert.ok(planV3.includes('Stop expanding packet coverage.'), 'v3 plan must move to repair-from-packets mode');

@@ -450,6 +450,7 @@ function generateAllStateCaliforniaGradeAuditV3() {
     states: statesV3,
     classifications,
     indexSafeCount: statesV3.filter((row) => row.indexSafe).length,
+    incorrectlyIndexSafeStates: statesV3.filter((row) => row.incorrectlyIndexSafe).map((row) => row.stateId),
     packetCoverageCount: summaryStateIds.length,
     packetMissingStates,
     lessonsUpdate: 'Added a new queue-completion lesson: once every state has a packet, stop expanding the queue and switch to failure-class repair from packet artifacts.',

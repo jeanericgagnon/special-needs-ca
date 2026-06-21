@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T19:10:37.549Z",
+  "generatedAt": "2026-06-21T19:59:00.373Z",
   "stateCount": 50,
   "classifications": {
     "UNSTARTED": 42,
@@ -9,9 +9,7 @@
   },
   "indexSafeCount": 1,
   "incorrectlyIndexSafeStates": [
-    "california",
-    "florida",
-    "pennsylvania"
+    "california"
   ],
   "pilotStates": [
     "texas",

@@ -1,0 +1,12 @@
+{
+  "batch": "batch_32_pennsylvania_education_blocker_audit_v1",
+  "generated_at": "2026-06-21T19:58:59.941Z",
+  "state": "pennsylvania",
+  "state_code": "PA",
+  "classification": "PARTIAL",
+  "index_safe": false,
+  "exact_district_leaves_verified": 5,
+  "district_routing_rows_total": 67,
+  "generic_intermediate_unit_directory_rows_remaining": 59,
+  "next_repair_lane": "replace_generic_intermediate_unit_directory_rows_with_county_or_district_exact_leaves"
+}
