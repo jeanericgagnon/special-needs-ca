@@ -73,6 +73,76 @@ function getDeterministicVariantIndex(seedStr: string, numVariants: number = 3):
   return Math.abs(hash) % numVariants;
 }
 
+function applyStylometricTransform(text: string, style?: WritingStyle | null): string {
+  if (!style) return text;
+  
+  let result = text;
+  
+  // 1. Emotional Tone synonym/phrase adaptation
+  const tone = style.emotional_tone;
+  if (tone === 'legalistic-precise') {
+    // Replace informal or common phrasing with formal, legal alternatives
+    result = result
+      .replace(/pro tip:/gi, 'statutory guidance note:')
+      .replace(/ask for/gi, 'formalize a request for')
+      .replace(/get paid/gi, 'secure caregiver compensation')
+      .replace(/school district/gi, 'local educational agency')
+      .replace(/under state/gi, 'pursuant to statutory');
+  } else if (tone === 'assertive-protective') {
+    // Inject more urgency, agency, and direct active verbs
+    result = result
+      .replace(/pro tip:/gi, 'critical warning:')
+      .replace(/immediately/gi, 'without delay, establishing a strict paper trail')
+      .replace(/under state regulations/gi, 'under strict statutory mandates')
+      .replace(/be firm/gi, 'refuse any compromises');
+  } else if (tone === 'supportive-collaborative') {
+    // Use warmer, parent-focused terminology
+    result = result
+      .replace(/pro tip:/gi, 'advocate advice:')
+      .replace(/immediately/gi, 'as soon as you feel ready')
+      .replace(/under state regulations/gi, 'under state rules designed to protect our children')
+      .replace(/demand/gi, 'request collaborative support for');
+  }
+  
+  // 2. Sentence Length Adjustment
+  if (style.avg_sentence_length && style.avg_sentence_length < 13) {
+    // Split compound sentences joined by " and " or ", and "
+    result = result.replace(/(,?\s+and\s+)([A-Z])/g, '. $2');
+    result = result.replace(/,\s+and\s+/gi, '. ');
+  } else if (style.avg_sentence_length && style.avg_sentence_length > 18) {
+    // Replace period with semicolon for compound flow where grammatically safe
+    result = result.replace(/\.\s+([A-Z][a-z]+)/g, (match, word) => {
+      const lowerWord = word.toLowerCase();
+      if (lowerWord.startsWith('pro') || lowerWord.startsWith('statutory') || lowerWord.startsWith('critical') || lowerWord.startsWith('advocate')) {
+        return match;
+      }
+      return `; consequently, ${word.charAt(0).toLowerCase() + word.slice(1)}`;
+    });
+  }
+
+  // 3. Signature Vocabulary / Phrase Injection
+  if (style.signature_phrases) {
+    try {
+      const phrases: string[] = JSON.parse(style.signature_phrases);
+      if (phrases && phrases.length > 0) {
+        const cleanPhrases = phrases.filter(p => p.length > 3 && !p.includes('privacy') && !p.includes('skip') && !p.includes('content') && !p.includes('policy'));
+        if (cleanPhrases.length > 0) {
+          const phraseToInject = cleanPhrases[0];
+          // Inject it at the end of the text if it is not already there
+          if (!result.toLowerCase().includes(phraseToInject.toLowerCase())) {
+            const formattedPhrase = phraseToInject.charAt(0).toUpperCase() + phraseToInject.slice(1);
+            result += ` As you navigate this local process, keep in mind: <em>"${formattedPhrase}"</em> is key.`;
+          }
+        }
+      }
+    } catch (e) {
+      // Ignore parse errors
+    }
+  }
+  
+  return result;
+}
+
 function getSpunAdvocacyCopy(
   stateId: string,
   stateName: string,
@@ -119,7 +189,7 @@ function getSpunAdvocacyCopy(
   // 4. School IEP card paragraphs
   const iepVariants = [
     `When dealing with ${sdName}, never make requests verbally. Write a formal letter requesting a special education evaluation. Under ${timelinesCode}, the district has exactly <strong>${timelineDaysPlan}</strong> to send you an assessment plan. Do not let them delay with "Response to Intervention" (RTI) trial periods.`,
-    `When interacting with school officials at ${sdName}, establish a clear paper trail by putting everything in writing. Send a formal evaluation request. Under ${timelinesCode}, school administrators have a strict deadline of <strong>${timelineDaysPlan}</strong> days to issue an assessment plan. Avoid getting stalled by informal "wait-and-see" interventions.`,
+    `When interacting with school officials at ${sdName}, establish a paper trail by putting everything in writing. Send a formal evaluation request. Under ${timelinesCode}, school administrators have a strict deadline of <strong>${timelineDaysPlan}</strong> days to issue an assessment plan. Avoid getting stalled by informal "wait-and-see" interventions.`,
     `Always request school accommodation evaluations from ${sdName} in writing rather than over the phone. Under ${timelinesCode}, the school district must respond within <strong>${timelineDaysPlan}</strong> days with a formal assessment plan. Be firm about rejecting arbitrary delays.`,
     `To protect your rights with ${sdName}, submit a written request for assessment. Education codes under ${timelinesCode} mandate that the district send you an assessment plan within <strong>${timelineDaysPlan}</strong> days. Do not agree to verbal agreements or informal delay strategies.`
   ];
@@ -158,11 +228,11 @@ function getSpunAdvocacyCopy(
   } : parentQuotes[idx];
 
   return {
-    intro: introVariants[idx],
-    entitlement: entitlementVariants[idx],
-    wages: wagesVariants[idx],
-    iep: iepVariants[idx],
-    ccs: ccsVariants[idx],
+    intro: applyStylometricTransform(introVariants[idx], selectedStyle),
+    entitlement: applyStylometricTransform(entitlementVariants[idx], selectedStyle),
+    wages: applyStylometricTransform(wagesVariants[idx], selectedStyle),
+    iep: applyStylometricTransform(iepVariants[idx], selectedStyle),
+    ccs: applyStylometricTransform(ccsVariants[idx], selectedStyle),
     quote
   };
 }
@@ -428,12 +498,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         lastVerifiedDate
       });
 
+      const writingStyles = await getWritingStyles();
+      const styleSeed = `${stateData.id}-${secondSlug}-${diagnosisSlug}`;
+      const styleIdx = getDeterministicVariantIndex(styleSeed, writingStyles.length || 1);
+      const selectedStyle = writingStyles.length > 0 ? writingStyles[styleIdx] : null;
+      const authors = selectedStyle ? [{ name: selectedStyle.name, url: `/contributors/${selectedStyle.id}` }] : undefined;
+
       const countyFormatted = formatParam(secondSlug);
       return {
         title: `${diagnosisFormatted} Benefits & Services in ${countyFormatted} County, ${stateCode} (2026)`,
         description: `Access ${stateName} state support, ${catchment} intake, waiver caregiver wages, and school IEP assistance for ${diagnosisFormatted} in ${countyFormatted} County.`,
         alternates: { canonical: policy.canonicalPath },
-        robots: robotsForPolicy(policy)
+        robots: robotsForPolicy(policy),
+        authors
       };
     }
 
@@ -1356,7 +1433,7 @@ export default async function BenefitsCatchAll({ params }: Props) {
     const clinics = localProviders.filter(p => p.categories === 'therapy-clinic');
     const groups = localProviders.filter(p => p.categories === 'support-group');
 
-    const rcName = countyData.regionalCenters?.[0]?.name || 'the local Regional Center';
+    const rcName = countyData.regionalCenters?.[0]?.name || `the local ${config.catchmentName}`;
     const sdName = districtDetails ? districtDetails.name : (countyData.schoolDistricts?.[0]?.name || 'your local school district');
     const topDistricts = (countyData.schoolDistricts || [])
       .slice(0, 3)
@@ -1455,11 +1532,17 @@ export default async function BenefitsCatchAll({ params }: Props) {
     };
 
     // Vetted advocate review stamp schema mapping
-    const mainReviewer = localAdvocates[0] || {
-      name: "Sarah Jenkins, M.S.Ed.",
-      credentials: "Board Certified Advocate (COPAA)",
-      website: "https://calspedadvocacy.com"
-    };
+    const mainReviewer = selectedStyle
+      ? {
+          name: selectedStyle.name,
+          credentials: selectedStyle.credentials,
+          website: `https://ablefull.com/contributors/${selectedStyle.id}`
+        }
+      : (localAdvocates[0] || {
+          name: "Sarah Jenkins, M.S.Ed.",
+          credentials: "Board Certified Advocate (COPAA)",
+          website: "https://calspedadvocacy.com"
+        });
 
     const reviewedBySchema = {
       '@context': 'https://schema.org',
@@ -1470,7 +1553,7 @@ export default async function BenefitsCatchAll({ params }: Props) {
         'name': mainReviewer.name,
         'jobTitle': 'Special Education Advocate',
         'sameAs': mainReviewer.website,
-        'description': `Verified Special Education Consultant and IEP IEP Advocate certified under COPAA rules.`
+        'description': `Verified Special Education Consultant and IEP Advocate.`
       }
     };
 
@@ -2238,7 +2321,7 @@ export default async function BenefitsCatchAll({ params }: Props) {
           <div className="glass-panel no-print" style={{ background: 'rgba(var(--primary-rgb), 0.01)', border: '1px solid rgba(var(--primary-rgb), 0.05)', padding: '1.5rem', borderRadius: '16px', marginBottom: '2.5rem', fontSize: '0.85rem' }}>
             <h3 style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text-main)', margin: '0 0 0.5rem 0' }}>✍️ Guide Copywriting Tone & Style Advisor</h3>
             <p style={{ color: 'var(--text-light)', margin: '0 0 0.75rem 0', lineHeight: '1.5' }}>
-              To ensure parent-friendly readability and expert compliance, this localized guide&apos;s copy is structured using the signature stylometric profile of <strong>{selectedStyle.name}</strong> ({selectedStyle.credentials}).
+              To ensure parent-friendly readability and expert compliance, this localized guide&apos;s copy is structured using the signature stylometric profile of <Link href={`/contributors/${selectedStyle.id}`} style={{ fontWeight: 600, color: 'var(--primary)', textDecoration: 'underline' }}>{selectedStyle.name}</Link> ({selectedStyle.credentials}).
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem', color: 'var(--text-light)' }}>
               <div>

@@ -9,9 +9,12 @@ const __dirname = path.dirname(__filename);
 const dbPath = path.resolve(__dirname, '../../frontend/ca_disability_navigator.db');
 const db = new Database(dbPath);
 
-// Define table to store scraped advocate copy personas
+// Drop the old confusingly named table if it exists
+db.exec(`DROP TABLE IF EXISTS advocate_personas`);
+
+// Define table to store scraped advocate copy writing styles
 db.exec(`
-  CREATE TABLE IF NOT EXISTS advocate_personas (
+  CREATE TABLE IF NOT EXISTS writing_styles (
     id TEXT PRIMARY KEY,
     name TEXT NOT NULL,
     credentials TEXT NOT NULL,
@@ -24,20 +27,21 @@ db.exec(`
   )
 `);
 
-const TARGET_URLS = [
-  {
-    id: 'lisa-lightner',
-    name: 'Lisa Lightner (A Day in Our Shoes)',
-    credentials: 'Special Education Advocate & Blogger',
-    url: 'https://adayinourshoes.com/smart-iep-goals/'
-  },
-  {
-    id: 'wrightslaw',
-    name: 'Pete & Pam Wright (Wrightslaw)',
-    credentials: 'Special Education Attorney & Legal Advocate',
-    url: 'https://www.wrightslaw.com/info/iep.goals.games.htm'
+// Fetch targets dynamically from the database to avoid hardcoding URLs
+function getTargetsFromDb() {
+  try {
+    const rows = db.prepare('SELECT id, name, credentials, source_url FROM writing_styles').all();
+    return rows.map(r => ({
+      id: r.id,
+      name: r.name,
+      credentials: r.credentials,
+      url: r.source_url
+    }));
+  } catch (err) {
+    console.error("⚠️ Failed to query target writing styles from DB:", err.message);
+    return [];
   }
-];
+}
 
 function analyzeWritingStyle(text) {
   // Split into sentences (by period, exclamation, question mark)
@@ -118,6 +122,15 @@ function analyzeWritingStyle(text) {
 async function run() {
   console.log("🚀 Starting Personality Style Scraper (Playwright)...");
   
+  const targets = getTargetsFromDb();
+  if (targets.length === 0) {
+    console.log("⚠️ No writing styles targets found in DB to scrape.");
+    db.close();
+    return;
+  }
+  
+  console.log(`Loaded ${targets.length} targets from the DB.`);
+  
   const browser = await chromium.launch({ headless: true });
   const page = await browser.newPage();
   
@@ -128,7 +141,7 @@ async function run() {
   });
   
   const insertStmt = db.prepare(`
-    INSERT INTO advocate_personas 
+    INSERT INTO writing_styles 
       (id, name, credentials, source_url, avg_sentence_length, signature_phrases, emotional_tone, vocab_frequency, sample_corpus)
     VALUES 
       ($id, $name, $credentials, $source_url, $avg_sentence_length, $signature_phrases, $emotional_tone, $vocab_frequency, $sample_corpus)
@@ -143,46 +156,70 @@ async function run() {
       sample_corpus = excluded.sample_corpus
   `);
   
-  for (const target of TARGET_URLS) {
-    console.log(`\nCrawling writing style for: ${target.name}...`);
-    try {
-      await page.goto(target.url, { waitUntil: 'domcontentloaded', timeout: 60000 });
-      await page.waitForTimeout(3000); // let rendering finish
-      
-      // Extract main article text body
-      const articleText = await page.evaluate(() => {
-        // Try finding main content tags
-        const selectors = [
-          'article', '.entry-content', '.post-content', '.content-area', '#content', 'main'
-        ];
-        for (const sel of selectors) {
-          const el = document.querySelector(sel);
-          if (el && el.innerText.length > 500) {
-            return el.innerText;
-          }
-        }
-        return document.body.innerText; // Fallback
-      });
-      
-      const cleanText = articleText
-        .replace(/\s+/g, ' ')
-        .replace(/Copyright.*All rights reserved.*/gi, '')
-        .trim();
+  for (const target of targets) {
+    // Skip if URL is invalid or placeholder
+    if (!target.url || target.url.includes('example.com') || target.url.startsWith('https://www.wrightslaw.com/blog/')) {
+      console.log(`\n⏭️ Skipping placeholder/invalid URL for: ${target.name} (${target.url})`);
+      continue;
+    }
+
+    console.log(`\nCrawling writing style for: ${target.name} (${target.url})...`);
+    
+    let success = false;
+    let attempts = 3;
+    let cleanText = '';
+
+    for (let attempt = 1; attempt <= attempts; attempt++) {
+      try {
+        console.log(`  - Attempt ${attempt}/${attempts}...`);
+        await page.goto(target.url, { waitUntil: 'domcontentloaded', timeout: 30000 });
+        await page.waitForTimeout(2000); // let rendering finish
         
-      if (cleanText.length < 500) {
-        console.warn(`⚠️ Warning: Content fetched is too short (${cleanText.length} chars). Skipping analysis.`);
-        continue;
+        // Extract main article text body
+        const articleText = await page.evaluate(() => {
+          const selectors = [
+            'article', '.entry-content', '.post-content', '.content-area', '#content', 'main'
+          ];
+          for (const sel of selectors) {
+            const el = document.querySelector(sel);
+            if (el && el.innerText.length > 500) {
+              return el.innerText;
+            }
+          }
+          return document.body.innerText; // Fallback
+        });
+        
+        cleanText = articleText
+          .replace(/\s+/g, ' ')
+          .replace(/Copyright.*All rights reserved.*/gi, '')
+          .trim();
+          
+        if (cleanText.length >= 500) {
+          success = true;
+          break;
+        } else {
+          console.warn(`  ⚠️ Attempt ${attempt} returned content too short (${cleanText.length} chars).`);
+        }
+      } catch (err) {
+        console.warn(`  ⚠️ Attempt ${attempt} failed: ${err.message}`);
       }
-      
-      console.log(`✓ Fetched ${cleanText.length} characters of clean writing corpus.`);
-      
-      // Analyze writing style
-      const analysis = analyzeWritingStyle(cleanText);
-      console.log(`  - Avg Sentence Length: ${analysis.avgSentenceLength} words`);
-      console.log(`  - Emotional Tone: ${analysis.emotionalTone}`);
-      console.log(`  - Signature Bigrams: ${analysis.phrases.slice(0, 4).join(', ')}`);
-      
-      // Save results
+    }
+    
+    if (!success) {
+      console.error(`❌ Skipped ${target.name} after failing all ${attempts} attempts.`);
+      continue;
+    }
+    
+    console.log(`✓ Fetched ${cleanText.length} characters of clean writing corpus.`);
+    
+    // Analyze writing style
+    const analysis = analyzeWritingStyle(cleanText);
+    console.log(`  - Avg Sentence Length: ${analysis.avgSentenceLength} words`);
+    console.log(`  - Emotional Tone: ${analysis.emotionalTone}`);
+    console.log(`  - Signature Bigrams: ${analysis.phrases.slice(0, 4).join(', ')}`);
+    
+    // Save results
+    try {
       insertStmt.run({
         id: target.id,
         name: target.name,
@@ -194,11 +231,9 @@ async function run() {
         vocab_frequency: JSON.stringify(analysis.vocab),
         sample_corpus: cleanText.substring(0, 10000) // limit sample storage size
       });
-      
       console.log(`✓ Stored style profile for ${target.name} in DB.`);
-      
-    } catch (err) {
-      console.error(`❌ Failed to crawl style for ${target.name}:`, err.message);
+    } catch (dbErr) {
+      console.error(`❌ DB error saving profile for ${target.name}:`, dbErr.message);
     }
   }
   

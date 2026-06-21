@@ -3180,6 +3180,16 @@ export async function getWritingStyles(): Promise<WritingStyle[]> {
   }
 }
 
+export async function getWritingStyleById(id: string): Promise<WritingStyle | null> {
+  try {
+    const row = await navigatorDb.prepare('SELECT * FROM writing_styles WHERE id = ?').get(id);
+    return row ? (row as WritingStyle) : null;
+  } catch (err) {
+    console.error(`Failed to query writing style by id ${id}:`, err);
+    return null;
+  }
+}
+
 export async function getProgramWaitlists(): Promise<ProgramWaitlist[]> {
   try {
     return await navigatorDb.prepare('SELECT * FROM program_waitlists').all() as ProgramWaitlist[];
