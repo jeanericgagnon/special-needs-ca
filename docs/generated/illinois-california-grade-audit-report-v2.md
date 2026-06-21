@@ -33,7 +33,7 @@
 - medicaid_state_health_coverage: verified_state_grade; samples=3; first=https://www.dhs.state.il.us/page.aspx?item=29737
 - medicaid_waiver_hcbs_disability_services: verified_state_grade; samples=3; first=https://www.dhs.state.il.us/page.aspx?item=47257
 - developmental_disability_idd_authority: verified_state_grade; samples=3; first=https://www.dhs.state.il.us/page.aspx?item=31182
-- early_intervention_part_c: verified_state_grade; samples=0
+- early_intervention_part_c: verified_state_grade; samples=1; first=https://www.dhs.state.il.us/page.aspx?item=31183
 - special_education_idea_part_b: verified_state_grade; samples=3; first=https://www.roe1.net
 - district_or_county_education_routing: blocked_exact_leaf_repair_exhausted; samples=3; first=https://www.roe1.net/about-us/contact-us/
 - vocational_rehabilitation_pre_ets: verified_state_grade; samples=1; first=https://www.dhs.state.il.us/page.aspx?item=29737

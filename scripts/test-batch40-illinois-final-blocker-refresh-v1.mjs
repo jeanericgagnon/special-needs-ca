@@ -65,6 +65,7 @@ assert.deepEqual(
 
 assert.equal(verifiedRows.find((row) => row.family === 'vocational_rehabilitation_pre_ets').family_status, 'verified_state_grade', 'Illinois verified sources must upgrade VR.');
 assert.equal(verifiedRows.find((row) => row.family === 'protection_and_advocacy').family_status, 'verified_state_grade', 'Illinois verified sources must upgrade P&A.');
+assert.equal(verifiedRows.find((row) => row.family === 'early_intervention_part_c').sample_count, 1, 'Illinois EI must carry a real reviewed sample instead of zero-sample verified drift.');
 assert.ok(report.includes('Illinois final blocker decision'), 'Illinois report must include the final blocker decision section.');
 assert.ok(report.includes('serving downstate Illinois'), 'Illinois report must explain why the current PTI sample does not satisfy the statewide PTI gate.');
 

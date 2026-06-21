@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import Database from 'better-sqlite3';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -24,6 +25,8 @@ const OUTPUTS = {
   report: path.join(docsGeneratedDir, 'batch40-illinois-final-blocker-refresh-report-v1.md'),
 };
 
+const DB_PATH = path.join(repoRoot, 'ca_disability_navigator.db');
+
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
 }
@@ -44,6 +47,29 @@ function writeJson(filePath, value) {
 function writeJsonl(filePath, rows) {
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
   fs.writeFileSync(filePath, rows.map((row) => JSON.stringify(row)).join('\n') + (rows.length ? '\n' : ''));
+}
+
+function loadIllinoisEarlyInterventionSample() {
+  const db = new Database(DB_PATH, { readonly: true });
+  try {
+    return db.prepare(`
+      SELECT id, name, source_url, official_source_url, verification_status
+      FROM programs
+      WHERE state_id = 'illinois'
+        AND verification_status IN ('verified', 'official_verified')
+        AND (
+          lower(name) LIKE '%early intervention%'
+          OR lower(source_url) LIKE '%item=31183%'
+          OR lower(official_source_url) LIKE '%item=31183%'
+        )
+      ORDER BY
+        CASE verification_status WHEN 'official_verified' THEN 0 ELSE 1 END,
+        id ASC
+      LIMIT 1
+    `).get();
+  } finally {
+    db.close();
+  }
 }
 
 function recalcSummary(summary, gapRows, failureRows, verifiedRows) {
@@ -130,8 +156,9 @@ export function generateBatch40IllinoisFinalBlockerRefreshV1() {
   const ptiTarget = sourceTargets.find((row) => row.source_name === 'Family Resource Center on Disabilities (FRCD)');
   const authoredRows = authoredTargets.targets || authoredTargets.rows || authoredTargets;
   const legalAidTarget = authoredRows.find((row) => row?.stateId === 'illinois' && row?.gapFamily === 'legal_aid');
+  const earlyInterventionSample = loadIllinoisEarlyInterventionSample();
 
-  if (!educationVerified || !paVerified || !ptiVerified || !vrVerified || !paTarget || !vrTarget || !ptiTarget || !legalAidTarget) {
+  if (!educationVerified || !paVerified || !ptiVerified || !vrVerified || !paTarget || !vrTarget || !ptiTarget || !legalAidTarget || !earlyInterventionSample) {
     throw new Error('Illinois final blocker refresh requires Illinois education/support source targets and verified packet evidence.');
   }
 
@@ -206,6 +233,25 @@ export function generateBatch40IllinoisFinalBlockerRefreshV1() {
 
   const failureByFamily = new Map(updatedFailureRows.map((row) => [row.family, row]));
   const updatedVerifiedRows = verifiedRows.map((row) => {
+    if (row.family === 'early_intervention_part_c') {
+      return {
+        ...row,
+        family_status: 'verified_state_grade',
+        evidence_strength: 'strong',
+        sample_count: 1,
+        blocker_code: null,
+        blocker_evidence: null,
+        samples: [
+          {
+            sample_name: earlyInterventionSample.name,
+            source_url: earlyInterventionSample.official_source_url || earlyInterventionSample.source_url,
+            verification_status: earlyInterventionSample.verification_status,
+            source_type: 'official',
+            source_table: 'programs',
+          },
+        ],
+      };
+    }
     if (row.family === 'vocational_rehabilitation_pre_ets') {
       return {
         ...row,
