@@ -1,0 +1,30 @@
+{
+  "medicaid": {
+    "url": "https://chfs.ky.gov/dms",
+    "finalUrl": "https://chfs.ky.gov/dms",
+    "status": 404,
+    "contentType": "text/html",
+    "evidence": "Reviewed 2026-06-21 targeted live probe returned HTTP 404 for the exact Kentucky Medicaid packet URL."
+  },
+  "specialEducation": {
+    "url": "https://education.kentucky.gov/",
+    "finalUrl": "",
+    "status": 0,
+    "contentType": "",
+    "evidence": "Reviewed 2026-06-21 targeted live probe failed DNS resolution for education.kentucky.gov, so the packet special-education root is not a live reviewed authority source."
+  },
+  "ddAuthority": {
+    "url": "https://dbhdid.ky.gov/ddid",
+    "finalUrl": "https://dbhdid.ky.gov/ddid",
+    "status": 200,
+    "contentType": "text/html",
+    "evidence": "Reviewed 2026-06-21 Playwright render returned only \"Loading to Department for Behavioral Health page.\" with no headings, contact signals, or role-aligned DD routing content."
+  },
+  "waiver": {
+    "url": "https://dbhdid.ky.gov/hcbs/eligibility",
+    "finalUrl": "https://dbhdid.ky.gov/hcbs/eligibility",
+    "status": 200,
+    "contentType": "text/html",
+    "evidence": "Reviewed 2026-06-21 Playwright render returned only \"Loading to Department for Behavioral Health page.\" with no waiver eligibility, application, or action text."
+  }
+}

@@ -205,6 +205,10 @@ This document captures key technical, data modeling, and procedural lessons lear
 *   **Problem:** Georgia carried `vocational_rehabilitation_pre_ets` as `verified_state_grade` while the packet’s verified-source row had `sample_count = 0`, which made the all-state audit look stronger than the state evidence ledger actually showed.
 *   **Lesson:** A family cannot stay `verified_state_grade` with an empty sample chain. When the DB already contains a reviewed verified row, rehydrate the packet from that concrete evidence; otherwise downgrade the family until a real verified sample exists on disk.
 
+### JavaScript Loading Shells Do Not Count As Reviewed Official Evidence
+*   **Problem:** Kentucky’s reviewed replacement URLs for DBHDID DD routing and HCBS waiver eligibility returned HTTP `200`, but both static fetch and Playwright render only produced a generic loading shell with no headings, contacts, eligibility text, or action content.
+*   **Lesson:** An HTTP `200` official page is still unverified when the rendered body is just a JavaScript loading shell. Do not preserve `verified_state_grade` from title or path alone; either capture the real role-aligned rendered content through a reviewed browser/API lane or downgrade the family until substantive evidence exists on disk.
+
 ### Statewide Support Truth Can Survive A Local Staging Rejection
 *   **Problem:** Ohio’s Disability Rights Ohio page had already been accepted as first-party parsed evidence, but the staging lane still routed it to manual review because the nonprofit promotion path expected a county ID. That local-table constraint made the statewide P&A family look falsely missing in the packet.
 *   **Lesson:** When a reviewed first-party artifact clearly proves a statewide support family, do not let a county-level staging requirement erase that truth from the California-grade packet. Use the accepted artifact directly for packet evidence, and keep the local-table issue separate from the statewide gate.

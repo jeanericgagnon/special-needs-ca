@@ -1,0 +1,107 @@
+{
+  "state": "kentucky",
+  "classification": "BLOCKED",
+  "completeness_pct": 16,
+  "strong_critical_families": 2,
+  "weak_critical_families": 5,
+  "missing_critical_families": 5,
+  "updated_families": [
+    {
+      "family": "medicaid_state_health_coverage",
+      "family_status": "missing_reviewed_role_pure_medicaid_source",
+      "sample_count": 0
+    },
+    {
+      "family": "medicaid_waiver_hcbs_disability_services",
+      "family_status": "blocked_js_shell_waiver_target_unverified",
+      "sample_count": 0
+    },
+    {
+      "family": "developmental_disability_idd_authority",
+      "family_status": "blocked_js_shell_dd_authority_target_unverified",
+      "sample_count": 0
+    },
+    {
+      "family": "early_intervention_part_c",
+      "family_status": "missing_reviewed_role_aligned_part_c_source",
+      "sample_count": 0
+    },
+    {
+      "family": "special_education_idea_part_b",
+      "family_status": "missing_reviewed_state_special_education_source",
+      "sample_count": 0
+    },
+    {
+      "family": "district_or_county_education_routing",
+      "family_status": "blocked_exact_leaf_repair_not_started",
+      "sample_count": 0
+    },
+    {
+      "family": "vocational_rehabilitation_pre_ets",
+      "family_status": "missing_reviewed_vr_or_pre_ets_source",
+      "sample_count": 0
+    },
+    {
+      "family": "protection_and_advocacy",
+      "family_status": "verified_state_grade",
+      "sample_count": 1
+    },
+    {
+      "family": "parent_training_information_center",
+      "family_status": "blocked_reviewed_parent_support_source_not_explicit_pti",
+      "sample_count": 1
+    },
+    {
+      "family": "legal_aid",
+      "family_status": "missing_reviewed_statewide_legal_aid_source",
+      "sample_count": 0
+    },
+    {
+      "family": "able_program",
+      "family_status": "verified_state_grade",
+      "sample_count": 1
+    },
+    {
+      "family": "ssi_ssa_federal_reference",
+      "family_status": "verified_state_grade",
+      "sample_count": 1
+    },
+    {
+      "family": "county_local_disability_resources",
+      "family_status": "blocked_generic_or_third_party_local_directory_only",
+      "sample_count": 0
+    }
+  ],
+  "evidence_checks": {
+    "kypaAcceptedRecordId": "kentucky|nonprofit_support|00007-kentucky-nonprofit-support-kypa-net",
+    "kyspinAcceptedRecordId": "kentucky|nonprofit_support|00009-kentucky-nonprofit-support-kyspin-com",
+    "medicaidProbe": {
+      "url": "https://chfs.ky.gov/dms",
+      "finalUrl": "https://chfs.ky.gov/dms",
+      "status": 404,
+      "contentType": "text/html",
+      "evidence": "Reviewed 2026-06-21 targeted live probe returned HTTP 404 for the exact Kentucky Medicaid packet URL."
+    },
+    "specialEducationProbe": {
+      "url": "https://education.kentucky.gov/",
+      "finalUrl": "",
+      "status": 0,
+      "contentType": "",
+      "evidence": "Reviewed 2026-06-21 targeted live probe failed DNS resolution for education.kentucky.gov, so the packet special-education root is not a live reviewed authority source."
+    },
+    "ddAuthorityProbe": {
+      "url": "https://dbhdid.ky.gov/ddid",
+      "finalUrl": "https://dbhdid.ky.gov/ddid",
+      "status": 200,
+      "contentType": "text/html",
+      "evidence": "Reviewed 2026-06-21 Playwright render returned only \"Loading to Department for Behavioral Health page.\" with no headings, contact signals, or role-aligned DD routing content."
+    },
+    "waiverProbe": {
+      "url": "https://dbhdid.ky.gov/hcbs/eligibility",
+      "finalUrl": "https://dbhdid.ky.gov/hcbs/eligibility",
+      "status": 200,
+      "contentType": "text/html",
+      "evidence": "Reviewed 2026-06-21 Playwright render returned only \"Loading to Department for Behavioral Health page.\" with no waiver eligibility, application, or action text."
+    }
+  }
+}
