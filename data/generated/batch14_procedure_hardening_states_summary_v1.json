@@ -1,0 +1,42 @@
+{
+  "batch": "batch_14_procedure_hardening_states_v1",
+  "generated_at": "2026-06-21T17:07:27.221Z",
+  "states": [
+    {
+      "state": "delaware",
+      "classification": "UNSTARTED",
+      "index_safe": false,
+      "completeness_pct": 50,
+      "primary_gap_reason": "legacy_or_inventory_only_evidence",
+      "critical_gap_families": [
+        "district_or_county_education_routing",
+        "county_local_disability_resources"
+      ]
+    },
+    {
+      "state": "vermont",
+      "classification": "UNSTARTED",
+      "index_safe": false,
+      "completeness_pct": 58,
+      "primary_gap_reason": "generic_or_statewide_evidence_used_where_local_required",
+      "critical_gap_families": [
+        "district_or_county_education_routing",
+        "county_local_disability_resources"
+      ]
+    },
+    {
+      "state": "wyoming",
+      "classification": "UNSTARTED",
+      "index_safe": false,
+      "completeness_pct": 50,
+      "primary_gap_reason": "legacy_or_inventory_only_evidence",
+      "critical_gap_families": [
+        "district_or_county_education_routing",
+        "county_local_disability_resources"
+      ]
+    }
+  ],
+  "complete_states": [],
+  "generated_all_state_v3": false,
+  "texas_preserved_complete": true
+}
