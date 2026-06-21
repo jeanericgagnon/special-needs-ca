@@ -65,6 +65,19 @@ A page living on the correct official or district domain does not make it safe a
 
 even when the host itself is legitimate.
 
+### 10. Final cleanup lanes should pivot from discovery to manual-target authoring
+
+Texas v6 improved the last 38 counties only modestly through expanded bounded discovery. That was still worth doing, but the remaining counties now clearly belong to a manual-target lane rather than another broad automated retry. When a family reaches a small residual set dominated by `search_fallback_exhausted`, acquisition should switch to exact reviewed targets instead of burning more fetch volume on the same discovery patterns.
+
+### 11. County-level search fallback must stay bounded and auditable
+
+Controlled search fallback helped v6 repair a few additional Texas counties, but it is only safe when:
+
+- queries are fixed and role-specific,
+- accepted URLs stay on the official district domain,
+- every query is logged to the failure or evidence artifact,
+- and failure to find a result closes as `search_fallback_exhausted` instead of silently widening scope.
+
 ## Per-Run Practice
 
 After each significant wave:

@@ -101,3 +101,14 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### California-Grade PASS Requires Direct District Evidence, Not Regional Fallback
 *   **Problem:** ESC pages, TEA generic pages, and other regional fallback sources can provide helpful routing, but they overstate county completion if treated as district-grade proof.
 *   **Lesson:** For California-grade education completion, a county only passes when an official district-owned page proves special-education routing directly. ESC or statewide fallback may keep a county operationally useful, but it remains PARTIAL and non-index-safe until direct district-grade evidence exists.
+
+### Residual County Cleanup Must Be Failure-Class Driven
+*   **Problem:** After Texas v5, the remaining 38 counties did not behave like one uniform scrape backlog. Most were either true `search_fallback_exhausted` cases, a few had broken district-homepage seeds, and one had only weak student-services evidence.
+*   **Lesson:** Once a state reaches the final cleanup stage, stop treating the remainder as a generic queue. Split the residual counties by failure class and use different repair lanes:
+    1.  manual exact-target authoring for `search_fallback_exhausted`,
+    2.  homepage/domain repair for `district_homepage_broken`, and
+    3.  stronger same-domain evidence search for `weak_student_services_only`.
+
+### Small-County District Routing Requires Full County Candidate Exhaustion
+*   **Problem:** Stopping at the first district candidate leaves rural counties under-repaired because the first AskTED district homepage often lacks a usable special-education page while another district in the same county has one.
+*   **Lesson:** For final county-grade education repair, the runner must try every AskTED district candidate in the county until one direct district-grade source verifies or the bounded budget is exhausted. “First district failed” is not a truthful county-level stopping rule.
