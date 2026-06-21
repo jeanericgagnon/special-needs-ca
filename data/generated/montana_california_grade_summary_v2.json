@@ -1,0 +1,46 @@
+{
+  "state": "montana",
+  "state_code": "MT",
+  "state_name": "Montana",
+  "batch": "batch_9_procedure_hardening_states_v1",
+  "classification": "UNSTARTED",
+  "index_safe": false,
+  "incorrectly_index_safe": false,
+  "county_count": 56,
+  "completeness_pct": 58,
+  "strong_critical_families": 7,
+  "weak_critical_families": 3,
+  "missing_critical_families": 2,
+  "total_critical_families": 12,
+  "primary_gap_reason": "generic_or_statewide_evidence_used_where_local_required",
+  "recommended_batch": "batch_3_procedure_hardening",
+  "critical_gap_families": [
+    "district_or_county_education_routing",
+    "county_local_disability_resources"
+  ],
+  "major_gap_families": [
+    "protection_and_advocacy",
+    "parent_training_information_center",
+    "legal_aid"
+  ],
+  "verified_source_families_with_samples": [
+    "medicaid_state_health_coverage",
+    "medicaid_waiver_hcbs_disability_services",
+    "developmental_disability_idd_authority",
+    "early_intervention_part_c",
+    "special_education_idea_part_b",
+    "district_or_county_education_routing",
+    "vocational_rehabilitation_pre_ets",
+    "protection_and_advocacy",
+    "parent_training_information_center",
+    "able_program",
+    "ssi_ssa_federal_reference",
+    "county_local_disability_resources"
+  ],
+  "complete_ready": false,
+  "texas_v10_rule_basis": [
+    "Preserve noindex until all critical families are verified",
+    "District-grade routing must use direct local or district-owned evidence, not generic or statewide fallback",
+    "Legacy/inventory-only evidence does not satisfy California-grade completeness"
+  ]
+}
