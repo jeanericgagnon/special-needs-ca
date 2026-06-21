@@ -157,6 +157,10 @@ This document captures key technical, data modeling, and procedural lessons lear
 *   **Problem:** Pennsylvania’s old `dhs.pa.gov` packet hints looked dead because they now resolve to generic agency shells, even though the live `pa.gov` contact pages still expose the exact county MH/ID and CAO resources we need.
 *   **Lesson:** When a packet URL redirects to a generic agency landing, do one bounded live-path repair on the same official domain before classifying the family as blocked. If the live replacement page preserves the exact role in the title and fetched body, repair the packet and continue; do not treat the stale legacy path itself as proof that the source family is gone.
 
+### Bare `403` Text In Navigation Must Not Trigger A Block Verdict
+*   **Problem:** Pennsylvania IU special-education leaves can include unrelated navigation text such as `403(b)` retirement-plan links, which caused a false block when the verifier treated any bare `403` body substring as challenge or forbidden evidence.
+*   **Lesson:** Blocked-page detection must rely on explicit blocked phrases in the title, headings, or final URL, or on known challenge/error shells. Do not reject an otherwise valid county- or district-grade page just because the raw body contains an unrelated `403` substring in navigation or footer text.
+
 ### Portal And Community-Partner Replacements Cannot Substitute For County-Grade Local Office Proof
 *   **Problem:** Florida’s legacy ACCESS local service-center map now returns `404`, and bounded same-domain repair on the official DCF site only exposes a statewide customer-service center plus community-partner search, not a real county-grade office locator.
 *   **Lesson:** When an official county-office locator disappears, do not silently replace it with a portal login, statewide call center, or community-partner directory. Keep the county-local family blocked until the official site again exposes county-grade office or locator evidence.

@@ -258,6 +258,14 @@ function writeJsonl(filePath, rows) {
   fs.writeFileSync(filePath, rows.map((row) => JSON.stringify(row)).join('\n') + (rows.length ? '\n' : ''));
 }
 
+function loadStateGapFamilyStatuses(stateId) {
+  const gapFilePath = path.join(generatedDir, `${stateId}_gap_matrix_v2.jsonl`);
+  if (!fs.existsSync(gapFilePath)) return null;
+  const gapRows = readJsonl(gapFilePath);
+  if (!gapRows.length) return null;
+  return Object.fromEntries(gapRows.map((row) => [row.family, row.family_status]));
+}
+
 function sampleRowsForFamily(db, stateId, familyId) {
   const query = FAMILY_QUERIES[familyId];
   if (!query) return [];
@@ -408,6 +416,7 @@ function generateAllStateCaliforniaGradeAuditV3() {
   const statesV3 = auditV2.states.map((stateRow) => {
     const summary = summaryByState.get(stateRow.stateId);
     if (!summary) return stateRow;
+    const familyStatuses = loadStateGapFamilyStatuses(stateRow.stateId);
     return {
       ...stateRow,
       classification: summary.classification,
@@ -420,6 +429,7 @@ function generateAllStateCaliforniaGradeAuditV3() {
       packetGenerated: true,
       packetBatch: summary.batch,
       packetPrimaryGapReason: summary.primary_gap_reason,
+      familyStatuses: familyStatuses || stateRow.familyStatuses,
     };
   });
 

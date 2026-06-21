@@ -34,6 +34,7 @@ const texasNext = readJsonl('data/generated/texas_next_action_queue_v2.jsonl');
 const reportV3 = fs.readFileSync(path.join(docsGeneratedDir, 'all-state-california-grade-audit-report-v3.md'), 'utf8');
 const planV3 = fs.readFileSync(path.join(docsGeneratedDir, 'all-state-priority-plan-v3.md'), 'utf8');
 const texasReport = fs.readFileSync(path.join(docsGeneratedDir, 'texas-california-grade-audit-report-v2.md'), 'utf8');
+const pennsylvaniaGap = readJsonl('data/generated/pennsylvania_gap_matrix_v2.jsonl');
 
 assert.equal(auditV3.stateCount, 50, 'v3 must still cover all 50 states');
 assert.equal(auditV3.packetCoverageCount, 50, 'v3 must confirm packet coverage for all 50 states');
@@ -94,6 +95,17 @@ assert.equal(
   readJson('data/generated/pennsylvania_california_grade_summary_v2.json').incorrectly_index_safe,
   'Pennsylvania top-level incorrectly-index-safe status must match its packet summary',
 );
+
+const pennsylvania = auditV3.states.find((state) => state.stateId === 'pennsylvania');
+assert.ok(pennsylvania, 'Pennsylvania must exist in v3');
+const pennsylvaniaGapStatusByFamily = new Map(pennsylvaniaGap.map((row) => [row.family, row.family_status]));
+for (const [family, familyStatus] of pennsylvaniaGapStatusByFamily.entries()) {
+  assert.equal(
+    pennsylvania.familyStatuses[family],
+    familyStatus,
+    `Pennsylvania family status for ${family} must match the refreshed packet gap matrix`,
+  );
+}
 
 assert.ok(reportV3.includes('packet_coverage_count: 50'), 'v3 report must state full packet coverage');
 assert.ok(reportV3.includes('packet_missing_states: none'), 'v3 report must state no missing packet states');

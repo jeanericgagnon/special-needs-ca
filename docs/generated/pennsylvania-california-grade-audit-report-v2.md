@@ -2,9 +2,9 @@
 
 - classification: PARTIAL
 - index_safe: false
-- completeness_pct: 58
+- completeness_pct: 83
 - county_count: 67
-- primary_gap_reason: county_grade_coverage_still_incomplete_after_exact_target_verification
+- primary_gap_reason: remaining_counties_lack_exact_iu_or_district_education_leaf_after_bounded_official_repair
 
 ## Family status
 
@@ -13,10 +13,10 @@
 - developmental_disability_idd_authority: verified_state_grade (statewide evidence is present at the required authority level)
 - early_intervention_part_c: verified_state_grade (statewide evidence is present at the required authority level)
 - special_education_idea_part_b: verified_state_grade (statewide evidence is present at the required authority level)
-- district_or_county_education_routing: exact_leaf_targets_verified_partial (Reviewed Pennsylvania district exact leaves verified (5), but 59/67 school-district routing rows still point to the generic PDE Intermediate Units directory instead of county/district exact leaves.)
-- vocational_rehabilitation_pre_ets: inventory_only (only legacy inventory hints or weak role matches exist)
-- protection_and_advocacy: missing (no credible current evidence)
-- parent_training_information_center: inventory_only (only legacy inventory hints or weak role matches exist)
+- district_or_county_education_routing: exact_leaf_targets_verified_partial (Official IU and district exact education leaves now cover 64/67 Pennsylvania counties. Remaining unresolved counties: Lackawanna County, Susquehanna County, Wayne County.)
+- vocational_rehabilitation_pre_ets: verified_state_grade (Official statewide OVR transition and vocational rehabilitation source is present and verified.)
+- protection_and_advocacy: verified_state_grade (Disability Rights Pennsylvania is already present as a verified first-party statewide P&A source.)
+- parent_training_information_center: verified_state_grade (PEAL Center is already present as a verified first-party statewide PTI source.)
 - legal_aid: missing (no credible current evidence)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
@@ -24,10 +24,7 @@
 
 ## Failure ledger
 
-- district_or_county_education_routing: generic_intermediate_unit_directory_still_used_for_county_grade_routing :: 59/67 Pennsylvania district-routing rows still use https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx; only 5 reviewed district-owned exact leaves are currently proven (https://www.pghschools.org/academics/pse-special-education/pse-special-education, https://readingsdpa.sites.thrillshare.com/o/rsd/page/special-education, https://readingsdpa.sites.thrillshare.com/o/rsd/page/student-services, https://www.pennsburysd.org/departments/special_education, https://www.pennsburysd.org/departments/student_services).
-- vocational_rehabilitation_pre_ets: legacy_or_inventory_only_evidence :: 14 inventory rows use DB-field agency labels; 43 inventory rows show federal/state mismatch; 15 generic roots need leaf verification
-- protection_and_advocacy: missing_required_source_family :: Protection and advocacy has no strong California-grade evidence for Pennsylvania.
-- parent_training_information_center: legacy_or_inventory_only_evidence :: 14 inventory rows use DB-field agency labels; 43 inventory rows show federal/state mismatch; 15 generic roots need leaf verification
+- district_or_county_education_routing: remaining_counties_lack_exact_iu_or_district_education_leaf_after_bounded_official_repair :: Verified official IU/district exact leaves now cover 64/67 Pennsylvania counties. Remaining unresolved counties: Lackawanna County, Susquehanna County, Wayne County. Exact blockers: Northeastern Educational Intermediate Unit 19:official_iu_root_unresolved_after_bounded_probe.
 - legal_aid: missing_required_source_family :: Legal aid has no strong California-grade evidence for Pennsylvania.
 
 ## Verified source samples
@@ -37,10 +34,10 @@
 - developmental_disability_idd_authority: verified_state_grade; samples=3; first=https://www.alleghenycounty.us/Human-Services/About/Offices/Developmental-Disabilities.aspx
 - early_intervention_part_c: verified_state_grade; samples=3; first=https://www.pa.gov/en/agencies/dhs/contact/county-mh-id-offices.html
 - special_education_idea_part_b: verified_state_grade; samples=3; first=https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx
-- district_or_county_education_routing: exact_leaf_targets_verified_partial; samples=5; first=https://www.pghschools.org/academics/pse-special-education/pse-special-education
-- vocational_rehabilitation_pre_ets: inventory_only; samples=0
-- protection_and_advocacy: missing; samples=3; first=https://www.disabilityrightspa.org
-- parent_training_information_center: inventory_only; samples=3; first=https://pealcenter.org
+- district_or_county_education_routing: exact_leaf_targets_verified_partial; samples=20; first=https://www.iu08.org/page/special-education-services
+- vocational_rehabilitation_pre_ets: verified_state_grade; samples=1; first=https://www.dli.pa.gov/Individuals/Disability-Services/ovr/Pages/default.aspx
+- protection_and_advocacy: verified_state_grade; samples=3; first=https://www.disabilityrightspa.org
+- parent_training_information_center: verified_state_grade; samples=3; first=https://pealcenter.org
 - legal_aid: missing; samples=0
 - able_program: verified_state_grade; samples=1; first=https://www.paable.gov/
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov/benefits/disability/apply-child.html
@@ -48,15 +45,5 @@
 
 ## Next actions
 
-- [critical] district_or_county_education_routing: replace_generic_intermediate_unit_directory_rows_with_county_or_district_exact_leaves
-- [major] vocational_rehabilitation_pre_ets: author_verified_state_manifest
-- [major] protection_and_advocacy: author_or_verify_statewide_source_family
-- [major] parent_training_information_center: author_verified_state_manifest
+- [critical] district_or_county_education_routing: resolve_remaining_intermediate_unit_or_county_specific_education_leaves_for_uncovered_counties
 - [major] legal_aid: author_or_verify_statewide_source_family
-
-## Batch 32 Pennsylvania education blocker audit
-
-- verified exact district leaves still proven: 5
-- generic Intermediate Units directory rows remaining: 59/67
-- next repair lane: replace_generic_intermediate_unit_directory_rows_with_county_or_district_exact_leaves
-- blocker URL still overused: https://www.education.pa.gov/Postsecondary-Adult/Pages/Intermediate-Units.aspx
