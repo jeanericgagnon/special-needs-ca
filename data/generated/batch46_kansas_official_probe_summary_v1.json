@@ -1,0 +1,86 @@
+{
+  "kancare": {
+    "url": "https://www.kancare.ks.gov/",
+    "finalUrl": "https://www.kancare.ks.gov/",
+    "status": 403,
+    "contentType": "text/html",
+    "evidence": "Reviewed 2026-06-21 live probe to the exact Kansas Medicaid root returned an Akamai-style \"Access Denied\" 403 challenge page instead of Medicaid content."
+  },
+  "kdadsRoot": {
+    "url": "https://www.kdads.ks.gov/",
+    "finalUrl": "https://www.kdads.ks.gov/",
+    "status": 403,
+    "contentType": "text/html",
+    "evidence": "Reviewed 2026-06-21 live probe to the exact KDADS root returned an Akamai-style \"Access Denied\" 403 challenge page instead of DD, waiver, or early-intervention content."
+  },
+  "kdadsWaiverEligibility": {
+    "url": "https://www.kdads.ks.gov/hcbs/eligibility",
+    "finalUrl": "https://www.kdads.ks.gov/hcbs/eligibility",
+    "status": 403,
+    "contentType": "text/html",
+    "evidence": "Reviewed 2026-06-21 live probe to the exact KDADS waiver eligibility leaf returned an Akamai-style \"Access Denied\" 403 challenge page."
+  },
+  "legacyDdRoot": {
+    "url": "https://dhhs.kansas.gov/dd",
+    "finalUrl": "",
+    "status": 0,
+    "contentType": "",
+    "evidence": "Reviewed 2026-06-21 live probe failed DNS resolution for dhhs.kansas.gov/dd, so the old packet DD root is dead."
+  },
+  "legacyEarlyStart": {
+    "url": "https://dhhs.kansas.gov/earlystart",
+    "finalUrl": "",
+    "status": 0,
+    "contentType": "",
+    "evidence": "Reviewed 2026-06-21 live probe failed DNS resolution for dhhs.kansas.gov/earlystart, so the old packet early-intervention root is dead."
+  },
+  "legacyLocations": {
+    "url": "https://dhhs.kansas.gov/locations",
+    "finalUrl": "",
+    "status": 0,
+    "contentType": "",
+    "evidence": "Reviewed 2026-06-21 live probe failed DNS resolution for dhhs.kansas.gov/locations, so the old county-local locator root is dead."
+  },
+  "ksdeSpecialEducation": {
+    "url": "https://www.ksde.gov/policy-and-funding/special-education",
+    "finalUrl": "https://www.ksde.gov/policy-and-funding/special-education",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned the exact KSDE special-education leaf with title \"Special Education\" and H1 \"Special Education.\""
+  },
+  "ksdeOldTab": {
+    "url": "https://www.ksde.org/Default.aspx?tabid=101",
+    "finalUrl": "https://www.ksde.gov/Default.aspx",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe to the old KSDE tab sample landed on the generic KSDE homepage, not a role-pure special-education leaf."
+  },
+  "dcfRehab": {
+    "url": "https://www.dcf.ks.gov/services/RS/Pages/default.aspx",
+    "finalUrl": "https://www.dcf.ks.gov/services/RS/Pages/default.aspx",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned the official Kansas DCF Rehabilitation Services Program Overview page with action text including \"Apply Now, Eligibility Status, and more\" and linked RS services, contacts, and policies."
+  },
+  "kansasLegalServices": {
+    "url": "https://www.kansaslegalservices.org/",
+    "finalUrl": "https://www.kansaslegalservices.org/",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned the Kansas Legal Services homepage stating it is \"A non-profit law firm and community education organization helping low and moderate income people in Kansas.\""
+  },
+  "drcAbout": {
+    "url": "https://www.drckansas.org/about",
+    "finalUrl": "https://www.drckansas.org/about",
+    "status": 200,
+    "contentType": "text/html;charset=utf-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned the DRC Kansas About page stating that DRC is a private non-profit organization with attorneys and advocates providing free advocacy and legal services for Kansans with disabilities."
+  },
+  "tinyK": {
+    "url": "https://www.ksitsn.org/tiny-k/",
+    "finalUrl": "",
+    "status": 0,
+    "contentType": "",
+    "evidence": "Reviewed 2026-06-21 bounded Part C repair probe to the likely Tiny-K root failed DNS resolution, so no reviewed role-aligned Kansas Part C replacement was captured."
+  }
+}

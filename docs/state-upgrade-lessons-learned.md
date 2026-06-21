@@ -212,3 +212,7 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Statewide Support Truth Can Survive A Local Staging Rejection
 *   **Problem:** Ohio’s Disability Rights Ohio page had already been accepted as first-party parsed evidence, but the staging lane still routed it to manual review because the nonprofit promotion path expected a county ID. That local-table constraint made the statewide P&A family look falsely missing in the packet.
 *   **Lesson:** When a reviewed first-party artifact clearly proves a statewide support family, do not let a county-level staging requirement erase that truth from the California-grade packet. Use the accepted artifact directly for packet evidence, and keep the local-table issue separate from the statewide gate.
+
+### Explicit First-Party Designation Text Can Resolve Statewide Support Families
+*   **Problem:** Some state packets leave PTI, P&A, or similar statewide support families as `missing` or `inventory_only` even when a reviewed first-party artifact already states the exact statewide designation on the homepage or About surface.
+*   **Lesson:** When a reviewed first-party page explicitly says it is the federally designated PTI, the statewide protection-and-advocacy organization, or another exact statewide support authority, upgrade the family from that designation text directly. Do not keep the family blocked just because the old packet lacked a clean sample chain.
