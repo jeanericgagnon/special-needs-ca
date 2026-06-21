@@ -74,6 +74,7 @@ assert.equal(verifiedRows.find((row) => row.family === 'early_intervention_part_
 assert.equal(verifiedRows.find((row) => row.family === 'vocational_rehabilitation_pre_ets').family_status, 'verified_state_grade', 'California verified sources must upgrade VR.');
 assert.equal(verifiedRows.find((row) => row.family === 'protection_and_advocacy').family_status, 'verified_state_grade', 'California verified sources must upgrade P&A.');
 assert.equal(verifiedRows.find((row) => row.family === 'legal_aid').family_status, 'verified_state_grade', 'California verified sources must upgrade legal aid.');
+assert.equal(verifiedRows.find((row) => row.family === 'ssi_ssa_federal_reference').sample_count, 1, 'California SSI/SSA must be backed by a concrete reviewed sample.');
 assert.equal(verifiedRows.find((row) => row.family === 'parent_training_information_center').sample_count, 0, 'California PTI must not preserve misleading sample rows.');
 
 assert.ok(report.includes('California final blocker decision'), 'California report must include the final blocker decision section.');

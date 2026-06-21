@@ -1,12 +1,14 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import Database from 'better-sqlite3';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const repoRoot = path.resolve(__dirname, '..');
 const generatedDir = path.join(repoRoot, 'data', 'generated');
 const docsGeneratedDir = path.join(repoRoot, 'docs', 'generated');
+const DB_PATH = path.join(repoRoot, 'ca_disability_navigator.db');
 
 const INPUTS = {
   summary: path.join(generatedDir, 'california_california_grade_summary_v2.json'),
@@ -48,6 +50,39 @@ function writeJsonl(filePath, rows) {
 
 function readSavedHtml(savedPath) {
   return fs.readFileSync(savedPath, 'utf8');
+}
+
+function loadCaliforniaSsiSample() {
+  const db = new Database(DB_PATH, { readonly: true });
+  try {
+    const row = db.prepare(`
+      SELECT id, name, source_url, official_source_url, verification_status
+      FROM programs
+      WHERE (
+        state_id = 'california'
+        OR state_id IS NULL
+        OR state_id = ''
+      )
+        AND (
+          id = 'ssi-for-children'
+          OR source_url LIKE '%ssa.gov/benefits/disability/apply-child%'
+          OR official_source_url LIKE '%ssa.gov/benefits/disability/apply-child%'
+        )
+        AND verification_status IN ('verified', 'official_verified')
+      ORDER BY CASE
+        WHEN state_id = 'california' THEN 0
+        WHEN id = 'ssi-for-children' THEN 1
+        ELSE 2
+      END
+      LIMIT 1
+    `).get();
+    if (!row) {
+      throw new Error('Missing reviewed California/federal SSI sample for California packet refresh.');
+    }
+    return row;
+  } finally {
+    db.close();
+  }
 }
 
 function recalcSummary(summary, gapRows, failureRows, verifiedRows) {
@@ -133,9 +168,10 @@ export function generateBatch41CaliforniaFinalBlockerRefreshV1() {
   const legalAidJudiciaryResult = scrapeResults.find((row) => row.url === 'https://selfhelp.courts.ca.gov/get-free-or-low-cost-legal-help');
   const legalAidBarResult = scrapeResults.find((row) => row.url === 'https://www.calbar.ca.gov/public/legal-resources/free-legal-help');
   const ptiTarget = sourceTargets.find((row) => row.source_name === 'Matrix Parent Network and Resource Center');
+  const ssiSample = loadCaliforniaSsiSample();
 
-  if (!earlyStartResult || !vrResult || !paResult || !legalAidJudiciaryResult || !legalAidBarResult || !ptiTarget) {
-    throw new Error('California refresh requires reviewed Early Start, VR, P&A, legal-aid evidence, and the designated PTI source target.');
+  if (!earlyStartResult || !vrResult || !paResult || !legalAidJudiciaryResult || !legalAidBarResult || !ptiTarget || !ssiSample) {
+    throw new Error('California refresh requires reviewed Early Start, VR, P&A, legal-aid, SSI evidence, and the designated PTI source target.');
   }
 
   const earlyStartHtml = readSavedHtml(earlyStartResult.saved_path);
@@ -347,6 +383,25 @@ export function generateBatch41CaliforniaFinalBlockerRefreshV1() {
             verification_status: 'verified',
             source_type: 'official_fetched_page',
             source_table: 'ca_scrape_results_v1',
+          },
+        ],
+      };
+    }
+    if (row.family === 'ssi_ssa_federal_reference') {
+      return {
+        ...row,
+        family_status: 'verified_state_grade',
+        evidence_strength: 'strong',
+        sample_count: 1,
+        blocker_code: null,
+        blocker_evidence: null,
+        samples: [
+          {
+            sample_name: ssiSample.name,
+            source_url: ssiSample.official_source_url || ssiSample.source_url,
+            verification_status: ssiSample.verification_status,
+            source_type: 'official_database_program',
+            source_table: 'programs',
           },
         ],
       };

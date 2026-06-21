@@ -41,7 +41,7 @@
 - parent_training_information_center: missing_verified_statewide_source; samples=0
 - legal_aid: verified_state_grade; samples=2; first=https://selfhelp.courts.ca.gov/get-free-or-low-cost-legal-help
 - able_program: verified_state_grade; samples=1; first=https://calable.ca.gov
-- ssi_ssa_federal_reference: verified_state_grade; samples=0
+- ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov/benefits/disability/apply-child.html
 - county_local_disability_resources: blocked_exact_leaf_repair_exhausted; samples=3; first=https://www.alamedacounty.ca.gov/public-health/ccs
 
 ## Next actions
