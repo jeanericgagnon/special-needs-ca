@@ -148,3 +148,7 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Statewide Agency Landings Must Fail Closed In County-Grade Leaf Repair
 *   **Problem:** Bounded same-domain discovery can still surface attractive but misleading statewide pages like `/agencies/dhs` or generic application pages that mention services without actually proving county office or district routing.
 *   **Lesson:** County-grade leaf repair must reject statewide agency landings unless the title, headings, and URL itself prove local office, district, regional, or locator semantics. Contact-only or apply-only state pages are progress hints, not county-grade proof.
+
+### Structured County Coverage Can Upgrade One Official Leaf To Statewide County-Grade
+*   **Problem:** Some statewide repair leaves stay partial because they only prove one district or one local office, while others genuinely carry statewide county coverage in structured HTML that should not be left trapped in a generic partial bucket.
+*   **Lesson:** Promote a family from exact-leaf partial to verified state-grade only when the official leaf itself enumerates county coverage explicitly, such as `Counties Served` lists or a county-office table. If the county mapping is interactive-only, hidden behind scripts, or absent from the fetched HTML, keep the family partial and ledger the blocker rather than inferring coverage.

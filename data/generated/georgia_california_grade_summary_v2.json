@@ -7,17 +7,16 @@
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 159,
-  "completeness_pct": 50,
-  "strong_critical_families": 6,
-  "weak_critical_families": 4,
+  "completeness_pct": 58,
+  "strong_critical_families": 7,
+  "weak_critical_families": 3,
   "missing_critical_families": 2,
   "total_critical_families": 12,
-  "primary_gap_reason": "generic_or_statewide_evidence_used_where_local_required",
+  "primary_gap_reason": "county_grade_coverage_still_incomplete_after_exact_target_verification",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "developmental_disability_idd_authority",
-    "district_or_county_education_routing",
-    "county_local_disability_resources"
+    "district_or_county_education_routing"
   ],
   "major_gap_families": [
     "protection_and_advocacy",

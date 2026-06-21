@@ -1,0 +1,59 @@
+{
+  "batch": "batch_21_statewide_mapping_repair_v1",
+  "generated_at": "2026-06-21T17:54:53.316Z",
+  "states": [
+    {
+      "state": "california",
+      "classification": "PARTIAL",
+      "index_safe": false,
+      "repaired_families": [],
+      "unresolved_families": [
+        "district_or_county_education_routing"
+      ]
+    },
+    {
+      "state": "pennsylvania",
+      "classification": "PARTIAL",
+      "index_safe": false,
+      "repaired_families": [],
+      "unresolved_families": [
+        "district_or_county_education_routing",
+        "county_local_disability_resources"
+      ]
+    },
+    {
+      "state": "florida",
+      "classification": "PARTIAL",
+      "index_safe": false,
+      "repaired_families": [
+        "developmental_disability_idd_authority"
+      ],
+      "unresolved_families": [
+        "district_or_county_education_routing"
+      ]
+    },
+    {
+      "state": "georgia",
+      "classification": "BLOCKED",
+      "index_safe": false,
+      "repaired_families": [
+        "county_local_disability_resources"
+      ],
+      "unresolved_families": [
+        "developmental_disability_idd_authority"
+      ]
+    },
+    {
+      "state": "ohio",
+      "classification": "BLOCKED",
+      "index_safe": false,
+      "repaired_families": [],
+      "unresolved_families": [
+        "district_or_county_education_routing"
+      ]
+    }
+  ],
+  "repaired_family_count": 2,
+  "unresolved_family_count": 6,
+  "texas_preserved_complete": true
+}

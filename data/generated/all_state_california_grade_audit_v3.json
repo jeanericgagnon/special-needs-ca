@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T17:18:10.534Z",
+  "generatedAt": "2026-06-21T17:54:47.970Z",
   "stateCount": 50,
   "classifications": {
     "UNSTARTED": 42,
@@ -585,11 +585,11 @@
       "legacyManualReviewRate": 0,
       "legacyAllowlistedCountyCount": 14,
       "countyCount": 67,
-      "strongCriticalFamilies": 4,
-      "weakCriticalFamilies": 6,
+      "strongCriticalFamilies": 5,
+      "weakCriticalFamilies": 5,
       "missingCriticalFamilies": 2,
       "totalCriticalFamilies": 12,
-      "completenessPct": 33,
+      "completenessPct": 41,
       "dbMetrics": {
         "state_id": "florida",
         "state_code": "FL",
@@ -654,11 +654,11 @@
       "legacyManualReviewRate": 38.69,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 159,
-      "strongCriticalFamilies": 6,
-      "weakCriticalFamilies": 4,
+      "strongCriticalFamilies": 7,
+      "weakCriticalFamilies": 3,
       "missingCriticalFamilies": 2,
       "totalCriticalFamilies": 12,
-      "completenessPct": 50,
+      "completenessPct": 58,
       "dbMetrics": {
         "state_id": "georgia",
         "state_code": "GA",
@@ -708,7 +708,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_2_repair_blocked_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required"
+      "packetPrimaryGapReason": "county_grade_coverage_still_incomplete_after_exact_target_verification"
     },
     {
       "stateId": "hawaii",

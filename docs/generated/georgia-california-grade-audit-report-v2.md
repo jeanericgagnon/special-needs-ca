@@ -66,3 +66,9 @@
 - county_local_disability_resources: verified exact leaf targets -> https://dfcs.georgia.gov/locations
 
 - Georgia remains BLOCKED and not index-safe until every critical family passes county-grade proof.
+
+## Batch 21 statewide mapping repair
+
+- county_local_disability_resources: Official DFCS county offices directory lists county office coverage across 159/159 Georgia counties.
+
+- Georgia remains gated unless every critical family reaches California-grade proof.

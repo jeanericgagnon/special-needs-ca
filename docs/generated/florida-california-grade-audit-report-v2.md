@@ -72,3 +72,9 @@
 - district_or_county_education_routing: verified exact leaf targets -> https://www.bakerk12.org/departments/exceptional-student-education-student-services/exceptional-student-education-student-services, https://www.bakerk12.org/departments/exceptional-student-education-student-services/student-services-resources, https://www.bakerk12.org/departments/exceptional-student-education-student-services/staff
 
 - Florida remains PARTIAL and not index-safe until every critical family passes county-grade proof.
+
+## Batch 21 statewide mapping repair
+
+- developmental_disability_idd_authority: Official APD regional offices page lists counties served across 67/67 Florida counties.
+
+- Florida remains gated unless every critical family reaches California-grade proof.
