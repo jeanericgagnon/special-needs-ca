@@ -1,0 +1,11 @@
+{
+  "batch": "batch_29_florida_repair_v1",
+  "generated_at": "2026-06-21T19:10:31.811Z",
+  "state": "florida",
+  "classification": "PARTIAL",
+  "index_safe": false,
+  "incorrectly_index_safe": false,
+  "county_local_blocker_code": "official_local_service_center_locator_missing_after_same_domain_repair",
+  "launch_gate_cleared": true,
+  "texas_preserved_complete": true
+}

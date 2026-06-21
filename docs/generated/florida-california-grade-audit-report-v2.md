@@ -86,3 +86,11 @@
 - county_local_disability_resources: remained blocked after bounded same-domain repair; The legacy ACCESS local service center map now 404s, and bounded same-domain repair only surfaced community-partner search and a statewide customer service center, not a county-grade official locator.
 
 - Florida remains PARTIAL and not index-safe until every critical family reaches California-grade proof.
+
+## Batch 29 Florida launch-gate and county-local refresh
+
+- county_local_disability_resources: The legacy ACCESS local service center map now 404s, and bounded same-domain live recheck still exposes only community-partner search plus a statewide customer service center, not a county-grade official locator.
+- launch_gate: cleared as stale packet metadata because Florida now explicitly remains gated by current county-local and district-routing evidence, not by a legacy exposed/index-safe flag.
+- No new reusable lesson was promoted from Batch 29; the existing county-local replacement lesson remains authoritative.
+
+- Florida remains PARTIAL and not index-safe until every critical family reaches California-grade proof.

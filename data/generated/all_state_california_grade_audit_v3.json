@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T19:05:58.436Z",
+  "generatedAt": "2026-06-21T19:10:37.549Z",
   "stateCount": 50,
   "classifications": {
     "UNSTARTED": 42,
@@ -578,7 +578,7 @@
       "stateName": "Florida",
       "classification": "PARTIAL",
       "indexSafe": false,
-      "incorrectlyIndexSafe": true,
+      "incorrectlyIndexSafe": false,
       "legacyStatusLabel": "READY_FOR_ALLOWLIST",
       "legacyGateScore": 99.8,
       "legacyRawDepthScore": 100,
@@ -639,7 +639,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_1_fast_finish_states_v1",
-      "packetPrimaryGapReason": "legacy_index_exposed_without_california_grade_reaudit"
+      "packetPrimaryGapReason": "county_grade_coverage_still_incomplete_after_exact_target_verification"
     },
     {
       "stateId": "georgia",
