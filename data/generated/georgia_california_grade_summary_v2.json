@@ -12,7 +12,7 @@
   "weak_critical_families": 3,
   "missing_critical_families": 2,
   "total_critical_families": 12,
-  "primary_gap_reason": "county_grade_coverage_still_incomplete_after_exact_target_verification",
+  "primary_gap_reason": "official_county_lookup_table_has_empty_county_cells",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "developmental_disability_idd_authority",

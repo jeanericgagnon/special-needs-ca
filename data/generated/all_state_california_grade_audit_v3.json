@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T18:26:52.276Z",
+  "generatedAt": "2026-06-21T18:39:37.071Z",
   "stateCount": 50,
   "classifications": {
     "UNSTARTED": 42,
@@ -708,7 +708,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_2_repair_blocked_states_v1",
-      "packetPrimaryGapReason": "county_grade_coverage_still_incomplete_after_exact_target_verification"
+      "packetPrimaryGapReason": "official_county_lookup_table_has_empty_county_cells"
     },
     {
       "stateId": "hawaii",

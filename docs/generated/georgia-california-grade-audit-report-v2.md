@@ -72,3 +72,10 @@
 - county_local_disability_resources: Official DFCS county offices directory lists county office coverage across 159/159 Georgia counties.
 
 - Georgia remains gated unless every critical family reaches California-grade proof.
+
+## Batch 24 Georgia repair
+
+- district_or_county_education_routing: verified district-owned exact leaves -> https://www.cherokeek12.net/divisions/curriculum-instruction/special-educationsection-504, https://www.cherokeek12.net/divisions/curriculum-instruction/special-educationsection-504/parent-rights, https://www.clayton.k12.ga.us/departments/special-education, https://www.clayton.k12.ga.us/departments/student-services, https://www.clarke.k12.ga.us/o/elc/page/preschool-special-education/
+- developmental_disability_idd_authority: remained blocked after bounded live re-check; official county table exposed 159 region rows but 159/159 county cells were blank in static HTML.
+
+- Georgia remains BLOCKED and not index-safe until every critical family reaches California-grade proof.

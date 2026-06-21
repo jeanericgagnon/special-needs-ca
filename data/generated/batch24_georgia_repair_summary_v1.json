@@ -1,0 +1,10 @@
+{
+  "batch": "batch_24_georgia_repair_v1",
+  "generated_at": "2026-06-21T18:39:26.651Z",
+  "state": "georgia",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "district_exact_leaves_verified": 5,
+  "dd_county_blocker_code": "official_county_lookup_table_has_empty_county_cells",
+  "texas_preserved_complete": true
+}
