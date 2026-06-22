@@ -64,7 +64,7 @@
       "family": "district_or_county_education_routing",
       "severity": "critical",
       "failure_code": "official_statewide_education_leaves_live_but_no_county_or_district_contract_preserved",
-      "evidence": "Reviewed 2026-06-22 live probes to the exact KSDE Special Education, Dispute Resolution, Parent Rights, Data Central Special Education Reports, and School District Maps leaves now succeed, but the packet still preserves no extracted county-to-district routing contract or district-owned local special-education contact source.",
+      "evidence": "Reviewed 2026-06-22 live probes to the exact KSDE Special Education, Dispute Resolution, Parent Rights, Data Central Special Education Reports, and School District Maps leaves now succeed. The official School District Maps page also exposes a live USD county map PDF at https://www.ksde.gov/docs/default-source/sf/2025-usd-county-map.pdf?sfvrsn=8ceea3ce_5, and bounded extraction confirms that it is not dead or image-only. But the extracted text still collapses into district numbers plus county names without a reviewable county-to-district join, and the packet still preserves no district-owned local special-education contact source.",
       "next_action": "author_exact_district_routing_contract_from_official_datacentral_or_county_map_sources"
     },
     {

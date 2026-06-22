@@ -513,6 +513,9 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Narrow Program Local Leaves Do Not Repair A Broader County-Office Family
 *   **Lesson:** If an official site map proves the reorg host can publish exact local leaves, verify whether those leaves belong to the blocked program family before treating the host as repaired. Alaska DFCS exposed real Pioneer Home location pages, but that did not repair Public Assistance or disability office routing because the local leaves were for a different, narrower program.
 
+### Browser-Rendered Replatforms Still Need Fetched Office Rows
+*   **Lesson:** If a replatformed official host renders family-facing pages in a browser review but the low-token runtime still gets `403` and the fetched HTML only shows empty section headers like `Office locations`, keep the county-local family blocked. Alaska’s new health pages loaded in browser-style review, but they still did not expose county or office rows in fetched HTML, so the lane was not actually repaired.
+
 ### Official District Directory Spreadsheets With County And AEA Columns Can Clear County-Grade Education Routing
 *   **Lesson:** If an official district directory explicitly assigns districts to counties and preserves county, AEA, district, phone, email, and website fields, it can clear county-grade education routing without needing separate district special-education contact leaves. Iowa cleared once the live DOE district directory proved all 99 counties had mapped district routing rows.
 
@@ -524,6 +527,9 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Use The Bundled PDF Runtime Before Declaring An Official PDF Fully Image-Only
 *   **Lesson:** Before preserving a PDF blocker as fully image-only, run one bounded extraction pass with the bundled workspace Python runtime. Arizona’s ALTCS county map still was not enough to clear county routing, but bundled `pypdf` recovered the county list and proved the lane was partially parseable even though the admin-office PDFs remained OCR-only blockers.
+
+### Public District Map PDFs Can Still Fail The Routing Contract Even When Text Extraction Works
+*   **Lesson:** If an official school-district map PDF extracts cleanly but only yields county names plus district numbers without a stable join or local-contact fields, keep district routing blocked. Kansas’ live USD county map PDF was real and parseable, but it still did not preserve a reviewable county-to-district routing contract.
 
 ### Same-Domain API Paths Still Fail Closed If The Official Contract Requires Auth
 *   **Lesson:** If a public bundle names a same-domain county-search endpoint, probe that exact endpoint once before promising a hidden public contract. Florida’s MyACCESS bundle exposed `/accountmanagement/getZipCountyDetails` and `/communityPartnerSearch`, but both returned `401 Unauthorized`, so the lane stayed blocked as authenticated-only rather than undocumented.
