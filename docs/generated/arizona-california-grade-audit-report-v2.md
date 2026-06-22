@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 83
 - county_count: 15
-- primary_gap_reason: challenged_official_roots_and_zero_exact_leaf_targets_in_authoring_packets
+- primary_gap_reason: challenged_official_roots_zero_exact_education_leaves_and_nonresolving_county_root_inventory
 
 ## Family status
 
@@ -20,12 +20,12 @@
 - legal_aid: verified_state_grade (reviewed first-party statewide legal-aid evidence is present at the required authority level)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_zero_exact_leaf_packet (The challenged Arizona DES root is no longer the only blocker: the Arizona county-local office packet exists, but it still contains 0 exact county-specific or regional office leaves for the 15 affected counties. Until exact county or regional office targets are authored, the family remains blocked on DOI and generic locator fallback rows rather than on a runnable local repair queue.)
+- county_local_disability_resources: blocked_zero_exact_leaf_packet (The Arizona county-local office packet is still not runnable: it contains 0 exact office leaves, and a bounded live probe of the 15 county-root seeds currently stored in the DB showed 14/15 do not resolve at all while the remaining Maricopa root returned HTTP 403. Until the stale county-root inventory is replaced with live official office roots or exact leaves, the family remains blocked on DOI and generic locator fallback rows rather than on a trustworthy local repair queue.)
 
 ## Failure ledger
 
 - district_or_county_education_routing: education_packet_scaffold_only_zero_exact_district_leaves :: Reviewed 2026-06-22 Arizona district-or-county education routing packet plus current blocker artifacts. The official AZED special-education lane remains challenge-blocked, and the authored packet at data/generated/arizona_district_or_county_education_routing_leaf_authoring_packet_v1.json still reports authoredExactLeafCount=0 across 15 affected counties. No district-owned Arizona special-education or student-services leaf has yet been attached to the repair queue, so the state packet still depends on generic https://www.azed.gov/specialeducation fallback rows.
-- county_local_disability_resources: county_office_packet_scaffold_only_zero_exact_office_leaves :: Reviewed 2026-06-22 Arizona county-local office packet plus current blocker artifacts. The official Arizona DES lane remains challenge-blocked, and the authored packet at data/generated/arizona_county_local_disability_resources_leaf_authoring_packet_v1.json still reports authoredExactLeafCount=0 across 15 affected counties. No exact county-specific or regional DES/FAA office leaf has yet been attached to the repair queue, so the state packet still depends on 14 DOI placeholder rows plus 1 generic legacy locator row.
+- county_local_disability_resources: county_office_packet_empty_and_county_root_inventory_nonresolving :: Reviewed 2026-06-22 bounded live probes of the 15 Arizona county-root URLs currently stored in the DB for county-local authoring. Apache, Cochise, Coconino, Gila, Graham, Greenlee, La Paz, Mohave, Navajo, Pima, Pinal, Santa Cruz, Yavapai, and Yuma all failed DNS resolution on their current `*-az.gov` roots, while Maricopa returned HTTP 403. The official Arizona DES lane also remains challenge-blocked, and the authored packet at data/generated/arizona_county_local_disability_resources_leaf_authoring_packet_v1.json still reports authoredExactLeafCount=0, so the county-local repair queue cannot yet be truthfully seeded from the existing county-root inventory.
 
 ## Verified source samples
 
@@ -46,11 +46,11 @@
 ## Next actions
 
 - [critical] district_or_county_education_routing: author_exact_district_owned_special_education_leaves_before_reopening_arizona_education
-- [critical] county_local_disability_resources: author_exact_county_or_regional_des_office_leaves_before_reopening_arizona_county_local
+- [critical] county_local_disability_resources: replace_nonresolving_county_root_seeds_before_authoring_arizona_county_local_leaves
 
 ## Repair decision
 
 - Arizona remains BLOCKED and not index-safe.
-- The official state education and DES roots are still challenge-blocked, but the sharper immediate blocker is now packet emptiness: both authored leaf packets still contain zero exact local targets.
-- No district-owned education leaf or county-specific office leaf was attached to the Arizona repair queue in this bounded pass, so the state still depends on generic statewide or DOI fallback rows.
-- Arizona should only reopen these two families once exact district-owned or county-specific first-party targets are authored into the packets themselves.
+- Education is still blocked because the packet has zero district-owned exact leaves.
+- County-local is now sharper than “zero exact leaves” alone: the current county-root inventory itself is mostly dead, so the repair lane cannot be trusted until those seeds are replaced with live official office roots or exact leaves.
+- Arizona should only reopen county-local once the stale county-root inventory is replaced and exact first-party office targets are authored.

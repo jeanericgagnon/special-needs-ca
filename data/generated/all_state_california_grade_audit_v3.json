@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-22T18:32:42.207Z",
+  "generatedAt": "2026-06-22T18:50:55.680Z",
   "stateCount": 50,
   "classifications": {
-    "COMPLETE": 7,
-    "BLOCKED": 43
+    "COMPLETE": 8,
+    "BLOCKED": 42
   },
-  "indexSafeCount": 7,
+  "indexSafeCount": 8,
   "incorrectlyIndexSafeStates": [],
   "pilotStates": [
     "texas",
@@ -221,7 +221,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_16_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "challenged_official_roots_and_zero_exact_leaf_targets_in_authoring_packets",
+      "packetPrimaryGapReason": "challenged_official_roots_zero_exact_education_leaves_and_nonresolving_county_root_inventory",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
@@ -438,8 +438,8 @@
       "stateId": "connecticut",
       "stateCode": "CT",
       "stateName": "Connecticut",
-      "classification": "BLOCKED",
-      "indexSafe": false,
+      "classification": "COMPLETE",
+      "indexSafe": true,
       "incorrectlyIndexSafe": false,
       "legacyStatusLabel": "KEEP_GATED (Skeleton)",
       "legacyGateScore": 0,
@@ -447,11 +447,11 @@
       "legacyManualReviewRate": 51.06,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 8,
-      "strongCriticalFamilies": 11,
-      "weakCriticalFamilies": 1,
+      "strongCriticalFamilies": 12,
+      "weakCriticalFamilies": 0,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 91,
+      "completenessPct": 100,
       "dbMetrics": {
         "state_id": "connecticut",
         "state_code": "CT",
@@ -490,7 +490,7 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_public_edsight_shell_plus_sas_logon_query",
+        "district_or_county_education_routing": "verified_county_grade",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
@@ -501,7 +501,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_15_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "public_edsight_shell_does_not_yield_anonymous_district_records",
+      "packetPrimaryGapReason": "none",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {

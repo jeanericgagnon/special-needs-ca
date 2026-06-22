@@ -428,3 +428,9 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Live Regional Contact Pages Can Retire A PDF-Only Blocker
 *   **Lesson:** If a state replaces dead county-office leaves with a live regional hub, check whether that hub also links public region-specific contact pages before stopping at the PDF. Connecticut DDS became county-grade again because the counties-served text lived on the hub while region headquarters and satellite contacts lived on the public North/South/West contact leaves.
+
+### County Root Inventory Must Pass Live DNS Before It Seeds A Leaf Packet
+*   **Lesson:** Do not treat county homepage URLs from legacy inventory as valid authoring seeds until they survive a live DNS/HTTP probe. Arizona showed that 14/15 stored `*-az.gov` county roots did not resolve at all and the lone surviving root returned 403, so a packet can look populated while still having no live local repair surface.
+
+### District-Controlled Sitemap Leaves Can Retire An Authenticated State Directory Blocker
+*   **Lesson:** If a state education directory is public-shell-only or auth-gated, do one bounded district-controlled sitemap pass before preserving the blocker. Connecticut cleared its last blocker because live district-owned pages like `Special Education`, `Student Services & Special Education`, and `Pupil Services` existed on district domains even though EdSight itself would not return anonymous district records.

@@ -1,0 +1,9 @@
+# Connecticut District Completion Report v1
+
+- classification: COMPLETE
+- index_safe: true
+- completeness_pct: 100
+
+## Evidence checks
+
+- district_routing: Reviewed 2026-06-22 bounded first-party district checks for one district-owned education-routing leaf in each Connecticut county: Fairfield Public Schools Special Education (Fairfield) https://www.fairfieldschools.org/departments/special-education, Hartford Public Schools Special Education (Hartford) https://www.hartfordschools.org/page/special-education/, Torrington Public Schools Special Education (Litchfield) https://www.torrington.org/departments/departments/student-services/special-education, Middletown Public Schools Special Education & Pupil Services (Middlesex) https://www.middletownschools.org/page/special-education-and-pupil-services/, New Haven Public Schools Office of Special Education & Student Services (New Haven) https://www.nhps.net/page/office-of-special-education-student-services/, Norwich Public Schools Student Services & Special Education (New London) https://www.norwichpublicschools.org/departments/student-services-special-education, Vernon Public Schools Office of Pupil Services (Tolland) https://www.vernonpublicschools.org/page/office-of-pupil-services/, and Windham Public Schools Pupil Services (Windham) https://www.windhamps.org/page/pupil-services/. All eight pages resolved on district-controlled domains and preserved direct district-owned education-routing department titles, replacing Connecticut’s statewide SDE fallback rows.

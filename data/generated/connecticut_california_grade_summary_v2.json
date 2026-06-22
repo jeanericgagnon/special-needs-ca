@@ -3,20 +3,18 @@
   "state_code": "CT",
   "state_name": "Connecticut",
   "batch": "batch_15_procedure_hardening_states_v1",
-  "classification": "BLOCKED",
-  "index_safe": false,
+  "classification": "COMPLETE",
+  "index_safe": true,
   "incorrectly_index_safe": false,
   "county_count": 8,
-  "completeness_pct": 91,
-  "strong_critical_families": 11,
-  "weak_critical_families": 1,
+  "completeness_pct": 100,
+  "strong_critical_families": 12,
+  "weak_critical_families": 0,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "public_edsight_shell_does_not_yield_anonymous_district_records",
+  "primary_gap_reason": "none",
   "recommended_batch": "batch_3_procedure_hardening",
-  "critical_gap_families": [
-    "district_or_county_education_routing"
-  ],
+  "critical_gap_families": [],
   "major_gap_families": [],
   "verified_source_families_with_samples": [
     "medicaid_state_health_coverage",
@@ -32,19 +30,11 @@
     "ssi_ssa_federal_reference",
     "county_local_disability_resources"
   ],
-  "complete_ready": false,
+  "complete_ready": true,
   "texas_v10_rule_basis": [
     "Preserve noindex until all critical families are verified",
     "District-grade routing must use direct local or district-owned evidence, not generic or statewide fallback",
     "Legacy/inventory-only evidence does not satisfy California-grade completeness"
   ],
-  "final_blockers": [
-    {
-      "family": "district_or_county_education_routing",
-      "severity": "critical",
-      "failure_code": "public_edsight_shell_does_not_yield_anonymous_district_records",
-      "evidence": "Reviewed 2026-06-22 bounded live checks on the current Public EdSight district-finder shell https://public-edsight.ct.gov/overview/find-schools/find-school-district and its linked official OrgSearchReport endpoint https://edsight.ct.gov/SASStoredProcess/do?_keyword=&_program=%2FCTDOE%2FEdSight%2FRelease%2FReporting%2FPublic%2FReports%2FStoredProcesses%2FOrgSearchReport_SiteCore&orgtype=&orgdistrict=&orgname=Hartford&_select=Submit. The public shell renders anonymous navigation only, while the direct district query bounces to SAS Logon instead of returning public district records, so the official state directory surface still does not preserve county- or district-grade routing contacts that can replace Connecticut's statewide SDE fallback rows.",
-      "next_action": "author_district_owned_exact_targets_or_browser_auth_edsight_query"
-    }
-  ]
+  "final_blockers": []
 }

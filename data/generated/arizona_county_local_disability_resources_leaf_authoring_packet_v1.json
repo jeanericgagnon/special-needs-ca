@@ -8,7 +8,9 @@
     "doiFallbackCountyRows": 14,
     "genericLegacyRootRows": 1,
     "challengedOfficialRoots": 8,
-    "authoredExactLeafCount": 0
+    "authoredExactLeafCount": 0,
+    "nonresolvingCountyRootCount": 14,
+    "blockedCountyRootCount": 1
   },
   "exact_target_goals": [
     "county or regional FAA office page",
@@ -29,6 +31,7 @@
     "https://dhhs.arizona.gov/locations"
   ],
   "root_domains_to_review": [
+    "replace current DB county roots; 14 of 15 current Arizona county roots do not resolve and Maricopa returns HTTP 403",
     "https://des.az.gov/",
     "https://www.azahcccs.gov/"
   ],
