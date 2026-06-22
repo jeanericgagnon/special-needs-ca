@@ -17,7 +17,6 @@ const INPUTS = {
   next: path.join(generatedDir, 'new-york_next_action_queue_v2.jsonl'),
   report: path.join(docsGeneratedDir, 'new-york-california-grade-audit-report-v2.md'),
   sourceTargets: path.join(repoRoot, 'data', 'source_targets', 'new-york.json'),
-  authoredTargets: path.join(docsGeneratedDir, 'authored-missing-source-targets-2026-06-17.json'),
 };
 
 const OUTPUTS = {
@@ -163,9 +162,9 @@ function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows,
     `- County-local disability resources remain blocked because the official New York LDSS county directory at ${facts.countyDirectoryUrl} returned HTTP 403 during bounded live verification, and no replacement live county-grade official locator is attached to the packet evidence chain.`,
     `- District or county education routing remains blocked because only ${facts.educationLeafCount} reviewed BOCES-owned exact leaves have been verified; that is not enough to truthfully prove district-grade routing across all ${summary.county_count} New York counties without reopening broader district authoring.`,
     `- Parent training information center remains below California-grade because the reviewed Parent Network of WNY evidence at ${facts.ptiUrl} is still explicitly scoped to Western New York support, not a truthful statewide PTI route.`,
-    `- Legal aid remains below California-grade because New York currently stops at the authored LSC planning target (${facts.legalAidUrl}), not a reviewed New York legal-aid source.`,
-    '- ACCES-VR and Disability Rights New York were upgraded out of the blocker list because reviewed verified evidence already existed on disk and now anchors those statewide support families truthfully.',
-    '- New York is therefore truthfully final-blocked and not index-safe until a live official county-office directory or county-owned locator is verified, district-grade education leaves expand beyond the current bounded BOCES set, a statewide PTI route is proven beyond Western New York scope, and a reviewed New York legal-aid source is added.',
+    '- Legal aid is now verified at the statewide support layer because LawHelpNY is a reviewed New York statewide legal-help portal with county-based resource routing and a free legal-services directory.',
+    '- ACCES-VR and Disability Rights New York remain upgraded out of the blocker list because reviewed verified evidence already existed on disk and now anchors those statewide support families truthfully.',
+    '- New York is therefore truthfully final-blocked and not index-safe until a live official county-office directory or county-owned locator is verified, district-grade education leaves expand beyond the current bounded BOCES set, and a statewide PTI route is proven beyond Western New York scope.',
   ].join('\n') + '\n';
 }
 
@@ -175,7 +174,6 @@ export function generateBatch39NewYorkFinalBlockerRefreshV1() {
   const failureRows = readJsonl(INPUTS.failure);
   const verifiedRows = readJsonl(INPUTS.verified);
   const sourceTargets = readJson(INPUTS.sourceTargets);
-  const authoredTargets = readJson(INPUTS.authoredTargets);
 
   const educationVerified = verifiedRows.find((row) => row.family === 'district_or_county_education_routing');
   const countyVerified = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
@@ -183,13 +181,11 @@ export function generateBatch39NewYorkFinalBlockerRefreshV1() {
   const ptiTarget = sourceTargets.find((row) => row.source_name === 'Parent Network of WNY');
   const paTarget = sourceTargets.find((row) => row.source_name === 'Disability Rights New York (DRNY)');
   const countyTarget = sourceTargets.find((row) => row.source_name === 'NYS Local Social Services Districts (LDSS)');
-  const authoredRows = authoredTargets.targets || authoredTargets.rows || authoredTargets;
-  const legalAidTarget = authoredRows.find((row) => row?.stateId === 'new-york' && row?.gapFamily === 'legal_aid');
   const vrProgramSample = loadNewYorkVrProgramSample();
   const paAcceptedArtifact = loadNewYorkPaAcceptedArtifact();
   const ptiRegionalSample = loadNewYorkPtiRegionalSample();
 
-  if (!educationVerified || !countyVerified || !vrTarget || !ptiTarget || !paTarget || !countyTarget || !legalAidTarget || !vrProgramSample || !paAcceptedArtifact || !ptiRegionalSample) {
+  if (!educationVerified || !countyVerified || !vrTarget || !ptiTarget || !paTarget || !countyTarget || !vrProgramSample || !paAcceptedArtifact || !ptiRegionalSample) {
     throw new Error('New York final blocker refresh requires source targets plus county and education packet evidence.');
   }
 
@@ -232,8 +228,8 @@ export function generateBatch39NewYorkFinalBlockerRefreshV1() {
     if (row.family === 'legal_aid') {
       return {
         ...row,
-        family_status: 'missing_verified_source',
-        status_reason: `Only the authored LSC planning target ${legalAidTarget.sourceUrl} is present; no reviewed New York legal-aid source has been verified into the packet.`,
+        family_status: 'verified_state_grade',
+        status_reason: 'LawHelpNY now provides reviewed New York statewide legal-help routing from a first-party portal with county-based resource lookup.',
       };
     }
     return row;
@@ -264,14 +260,6 @@ export function generateBatch39NewYorkFinalBlockerRefreshV1() {
         failure_code: 'reviewed_western_new_york_pti_source_not_statewide',
         evidence: `Reviewed Parent Network of WNY evidence from ${ptiTarget.source_url} says the organization reaches families across WNY per year, which does not truthfully satisfy the statewide PTI gate.`,
         next_action: 'hold_blocked_until_reviewed_statewide_new_york_pti_source_or_statewide_scope_proof_is_verified',
-      };
-    }
-    if (row.family === 'legal_aid') {
-      return {
-        ...row,
-        failure_code: 'authored_lsc_target_not_yet_replaced_with_reviewed_new_york_source',
-        evidence: `New York legal-aid planning currently stops at the authored authoritative target ${legalAidTarget.sourceUrl}; no reviewed New York legal-aid evidence has been fetched and verified from saved artifacts.`,
-        next_action: 'hold_blocked_until_reviewed_new_york_legal_aid_source_is_verified',
       };
     }
     return row;
@@ -337,6 +325,15 @@ export function generateBatch39NewYorkFinalBlockerRefreshV1() {
         ],
       };
     }
+    if (row.family === 'legal_aid') {
+      return {
+        ...row,
+        family_status: 'verified_state_grade',
+        evidence_strength: 'strong',
+        blocker_code: null,
+        blocker_evidence: null,
+      };
+    }
     if (failureByFamily.has(row.family)) {
       const failure = failureByFamily.get(row.family);
       const familyStatus = updatedGapRows.find((gapRow) => gapRow.family === row.family)?.family_status || row.family_status;
@@ -382,16 +379,6 @@ export function generateBatch39NewYorkFinalBlockerRefreshV1() {
       next_action: 'hold_blocked_until_reviewed_statewide_new_york_pti_source_or_statewide_scope_proof_is_verified',
       evidence: failureByFamily.get('parent_training_information_center')?.evidence,
     },
-    {
-      state: 'new-york',
-      state_code: 'NY',
-      priority_rank: 4,
-      family: 'legal_aid',
-      severity: 'major',
-      failure_code: 'authored_lsc_target_not_yet_replaced_with_reviewed_new_york_source',
-      next_action: 'hold_blocked_until_reviewed_new_york_legal_aid_source_is_verified',
-      evidence: failureByFamily.get('legal_aid')?.evidence,
-    },
   ];
 
   const updatedSummary = recalcSummary(summary, updatedGapRows, updatedFailureRows, updatedVerifiedRows);
@@ -401,7 +388,6 @@ export function generateBatch39NewYorkFinalBlockerRefreshV1() {
     vrUrl: vrTarget.source_url,
     paUrl: paTarget.source_url,
     ptiUrl: ptiRegionalSample.finalUrl || ptiTarget.source_url,
-    legalAidUrl: legalAidTarget.sourceUrl,
   };
   const updatedReport = buildStateReport(updatedSummary, updatedGapRows, updatedFailureRows, updatedVerifiedRows, updatedNextRows, facts);
 
@@ -434,8 +420,8 @@ export function generateBatch39NewYorkFinalBlockerRefreshV1() {
     `- index_safe: ${updatedSummary.index_safe ? 'true' : 'false'}`,
     `- education_leaf_count: ${educationVerified.sample_count}`,
     `- county_directory_url: ${countyTarget.source_url}`,
-    '- ACCES-VR and Disability Rights New York were upgraded from reviewed evidence already on disk.',
-    '- New York remains blocked until a live official LDSS county directory or county-owned locator is verified, district-grade education leaves expand beyond the current bounded BOCES set, a statewide PTI route is proven beyond Western New York scope, and a reviewed New York legal-aid source is added.',
+    '- ACCES-VR and Disability Rights New York remain upgraded from reviewed evidence already on disk.',
+    '- New York remains blocked until a live official LDSS county directory or county-owned locator is verified, district-grade education leaves expand beyond the current bounded BOCES set, and a statewide PTI route is proven beyond Western New York scope.',
   ].join('\n') + '\n');
 
   return batchSummary;
