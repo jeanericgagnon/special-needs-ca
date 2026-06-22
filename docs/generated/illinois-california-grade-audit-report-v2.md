@@ -16,7 +16,7 @@
 - district_or_county_education_routing: blocked_exact_leaf_repair_exhausted (Reviewed ROE-owned education exact leaves verified (3), but district-grade coverage still cannot be proven for all 102 counties from the authored exact targets.)
 - vocational_rehabilitation_pre_ets: verified_state_grade (Illinois DRS Services is already present as reviewed official statewide VR routing evidence.)
 - protection_and_advocacy: verified_state_grade (Equip for Equality is already present as reviewed first-party statewide P&A evidence.)
-- parent_training_information_center: regional_only_reviewed_source (The current reviewed PTI sample https://www.fmptic.org is documented as serving downstate Illinois, while the designated statewide PTI target on disk is https://www.frcd.org; statewide PTI proof is still unverified.)
+- parent_training_information_center: regional_only_reviewed_source (The reviewed Family Matters PTIC sample remains downstate-only, and FRCD now states on its own site that Family Matters PTIC became the official Illinois PTIC as of October 1, 2025. The packet still lacks reviewed statewide PTI proof for the designated family.)
 - legal_aid: verified_state_grade (Illinois Legal Aid Online now provides reviewed Illinois statewide legal-help routing from a first-party portal.)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
@@ -25,7 +25,7 @@
 ## Failure ledger
 
 - district_or_county_education_routing: bounded_roe_leaf_packet_exhausted_before_county_grade_coverage :: Verified exact leaves remain limited to 3 reviewed ROE-owned pages; this does not truthfully prove district-grade routing statewide.
-- parent_training_information_center: reviewed_pti_sample_is_regional_not_statewide_designated_source :: Reviewed PTI evidence currently points to https://www.fmptic.org, which is documented as serving downstate Illinois rather than proving the designated statewide PTI target https://www.frcd.org.
+- parent_training_information_center: reviewed_pti_sample_is_regional_and_designated_statewide_target_now_points_to_successor :: Reviewed PTI evidence currently points to https://www.fmptic.org, which is documented as serving downstate Illinois, while https://frcd.org now states that Family Matters PTIC became the official PTIC for Illinois as of October 1, 2025. The packet still lacks reviewed statewide proof for the designated PTI family.
 
 ## Verified source samples
 
@@ -51,8 +51,6 @@
 ## Illinois final blocker decision
 
 - District or county education routing remains blocked because only 3 reviewed ROE-owned exact leaves have been verified; that is not enough to truthfully prove district-grade routing across all 102 Illinois counties without reopening broader district authoring.
-- Protection and advocacy is no longer a blocker because Equip for Equality (https://www.equipforequality.org) is already present as reviewed first-party statewide P&A evidence.
-- Vocational rehabilitation / Pre-ETS is no longer a blocker because Illinois DRS Services (https://www.dhs.state.il.us/page.aspx?item=29737) is already present as reviewed official statewide VR routing evidence.
-- Parent training information center remains below California-grade because the current reviewed sample https://www.fmptic.org is only documented as serving downstate Illinois, while the designated statewide PTI target on disk is https://www.frcd.org; the packet does not yet contain reviewed statewide PTI proof for that designated family.
+- Parent training information center remains below California-grade because the current reviewed sample https://www.fmptic.org is only documented as serving downstate Illinois, and the designated statewide target https://frcd.org now states that Family Matters PTIC became the official PTIC for Illinois as of October 1, 2025. The packet still lacks reviewed statewide PTI proof for the designated family.
 - Legal aid is now verified at the statewide support layer because Illinois Legal Aid Online is a reviewed Illinois statewide legal-help portal with direct legal-help routing and legal resources for people with disabilities.
-- Illinois is therefore truthfully final-blocked and not index-safe until district-grade education leaves expand beyond the current bounded ROE set and a reviewed statewide PTI source is verified.
+- Illinois remains blocked and not index-safe until district-grade education leaves expand beyond the current bounded ROE set and a reviewed statewide PTI source is verified.

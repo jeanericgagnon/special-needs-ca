@@ -300,3 +300,7 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Exact First-Party Legal-Aid Homepages Beat Weak Planning Seeds
 *   **Problem:** Colorado legal aid looked missing because the packet only preserved an LSC planning seed and a statewide P&A page that was strong for advocacy but too weak for legal-representation routing.
 *   **Lesson:** If a legal-aid family is blocked on weak planning or advocacy evidence, try one bounded first-party legal-aid homepage check before reopening discovery. A reviewed homepage that explicitly says it offers free civil legal help to qualifying residents statewide and exposes an apply-for-help route is strong enough to clear the statewide legal-aid family.
+
+### County Leaf Packets Can Fail Because The Root Host Drifted, Not Because The County Lacks An Official Site
+*   **Problem:** California's bounded leaf packets carried some county roots that now drift or fail at the hostname level, while adjacent county variants such as `alpinecountyca.gov` still respond live and could support exact county-local authoring.
+*   **Lesson:** When a county/district leaf packet dies at `root_fetch_failed_0` or a redirect mismatch, probe the county's likely official hostname variants before declaring the family exhausted. Treat stale packet hosts as repair-first packet drift, not as evidence that local official coverage is impossible.
